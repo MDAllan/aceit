@@ -48,7 +48,8 @@ export async function initBackend() {
 }
 
 export async function loadProfile() {
-  const { data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle();
+  let { data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle();
+  if (!p) { await sb.rpc("ensure_profile"); ({ data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle()); }
   profile = p;
   if (p?.access_ok && !p.blocked) {
     const { data: r } = await sb.from("progress").select("data").eq("user_id", session.user.id).maybeSingle();

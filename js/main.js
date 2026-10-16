@@ -18,7 +18,8 @@ async function boot() {
 
 function gate() {
   if (S.DEMO) return null;
-  if (!S.session || !S.profile) return "auth";
+  if (!S.session) return "auth";
+  if (!S.profile) return "setup";
   if (S.profile.blocked) return "blocked";
   if (!S.profile.access_ok) return "code";
   return null;
@@ -29,6 +30,8 @@ function route() {
   if (parts[0] === "reset") return viewReset();
   const g = gate();
   if (g === "auth") return viewAuth();
+  if (g === "setup") return authBox("Almost there", h("p", "Your account was created but its profile is missing. The site owner needs to run the latest database patch (supabase/patch1.sql), then press Retry."),
+    h(".row", h("button.btn", { onclick: async () => { await S.loadProfile(); route(); } }, "Retry"), h("button.btn.alt", { onclick: async () => { await S.signOut(); route(); } }, "Log out")));
   if (g === "blocked") return viewBlocked();
   if (g === "code") return viewCode();
   shell(parts);
