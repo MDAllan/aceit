@@ -37,7 +37,8 @@
    "sourceNotes": [
     "Slides 1-2",
     "Intro to Geology 2.1, 2.1.1, 2.1.2"
-   ]
+   ],
+   "images": []
   },
   {
    "id": "evidence",
@@ -72,7 +73,8 @@
    "sourceNotes": [
     "Slides 2-3",
     "Intro to Geology 2.1.3"
-   ]
+   ],
+   "images": []
   },
   {
    "id": "layers",
@@ -105,6 +107,13 @@
    "sourceNotes": [
     "Slides 4-5",
     "Intro to Geology 2.2"
+   ],
+   "images": [
+    {
+     "src": "img/plates/s4.jpg",
+     "slide": "4",
+     "alt": "Figure from the lecture: Layers of the Earth: crust, mantle, core, and lithosphere"
+    }
    ]
   },
   {
@@ -135,7 +144,8 @@
    "sourceNotes": [
     "Slide 6",
     "Intro to Geology 2.2.3"
-   ]
+   ],
+   "images": []
   },
   {
    "id": "subduction",
@@ -170,7 +180,8 @@
     "Slides 6-8",
     "Intro to Geology 2.3, 2.3.1",
     "Slide 8 'Back-arc faulting' row has a garbled duplicated line; I used only the clear extensional vs compressional points."
-   ]
+   ],
+   "images": []
   },
   {
    "id": "collision",
@@ -202,7 +213,8 @@
    "sourceNotes": [
     "Slide 9",
     "Intro to Geology 2.3.2"
-   ]
+   ],
+   "images": []
   },
   {
    "id": "rifts",
@@ -235,7 +247,8 @@
    "sourceNotes": [
     "Slides 10-11",
     "Intro to Geology 2.4, 2.4.1"
-   ]
+   ],
+   "images": []
   },
   {
    "id": "ridges",
@@ -268,7 +281,8 @@
     "Slides 11-12",
     "Intro to Geology 2.4.2",
     "Practice midterm Q4"
-   ]
+   ],
+   "images": []
   },
   {
    "id": "transform",
@@ -302,7 +316,8 @@
     "Slides 12-13",
     "Intro to Geology 2.5, 2.5.1, 2.5.2",
     "Practice midterm Q2"
-   ]
+   ],
+   "images": []
   },
   {
    "id": "forces",
@@ -337,7 +352,8 @@
     "Slides 2, 13",
     "Intro to Geology 2.1.2, 2.6, 2.7 (summary paragraph)",
     "Practice midterm Q3; example Q3"
-   ]
+   ],
+   "images": []
   },
   {
    "id": "hotspots",
@@ -371,19 +387,20 @@
     "Slides 14-15",
     "Intro to Geology 2.7, 2.7.1, 2.7.2",
     "Practice midterm Q5; example Q4"
-   ]
+   ],
+   "images": []
   }
  ],
  "table": {
   "title": "The three boundary types side by side",
   "head": [
-    "Boundary",
-    "Plate motion",
-    "Nickname",
-    "Crust",
-    "Quakes and volcanoes",
-    "Melting process",
-    "Examples"
+   "Boundary",
+   "Plate motion",
+   "Nickname",
+   "Crust",
+   "Quakes and volcanoes",
+   "Melting process",
+   "Examples"
   ],
   "rows": [
    [

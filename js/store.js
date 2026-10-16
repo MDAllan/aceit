@@ -1,6 +1,12 @@
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from "../config.js";
 
-export const DEMO = !SUPABASE_ANON_KEY;
+const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
+// ?demo on localhost skips login for local testing; ?admin adds the admin view
+export const DEMO = !SUPABASE_ANON_KEY || (LOCAL && location.search.includes("demo"));
+export const canSeeRefs = () => (DEMO ? LOCAL && location.search.includes("admin") : !!profile?.is_admin && !pref("student"));
+export const isAdmin = () => (DEMO ? LOCAL && location.search.includes("admin") : !!profile?.is_admin);
+export function pref(k) { try { return localStorage.getItem("erth209:" + k) === "1"; } catch { return false; } }
+export function setPref(k, v) { try { localStorage.setItem("erth209:" + k, v ? "1" : "0"); } catch {} }
 export let sb = null;
 export let session = null;
 export let profile = null;
@@ -112,8 +118,9 @@ export function lectureStats(lec) {
   const qs = lec.quiz || [];
   const right = qs.filter((q) => data.quiz[q.id]?.last).length;
   const games = (lec.games || []).filter((g) => data.games[lec.id + ":" + g]).length;
+  const gameGoal = Math.min(3, (lec.games || []).length); // play any 3 games for full credit
   const parts = [
-    [read, secs.length], [known, cards.length], [right, qs.length], [games, (lec.games || []).length],
+    [read, secs.length], [known, cards.length], [right, qs.length], [Math.min(games, gameGoal), gameGoal],
   ].filter((p) => p[1] > 0);
   const pct = parts.length ? Math.round((parts.reduce((s, p) => s + p[0] / p[1], 0) / parts.length) * 100) : 0;
   return { read, secs: secs.length, known, cards: cards.length, right, qs: qs.length, games, pct };
@@ -128,3 +135,13 @@ export function streak() {
     else return n;
   }
 }
+
+export function xp(lecs) {
+  let n = 0;
+  for (const l of lecs) { const t = lectureStats(l); n += t.read * 3 + t.known * 2 + t.right * 4 + t.games * 10; }
+  const lvl = Math.floor(Math.sqrt(n / 12)) + 1;
+  const base = 12 * (lvl - 1) ** 2, next = 12 * lvl ** 2;
+  return { xp: n, lvl, pct: Math.round(((n - base) / (next - base)) * 100), next };
+}
+export function setLast(lecId, tab) { data.last = { lecId, tab }; try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {} }
+export const last = () => data.last;

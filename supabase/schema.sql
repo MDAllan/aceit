@@ -9,7 +9,7 @@ alter table public.app_secrets enable row level security;  -- no policies = nobo
 
 insert into public.app_secrets (key, value) values
   ('access_code', 'madi@77'),                       -- the class access code
-  ('admin_email', 'CHANGE_ME@example.com')          -- CHANGE ME: your admin email
+  ('admin_email', 'info@princetires.ca')            -- the admin account: sign up with THIS email. Change it here if you want another admin email
 on conflict (key) do update set value = excluded.value;
 
 create table if not exists public.profiles (
