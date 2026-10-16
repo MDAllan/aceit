@@ -1,0 +1,1244 @@
+{
+ "id": "minerals",
+ "title": "Minerals",
+ "chapter": "Sep 14",
+ "icon": "💎",
+ "color": "#7b5ea7",
+ "slideFile": "2026 Sept 14 Minerals v1.pdf",
+ "intro": "A mineral is a natural, solid, crystal 'building block' of rocks. Learn what counts as a mineral, how atoms are arranged inside it, how the silica tetrahedron builds the silicate minerals, and how to tell minerals apart (colour, streak, luster, hardness, cleavage). Key idea: the way the atoms are packed and bonded controls the crystal shape, the hardness AND the cleavage.",
+ "sections": [
+  {
+   "id": "definition",
+   "title": "What is a mineral? (the 5 criteria)",
+   "slides": "3-4, 7, 9-10",
+   "bullets": [
+    "Slide 3 definition: a **naturally occurring, inorganic** element or compound with a **periodically repeating arrangement of atoms** (a crystal) and a **characteristic chemical composition**. That gives it **distinctive physical properties**.",
+    "Second slide-3 wording: an element or chemical compound that is **crystalline** and formed by **geologic processes**.",
+    "Slide 10 puts it in one line: naturally occurring, (mostly) inorganic **crystalline solids** formed by geologic processes, with a **definite chemical composition**.",
+    "So the 5 checks are: **1) natural, 2) inorganic (mostly), 3) solid, 4) crystalline (atoms in a repeating pattern), 5) definite chemical composition**. Formed by geologic processes ties them together.",
+    "Slide 4: most solid inorganic materials are crystalline. Atoms in a crystal sit in neat rows like soldiers. In a **glass** the atoms are jumbled with no order.",
+    "Ice is a mineral (slide 7): natural, solid, and its feathery crystals show an ordered atom structure.",
+    "Mineral names come from people, places, things, composition, physical properties or other languages. Stilbite comes from the Greek for 'to shine' (slide 8).",
+    "Minerals matter to people: malachite is a copper mineral, and copper ores give us copper pots and electrical wire (slide 9)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why 'crystalline' matters: the repeating atom pattern is what gives a mineral a fixed shape and fixed properties (hardness, cleavage). Without the pattern there is no consistent property set to identify."
+    },
+    {
+     "type": "trick",
+     "text": "Checklist trick: N-I-S-C-C = Natural, Inorganic, Solid, Crystalline, Chemical formula (definite). If one letter fails, it is not a mineral. (outside source, my own memory trick)"
+    },
+    {
+     "type": "trap",
+     "text": "'Mostly inorganic' is the slide's wording. Do not say a mineral can never touch life: biogenic minerals exist (see next section). Also the textbook says that bone apatite is technically not a mineral until the organism dies and it becomes a fossil, while the slide just calls biogenic minerals a 'special case'."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 3, 4, 7-10",
+    "Textbook 3.2.3"
+   ]
+  },
+  {
+   "id": "not-mineral",
+   "title": "What is NOT a mineral (glass, synthetic, amber)",
+   "slides": "5, 11-14, 56-57",
+   "bullets": [
+    "**Glass (no crystal order)**: obsidian is natural volcanic glass. Its atoms have no repeating pattern, so it is not a mineral (slides 4-5).",
+    "Glass breaks with **conchoidal fracture** (smooth curved, shell-like surface). A stone tool made of obsidian shows this (slide 5).",
+    "**Synthetic minerals**: made by humans copying nature, like the bismuth crystal on slide 11. Minerals must be created by natural processes.",
+    "**Biogenic minerals**: formed by living things, such as aragonite in a blue mussel shell (slide 12). Slide calls this a **special case**.",
+    "Normal formation: freezing from a melt, precipitation from solution, or chemical reaction (slide 12).",
+    "**Amber** (slides 56-57) is fossil tree resin, an organic material with no crystal lattice. The slide quiz lists it among quartz, olivine, garnet and diamond. It is the one that is not a mineral.",
+    "Gems are prized for **rarity, beauty, value, color, mystique** (slide 14). Well-formed, symmetric crystals interact with light beautifully (slide 13).",
+    "Slide 13: crystals do **not** have magic powers or affect health or mood."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is amber not a mineral? It comes from living trees (organic) and is not a crystal with a repeating atom pattern. Quartz, olivine, garnet and diamond are all natural crystalline solids with definite compositions. (Amber's resin origin is my reasoning from the definition; the slide only shows pictures.)"
+    },
+    {
+     "type": "trick",
+     "text": "Mineral test in one breath: 'Was it made by nature, not by a lab, and not a jumble?' Lab = synthetic. Jumble = glass. Plant or animal goo = organic."
+    },
+    {
+     "type": "trap",
+     "text": "Practice-midterm Q12: obsidian is the NOT-a-mineral answer. Ice, halite, native gold and quartz are all minerals. 'It is a rock' is not the reason; the reason is no crystal structure (glass)."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 4-5, 11-14, 56-57",
+    "Practice midterm Q12"
+   ]
+  },
+  {
+   "id": "atoms-bonds",
+   "title": "Atoms, bonds, isotopes, polymorphs",
+   "slides": "15-18, 21-22",
+   "bullets": [
+    "Atoms have a nucleus of **protons** (+) and **neutrons** (no charge) with **electrons** (-) around it. The number of protons is the **atomic number** and defines the element (Textbook 3.1.1-3.1.2).",
+    "**Isotopes** = same element, same protons, **different number of neutrons**. Carbon-12 has 6 protons + 6 neutrons, carbon-13 has 7 neutrons, carbon-14 has 8 (Textbook 3.1.2).",
+    "An **ion** has gained or lost electrons. Positive ions are **cations**, negative ions are **anions** (Textbook 3.1.3.1).",
+    "**Ionic bond** (slide 21): one atom gives an electron to another. Sodium loses an electron (Na+) and chlorine gains one (Cl-). They attract to form **halite, NaCl** (slide 17).",
+    "**Covalent bond** (slide 21): atoms **share** electrons. Textbook examples: O2, methane, and the Si-O links in silicates.",
+    "Slide 15: the 3-D pattern of atoms controls crystal shape and many physical properties. Atoms can be drawn as balls held in place by bonds (slide 17).",
+    "Slide 16: **X-ray diffraction**. X-rays hit a crystal and the diffracted beams make a dot pattern on a screen. The pattern reflects the ordered atom arrangement (reading of the picture; the textbook does not cover it).",
+    "Slide 18: ordered atoms give crystals **symmetry** (mirror planes on halite and a snowflake). The symmetry is diagnostic for a mineral.",
+    "**Polymorphs** = same chemical formula, different crystal structure (Textbook 3.2.3). **Diamond and graphite** are both pure carbon (slide 22).",
+    "Diamond: strong bonds in all directions, the **hardest** mineral. Graphite: strong bonds inside layers, **weak bonds between layers**, one of the **softest** (slide 22)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are diamond and graphite so different if both are carbon? Same atoms, different packing and bonding. Diamond is a rigid 3-D network of strong bonds. Graphite is flat sheets with weak bonds between them, so the sheets slide (it also acts as a lubricant, Textbook 3.5.5)."
+    },
+    {
+     "type": "trick",
+     "text": "Poly = many, morph = shape. Polymorphs are one recipe baked into different shapes. Isotopes: same element (same spot on the periodic table) but different neutron count."
+    },
+    {
+     "type": "trap",
+     "text": "Isotopes vs polymorphs (practice-midterm Q13). Isotopes = atoms of one element with different neutrons. Polymorphs = minerals with the same formula but different crystal structure. Diamond and graphite are polymorphs, not isotopes."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 15-18, 21-22",
+    "Textbook 3.1.1-3.1.3, 3.2.3, 3.5.5",
+    "Practice midterm Q13"
+   ]
+  },
+  {
+   "id": "crystal-growth",
+   "title": "Crystal growth, shapes and the six crystal structures",
+   "slides": "19-20, 23-26, 36-38",
+   "bullets": [
+    "Slide 19: crystals come in many shapes (halite cube, diamond, staurolite, quartz, garnet, stibnite, calcite, kyanite). The outside shape of a **euhedral** crystal (perfect faces) is a diagnostic property controlled by the atom arrangement.",
+    "Slide 20: bond strength can differ by direction. Barite grows faster in two directions and slower in one, so it makes a **tabular** (flat, blocky) habit.",
+    "Slides 23-24: crystals grow when atoms attach to the outside of an early crystal (a seed). Where there is open space, good crystal faces grow. Where crystals bump into each other, growth is blocked and **no faces** form.",
+    "Slide 25: an **amethyst geode** has euhedral crystals because they grew into an open cavity. Growth restricted by space prevents good faces.",
+    "Textbook words: **euhedral** = perfect faces, **subhedral** = partly formed, **anhedral** = no faces because of crowding (Textbook 3.5.4).",
+    "Slide 37: the atoms in a crystal are arranged like construction **scaffolding** (quartz crystal beside the Washington Monument in scaffolding).",
+    "Slide 38: **Law of Constancy of Interfacial Angles**. Equivalent faces on two samples of the same mineral **always** meet at the same angle (quartz basal section shows 120 degrees, measured with a goniometer).",
+    "Slide 36: **six crystal structures** drawn with axes: isometric, tetragonal, orthorhombic, monoclinic, triclinic, hexagonal.",
+    "Slide 26: a garnet shows a diagnostic dodecahedral (12-sided) equant crystal habit. Equant = no long direction (Textbook 3.5.4)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is the interfacial angle constant? Because the outer faces are just the edges of the same repeating atom grid. A tiny crystal and a giant one have the same grid, so the angles match. The goniometer is the angle gauge."
+    },
+    {
+     "type": "trick",
+     "text": "Space = faces. A geode is an empty room: crystals can stretch out and show faces. A packed rock is a crowded bus: nobody gets a clean shape."
+    },
+    {
+     "type": "trap",
+     "text": "Slide quiz (58-59) asks how many crystal structures exist and why. The slide's picture (36) shows six, so answer 6. The 'why' answer is not shown; the sensible choice is packing in 3-D space (reasoning, not stated in the sources). Textbook 1 does not list the number of crystal systems."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 19-20, 23-26, 36-38, 58-59",
+    "Textbook 3.5.4"
+   ]
+  },
+  {
+   "id": "formation",
+   "title": "How minerals form",
+   "slides": "6, 12, 23-25",
+   "bullets": [
+    "Slide 12: minerals form by **freezing from a melt**, **precipitation from solution**, or **chemical reaction**. Living things make **biogenic** minerals.",
+    "Textbook 3.2 groups these as three main ways: 1) precipitation from **water**, 2) **crystallization from magma**, 3) **precipitation by organisms**.",
+    "**Precipitation**: ions dissolved in water come together and form solid crystals. It happens when the solution cools, when water **evaporates**, or when chemistry changes, once the water is **saturated** (cannot hold more dissolved material).",
+    "Slide 6: the giant gypsum crystals (the largest known) grew by precipitation from **hot water** that once filled the cave.",
+    "**Crystallization from magma**: magma (molten rock) cools, atoms slow down and lock into crystals. Lava is magma at the surface (Textbook 3.2.2).",
+    "**By organisms**: shells and bones. The most common mineral made this way is **calcite** (CaCO3), often as the polymorph **aragonite** (Textbook 3.2.3). Radiolaria make silica shells (Textbook 3.2.3).",
+    "Evaporation examples: Great Salt Lake and Bonneville Salt Flats make halite (Textbook 3.2.1, 3.4)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does cooling or evaporating make crystals? Heat makes atoms vibrate. When a melt cools or water evaporates, ions are squeezed or slowed until they lock into a repeating pattern. Too much dissolved salt (saturation) forces them out of the water."
+    },
+    {
+     "type": "trick",
+     "text": "Salt in a sunny puddle: the water leaves, the salt stays. That is precipitation by evaporation."
+    },
+    {
+     "type": "trap",
+     "text": "'Freezing from a melt' means magma or lava cooling into rock crystals, not freezing water. (Ice itself is also a mineral, but the slide phrase refers to melted rock.)"
+    }
+   ],
+   "sourceNotes": [
+    "Slides 6, 12, 23-25",
+    "Textbook 3.2"
+   ]
+  },
+  {
+   "id": "identify",
+   "title": "Identifying minerals: colour, streak, luster",
+   "slides": "26-30",
+   "bullets": [
+    "Slide 26: mineral identification is a **skill**. Some properties are obvious, others need handling or tests.",
+    "Slide 27: physical properties that usually allow ready identification: **color, streak, hardness, luster, specific gravity, crystal habit, cleavage (or lack of it)**.",
+    "**Color** (slide 28): the part of visible light that is **not absorbed**. Diagnostic for some minerals (malachite) and a **poor indicator** for others (quartz comes clear, milky or rose).",
+    "Textbook: colour changes with impurities. Water makes quartz milky. Malachite is green and azurite blue because of copper.",
+    "**Streak** (slide 29): the colour of the **crushed powder** left when a mineral is rubbed on an **unglazed porcelain plate**. Hematite leaves a **reddish-brown** streak.",
+    "The slide says streak needs a hardness of **less than about 6**. Harder minerals scratch the plate instead (Textbook 3.5.2).",
+    "**Luster** (slide 30): how a mineral surface **scatters light**. Two main groups: **metallic** (looks like metal, e.g. pyrite) and **nonmetallic**.",
+    "Nonmetallic lusters on slide 30: silky, vitreous (glassy), satiny, resinous, pearly, earthy (dull), adamantine (brilliant). Feldspar is nonmetallic.",
+    "Textbook: pyrite streak is black to greenish-black even though it looks brassy gold."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is streak better than colour? Colour on the outside changes with impurities and weathering. Powdering the mineral shows the true colour of the mineral itself, which stays the same. Hematite can look black, silver or red but always streaks reddish-brown."
+    },
+    {
+     "type": "trick",
+     "text": "Streak = the mineral's 'signature' drawn on a plate. Colour = its 'outfit', which can change."
+    },
+    {
+     "type": "trap",
+     "text": "Practice-midterm Q16: two hematite samples with different colours but the same reddish-brown streak shows streak is MORE reliable than colour (not the other way round). Also, a mineral harder than the plate cannot give a streak."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 26-30",
+    "Textbook 3.5.1-3.5.2",
+    "Practice midterm Q16"
+   ]
+  },
+  {
+   "id": "hardness",
+   "title": "Hardness and the Mohs scale",
+   "slides": "31",
+   "bullets": [
+    "**Hardness** = scratching resistance, directly linked to **atomic-bond strength**. The **Mohs scale** runs from 1 to 10 (slide 31).",
+    "The harder mineral scratches the softer one. Scratch tests compare an unknown to known minerals or tools.",
+    "Everyday tools on the slide: **fingernail 2.5**, **copper penny 3.5**, **glass or steel knife 5.5**, **steel file 6.5**.",
+    "The graph on the slide shows the real hardness curve is **not a straight line**. Diamond (10) shoots far above corundum (9). Textbook says about four times harder; the slide graph looks roughly 3 to 4 times."
+   ],
+   "table": {
+    "head": [
+     "Mohs",
+     "Mineral",
+     "Tool marker"
+    ],
+    "rows": [
+     [
+      "1",
+      "Talc, Graphite",
+      ""
+     ],
+     [
+      "2",
+      "Gypsum",
+      "Fingernail 2.5 is just above 2"
+     ],
+     [
+      "3",
+      "Calcite",
+      "Copper penny 3.5 is between 3 and 4"
+     ],
+     [
+      "4",
+      "Fluorite",
+      ""
+     ],
+     [
+      "5",
+      "Apatite",
+      "Glass or steel knife 5.5"
+     ],
+     [
+      "6",
+      "Orthoclase",
+      "Steel file 6.5"
+     ],
+     [
+      "7",
+      "Quartz",
+      ""
+     ],
+     [
+      "8",
+      "Topaz",
+      ""
+     ],
+     [
+      "9",
+      "Corundum (ruby)",
+      ""
+     ],
+     [
+      "10",
+      "Diamond",
+      ""
+     ]
+    ]
+   },
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do stronger bonds mean a harder mineral? To scratch a mineral you must break its atom links. Stronger links resist the scratch. That is why diamond (strong bonds everywhere) is 10 and graphite (weak bonds between layers) is 1."
+    },
+    {
+     "type": "trick",
+     "text": "Order to learn: Talc, Gypsum, Calcite, Fluorite, Apatite, Orthoclase, Quartz, Topaz, Corundum, Diamond. Memory sentence: 'Tall Girls Can Flirt And Offer Quick Tips, Cool Dudes.' (outside source, my own mnemonic)"
+    },
+    {
+     "type": "trap",
+     "text": "Textbook calls steel pocketknife 5.5 and says it separates hard from soft minerals. Slide gives 'glass, steel 5.5'. Same number, so use 5.5. If a mineral scratches glass (5.5) but is scratched by quartz (7), it must be between 5.5 and 7: orthoclase (6), as in practice-midterm Q14. Topaz (8) is harder than quartz, so it cannot be the answer."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 31",
+    "Textbook 3.5.3",
+    "Practice midterm Q14"
+   ]
+  },
+  {
+   "id": "cleavage",
+   "title": "Cleavage vs fracture",
+   "slides": "5, 32-34",
+   "bullets": [
+    "**Cleavage** (slide 32): the tendency of a mineral to break along **lattice planes with weaker atomic bonds**. It makes **flat, shiny** surfaces, sometimes in steps like rice terraces.",
+    "Cleavage is **throughgoing** (repeats all through the crystal). **Crystal faces** are only on the **outside surface** (slide 32).",
+    "**Fracture** (slide 5): minerals with **no planes of weakness** (bonds equally strong in all directions) break by fracture instead. Obsidian and quartz show curved **conchoidal fracture**.",
+    "What is diagnostic: the **number of cleavage planes** and the **angles between them** (slides 33-34).",
+    "**One direction**: muscovite (mica). **Two directions at 90 degrees**: potassium feldspar. **Two directions NOT at 90**: amphibole (slide 33).",
+    "**Three directions at 90**: halite (cubic). **Three directions NOT at 90**: calcite, giving rhomb shapes (slide 34).",
+    "Textbook extras: pyroxene has 2 imperfect cleavages at about 90, amphibole 2 perfect at 60 and 120, calcite 3 at about 75, galena and pyrite (textbook) 3 at 90."
+   ],
+   "table": {
+    "head": [
+     "Mineral",
+     "Cleavage",
+     "Source"
+    ],
+    "rows": [
+     [
+      "Muscovite / mica",
+      "1 direction (perfect)",
+      "Slide 33; Textbook"
+     ],
+     [
+      "Potassium feldspar",
+      "2 directions at 90 degrees",
+      "Slide 33"
+     ],
+     [
+      "Amphibole",
+      "2 directions NOT at 90 (60 and 120)",
+      "Slide 33; Textbook"
+     ],
+     [
+      "Pyroxene",
+      "2 imperfect at about 90",
+      "Textbook 3.5.5"
+     ],
+     [
+      "Halite",
+      "3 directions at 90 (cubes)",
+      "Slide 34"
+     ],
+     [
+      "Calcite",
+      "3 directions NOT at 90 (rhombs, about 75)",
+      "Slide 34; Textbook"
+     ],
+     [
+      "Quartz, olivine",
+      "None (conchoidal fracture)",
+      "Textbook 3.5.5"
+     ]
+    ]
+   },
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does mica peel in sheets? Inside each sheet the bonds are strong, but between the sheets the bonds are weak. The mineral splits along the weak planes. Quartz has strong bonds in every direction, so no weak plane exists and it fractures."
+    },
+    {
+     "type": "trick",
+     "text": "Cleavage = clean flat breaks, like peeling a sticker or snapping a chocolate bar along its grooves. Fracture = random, like breaking glass."
+    },
+    {
+     "type": "trap",
+     "text": "First-midterm Q10: the feature used to identify minerals is cleavage (not advantage, peerage, lineage or selvage). Also: cleavage is NOT the same as a crystal face. Cleavage goes right through the crystal; faces are only the outside."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 5, 32-34",
+    "Textbook 3.5.5",
+    "First midterm Q10"
+   ]
+  },
+  {
+   "id": "special",
+   "title": "Special properties",
+   "slides": "35",
+   "bullets": [
+    "Slide 35 lists less common helpful properties: **effervescence** (fizzes in acid), **magnetism**, taste, smell, feel, elasticity, diaphaneity (transparency), **piezoelectricity** (charge when squeezed), **pyroelectricity** (charge when heated), refractive index, **malleability** (hammered into sheets), **ductility** (drawn into wires), **sectility** (shaved with a knife).",
+    "Examples on the slide: **sulfur smells like rotten eggs**, **halite tastes like salt** (it IS salt), **magnetite is magnetic**.",
+    "Textbook: a drop of **dilute hydrochloric acid** fizzes on **calcite**. Dolomite fizzes only slowly on powder (Textbook 3.5.6).",
+    "Textbook also covers **specific gravity** (density compared with water) and heft, fluorescence under UV light, and striations on plagioclase."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does calcite fizz? It is a carbonate (CaCO3). Acid attacks the carbonate and releases bubbles of gas, so acid is a quick field test for it (Textbook 3.4.1 and 3.5.6)."
+    },
+    {
+     "type": "trick",
+     "text": "Think of kitchen senses: tastes like salt = halite, smells like eggs = sulfur, sticks to a magnet = magnetite."
+    },
+    {
+     "type": "trap",
+     "text": "Practice-midterm Q17: white, hardness 3, three cleavages NOT at 90 degrees (rhombs), fizzes in dilute acid = calcite. Halite has cubic cleavage and tastes salty; gypsum is hardness 2 and does not fizz; quartz is hardness 7 with no cleavage."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 35",
+    "Textbook 3.4.1, 3.5.6",
+    "Practice midterm Q17"
+   ]
+  },
+  {
+   "id": "elements",
+   "title": "Which elements make up Earth and the crust",
+   "slides": "39-42, 53",
+   "bullets": [
+    "Slide 39: solar-system element abundance by atom count (Si set as the reference). Light elements like H and He are most common; numbers fall off for heavy elements. Just a background graph.",
+    "Slide 40: the **whole Earth** by mass is dominated by **iron and oxygen**: Iron 32.1%, Oxygen 30.1%, Silicon 15.1%, Magnesium 13.9%, Other 8.8%.",
+    "Slides 41-42: the **crust** is mostly **8 elements**. **Oxygen and silicon together are 74.3% by weight**.",
+    "Crust by weight: O 46.6, Si 27.7, Al 8.1, Fe 5, Ca 3.6, Na 2.8, K 2.6, Mg 2.1. (Textbook rounds: 47, 28, 8, 5, 4, 3, 3, 2.)",
+    "By atoms oxygen is 60.5% and silicon 20.5%. By volume oxygen is 93.8%: oxygen ions are big and take up almost all the space.",
+    "That is why **silicate minerals** (silicon + oxygen) dominate the crust."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do silicates rule the crust? Oxygen and silicon are the two most abundant crust elements (74.3% by weight), so the most common building block is a silicon-oxygen unit, the silica tetrahedron (Textbook summary of Chapter 3)."
+    },
+    {
+     "type": "trick",
+     "text": "Crust: O then Si (rhymes with 'Oh, Si!'), then Al, Fe, Ca, Na, K, Mg. Whole Earth swaps in iron. (outside source, my memory trick)"
+    },
+    {
+     "type": "trap",
+     "text": "Do not mix up the two charts. Whole Earth is dominated by IRON and oxygen (slide 40). The CRUST is dominated by OXYGEN and SILICON (slide 41). Textbook rounds crust values to whole numbers (O 47, Si 28); the slide shows 46.6 and 27.7, both add to about 74-75%, but use the slide's 74.3%."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 39-42, 53",
+    "Textbook 3.1.2 Table 1, Summary"
+   ]
+  },
+  {
+   "id": "silicates",
+   "title": "Silica tetrahedron and the silicate structures",
+   "slides": "43-52",
+   "bullets": [
+    "Slide 43: the **SiO4 (4-) silica tetrahedron** is the basic building block: **one silicon in the middle, four oxygens at the corners** (pyramid shape with 4 faces). The silicon is small and sits in the gap between four big oxygens.",
+    "Textbook: only part of each corner oxygen's charge is used up, so the corners are chemically active and can link to other tetrahedra or to cations (Al, Fe, Mg, K, Na, Ca).",
+    "Slide 44: silicate minerals are divided into classes by **how the tetrahedra are arranged** (shared oxygens).",
+    "**Isolated tetrahedra** (slide 52): no shared oxygens. Held together by **cations**. Olivine and garnet. Pyrope Mg3Al2(SiO4)3.",
+    "**Single chain** (slide 49): two of the three basal oxygens bonded together. **Si:O = 1:3**. Pyroxene (augite).",
+    "**Double chain** (slide 50): two single chains sharing oxygens where tetrahedra touch. Slide ratio **2:7**. Amphibole (hornblende).",
+    "**Sheet** (slide 51): oxygens shared along the **base** but not the top one. Slide ratio **4:11**. Micas (muscovite) and clays.",
+    "**Framework** (slides 45, 47): **all oxygens shared**, 3-D network, **Si:O = 1:2**. **Quartz (SiO2)** and **feldspars**. Orthoclase KAlSi3O8, albite NaAlSi3O8, anorthite CaAl2Si2O8.",
+    "Slide 54: **not all minerals are silicates**: sulfides, sulphates, oxides, halides, carbonates, phosphates."
+   ],
+   "table": {
+    "head": [
+     "Structure",
+     "Oxygens shared",
+     "Examples (slide)",
+     "Cleavage link"
+    ],
+    "rows": [
+     [
+      "Isolated tetrahedra",
+      "None (cations bond them)",
+      "Olivine, garnet",
+      "No planes of weakness: no cleavage (olivine, Textbook)"
+     ],
+     [
+      "Single chain",
+      "2 per tetrahedron; Si:O 1:3",
+      "Pyroxene (augite)",
+      "2 cleavages at about 90, imperfect (Textbook)"
+     ],
+     [
+      "Double chain",
+      "Chains share oxygens; slide 2:7",
+      "Amphibole (hornblende)",
+      "2 cleavages at 60 and 120 (slide 33)"
+     ],
+     [
+      "Sheet",
+      "Base oxygens shared; slide 4:11",
+      "Mica (muscovite), clay",
+      "1 perfect cleavage (weak bonds between sheets)"
+     ],
+     [
+      "Framework",
+      "All shared; Si:O 1:2",
+      "Quartz, feldspar",
+      "Quartz: none, conchoidal fracture. Feldspar: 2 cleavages at 90"
+     ]
+    ]
+   },
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does structure control cleavage? Cleavage follows planes where bonds are weakest. In a sheet silicate the bonds BETWEEN sheets are weak, so mica splits in one direction. In quartz every bond is a strong Si-O link in all directions, so there is no weak plane: no cleavage, just curved fracture (practice-midterm Q15). Chains are bonded to each other by weaker cation links (reasoning), giving two cleavage directions."
+    },
+    {
+     "type": "trick",
+     "text": "Think of sharing: Isolated = no sharing (loners), Chain = hold hands in a line, Double chain = two lines linked, Sheet = a flat net, Framework = a full 3-D jungle gym. More sharing means a more tightly locked crystal."
+    },
+    {
+     "type": "trap",
+     "text": "Ratios disagree between sources. Slide 50 says double chain 2:7 and slide 51 says sheet 4:11. Textbook 3.3.4 says sheet silicates have Si:O of 2:5 (Si4O10), and its amphibole formula (RSi4O11)2 implies 4:11 for double chains. Use the slide's numbers on the exam but know the textbook differs. Single chain 1:3 and framework 1:2 agree everywhere. Also: practice-midterm Q15 answer is 'framework silicate with strong Si-O bonds equally in all directions'."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 43-52, 54",
+    "Textbook 3.3, 3.5.5",
+    "Practice midterm Q15"
+   ]
+  },
+  {
+   "id": "rockforming",
+   "title": "Common rock-forming minerals and non-silicates",
+   "slides": "47-54",
+   "bullets": [
+    "**Feldspar** is the single most abundant mineral in the crust (about 50%); **quartz** is the most abundant at the surface because it resists weathering (Textbook 3.3.5).",
+    "**Quartz** (SiO2) and **K-feldspar** are felsic framework silicates. **Plagioclase** is a Ca-Na feldspar (albite to anorthite series).",
+    "**Olivine** (Fe,Mg)2SiO4: green, dark ferromagnesian (mafic) mineral of the mantle. **Pyroxene** and **amphibole** (hornblende) are dark ferromagnesian minerals too.",
+    "**Micas**: dark **biotite** and light **muscovite**. **Clays** form from weathering of rocks.",
+    "**Non-silicates** (slide 54): **sulfides** (galena, pyrite), **sulphates** (gypsum), **oxides** (hematite, magnetite), **halides** (halite), **carbonates** (calcite, dolomite), **phosphates** (apatite).",
+    "Carbonates and halides often form from evaporation or by organisms (Textbook 3.4). **Native elements** like gold are pure (Textbook 3.4.5).",
+    "Slide 55 quiz: a silica tetrahedron has **four oxygens and one silicon**."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is quartz so common in sand and sandstone? It is very resistant to weathering, so other minerals break down and quartz grains survive (Textbook 3.3.5)."
+    },
+    {
+     "type": "trick",
+     "text": "Felsic = Feldspar + Silica (light colour, continental). Mafic = Magnesium + Fe (iron), dark. (Textbook 3.3.1-3.3.5)"
+    },
+    {
+     "type": "trap",
+     "text": "Slide 56's question 'which is NOT a mineral' (quartz, olivine, amber, garnet, diamond) tempts you with 'diamond' because it is a gem. Diamond is a pure carbon mineral. Amber is the non-mineral."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 47-54, 55-57",
+    "Textbook 3.3.1-3.3.5, 3.4"
+   ]
+  }
+ ],
+ "table": {
+  "title": "Properties at a glance",
+  "head": [
+   "Property",
+   "What it tests",
+   "Key fact",
+   "Slide"
+  ],
+  "rows": [
+   [
+    "Color",
+    "Light not absorbed",
+    "Unreliable for many (quartz), diagnostic for malachite",
+    "28"
+   ],
+   [
+    "Streak",
+    "Colour of powder",
+    "Hematite reddish-brown; needs hardness under about 6",
+    "29"
+   ],
+   [
+    "Luster",
+    "How surface scatters light",
+    "Metallic vs nonmetallic (vitreous, silky, pearly...)",
+    "30"
+   ],
+   [
+    "Hardness",
+    "Scratch resistance (bond strength)",
+    "Mohs 1 to 10; nail 2.5, penny 3.5, glass/knife 5.5, file 6.5",
+    "31"
+   ],
+   [
+    "Cleavage",
+    "Breaks along weak lattice planes",
+    "Number and angle of planes are diagnostic",
+    "32-34"
+   ],
+   [
+    "Fracture",
+    "No weak planes",
+    "Conchoidal (obsidian, quartz)",
+    "5"
+   ],
+   [
+    "Habit",
+    "Typical crystal shape",
+    "Garnet dodecahedral, barite tabular",
+    "19-20, 26"
+   ],
+   [
+    "Special",
+    "Acid, magnet, taste, smell",
+    "Calcite fizzes, magnetite magnetic, halite salty",
+    "35"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "min-c1",
+   "front": "Mineral (definition)",
+   "back": "A naturally occurring, (mostly) inorganic, crystalline solid formed by geologic processes with a definite chemical composition.",
+   "short": "Natural, inorganic, crystalline solid",
+   "src": "Slides 3, 10"
+  },
+  {
+   "id": "min-c2",
+   "front": "Crystalline",
+   "back": "Atoms are arranged in a periodically repeating pattern.",
+   "short": "Atoms in a repeating pattern",
+   "src": "Slides 3-4"
+  },
+  {
+   "id": "min-c3",
+   "front": "Glass (in mineral terms)",
+   "back": "A solid with no internal atomic order, so it is not a mineral. Obsidian is natural volcanic glass.",
+   "short": "Solid with no atomic order",
+   "src": "Slides 4-5"
+  },
+  {
+   "id": "min-c4",
+   "front": "Conchoidal fracture",
+   "back": "A smooth, curved, shell-like break. Typical of glass like obsidian and of quartz.",
+   "short": "Smooth curved break, e.g. obsidian",
+   "src": "Slide 5; Textbook 3.5.5"
+  },
+  {
+   "id": "min-c5",
+   "front": "Synthetic mineral",
+   "back": "A mineral equivalent made by humans copying natural processes, e.g. the bismuth crystal.",
+   "short": "Human-made mineral copy",
+   "src": "Slide 11"
+  },
+  {
+   "id": "min-c6",
+   "front": "Biogenic mineral",
+   "back": "A mineral formed by living organisms, e.g. aragonite in a mussel shell. A special case.",
+   "short": "Mineral made by living organisms",
+   "src": "Slide 12"
+  },
+  {
+   "id": "min-c7",
+   "front": "Why is amber not a mineral?",
+   "back": "It is organic fossil resin with no crystal lattice, so it fails the inorganic and crystalline criteria.",
+   "short": "Organic resin, no crystal lattice",
+   "src": "Slides 56-57 (reasoning)"
+  },
+  {
+   "id": "min-c8",
+   "front": "Isotope",
+   "back": "Atoms of one element with the same protons but a different number of neutrons (carbon-12, -13, -14).",
+   "short": "Same protons, different neutrons",
+   "src": "Textbook 3.1.2"
+  },
+  {
+   "id": "min-c9",
+   "front": "Ionic bond",
+   "back": "Electrons are transferred between atoms and the opposite charges attract. Na+ and Cl- make halite.",
+   "short": "Electron transfer; Na+ and Cl-",
+   "src": "Slide 21; Textbook 3.1.3.2"
+  },
+  {
+   "id": "min-c10",
+   "front": "Covalent bond",
+   "back": "Atoms share electrons to fill their outer shells (e.g. O2, Si-O links).",
+   "short": "Atoms share electrons",
+   "src": "Slide 21; Textbook 3.1.3.3"
+  },
+  {
+   "id": "min-c11",
+   "front": "Polymorph",
+   "back": "Minerals with the same chemical formula but different crystal structures, e.g. diamond and graphite.",
+   "short": "Same formula, different structure",
+   "src": "Slide 22; Textbook 3.2.3"
+  },
+  {
+   "id": "min-c12",
+   "front": "Diamond vs graphite",
+   "back": "Both carbon. Diamond has strong bonds everywhere (hardest); graphite has weak bonds between layers (soft).",
+   "short": "Same carbon, different bonding",
+   "src": "Slide 22"
+  },
+  {
+   "id": "min-c13",
+   "front": "Euhedral crystal",
+   "back": "A crystal with perfect crystal faces, grown into open space like in a geode.",
+   "short": "Crystal with perfect faces",
+   "src": "Slides 19, 25"
+  },
+  {
+   "id": "min-c14",
+   "front": "Law of Constancy of Interfacial Angles",
+   "back": "Equivalent faces on any two samples of the same mineral always meet at the same angle.",
+   "short": "Same-mineral face angles are constant",
+   "src": "Slide 38"
+  },
+  {
+   "id": "min-c15",
+   "front": "Six crystal structures",
+   "back": "Isometric, tetragonal, orthorhombic, monoclinic, triclinic, hexagonal (as drawn on slide 36).",
+   "short": "Isometric to hexagonal, six types",
+   "src": "Slide 36"
+  },
+  {
+   "id": "min-c16",
+   "front": "Ways minerals form",
+   "back": "Freezing from a melt, precipitation from solution, chemical reaction; plus biogenic (organisms).",
+   "short": "Melt, solution, reaction, organisms",
+   "src": "Slide 12; Textbook 3.2"
+  },
+  {
+   "id": "min-c17",
+   "front": "Color (mineral)",
+   "back": "The part of visible light that is not absorbed. Diagnostic for malachite, poor for quartz.",
+   "short": "Light not absorbed by the mineral",
+   "src": "Slide 28"
+  },
+  {
+   "id": "min-c18",
+   "front": "Streak",
+   "back": "The colour of a mineral's powder on an unglazed porcelain plate. Needs hardness under about 6.",
+   "short": "Colour of powder on porcelain",
+   "src": "Slide 29"
+  },
+  {
+   "id": "min-c19",
+   "front": "Hematite streak",
+   "back": "Reddish-brown, even when the sample looks black or silver.",
+   "short": "Reddish-brown streak",
+   "src": "Slide 29; Textbook 3.5.2"
+  },
+  {
+   "id": "min-c20",
+   "front": "Luster",
+   "back": "How a mineral surface scatters light. Main types: metallic and nonmetallic (silky, vitreous, pearly, earthy, etc.).",
+   "short": "How a surface scatters light",
+   "src": "Slide 30"
+  },
+  {
+   "id": "min-c21",
+   "front": "Hardness",
+   "back": "Scratching resistance, linked to atomic-bond strength.",
+   "short": "Scratch resistance; bond strength",
+   "src": "Slide 31"
+  },
+  {
+   "id": "min-c22",
+   "front": "Mohs scale",
+   "back": "1 to 10: talc, gypsum, calcite, fluorite, apatite, orthoclase, quartz, topaz, corundum, diamond.",
+   "short": "Talc 1 up to diamond 10",
+   "src": "Slide 31"
+  },
+  {
+   "id": "min-c23",
+   "front": "Tool hardness values",
+   "back": "Fingernail 2.5, copper penny 3.5, glass or steel knife 5.5, steel file 6.5.",
+   "short": "Nail 2.5, penny 3.5, glass 5.5, file 6.5",
+   "src": "Slide 31"
+  },
+  {
+   "id": "min-c24",
+   "front": "Cleavage",
+   "back": "Tendency to break along flat planes of weaker bonds. Number and angle of planes are diagnostic.",
+   "short": "Breaking along weak flat planes",
+   "src": "Slide 32"
+  },
+  {
+   "id": "min-c25",
+   "front": "Cleavage vs crystal face",
+   "back": "Cleavage is throughgoing; crystal faces are only on the outside of the crystal.",
+   "short": "Cleavage goes through; faces outside only",
+   "src": "Slide 32"
+  },
+  {
+   "id": "min-c26",
+   "front": "Fracture",
+   "back": "How a mineral breaks when it has no planes of weakness (bonds equal in all directions).",
+   "short": "Break without weak planes",
+   "src": "Slide 5"
+  },
+  {
+   "id": "min-c27",
+   "front": "Cleavage of mica",
+   "back": "One direction (muscovite). Weak bonds between sheets let it peel.",
+   "short": "One direction; peels in sheets",
+   "src": "Slide 33; Textbook 3.3.4"
+  },
+  {
+   "id": "min-c28",
+   "front": "Cleavage of amphibole",
+   "back": "Two directions NOT at 90 degrees (60 and 120).",
+   "short": "Two directions, not 90 degrees",
+   "src": "Slide 33; Textbook 3.5.5"
+  },
+  {
+   "id": "min-c29",
+   "front": "Cleavage of halite",
+   "back": "Three directions at 90 degrees (cubes).",
+   "short": "Three directions at 90 degrees",
+   "src": "Slide 34"
+  },
+  {
+   "id": "min-c30",
+   "front": "Cleavage of calcite",
+   "back": "Three directions NOT at 90 degrees, giving rhomb shapes. Also fizzes in dilute acid.",
+   "short": "Three directions, not 90, rhombs",
+   "src": "Slide 34; Textbook 3.5.5"
+  },
+  {
+   "id": "min-c31",
+   "front": "Special properties examples",
+   "back": "Sulfur smells like rotten eggs, halite tastes salty, magnetite is magnetic, calcite effervesces in acid.",
+   "short": "Smell, taste, magnet, acid fizz",
+   "src": "Slide 35"
+  },
+  {
+   "id": "min-c32",
+   "front": "Most abundant crust elements",
+   "back": "Oxygen 46.6% and silicon 27.7% by weight, together 74.3%. Then Al, Fe, Ca, Na, K, Mg.",
+   "short": "O and Si, 74.3% by weight",
+   "src": "Slides 41-42"
+  },
+  {
+   "id": "min-c33",
+   "front": "Most abundant elements in whole Earth",
+   "back": "Iron 32.1% and oxygen 30.1% dominate, then silicon 15.1% and magnesium 13.9%.",
+   "short": "Iron and oxygen",
+   "src": "Slide 40"
+  },
+  {
+   "id": "min-c34",
+   "front": "Silica tetrahedron",
+   "back": "SiO4 (4-): one silicon surrounded by four oxygens. Basic building block of silicates.",
+   "short": "One Si and four O pyramid",
+   "src": "Slide 43"
+  },
+  {
+   "id": "min-c35",
+   "front": "Isolated tetrahedra silicate",
+   "back": "No oxygens shared; bonded by cations. Olivine and garnet.",
+   "short": "No shared oxygens; olivine, garnet",
+   "src": "Slide 52"
+  },
+  {
+   "id": "min-c36",
+   "front": "Single-chain silicate",
+   "back": "Two of the three basal oxygens shared. Si:O 1:3. Pyroxene.",
+   "short": "Chains, Si:O 1:3; pyroxene",
+   "src": "Slide 49"
+  },
+  {
+   "id": "min-c37",
+   "front": "Double-chain silicate",
+   "back": "Two single chains sharing oxygens. Slide ratio 2:7. Amphibole (hornblende).",
+   "short": "Double chain; amphibole",
+   "src": "Slide 50"
+  },
+  {
+   "id": "min-c38",
+   "front": "Sheet silicate",
+   "back": "Base oxygens shared, not the top. Slide ratio 4:11 (textbook 2:5). Mica and clays.",
+   "short": "Sheets; micas and clays",
+   "src": "Slide 51; Textbook 3.3.4"
+  },
+  {
+   "id": "min-c39",
+   "front": "Framework silicate",
+   "back": "All oxygens shared in 3-D. Si:O 1:2. Quartz and feldspars.",
+   "short": "All shared, Si:O 1:2; quartz",
+   "src": "Slides 45, 47"
+  },
+  {
+   "id": "min-c40",
+   "front": "Why quartz has no cleavage",
+   "back": "It is a framework silicate with strong Si-O bonds equally in all directions, so no weak planes exist.",
+   "short": "Strong bonds equal in all directions",
+   "src": "Slides 5, 47; Textbook 3.5.5"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "min-1",
+   "q": "A silica tetrahedron is composed of which atoms?",
+   "options": [
+    "four silicons and one oxygen",
+    "four oxygens and one silicon",
+    "three oxygens and one silicon",
+    "three silicons and one oxygen",
+    "two oxygens and one silicon"
+   ],
+   "answer": 1,
+   "why": "SiO4: one silicon in the middle with four oxygens at the corners.",
+   "source": "Slides 43, 55; Textbook 3.3"
+  },
+  {
+   "id": "min-2",
+   "q": "Which of the following is not a mineral?",
+   "options": [
+    "quartz",
+    "olivine",
+    "amber",
+    "garnet",
+    "diamond"
+   ],
+   "answer": 2,
+   "why": "Amber is fossil tree resin (organic, no crystal structure). The others are natural crystalline solids.",
+   "source": "Slides 3, 56-57"
+  },
+  {
+   "id": "min-3",
+   "q": "Which of these is NOT a mineral?",
+   "options": [
+    "Obsidian",
+    "Native gold",
+    "Halite",
+    "Quartz",
+    "Ice"
+   ],
+   "answer": 0,
+   "why": "Obsidian is volcanic glass: its atoms have no repeating pattern, so it is not crystalline.",
+   "source": "Slides 4-5; Practice midterm Q12"
+  },
+  {
+   "id": "min-4",
+   "q": "How many possible crystal structures exist (as shown in the lecture)?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answer": 4,
+   "why": "Slide 36 shows six crystal structures: isometric, tetragonal, orthorhombic, monoclinic, triclinic, hexagonal.",
+   "source": "Slides 36, 58"
+  },
+  {
+   "id": "min-5",
+   "q": "Diamond and graphite are both pure carbon but have different crystal structures. What are they?",
+   "options": [
+    "Polymorphs",
+    "Isotopes",
+    "Mineraloids",
+    "Solid solutions",
+    "Pseudomorphs"
+   ],
+   "answer": 0,
+   "why": "Same formula but different crystal structure means polymorphs. Isotopes differ in neutron number, not structure.",
+   "source": "Slide 22; Textbook 3.2.3; Practice midterm Q13"
+  },
+  {
+   "id": "min-6",
+   "q": "An unknown mineral scratches window glass (hardness about 5.5) but is scratched by quartz. Which mineral could it be?",
+   "options": [
+    "Calcite",
+    "Fluorite",
+    "Quartz",
+    "Orthoclase",
+    "Topaz"
+   ],
+   "answer": 3,
+   "why": "It must be harder than 5.5 but softer than quartz (7). Orthoclase is 6. Topaz (8) is harder than quartz.",
+   "source": "Slide 31; Practice midterm Q14"
+  },
+  {
+   "id": "min-7",
+   "q": "Why does quartz have no cleavage?",
+   "options": [
+    "It is a sheet silicate with weak bonds between the sheets",
+    "It is a framework silicate with strong Si-O bonds equally in all directions",
+    "It has no silicon in it",
+    "It is too soft to break cleanly",
+    "It is a single-chain silicate"
+   ],
+   "answer": 1,
+   "why": "No plane of weaker bonds exists, so it fractures (conchoidal) instead of cleaving. Quartz is SiO2, a framework silicate.",
+   "source": "Slides 5, 45-47; Practice midterm Q15"
+  },
+  {
+   "id": "min-8",
+   "q": "One hematite sample is black and another is red, but both leave a reddish-brown line on a porcelain plate. What does this show?",
+   "options": [
+    "Colour is the most reliable identification property",
+    "Hematite has two polymorphs",
+    "Streak is more reliable than colour for identification",
+    "Luster changes with hardness",
+    "Both samples are actually different minerals"
+   ],
+   "answer": 2,
+   "why": "Colour changes between samples but the powder (streak) stays constant. Hematite always streaks reddish-brown.",
+   "source": "Slide 29; Textbook 3.5.2; Practice midterm Q16"
+  },
+  {
+   "id": "min-9",
+   "q": "A white mineral has hardness 3, breaks into rhomb-shaped pieces (three cleavage directions NOT at 90 degrees), and fizzes in dilute acid. What is it?",
+   "options": [
+    "Halite",
+    "Gypsum",
+    "Quartz",
+    "Fluorite",
+    "Calcite"
+   ],
+   "answer": 4,
+   "why": "Calcite is hardness 3 (Mohs), has three cleavages not at 90 degrees (rhombs) and effervesces in acid. Halite has cubic cleavage.",
+   "source": "Slides 31, 34-35; Practice midterm Q17"
+  },
+  {
+   "id": "min-10",
+   "q": "Minerals can be identified by various properties including colour and hardness. Which of the following is a feature also used to help identify minerals?",
+   "options": [
+    "cleavage",
+    "advantage",
+    "peerage",
+    "lineage",
+    "selvage"
+   ],
+   "answer": 0,
+   "why": "Cleavage is how a mineral breaks along flat planes. It is one of the standard identification properties.",
+   "source": "Slide 32; First midterm Q10"
+  },
+  {
+   "id": "min-11",
+   "q": "Which statements about a mineral are correct?\nI. It is naturally occurring.\nII. It must be made by a living organism.\nIII. It has a repeating (crystalline) atom arrangement.",
+   "options": [
+    "I only",
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "I and III are in the definition. II is false: biogenic minerals are only a special case; most form by geologic processes.",
+   "source": "Slides 3, 10, 12"
+  },
+  {
+   "id": "min-12",
+   "q": "Which statements about silicate structures are correct?\nI. Framework silicates have a Si:O ratio of 1:3.\nII. Isolated tetrahedra do not share any oxygens.\nIII. In single-chain silicates two of the three basal oxygens are bonded together.",
+   "options": [
+    "I only",
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 3,
+   "why": "Framework is 1:2 (single chain is 1:3), so I is wrong. II (slide 52) and III (slide 49) are correct.",
+   "source": "Slides 47, 49, 52"
+  },
+  {
+   "id": "min-13",
+   "q": "Which statement about hardness is INCORRECT?",
+   "options": [
+    "Hardness is scratching resistance linked to atomic-bond strength.",
+    "A copper penny (3.5) can scratch calcite (3).",
+    "Calcite (3) can scratch fluorite (4).",
+    "Quartz (7) can scratch glass (5.5).",
+    "The Mohs scale runs from 1 to 10."
+   ],
+   "answer": 2,
+   "why": "A harder mineral scratches a softer one. Calcite is softer than fluorite, so it cannot scratch it.",
+   "source": "Slide 31"
+  },
+  {
+   "id": "min-14",
+   "q": "A mineral can be scratched by your fingernail (2.5). Which of these could it be?",
+   "options": [
+    "Quartz",
+    "Gypsum",
+    "Orthoclase",
+    "Topaz",
+    "Apatite"
+   ],
+   "answer": 1,
+   "why": "It must be softer than 2.5. Gypsum is 2. The others are 5 or higher.",
+   "source": "Slide 31"
+  },
+  {
+   "id": "min-15",
+   "q": "A mineral scratches a copper penny (3.5) but is scratched by a steel knife blade (5.5). Which could it be?",
+   "options": [
+    "Talc",
+    "Gypsum",
+    "Calcite",
+    "Corundum",
+    "Fluorite"
+   ],
+   "answer": 4,
+   "why": "Its hardness is between 3.5 and 5.5. Fluorite is 4. Talc, gypsum and calcite are 3 or lower; corundum is 9.",
+   "source": "Slide 31"
+  },
+  {
+   "id": "min-16",
+   "q": "Reasoning: Why does mica peel apart into thin sheets?",
+   "options": [
+    "Its tetrahedra are isolated",
+    "It has strong bonds in every direction",
+    "It has no silicon",
+    "Bonds between the sheets are much weaker than bonds within the sheets",
+    "It is a framework silicate"
+   ],
+   "answer": 3,
+   "why": "Mica is a sheet silicate. Weak bonds between sheets make one perfect cleavage direction.",
+   "source": "Slides 33, 51; Textbook 3.3.4"
+  },
+  {
+   "id": "min-17",
+   "q": "How can you tell a cleavage plane from a crystal face?",
+   "options": [
+    "Cleavage is throughgoing; crystal faces are on the outside surface only",
+    "Crystal faces are throughgoing; cleavage is on the outside only",
+    "Cleavage is always at 90 degrees",
+    "Crystal faces are always rough",
+    "They cannot be told apart"
+   ],
+   "answer": 0,
+   "why": "Slide 32: cleavage repeats through the crystal; faces are only on external surfaces.",
+   "source": "Slide 32"
+  },
+  {
+   "id": "min-18",
+   "q": "The Earth's crust is composed mostly of 8 elements. What percent by weight do oxygen (46.6%) and silicon (27.7%) make up together?",
+   "options": [
+    "74.3%",
+    "46.6%",
+    "27.7%",
+    "20.5%",
+    "60.5%"
+   ],
+   "answer": 0,
+   "why": "Add them: 46.6 + 27.7 = 74.3%.",
+   "source": "Slides 41-42"
+  },
+  {
+   "id": "min-19",
+   "q": "Which two elements dominate the mass of the ENTIRE Earth (not just the crust)?",
+   "options": [
+    "Oxygen and silicon",
+    "Iron and oxygen",
+    "Silicon and aluminum",
+    "Iron and magnesium",
+    "Aluminum and calcium"
+   ],
+   "answer": 1,
+   "why": "Slide 40: Iron 32.1% and Oxygen 30.1%. In the crust, oxygen and silicon dominate.",
+   "source": "Slides 40-41"
+  },
+  {
+   "id": "min-20",
+   "q": "Calcite breaks into rhomb-shaped pieces. Which describes its cleavage?",
+   "options": [
+    "one direction",
+    "two directions at 90 degrees",
+    "three directions at 90 degrees",
+    "three directions NOT at 90 degrees",
+    "none, it fractures"
+   ],
+   "answer": 3,
+   "why": "Slide 34: three directions not at 90 degrees. Halite is the three-at-90 example.",
+   "source": "Slide 34"
+  },
+  {
+   "id": "min-21",
+   "q": "Which statements about special mineral properties are correct?\nI. Magnetite is magnetic.\nII. Halite tastes like salt.\nIII. Sulfur smells like rotten eggs.",
+   "options": [
+    "I only",
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 4,
+   "why": "All three examples are on slide 35.",
+   "source": "Slide 35"
+  },
+  {
+   "id": "min-22",
+   "q": "The giant gypsum crystals in a cave grew by:",
+   "options": [
+    "freezing of molten rock",
+    "precipitation from hot water that once filled the cave",
+    "burial of fossil shells",
+    "the melting of ice",
+    "living organisms building shells"
+   ],
+   "answer": 1,
+   "why": "Slide 6: precipitation from hot water that previously filled the cave.",
+   "source": "Slide 6; Textbook 3.2.1"
+  },
+  {
+   "id": "min-23",
+   "q": "Which mineral shows two cleavage directions that are NOT at 90 degrees?",
+   "options": [
+    "Muscovite",
+    "Potassium feldspar",
+    "Amphibole",
+    "Halite",
+    "Quartz"
+   ],
+   "answer": 2,
+   "why": "Slide 33: amphibole (60 and 120 degrees in the textbook). K-feldspar has two at 90, muscovite one, halite three at 90, quartz none.",
+   "source": "Slide 33; Textbook 3.5.5"
+  },
+  {
+   "id": "min-24",
+   "q": "Reasoning: A mineral has bonds that are equally strong in all directions. What happens when it breaks?",
+   "options": [
+    "It cleaves into thin sheets",
+    "It cleaves in three directions at 90 degrees",
+    "It breaks along a single flat plane",
+    "It breaks into perfect cubes",
+    "It fractures instead of cleaving"
+   ],
+   "answer": 4,
+   "why": "With no planes of weakness it fractures (e.g. conchoidal), as obsidian and quartz do.",
+   "source": "Slide 5; Textbook 3.5.5"
+  },
+  {
+   "id": "min-25",
+   "q": "Reasoning: Diamond is the hardest mineral and graphite one of the softest, yet both are pure carbon. Why?",
+   "options": [
+    "They have different isotopes of carbon",
+    "Graphite contains more carbon atoms",
+    "Diamond contains a little silicon",
+    "Different atomic bonding and structure: strong bonds all around in diamond, weak bonds between layers in graphite",
+    "Graphite is a glass"
+   ],
+   "answer": 3,
+   "why": "They are polymorphs. The type of bonding controls hardness.",
+   "source": "Slide 22"
+  }
+ ],
+ "games": [
+  "match"
+ ]
+}

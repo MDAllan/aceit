@@ -1,0 +1,781 @@
+{
+ "id": "biography",
+ "title": "A Biography of Earth",
+ "chapter": "Ch 11",
+ "icon": "🌍",
+ "color": "#2f7d6d",
+ "slideFile": "2026 October 16 & 19 Ch 11 Earth Biography v1.pdf",
+ "intro": "Earth's life story in four chapters (eons): Hadean, Archean, Proterozoic, Phanerozoic. For each one, learn WHAT happened and WHY it mattered.",
+ "sections": [
+  {
+   "id": "hadean",
+   "title": "Hadean Eon: the molten start",
+   "slides": "3-8",
+   "bullets": [
+    "Hadean = **4.57 to 3.8 Ga**. It starts when Earth forms by **planetesimal accretion** (small rocks crashing together and sticking).",
+    "Three heat sources: **gravitational collapse**, **impacts**, **radioactive decay**. Hot enough to partly melt by ~4.5 Ga.",
+    "**Chemical differentiation**: molten iron sinks to the centre (core); the **ultramafic mantle** stays as a thick outer shell."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why did iron sink? Iron is much denser than rock. While Earth was molten, gravity sorted it like oil and vinegar in a jar: heavy at the bottom, light on top. That is why Earth has layers today."
+    },
+    {
+     "type": "trick",
+     "text": "Hadean sounds like Hades, the underworld: hot, molten, hellish."
+    },
+    {
+     "type": "trap",
+     "text": "Dates differ by source. Your slide says the Hadean runs 4.57 to 3.8 Ga. The textbook says 4.5 to 4.0 Ga. Use the slide's numbers on the exam."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 3",
+    "Intro to Geology 8.3"
+   ]
+  },
+  {
+   "id": "archean",
+   "title": "Archean Eon: first rocks, first life",
+   "slides": "10-14",
+   "bullets": [
+    "Slide 10 graph: continents grew fastest in the Archean. About **80%** of today's continental area existed by the end of it (~2.5 Ga).",
+    "Slides 12-14: **stromatolites**, layered mounds built by microbial mats (photosynthesising bacteria). Slide 11 shows microfossils (10 µm wide).",
+    "Textbook: first well-preserved fossils are stromatolites ~3.5 Ga."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do stromatolites have layers? Textbook 8.4.3: they are fossils of photosynthetic microbial mats, so each layer is one mat of microbes stacked on the last. (Layer-by-layer growth detail: outside source, general knowledge.)"
+    },
+    {
+     "type": "trap",
+     "text": "Slide 10 shows the continents mostly formed in the Archean, so an exam question asking 'when was most continental crust extracted from the mantle?' wants Archean, not Phanerozoic."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 10-14",
+    "Intro to Geology 8.4"
+   ]
+  },
+  {
+   "id": "proterozoic",
+   "title": "Proterozoic Eon: oxygen and big continents",
+   "slides": "15-25",
+   "bullets": [
+    "**protero** = first, **zoic** = life. It was named before Archean life was discovered (slide 15).",
+    "**Banded iron formations (BIFs)** are the evidence of oxygen build-up (slide 21).",
+    "Supercontinents: **Rodinia** (~750 Ma, slide 19) and **Pannotia** (formed ~600 Ma, short-lived, slide 20).",
+    "Last 500 Ma: **Ediacara fauna**, soft-bodied multicellular animals like worms and jellyfish (slides 22-23).",
+    "Slide 25: strata with large clasts in mudstone show glaciers (ice carries any size of rock)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do BIFs show oxygen? Before oxygen, iron dissolved in seawater. When cyanobacteria released O2, the iron rusted out of the water as iron oxide and settled in layers. No oxygen = no rust layers. Today's steel comes from this iron."
+    },
+    {
+     "type": "trick",
+     "text": "BIF = 'Big Iron Fingerprint' of the ocean's first big oxygen event."
+    },
+    {
+     "type": "trap",
+     "text": "Rodinia vs Pannotia: both are Proterozoic. Pannotia was short-lived and formed ~600 Ma; the supercontinent that comes later in the Paleozoic is Pangaea."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 15-25",
+    "Intro to Geology 8.5"
+   ]
+  },
+  {
+   "id": "paleozoic",
+   "title": "Paleozoic Era: life explodes, then nearly dies",
+   "slides": "26-39",
+   "bullets": [
+    "Cambrian/Ordovician: shallow seas full of corals, trilobites, brachiopods, nautiloids (slide 29).",
+    "Silurian/Devonian: **vascular plants** spread (veins, woody tissue, seeds) and first forests appear. Then land animals (scorpions, spiders, insects) follow (slide 32).",
+    "End of Devonian: first **amphibians**. **Tiktaalik** (found 1996) is a lobe-finned fish with push-up fins and a neck (slide 33).",
+    "Permian extinction killed **90%** of marine species (slide 38)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why did animals follow plants onto land? Plants made food and shelter first, and insects ate them. Predators then followed the food."
+    },
+    {
+     "type": "trap",
+     "text": "Permian extinction number: slide says 90% of marine species; textbook says up to 96%. Use 90% from the slide."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 26-39",
+    "Intro to Geology 8.6"
+   ]
+  },
+  {
+   "id": "mesozoic",
+   "title": "Mesozoic Era: age of dinosaurs",
+   "slides": "40-51",
+   "bullets": [
+    "Cretaceous: modern fish, aquatic reptiles, giant turtles; **angiosperms** (flowering plants) spread (slide 47).",
+    "Dinosaurs lived in nearly every environment; pterosaurs flew; birds began to diversify; mammals got bigger brains (slide 48).",
+    "Slides 49-51: impact at ~66 Ma on the Yucatan peninsula (Earth at 66 Ma)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why did flowering plants spread fast? They make seeds quickly and use insects to carry pollen, so they reproduce faster than plants relying on wind."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 40-51",
+    "Intro to Geology 8.7"
+   ]
+  },
+  {
+   "id": "cenozoic",
+   "title": "Cenozoic Era: age of mammals",
+   "slides": "52-59",
+   "bullets": [
+    "After the **K-Pg boundary**, plants recovered; first grasses mid-Cenozoic; birds (dinosaur descendants) spread (slide 54).",
+    "Mammals diversified to fill empty niches (slide 55). Many giant mammals died off ~10 ka, possibly from human hunting.",
+    "Ice ages dropped sea level by more than **100 m**, exposing land bridges (slide 57).",
+    "Humans: primates ~20 Ma; human-like ~4 Ma; genus Homo 2.4 Ma; *H. erectus* ~1.6 Ma; *H. sapiens* ~500 ka; modern humans ~190 ka (slides 58-59)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why did land bridges appear? Ice sheets locked up ocean water, so sea level fell and shallow shelves became dry land."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 52-59",
+    "Intro to Geology 8.8"
+   ]
+  }
+ ],
+ "table": {
+  "title": "Eons at a glance",
+  "head": [
+   "Eon",
+   "Dates",
+   "Big idea",
+   "Slides"
+  ],
+  "rows": [
+   [
+    "Hadean",
+    "4.57 to 3.8 Ga (slide)",
+    "Molten Earth, core forms",
+    "3-8"
+   ],
+   [
+    "Archean",
+    "to 2.5 Ga",
+    "Continents grow, stromatolites",
+    "10-14"
+   ],
+   [
+    "Proterozoic",
+    "2.5 Ga to ~541 Ma",
+    "Oxygen, BIFs, Rodinia, Ediacara",
+    "15-25"
+   ],
+   [
+    "Phanerozoic",
+    "~541 Ma to today",
+    "Visible life: Paleozoic, Mesozoic, Cenozoic",
+    "26-59"
+   ]
+  ]
+ },
+ "quiz": [
+  {
+   "id": "bio-1",
+   "q": "The iron in the steel in a car was probably deposited during a(n) ______?",
+   "options": [
+    "ocean turnover event",
+    "ocean magnetic reversal",
+    "ocean reduction event",
+    "ocean oxygenation event",
+    "oceanic stellar explosion"
+   ],
+   "answer": 3,
+   "why": "Dissolved iron rusted out of the ocean when oxygen appeared, forming banded iron formations, the main source of iron ore.",
+   "source": "Slides 21 and 60; Intro to Geology 8.5"
+  },
+  {
+   "id": "bio-2",
+   "q": "The continental crust was mostly extracted from the mantle during the ______?",
+   "options": [
+    "Hadean",
+    "Archean",
+    "Proterozoic",
+    "Phanerozoic",
+    "Cenozoic"
+   ],
+   "answer": 1,
+   "why": "The slide 10 graph shows about 80% of present continental area already existed by the end of the Archean.",
+   "source": "Slides 10 and 61"
+  },
+  {
+   "id": "bio-3",
+   "q": "The continental crust may have been mostly extracted from the mantle by ______?",
+   "options": [
+    "hot spots",
+    "mid-ocean ridges",
+    "subduction zones",
+    "collisions",
+    "large impacts"
+   ],
+   "answer": 2,
+   "why": "Water-rich subduction melts mantle rock into felsic magma, which builds island arcs that merge into continents (slides 7 and 9). Confirm this with your prof: slide 62 does not give the answer.",
+   "source": "Slides 7, 9 and 62; Intro to Geology 8.4.2 (inferred)"
+  },
+  {
+   "id": "bio-4",
+   "q": "Which statements about the Hadean Eon are correct?\nI. It began with planetesimal accretion.\nII. Iron sank to form the core.\nIII. Banded iron formations formed then.",
+   "options": [
+    "I only",
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 1,
+   "why": "I and II are on slide 3. BIFs need oxygen, which came in the Proterozoic, so III is wrong.",
+   "source": "Slides 3 and 21"
+  },
+  {
+   "id": "bio-5",
+   "q": "Banded iron formations are evidence for:",
+   "options": [
+    "early glaciers",
+    "oxygen build-up",
+    "supercontinent breakup",
+    "the first land plants",
+    "a meteorite impact"
+   ],
+   "answer": 1,
+   "why": "Slide 21 says it directly: BIFs preserve evidence of oxygen build-up.",
+   "source": "Slide 21"
+  },
+  {
+   "id": "bio-6",
+   "q": "Pannotia was a supercontinent that:",
+   "options": [
+    "lasted for over a billion years",
+    "formed about 600 Ma and broke apart soon after",
+    "formed in the Cenozoic",
+    "is the same as Pangaea",
+    "formed before the Archean"
+   ],
+   "answer": 1,
+   "why": "Slide 20: Pannotia was short-lived, forming ~600 Ma at the end of the Proterozoic.",
+   "source": "Slide 20"
+  },
+  {
+   "id": "bio-7",
+   "q": "Tiktaalik is important because it:",
+   "options": [
+    "was the first flowering plant",
+    "is a fossil transitional between fish and amphibians",
+    "was a Permian reptile",
+    "proves Pangaea existed",
+    "was the first dinosaur"
+   ],
+   "answer": 1,
+   "why": "It was a lobe-finned fish that could do push-ups and look around on a swivel-jointed neck, a mix of fish and land traits.",
+   "source": "Slide 33"
+  },
+  {
+   "id": "bio-8",
+   "q": "Which statements about the Cenozoic are correct?\nI. It is known as the Age of Mammals.\nII. Glacial advances lowered sea level by more than 100 m.\nIII. Birds are descendants of dinosaurs.",
+   "options": [
+    "I only",
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 4,
+   "why": "All three are on slides 54, 55 and 57.",
+   "source": "Slides 54, 55, 57"
+  },
+  {
+   "id": "bio-9",
+   "q": "Reasoning: Land bridges between continents appeared during glacial advances because:",
+   "options": [
+    "continents moved together",
+    "ice locked up water so sea level fell",
+    "volcanoes built new land",
+    "the mantle rose",
+    "none of the above"
+   ],
+   "answer": 1,
+   "why": "Water trapped as ice lowers sea level, exposing shallow continental shelves as dry land.",
+   "source": "Slide 57"
+  },
+  {
+   "id": "bio-10",
+   "q": "The Permian extinction eradicated about what share of marine species?",
+   "options": [
+    "10%",
+    "30%",
+    "50%",
+    "70%",
+    "90%"
+   ],
+   "answer": 4,
+   "why": "Slide says 90%. (Note: the textbook says up to 96%; use the slide's value.)",
+   "source": "Slide 38; Intro to Geology 8.6 (note)"
+  }
+ ],
+ "games": [
+  "match",
+  "timeline"
+ ],
+ "cards": [
+  {
+   "id": "bio-c1",
+   "front": "Hadean Eon",
+   "back": "Earth's first eon, 4.57 to 3.8 Ga. It begins when Earth forms by planetesimal accretion.",
+   "short": "4.57–3.8 Ga; Earth forms",
+   "src": "Slide 3"
+  },
+  {
+   "id": "bio-c2",
+   "front": "Planetesimal accretion",
+   "back": "Small bodies (planetesimals) collide and stick together to build up a planet.",
+   "short": "Small bodies stick together to build Earth",
+   "src": "Slide 3"
+  },
+  {
+   "id": "bio-c3",
+   "front": "Chemical differentiation",
+   "back": "In molten Earth, gravity pulled iron to the centre. The ultramafic mantle stayed as a thick outer shell.",
+   "short": "Iron sinks to the core; mantle stays outside",
+   "src": "Slide 3"
+  },
+  {
+   "id": "bio-c4",
+   "front": "3 heat sources of early Earth",
+   "back": "Gravitational collapse, impacts, and radioactive decay.",
+   "short": "Collapse, impacts, radioactive decay",
+   "src": "Slide 3"
+  },
+  {
+   "id": "bio-c5",
+   "front": "Archean Eon",
+   "back": "The eon after the Hadean, ending 2.5 Ga. Most of today's continental area grew during it (about 80% by the end).",
+   "short": "Continents grow; ends 2.5 Ga",
+   "src": "Slides 6, 10"
+  },
+  {
+   "id": "bio-c6",
+   "front": "Stromatolite",
+   "back": "A layered mound made by microbial mats. Earliest well-preserved fossils, ~3.5 Ga.",
+   "short": "Layered mound built by microbial mats",
+   "src": "Slides 12-14; Textbook 8.4.3"
+  },
+  {
+   "id": "bio-c7",
+   "front": "Proterozoic Eon",
+   "back": "protero = first, zoic = life. Runs 2.5 Ga to 542 Ma (slide 6).",
+   "short": "'First life' eon, 2.5 Ga–542 Ma",
+   "src": "Slides 6, 15"
+  },
+  {
+   "id": "bio-c8",
+   "front": "Banded iron formation (BIF)",
+   "back": "Layers of iron oxide and silica that preserve evidence of oxygen build-up in the oceans.",
+   "short": "Rock layers recording oxygen build-up",
+   "src": "Slide 21; Textbook 8.5"
+  },
+  {
+   "id": "bio-c9",
+   "front": "Rodinia",
+   "back": "A Proterozoic supercontinent, shown at about 750 Ma.",
+   "short": "Proterozoic supercontinent ~750 Ma",
+   "src": "Slide 19"
+  },
+  {
+   "id": "bio-c10",
+   "front": "Pannotia",
+   "back": "A short-lived supercontinent that formed about 600 Ma and broke apart soon after.",
+   "short": "Short-lived supercontinent ~600 Ma",
+   "src": "Slide 20"
+  },
+  {
+   "id": "bio-c11",
+   "front": "Ediacara fauna",
+   "back": "Soft-bodied, multicellular invertebrates resembling worms and jellyfish, at the end of the Proterozoic.",
+   "short": "Soft-bodied worm/jellyfish-like animals",
+   "src": "Slide 23"
+  },
+  {
+   "id": "bio-c12",
+   "front": "Phanerozoic Eon",
+   "back": "The eon from 542 Ma to today. Name means 'visible life'. (Textbook says 541 Ma.)",
+   "short": "542 Ma to today; 'visible life'",
+   "src": "Slide 6; Textbook 8.6"
+  },
+  {
+   "id": "bio-c13",
+   "front": "Vascular plants",
+   "back": "Plants with internal veins to move water, woody tissue, and seeds. They formed the first forests (Silurian-Devonian).",
+   "short": "Plants with veins, wood and seeds",
+   "src": "Slide 32"
+  },
+  {
+   "id": "bio-c14",
+   "front": "Tiktaalik",
+   "back": "A lobe-finned fish with push-up fins and a swivel neck, found in 1996. Transitional between fish and amphibians.",
+   "short": "Fish-to-amphibian transitional fossil",
+   "src": "Slide 33"
+  },
+  {
+   "id": "bio-c15",
+   "front": "Permian extinction",
+   "back": "Ended the Paleozoic and wiped out 90% of marine species. (Textbook says up to 96%.)",
+   "short": "End-Paleozoic; killed 90% of marine species",
+   "src": "Slide 38; Textbook 8.6"
+  },
+  {
+   "id": "bio-c16",
+   "front": "Angiosperms",
+   "back": "Flowering plants. They make seeds quickly and use insects for pollination. Spread in the Cretaceous.",
+   "short": "Flowering plants, insect-pollinated",
+   "src": "Slide 47"
+  },
+  {
+   "id": "bio-c17",
+   "front": "K-Pg boundary",
+   "back": "Marks the end-Cretaceous mass extinction ~66 Ma, linked to an impact on the Yucatan peninsula (Chicxulub).",
+   "short": "Extinction 66 Ma; Yucatan impact",
+   "src": "Slides 49-50; Textbook 8.7"
+  },
+  {
+   "id": "bio-c18",
+   "front": "Cenozoic Era",
+   "back": "Known as the Age of Mammals. Mammals diversified to fill niches left empty after the K-Pg extinction.",
+   "short": "Age of Mammals",
+   "src": "Slide 55"
+  },
+  {
+   "id": "bio-c19",
+   "front": "Sea level during ice ages",
+   "back": "Dropped more than 100 m because water was trapped as ice, creating land bridges.",
+   "short": "Falls >100 m, making land bridges",
+   "src": "Slide 57"
+  },
+  {
+   "id": "bio-c20",
+   "front": "Genus Homo",
+   "back": "The first members of the human genus appeared about 2.4 Ma.",
+   "short": "Appeared ~2.4 Ma",
+   "src": "Slide 58"
+  },
+  {
+   "id": "bio-c21",
+   "front": "Homo erectus",
+   "back": "Appeared ~1.6 Ma and could make stone axes.",
+   "short": "~1.6 Ma; made stone axes",
+   "src": "Slide 59"
+  },
+  {
+   "id": "bio-c22",
+   "front": "Homo sapiens",
+   "back": "Appeared ~500 ka. Modern humans appeared ~190 ka.",
+   "short": "~500 ka (modern humans ~190 ka)",
+   "src": "Slide 59"
+  },
+  {
+   "id": "bio-c23",
+   "front": "Craton",
+   "back": "The stable interior of a continent, mostly formed in the Archean. It has a shield (crystalline basement) and a platform (sedimentary cover).",
+   "short": "Stable continent interior: shield + platform",
+   "src": "Slide 17; Textbook 8.4.2"
+  },
+  {
+   "id": "bio-c24",
+   "front": "Ka, Ma, Ga",
+   "back": "One thousand, one million, and one billion years ago.",
+   "short": "Thousand / million / billion years ago",
+   "src": "Slide 6"
+  },
+  {
+   "id": "bio-c25",
+   "front": "Late Mesozoic life",
+   "back": "Modern fish, aquatic reptiles, giant turtles, flowering plants, dinosaurs in nearly every environment, soaring pterosaurs, diversifying birds, and mammals with bigger brains.",
+   "short": "Cretaceous: dinosaurs, flowers, birds, mammals",
+   "src": "Slides 47-48"
+  }
+ ],
+ "timeline": {
+  "total": 4570,
+  "eons": [
+   {
+    "name": "Hadean",
+    "from": 4570,
+    "to": 3800,
+    "color": "#c0504d",
+    "note": "Molten start. Earth forms, heats up, and the iron core separates. Dates are from slide 6 (textbook: 4.5 to 4.0 Ga)."
+   },
+   {
+    "name": "Archean",
+    "from": 3800,
+    "to": 2500,
+    "color": "#8e6bb0",
+    "note": "First continents and microbial life. By the end, about 80% of today's continental area existed."
+   },
+   {
+    "name": "Proterozoic",
+    "from": 2500,
+    "to": 542,
+    "color": "#c9a46a",
+    "note": "Oxygen builds up, supercontinents form and break, and the first complex animals appear at the very end."
+   },
+   {
+    "name": "Phanerozoic",
+    "from": 542,
+    "to": 0,
+    "color": "#4a90c2",
+    "note": "'Visible life'. The time of shells, bones, forests, dinosaurs, mammals and humans. Tap an era in the bottom bar to zoom."
+   }
+  ],
+  "eras": [
+   {
+    "name": "Paleozoic",
+    "from": 542,
+    "to": 251,
+    "color": "#7fa9d6",
+    "note": "Old life. Shells, fish, land plants, first land animals; ends with the Permian extinction. (Textbook: ends 252 Ma.)"
+   },
+   {
+    "name": "Mesozoic",
+    "from": 251,
+    "to": 65,
+    "color": "#3a9d86",
+    "note": "Middle life. Age of dinosaurs. Ends at the K-Pg boundary (slide 6 says 65 Ma; slide 49 and the textbook say 66 Ma)."
+   },
+   {
+    "name": "Cenozoic",
+    "from": 65,
+    "to": 0,
+    "color": "#e0a83f",
+    "note": "Recent life. Age of Mammals, ice ages and the rise of humans."
+   }
+  ],
+  "events": [
+   {
+    "ma": 4570,
+    "kind": "earth",
+    "title": "Earth forms",
+    "text": "Earth forms by planetesimal accretion, then heats up from gravitational collapse, impacts and radioactive decay.",
+    "src": "Slide 3",
+    "why": "Collisions and compression release heat, and radioactive atoms keep releasing it."
+   },
+   {
+    "ma": 4500,
+    "kind": "earth",
+    "title": "Earth partly melts",
+    "text": "Hot enough to partially melt by ~4.5 Ga. Molten iron sinks to form the core; the ultramafic mantle stays as a thick shell.",
+    "src": "Slide 3",
+    "why": "Iron is denser than rock, so gravity sorts it to the centre."
+   },
+   {
+    "ma": 3500,
+    "kind": "life",
+    "title": "Stromatolites",
+    "text": "Layered microbial mats leave the first well-preserved fossils.",
+    "src": "Slides 12-14; date from Textbook 8.4.3"
+   },
+   {
+    "ma": 2500,
+    "kind": "earth",
+    "title": "Archean ends: continents mostly grown",
+    "text": "About 80% of today's continental area existed by this time.",
+    "src": "Slides 6, 10"
+   },
+   {
+    "ma": 2000,
+    "kind": "earth",
+    "title": "Banded iron formations",
+    "text": "Iron oxide layers record oxygen building up in the oceans.",
+    "src": "Slide 21; date (~2 Ga) from Textbook 8.5",
+    "why": "Dissolved iron rusts out of seawater when oxygen appears. No oxygen, no rust bands."
+   },
+   {
+    "ma": 1000,
+    "kind": "super",
+    "title": "Rodinia assembles",
+    "text": "Continents collide to form a supercontinent. Slide 19 shows it at about 750 Ma.",
+    "src": "Slide 19; ~1 Ga from Textbook 8.5.1"
+   },
+   {
+    "ma": 750,
+    "kind": "super",
+    "title": "Rodinia breaks up",
+    "text": "Breakup runs from about 750 to 600 Ma, making shallow seas where life could evolve.",
+    "src": "Slide 19; Textbook 8.5.1"
+   },
+   {
+    "ma": 600,
+    "kind": "super",
+    "title": "Pannotia",
+    "text": "A short-lived supercontinent that formed about 600 Ma and broke apart soon after.",
+    "src": "Slide 20"
+   },
+   {
+    "ma": 560,
+    "kind": "life",
+    "title": "Ediacara fauna",
+    "text": "Soft-bodied, multicellular invertebrates resembling worms and jellyfish appear at the end of the Proterozoic.",
+    "src": "Slides 22-23",
+    "why": "Bodies without shells rarely fossilise, which is why Precambrian fossils are rare (Textbook 8.6).",
+    "show": "End of Proterozoic"
+   },
+   {
+    "ma": 500,
+    "kind": "life",
+    "title": "Cambrian and Ordovician seas",
+    "text": "Corals, trilobites, brachiopods and nautiloids fill shallow seas.",
+    "src": "Slide 29",
+    "show": "Early Paleozoic"
+   },
+   {
+    "ma": 445,
+    "kind": "extinct",
+    "title": "End-Ordovician extinction",
+    "text": "An ice age lowered sea level; the earliest of five mass extinctions in the fossil record.",
+    "src": "Textbook 8.6",
+    "show": "End of Ordovician"
+   },
+   {
+    "ma": 410,
+    "kind": "life",
+    "title": "First forests and land animals",
+    "text": "Vascular plants (veins, wood, seeds) spread and form the first forests. Scorpions, spiders, insects and crustaceans follow onto land.",
+    "src": "Slide 32",
+    "why": "Plants came first, so animals had food and shelter on land.",
+    "show": "Silurian-Devonian"
+   },
+   {
+    "ma": 385,
+    "kind": "life",
+    "title": "Tiktaalik",
+    "text": "A lobe-finned fish with push-up fins and a swivel neck, transitional between fish and amphibians (found 1996). The first amphibians appear at the end of the Devonian.",
+    "src": "Slides 33-34; ~385 Ma from Textbook 8.6"
+   },
+   {
+    "ma": 300,
+    "kind": "super",
+    "title": "Pangaea assembles",
+    "text": "All major continents are grouped together by the late Paleozoic.",
+    "src": "Textbook 8.6; slide 35 shows Carboniferous-Permian geography",
+    "show": "Late Paleozoic"
+   },
+   {
+    "ma": 251,
+    "kind": "extinct",
+    "title": "Permian extinction",
+    "text": "Ends the Paleozoic. Wipes out 90% of marine species (textbook: up to 96%).",
+    "src": "Slide 38; Textbook 8.6",
+    "why": "Leading idea (textbook): huge Siberian Traps volcanism added greenhouse gases that disrupted climate and food chains.",
+    "show": "End of Paleozoic"
+   },
+   {
+    "ma": 201,
+    "kind": "extinct",
+    "title": "End-Triassic extinction",
+    "text": "The fourth of the major mass extinctions. It helped mammals and dinosaurs rise.",
+    "src": "Textbook 8.7",
+    "show": "End of Triassic"
+   },
+   {
+    "ma": 100,
+    "kind": "life",
+    "title": "Cretaceous world",
+    "text": "Flowering plants spread, dinosaurs live everywhere, pterosaurs fly, birds diversify, mammals get larger brains.",
+    "src": "Slides 47-48",
+    "why": "Flowers make seeds fast and use insects for pollination.",
+    "show": "Cretaceous"
+   },
+   {
+    "ma": 66,
+    "kind": "extinct",
+    "title": "K-Pg impact and extinction",
+    "text": "An impact on the Yucatan peninsula (Chicxulub crater) coincides with the extinction of the dinosaurs.",
+    "src": "Slides 49-50; Textbook 8.7"
+   },
+   {
+    "ma": 30,
+    "kind": "life",
+    "title": "Grasses appear",
+    "text": "First grasses in the middle Cenozoic. Plant life recovered after K-Pg and birds spread.",
+    "src": "Slide 54",
+    "show": "Middle Cenozoic"
+   },
+   {
+    "ma": 20,
+    "kind": "life",
+    "title": "Ape-like primates diversify",
+    "text": "Miocene.",
+    "src": "Slide 58"
+   },
+   {
+    "ma": 4,
+    "kind": "life",
+    "title": "First human-like primate",
+    "text": "Appears about 4 Ma.",
+    "src": "Slide 58"
+   },
+   {
+    "ma": 2.58,
+    "kind": "climate",
+    "title": "Quaternary ice ages",
+    "text": "Glacial advances lock up water as ice; sea level falls more than 100 m, exposing land bridges.",
+    "src": "Slide 57; date from Textbook 8.8",
+    "why": "Ice sheets hold ocean water, so shelves dry out."
+   },
+   {
+    "ma": 2.4,
+    "kind": "life",
+    "title": "Genus Homo",
+    "text": "First members of the human genus.",
+    "src": "Slide 58"
+   },
+   {
+    "ma": 1.6,
+    "kind": "life",
+    "title": "Homo erectus",
+    "text": "Could make stone axes.",
+    "src": "Slide 59"
+   },
+   {
+    "ma": 0.5,
+    "kind": "life",
+    "title": "Homo sapiens",
+    "text": "Appears ~500 ka.",
+    "src": "Slide 59"
+   },
+   {
+    "ma": 0.19,
+    "kind": "life",
+    "title": "Modern humans",
+    "text": "Appear ~190 ka.",
+    "src": "Slide 59"
+   },
+   {
+    "ma": 0.01,
+    "kind": "extinct",
+    "title": "Giant mammals die off",
+    "text": "Mammoths, mastodons and ground sloths died off ~10 ka, possibly because of hunting by humans.",
+    "src": "Slide 55"
+   }
+  ]
+ }
+}
