@@ -12,16 +12,13 @@
    "title": "How do we study a place we cannot visit?",
    "slides": "3, 8-10",
    "bullets": [
-    "Slide 3 lists the **probes** (tools) of the interior: **samples** (xenoliths, intrusions, meteorites), **gravity/mass/density**, **moment of inertia**, **free-body oscillations**, **heat flow**, **seismic studies**, and **magnetic field** generation/remanence/magnetotelluric currents.",
-    "**Xenoliths** are chunks of deep rock carried up inside magma by volcanic eruptions. Most are **peridotite** (an ultramafic rock), so the mantle is thought to be mostly peridotite (textbook 2.2.1).",
-    "**Meteorites** often contain more iron than surface rocks. They hint that Earth formed from similar material and that the core is mostly iron (textbook 2.2.1).",
-    "**Moment of inertia** (slide 8) is about how Earth's rotation changes the shape of the planet, and how the planet responds to tides.",
-    "**Free-body oscillations** (slides 9-10): after a big earthquake Earth rings like a bell. **Spheroidal** oscillation squeezes and stretches the planet in and out. **Toroidal** oscillation twists the two halves back and forth. The slides only show the pictures; the textbook says Earth 'rings like a bell' (textbook 9.6.3)."
+    "Scientists use several **probes** (tools): samples, gravity and density, moment of inertia, free-body oscillations, heat flow, seismic studies, and the magnetic field.",
+    "Rock samples: **xenoliths** are chunks of deep rock carried up inside magma by volcanic eruptions. Most are **peridotite** (an ultramafic rock), so the mantle is thought to be mostly peridotite. Meteorites often contain more iron than surface rocks, which hints that Earth formed from similar material and that the core is mostly iron."
    ],
    "boxes": [
     {
      "type": "why",
-     "text": "Why so many probes? Firsthand information about the deep Earth is very limited (textbook 2.2). Each probe gives one clue, such as density from gravity or liquid versus solid from seismic waves. Put the clues together and you get the picture."
+     "text": "Why so many probes? Firsthand information about the deep Earth is very limited. Each probe gives one clue, such as density from gravity or liquid versus solid from seismic waves. Put the clues together and you get the picture."
     },
     {
      "type": "trick",
@@ -34,7 +31,9 @@
    ],
    "sourceNotes": [
     "Slides 3, 8-10",
-    "Intro to Geology 2.2, 9.6.3"
+    "Intro to Geology 2.2, 9.6.3",
+    "Oscillation pictures have no wording on the slides; 'rings like a bell' is from Intro to Geology 9.6.3",
+    "Xenolith/peridotite and meteorite facts: Intro to Geology 2.2.1"
    ],
    "images": [
     {
@@ -52,6 +51,43 @@
      "slide": "10",
      "alt": "Figure from the lecture: How do we study a place we cannot visit?"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s8.jpg",
+      "slide": "8",
+      "alt": "Text card explaining moment of inertia: how rotation shapes Earth and how the planet responds to tides."
+     },
+     "title": "Moment of inertia",
+     "bullets": [
+      "**Moment of inertia** is about how Earth's rotation changes the shape of the planet, and how the planet responds to tides."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s9.jpg",
+      "slide": "9",
+      "alt": "Diagram of a ball-shaped Earth squeezing and stretching in and out, with arrows on its outline."
+     },
+     "title": "Spheroidal oscillation",
+     "bullets": [
+      "After a big earthquake Earth **rings like a bell**.",
+      "**Spheroidal** oscillation squeezes and stretches the planet in and out. The arrows show the outline moving in and out."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s10.jpg",
+      "slide": "10",
+      "alt": "Diagram of two globes with curved arrows showing the top and bottom halves twisting."
+     },
+     "title": "Toroidal oscillation",
+     "bullets": [
+      "**Toroidal** oscillation twists the two halves of the planet back and forth.",
+      "Both kinds are free oscillations: the whole Earth keeps ringing after a large quake."
+     ]
+    }
    ]
   },
   {
@@ -59,17 +95,13 @@
    "title": "Chemical layers: crust, mantle, core",
    "slides": "4-5",
    "bullets": [
-    "The Earth is split into three **chemical layers** (by what they are made of): **crust**, **mantle**, **core**.",
-    "**Crust** (slide 4: 2.7 to 3.3 g/cm3): the thin outer skin. **Continental crust** is light and granite-like (felsic, intermediate and mafic rock). **Oceanic crust** is heavier and basalt-like (**mafic** rock).",
-    "**Mantle** (3.3 to 5.7 g/cm3): the biggest layer by volume, from the base of the crust to about 2900 km deep. Its rock is **ultramafic** (peridotite).",
-    "**Core** (9.9 to 13.0 g/cm3): mostly **iron and nickel**, maybe a little oxygen. It has a liquid part and a solid part.",
     "The **Moho** (Mohorovicic Discontinuity) is the boundary between crust and mantle. At the Moho, seismic wave speed jumps up because the rock chemistry changes.",
-    "Moho depth: about **5 km** below the sea floor under oceans, **30 to 40 km** under continents, and roughly **doubled** near big mountain belts (orogenies). Discovered by Andrija Mohorovicic in **1909** in Croatia."
+    "Moho depth: about **5 km** below the sea floor under oceans, **30 to 40 km** under continents, and roughly **doubled** near big mountain belts. It was discovered by Andrija Mohorovicic in **1909** in Croatia."
    ],
    "boxes": [
     {
      "type": "why",
-     "text": "Why is the heavy stuff in the middle? Early Earth was partly molten. Heavy iron and nickel sank toward the centre, and light rock floated up to form the crust. Slide 5 says it directly: low-density materials float atop higher-density materials."
+     "text": "Why is the heavy stuff in the middle? Early Earth was partly molten. Heavy iron and nickel sank toward the centre, and light rock floated up to form the crust. Low-density materials float on top of higher-density materials."
     },
     {
      "type": "trick",
@@ -84,7 +116,7 @@
     "head": [
      "Chemical layer",
      "Made of",
-     "Density (slide 4)",
+     "Density",
      "Key facts"
     ],
     "rows": [
@@ -129,6 +161,34 @@
      "slide": "5",
      "alt": "Figure from the lecture: Chemical layers: crust, mantle, core"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s4.jpg",
+      "slide": "4",
+      "alt": "Wedge of Earth showing crust, mantle and core with their densities, and a block diagram of continental and oceanic crust above the mantle."
+     },
+     "title": "Three chemical layers",
+     "bullets": [
+      "The Earth is split into three **chemical layers** (by what they are made of): crust, mantle and core. Density goes up with depth: crust 2.7 to 3.3, mantle 3.3 to 5.7, core 9.9 to 13.0 g/cm3.",
+      "**Crust**: the thin outer skin. **Continental crust** is light and granite-like (felsic, intermediate and mafic rock), about 30 to 40 km thick. **Oceanic crust** is heavier and basalt-like (mafic rock), about 5 km thick.",
+      "**Mantle**: the biggest layer by volume, from the base of the crust to about 2900 km deep. Its rock is **ultramafic** (peridotite)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s5.jpg",
+      "slide": "5",
+      "alt": "Cutaway of Earth with its layers on the left and a density scale on the right running from crust to core."
+     },
+     "title": "Density rises toward the centre",
+     "bullets": [
+      "The right half shows density in kg/m3 (1 g/cm3 = 1000 kg/m3): continental crust about 2700, mantle 3300 up to 5700, core roughly 9700 up to 16000.",
+      "Low-density materials float on top of higher-density materials, so the heavy stuff ended up in the middle.",
+      "**Core**: mostly **iron and nickel**, maybe a little oxygen. It has a liquid part and a solid part."
+     ]
+    }
    ]
   },
   {
@@ -136,18 +196,12 @@
    "title": "Physical layers: how each layer behaves",
    "slides": "5, 11, 21, 24-25",
    "bullets": [
-    "The same Earth can also be split by **how the rock behaves** (solid and stiff, or soft and flowing). These are the **physical layers**.",
-    "**Lithosphere** (slide 5: 'solid', about 100 km): crust plus the very top of the mantle. Rigid, and broken into **plates**. Lithos = stone.",
-    "**Asthenosphere** ('soft plastic'): weak, flows slowly. Astheno- means lacking strength. It is not broken into plates. It sits right under the lithosphere.",
-    "**Mesosphere** ('stiff plastic', slide 5): the stiffer lower mantle under the asthenosphere. Slide 21 shows the upper mantle, a **transition zone** (about 400 to 660 km) and the lower mantle (below 660 km).",
-    "**Low-velocity zone (LVZ)**: slide 21 shows seismic speed dipping at about 100 to 200 km in the upper mantle, where the rock is weak and a little soft.",
-    "**Outer core**: the only entirely **liquid** layer. Starts about 2900 km down (slide 24; textbook 2890 km) and ends at about 5150 km. About 2300 km thick.",
-    "**Inner core**: **solid**, about 1220 km thick (textbook). Slides 24-25 put the inner/outer core boundary at about 5155 km and the core-mantle boundary at about 2900 km."
+    "The same Earth can also be split by **how the rock behaves** (solid and stiff, or soft and flowing). These are the **physical layers**."
    ],
    "boxes": [
     {
      "type": "why",
-     "text": "Why do geologists use two systems? Chemistry says WHAT the rock is. Physical layers say HOW it acts under stress. The asthenosphere is the same chemical stuff as the mantle below the lithosphere (peridotite) but is soft because it is hot, so it flows. That is why plates can slide on it."
+     "text": "Why do geologists use two systems? Chemistry says WHAT the rock is. Physical layers say HOW it acts under stress. The asthenosphere is the same chemical stuff as the mantle below the lithosphere (peridotite) but is soft because it is hot, so it flows. That is why plates can glide over it."
     },
     {
      "type": "trick",
@@ -194,7 +248,10 @@
    },
    "sourceNotes": [
     "Slides 5, 11, 21, 24-25",
-    "Intro to Geology 2.2.2"
+    "Intro to Geology 2.2.2",
+    "Core-mantle boundary: slide 24 says about 2900 km, textbook says 2890 km",
+    "Inner core thickness (about 1220 km) is a textbook value",
+    "Slide 25 repeats the same graph as slide 11, so it has no step of its own"
    ],
    "images": [
     {
@@ -212,6 +269,34 @@
      "slide": "25",
      "alt": "Figure from the lecture: Physical layers: how each layer behaves"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s11.jpg",
+      "slide": "11",
+      "alt": "Graph of temperature against depth with colour bands for the lithosphere, mantle, liquid outer core and solid inner core."
+     },
+     "title": "Lithosphere and the core",
+     "bullets": [
+      "**Lithosphere** (about 100 km thick): solid and rigid. It is the crust plus the very top of the mantle, and it is broken into **plates**. Lithos means stone.",
+      "**Outer core**: the only entirely **liquid** layer. It starts about 2900 km down and ends at about 5150 km, so it is about 2300 km thick.",
+      "**Inner core**: **solid**, about 1220 km thick, with its top at about 5155 km depth."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s21.jpg",
+      "slide": "21",
+      "alt": "Graph of seismic wave speed against depth in the upper mantle, marking the lithosphere, low-velocity zone, transition zone and lower mantle."
+     },
+     "title": "Asthenosphere, mesosphere and LVZ",
+     "bullets": [
+      "**Asthenosphere** ('soft plastic'): weak and slowly flowing, right under the lithosphere. Astheno- means lacking strength. It is not broken into plates.",
+      "**Mesosphere** ('stiff plastic'): the stiffer lower mantle under the asthenosphere. The graph also marks the upper mantle, a **transition zone** (about 400 to 660 km) and the lower mantle (below 660 km).",
+      "**Low-velocity zone (LVZ)**: wave speed dips at about 100 to 200 km in the upper mantle, where the rock is weak and a little soft."
+     ]
+    }
    ]
   },
   {
@@ -219,11 +304,11 @@
    "title": "Density, pressure and temperature with depth",
    "slides": "5, 11, 25",
    "bullets": [
-    "Slide 5 caption: both **pressure** and **temperature** increase from the surface to the centre. **Density** also increases toward the centre.",
-    "Slides 11 and 25 plot **temperature against depth**. The **geotherm** (geothermal gradient) is the line showing how fast temperature rises with depth. A second line, the **melting curve**, shows when the rock would melt.",
-    "The slide labels: lithosphere, upper mantle (to ~410 km), lower mantle, **solid silicate rock** in the mantle, the **core-mantle boundary**, **liquid iron alloy** in the outer core, **solid iron alloy** in the inner core.",
-    "Textbook 4.3: the average gradient in the upper 100 km is about **25 degrees C per km**.",
-    "The inner core is the hottest part of Earth, yet it is **solid** because **enormous pressure** keeps the metal packed tight (textbook 2.2.2)."
+    "Both **pressure** and **temperature** increase from the surface to the centre. **Density** also increases toward the centre.",
+    "Graphs can plot temperature against depth. The **geotherm** (geothermal gradient) is the line showing how fast temperature rises with depth. A second line, the **melting curve**, shows when the rock would melt.",
+    "The graph labels: lithosphere, upper mantle (to ~410 km), lower mantle, solid silicate rock in the mantle, the **core-mantle boundary**, liquid iron alloy in the outer core, and solid iron alloy in the inner core.",
+    "The average gradient in the upper 100 km is about **25 degrees C per km**.",
+    "The inner core is the hottest part of Earth, yet it is **solid** because **enormous pressure** keeps the metal packed tight."
    ],
    "boxes": [
     {
@@ -250,14 +335,8 @@
    "title": "Seismic waves: P, S, speed, bending",
    "slides": "12-20",
    "bullets": [
-    "**Body waves** travel through the inside of Earth: **P waves** (primary, **compression**) and **S waves** (secondary, **shear**).",
-    "**P waves** push and pull rock forward and back, like sound. They are the **fastest** and travel through **solids AND liquids** (and gases).",
-    "**S waves** shake rock side to side. They are slower and travel only through **solids**. Slide 15: 'S-waves stop at this boundary' where solid meets liquid, but the P-wave keeps going.",
-    "Slide 13: a quake at the **focus** sends out **wave fronts** (circles in cross-section). A **seismic ray** is a line showing the path, at right angles to the front.",
-    "Slide 14: the same wave goes farther in **basalt** than in **sandstone** in the same time, so waves are faster in denser, stronger rock.",
-    "Slide 16: at a boundary a ray is partly **reflected** (bounces back) and partly **refracted** (bends). Going into a slower layer the ray bends toward the vertical. Going into a faster layer it bends away from the vertical.",
-    "Slides 17-18: with layers the ray bends at each boundary. When speed rises smoothly with depth the ray follows a smooth curve and comes back up (textbook: density and velocity rise with depth, so rays curve back to the surface).",
-    "Slide 19: wave fronts spread from the focus through the mantle. Slide 20: a ray from the source can reflect off the core and reach a **seismometer** (the instrument that records waves)."
+    "Waves are faster in denser, stronger rock: the same wave goes farther in **basalt** than in **sandstone** in the same time.",
+    "At a boundary a ray is partly **reflected** (bounces back) and partly **refracted** (bends). Going into a slower layer the ray bends toward the vertical; into a faster layer it bends away. Because speed rises smoothly with depth, rays follow a smooth curve and come back up to the surface."
    ],
    "boxes": [
     {
@@ -327,6 +406,45 @@
      "slide": "19",
      "alt": "Figure from the lecture: Seismic waves: P, S, speed, bending"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s12.jpg",
+      "slide": "12",
+      "alt": "Text card naming the two kinds of body waves: P (compression) and S (shear)."
+     },
+     "title": "P and S body waves",
+     "bullets": [
+      "**Body waves** travel through the inside of Earth: **P waves** (primary, compression) and **S waves** (secondary, shear).",
+      "**P waves** push and pull rock forward and back, like sound. They are the **fastest** and travel through **solids AND liquids** (and gases).",
+      "**S waves** shake rock side to side. They are slower and travel only through **solids**. Where solid meets liquid the S waves stop, but the P wave keeps going."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s13.jpg",
+      "slide": "13",
+      "alt": "Diagram of circular wave fronts spreading from an earthquake focus, with seismic rays drawn at right angles to them."
+     },
+     "title": "Wave fronts and rays",
+     "bullets": [
+      "A quake at the **focus** sends out **wave fronts**. If the rock is the same everywhere, the fronts are circles in cross-section.",
+      "A **seismic ray** is a line showing the path of the wave, at right angles to the front."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s19.jpg",
+      "slide": "19",
+      "alt": "Cross-section showing rays and wave fronts fanning out from a focus into the mantle."
+     },
+     "title": "Waves spreading through the mantle",
+     "bullets": [
+      "Wave fronts spread out from the focus through the crust and into the mantle.",
+      "A ray from the source can reflect off the core and reach a **seismometer** (the instrument that records waves)."
+     ]
+    }
    ]
   },
   {
@@ -334,13 +452,8 @@
    "title": "What waves reveal: shadow zones and the liquid core",
    "slides": "21-27",
    "bullets": [
-    "Slide 21: seismic speed through the upper mantle. It jumps at the crust base (the Moho), dips in the **low-velocity zone (LVZ)** at about 100 to 200 km, then steps up at the transition zone (~400 to 660 km).",
-    "Slide 22, **P-wave shadow zone**: a band from about **103 to 143 degrees** from the quake where few direct P waves arrive. P waves are bent (refracted) as they enter the core, leaving a ring-shaped gap.",
-    "Slide 23, **S-wave shadow zone**: no S waves arrive anywhere beyond about **103 degrees**, all the way round to the other side. They are stopped by the **liquid outer core**.",
-    "Slide 24, **velocity versus depth**: at the **core-mantle boundary (about 2900 km)** the P-wave speed drops sharply and the S-wave line stops. In the outer core only P is shown. In the **inner core** (below ~5155 km) both a P and an S line appear.",
-    "Because the S-wave shadow zone is the whole far side, it maps out the **outer core** (slide 38 quiz).",
-    "Slide 26-27, **seismic tomography**: maps built from wave speeds. Slide 27 colour key: **blue = slower, red = faster** waves. A 3-D cut-away shows mantle, outer core and inner core.",
-    "**Seismic velocities generally increase with depth** (slide 39 quiz), with some drops such as the LVZ and the core-mantle boundary."
+    "**Seismic velocities generally increase with depth**, with some drops. The speed jumps at the base of the crust (the Moho), dips in the **low-velocity zone (LVZ)** at about 100 to 200 km, then steps up at the transition zone (about 400 to 660 km).",
+    "On a velocity-versus-depth graph, at the **core-mantle boundary (about 2900 km)** the P-wave speed drops sharply and the S-wave line stops. In the outer core only P is shown. In the **inner core** (below about 5155 km) both a P and an S line appear."
    ],
    "boxes": [
     {
@@ -395,6 +508,44 @@
      "slide": "27",
      "alt": "Figure from the lecture: What waves reveal: shadow zones and the liquid core"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s22.jpg",
+      "slide": "22",
+      "alt": "Cutaway of Earth showing rays from an earthquake focus and a ring-shaped P-wave shadow zone between 103 and 143 degrees."
+     },
+     "title": "P-wave shadow zone",
+     "bullets": [
+      "The **P-wave shadow zone** is a band from about **103 to 143 degrees** from the quake where few direct P waves arrive.",
+      "P waves are bent (refracted) as they enter the core, leaving a ring-shaped gap."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s23.jpg",
+      "slide": "23",
+      "alt": "Cutaway of Earth showing S-wave rays stopping at the core and a shadow zone beyond 103 degrees."
+     },
+     "title": "S-wave shadow zone",
+     "bullets": [
+      "In the **S-wave shadow zone**, no S waves arrive anywhere beyond about **103 degrees**, all the way round to the other side.",
+      "They are stopped by the **liquid outer core**, so this whole far-side zone maps out the outer core."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s27.jpg",
+      "slide": "27",
+      "alt": "3-D cut-away of Earth coloured by seismic wave speed, from slower (blue) to faster (red)."
+     },
+     "title": "Seismic tomography",
+     "bullets": [
+      "**Seismic tomography** builds maps of the inside of Earth from wave speeds.",
+      "Colour key: **blue = slower**, **red = faster** waves. The 3-D cut-away shows the mantle, outer core and inner core."
+     ]
+    }
    ]
   },
   {
@@ -402,9 +553,6 @@
    "title": "Gravity and the geoid",
    "slides": "6-7, 37",
    "bullets": [
-    "Slide 6 compares three shapes: a perfect **sphere**, a **spheroid** (a ball slightly flattened by rotation) and the **geoid** (a bumpy surface). The 3-D globe shows highs in red and lows in blue.",
-    "The **geoid** is the **surface of uniform gravity** on Earth (slide 37 quiz answer B). It is roughly sea level extended under the continents.",
-    "Slide 7 is the map of geoid height, from about **-100 m to +50 m** (blue lows, red highs).",
     "Gravity varies slightly because mass is not spread evenly. That is why the geoid is lumpy, and why gravity is a probe of density."
    ],
    "boxes": [
@@ -436,6 +584,31 @@
      "slide": "37",
      "alt": "Figure from the lecture: Gravity and the geoid"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s6.jpg",
+      "slide": "6",
+      "alt": "Outlines of a sphere, a spheroid and the bumpy geoid, beside a 3-D globe with highs in red and lows in blue."
+     },
+     "title": "Sphere, spheroid and geoid",
+     "bullets": [
+      "Three shapes are compared: a perfect **sphere**, a **spheroid** (a ball slightly flattened by rotation) and the **geoid** (a bumpy surface). On the 3-D globe, highs are red and lows are blue.",
+      "The **geoid** is the **surface of uniform gravity** on Earth. It is roughly sea level extended under the continents."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s7.jpg",
+      "slide": "7",
+      "alt": "World map of geoid height in meters, from about -100 (blue) to +50 (red)."
+     },
+     "title": "Map of geoid height",
+     "bullets": [
+      "This map shows geoid height, from about **-100 m to +50 m** (blue lows, red highs)."
+     ]
+    }
    ]
   },
   {
@@ -443,11 +616,8 @@
    "title": "Isostasy: crust floats on the mantle",
    "slides": "40; textbook 2.3, 14",
    "bullets": [
-    "**Isostasy** is the balance of floating crust on the mantle. Continental lithosphere is lower in density than the asthenosphere, so it is buoyant (textbook 2.3).",
-    "Slide 40: a cargo ship. Empty hold, the ship rides high (large **freeboard**). Fill the hold, and it sinks lower. Earth's crust works the same way.",
-    "Add a heavy **load** (mountain, ice sheet) and the crust sinks into the asthenosphere. Remove the load (ice melts, erosion) and the crust slowly floats back up. That is **isostatic rebound** (textbook 14).",
-    "After the last ice age (about 19,000 years ago), Canada and Scandinavia are still rising. Hudson Bay is a classic example.",
-    "Thick crust under big mountain belts (Moho depth about doubled, textbook 2.2.1) is another case of floating: a heavy block sinks deeper."
+    "**Isostasy** is the balance of floating crust on the mantle. Continental lithosphere is lower in density than the asthenosphere, so it is buoyant.",
+    "Thick crust under big mountain belts (Moho depth about doubled) is another case of floating: a heavy block sinks deeper."
    ],
    "boxes": [
     {
@@ -473,6 +643,21 @@
      "slide": "40",
      "alt": "Figure from the lecture: Isostasy: crust floats on the mantle"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s40.jpg",
+      "slide": "40",
+      "alt": "Two ships: an empty one riding high with its freeboard marked, and a loaded one sitting lower in the water."
+     },
+     "title": "A cargo ship floats like crust",
+     "bullets": [
+      "With an empty hold the ship rides high (large **freeboard**). Fill the hold and it sinks lower. Earth's crust works the same way.",
+      "Add a heavy **load** (mountain, ice sheet) and the crust sinks into the asthenosphere. Remove the load (ice melts, erosion) and the crust slowly floats back up. That is **isostatic rebound**.",
+      "After the last ice age (about 19,000 years ago), Canada and Scandinavia are still rising. Hudson Bay is a classic example."
+     ]
+    }
    ]
   },
   {
@@ -480,11 +665,8 @@
    "title": "Heat and mantle convection",
    "slides": "5, 28-29; textbook 4.3, 8.3",
    "bullets": [
-    "Earth's interior is hot from two main sources: **residual heat** left over from Earth's formation, and ongoing **radioactive decay** (textbook 4.3.1). Early heat came from gravitational compression, radioactive decay and asteroid impacts (textbook 8.3).",
-    "Heat flows out. Hot rock rises and cooler rock sinks in loops called **convection cells**. Slide 5 arrows show these cells in the mantle, and slide 28 shows them inside the mantle and the outer core.",
-    "Slide 29 labels **convecting cell**, **plate graveyard?** (where cold plates may sink deep) and **mantle plume** (a rising column of hot rock).",
-    "Textbook 2.2.2: the asthenosphere flows because of **convection currents created by heat from Earth's core**.",
-    "The inner core slowly grows as the outer core freezes onto it when heat escapes (textbook)."
+    "Earth's interior is hot from two main sources: **residual heat** left over from Earth's formation, and ongoing **radioactive decay**. Early heat came from gravitational compression, radioactive decay and asteroid impacts.",
+    "The inner core slowly grows as the outer core freezes onto it when heat escapes."
    ],
    "boxes": [
     {
@@ -515,6 +697,33 @@
      "slide": "29",
      "alt": "Figure from the lecture: Heat and mantle convection"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s28.jpg",
+      "slide": "28",
+      "alt": "Cutaway of Earth with arrows showing convection loops in the mantle and outer core, and magnetic field lines around the planet."
+     },
+     "title": "Convection loops inside Earth",
+     "bullets": [
+      "Heat flows out. Hot rock rises and cooler rock sinks in loops called **convection cells**. The arrows show these cells inside the mantle and the outer core.",
+      "The asthenosphere flows because of **convection currents** created by heat from Earth's core."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s29.jpg",
+      "slide": "29",
+      "alt": "Half-section of Earth with labels for a convecting cell, a possible plate graveyard and a mantle plume."
+     },
+     "title": "Cells, plate graveyard and plume",
+     "bullets": [
+      "**Convecting cell**: one of the loops where hot rock rises and cooler rock sinks.",
+      "**Plate graveyard?** marks where cold plates may sink deep into the mantle (the question mark means it is a guess).",
+      "**Mantle plume**: a rising column of hot rock."
+     ]
+    }
    ]
   },
   {
@@ -522,17 +731,13 @@
    "title": "Magnetic field and the outer core",
    "slides": "28, 30-34, 41",
    "bullets": [
-    "Earth acts like a giant bar magnet (slide 30). The north **magnetic** pole is not at the north **geographic** pole: the slide shows an angle of about **8 degrees**.",
-    "The field is generated by **circulating molten iron and nickel in the outer core** (textbook 2.2.2). Slide 31 shows the swirling flow of the outer core around the inner core.",
-    "Slide 32: the rate of convection in the outer core determines in part what kind of rocks are deposited on the continents. It also shows the **magnetic reversal timescale**: black and white stripes for normal and reversed polarity (chrons: Brunhes, Matuyama, Gauss, Gilbert).",
-    "Slides 33-34: **wandering poles**. The north magnetic pole has been moving, and the speed has increased in recent decades. Slide 33 asks 'Reversal?'.",
-    "Slide 41: a magnetic anomaly map of the **Midcontinent Rift (MCR)**, containing up to **15 km of basalt**. Rock with different magnetism shows up as colour (negative to positive).",
-    "Textbook 2.2.2: if the outer core stopped moving or solidified, the field would disappear and the planet would lose gases and water, as happened on Mars."
+    "Earth acts like a giant bar magnet. The north **magnetic** pole is not at the north **geographic** pole: they are about **8 degrees** apart. The field is generated by **circulating molten iron and nickel in the outer core**.",
+    "A magnetic anomaly map of the **Midcontinent Rift (MCR)** shows up to **15 km of basalt**. Rock with different magnetism shows up as colour (negative to positive)."
    ],
    "boxes": [
     {
      "type": "why",
-     "text": "Why does a moving liquid make a magnetic field? Metal that conducts electricity, stirred around, makes electric currents, and currents make a magnetic field. This is why only the liquid outer core matters. A frozen core would give no field. (The dynamo explanation is outside source; the slides and textbook say the field is made by outer-core circulation.)"
+     "text": "Why does a moving liquid make a magnetic field? Metal that conducts electricity, stirred around, makes electric currents, and currents make a magnetic field. This is why only the liquid outer core matters. A frozen core would give no field."
     },
     {
      "type": "trap",
@@ -541,7 +746,8 @@
    ],
    "sourceNotes": [
     "Slides 28, 30-34, 41",
-    "Intro to Geology 1.5, 2.2.2"
+    "Intro to Geology 1.5, 2.2.2",
+    "Dynamo explanation (stirred conducting metal makes currents) is outside source"
    ],
    "images": [
     {
@@ -559,6 +765,47 @@
      "slide": "34",
      "alt": "Figure from the lecture: Magnetic field and the outer core"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s32.jpg",
+      "slide": "32",
+      "alt": "Chart of magnetic reversal stripes with named time periods, beside text about outer-core convection."
+     },
+     "title": "Outer core and reversal stripes",
+     "bullets": [
+      "The rate of convection in the outer core determines, in part, what kind of rocks are deposited on the continents.",
+      "The striped columns are the **magnetic reversal timescale**: black and white stripes for normal and reversed polarity, grouped into **chrons** (Brunhes, Matuyama, Gauss, Gilbert).",
+      "If the outer core stopped moving or solidified, the field would disappear and the planet would lose gases and water, as happened on Mars."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s33.jpg",
+      "slide": "33",
+      "alt": "Map of the north magnetic pole's path since 1600 and a graph of its speed marked 'Rapid Pole Shift'."
+     },
+     "title": "The north magnetic pole is racing",
+     "bullets": [
+      "The north magnetic pole has been **wandering**: it is moving away from Canada toward Siberia.",
+      "Its speed has increased in recent decades (the graph is labelled 'Rapid Pole Shift').",
+      "The picture asks 'Reversal?': could the field flip? It has flipped many times before."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s34.jpg",
+      "slide": "34",
+      "alt": "Maps of the wandering north and south magnetic poles over time, with a graph of the north pole's speed."
+     },
+     "title": "Wandering poles",
+     "bullets": [
+      "The maps trace where the north and south magnetic poles have been over the years.",
+      "The graph shows the north pole's speed staying low for most of the 1900s, then climbing to roughly 55 km per year in the 2000s.",
+      "Moving poles show that the flow in the outer core changes with time."
+     ]
+    }
    ]
   },
   {
@@ -566,8 +813,6 @@
    "title": "Seismic reflection imaging",
    "slides": "35-36",
    "bullets": [
-    "Slide 36: a ship tows **air guns** that send a pulse of energy through the water into the layers below. On land, large trucks **thump the Earth**.",
-    "Echoes are recorded and drawn as a cross-section (slide 35), with **two-way travel time** (in seconds) on the vertical axis instead of depth. Wavy bands are rock layers (strata).",
     "This is how geologists see layers and folds in the crust, for example to look for oil."
    ],
    "boxes": [
@@ -581,7 +826,8 @@
     }
    ],
    "sourceNotes": [
-    "Slides 35-36"
+    "Slides 35-36",
+    "Oil use is outside source"
    ],
    "images": [
     {
@@ -593,6 +839,32 @@
      "src": "img/interior/s36.jpg",
      "slide": "36",
      "alt": "Figure from the lecture: Seismic reflection imaging"
+    }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/interior/s35.jpg",
+      "slide": "35",
+      "alt": "Cross-section of wavy coloured bands showing rock layers, with two-way travel time in seconds on the side."
+     },
+     "title": "A reflection cross-section",
+     "bullets": [
+      "Echoes are recorded and drawn as a cross-section, with **two-way travel time** (in seconds) on the vertical axis instead of depth.",
+      "The wavy bands are rock layers (strata), so you can see their folds."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/interior/s36.jpg",
+      "slide": "36",
+      "alt": "A ship towing air guns over the sea floor and a 3-D block of recorded seismic layers."
+     },
+     "title": "Collecting the data",
+     "bullets": [
+      "A ship tows **air guns** that send a pulse of energy through the water into the layers below.",
+      "On land, large trucks **thump the Earth** instead."
+     ]
     }
    ]
   }
@@ -628,7 +900,7 @@
     "Lithosphere",
     "Physical",
     "Rigid plates: crust + top of mantle",
-    "~100 km (slide 5)"
+    "~100 km"
    ],
    [
     "Asthenosphere",
@@ -723,7 +995,7 @@
   {
    "id": "int-c10",
    "front": "Lithosphere",
-   "back": "The rigid, solid outer layer: crust plus the uppermost mantle (about 100 km on slide 5). Broken into plates.",
+   "back": "The rigid, solid outer layer: crust plus the uppermost mantle (about 100 km thick). Broken into plates.",
    "short": "Rigid crust plus top mantle, in plates",
    "src": "Slide 5; Textbook 2.2.2"
   },
@@ -751,7 +1023,7 @@
   {
    "id": "int-c14",
    "front": "Inner core",
-   "back": "Solid, hottest part of Earth. Pressure keeps it solid. About 1220 km thick (textbook).",
+   "back": "Solid, hottest part of Earth. Pressure keeps it solid. About 1220 km thick.",
    "short": "Solid iron centre held by pressure",
    "src": "Slide 5; Textbook 2.2.2"
   },
@@ -828,7 +1100,7 @@
   {
    "id": "int-c25",
    "front": "What happens to P-wave speed at the core-mantle boundary?",
-   "back": "It drops sharply (slide 24, boundary about 2900 km).",
+   "back": "It drops sharply (the boundary is at about 2900 km).",
    "short": "P speed drops at core boundary",
    "src": "Slide 24"
   },
@@ -849,7 +1121,7 @@
   {
    "id": "int-c28",
    "front": "Seismic tomography colours",
-   "back": "On slide 27, blue means slower wave speeds and red means faster.",
+   "back": "On a tomography map, blue means slower wave speeds and red means faster.",
    "short": "Blue slower, red faster",
    "src": "Slides 26-27"
   },
@@ -905,7 +1177,7 @@
   {
    "id": "int-c36",
    "front": "Magnetic pole vs geographic pole",
-   "back": "The magnetic pole is offset from the rotation-axis pole (slide 30 shows about 8 degrees). Magnetic poles wander and the field reverses.",
+   "back": "The magnetic pole is offset from the rotation-axis pole (about 8 degrees apart). Magnetic poles wander and the field reverses.",
    "short": "Magnetic pole is offset and wanders",
    "src": "Slides 30-34"
   }
@@ -1039,7 +1311,7 @@
   },
   {
    "id": "int-10",
-   "q": "Why do seismic rays curve back up toward the surface instead of travelling in straight lines (slide 18)?",
+   "q": "Why do seismic rays curve back up toward the surface instead of travelling in straight lines?",
    "options": [
     "Because Earth is spinning",
     "Because the core reflects every ray",
@@ -1062,7 +1334,7 @@
     "The inner core stops all P waves"
    ],
    "answer": 3,
-   "why": "P waves can travel through liquid, so (a) is false. Slide 24 shows P speed dropping at the core-mantle boundary and the textbook says P waves are refracted there, leaving a ring-shaped gap.",
+   "why": "P waves can travel through liquid, so (a) is false. P speed drops at the core-mantle boundary and P waves are refracted there, leaving a ring-shaped gap.",
    "source": "Slides 22, 24; Textbook 9.6.3"
   },
   {
@@ -1104,7 +1376,7 @@
     "all of the above"
    ],
    "answer": 4,
-   "why": "All three are stated in the textbook: velocity jump at the crust base, 1909 Croatia, 5 km ocean and 30 to 40 km continent.",
+   "why": "All three are true: a velocity jump at the crust base, discovered in 1909 in Croatia, 5 km under the ocean and 30 to 40 km under the continents.",
    "source": "Textbook 2.2.1"
   },
   {
@@ -1123,7 +1395,7 @@
   },
   {
    "id": "int-16",
-   "q": "On slide 40 an empty ship floats high and a loaded ship floats lower. What is the equivalent for a continent when a thick ice sheet grows and later melts?",
+   "q": "An empty ship floats high and a loaded ship floats lower. What is the equivalent for a continent when a thick ice sheet grows and later melts?",
    "options": [
     "The continent rises when the ice grows, then sinks when it melts",
     "The continent does not move at all",
@@ -1146,7 +1418,7 @@
     "The lithosphere"
    ],
    "answer": 1,
-   "why": "The textbook says the field is generated by circulation of molten iron and nickel in the outer core. Only the outer core is liquid.",
+   "why": "The field is generated by circulation of molten iron and nickel in the outer core. Only the outer core is liquid.",
    "source": "Slide 31; Textbook 2.2.2"
   },
   {
@@ -1174,7 +1446,7 @@
     "Earth's rotation axis flips"
    ],
    "answer": 3,
-   "why": "The field comes from outer-core circulation (slide 31, textbook), so a changing field means the flow is changing. Slide 33 asks 'Reversal?'.",
+   "why": "The field comes from outer-core circulation, so a changing field means the flow is changing.",
    "source": "Slides 31-34; Textbook 2.2.2"
   },
   {
@@ -1188,12 +1460,12 @@
     "They all have the same density"
    ],
    "answer": 0,
-   "why": "Slide 4: crust 2.7 to 3.3, mantle 3.3 to 5.7, core 9.9 to 13.0 g/cm3. Density rises toward the centre.",
+   "why": "Crust is 2.7 to 3.3, mantle 3.3 to 5.7, core 9.9 to 13.0 g/cm3. Density rises toward the centre.",
    "source": "Slides 4-5"
   },
   {
    "id": "int-21",
-   "q": "Which of the following is NOT listed on slide 3 as a probe of the Earth's interior?",
+   "q": "Which of the following is NOT one of the probes of Earth's interior?",
    "options": [
     "Xenoliths",
     "Heat flow",
@@ -1202,7 +1474,7 @@
     "Drilling a hole to the core"
    ],
    "answer": 4,
-   "why": "Slide 3 lists samples (xenoliths, intrusions, meteorites), gravity, moment of inertia, oscillations, heat flow, seismic and magnetic probes. Nobody has drilled to the core.",
+   "why": "The probes are samples (xenoliths, intrusions, meteorites), gravity, moment of inertia, oscillations, heat flow, seismic and magnetic probes. Nobody has drilled to the core.",
    "source": "Slide 3; Textbook 2.2"
   },
   {
@@ -1216,7 +1488,7 @@
     "Ralph Waldo Emerson"
    ],
    "answer": 1,
-   "why": "Textbook 2.2.2 credits Inge Lehmann (1936). Mohorovicic found the Moho in 1909.",
+   "why": "Inge Lehmann showed this in 1936. Mohorovicic found the Moho in 1909.",
    "source": "Textbook 2.2.1-2.2.2"
   }
  ],

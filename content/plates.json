@@ -81,19 +81,13 @@
    "title": "Layers of the Earth: crust, mantle, core, and lithosphere",
    "slides": "4-5",
    "bullets": [
-    "Earth is cut two ways: by **chemical composition** (what it is made of) and by **physical behaviour** (how it acts: rigid or flowing).",
-    "**Chemical layers**: **crust** (continental = lower density, granite-like; oceanic = denser, basalt-like), **mantle** (largest by volume, to ~2,900 km, mostly peridotite, an ultramafic rock), **core** (mostly iron and nickel).",
-    "The **Moho** (Mohorovicic Discontinuity) is the boundary at the base of the crust. It shows up as a jump in seismic wave speed. Discovered in 1909. Depth: ~5 km under oceans, ~30-40 km under continents.",
-    "**Physical layers**: **lithosphere** (rigid outer shell, broken into plates), **asthenosphere** (weak, flows), **mesosphere/lower mantle**, **outer core** (liquid), **inner core** (solid).",
-    "The slide figure labels the lithosphere as 'crust and uppermost solid mantle'.",
     "**Oceanic lithosphere**: thin and rigid, ~0 km at ridges up to ~140 km elsewhere. **Continental lithosphere**: thicker (40-280 km) and more plastic at depth.",
-    "The **asthenosphere** is mechanically weak and flows by convection driven by core heat. It is relatively continuous (not broken like the lithosphere).",
-    "**Outer core** is fully liquid and its circulating iron and nickel is believed to generate Earth's magnetic field. The **inner core** is solid because of immense pressure, despite being the hottest part."
+    "The **asthenosphere** is mechanically weak and flows by convection driven by core heat. It is relatively continuous (not broken like the lithosphere). **Outer core** is fully liquid and its circulating iron and nickel is believed to generate Earth's magnetic field. The **inner core** is solid because of immense pressure, despite being the hottest part."
    ],
    "boxes": [
     {
      "type": "why",
-     "text": "Why can the lithosphere slide on the asthenosphere? The lithosphere is cold and stiff (like a plank). The asthenosphere is hot and weak (like thick toothpaste). A stiff plank rides on soft stuff that can flow, so the plates can move."
+     "text": "Why can the plates move over the asthenosphere? The lithosphere is cold and stiff (like a plank). The asthenosphere is hot and weak (like thick toothpaste). A stiff plank rides on soft stuff that can flow, so the plates can glide."
     },
     {
      "type": "trick",
@@ -106,13 +100,29 @@
    ],
    "sourceNotes": [
     "Slides 4-5",
-    "Intro to Geology 2.2"
+    "Intro to Geology 2.2",
+    "Slide 4 figure labels the lithosphere as 'crust and uppermost solid mantle'; slide gives the mesosphere depth as ~410-660 km (ambiguous)."
    ],
    "images": [
     {
      "src": "img/plates/s4.jpg",
      "slide": "4",
      "alt": "Figure from the lecture: Layers of the Earth: crust, mantle, core, and lithosphere"
+    }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/plates/s4.jpg",
+      "slide": "4",
+      "alt": "Cutaway diagram of Earth showing the crust, mantle, outer core and inner core, with the lithosphere and asthenosphere labelled."
+     },
+     "title": "Earth's layers",
+     "bullets": [
+      "Earth is cut two ways: by **chemical composition** (what it is made of) and by **physical behaviour** (rigid or flowing). The chemical layers are the **crust** (continental = lower density, granite-like; oceanic = denser, basalt-like), the **mantle** (largest by volume, down to ~2,900 km, mostly peridotite, an ultramafic rock) and the **core** (mostly iron and nickel).",
+      "The **Moho** (Mohorovicic Discontinuity) is the boundary at the base of the crust. It shows up as a jump in seismic wave speed. Discovered in 1909. Depth: ~5 km under oceans, ~30-40 km under continents.",
+      "The physical layers are the **lithosphere** (rigid outer shell, made of the crust and uppermost solid mantle, broken into plates), the **asthenosphere** (weak, flows), the **mesosphere/lower mantle**, the **outer core** (liquid) and the **inner core** (solid)."
+     ]
     }
    ]
   },
@@ -124,7 +134,7 @@
     "A **plate boundary** is where two plates meet and move relative to each other. This is where quakes, volcanism and mountain building happen.",
     "**Passive margin**: no relative plate motion. Continental lithosphere gradually becomes oceanic lithosphere **within the same plate**. Example: eastern coasts of North and South America.",
     "**Active margin**: oceanic and continental lithosphere belong to **different plates** that move relative to each other. Example: western coasts of North and South America. Most mountain building, quakes and volcanism happen here.",
-    "**Three boundary types**: **Convergent** (plates move toward each other), **Divergent** (move apart), **Transform** (slide past each other).",
+    "**Three boundary types**: **Convergent** (plates move toward each other), **Divergent** (move apart), **Transform** (move sideways past each other).",
     "Rule: all volcanoes and quakes sit at boundaries, with ONE big exception: **hotspot** volcanoes (see the Hotspots section)."
    ],
    "boxes": [
@@ -289,10 +299,10 @@
    "title": "Transform boundaries",
    "slides": "12-13",
    "bullets": [
-    "Transform = **strike-slip** or **conservative** boundary: plates slide past each other horizontally. **No crust is created or destroyed.**",
+    "Transform = **strike-slip** or **conservative** boundary: plates move past each other sideways. **No crust is created or destroyed.**",
     "Direction: stand on one plate and look across. **Dextral (right-lateral)**: the other plate seems to move right. **Sinistral (left-lateral)**: it seems to move left.",
     "Most occur on the ocean floor near mid-ocean ridges as **fracture zones** that handle different spreading rates along the ridge. Some produce no quakes (aseismic).",
-    "Some produce major quakes but little mountain building or volcanism: stress builds where plates cannot slide smoothly and is suddenly released.",
+    "Some produce major quakes but little mountain building or volcanism: stress builds where plates cannot move past each other smoothly and is suddenly released.",
     "Most important ones for people are within continents: **San Andreas** (California), **Anatolian** faults (Turkey), **Altyn Tagh** (central Asia), **Alpine Fault** (New Zealand).",
     "**Transpression**: a bend that adds squeezing (**restraining bend**) builds mountains. Example: Big Bend, San Andreas.",
     "**Transtension**: a bend that adds pulling apart (**releasing bend**) makes depressions and sometimes volcanoes. Examples: Dead Sea, Salton Sea.",
@@ -324,7 +334,7 @@
    "title": "What moves the plates, and the Wilson Cycle",
    "slides": "2, 13",
    "bullets": [
-    "Modern view (slide 2): **convection, gravity and density differences** drive plate motion. The energy is Earth's **internal heat**, not sunlight (textbook: convection currents from interior heat move the plates).",
+    "Modern view: **convection, gravity and density differences** drive plate motion. The energy is Earth's **internal heat**, not sunlight.",
     "**Wilson Cycle** (J. Tuzo Wilson, 1966): the ongoing birth and breakup of supercontinents (Pangaea, Rodinia). It has run for at least **3 billion years**. Steps: **rifting, ocean basin creation, subduction, basin closure**, then collision builds a new supercontinent.",
     "Why rifting starts: continents reflect heat better than oceans. When continents cluster, more heat goes back into the mantle, convection strengthens and rifts the continent. Some geologists link mantle plumes to those hot periods.",
     "**Three hypotheses** for what drives continents apart and together:",
@@ -332,7 +342,7 @@
     "(2) **Slab pull**: sinking slabs at subduction zones pull the rest of the plate along.",
     "(3) **Gravitational sliding**: gravity pulls lithosphere down from the high ridges across the asthenosphere.",
     "Current evidence favours **slab pull** as dominant.",
-    "Evidence for slab pull (practice Q3): plates with long subducting edges (Pacific) move much faster than plates with little or no subducting edge (North American)."
+    "Evidence for slab pull: plates with long subducting edges (Pacific) move much faster than plates with little or no subducting edge (North American)."
    ],
    "boxes": [
     {
@@ -351,7 +361,8 @@
    "sourceNotes": [
     "Slides 2, 13",
     "Intro to Geology 2.1.2, 2.6, 2.7 (summary paragraph)",
-    "Practice midterm Q3; example Q3"
+    "Practice midterm Q3; example Q3",
+    "Textbook: convection currents from interior heat move the plates."
    ],
    "images": []
   },
@@ -372,7 +383,7 @@
    "boxes": [
     {
      "type": "why",
-     "text": "Why does a hotspot make a chain? Think of a candle flame (plume, fixed) under a sheet of paper (plate) that you slide along. The scorch marks form a line. Each mark is a volcano; the oldest mark is the one furthest along the way the paper moved."
+     "text": "Why does a hotspot make a chain? Think of a candle flame (plume, fixed) under a sheet of paper (plate) that you pull along. The scorch marks form a line. Each mark is a volcano; the oldest mark is the one furthest along the way the paper moved."
     },
     {
      "type": "trick",
@@ -479,7 +490,7 @@
   },
   {
    "id": "plt-c6",
-   "front": "What actually drives plate motion, per the slides?",
+   "front": "What actually drives plate motion?",
    "back": "Convection, gravity and density differences. The energy is Earth's internal heat.",
    "short": "Convection, gravity, density differences",
    "src": "Slide 2; Textbook 2.1.2"
@@ -578,7 +589,7 @@
   {
    "id": "plt-c20",
    "front": "The three plate boundary types?",
-   "back": "Convergent (toward each other), divergent (apart), transform (slide past).",
+   "back": "Convergent (toward each other), divergent (apart), transform (move sideways past each other).",
    "short": "Convergent, divergent, transform",
    "src": "Slide 6"
   },
@@ -641,7 +652,7 @@
   {
    "id": "plt-c29",
    "front": "What is decompression melting?",
-   "back": "Pressure drops when plates pull apart, so hot mantle rock melts. It makes magma at rifts, mid-ocean ridges and (in the practice midterm) hotspots.",
+   "back": "Pressure drops when plates pull apart, so hot mantle rock melts. It makes magma at rifts, mid-ocean ridges and hotspots.",
    "short": "Pressure drop melts rock at ridges",
    "src": "Slides 11, practice Q23"
   },
@@ -676,8 +687,8 @@
   {
    "id": "plt-c34",
    "front": "What is a transform boundary?",
-   "back": "Plates slide past horizontally (strike-slip, conservative). No crust created or destroyed. Dextral = other plate appears to move right; sinistral = left. Example: San Andreas.",
-   "short": "Plates slide past, no crust made or lost",
+   "back": "Plates move past each other sideways (strike-slip, conservative). No crust created or destroyed. Dextral = other plate appears to move right; sinistral = left. Example: San Andreas.",
+   "short": "Plates pass sideways, no crust made or lost",
    "src": "Slide 12"
   },
   {
@@ -698,7 +709,7 @@
    "id": "plt-c37",
    "front": "Ridge push vs gravitational sliding?",
    "back": "Ridge push: spreading centres (and convection) push plates apart after rifting. Gravitational sliding: gravity pulls lithosphere down from the high ridges across the asthenosphere.",
-   "short": "Ridge push shoves; sliding slides downhill",
+   "short": "Ridge push shoves; sliding goes downhill",
    "src": "Slide 13"
   },
   {
@@ -735,8 +746,8 @@
     "The ocean basins only formed 200 million years ago"
    ],
    "answer": 0,
-   "why": "New oceanic crust is made at ridges and old, denser oceanic lithosphere sinks back into the mantle at subduction zones, so it is always being recycled. Buoyant continents are not subducted, so they keep very old rocks. (The 200 million year figure is from the practice midterm.)",
-   "source": "Slides 6-7, 11; practice midterm Q1"
+   "why": "New oceanic crust is made at ridges and old, denser oceanic lithosphere sinks back into the mantle at subduction zones, so it is always being recycled. Buoyant continents are not subducted, so they keep very old rocks.",
+   "source": "Slides 6-7, 11; practice midterm Q1; 200 Ma figure from practice midterm"
   },
   {
    "id": "plt-2",
@@ -763,7 +774,7 @@
     "Both (a) and (b)"
    ],
    "answer": 2,
-   "why": "More sinking edge means more pulling, and the plates with more of it go faster. That is slab pull, which the slides say current evidence favours.",
+   "why": "More sinking edge means more pulling, and the plates with more of it go faster. That is slab pull, which current evidence favours as the dominant force.",
    "source": "Slide 13; Textbook 2.6; practice midterm Q3"
   },
   {
@@ -889,7 +900,7 @@
     "none of the above"
    ],
    "answer": 1,
-   "why": "I and III are on the slides. II is false: his biggest flaw was having no credible mechanism (he tried centrifugal force and precession).",
+   "why": "I and III are true. II is false: his biggest flaw was having no credible mechanism (he tried centrifugal force and precession).",
    "source": "Slides 1-2"
   },
   {
@@ -931,7 +942,7 @@
     "all of the above"
    ],
    "answer": 4,
-   "why": "All three are on slide 12: conservative boundaries, mostly at ridges as fracture zones, and dextral = right-lateral.",
+   "why": "All three are true: conservative boundaries, mostly at ridges as fracture zones, and dextral = right-lateral.",
    "source": "Slide 12"
   },
   {
@@ -959,7 +970,7 @@
     "sediment sliding into trenches"
    ],
    "answer": 1,
-   "why": "Option (a) is slab pull. Gravitational sliding is the ridge-to-basin slide across the weak asthenosphere.",
+   "why": "Option (a) is slab pull. Gravitational sliding is gravity pulling lithosphere down from the high ridges across the weak asthenosphere.",
    "source": "Slide 13; Textbook 2.6"
   },
   {
@@ -987,7 +998,7 @@
     "100 cm/yr"
    ],
    "answer": 3,
-   "why": "500 km = 50,000,000 cm. Rate = distance / age = 50,000,000 / 5,000,000 = 10 cm/yr. (The numbers are an invented practice example using the slide method.)",
+   "why": "500 km = 50,000,000 cm. Rate = distance / age = 50,000,000 / 5,000,000 = 10 cm/yr. (The numbers are made up for practice.)",
    "source": "Slide 14 (method); outside source for numbers"
   },
   {
@@ -1015,7 +1026,7 @@
     "A collision with Asia"
    ],
    "answer": 0,
-   "why": "The bend is usually attributed to a change in plate motion direction ~50 Ma. The slide mentions plume migration as an alternative.",
+   "why": "The bend is usually attributed to a change in plate motion direction ~50 Ma. Plume migration is sometimes suggested as an alternative.",
    "source": "Slide 15"
   },
   {
@@ -1043,7 +1054,7 @@
     "Obduction of ophiolites (rare)"
    ],
    "answer": 2,
-   "why": "Collision means no subduction, so no flux melting and no volcanic arc. The other features all appear on slide 9.",
+   "why": "Collision means no subduction, so no flux melting and no volcanic arc. The other features all occur in collision zones.",
    "source": "Slide 9"
   },
   {

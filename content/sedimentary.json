@@ -5,7 +5,7 @@
  "icon": "🏜️",
  "color": "#c99a3b",
  "slideFile": "2026 Sept 28 Weathering Interlude B.pdf; 2026 Sept. 23 Ch 6 Sedimentary Rocks.pdf",
- "intro": "First weathering (how rock breaks down, and how soil forms), then sedimentary rocks (how the pieces become layered rock and what the layers tell us). Slide labels say which PDF: 'Weathering' = Interlude B deck, 'Sed' = Ch 6 deck.",
+ "intro": "First weathering (how rock breaks down, and how soil forms), then sedimentary rocks (how the pieces become layered rock and what the layers tell us).",
  "sections": [
   {
    "id": "water",
@@ -13,15 +13,12 @@
    "slides": "Weathering 5, 25 (clicker); Textbook 5.1",
    "bullets": [
     "Almost every sedimentary rock is made with **water**: water breaks rock down, carries the pieces, and dissolves minerals that later crystallize.",
-    "A water molecule is **polar**: one side is slightly positive (the two hydrogens) and the other slightly negative (the oxygen). Think of a tiny magnet or battery.",
-    "Polarity makes water a **universal solvent**: it pries ions (charged atoms) off crystals. Given enough time it can dissolve even strong minerals.",
-    "Water is odd: when it freezes it **expands** (the molecules move apart to fit the ice crystal pattern), so ice is less dense than liquid water and floats. Water is densest at about 4 C.",
-    "That expansion is the reason **frost wedging** works (Weathering slide 25, answer: B and D together)."
+    "A water molecule is **polar**: one side is slightly positive (the two hydrogens) and the other slightly negative (the oxygen), like a tiny magnet or battery. That makes water a **universal solvent**: it pries ions (charged atoms) off crystals, and given enough time it can dissolve even strong minerals."
    ],
    "boxes": [
     {
      "type": "why",
-     "text": "Why does freezing break rock? Water seeps into a crack. When it turns to ice it needs MORE room, so it pushes the crack wider with huge force. When it melts, liquid water slides deeper into the wider crack. Repeat many times and the rock splits."
+     "text": "Why does freezing break rock? Water seeps into a crack. When it turns to ice it needs MORE room, so it pushes the crack wider with huge force. When it melts, liquid water flows deeper into the wider crack. Repeat many times and the rock splits."
     },
     {
      "type": "trick",
@@ -47,6 +44,32 @@
      "slide": "Weathering 25",
      "alt": "Figure from the lecture: Water: the engine of weathering"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/weathering5.jpg",
+      "slide": "Weathering 5",
+      "alt": "A diagram of a rock cliff with water frozen in its cracks; one crack grows and a block is pushed out."
+     },
+     "title": "Frost wedging",
+     "bullets": [
+      "Water is odd: when it freezes it **expands** (the molecules move apart to fit the ice crystal pattern), so ice is less dense than liquid water and floats. Water is densest at about 4 C.",
+      "In the picture, water in the cracks freezes and expands, so a crack grows and a block is lifted and pushed out."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/weathering25.jpg",
+      "slide": "Weathering 25",
+      "alt": "A multiple-choice question asking why frost wedging works as a mechanical weathering agent."
+     },
+     "title": "Why frost wedging works",
+     "bullets": [
+      "Two things are needed together: water **expands** when it freezes, and Earth has **temperature swings** that give a freeze-thaw cycle.",
+      "That expansion is the reason frost wedging works, so the answer to the question in the picture is both reasons together."
+     ]
+    }
    ]
   },
   {
@@ -55,11 +78,7 @@
    "slides": "Weathering 3",
    "bullets": [
     "**Weathering** = rock at Earth's surface breaking down into smaller pieces (sediment) and dissolved ions. **Erosion** = moving that material away.",
-    "**Physical (mechanical) weathering** breaks rock into smaller pieces. The rock is the same stuff, just in smaller bits.",
-    "**Chemical weathering** changes or dissolves the minerals themselves (water, oxygen and acids react with them).",
-    "The two work together. Physical weathering makes cracks and new surfaces. Chemical weathering only attacks surfaces, so more surface means faster chemical weathering.",
-    "Slide 3 cube picture: the same amount of rock cut into more pieces. Surface area goes **6 m2, 12 m2, 60 m2** as there are more cracks (fewer cracks = less surface area).",
-    "Slide 3 granite story: intact rock (feldspar, quartz, biotite), then chemical weathering weakens it and it falls apart, **feldspar turns into clay**, quartz grains are left, and a current washes the clay away while tumbling quartz grains become **rounder**."
+    "**Physical (mechanical) weathering** breaks rock into smaller pieces; the rock is the same stuff, just in smaller bits. **Chemical weathering** changes or dissolves the minerals themselves (water, oxygen and acids react with them)."
    ],
    "boxes": [
     {
@@ -100,7 +119,7 @@
      [
       "Where strongest",
       "Where temperature swings across 0 C, plants and salt act",
-      "Warm, humid places (textbook)"
+      "Warm, humid places"
      ]
     ]
    },
@@ -114,6 +133,21 @@
      "slide": "Weathering 3",
      "alt": "Figure from the lecture: Physical vs chemical weathering and surface area"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/weathering3.jpg",
+      "slide": "Weathering 3",
+      "alt": "Cubes cut into more and more pieces with growing surface area, and a granite breaking down into loose quartz grains and clay."
+     },
+     "title": "Surface area and the granite story",
+     "bullets": [
+      "The two kinds of weathering work together. Physical weathering makes cracks and new surfaces. Chemical weathering only attacks surfaces, so more surface means faster chemical weathering.",
+      "Cube picture: the same amount of rock cut into more pieces. Surface area goes **6 m2, 12 m2, 60 m2** as there are more cracks (fewer cracks = less surface area).",
+      "Granite story: intact rock (feldspar, quartz, biotite), then chemical weathering weakens it and it falls apart, **feldspar turns into clay**, quartz grains are left, and a current washes the clay away while tumbling quartz grains become **rounder**."
+     ]
+    }
    ]
   },
   {
@@ -121,12 +155,7 @@
    "title": "Mechanical weathering types",
    "slides": "Weathering 4-7, 24-26",
    "bullets": [
-    "**Jointing** (slide 4): natural cracks in rock. The slide shows different rock types have different joints: horizontal **bedding** joints and **vertical joints** in sandstone, **exfoliation joints** (curved sheets parallel to the surface) in granite.",
-    "Joints limit the size of the largest lumps of intact rock (clicker slide 24, answer C: jointing). Joints are also the doorways that let water, ice and roots in.",
-    "Textbook: **pressure expansion** (exfoliation). Rock buried deep is under high pressure. When erosion exposes it, the pressure drops suddenly, the rock expands and cracks, and layers peel off like onion skin.",
-    "**Frost wedging** (slide 5): water in a crack freezes and expands, a crack grows and a block is lifted and pushed out.",
-    "**Root wedging** (slide 6): a tree grows in a joint, roots pry the rock apart, and eventually the blocks tumble to the base of the cliff.",
-    "**Salt crystal wedging** (slide 7): salty water evaporates in rock pores, salt crystals grow and push the rock apart. On a beach cliff in Scotland this makes **cavernous weathering** (honeycomb of holes). The textbook name for such holes is **tafoni**."
+    "**Frost wedging**: water in a crack freezes and expands, so a crack grows and a block is lifted and pushed out. **Root wedging**: a tree grows in a joint, roots pry the rock apart, and eventually the blocks tumble to the base of the cliff."
    ],
    "boxes": [
     {
@@ -162,6 +191,44 @@
      "slide": "Weathering 26",
      "alt": "Figure from the lecture: Mechanical weathering types"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/weathering4.jpg",
+      "slide": "Weathering 4",
+      "alt": "Photos and a block diagram of joints in sandstone and granite, labelled bedding, vertical joints and exfoliation joints."
+     },
+     "title": "Jointing",
+     "bullets": [
+      "**Jointing** is natural cracks in rock. Different rock types have different joints: horizontal bedding joints and vertical joints in sandstone, **exfoliation joints** (curved sheets parallel to the surface) in granite.",
+      "**Pressure expansion** (exfoliation): rock buried deep is under high pressure. When erosion exposes it, the pressure drops suddenly, the rock expands and cracks, and layers peel off like onion skin."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/weathering24.jpg",
+      "slide": "Weathering 24",
+      "alt": "A multiple-choice question asking what typically limits the size of the largest lumps of intact rock."
+     },
+     "title": "Joints limit block size",
+     "bullets": [
+      "Joints limit the size of the largest lumps of intact rock, so the answer is jointing.",
+      "Joints are also the doorways that let water, ice and roots into the rock."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/weathering26.jpg",
+      "slide": "Weathering 26",
+      "alt": "A multiple-choice question about what would be growing on you during cavernous weathering."
+     },
+     "title": "Salt crystal wedging",
+     "bullets": [
+      "**Salt crystal wedging**: salty water evaporates in rock pores, salt crystals grow and push the rock apart.",
+      "On a beach cliff in Scotland this makes **cavernous weathering**, a honeycomb of holes (also called **tafoni**). Salt crystals are what grow in the rock."
+     ]
+    }
    ]
   },
   {
@@ -169,12 +236,8 @@
    "title": "Chemical weathering and differential weathering",
    "slides": "Weathering 8-11, 27",
    "bullets": [
-    "**Dissolution** (slide 8): water molecules are polar, so they pull ions out of the crystal surface. Grain surfaces become pitted and the ions end up in solution. Slide photo: water seeping into joints in limestone cut deep troughs (limestone pavement).",
-    "Textbook: salt (halite) and calcite dissolve easily. Slightly acidic water dissolves faster. Lichens and bacteria release acids, so **life speeds up chemical weathering** (clicker slide 27, answer A: yes).",
-    "**Oxidation** (slide 9): iron in a mineral combines with oxygen, like rust. The slide shows weathered **pyrite** crystals (a Canadian 5-cent coin for scale). Textbook iron oxides: red or grey hematite, brown goethite, yellow limonite. They colour rock red/brown and can cement grains.",
-    "**Hydrolysis** (textbook): water and carbonic acid react with silicate minerals such as feldspar and turn them into **clay** plus dissolved ions. This is the main way silicate rock is broken down.",
-    "**Goldich dissolution series** (textbook): minerals that crystallize first at high temperature (top of **Bowen's series**: olivine, pyroxene) weather fastest. Quartz, at the bottom, is very resistant.",
-    "**Differential weathering** (slides 10-11): weathering attacks a **corner on three sides, an edge on two sides, a face on one side**. So corners wear fastest and blocks turn into rounded boulders (granite in the Mojave desert, slide 11). Textbook calls this spheroidal weathering, a kind of exfoliation caused by chemical weathering moving along joints."
+    "**Dissolution**: water molecules are polar, so they pull ions out of the crystal surface. Grain surfaces become pitted and the ions end up in solution. Water seeping into joints in limestone cuts deep troughs (limestone pavement).",
+    "**Hydrolysis**: water and carbonic acid react with silicate minerals such as feldspar and turn them into **clay** plus dissolved ions. This is the main way silicate rock is broken down."
    ],
    "boxes": [
     {
@@ -239,6 +302,45 @@
      "slide": "Weathering 27",
      "alt": "Figure from the lecture: Chemical weathering and differential weathering"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/weathering9.jpg",
+      "slide": "Weathering 9",
+      "alt": "Close-up of a grey rock with weathered pyrite crystals surrounded by rusty rings, next to a Canadian 5-cent coin for scale."
+     },
+     "title": "Oxidation",
+     "bullets": [
+      "**Oxidation**: iron in a mineral combines with oxygen, like rust. The picture shows weathered **pyrite** crystals with rusty rings around them.",
+      "Iron oxides include red or grey hematite, brown goethite and yellow limonite. They colour rock red or brown and can cement grains together."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/weathering11.jpg",
+      "slide": "Weathering 11",
+      "alt": "Large rounded granite boulders in the Mojave desert."
+     },
+     "title": "Differential weathering",
+     "bullets": [
+      "Weathering attacks a **corner on three sides, an edge on two sides, a face on one side**. So corners wear fastest and blocks turn into rounded boulders, like this granite in the Mojave desert.",
+      "This is also called spheroidal weathering, a kind of exfoliation caused by chemical weathering moving along joints.",
+      "Minerals differ too (**Goldich dissolution series**): minerals that crystallize first at high temperature (top of **Bowen's series**: olivine, pyroxene) weather fastest. Quartz, at the bottom, is very resistant."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/weathering27.jpg",
+      "slide": "Weathering 27",
+      "alt": "A multiple-choice question asking whether life increases the rate of chemical weathering."
+     },
+     "title": "Does life speed it up?",
+     "bullets": [
+      "Salt (halite) and calcite dissolve easily, and slightly acidic water dissolves faster.",
+      "Lichens and bacteria release acids, so **life speeds up chemical weathering**. The answer to the question in the picture is yes."
+     ]
+    }
    ]
   },
   {
@@ -247,12 +349,7 @@
    "slides": "Weathering 13-21",
    "bullets": [
     "**Soil** = a mix of air, water, minerals and organic matter that forms where rock weathers and meets life. **Humus** is the dark organic part.",
-    "Slide 13 shows how it forms: rain enters the ground, plant debris builds up, worms churn it, microbes and fungi work, roots weather minerals, and downward-moving water carries ions and clay from the **zone of leaching** (top) to the **zone of accumulation** (below).",
-    "Horizons (layers), top to bottom (textbook): **O** (dead plant material), **A** (topsoil, humus plus minerals), **E** (leached layer in wet climates), **B** (subsoil, where leached material collects), **C** (broken-up bedrock, little chemical change), **R** (solid bedrock). Slide 13b labels them topsoil, transition, subsoil, weathered bedrock, solid bedrock.",
-    "**Soil-forming factors** on the slides: (1) **climate and vegetation** (slide 14), (2) **substrate composition** (slide 19), (3) **slope steepness and wetness** (slide 20), (4) **time** (slide 21). The textbook lists five: parent material, topography, weathering, climate, organisms.",
-    "Slide 14: polar, temperate, desert and tropical soils. The **tropical** block has the thickest weathered zone and is orange (iron and aluminum oxides).",
-    "Slide 16, increasing rainfall left to right: **desert soil** (A, B, C; **calcite accumulates to form calcrete**), **temperate soil** (O, A, E, B, C; humus accumulates, iron and aluminum oxide accumulate in B, calcite is leached), **tropical soil** (iron oxide, aluminum oxide and aluminum hydroxide residue).",
-    "Slide 19: thicker soil over a **weaker** substrate; hardest rock has no soil. Slide 20: thicker soil on **gentler** slopes, exposed rock on steep ones. Slide 21: an **older** soil is thicker than a younger one (young lava flow = thin soil)."
+    "Soil is shaped by four factors: **climate and vegetation**, substrate composition, slope steepness and wetness, and **time**."
    ],
    "boxes": [
     {
@@ -272,7 +369,7 @@
     "head": [
      "Soil",
      "Rainfall",
-     "Key feature (slide 16)"
+     "Key feature"
     ],
     "rows": [
      [
@@ -312,16 +409,44 @@
      "slide": "Weathering 18",
      "alt": "Figure from the lecture: Soil formation, horizons and climate"
     }
+   ],
+   "steps": [
+    {
+     "title": "How soil forms and its layers",
+     "bullets": [
+      "Rain enters the ground, plant debris builds up, worms churn it, microbes and fungi work, roots weather minerals, and downward-moving water carries ions and clay from the **zone of leaching** (top) to the **zone of accumulation** (below).",
+      "Horizons (layers), top to bottom: O (dead plant material), A (topsoil, humus plus minerals), E (leached layer in wet climates), B (subsoil, where leached material collects), C (broken-up bedrock, little chemical change), R (solid bedrock). A simpler diagram labels them topsoil, transition, subsoil, weathered bedrock, solid bedrock."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/weathering18.jpg",
+      "slide": "Weathering 18",
+      "alt": "A red-orange soil exposed in a cut, with scrubby plants growing on top."
+     },
+     "title": "Climate: desert, temperate, tropical",
+     "bullets": [
+      "A diagram compares polar, temperate, desert and tropical soils. The **tropical** block has the thickest weathered zone and is orange (iron and aluminum oxides). A red soil like the one in the picture has the colour you would expect from iron oxide.",
+      "More rain from left to right: **desert soil** (A, B, C horizons) is where calcite accumulates to form **calcrete**.",
+      "**Temperate soil** (O, A, E, B, C): humus accumulates, iron and aluminum oxide collect in B, and calcite is leached. **Tropical soil**: iron oxide, aluminum oxide and aluminum hydroxide residue."
+     ]
+    },
+    {
+     "title": "Rock type, slope and time",
+     "bullets": [
+      "Rock type: thicker soil forms over a **weaker** substrate; the hardest rock has no soil.",
+      "Slope: thicker soil on **gentler** slopes, exposed rock on steep ones.",
+      "Time: an **older** soil is thicker than a younger one (a young lava flow has thin soil)."
+     ]
+    }
    ]
   },
   {
    "id": "soilclass",
-   "title": "Soil classification and clicker questions",
+   "title": "Soil classification and quick checks",
    "slides": "Weathering 22-27",
    "bullets": [
-    "The US uses the **U.S. Comprehensive Soil Classification System** (slide 22). It sorts soils into **soil orders**. Slide 23 is a world map of soils.",
-    "Key orders from the slide table: **Oxisol** = very weathered, rich in aluminum and iron oxide, low in nutrients, tropical. **Aridisol** = low organic matter, carbonate horizons, arid. **Histosol** = organic-rich, swamps and marshes. **Andisol** = volcanic ash. **Entisol** = no horizons, very recent. **Gelisol** = permafrost. **Mollisol** = soft, black, nutrient-rich, grasslands. **Vertisol** = clay that swells when wet and cracks when dry. **Alfisol** = subsurface clay, humid forests. **Spodosol** = acidic, ashy, humid forests. **Ultisol** = very mature, low nutrients. **Inceptisol** = moist, poorly developed horizons, recent.",
-    "Clicker answers you can derive: jointing limits the size of intact lumps (24, C); frost wedging works because water expands on freezing and temperature cycles (25, E); life speeds chemical weathering (27, A)."
+    "Quick checks: jointing limits the size of intact lumps of rock; frost wedging works because water expands on freezing and temperatures cycle across 0 C; life speeds up chemical weathering."
    ],
    "boxes": [
     {
@@ -352,6 +477,33 @@
      "slide": "Weathering 23",
      "alt": "Figure from the lecture: Soil classification and clicker questions"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/weathering22.jpg",
+      "slide": "Weathering 22",
+      "alt": "A table listing the 12 soil orders of the U.S. soil classification system with a short description of each."
+     },
+     "title": "Soil orders",
+     "bullets": [
+      "The US uses the **U.S. Comprehensive Soil Classification System**. It sorts soils into **soil orders**.",
+      "Orders tied to climate: Oxisol = very weathered, rich in aluminum and iron oxide, low in nutrients, tropical. Aridisol = low organic matter, carbonate horizons, arid. Histosol = organic-rich, swamps and marshes. Gelisol = permafrost.",
+      "Other orders: Andisol = volcanic ash. Entisol = no horizons, very recent. Mollisol = soft, black, nutrient-rich, grasslands. Vertisol = clay that swells when wet and cracks when dry. Alfisol = subsurface clay, humid forests. Spodosol = acidic, ashy, humid forests. Ultisol = very mature, low nutrients. Inceptisol = moist, poorly developed horizons, recent."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/weathering23.jpg",
+      "slide": "Weathering 23",
+      "alt": "A world map coloured by soil order, with red Oxisols covering tropical South America and Africa."
+     },
+     "title": "Soils of the world",
+     "bullets": [
+      "The world map colours each region by its soil order, so you can see where each kind of soil is common.",
+      "Oxisols (red) are mostly in tropical regions, matching their description as very weathered tropical soils."
+     ]
+    }
    ]
   },
   {
@@ -359,12 +511,7 @@
    "title": "What is sediment? The four rock types",
    "slides": "Sed 3-10",
    "bullets": [
-    "**Sediment** = loose fragments of rock or minerals, shells and shell pieces, or mineral crystals that **precipitate** (crystallize) out of water (slide 4). Slide 3 shows sedimentary rock in the rock cycle: erosion, transport and deposition make it.",
-    "Four types (slides 5, 6, 10): **clastic**, **biochemical**, **organic**, **chemical**.",
-    "**Clastic**: loose rock fragments (**clasts**) cemented together. **Biochemical**: cemented shells of organisms. **Chemical**: minerals that crystallize directly from water. **Organic**: carbon-rich remains of once-living organisms (coal).",
-    "Weathering supplies the raw materials: **particles** (for clastic) and **dissolved ions** (for chemical and biochemical) (slide 10).",
-    "Sedimentary rocks form layers like pages of a book (slide 7, Grand Canyon). The layers record ancient events and environments.",
-    "Slide 8: sedimentary rocks are **usually a thin cover** over older **basement** (a diagram labels Layer, Cover and Basement). Slide 9: the grains and the cement preserve evidence of how the rock formed."
+    "**Sediment** = loose fragments of rock or minerals, shells and shell pieces, or mineral crystals that **precipitate** (crystallize) out of water. In the rock cycle, erosion, transport and deposition make sedimentary rock."
    ],
    "boxes": [
     {
@@ -429,6 +576,33 @@
      "slide": "Sed 10",
      "alt": "Figure from the lecture: What is sediment? The four rock types"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/sed7.jpg",
+      "slide": "Sed 7",
+      "alt": "An aerial view of the Grand Canyon showing many colourful horizontal rock layers."
+     },
+     "title": "Layers record Earth's history",
+     "bullets": [
+      "Sedimentary rocks form layers like pages in a stack. The layers record ancient events and ancient environments, and geologists can read this history. The Grand Canyon is a famous example.",
+      "Sedimentary rocks are **usually a thin cover** over older **basement** rock (a diagram labels Layer, Cover and Basement). The grains and the cement preserve evidence of how the rock formed."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed10.jpg",
+      "slide": "Sed 10",
+      "alt": "Four photos labelled clastic, biochemical, organic and chemical, with a short definition of each type."
+     },
+     "title": "The four rock types",
+     "bullets": [
+      "There are four types: clastic, biochemical, organic and chemical.",
+      "**Clastic**: loose rock fragments (**clasts**) cemented together. Biochemical: cemented shells of organisms. Chemical: minerals that crystallize directly from water. Organic: carbon-rich remains of once-living organisms (coal).",
+      "Weathering supplies the raw materials: **particles** (for clastic) and **dissolved ions** (for chemical and biochemical)."
+     ]
+    }
    ]
   },
   {
@@ -436,12 +610,8 @@
    "title": "Clastic rocks: making them and classifying them",
    "slides": "Sed 11-20",
    "bullets": [
-    "Making a clastic rock (slide 12): **weathering** breaks rock, **erosion** carries it, **deposition** drops it. Coarse grains drop near the source, fine grains travel farther.",
-    "**Lithification** (slide 13) = loose sediment turns to rock. Weight of overburden causes **compaction** (squeezes grains, water escapes). Groundwater ions then **cement** the grains together (textbook: calcite, silica or iron oxides as cement).",
-    "**Angularity** (slide 14): angular, subangular, subrounded, rounded. Grains round off as they tumble. More rounded = longer transport or more energy (textbook).",
-    "**Sorting** (slide 15): very poorly sorted, poorly, moderately, well, very well sorted. Well sorted = grains about the same size; poorly sorted = mixed sizes. Wind and beach sands are well sorted; glacial deposits are very poorly sorted (textbook).",
-    "**Grain size** (slide 16, Table 6.1): **> 2 mm** coarse: conglomerate (rounded), **breccia** (angular), diamictite (large clasts in muddy matrix). **0.07 to 2 mm**: sandstone (quartz sandstone, arkose, lithic sandstone, wacke). **0.004 to 0.06 mm**: siltstone. **< 0.004 mm**: shale (breaks into platy sheets) or mudstone (does not).",
-    "Slides 17-20 show examples: breccia, conglomerate, sandstone, shale and mudstone."
+    "**Angularity**: grains are called angular, subangular, subrounded or rounded. Grains round off as they tumble, so more rounded means longer transport or more energy.",
+    "**Grain size**: > 2 mm is coarse: conglomerate (rounded), **breccia** (angular), diamictite (large clasts in a muddy matrix). 0.07 to 2 mm: sandstone (quartz sandstone, arkose, lithic sandstone, wacke). 0.004 to 0.06 mm: siltstone. < 0.004 mm: shale (breaks into platy sheets) or mudstone (does not)."
    ],
    "boxes": [
     {
@@ -506,6 +676,43 @@
      "slide": "Sed 15",
      "alt": "Figure from the lecture: Clastic rocks: making them and classifying them"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/sed11.jpg",
+      "slide": "Sed 11",
+      "alt": "A sandstone layer in a cliff above cliff dwellings, with a circular close-up of the sand grains."
+     },
+     "title": "A clastic rock: sandstone",
+     "bullets": [
+      "A clastic rock is made of grains (**clasts**) cemented together. The picture shows a sandstone layer in a cliff, and the circle zooms in on the sand grains."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed12.jpg",
+      "slide": "Sed 12",
+      "alt": "A block diagram showing rock weathering on a cliff, a river eroding it, and sediment deposited at the coast, coarse near land and fine farther out."
+     },
+     "title": "Making a clastic rock",
+     "bullets": [
+      "Weathering breaks rock, erosion carries it, **deposition** drops it. Coarse grains drop near the source, fine grains travel farther.",
+      "**Lithification** = loose sediment turns to rock. The weight of overburden causes **compaction** (squeezes grains, water escapes). Groundwater ions then cement the grains together (calcite, silica or iron oxides as cement)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed15.jpg",
+      "slide": "Sed 15",
+      "alt": "Five circles of grains, from very poorly sorted (mixed sizes) to very well sorted (all about the same size)."
+     },
+     "title": "Sorting",
+     "bullets": [
+      "**Sorting** has five levels: very poorly, poorly, moderately, well and very well sorted. Well sorted = grains about the same size; poorly sorted = mixed sizes.",
+      "Wind and beach sands are well sorted; glacial deposits are very poorly sorted."
+     ]
+    }
    ]
   },
   {
@@ -513,16 +720,13 @@
    "title": "Biochemical, organic and chemical rocks",
    "slides": "Sed 21-26",
    "bullets": [
-    "**Biochemical limestone** (slide 21): built from shells and reefs. The mineral is mainly **calcite** (CaCO3); textbook: shells start as aragonite (same formula, different crystal structure) which usually turns to calcite. Limestone is the most common non-clastic sedimentary rock.",
-    "**Biochemical chert** (slide 22): from tiny silica shells (radiolarians, diatoms) on the deep ocean floor (textbook).",
-    "**Organic**: **coal and oil shale** (slide 23), carbon-rich remains. Textbook: plant and animal remains buried and heated become coal, oil and natural gas. Slide 23 shows a black coal layer between sandstone and shale.",
-    "**Chemical evaporites** (slide 24): salts that crystallize as water evaporates in dry places (Death Valley salt flat on the slide). Textbook: halite, gypsum.",
-    "**Chemical travertine** (slide 25): calcite from springs and in caves (stalactites). **Chemical chert** (slide 26): silica from groundwater, growth rings visible (agate, jasper are chert varieties in the textbook)."
+    "**Chemical evaporites**: salts that crystallize as water evaporates in dry places (a Death Valley salt flat is an example). Examples are halite and gypsum.",
+    "**Chemical travertine**: calcite from springs and in caves (stalactites). **Chemical chert**: silica from groundwater, with growth rings visible (agate and jasper are chert varieties)."
    ],
    "boxes": [
     {
      "type": "why",
-     "text": "Why do evaporites form? Water carries dissolved salts. When the water evaporates, the salts have nowhere to go and crystallize. Textbook order as seawater evaporates: calcite first (about 50% of the water left), gypsum or anhydrite (20%), halite (10%), potassium and magnesium salts last (5%). Least soluble comes out first."
+     "text": "Why do evaporites form? Water carries dissolved salts. When the water evaporates, the salts have nowhere to go and crystallize. Order as seawater evaporates: calcite first (about 50% of the water left), gypsum or anhydrite (20%), halite (10%), potassium and magnesium salts last (5%). Least soluble comes out first."
     },
     {
      "type": "trick",
@@ -553,6 +757,43 @@
      "slide": "Sed 23",
      "alt": "Figure from the lecture: Biochemical, organic and chemical rocks"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/sed21.jpg",
+      "slide": "Sed 21",
+      "alt": "Three photos of limestone: a coral reef, fossil shells in rock with a coin for scale, and a layered limestone cliff."
+     },
+     "title": "Biochemical limestone",
+     "bullets": [
+      "**Biochemical limestone** is built from shells and reefs. The mineral is mainly **calcite** (CaCO3). Shells start as aragonite (same formula, different crystal structure), which usually turns to calcite.",
+      "Limestone is the most common non-clastic sedimentary rock."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed22.jpg",
+      "slide": "Sed 22",
+      "alt": "Thin layers of reddish-brown chert exposed in a hillside."
+     },
+     "title": "Biochemical chert",
+     "bullets": [
+      "**Biochemical chert** comes from tiny silica shells (radiolarians, diatoms) that settle on the deep ocean floor."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed23.jpg",
+      "slide": "Sed 23",
+      "alt": "A black coal layer between layers of sandstone and shale in a riverside cliff."
+     },
+     "title": "Organic: coal and oil shale",
+     "bullets": [
+      "**Organic** rocks are the carbon-rich remains of life: **coal and oil shale**. Plant and animal remains that are buried and heated become coal, oil and natural gas.",
+      "The picture shows a black coal layer sitting between layers of sandstone and shale."
+     ]
+    }
    ]
   },
   {
@@ -560,14 +801,8 @@
    "title": "Bedding, formations and sedimentary structures",
    "slides": "Sed 27-38, 56",
    "bullets": [
-    "**Bedding** (slide 27): layers called **beds**. The slide shows reddish sandstones and shales (redbeds) with horizontal bedding. Textbook: each bedding plane is a change in deposition conditions; a bed is thicker than 1 cm, a thinner layer is a lamina.",
-    "**Formations** (slides 28-29): distinct rock units so recognizable they can be **mapped over large regions**. They are named for places where they are best exposed. Grand Canyon example: Kaibab Limestone, Toroweap Formation, Coconino Sandstone, Hermit Shale, Supai Group. The surface between two units is a **contact**.",
-    "**Sedimentary structures / bedforms** (slide 30): clues to the **depositional environment**. Water flowing over loose sediment creates bedforms that reflect flow speed and grain size (slide 32).",
-    "**Ripple marks**: cm-scale ridges and troughs, perpendicular to flow, in sand. **Dunes**: bigger versions (slide 32 says 50 cm to over 100 m) in streams, deserts and beaches (slide 33). Dunes preserve large internal **cross beds**.",
-    "**Cross beds** (slide 34): sand moves up the gentle side and piles at the crest, then slips down the steep **slip face**. The slip face moves downcurrent and gets buried by the next avalanche; the buried slip faces are the cross beds.",
-    "**Turbidity currents and graded beds** (slides 35-37): sediment breaks loose and avalanches down a submarine canyon, then slows and deposits on a submarine fan. A **graded bed** is **coarse at the base and fine at the top** because the turbulence dies down over time.",
-    "**Mudcracks** (slide 38): polygonal drying cracks in wet mud; they show alternating wet and dry **terrestrial** conditions. **Fossil footprints** show past life. Bed-surface markings form after deposition while sediment is still soft.",
-    "Slide 56 clicker: a sedimentary bed may have **bedforms** (B)."
+    "**Bedding**: layers are called **beds**. Reddish sandstones and shales (redbeds) often show horizontal bedding. Each bedding plane is a change in deposition conditions; a bed is thicker than 1 cm, a thinner layer is a lamina.",
+    "**Formations**: distinct rock units so recognizable they can be mapped over large regions. They are named for places where they are best exposed. Grand Canyon example: Kaibab Limestone, Toroweap Formation, Coconino Sandstone, Hermit Shale, Supai Group. The surface between two units is a **contact**."
    ],
    "boxes": [
     {
@@ -603,6 +838,57 @@
      "slide": "Sed 56",
      "alt": "Figure from the lecture: Bedding, formations and sedimentary structures"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/sed30.jpg",
+      "slide": "Sed 30",
+      "alt": "A title card reading sedimentary structures (or bedforms), indicators diagnostic of the depositional environment."
+     },
+     "title": "Bedforms are clues",
+     "bullets": [
+      "Sedimentary structures (bedforms) are clues to the **depositional environment**. Water flowing over loose sediment creates bedforms that reflect flow speed and grain size.",
+      "**Ripple marks**: cm-scale ridges and troughs, perpendicular to flow, in sand. **Dunes**: bigger versions (50 cm to over 100 m) in streams, deserts and beaches.",
+      "Dunes preserve large internal **cross beds**."
+     ]
+    },
+    {
+     "title": "Cross beds",
+     "bullets": [
+      "Sand moves up the gentle side of a ripple or dune and piles at the crest, then slips down the steep **slip face**. The slip face moves downcurrent and gets buried by the next avalanche; the buried slip faces are the **cross beds**."
+     ]
+    },
+    {
+     "title": "Turbidity currents and graded beds",
+     "bullets": [
+      "Sediment breaks loose and avalanches down a submarine canyon, then slows and deposits on a submarine fan.",
+      "A **graded bed** is **coarse at the base and fine at the top** because the turbulence dies down over time."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed38.jpg",
+      "slide": "Sed 38",
+      "alt": "Polygonal cracks in dried mud with a rock hammer for scale, and fossil footprints on a rock surface."
+     },
+     "title": "Mudcracks and footprints",
+     "bullets": [
+      "**Mudcracks** are polygonal drying cracks in wet mud. They show alternating wet and dry **terrestrial** conditions.",
+      "**Fossil footprints** show past life. Bed-surface markings like these form after deposition while the sediment is still soft."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed56.jpg",
+      "slide": "Sed 56",
+      "alt": "A multiple-choice question asking what a sedimentary bed may have."
+     },
+     "title": "A bed may have bedforms",
+     "bullets": [
+      "A sedimentary bed may have **bedforms**: structures such as ripples, dunes, cross beds and mudcracks."
+     ]
+    }
    ]
   },
   {
@@ -610,17 +896,13 @@
    "title": "Depositional environments and deltas",
    "slides": "Sed 31, 39-45",
    "bullets": [
-    "A **depositional environment** is a place where sediment accumulates (slide 31). They range from **terrestrial** to **coastal** to **marine**. Each differs in energy, transport and chemistry, so each makes its own rock.",
-    "Slide 39 overview: glacial, desert, lake, river, beach, delta, reef, submarine fan and deep-sea each produce different rocks (shale, siltstone, sandstone, conglomerate, limestone shown at the bottom).",
-    "**River** (slide 40): channel fill and floodplain deposits (older and younger).",
-    "**Delta** (slides 41-42): a river slows where it meets the sea, so sediment drops. A delta has **topset** beds (gravel, nearly horizontal), **foreset** beds (gravel and sand, sloping), and **bottomset** beds (finer sediment, horizontal). Slide 41 also shows river-mouth sand, marsh mud, submarine mudflows and turbidites.",
-    "**Mars** (slides 43-44): a delta remnant in Jezero crater, Kodiak Butte, shows topsets, foresets and bottomsets, so water once flowed there.",
-    "**Shallow-water carbonate** (slide 45): reef, lagoon, calcite sand and calcite mud, reef face with broken reef fragments."
+    "A **depositional environment** is a place where sediment accumulates. They range from terrestrial to coastal to marine. Each differs in energy, transport and chemistry, so each makes its own rock.",
+    "Glacial, desert, lake, river, beach, delta, reef, submarine fan and deep-sea settings each produce different rocks (shale, siltstone, sandstone, conglomerate, limestone). A **river** leaves channel fill and floodplain deposits (older and younger)."
    ],
    "boxes": [
     {
      "type": "why",
-     "text": "Why does a river build a delta? A river on land is fast and can carry lots. When it enters the sea or a lake the slope drops to zero, the water slows, and it dumps its load: coarse first, then finer farther out (textbook 5.5.2)."
+     "text": "Why does a river build a delta? A river on land is fast and can carry lots. When it enters the sea or a lake the slope drops to zero, the water slows, and it dumps its load: coarse first, then finer farther out."
     },
     {
      "type": "trick",
@@ -634,34 +916,28 @@
    "table": {
     "head": [
      "Environment",
-     "Typical sediment or clue",
-     "Source"
+     "Typical sediment or clue"
     ],
     "rows": [
      [
       "River",
-      "Channel fill and floodplain deposits",
-      "Slide 40"
+      "Channel fill and floodplain deposits"
      ],
      [
       "Delta",
-      "Topset, foreset, bottomset beds",
-      "Slides 41-44"
+      "Topset, foreset, bottomset beds"
      ],
      [
       "Reef and lagoon",
-      "Calcite sand, mud and reef fragments",
-      "Slide 45"
+      "Calcite sand, mud and reef fragments"
      ],
      [
-      "Glacier (textbook)",
-      "Very poorly sorted mix, boulders to mud",
-      "Textbook 5.5.3"
+      "Glacier",
+      "Very poorly sorted mix, boulders to mud"
      ],
      [
-      "Desert dunes (textbook)",
-      "Very well sorted sand, large cross beds",
-      "Textbook 5.5.3"
+      "Desert dunes",
+      "Very well sorted sand, large cross beds"
      ]
     ]
    },
@@ -685,6 +961,43 @@
      "slide": "Sed 45",
      "alt": "Figure from the lecture: Depositional environments and deltas"
     }
+   ],
+   "steps": [
+    {
+     "img": {
+      "src": "img/sedimentary/sed43.jpg",
+      "slide": "Sed 43",
+      "alt": "An orbital view of a fan-shaped river delta in Jezero crater on Mars."
+     },
+     "title": "A delta on Mars",
+     "bullets": [
+      "A **delta** forms where a river slows as it meets the sea, so its sediment drops.",
+      "The picture shows a delta in Jezero crater on Mars, so water once flowed there."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed44.jpg",
+      "slide": "Sed 44",
+      "alt": "A butte on Mars (Kodiak Butte, a delta remnant) with a close-up labelling topsets, foresets and bottomsets."
+     },
+     "title": "Delta layers: top, fore, bottom",
+     "bullets": [
+      "A delta has topset beds (gravel, nearly horizontal), foreset beds (gravel and sand, sloping), and bottomset beds (finer sediment, horizontal). Kodiak Butte, a delta remnant, shows all three.",
+      "Around a delta you also find river-mouth sand, marsh mud, submarine mudflows and turbidites."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed45.jpg",
+      "slide": "Sed 45",
+      "alt": "An aerial photo of an island with a reef around it, and a diagram labelling reef, lagoon, calcite sand, calcite mud and reef face."
+     },
+     "title": "Shallow-water carbonate",
+     "bullets": [
+      "Shallow-water carbonate settings have a **reef**, a lagoon, calcite sand and calcite mud, and a reef face with broken reef fragments."
+     ]
+    }
    ]
   },
   {
@@ -692,13 +1005,8 @@
    "title": "Basins, sea level and facies",
    "slides": "Sed 46-55",
    "bullets": [
-    "**Sedimentary basins** form where tectonic activity creates space (slides 46-49). Sediment thickness varies from zero to **20+ km** (slide 47).",
-    "Four basin types (slide 47): **foreland** (weight of a mountain belt pushes down the crust), **rift** (downward slip on faults makes narrow troughs), **intracontinental** (forms in a continent's interior, maybe over an old rift), **passive margin** (subsidence over thinned crust at an ocean edge).",
-    "**Passive margins** (slide 48) are continent edges that are not plate boundaries, with continental crust thinned by earlier rifting that passes into oceanic crust.",
-    "**Foreland basins** (slide 49): on the craton side of a collisional mountain belt; the lithosphere flexes under the load, and the downwarp fills with debris eroded from the mountains. Slide 55 asks what basin Calgary sits on (Calgary is just east of the Rocky Mountains, so foreland basin; the slide does not state the answer).",
-    "**Transgression and regression** (slides 50-51): sea level rise moves the shoreline **inland** (transgression); sea level fall moves it **seaward** (regression). Regression exposes land and increases erosion. Strata record **deepening or shallowing upward** as vertical successions.",
-    "**Facies** (textbook 5.5.4): rocks of the same age can differ sideways (beach sand, tidal flat silt, offshore mud, offshore limestone). During transgression beach facies get buried by offshore facies. Grand Canyon example: Tapeats Sandstone (beach), Bright Angel Shale (near-offshore mud), Muav Limestone (far offshore).",
-    "**Basement vs cover**: sedimentary rock is a cover over older **basement** (slides 8 and 49 'Older basement'). Midterm Q17: what underlies the sedimentary cover is the basement."
+    "**Sedimentary basins** form where tectonic activity creates space. Sediment thickness varies from zero to **20+ km**.",
+    "**Basement vs cover**: sedimentary rock is a cover over older **basement** rock, and what underlies the sedimentary cover is the basement."
    ],
    "boxes": [
     {
@@ -717,7 +1025,7 @@
    "table": {
     "head": [
      "Basin",
-     "How it forms (slide 47)"
+     "How it forms"
     ],
     "rows": [
      [
@@ -758,6 +1066,41 @@
      "slide": "Sed 55",
      "alt": "Figure from the lecture: Basins, sea level and facies"
     }
+   ],
+   "steps": [
+    {
+     "title": "Four basin types",
+     "bullets": [
+      "**Foreland** (weight of a mountain belt pushes down the crust), **rift** (downward slip on faults makes narrow troughs), intracontinental (forms in a continent's interior, maybe over an old rift), passive margin (subsidence over thinned crust at an ocean edge).",
+      "**Passive margins** are continent edges that are not plate boundaries, with continental crust thinned by earlier rifting that passes into oceanic crust."
+     ]
+    },
+    {
+     "title": "Transgression and regression",
+     "bullets": [
+      "Sea level rise moves the shoreline inland (**transgression**); sea level fall moves it seaward (**regression**). Regression exposes land and increases erosion.",
+      "Strata record **deepening or shallowing upward** as vertical successions."
+     ]
+    },
+    {
+     "title": "Facies",
+     "bullets": [
+      "**Facies**: rocks of the same age can differ sideways (beach sand, tidal flat silt, offshore mud, offshore limestone). During transgression, beach facies get buried by offshore facies.",
+      "Grand Canyon example: Tapeats Sandstone (beach), Bright Angel Shale (near-offshore mud), Muav Limestone (far offshore)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/sedimentary/sed55.jpg",
+      "slide": "Sed 55",
+      "alt": "A multiple-choice question asking what type of accommodation space Calgary sits on."
+     },
+     "title": "Foreland basins",
+     "bullets": [
+      "**Foreland basins** lie on the craton side of a collisional mountain belt. The lithosphere flexes under the load, and the downwarp fills with debris eroded from the mountains.",
+      "Calgary is just east of the Rocky Mountains, so it sits on a foreland basin."
+     ]
+    }
    ]
   }
  ],
@@ -765,44 +1108,36 @@
   "title": "Weathering and sedimentary rocks at a glance",
   "head": [
    "Idea",
-   "Key fact",
-   "Slides"
+   "Key fact"
   ],
   "rows": [
    [
     "Mechanical weathering",
-    "Jointing, frost, root and salt wedging",
-    "Weathering 4-7"
+    "Jointing, frost, root and salt wedging"
    ],
    [
     "Chemical weathering",
-    "Dissolution, oxidation, hydrolysis",
-    "Weathering 8-9"
+    "Dissolution, oxidation, hydrolysis"
    ],
    [
     "Soil factors",
-    "Climate and vegetation, substrate, slope, time",
-    "Weathering 14-21"
+    "Climate and vegetation, substrate, slope, time"
    ],
    [
     "Four rock types",
-    "Clastic, biochemical, organic, chemical",
-    "Sed 5-10"
+    "Clastic, biochemical, organic, chemical"
    ],
    [
     "Clastic classes",
-    "Over 2 mm gravel, sand, silt, clay",
-    "Sed 16"
+    "Over 2 mm gravel, sand, silt, clay"
    ],
    [
     "Structures",
-    "Ripples, dunes, cross beds, graded beds, mudcracks",
-    "Sed 32-38"
+    "Ripples, dunes, cross beds, graded beds, mudcracks"
    ],
    [
     "Sea level",
-    "Transgression inland, regression seaward",
-    "Sed 50-51"
+    "Transgression inland, regression seaward"
    ]
   ]
  },
@@ -831,7 +1166,7 @@
   {
    "id": "sed-c4",
    "front": "Surface area and weathering",
-   "back": "Cutting a rock into more pieces raises total surface area (slide: 6, 12, 60 m2), so chemical weathering is faster. Volume stays the same.",
+   "back": "Cutting a rock into more pieces raises total surface area (for example 6, 12, then 60 m2), so chemical weathering is faster. Volume stays the same.",
    "short": "More pieces, more surface, faster",
    "src": "Weathering slide 3"
   },
@@ -914,7 +1249,7 @@
   },
   {
    "id": "sed-c16",
-   "front": "Soil-forming factors (slides)",
+   "front": "Soil-forming factors",
    "back": "Climate and vegetation, substrate composition, slope steepness and wetness, and time.",
    "short": "Climate, substrate, slope, time",
    "src": "Weathering slides 14, 19-21"
@@ -1161,7 +1496,7 @@
   },
   {
    "id": "sed-6",
-   "q": "Which of the following is NOT one of the soil-forming factors shown on the slides?",
+   "q": "Which of the following is NOT one of the four soil-forming factors?",
    "options": [
     "Climate and vegetation",
     "Time",
@@ -1170,7 +1505,7 @@
     "Substrate composition"
    ],
    "answer": 2,
-   "why": "The four soil-forming factors on the slides are climate and vegetation, substrate composition, slope steepness and wetness, and time.",
+   "why": "The four soil-forming factors are climate and vegetation, substrate composition, slope steepness and wetness, and time.",
    "source": "Weathering slides 14, 19-21"
   },
   {
@@ -1184,7 +1519,7 @@
     "Hot and wet (tropical)"
    ],
    "answer": 4,
-   "why": "Heavy rain leaches away soluble material and leaves iron and aluminum oxide residue. Slide 16 tropical soil and the Oxisol description say exactly this.",
+   "why": "Heavy rain leaches away soluble material and leaves iron and aluminum oxide residue. Tropical soil and the Oxisol description say exactly this.",
    "source": "Weathering slides 16, 22"
   },
   {
@@ -1268,7 +1603,7 @@
     "It is a metamorphic structure"
    ],
    "answer": 0,
-   "why": "A normal turbidite is coarse at the base and fine at the top because the current slows. Coarse on top is a clue the layers may be upside down. (Another process could cause it; the slides only show normal grading.)",
+   "why": "A normal turbidite is coarse at the base and fine at the top because the current slows. Coarse on top is a clue the layers may be upside down. (Another process could cause it; the usual pattern is normal grading, coarse at the base.)",
    "source": "Sed slides 35-37; Textbook 5.4.2, 5.4.9"
   },
   {
@@ -1303,7 +1638,7 @@
    "id": "sed-16",
    "q": "How do cross beds form?",
    "options": [
-    "Ripples or dunes migrate downcurrent; sand slides down the steep slip face and each slip face is buried by the next avalanche",
+    "Ripples or dunes migrate downcurrent; sand moves down the steep slope of the dune and each slip face is buried by the next avalanche",
     "Mud settles slowly from still water",
     "Wet mud dries and shrinks into polygons",
     "Water freezes in cracks",
@@ -1338,7 +1673,7 @@
     "the atmosphere"
    ],
    "answer": 3,
-   "why": "Sedimentary rock is a thin cover over older basement rock (labelled Layer, Cover, Basement on the slide).",
+   "why": "Sedimentary rock is a thin cover over older basement rock (labelled Layer, Cover, Basement in the diagram).",
    "source": "Sed slides 8, 49"
   },
   {
@@ -1394,7 +1729,7 @@
     "They all precipitate at the same moment"
    ],
    "answer": 2,
-   "why": "Textbook order: calcite (about 50% of seawater left), gypsum or anhydrite (20%), halite (10%), then potassium and magnesium salts (5%). The least soluble precipitate first.",
+   "why": "The order is calcite (about 50% of seawater left), gypsum or anhydrite (20%), halite (10%), then potassium and magnesium salts (5%). The least soluble precipitate first.",
    "source": "Textbook 5.3.3"
   },
   {
@@ -1436,7 +1771,7 @@
     "The gentle slope, because soil stays in place instead of washing or falling away"
    ],
    "answer": 4,
-   "why": "Slide 20 says thicker soil develops over gentler slopes. Steep slopes shed soil and leave exposed rock.",
+   "why": "Thicker soil develops over gentler slopes. Steep slopes shed soil and leave exposed rock.",
    "source": "Weathering slide 20; Textbook 5.2.4"
   }
  ],

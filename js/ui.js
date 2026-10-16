@@ -29,18 +29,14 @@ function add(el, a) {
 // Slide numbers, textbook sections and "outside source" notes are for the admin only.
 export function clean(t) {
   if (canSeeRefs()) return String(t);
-  const N = String.raw`\d+(?:\s*[-–,&]\s*\d+|\s+and\s+\d+)*`;
-  return String(t)
-    .replace(new RegExp(String.raw`^(?:Slides?|Textbook|Sed|Weathering)\s+${N}[.\d]*\s*(?:and\s+[^:]{0,30})?:\s*`, "i"), "")
-    .replace(/\s*\((?:[^()]*?(?:[Tt]extbook|[Ss]lides?\b|outside source|[Ss]ed \d|[Ww]eathering \d|prof)[^()]*)\)/g, "")
-    .replace(new RegExp(String.raw`\b[Ss]lides? ${N}`, "g"), "the lecture")
-    .replace(/\b(?:from )?[Tt]extbook \d[\d.]*(?:\s*[-–,]\s*\d[\d.]*)*/g, "the textbook")
-    .replace(/\b([Tt])he slides?\b/g, (m, c) => c + "he lecture")
-    .replace(/\bthe the\b/gi, "the")
-    .replace(/\s*\(outside source\)/gi, "")
-    .replace(/\bthe lecture(?: the lecture)+/g, "the lecture")
-    .replace(/\s{2,}/g, " ").trim()
-    .replace(/^the lecture/, "The lecture");
+  let x = String(t)
+    .replace(/^(?:Slides?|Textbook|Sed|Weathering)\s+[\d.]+[^:]{0,40}:\s*/i, "")
+    .replace(/\s*\([^()]*(?:[Tt]extbook|[Ss]lides?\b|[Ll]ecture|outside source|[Ss]ed \d|[Ww]eathering \d|prof|[Mm]arshak)[^()]*\)/g, "");
+  const REF = /\b(?:slides?|lectures?|text ?books?|books?|profs?|professor|marshak|clickers?|outside source)\b/i;
+  const sents = x.split(/(?<=[.!?])\s+/);
+  const kept = sents.filter((q) => !REF.test(q));
+  x = kept.length ? kept.join(" ") : "";
+  return x.replace(/\s{2,}/g, " ").trim();
 }
 
 // safe mini-markdown: **term** highlighted, *italic*; everything else is plain text

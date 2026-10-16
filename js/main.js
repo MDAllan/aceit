@@ -196,23 +196,30 @@ function acc(cls, icon, title, content, open) {
 function table(t) {
   return h(".tw", h("table", h("thead", h("tr", t.head.map((x) => h("th", md(x))))), h("tbody", t.rows.map((r) => h("tr", r.map((c) => h("td", md(c))))))));
 }
-function figs(images) {
-  if (!images?.length) return "";
-  let i = 0;
-  const wrap = h(".figs");
+function lightbox(im) {
+  const lb = h(".lightbox", { onclick: () => lb.remove() }, h("button.chip.x", { "aria-label": "Close" }, ic("x", 18), "Close"), h("img", { src: im.src, alt: im.alt }));
+  document.body.append(lb);
+}
+// One box: a picture and its own explanation. Changing the picture (1/3, 2/3...) changes the text with it.
+function stepper(sec) {
+  const steps = sec.steps?.length ? sec.steps : (sec.images?.length ? sec.images.map((im) => ({ img: im, bullets: [] })) : []);
+  if (!steps.length) return "";
+  let i = 0, dir = 1;
+  const wrap = h(".stepper");
   const draw = () => {
-    const im = images[i];
-    const fig = h(".fig", { role: "button", tabindex: 0, "aria-label": "Enlarge picture" },
-      h("img", { src: im.src, alt: im.alt, loading: "lazy" }),
-      h("span.zoom", ic("zoom", 14), "Tap to enlarge"),
-      images.length > 1 ? [h("button.nv.l", { "aria-label": "Previous picture", onclick: (e) => { e.stopPropagation(); i = (i - 1 + images.length) % images.length; draw(); } }, ic("left", 18)),
-        h("button.nv.r", { "aria-label": "Next picture", onclick: (e) => { e.stopPropagation(); i = (i + 1) % images.length; draw(); } }, ic("right", 18)),
-        h("span.cnt", `${i + 1} / ${images.length}`)] : "");
-    fig.onclick = () => {
-      const lb = h(".lightbox", { onclick: () => lb.remove() }, h("button.chip.x", { "aria-label": "Close" }, ic("x", 18), "Close"), h("img", { src: im.src, alt: im.alt }));
-      document.body.append(lb);
-    };
-    wrap.replaceChildren(fig, S.canSeeRefs() ? h(".src.admin", "Slide " + im.slide) : "");
+    const st = steps[i], im = st.img, n = steps.length;
+    const go = (d) => { dir = d; i = (i + d + n) % n; draw(); };
+    const fig = im ? h(".fig", { role: "button", tabindex: 0, "aria-label": "Enlarge picture", onclick: () => lightbox(im) },
+      h("img", { src: im.src, alt: im.alt || sec.title, loading: "lazy" }), h("span.zoom", ic("zoom", 14), "Enlarge"),
+      n > 1 ? [h("button.nv.l", { "aria-label": "Previous", onclick: (e) => { e.stopPropagation(); go(-1); } }, ic("left", 18)), h("button.nv.r", { "aria-label": "Next", onclick: (e) => { e.stopPropagation(); go(1); } }, ic("right", 18))] : "",
+      n > 1 ? h("span.cnt", `${i + 1} / ${n}`) : "") : "";
+    const txt = h(".steptxt" + (dir < 0 ? ".back" : ""),
+      st.title ? h("h3", md(st.title)) : "",
+      (st.bullets || []).length ? h("ul.pts", st.bullets.map((x) => h("li", md(x)))) : "");
+    wrap.replaceChildren(fig,
+      im && n > 1 ? h(".dots", { style: "margin:8px 0 2px" }, steps.map((_, k) => h("i" + (k === i ? ".on" : "")))) : "",
+      n > 1 && !im ? h(".row", { style: "justify-content:space-between;margin:6px 0" }, h("button.arrow", { "aria-label": "Previous", onclick: () => go(-1) }, ic("left", 20)), h("span.src", `${i + 1} / ${n}`), h("button.arrow", { "aria-label": "Next", onclick: () => go(1) }, ic("right", 20))) : "",
+      txt, S.canSeeRefs() && im?.slide ? h(".src.admin", "Slide " + im.slide) : "");
   };
   draw();
   return wrap;
@@ -236,7 +243,7 @@ function notes(b, l) {
       h(".card.page" + (dir < 0 ? ".back" : ""),
         h("h2", p.title, refs && p.slides ? h("span.refchip", "Slides " + p.slides) : ""),
         i === 0 && l.intro ? h("p", { style: "color:var(--mute);margin:0 0 6px" }, md(l.intro)) : "",
-        figs(p.images),
+        stepper(p),
         (p.bullets || []).length ? h("ul.pts", p.bullets.map((x) => h("li", md(x)))) : "",
         boxes.map((x) => acc(x.type, BOX[x.type][0], BOX[x.type][1], md(x.text), false)),
         p.table ? (p.glance ? table(p.table) : acc("cmp", "list", "Compare table", table(p.table), false)) : "",
