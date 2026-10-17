@@ -155,6 +155,17 @@ function subjectStats(sj) {
   const ls = LECS.filter((l) => l.subject === sj.id);
   return { n: ls.length, pct: ls.length ? Math.round(ls.reduce((t, l) => t + S.lectureStats(l).pct, 0) / ls.length) : 0 };
 }
+function joinCard() {
+  const inp = h("input", { placeholder: "Enter a class code", autocomplete: "off", "aria-label": "Class code" }), err = h("p.err", { role: "alert", style: "margin:4px 0 0" });
+  const go = h("button.btn", { style: "--c:#2563eb" }, "Join class");
+  const submit = async () => {
+    const code = inp.value.trim(); if (!code) return; go.disabled = true; err.textContent = "";
+    const cid = await S.joinByCode(code, SUBJECTS.map((x) => x.id)); go.disabled = false;
+    if (cid) { const sj = SUBJECTS.find((x) => x.id === cid); toast(`Joined ${sj ? sj.name : "class"}!`); confetti(); route(); } else err.textContent = "That code doesn't match any class. Check it and try again.";
+  };
+  go.onclick = submit; inp.onkeydown = (e) => { if (e.key === "Enter") submit(); };
+  return h(".card", { style: "margin-bottom:14px" }, h("h3", "Join a class"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "Each class has its own code from your instructor."), h(".row", { style: "flex-wrap:nowrap" }, inp, go), err);
+}
 function viewHome(v) {
   const st = S.streak(), x = S.xp(open_()), lastp = S.last();
   const lastLec = lastp && open_().find((l) => l.id === lastp.lecId);
@@ -164,7 +175,8 @@ function viewHome(v) {
     h(".card.row", { style: "margin-bottom:14px;justify-content:space-between" },
       h("div", { style: "flex:1;min-width:150px" }, h("b", `Level ${x.lvl}`), h(".bar", { style: "margin:6px 0" }, h("i", { style: `width:${x.pct}%` })), h(".src", `${x.xp} XP. ${x.next - x.xp} more for level ${x.lvl + 1}`)),
       lastLec ? h("button.btn", { style: `--c:${lastLec.color}`, onclick: () => (location.hash = `#/l/${lastLec.id}/${lastp.tab || "notes"}`) }, "Continue: " + lastLec.title, ic("right", 18)) : ""),
-    h("h2", "Your classes"),
+    S.DEMO ? "" : joinCard(),
+    h("h2", { style: "margin-top:6px" }, "Your classes"),
     h(".grid", SUBJECTS.map((sj, i) => {
       const unlocked = S.hasAccess(sj.id), t = subjectStats(sj);
       return h("button.card.lec", { style: `animation-delay:${i * 60}ms`, onclick: () => (location.hash = `#/s/${sj.id}`) },

@@ -88,6 +88,13 @@ export async function forgot(email) {
 }
 export async function setNewPassword(pw) { return sb.auth.updateUser({ password: pw }); }
 export const hasAccess = (classId) => DEMO || !!profile?.is_admin || access.has(classId);
+// "Join a class": type any class code and unlock whichever class it belongs to
+export async function joinByCode(code, classIds) {
+  let { data: cid, error } = await sb.rpc("redeem_class_by_code", { code });
+  if (error) { for (const id of classIds) { const r = await sb.rpc("redeem_class_code", { cid: id, code }); if (r.data) { cid = id; break; } } }
+  if (cid) await loadProfile();
+  return cid || null;
+}
 export async function redeemClass(cid, code) {
   let { data: ok, error } = await sb.rpc("redeem_class_code", { cid, code });
   if (error && cid === "erth209") ({ data: ok, error } = await sb.rpc("redeem_code", { code })); // older database

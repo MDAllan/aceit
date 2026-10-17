@@ -200,3 +200,18 @@ begin
 end $$;
 
 grant execute on function public.redeem_class_code(text, text), public.admin_set_class_code(text, text), public.admin_get_codes() to authenticated;
+
+-- (patch 3) join a class by typing only its code
+create or replace function public.redeem_class_by_code(code text) returns text
+language plpgsql security definer set search_path = public as $$
+declare cid text; bl boolean;
+begin
+  if auth.uid() is null then return null; end if;
+  select blocked into bl from public.profiles where id = auth.uid();
+  if coalesce(bl, false) then return null; end if;
+  select c.class_id into cid from public.class_codes c where c.code = code limit 1;
+  if cid is null then return null; end if;
+  insert into public.class_access (user_id, class_id) values (auth.uid(), cid) on conflict do nothing;
+  return cid;
+end $$;
+grant execute on function public.redeem_class_by_code(text) to authenticated;
