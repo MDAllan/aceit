@@ -1,0 +1,1294 @@
+{
+ "id": "motion",
+ "title": "Motion & Newton's Laws",
+ "chapter": "Ch 4.1-4.2",
+ "icon": "🚀",
+ "color": "#7c3aed",
+ "slideFile": "Ch4.1_Mechanics.pdf; Ch4.2_NewtonsLaws.pdf",
+ "intro": "How do we describe motion, and what makes things move? Learn speed, velocity, acceleration, momentum, force, mass versus weight, why astronauts float, and Newton's three laws of motion, including the simple formulas you will use in calculations.",
+ "sections": [
+  {
+   "id": "newton",
+   "title": "Newton and one set of laws",
+   "slides": "Ch4.1_Mechanics slide 2; Ch4.2_NewtonsLaws slide 1",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/motion_2.jpg",
+      "slide": "2",
+      "alt": "Painted portrait of Sir Isaac Newton with long hair."
+     },
+     "title": "Newton joins Earth and the heavens",
+     "bullets": [
+      "Sir Isaac Newton (1642 to 1727) realized that the **same physical laws** that work on Earth also work in the heavens.",
+      "The word universe comes from a Latin phrase meaning \"turned into one\". That is exactly Newton's idea: one universe, one set of rules.",
+      "He found the **laws of motion** and the law of gravity, and did much more: experiments with light, the first reflecting telescope, and calculus."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/motion/newton_1.jpg",
+      "slide": "1",
+      "alt": "An old open page showing the title Philosophiae Naturalis Principia Mathematica."
+     },
+     "title": "Where the laws were published",
+     "bullets": [
+      "Newton published his laws of motion and gravity in 1687 in a work called the Principia (Philosophiae Naturalis Principia Mathematica).",
+      "He listed three laws that apply to all motion, from a ball in your hand to planets, stars and galaxies."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Before Newton, people (following Aristotle) believed the heavens obeyed rules totally different from Earth's. Newton saw an apple fall and realized the gravity pulling the apple is the same pull that holds the Moon in orbit. That one idea removed the wall between Earth and sky."
+    },
+    {
+     "type": "trick",
+     "text": "Universe = \"turned into one\". One universe, one rulebook."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 1 of the Ch4.1 deck shows a photo of a man on a bicycle; it is NOT Newton (the portrait on slide 2 is). The apple story (1666), the 1687 date and Aristotle are from the textbook (4.2), not from the slides."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.1_Mechanics slide 2",
+    "Ch4.2_NewtonsLaws slide 1 (Principia title page)",
+    "Textbook 4.2 (How did Newton change our view of the universe?), pp. 114-115"
+   ],
+   "images": [
+    {
+     "src": "img/motion/motion_2.jpg",
+     "slide": "2",
+     "alt": "Painted portrait of Sir Isaac Newton with long hair."
+    },
+    {
+     "src": "img/motion/newton_1.jpg",
+     "slide": "1",
+     "alt": "An old open page showing the title Philosophiae Naturalis Principia Mathematica."
+    }
+   ]
+  },
+  {
+   "id": "speedvel",
+   "title": "Speed and velocity",
+   "slides": "Ch4.1_Mechanics slide 3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/motion_3.jpg",
+      "slide": "3",
+      "alt": "A red car labelled speed 50 kph, and the same car with a yellow arrow east labelled velocity 50 kph due east."
+     },
+     "title": "Speed has no direction, velocity does",
+     "bullets": [
+      "**Speed** = how fast an object moves. speed = Δdistance / Δtime. Base unit: meters per second (m/s).",
+      "**Velocity** = speed with direction attached. The car is going \"50 kph\" (speed) or \"50 kph, due east\" (velocity).",
+      "Velocity examples: 10 m/s due west; 25 m/s at 30° east of north; or in numbers (20, 10) m/s. A velocity always says how fast AND which way."
+     ]
+    },
+    {
+     "title": "Reading the delta sign",
+     "bullets": [
+      "The triangle Δ just means \"change in\". So Δdistance is how far you went and Δtime is how long it took.",
+      "Example: 150 m in 30 s gives 150 / 30 = 5 m/s."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Direction matters in physics because two objects with the same speed but different directions are doing different things: one is heading toward you and one is heading away. Velocity keeps that information."
+    },
+    {
+     "type": "trick",
+     "text": "Velocity = Very specific (speed + the way you are going). Speed alone is just a number."
+    },
+    {
+     "type": "trap",
+     "text": "Exam wording: \"50 km/h\" is a speed, \"50 km/h due east\" is a velocity. The slide's yellow arrow on the car marks the direction. The slide gives units both in m/s and in kph; the base unit is m/s."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.1_Mechanics slide 3",
+    "Slide 3 figure: red car with arrow (no legend text beyond the red labels)"
+   ],
+   "images": [
+    {
+     "src": "img/motion/motion_3.jpg",
+     "slide": "3",
+     "alt": "A red car labelled speed 50 kph, and the same car with a yellow arrow east labelled velocity 50 kph due east."
+    }
+   ]
+  },
+  {
+   "id": "accel",
+   "title": "Acceleration, including turning",
+   "slides": "Ch4.1_Mechanics slides 4-5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/motion_4.jpg",
+      "slide": "4",
+      "alt": "Red cars at three moments with blue and yellow arrows showing speeding up east in the top row and slowing down in the bottom row."
+     },
+     "title": "Speeding up and slowing down",
+     "bullets": [
+      "**Acceleration** = how quickly an object changes its velocity. acceleration = Δvelocity / Δtime. Base unit: meters per second per second (m/s²).",
+      "Top row: the car starts at rest and its velocity arrow (yellow) gets longer each moment, so it speeds up with a **positive acceleration** (blue arrow points east).",
+      "Bottom row: the car moves east but its velocity arrow shrinks to nothing, so it slows down. Slowing down is a **negative acceleration**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/motion/motion_5.jpg",
+      "slide": "5",
+      "alt": "Red cars on a curved path, each with a yellow arrow along its path and a blue arrow pointing inward toward the center."
+     },
+     "title": "Turning is acceleration too",
+     "bullets": [
+      "Changing direction counts as acceleration, because velocity changes whenever its direction changes, even if the speed does not.",
+      "For an object moving in a circle, the acceleration arrow (blue) points toward the **center of the circle**. The car is always accelerating toward the center.",
+      "The yellow arrow along the path is the velocity. It keeps turning, which is why the blue arrow is needed."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Velocity is a speed plus a direction, so it changes when either one changes. A car that goes around a roundabout at a steady 50 km/h still has a changing velocity, so it is accelerating. You feel it as being pushed to the outside of the turn."
+    },
+    {
+     "type": "trick",
+     "text": "Think of the gas pedal, the brake and the steering wheel: all three are \"accelerators\" because each one changes your velocity."
+    },
+    {
+     "type": "trap",
+     "text": "Common wrong answer: \"constant speed means no acceleration\". Wrong for a circle. Practice Test 2 Q7 and the slide say turning is acceleration. Also, slide 4 gives no colour legend. Reading slide 4 together with slide 5 (where the blue arrow points to the circle's center), yellow = velocity and blue = acceleration. This is an inference from the pictures, not stated on the slide."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.1_Mechanics slides 4-5",
+    "Textbook 4.1 p. 111 (Figure 4.1)",
+    "Practice Test 2 Q7"
+   ],
+   "images": [
+    {
+     "src": "img/motion/motion_4.jpg",
+     "slide": "4",
+     "alt": "Red cars at three moments with blue and yellow arrows showing speeding up east in the top row and slowing down in the bottom row."
+    },
+    {
+     "src": "img/motion/motion_5.jpg",
+     "slide": "5",
+     "alt": "Red cars on a curved path, each with a yellow arrow along its path and a blue arrow pointing inward toward the center."
+    }
+   ]
+  },
+  {
+   "id": "gravity-acc",
+   "title": "Acceleration due to gravity",
+   "slides": "Ch4.1_Mechanics slide 6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/motion_6.jpg",
+      "slide": "6",
+      "alt": "A person dropping an object from a tall building, with speed labels of 0, 10 and 20 m/s at one, two and three marks along the fall."
+     },
+     "title": "Falling objects speed up steadily",
+     "bullets": [
+      "All falling objects accelerate at very nearly the **same rate** if we ignore air resistance.",
+      "On Earth, the speed of a falling object increases by **9.81 m/s** with each additional second: g = 9.81 m/s².",
+      "The picture shows speed rising by about 10 m/s every second (0, then about 10, then about 20 m/s). Gravity does not affect the sideways (horizontal) velocity."
+     ]
+    },
+    {
+     "title": "Why a feather seems slower",
+     "bullets": [
+      "A feather floats down while a rock plummets only because of **air resistance**. With no air (on the Moon), both fall at exactly the same rate.",
+      "Galileo showed this idea: gravity accelerates all objects by the same amount, regardless of mass."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A pull from gravity is a steady force. A steady force means a steady acceleration, so the speed grows by the same amount every second: about 9.81 m/s after 1 s, 19.62 m/s after 2 s, 29.43 m/s after 3 s."
+    },
+    {
+     "type": "trick",
+     "text": "\"Speed grows by about ten each second\" is a good quick rule: 10, 20, 30, 40 ... (exact value 9.81)."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 6 text says g = 9.81 m/s^2, but its own picture rounds this to about 10 m/s each second, and the textbook says 9.8 m/s^2 (about 10). Use 9.81 when a question asks for exact numbers and tells you g. At the top of a thrown ball's path the velocity is zero, but gravity still pulls, so the acceleration is still about 9.81 m/s^2 downward (Practice questions Q10)."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.1_Mechanics slide 6",
+    "Textbook 4.1 pp. 112 (Figure 4.2)",
+    "ASTR207 Practice questions Q10"
+   ],
+   "images": [
+    {
+     "src": "img/motion/motion_6.jpg",
+     "slide": "6",
+     "alt": "A person dropping an object from a tall building, with speed labels of 0, 10 and 20 m/s at one, two and three marks along the fall."
+    }
+   ]
+  },
+  {
+   "id": "mass-momentum",
+   "title": "Mass, inertia and momentum",
+   "slides": "Ch4.1_Mechanics slides 7-8",
+   "steps": [
+    {
+     "title": "Mass and inertia",
+     "bullets": [
+      "**Mass** (symbol m) = how much matter there is in an object.",
+      "**Inertia** = how hard it is to accelerate an object. It depends only on mass and is the same thing as mass. There is no separate formula for inertia."
+     ]
+    },
+    {
+     "title": "Momentum: mass times velocity",
+     "bullets": [
+      "**Momentum** = in everyday terms, how hard it is to stop a moving object. momentum = mass × velocity, or p = mv. Base unit: kg·m/s.",
+      "A stationary object has **no momentum**, because its velocity is zero.",
+      "Example: a 1200 kg car moving at 25 m/s has p = 1200 × 25 = 30,000 kg·m/s."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A loaded truck is much harder to stop than a bicycle going the same speed because its mass is much bigger. Momentum bundles both ideas: more mass or more velocity means more momentum and more effort to stop it."
+    },
+    {
+     "type": "trick",
+     "text": "Momentum = \"mass in motion\". Zero velocity means zero momentum, no matter how heavy."
+    },
+    {
+     "type": "trap",
+     "text": "Inertia is NOT a force and has no formula (slide 7 says so). Also, momentum uses velocity, so it points in a direction. The textbook's bug-versus-truck example: same velocity, but the 2-ton truck has far more momentum than the bug."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.1_Mechanics slides 7-8",
+    "Textbook 4.1 p. 112 (Momentum and Force)"
+   ],
+   "images": []
+  },
+  {
+   "id": "force",
+   "title": "Force and net force",
+   "slides": "Ch4.1_Mechanics slide 9",
+   "steps": [
+    {
+     "title": "A push or a pull",
+     "bullets": [
+      "**Force** = in everyday terms, a push or a pull. Net forces change an object's momentum, which generally makes the object (a mass) accelerate.",
+      "**Force = mass × acceleration**, written F = ma. Base unit: the **newton**, where 1 N = 1 kg·m/s²."
+     ]
+    },
+    {
+     "title": "Net force is the total",
+     "bullets": [
+      "The **net force** is all the individual forces added together. Only a net force that is not zero changes momentum.",
+      "A car at constant velocity still has forces on it (engine, air resistance, road friction), but they cancel, so the net force is zero."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Newton's unit follows from F = ma: 1 kg accelerating at 1 m/s² needs a force of 1 kg × 1 m/s² = 1 kg·m/s², which is called 1 newton. Example: 1500 kg × 2 m/s² = 3000 N."
+    },
+    {
+     "type": "trick",
+     "text": "F = ma triangle: cover the one you want. Force is on top, m and a sit below. Cover m to get m = F / a; cover a to get a = F / m. Example: 60 N on 12 kg gives a = 60 / 12 = 5 m/s²."
+    },
+    {
+     "type": "trap",
+     "text": "\"There is a force\" does not mean \"momentum changes\". Only the NET force matters (textbook 4.1: a driver pressing the gas exactly cancels friction, so velocity stays constant). Slide 9 uses \"Net forces change an object's momentum\"."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.1_Mechanics slide 9",
+    "Textbook 4.1 p. 112; Mathematical Insight 4.1 p. 116"
+   ],
+   "images": []
+  },
+  {
+   "id": "massweight",
+   "title": "Mass versus weight",
+   "slides": "Ch4.1_Mechanics slides 10-11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/motion_10.jpg",
+      "slide": "10",
+      "alt": "A red box containing the formula weight equals mass times acceleration of gravity, F equals m g."
+     },
+     "title": "Weight is a force",
+     "bullets": [
+      "**Mass** = amount of matter in an object. **Weight** = the force of gravity acting on an object.",
+      "weight = mass × acceleration of gravity, or **F = mg**. Weight is a force, so it is measured in newtons.",
+      "Example on Earth: 70 kg × 9.81 m/s² = 686.7 N."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/motion/motion_11.jpg",
+      "slide": "11",
+      "alt": "Four elevator drawings with a person on a scale: the scale reads normal, higher, lower and zero when the cable breaks."
+     },
+     "title": "Weight versus apparent weight",
+     "bullets": [
+      "**Apparent weight** = the reaction force you feel, resulting from your weight (what a bathroom scale reads).",
+      "Elevator at constant velocity: normal. Accelerating up: you weigh more. Accelerating down: you weigh less. Cable breaks (free-fall): you are weightless.",
+      "Your mass never changes in any of these cases; only the force the floor exerts on you changes."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The scale does not feel gravity directly. It measures how hard the floor pushes up on you. If the elevator accelerates upward, the floor must push harder, so the reading goes up. If you fall freely with the floor, it pushes with no force at all, so the reading is zero."
+    },
+    {
+     "type": "trick",
+     "text": "Mass = \"how much stuff\" and never changes. Weight = \"how hard gravity pulls\" and changes from planet to planet. Apparent weight = \"what the scale shows\"."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 11 says weight is the force of gravity and apparent weight is the reaction force felt. The textbook text calls the scale reading \"weight (or apparent weight)\" and mentions in a footnote that some texts split it into \"true weight\" (due only to gravity) and \"apparent weight\". They are saying the same thing. On the exam: moving at CONSTANT speed in an elevator, even downward, the scale reads your normal weight. Only acceleration changes it (Practice questions Q11, Practice Test 2 Q8)."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.1_Mechanics slides 10-11",
+    "Textbook 4.1 pp. 113-114 (Figure 4.4; footnote); Mathematical Insight 4.1 p. 116",
+    "ASTR207 Practice questions Q11; Practice Test 2 Q8"
+   ],
+   "images": [
+    {
+     "src": "img/motion/motion_10.jpg",
+     "slide": "10",
+     "alt": "A red box containing the formula weight equals mass times acceleration of gravity, F equals m g."
+    },
+    {
+     "src": "img/motion/motion_11.jpg",
+     "slide": "11",
+     "alt": "Four elevator drawings with a person on a scale: the scale reads normal, higher, lower and zero when the cable breaks."
+    }
+   ]
+  },
+  {
+   "id": "weightless",
+   "title": "Why astronauts are weightless",
+   "slides": "Ch4.1_Mechanics slides 12-14",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/motion_12.jpg",
+      "slide": "12",
+      "alt": "Earth with a tall tower and a curved path showing an object falling around the planet in orbit."
+     },
+     "title": "Falling around Earth",
+     "bullets": [
+      "There **is** gravity in space. Weightlessness is not an absence of gravity forces; it is an absence of feeling something pushing on you that opposes them.",
+      "The picture: the faster you run off the tower, the farther you go before landing. With a rocket giving enough speed, you could keep \"falling\" around Earth, which is an **orbit**.",
+      "Astronauts are in constant free-fall, so nothing pushes back on them and they feel (apparent-)weightless."
+     ]
+    },
+    {
+     "title": "Quick recap of everything so far",
+     "bullets": [
+      "Speed = Δdistance / Δtime. Speed and direction give velocity. Acceleration = Δvelocity / Δtime. Momentum = mass × velocity.",
+      "Net forces cause changes in momentum, which gives accelerations. Mass measures matter and weight is the force of gravity."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "If gravity vanished in space, the Moon and the space station would fly off in straight lines. They orbit because gravity keeps pulling them. They are weightless because they and everything in them fall together, so no floor or scale pushes up on anyone."
+    },
+    {
+     "type": "trick",
+     "text": "Orbit = \"throw yourself at the ground and miss\". You keep falling toward Earth but move sideways fast enough that the ground curves away."
+    },
+    {
+     "type": "trap",
+     "text": "Wrong answer to expect: \"astronauts are weightless because there is no gravity in space.\" The textbook says gravity at the space station's altitude (about 350 km) is only about 10% weaker than at the surface, and the speed needed to orbit there is about 28,000 km/h. Those two numbers come from the textbook, not the slides."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.1_Mechanics slide 12 (and recap slides 13-14)",
+    "Textbook 4.1 pp. 113-115 (Figure 4.5; Common Misconceptions: No Gravity in Space?)"
+   ],
+   "images": [
+    {
+     "src": "img/motion/motion_12.jpg",
+     "slide": "12",
+     "alt": "Earth with a tall tower and a curved path showing an object falling around the planet in orbit."
+    }
+   ]
+  },
+  {
+   "id": "law1",
+   "title": "Newton's first law",
+   "slides": "Ch4.2_NewtonsLaws slides 2 and 5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/newton_2.jpg",
+      "slide": "2",
+      "alt": "A space probe with a large dish coasting through space with the Milky Way behind it."
+     },
+     "title": "No net force, no change in motion",
+     "bullets": [
+      "**First law:** a body remains at rest, or in motion at a constant speed in a straight line, unless it is acted on by a **net force**.",
+      "The recap puts it as: objects move at a constant velocity if no net force is acting on them.",
+      "The space probe in the picture needs no fuel to keep going once launched, because nothing is slowing it down."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A rolling car stops on Earth because friction and air resistance are net forces slowing it. Remove them (in space) and the car would keep going forever. That is why spacecraft and astronomical objects need no fuel to keep moving."
+    },
+    {
+     "type": "trick",
+     "text": "Lazy law: things keep doing what they were doing (sitting still, or moving in a straight line at steady speed) until something pushes."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 2 says \"constant speed in a straight line\", slide 5 and the textbook say \"constant velocity\". These mean the same thing, because constant velocity includes both steady speed and unchanging direction. First-law exam trap: a gas-off spacecraft in deep space does NOT slow or stop (Practice questions Q13). Also, a smooth plane flight feels like standing still because there is no net force and no acceleration."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.2_NewtonsLaws slides 2 and 5",
+    "Textbook 4.2 pp. 115-116",
+    "ASTR207 Practice questions Q13"
+   ],
+   "images": [
+    {
+     "src": "img/motion/newton_2.jpg",
+     "slide": "2",
+     "alt": "A space probe with a large dish coasting through space with the Milky Way behind it."
+    }
+   ]
+  },
+  {
+   "id": "law2",
+   "title": "Newton's second law",
+   "slides": "Ch4.2_NewtonsLaws slides 3 and 5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/newton_3.jpg",
+      "slide": "3",
+      "alt": "A baseball player in a gray uniform about to throw a ball."
+     },
+     "title": "Force makes things accelerate",
+     "bullets": [
+      "**Second law**, two ways to say it: Force = mass × acceleration, or Force = **rate of change in momentum**.",
+      "The same push gives a small mass a big acceleration and a large mass a small acceleration. A pitcher's arm accelerates a baseball more than it accelerates a heavy shot-put ball.",
+      "Rate of change in momentum means Δmomentum / Δtime: change momentum faster and the force is bigger."
+     ]
+    },
+    {
+     "title": "Turning needs a force too",
+     "bullets": [
+      "Going around a curve means accelerating inward, so a force must point inward: tire friction on a car, a string on a swinging ball, gravity on a planet.",
+      "Same speed in the same circle gives the same acceleration; the heavier vehicle needs the bigger force (F = ma)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "F = ma is a recipe: a is what you get when you divide the net force by the mass. Double the mass and the acceleration is cut in half; double the force and the acceleration doubles. Example: a momentum change of 12 kg·m/s in 0.04 s needs F = 12 / 0.04 = 300 N."
+    },
+    {
+     "type": "trick",
+     "text": "Heavy things are lazy: the bigger the mass, the smaller the acceleration for the same push."
+    },
+    {
+     "type": "trap",
+     "text": "The two forms of the second law are the same law. Use F = ma when mass is steady and F = Δp/Δt when momentum changes. The textbook uses the baseball and the shot put. Practice Test 2 Q7 (car vs truck on a roundabout): same speed means same acceleration, so the truck has the bigger FORCE, not the bigger acceleration."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.2_NewtonsLaws slides 3 and 5",
+    "Textbook 4.2 pp. 116-117 (Newton's Second Law; Figure 4.7)",
+    "ASTR207 Practice questions Q12; Practice Test 2 Q7"
+   ],
+   "images": [
+    {
+     "src": "img/motion/newton_3.jpg",
+     "slide": "3",
+     "alt": "A baseball player in a gray uniform about to throw a ball."
+    }
+   ]
+  },
+  {
+   "id": "law3",
+   "title": "Newton's third law",
+   "slides": "Ch4.2_NewtonsLaws slides 4 and 5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/motion/newton_4.jpg",
+      "slide": "4",
+      "alt": "A space shuttle lifting off with bright flame and a cloud of smoke at the base."
+     },
+     "title": "Every push has a push back",
+     "bullets": [
+      "**Third law:** for every force there is always an **equal and opposite reaction force**.",
+      "A rocket engine drives hot gas out the back. The gas pushes back on the rocket with an equal and opposite force, and that force moves the rocket forward.",
+      "Standing still: your weight pushes down on the ground, and the ground pushes up on you with an equal force."
+     ]
+    },
+    {
+     "title": "Equal forces, unequal accelerations",
+     "bullets": [
+      "You pull on Earth with exactly the same force that Earth pulls on you, but opposite in direction.",
+      "Your mass is tiny compared to Earth's, so the same force gives you a large acceleration and Earth an unnoticeable one. That is why you fall toward Earth and Earth does not visibly rise to meet you."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The rocket does not push against the ground. It pushes on its own exhaust gas, and the gas pushes back. That is why a rocket works even in empty space where there is nothing to push against."
+    },
+    {
+     "type": "trick",
+     "text": "Forces come in pairs, like handshakes: you cannot shake hands with one person pushing only."
+    },
+    {
+     "type": "trap",
+     "text": "Practice Test 2 Q10: Newton's third law applies in ALL cases (very different masses, forces at a distance such as gravity, microscopic objects, many objects). \"Equal forces\" does not mean \"equal accelerations\" (F = ma gives different accelerations for different masses). Common misconception from the textbook: a rocket does NOT push off the ground."
+    }
+   ],
+   "sourceNotes": [
+    "Ch4.2_NewtonsLaws slides 4 and 5",
+    "Textbook 4.2 p. 117 (Newton's Third Law; Common Misconceptions: What Makes a Rocket Launch?)",
+    "Practice Test 2 Q10 and its explanation"
+   ],
+   "images": [
+    {
+     "src": "img/motion/newton_4.jpg",
+     "slide": "4",
+     "alt": "A space shuttle lifting off with bright flame and a cloud of smoke at the base."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Motion words at a glance",
+  "head": [
+   "Quantity",
+   "Meaning",
+   "Formula",
+   "Units"
+  ],
+  "rows": [
+   [
+    "Speed",
+    "How fast it moves",
+    "Δdistance / Δtime",
+    "m/s"
+   ],
+   [
+    "Velocity",
+    "Speed plus direction",
+    "same size as speed, with a direction",
+    "m/s"
+   ],
+   [
+    "Acceleration",
+    "How fast velocity changes",
+    "Δvelocity / Δtime",
+    "m/s²"
+   ],
+   [
+    "Momentum",
+    "How hard it is to stop",
+    "p = m × v",
+    "kg·m/s"
+   ],
+   [
+    "Force",
+    "A push or a pull",
+    "F = m × a",
+    "newton (N) = kg·m/s²"
+   ],
+   [
+    "Weight",
+    "Force of gravity on an object",
+    "F = m × g (g = 9.81 m/s²)",
+    "newtons (N)"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "mo-c1",
+   "front": "Speed",
+   "back": "How fast an object moves: speed = Δdistance / Δtime. Base unit meters per second (m/s).",
+   "short": "Distance divided by time, in m/s",
+   "src": "Ch4.1 slide 3"
+  },
+  {
+   "id": "mo-c2",
+   "front": "Velocity",
+   "back": "Speed with direction attached, for example 10 m/s due west.",
+   "short": "Speed plus direction",
+   "src": "Ch4.1 slide 3"
+  },
+  {
+   "id": "mo-c3",
+   "front": "Which is a velocity: 50 km/h, or 50 km/h due east?",
+   "back": "50 km/h due east, because it has a direction attached. 50 km/h alone is only a speed.",
+   "short": "The one that names a direction",
+   "src": "Ch4.1 slide 3"
+  },
+  {
+   "id": "mo-c4",
+   "front": "Acceleration",
+   "back": "How quickly an object changes its velocity: acceleration = Δvelocity / Δtime.",
+   "short": "How quickly velocity changes",
+   "src": "Ch4.1 slide 4"
+  },
+  {
+   "id": "mo-c5",
+   "front": "Base unit of acceleration",
+   "back": "Meters per second per second, written m/s².",
+   "short": "Meters per second per second",
+   "src": "Ch4.1 slide 4"
+  },
+  {
+   "id": "mo-c6",
+   "front": "Negative acceleration",
+   "back": "A velocity that is decreasing, for example a car slowing down while moving east.",
+   "short": "Slowing down along its motion",
+   "src": "Ch4.1 slide 4"
+  },
+  {
+   "id": "mo-c7",
+   "front": "Does turning count as acceleration?",
+   "back": "Yes. Changing direction changes velocity, even if the speed stays the same.",
+   "short": "Yes, direction change changes velocity",
+   "src": "Ch4.1 slide 5"
+  },
+  {
+   "id": "mo-c8",
+   "front": "Direction of acceleration in circular motion",
+   "back": "Toward the center of the circle. The object is continuously accelerating toward the center.",
+   "short": "Points toward the circle's center",
+   "src": "Ch4.1 slide 5"
+  },
+  {
+   "id": "mo-c9",
+   "front": "Acceleration due to gravity (g)",
+   "back": "On Earth, falling speed increases by 9.81 m/s each second (g = 9.81 m/s²). Often rounded to 9.8 or about 10 m/s².",
+   "short": "Falling speed gains 9.81 m/s each second",
+   "src": "Ch4.1 slide 6; Textbook 4.1"
+  },
+  {
+   "id": "mo-c10",
+   "front": "Why do a feather and a rock fall differently on Earth?",
+   "back": "Air resistance. Without air, all falling objects accelerate at very nearly the same rate.",
+   "short": "Air resistance, not different gravity",
+   "src": "Ch4.1 slide 6; Textbook 4.1"
+  },
+  {
+   "id": "mo-c11",
+   "front": "Mass",
+   "back": "How much matter there is in an object. Symbol m.",
+   "short": "Amount of matter in an object",
+   "src": "Ch4.1 slide 7"
+  },
+  {
+   "id": "mo-c12",
+   "front": "Inertia",
+   "back": "How difficult it is to accelerate an object. Depends only on mass and is the same as mass. It has no formula.",
+   "short": "Resistance to acceleration, same as mass",
+   "src": "Ch4.1 slide 7"
+  },
+  {
+   "id": "mo-c13",
+   "front": "Momentum",
+   "back": "p = mass × velocity. Base unit kg·m/s.",
+   "short": "Mass times velocity",
+   "src": "Ch4.1 slide 8"
+  },
+  {
+   "id": "mo-c14",
+   "front": "Momentum of a stationary object",
+   "back": "Zero, because its velocity is zero.",
+   "short": "Zero when it is not moving",
+   "src": "Ch4.1 slide 8"
+  },
+  {
+   "id": "mo-c15",
+   "front": "Force",
+   "back": "In everyday terms, a push or a pull. Net forces change an object's momentum, generally making the object accelerate.",
+   "short": "A push or a pull",
+   "src": "Ch4.1 slide 9"
+  },
+  {
+   "id": "mo-c16",
+   "front": "Net force",
+   "back": "The overall force: all the individual forces on an object added together. Momentum changes only when it is not zero.",
+   "short": "Total of all forces on an object",
+   "src": "Ch4.1 slide 9; Textbook 4.1"
+  },
+  {
+   "id": "mo-c17",
+   "front": "Formula for force",
+   "back": "Force = mass × acceleration, F = ma.",
+   "short": "Mass times acceleration",
+   "src": "Ch4.1 slide 9"
+  },
+  {
+   "id": "mo-c18",
+   "front": "The newton (N)",
+   "back": "The unit of force. 1 N = 1 kg·m/s², the force that gives 1 kg an acceleration of 1 m/s².",
+   "short": "One kg·m/s² equals one newton",
+   "src": "Ch4.1 slide 9; Textbook MI 4.1"
+  },
+  {
+   "id": "mo-c19",
+   "front": "Mass versus weight",
+   "back": "Mass is the amount of matter in an object. Weight is the force of gravity acting on it.",
+   "short": "Matter versus force of gravity",
+   "src": "Ch4.1 slide 10"
+  },
+  {
+   "id": "mo-c20",
+   "front": "Weight formula",
+   "back": "weight = mass × acceleration of gravity, F = mg. Example: 70 kg × 9.81 m/s² = 686.7 N.",
+   "short": "Weight equals m times g",
+   "src": "Ch4.1 slide 10"
+  },
+  {
+   "id": "mo-c21",
+   "front": "Mass of an astronaut on the Moon",
+   "back": "The same as on Earth. Weight is smaller because the Moon's gravity is weaker.",
+   "short": "Mass stays, weight shrinks",
+   "src": "Textbook 4.1"
+  },
+  {
+   "id": "mo-c22",
+   "front": "Apparent weight",
+   "back": "The reaction force felt by an object resulting from its weight, such as the force a scale shows.",
+   "short": "Force you feel pushing back on you",
+   "src": "Ch4.1 slide 11"
+  },
+  {
+   "id": "mo-c23",
+   "front": "Scale reading in an elevator",
+   "back": "Normal at constant velocity or at rest, more when accelerating up, less when accelerating down, zero in free-fall.",
+   "short": "Changes only when the elevator accelerates",
+   "src": "Ch4.1 slide 11; Textbook Fig. 4.4"
+  },
+  {
+   "id": "mo-c24",
+   "front": "Apparent weightless in free-fall",
+   "back": "In free-fall nothing pushes up on you, so your apparent weight is zero.",
+   "short": "Falling freely feels weightless",
+   "src": "Ch4.1 slide 11"
+  },
+  {
+   "id": "mo-c25",
+   "front": "Why astronauts feel weightless",
+   "back": "They are in constant free-fall around Earth, so nothing pushes back against gravity. Gravity is still there.",
+   "short": "Constant free-fall, not zero gravity",
+   "src": "Ch4.1 slide 12"
+  },
+  {
+   "id": "mo-c26",
+   "front": "\"There is no gravity in space\"",
+   "back": "Wrong. Gravity keeps the Moon and the space station in orbit; at the station's altitude it is only about 10% weaker than at Earth's surface.",
+   "short": "Gravity acts in space, nearly as strong",
+   "src": "Ch4.1 slide 12; Textbook 4.1"
+  },
+  {
+   "id": "mo-c27",
+   "front": "An orbit as falling",
+   "back": "An orbiting object keeps falling toward Earth while moving sideways fast enough to keep missing it (about 28,000 km/h at the station's altitude).",
+   "short": "Falling around Earth, always missing",
+   "src": "Textbook 4.1 Fig. 4.5"
+  },
+  {
+   "id": "mo-c28",
+   "front": "Newton's first law",
+   "back": "A body stays at rest, or moves at constant speed in a straight line, unless acted on by a net force.",
+   "short": "No net force means constant velocity",
+   "src": "Ch4.2 slides 2, 5"
+  },
+  {
+   "id": "mo-c29",
+   "front": "First law in space",
+   "back": "A spacecraft with its engines off keeps moving in a straight line at constant speed, so it needs no fuel to keep going.",
+   "short": "Spacecraft keeps coasting without fuel",
+   "src": "Ch4.2 slide 2; Textbook 4.2"
+  },
+  {
+   "id": "mo-c30",
+   "front": "Newton's second law",
+   "back": "Force = mass × acceleration, or equivalently force = rate of change in momentum.",
+   "short": "F = ma, or rate of change of momentum",
+   "src": "Ch4.2 slide 3"
+  },
+  {
+   "id": "mo-c31",
+   "front": "Same force on a big mass and a small mass",
+   "back": "The smaller mass accelerates more. For example, the same force from your arm gives a baseball a larger acceleration than a shot.",
+   "short": "Heavier object accelerates less",
+   "src": "Ch4.2 slide 3; Textbook 4.2"
+  },
+  {
+   "id": "mo-c32",
+   "front": "Newton's third law",
+   "back": "For every force there is always an equal and opposite reaction force.",
+   "short": "Every force has an equal opposite partner",
+   "src": "Ch4.2 slide 4"
+  },
+  {
+   "id": "mo-c33",
+   "front": "How does a rocket accelerate?",
+   "back": "Its engine pushes hot gas out the back; the gas pushes the rocket forward with an equal and opposite force. It does not push off the ground.",
+   "short": "Pushes on exhaust gas, not the ground",
+   "src": "Ch4.2 slide 4; Textbook 4.2"
+  },
+  {
+   "id": "mo-c34",
+   "front": "Newton's big idea",
+   "back": "The same physical laws that operate on Earth also operate in the heavens.",
+   "short": "Same laws on Earth and in the heavens",
+   "src": "Ch4.1 slide 2"
+  },
+  {
+   "id": "mo-c35",
+   "front": "Newton's dates and the Principia",
+   "back": "Isaac Newton lived 1642 to 1727 and published his laws of motion and gravity in the Principia in 1687.",
+   "short": "Lived 1642 to 1727, Principia in 1687",
+   "src": "Ch4.1 slide 2; Textbook 4.2"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mo-1",
+   "q": "A cyclist covers 150 m in 30 s at a steady rate. What is her speed?",
+   "options": [
+    "0.2 m/s",
+    "5 m/s",
+    "20 m/s",
+    "120 m/s",
+    "4500 m/s"
+   ],
+   "answer": 1,
+   "why": "speed = Δdistance / Δtime = 150 m / 30 s = 5 m/s.",
+   "source": "Ch4.1 slide 3"
+  },
+  {
+   "id": "mo-2",
+   "q": "Which of the following is a VELOCITY?",
+   "options": [
+    "50 km/h",
+    "25 m/s",
+    "10 m/s due west",
+    "9.81 m/s²",
+    "30 m"
+   ],
+   "answer": 2,
+   "why": "Velocity is speed with a direction attached. Only \"10 m/s due west\" names a direction; \"50 km/h\" and \"25 m/s\" are only speeds.",
+   "source": "Ch4.1 slide 3"
+  },
+  {
+   "id": "mo-3",
+   "q": "A car starts from rest and reaches 20 m/s in 4 s. What is its average acceleration?",
+   "options": [
+    "80 m/s²",
+    "24 m/s²",
+    "16 m/s²",
+    "5 m/s²",
+    "0.2 m/s²"
+   ],
+   "answer": 3,
+   "why": "acceleration = Δvelocity / Δtime = (20 - 0) m/s / 4 s = 5 m/s².",
+   "source": "Ch4.1 slide 4"
+  },
+  {
+   "id": "mo-4",
+   "q": "A car slows from 30 m/s to 10 m/s in 4 s. What is its acceleration?",
+   "options": [
+    "-5 m/s²",
+    "+5 m/s²",
+    "-20 m/s²",
+    "-80 m/s²",
+    "-10 m/s²"
+   ],
+   "answer": 0,
+   "why": "acceleration = (10 - 30) m/s / 4 s = -5 m/s². The negative sign shows the velocity is decreasing (slowing down).",
+   "source": "Ch4.1 slide 4"
+  },
+  {
+   "id": "mo-5",
+   "q": "Which of the following are examples of acceleration?\nI. A car speeding up on a straight road.\nII. A car slowing down on a straight road.\nIII. A car driving around a circular track at constant speed.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "II and III only",
+    "I, II and III"
+   ],
+   "answer": 4,
+   "why": "Acceleration is any change in velocity: speeding up, slowing down (negative acceleration) and changing direction. The car on the circular track keeps changing direction, so it accelerates even at constant speed.",
+   "source": "Ch4.1 slides 4-5; Textbook 4.1 (Fig. 4.1)"
+  },
+  {
+   "id": "mo-6",
+   "q": "A car moves around a circular track at constant speed. In which direction does its acceleration point?",
+   "options": [
+    "In the direction the car is moving",
+    "Toward the center of the circle",
+    "Opposite to the direction the car is moving",
+    "Away from the center of the circle",
+    "It has no acceleration because the speed is constant"
+   ],
+   "answer": 1,
+   "why": "The velocity keeps changing direction, so there is an acceleration. It points toward the center of the circle.",
+   "source": "Ch4.1 slide 5"
+  },
+  {
+   "id": "mo-7",
+   "q": "A small car (mass m) and a large truck (mass M) drive around the same roundabout at the same speed. Which statement is TRUE?",
+   "options": [
+    "The acceleration of the car is greater than that of the truck, since it has less mass.",
+    "The acceleration of the truck is greater than that of the car, since it has more mass.",
+    "The force on the car is greater than the force on the truck, since it has less mass.",
+    "The force on the truck is greater than the force on the car, since it has more mass.",
+    "Neither vehicle accelerates, since both move at constant speed."
+   ],
+   "answer": 3,
+   "why": "Same speed in the same circle means the same acceleration (turning is acceleration). F = ma then gives a bigger force for the bigger mass.",
+   "source": "Practice Test 2 Q7 (answer D in explained file); Ch4.1 slides 5, 9; Ch4.2 slide 3"
+  },
+  {
+   "id": "mo-8",
+   "q": "Ignoring air resistance and using g = 9.81 m/s², how fast is a rock falling 3 s after it is dropped from rest?",
+   "options": [
+    "9.81 m/s",
+    "19.62 m/s",
+    "29.43 m/s",
+    "39.24 m/s",
+    "88.29 m/s"
+   ],
+   "answer": 2,
+   "why": "Its speed increases by 9.81 m/s each second, so after 3 s it is 3 × 9.81 = 29.43 m/s.",
+   "source": "Ch4.1 slide 6"
+  },
+  {
+   "id": "mo-9",
+   "q": "A ball is thrown straight up. At the very top of its path, which statement is TRUE?",
+   "options": [
+    "Its velocity is zero, but it is still accelerating downward at about 9.81 m/s².",
+    "Its velocity and its acceleration are both zero.",
+    "Its velocity is at its maximum.",
+    "Its acceleration points upward.",
+    "No forces act on it at that instant."
+   ],
+   "answer": 0,
+   "why": "Gravity keeps pulling the ball with the same force the whole time, so the acceleration is about 9.81 m/s² downward even when the velocity is momentarily zero.",
+   "source": "ASTR207 Practice questions Q10; Ch4.1 slide 6"
+  },
+  {
+   "id": "mo-10",
+   "q": "A feather falls more slowly than a rock on Earth, but on the Moon a hammer and a feather dropped together land at the same moment. Why?",
+   "options": [
+    "The Moon's gravity is weaker for lighter objects.",
+    "Heavier objects always fall faster because gravity pulls harder on them.",
+    "The Moon has no gravity, so nothing falls faster than anything else.",
+    "Gravity accelerates objects in proportion to their mass on Earth only.",
+    "Air resistance slows the feather on Earth; the Moon has no air, so all objects fall at the same rate."
+   ],
+   "answer": 4,
+   "why": "Gravity accelerates all objects at the same rate. Air resistance is what makes a feather seem slower on Earth.",
+   "source": "Ch4.1 slide 6; Textbook 4.1 p. 112"
+  },
+  {
+   "id": "mo-11",
+   "q": "What is the momentum of a 1200 kg car moving at 25 m/s?",
+   "options": [
+    "48 kg·m/s",
+    "1,225 kg·m/s",
+    "30,000 kg·m/s",
+    "300,000 kg·m/s",
+    "3,000 kg·m/s"
+   ],
+   "answer": 2,
+   "why": "momentum = mass × velocity = 1200 kg × 25 m/s = 30,000 kg·m/s.",
+   "source": "Ch4.1 slide 8"
+  },
+  {
+   "id": "mo-12",
+   "q": "Which of the following has the GREATEST momentum?",
+   "options": [
+    "A 1 kg cart moving at 10 m/s",
+    "A 2 kg cart moving at 6 m/s",
+    "A 5 kg cart moving at 1 m/s",
+    "A 0.5 kg cart moving at 20 m/s",
+    "A 10 kg cart at rest"
+   ],
+   "answer": 1,
+   "why": "p = mv: 1×10 = 10, 2×6 = 12, 5×1 = 5, 0.5×20 = 10, and 10×0 = 0 kg·m/s. The 2 kg cart at 6 m/s has the most (12 kg·m/s).",
+   "source": "Ch4.1 slide 8"
+  },
+  {
+   "id": "mo-13",
+   "q": "What net force is needed to give a 1500 kg car an acceleration of 2 m/s²?",
+   "options": [
+    "750 N",
+    "1,502 N",
+    "300 N",
+    "3,000 N",
+    "1,498 N"
+   ],
+   "answer": 3,
+   "why": "F = ma = 1500 kg × 2 m/s² = 3000 kg·m/s² = 3,000 N.",
+   "source": "Ch4.1 slide 9; Ch4.2 slide 3"
+  },
+  {
+   "id": "mo-14",
+   "q": "A net force of 60 N pushes a 12 kg object. What is its acceleration?",
+   "options": [
+    "720 m/s²",
+    "72 m/s²",
+    "5 m/s²",
+    "0.2 m/s²",
+    "48 m/s²"
+   ],
+   "answer": 2,
+   "why": "a = F / m = 60 N / 12 kg = 5 m/s².",
+   "source": "Ch4.1 slide 9; Ch4.2 slide 3"
+  },
+  {
+   "id": "mo-15",
+   "q": "The same net force is applied to a 2 kg cart and a 4 kg cart. Which statement is TRUE?",
+   "options": [
+    "The 2 kg cart accelerates twice as much as the 4 kg cart.",
+    "Both carts have the same acceleration because the force is the same.",
+    "The 4 kg cart accelerates twice as much as the 2 kg cart.",
+    "The 2 kg cart accelerates four times as much as the 4 kg cart.",
+    "Neither cart accelerates unless the force is larger than its weight."
+   ],
+   "answer": 0,
+   "why": "a = F / m. The same force on half the mass gives double the acceleration.",
+   "source": "ASTR207 Practice questions Q12; Ch4.2 slide 3"
+  },
+  {
+   "id": "mo-16",
+   "q": "What is the weight (force of gravity) on Earth of a 70 kg student? Use g = 9.81 m/s².",
+   "options": [
+    "70 N",
+    "686.7 N",
+    "7.14 N",
+    "6,867 N",
+    "79.81 N"
+   ],
+   "answer": 1,
+   "why": "weight = mg = 70 kg × 9.81 m/s² = 686.7 N.",
+   "source": "Ch4.1 slide 10"
+  },
+  {
+   "id": "mo-17",
+   "q": "An astronaut travels from Earth to the Moon, where gravity is weaker. Which statement is TRUE?",
+   "options": [
+    "Her mass and weight both stay the same.",
+    "Her mass is smaller, but her weight stays the same.",
+    "Her mass and weight are both smaller.",
+    "Her mass is smaller and her weight is larger.",
+    "Her mass stays the same, but her weight is smaller."
+   ],
+   "answer": 4,
+   "why": "Mass is the amount of matter and does not depend on location. Weight is the force of gravity, which is weaker on the Moon.",
+   "source": "Ch4.1 slide 10; Textbook 4.1 p. 113"
+  },
+  {
+   "id": "mo-18",
+   "q": "You stand on a bathroom scale in an elevator that moves downward at a constant speed. What does the scale read?",
+   "options": [
+    "Your normal weight",
+    "More than your normal weight",
+    "Less than your normal weight",
+    "Zero",
+    "It depends on how fast the elevator is moving"
+   ],
+   "answer": 0,
+   "why": "The scale differs from your normal weight only when the elevator is accelerating. At constant velocity there is no net force on you.",
+   "source": "ASTR207 Practice questions Q11; Ch4.1 slide 11; Textbook Fig. 4.4"
+  },
+  {
+   "id": "mo-19",
+   "q": "The rope holding an elevator car is pulled upward. Which statement is TRUE?",
+   "options": [
+    "The elevator accelerates upward whatever the pull, and the occupants' true weight increases.",
+    "The elevator accelerates upward only if the pull is greater than the weight; the occupants' true weight increases.",
+    "The elevator accelerates upward whatever the pull, and the occupants' apparent weight does not change.",
+    "The elevator accelerates upward only if the upward pull is greater than the weight; the occupants' true weight does not change, only their apparent weight.",
+    "The elevator accelerates upward only if the pull is greater than the weight; both true and apparent weight increase."
+   ],
+   "answer": 3,
+   "why": "A net upward force is needed to accelerate (second law). True weight is the force of gravity (mg) and does not change; the scale reading (apparent weight) rises.",
+   "source": "Practice Test 2 Q8 (answer C in explained file); Ch4.1 slides 10-11"
+  },
+  {
+   "id": "mo-20",
+   "q": "Why do astronauts in the International Space Station float?",
+   "options": [
+    "There is no gravity at the altitude of the station.",
+    "They are too far from Earth for gravity to act on them.",
+    "They are in constant free-fall around Earth, so nothing pushes back on them to oppose gravity.",
+    "Gravity is cancelled by the station's engines.",
+    "Their mass is zero in orbit."
+   ],
+   "answer": 2,
+   "why": "Gravity is still strong in orbit. Weightlessness means no reaction force pushing on you, which is what happens in free-fall.",
+   "source": "Ch4.1 slide 12; Textbook 4.1 pp. 113-115"
+  },
+  {
+   "id": "mo-21",
+   "q": "Which of the following statements is INCORRECT?",
+   "options": [
+    "Gravity keeps the Moon in orbit around Earth.",
+    "There is no gravity in space, which is why astronauts float.",
+    "An orbiting astronaut is in constant free-fall.",
+    "Apparent weight can be zero while the force of gravity is still acting.",
+    "Objects in space remain affected by gravity."
+   ],
+   "answer": 1,
+   "why": "Gravity acts everywhere in space. Astronauts float because they are in free-fall, not because gravity is absent.",
+   "source": "Ch4.1 slides 12-14; Textbook 4.1 (Common Misconceptions)"
+  },
+  {
+   "id": "mo-22",
+   "q": "A spacecraft in deep space, far from any star or planet, shuts off its engines. What happens?",
+   "options": [
+    "It gradually slows down and stops.",
+    "It stops immediately.",
+    "It speeds up because there is no air resistance.",
+    "It starts to move in a circle.",
+    "It keeps moving in a straight line at constant speed."
+   ],
+   "answer": 4,
+   "why": "With no net force, Newton's first law says it keeps its velocity: straight line, constant speed.",
+   "source": "ASTR207 Practice questions Q13; Ch4.2 slide 2"
+  },
+  {
+   "id": "mo-23",
+   "q": "In which of the following situations is Newton's third law NOT applicable?",
+   "options": [
+    "None of these; it applies in all cases.",
+    "When one object is much more massive than the other.",
+    "When the force is gravity and the objects are physically separated.",
+    "When the objects are microscopic.",
+    "When more than two objects are involved."
+   ],
+   "answer": 0,
+   "why": "Every force has an equal and opposite reaction force, whatever the masses, distances or number of objects. A big mass difference only changes the accelerations, not the forces.",
+   "source": "Practice Test 2 Q10 (answer E in explained file); Ch4.2 slide 4"
+  },
+  {
+   "id": "mo-24",
+   "q": "When you jump off a chair, you and Earth pull on each other with equal and opposite forces, yet you fall toward Earth and Earth does not noticeably move toward you. Why?",
+   "options": [
+    "Earth pulls on you with a bigger force than you pull on it.",
+    "The third law does not apply to gravity.",
+    "Gravity pulls only on small objects.",
+    "Earth's mass is so large that the same force gives it an acceleration too small to notice.",
+    "Earth has no inertia."
+   ],
+   "answer": 3,
+   "why": "The forces are equal, but a = F / m. A huge mass gives an extremely tiny acceleration.",
+   "source": "Ch4.2 slides 3-4; Textbook 4.2 p. 117"
+  },
+  {
+   "id": "mo-25",
+   "q": "Why can a rocket accelerate in empty space, where there is nothing to push against?",
+   "options": [
+    "The rocket pushes off the ground just before it leaves.",
+    "The exhaust gas pushes against the air behind the rocket.",
+    "Its engine pushes hot gas backward, and the gas pushes the rocket forward with an equal and opposite force.",
+    "Newton's third law does not apply in space.",
+    "A rocket needs no force to accelerate in space."
+   ],
+   "answer": 2,
+   "why": "The rocket and its exhaust push on each other (third law). No ground or air is needed.",
+   "source": "Ch4.2 slide 4; Textbook 4.2 (What Makes a Rocket Launch?)"
+  },
+  {
+   "id": "mo-26",
+   "q": "A ball's momentum changes by 12 kg·m/s in 0.04 s. What average force acts on it?",
+   "options": [
+    "0.48 N",
+    "300 N",
+    "12.04 N",
+    "3 N",
+    "30 N"
+   ],
+   "answer": 1,
+   "why": "force = rate of change in momentum = 12 kg·m/s / 0.04 s = 300 kg·m/s² = 300 N.",
+   "source": "Ch4.2 slide 3"
+  },
+  {
+   "id": "mo-27",
+   "q": "A pitcher's arm applies the same force to a baseball and to a heavier shot-put ball. Which statement is TRUE?",
+   "options": [
+    "The baseball gets the larger acceleration.",
+    "The heavier ball gets the larger acceleration.",
+    "Both get the same acceleration because the force is the same.",
+    "Neither accelerates because the forces are balanced.",
+    "The heavier ball gets the larger force."
+   ],
+   "answer": 0,
+   "why": "F = ma means a = F / m, so for the same force the smaller mass accelerates more.",
+   "source": "Ch4.2 slide 3; Textbook 4.2 p. 116"
+  },
+  {
+   "id": "mo-28",
+   "q": "Which of these is equal to one newton?",
+   "options": [
+    "1 kg·m/s",
+    "1 kg·m²/s",
+    "1 m/s²",
+    "1 kg/(m·s²)",
+    "1 kg·m/s²"
+   ],
+   "answer": 4,
+   "why": "From F = ma, force has units of mass × acceleration = kg × m/s², and 1 N = 1 kg·m/s². (kg·m/s is the unit of momentum.)",
+   "source": "Ch4.1 slides 8-9"
+  }
+ ],
+ "games": [
+  "match"
+ ]
+}

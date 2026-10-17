@@ -1,0 +1,1283 @@
+{
+ "id": "light",
+ "title": "Light & the Spectrum",
+ "chapter": "Ch 5.1-5.2",
+ "icon": "💡",
+ "color": "#7c3aed",
+ "slideFile": "Ch5.1_LightInEverydayLife.pdf; Ch5.2_PropertiesOfLight.pdf",
+ "intro": "Light is energy carried by electric and magnetic waves, and also by tiny particles called photons. Learn how light meets matter, how wavelength and frequency are linked by c = λf, how photon energy depends on frequency, and how the electromagnetic spectrum runs from gamma rays to radio waves.",
+ "sections": [
+  {
+   "id": "energy",
+   "title": "Light carries energy",
+   "slides": "Ch5.1: 2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light51_2.jpg",
+      "slide": "2",
+      "alt": "The Sun shining brightly in a blue sky with clouds and trees around it."
+     },
+     "title": "Sunlight is energy on the move",
+     "bullets": [
+      "Light has energy, called **radiative energy**. You feel it when sunlight warms your skin: the skin absorbs the light and its molecules move faster.",
+      "We care about how fast light delivers energy. That rate is **power**, measured in **watts** (W), and 1 W = 1 joule per second (1 J/s).",
+      "The Sun's power output is **3.8 x 10^26 W**. A 100 W light bulb uses 100 joules of energy every second it is on."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why use watts instead of joules? A joule is an amount of energy, like a bucket of water. A watt is how fast the bucket is being poured. We cannot hold light in our hands, so the flow rate is the useful number."
+    },
+    {
+     "type": "trick",
+     "text": "Watt = Joule per second. A 100 W bulb eats 100 J every second, so after 10 seconds it has used 1,000 J."
+    },
+    {
+     "type": "trap",
+     "text": "Power is a rate, not a total. '3.8 x 10^26 W' means 3.8 x 10^26 joules EVERY SECOND, not a total amount of energy. Textbook 5.1 gives the 100 W bulb example; the 3.8 x 10^26 W value is from slide 2."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.1 slide 2",
+    "Cosmic Perspective 5.1 (pp. 138-139): radiative energy, energy and power, 100 W bulb."
+   ],
+   "images": [
+    {
+     "src": "img/light/light51_2.jpg",
+     "slide": "2",
+     "alt": "The Sun shining brightly in a blue sky with clouds and trees around it."
+    }
+   ]
+  },
+  {
+   "id": "prism",
+   "title": "White light is a mix of colours",
+   "slides": "Ch5.1: 3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light51_3.jpg",
+      "slide": "3",
+      "alt": "A beam of white light passing through a glass prism and fanning out into a rainbow."
+     },
+     "title": "A prism splits white light",
+     "bullets": [
+      "Sunlight (white light) is a mix of many colours, which means many different wavelengths.",
+      "A glass prism uses **refraction** (bending of light) to spread the colours apart into a rainbow called a **spectrum**.",
+      "Newton proved the colours come from the light, not the prism: when only red light goes into a second prism, only red light comes out."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a prism make a rainbow? The colours in white light travel together, but each colour is bent by a slightly different amount when it goes through glass. That sends each colour in its own direction, so they fan out."
+    },
+    {
+     "type": "trick",
+     "text": "A prism is a colour sorter: it does not make colours, it only separates the ones already hiding in white light."
+    },
+    {
+     "type": "trap",
+     "text": "A prism does not add colour. A second prism on one colour gives the same colour back (Newton, textbook 5.2). Any white light (a bulb as well as the Sun) gives a rainbow through a prism. Practice test 2 Q22 (bulb through a prism) has the explained answer 'rainbow with more red than the Sun's', which needs Wien's law (a later topic); the part that belongs here is: it is still a continuous rainbow, not lines and not one colour."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.1 slide 3",
+    "Cosmic Perspective 5.1 (p. 138, Figure 5.1) and 5.2 (p. 140, Newton's prism experiment)",
+    "Why each colour bends differently (dispersion) is only implied by the slide: (outside source) in detail."
+   ],
+   "images": [
+    {
+     "src": "img/light/light51_3.jpg",
+     "slide": "3",
+     "alt": "A beam of white light passing through a glass prism and fanning out into a rainbow."
+    }
+   ]
+  },
+  {
+   "id": "interact",
+   "title": "Light and matter: seven interactions",
+   "slides": "Ch5.1: 4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light51_4.jpg",
+      "slide": "4",
+      "alt": "A grid of six small diagrams showing light being transmitted, reflected, refracted, diffracted, absorbed and scattered."
+     },
+     "title": "Six pictures of what matter does to light",
+     "bullets": [
+      "Matter can emit, transmit, reflect, refract, absorb, scatter or diffract light. The grid draws six of these; emission is simply an object giving off light, such as a bulb or the Sun.",
+      "**Transmission**: light passes straight through (glass, air). **Absorption**: the light's energy is taken in, often as heat (your hand near a bulb).",
+      "**Reflection**: light bounces off in one direction (a mirror). **Scattering**: it bounces off in many directions (a movie screen)."
+     ]
+    },
+    {
+     "title": "Why objects have colours",
+     "bullets": [
+      "A red chair looks red because it scatters red light and absorbs all the other colours. A green lawn scatters green and absorbs the rest.",
+      "Under red light only, a green object absorbs the red and sends nothing back, so it looks black.",
+      "**Transparent** materials transmit light and **opaque** materials absorb it. Many things are partly both, like dark sunglasses (they absorb more and transmit less than clear glasses)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is the daytime sky bright and why are shadows not pitch black? Air molecules scatter sunlight in every direction, bouncing some into the shade. In space there is no air to scatter light, so shadows and the sky are pitch black."
+    },
+    {
+     "type": "trick",
+     "text": "A mirror gives one neat bounce (reflection). A movie screen sprays light everywhere (scattering), which is why everyone in the room sees the picture."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 4 lists SEVEN interactions, but the textbook (5.1) describes four basic ones: emission, absorption, transmission and reflection/scattering. Refraction and diffraction are only drawn on the slide, not defined in the textbook. Practice test 2 Q17: a green object looks black under red light because it ABSORBS the red (answer b), not because it reflects red or absorbs green."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.1 slide 4 (slide 5 is the summary)",
+    "Cosmic Perspective 5.1 (pp. 139-140, Figures 5.2 and 5.3, 'Common Misconceptions: Light Paths, Lasers and Shadows')",
+    "Practice test 2 Q17 (answer B in the explained file)",
+    "The wording for refraction (bending on entering a new material) and diffraction (spreading after a small gap or around an edge) is read from the slide's diagrams: (outside source) as definitions."
+   ],
+   "images": [
+    {
+     "src": "img/light/light51_4.jpg",
+     "slide": "4",
+     "alt": "A grid of six small diagrams showing light being transmitted, reflected, refracted, diffracted, absorbed and scattered."
+    }
+   ],
+   "table": {
+    "head": [
+     "Interaction",
+     "What the light does",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Emission",
+      "Matter gives off light",
+      "Light bulb, the Sun"
+     ],
+     [
+      "Transmission",
+      "Passes through",
+      "Glass, air"
+     ],
+     [
+      "Reflection",
+      "Bounces off in one direction",
+      "Mirror"
+     ],
+     [
+      "Refraction",
+      "Bends and changes direction",
+      "Prism splitting white light"
+     ],
+     [
+      "Absorption",
+      "Energy is taken in, often becoming heat",
+      "Your hand near a bulb"
+     ],
+     [
+      "Scattering",
+      "Bounces off in many directions",
+      "Movie screen, air in the sky"
+     ],
+     [
+      "Diffraction",
+      "Spreads out after a narrow gap",
+      "Rainbow colours on a DVD"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "wave",
+   "title": "Light is an electromagnetic wave",
+   "slides": "Ch5.2: 2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light52_2.jpg",
+      "slide": "2",
+      "alt": "A 3D drawing of a red electric wave and a blue magnetic wave crossing at right angles while travelling along one direction."
+     },
+     "title": "Electric and magnetic fields wave together",
+     "bullets": [
+      "Light is a wave made of an **electric field** and a **magnetic field** that wiggle at right angles to each other and to the direction the light travels.",
+      "A field tells you how strong a push a charged particle would feel at each spot. Light pushes on charged particles through these fields.",
+      "Unlike pond or sound waves, light does not need any material to travel through. Nothing moves up and down in space; the fields vibrate."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why can light cross empty space? Pond waves need water and sound needs air, because they are the vibrations of matter. Light is the vibration of electric and magnetic fields, which exist even where there is no matter. Waves carry energy, not matter: a leaf on a pond only bobs up and down as waves pass."
+    },
+    {
+     "type": "trick",
+     "text": "Electro + magnetic = electromagnetic: two partners that always wiggle together at 90 degrees."
+    },
+    {
+     "type": "trap",
+     "text": "Do not say light needs air or any medium, and do not say light carries matter along with it. Slide 2: 'perpendicular oscillating electric and magnetic fields'."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.2 slide 2",
+    "Cosmic Perspective 5.2 (pp. 140-141, Figure 5.4 pond waves, Figure 5.5, 'Light as an Electromagnetic Wave')"
+   ],
+   "images": [
+    {
+     "src": "img/light/light52_2.jpg",
+     "slide": "2",
+     "alt": "A 3D drawing of a red electric wave and a blue magnetic wave crossing at right angles while travelling along one direction."
+    }
+   ]
+  },
+  {
+   "id": "waveprops",
+   "title": "Amplitude, wavelength, frequency, speed",
+   "slides": "Ch5.2: 3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light52_3.jpg",
+      "slide": "3",
+      "alt": "Two waves with the same height and speed: a long blue wave with a low frequency and a short green wave with a high frequency."
+     },
+     "title": "Reading a wave diagram",
+     "bullets": [
+      "**Amplitude** is the maximum height of a wave peak (it is related to brightness). **Wavelength** is the distance between two peaks.",
+      "**Frequency** is the number of peaks that pass a spot each second. It is measured in hertz (Hz): 1 Hz = 1 peak per second.",
+      "Wave speed = wavelength x frequency (v = λ x f). In the picture wave A has the longer wavelength and so the smaller frequency, while both have the same amplitude and speed."
+     ]
+    },
+    {
+     "title": "A pond example with numbers",
+     "bullets": [
+      "If a leaf bobs up and down 3 times each second, the frequency is 3 Hz, because 3 peaks pass every second.",
+      "If each wavelength is 1 cm, each peak moves 1 cm, and 3 peaks pass per second, so the speed is 1 cm x 3 per second = 3 cm/s.",
+      "The rule v = λ x f works for any wave: sound, water and light."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does speed = wavelength x frequency? In one second, f peaks go past. Each peak has travelled one wavelength to get there, so the wave has moved f x λ in one second. That distance per second is the speed."
+    },
+    {
+     "type": "trick",
+     "text": "Wavelength = the Width of one wave. Frequency = how Frequently peaks arrive."
+    },
+    {
+     "type": "trap",
+     "text": "Frequency is peaks per second, not the distance between peaks (that is wavelength) and not the height (amplitude). Practice test 2 Q20 asks which property counts peaks per second: frequency. Waves with different frequencies can still have the same speed (slide 3 picture)."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.2 slide 3",
+    "Cosmic Perspective 5.2 (pp. 140-141, pond example; footnote on amplitude: textbook says half the height from trough to peak, slide says maximum height of the peak; same idea)",
+    "Practice test 2 Q20"
+   ],
+   "images": [
+    {
+     "src": "img/light/light52_3.jpg",
+     "slide": "3",
+     "alt": "Two waves with the same height and speed: a long blue wave with a low frequency and a short green wave with a high frequency."
+    }
+   ]
+  },
+  {
+   "id": "cf",
+   "title": "The light relation c = λf",
+   "slides": "Ch5.2: 4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light52_4.jpg",
+      "slide": "4",
+      "alt": "Three waves of 1 cm, half a centimetre and a quarter of a centimetre with frequencies of 30, 60 and 120 gigahertz."
+     },
+     "title": "Longer wave, lower frequency",
+     "bullets": [
+      "For all light, **c = λf**: the speed of light equals wavelength times frequency. In empty space c is about 300,000 km/s (3 x 10^8 m/s).",
+      "Because c never changes, a longer wavelength must mean a lower frequency, and a shorter wavelength a higher frequency.",
+      "In the picture, 1 cm gives 30 GHz. Half the wavelength (0.5 cm) gives double the frequency (60 GHz). A quarter of the wavelength (0.25 cm) gives four times the frequency (120 GHz). 1 GHz = 10^9 Hz."
+     ]
+    },
+    {
+     "title": "Solving for frequency or wavelength",
+     "bullets": [
+      "Rearrange: f = c / λ and λ = c / f. First change units to metres and hertz: 1 nm = 10^-9 m, 1 MHz = 10^6 Hz, 1 GHz = 10^9 Hz.",
+      "Green light with λ = 550 nm = 550 x 10^-9 m: f = (3 x 10^8 m/s) / (550 x 10^-9 m) = 5.45 x 10^14 Hz.",
+      "A radio station at 93.3 MHz = 93.3 x 10^6 Hz: λ = (3 x 10^8 m/s) / (93.3 x 10^6 Hz) = 3.2 m. That is why radio antennas must be fairly long."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why can't wavelength and frequency both go up? Their product must always equal c. If wavelength doubles, frequency must halve to keep the product the same. It is like walking at a fixed speed: longer steps means fewer steps per second."
+    },
+    {
+     "type": "trick",
+     "text": "Seesaw: wavelength goes up, frequency goes down. Their product c stays put in the middle."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 4 gives the formula c = λf but no number for c. The textbook gives c = 3 x 10^8 m/s (300,000 km/s); use it. The most common mistake is the power of 10: convert nm, MHz and GHz first. Slide 3 uses v = λf for any wave; for light v is c."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.2 slide 4",
+    "Cosmic Perspective 5.2 (p. 141, Figure 5.6) and Mathematical Insight 5.1 (p. 144, Examples 1 and 2)"
+   ],
+   "images": [
+    {
+     "src": "img/light/light52_4.jpg",
+     "slide": "4",
+     "alt": "Three waves of 1 cm, half a centimetre and a quarter of a centimetre with frequencies of 30, 60 and 120 gigahertz."
+    }
+   ]
+  },
+  {
+   "id": "colours",
+   "title": "Wavelength sets the colour",
+   "slides": "Ch5.2: 5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light52_5.jpg",
+      "slide": "5",
+      "alt": "A colour bar from violet to red beside wave drawings, with wavelengths from 400 nm for violet to 700 nm for dark red."
+     },
+     "title": "Colours and their wavelengths",
+     "bullets": [
+      "Our eyes see wavelengths from about **400 nm** (violet) to about **700 nm** (dark red). 1 nm = one billionth of a metre.",
+      "The picture labels: violet 400, indigo 425, blue 470, aqua 490, green 550, yellow 600, orange 630, red 665, dark red 700 nm. The picture also shows angstroms: 10 Å = 1 nm.",
+      "Longer wavelength (lower frequency) means redder light. Shorter wavelength (higher frequency) means bluer light."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is red 'low frequency'? By c = λf, the colour with the longest visible wavelength has the smallest frequency. Red has the longest visible wavelength, so it has the lowest frequency of the visible colours."
+    },
+    {
+     "type": "trick",
+     "text": "Red is Relaxed (long, lazy waves, low energy). Violet is Vigorous (short, fast waves, high energy)."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 5 shows nine colour labels (with indigo and aqua). The textbook names the basic colours red, orange, yellow, green, blue and violet, and puts 400 nm at the blue/violet end and 700 nm at the red end. Use the slide's numbers. The RED end has the LONGER wavelength; many students flip this."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.2 slide 5",
+    "Cosmic Perspective 5.2 (p. 142, 'The light that our eyes can see...', 400 to 700 nm) and 5.1 (p. 138, basic colours)"
+   ],
+   "images": [
+    {
+     "src": "img/light/light52_5.jpg",
+     "slide": "5",
+     "alt": "A colour bar from violet to red beside wave drawings, with wavelengths from 400 nm for violet to 700 nm for dark red."
+    }
+   ]
+  },
+  {
+   "id": "photon",
+   "title": "Light is also a particle: photons",
+   "slides": "Ch5.2: 6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light52_6.jpg",
+      "slide": "6",
+      "alt": "Two photon energy formulas, E equals h times f and E equals h times c over lambda, with the value of Planck's constant."
+     },
+     "title": "Photon energy formulas",
+     "bullets": [
+      "Experiments in the early 1900s showed that light also behaves like a particle. A particle of light is a **photon**, and each photon has a wavelength, a frequency and a speed.",
+      "Photon energy: **E = hf** or **E = hc/λ**, where h = 6.626 x 10^-34 J s is Planck's constant.",
+      "Higher frequency (shorter wavelength) means more energy per photon. Lower frequency (longer wavelength) means less."
+     ]
+    },
+    {
+     "title": "Photon energy with numbers",
+     "bullets": [
+      "Green photon, λ = 550 nm: E = hc/λ = (6.626 x 10^-34 J s)(3 x 10^8 m/s) / (550 x 10^-9 m) = 3.6 x 10^-19 J.",
+      "That is tiny: barely a billion-trillionth of the 100 J a 100 W bulb uses each second. A bulb sends out huge numbers of photons.",
+      "If the wavelength doubles, f halves and E halves. If the wavelength drops to one-third, f triples and E triples."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a short wavelength mean more energy? E = hf, so energy rises with frequency, and by c = λf a short wavelength means a high frequency. That is why ultraviolet can harm skin cells but radio waves do nothing to the body."
+    },
+    {
+     "type": "trick",
+     "text": "E goes with f (both up together) but against λ (E = hc/λ: big wavelength, small energy). 'Big f, big E; big λ, small E.'"
+    },
+    {
+     "type": "trap",
+     "text": "Energy per photon is not the same as brightness or power. All photons travel at the same speed c whatever their energy: radio waves are not slower than X-rays (ASTR207 practice Q22 answer b; Q23: X-rays have the highest photon energy of the list; Q24: wavelength doubles gives frequency halved and energy halved, derived from c = λf and E = hf)."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.2 slide 6",
+    "Cosmic Perspective 5.2 (pp. 141-142 'Photons') and Mathematical Insight 5.1 (p. 144, Example 3: 3.6 x 10^-19 J)",
+    "ASTR207 Practice questions Q22-Q24 (no answer key; derived from slides and textbook)"
+   ],
+   "images": [
+    {
+     "src": "img/light/light52_6.jpg",
+     "slide": "6",
+     "alt": "Two photon energy formulas, E equals h times f and E equals h times c over lambda, with the value of Planck's constant."
+    }
+   ]
+  },
+  {
+   "id": "matter",
+   "title": "How light pushes charges around",
+   "slides": "Ch5.2: 7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light52_7.jpg",
+      "slide": "7",
+      "alt": "A wavy row of electrons moving up and down as a light wave passes by."
+     },
+     "title": "Electrons bob as light passes",
+     "bullets": [
+      "Light interacts with charged particles, mostly **electrons**, through its electric and magnetic fields. A passing light wave makes electrons bob up and down.",
+      "Often atoms and molecules absorb the light and turn its energy into heat.",
+      "Sometimes an atom absorbs a photon and sends it out again in a different direction. Other times the light just changes direction because of the electrons."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does sunlight warm your skin? Electrons in your skin soak up the light's energy and pass it on as faster molecular motion, which is heat."
+    },
+    {
+     "type": "trick",
+     "text": "Light is the wave on the pond and electrons are the leaves: they bob as it goes by."
+    },
+    {
+     "type": "trap",
+     "text": "The electrons only bob up and down. They are not carried along with the light; only energy travels. Slide 7's picture is Figure 5.5a of the textbook."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.2 slide 7",
+    "Cosmic Perspective 5.2 (p. 141, Figure 5.5a)"
+   ],
+   "images": [
+    {
+     "src": "img/light/light52_7.jpg",
+     "slide": "7",
+     "alt": "A wavy row of electrons moving up and down as a light wave passes by."
+    }
+   ]
+  },
+  {
+   "id": "spectrum",
+   "title": "The electromagnetic spectrum",
+   "slides": "Ch5.2: 8 and 1",
+   "steps": [
+    {
+     "img": {
+      "src": "img/light/light52_8.jpg",
+      "slide": "8",
+      "alt": "The full electromagnetic spectrum from gamma rays to radio waves with wavelength, frequency, energy, everyday sources and space sources."
+     },
+     "title": "From gamma rays to radio waves",
+     "bullets": [
+      "The **electromagnetic spectrum** is the full range of light, in order: gamma rays, X-rays, ultraviolet, visible, infrared, microwaves, radio waves.",
+      "Going from gamma rays to radio waves, wavelength gets longer while frequency and energy get lower. Gamma rays: shortest, most energy. Radio: longest, least energy.",
+      "All of it is light and travels at the speed of light. Our eyes only see a tiny slice, called visible light."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/light/light52_1.jpg",
+      "slide": "1",
+      "alt": "An X-ray picture of two hands showing the bones."
+     },
+     "title": "What different light does",
+     "bullets": [
+      "X-ray photons carry enough energy to pass through skin and muscle, but bones and teeth block them, so X-ray pictures show bones.",
+      "Ultraviolet photons carry enough energy to damage skin cells (sunburn). Radio photons carry so little energy that they have no effect on the body.",
+      "Warm objects give off infrared (so we link infrared with heat). Radio waves make electrons move in an antenna, which is how radio communication works."
+     ]
+    },
+    {
+     "title": "Sizes and sources",
+     "bullets": [
+      "The reddest red we see has only about twice the wavelength of the bluest blue (700 nm vs 400 nm), but radio waves from a station are a billion times longer than the X-rays used in a clinic.",
+      "Sources on Earth in the picture: radioactive elements, X-ray machines, light bulbs, people, radar, microwave ovens, radio transmitters.",
+      "Sources in space: gamma-ray bursts, black hole accretion disks, the Sun, planets and star-forming clouds, the cosmic microwave background, radio galaxies."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do astronomers look at all kinds of light? Different matter interacts with different light. A brick wall blocks visible light but lets radio waves through (that is why radios and phones work indoors), so each type of light carries different information about distant objects."
+    },
+    {
+     "type": "trick",
+     "text": "Raging Martians Invaded Venus Using X-ray Guns: Radio, Microwave, Infrared, Visible, Ultraviolet, X-ray, Gamma, from longest to shortest wavelength."
+    },
+    {
+     "type": "trap",
+     "text": "The word radiation only means energy spreading out; it is not always dangerous. Radio waves and X-rays are both light, they differ only in wavelength, frequency and energy, never in speed. You cannot hear radio waves: a radio device decodes them into sound. Slide 1 of the 5.2 deck is just a title slide with an X-ray image; the explanation of it comes from the textbook."
+    }
+   ],
+   "sourceNotes": [
+    "Ch5.2 slide 8 (and slide 1 image)",
+    "Cosmic Perspective 5.2 (pp. 142-144, Figure 5.7, 'Common Misconceptions: Is Radiation Dangerous?, Can You Hear Radio Waves or See an X-Ray?')",
+    "The mnemonic is (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/light/light52_8.jpg",
+     "slide": "8",
+     "alt": "The full electromagnetic spectrum from gamma rays to radio waves with wavelength, frequency, energy, everyday sources and space sources."
+    },
+    {
+     "src": "img/light/light52_1.jpg",
+     "slide": "1",
+     "alt": "An X-ray picture of two hands showing the bones."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Kinds of light at a glance",
+  "head": [
+   "Kind of light",
+   "Wavelength",
+   "Energy per photon",
+   "Example"
+  ],
+  "rows": [
+   [
+    "Gamma rays",
+    "Shortest",
+    "Highest",
+    "Radioactive elements"
+   ],
+   [
+    "X-rays",
+    "Very short",
+    "Very high",
+    "X-ray machine, passes through skin"
+   ],
+   [
+    "Ultraviolet",
+    "Shorter than visible",
+    "Can damage skin cells",
+    "Sunburn"
+   ],
+   [
+    "Visible",
+    "About 400 to 700 nm",
+    "Medium",
+    "Light bulb, Sun"
+   ],
+   [
+    "Infrared",
+    "Longer than visible",
+    "Lower",
+    "Warm objects, people"
+   ],
+   [
+    "Microwaves",
+    "Micrometres to centimetres",
+    "Low",
+    "Radar, microwave oven"
+   ],
+   [
+    "Radio",
+    "Longest",
+    "Lowest",
+    "Radio transmitter"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "li-c1",
+   "front": "Radiative energy",
+   "back": "The energy that light carries; one of the three basic kinds of energy (with kinetic and potential).",
+   "short": "Energy carried by light",
+   "src": "Ch5.1 slide 2; Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-c2",
+   "front": "Power and its unit",
+   "back": "The rate of energy flow, measured in watts (W). 1 W = 1 joule per second.",
+   "short": "Energy per second, in watts",
+   "src": "Ch5.1 slide 2"
+  },
+  {
+   "id": "li-c3",
+   "front": "Sun's power output",
+   "back": "3.8 x 10^26 W, which means 3.8 x 10^26 joules every second.",
+   "short": "3.8 x 10^26 joules each second",
+   "src": "Ch5.1 slide 2"
+  },
+  {
+   "id": "li-c4",
+   "front": "How much energy does a 100 W bulb use each second?",
+   "back": "100 joules, because 1 W = 1 J/s.",
+   "short": "100 J every second",
+   "src": "Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-c5",
+   "front": "White light",
+   "back": "Light that is a mix of many colours (wavelengths), such as sunlight.",
+   "short": "Mix of all the colours",
+   "src": "Ch5.1 slide 3"
+  },
+  {
+   "id": "li-c6",
+   "front": "Spectrum",
+   "back": "The rainbow of colours made when white light is spread out, for example by a prism.",
+   "short": "Rainbow made by splitting light",
+   "src": "Ch5.1 slide 3"
+  },
+  {
+   "id": "li-c7",
+   "front": "What does a prism do to white light?",
+   "back": "It refracts (bends) the different wavelengths by different amounts, splitting white light into a spectrum.",
+   "short": "Bends colours apart into a rainbow",
+   "src": "Ch5.1 slide 3"
+  },
+  {
+   "id": "li-c8",
+   "front": "Newton's second prism test",
+   "back": "Only red light entering a second prism gave only red light out, so colour is a property of the light, not the prism.",
+   "short": "Red in, red out: colour is in the light",
+   "src": "Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-c9",
+   "front": "List the seven ways light and matter interact",
+   "back": "Emission, transmission, reflection, refraction, absorption, scattering, diffraction.",
+   "short": "Emit, transmit, reflect, refract, absorb, scatter, diffract",
+   "src": "Ch5.1 slide 4"
+  },
+  {
+   "id": "li-c10",
+   "front": "Emission",
+   "back": "Matter gives off light, such as a bulb or the Sun.",
+   "short": "Matter gives off light",
+   "src": "Ch5.1 slide 4"
+  },
+  {
+   "id": "li-c11",
+   "front": "Transmission",
+   "back": "Light passes through matter, such as glass or air.",
+   "short": "Light passes right through",
+   "src": "Ch5.1 slide 4"
+  },
+  {
+   "id": "li-c12",
+   "front": "Reflection",
+   "back": "Light bounces off in one general direction, as from a mirror.",
+   "short": "Bounce in one direction, mirror",
+   "src": "Ch5.1 slide 4; Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-c13",
+   "front": "Scattering",
+   "back": "Light bounces off in many random directions, as from a movie screen or air.",
+   "short": "Bounce in many directions",
+   "src": "Ch5.1 slide 4; Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-c14",
+   "front": "Absorption",
+   "back": "Matter takes in the light's energy, often turning it into heat.",
+   "short": "Energy taken in, often heat",
+   "src": "Ch5.1 slide 4"
+  },
+  {
+   "id": "li-c15",
+   "front": "Refraction",
+   "back": "Light bends and changes direction when passing into another material; a prism uses it to split light.",
+   "short": "Light bends entering new material",
+   "src": "Ch5.1 slides 3-4"
+  },
+  {
+   "id": "li-c16",
+   "front": "Diffraction",
+   "back": "Light spreads out after passing through a small gap (it is drawn as a fan of rays after a narrow opening).",
+   "short": "Light spreads after a narrow gap",
+   "src": "Ch5.1 slide 4"
+  },
+  {
+   "id": "li-c17",
+   "front": "Transparent versus opaque",
+   "back": "Transparent materials transmit light; opaque materials absorb it.",
+   "short": "Transmit light versus absorb light",
+   "src": "Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-c18",
+   "front": "Why does a green object look black under red light?",
+   "back": "A green object absorbs the red light and reflects almost nothing, so no light reaches the eye.",
+   "short": "It absorbs the red light",
+   "src": "Practice test 2 Q17; Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-c19",
+   "front": "What is light made of as a wave?",
+   "back": "Perpendicular oscillating electric and magnetic fields (an electromagnetic wave).",
+   "short": "Electric and magnetic fields wiggling",
+   "src": "Ch5.2 slide 2"
+  },
+  {
+   "id": "li-c20",
+   "front": "Does light need matter to travel?",
+   "back": "No. Light is vibrating fields and crosses empty space at the speed of light.",
+   "short": "No, it crosses empty space",
+   "src": "Ch5.2 slide 2; Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-c21",
+   "front": "Amplitude",
+   "back": "The maximum height of a wave peak (related to the brightness of light).",
+   "short": "Maximum height of a peak",
+   "src": "Ch5.2 slide 3"
+  },
+  {
+   "id": "li-c22",
+   "front": "Wavelength",
+   "back": "The distance between two wave peaks. Symbol λ.",
+   "short": "Distance between two peaks",
+   "src": "Ch5.2 slide 3"
+  },
+  {
+   "id": "li-c23",
+   "front": "Frequency",
+   "back": "The number of wave peaks that pass a point each second, in hertz (Hz). Symbol f.",
+   "short": "Peaks passing per second",
+   "src": "Ch5.2 slide 3; practice test 2 Q20"
+  },
+  {
+   "id": "li-c24",
+   "front": "Hertz (Hz)",
+   "back": "One cycle (peak) per second.",
+   "short": "One cycle per second",
+   "src": "Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-c25",
+   "front": "Wave speed formula",
+   "back": "Wave speed v = wavelength x frequency (v = λf).",
+   "short": "Speed = wavelength x frequency",
+   "src": "Ch5.2 slide 3"
+  },
+  {
+   "id": "li-c26",
+   "front": "Speed of light relation",
+   "back": "c = λf, with c about 3 x 10^8 m/s (300,000 km/s) in empty space.",
+   "short": "c = wavelength times frequency",
+   "src": "Ch5.2 slide 4; Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-c27",
+   "front": "Wavelength versus frequency for light",
+   "back": "Because c is constant, longer wavelength means lower frequency, and shorter wavelength means higher frequency.",
+   "short": "Longer wavelength, lower frequency",
+   "src": "Ch5.2 slide 4"
+  },
+  {
+   "id": "li-c28",
+   "front": "If light's wavelength is 1 cm, what is its frequency?",
+   "back": "30 GHz (c/λ = 3 x 10^8 / 0.01 = 3 x 10^10 Hz). Half the wavelength gives 60 GHz, a quarter gives 120 GHz.",
+   "short": "30 GHz; halve wavelength, double f",
+   "src": "Ch5.2 slide 4"
+  },
+  {
+   "id": "li-c29",
+   "front": "Which end of the rainbow has the longer wavelength?",
+   "back": "Red (about 700 nm). Violet is about 400 nm. Longer wavelength means redder.",
+   "short": "Red has the longer wavelength",
+   "src": "Ch5.2 slide 5"
+  },
+  {
+   "id": "li-c30",
+   "front": "Wavelength range of visible light",
+   "back": "About 400 nm (violet) to 700 nm (red). 1 nm = 10^-9 m.",
+   "short": "About 400 to 700 nm",
+   "src": "Ch5.2 slide 5; Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-c31",
+   "front": "Photon",
+   "back": "A particle of light. Each photon has a wavelength, a frequency and a speed.",
+   "short": "A particle of light",
+   "src": "Ch5.2 slide 6"
+  },
+  {
+   "id": "li-c32",
+   "front": "Photon energy formulas",
+   "back": "E = hf, or equivalently E = hc/λ.",
+   "short": "E = hf or E = hc/λ",
+   "src": "Ch5.2 slide 6"
+  },
+  {
+   "id": "li-c33",
+   "front": "Planck's constant",
+   "back": "h = 6.626 x 10^-34 joule seconds.",
+   "short": "6.626 x 10^-34 J s",
+   "src": "Ch5.2 slide 6"
+  },
+  {
+   "id": "li-c34",
+   "front": "How does photon energy change with wavelength?",
+   "back": "Shorter wavelength (higher frequency) means more energy per photon; longer wavelength means less.",
+   "short": "Short wavelength, high energy",
+   "src": "Ch5.2 slide 6"
+  },
+  {
+   "id": "li-c35",
+   "front": "Energy of a 550 nm photon",
+   "back": "E = hc/λ = 3.6 x 10^-19 joule.",
+   "short": "About 3.6 x 10^-19 J",
+   "src": "Cosmic Perspective Math Insight 5.1"
+  },
+  {
+   "id": "li-c36",
+   "front": "What happens when light meets electrons in matter?",
+   "back": "Its electric and magnetic fields make the charged particles (mostly electrons) bob up and down; atoms often absorb the light as heat.",
+   "short": "Electrons bob; energy often becomes heat",
+   "src": "Ch5.2 slide 7"
+  },
+  {
+   "id": "li-c37",
+   "front": "Order of the electromagnetic spectrum",
+   "back": "From shortest to longest wavelength: gamma rays, X-rays, ultraviolet, visible, infrared, microwaves, radio waves.",
+   "short": "Gamma, X-ray, UV, visible, IR, radio",
+   "src": "Ch5.2 slide 8"
+  },
+  {
+   "id": "li-c38",
+   "front": "Which kind of light has the most energy per photon?",
+   "back": "Gamma rays (shortest wavelength, highest frequency). Radio waves have the least.",
+   "short": "Gamma rays have the most energy",
+   "src": "Ch5.2 slide 8"
+  },
+  {
+   "id": "li-c39",
+   "front": "Why can X-rays make pictures of bones?",
+   "back": "X-ray photons pass through skin and muscle but are blocked by bones and teeth.",
+   "short": "Pass through flesh, blocked by bone",
+   "src": "Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-c40",
+   "front": "Do radio waves and X-rays travel at different speeds?",
+   "back": "No. All light, from radio waves to gamma rays, travels at the speed of light c.",
+   "short": "No, all light travels at speed c",
+   "src": "ASTR207 practice Q22; Cosmic Perspective 5.2"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "li-1",
+   "q": "A radio station broadcasts at 100 MHz (1 MHz = 10^6 Hz). Using c = 3 x 10^8 m/s, what is the wavelength of these radio waves?",
+   "options": [
+    "0.3 m",
+    "30 m",
+    "3 m",
+    "3 x 10^-6 m",
+    "333 m"
+   ],
+   "answer": 2,
+   "why": "Use λ = c/f = (3 x 10^8 m/s) / (100 x 10^6 Hz) = (3 x 10^8) / (1 x 10^8) = 3 m.",
+   "source": "Ch5.2 slide 4; Cosmic Perspective Math Insight 5.1 Example 1"
+  },
+  {
+   "id": "li-2",
+   "q": "Visible light has a wavelength of 600 nm (1 nm = 10^-9 m). Using c = 3 x 10^8 m/s, what is its frequency?",
+   "options": [
+    "5 x 10^14 Hz",
+    "1.8 x 10^2 Hz",
+    "2 x 10^-15 Hz",
+    "5 x 10^5 Hz",
+    "1.8 x 10^16 Hz"
+   ],
+   "answer": 0,
+   "why": "f = c/λ = (3 x 10^8 m/s) / (600 x 10^-9 m) = (3 x 10^8) / (6 x 10^-7) = 5 x 10^14 Hz.",
+   "source": "Ch5.2 slide 4; Math Insight 5.1 Example 2"
+  },
+  {
+   "id": "li-3",
+   "q": "Why does a glass prism turn a beam of white light into a rainbow?",
+   "options": [
+    "The prism adds new colours to the light as it passes through.",
+    "The prism absorbs most of the light and re-emits it in different colours.",
+    "The prism scatters the light randomly in all directions.",
+    "White light is a mix of many wavelengths, and the prism refracts each wavelength by a different amount.",
+    "The prism changes the speed of light into several different speeds in empty space."
+   ],
+   "answer": 3,
+   "why": "White light already contains all the colours. Refraction bends each wavelength differently, so they separate. Nothing is added.",
+   "source": "Ch5.1 slide 3; Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-4",
+   "q": "Which of the following is NOT one of the ways light and matter can interact?",
+   "options": [
+    "Absorption",
+    "Evaporation",
+    "Scattering",
+    "Diffraction",
+    "Transmission"
+   ],
+   "answer": 1,
+   "why": "Emission, transmission, reflection, refraction, absorption, scattering and diffraction are the interactions listed. Evaporation is a change of phase, not a light interaction.",
+   "source": "Ch5.1 slide 4"
+  },
+  {
+   "id": "li-5",
+   "q": "A movie screen lets everyone in the room see the picture because the screen ______.",
+   "options": [
+    "reflects light in one single direction like a mirror",
+    "absorbs all the light that hits it",
+    "emits its own light",
+    "transmits all the light through to the wall behind it",
+    "scatters light in many different directions"
+   ],
+   "answer": 4,
+   "why": "Scattering sends light off in many directions, so people in different seats all receive some. A mirror's single reflection would only be seen from one spot.",
+   "source": "Cosmic Perspective 5.1 Figure 5.2"
+  },
+  {
+   "id": "li-6",
+   "q": "A 100 W light bulb is switched on for 1 minute. How much energy does it use? (1 W = 1 J/s)",
+   "options": [
+    "100 J",
+    "6,000 J",
+    "600 J",
+    "60 J",
+    "1.7 J"
+   ],
+   "answer": 1,
+   "why": "Energy = power x time = 100 J/s x 60 s = 6,000 J.",
+   "source": "Ch5.1 slide 2; Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-7",
+   "q": "Why does a green object look black when it is lit only by red light?",
+   "options": [
+    "It scatters all the red light into the room.",
+    "It reflects only red light, which looks black under red light.",
+    "It contains pigments that darken in red light.",
+    "It absorbs the red light, so almost no light is sent back to your eye.",
+    "It absorbs green light, so it takes in no other light."
+   ],
+   "answer": 3,
+   "why": "An object's colour is the light it sends back. A green object returns green and absorbs the other colours, including red. With only red present, nothing comes back.",
+   "source": "Practice test 2 Q17; Cosmic Perspective 5.1"
+  },
+  {
+   "id": "li-8",
+   "q": "Newton sent only the red light from one prism into a second prism. What came out of the second prism?",
+   "options": [
+    "Only red light, which shows the colour belongs to the light and not the prism.",
+    "A full rainbow again, which shows the prism makes colour.",
+    "Only violet light, because the second prism reverses the colours.",
+    "No light at all, because red light cannot be refracted.",
+    "White light, because the second prism recombines the colours."
+   ],
+   "answer": 0,
+   "why": "If the prism made the colours, the second prism would also give a rainbow. Red in and only red out shows the colour is a property of the light.",
+   "source": "Cosmic Perspective 5.2 (Newton's experiment) (outside source: red-stays-red result is not stated in the sources)"
+  },
+  {
+   "id": "li-9",
+   "q": "Which statement about light is INCORRECT?",
+   "options": [
+    "Light is made of oscillating electric and magnetic fields.",
+    "Light can behave both like a wave and like a particle.",
+    "A particle of light is called a photon.",
+    "Light can only travel through matter such as air.",
+    "Our eyes see only a small part of the electromagnetic spectrum."
+   ],
+   "answer": 3,
+   "why": "Light needs no matter to travel: it crosses empty space. All the other statements are true.",
+   "source": "Ch5.2 slides 2, 6, 9"
+  },
+  {
+   "id": "li-10",
+   "q": "Which of the following are forms of light?\nI. Radio waves\nII. X-rays\nIII. Sound waves",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "Everything in the electromagnetic spectrum, from radio waves to gamma rays, is light. Sound is a vibration of air molecules, not light.",
+   "source": "Cosmic Perspective 5.2; ASTR207 practice Q22"
+  },
+  {
+   "id": "li-11",
+   "q": "What property of a wave tells you how many peaks pass a given point each second?",
+   "options": [
+    "The wavelength",
+    "The wave speed",
+    "The amplitude",
+    "The power",
+    "The frequency"
+   ],
+   "answer": 4,
+   "why": "Frequency is peaks per second (hertz). Wavelength is the distance between peaks, speed is how fast peaks travel and amplitude is the peak height.",
+   "source": "Ch5.2 slide 3; Practice test 2 Q20"
+  },
+  {
+   "id": "li-12",
+   "q": "If the wavelength of a light wave doubles, what happens to its frequency and photon energy?",
+   "options": [
+    "The frequency is cut in half and the energy is cut in half.",
+    "The frequency doubles and the energy doubles.",
+    "Nothing changes, since all light travels at the same speed.",
+    "The frequency is cut in half, but the energy doubles.",
+    "The frequency and energy both increase by a factor of 4."
+   ],
+   "answer": 0,
+   "why": "Since c = λf is fixed, doubling λ halves f. Since E = hf, halving f halves E.",
+   "source": "Ch5.2 slides 4 and 6; ASTR207 practice Q24"
+  },
+  {
+   "id": "li-13",
+   "q": "Which of these has the highest-energy photons?",
+   "options": [
+    "Radio waves",
+    "Infrared light",
+    "Red visible light",
+    "Ultraviolet light",
+    "X-rays"
+   ],
+   "answer": 4,
+   "why": "Energy rises as wavelength gets shorter. Of the choices X-rays have the shortest wavelength and so the highest photon energy.",
+   "source": "Ch5.2 slides 6 and 8; ASTR207 practice Q23"
+  },
+  {
+   "id": "li-14",
+   "q": "Which statement about radio waves is TRUE?",
+   "options": [
+    "They are a type of sound wave.",
+    "They are a form of light and travel at the speed of light.",
+    "They travel more slowly than visible light.",
+    "They carry more energy per photon than X-rays.",
+    "They need air to travel through."
+   ],
+   "answer": 1,
+   "why": "Radio waves are light with a very long wavelength. All light travels at c in empty space, and radio photons have the least energy.",
+   "source": "Cosmic Perspective 5.2; ASTR207 practice Q22"
+  },
+  {
+   "id": "li-15",
+   "q": "A light wave has a wavelength of 1 cm and a frequency of 30 GHz. Another light wave has a wavelength of 0.25 cm. What is the frequency of the second wave?",
+   "options": [
+    "7.5 GHz",
+    "30 GHz",
+    "60 GHz",
+    "120 GHz",
+    "240 GHz"
+   ],
+   "answer": 3,
+   "why": "0.25 cm is one-quarter of 1 cm, and c is fixed, so the frequency is 4 times larger: 4 x 30 GHz = 120 GHz.",
+   "source": "Ch5.2 slide 4"
+  },
+  {
+   "id": "li-16",
+   "q": "A photon has a frequency of 5 x 10^14 Hz. Using h = 6.626 x 10^-34 J s, what is its energy?",
+   "options": [
+    "1.3 x 10^-48 J",
+    "3.3 x 10^-20 J",
+    "3.3 x 10^-9 J",
+    "7.5 x 10^47 J",
+    "3.3 x 10^-19 J"
+   ],
+   "answer": 4,
+   "why": "E = hf = (6.626 x 10^-34 J s)(5 x 10^14 Hz) = 33.13 x 10^-20 J = 3.3 x 10^-19 J.",
+   "source": "Ch5.2 slide 6"
+  },
+  {
+   "id": "li-17",
+   "q": "Compare red light (700 nm) and violet light (400 nm).\nI. Red light has the longer wavelength.\nII. Violet light has the higher frequency.\nIII. Red photons carry more energy than violet photons.",
+   "options": [
+    "I only",
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 1,
+   "why": "Red has the longer wavelength, so by c = λf violet has the higher frequency, and by E = hf violet photons carry more energy, so III is false.",
+   "source": "Ch5.2 slides 5 and 6"
+  },
+  {
+   "id": "li-18",
+   "q": "How many times more energy does a violet photon (400 nm) carry than a red photon (700 nm)?",
+   "options": [
+    "0.57 times",
+    "3.1 times",
+    "300 times",
+    "1.75 times",
+    "About the same"
+   ],
+   "answer": 3,
+   "why": "E = hc/λ, so energy is inversely proportional to wavelength. Ratio = 700/400 = 1.75.",
+   "source": "Ch5.2 slides 5 and 6"
+  },
+  {
+   "id": "li-19",
+   "q": "Which list puts these kinds of light in order of INCREASING wavelength?",
+   "options": [
+    "gamma rays, X-rays, ultraviolet, visible, infrared, radio waves",
+    "radio waves, infrared, visible, ultraviolet, X-rays, gamma rays",
+    "X-rays, gamma rays, ultraviolet, visible, infrared, radio waves",
+    "visible, ultraviolet, X-rays, gamma rays, infrared, radio waves",
+    "infrared, radio waves, visible, ultraviolet, X-rays, gamma rays"
+   ],
+   "answer": 0,
+   "why": "Wavelength gets longer from gamma rays (shortest) to radio waves (longest). Option b lists them from longest to shortest.",
+   "source": "Ch5.2 slide 8"
+  },
+  {
+   "id": "li-20",
+   "q": "The reddest red our eyes can see has about how much longer a wavelength than the bluest blue?",
+   "options": [
+    "About half as long",
+    "About 10 times as long",
+    "About 100 times as long",
+    "About a billion times as long",
+    "About twice as long"
+   ],
+   "answer": 4,
+   "why": "Visible light runs from about 400 nm to 700 nm, a ratio of 1.75, close to 2. Visible light is a tiny part of the whole spectrum.",
+   "source": "Ch5.2 slide 5; Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-21",
+   "q": "The Sun's power output is 3.8 x 10^26 W. What does this mean?",
+   "options": [
+    "The Sun holds a total of 3.8 x 10^26 joules of energy.",
+    "The Sun gives off 3.8 x 10^26 joules of energy every year.",
+    "The Sun gives off 3.8 x 10^26 joules of energy every second.",
+    "The Sun's light has a frequency of 3.8 x 10^26 Hz.",
+    "The Sun is 3.8 x 10^26 times brighter than a 1 J light."
+   ],
+   "answer": 2,
+   "why": "1 W = 1 J/s, so a power of 3.8 x 10^26 W means 3.8 x 10^26 joules each second.",
+   "source": "Ch5.1 slide 2"
+  },
+  {
+   "id": "li-22",
+   "q": "A light wave's wavelength drops to one-third of its old value. What happens to the energy of each photon?",
+   "options": [
+    "It becomes one-third as large",
+    "It triples",
+    "It stays the same",
+    "It becomes nine times as large",
+    "It doubles"
+   ],
+   "answer": 1,
+   "why": "One-third the wavelength means 3 times the frequency (c = λf), and E = hf so the energy also becomes 3 times larger.",
+   "source": "Ch5.2 slides 4 and 6"
+  },
+  {
+   "id": "li-23",
+   "q": "Why do radios and cell phones work inside a building even though you cannot see through the walls?",
+   "options": [
+    "Radio waves travel faster than visible light, so they push through bricks.",
+    "Radio waves are sound waves, which pass through solid walls easily.",
+    "Radio waves carry more energy per photon than visible light.",
+    "A brick wall is opaque to visible light but transmits radio waves.",
+    "The walls emit radio waves of their own."
+   ],
+   "answer": 3,
+   "why": "Different types of light interact differently with matter. Radio waves have much less energy than visible light and pass through the wall, while visible light is absorbed.",
+   "source": "Cosmic Perspective 5.2 (outside source: brick wall passes radio waves)"
+  },
+  {
+   "id": "li-24",
+   "q": "Why can X-ray pictures show bones?",
+   "options": [
+    "X-rays are emitted by bones.",
+    "X-rays are sound waves that echo off bones.",
+    "Bones absorb radio waves.",
+    "X-rays travel slower in bone than in muscle.",
+    "X-ray photons pass through skin and muscle but are blocked by bones and teeth."
+   ],
+   "answer": 4,
+   "why": "X-ray photons have enough energy to go through soft tissue, but dense bones and teeth block them. The detector behind the body records the shadow.",
+   "source": "Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-25",
+   "q": "Which of these statements about photon energy are correct?\nI. Ultraviolet photons carry enough energy to damage skin cells.\nII. Radio photons carry enough energy to cause sunburn.\nIII. X-ray photons carry enough energy to pass through skin and muscle.",
+   "options": [
+    "I only",
+    "I and III only",
+    "II and III only",
+    "I and II only",
+    "all of the above"
+   ],
+   "answer": 1,
+   "why": "Ultraviolet and X-ray photons have short wavelengths and high energy. Radio photons have very little energy and cannot cause sunburn.",
+   "source": "Cosmic Perspective 5.2"
+  },
+  {
+   "id": "li-26",
+   "q": "A microwave signal has a frequency of 3 x 10^9 Hz (3 GHz). Using c = 3 x 10^8 m/s, what is its wavelength?",
+   "options": [
+    "1 cm",
+    "1 m",
+    "10 cm",
+    "0.1 cm",
+    "100 m"
+   ],
+   "answer": 2,
+   "why": "λ = c/f = (3 x 10^8 m/s) / (3 x 10^9 Hz) = 0.1 m = 10 cm.",
+   "source": "Ch5.2 slide 4"
+  }
+ ],
+ "games": [
+  "match"
+ ]
+}

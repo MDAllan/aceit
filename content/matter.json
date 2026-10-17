@@ -1,0 +1,1338 @@
+{
+ "id": "matter",
+ "title": "Matter, Spectra & the Doppler Effect",
+ "chapter": "Ch 5.3-5.4",
+ "icon": "⚛️",
+ "color": "#7c3aed",
+ "intro": "Light carries clues about the matter that made it. Here you learn what atoms are made of, how matter changes phase, how electrons jump between energy levels, what the three kinds of spectra look like, and how the Doppler effect turns a tiny shift in a spectral line into a speed.",
+ "sections": [
+  {
+   "id": "atom",
+   "title": "Inside an atom",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/matter_2.jpg",
+      "slide": "2",
+      "alt": "A fuzzy dark ball for a helium atom with a zoom box showing four tiny particles at its centre."
+     },
+     "title": "A helium atom up close",
+     "bullets": [
+      "An atom has a tiny **nucleus** in the middle, made of **protons** (positive charge) and **neutrons** (no charge).",
+      "The nucleus is surrounded by an **electron cloud**. Electrons carry negative charge.",
+      "The nucleus is far smaller than the whole atom, so an atom is mostly empty space. The scale bar shows 1 angstrom = 100 picometres."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why a cloud and not tiny planets on tracks? You cannot pin down exactly where an electron is, so its position is smeared out into a cloud. That cloud gives the atom its size, even though the electrons hold only a tiny part of its mass."
+    },
+    {
+     "type": "trick",
+     "text": "Positive protons and Neutral neutrons sit in the middle. The negative electrons stay outside, around them."
+    },
+    {
+     "type": "trap",
+     "text": "Do not draw electrons as planets orbiting the nucleus. Slide 2 and the textbook both use the electron-cloud picture. A neutral atom has equal numbers of protons and electrons. The slide writes the charge as +e and -e."
+    }
+   ],
+   "sourceNotes": [
+    "Matter deck slide 2",
+    "Cosmic Perspective 5.3 (structure of matter, pp. 145-146; Fig 5.9)",
+    "The slide scale bar says 1 A = 100 pm; the zoom box (1 fm) shows the nucleus."
+   ],
+   "images": [
+    {
+     "src": "img/matter/matter_2.jpg",
+     "slide": "2",
+     "alt": "A fuzzy dark ball for a helium atom with a zoom box showing four tiny particles at its centre."
+    }
+   ]
+  },
+  {
+   "id": "terms",
+   "title": "Atomic number, isotopes and ions",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 3-4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/matter_3.jpg",
+      "slide": "3",
+      "alt": "Drawings of hydrogen, helium and carbon atoms, each with a nucleus and a cloud, labelled with atomic number and mass number."
+     },
+     "title": "Counting protons and neutrons",
+     "bullets": [
+      "**Atomic number** = number of protons. It tells you which element the atom is: hydrogen 1, helium 2, carbon 6.",
+      "**Atomic mass number** = protons + neutrons. Helium-4 is 2 + 2 = 4 and carbon-12 is 6 + 6 = 12.",
+      "A **molecule** is two or more atoms chemically bonded together, such as H2O or CO2."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/matter/matter_4.jpg",
+      "slide": "4",
+      "alt": "Three carbon nuclei with the same 6 protons but 6, 7 and 8 neutrons."
+     },
+     "title": "Isotopes and ions",
+     "bullets": [
+      "**Isotopes** have the same number of protons but different numbers of neutrons. Carbon-12, carbon-13 and carbon-14 all have 6 protons, with 6, 7 and 8 neutrons.",
+      "An **ion** has the same number of protons but a different number of electrons, such as He2+ or Cl-.",
+      "Charge = protons minus electrons. Losing electrons leaves an ion positive."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is the proton count the atom's name tag? Every atom of an element has exactly the same number of protons, while the neutron count can vary. So carbon-12 and carbon-14 are still both carbon, just with different weights."
+    },
+    {
+     "type": "trick",
+     "text": "Protons name the element. Neutrons change the weight (isotope). Electrons change the charge (ion)."
+    },
+    {
+     "type": "trap",
+     "text": "Do not mix up atomic number (protons only) with atomic mass number (protons + neutrons). Wrong options on the practice test reuse the neutron count as the mass number or swap the two numbers. 'Doubly ionized' means 2 electrons LOST, so the charge is 2+, not 2-."
+    }
+   ],
+   "sourceNotes": [
+    "Matter deck slides 3-4",
+    "Cosmic Perspective 5.3 (Atomic Terminology, Molecules, Fig 5.9)",
+    "Practice test 2 Q18 (Ca-44), practice questions Q25 (carbon-12 and carbon-14)"
+   ],
+   "images": [
+    {
+     "src": "img/matter/matter_3.jpg",
+     "slide": "3",
+     "alt": "Drawings of hydrogen, helium and carbon atoms, each with a nucleus and a cloud, labelled with atomic number and mass number."
+    },
+    {
+     "src": "img/matter/matter_4.jpg",
+     "slide": "4",
+     "alt": "Three carbon nuclei with the same 6 protons but 6, 7 and 8 neutrons."
+    }
+   ],
+   "table": {
+    "head": [
+     "Word",
+     "What stays the same",
+     "What changes"
+    ],
+    "rows": [
+     [
+      "Isotope",
+      "Number of protons",
+      "Number of neutrons"
+     ],
+     [
+      "Ion",
+      "Number of protons",
+      "Number of electrons (so the charge)"
+     ],
+     [
+      "Molecule",
+      "Atoms stay as they are",
+      "Two or more atoms bonded together"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "phases",
+   "title": "Phases of matter and pressure",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 5-6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/matter_5.jpg",
+      "slide": "5",
+      "alt": "Water molecules leaving an ocean surface into the air while others from the air drop back in."
+     },
+     "title": "Phase depends on heat and pressure",
+     "bullets": [
+      "The phase of a substance (solid, liquid or gas) depends on both **temperature** and **pressure**.",
+      "In the picture, water molecules keep leaving the ocean while others from the air drop back in.",
+      "Squeezing a gas at the same temperature can push its molecules close enough to turn it into a liquid."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/matter/matter_6.jpg",
+      "slide": "6",
+      "alt": "Photos of ice, water, steam, lightning and a coloured 3D graph for the different phases."
+     },
+     "title": "Familiar, less familiar and exotic",
+     "bullets": [
+      "**Familiar** phases: solid (ice), liquid (water) and gas (steam).",
+      "**Less familiar**: **plasma**, found in lightning and stars.",
+      "**Exotic**: **Bose-Einstein condensates**, reached only near 0 Kelvin."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does heating change the phase? Heat raises the average energy of motion of the particles, so more of them can break free of the bonds that hold them to their neighbours."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a crowd. Cold: everyone locked arm in arm (solid). Warmer: holding hands loosely (liquid). Hot: everyone running around free (gas)."
+    },
+    {
+     "type": "trap",
+     "text": "Pressure alone does not make a plasma or ionize a gas. That needs very high temperature. Practice test 2 Q19: squeezing a gas at constant temperature could make it a liquid. Textbook extras: some evaporation always happens below the boiling point, and plasma can also be called a gas (the Sun is 'hot gas' or 'plasma'). Slide 6 only names the phases; the temperature link comes from slide 7."
+    }
+   ],
+   "sourceNotes": [
+    "Matter deck slides 5-6",
+    "Cosmic Perspective 5.3 (Phases and Pressure, Fig 5.11)",
+    "Practice test 2 Q19"
+   ],
+   "images": [
+    {
+     "src": "img/matter/matter_5.jpg",
+     "slide": "5",
+     "alt": "Water molecules leaving an ocean surface into the air while others from the air drop back in."
+    },
+    {
+     "src": "img/matter/matter_6.jpg",
+     "slide": "6",
+     "alt": "Photos of ice, water, steam, lightning and a coloured 3D graph for the different phases."
+    }
+   ]
+  },
+  {
+   "id": "changes",
+   "title": "Phase changes as things heat up",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/matter_7.jpg",
+      "slide": "7",
+      "alt": "A tall red temperature arrow with pictures of solid, liquid, gas, broken molecules and ionized plasma stacked up it."
+     },
+     "title": "From solid to plasma",
+     "bullets": [
+      "Going up the temperature arrow: **melting** breaks rigid bonds (solid to liquid) and **evaporation** breaks flexible bonds (liquid to gas).",
+      "Hotter still: **dissociation** breaks molecules into atoms.",
+      "Hotter again: **ionization** strips electrons off atoms and leaves a **plasma** made of ions."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does each step need a higher temperature? Each step breaks a stronger link: the loose bonds between neighbouring molecules first, then the bonds inside molecules, then the grip of the nucleus on its electrons. Stronger links need more energy of motion to break."
+    },
+    {
+     "type": "trick",
+     "text": "Order from cold to hot: Melt, Evaporate, Dissociate, Ionize (M, E, D, I)."
+    },
+    {
+     "type": "trap",
+     "text": "The temperature labels on slide 7 are placed loosely: they run from hundreds of K at the bottom to millions of K at the top. The textbook text says water becomes a plasma at 'several thousand degrees' but its Fig 5.10 puts a fully ionized plasma at millions of K, so do not memorize exact numbers. Practice test 2 Q19 explanation: ionizing needs thousands of K. Slide wording: dissociation = molecules into atoms; the textbook notes water first loses one H to leave OH, which then splits."
+    }
+   ],
+   "sourceNotes": [
+    "Matter deck slide 7",
+    "Cosmic Perspective 5.3 (Molecular Dissociation and Ionization, Fig 5.10)"
+   ],
+   "images": [
+    {
+     "src": "img/matter/matter_7.jpg",
+     "slide": "7",
+     "alt": "A tall red temperature arrow with pictures of solid, liquid, gas, broken molecules and ionized plasma stacked up it."
+    }
+   ]
+  },
+  {
+   "id": "levels",
+   "title": "Energy levels and photon jumps",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 8-9",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/matter_8.jpg",
+      "slide": "8",
+      "alt": "Energy ladder for hydrogen with the ground state at the bottom, excited levels above and arrows between levels."
+     },
+     "title": "Energy levels in hydrogen",
+     "bullets": [
+      "Electrons in atoms can only have certain energies called **energy levels**, like rungs on a ladder.",
+      "The lowest level is the **ground state** (level 1, 0 eV). All higher levels are **excited states**: 10.2, 12.1 and 12.8 eV and so on, up to 13.6 eV where the electron escapes.",
+      "Each element has its own set of levels."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/matter/matter_9.jpg",
+      "slide": "9",
+      "alt": "The same energy ladder with arrows that end on a level marked permitted and arrows that stop between levels marked unpermitted."
+     },
+     "title": "Which jumps are allowed",
+     "bullets": [
+      "An atom gains energy by absorbing a photon and loses energy by emitting one.",
+      "The photon energy must match the gap between two levels exactly. Level 1 to level 2 needs 10.2 eV.",
+      "If the energy does not match a gap, nothing happens. A 5 eV or an 11 eV photon is not absorbed by an atom in level 1."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why only certain energies? Electrons are restricted to discrete levels, and energy must be conserved. So a photon can only be absorbed if it supplies exactly the gap, and an emitted photon carries away exactly the gap."
+    },
+    {
+     "type": "trick",
+     "text": "Ladder, not ramp. You can stand on a rung but not between rungs, and an electron can sit on a level but not between levels."
+    },
+    {
+     "type": "trap",
+     "text": "Too much energy is refused too, not only too little: 11 eV is rejected because it falls between 10.2 and 12.1. The exception is a photon of 13.6 eV or more, which ionizes the atom; the extra energy becomes motion of the free electron (textbook). The gaps shrink higher up: 10.2, then 1.9, then 0.7 eV. The slide diagrams show hydrogen's levels without naming hydrogen; the textbook (Fig 5.12) confirms them."
+    }
+   ],
+   "sourceNotes": [
+    "Matter deck slides 8-9",
+    "Cosmic Perspective 5.3 (Energy Levels in Atoms, Fig 5.12)",
+    "Practice questions Q26 (12.1 eV hits level 1: jumps to level 3)"
+   ],
+   "images": [
+    {
+     "src": "img/matter/matter_8.jpg",
+     "slide": "8",
+     "alt": "Energy ladder for hydrogen with the ground state at the bottom, excited levels above and arrows between levels."
+    },
+    {
+     "src": "img/matter/matter_9.jpg",
+     "slide": "9",
+     "alt": "The same energy ladder with arrows that end on a level marked permitted and arrows that stop between levels marked unpermitted."
+    }
+   ]
+  },
+  {
+   "id": "doppler",
+   "title": "The Doppler effect",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 1",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/doppler_1.jpg",
+      "slide": "1",
+      "alt": "A still train with even waves around it, and a moving train with waves bunched up in front and stretched out behind."
+     },
+     "title": "Waves from a moving source",
+     "bullets": [
+      "The **Doppler effect** is a shift in the wavelength (and frequency) of a wave whenever its source is moving relative to the observer.",
+      "Source moving **away**: the wavelength is **increased** (stretched).",
+      "Source moving **toward** you: the wavelength is **decreased** (squeezed)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does it happen? Each wave crest is let go from a new spot. A source coming toward you lets each crest go a bit closer to you than the last, so crests bunch up (shorter wavelength). A source moving away lets each crest go farther off, so they spread out (longer wavelength)."
+    },
+    {
+     "type": "trick",
+     "text": "Train whistle: 'weeee' while it comes at you (high pitch, short waves), then 'oooh' as it leaves (low pitch, long waves)."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 1 labels the picture 'Increased wavelength' behind the train and 'Decreased wavelength' in front of it. For light, the shifts are usually too small to notice with the eye (textbook)."
+    }
+   ],
+   "sourceNotes": [
+    "Doppler deck slide 1",
+    "Cosmic Perspective 5.4 (The Doppler Effect, Fig 5.21)"
+   ],
+   "images": [
+    {
+     "src": "img/matter/doppler_1.jpg",
+     "slide": "1",
+     "alt": "A still train with even waves around it, and a moving train with waves bunched up in front and stretched out behind."
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "title": "Redshift and blueshift",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/doppler_2.jpg",
+      "slide": "2",
+      "alt": "Five rainbow strips with coloured lines that move right for moving away and left for moving toward."
+     },
+     "title": "Reading a shifted spectrum",
+     "bullets": [
+      "A **spectral line** is a thin line at one exact wavelength. For a still object, each line sits at its normal 'rest' position.",
+      "Moving **away**: every line moves toward longer wavelengths, a **redshift**. Moving **toward** us: lines move to shorter wavelengths, a **blueshift**.",
+      "A bigger shift means a faster speed. A large redshift is moving away faster."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are spectral lines good speedometers? Each element makes lines at known wavelengths, measured in laboratory experiments. Compare where a line appears with where it should be, and the size of the gap tells you the speed."
+    },
+    {
+     "type": "trick",
+     "text": "Red = Receding (going away). Blue = Bearing down on us (coming closer)."
+    },
+    {
+     "type": "trap",
+     "text": "Redshift and blueshift only describe the direction of the wavelength change; astronomers use the words even for ultraviolet or radio light. Textbook example: a line with rest wavelength 121.6 nm (ultraviolet) seen at 120.5 nm is a blueshift because the wavelength got shorter. On slide 2 the wavelength axis points right, so redshifted lines drift right."
+    }
+   ],
+   "sourceNotes": [
+    "Doppler deck slide 2",
+    "Cosmic Perspective 5.4 (Fig 5.22)"
+   ],
+   "images": [
+    {
+     "src": "img/matter/doppler_2.jpg",
+     "slide": "2",
+     "alt": "Five rainbow strips with coloured lines that move right for moving away and left for moving toward."
+    }
+   ]
+  },
+  {
+   "id": "radial",
+   "title": "Only toward or away counts",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/doppler_3.jpg",
+      "slide": "3",
+      "alt": "Earth with three balls: one moving straight away, one moving sideways, one moving diagonally away."
+     },
+     "title": "Three stars, same speed",
+     "bullets": [
+      "The Doppler shift tells us only about the part of the motion directly **toward or away** from us.",
+      "Star 1 moves straight away, so its shift gives its full speed. Star 3 moves diagonally, so its shift gives only the 'away' part of its speed.",
+      "An object moving **perpendicular** to us (like star 2) has no Doppler shift at all."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does sideways motion not count? A Doppler shift comes from the distance to us changing, which squeezes or stretches the wave crests. Moving across our line of sight does not change the distance, so nothing is squeezed or stretched."
+    },
+    {
+     "type": "trick",
+     "text": "The Doppler shift is like a radar gun: it only reads the speed along the line between the object and you."
+    },
+    {
+     "type": "trap",
+     "text": "Zero shift does NOT mean the object is standing still; it may be moving purely sideways. The textbook adds that sideways speed has to be found by watching the position change in the sky over time. The 'distance does not change' wording is the standard reasoning, not from the slide (outside source)."
+    }
+   ],
+   "sourceNotes": [
+    "Doppler deck slide 3",
+    "Cosmic Perspective 5.4 (Components of Motion, Fig 5.23)"
+   ],
+   "images": [
+    {
+     "src": "img/matter/doppler_3.jpg",
+     "slide": "3",
+     "alt": "Earth with three balls: one moving straight away, one moving sideways, one moving diagonally away."
+    }
+   ]
+  },
+  {
+   "id": "rotation",
+   "title": "Spinning galaxies and stars",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/matter/doppler_4.jpg",
+      "slide": "4",
+      "alt": "A spinning edge-on galaxy with a blue wave on its left side and a red wave on its right side."
+     },
+     "title": "One side comes, one side goes",
+     "bullets": [
+      "In an edge-on spinning galaxy, one side moves **toward** us (blueshift) and the other side moves **away** (redshift).",
+      "Measuring the Doppler shifts on both sides gives the galaxy's **rotation rate**.",
+      "A spinning star seen as a single dot blends its blue and red sides, so each spectral line looks **wider**. The faster it spins, the wider the lines."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is the centre not shifted? Spinning carries the middle around in place, so it moves neither toward nor away from us. Only the two edges have motion along our line of sight."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a merry-go-round seen from the side: the child coming at you is blue, the child leaving you is red."
+    },
+    {
+     "type": "trap",
+     "text": "Rotation makes spectral lines wider, not thinner, and the blue and red sides stay fixed; they do not flip back and forth (practice test 2 Q24 explanation). The widening effect for a single dot is from the textbook (Fig 5.24), not slide 4. On slide 4 the left side is blue and the right side is red."
+    }
+   ],
+   "sourceNotes": [
+    "Doppler deck slide 4",
+    "Cosmic Perspective 5.4 (Rotation Rates, Fig 5.24)",
+    "Practice test 2 Q24"
+   ],
+   "images": [
+    {
+     "src": "img/matter/doppler_4.jpg",
+     "slide": "4",
+     "alt": "A spinning edge-on galaxy with a blue wave on its left side and a red wave on its right side."
+    }
+   ]
+  },
+  {
+   "id": "calc",
+   "title": "Doppler speed calculation",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 1-2 (idea); formula from Cosmic Perspective Mathematical Insight 5.3",
+   "steps": [
+    {
+     "title": "The speed formula",
+     "bullets": [
+      "For speeds well below the speed of light: **v / c = (seen - rest) / rest**, where 'rest' is the normal wavelength of a line and 'seen' is the wavelength you measure. Use c = 3 x 10^5 km/s.",
+      "A **positive** answer means redshift and moving **away**. A **negative** answer means blueshift and moving **toward** us.",
+      "The shift is a fraction of the rest wavelength, and that same fraction of the speed of light is the speed. A 0.1% shift means 0.1% of c = 300 km/s."
+     ]
+    },
+    {
+     "title": "Worked examples",
+     "bullets": [
+      "Vega: rest 656.285 nm, seen 656.255 nm. (656.255 - 656.285) / 656.285 = -4.57 x 10^-5, so v = -4.57 x 10^-5 x 3 x 10^5 = about -13.7 km/s. Vega moves toward us at 13.7 km/s.",
+      "A hydrogen line with rest wavelength 121.6 nm seen at 122.9 nm: (122.9 - 121.6) / 121.6 = 0.0107, so v = about +3,200 km/s, moving away.",
+      "Same line seen at 120.5 nm: (120.5 - 121.6) / 121.6 = -0.00905, so v = about -2,700 km/s, moving toward us."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why divide by the rest wavelength? What matters is how big the shift is compared with the original wavelength. A line shifted by 1% means the object moves at about 1% of the speed of light."
+    },
+    {
+     "type": "trick",
+     "text": "Say it as: 'seen minus rest, over rest, times c'. If seen is bigger than rest, the answer is positive and the object is going away."
+    },
+    {
+     "type": "trap",
+     "text": "The slides give no formula, only the idea that a bigger shift means a faster speed and the redshift or blueshift names. The formula, the c = 3 x 10^5 km/s value, the Vega example and the hydrogen 121.6 nm example are from the textbook (Mathematical Insight 5.3; end-of-chapter problems 49 and 61). The formula works only for speeds below a few percent of c. Keep the sign: negative means toward us."
+    }
+   ],
+   "sourceNotes": [
+    "No slide gives the formula (slides 1-2 only say a bigger shift means a faster speed).",
+    "Cosmic Perspective Mathematical Insight 5.3 and problem 61 (formula and numbers)"
+   ],
+   "images": []
+  },
+  {
+   "id": "spectra",
+   "title": "Three kinds of spectra",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 5",
+   "steps": [
+    {
+     "title": "Continuous, emission, absorption",
+     "bullets": [
+      "**Continuous spectrum**: a smooth rainbow with no gaps. It comes from a hot, dense source such as a light bulb or the Sun's interior.",
+      "**Emission line spectrum**: bright lines at certain wavelengths on a dark background. It comes from a thin, warm gas seen with no bright source behind it.",
+      "**Absorption line spectrum**: dark lines on top of a rainbow. It comes from a bright continuous source seen through a cooler gas."
+     ]
+    },
+    {
+     "title": "Why the lines appear",
+     "bullets": [
+      "In a warm gas, collisions lift electrons to higher levels. They fall back and emit photons at exact wavelengths: **emission lines**.",
+      "A cooler gas in front of a bright source absorbs only photons that match its jumps. It re-emits them in random directions, so few reach us: dark **absorption lines**.",
+      "Emission and absorption lines of one element sit at the same wavelengths, because they are the same jumps in opposite directions."
+     ]
+    },
+    {
+     "title": "Spectral fingerprints",
+     "bullets": [
+      "Each atom and ion has its own set of energy levels, so it has a unique **spectral fingerprint**.",
+      "So we can work out the **chemical composition** of a light-emitting object by reading its spectrum."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a cool gas in front of a hot source leave dark lines? The atoms take out only the photons that match their energy gaps. Those photons are then sent off in all directions, so far fewer travel on toward us than before, and the rainbow shows dark gaps at those wavelengths."
+    },
+    {
+     "type": "trick",
+     "text": "Bright lines = the gas glowing on its own (emission). Dark lines = the gas standing in front of a light (absorption). On a graph, emission shows as spikes and absorption as dips."
+    },
+    {
+     "type": "trap",
+     "text": "Cool gas in front of a continuous source gives an ABSORPTION spectrum, not a continuous one and not an emission one (practice test 2 Q21). A thin warm gas with no bright source behind it gives EMISSION lines (practice questions Q27). The Sun's dark lines come from cooler, thinner outer gas absorbing light from the hotter interior (practice questions Q30). The slide only lists the three spectrum types; the reasons are from the textbook (Figs 5.14-5.15)."
+    }
+   ],
+   "sourceNotes": [
+    "Doppler deck slide 5",
+    "Cosmic Perspective 5.4 (three basic types of spectra, Figs 5.14-5.17)",
+    "Practice test 2 Q21; practice questions Q27, Q30"
+   ],
+   "images": []
+  },
+  {
+   "id": "thermal",
+   "title": "Thermal spectra and temperature",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 6",
+   "steps": [
+    {
+     "title": "Hotter means bluer peak",
+     "bullets": [
+      "Practically all large objects (stars, planets, rocks, even people) give off a smooth **thermal spectrum**.",
+      "The shape tells us the temperature: a peak at **shorter wavelengths** means a **hotter** object.",
+      "Hotter objects also give off more light from each square metre, at every wavelength."
+     ]
+    },
+    {
+     "title": "Examples",
+     "bullets": [
+      "A person (310 K) glows mostly in the infrared, so we cannot see it. A 3000 K star looks red-orange.",
+      "The Sun (5800 K) peaks near green light (about 500 nm). Hotter stars peak in the ultraviolet and look blue-white.",
+      "A glowing poker goes from dim red to bright white as it gets hotter."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the shape depend only on temperature? Inside a dense object, photons bounce around and share energy with the atoms until their energies match the atoms' average motion. That average motion is the temperature, whatever the object is made of."
+    },
+    {
+     "type": "trick",
+     "text": "Red-hot is cooler, white-hot is hotter. Cool stars look red, hot stars look blue-white."
+    },
+    {
+     "type": "trap",
+     "text": "A peak at a SHORTER wavelength means HOTTER, not cooler (practice test 2 Q23). The 'more light per square metre' law is per unit area: a very big 3000 K star can emit more total light than a small 15,000 K star (textbook). Slide 6 states only the peak rule; the examples and the per-area law are from the textbook (Figs 5.19-5.20)."
+    }
+   ],
+   "sourceNotes": [
+    "Doppler deck slide 6",
+    "Cosmic Perspective 5.4 (Thermal Radiation, Figs 5.19-5.20)",
+    "Practice test 2 Q22-Q23"
+   ],
+   "images": []
+  }
+ ],
+ "table": {
+  "title": "What each clue in light tells us",
+  "head": [
+   "Clue in the light",
+   "What you see",
+   "What it tells you"
+  ],
+  "rows": [
+   [
+    "Thermal spectrum",
+    "Smooth rainbow with a peak",
+    "Temperature (peak at shorter wavelength = hotter)"
+   ],
+   [
+    "Emission lines",
+    "Bright lines on dark",
+    "Composition of a thin warm gas"
+   ],
+   [
+    "Absorption lines",
+    "Dark lines on a rainbow",
+    "Composition of a cooler gas in front of a hot source"
+   ],
+   [
+    "Doppler shift",
+    "Lines moved from rest position",
+    "Speed toward or away (redshift = away, blueshift = toward)"
+   ],
+   [
+    "Line width",
+    "Broader lines",
+    "Faster rotation"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "ma-c1",
+   "front": "Structure of an atom",
+   "back": "A nucleus of protons (positive) and neutrons (no charge), surrounded by an electron cloud of negative electrons.",
+   "short": "Nucleus plus electron cloud",
+   "src": "Matter deck slide 2"
+  },
+  {
+   "id": "ma-c2",
+   "front": "Atomic number",
+   "back": "The number of protons in the nucleus. It decides which element the atom is.",
+   "short": "Number of protons",
+   "src": "Matter deck slide 3"
+  },
+  {
+   "id": "ma-c3",
+   "front": "Atomic mass number",
+   "back": "The number of protons plus neutrons. Carbon-12 has 6 + 6 = 12.",
+   "short": "Protons plus neutrons",
+   "src": "Matter deck slide 3"
+  },
+  {
+   "id": "ma-c4",
+   "front": "Molecule",
+   "back": "Two or more atoms chemically bonded together, such as H2O or CO2.",
+   "short": "Two or more atoms bonded",
+   "src": "Matter deck slide 3"
+  },
+  {
+   "id": "ma-c5",
+   "front": "Isotope",
+   "back": "Same number of protons but a different number of neutrons, for example carbon-12 and carbon-14.",
+   "short": "Same protons, different neutrons",
+   "src": "Matter deck slide 4"
+  },
+  {
+   "id": "ma-c6",
+   "front": "Ion",
+   "back": "Same number of protons but a different number of electrons, such as He2+ or Cl-.",
+   "short": "Same protons, different electrons",
+   "src": "Matter deck slide 4"
+  },
+  {
+   "id": "ma-c7",
+   "front": "How to find an atom's charge",
+   "back": "Charge = number of protons minus number of electrons. A neutral atom has equal numbers, and losing electrons leaves a positive ion.",
+   "short": "Charge = protons minus electrons",
+   "src": "Matter deck slide 4; Cosmic Perspective 5.3"
+  },
+  {
+   "id": "ma-c8",
+   "front": "Calcium-44, doubly ionized: 20 protons, 24 neutrons, 18 electrons",
+   "back": "Atomic number 20, atomic mass number 44 (20 + 24), charge 2+ (20 - 18).",
+   "short": "Atomic number 20, mass number 44, 2+",
+   "src": "Practice test 2 Q18; Matter deck slides 3-4"
+  },
+  {
+   "id": "ma-c9",
+   "front": "What decides the phase of a substance?",
+   "back": "Both temperature and pressure. Temperature is the main driver, but squeezing a gas can turn it into a liquid.",
+   "short": "Temperature and pressure together",
+   "src": "Matter deck slide 5; practice test 2 Q19"
+  },
+  {
+   "id": "ma-c10",
+   "front": "Plasma",
+   "back": "A hot gas of ions and free electrons, made when atoms are ionized. Found in lightning and stars.",
+   "short": "Ionized gas of ions and electrons",
+   "src": "Matter deck slides 6-7"
+  },
+  {
+   "id": "ma-c11",
+   "front": "Bose-Einstein condensate",
+   "back": "An exotic phase of matter reached near 0 Kelvin.",
+   "short": "Exotic phase near 0 Kelvin",
+   "src": "Matter deck slide 6"
+  },
+  {
+   "id": "ma-c12",
+   "front": "Melting",
+   "back": "Breaking of rigid chemical bonds, changing a solid into a liquid.",
+   "short": "Rigid bonds break: solid to liquid",
+   "src": "Matter deck slide 7"
+  },
+  {
+   "id": "ma-c13",
+   "front": "Evaporation",
+   "back": "Breaking of flexible chemical bonds, turning a liquid into a gas.",
+   "short": "Flexible bonds break: liquid to gas",
+   "src": "Matter deck slide 7"
+  },
+  {
+   "id": "ma-c14",
+   "front": "Dissociation",
+   "back": "The breaking of molecules into atoms.",
+   "short": "Molecules break into atoms",
+   "src": "Matter deck slide 7"
+  },
+  {
+   "id": "ma-c15",
+   "front": "Ionization",
+   "back": "The stripping of electrons from atoms, which makes a plasma of ions.",
+   "short": "Electrons stripped off atoms",
+   "src": "Matter deck slide 7"
+  },
+  {
+   "id": "ma-c16",
+   "front": "Order of phase changes as temperature rises",
+   "back": "Melting, evaporation, dissociation, ionization (solid, liquid, gas, atoms, plasma).",
+   "short": "Melt, evaporate, dissociate, ionize",
+   "src": "Matter deck slide 7"
+  },
+  {
+   "id": "ma-c17",
+   "front": "Energy levels of electrons",
+   "back": "Electrons in atoms can only have certain, discrete energies, like rungs of a ladder. These levels are unique to each element.",
+   "short": "Electrons have only certain energies",
+   "src": "Matter deck slides 8, 10"
+  },
+  {
+   "id": "ma-c18",
+   "front": "Ground state",
+   "back": "The lowest energy level of an atom (level 1, 0 eV in hydrogen).",
+   "short": "Lowest energy level",
+   "src": "Matter deck slide 8"
+  },
+  {
+   "id": "ma-c19",
+   "front": "Excited state",
+   "back": "Any energy level above the ground state. In hydrogen: 10.2, 12.1, 12.8 eV and so on up to 13.6 eV.",
+   "short": "Any level above the ground state",
+   "src": "Matter deck slide 8; Cosmic Perspective Fig 5.12"
+  },
+  {
+   "id": "ma-c20",
+   "front": "Hydrogen energy levels in eV",
+   "back": "Level 1 = 0, level 2 = 10.2, level 3 = 12.1, level 4 = 12.8, ionization level = 13.6 eV.",
+   "short": "0, 10.2, 12.1, 12.8, 13.6 eV",
+   "src": "Matter deck slides 8-9"
+  },
+  {
+   "id": "ma-c21",
+   "front": "When can an atom absorb or emit a photon?",
+   "back": "Only when the photon energy exactly equals the gap between two energy levels. Otherwise no transition happens.",
+   "short": "Photon energy must match a level gap",
+   "src": "Matter deck slide 9"
+  },
+  {
+   "id": "ma-c22",
+   "front": "Energy needed to take hydrogen from level 1 to level 2",
+   "back": "10.2 eV. A 5 eV or 11 eV photon will not be absorbed by an atom in level 1.",
+   "short": "10.2 eV; others are refused",
+   "src": "Matter deck slide 9; Cosmic Perspective 5.3"
+  },
+  {
+   "id": "ma-c23",
+   "front": "Doppler effect",
+   "back": "A shift in the wavelength or frequency of a wave whenever its source moves relative to the observer.",
+   "short": "Wave shift caused by source motion",
+   "src": "Doppler deck slide 1"
+  },
+  {
+   "id": "ma-c24",
+   "front": "Source moving away: what happens to wavelength?",
+   "back": "The wavelength is increased (stretched). For light this is a redshift.",
+   "short": "Wavelength increased, redshift",
+   "src": "Doppler deck slides 1-2"
+  },
+  {
+   "id": "ma-c25",
+   "front": "Source moving toward you: what happens to wavelength?",
+   "back": "The wavelength is decreased (squeezed). For light this is a blueshift.",
+   "short": "Wavelength decreased, blueshift",
+   "src": "Doppler deck slides 1-2"
+  },
+  {
+   "id": "ma-c26",
+   "front": "What does a bigger Doppler shift mean?",
+   "back": "A faster speed. A large redshift means moving away faster; a large blueshift means moving toward us faster.",
+   "short": "Bigger shift means faster speed",
+   "src": "Doppler deck slide 2"
+  },
+  {
+   "id": "ma-c27",
+   "front": "What part of motion does the Doppler shift measure?",
+   "back": "Only the part directly toward or away from us.",
+   "short": "Only toward or away motion",
+   "src": "Doppler deck slide 3"
+  },
+  {
+   "id": "ma-c28",
+   "front": "Object moving perpendicular to our line of sight",
+   "back": "It has no Doppler shift at all.",
+   "short": "No Doppler shift",
+   "src": "Doppler deck slide 3"
+  },
+  {
+   "id": "ma-c29",
+   "front": "Edge-on rotating galaxy: Doppler shifts",
+   "back": "One side moves toward us (blueshift) and the other moves away (redshift). Comparing both sides gives the rotation rate.",
+   "short": "One side blue, other side red",
+   "src": "Doppler deck slide 4; practice test 2 Q24"
+  },
+  {
+   "id": "ma-c30",
+   "front": "Rotating star seen as a single dot",
+   "back": "Its spectral lines look broader, and the faster it spins the broader they are.",
+   "short": "Faster spin means broader lines",
+   "src": "Cosmic Perspective Fig 5.24 (not on the slides)"
+  },
+  {
+   "id": "ma-c31",
+   "front": "Doppler speed formula",
+   "back": "v / c = (seen wavelength - rest wavelength) / rest wavelength, with c = 3 x 10^5 km/s. Positive = moving away, negative = moving toward us.",
+   "short": "v = c x (seen - rest) / rest",
+   "src": "Cosmic Perspective Mathematical Insight 5.3 (formula not on slides)"
+  },
+  {
+   "id": "ma-c32",
+   "front": "Continuous spectrum",
+   "back": "A smooth rainbow with no gaps, from a hot dense source such as a light bulb.",
+   "short": "Smooth rainbow, no lines",
+   "src": "Doppler deck slide 5; Cosmic Perspective 5.4"
+  },
+  {
+   "id": "ma-c33",
+   "front": "Emission line spectrum",
+   "back": "Bright lines at specific wavelengths on a dark background, from a thin warm gas seen without a bright source behind it.",
+   "short": "Bright lines on dark background",
+   "src": "Doppler deck slide 5; Cosmic Perspective 5.4"
+  },
+  {
+   "id": "ma-c34",
+   "front": "Absorption line spectrum",
+   "back": "Dark lines on a continuous rainbow, made when a bright source shines through a cooler gas.",
+   "short": "Dark lines on a rainbow",
+   "src": "Doppler deck slide 5; practice test 2 Q21"
+  },
+  {
+   "id": "ma-c35",
+   "front": "Spectral fingerprint",
+   "back": "Each atom or ion has a unique set of lines, so spectra reveal the chemical composition of a light-emitting object.",
+   "short": "Unique line pattern of each element",
+   "src": "Doppler deck slide 5"
+  },
+  {
+   "id": "ma-c36",
+   "front": "What does the shape of a thermal spectrum tell us?",
+   "back": "The object's temperature. A peak at shorter wavelengths means a hotter object.",
+   "short": "Temperature; short-wavelength peak is hotter",
+   "src": "Doppler deck slide 6"
+  },
+  {
+   "id": "ma-c37",
+   "front": "Which objects emit thermal spectra?",
+   "back": "Practically all large objects, such as stars, planets, rocks and people.",
+   "short": "Practically all large objects",
+   "src": "Doppler deck slide 6"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "ma-1",
+   "q": "Carbon-12 and carbon-14 are ______.",
+   "options": [
+    "different chemical elements",
+    "ions of each other",
+    "isotopes of each other",
+    "different molecules",
+    "different phases of carbon"
+   ],
+   "answer": 2,
+   "why": "Both have 6 protons, so both are carbon, but they have 6 and 8 neutrons. Same protons with different neutrons means isotopes.",
+   "source": "Matter deck slide 4; practice questions Q25"
+  },
+  {
+   "id": "ma-2",
+   "q": "An atom of doubly ionized calcium-44 has 20 protons, 24 neutrons and 18 electrons. What are its atomic number, atomic mass number and charge?",
+   "options": [
+    "20, 44, 2+",
+    "20, 24, 2+",
+    "20, 44, 2-",
+    "44, 18, 2-",
+    "44, 24, 2+"
+   ],
+   "answer": 0,
+   "why": "Atomic number = protons = 20. Mass number = protons + neutrons = 20 + 24 = 44. Charge = protons - electrons = 20 - 18 = +2.",
+   "source": "Matter deck slides 3-4; practice test 2 Q18"
+  },
+  {
+   "id": "ma-3",
+   "q": "An atom has 8 protons, 9 neutrons and 10 electrons. What are its atomic number, atomic mass number and charge?",
+   "options": [
+    "8, 9, 2-",
+    "8, 17, 2+",
+    "17, 8, 2-",
+    "8, 17, 2-",
+    "9, 17, 2+"
+   ],
+   "answer": 3,
+   "why": "Atomic number = 8 protons. Mass number = 8 + 9 = 17. Charge = 8 - 10 = -2, so 2-.",
+   "source": "Matter deck slides 3-4 (same method as practice test 2 Q18)"
+  },
+  {
+   "id": "ma-4",
+   "q": "Which of the following statements are correct?\nI. Neutrons carry no electric charge.\nII. Isotopes of one element have different numbers of protons.\nIII. An ion has a different number of electrons than a neutral atom of that element.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "I and III only",
+    "all of the above"
+   ],
+   "answer": 3,
+   "why": "Statement II is false: isotopes have the same protons and different neutrons. I and III match the definitions of neutron and ion.",
+   "source": "Matter deck slides 2-4"
+  },
+  {
+   "id": "ma-5",
+   "q": "Which of the following statements is INCORRECT?",
+   "options": [
+    "The phase of a substance depends on both temperature and pressure.",
+    "Evaporation turns a gas into a liquid.",
+    "Ionization strips electrons from atoms and makes a plasma.",
+    "Melting breaks rigid bonds and turns a solid into a liquid.",
+    "Dissociation breaks molecules into atoms."
+   ],
+   "answer": 1,
+   "why": "Evaporation goes the other way: it breaks flexible bonds and turns a liquid into a gas. The other four statements match the definitions.",
+   "source": "Matter deck slides 5 and 7"
+  },
+  {
+   "id": "ma-6",
+   "q": "As a block of ice is heated to higher and higher temperatures, which order of changes is correct?",
+   "options": [
+    "ionization, dissociation, evaporation, melting",
+    "melting, evaporation, dissociation, ionization",
+    "evaporation, melting, ionization, dissociation",
+    "melting, dissociation, evaporation, ionization",
+    "evaporation, melting, dissociation, ionization"
+   ],
+   "answer": 1,
+   "why": "Weak bonds break first (melting, then evaporation), then the bonds inside molecules (dissociation), and last the electrons are stripped (ionization).",
+   "source": "Matter deck slide 7 (temperature arrow)"
+  },
+  {
+   "id": "ma-7",
+   "q": "What might happen to a gas if its pressure is increased while its temperature stays the same?",
+   "options": [
+    "It could become ionized.",
+    "It could increase its volume.",
+    "It could gain mass.",
+    "It could change phase into a liquid.",
+    "It could change phase into a plasma."
+   ],
+   "answer": 3,
+   "why": "Phase depends on pressure as well as temperature. Squeezing pushes the molecules together so they can bond into a liquid. Ionization and plasma need very high temperature.",
+   "source": "Matter deck slide 5; practice test 2 Q19"
+  },
+  {
+   "id": "ma-8",
+   "q": "Which of the following statements are correct?\nI. Lightning is an example of plasma.\nII. Steam is a liquid.\nIII. Bose-Einstein condensates are achieved near 0 Kelvin.",
+   "options": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "I and III only",
+    "all of the above"
+   ],
+   "answer": 3,
+   "why": "Steam is the gas phase of water, so II is false. Lightning is plasma and Bose-Einstein condensates need temperatures near 0 K.",
+   "source": "Matter deck slide 6"
+  },
+  {
+   "id": "ma-9",
+   "q": "An electron in a hydrogen atom is in level 1 (the ground state). A photon with exactly 12.1 eV of energy hits it. What happens?",
+   "options": [
+    "The photon passes through without being absorbed.",
+    "The electron jumps to level 3.",
+    "The electron jumps to level 2.",
+    "The atom is ionized.",
+    "The electron jumps to level 4."
+   ],
+   "answer": 1,
+   "why": "Level 3 sits at 12.1 eV above the ground state, so the photon energy matches that gap exactly and the electron is lifted to level 3.",
+   "source": "Matter deck slides 8-9; practice questions Q26"
+  },
+  {
+   "id": "ma-10",
+   "q": "A hydrogen atom in level 1 meets a photon of 11 eV. Why is the photon NOT absorbed?",
+   "options": [
+    "11 eV is too weak to affect any atom.",
+    "Photons can only be absorbed when they have more than 13.6 eV.",
+    "The atom absorbs 10.2 eV and reflects the extra 0.8 eV.",
+    "Hydrogen has no energy levels.",
+    "11 eV is more than the 10.2 eV needed for level 2 but less than the 12.1 eV needed for level 3, so it matches no gap."
+   ],
+   "answer": 4,
+   "why": "Electrons can only accept the exact energy that separates two levels. 11 eV falls between the first two gaps, so nothing happens.",
+   "source": "Matter deck slide 9; Cosmic Perspective 5.3"
+  },
+  {
+   "id": "ma-11",
+   "q": "In hydrogen, an electron falls from level 3 (12.1 eV) to level 2 (10.2 eV). What is the energy of the photon it emits?",
+   "options": [
+    "10.2 eV",
+    "1.9 eV",
+    "12.1 eV",
+    "22.3 eV",
+    "2.6 eV"
+   ],
+   "answer": 1,
+   "why": "Energy is conserved, so the photon carries away the gap: 12.1 - 10.2 = 1.9 eV.",
+   "source": "Matter deck slides 8-9 (level values); Cosmic Perspective 5.3 (energy conserved)"
+  },
+  {
+   "id": "ma-12",
+   "q": "Which of these photons can a hydrogen atom in level 1 absorb?\nI. 10.2 eV\nII. 11.0 eV\nIII. 12.8 eV",
+   "options": [
+    "I only",
+    "II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "Only photons that match a gap work. 10.2 eV reaches level 2 and 12.8 eV reaches level 4. 11.0 eV matches no gap.",
+   "source": "Matter deck slides 8-9"
+  },
+  {
+   "id": "ma-13",
+   "q": "A hydrogen atom in the ground state absorbs a 14.6 eV photon. The ionization level is 13.6 eV. What happens?",
+   "options": [
+    "The electron escapes and carries off the extra 1.0 eV as motion.",
+    "The photon is refused because it is too big.",
+    "The electron moves to level 4.",
+    "The electron escapes with 14.6 eV of motion.",
+    "The electron escapes with 0 eV of motion."
+   ],
+   "answer": 0,
+   "why": "13.6 eV frees the electron, so the 14.6 - 13.6 = 1.0 eV left over becomes motion of the free electron.",
+   "source": "Matter deck slide 8 (ionization level 13.6 eV); Cosmic Perspective 5.3"
+  },
+  {
+   "id": "ma-14",
+   "q": "A continuous light source is placed behind a transparent container of cool atomic gas. A spectrometer in front of the container records the light. What kind of spectrum is obtained?",
+   "options": [
+    "A continuous spectrum, because the light just passes through the gas.",
+    "An emission line spectrum, because the gas releases photons.",
+    "A continuous spectrum, because the source always dominates.",
+    "An absorption line spectrum, because the gas re-emits the absorbed photons in random directions, so few reach the spectrometer.",
+    "No spectrum, because the gas blocks all the light."
+   ],
+   "answer": 3,
+   "why": "Cool atoms absorb only photons matching their energy gaps and send them out in random directions. Dark lines appear at those wavelengths on the rainbow.",
+   "source": "Doppler deck slide 5; practice test 2 Q21"
+  },
+  {
+   "id": "ma-15",
+   "q": "A thin, warm cloud of gas is observed with no bright light source behind it. What kind of spectrum do we see?",
+   "options": [
+    "A continuous spectrum",
+    "An emission line spectrum",
+    "An absorption line spectrum",
+    "A thermal spectrum",
+    "No spectrum at all"
+   ],
+   "answer": 1,
+   "why": "Collisions lift electrons to higher levels. When they fall back, they emit photons at exact wavelengths, giving bright lines on a dark background.",
+   "source": "Doppler deck slide 5; practice questions Q27"
+  },
+  {
+   "id": "ma-16",
+   "q": "Why do we see dark absorption lines in the Sun's visible spectrum?",
+   "options": [
+    "Earth's atmosphere absorbs those colours.",
+    "Sunspots block those colours.",
+    "The Sun is moving away from Earth.",
+    "The Sun is too cool to emit those colours.",
+    "Cooler, thinner gas in the Sun's outer layer absorbs specific wavelengths from the hotter interior."
+   ],
+   "answer": 4,
+   "why": "A hot, continuous light source seen through cooler gas gives an absorption line spectrum. For the Sun, the cooler gas is its outer layer.",
+   "source": "Doppler deck slide 5; practice questions Q30; Cosmic Perspective 5.4"
+  },
+  {
+   "id": "ma-17",
+   "q": "In hydrogen, the transition from level 3 down to level 2 gives an emission line at 656.3 nm. At what wavelength would hydrogen absorb light when its electron jumps from level 2 up to level 3?",
+   "options": [
+    "656.3 nm, the same wavelength",
+    "A longer wavelength than 656.3 nm",
+    "A shorter wavelength than 656.3 nm",
+    "121.6 nm",
+    "It cannot absorb at this transition"
+   ],
+   "answer": 0,
+   "why": "Absorption and emission use the same energy gap in opposite directions, so the lines sit at the same wavelength.",
+   "source": "Doppler deck slide 5 (unique fingerprint); Cosmic Perspective Fig 5.15"
+  },
+  {
+   "id": "ma-18",
+   "q": "A light source is moving toward you. What happens to the wavelength of its light as you measure it, and what is this called?",
+   "options": [
+    "It becomes longer; blueshift",
+    "It becomes shorter; redshift",
+    "It becomes longer; redshift",
+    "It becomes shorter; blueshift",
+    "It stays the same; no shift"
+   ],
+   "answer": 3,
+   "why": "Waves from an approaching source are squeezed together, so the wavelength decreases. Shorter visible wavelengths are bluer, hence blueshift.",
+   "source": "Doppler deck slides 1-2"
+  },
+  {
+   "id": "ma-19",
+   "q": "A hydrogen line has a rest wavelength of 121.6 nm (ultraviolet) but is seen at 120.5 nm in a star. Which statement is correct?",
+   "options": [
+    "The line is redshifted and the star is moving away from us.",
+    "The line is blueshifted and the star is moving toward us.",
+    "The line is blueshifted and the star is moving away from us.",
+    "The line is not shifted because ultraviolet light cannot be Doppler shifted.",
+    "The line is redshifted and the star is moving toward us."
+   ],
+   "answer": 1,
+   "why": "120.5 nm is shorter than 121.6 nm. A shift to shorter wavelengths is called a blueshift and means moving toward us, even though the light is ultraviolet.",
+   "source": "Doppler deck slide 2; Cosmic Perspective 5.4 (Think about it)"
+  },
+  {
+   "id": "ma-20",
+   "q": "A hydrogen line with a rest wavelength of 656.3 nm appears at 660.0 nm in a star's spectrum. What can we conclude?",
+   "options": [
+    "The star is moving toward us.",
+    "The star is hotter than the Sun.",
+    "The star is cooler than the Sun.",
+    "The star is not moving relative to us.",
+    "The star is moving away from us."
+   ],
+   "answer": 4,
+   "why": "660.0 nm is longer than the rest wavelength, a redshift, so the star is moving away from us. Nothing here tells us its temperature.",
+   "source": "Doppler deck slides 1-2; practice questions Q29"
+  },
+  {
+   "id": "ma-21",
+   "q": "A spectral line has a rest wavelength of 500 nm and is seen at 501 nm. Use v = c x (seen - rest) / rest with c = 3 x 10^5 km/s. What is the radial velocity?",
+   "options": [
+    "600 km/s toward us",
+    "6 km/s away from us",
+    "600 km/s away from us",
+    "300 km/s away from us",
+    "60 km/s toward us"
+   ],
+   "answer": 2,
+   "why": "(501 - 500) / 500 = 0.002. Then 0.002 x 3 x 10^5 km/s = 600 km/s. The wavelength got longer, so it is moving away.",
+   "source": "Cosmic Perspective Mathematical Insight 5.3; Doppler deck slide 2 (redshift = away)"
+  },
+  {
+   "id": "ma-22",
+   "q": "A spectral line has a rest wavelength of 600.0 nm and is seen at 599.4 nm. Use v = c x (seen - rest) / rest with c = 3 x 10^5 km/s. What is the radial velocity?",
+   "options": [
+    "300 km/s toward us",
+    "300 km/s away from us",
+    "600 km/s toward us",
+    "30 km/s toward us",
+    "0.1 km/s away from us"
+   ],
+   "answer": 0,
+   "why": "(599.4 - 600.0) / 600.0 = -0.001. Then -0.001 x 3 x 10^5 km/s = -300 km/s. The negative sign means blueshift, so it is moving toward us.",
+   "source": "Cosmic Perspective Mathematical Insight 5.3; Doppler deck slide 2"
+  },
+  {
+   "id": "ma-23",
+   "q": "The hydrogen line with rest wavelength 121.6 nm is seen at 120.5 nm in star A, 121.2 nm in star B, 121.9 nm in star C and 122.9 nm in star D. Without calculating, which statement is correct?",
+   "options": [
+    "A and B move away from us, C and D move toward us, and D is fastest.",
+    "A and B move toward us, C and D move away, and A is the fastest of all four.",
+    "A and B move toward us, C and D move away, and D is the fastest of all four.",
+    "All four stars move away from us, and D is fastest.",
+    "A and B move toward us, C and D move away, and B is the fastest of all four."
+   ],
+   "answer": 2,
+   "why": "A and B are shorter than 121.6 nm (blueshift, toward). C and D are longer (redshift, away). The biggest shift is D at +1.3 nm, bigger than A at -1.1 nm, so D is fastest.",
+   "source": "Doppler deck slide 2; Cosmic Perspective problem 49"
+  },
+  {
+   "id": "ma-24",
+   "q": "A star's spectral lines show no Doppler shift at all. Which conclusion is justified?",
+   "options": [
+    "The star is not moving at all.",
+    "The star must be very cold.",
+    "The star is made of elements that have no spectral lines.",
+    "The star is moving away from us very slowly.",
+    "The star has no motion toward or away from us, but it could be moving sideways."
+   ],
+   "answer": 4,
+   "why": "The Doppler shift measures only the motion toward or away from us. A star moving purely across our line of sight shows no shift.",
+   "source": "Doppler deck slide 3"
+  },
+  {
+   "id": "ma-25",
+   "q": "Three stars move at the same speed. Star 1 moves directly away from us, star 2 moves across our line of sight, and star 3 moves diagonally away. Which statements are correct?\nI. Star 1's Doppler shift gives its full speed.\nII. Star 2 shows no Doppler shift.\nIII. Star 3's Doppler shift gives its full speed.",
+   "options": [
+    "I only",
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 1,
+   "why": "A Doppler shift shows only the toward-or-away part of the motion. That is the full speed for star 1, none of it for star 2, and just part of it for star 3.",
+   "source": "Doppler deck slide 3; Cosmic Perspective Fig 5.23"
+  },
+  {
+   "id": "ma-26",
+   "q": "What spectral feature would we notice in a rotating galaxy viewed edge-on?",
+   "options": [
+    "All of the spectral lines are blueshifted.",
+    "All of the spectral lines are redshifted.",
+    "The spectral lines are thinner.",
+    "Lines on one side are blueshifted and on the other side are redshifted.",
+    "The shifts flip back and forth between blue and red as the galaxy rotates."
+   ],
+   "answer": 3,
+   "why": "One side of the spinning galaxy moves toward us (blueshift) and the other moves away (redshift). The rotation is steady, so the sides do not swap.",
+   "source": "Doppler deck slide 4; practice test 2 Q24"
+  },
+  {
+   "id": "ma-27",
+   "q": "A star spins quickly and appears to us as a single point of light. Compared with a slowly spinning star, how do its spectral lines look?",
+   "options": [
+    "Narrower",
+    "Shifted entirely to the red",
+    "Shifted entirely to the blue",
+    "Missing",
+    "Broader"
+   ],
+   "answer": 4,
+   "why": "Light from the side moving toward us is blueshifted and from the side moving away is redshifted. Blended together, each line is spread over a wider range of wavelengths, more so for faster spin.",
+   "source": "Doppler deck slide 4; Cosmic Perspective 5.4 (Fig 5.24) | rotation broadening is in textbook Fig 5.24 only"
+  },
+  {
+   "id": "ma-28",
+   "q": "Star A looks orange-red and star B looks yellow-white. Which statement is true?",
+   "options": [
+    "Star A is hotter, since its light peaks at a longer wavelength.",
+    "Star A is hotter, since its light peaks at a shorter wavelength.",
+    "Star B is hotter, since its light peaks at a shorter wavelength.",
+    "Star B is cooler, since its light peaks at a shorter wavelength.",
+    "Both have the same temperature because both are stars."
+   ],
+   "answer": 2,
+   "why": "A peak at a shorter wavelength means a hotter object. Yellow-white light peaks at a shorter wavelength than orange-red, so B is hotter.",
+   "source": "Doppler deck slide 6; practice test 2 Q23"
+  }
+ ],
+ "games": [
+  "match"
+ ]
+}

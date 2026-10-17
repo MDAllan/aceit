@@ -1,0 +1,1446 @@
+{
+ "id": "scale",
+ "title": "Scale of the Universe & Patterns in the Sky",
+ "chapter": "Ch 1 and 2",
+ "icon": "🌌",
+ "color": "#7c3aed",
+ "intro": "Where we sit in the universe and how big and old it is, how Earth moves through space, and how the sky looks from Earth: constellations, the celestial sphere, angles and latitude. For every number, learn what it means and why it matters.",
+ "sections": [
+  {
+   "id": "address",
+   "title": "Our cosmic address",
+   "slides": "ASTR207 LEC SEP08.pdf: page 1",
+   "steps": [
+    {
+     "img": {
+      "src": "img/scale/lec_1.jpg",
+      "slide": "1",
+      "alt": "A table listing the levels of our cosmic address from Earth up to the universe, with a short description of each."
+     },
+     "title": "From Earth to the universe",
+     "bullets": [
+      "Our address, small to big: Earth, **Solar System**, Milky Way Galaxy, Local Group, **Local Supercluster** (Laniakea), Universe.",
+      "The Solar System is the Sun plus planets, moons, asteroids and comets. The Sun is just one ordinary star.",
+      "The Milky Way is a disk-shaped group of 100+ billion stars held together by gravity. We live a little over halfway from its centre to the edge of the disk."
+     ]
+    },
+    {
+     "title": "Bigger groupings of galaxies",
+     "bullets": [
+      "The **Local Group** has 80+ galaxies, mostly small ones. The Milky Way and Andromeda are the two largest.",
+      "The Local Group sits on the outskirts of the **Local Supercluster**. Laniakea is Hawaiian for \"immense heaven\".",
+      "The **universe** is the sum of all matter and energy: every supercluster, every void, everything."
+     ]
+    },
+    {
+     "title": "Group, cluster, supercluster",
+     "bullets": [
+      "A **galaxy** is a great island of stars (millions to over a trillion) held together by gravity and orbiting a common centre.",
+      "Small collections of galaxies (up to a few dozen) are **groups**. Larger ones are clusters. A **supercluster** is a cluster of clusters.",
+      "A galaxy is about 100 million times wider than a solar system, so never mix the two up."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does each level exist? Gravity pulls things together. It holds planets around a star, stars into a galaxy, and galaxies into groups and clusters. Each level is a bigger family bound by gravity."
+    },
+    {
+     "type": "trick",
+     "text": "The names grow with the number of galaxies: a group has up to a few dozen, a cluster has more, and a supercluster is a cluster of clusters."
+    },
+    {
+     "type": "trap",
+     "text": "The textbook text and the slide both say the Local Group has more than 80 galaxies, but the textbook's chapter summary says more than 50. Use 80+. Also M31 is another name for the Andromeda Galaxy (practice question: Local Group = galaxy group with the Milky Way and M31), and the practice question defines the Solar System as everything gravitationally bound to the Sun."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' page 1",
+    "Cosmic Perspective 1.1 (Basic Astronomical Definitions, Fig 1.1)",
+    "ASTR 207 In-Class Test 1 Q1 and Q3 (practice)"
+   ],
+   "images": [
+    {
+     "src": "img/scale/lec_1.jpg",
+     "slide": "1",
+     "alt": "A table listing the levels of our cosmic address from Earth up to the universe, with a short description of each."
+    }
+   ]
+  },
+  {
+   "id": "units",
+   "title": "Measuring cosmic distances",
+   "slides": "ASTR207 LEC SEP08.pdf: pages 1-2",
+   "steps": [
+    {
+     "title": "Two distance units",
+     "bullets": [
+      "An **astronomical unit (AU)** is Earth's average distance from the Sun, about 150 million km (93 million miles). We use it inside the Solar System.",
+      "A **light-year (ly)** is the distance light travels in 1 year: about 10 trillion km (9.46 trillion km precisely). We use it for stars and galaxies.",
+      "A light-year measures distance, not time. \"It will take me light-years to finish\" makes no sense."
+     ]
+    },
+    {
+     "title": "Light is fast, but not instant",
+     "bullets": [
+      "Light travels at **300,000 km per second**, about 8 laps around Earth every second.",
+      "Moon to Earth takes about 1 second and Sun to Earth about 8 minutes.",
+      "Sirius is about 8 ly away, the Orion Nebula about 1,350 ly, the Andromeda Galaxy about 2.5 million ly, and the farthest JWST galaxies 13+ billion ly."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why use light-years? Kilometres get silly at star distances. The nearest star system, Alpha Centauri, is 4.4 ly away, which is about 44 trillion km. Saying 4.4 ly is far easier."
+    },
+    {
+     "type": "trick",
+     "text": "Light-YEAR sounds like time but it is a length, like a mile. It answers: how far does light get in one year?"
+    },
+    {
+     "type": "trap",
+     "text": "The slide says 'about 10 trillion km (9.46 trillion km precisely)', and the textbook says the same. Use 10 trillion for quick estimates and 9.46 trillion when exact. The slide says Sirius is '~8 years away' but it means about 8 light-years (textbook: 8 light-years)."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' pages 1-2",
+    "Cosmic Perspective 1.1"
+   ],
+   "images": []
+  },
+  {
+   "id": "lookback",
+   "title": "Looking back in time",
+   "slides": "ASTR207 LEC SEP08.pdf: page 2",
+   "steps": [
+    {
+     "title": "Farther away means older light",
+     "bullets": [
+      "Light takes time to travel, so the farther we look, the further **back in time** we see.",
+      "A galaxy 7 billion ly away is seen as it was 7 billion years ago, when the universe was about half its present age.",
+      "Even one galaxy shows different times: Andromeda is about 100,000 ly wide, so light from its far side left about 100,000 years before light from its near side."
+     ]
+    },
+    {
+     "title": "The observable universe",
+     "bullets": [
+      "The **observable universe** is the part we can possibly see, limited by the age of the universe (about 14 billion years).",
+      "We cannot see anything more than about 14 billion ly away, because its light has not had time to reach us yet.",
+      "This is a limit on what we can see, not on the real size of the universe, which is presumed to be much larger."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do we look back in time? We see an object only when its light reaches our eyes. If the light travelled for 7 billion years, we are seeing the object as it was when the light left. Starlight is old news."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a letter in the mail. A letter from a faraway place takes longer to arrive, so it tells you older news."
+    },
+    {
+     "type": "trap",
+     "text": "Do not say the observable universe is the whole universe. Slide: it is a limit on what we can observe, not the actual size. Practice question: of two galaxies at 500 million ly and 10 billion ly, the farther one looks younger (we see it as it was long ago), not older."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' page 2",
+    "Cosmic Perspective 1.1 (Figs 1.2-1.4)",
+    "ASTR 207 In-Class Test 1 Q5 (practice)"
+   ],
+   "images": []
+  },
+  {
+   "id": "voyage",
+   "title": "Shrinking space to walking size",
+   "slides": "ASTR207 LEC SEP08.pdf: pages 2-3",
+   "steps": [
+    {
+     "title": "The Voyage model of the Solar System",
+     "bullets": [
+      "Shrink everything by **1 to 10 billion**. The Sun becomes a grapefruit, Jupiter a marble and Earth the tip of a ballpoint pen.",
+      "Earth orbits about 15 m from the grapefruit Sun. The Moon is only about 4 cm from Earth, so all human space travel fits in the palm of your hand.",
+      "Most of the Solar System is empty. Laying out all the planetary orbits would need more than 300 football fields."
+     ]
+    },
+    {
+     "title": "Walking to the nearest star",
+     "bullets": [
+      "On this scale the Sun to Pluto is only about a 600 m walk.",
+      "The Sun to Alpha Centauri (4.4 ly away) is about 4,400 km, like walking across the continental United States.",
+      "Why 4,400 km? One light-year is 10 trillion km, which becomes 1,000 km after dividing by 10 billion."
+     ]
+    },
+    {
+     "title": "Scaling the Milky Way",
+     "bullets": [
+      "Shrink by another factor of 1 billion (1 to 10^19). Then **1 light-year is about 1 mm** and the 100,000 ly Milky Way is about 100 m, a football field.",
+      "Our whole Solar System is a microscopic dot near the 20-yard line.",
+      "Counting 100+ billion stars at one per second, with no breaks, would take 3,000+ years."
+     ]
+    },
+    {
+     "title": "Counting the universe",
+     "bullets": [
+      "The observable universe has 100+ billion large galaxies, plus many smaller ones.",
+      "100 billion galaxies times 100 billion stars each gives about **10^22 stars**.",
+      "That is an **order of magnitude estimate** (right to about the nearest power of 10), comparable to the grains of dry sand on all Earth's beaches."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why shrink things? Numbers like 150 million km do not mean much to us. A grapefruit and a pen tip 15 m apart, with the next grapefruit 4,400 km away, lets you feel how empty space is."
+    },
+    {
+     "type": "trick",
+     "text": "Sun = grapefruit, Jupiter = marble, Earth = pen tip. And on the first scale, 1 ly = 1,000 km."
+    },
+    {
+     "type": "trap",
+     "text": "Two different scales appear on the slides: 1 to 10 billion (Solar System, Alpha Centauri at 4,400 km) and 1 to 10^19 (Milky Way, 1 ly = 1 mm). Do not mix them. The textbook says the walk to the next star is about the distance to California; the slide says across the continental US. Both mean roughly 4,400 km."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' pages 2-3",
+    "Cosmic Perspective 1.1 (Figs 1.6-1.8, Mathematical Insight 1.3)"
+   ],
+   "images": []
+  },
+  {
+   "id": "bigbang",
+   "title": "Big Bang, star life and star stuff",
+   "slides": "ASTR207 LEC SEP08.pdf: pages 3-4",
+   "steps": [
+    {
+     "title": "The universe is expanding",
+     "bullets": [
+      "Distant galaxies are moving apart, so the universe is **expanding**. Working backward gives a start, the **Big Bang**, about 14 billion years ago.",
+      "The universe as a whole expands, but gravity pulls matter together on smaller scales. Galaxies, stars and planets do not expand.",
+      "Most galaxies, including the Milky Way, formed within a few billion years after the Big Bang."
+     ]
+    },
+    {
+     "title": "Stars recycle matter",
+     "bullets": [
+      "Gravity collapses clouds of gas and dust into stars and planets.",
+      "A star \"lives\" by **nuclear fusion** (light nuclei fusing into heavier ones and releasing energy) and \"dies\" when its fuel runs out.",
+      "Dying stars blast material back into space (the most massive ones as supernovae). It mixes into the gas between stars and forms new stars and planets, so galaxies are cosmic recycling plants."
+     ]
+    },
+    {
+     "title": "We are star stuff",
+     "bullets": [
+      "The early universe held only hydrogen and helium (plus a trace of lithium).",
+      "Carbon, nitrogen, oxygen, iron and the rest were made inside stars, during their lives and especially in the explosions that end them.",
+      "By the time the Solar System formed (about 4.5 billion years ago), about **2%** of the galaxy's hydrogen and helium had become heavier elements. That was enough for rocky planets and the ingredients of life, hence Carl Sagan's \"star stuff\"."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are we star stuff? Heavy elements only form in the hot, dense hearts of stars and in star explosions. Each generation of stars returned them to space, so the cloud that made our Solar System was already seeded with them."
+    },
+    {
+     "type": "trick",
+     "text": "Stars are element kitchens: fusion cooks small atoms into bigger ones, and a supernova serves the meal back into space."
+    },
+    {
+     "type": "trap",
+     "text": "The Big Bang made essentially only hydrogen and helium (trace lithium on the slide). Do not say it made carbon or iron. Also the practice question's correct life-cycle answer says gas clouds collapse under GRAVITY (not fusion) and elements are released when the star dies, 'possibly via a supernova'."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' pages 3-4",
+    "Cosmic Perspective 1.2",
+    "ASTR 207 In-Class Test 1 Q4 (practice)"
+   ],
+   "images": []
+  },
+  {
+   "id": "calendar",
+   "title": "The cosmic calendar",
+   "slides": "ASTR207 LEC SEP08.pdf: page 4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/scale/lec_4.jpg",
+      "slide": "4",
+      "alt": "A table of the cosmic calendar listing dates from January 1 to December 31 with the event on each date."
+     },
+     "title": "14 billion years in one year",
+     "bullets": [
+      "Squeeze the 14-billion-year history of the universe into **one year**. Each month is a little more than 1 billion years.",
+      "Big Bang on Jan 1, Milky Way in February, Earth on Sept 3, early life on Sept 22.",
+      "Cambrian explosion Dec 17, dinosaurs rise Dec 26 and die out Dec 30."
+     ]
+    },
+    {
+     "title": "Humans arrive at the very end",
+     "bullets": [
+      "Early hominids appear at 9:00 PM on Dec 31 and modern humans at 11:58 PM.",
+      "Agriculture starts about 25 seconds before midnight, the pyramids about 11 seconds, and Kepler and Galileo about 1 second before.",
+      "All of human civilization fits into the last half-minute of the cosmic year."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why compress time? A billion years is too long to imagine. On a one-year calendar, 1 second stands for about 440 years (14 billion years divided by about 31.5 million seconds in a year), so a human lifetime is a blink."
+    },
+    {
+     "type": "trick",
+     "text": "Picture New Year's Eve: the Earth party starts in September, but people only turn up in the last two minutes."
+    },
+    {
+     "type": "trap",
+     "text": "Earth forms on Sept 3, not at the start: the Milky Way (February) and many generations of stars come first. The 440 years per second figure is derived (outside source) from 14 billion / 31.5 million. The textbook says dinosaurs died about 66 million years ago; the slide only gives the calendar date Dec 30."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' page 4",
+    "Cosmic Perspective 1.2 (Fig 1.12)"
+   ],
+   "images": [
+    {
+     "src": "img/scale/lec_4.jpg",
+     "slide": "4",
+     "alt": "A table of the cosmic calendar listing dates from January 1 to December 31 with the event on each date."
+    }
+   ],
+   "table": {
+    "head": [
+     "Cosmic calendar date",
+     "Event"
+    ],
+    "rows": [
+     [
+      "Jan 1",
+      "Big Bang"
+     ],
+     [
+      "February",
+      "Milky Way forms"
+     ],
+     [
+      "Sept 3",
+      "Earth forms"
+     ],
+     [
+      "Sept 22",
+      "Early life on Earth"
+     ],
+     [
+      "Dec 17",
+      "Cambrian explosion"
+     ],
+     [
+      "Dec 26",
+      "Rise of the dinosaurs"
+     ],
+     [
+      "Dec 30",
+      "Extinction of the dinosaurs"
+     ],
+     [
+      "Dec 31, 9:00 PM",
+      "Early hominids evolve"
+     ],
+     [
+      "Dec 31, 11:58 PM",
+      "Modern humans evolve"
+     ],
+     [
+      "About 25 s before midnight",
+      "Agriculture arises"
+     ],
+     [
+      "About 11 s before midnight",
+      "Pyramids built"
+     ],
+     [
+      "About 1 s before midnight",
+      "Kepler and Galileo show Earth orbits the Sun"
+     ],
+     [
+      "About 0.05 s before midnight",
+      "An average college student is born"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "motions",
+   "title": "Spaceship Earth: motions you cannot feel",
+   "slides": "ASTR207 LEC SEP08.pdf: pages 4-6; ASTR207 TopHat sep8.pdf: page 1",
+   "steps": [
+    {
+     "img": {
+      "src": "img/scale/lec_5.jpg",
+      "slide": "5",
+      "alt": "A table of the motions of Earth with their speeds and how long each takes."
+     },
+     "title": "A table of our motions",
+     "bullets": [
+      "Rotation: more than 1,000 km/h near the equator, once per day. Orbit around the Sun: about **107,000 km/h**, once per year.",
+      "Motion among nearby stars: about 70,000 km/h in an essentially random direction. Orbit around the Milky Way's centre: about **800,000 km/h**, once per 230 million years.",
+      "The Milky Way and Andromeda approach each other at about 300,000 km/h. More distant galaxies recede faster, some near the speed of light."
+     ]
+    },
+    {
+     "title": "Spin, tilt and orbit",
+     "bullets": [
+      "Earth rotates west to east (counterclockwise seen from above the North Pole), so the Sun and stars seem to rise in the east and set in the west.",
+      "Earth's orbit defines the **ecliptic plane**. Its axis is tilted 23.5 degrees from a line perpendicular to that plane and points toward **Polaris**.",
+      "Earth orbits in the same direction it spins because it formed in a spinning disk of gas around the young Sun. That is not a coincidence."
+     ]
+    },
+    {
+     "title": "Motion inside the Milky Way",
+     "bullets": [
+      "Nearby stars drift randomly at about 70,000 km/h, but they are so far away that constellations only change noticeably after 10,000+ years.",
+      "Our Solar System is about 27,000 ly from the galactic centre and goes around once every 230 million years.",
+      "Four and a half billion years divided by about 225 to 230 million years gives roughly **20 laps** around the galaxy so far."
+     ]
+    },
+    {
+     "title": "Orbit speeds reveal dark matter",
+     "bullets": [
+      "Stars' orbital speeds show that most of the galaxy's mass is invisible and sits in a halo around the visible disk.",
+      "This unseen mass is called **dark matter**.",
+      "Stars far from the centre move much faster than the visible matter alone can explain, so something extra must be pulling on them with gravity."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do we feel none of this? We move smoothly at nearly constant speed together with the ground, the air and everything around us, so nothing pushes on us. Why do all planets orbit the same way? They formed from one spinning disk of gas."
+    },
+    {
+     "type": "trick",
+     "text": "Slowest to fastest: spin (about 1,000), wander among stars (70,000), orbit the Sun (107,000), orbit the galaxy (800,000). Even the slowest of the last three beats a rifle bullet (about 3,000 km/h)."
+    },
+    {
+     "type": "trap",
+     "text": "The in-class questions use different numbers from the slide: Sun's speed among stars ~80,000+ or ~10,000 km/h and Earth's orbit ~108,000 or ~80,000 km/h, and Earth's rotation 1,670 km/h. The slide and textbook give 70,000 and ~107,000, and rotation 'more than 1,000'. Use the slide values, and note the ORDER slowest to fastest is the same. The slide says 230 million years per galactic orbit; the in-class question uses 225 million (both give about 20 laps). Practice question: 'the Sun orbits the centre of the local stellar neighbourhood' is NOT an observed motion (nearby stars move randomly)."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' pages 4-6",
+    "Top Hat sep8 page 1 (questions 1-4)",
+    "Cosmic Perspective 1.3",
+    "ASTR 207 In-Class Test 1 Q6 (practice)",
+    "Rotation 1,670 km/h is the in-class figure for the equator; slide only says >1,000 km/h."
+   ],
+   "images": [
+    {
+     "src": "img/scale/lec_5.jpg",
+     "slide": "5",
+     "alt": "A table of the motions of Earth with their speeds and how long each takes."
+    }
+   ]
+  },
+  {
+   "id": "expansion",
+   "title": "Hubble, raisin cakes and dark energy",
+   "slides": "ASTR207 LEC SEP08.pdf: pages 6-7; ASTR207 TopHat sep8.pdf: pages 1-2",
+   "steps": [
+    {
+     "title": "Hubble's two discoveries",
+     "bullets": [
+      "Inside the Local Group, galaxies move fairly randomly. The Milky Way and Andromeda are approaching each other at about 300,000 km/h, but any collision is billions of years away.",
+      "Outside the Local Group, Edwin Hubble found that virtually **every galaxy is moving away** from us, and **more distant galaxies move away faster**.",
+      "This is explained by the **expansion of the universe itself**, not by our galaxy being special or central."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/scale/tophat_1.jpg",
+      "slide": "1",
+      "alt": "Coins on a rubber sheet that gets farther apart as the sheet is stretched, though the coins do not move across it."
+     },
+     "title": "Coins on a stretching sheet",
+     "bullets": [
+      "When a rubber sheet stretches, the coins on it get farther apart even though they do not move across the sheet.",
+      "This is a good example of uniform expansion: the sheet between the coins grows.",
+      "Galaxies behave like the coins: the space between them stretches."
+     ]
+    },
+    {
+     "title": "The raisin cake analogy",
+     "bullets": [
+      "Raisins sit 1 cm apart in a cake that expands as it bakes. From any one raisin (the \"Local Raisin\"), all other raisins move away, and farther ones move away faster.",
+      "The cake between them is what grows, so no raisin is more \"central\" than any other. The same is true for galaxies.",
+      "Worked example: if every distance triples in one hour, a raisin 1 cm away ends 3 cm away (2 cm/h), and one 2 cm away ends 6 cm away (4 cm/h), twice as fast."
+     ]
+    },
+    {
+     "title": "Age, gravity and dark energy",
+     "bullets": [
+      "The expansion rate lets astronomers work out the age of the universe, about 14 billion years. A faster past expansion would mean a younger universe.",
+      "We are not expanding: gravity overcomes expansion on small scales. Only the space between distant, unbound galaxies grows.",
+      "**Dark energy** is a different mystery. It was discovered because the expansion is accelerating, and it makes up the majority of the universe's total energy."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do farther galaxies move away faster? There is more stretching space between us and them. Double the distance and you double the amount of space that grows, so you double the speed. That is why the graph of speed against distance is a straight line with a positive slope."
+    },
+    {
+     "type": "trick",
+     "text": "Rubber sheet or raisin cake: wherever you stand, everyone else seems to run away from you, and the farthest run fastest. There is no centre."
+    },
+    {
+     "type": "trap",
+     "text": "Do not confuse dark matter (unseen mass, from galaxy rotation) with dark energy (accelerating expansion, most of the energy). Also, 'more distant galaxies move away faster' is for galaxies OUTSIDE the Local Group. The in-class answer says raisin 1 does not travel at raisin 3's speed: speed depends on starting distance. The numbers in the cake-tripling example come from the textbook, not the slide."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' pages 6-7",
+    "Top Hat sep8 pages 1-2 (uniform expansion, raisin, 'are we expanding')",
+    "Cosmic Perspective 1.3 (raisin cake)",
+    "ASTR 207 In-Class Test 1 Q7 (practice)"
+   ],
+   "images": [
+    {
+     "src": "img/scale/tophat_1.jpg",
+     "slide": "1",
+     "alt": "Coins on a rubber sheet that gets farther apart as the sheet is stretched, though the coins do not move across it."
+    }
+   ]
+  },
+  {
+   "id": "sphere",
+   "title": "Constellations and the celestial sphere",
+   "slides": "ASTR207 LEC SEP08.pdf: pages 8-9; ASTR207 LEC SEP08 (1).pdf: pages 1-2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/scale/lec_8.jpg",
+      "slide": "8",
+      "alt": "Two star patterns drawn as lines joining dots on a dark sky, with text about constellations."
+     },
+     "title": "A constellation is a patch of sky",
+     "bullets": [
+      "On a clear, dark, moonless night you can see 2,000+ stars with the naked eye, plus the Milky Way band.",
+      "A **constellation** is a region of sky with official borders, not just the star pattern. Every point in the sky is in some constellation, like every point on a map is in some state.",
+      "There are **88** official constellations, with borders set in **1928** by the International Astronomical Union (IAU). Northern names come from the ancient Middle East, southern names from 17th-century European explorers."
+     ]
+    },
+    {
+     "title": "The celestial sphere is an illusion",
+     "bullets": [
+      "Stars in one constellation look close together but may be at very different distances. We lack depth perception when we look into space.",
+      "The ancient Greeks took this for reality and pictured stars fixed on a giant sphere around Earth. It is still a handy model for mapping the sky.",
+      "Key marks: the north and south **celestial poles** (directly above Earth's poles), the celestial equator (Earth's equator projected into space), and the **ecliptic** (the Sun's apparent yearly path, crossing the celestial equator at 23.5 degrees)."
+     ]
+    },
+    {
+     "title": "The Milky Way in our sky",
+     "bullets": [
+      "The band of light called the Milky Way circles the whole celestial sphere through a dozen constellations. It is most vivid from the Southern Hemisphere.",
+      "The band is a side-on view of our galaxy's disk (the **galactic plane**) from inside it. Looking along the disk shows many stars. Looking away from it gives a clear view of the distant universe.",
+      "The band is wider toward Sagittarius (the galactic centre and bulge). Dust lanes block our view beyond a few thousand ly, so radio, infrared and X-ray telescopes were needed to see more."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the sky look like a sphere? We have no sense of depth for faraway lights, so every star seems the same distance away, painted on the inside of a ball. Why is the ecliptic tilted 23.5 degrees to the celestial equator? Because Earth's axis is tilted by 23.5 degrees."
+    },
+    {
+     "type": "trick",
+     "text": "The celestial equator is Earth's equator thrown up onto the sky. The ecliptic is the Sun's yearly road across the stars."
+    },
+    {
+     "type": "trap",
+     "text": "A constellation is a region with borders, not only the stick figure. The ecliptic is the Sun's apparent path over a YEAR, not its daily path across the sky (practice question Q12, false option). The textbook says 12 traditional zodiac constellations lie along the ecliptic but the official borders include a 13th, Ophiuchus (practice option A). The 'Milky Way' band and the Milky Way galaxy are two views of the same thing. Practice Q13 (galactic plane at 63 degrees to the celestial equator) uses a number found in neither slides nor textbook."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' pages 8-9 and deck 'ASTR207 LEC SEP08 (1)' pages 1-2 (same text; the (1) deck is the Ch2 part only)",
+    "Cosmic Perspective 2.1 (Figs 2.3-2.5)",
+    "ASTR 207 In-Class Test 1 Q12-Q13 (practice)"
+   ],
+   "images": [
+    {
+     "src": "img/scale/lec_8.jpg",
+     "slide": "8",
+     "alt": "Two star patterns drawn as lines joining dots on a dark sky, with text about constellations."
+    }
+   ]
+  },
+  {
+   "id": "localsky",
+   "title": "The local sky and angular size",
+   "slides": "ASTR207 LEC SEP08.pdf: page 9; ASTR207 LEC SEP08 (1).pdf: page 2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/scale/lec_9.jpg",
+      "slide": "9",
+      "alt": "A drawing of a dome sky over a person on the ground, showing the horizon, zenith, meridian and a star at altitude 60 degrees."
+     },
+     "title": "Your sky is a dome",
+     "bullets": [
+      "From anywhere on Earth the sky looks like a dome. You see only half the celestial sphere because the ground blocks the rest.",
+      "The horizon has altitude 0 degrees and the **zenith** (straight overhead) has altitude 90 degrees. The meridian is an imaginary half-circle from due south through the zenith to due north.",
+      "Any object is located by its direction (azimuth, degrees clockwise from due north) and its **altitude** (degrees above the horizon). The star in the picture is at altitude 60 degrees toward the southeast."
+     ]
+    },
+    {
+     "title": "Angular size and angular distance",
+     "bullets": [
+      "With no depth perception, we can only say how big or how far apart things look, not how big or far they are.",
+      "**Angular size** is the angle an object seems to span. The Sun and Moon both span about 0.5 degrees, even though the Sun is about 400 times bigger and about 400 times farther away.",
+      "**Angular distance** is the angle between two objects: about 5 degrees between the Big Dipper's pointer stars and about 6 degrees for the length of the Southern Cross."
+     ]
+    },
+    {
+     "title": "Degrees, arcminutes, arcseconds",
+     "bullets": [
+      "1 degree = 60 **arcminutes** and 1 arcminute = 60 **arcseconds**, so 1 degree = 3,600 arcseconds.",
+      "Distance from the zenith = 90 degrees minus altitude. A star at altitude 80 degrees is 10 degrees, or 600 arcminutes, from the zenith."
+     ]
+    },
+    {
+     "title": "The small-angle formula",
+     "bullets": [
+      "**angular size = physical size x 360 degrees / (2 x pi x distance)**. Give any two and you can find the third.",
+      "Example: a ball 1 m wide seen from 115 m away spans 360 / (2 x pi x 115) = about 0.5 degrees, the same as the Moon.",
+      "Doubling the distance halves the angular size."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do the Sun and Moon look equally big? The formula shows the angle depends on size divided by distance. The Sun is about 400 times bigger but about 400 times farther, so the ratio, and the angle, is almost the same."
+    },
+    {
+     "type": "trick",
+     "text": "Arcminutes work like clock minutes: 60 to the hour, and 60 arcminutes to the degree. Arcseconds are the next step down, 60 to the arcminute."
+    },
+    {
+     "type": "trap",
+     "text": "A star at altitude 80 degrees is 10 degrees (600 arcminutes) from the zenith, not 80 degrees or 10 arcminutes (practice Q11: answer 600). Altitude is measured from the horizon; zenith distance from straight up. Azimuth is clockwise from due NORTH. Slide: Sun and Moon ~0.5 degrees; the textbook writes 1/2 degree."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' page 9 and deck 'ASTR207 LEC SEP08 (1)' page 2",
+    "Cosmic Perspective 2.1 (Figs 2.6-2.7)",
+    "ASTR 207 In-Class Test 1 Q11 (practice)",
+    "The 1 m ball at 115 m example is a worked calculation made for this site (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/scale/lec_9.jpg",
+     "slide": "9",
+     "alt": "A drawing of a dome sky over a person on the ground, showing the horizon, zenith, meridian and a star at altitude 60 degrees."
+    }
+   ]
+  },
+  {
+   "id": "risesetlat",
+   "title": "Rising, setting and your latitude",
+   "slides": "ASTR207 LEC SEP08.pdf: pages 9-10; ASTR207 LEC SEP08 (1).pdf: pages 2-3",
+   "steps": [
+    {
+     "title": "Why stars rise and set",
+     "bullets": [
+      "The sky seems to turn around us every day. Really **Earth rotates** west to east, not the universe.",
+      "We model this as the celestial sphere spinning around Earth.",
+      "That is why stars appear to rise in the east and set in the west."
+     ]
+    },
+    {
+     "title": "Circumpolar stars",
+     "bullets": [
+      "Seen from latitude 40 degrees N: stars near the north celestial pole are **circumpolar**. They never set and circle counterclockwise above the horizon.",
+      "Stars near the opposite (south) celestial pole never rise at all. All other stars rise in the east and set in the west.",
+      "In the Southern Hemisphere the same logic holds around the south celestial pole, but the circles run clockwise."
+     ]
+    },
+    {
+     "title": "Latitude decides your sky",
+     "bullets": [
+      "**Latitude** is north-south position (0 degrees at the equator, 90 degrees N or S at the poles). **Longitude** is east-west, 0 degrees at Greenwich.",
+      "The sky depends on latitude only, not longitude. Charleston, SC and San Diego, CA share a latitude and see the same night sky.",
+      "Key fact: **the altitude of the visible celestial pole equals your latitude**. Find the north pole with Polaris (within 1 degree of it) and the south pole with the Southern Cross."
+     ]
+    },
+    {
+     "title": "The North Pole extreme",
+     "bullets": [
+      "At the North Pole (90 degrees N) you can only ever see the northern half of the celestial sphere, and all of it is circumpolar.",
+      "That is why the Sun stays up for 6 continuous months there: for half the year the Sun is on the northern half of the celestial sphere."
+     ]
+    },
+    {
+     "title": "The sky changes through the year",
+     "bullets": [
+      "As Earth orbits, the Sun appears to move steadily eastward along the ecliptic, in front of different constellations.",
+      "The constellation the Sun is in is lost in the daytime sky. The one opposite the Sun is up all night.",
+      "Six months later the Sun is at the opposite end of the ecliptic, so some constellations that were hidden are now visible at night."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the pole's altitude equal your latitude? At the North Pole the north celestial pole is straight overhead (90 degrees), the same as the latitude. At the equator it sits on the horizon (0 degrees). In between it climbs steadily as you go north."
+    },
+    {
+     "type": "trick",
+     "text": "Pole height = latitude. If the North Star is 40 degrees up, you are at 40 degrees N."
+    },
+    {
+     "type": "trap",
+     "text": "Polaris is NOT the brightest star; it is special only because it sits near the north celestial pole. Latitude, not longitude, sets your sky. At the poles every visible star is circumpolar (practice Q9, option C false). You see only about half of the stars on a given night (option E is the true one). The 'sky through the year' step is from the textbook 2.1 and practice Q10; the slides state the question but give text only up to the North Pole."
+    }
+   ],
+   "sourceNotes": [
+    "Deck 'ASTR207 LEC SEP08' pages 9-10 and deck 'ASTR207 LEC SEP08 (1)' pages 2-3",
+    "Cosmic Perspective 2.1 (Figs 2.9-2.14)",
+    "ASTR 207 In-Class Test 1 Q8-Q10 (practice)",
+    "Slides stop at the North Pole example; 'Variation with time of year' is textbook 2.1 only."
+   ],
+   "images": []
+  }
+ ],
+ "table": {
+  "title": "Cosmic address at a glance",
+  "head": [
+   "Level",
+   "What it is",
+   "Key fact"
+  ],
+  "rows": [
+   [
+    "Solar System",
+    "Sun plus planets, moons, asteroids, comets",
+    "Earth is about 15 m from a grapefruit Sun on the Voyage scale"
+   ],
+   [
+    "Milky Way Galaxy",
+    "Disk of 100+ billion stars",
+    "100,000 ly across; we are a little over halfway out"
+   ],
+   [
+    "Local Group",
+    "80+ galaxies, mostly small",
+    "Milky Way and Andromeda are the two largest"
+   ],
+   [
+    "Local Supercluster (Laniakea)",
+    "Region of densely packed groups and clusters",
+    "Local Group sits on its outskirts"
+   ],
+   [
+    "Universe",
+    "All matter and energy",
+    "Observable part reaches about 14 billion ly"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "sc-c1",
+   "front": "What is our cosmic address, from Earth up to the universe?",
+   "back": "Earth, Solar System, Milky Way Galaxy, Local Group, Local Supercluster (Laniakea), Universe.",
+   "short": "Earth, Solar System, Milky Way, Group, Supercluster",
+   "src": "Slide 1"
+  },
+  {
+   "id": "sc-c2",
+   "front": "Solar System",
+   "back": "The Sun plus everything held by its gravity: planets, moons, asteroids and comets. The Sun is just one star.",
+   "short": "Sun plus everything it holds by gravity",
+   "src": "Slide 1; Textbook 1.1"
+  },
+  {
+   "id": "sc-c3",
+   "front": "Galaxy and the Milky Way",
+   "back": "A galaxy is a great island of stars held by gravity and orbiting a common centre. The Milky Way has 100+ billion stars, and we sit a little over halfway out from its centre.",
+   "short": "Island of stars held by gravity",
+   "src": "Slide 1"
+  },
+  {
+   "id": "sc-c4",
+   "front": "Local Group",
+   "back": "A collection of 80+ galaxies, mostly small. The Milky Way and Andromeda are the two largest.",
+   "short": "80+ galaxies; Milky Way and Andromeda largest",
+   "src": "Slide 1; Textbook 1.1"
+  },
+  {
+   "id": "sc-c5",
+   "front": "Group, cluster and supercluster of galaxies",
+   "back": "Group: up to a few dozen galaxies. Cluster: a larger collection. Supercluster: a region where groups and clusters are packed densely, a cluster of clusters (Local Supercluster = Laniakea).",
+   "short": "Dozens, larger, then a cluster of clusters",
+   "src": "Slide 1"
+  },
+  {
+   "id": "sc-c6",
+   "front": "Universe",
+   "back": "The sum total of all matter and energy, including all superclusters, voids and everything within them.",
+   "short": "All matter and energy together",
+   "src": "Slide 1"
+  },
+  {
+   "id": "sc-c7",
+   "front": "Astronomical unit (AU)",
+   "back": "Earth's average distance from the Sun, about 150 million km (93 million miles). Used inside the Solar System.",
+   "short": "Earth-Sun distance, 150 million km",
+   "src": "Slide 1"
+  },
+  {
+   "id": "sc-c8",
+   "front": "Light-year",
+   "back": "The distance light travels in one year, about 10 trillion km (9.46 trillion km precisely). It is a distance, not a time.",
+   "short": "Distance light covers in a year",
+   "src": "Slides 1-2"
+  },
+  {
+   "id": "sc-c9",
+   "front": "Speed of light and light travel times",
+   "back": "300,000 km/s. Moon to Earth about 1+ second, Sun to Earth about 8 minutes.",
+   "short": "300,000 km/s; 1 second; 8 minutes",
+   "src": "Slide 2"
+  },
+  {
+   "id": "sc-c10",
+   "front": "Distances in light-years to know",
+   "back": "Sirius about 8 ly, Orion Nebula about 1,350 ly, Andromeda about 2.5 million ly, most distant JWST galaxies 13+ billion ly.",
+   "short": "8; 1,350; 2.5 million; 13+ billion ly",
+   "src": "Slide 2"
+  },
+  {
+   "id": "sc-c11",
+   "front": "Looking back in time",
+   "back": "The farther away we look, the further back in time we see, because light takes time to arrive. A galaxy 7 billion ly away is seen as it was 7 billion years ago. Andromeda's far side shows light about 100,000 years older than its near side.",
+   "short": "Farther away means seeing further back",
+   "src": "Slide 2"
+  },
+  {
+   "id": "sc-c12",
+   "front": "Observable universe",
+   "back": "The part of the universe we can possibly see, limited by the universe's age (about 14 billion years). We cannot see beyond about 14 billion ly. It is a limit on what we observe, not the universe's actual size.",
+   "short": "Limited by age: about 14 billion ly",
+   "src": "Slide 2"
+  },
+  {
+   "id": "sc-c13",
+   "front": "Voyage scale model",
+   "back": "The Solar System shrunk 1 to 10 billion. Sun = grapefruit, Jupiter = marble, Earth = ballpoint tip about 15 m from the Sun, Moon about 4 cm from Earth. Sun to Pluto is about 600 m.",
+   "short": "1 to 10 billion; Sun a grapefruit",
+   "src": "Slide 2"
+  },
+  {
+   "id": "sc-c14",
+   "front": "Alpha Centauri on the Voyage scale",
+   "back": "The Sun to Alpha Centauri (4.4 ly) is about 4,400 km on the 1-to-10-billion scale, like walking across the continental US. One light-year is 1,000 km on this scale.",
+   "short": "About 4,400 km, across the continent",
+   "src": "Slide 2"
+  },
+  {
+   "id": "sc-c15",
+   "front": "Scaling the Milky Way (1 to 10^19)",
+   "back": "1 ly is about 1 mm, so the 100,000 ly Milky Way is about 100 m (a football field). The Solar System is a microscopic dot. Counting its 100+ billion stars at one per second takes 3,000+ years.",
+   "short": "1 ly = 1 mm; galaxy = 100 m",
+   "src": "Slide 3"
+  },
+  {
+   "id": "sc-c16",
+   "front": "Number of stars in the observable universe",
+   "back": "About 10^22: 100 billion galaxies times 100 billion stars each. It is an order of magnitude estimate, comparable to the grains of dry sand on all Earth's beaches.",
+   "short": "About 10^22; order of magnitude estimate",
+   "src": "Slide 3"
+  },
+  {
+   "id": "sc-c17",
+   "front": "Big Bang and expansion",
+   "back": "Distant galaxies move apart, so working backward the universe started in the Big Bang about 14 billion years ago. Gravity holds galaxies, stars and planets together, so they do not expand.",
+   "short": "Start about 14 billion years ago",
+   "src": "Slide 3"
+  },
+  {
+   "id": "sc-c18",
+   "front": "Stellar life cycle",
+   "back": "Gas and dust collapse under gravity into stars. Stars make energy and elements by nuclear fusion. When they die (the most massive in supernovae) they return material to space for new stars and planets.",
+   "short": "Collapse, fuse, die, recycle into new stars",
+   "src": "Slide 3"
+  },
+  {
+   "id": "sc-c19",
+   "front": "Star stuff",
+   "back": "Early on there was only hydrogen, helium and trace lithium. Heavier elements were made inside stars. By the Solar System's birth about 2% of the galaxy's hydrogen and helium had become heavier elements: we are star stuff.",
+   "short": "Elements made in earlier stars; about 2%",
+   "src": "Slides 3-4"
+  },
+  {
+   "id": "sc-c20",
+   "front": "Cosmic calendar",
+   "back": "The 14-billion-year history squeezed into one year, each month a little over 1 billion years. All of human civilization fits into the last half-minute.",
+   "short": "14 billion years in one year",
+   "src": "Slide 4"
+  },
+  {
+   "id": "sc-c21",
+   "front": "Key cosmic calendar dates",
+   "back": "Big Bang Jan 1, Milky Way February, Earth Sept 3, early life Sept 22, Cambrian Dec 17, dinosaurs rise Dec 26 and die Dec 30, modern humans 11:58 PM Dec 31.",
+   "short": "Earth Sept 3; dinosaurs gone Dec 30",
+   "src": "Slide 4"
+  },
+  {
+   "id": "sc-c22",
+   "front": "Speeds of Earth's motions",
+   "back": "Rotation >1,000 km/h (equator), orbit around the Sun about 107,000 km/h, motion among nearby stars about 70,000 km/h, orbit of the Milky Way about 800,000 km/h, approach to Andromeda about 300,000 km/h.",
+   "short": "1,000; 70,000; 107,000; 800,000 km/h",
+   "src": "Slide 5"
+  },
+  {
+   "id": "sc-c23",
+   "front": "Galactic year",
+   "back": "The Solar System is about 27,000 ly from the galactic centre and orbits once every about 230 million years. Over 4.5 billion years that is about 20 orbits.",
+   "short": "One lap takes about 230 million years",
+   "src": "Slides 5-6; Top Hat"
+  },
+  {
+   "id": "sc-c24",
+   "front": "Earth's axis",
+   "back": "Tilted 23.5 degrees from a line perpendicular to the ecliptic plane, pointing toward Polaris. Earth spins and orbits in the same direction because it formed in a spinning disk of gas.",
+   "short": "Tilted 23.5 degrees, points at Polaris",
+   "src": "Slide 5"
+  },
+  {
+   "id": "sc-c25",
+   "front": "Dark matter",
+   "back": "Stars' orbital speeds show most of a galaxy's mass is unseen, in a halo around the disk. This unseen mass is dark matter.",
+   "short": "Unseen halo mass shown by orbit speeds",
+   "src": "Slides 5-6; Top Hat"
+  },
+  {
+   "id": "sc-c26",
+   "front": "Dark energy",
+   "back": "A separate mystery discovered because the universe's expansion is accelerating. It makes up the majority of the universe's total energy.",
+   "short": "Accelerating expansion; most of the energy",
+   "src": "Slide 6"
+  },
+  {
+   "id": "sc-c27",
+   "front": "Hubble's discoveries",
+   "back": "Outside the Local Group, virtually every galaxy moves away from us, and more distant galaxies move away faster. This shows the universe is expanding.",
+   "short": "Galaxies recede; farther ones faster",
+   "src": "Slide 6"
+  },
+  {
+   "id": "sc-c28",
+   "front": "Raisin cake analogy",
+   "back": "In an expanding cake, every raisin sees all others moving away, farther ones faster, because the cake between them grows. Space itself expands between galaxies, and no galaxy is the centre.",
+   "short": "Space stretches; no galaxy is central",
+   "src": "Slide 6; Top Hat"
+  },
+  {
+   "id": "sc-c29",
+   "front": "Constellation",
+   "back": "A region of sky with official borders (every point belongs to one). There are 88, with borders set in 1928 by the IAU.",
+   "short": "Sky region with borders; 88 of them",
+   "src": "Slide 8"
+  },
+  {
+   "id": "sc-c30",
+   "front": "Celestial sphere",
+   "back": "An illusion: stars seem to lie on a sphere around Earth because we lack depth perception in space. Stars in a constellation can be at very different distances. It is still useful for mapping.",
+   "short": "Illusion from missing depth perception",
+   "src": "Slide 8"
+  },
+  {
+   "id": "sc-c31",
+   "front": "Celestial poles, equator and ecliptic",
+   "back": "Celestial poles lie above Earth's poles. The celestial equator is Earth's equator projected into space. The ecliptic is the Sun's apparent yearly path, crossing the celestial equator at 23.5 degrees.",
+   "short": "Ecliptic: Sun's yearly path, 23.5 degrees",
+   "src": "Slide 8"
+  },
+  {
+   "id": "sc-c32",
+   "front": "Milky Way band in the sky",
+   "back": "A side-on view of our galaxy's disk (the galactic plane) from inside it, circling the whole sky. It looks widest toward Sagittarius, the galactic centre.",
+   "short": "Side view of our galaxy's disk",
+   "src": "Slides 8-9"
+  },
+  {
+   "id": "sc-c33",
+   "front": "Local sky, altitude and azimuth",
+   "back": "The local sky is a dome (half the celestial sphere). Altitude is degrees above the horizon (zenith = 90 degrees). Azimuth is degrees clockwise from due north.",
+   "short": "Dome sky; altitude up, azimuth around",
+   "src": "Slide 9"
+  },
+  {
+   "id": "sc-c34",
+   "front": "Angular size and angular distance",
+   "back": "Angular size is the angle an object appears to span; angular distance is the angle between two objects. Sun and Moon both span about 0.5 degrees (Sun about 400 times bigger and 400 times farther).",
+   "short": "Apparent angle spanned; Sun equals Moon",
+   "src": "Slide 9"
+  },
+  {
+   "id": "sc-c35",
+   "front": "Arcminutes and arcseconds",
+   "back": "1 degree = 60 arcminutes, 1 arcminute = 60 arcseconds. A star 10 degrees from the zenith (altitude 80 degrees) is 600 arcminutes away.",
+   "short": "60 arcminutes per degree; 60 arcseconds",
+   "src": "Slide 9"
+  },
+  {
+   "id": "sc-c36",
+   "front": "Small-angle formula",
+   "back": "angular size = physical size x 360 degrees / (2 x pi x distance). Any two quantities give the third.",
+   "short": "Size times 360 over 2 pi distance",
+   "src": "Slide 9"
+  },
+  {
+   "id": "sc-c37",
+   "front": "Why stars rise and set",
+   "back": "Earth rotates west to east, so the sky seems to turn daily. Stars rise in the east and set in the west.",
+   "short": "Earth's spin makes stars rise and set",
+   "src": "Slides 9-10"
+  },
+  {
+   "id": "sc-c38",
+   "front": "Circumpolar stars",
+   "back": "From 40 degrees N, stars near the north celestial pole never set (they circle counterclockwise). Stars near the south celestial pole never rise. Southern Hemisphere circles run clockwise.",
+   "short": "Never set near the visible pole",
+   "src": "Slide 10"
+  },
+  {
+   "id": "sc-c39",
+   "front": "Latitude and the celestial pole",
+   "back": "The altitude of the visible celestial pole equals your latitude. The sky depends on latitude only, not longitude. Polaris is within 1 degree of the north pole but is not the brightest star. At the North Pole all visible stars are circumpolar, so the Sun stays up for 6 months.",
+   "short": "Pole altitude equals latitude; not longitude",
+   "src": "Slide 10"
+  },
+  {
+   "id": "sc-c40",
+   "front": "Sky through the year",
+   "back": "The Sun appears to move along the ecliptic over a year. Constellations near it are lost in daylight. Six months later the Sun is at the opposite end, so different constellations show at night.",
+   "short": "Sun's position changes which stars appear",
+   "src": "Textbook 2.1; practice"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "sc-1",
+   "q": "What is the Solar System?",
+   "options": [
+    "The Sun and the 8 major planets, including Earth.",
+    "The collection of astronomical objects that receive light and heat from the Sun.",
+    "The collection of astronomical objects that are gravitationally bound by the Sun.",
+    "The Sun and the 8 major planets, along with Pluto and various comets.",
+    "The volume of objects that extends out to 30 AU from the Sun."
+   ],
+   "answer": 2,
+   "why": "The Solar System is the Sun plus everything it holds by gravity: planets, dwarf planets, moons, asteroids and comets, not just the 8 planets.",
+   "source": "Slide 1; Textbook 1.1 definitions; ASTR 207 In-Class Test 1 Q1 (practice)"
+  },
+  {
+   "id": "sc-2",
+   "q": "What is the Local Group?",
+   "options": [
+    "The group of stars closest to our Sun, which includes Proxima Centauri.",
+    "The system of bodies that includes the Sun and all objects that orbit it.",
+    "The location in the Milky Way in which our Solar System resides.",
+    "The galaxy cluster that contains the Milky Way and numerous other galaxies.",
+    "The galaxy group containing the Milky Way and Andromeda (M31)."
+   ],
+   "answer": 4,
+   "why": "The Local Group has 80+ galaxies, mostly small. The Milky Way and Andromeda (M31) are the two largest.",
+   "source": "Slide 1; ASTR 207 In-Class Test 1 Q3 (practice, option rewritten)"
+  },
+  {
+   "id": "sc-3",
+   "q": "Which list shows the levels of our cosmic address in order from smallest to largest?",
+   "options": [
+    "Solar System, Earth, Milky Way, Local Group, Local Supercluster, Universe",
+    "Earth, Solar System, Milky Way, Local Group, Local Supercluster, Universe",
+    "Earth, Solar System, Local Group, Milky Way, Local Supercluster, Universe",
+    "Earth, Milky Way, Solar System, Local Supercluster, Local Group, Universe",
+    "Earth, Solar System, Milky Way, Local Supercluster, Local Group, Universe"
+   ],
+   "answer": 1,
+   "why": "A planet orbits a star in a galaxy, which sits in a group on the edge of a supercluster, all inside the universe.",
+   "source": "Slide 1"
+  },
+  {
+   "id": "sc-4",
+   "q": "Which of the following statements about light-years is/are TRUE?\nI. A light-year is a unit of distance.\nII. A light-year is about 10 trillion km.\nIII. A light-year is the time light takes to cross the Milky Way.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "A light-year is how far light travels in a year, about 10 trillion km (9.46 trillion km precisely). It is a distance, so statement III is false.",
+   "source": "Slides 1-2; Textbook 1.1"
+  },
+  {
+   "id": "sc-5",
+   "q": "Light travels at 300,000 km/s. The Sun is about 150 million km from Earth. About how long does sunlight take to reach Earth?",
+   "options": [
+    "About 8 minutes",
+    "About 50 seconds",
+    "About 8 hours",
+    "About 8 days",
+    "About 8 years"
+   ],
+   "answer": 0,
+   "why": "Time = distance / speed = 150,000,000 km / 300,000 km/s = 500 s, which is about 8.3 minutes (about 8 minutes is the usual round figure).",
+   "source": "Slide 2 (8 minutes); calculation from the given speed and AU"
+  },
+  {
+   "id": "sc-6",
+   "q": "Suppose two galaxies formed at about the same time. One is 500 million light-years away and the other is 10 billion light-years away. Which statement about observing them is true?",
+   "options": [
+    "The first galaxy will appear older, as its light takes much longer to reach us.",
+    "The first galaxy will appear younger, as its light reaches us much more quickly.",
+    "The second galaxy will appear older, as its light reaches us much more quickly.",
+    "Since they formed at the same time, they will appear the same age.",
+    "The second galaxy will appear younger, as its light takes much longer to reach us."
+   ],
+   "answer": 4,
+   "why": "Farther away means we see further back in time. Light from the 10-billion-ly galaxy left 10 billion years ago, when the galaxy was young.",
+   "source": "Slide 2; ASTR 207 In-Class Test 1 Q5 (practice, options reordered)"
+  },
+  {
+   "id": "sc-7",
+   "q": "Which statement about the observable universe is NOT correct?",
+   "options": [
+    "It is the entire universe, so nothing exists beyond it.",
+    "It is limited by the age of the universe, about 14 billion years.",
+    "We cannot see anything more than about 14 billion light-years away.",
+    "The farther we look, the further back in time we see.",
+    "Light from beyond its edge has not had time to reach us yet."
+   ],
+   "answer": 0,
+   "why": "The observable universe is only the part we can see. The real universe is presumed to be much larger, so the first statement is wrong.",
+   "source": "Slide 2; Textbook 1.1"
+  },
+  {
+   "id": "sc-8",
+   "q": "On the Voyage scale model, 1 light-year is about 1,000 km. How far away is Alpha Centauri, 4.4 light-years away, on this scale?",
+   "options": [
+    "About 44 km",
+    "About 600 m",
+    "About 4,400 km",
+    "About 44,000 km",
+    "About 15 m"
+   ],
+   "answer": 2,
+   "why": "4.4 ly x 1,000 km per ly = 4,400 km, like walking across the continental US. That shows how empty space is.",
+   "source": "Slide 2; Textbook 1.1"
+  },
+  {
+   "id": "sc-9",
+   "q": "If you counted the 100 billion stars of the Milky Way at one per second without a break, about how long would it take? (One year is about 31 million seconds.)",
+   "options": [
+    "About 3 years",
+    "About 30 years",
+    "About 300 years",
+    "About 3,000 years",
+    "About 3 million years"
+   ],
+   "answer": 3,
+   "why": "100 billion = 10^11 seconds. Dividing by about 3.1 x 10^7 seconds per year gives about 3,200 years, which rounds to 3,000+ years.",
+   "source": "Slide 3; calculation"
+  },
+  {
+   "id": "sc-10",
+   "q": "The observable universe has about 100 billion galaxies with about 100 billion stars each. What is the order of magnitude of the total number of stars?",
+   "options": [
+    "10^13",
+    "10^20",
+    "10^21",
+    "10^22",
+    "10^33"
+   ],
+   "answer": 3,
+   "why": "100 billion = 10^11, and 10^11 x 10^11 = 10^22. This is an order of magnitude estimate, accurate to about the nearest power of 10.",
+   "source": "Slide 3; Textbook Math Insight 1.3"
+  },
+  {
+   "id": "sc-11",
+   "q": "Which of the following correctly describes the stellar life cycle?",
+   "options": [
+    "Gas clouds collapse under nuclear fusion to form stars, and the stars later expand back into gas clouds.",
+    "Gas clouds collapse under gravity to form stars, fusion makes elements that form planets, and the whole system returns to the nebula when the star explodes.",
+    "Gas clouds collapse under gravity to form stars, fusion generates light and heat, and that heat makes nearby gas clouds collapse.",
+    "Galaxies collapse under gravity to form stars, and elements are released when the star explodes.",
+    "Gas clouds collapse under gravity to form stars, fusion makes elements, and these are released into space when the star dies, possibly in a supernova."
+   ],
+   "answer": 4,
+   "why": "Gravity forms the star, fusion builds heavier elements, and a dying star (the most massive in a supernova) returns them to space to make new stars and planets.",
+   "source": "Slide 3; ASTR 207 In-Class Test 1 Q4 (practice, options shortened)"
+  },
+  {
+   "id": "sc-12",
+   "q": "Why do we say we are \"star stuff\"?",
+   "options": [
+    "Stars shine on us and give us energy.",
+    "The Big Bang made all the elements in our bodies directly.",
+    "Our bodies are made mostly of dark matter from stars.",
+    "Heavy elements such as carbon, oxygen and iron were made inside stars and spread by dying stars.",
+    "Stars are the only place where hydrogen can be found."
+   ],
+   "answer": 3,
+   "why": "The early universe had only hydrogen and helium (plus trace lithium). Heavier elements came from stars that lived and died before the Sun, and about 2% of the galaxy's gas had been turned into them by then.",
+   "source": "Slides 3-4; Textbook 1.2"
+  },
+  {
+   "id": "sc-13",
+   "q": "Which statement about the expansion of the universe is INCORRECT?",
+   "options": [
+    "The space between distant, unbound galaxies is growing.",
+    "More distant galaxies outside the Local Group move away faster.",
+    "Individual galaxies, stars and planets do not expand.",
+    "A faster expansion in the past would imply a younger universe.",
+    "The Milky Way must be the centre of the expansion, since galaxies move away from us."
+   ],
+   "answer": 4,
+   "why": "In an expanding universe every observer sees galaxies moving away. No galaxy is central, just like every raisin in a cake sees the others recede.",
+   "source": "Slides 3 and 6; Top Hat sep8 page 2"
+  },
+  {
+   "id": "sc-14",
+   "q": "If we plotted the speed at which galaxies move away from us against their distance, as Hubble did, what would we see?",
+   "options": [
+    "An exponential curve",
+    "A quadratic curve",
+    "A line with a negative slope",
+    "An inverse relationship",
+    "A line with a positive slope"
+   ],
+   "answer": 4,
+   "why": "More distant galaxies move away proportionally faster, so the points fall on a rising straight line.",
+   "source": "Slide 6; ASTR 207 In-Class Test 1 Q7 (practice, options reordered)"
+  },
+  {
+   "id": "sc-15",
+   "q": "A cake with raisins expands so that every distance becomes 3 times larger in one hour. A raisin starts 10 cm from the Local Raisin. How fast does it move away from the Local Raisin?",
+   "options": [
+    "10 cm/h",
+    "20 cm/h",
+    "30 cm/h",
+    "40 cm/h",
+    "5 cm/h"
+   ],
+   "answer": 1,
+   "why": "It goes from 10 cm to 30 cm, so it moves 20 cm in 1 hour: 20 cm/h. Farther raisins move faster.",
+   "source": "Slide 6; Textbook 1.3 raisin cake (Think about it)"
+  },
+  {
+   "id": "sc-16",
+   "q": "In the expanding raisin cake, raisin 3 starts 3 times farther from the Local Raisin than raisin 1 does. How does the speed of raisin 3 compare with raisin 1?",
+   "options": [
+    "Raisin 3 moves 3 times faster.",
+    "Both move at the same speed.",
+    "Raisin 1 moves 3 times faster.",
+    "Raisin 3 moves 9 times faster.",
+    "Raisin 3 does not move."
+   ],
+   "answer": 0,
+   "why": "In uniform expansion, speed is proportional to starting distance. Raisin 3 has more cake between it and the Local Raisin to grow.",
+   "source": "Slide 6; Top Hat sep8 page 2; Textbook 1.3"
+  },
+  {
+   "id": "sc-17",
+   "q": "The Solar System takes about 225 million years to orbit the Milky Way once. About how many orbits has it made in its 4.5-billion-year life?",
+   "options": [
+    "About 2",
+    "About 10",
+    "About 20",
+    "About 200",
+    "About 2,000"
+   ],
+   "answer": 2,
+   "why": "4.5 billion / 225 million = 20. (With 230 million years per orbit it is still about 20.)",
+   "source": "Top Hat sep8 page 1; slide 5"
+  },
+  {
+   "id": "sc-18",
+   "q": "Which list orders these motions from slowest to fastest?",
+   "options": [
+    "Earth's rotation, Sun's motion among nearby stars, Earth's orbit around the Sun, Solar System's orbit around the Milky Way",
+    "Sun's motion among nearby stars, Earth's rotation, Solar System's orbit around the Milky Way, Earth's orbit around the Sun",
+    "Earth's rotation, Earth's orbit around the Sun, Sun's motion among nearby stars, Solar System's orbit around the Milky Way",
+    "Solar System's orbit around the Milky Way, Earth's orbit around the Sun, Sun's motion among nearby stars, Earth's rotation",
+    "Earth's orbit around the Sun, Earth's rotation, Solar System's orbit around the Milky Way, Sun's motion among nearby stars"
+   ],
+   "answer": 0,
+   "why": "About 1,000 km/h, then 70,000, then 107,000, then 800,000 km/h. Each is bigger than the one before.",
+   "source": "Slide 5; Top Hat sep8 page 1 (question 2)"
+  },
+  {
+   "id": "sc-19",
+   "q": "Which of the following is NOT a motion we observe in the universe?",
+   "options": [
+    "The Solar System orbits the Milky Way galaxy.",
+    "The Milky Way galaxy orbits the center of the Local Group.",
+    "Galaxies generally move away from each other, especially at larger distances.",
+    "The Sun orbits around the center of its local stellar neighbourhood.",
+    "The Earth spins daily and orbits the Sun once per year."
+   ],
+   "answer": 3,
+   "why": "Nearby stars drift in essentially random directions relative to each other. They do not orbit a centre of the neighbourhood. The Milky Way and Andromeda do move around within the Local Group.",
+   "source": "Slide 5; ASTR 207 In-Class Test 1 Q6 (practice, options reordered)"
+  },
+  {
+   "id": "sc-20",
+   "q": "Consider these statements.\nI. The orbital speeds of stars in the Milky Way suggest unseen mass in a halo.\nII. Dark energy was discovered because the universe's expansion is accelerating.\nIII. Dark energy makes up only a tiny part of the universe's energy.\nWhich are true?",
+   "options": [
+    "I only",
+    "II only",
+    "III only",
+    "I and II only",
+    "I, II and III"
+   ],
+   "answer": 3,
+   "why": "Dark matter is the unseen halo mass shown by orbit speeds. Dark energy is the cause of accelerating expansion and makes up the majority of the energy, so III is false.",
+   "source": "Slides 5-6; Top Hat sep8 page 1 (rotation curve)"
+  },
+  {
+   "id": "sc-21",
+   "q": "Why don't the patterns of stars in the night sky seem to change from night to night?",
+   "options": [
+    "The stars are fixed on the celestial sphere and do not move in space.",
+    "The stars move together from west to east, so we do not notice.",
+    "The stars do move, but they are so far away that the motion is not noticeable over a night.",
+    "Existing stars never change position because nearby objects do not pull on them.",
+    "All the stars we see are in the same part of the Milky Way as the Sun, so they move together."
+   ],
+   "answer": 2,
+   "why": "Stars do move (about 70,000 km/h relative to us in the local neighbourhood), but they are so far away that constellations take 10,000+ years to change noticeably.",
+   "source": "Slide 5 (10,000+ years); ASTR 207 In-Class Test 1 Q8 (practice)"
+  },
+  {
+   "id": "sc-22",
+   "q": "Which statement about how we see stars in the night sky is TRUE?",
+   "options": [
+    "Polaris can be seen at night from any latitude.",
+    "At the North or South Pole there are no circumpolar stars.",
+    "The constellations you see depend on both your latitude and your longitude.",
+    "Only about half of the stars in the night sky are visible on a given night, because Earth blocks the other half.",
+    "Stars rise in the west and set in the east."
+   ],
+   "answer": 3,
+   "why": "The ground blocks half the celestial sphere, so we see only half the sky at any time. The sky depends on latitude only, and at the poles every visible star is circumpolar.",
+   "source": "Slides 9-10; ASTR 207 In-Class Test 1 Q9 (practice, options rewritten)"
+  },
+  {
+   "id": "sc-23",
+   "q": "From latitude 40 degrees N, consider these statements.\nI. Stars near the north celestial pole never set.\nII. Stars near the south celestial pole never rise.\nIII. All stars rise in the west and set in the east.\nWhich are true?",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "Stars near the north pole are circumpolar, and stars near the opposite pole stay below the horizon. Other stars rise in the east and set in the west, so III is false.",
+   "source": "Slide 10"
+  },
+  {
+   "id": "sc-24",
+   "q": "You see a star at an altitude of 80 degrees. How many arcminutes is it from your zenith?",
+   "options": [
+    "10",
+    "600",
+    "800",
+    "3,600",
+    "4,800"
+   ],
+   "answer": 1,
+   "why": "Zenith is at 90 degrees, so the star is 90 - 80 = 10 degrees from it. 10 degrees x 60 arcminutes per degree = 600 arcminutes.",
+   "source": "Slide 9; ASTR 207 In-Class Test 1 Q11 (practice)"
+  },
+  {
+   "id": "sc-25",
+   "q": "You see the north celestial pole 35 degrees above your northern horizon. What is your latitude?",
+   "options": [
+    "35 degrees N",
+    "35 degrees S",
+    "55 degrees N",
+    "55 degrees S",
+    "It depends on your longitude."
+   ],
+   "answer": 0,
+   "why": "The altitude of the visible celestial pole equals your latitude, so you are at 35 degrees N. Longitude does not matter.",
+   "source": "Slide 10; Textbook 2.1"
+  },
+  {
+   "id": "sc-26",
+   "q": "Use angular size = physical size x 360 degrees / (2 x pi x distance). A ball 1 m wide is seen from 115 m away. About what is its angular size?",
+   "options": [
+    "0.005 degrees",
+    "0.05 degrees",
+    "0.5 degrees",
+    "5 degrees",
+    "50 degrees"
+   ],
+   "answer": 2,
+   "why": "360 / (2 x 3.14 x 115) = 360 / 722.6 = 0.498, about 0.5 degrees, the same as the Sun or Moon.",
+   "source": "Slide 9 (formula); calculation (outside source numbers)"
+  },
+  {
+   "id": "sc-27",
+   "q": "Which statement about the ecliptic is FALSE?",
+   "options": [
+    "The zodiac constellations lie along the ecliptic, along with one other constellation.",
+    "It represents the Sun's daily path through the sky.",
+    "It is an old concept from ancient Babylonian astronomy.",
+    "It is tilted 23.5 degrees to the celestial equator.",
+    "It is not a real path in space, but the Sun's apparent motion in our sky."
+   ],
+   "answer": 1,
+   "why": "The ecliptic is the Sun's apparent path around the celestial sphere over a year, not its daily path. It is tilted 23.5 degrees because Earth's axis is.",
+   "source": "Slide 8; Textbook 2.1; ASTR 207 In-Class Test 1 Q12 (practice; options A and C are not on the slides)"
+  },
+  {
+   "id": "sc-28",
+   "q": "What happens to the constellations in your night sky over six months?",
+   "options": [
+    "The times they rise and set change, but the same constellations remain visible.",
+    "Some constellations change, because the Sun is then at the opposite end of the ecliptic.",
+    "Northern constellations are replaced by southern ones.",
+    "Constellations that were circumpolar stop being circumpolar.",
+    "There are no major changes."
+   ],
+   "answer": 1,
+   "why": "Earth's orbit moves the Sun along the ecliptic. After six months it is on the opposite side, so we look at night in a different direction in space and see different constellations.",
+   "source": "Textbook 2.1 (variation with time of year); ASTR 207 In-Class Test 1 Q10 (practice); not covered on the slides (outside source for slides; textbook 2.1 and practice test)"
+  }
+ ],
+ "games": [
+  "match"
+ ]
+}
