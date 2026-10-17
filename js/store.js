@@ -10,6 +10,7 @@ export function setPref(k, v) { try { localStorage.setItem("erth209:" + k, v ? "
 export let sb = null;
 export let session = null;
 export let profile = null;
+export let access = new Set();
 
 const KEY = "erth209:progress:v1";
 let data = load();
@@ -30,7 +31,7 @@ export function save() {
 }
 
 async function push() {
-  if (!sb || !session || !profile?.access_ok || profile.blocked) return;
+  if (!sb || !session || !profile || profile.blocked) return;
   await sb.from("progress").upsert({ user_id: session.user.id, data, updated_at: new Date().toISOString() });
 }
 
@@ -51,7 +52,10 @@ export async function loadProfile() {
   let { data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle();
   if (!p) { await sb.rpc("ensure_profile"); ({ data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle()); }
   profile = p;
-  if (p?.access_ok && !p.blocked) {
+  const { data: ac, error: acErr } = await sb.from("class_access").select("class_id").eq("user_id", session.user.id);
+  access = new Set((ac || []).map((x) => x.class_id));
+  if (acErr && p?.access_ok) access.add("erth209"); // database patch 2 not installed yet: keep old ERTH 209 users working
+  if (p && !p.blocked) {
     const { data: r } = await sb.from("progress").select("data").eq("user_id", session.user.id).maybeSingle();
     if (r?.data) data = merge(data, r.data);
     try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {}
@@ -78,13 +82,15 @@ export async function signIn(email, password) {
   if (!r.error) { session = r.data.session; await loadProfile(); }
   return r;
 }
-export async function signOut() { await sb.auth.signOut(); session = null; profile = null; }
+export async function signOut() { await sb.auth.signOut(); session = null; profile = null; access = new Set(); }
 export async function forgot(email) {
   return sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname });
 }
 export async function setNewPassword(pw) { return sb.auth.updateUser({ password: pw }); }
-export async function redeem(code) {
-  const { data: ok, error } = await sb.rpc("redeem_code", { code });
+export const hasAccess = (classId) => DEMO || !!profile?.is_admin || access.has(classId);
+export async function redeemClass(cid, code) {
+  let { data: ok, error } = await sb.rpc("redeem_class_code", { cid, code });
+  if (error && cid === "erth209") ({ data: ok, error } = await sb.rpc("redeem_code", { code })); // older database
   if (ok) await loadProfile();
   return { ok, error };
 }
@@ -99,7 +105,9 @@ export async function adminList() {
 }
 export const adminBlock = (uid, flag) => sb.rpc("admin_set_blocked", { uid, flag });
 export const adminDelete = (uid) => sb.rpc("admin_delete_user", { uid });
-export const adminCode = (new_code) => sb.rpc("admin_change_code", { new_code });
+export const adminSetCode = (cid, new_code) => sb.rpc("admin_set_class_code", { cid, new_code });
+export const adminCodes = () => sb.rpc("admin_get_codes");
+export async function adminAccess() { const { data } = await sb.from("class_access").select("user_id,class_id"); return data || []; }
 
 // ---------- progress helpers ----------
 export function cardState(id) { return data.cards[id]; }

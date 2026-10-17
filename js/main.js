@@ -4,12 +4,15 @@ import { $, h, md, clean, ic, toast, shuffle, confetti } from "./ui.js";
 
 const app = $("#app");
 let LECS = [];
+let SUBJECTS = [];
+const subjOf = (l) => SUBJECTS.find((x) => x.id === l.subject);
+const open_ = () => LECS.filter((l) => S.hasAccess(l.subject));
 
 async function boot() {
   try { const t = localStorage.getItem("erth209:theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
   await S.initBackend();
-  const idx = await (await fetch("content/index.json")).json();
-  LECS = await Promise.all(idx.lectures.map((f) => fetch("content/" + f + ".json").then((r) => r.json())));
+  SUBJECTS = await (await fetch("content/subjects.json")).json();
+  LECS = (await Promise.all(SUBJECTS.flatMap((sj) => sj.lectures.map((f) => fetch("content/" + f + ".json").then((r) => r.json()).then((l) => ({ ...l, subject: sj.id })))))).filter(Boolean);
   LECS.forEach((l) => { l.cards ||= []; l.games = [...new Set([...DEFAULT_GAMES, ...(l.games || [])])]; l.color ||= "#2563eb"; });
   window.addEventListener("hashchange", route);
   document.addEventListener("keydown", (e) => { if (document.activeElement?.matches("input,select,textarea")) return; if (e.key === "ArrowRight") window.__next?.(); if (e.key === "ArrowLeft") window.__prev?.(); });
@@ -21,7 +24,6 @@ function gate() {
   if (!S.session) return "auth";
   if (!S.profile) return "setup";
   if (S.profile.blocked) return "blocked";
-  if (!S.profile.access_ok) return "code";
   return null;
 }
 function route() {
@@ -33,7 +35,6 @@ function route() {
   if (g === "setup") return authBox("Almost there", h("p", "Your account was created but its profile is missing. The site owner needs to run the latest database patch (supabase/patch1.sql), then press Retry."),
     h(".row", h("button.btn", { onclick: async () => { await S.loadProfile(); route(); } }, "Retry"), h("button.btn.alt", { onclick: async () => { await S.signOut(); route(); } }, "Log out")));
   if (g === "blocked") return viewBlocked();
-  if (g === "code") return viewCode();
   shell(parts);
 }
 
@@ -44,7 +45,7 @@ function shell(parts) {
   const x = S.xp(LECS);
   app.replaceChildren(
     h("header.top", h(".in",
-      h("button.brand", { onclick: () => (location.hash = "#/") }, h("span.logo", ic("star", 18)), "ERTH 209"),
+      h("button.brand", { onclick: () => (location.hash = "#/") }, h("span.logo", ic("star", 18)), "ACEIT"),
       h(".xp", { title: `${x.xp} XP` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
       admin && !S.DEMO ? h("button.chip", { "aria-label": "Switch between admin and student view", onclick: () => { S.setPref("student", !S.pref("student")); route(); } }, ic("eye", 16), S.pref("student") ? "Student view" : "Admin view") : "",
       h("button.chip", { "aria-label": "Toggle dark mode", onclick: toggleTheme }, ic("moon", 16)),
@@ -52,7 +53,7 @@ function shell(parts) {
     )),
     h("main.wrap#view"),
     h("nav.nav", { "aria-label": "Main" },
-      nav("home", "Home", "", page === "" || page === "l"),
+      nav("home", "Classes", "", page === "" || page === "l" || page === "s"),
       nav("cards", "Cards", "cards", page === "cards"),
       nav("quiz", "Practice", "practice", page === "practice"),
       nav("chart", "Progress", "progress", page === "progress"),
@@ -61,6 +62,7 @@ function shell(parts) {
   );
   const v = $("#view");
   if (page === "l") return viewLecture(v, parts[1], parts[2] || "notes");
+  if (page === "s") return viewSubject(v, parts[1]);
   if (page === "cards") return viewAllCards(v);
   if (page === "practice") return viewPractice(v);
   if (page === "progress") return viewProgress(v);
@@ -78,8 +80,8 @@ function toggleTheme() {
 
 /* ---------- auth ---------- */
 function authBox(title, ...kids) {
-  app.replaceChildren(h(".auth", h("h1", { style: "text-align:center" }, "ERTH 209 Study Hub"),
-    h("p", { style: "text-align:center;color:var(--mute)" }, "Geology made easy. Learn it, play it, ace it."), h(".card", h("h2", title), ...kids)));
+  app.replaceChildren(h(".auth", h("h1", { style: "text-align:center" }, "ACEIT"),
+    h("p", { style: "text-align:center;color:var(--mute)" }, "Learn it, play it, ace it."), h(".card", h("h2", title), ...kids)));
 }
 function viewAuth() {
   let mode = "in";
@@ -147,23 +149,60 @@ function viewReset() {
 function ring(pct, color, size) {
   return h(".ring", { style: `--p:${pct};--c:${color}` + (size ? `;width:${size}px;height:${size}px` : ""), role: "img", "aria-label": pct + " percent complete" }, h("span", pct + "%"));
 }
+function subjectStats(sj) {
+  const ls = LECS.filter((l) => l.subject === sj.id);
+  return { n: ls.length, pct: ls.length ? Math.round(ls.reduce((t, l) => t + S.lectureStats(l).pct, 0) / ls.length) : 0 };
+}
 function viewHome(v) {
-  const st = S.streak(), x = S.xp(LECS), lastp = S.last();
-  const lastLec = lastp && LECS.find((l) => l.id === lastp.lecId);
+  const st = S.streak(), x = S.xp(open_()), lastp = S.last();
+  const lastLec = lastp && open_().find((l) => l.id === lastp.lecId);
   const nm = S.profile?.display_name;
   v.append(
-    h(".hero", h("h1", nm ? `Hi ${nm}!` : "Let's learn some geology"), h("p", st ? `${st}-day streak. Keep it going.` : "Pick a lecture and start a streak today.")),
+    h(".hero", h("h1", nm ? `Hi ${nm}!` : "Welcome to ACEIT"), h("p", st ? `${st}-day streak. Keep it going.` : "Pick a class and start a streak today.")),
     h(".card.row", { style: "margin-bottom:14px;justify-content:space-between" },
       h("div", { style: "flex:1;min-width:150px" }, h("b", `Level ${x.lvl}`), h(".bar", { style: "margin:6px 0" }, h("i", { style: `width:${x.pct}%` })), h(".src", `${x.xp} XP. ${x.next - x.xp} more for level ${x.lvl + 1}`)),
       lastLec ? h("button.btn", { style: `--c:${lastLec.color}`, onclick: () => (location.hash = `#/l/${lastLec.id}/${lastp.tab || "notes"}`) }, "Continue: " + lastLec.title, ic("right", 18)) : ""),
-    h(".grid", LECS.map((l, i) => {
-      const s = S.lectureStats(l);
-      return h("button.card.lec", { style: `animation-delay:${i * 45}ms`, onclick: () => (location.hash = `#/l/${l.id}/notes`) },
-        h(".ic", { style: `background:${l.color}26` }, l.icon),
-        h("div", { style: "flex:1" }, h("b", l.title), h("small", (l.chapter || "") + ` · ${l.sections.length} topics`)),
-        ring(s.pct, l.color));
-    })),
-  );
+    h("h2", "Your classes"),
+    h(".grid", SUBJECTS.map((sj, i) => {
+      const unlocked = S.hasAccess(sj.id), t = subjectStats(sj);
+      return h("button.card.lec", { style: `animation-delay:${i * 60}ms`, onclick: () => (location.hash = `#/s/${sj.id}`) },
+        h(".ic", { style: `background:${sj.color}26` }, sj.icon),
+        h("div", { style: "flex:1" }, h("b", `${sj.name}: ${sj.title}`), h("small", unlocked ? (t.n ? `${t.n} lectures` : "Coming soon") : "Locked. Tap to enter the class code")),
+        unlocked ? (t.n ? ring(t.pct, sj.color) : "") : h("span.pill", { style: "background:#64748b" }, "Locked"));
+    })));
+}
+
+function viewSubject(v, id) {
+  const sj = SUBJECTS.find((x) => x.id === id);
+  if (!sj) return viewHome(v);
+  v.style.setProperty("--c", sj.color);
+  v.append(h(".hero", h(".row", { style: "flex-wrap:nowrap" }, h("span", { style: "font-size:2rem" }, sj.icon), h("div", { style: "flex:1" }, h("h1", `${sj.name}: ${sj.title}`), h("p", "Pick a lecture")))));
+  if (!S.hasAccess(sj.id)) {
+    const code = h("input", { placeholder: `${sj.name} class code`, autocomplete: "off", "aria-label": `${sj.name} class code` });
+    const err = h("p.err", { role: "alert" });
+    const go = h("button.btn", { style: "width:100%;margin-top:12px" }, "Unlock " + sj.name);
+    const submit = async () => { go.disabled = true; const r = await S.redeemClass(sj.id, code.value.trim()); go.disabled = false; if (r.ok) { toast(`${sj.name} unlocked!`); confetti(); route(); } else err.textContent = "That code isn't right for this class. Ask Madi."; };
+    go.onclick = submit; code.onkeydown = (e) => { if (e.key === "Enter") submit(); };
+    return v.append(h(".card", h("h2", "Enter the class code"), h("p", { style: "color:var(--mute)" }, `Each class has its own code. Enter the ${sj.name} code to open it.`), code, err, go));
+  }
+  const ls = LECS.filter((l) => l.subject === sj.id);
+  if (!ls.length) return v.append(h(".card", h("h2", "Coming soon"), h("p", "Lectures for this class are being added.")));
+  v.append(h(".grid", ls.map((l, i) => {
+    const s = S.lectureStats(l);
+    return h("button.card.lec", { style: `animation-delay:${i * 45}ms`, onclick: () => (location.hash = `#/l/${l.id}/notes`) },
+      h(".ic", { style: `background:${l.color}26` }, l.icon),
+      h("div", { style: "flex:1" }, h("b", l.title), h("small", (l.chapter || "") + ` · ${l.sections.length} topics`)),
+      ring(s.pct, l.color));
+  })));
+}
+
+let focus = null; // class chosen on the Cards / Practice / Progress pages
+const pool_ = () => open_().filter((l) => !focus || l.subject === focus);
+function classChips(redraw) {
+  const subs = SUBJECTS.filter((sj) => S.hasAccess(sj.id) && LECS.some((l) => l.subject === sj.id));
+  if (subs.length < 2) { focus = subs[0]?.id || null; return ""; }
+  return h(".row", { style: "margin:4px 0 8px" }, h("button.chip" + (!focus ? ".on" : ""), { onclick: () => { focus = null; redraw(); } }, "All classes"),
+    subs.map((sj) => h("button.chip" + (focus === sj.id ? ".on" : ""), { onclick: () => { focus = sj.id; redraw(); } }, sj.icon + " " + sj.name)));
 }
 
 /* ---------- lecture ---------- */
@@ -171,10 +210,12 @@ const TABS = [["notes", "notes", "Notes"], ["cards", "cards", "Cards"], ["quiz",
 function viewLecture(v, id, tab) {
   const l = LECS.find((x) => x.id === id);
   if (!l) return viewHome(v);
+  if (!S.hasAccess(l.subject)) return viewSubject(v, l.subject);
   S.setLast(id, tab);
   const s = S.lectureStats(l);
   v.style.setProperty("--c", l.color);
   v.append(
+    h("button.chip", { style: "margin-top:8px", onclick: () => (location.hash = `#/s/${l.subject}`) }, ic("left", 14), subjOf(l)?.name || "Back"),
     h(".hero", { style: "padding-bottom:0" }, h(".row", { style: "flex-wrap:nowrap" }, h("span", { style: "font-size:2rem" }, l.icon), h("div", { style: "flex:1" }, h("h1", l.title), h("p", l.chapter || "")), ring(s.pct, l.color, 52))),
     h(".tabs", TABS.map(([k, icn, t]) => h("button.tab" + (k === tab ? ".on" : ""), { onclick: () => (location.hash = `#/l/${id}/${k}`) }, ic(icn, 20), t))),
   );
@@ -340,24 +381,27 @@ export function runQuiz(b, list, title, color, back) {
 }
 
 function viewAllCards(v) {
-  v.append(h(".hero", h("h1", "Flashcards"), h("p", "Mix every lecture, or tap a lecture to focus on it.")));
-  const body = h("div"), chips = h(".row", { style: "margin:6px 0" });
-  const show = (sel) => {
-    chips.replaceChildren(h("button.chip" + (!sel ? ".on" : ""), { onclick: () => show(null) }, "All lectures"),
-      LECS.map((l) => h("button.chip" + (sel === l ? ".on" : ""), { onclick: () => show(l) }, l.icon + " " + l.title)));
-    body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LECS.flatMap((l) => l.cards)), sel ? sel.color : "#2563eb");
+  const draw = () => {
+    v.replaceChildren(h(".hero", h("h1", "Flashcards"), h("p", "Mix every lecture, or tap a lecture to focus on it.")));
+    const LS = pool_(), body = h("div"), chips = h(".row", { style: "margin:6px 0" });
+    const show = (sel) => {
+      chips.replaceChildren(h("button.chip" + (!sel ? ".on" : ""), { onclick: () => show(null) }, "All lectures"),
+        ...LS.map((l) => h("button.chip" + (sel === l ? ".on" : ""), { onclick: () => show(l) }, l.icon + " " + l.title)));
+      body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LS.flatMap((l) => l.cards)), sel ? sel.color : "#2563eb");
+    };
+    v.append(classChips(draw), chips, body); show(null);
   };
-  v.append(chips, body); show(null);
+  draw();
 }
 
 function viewPractice(v) {
-  const all = LECS.flatMap((l) => (l.quiz || []).map((q) => ({ ...q, lec: l.id })));
   let sel = null;
   const draw = () => {
-    v.replaceChildren(h(".hero", h("h1", "Practice exam"), h("p", "Mixed questions, shuffled like the real thing. Pick lectures or take them all.")));
+    const LS = pool_(), all = LS.flatMap((l) => (l.quiz || []).map((q) => ({ ...q, lec: l.id })));
+    v.replaceChildren(h(".hero", h("h1", "Practice exam"), h("p", "Mixed questions, shuffled like the real thing. Pick lectures or take them all.")), classChips(() => { sel = null; draw(); }));
     const pool = sel ? all.filter((q) => sel.has(q.lec)) : all;
     v.append(h(".row", { style: "margin-bottom:10px" }, h("button.chip" + (!sel ? ".on" : ""), { onclick: () => { sel = null; draw(); } }, "All lectures"),
-      LECS.map((l) => h("button.chip" + (sel?.has(l.id) ? ".on" : ""), { onclick: () => { sel = sel || new Set(); sel.has(l.id) ? sel.delete(l.id) : sel.add(l.id); if (!sel.size) sel = null; draw(); } }, l.icon + " " + l.title))),
+      LS.map((l) => h("button.chip" + (sel?.has(l.id) ? ".on" : ""), { onclick: () => { sel = sel || new Set(); sel.has(l.id) ? sel.delete(l.id) : sel.add(l.id); if (!sel.size) sel = null; draw(); } }, l.icon + " " + l.title))),
       h(".card", h("p", `${pool.length} questions available.`),
         h(".row", [10, 20, 40, pool.length].filter((n, k, a) => n <= pool.length && a.indexOf(n) === k).map((n) =>
           h("button.btn", { style: "--c:#2563eb", onclick: () => { v.replaceChildren(); runQuiz(v, shuffle(pool.slice()).slice(0, n), "Practice exam", "#2563eb", draw); } }, n === pool.length ? `All ${n}` : `${n} questions`)))));
@@ -367,61 +411,75 @@ function viewPractice(v) {
 
 /* ---------- progress ---------- */
 function viewProgress(v) {
-  const st = S.streak(), x = S.xp(LECS);
-  const total = LECS.length ? Math.round(LECS.reduce((s, l) => s + S.lectureStats(l).pct, 0) / LECS.length) : 0;
-  const weak = LECS.flatMap((l) => (l.quiz || []).filter((q) => { const p = S.progress().quiz[q.id]; return p && p.attempts && p.correct / p.attempts < 0.6; }).map((q) => ({ l, q })));
-  const pr = S.progress();
-  const badges = [
-    [`3-day streak`, st >= 3, "fire"], ["First topic read", Object.keys(pr.read).length > 0, "notes"],
-    ["10 cards known", Object.values(pr.cards).filter((c) => c === "know").length >= 10, "cards"],
-    ["10 questions right", Object.values(pr.quiz).filter((c) => c.last).length >= 10, "quiz"],
-    ["First game", Object.keys(pr.games).length > 0, "games"], ["Lecture 100%", LECS.some((l) => S.lectureStats(l).pct === 100), "star"],
-    ["Level 5", x.lvl >= 5, "star"],
-  ];
-  v.append(h(".hero", h("h1", "My progress")),
-    h(".card.row", ring(total, "#2563eb", 76), h("div", h("b", "Overall completion"), h("p", { style: "margin:0;color:var(--mute)" }, `Level ${x.lvl} · ${x.xp} XP` + (st ? ` · ${st}-day streak` : "")))),
-    h("h2", { style: "margin-top:18px" }, "By lecture"),
-    h(".grid", LECS.map((l) => { const s = S.lectureStats(l); return h(".card", h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("b", l.icon + " " + l.title), ring(s.pct, l.color, 44)),
-      h(".src", `Notes ${s.read}/${s.secs} · Cards ${s.known}/${s.cards} · Quiz ${s.right}/${s.qs}`)); })),
-    h("h2", { style: "margin-top:18px" }, "Weak topics"),
-    weak.length ? weak.map(({ l, q }) => h(".fb", h("b", l.title + ": "), md(q.q.split("\n")[0]))) : h("p", "No weak topics yet. Take a quiz and they'll show up here."),
-    h("h2", { style: "margin-top:18px" }, "Badges"), h("div", badges.map(([t, on, icn]) => h("span.badge" + (on ? "" : ".lock"), ic(icn, 16), t))));
+  const draw = () => {
+    v.replaceChildren();
+    const LS = pool_(), st = S.streak(), x = S.xp(open_());
+    const total = LS.length ? Math.round(LS.reduce((s, l) => s + S.lectureStats(l).pct, 0) / LS.length) : 0;
+    const weak = LS.flatMap((l) => (l.quiz || []).filter((q) => { const p = S.progress().quiz[q.id]; return p && p.attempts && p.correct / p.attempts < 0.6; }).map((q) => ({ l, q })));
+    const pr = S.progress();
+    const badges = [
+      [`3-day streak`, st >= 3, "fire"], ["First topic read", Object.keys(pr.read).length > 0, "notes"],
+      ["10 cards known", Object.values(pr.cards).filter((c) => c === "know").length >= 10, "cards"],
+      ["10 questions right", Object.values(pr.quiz).filter((c) => c.last).length >= 10, "quiz"],
+      ["First game", Object.keys(pr.games).length > 0, "games"], ["Lecture 100%", open_().some((l) => S.lectureStats(l).pct === 100), "star"],
+      ["Level 5", x.lvl >= 5, "star"],
+    ];
+    v.append(h(".hero", h("h1", "My progress")), classChips(draw),
+      h(".card.row", ring(total, "#2563eb", 76), h("div", h("b", "Overall completion"), h("p", { style: "margin:0;color:var(--mute)" }, `Level ${x.lvl} · ${x.xp} XP` + (st ? ` · ${st}-day streak` : "")))),
+      h("h2", { style: "margin-top:18px" }, "By lecture"),
+      h(".grid", LS.map((l) => { const s = S.lectureStats(l); return h(".card", h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("b", l.icon + " " + l.title), ring(s.pct, l.color, 44)),
+        h(".src", `Notes ${s.read}/${s.secs} · Cards ${s.known}/${s.cards} · Quiz ${s.right}/${s.qs}`)); })),
+      h("h2", { style: "margin-top:18px" }, "Weak topics"),
+      weak.length ? weak.map(({ l, q }) => h(".fb", h("b", l.title + ": "), md(q.q.split(String.fromCharCode(10))[0]))) : h("p", "No weak topics yet. Take a quiz and they'll show up here."),
+      h("h2", { style: "margin-top:18px" }, "Badges"), h("div", badges.map(([t, on, icn]) => h("span.badge" + (on ? "" : ".lock"), ic(icn, 16), t))));
+  };
+  draw();
 }
 
 /* ---------- admin ---------- */
 async function viewAdmin(v) {
-  v.append(h(".hero", h("h1", "Admin"), h("p", "Everyone's progress. You can block or remove anyone.")), h("p", "Loading..."));
-  const { profiles, progress, error } = await S.adminList();
+  v.append(h(".hero", h("h1", "Admin"), h("p", "Everyone's progress and class codes. You can block or remove anyone.")), h("p", "Loading..."));
+  const [{ profiles, progress, error }, codesR, accessRows] = await Promise.all([S.adminList(), S.adminCodes(), S.adminAccess()]);
   v.lastChild.remove();
   if (error) return v.append(h("p.err", error.message));
+  const codes = Object.fromEntries((codesR.data || []).map((c) => [c.class_id, c.code]));
+  const accessBy = {}; accessRows.forEach((a) => (accessBy[a.user_id] ||= new Set()).add(a.class_id));
   const byId = Object.fromEntries(progress.map((p) => [p.user_id, p]));
-  const rows = profiles.map((p) => {
-    const d = byId[p.id]?.data || { cards: {}, quiz: {}, read: {}, games: {} };
-    const stats = LECS.map((l) => {
-      const secs = (l.sections || []).filter((s) => d.read?.[l.id]?.[s.id]).length;
-      const known = l.cards.filter((c) => d.cards?.[c.id] === "know").length;
-      const right = (l.quiz || []).filter((q) => d.quiz?.[q.id]?.last).length;
-      const games = Math.min((l.games || []).filter((g) => d.games?.[l.id + ":" + g]).length, 3);
-      const parts = [[secs, (l.sections || []).length], [known, l.cards.length], [right, (l.quiz || []).length], [games, 3]].filter((x) => x[1]);
-      return Math.round((parts.reduce((s, x) => s + x[0] / x[1], 0) / (parts.length || 1)) * 100);
+  let sj = SUBJECTS[0]?.id;
+  const draw = () => {
+    v.replaceChildren(h(".hero", h("h1", "Admin"), h("p", "Everyone's progress and class codes. You can block or remove anyone.")));
+    const ls = LECS.filter((l) => l.subject === sj);
+    const rows = profiles.map((p) => {
+      const d = byId[p.id]?.data || { cards: {}, quiz: {}, read: {}, games: {} };
+      const stats = ls.map((l) => {
+        const secs = (l.sections || []).filter((s) => d.read?.[l.id]?.[s.id]).length;
+        const known = l.cards.filter((c) => d.cards?.[c.id] === "know").length;
+        const right = (l.quiz || []).filter((q) => d.quiz?.[q.id]?.last).length;
+        const games = Math.min((l.games || []).filter((g) => d.games?.[l.id + ":" + g]).length, 3);
+        const parts = [[secs, (l.sections || []).length], [known, l.cards.length], [right, (l.quiz || []).length], [games, 3]].filter((x) => x[1]);
+        return Math.round((parts.reduce((s, x) => s + x[0] / x[1], 0) / (parts.length || 1)) * 100);
+      });
+      const avg = stats.length ? Math.round(stats.reduce((a, c) => a + c, 0) / stats.length) : 0;
+      const att = Object.values(d.quiz || {}).reduce((s, x) => s + x.attempts, 0), cor = Object.values(d.quiz || {}).reduce((s, x) => s + x.correct, 0);
+      return { p, stats, avg, acc: att ? Math.round((cor / att) * 100) : null, last: byId[p.id]?.updated_at, classes: [...(accessBy[p.id] || [])] };
     });
-    const avg = stats.length ? Math.round(stats.reduce((a, c) => a + c, 0) / stats.length) : 0;
-    const att = Object.values(d.quiz || {}).reduce((s, x) => s + x.attempts, 0), cor = Object.values(d.quiz || {}).reduce((s, x) => s + x.correct, 0);
-    return { p, stats, avg, acc: att ? Math.round((cor / att) * 100) : null, last: byId[p.id]?.updated_at };
-  });
-  v.append(h(".card", h("b", `${rows.length} accounts`), h(".src", "Columns are each lecture's completion. The class access code can be changed below.")),
-    h(".tw", { style: "margin-top:12px" }, h("table", h("thead", h("tr", ["Student", "Overall", ...LECS.map((l) => l.icon), "Quiz acc.", "Last active", ""].map((x) => h("th", x)))),
-      h("tbody", rows.map((r) => h("tr",
-        h("td", h("b", r.p.display_name || ""), h(".src", r.p.email), r.p.is_admin ? h("span.pill", { style: "background:#2563eb" }, "admin") : "", r.p.blocked ? h("span.pill", { style: "background:#dc2626" }, "blocked") : "", !r.p.access_ok && !r.p.is_admin ? h(".src", "no code yet") : ""),
-        h("td", r.avg + "%"), ...r.stats.map((x) => h("td", x + "%")),
-        h("td", r.acc === null ? "-" : r.acc + "%"), h("td", r.last ? new Date(r.last).toLocaleDateString() : "-"),
-        h("td", r.p.is_admin ? "" : h(".row", { style: "flex-wrap:nowrap" },
-          h("button.btn.alt.sm", { onclick: async () => { await S.adminBlock(r.p.id, !r.p.blocked); route(); } }, r.p.blocked ? "Unblock" : "Block"),
-          h("button.btn.warn.sm", { onclick: async () => { if (confirm("Permanently remove " + r.p.email + "?")) { const x = await S.adminDelete(r.p.id); if (x.error) toast(x.error.message); route(); } } }, "Kick")))))))),
-    h(".card", { style: "margin-top:14px" }, h("h3", "Change class access code"), (() => {
-      const inp = h("input", { placeholder: "New code", "aria-label": "New access code" });
-      return h(".row", { style: "flex-wrap:nowrap" }, inp, h("button.btn.sm", { onclick: async () => { if (!inp.value) return; const x = await S.adminCode(inp.value.trim()); toast(x.error ? x.error.message : "Code updated"); } }, "Save"));
-    })()));
+    v.append(h(".card", h("b", `${rows.length} accounts`), h(".src", "Columns show each lecture's completion for the class you pick.")),
+      h(".row", { style: "margin:10px 0" }, SUBJECTS.map((x) => h("button.chip" + (sj === x.id ? ".on" : ""), { onclick: () => { sj = x.id; draw(); } }, x.icon + " " + x.name))),
+      h(".tw", h("table", h("thead", h("tr", ["Student", "Classes", "Overall", ...ls.map((l) => l.icon), "Quiz acc.", "Last active", ""].map((x) => h("th", x)))),
+        h("tbody", rows.map((r) => h("tr",
+          h("td", h("b", r.p.display_name || ""), h(".src", r.p.email), r.p.is_admin ? h("span.pill", { style: "background:#2563eb" }, "admin") : "", r.p.blocked ? h("span.pill", { style: "background:#dc2626" }, "blocked") : ""),
+          h("td", r.p.is_admin ? "all" : r.classes.map((c) => SUBJECTS.find((x) => x.id === c)?.name || c).join(", ") || "none yet"),
+          h("td", r.avg + "%"), ...r.stats.map((x) => h("td", x + "%")),
+          h("td", r.acc === null ? "-" : r.acc + "%"), h("td", r.last ? new Date(r.last).toLocaleDateString() : "-"),
+          h("td", r.p.is_admin ? "" : h(".row", { style: "flex-wrap:nowrap" },
+            h("button.btn.alt.sm", { onclick: async () => { await S.adminBlock(r.p.id, !r.p.blocked); route(); } }, r.p.blocked ? "Unblock" : "Block"),
+            h("button.btn.warn.sm", { onclick: async () => { if (confirm("Permanently remove " + r.p.email + "?")) { const x = await S.adminDelete(r.p.id); if (x.error) toast(x.error.message); route(); } } }, "Kick")))))))),
+      h(".card", { style: "margin-top:14px" }, h("h3", "Class access codes"),
+        SUBJECTS.map((x) => { const inp = h("input", { value: codes[x.id] || "", placeholder: "Set a code", "aria-label": x.name + " code" });
+          return h("div", { style: "margin:8px 0" }, h("label", { style: "margin:0 0 4px" }, x.icon + " " + x.name), h(".row", { style: "flex-wrap:nowrap" }, inp,
+            h("button.btn.sm", { onclick: async () => { if (!inp.value.trim()) return; const r = await S.adminSetCode(x.id, inp.value.trim()); toast(r.error ? r.error.message : x.name + " code saved"); } }, "Save"))); })));
+  };
+  draw();
 }
 
 boot().catch((e) => { app.replaceChildren(h("p.boot", "Something went wrong: " + e.message)); console.error(e); });
