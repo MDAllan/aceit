@@ -9,13 +9,13 @@
   {
    "id": "law",
    "title": "Every mass pulls on every other mass",
-   "slides": "Gravity deck: 2",
+   "slides": "Gravity deck: 2; Cosmic Perspective Figure 4.17 (p. 123)",
    "steps": [
     {
      "img": {
-      "src": "img/gravity/gravity_2.jpg",
-      "slide": "2",
-      "alt": "Two spheres labelled M1 and M2 pulling on each other across a distance d, next to the gravity formula in a red box."
+      "src": "img/gravity/fig_law.jpg",
+      "slide": "slide 2 (Gravity deck)",
+      "alt": "Two spheres labelled M1 and M2 pulling on each other across a distance d, with the gravity formula F = G M1 M2 / d squared in a red box below them."
      },
      "title": "The universal law of gravitation",
      "bullets": [
@@ -59,9 +59,9 @@
    ],
    "images": [
     {
-     "src": "img/gravity/gravity_2.jpg",
-     "slide": "2",
-     "alt": "Two spheres labelled M1 and M2 pulling on each other across a distance d, next to the gravity formula in a red box."
+     "src": "img/gravity/fig_law.jpg",
+     "slide": "slide 2 (Gravity deck)",
+     "alt": "Two spheres labelled M1 and M2 pulling on each other across a distance d, with the gravity formula F = G M1 M2 / d squared in a red box below them."
     }
    ]
   },
@@ -90,6 +90,14 @@
       "Turn every change into a factor, then multiply. One mass 3 times bigger and distance 2 times bigger: 3 ÷ (2²) = **3/4**.",
       "Both masses doubled and distance doubled: (2 × 2) ÷ (2²) = 4 ÷ 4 = **1**, so the force does not change."
      ]
+    },
+    {
+     "title": "Worked example: measure from the center",
+     "bullets": [
+      "A satellite feels a pull of 900 N from Earth when it sits on the ground, a distance R from Earth's center.",
+      "Lift it to 2R **above the surface**. Its distance from the center is now R + 2R = **3R**, so the force is 900 ÷ 3² = 900 ÷ 9 = **100 N**.",
+      "Always measure d from the center of the planet, not from the ground."
+     ]
     }
    ],
    "bullets": [],
@@ -110,7 +118,8 @@
    "sourceNotes": [
     "Gravity deck slide 2 (the formula); every factor below is derived from F = G M1 M2 / d^2",
     "Cosmic Perspective 4.4: doubling mass doubles force; doubling distance weakens force by 2^2 = 4",
-    "Practice questions Q17 (distance tripled), practice test 2 Q13 (mass halved)"
+    "Practice questions Q17 (distance tripled), practice test 2 Q13 (mass halved)",
+    "Worked example is built from the textbook statement that d is the distance between centers (Figure 4.17) and the inverse square rule (4.4)."
    ],
    "images": [],
    "table": {
@@ -153,13 +162,13 @@
   {
    "id": "shapes",
    "title": "Orbits can be ellipses, parabolas or hyperbolas",
-   "slides": "Gravity deck: 3",
+   "slides": "Gravity deck: 3; Cosmic Perspective Figures 4.18 and 4.19 (pp. 124-125)",
    "steps": [
     {
      "img": {
-      "src": "img/gravity/gravity_3.jpg",
-      "slide": "3",
-      "alt": "A diagram with a bound elliptical orbit around a dot, and two open curved paths, a parabola and a hyperbola, labelled unbound."
+      "src": "img/gravity/fig_shapes.jpg",
+      "slide": "slide 3 (Gravity deck)",
+      "alt": "A bound elliptical orbit around an orange dot, with two open curved paths, an unbound parabolic orbit and an unbound hyperbolic orbit, leaving it."
      },
      "title": "Bound and unbound orbits",
      "bullets": [
@@ -169,10 +178,36 @@
      ]
     },
     {
-     "title": "Newton explained Kepler",
+     "img": {
+      "src": "img/gravity/fig_conic.jpg",
+      "slide": "textbook p.124 / Figure 4.18",
+      "alt": "Left: a bound elliptical orbit with an unbound parabolic and an unbound hyperbolic orbit. Right: a cone sliced at different angles to make a circle, an ellipse, a parabola and a hyperbola."
+     },
+     "title": "Orbit shapes are conic sections",
      "bullets": [
-      "The inverse square law of gravity leads naturally to elliptical orbits, and objects on any orbit move faster when closer and slower when farther.",
-      "Two objects really orbit their **common center of mass**. The heavier object sits closer to that point, and for the Sun and a planet the point is inside or almost inside the Sun."
+      "Circles and ellipses are bound. Parabolas and hyperbolas are unbound. All four shapes come from slicing a cone at different angles.",
+      "Far from the center a hyperbolic orbit looks almost like a straight line.",
+      "Objects on unbound orbits still move faster when they are closer to the object they pass."
+     ]
+    },
+    {
+     "title": "Newton explained Kepler's laws",
+     "bullets": [
+      "The inverse square law of gravity leads naturally to elliptical orbits with the Sun at one **focus**.",
+      "Kepler's second law (faster when closer) follows from conservation of angular momentum, and the third law follows from gravity weakening with distance."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/gravity/fig_com.jpg",
+      "slide": "textbook p.125 / Figure 4.19",
+      "alt": "Three pairs of objects joined by a line with a black triangle at the balance point: equal stars with the point halfway, a heavy and a light star with the point nearer the heavy one, and a star and a tiny planet with the point inside the star."
+     },
+     "title": "Orbiting a common center of mass",
+     "bullets": [
+      "Two objects pulled together by gravity both orbit their **center of mass**, the point where they would balance.",
+      "Equal masses: the point is halfway between them. Unequal masses: it lies closer to the heavier object.",
+      "A star and a planet: the point is inside or almost inside the star, so we barely notice the star's wobble."
      ]
     }
    ],
@@ -194,26 +229,37 @@
    "sourceNotes": [
     "Gravity deck slide 3",
     "Cosmic Perspective 4.4, pp. 123-125 (Figures 4.18, 4.19)",
-    "Practice test 1 Q23 and the explained file (Sun at the focus, not the center)"
+    "Practice test 1 Q23 and the explained file (Sun at the focus, not the center)",
+    "Figure 4.18 (conic sections) and Figure 4.19 (center of mass) are textbook figures, not on the slides."
    ],
    "images": [
     {
-     "src": "img/gravity/gravity_3.jpg",
-     "slide": "3",
-     "alt": "A diagram with a bound elliptical orbit around a dot, and two open curved paths, a parabola and a hyperbola, labelled unbound."
+     "src": "img/gravity/fig_shapes.jpg",
+     "slide": "slide 3 (Gravity deck)",
+     "alt": "A bound elliptical orbit around an orange dot, with two open curved paths, an unbound parabolic orbit and an unbound hyperbolic orbit, leaving it."
+    },
+    {
+     "src": "img/gravity/fig_conic.jpg",
+     "slide": "textbook p.124 / Figure 4.18",
+     "alt": "Left: a bound elliptical orbit with an unbound parabolic and an unbound hyperbolic orbit. Right: a cone sliced at different angles to make a circle, an ellipse, a parabola and a hyperbola."
+    },
+    {
+     "src": "img/gravity/fig_com.jpg",
+     "slide": "textbook p.125 / Figure 4.19",
+     "alt": "Three pairs of objects joined by a line with a black triangle at the balance point: equal stars with the point halfway, a heavy and a light star with the point nearer the heavy one, and a star and a tiny planet with the point inside the star."
     }
    ]
   },
   {
    "id": "kepler3",
    "title": "Weighing worlds with Newton's version of Kepler's third law",
-   "slides": "Gravity deck: 4-5",
+   "slides": "Gravity deck: 4-5; Cosmic Perspective Mathematical Insight 4.3 and Figure 4.20 (pp. 125-126)",
    "steps": [
     {
      "img": {
-      "src": "img/gravity/gravity_5.jpg",
-      "slide": "5",
-      "alt": "The formula for Newton's version of Kepler's third law in a red box, with three examples of measuring a mass from an orbit."
+      "src": "img/gravity/fig_kepler3.jpg",
+      "slide": "slide 5 (Gravity deck)",
+      "alt": "The formula p squared equals 4 pi squared over G times (M1 + M2), times a cubed, in a red box."
      },
      "title": "The formula and what it tells us",
      "bullets": [
@@ -229,6 +275,34 @@
       "Keep the same orbit size but make the total mass 4 times bigger: p² becomes 1/4, so the period is **cut in half**.",
       "A small object orbiting a huge one (Phobos and Mars): M₁ + M₂ is almost just the big mass, so the formula gives the big object's mass."
      ]
+    },
+    {
+     "title": "Worked example: the Sun's mass",
+     "bullets": [
+      "Earth: p = 1 year = 3.15 × 10⁷ s and a = 1.5 × 10¹¹ m. Earth is tiny, so M(Sun) + M(Earth) is about M(Sun).",
+      "Solve for the mass: **M(Sun) = 4π² a³ / (G p²)** = 4π² (1.5 × 10¹¹)³ / [6.67 × 10⁻¹¹ × (3.15 × 10⁷)²].",
+      "The result is about **2 × 10³⁰ kg**."
+     ]
+    },
+    {
+     "title": "Worked example: a geosynchronous satellite",
+     "bullets": [
+      "A geosynchronous satellite orbits once per sidereal day (86,164 s), so it stays above the same spot on Earth.",
+      "Solving the same formula for the distance gives a ≈ **42,000 km** from Earth's center.",
+      "Earth's radius is about 6,400 km, so the satellite is about 35,600 km above the surface."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/gravity/fig_astronaut.jpg",
+      "slide": "textbook p.125 / Figure 4.20",
+      "alt": "An astronaut in a white spacesuit floating beside a spacecraft with Earth below."
+     },
+     "title": "Why an astronaut needs no tether",
+     "bullets": [
+      "For a small object circling a much heavier one, the period depends only on the orbital distance, not on the small object's mass.",
+      "The astronaut and the spacecraft are both tiny compared with Earth and share the same orbit, so they have the same period and stay together at about 28,000 km/hr."
+     ]
     }
    ],
    "bullets": [],
@@ -243,33 +317,40 @@
     },
     {
      "type": "trap",
-     "text": "The distance alone is not enough, and the small orbiter's own mass is not enough (practice test 2 Q14 options D and E). You need period AND distance. If you are given speed and period instead, distance around the orbit = speed x period gives you the size."
+     "text": "Practice test 2 Q14 (Mars and Phobos): the official answer is A, 'orbital period and speed', because distance around the orbit = speed x period gives the orbit size (the explained file says so). Distance alone (option D) and the small moon's own mass (option E) are wrong. You always need the period together with the orbit size."
     }
    ],
    "sourceNotes": [
     "Gravity deck slides 4 and 5",
     "Cosmic Perspective 4.5 and Mathematical Insight 4.3 (p. 126)",
     "p^2 = a^3 as the special case is stated in Cosmic Perspective 4.5 (p. 125); the 4 AU example is derived from it",
-    "Practice test 2 Q14 (Mars and Phobos) and its explained file"
+    "Practice test 2 Q14 (Mars and Phobos) and its explained file",
+    "Worked examples: Cosmic Perspective Mathematical Insight 4.3, Example 1 (Sun, 2 x 10^30 kg) and Example 2 (geosynchronous, 42,000 km, 35,600 km above the surface), p. 126",
+    "Figure 4.20 (astronaut and spacecraft) is a textbook figure, p. 125"
    ],
    "images": [
     {
-     "src": "img/gravity/gravity_5.jpg",
-     "slide": "5",
-     "alt": "The formula for Newton's version of Kepler's third law in a red box, with three examples of measuring a mass from an orbit."
+     "src": "img/gravity/fig_kepler3.jpg",
+     "slide": "slide 5 (Gravity deck)",
+     "alt": "The formula p squared equals 4 pi squared over G times (M1 + M2), times a cubed, in a red box."
+    },
+    {
+     "src": "img/gravity/fig_astronaut.jpg",
+     "slide": "textbook p.125 / Figure 4.20",
+     "alt": "An astronaut in a white spacesuit floating beside a spacecraft with Earth below."
     }
    ]
   },
   {
    "id": "energy",
    "title": "Orbital energy stays constant",
-   "slides": "Orbits and Tides deck: 2",
+   "slides": "Orbits and Tides deck: 2; Cosmic Perspective Figure 4.21 (p. 126)",
    "steps": [
     {
      "img": {
-      "src": "img/gravity/orbits_2.jpg",
-      "slide": "2",
-      "alt": "A tall ellipse with a yellow Sun near the bottom: slow with more potential energy at the top, fast with more kinetic energy at the bottom."
+      "src": "img/gravity/fig_orbit_energy.jpg",
+      "slide": "slide 2 (Orbits and Tides deck)",
+      "alt": "A tall ellipse with a yellow Sun near the bottom: at the top the object is slow with more potential energy, at the bottom it is fast with more kinetic energy."
      },
      "title": "Kinetic plus potential equals constant",
      "bullets": [
@@ -308,26 +389,34 @@
    ],
    "images": [
     {
-     "src": "img/gravity/orbits_2.jpg",
-     "slide": "2",
-     "alt": "A tall ellipse with a yellow Sun near the bottom: slow with more potential energy at the top, fast with more kinetic energy at the bottom."
+     "src": "img/gravity/fig_orbit_energy.jpg",
+     "slide": "slide 2 (Orbits and Tides deck)",
+     "alt": "A tall ellipse with a yellow Sun near the bottom: at the top the object is slow with more potential energy, at the bottom it is fast with more kinetic energy."
     }
    ]
   },
   {
    "id": "change",
    "title": "How an orbit gains or loses energy",
-   "slides": "Orbits and Tides deck: 3",
+   "slides": "Orbits and Tides deck: 3; Cosmic Perspective Figure 4.22 (p. 127)",
    "steps": [
     {
      "img": {
-      "src": "img/gravity/orbits_3.jpg",
-      "slide": "3",
-      "alt": "A diagram of a comet path bending as it passes Jupiter, changing from an open path into a small closed orbit around the Sun."
+      "src": "img/gravity/fig_encounter.jpg",
+      "slide": "textbook p.127 / Figure 4.22",
+      "alt": "A comet's dashed unbound path bending as it passes Jupiter and becoming a closed elliptical orbit around the yellow Sun."
      },
+     "title": "A gravitational encounter",
+     "bullets": [
+      "A comet on an unbound orbit passes close to Jupiter. The two swap orbital energy.",
+      "The comet loses so much energy that its orbit changes from unbound to a bound ellipse.",
+      "Jupiter gains exactly what the comet loses, but its huge mass hides the effect."
+     ]
+    },
+    {
      "title": "Three ways to change orbital energy",
      "bullets": [
-      "**Friction or atmospheric drag**. Not usually important in space, which is almost empty.",
+      "**Friction or atmospheric drag**. Not important in empty space, but it matters in a thin atmosphere.",
       "A **gravitational encounter**: a close pass by another object swaps energy between the two.",
       "**Collisions or impacts**."
      ]
@@ -335,8 +424,9 @@
     {
      "title": "Examples",
      "bullets": [
-      "In the picture a comet loses so much energy to Jupiter that its orbit changes from unbound to bound. Jupiter gains exactly what the comet loses, but its huge mass hides the effect.",
-      "A satellite in low Earth orbit meets a little drag from the thin upper air. It loses orbital energy as heat, slowly falls and often burns up."
+      "A satellite in low Earth orbit meets a little drag from the thin upper air. It loses orbital energy as heat, slowly falls and often burns up.",
+      "The New Horizons spacecraft was sent past Jupiter on purpose to gain orbital energy at Jupiter's expense. This saved about four years on the trip to Pluto.",
+      "Encounters with the giant planets probably kicked many comets out into far-away orbits."
      ]
     }
    ],
@@ -358,40 +448,56 @@
    "sourceNotes": [
     "Orbits and Tides deck slide 3",
     "Cosmic Perspective 4.5, pp. 126-127 (Figure 4.22, Gravitational Encounters, Atmospheric Drag)",
-    "Practice questions Q19 (no answer key; answer taken from Cosmic Perspective 4.5)"
+    "Practice questions Q19 (no answer key; answer taken from Cosmic Perspective 4.5)",
+    "New Horizons and the comet 'kicked out' examples are textbook only (p. 127)."
    ],
    "images": [
     {
-     "src": "img/gravity/orbits_3.jpg",
-     "slide": "3",
-     "alt": "A diagram of a comet path bending as it passes Jupiter, changing from an open path into a small closed orbit around the Sun."
+     "src": "img/gravity/fig_encounter.jpg",
+     "slide": "textbook p.127 / Figure 4.22",
+     "alt": "A comet's dashed unbound path bending as it passes Jupiter and becoming a closed elliptical orbit around the yellow Sun."
     }
    ]
   },
   {
    "id": "escape",
    "title": "Escape velocity",
-   "slides": "Orbits and Tides deck: 4",
+   "slides": "Orbits and Tides deck: 4; Cosmic Perspective Mathematical Insight 4.4 and Figure 4.23 (pp. 127-128)",
    "steps": [
     {
      "img": {
-      "src": "img/gravity/orbits_4.jpg",
-      "slide": "4",
-      "alt": "Earth with closed orbits around it and one spiralling path that leaves, labelled escape velocity."
+      "src": "img/gravity/fig_escape.jpg",
+      "slide": "textbook p.127 / Figure 4.23",
+      "alt": "Earth with a low circular orbit, a bigger elliptical orbit and a path that leaves Earth, labelled escape velocity, with notes on firing a rocket a little or for long enough."
      },
      "title": "Leaving for good",
      "bullets": [
-      "If an object gains enough orbital energy, it changes from a bound orbit to an unbound one and escapes.",
-      "**Escape velocity** from Earth is about **11 km/s** from sea level, roughly 40,000 km/hr.",
-      "A rocket that fires long enough gives the spacecraft enough extra energy to leave."
+      "Firing a rocket a little gives extra orbital energy and lifts the spacecraft into a higher, more elliptical orbit.",
+      "Firing long enough gives enough energy to change a bound orbit into an unbound one, and the spacecraft escapes.",
+      "**Escape velocity** from Earth is about **11 km/s** from sea level, roughly 40,000 km/hr."
      ]
     },
     {
      "title": "What it does and does not depend on",
      "bullets": [
       "It does **not** depend on the mass of the escaping object. An atom, a rock and a spacecraft all need about 11 km/s.",
-      "It does depend on the planet. The formula is v = √(2GM/R). From the Moon's surface it is only 2.4 km/s.",
-      "Starting higher above Earth needs less speed, because gravity is weaker there."
+      "It does depend on the planet and on the starting distance: **v = √(2GM/R)**. Starting higher up needs less speed, because gravity is weaker there."
+     ]
+    },
+    {
+     "title": "Worked example: the Moon",
+     "bullets": [
+      "Moon: M = 7.4 × 10²² kg and R = 1.7 × 10⁶ m (its radius, since we start on the surface).",
+      "v = √[2 × 6.67 × 10⁻¹¹ × 7.4 × 10²² ÷ 1.7 × 10⁶] ≈ 2,400 m/s = **2.4 km/s**.",
+      "That is less than one-fourth of Earth's 11 km/s."
+     ]
+    },
+    {
+     "title": "Worked example: from a high station",
+     "bullets": [
+      "A station in geosynchronous orbit is 42,000 km (4.2 × 10⁷ m) from Earth's center. Earth's mass is 6.0 × 10²⁴ kg.",
+      "v = √[2 × 6.67 × 10⁻¹¹ × 6.0 × 10²⁴ ÷ 4.2 × 10⁷] ≈ 4,400 m/s = **4.4 km/s**.",
+      "That is far less than 11 km/s, so launching from a high station needs much less fuel."
      ]
     }
    ],
@@ -414,40 +520,65 @@
     "Orbits and Tides deck slide 4",
     "Cosmic Perspective 4.5, pp. 127-128 and Mathematical Insight 4.4 (formula, Moon 2.4 km/s, geosynchronous 4.4 km/s)",
     "Practice questions Q20 (no answer key; answer taken from Cosmic Perspective 4.5)",
-    "(outside source) The 'mass cancels' explanation in the why box is my reasoning, consistent with the textbook statement that escape velocity does not depend on the escaping object's mass."
+    "(outside source) The 'mass cancels' explanation in the why box is my reasoning, consistent with the textbook statement that escape velocity does not depend on the escaping object's mass.",
+    "Worked examples: Cosmic Perspective Mathematical Insight 4.4, Example 1 (Moon, 2.4 km/s) and Example 2 (geosynchronous station, 4.4 km/s), p. 128"
    ],
    "images": [
     {
-     "src": "img/gravity/orbits_4.jpg",
-     "slide": "4",
-     "alt": "Earth with closed orbits around it and one spiralling path that leaves, labelled escape velocity."
+     "src": "img/gravity/fig_escape.jpg",
+     "slide": "textbook p.127 / Figure 4.23",
+     "alt": "Earth with a low circular orbit, a bigger elliptical orbit and a path that leaves Earth, labelled escape velocity, with notes on firing a rocket a little or for long enough."
     }
    ]
   },
   {
    "id": "tides",
    "title": "How gravity causes tides",
-   "slides": "Orbits and Tides deck: 5",
+   "slides": "Orbits and Tides deck: 5; Cosmic Perspective Figures 4.24 and 4.26 (pp. 128-130)",
    "steps": [
     {
      "img": {
-      "src": "img/gravity/orbits_5.jpg",
-      "slide": "5",
-      "alt": "Earth stretched into an oval of ocean with arrows pointing toward a small grey Moon, the arrows longest on the near side."
+      "src": "img/gravity/fig_tides_slide.jpg",
+      "slide": "slide 5 (Orbits and Tides deck)",
+      "alt": "Earth inside an oval of blue ocean with three arrows pointing toward a small grey Moon, the arrow on the near side the longest."
      },
      "title": "The Moon stretches Earth",
      "bullets": [
       "The Moon's gravity is stronger on the near side of Earth than on the far side.",
-      "This difference slightly **stretches** Earth, making two **tidal bulges**: one toward the Moon and one on the opposite side.",
-      "Earth spins through both bulges each day, so most places get two high tides and two low tides. The cycle takes about 24 h 50 min, so high tides come about 12 h 25 min apart."
+      "This difference slightly **stretches** Earth along the Earth-Moon line."
      ]
     },
     {
+     "img": {
+      "src": "img/gravity/fig_tides_bulges.jpg",
+      "slide": "textbook p.129 / Figure 4.24",
+      "alt": "Earth inside an oval of blue ocean with arrows toward the Moon and notes that the pull is weakest on the far side and strongest on the near side, raising bulges both toward and away from the Moon."
+     },
+     "title": "Two bulges, two high tides",
+     "bullets": [
+      "Stretching makes two **tidal bulges**: one toward the Moon and one on the opposite side.",
+      "Earth spins through both bulges each day, so most places get two high tides and two low tides. The cycle takes about 24 h 50 min, so high tides come about 12 h 25 min apart.",
+      "The bulges raise the oceans only about 2 meters and the land only about a centimeter."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/gravity/fig_spring_neap.jpg",
+      "slide": "textbook p.130 / Figure 4.26",
+      "alt": "Two diagrams: at new Moon and full Moon the Sun and Moon pull along the same line and make spring tides, at first- and third-quarter Moon they pull at right angles and make smaller neap tides."
+     },
      "title": "Spring and neap tides",
      "bullets": [
-      "The Sun also makes tides, but a bit less than half as strong as the Moon's.",
+      "The Sun also makes tides, a little less than half as strong as the Moon's.",
       "At **new Moon and full Moon** the Sun and Moon pull along the same line and the tides are largest: **spring tides**.",
-      "At first and third quarter Moon they pull at right angles and the tides are smaller: **neap tides**."
+      "At first and third quarter Moon they work against each other and the tides are smaller: **neap tides**."
+     ]
+    },
+    {
+     "title": "Why the Sun's tides are weaker",
+     "bullets": [
+      "The Sun's pull on Earth as a whole is much stronger than the Moon's. That is why Earth orbits the Sun.",
+      "Tides come from the **difference** in pull between the near and far sides, and at the Sun's huge distance that difference is small."
      ]
     }
    ],
@@ -474,26 +605,37 @@
     "Orbits and Tides deck slides 5 and 8",
     "Cosmic Perspective 4.5, pp. 128-130 (Figures 4.24-4.26, Common Misconceptions: The Origin of Tides)",
     "Practice questions Q21 (no answer key; answer from Cosmic Perspective 4.5)",
-    "Spring and neap tides, and the 24 h 50 min cycle, are textbook only (not in the slides)"
+    "Spring and neap tides, and the 24 h 50 min cycle, are textbook only (not in the slides)",
+    "Figures 4.24 and 4.26 are textbook figures. The 2 m and 1 cm bulge sizes are from the Figure 4.24 caption."
    ],
    "images": [
     {
-     "src": "img/gravity/orbits_5.jpg",
-     "slide": "5",
-     "alt": "Earth stretched into an oval of ocean with arrows pointing toward a small grey Moon, the arrows longest on the near side."
+     "src": "img/gravity/fig_tides_slide.jpg",
+     "slide": "slide 5 (Orbits and Tides deck)",
+     "alt": "Earth inside an oval of blue ocean with three arrows pointing toward a small grey Moon, the arrow on the near side the longest."
+    },
+    {
+     "src": "img/gravity/fig_tides_bulges.jpg",
+     "slide": "textbook p.129 / Figure 4.24",
+     "alt": "Earth inside an oval of blue ocean with arrows toward the Moon and notes that the pull is weakest on the far side and strongest on the near side, raising bulges both toward and away from the Moon."
+    },
+    {
+     "src": "img/gravity/fig_spring_neap.jpg",
+     "slide": "textbook p.130 / Figure 4.26",
+     "alt": "Two diagrams: at new Moon and full Moon the Sun and Moon pull along the same line and make spring tides, at first- and third-quarter Moon they pull at right angles and make smaller neap tides."
     }
    ]
   },
   {
    "id": "friction",
    "title": "Tidal friction and the Moon's locked face",
-   "slides": "Orbits and Tides deck: 6",
+   "slides": "Orbits and Tides deck: 6; Cosmic Perspective Figure 4.27 (p. 130)",
    "steps": [
     {
      "img": {
-      "src": "img/gravity/orbits_6.jpg",
-      "slide": "6",
-      "alt": "Earth with an oval tidal bulge turned slightly ahead of the line to the Moon, with arrows showing the pull and the spin."
+      "src": "img/gravity/fig_tidal_friction.jpg",
+      "slide": "textbook p.130 / Figure 4.27",
+      "alt": "Earth with a tidal bulge tilted slightly ahead of the dashed Earth-Moon line, with arrows showing Earth's spin, the Moon's pull back on the bulge, and the bulge's pull forward on the Moon."
      },
      "title": "The bulge leads the Moon",
      "bullets": [
@@ -505,7 +647,8 @@
      "title": "Synchronous rotation and the numbers",
      "bullets": [
       "The Moon once spun much faster. Tidal friction slowed its spin until it locked into **synchronous rotation**: it turns once per orbit and always shows nearly the same face to Earth.",
-      "Tidal friction lengthens Earth's day by only about 1 second every 50,000 years, but over billions of years it adds up."
+      "Tidal friction lengthens Earth's day by only about 1 second every 50,000 years, but over billions of years it adds up.",
+      "Long ago a day may have been only 5 or 6 hours long, and the Moon may have been one-tenth of its present distance or less."
      ]
     }
    ],
@@ -532,9 +675,9 @@
    ],
    "images": [
     {
-     "src": "img/gravity/orbits_6.jpg",
-     "slide": "6",
-     "alt": "Earth with an oval tidal bulge turned slightly ahead of the line to the Moon, with arrows showing the pull and the spin."
+     "src": "img/gravity/fig_tidal_friction.jpg",
+     "slide": "textbook p.130 / Figure 4.27",
+     "alt": "Earth with a tidal bulge tilted slightly ahead of the dashed Earth-Moon line, with arrows showing Earth's spin, the Moon's pull back on the bulge, and the bulge's pull forward on the Moon."
     }
    ]
   },
@@ -545,8 +688,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/gravity/orbits_7.jpg",
-      "slide": "7",
+      "src": "img/gravity/fig_newton_einstein.jpg",
+      "slide": "slide 7 (Orbits and Tides deck)",
       "alt": "Two portraits side by side, Isaac Newton on the left and Albert Einstein on the right."
      },
      "title": "Force differs, acceleration does not",
@@ -561,6 +704,14 @@
      "bullets": [
       "Near Earth's surface the acceleration of gravity is about **9.8 m/s²** for every falling object.",
       "From F = G M₁ M₂ / d² the acceleration of a rock is a = G M(Earth) / d². The rock's mass cancels, and a drops to 1/4 if d doubles."
+     ]
+    },
+    {
+     "title": "Worked examples: Moon and Space Station",
+     "bullets": [
+      "Moon: g = GM/R² = 6.67 × 10⁻¹¹ × 7.4 × 10²² ÷ (1.7 × 10⁶)² ≈ **1.7 m/s²**, about one-sixth of Earth's, so things weigh about one-sixth as much.",
+      "Space Station, 350 km up: d = 6,400 + 350 = 6,750 km, so g ≈ 6.67 × 10⁻¹¹ × 6.0 × 10²⁴ ÷ (6.75 × 10⁶)² ≈ **8.8 m/s²**.",
+      "That is only about 10% less than at the surface. Astronauts float because they are in free-fall, not because gravity is missing."
      ]
     }
    ],
@@ -583,12 +734,13 @@
     "Orbits and Tides deck slide 7",
     "Cosmic Perspective 4.5, p. 130-131 and Mathematical Insight 4.5 (g = 9.8 m/s^2; Space Station 8.8 m/s^2)",
     "Practice test 2 Q15 and its explained file ('about 110 years ago' = 1915)",
-    "9.8 m/s^2 is textbook and practice file only (not on the slides); the d = 2 R example is derived from the inverse square law"
+    "9.8 m/s^2 is textbook and practice file only (not on the slides); the d = 2 R example is derived from the inverse square law",
+    "Worked examples: Cosmic Perspective Mathematical Insight 4.5, Example 1 (Moon, 1.7 m/s^2) and Example 2 (Space Station, 8.8 m/s^2), p. 131"
    ],
    "images": [
     {
-     "src": "img/gravity/orbits_7.jpg",
-     "slide": "7",
+     "src": "img/gravity/fig_newton_einstein.jpg",
+     "slide": "slide 7 (Orbits and Tides deck)",
      "alt": "Two portraits side by side, Isaac Newton on the left and Albert Einstein on the right."
     }
    ]
@@ -903,6 +1055,27 @@
    "back": "About 12 h 25 min, because the full cycle of two highs takes about 24 h 50 min.",
    "short": "High tides about 12 h 25 min apart",
    "src": "Cosmic Perspective 4.5 (not on slides)"
+  },
+  {
+   "id": "gr-c38",
+   "front": "Escape velocity formula",
+   "back": "v = √(2GM/R), where M is the mass of the planet or moon and R is the starting distance from its center. It gives 2.4 km/s from the Moon's surface and 4.4 km/s from geosynchronous orbit.",
+   "short": "v = √(2GM/R)",
+   "src": "Cosmic Perspective Mathematical Insight 4.4"
+  },
+  {
+   "id": "gr-c39",
+   "front": "Acceleration of gravity formula",
+   "back": "g = GM/R². It is 9.8 m/s² at Earth's surface, 1.7 m/s² on the Moon and 8.8 m/s² at the Space Station's altitude.",
+   "short": "g = GM/R² for any planet",
+   "src": "Cosmic Perspective Mathematical Insight 4.5"
+  },
+  {
+   "id": "gr-c40",
+   "front": "Common center of mass in an orbit",
+   "back": "Two objects held by gravity both orbit the point where they would balance. It is halfway for equal masses and closer to the heavier object. For the Sun and a planet it is inside or almost inside the Sun.",
+   "short": "Both orbit their balance point",
+   "src": "Cosmic Perspective 4.4 and Figure 4.19"
   }
  ],
  "quiz": [
@@ -918,7 +1091,7 @@
    ],
    "answer": 1,
    "why": "Force goes as 1/d². Tripling d makes d² nine times bigger, so the force is one ninth as strong.",
-   "source": "Gravity deck slide 2; extra practice Q17"
+   "source": "ASTR207 Practice questions Q17; Gravity deck slide 2"
   },
   {
    "id": "gr-2",
@@ -932,175 +1105,219 @@
    ],
    "answer": 2,
    "why": "Force is directly proportional to each mass, so half the mass gives half the force. The factor 4 is what you get from changing the distance, not a mass.",
-   "source": "Gravity deck slide 2; practice test 2 Q13"
+   "source": "Practice test 2 Q13 and its explained file; Gravity deck slide 2"
   },
   {
-   "id": "gr-3",
-   "q": "Two asteroids attract each other with a force of 6 N. Their centers are moved to half the original distance. What is the new force?",
+   "id": "gr-27",
+   "q": "Two objects attract each other with a force F. The mass of the first object is tripled, the mass of the second object is halved, and the distance between their centers is tripled. The new force is",
    "options": [
-    "1.5 N",
-    "3 N",
-    "12 N",
-    "18 N",
-    "24 N"
-   ],
-   "answer": 4,
-   "why": "Halving d makes d² four times smaller, so the force is 4 times bigger: 6 N × 4 = 24 N.",
-   "source": "Gravity deck slide 2 (F = G M1 M2 / d^2); calculation"
-  },
-  {
-   "id": "gr-4",
-   "q": "Two stars attract each other with some force. If BOTH masses are doubled and the distance stays the same, the force",
-   "options": [
-    "becomes 4 times bigger.",
-    "becomes 2 times bigger.",
-    "becomes 8 times bigger.",
-    "stays the same.",
-    "becomes 1/4 as big."
-   ],
-   "answer": 0,
-   "why": "Each mass doubles the force, so 2 × 2 = 4 times bigger. The distance did not change.",
-   "source": "Gravity deck slide 2; calculation"
-  },
-  {
-   "id": "gr-5",
-   "q": "Both masses are doubled AND the distance between their centers is doubled. What happens to the gravitational force?",
-   "options": [
-    "It becomes 4 times bigger.",
-    "It becomes 2 times bigger.",
-    "It becomes 1/4 as big.",
-    "It does not change.",
-    "It becomes 1/2 as big."
+    "F/2",
+    "3F/2",
+    "27F/2",
+    "F/6",
+    "F/18"
    ],
    "answer": 3,
-   "why": "The masses give a factor of 2 × 2 = 4 on top. Doubling the distance gives a factor of 2² = 4 on the bottom. 4 ÷ 4 = 1.",
-   "source": "Gravity deck slide 2; calculation"
+   "why": "Write each change as a factor: the masses give 3 × 1/2 = 3/2 on top, and tripling d divides by 3² = 9. So the force is (3/2) ÷ 9 = 1/6 of F. F/2 forgets to square the distance factor.",
+   "source": "Gravity deck slide 2 (F = G M1 M2 / d^2); Cosmic Perspective 4.4; calculation"
   },
   {
-   "id": "gr-6",
-   "q": "One mass becomes 3 times bigger and the distance between the centers becomes 2 times bigger. The gravitational force becomes",
+   "id": "gr-28",
+   "q": "A satellite feels a gravitational force of 900 N from Earth while it sits on the ground, a distance R from Earth's center. It is then lifted to an altitude of 2R above Earth's surface. What is the force of Earth's gravity on it now?",
    "options": [
-    "3/2 of its original value.",
-    "12 times its original value.",
-    "3/4 of its original value.",
-    "1/12 of its original value.",
-    "the same as before."
+    "100 N",
+    "225 N",
+    "300 N",
+    "450 N",
+    "8,100 N"
    ],
-   "answer": 2,
-   "why": "The force goes as mass ÷ d². The mass gives a factor of 3, and doubling d divides by 2² = 4. So 3 ÷ 4 = 3/4.",
-   "source": "Gravity deck slide 2; calculation"
+   "answer": 0,
+   "why": "Distance is measured from the center. At 2R above the surface, d = R + 2R = 3R, so the force is 900 ÷ 3² = 900 ÷ 9 = 100 N. Using d = 2R gives the wrong 225 N, and 8,100 N multiplies by 9 instead of dividing.",
+   "source": "Cosmic Perspective 4.4 (Figure 4.17: d is between centers); calculation"
   },
   {
-   "id": "gr-7",
-   "q": "Using p² = a³ (p in years, a in AU) for orbits around the Sun, an asteroid with an average distance of 4 AU has an orbital period of",
+   "id": "gr-29",
+   "q": "In which of the following situations is Newton's third law NOT applicable?",
    "options": [
-    "2 years.",
-    "8 years.",
-    "4 years.",
-    "16 years.",
-    "64 years."
+    "when one object is much more massive than the other",
+    "Newton's third law is applicable in all cases.",
+    "when the force in question is gravity and the objects are physically separated",
+    "when the objects are microscopic",
+    "when more than two objects are involved"
    ],
    "answer": 1,
-   "why": "a³ = 4 × 4 × 4 = 64. So p² = 64 and p = 8 years. (64 years is p², not p.)",
-   "source": "Cosmic Perspective 4.5 (p² = a³ special case); Gravity deck slides 4-5"
+   "why": "Every force comes as an equal and opposite pair. Earth pulls on you exactly as hard as you pull on Earth. The different masses only give different accelerations, not different forces. The law also holds for gravity at a distance.",
+   "source": "Practice test 2 Q10 and its explained file"
   },
   {
-   "id": "gr-8",
-   "q": "In Newton's version of Kepler's third law, two systems have the same average orbital distance, but the total mass of the second system is 4 times bigger. Compared with the first system, the second system's orbital period is",
+   "id": "gr-30",
+   "q": "Which of the following statements does NOT follow from Kepler's first law?",
    "options": [
-    "half as long.",
-    "twice as long.",
-    "4 times as long.",
-    "the same.",
-    "1/4 as long."
+    "The Earth orbits the Sun.",
+    "Comets and asteroids need not orbit the Sun in elliptical paths.",
+    "The Sun is located at one of the ellipse foci, while the other focus need not be occupied by any other body.",
+    "Venus, Mars, and the other planets orbit the Sun.",
+    "The orbits of planets are elliptical with the Sun at the center of the ellipse."
    ],
-   "answer": 0,
-   "why": "p² = 4π²a³ / [G(M₁ + M₂)]. A 4 times bigger mass makes p² four times smaller, and the square root of 1/4 is 1/2.",
-   "source": "Gravity deck slides 4-5; calculation"
+   "answer": 4,
+   "why": "In an ellipse the Sun sits at one focus, not at the center. All the other statements are consistent with Kepler's first law and with Newton's extension of it.",
+   "source": "Practice test 1 Q23 and its explained file; Cosmic Perspective 4.4"
   },
   {
-   "id": "gr-9",
-   "q": "Which of the following is the best way of determining the mass of Mars by examining its moon Phobos?",
-   "options": [
-    "Phobos's mass alone gives Mars's mass via the universal law of gravitation.",
-    "Phobos's orbital distance alone gives Mars's mass.",
-    "Phobos's orbital period and distance (size of its orbit) give Mars's mass via Newton's version of Kepler's third law.",
-    "How fast Phobos spins on its own axis gives Mars's mass.",
-    "How stretched Phobos's orbit is gives Mars's mass."
-   ],
-   "answer": 2,
-   "why": "Newton's version of Kepler's third law needs both the period and the orbit size. Since Phobos is tiny, M₁ + M₂ is almost just the mass of Mars.",
-   "source": "Gravity deck slides 4-5; practice test 2 Q14"
-  },
-  {
-   "id": "gr-10",
-   "q": "Which pair of measurements lets us calculate the mass of the Sun using Newton's version of Kepler's third law?",
-   "options": [
-    "Earth's radius and its day length",
-    "The Moon's phase and Earth's tilt",
-    "The Sun's diameter alone",
-    "Earth's orbital period (1 year) and average distance (1 AU)",
-    "Earth's mass and the Moon's period"
-   ],
-   "answer": 3,
-   "why": "An orbit's period and average distance give the total mass of the system, and the Sun is far heavier than Earth.",
-   "source": "Gravity deck slide 5"
-  },
-  {
-   "id": "gr-11",
-   "q": "Consider these statements about orbits.\nI. A bound orbit has the shape of an ellipse.\nII. An unbound orbit can have the shape of a hyperbola.\nIII. Kepler's laws apply only to planets, never to moons or satellites.",
+   "id": "gr-31",
+   "q": "Consider these statements about orbits under gravity.\nI. An object on a hyperbolic orbit still moves faster when it is closer to the object it passes.\nII. A comet on an unbound orbit swings around the Sun once and never returns.\nIII. A planet orbits a Sun that stays perfectly still at the center of the system.",
    "options": [
     "I only",
+    "II only",
     "I and II only",
     "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "I and II are true: even unbound orbits obey the rule that an object moves faster when closer. III is false: the Sun and the planet both orbit their common center of mass, which lies inside or almost inside the Sun.",
+   "source": "Cosmic Perspective 4.4 (pp. 124-125, Figures 4.18-4.19)"
+  },
+  {
+   "id": "gr-32",
+   "q": "Two stars with masses 2M and M are 9 AU apart (the middle diagram in the picture). They both orbit their common center of mass. How far is the center of mass from the more massive star?",
+   "options": [
+    "1.5 AU",
+    "3 AU",
+    "4.5 AU",
+    "6 AU",
+    "9 AU"
+   ],
+   "answer": 1,
+   "why": "The balance point lies closer to the heavier star, so the distances are in the ratio 1 : 2 (the heavier star is half as far as the lighter one). The two distances add to 9 AU, so 3 AU and 6 AU. 4.5 AU would be correct only for equal masses.",
+   "source": "Cosmic Perspective 4.4 and Figure 4.19 (p. 125); (outside source) the 1:2 balance arithmetic follows from the textbook definition of the center of mass as the point where the objects would balance",
+   "img": {
+    "src": "img/gravity/fig_com.jpg",
+    "alt": "Three pairs of objects joined by a line with a black triangle at the balance point: equal stars, a heavy and a light star, and a star and a tiny planet."
+   }
+  },
+  {
+   "id": "gr-33",
+   "q": "Earth orbits the Sun in 1 year (3.15 × 10⁷ s) at an average distance of 1.5 × 10¹¹ m. Use Newton's version of Kepler's third law, p² = 4π² a³ / [G (M₁ + M₂)], with G = 6.67 × 10⁻¹¹ m³/(kg·s²). Because Earth is tiny, M₁ + M₂ is about the Sun's mass. The Sun's mass is about",
+   "options": [
+    "2 × 10²¹ kg",
+    "5 × 10²⁸ kg",
+    "6 × 10²⁴ kg",
+    "2 × 10³⁰ kg",
+    "6 × 10³⁷ kg"
+   ],
+   "answer": 3,
+   "why": "Solve for M = 4π² a³ / (G p²). The top is 39.5 × (1.5 × 10¹¹)³ = 1.33 × 10³⁵. The bottom is 6.67 × 10⁻¹¹ × (3.15 × 10⁷)² = 6.62 × 10⁴. Dividing gives 2.0 × 10³⁰ kg. Forgetting to square p gives 6 × 10³⁷, forgetting 4π² gives 5 × 10²⁸, and putting a in km gives 2 × 10²¹.",
+   "source": "Cosmic Perspective Mathematical Insight 4.3, Example 1 (p. 126); Gravity deck slide 5"
+  },
+  {
+   "id": "gr-34",
+   "q": "A geosynchronous satellite is 42,000 km from Earth's center and has an orbital period of 24 hours. The Space Station orbits Earth at 6,750 km from Earth's center. Both are tiny compared with Earth. About how long does the Space Station take to orbit once?",
+   "options": [
+    "about 0.1 hours",
+    "about 0.6 hours",
+    "about 1.5 hours",
+    "about 3.9 hours",
+    "about 9.6 hours"
+   ],
+   "answer": 2,
+   "why": "Same central mass, so p² is proportional to a³. The distance ratio is 6,750 ÷ 42,000 = 0.161, so p = 24 h × 0.161^1.5 = 24 × 0.0644 = 1.55 h. Using p proportional to a gives 3.9 h, p to a² gives 0.6 h, p to a³ gives 0.1 h and p to √a gives 9.6 h.",
+   "source": "Cosmic Perspective Mathematical Insight 4.3 Example 2 (42,000 km) and Mathematical Insight 4.5 Example 2 (6,750 km); Newton's version of Kepler's third law; calculation"
+  },
+  {
+   "id": "gr-35",
+   "q": "A planet orbits at 1 AU, the same distance as Earth, around a star whose mass is 4 times the Sun's mass. Using Newton's version of Kepler's third law, its orbital period is",
+   "options": [
+    "0.25 year",
+    "1 year",
+    "2 years",
+    "4 years",
+    "0.5 year"
+   ],
+   "answer": 4,
+   "why": "p² = 4π² a³ / [G (M₁ + M₂)]. The distance is the same, but the total mass is 4 times bigger, so p² is 4 times smaller. The square root of 1/4 is 1/2, so the period is half a year. A heavier star pulls harder, so the planet finishes a lap sooner.",
+   "source": "Gravity deck slides 4-5; Cosmic Perspective Mathematical Insight 4.3; calculation"
+  },
+  {
+   "id": "gr-36",
+   "q": "Which of the following is the best way of determining the mass of Mars by examining its moon Phobos?",
+   "options": [
+    "Phobos's orbital period and speed tell us the mass of Mars, via Newton's version of Kepler's third law.",
+    "The gravitational acceleration of Phobos towards Mars tells us the mass of Mars, via Newton's second law.",
+    "Phobos's orbital eccentricity tells us Mars's mass, via Newton's version of Kepler's second law.",
+    "Phobos's orbital distance alone tells us the mass of Mars, via the universal law of gravitation.",
+    "Phobos's mass alone tells us the mass of Mars, via the universal law of gravitation."
+   ],
+   "answer": 0,
+   "why": "Distance around the orbit = speed × period, so period and speed give the orbit size. Period and size in Newton's version of Kepler's third law give the total mass, and since Phobos is tiny that is almost all Mars. Distance alone is not enough, and Phobos's own mass tells us nothing about Mars.",
+   "source": "Practice test 2 Q14 and its explained file (answer A); Gravity deck slides 4-5"
+  },
+  {
+   "id": "gr-37",
+   "q": "Consider Newton's second law, F = ma. If a planet is travelling in an elliptical orbit, what does that imply about the force acting on the planet?",
+   "options": [
+    "The constant acceleration of the planet, as evidenced by its orbital path, arises from the constant gravitational force acting on it.",
+    "Newton's second law does not apply to orbits; we require Kepler's laws for explaining orbital mechanics.",
+    "The varying acceleration of the planet, as evidenced by its orbital path, arises from a varying gravitational force acting on it.",
+    "The mass and the acceleration of the planet vary over the course of the orbit in order to maintain a constant gravitational force.",
+    "There is no force acting on the planet; that is why it doesn't slow down or speed up in its orbit."
+   ],
+   "answer": 2,
+   "why": "On an ellipse the distance to the Sun keeps changing. Gravity follows an inverse square law, so a changing distance means a changing force and a changing acceleration. The planet's mass does not change.",
+   "source": "Practice test 2 Q9 and its explained file (answer C)"
+  },
+  {
+   "id": "gr-38",
+   "q": "During a space walk, an astronaut drifting next to the Space Station does not need a tether to stay close to it. The best explanation is that",
+   "options": [
+    "the Space Station's gravity is strong enough to hold the astronaut.",
+    "there is no gravity in orbit, so nothing pulls them apart.",
+    "heavier objects orbit faster, and the astronaut and the Station have equal masses.",
+    "both are tiny compared with Earth and share the same orbital distance, so they have the same orbital period.",
+    "the thin air at that height drags both objects along together."
+   ],
+   "answer": 3,
+   "why": "Newton's version of Kepler's third law shows that for a small object circling a much heavier one, the period depends only on the orbital distance, not on the small object's mass. Same distance means same period, so they stay together even at about 28,000 km/hr.",
+   "source": "Cosmic Perspective 4.5 (Figure 4.20, p. 125)",
+   "img": {
+    "src": "img/gravity/fig_astronaut.jpg",
+    "alt": "An astronaut in a white spacesuit floating beside a spacecraft with Earth below."
+   }
+  },
+  {
+   "id": "gr-39",
+   "q": "In the picture, a planet moves on an elliptical orbit around the Sun. Compare its closest point with its farthest point.\nI. Its gravitational potential energy is lower at the closest point.\nII. Its kinetic energy is higher at the closest point.\nIII. Its total orbital energy is lower at the closest point.",
+   "options": [
+    "II only",
+    "I and II only",
     "I and III only",
+    "II and III only",
     "all of the above"
    ],
    "answer": 1,
-   "why": "I and II are true. III is false because Kepler's laws apply to all orbiting objects.",
-   "source": "Gravity deck slide 3"
+   "why": "Closer to the Sun means less potential energy and faster motion, so more kinetic energy: I and II are true. The two changes cancel in the sum, so the total orbital energy is the same everywhere: III is false.",
+   "source": "Orbits and Tides deck slide 2; Cosmic Perspective 4.5 (Figure 4.21, p. 126)",
+   "img": {
+    "src": "img/gravity/fig_energy_tb.jpg",
+    "alt": "An elliptical orbit with the Sun inside: closer to the Sun the object has a smaller distance, less potential energy and faster speed; farther away it has more potential energy and slower speed."
+   }
   },
   {
-   "id": "gr-12",
-   "q": "A planet moves on an elliptical orbit around the Sun. Compared with its farthest point, at its closest point the planet has",
+   "id": "gr-40",
+   "q": "The picture shows a comet on an unbound orbit that passes close to Jupiter and ends up on a bound elliptical orbit around the Sun. Which statement is correct?",
    "options": [
-    "more kinetic energy and more gravitational potential energy.",
-    "less kinetic energy and less gravitational potential energy.",
-    "more kinetic energy and less gravitational potential energy.",
-    "less kinetic energy and more gravitational potential energy.",
-    "exactly the same amounts of both."
+    "The comet lost orbital energy to Jupiter, and Jupiter gained exactly that much, though the effect on Jupiter's huge mass cannot be noticed.",
+    "The comet gained orbital energy from Jupiter, which is why its orbit became smaller.",
+    "The comet's orbit changed spontaneously, because orbits are not fixed.",
+    "The comet and Jupiter both lost orbital energy, which turned into heat.",
+    "The comet's total energy did not change; only its direction was bent."
    ],
-   "answer": 2,
-   "why": "Closer to the Sun means lower potential energy and faster motion. The total of the two stays constant.",
-   "source": "Orbits and Tides deck slide 2"
-  },
-  {
-   "id": "gr-13",
-   "q": "A planet on an elliptical orbit speeds up and slows down along its path. What does this tell us about the force acting on it?",
-   "options": [
-    "The force is constant, and friction changes the speed.",
-    "Newton's second law does not apply to orbits.",
-    "No force acts on the planet.",
-    "The planet's mass changes during the orbit.",
-    "The force of gravity changes because the planet's distance from the Sun changes."
-   ],
-   "answer": 4,
-   "why": "Gravity follows an inverse square law, so a changing distance means a changing force and acceleration. The planet's mass stays the same.",
-   "source": "Orbits and Tides deck slide 2; practice test 2 Q9"
-  },
-  {
-   "id": "gr-14",
-   "q": "A satellite in low Earth orbit slowly loses altitude because of drag from the thin upper atmosphere. What happens to its orbital energy?",
-   "options": [
-    "It increases, so the satellite moves to a higher orbit.",
-    "It stays exactly the same.",
-    "It is converted into extra mass for the satellite.",
-    "It is transferred to the Moon.",
-    "It decreases, turning into heat, so the satellite gradually falls toward Earth."
-   ],
-   "answer": 4,
-   "why": "Drag takes orbital energy away as thermal energy, so the orbit shrinks until the satellite falls and often burns up.",
-   "source": "Orbits and Tides deck slide 3; Cosmic Perspective 4.5; extra practice Q19"
+   "answer": 0,
+   "why": "An orbit can change only through an exchange of energy. The comet lost enough energy to go from unbound to bound, and energy is conserved, so Jupiter gained exactly what the comet lost.",
+   "source": "Cosmic Perspective 4.5 (Figure 4.22, p. 127); Orbits and Tides deck slide 3",
+   "img": {
+    "src": "img/gravity/fig_encounter.jpg",
+    "alt": "A comet's dashed unbound path bending as it passes Jupiter and becoming a closed elliptical orbit around the yellow Sun."
+   }
   },
   {
    "id": "gr-15",
@@ -1117,6 +1334,20 @@
    "source": "Orbits and Tides deck slides 2-3; Cosmic Perspective 4.5"
   },
   {
+   "id": "gr-14",
+   "q": "A satellite in low Earth orbit slowly loses altitude because of drag from the thin upper atmosphere. What happens to its orbital energy?",
+   "options": [
+    "It increases, so the satellite moves to a higher orbit.",
+    "It stays exactly the same.",
+    "It is converted into extra mass for the satellite.",
+    "It is transferred to the Moon.",
+    "It decreases, turning into heat, so the satellite gradually falls toward Earth."
+   ],
+   "answer": 4,
+   "why": "Drag takes orbital energy away as thermal energy, so the orbit shrinks until the satellite falls and often burns up.",
+   "source": "ASTR207 Practice questions Q19; Cosmic Perspective 4.5 (Atmospheric Drag, p. 127)"
+  },
+  {
    "id": "gr-16",
    "q": "Which statement about escape velocity from Earth is TRUE?",
    "options": [
@@ -1128,63 +1359,95 @@
    ],
    "answer": 0,
    "why": "Escape velocity does not depend on the escaping object's mass. 300,000 km/s is the speed of light. It depends on the planet's mass and size, and it is lower if you start higher up.",
-   "source": "Orbits and Tides deck slide 4; extra practice Q20"
+   "source": "ASTR207 Practice questions Q20; Cosmic Perspective 4.5 (Escape Velocity, pp. 127-128)"
   },
   {
-   "id": "gr-17",
-   "q": "Earth's escape velocity is about 11 km/s. Roughly what is this in km per hour?",
+   "id": "gr-41",
+   "q": "The escape velocity from a planet or moon is v = √(2GM/R). Use G = 6.67 × 10⁻¹¹ m³/(kg·s²), the Moon's mass 7.4 × 10²² kg and the Moon's radius 1.7 × 10⁶ m. The escape velocity from the Moon's surface is about",
    "options": [
-    "about 400 km/hr",
-    "about 660 km/hr",
-    "about 4,000 km/hr",
-    "about 40,000 km/hr",
-    "about 400,000 km/hr"
-   ],
-   "answer": 3,
-   "why": "11 km/s × 3,600 s per hour = 39,600 km/hr, which rounds to about 40,000 km/hr.",
-   "source": "Orbits and Tides deck slide 4; calculation"
-  },
-  {
-   "id": "gr-18",
-   "q": "A spacecraft starts from a point far above Earth's surface. Compared with the 11 km/s needed from sea level, the speed it needs to escape Earth is",
-   "options": [
-    "more than 11 km/s, because it is farther from Earth.",
-    "less than 11 km/s, because gravity is weaker farther from Earth.",
-    "exactly 11 km/s, because escape velocity is a fixed number.",
-    "zero, because it is already in space.",
-    "dependent on the spacecraft's mass."
-   ],
-   "answer": 1,
-   "why": "Gravity weakens with distance, so it takes less energy and less speed to escape from a high starting point.",
-   "source": "Cosmic Perspective 4.5 (p. 128); Orbits and Tides deck slide 4"
-  },
-  {
-   "id": "gr-19",
-   "q": "Why does Earth have two tidal bulges?",
-   "options": [
-    "The Moon's pull is stronger on the near side than on the far side, so the difference stretches Earth along the Earth-Moon line.",
-    "The Moon pushes water away from it on the far side.",
-    "The Moon pulls only the near-side water and Earth's spin throws the rest outward.",
-    "The Sun and Moon pull in opposite directions.",
-    "The Moon pulls only the oceans, not the land."
-   ],
-   "answer": 0,
-   "why": "Tides come from the difference in pull across Earth. A rubber band pulled on one side stretches in both directions from its center.",
-   "source": "Orbits and Tides deck slide 5; Cosmic Perspective 4.5"
-  },
-  {
-   "id": "gr-20",
-   "q": "Two high tides happen each time Earth rotates through the two tidal bulges. The full cycle of two high tides and two low tides takes about 24 h 50 min. About how far apart are two successive high tides?",
-   "options": [
-    "about 12 h",
-    "about 12 h 50 min",
-    "about 12 h 25 min",
-    "about 24 h 50 min",
-    "about 6 h 12 min"
+    "0.24 km/s",
+    "1.7 km/s",
+    "2.4 km/s",
+    "11 km/s",
+    "5,800 km/s"
    ],
    "answer": 2,
-   "why": "Two highs share the 24 h 50 min cycle, so 24 h 50 min ÷ 2 = 12 h 25 min.",
-   "source": "Cosmic Perspective 4.5 (p. 129); not on slides; calculation"
+   "why": "2GM = 2 × 6.67 × 10⁻¹¹ × 7.4 × 10²² = 9.87 × 10¹². Dividing by R = 1.7 × 10⁶ m gives 5.8 × 10⁶, and the square root is about 2,400 m/s = 2.4 km/s. Forgetting the 2 gives 1.7 km/s, and forgetting the square root gives 5.8 × 10⁶ m/s.",
+   "source": "Cosmic Perspective Mathematical Insight 4.4, Example 1 (p. 128)"
+  },
+  {
+   "id": "gr-42",
+   "q": "Earth's escape velocity from the surface is 11 km/s. Using v = √(2GM/R), what is the escape velocity for a probe that starts 4 Earth radii from Earth's center (R = 4 R_Earth)?",
+   "options": [
+    "2.75 km/s",
+    "11 km/s",
+    "22 km/s",
+    "5.5 km/s",
+    "44 km/s"
+   ],
+   "answer": 3,
+   "why": "The starting distance is 4 times bigger, and v is proportional to 1/√R. The square root of 4 is 2, so the speed is halved: 11 ÷ 2 = 5.5 km/s. Dividing by 4 would forget the square root. The speed is not the same, because gravity is weaker higher up.",
+   "source": "Cosmic Perspective Mathematical Insight 4.4 (pp. 127-128), same method as Example 2; calculation"
+  },
+  {
+   "id": "gr-43",
+   "q": "The Space Station orbits 350 km above Earth's surface, which is 6,750 km from Earth's center. Earth's radius is 6,400 km and g at the surface is 9.8 m/s². Which statement is correct?",
+   "options": [
+    "Gravity there is nearly zero, which is why astronauts float.",
+    "Gravity there is about 8.8 m/s², only about 10% weaker than at the surface, and astronauts float because they are in free-fall.",
+    "Gravity there is about 4.9 m/s², half of the surface value, because the Station is hundreds of kilometers up.",
+    "Gravity there is about 9.8 m/s², exactly as at the surface, and astronauts float because of the vacuum.",
+    "Gravity there is about 8.8 m/s², and astronauts float because their mass is zero in orbit."
+   ],
+   "answer": 1,
+   "why": "g goes as 1/d². The distance ratio is 6,400 ÷ 6,750 = 0.948, and squared that is 0.899, so g = 9.8 × 0.899 = 8.8 m/s². Gravity is far from zero. Astronauts feel weightless because they and the Station are falling together, and their mass does not change.",
+   "source": "Cosmic Perspective Mathematical Insight 4.5, Example 2 (p. 131); calculation"
+  },
+  {
+   "id": "gr-44",
+   "q": "Which of the following is a strange feature of Newton's gravitational theory that went unexplained until about 110 years ago?",
+   "options": [
+    "Non-elliptical orbit shapes, including parabolas and hyperbolas, can be observed, which are not explained in Newtonian gravity.",
+    "The force of gravity is the same for all objects at a given height above Earth's surface, regardless of their physical characteristics or properties.",
+    "Gravity drops off rapidly as the distance between objects increases, unlike every other force.",
+    "Gravity is the only force that acts at a distance, without the two objects being in physical contact.",
+    "The acceleration of gravity is the same for all objects at a given height above Earth's surface, regardless of their physical characteristics or properties."
+   ],
+   "answer": 4,
+   "why": "A heavy rock feels a bigger pull but also has more inertia, and the two cancel exactly, so all objects fall with the same acceleration. Einstein explained why in 1915. The force is not the same (it depends on mass), and Newton did explain parabolas and hyperbolas.",
+   "source": "Practice test 2 Q15 and its explained file (answer B); Cosmic Perspective 4.5 (p. 131)"
+  },
+  {
+   "id": "gr-45",
+   "q": "The picture shows the Moon's pull on three places along a line through Earth. Which statement best explains why Earth has two tidal bulges?",
+   "options": [
+    "The Moon's pull is strongest on the near side and weakest on the far side, and this difference stretches Earth along the Earth-Moon line.",
+    "The Moon pushes the far-side water away from itself.",
+    "The Sun pulls the far-side water in the opposite direction at the same moment.",
+    "The Moon pulls the near-side water toward it and Earth's spin throws the far-side water outward.",
+    "The Moon's pull is the same everywhere on Earth, but Earth's rotation makes two bulges."
+   ],
+   "answer": 0,
+   "why": "Tides come from the difference in pull across Earth. Like a rubber band pulled on one side only, Earth stretches in both directions from its center, giving bulges toward and away from the Moon.",
+   "source": "Cosmic Perspective 4.5 (Figure 4.24 and the 'Origin of Tides' box, pp. 128-129); Orbits and Tides deck slide 5",
+   "img": {
+    "src": "img/gravity/fig_tides_bulges.jpg",
+    "alt": "Earth inside an oval of blue ocean with arrows toward the Moon, the arrow on the near side longest, and notes about bulges toward and away from the Moon."
+   }
+  },
+  {
+   "id": "gr-46",
+   "q": "Consider these statements about the Sun's and the Moon's effects on Earth.\nI. The Sun's gravitational pull on Earth is much stronger than the Moon's.\nII. The Sun's tidal force on Earth is more than twice the Moon's.\nIII. The Sun's tidal force is the smaller one because tides come from the difference in pull across Earth, and that difference is small at the Sun's great distance.",
+   "options": [
+    "I only",
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "I is true: Earth orbits the Sun because of this strong pull. II is false: the Sun's tidal force is a little less than half the Moon's. III is the correct reason.",
+   "source": "Cosmic Perspective 4.5 (The Tidal Effect of the Sun, p. 129)"
   },
   {
    "id": "gr-21",
@@ -1198,7 +1461,25 @@
    ],
    "answer": 3,
    "why": "At new and full Moon the tidal forces of the Sun and Moon work together. At the quarter Moons they work against each other and give small neap tides.",
-   "source": "Cosmic Perspective 4.5 (Figure 4.26); extra practice Q21 (no answer key)"
+   "source": "Cosmic Perspective 4.5 (Figure 4.26, p. 130); ASTR207 Practice questions Q21 (no answer key; answer from Cosmic Perspective 4.5)",
+   "img": {
+    "src": "img/gravity/fig_spring_neap.jpg",
+    "alt": "Two diagrams of Earth with arrows: at new and full Moon the Sun and Moon pull along the same line, at first and third quarter Moon they pull at right angles."
+   }
+  },
+  {
+   "id": "gr-47",
+   "q": "High tide at a beach occurs at 3:10 pm on Monday. Assume two high tides in each tidal cycle and that the cycle of two highs and two lows takes 24 h 50 min. When is the high tide AFTER the next one?",
+   "options": [
+    "3:10 am on Tuesday",
+    "3:35 am on Tuesday",
+    "3:10 pm on Tuesday",
+    "3:35 pm on Tuesday",
+    "4:00 pm on Tuesday"
+   ],
+   "answer": 4,
+   "why": "The next high tide comes 12 h 25 min later, at 3:35 am Tuesday. The one after that comes a full cycle of 24 h 50 min after the first: 3:10 pm Monday + 24 h = 3:10 pm Tuesday, plus 50 min = 4:00 pm Tuesday. A 24 h cycle would be wrong because the Moon takes about 24 h 50 min to return overhead.",
+   "source": "Cosmic Perspective 4.5 (p. 129); calculation"
   },
   {
    "id": "gr-22",
@@ -1212,66 +1493,317 @@
    ],
    "answer": 0,
    "why": "Earth spins faster than the Moon orbits, so its bulge sits ahead of the Moon and tugs it forward. The Moon gains orbital energy and moves outward while Earth's spin slows.",
-   "source": "Orbits and Tides deck slide 6; practice test 2 Q16"
+   "source": "Practice test 2 Q16 and its explained file; Orbits and Tides deck slide 6"
   },
   {
-   "id": "gr-23",
-   "q": "Consider these effects of tidal friction between Earth and the Moon.\nI. Earth's rotation slows down.\nII. The Moon is pulled ahead in its orbit and moves farther away.\nIII. Earth's rotation speeds up.",
+   "id": "gr-48",
+   "q": "Tidal friction lengthens Earth's day by about 1 second every 50,000 years. If the rate stayed the same, how much longer would the day be after 100 million years?",
+   "options": [
+    "about 200 seconds (about 3 minutes)",
+    "about 2,000 seconds (about 33 minutes)",
+    "about 20,000 seconds (about 5.6 hours)",
+    "about 5 × 10¹² seconds",
+    "about 1 second"
+   ],
+   "answer": 1,
+   "why": "Divide the time by 50,000 years per second: 100,000,000 ÷ 50,000 = 2,000. So the day gets 2,000 s longer, which is about 33 minutes. Tiny changes add up over huge times.",
+   "source": "Cosmic Perspective 4.5 (Tidal Friction, p. 130); calculation"
+  },
+  {
+   "id": "gr-49",
+   "q": "Consider these statements about the Moon's synchronous rotation.\nI. Earth's tidal force on the Moon is stronger than the Moon's tidal force on Earth, because Earth is more massive.\nII. The Moon once spun faster, and tidal friction slowed its spin until it matched its orbital period, which ended the friction.\nIII. Synchronous rotation means the Moon does not rotate at all.",
    "options": [
     "I only",
     "II only",
-    "I and II only",
+    "III only",
     "I and III only",
-    "II and III only"
+    "I and II only"
    ],
-   "answer": 2,
-   "why": "I and II are the effects of tidal friction. III is the reverse of what happens.",
-   "source": "Orbits and Tides deck slide 6"
-  },
-  {
-   "id": "gr-24",
-   "q": "Why does the Moon always show nearly the same face to Earth?",
-   "options": [
-    "The Moon does not rotate at all.",
-    "Tidal friction slowed the Moon's once-faster spin until it matched its orbital period.",
-    "Earth's gravity cancels the Moon's spin completely.",
-    "The Moon's orbit is a perfect circle.",
-    "The Sun's tides lock the Moon to the Sun."
-   ],
-   "answer": 1,
-   "why": "Earth's tidal force stretches the Moon and the friction slowed its rotation. Once the spin matched the orbit, the friction stopped, giving synchronous rotation.",
-   "source": "Orbits and Tides deck slide 6"
-  },
-  {
-   "id": "gr-25",
-   "q": "A heavy rock and a light rock are dropped from the same height near Earth's surface. Which statement is correct?",
-   "options": [
-    "The heavy rock accelerates more, because gravity pulls it harder.",
-    "The light rock accelerates more, because it has less mass.",
-    "The force of gravity is the same on both rocks.",
-    "They fall with the same acceleration, because the bigger force on the heavy rock is balanced by its greater inertia.",
-    "They fall at the same rate only if air is present."
-   ],
-   "answer": 3,
-   "why": "The pull is bigger on the heavy rock but so is its resistance to acceleration, so the two cancel. Newton found this puzzling and Einstein explained it in 1915.",
-   "source": "Orbits and Tides deck slide 7; practice test 2 Q15"
-  },
-  {
-   "id": "gr-26",
-   "q": "The acceleration of gravity at Earth's surface is 9.8 m/s². What is it at a point one Earth radius above the surface (twice as far from Earth's center)?",
-   "options": [
-    "2.45 m/s²",
-    "4.9 m/s²",
-    "9.8 m/s²",
-    "19.6 m/s²",
-    "1.09 m/s²"
-   ],
-   "answer": 0,
-   "why": "The acceleration goes as 1/d². Doubling the distance from the center divides it by 4: 9.8 ÷ 4 = 2.45 m/s².",
-   "source": "Cosmic Perspective 4.5 (Mathematical Insight 4.5, a = GM/d^2); inverse square law on Gravity deck slide 2; calculation"
+   "answer": 4,
+   "why": "I and II are true. III is false: the Moon turns once for each orbit, so it does rotate, and that is why we always see nearly the same face.",
+   "source": "Cosmic Perspective 4.5 (The Moon's Synchronous Rotation, p. 130); Orbits and Tides deck slide 6"
   }
  ],
  "games": [
   "match"
+ ],
+ "order": [
+  {
+   "title": "Strongest to weakest pull",
+   "prompt": "The same two masses are placed at different distances apart. Put the situations in order from the strongest gravitational pull (bottom) to the weakest pull (top).",
+   "why": "Gravity follows F = G M₁ M₂ / d². At half the distance the force is 4 times bigger. At the original distance it is F. At twice the distance it is F/4, at three times the distance F/9, and at ten times the distance F/100.",
+   "bottomLabel": "Strongest pull",
+   "topLabel": "Weakest pull",
+   "layers": [
+    {
+     "name": "Half the distance",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "The original distance",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Twice the distance",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Three times the distance",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Ten times the distance",
+     "color": "#0f766e"
+    }
+   ]
+  },
+  {
+   "title": "Hardest to easiest escape",
+   "prompt": "Put these starting points in order from the one that needs the HIGHEST escape velocity (bottom) to the one that needs the LOWEST (top).",
+   "why": "Escape velocity is v = √(2GM/R). From Earth's surface it is 11 km/s. From 4 Earth radii it is half of that, 5.5 km/s. From a geosynchronous station at 42,000 km it is 4.4 km/s. From the Moon's surface, with its small mass, it is only 2.4 km/s.",
+   "bottomLabel": "Highest speed needed",
+   "topLabel": "Lowest speed needed",
+   "layers": [
+    {
+     "name": "Earth's surface",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "4 Earth radii from Earth's center",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "A geosynchronous station",
+     "color": "#0e7490"
+    },
+    {
+     "name": "The Moon's surface",
+     "color": "#0f766e"
+    }
+   ]
+  },
+  {
+   "title": "How the Moon moves outward",
+   "prompt": "Put the steps of tidal friction in the order they happen, from the first step (bottom) to the last step (top).",
+   "why": "Earth spins faster than the Moon orbits, so friction drags the tidal bulges slightly ahead of the Earth-Moon line. The gravity of those bulges then pulls the Moon forward, giving it orbital energy, so its orbit grows.",
+   "bottomLabel": "First step",
+   "topLabel": "Last step",
+   "layers": [
+    {
+     "name": "Earth spins faster than the Moon orbits",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Friction drags the tidal bulges ahead of the Earth-Moon line",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "The bulges' gravity pulls the Moon forward",
+     "color": "#0e7490"
+    },
+    {
+     "name": "The Moon moves to a larger orbit",
+     "color": "#0f766e"
+    }
+   ]
+  },
+  {
+   "title": "Weigh the Sun",
+   "prompt": "Put the steps for finding the Sun's mass from Earth's orbit in order, from the first step (bottom) to the last step (top).",
+   "why": "Start with Newton's version of Kepler's third law. Earth is tiny, so the total mass is almost just the Sun's. Rearrange to get M = 4π² a³ / (G p²), put in the numbers, and calculate about 2 × 10³⁰ kg.",
+   "bottomLabel": "First step",
+   "topLabel": "Last step",
+   "layers": [
+    {
+     "name": "Write Newton's version of Kepler's third law",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Note that the Sun's mass is almost all the total",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Rearrange to M = 4π² a³ / (G p²)",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Put in p = 3.15 × 10⁷ s, a = 1.5 × 10¹¹ m and G",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Calculate M, about 2 × 10³⁰ kg",
+     "color": "#0f766e"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Bound or unbound?",
+   "prompt": "Does each object or shape follow a bound orbit (goes around again and again) or an unbound orbit (passes once and never returns)?",
+   "buckets": [
+    "Bound orbit",
+    "Unbound orbit"
+   ],
+   "items": [
+    {
+     "text": "An ellipse",
+     "b": 0
+    },
+    {
+     "text": "A circle",
+     "b": 0
+    },
+    {
+     "text": "A parabola",
+     "b": 1
+    },
+    {
+     "text": "A hyperbola",
+     "b": 1
+    },
+    {
+     "text": "Earth around the Sun",
+     "b": 0
+    },
+    {
+     "text": "The Moon around Earth",
+     "b": 0
+    },
+    {
+     "text": "A satellite circling Earth over and over",
+     "b": 0
+    },
+    {
+     "text": "A comet that loops around the Sun once and never returns",
+     "b": 1
+    },
+    {
+     "text": "A comet before it meets Jupiter, on an unbound path",
+     "b": 1
+    },
+    {
+     "text": "The same comet after Jupiter took away enough energy",
+     "b": 0
+    },
+    {
+     "text": "A spacecraft that reached escape velocity from Earth",
+     "b": 1
+    }
+   ],
+   "why": "Ellipses (including circles) are the only bound shapes. Parabolas and hyperbolas are unbound. A comet that loses enough energy to Jupiter changes from unbound to bound, and a spacecraft that reaches escape velocity changes to an unbound path."
+  },
+  {
+   "title": "What happens to the pull?",
+   "prompt": "Each change is made to two objects that attract each other with gravity. What happens to the force between them?",
+   "buckets": [
+    "4 times bigger",
+    "4 times smaller",
+    "No change"
+   ],
+   "items": [
+    {
+     "text": "Both masses doubled, distance unchanged",
+     "b": 0
+    },
+    {
+     "text": "Distance cut in half, masses unchanged",
+     "b": 0
+    },
+    {
+     "text": "One mass quadrupled, distance unchanged",
+     "b": 0
+    },
+    {
+     "text": "Distance doubled, masses unchanged",
+     "b": 1
+    },
+    {
+     "text": "Both masses halved, distance unchanged",
+     "b": 1
+    },
+    {
+     "text": "One mass cut to a quarter, distance unchanged",
+     "b": 1
+    },
+    {
+     "text": "One mass quadrupled and distance quadrupled",
+     "b": 1
+    },
+    {
+     "text": "Both masses doubled and distance doubled",
+     "b": 2
+    },
+    {
+     "text": "Both masses tripled and distance tripled",
+     "b": 2
+    },
+    {
+     "text": "One mass doubled and the other halved, distance unchanged",
+     "b": 2
+    },
+    {
+     "text": "One mass quadrupled and distance doubled",
+     "b": 2
+    }
+   ],
+   "why": "Turn each change into a factor: masses multiply on top, distance divides squared. For example one mass x4 and distance x4 gives 4 ÷ 16 = 1/4, while one mass x4 and distance x2 gives 4 ÷ 4 = 1."
+  },
+  {
+   "title": "Spring or neap tide?",
+   "prompt": "Does each description belong to spring tides (the largest tides) or neap tides (the smaller tides)?",
+   "buckets": [
+    "Spring tides",
+    "Neap tides"
+   ],
+   "items": [
+    {
+     "text": "New Moon",
+     "b": 0
+    },
+    {
+     "text": "Full Moon",
+     "b": 0
+    },
+    {
+     "text": "First-quarter Moon",
+     "b": 1
+    },
+    {
+     "text": "Third-quarter Moon",
+     "b": 1
+    },
+    {
+     "text": "The Sun's and the Moon's tidal forces work together",
+     "b": 0
+    },
+    {
+     "text": "The Sun's and the Moon's tidal forces work against each other",
+     "b": 1
+    },
+    {
+     "text": "The largest tides of the month",
+     "b": 0
+    },
+    {
+     "text": "The relatively small tides",
+     "b": 1
+    },
+    {
+     "text": "Sun, Earth and Moon lie along one line",
+     "b": 0
+    },
+    {
+     "text": "The water tends to spring up from Earth",
+     "b": 0
+    }
+   ],
+   "why": "At new and full Moon the Sun and Moon stretch Earth along the same line, so their tidal forces add and the tides are largest. At the quarter Moons they work against each other and the tides are smaller."
+  }
+ ],
+ "calc": [
+  "inv-square",
+  "gravity-masses",
+  "kepler"
  ]
 }

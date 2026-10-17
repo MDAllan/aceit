@@ -13,11 +13,13 @@ const META = {
   timeline: ["chart", "#c0504d", "Clickable timeline", "Tap an eon or era to explore events."],
   order: ["list", "#8a5a44", "Order the events", "Stack layers from oldest to youngest."],
   halflife: ["star", "#14b8a6", "Half-life calculator", "Play with radioactive decay."],
+  sort: ["sort", "#ec4899", "Sort it out", "Drop each item into the right group."],
+  calc: ["calc", "#0d9488", "Number cruncher", "Fresh calculations every time. Beat the numbers."],
 };
 
 export function renderGame(b, lec, all) {
   const imgSecs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title));
-  const ok = (g) => (g === "picture" ? imgSecs.length >= 4 : ["match", "memory", "blitz", "guess"].includes(g) ? lec.cards.length >= 8 : g === "speed" ? (lec.quiz || []).length >= 5 : true);
+  const ok = (g) => (g === "picture" ? imgSecs.length >= 4 : ["match", "memory", "blitz", "guess"].includes(g) ? lec.cards.length >= 8 : g === "speed" ? (lec.quiz || []).length >= 5 : g === "sort" ? lec.sort?.length : g === "calc" ? lec.calc?.length : g === "order" ? lec.order?.length : true);
   const draw = () => {
     b.replaceChildren(h("p", { style: "color:var(--mute);margin:6px 0" }, "Pick a game. Playing any 3 counts toward your completion."),
       h(".grid", lec.games.filter((g) => META[g] && ok(g)).map((g, i) => {
@@ -206,7 +208,7 @@ const G = {
       let items = shuffle(s.layers.map((x, i) => ({ ...x, i })));
       if (items.every((x, i) => x.i === i)) items.reverse();
       const out = h("div"), fb = h("div", { "aria-live": "polite" });
-      const render = () => out.replaceChildren(h(".src", "Youngest on top, oldest at the bottom."), h(".strat", items.map((it, k) => h(".layer", { style: `background:${it.color}` }, h("span", md(it.name)),
+      const render = () => out.replaceChildren(h(".src", `Top: ${s.topLabel || "youngest"}. Bottom: ${s.bottomLabel || "oldest"}.`), h(".strat", items.map((it, k) => h(".layer", { style: `background:${it.color}` }, h("span", md(it.name)),
         h(".mv", h("button", { "aria-label": "Move up", disabled: k === 0, onclick: () => { [items[k - 1], items[k]] = [items[k], items[k - 1]]; render(); } }, ic("up", 18)),
           h("button", { "aria-label": "Move down", disabled: k === items.length - 1, onclick: () => { [items[k + 1], items[k]] = [items[k], items[k + 1]]; render(); } }, ic("down", 18)))))));
       render();
@@ -242,7 +244,120 @@ const G = {
       h("h3", { style: "margin-top:16px" }, "Run it backwards: find the age"), h("label", "% of parent isotope still left"), rev, revOut);
     upd();
   },
+
+  /* ---- sort it out ---- */
+  sort(b, lec, again) {
+    const acts = shuffle(lec.sort.slice()); let ai = 0;
+    const run = (act) => {
+      const items = shuffle(act.items.slice()); let i = 0, score = 0;
+      const draw = () => {
+        b.replaceChildren();
+        if (i >= items.length) { done(lec, "sort"); if (score >= items.length - 1) confetti(); const more = ai + 1 < acts.length;
+          return b.append(h(".card.pop", { style: "text-align:center" }, h("h2", act.title), h(".score", `${score}/${items.length}`), h("button.btn", { style: "margin-top:10px", onclick: () => { ai = (ai + 1) % acts.length; run(acts[ai]); } }, more ? "Next activity" : "Play again"))); }
+        const it = items[i]; let got = false; const fb = h("div", { "aria-live": "polite" });
+        const bt = act.buckets.map((name, k) => h("button.btn.alt", { onclick: () => {
+          if (got) return; got = true; const ok = k === it.b; if (ok) score++;
+          bt.forEach((x, j) => { x.disabled = true; if (j === it.b) x.classList.add("ok"); });
+          fb.append(h(".fb", h("b", ok ? "Correct! " : "Not quite. "), `It belongs with "${act.buckets[it.b]}".`, i === items.length - 1 || ok ? "" : "", act.why && !ok ? h("span", " ", md(act.why)) : ""), nextBtn(i + 1 === items.length, () => { i++; draw(); }));
+        } }, md(name)));
+        b.append(h("h2", act.title), act.prompt ? h("p", { style: "color:var(--mute)" }, md(act.prompt)) : "", h(".src", `Item ${i + 1} of ${items.length}`), h(".bar", h("i", { style: `width:${(i / items.length) * 100}%` })),
+          h(".card", { style: "margin-top:10px" }, h(".sortitem", md(it.text)), h(".bkts.c" + Math.min(act.buckets.length, 3), bt), fb));
+      };
+      draw();
+    };
+    run(acts[0]);
+  },
+
+  /* ---- number cruncher: random numbers, exact answers ---- */
+  calc(b, lec, again) {
+    const ids = lec.calc, rounds = 8; let i = 0, score = 0, combo = 0;
+    const gens = ids.map((id) => CALC[id]).filter(Boolean);
+    const draw = () => {
+      b.replaceChildren();
+      if (i >= rounds) { done(lec, "calc"); if (score >= 6) confetti(); return b.append(endCard("Calculations done", score, rounds, again)); }
+      let g; do { g = gens[i % gens.length](); } while (g.wrong.length < 3);
+      const opts = shuffle([g.ans, ...g.wrong.slice(0, 4)]); let got = false;
+      const fb = h("div", { "aria-live": "polite" });
+      const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcde"[k]), h("span", o)); bt.onclick = () => {
+        if (got) return; got = true; const ok = o === g.ans; if (ok) { score++; combo++; } else combo = 0;
+        els.forEach((x, j) => { if (opts[j] === g.ans) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
+        fb.append(h(".fb", h("b", ok ? "Correct! " : "Not quite. "), combo >= 3 ? h("span.combo", `${combo} in a row! `) : "", md(g.why)), nextBtn(i + 1 === rounds, () => { i++; draw(); }));
+      }; return bt; });
+      b.append(h(".src", `Problem ${i + 1} of ${rounds}`), h(".bar", h("i", { style: `width:${(i / rounds) * 100}%` })), h(".card", { style: "margin-top:10px" }, h(".q", g.q), els, fb));
+    };
+    draw();
+  },
 };
 
 const span = (v, unit) => (unit === "million years" && v >= 1000 ? (v / 1000).toLocaleString(undefined, { maximumFractionDigits: 2 }) + " billion years" : (+v.toFixed(2)).toLocaleString() + " " + unit);
 const fmt = (ma) => (ma >= 1000 ? (ma / 1000).toFixed(2).replace(/\.?0+$/, "") + " Ga" : ma >= 1 ? "~" + ma + " Ma" : Math.round(ma * 1000) + " ka");
+
+/* ---------- generators for the number cruncher ---------- */
+const rnd = (a) => a[Math.floor(Math.random() * a.length)];
+const gcd = (a, b) => (b ? gcd(b, a % b) : a);
+const num = (x) => { const a = Math.abs(x); if (a !== 0 && (a >= 1e5 || a < 0.01)) { const e = Math.floor(Math.log10(a)); const m = +(x / 10 ** e).toPrecision(3); return `${m} x 10^${e}`; } return (+x.toPrecision(4)).toLocaleString("en-US", { maximumFractionDigits: 6 }); };
+const frac = (n, d) => { const g = gcd(n, d); n /= g; d /= g; return d === 1 ? `${n} times the original` : n === 1 ? `1/${d} of the original` : `${n}/${d} of the original`; };
+const uniq = (ans, list) => { const out = []; for (const x of list) if (x !== ans && !out.includes(x)) out.push(x); return out; };
+const CALC = {
+  "inv-square"() {
+    const f = rnd([2, 3, 4, 5, 10]), shrink = Math.random() < 0.5;
+    const ans = shrink ? frac(1, f * f) : frac(f * f, 1);
+    return { q: shrink ? `The distance between two objects is multiplied by ${f}. The gravitational force between them becomes:` : `The distance between two objects is divided by ${f}. The gravitational force between them becomes:`, ans,
+      wrong: uniq(ans, shrink ? [frac(1, f), frac(f, 1), frac(f * f, 1), frac(1, f * f * f), frac(2, f)] : [frac(f, 1), frac(1, f), frac(1, f * f), frac(f * f * f, 1), frac(f, 2)]),
+      why: `Gravity follows the inverse-square law: force is proportional to 1/d^2. ${shrink ? `Multiplying d by ${f} divides the force by ${f}^2 = ${f * f}.` : `Dividing d by ${f} multiplies the force by ${f}^2 = ${f * f}.`}` };
+  },
+  "gravity-masses"() {
+    let a, c, d;
+    do { a = rnd([2, 3, 4, 5]); c = rnd([2, 3]); d = rnd([2, 3, 4]); } while (a * c === d * d);
+    const ans = frac(a * c, d * d);
+    return { q: `One mass is multiplied by ${a}, the other mass by ${c}, and the distance between them by ${d}. The gravitational force becomes:`, ans,
+      wrong: uniq(ans, [frac(a * c, d), frac(a * c * d * d, 1), frac(a + c, d * d), frac(a * c * d, 1), frac(a * c, 2 * d), frac(d * d, a * c), frac(a * c + d, d * d)]),
+      why: `F = G m1 m2 / d^2. Masses multiply the force by ${a} x ${c} = ${a * c}. The distance divides it by ${d}^2 = ${d * d}. Net factor: ${a * c}/${d * d}.` };
+  },
+  "c-lambda"() {
+    const opts = [["500 nm", 5e-7], ["650 nm", 6.5e-7], ["21 cm", 0.21], ["3 cm", 0.03], ["1 m", 1], ["10 m", 10], ["100 nm", 1e-7], ["2 mm", 0.002]];
+    const [lab, lam] = rnd(opts), f = 3e8 / lam, ans = `${num(f)} Hz`;
+    return { q: `A wave has a wavelength of ${lab}. Using c = 3 x 10^8 m/s, its frequency is closest to:`, ans,
+      wrong: uniq(ans, [`${num(f * 1000)} Hz`, `${num(f / 1000)} Hz`, `${num(3e8 * lam)} Hz`, `${num(lam / 3e8)} Hz`, `${num(f * 100)} Hz`]),
+      why: `c = wavelength x frequency, so frequency = c / wavelength = (3 x 10^8 m/s) / ${num(lam)} m = ${num(f)} Hz. Convert the wavelength to metres first.` };
+  },
+  photon() {
+    const k = rnd([2, 3, 4, 5, 10]), shorter = Math.random() < 0.5, ans = shorter ? `${k} times as much` : `1/${k} as much`;
+    return { q: `The wavelength of a photon is ${shorter ? "divided" : "multiplied"} by ${k}. Its energy becomes:`, ans,
+      wrong: uniq(ans, shorter ? [`1/${k} as much`, `${k * k} times as much`, `1/${k * k} as much`, "unchanged", `${k + 1} times as much`] : [`${k} times as much`, `1/${k * k} as much`, `${k * k} times as much`, "unchanged", `1/${k + 1} as much`]),
+      why: `Photon energy is proportional to frequency, and frequency is proportional to 1/wavelength. So energy is proportional to 1/wavelength: ${shorter ? `dividing the wavelength by ${k} multiplies the energy by ${k}` : `multiplying the wavelength by ${k} divides the energy by ${k}`}.` };
+  },
+  kinetic() {
+    const m = rnd([2, 3, 5, 10, 0.5, 1200, 1500]), v = rnd([2, 4, 10, 20, 30, 25]), ke = 0.5 * m * v * v, ans = `${num(ke)} J`;
+    return { q: `An object of mass ${num(m)} kg moves at ${v} m/s. Its kinetic energy is:`, ans,
+      wrong: uniq(ans, [`${num(m * v * v)} J`, `${num(0.5 * m * v)} J`, `${num(m * v)} J`, `${num(0.5 * m * v * v * 2 * 2)} J`, `${num(0.5 * m * 2 * v)} J`]),
+      why: `Kinetic energy = 1/2 x m x v^2 = 0.5 x ${num(m)} x ${v}^2 = ${num(ke)} J. The speed is squared before multiplying.` };
+  },
+  "ke-double"() {
+    const k = rnd([2, 3, 4, 5]), ans = `${k * k} times as much`;
+    return { q: `A car's speed is multiplied by ${k}. Its kinetic energy becomes:`, ans, wrong: uniq(ans, [`${k} times as much`, `${2 * k} times as much`, `${k * k * k} times as much`, `${k / 2} times as much`, "unchanged"]),
+      why: `Kinetic energy is proportional to v^2. Multiplying v by ${k} multiplies the energy by ${k}^2 = ${k * k}.` };
+  },
+  momentum() {
+    const m = rnd([2, 5, 10, 60, 1000, 1500]), v = rnd([2, 3, 5, 10, 20, 30]), p = m * v, ans = `${num(p)} kg m/s`;
+    return { q: `An object of mass ${num(m)} kg moves at ${v} m/s. Its momentum is:`, ans, wrong: uniq(ans, [`${num(m * v * v)} kg m/s`, `${num(m / v)} kg m/s`, `${num(0.5 * m * v * v)} kg m/s`, `${num(m + v)} kg m/s`, `${num(p * 2)} kg m/s`]),
+      why: `Momentum = mass x velocity = ${num(m)} kg x ${v} m/s = ${num(p)} kg m/s. Unlike kinetic energy, velocity is not squared.` };
+  },
+  force() {
+    const m = rnd([2, 5, 10, 50, 1000]), a = rnd([2, 3, 4, 5, 10]), F = m * a, ans = `${num(F)} N`;
+    return { q: `A net force acts on a ${num(m)} kg object and gives it an acceleration of ${a} m/s^2. The net force is:`, ans, wrong: uniq(ans, [`${num(m / a)} N`, `${num(a / m)} N`, `${num(m + a)} N`, `${num(F * a)} N`, `${num(F / 2)} N`]),
+      why: `Newton's second law: F = m x a = ${num(m)} kg x ${a} m/s^2 = ${num(F)} N.` };
+  },
+  doppler() {
+    const dl = rnd([1, 2, 5, 10, 15]), away = Math.random() < 0.5, v = dl * 600, obs = 500 + (away ? dl : -dl);
+    const ans = `${num(v)} km/s, ${away ? "moving away from us" : "moving toward us"}`;
+    return { q: `A spectral line has a rest wavelength of 500 nm. In a distant object it is observed at ${obs} nm. Using c = 3 x 10^5 km/s, the object is moving at about:`, ans,
+      wrong: uniq(ans, [`${num(v)} km/s, ${away ? "moving toward us" : "moving away from us"}`, `${num(v / 2)} km/s, ${away ? "moving away from us" : "moving toward us"}`, `${num(v * 10)} km/s, ${away ? "moving away from us" : "moving toward us"}`, `${num(dl)} km/s, ${away ? "moving away from us" : "moving toward us"}`]),
+      why: `Speed = c x (change in wavelength / rest wavelength) = 300,000 x (${dl}/500) = ${num(v)} km/s. A longer observed wavelength (redshift) means moving away; a shorter one (blueshift) means moving toward us.` };
+  },
+  kepler() {
+    const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
+    return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
+      why: `For a Sun-like star, p^2 = a^3 (p in years, a in AU). So p = a^1.5 = ${a}^1.5 = ${p} years.` };
+  },
+};

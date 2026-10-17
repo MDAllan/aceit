@@ -78,8 +78,8 @@ svg{flex:none}
 .pts li{background:var(--soft);border-radius:14px;padding:9px 12px 9px 38px;position:relative;line-height:1.45}
 .pts li::before{content:"";position:absolute;left:13px;top:15px;width:12px;height:12px;border-radius:50%;background:var(--c);box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 22%,transparent)}
 .stepper{margin:10px 0}.steptxt{animation:slideR .3s var(--ease)}.steptxt.back{animation-name:slideL}.steptxt h3{margin:10px 0 2px;font-size:1rem}
-.fig{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:4/3;display:grid;place-items:center;cursor:zoom-in}
-.fig img{width:100%;height:100%;object-fit:contain;display:block;animation:fade .3s}
+.fig{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;display:grid;place-items:center;cursor:zoom-in;min-height:120px}
+.fig img{width:100%;height:auto;max-height:380px;object-fit:contain;display:block;animation:fade .3s}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 .fig .zoom{position:absolute;right:8px;top:8px;background:rgba(15,23,42,.72);color:#fff;border-radius:12px;padding:5px 9px;font-size:.75rem;font-weight:800;display:flex;gap:4px;align-items:center}
 .fig .nv{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:#0f172a;display:grid;place-items:center}
@@ -180,3 +180,12 @@ label{display:block;font-weight:800;margin:12px 0 4px;font-size:.9rem}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;z-index:100;background:#fff;padding:8px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 button:focus-visible,input:focus-visible,select:focus-visible,.fc:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.symtile{display:grid;place-items:center;border-radius:18px;flex:none;box-shadow:inset 0 -4px 0 rgba(0,0,0,.10)}
+.chip svg{flex:none}
+.qimg{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;margin:0 0 12px;cursor:zoom-in}
+.qimg img{display:block;width:100%;max-height:300px;object-fit:contain}
+.sortitem{font-size:1.1rem;font-weight:700;text-align:center;padding:18px 10px;background:var(--soft);border-radius:18px;margin:10px 0}
+.bkts{display:grid;gap:10px}
+.bkts.c2{grid-template-columns:1fr 1fr}.bkts.c3{grid-template-columns:1fr 1fr 1fr}
+.bkts .btn{min-height:54px;font-size:.9rem;line-height:1.15}
+.numtag{font-family:"Baloo 2",sans-serif;font-size:1.1rem}

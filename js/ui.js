@@ -74,13 +74,52 @@ const P = {
   fire: "M12 3c1 4 5 5 5 10a5 5 0 01-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-6 1-9z",
   eye: "M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12zM12 9a3 3 0 100 6 3 3 0 000-6z",
   logout: "M9 4H5a2 2 0 00-2 2v12a2 2 0 002 2h4M16 8l4 4-4 4M20 12H9",
+  /* subject and lecture symbols (same 2px stroke style) */
+  globe: "M12 3a9 9 0 100 18 9 9 0 000-18zM3 12h18M12 3c3.2 3 3.2 15 0 18M12 3c-3.2 3-3.2 15 0 18",
+  telescope: "M3 15l13-7 2 4L5 19zM16 8l2-4 3 1.5-2 4M8 19l-2 3M12 17l2 5",
+  layers: "M12 3l9 5-9 5-9-5zM3 12.5l9 5 9-5M3 17l9 5 9-5",
+  plates: "M3 14l5-3 4 2 4-3 5 2v6H3zM3 9l4-3 5 2 4-2 5 3",
+  gem: "M6 3h12l4 6-10 12L2 9zM2 9h20M9 3L7 9l5 12 5-12-2-6",
+  volcano: "M3 21l6-12h6l6 12zM12 9V3M9.5 6L8 3M14.5 6L16 3",
+  strata: "M3 6c3-2 6 2 9 0s6-2 9 0M3 11c3-2 6 2 9 0s6-2 9 0M3 16c3-2 6 2 9 0s6-2 9 0M3 21c3-2 6 2 9 0s6-2 9 0",
+  gear: "M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1",
+  hourglass: "M6 2h12M6 22h12M7 2c0 6 5 7 5 10s-5 4-5 10M17 2c0 6-5 7-5 10s5 4 5 10",
+  spiral: "M12 12.5a.5.5 0 100-1M12 9.5a2.5 2.5 0 11-2.5 2.5M12 6a6 6 0 11-6 6M12 2.5a9.5 9.5 0 11-9.5 9.5",
+  galaxy: "M12 11.5a.5.5 0 100 1M12 8c4 0 6 3 4 6-2 3-7 2-8-1M12 4c7 0 10 6 7 11-3 5-12 4-14-2",
+  clock: "M12 3a9 9 0 100 18 9 9 0 000-18zM12 7v5l3.5 2",
+  rocket: "M5 19l3-1 8-8c3-3 3-7 3-7s-4 0-7 3l-8 8zM14 10.5a1.2 1.2 0 100-.01M5 19c-1 1-2 3-2 3s2-1 3-2M8 14l2 2",
+  bolt: "M13 2L4 14h7l-1 8 9-12h-7z",
+  orbit: "M3 12c0-3.9 4-7 9-7s9 3.1 9 7-4 7-9 7-9-3.1-9-7zM12 10.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM19.2 7.7a1 1 0 100-.01",
+  wave: "M2 12c2-6 4-6 6 0s4 6 6 0 4-6 6 0",
+  atom: "M12 11a1 1 0 100 2 1 1 0 000-2z | M2 12a10 4 0 1020 0 10 4 0 10-20 0 | r60:M2 12a10 4 0 1020 0 10 4 0 10-20 0 | r120:M2 12a10 4 0 1020 0 10 4 0 10-20 0",
+  ball: "M12 3a9 9 0 100 18 9 9 0 000-18zM12 9a3 3 0 100 6 3 3 0 000-6z",
+  sort: "M7 4v16M7 4L4 7M7 4l3 3M17 20V4M17 20l-3-3M17 20l3-3",
+  calc: "M5 3h14a1 1 0 011 1v16a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1zM8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01",
+  exam: "M6 3h9l4 4v14H6zM14 3v5h5M9 13h6M9 17h4",
+  trophy: "M8 4h8v6a4 4 0 01-8 0zM8 6H4v1a4 4 0 004 4M16 6h4v1a4 4 0 01-4 4M12 14v4M8 21h8M9 18h6",
+  lock: "M6 11h12v10H6zM8 11V7a4 4 0 018 0v4M12 15v2",
 };
+// symbol shown for each subject and lecture (instead of emoji)
+export const SYM = {
+  erth209: "globe", astr207: "telescope",
+  interior: "layers", plates: "plates", minerals: "gem", igneous: "volcano", sedimentary: "strata", metamorphism: "gear", strat: "hourglass", fossils: "spiral", biography: "globe",
+  scale: "galaxy", timesky: "clock", motion: "rocket", conserve: "bolt", gravity: "orbit", light: "wave", matter: "atom",
+};
+export const symOf = (x) => SYM[x.id] || "star";
+export function symTile(x, size = 52) {
+  const t = h(".symtile", { style: `width:${size}px;height:${size}px;background:${x.color}26;color:${x.color}`, "aria-hidden": "true" }, ic(symOf(x), Math.round(size * 0.52)));
+  return t;
+}
 export function ic(name, size = 20) {
-  const s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  const NS = "http://www.w3.org/2000/svg", s = document.createElementNS(NS, "svg");
   s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("width", size); s.setAttribute("height", size);
   s.setAttribute("fill", "none"); s.setAttribute("stroke", "currentColor"); s.setAttribute("stroke-width", "2");
   s.setAttribute("stroke-linecap", "round"); s.setAttribute("stroke-linejoin", "round"); s.setAttribute("aria-hidden", "true");
-  const p = document.createElementNS("http://www.w3.org/2000/svg", "path"); p.setAttribute("d", P[name] || P.star); s.append(p);
+  for (const part of (P[name] || P.star).split(" | ")) {
+    const m = part.match(/^r(\d+):(.*)$/), p = document.createElementNS(NS, "path");
+    p.setAttribute("d", m ? m[2] : part); if (m) p.setAttribute("transform", `rotate(${m[1]} 12 12)`);
+    s.append(p);
+  }
   return s;
 }
 

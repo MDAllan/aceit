@@ -9,12 +9,12 @@
   {
    "id": "atom",
    "title": "Inside an atom",
-   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 2",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) slide 2",
    "steps": [
     {
      "img": {
-      "src": "img/matter/matter_2.jpg",
-      "slide": "2",
+      "src": "img/matter/atom_helium.jpg",
+      "slide": "slide 2",
       "alt": "A fuzzy dark ball for a helium atom with a zoom box showing four tiny particles at its centre."
      },
      "title": "A helium atom up close",
@@ -47,8 +47,8 @@
    ],
    "images": [
     {
-     "src": "img/matter/matter_2.jpg",
-     "slide": "2",
+     "src": "img/matter/atom_helium.jpg",
+     "slide": "slide 2",
      "alt": "A fuzzy dark ball for a helium atom with a zoom box showing four tiny particles at its centre."
     }
    ]
@@ -56,13 +56,13 @@
   {
    "id": "terms",
    "title": "Atomic number, isotopes and ions",
-   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 3-4",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) slides 3-4",
    "steps": [
     {
      "img": {
-      "src": "img/matter/matter_3.jpg",
-      "slide": "3",
-      "alt": "Drawings of hydrogen, helium and carbon atoms, each with a nucleus and a cloud, labelled with atomic number and mass number."
+      "src": "img/matter/atomic_terms.jpg",
+      "slide": "slide 3",
+      "alt": "Hydrogen, helium and carbon atoms, each with an electron cloud and a nucleus, labelled with atomic number, atomic mass number and electron count."
      },
      "title": "Counting protons and neutrons",
      "bullets": [
@@ -73,9 +73,9 @@
     },
     {
      "img": {
-      "src": "img/matter/matter_4.jpg",
-      "slide": "4",
-      "alt": "Three carbon nuclei with the same 6 protons but 6, 7 and 8 neutrons."
+      "src": "img/matter/isotopes.jpg",
+      "slide": "slide 4",
+      "alt": "Three carbon nuclei, carbon-12, carbon-13 and carbon-14, each with 6 protons and 6, 7 or 8 neutrons."
      },
      "title": "Isotopes and ions",
      "bullets": [
@@ -107,14 +107,14 @@
    ],
    "images": [
     {
-     "src": "img/matter/matter_3.jpg",
-     "slide": "3",
-     "alt": "Drawings of hydrogen, helium and carbon atoms, each with a nucleus and a cloud, labelled with atomic number and mass number."
+     "src": "img/matter/atomic_terms.jpg",
+     "slide": "slide 3",
+     "alt": "Hydrogen, helium and carbon atoms, each with an electron cloud and a nucleus, labelled with atomic number, atomic mass number and electron count."
     },
     {
-     "src": "img/matter/matter_4.jpg",
-     "slide": "4",
-     "alt": "Three carbon nuclei with the same 6 protons but 6, 7 and 8 neutrons."
+     "src": "img/matter/isotopes.jpg",
+     "slide": "slide 4",
+     "alt": "Three carbon nuclei, carbon-12, carbon-13 and carbon-14, each with 6 protons and 6, 7 or 8 neutrons."
     }
    ],
    "table": {
@@ -145,13 +145,13 @@
   {
    "id": "phases",
    "title": "Phases of matter and pressure",
-   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 5-6",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) slides 5-6",
    "steps": [
     {
      "img": {
-      "src": "img/matter/matter_5.jpg",
-      "slide": "5",
-      "alt": "Water molecules leaving an ocean surface into the air while others from the air drop back in."
+      "src": "img/matter/phase_pressure.jpg",
+      "slide": "slide 5",
+      "alt": "Water molecules leaving an ocean surface into the air, while other molecules from the air drop back in."
      },
      "title": "Phase depends on heat and pressure",
      "bullets": [
@@ -162,9 +162,9 @@
     },
     {
      "img": {
-      "src": "img/matter/matter_6.jpg",
-      "slide": "6",
-      "alt": "Photos of ice, water, steam, lightning and a coloured 3D graph for the different phases."
+      "src": "img/matter/phases_photos.jpg",
+      "slide": "slide 6",
+      "alt": "Photos of ice cubes, liquid water, a steaming pot, lightning and a Bose-Einstein condensate graph."
      },
      "title": "Familiar, less familiar and exotic",
      "bullets": [
@@ -196,33 +196,41 @@
    ],
    "images": [
     {
-     "src": "img/matter/matter_5.jpg",
-     "slide": "5",
-     "alt": "Water molecules leaving an ocean surface into the air while others from the air drop back in."
+     "src": "img/matter/phase_pressure.jpg",
+     "slide": "slide 5",
+     "alt": "Water molecules leaving an ocean surface into the air, while other molecules from the air drop back in."
     },
     {
-     "src": "img/matter/matter_6.jpg",
-     "slide": "6",
-     "alt": "Photos of ice, water, steam, lightning and a coloured 3D graph for the different phases."
+     "src": "img/matter/phases_photos.jpg",
+     "slide": "slide 6",
+     "alt": "Photos of ice cubes, liquid water, a steaming pot, lightning and a Bose-Einstein condensate graph."
     }
    ]
   },
   {
    "id": "changes",
    "title": "Phase changes as things heat up",
-   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 7",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) slide 7; Cosmic Perspective 5.3 p.148 Fig 5.10",
    "steps": [
     {
      "img": {
-      "src": "img/matter/matter_7.jpg",
-      "slide": "7",
-      "alt": "A tall red temperature arrow with pictures of solid, liquid, gas, broken molecules and ionized plasma stacked up it."
+      "src": "img/matter/phase_ladder.jpg",
+      "slide": "textbook p.148 / Figure 5.10",
+      "alt": "A tall red arrow labelled increasing temperature, with pictures of the solid, liquid, gas, molecular dissociation, plasma and fully ionized plasma stages stacked from bottom to top."
      },
      "title": "From solid to plasma",
      "bullets": [
       "Going up the temperature arrow: **melting** breaks rigid bonds (solid to liquid) and **evaporation** breaks flexible bonds (liquid to gas).",
       "Hotter still: **dissociation** breaks molecules into atoms.",
       "Hotter again: **ionization** strips electrons off atoms and leaves a **plasma** made of ions."
+     ]
+    },
+    {
+     "title": "Ionizing more than once",
+     "bullets": [
+      "A neutral atom can lose more than one electron. Hydrogen has only one electron, so it can be ionized only once and is left as a bare proton, H+.",
+      "Oxygen has 8 protons. **Singly ionized** oxygen, O+, has lost 1 electron (7 left, charge +1). **Doubly ionized** oxygen, O2+, has lost 2 (6 left, charge +2).",
+      "At millions of K every electron can be stripped away, leaving oxygen with no electrons and a charge of +8."
      ]
     }
    ],
@@ -243,26 +251,27 @@
    ],
    "sourceNotes": [
     "Matter deck slide 7",
-    "Cosmic Perspective 5.3 (Molecular Dissociation and Ionization, Fig 5.10)"
+    "Cosmic Perspective 5.3 (Molecular Dissociation and Ionization, Fig 5.10)",
+    "Ionization example (oxygen: O+, O2+, charge +8; hydrogen ionized once) is from Cosmic Perspective 5.3, Molecular Dissociation and Ionization (p.148). The ladder picture is the textbook Fig 5.10, which carries the same order as slide 7."
    ],
    "images": [
     {
-     "src": "img/matter/matter_7.jpg",
-     "slide": "7",
-     "alt": "A tall red temperature arrow with pictures of solid, liquid, gas, broken molecules and ionized plasma stacked up it."
+     "src": "img/matter/phase_ladder.jpg",
+     "slide": "textbook p.148 / Figure 5.10",
+     "alt": "A tall red arrow labelled increasing temperature, with pictures of the solid, liquid, gas, molecular dissociation, plasma and fully ionized plasma stages stacked from bottom to top."
     }
    ]
   },
   {
    "id": "levels",
    "title": "Energy levels and photon jumps",
-   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) pages 8-9",
+   "slides": "Matter deck (Ch5.3_PropertiesOfMatter.pdf) slides 8-9; Cosmic Perspective 5.3 Fig 5.12 and 5.4 Fig 5.15a",
    "steps": [
     {
      "img": {
-      "src": "img/matter/matter_8.jpg",
-      "slide": "8",
-      "alt": "Energy ladder for hydrogen with the ground state at the bottom, excited levels above and arrows between levels."
+      "src": "img/matter/levels_slide.jpg",
+      "slide": "slide 8",
+      "alt": "Energy level diagram for hydrogen: level 1 at 0 eV, level 2 at 10.2 eV, level 3 at 12.1 eV, level 4 at 12.8 eV and the ionization level at 13.6 eV, with arrows between levels."
      },
      "title": "Energy levels in hydrogen",
      "bullets": [
@@ -273,15 +282,28 @@
     },
     {
      "img": {
-      "src": "img/matter/matter_9.jpg",
-      "slide": "9",
-      "alt": "The same energy ladder with arrows that end on a level marked permitted and arrows that stop between levels marked unpermitted."
+      "src": "img/matter/levels_transitions.jpg",
+      "slide": "textbook p.149 / Figure 5.12",
+      "alt": "The same hydrogen energy levels with labelled arrows: a 5 eV and an 11 eV photon are not accepted, exactly 10.2 eV lifts the electron to level 2, and a bigger jump frees it."
      },
      "title": "Which jumps are allowed",
      "bullets": [
       "An atom gains energy by absorbing a photon and loses energy by emitting one.",
       "The photon energy must match the gap between two levels exactly. Level 1 to level 2 needs 10.2 eV.",
       "If the energy does not match a gap, nothing happens. A 5 eV or an 11 eV photon is not absorbed by an atom in level 1."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/matter/hydrogen_levels_a.jpg",
+      "slide": "textbook p.152 / Figure 5.15a",
+      "alt": "Hydrogen energy levels with downward arrows, each labelled with the wavelength of the photon it emits, such as 656.3 nm and 121.6 nm."
+     },
+     "title": "Each jump has its own colour",
+     "bullets": [
+      "When an electron falls, the photon carries away exactly the gap, so each jump gives one exact wavelength. Level 2 to level 1 gives 121.6 nm (ultraviolet). Level 3 to level 2 gives 656.3 nm (red).",
+      "A **bigger gap** means a more energetic photon and a **shorter wavelength**. The gap 10.2 eV is about 5 times the gap 1.9 eV, and 121.6 nm is about 5 times shorter than 656.3 nm.",
+      "Higher up, the gaps get smaller: 10.2, then 1.9, then 0.7 eV, so those photons have longer wavelengths (1875 nm for level 4 to level 3)."
      ]
     }
    ],
@@ -303,37 +325,56 @@
    "sourceNotes": [
     "Matter deck slides 8-9",
     "Cosmic Perspective 5.3 (Energy Levels in Atoms, Fig 5.12)",
-    "Practice questions Q26 (12.1 eV hits level 1: jumps to level 3)"
+    "Practice questions Q26 (12.1 eV hits level 1: jumps to level 3)",
+    "Third step (jump wavelengths, bigger gap = shorter wavelength) is from Cosmic Perspective Fig 5.15a; photon energy and wavelength are linked by E = hc/lambda (section 5.2). Check: 10.2/1.9 = 5.4 and 656.3/121.6 = 5.4."
    ],
    "images": [
     {
-     "src": "img/matter/matter_8.jpg",
-     "slide": "8",
-     "alt": "Energy ladder for hydrogen with the ground state at the bottom, excited levels above and arrows between levels."
+     "src": "img/matter/levels_slide.jpg",
+     "slide": "slide 8",
+     "alt": "Energy level diagram for hydrogen: level 1 at 0 eV, level 2 at 10.2 eV, level 3 at 12.1 eV, level 4 at 12.8 eV and the ionization level at 13.6 eV, with arrows between levels."
     },
     {
-     "src": "img/matter/matter_9.jpg",
-     "slide": "9",
-     "alt": "The same energy ladder with arrows that end on a level marked permitted and arrows that stop between levels marked unpermitted."
+     "src": "img/matter/levels_transitions.jpg",
+     "slide": "textbook p.149 / Figure 5.12",
+     "alt": "The same hydrogen energy levels with labelled arrows: a 5 eV and an 11 eV photon are not accepted, exactly 10.2 eV lifts the electron to level 2, and a bigger jump frees it."
+    },
+    {
+     "src": "img/matter/hydrogen_levels_a.jpg",
+     "slide": "textbook p.152 / Figure 5.15a",
+     "alt": "Hydrogen energy levels with downward arrows, each labelled with the wavelength of the photon it emits, such as 656.3 nm and 121.6 nm."
     }
    ]
   },
   {
    "id": "doppler",
    "title": "The Doppler effect",
-   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 1",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) slide 1; Cosmic Perspective 5.4 Fig 5.21c",
    "steps": [
     {
      "img": {
-      "src": "img/matter/doppler_1.jpg",
-      "slide": "1",
-      "alt": "A still train with even waves around it, and a moving train with waves bunched up in front and stretched out behind."
+      "src": "img/matter/doppler_waves.jpg",
+      "slide": "slide 1",
+      "alt": "Two pictures of a train with circular waves spreading out: one still, one moving to the right, with longer waves behind it and shorter waves in front."
      },
      "title": "Waves from a moving source",
      "bullets": [
       "The **Doppler effect** is a shift in the wavelength (and frequency) of a wave whenever its source is moving relative to the observer.",
       "Source moving **away**: the wavelength is **increased** (stretched).",
       "Source moving **toward** you: the wavelength is **decreased** (squeezed)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/matter/doppler_light.jpg",
+      "slide": "textbook p.156 / Figure 5.21c",
+      "alt": "A light source in the middle: the person on the left sees redder light of longer wavelength, the person on the right sees bluer light of shorter wavelength."
+     },
+     "title": "Light does the same",
+     "bullets": [
+      "Light waves from a moving source are stretched or squeezed in the same way. A source moving **away** from you looks redder (longer wavelength).",
+      "A source moving **toward** you looks bluer (shorter wavelength).",
+      "For everyday speeds the shift is far too small for the eye to notice, so astronomers measure it in spectra."
      ]
     }
    ],
@@ -358,22 +399,27 @@
    ],
    "images": [
     {
-     "src": "img/matter/doppler_1.jpg",
-     "slide": "1",
-     "alt": "A still train with even waves around it, and a moving train with waves bunched up in front and stretched out behind."
+     "src": "img/matter/doppler_waves.jpg",
+     "slide": "slide 1",
+     "alt": "Two pictures of a train with circular waves spreading out: one still, one moving to the right, with longer waves behind it and shorter waves in front."
+    },
+    {
+     "src": "img/matter/doppler_light.jpg",
+     "slide": "textbook p.156 / Figure 5.21c",
+     "alt": "A light source in the middle: the person on the left sees redder light of longer wavelength, the person on the right sees bluer light of shorter wavelength."
     }
    ]
   },
   {
    "id": "shift",
    "title": "Redshift and blueshift",
-   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 2",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) slide 2",
    "steps": [
     {
      "img": {
-      "src": "img/matter/doppler_2.jpg",
-      "slide": "2",
-      "alt": "Five rainbow strips with coloured lines that move right for moving away and left for moving toward."
+      "src": "img/matter/doppler_lines.jpg",
+      "slide": "slide 2",
+      "alt": "Five black spectra with three coloured lines each: lines at rest positions, then shifted right a little and a lot for moving away, and shifted left a little and a lot for moving toward."
      },
      "title": "Reading a shifted spectrum",
      "bullets": [
@@ -404,22 +450,22 @@
    ],
    "images": [
     {
-     "src": "img/matter/doppler_2.jpg",
-     "slide": "2",
-     "alt": "Five rainbow strips with coloured lines that move right for moving away and left for moving toward."
+     "src": "img/matter/doppler_lines.jpg",
+     "slide": "slide 2",
+     "alt": "Five black spectra with three coloured lines each: lines at rest positions, then shifted right a little and a lot for moving away, and shifted left a little and a lot for moving toward."
     }
    ]
   },
   {
    "id": "radial",
    "title": "Only toward or away counts",
-   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 3",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) slide 3; Cosmic Perspective 5.4 Fig 5.23",
    "steps": [
     {
      "img": {
-      "src": "img/matter/doppler_3.jpg",
-      "slide": "3",
-      "alt": "Earth with three balls: one moving straight away, one moving sideways, one moving diagonally away."
+      "src": "img/matter/radial_text.jpg",
+      "slide": "textbook p.157 / Figure 5.23",
+      "alt": "Earth with three stars: star 1 moving straight away, star 2 moving across the line of sight, and star 3 moving diagonally away with its speed split into a toward-away part and a sideways part."
      },
      "title": "Three stars, same speed",
      "bullets": [
@@ -450,28 +496,52 @@
    ],
    "images": [
     {
-     "src": "img/matter/doppler_3.jpg",
-     "slide": "3",
-     "alt": "Earth with three balls: one moving straight away, one moving sideways, one moving diagonally away."
+     "src": "img/matter/radial_text.jpg",
+     "slide": "textbook p.157 / Figure 5.23",
+     "alt": "Earth with three stars: star 1 moving straight away, star 2 moving across the line of sight, and star 3 moving diagonally away with its speed split into a toward-away part and a sideways part."
     }
    ]
   },
   {
    "id": "rotation",
    "title": "Spinning galaxies and stars",
-   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 4",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) slide 4; Cosmic Perspective 5.4 Fig 5.24",
    "steps": [
     {
      "img": {
-      "src": "img/matter/doppler_4.jpg",
-      "slide": "4",
-      "alt": "A spinning edge-on galaxy with a blue wave on its left side and a red wave on its right side."
+      "src": "img/matter/galaxy_rotation.jpg",
+      "slide": "slide 4",
+      "alt": "An edge-on spiral galaxy with a blue wave on its left side, a red wave on its right side and an arrow showing how it spins."
      },
      "title": "One side comes, one side goes",
      "bullets": [
       "In an edge-on spinning galaxy, one side moves **toward** us (blueshift) and the other side moves **away** (redshift).",
       "Measuring the Doppler shifts on both sides gives the galaxy's **rotation rate**.",
-      "A spinning star seen as a single dot blends its blue and red sides, so each spectral line looks **wider**. The faster it spins, the wider the lines."
+      "The middle of the galaxy turns in place, so it shows no shift."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/matter/star_rotation_a.jpg",
+      "slide": "textbook p.157 / Figure 5.24 (left)",
+      "alt": "Two stars, A rotating slowly and B rotating faster, each with blueshifted light from the approaching side and redshifted light from the receding side."
+     },
+     "title": "A spinning star seen as a dot",
+     "bullets": [
+      "Light from the part of a spinning star moving toward us is blueshifted, and light from the part moving away is redshifted. Light from the centre is not shifted.",
+      "Star B spins faster than star A, so its light is shifted farther to the blue and to the red."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/matter/star_rotation_b.jpg",
+      "slide": "textbook p.157 / Figure 5.24 (right)",
+      "alt": "Graphs of intensity against wavelength: a narrow spectral line for the slowly rotating star and a broad spectral line for the faster rotating star."
+     },
+     "title": "Faster spin means wider lines",
+     "bullets": [
+      "We cannot see the two sides apart, so their light blends into one spectral line. The shifted light spreads the line over a range of wavelengths, so it looks **wider**.",
+      "A fast spinner gives a broad line and a slow spinner gives a narrow line. So line width measures the rotation rate."
      ]
     }
    ],
@@ -497,9 +567,19 @@
    ],
    "images": [
     {
-     "src": "img/matter/doppler_4.jpg",
-     "slide": "4",
-     "alt": "A spinning edge-on galaxy with a blue wave on its left side and a red wave on its right side."
+     "src": "img/matter/galaxy_rotation.jpg",
+     "slide": "slide 4",
+     "alt": "An edge-on spiral galaxy with a blue wave on its left side, a red wave on its right side and an arrow showing how it spins."
+    },
+    {
+     "src": "img/matter/star_rotation_a.jpg",
+     "slide": "textbook p.157 / Figure 5.24 (left)",
+     "alt": "Two stars, A rotating slowly and B rotating faster, each with blueshifted light from the approaching side and redshifted light from the receding side."
+    },
+    {
+     "src": "img/matter/star_rotation_b.jpg",
+     "slide": "textbook p.157 / Figure 5.24 (right)",
+     "alt": "Graphs of intensity against wavelength: a narrow spectral line for the slowly rotating star and a broad spectral line for the faster rotating star."
     }
    ]
   },
@@ -523,6 +603,14 @@
       "A hydrogen line with rest wavelength 121.6 nm seen at 122.9 nm: (122.9 - 121.6) / 121.6 = 0.0107, so v = about +3,200 km/s, moving away.",
       "Same line seen at 120.5 nm: (120.5 - 121.6) / 121.6 = -0.00905, so v = about -2,700 km/s, moving toward us."
      ]
+    },
+    {
+     "title": "Going backwards: find the shift",
+     "bullets": [
+      "You can also start from a known speed. The shift in wavelength is **rest wavelength x (v / c)**.",
+      "Example: a line with rest wavelength 600 nm from a star moving toward us at 150 km/s. v / c = 150 / 300,000 = 0.0005. Shift = 600 x 0.0005 = 0.3 nm.",
+      "Moving toward us shortens the wavelength, so the line is seen at 600 - 0.3 = 599.7 nm."
+     ]
     }
    ],
    "bullets": [],
@@ -542,16 +630,22 @@
    ],
    "sourceNotes": [
     "No slide gives the formula (slides 1-2 only say a bigger shift means a faster speed).",
-    "Cosmic Perspective Mathematical Insight 5.3 and problem 61 (formula and numbers)"
+    "Cosmic Perspective Mathematical Insight 5.3 and problem 61 (formula and numbers)",
+    "Backwards step: the formula rearranged (Mathematical Insight 5.3); the 600 nm and 150 km/s numbers are made up for practice (outside source)."
    ],
    "images": []
   },
   {
    "id": "spectra",
    "title": "Three kinds of spectra",
-   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 5",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) slide 5; Cosmic Perspective 5.4 Figs 5.14-5.17",
    "steps": [
     {
+     "img": {
+      "src": "img/matter/spectra_types.jpg",
+      "slide": "textbook p.151 / Figure 5.14",
+      "alt": "Three set-ups with a prism: a hot light source gives a smooth rainbow, a warm gas cloud gives bright lines on black, and a hot source behind a cooler gas cloud gives dark lines on a rainbow, each with an intensity graph."
+     },
      "title": "Continuous, emission, absorption",
      "bullets": [
       "**Continuous spectrum**: a smooth rainbow with no gaps. It comes from a hot, dense source such as a light bulb or the Sun's interior.",
@@ -560,18 +654,42 @@
      ]
     },
     {
-     "title": "Why the lines appear",
+     "img": {
+      "src": "img/matter/hydrogen_emit_absorb.jpg",
+      "slide": "textbook p.152 / Figure 5.15b and c",
+      "alt": "Two hydrogen spectra with lines marked at 410.1, 434.0, 486.1 and 656.3 nm: bright lines on black on top, and dark lines on a rainbow below."
+     },
+     "title": "Same lines, bright or dark",
      "bullets": [
-      "In a warm gas, collisions lift electrons to higher levels. They fall back and emit photons at exact wavelengths: **emission lines**.",
+      "In a warm gas, collisions lift electrons to higher levels. They fall back and emit photons at exact wavelengths: bright **emission lines**.",
       "A cooler gas in front of a bright source absorbs only photons that match its jumps. It re-emits them in random directions, so few reach us: dark **absorption lines**.",
-      "Emission and absorption lines of one element sit at the same wavelengths, because they are the same jumps in opposite directions."
+      "The top spectrum (emission) and bottom spectrum (absorption) of hydrogen show lines at the same four wavelengths: 410.1, 434.0, 486.1 and 656.3 nm. They are the same jumps in opposite directions."
      ]
     },
     {
+     "img": {
+      "src": "img/matter/fingerprints.jpg",
+      "slide": "textbook p.153 / Figure 5.16",
+      "alt": "Emission line spectra of helium, sodium and neon as rows of coloured lines on black, each with a different pattern."
+     },
      "title": "Spectral fingerprints",
      "bullets": [
       "Each atom and ion has its own set of energy levels, so it has a unique **spectral fingerprint**.",
+      "The helium, sodium and neon spectra show completely different line patterns.",
       "So we can work out the **chemical composition** of a light-emitting object by reading its spectrum."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/matter/orion_lines.jpg",
+      "slide": "textbook p.153 / Figure 5.17",
+      "alt": "A strip of ultraviolet spectrum with many bright blue lines on black, some labelled He, O and Ne, and a row of hydrogen lines underneath."
+     },
+     "title": "Reading a real cloud",
+     "bullets": [
+      "This spectrum of the Orion Nebula has many bright lines on a dark background, so the nebula is a thin, warm gas glowing on its own.",
+      "Lines are labelled He, O and Ne, with many more from hydrogen, so the cloud contains helium, oxygen, neon and hydrogen.",
+      "Different ions of one element make different lines, so the pattern also helps reveal how hot the gas is."
      ]
     }
    ],
@@ -593,29 +711,77 @@
    "sourceNotes": [
     "Doppler deck slide 5",
     "Cosmic Perspective 5.4 (three basic types of spectra, Figs 5.14-5.17)",
-    "Practice test 2 Q21; practice questions Q27, Q30"
+    "Practice test 2 Q21; practice questions Q27, Q30",
+    "Pictures are textbook Figs 5.14, 5.15b-c, 5.16 and 5.17 (slide 5 has no picture). The Orion Nebula reading and the ion-temperature remark are from the textbook (Fig 5.17 and the Chemical Fingerprints text)."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/matter/spectra_types.jpg",
+     "slide": "textbook p.151 / Figure 5.14",
+     "alt": "Three set-ups with a prism: a hot light source gives a smooth rainbow, a warm gas cloud gives bright lines on black, and a hot source behind a cooler gas cloud gives dark lines on a rainbow, each with an intensity graph."
+    },
+    {
+     "src": "img/matter/hydrogen_emit_absorb.jpg",
+     "slide": "textbook p.152 / Figure 5.15b and c",
+     "alt": "Two hydrogen spectra with lines marked at 410.1, 434.0, 486.1 and 656.3 nm: bright lines on black on top, and dark lines on a rainbow below."
+    },
+    {
+     "src": "img/matter/fingerprints.jpg",
+     "slide": "textbook p.153 / Figure 5.16",
+     "alt": "Emission line spectra of helium, sodium and neon as rows of coloured lines on black, each with a different pattern."
+    },
+    {
+     "src": "img/matter/orion_lines.jpg",
+     "slide": "textbook p.153 / Figure 5.17",
+     "alt": "A strip of ultraviolet spectrum with many bright blue lines on black, some labelled He, O and Ne, and a row of hydrogen lines underneath."
+    }
+   ]
   },
   {
    "id": "thermal",
    "title": "Thermal spectra and temperature",
-   "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 6",
+   "slides": "Doppler deck (Ch5.4_Doppler.pdf) slide 6; Cosmic Perspective 5.4 Figs 5.19-5.20 and Mathematical Insight 5.2",
    "steps": [
     {
+     "img": {
+      "src": "img/matter/thermal_curves.jpg",
+      "slide": "textbook p.154 / Figure 5.19",
+      "alt": "Graph of intensity against wavelength with four smooth curves for a 15,000 K star, the Sun, a 3000 K star and a 310 K human; hotter curves are higher and peak at shorter wavelengths."
+     },
      "title": "Hotter means bluer peak",
      "bullets": [
-      "Practically all large objects (stars, planets, rocks, even people) give off a smooth **thermal spectrum**.",
-      "The shape tells us the temperature: a peak at **shorter wavelengths** means a **hotter** object.",
-      "Hotter objects also give off more light from each square metre, at every wavelength."
+      "Practically all large objects (stars, planets, rocks, even people) give off a smooth **thermal spectrum**. Its shape depends only on temperature.",
+      "The peak of a hotter object sits at a **shorter wavelength**. The 3000 K star peaks in the infrared, the Sun (5800 K) in visible light and the 15,000 K star in the ultraviolet.",
+      "Each square metre of a hotter object emits more light at every wavelength. Notice that the human (310 K) curve peaks in the infrared."
      ]
     },
     {
-     "title": "Examples",
+     "img": {
+      "src": "img/matter/poker.jpg",
+      "slide": "textbook p.155 / Figure 5.20",
+      "alt": "Four fireplace pokers in a fire, from a cool dark one to a glowing red one to a white-hot one, with notes on getting brighter and changing from red to white."
+     },
+     "title": "A glowing poker",
      "bullets": [
-      "A person (310 K) glows mostly in the infrared, so we cannot see it. A 3000 K star looks red-orange.",
-      "The Sun (5800 K) peaks near green light (about 500 nm). Hotter stars peak in the ultraviolet and look blue-white.",
-      "A glowing poker goes from dim red to bright white as it gets hotter."
+      "A cool poker gives off only infrared light that we cannot see. As it gets hotter it begins to glow, first red.",
+      "It gets brighter as it heats up (more light per square metre), and its colour changes from red to white (the peak moves to shorter wavelengths).",
+      "A person (310 K) glows mostly in the infrared, so we cannot see it, and a 3000 K star looks red-orange."
+     ]
+    },
+    {
+     "title": "The two formulas",
+     "bullets": [
+      "**Stefan-Boltzmann law**: emitted power per square metre = sigma x T^4, where sigma = 5.7 x 10^-8 watt/(m^2 K^4) and T is in kelvin.",
+      "**Wien's law**: peak wavelength = 2,900,000 K nm / T (in nm). For the Sun, 2,900,000 / 5800 = 500 nm, which is green light.",
+      "Doubling the temperature makes each square metre emit 2^4 = 16 times more light and moves the peak to half the wavelength."
+     ]
+    },
+    {
+     "title": "Worked example: 10,000 K",
+     "bullets": [
+      "Power per square metre: T^4 = (10,000)^4 = 10^16, so sigma x T^4 = 5.7 x 10^-8 x 10^16 = 5.7 x 10^8 watt/m^2, which is 570 million watts per square metre.",
+      "Peak wavelength: 2,900,000 / 10,000 = 290 nm, in the ultraviolet.",
+      "Used backwards, a spectrum that peaks at 290 nm means a surface temperature of about 10,000 K."
      ]
     }
    ],
@@ -631,15 +797,31 @@
     },
     {
      "type": "trap",
-     "text": "A peak at a SHORTER wavelength means HOTTER, not cooler (practice test 2 Q23). The 'more light per square metre' law is per unit area: a very big 3000 K star can emit more total light than a small 15,000 K star (textbook). Slide 6 states only the peak rule; the examples and the per-area law are from the textbook (Figs 5.19-5.20)."
+     "text": "A peak at a SHORTER wavelength means HOTTER, not cooler (practice test 2 Q23). The 'more light per square metre' law is per unit area: a very big 3000 K star can emit more total light than a small 15,000 K star (textbook). Slide 6 states only the peak rule; the examples, the per-area law and both formulas are from the textbook (Figs 5.19-5.20, Mathematical Insight 5.2). Practice questions Q28: temperature doubled means 2^4 = 16 times more light per square metre. Wien's law as given in practice test 2 Q23 explanation: peak = 2,900,000 / T."
+    },
+    {
+     "type": "trick",
+     "text": "Two laws, one idea: hotter means brighter (power goes as T to the 4th) and bluer (peak wavelength goes as 1 / T). Double the temperature: 16 times brighter, half the peak wavelength."
     }
    ],
    "sourceNotes": [
     "Doppler deck slide 6",
     "Cosmic Perspective 5.4 (Thermal Radiation, Figs 5.19-5.20)",
-    "Practice test 2 Q22-Q23"
+    "Practice test 2 Q22-Q23",
+    "Formulas and the 10,000 K worked example (5.7 x 10^8 watt/m^2 and 290 nm) are from Cosmic Perspective Mathematical Insight 5.2. Sun at 5800 K gives 500 nm (matches the text)."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/matter/thermal_curves.jpg",
+     "slide": "textbook p.154 / Figure 5.19",
+     "alt": "Graph of intensity against wavelength with four smooth curves for a 15,000 K star, the Sun, a 3000 K star and a 310 K human; hotter curves are higher and peak at shorter wavelengths."
+    },
+    {
+     "src": "img/matter/poker.jpg",
+     "slide": "textbook p.155 / Figure 5.20",
+     "alt": "Four fireplace pokers in a fire, from a cool dark one to a glowing red one to a white-hot one, with notes on getting brighter and changing from red to white."
+    }
+   ]
   }
  ],
  "table": {
@@ -936,6 +1118,48 @@
    "back": "Practically all large objects, such as stars, planets, rocks and people.",
    "short": "Practically all large objects",
    "src": "Doppler deck slide 6"
+  },
+  {
+   "id": "ma-c38",
+   "front": "Wien's law (peak wavelength of a thermal spectrum)",
+   "back": "Peak wavelength is about 2,900,000 K nm divided by the temperature T in kelvin. Hotter means a shorter peak wavelength.",
+   "short": "Peak wavelength = 2,900,000 / T",
+   "src": "Cosmic Perspective Mathematical Insight 5.2; practice test 2 Q23 explained"
+  },
+  {
+   "id": "ma-c39",
+   "front": "Stefan-Boltzmann law (light from each square metre)",
+   "back": "Emitted power per square metre = sigma x T^4, with sigma = 5.7 x 10^-8 watt/(m^2 K^4) and T in kelvin.",
+   "short": "Power per square metre = sigma T^4",
+   "src": "Cosmic Perspective Mathematical Insight 5.2"
+  },
+  {
+   "id": "ma-c40",
+   "front": "A star's temperature doubles. What happens to the light from each square metre, and to the peak wavelength?",
+   "back": "It becomes 2^4 = 16 times brighter per square metre, and the peak wavelength halves.",
+   "short": "Double T: 16 times brighter, half peak",
+   "src": "Practice questions Q28; Cosmic Perspective Mathematical Insight 5.2"
+  },
+  {
+   "id": "ma-c41",
+   "front": "Vega's hydrogen line: rest 656.285 nm, seen 656.255 nm",
+   "back": "(656.255 - 656.285) / 656.285 = -4.57 x 10^-5. Times c gives -13.7 km/s: Vega moves toward us at 13.7 km/s.",
+   "short": "Vega moves toward us at 13.7 km/s",
+   "src": "Cosmic Perspective Mathematical Insight 5.3"
+  },
+  {
+   "id": "ma-c42",
+   "front": "Ion charges of oxygen (8 protons)",
+   "back": "O+ lost 1 electron (7 left, charge +1). O2+ lost 2 (6 left, charge +2). With all 8 electrons gone the charge is +8.",
+   "short": "Oxygen ions: 7 electrons, then 6, then 0",
+   "src": "Cosmic Perspective 5.3 (Molecular Dissociation and Ionization)"
+  },
+  {
+   "id": "ma-c43",
+   "front": "How to find the wavelength shift from a known speed",
+   "back": "Shift = rest wavelength x (v / c). Moving away adds the shift (redshift); moving toward subtracts it (blueshift).",
+   "short": "Shift in nm = rest x v / c",
+   "src": "Cosmic Perspective Mathematical Insight 5.3 (rearranged)"
   }
  ],
  "quiz": [
@@ -968,60 +1192,32 @@
    "source": "Matter deck slides 3-4; practice test 2 Q18"
   },
   {
-   "id": "ma-3",
-   "q": "An atom has 8 protons, 9 neutrons and 10 electrons. What are its atomic number, atomic mass number and charge?",
+   "id": "ma-30",
+   "q": "A chloride ion, Cl-, has 17 protons and 18 neutrons. How many electrons does it have, and what is its atomic mass number?",
    "options": [
-    "8, 9, 2-",
-    "8, 17, 2+",
-    "17, 8, 2-",
-    "8, 17, 2-",
-    "9, 17, 2+"
+    "16 electrons; atomic mass number 35",
+    "17 electrons; atomic mass number 35",
+    "18 electrons; atomic mass number 36",
+    "18 electrons; atomic mass number 35",
+    "19 electrons; atomic mass number 35"
    ],
    "answer": 3,
-   "why": "Atomic number = 8 protons. Mass number = 8 + 9 = 17. Charge = 8 - 10 = -2, so 2-.",
-   "source": "Matter deck slides 3-4 (same method as practice test 2 Q18)"
+   "why": "Charge = protons - electrons, so -1 = 17 - electrons, which gives 18 electrons. The mass number counts only protons and neutrons: 17 + 18 = 35. Electrons never add to the mass number.",
+   "source": "Matter deck slides 3-4 (Cl- ion); Cosmic Perspective 5.3 atomic terminology (same method as practice test 2 Q18)"
   },
   {
-   "id": "ma-4",
-   "q": "Which of the following statements are correct?\nI. Neutrons carry no electric charge.\nII. Isotopes of one element have different numbers of protons.\nIII. An ion has a different number of electrons than a neutral atom of that element.",
+   "id": "ma-29",
+   "q": "Oxygen has 8 protons. Which of the following statements are correct?\nI. Singly ionized oxygen, O+, has 7 electrons.\nII. A hydrogen atom can be ionized twice.\nIII. Oxygen with every electron stripped away has a charge of +8.",
    "options": [
     "I only",
     "II only",
-    "I and II only",
     "I and III only",
+    "II and III only",
     "all of the above"
    ],
-   "answer": 3,
-   "why": "Statement II is false: isotopes have the same protons and different neutrons. I and III match the definitions of neutron and ion.",
-   "source": "Matter deck slides 2-4"
-  },
-  {
-   "id": "ma-5",
-   "q": "Which of the following statements is INCORRECT?",
-   "options": [
-    "The phase of a substance depends on both temperature and pressure.",
-    "Evaporation turns a gas into a liquid.",
-    "Ionization strips electrons from atoms and makes a plasma.",
-    "Melting breaks rigid bonds and turns a solid into a liquid.",
-    "Dissociation breaks molecules into atoms."
-   ],
-   "answer": 1,
-   "why": "Evaporation goes the other way: it breaks flexible bonds and turns a liquid into a gas. The other four statements match the definitions.",
-   "source": "Matter deck slides 5 and 7"
-  },
-  {
-   "id": "ma-6",
-   "q": "As a block of ice is heated to higher and higher temperatures, which order of changes is correct?",
-   "options": [
-    "ionization, dissociation, evaporation, melting",
-    "melting, evaporation, dissociation, ionization",
-    "evaporation, melting, ionization, dissociation",
-    "melting, dissociation, evaporation, ionization",
-    "evaporation, melting, dissociation, ionization"
-   ],
-   "answer": 1,
-   "why": "Weak bonds break first (melting, then evaporation), then the bonds inside molecules (dissociation), and last the electrons are stripped (ionization).",
-   "source": "Matter deck slide 7 (temperature arrow)"
+   "answer": 2,
+   "why": "A neutral oxygen atom has 8 electrons, so O+ has 7. Hydrogen has only one electron, so it can be ionized just once. Stripping all 8 electrons from 8 protons leaves a charge of +8.",
+   "source": "Cosmic Perspective 5.3, Molecular Dissociation and Ionization (p.148)"
   },
   {
    "id": "ma-7",
@@ -1038,18 +1234,46 @@
    "source": "Matter deck slide 5; practice test 2 Q19"
   },
   {
-   "id": "ma-8",
-   "q": "Which of the following statements are correct?\nI. Lightning is an example of plasma.\nII. Steam is a liquid.\nIII. Bose-Einstein condensates are achieved near 0 Kelvin.",
+   "id": "ma-33",
+   "q": "Earth's surface is far cooler than the boiling point of water, yet our air contains water vapor. What is the best explanation?",
    "options": [
-    "I only",
-    "I and II only",
-    "II and III only",
-    "I and III only",
-    "all of the above"
+    "Water vapor in the air comes only from boiling water in volcanoes and hot springs.",
+    "The pressure at sea level is high enough to turn liquid water into a gas.",
+    "Sunlight ionizes the ocean water, and the ions then float up as vapor.",
+    "Ocean water molecules dissociate into hydrogen and oxygen atoms, which recombine as vapor.",
+    "Temperature is only the average kinetic energy of the molecules, so a few water molecules always have enough energy to break free of their neighbours."
    ],
-   "answer": 3,
-   "why": "Steam is the gas phase of water, so II is false. Lightning is plasma and Bose-Einstein condensates need temperatures near 0 K.",
-   "source": "Matter deck slide 6"
+   "answer": 4,
+   "why": "Individual molecules can have far more or far less energy than the average. Even in cold water a few molecules always have enough energy to escape, so evaporation never stops completely.",
+   "source": "Cosmic Perspective 5.3 (Phase Changes in Water, p.147; Fig 5.11)"
+  },
+  {
+   "id": "ma-31",
+   "q": "Which of the following statements is INCORRECT?",
+   "options": [
+    "Squeezing a gas at constant temperature can never change its phase, because phase depends only on temperature.",
+    "Some water molecules in liquid water always have enough energy to escape as vapor, even well below the boiling point.",
+    "Calling the Sun a ball of hot plasma and calling it a ball of hot gas are both acceptable.",
+    "The rate at which water vapor molecules return to the ocean depends on the pressure that the water vapor exerts.",
+    "In molecular dissociation, collisions become violent enough to break the bonds that hold molecules together."
+   ],
+   "answer": 0,
+   "why": "Phase depends on pressure as well as temperature, so squeezing a gas can turn it into a liquid. The other four statements match the descriptions of evaporation, plasma, vapor pressure and dissociation.",
+   "source": "Cosmic Perspective 5.3 pp.147-149 (Figs 5.10-5.11); Matter deck slide 5"
+  },
+  {
+   "id": "ma-32",
+   "q": "A sealed container of ice is heated to an extremely high temperature. Three things happen:\nI. Electrons are stripped from atoms.\nII. Bonds between neighbouring molecules break (melting, then evaporation).\nIII. Molecules split into separate atoms.\nIn which order do they happen as the temperature rises?",
+   "options": [
+    "I, II, III",
+    "III, II, I",
+    "II, I, III",
+    "I, III, II",
+    "II, III, I"
+   ],
+   "answer": 4,
+   "why": "The weak bonds between molecules break first, then the stronger bonds inside molecules, and last the pull of each nucleus on its electrons. Each step needs more violent collisions than the one before.",
+   "source": "Matter deck slide 7; Cosmic Perspective 5.3 (Fig 5.10)"
   },
   {
    "id": "ma-9",
@@ -1063,49 +1287,11 @@
    ],
    "answer": 1,
    "why": "Level 3 sits at 12.1 eV above the ground state, so the photon energy matches that gap exactly and the electron is lifted to level 3.",
-   "source": "Matter deck slides 8-9; practice questions Q26"
-  },
-  {
-   "id": "ma-10",
-   "q": "A hydrogen atom in level 1 meets a photon of 11 eV. Why is the photon NOT absorbed?",
-   "options": [
-    "11 eV is too weak to affect any atom.",
-    "Photons can only be absorbed when they have more than 13.6 eV.",
-    "The atom absorbs 10.2 eV and reflects the extra 0.8 eV.",
-    "Hydrogen has no energy levels.",
-    "11 eV is more than the 10.2 eV needed for level 2 but less than the 12.1 eV needed for level 3, so it matches no gap."
-   ],
-   "answer": 4,
-   "why": "Electrons can only accept the exact energy that separates two levels. 11 eV falls between the first two gaps, so nothing happens.",
-   "source": "Matter deck slide 9; Cosmic Perspective 5.3"
-  },
-  {
-   "id": "ma-11",
-   "q": "In hydrogen, an electron falls from level 3 (12.1 eV) to level 2 (10.2 eV). What is the energy of the photon it emits?",
-   "options": [
-    "10.2 eV",
-    "1.9 eV",
-    "12.1 eV",
-    "22.3 eV",
-    "2.6 eV"
-   ],
-   "answer": 1,
-   "why": "Energy is conserved, so the photon carries away the gap: 12.1 - 10.2 = 1.9 eV.",
-   "source": "Matter deck slides 8-9 (level values); Cosmic Perspective 5.3 (energy conserved)"
-  },
-  {
-   "id": "ma-12",
-   "q": "Which of these photons can a hydrogen atom in level 1 absorb?\nI. 10.2 eV\nII. 11.0 eV\nIII. 12.8 eV",
-   "options": [
-    "I only",
-    "II only",
-    "I and III only",
-    "II and III only",
-    "all of the above"
-   ],
-   "answer": 2,
-   "why": "Only photons that match a gap work. 10.2 eV reaches level 2 and 12.8 eV reaches level 4. 11.0 eV matches no gap.",
-   "source": "Matter deck slides 8-9"
+   "source": "Matter deck slides 8-9; practice questions Q26",
+   "img": {
+    "src": "img/matter/levels_slide.jpg",
+    "alt": "Hydrogen energy level diagram: level 1 at 0 eV, level 2 at 10.2 eV, level 3 at 12.1 eV, level 4 at 12.8 eV, ionization level at 13.6 eV."
+   }
   },
   {
    "id": "ma-13",
@@ -1120,6 +1306,60 @@
    "answer": 0,
    "why": "13.6 eV frees the electron, so the 14.6 - 13.6 = 1.0 eV left over becomes motion of the free electron.",
    "source": "Matter deck slide 8 (ionization level 13.6 eV); Cosmic Perspective 5.3"
+  },
+  {
+   "id": "ma-34",
+   "q": "An electron in level 4 of a hydrogen atom (12.8 eV) falls to level 2 (10.2 eV) in two steps, first to level 3 (12.1 eV). What photon energies are emitted, and how does their total compare with a direct jump from level 4 to level 2?",
+   "options": [
+    "2.6 eV, then 1.9 eV; the total is 4.5 eV.",
+    "0.7 eV, then 1.9 eV; the total of 2.6 eV equals the direct jump.",
+    "0.7 eV, then 1.9 eV; the total is smaller than the direct jump because energy is lost as heat.",
+    "12.8 eV, then 12.1 eV; the total is 24.9 eV.",
+    "0.7 eV, then 10.2 eV; the total is 10.9 eV."
+   ],
+   "answer": 1,
+   "why": "Each photon carries away the gap it crosses: 12.8 - 12.1 = 0.7 eV, then 12.1 - 10.2 = 1.9 eV. Energy is conserved, so the total, 2.6 eV, equals the direct gap 12.8 - 10.2.",
+   "source": "Matter deck slides 8-9 (level values); Cosmic Perspective 5.3 Think about it (2.6 eV) and conservation of energy",
+   "img": {
+    "src": "img/matter/levels_slide.jpg",
+    "alt": "Hydrogen energy level diagram: level 1 at 0 eV, level 2 at 10.2 eV, level 3 at 12.1 eV, level 4 at 12.8 eV, ionization level at 13.6 eV."
+   }
+  },
+  {
+   "id": "ma-35",
+   "q": "In hydrogen, the jump from level 2 to level 1 gives a photon of wavelength 121.6 nm, and the jump from level 3 to level 2 gives a photon of wavelength 656.3 nm. With level 1 = 0, level 2 = 10.2 eV and level 3 = 12.1 eV, which statement is correct?",
+   "options": [
+    "The 656.3 nm photon has about 5 times more energy, because longer wavelengths carry more energy.",
+    "Both photons have the same energy; only their wavelengths differ.",
+    "The 121.6 nm photon has only about 1.2 times more energy, because 12.1 / 10.2 is about 1.2.",
+    "The 121.6 nm photon has about 5 times more energy, because a bigger energy gap gives a shorter wavelength.",
+    "The 656.3 nm photon has about 5 times more energy, because it is visible light."
+   ],
+   "answer": 3,
+   "why": "The 2-to-1 gap is 10.2 eV and the 3-to-2 gap is 12.1 - 10.2 = 1.9 eV, about 5.4 times smaller. A bigger gap gives a more energetic photon and a shorter wavelength; 121.6 nm is also about 5.4 times shorter than 656.3 nm.",
+   "source": "Cosmic Perspective 5.3 Fig 5.12 and 5.4 Fig 5.15a (wavelengths 121.6 and 656.3 nm); energy-wavelength link from 5.2",
+   "img": {
+    "src": "img/matter/hydrogen_levels_a.jpg",
+    "alt": "Hydrogen energy levels with downward arrows labelled with the wavelengths of the photons they emit, such as 656.3 nm and 121.6 nm."
+   }
+  },
+  {
+   "id": "ma-17",
+   "q": "In hydrogen, the transition from level 3 down to level 2 gives an emission line at 656.3 nm. At what wavelength would hydrogen absorb light when its electron jumps from level 2 up to level 3?",
+   "options": [
+    "656.3 nm, the same wavelength",
+    "A longer wavelength than 656.3 nm",
+    "A shorter wavelength than 656.3 nm",
+    "121.6 nm",
+    "It cannot absorb at this transition"
+   ],
+   "answer": 0,
+   "why": "Absorption and emission use the same energy gap in opposite directions, so the lines sit at the same wavelength.",
+   "source": "Doppler deck slide 5 (unique fingerprint); Cosmic Perspective Fig 5.15",
+   "img": {
+    "src": "img/matter/hydrogen_emit_absorb.jpg",
+    "alt": "Two hydrogen spectra with lines at 410.1, 434.0, 486.1 and 656.3 nm: bright lines on black above and dark lines on a rainbow below."
+   }
   },
   {
    "id": "ma-14",
@@ -1150,6 +1390,20 @@
    "source": "Doppler deck slide 5; practice questions Q27"
   },
   {
+   "id": "ma-39",
+   "q": "An incandescent light bulb (filament at about 3000 K) shines through a glass prism. What do we see?",
+   "options": [
+    "A rainbow practically identical to the one made by sunlight",
+    "A single yellowish colour at the wavelength given by the bulb",
+    "A rainbow with more red and orange than the rainbow from sunlight, because the filament is cooler than the Sun",
+    "A series of bright lines showing which chemicals are in the filament",
+    "Nothing, because a prism works only with sunlight"
+   ],
+   "answer": 2,
+   "why": "A hot, dense filament gives a continuous thermal spectrum: a full rainbow with no lines. At about 3000 K it is cooler than the Sun (5800 K), so its peak is at longer wavelengths and the rainbow leans toward red.",
+   "source": "Practice test 2 Q22 (explained: continuous thermal spectrum, redder than sunlight); Cosmic Perspective 5.4 Fig 5.19"
+  },
+  {
    "id": "ma-16",
    "q": "Why do we see dark absorption lines in the Sun's visible spectrum?",
    "options": [
@@ -1164,46 +1418,78 @@
    "source": "Doppler deck slide 5; practice questions Q30; Cosmic Perspective 5.4"
   },
   {
-   "id": "ma-17",
-   "q": "In hydrogen, the transition from level 3 down to level 2 gives an emission line at 656.3 nm. At what wavelength would hydrogen absorb light when its electron jumps from level 2 up to level 3?",
+   "id": "ma-40",
+   "q": "The picture shows part of the ultraviolet spectrum of the Orion Nebula, a glowing gas cloud. It has many bright lines on a dark background; some are labelled He, O and Ne and many others come from hydrogen. Which conclusion is justified?",
    "options": [
-    "656.3 nm, the same wavelength",
-    "A longer wavelength than 656.3 nm",
-    "A shorter wavelength than 656.3 nm",
-    "121.6 nm",
-    "It cannot absorb at this transition"
-   ],
-   "answer": 0,
-   "why": "Absorption and emission use the same energy gap in opposite directions, so the lines sit at the same wavelength.",
-   "source": "Doppler deck slide 5 (unique fingerprint); Cosmic Perspective Fig 5.15"
-  },
-  {
-   "id": "ma-18",
-   "q": "A light source is moving toward you. What happens to the wavelength of its light as you measure it, and what is this called?",
-   "options": [
-    "It becomes longer; blueshift",
-    "It becomes shorter; redshift",
-    "It becomes longer; redshift",
-    "It becomes shorter; blueshift",
-    "It stays the same; no shift"
-   ],
-   "answer": 3,
-   "why": "Waves from an approaching source are squeezed together, so the wavelength decreases. Shorter visible wavelengths are bluer, hence blueshift.",
-   "source": "Doppler deck slides 1-2"
-  },
-  {
-   "id": "ma-19",
-   "q": "A hydrogen line has a rest wavelength of 121.6 nm (ultraviolet) but is seen at 120.5 nm in a star. Which statement is correct?",
-   "options": [
-    "The line is redshifted and the star is moving away from us.",
-    "The line is blueshifted and the star is moving toward us.",
-    "The line is blueshifted and the star is moving away from us.",
-    "The line is not shifted because ultraviolet light cannot be Doppler shifted.",
-    "The line is redshifted and the star is moving toward us."
+    "The nebula is a hot, dense solid, because it produces bright lines.",
+    "The nebula is a thin, warm gas glowing on its own, and it contains hydrogen, helium, oxygen and neon.",
+    "The nebula sits in front of a bright continuous source, because it shows lines.",
+    "Only hydrogen is present, because hydrogen makes the most lines.",
+    "The lines show how fast the nebula is spinning, not what it is made of."
    ],
    "answer": 1,
-   "why": "120.5 nm is shorter than 121.6 nm. A shift to shorter wavelengths is called a blueshift and means moving toward us, even though the light is ultraviolet.",
-   "source": "Doppler deck slide 2; Cosmic Perspective 5.4 (Think about it)"
+   "why": "Bright lines on a dark background are an emission spectrum, which comes from a thin warm gas seen with no bright source behind it. Each element has its own pattern of lines, so the labelled lines show helium, oxygen and neon as well as hydrogen.",
+   "source": "Cosmic Perspective 5.4 Fig 5.17 and problem 48 (Orion Nebula, emission spectrum)",
+   "img": {
+    "src": "img/matter/orion_lines.jpg",
+    "alt": "Ultraviolet spectrum of the Orion Nebula with many bright lines on black, some labelled He, O and Ne, and a row of hydrogen lines."
+   }
+  },
+  {
+   "id": "ma-28",
+   "q": "Star A looks orange-red and star B looks yellow-white. Which statement is true?",
+   "options": [
+    "Star A is hotter, since its light peaks at a longer wavelength.",
+    "Star A is hotter, since its light peaks at a shorter wavelength.",
+    "Star B is hotter, since its light peaks at a shorter wavelength.",
+    "Star B is cooler, since its light peaks at a shorter wavelength.",
+    "Both have the same temperature because both are stars."
+   ],
+   "answer": 2,
+   "why": "A peak at a shorter wavelength means a hotter object. Yellow-white light peaks at a shorter wavelength than orange-red, so B is hotter.",
+   "source": "Doppler deck slide 6; practice test 2 Q23"
+  },
+  {
+   "id": "ma-41",
+   "q": "Two stars are the same size. Star X has a surface temperature of 10,000 K and star Y has a surface temperature of 5,000 K. How much more light does each square metre of star X emit?",
+   "options": [
+    "2 times",
+    "4 times",
+    "8 times",
+    "16 times",
+    "32 times"
+   ],
+   "answer": 3,
+   "why": "The light from each square metre is proportional to T^4. Doubling the temperature gives 2^4 = 16 times more. A common slip is to forget the 4th power and say 2.",
+   "source": "Practice questions Q28; Cosmic Perspective Mathematical Insight 5.2 (Stefan-Boltzmann law)"
+  },
+  {
+   "id": "ma-42",
+   "q": "A 10,000 K object emits thermal radiation. Use emitted power per square metre = sigma x T^4 with sigma = 5.7 x 10^-8 W/(m^2 K^4), and peak wavelength = 2,900,000 K nm / T. What are the power per square metre and the peak wavelength?",
+   "options": [
+    "5.7 x 10^8 W/m^2 and 29 nm",
+    "5.7 x 10^-4 W/m^2 and 290 nm",
+    "5.7 W/m^2 and 290 nm",
+    "5.7 x 10^8 W/m^2 and 2,900 nm",
+    "5.7 x 10^8 W/m^2 and 290 nm"
+   ],
+   "answer": 4,
+   "why": "T^4 = (10,000)^4 = 10^16, so 5.7 x 10^-8 x 10^16 = 5.7 x 10^8 W/m^2. Peak wavelength = 2,900,000 / 10,000 = 290 nm. Using T instead of T^4 would give only 5.7 x 10^-4.",
+   "source": "Cosmic Perspective Mathematical Insight 5.2 (worked example)"
+  },
+  {
+   "id": "ma-43",
+   "q": "Star P has a surface temperature of 3000 K and a radius 100 times the radius of star Q, whose surface temperature is 15,000 K. Light per square metre goes as T^4 and surface area goes as radius squared. How does the total light output of P compare with Q?",
+   "options": [
+    "P emits 16 times more total light than Q.",
+    "Q emits 625 times more total light, because it is hotter.",
+    "P emits 100 times more total light, because it is 100 times bigger.",
+    "Q emits 16 times more total light than P.",
+    "P emits 10,000 times more total light, because its area is 10,000 times bigger."
+   ],
+   "answer": 0,
+   "why": "Per square metre, Q emits (15,000 / 3000)^4 = 5^4 = 625 times more than P. But P has 100^2 = 10,000 times more surface area. Net: 10,000 / 625 = 16 times more total light from the big, cool star.",
+   "source": "Cosmic Perspective 5.4 (Fig 5.19 text: a very large 3000 K star can emit more total light than a small 15,000 K star; Math Insight 5.2 surface area). The 100x radius is made up for practice (outside source)."
   },
   {
    "id": "ma-20",
@@ -1220,32 +1506,46 @@
    "source": "Doppler deck slides 1-2; practice questions Q29"
   },
   {
-   "id": "ma-21",
-   "q": "A spectral line has a rest wavelength of 500 nm and is seen at 501 nm. Use v = c x (seen - rest) / rest with c = 3 x 10^5 km/s. What is the radial velocity?",
+   "id": "ma-36",
+   "q": "One visible line of hydrogen has a rest wavelength of 656.285 nm but appears at 656.255 nm in the spectrum of the star Vega. Use v = c x (seen - rest) / rest with c = 3 x 10^5 km/s. How is Vega moving?",
    "options": [
-    "600 km/s toward us",
-    "6 km/s away from us",
-    "600 km/s away from us",
-    "300 km/s away from us",
-    "60 km/s toward us"
+    "13.7 km/s away from us",
+    "4.57 x 10^-5 km/s toward us",
+    "13.7 km/s toward us",
+    "137 km/s toward us",
+    "0.03 km/s toward us"
    ],
    "answer": 2,
-   "why": "(501 - 500) / 500 = 0.002. Then 0.002 x 3 x 10^5 km/s = 600 km/s. The wavelength got longer, so it is moving away.",
-   "source": "Cosmic Perspective Mathematical Insight 5.3; Doppler deck slide 2 (redshift = away)"
+   "why": "(656.255 - 656.285) / 656.285 = -4.57 x 10^-5. Multiply by c: -4.57 x 10^-5 x 3 x 10^5 km/s = -13.7 km/s. The negative sign means a blueshift, so Vega moves toward us.",
+   "source": "Cosmic Perspective Mathematical Insight 5.3 (worked example, Vega)"
   },
   {
-   "id": "ma-22",
-   "q": "A spectral line has a rest wavelength of 600.0 nm and is seen at 599.4 nm. Use v = c x (seen - rest) / rest with c = 3 x 10^5 km/s. What is the radial velocity?",
+   "id": "ma-37",
+   "q": "The hydrogen line with rest wavelength 121.6 nm appears at 122.9 nm in a star's spectrum. Use v = c x (seen - rest) / rest with c = 3 x 10^5 km/s. What are the star's speed and direction?",
    "options": [
-    "300 km/s toward us",
-    "300 km/s away from us",
-    "600 km/s toward us",
-    "30 km/s toward us",
-    "0.1 km/s away from us"
+    "About 3,200 km/s away from us",
+    "About 3,200 km/s toward us",
+    "About 320 km/s away from us",
+    "About 1.3 km/s away from us",
+    "About 2,700 km/s away from us"
    ],
    "answer": 0,
-   "why": "(599.4 - 600.0) / 600.0 = -0.001. Then -0.001 x 3 x 10^5 km/s = -300 km/s. The negative sign means blueshift, so it is moving toward us.",
-   "source": "Cosmic Perspective Mathematical Insight 5.3; Doppler deck slide 2"
+   "why": "(122.9 - 121.6) / 121.6 = 1.3 / 121.6 = 0.0107. Times 3 x 10^5 km/s gives about 3,200 km/s. A positive result means the wavelength grew, a redshift, so the star moves away.",
+   "source": "Cosmic Perspective problem 61 part d (with Mathematical Insight 5.3)"
+  },
+  {
+   "id": "ma-38",
+   "q": "A star moves toward us at 150 km/s. A spectral line that normally has a wavelength of 600 nm is observed at which wavelength? (Use c = 3 x 10^5 km/s.)",
+   "options": [
+    "600.3 nm",
+    "599.7 nm",
+    "599.97 nm",
+    "450 nm",
+    "750 nm"
+   ],
+   "answer": 1,
+   "why": "v / c = 150 / 300,000 = 0.0005, so the shift is 600 nm x 0.0005 = 0.3 nm. Moving toward us shortens the wavelength (blueshift), so the line appears at 600 - 0.3 = 599.7 nm.",
+   "source": "Cosmic Perspective Mathematical Insight 5.3 (formula rearranged); numbers made up (outside source)"
   },
   {
    "id": "ma-23",
@@ -1262,20 +1562,6 @@
    "source": "Doppler deck slide 2; Cosmic Perspective problem 49"
   },
   {
-   "id": "ma-24",
-   "q": "A star's spectral lines show no Doppler shift at all. Which conclusion is justified?",
-   "options": [
-    "The star is not moving at all.",
-    "The star must be very cold.",
-    "The star is made of elements that have no spectral lines.",
-    "The star is moving away from us very slowly.",
-    "The star has no motion toward or away from us, but it could be moving sideways."
-   ],
-   "answer": 4,
-   "why": "The Doppler shift measures only the motion toward or away from us. A star moving purely across our line of sight shows no shift.",
-   "source": "Doppler deck slide 3"
-  },
-  {
    "id": "ma-25",
    "q": "Three stars move at the same speed. Star 1 moves directly away from us, star 2 moves across our line of sight, and star 3 moves diagonally away. Which statements are correct?\nI. Star 1's Doppler shift gives its full speed.\nII. Star 2 shows no Doppler shift.\nIII. Star 3's Doppler shift gives its full speed.",
    "options": [
@@ -1287,7 +1573,11 @@
    ],
    "answer": 1,
    "why": "A Doppler shift shows only the toward-or-away part of the motion. That is the full speed for star 1, none of it for star 2, and just part of it for star 3.",
-   "source": "Doppler deck slide 3; Cosmic Perspective Fig 5.23"
+   "source": "Doppler deck slide 3; Cosmic Perspective Fig 5.23",
+   "img": {
+    "src": "img/matter/radial_slide.jpg",
+    "alt": "Earth with three stars: star 1 moving directly away, star 2 moving across the line of sight, star 3 moving diagonally away."
+   }
   },
   {
    "id": "ma-26",
@@ -1301,7 +1591,11 @@
    ],
    "answer": 3,
    "why": "One side of the spinning galaxy moves toward us (blueshift) and the other moves away (redshift). The rotation is steady, so the sides do not swap.",
-   "source": "Doppler deck slide 4; practice test 2 Q24"
+   "source": "Doppler deck slide 4; practice test 2 Q24",
+   "img": {
+    "src": "img/matter/galaxy_rotation.jpg",
+    "alt": "An edge-on spinning galaxy with a blue wave on the left and a red wave on the right."
+   }
   },
   {
    "id": "ma-27",
@@ -1315,24 +1609,301 @@
    ],
    "answer": 4,
    "why": "Light from the side moving toward us is blueshifted and from the side moving away is redshifted. Blended together, each line is spread over a wider range of wavelengths, more so for faster spin.",
-   "source": "Doppler deck slide 4; Cosmic Perspective 5.4 (Fig 5.24) | rotation broadening is in textbook Fig 5.24 only"
-  },
-  {
-   "id": "ma-28",
-   "q": "Star A looks orange-red and star B looks yellow-white. Which statement is true?",
-   "options": [
-    "Star A is hotter, since its light peaks at a longer wavelength.",
-    "Star A is hotter, since its light peaks at a shorter wavelength.",
-    "Star B is hotter, since its light peaks at a shorter wavelength.",
-    "Star B is cooler, since its light peaks at a shorter wavelength.",
-    "Both have the same temperature because both are stars."
-   ],
-   "answer": 2,
-   "why": "A peak at a shorter wavelength means a hotter object. Yellow-white light peaks at a shorter wavelength than orange-red, so B is hotter.",
-   "source": "Doppler deck slide 6; practice test 2 Q23"
+   "source": "Doppler deck slide 4; Cosmic Perspective 5.4 (Fig 5.24) | rotation broadening is in textbook Fig 5.24 only",
+   "img": {
+    "src": "img/matter/star_rotation_a.jpg",
+    "alt": "Two spinning stars, A slowly and B faster, with blueshifted light from the approaching side and redshifted light from the receding side."
+   }
   }
  ],
  "games": [
   "match"
+ ],
+ "order": [
+  {
+   "title": "Heating water",
+   "prompt": "Water is heated from very cold to extremely hot. Put the states in order as the temperature rises.",
+   "why": "Weak bonds between molecules break first (melting, then evaporation), then the bonds inside molecules (dissociation), and last the electrons are stripped from atoms (ionization), which makes a plasma. Each step needs more violent collisions.",
+   "topLabel": "Hottest",
+   "bottomLabel": "Coolest",
+   "layers": [
+    {
+     "name": "Solid ice",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Liquid water",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Gas (steam)",
+     "color": "#047857"
+    },
+    {
+     "name": "Separate atoms (molecules dissociated)",
+     "color": "#b45309"
+    },
+    {
+     "name": "Plasma (atoms ionized)",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Hydrogen photons",
+   "prompt": "In hydrogen, level 1 = 0 eV, level 2 = 10.2 eV, level 3 = 12.1 eV and level 4 = 12.8 eV. Each downward jump emits a photon equal to the gap. Order the jumps by photon energy.",
+   "why": "The gaps are: level 4 to 3 = 0.7 eV, level 3 to 2 = 1.9 eV, level 4 to 2 = 2.6 eV, level 2 to 1 = 10.2 eV and level 3 to 1 = 12.1 eV. A bigger gap gives a more energetic photon with a shorter wavelength.",
+   "topLabel": "Highest energy, shortest wavelength",
+   "bottomLabel": "Lowest energy, longest wavelength",
+   "layers": [
+    {
+     "name": "Level 4 to level 3",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Level 3 to level 2",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Level 4 to level 2",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Level 2 to level 1",
+     "color": "#b45309"
+    },
+    {
+     "name": "Level 3 to level 1",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Doppler shifts",
+   "prompt": "The hydrogen line with rest wavelength 121.6 nm is seen at these wavelengths in four stars. Order the stars by radial velocity, from moving toward us fastest to moving away fastest.",
+   "why": "Shorter than 121.6 nm is a blueshift (toward us) and longer is a redshift (away). The size of the shift gives the speed: A is -1.1 nm (about 2,700 km/s toward), B is -0.4 nm (about 990 km/s toward), C is +0.3 nm (about 740 km/s away) and D is +1.3 nm (about 3,200 km/s away).",
+   "topLabel": "Fastest away from us",
+   "bottomLabel": "Fastest toward us",
+   "layers": [
+    {
+     "name": "Star A: line seen at 120.5 nm",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Star B: line seen at 121.2 nm",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Star C: line seen at 121.9 nm",
+     "color": "#b45309"
+    },
+    {
+     "name": "Star D: line seen at 122.9 nm",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Thermal peaks",
+   "prompt": "Objects give off thermal spectra. Order them by the wavelength where their spectrum peaks.",
+   "why": "Peak wavelength = 2,900,000 / T (in nm). A person (310 K) peaks near 9,400 nm, a 3000 K star near 970 nm, the Sun (5800 K) near 500 nm, a 10,000 K object near 290 nm and a 15,000 K star near 190 nm. Hotter means a shorter peak.",
+   "topLabel": "Shortest peak wavelength",
+   "bottomLabel": "Longest peak wavelength",
+   "layers": [
+    {
+     "name": "A person (310 K)",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "A star at 3000 K",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "The Sun (5800 K)",
+     "color": "#b45309"
+    },
+    {
+     "name": "An object at 10,000 K",
+     "color": "#0e7490"
+    },
+    {
+     "name": "A star at 15,000 K",
+     "color": "#1d4ed8"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Which kind of spectrum?",
+   "prompt": "Decide which spectrum each situation gives.",
+   "buckets": [
+    "Continuous spectrum",
+    "Emission line spectrum",
+    "Absorption line spectrum"
+   ],
+   "why": "Hot dense objects give a smooth continuous rainbow. A thin warm gas seen alone gives bright emission lines. A cooler gas in front of a bright source takes out its own wavelengths and leaves dark absorption lines.",
+   "items": [
+    {
+     "text": "A glowing light bulb filament seen through a prism",
+     "b": 0
+    },
+    {
+     "text": "A red-hot fireplace poker",
+     "b": 0
+    },
+    {
+     "text": "The smooth glow of a hot, dense star interior",
+     "b": 0
+    },
+    {
+     "text": "A thin, warm cloud of gas with no bright source behind it",
+     "b": 1
+    },
+    {
+     "text": "The glowing gas of the Orion Nebula",
+     "b": 1
+    },
+    {
+     "text": "Neon gas glowing on its own",
+     "b": 1
+    },
+    {
+     "text": "Hydrogen electrons falling from level 3 to level 2 and releasing 656.3 nm light",
+     "b": 1
+    },
+    {
+     "text": "Bulb light shining through a cooler gas cloud",
+     "b": 2
+    },
+    {
+     "text": "The Sun's rainbow with many dark lines",
+     "b": 2
+    },
+    {
+     "text": "Hydrogen atoms lifting electrons from level 2 to level 3 by taking 656.3 nm light out of a rainbow",
+     "b": 2
+    },
+    {
+     "text": "A hot star seen through a cooler cloud of gas in front of it",
+     "b": 2
+    }
+   ]
+  },
+  {
+   "title": "Isotope, ion or new element?",
+   "prompt": "Decide what changes between the two atoms.",
+   "buckets": [
+    "Isotope",
+    "Ion",
+    "Different element"
+   ],
+   "why": "Protons name the element. Different neutrons make an isotope. Different electrons make an ion.",
+   "items": [
+    {
+     "text": "Carbon-12 and carbon-14",
+     "b": 0
+    },
+    {
+     "text": "Helium-4 and helium-3",
+     "b": 0
+    },
+    {
+     "text": "Nitrogen atoms with seven neutrons and nitrogen atoms with eight",
+     "b": 0
+    },
+    {
+     "text": "Carbon-13 compared with carbon-12",
+     "b": 0
+    },
+    {
+     "text": "He and He2+",
+     "b": 1
+    },
+    {
+     "text": "Cl and Cl-",
+     "b": 1
+    },
+    {
+     "text": "A neutral oxygen atom that has lost two electrons",
+     "b": 1
+    },
+    {
+     "text": "A hydrogen atom that has lost its only electron",
+     "b": 1
+    },
+    {
+     "text": "An atom with 6 protons and an atom with 8 protons",
+     "b": 2
+    },
+    {
+     "text": "A nucleus with 1 proton and a nucleus with 2 protons",
+     "b": 2
+    },
+    {
+     "text": "A nucleus that gains a proton, going from atomic number 6 to 7",
+     "b": 2
+    }
+   ]
+  },
+  {
+   "title": "Redshift, blueshift or none?",
+   "prompt": "What Doppler shift does each situation give?",
+   "buckets": [
+    "Redshift (moving away)",
+    "Blueshift (moving toward us)",
+    "No Doppler shift"
+   ],
+   "why": "A longer wavelength than the rest wavelength is a redshift (moving away). A shorter wavelength is a blueshift (moving toward us). Motion across our line of sight, or no motion along it, gives no shift.",
+   "items": [
+    {
+     "text": "A 656.3 nm line seen at 660.0 nm",
+     "b": 0
+    },
+    {
+     "text": "A 121.6 nm line seen at 122.9 nm",
+     "b": 0
+    },
+    {
+     "text": "The side of an edge-on spinning galaxy that moves away from us",
+     "b": 0
+    },
+    {
+     "text": "A 500 nm line seen at 501 nm",
+     "b": 0
+    },
+    {
+     "text": "A 121.6 nm line seen at 120.5 nm",
+     "b": 1
+    },
+    {
+     "text": "Vega's 656.285 nm line seen at 656.255 nm",
+     "b": 1
+    },
+    {
+     "text": "The side of an edge-on spinning galaxy that moves toward us",
+     "b": 1
+    },
+    {
+     "text": "A 600 nm line seen at 599.4 nm",
+     "b": 1
+    },
+    {
+     "text": "A star moving straight across our line of sight",
+     "b": 2
+    },
+    {
+     "text": "The centre of a spinning star, which only turns in place",
+     "b": 2
+    },
+    {
+     "text": "A line sitting exactly at its rest wavelength",
+     "b": 2
+    }
+   ]
+  }
+ ],
+ "calc": [
+  "doppler"
  ]
 }

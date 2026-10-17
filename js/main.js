@@ -1,10 +1,11 @@
 import * as S from "./store.js";
 import { renderGame, DEFAULT_GAMES } from "./games.js";
-import { $, h, md, clean, ic, toast, shuffle, confetti } from "./ui.js";
+import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf } from "./ui.js";
 
 const app = $("#app");
 let LECS = [];
 let SUBJECTS = [];
+const EXAMS = {};
 const subjOf = (l) => SUBJECTS.find((x) => x.id === l.subject);
 const open_ = () => LECS.filter((l) => S.hasAccess(l.subject));
 
@@ -13,7 +14,8 @@ async function boot() {
   await S.initBackend();
   SUBJECTS = await (await fetch("content/subjects.json")).json();
   LECS = (await Promise.all(SUBJECTS.flatMap((sj) => sj.lectures.map((f) => fetch("content/" + f + ".json").then((r) => r.json()).then((l) => ({ ...l, subject: sj.id })))))).filter(Boolean);
-  LECS.forEach((l) => { l.cards ||= []; l.games = [...new Set([...DEFAULT_GAMES, ...(l.games || [])])]; l.color ||= "#2563eb"; });
+  await Promise.all(SUBJECTS.filter((sj) => sj.exams).map((sj) => fetch("content/" + sj.exams + ".json").then((r) => (r.ok ? r.json() : null)).then((e) => { if (e?.tests?.length) EXAMS[sj.id] = e; }).catch(() => {})));
+  LECS.forEach((l) => { l.cards ||= []; l.games = [...new Set([...DEFAULT_GAMES, ...(l.games || []), l.order?.length && "order", l.sort?.length && "sort", l.calc?.length && "calc"].filter(Boolean))]; l.color ||= "#2563eb"; });
   window.addEventListener("hashchange", route);
   document.addEventListener("keydown", (e) => { if (document.activeElement?.matches("input,select,textarea")) return; if (e.key === "ArrowRight") window.__next?.(); if (e.key === "ArrowLeft") window.__prev?.(); });
   route();
@@ -166,7 +168,7 @@ function viewHome(v) {
     h(".grid", SUBJECTS.map((sj, i) => {
       const unlocked = S.hasAccess(sj.id), t = subjectStats(sj);
       return h("button.card.lec", { style: `animation-delay:${i * 60}ms`, onclick: () => (location.hash = `#/s/${sj.id}`) },
-        h(".ic", { style: `background:${sj.color}26` }, sj.icon),
+        symTile(sj, 52),
         h("div", { style: "flex:1" }, h("b", `${sj.name}: ${sj.title}`), h("small", unlocked ? (t.n ? `${t.n} lectures` : "Coming soon") : "Locked. Tap to enter the class code")),
         unlocked ? (t.n ? ring(t.pct, sj.color) : "") : h("span.pill", { style: "background:#64748b" }, "Locked"));
     })));
@@ -176,7 +178,7 @@ function viewSubject(v, id) {
   const sj = SUBJECTS.find((x) => x.id === id);
   if (!sj) return viewHome(v);
   v.style.setProperty("--c", sj.color);
-  v.append(h(".hero", h(".row", { style: "flex-wrap:nowrap" }, h("span", { style: "font-size:2rem" }, sj.icon), h("div", { style: "flex:1" }, h("h1", `${sj.name}: ${sj.title}`), h("p", "Pick a lecture")))));
+  v.append(h(".hero", h(".row", { style: "flex-wrap:nowrap" }, symTile(sj, 48), h("div", { style: "flex:1" }, h("h1", `${sj.name}: ${sj.title}`), h("p", "Pick a lecture")))));
   if (!S.hasAccess(sj.id)) {
     const code = h("input", { placeholder: `${sj.name} class code`, autocomplete: "off", "aria-label": `${sj.name} class code` });
     const err = h("p.err", { role: "alert" });
@@ -187,13 +189,22 @@ function viewSubject(v, id) {
   }
   const ls = LECS.filter((l) => l.subject === sj.id);
   if (!ls.length) return v.append(h(".card", h("h2", "Coming soon"), h("p", "Lectures for this class are being added.")));
+  const ex = EXAMS[sj.id];
   v.append(h(".grid", ls.map((l, i) => {
     const s = S.lectureStats(l);
     return h("button.card.lec", { style: `animation-delay:${i * 45}ms`, onclick: () => (location.hash = `#/l/${l.id}/notes`) },
-      h(".ic", { style: `background:${l.color}26` }, l.icon),
+      symTile(l, 52),
       h("div", { style: "flex:1" }, h("b", l.title), h("small", (l.chapter || "") + ` · ${l.sections.length} topics`)),
       ring(s.pct, l.color));
   })));
+  if (ex) {
+    const run = (t, shuf) => { v.replaceChildren(); const list = shuf ? shuffle(t.questions.slice()) : t.questions.slice(); runQuiz(v, list, t.title, sj.color, () => { v.replaceChildren(); viewSubject(v, id); }); };
+    v.append(h("h2", { style: "margin-top:22px" }, "Practice exams"), h("p", { style: "color:var(--mute);margin:0 0 8px" }, ex.intro || "Real exam-style questions. Take them in order like a test, or shuffled."),
+      h(".grid", ex.tests.map((t, i) => h(".card", { style: `animation:rise .4s var(--ease) ${i * 50}ms backwards` },
+        h(".row", { style: "flex-wrap:nowrap;margin-bottom:6px" }, h(".symtile", { style: `width:44px;height:44px;background:${sj.color}26;color:${sj.color}` }, ic("exam", 22)), h("div", h("b", t.title), h(".src", { style: "margin:0" }, `${t.questions.length} questions`))),
+        t.blurb ? h("p", { style: "margin:4px 0 10px;color:var(--mute);font-size:.9rem" }, t.blurb) : "",
+        h(".row", h("button.btn.sm", { style: `--c:${sj.color}`, onclick: () => run(t, false) }, "Start in order"), h("button.btn.alt.sm", { onclick: () => run(t, true) }, "Shuffled"))))));
+  }
 }
 
 let focus = null; // class chosen on the Cards / Practice / Progress pages
@@ -202,7 +213,7 @@ function classChips(redraw) {
   const subs = SUBJECTS.filter((sj) => S.hasAccess(sj.id) && LECS.some((l) => l.subject === sj.id));
   if (subs.length < 2) { focus = subs[0]?.id || null; return ""; }
   return h(".row", { style: "margin:4px 0 8px" }, h("button.chip" + (!focus ? ".on" : ""), { onclick: () => { focus = null; redraw(); } }, "All classes"),
-    subs.map((sj) => h("button.chip" + (focus === sj.id ? ".on" : ""), { onclick: () => { focus = sj.id; redraw(); } }, sj.icon + " " + sj.name)));
+    subs.map((sj) => h("button.chip" + (focus === sj.id ? ".on" : ""), { onclick: () => { focus = sj.id; redraw(); } }, [ic(symOf(sj), 15), sj.name])));
 }
 
 /* ---------- lecture ---------- */
@@ -216,7 +227,7 @@ function viewLecture(v, id, tab) {
   v.style.setProperty("--c", l.color);
   v.append(
     h("button.chip", { style: "margin-top:8px", onclick: () => (location.hash = `#/s/${l.subject}`) }, ic("left", 14), subjOf(l)?.name || "Back"),
-    h(".hero", { style: "padding-bottom:0" }, h(".row", { style: "flex-wrap:nowrap" }, h("span", { style: "font-size:2rem" }, l.icon), h("div", { style: "flex:1" }, h("h1", l.title), h("p", l.chapter || "")), ring(s.pct, l.color, 52))),
+    h(".hero", { style: "padding-bottom:0" }, h(".row", { style: "flex-wrap:nowrap" }, symTile(l, 48), h("div", { style: "flex:1" }, h("h1", l.title), h("p", l.chapter || "")), ring(s.pct, l.color, 52))),
     h(".tabs", TABS.map(([k, icn, t]) => h("button.tab" + (k === tab ? ".on" : ""), { onclick: () => (location.hash = `#/l/${id}/${k}`) }, ic(icn, 20), t))),
   );
   const body = h("div"); v.append(body);
@@ -375,7 +386,7 @@ export function runQuiz(b, list, title, color, back) {
       return bt;
     });
     b.append(h(".src", `${title} · Question ${i + 1} of ${list.length}`), h(".bar", { style: `--c:${color}` }, h("i", { style: `width:${(i / list.length) * 100}%` })),
-      h(".card", { style: "margin-top:10px" }, h(".q", md(q.q)), opts, fb));
+      h(".card", { style: "margin-top:10px" }, q.img ? h(".qimg", { role: "button", tabindex: 0, "aria-label": "Enlarge picture", onclick: () => lightbox(q.img) }, h("img", { src: q.img.src, alt: q.img.alt || "Figure for the question", loading: "lazy" })) : "", h(".q", md(q.q)), opts, fb));
   };
   draw();
 }
@@ -386,7 +397,7 @@ function viewAllCards(v) {
     const LS = pool_(), body = h("div"), chips = h(".row", { style: "margin:6px 0" });
     const show = (sel) => {
       chips.replaceChildren(h("button.chip" + (!sel ? ".on" : ""), { onclick: () => show(null) }, "All lectures"),
-        ...LS.map((l) => h("button.chip" + (sel === l ? ".on" : ""), { onclick: () => show(l) }, l.icon + " " + l.title)));
+        ...LS.map((l) => h("button.chip" + (sel === l ? ".on" : ""), { onclick: () => show(l) }, [ic(symOf(l), 15), l.title])));
       body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LS.flatMap((l) => l.cards)), sel ? sel.color : "#2563eb");
     };
     v.append(classChips(draw), chips, body); show(null);
@@ -401,7 +412,7 @@ function viewPractice(v) {
     v.replaceChildren(h(".hero", h("h1", "Practice exam"), h("p", "Mixed questions, shuffled like the real thing. Pick lectures or take them all.")), classChips(() => { sel = null; draw(); }));
     const pool = sel ? all.filter((q) => sel.has(q.lec)) : all;
     v.append(h(".row", { style: "margin-bottom:10px" }, h("button.chip" + (!sel ? ".on" : ""), { onclick: () => { sel = null; draw(); } }, "All lectures"),
-      LS.map((l) => h("button.chip" + (sel?.has(l.id) ? ".on" : ""), { onclick: () => { sel = sel || new Set(); sel.has(l.id) ? sel.delete(l.id) : sel.add(l.id); if (!sel.size) sel = null; draw(); } }, l.icon + " " + l.title))),
+      LS.map((l) => h("button.chip" + (sel?.has(l.id) ? ".on" : ""), { onclick: () => { sel = sel || new Set(); sel.has(l.id) ? sel.delete(l.id) : sel.add(l.id); if (!sel.size) sel = null; draw(); } }, [ic(symOf(l), 15), l.title]))),
       h(".card", h("p", `${pool.length} questions available.`),
         h(".row", [10, 20, 40, pool.length].filter((n, k, a) => n <= pool.length && a.indexOf(n) === k).map((n) =>
           h("button.btn", { style: "--c:#2563eb", onclick: () => { v.replaceChildren(); runQuiz(v, shuffle(pool.slice()).slice(0, n), "Practice exam", "#2563eb", draw); } }, n === pool.length ? `All ${n}` : `${n} questions`)))));
@@ -427,7 +438,7 @@ function viewProgress(v) {
     v.append(h(".hero", h("h1", "My progress")), classChips(draw),
       h(".card.row", ring(total, "#2563eb", 76), h("div", h("b", "Overall completion"), h("p", { style: "margin:0;color:var(--mute)" }, `Level ${x.lvl} · ${x.xp} XP` + (st ? ` · ${st}-day streak` : "")))),
       h("h2", { style: "margin-top:18px" }, "By lecture"),
-      h(".grid", LS.map((l) => { const s = S.lectureStats(l); return h(".card", h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("b", l.icon + " " + l.title), ring(s.pct, l.color, 44)),
+      h(".grid", LS.map((l) => { const s = S.lectureStats(l); return h(".card", h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("b", [ic(symOf(l), 15), l.title]), ring(s.pct, l.color, 44)),
         h(".src", `Notes ${s.read}/${s.secs} · Cards ${s.known}/${s.cards} · Quiz ${s.right}/${s.qs}`)); })),
       h("h2", { style: "margin-top:18px" }, "Weak topics"),
       weak.length ? weak.map(({ l, q }) => h(".fb", h("b", l.title + ": "), md(q.q.split(String.fromCharCode(10))[0]))) : h("p", "No weak topics yet. Take a quiz and they'll show up here."),
@@ -464,8 +475,8 @@ async function viewAdmin(v) {
       return { p, stats, avg, acc: att ? Math.round((cor / att) * 100) : null, last: byId[p.id]?.updated_at, classes: [...(accessBy[p.id] || [])] };
     });
     v.append(h(".card", h("b", `${rows.length} accounts`), h(".src", "Columns show each lecture's completion for the class you pick.")),
-      h(".row", { style: "margin:10px 0" }, SUBJECTS.map((x) => h("button.chip" + (sj === x.id ? ".on" : ""), { onclick: () => { sj = x.id; draw(); } }, x.icon + " " + x.name))),
-      h(".tw", h("table", h("thead", h("tr", ["Student", "Classes", "Overall", ...ls.map((l) => l.icon), "Quiz acc.", "Last active", ""].map((x) => h("th", x)))),
+      h(".row", { style: "margin:10px 0" }, SUBJECTS.map((x) => h("button.chip" + (sj === x.id ? ".on" : ""), { onclick: () => { sj = x.id; draw(); } }, [ic(symOf(x), 15), x.name]))),
+      h(".tw", h("table", h("thead", h("tr", ["Student", "Classes", "Overall", ...ls.map((l) => ic(symOf(l), 16)), "Quiz acc.", "Last active", ""].map((x) => h("th", x)))),
         h("tbody", rows.map((r) => h("tr",
           h("td", h("b", r.p.display_name || ""), h(".src", r.p.email), r.p.is_admin ? h("span.pill", { style: "background:#2563eb" }, "admin") : "", r.p.blocked ? h("span.pill", { style: "background:#dc2626" }, "blocked") : ""),
           h("td", r.p.is_admin ? "all" : r.classes.map((c) => SUBJECTS.find((x) => x.id === c)?.name || c).join(", ") || "none yet"),
@@ -476,7 +487,7 @@ async function viewAdmin(v) {
             h("button.btn.warn.sm", { onclick: async () => { if (confirm("Permanently remove " + r.p.email + "?")) { const x = await S.adminDelete(r.p.id); if (x.error) toast(x.error.message); route(); } } }, "Kick")))))))),
       h(".card", { style: "margin-top:14px" }, h("h3", "Class access codes"),
         SUBJECTS.map((x) => { const inp = h("input", { value: codes[x.id] || "", placeholder: "Set a code", "aria-label": x.name + " code" });
-          return h("div", { style: "margin:8px 0" }, h("label", { style: "margin:0 0 4px" }, x.icon + " " + x.name), h(".row", { style: "flex-wrap:nowrap" }, inp,
+          return h("div", { style: "margin:8px 0" }, h("label", { style: "margin:0 0 4px" }, [ic(symOf(x), 15), x.name]), h(".row", { style: "flex-wrap:nowrap" }, inp,
             h("button.btn.sm", { onclick: async () => { if (!inp.value.trim()) return; const r = await S.adminSetCode(x.id, inp.value.trim()); toast(r.error ? r.error.message : x.name + " code saved"); } }, "Save"))); })));
   };
   draw();

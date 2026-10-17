@@ -14,21 +14,34 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/TimePeriods_2.jpg",
-      "slide": "2",
-      "alt": "Two sky globes, one showing a star crossing the meridian after 23:56 and one showing the Sun crossing after 24:00."
+      "src": "img/timesky/day_sidereal.jpg",
+      "slide": "slide 2",
+      "alt": "Sky globe showing a star crossing the meridian, with a clock reading 23:56."
      },
-     "title": "Two ways to measure a day",
+     "title": "Sidereal day: star to star",
      "bullets": [
-      "A **sidereal day** is the time Earth takes to spin once compared with the stars: 23 h 56 min 4.07 s.",
-      "A **solar day** is the time the Sun takes to make one circuit of your sky: 24 hours.",
-      "Both are measured from one crossing of your **meridian** (the line from due north through the point straight overhead to due south) to the next."
+      "A **sidereal day** is the time between two crossings of your **meridian** by the same star: 23 h 56 min 4.07 s.",
+      "The meridian is the line from due north through the point straight overhead (the zenith) to due south.",
+      "It is the time Earth takes to spin once compared with the distant stars."
      ]
     },
     {
      "img": {
-      "src": "img/timesky/TimePeriods_3.jpg",
-      "slide": "3",
+      "src": "img/timesky/day_solar.jpg",
+      "slide": "slide 2",
+      "alt": "Sky globe showing the Sun crossing the meridian, with a clock reading 24:00."
+     },
+     "title": "Solar day: Sun to Sun",
+     "bullets": [
+      "A **solar day** is the time between two crossings of your meridian by the Sun: 24 hours on average.",
+      "That is about 4 minutes longer than the sidereal day. The next two pictures show why.",
+      "The real solar day changes a little through the year, so 24 hours is an average."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/timesky/day_extra.jpg",
+      "slide": "slide 3",
       "alt": "Diagram of Earth from above with a Sun, a distant star line, and two circles labelled 23 hrs 56 min (360 degrees) and 24 hrs (361 degrees)."
      },
      "title": "Why the Sun needs 4 extra minutes",
@@ -40,8 +53,8 @@
     },
     {
      "img": {
-      "src": "img/timesky/TimePeriods_4.jpg",
-      "slide": "4",
+      "src": "img/timesky/day_demo.jpg",
+      "slide": "slide 4 (textbook Figure S1.2)",
       "alt": "Left drawing of a person spinning once beside a lamp and needing extra rotation; right drawing of Earth moving about 1 degree along its orbit per day."
      },
      "title": "The pointing demonstration",
@@ -74,18 +87,23 @@
    ],
    "images": [
     {
-     "src": "img/timesky/TimePeriods_2.jpg",
-     "slide": "2",
-     "alt": "Two sky globes, one showing a star crossing the meridian after 23:56 and one showing the Sun crossing after 24:00."
+     "src": "img/timesky/day_sidereal.jpg",
+     "slide": "slide 2",
+     "alt": "Sky globe showing a star crossing the meridian, with a clock reading 23:56."
     },
     {
-     "src": "img/timesky/TimePeriods_3.jpg",
-     "slide": "3",
+     "src": "img/timesky/day_solar.jpg",
+     "slide": "slide 2",
+     "alt": "Sky globe showing the Sun crossing the meridian, with a clock reading 24:00."
+    },
+    {
+     "src": "img/timesky/day_extra.jpg",
+     "slide": "slide 3",
      "alt": "Diagram of Earth from above with a Sun, a distant star line, and two circles labelled 23 hrs 56 min (360 degrees) and 24 hrs (361 degrees)."
     },
     {
-     "src": "img/timesky/TimePeriods_4.jpg",
-     "slide": "4",
+     "src": "img/timesky/day_demo.jpg",
+     "slide": "slide 4 (textbook Figure S1.2)",
      "alt": "Left drawing of a person spinning once beside a lamp and needing extra rotation; right drawing of Earth moving about 1 degree along its orbit per day."
     }
    ]
@@ -97,8 +115,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/TimePeriods_5.jpg",
-      "slide": "5",
+      "src": "img/timesky/month_synodic.jpg",
+      "slide": "slide 5 (textbook Figure S1.3)",
       "alt": "Diagram of the Moon circling Earth while Earth moves 30 degrees along its orbit, so the Moon needs an extra 30 degrees to reach the next new moon."
      },
      "title": "The Moon: 27.3 days or 29.5 days",
@@ -114,6 +132,14 @@
       "Day: Earth moves about 1 degree along its orbit, so it needs an extra 1 degree of spin to face the Sun again (about 4 minutes).",
       "Month: Earth moves about 30 degrees along its orbit, so the Moon needs an extra 30 degrees of orbit (about 2.2 days).",
       "In both cases the Sun is the thing we line up with, and our own motion around the Sun moves it away."
+     ]
+    },
+    {
+     "title": "The Moon is about 50 minutes late",
+     "bullets": [
+      "Against the stars the Moon moves east about 360/29.5 = 12 degrees per day.",
+      "Earth must turn those extra 12 degrees to catch up, at 4 minutes per degree, so the Moon crosses your meridian about 49 minutes later each day.",
+      "That makes about **24 h 50 min** between two meridian crossings of the Moon."
      ]
     }
    ],
@@ -135,12 +161,13 @@
    "sourceNotes": [
     "TimePeriods 5, 7, 10",
     "Textbook S1.1 (The Length of the Month, Figure S1.3)",
-    "ASTR207 Practice questions Q2"
+    "ASTR207 Practice questions Q2",
+    "Textbook S1.1 end-of-chapter Problem 54 (24 h 50 min worked out here: 12.2 degrees x 4 min)"
    ],
    "images": [
     {
-     "src": "img/timesky/TimePeriods_5.jpg",
-     "slide": "5",
+     "src": "img/timesky/month_synodic.jpg",
+     "slide": "slide 5 (textbook Figure S1.3)",
      "alt": "Diagram of the Moon circling Earth while Earth moves 30 degrees along its orbit, so the Moon needs an extra 30 degrees to reach the next new moon."
     }
    ]
@@ -152,8 +179,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/TimePeriods_6.jpg",
-      "slide": "6",
+      "src": "img/timesky/year_precession.jpg",
+      "slide": "slide 6",
       "alt": "Picture of Earth with its tilted axis tracing a circle among the stars (precession) beside Earth's orbit, with notes for sidereal year and tropical year."
      },
      "title": "Two kinds of year",
@@ -164,11 +191,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/timesky/TimePeriods_7.jpg",
-      "slide": "7",
-      "alt": "Table listing sidereal and solar day, sidereal and synodic month, sidereal and tropical year and common year with their lengths."
-     },
      "title": "The table of time periods",
      "bullets": [
       "Day: sidereal 23 h 56 min 4.07 s, solar 24 h (about 4 min apart).",
@@ -244,14 +266,9 @@
    ],
    "images": [
     {
-     "src": "img/timesky/TimePeriods_6.jpg",
-     "slide": "6",
+     "src": "img/timesky/year_precession.jpg",
+     "slide": "slide 6",
      "alt": "Picture of Earth with its tilted axis tracing a circle among the stars (precession) beside Earth's orbit, with notes for sidereal year and tropical year."
-    },
-    {
-     "src": "img/timesky/TimePeriods_7.jpg",
-     "slide": "7",
-     "alt": "Table listing sidereal and solar day, sidereal and synodic month, sidereal and tropical year and common year with their lengths."
     }
    ]
   },
@@ -262,8 +279,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/TimePeriods_8.jpg",
-      "slide": "8",
+      "src": "img/timesky/planets_config.jpg",
+      "slide": "textbook p.87 / Figure S1.4 (also slide 8)",
       "alt": "Top view of the Sun with Earth and planet orbits labelled conjunction, superior conjunction, inferior conjunction, opposition and greatest eastern and western elongation."
      },
      "title": "Planet years and meetings",
@@ -282,9 +299,17 @@
      ]
     },
     {
+     "title": "From synodic to orbital period",
+     "bullets": [
+      "We can measure a planet's synodic period from Earth. The planet's real orbital period follows from it. Outer planet: orbital period = synodic x (1 yr) / (synodic - 1 yr). Inner planet: orbital period = synodic x (1 yr) / (synodic + 1 yr).",
+      "Jupiter: synodic 1.092 yr, so orbital = 1.092 / 0.092 = 11.87 yr (a little less than 12 years).",
+      "Venus: synodic 1.599 yr, so orbital = 1.599 / 2.599 = 0.6152 yr, which is 224.7 days."
+     ]
+    },
+    {
      "img": {
-      "src": "img/timesky/TimePeriods_9.jpg",
-      "slide": "9",
+      "src": "img/timesky/planets_transit.jpg",
+      "slide": "slide 9",
       "alt": "Photo of a low orange Sun at sunset with a tiny dark dot, the planet Venus, crossing its face."
      },
      "title": "Transits",
@@ -313,17 +338,18 @@
    "sourceNotes": [
     "TimePeriods 8-9",
     "Textbook S1.1 (Planetary Periods, Figures S1.4 and S1.5)",
-    "Practice Test 2 Q3; ASTR207 Practice questions Q3"
+    "Practice Test 2 Q3; ASTR207 Practice questions Q3",
+    "Textbook Mathematical Insight S1.1 (Examples 1 and 2: Jupiter 11.87 yr, Venus 0.6152 yr)"
    ],
    "images": [
     {
-     "src": "img/timesky/TimePeriods_8.jpg",
-     "slide": "8",
+     "src": "img/timesky/planets_config.jpg",
+     "slide": "textbook p.87 / Figure S1.4 (also slide 8)",
      "alt": "Top view of the Sun with Earth and planet orbits labelled conjunction, superior conjunction, inferior conjunction, opposition and greatest eastern and western elongation."
     },
     {
-     "src": "img/timesky/TimePeriods_9.jpg",
-     "slide": "9",
+     "src": "img/timesky/planets_transit.jpg",
+     "slide": "slide 9",
      "alt": "Photo of a low orange Sun at sunset with a tiny dark dot, the planet Venus, crossing its face."
     }
    ]
@@ -335,21 +361,21 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/TimeZones_1.jpg",
-      "slide": "1",
-      "alt": "Photo of a bright Sun high over trees and a field, captioned 1:30 pm clock time on Monday Sept 21 with apparent time noon."
+      "src": "img/timesky/sundial.jpg",
+      "slide": "textbook p.90 / Figure S1.6",
+      "alt": "Close-up of a metal sundial on bricks, with a pointed stick casting a shadow across the numerals."
      },
      "title": "Apparent solar time (sundial time)",
      "bullets": [
-      "**Apparent solar time**: noon happens when the Sun crosses your meridian.",
-      "The photo caption says the clock reads 1:30 pm, yet the apparent time is noon because the Sun is on the meridian. Clock time and Sun time can differ.",
-      "A sundial shows apparent solar time, so it does not work at night or under clouds."
+      "**Apparent solar time** is sundial time: noon is the moment the Sun crosses your meridian.",
+      "In the picture the shadow falls on the numeral I, so it is 1:00 p.m. apparent solar time: the Sun crossed the meridian 1 hour ago.",
+      "A sundial does not work at night or under clouds, and a given dial is accurate only for one latitude."
      ]
     },
     {
      "img": {
-      "src": "img/timesky/TimeZones_3.jpg",
-      "slide": "3",
+      "src": "img/timesky/analemma_photo.jpg",
+      "slide": "slide 3",
       "alt": "Photo of a large sundial in a garden with many Sun positions photographed through the year forming a figure 8 in the sky."
      },
      "title": "Why days are not all the same length",
@@ -361,15 +387,28 @@
     },
     {
      "img": {
-      "src": "img/timesky/TimeZones_4.jpg",
-      "slide": "4",
-      "alt": "A figure 8 analemma plot and a wavy equation of time graph showing clock ahead of or behind the Sun, with a dashed line at Nov. 10."
+      "src": "img/timesky/analemma_graph.jpg",
+      "slide": "slide 4",
+      "alt": "Figure 8 analemma plot with clock-ahead and clock-behind sides, Sun declination on the vertical axis and a dashed line at Nov. 10."
      },
-     "title": "The analemma and equation of time",
+     "title": "The analemma",
      "bullets": [
-      "The **analemma** (the figure 8) shows the difference between apparent solar time and mean solar time across the year.",
-      "On the graph, when the curve is above zero the clock is behind the Sun, and when it is below zero the clock is ahead of the Sun.",
-      "The biggest gap is about **17 minutes** around November 10, with the clock behind the Sun."
+      "The **analemma** (the figure 8) plots the Sun's declination (up and down) against how far the clock is ahead of or behind the Sun (left and right).",
+      "The dashed line shows that around November 10 the clock is about **17 minutes** behind the Sun.",
+      "So if the apparent solar time is 6:00 p.m., the mean solar time is about 5:43 p.m."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/timesky/eqtime.jpg",
+      "slide": "slide 4 (textbook Special Topic)",
+      "alt": "Wavy graph called equation of time showing the clock behind the Sun above zero and ahead of the Sun below zero, with a peak of 17 minutes at Nov. 10."
+     },
+     "title": "The equation of time",
+     "bullets": [
+      "The same information as a wave: apparent time minus mean time, through the year.",
+      "When the curve is above zero the clock is behind the Sun, and when it is below zero the clock is ahead of the Sun.",
+      "The biggest gap is about 17 minutes behind in early November. Over the year the clock reads from about 17 minutes before to 15 minutes after the sundial's noon."
      ]
     }
    ],
@@ -395,19 +434,24 @@
    ],
    "images": [
     {
-     "src": "img/timesky/TimeZones_1.jpg",
-     "slide": "1",
-     "alt": "Photo of a bright Sun high over trees and a field, captioned 1:30 pm clock time on Monday Sept 21 with apparent time noon."
+     "src": "img/timesky/sundial.jpg",
+     "slide": "textbook p.90 / Figure S1.6",
+     "alt": "Close-up of a metal sundial on bricks, with a pointed stick casting a shadow across the numerals."
     },
     {
-     "src": "img/timesky/TimeZones_3.jpg",
-     "slide": "3",
+     "src": "img/timesky/analemma_photo.jpg",
+     "slide": "slide 3",
      "alt": "Photo of a large sundial in a garden with many Sun positions photographed through the year forming a figure 8 in the sky."
     },
     {
-     "src": "img/timesky/TimeZones_4.jpg",
-     "slide": "4",
-     "alt": "A figure 8 analemma plot and a wavy equation of time graph showing clock ahead of or behind the Sun, with a dashed line at Nov. 10."
+     "src": "img/timesky/analemma_graph.jpg",
+     "slide": "slide 4",
+     "alt": "Figure 8 analemma plot with clock-ahead and clock-behind sides, Sun declination on the vertical axis and a dashed line at Nov. 10."
+    },
+    {
+     "src": "img/timesky/eqtime.jpg",
+     "slide": "slide 4 (textbook Special Topic)",
+     "alt": "Wavy graph called equation of time showing the clock behind the Sun above zero and ahead of the Sun below zero, with a peak of 17 minutes at Nov. 10."
     }
    ]
   },
@@ -418,8 +462,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/TimeZones_5.jpg",
-      "slide": "5",
+      "src": "img/timesky/usa_zones.jpg",
+      "slide": "slide 5",
       "alt": "Map of the United States split into Pacific, Mountain, Central and Eastern time zones with a clock in each showing 3, 4, 5 and 6 pm."
      },
      "title": "Standard time in the United States",
@@ -431,15 +475,15 @@
     },
     {
      "img": {
-      "src": "img/timesky/TimeZones_6.jpg",
-      "slide": "6",
-      "alt": "World map cut into vertical time-zone strips numbered from -11 through 0 to +12."
+      "src": "img/timesky/world_zones.jpg",
+      "slide": "textbook p.91 / Figure S1.7 (also slide 6)",
+      "alt": "World map cut into vertical time-zone strips, with longitude numbers along the top and hours from Greenwich from -11 to +12 along the bottom."
      },
      "title": "24 zones in theory, 38 in practice",
      "bullets": [
-      "The world is divided into 24 time zones, one for each hour, numbered about -11 to +12 hours from Greenwich.",
-      "Politics and geography raised the number to **38**; most of the extra ones are half-hour offsets from a nearby zone.",
-      "24 zones around a 360-degree Earth means each zone is 15 degrees of longitude wide."
+      "The world is divided into 24 time zones, one for each hour, numbered about -11 to +12 hours from Greenwich (bottom scale).",
+      "Politics and geography raised the number to **38**; most of the extra ones are half-hour offsets from a nearby zone (the 3.5, 4.5, 5.5, 6.5 and 9.5 strips).",
+      "24 zones around a 360-degree Earth means each zone is 15 degrees of longitude wide (top scale)."
      ]
     },
     {
@@ -452,8 +496,8 @@
     },
     {
      "img": {
-      "src": "img/timesky/TimeZones_8.jpg",
-      "slide": "8",
+      "src": "img/timesky/canada_zones.jpg",
+      "slide": "slide 8",
       "alt": "Map of Canada colour-coded by time zone with small labels such as UTC-7:00 MST, UTC-6:00 CST, UTC-5:00 EST and UTC-3:30 NST."
      },
      "title": "Canada's time zones",
@@ -482,22 +526,23 @@
    "sourceNotes": [
     "TimeZonesAndDefinitions 5-8",
     "Textbook S1.1 (Standard, Daylight, and Universal Time; Figure S1.7)",
-    "ASTR207 Practice questions Q7"
+    "ASTR207 Practice questions Q7",
+    "Textbook S1.1 text: New York clocks 3 h ahead of Los Angeles; central Los Angeles mean solar clocks about 2 min behind Pasadena"
    ],
    "images": [
     {
-     "src": "img/timesky/TimeZones_5.jpg",
-     "slide": "5",
+     "src": "img/timesky/usa_zones.jpg",
+     "slide": "slide 5",
      "alt": "Map of the United States split into Pacific, Mountain, Central and Eastern time zones with a clock in each showing 3, 4, 5 and 6 pm."
     },
     {
-     "src": "img/timesky/TimeZones_6.jpg",
-     "slide": "6",
-     "alt": "World map cut into vertical time-zone strips numbered from -11 through 0 to +12."
+     "src": "img/timesky/world_zones.jpg",
+     "slide": "textbook p.91 / Figure S1.7 (also slide 6)",
+     "alt": "World map cut into vertical time-zone strips, with longitude numbers along the top and hours from Greenwich from -11 to +12 along the bottom."
     },
     {
-     "src": "img/timesky/TimeZones_8.jpg",
-     "slide": "8",
+     "src": "img/timesky/canada_zones.jpg",
+     "slide": "slide 8",
      "alt": "Map of Canada colour-coded by time zone with small labels such as UTC-7:00 MST, UTC-6:00 CST, UTC-5:00 EST and UTC-3:30 NST."
     }
    ]
@@ -509,8 +554,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/TimeZones_9.jpg",
-      "slide": "9",
+      "src": "img/timesky/dst_globe.jpg",
+      "slide": "slide 9",
       "alt": "Sky globe with the Sun's daily paths on June 21, Sept 21, March 21 and Dec 21, the June path highest and longest above the horizon."
      },
      "title": "Spring forward",
@@ -550,8 +595,8 @@
    ],
    "images": [
     {
-     "src": "img/timesky/TimeZones_9.jpg",
-     "slide": "9",
+     "src": "img/timesky/dst_globe.jpg",
+     "slide": "slide 9",
      "alt": "Sky globe with the Sun's daily paths on June 21, Sept 21, March 21 and Dec 21, the June path highest and longest above the horizon."
     }
    ]
@@ -562,11 +607,6 @@
    "slides": "TimeZonesAndDefinitions 11-14",
    "steps": [
     {
-     "img": {
-      "src": "img/timesky/TimeZones_11.jpg",
-      "slide": "11",
-      "alt": "Marble bust of the Roman ruler Julius Caesar beside the text about the Julian calendar."
-     },
      "title": "The Julian calendar",
      "bullets": [
       "A calendar with a whole number of days (365) drifts out of step with the seasons by about 1 day every 4 years, because the true year is about 365 1/4 days.",
@@ -575,11 +615,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/timesky/TimeZones_12.jpg",
-      "slide": "12",
-      "alt": "Painting of Pope Gregory XIII in red robes beside the leap-year rule for years divisible by 4, 100 and 400."
-     },
      "title": "The Gregorian calendar",
      "bullets": [
       "By the 1500s the Julian calendar was off by about 10 days.",
@@ -614,20 +649,10 @@
    "sourceNotes": [
     "TimeZonesAndDefinitions 11-14",
     "Textbook S1.1 (When and why do we have leap years?)",
-    "ASTR207 Practice questions Q8"
+    "ASTR207 Practice questions Q8",
+    "Textbook S1.1: Egyptian 365-day calendar by 4200 BC; Gregorian calendar adopted in England and the American colonies in 1752, China 1912, Russia 1919"
    ],
-   "images": [
-    {
-     "src": "img/timesky/TimeZones_11.jpg",
-     "slide": "11",
-     "alt": "Marble bust of the Roman ruler Julius Caesar beside the text about the Julian calendar."
-    },
-    {
-     "src": "img/timesky/TimeZones_12.jpg",
-     "slide": "12",
-     "alt": "Painting of Pope Gregory XIII in red robes beside the leap-year rule for years divisible by 4, 100 and 400."
-    }
-   ]
+   "images": []
   },
   {
    "id": "sunpath",
@@ -636,8 +661,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/SkyMotion_2.jpg",
-      "slide": "2",
+      "src": "img/timesky/sky40.jpg",
+      "slide": "slide 2 (textbook Figure S1.17)",
       "alt": "Sky globe for 40 degrees north showing the Sun's paths on June 21, Mar 21 and Sept 21, and Dec 21 with noon altitudes 73 1/2, 50 and 26 1/2 degrees."
      },
      "title": "A sky path at 40 degrees north",
@@ -649,8 +674,8 @@
     },
     {
      "img": {
-      "src": "img/timesky/SkyMotion_3.jpg",
-      "slide": "3",
+      "src": "img/timesky/special_lat.jpg",
+      "slide": "slide 3 (textbook Figure S1.18)",
       "alt": "Globe marked with the equator, the tropics of Cancer and Capricorn at 23.5 degrees, and the Arctic and Antarctic Circles at 66.5 degrees."
      },
      "title": "The tilt creates special latitudes",
@@ -683,13 +708,13 @@
    ],
    "images": [
     {
-     "src": "img/timesky/SkyMotion_2.jpg",
-     "slide": "2",
+     "src": "img/timesky/sky40.jpg",
+     "slide": "slide 2 (textbook Figure S1.17)",
      "alt": "Sky globe for 40 degrees north showing the Sun's paths on June 21, Mar 21 and Sept 21, and Dec 21 with noon altitudes 73 1/2, 50 and 26 1/2 degrees."
     },
     {
-     "src": "img/timesky/SkyMotion_3.jpg",
-     "slide": "3",
+     "src": "img/timesky/special_lat.jpg",
+     "slide": "slide 3 (textbook Figure S1.18)",
      "alt": "Globe marked with the equator, the tropics of Cancer and Capricorn at 23.5 degrees, and the Arctic and Antarctic Circles at 66.5 degrees."
     }
    ]
@@ -701,8 +726,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/SkyMotion_4.jpg",
-      "slide": "4",
+      "src": "img/timesky/sky_equator.jpg",
+      "slide": "slide 4",
       "alt": "Sky globe for the equator with three Sun paths on June 21, Mar 21 and Sept 21, and Dec 21, the middle path passing through the zenith."
      },
      "title": "The Sun at the equator",
@@ -714,8 +739,8 @@
     },
     {
      "img": {
-      "src": "img/timesky/SkyMotion_5.jpg",
-      "slide": "5",
+      "src": "img/timesky/sky_tropic.jpg",
+      "slide": "slide 5",
       "alt": "Sky globe for 23.5 degrees north showing the Sun at the zenith on June 21 and noon altitudes 66 1/2 and 43 degrees for other dates."
      },
      "title": "The Sun at the tropics",
@@ -748,13 +773,13 @@
    ],
    "images": [
     {
-     "src": "img/timesky/SkyMotion_4.jpg",
-     "slide": "4",
+     "src": "img/timesky/sky_equator.jpg",
+     "slide": "slide 4",
      "alt": "Sky globe for the equator with three Sun paths on June 21, Mar 21 and Sept 21, and Dec 21, the middle path passing through the zenith."
     },
     {
-     "src": "img/timesky/SkyMotion_5.jpg",
-     "slide": "5",
+     "src": "img/timesky/sky_tropic.jpg",
+     "slide": "slide 5",
      "alt": "Sky globe for 23.5 degrees north showing the Sun at the zenith on June 21 and noon altitudes 66 1/2 and 43 degrees for other dates."
     }
    ]
@@ -766,8 +791,8 @@
    "steps": [
     {
      "img": {
-      "src": "img/timesky/SkyMotion_6.jpg",
-      "slide": "6",
+      "src": "img/timesky/sky_pole.jpg",
+      "slide": "slide 6",
       "alt": "Sky globe for a pole showing flat circular Sun paths on the horizon and 23 1/2 degrees above and below it."
      },
      "title": "The Sun at the poles",
@@ -779,8 +804,8 @@
     },
     {
      "img": {
-      "src": "img/timesky/SkyMotion_7.jpg",
-      "slide": "7",
+      "src": "img/timesky/sky_arctic.jpg",
+      "slide": "slide 7 (textbook Figure S1.22)",
       "alt": "Sky globe for 66.5 degrees north with the Sun's June 21 path circling the sky and noon altitudes of 47, 23 1/2 and 0 degrees."
      },
      "title": "The Arctic and Antarctic Circles",
@@ -813,13 +838,13 @@
    ],
    "images": [
     {
-     "src": "img/timesky/SkyMotion_6.jpg",
-     "slide": "6",
+     "src": "img/timesky/sky_pole.jpg",
+     "slide": "slide 6",
      "alt": "Sky globe for a pole showing flat circular Sun paths on the horizon and 23 1/2 degrees above and below it."
     },
     {
-     "src": "img/timesky/SkyMotion_7.jpg",
-     "slide": "7",
+     "src": "img/timesky/sky_arctic.jpg",
+     "slide": "slide 7 (textbook Figure S1.22)",
      "alt": "Sky globe for 66.5 degrees north with the Sun's June 21 path circling the sky and noon altitudes of 47, 23 1/2 and 0 degrees."
     }
    ]
@@ -827,7 +852,7 @@
   {
    "id": "rule",
    "title": "Noon Sun altitude rule and sky coordinates",
-   "slides": "SkyMotion 1-8 (rule); coordinates are from the textbook only",
+   "slides": "SkyMotion 1-8 (rule); coordinates are from the textbook only (S1.2, Table S1.1)",
    "steps": [
     {
      "title": "The noon altitude rule",
@@ -839,6 +864,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/timesky/coords_systems.jpg",
+      "slide": "textbook p.92 / Figure S1.10b and c",
+      "alt": "Two globes side by side: Earth with lines of latitude and longitude, and the sky with lines of declination and right ascension."
+     },
      "title": "Sky coordinates",
      "bullets": [
       "**Declination (dec)** is like latitude: degrees north (+) or south (-) of the celestial equator. The celestial equator is dec = 0 and the north celestial pole is dec = +90.",
@@ -847,11 +877,55 @@
      ]
     },
     {
-     "title": "Stars at your latitude",
+     "img": {
+      "src": "img/timesky/vega_coords.jpg",
+      "slide": "textbook p.93 / Figure S1.11",
+      "alt": "Celestial sphere diagram marking Vega with dec = +38 degrees 44 minutes and RA = 18 hours 35 minutes, measured from the March equinox."
+     },
+     "title": "Example: the star Vega",
      "bullets": [
-      "The north celestial pole sits due north at an altitude equal to your latitude.",
-      "The celestial equator crosses your meridian at altitude 90 - latitude, rising due east and setting due west.",
-      "A star is **circumpolar** (never sets) if its declination is greater than 90 - latitude. At 40 N that means above +50. Stars below -50 never rise."
+      "Vega has declination +38 degrees 44 arcminutes: it lies that far north of the celestial equator.",
+      "Its right ascension is 18 h 35 min. In degrees: 18 x 15 = 270, and 35 min x 15/60 = 8.75, so about 279 degrees east of the March equinox.",
+      "An object with a given RA crosses your meridian that many hours (of sidereal time) after the March equinox point does."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/timesky/sun_coords.jpg",
+      "slide": "textbook p.95 / Figure S1.12",
+      "alt": "Celestial sphere with the ecliptic marked in hours of right ascension and the Sun's positions on Mar. 21, June 21, Sept. 21 and Dec. 21 at dec = 0, +23 1/2, 0 and -23 1/2."
+     },
+     "title": "Where the Sun is on the sphere",
+     "bullets": [
+      "The Sun moves along the **ecliptic**, tilted 23 1/2 degrees to the celestial equator. Its right ascension marks the hours along the ecliptic.",
+      "March 21: RA 0 h, dec 0. June 21: RA 6 h, dec +23 1/2. Sept 21: RA 12 h, dec 0. Dec 21: RA 18 h, dec -23 1/2.",
+      "So the June solstice is 6 hours of right ascension east of the March equinox."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/timesky/sun_table.jpg",
+      "slide": "textbook p.95 / Table S1.1",
+      "alt": "Table of the Sun's approximate right ascension and declination at one-month intervals from Mar. 21 to Feb. 21."
+     },
+     "title": "The Sun's coordinates by date",
+     "bullets": [
+      "Right ascension climbs steadily, about 2 hours each month.",
+      "Declination changes slowly near the solstices (only +20 to +23 1/2 between May 21 and July 21) but fast near the equinoxes (about 24 degrees in the two months around March 21).",
+      "That is why the daylight hours change quickly in spring and fall and stay nearly constant for a couple of months around the solstices."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/timesky/star_paths40.jpg",
+      "slide": "textbook p.98 / Figure S1.15b",
+      "alt": "Sky at 40 degrees north showing star tracks for dec = +60, +40, +30, 0, -30 and -60 with the meridian and horizon labelled."
+     },
+     "title": "Stars at 40 degrees north",
+     "bullets": [
+      "The north celestial pole sits due north at an altitude equal to your latitude (40 degrees). The celestial equator crosses the meridian at altitude 90 - 40 = 50 degrees in the south, rising due east and setting due west.",
+      "A star with dec = +30 crosses the meridian at 50 + 30 = 80 degrees in the south. A star with dec = -30 crosses at 50 - 30 = 20 degrees in the south. A star with dec = +60 reaches 70 degrees in the north (110 is 20 past the zenith).",
+      "A star is **circumpolar** (never sets) if its declination is greater than 90 - latitude, which is above +50 at 40 N. Stars below -50 never rise."
      ]
     }
    ],
@@ -875,7 +949,123 @@
     "SkyMotion 1 (coordinates crossed out), 2-7 for the Sun results",
     "Practice Test 2 Q4-Q6; ASTR207 Practice questions Q9"
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/timesky/coords_systems.jpg",
+     "slide": "textbook p.92 / Figure S1.10b and c",
+     "alt": "Two globes side by side: Earth with lines of latitude and longitude, and the sky with lines of declination and right ascension."
+    },
+    {
+     "src": "img/timesky/vega_coords.jpg",
+     "slide": "textbook p.93 / Figure S1.11",
+     "alt": "Celestial sphere diagram marking Vega with dec = +38 degrees 44 minutes and RA = 18 hours 35 minutes, measured from the March equinox."
+    },
+    {
+     "src": "img/timesky/sun_coords.jpg",
+     "slide": "textbook p.95 / Figure S1.12",
+     "alt": "Celestial sphere with the ecliptic marked in hours of right ascension and the Sun's positions on Mar. 21, June 21, Sept. 21 and Dec. 21 at dec = 0, +23 1/2, 0 and -23 1/2."
+    },
+    {
+     "src": "img/timesky/sun_table.jpg",
+     "slide": "textbook p.95 / Table S1.1",
+     "alt": "Table of the Sun's approximate right ascension and declination at one-month intervals from Mar. 21 to Feb. 21."
+    },
+    {
+     "src": "img/timesky/star_paths40.jpg",
+     "slide": "textbook p.98 / Figure S1.15b",
+     "alt": "Sky at 40 degrees north showing star tracks for dec = +60, +40, +30, 0, -30 and -60 with the meridian and horizon labelled."
+    }
+   ]
+  },
+  {
+   "id": "nav",
+   "title": "Finding your place from the sky",
+   "slides": "textbook only (S1.3)",
+   "steps": [
+    {
+     "title": "Latitude from the celestial pole",
+     "bullets": [
+      "Your latitude equals the altitude of the celestial pole in your sky.",
+      "Polaris lies within 1 degree of the north celestial pole, so measuring Polaris tells you your latitude.",
+      "Example: if Polaris has altitude 17 degrees, your latitude is between 16 N and 18 N."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/timesky/lat_star.jpg",
+      "slide": "textbook p.102 / Figure S1.23a",
+      "alt": "Diagram of a sailboat under the sky showing Vega crossing the meridian at 78 degrees 44 minutes and the celestial equator at 40 degrees, giving latitude 50 N."
+     },
+     "title": "Latitude from a star on the meridian",
+     "bullets": [
+      "Suppose Vega (dec +38 degrees 44 arcminutes) crosses your meridian at altitude 78 degrees 44 arcminutes in the south.",
+      "The celestial equator then crosses the meridian at 78 44 - 38 44 = 40 degrees in the south.",
+      "The equator's altitude is 90 - latitude, so your latitude is 90 - 40 = **50 N**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/timesky/lat_sun.jpg",
+      "slide": "textbook p.102 / Figure S1.23b",
+      "alt": "Diagram of a sailboat under the sky with the March equinox Sun on the meridian at 70 degrees in the north, giving latitude 20 S."
+     },
+     "title": "Latitude from the Sun at noon",
+     "bullets": [
+      "Suppose it is March 21 and the Sun crosses your meridian at altitude 70 degrees in the north.",
+      "On March 21 the Sun has dec = 0, so the celestial equator also crosses your meridian at 70 degrees in the north.",
+      "That means you are in the Southern Hemisphere at latitude 90 - 70 = **20 S**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/timesky/longitude_time.jpg",
+      "slide": "textbook p.102 / Figure S1.24",
+      "alt": "Globe showing Greenwich and a ship's location with the local time 2 hours behind Greenwich, giving longitude 30 degrees W."
+     },
+     "title": "Longitude from the time difference",
+     "bullets": [
+      "Suppose a sundial says it is 1:00 p.m., and you learn it is 3:00 p.m. in Greenwich right now.",
+      "Your local time is 2 hours earlier, so you are 2 hours west of Greenwich. Each hour is 15 degrees of longitude, so you are at 2 x 15 = **30 W**.",
+      "At night the same idea works with a star: if Vega is on your meridian and will not cross the meridian at Greenwich for 6 hours, you are 6 hours east, at 90 E."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is the pole's altitude equal to your latitude? At the North Pole the north celestial pole is straight overhead (90 degrees), and at the equator it sits on the horizon (0 degrees). In between the altitude grows in step with latitude."
+    },
+    {
+     "type": "trick",
+     "text": "Latitude: find where the celestial equator crosses your meridian, then latitude = 90 - that altitude. Longitude: later than Greenwich means east, earlier means west, 15 degrees per hour."
+    },
+    {
+     "type": "trap",
+     "text": "Not in the lecture slides: this is textbook Section S1.3 (the task asked for the Polaris, time-zone and coordinate examples). Latitude needs only the sky; longitude needs a clock that tells Greenwich (universal) time, so measuring star altitudes alone can never give longitude (textbook problem 32). Textbook Polaris example: altitude 17 degrees gives latitude 16 to 18 N."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook S1.3 (How can you determine your latitude / longitude?; Figures S1.23, S1.24)",
+    "Textbook end-of-chapter problems 47-50 (Lost at Sea)"
+   ],
+   "images": [
+    {
+     "src": "img/timesky/lat_star.jpg",
+     "slide": "textbook p.102 / Figure S1.23a",
+     "alt": "Diagram of a sailboat under the sky showing Vega crossing the meridian at 78 degrees 44 minutes and the celestial equator at 40 degrees, giving latitude 50 N."
+    },
+    {
+     "src": "img/timesky/lat_sun.jpg",
+     "slide": "textbook p.102 / Figure S1.23b",
+     "alt": "Diagram of a sailboat under the sky with the March equinox Sun on the meridian at 70 degrees in the north, giving latitude 20 S."
+    },
+    {
+     "src": "img/timesky/longitude_time.jpg",
+     "slide": "textbook p.102 / Figure S1.24",
+     "alt": "Globe showing Greenwich and a ship's location with the local time 2 hours behind Greenwich, giving longitude 30 degrees W."
+    }
+   ]
   }
  ],
  "table": {
@@ -1192,6 +1382,48 @@
    "back": "When its declination is greater than 90 degrees minus your latitude (above +50 at 40 N). It never sets.",
    "short": "Never sets: dec above 90 minus latitude",
    "src": "Textbook S1.2; Practice exam Q9"
+  },
+  {
+   "id": "ts-c40",
+   "front": "How do you get a planet's orbital period from its synodic period?",
+   "back": "Outer planet: P = Psyn x 1 yr / (Psyn - 1 yr). Inner planet: P = Psyn x 1 yr / (Psyn + 1 yr). Jupiter: 1.092 yr gives 11.87 yr. Venus: 1.599 yr gives 0.6152 yr.",
+   "short": "Synodic to orbital period formulas",
+   "src": "Textbook Mathematical Insight S1.1"
+  },
+  {
+   "id": "ts-c41",
+   "front": "How do you find latitude from Polaris?",
+   "back": "Your latitude equals the altitude of the north celestial pole, and Polaris is within 1 degree of it. Polaris at 17 degrees means latitude between 16 N and 18 N.",
+   "short": "Polaris altitude gives latitude",
+   "src": "Textbook S1.3"
+  },
+  {
+   "id": "ts-c42",
+   "front": "How do you find longitude from a time difference?",
+   "back": "Compare your local time with Greenwich time. Each hour is 15 degrees. Earlier than Greenwich means west, later means east. 2 hours behind = 30 W.",
+   "short": "Hours from Greenwich times 15 degrees",
+   "src": "Textbook S1.3"
+  },
+  {
+   "id": "ts-c43",
+   "front": "What is the relation between hour angle, sidereal time and right ascension?",
+   "back": "Hour angle of an object = local sidereal time - its right ascension. On March 21 at 9:00 p.m. solar time the local sidereal time is 9:00.",
+   "short": "Hour angle equals LST minus RA",
+   "src": "Textbook Mathematical Insight S1.2"
+  },
+  {
+   "id": "ts-c44",
+   "front": "What are the Sun's right ascension and declination at each season?",
+   "back": "March equinox: RA 0 h, dec 0. June solstice: 6 h, +23.5. September equinox: 12 h, 0. December solstice: 18 h, -23.5.",
+   "short": "Sun RA and dec at four seasons",
+   "src": "Textbook Table S1.1"
+  },
+  {
+   "id": "ts-c45",
+   "front": "Where does the celestial equator cross your meridian?",
+   "back": "At altitude 90 degrees - latitude (due south in the Northern Hemisphere). At 40 N that is 50 degrees. A star's meridian altitude is that value plus (or minus) its declination.",
+   "short": "Equator crosses meridian at 90 minus latitude",
+   "src": "Textbook S1.2; Figure S1.15"
   }
  ],
  "quiz": [
@@ -1224,20 +1456,6 @@
    "source": "TimePeriods 3-4; ASTR207 Practice questions Q1 (adapted)"
   },
   {
-   "id": "ts-3",
-   "q": "Earth turns 360 degrees in a sidereal day of about 23 h 56 min (1436 minutes). It must turn about 1 degree more each day to face the Sun again. About how long does that extra 1 degree take?",
-   "options": [
-    "about 4 seconds",
-    "about 24 minutes",
-    "about 4 minutes",
-    "about 1 hour",
-    "about 4 hours"
-   ],
-   "answer": 2,
-   "why": "Time per degree = 1436 min / 360 degrees = 3.99 min, so about 4 minutes. That is why the solar day (24 h) is about 4 minutes longer than the sidereal day.",
-   "source": "TimePeriods 3-4"
-  },
-  {
    "id": "ts-4",
    "q": "The sidereal month is 27.3 days and the synodic month is 29.5 days. How much longer is the synodic month, and why?",
    "options": [
@@ -1249,7 +1467,12 @@
    ],
    "answer": 3,
    "why": "29.5 - 27.3 = 2.2 days. Earth's motion around the Sun shifts where the Sun is, so the Moon needs about 30/360 = 1/12 extra orbit. The other reasons are not the cause.",
-   "source": "TimePeriods 5, 7; ASTR207 Practice questions Q2"
+   "source": "TimePeriods 5, 7; ASTR207 Practice questions Q2",
+   "img": {
+    "src": "img/timesky/month_synodic.jpg",
+    "slide": "slide 5",
+    "alt": "Diagram of the Moon circling Earth while Earth moves 30 degrees along its orbit, so the Moon needs an extra 30 degrees to reach the next new moon."
+   }
   },
   {
    "id": "ts-5",
@@ -1277,7 +1500,12 @@
    ],
    "answer": 1,
    "why": "Because of precession the equinox comes about 20 minutes before Earth has finished a full orbit relative to the stars, so the stars behind the Sun at each March equinox shift slightly. Leap days exist because the year is not a whole number of days, not because of this gap.",
-   "source": "TimePeriods 6-7; Practice Test 2 Q2"
+   "source": "TimePeriods 6-7; Practice Test 2 Q2",
+   "img": {
+    "src": "img/timesky/year_precession.jpg",
+    "slide": "slide 6",
+    "alt": "Picture of Earth with its tilted axis tracing a circle among the stars (precession) beside Earth's orbit."
+   }
   },
   {
    "id": "ts-7",
@@ -1305,7 +1533,12 @@
    ],
    "answer": 3,
    "why": "An inner planet lined up between Earth and the Sun is at inferior conjunction. Superior conjunction is behind the Sun, and opposition happens only for outer planets.",
-   "source": "TimePeriods 8-9; Practice Test 2 Q3"
+   "source": "TimePeriods 8-9; Practice Test 2 Q3",
+   "img": {
+    "src": "img/timesky/planets_config.jpg",
+    "slide": "textbook Figure S1.4",
+    "alt": "Top view of the Sun with Earth and planet orbits labelled conjunction, superior conjunction, inferior conjunction, opposition and greatest elongations."
+   }
   },
   {
    "id": "ts-9",
@@ -1319,49 +1552,12 @@
    ],
    "answer": 2,
    "why": "At opposition an outer planet is opposite the Sun in our sky, so it is closest to Earth, rises at sunset, crosses the meridian at midnight and sets at dawn.",
-   "source": "TimePeriods 8; Textbook S1.1; ASTR207 Practice questions Q3"
-  },
-  {
-   "id": "ts-10",
-   "q": "Which of the following statements about planetary transits are correct?\nI. A transit is seen when Mercury or Venus is at inferior conjunction and also in the Earth-Sun plane.\nII. Mercury transits occur about 12 times a century.\nIII. Venus transits come in pairs 8 years apart, with more than a century between pairs.",
-   "options": [
-    "I only",
-    "II only",
-    "I and II only",
-    "II and III only",
-    "all of the above"
-   ],
-   "answer": 4,
-   "why": "All three are correct statements about transits.",
-   "source": "TimePeriods 9"
-  },
-  {
-   "id": "ts-11",
-   "q": "The clock reads 1:30 pm but the Sun is crossing your meridian. Which kind of time reads noon?",
-   "options": [
-    "mean solar time",
-    "apparent solar time",
-    "standard time",
-    "universal time",
-    "sidereal time"
-   ],
-   "answer": 1,
-   "why": "Apparent solar time is defined by the Sun's real position: noon is when the Sun crosses your meridian, whatever the clock says.",
-   "source": "TimeZones 1-2"
-  },
-  {
-   "id": "ts-12",
-   "q": "Which of the following are reasons the length of the apparent solar day changes through the year?\nI. Earth's orbit is slightly elliptical.\nII. Earth's axis is tilted.\nIII. Earth's rotation speed changes a lot from month to month.",
-   "options": [
-    "I only",
-    "II only",
-    "III only",
-    "I and II only",
-    "I and III only"
-   ],
-   "answer": 3,
-   "why": "The two causes are the slightly elliptical orbit and the axial tilt. Earth's rotation rate is nearly steady.",
-   "source": "TimeZones 3"
+   "source": "TimePeriods 8; Textbook S1.1; ASTR207 Practice questions Q3",
+   "img": {
+    "src": "img/timesky/planets_config.jpg",
+    "slide": "textbook Figure S1.4",
+    "alt": "Top view of the Sun with Earth and planet orbits labelled conjunction, superior conjunction, inferior conjunction, opposition and greatest elongations."
+   }
   },
   {
    "id": "ts-13",
@@ -1375,35 +1571,12 @@
    ],
    "answer": 0,
    "why": "'Behind the Sun' means the clock shows an earlier time: 6:00 - 0:17 = 5:43 p.m.",
-   "source": "TimeZones 4; Textbook Special Topic p. 94"
-  },
-  {
-   "id": "ts-14",
-   "q": "Standard time (clock time) is best described as:",
-   "options": [
-    "the time shown by a sundial at your exact location",
-    "the mean solar time at 0 degrees longitude",
-    "the mean solar time at the centre of your time zone, applied throughout the zone",
-    "the time based on the stars crossing your meridian",
-    "the average length of a solar day, set separately for each town"
-   ],
-   "answer": 2,
-   "why": "Standard time is mean solar time at the zone's centre, shared by everyone in the zone. Sundial time is apparent solar time and 0 degrees longitude is universal time.",
-   "source": "TimeZones 5, 13"
-  },
-  {
-   "id": "ts-15",
-   "q": "The world is theoretically divided into how many time zones, and about how many are actually used because of political and geographic factors?",
-   "options": [
-    "12 in theory; 24 in practice",
-    "24 in theory; 12 in practice",
-    "38 in theory; 24 in practice",
-    "360 in theory; 24 in practice",
-    "24 in theory; 38 in practice"
-   ],
-   "answer": 4,
-   "why": "24 zones (one per hour, 15 degrees of longitude each) in theory; politics and geography raised the number to 38, mostly half-hour offsets.",
-   "source": "TimeZones 6"
+   "source": "TimeZones 4; Textbook Special Topic p. 94",
+   "img": {
+    "src": "img/timesky/eqtime.jpg",
+    "slide": "slide 4",
+    "alt": "Wavy graph called equation of time showing the clock behind the Sun above zero and ahead of the Sun below zero, with the dashed line at Nov. 10."
+   }
   },
   {
    "id": "ts-16",
@@ -1418,34 +1591,6 @@
    "answer": 2,
    "why": "Local noon while UT is 16:00 means you are 4 hours behind Greenwich. Each hour is 15 degrees of longitude: 4 x 15 = 60 degrees, and behind means west.",
    "source": "TimeZones 6-7; ASTR207 Practice questions Q7"
-  },
-  {
-   "id": "ts-17",
-   "q": "A region on UTC-7 uses a clock that is 7 hours behind universal time. What does its clock read when UT is 18:00?",
-   "options": [
-    "11:00",
-    "01:00 the next day",
-    "13:00",
-    "17:00",
-    "18:00"
-   ],
-   "answer": 0,
-   "why": "UTC-7 means subtract 7 hours: 18:00 - 7:00 = 11:00.",
-   "source": "TimeZones 6, 8"
-  },
-  {
-   "id": "ts-18",
-   "q": "Which of the following statements about daylight saving time are correct?\nI. Clocks are moved forward 1 hour in the spring.\nII. It typically starts around the middle of March and ends around the beginning of November.\nIII. Every Canadian province switches clocks on exactly the same dates.",
-   "options": [
-    "I only",
-    "II only",
-    "I and II only",
-    "II and III only",
-    "all of the above"
-   ],
-   "answer": 2,
-   "why": "I and II are correct. III is false: several provinces and territories no longer switch and stay on permanent time.",
-   "source": "TimeZones 9-10"
   },
   {
    "id": "ts-19",
@@ -1488,20 +1633,6 @@
    "answer": 1,
    "why": "4 x 5 h 49 min = 20 h + 196 min = 20 h + 3 h 16 min = 23 h 16 min, which is about 1 day. This is why a leap day every 4 years was introduced.",
    "source": "TimePeriods 7; TimeZones 11"
-  },
-  {
-   "id": "ts-22",
-   "q": "Why did Pope Gregory XIII change the Julian calendar in 1582?",
-   "options": [
-    "The Julian calendar had no leap days at all.",
-    "The Moon's phases no longer matched the months.",
-    "It was off by about 10 days, so he added a rule that skips most century leap years.",
-    "Earth's rotation had slowed by 10 days.",
-    "The Julian calendar was based on the sidereal day."
-   ],
-   "answer": 2,
-   "why": "The Julian year (365.25 days) was slightly too long, so the seasons slid by about 10 days by the 1500s. The Gregorian rule fixed this.",
-   "source": "TimeZones 12"
   },
   {
    "id": "ts-23",
@@ -1585,10 +1716,473 @@
    ],
    "answer": 4,
    "why": "A star is circumpolar if its declination is greater than 90 - 40 = 50 degrees. Dec +60 is above that, so it never sets (its highest point is 70 degrees in the north).",
-   "source": "Textbook S1.2; ASTR207 Practice questions Q9"
+   "source": "Textbook S1.2; ASTR207 Practice questions Q9",
+   "img": {
+    "src": "img/timesky/star_paths40.jpg",
+    "slide": "textbook Figure S1.15b",
+    "alt": "Sky at 40 degrees north showing star tracks for dec = +60, +40, +30, 0, -30 and -60 with the meridian and horizon labelled."
+   }
+  },
+  {
+   "id": "ts-29",
+   "q": "Suppose it is noon on December 21 and you are standing on the equator. Where is the Sun in your sky?",
+   "options": [
+    "At your zenith.",
+    "On your meridian, due North, at an altitude of 66.5 degrees.",
+    "On your meridian, due North, at an altitude of 23.5 degrees.",
+    "On your meridian, due South, at an altitude of 23.5 degrees.",
+    "On your meridian, due South, at an altitude of 66.5 degrees."
+   ],
+   "answer": 4,
+   "why": "On Dec 21 the Sun's declination is -23.5 and the equator is at latitude 0, so the gap is 23.5 degrees. Altitude = 90 - 23.5 = 66.5 degrees, and the Sun lies south of you. The 23.5 degrees is the gap, not the altitude.",
+   "source": "ASTR207 Practice questions Q4; SkyMotion 4",
+   "img": {
+    "src": "img/timesky/sky_equator.jpg",
+    "slide": "slide 4",
+    "alt": "Sky globe for the equator with Sun paths on June 21, Mar 21 and Sept 21, and Dec 21."
+   }
+  },
+  {
+   "id": "ts-30",
+   "q": "About how long is the Sun above the horizon at the equator on December 21?",
+   "options": [
+    "0 hours",
+    "24 hours",
+    "About 12 hours",
+    "About 9 hours",
+    "About 15 hours"
+   ],
+   "answer": 2,
+   "why": "At the equator the horizon cuts every daily circle of the Sun exactly in half, because the celestial equator passes straight overhead. So the Sun is up about 12 hours every day of the year.",
+   "source": "ASTR207 Practice questions Q6; SkyMotion 4"
+  },
+  {
+   "id": "ts-31",
+   "q": "Jupiter's synodic period is 398.9 days = 1.092 years. For a planet farther from the Sun than Earth, orbital period = synodic period x (1 yr) / (synodic period - 1 yr). What is Jupiter's orbital period?",
+   "options": [
+    "0.092 years",
+    "0.52 years",
+    "11.87 years",
+    "1.09 years",
+    "10.87 years"
+   ],
+   "answer": 2,
+   "why": "Orbital period = 1.092 x 1 / (1.092 - 1) = 1.092 / 0.092 = 11.87 years. The planet is farther out than Earth, so its period is longer than 1 year. Forgetting to multiply by 1.092 gives the wrong 10.87.",
+   "source": "Textbook Mathematical Insight S1.1, Example 1"
+  },
+  {
+   "id": "ts-32",
+   "q": "At night you measure the altitude of Polaris and find 17 degrees. What is your latitude?",
+   "options": [
+    "About 73 degrees N, because latitude is 90 minus the altitude.",
+    "About 17 degrees S, because Polaris is in the north.",
+    "About 17 degrees E, because Polaris gives your longitude.",
+    "It cannot be found without a clock set to universal time.",
+    "Between 16 and 18 degrees N, because Polaris is within 1 degree of the north celestial pole, whose altitude equals your latitude."
+   ],
+   "answer": 4,
+   "why": "The altitude of the celestial pole equals your latitude. Polaris is within 1 degree of the pole, so latitude is about 17 plus or minus 1 degree north. The rule '90 minus altitude' is for the celestial equator, not the pole.",
+   "source": "Textbook S1.3 (How can you determine your latitude?)"
+  },
+  {
+   "id": "ts-33",
+   "q": "The star Vega has declination +38 degrees 44 arcminutes. It crosses your meridian at an altitude of 78 degrees 44 arcminutes in your southern sky. What is your latitude?",
+   "options": [
+    "40 degrees N",
+    "50 degrees N",
+    "11 degrees 16 arcminutes N",
+    "50 degrees S",
+    "78 degrees 44 arcminutes N"
+   ],
+   "answer": 1,
+   "why": "Vega is 38 44 north of the celestial equator, so the equator crosses the meridian at 78 44 - 38 44 = 40 degrees in the south. The equator's altitude is 90 - latitude, so latitude = 90 - 40 = 50 N. The 40 is the equator's altitude, not the latitude.",
+   "source": "Textbook S1.3 and Figure S1.23a"
+  },
+  {
+   "id": "ts-34",
+   "q": "A sundial shows apparent solar time 1:00 p.m., and at that moment it is 3:00 p.m. in Greenwich. What is your longitude?",
+   "options": [
+    "30 degrees E",
+    "2 degrees W",
+    "30 degrees W",
+    "45 degrees W",
+    "15 degrees W"
+   ],
+   "answer": 2,
+   "why": "Your time is 2 hours earlier than Greenwich, so you are 2 hours west of Greenwich. Each hour is 15 degrees of longitude: 2 x 15 = 30 degrees W. Earlier time means west.",
+   "source": "Textbook S1.3 and Figure S1.24"
+  },
+  {
+   "id": "ts-35",
+   "q": "Mercury turns once in 58.6 days relative to the stars, in the same direction as its 88-day orbit. A solar day is the time for the Sun to return to the meridian, and 1 / (solar day) = 1 / (sidereal day) - 1 / (orbital period). About how long is one solar day on Mercury (noon to noon)?",
+   "options": [
+    "58.6 days",
+    "88 days",
+    "147 days",
+    "175 days",
+    "30 days"
+   ],
+   "answer": 3,
+   "why": "1/58.6 - 1/88 = 0.01706 - 0.01136 = 0.00570 per day, so the solar day is about 175 days, which is two Mercury years. Earth works the same way: 1/0.99727 - 1/365.25 gives exactly 1 day.",
+   "source": "Textbook S1.1 end-of-chapter Problem 55"
+  },
+  {
+   "id": "ts-36",
+   "q": "It is the March equinox. The Sun is on your meridian at an altitude of 75 degrees in the south, and a clock set to universal time reads 22:00. Where are you?",
+   "options": [
+    "75 degrees N, 150 degrees W",
+    "15 degrees N, 150 degrees W",
+    "15 degrees S, 150 degrees W",
+    "15 degrees N, 150 degrees E",
+    "15 degrees N, 30 degrees W"
+   ],
+   "answer": 1,
+   "why": "On the equinox the Sun's dec is 0, so the celestial equator crosses the meridian at 75 degrees in the south and latitude = 90 - 75 = 15 N. The Sun is on the meridian, so it is local noon while Greenwich reads 22:00: you are 10 hours behind, 10 x 15 = 150 degrees W.",
+   "source": "Textbook S1.3 and end-of-chapter Problem 47"
+  },
+  {
+   "id": "ts-37",
+   "q": "Which of the following statements make sense?\nI. Last night I saw Venus shining brightly on the meridian at midnight.\nII. Mars was at opposition last night, so it crossed my meridian at about midnight.\nIII. The apparent solar time was noon, but the Sun was just setting.",
+   "options": [
+    "I only",
+    "III only",
+    "II only",
+    "I and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "Venus is an inner planet and never gets far from the Sun, so it is never on the meridian at midnight. An outer planet at opposition is opposite the Sun and crosses the meridian at midnight. Apparent noon means the Sun is on the meridian, not setting.",
+   "source": "Textbook S1 end-of-chapter Does it make sense Q23-Q24"
+  },
+  {
+   "id": "ts-38",
+   "q": "Which of the following statements use sky coordinates correctly?\nI. The latitude of the stars in Orion's belt is about 5 degrees N.\nII. Today the Sun is at an altitude of 10 degrees on the celestial sphere.\nIII. The June solstice is 6 hours of right ascension east of the March equinox.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "I and III only",
+    "III only"
+   ],
+   "answer": 4,
+   "why": "Latitude and altitude are not coordinates on the celestial sphere (stars have declination, and altitude belongs to your local sky). The Sun's right ascension is 0 h at the March equinox and 6 h at the June solstice, so III is correct.",
+   "source": "Textbook S1 end-of-chapter Does it make sense Q28, Q29, Q31"
+  },
+  {
+   "id": "ts-39",
+   "q": "It is the March equinox (March 21) and the local solar time is 9:00 p.m. What is the local sidereal time? (Sidereal time is the hour angle of the March equinox, the time since it last crossed the meridian.)",
+   "options": [
+    "21:00",
+    "3:00",
+    "12:00",
+    "9:00",
+    "0:00"
+   ],
+   "answer": 3,
+   "why": "At 9:00 p.m. the Sun crossed the meridian 9 hours ago, so its hour angle is 9 h. On March 21 the Sun sits at the March equinox point, which therefore also has hour angle 9 h. So local sidereal time = 9:00.",
+   "source": "Textbook Mathematical Insight S1.2, Example 1"
   }
  ],
  "games": [
   "match"
- ]
+ ],
+ "order": [
+  {
+   "title": "Rank the time periods",
+   "prompt": "Put these time periods in order from the SHORTEST (bottom) to the LONGEST (top).",
+   "why": "A day is 23 h 56 min (sidereal) or 24 h (solar). A month is 27.3 days (sidereal) or 29.5 days (synodic). A year is about 365.24 days (tropical, seasons) or 365.2564 days (sidereal, about 20 minutes longer).",
+   "bottomLabel": "Shortest",
+   "topLabel": "Longest",
+   "layers": [
+    {
+     "name": "Sidereal day (23 h 56 min)",
+     "color": "#4c1d95"
+    },
+    {
+     "name": "Solar day (24 h)",
+     "color": "#5b21b6"
+    },
+    {
+     "name": "Sidereal month (27.3 days)",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Synodic month (29.5 days)",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Tropical year (about 365.24 days)",
+     "color": "#8b5cf6"
+    },
+    {
+     "name": "Sidereal year (365.2564 days)",
+     "color": "#6366f1"
+    }
+   ]
+  },
+  {
+   "title": "Noon Sun on the March equinox",
+   "prompt": "On the March equinox the Sun's declination is 0. Order these places from where the noon Sun is HIGHEST (bottom) to LOWEST (top).",
+   "why": "Noon altitude = 90 - latitude on an equinox: equator 90, Tropic of Cancer 66.5, 40 N 50, Arctic Circle 23.5, North Pole 0 (the Sun sits on the horizon).",
+   "bottomLabel": "Sun highest",
+   "topLabel": "Sun lowest",
+   "layers": [
+    {
+     "name": "Equator (0)",
+     "color": "#4c1d95"
+    },
+    {
+     "name": "Tropic of Cancer (23.5 N)",
+     "color": "#5b21b6"
+    },
+    {
+     "name": "40 N",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Arctic Circle (66.5 N)",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "North Pole (90 N)",
+     "color": "#8b5cf6"
+    }
+   ]
+  },
+  {
+   "title": "Noon altitude in four steps",
+   "prompt": "Put the steps for finding the Sun's noon altitude in order, FIRST step (bottom) to LAST step (top).",
+   "why": "First get the declination from the date. Then find the gap to your latitude. Then subtract the gap from 90 to get the altitude. Last, the direction follows from whether the declination is north or south of you.",
+   "bottomLabel": "First step",
+   "topLabel": "Last step",
+   "layers": [
+    {
+     "name": "Find the Sun's declination from the date",
+     "color": "#4c1d95"
+    },
+    {
+     "name": "Find the gap between your latitude and that declination",
+     "color": "#5b21b6"
+    },
+    {
+     "name": "Subtract the gap from 90 degrees",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Name the direction: toward the side where the Sun's declination lies",
+     "color": "#7c3aed"
+    }
+   ]
+  },
+  {
+   "title": "Calendars through history",
+   "prompt": "Put these events in order from the EARLIEST (bottom) to the LATEST (top).",
+   "why": "Egypt used a 365-day calendar by 4200 BC. Rome adopted the Julian calendar in 45 BC. Pope Gregory XIII introduced the Gregorian calendar in 1582. England and the American colonies adopted it in 1752, and Russia in 1919.",
+   "bottomLabel": "Earliest",
+   "topLabel": "Latest",
+   "layers": [
+    {
+     "name": "Egyptian 365-day calendar (by 4200 BC)",
+     "color": "#4c1d95"
+    },
+    {
+     "name": "Julian calendar with leap years (45 BC)",
+     "color": "#5b21b6"
+    },
+    {
+     "name": "Gregorian calendar introduced (1582)",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "England and American colonies adopt it (1752)",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Russia adopts it (1919)",
+     "color": "#8b5cf6"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Stars or Sun?",
+   "prompt": "Sort each description: is it measured against the stars (sidereal), or against the Sun and seasons (solar, synodic, tropical)?",
+   "buckets": [
+    "Measured against the stars",
+    "Measured against the Sun or seasons"
+   ],
+   "items": [
+    {
+     "text": "Day of 23 h 56 min 4.07 s",
+     "b": 0
+    },
+    {
+     "text": "Month of 27.3 days",
+     "b": 0
+    },
+    {
+     "text": "Year of 365.2564 days",
+     "b": 0
+    },
+    {
+     "text": "The Moon makes one full 360-degree orbit of Earth",
+     "b": 0
+    },
+    {
+     "text": "Earth makes one orbit of the Sun compared with the stars",
+     "b": 0
+    },
+    {
+     "text": "A star returns to your meridian",
+     "b": 0
+    },
+    {
+     "text": "Day of 24 hours",
+     "b": 1
+    },
+    {
+     "text": "Month of 29.5 days",
+     "b": 1
+    },
+    {
+     "text": "Year of about 365.24 days",
+     "b": 1
+    },
+    {
+     "text": "New moon to the next new moon",
+     "b": 1
+    },
+    {
+     "text": "March equinox to the next March equinox",
+     "b": 1
+    },
+    {
+     "text": "The Sun returns to your meridian",
+     "b": 1
+    }
+   ],
+   "why": "Sidereal periods are measured against the distant stars. The solar day, the synodic month (phases) and the tropical year (seasons) are tied to the Sun, so each is slightly longer or shorter than its sidereal partner."
+  },
+  {
+   "title": "Zones of the Earth",
+   "prompt": "Sort each latitude by what the Sun does there during the year.",
+   "buckets": [
+    "Sun can be at the zenith",
+    "Rises and sets daily; never overhead",
+    "Has a 24-hour Sun day (or night)"
+   ],
+   "items": [
+    {
+     "text": "Equator (0)",
+     "b": 0
+    },
+    {
+     "text": "Tropic of Cancer (23.5 N)",
+     "b": 0
+    },
+    {
+     "text": "15 degrees N",
+     "b": 0
+    },
+    {
+     "text": "Tropic of Capricorn (23.5 S)",
+     "b": 0
+    },
+    {
+     "text": "40 N",
+     "b": 1
+    },
+    {
+     "text": "30 S",
+     "b": 1
+    },
+    {
+     "text": "60 S",
+     "b": 1
+    },
+    {
+     "text": "Arctic Circle (66.5 N)",
+     "b": 2
+    },
+    {
+     "text": "Antarctic Circle (66.5 S)",
+     "b": 2
+    },
+    {
+     "text": "North Pole",
+     "b": 2
+    },
+    {
+     "text": "South Pole",
+     "b": 2
+    },
+    {
+     "text": "80 S",
+     "b": 2
+    }
+   ],
+   "why": "The Sun reaches the zenith only between 23.5 S and 23.5 N, where latitude can equal its declination. Between 23.5 and 66.5 degrees it never reaches the zenith but still rises and sets every day. At 66.5 degrees and beyond, at least one day has 24 hours of Sun (and another 24 hours without it)."
+  },
+  {
+   "title": "Latitude or longitude on the sky",
+   "prompt": "Declination works like latitude and right ascension works like longitude. Sort each fact into the right coordinate.",
+   "buckets": [
+    "Declination (like latitude)",
+    "Right ascension (like longitude)"
+   ],
+   "items": [
+    {
+     "text": "Measured in degrees north (+) or south (-)",
+     "b": 0
+    },
+    {
+     "text": "Equals 0 along the celestial equator",
+     "b": 0
+    },
+    {
+     "text": "The north celestial pole is +90",
+     "b": 0
+    },
+    {
+     "text": "Vega: +38 degrees 44 arcminutes",
+     "b": 0
+    },
+    {
+     "text": "The Sun's value stays between +23.5 and -23.5",
+     "b": 0
+    },
+    {
+     "text": "Changes slowly near the solstices and fast near the equinoxes",
+     "b": 0
+    },
+    {
+     "text": "Measured in hours, minutes and seconds",
+     "b": 1
+    },
+    {
+     "text": "Measured eastward from the March equinox",
+     "b": 1
+    },
+    {
+     "text": "24 hours make a full 360-degree circle",
+     "b": 1
+    },
+    {
+     "text": "Vega: 18 h 35 min",
+     "b": 1
+    },
+    {
+     "text": "The Sun's value is 6 h at the June solstice",
+     "b": 1
+    },
+    {
+     "text": "Tells how long after the March equinox an object crosses your meridian",
+     "b": 1
+    }
+   ],
+   "why": "Declination is the north-south angle from the celestial equator. Right ascension is the east-west position measured in hours from the March equinox, 15 degrees per hour."
+  }
+ ],
+ "calc": []
 }

@@ -1,0 +1,1301 @@
+{
+ "title": "ASTR 207 practice exams",
+ "tests": [
+  {
+   "id": "t1",
+   "title": "Practice Test 1",
+   "blurb": "24 questions on the scale and motion of the universe, the sky and the Moon, and early astronomy.",
+   "questions": [
+    {
+     "id": "x1-1",
+     "q": "What is the definition of the Solar System?",
+     "options": [
+      "The Sun and the 8 major planets, including Earth.",
+      "The collection of astronomical objects that are gravitationally bound by the Sun.",
+      "The collection of astronomical objects that receive light and heat from the Sun.",
+      "The Sun and the 8 major planets, along with Pluto and various comets.",
+      "The volume of objects that extends out to 30 AU from the Sun."
+     ],
+     "answer": 1,
+     "why": "The Solar System is everything held in orbit around the Sun by its gravity: planets, dwarf planets, moons, asteroids, comets and dust. A and D list only some of those objects. C is wrong because sunlight reaches far beyond the Solar System. E is wrong because 30 AU is only about the orbit of Neptune, and the Sun's gravity holds objects (such as distant comets) much farther out.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q1; key ASTR 207 practice Test- Explained.pdf Q1; verified against lecture Ch1 slides (Solar System = Sun + planets, moons, asteroids, comets)",
+     "derived": false
+    },
+    {
+     "id": "x1-2",
+     "q": "What is the scientific distinction between a star and a planet?",
+     "options": [
+      "Planets are habitable in theory, whereas stars are not.",
+      "Planets orbit stars, whereas stars do not orbit anything.",
+      "Planets are not massive enough to undergo nuclear fusion, whereas stars are.",
+      "Planets do not emit radiation, whereas stars do.",
+      "Planets are solid in composition, whereas stars are made of gas."
+     ],
+     "answer": 2,
+     "why": "A star is massive enough that its core is hot and dense enough for sustained nuclear fusion. A planet is not. B fails because many stars orbit other stars (and the Sun orbits the galaxy). D fails because every warm object emits radiation. E fails because gas giants such as Jupiter are planets made mostly of gas.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q2; key ASTR 207 practice Test- Explained.pdf Q2; verified: textbook Ch1 (star vs planet); key lists C",
+     "derived": false
+    },
+    {
+     "id": "x1-3",
+     "q": "What is the Local Group?",
+     "options": [
+      "The group of stars closest to our Sun, which includes Proxima Centauri",
+      "The galaxy group containing the Milky Way and M31",
+      "The galaxy cluster that contains the Milky Way and numerous other galaxies",
+      "The system of bodies that includes the Sun and all objects that orbit it",
+      "The location in the Milky Way in which our Solar System resides"
+     ],
+     "answer": 1,
+     "why": "The Local Group is the small collection of galaxies (dozens, mostly dwarfs) to which the Milky Way belongs. Its two largest members are the Milky Way and the Andromeda Galaxy (M31). A describes the nearby stars, D describes the Solar System, E describes our spot in the Milky Way. C is not the best choice because a collection of only a few dozen galaxies is called a group; the larger collections are called clusters.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q3; key ASTR 207 practice Test- Explained.pdf Q3; verified: Ch1 slides 'Local Group' (80+ galaxies; group vs cluster); key B",
+     "derived": false
+    },
+    {
+     "id": "x1-4",
+     "q": "Which of the following correctly describes the stellar life cycle?",
+     "options": [
+      "Gas clouds collapse under nuclear fusion to form stars, chemical processes in stars synthesize elements, and these elements are released when the star expands and becomes a gas cloud once again.",
+      "Gas clouds collapse under gravity to form stars, nuclear fusion in stars synthesizes elements which are used to form planets around these stars, and the whole system is recycled back into the nebula when the star explodes at the end of its lifetime.",
+      "Gas clouds collapse under gravity to form stars, nuclear fusion in stars generates light and heat, and this energy increases the temperature of nearby other gas clouds, causing them to collapse.",
+      "Gas clouds collapse under gravity to form stars, nuclear fusion in stars synthesizes elements, and these elements are released back into the nebula when the star dies, possibly via a supernova explosion.",
+      "Galaxies collapse under gravity to form stars, nuclear fusion in stars synthesizes elements, and these elements are released back into the universe when the star explodes at the end of its lifetime."
+     ],
+     "answer": 3,
+     "why": "Step 1: gravity (not fusion) collapses a gas cloud into a star. Step 2: fusion inside the star makes heavier elements and releases energy. Step 3: when the star dies, it returns those elements to the gas between the stars, sometimes in a supernova. A has fusion causing the collapse. B says the planets and the whole system are recycled, but planets are not destroyed when their star dies. C ends with heating of other clouds instead of recycling elements. E says galaxies collapse to form stars, which is wrong.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q4; key ASTR 207 practice Test- Explained.pdf Q4; verified: Ch1 slides 'Stellar Lives and Galactic Recycling'; key D",
+     "derived": false
+    },
+    {
+     "id": "x1-5",
+     "q": "Suppose two galaxies formed at around the same time; one is 500 million light-years away while the other is 10 billion light-years away. Which of the following is true regarding our observing these galaxies?",
+     "options": [
+      "The first galaxy will appear older, as its light takes much longer to reach us.",
+      "The first galaxy will appear younger, as its light reaches us much more quickly.",
+      "The second galaxy will appear older, as its light reaches us much more quickly.",
+      "The second galaxy will appear younger, as its light takes much longer to reach us.",
+      "Since the galaxies formed at around the same time, they will appear the same age provided the observations are done correctly."
+     ],
+     "answer": 3,
+     "why": "Looking far away means looking back in time. Light from the galaxy 10 billion light-years away left it about 10 billion years ago, so we see it as it was when it was very young. Light from the nearer galaxy left only 500 million years ago, so we see it much closer to its present, older state. The more distant galaxy therefore appears younger.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q5; key ASTR 207 practice Test- Explained.pdf Q5; verified: Ch1 slides 'Looking Back in Time'; key D",
+     "derived": false
+    },
+    {
+     "id": "x1-6",
+     "q": "Which of the following is NOT a motion we observe in the universe?",
+     "options": [
+      "The Solar System orbits the Milky Way galaxy",
+      "The Sun orbits around the center of the local stellar neighbourhood",
+      "The Milky Way galaxy orbits the center of the Local Group",
+      "The Earth spins daily and orbits the Sun once per year",
+      "Galaxies generally move away from each other, especially at larger separation distances"
+     ],
+     "answer": 1,
+     "why": "The Sun and the other stars of our local neighbourhood move in essentially random directions relative to one another (about 70,000 km/h). They do not orbit a common centre of the neighbourhood. The other four are observed motions: the Solar System circles the Milky Way once per 230 million years, the Milky Way moves within the Local Group (toward Andromeda), Earth rotates and orbits, and distant galaxies recede with speed that grows with distance.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q6; key ASTR 207 practice Test- Explained.pdf Q6; verified: Ch1 slides 'Spaceship Earth' / textbook Fig 1.18 (local-neighbourhood motion is random); key B. Option C is loosely worded (textbook says galaxies in the Local Group move relative to each other and the Milky Way approaches Andromeda).",
+     "derived": false
+    },
+    {
+     "id": "x1-7",
+     "q": "If we were to recreate Hubble's investigation of the expansion of the universe, and plot the velocity of galaxies as a function of their distance, what relationship would we see in the data?",
+     "options": [
+      "An exponential",
+      "A quadratic",
+      "A line with a positive slope",
+      "A line with a negative slope",
+      "An inverse relationship"
+     ],
+     "answer": 2,
+     "why": "Hubble found that the farther away a galaxy is, the faster it recedes, and the speed is proportional to the distance (v = H0 x d). A graph of speed against distance is therefore a straight line with a positive slope that passes through the origin.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q7; key ASTR 207 practice Test- Explained.pdf Q7; verified: Ch1 slides (Hubble: more distant galaxies move away faster); key C",
+     "derived": false
+    },
+    {
+     "id": "x1-8",
+     "q": "Why don't the patterns of stars we see in the night sky change from night to night?",
+     "options": [
+      "The stars are fixed on the celestial sphere and do not move in space.",
+      "Over the course of the year, the stars move from West to East, just like the Sun. But they all move together, so we don't notice their motion.",
+      "The patterns can change when a new star is born or an old star dies, but existing stars don't change their positions over time as they are not gravitationally affected by nearby objects.",
+      "The stars do in fact move, but they are so far away that their motion is not noticeable from night to night.",
+      "The stars we see in our night sky do in fact move, but since they are all located in the same area of the Milky Way as our Sun, they move together and we don't see their relative motion."
+     ],
+     "answer": 3,
+     "why": "Stars really do move (typically about 70,000 km/h relative to the Sun), but they are so far away that this changes their apparent positions by an amount far too small to see in a lifetime; constellations shift noticeably only over about 10,000 years or more. The celestial sphere is only a useful illusion, so A is wrong, and the stars do not move together as one block (B, E).",
+     "source": "admin-only: PracticeTest1_questions.pdf Q8; key ASTR 207 practice Test- Explained.pdf Q8; verified: Ch1 slides ('constellations only noticeably shift after ~10,000+ years'); key D",
+     "derived": false
+    },
+    {
+     "id": "x1-9",
+     "q": "Which of the following statements about how we perceive stars in the night sky is TRUE?",
+     "options": [
+      "Stars rise in the East and set in the West in the northern hemisphere, and vice versa in the southern hemisphere.",
+      "Polaris can be seen at night independent of the observer's latitude, which made it useful for navigation in ancient times.",
+      "If you are at the North or South poles, there are no circumpolar stars.",
+      "The constellations you see at night depend on both your latitude and longitude on Earth.",
+      "Only about half of the stars in the night sky are visible on a given night due to the Earth blocking your view of the other half."
+     ],
+     "answer": 4,
+     "why": "At any moment the ground blocks half of the celestial sphere, so you can see only about half of the sky. A is false: stars rise in the east and set in the west in both hemispheres. B is false: Polaris is below the horizon for anyone in the southern hemisphere. C is false: at a pole every visible star is circumpolar. D is false: the sky depends on latitude (and time of year), not on longitude.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q9; key ASTR 207 practice Test- Explained.pdf Q9; verified: Ch2 slides (local sky shows half the celestial sphere; sky depends on latitude only); key E. E is the best of the five rather than exact (over a whole night a bit more than half can be seen).",
+     "derived": false
+    },
+    {
+     "id": "x1-10",
+     "q": "What happens to the constellations in your sky over the course of six months?",
+     "options": [
+      "The times that certain constellations rise and set will change, but the same constellations will still be visible.",
+      "Some of the constellations that appear in your night sky will change, as the Sun is at the opposite end of the ecliptic.",
+      "The northern hemisphere constellations will be replaced with those of the southern hemisphere, or vice versa.",
+      "Constellations that were circumpolar will no longer be so six months later.",
+      "You won't see any major changes to the constellations in six months."
+     ],
+     "answer": 1,
+     "why": "Over a year the Sun moves around the ecliptic, so after six months it is at the opposite side of the sky. The part of the sky that is opposite the Sun (the one we see at night) is therefore a different part, and the night constellations change. C is false because your latitude fixes which hemisphere you can see, and D is false because circumpolar stars depend only on latitude.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q10; key ASTR 207 practice Test- Explained.pdf Q10; verified: Ch2 slides (constellations depend on latitude and time of year); key B",
+     "derived": false
+    },
+    {
+     "id": "x1-11",
+     "q": "Suppose we observe a star at an altitude of 80 degrees. How many arcminutes would that star be from our Zenith?",
+     "options": [
+      "10",
+      "600",
+      "800",
+      "3600",
+      "4800"
+     ],
+     "answer": 1,
+     "why": "The zenith is at altitude 90 degrees, so the angle from the zenith is 90 - 80 = 10 degrees. Each degree has 60 arcminutes, so 10 x 60 = 600 arcminutes. (A is the answer in degrees; C and E come from using the altitude itself, 80 x 60 = 4800.)",
+     "source": "admin-only: PracticeTest1_questions.pdf Q11; key ASTR 207 practice Test- Explained.pdf Q11; verified: Ch2 slides (degree = 60 arcminutes); key B",
+     "derived": false
+    },
+    {
+     "id": "x1-12",
+     "q": "Which of the following statements about the ecliptic is FALSE?",
+     "options": [
+      "The zodiac constellations lie along the ecliptic, along with one other constellation.",
+      "It represents the Sun's daily path through the sky.",
+      "It is an old concept, originating in ancient Babylonian astronomy.",
+      "It is oriented at a 23.5 degree angle relative to the celestial equator.",
+      "The ecliptic is not a real path taken by the Sun in physical space, but rather represents its apparent motion in our sky."
+     ],
+     "answer": 1,
+     "why": "The ecliptic is the Sun's apparent path against the background stars over a whole year, not its daily path. The daily east-to-west motion is caused by Earth's rotation. The other statements are true: the 12 traditional zodiac constellations plus Ophiuchus lie on it, it tilts 23.5 degrees to the celestial equator (the tilt of Earth's axis), and it only shows the Sun's apparent motion.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q12; key ASTR 207 practice Test- Explained.pdf Q12; verified: Ch2 slides ('Ecliptic: the Sun's apparent annual path'); textbook Ch2 (13th constellation Ophiuchus); key B",
+     "derived": false
+    },
+    {
+     "id": "x1-13",
+     "q": "What is the galactic plane?",
+     "options": [
+      "An ultra-fast aircraft built by Elon Musk for interstellar travel.",
+      "The narrow section of the Milky Way which is visible from our vantage point on Earth.",
+      "The plane of the Local Group containing both our own galaxy and Andromeda.",
+      "The plane of the Milky Way galaxy, which is oriented at a 63 degree angle relative to the celestial equator.",
+      "The plane containing the Sun and the Earth, which is oriented at a 60 degree angle relative to the Milky Way."
+     ],
+     "answer": 3,
+     "why": "The galactic plane is the flat disk of the Milky Way. The band of light we call the Milky Way in the night sky is our edge-on view of this disk from inside it. The disk is tilted about 63 degrees to the celestial equator. E describes the ecliptic plane instead.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q13; key ASTR 207 practice Test- Explained.pdf Q13; key D; galactic plane = Milky Way disk from textbook/slides Ch2; the 63 degree tilt is not in the course text (outside source: about 62.9 degrees is the standard value)",
+     "derived": false
+    },
+    {
+     "id": "x1-14",
+     "q": "Which of the following is NOT a reason for the seasons?",
+     "options": [
+      "Sunlight is more concentrated during the summer and less concentrated during the winter.",
+      "Sunlight has to travel through less atmosphere in the summer and more atmosphere in the winter.",
+      "The Earth is closer to the Sun in the summer, and farther from the Sun in the winter.",
+      "The Earth receives more hours of sunlight in the summer, and fewer hours of sunlight in the winter.",
+      "Both A) and B)."
+     ],
+     "answer": 2,
+     "why": "Seasons come from Earth's 23.5 degree axis tilt: in summer the Sun is higher, so its light is more concentrated (A), passes through less atmosphere (B) and shines for more hours (D). Distance is not the cause (C): Earth is actually closest to the Sun in early January, in northern winter, and the two hemispheres have opposite seasons at the same time.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q14; key ASTR 207 practice Test- Explained.pdf Q14; verified: Ch2 textbook (seasons caused by axis tilt, not distance); key C",
+     "derived": false
+    },
+    {
+     "id": "x1-15",
+     "q": "Which of the following days of the year has the fewest hours of sunlight?",
+     "options": [
+      "March 20",
+      "June 20",
+      "September 22",
+      "December 21",
+      "Either B) or D)."
+     ],
+     "answer": 4,
+     "why": "The shortest day is the winter solstice of each hemisphere. In the northern hemisphere that is December 21; in the southern hemisphere it is June 20. Because the question does not name a hemisphere, either date can be right, so E is correct. The equinoxes (March 20, September 22) have about 12 hours of daylight everywhere.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q15; key ASTR 207 practice Test- Explained.pdf Q15; verified: Ch2/S1 slides (solstices); key E (considers both hemispheres)",
+     "derived": false
+    },
+    {
+     "id": "x1-16",
+     "q": "At what time would a waxing crescent moon rise?",
+     "options": [
+      "9:00 am",
+      "6:00 pm",
+      "3:00 am",
+      "12:00 am",
+      "6:00 am"
+     ],
+     "answer": 0,
+     "why": "A new moon rises with the Sun (about 6 am) and a first quarter Moon rises about noon. A waxing crescent lies between them, so it rises in the morning, about 9 am. It then is high in the afternoon sky and sets around 9 pm. Moon rise time gets about 50 minutes later each day.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q16; key ASTR 207 practice Test- Explained.pdf Q16; key A; re-derived with the Ch2 rise/set rule (the key's phase table is shifted by one row, but its answer is right)",
+     "derived": false
+    },
+    {
+     "id": "x1-17",
+     "q": "If the moon is setting at midnight, what is its phase?",
+     "options": [
+      "Full",
+      "First quarter",
+      "New moon",
+      "Waning gibbous",
+      "Waxing crescent"
+     ],
+     "answer": 1,
+     "why": "A first quarter Moon rises about noon, is highest around 6 pm and sets about midnight. A full Moon sets at sunrise, a new Moon sets at sunset, a waning gibbous sets in the morning, and a waxing crescent sets around 9 pm.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q17; key ASTR 207 practice Test- Explained.pdf Q17; verified: Ch2 moon-phase rise/set rule; key B",
+     "derived": false
+    },
+    {
+     "id": "x1-18",
+     "q": "Where is a third quarter moon in your sky if it is 9:00 pm?",
+     "options": [
+      "In your western sky",
+      "On your meridian",
+      "Below the horizon",
+      "Setting on your western horizon",
+      "Rising on your eastern horizon"
+     ],
+     "answer": 2,
+     "why": "A third quarter Moon rises about midnight, is highest about 6 am and sets about noon. At 9 pm it has not risen yet, so it is still below the horizon (about 3 hours before moonrise).",
+     "source": "admin-only: PracticeTest1_questions.pdf Q18; key ASTR 207 practice Test- Explained.pdf Q18; verified: Ch2 moon-phase rise/set rule; key C",
+     "derived": false
+    },
+    {
+     "id": "x1-19",
+     "q": "Suppose it is midnight on the Moon. If the Earth appears in your western sky, what is Earth's phase?",
+     "options": [
+      "Waning crescent.",
+      "Full.",
+      "First quarter.",
+      "Waxing gibbous.",
+      "Waning gibbous."
+     ],
+     "answer": 3,
+     "why": "Use the same geometry as the Moon seen from Earth. At midnight a full Moon is on the meridian (the Sun is opposite). A Moon in the western sky at midnight crossed the meridian earlier in the evening, which happens between first quarter (about 6 pm) and full (midnight): that is a waxing gibbous phase. By the same geometry, Earth seen from the Moon at lunar midnight, low in the west, is a waxing gibbous Earth.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q19; key ASTR 207 practice Test- Explained.pdf Q19; key D; re-derived with the Moon-transit-time argument (waxing gibbous transits between about 6 pm and midnight)",
+     "derived": false
+    },
+    {
+     "id": "x1-20",
+     "q": "Approximately how many lunar eclipses will occur in a 10-year period?",
+     "options": [
+      "about 10",
+      "about 20",
+      "about 5",
+      "About 50",
+      "About 36"
+     ],
+     "answer": 1,
+     "why": "Eclipses can happen only in the two eclipse seasons each year, about 173 days apart, when the Moon's orbit lines up with the Sun and Earth. Each season usually brings at least one lunar eclipse (any type, including penumbral), so there are about 2 per year, or about 20 in 10 years. Listed eclipses for 2023 to 2027 show 11 in about 4.3 years, which agrees.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q20; key ASTR 207 practice Test- Explained.pdf Q20; verified: textbook Ch2 (eclipse seasons ~173 days apart; Table 2.1 lists 11 lunar eclipses May 2023 - Aug 2027); key B",
+     "derived": false
+    },
+    {
+     "id": "x1-21",
+     "q": "What was NOT a reason that ancients observed the heavens?",
+     "options": [
+      "To enjoy their beauty",
+      "To create calendars and coordinate time systems",
+      "To monitor the progression of time and the seasons",
+      "To collect data for constructing physical models of stars and galaxies",
+      "To derive horoscopic information"
+     ],
+     "answer": 3,
+     "why": "Ancient people watched the sky for beauty, calendars, timekeeping, seasons and astrology. They did not know that stars are distant suns or that galaxies exist, so they were not building physical models of stars and galaxies.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q21; key ASTR 207 practice Test- Explained.pdf Q21; key D; ancient astronomy (textbook Ch3 intro, Ch2)",
+     "derived": false
+    },
+    {
+     "id": "x1-22",
+     "q": "What important advance did the Greeks make in the history of astronomy?",
+     "options": [
+      "They were the first civilization to adopt the heliocentric model of the universe.",
+      "They began testing their ideas with experiments.",
+      "They collected much more data than previous civilizations due to better instrumentation and technology.",
+      "They were the first civilization to understand and predict eclipses and the solstices.",
+      "They created abstract models of the universe using their substantial knowledge of mathematics and geometry."
+     ],
+     "answer": 4,
+     "why": "The Greeks' key advance was to explain the sky with abstract geometric models, built on mathematics. Most Greeks favoured an Earth-centred model, so A is wrong. Experiments (B) came later, and earlier cultures such as the Babylonians already predicted eclipses and solstices (D).",
+     "source": "admin-only: PracticeTest1_questions.pdf Q22; key ASTR 207 practice Test- Explained.pdf Q22; key E; textbook Ch3 (Greek geometric models)",
+     "derived": false
+    },
+    {
+     "id": "x1-23",
+     "q": "Which of the following statements does NOT follow from Kepler's first law?",
+     "options": [
+      "The Earth orbits the Sun.",
+      "Comets and asteroids need not orbit the Sun in elliptical paths.",
+      "The Sun is located at one of the ellipse foci, while the other focus need not be occupied by any other body.",
+      "Venus, Mars, and the other planets orbit the Sun.",
+      "The orbits of planets are elliptical with the Sun at the center of the ellipse."
+     ],
+     "answer": 4,
+     "why": "Kepler's first law says each planet moves on an ellipse with the Sun at one focus, not at the centre. Statement E contradicts this, so it does not follow. A, C and D do follow from it. B does not conflict with the law, which is stated for planets.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q23; key ASTR 207 practice Test- Explained.pdf Q23; key E; textbook Ch3 (Kepler's first law). Note B is also not a consequence of the law, but only E contradicts it.",
+     "derived": false
+    },
+    {
+     "id": "x1-24",
+     "q": "Why was Galileo's discovery of Jupiter's moons important?",
+     "options": [
+      "It implied that the heavens contained many more unknown bodies.",
+      "It proved that the planets revolved around the Sun, not the Earth.",
+      "It showed that a planet could have more than one moon.",
+      "It proved that not every celestial body orbited the Earth.",
+      "It proved that the Tycho's ideas about distances in space were false."
+     ],
+     "answer": 3,
+     "why": "Galileo saw four moons clearly orbiting Jupiter. This showed that not everything orbits the Earth, which was a direct blow to the Earth-centred model. It did not by itself prove that the planets orbit the Sun (that needed other evidence, such as the phases of Venus), so B is too strong.",
+     "source": "admin-only: PracticeTest1_questions.pdf Q24; key ASTR 207 practice Test- Explained.pdf Q24; key D; textbook Ch3 (Galileo)",
+     "derived": false
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "title": "Practice Test 2",
+   "blurb": "24 questions on time and the Sun's path, motion, gravity and tides, and light and matter.",
+   "questions": [
+    {
+     "id": "x2-1",
+     "q": "The Sun is crossing your meridian right now. When will it cross the meridian next?",
+     "options": [
+      "very close to 24 hours from now",
+      "exactly 24 hours from now",
+      "exactly 23 hours, 56 minutes from now",
+      "very close to 23 hours, 56 minutes from now",
+      "very close to 24 hours and 4 minutes from now"
+     ],
+     "answer": 0,
+     "why": "The time between two meridian crossings of the Sun is a solar day, 24 hours on average. It is only very close to 24 hours, not exactly, because the true length of the solar day changes slightly through the year (Earth's orbit is elliptical and its axis is tilted). 23 h 56 min is the sidereal day, which applies to stars, not the Sun. The solar day is 4 minutes longer than the sidereal day; it is not 24 h plus 4 min.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q1; key Practice_Test_2_Explained.pdf Q1; verified: S1 slides (solar day, mean solar time, analemma); key A",
+     "derived": false
+    },
+    {
+     "id": "x2-2",
+     "q": "What is one consequence of the tropical year being shorter than the sidereal year?",
+     "options": [
+      "The time between one year's March equinox and the next increases slightly except on leap years, when it decreases.",
+      "The positions of the background stars will be slightly different from one year's March equinox to the next.",
+      "Our calendar has to include leap days in order to account for this discrepancy.",
+      "We have to add about 20 minutes per year to the calendar in order to bring the seasons into alignment.",
+      "We are forced to make a calendar day shorter in order for the Sun to reappear on our meridian at noon consistently from one year to the next."
+     ],
+     "answer": 1,
+     "why": "The tropical year (March equinox to March equinox, seasons) is about 20 minutes shorter than the sidereal year (one orbit relative to the stars) because of precession of Earth's axis. So each March equinox arrives before Earth has completed a full orbit relative to the stars, and the stars behind the Sun are slightly shifted from year to year. Leap days (C) come from the year not being a whole number of days, not from this 20 minute gap, and the calendar already follows the tropical year (D).",
+     "source": "admin-only: PracticeTest2_questions.pdf Q2; key Practice_Test_2_Explained.pdf Q2; verified: S1 slides (tropical year about 20 min shorter due to precession); key B",
+     "derived": false
+    },
+    {
+     "id": "x2-3",
+     "q": "What is the term for the orbital configuration where the planet Mercury is directly between the Sun and the Earth?",
+     "options": [
+      "Superior conjunction",
+      "Conjunction",
+      "Inferior conjunction",
+      "Opposition",
+      "Planetary eclipse"
+     ],
+     "answer": 2,
+     "why": "When an inner planet (Mercury or Venus) lines up between Earth and the Sun it is at inferior conjunction. When it lines up on the far side of the Sun it is at superior conjunction. Opposition applies only to outer planets. If Mercury also crosses the Sun's disk, the event is called a transit.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q3; key Practice_Test_2_Explained.pdf Q3; verified: S1 slides (planetary configurations, transits at inferior conjunction); key C",
+     "derived": false
+    },
+    {
+     "id": "x2-4",
+     "q": "Suppose it is noon on Sept 21 and you are on the Tropic of Capricorn. Where is the Sun in your sky?",
+     "options": [
+      "On your meridian, due North, at an altitude of 23.5 degrees.",
+      "On your meridian, due South, at an altitude of 23.5 degrees.",
+      "On your meridian, due North, at an altitude of 66.5 degrees.",
+      "On your meridian, due South, at an altitude of 66.5 degrees.",
+      "On your zenith."
+     ],
+     "answer": 2,
+     "why": "Step 1: September 21 is near the equinox, so the Sun's declination is about 0 degrees. Step 2: the Tropic of Capricorn is at latitude 23.5 degrees S. Step 3: the Sun is 23.5 degrees away from your latitude (north of you), so at noon its altitude is 90 - 23.5 = 66.5 degrees. Step 4: since the Sun is north of your latitude, it is due north on the meridian. The Sun is at your zenith on the Tropic of Capricorn only around December 21.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q4; key Practice_Test_2_Explained.pdf Q4; verified: S1 slides (Sun at special latitudes); key C",
+     "derived": false
+    },
+    {
+     "id": "x2-5",
+     "q": "Suppose it is noon on March 20 and the Sun has an altitude of 23.5 degrees in your northern sky. Where are you?",
+     "options": [
+      "The South Pole",
+      "The Antarctic Circle",
+      "The Tropic of Cancer",
+      "The equator",
+      "The Arctic Circle"
+     ],
+     "answer": 1,
+     "why": "Step 1: March 20 is an equinox, so the Sun's declination is 0 degrees. Step 2: noon altitude = 90 - (angular distance from the Sun's latitude), so 23.5 = 90 - d gives d = 66.5 degrees. Step 3: the Sun is in your north, so you are south of the equator: latitude 66.5 degrees S, the Antarctic Circle. At the Arctic Circle (66.5 degrees N) the noon Sun would also be at 23.5 degrees but in the south.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q5; key Practice_Test_2_Explained.pdf Q5; verified: S1 slides; key B",
+     "derived": false
+    },
+    {
+     "id": "x2-6",
+     "q": "Suppose you are at the South Pole and the Sun remains below your horizon the whole day. What is the date?",
+     "options": [
+      "Sept 22",
+      "Dec 21",
+      "March 20",
+      "June 21",
+      "There is no single date for this occurrence at the South Pole."
+     ],
+     "answer": 4,
+     "why": "At the South Pole the Sun's altitude equals minus its declination, all day long. The Sun stays below the horizon whenever its declination is positive, which is every day from about March 20 to September 22, about six months. June 21 is one of those dates (the darkest), but not the only one, so there is no single date.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q6; key Practice_Test_2_Explained.pdf Q6; verified: S1 slides (Sun at the poles: circles the horizon at equinoxes, altitude +/-23.5 at solstices); key E",
+     "derived": false
+    },
+    {
+     "id": "x2-7",
+     "q": "Suppose a car with a smaller mass m and a truck with a larger mass M are driving around a circular roundabout at the same speed. Which of the following statements is TRUE?",
+     "options": [
+      "The acceleration of the car is greater than the acceleration of the truck, since it has less mass.",
+      "The acceleration of the truck is greater than the acceleration of the car, since it has more mass.",
+      "The force on the car is greater than the force on the truck, since it has less mass.",
+      "The force on the truck is greater than the force on the car, since it has more mass.",
+      "Neither the car nor the truck accelerate since they are moving at a constant speed."
+     ],
+     "answer": 3,
+     "why": "Moving in a circle means the direction of the velocity keeps changing, so both vehicles accelerate toward the centre (E is wrong). With the same speed on the same circle the acceleration is the same for both (A and B are wrong). From F = ma with equal a, the truck, which has more mass, needs the larger force.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q7; key Practice_Test_2_Explained.pdf Q7; verified: Ch4 slides (Newton's second law, acceleration = change in velocity); key D",
+     "derived": false
+    },
+    {
+     "id": "x2-8",
+     "q": "If an upward force is applied to a rope holding an elevator car, which of the following will occur?",
+     "options": [
+      "The elevator will accelerate upwards, and the occupants will experience an increase in their true weight as a result.",
+      "The elevator will accelerate upwards only if the upward force is greater than the downward weight of the car and its occupants; if so, the occupants will experience an increase in their true weight.",
+      "The elevator will accelerate upwards only if the upward force is greater than the downward weight of the car and its occupants; if so, the occupants will not experience an increase in their true weight, only their apparent weight.",
+      "The elevator will accelerate upwards, and the occupants will not experience an increase in their true weight, only their apparent weight.",
+      "The elevator will accelerate upwards only if the upward force is greater than the downward weight of the car and its occupants; if so, the occupants will experience an increase in their true and apparent weights, but not their masses."
+     ],
+     "answer": 2,
+     "why": "Acceleration needs a net force: the rope's pull must be greater than the weight, otherwise the elevator stays at rest or moves at constant velocity. True weight is the force of gravity on you (mg) and does not change. Apparent weight is what a scale reads (the floor pushing on you) and does increase while accelerating upward.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q8; key Practice_Test_2_Explained.pdf Q8; verified: Ch4 slides (weight vs apparent weight, Newton's second law); key C",
+     "derived": false
+    },
+    {
+     "id": "x2-9",
+     "q": "Consider Newton's second law, F=ma. If a planet is travelling in an elliptical orbit, what does that imply about the force acting on the planet?",
+     "options": [
+      "The constant acceleration of the planet, as evidenced by its orbital path, arises from the constant gravitational force acting on it.",
+      "Newton's second law does not apply to orbits - we require Kepler's laws for explaining orbital mechanics",
+      "The varying acceleration of the planet, as evidenced by its orbital path, arises from a varying gravitational force acting on it",
+      "The mass and the acceleration of the planet vary over the course of the orbit in order to maintain a constant gravitational force",
+      "There is no force acting on the planet - that is why it doesn't slow down or speed up in its orbit."
+     ],
+     "answer": 2,
+     "why": "On an ellipse the distance to the Sun keeps changing. Gravity follows an inverse square law, so a changing distance means a changing force, and by F = ma (with the planet's mass constant) a changing acceleration. That is why planets move faster near the Sun and slower far away. Newton's laws explain Kepler's laws (B), and without a force the planet would travel in a straight line (E).",
+     "source": "admin-only: PracticeTest2_questions.pdf Q9; key Practice_Test_2_Explained.pdf Q9; verified: Ch4 slides (gravity, Kepler 2); key C",
+     "derived": false
+    },
+    {
+     "id": "x2-10",
+     "q": "In which of the following situations is Newton's third law NOT applicable?",
+     "options": [
+      "when one object is much more massive than the other",
+      "when the force in question is gravity and the objects are physically separated",
+      "when the objects are microscopic",
+      "when more than two objects are involved",
+      "Newton's third law is applicable in all cases."
+     ],
+     "answer": 4,
+     "why": "Every force comes as an equal and opposite pair, for any masses, for forces acting at a distance such as gravity, for microscopic objects, and for any number of objects (each pair interacts). A massive object barely accelerates, but the force on it is still equal in size to the force on the small one.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q10; key Practice_Test_2_Explained.pdf Q10; verified: Ch4.2 slides (third law); key E",
+     "derived": false
+    },
+    {
+     "id": "x2-11",
+     "q": "Suppose a curling stone is slid towards another identical stone that's stationary. Which of the following correctly describes a scenario where, after colliding, the first curling stone travels back at the same speed while the second stone remains stationary?",
+     "options": [
+      "Such a scenario is impossible, as it violates Newton's third law.",
+      "Such a scenario can happen in reality, as momentum and energy are both conserved.",
+      "Such a scenario is impossible, as it violates energy conservation.",
+      "Such a scenario is impossible, as it violates conservation of momentum.",
+      "Such a scenario is impossible, as it violates mass-energy equivalence."
+     ],
+     "answer": 3,
+     "why": "Before the collision the total momentum is +mv (first stone) + 0 = +mv. In the described outcome it would be -mv + 0 = -mv. Since +mv is not equal to -mv, momentum is not conserved, so it is impossible. Kinetic energy would be the same before and after (1/2 mv^2), so energy conservation is not the problem.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q11; key Practice_Test_2_Explained.pdf Q11; verified: Ch4.3 momentum conservation slides (collisions); key D",
+     "derived": false
+    },
+    {
+     "id": "x2-12",
+     "q": "Suppose a cowboy is swinging a lasso, and he lets out more rope. Which of the following will happen due to the conservation of angular momentum?",
+     "options": [
+      "The rotation rate will slow down, since the radial distance to the loop end of the rope has increased.",
+      "The rotation rate will increase, since the speed of the loop end of the rope has increased.",
+      "The rotation rate will stay the same as long as the mass of the rope remains constant.",
+      "The rotation rate will slow down, since the loop end of the rope has to traverse a larger distance at the same speed.",
+      "The cowboy will start spinning."
+     ],
+     "answer": 0,
+     "why": "Angular momentum L = m x v x r stays constant when no outside twist acts. If the radius r increases, the speed v must decrease, so the loop turns more slowly (like a skater extending the arms). D is not correct because the speed does not stay the same: it drops so that m x v x r is constant.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q12; key Practice_Test_2_Explained.pdf Q12; verified: Ch4.3 angular momentum slides; key A",
+     "derived": false
+    },
+    {
+     "id": "x2-13",
+     "q": "According to the universal law of gravitation, if the mass of one of the attracting bodies is halved, then the gravitational force between them will",
+     "options": [
+      "not change at all.",
+      "decrease by a factor of 4.",
+      "decrease by a factor of 2.",
+      "increase by a factor of 2.",
+      "increase by a factor of 4."
+     ],
+     "answer": 2,
+     "why": "F = G M1 M2 / d^2, so the force is directly proportional to each mass. Half the mass gives half the force (a decrease by a factor of 2). A factor of 4 arises when the distance changes by a factor of 2 (inverse square), not when a mass changes.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q13; key Practice_Test_2_Explained.pdf Q13; verified: Ch4.4 slides (universal law of gravitation); key C",
+     "derived": false
+    },
+    {
+     "id": "x2-14",
+     "q": "Which of the following is the best way of determining the mass of Mars by examining its moon Phobos?",
+     "options": [
+      "Phobos's orbital period and speed tell us the mass of Mars, via Newton's version of Kepler's third law.",
+      "The gravitational acceleration of Phobos towards Mars tells us the mass of Mars, via Newton's second law.",
+      "Phobos's orbital eccentricity tells us Mars's mass, via Newton's version of Kepler's second law.",
+      "Phobos's orbital distance alone tells us the mass of Mars, via the universal law of gravitation.",
+      "Phobos's mass alone tells us the mass of Mars, via the universal law of gravitation."
+     ],
+     "answer": 0,
+     "why": "Newton's version of Kepler's third law is p^2 = 4 pi^2 a^3 / [G (M1 + M2)]. Measuring Phobos's orbital period p and its orbit size a (the circumference follows from speed x period) gives the total mass, which is essentially the mass of Mars because Phobos is tiny. Distance alone is not enough (D), the shape of the orbit does not give the mass (C), and the moon's own mass tells nothing about Mars (E).",
+     "source": "admin-only: PracticeTest2_questions.pdf Q14; key Practice_Test_2_Explained.pdf Q14; verified: Ch4.4 slides + textbook Mathematical Insight 4.3; key A",
+     "derived": false
+    },
+    {
+     "id": "x2-15",
+     "q": "Which of the following is a strange feature of Newton's gravitational theory that went unexplained until about 110 years ago?",
+     "options": [
+      "Non-elliptical orbit shapes, including parabolas and hyperbolas, can be observed, which are not explained in Newtonian gravity.",
+      "The acceleration of gravity is the same for all objects at a given height above Earth's surface, regardless of their physical characteristics or properties.",
+      "The force of gravity is the same for all objects at a given height above Earth's surface, regardless of their physical characteristics or properties.",
+      "Gravity drops off rapidly as the distance between objects increases, unlike every other force.",
+      "Gravity is the only force that acts at a distance, without the two objects being in physical contact."
+     ],
+     "answer": 1,
+     "why": "A heavy object feels a larger gravitational force, but it also has more inertia, and the two cancel exactly, so all objects fall with the same acceleration (about 9.8 m/s^2). Newton had no explanation for this coincidence; Einstein's general relativity (1915) did. The force itself is not the same for all objects (C), unbound orbits are explained by Newton (A), and electric forces also fall off with distance and act at a distance (D, E).",
+     "source": "admin-only: PracticeTest2_questions.pdf Q15; key Practice_Test_2_Explained.pdf Q15; verified: Ch4.4 slides + textbook (acceleration of gravity, general relativity); key B",
+     "derived": false
+    },
+    {
+     "id": "x2-16",
+     "q": "Which of the following explains why the Moon is farther away from Earth than it used to be?",
+     "options": [
+      "The tidal bulge of Earth pulls the Moon forward in its orbit, giving it orbital energy.",
+      "Synchronous rotation locked one face of the Moon towards the Earth, which led to a decrease in rotational velocity and an increase in radius in accordance with the conservation of angular momentum.",
+      "The Moon gains orbital energy every time it lines up with the Sun during an eclipse, and over time, this has increased its orbital radius.",
+      "Earth's rotation is speeding up slightly, and this causes the Moon to be pulled ahead in its orbit, supplying the orbital energy for a larger orbital radius.",
+      "The tidal force of the Moon on the Earth has an equal and opposite reaction force on the Moon, which pushes it slightly farther away every year."
+     ],
+     "answer": 0,
+     "why": "Earth spins faster than the Moon orbits, so friction drags Earth's tidal bulge slightly ahead of the Earth-Moon line. The bulge's gravity pulls the Moon forward, giving it orbital energy, so the Moon moves into a larger orbit. In return the Moon pulls back on the bulge, so Earth's rotation slows (D has this backwards).",
+     "source": "admin-only: PracticeTest2_questions.pdf Q16; key Practice_Test_2_Explained.pdf Q16; verified: Ch4.5 slides (tidal friction, Moon receding); key A",
+     "derived": false
+    },
+    {
+     "id": "x2-17",
+     "q": "Why does a green object appear black under red light?",
+     "options": [
+      "The green object tends to scatter all wavelengths that are not green.",
+      "The green object tends to absorb all red wavelengths.",
+      "The green object reflects only red wavelengths, which appear black under red light.",
+      "The green object contains pigments that darken when exposed to red light.",
+      "The green object tends to absorb green light, and since no green light is present, it absorbs no light at all and appears black."
+     ],
+     "answer": 1,
+     "why": "An object's colour is the light it reflects. A green object reflects green and absorbs most other colours, including red. Under pure red light all of the light is absorbed, so nothing reaches your eye and the object looks black.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q17; key Practice_Test_2_Explained.pdf Q17; verified: Ch5.1 slides (reflection, absorption, colour); key B",
+     "derived": false
+    },
+    {
+     "id": "x2-18",
+     "q": "An atom of doubly ionized Calcium-44 has 20 protons, 24 neutrons, and 18 electrons. What is the atomic number, atomic mass number, and charge of this atom?",
+     "options": [
+      "20, 44, 2+",
+      "20, 24, 2+",
+      "20, 44, 2-",
+      "44, 18, 2-",
+      "44, 24, 2+"
+     ],
+     "answer": 0,
+     "why": "Atomic number = number of protons = 20. Atomic mass number = protons + neutrons = 20 + 24 = 44. Charge = protons - electrons = 20 - 18 = +2. Losing two electrons (doubly ionized) gives a positive charge.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q18; key Practice_Test_2_Explained.pdf Q18; verified: Ch5.3 slides (atomic number, mass number, ions); key A",
+     "derived": false
+    },
+    {
+     "id": "x2-19",
+     "q": "What might happen to a gas when we increase its pressure but keep the temperature the same?",
+     "options": [
+      "It could become ionized.",
+      "It could increase its volume.",
+      "It could undergo a phase transition into a liquid.",
+      "It could experience an increase in mass.",
+      "It could undergo a phase transition into a plasma."
+     ],
+     "answer": 2,
+     "why": "Phase depends on both temperature and pressure. Squeezing a gas pushes its molecules close together, so it can condense into a liquid (propane stored in a tank is an example). Ionization or a plasma needs very high temperature, not pressure. More pressure shrinks the volume, and mass does not change.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q19; key Practice_Test_2_Explained.pdf Q19; verified: Ch5.3 slides/textbook (phases depend on temperature and pressure); key C",
+     "derived": false
+    },
+    {
+     "id": "x2-20",
+     "q": "What property of a transverse, moving wave (not necessarily light) describes how many peaks pass by a point per second?",
+     "options": [
+      "The wavelength",
+      "The wave speed",
+      "The amplitude",
+      "The power",
+      "The frequency"
+     ],
+     "answer": 4,
+     "why": "Frequency is the number of wave peaks passing a point each second, measured in hertz (Hz). Wavelength is the distance between peaks, wave speed is how fast the peaks move (v = wavelength x frequency), amplitude is the height of a peak and power is energy per second.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q20; key Practice_Test_2_Explained.pdf Q20; verified: Ch5.2 slides (wave properties); key E",
+     "derived": false
+    },
+    {
+     "id": "x2-21",
+     "q": "A continuous light source is placed behind a transparent container of cool atomic gas. In front of the container, a spectrometer is placed. Which of the following best describes what kind of spectrum will be obtained from this experimental setup?",
+     "options": [
+      "Light from the source will pass through the gas and into the spectrometer, forming a continuous spectrum.",
+      "Light from the source will interact with atoms in the gas, which will release photons that enter the spectrometer, forming an emission line spectrum.",
+      "Light from the source will interact with atoms in the gas, which will release photons that enter the spectrometer. However, the continuous light source will dominate, forming a continuous spectrum.",
+      "Light from the source will interact with atoms in the gas, which will emit photons that scatter in random directions. Hence, few of these photons will enter the spectrometer, and the continuous light source will dominate at other wavelengths, forming an absorption spectrum.",
+      "Light from the source will interact with atoms in the gas, which will emit photons that scatter in random directions. Hence, practically no light will reach the spectrometer, and no spectrum will be obtained."
+     ],
+     "answer": 3,
+     "why": "Cool gas atoms absorb only photons whose energy matches the gaps between their energy levels. They re-emit those photons in random directions, so very few continue toward the spectrometer, leaving dark lines at those wavelengths on top of the continuous rainbow. This is an absorption line spectrum (cool gas in front of a hot source, like the Sun).",
+     "source": "admin-only: PracticeTest2_questions.pdf Q21; key Practice_Test_2_Explained.pdf Q21; verified: Ch5.3 slides/textbook (Kirchhoff's three kinds of spectra); key D",
+     "derived": false
+    },
+    {
+     "id": "x2-22",
+     "q": "If an incandescent light bulb was placed in front of a glass prism, what would we see?",
+     "options": [
+      "A rainbow, practically identical to what we would get if we shone sunlight through the prism.",
+      "A single, yellowish colour matching the wavelength output by the light bulb.",
+      "A series of spectral lines, indicating what chemicals are present in the light bulb filament.",
+      "A rainbow with more reddish colours present than in a typical rainbow.",
+      "Nothing, since refraction in a glass prism works only with white light, or sunlight."
+     ],
+     "answer": 3,
+     "why": "A hot solid filament gives a continuous thermal spectrum, so the prism makes a full rainbow (not lines and not one colour). A bulb filament is only about 3000 K, much cooler than the Sun's 5800 K. By Wien's law a cooler object's emission peaks at longer, redder wavelengths, so the rainbow is weighted toward red and orange compared with sunlight.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q22; key Practice_Test_2_Explained.pdf Q22; verified: Ch5.2/5.3 (thermal spectra, Wien's law lambda_max = 2,900,000 nm.K / T); key D",
+     "derived": false
+    },
+    {
+     "id": "x2-23",
+     "q": "Wien's law tells us that the peak emission wavelength of a blackbody is inversely related to its temperature. If star A is orange-red, and star B is yellow-white, which of the following is true?",
+     "options": [
+      "Star A is hotter, since its peak wavelength is higher.",
+      "Star A is cooler, since its peak wavelength is lower.",
+      "Star B is hotter, since its peak wavelength is lower.",
+      "Star B is cooler, since its peak wavelength is higher.",
+      "Star A is hotter, since its peak wavelength is lower."
+     ],
+     "answer": 2,
+     "why": "Wien's law: peak wavelength = 2,900,000 nm.K / T. A hotter object peaks at a shorter wavelength. Yellow-white light has a shorter wavelength than orange-red, so star B is hotter and star A is cooler. Red light has a longer wavelength than yellow, so options A, B and E have it backwards.",
+     "source": "admin-only: PracticeTest2_questions.pdf Q23; key Practice_Test_2_Explained.pdf Q23; verified: Ch5.2 slides/textbook Mathematical Insight 5.2; key C",
+     "derived": false
+    },
+    {
+     "id": "x2-24",
+     "q": "What spectral feature would we notice in an rotating galaxy viewed edge-on?",
+     "options": [
+      "The spectral lines would be blueshifted.",
+      "The spectral lines would be redshifted.",
+      "The spectral lines would be thinner.",
+      "The spectral lines on one side of the galaxy would be blueshifted and on the other side they would be redshifted.",
+      "The spectral lines would oscillate between being blueshifted and redshifted as the galaxy rotates."
+     ],
+     "answer": 3,
+     "why": "Seen edge-on, one side of the spinning galaxy moves toward us (blueshift by the Doppler effect) and the other side moves away (redshift). The centre is not shifted by the rotation. The motion is steady, so the shifts do not flip back and forth (E), and if all the light were combined, the lines would look wider, not thinner (C).",
+     "source": "admin-only: PracticeTest2_questions.pdf Q24; key Practice_Test_2_Explained.pdf Q24; verified: Ch5.4 slides (Doppler effect, rotation); key D",
+     "derived": false
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "title": "Practice Exam: 30 Questions",
+   "blurb": "30 mixed questions on timekeeping, motion, energy, gravity, light and spectra, with calculations.",
+   "questions": [
+    {
+     "id": "x3-1",
+     "q": "A bright star crosses your meridian at exactly 9:00 p.m. tonight. At about what time will it cross your meridian tomorrow night?",
+     "options": [
+      "9:00 p.m. exactly",
+      "9:04 p.m.",
+      "9:56 p.m.",
+      "8:56 p.m.",
+      "8:04 p.m."
+     ],
+     "answer": 3,
+     "why": "Stars return to the meridian after one sidereal day, 23 h 56 min, which is 4 minutes shorter than the 24 hour solar day (Earth moves about 1 degree along its orbit each day, so the Sun needs an extra 4 minutes to catch up). So the star crosses 4 minutes earlier: 8:56 p.m.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q1; answer key at end of file; key D; verified S1 slides (sidereal day 23h 56m 4.07s)",
+     "derived": false
+    },
+    {
+     "id": "x3-2",
+     "q": "Why is the synodic month (29.5 days) longer than the sidereal month (27.3 days)?",
+     "options": [
+      "The Moon's orbit around Earth is an ellipse.",
+      "The Moon rotates more slowly than it orbits.",
+      "Precession of Earth's axis adds about 2 days to each cycle.",
+      "The Moon is slowly moving farther away from Earth.",
+      "Earth moves along its orbit during the month, so the Moon must travel a bit more than one full orbit to line up with the Sun again."
+     ],
+     "answer": 4,
+     "why": "In 27.3 days the Moon completes one orbit relative to the stars, but Earth has moved about 30 degrees (1/12 of its orbit) around the Sun in that time. The Moon must travel roughly a further 1/12 of an orbit to line up with the Sun again, which takes about 2.2 more days: 27.3 + 2.2 = 29.5 days.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q2; answer key at end of file; key E; verified S1 slides (synodic month 1/12 longer than sidereal month)",
+     "derived": false
+    },
+    {
+     "id": "x3-3",
+     "q": "Mars is at opposition. Which of the following is TRUE?",
+     "options": [
+      "Mars is on the far side of the Sun from Earth.",
+      "Mars rises at sunrise and sets at sunset.",
+      "Mars is between Earth and the Sun.",
+      "Mars is near its closest to Earth, rises around sunset, and is visible all night.",
+      "Mars is at its greatest elongation from the Sun."
+     ],
+     "answer": 3,
+     "why": "At opposition Earth lies between the Sun and Mars, so Mars is opposite the Sun in our sky. It rises at sunset, is highest at midnight, sets at sunrise, and is near its closest approach to Earth. A describes superior conjunction, B describes conjunction (Mars near the Sun in the sky), and greatest elongation (E) applies to inner planets.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q3; answer key at end of file; key D; verified S1 slides (planet configurations)",
+     "derived": false
+    },
+    {
+     "id": "x3-4",
+     "q": "Suppose it is noon on December 21 and you are standing on the equator. Where is the Sun in your sky?",
+     "options": [
+      "At your zenith.",
+      "On your meridian, due South, at an altitude of 66.5 degrees.",
+      "On your meridian, due North, at an altitude of 66.5 degrees.",
+      "On your meridian, due South, at an altitude of 23.5 degrees.",
+      "On your meridian, due North, at an altitude of 23.5 degrees."
+     ],
+     "answer": 1,
+     "why": "On December 21 the Sun's declination is -23.5 degrees (over the Tropic of Capricorn). From the equator the Sun is 23.5 degrees away, so its noon altitude is 90 - 23.5 = 66.5 degrees. Because the Sun is south of the equator, it is due south on your meridian.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q4; answer key at end of file; key B; verified S1 slides",
+     "derived": false
+    },
+    {
+     "id": "x3-5",
+     "q": "Suppose it is noon on June 21 and the Sun has an altitude of 47 degrees in your southern sky. Where are you?",
+     "options": [
+      "The Tropic of Cancer",
+      "The equator",
+      "The Antarctic Circle",
+      "The North Pole",
+      "The Arctic Circle"
+     ],
+     "answer": 4,
+     "why": "On June 21 the Sun is over 23.5 degrees N. Altitude 47 degrees means the Sun is 90 - 47 = 43 degrees from the zenith, and it is in your south, so you are 43 degrees north of the Sun's latitude: 23.5 + 43 = 66.5 degrees N, the Arctic Circle. (At the Tropic of Cancer the Sun would be at the zenith; at the equator it would be at altitude 66.5 degrees in the north.)",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q5; answer key at end of file; key E; recomputed",
+     "derived": false
+    },
+    {
+     "id": "x3-6",
+     "q": "About how long is the Sun above the horizon at the equator on December 21?",
+     "options": [
+      "About 12 hours",
+      "24 hours",
+      "0 hours",
+      "About 9 hours",
+      "About 15 hours"
+     ],
+     "answer": 0,
+     "why": "At the equator the Sun's daily path is always half above and half below the horizon, so day and night are each about 12 hours long all year round, including at the December solstice.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q6; answer key at end of file; key A; verified S1 slides (Sun at the equator)",
+     "derived": false
+    },
+    {
+     "id": "x3-7",
+     "q": "The Sun is on your meridian, and a clock set to Universal Time (UT) reads 16:00. What is your longitude?",
+     "options": [
+      "60 degrees E",
+      "4 degrees W",
+      "60 degrees W",
+      "120 degrees W",
+      "240 degrees E"
+     ],
+     "answer": 2,
+     "why": "The Sun on your meridian means local solar time is noon (12:00). UT is the solar time at longitude 0 and reads 16:00, so you are 4 hours behind Greenwich, which means west of it. Earth turns 15 degrees per hour, so 4 x 15 = 60 degrees W.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q7; answer key at end of file; key C; verified S1 slides (Universal time = mean solar time at 0 longitude)",
+     "derived": false
+    },
+    {
+     "id": "x3-8",
+     "q": "What is the main reason our calendar needs leap years?",
+     "options": [
+      "The tropical year is about 365 1/4 days, not a whole number of days.",
+      "The sidereal day is about 4 minutes shorter than the solar day.",
+      "Earth's axis precesses once every 26,000 years.",
+      "Earth's orbit around the Sun is an ellipse.",
+      "The Moon's orbit does not fit evenly into a year."
+     ],
+     "answer": 0,
+     "why": "The cycle of seasons (the tropical year) lasts about 365.24 days. A 365-day calendar falls behind by about a quarter of a day each year, roughly one day every 4 years, so a leap day is added to keep the calendar in step with the seasons.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q8; answer key at end of file; key A; verified S1 slides (leap years)",
+     "derived": false
+    },
+    {
+     "id": "x3-9",
+     "q": "You are at latitude 40 degrees N. How does a star with declination +60 degrees behave in your sky?",
+     "options": [
+      "It never rises above your horizon.",
+      "It is circumpolar: it never sets.",
+      "It rises and sets, reaching a highest altitude of 80 degrees in the south.",
+      "It passes directly through your zenith once a day.",
+      "It is above the horizon for exactly 12 hours each day."
+     ],
+     "answer": 1,
+     "why": "Stars with declination greater than 90 - latitude = 90 - 40 = 50 degrees N never set from 40 degrees N. Declination 60 is above 50, so the star is circumpolar. Its highest altitude is 90 - (60 - 40) = 70 degrees, in the north (above the pole), and its lowest is 40 + 60 - 90 = 10 degrees above the horizon.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q9; answer key at end of file; key B; verified S1/Ch2 slides (circumpolar stars)",
+     "derived": false
+    },
+    {
+     "id": "x3-10",
+     "q": "A ball is thrown straight up. At the very top of its path, which is TRUE?",
+     "options": [
+      "Its velocity and its acceleration are both zero.",
+      "Its velocity is zero, but it is still accelerating downward at 9.8 m/s^2.",
+      "Its velocity is at its maximum.",
+      "Its acceleration points upward.",
+      "No forces act on it at that instant."
+     ],
+     "answer": 1,
+     "why": "At the top the ball momentarily stops, so its velocity is zero. But gravity still pulls on it, so the net force is not zero and the acceleration is 9.8 m/s^2 downward the whole time (otherwise it would not start falling).",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q10; answer key at end of file; key B; verified Ch4.1 slides (velocity vs acceleration)",
+     "derived": false
+    },
+    {
+     "id": "x3-11",
+     "q": "You stand on a bathroom scale in an elevator that is moving downward at a constant speed. What does the scale read?",
+     "options": [
+      "More than your normal weight",
+      "Less than your normal weight",
+      "Zero",
+      "It depends on how fast the elevator is moving",
+      "Your normal weight"
+     ],
+     "answer": 4,
+     "why": "Constant speed means zero acceleration, so the net force on you is zero and the scale pushes up with a force equal to your weight. The scale reads your normal weight, no matter how fast the elevator moves. It would read differently only while the elevator speeds up or slows down.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q11; answer key at end of file; key E; verified Ch4.1/4.2 slides (apparent weight)",
+     "derived": false
+    },
+    {
+     "id": "x3-12",
+     "q": "The same net force is applied to a 2 kg cart and a 4 kg cart. Which is TRUE?",
+     "options": [
+      "The 2 kg cart accelerates twice as much as the 4 kg cart.",
+      "Both carts have the same acceleration because the force is the same.",
+      "The 4 kg cart accelerates twice as much as the 2 kg cart.",
+      "The 2 kg cart accelerates four times as much as the 4 kg cart.",
+      "Neither cart accelerates unless the force is larger than its weight."
+     ],
+     "answer": 0,
+     "why": "a = F / m. For the same F, a(2 kg) = F/2 and a(4 kg) = F/4, so the ratio is (F/2)/(F/4) = 2. The lighter cart accelerates twice as much. A force does not need to exceed an object's weight to accelerate it horizontally.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q12; answer key at end of file; key A; verified Ch4.2 slides (F = ma)",
+     "derived": false
+    },
+    {
+     "id": "x3-13",
+     "q": "A spacecraft in deep space, far from any star or planet, shuts off its engines. What happens?",
+     "options": [
+      "It gradually slows down and stops.",
+      "It stops immediately.",
+      "It keeps moving in a straight line at constant speed.",
+      "It speeds up because there is no air resistance.",
+      "It starts to move in a circle."
+     ],
+     "answer": 2,
+     "why": "With no net force (no gravity nearby, no friction, no air), Newton's first law says the spacecraft keeps moving in a straight line at constant speed.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q13; answer key at end of file; key C; verified Ch4.2 slides (first law)",
+     "derived": false
+    },
+    {
+     "id": "x3-14",
+     "q": "Why does a rifle \"kick\" backward when it fires a bullet?",
+     "options": [
+      "The explosion creates new energy that pushes the rifle back.",
+      "Air in front of the barrel pushes back on the rifle.",
+      "Gravity pulls the rifle toward the shooter.",
+      "By conservation of momentum, the bullet's forward momentum is matched by the rifle's backward momentum.",
+      "Some of the gunpowder's mass is converted into energy (E = mc^2)."
+     ],
+     "answer": 3,
+     "why": "The rifle and bullet start at rest, with total momentum zero. When the bullet gets momentum forward, the rifle must get an equal momentum backward so the total stays zero. The rifle is much heavier, so its backward speed is much smaller (m_bullet x v_bullet = M_rifle x v_rifle).",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q14; answer key at end of file; key D; verified Ch4.3 momentum slides/textbook (rocket and rifle recoil)",
+     "derived": false
+    },
+    {
+     "id": "x3-15",
+     "q": "A large spinning star collapses into a much smaller neutron star. What happens to its rotation?",
+     "options": [
+      "It spins more slowly, because it has less surface area.",
+      "It spins at the same rate, because no outside force acted.",
+      "Its angular momentum increases, so it spins faster.",
+      "Its angular momentum decreases, but it spins faster.",
+      "It spins much faster, because its radius shrank while its angular momentum stayed the same."
+     ],
+     "answer": 4,
+     "why": "With no outside torque, angular momentum (L = m x v x r) is conserved. The radius shrinks enormously, so the rotation speed must rise: the star spins much faster (like a skater pulling in the arms). Angular momentum itself stays the same, so options C and D are wrong.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q15; answer key at end of file; key E; verified Ch4.3 angular momentum slides",
+     "derived": false
+    },
+    {
+     "id": "x3-16",
+     "q": "If a car's speed doubles, its kinetic energy",
+     "options": [
+      "stays the same.",
+      "doubles.",
+      "triples.",
+      "increases by a factor of 4.",
+      "is cut in half."
+     ],
+     "answer": 3,
+     "why": "KE = 1/2 m v^2, so KE depends on the square of the speed. If v becomes 2v, KE becomes 1/2 m (2v)^2 = 4 x (1/2 m v^2): four times as much.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q16; answer key at end of file; key D; verified Ch4.3 energy slides",
+     "derived": false
+    },
+    {
+     "id": "x3-17",
+     "q": "According to the universal law of gravitation, if the distance between two objects is tripled, the gravitational force between them will",
+     "options": [
+      "decrease by a factor of 3.",
+      "decrease by a factor of 9.",
+      "increase by a factor of 3.",
+      "increase by a factor of 9.",
+      "not change at all."
+     ],
+     "answer": 1,
+     "why": "F is proportional to 1/d^2. If d becomes 3d, F becomes F / 3^2 = F/9, a decrease by a factor of 9.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q17; answer key at end of file; key B; verified Ch4.4 slides (inverse square law)",
+     "derived": false
+    },
+    {
+     "id": "x3-18",
+     "q": "Which has more thermal energy: a large pot of boiling water (100 C) or a tiny firework spark (1000 C)?",
+     "options": [
+      "The pot of water, because it has vastly more particles, so its total kinetic energy is greater.",
+      "The spark, because it has a higher temperature.",
+      "They have equal thermal energy.",
+      "The spark, because it has more mass.",
+      "Neither, because only moving objects have thermal energy."
+     ],
+     "answer": 0,
+     "why": "Temperature measures the average kinetic energy of the particles, but thermal energy is the total kinetic energy of all of them. The pot holds enormously more particles, so its total thermal energy is far greater even though each particle moves more slowly than those in the spark.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q18; answer key at end of file; key A; verified Ch4.3/Ch5 slides (thermal energy vs temperature)",
+     "derived": false
+    },
+    {
+     "id": "x3-19",
+     "q": "A satellite in low Earth orbit slowly loses altitude because of drag from the thin upper atmosphere. What happens to its orbital energy?",
+     "options": [
+      "It increases, so the satellite moves to a higher orbit.",
+      "It stays exactly the same.",
+      "It decreases, turning into heat, so the satellite gradually falls toward Earth.",
+      "It is converted into extra mass for the satellite.",
+      "It is transferred to the Moon."
+     ],
+     "answer": 2,
+     "why": "Drag from the air removes orbital energy, converting it into heat. With less orbital energy the satellite settles into a lower orbit and spirals down toward Earth. Energy is conserved overall: it goes into heating the satellite and the air.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q19; answer key at end of file; key C; verified Ch4.3/4.5 slides (energy conservation, orbits)",
+     "derived": false
+    },
+    {
+     "id": "x3-20",
+     "q": "Which statement about escape velocity from Earth is TRUE?",
+     "options": [
+      "A heavier spacecraft needs a higher escape velocity.",
+      "It is about 300,000 km/s.",
+      "It is the same for every planet in the solar system.",
+      "It is larger the farther you start from Earth.",
+      "It is about 11 km/s from the surface, no matter how massive the object is."
+     ],
+     "answer": 4,
+     "why": "Escape velocity from Earth's surface is about 11 km/s (about 40,000 km/h). It depends on the mass and radius of the planet (v = sqrt(2GM/R)), not on the mass of the escaping object. It is different for each planet and gets smaller the farther you start from the planet. 300,000 km/s is the speed of light.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q20; answer key at end of file; key E; verified Ch4.5 slides (escape velocity ~11 km/s)",
+     "derived": false
+    },
+    {
+     "id": "x3-21",
+     "q": "When do the largest (spring) tides occur?",
+     "options": [
+      "At first-quarter and third-quarter Moon",
+      "Only during the spring season",
+      "When the Moon is at its farthest from Earth",
+      "At new Moon and full Moon, when the Sun, Earth and Moon line up",
+      "When Earth is farthest from the Sun"
+     ],
+     "answer": 3,
+     "why": "Spring tides occur at new Moon and full Moon, when the Sun, Moon and Earth are lined up and the Sun's tidal pull adds to the Moon's. At first and third quarter the two pulls partly cancel, giving the weakest (neap) tides. The name has nothing to do with the season.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q21; answer key at end of file; key D; verified Ch4.5 slides (tides)",
+     "derived": false
+    },
+    {
+     "id": "x3-22",
+     "q": "Which statement about radio waves is TRUE?",
+     "options": [
+      "They are a type of sound wave.",
+      "They are a form of light and travel at the speed of light.",
+      "They travel more slowly than visible light.",
+      "They carry more energy per photon than x-rays.",
+      "They need air to travel through."
+     ],
+     "answer": 1,
+     "why": "Radio waves are electromagnetic waves, just like visible light but with a much longer wavelength. All electromagnetic waves travel at the speed of light in a vacuum (300,000 km/s) and need no medium. Radio photons carry the least energy of all, much less than x-ray photons.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q22; answer key at end of file; key B; verified Ch5.2 slides (electromagnetic spectrum)",
+     "derived": false
+    },
+    {
+     "id": "x3-23",
+     "q": "Which of these has the highest-energy photons?",
+     "options": [
+      "Radio waves",
+      "Infrared light",
+      "Red visible light",
+      "Ultraviolet light",
+      "X-rays"
+     ],
+     "answer": 4,
+     "why": "Photon energy increases as wavelength decreases (E = hc / wavelength). Of these, x-rays have the shortest wavelength, so they have the highest-energy photons. In order of increasing energy: radio, infrared, red visible, ultraviolet, x-ray.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q23; answer key at end of file; key E; verified Ch5.2 slides (photon energy)",
+     "derived": false
+    },
+    {
+     "id": "x3-24",
+     "q": "If the wavelength of a light wave doubles, what happens to its frequency and photon energy?",
+     "options": [
+      "The frequency is cut in half and the energy is cut in half.",
+      "The frequency doubles and the energy doubles.",
+      "Nothing changes, since all light travels at the same speed.",
+      "The frequency is cut in half, but the energy doubles.",
+      "The frequency and energy both increase by a factor of 4."
+     ],
+     "answer": 0,
+     "why": "Light obeys c = wavelength x frequency with c fixed, so doubling the wavelength halves the frequency. Photon energy is E = h x frequency, so the energy is halved too.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q24; answer key at end of file; key A; verified Ch5.2 slides (c = lambda f, E = hf)",
+     "derived": false
+    },
+    {
+     "id": "x3-25",
+     "q": "Carbon-12 and carbon-14 are",
+     "options": [
+      "different chemical elements.",
+      "ions of each other.",
+      "isotopes of each other.",
+      "different molecules.",
+      "different phases of carbon."
+     ],
+     "answer": 2,
+     "why": "Both have 6 protons (so both are carbon) but they have different numbers of neutrons (6 and 8). Atoms of the same element with different numbers of neutrons are isotopes.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q25; answer key at end of file; key C; verified Ch5.3 slides (isotopes)",
+     "derived": false
+    },
+    {
+     "id": "x3-26",
+     "q": "An electron in a hydrogen atom is in level 1 (the ground state). A photon with exactly 12.1 eV of energy hits it. What happens?",
+     "options": [
+      "The photon passes through without being absorbed.",
+      "The electron jumps to level 2.",
+      "The atom is ionized.",
+      "The electron jumps to level 3.",
+      "The electron jumps to level 4."
+     ],
+     "answer": 3,
+     "why": "An electron absorbs a photon only if its energy matches the gap between levels. Energy above level 1: level 2 is 10.2 eV, level 3 is 13.6 x (1 - 1/9) = 12.09, about 12.1 eV, level 4 is 13.6 x (1 - 1/16) = 12.75 eV, and ionization needs 13.6 eV. A 12.1 eV photon matches level 3, so the electron jumps to level 3.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q26; answer key at end of file; key D; verified textbook Fig 5.12 and Ch5.3 slides (energy levels)",
+     "derived": false
+    },
+    {
+     "id": "x3-27",
+     "q": "A thin, warm cloud of gas is observed with no bright light source behind it. What kind of spectrum do we see?",
+     "options": [
+      "A continuous spectrum",
+      "An emission line spectrum",
+      "An absorption line spectrum",
+      "A thermal (blackbody) spectrum",
+      "No spectrum at all"
+     ],
+     "answer": 1,
+     "why": "A thin gas with no source behind it emits light only at the specific wavelengths of its atoms' energy-level drops: bright lines on a dark background, an emission line spectrum. An absorption spectrum would need a bright continuous source behind a cooler gas.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q27; answer key at end of file; key B; verified Ch5.3 slides (three kinds of spectra)",
+     "derived": false
+    },
+    {
+     "id": "x3-28",
+     "q": "Two stars are the same size. Star X has a surface temperature of 10,000 K and star Y is 5,000 K. How much more light does each square metre of star X emit?",
+     "options": [
+      "2 times",
+      "4 times",
+      "8 times",
+      "16 times",
+      "32 times"
+     ],
+     "answer": 3,
+     "why": "The Stefan-Boltzmann law says power per square metre is proportional to T^4. The temperature ratio is 10,000 / 5,000 = 2, so the power ratio is 2^4 = 16. Each square metre of star X emits 16 times as much light.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q28; answer key at end of file; key D; verified Ch5.2/textbook Mathematical Insight 5.2",
+     "derived": false
+    },
+    {
+     "id": "x3-29",
+     "q": "A hydrogen line with a rest wavelength of 656.3 nm appears at 660.0 nm in a star's spectrum. What can we conclude?",
+     "options": [
+      "The star is moving toward us.",
+      "The star is hotter than the Sun.",
+      "The star is cooler than the Sun.",
+      "The star is not moving relative to us.",
+      "The star is moving away from us."
+     ],
+     "answer": 4,
+     "why": "The observed wavelength (660.0 nm) is longer than the rest wavelength (656.3 nm), a redshift, so the star is moving away from us. The shift is 3.7 nm, so v = c x 3.7 / 656.3 = 0.00564 c, about 1,690 km/s. A wavelength shift says nothing about temperature.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q29; answer key at end of file; key E; recomputed: 3.7/656.3 = 0.005637; x 299,792 km/s = 1,690 km/s",
+     "derived": false
+    },
+    {
+     "id": "x3-30",
+     "q": "Why do we see dark absorption lines in the Sun's visible spectrum?",
+     "options": [
+      "Earth's atmosphere absorbs those colors before the light reaches us.",
+      "Cooler, thinner gas in the Sun's outer layer absorbs specific wavelengths of light coming from the hotter interior.",
+      "Sunspots block those colors.",
+      "The Sun is moving away from Earth.",
+      "The Sun is too cool to emit those colors."
+     ],
+     "answer": 1,
+     "why": "The hot dense interior makes a continuous spectrum. The cooler, thinner gas in the Sun's outer layers lies in front of it and absorbs the specific wavelengths that match its atoms' energy-level jumps, leaving dark lines.",
+     "source": "admin-only: ASTR207_Practice questions.pdf Q30; answer key at end of file; key B; verified Ch5.3 slides (absorption spectra, Sun)",
+     "derived": false
+    }
+   ]
+  },
+  {
+   "id": "t4",
+   "title": "Quick checks",
+   "blurb": "7 short checks on the motions in the universe, dark matter and the expansion of space.",
+   "questions": [
+    {
+     "id": "x4-1",
+     "q": "A bullet fired from a conventional rifle travels at around 3000 km/h. Which of the following motions is faster than that?",
+     "options": [
+      "The Solar System's motion around the Milky Way (about 800,000 km/h)",
+      "The Sun's motion among the stars of the local neighbourhood (roughly 70,000 to 80,000 km/h)",
+      "Earth's orbital speed around the Sun (about 107,000 km/h)",
+      "All of the above"
+     ],
+     "answer": 3,
+     "why": "Compare each speed with 3000 km/h. The Solar System's motion around the galaxy (about 800,000 km/h), the Sun's motion among nearby stars (about 70,000 km/h or more) and Earth's orbital speed (about 107,000 km/h) are all far greater than a rifle bullet, so all three are faster.",
+     "source": "admin-only: ASTR207 TopHat sep8.pdf Q1 (answer: all of the above); numbers checked against Ch1 slides (Spaceship Earth: ~107,000, ~70,000, ~800,000 km/h)",
+     "derived": false
+    },
+    {
+     "id": "x4-2",
+     "q": "Which of the following lists the speeds of these motions from slowest to fastest?",
+     "options": [
+      "Earth's orbital speed (about 107,000 km/h), Earth's rotation speed (about 1,670 km/h), the Sun's speed among nearby stars (about 70,000 km/h), the Solar System's speed around the Milky Way (about 800,000 km/h)",
+      "Earth's rotation speed (about 1,670 km/h), the Sun's speed among nearby stars (about 70,000 km/h), Earth's orbital speed (about 107,000 km/h), the Solar System's speed around the Milky Way (about 800,000 km/h)",
+      "Earth's rotation speed (about 1,670 km/h), Earth's orbital speed (about 107,000 km/h), the Sun's speed among nearby stars (about 70,000 km/h), the Solar System's speed around the Milky Way (about 800,000 km/h)",
+      "The Sun's speed among nearby stars (about 70,000 km/h), Earth's rotation speed (about 1,670 km/h), Earth's orbital speed (about 107,000 km/h), the Solar System's speed around the Milky Way (about 800,000 km/h)"
+     ],
+     "answer": 1,
+     "why": "Rank the numbers: 1,670 km/h (Earth's rotation) is the smallest, then about 70,000 km/h (the Sun among nearby stars), then about 107,000 km/h (Earth's orbit), then about 800,000 km/h (around the galaxy). The order is rotation, local-neighbourhood motion, orbit, galactic orbit.",
+     "source": "admin-only: ASTR207 TopHat sep8.pdf Q2; the original answer lists the right order but prints the middle two speeds as ~10,000 and 80,000 km/h; the order matches the course values (~70,000 and ~107,000). Distractor options written by the admin, so marked derived.",
+     "derived": true
+    },
+    {
+     "id": "x4-3",
+     "q": "The age of the Solar System is about 4.5 billion years, and it takes about 225 million years to orbit the center of the Milky Way once. About how many times has the Solar System orbited the galaxy?",
+     "options": [
+      "About 2 times",
+      "About 20 times",
+      "About 200 times",
+      "About 2,000 times"
+     ],
+     "answer": 1,
+     "why": "Number of orbits = age / orbital period = 4.5 billion years / 225 million years = 4,500 million / 225 million = 20. (With 230 million years the result is 19.6, still about 20.)",
+     "source": "admin-only: ASTR207 TopHat sep8.pdf Q3 (answer: about 20); recomputed 4500/225 = 20.0; distractor options added by the admin",
+     "derived": false
+    },
+    {
+     "id": "x4-4",
+     "q": "What does the Milky Way's rotation curve (orbital speed of stars versus distance from the center) tell us?",
+     "options": [
+      "The Milky Way is slowly shrinking",
+      "It suggests the existence of dark matter: stars far from the center move faster than the visible matter can explain",
+      "Almost all of the galaxy's mass is concentrated in the central bulge",
+      "The expansion of the universe is accelerating"
+     ],
+     "answer": 1,
+     "why": "If the only mass were the visible stars concentrated toward the center, stars far out would orbit more slowly. Instead the outer stars move much faster than expected, so something unseen must supply extra gravitational pull. Scientists call this unseen mass dark matter. The accelerating expansion is a different mystery (dark energy).",
+     "source": "admin-only: ASTR207 TopHat sep8.pdf Q4 (answer: dark matter); verified Ch1 slides (galactic rotation, dark matter vs dark energy); distractors added by the admin",
+     "derived": false
+    },
+    {
+     "id": "x4-5",
+     "q": "Which of the following is a good example of uniform linear expansion?",
+     "options": [
+      "A ball thrown upward that slows down as it rises",
+      "A planet moving on an elliptical orbit",
+      "An elastic sheet being stretched",
+      "A pendulum swinging back and forth"
+     ],
+     "answer": 2,
+     "why": "In uniform expansion the space between objects stretches, so every point moves away from every other point, and more distant points separate faster. Coins on a rubber sheet that is being stretched behave this way. The coins are not moving across the sheet; the sheet itself stretches between them. The other three are ordinary motions through space.",
+     "source": "admin-only: ASTR207 TopHat sep8.pdf Q5 (answer: an elastic sheet being stretched; the file also shows a rubber-sheet figure); distractors added by the admin",
+     "derived": false
+    },
+    {
+     "id": "x4-6",
+     "q": "In a raisin cake that expands uniformly as it bakes, raisin 2 and raisin 3 lie along a line from raisin 1, with raisin 3 farthest from raisin 1. Which statement is correct?",
+     "options": [
+      "Raisin 2 and raisin 3 move away from raisin 1 at the same speed, because the cake expands at one rate.",
+      "Raisin 3 moves away from raisin 1 faster than raisin 2 does, because the farther apart two raisins are, the faster their separation grows.",
+      "Raisin 2 moves away from raisin 1 faster than raisin 3 does, because it is closer to the center of the cake.",
+      "Only raisin 1 moves; raisin 2 and raisin 3 stay in place."
+     ],
+     "answer": 1,
+     "why": "In uniform expansion the recession speed depends on the starting distance from the reference raisin. More cake lies between raisin 1 and raisin 3 than between raisin 1 and raisin 2, so more stretching adds up and raisin 3 recedes faster. This is the same reasoning as Hubble's law: more distant galaxies recede faster, and no raisin (or galaxy) is the center.",
+     "source": "admin-only: ASTR207 TopHat sep8.pdf Q6 (answer: No, apparent speed depends on starting distance). The original wording is unclear (raisin 1 reaching raisin 3's starting position), so the question was rewritten to test the same idea; marked derived for checking.",
+     "derived": true
+    },
+    {
+     "id": "x4-7",
+     "q": "If the universe is expanding, does that mean we (and the Solar System) are also expanding?",
+     "options": [
+      "Yes, everything in the universe expands at the same rate, including people and planets",
+      "Yes, but the change is too small to measure",
+      "No, because the expansion only happens between galaxies that are moving toward each other",
+      "No, because gravity overcomes the expansion on small scales; objects that are gravitationally bound do not expand"
+     ],
+     "answer": 3,
+     "why": "Space expands between distant galaxies that are not bound together. Objects held together by gravity (and by the electromagnetic forces that hold atoms and bodies together) do not take part in the expansion: galaxies, stars, planets and people do not grow.",
+     "source": "admin-only: ASTR207 TopHat sep8.pdf Q7 (answer: no, gravity overcomes expansion on small scales); verified Ch1 slides ('individual galaxies, stars, and planets do not expand'); distractors added by the admin",
+     "derived": false
+    }
+   ]
+  }
+ ]
+}

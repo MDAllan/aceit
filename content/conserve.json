@@ -9,7 +9,7 @@
   {
    "id": "what",
    "title": "What energy is",
-   "slides": "Energy deck 1-2",
+   "slides": "Energy deck 1-2; textbook Table 4.1 (p.120)",
    "steps": [
     {
      "title": "Energy and work",
@@ -25,6 +25,14 @@
       "Forms of energy: work (mechanical), chemical, kinetic (motion), radiative (light), thermal (heat), potential (stored) and mass-energy (nuclear). The forms can overlap.",
       "Energy can be changed from one form to another, but it can never be created or destroyed."
      ]
+    },
+    {
+     "title": "How big is a joule?",
+     "bullets": [
+      "A joule is small: sunlight delivers about 1.3 × 10³ J to each square metre every second, and a candy bar holds about 1 × 10⁶ J.",
+      "Food labels use Calories. **1 food Calorie is about 4184 J**, so the 2500 Calories an adult needs each day is about 10 million joules (1 × 10⁷ J).",
+      "Check: 2500 × 4184 = 10,460,000 J, which is close to 1 × 10⁷ J."
+     ]
     }
    ],
    "bullets": [],
@@ -39,18 +47,72 @@
     },
     {
      "type": "trap",
-     "text": "The slides list seven forms and say they overlap. The textbook sorts nearly all energy into three groups: kinetic (motion), radiative (light) and potential (stored). Thermal counts as a kind of kinetic energy and mass-energy as a kind of potential energy. Know the slide list and where each form fits."
+     "text": "Unit mix-up: the joule (J) is energy, the newton (N) is force, and kg × m/s is momentum. Slide 1 gives 1 J = 1 N × m = 1 kg × m²/s². The textbook adds that 1 food Calorie is about 4184 J (not on the slides)."
     },
     {
      "type": "trap",
-     "text": "Unit mix-up: the joule (J) is energy, the newton (N) is force, and kg × m/s is momentum. Slide 1 gives 1 J = 1 N × m = 1 kg × m²/s². The textbook adds that 1 food Calorie is about 4184 J (not on the slides)."
+     "text": "Textbook inconsistency: Table 4.1 gives 3.4 × 10⁷ J for burning 1 liter of oil, but Mathematical Insight 4.2 uses 12 million J (1.2 × 10⁷ J). Use the number the question gives. Both values are far below 9 × 10¹⁶ J, so the conclusion of the rock example does not change."
     }
    ],
    "sourceNotes": [
     "Energy deck slides 1-2",
-    "Cosmic Perspective 4.3, 'Basic Types of Energy' (p. 119-120)"
+    "Cosmic Perspective 4.3, 'Basic Types of Energy' and Table 4.1 (p.120)"
    ],
    "images": []
+  },
+  {
+   "id": "types",
+   "title": "Three basic kinds of energy",
+   "slides": "Energy deck 2; textbook Figure 4.11 (p.120)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/conserve/types_fig411.jpg",
+      "slide": "textbook p.120 / Figure 4.11",
+      "alt": "Three photos joined by arrows: racing cyclists for kinetic energy, sunlight on a sunflower for radiative energy and a gasoline pump for potential energy."
+     },
+     "title": "Motion, light, stored",
+     "bullets": [
+      "Nearly all energy fits **three groups**: kinetic (energy of motion, like the racing cyclists), radiative (energy carried by light, like sunlight) and potential (stored energy, like the gasoline).",
+      "The arrows show that energy can change from any group into another, but it is never created or destroyed.",
+      "Light carries energy, which is why it can warm the surface of a planet or change molecules in our eyes so we can see."
+     ]
+    },
+    {
+     "title": "Where each form fits",
+     "bullets": [
+      "**Thermal energy** (heat) is kinetic energy: it is the total motion energy of many jiggling particles.",
+      "Gravitational potential energy, chemical energy (food, gasoline) and mass-energy are all stored energy, so they are kinds of potential energy.",
+      "Falling rocks, orbiting planets and moving air molecules all have kinetic energy."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why only three groups? Whatever energy is doing, it is either moving things, riding on light, or waiting to be released. Every other name is a special case of one of these."
+    },
+    {
+     "type": "trick",
+     "text": "Move, Light, Store: kinetic, radiative, potential."
+    },
+    {
+     "type": "trap",
+     "text": "The slides list seven forms and say they overlap. The textbook sorts nearly all energy into three groups: kinetic (motion), radiative (light) and potential (stored). Thermal counts as a kind of kinetic energy and mass-energy as a kind of potential energy. Know the slide list and where each form fits."
+    }
+   ],
+   "sourceNotes": [
+    "Energy deck slide 2 (list of forms)",
+    "Cosmic Perspective 4.3, 'Basic Types of Energy' and Figure 4.11 (p.120)"
+   ],
+   "images": [
+    {
+     "src": "img/conserve/types_fig411.jpg",
+     "slide": "textbook p.120 / Figure 4.11",
+     "alt": "Three photos joined by arrows: racing cyclists for kinetic energy, sunlight on a sunflower for radiative energy and a gasoline pump for potential energy."
+    }
+   ]
   },
   {
    "id": "kinetic",
@@ -59,9 +121,9 @@
    "steps": [
     {
      "img": {
-      "src": "img/conserve/energy_3.jpg",
-      "slide": "3",
-      "alt": "A cyclist riding fast with a blurred background and the kinetic energy formula in a red box."
+      "src": "img/conserve/ke_cyclist_formula.jpg",
+      "slide": "slide 3",
+      "alt": "A cyclist riding fast with a blurred background, above the kinetic energy formula in a red box."
      },
      "title": "Moving things carry energy",
      "bullets": [
@@ -73,9 +135,17 @@
     {
      "title": "Doubling speed quadruples energy",
      "bullets": [
-      "Speed is squared, so double the speed and the energy is **4 times** bigger. Triple the speed and it is 9 times bigger.",
-      "Double the mass at the same speed and the energy only doubles.",
-      "A 70 kg cyclist at 10 m/s has 3500 J. At 5 m/s the same cyclist has 875 J, exactly 4 times less."
+      "Speed is squared, so double the speed and the energy is **4 times** bigger. Triple it and the energy is 9 times bigger. Double the mass at the same speed and the energy only doubles.",
+      "A 70 kg cyclist at 10 m/s has ½ × 70 × 10² = 3500 J. At 5 m/s the same cyclist has 875 J, exactly 4 times less.",
+      "A 1000 kg car at 20 m/s has ½ × 1000 × 20² = 200,000 J. At 30 m/s (1.5 times faster) it has 450,000 J, which is 1.5² = 2.25 times more."
+     ]
+    },
+    {
+     "title": "Same energy, different momentum",
+     "bullets": [
+      "A 4000 kg truck at 10 m/s has ½ × 4000 × 10² = 200,000 J. A 1000 kg car at 20 m/s has ½ × 1000 × 20² = 200,000 J. The kinetic energies are equal.",
+      "Their momenta are not: the truck has 4000 × 10 = 40,000 kg × m/s and the car has 1000 × 20 = 20,000 kg × m/s.",
+      "Energy counts speed twice (v²) and momentum counts it once (v), so the two measures can rank objects differently."
      ]
     }
    ],
@@ -97,25 +167,25 @@
    "sourceNotes": [
     "Energy deck slide 3",
     "Cosmic Perspective 4.3 (kinetic energy = 1/2 mv2)",
-    "Practice questions Q16 (car speed doubles); the 70 kg cyclist numbers are a worked example made for this site (outside source)"
+    "Practice questions Q16 (car speed doubles); the cyclist, car and truck numbers are worked examples made for this site (outside source)"
    ],
    "images": [
     {
-     "src": "img/conserve/energy_3.jpg",
-     "slide": "3",
-     "alt": "A cyclist riding fast with a blurred background and the kinetic energy formula in a red box."
+     "src": "img/conserve/ke_cyclist_formula.jpg",
+     "slide": "slide 3",
+     "alt": "A cyclist riding fast with a blurred background, above the kinetic energy formula in a red box."
     }
    ]
   },
   {
    "id": "thermal",
    "title": "Thermal energy and temperature",
-   "slides": "Energy deck 4-6",
+   "slides": "Energy deck 4-6; textbook Figures 4.12-4.14",
    "steps": [
     {
      "img": {
-      "src": "img/conserve/energy_4.jpg",
-      "slide": "4",
+      "src": "img/conserve/thermal_cubes.jpg",
+      "slide": "slide 4",
       "alt": "Two cubes of particles with arrows; the right cube has longer arrows, so its particles move faster."
      },
      "title": "Jiggling particles",
@@ -127,8 +197,8 @@
     },
     {
      "img": {
-      "src": "img/conserve/energy_5.jpg",
-      "slide": "5",
+      "src": "img/conserve/temp_scales.jpg",
+      "slide": "slide 5",
       "alt": "Three thermometers (Kelvin, Celsius, Fahrenheit) marking where water boils, where water freezes and absolute zero."
      },
      "title": "Temperature scales",
@@ -140,8 +210,8 @@
     },
     {
      "img": {
-      "src": "img/conserve/energy_6.jpg",
-      "slide": "6",
+      "src": "img/conserve/pot_vs_oven.jpg",
+      "slide": "slide 6",
       "alt": "A pot of boiling water at 212 °F beside an oven at 400 °F, with many more particles drawn in the pot than in the oven."
      },
      "title": "Hot oven versus boiling pot",
@@ -174,18 +244,18 @@
    ],
    "images": [
     {
-     "src": "img/conserve/energy_4.jpg",
-     "slide": "4",
+     "src": "img/conserve/thermal_cubes.jpg",
+     "slide": "slide 4",
      "alt": "Two cubes of particles with arrows; the right cube has longer arrows, so its particles move faster."
     },
     {
-     "src": "img/conserve/energy_5.jpg",
-     "slide": "5",
+     "src": "img/conserve/temp_scales.jpg",
+     "slide": "slide 5",
      "alt": "Three thermometers (Kelvin, Celsius, Fahrenheit) marking where water boils, where water freezes and absolute zero."
     },
     {
-     "src": "img/conserve/energy_6.jpg",
-     "slide": "6",
+     "src": "img/conserve/pot_vs_oven.jpg",
+     "slide": "slide 6",
      "alt": "A pot of boiling water at 212 °F beside an oven at 400 °F, with many more particles drawn in the pot than in the oven."
     }
    ]
@@ -193,14 +263,9 @@
   {
    "id": "gpe",
    "title": "Gravitational potential energy",
-   "slides": "Energy deck 8",
+   "slides": "Energy deck 8; textbook Figure 4.15",
    "steps": [
     {
-     "img": {
-      "src": "img/conserve/energy_8.jpg",
-      "slide": "8",
-      "alt": "A ball thrown in an arc, with more potential energy at the top and less near the ground, and the E = mgh formula."
-     },
      "title": "Height stores energy",
      "bullets": [
       "**Gravitational potential energy** is energy stored in an object because of its height. Nothing about the object has changed, but it can fall.",
@@ -209,6 +274,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/conserve/ball_flight.jpg",
+      "slide": "slide 8",
+      "alt": "A ball thrown in an arc from a hand: more potential energy and less kinetic energy at the top, less potential and more kinetic energy near the ground."
+     },
      "title": "Trading height for speed",
      "bullets": [
       "In the picture the total energy (kinetic + potential) is the same at every point of the flight.",
@@ -217,10 +287,15 @@
      ]
     },
     {
+     "img": {
+      "src": "img/conserve/cloud_shrink.jpg",
+      "slide": "textbook p.122 / Figure 4.15b",
+      "alt": "A big gray gas cloud with more stored gravitational energy shrinking into a small hot glow with less stored energy and more thermal energy."
+     },
      "title": "Stars heat up the same way",
      "bullets": [
-      "A cloud of gas shrinking under its own gravity loses gravitational potential energy.",
-      "That lost potential energy becomes thermal energy, which makes the center of the cloud hot."
+      "A cloud of gas shrinking under its own gravity loses gravitational potential energy: the big cloud has more stored energy, the small glow has less.",
+      "That lost potential energy becomes thermal energy and radiation, which makes the center of the cloud hot."
      ]
     }
    ],
@@ -245,28 +320,41 @@
    ],
    "images": [
     {
-     "src": "img/conserve/energy_8.jpg",
-     "slide": "8",
-     "alt": "A ball thrown in an arc, with more potential energy at the top and less near the ground, and the E = mgh formula."
+     "src": "img/conserve/ball_flight.jpg",
+     "slide": "slide 8",
+     "alt": "A ball thrown in an arc from a hand: more potential energy and less kinetic energy at the top, less potential and more kinetic energy near the ground."
+    },
+    {
+     "src": "img/conserve/cloud_shrink.jpg",
+     "slide": "textbook p.122 / Figure 4.15b",
+     "alt": "A big gray gas cloud with more stored gravitational energy shrinking into a small hot glow with less stored energy and more thermal energy."
     }
    ]
   },
   {
    "id": "massenergy",
    "title": "Mass-energy: E = mc²",
-   "slides": "Energy deck 7",
+   "slides": "Energy deck 7; textbook Mathematical Insight 4.2 (p.122)",
    "steps": [
     {
      "img": {
-      "src": "img/conserve/energy_7.jpg",
-      "slide": "7",
-      "alt": "A glowing mushroom cloud from a nuclear explosion beside the equation E = mc squared."
+      "src": "img/conserve/mass_energy_bomb.jpg",
+      "slide": "slide 7",
+      "alt": "A glowing mushroom cloud from a nuclear explosion."
      },
      "title": "Mass is stored energy",
      "bullets": [
       "**Mass** is itself a form of energy: **E = mc²** (m = mass, c = speed of light, about 3 × 10⁸ m/s).",
       "Inside stars, **nuclear fusion** turns a small amount of mass into energy, following Einstein's relation.",
       "A small amount of mass becomes an enormous amount of energy. For 1 kg fully converted: E = 1 × (3 × 10⁸)² = 9 × 10¹⁶ J."
+     ]
+    },
+    {
+     "title": "Worked example: a 1 kg rock",
+     "bullets": [
+      "E = mc² = 1 kg × (3 × 10⁸ m/s)² = 9 × 10¹⁶ J.",
+      "Burning 1 liter of oil gives about 1.2 × 10⁷ J, so the rock holds 9 × 10¹⁶ / 1.2 × 10⁷ = 7.5 × 10⁹ times more. That is about 7.5 billion liters of oil, roughly what all cars in the United States burn in a week.",
+      "A 1-megaton H-bomb converts only about 0.1 kg of mass into energy. The relation also works backward: energy can turn into mass, as in the early universe and in particle accelerators."
      ]
     }
    ],
@@ -291,16 +379,16 @@
    ],
    "images": [
     {
-     "src": "img/conserve/energy_7.jpg",
-     "slide": "7",
-     "alt": "A glowing mushroom cloud from a nuclear explosion beside the equation E = mc squared."
+     "src": "img/conserve/mass_energy_bomb.jpg",
+     "slide": "slide 7",
+     "alt": "A glowing mushroom cloud from a nuclear explosion."
     }
    ]
   },
   {
    "id": "conserveE",
    "title": "Conservation of energy",
-   "slides": "Energy deck 2 and 9",
+   "slides": "Energy deck 2 and 9; textbook p.122",
    "steps": [
     {
      "title": "Energy is never created or destroyed",
@@ -315,6 +403,14 @@
      "bullets": [
       "When something slows down by friction or air drag, its kinetic energy turns into thermal energy in the air or ground.",
       "That heat can be hard to trace, but the energy never disappears."
+     ]
+    },
+    {
+     "title": "Tracing energy back",
+     "bullets": [
+      "A thrown baseball gets its motion energy from the arm, the arm from chemical energy in the muscles, the muscles from food, and the food from sunlight.",
+      "The sunlight came from nuclear fusion, which releases mass-energy stored in the Sun's hydrogen, and that hydrogen came from the Big Bang.",
+      "After the throw, the ball's kinetic energy ends up as thermal energy in the air or ground. It may be hard to trace, but it never disappears."
      ]
     }
    ],
@@ -343,12 +439,25 @@
   {
    "id": "momentum",
    "title": "Conservation of momentum",
-   "slides": "Momentum deck 1-3",
+   "slides": "Momentum deck 1-3; textbook Figures 4.6 and 4.8",
    "steps": [
     {
      "img": {
-      "src": "img/conserve/momentum_2.jpg",
-      "slide": "2",
+      "src": "img/conserve/pool_table.jpg",
+      "slide": "slide 3",
+      "alt": "A pool table with many colored balls and a cue."
+     },
+     "title": "Momentum = mass × velocity",
+     "bullets": [
+      "**Momentum** is mass times velocity: p = m × v, in kg × m/s. It has a direction, so it can be positive or negative.",
+      "In a closed system the **total momentum is conserved**: pool balls have the same total momentum before and after they collide.",
+      "Example: a 1000 kg car at 20 m/s has p = 1000 × 20 = 20,000 kg × m/s."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/conserve/collision_before_after.jpg",
+      "slide": "slide 2 / textbook p.118 / Figure 4.8",
       "alt": "A moving white ball hits a still yellow ball; before the hit the white ball has all the momentum, after the hit the yellow ball does."
      },
      "title": "Before and after a collision",
@@ -359,11 +468,35 @@
      ]
     },
     {
+     "img": {
+      "src": "img/conserve/spaceship_first_law.jpg",
+      "slide": "textbook p.116 / Figure 4.6",
+      "alt": "A small spacecraft coasting in the dark of space, with the note that a spaceship needs no fuel to keep moving."
+     },
      "title": "Why objects keep moving",
      "bullets": [
-      "This is why an object keeps a constant velocity when no force acts on it: with no outside force, its momentum cannot change.",
-      "Interacting objects swap momentum through equal and opposite forces.",
-      "Examples: a rocket's forward momentum equals the backward momentum of the gas it shoots out. When you jump, you push Earth the other way a tiny bit."
+      "With no outside force, momentum cannot change, so an object keeps the same velocity. A spacecraft that shuts its engines in deep space coasts in a straight line at constant speed.",
+      "Interacting objects swap momentum through equal and opposite forces."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/conserve/rocket_third_law.jpg",
+      "slide": "textbook p.116 / Figure 4.6",
+      "alt": "A rocket lifting off on a trail of exhaust gas."
+     },
+     "title": "Rockets and rifles recoil",
+     "bullets": [
+      "The total momentum of a rocket and its gas stays zero, so the forward momentum of the rocket equals the backward momentum of the gas it shoots out.",
+      "Rocket: a 500 kg rocket expels 5 kg of gas backward at 1000 m/s. The gas has 5 × 1000 = 5000 kg × m/s backward, so 500 × v = 5000 and the rocket gains v = 10 m/s forward.",
+      "Rifle: a 4 kg rifle fires a 0.01 kg bullet at 400 m/s. The bullet has 4 kg × m/s forward, so the rifle recoils with 4 × v = 4, which is 1 m/s backward."
+     ]
+    },
+    {
+     "title": "Jumping pushes Earth too",
+     "bullets": [
+      "When you jump, your legs push Earth the other way and give it an equal and opposite kick of momentum.",
+      "Earth's huge mass makes its change in speed too small to notice. Gravity later pulls you back down and returns the momentum, so the total never changes."
      ]
     }
    ],
@@ -384,27 +517,54 @@
    ],
    "sourceNotes": [
     "Momentum deck slides 1-3",
-    "Cosmic Perspective 4.3, 'Why do objects move at constant velocity...' (p. 118, Figure 4.8)",
-    "Practice questions Q13 and Q14"
+    "Cosmic Perspective 4.3, 'Why do objects move at constant velocity...' (p.118, Figure 4.8) and 4.2 (Figure 4.6, rocket and spaceship)",
+    "Practice questions Q13 and Q14; the rocket and rifle numbers are worked examples made for this site (outside source)"
    ],
    "images": [
     {
-     "src": "img/conserve/momentum_2.jpg",
-     "slide": "2",
+     "src": "img/conserve/pool_table.jpg",
+     "slide": "slide 3",
+     "alt": "A pool table with many colored balls and a cue."
+    },
+    {
+     "src": "img/conserve/collision_before_after.jpg",
+     "slide": "slide 2 / textbook p.118 / Figure 4.8",
      "alt": "A moving white ball hits a still yellow ball; before the hit the white ball has all the momentum, after the hit the yellow ball does."
+    },
+    {
+     "src": "img/conserve/spaceship_first_law.jpg",
+     "slide": "textbook p.116 / Figure 4.6",
+     "alt": "A small spacecraft coasting in the dark of space, with the note that a spaceship needs no fuel to keep moving."
+    },
+    {
+     "src": "img/conserve/rocket_third_law.jpg",
+     "slide": "textbook p.116 / Figure 4.6",
+     "alt": "A rocket lifting off on a trail of exhaust gas."
     }
    ]
   },
   {
    "id": "pool",
    "title": "Pool-ball collision puzzles",
-   "slides": "Momentum deck 4-9",
+   "slides": "Momentum deck 4-9 (red and black 8-ball picture)",
    "steps": [
     {
      "img": {
-      "src": "img/conserve/momentum_5.jpg",
-      "slide": "5",
-      "alt": "A red ball moving right toward a black ball at rest, with the answer YES written above."
+      "src": "img/conserve/pool_before.jpg",
+      "slide": "slide 4 (labels added)",
+      "alt": "A red ball moving right with speed lines toward a black 8-ball at rest, labeled red: 2 m/s right and black: at rest."
+     },
+     "title": "Red hits black",
+     "bullets": [
+      "A red ball moves right at 2 m/s and hits an identical black ball at rest. Before: total momentum = m × 2 (right) and kinetic energy = ½ m × 2² = 2m.",
+      "Test any collision story with two checks: (1) total momentum before and after must match, watching signs (right is positive, left is negative); (2) total kinetic energy can never go up."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/conserve/pool_a.jpg",
+      "slide": "slide 5 (labels added)",
+      "alt": "The red ball stopped and the black 8-ball moving right at 2 m/s."
      },
      "title": "Red stops, black moves on: YES",
      "bullets": [
@@ -414,9 +574,9 @@
     },
     {
      "img": {
-      "src": "img/conserve/momentum_7.jpg",
-      "slide": "7",
-      "alt": "The same two pool balls, with the answer NO because momentum is not conserved."
+      "src": "img/conserve/pool_b.jpg",
+      "slide": "slide 7 (labels added)",
+      "alt": "The red ball moving left at 2 m/s and the black 8-ball staying at rest."
      },
      "title": "Red bounces back, black stays: NO",
      "bullets": [
@@ -426,14 +586,22 @@
     },
     {
      "img": {
-      "src": "img/conserve/momentum_9.jpg",
-      "slide": "9",
-      "alt": "The same two pool balls, with the answer NO because energy is not conserved."
+      "src": "img/conserve/pool_c.jpg",
+      "slide": "slide 9 (labels added)",
+      "alt": "The red ball moving left at 2 m/s and the black 8-ball moving right at 4 m/s."
      },
      "title": "Red bounces back, black at 4 m/s: NO",
      "bullets": [
       "Momentum check: -2m + 4m = 2m. That matches the +2m before, so momentum is fine.",
       "Energy check: before = ½ m × 2 × 2 = 2m. After = 2m (red) + ½ m × 4 × 4 = 8m (black), total 10m. The energy would jump from 2m to 10m, so **energy is not conserved** and it is impossible."
+     ]
+    },
+    {
+     "title": "Energy can drop, never rise",
+     "bullets": [
+      "Take a 0.2 kg red ball at 2 m/s hitting an identical black ball at rest. If the red ball keeps going at 0.5 m/s, momentum gives 0.2 × 2 = 0.2 × 0.5 + 0.2 × v, so the black ball moves at v = 1.5 m/s.",
+      "Kinetic energy before: ½ × 0.2 × 2² = 0.40 J. After: ½ × 0.2 × 0.5² + ½ × 0.2 × 1.5² = 0.025 + 0.225 = 0.25 J.",
+      "The 0.15 J that went missing became heat and sound, so total energy is still conserved. Kinetic energy may fall but cannot rise."
      ]
     }
    ],
@@ -455,36 +623,42 @@
    "sourceNotes": [
     "Momentum deck slides 4-9",
     "Practice Test 2 Q11 and its explanation",
-    "Cosmic Perspective 4.3 (pool-ball example, Figure 4.8)"
+    "Cosmic Perspective 4.3 (pool-ball example, Figure 4.8)",
+    "Worked 0.2 kg example made for this site (outside source); the loss to heat and sound is standard physics (outside source), consistent with textbook 4.3 conservation of energy"
    ],
    "images": [
     {
-     "src": "img/conserve/momentum_5.jpg",
-     "slide": "5",
-     "alt": "A red ball moving right toward a black ball at rest, with the answer YES written above."
+     "src": "img/conserve/pool_before.jpg",
+     "slide": "slide 4 (labels added)",
+     "alt": "A red ball moving right with speed lines toward a black 8-ball at rest, labeled red: 2 m/s right and black: at rest."
     },
     {
-     "src": "img/conserve/momentum_7.jpg",
-     "slide": "7",
-     "alt": "The same two pool balls, with the answer NO because momentum is not conserved."
+     "src": "img/conserve/pool_a.jpg",
+     "slide": "slide 5 (labels added)",
+     "alt": "The red ball stopped and the black 8-ball moving right at 2 m/s."
     },
     {
-     "src": "img/conserve/momentum_9.jpg",
-     "slide": "9",
-     "alt": "The same two pool balls, with the answer NO because energy is not conserved."
+     "src": "img/conserve/pool_b.jpg",
+     "slide": "slide 7 (labels added)",
+     "alt": "The red ball moving left at 2 m/s and the black 8-ball staying at rest."
+    },
+    {
+     "src": "img/conserve/pool_c.jpg",
+     "slide": "slide 9 (labels added)",
+     "alt": "The red ball moving left at 2 m/s and the black 8-ball moving right at 4 m/s."
     }
    ]
   },
   {
    "id": "angmom",
    "title": "Angular momentum and torque",
-   "slides": "Momentum deck 10-11",
+   "slides": "Momentum deck 10-11; textbook Figures 4.3 and 4.9",
    "steps": [
     {
      "img": {
-      "src": "img/conserve/momentum_10.jpg",
-      "slide": "10",
-      "alt": "An oval orbit around a yellow Sun with arrows for speed v and lines for distance r at two points, and the formula L = m v r."
+      "src": "img/conserve/orbit_L_formula.jpg",
+      "slide": "slide 10",
+      "alt": "An oval orbit around a yellow Sun with arrows for speed v and dotted lines for distance r at the closest and farthest points."
      },
      "title": "Moving on a curve",
      "bullets": [
@@ -495,15 +669,28 @@
     },
     {
      "img": {
-      "src": "img/conserve/momentum_11.jpg",
-      "slide": "11",
-      "alt": "The same orbit picture beside the statement that Earth feels no torque, so its orbit continues."
+      "src": "img/conserve/earth_two_L.jpg",
+      "slide": "textbook p.113 / Figure 4.3",
+      "alt": "Earth circling the Sun, with labels for its rotational angular momentum from spinning and its orbital angular momentum from going around the Sun."
+     },
+     "title": "Spin and orbit",
+     "bullets": [
+      "Earth has two kinds of angular momentum: **rotational** (from spinning once a day) and **orbital** (from circling the Sun).",
+      "Only a **torque**, a twisting force, can change angular momentum. A push on a door's hinges does nothing, but a light push at the far edge swings it.",
+      "That is why a longer wrench turns a bolt more easily: pushing from farther out gives more torque."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/conserve/orbit_fig49.jpg",
+      "slide": "textbook p.119 / Figure 4.9",
+      "alt": "An oval orbit around the Sun: where the distance r is greater the velocity v is smaller, and where r is smaller v is greater."
      },
      "title": "No twist, no change",
      "bullets": [
-      "Angular momentum cannot change unless an outside twisting force, a **torque**, acts.",
-      "Earth feels no torque as it orbits the Sun, so its angular momentum stays the same and its orbit continues.",
-      "Because L = mvr stays constant, Earth moves faster when closer to the Sun and slower when farther away."
+      "Earth feels no torque as it orbits the Sun, so its angular momentum stays the same and its orbit continues without any push or fuel.",
+      "Because L = m × v × r stays constant, Earth moves faster when closer to the Sun and slower when farther away.",
+      "Example: Earth is about 147 million km from the Sun in January (speed about 30.3 km/s) and 152 million km in July, so v = 30.3 × 147 / 152 ≈ 29.3 km/s."
      ]
     }
    ],
@@ -524,33 +711,39 @@
    ],
    "sourceNotes": [
     "Momentum deck slides 10-11",
-    "Cosmic Perspective 4.3, 'What keeps a planet rotating and orbiting the Sun?' (p. 118-119, Figure 4.9) and 4.1 (torque, door example)"
+    "Cosmic Perspective 4.3, 'What keeps a planet rotating and orbiting the Sun?' (p. 118-119, Figure 4.9) and 4.1 (torque, door example)",
+    "Earth January and July distances and the 30.3 km/s speed are standard values (outside source)"
    ],
    "images": [
     {
-     "src": "img/conserve/momentum_10.jpg",
-     "slide": "10",
-     "alt": "An oval orbit around a yellow Sun with arrows for speed v and lines for distance r at two points, and the formula L = m v r."
+     "src": "img/conserve/orbit_L_formula.jpg",
+     "slide": "slide 10",
+     "alt": "An oval orbit around a yellow Sun with arrows for speed v and dotted lines for distance r at the closest and farthest points."
     },
     {
-     "src": "img/conserve/momentum_11.jpg",
-     "slide": "11",
-     "alt": "The same orbit picture beside the statement that Earth feels no torque, so its orbit continues."
+     "src": "img/conserve/earth_two_L.jpg",
+     "slide": "textbook p.113 / Figure 4.3",
+     "alt": "Earth circling the Sun, with labels for its rotational angular momentum from spinning and its orbital angular momentum from going around the Sun."
+    },
+    {
+     "src": "img/conserve/orbit_fig49.jpg",
+     "slide": "textbook p.119 / Figure 4.9",
+     "alt": "An oval orbit around the Sun: where the distance r is greater the velocity v is smaller, and where r is smaller v is greater."
     }
    ]
   },
   {
    "id": "skater",
    "title": "Spinning faster when radius shrinks",
-   "slides": "Momentum deck 12",
+   "slides": "Momentum deck 12; textbook Figure 4.10",
    "steps": [
     {
      "img": {
-      "src": "img/conserve/momentum_12.jpg",
-      "slide": "12",
-      "alt": "A skater spinning with arms out, then spinning faster with arms pulled in."
+      "src": "img/conserve/skater_fig410.jpg",
+      "slide": "textbook p.119 / Figure 4.10 (slide 12 shows the same idea)",
+      "alt": "A skater spinning with arms stretched out, then spinning faster with arms pulled in, with labels for radius and speed of rotation."
      },
-     "title": "The skater pulls in her arms",
+     "title": "The skater pulls in his arms",
      "bullets": [
       "With arms out the radius is large and the spin is slow. Pulling the arms in makes the radius small and the spin **faster**.",
       "Angular momentum L = m × v × r stays the same, so a smaller r means a bigger v.",
@@ -589,9 +782,9 @@
    ],
    "images": [
     {
-     "src": "img/conserve/momentum_12.jpg",
-     "slide": "12",
-     "alt": "A skater spinning with arms out, then spinning faster with arms pulled in."
+     "src": "img/conserve/skater_fig410.jpg",
+     "slide": "textbook p.119 / Figure 4.10 (slide 12 shows the same idea)",
+     "alt": "A skater spinning with arms stretched out, then spinning faster with arms pulled in, with labels for radius and speed of rotation."
     }
    ]
   },
@@ -936,78 +1129,110 @@
    "back": "Because of conservation of momentum: without an external force the momentum cannot change.",
    "short": "Momentum cannot change without force",
    "src": "Momentum deck slide 2"
+  },
+  {
+   "id": "cv-c37",
+   "front": "The three basic categories of energy",
+   "back": "Kinetic (motion), radiative (light) and potential (stored). Thermal, chemical, gravitational and mass-energy are subtypes.",
+   "short": "Kinetic, radiative, potential",
+   "src": "Cosmic Perspective 4.3, Figure 4.11"
+  },
+  {
+   "id": "cv-c38",
+   "front": "Radiative energy",
+   "back": "Energy carried by light. It can warm a planet's surface or change molecules in our eyes.",
+   "short": "Energy carried by light",
+   "src": "Cosmic Perspective 4.3, Figure 4.11"
+  },
+  {
+   "id": "cv-c39",
+   "front": "Food Calorie in joules",
+   "back": "1 food Calorie is about 4184 J, so 2500 Calories a day is about 10 million joules.",
+   "short": "One Calorie is about 4184 J",
+   "src": "Cosmic Perspective 4.3, Table 4.1 text"
+  },
+  {
+   "id": "cv-c40",
+   "front": "Recoil rule from conservation of momentum",
+   "back": "When something starts at rest and splits, m1 × v1 = m2 × v2 in opposite directions (bullet and rifle, gas and rocket).",
+   "short": "Recoil: equal and opposite momentum",
+   "src": "Momentum deck slide 2; Cosmic Perspective 4.3 (rocket)"
   }
  ],
  "quiz": [
   {
    "id": "cv-1",
-   "q": "A 2 kg ball moves at 3 m/s. What is its kinetic energy?",
+   "q": "A 1500 kg car travelling at 20 m/s brakes to a complete stop. By conservation of energy, about how much kinetic energy is converted into thermal energy in the brakes, tires and road?",
    "options": [
-    "6 J",
-    "3 J",
-    "9 J",
-    "12 J",
-    "18 J"
+    "3.0 × 10⁴ J",
+    "3.0 × 10⁵ J",
+    "6.0 × 10⁵ J",
+    "1.5 × 10⁴ J",
+    "6.0 × 10⁶ J"
    ],
-   "answer": 2,
-   "why": "E = ½ × m × v² = ½ × 2 × 3 × 3 = 9 J. Using mv (6) or mv² (18) are the usual slips.",
-   "source": "Energy deck slide 3"
+   "answer": 1,
+   "why": "Kinetic energy = ½ × 1500 × 20² = ½ × 1500 × 400 = 300,000 J, and all of it becomes thermal energy. Using mv gives 30,000 and dropping the ½ gives 600,000.",
+   "source": "Energy deck slides 3, 9 (numbers made for this site, outside source)"
   },
   {
    "id": "cv-2",
    "q": "If a car's speed doubles, its kinetic energy",
    "options": [
-    "increases by a factor of 4.",
     "stays the same.",
     "doubles.",
     "triples.",
+    "increases by a factor of 4.",
     "is cut in half."
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Speed is squared in E = ½ mv², so doubling v gives 2 × 2 = 4 times the energy.",
    "source": "Energy deck slide 3; Practice questions Q16"
   },
   {
    "id": "cv-3",
-   "q": "A 70 kg cyclist rides at 10 m/s. What is the cyclist's kinetic energy?",
+   "q": "A 4000 kg truck travels at 10 m/s and a 1000 kg car travels at 20 m/s along the same road. Which statement is correct?",
    "options": [
-    "700 J",
-    "350 J",
-    "7000 J",
-    "35,000 J",
-    "3500 J"
+    "The truck has more kinetic energy and more momentum.",
+    "The car has more kinetic energy, and the truck has more momentum.",
+    "They have equal kinetic energy, and the truck has more momentum.",
+    "They have equal kinetic energy and equal momentum.",
+    "The car has more kinetic energy and more momentum."
    ],
-   "answer": 4,
-   "why": "E = ½ × 70 × 10 × 10 = ½ × 7000 = 3500 J. Forgetting the ½ gives 7000 J, and using mv gives 700.",
-   "source": "Energy deck slide 3 (numbers made for this site, outside source)"
+   "answer": 2,
+   "why": "Kinetic energy: truck ½ × 4000 × 10² = 200,000 J and car ½ × 1000 × 20² = 200,000 J, so they are equal. Momentum: truck 4000 × 10 = 40,000 and car 1000 × 20 = 20,000 kg × m/s, so the truck has more.",
+   "source": "Energy deck slide 3; Momentum deck slide 3 (numbers made for this site, outside source)"
   },
   {
    "id": "cv-4",
-   "q": "A 1000 kg car travels at 20 m/s. What is its momentum?",
+   "q": "In deep space, a rocket starts at rest. The rocket body (without the gas) has mass 500 kg. It expels 5 kg of hot gas backward at 1000 m/s. What is the rocket's speed forward afterwards?",
    "options": [
-    "10,000 kg × m/s",
-    "20,000 kg × m/s",
-    "200,000 kg × m/s",
-    "50 kg × m/s",
-    "2,000 kg × m/s"
+    "5 m/s",
+    "20 m/s",
+    "100 m/s",
+    "1000 m/s",
+    "10 m/s"
    ],
-   "answer": 1,
-   "why": "Momentum p = m × v = 1000 × 20 = 20,000 kg × m/s. The 10,000 option wrongly includes a ½.",
-   "source": "Momentum deck slide 3 (numbers made for this site, outside source)"
+   "answer": 4,
+   "why": "The gas has 5 × 1000 = 5000 kg × m/s of momentum backward. Total momentum started at zero, so the rocket gets 5000 kg × m/s forward: 500 × v = 5000, so v = 10 m/s.",
+   "source": "Momentum deck slide 2; Cosmic Perspective 4.3 (rocket and conservation of momentum) and 4.2 Figure 4.6 (numbers made for this site, outside source)"
   },
   {
    "id": "cv-5",
-   "q": "A 5 kg rock sits 10 m above the ground. Use g = 10 m/s². What is its gravitational potential energy?",
+   "q": "A 0.5 kg ball is thrown straight up at 10 m/s from the ground. Ignoring air and using g = 10 m/s², how high does it rise?",
    "options": [
-    "50 J",
-    "100 J",
-    "250 J",
-    "500 J",
-    "5000 J"
+    "5 m",
+    "2.5 m",
+    "10 m",
+    "20 m",
+    "50 m"
    ],
-   "answer": 3,
-   "why": "E = m × g × h = 5 × 10 × 10 = 500 J.",
-   "source": "Energy deck slide 8"
+   "answer": 0,
+   "why": "Starting kinetic energy ½ × 0.5 × 10² = 25 J becomes potential energy at the top: 0.5 × 10 × h = 25, so h = 5 m. The mass cancels: h = v²/(2g) = 100/20 = 5 m.",
+   "source": "Energy deck slides 3 and 8; Cosmic Perspective Figure 4.15a (numbers made for this site, outside source)",
+   "img": {
+    "src": "img/conserve/ball_flight.jpg",
+    "alt": "A ball thrown in an arc from a hand, with more potential energy at the top and more kinetic energy near the ground."
+   }
   },
   {
    "id": "cv-6",
@@ -1025,72 +1250,76 @@
   },
   {
    "id": "cv-7",
-   "q": "Use c = 3 × 10⁸ m/s. If 2 kg of mass were completely converted into energy, how much energy would be released?",
+   "q": "Use c = 3 × 10⁸ m/s. A 1 kg rock is completely converted into energy. Burning 1 liter of oil releases about 1.2 × 10⁷ J. About how many times more energy does the rock release?",
    "options": [
-    "6 × 10⁸ J",
-    "6 × 10¹⁶ J",
-    "9 × 10¹⁶ J",
-    "1.8 × 10¹⁷ J",
-    "3.6 × 10¹⁷ J"
+    "7.5 × 10⁶ times",
+    "2.5 × 10⁹ times",
+    "1.3 × 10⁻¹⁰ times",
+    "7.5 × 10⁹ times",
+    "7.5 × 10⁸ times"
    ],
    "answer": 3,
-   "why": "E = mc² = 2 × (3 × 10⁸)² = 2 × 9 × 10¹⁶ = 1.8 × 10¹⁷ J. The 9 × 10¹⁶ J option is only for 1 kg.",
-   "source": "Energy deck slide 7; Cosmic Perspective Mathematical Insight 4.2"
+   "why": "E = mc² = 1 × (3 × 10⁸)² = 9 × 10¹⁶ J. Dividing: 9 × 10¹⁶ / 1.2 × 10⁷ = 7.5 × 10⁹. Forgetting to square c, or flipping the ratio, gives the wrong powers of ten.",
+   "source": "Cosmic Perspective Mathematical Insight 4.2 (p.122); Energy deck slide 7"
   },
   {
    "id": "cv-8",
-   "q": "A 2 kg ball moves in a circle at 3 m/s on a string of length 4 m (velocity perpendicular to the string). What is its angular momentum?",
+   "q": "A 2 kg ball is whirled in a circle at 3 m/s on a 4 m string (velocity perpendicular to the string). The string is then pulled in to 2 m with no outside torque. What are the new speed and the angular momentum?",
    "options": [
-    "24 kg × m²/s",
-    "6 kg × m²/s",
-    "9 kg × m²/s",
-    "12 kg × m²/s",
-    "18 kg × m²/s"
+    "3 m/s and 12 kg × m²/s",
+    "6 m/s and 24 kg × m²/s",
+    "6 m/s and 12 kg × m²/s",
+    "12 m/s and 48 kg × m²/s",
+    "1.5 m/s and 24 kg × m²/s"
    ],
-   "answer": 0,
-   "why": "L = m × v × r = 2 × 3 × 4 = 24 kg × m²/s.",
-   "source": "Momentum deck slide 10 (numbers made for this site, outside source)"
+   "answer": 1,
+   "why": "L = m v r = 2 × 3 × 4 = 24 kg × m²/s and it stays 24. With r = 2 m: 2 × v × 2 = 24, so v = 6 m/s. Half the radius means double the speed, and L does not change.",
+   "source": "Momentum deck slides 10-12 (numbers made for this site, outside source)"
   },
   {
    "id": "cv-9",
-   "q": "The 2 kg ball from the last question is whirled at 3 m/s on a 4 m string. The string is shortened to 2 m with no outside torque. What is the new speed?",
+   "q": "Earth is about 147 million km from the Sun in early January and about 152 million km in early July. Its orbital speed in January is about 30.3 km/s. Use conservation of angular momentum to estimate its speed in July.",
    "options": [
-    "1.5 m/s",
-    "3 m/s",
-    "4.5 m/s",
-    "12 m/s",
-    "6 m/s"
+    "31.3 km/s",
+    "30.3 km/s",
+    "28.3 km/s",
+    "25.3 km/s",
+    "29.3 km/s"
    ],
    "answer": 4,
-   "why": "L stays 24. With r = 2 m: 2 × v × 2 = 24, so v = 6 m/s. Half the radius means double the speed.",
-   "source": "Momentum deck slides 11-12"
+   "why": "m × v × r is constant, so v(July) = 30.3 × 147 / 152 = 4454 / 152 ≈ 29.3 km/s. Farther from the Sun means slower. Flipping the ratio gives 31.3, which is the wrong direction.",
+   "source": "Cosmic Perspective 4.3, Figure 4.9 (distances and January speed are standard values, outside source); Momentum deck slides 10-11",
+   "img": {
+    "src": "img/conserve/orbit_fig49.jpg",
+    "alt": "An oval orbit around the Sun: where the distance r is greater the velocity v is smaller, and where r is smaller v is greater."
+   }
   },
   {
    "id": "cv-10",
-   "q": "A comet's angular momentum is conserved. At 1 unit from the Sun it moves at 10 km/s. How fast does it move when it is 4 units from the Sun?",
+   "q": "Which statements about angular momentum are correct?\nI. Earth moves faster in its orbit when it is closer to the Sun.\nII. A planet needs a continuing twisting push (torque) to keep orbiting the Sun.\nIII. A skater who pulls in her arms spins faster.",
    "options": [
-    "5 km/s",
-    "2.5 km/s",
-    "10 km/s",
-    "20 km/s",
-    "40 km/s"
+    "I only",
+    "II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
    ],
-   "answer": 1,
-   "why": "m × v × r is constant, so 10 × 1 = v × 4 and v = 2.5 km/s. Farther from the Sun means slower.",
-   "source": "Momentum deck slides 10-11; Cosmic Perspective Figure 4.9 (numbers made for this site, outside source)"
+   "answer": 2,
+   "why": "I is true because m × v × r is constant, so a smaller r means a larger v. II is false: with no torque the angular momentum stays the same and the orbit continues by itself. III is true for the same reason.",
+   "source": "Momentum deck slides 10-12; Cosmic Perspective 4.3, Figures 4.9 and 4.10"
   },
   {
    "id": "cv-11",
-   "q": "A rifle of mass 4 kg fires a 0.01 kg bullet at 400 m/s. The rifle starts at rest. What is the rifle's recoil velocity?",
+   "q": "A 4 kg rifle, initially at rest, fires a 0.01 kg bullet at 400 m/s. Which pair of statements is correct?",
    "options": [
-    "0.1 m/s backward",
-    "1 m/s forward",
-    "4 m/s backward",
-    "1 m/s backward",
-    "100 m/s backward"
+    "The rifle recoils backward at 1 m/s, and the bullet ends up with 400 times more kinetic energy than the rifle.",
+    "The rifle recoils backward at 1 m/s, and the bullet and the rifle end up with equal kinetic energy.",
+    "The rifle recoils backward at 1 m/s, and the rifle ends up with more kinetic energy than the bullet.",
+    "The rifle recoils backward at 100 m/s, and the bullet ends up with more kinetic energy than the rifle.",
+    "The rifle recoils backward at 4 m/s, and since the momenta are equal the kinetic energies are equal."
    ],
-   "answer": 3,
-   "why": "The bullet's momentum is 0.01 × 400 = 4 kg × m/s forward. Total momentum starts at 0, so the rifle gets 4 kg × m/s backward: 4 × v = 4, v = 1 m/s backward.",
+   "answer": 0,
+   "why": "Bullet momentum = 0.01 × 400 = 4 kg × m/s forward, so the rifle gets 4 kg × m/s backward: 4 × v = 4, v = 1 m/s. Kinetic energies: bullet ½ × 0.01 × 400² = 800 J and rifle ½ × 4 × 1² = 2 J, a ratio of 400. Equal momentum does not mean equal energy.",
    "source": "Momentum deck slides 2-3; Practice questions Q14 (numbers made for this site, outside source)"
   },
   {
@@ -1104,36 +1333,44 @@
     "all of the above"
    ],
    "answer": 0,
-   "why": "I keeps both momentum and energy. II changes the total momentum from +2m to -2m. III keeps momentum but raises the energy from 2m to 10m.",
-   "source": "Momentum deck slides 4-9"
+   "why": "I keeps both momentum and energy. II changes the total momentum from +2m to -2m. III keeps momentum (-2m + 4m = +2m) but raises the energy from 2m to 10m.",
+   "source": "Momentum deck slides 4-9",
+   "img": {
+    "src": "img/conserve/pool_before.jpg",
+    "alt": "A red ball moving right toward a black 8-ball at rest, labeled red: 2 m/s right and black: at rest."
+   }
   },
   {
    "id": "cv-13",
-   "q": "A curling stone is pushed into an identical stationary stone. Could the first stone bounce straight back at the same speed while the second stays still?",
+   "q": "Suppose a curling stone is slid towards another identical stone that is stationary. Which of the following correctly describes a scenario where, after colliding, the first stone travels back at the same speed while the second stone remains stationary?",
    "options": [
-    "Yes, as long as energy is conserved.",
-    "No, it would violate conservation of energy.",
-    "No, it would violate E = mc².",
-    "No, it would violate conservation of momentum.",
-    "Yes, because every force has an equal and opposite reaction."
+    "Such a scenario is impossible, as it violates Newton's third law.",
+    "Such a scenario can happen in reality, as momentum and energy are both conserved.",
+    "Such a scenario is impossible, as it violates energy conservation.",
+    "Such a scenario is impossible, as it violates conservation of momentum.",
+    "Such a scenario is impossible, as it violates mass-energy equivalence."
    ],
    "answer": 3,
-   "why": "Momentum before is +mv and after is -mv, so it changes with no outside force. The energy is actually unchanged (½ mv² both times), so energy is not the problem.",
+   "why": "Momentum before is +mv and after is -mv, so it changes with no outside force. The kinetic energy is actually unchanged (½ mv² both times), so energy is not the problem.",
    "source": "Practice Test 2 Q11; Momentum deck slides 6-7"
   },
   {
    "id": "cv-14",
-   "q": "The red ball (2 m/s) hits the black ball at rest, bounces back at 2 m/s, and the black ball moves right at 4 m/s (equal masses). Which law does this break?",
+   "q": "A 0.2 kg red ball moving right at 2 m/s hits an identical black ball at rest. Afterwards the red ball moves left at 2 m/s and the black ball moves right at 4 m/s. Which statement is correct?",
    "options": [
-    "Conservation of momentum only",
-    "Conservation of energy only",
-    "Both conservation of momentum and of energy",
-    "Neither law",
-    "Conservation of angular momentum"
+    "Momentum is violated, and the total kinetic energy afterwards is 0.8 J.",
+    "Energy is violated: the total kinetic energy afterwards is 2.0 J, up from 0.4 J.",
+    "Energy is violated: the total kinetic energy afterwards is 1.6 J, up from 0.4 J.",
+    "Both laws are violated, and the total kinetic energy afterwards is 2.4 J.",
+    "Neither law is violated, and the total kinetic energy afterwards is 0.4 J."
    ],
    "answer": 1,
-   "why": "Momentum is fine (-2m + 4m = 2m). But kinetic energy would go from 2m to 10m, creating energy from nothing.",
-   "source": "Momentum deck slides 8-9"
+   "why": "Momentum: before 0.2 × 2 = 0.4; after 0.2 × (-2) + 0.2 × 4 = 0.4, so momentum is fine. Energy: before ½ × 0.2 × 2² = 0.4 J; after ½ × 0.2 × 2² + ½ × 0.2 × 4² = 0.4 + 1.6 = 2.0 J, so energy would be created from nothing.",
+   "source": "Momentum deck slides 8-9 (0.2 kg mass added for this site, outside source)",
+   "img": {
+    "src": "img/conserve/pool_c.jpg",
+    "alt": "A red ball moving left at 2 m/s and a black 8-ball moving right at 4 m/s."
+   }
   },
   {
    "id": "cv-15",
@@ -1153,13 +1390,13 @@
    "id": "cv-16",
    "q": "Why does a rifle kick backward when it fires a bullet?",
    "options": [
+    "Gravity pulls the rifle toward the shooter.",
+    "By conservation of momentum, the bullet's forward momentum is matched by the rifle's backward momentum.",
     "The explosion creates new energy that pushes the rifle back.",
     "Air in front of the barrel pushes back on the rifle.",
-    "Gravity pulls the rifle toward the shooter.",
-    "Some of the gunpowder's mass is converted into energy (E = mc²).",
-    "The bullet's forward momentum is matched by the rifle's backward momentum."
+    "Some of the gunpowder's mass is converted into energy (E = mc²)."
    ],
-   "answer": 4,
+   "answer": 1,
    "why": "Total momentum starts at zero and must stay zero, so the rifle gets backward momentum equal to the bullet's forward momentum.",
    "source": "Momentum deck slide 2; Practice questions Q14"
   },
@@ -1167,42 +1404,42 @@
    "id": "cv-17",
    "q": "A large spinning star collapses into a much smaller neutron star. What happens to its rotation?",
    "options": [
-    "It spins much faster, because its radius shrank while its angular momentum stayed the same.",
     "It spins more slowly, because it has less surface area.",
     "It spins at the same rate, because no outside force acted.",
     "Its angular momentum increases, so it spins faster.",
-    "Its angular momentum decreases, but it spins faster."
+    "Its angular momentum decreases, but it spins faster.",
+    "It spins much faster, because its radius shrank while its angular momentum stayed the same."
    ],
-   "answer": 0,
+   "answer": 4,
    "why": "No outside torque means L = mvr stays constant. A smaller r forces a larger v.",
    "source": "Momentum deck slide 12; Practice questions Q15"
   },
   {
    "id": "cv-18",
-   "q": "A cowboy swings a lasso and then lets out more rope. What happens because of conservation of angular momentum?",
+   "q": "A cowboy is swinging a lasso and lets out more rope. Which of the following will happen due to conservation of angular momentum?",
    "options": [
-    "The rotation speeds up, because the end of the rope is farther out.",
-    "The rotation rate stays the same as long as the rope's mass stays the same.",
-    "The rotation slows down, because the loop must travel a larger distance at the same speed.",
-    "The rotation slows down, because the radius increased.",
-    "The cowboy starts spinning."
+    "The rotation rate will slow down, since the radial distance to the loop end of the rope has increased.",
+    "The rotation rate will increase, since the speed of the loop end of the rope has increased.",
+    "The rotation rate will stay the same as long as the mass of the rope remains constant.",
+    "The rotation rate will slow down, since the loop end of the rope has to traverse a larger distance at the same speed.",
+    "The cowboy will start spinning."
    ],
-   "answer": 3,
-   "why": "L = mvr is constant, so a bigger r means a smaller v. The speed itself drops, so it is not a case of the same speed over a longer path.",
+   "answer": 0,
+   "why": "L = mvr is constant, so a bigger r means a smaller v. The speed itself drops, so option D, which assumes the same speed, is wrong.",
    "source": "Momentum deck slide 12; Practice Test 2 Q12"
   },
   {
    "id": "cv-19",
    "q": "Which has more thermal energy: a large pot of boiling water (100 °C) or a tiny firework spark (1000 °C)?",
    "options": [
+    "The pot of water, because it has vastly more particles, so its total kinetic energy is greater.",
     "The spark, because it has a higher temperature.",
     "They have equal thermal energy.",
-    "The pot of water, because it has vastly more particles, so its total kinetic energy is greater.",
     "The spark, because it has more mass.",
     "Neither, because only moving objects have thermal energy."
    ],
-   "answer": 2,
-   "why": "Thermal energy is total kinetic energy, so it depends on temperature and the amount of matter. Temperature is only the average.",
+   "answer": 0,
+   "why": "Thermal energy is total kinetic energy, so it depends on temperature and the amount of matter. Temperature is only the average per particle.",
    "source": "Energy deck slides 5-6; Practice questions Q18"
   },
   {
@@ -1221,7 +1458,7 @@
   },
   {
    "id": "cv-21",
-   "q": "Which statements about energy are correct?\nI. Energy can be converted from one form to another.\nII. Stars create new energy out of nothing.\nIII. Nuclear fusion in stars turns some mass into energy.",
+   "q": "Which statements about energy are correct?\nI. Temperature and thermal energy measure exactly the same thing.\nII. A rock perched on a ledge has gravitational potential energy because it could fall.\nIII. The random motion of the atoms in a parked car gives it more thermal energy than the car's kinetic energy at highway speed.",
    "options": [
     "I only",
     "I and II only",
@@ -1229,9 +1466,9 @@
     "II and III only",
     "all of the above"
    ],
-   "answer": 2,
-   "why": "Energy is never created or destroyed (so II is false), but it changes form, and fusion turns mass into energy (E = mc²).",
-   "source": "Energy deck slides 2, 7"
+   "answer": 3,
+   "why": "I is false: temperature is the average per particle while thermal energy is the total. II is true. III is true: a car's thermal energy is about 1 × 10⁸ J while its kinetic energy at highway speed is about 1 × 10⁶ J.",
+   "source": "Cosmic Perspective 4.3, Table 4.1 and 'Thermal Energy' (p.120); Energy deck slides 4-8"
   },
   {
    "id": "cv-22",
@@ -1245,7 +1482,11 @@
    ],
    "answer": 0,
    "why": "Kinetic energy converts to potential energy on the way up. At the top the ball's speed is momentarily zero, so the kinetic energy is lowest and the stored energy is highest. The total is unchanged.",
-   "source": "Energy deck slide 8"
+   "source": "Energy deck slide 8; Cosmic Perspective Figure 4.15a",
+   "img": {
+    "src": "img/conserve/ball_flight.jpg",
+    "alt": "A ball thrown in an arc from a hand, with more potential energy at the top and more kinetic energy near the ground."
+   }
   },
   {
    "id": "cv-23",
@@ -1259,52 +1500,406 @@
    ],
    "answer": 1,
    "why": "The particles fall inward and lose potential energy. By conservation of energy that energy has to go somewhere, and it becomes the random motion of the particles, which is thermal energy.",
-   "source": "Cosmic Perspective 4.3, Figure 4.15b; Energy deck slides 8-9"
+   "source": "Cosmic Perspective 4.3, Figure 4.15b; Energy deck slides 8-9",
+   "img": {
+    "src": "img/conserve/cloud_shrink.jpg",
+    "alt": "A big gray gas cloud shrinking into a small hot glow, with labels for stored gravitational energy and thermal energy."
+   }
   },
   {
    "id": "cv-24",
-   "q": "A satellite slowly loses altitude because of drag from the thin upper atmosphere. What happens to its orbital energy?",
+   "q": "A satellite in low Earth orbit slowly loses altitude because of drag from the thin upper atmosphere. What happens to its orbital energy?",
    "options": [
     "It increases, so the satellite moves to a higher orbit.",
     "It stays exactly the same.",
+    "It decreases, turning into heat, so the satellite gradually falls toward Earth.",
     "It is converted into extra mass for the satellite.",
-    "It is transferred to the Moon.",
-    "It decreases, turning into heat, so the satellite gradually falls toward Earth."
+    "It is transferred to the Moon."
    ],
-   "answer": 4,
+   "answer": 2,
    "why": "Energy cannot vanish. The satellite's orbital energy goes into thermal energy of the air, so the satellite has less and drops.",
-   "source": "Energy deck slides 2, 9; Practice questions Q19; Orbits deck slide 3 lists drag; textbook 4.5 Atmospheric Drag"
+   "source": "Energy deck slides 2, 9; Practice questions Q19; textbook 4.5 Atmospheric Drag"
   },
   {
    "id": "cv-25",
-   "q": "Which unit is used to measure energy?",
+   "q": "Which combination of base units is equivalent to the joule, the unit of energy?",
    "options": [
-    "newton (N)",
-    "kelvin (K)",
+    "kg × m/s²",
     "kg × m/s",
-    "joule (J)",
+    "kg × m²/s",
+    "kg × m²/s²",
     "m/s²"
    ],
    "answer": 3,
-   "why": "The joule is the unit of energy: 1 J = 1 N × m = 1 kg × m²/s². Newton is force, kelvin is temperature, kg × m/s is momentum and m/s² is acceleration.",
-   "source": "Energy deck slide 1"
+   "why": "1 J = 1 N × m = 1 kg × m²/s². The newton (kg × m/s²) is force, kg × m/s is momentum, kg × m²/s is angular momentum and m/s² is acceleration.",
+   "source": "Energy deck slide 1; Momentum deck slides 3 and 10"
   },
   {
    "id": "cv-26",
-   "q": "Earth's angular momentum is conserved as it orbits the Sun. When Earth is closer to the Sun, its orbital speed is",
+   "q": "An adult needs about 2500 food Calories per day, and 1 Calorie is about 4184 J. A candy bar supplies about 1 × 10⁶ J. About how many candy bars equal one day of food energy?",
    "options": [
-    "slower, because gravity is stronger.",
-    "the same, because Earth's mass does not change.",
-    "zero at the closest point.",
-    "faster, because angular momentum increases when r decreases.",
-    "faster, because the smaller r must be balanced by a larger v."
+    "2.5",
+    "4",
+    "10",
+    "25",
+    "100"
+   ],
+   "answer": 2,
+   "why": "2500 × 4184 = 10,460,000 J, about 1 × 10⁷ J. Dividing by 1 × 10⁶ J per candy bar gives about 10 candy bars.",
+   "source": "Cosmic Perspective 4.3, text before Table 4.1 (p.120)"
+  },
+  {
+   "id": "cv-27",
+   "q": "In the picture, gasoline is shown as stored energy. A car burns it and drives down the road. Which energy change has happened?",
+   "options": [
+    "Kinetic energy of the car turns into potential energy in the gasoline.",
+    "Radiative energy of sunlight turns into chemical energy inside the engine.",
+    "Potential energy is created from nothing while the engine runs.",
+    "The gasoline loses all of its mass, which becomes light.",
+    "Chemical potential energy in the gasoline turns into kinetic energy of the car (plus some thermal energy)."
    ],
    "answer": 4,
-   "why": "L = mvr is constant. When r gets smaller v must get larger. This matches Kepler's second law.",
-   "source": "Momentum deck slides 10-11; Cosmic Perspective 4.3, Figure 4.9"
+   "why": "Gasoline holds chemical potential energy. Burning it releases that energy, which becomes the kinetic energy of the moving car and some thermal energy. Energy changes form but is never created.",
+   "source": "Cosmic Perspective 4.3, Figure 4.11 (p.120)",
+   "img": {
+    "src": "img/conserve/types_fig411.jpg",
+    "alt": "Three photos joined by arrows: racing cyclists for kinetic energy, sunlight on a sunflower for radiative energy and a gasoline pump for potential energy."
+   }
+  },
+  {
+   "id": "cv-28",
+   "q": "A 0.2 kg red ball moving right at 2 m/s hits an identical black ball at rest (as in the picture). Afterwards the red ball is still moving right, at 0.5 m/s. What is the black ball's speed, and what happens to the total kinetic energy?",
+   "options": [
+    "1.5 m/s; it stays at 0.40 J.",
+    "1.5 m/s; it falls from 0.40 J to 0.25 J.",
+    "2.5 m/s; it rises from 0.40 J to 0.65 J.",
+    "1.0 m/s; it falls from 0.40 J to 0.125 J.",
+    "2.0 m/s; it rises from 0.40 J to 0.425 J."
+   ],
+   "answer": 1,
+   "why": "Momentum: 0.2 × 2 = 0.2 × 0.5 + 0.2 × v, so v = 1.5 m/s. Kinetic energy: before ½ × 0.2 × 2² = 0.40 J; after ½ × 0.2 × 0.5² + ½ × 0.2 × 1.5² = 0.025 + 0.225 = 0.25 J. The 0.15 J lost became heat and sound.",
+   "source": "Cosmic Perspective 4.3, Figure 4.8 (pool balls; numbers made for this site, outside source); Momentum deck slides 4-9",
+   "img": {
+    "src": "img/conserve/pool_before.jpg",
+    "alt": "A red ball moving right toward a black 8-ball at rest, labeled red: 2 m/s right and black: at rest."
+   }
+  },
+  {
+   "id": "cv-29",
+   "q": "Use c = 3 × 10⁸ m/s. How much mass must be completely converted into energy to release 4.5 × 10¹⁶ J?",
+   "options": [
+    "0.5 kg",
+    "0.05 kg",
+    "5 kg",
+    "1.5 × 10⁸ kg",
+    "2 kg"
+   ],
+   "answer": 0,
+   "why": "m = E / c² = 4.5 × 10¹⁶ / (9 × 10¹⁶) = 0.5 kg. Using c instead of c² gives 1.5 × 10⁸ kg, and a 1 kg rock would give 9 × 10¹⁶ J, twice as much.",
+   "source": "Energy deck slide 7; Cosmic Perspective Mathematical Insight 4.2"
   }
  ],
  "games": [
   "match"
+ ],
+ "order": [
+  {
+   "title": "From the Big Bang to a thrown baseball",
+   "prompt": "Put the steps in the order the energy travels, from the earliest source to the moving ball.",
+   "why": "Hydrogen's mass-energy from the Big Bang is released by fusion in the Sun as sunlight. Plants turn sunlight into food, muscles release the food's chemical energy to move the arm, and the arm gives the ball its kinetic energy.",
+   "topLabel": "End: the ball moves",
+   "bottomLabel": "Start: the Big Bang",
+   "layers": [
+    {
+     "name": "Hydrogen's mass-energy (from the Big Bang)",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Nuclear fusion in the Sun",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Sunlight (radiative energy)",
+     "color": "#b45309"
+    },
+    {
+     "name": "Food (chemical potential energy)",
+     "color": "#15803d"
+    },
+    {
+     "name": "Muscles move the arm",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Moving baseball (kinetic energy)",
+     "color": "#1d4ed8"
+    }
+   ]
+  },
+  {
+   "title": "Temperature from coldest to hottest",
+   "prompt": "Order these from the lowest temperature to the highest.",
+   "why": "Absolute zero is 0 K, water freezes at 273.15 K and boils at 373.15 K, and oven air at about 200 °C (400 °F) is about 473 K.",
+   "topLabel": "Hottest",
+   "bottomLabel": "Coldest",
+   "layers": [
+    {
+     "name": "Absolute zero (0 K)",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Water freezes (273.15 K)",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Water boils (373.15 K)",
+     "color": "#b45309"
+    },
+    {
+     "name": "Oven air (about 473 K)",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Energy sizes from small to huge",
+   "prompt": "Order these amounts of energy from the smallest to the largest.",
+   "why": "In joules: sunlight on 1 m² for 1 s is about 1.3 × 10³, a candy bar 1 × 10⁶, a day of food 1 × 10⁷, 1 liter of oil 3.4 × 10⁷, fission of 1 kg of uranium-235 5.6 × 10¹³ and a 1-megaton H-bomb 4 × 10¹⁵.",
+   "topLabel": "Most energy",
+   "bottomLabel": "Least energy",
+   "layers": [
+    {
+     "name": "Sunlight on 1 m² for 1 second",
+     "color": "#0e7490"
+    },
+    {
+     "name": "A candy bar",
+     "color": "#15803d"
+    },
+    {
+     "name": "A day of food for an adult",
+     "color": "#4d7c0f"
+    },
+    {
+     "name": "Burning 1 liter of oil",
+     "color": "#b45309"
+    },
+    {
+     "name": "Fission of 1 kg of uranium-235",
+     "color": "#c2410c"
+    },
+    {
+     "name": "A 1-megaton H-bomb",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Test a collision story",
+   "prompt": "Put the steps for checking a proposed collision result in the order you would do them.",
+   "why": "First find the total momentum before and after (with signs) and see if they match. Then work out the kinetic energy before and after, because energy can fall but must not rise.",
+   "topLabel": "Last step",
+   "bottomLabel": "First step",
+   "layers": [
+    {
+     "name": "Add m × v of all balls before the hit",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Add m × v of all balls after the hit",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Check that the two momentum totals match",
+     "color": "#15803d"
+    },
+    {
+     "name": "Find ½ m v² of all balls before and after",
+     "color": "#b45309"
+    },
+    {
+     "name": "Check that the energy did not go up",
+     "color": "#b91c1c"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Which kind of energy?",
+   "prompt": "Sort each example into kinetic, potential or radiative energy.",
+   "buckets": [
+    "Kinetic (motion)",
+    "Potential (stored)",
+    "Radiative (light)"
+   ],
+   "items": [
+    {
+     "text": "A cyclist riding fast",
+     "b": 0
+    },
+    {
+     "text": "A rock falling",
+     "b": 0
+    },
+    {
+     "text": "A planet orbiting the Sun",
+     "b": 0
+    },
+    {
+     "text": "Atoms jiggling inside a hot rock (thermal energy)",
+     "b": 0
+    },
+    {
+     "text": "Gasoline in a car's tank",
+     "b": 1
+    },
+    {
+     "text": "A rock perched on a ledge",
+     "b": 1
+    },
+    {
+     "text": "Food that is not yet eaten",
+     "b": 1
+    },
+    {
+     "text": "The mass of a rock (E = mc²)",
+     "b": 1
+    },
+    {
+     "text": "A gas cloud spread out under its own gravity",
+     "b": 1
+    },
+    {
+     "text": "Sunlight warming a planet's surface",
+     "b": 2
+    },
+    {
+     "text": "Light that lets your eyes see",
+     "b": 2
+    },
+    {
+     "text": "The glow of a light bulb",
+     "b": 2
+    }
+   ],
+   "why": "Motion energy (including thermal energy) is kinetic, stored energy (chemical, gravitational, mass-energy) is potential, and energy carried by light is radiative."
+  },
+  {
+   "title": "Which law explains it?",
+   "prompt": "Sort each situation by the conservation law that explains it best.",
+   "buckets": [
+    "Momentum",
+    "Angular momentum",
+    "Energy"
+   ],
+   "items": [
+    {
+     "text": "A rifle kicks backward when it fires",
+     "b": 0
+    },
+    {
+     "text": "A rocket speeds forward as gas shoots out the back",
+     "b": 0
+    },
+    {
+     "text": "A spacecraft coasts with its engines off",
+     "b": 0
+    },
+    {
+     "text": "One pool ball hands its motion to another",
+     "b": 0
+    },
+    {
+     "text": "Earth moves faster when closer to the Sun",
+     "b": 1
+    },
+    {
+     "text": "A skater spins faster when she pulls in her arms",
+     "b": 1
+    },
+    {
+     "text": "A collapsing star spins faster",
+     "b": 1
+    },
+    {
+     "text": "A lasso slows when more rope is let out",
+     "b": 1
+    },
+    {
+     "text": "A ball slows rising and speeds up falling",
+     "b": 2
+    },
+    {
+     "text": "A shrinking gas cloud gets hot",
+     "b": 2
+    },
+    {
+     "text": "Fusion turns some mass into light",
+     "b": 2
+    },
+    {
+     "text": "Drag heats the air and a satellite sinks",
+     "b": 2
+    }
+   ],
+   "why": "Straight-line motion and recoil come from momentum, spinning and orbiting from angular momentum, and trades between forms (motion, height, heat, light, mass) from energy."
+  },
+  {
+   "title": "Is this collision possible?",
+   "prompt": "A red ball at 2 m/s hits an identical black ball at rest. Sort each proposed result by whether it obeys both laws (momentum and no energy gain).",
+   "buckets": [
+    "Obeys both laws",
+    "Breaks a law"
+   ],
+   "items": [
+    {
+     "text": "Red stops; black moves right at 2 m/s",
+     "b": 0
+    },
+    {
+     "text": "They stick together and move right at 1 m/s",
+     "b": 0
+    },
+    {
+     "text": "Red 0.5 m/s right; black 1.5 m/s right",
+     "b": 0
+    },
+    {
+     "text": "Red 0.25 m/s right; black 1.75 m/s right",
+     "b": 0
+    },
+    {
+     "text": "Red bounces back at 2 m/s; black stays at rest",
+     "b": 1
+    },
+    {
+     "text": "Red bounces back at 2 m/s; black moves right at 4 m/s",
+     "b": 1
+    },
+    {
+     "text": "Red bounces back at 1 m/s; black moves right at 3 m/s",
+     "b": 1
+    },
+    {
+     "text": "Red stops; black moves right at 1 m/s",
+     "b": 1
+    },
+    {
+     "text": "Both balls move right at 2 m/s",
+     "b": 1
+    },
+    {
+     "text": "Red moves left at 1 m/s; black moves right at 1 m/s",
+     "b": 1
+    }
+   ],
+   "why": "With equal masses m the starting momentum is 2m and the starting kinetic energy is 2m. Allowed results keep the momentum at 2m and have kinetic energy of at most 2m. Failing the first check breaks momentum, and passing it with more than 2m of energy breaks energy conservation."
+  }
+ ],
+ "calc": [
+  "kinetic",
+  "ke-double",
+  "momentum"
  ]
 }
