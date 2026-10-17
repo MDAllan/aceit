@@ -22,12 +22,15 @@ function load() {
 function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {} }; }
 export const progress = () => data;
 
+const subs = [];
+export const onChange = (fn) => subs.push(fn);
 export function save() {
   try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {}
   const d = new Date().toISOString().slice(0, 10);
   data.days[d] = 1;
   clearTimeout(timer);
   timer = setTimeout(push, 1500);
+  subs.forEach((f) => { try { f(); } catch {} });
 }
 
 async function push() {

@@ -1,8 +1,10 @@
 import * as S from "./store.js";
-import { h, md, clean, ic, toast, shuffle, confetti, pick } from "./ui.js";
+import { h, md, clean, ic, toast, shuffle, confetti, pick, floatXP } from "./ui.js";
 
 export const DEFAULT_GAMES = ["match", "memory", "blitz", "guess", "speed", "picture"];
 
+const EMOJI = { match: "\u{1F9E9}", memory: "\u{1F9E0}", blitz: "\u26A1", guess: "\u{1F4A1}", speed: "\u23F1\uFE0F", picture: "\u{1F5BC}\uFE0F", timeline: "\u23F3", order: "\u{1FA9C}", halflife: "\u2622\uFE0F", sort: "\u{1F5C2}\uFE0F", calc: "\u{1F9EE}" };
+const GCOL = { match: "#2a9d8f", memory: "#6c5ce7", blitz: "#ee6c4d", guess: "#3d9be9", speed: "#e63946", picture: "#2fa36b", timeline: "#8d6a9f", order: "#e76f51", halflife: "#2fa7b5", sort: "#c44fb0", calc: "#4361ee" };
 const META = {
   match: ["games", "#2563eb", "Matching cards", "Match each term with its meaning."],
   memory: ["cards", "#7c3aed", "Memory flip", "Flip two face-down cards to find pairs."],
@@ -24,13 +26,14 @@ export function renderGame(b, lec, all) {
     b.replaceChildren(h("p", { style: "color:var(--mute);margin:6px 0" }, "Pick a game. Playing any 3 counts toward your completion."),
       h(".grid", lec.games.filter((g) => META[g] && ok(g)).map((g, i) => {
         const [icon, col, name, desc] = META[g], played = S.progress().games[lec.id + ":" + g];
-        return h("button.card.gcard", { style: `animation:rise .4s var(--ease) ${i * 40}ms backwards`, onclick: () => start(g) },
-          h(".gi", { style: `background:${col}` }, ic(icon, 22)), h("div", { style: "flex:1" }, h("b", name), h(".src", { style: "margin:0" }, desc)),
+        return h("button.card.gcard", { style: `animation:rise .4s var(--ease) ${i * 40}ms backwards;--gc:${GCOL[g] || col}`, onclick: () => start(g) },
+          h(".gi", EMOJI[g] || ""), h("div", { style: "flex:1" }, h("b", name), h(".src", { style: "margin:0" }, desc)),
           played ? h("span.pill", { style: "background:var(--ok)" }, "Played") : "");
       })));
   };
   const start = (g) => {
-    b.replaceChildren(h("button.btn.alt.sm", { onclick: draw, style: "margin:8px 0" }, ic("left", 16), "All games"));
+    b.style.setProperty("--c", GCOL[g] || "var(--brand)");
+    b.replaceChildren(h("button.btn.alt.sm", { onclick: () => { b.style.removeProperty("--c"); draw(); }, style: "margin:8px 0" }, ic("left", 16), "All games"));
     const box = h("div"); b.append(box);
     const again = () => { box.replaceChildren(); G[g](box, lec, again); };
     G[g](box, lec, again);
@@ -66,7 +69,7 @@ const G = {
       };
       grid.append(el);
     });
-    b.append(h("h2", "Matching cards"), h("p", "Tap a term, then tap its meaning."), info, grid);
+    b.append(h("h2", "\u{1F9E9} Matching cards"), h("p", "Tap a term, then tap its meaning."), info, grid);
   },
 
   /* ---- memory: face-down pairs ---- */
@@ -88,7 +91,7 @@ const G = {
       };
       grid.append(el);
     });
-    b.append(h("h2", "Memory flip"), h("p", "Flip two cards. A term and its meaning make a pair."), info, grid);
+    b.append(h("h2", "\u{1F9E0} Memory flip"), h("p", "Flip two cards. A term and its meaning make a pair."), info, grid);
   },
 
   /* ---- true / false blitz ---- */
@@ -96,14 +99,14 @@ const G = {
     const rounds = pick(lec.cards, 10); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "blitz"); if (score >= 8) confetti(); return b.append(endCard("Blitz finished", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "blitz"); if (score >= 8) confetti(); return b.append(endCard("\u26A1 Blitz finished!", score, rounds.length, again)); }
       const c = rounds[i], truth = Math.random() < 0.5;
       const other = pick(lec.cards.filter((x) => x.id !== c.id && txt(x) !== txt(c)), 1)[0];
       const shown = truth ? txt(c) : txt(other);
       const fb = h("div", { "aria-live": "polite" });
       const ans = (v) => {
-        const ok = v === truth; if (ok) score++;
-        fb.replaceChildren(h(".fb", h("b", ok ? "Correct! " : "Oops. "), truth ? "Yes: " : "Not quite. The real meaning: ", md(`${c.front} = ${txt(c)}`)), nextBtn(i + 1 === rounds.length, () => { i++; draw(); }));
+        const ok = v === truth; if (ok) { score++; floatXP("\u2705 +1"); }
+        fb.replaceChildren(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F605} Oops. "), truth ? "Yes: " : "Not quite. The real meaning: ", md(`${c.front} = ${txt(c)}`)), nextBtn(i + 1 === rounds.length, () => { i++; draw(); }));
         btns.forEach((x) => (x.disabled = true));
       };
       const btns = [h("button.btn.ok", { onclick: () => ans(true) }, "True"), h("button.btn.warn", { onclick: () => ans(false) }, "False")];
@@ -118,11 +121,11 @@ const G = {
     const rounds = pick(lec.cards, 8); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "guess"); if (score >= 6) confetti(); return b.append(endCard("Terms guessed", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "guess"); if (score >= 6) confetti(); return b.append(endCard("\u{1F4A1} Terms guessed!", score, rounds.length, again)); }
       const c = rounds[i], opts = shuffle([c, ...pick(lec.cards.filter((x) => x.id !== c.id), 3)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcd"[k]), h("span", md(o.front))); bt.onclick = () => {
-        if (got) return; got = true; const ok = o === c; if (ok) score++;
+        if (got) return; got = true; const ok = o === c; if (ok) { score++; floatXP("\u2705 +1"); }
         els.forEach((x, j) => { if (opts[j] === c) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
         fb.append(nextBtn(i + 1 === rounds.length, () => { i++; draw(); }));
       }; return bt; });
@@ -139,20 +142,20 @@ const G = {
     const bar = h(".row", { style: "justify-content:space-between" }, h("span", "Time ", clock), h("span", "Score ", sc), cmb);
     const body = h("div");
     const tick = setInterval(() => { if (!b.isConnected) return clearInterval(tick); t--; clock.textContent = t; if (t <= 0) { clearInterval(tick); finish(); } }, 1000);
-    const finish = () => { if (over) return; over = true; done(lec, "speed"); if (score >= 6) confetti(); b.replaceChildren(endCard("Time's up!", score, i, again, h("p", `Best streak: ${best}`))); };
+    const finish = () => { if (over) return; over = true; done(lec, "speed"); if (score >= 6) confetti(); b.replaceChildren(endCard("\u23F1\uFE0F Time's up!", score, i, again, h("p", `Best streak: ${best}`))); };
     const draw = () => {
       if (over) return;
       const q = qs[i % qs.length]; let got = false;
       const els = q.options.map((o, k) => { const bt = h("button.opt", h("b", "abcde"[k]), h("span", md(o))); bt.onclick = () => {
         if (got || over) return; got = true; const ok = k === q.answer; i++;
-        if (ok) { score++; combo++; best = Math.max(best, combo); } else combo = 0;
+        if (ok) { score++; combo++; best = Math.max(best, combo); floatXP("\u2705 +1"); } else combo = 0;
         sc.textContent = score; cmb.textContent = combo >= 2 ? `${combo} streak` : "";
         els.forEach((x, j) => { if (j === q.answer) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
         setTimeout(draw, ok ? 450 : 1100);
       }; return bt; });
       body.replaceChildren(h(".card", h(".q", md(q.q)), els));
     };
-    b.append(h("h2", "60-second sprint"), bar, body); draw();
+    b.append(h("h2", "\u23F1\uFE0F 60-second sprint"), bar, body); draw();
   },
 
   /* ---- picture quiz ---- */
@@ -160,11 +163,11 @@ const G = {
     const secs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title)), rounds = pick(secs, Math.min(8, secs.length)); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "picture"); if (score >= rounds.length - 2) confetti(); return b.append(endCard("Picture quiz done", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "picture"); if (score >= rounds.length - 2) confetti(); return b.append(endCard("\u{1F5BC}\uFE0F Picture quiz done!", score, rounds.length, again)); }
       const s = rounds[i], im = pick(s.images, 1)[0], opts = shuffle([s, ...pick(secs.filter((x) => x !== s), 3)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcd"[k]), h("span", clean(o.title))); bt.onclick = () => {
-        if (got) return; got = true; const ok = o === s; if (ok) score++;
+        if (got) return; got = true; const ok = o === s; if (ok) { score++; floatXP("\u2705 +1"); }
         els.forEach((x, j) => { if (opts[j] === s) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
         fb.append(nextBtn(i + 1 === rounds.length, () => { i++; draw(); }));
       }; return bt; });
@@ -185,7 +188,7 @@ const G = {
     const draw = () => {
       b.replaceChildren();
       const inRange = T.events.filter((e) => !range || (e.ma <= range.from && e.ma >= range.to));
-      b.append(h("h2", "Earth's timeline"), h("p", { style: "color:var(--mute)" }, "Top bar: all 4,570 million years to scale. Bottom bar: zoom on the last 542 million. Tap a block to filter events."),
+      b.append(h("h2", "\u23F3 Earth's timeline"), h("p", { style: "color:var(--mute)" }, "Top bar: all 4,570 million years to scale. Bottom bar: zoom on the last 542 million. Tap a block to filter events."),
         h(".src", "Whole history (4570 to 0 Ma)"), bar(T.eons, T.total), h(".src", "Zoom: Phanerozoic eras (542 to 0 Ma)"), bar(T.eras, 542),
         h(".row", range ? [h("span.pill", { style: `background:${range.color}` }, `${range.name}: ${range.from} to ${range.to} Ma`), h("button.btn.alt.sm", { onclick: () => { range = null; draw(); } }, "Show all")] : h(".src", "Showing all events")),
         range?.note ? h(".card", { style: "margin:8px 0" }, h("b", "About the " + range.name), h("p", { style: "margin:.2rem 0 0" }, md(range.note))) : "",
@@ -240,7 +243,7 @@ const G = {
     const revOut = h("p");
     rev.oninput = () => { const p = +rev.value; if (!(p > 0 && p <= 100)) { revOut.textContent = ""; return; } const x = iso[sel.value], k = Math.log2(100 / p);
       revOut.replaceChildren("If ", h("b", p + "%"), " of the parent is left, the sample is about ", h("b", span(k * x.half, x.unit)), ` old (${k.toFixed(2)} half-lives).`); };
-    b.append(h("h2", "Half-life calculator"), h("label", "Isotope"), sel, h("label", "Half-lives passed"), n, h("div", { style: "margin:10px 0" }, vis), out,
+    b.append(h("h2", "\u2622\uFE0F Half-life calculator"), h("label", "Isotope"), sel, h("label", "Half-lives passed"), n, h("div", { style: "margin:10px 0" }, vis), out,
       h("h3", { style: "margin-top:16px" }, "Run it backwards: find the age"), h("label", "% of parent isotope still left"), rev, revOut);
     upd();
   },
@@ -256,9 +259,9 @@ const G = {
           return b.append(h(".card.pop", { style: "text-align:center" }, h("h2", act.title), h(".score", `${score}/${items.length}`), h("button.btn", { style: "margin-top:10px", onclick: () => { ai = (ai + 1) % acts.length; run(acts[ai]); } }, more ? "Next activity" : "Play again"))); }
         const it = items[i]; let got = false; const fb = h("div", { "aria-live": "polite" });
         const bt = act.buckets.map((name, k) => h("button.btn.alt", { onclick: () => {
-          if (got) return; got = true; const ok = k === it.b; if (ok) score++;
+          if (got) return; got = true; const ok = k === it.b; if (ok) { score++; floatXP("\u2705 +1"); }
           bt.forEach((x, j) => { x.disabled = true; if (j === it.b) x.classList.add("ok"); });
-          fb.append(h(".fb", h("b", ok ? "Correct! " : "Not quite. "), `It belongs with "${act.buckets[it.b]}".`, i === items.length - 1 || ok ? "" : "", act.why && !ok ? h("span", " ", md(act.why)) : ""), nextBtn(i + 1 === items.length, () => { i++; draw(); }));
+          fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), `It belongs with "${act.buckets[it.b]}".`, i === items.length - 1 || ok ? "" : "", act.why && !ok ? h("span", " ", md(act.why)) : ""), nextBtn(i + 1 === items.length, () => { i++; draw(); }));
         } }, md(name)));
         b.append(h("h2", act.title), act.prompt ? h("p", { style: "color:var(--mute)" }, md(act.prompt)) : "", h(".src", `Item ${i + 1} of ${items.length}`), h(".bar", h("i", { style: `width:${(i / items.length) * 100}%` })),
           h(".card", { style: "margin-top:10px" }, h(".sortitem", md(it.text)), h(".bkts.c" + Math.min(act.buckets.length, 3), bt), fb));
@@ -274,14 +277,14 @@ const G = {
     const gens = ids.map((id) => CALC[id]).filter(Boolean);
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds) { done(lec, "calc"); if (score >= 6) confetti(); return b.append(endCard("Calculations done", score, rounds, again)); }
+      if (i >= rounds) { done(lec, "calc"); if (score >= 6) confetti(); return b.append(endCard("\u{1F9EE} Calculations done!", score, rounds, again)); }
       let g; do { g = gens[i % gens.length](); } while (g.wrong.length < 3);
       const opts = shuffle([g.ans, ...g.wrong.slice(0, 4)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcde"[k]), h("span", o)); bt.onclick = () => {
-        if (got) return; got = true; const ok = o === g.ans; if (ok) { score++; combo++; } else combo = 0;
+        if (got) return; got = true; const ok = o === g.ans; if (ok) { score++; combo++; floatXP("\u2705 +1"); } else combo = 0;
         els.forEach((x, j) => { if (opts[j] === g.ans) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
-        fb.append(h(".fb", h("b", ok ? "Correct! " : "Not quite. "), combo >= 3 ? h("span.combo", `${combo} in a row! `) : "", md(g.why)), nextBtn(i + 1 === rounds, () => { i++; draw(); }));
+        fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), combo >= 3 ? h("span.combo", `\u{1F525} ${combo} in a row! `) : "", md(g.why)), nextBtn(i + 1 === rounds, () => { i++; draw(); }));
       }; return bt; });
       b.append(h(".src", `Problem ${i + 1} of ${rounds}`), h(".bar", h("i", { style: `width:${(i / rounds) * 100}%` })), h(".card", { style: "margin-top:10px" }, h(".q", g.q), els, fb));
     };

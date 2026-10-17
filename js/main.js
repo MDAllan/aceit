@@ -1,11 +1,20 @@
 import * as S from "./store.js";
 import { renderGame, DEFAULT_GAMES } from "./games.js";
-import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf } from "./ui.js";
+import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp } from "./ui.js";
 
 const app = $("#app");
 let LECS = [];
 let SUBJECTS = [];
 const EXAMS = {};
+const CLASS_COLORS = { erth209: "#2a9d8f", astr207: "#6c5ce7" };
+const PALETTES = {
+  erth209: ["#2a9d8f", "#e76f51", "#457b9d", "#8d6a9f", "#5f9e4e", "#bc4749", "#277da1", "#c9822b", "#577590"],
+  astr207: ["#6c5ce7", "#3d9be9", "#2fa7b5", "#9b5de5", "#4361ee", "#7b2cbf", "#4895ef"],
+};
+let curCls = null; try { curCls = localStorage.getItem("erth209:cls"); } catch {}
+const myClasses = () => SUBJECTS.filter((sj) => S.hasAccess(sj.id));
+const clsOf = () => { const m = myClasses(); return m.find((x) => x.id === curCls) || m[0] || null; };
+function setCls(id) { curCls = id; try { localStorage.setItem("erth209:cls", id); } catch {} }
 const subjOf = (l) => SUBJECTS.find((x) => x.id === l.subject);
 const open_ = () => LECS.filter((l) => S.hasAccess(l.subject));
 
@@ -15,8 +24,11 @@ async function boot() {
   SUBJECTS = await (await fetch("content/subjects.json")).json();
   LECS = (await Promise.all(SUBJECTS.flatMap((sj) => sj.lectures.map((f) => fetch("content/" + f + ".json").then((r) => r.json()).then((l) => ({ ...l, subject: sj.id })))))).filter(Boolean);
   await Promise.all(SUBJECTS.filter((sj) => sj.exams).map((sj) => fetch("content/" + sj.exams + ".json").then((r) => (r.ok ? r.json() : null)).then((e) => { if (e?.tests?.length) EXAMS[sj.id] = e; }).catch(() => {})));
-  LECS.forEach((l) => { l.cards ||= []; l.games = [...new Set([...DEFAULT_GAMES, ...(l.games || []), l.order?.length && "order", l.sort?.length && "sort", l.calc?.length && "calc"].filter(Boolean))]; l.color = "var(--brand)"; });
-  SUBJECTS.forEach((sj) => (sj.color = "var(--brand)"));
+  LECS.forEach((l) => { l.cards ||= []; l.games = [...new Set([...DEFAULT_GAMES, ...(l.games || []), l.order?.length && "order", l.sort?.length && "sort", l.calc?.length && "calc"].filter(Boolean))]; });
+  SUBJECTS.forEach((sj) => (sj.color = CLASS_COLORS[sj.id] || "#0d3b66"));
+  const nth = {};
+  LECS.forEach((l) => { const pal = PALETTES[l.subject] || ["#0d3b66"]; nth[l.subject] = nth[l.subject] || 0; l.color = pal[nth[l.subject]++ % pal.length]; });
+  S.onChange(checkMilestones);
   window.addEventListener("hashchange", route);
   document.addEventListener("keydown", (e) => { if (document.activeElement?.matches("input,select,textarea")) return; if (e.key === "ArrowRight") window.__next?.(); if (e.key === "ArrowLeft") window.__prev?.(); });
   route();
@@ -33,6 +45,9 @@ function route() {
   window.__next = window.__prev = null;
   const parts = (location.hash.replace(/^#\/?/, "") || "").split("/");
   if (parts[0] === "reset") return viewReset();
+  document.documentElement.style.removeProperty("--c");
+  if (parts[0] === "s" && S.hasAccess(parts[1])) setCls(parts[1]);
+  if (parts[0] === "l") { const lx = LECS.find((z) => z.id === parts[1]); if (lx && S.hasAccess(lx.subject)) setCls(lx.subject); }
   const g = gate();
   if (g === "auth") return viewAuth();
   if (g === "setup") return authBox("Almost there", h("p", "Your account was created but its profile is missing. The site owner needs to run the latest database patch (supabase/patch1.sql), then press Retry."),
@@ -45,11 +60,13 @@ function route() {
 function shell(parts) {
   const page = parts[0] || "";
   const admin = S.isAdmin();
-  const x = S.xp(LECS);
+  const cc = clsOf(), x = S.xp(pool_());
+  if (cc) document.documentElement.style.setProperty("--c", cc.color);
   app.replaceChildren(
     h("header.top", h(".in",
       h("button.brand", { onclick: () => (location.hash = "#/") }, h("span.logo", ic("star", 18)), "ACEIT"),
-      h(".xp", { title: `${x.xp} XP` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
+      cc ? h("button.cls", { style: `--tc:${cc.color}`, "aria-label": "Your classes", onclick: () => (location.hash = "#/") }, h("span.em", cc.icon), cc.name) : "",
+      h(".xp", { title: `${x.xp} XP in ${cc ? cc.name : "this class"}` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
       admin && !S.DEMO ? h("button.chip", { "aria-label": "Switch between admin and student view", onclick: () => { S.setPref("student", !S.pref("student")); route(); } }, ic("eye", 16), S.pref("student") ? "Student view" : "Admin view") : "",
       h("button.chip", { "aria-label": "Toggle dark mode", onclick: toggleTheme }, ic("moon", 16)),
       S.DEMO ? "" : h("button.avatar", { "aria-label": "Your profile", style: avatarStyle(), onclick: () => (location.hash = "#/profile") }, avatarGlyph(18)),
@@ -102,17 +119,17 @@ function viewProfile(v) {
     const cur = document.documentElement.dataset.theme || "auto";
     v.append(h(".hero", h("h1", "Your profile")),
       h(".card", h(".profhead", h("div.avatar.big", { style: avatarStyle() }, avatarGlyph(34)), h("div", h("b", { style: "font-size:1.1rem" }, S.myName()), h(".src", { style: "margin:2px 0" }, email), S.profile?.is_admin ? h("span.pill", { style: "background:#0d3b66" }, "Admin") : h("span.pill", `Level ${x.lvl}`)))),
-      h(".card", { style: "margin-top:12px" }, h("h3", "Avatar"), h(".src", { style: "margin:0 0 6px" }, "Pick a symbol and a colour."),
+      h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F3A8} Avatar"), h(".src", { style: "margin:0 0 6px" }, "Pick a symbol and a colour."),
         h(".pgrid", AV_SYMS.map((sy) => h("button" + (pf.avatarSym === sy ? ".on" : ""), { "aria-label": sy, onclick: () => { S.setPrefs({ avatarSym: sy }); draw(); } }, ic(sy, 22)))),
         h(".swatches", AV_COLS.map((cl) => h("button" + ((pf.avatarColor || AV_COLS[0]) === cl ? ".on" : ""), { style: `background:${cl}`, "aria-label": "Colour " + cl, onclick: () => { S.setPrefs({ avatarColor: cl }); draw(); } })))),
-      h(".card", { style: "margin-top:12px" }, h("h3", "Display name"), h(".row", { style: "flex-wrap:nowrap" }, nameIn, h("button.btn.sm", { onclick: async () => { const n = nameIn.value.trim(); if (!n) { nm.textContent = "Enter a name."; return; } await S.setName(n); toast("Name saved"); draw(); } }, "Save")), nm),
-      h(".card", { style: "margin-top:12px" }, h("h3", "Appearance"),
+      h(".card", { style: "margin-top:12px" }, h("h3", "\u270F\uFE0F Display name"), h(".row", { style: "flex-wrap:nowrap" }, nameIn, h("button.btn.sm", { onclick: async () => { const n = nameIn.value.trim(); if (!n) { nm.textContent = "Enter a name."; return; } await S.setName(n); toast("Name saved"); draw(); } }, "Save")), nm),
+      h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F319} Appearance"),
         h(".seg", [["auto", "Auto"], ["light", "Light"], ["dark", "Dark"]].map(([k, t]) => h("button.btn.sm" + (cur === k ? "" : ".alt"), { onclick: () => { setTheme(k); draw(); } }, t)))),
-      h(".card", { style: "margin-top:12px" }, h("h3", "My classes"),
-        h("div", SUBJECTS.filter((sj) => S.hasAccess(sj.id)).map((sj) => h(".row", { style: "padding:6px 0;flex-wrap:nowrap" }, symTile(sj, 34), h("b", `${sj.name}: ${sj.title}`)))),
+      h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4DA} My classes"),
+        h("div", SUBJECTS.filter((sj) => S.hasAccess(sj.id)).map((sj) => h(".row", { style: "padding:6px 0;flex-wrap:nowrap" }, emojiTile(sj, 34), h("b", `${sj.name}: ${sj.title}`)))),
         S.DEMO ? "" : h("div", { style: "margin-top:10px" }, joinCard())),
-      h(".card", { style: "margin-top:12px" }, h("h3", "Study stats"), h("p", { style: "margin:0" }, `Level ${x.lvl}, ${x.xp} XP` + (st ? `, ${st}-day streak` : "") + ".")),
-      S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "Password"), h(".row", { style: "flex-wrap:nowrap" }, pw, h("button.btn.sm", { onclick: async () => { pwMsg.style.color = ""; const r = await S.setNewPassword(pw.value); pwMsg.style.color = r.error ? "" : "var(--ok)"; pwMsg.textContent = r.error ? r.error.message : "Password updated."; if (!r.error) pw.value = ""; } }, "Update")), pwMsg),
+      h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4CA} Study stats"), h("p", { style: "margin:0" }, `Level ${x.lvl}, ${x.xp} XP` + (st ? `, ${st}-day streak` : "") + ".")),
+      S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F512} Password"), h(".row", { style: "flex-wrap:nowrap" }, pw, h("button.btn.sm", { onclick: async () => { pwMsg.style.color = ""; const r = await S.setNewPassword(pw.value); pwMsg.style.color = r.error ? "" : "var(--ok)"; pwMsg.textContent = r.error ? r.error.message : "Password updated."; if (!r.error) pw.value = ""; } }, "Update")), pwMsg),
       h(".card", { style: "margin-top:12px" }, h("h3", "Account"), h(".row",
         S.DEMO ? "" : h("button.btn", { onclick: async () => { await S.signOut(); location.hash = "#/"; route(); } }, ic("logout", 16), "Log out"),
         h("button.btn.alt", { onclick: async () => { if (confirm("Reset all of your progress? This cannot be undone.")) { await S.resetProgress(); toast("Progress reset"); route(); } } }, "Reset my progress"))));
@@ -201,38 +218,40 @@ function joinCard() {
   const submit = async () => {
     const code = inp.value.trim(); if (!code) return; go.disabled = true; err.textContent = "";
     const cid = await S.joinByCode(code, SUBJECTS.map((x) => x.id)); go.disabled = false;
-    if (cid) { const sj = SUBJECTS.find((x) => x.id === cid); toast(`Joined ${sj ? sj.name : "class"}!`); confetti(); route(); } else err.textContent = "That code doesn't match any class. Check it and try again.";
+    if (cid) { const sj = SUBJECTS.find((x) => x.id === cid); toast(`\u{1F389} Joined ${sj ? sj.name : "class"}!`); confetti(); route(); } else err.textContent = "That code doesn't match any class. Check it and try again.";
   };
   go.onclick = submit; inp.onkeydown = (e) => { if (e.key === "Enter") submit(); };
-  return h(".card", { style: "margin-bottom:14px" }, h("h3", "Join a class"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "Each class has its own code from your instructor."), h(".row", { style: "flex-wrap:nowrap" }, inp, go), err);
+  return h(".card", { style: "margin-bottom:14px" }, h("h3", "\u{1F39F}\uFE0F Join a class"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "Each class has its own code from your instructor."), h(".row", { style: "flex-wrap:nowrap" }, inp, go), err);
 }
 function viewHome(v) {
   const st = S.streak(), x = S.xp(open_()), lastp = S.last();
   const lastLec = lastp && open_().find((l) => l.id === lastp.lecId);
   const nm = S.DEMO ? "" : S.myName();
   const mine = SUBJECTS.filter((sj) => S.hasAccess(sj.id));
+  if (mine.length === 1) { viewSubject(v, mine[0].id); if (!S.DEMO) v.append(h("div", { style: "margin-top:16px" }, joinCard())); return; }
   v.append(
-    h(".hero", h("h1", nm ? `Hi ${nm}!` : "Welcome to ACEIT"), h("p", st ? `${st}-day streak. Keep it going.` : "Pick a class and start a streak today.")),
+    h(".hero", h("h1", nm ? `Hi ${nm}! \u{1F44B}` : "Welcome to ACEIT \u{1F44B}"), h("p", st ? `\u{1F525} ${st}-day streak. Keep it going.` : "Pick a class and start a streak today. \u{1F680}")),
     h(".card.row", { style: "margin-bottom:14px;justify-content:space-between" },
-      h("div", { style: "flex:1;min-width:150px" }, h("b", `Level ${x.lvl}`), h(".bar", { style: "margin:6px 0" }, h("i", { style: `width:${x.pct}%` })), h(".src", `${x.xp} XP. ${x.next - x.xp} more for level ${x.lvl + 1}`)),
+      h("div", { style: "flex:1;min-width:150px" }, h("b", `Level ${x.lvl}`), h(".bar", { style: "margin:6px 0" }, h("i", { style: `width:${x.pct}%` })), h(".src", h("span", { "data-count": x.xp }, "0"), ` XP. ${x.next - x.xp} more for level ${x.lvl + 1}`)),
       lastLec ? h("button.btn", { style: `--c:${lastLec.color}`, onclick: () => (location.hash = `#/l/${lastLec.id}/${lastp.tab || "notes"}`) }, "Continue: " + lastLec.title, ic("right", 18)) : ""),
     h("h2", "Your classes"),
     mine.length ? "" : h(".card", { style: "margin-bottom:12px" }, h("b", "You haven't joined a class yet"), h("p", { style: "margin:4px 0 0;color:var(--mute)" }, "Enter the class code from your instructor below to get started.")),
     h(".grid", mine.map((sj, i) => {
       const unlocked = true, t = subjectStats(sj);
-      return h("button.card.lec", { style: `animation-delay:${i * 60}ms`, onclick: () => (location.hash = `#/s/${sj.id}`) },
-        symTile(sj, 52),
+      return h("button.card.lec", { style: `animation-delay:${i * 60}ms;--tc:${sj.color}`, onclick: () => (location.hash = `#/s/${sj.id}`) },
+        emojiTile(sj, 52),
         h("div", { style: "flex:1" }, h("b", `${sj.name}: ${sj.title}`), h("small", t.n ? `${t.n} lectures` : "Coming soon")),
         t.n ? ring(t.pct, sj.color) : "");
     })),
     S.DEMO ? "" : h("div", { style: "margin-top:16px" }, joinCard()));
+  v.querySelectorAll("[data-count]").forEach((el) => countUp(el, +el.dataset.count));
 }
 
 function viewSubject(v, id) {
   const sj = SUBJECTS.find((x) => x.id === id);
   if (!sj) return viewHome(v);
   v.style.setProperty("--c", sj.color);
-  v.append(h(".hero", h(".row", { style: "flex-wrap:nowrap" }, symTile(sj, 48), h("div", { style: "flex:1" }, h("h1", `${sj.name}: ${sj.title}`), h("p", "Pick a lecture")))));
+  v.append(h(".hero", h(".row", { style: "flex-wrap:nowrap" }, emojiTile(sj, 48), h("div", { style: "flex:1" }, h("h1", `${sj.name}: ${sj.title}`), h("p", "Pick a lecture")))));
   if (!S.hasAccess(sj.id)) {
     const code = h("input", { placeholder: `${sj.name} class code`, autocomplete: "off", "aria-label": `${sj.name} class code` });
     const err = h("p.err", { role: "alert" });
@@ -246,8 +265,8 @@ function viewSubject(v, id) {
   const ex = EXAMS[sj.id];
   v.append(h(".grid", ls.map((l, i) => {
     const s = S.lectureStats(l);
-    return h("button.card.lec", { style: `animation-delay:${i * 45}ms`, onclick: () => (location.hash = `#/l/${l.id}/notes`) },
-      symTile(l, 52),
+    return h("button.card.lec", { style: `animation-delay:${i * 45}ms;--tc:${l.color}`, onclick: () => (location.hash = `#/l/${l.id}/notes`) },
+      emojiTile(l, 52),
       h("div", { style: "flex:1" }, h("b", l.title), h("small", (l.chapter || "") + ` · ${l.sections.length} topics`)),
       ring(s.pct, l.color));
   })));
@@ -255,23 +274,21 @@ function viewSubject(v, id) {
     const run = (t, shuf) => { v.replaceChildren(); const list = shuf ? shuffle(t.questions.slice()) : t.questions.slice(); runQuiz(v, list, t.title, sj.color, () => { v.replaceChildren(); viewSubject(v, id); }); };
     v.append(h("h2", { style: "margin-top:22px" }, "Practice exams"), h("p", { style: "color:var(--mute);margin:0 0 8px" }, ex.intro || "Real exam-style questions. Take them in order like a test, or shuffled."),
       h(".grid", ex.tests.map((t, i) => h(".card", { style: `animation:rise .4s var(--ease) ${i * 50}ms backwards` },
-        h(".row", { style: "flex-wrap:nowrap;margin-bottom:6px" }, h(".symtile", { style: `width:44px;height:44px;background:${sj.color}26;color:${sj.color}` }, ic("exam", 22)), h("div", h("b", t.title), h(".src", { style: "margin:0" }, `${t.questions.length} questions`))),
+        h(".row", { style: "flex-wrap:nowrap;margin-bottom:6px" }, h(".symtile", { style: `width:44px;height:44px;--tc:${sj.color}` }, "\u{1F4DD}"), h("div", h("b", t.title), h(".src", { style: "margin:0" }, `${t.questions.length} questions`))),
         t.blurb ? h("p", { style: "margin:4px 0 10px;color:var(--mute);font-size:.9rem" }, t.blurb) : "",
         h(".row", h("button.btn.sm", { style: `--c:${sj.color}`, onclick: () => run(t, false) }, "Start in order"), h("button.btn.alt.sm", { onclick: () => run(t, true) }, "Shuffled"))))));
   }
 }
 
-let focus = null; // class chosen on the Cards / Practice / Progress pages
-const pool_ = () => open_().filter((l) => !focus || l.subject === focus);
-function classChips(redraw) {
-  const subs = SUBJECTS.filter((sj) => S.hasAccess(sj.id) && LECS.some((l) => l.subject === sj.id));
-  if (subs.length < 2) { focus = subs[0]?.id || null; return ""; }
-  return h(".row", { style: "margin:4px 0 8px" }, h("button.chip" + (!focus ? ".on" : ""), { onclick: () => { focus = null; redraw(); } }, "All classes"),
-    subs.map((sj) => h("button.chip" + (focus === sj.id ? ".on" : ""), { onclick: () => { focus = sj.id; redraw(); } }, [ic(symOf(sj), 15), sj.name])));
+const pool_ = () => { const c = clsOf(); return c ? open_().filter((l) => l.subject === c.id) : []; };
+function classChips() {
+  const subs = myClasses().filter((sj) => LECS.some((l) => l.subject === sj.id)), cur = clsOf();
+  if (subs.length < 2) return "";
+  return h(".row", { style: "margin:4px 0 8px" }, subs.map((sj) => h("button.chip" + (cur?.id === sj.id ? ".on" : ""), { style: `--c:${sj.color}`, onclick: () => { setCls(sj.id); route(); } }, h("span.em", sj.icon), sj.name)));
 }
 
 /* ---------- lecture ---------- */
-const TABS = [["notes", "notes", "Notes"], ["cards", "cards", "Cards"], ["quiz", "quiz", "Quiz"], ["games", "games", "Games"]];
+const TABS = [["notes", "\u{1F4D6}", "Notes"], ["cards", "\u{1F0CF}", "Cards"], ["quiz", "\u2705", "Quiz"], ["games", "\u{1F3AE}", "Games"]];
 function viewLecture(v, id, tab) {
   const l = LECS.find((x) => x.id === id);
   if (!l) return viewHome(v);
@@ -281,8 +298,8 @@ function viewLecture(v, id, tab) {
   v.style.setProperty("--c", l.color);
   v.append(
     h("button.chip", { style: "margin-top:8px", onclick: () => (location.hash = `#/s/${l.subject}`) }, ic("left", 14), subjOf(l)?.name || "Back"),
-    h(".hero", { style: "padding-bottom:0" }, h(".row", { style: "flex-wrap:nowrap" }, symTile(l, 48), h("div", { style: "flex:1" }, h("h1", l.title), h("p", l.chapter || "")), ring(s.pct, l.color, 52))),
-    h(".tabs", TABS.map(([k, icn, t]) => h("button.tab" + (k === tab ? ".on" : ""), { onclick: () => (location.hash = `#/l/${id}/${k}`) }, ic(icn, 20), t))),
+    h(".hero", { style: "padding-bottom:0" }, h(".row", { style: "flex-wrap:nowrap" }, emojiTile(l, 48), h("div", { style: "flex:1" }, h("h1", l.title), h("p", l.chapter || "")), ring(s.pct, l.color, 52))),
+    h(".tabs", TABS.map(([k, icn, t]) => h("button.tab" + (k === tab ? ".on" : ""), { onclick: () => (location.hash = `#/l/${id}/${k}`) }, h("span.em", icn), t))),
   );
   const body = h("div"); v.append(body);
   if (tab === "notes") notes(body, l);
@@ -292,10 +309,10 @@ function viewLecture(v, id, tab) {
 }
 
 /* ----- notes: one topic per page, arrows to move ----- */
-const BOX = { why: ["bulb", "Why it works"], trick: ["brain", "Memory trick"], trap: ["alert", "Exam trap (admin only)"] };
+const BOX = { why: ["\u{1F4A1}", "Why it works"], trick: ["\u{1F9E0}", "Memory trick"], trap: ["\u26A0\uFE0F", "Exam trap (admin only)"] };
 function acc(cls, icon, title, content, open) {
   const body = h(".in", content);
-  const el = h(".acc." + cls + (open ? ".open" : ""), h("button", { "aria-expanded": !!open }, h("span.ico", ic(icon, 16)), title, h("span.chev", ic("down", 18))), h(".body", h("div", body)));
+  const el = h(".acc." + cls + (open ? ".open" : ""), h("button", { "aria-expanded": !!open }, h("span.ico", icon), title, h("span.chev", ic("down", 18))), h(".body", h("div", body)));
   el.firstChild.onclick = () => { const o = el.classList.toggle("open"); el.firstChild.setAttribute("aria-expanded", o); };
   return el;
 }
@@ -340,7 +357,7 @@ function notes(b, l) {
     pageIdx[l.id] = i;
     const p = pages[i], refs = S.canSeeRefs();
     const sel = h("select", { "aria-label": "Jump to topic", onchange: (e) => go(+e.target.value) }, pages.map((q, k) => h("option", { value: k, selected: k === i }, `${k + 1}. ${q.title}`)));
-    const go = (k, d) => { if (k < 0 || k >= pages.length) return; if (!pages[i].glance) S.markRead(l.id, pages[i].id); dir = d ?? (k > i ? 1 : -1); i = k; draw(); if (i === pages.length - 1 && pages.every((q) => q.glance || readSet()[q.id])) { confetti(60); } window.scrollTo({ top: 0, behavior: "smooth" }); };
+    const go = (k, d) => { if (k < 0 || k >= pages.length) return; if (!pages[i].glance && !readSet()[pages[i].id]) floatXP("+3 XP"); if (!pages[i].glance) S.markRead(l.id, pages[i].id); dir = d ?? (k > i ? 1 : -1); i = k; draw(); if (i === pages.length - 1 && pages.every((q) => q.glance || readSet()[q.id])) { confetti(60); } window.scrollTo({ top: 0, behavior: "smooth" }); };
     window.__next = () => go(i + 1); window.__prev = () => go(i - 1);
     const boxes = (p.boxes || []).filter((x) => x.type !== "trap" || refs);
     b.replaceChildren(
@@ -352,11 +369,12 @@ function notes(b, l) {
         stepper(p),
         (p.bullets || []).length ? h("ul.pts", p.bullets.map((x) => h("li", md(x)))) : "",
         boxes.map((x) => acc(x.type, BOX[x.type][0], BOX[x.type][1], md(x.text), false)),
-        p.table ? (p.glance ? table(p.table) : acc("cmp", "list", "Compare table", table(p.table), false)) : "",
+        p.table ? (p.glance ? table(p.table) : acc("cmp", "\u{1F4CA}", "Compare table", table(p.table), false)) : "",
         refs && p.sourceNotes ? h(".src.admin", "Source: " + p.sourceNotes.join(" · ")) : "",
       ),
       h(".row", { style: "justify-content:space-between;margin-top:12px" },
         h("button.btn.alt", { disabled: i === 0, onclick: () => go(i - 1) }, ic("left", 18), "Back"),
+        i === pages.length - 1 && l.quiz?.length >= 5 ? h("button.btn.alt", { onclick: () => { const qs = shuffle(l.quiz.slice()).slice(0, 5); runQuiz(b, qs, "Quick check", l.color, () => { b.replaceChildren(); notes(b, l); }); } }, "\u26A1 Quick check") : "",
         i === pages.length - 1 ? h("button.btn.ok", { onclick: () => { S.markRead(l.id, pages[i].id); location.hash = `#/l/${l.id}/cards`; } }, "Practice cards", ic("right", 18)) : h("button.btn", { onclick: () => go(i + 1) }, "Next", ic("right", 18))),
     );
   };
@@ -375,12 +393,12 @@ export function cards(b, all, color) {
       h("button.chip", { onclick: () => { deck = shuffle(deck); i = 0; draw(); } }, "Shuffle")),
       h(".bar", { style: `--c:${color}` }, h("i", { style: `width:${all.length ? (known / all.length) * 100 : 0}%` })),
       h(".src", `${known} of ${all.length} known`));
-    if (!deck.length) { b.append(h(".card.pop", { style: "margin-top:14px;text-align:center" }, h("h2", "Nothing left here!"), h("p", "You know every card in this set."))); confetti(70); return; }
+    if (!deck.length) { b.append(h(".card.pop", { style: "margin-top:14px;text-align:center" }, h("h2", "\u{1F389} Nothing left here!"), h("p", "You know every card in this set."))); confetti(70); return; }
     if (i >= deck.length) {
       const missed = all.filter((c) => S.cardState(c.id) !== "know");
       if (!missed.length) confetti();
-      b.append(h(".card.pop", { style: "margin-top:14px;text-align:center" }, h("h2", "Round done!"), h("p", `${known} known, ${missed.length} still learning.`),
-        missed.length ? h("button.btn", { onclick: () => { mode = "missed"; deck = missed; i = 0; draw(); } }, "Repeat missed cards") : h("p", "Perfect round!")));
+      b.append(h(".card.pop", { style: "margin-top:14px;text-align:center" }, h("h2", "\u{1F3AF} Round done!"), h("p", `${known} known, ${missed.length} still learning.`),
+        missed.length ? h("button.btn", { onclick: () => { mode = "missed"; deck = missed; i = 0; draw(); } }, "Repeat missed cards") : h("p", "\u{1F31F} Perfect round!")));
       return;
     }
     const c = deck[i];
@@ -389,14 +407,22 @@ export function cards(b, all, color) {
         h(".face.front", h("span.tag", "Term"), h("b", md(c.front)), h(".hint", "Tap to reveal")),
         h(".face.back", h("span.tag", "Meaning"), h("div", md(c.back)), S.canSeeRefs() && c.src ? h(".src.admin", c.src) : "")));
     const flip = () => fc.classList.toggle("flip");
-    fc.onclick = flip; fc.onkeydown = (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); flip(); } };
-    const mark = (v) => { S.setCard(c.id, v); i++; draw(); };
+    let sx = 0, dx = 0, drag = false, moved = false;
+    fc.addEventListener("pointerdown", (e) => { drag = true; moved = false; sx = e.clientX; dx = 0; fc.style.transition = "none"; });
+    fc.addEventListener("pointermove", (e) => { if (!drag) return; dx = e.clientX - sx; if (Math.abs(dx) > 10) moved = true; if (moved) { fc.style.transform = `translateX(${dx}px) rotate(${dx / 24}deg)`; fc.style.opacity = String(1 - Math.min(Math.abs(dx), 220) / 420); } });
+    const end = () => { if (!drag) return; drag = false; fc.style.transition = "transform .25s, opacity .25s";
+      if (dx > 90) { fc.classList.add("fly-r"); setTimeout(() => mark("know"), 300); }
+      else if (dx < -90) { fc.classList.add("fly-l"); setTimeout(() => mark("learning"), 300); }
+      else { fc.style.transform = ""; fc.style.opacity = ""; } };
+    fc.addEventListener("pointerup", end); fc.addEventListener("pointercancel", end);
+    fc.onclick = () => { if (moved) { moved = false; return; } flip(); }; fc.onkeydown = (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); flip(); } };
+    const mark = (v) => { if (v === "know") floatXP("+2 XP \u2B50"); S.setCard(c.id, v); i++; draw(); };
     window.__next = () => { i = Math.min(i + 1, deck.length); draw(); };
     window.__prev = () => { i = Math.max(i - 1, 0); draw(); };
     b.append(h(".pager", { style: "margin-top:12px" }, h("button.arrow", { "aria-label": "Previous card", disabled: i === 0, onclick: window.__prev }, ic("left", 22)),
       h(".mid.src", { style: "text-align:center;margin:0" }, `Card ${i + 1} of ${deck.length}`), h("button.arrow", { "aria-label": "Next card", onclick: window.__next }, ic("right", 22))),
-      fc, h(".row", { style: "justify-content:center" },
-        h("button.btn.warn", { onclick: () => mark("learning") }, "Still learning"), h("button.btn.ok", { onclick: () => mark("know") }, "I know it")));
+      fc, h(".swipehint", "Tap to flip. Swipe right if you know it, left if you're still learning."), h(".row", { style: "justify-content:center;margin-top:8px" },
+        h("button.btn.warn", { onclick: () => mark("learning") }, "\u{1F615} Still learning"), h("button.btn.ok", { onclick: () => mark("know") }, "\u{1F60E} I know it")));
   };
   draw();
 }
@@ -419,8 +445,8 @@ export function runQuiz(b, list, title, color, back) {
     if (i >= list.length) {
       const pct = score / list.length;
       if (pct >= 0.8) confetti(pct === 1 ? 140 : 80);
-      b.append(h(".card.pop", { style: "text-align:center;--c:" + color }, h("h2", title + " complete"), h(".score", `${score}/${list.length}`),
-        h("p", pct === 1 ? "Perfect score!" : pct >= 0.7 ? "Strong work." : "Good start. Review the mistakes and try again."),
+      b.append(h(".card.pop", { style: "text-align:center;--c:" + color }, h("h2", "\u{1F3C1} " + title + " complete"), h(".score", `${score}/${list.length}`),
+        h("p", pct === 1 ? "\u{1F3C6} Perfect score!" : pct >= 0.7 ? "\u{1F4AA} Strong work." : "\u{1F331} Good start. Review the mistakes and try again."),
         miss.length ? h("div", { style: "text-align:left" }, h("h3", "Missed"), miss.map((q) => h(".fb", md(q.q.split("\n")[0]), h(".src", "Answer: " + clean(q.options[q.answer]))))) : "",
         h("button.btn", { style: "margin-top:12px", onclick: back }, "Done")));
       return;
@@ -431,10 +457,10 @@ export function runQuiz(b, list, title, color, back) {
       const bt = h("button.opt", h("b", "abcde"[k]), h("span", md(o)));
       bt.onclick = () => {
         if (picked !== null) return; picked = k;
-        const ok = k === q.answer; if (ok) { score++; combo++; } else { miss.push(q); combo = 0; }
+        const ok = k === q.answer; if (ok) { score++; combo++; floatXP(combo >= 3 ? `+4 XP \u{1F525}x${combo}` : "+4 XP"); } else { miss.push(q); combo = 0; }
         S.recordAnswer(q.id, ok);
         opts.forEach((x, j) => { if (j === q.answer) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
-        fb.append(h(".fb", h("b", ok ? "Correct! " : "Not quite. "), combo >= 3 ? h("span.combo", `${combo} in a row! `) : "", md(q.why), S.canSeeRefs() ? h(".src.admin", "Source: " + q.source) : ""),
+        fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), combo >= 3 ? h("span.combo", `\u{1F525} ${combo} in a row! `) : "", md(q.why), S.canSeeRefs() ? h(".src.admin", "Source: " + q.source) : ""),
           h("button.btn", { style: "margin-top:10px", onclick: () => { i++; draw(); } }, i + 1 === list.length ? "See score" : "Next", ic("right", 18)));
       };
       return bt;
@@ -474,21 +500,36 @@ function viewPractice(v) {
   draw();
 }
 
-/* ---------- progress ---------- */
+/* ---------- progress, badges, milestones ---------- */
+function computeBadges() {
+  const pr = S.progress(), st = S.streak(), x = S.xp(open_());
+  return [
+    ["3-day streak", st >= 3, "\u{1F525}"], ["First topic read", Object.keys(pr.read).length > 0, "\u{1F4D6}"],
+    ["10 cards known", Object.values(pr.cards).filter((c) => c === "know").length >= 10, "\u{1F0CF}"],
+    ["10 questions right", Object.values(pr.quiz).filter((c) => c.last).length >= 10, "\u2705"],
+    ["First game", Object.keys(pr.games).length > 0, "\u{1F3AE}"], ["Lecture 100%", open_().some((l) => S.lectureStats(l).pct === 100), "\u{1F3C6}"],
+    ["Level 5", x.lvl >= 5, "\u2B50"],
+  ];
+}
+let checking = false;
+function checkMilestones() {
+  if (checking || S.DEMO) return; checking = true;
+  try {
+    const x = S.xp(open_()), pf = S.prefs(), now = computeBadges().filter((b) => b[1]).map((b) => b[0]);
+    if (pf.lvl == null) { S.setPrefs({ lvl: x.lvl, badges: now }); return; }
+    if (x.lvl > pf.lvl) { toast(`\u{1F389} Level ${x.lvl}! Nice work.`); confetti(110); S.setPrefs({ lvl: x.lvl }); }
+    const fresh = now.filter((n) => !(pf.badges || []).includes(n));
+    if (fresh.length) { setTimeout(() => { toast(`\u{1F3C5} Badge unlocked: ${fresh[0]}`); confetti(50); }, 900); S.setPrefs({ badges: now }); }
+  } finally { checking = false; }
+}
 function viewProgress(v) {
   const draw = () => {
     v.replaceChildren();
-    const LS = pool_(), st = S.streak(), x = S.xp(open_());
+    const LS = pool_(), st = S.streak(), x = S.xp(LS);
     const total = LS.length ? Math.round(LS.reduce((s, l) => s + S.lectureStats(l).pct, 0) / LS.length) : 0;
     const weak = LS.flatMap((l) => (l.quiz || []).filter((q) => { const p = S.progress().quiz[q.id]; return p && p.attempts && p.correct / p.attempts < 0.6; }).map((q) => ({ l, q })));
     const pr = S.progress();
-    const badges = [
-      [`3-day streak`, st >= 3, "fire"], ["First topic read", Object.keys(pr.read).length > 0, "notes"],
-      ["10 cards known", Object.values(pr.cards).filter((c) => c === "know").length >= 10, "cards"],
-      ["10 questions right", Object.values(pr.quiz).filter((c) => c.last).length >= 10, "quiz"],
-      ["First game", Object.keys(pr.games).length > 0, "games"], ["Lecture 100%", open_().some((l) => S.lectureStats(l).pct === 100), "star"],
-      ["Level 5", x.lvl >= 5, "star"],
-    ];
+    const badges = computeBadges();
     v.append(h(".hero", h("h1", "My progress")), classChips(draw),
       h(".card.row", ring(total, "var(--brand)", 76), h("div", h("b", "Overall completion"), h("p", { style: "margin:0;color:var(--mute)" }, `Level ${x.lvl} · ${x.xp} XP` + (st ? ` · ${st}-day streak` : "")))),
       h("h2", { style: "margin-top:18px" }, "By lecture"),
@@ -496,7 +537,7 @@ function viewProgress(v) {
         h(".src", `Notes ${s.read}/${s.secs} · Cards ${s.known}/${s.cards} · Quiz ${s.right}/${s.qs}`)); })),
       h("h2", { style: "margin-top:18px" }, "Weak topics"),
       weak.length ? weak.map(({ l, q }) => h(".fb", h("b", l.title + ": "), md(q.q.split(String.fromCharCode(10))[0]))) : h("p", "No weak topics yet. Take a quiz and they'll show up here."),
-      h("h2", { style: "margin-top:18px" }, "Badges"), h("div", badges.map(([t, on, icn]) => h("span.badge" + (on ? "" : ".lock"), ic(icn, 16), t))));
+      h("h2", { style: "margin-top:18px" }, "Badges"), h("div", badges.map(([t, on, icn]) => h("span.badge" + (on ? "" : ".lock"), icn, t))));
   };
   draw();
 }

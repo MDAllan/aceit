@@ -146,3 +146,21 @@ export function confetti(n = 90) {
   })();
 }
 export const pick = (a, n) => shuffle(a.slice()).slice(0, n);
+
+/* ---------- fun helpers ---------- */
+let lastPt = { x: innerWidth / 2, y: innerHeight / 2 };
+addEventListener("pointerdown", (e) => { lastPt = { x: e.clientX, y: e.clientY }; }, { passive: true });
+// a little "+4 XP" that floats up from where the student just tapped
+export function floatXP(text) {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const el = h(".floatxp", { style: `left:${Math.max(8, Math.min(innerWidth - 90, lastPt.x - 24))}px;top:${Math.max(60, lastPt.y - 30)}px` }, text);
+  document.body.append(el); setTimeout(() => el.remove(), 1000);
+}
+export function countUp(el, to, ms = 700) {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) { el.textContent = to; return; }
+  const t0 = performance.now();
+  (function f(t) { const k = Math.min(1, (t - t0) / ms); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(f); })(t0);
+}
+export function emojiTile(x, size = 52) {
+  return h(".symtile", { style: `width:${size}px;height:${size}px;--tc:${x.color || "var(--brand)"};font-size:${Math.round(size * 0.52)}px`, "aria-hidden": "true" }, x.icon || "\u{1F4D8}");
+}
