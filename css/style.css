@@ -15,8 +15,9 @@
 }
 :root[data-theme=dark]{--bg:#081f35;--card:#0e2d4b;--ink:#eef3fa;--mute:#a9bbd0;--line:#1f4569;--soft:#123a60;--brand:#8ec5ff;--on-brand:#0d3b66;--accent:#faf0ca;--accent-ink:#0d3b66;--ok:#5fc08e;--bad:#ef8c78;--why:#0f3b36;--trick:#262a5e;--trap:#3c1f1f;--trick-b:#a79bff;--shadow:0 2px 0 rgba(0,0,0,.35)}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Nunito,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+html{-webkit-text-size-adjust:100%;font-size:calc(16px * var(--fs,1))}
+:root[data-fs=lg]{--fs:1.15}:root[data-fs=xl]{--fs:1.3}
+body{margin:0;background:var(--bg);color:var(--ink);font:.9375rem/1.55 Nunito,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 h1,h2,h3{font-family:Lexend,Nunito,system-ui,sans-serif;line-height:1.2;margin:0 0 .4rem;font-weight:600;letter-spacing:-.01em}
 h1{font-size:1.55rem} h2{font-size:1.15rem} h3{font-size:1rem}
 a{color:var(--brand)}
@@ -249,3 +250,6 @@ button:focus-visible,input:focus-visible,select:focus-visible,.fc:focus-visible{
 .conf{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-size:.85rem;color:var(--mute)}
 .conf .chip{min-height:34px;padding:4px 10px;font-size:.8rem}
 .review{margin-bottom:12px}
+
+:root[data-font=easy] body,:root[data-font=easy] h1,:root[data-font=easy] h2,:root[data-font=easy] h3,:root[data-font=easy] button,:root[data-font=easy] input,:root[data-font=easy] select{font-family:"Atkinson Hyperlegible",Nunito,system-ui,sans-serif!important;letter-spacing:.01em}
+:root[data-motion=reduce] *{animation:none!important;transition:none!important}

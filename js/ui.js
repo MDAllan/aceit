@@ -134,7 +134,7 @@ export function shuffle(a) {
   return a;
 }
 export function confetti(n = 90) {
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (typeof reducedMotion === "function" && reducedMotion()) return;
   const c = h("canvas.confetti"); c.width = innerWidth; c.height = innerHeight; document.body.append(c);
   const g = c.getContext("2d"), cols = ["#2563eb", "#7c3aed", "#f59e0b", "#10b981", "#ef4444", "#ec4899"];
   const ps = Array.from({ length: n }, () => ({ x: Math.random() * c.width, y: -20 - Math.random() * c.height * 0.4, r: 4 + Math.random() * 6, vx: -2 + Math.random() * 4, vy: 3 + Math.random() * 4, a: Math.random() * 6, c: cols[(Math.random() * cols.length) | 0] }));
@@ -151,13 +151,14 @@ export const pick = (a, n) => shuffle(a.slice()).slice(0, n);
 let lastPt = { x: innerWidth / 2, y: innerHeight / 2 };
 addEventListener("pointerdown", (e) => { lastPt = { x: e.clientX, y: e.clientY }; }, { passive: true });
 // a little "+4 XP" that floats up from where the student just tapped
+export const reducedMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.dataset.motion === "reduce";
 export function floatXP(text) {
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (reducedMotion()) return;
   const el = h(".floatxp", { style: `left:${Math.max(8, Math.min(innerWidth - 90, lastPt.x - 24))}px;top:${Math.max(60, lastPt.y - 30)}px` }, text);
   document.body.append(el); setTimeout(() => el.remove(), 1000);
 }
 export function countUp(el, to, ms = 700) {
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches) { el.textContent = to; return; }
+  if (reducedMotion()) { el.textContent = to; return; }
   const t0 = performance.now();
   (function f(t) { const k = Math.min(1, (t - t0) / ms); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(f); })(t0);
 }

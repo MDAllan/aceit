@@ -2,6 +2,16 @@ import * as S from "./store.js";
 import { renderGame, DEFAULT_GAMES } from "./games.js";
 import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp } from "./ui.js";
 
+// accessibility options live on this device (text size, easy-read font, reduced motion)
+const A11Y_KEY = "erth209:a11y";
+const a11y = () => { try { return JSON.parse(localStorage.getItem(A11Y_KEY)) || {}; } catch { return {}; } };
+function applyA11y() {
+  const o = a11y(), r = document.documentElement;
+  r.dataset.fs = o.fs || "md"; r.dataset.motion = o.motion ? "reduce" : ""; r.dataset.font = o.easy ? "easy" : "";
+  if (o.easy && !document.getElementById("easyfont")) document.head.append(Object.assign(document.createElement("link"), { id: "easyfont", rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" }));
+}
+function setA11y(patch) { try { localStorage.setItem(A11Y_KEY, JSON.stringify({ ...a11y(), ...patch })); } catch {} applyA11y(); }
+
 const app = $("#app");
 let LECS = [];
 let SUBJECTS = [];
@@ -38,6 +48,8 @@ async function loadExams(sjId) {
 
 async function boot() {
   try { const t = localStorage.getItem("erth209:theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+  applyA11y();
+  if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
   await S.initBackend();
   const [subs, man] = await Promise.all([fetch("content/subjects.json").then((r) => r.json()), fetch("content/manifest.json").then((r) => r.json())]);
   SUBJECTS = subs;
@@ -64,6 +76,7 @@ async function route() {
   window.__next = window.__prev = null;
   const parts = (location.hash.replace(/^#\/?/, "") || "").split("/");
   if (parts[0] === "reset") return viewReset();
+  if (parts[0] === "privacy") return viewPrivacy();
   document.documentElement.style.removeProperty("--c");
   if (parts[0] === "s" && S.hasAccess(parts[1])) setCls(parts[1]);
   if (parts[0] === "l") { const lx = LECS.find((z) => z.id === parts[1]); if (lx && S.hasAccess(lx.subject)) setCls(lx.subject); }
@@ -155,11 +168,21 @@ function viewProfile(v) {
       h(".card", { style: "margin-top:12px" }, h("h3", "\u270F\uFE0F Display name"), h(".row", { style: "flex-wrap:nowrap" }, nameIn, h("button.btn.sm", { onclick: async () => { const n = nameIn.value.trim(); if (!n) { nm.textContent = "Enter a name."; return; } await S.setName(n); toast("Name saved"); draw(); } }, "Save")), nm),
       h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F319} Appearance"),
         h(".seg", [["auto", "Auto"], ["light", "Light"], ["dark", "Dark"]].map(([k, t]) => h("button.btn.sm" + (cur === k ? "" : ".alt"), { onclick: () => { setTheme(k); draw(); } }, t)))),
+      h(".card", { style: "margin-top:12px" }, h("h3", "\u267F Accessibility"),
+        h(".src", { style: "margin:0 0 6px" }, "Saved on this device."),
+        h("label", { style: "margin:6px 0 4px" }, "Text size"),
+        h(".seg", [["md", "Normal"], ["lg", "Large"], ["xl", "Extra large"]].map(([k, t]) => h("button.btn.sm" + ((a11y().fs || "md") === k ? "" : ".alt"), { onclick: () => { setA11y({ fs: k }); draw(); } }, t))),
+        h(".row", { style: "margin-top:10px" },
+          h("button.btn.sm" + (a11y().easy ? "" : ".alt"), { "aria-pressed": !!a11y().easy, onclick: () => { setA11y({ easy: !a11y().easy }); draw(); } }, (a11y().easy ? "\u2705 " : "") + "Easy-read font"),
+          h("button.btn.sm" + (a11y().motion ? "" : ".alt"), { "aria-pressed": !!a11y().motion, onclick: () => { setA11y({ motion: !a11y().motion }); draw(); } }, (a11y().motion ? "\u2705 " : "") + "Reduce motion"))),
       h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4DA} My classes"),
         h("div", SUBJECTS.filter((sj) => S.hasAccess(sj.id)).map((sj) => h(".row", { style: "padding:6px 0;flex-wrap:nowrap" }, emojiTile(sj, 34), h("b", `${sj.name}: ${sj.title}`)))),
         S.DEMO ? "" : h("div", { style: "margin-top:10px" }, joinCard())),
       h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4CA} Study stats"), h("p", { style: "margin:0" }, `Level ${x.lvl}, ${x.xp} XP` + (st ? `, ${st}-day streak` : "") + ".")),
       S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F512} Password"), h(".row", { style: "flex-wrap:nowrap" }, pw, h("button.btn.sm", { onclick: async () => { pwMsg.style.color = ""; const r = await S.setNewPassword(pw.value); pwMsg.style.color = r.error ? "" : "var(--ok)"; pwMsg.textContent = r.error ? r.error.message : "Password updated."; if (!r.error) pw.value = ""; } }, "Update")), pwMsg),
+      S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F5C4}\uFE0F Your data"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "You own your study data. Download it or delete your account at any time. ", h("a", { href: "#/privacy" }, "Privacy")),
+        h(".row", h("button.btn.alt.sm", { onclick: () => { const url = URL.createObjectURL(new Blob([JSON.stringify(S.exportData(), null, 2)], { type: "application/json" })); const a = h("a", { href: url, download: "aceit-my-data.json" }); document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000); toast("Downloaded"); } }, "Download my data"),
+          S.profile?.is_admin ? "" : h("button.btn.warn.sm", { onclick: async () => { const t = prompt("This permanently deletes your account and progress. Type DELETE to confirm."); if (t !== "DELETE") return; const r = await S.deleteMyAccount(); if (r.error) { toast("Could not delete: " + r.error.message); return; } toast("Account deleted"); location.hash = "#/"; route(); } }, "Delete my account"))),
       h(".card", { style: "margin-top:12px" }, h("h3", "Account"), h(".row",
         S.DEMO ? "" : h("button.btn", { onclick: async () => { await S.signOut(); location.hash = "#/"; route(); } }, ic("logout", 16), "Log out"),
         h("button.btn.alt", { onclick: async () => { if (confirm("Reset all of your progress? This cannot be undone.")) { await S.resetProgress(); toast("Progress reset"); route(); } } }, "Reset my progress"))));
@@ -168,9 +191,19 @@ function viewProfile(v) {
 }
 
 /* ---------- auth ---------- */
+function viewPrivacy() {
+  const back = () => { history.length > 1 ? history.back() : (location.hash = "#/"); };
+  app.replaceChildren(h("main.auth", { style: "max-width:640px" }, h("button.btn.alt.sm", { onclick: back, style: "margin-bottom:12px" }, ic("left", 16), "Back"),
+    h("h1", { style: "letter-spacing:0" }, "Privacy"), h(".card",
+      h("h3", "What ACEIT keeps about you"), h("ul", { style: "margin:4px 0 12px;padding-left:18px" }, h("li", "Your email address and the name you choose."), h("li", "Which classes you joined."), h("li", "Your study progress: topics read, cards reviewed, quiz answers and games played.")),
+      h("h3", "Who can see it"), h("p", "You can see all of it. The administrator of your class can see names, emails and progress so they can help students and remove people who should not be there. It is not shown to other students, and it is not sold or shared for advertising."),
+      h("h3", "Where it is stored"), h("p", "In a cloud database (Supabase) set up for this site. Passwords are stored in hashed form and are never visible to anyone."),
+      h("h3", "Your choices"), h("p", "In your profile you can download everything stored about you, change your name, or delete your account. Deleting removes your email, progress and class access."),
+      h("h3", "Questions"), h("p", { style: "margin-bottom:0" }, "Ask the person who gave you your class code."))));
+}
 function authBox(title, ...kids) {
   app.replaceChildren(h(".auth", h("h1", { style: "text-align:center" }, "ACEIT"),
-    h("p", { style: "text-align:center;color:var(--mute)" }, "Learn it, play it, ace it."), h(".card", h("h2", title), ...kids)));
+    h("p", { style: "text-align:center;color:var(--mute)" }, "Learn it, play it, ace it."), h(".card", h("h2", title), ...kids), h("p", { style: "text-align:center;margin-top:12px" }, h("a", { href: "#/privacy" }, "Privacy"))));
 }
 function viewAuth() {
   let mode = "in";
@@ -596,9 +629,45 @@ function viewProgress(v) {
 }
 
 /* ---------- admin ---------- */
+function download(name, text, type) {
+  const url = URL.createObjectURL(new Blob([text], { type })), a = h("a", { href: url, download: name });
+  document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
+// what an instructor needs: which questions the class finds hardest, who has gone quiet, and an export
+function adminInsights(ls, rows, name) {
+  const qs = ls.flatMap((l) => (l.quiz || []).map((q) => ({ l, q })));
+  const hard = qs.map(({ l, q }) => { let a = 0, c = 0; rows.forEach((r) => { const t = r.quiz[q.id]; if (t?.attempts) { a += t.attempts; c += t.correct; } }); return { l, q, a, acc: a ? c / a : null }; })
+    .filter((x) => x.a >= 3).sort((x, y) => x.acc - y.acc).slice(0, 8);
+  const quiet = rows.filter((r) => !r.p.is_admin && (!r.last || Date.now() - new Date(r.last) > 7 * 864e5));
+  const csv = () => {
+    const esc = (t) => `"${String(t ?? "").replace(/"/g, '""')}"`;
+    const head = ["Name", "Email", "Classes", "Overall %", ...ls.map((l) => l.title + " %"), "Quiz accuracy %", "Last active"];
+    const lines = [head.map(esc).join(",")].concat(rows.filter((r) => !r.p.is_admin).map((r) => [r.p.display_name, r.p.email, r.classes.join(" "), r.avg, ...r.stats, r.acc ?? "", r.last ? new Date(r.last).toISOString().slice(0, 10) : ""].map(esc).join(",")));
+    download(`aceit-${name.replace(/\s+/g, "")}-progress.csv`, lines.join("\r\n"), "text/csv");
+  };
+  return h(".card", { style: "margin-top:14px" }, h("h3", `\u{1F4C8} Class insights: ${name}`),
+    h("b", { style: "font-size:.9rem" }, "Hardest questions (3+ attempts)"),
+    hard.length ? h("div", hard.map((x) => h(".fb", { style: "margin-top:6px" }, h("b", `${Math.round(x.acc * 100)}% correct `), h("span.src", { style: "margin:0" }, `${x.a} attempts, ${x.l.title}`), h("div", md(x.q.q.split(String.fromCharCode(10))[0]))))) : h(".src", "Not enough answers yet. This fills in as students take quizzes."),
+    h("b", { style: "font-size:.9rem;display:block;margin-top:12px" }, `Quiet for 7+ days (${quiet.length})`),
+    quiet.length ? h("p", { style: "margin:4px 0 0" }, quiet.map((r) => r.p.display_name || r.p.email).join(", ")) : h(".src", "Everyone has been active this week."),
+    h("div", { style: "margin-top:12px" }, h("button.btn.alt.sm", { onclick: csv }, "Download progress (CSV)")));
+}
+// sample students so the admin view can be previewed on localhost with ?demo&admin (never used when real login is on)
+function demoAdminData() {
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const names = ["Ava Chen", "Noah Singh", "Lima A.", "Omar B."], profiles = [{ id: "a0", email: "admin@example.com", display_name: "Admin", is_admin: true }];
+  const progress = [];
+  names.forEach((n, i) => {
+    const id = "s" + i; profiles.push({ id, email: n.split(" ")[0].toLowerCase() + "@example.com", display_name: n, is_admin: false, blocked: false });
+    const quiz = {}, read = {};
+    LECS.forEach((l) => { (l.quiz || []).forEach((q, k) => { if (rnd() < 0.7) { const a = 1 + Math.floor(rnd() * 4); quiz[q.id] = { attempts: a, correct: Math.round(a * (k % 7 === 0 ? 0.2 : 0.75) * (0.6 + rnd() * 0.4)), last: rnd() > 0.4 }; } }); (l.sections || []).slice(0, 3 + i).forEach((x) => { (read[l.id] ||= {})[x.id] = 1; }); });
+    progress.push({ user_id: id, data: { quiz, read, cards: {}, games: {} }, updated_at: new Date(Date.now() - (i === 3 ? 12 : i) * 864e5).toISOString() });
+  });
+  return { profiles, progress, error: null };
+}
 async function viewAdmin(v) {
   v.append(h(".hero", h("h1", "Admin"), h("p", "Everyone's progress and class codes. You can block or remove anyone.")), h("p", "Loading..."));
-  const [{ profiles, progress, error }, codesR, accessRows] = await Promise.all([S.adminList(), S.adminCodes(), S.adminAccess()]);
+  const [{ profiles, progress, error }, codesR, accessRows] = S.DEMO ? [demoAdminData(), { data: SUBJECTS.map((x) => ({ class_id: x.id, code: "demo-" + x.id })) }, []] : await Promise.all([S.adminList(), S.adminCodes(), S.adminAccess()]);
   v.lastChild.remove();
   if (error) return v.append(h("p.err", error.message));
   const codes = Object.fromEntries((codesR.data || []).map((c) => [c.class_id, c.code]));
@@ -620,7 +689,7 @@ async function viewAdmin(v) {
       });
       const avg = stats.length ? Math.round(stats.reduce((a, c) => a + c, 0) / stats.length) : 0;
       const att = Object.values(d.quiz || {}).reduce((s, x) => s + x.attempts, 0), cor = Object.values(d.quiz || {}).reduce((s, x) => s + x.correct, 0);
-      return { p, stats, avg, acc: att ? Math.round((cor / att) * 100) : null, last: byId[p.id]?.updated_at, classes: [...(accessBy[p.id] || [])] };
+      return { p, stats, avg, acc: att ? Math.round((cor / att) * 100) : null, last: byId[p.id]?.updated_at, classes: [...(accessBy[p.id] || [])], quiz: d.quiz || {} };
     });
     v.append(h(".card", h("b", `${rows.length} accounts`), h(".src", "Columns show each lecture's completion for the class you pick.")),
       h(".row", { style: "margin:10px 0" }, SUBJECTS.map((x) => h("button.chip" + (sj === x.id ? ".on" : ""), { onclick: () => { sj = x.id; draw(); } }, [ic(symOf(x), 15), x.name]))),
@@ -633,6 +702,7 @@ async function viewAdmin(v) {
           h("td", r.p.is_admin ? "" : h(".row", { style: "flex-wrap:nowrap" },
             h("button.btn.alt.sm", { onclick: async () => { await S.adminBlock(r.p.id, !r.p.blocked); route(); } }, r.p.blocked ? "Unblock" : "Block"),
             h("button.btn.warn.sm", { onclick: async () => { if (confirm("Permanently remove " + r.p.email + "?")) { const x = await S.adminDelete(r.p.id); if (x.error) toast(x.error.message); route(); } } }, "Kick")))))))),
+      adminInsights(ls, rows, SUBJECTS.find((x) => x.id === sj)?.name || ""),
       h(".card", { style: "margin-top:14px" }, h("h3", "Class access codes"),
         SUBJECTS.map((x) => { const inp = h("input", { value: codes[x.id] || "", placeholder: "Set a code", "aria-label": x.name + " code" });
           return h("div", { style: "margin:8px 0" }, h("label", { style: "margin:0 0 4px" }, [ic(symOf(x), 15), x.name]), h(".row", { style: "flex-wrap:nowrap" }, inp,

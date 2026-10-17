@@ -179,3 +179,14 @@ export async function setName(n) {
 }
 export const myName = () => prefs().name || profile?.display_name || (session?.user?.email || "").split("@")[0] || "Student";
 export async function resetProgress() { const pf = data.prefs; data = blank(); data.prefs = pf; try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {} await push(); }
+
+// the student's own data: what the site holds about them
+export function exportData() {
+  return { exported: new Date().toISOString(), account: { email: session?.user?.email || null, name: myName(), classes: [...access] }, progress: data };
+}
+export async function deleteMyAccount() {
+  if (!sb) return { error: { message: "Not signed in" } };
+  const r = await sb.rpc("delete_my_account");
+  if (!r.error) { try { localStorage.removeItem(KEY); } catch {} await sb.auth.signOut(); session = null; profile = null; access = new Set(); }
+  return r;
+}
