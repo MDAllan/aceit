@@ -18,13 +18,30 @@ function setCls(id) { curCls = id; try { localStorage.setItem("erth209:cls", id)
 const subjOf = (l) => SUBJECTS.find((x) => x.id === l.subject);
 const open_ = () => LECS.filter((l) => S.hasAccess(l.subject));
 
+const gamesFor = (x) => [...new Set([...DEFAULT_GAMES, ...(x.games || []), (Array.isArray(x.order) ? x.order.length : x.order) && "order", (Array.isArray(x.sort) ? x.sort.length : x.sort) && "sort", (Array.isArray(x.calc) ? x.calc.length : x.calc) && "calc"].filter(Boolean))];
+// a light "skeleton" (ids and counts only) is enough for class and lecture lists and for progress percentages
+const skeleton = (m, subject) => ({ id: m.id, title: m.title, chapter: m.chapter, icon: m.icon, subject, sections: m.sections.map((id) => ({ id })), cards: m.cards.map((id) => ({ id })), quiz: m.quiz.map((id) => ({ id })), games: gamesFor(m), _full: false });
+const inflight = {};
+async function loadFull(l) {
+  if (l._full) return;
+  inflight[l.id] ||= fetch("content/" + l.id + ".json").then((r) => r.json()).then((full) => {
+    const { subject, color } = l; Object.assign(l, full, { subject, color, _full: true }); l.cards ||= []; l.games = gamesFor(full);
+  });
+  await inflight[l.id];
+}
+async function loadExams(sjId) {
+  const sj = SUBJECTS.find((x) => x.id === sjId);
+  if (!sj?.exams || sjId in EXAMS) return;
+  EXAMS[sjId] = null;
+  try { const r = await fetch("content/" + sj.exams + ".json"); if (r.ok) { const e = await r.json(); if (e?.tests?.length) EXAMS[sjId] = e; } } catch {}
+}
+
 async function boot() {
   try { const t = localStorage.getItem("erth209:theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
   await S.initBackend();
-  SUBJECTS = await (await fetch("content/subjects.json")).json();
-  LECS = (await Promise.all(SUBJECTS.flatMap((sj) => sj.lectures.map((f) => fetch("content/" + f + ".json").then((r) => r.json()).then((l) => ({ ...l, subject: sj.id })))))).filter(Boolean);
-  await Promise.all(SUBJECTS.filter((sj) => sj.exams).map((sj) => fetch("content/" + sj.exams + ".json").then((r) => (r.ok ? r.json() : null)).then((e) => { if (e?.tests?.length) EXAMS[sj.id] = e; }).catch(() => {})));
-  LECS.forEach((l) => { l.cards ||= []; l.games = [...new Set([...DEFAULT_GAMES, ...(l.games || []), l.order?.length && "order", l.sort?.length && "sort", l.calc?.length && "calc"].filter(Boolean))]; });
+  const [subs, man] = await Promise.all([fetch("content/subjects.json").then((r) => r.json()), fetch("content/manifest.json").then((r) => r.json())]);
+  SUBJECTS = subs;
+  LECS = SUBJECTS.flatMap((sj) => sj.lectures.map((id) => (man[id] ? skeleton(man[id], sj.id) : null))).filter(Boolean);
   SUBJECTS.forEach((sj) => (sj.color = CLASS_COLORS[sj.id] || "#0d3b66"));
   const nth = {};
   LECS.forEach((l) => { const pal = PALETTES[l.subject] || ["#0d3b66"]; nth[l.subject] = nth[l.subject] || 0; l.color = pal[nth[l.subject]++ % pal.length]; });
@@ -41,7 +58,9 @@ function gate() {
   if (S.profile.blocked) return "blocked";
   return null;
 }
-function route() {
+let routeSeq = 0;
+async function route() {
+  const my = ++routeSeq;
   window.__next = window.__prev = null;
   const parts = (location.hash.replace(/^#\/?/, "") || "").split("/");
   if (parts[0] === "reset") return viewReset();
@@ -53,6 +72,17 @@ function route() {
   if (g === "setup") return authBox("Almost there", h("p", "Your account was created but its profile is missing. The site owner needs to run the latest database patch (supabase/patch1.sql), then press Retry."),
     h(".row", h("button.btn", { onclick: async () => { await S.loadProfile(); route(); } }, "Retry"), h("button.btn.alt", { onclick: async () => { await S.signOut(); route(); } }, "Log out")));
   if (g === "blocked") return viewBlocked();
+  const page = parts[0] || "", need = [];
+  if (page === "l") { const lx = LECS.find((z) => z.id === parts[1]); if (lx && S.hasAccess(lx.subject)) need.push(lx); }
+  else if (["cards", "practice", "progress"].includes(page)) need.push(...pool_());
+  else if (page === "admin") need.push(...LECS);
+  const exSj = page === "s" ? parts[1] : page === "" && myClasses().length === 1 ? myClasses()[0].id : null;
+  if (need.some((l) => !l._full) || (exSj && !(exSj in EXAMS))) {
+    const t = setTimeout(() => { if (my === routeSeq) app.replaceChildren(h("p.boot", "Loading...")); }, 180);
+    try { await Promise.all([...need.map(loadFull), exSj ? loadExams(exSj) : null]); } catch { clearTimeout(t); app.replaceChildren(h("p.boot", "Couldn't load this page. Check your connection and try again.")); return; }
+    clearTimeout(t);
+    if (my !== routeSeq) return;
+  }
   shell(parts);
 }
 
@@ -84,7 +114,7 @@ function shell(parts) {
   if (page === "l") return viewLecture(v, parts[1], parts[2] || "notes");
   if (page === "s") return viewSubject(v, parts[1]);
   if (page === "profile") return viewProfile(v);
-  if (page === "cards") return viewAllCards(v);
+  if (page === "cards") return viewAllCards(v, parts[1]);
   if (page === "practice") return viewPractice(v);
   if (page === "progress") return viewProgress(v);
   if (page === "admin" && admin) return viewAdmin(v);
@@ -263,7 +293,11 @@ function viewSubject(v, id) {
   const ls = LECS.filter((l) => l.subject === sj.id);
   if (!ls.length) return v.append(h(".card", h("h2", "Coming soon"), h("p", "Lectures for this class are being added.")));
   const ex = EXAMS[sj.id];
-  v.append(h(".grid", ls.map((l, i) => {
+  const allCards = ls.flatMap((l) => l.cards || []), due = S.dueCount(allCards);
+  v.append(h(".card.review", due ? { style: "border-left:6px solid var(--coral)" } : {},
+    h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("div", h("b", due ? `\u{1F5D3}\uFE0F ${due} card${due === 1 ? "" : "s"} to review today` : "\u2728 You're all caught up"), h(".src", { style: "margin:2px 0 0" }, due ? "Reviewing right on time is the fastest way to remember." : "Cards come back at the best time for your memory.")),
+      due ? h("button.btn.sm", { onclick: () => (location.hash = "#/cards/due") }, "Review now") : "")));
+  v.append(h(".grid", { style: "margin-top:12px" }, ls.map((l, i) => {
     const s = S.lectureStats(l);
     return h("button.card.lec", { style: `animation-delay:${i * 45}ms;--tc:${l.color}`, onclick: () => (location.hash = `#/l/${l.id}/notes`) },
       emojiTile(l, 52),
@@ -382,13 +416,15 @@ function notes(b, l) {
 }
 
 /* ----- flashcards ----- */
-export function cards(b, all, color) {
-  let deck = all.slice(), i = 0, mode = "all";
+export function cards(b, all, color, startMode = "all") {
+  let deck = startMode === "due" ? S.dueCards(all) : all.slice(), i = 0, mode = startMode === "due" && deck.length ? "due" : "all";
+  if (!deck.length) deck = all.slice();
   const draw = () => {
     b.replaceChildren();
     const known = all.filter((c) => S.cardState(c.id) === "know").length;
     b.append(h(".row", { style: "margin:6px 0" },
       h("button.chip" + (mode === "all" ? ".on" : ""), { onclick: () => { mode = "all"; deck = all.slice(); i = 0; draw(); } }, "All cards"),
+      h("button.chip" + (mode === "due" ? ".on" : ""), { onclick: () => { mode = "due"; deck = S.dueCards(all); i = 0; draw(); } }, `\u{1F5D3}\uFE0F Due today (${S.dueCount(all)})`),
       h("button.chip" + (mode === "missed" ? ".on" : ""), { onclick: () => { mode = "missed"; deck = all.filter((c) => S.cardState(c.id) !== "know"); i = 0; draw(); } }, "Still learning"),
       h("button.chip", { onclick: () => { deck = shuffle(deck); i = 0; draw(); } }, "Shuffle")),
       h(".bar", { style: `--c:${color}` }, h("i", { style: `width:${all.length ? (known / all.length) * 100 : 0}%` })),
@@ -428,15 +464,21 @@ export function cards(b, all, color) {
 }
 
 /* ----- quiz ----- */
+// "how sure were you?" turns every answer into feedback about what the student really knows
+function confRow(qid) {
+  const row = h(".conf", h("span", "How sure were you?"));
+  [["guess", "\u{1F3B2} Guessed"], ["unsure", "\u{1F914} Unsure"], ["sure", "\u{1F4AA} Sure"]].forEach(([k, t]) => row.append(h("button.chip", { onclick: (e) => { S.setConf(qid, k); row.querySelectorAll("button").forEach((x) => x.classList.remove("on")); e.currentTarget.classList.add("on"); } }, t)));
+  return row;
+}
 function quizMenu(b, l) {
   const qs = l.quiz;
   if (!qs?.length) return b.append(h(".card", "No questions yet."));
-  const wrong = qs.filter((q) => S.progress().quiz[q.id]?.last === false);
+  const pr = S.progress().quiz, wrong = qs.filter((q) => pr[q.id]?.last === false).sort((x, y) => (pr[y.id]?.conf === "sure") - (pr[x.id]?.conf === "sure"));
   const back = () => { b.replaceChildren(); quizMenu(b, l); };
   b.append(h(".card", h("h2", "Quiz: " + l.title), h("p", `${qs.length} questions in your prof's style. You get instant feedback and an explanation for every answer.`),
     h(".row",
       h("button.btn", { onclick: () => runQuiz(b, shuffle(qs.slice()), l.title, l.color, back) }, "Start quiz"),
-      h("button.btn.alt", { disabled: !wrong.length, onclick: () => runQuiz(b, shuffle(wrong.slice()), "Review mistakes", l.color, back) }, `Review mistakes (${wrong.length})`))));
+      h("button.btn.alt", { disabled: !wrong.length, onclick: () => runQuiz(b, wrong.slice(), "Review mistakes", l.color, back) }, `Review mistakes (${wrong.length})`))));
 }
 export function runQuiz(b, list, title, color, back) {
   let i = 0, score = 0, combo = 0; const miss = [];
@@ -459,6 +501,7 @@ export function runQuiz(b, list, title, color, back) {
         if (picked !== null) return; picked = k;
         const ok = k === q.answer; if (ok) { score++; combo++; floatXP(combo >= 3 ? `+4 XP \u{1F525}x${combo}` : "+4 XP"); } else { miss.push(q); combo = 0; }
         S.recordAnswer(q.id, ok);
+        fb.append(confRow(q.id));
         opts.forEach((x, j) => { if (j === q.answer) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
         fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), combo >= 3 ? h("span.combo", `\u{1F525} ${combo} in a row! `) : "", md(q.why), S.canSeeRefs() ? h(".src.admin", "Source: " + q.source) : ""),
           h("button.btn", { style: "margin-top:10px", onclick: () => { i++; draw(); } }, i + 1 === list.length ? "See score" : "Next", ic("right", 18)));
@@ -471,14 +514,14 @@ export function runQuiz(b, list, title, color, back) {
   draw();
 }
 
-function viewAllCards(v) {
+function viewAllCards(v, startMode) {
   const draw = () => {
     v.replaceChildren(h(".hero", h("h1", "Flashcards"), h("p", "Mix every lecture, or tap a lecture to focus on it.")));
     const LS = pool_(), body = h("div"), chips = h(".row", { style: "margin:6px 0" });
     const show = (sel) => {
       chips.replaceChildren(h("button.chip" + (!sel ? ".on" : ""), { onclick: () => show(null) }, "All lectures"),
         ...LS.map((l) => h("button.chip" + (sel === l ? ".on" : ""), { onclick: () => show(l) }, [ic(symOf(l), 15), l.title])));
-      body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LS.flatMap((l) => l.cards)), sel ? sel.color : "var(--brand)");
+      body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LS.flatMap((l) => l.cards)), sel ? sel.color : "var(--c)", startMode === "due" && !sel ? "due" : "all");
     };
     v.append(classChips(draw), chips, body); show(null);
   };
@@ -522,6 +565,15 @@ function checkMilestones() {
     if (fresh.length) { setTimeout(() => { toast(`\u{1F3C5} Badge unlocked: ${fresh[0]}`); confetti(50); }, 900); S.setPrefs({ badges: now }); }
   } finally { checking = false; }
 }
+function confBlock(LS) {
+  const pr = S.progress().quiz, qs = LS.flatMap((l) => (l.quiz || []).map((q) => ({ l, q, st: pr[q.id] }))).filter((x) => x.st);
+  const sure = qs.filter((x) => x.st.conf === "sure"), sureOk = sure.filter((x) => x.st.last).length;
+  const trap = qs.filter((x) => x.st.conf === "sure" && x.st.last === false);
+  if (!sure.length) return "";
+  return h(".card", { style: "margin-top:14px" }, h("h3", "\u{1F3AF} How well you know what you know"),
+    h("p", { style: "margin:0 0 6px" }, `When you said "sure", you were right ${Math.round((sureOk / sure.length) * 100)}% of the time.`),
+    trap.length ? h("div", h("b", { style: "font-size:.9rem" }, "Sure but wrong: look at these first"), ...trap.slice(0, 5).map((x) => h(".fb", { style: "margin-top:6px" }, h("b", x.l.title + ": "), md(x.q.q.split(String.fromCharCode(10))[0])))) : h(".src", "No overconfident mistakes. Nice calibration."));
+}
 function viewProgress(v) {
   const draw = () => {
     v.replaceChildren();
@@ -535,6 +587,7 @@ function viewProgress(v) {
       h("h2", { style: "margin-top:18px" }, "By lecture"),
       h(".grid", LS.map((l) => { const s = S.lectureStats(l); return h(".card", h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("b", [ic(symOf(l), 15), l.title]), ring(s.pct, l.color, 44)),
         h(".src", `Notes ${s.read}/${s.secs} · Cards ${s.known}/${s.cards} · Quiz ${s.right}/${s.qs}`)); })),
+      confBlock(LS),
       h("h2", { style: "margin-top:18px" }, "Weak topics"),
       weak.length ? weak.map(({ l, q }) => h(".fb", h("b", l.title + ": "), md(q.q.split(String.fromCharCode(10))[0]))) : h("p", "No weak topics yet. Take a quiz and they'll show up here."),
       h("h2", { style: "margin-top:18px" }, "Badges"), h("div", badges.map(([t, on, icn]) => h("span.badge" + (on ? "" : ".lock"), icn, t))));

@@ -343,7 +343,7 @@ const CALC = {
   },
   momentum() {
     const m = rnd([2, 5, 10, 60, 1000, 1500]), v = rnd([2, 3, 5, 10, 20, 30]), p = m * v, ans = `${num(p)} kg m/s`;
-    return { q: `An object of mass ${num(m)} kg moves at ${v} m/s. Its momentum is:`, ans, wrong: uniq(ans, [`${num(m * v * v)} kg m/s`, `${num(m / v)} kg m/s`, `${num(0.5 * m * v * v)} kg m/s`, `${num(m + v)} kg m/s`, `${num(p * 2)} kg m/s`]),
+    return { q: `An object of mass ${num(m)} kg moves at ${v} m/s. Its momentum is:`, ans, wrong: uniq(ans, [`${num(m * v * v)} kg m/s`, `${num(m / v)} kg m/s`, `${num(0.5 * m * v * v)} kg m/s`, `${num(m + v)} kg m/s`, `${num(p * 2)} kg m/s`, `${num(p / 2)} kg m/s`, `${num(p * 10)} kg m/s`, `${num(p + m)} kg m/s`]),
       why: `Momentum = mass x velocity = ${num(m)} kg x ${v} m/s = ${num(p)} kg m/s. Unlike kinetic energy, velocity is not squared.` };
   },
   force() {

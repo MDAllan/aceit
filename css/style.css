@@ -245,3 +245,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,.fc:focus-visible{
 .xp{white-space:nowrap}
 .tab .em{font-size:1.3rem;line-height:1.1}
 @media(max-width:430px){.xp .bar{display:none}.cls{max-width:34vw}.top .in{gap:6px}.brand{font-size:1rem}}
+
+.conf{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;font-size:.85rem;color:var(--mute)}
+.conf .chip{min-height:34px;padding:4px 10px;font-size:.8rem}
+.review{margin-bottom:12px}

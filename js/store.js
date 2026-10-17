@@ -1,4 +1,5 @@
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from "../config.js";
+import { nextState, dueCards as srsDue, dayNum } from "./srs.js";
 
 const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
 // ?demo on localhost skips login for local testing; ?admin adds the admin view
@@ -19,7 +20,7 @@ let timer = null;
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || blank(); } catch { return blank(); }
 }
-function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {} }; }
+function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {}, sr: {} }; }
 export const progress = () => data;
 
 const subs = [];
@@ -68,7 +69,7 @@ export async function loadProfile() {
 // keep the best of local and cloud progress
 function merge(a, b) {
   const out = blank();
-  for (const k of ["cards", "read", "games", "days", "prefs"]) out[k] = { ...b[k], ...a[k] };
+  for (const k of ["cards", "read", "games", "days", "prefs", "sr"]) out[k] = { ...b[k], ...a[k] };
   const ids = new Set([...Object.keys(a.quiz || {}), ...Object.keys(b.quiz || {})]);
   for (const id of ids) {
     const x = (a.quiz || {})[id], y = (b.quiz || {})[id];
@@ -121,7 +122,10 @@ export async function adminAccess() { const { data } = await sb.from("class_acce
 
 // ---------- progress helpers ----------
 export function cardState(id) { return data.cards[id]; }
-export function setCard(id, v) { data.cards[id] = v; save(); }
+export function setCard(id, v) { data.cards[id] = v; (data.sr ||= {})[id] = nextState(data.sr[id], v === "know"); save(); }
+export const dueCards = (cards) => srsDue(cards, data.sr || {});
+export const dueCount = (cards) => dueCards(cards).length;
+export function setConf(id, conf) { const q = data.quiz[id]; if (q) { q.conf = conf; save(); } }
 export function recordAnswer(id, correct) {
   const q = data.quiz[id] || { attempts: 0, correct: 0, last: null };
   q.attempts++; if (correct) q.correct++; q.last = correct; data.quiz[id] = q; save();

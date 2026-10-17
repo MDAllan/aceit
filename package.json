@@ -1,0 +1,10 @@
+{
+  "name": "aceit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "python tools/check_content.py && node tools/test_logic.mjs",
+    "manifest": "python tools/build_manifest.py",
+    "serve": "python -m http.server 8765"
+  }
+}
