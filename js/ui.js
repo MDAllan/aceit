@@ -107,9 +107,9 @@ export const SYM = {
 };
 export const symOf = (x) => SYM[x.id] || "star";
 export function symTile(x, size = 52) {
-  const t = h(".symtile", { style: `width:${size}px;height:${size}px;background:${x.color}26;color:${x.color}`, "aria-hidden": "true" }, ic(symOf(x), Math.round(size * 0.52)));
-  return t;
+  return h(".symtile", { style: `width:${size}px;height:${size}px`, "aria-hidden": "true" }, ic(symOf(x), Math.round(size * 0.52)));
 }
+
 export function ic(name, size = 20) {
   const NS = "http://www.w3.org/2000/svg", s = document.createElementNS(NS, "svg");
   s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("width", size); s.setAttribute("height", size);

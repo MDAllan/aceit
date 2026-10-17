@@ -15,7 +15,8 @@ async function boot() {
   SUBJECTS = await (await fetch("content/subjects.json")).json();
   LECS = (await Promise.all(SUBJECTS.flatMap((sj) => sj.lectures.map((f) => fetch("content/" + f + ".json").then((r) => r.json()).then((l) => ({ ...l, subject: sj.id })))))).filter(Boolean);
   await Promise.all(SUBJECTS.filter((sj) => sj.exams).map((sj) => fetch("content/" + sj.exams + ".json").then((r) => (r.ok ? r.json() : null)).then((e) => { if (e?.tests?.length) EXAMS[sj.id] = e; }).catch(() => {})));
-  LECS.forEach((l) => { l.cards ||= []; l.games = [...new Set([...DEFAULT_GAMES, ...(l.games || []), l.order?.length && "order", l.sort?.length && "sort", l.calc?.length && "calc"].filter(Boolean))]; l.color ||= "#2563eb"; });
+  LECS.forEach((l) => { l.cards ||= []; l.games = [...new Set([...DEFAULT_GAMES, ...(l.games || []), l.order?.length && "order", l.sort?.length && "sort", l.calc?.length && "calc"].filter(Boolean))]; l.color = "var(--brand)"; });
+  SUBJECTS.forEach((sj) => (sj.color = "var(--brand)"));
   window.addEventListener("hashchange", route);
   document.addEventListener("keydown", (e) => { if (document.activeElement?.matches("input,select,textarea")) return; if (e.key === "ArrowRight") window.__next?.(); if (e.key === "ArrowLeft") window.__prev?.(); });
   route();
@@ -51,7 +52,7 @@ function shell(parts) {
       h(".xp", { title: `${x.xp} XP` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
       admin && !S.DEMO ? h("button.chip", { "aria-label": "Switch between admin and student view", onclick: () => { S.setPref("student", !S.pref("student")); route(); } }, ic("eye", 16), S.pref("student") ? "Student view" : "Admin view") : "",
       h("button.chip", { "aria-label": "Toggle dark mode", onclick: toggleTheme }, ic("moon", 16)),
-      S.DEMO ? "" : h("button.chip", { "aria-label": "Log out", onclick: async () => { await S.signOut(); route(); } }, ic("logout", 16)),
+      S.DEMO ? "" : h("button.avatar", { "aria-label": "Your profile", style: avatarStyle(), onclick: () => (location.hash = "#/profile") }, avatarGlyph(18)),
     )),
     h("main.wrap#view"),
     h("nav.nav", { "aria-label": "Main" },
@@ -65,6 +66,7 @@ function shell(parts) {
   const v = $("#view");
   if (page === "l") return viewLecture(v, parts[1], parts[2] || "notes");
   if (page === "s") return viewSubject(v, parts[1]);
+  if (page === "profile") return viewProfile(v);
   if (page === "cards") return viewAllCards(v);
   if (page === "practice") return viewPractice(v);
   if (page === "progress") return viewProgress(v);
@@ -72,12 +74,50 @@ function shell(parts) {
   viewHome(v);
 }
 const nav = (icon, label, to, on) => h("button" + (on ? ".on" : ""), { "aria-current": on ? "page" : "false", onclick: () => (location.hash = "#/" + to) }, ic(icon, 22), label);
+function setTheme(v) {
+  if (v === "auto") { delete document.documentElement.dataset.theme; try { localStorage.removeItem("erth209:theme"); } catch {} return; }
+  document.documentElement.dataset.theme = v; try { localStorage.setItem("erth209:theme", v); } catch {}
+}
 function toggleTheme() {
   const dark = matchMedia("(prefers-color-scheme: dark)").matches;
   const cur = document.documentElement.dataset.theme || (dark ? "dark" : "light");
   const nx = cur === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = nx;
   try { localStorage.setItem("erth209:theme", nx); } catch {}
+}
+
+/* ---------- profile ---------- */
+const AV_SYMS = ["globe", "telescope", "rocket", "gem", "volcano", "atom", "orbit", "bolt", "wave", "clock", "trophy", "star"];
+const AV_COLS = ["#0d3b66", "#1b6ca8", "#2c7a56", "#7a3b69", "#a8541a", "#4a5568"];
+const avatarStyle = () => `background:${S.prefs().avatarColor || AV_COLS[0]};color:#faf0ca`;
+const avatarGlyph = (size) => { const sy = S.prefs().avatarSym; return sy ? ic(sy, size) : h("span", S.myName().slice(0, 1).toUpperCase()); };
+function viewProfile(v) {
+  const draw = () => {
+    v.replaceChildren();
+    const pf = S.prefs(), x = S.xp(open_()), st = S.streak(), email = S.session?.user?.email || "";
+    const nameIn = h("input", { value: S.myName(), maxlength: 40, "aria-label": "Display name" });
+    const nm = h("p.err", { role: "alert", style: "margin:4px 0 0;min-height:0" });
+    const pw = h("input", { type: "password", placeholder: "New password (6+ characters)", autocomplete: "new-password", "aria-label": "New password" });
+    const pwMsg = h("p.err", { role: "alert", style: "margin:4px 0 0;min-height:0" });
+    const cur = document.documentElement.dataset.theme || "auto";
+    v.append(h(".hero", h("h1", "Your profile")),
+      h(".card", h(".profhead", h("div.avatar.big", { style: avatarStyle() }, avatarGlyph(34)), h("div", h("b", { style: "font-size:1.1rem" }, S.myName()), h(".src", { style: "margin:2px 0" }, email), S.profile?.is_admin ? h("span.pill", { style: "background:#0d3b66" }, "Admin") : h("span.pill", `Level ${x.lvl}`)))),
+      h(".card", { style: "margin-top:12px" }, h("h3", "Avatar"), h(".src", { style: "margin:0 0 6px" }, "Pick a symbol and a colour."),
+        h(".pgrid", AV_SYMS.map((sy) => h("button" + (pf.avatarSym === sy ? ".on" : ""), { "aria-label": sy, onclick: () => { S.setPrefs({ avatarSym: sy }); draw(); } }, ic(sy, 22)))),
+        h(".swatches", AV_COLS.map((cl) => h("button" + ((pf.avatarColor || AV_COLS[0]) === cl ? ".on" : ""), { style: `background:${cl}`, "aria-label": "Colour " + cl, onclick: () => { S.setPrefs({ avatarColor: cl }); draw(); } })))),
+      h(".card", { style: "margin-top:12px" }, h("h3", "Display name"), h(".row", { style: "flex-wrap:nowrap" }, nameIn, h("button.btn.sm", { onclick: async () => { const n = nameIn.value.trim(); if (!n) { nm.textContent = "Enter a name."; return; } await S.setName(n); toast("Name saved"); draw(); } }, "Save")), nm),
+      h(".card", { style: "margin-top:12px" }, h("h3", "Appearance"),
+        h(".seg", [["auto", "Auto"], ["light", "Light"], ["dark", "Dark"]].map(([k, t]) => h("button.btn.sm" + (cur === k ? "" : ".alt"), { onclick: () => { setTheme(k); draw(); } }, t)))),
+      h(".card", { style: "margin-top:12px" }, h("h3", "My classes"),
+        h("div", SUBJECTS.filter((sj) => S.hasAccess(sj.id)).map((sj) => h(".row", { style: "padding:6px 0;flex-wrap:nowrap" }, symTile(sj, 34), h("b", `${sj.name}: ${sj.title}`)))),
+        S.DEMO ? "" : h("div", { style: "margin-top:10px" }, joinCard())),
+      h(".card", { style: "margin-top:12px" }, h("h3", "Study stats"), h("p", { style: "margin:0" }, `Level ${x.lvl}, ${x.xp} XP` + (st ? `, ${st}-day streak` : "") + ".")),
+      S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "Password"), h(".row", { style: "flex-wrap:nowrap" }, pw, h("button.btn.sm", { onclick: async () => { pwMsg.style.color = ""; const r = await S.setNewPassword(pw.value); pwMsg.style.color = r.error ? "" : "var(--ok)"; pwMsg.textContent = r.error ? r.error.message : "Password updated."; if (!r.error) pw.value = ""; } }, "Update")), pwMsg),
+      h(".card", { style: "margin-top:12px" }, h("h3", "Account"), h(".row",
+        S.DEMO ? "" : h("button.btn", { onclick: async () => { await S.signOut(); location.hash = "#/"; route(); } }, ic("logout", 16), "Log out"),
+        h("button.btn.alt", { onclick: async () => { if (confirm("Reset all of your progress? This cannot be undone.")) { await S.resetProgress(); toast("Progress reset"); route(); } } }, "Reset my progress"))));
+  };
+  draw();
 }
 
 /* ---------- auth ---------- */
@@ -148,8 +188,8 @@ function viewReset() {
 }
 
 /* ---------- home ---------- */
-function ring(pct, color, size) {
-  return h(".ring", { style: `--p:${pct};--c:${color}` + (size ? `;width:${size}px;height:${size}px` : ""), role: "img", "aria-label": pct + " percent complete" }, h("span", pct + "%"));
+function ring(pct, color) {
+  return h(".ring", { style: `--p:${pct};--c:${color}`, role: "img", "aria-label": pct + " percent complete" }, h("span", pct + "%"));
 }
 function subjectStats(sj) {
   const ls = LECS.filter((l) => l.subject === sj.id);
@@ -169,21 +209,23 @@ function joinCard() {
 function viewHome(v) {
   const st = S.streak(), x = S.xp(open_()), lastp = S.last();
   const lastLec = lastp && open_().find((l) => l.id === lastp.lecId);
-  const nm = S.profile?.display_name;
+  const nm = S.DEMO ? "" : S.myName();
+  const mine = SUBJECTS.filter((sj) => S.hasAccess(sj.id));
   v.append(
     h(".hero", h("h1", nm ? `Hi ${nm}!` : "Welcome to ACEIT"), h("p", st ? `${st}-day streak. Keep it going.` : "Pick a class and start a streak today.")),
     h(".card.row", { style: "margin-bottom:14px;justify-content:space-between" },
       h("div", { style: "flex:1;min-width:150px" }, h("b", `Level ${x.lvl}`), h(".bar", { style: "margin:6px 0" }, h("i", { style: `width:${x.pct}%` })), h(".src", `${x.xp} XP. ${x.next - x.xp} more for level ${x.lvl + 1}`)),
       lastLec ? h("button.btn", { style: `--c:${lastLec.color}`, onclick: () => (location.hash = `#/l/${lastLec.id}/${lastp.tab || "notes"}`) }, "Continue: " + lastLec.title, ic("right", 18)) : ""),
-    S.DEMO ? "" : joinCard(),
-    h("h2", { style: "margin-top:6px" }, "Your classes"),
-    h(".grid", SUBJECTS.map((sj, i) => {
-      const unlocked = S.hasAccess(sj.id), t = subjectStats(sj);
+    h("h2", "Your classes"),
+    mine.length ? "" : h(".card", { style: "margin-bottom:12px" }, h("b", "You haven't joined a class yet"), h("p", { style: "margin:4px 0 0;color:var(--mute)" }, "Enter the class code from your instructor below to get started.")),
+    h(".grid", mine.map((sj, i) => {
+      const unlocked = true, t = subjectStats(sj);
       return h("button.card.lec", { style: `animation-delay:${i * 60}ms`, onclick: () => (location.hash = `#/s/${sj.id}`) },
         symTile(sj, 52),
-        h("div", { style: "flex:1" }, h("b", `${sj.name}: ${sj.title}`), h("small", unlocked ? (t.n ? `${t.n} lectures` : "Coming soon") : "Locked. Tap to enter the class code")),
-        unlocked ? (t.n ? ring(t.pct, sj.color) : "") : h("span.pill", { style: "background:#64748b" }, "Locked"));
-    })));
+        h("div", { style: "flex:1" }, h("b", `${sj.name}: ${sj.title}`), h("small", t.n ? `${t.n} lectures` : "Coming soon")),
+        t.n ? ring(t.pct, sj.color) : "");
+    })),
+    S.DEMO ? "" : h("div", { style: "margin-top:16px" }, joinCard()));
 }
 
 function viewSubject(v, id) {
@@ -410,7 +452,7 @@ function viewAllCards(v) {
     const show = (sel) => {
       chips.replaceChildren(h("button.chip" + (!sel ? ".on" : ""), { onclick: () => show(null) }, "All lectures"),
         ...LS.map((l) => h("button.chip" + (sel === l ? ".on" : ""), { onclick: () => show(l) }, [ic(symOf(l), 15), l.title])));
-      body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LS.flatMap((l) => l.cards)), sel ? sel.color : "#2563eb");
+      body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LS.flatMap((l) => l.cards)), sel ? sel.color : "var(--brand)");
     };
     v.append(classChips(draw), chips, body); show(null);
   };
@@ -427,7 +469,7 @@ function viewPractice(v) {
       LS.map((l) => h("button.chip" + (sel?.has(l.id) ? ".on" : ""), { onclick: () => { sel = sel || new Set(); sel.has(l.id) ? sel.delete(l.id) : sel.add(l.id); if (!sel.size) sel = null; draw(); } }, [ic(symOf(l), 15), l.title]))),
       h(".card", h("p", `${pool.length} questions available.`),
         h(".row", [10, 20, 40, pool.length].filter((n, k, a) => n <= pool.length && a.indexOf(n) === k).map((n) =>
-          h("button.btn", { style: "--c:#2563eb", onclick: () => { v.replaceChildren(); runQuiz(v, shuffle(pool.slice()).slice(0, n), "Practice exam", "#2563eb", draw); } }, n === pool.length ? `All ${n}` : `${n} questions`)))));
+          h("button.btn", { style: "--c:#2563eb", onclick: () => { v.replaceChildren(); runQuiz(v, shuffle(pool.slice()).slice(0, n), "Practice exam", "var(--brand)", draw); } }, n === pool.length ? `All ${n}` : `${n} questions`)))));
   };
   draw();
 }
@@ -448,7 +490,7 @@ function viewProgress(v) {
       ["Level 5", x.lvl >= 5, "star"],
     ];
     v.append(h(".hero", h("h1", "My progress")), classChips(draw),
-      h(".card.row", ring(total, "#2563eb", 76), h("div", h("b", "Overall completion"), h("p", { style: "margin:0;color:var(--mute)" }, `Level ${x.lvl} · ${x.xp} XP` + (st ? ` · ${st}-day streak` : "")))),
+      h(".card.row", ring(total, "var(--brand)", 76), h("div", h("b", "Overall completion"), h("p", { style: "margin:0;color:var(--mute)" }, `Level ${x.lvl} · ${x.xp} XP` + (st ? ` · ${st}-day streak` : "")))),
       h("h2", { style: "margin-top:18px" }, "By lecture"),
       h(".grid", LS.map((l) => { const s = S.lectureStats(l); return h(".card", h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("b", [ic(symOf(l), 15), l.title]), ring(s.pct, l.color, 44)),
         h(".src", `Notes ${s.read}/${s.secs} · Cards ${s.known}/${s.cards} · Quiz ${s.right}/${s.qs}`)); })),
@@ -490,7 +532,7 @@ async function viewAdmin(v) {
       h(".row", { style: "margin:10px 0" }, SUBJECTS.map((x) => h("button.chip" + (sj === x.id ? ".on" : ""), { onclick: () => { sj = x.id; draw(); } }, [ic(symOf(x), 15), x.name]))),
       h(".tw", h("table", h("thead", h("tr", ["Student", "Classes", "Overall", ...ls.map((l) => ic(symOf(l), 16)), "Quiz acc.", "Last active", ""].map((x) => h("th", x)))),
         h("tbody", rows.map((r) => h("tr",
-          h("td", h("b", r.p.display_name || ""), h(".src", r.p.email), r.p.is_admin ? h("span.pill", { style: "background:#2563eb" }, "admin") : "", r.p.blocked ? h("span.pill", { style: "background:#dc2626" }, "blocked") : ""),
+          h("td", h("b", r.p.display_name || ""), h(".src", r.p.email), r.p.is_admin ? h("span.pill", { style: "background:#0d3b66" }, "admin") : "", r.p.blocked ? h("span.pill", { style: "background:#dc2626" }, "blocked") : ""),
           h("td", r.p.is_admin ? "all" : r.classes.map((c) => SUBJECTS.find((x) => x.id === c)?.name || c).join(", ") || "none yet"),
           h("td", r.avg + "%"), ...r.stats.map((x) => h("td", x + "%")),
           h("td", r.acc === null ? "-" : r.acc + "%"), h("td", r.last ? new Date(r.last).toLocaleDateString() : "-"),

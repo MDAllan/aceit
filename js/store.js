@@ -19,7 +19,7 @@ let timer = null;
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || blank(); } catch { return blank(); }
 }
-function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {} }; }
+function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {} }; }
 export const progress = () => data;
 
 export function save() {
@@ -65,7 +65,7 @@ export async function loadProfile() {
 // keep the best of local and cloud progress
 function merge(a, b) {
   const out = blank();
-  for (const k of ["cards", "read", "games", "days"]) out[k] = { ...b[k], ...a[k] };
+  for (const k of ["cards", "read", "games", "days", "prefs"]) out[k] = { ...b[k], ...a[k] };
   const ids = new Set([...Object.keys(a.quiz || {}), ...Object.keys(b.quiz || {})]);
   for (const id of ids) {
     const x = (a.quiz || {})[id], y = (b.quiz || {})[id];
@@ -161,3 +161,14 @@ export function xp(lecs) {
 }
 export function setLast(lecId, tab) { data.last = { lecId, tab }; try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {} }
 export const last = () => data.last;
+
+// profile (name, avatar) lives with the progress so it follows the student across devices
+export const prefs = () => data.prefs || {};
+export function setPrefs(o) { data.prefs = { ...(data.prefs || {}), ...o }; save(); }
+export async function setName(n) {
+  setPrefs({ name: n });
+  if (profile) profile.display_name = n;
+  if (sb && session) await sb.rpc("set_my_name", { new_name: n });
+}
+export const myName = () => prefs().name || profile?.display_name || (session?.user?.email || "").split("@")[0] || "Student";
+export async function resetProgress() { const pf = data.prefs; data = blank(); data.prefs = pf; try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {} await push(); }

@@ -84,3 +84,12 @@ begin
   return cid;
 end $$;
 grant execute on function public.redeem_class_by_code(text) to authenticated;
+
+-- profile: let a student change their own display name
+create or replace function public.set_my_name(new_name text) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if auth.uid() is null then return; end if;
+  update public.profiles set display_name = left(trim(new_name), 40) where id = auth.uid();
+end $$;
+grant execute on function public.set_my_name(text) to authenticated;

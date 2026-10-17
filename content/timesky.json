@@ -312,7 +312,7 @@
       "slide": "slide 9",
       "alt": "Photo of a low orange Sun at sunset with a tiny dark dot, the planet Venus, crossing its face."
      },
-     "title": "Transits",
+     "title": "",
      "bullets": [
       "A **transit** is when Mercury or Venus crosses the Sun's face. It is seen at inferior conjunction when the planet is also in the Earth-Sun plane.",
       "Mercury transits occur about 12 times a century. Venus transits come in pairs 8 years apart, with more than a century between pairs.",
@@ -381,7 +381,6 @@
      "title": "Why days are not all the same length",
      "bullets": [
       "The length of the real (apparent) solar day changes during the year because Earth's orbit is slightly **elliptical** AND because Earth's axis is **tilted**.",
-      "**Mean solar time** uses the average day instead: noon is set to the average time the Sun crosses your meridian over the whole year.",
       "The photo shows the Sun's positions at the same clock time through a year making a figure 8 above a sundial."
      ]
     },
@@ -487,7 +486,7 @@
      ]
     },
     {
-     "title": "Universal time",
+     "title": "",
      "bullets": [
       "**Universal time (UT)** is the mean solar time at 0 degrees longitude, the line that passes through Greenwich, England.",
       "It is also called **Greenwich Mean Time (GMT)**.",
@@ -625,9 +624,7 @@
     {
      "title": "Checking some years",
      "bullets": [
-      "2024 is divisible by 4 and not a century: leap year.",
-      "1900 and 2100 are divisible by 100 but not by 400: not leap years.",
-      "2000 is divisible by 400: a leap year."
+      "2024 is divisible by 4 and not a century: leap year."
      ]
     }
    ],
@@ -730,7 +727,7 @@
       "slide": "slide 4",
       "alt": "Sky globe for the equator with three Sun paths on June 21, Mar 21 and Sept 21, and Dec 21, the middle path passing through the zenith."
      },
-     "title": "The Sun at the equator",
+     "title": "",
      "bullets": [
       "At the equator the Sun passes through the **zenith** (straight overhead) at apparent solar noon on the equinoxes.",
       "On June 21 it crosses the meridian 23 1/2 degrees north of the zenith, and on Dec 21 23 1/2 degrees south of it (noon altitude 66 1/2 degrees either way).",
@@ -743,10 +740,9 @@
       "slide": "slide 5",
       "alt": "Sky globe for 23.5 degrees north showing the Sun at the zenith on June 21 and noon altitudes 66 1/2 and 43 degrees for other dates."
      },
-     "title": "The Sun at the tropics",
+     "title": "",
      "bullets": [
       "At the **Tropic of Cancer** (23.5 N) the Sun passes through the zenith on the June solstice.",
-      "At the **Tropic of Capricorn** (23.5 S) the Sun passes through the zenith on the December solstice.",
       "At 23.5 N the noon Sun is 66 1/2 degrees high on the equinoxes and 43 degrees on Dec 21. The tropics are the farthest north and south the Sun ever reaches the zenith."
      ]
     }
@@ -795,7 +791,7 @@
       "slide": "slide 6",
       "alt": "Sky globe for a pole showing flat circular Sun paths on the horizon and 23 1/2 degrees above and below it."
      },
-     "title": "The Sun at the poles",
+     "title": "",
      "bullets": [
       "At the North and South Poles the Sun circles the horizon on the equinoxes.",
       "On the June and December solstices it circles the sky at an altitude of plus or minus 23.5 degrees (above the horizon in summer, below it in winter).",
@@ -855,7 +851,7 @@
    "slides": "SkyMotion 1-8 (rule); coordinates are from the textbook only (S1.2, Table S1.1)",
    "steps": [
     {
-     "title": "The noon altitude rule",
+     "title": "",
      "bullets": [
       "Noon altitude of the Sun = **90 degrees - the gap between your latitude and the Sun's declination**.",
       "The Sun's declination (its 'latitude on the sky') is about +23.5 on June 21, 0 on Mar 21 and Sept 21, and -23.5 on Dec 21.",
@@ -869,7 +865,7 @@
       "slide": "textbook p.92 / Figure S1.10b and c",
       "alt": "Two globes side by side: Earth with lines of latitude and longitude, and the sky with lines of declination and right ascension."
      },
-     "title": "Sky coordinates",
+     "title": "",
      "bullets": [
       "**Declination (dec)** is like latitude: degrees north (+) or south (-) of the celestial equator. The celestial equator is dec = 0 and the north celestial pole is dec = +90.",
       "**Right ascension (RA)** is like longitude: measured in hours east of the March equinox point. 24 hours = 360 degrees, so 1 hour = 15 degrees.",
@@ -897,9 +893,7 @@
      },
      "title": "Where the Sun is on the sphere",
      "bullets": [
-      "The Sun moves along the **ecliptic**, tilted 23 1/2 degrees to the celestial equator. Its right ascension marks the hours along the ecliptic.",
-      "March 21: RA 0 h, dec 0. June 21: RA 6 h, dec +23 1/2. Sept 21: RA 12 h, dec 0. Dec 21: RA 18 h, dec -23 1/2.",
-      "So the June solstice is 6 hours of right ascension east of the March equinox."
+      "The Sun moves along the **ecliptic**, tilted 23 1/2 degrees to the celestial equator. Its right ascension marks the hours along the ecliptic."
      ]
     },
     {
@@ -923,7 +917,6 @@
      },
      "title": "Stars at 40 degrees north",
      "bullets": [
-      "The north celestial pole sits due north at an altitude equal to your latitude (40 degrees). The celestial equator crosses the meridian at altitude 90 - 40 = 50 degrees in the south, rising due east and setting due west.",
       "A star with dec = +30 crosses the meridian at 50 + 30 = 80 degrees in the south. A star with dec = -30 crosses at 50 - 30 = 20 degrees in the south. A star with dec = +60 reaches 70 degrees in the north (110 is 20 past the zenith).",
       "A star is **circumpolar** (never sets) if its declination is greater than 90 - latitude, which is above +50 at 40 N. Stars below -50 never rise."
      ]
@@ -999,8 +992,7 @@
      "title": "Latitude from a star on the meridian",
      "bullets": [
       "Suppose Vega (dec +38 degrees 44 arcminutes) crosses your meridian at altitude 78 degrees 44 arcminutes in the south.",
-      "The celestial equator then crosses the meridian at 78 44 - 38 44 = 40 degrees in the south.",
-      "The equator's altitude is 90 - latitude, so your latitude is 90 - 40 = **50 N**."
+      "The celestial equator then crosses the meridian at 78 44 - 38 44 = 40 degrees in the south."
      ]
     },
     {
@@ -1012,7 +1004,6 @@
      "title": "Latitude from the Sun at noon",
      "bullets": [
       "Suppose it is March 21 and the Sun crosses your meridian at altitude 70 degrees in the north.",
-      "On March 21 the Sun has dec = 0, so the celestial equator also crosses your meridian at 70 degrees in the north.",
       "That means you are in the Southern Hemisphere at latitude 90 - 70 = **20 S**."
      ]
     },

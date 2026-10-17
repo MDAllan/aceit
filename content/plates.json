@@ -80,10 +80,7 @@
    "id": "layers",
    "title": "Layers of the Earth: crust, mantle, core, and lithosphere",
    "slides": "4-5",
-   "bullets": [
-    "**Oceanic lithosphere**: thin and rigid, ~0 km at ridges up to ~140 km elsewhere. **Continental lithosphere**: thicker (40-280 km) and more plastic at depth.",
-    "The **asthenosphere** is mechanically weak and flows by convection driven by core heat. It is relatively continuous (not broken like the lithosphere). **Outer core** is fully liquid and its circulating iron and nickel is believed to generate Earth's magnetic field. The **inner core** is solid because of immense pressure, despite being the hottest part."
-   ],
+   "bullets": [],
    "boxes": [
     {
      "type": "why",
@@ -107,7 +104,7 @@
     {
      "src": "img/plates/s4.jpg",
      "slide": "4",
-     "alt": "Figure from the lecture: Layers of the Earth: crust, mantle, core, and lithosphere"
+     "alt": "Cutaway diagram of Earth showing the crust, mantle, outer core and inner core, with the lithosphere and asthenosphere labelled."
     }
    ],
    "steps": [
@@ -117,11 +114,18 @@
       "slide": "4",
       "alt": "Cutaway diagram of Earth showing the crust, mantle, outer core and inner core, with the lithosphere and asthenosphere labelled."
      },
-     "title": "Earth's layers",
+     "title": "",
      "bullets": [
       "Earth is cut two ways: by **chemical composition** (what it is made of) and by **physical behaviour** (rigid or flowing). The chemical layers are the **crust** (continental = lower density, granite-like; oceanic = denser, basalt-like), the **mantle** (largest by volume, down to ~2,900 km, mostly peridotite, an ultramafic rock) and the **core** (mostly iron and nickel).",
       "The **Moho** (Mohorovicic Discontinuity) is the boundary at the base of the crust. It shows up as a jump in seismic wave speed. Discovered in 1909. Depth: ~5 km under oceans, ~30-40 km under continents.",
       "The physical layers are the **lithosphere** (rigid outer shell, made of the crust and uppermost solid mantle, broken into plates), the **asthenosphere** (weak, flows), the **mesosphere/lower mantle**, the **outer core** (liquid) and the **inner core** (solid)."
+     ]
+    },
+    {
+     "title": "Key points",
+     "bullets": [
+      "**Oceanic lithosphere**: thin and rigid, ~0 km at ridges up to ~140 km elsewhere. **Continental lithosphere**: thicker (40-280 km) and more plastic at depth.",
+      "The **asthenosphere** is mechanically weak and flows by convection driven by core heat. It is relatively continuous (not broken like the lithosphere). **Outer core** is fully liquid and its circulating iron and nickel is believed to generate Earth's magnetic field. The **inner core** is solid because of immense pressure, despite being the hottest part."
      ]
     }
    ]
@@ -501,13 +505,6 @@
    "back": "The first detailed ocean-floor map, showing the Mid-Atlantic Ridge as a basaltic mountain range unlike continental mountains.",
    "short": "Heezen and Tharp seafloor map",
    "src": "Slide 2"
-  },
-  {
-   "id": "plt-c8",
-   "front": "Harry Hess, 1959?",
-   "back": "Proposed seafloor spreading: mid-ocean ridges are 'plate factories' continuously making new oceanic crust.",
-   "short": "Hess: ridges as plate factories",
-   "src": "Slide 3"
   },
   {
    "id": "plt-c9",
