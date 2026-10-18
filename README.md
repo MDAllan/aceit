@@ -13,3 +13,10 @@ To add a new class, add an entry to `content/subjects.json` and give it a code i
 
 ## Backend
 Run `supabase/schema.sql` once in Supabase > SQL Editor, then put the project's anon key in `config.js`.
+
+## Checks
+- `npm run check` : content checks (JSON, ids, answers, images, manifest, student-safe text) and logic tests.
+- `python tools/build_manifest.py` : rebuild `content/manifest.json` after changing any lecture (CI fails if it is stale).
+- `node tools/test_sql.mjs` : database security tests on a throwaway Postgres (`npm i --no-save embedded-postgres pg` first).
+- `supabase/RUN-ME.sql` : the one file to run in Supabase SQL Editor to upgrade an existing database.
+- See `docs/SCHOOL-SETUP.md` for emails, custom domain, school sign-in and the pilot plan.

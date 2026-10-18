@@ -274,11 +274,11 @@ const G = {
   /* ---- number cruncher: random numbers, exact answers ---- */
   calc(b, lec, again) {
     const ids = lec.calc, rounds = 8; let i = 0, score = 0, combo = 0;
-    const gens = ids.map((id) => CALC[id]).filter(Boolean);
+    const gids = ids.filter((id) => CALC[id]);
     const draw = () => {
       b.replaceChildren();
       if (i >= rounds) { done(lec, "calc"); if (score >= 6) confetti(); return b.append(endCard("\u{1F9EE} Calculations done!", score, rounds, again)); }
-      let g; do { g = gens[i % gens.length](); } while (g.wrong.length < 3);
+      const gid = gids[i % gids.length]; let g; do { g = CALC[gid](); } while (g.wrong.length < 3);
       const opts = shuffle([g.ans, ...g.wrong.slice(0, 4)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcde"[k]), h("span", o)); bt.onclick = () => {
@@ -286,7 +286,9 @@ const G = {
         els.forEach((x, j) => { if (opts[j] === g.ans) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
         fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), combo >= 3 ? h("span.combo", `\u{1F525} ${combo} in a row! `) : "", md(g.why)), nextBtn(i + 1 === rounds, () => { i++; draw(); }));
       }; return bt; });
-      b.append(h(".src", `Problem ${i + 1} of ${rounds}`), h(".bar", h("i", { style: `width:${(i / rounds) * 100}%` })), h(".card", { style: "margin-top:10px" }, h(".q", g.q), els, fb));
+      const hint = h(".fb", { style: "display:none;margin:6px 0" }, "\u{1F4A1} ", HINTS[gid] || "Think about which formula connects the quantities.");
+      const hb = h("button.chip", { onclick: () => { hint.style.display = ""; hb.disabled = true; } }, "\u{1F4A1} Hint");
+      b.append(h(".src", `Problem ${i + 1} of ${rounds}`), h(".bar", h("i", { style: `width:${(i / rounds) * 100}%` })), h(".card", { style: "margin-top:10px" }, h(".q", g.q), h("div", { style: "margin-bottom:6px" }, hb), hint, els, fb));
     };
     draw();
   },
@@ -363,4 +365,18 @@ const CALC = {
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
       why: `For a Sun-like star, p^2 = a^3 (p in years, a in AU). So p = a^1.5 = ${a}^1.5 = ${p} years.` };
   },
+};
+
+// first nudge before the full explanation: which idea or formula to reach for
+const HINTS = {
+  "inv-square": "Gravity follows an inverse-square law: force is proportional to 1 / (distance squared).",
+  "gravity-masses": "F = G m1 m2 / d^2. Masses multiply the force; distance divides it by the square.",
+  "c-lambda": "c = wavelength x frequency, so frequency = c / wavelength. Convert the wavelength to metres first.",
+  photon: "Photon energy is proportional to frequency, and frequency is proportional to 1 / wavelength.",
+  kinetic: "Kinetic energy = 1/2 x mass x speed squared. Square the speed first.",
+  "ke-double": "Kinetic energy depends on speed squared, so a change in speed counts twice.",
+  momentum: "Momentum = mass x velocity. Unlike kinetic energy, velocity is not squared.",
+  force: "Newton's second law: force = mass x acceleration.",
+  doppler: "Speed = c x (shift in wavelength / rest wavelength). A longer wavelength means moving away.",
+  kepler: "For a Sun-like star, period squared = distance cubed (years and AU), so period = distance^1.5.",
 };

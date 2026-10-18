@@ -1,5 +1,6 @@
 import * as S from "./store.js";
 import { renderGame, DEFAULT_GAMES } from "./games.js";
+import { viewAdmin as adminView } from "./admin.js";
 import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp } from "./ui.js";
 
 // accessibility options live on this device (text size, easy-read font, reduced motion)
@@ -32,23 +33,32 @@ const gamesFor = (x) => [...new Set([...DEFAULT_GAMES, ...(x.games || []), (Arra
 // a light "skeleton" (ids and counts only) is enough for class and lecture lists and for progress percentages
 const skeleton = (m, subject) => ({ id: m.id, title: m.title, chapter: m.chapter, icon: m.icon, subject, sections: m.sections.map((id) => ({ id })), cards: m.cards.map((id) => ({ id })), quiz: m.quiz.map((id) => ({ id })), games: gamesFor(m), _full: false });
 const inflight = {};
+const getJson = async (url) => { const r = await fetch(url); if (!r.ok) throw new Error(r.status); return r.json(); };
 async function loadFull(l) {
   if (l._full) return;
-  inflight[l.id] ||= fetch("content/" + l.id + ".json").then((r) => r.json()).then((full) => {
+  inflight[l.id] ||= (async () => {
+    // logged-in students read their lectures from the database, where only members of the class can see them;
+    // local previews and the first rollout fall back to the published files
+    const full = (S.DEMO ? null : await S.dbLecture(l.id)) || (await getJson("content/" + l.id + ".json"));
     const { subject, color } = l; Object.assign(l, full, { subject, color, _full: true }); l.cards ||= []; l.games = gamesFor(full);
-  });
-  await inflight[l.id];
+  })();
+  try { await inflight[l.id]; } finally { delete inflight[l.id]; }
 }
 async function loadExams(sjId) {
   const sj = SUBJECTS.find((x) => x.id === sjId);
   if (!sj?.exams || sjId in EXAMS) return;
   EXAMS[sjId] = null;
-  try { const r = await fetch("content/" + sj.exams + ".json"); if (r.ok) { const e = await r.json(); if (e?.tests?.length) EXAMS[sjId] = e; } } catch {}
+  try {
+    const e = (S.DEMO ? null : await S.dbExam(sjId)) || (await getJson("content/" + sj.exams + ".json"));
+    if (e?.tests?.length) EXAMS[sjId] = e;
+  } catch {}
 }
 
 async function boot() {
   try { const t = localStorage.getItem("erth209:theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
   applyA11y();
+  addEventListener("error", (e) => S.reportError(e.message, e.error?.stack));
+  addEventListener("unhandledrejection", (e) => S.reportError(e.reason?.message || e.reason, e.reason?.stack));
   if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
   await S.initBackend();
   const [subs, man] = await Promise.all([fetch("content/subjects.json").then((r) => r.json()), fetch("content/manifest.json").then((r) => r.json())]);
@@ -87,7 +97,7 @@ async function route() {
   if (g === "blocked") return viewBlocked();
   const page = parts[0] || "", need = [];
   if (page === "l") { const lx = LECS.find((z) => z.id === parts[1]); if (lx && S.hasAccess(lx.subject)) need.push(lx); }
-  else if (["cards", "practice", "progress"].includes(page)) need.push(...pool_());
+  else if (["cards", "practice", "progress", "search", "glossary"].includes(page)) need.push(...pool_());
   else if (page === "admin") need.push(...LECS);
   const exSj = page === "s" ? parts[1] : page === "" && myClasses().length === 1 ? myClasses()[0].id : null;
   if (need.some((l) => !l._full) || (exSj && !(exSj in EXAMS))) {
@@ -102,7 +112,7 @@ async function route() {
 /* ---------- shell ---------- */
 function shell(parts) {
   const page = parts[0] || "";
-  const admin = S.isAdmin();
+  const admin = S.isAdmin(), staff = S.isInstructor();
   const cc = clsOf(), x = S.xp(pool_());
   if (cc) document.documentElement.style.setProperty("--c", cc.color);
   app.replaceChildren(
@@ -112,6 +122,8 @@ function shell(parts) {
       h(".xp", { title: `${x.xp} XP in ${cc ? cc.name : "this class"}` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
       admin && !S.DEMO ? h("button.chip", { "aria-label": "Switch between admin and student view", onclick: () => { S.setPref("student", !S.pref("student")); route(); } }, ic("eye", 16), S.pref("student") ? "Student view" : "Admin view") : "",
       h("button.chip", { "aria-label": "Toggle dark mode", onclick: toggleTheme }, ic("moon", 16)),
+      h("button.chip", { "aria-label": "Search", onclick: () => (location.hash = "#/search") }, ic("zoom", 16)),
+      S.DEMO ? "" : h("span.syncdot#syncdot", { role: "status", "aria-label": "Sync status" }),
       S.DEMO ? "" : h("button.avatar", { "aria-label": "Your profile", style: avatarStyle(), onclick: () => (location.hash = "#/profile") }, avatarGlyph(18)),
     )),
     h("main.wrap#view"),
@@ -120,17 +132,20 @@ function shell(parts) {
       nav("cards", "Cards", "cards", page === "cards"),
       nav("quiz", "Practice", "practice", page === "practice"),
       nav("chart", "Progress", "progress", page === "progress"),
-      admin ? nav("shield", "Admin", "admin", page === "admin") : "",
+      staff ? nav("shield", admin ? "Admin" : "Instructor", "admin", page === "admin") : "",
     ),
   );
+  S.onSync(paintSync); paintSync(S.sync);
   const v = $("#view");
   if (page === "l") return viewLecture(v, parts[1], parts[2] || "notes");
   if (page === "s") return viewSubject(v, parts[1]);
   if (page === "profile") return viewProfile(v);
+  if (page === "search") return viewSearch(v);
+  if (page === "glossary") return viewGlossary(v);
   if (page === "cards") return viewAllCards(v, parts[1]);
   if (page === "practice") return viewPractice(v);
   if (page === "progress") return viewProgress(v);
-  if (page === "admin" && admin) return viewAdmin(v);
+  if (page === "admin" && staff) return adminView(v, { LECS, SUBJECTS, route });
   viewHome(v);
 }
 const nav = (icon, label, to, on) => h("button" + (on ? ".on" : ""), { "aria-current": on ? "page" : "false", onclick: () => (location.hash = "#/" + to) }, ic(icon, 22), label);
@@ -146,11 +161,63 @@ function toggleTheme() {
   try { localStorage.setItem("erth209:theme", nx); } catch {}
 }
 
+/* ---------- search and glossary (inside the current class only) ---------- */
+function viewSearch(v) {
+  const cls = clsOf(), LS = pool_();
+  const inp = h("input", { type: "search", placeholder: `Search ${cls ? cls.name : "your class"}: a word, a formula, a topic`, "aria-label": "Search", autocomplete: "off" }), out = h("div");
+  const run = () => {
+    const q = inp.value.trim().toLowerCase(); out.replaceChildren(); if (q.length < 2) { out.append(h(".src", "Type at least 2 letters.")); return; }
+    const cardHits = [], noteHits = [];
+    LS.forEach((l) => {
+      (l.cards || []).forEach((c) => { if ((c.front + " " + c.back).toLowerCase().includes(q)) cardHits.push({ l, c }); });
+      (l.sections || []).forEach((sec, idx) => {
+        const text = [sec.title, ...(sec.bullets || []), ...(sec.steps || []).flatMap((st) => [st.title || "", ...(st.bullets || [])])].join(" ");
+        if (text.toLowerCase().includes(q)) noteHits.push({ l, sec, idx, snip: snippet(text, q) });
+      });
+    });
+    if (!cardHits.length && !noteHits.length) { out.append(h(".card", "Nothing found. Try a shorter word.")); return; }
+    if (noteHits.length) out.append(h("h3", { style: "margin:12px 0 4px" }, `\u{1F4D6} Notes (${noteHits.length})`), ...noteHits.slice(0, 12).map(({ l, sec, idx, snip }) => h("button.ev", { onclick: () => { pageIdx[l.id] = idx; location.hash = `#/l/${l.id}/notes`; } }, h("span.k", l.icon), h("div", { style: "flex:1" }, h("b", clean(sec.title)), h(".src", { style: "margin:0" }, l.title), h("div", md(snip))))));
+    if (cardHits.length) out.append(h("h3", { style: "margin:12px 0 4px" }, `\u{1F0CF} Terms (${cardHits.length})`), ...cardHits.slice(0, 12).map(({ l, c }) => h(".fb", { style: "margin-top:6px" }, h("b", md(c.front)), h("div", md(c.back)), h(".src", { style: "margin:2px 0 0" }, l.title))));
+  };
+  inp.oninput = run;
+  v.append(h(".hero", h("h1", "\u{1F50D} Search"), h("p", cls ? `Searching ${cls.name} only.` : "Join a class first.")), inp, out); inp.focus(); run();
+}
+const snippet = (text, q) => { const t = clean(text), i = t.toLowerCase().indexOf(q); const a = Math.max(0, i - 50); return (a ? "..." : "") + t.slice(a, a + 140).replace(/\*\*/g, "") + (t.length > a + 140 ? "..." : ""); };
+function viewGlossary(v) {
+  const cls = clsOf(), LS = pool_(), all = LS.flatMap((l) => (l.cards || []).map((c) => ({ l, c }))).sort((a, b) => a.c.front.localeCompare(b.c.front));
+  const inp = h("input", { type: "search", placeholder: "Filter terms", "aria-label": "Filter terms" }), list = h("div");
+  const draw = () => {
+    const q = inp.value.trim().toLowerCase(); list.replaceChildren(); let last = "";
+    all.filter(({ c }) => !q || (c.front + " " + c.back).toLowerCase().includes(q)).forEach(({ l, c }) => {
+      const L = c.front.replace(/[^A-Za-z0-9]/, "").slice(0, 1).toUpperCase() || "#";
+      if (L !== last) { last = L; list.append(h("h3", { style: "margin:14px 0 4px;color:var(--c)" }, L)); }
+      list.append(h(".fb", { style: "margin-top:6px" }, h("b", md(c.front)), h("div", md(c.back)), h(".src", { style: "margin:2px 0 0" }, l.title)));
+    });
+    if (!list.children.length) list.append(h(".src", "No matching terms."));
+  };
+  inp.oninput = draw;
+  v.append(h(".hero", h("h1", "\u{1F4D6} Glossary"), h("p", `${all.length} terms${cls ? " in " + cls.name : ""}, A to Z.`)), inp, list); draw();
+}
+
+/* ---------- sync status ---------- */
+function paintSync(st) {
+  const el = $("#syncdot"); if (!el) return;
+  const msg = { saved: "Saved", syncing: "Saving...", offline: "Offline: changes will sync when you reconnect", error: "Could not save yet: retrying" }[st.state] || "";
+  el.className = "syncdot " + st.state; el.title = msg; el.setAttribute("aria-label", msg);
+}
+
 /* ---------- profile ---------- */
 const AV_SYMS = ["globe", "telescope", "rocket", "gem", "volcano", "atom", "orbit", "bolt", "wave", "clock", "trophy", "star"];
 const AV_COLS = ["#0d3b66", "#1b6ca8", "#2c7a56", "#7a3b69", "#a8541a", "#4a5568"];
 const avatarStyle = () => `background:${S.prefs().avatarColor || AV_COLS[0]};color:#faf0ca`;
 const avatarGlyph = (size) => { const sy = S.prefs().avatarSym; return sy ? ic(sy, size) : h("span", S.myName().slice(0, 1).toUpperCase()); };
+function feedbackCard() {
+  let rating = 0; const msg = h("textarea", { rows: 3, maxlength: 1000, placeholder: "What would make ACEIT better for you? (optional)", "aria-label": "Feedback message", style: "width:100%;font:inherit;padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--card);color:var(--ink)" });
+  const stars = h(".row", { style: "margin:6px 0" }); const paint = () => stars.replaceChildren(...[1, 2, 3, 4, 5].map((n) => h("button.chip" + (rating >= n ? ".on" : ""), { "aria-label": n + " out of 5", onclick: () => { rating = n; paint(); } }, "\u2605")));
+  paint();
+  return h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4AC} Send feedback"), h(".src", { style: "margin:0" }, "How is ACEIT working for you?"), stars, msg,
+    h("button.btn.sm", { style: "margin-top:8px", onclick: async () => { if (!rating) { toast("Pick a star rating first"); return; } const r = await S.sendFeedback(clsOf()?.id || null, rating, msg.value); toast(r.error ? "Could not send: " + r.error.message : "\u{1F64F} Thank you!"); if (!r.error) { msg.value = ""; rating = 0; paint(); } } }, "Send"));
+}
 function viewProfile(v) {
   const draw = () => {
     v.replaceChildren();
@@ -180,6 +247,7 @@ function viewProfile(v) {
         S.DEMO ? "" : h("div", { style: "margin-top:10px" }, joinCard())),
       h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4CA} Study stats"), h("p", { style: "margin:0" }, `Level ${x.lvl}, ${x.xp} XP` + (st ? `, ${st}-day streak` : "") + ".")),
       S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F512} Password"), h(".row", { style: "flex-wrap:nowrap" }, pw, h("button.btn.sm", { onclick: async () => { pwMsg.style.color = ""; const r = await S.setNewPassword(pw.value); pwMsg.style.color = r.error ? "" : "var(--ok)"; pwMsg.textContent = r.error ? r.error.message : "Password updated."; if (!r.error) pw.value = ""; } }, "Update")), pwMsg),
+      S.DEMO ? "" : feedbackCard(),
       S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F5C4}\uFE0F Your data"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "You own your study data. Download it or delete your account at any time. ", h("a", { href: "#/privacy" }, "Privacy")),
         h(".row", h("button.btn.alt.sm", { onclick: () => { const url = URL.createObjectURL(new Blob([JSON.stringify(S.exportData(), null, 2)], { type: "application/json" })); const a = h("a", { href: url, download: "aceit-my-data.json" }); document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000); toast("Downloaded"); } }, "Download my data"),
           S.profile?.is_admin ? "" : h("button.btn.warn.sm", { onclick: async () => { const t = prompt("This permanently deletes your account and progress. Type DELETE to confirm."); if (t !== "DELETE") return; const r = await S.deleteMyAccount(); if (r.error) { toast("Could not delete: " + r.error.message); return; } toast("Account deleted"); location.hash = "#/"; route(); } }, "Delete my account"))),
@@ -281,16 +349,31 @@ function joinCard() {
   const submit = async () => {
     const code = inp.value.trim(); if (!code) return; go.disabled = true; err.textContent = "";
     const cid = await S.joinByCode(code, SUBJECTS.map((x) => x.id)); go.disabled = false;
+    if (cid === "LOCKED") { err.textContent = "Too many wrong tries. Please wait 10 minutes and try again."; return; }
     if (cid) { const sj = SUBJECTS.find((x) => x.id === cid); toast(`\u{1F389} Joined ${sj ? sj.name : "class"}!`); confetti(); route(); } else err.textContent = "That code doesn't match any class. Check it and try again.";
   };
   go.onclick = submit; inp.onkeydown = (e) => { if (e.key === "Enter") submit(); };
   return h(".card", { style: "margin-bottom:14px" }, h("h3", "\u{1F39F}\uFE0F Join a class"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "Each class has its own code from your instructor."), h(".row", { style: "flex-wrap:nowrap" }, inp, go), err);
+}
+// three small steps for a brand-new student; disappears once done or dismissed
+function onboardCard() {
+  const pf = S.prefs(); if (S.DEMO || pf.onboarded) return "";
+  const done = [myClasses().length > 0, !!pf.avatarSym, Object.keys(S.progress().quiz).length > 0];
+  if (done.every(Boolean)) { S.setPrefs({ onboarded: true }); return ""; }
+  const step = (ok, t, go) => h(".row", { style: "padding:5px 0;flex-wrap:nowrap" }, h("span", { style: "width:26px;flex:none" }, ok ? "\u2705" : "\u2B1C"), h("span", { style: "flex:1" + (ok ? ";text-decoration:line-through;color:var(--mute)" : "") }, t), !ok && go ? h("button.btn.sm", { onclick: go }, "Do it") : "");
+  const cls = clsOf();
+  return h(".card", { style: "margin-bottom:14px;border-left:6px solid var(--c)" }, h("h3", "\u{1F680} Get started in 3 steps"),
+    step(done[0], "Join your class with the code from your instructor", () => document.querySelector("input[aria-label='Class code']")?.focus()),
+    step(done[1], "Make your avatar yours", () => (location.hash = "#/profile")),
+    step(done[2], "Answer your first question", cls ? () => { const l = LECS.find((z) => z.subject === cls.id); if (l) location.hash = `#/l/${l.id}/quiz`; } : null),
+    h(".row", { style: "justify-content:flex-end" }, h("button.btn.alt.sm", { onclick: () => { S.setPrefs({ onboarded: true }); route(); } }, "Hide")));
 }
 function viewHome(v) {
   const st = S.streak(), x = S.xp(open_()), lastp = S.last();
   const lastLec = lastp && open_().find((l) => l.id === lastp.lecId);
   const nm = S.DEMO ? "" : S.myName();
   const mine = SUBJECTS.filter((sj) => S.hasAccess(sj.id));
+  v.append(onboardCard());
   if (mine.length === 1) { viewSubject(v, mine[0].id); if (!S.DEMO) v.append(h("div", { style: "margin-top:16px" }, joinCard())); return; }
   v.append(
     h(".hero", h("h1", nm ? `Hi ${nm}! \u{1F44B}` : "Welcome to ACEIT \u{1F44B}"), h("p", st ? `\u{1F525} ${st}-day streak. Keep it going.` : "Pick a class and start a streak today. \u{1F680}")),
@@ -319,13 +402,20 @@ function viewSubject(v, id) {
     const code = h("input", { placeholder: `${sj.name} class code`, autocomplete: "off", "aria-label": `${sj.name} class code` });
     const err = h("p.err", { role: "alert" });
     const go = h("button.btn", { style: "width:100%;margin-top:12px" }, "Unlock " + sj.name);
-    const submit = async () => { go.disabled = true; const r = await S.redeemClass(sj.id, code.value.trim()); go.disabled = false; if (r.ok) { toast(`${sj.name} unlocked!`); confetti(); route(); } else err.textContent = "That code isn't right for this class. Ask Madi."; };
+    const submit = async () => { go.disabled = true; const r = await S.redeemClass(sj.id, code.value.trim()); go.disabled = false; if (r.ok) { toast(`${sj.name} unlocked!`); confetti(); route(); } else err.textContent = r.locked ? "Too many wrong tries. Please wait 10 minutes and try again." : "That code isn't right for this class. Ask your instructor."; };
     go.onclick = submit; code.onkeydown = (e) => { if (e.key === "Enter") submit(); };
     return v.append(h(".card", h("h2", "Enter the class code"), h("p", { style: "color:var(--mute)" }, `Each class has its own code. Enter the ${sj.name} code to open it.`), code, err, go));
   }
   const ls = LECS.filter((l) => l.subject === sj.id);
   if (!ls.length) return v.append(h(".card", h("h2", "Coming soon"), h("p", "Lectures for this class are being added.")));
   const ex = EXAMS[sj.id];
+  const cfg = S.settings[sj.id], days = cfg?.exam_date ? Math.ceil((new Date(cfg.exam_date + "T00:00:00") - new Date().setHours(0, 0, 0, 0)) / 864e5) : null;
+  if (days !== null && days >= 0) {
+    const weakest = ls.map((l) => ({ l, m: S.mastery(l) })).sort((a, b) => a.m - b.m).slice(0, 3);
+    v.append(h(".card", { style: "margin-bottom:12px;border-left:6px solid var(--sun)" }, h("b", `\u{1F4C5} ${cfg.exam_name || "Exam"} ${days === 0 ? "is today" : days === 1 ? "is tomorrow" : `in ${days} days`}`),
+      h(".src", { style: "margin:4px 0 6px" }, "Study plan: start with your weakest lectures."),
+      h(".row", weakest.map(({ l, m }) => h("button.chip", { style: `--c:${l.color}`, onclick: () => (location.hash = `#/l/${l.id}/quiz`) }, h("span.em", l.icon), `${l.title} (${m}%)`)))));
+  }
   const allCards = ls.flatMap((l) => l.cards || []), due = S.dueCount(allCards);
   v.append(h(".card.review", due ? { style: "border-left:6px solid var(--coral)" } : {},
     h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("div", h("b", due ? `\u{1F5D3}\uFE0F ${due} card${due === 1 ? "" : "s"} to review today` : "\u2728 You're all caught up"), h(".src", { style: "margin:2px 0 0" }, due ? "Reviewing right on time is the fastest way to remember." : "Cards come back at the best time for your memory.")),
@@ -334,7 +424,7 @@ function viewSubject(v, id) {
     const s = S.lectureStats(l);
     return h("button.card.lec", { style: `animation-delay:${i * 45}ms;--tc:${l.color}`, onclick: () => (location.hash = `#/l/${l.id}/notes`) },
       emojiTile(l, 52),
-      h("div", { style: "flex:1" }, h("b", l.title), h("small", (l.chapter || "") + ` · ${l.sections.length} topics`)),
+      h("div", { style: "flex:1" }, h("b", l.title), h("small", (l.chapter || "") + ` · ${l.sections.length} topics`), h(".mastery", { title: "How well you remember this lecture" }, h("i", { style: `width:${S.mastery(l)}%` }), h("span", `Mastery ${S.mastery(l)}%`))),
       ring(s.pct, l.color));
   })));
   if (ex) {
@@ -459,7 +549,8 @@ export function cards(b, all, color, startMode = "all") {
       h("button.chip" + (mode === "all" ? ".on" : ""), { onclick: () => { mode = "all"; deck = all.slice(); i = 0; draw(); } }, "All cards"),
       h("button.chip" + (mode === "due" ? ".on" : ""), { onclick: () => { mode = "due"; deck = S.dueCards(all); i = 0; draw(); } }, `\u{1F5D3}\uFE0F Due today (${S.dueCount(all)})`),
       h("button.chip" + (mode === "missed" ? ".on" : ""), { onclick: () => { mode = "missed"; deck = all.filter((c) => S.cardState(c.id) !== "know"); i = 0; draw(); } }, "Still learning"),
-      h("button.chip", { onclick: () => { deck = shuffle(deck); i = 0; draw(); } }, "Shuffle")),
+      h("button.chip", { onclick: () => { deck = shuffle(deck); i = 0; draw(); } }, "Shuffle"),
+      h("button.chip", { onclick: () => (location.hash = "#/glossary") }, "\u{1F4D6} Glossary")),
       h(".bar", { style: `--c:${color}` }, h("i", { style: `width:${all.length ? (known / all.length) * 100 : 0}%` })),
       h(".src", `${known} of ${all.length} known`));
     if (!deck.length) { b.append(h(".card.pop", { style: "margin-top:14px;text-align:center" }, h("h2", "\u{1F389} Nothing left here!"), h("p", "You know every card in this set."))); confetti(70); return; }
@@ -629,86 +720,4 @@ function viewProgress(v) {
 }
 
 /* ---------- admin ---------- */
-function download(name, text, type) {
-  const url = URL.createObjectURL(new Blob([text], { type })), a = h("a", { href: url, download: name });
-  document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000);
-}
-// what an instructor needs: which questions the class finds hardest, who has gone quiet, and an export
-function adminInsights(ls, rows, name) {
-  const qs = ls.flatMap((l) => (l.quiz || []).map((q) => ({ l, q })));
-  const hard = qs.map(({ l, q }) => { let a = 0, c = 0; rows.forEach((r) => { const t = r.quiz[q.id]; if (t?.attempts) { a += t.attempts; c += t.correct; } }); return { l, q, a, acc: a ? c / a : null }; })
-    .filter((x) => x.a >= 3).sort((x, y) => x.acc - y.acc).slice(0, 8);
-  const quiet = rows.filter((r) => !r.p.is_admin && (!r.last || Date.now() - new Date(r.last) > 7 * 864e5));
-  const csv = () => {
-    const esc = (t) => `"${String(t ?? "").replace(/"/g, '""')}"`;
-    const head = ["Name", "Email", "Classes", "Overall %", ...ls.map((l) => l.title + " %"), "Quiz accuracy %", "Last active"];
-    const lines = [head.map(esc).join(",")].concat(rows.filter((r) => !r.p.is_admin).map((r) => [r.p.display_name, r.p.email, r.classes.join(" "), r.avg, ...r.stats, r.acc ?? "", r.last ? new Date(r.last).toISOString().slice(0, 10) : ""].map(esc).join(",")));
-    download(`aceit-${name.replace(/\s+/g, "")}-progress.csv`, lines.join("\r\n"), "text/csv");
-  };
-  return h(".card", { style: "margin-top:14px" }, h("h3", `\u{1F4C8} Class insights: ${name}`),
-    h("b", { style: "font-size:.9rem" }, "Hardest questions (3+ attempts)"),
-    hard.length ? h("div", hard.map((x) => h(".fb", { style: "margin-top:6px" }, h("b", `${Math.round(x.acc * 100)}% correct `), h("span.src", { style: "margin:0" }, `${x.a} attempts, ${x.l.title}`), h("div", md(x.q.q.split(String.fromCharCode(10))[0]))))) : h(".src", "Not enough answers yet. This fills in as students take quizzes."),
-    h("b", { style: "font-size:.9rem;display:block;margin-top:12px" }, `Quiet for 7+ days (${quiet.length})`),
-    quiet.length ? h("p", { style: "margin:4px 0 0" }, quiet.map((r) => r.p.display_name || r.p.email).join(", ")) : h(".src", "Everyone has been active this week."),
-    h("div", { style: "margin-top:12px" }, h("button.btn.alt.sm", { onclick: csv }, "Download progress (CSV)")));
-}
-// sample students so the admin view can be previewed on localhost with ?demo&admin (never used when real login is on)
-function demoAdminData() {
-  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
-  const names = ["Ava Chen", "Noah Singh", "Lima A.", "Omar B."], profiles = [{ id: "a0", email: "admin@example.com", display_name: "Admin", is_admin: true }];
-  const progress = [];
-  names.forEach((n, i) => {
-    const id = "s" + i; profiles.push({ id, email: n.split(" ")[0].toLowerCase() + "@example.com", display_name: n, is_admin: false, blocked: false });
-    const quiz = {}, read = {};
-    LECS.forEach((l) => { (l.quiz || []).forEach((q, k) => { if (rnd() < 0.7) { const a = 1 + Math.floor(rnd() * 4); quiz[q.id] = { attempts: a, correct: Math.round(a * (k % 7 === 0 ? 0.2 : 0.75) * (0.6 + rnd() * 0.4)), last: rnd() > 0.4 }; } }); (l.sections || []).slice(0, 3 + i).forEach((x) => { (read[l.id] ||= {})[x.id] = 1; }); });
-    progress.push({ user_id: id, data: { quiz, read, cards: {}, games: {} }, updated_at: new Date(Date.now() - (i === 3 ? 12 : i) * 864e5).toISOString() });
-  });
-  return { profiles, progress, error: null };
-}
-async function viewAdmin(v) {
-  v.append(h(".hero", h("h1", "Admin"), h("p", "Everyone's progress and class codes. You can block or remove anyone.")), h("p", "Loading..."));
-  const [{ profiles, progress, error }, codesR, accessRows] = S.DEMO ? [demoAdminData(), { data: SUBJECTS.map((x) => ({ class_id: x.id, code: "demo-" + x.id })) }, []] : await Promise.all([S.adminList(), S.adminCodes(), S.adminAccess()]);
-  v.lastChild.remove();
-  if (error) return v.append(h("p.err", error.message));
-  const codes = Object.fromEntries((codesR.data || []).map((c) => [c.class_id, c.code]));
-  const accessBy = {}; accessRows.forEach((a) => (accessBy[a.user_id] ||= new Set()).add(a.class_id));
-  const byId = Object.fromEntries(progress.map((p) => [p.user_id, p]));
-  let sj = SUBJECTS[0]?.id;
-  const draw = () => {
-    v.replaceChildren(h(".hero", h("h1", "Admin"), h("p", "Everyone's progress and class codes. You can block or remove anyone.")));
-    const ls = LECS.filter((l) => l.subject === sj);
-    const rows = profiles.map((p) => {
-      const d = byId[p.id]?.data || { cards: {}, quiz: {}, read: {}, games: {} };
-      const stats = ls.map((l) => {
-        const secs = (l.sections || []).filter((s) => d.read?.[l.id]?.[s.id]).length;
-        const known = l.cards.filter((c) => d.cards?.[c.id] === "know").length;
-        const right = (l.quiz || []).filter((q) => d.quiz?.[q.id]?.last).length;
-        const games = Math.min((l.games || []).filter((g) => d.games?.[l.id + ":" + g]).length, 3);
-        const parts = [[secs, (l.sections || []).length], [known, l.cards.length], [right, (l.quiz || []).length], [games, 3]].filter((x) => x[1]);
-        return Math.round((parts.reduce((s, x) => s + x[0] / x[1], 0) / (parts.length || 1)) * 100);
-      });
-      const avg = stats.length ? Math.round(stats.reduce((a, c) => a + c, 0) / stats.length) : 0;
-      const att = Object.values(d.quiz || {}).reduce((s, x) => s + x.attempts, 0), cor = Object.values(d.quiz || {}).reduce((s, x) => s + x.correct, 0);
-      return { p, stats, avg, acc: att ? Math.round((cor / att) * 100) : null, last: byId[p.id]?.updated_at, classes: [...(accessBy[p.id] || [])], quiz: d.quiz || {} };
-    });
-    v.append(h(".card", h("b", `${rows.length} accounts`), h(".src", "Columns show each lecture's completion for the class you pick.")),
-      h(".row", { style: "margin:10px 0" }, SUBJECTS.map((x) => h("button.chip" + (sj === x.id ? ".on" : ""), { onclick: () => { sj = x.id; draw(); } }, [ic(symOf(x), 15), x.name]))),
-      h(".tw", h("table", h("thead", h("tr", ["Student", "Classes", "Overall", ...ls.map((l) => ic(symOf(l), 16)), "Quiz acc.", "Last active", ""].map((x) => h("th", x)))),
-        h("tbody", rows.map((r) => h("tr",
-          h("td", h("b", r.p.display_name || ""), h(".src", r.p.email), r.p.is_admin ? h("span.pill", { style: "background:#0d3b66" }, "admin") : "", r.p.blocked ? h("span.pill", { style: "background:#dc2626" }, "blocked") : ""),
-          h("td", r.p.is_admin ? "all" : r.classes.map((c) => SUBJECTS.find((x) => x.id === c)?.name || c).join(", ") || "none yet"),
-          h("td", r.avg + "%"), ...r.stats.map((x) => h("td", x + "%")),
-          h("td", r.acc === null ? "-" : r.acc + "%"), h("td", r.last ? new Date(r.last).toLocaleDateString() : "-"),
-          h("td", r.p.is_admin ? "" : h(".row", { style: "flex-wrap:nowrap" },
-            h("button.btn.alt.sm", { onclick: async () => { await S.adminBlock(r.p.id, !r.p.blocked); route(); } }, r.p.blocked ? "Unblock" : "Block"),
-            h("button.btn.warn.sm", { onclick: async () => { if (confirm("Permanently remove " + r.p.email + "?")) { const x = await S.adminDelete(r.p.id); if (x.error) toast(x.error.message); route(); } } }, "Kick")))))))),
-      adminInsights(ls, rows, SUBJECTS.find((x) => x.id === sj)?.name || ""),
-      h(".card", { style: "margin-top:14px" }, h("h3", "Class access codes"),
-        SUBJECTS.map((x) => { const inp = h("input", { value: codes[x.id] || "", placeholder: "Set a code", "aria-label": x.name + " code" });
-          return h("div", { style: "margin:8px 0" }, h("label", { style: "margin:0 0 4px" }, [ic(symOf(x), 15), x.name]), h(".row", { style: "flex-wrap:nowrap" }, inp,
-            h("button.btn.sm", { onclick: async () => { if (!inp.value.trim()) return; const r = await S.adminSetCode(x.id, inp.value.trim()); toast(r.error ? r.error.message : x.name + " code saved"); } }, "Save"))); })));
-  };
-  draw();
-}
-
 boot().catch((e) => { app.replaceChildren(h("p.boot", "Something went wrong: " + e.message)); console.error(e); });

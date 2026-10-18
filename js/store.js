@@ -5,6 +5,7 @@ const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
 // ?demo on localhost skips login for local testing; ?admin adds the admin view
 export const DEMO = !SUPABASE_ANON_KEY || (LOCAL && location.search.includes("demo"));
 export const canSeeRefs = () => (DEMO ? LOCAL && location.search.includes("admin") : !!profile?.is_admin && !pref("student"));
+export const isInstructor = () => (DEMO ? LOCAL && location.search.includes("admin") : !!profile?.is_admin || instructorOf.size > 0);
 export const isAdmin = () => (DEMO ? LOCAL && location.search.includes("admin") : !!profile?.is_admin);
 export function pref(k) { try { return localStorage.getItem("erth209:" + k) === "1"; } catch { return false; } }
 export function setPref(k, v) { try { localStorage.setItem("erth209:" + k, v ? "1" : "0"); } catch {} }
@@ -12,6 +13,8 @@ export let sb = null;
 export let session = null;
 export let profile = null;
 export let access = new Set();
+export let instructorOf = new Set();
+export let settings = (() => { const m = typeof location !== "undefined" && /localhost|127\.0\.0\.1/.test(location.hostname) && location.search.match(/exam=(\d{4}-\d{2}-\d{2})/); return m ? { astr207: { class_id: "astr207", exam_name: "Midterm", exam_date: m[1] } } : {}; })(); // ?exam=YYYY-MM-DD previews the countdown on localhost
 
 const KEY = "erth209:progress:v1";
 let data = load();
@@ -34,10 +37,21 @@ export function save() {
   subs.forEach((f) => { try { f(); } catch {} });
 }
 
+export let sync = { state: "saved", at: null };
+const syncSubs = []; export const onSync = (fn) => syncSubs.push(fn);
+const setSync = (state) => { sync = { state, at: state === "saved" ? Date.now() : sync.at }; syncSubs.forEach((f) => { try { f(sync); } catch {} }); };
+let retry = null;
 async function push() {
   if (!sb || !session || !profile || profile.blocked) return;
-  await sb.from("progress").upsert({ user_id: session.user.id, data, updated_at: new Date().toISOString() });
+  if (typeof navigator !== "undefined" && navigator.onLine === false) { setSync("offline"); return; }
+  setSync("syncing");
+  try {
+    const r = await sb.from("progress").upsert({ user_id: session.user.id, data, updated_at: new Date().toISOString() });
+    if (r.error) throw r.error;
+    setSync("saved"); clearTimeout(retry);
+  } catch { setSync("error"); clearTimeout(retry); retry = setTimeout(push, 15000); } // keep the work and try again
 }
+if (typeof addEventListener === "function") { addEventListener("online", () => push()); addEventListener("offline", () => setSync("offline")); }
 
 export async function initBackend() {
   if (DEMO) return;
@@ -59,6 +73,8 @@ export async function loadProfile() {
   const { data: ac, error: acErr } = await sb.from("class_access").select("class_id").eq("user_id", session.user.id);
   access = new Set((ac || []).map((x) => x.class_id));
   if (acErr && p?.access_ok) access.add("erth209"); // database patch 2 not installed yet: keep old ERTH 209 users working
+  try { const { data: ins } = await sb.from("class_instructors").select("class_id").eq("user_id", session.user.id); instructorOf = new Set((ins || []).map((x) => x.class_id)); } catch { instructorOf = new Set(); }
+  try { const { data: st } = await sb.from("class_settings").select("*"); settings = Object.fromEntries((st || []).map((x) => [x.class_id, x])); } catch { settings = {}; }
   if (p && !p.blocked) {
     const { data: r } = await sb.from("progress").select("data").eq("user_id", session.user.id).maybeSingle();
     if (r?.data) data = merge(data, r.data);
@@ -86,21 +102,23 @@ export async function signIn(email, password) {
   if (!r.error) { session = r.data.session; await loadProfile(); }
   return r;
 }
-export async function signOut() { await sb.auth.signOut(); session = null; profile = null; access = new Set(); }
+export async function signOut() { await sb.auth.signOut(); session = null; profile = null; access = new Set(); instructorOf = new Set(); settings = {}; }
 export async function forgot(email) {
   return sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname });
 }
 export async function setNewPassword(pw) { return sb.auth.updateUser({ password: pw }); }
-export const hasAccess = (classId) => DEMO || !!profile?.is_admin || access.has(classId);
+export const hasAccess = (classId) => DEMO || !!profile?.is_admin || access.has(classId) || instructorOf.has(classId);
 // "Join a class": type any class code and unlock whichever class it belongs to
 export async function joinByCode(code, classIds) {
   let { data: cid, error } = await sb.rpc("redeem_class_by_code", { code });
+  if (error && /too_many_attempts/.test(error.message)) return "LOCKED";
   if (error) { for (const id of classIds) { const r = await sb.rpc("redeem_class_code", { cid: id, code }); if (r.data) { cid = id; break; } } }
   if (cid) await loadProfile();
   return cid || null;
 }
 export async function redeemClass(cid, code) {
   let { data: ok, error } = await sb.rpc("redeem_class_code", { cid, code });
+  if (error && /too_many_attempts/.test(error.message)) return { ok: false, locked: true, error };
   if (error && cid === "erth209") ({ data: ok, error } = await sb.rpc("redeem_code", { code })); // older database
   if (ok) await loadProfile();
   return { ok, error };
@@ -189,4 +207,51 @@ export async function deleteMyAccount() {
   const r = await sb.rpc("delete_my_account");
   if (!r.error) { try { localStorage.removeItem(KEY); } catch {} await sb.auth.signOut(); session = null; profile = null; access = new Set(); }
   return r;
+}
+
+/* ---------- protected content (lectures are readable only by members of the class) ---------- */
+export async function dbLecture(id) {
+  if (!sb || !session) return null;
+  try { const { data: r, error } = await sb.from("lecture_content").select("body").eq("lecture_id", id).maybeSingle(); return error ? null : r?.body || null; } catch { return null; }
+}
+export async function dbExam(classId) {
+  if (!sb || !session) return null;
+  try { const { data: r, error } = await sb.from("exam_content").select("body").eq("class_id", classId).maybeSingle(); return error ? null : r?.body || null; } catch { return null; }
+}
+export const publishLecture = (lecture_id, class_id, body) => sb.from("lecture_content").upsert({ lecture_id, class_id, body, updated_at: new Date().toISOString() });
+export const publishExam = (class_id, body) => sb.from("exam_content").upsert({ class_id, body, updated_at: new Date().toISOString() });
+
+/* ---------- instructors, codes, exam dates ---------- */
+export async function getCodes() {
+  let r = await sb.rpc("instructor_get_codes");
+  if (r.error && profile?.is_admin) r = await sb.rpc("admin_get_codes");
+  return r.data || [];
+}
+export async function setCode(cid, code) {
+  const r = await sb.rpc("instructor_set_code", { cid, new_code: code });
+  return r.error && profile?.is_admin ? sb.rpc("admin_set_class_code", { cid, new_code: code }) : r;
+}
+export const removeFromClass = (uid, cid) => sb.rpc("instructor_remove_student", { uid, cid });
+export const setInstructor = (target_email, cid, flag) => sb.rpc("admin_set_instructor", { target_email, cid, flag });
+export async function listInstructors() { try { const { data: r } = await sb.from("class_instructors").select("user_id,class_id"); return r || []; } catch { return []; } }
+export async function setExam(cid, nm, d) { const r = await sb.rpc("set_class_exam", { cid, nm, d: d || null }); if (!r.error) settings[cid] = { class_id: cid, exam_name: nm, exam_date: d || null }; return r; }
+export async function auditLog() { try { const { data: r } = await sb.from("admin_audit").select("*").order("at", { ascending: false }).limit(15); return r || []; } catch { return []; } }
+export async function errorLog() { try { const { data: r } = await sb.from("client_errors").select("*").order("at", { ascending: false }).limit(8); return r || []; } catch { return []; } }
+export async function feedbackList() { try { const { data: r } = await sb.from("feedback").select("*").order("at", { ascending: false }).limit(20); return r || []; } catch { return []; } }
+export const getDomains = async () => { try { const { data: r } = await sb.rpc("admin_get_domains"); return r || ""; } catch { return ""; } };
+export const setDomains = (list) => sb.rpc("admin_set_domains", { list });
+export const sendFeedback = (cid, r, m) => sb.rpc("submit_feedback", { cid, r, m });
+let errCount = 0;
+export function reportError(msg, stack) {
+  if (!sb || !session || errCount >= 5) return; errCount++;
+  sb.rpc("log_client_error", { m: String(msg || ""), s: String(stack || ""), u: location.hash || "" }).then(() => {}, () => {});
+}
+
+/* ---------- mastery: a blend of how well cards are remembered and quiz answers are right ---------- */
+export function mastery(lec) {
+  const sr = data.sr || {}, cs = lec.cards || [], qs = lec.quiz || [];
+  const cardM = cs.length ? cs.reduce((t, c) => t + (sr[c.id] ? sr[c.id].box / 5 : 0), 0) / cs.length : null;
+  const quizM = qs.length ? qs.filter((q) => data.quiz[q.id]?.last).length / qs.length : null;
+  const parts = [cardM, quizM].filter((x) => x !== null);
+  return parts.length ? Math.round((parts.reduce((a, b) => a + b, 0) / parts.length) * 100) : 0;
 }

@@ -15,3 +15,16 @@ jobs:
         run: for f in js/*.js config.js; do node --input-type=module --check < "$f"; done
       - name: Logic tests (calculators, spaced repetition)
         run: node tools/test_logic.mjs
+  database:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Install a throwaway Postgres
+        run: npm i --no-save embedded-postgres pg
+      - name: Database security rules (fresh install)
+        run: node tools/test_sql.mjs
+      - name: Database security rules (upgrade from the first schema)
+        run: MODE=upgrade node tools/test_sql.mjs

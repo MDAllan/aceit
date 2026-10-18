@@ -78,7 +78,7 @@ begin
   if auth.uid() is null then return null; end if;
   select blocked into bl from public.profiles where id = auth.uid();
   if coalesce(bl, false) then return null; end if;
-  select c.class_id into cid from public.class_codes c where c.code = code limit 1;
+  select c.class_id into cid from public.class_codes c where c.code = redeem_class_by_code.code limit 1;
   if cid is null then return null; end if;
   insert into public.class_access (user_id, class_id) values (auth.uid(), cid) on conflict do nothing;
   return cid;

@@ -253,3 +253,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,.fc:focus-visible{
 
 :root[data-font=easy] body,:root[data-font=easy] h1,:root[data-font=easy] h2,:root[data-font=easy] h3,:root[data-font=easy] button,:root[data-font=easy] input,:root[data-font=easy] select{font-family:"Atkinson Hyperlegible",Nunito,system-ui,sans-serif!important;letter-spacing:.01em}
 :root[data-motion=reduce] *{animation:none!important;transition:none!important}
+
+.syncdot{width:10px;height:10px;border-radius:50%;background:var(--ok);flex:none;border:2px solid var(--card);box-shadow:0 0 0 1px var(--line)}
+.syncdot.syncing{background:var(--sun);animation:pulse 1s infinite}.syncdot.offline,.syncdot.error{background:var(--bad)}
+@keyframes pulse{50%{opacity:.35}}
+.mastery{position:relative;height:16px;margin-top:6px;background:var(--line);border-radius:2px;overflow:hidden;font-size:.68rem;font-weight:700;line-height:16px}
+.mastery i{position:absolute;inset:0 auto 0 0;background:color-mix(in srgb,var(--tc,var(--brand)) 45%,var(--card));animation:grow .9s var(--ease) backwards;transform-origin:left}
+.mastery span{position:relative;padding-left:6px}
+details.panel>summary{cursor:pointer;font-weight:700;font-family:Lexend,sans-serif;list-style:none;display:flex;align-items:center;gap:8px;min-height:34px}
+details.panel>summary::after{content:"\25BE";margin-left:auto;color:var(--mute)}
+details.panel[open]>summary::after{content:"\25B4"}
