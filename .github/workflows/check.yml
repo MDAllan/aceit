@@ -11,6 +11,8 @@ jobs:
         with: { node-version: "20" }
       - name: Content checks (JSON, ids, answers, images, manifest, student-safe text)
         run: python tools/check_content.py
+      - name: SQL copies are in step (patch6 = RUN-ME-2 = end of schema)
+        run: python tools/build_sql.py --check
       - name: JavaScript syntax
         run: for f in js/*.js config.js; do node --input-type=module --check < "$f"; done
       - name: Logic tests (calculators, spaced repetition)
