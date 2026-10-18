@@ -15,6 +15,7 @@ A mobile-first study site built on **your course material**:
 - **Quizzes** with explanations, with "how sure were you?" ratings, and **practice exams**.
 - **Games** that make revision something students choose to do (matching, memory, blitz, number-crunching, timelines and more).
 - Progress, levels and streaks, an exam countdown and a study plan aimed at each student's weakest topics.
+- Made for everyone: works on any phone, in light or dark mode, with larger text, an easy-read font and a reduced-motion option. Every main screen passes automated WCAG 2.x A/AA checks (a full manual accessibility review is planned before an institutional rollout).
 
 Every quiz answer in the first two courses (geology and astronomy) was checked against the source material by a second, independent reader.
 

@@ -34,6 +34,8 @@ Until you tick that box, the database refuses to invite anyone who has no accoun
 2. Log out and log in again (you will be asked for a code).
 3. Platform > Settings > tick **Require two-step login for staff**. From then on admins, school managers and instructors must set it up the next time they log in, and the database ignores their powers on any session that did not use the code.
 
+If setting it up says two-step login is disabled, turn it on in Supabase > Authentication > Multi-Factor (enable TOTP).
+
 You cannot tick the box before you have used it yourself (so you cannot lock yourself out). If you ever do get locked out, run this in the Supabase SQL Editor: `update public.app_secrets set value = '0' where key = 'require_staff_mfa';`
 
 ## 4. Add a school (the whole flow takes about 10 minutes)

@@ -27,7 +27,7 @@ const rows = async (name, args) => { const r = await call(name, args); return r.
 
 /* ----- reading ----- */
 export const mySchools = () => rows("staff_schools");
-export const classesOf = (sid) => rows("staff_classes", { sid: sid || null });
+export const classesOf = (sid, kid) => rows("staff_classes", { sid: sid || null, kid: kid || null });
 export const roster = (kid) => rows("class_roster", { kid });
 export const questionStats = (kid) => rows("class_question_stats", { kid });
 export const schoolPeople = (sid) => rows("staff_people", { sid });

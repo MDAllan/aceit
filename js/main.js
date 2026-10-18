@@ -393,6 +393,8 @@ function viewReset() {
 function ring(pct, color) {
   return h(".ring", { style: `--p:${pct};--c:${color}`, role: "img", "aria-label": pct + " percent complete" }, h("span", pct + "%"));
 }
+// "Alpha University · ASTR 207 Section 1" for a course the student joined through a class
+const classLine = (courseId) => { const k = S.classes.find((c) => c.course_id === courseId && c.role === "student") || S.classes.find((c) => c.course_id === courseId); return k && k.school_name ? `${k.school_name} · ${k.name}` : ""; };
 function subjectStats(sj) {
   const ls = LECS.filter((l) => l.subject === sj.id);
   return { n: ls.length, pct: ls.length ? Math.round(ls.reduce((t, l) => t + S.lectureStats(l).pct, 0) / ls.length) : 0 };
@@ -440,7 +442,7 @@ function viewHome(v) {
       const unlocked = true, t = subjectStats(sj);
       return h("button.card.lec", { style: `animation-delay:${i * 60}ms;--tc:${sj.color}`, onclick: () => (location.hash = `#/s/${sj.id}`) },
         emojiTile(sj, 52),
-        h("div", { style: "flex:1" }, h("b", `${sj.name}: ${sj.title}`), h("small", t.n ? `${t.n} lectures` : "Coming soon")),
+        h("div", { style: "flex:1" }, h("b", `${sj.name}: ${sj.title}`), h("small", t.n ? `${t.n} lectures` : "Coming soon"), classLine(sj.id) ? h("small", { style: "display:block" }, classLine(sj.id)) : ""),
         t.n ? ring(t.pct, sj.color) : "");
     })),
     S.DEMO ? "" : h("div", { style: "margin-top:16px" }, joinCard()));
@@ -451,7 +453,7 @@ function viewSubject(v, id) {
   const sj = SUBJECTS.find((x) => x.id === id);
   if (!sj) return viewHome(v);
   v.style.setProperty("--c", sj.color);
-  v.append(h(".hero", h(".row", { style: "flex-wrap:nowrap" }, emojiTile(sj, 48), h("div", { style: "flex:1" }, h("h1", `${sj.name}: ${sj.title}`), h("p", "Pick a lecture")))));
+  v.append(h(".hero", h(".row", { style: "flex-wrap:nowrap" }, emojiTile(sj, 48), h("div", { style: "flex:1" }, h("h1", `${sj.name}: ${sj.title}`), h("p", classLine(sj.id) || "Pick a lecture")))));
   if (!S.hasAccess(sj.id)) {
     const code = h("input", { placeholder: `${sj.name} class code`, autocomplete: "off", "aria-label": `${sj.name} class code` });
     const err = h("p.err", { role: "alert" });

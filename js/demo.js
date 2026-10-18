@@ -110,8 +110,8 @@ const API = {
         teachers: new Set(cs.flatMap((c) => c.teacher_ids)).size, managers: s.managers.length, students: new Set(en.map((e) => e.user_id)).size, active7: new Set(en.filter(week).map((e) => e.user_id)).size };
     });
   },
-  staff_classes({ sid } = {}) {
-    return T.classes.filter((c) => canTeach(c) && (!sid || c.school_id === sid)).map((c) => {
+  staff_classes({ sid, kid } = {}) {
+    return T.classes.filter((c) => canTeach(c) && (!sid || c.school_id === sid) && (!kid || c.id === kid)).map((c) => {
       const en = enrolOf(c.id);
       return { class_id: c.id, school_id: c.school_id, school_name: T.schools.find((s) => s.id === c.school_id).name, course_id: c.course_id, name: c.name, term: c.term, code: c.code, code_expires: c.code_expires,
         max_students: c.max_students, exam_name: c.exam_name, exam_date: c.exam_date, archived: c.archived, students: en.length, active7: en.filter(week).length,

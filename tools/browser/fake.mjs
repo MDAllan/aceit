@@ -38,7 +38,8 @@ export async function fakeSupabase(page, db) {
     else if (path === "/rest/v1/progress") { if (method === "GET") r = { status: 200, body: db.progress ? [{ data: db.progress }] : [] }; else { db.progressPosts.push(body); r = { status: 201, body: null }; } }
     else if (path === "/rest/v1/progress_summary") { if (method === "GET") r = { status: 200, body: [] }; else { db.summaryPosts.push(body); r = { status: db.summaryFails ? 400 : 201, body: db.summaryFails ? { message: "nope" } : null }; } }
     else if (path === "/rest/v1/class_access") r = { status: 200, body: db.legacyAccess || [] };
-    else if (["/rest/v1/class_instructors", "/rest/v1/class_settings", "/rest/v1/lecture_content", "/rest/v1/exam_content"].includes(path)) r = { status: 200, body: [] };
+    else if (path === "/rest/v1/class_instructors") r = { status: 200, body: db.legacyInstructors || [] };
+    else if (["/rest/v1/class_settings", "/rest/v1/lecture_content", "/rest/v1/exam_content"].includes(path)) r = { status: 200, body: [] };
     else if (path.startsWith("/rest/v1/")) r = { status: 200, body: (db.tables || {})[path.split("/").pop()] || [] };
     else if (path === "/auth/v1/user") r = { status: 200, body: userJson(db.uid, db.profile?.email, db.factors || []) };
     else if (path === "/auth/v1/factors" && method === "POST") { db.factors = [...(db.factors || []), { id: "f-new", status: "unverified", factor_type: "totp", friendly_name: body?.friendly_name }]; r = { status: 200, body: { id: "f-new", type: "totp", friendly_name: body?.friendly_name, totp: { qr_code: "data:image/svg+xml;utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'/>", secret: "JBSWY3DPEHPK3PXP", uri: "otpauth://totp/ACEIT" } } }; }

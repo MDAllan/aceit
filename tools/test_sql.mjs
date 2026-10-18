@@ -200,6 +200,9 @@ const cn = (uid) => rows(uid, `select name from public.staff_classes()`).then((r
 ok((await cn(T1)) === "ASTR 207 Section 1", "an instructor sees only their own classes");
 ok((await cn(M1)) === "ASTR 207 Section 1|ERTH 209 Section 1", "a manager sees all classes of their school");
 ok((await rows(S1, `select * from public.staff_classes()`)).length === 0, "a student sees no staff class list");
+ok((await rows(M1, `select class_id from public.staff_classes(null, $1)`, [KA])).map((r) => r.class_id).join() === KA, "one class can be asked for by id");
+ok((await rows(T1, `select * from public.staff_classes(null, $1)`, [KB])).length === 0 && (await rows(M2, `select * from public.staff_classes(null, $1)`, [KA])).length === 0, "...but only by someone who may see it");
+const kc = await one(T1, `select students, active7, avg_pct, teachers from public.staff_classes(null, $1)`, [KA]); ok(typeof kc.students === "number" && Array.isArray(kc.teachers) && kc.teachers.some((t) => t.email === "t1@alpha.ca"), "class rows carry the instructor list and counts");
 ok((await rows(S1, `select * from public.classes`)).length === 0 && (await rows(S1, `select * from public.class_teachers`)).length === 0, "students cannot read class or teacher tables (codes stay hidden)");
 const mine = await rows(S1, `select course_id, role, school_name from public.my_classes()`);
 ok(mine.length === 1 && mine[0].course_id === "astr207" && mine[0].role === "student" && mine[0].school_name === "Alpha University", "a student's class list shows their class, role and school");

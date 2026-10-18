@@ -180,7 +180,7 @@ drop policy if exists "invites read" on public.invites;
 create policy "invites read" on public.invites for select using (
   public.is_admin() or (school_id is not null and public.is_manager_of(school_id)) or (class_id is not null and public.can_manage_class(class_id)));
 drop policy if exists "summary read" on public.progress_summary;
-create policy "summary read" on public.progress_summary for select using (public.can_view_student(user_id));
+create policy "summary read" on public.progress_summary for select using ((select public.is_admin()) or public.can_view_student(user_id));
 drop policy if exists "summary write" on public.progress_summary;
 create policy "summary write" on public.progress_summary for insert with check (user_id = auth.uid() and public.can_use());
 drop policy if exists "summary update" on public.progress_summary;
@@ -188,9 +188,9 @@ create policy "summary update" on public.progress_summary for update using (user
 
 -- people who can see each other: managers and teachers see the students and teachers of their school; the admin sees everyone
 drop policy if exists "own profile" on public.profiles;
-create policy "own profile" on public.profiles for select using (public.can_view_student(id));
+create policy "own profile" on public.profiles for select using ((select public.is_admin()) or public.can_view_student(id));
 drop policy if exists "own progress read" on public.progress;
-create policy "own progress read" on public.progress for select using (public.can_view_student(user_id));
+create policy "own progress read" on public.progress for select using ((select public.is_admin()) or public.can_view_student(user_id));
 drop policy if exists "own access" on public.class_access;
 create policy "own access" on public.class_access for select using (user_id = auth.uid() or public.is_admin());
 
@@ -572,16 +572,26 @@ language sql security definer set search_path = public stable as $$
   where public.is_manager_of(s.id) or exists (select 1 from public.class_teachers t join public.classes c on c.id = t.class_id where t.user_id = auth.uid() and c.school_id = s.id)
   order by s.name;
 $$;
-create or replace function public.staff_classes(sid uuid default null) returns table (class_id uuid, school_id uuid, school_name text, course_id text, name text, term text, code text, code_expires date, max_students int, exam_name text, exam_date date, archived boolean, students int, active7 int, avg_pct int, avg_mastery int, teachers jsonb)
+-- (one pass over the enrolments instead of a lookup per class, so a school with hundreds of classes still answers quickly)
+drop function if exists public.staff_classes(uuid);
+create or replace function public.staff_classes(sid uuid default null, kid uuid default null) returns table (class_id uuid, school_id uuid, school_name text, course_id text, name text, term text, code text, code_expires date, max_students int, exam_name text, exam_date date, archived boolean, students int, active7 int, avg_pct int, avg_mastery int, teachers jsonb)
 language sql security definer set search_path = public stable as $$
+  with vis as (
+    select c.* from public.classes c where (sid is null or c.school_id = sid) and (kid is null or c.id = kid) and public.can_teach_class(c.id)
+  ), agg as (
+    select e.class_id, count(*)::int students,
+           count(ps.user_id) filter (where ps.last_active > now() - interval '7 days')::int active7,
+           coalesce(round(avg(ps.pct))::int, 0) avg_pct, coalesce(round(avg(ps.mastery))::int, 0) avg_mastery
+    from vis c join public.enrollments e on e.class_id = c.id
+    left join public.progress_summary ps on ps.user_id = e.user_id and ps.course_id = c.course_id
+    group by e.class_id
+  ), tch as (
+    select t.class_id, jsonb_agg(jsonb_build_object('id', p.id, 'email', p.email, 'name', p.display_name) order by p.email) teachers
+    from public.class_teachers t join public.profiles p on p.id = t.user_id where t.class_id in (select id from vis) group by t.class_id
+  )
   select c.id, c.school_id, s.name, c.course_id, c.name, c.term, c.code, c.code_expires, c.max_students, c.exam_name, c.exam_date, c.archived,
-    (select count(*)::int from public.enrollments e where e.class_id = c.id),
-    (select count(*)::int from public.enrollments e join public.progress_summary ps on ps.user_id = e.user_id and ps.course_id = c.course_id where e.class_id = c.id and ps.last_active > now() - interval '7 days'),
-    coalesce((select round(avg(ps.pct))::int from public.enrollments e join public.progress_summary ps on ps.user_id = e.user_id and ps.course_id = c.course_id where e.class_id = c.id), 0),
-    coalesce((select round(avg(ps.mastery))::int from public.enrollments e join public.progress_summary ps on ps.user_id = e.user_id and ps.course_id = c.course_id where e.class_id = c.id), 0),
-    coalesce((select jsonb_agg(jsonb_build_object('id', p.id, 'email', p.email, 'name', p.display_name) order by p.email) from public.class_teachers t join public.profiles p on p.id = t.user_id where t.class_id = c.id), '[]'::jsonb)
-  from public.classes c join public.schools s on s.id = c.school_id
-  where public.can_teach_class(c.id) and (sid is null or c.school_id = sid)
+         coalesce(a.students, 0), coalesce(a.active7, 0), coalesce(a.avg_pct, 0), coalesce(a.avg_mastery, 0), coalesce(t.teachers, '[]'::jsonb)
+  from vis c join public.schools s on s.id = c.school_id left join agg a on a.class_id = c.id left join tch t on t.class_id = c.id
   order by s.name, c.archived, c.name;
 $$;
 create or replace function public.class_roster(kid uuid) returns table (user_id uuid, email text, display_name text, blocked boolean, joined_at timestamptz, pct int, mastery int, read_topics int, cards_known int, cards_total int, quiz_attempts int, quiz_correct int, last_active timestamptz)
@@ -641,7 +651,7 @@ grant execute on function
   public.create_class(uuid, text, text, text, int, text), public.update_class(uuid, text, text, int, date, boolean), public.set_class_code(uuid, text),
   public.set_class_exam(uuid, text, date), public.remove_student(uuid, uuid), public.leave_class(uuid), public.claim_invites(), public.invite_user(text, text, uuid, uuid), public.revoke_invite(uuid),
   public.remove_teacher(uuid, uuid), public.remove_manager(uuid, uuid), public.admin_set_admin(text, boolean), public.list_admins(), public.admin_set_confirm_email(boolean), public.admin_get_confirm_email(), public.admin_set_require_mfa(boolean), public.mfa_required(),
-  public.staff_schools(), public.staff_classes(uuid), public.class_roster(uuid), public.class_question_stats(uuid), public.staff_people(uuid), public.list_invites(uuid),
+  public.staff_schools(), public.staff_classes(uuid, uuid), public.class_roster(uuid), public.class_question_stats(uuid), public.staff_people(uuid), public.list_invites(uuid),
   public.submit_feedback(text, int, text)
 to authenticated;
 revoke all on function public.email_ok(uuid), public.apply_invites_for(uuid), public.on_user_confirmed(), public.audit_immutable(), public.make_code(), public.session_aal(), public.staff_step_ok() from public, anon, authenticated;

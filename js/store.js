@@ -8,7 +8,7 @@ export const demoRole = () => (!LOCAL ? "" : (location.search.match(/role=(\w+)/
 export const canSeeRefs = () => (DEMO ? demoRole() === "admin" : !!profile?.is_admin && !pref("student"));
 export const isAdmin = () => (DEMO ? demoRole() === "admin" : !!profile?.is_admin);
 export const isManager = () => (DEMO ? demoRole() === "manager" : managed.length > 0);
-export const isTeacher = () => (DEMO ? demoRole() === "instructor" : classes.some((c) => c.role === "teacher"));
+export const isTeacher = () => (DEMO ? demoRole() === "instructor" : classes.some((c) => c.role === "teacher") || (model === "legacy" && instructorOf.size > 0)); // legacy: instructors of the older per-course model
 export const isStaff = () => isAdmin() || isManager() || isTeacher();
 export const isInstructor = isStaff; // older name
 export const isV2 = () => DEMO || model === "v2"; // the schools upgrade is installed (or this is the local preview)

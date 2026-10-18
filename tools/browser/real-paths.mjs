@@ -30,6 +30,7 @@ async function session(db, hash = "", width = 390) {
   const p = await session(db);
   let t = await p.txt();
   chk("student sees their class", /ASTR 207/.test(t) && /Doppler|Motion|Gravity/.test(t));
+  chk("student sees which school and class it is", /Alpha University . ASTR 207 Section 1/.test(t));
   chk("student sees no ERTH 209 (classes never mixed)", !/ERTH 209/.test(t) || /Quick check|Lv/.test(t) && !/Igneous|Plate/.test(t));
   chk("exam countdown from the class", /Midterm in 1[123] days/.test(t), (t.match(/Midterm[^\n]*/) || [""])[0]);
   chk("student nav has no workspace", !/Platform|School|Teaching|Admin|Instructor/.test(await p.nav()), await p.nav());
@@ -153,6 +154,10 @@ const staffRpc = {
   const p2 = await session(db2);
   chk("legacy admin keeps the older Admin tab", /Admin/.test(await p2.nav()), await p2.nav());
   await p2.close_();
+  const db3 = { v2: false, profile: prof(), legacyAccess: [{ class_id: "astr207" }], legacyInstructors: [{ class_id: "astr207" }], classes: [], roles: [] };
+  const p3 = await session(db3);
+  chk("an instructor of the older model keeps the Instructor tab", /Instructor/.test(await p3.nav()), await p3.nav());
+  await p3.close_();
 }
 
 /* ---- 7. an invite that was just accepted ---- */

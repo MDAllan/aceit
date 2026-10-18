@@ -49,6 +49,7 @@ These rules are enforced **in the database** (row level security and permission-
 - All text from people (names, class names, feedback) is shown as text, never as HTML. Spreadsheet exports neutralise formulas.
 - The single third-party library (Supabase client) is bundled into the site and pinned to a version (`tools/vendor.mjs`), so a compromised CDN cannot change what runs.
 - The page refuses to display inside another site's frame.
+- Accessibility is checked automatically (axe-core, WCAG 2.x A and AA rules) on about 80 screens, in light and dark, on every change. This catches many but not all problems; a manual review is planned.
 - One account cannot store unlimited data (size limit on progress). The audit trail cannot be edited or deleted through ACEIT by anyone, including admins.
 
 ## 6. Data location, backups and retention

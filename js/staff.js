@@ -254,7 +254,7 @@ async function pageTeaching(c) {
 
 /* ---------- one class ---------- */
 async function pageClass(c, kid) {
-  const { v, X } = c, done = loading(v), [cs, ro] = await Promise.all([A.classesOf(null), A.roster(kid)]); done();
+  const { v, X } = c, done = loading(v), [cs, ro] = await Promise.all([A.classesOf(null, kid), A.roster(kid)]); done();
   const cls = cs.data.find((k) => k.class_id === kid);
   if (!cls) return v.append(empty("Class not found, or you don't have access to it."));
   try { await X.ensureCourse(cls.course_id); } catch {} // lecture lists give the question text and per-lecture bars
@@ -367,7 +367,8 @@ function feedbackCard(cls) {
 
 /* ---------- platform admin: admins, people, content, settings, activity ---------- */
 async function pageAdmins(c) {
-  const { v } = c, done = loading(v), [ad, inv] = await Promise.all([A.admins(), A.pendingInvites(null)]); done();
+  const { v } = c, done = loading(v), [ad, inv0] = await Promise.all([A.admins(), A.pendingInvites(null)]); done();
+  const inv = { data: inv0.data.filter((i) => i.role === "admin") };
   const me = (S.session?.user?.email || "").toLowerCase();
   const em = h("input", { type: "email", placeholder: "name@email.com", autocomplete: "off", "aria-label": "Email address" });
   const add = h("button.btn.sm", { onclick: () => busy(add, async () => {

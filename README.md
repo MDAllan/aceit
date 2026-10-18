@@ -27,6 +27,7 @@ Preview the staff screens with sample data (no login, no database), on localhost
 ## Checks
 - `npm run check`: content checks (JSON, ids, answers, images, manifest, student-safe text), SQL copies in step, database calls match the database, logic tests.
 - `node tools/test_sql.mjs` (and `MODE=upgrade node tools/test_sql.mjs`): 190+ database security tests on a throwaway Postgres. Install it first: `npm i --no-save embedded-postgres pg`.
+- `node tools/test_sql_scale.mjs`: how fast the dashboards answer with 6,000 students in 200 classes (all under half a second).
 - `node tools/vendor.mjs`: rebuilds the self-hosted Supabase client and fonts (developer only).
 - CI runs all of these on every push (`.github/workflows/check.yml`).
 
@@ -38,3 +39,4 @@ Preview the staff screens with sample data (no login, no database), on localhost
 | `docs/SECURITY.md` | School IT and privacy teams |
 | `docs/PITCH.md`, `docs/PILOT-PLAN.md` | Talking to a school |
 | `docs/legal/` | Drafts for a lawyer: privacy policy, terms, data processing agreement, sub-processors, retention, incident response |
+| `docs/ROADMAP.md` | What is built and what comes next |
