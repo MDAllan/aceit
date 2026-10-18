@@ -10,6 +10,11 @@ Things only you can do, because they need your accounts. Do them in this order. 
 
 What the upgrade does: adds schools, school managers, instructors, classes, invites and progress summaries; turns your existing ERTH 209 and ASTR 207 into two classes of a school called **ACEIT Direct**, keeping their codes, students, instructors and exam dates; and tightens a few rules (the audit log can no longer be edited, class codes are unique, one account cannot store huge amounts of data). Nobody is logged out, and until you run it the site keeps working exactly as before.
 
+Check it worked (2 minutes):
+1. Platform > Schools shows **ACEIT Direct** with 2 classes and your existing students.
+2. Open its ASTR 207 class: the join code is the one you had before, and the roster lists the students who had joined.
+3. Log in as a student: they still see their class, and Profile > My classes shows it under "ACEIT Direct".
+
 If something looks wrong, tell the developer which screen and what you saw. Do not delete tables.
 
 ## 1. Reliable emails (password resets, sign-ups, invites)
