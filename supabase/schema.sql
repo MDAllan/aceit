@@ -569,6 +569,20 @@ create index if not exists class_teachers_class_idx on public.class_teachers (cl
 create index if not exists school_managers_school_idx on public.school_managers (school_id);
 create index if not exists progress_summary_course_idx on public.progress_summary (course_id);
 
+-- 4b. optional two-step login (authenticator app) for people who can see other people's data ----------------------------------------------------
+-- When the platform admin switches "require_staff_mfa" on, admins, school managers and instructors only get their powers on a session that has
+-- passed the second step (aal2). Students are not affected. Until it is switched on nothing changes.
+create or replace function public.session_aal() returns text
+language sql stable as $$ select coalesce(nullif(current_setting('request.jwt.claims', true), '')::jsonb ->> 'aal', 'aal1'); $$;
+create or replace function public.staff_step_ok() returns boolean
+language sql security definer set search_path = public stable as $$
+  select coalesce((select value <> '1' from public.app_secrets where key = 'require_staff_mfa'), true) or public.session_aal() = 'aal2';
+$$;
+create or replace function public.is_admin() returns boolean
+language sql security definer set search_path = public stable as $$
+  select coalesce((select is_admin from public.profiles where id = auth.uid()), false) and public.staff_step_ok();
+$$;
+
 -- 5. permission helpers (every screen and every table rule uses these) -------------------------------------------------------------
 create or replace function public.email_ok(uid uuid) returns boolean
 language sql security definer set search_path = public, auth stable as $$
@@ -576,11 +590,11 @@ language sql security definer set search_path = public, auth stable as $$
 $$;
 create or replace function public.is_manager_of(sid uuid) returns boolean
 language sql security definer set search_path = public stable as $$
-  select public.is_admin() or exists (select 1 from public.school_managers where user_id = auth.uid() and school_id = sid);
+  select public.is_admin() or (public.staff_step_ok() and exists (select 1 from public.school_managers where user_id = auth.uid() and school_id = sid));
 $$;
 create or replace function public.is_teacher_of(cid uuid) returns boolean
 language sql security definer set search_path = public stable as $$
-  select exists (select 1 from public.class_teachers where user_id = auth.uid() and class_id = cid);
+  select public.staff_step_ok() and exists (select 1 from public.class_teachers where user_id = auth.uid() and class_id = cid);
 $$;
 create or replace function public.can_manage_class(cid uuid) returns boolean
 language sql security definer set search_path = public stable as $$
@@ -777,6 +791,30 @@ begin
   update public.schools set name = trim(nm), region = nullif(trim(rg), ''), active = is_active, seat_limit = seats where id = sid;
   perform public.log_action(case when is_active then 'update school' else 'suspend school' end, trim(nm), null, sid);
 end $$;
+-- a school that leaves: remove its classes, instructors, managers and invites, and (optionally) the accounts of students who belong to no other school
+create or replace function public.admin_delete_school(sid uuid, delete_accounts boolean default false) returns int
+language plpgsql security definer set search_path = public, auth as $$
+declare nm text; n int := 0; ids uuid[];
+begin
+  if not public.is_admin() then raise exception 'admin only'; end if;
+  if sid = '00000000-0000-0000-0000-000000000001' then raise exception 'the default school cannot be deleted'; end if;
+  select name into nm from public.schools where id = sid;
+  if nm is null then raise exception 'no such school'; end if;
+  if delete_accounts then
+    select coalesce(array_agg(distinct e.user_id), '{}') into ids
+    from public.enrollments e join public.classes c on c.id = e.class_id
+    where c.school_id = sid
+      and not exists (select 1 from public.enrollments e2 join public.classes c2 on c2.id = e2.class_id where e2.user_id = e.user_id and c2.school_id <> sid)
+      and not exists (select 1 from public.class_teachers t where t.user_id = e.user_id)
+      and not exists (select 1 from public.school_managers m where m.user_id = e.user_id)
+      and not exists (select 1 from public.profiles p where p.id = e.user_id and p.is_admin);
+    delete from auth.users where id = any(ids);   -- also removes their profile, progress, summaries and memberships
+    n := coalesce(array_length(ids, 1), 0);
+  end if;
+  delete from public.schools where id = sid;       -- classes, enrolments, instructors, managers, licences and invites go with it
+  perform public.log_action('delete school', nm, n || ' student accounts deleted');
+  return n;
+end $$;
 create or replace function public.admin_set_school_course(sid uuid, cid text, flag boolean) returns void
 language plpgsql security definer set search_path = public as $$
 begin
@@ -880,6 +918,21 @@ end $$;
 create or replace function public.admin_get_confirm_email() returns boolean
 language sql security definer set search_path = public stable as $$
   select case when public.is_admin() then coalesce((select value = '1' from public.app_secrets where key = 'confirm_email_on'), false) else false end;
+$$;
+
+-- the platform admin can require two-step login for all staff, but only after using it themselves (so they cannot lock themselves out)
+create or replace function public.admin_set_require_mfa(flag boolean) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  if not public.is_admin() then raise exception 'admin only'; end if;
+  if flag and public.session_aal() <> 'aal2' then raise exception 'Set up two-step login for your own account and sign in with it first.'; end if;
+  insert into public.app_secrets (key, value) values ('require_staff_mfa', case when flag then '1' else '0' end) on conflict (key) do update set value = excluded.value;
+  perform public.log_action('require two-step login', case when flag then 'on' else 'off' end);
+end $$;
+-- anyone signed in may ask (the app needs to know whether to prompt staff)
+create or replace function public.mfa_required() returns boolean
+language sql security definer set search_path = public stable as $$
+  select coalesce((select value = '1' from public.app_secrets where key = 'require_staff_mfa'), false);
 $$;
 
 create or replace function public.invite_user(target_email text, rl text, sid uuid default null, kid uuid default null) returns text
@@ -1071,14 +1124,14 @@ end $$;
 grant execute on function
   public.is_manager_of(uuid), public.is_teacher_of(uuid), public.can_manage_class(uuid), public.can_teach_class(uuid), public.can_view_student(uuid),
   public.has_course(text), public.has_class(text), public.join_class(text), public.redeem_class_by_code(text), public.redeem_class_code(text, text), public.my_classes(), public.my_roles(),
-  public.admin_create_school(text, text, int), public.admin_update_school(uuid, text, text, boolean, int), public.admin_set_school_course(uuid, text, boolean),
+  public.admin_create_school(text, text, int), public.admin_update_school(uuid, text, text, boolean, int), public.admin_delete_school(uuid, boolean), public.admin_set_school_course(uuid, text, boolean),
   public.create_class(uuid, text, text, text, int, text), public.update_class(uuid, text, text, int, date, boolean), public.set_class_code(uuid, text),
   public.set_class_exam(uuid, text, date), public.remove_student(uuid, uuid), public.leave_class(uuid), public.claim_invites(), public.invite_user(text, text, uuid, uuid), public.revoke_invite(uuid),
-  public.remove_teacher(uuid, uuid), public.remove_manager(uuid, uuid), public.admin_set_admin(text, boolean), public.list_admins(), public.admin_set_confirm_email(boolean), public.admin_get_confirm_email(),
+  public.remove_teacher(uuid, uuid), public.remove_manager(uuid, uuid), public.admin_set_admin(text, boolean), public.list_admins(), public.admin_set_confirm_email(boolean), public.admin_get_confirm_email(), public.admin_set_require_mfa(boolean), public.mfa_required(),
   public.staff_schools(), public.staff_classes(uuid), public.class_roster(uuid), public.class_question_stats(uuid), public.staff_people(uuid), public.list_invites(uuid),
   public.submit_feedback(text, int, text)
 to authenticated;
-revoke all on function public.email_ok(uuid), public.apply_invites_for(uuid), public.on_user_confirmed(), public.audit_immutable(), public.make_code() from public, anon, authenticated;
+revoke all on function public.email_ok(uuid), public.apply_invites_for(uuid), public.on_user_confirmed(), public.audit_immutable(), public.make_code(), public.session_aal(), public.staff_step_ok() from public, anon, authenticated;
 
 -- let the API pick up the new functions straight away
 notify pgrst, 'reload schema';

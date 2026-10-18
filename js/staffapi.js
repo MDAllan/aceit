@@ -65,6 +65,7 @@ export async function authSettings() {
 /* ----- changing things ----- */
 export const createSchool = (nm, rg, seats) => call("admin_create_school", { nm, rg: rg || "", seats: seats || null });
 export const updateSchool = (sid, nm, rg, is_active, seats) => call("admin_update_school", { sid, nm, rg: rg || "", is_active, seats: seats || null });
+export const deleteSchool = (sid, delete_accounts) => call("admin_delete_school", { sid, delete_accounts: !!delete_accounts });
 export const licenseCourse = (sid, cid, flag) => call("admin_set_school_course", { sid, cid, flag });
 export const createClass = (sid, cid, nm, tm, seats, new_code) => call("create_class", { sid, cid, nm, tm: tm || "", seats: seats || null, new_code: new_code || "" });
 export const updateClass = (kid, nm, tm, seats, expires, closed) => call("update_class", { kid, nm, tm: tm || "", seats: seats || null, expires: expires || null, closed: !!closed });
@@ -77,6 +78,8 @@ export const removeTeacher = (uid, kid) => call("remove_teacher", { uid, kid });
 export const removeManager = (uid, sid) => call("remove_manager", { uid, sid });
 export const setAdmin = (target_email, flag) => call("admin_set_admin", { target_email, flag });
 export const setConfirmEmail = (flag) => call("admin_set_confirm_email", { flag });
+export const mfaRequiredFlag = async () => (await call("mfa_required")).data === true;
+export const setRequireMfa = (flag) => call("admin_set_require_mfa", { flag });
 export const blockAccount = (uid, flag) => call("admin_set_blocked", { uid, flag });
 export const deleteAccount = (uid) => call("admin_delete_user", { uid });
 export const getDomains = async () => (await call("admin_get_domains")).data || "";

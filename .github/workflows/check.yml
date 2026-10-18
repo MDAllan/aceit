@@ -32,3 +32,16 @@ jobs:
         run: node tools/test_sql.mjs
       - name: Database security rules (upgrade from the first schema)
         run: MODE=upgrade node tools/test_sql.mjs
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Install the browser test driver
+        run: npm i --no-save puppeteer-core axe-core
+      - name: Serve the site and run the browser tests (staff screens, real code paths, two-step login, content security policy, accessibility scan)
+        run: |
+          python3 -m http.server 8765 >/dev/null 2>&1 &
+          sleep 2
+          CI=1 CHROME=/usr/bin/google-chrome node tools/browser/run.mjs

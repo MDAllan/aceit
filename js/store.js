@@ -50,7 +50,7 @@ const syncSubs = []; export const onSync = (fn) => syncSubs.push(fn);
 const setSync = (state) => { sync = { state, at: state === "saved" ? Date.now() : sync.at }; syncSubs.forEach((f) => { try { f(sync); } catch {} }); };
 let retry = null;
 async function push() {
-  if (!sb || !session || !profile || profile.blocked) return;
+  if (!sb || !session || !profile || profile.blocked || mfaGate) return;
   if (typeof navigator !== "undefined" && navigator.onLine === false) { setSync("offline"); return; }
   setSync("syncing");
   try {
@@ -65,7 +65,7 @@ async function push() {
 let summaryFn = null, lastSummary = "";
 export const setSummaryProvider = (fn) => { summaryFn = fn; };
 export async function pushSummary(force) {
-  if (!sb || !session || !profile || profile.blocked || model !== "v2" || !summaryFn) return;
+  if (!sb || !session || !profile || profile.blocked || mfaGate || model !== "v2" || !summaryFn) return;
   try {
     const rows = summaryFn(); if (!rows.length) return;
     const key = JSON.stringify(rows); if (key === lastSummary && !force) return;
@@ -78,7 +78,7 @@ if (typeof addEventListener === "function") { addEventListener("online", () => p
 
 export async function initBackend() {
   if (DEMO) return;
-  const { createClient } = await import("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm");
+  const { createClient } = await import("./vendor/supabase.js"); // served by this site (see tools/vendor.mjs), not by a CDN
   sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   const { data: s } = await sb.auth.getSession();
   session = s.session;
@@ -95,12 +95,46 @@ export async function loadProfile() {
   profile = p;
   if (p && !p.blocked) await sb.rpc("claim_invites").then((r) => { if (r.data > 0) invitesClaimed = r.data; }, () => {}); // roles from email invites are applied once the email is confirmed
   await loadClasses();
+  await refreshMfaGate();
   if (p && !p.blocked) {
     const { data: r } = await sb.from("progress").select("data").eq("user_id", session.user.id).maybeSingle();
     if (r?.data) data = merge(data, r.data);
     try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {}
   }
 }
+
+/* ---------- two-step login (authenticator app) ---------- */
+// mfaGate: "challenge" = the account has an authenticator app but this sign-in has not used it yet;
+//          "enroll" = the platform requires two-step login for staff and this staff member has not set it up.
+export let mfaGate = null, mfaRequired = false, mfaLevel = "aal1";
+export async function refreshMfaGate() {
+  mfaGate = null; mfaRequired = false; mfaLevel = "aal1";
+  if (DEMO || !sb || !session) return;
+  try {
+    mfaLevel = (await sb.auth.mfa.getAuthenticatorAssuranceLevel()).data?.currentLevel || "aal1";
+    mfaRequired = (await sb.rpc("mfa_required")).data === true;
+    if (mfaLevel === "aal2") return;
+    const verified = (await sb.auth.mfa.listFactors()).data?.totp || [];
+    if (verified.length) mfaGate = "challenge";
+    else if (mfaRequired && isStaff()) mfaGate = "enroll";
+  } catch {}
+}
+export const mfa = {
+  factors: async () => (await sb.auth.mfa.listFactors()).data?.totp || [], // the authenticator apps that are switched on
+  async start() { // a QR code and key to put into the app; tidies up a set-up that was never finished
+    const all = (await sb.auth.mfa.listFactors()).data?.all || [];
+    for (const f of all.filter((x) => x.status === "unverified")) await sb.auth.mfa.unenroll({ factorId: f.id });
+    return sb.auth.mfa.enroll({ factorType: "totp", friendlyName: "ACEIT " + new Date().toISOString().slice(0, 16) });
+  },
+  async confirm(factorId, code) { // proves the person has the app; the session becomes two-step
+    const c = await sb.auth.mfa.challenge({ factorId }); if (c.error) return c;
+    const v = await sb.auth.mfa.verify({ factorId, challengeId: c.data.id, code: String(code).replace(/\s/g, "") });
+    if (!v.error) await refreshMfaGate();
+    return v;
+  },
+  remove: (factorId) => sb.auth.mfa.unenroll({ factorId }),
+};
+export const setRequireMfa = (flag) => sb.rpc("admin_set_require_mfa", { flag });
 
 export let invitesClaimed = 0; // set when this login turned an email invite into a role (shown once as a welcome message)
 export const takeInvitesClaimed = () => { const n = invitesClaimed; invitesClaimed = 0; return n; };
@@ -154,7 +188,8 @@ export async function signIn(email, password) {
   if (!r.error) { session = r.data.session; await loadProfile(); }
   return r;
 }
-export async function signOut() { await sb.auth.signOut(); session = null; profile = null; access = new Set(); instructorOf = new Set(); settings = {}; classes = []; managed = []; lastSummary = ""; }
+// "local" ends this device's session only; "global" ends every device's
+export async function signOut(scope = "local") { await sb.auth.signOut({ scope }); session = null; profile = null; access = new Set(); instructorOf = new Set(); settings = {}; classes = []; managed = []; lastSummary = ""; mfaGate = null; mfaLevel = "aal1"; }
 export async function forgot(email) {
   return sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname });
 }

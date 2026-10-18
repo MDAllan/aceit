@@ -4,6 +4,7 @@ import * as S from "./store.js";
 import * as A from "./staffapi.js";
 import { h, ic, toast } from "./ui.js";
 import { download, publishPanel } from "./admin.js";
+import { mfaCard } from "./mfa.js";
 
 /* ---------- small helpers ---------- */
 const DAY = 864e5;
@@ -154,7 +155,7 @@ function newClassPanel(c, sc) {
 
 async function peopleTab(c, sc, classes) {
   const out = h("div"), admin = S.isAdmin(), manage = managesSchool(sc.school_id), done = loading(out);
-  const [pp, inv] = await Promise.all([A.schoolPeople(sc.school_id), A.pendingInvites(sc.school_id)]); done();
+  const pp = await A.schoolPeople(sc.school_id); done();
   const teachers = new Map();
   classes.forEach((k) => k.teachers.forEach((t) => { const e = teachers.get(t.id) || { id: t.id, email: t.email, name: t.name, classes: [] }; e.classes.push({ id: k.class_id, name: k.name }); teachers.set(t.id, e); }));
   const refresh = () => c.X.route();
@@ -217,7 +218,21 @@ function settingsTab(c, sc) {
     return h("label.check", cb, `${sj.name}: ${sj.title}`); });
   return h("div", h(".card", { style: "margin-top:12px" }, h("h3", "School details"), h(".fgrid.two", field("School name", nm), field("Region", rg), field("Student limit", seats, "Leave empty for no limit.")),
       h("label.check", active, "School is active (untick to suspend: nobody in it can join or study)"), h("div", { style: "margin-top:8px" }, save)),
-    h(".card", { style: "margin-top:12px" }, h("h3", "Courses this school may use"), h(".src", { style: "margin:0 0 6px" }, "Managers can only create classes for these courses."), h("div", lic)));
+    h(".card", { style: "margin-top:12px" }, h("h3", "Courses this school may use"), h(".src", { style: "margin:0 0 6px" }, "Managers can only create classes for these courses."), h("div", lic)),
+    sc.school_id === "00000000-0000-0000-0000-000000000001" ? "" : deleteSchoolCard(c, sc));
+}
+// for a school that stops using ACEIT: removes its classes, instructors, managers and invites (and, if ticked, the students who belong to no other school)
+function deleteSchoolCard(c, sc) {
+  const confirmBox = h("input", { placeholder: sc.name, autocomplete: "off", "aria-label": "Type the school name to confirm" });
+  const accounts = h("input", { type: "checkbox" }); accounts.checked = true;
+  const del = h("button.btn.warn", { onclick: () => busy(del, async () => {
+    if (confirmBox.value.trim() !== sc.name) { toast("Type the school's name exactly to confirm"); return; }
+    const r = await A.deleteSchool(sc.school_id, accounts.checked); if (r.error) { toast(r.error.message); return; }
+    toast(`School deleted${accounts.checked ? ` (${plural(r.data, "student account")} deleted)` : ""}`); go("schools");
+  }) }, ic("trash", 16), "Delete this school");
+  return h(".card", { style: "margin-top:12px;border-left:6px solid var(--bad)" }, h("h3", "Delete this school"),
+    h(".src", { style: "margin:0 0 6px" }, "For a school that stops using ACEIT. Removes its classes, instructors, managers and invites. This cannot be undone: download its progress (CSV) from the Classes tab first."),
+    h("label.check", accounts, "Also delete the accounts of students who belong to no other school"), field("Type the school's name to confirm", confirmBox), h("div", { style: "margin-top:8px" }, del));
 }
 
 async function activityBlock(sid) {
@@ -229,11 +244,12 @@ async function activityBlock(sid) {
 async function pageTeaching(c) {
   const { v } = c, done = loading(v), r = await A.classesOf(null); done();
   if (r.error) return fail(v, r.error);
-  const list = r.data.filter((k) => !k.archived);
-  if (!list.length) return v.append(empty("You are not assigned to a class yet. Ask your school manager to add you."));
+  const list = r.data.filter((k) => !k.archived), old = r.data.filter((k) => k.archived);
+  if (!list.length && !old.length) return v.append(empty("You are not assigned to a class yet. Ask your school manager to add you."));
   const by = {}; list.forEach((k) => (by[k.school_name] ||= []).push(k));
   v.append(h(".tiles", tile("Classes", list.length), tile("Students", list.reduce((t, k) => t + k.students, 0)), tile("Active this week", list.reduce((t, k) => t + k.active7, 0))),
-    ...Object.entries(by).map(([school, ks]) => h("div", { style: "margin-top:12px" }, Object.keys(by).length > 1 ? h("h3", { style: "margin:0 0 6px" }, school) : "", h(".stack", ks.map((k) => classCard(c, k))))));
+    ...Object.entries(by).map(([school, ks]) => h("div", { style: "margin-top:12px" }, Object.keys(by).length > 1 ? h("h3", { style: "margin:0 0 6px" }, school) : "", h(".stack", ks.map((k) => classCard(c, k))))),
+    old.length ? panel(`Archived classes (${old.length})`, false, h(".stack", old.map((k) => classCard(c, k)))) : "");
 }
 
 /* ---------- one class ---------- */
@@ -258,6 +274,13 @@ function codeCard(c, cls, manage) {
   const nm = h("input", { value: cls.name, maxlength: 120, "aria-label": "Class name" }), term = h("input", { value: cls.term || "", "aria-label": "Term" });
   const seats = h("input", { type: "number", min: 1, value: cls.max_students || "", placeholder: "No limit", "aria-label": "Student limit" }), exp = h("input", { type: "date", value: cls.code_expires || "", "aria-label": "Code expires on" });
   const closed = h("input", { type: "checkbox" }); closed.checked = cls.archived;
+  // same course, seat limit and instructors for a new term, with a new random code
+  const copyBtn = h("button.btn.alt.sm", { onclick: () => busy(copyBtn, async () => {
+    const term = (prompt("Term for the copy (for example Winter 2027):", "") || "").trim(); if (!term) return;
+    const r = await A.createClass(cls.school_id, cls.course_id, (cls.term ? cls.name.split(cls.term).join("").trim() : cls.name) + " " + term, term, cls.max_students, ""); if (r.error) { toast(r.error.message); return; }
+    for (const t of cls.teachers) await A.invite(t.email, "teacher", null, r.data);
+    toast("Class copied"); go("class/" + r.data);
+  }) }, ic("copy", 16), "Copy for a new term");
   const save = h("button.btn.sm", { onclick: () => busy(save, async () => { const r = await A.updateClass(cls.class_id, nm.value.trim() || cls.name, term.value.trim(), +seats.value || null, exp.value || null, closed.checked); if (r.error) toast(r.error.message); else { toast("Saved"); c.X.route(); } }) }, ic("check", 16), "Save settings");
   return h(".card", { style: "margin-top:12px" }, h("h3", "Join code"), h(".src", { style: "margin:0 0 8px" }, "Students tap Join a class and type this code."),
     h(".codebox", h("code", cls.code), h(".row", { style: "gap:6px" }, h("button.btn.alt.sm", { onclick: () => copy(cls.code, "Code copied") }, ic("copy", 16), "Code"), h("button.btn.alt.sm", { onclick: () => copy(text, "Message copied") }, ic("mail", 16), "Message"))),
@@ -266,7 +289,7 @@ function codeCard(c, cls, manage) {
     h(".row.wrapx", { style: "margin-top:10px" }, inp, h("button.btn.sm", { onclick: () => { if (inp.value.trim().length < 6) { toast("Use at least 6 characters"); return; } set(inp.value.trim()); } }, "Save"),
       h("button.btn.alt.sm", { onclick: () => { if (confirm("Make a new random code? The old code stops working for new students.")) set(""); } }, ic("refresh", 16), "Random")),
     manage ? panel("Class settings", false, h(".fgrid.two", field("Class name", nm), field("Term", term), field("Student limit", seats, "Leave empty for no limit."), field("Code stops working on", exp, "Leave empty for no end date.")),
-      h("label.check", closed, "Archive this class (closed to new students)"), h("div", { style: "margin-top:8px" }, save)) : "");
+      h("label.check", closed, "Archive this class (closed to new students)"), h(".row", { style: "margin-top:8px" }, save, copyBtn)) : "");
 }
 
 function examCard(c, cls) {
@@ -378,13 +401,18 @@ function pageContent(c) {
 }
 
 async function pageSettings(c) {
-  const { v } = c, done = loading(v), [flag, auth, domains] = await Promise.all([A.confirmEmailFlag(), A.authSettings(), A.getDomains()]); done();
+  const { v } = c, done = loading(v), [flag, auth, domains, mfaOn] = await Promise.all([A.confirmEmailFlag(), A.authSettings(), A.getDomains(), A.mfaRequiredFlag()]); done();
   const on = auth && auth.autoconfirm === false, off = auth && auth.autoconfirm === true;
   const flagBox = h("input", { type: "checkbox" }); flagBox.checked = !!flag; flagBox.disabled = off && !flag;
   flagBox.onchange = async () => { flagBox.disabled = true; const r = await A.setConfirmEmail(flagBox.checked); flagBox.disabled = false; if (r.error) { toast(r.error.message); flagBox.checked = !flagBox.checked; } else toast(flagBox.checked ? "Invites to new people are allowed" : "Invites to new people are paused"); };
   const dom = h("input", { value: domains, placeholder: "school.ca, uni.ca (leave empty to allow anyone)", "aria-label": "Allowed email domains" });
   const saveDom = h("button.btn.sm", { onclick: () => busy(saveDom, async () => { const r = await A.setDomains(dom.value.trim()); toast(r.error ? r.error.message : "Saved"); }) }, "Save");
-  v.append(h(".card", h("h3", "Sign-up safety: Confirm email"),
+  const mfaBox = h("input", { type: "checkbox" }); mfaBox.checked = mfaOn; mfaBox.disabled = !mfaOn && S.mfaLevel !== "aal2" && !S.DEMO;
+  mfaBox.onchange = async () => { mfaBox.disabled = true; const r = await A.setRequireMfa(mfaBox.checked); mfaBox.disabled = false; if (r.error) { toast(r.error.message); mfaBox.checked = !mfaBox.checked; } else toast(mfaBox.checked ? "Staff must now use two-step login" : "Two-step login is no longer required"); };
+  v.append(h(".card", h("h3", "Two-step login for staff"), h(".src", { style: "margin:0 0 6px" }, "Admins, school managers and instructors can see other people's information. With this on they must also enter a code from an authenticator app, and they are asked to set it up the next time they sign in."),
+      h("label.check", mfaBox, "Require two-step login for staff"), !mfaOn && S.mfaLevel !== "aal2" && !S.DEMO ? warn(h("b", "Turn it on for your own account first."), h(".src", { style: "margin:2px 0 0" }, "Set it up below, then sign out and in again so this session uses it. That way you cannot lock yourself out.")) : ""),
+    S.DEMO ? "" : mfaCard(() => c.X.route()),
+    h(".card", { style: "margin-top:12px" }, h("h3", "Sign-up safety: Confirm email"),
       off ? warn(h("b", "Confirm email is OFF in Supabase."), h(".src", { style: "margin:2px 0 0" }, "Anyone can create an account with an email address that is not theirs. That is fine for students, but it means a role could be claimed by someone who is not the person you invited. Turn it on before inviting real instructors or managers: Supabase > Authentication > Providers > Email > Confirm email. You also need your own email sender so the confirmation emails arrive (docs/SCHOOL-SETUP.md).")) : "",
       on ? h(".warnbox.good", h("b", "Confirm email is ON in Supabase."), h(".src", { style: "margin:2px 0 0" }, "People must prove they own an email address before they get any role.")) : "",
       !auth ? warn(h("b", "Could not check Supabase."), h(".src", { style: "margin:2px 0 0" }, "Check the setting yourself in Supabase > Authentication > Providers > Email.")) : "",

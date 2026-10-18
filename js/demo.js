@@ -4,6 +4,7 @@
 import { demoRole } from "./store.js";
 
 const DAY = 864e5;
+const DEFAULT_SCHOOL = "00000000-0000-0000-0000-000000000001"; // the school your existing classes move into (cannot be deleted)
 let seed = 11;
 const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
 const pick = (a) => a[Math.floor(rnd() * a.length)];
@@ -14,11 +15,11 @@ const uid = (n) => "u" + n;
 const email = (n, dom) => n.toLowerCase().replace(/[^a-z ]/g, "").replace(" ", ".") + "@" + dom;
 
 function build() {
-  T = { schools: [], classes: [], people: {}, enrol: [], invites: [], admins: [], audit: [], confirm: true, domains: "" };
+  T = { schools: [], classes: [], people: {}, enrol: [], invites: [], admins: [], audit: [], confirm: true, domains: "", mfa: false };
   const school = (id, name, region, seat_limit, courses) => T.schools.push({ id, name, region, active: true, seat_limit, courses, managers: [] });
   school("sch-a", "Alpha University", "Alberta", 400, ["astr207", "erth209"]);
   school("sch-b", "Beta College", "Ontario", 120, ["erth209"]);
-  school("sch-c", "ACEIT Direct", "Alberta, Canada", null, ["astr207", "erth209"]);
+  school(DEFAULT_SCHOOL, "ACEIT Direct", "Alberta, Canada", null, ["astr207", "erth209"]);
   const person = (id, nm, em) => (T.people[id] = { id, email: em, display_name: nm, blocked: false });
   person("me", "You", "you@alpha.ca");
   person("t1", "Dr. Rivera", "rivera@alpha.ca"); person("t2", "Prof. Okafor", "okafor@alpha.ca"); person("t3", "Dr. Lindqvist", "lindqvist@beta.ca");
@@ -32,14 +33,14 @@ function build() {
   cls("k-a2", "sch-a", "erth209", "ERTH 209 Section 2", "Fall 2026", "R4DN-8FJC", [me || "t2"], null);
   cls("k-a3", "sch-a", "astr207", "ASTR 207 Evening", "Fall 2026", "B9HT-3KLE", ["t1"], null, { max_students: 20 });
   cls("k-b1", "sch-b", "erth209", "ERTH 209 Evening", "Fall 2026", "Q2VX-6MNA", ["t3"], null);
-  cls("k-c1", "sch-c", "erth209", "Geology (ERTH 209)", "Fall 2026", "madi@77", [], null);
-  cls("k-c2", "sch-c", "astr207", "Astronomy (ASTR 207)", "Fall 2026", "cry@18", [], null);
+  cls("k-c1", DEFAULT_SCHOOL, "erth209", "Geology (ERTH 209)", "Fall 2026", "madi@77", [], null);
+  cls("k-c2", DEFAULT_SCHOOL, "astr207", "Astronomy (ASTR 207)", "Fall 2026", "cry@18", [], null);
   const size = { "k-a1": 11, "k-a2": 8, "k-a3": 6, "k-b1": 9, "k-c1": 4, "k-c2": 3 };
   let n = 0;
   for (const c of T.classes) {
     for (let i = 0; i < size[c.id]; i++, n++) {
       const nm = NAMES[n % NAMES.length], id = uid(n);
-      person(id, nm, email(nm, c.school_id === "sch-b" ? "beta.ca" : c.school_id === "sch-c" ? "gmail.com" : "alpha.ca"));
+      person(id, nm, email(nm, c.school_id === "sch-b" ? "beta.ca" : c.school_id === DEFAULT_SCHOOL ? "gmail.com" : "alpha.ca"));
       const eng = rnd(), quiet = i % 5 === 4;
       T.enrol.push({ user_id: id, class_id: c.id, joined_at: new Date(Date.now() - (5 + rnd() * 30) * DAY).toISOString(), eng, quiet, sum: null });
     }
@@ -146,6 +147,16 @@ const API = {
   admin_update_school({ sid, nm, rg, is_active, seats }) {
     need(adminView(), "admin only"); Object.assign(T.schools.find((s) => s.id === sid), { name: nm.trim(), region: rg || null, active: is_active, seat_limit: seats || null }); log(is_active ? "update school" : "suspend school", nm, null, sid);
   },
+  admin_delete_school({ sid, delete_accounts }) {
+    need(adminView(), "admin only"); need(sid !== DEFAULT_SCHOOL, "the default school cannot be deleted");
+    const s = T.schools.find((x) => x.id === sid); need(s, "no such school");
+    const ks = T.classes.filter((c) => c.school_id === sid).map((c) => c.id), mine = T.enrol.filter((e) => ks.includes(e.class_id)).map((e) => e.user_id);
+    const shared = new Set(T.enrol.filter((e) => !ks.includes(e.class_id)).map((e) => e.user_id));
+    const gone = delete_accounts ? [...new Set(mine)].filter((u) => !shared.has(u)) : [];
+    T.enrol = T.enrol.filter((e) => !ks.includes(e.class_id) && !gone.includes(e.user_id)); gone.forEach((u) => delete T.people[u]);
+    T.classes = T.classes.filter((c) => c.school_id !== sid); T.schools = T.schools.filter((x) => x.id !== sid); T.invites = T.invites.filter((i) => i.school_id !== sid);
+    log("delete school", s.name, gone.length + " student accounts deleted"); return gone.length;
+  },
   admin_set_school_course({ sid, cid, flag }) {
     need(adminView(), "admin only"); const s = T.schools.find((x) => x.id === sid); s.courses = flag ? [...new Set([...s.courses, cid])] : s.courses.filter((x) => x !== cid); log(flag ? "license course" : "remove course license", cid, null, sid);
   },
@@ -192,6 +203,8 @@ const API = {
     T.admins = flag ? [...T.admins.filter((a) => a.email !== em), { user_id: p.id, email: em, display_name: p.display_name }] : T.admins.filter((a) => a.email !== em); log(flag ? "add admin" : "remove admin", em);
   },
   admin_get_confirm_email() { return T.confirm; },
+  mfa_required() { return T.mfa; },
+  admin_set_require_mfa({ flag }) { need(adminView(), "admin only"); T.mfa = flag; log("require two-step login", flag ? "on" : "off"); },
   admin_set_confirm_email({ flag }) { need(adminView(), "admin only"); T.confirm = flag; log("confirm email setting", flag ? "on" : "off"); },
   admin_set_blocked({ uid: id, flag }) { need(adminView(), "admin only"); T.people[id].blocked = flag; log(flag ? "block" : "unblock", T.people[id].email); },
   admin_delete_user({ uid: id }) { need(adminView(), "admin only"); T.enrol = T.enrol.filter((e) => e.user_id !== id); log("delete account", T.people[id]?.email); delete T.people[id]; },

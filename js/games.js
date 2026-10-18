@@ -79,14 +79,17 @@ const G = {
     let open = [], lock = false, found = 0, moves = 0;
     const info = h(".src", "Moves: 0 · Pairs: 0/" + pool.length), grid = h(".mg.mem");
     tiles.forEach((t) => {
-      const el = h("button.mc", { "aria-label": "Hidden card" }, h(".in", h(".f.fr", "?"), h(".f.bk", t.k === "t" ? h("b", md(t.t)) : md(t.t))));
+      // face-down: announced as "Hidden card"; face-up: announced by what it shows (the "?" is drawn by CSS, the hidden face is not read)
+      const bk = h(".f.bk", t.k === "t" ? h("b", md(t.t)) : md(t.t)), sr = h("span.sr", "Hidden card");
+      const el = h("button.mc", h(".in", h(".f.fr"), bk), sr);
+      el.setUp = (up) => { el.classList.toggle("up", up); sr.hidden = up; };
       el.onclick = () => {
         if (lock || el.classList.contains("up")) return;
-        el.classList.add("up"); open.push({ t, el });
+        el.setUp(true); open.push({ t, el });
         if (open.length < 2) return;
         moves++; lock = true; const [a, c] = open; open = [];
         if (a.t.id === c.t.id) { a.el.classList.add("done"); c.el.classList.add("done"); found++; lock = false; if (found === pool.length) { done(lec, "memory"); confetti(); toast(`Cleared in ${moves} moves!`); grid.after(h("button.btn", { style: "margin-top:12px", onclick: again }, "Play again")); } }
-        else setTimeout(() => { a.el.classList.remove("up"); c.el.classList.remove("up"); lock = false; }, 900);
+        else setTimeout(() => { a.el.setUp(false); c.el.setUp(false); lock = false; }, 900);
         info.textContent = `Moves: ${moves} · Pairs: ${found}/${pool.length}`;
       };
       grid.append(el);

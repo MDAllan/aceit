@@ -3,7 +3,11 @@ import { renderGame, DEFAULT_GAMES } from "./games.js";
 import { viewAdmin as adminView } from "./admin.js";
 import { viewWorkspace, workspaceLabel } from "./staff.js";
 import * as Demo from "./demo.js";
+import { challengeBody, enrollBody, mfaCard } from "./mfa.js";
 import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp } from "./ui.js";
+
+// This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
+if (window.top !== window.self) { document.documentElement.style.display = "none"; try { window.top.location.href = window.self.location.href; } catch {} }
 
 // accessibility options live on this device (text size, easy-read font, reduced motion)
 const A11Y_KEY = "erth209:a11y";
@@ -11,7 +15,6 @@ const a11y = () => { try { return JSON.parse(localStorage.getItem(A11Y_KEY)) || 
 function applyA11y() {
   const o = a11y(), r = document.documentElement;
   r.dataset.fs = o.fs || "md"; r.dataset.motion = o.motion ? "reduce" : ""; r.dataset.font = o.easy ? "easy" : "";
-  if (o.easy && !document.getElementById("easyfont")) document.head.append(Object.assign(document.createElement("link"), { id: "easyfont", rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" }));
 }
 function setA11y(patch) { try { localStorage.setItem(A11Y_KEY, JSON.stringify({ ...a11y(), ...patch })); } catch {} applyA11y(); }
 
@@ -111,6 +114,7 @@ function gate() {
   if (!S.session) return "auth";
   if (!S.profile) return "setup";
   if (S.profile.blocked) return "blocked";
+  if (S.mfaGate) return "mfa";
   return null;
 }
 let routeSeq = 0;
@@ -129,6 +133,7 @@ async function route() {
   if (g === "setup") return authBox("Almost there", h("p", "Your account was created but its profile is missing. The site owner needs to run the latest database patch (supabase/patch1.sql), then press Retry."),
     h(".row", h("button.btn", { onclick: async () => { await S.loadProfile(); route(); } }, "Retry"), h("button.btn.alt", { onclick: async () => { await S.signOut(); route(); } }, "Log out")));
   if (g === "blocked") return viewBlocked();
+  if (g === "mfa") return viewMfa();
   const claimed = S.takeInvitesClaimed(); if (claimed) toast("Your invite was accepted. Your Workspace tab is ready.");
   const page = parts[0] || "", need = [];
   if (page === "l") { const lx = LECS.find((z) => z.id === parts[1]); if (lx && S.hasAccess(lx.subject)) need.push(lx); }
@@ -153,7 +158,7 @@ function shell(parts) {
   app.replaceChildren(
     h("header.top", h(".in",
       h("button.brand", { onclick: () => (location.hash = "#/") }, h("span.logo", ic("star", 18)), "ACEIT"),
-      cc && page !== "work" ? h("button.cls", { style: `--tc:${cc.color}`, "aria-label": "Your classes", onclick: () => (location.hash = "#/") }, h("span.em", cc.icon), cc.name) : "",
+      cc && page !== "work" ? h("button.cls", { style: `--tc:${cc.color}`, title: "Your classes", onclick: () => (location.hash = "#/") }, h("span.em", cc.icon), cc.name) : "",
       page === "work" ? h("span", { style: "margin-left:auto" }) : h(".xp", { title: `${x.xp} XP in ${cc ? cc.name : "this class"}` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
       admin && !S.DEMO ? h("button.chip", { "aria-label": "Switch between admin and student view", onclick: () => { S.setPref("student", !S.pref("student")); route(); } }, ic("eye", 16), S.pref("student") ? "Student view" : "Admin view") : "",
       h("button.chip", { "aria-label": "Toggle dark mode", onclick: toggleTheme }, ic("moon", 16)),
@@ -226,7 +231,7 @@ function viewGlossary(v) {
     const q = inp.value.trim().toLowerCase(); list.replaceChildren(); let last = "";
     all.filter(({ c }) => !q || (c.front + " " + c.back).toLowerCase().includes(q)).forEach(({ l, c }) => {
       const L = c.front.replace(/[^A-Za-z0-9]/, "").slice(0, 1).toUpperCase() || "#";
-      if (L !== last) { last = L; list.append(h("h3", { style: "margin:14px 0 4px;color:var(--c)" }, L)); }
+      if (L !== last) { last = L; list.append(h("h3", { style: "margin:14px 0 4px;color:var(--ct)" }, L)); }
       list.append(h(".fb", { style: "margin-top:6px" }, h("b", md(c.front)), h("div", md(c.back)), h(".src", { style: "margin:2px 0 0" }, l.title)));
     });
     if (!list.children.length) list.append(h(".src", "No matching terms."));
@@ -285,12 +290,14 @@ function viewProfile(v) {
         S.DEMO ? "" : h("div", { style: "margin-top:10px" }, joinCard())),
       h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4CA} Study stats"), h("p", { style: "margin:0" }, `Level ${x.lvl}, ${x.xp} XP` + (st ? `, ${st}-day streak` : "") + ".")),
       S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F512} Password"), h(".row", { style: "flex-wrap:nowrap" }, pw, h("button.btn.sm", { onclick: async () => { pwMsg.style.color = ""; if (pw.value.length < 8) { pwMsg.textContent = "Use at least 8 characters."; return; } const r = await S.setNewPassword(pw.value); pwMsg.style.color = r.error ? "" : "var(--ok)"; pwMsg.textContent = r.error ? r.error.message : "Password updated."; if (!r.error) pw.value = ""; } }, "Update")), pwMsg),
+      S.DEMO ? "" : mfaCard(draw),
       S.DEMO ? "" : feedbackCard(),
       S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F5C4}\uFE0F Your data"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "You own your study data. Download it or delete your account at any time. ", h("a", { href: "#/privacy" }, "Privacy")),
         h(".row", h("button.btn.alt.sm", { onclick: () => { const url = URL.createObjectURL(new Blob([JSON.stringify(S.exportData(), null, 2)], { type: "application/json" })); const a = h("a", { href: url, download: "aceit-my-data.json" }); document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000); toast("Downloaded"); } }, "Download my data"),
           S.profile?.is_admin ? "" : h("button.btn.warn.sm", { onclick: async () => { const t = prompt("This permanently deletes your account and progress. Type DELETE to confirm."); if (t !== "DELETE") return; const r = await S.deleteMyAccount(); if (r.error) { toast("Could not delete: " + r.error.message); return; } toast("Account deleted"); location.hash = "#/"; route(); } }, "Delete my account"))),
       h(".card", { style: "margin-top:12px" }, h("h3", "Account"), h(".row",
         S.DEMO ? "" : h("button.btn", { onclick: async () => { await S.signOut(); location.hash = "#/"; route(); } }, ic("logout", 16), "Log out"),
+        S.DEMO ? "" : h("button.btn.alt", { title: "Ends your session on every phone and computer", onclick: async () => { if (!confirm("Log out on every device where you are signed in?")) return; await S.signOut("global"); location.hash = "#/"; route(); } }, "Log out everywhere"),
         h("button.btn.alt", { onclick: async () => { if (confirm("Reset all of your progress? This cannot be undone.")) { await S.resetProgress(); toast("Progress reset"); route(); } } }, "Reset my progress"))));
   };
   draw();
@@ -358,6 +365,13 @@ function viewCode() {
   };
   authBox("One more step", h("p", "Enter the class access code to continue."), code, err, go,
     h("button.btn.alt.sm", { style: "margin-top:10px", onclick: async () => { await S.signOut(); route(); } }, "Log out"));
+}
+// two-step login: the code screen after the password, or a required set-up for staff
+function viewMfa() {
+  const setup = S.mfaGate === "enroll";
+  authBox(setup ? "Set up two-step login" : "Two-step login",
+    ...(setup ? [h("p", "Instructors, school managers and admins must use two-step login. Set it up once; it takes about a minute."), enrollBody(() => { route(); S.pushSummary(true); })] : challengeBody(() => { route(); S.pushSummary(true); })),
+    h("button.btn.alt.sm", { style: "margin-top:10px", onclick: async () => { await S.signOut(); location.hash = "#/"; route(); } }, "Log out"));
 }
 function viewBlocked() {
   authBox("Access removed", h("p", "Your access to this site was removed by the admin."),
@@ -529,8 +543,8 @@ function stepper(sec) {
   const draw = () => {
     const st = steps[i], im = st.img, n = steps.length;
     const go = (d) => { dir = d; i = (i + d + n) % n; draw(); };
-    const fig = im ? h(".fig", { role: "button", tabindex: 0, "aria-label": "Enlarge picture", onclick: () => lightbox(im) },
-      h("img", { src: im.src, alt: im.alt || sec.title, loading: "lazy" }), h("span.zoom", ic("zoom", 14), "Enlarge"),
+    const fig = im ? h(".fig",
+      h("button.figbtn", { "aria-label": "Enlarge picture", onclick: () => lightbox(im) }, h("img", { src: im.src, alt: im.alt || sec.title, loading: "lazy" }), h("span.zoom", ic("zoom", 14), "Enlarge")),
       n > 1 ? [h("button.nv.l", { "aria-label": "Previous", onclick: (e) => { e.stopPropagation(); go(-1); } }, ic("left", 18)), h("button.nv.r", { "aria-label": "Next", onclick: (e) => { e.stopPropagation(); go(1); } }, ic("right", 18))] : "",
       n > 1 ? h("span.cnt", `${i + 1} / ${n}`) : "") : "";
     const txt = h(".steptxt" + (dir < 0 ? ".back" : ""),
@@ -602,11 +616,9 @@ export function cards(b, all, color, startMode = "all") {
       return;
     }
     const c = deck[i];
-    const fc = h(".fc", { role: "button", tabindex: 0, "aria-label": "Flip card. Press Enter to reveal the answer." },
-      h(".inner",
-        h(".face.front", h("span.tag", "Term"), h("b", md(c.front)), h(".hint", "Tap to reveal")),
-        h(".face.back", h("span.tag", "Meaning"), h("div", md(c.back)), S.canSeeRefs() && c.src ? h(".src.admin", c.src) : "")));
-    const flip = () => fc.classList.toggle("flip");
+    const front = h(".face.front", h("span.tag", "Term"), h("b", md(c.front)), h(".hint", "Tap to reveal")), back = h(".face.back", { "aria-hidden": "true" }, h("span.tag", "Meaning"), h("div", md(c.back)), S.canSeeRefs() && c.src ? h(".src.admin", c.src) : "");
+    const fc = h(".fc", { role: "button", tabindex: 0 }, h(".inner", front, back));
+    const flip = () => { const f = fc.classList.toggle("flip"); front.setAttribute("aria-hidden", String(f)); back.setAttribute("aria-hidden", String(!f)); };
     let sx = 0, dx = 0, drag = false, moved = false;
     fc.addEventListener("pointerdown", (e) => { drag = true; moved = false; sx = e.clientX; dx = 0; fc.style.transition = "none"; });
     fc.addEventListener("pointermove", (e) => { if (!drag) return; dx = e.clientX - sx; if (Math.abs(dx) > 10) moved = true; if (moved) { fc.style.transform = `translateX(${dx}px) rotate(${dx / 24}deg)`; fc.style.opacity = String(1 - Math.min(Math.abs(dx), 220) / 420); } });
@@ -639,7 +651,7 @@ function quizMenu(b, l) {
   if (!qs?.length) return b.append(h(".card", "No questions yet."));
   const pr = S.progress().quiz, wrong = qs.filter((q) => pr[q.id]?.last === false).sort((x, y) => (pr[y.id]?.conf === "sure") - (pr[x.id]?.conf === "sure"));
   const back = () => { b.replaceChildren(); quizMenu(b, l); };
-  b.append(h(".card", h("h2", "Quiz: " + l.title), h("p", `${qs.length} questions in your prof's style. You get instant feedback and an explanation for every answer.`),
+  b.append(h(".card", h("h2", "Quiz: " + l.title), h("p", `${qs.length} questions in exam style. You get instant feedback and an explanation for every answer.`),
     h(".row",
       h("button.btn", { onclick: () => runQuiz(b, shuffle(qs.slice()), l.title, l.color, back) }, "Start quiz"),
       h("button.btn.alt", { disabled: !wrong.length, onclick: () => runQuiz(b, wrong.slice(), "Review mistakes", l.color, back) }, `Review mistakes (${wrong.length})`))));

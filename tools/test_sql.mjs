@@ -45,9 +45,13 @@ await q(`create role anon nologin; create role authenticated nologin;
 const mk = async (email, name, confirmed = true) => (await q(`insert into auth.users(email, email_confirmed_at, raw_user_meta_data) values ($1, ${confirmed ? "now()" : "null"}, jsonb_build_object('name',$2::text)) returning id`, [email, name])).rows[0].id;
 
 // run SQL as a logged-in user (row level security applies, exactly like the app); everything is rolled back unless keep=true
+// AAL is the sign-in strength in the session token: aal1 = password only, aal2 = password plus authenticator app
+let AAL = "aal1";
+const withAal = async (level, fn) => { const old = AAL; AAL = level; try { return await fn(); } finally { AAL = old; } };
 async function as(uid, fn, keep = false) {
   const c = conn(); await c.connect();
   await c.query("begin"); await c.query("set local role authenticated"); await c.query(`select set_config('request.jwt.claim.sub', $1, true)`, [uid || ""]);
+  await c.query(`select set_config('request.jwt.claims', $1, true)`, [JSON.stringify({ sub: uid || "", role: "authenticated", aal: AAL })]);
   try { const r = await fn((s, p) => c.query(s, p)); await c.query(keep ? "commit" : "rollback"); return r; }
   catch (e) { await c.query("rollback").catch(() => {}); throw e; } finally { await c.end(); }
 }
@@ -316,6 +320,48 @@ for (const [name, sql] of [["profiles", "select * from public.profiles"], ["prog
   ok(r.rows.length === 0, `a visitor who is not logged in sees no ${name}`);
 }
 ok(JSON.stringify(await counts()) === JSON.stringify(before), "...and nothing in the database changed");
+
+// ---- a school that leaves ----
+const GS = (await keep(ADMIN, (x) => x(`select public.admin_create_school('Gamma Institute','x',null) id`))).rows[0].id;
+await keep(ADMIN, (x) => x(`select public.admin_set_school_course($1,'erth209',true)`, [GS]));
+const GK = (await keep(ADMIN, (x) => x(`select public.create_class($1,'erth209','ERTH Gamma','t',null,'GAMMA-77X') id`, [GS]))).rows[0].id;
+const G1 = await mk("g1@gamma.ca", "Gus"), G2 = await mk("g2@gamma.ca", "Gia");
+await keep(G1, (x) => x(`select public.join_class('GAMMA-77X')`)); await keep(G2, (x) => x(`select public.join_class('GAMMA-77X')`));
+await q(`insert into public.enrollments(user_id,class_id) values ($1,$2) on conflict do nothing`, [G2, KB]); // Gia also studies in Beta College
+ok(await fails(() => keep(M1, (x) => x(`select public.admin_delete_school($1,true)`, [GS])), /admin only/), "only the platform admin can delete a school");
+ok(await fails(() => keep(ADMIN, (x) => x(`select public.admin_delete_school('00000000-0000-0000-0000-000000000001', true)`)), /default school/), "the default school cannot be deleted");
+ok((await keep(ADMIN, (x) => x(`select public.admin_delete_school($1,true) n`, [GS]))).rows[0].n === 1, "deleting a school with accounts removes only students who belong to no other school");
+ok((await q(`select count(*)::int n from auth.users where id=$1`, [G1])).rows[0].n === 0 && (await q(`select count(*)::int n from auth.users where id=$1`, [G2])).rows[0].n === 1, "...the shared student keeps their account");
+ok((await q(`select count(*)::int n from public.classes where school_id=$1`, [GS])).rows[0].n === 0 && (await q(`select count(*)::int n from public.schools where id=$1`, [GS])).rows[0].n === 0, "...and the school and its classes are gone");
+ok((await q(`select count(*)::int n from public.enrollments where user_id=$1 and class_id=$2`, [G2, KB])).rows[0].n === 1, "...other schools are untouched");
+ok((await q(`select count(*)::int n from public.admin_audit where action='delete school'`)).rows[0].n === 1, "...and the deletion is in the audit log");
+const GS2 = (await keep(ADMIN, (x) => x(`select public.admin_create_school('Delta Tech','x',null) id`))).rows[0].id;
+ok((await keep(ADMIN, (x) => x(`select public.admin_delete_school($1,false) n`, [GS2]))).rows[0].n === 0, "a school can also be removed without deleting accounts");
+
+// ---- two-step login for staff (optional) ----
+const emailsOf = async (uid) => (await rows(uid, `select email from public.profiles`)).map((r) => r.email).sort().join();
+ok((await one(S1, `select public.mfa_required() v`)).v === false, "two-step login is off by default");
+ok(await fails(() => keep(ADMIN, (x) => x(`select public.admin_set_require_mfa(true)`)), /two-step login for your own account/), "the admin cannot switch it on before using it themselves");
+ok(await fails(() => withAal("aal2", () => keep(M1, (x) => x(`select public.admin_set_require_mfa(true)`))), /admin only/), "only the admin can switch it");
+await withAal("aal2", () => keep(ADMIN, (x) => x(`select public.admin_set_require_mfa(true)`)));
+ok((await one(S1, `select public.mfa_required() v`)).v === true, "...and every signed-in person can see that it is on");
+ok((await one(ADMIN, `select public.is_admin() a`)).a === false, "an admin on a password-only session is treated as a plain user");
+ok((await rows(ADMIN, `select * from public.staff_schools()`)).length === 0, "...sees no schools");
+ok(await fails(() => keep(ADMIN, (x) => x(`select public.admin_create_school('Nope','x',null)`)), /admin only/), "...cannot create a school");
+ok(await fails(() => keep(ADMIN, (x) => x(`select public.admin_set_admin('s2@beta.ca', true)`)), /admin only/), "...cannot make another admin");
+ok((await rows(T1, `select * from public.class_roster($1)`, [KA])).length === 0 && (await rows(M1, `select * from public.staff_classes()`)).length === 0, "instructors and managers see no roster or classes on a password-only session");
+ok((await emailsOf(T1)) === "t1@alpha.ca" && (await emailsOf(M1)) === "m1@alpha.ca", "...not even their students' email addresses");
+ok(await fails(() => keep(T1, (x) => x(`select public.set_class_code($1,'SNEAKY-77')`, [KA])), /instructors only/), "...and cannot change a class code");
+ok((await rows(S1, `select * from public.my_classes()`)).length >= 1 && (await keep(S1, (x) => x(`select public.my_classes()`))).rowCount >= 1, "students are not affected");
+ok((await one(S1, `select public.join_class('nope-nope') r`)).r === null, "students can still use the join box");
+await withAal("aal2", async () => {
+  ok((await one(ADMIN, `select public.is_admin() a`)).a === true, "on a two-step session the admin is an admin");
+  ok((await rows(T1, `select user_id from public.class_roster($1)`, [KA])).length >= 1, "instructors see their roster");
+  ok((await rows(M1, `select * from public.staff_classes()`)).length === 2, "managers see their classes");
+  ok((await emailsOf(M1)).includes("s1@alpha.ca"), "managers see their school's people");
+});
+await withAal("aal2", () => keep(ADMIN, (x) => x(`select public.admin_set_require_mfa(false)`)));
+ok((await one(ADMIN, `select public.is_admin() a`)).a === true && (await one(S1, `select public.mfa_required() v`)).v === false, "switching it off restores password-only access");
 
 // ---- audit log ----
 ok((await rows(ADMIN, `select * from public.admin_audit`)).length >= 10, "admin actions are logged");
