@@ -97,7 +97,9 @@ export async function viewAdmin(v, ctx) {
           h("td", actions(r))))))),
       insights(ls, rows, sjObj?.name || ""),
       examCard(mine), codeCard(mine, codes), feedbackCard(),
-      isAdm && !S.DEMO ? [instructorPanel(instructors, profiles, mine, SUBJECTS, route), domainPanel(), publishPanel(LECS, SUBJECTS), auditPanel(), errorPanel()] : "");
+      isAdm && !S.DEMO ? [instructorPanel(instructors, profiles, mine, SUBJECTS, route), domainPanel(), auditPanel(), errorPanel()] : "");
+    // the publish tool goes right at the top and starts open, so it is easy to find
+    if (isAdm && !S.DEMO) { const pp = publishPanel(LECS, SUBJECTS); pp.open = true; pp.style.marginBottom = "12px"; v.children[0].after(pp); }
   };
   draw();
 }
