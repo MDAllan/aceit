@@ -13,6 +13,8 @@ jobs:
         run: python tools/check_content.py
       - name: SQL copies are in step (patch6 = RUN-ME-2 = end of schema)
         run: python tools/build_sql.py --check
+      - name: The app calls database functions with the right arguments
+        run: python tools/check_rpc.py
       - name: JavaScript syntax
         run: for f in js/*.js config.js; do node --input-type=module --check < "$f"; done
       - name: Logic tests (calculators, spaced repetition)

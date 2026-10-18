@@ -143,7 +143,7 @@ function domainPanel() {
   return panel("\u{1F3EB} Allowed school emails", h(".src", { style: "margin:0 0 6px" }, "Only these email domains can create accounts. Your own admin email always works."),
     h(".row", { style: "flex-wrap:nowrap" }, inp, h("button.btn.sm", { onclick: async () => { const r = await S.setDomains(inp.value.trim()); toast(r.error ? r.error.message : "Saved"); } }, "Save")));
 }
-function publishPanel(LECS, SUBJECTS) {
+export function publishPanel(LECS, SUBJECTS) {
   const status = h("p", { style: "margin:8px 0 0" }, "");
   const go = h("button.btn.sm", { onclick: async () => {
     go.disabled = true; let done = 0, bad = [];

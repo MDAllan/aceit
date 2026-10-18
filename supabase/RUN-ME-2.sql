@@ -71,9 +71,9 @@ create index if not exists invites_email_idx on public.invites (lower(email));
 create table if not exists public.progress_summary (
   user_id uuid not null references auth.users(id) on delete cascade,
   course_id text not null,
-  pct int not null default 0, mastery int not null default 0,
-  read_topics int not null default 0, cards_known int not null default 0, cards_total int not null default 0,
-  quiz_attempts int not null default 0, quiz_correct int not null default 0,
+  pct int not null default 0 check (pct between 0 and 100), mastery int not null default 0 check (mastery between 0 and 100),
+  read_topics int not null default 0 check (read_topics between 0 and 10000), cards_known int not null default 0 check (cards_known between 0 and 10000), cards_total int not null default 0 check (cards_total between 0 and 10000),
+  quiz_attempts int not null default 0 check (quiz_attempts between 0 and 1000000), quiz_correct int not null default 0 check (quiz_correct between 0 and 1000000),
   last_active timestamptz not null default now(),
   primary key (user_id, course_id));
 -- the permission checks look people up by school and by class, so keep those lookups fast when there are thousands of students
@@ -263,6 +263,14 @@ language sql security definer set search_path = public stable as $$
   union
   select c.id, c.course_id, c.name, c.term, s.id, s.name, 'manager', c.exam_name, c.exam_date, c.archived
     from public.school_managers m join public.classes c on c.school_id = m.school_id join public.schools s on s.id = c.school_id where m.user_id = auth.uid();
+$$;
+
+-- the roles that are not tied to a class: platform admin and school manager (a manager may not have created any class yet)
+create or replace function public.my_roles() returns table (role text, school_id uuid, school_name text)
+language sql security definer set search_path = public stable as $$
+  select 'manager'::text, s.id, s.name from public.school_managers m join public.schools s on s.id = m.school_id where m.user_id = auth.uid()
+  union all
+  select 'admin', null::uuid, null::text where public.is_admin();
 $$;
 
 -- 10. creating schools and classes ----------------------------------------------------------------------------------------------------------
@@ -575,7 +583,7 @@ end $$;
 -- 14. grants --------------------------------------------------------------------------------------------------------------------------------------
 grant execute on function
   public.is_manager_of(uuid), public.is_teacher_of(uuid), public.can_manage_class(uuid), public.can_teach_class(uuid), public.can_view_student(uuid),
-  public.has_course(text), public.has_class(text), public.join_class(text), public.redeem_class_by_code(text), public.redeem_class_code(text, text), public.my_classes(),
+  public.has_course(text), public.has_class(text), public.join_class(text), public.redeem_class_by_code(text), public.redeem_class_code(text, text), public.my_classes(), public.my_roles(),
   public.admin_create_school(text, text, int), public.admin_update_school(uuid, text, text, boolean, int), public.admin_set_school_course(uuid, text, boolean),
   public.create_class(uuid, text, text, text, int, text), public.update_class(uuid, text, text, int, date, boolean), public.set_class_code(uuid, text),
   public.set_class_exam(uuid, text, date), public.remove_student(uuid, uuid), public.leave_class(uuid), public.claim_invites(), public.invite_user(text, text, uuid, uuid), public.revoke_invite(uuid),

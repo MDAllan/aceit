@@ -2,11 +2,16 @@ import { SUPABASE_URL, SUPABASE_ANON_KEY } from "../config.js";
 import { nextState, dueCards as srsDue, dayNum } from "./srs.js";
 
 const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
-// ?demo on localhost skips login for local testing; ?admin adds the admin view
+// ?demo on localhost skips login for local testing; ?admin (or ?role=admin|manager|instructor) previews a staff view with sample data
 export const DEMO = !SUPABASE_ANON_KEY || (LOCAL && location.search.includes("demo"));
-export const canSeeRefs = () => (DEMO ? LOCAL && location.search.includes("admin") : !!profile?.is_admin && !pref("student"));
-export const isInstructor = () => (DEMO ? LOCAL && location.search.includes("admin") : !!profile?.is_admin || instructorOf.size > 0);
-export const isAdmin = () => (DEMO ? LOCAL && location.search.includes("admin") : !!profile?.is_admin);
+export const demoRole = () => (!LOCAL ? "" : (location.search.match(/role=(\w+)/) || [])[1] || (location.search.includes("admin") ? "admin" : ""));
+export const canSeeRefs = () => (DEMO ? demoRole() === "admin" : !!profile?.is_admin && !pref("student"));
+export const isAdmin = () => (DEMO ? demoRole() === "admin" : !!profile?.is_admin);
+export const isManager = () => (DEMO ? demoRole() === "manager" : managed.length > 0);
+export const isTeacher = () => (DEMO ? demoRole() === "instructor" : classes.some((c) => c.role === "teacher"));
+export const isStaff = () => isAdmin() || isManager() || isTeacher();
+export const isInstructor = isStaff; // older name
+export const isV2 = () => DEMO || model === "v2"; // the schools upgrade is installed (or this is the local preview)
 export function pref(k) { try { return localStorage.getItem("erth209:" + k) === "1"; } catch { return false; } }
 export function setPref(k, v) { try { localStorage.setItem("erth209:" + k, v ? "1" : "0"); } catch {} }
 export let sb = null;
@@ -14,6 +19,9 @@ export let session = null;
 export let profile = null;
 export let access = new Set();
 export let instructorOf = new Set();
+export let classes = [];   // everything the signed-in person studies in, teaches or manages: { class_id, course_id, name, term, school_id, school_name, role, exam_name, exam_date, archived }
+export let managed = [];   // schools the person manages: { school_id, school_name }
+export let model = "legacy"; // "v2" once the schools upgrade (supabase/RUN-ME-2.sql) is installed in the database
 export let settings = (() => { const m = typeof location !== "undefined" && /localhost|127\.0\.0\.1/.test(location.hostname) && location.search.match(/exam=(\d{4}-\d{2}-\d{2})/); return m ? { astr207: { class_id: "astr207", exam_name: "Midterm", exam_date: m[1] } } : {}; })(); // ?exam=YYYY-MM-DD previews the countdown on localhost
 
 const KEY = "erth209:progress:v1";
@@ -49,7 +57,22 @@ async function push() {
     const r = await sb.from("progress").upsert({ user_id: session.user.id, data, updated_at: new Date().toISOString() });
     if (r.error) throw r.error;
     setSync("saved"); clearTimeout(retry);
+    pushSummary();
   } catch { setSync("error"); clearTimeout(retry); retry = setTimeout(push, 15000); } // keep the work and try again
+}
+// A few numbers per course (not the full progress) so instructors and school managers can see how a class is doing
+// without downloading every student's progress. main.js supplies the numbers once it knows the lecture lists.
+let summaryFn = null, lastSummary = "";
+export const setSummaryProvider = (fn) => { summaryFn = fn; };
+export async function pushSummary(force) {
+  if (!sb || !session || !profile || profile.blocked || model !== "v2" || !summaryFn) return;
+  try {
+    const rows = summaryFn(); if (!rows.length) return;
+    const key = JSON.stringify(rows); if (key === lastSummary && !force) return;
+    const now = new Date().toISOString();
+    const r = await sb.from("progress_summary").upsert(rows.map((x) => ({ ...x, user_id: session.user.id, last_active: now })), { onConflict: "user_id,course_id" });
+    if (!r.error) lastSummary = key;
+  } catch {}
 }
 if (typeof addEventListener === "function") { addEventListener("online", () => push()); addEventListener("offline", () => setSync("offline")); }
 
@@ -70,16 +93,45 @@ export async function loadProfile() {
   let { data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle();
   if (!p) { await sb.rpc("ensure_profile"); ({ data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle()); }
   profile = p;
-  const { data: ac, error: acErr } = await sb.from("class_access").select("class_id").eq("user_id", session.user.id);
-  access = new Set((ac || []).map((x) => x.class_id));
-  if (acErr && p?.access_ok) access.add("erth209"); // database patch 2 not installed yet: keep old ERTH 209 users working
-  try { const { data: ins } = await sb.from("class_instructors").select("class_id").eq("user_id", session.user.id); instructorOf = new Set((ins || []).map((x) => x.class_id)); } catch { instructorOf = new Set(); }
-  try { const { data: st } = await sb.from("class_settings").select("*"); settings = Object.fromEntries((st || []).map((x) => [x.class_id, x])); } catch { settings = {}; }
+  if (p && !p.blocked) await sb.rpc("claim_invites").then((r) => { if (r.data > 0) invitesClaimed = r.data; }, () => {}); // roles from email invites are applied once the email is confirmed
+  await loadClasses();
   if (p && !p.blocked) {
     const { data: r } = await sb.from("progress").select("data").eq("user_id", session.user.id).maybeSingle();
     if (r?.data) data = merge(data, r.data);
     try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {}
   }
+}
+
+export let invitesClaimed = 0; // set when this login turned an email invite into a role (shown once as a welcome message)
+export const takeInvitesClaimed = () => { const n = invitesClaimed; invitesClaimed = 0; return n; };
+
+// Which classes the person belongs to, and in what role (student, teacher or manager). Uses the schools model; falls back to the older
+// per-course tables when the database upgrade (supabase/RUN-ME-2.sql) has not been run yet, so nobody is locked out in between.
+export async function loadClasses() {
+  const [c, r] = await Promise.all([sb.rpc("my_classes"), sb.rpc("my_roles")]);
+  if (!c.error) {
+    model = "v2"; classes = c.data || []; managed = (r.data || []).filter((x) => x.role === "manager");
+    access = new Set(classes.map((x) => x.course_id));
+    instructorOf = new Set(classes.filter((x) => x.role !== "student").map((x) => x.course_id));
+    settings = examByCourse(classes);
+    return;
+  }
+  model = "legacy"; classes = []; managed = []; // legacy
+  const { data: ac, error: acErr } = await sb.from("class_access").select("class_id").eq("user_id", session.user.id); // legacy
+  access = new Set((ac || []).map((x) => x.class_id));
+  if (acErr && profile?.access_ok) access.add("erth209"); // legacy: database patch 2 not installed yet, keep old ERTH 209 users working
+  try { const { data: ins } = await sb.from("class_instructors").select("class_id").eq("user_id", session.user.id); instructorOf = new Set((ins || []).map((x) => x.class_id)); } catch { instructorOf = new Set(); } // legacy
+  try { const { data: st } = await sb.from("class_settings").select("*"); settings = Object.fromEntries((st || []).map((x) => [x.class_id, x])); } catch { settings = {}; } // legacy
+}
+// one exam date per course for the student countdown: the nearest upcoming one, otherwise the most recent
+function examByCourse(rows) {
+  const today = new Date().toISOString().slice(0, 10), out = {};
+  for (const c of rows) {
+    if (!c.exam_date) continue;
+    const cur = out[c.course_id], up = c.exam_date >= today;
+    if (!cur || (up && (cur.exam_date < today || c.exam_date < cur.exam_date)) || (!up && cur.exam_date < today && c.exam_date > cur.exam_date)) out[c.course_id] = { class_id: c.course_id, exam_name: c.exam_name, exam_date: c.exam_date };
+  }
+  return out;
 }
 
 // keep the best of local and cloud progress
@@ -102,27 +154,43 @@ export async function signIn(email, password) {
   if (!r.error) { session = r.data.session; await loadProfile(); }
   return r;
 }
-export async function signOut() { await sb.auth.signOut(); session = null; profile = null; access = new Set(); instructorOf = new Set(); settings = {}; }
+export async function signOut() { await sb.auth.signOut(); session = null; profile = null; access = new Set(); instructorOf = new Set(); settings = {}; classes = []; managed = []; lastSummary = ""; }
 export async function forgot(email) {
   return sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname });
 }
 export async function setNewPassword(pw) { return sb.auth.updateUser({ password: pw }); }
 export const hasAccess = (classId) => DEMO || !!profile?.is_admin || access.has(classId) || instructorOf.has(classId);
-// "Join a class": type any class code and unlock whichever class it belongs to
+// "Join a class": type any class code and join whichever class it belongs to.
+// Answers { ok: true, cid (course id), name } or { ok: false, reason } with reason one of
+// wrong, too_many_attempts, class_closed, code_expired, class_full, school_full, school_inactive, error.
 export async function joinByCode(code, classIds) {
-  let { data: cid, error } = await sb.rpc("redeem_class_by_code", { code });
-  if (error && /too_many_attempts/.test(error.message)) return "LOCKED";
-  if (error) { for (const id of classIds) { const r = await sb.rpc("redeem_class_code", { cid: id, code }); if (r.data) { cid = id; break; } } }
-  if (cid) await loadProfile();
-  return cid || null;
+  const r = await sb.rpc("join_class", { code });
+  if (!r.error) {
+    if (!r.data) return { ok: false, reason: "wrong" };
+    await loadClasses();
+    return { ok: true, cid: r.data.course_id, classId: r.data.class_id, name: r.data.name };
+  }
+  const why = (/too_many_attempts|class_closed|code_expired|class_full|school_full|school_inactive/.exec(r.error.message) || [])[0];
+  if (why) return { ok: false, reason: why };
+  if (r.error.code !== "PGRST202") return { ok: false, reason: "error", message: r.error.message };
+  // legacy: the schools upgrade is not installed yet, use the older per-course functions
+  let { data: cid, error } = await sb.rpc("redeem_class_by_code", { code }); // legacy
+  if (error && /too_many_attempts/.test(error.message)) return { ok: false, reason: "too_many_attempts" };
+  if (error) { for (const id of classIds) { const x = await sb.rpc("redeem_class_code", { cid: id, code }); if (x.data) { cid = id; break; } } } // legacy
+  if (cid) { await loadProfile(); return { ok: true, cid }; }
+  return { ok: false, reason: "wrong" };
 }
-export async function redeemClass(cid, code) {
-  let { data: ok, error } = await sb.rpc("redeem_class_code", { cid, code });
-  if (error && /too_many_attempts/.test(error.message)) return { ok: false, locked: true, error };
-  if (error && cid === "erth209") ({ data: ok, error } = await sb.rpc("redeem_code", { code })); // older database
-  if (ok) await loadProfile();
-  return { ok, error };
-}
+export const joinProblem = {
+  wrong: "That code doesn't match any class. Check it and try again.",
+  too_many_attempts: "Too many wrong tries. Please wait 10 minutes and try again.",
+  class_closed: "That class is closed to new students. Ask your instructor.",
+  code_expired: "That code has expired. Ask your instructor for a new one.",
+  class_full: "That class is full. Ask your instructor.",
+  school_full: "Your school has reached its student limit. Ask your instructor.",
+  school_inactive: "Your school's account is paused. Ask your instructor.",
+  error: "Something went wrong. Please try again.",
+};
+export async function leaveClass(kid) { const r = await sb.rpc("leave_class", { kid }); if (!r.error) await loadClasses(); return r; }
 
 // admin
 export async function adminList() {
@@ -134,9 +202,9 @@ export async function adminList() {
 }
 export const adminBlock = (uid, flag) => sb.rpc("admin_set_blocked", { uid, flag });
 export const adminDelete = (uid) => sb.rpc("admin_delete_user", { uid });
-export const adminSetCode = (cid, new_code) => sb.rpc("admin_set_class_code", { cid, new_code });
-export const adminCodes = () => sb.rpc("admin_get_codes");
-export async function adminAccess() { const { data } = await sb.from("class_access").select("user_id,class_id"); return data || []; }
+export const adminSetCode = (cid, new_code) => sb.rpc("admin_set_class_code", { cid, new_code }); // legacy: used by the older admin screen until the schools upgrade is installed
+export const adminCodes = () => sb.rpc("admin_get_codes"); // legacy: used by the older admin screen until the schools upgrade is installed
+export async function adminAccess() { const { data } = await sb.from("class_access").select("user_id,class_id"); return data || []; } // legacy: used by the older admin screen until the schools upgrade is installed
 
 // ---------- progress helpers ----------
 export function cardState(id) { return data.cards[id]; }
@@ -151,14 +219,17 @@ export function recordAnswer(id, correct) {
 export function markRead(lec, sec) { (data.read[lec] ||= {})[sec] = 1; save(); }
 export function gameDone(id) { data.games[id] = (data.games[id] || 0) + 1; save(); }
 
-export function lectureStats(lec) {
+export const lectureStats = (lec) => statsFrom(data, lec);
+// the same numbers for any progress record (staff open a student's progress to see where they are)
+export function statsFrom(d, lec) {
+  d = { cards: {}, quiz: {}, read: {}, games: {}, ...d };
   const secs = lec.sections || [];
-  const read = secs.filter((s) => data.read[lec.id]?.[s.id]).length;
+  const read = secs.filter((s) => d.read?.[lec.id]?.[s.id]).length;
   const cards = lec.cards || [];
-  const known = cards.filter((c) => data.cards[c.id] === "know").length;
+  const known = cards.filter((c) => d.cards?.[c.id] === "know").length;
   const qs = lec.quiz || [];
-  const right = qs.filter((q) => data.quiz[q.id]?.last).length;
-  const games = (lec.games || []).filter((g) => data.games[lec.id + ":" + g]).length;
+  const right = qs.filter((q) => d.quiz?.[q.id]?.last).length;
+  const games = (lec.games || []).filter((g) => d.games?.[lec.id + ":" + g]).length;
   const gameGoal = Math.min(3, (lec.games || []).length); // play any 3 games for full credit
   const parts = [
     [read, secs.length], [known, cards.length], [right, qs.length], [Math.min(games, gameGoal), gameGoal],
@@ -200,12 +271,12 @@ export async function resetProgress() { const pf = data.prefs; data = blank(); d
 
 // the student's own data: what the site holds about them
 export function exportData() {
-  return { exported: new Date().toISOString(), account: { email: session?.user?.email || null, name: myName(), classes: [...access] }, progress: data };
+  return { exported: new Date().toISOString(), account: { email: session?.user?.email || null, name: myName(), classes: classes.length ? classes.map((c) => ({ class: c.name, school: c.school_name, term: c.term, role: c.role })) : [...access] }, progress: data };
 }
 export async function deleteMyAccount() {
   if (!sb) return { error: { message: "Not signed in" } };
   const r = await sb.rpc("delete_my_account");
-  if (!r.error) { try { localStorage.removeItem(KEY); } catch {} await sb.auth.signOut(); session = null; profile = null; access = new Set(); }
+  if (!r.error) { try { localStorage.removeItem(KEY); } catch {} await sb.auth.signOut(); session = null; profile = null; access = new Set(); classes = []; managed = []; }
   return r;
 }
 
@@ -222,19 +293,20 @@ export const publishLecture = (lecture_id, class_id, body) => sb.from("lecture_c
 export const publishExam = (class_id, body) => sb.from("exam_content").upsert({ class_id, body, updated_at: new Date().toISOString() });
 
 /* ---------- instructors, codes, exam dates ---------- */
+// legacy (until the schools upgrade is installed): the older admin screen reads and sets one code per course
 export async function getCodes() {
-  let r = await sb.rpc("instructor_get_codes");
-  if (r.error && profile?.is_admin) r = await sb.rpc("admin_get_codes");
+  let r = await sb.rpc("instructor_get_codes"); // legacy
+  if (r.error && profile?.is_admin) r = await sb.rpc("admin_get_codes"); // legacy
   return r.data || [];
 }
 export async function setCode(cid, code) {
-  const r = await sb.rpc("instructor_set_code", { cid, new_code: code });
-  return r.error && profile?.is_admin ? sb.rpc("admin_set_class_code", { cid, new_code: code }) : r;
+  const r = await sb.rpc("instructor_set_code", { cid, new_code: code }); // legacy
+  return r.error && profile?.is_admin ? sb.rpc("admin_set_class_code", { cid, new_code: code }) : r; // legacy
 }
-export const removeFromClass = (uid, cid) => sb.rpc("instructor_remove_student", { uid, cid });
-export const setInstructor = (target_email, cid, flag) => sb.rpc("admin_set_instructor", { target_email, cid, flag });
-export async function listInstructors() { try { const { data: r } = await sb.from("class_instructors").select("user_id,class_id"); return r || []; } catch { return []; } }
-export async function setExam(cid, nm, d) { const r = await sb.rpc("set_class_exam", { cid, nm, d: d || null }); if (!r.error) settings[cid] = { class_id: cid, exam_name: nm, exam_date: d || null }; return r; }
+export const removeFromClass = (uid, cid) => sb.rpc("instructor_remove_student", { uid, cid }); // legacy: used by the older admin screen until the schools upgrade is installed
+export const setInstructor = (target_email, cid, flag) => sb.rpc("admin_set_instructor", { target_email, cid, flag }); // legacy: used by the older admin screen until the schools upgrade is installed
+export async function listInstructors() { try { const { data: r } = await sb.from("class_instructors").select("user_id,class_id"); return r || []; } catch { return []; } } // legacy: used by the older admin screen until the schools upgrade is installed
+export async function setExam(cid, nm, d) { const r = await sb.rpc("set_class_exam", { cid, nm, d: d || null }); if (!r.error) settings[cid] = { class_id: cid, exam_name: nm, exam_date: d || null }; return r; } // legacy: used by the older admin screen until the schools upgrade is installed
 export async function auditLog() { try { const { data: r } = await sb.from("admin_audit").select("*").order("at", { ascending: false }).limit(15); return r || []; } catch { return []; } }
 export async function errorLog() { try { const { data: r } = await sb.from("client_errors").select("*").order("at", { ascending: false }).limit(8); return r || []; } catch { return []; } }
 export async function feedbackList() { try { const { data: r } = await sb.from("feedback").select("*").order("at", { ascending: false }).limit(20); return r || []; } catch { return []; } }
@@ -248,10 +320,11 @@ export function reportError(msg, stack) {
 }
 
 /* ---------- mastery: a blend of how well cards are remembered and quiz answers are right ---------- */
-export function mastery(lec) {
-  const sr = data.sr || {}, cs = lec.cards || [], qs = lec.quiz || [];
+export const mastery = (lec) => masteryFrom(data, lec);
+export function masteryFrom(d, lec) {
+  const sr = d.sr || {}, cs = lec.cards || [], qs = lec.quiz || [];
   const cardM = cs.length ? cs.reduce((t, c) => t + (sr[c.id] ? sr[c.id].box / 5 : 0), 0) / cs.length : null;
-  const quizM = qs.length ? qs.filter((q) => data.quiz[q.id]?.last).length / qs.length : null;
+  const quizM = qs.length ? qs.filter((q) => d.quiz?.[q.id]?.last).length / qs.length : null;
   const parts = [cardM, quizM].filter((x) => x !== null);
   return parts.length ? Math.round((parts.reduce((a, b) => a + b, 0) / parts.length) * 100) : 0;
 }

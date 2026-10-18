@@ -200,6 +200,9 @@ ok((await rows(S1, `select * from public.classes`)).length === 0 && (await rows(
 const mine = await rows(S1, `select course_id, role, school_name from public.my_classes()`);
 ok(mine.length === 1 && mine[0].course_id === "astr207" && mine[0].role === "student" && mine[0].school_name === "Alpha University", "a student's class list shows their class, role and school");
 ok((await rows(T1, `select role from public.my_classes()`))[0].role === "teacher", "an instructor's class list marks the role");
+const roleList = async (uid) => (await rows(uid, `select role from public.my_roles()`)).map((r) => r.role).sort().join();
+ok((await roleList(ADMIN)) === "admin" && (await roleList(M1)) === "manager" && (await roleList(S1)) === "" && (await roleList(T1)) === "", "my_roles tells admins and managers apart from instructors and students");
+ok(await fails(() => keep(S1, (x) => x(`insert into public.progress_summary(user_id,course_id,pct) values (auth.uid(),'astr207',500)`))), "summary numbers must stay in range");
 
 // ---- content is readable only by people who belong to a class of that course ----
 await keep(ADMIN, (x) => x(`insert into public.lecture_content(lecture_id,class_id,body) values ('motion','astr207','{"t":1}'),('minerals','erth209','{"t":2}')`));

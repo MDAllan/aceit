@@ -1,6 +1,8 @@
 import * as S from "./store.js";
 import { renderGame, DEFAULT_GAMES } from "./games.js";
 import { viewAdmin as adminView } from "./admin.js";
+import { viewWorkspace, workspaceLabel } from "./staff.js";
+import * as Demo from "./demo.js";
 import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp } from "./ui.js";
 
 // accessibility options live on this device (text size, easy-read font, reduced motion)
@@ -44,6 +46,7 @@ async function loadFull(l) {
   })();
   try { await inflight[l.id]; } finally { delete inflight[l.id]; }
 }
+const ensureCourse = (cid) => Promise.all([...LECS.filter((l) => l.subject === cid).map(loadFull), loadExams(cid)]);
 async function loadExams(sjId) {
   const sj = SUBJECTS.find((x) => x.id === sjId);
   if (!sj?.exams || sjId in EXAMS) return;
@@ -68,9 +71,39 @@ async function boot() {
   const nth = {};
   LECS.forEach((l) => { const pal = PALETTES[l.subject] || ["#0d3b66"]; nth[l.subject] = nth[l.subject] || 0; l.color = pal[nth[l.subject]++ % pal.length]; });
   S.onChange(checkMilestones);
+  S.setSummaryProvider(classSummaries);
+  watchIdle();
   window.addEventListener("hashchange", route);
   document.addEventListener("keydown", (e) => { if (document.activeElement?.matches("input,select,textarea")) return; if (e.key === "ArrowRight") window.__next?.(); if (e.key === "ArrowLeft") window.__prev?.(); });
+  if (S.DEMO && S.isStaff()) Demo.init(LECS);
   route();
+  S.pushSummary(true);
+}
+
+// instructors, school managers and admins can see other people's data, so an unattended screen signs them out after 30 minutes
+const IDLE_MS = 30 * 60 * 1000;
+function watchIdle() {
+  let last = Date.now();
+  const touch = () => { last = Date.now(); };
+  ["pointerdown", "keydown", "touchstart", "scroll"].forEach((ev) => addEventListener(ev, touch, { passive: true, capture: true }));
+  const check = async () => {
+    if (S.DEMO || !S.session || !S.isStaff() || Date.now() - last < IDLE_MS) return;
+    await S.signOut(); location.hash = "#/"; route(); toast("Signed out after 30 minutes without activity.");
+  };
+  setInterval(check, 30000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) check(); });
+}
+
+// a few numbers per course for the instructor's and school manager's dashboards (the full progress stays private)
+function classSummaries() {
+  const mine = new Set(S.classes.filter((c) => c.role === "student").map((c) => c.course_id));
+  return SUBJECTS.filter((sj) => mine.has(sj.id)).map((sj) => {
+    const ls = LECS.filter((l) => l.subject === sj.id), st = ls.map(S.lectureStats), qids = new Set(ls.flatMap((l) => (l.quiz || []).map((q) => q.id)));
+    let qa = 0, qc = 0; for (const [id, q] of Object.entries(S.progress().quiz)) if (qids.has(id)) { qa += q.attempts || 0; qc += q.correct || 0; }
+    const sum = (k) => st.reduce((t, x) => t + x[k], 0);
+    return { course_id: sj.id, pct: ls.length ? Math.round(sum("pct") / ls.length) : 0, mastery: ls.length ? Math.round(ls.reduce((t, l) => t + S.mastery(l), 0) / ls.length) : 0,
+      read_topics: sum("read"), cards_known: sum("known"), cards_total: sum("cards"), quiz_attempts: Math.min(qa, 1e6), quiz_correct: Math.min(qc, 1e6) };
+  });
 }
 
 function gate() {
@@ -91,14 +124,16 @@ async function route() {
   if (parts[0] === "s" && S.hasAccess(parts[1])) setCls(parts[1]);
   if (parts[0] === "l") { const lx = LECS.find((z) => z.id === parts[1]); if (lx && S.hasAccess(lx.subject)) setCls(lx.subject); }
   const g = gate();
+  if (parts[0] === "admin" && S.isV2() && !g) { location.replace("#/work"); return; }
   if (g === "auth") return viewAuth();
   if (g === "setup") return authBox("Almost there", h("p", "Your account was created but its profile is missing. The site owner needs to run the latest database patch (supabase/patch1.sql), then press Retry."),
     h(".row", h("button.btn", { onclick: async () => { await S.loadProfile(); route(); } }, "Retry"), h("button.btn.alt", { onclick: async () => { await S.signOut(); route(); } }, "Log out")));
   if (g === "blocked") return viewBlocked();
+  const claimed = S.takeInvitesClaimed(); if (claimed) toast("Your invite was accepted. Your Workspace tab is ready.");
   const page = parts[0] || "", need = [];
   if (page === "l") { const lx = LECS.find((z) => z.id === parts[1]); if (lx && S.hasAccess(lx.subject)) need.push(lx); }
   else if (["cards", "practice", "progress", "search", "glossary"].includes(page)) need.push(...pool_());
-  else if (page === "admin") need.push(...LECS);
+  else if (page === "admin" && !S.isV2()) need.push(...LECS); // legacy: the older admin screen needs every lecture
   const exSj = page === "s" ? parts[1] : page === "" && myClasses().length === 1 ? myClasses()[0].id : null;
   if (need.some((l) => !l._full) || (exSj && !(exSj in EXAMS))) {
     const t = setTimeout(() => { if (my === routeSeq) app.replaceChildren(h("p.boot", "Loading...")); }, 180);
@@ -112,14 +147,14 @@ async function route() {
 /* ---------- shell ---------- */
 function shell(parts) {
   const page = parts[0] || "";
-  const admin = S.isAdmin(), staff = S.isInstructor();
+  const admin = S.isAdmin(), staff = S.isStaff(), v2 = S.isV2();
   const cc = clsOf(), x = S.xp(pool_());
   if (cc) document.documentElement.style.setProperty("--c", cc.color);
   app.replaceChildren(
     h("header.top", h(".in",
       h("button.brand", { onclick: () => (location.hash = "#/") }, h("span.logo", ic("star", 18)), "ACEIT"),
-      cc ? h("button.cls", { style: `--tc:${cc.color}`, "aria-label": "Your classes", onclick: () => (location.hash = "#/") }, h("span.em", cc.icon), cc.name) : "",
-      h(".xp", { title: `${x.xp} XP in ${cc ? cc.name : "this class"}` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
+      cc && page !== "work" ? h("button.cls", { style: `--tc:${cc.color}`, "aria-label": "Your classes", onclick: () => (location.hash = "#/") }, h("span.em", cc.icon), cc.name) : "",
+      page === "work" ? h("span", { style: "margin-left:auto" }) : h(".xp", { title: `${x.xp} XP in ${cc ? cc.name : "this class"}` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
       admin && !S.DEMO ? h("button.chip", { "aria-label": "Switch between admin and student view", onclick: () => { S.setPref("student", !S.pref("student")); route(); } }, ic("eye", 16), S.pref("student") ? "Student view" : "Admin view") : "",
       h("button.chip", { "aria-label": "Toggle dark mode", onclick: toggleTheme }, ic("moon", 16)),
       h("button.chip", { "aria-label": "Search", onclick: () => (location.hash = "#/search") }, ic("zoom", 16)),
@@ -127,12 +162,12 @@ function shell(parts) {
       S.DEMO ? "" : h("button.avatar", { "aria-label": "Your profile", style: avatarStyle(), onclick: () => (location.hash = "#/profile") }, avatarGlyph(18)),
     )),
     h("main.wrap#view"),
-    h("nav.nav", { "aria-label": "Main" },
+    h("nav.nav" + (page === "work" ? ".ws" : ""), { "aria-label": "Main" },
       nav("home", "Classes", "", page === "" || page === "l" || page === "s"),
       nav("cards", "Cards", "cards", page === "cards"),
       nav("quiz", "Practice", "practice", page === "practice"),
       nav("chart", "Progress", "progress", page === "progress"),
-      staff ? nav("shield", admin ? "Admin" : "Instructor", "admin", page === "admin") : "",
+      staff ? (v2 ? nav("users", workspaceLabel(), "work", page === "work") : nav("shield", admin ? "Admin" : "Instructor", "admin", page === "admin")) : "",
     ),
   );
   S.onSync(paintSync); paintSync(S.sync);
@@ -145,7 +180,8 @@ function shell(parts) {
   if (page === "cards") return viewAllCards(v, parts[1]);
   if (page === "practice") return viewPractice(v);
   if (page === "progress") return viewProgress(v);
-  if (page === "admin" && staff) return adminView(v, { LECS, SUBJECTS, route });
+  if (page === "work" && staff) return viewWorkspace(v, { LECS, SUBJECTS, EXAMS, route, ensureCourse }, parts);
+  if (page === "admin" && staff) return adminView(v, { LECS, SUBJECTS, route }); // legacy
   viewHome(v);
 }
 const nav = (icon, label, to, on) => h("button" + (on ? ".on" : ""), { "aria-current": on ? "page" : "false", onclick: () => (location.hash = "#/" + to) }, ic(icon, 22), label);
@@ -224,7 +260,7 @@ function viewProfile(v) {
     const pf = S.prefs(), x = S.xp(open_()), st = S.streak(), email = S.session?.user?.email || "";
     const nameIn = h("input", { value: S.myName(), maxlength: 40, "aria-label": "Display name" });
     const nm = h("p.err", { role: "alert", style: "margin:4px 0 0;min-height:0" });
-    const pw = h("input", { type: "password", placeholder: "New password (6+ characters)", autocomplete: "new-password", "aria-label": "New password" });
+    const pw = h("input", { type: "password", placeholder: "New password (8+ characters)", autocomplete: "new-password", "aria-label": "New password" });
     const pwMsg = h("p.err", { role: "alert", style: "margin:4px 0 0;min-height:0" });
     const cur = document.documentElement.dataset.theme || "auto";
     v.append(h(".hero", h("h1", "Your profile")),
@@ -243,10 +279,12 @@ function viewProfile(v) {
           h("button.btn.sm" + (a11y().easy ? "" : ".alt"), { "aria-pressed": !!a11y().easy, onclick: () => { setA11y({ easy: !a11y().easy }); draw(); } }, (a11y().easy ? "\u2705 " : "") + "Easy-read font"),
           h("button.btn.sm" + (a11y().motion ? "" : ".alt"), { "aria-pressed": !!a11y().motion, onclick: () => { setA11y({ motion: !a11y().motion }); draw(); } }, (a11y().motion ? "\u2705 " : "") + "Reduce motion"))),
       h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4DA} My classes"),
-        h("div", SUBJECTS.filter((sj) => S.hasAccess(sj.id)).map((sj) => h(".row", { style: "padding:6px 0;flex-wrap:nowrap" }, emojiTile(sj, 34), h("b", `${sj.name}: ${sj.title}`)))),
+        h("div", (S.classes.length ? S.classes : SUBJECTS.filter((sj) => S.hasAccess(sj.id)).map((sj) => ({ course_id: sj.id, name: `${sj.name}: ${sj.title}` }))).map((k) => { const sj = SUBJECTS.find((x) => x.id === k.course_id) || { id: k.course_id, icon: "\u{1F4D8}" };
+          return h(".row", { style: "padding:6px 0;flex-wrap:nowrap" }, emojiTile(sj, 34), h("div", { style: "flex:1;min-width:0" }, h("b", k.name), k.school_name ? h(".src", { style: "margin:0" }, [k.school_name, k.term, k.role === "student" ? "" : k.role === "teacher" ? "instructor" : "school manager"].filter(Boolean).join(" · ")) : ""),
+            k.role === "student" ? h("button.btn.alt.sm", { "aria-label": "Leave " + k.name, onclick: async () => { if (!confirm(`Leave ${k.name}? You can join again later with the class code.`)) return; const x = await S.leaveClass(k.class_id); toast(x.error ? "Could not leave: " + x.error.message : "You left the class"); route(); } }, "Leave") : ""); })),
         S.DEMO ? "" : h("div", { style: "margin-top:10px" }, joinCard())),
       h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4CA} Study stats"), h("p", { style: "margin:0" }, `Level ${x.lvl}, ${x.xp} XP` + (st ? `, ${st}-day streak` : "") + ".")),
-      S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F512} Password"), h(".row", { style: "flex-wrap:nowrap" }, pw, h("button.btn.sm", { onclick: async () => { pwMsg.style.color = ""; const r = await S.setNewPassword(pw.value); pwMsg.style.color = r.error ? "" : "var(--ok)"; pwMsg.textContent = r.error ? r.error.message : "Password updated."; if (!r.error) pw.value = ""; } }, "Update")), pwMsg),
+      S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F512} Password"), h(".row", { style: "flex-wrap:nowrap" }, pw, h("button.btn.sm", { onclick: async () => { pwMsg.style.color = ""; if (pw.value.length < 8) { pwMsg.textContent = "Use at least 8 characters."; return; } const r = await S.setNewPassword(pw.value); pwMsg.style.color = r.error ? "" : "var(--ok)"; pwMsg.textContent = r.error ? r.error.message : "Password updated."; if (!r.error) pw.value = ""; } }, "Update")), pwMsg),
       S.DEMO ? "" : feedbackCard(),
       S.DEMO ? "" : h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F5C4}\uFE0F Your data"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "You own your study data. Download it or delete your account at any time. ", h("a", { href: "#/privacy" }, "Privacy")),
         h(".row", h("button.btn.alt.sm", { onclick: () => { const url = URL.createObjectURL(new Blob([JSON.stringify(S.exportData(), null, 2)], { type: "application/json" })); const a = h("a", { href: url, download: "aceit-my-data.json" }); document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 2000); toast("Downloaded"); } }, "Download my data"),
@@ -263,11 +301,11 @@ function viewPrivacy() {
   const back = () => { history.length > 1 ? history.back() : (location.hash = "#/"); };
   app.replaceChildren(h("main.auth", { style: "max-width:640px" }, h("button.btn.alt.sm", { onclick: back, style: "margin-bottom:12px" }, ic("left", 16), "Back"),
     h("h1", { style: "letter-spacing:0" }, "Privacy"), h(".card",
-      h("h3", "What ACEIT keeps about you"), h("ul", { style: "margin:4px 0 12px;padding-left:18px" }, h("li", "Your email address and the name you choose."), h("li", "Which classes you joined."), h("li", "Your study progress: topics read, cards reviewed, quiz answers and games played.")),
-      h("h3", "Who can see it"), h("p", "You can see all of it. The administrator of your class can see names, emails and progress so they can help students and remove people who should not be there. It is not shown to other students, and it is not sold or shared for advertising."),
-      h("h3", "Where it is stored"), h("p", "In a cloud database (Supabase) set up for this site. Passwords are stored in hashed form and are never visible to anyone."),
-      h("h3", "Your choices"), h("p", "In your profile you can download everything stored about you, change your name, or delete your account. Deleting removes your email, progress and class access."),
-      h("h3", "Questions"), h("p", { style: "margin-bottom:0" }, "Ask the person who gave you your class code."))));
+      h("h3", "What ACEIT keeps about you"), h("ul", { style: "margin:4px 0 12px;padding-left:18px" }, h("li", "Your email address and the name you choose."), h("li", "Which classes you joined, and which school each class belongs to."), h("li", "Your study progress: topics read, cards reviewed, quiz answers and games played."), h("li", "A short summary of that progress (percent complete, mastery and when you last opened ACEIT).")),
+      h("h3", "Who can see it"), h("p", "You can see all of it. The instructors of a class you joined, and the managers of that class's school, can see your name, email, progress and summary for that class so they can help you and see how the class is doing. People in other schools cannot. Other students cannot. The people who run the ACEIT service can see account details when they need to keep it working and safe. Nothing is sold or shared for advertising."),
+      h("h3", "Where it is stored"), h("p", "In a cloud database (Supabase) set up for this site. Passwords are stored in hashed form and are never visible to anyone. Everything is sent over an encrypted connection."),
+      h("h3", "Your choices"), h("p", "In your profile you can download everything stored about you, change your name, leave a class, or delete your account. Deleting removes your email, progress and class memberships."),
+      h("h3", "Questions or requests"), h("p", { style: "margin-bottom:0" }, "Ask your instructor or your school. They can also ask us to remove a class or a student."))));
 }
 function authBox(title, ...kids) {
   app.replaceChildren(h(".auth", h("h1", { style: "text-align:center" }, "ACEIT"),
@@ -277,13 +315,14 @@ function viewAuth() {
   let mode = "in";
   const draw = () => {
     const email = h("input", { type: "email", placeholder: "you@email.com", autocomplete: "email", required: true, id: "em" });
-    const pw = h("input", { type: "password", placeholder: "Password (6+ characters)", autocomplete: mode === "in" ? "current-password" : "new-password", id: "pw" });
+    const pw = h("input", { type: "password", placeholder: mode === "in" ? "Password" : "Password (8+ characters)", autocomplete: mode === "in" ? "current-password" : "new-password", id: "pw" });
     const name = h("input", { placeholder: "Your first name", id: "nm" });
     const err = h("p.err", { role: "alert" });
     const go = h("button.btn", { style: "width:100%;margin-top:14px" }, mode === "in" ? "Log in" : "Create account");
     go.onclick = async () => {
       err.textContent = ""; go.disabled = true;
       if (mode === "up") {
+        if (pw.value.length < 8) { err.textContent = "Use at least 8 characters for your password."; go.disabled = false; return; }
         const r = await S.signUp(email.value.trim(), pw.value, name.value.trim());
         if (r.error) err.textContent = r.error.message;
         else if (!r.data.session) { err.style.color = "var(--ok)"; err.textContent = "Check your email to confirm, then log in."; }
@@ -325,10 +364,11 @@ function viewBlocked() {
     h("button.btn.alt.sm", { onclick: async () => { await S.signOut(); route(); } }, "Log out"));
 }
 function viewReset() {
-  const pw = h("input", { type: "password", placeholder: "New password (6+ characters)", autocomplete: "new-password", "aria-label": "New password" });
+  const pw = h("input", { type: "password", placeholder: "New password (8+ characters)", autocomplete: "new-password", "aria-label": "New password" });
   const err = h("p.err", { role: "alert" });
   const go = h("button.btn", { style: "width:100%;margin-top:14px" }, "Save new password");
   go.onclick = async () => {
+    if (pw.value.length < 8) { err.textContent = "Use at least 8 characters."; return; }
     const r = await S.setNewPassword(pw.value);
     if (r.error) err.textContent = r.error.message; else { toast("Password updated"); location.hash = "#/"; }
   };
@@ -348,9 +388,9 @@ function joinCard() {
   const go = h("button.btn", { style: "--c:#2563eb" }, "Join class");
   const submit = async () => {
     const code = inp.value.trim(); if (!code) return; go.disabled = true; err.textContent = "";
-    const cid = await S.joinByCode(code, SUBJECTS.map((x) => x.id)); go.disabled = false;
-    if (cid === "LOCKED") { err.textContent = "Too many wrong tries. Please wait 10 minutes and try again."; return; }
-    if (cid) { const sj = SUBJECTS.find((x) => x.id === cid); toast(`\u{1F389} Joined ${sj ? sj.name : "class"}!`); confetti(); route(); } else err.textContent = "That code doesn't match any class. Check it and try again.";
+    const r = await S.joinByCode(code, SUBJECTS.map((x) => x.id)); go.disabled = false;
+    if (!r.ok) { err.textContent = r.message || S.joinProblem[r.reason] || S.joinProblem.error; return; }
+    const sj = SUBJECTS.find((x) => x.id === r.cid); setCls(r.cid); toast(`\u{1F389} Joined ${r.name || (sj ? sj.name : "class")}!`); confetti(); route();
   };
   go.onclick = submit; inp.onkeydown = (e) => { if (e.key === "Enter") submit(); };
   return h(".card", { style: "margin-bottom:14px" }, h("h3", "\u{1F39F}\uFE0F Join a class"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "Each class has its own code from your instructor."), h(".row", { style: "flex-wrap:nowrap" }, inp, go), err);
@@ -402,7 +442,7 @@ function viewSubject(v, id) {
     const code = h("input", { placeholder: `${sj.name} class code`, autocomplete: "off", "aria-label": `${sj.name} class code` });
     const err = h("p.err", { role: "alert" });
     const go = h("button.btn", { style: "width:100%;margin-top:12px" }, "Unlock " + sj.name);
-    const submit = async () => { go.disabled = true; const r = await S.redeemClass(sj.id, code.value.trim()); go.disabled = false; if (r.ok) { toast(`${sj.name} unlocked!`); confetti(); route(); } else err.textContent = r.locked ? "Too many wrong tries. Please wait 10 minutes and try again." : "That code isn't right for this class. Ask your instructor."; };
+    const submit = async () => { go.disabled = true; const r = await S.joinByCode(code.value.trim(), SUBJECTS.map((x) => x.id)); go.disabled = false; if (r.ok && r.cid === sj.id) { toast(`${sj.name} unlocked!`); confetti(); route(); } else if (r.ok) { setCls(r.cid); route(); } else err.textContent = r.message || (r.reason === "wrong" ? "That code isn't right for this class. Ask your instructor." : S.joinProblem[r.reason] || S.joinProblem.error); };
     go.onclick = submit; code.onkeydown = (e) => { if (e.key === "Enter") submit(); };
     return v.append(h(".card", h("h2", "Enter the class code"), h("p", { style: "color:var(--mute)" }, `Each class has its own code. Enter the ${sj.name} code to open it.`), code, err, go));
   }
