@@ -3,6 +3,7 @@
 import EmbeddedPostgres from "embedded-postgres";
 import pg from "pg";
 import { readFileSync, rmSync } from "node:fs";
+import { execSync } from "node:child_process";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -57,5 +58,5 @@ times.push(await as(MGR, `select * from public.profiles`, "manager: profiles vis
 times.push(await as(ADMIN, `select id,email from public.profiles where email ilike '%student59%' limit 12`, "admin: find a person"));
 const w = Math.max(...times);
 console.log(`\nslowest: ${w.toFixed(0)} ms ->`, w < 800 ? "fine for a school" : "needs an index or a rewrite");
-try { await admin.end(); } catch {} try { await server.stop(); } catch {} try { process.kill(pm); } catch {} try { rmSync(dir, { recursive: true, force: true }); } catch {}
+try { await admin.end(); } catch {} if (process.platform === "win32") { try { execSync(`taskkill /PID ${pm} /T /F`, { stdio: "ignore" }); } catch {} } try { await server.stop(); } catch {} try { process.kill(pm); } catch {} try { rmSync(dir, { recursive: true, force: true }); } catch {}
 process.exit(0);

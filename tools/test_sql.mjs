@@ -21,6 +21,8 @@ const postmaster = Number(readFileSync(path.join(dir, "postmaster.pid"), "utf8")
 // stop the database for good (on Windows the server can outlive stop(), and a leftover one would hold the port)
 const finish = async (code) => {
   try { await admin.end(); } catch {}
+  // end the postmaster together with its helper processes: on Windows the helpers outlive a plain kill and pile up from run to run
+  if (process.platform === "win32") { try { execSync(`taskkill /PID ${postmaster} /T /F`, { stdio: "ignore" }); } catch {} }
   try { await server.stop(); } catch {}
   try { process.kill(postmaster); } catch {}
   try { rmSync(dir, { recursive: true, force: true }); } catch {}
