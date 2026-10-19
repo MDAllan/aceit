@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "python tools/check_content.py && python tools/build_sql.py --check && python tools/check_rpc.py && node tools/test_logic.mjs",
+    "check": "python tools/check_content.py && python tools/build_sql.py --check && python tools/check_rpc.py && node tools/test_logic.mjs && node tools/test_content.mjs",
     "manifest": "python tools/build_manifest.py",
     "serve": "python -m http.server 8765"
   }

@@ -18,6 +18,8 @@ create table if not exists public.schools (
   active boolean not null default true,
   seat_limit int check (seat_limit is null or seat_limit > 0),
   created_at timestamptz not null default now());
+-- a school can ask that a manager approves what its instructors publish (see patch 7)
+alter table public.schools add column if not exists require_approval boolean not null default false;
 create table if not exists public.school_managers (
   user_id uuid not null references auth.users(id) on delete cascade,
   school_id uuid not null references public.schools(id) on delete cascade,
@@ -557,7 +559,8 @@ create trigger on_auth_user_confirmed after update of email_confirmed_at on auth
   for each row when (old.email_confirmed_at is null and new.email_confirmed_at is not null) execute function public.on_user_confirmed();
 
 -- 12. dashboards for staff (small answers, filtered to what the caller may see) ---------------------------------------------------------------
-create or replace function public.staff_schools() returns table (school_id uuid, name text, region text, active boolean, seat_limit int, seats_used int, courses text[], classes int, teachers int, managers int, students int, active7 int)
+drop function if exists public.staff_schools();
+create or replace function public.staff_schools() returns table (school_id uuid, name text, region text, active boolean, seat_limit int, seats_used int, courses text[], classes int, teachers int, managers int, students int, active7 int, require_approval boolean)
 language sql security definer set search_path = public stable as $$
   select s.id, s.name, s.region, s.active, s.seat_limit,
     (select count(distinct e.user_id)::int from public.enrollments e join public.classes c on c.id = e.class_id where c.school_id = s.id),
@@ -567,7 +570,8 @@ language sql security definer set search_path = public stable as $$
     (select count(*)::int from public.school_managers m where m.school_id = s.id),
     (select count(distinct e.user_id)::int from public.enrollments e join public.classes c on c.id = e.class_id where c.school_id = s.id),
     (select count(distinct e.user_id)::int from public.enrollments e join public.classes c on c.id = e.class_id join public.progress_summary ps on ps.user_id = e.user_id and ps.course_id = c.course_id
-       where c.school_id = s.id and ps.last_active > now() - interval '7 days')
+       where c.school_id = s.id and ps.last_active > now() - interval '7 days'),
+    s.require_approval
   from public.schools s
   where public.is_manager_of(s.id) or exists (select 1 from public.class_teachers t join public.classes c on c.id = t.class_id where t.user_id = auth.uid() and c.school_id = s.id)
   order by s.name;

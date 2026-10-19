@@ -19,6 +19,8 @@ jobs:
         run: for f in js/*.js config.js; do node --input-type=module --check < "$f"; done
       - name: Logic tests (calculators, spaced repetition)
         run: node tools/test_logic.mjs
+      - name: Content tests (rules for instructor-added items, pasting, merging)
+        run: node tools/test_content.mjs
   database:
     runs-on: ubuntu-latest
     steps:
