@@ -27,6 +27,13 @@ Instructors and school managers can add their own notes, flashcards, questions, 
 
 Until you run it nothing changes: the Class content screens just say the upgrade is not installed. A school that stops using ACEIT can be removed completely from Platform > Schools > (school) > Settings > Delete this school; that also removes its pictures.
 
+## 0b. Add the BIOL 305 (Human Biology) course and its class (once)
+
+1. Supabase > SQL Editor > New query. Paste the whole of `supabase/add-biol305.sql` and press Run. It must say "Success". It is safe to run again, and it works both before and after step 0.
+2. Students join with the code **Ace305**. Before step 0 (the older model) it must be typed exactly like that, capital A included. After step 0 capital letters do not matter.
+3. When you run step 0, BIOL 305 and the students who already joined it are carried over, like ERTH 209 and ASTR 207. Afterwards the course is licensed to **ACEIT Direct** and its class is there. For another school, tick BIOL 305 in Platform > Schools > (school) > Settings and create a class for it.
+4. Once the new site version is live, open Platform > Content and press **Publish content to the database** again so the new lectures (the biology course and the geology deformation lecture) are protected like the others.
+
 ## 1. Reliable emails (password resets, sign-ups, invites)
 
 Supabase's built-in sender allows only a few emails per hour, which is too few for a school.

@@ -1,0 +1,2191 @@
+{
+ "id": "nervous",
+ "title": "The Nervous System",
+ "chapter": "Unit 3",
+ "icon": "🧠",
+ "color": "#c0392b",
+ "slideFile": "The Nervous System.pdf",
+ "intro": "The nervous system is the body's fast signal network. You will learn its parts, how neurons fire and pass signals on, the glial cells that support them, and how the whole system forms in the embryo.",
+ "sections": [
+  {
+   "id": "organization",
+   "title": "Parts of the nervous system",
+   "slides": "1-2",
+   "steps": [
+    {
+     "title": "Two big parts",
+     "bullets": [
+      "The nervous system has two main parts, and both contain **neurons** (nerve cells) and **glial cells** (support cells).",
+      "The **central nervous system (CNS)** is the brain and spinal cord.",
+      "The **peripheral nervous system (PNS)** is all the nerves outside the CNS."
+     ]
+    },
+    {
+     "title": "Information in, information out",
+     "bullets": [
+      "The **sensory (afferent)** division of the PNS carries information towards the CNS.",
+      "The **motor (efferent)** division carries information away from the CNS.",
+      "The motor division splits again into the **somatic** and **autonomic** divisions."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The CNS is the control center. The PNS is the wiring: sensory nerves bring news in, and motor nerves carry commands out."
+    },
+    {
+     "type": "trick",
+     "text": "Afferent = Arrives at the CNS. Efferent = Exits the CNS. Sensory = Stimulus in. Motor = Move out."
+    },
+    {
+     "type": "trap",
+     "text": "A nerve belongs to the PNS even when it plugs straight into the brain (cranial nerves). Slide 1 lists the four learning objectives: organization of the CNS and PNS; action potentials and neurotransmitters; neuronal and glial cell types; developmental origins of the CNS and PNS."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slide 1 (learning objectives) and slide 2 (organization of the nervous system).",
+    "Control-center and wiring analogy and the arrive/exit and stimulus/move mnemonics: outside source."
+   ],
+   "images": []
+  },
+  {
+   "id": "neuron",
+   "title": "Neurons: structure and types",
+   "slides": "3-4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/neuron_3.webp",
+      "slide": "slide 3",
+      "alt": "A drawing of one neuron with branching dendrites, a cell body with a nucleus, an axon hillock, a long axon and axon terminals, all labelled."
+     },
+     "title": "Parts of a neuron",
+     "bullets": [
+      "A neuron makes and carries electrical impulses called **action potentials**.",
+      "**Dendrites** are the input sites, and the **soma** (cell body, with the nucleus) is the integration site, where the inputs are combined.",
+      "The axon is the route of conduction, and the axon terminals are the output sites."
+     ]
+    },
+    {
+     "title": "Where the soma sit",
+     "bullets": [
+      "A neuron's soma can sit far from its dendrites and axon terminals.",
+      "A cluster of neuron soma in the CNS is called a **nucleus** (plural: nuclei).",
+      "A cluster of neuron soma in the PNS is called a **ganglion** (plural: ganglia)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/types_4.webp",
+      "slide": "slide 4",
+      "alt": "A drawing of a sensory neuron running from the skin, interneurons inside a box labelled brain and spinal cord, and a motor neuron reaching a muscle, with arrows for the impulse direction."
+     },
+     "title": "Sensory, inter-, and motor neurons",
+     "bullets": [
+      "**Sensory neurons** have their soma in the PNS. Their far-out dendrites receive stimuli such as pressure or light and send the information to the CNS.",
+      "**Interneurons** have their soma in the CNS. They pass information between neurons: they receive sensory neuron inputs and then stimulate motor neurons.",
+      "**Motor neurons** have their soma in the CNS, but their axons extend into the PNS to reach muscles and glands."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A message follows a chain: a sensory neuron brings it in, interneurons in the CNS process it, and a motor neuron sends out the response. The arrows in the picture run in that order."
+    },
+    {
+     "type": "trick",
+     "text": "Sensory = Stimulus in. Motor = Move out. Interneurons sit in the middle, inside the CNS."
+    },
+    {
+     "type": "trap",
+     "text": "Soma clusters: nucleus = CNS, ganglion = PNS. This 'nucleus' is a cluster of cells, not the nucleus organelle inside one cell (the neuron figure on slide 3 also labels a cell nucleus). Where each soma sits is a favourite exam item: sensory neuron soma are in the PNS; motor neuron and interneuron soma are in the CNS."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slide 3 (neuron structure, nuclei and ganglia) and slide 4 (neuron types and picture).",
+    "The axon hillock is only a label in the pictures; the deck gives no function for it, so none is stated.",
+    "Mnemonic (stimulus in, move out): outside source.",
+    "'Where the inputs are combined' is a plain-language gloss of 'integration site' (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/neuron_3.webp",
+     "slide": "slide 3",
+     "alt": "A drawing of one neuron with branching dendrites, a cell body with a nucleus, an axon hillock, a long axon and axon terminals, all labelled."
+    },
+    {
+     "src": "img/nervous/types_4.webp",
+     "slide": "slide 4",
+     "alt": "A drawing of a sensory neuron running from the skin, interneurons inside a box labelled brain and spinal cord, and a motor neuron reaching a muscle, with arrows for the impulse direction."
+    }
+   ]
+  },
+  {
+   "id": "brain",
+   "title": "The brain",
+   "slides": "5-7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/brain_5.webp",
+      "slide": "slide 5",
+      "alt": "Two views of the brain with the forebrain (cerebrum, corpus callosum, thalamus), the midbrain and the hindbrain (pons, cerebellum, medulla oblongata) labelled."
+     },
+     "title": "Three brain regions",
+     "bullets": [
+      "The **forebrain** integrates sensory information and determines complex behaviours. The cerebrum, corpus callosum and thalamus are labelled with it.",
+      "The **midbrain** coordinates muscles and responses to stimuli.",
+      "The **hindbrain** coordinates automatic and vital functions. The pons, cerebellum and medulla oblongata are labelled with it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/lobes_6.webp",
+      "slide": "slide 6",
+      "alt": "A side view of the brain with the frontal, parietal, occipital and temporal lobes in different colours, each labelled with its main jobs."
+     },
+     "title": "Four lobes of the cerebrum",
+     "bullets": [
+      "By combining many stimuli (many action potentials converging), the nervous system can produce **perception, sensation and consciousness**.",
+      "The cerebrum has four lobes. The **frontal lobe** initiates motor activity and is responsible for speech and conscious thought. The **parietal lobe** interprets sensory information from the skin.",
+      "The **occipital lobe** processes visual information. The **temporal lobe** interprets auditory information, comprehends language and handles perceptual judgment."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/topo_7.webp",
+      "slide": "slide 7",
+      "alt": "A top view of the brain with the motor area in pink and the sensory area in blue, each drawn as a stretched body map with large lips, tongue, face and fingers."
+     },
+     "title": "Body maps in the cortex",
+     "bullets": [
+      "Specific areas of the cerebral cortex (the outer layer of the cerebrum) map to specific parts of the body. Both the sensory (somatosensory) areas and the motor areas have been mapped.",
+      "More sensitive or more precisely moving body parts get larger areas. In the picture the face, lips, tongue, hand and fingers are drawn large.",
+      "These maps show **plasticity**: they can change in humans, even as adults."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The size of a body part's patch of cortex follows how sensitive the part is or how precisely it moves, not how big the part is. That is why the lips are drawn large and the trunk is drawn small."
+    },
+    {
+     "type": "trick",
+     "text": "Picture the cortex map as a distorted drawing of the body: the more sensitive or skilful the part, the bigger it is drawn."
+    },
+    {
+     "type": "trap",
+     "text": "Easy swaps: forebrain = integrates sensory information and complex behaviours; midbrain = coordinates muscles and responses; hindbrain = automatic and vital functions. Frontal lobe 'responsible for speech' versus temporal lobe 'comprehends language' are also easy to swap. Slide 7 says plasticity is possible even in adults, not only in children."
+    }
+   ],
+   "table": {
+    "head": [
+     "Lobe",
+     "Main jobs"
+    ],
+    "rows": [
+     [
+      "Frontal",
+      "Initiates motor activity, speech, conscious thought"
+     ],
+     [
+      "Parietal",
+      "Interprets sensory information from the skin"
+     ],
+     [
+      "Occipital",
+      "Processes visual information"
+     ],
+     [
+      "Temporal",
+      "Interprets auditory information, comprehends language, perceptual judgment"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slide 5 (three regions and the labelled structures in the picture), slide 6 (lobes; the job of each lobe is read from the figure, the slide text lists only the lobe names), slide 7 (topographic maps and plasticity).",
+    "Which structures sit under which region is read from the labels in the slide 5 picture.",
+    "'The outer layer of the cerebrum' is a plain-language gloss of cerebral cortex (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/brain_5.webp",
+     "slide": "slide 5",
+     "alt": "Two views of the brain with the forebrain (cerebrum, corpus callosum, thalamus), the midbrain and the hindbrain (pons, cerebellum, medulla oblongata) labelled."
+    },
+    {
+     "src": "img/nervous/lobes_6.webp",
+     "slide": "slide 6",
+     "alt": "A side view of the brain with the frontal, parietal, occipital and temporal lobes in different colours, each labelled with its main jobs."
+    },
+    {
+     "src": "img/nervous/topo_7.webp",
+     "slide": "slide 7",
+     "alt": "A top view of the brain with the motor area in pink and the sensory area in blue, each drawn as a stretched body map with large lips, tongue, face and fingers."
+    }
+   ]
+  },
+  {
+   "id": "protect",
+   "title": "Meninges, CSF and ventricles",
+   "slides": "8-9",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/meninges_9.webp",
+      "slide": "slide 9",
+      "alt": "A cutaway of the head showing hair, scalp, skull, the three meninges (dura mater, arachnoid, pia mater), brain tissue and cerebrospinal fluid."
+     },
+     "title": "Three protective layers",
+     "bullets": [
+      "Inside the skull and vertebral column, the brain and spinal cord are protected by three connective tissue layers called the **meninges**.",
+      "From outermost to innermost they are the **dura mater**, the **arachnoid** and the pia mater.",
+      "**Cerebrospinal fluid (CSF)** bathes the CNS. It sits in the subarachnoid space, between the arachnoid and the pia mater."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/ventricles_9.webp",
+      "slide": "slide 9",
+      "alt": "Two views of the brain showing the right and left ventricles, third ventricle, cerebral aqueduct, fourth ventricle and central canal, with cerebrospinal fluid in blue."
+     },
+     "title": "Ventricles make and carry CSF",
+     "bullets": [
+      "CSF also circulates through, and is produced in, cavities inside the brain and spinal cord called **ventricles**.",
+      "In the picture the right and left ventricles lead to the third ventricle, then through the cerebral aqueduct to the fourth ventricle and the central canal of the spinal cord.",
+      "The **ependyma** lines the internal ventricles and joins up with the pia mater on the brain's surface."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A soft organ inside a hard skull is like an egg in a box with some liquid around it: the three layers and the fluid keep it from knocking against the bone."
+    },
+    {
+     "type": "trick",
+     "text": "D-A-P gives the layers from the outside in: Dura, Arachnoid, Pia."
+    },
+    {
+     "type": "trap",
+     "text": "CSF is in the SUBarachnoid space (between the arachnoid and the pia mater), not between the skull and the dura. The ependyma lines the ventricles inside the brain, while the meninges wrap the outside of the CNS."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slide 8 (meninges and CSF) and slide 9 (ventricular system figure, ependyma).",
+    "The chain of ventricles (right and left, third, aqueduct, fourth, central canal) is read from the labels in the slide 9 figure.",
+    "Egg-in-a-box analogy: outside source."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/meninges_9.webp",
+     "slide": "slide 9",
+     "alt": "A cutaway of the head showing hair, scalp, skull, the three meninges (dura mater, arachnoid, pia mater), brain tissue and cerebrospinal fluid."
+    },
+    {
+     "src": "img/nervous/ventricles_9.webp",
+     "slide": "slide 9",
+     "alt": "Two views of the brain showing the right and left ventricles, third ventricle, cerebral aqueduct, fourth ventricle and central canal, with cerebrospinal fluid in blue."
+    }
+   ]
+  },
+  {
+   "id": "pns",
+   "title": "The peripheral nervous system",
+   "slides": "10-16",
+   "steps": [
+    {
+     "title": "Sensory and motor divisions",
+     "bullets": [
+      "The PNS has **sensory** and **motor** divisions. They carry information to the CNS or away from the CNS.",
+      "The motor division is split by the tissue it **innervates** (sends signals to). The **somatic** division innervates skeletal muscles.",
+      "The **autonomic** division innervates smooth muscle, cardiac muscle and glands."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/reflex_11.webp",
+      "slide": "slide 11",
+      "alt": "A drawing of a spinal reflex: a painful stimulus to the right foot, sensory neurons to the spinal cord, interneurons and motor neurons on both sides, the right leg withdrawing and the left leg extending."
+     },
+     "title": "A reflex in the spinal cord",
+     "bullets": [
+      "The somatic division gives **voluntary**, conscious control of skeletal muscles. It also gives involuntary, reflexive control of them.",
+      "**Spinal reflexes** are handled mainly by the spinal cord and spinal nerves, with little involvement of the brain. Examples: the flexor reflex, the crossed extensor reflex and the stretch reflex.",
+      "In the picture, a painful stimulus on the right foot sends a signal along sensory neurons to the spinal cord. Interneurons stimulate motor neurons on both sides and also signal the brain. The right leg withdraws and the left leg extends."
+     ]
+    },
+    {
+     "title": "Fight or flight, rest and digest",
+     "bullets": [
+      "The **sympathetic** division gives the fight-or-flight response: heart rate and breathing go up, blood pressure rises, pupils dilate, and digestion and urine production slow down.",
+      "The **parasympathetic** division relaxes the body (rest and digest): heart rate and breathing go down, digestion increases, and urination and defecation are permitted.",
+      "Sympathetic neurons give a unified response in many organs at once. The key neurotransmitter is **norepinephrine** for the sympathetic division and **acetylcholine** for the parasympathetic division."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/shared_13.webp",
+      "slide": "slide 13",
+      "alt": "A body diagram with sympathetic effects listed on the left and parasympathetic effects on the right for the eye, glands, lungs, heart, blood vessels, digestive organs and bladder."
+     },
+     "title": "Same targets, opposite effects",
+     "bullets": [
+      "The sympathetic and parasympathetic motor neurons innervate the same targets but act in opposition.",
+      "In the picture the sympathetic side dilates the pupil, increases respiration and heart rate, and inhibits digestion. The parasympathetic side constricts the pupil, decreases respiration and heart rate, and stimulates digestion.",
+      "The picture also shows the sympathetic side constricting blood vessels, relaxing the bladder and inhibiting defecation, while the parasympathetic side dilates blood vessels, contracts the bladder and stimulates defecation."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/cranial_15.webp",
+      "slide": "slide 15",
+      "alt": "The underside of the brain with yellow nerve cords attached directly to it."
+     },
+     "title": "Nerves and cranial nerves",
+     "bullets": [
+      "A **nerve** is many axons bundled together (fasciculated) inside a protective connective tissue sheath, along with supporting glial cells.",
+      "Humans have 12 pairs of **cranial nerves**. They connect directly to the brain and serve the head, neck, thoracic cavity and abdominal cavity.",
+      "In the picture, the yellow cords on the underside of the brain are nerves attached directly to the brain."
+     ]
+    },
+    {
+     "title": "Spinal nerves",
+     "bullets": [
+      "Humans have 31 pairs of **spinal nerves**. They connect to the spinal cord through dorsal roots (sensory components) and ventral roots (motor components).",
+      "Spinal nerves sometimes contribute to a nerve **plexus**, a branching network of nerves.",
+      "Spinal nerves also innervate the sympathetic chain ganglia."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/pns_16.webp",
+      "slide": "slide 16",
+      "alt": "A flow chart: the PNS splits into sensory and motor, motor splits into autonomic and somatic, and autonomic splits into sympathetic and parasympathetic, each with a short label."
+     },
+     "title": "Three splits of the PNS",
+     "bullets": [
+      "The PNS splits by the direction of information travel: sensory (towards the CNS) or motor (away from the CNS).",
+      "The motor division splits by the identity of the target: autonomic (cardiac and smooth muscle, and glands) or somatic (skeletal muscles).",
+      "The autonomic division splits by the outcome of stimulation: sympathetic (fight or flight) or parasympathetic (rest and digest)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Each split answers a different question: which way does the information travel (sensory or motor), which tissue is the target (somatic or autonomic), and what is the outcome (sympathetic or parasympathetic)?"
+    },
+    {
+     "type": "trick",
+     "text": "S for Stress: Sympathetic = fight or flight. P for Peace: Parasympathetic = rest and digest."
+    },
+    {
+     "type": "trap",
+     "text": "Somatic control covers BOTH voluntary and reflex control of skeletal muscle. Both autonomic subdivisions act on the SAME targets with opposite effects, so they are not 'different organs'. Slide 12 says the sympathetic division slows urine production, but the slide 13 figure says it 'relaxes bladder muscles' (and parasympathetic 'contracts bladder muscles'); use the slide 12 wording. Acetylcholine appears twice in the deck: key neurotransmitter of the parasympathetic division (slide 12) and an example of an excitatory neurotransmitter (slide 26)."
+    }
+   ],
+   "table": {
+    "head": [
+     "Feature",
+     "Sympathetic",
+     "Parasympathetic"
+    ],
+    "rows": [
+     [
+      "Nickname",
+      "Fight or flight",
+      "Rest and digest"
+     ],
+     [
+      "Heart rate and breathing",
+      "Increase",
+      "Decrease"
+     ],
+     [
+      "Digestion",
+      "Slowed",
+      "Increased"
+     ],
+     [
+      "Urine and defecation",
+      "Urine production slowed",
+      "Urination and defecation permitted"
+     ],
+     [
+      "Key neurotransmitter",
+      "Norepinephrine",
+      "Acetylcholine"
+     ],
+     [
+      "Targets",
+      "Same targets as the parasympathetic division",
+      "Same targets as the sympathetic division"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slides 10-16: slide 10 (divisions), 11 (somatic division and reflex figure), 12 (autonomic subdivisions), 13 (figure), 14 (nerves), 15 (cranial nerves picture), 16 (organization chart).",
+    "The slide 13 figure adds effects that are not in the slide 12 text (pupil constriction, blood vessels, salivation, bladder, defecation); the slide 12 text is the main source.",
+    "'Innervates' glossed as 'sends signals to' (generic wording, outside source). Stress/Peace mnemonic: outside source.",
+    "The slide 15 picture has no nerve labels; the yellow cords are described only as nerves attached to the underside of the brain."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/reflex_11.webp",
+     "slide": "slide 11",
+     "alt": "A drawing of a spinal reflex: a painful stimulus to the right foot, sensory neurons to the spinal cord, interneurons and motor neurons on both sides, the right leg withdrawing and the left leg extending."
+    },
+    {
+     "src": "img/nervous/shared_13.webp",
+     "slide": "slide 13",
+     "alt": "A body diagram with sympathetic effects listed on the left and parasympathetic effects on the right for the eye, glands, lungs, heart, blood vessels, digestive organs and bladder."
+    },
+    {
+     "src": "img/nervous/cranial_15.webp",
+     "slide": "slide 15",
+     "alt": "The underside of the brain with yellow nerve cords attached directly to it."
+    },
+    {
+     "src": "img/nervous/pns_16.webp",
+     "slide": "slide 16",
+     "alt": "A flow chart: the PNS splits into sensory and motor, motor splits into autonomic and somatic, and autonomic splits into sympathetic and parasympathetic, each with a short label."
+    }
+   ]
+  },
+  {
+   "id": "potential",
+   "title": "Membrane potential",
+   "slides": "17-19",
+   "steps": [
+    {
+     "title": "Voltage across the membrane",
+     "bullets": [
+      "At rest, the inside of a neuron is negative compared with the outside. This voltage difference across the cell membrane is the **membrane potential**.",
+      "Neurons fire **action potentials** to communicate: chemical-electrical signals from a neuron to a target.",
+      "An action potential is a sudden, temporary reversal of the voltage across the membrane. It happens only if a voltage **threshold** is reached."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/resting_18.webp",
+      "slide": "slide 18",
+      "alt": "A cutaway of a membrane with sodium and potassium ions, the sodium-potassium pump moving 3 Na+ out and 2 K+ in, and two leak channels, labelled resting potential -70 mV with the inside negative."
+     },
+     "title": "Resting potential is -70 mV",
+     "bullets": [
+      "The **resting potential** is -70 mV, with the inside negative.",
+      "The Na⁺/K⁺ pump moves ions across the membrane (3 Na⁺ out and 2 K⁺ in per cycle in the picture), so one positive charge is removed from the cell each cycle. K⁺ also leaks out through passive 'leaky' channels.",
+      "There are many more leaky K⁺ channels than leaky Na⁺ channels, so a negative resting potential is still maintained."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/graded_19.webp",
+      "slide": "slide 19",
+      "alt": "A graph of membrane potential over time with a small depolarizing bump, a small hyperpolarizing dip, two bumps that add up, and three bumps that reach the threshold line followed by a large action potential."
+     },
+     "title": "Graded potentials add up",
+     "bullets": [
+      "**Graded potentials** are slight changes in membrane potential caused by incoming impulses. They differ in type and strength.",
+      "A depolarizing graded potential nudges the voltage up towards zero. A hyperpolarizing one pushes it further below the resting value.",
+      "Their effects are **summative**: inputs that arrive close together add up. When the sum reaches the threshold, an action potential fires."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Each pump cycle removes more positive charge than it brings in, and K⁺ keeps leaking out through many open leaky channels, so the inside of the cell stays negative."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a bucket that tips only when it is full: several small drops (graded potentials) can add up until the threshold is crossed."
+    },
+    {
+     "type": "trap",
+     "text": "Peak heights differ between the graphs (about +10 mV on slide 19, about +30 mV on slides 20-24). The deck gives only -70 mV as a number, so memorise -70 mV and 'inside negative'. Depolarizing = closer to zero; hyperpolarizing = more negative. The 3 Na+ and 2 K+ per pump cycle are read from the slide 18 figure; the slide text only says one positive charge is removed per cycle."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slide 17 (membrane potential), slide 18 (resting potential and figure), slide 19 (graded potentials and graph).",
+    "The meaning of depolarizing graded potential (up) and hyperpolarizing (down) is read from the labels on the slide 19 graph.",
+    "Bucket analogy: outside source."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/resting_18.webp",
+     "slide": "slide 18",
+     "alt": "A cutaway of a membrane with sodium and potassium ions, the sodium-potassium pump moving 3 Na+ out and 2 K+ in, and two leak channels, labelled resting potential -70 mV with the inside negative."
+    },
+    {
+     "src": "img/nervous/graded_19.webp",
+     "slide": "slide 19",
+     "alt": "A graph of membrane potential over time with a small depolarizing bump, a small hyperpolarizing dip, two bumps that add up, and three bumps that reach the threshold line followed by a large action potential."
+    }
+   ]
+  },
+  {
+   "id": "ap",
+   "title": "The action potential",
+   "slides": "20-24",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/ap_20.webp",
+      "slide": "slide 20",
+      "alt": "Membrane channels at rest (K+ leaking through its leak channel, voltage-gated Na+ channel closed, voltage-gated K+ channel closed) above a graph of membrane potential with the flat -70 mV start marked."
+     },
+     "title": "Resting axon, channels closed",
+     "bullets": [
+      "Action potentials are possible because the axon membrane has **voltage-gated ion channels** as well as passive leaky channels.",
+      "There is a lot of Na⁺ outside the cell and a lot of K⁺ inside it. At rest the voltage-gated channels are closed.",
+      "In the picture only K⁺ leaks through its leak channel, and the voltage-gated Na⁺ channel is closed. The graph box marks the flat -70 mV start."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/ap_21.webp",
+      "slide": "slide 21",
+      "alt": "The voltage-gated Na+ channel labelled open with Na+ entering the cell, above a graph with the rising part of the spike highlighted."
+     },
+     "title": "Step 1: depolarization",
+     "bullets": [
+      "Voltage-gated Na⁺ channels open when summed graded potentials pass the voltage threshold.",
+      "Na⁺ rapidly diffuses into the cell.",
+      "The membrane **depolarizes**: the potential shifts from negative to closer to zero. That is the steep rise on the graph."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/ap_22.webp",
+      "slide": "slide 22",
+      "alt": "The sodium channel labelled inactivated and K+ leaving through the open voltage-gated K+ channel, above a graph with the falling part of the spike highlighted."
+     },
+     "title": "Step 2: repolarization",
+     "bullets": [
+      "Voltage-gated Na⁺ channels close (the picture labels them inactivated), and voltage-gated K⁺ channels open.",
+      "K⁺ rapidly diffuses out of the cell.",
+      "The membrane **repolarizes**: the potential shifts back to negative. That is the falling side of the spike."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/ap_23.webp",
+      "slide": "slide 23",
+      "alt": "The voltage-gated Na+ channel labelled closed, above a graph with the flat return to -70 mV highlighted at the end of the spike."
+     },
+     "title": "Step 3: recovery",
+     "bullets": [
+      "Voltage-gated K⁺ channels close.",
+      "The normal activity of the Na⁺/K⁺ pump restores the resting membrane potential.",
+      "The axon is ready to receive another action potential, and the action potential **propagates** (moves on) through the axon."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/refractory_24.webp",
+      "slide": "slide 24",
+      "alt": "A graph of one action potential with the absolute refractory period marked over the spike and the relative refractory period marked after it, with the threshold line shown."
+     },
+     "title": "Refractory periods",
+     "bullets": [
+      "An axon cannot generate another action potential while one is underway. This is the **absolute refractory period**.",
+      "Once the axon has repolarized (or hyperpolarized), another action potential can be generated, but it is temporarily harder than from rest. This is the **relative refractory period**.",
+      "On the graph, the absolute period covers the spike. The relative period covers the dip below -70 mV as the potential climbs back toward rest."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Each ion simply diffuses in the direction where there is less of it. Na⁺ is high outside, so when its channels open it flows in. K⁺ is high inside, so when its channels open it flows out."
+    },
+    {
+     "type": "trick",
+     "text": "Sodium in first, potassium out second. Depolarize = lose the negative (move toward zero). Repolarize = return to negative."
+    },
+    {
+     "type": "trap",
+     "text": "(1) On slide 23 (recovery) the picture still draws K+ arrows through the voltage-gated K+ channel, but the slide text says voltage-gated K+ channels close; use the text. (2) Slide 22 text says Na+ channels 'close' while its figure labels them '(Inactivated)'; slides 20 and 23 label them '(Closed)'. Treat both as 'not open'. (3) The pump does not make the rising or falling phase (those are diffusion through channels); it restores the resting potential in recovery. (4) The thinner orange and green curves in the graphs are not labelled in the deck, so do not build answers on them."
+    }
+   ],
+   "table": {
+    "head": [
+     "Phase",
+     "Voltage-gated Na⁺ channels",
+     "Voltage-gated K⁺ channels",
+     "What moves",
+     "Membrane potential"
+    ],
+    "rows": [
+     [
+      "Resting",
+      "Closed",
+      "Closed",
+      "K⁺ leaks out through leaky channels",
+      "-70 mV"
+     ],
+     [
+      "Depolarization",
+      "Open",
+      "Closed",
+      "Na⁺ rushes in",
+      "Moves toward zero"
+     ],
+     [
+      "Repolarization",
+      "Closed (inactivated)",
+      "Open",
+      "K⁺ rushes out",
+      "Moves back to negative"
+     ],
+     [
+      "Recovery",
+      "Closed",
+      "Close again",
+      "Na⁺/K⁺ pump restores the resting state",
+      "Back to -70 mV"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slide 20 (resting axon), 21 (depolarization), 22 (repolarization), 23 (recovery), 24 (refractory periods).",
+    "In the slide 20-23 graphs the thick teal line is the membrane potential; the thinner orange and green lines are not labelled in the deck.",
+    "'Diffuses toward where there is less of it' is a generic gloss on the concentration statements on slide 20 (outside source). Mnemonic: outside source."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/ap_20.webp",
+     "slide": "slide 20",
+     "alt": "Membrane channels at rest (K+ leaking through its leak channel, voltage-gated Na+ channel closed, voltage-gated K+ channel closed) above a graph of membrane potential with the flat -70 mV start marked."
+    },
+    {
+     "src": "img/nervous/ap_21.webp",
+     "slide": "slide 21",
+     "alt": "The voltage-gated Na+ channel labelled open with Na+ entering the cell, above a graph with the rising part of the spike highlighted."
+    },
+    {
+     "src": "img/nervous/ap_22.webp",
+     "slide": "slide 22",
+     "alt": "The sodium channel labelled inactivated and K+ leaving through the open voltage-gated K+ channel, above a graph with the falling part of the spike highlighted."
+    },
+    {
+     "src": "img/nervous/ap_23.webp",
+     "slide": "slide 23",
+     "alt": "The voltage-gated Na+ channel labelled closed, above a graph with the flat return to -70 mV highlighted at the end of the spike."
+    },
+    {
+     "src": "img/nervous/refractory_24.webp",
+     "slide": "slide 24",
+     "alt": "A graph of one action potential with the absolute refractory period marked over the spike and the relative refractory period marked after it, with the threshold line shown."
+    }
+   ]
+  },
+  {
+   "id": "synapse",
+   "title": "Synapses and neurotransmitters",
+   "slides": "25-26",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/synapse_25.webp",
+      "slide": "slide 25",
+      "alt": "A presynaptic neuron and axon bulb with Ca2+ entering, vesicles of neurotransmitter releasing into the synaptic cleft, and neurotransmitter opening sodium channels on the postsynaptic membrane, in four numbered steps."
+     },
+     "title": "Passing the signal across",
+     "bullets": [
+      "When an action potential reaches an axon terminal, it opens Ca²⁺ channels in the membrane. Ca²⁺ then makes the presynaptic cell release **neurotransmitter** (a chemical messenger) into a **synapse** (a specialized junction).",
+      "In the picture, vesicles holding neurotransmitter fuse with the cell membrane and release it into the **synaptic cleft**.",
+      "The neurotransmitter diffuses across the cleft and activates chemically-gated Na⁺ channels in the postsynaptic cell. Na⁺ flows in and produces a graded potential."
+     ]
+    },
+    {
+     "title": "Neurotransmitters",
+     "bullets": [
+      "Released neurotransmitter is quickly removed from the synaptic cleft.",
+      "There are many different neurotransmitters. They are generally classified as **excitatory**, **inhibitory**, or both."
+     ]
+    },
+    {
+     "title": "Excitatory versus inhibitory",
+     "bullets": [
+      "**Excitatory** neurotransmitters cause depolarization of the postsynaptic cell. Examples: glutamate and acetylcholine.",
+      "**Inhibitory** neurotransmitters cause hyperpolarization of the postsynaptic cell, so the threshold to fire an action potential is harder to reach.",
+      "Examples of inhibitory neurotransmitters: GABA (gamma-aminobutyric acid), serotonin and endorphins."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Chemically-gated channels give the postsynaptic cell only a graded potential, which then has to add up with other inputs. Because neurotransmitter is cleared quickly from the cleft, each release gives only a brief push."
+    },
+    {
+     "type": "trick",
+     "text": "Excitatory pushes the voltage toward firing (it depolarizes). Inhibitory pushes it away from firing (it hyperpolarizes)."
+    },
+    {
+     "type": "trap",
+     "text": "Keep the three channel types apart: Ca2+ channels at the axon terminal (they trigger release), voltage-gated channels along the axon (they make the action potential), and chemically-gated Na+ channels on the postsynaptic membrane (they make the graded potential). Also, acetylcholine is both the key parasympathetic neurotransmitter (slide 12) and an excitatory example (slide 26); norepinephrine is the sympathetic one."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slide 25 (synaptic transmission; the four numbered boxes in the picture give the same order as the text) and slide 26 (neurotransmitters).",
+    "Gamma in gamma-aminobutyric acid is written out in words.",
+    "The 'brief push' idea is a generic inference from 'quickly removed' (outside source). 'A chemical messenger' as a gloss of neurotransmitter is also generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/synapse_25.webp",
+     "slide": "slide 25",
+     "alt": "A presynaptic neuron and axon bulb with Ca2+ entering, vesicles of neurotransmitter releasing into the synaptic cleft, and neurotransmitter opening sodium channels on the postsynaptic membrane, in four numbered steps."
+    }
+   ]
+  },
+  {
+   "id": "glia",
+   "title": "Myelin and glial cells",
+   "slides": "27-28",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/myelin_27.webp",
+      "slide": "slide 27",
+      "alt": "A magnified cross-section of an axon (yellow) surrounded by a thick myelin sheath (beige), both labelled."
+     },
+     "title": "Myelin insulates the axon",
+     "bullets": [
+      "Axons are typically wrapped in a sheath of **myelin**, a fatty substance that insulates the axon. In the picture the axon is yellow and the myelin sheath is beige.",
+      "Myelin prevents some of the leaky diffusion of Na⁺ and K⁺ through the membrane, which saves energy (ATP).",
+      "Myelin also aids regeneration of axons in the PNS."
+     ]
+    },
+    {
+     "title": "Signals that jump",
+     "bullets": [
+      "Action potentials jump along the gaps in the myelin, called **nodes of Ranvier**. This is **saltatory conduction**.",
+      "It is about 50 times faster than conduction in an unmyelinated axon."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/glia_28.webp",
+      "slide": "slide 28",
+      "alt": "A drawing of neurons, myelinating oligodendrocytes, astrocytes with endfeet on a central vessel, microglia and pericytes, each labelled."
+     },
+     "title": "Four kinds of glial cells",
+     "bullets": [
+      "**Schwann cells** myelinate axons in the PNS: many Schwann cells wrap around one axon. **Oligodendrocytes** myelinate axons in the CNS: one oligodendrocyte may myelinate multiple axons.",
+      "**Astrocytes** help form the blood-brain barrier and are involved in injury repair in the CNS. In the picture their endfeet touch the wall of the central vessel.",
+      "**Microglia** are the tissue-resident macrophages (immune cells) of the brain. They are also vital for synapse formation and for eliminating (pruning) synapses."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Myelin blocks leaks, so less ATP is wasted, and it forces the signal to jump from gap to gap instead of crossing every part of the membrane. Both effects come from the insulation."
+    },
+    {
+     "type": "trick",
+     "text": "MANY Schwann cells wrap ONE axon (PNS). ONE oligodendrocyte wraps MANY axons (CNS)."
+    },
+    {
+     "type": "trap",
+     "text": "Location decides the myelinating cell: Schwann cell = PNS, oligodendrocyte = CNS. Myelin 'aids regeneration' only for PNS axons. 50X is relative to an unmyelinated axon. Nodes of Ranvier are gaps in the myelin, not cells. Astrocytes (blood-brain barrier, repair) and microglia (immune cells, pruning) do not make myelin."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slide 27 (myelination and TEM picture) and slide 28 (glial cells; picture credit Zhao et al., 2024).",
+    "The 'wire insulation' idea in the why box is a generic comparison (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/myelin_27.webp",
+     "slide": "slide 27",
+     "alt": "A magnified cross-section of an axon (yellow) surrounded by a thick myelin sheath (beige), both labelled."
+    },
+    {
+     "src": "img/nervous/glia_28.webp",
+     "slide": "slide 28",
+     "alt": "A drawing of neurons, myelinating oligodendrocytes, astrocytes with endfeet on a central vessel, microglia and pericytes, each labelled."
+    }
+   ]
+  },
+  {
+   "id": "ectoderm",
+   "title": "From ectoderm to neural tube",
+   "slides": "29-31",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/ectoderm_29.webp",
+      "slide": "slide 29",
+      "alt": "A family tree of ectoderm splitting into surface ectoderm, neural crest, neurogenic placodes and neural plate or neural tube, with the tissues each one forms and arrows pointing at the brain, spinal cord, peripheral nervous system and cranial ganglia."
+     },
+     "title": "What ectoderm becomes",
+     "bullets": [
+      "Ectoderm gives rise to the surface ectoderm (epidermis, hair, nails and more), the neural crest, the neurogenic (cranial) placodes and the neural plate and neural tube.",
+      "The neural plate and neural tube form the brain, spinal cord, motor neurons, retina and neural pituitary.",
+      "The neural crest forms the peripheral nervous system (Schwann cells, glial cells, sympathetic and parasympathetic nervous system). The placodes form the lens, olfactory and cochlear epithelium, glandular pituitary and cranial ganglia."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/neurulation_30.webp",
+      "slide": "slide 30",
+      "alt": "Three stages of an embryo drawn as slices: a flat neural plate at 18 days, a folded neural groove at 20 days and a closed neural tube at 22 days, with ectoderm, mesoderm, endoderm and notochord labelled."
+     },
+     "title": "Plate, groove, tube",
+     "bullets": [
+      "The CNS forms from the **ectoderm**, the top layer in the pictures. The mesoderm is the middle layer, the endoderm is the bottom layer, and the notochord sits in the mesoderm.",
+      "Ectodermal cells are induced by the underlying mesoderm (the notochord) to become the **neural plate**. The plate **invaginates** (folds inward) into the embryo.",
+      "The pictures show a neural plate at 18 days, a neural groove at 20 days and a closed **neural tube** at 22 days. The tube pinches off from the surface ectoderm and, after closure, becomes the brain and spinal cord."
+     ]
+    },
+    {
+     "title": "How long it takes",
+     "bullets": [
+      "Human **neurulation** (making the neural tube) starts by about 21 days after fertilization.",
+      "It is complete by about 28 days after fertilization."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Neural tissue does not form on its own: signals from the underlying mesoderm (the notochord) tell ectoderm cells to become the neural plate."
+    },
+    {
+     "type": "trick",
+     "text": "Plate, groove, tube: it is like rolling a flat sheet of paper into a tube."
+    },
+    {
+     "type": "trap",
+     "text": "Timing: the pictured day numbers (18, 20 and 22 days) come from a figure, while slide 31 says neurulation starts by about 21 days and is complete by about 28 days. Use the slide 31 numbers. Keep the germ layers straight: the CNS comes from ectoderm, and the notochord (the inducer) is mesoderm."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slide 29 (ectoderm derivatives figure), slide 30 (neurulation), slide 31 (timing; its egg and oviduct picture has no labels worth using).",
+    "Paper-rolling analogy: outside source. The layer order (ectoderm top, mesoderm middle, endoderm bottom, notochord in the mesoderm) is read from the slide 30 pictures."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/ectoderm_29.webp",
+     "slide": "slide 29",
+     "alt": "A family tree of ectoderm splitting into surface ectoderm, neural crest, neurogenic placodes and neural plate or neural tube, with the tissues each one forms and arrows pointing at the brain, spinal cord, peripheral nervous system and cranial ganglia."
+    },
+    {
+     "src": "img/nervous/neurulation_30.webp",
+     "slide": "slide 30",
+     "alt": "Three stages of an embryo drawn as slices: a flat neural plate at 18 days, a folded neural groove at 20 days and a closed neural tube at 22 days, with ectoderm, mesoderm, endoderm and notochord labelled."
+    }
+   ]
+  },
+  {
+   "id": "ntd",
+   "title": "Neural tube closure and defects",
+   "slides": "32-33",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/closure_32.webp",
+      "slide": "slide 32",
+      "alt": "A side view of an embryo with the neural tube closure points 1 to 5 marked, the anterior and posterior neuropores, and the disorders from failed closure at points 1, 2 and 5."
+     },
+     "title": "Zipping up the tube",
+     "bullets": [
+      "The neural tube begins to close by 'zipping up' from five different points along its length, one after another.",
+      "In the picture the closure points are numbered 1 to 5. The openings are the anterior neuropore at the head end and the posterior neuropore at the tail end.",
+      "The picture names the disorders from failed closure at some points: closure 1 gives craniorachischisis, closure 2 gives anencephaly and closure 5 gives spina bifida."
+     ]
+    },
+    {
+     "title": "Neural tube closure defects",
+     "bullets": [
+      "A failure of the neural tube to close at any of these points can lead to a neural tube closure defect (**NTD**).",
+      "NTDs occur in about 1 in 1000 live births. The earlier closure fails, the more severe the resulting disorder.",
+      "A deficiency of vitamin B₉ (**folate**) is a leading cause of NTDs."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/spina_33.webp",
+      "slide": "slide 33",
+      "alt": "A baby with a bulge on the lower back and an inset cutaway showing the dura mater, spinal cord, spinal fluid and vertebrae at an open spina bifida defect."
+     },
+     "title": "Spina bifida",
+     "bullets": [
+      "**Spina bifida** is a failure of the posterior neuropore to close. The meninges or spinal cord bulge (herniate) out between the vertebrae.",
+      "It occurs in about 1 in 3000 births. Symptoms range from severe to mild to none.",
+      "Treatment usually involves surgery after birth to return the spinal cord to the spinal canal and repair the meninges."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The tube closes in steps from several points, so a failure at one point leaves that part of the brain or spinal cord unprotected. The earlier the failure, the more severe the disorder."
+    },
+    {
+     "type": "trick",
+     "text": "No folate, more NTDs: vitamin B9 helps keep the zipper working."
+    },
+    {
+     "type": "trap",
+     "text": "Two different numbers: NTDs about 1:1000 live births, spina bifida about 1:3000 births (a separate figure, not the NTD rate). Spina bifida is the POSTERIOR neuropore, not the anterior one. Earlier failure means more severe (slide 32), but spina bifida symptoms can be none to severe (slide 33). The names craniorachischisis and anencephaly appear only in the slide 32 figure."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slide 32 (closure points, NTDs, folate, figure) and slide 33 (spina bifida).",
+    "Zipper/folate memory line: outside source (the deck only says folate deficiency is a leading cause).",
+    "Calling the neuropores 'openings' is a plain gloss based on 'failure of the posterior neuropore to close' (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/closure_32.webp",
+     "slide": "slide 32",
+     "alt": "A side view of an embryo with the neural tube closure points 1 to 5 marked, the anterior and posterior neuropores, and the disorders from failed closure at points 1, 2 and 5."
+    },
+    {
+     "src": "img/nervous/spina_33.webp",
+     "slide": "slide 33",
+     "alt": "A baby with a bulge on the lower back and an inset cutaway showing the dura mater, spinal cord, spinal fluid and vertebrae at an open spina bifida defect."
+    }
+   ]
+  },
+  {
+   "id": "patterning",
+   "title": "Brain vesicles, patterning and neural crest",
+   "slides": "34-37",
+   "steps": [
+    {
+     "img": {
+      "src": "img/nervous/vesicles_34.webp",
+      "slide": "slide 34",
+      "alt": "Drawings of the primary vesicles (forebrain, midbrain, hindbrain) and the secondary vesicles they divide into, with the brain structures each one forms and the spinal cord below."
+     },
+     "title": "Three swellings become the brain",
+     "bullets": [
+      "After closure, the neural tube swells with fluid. The swellings (**vesicles**) give rise to the primary brain regions.",
+      "The **prosencephalon** becomes the forebrain, the **mesencephalon** the midbrain, and the rhombencephalon the hindbrain.",
+      "In the picture, each primary vesicle later divides further: the forebrain into the telencephalon and diencephalon, the hindbrain into the metencephalon and myelencephalon. The tube below becomes the spinal cord."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/patterning_35.webp",
+      "slide": "slide 35",
+      "alt": "Five drawings of a developing head from 25 days to 100 days showing the neural tube bending and swelling into forebrain, midbrain and hindbrain, then the cerebral hemisphere, cerebellum, pons and medulla."
+     },
+     "title": "Shaping the tube over time",
+     "bullets": [
+      "The neural tube is polarized along the **anterior-posterior axis**: the forebrain looks and works differently from the hindbrain and spinal cord.",
+      "Patterning also happens along the dorsal-ventral axis. Patterning of the tube in general is set up by **gradients** of secreted proteins.",
+      "In the pictures the tube bends and swells over 25 to 100 days, into the forebrain, midbrain, hindbrain and spinal cord, and later the cerebral hemispheres, cerebellum, pons and medulla."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/crest_36a.webp",
+      "slide": "slide 36",
+      "alt": "Four stages of the neural plate folding into a neural tube, with the neural plate border, premigratory neural crest, delaminating neural crest cells and migratory neural crest cells labelled."
+     },
+     "title": "Where neural crest cells start",
+     "bullets": [
+      "**Neural crest cells** originate from a region of ectoderm that borders the neural plate (the neural plate border).",
+      "In the picture, the border folds up with the neural plate, neural crest cells separate from the top of the closed neural tube, and then they migrate away."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/crest_36b.webp",
+      "slide": "slide 36",
+      "alt": "A diagram of an embryo showing neural crest cells from the hindbrain, vagal crest and sacral crest going to the gut enteric ganglia, the sympathetic ganglia, the dorsal root ganglia and the adrenal gland."
+     },
+     "title": "What neural crest cells form",
+     "bullets": [
+      "Neural crest cells form the **glia of the PNS**, the dorsal root (sensory) ganglia, and the sympathetic and parasympathetic ganglia.",
+      "In the picture, crest cells from along the body axis supply the sympathetic ganglia, the dorsal root ganglia, the adrenal gland and the gut enteric ganglia."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/nervous/placodes_37.webp",
+      "slide": "slide 37",
+      "alt": "A series of drawings of the embryo from a flat disc to the neurula, with the pre-placodal domain and the placodes labelled with names such as olfactory, lens, otic, trigeminal, geniculate, petrosal and nodose."
+     },
+     "title": "Placodes and cranial nerves",
+     "bullets": [
+      "The sensory portions of the cranial nerves originate from **neurogenic cranial placodes**, which are regions of thickened ectoderm in the head.",
+      "Neural crest cells also make some contribution.",
+      "In the picture, a ring called the pre-placodal domain wraps the neural plate. Patches at the sides of the head are labelled olfactory, lens, otic, trigeminal (V), geniculate (VII), cochlear-vestibular (VIII), petrosal (IX) and nodose (X)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The forebrain, hindbrain and spinal cord are patterned differently along the head-to-tail axis by gradients of secreted proteins. That is why they look and work differently."
+    },
+    {
+     "type": "trick",
+     "text": "Three starting points: neural tube = CNS, neural crest = PNS glia and ganglia, placodes = sensory parts of cranial nerves."
+    },
+    {
+     "type": "trap",
+     "text": "Neural crest cells make PNS glia and ganglia, not the CNS (the neural tube does that). Slide 37 says the sensory portions of the cranial nerves come from placodes WITH some contribution from neural crest, so 'only neural crest' is wrong. Prosencephalon, mesencephalon and rhombencephalon are the forebrain, midbrain and hindbrain. Gut enteric ganglia, secondary vesicle names and the cranial nerve numbers appear only in the figures, not in the slide text."
+    }
+   ],
+   "table": {
+    "head": [
+     "Primary vesicle",
+     "Brain region",
+     "Later divides into (picture)"
+    ],
+    "rows": [
+     [
+      "Prosencephalon",
+      "Forebrain",
+      "Telencephalon (olfactory lobes, hippocampus, cerebrum) and diencephalon (epithalamus, thalamus, hypothalamus)"
+     ],
+     [
+      "Mesencephalon",
+      "Midbrain",
+      "Mesencephalon (midbrain)"
+     ],
+     [
+      "Rhombencephalon",
+      "Hindbrain",
+      "Metencephalon (cerebellum, pons) and myelencephalon (medulla)"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slide 34 (primary vesicles; the secondary vesicle names are read from the figure), slide 35 (patterning), slide 36 (neural crest cells; two figures), slide 37 (cranial nerve development figure).",
+    "Gut enteric ganglia, vagal and sacral crest are read from the slide 36 figure labels."
+   ],
+   "images": [
+    {
+     "src": "img/nervous/vesicles_34.webp",
+     "slide": "slide 34",
+     "alt": "Drawings of the primary vesicles (forebrain, midbrain, hindbrain) and the secondary vesicles they divide into, with the brain structures each one forms and the spinal cord below."
+    },
+    {
+     "src": "img/nervous/patterning_35.webp",
+     "slide": "slide 35",
+     "alt": "Five drawings of a developing head from 25 days to 100 days showing the neural tube bending and swelling into forebrain, midbrain and hindbrain, then the cerebral hemisphere, cerebellum, pons and medulla."
+    },
+    {
+     "src": "img/nervous/crest_36a.webp",
+     "slide": "slide 36",
+     "alt": "Four stages of the neural plate folding into a neural tube, with the neural plate border, premigratory neural crest, delaminating neural crest cells and migratory neural crest cells labelled."
+    },
+    {
+     "src": "img/nervous/crest_36b.webp",
+     "slide": "slide 36",
+     "alt": "A diagram of an embryo showing neural crest cells from the hindbrain, vagal crest and sacral crest going to the gut enteric ganglia, the sympathetic ganglia, the dorsal root ganglia and the adrenal gland."
+    },
+    {
+     "src": "img/nervous/placodes_37.webp",
+     "slide": "slide 37",
+     "alt": "A series of drawings of the embryo from a flat disc to the neurula, with the pre-placodal domain and the placodes labelled with names such as olfactory, lens, otic, trigeminal, geniculate, petrosal and nodose."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Cells of the nervous system at a glance",
+  "head": [
+   "Cell",
+   "Where it sits",
+   "Main job"
+  ],
+  "rows": [
+   [
+    "Sensory neuron",
+    "Soma in the PNS",
+    "Distal dendrites receive stimuli (pressure, light) and send the information to the CNS"
+   ],
+   [
+    "Interneuron",
+    "Soma in the CNS",
+    "Passes information between neurons: receives sensory neuron inputs, then stimulates motor neurons"
+   ],
+   [
+    "Motor neuron",
+    "Soma in the CNS, axon reaches into the PNS",
+    "Carries commands to muscles and glands"
+   ],
+   [
+    "Schwann cell",
+    "PNS",
+    "Myelinates axons; many cells wrap around one axon"
+   ],
+   [
+    "Oligodendrocyte",
+    "CNS",
+    "Myelinates axons; one cell may myelinate several axons"
+   ],
+   [
+    "Astrocyte",
+    "CNS",
+    "Helps form the blood-brain barrier and repair injury"
+   ],
+   [
+    "Microglia",
+    "Brain",
+    "Tissue-resident macrophage (immune cell); prunes synapses"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "ns-c1",
+   "front": "What do the CNS and the PNS include?",
+   "back": "The CNS includes the brain and spinal cord. The PNS includes all the nerves outside the CNS.",
+   "short": "CNS: brain, spinal cord. PNS: other nerves",
+   "src": "Slide 2"
+  },
+  {
+   "id": "ns-c2",
+   "front": "How do the sensory (afferent) and motor (efferent) divisions of the PNS differ?",
+   "back": "The sensory division carries information towards the CNS. The motor division carries information away from the CNS.",
+   "short": "Sensory in to CNS, motor out",
+   "src": "Slides 2, 10, 16"
+  },
+  {
+   "id": "ns-c3",
+   "front": "How is the motor division of the PNS divided, and what does each part innervate?",
+   "back": "It is divided into the somatic division, which innervates skeletal muscles, and the autonomic division, which innervates smooth muscle, cardiac muscle and glands.",
+   "short": "Somatic skeletal; autonomic smooth, cardiac, glands",
+   "src": "Slides 2, 10, 16"
+  },
+  {
+   "id": "ns-c4",
+   "front": "Name the four parts of a neuron and the job of each.",
+   "back": "Dendrites are the input sites, the soma is the integration site, the axon is the route of conduction, and the axon terminals are the output sites.",
+   "short": "Input, integration, conduction, output sites",
+   "src": "Slide 3"
+  },
+  {
+   "id": "ns-c5",
+   "front": "What is a cluster of neuron soma called in the CNS, and in the PNS?",
+   "back": "A cluster of neuron soma is called a nucleus in the CNS and a ganglion in the PNS.",
+   "short": "CNS nucleus, PNS ganglion",
+   "src": "Slide 3"
+  },
+  {
+   "id": "ns-c6",
+   "front": "Where is a sensory neuron's soma, and what do its distal dendrites do?",
+   "back": "Its soma is in the PNS. Its distal dendrites receive stimuli such as pressure or light and send the information to the CNS.",
+   "short": "Sensory: soma in PNS, receives stimuli",
+   "src": "Slide 4"
+  },
+  {
+   "id": "ns-c7",
+   "front": "Where is a motor neuron's soma, and where do its axons go?",
+   "back": "Its soma is in the CNS, but its axon extends into the PNS to reach muscles and glands.",
+   "short": "Motor: soma in CNS, axon to muscles",
+   "src": "Slide 4"
+  },
+  {
+   "id": "ns-c8",
+   "front": "What do interneurons do?",
+   "back": "Their soma are in the CNS. They transmit information between neurons: they receive sensory neuron inputs and then stimulate motor neurons.",
+   "short": "Link sensory neurons to motor neurons",
+   "src": "Slide 4"
+  },
+  {
+   "id": "ns-c9",
+   "front": "What are the three main regions of the brain, and what does each do?",
+   "back": "The forebrain integrates sensory information and determines complex behaviours. The midbrain coordinates muscles and responses to stimuli. The hindbrain coordinates automatic and vital functions.",
+   "short": "Forebrain integrates, midbrain coordinates, hindbrain automatic",
+   "src": "Slide 5"
+  },
+  {
+   "id": "ns-c10",
+   "front": "What are the four lobes of the cerebrum?",
+   "back": "The frontal, parietal, occipital and temporal lobes.",
+   "short": "Frontal, parietal, occipital, temporal",
+   "src": "Slide 6"
+  },
+  {
+   "id": "ns-c11",
+   "front": "What do the frontal and temporal lobes do?",
+   "back": "Frontal: initiates motor activity, responsible for speech, conscious thought. Temporal: interprets auditory information, comprehends language, perceptual judgment.",
+   "short": "Frontal: motor, speech. Temporal: hearing, language",
+   "src": "Slide 6 (figure labels)"
+  },
+  {
+   "id": "ns-c12",
+   "front": "What do the parietal and occipital lobes do?",
+   "back": "Parietal: interprets sensory information from the skin. Occipital: processes visual information.",
+   "short": "Parietal: skin senses. Occipital: vision",
+   "src": "Slide 6 (figure labels)"
+  },
+  {
+   "id": "ns-c13",
+   "front": "Why do the lips and fingers take up large areas of the brain's body maps?",
+   "back": "More sensitive or more precisely moving body parts occupy larger areas of the somatosensory and motor areas. These cortical maps can change (plasticity), even in adults.",
+   "short": "Sensitive, precise parts get bigger cortex area",
+   "src": "Slide 7"
+  },
+  {
+   "id": "ns-c14",
+   "front": "Name the three meninges from outermost to innermost.",
+   "back": "The dura mater, the arachnoid and the pia mater.",
+   "short": "Dura, arachnoid, pia from outside in",
+   "src": "Slide 8"
+  },
+  {
+   "id": "ns-c15",
+   "front": "Where is cerebrospinal fluid (CSF) found and made?",
+   "back": "CSF fills the subarachnoid space (between the arachnoid and the pia mater). It also circulates through, and is produced in, the ventricles, which are lined by the ependyma.",
+   "short": "CSF: subarachnoid space and ventricles",
+   "src": "Slides 8-9"
+  },
+  {
+   "id": "ns-c16",
+   "front": "What is a spinal reflex?",
+   "back": "A reflex handled mainly by the spinal cord and spinal nerves, with little involvement from the brain. Examples are the flexor and crossed extensor reflexes and the stretch reflex.",
+   "short": "Reflex handled by spinal cord, not brain",
+   "src": "Slide 11"
+  },
+  {
+   "id": "ns-c17",
+   "front": "What does the sympathetic division do, and what is its key neurotransmitter?",
+   "back": "It produces the fight-or-flight response: it increases heart rate and respiration, raises blood pressure, dilates pupils, and slows digestion and urine production, in many organs at once. Its key neurotransmitter is norepinephrine.",
+   "short": "Fight or flight; norepinephrine",
+   "src": "Slide 12"
+  },
+  {
+   "id": "ns-c18",
+   "front": "What does the parasympathetic division do, and what is its key neurotransmitter?",
+   "back": "It relaxes the body (rest and digest): it reduces heart rate and respiration, increases digestion, and permits urination and defecation. Its key neurotransmitter is acetylcholine.",
+   "short": "Rest and digest; acetylcholine",
+   "src": "Slide 12"
+  },
+  {
+   "id": "ns-c19",
+   "front": "What is a nerve, structurally?",
+   "back": "Many axons bundled together (fasciculated) inside a protective connective tissue sheath, along with supporting glial cells.",
+   "short": "Bundle of axons in a sheath",
+   "src": "Slide 14"
+  },
+  {
+   "id": "ns-c20",
+   "front": "How many cranial and spinal nerve pairs do humans have, and how do they connect?",
+   "back": "There are 12 cranial nerve pairs, which connect directly to the brain. There are 31 spinal nerve pairs, which connect to the spinal cord by dorsal roots (sensory) and ventral roots (motor).",
+   "short": "12 cranial, 31 spinal; dorsal roots sensory",
+   "src": "Slide 14"
+  },
+  {
+   "id": "ns-c21",
+   "front": "What is the resting potential of a neuron?",
+   "back": "It is -70 mV: the inside of the neuron is negative relative to the outside.",
+   "short": "-70 mV, inside negative",
+   "src": "Slides 17-18"
+  },
+  {
+   "id": "ns-c22",
+   "front": "What creates and maintains the resting potential?",
+   "back": "The Na⁺/K⁺ pumps (one positive charge is removed per cycle) and the leakage of K⁺ through passive leaky channels. There are many more leaky K⁺ channels than leaky Na⁺ channels.",
+   "short": "Na⁺/K⁺ pump plus K⁺ leak channels",
+   "src": "Slide 18"
+  },
+  {
+   "id": "ns-c23",
+   "front": "What are graded potentials?",
+   "back": "Slight changes to the membrane potential caused by incoming impulses, which can differ in type and strength. Their stimulation is summative on a target.",
+   "short": "Small summing changes in membrane potential",
+   "src": "Slide 19"
+  },
+  {
+   "id": "ns-c24",
+   "front": "What is an action potential?",
+   "back": "A sudden, temporary reversal of the voltage across the neuron's membrane, a chemical-electrical signal from a neuron to a target. It occurs if a voltage threshold is reached.",
+   "short": "Sudden reversal of membrane voltage at threshold",
+   "src": "Slide 17"
+  },
+  {
+   "id": "ns-c25",
+   "front": "What happens during depolarization?",
+   "back": "Voltage-gated Na⁺ channels open when summed graded potentials pass the threshold. Na⁺ rapidly diffuses into the cell, and the membrane potential moves from negative to closer to zero.",
+   "short": "Na⁺ channels open, Na⁺ rushes in",
+   "src": "Slide 21"
+  },
+  {
+   "id": "ns-c26",
+   "front": "What happens during repolarization?",
+   "back": "Voltage-gated Na⁺ channels close and voltage-gated K⁺ channels open. K⁺ rapidly diffuses out of the cell, so the membrane potential shifts back to negative.",
+   "short": "Na⁺ channels close, K⁺ rushes out",
+   "src": "Slide 22"
+  },
+  {
+   "id": "ns-c27",
+   "front": "What happens during recovery?",
+   "back": "Voltage-gated K⁺ channels close, and the normal activity of the Na⁺/K⁺ pump restores the resting membrane potential. The axon is then ready for another action potential.",
+   "short": "K⁺ channels close; pump restores rest",
+   "src": "Slide 23"
+  },
+  {
+   "id": "ns-c28",
+   "front": "What are the absolute and relative refractory periods?",
+   "back": "Absolute: an axon cannot generate another action potential while one is underway. Relative: once the axon has repolarized (or hyperpolarized), another can be generated, but it is temporarily more difficult than from rest.",
+   "short": "Absolute: impossible. Relative: harder",
+   "src": "Slide 24"
+  },
+  {
+   "id": "ns-c29",
+   "front": "How does a signal cross a chemical synapse?",
+   "back": "An action potential at the axon terminal opens Ca²⁺ channels. Ca²⁺ makes the presynaptic cell release neurotransmitter, which diffuses across the synaptic cleft and activates chemically-gated Na⁺ channels in the postsynaptic cell, producing a graded potential.",
+   "short": "Ca²⁺ in, transmitter released, Na⁺ channels open",
+   "src": "Slide 25"
+  },
+  {
+   "id": "ns-c30",
+   "front": "What do excitatory neurotransmitters do, and which are examples?",
+   "back": "They cause depolarization of the postsynaptic cell. Examples are glutamate and acetylcholine.",
+   "short": "Depolarize: glutamate, acetylcholine",
+   "src": "Slide 26"
+  },
+  {
+   "id": "ns-c31",
+   "front": "What do inhibitory neurotransmitters do, and which are examples?",
+   "back": "They cause hyperpolarization of the postsynaptic cell, so the threshold to fire an action potential is harder to reach. Examples are GABA, serotonin and endorphins.",
+   "short": "Hyperpolarize: GABA, serotonin, endorphins",
+   "src": "Slide 26"
+  },
+  {
+   "id": "ns-c32",
+   "front": "What does myelin do?",
+   "back": "Myelin is a fatty sheath that insulates the axon. It prevents some leaky diffusion of Na⁺ and K⁺ (saving ATP), speeds up impulses by saltatory conduction (about 50X faster than an unmyelinated axon), and aids axon regeneration in the PNS.",
+   "short": "Insulates axon; faster, saves energy",
+   "src": "Slide 27"
+  },
+  {
+   "id": "ns-c33",
+   "front": "Which glial cells myelinate axons in the PNS and in the CNS?",
+   "back": "Schwann cells myelinate axons in the PNS (many Schwann cells wrap around one axon). Oligodendrocytes myelinate axons in the CNS (one oligodendrocyte may myelinate multiple axons).",
+   "short": "Schwann: PNS. Oligodendrocyte: CNS",
+   "src": "Slide 28"
+  },
+  {
+   "id": "ns-c34",
+   "front": "What do astrocytes do?",
+   "back": "Astrocytes help form the blood-brain barrier and are involved in injury repair in the CNS.",
+   "short": "Blood-brain barrier and CNS repair",
+   "src": "Slide 28"
+  },
+  {
+   "id": "ns-c35",
+   "front": "What are microglia?",
+   "back": "The tissue-resident macrophages (immune cells) of the brain. They are also vital for synapse formation and for eliminating (pruning) synapses.",
+   "short": "Brain immune cells that prune synapses",
+   "src": "Slide 28"
+  },
+  {
+   "id": "ns-c36",
+   "front": "From which tissue does the CNS form, and how?",
+   "back": "The CNS forms from the ectoderm. The underlying mesoderm (notochord) induces ectodermal cells to form the neural plate, which invaginates into a neural tube that becomes the brain and spinal cord. Human neurulation starts by about 21 days and is complete by about 28 days.",
+   "short": "Ectoderm neural plate becomes neural tube",
+   "src": "Slides 30-31"
+  },
+  {
+   "id": "ns-c37",
+   "front": "What do neural crest cells form?",
+   "back": "They originate from ectoderm that borders the neural plate. They form the glia of the PNS, the dorsal root (sensory) ganglia, and the sympathetic and parasympathetic ganglia.",
+   "short": "PNS glia and ganglia",
+   "src": "Slide 36"
+  },
+  {
+   "id": "ns-c38",
+   "front": "What are neural tube closure defects (NTDs)?",
+   "back": "Failures of the neural tube to close at one of its five zipping points. They occur in about 1 in 1000 live births, vitamin B9 (folate) deficiency is a leading cause, and the earlier closure fails, the more severe the disorder.",
+   "short": "Failed tube closure; folate; 1 in 1000",
+   "src": "Slide 32"
+  },
+  {
+   "id": "ns-c39",
+   "front": "What is spina bifida?",
+   "back": "A failure of the posterior neuropore to close, so the meninges or spinal cord bulge out between the vertebrae. It occurs in about 1 in 3000 births and is usually treated by surgery after birth.",
+   "short": "Posterior neuropore fails; cord bulges out",
+   "src": "Slide 33"
+  },
+  {
+   "id": "ns-c40",
+   "front": "What do the three primary brain vesicles become?",
+   "back": "The prosencephalon becomes the forebrain, the mesencephalon the midbrain and the rhombencephalon the hindbrain. The neural tube is patterned along the anterior-posterior and dorsal-ventral axes by gradients of secreted proteins.",
+   "short": "Pros-, mes-, rhombencephalon = fore-, mid-, hindbrain",
+   "src": "Slides 34-35"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "ns-1",
+   "q": "A person steps on a sharp object and feels pain in the foot. Which part of the nervous system carries the information about the pain towards the spinal cord and brain?",
+   "options": [
+    "The sensory (afferent) division of the PNS",
+    "The motor (efferent) division of the PNS",
+    "The somatic motor division",
+    "The sympathetic division",
+    "The interneurons of the CNS"
+   ],
+   "answer": 0,
+   "why": "Information moving towards the CNS travels in the sensory (afferent) division of the PNS. The motor (efferent) division carries information away from the CNS.",
+   "source": "Slides 2, 10, 16"
+  },
+  {
+   "id": "ns-2",
+   "q": "Which of the following statements about neuron types are correct?\nI. Motor neurons have their soma in the CNS, but their axons extend into the PNS.\nII. Sensory neurons have their soma in the PNS.\nIII. Interneurons have their soma in the PNS and carry commands to muscles.",
+   "options": [
+    "I only",
+    "II only",
+    "III only",
+    "I and II only",
+    "I, II and III"
+   ],
+   "answer": 3,
+   "why": "Motor neuron soma are in the CNS and their axons reach into the PNS (I is true). Sensory neuron soma are in the PNS (II is true). Interneuron soma are in the CNS and they pass information between neurons, so III is false.",
+   "source": "Slide 4"
+  },
+  {
+   "id": "ns-3",
+   "q": "Researchers find a cluster of neuron soma (cell bodies) inside the spinal cord. What is such a cluster called?",
+   "options": [
+    "A ganglion",
+    "A nucleus",
+    "A nerve",
+    "A nerve plexus",
+    "A ventricle"
+   ],
+   "answer": 1,
+   "why": "A cluster of neuron soma in the CNS is called a nucleus, while a cluster of soma in the PNS is called a ganglion. A nerve is a bundle of axons, and a plexus is a branching network of nerves.",
+   "source": "Slides 3, 14"
+  },
+  {
+   "id": "ns-4",
+   "q": "In the picture, which pair of structures is labelled as part of the hindbrain?",
+   "options": [
+    "Cerebrum and pons",
+    "Thalamus and cerebellum",
+    "Pons and cerebellum",
+    "Corpus callosum and medulla oblongata",
+    "Cerebrum and thalamus"
+   ],
+   "answer": 2,
+   "why": "The hindbrain label groups the pons, the cerebellum and the medulla oblongata. The cerebrum, corpus callosum and thalamus are grouped with the forebrain.",
+   "source": "Slide 5",
+   "img": {
+    "src": "img/nervous/brain_5.webp",
+    "alt": "Two views of the brain with the forebrain (cerebrum, corpus callosum, thalamus), the midbrain and the hindbrain (pons, cerebellum, medulla oblongata) labelled."
+   }
+  },
+  {
+   "id": "ns-5",
+   "q": "A person can see and feel normally, but has trouble interpreting sounds and comprehending language. Which part of the brain is most likely affected?",
+   "options": [
+    "The occipital lobe",
+    "The parietal lobe",
+    "The frontal lobe",
+    "The hindbrain",
+    "The temporal lobe"
+   ],
+   "answer": 4,
+   "why": "The temporal lobe interprets auditory information and comprehends language. The occipital lobe handles vision and the parietal lobe handles sensory information from the skin, and both work normally here. The frontal lobe is responsible for speech, which is different from comprehension.",
+   "source": "Slide 6"
+  },
+  {
+   "id": "ns-6",
+   "q": "On the brain's maps of the body, the lips and fingers take up much more cortex than the trunk. What does this tell you?",
+   "options": [
+    "More sensitive or more precisely moving body parts get larger areas of the sensory and motor cortex",
+    "The lips and fingers are physically much larger than the trunk",
+    "Every body part gets an equal share of the cortex",
+    "Only the sensory area has been mapped, not the motor area",
+    "The maps are fixed at birth and can never change"
+   ],
+   "answer": 0,
+   "why": "Map size follows sensitivity or precision of movement, not body size. Both the sensory and motor areas are mapped, and the maps show plasticity: they can change even in adults.",
+   "source": "Slide 7"
+  },
+  {
+   "id": "ns-7",
+   "q": "Which of the following statements about the protection of the CNS are correct?\nI. From outermost to innermost, the meninges are the dura mater, arachnoid and pia mater.\nII. Cerebrospinal fluid (CSF) fills the space between the dura mater and the arachnoid.\nIII. CSF circulates through, and is produced in, cavities of the brain and spinal cord called ventricles.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "I and III only",
+    "I, II and III"
+   ],
+   "answer": 3,
+   "why": "I is true: the layer order is dura, arachnoid, pia. II is false: CSF is in the subarachnoid space, which lies between the arachnoid and the pia mater. III is true: CSF circulates through, and is made in, the ventricles.",
+   "source": "Slides 8-9"
+  },
+  {
+   "id": "ns-8",
+   "q": "Which of the following is NOT an effect of the sympathetic division?",
+   "options": [
+    "Increased heart rate",
+    "Increased digestion",
+    "Dilated pupils",
+    "Raised blood pressure",
+    "Slowed digestion"
+   ],
+   "answer": 1,
+   "why": "The sympathetic division (fight or flight) increases heart rate and respiration, raises blood pressure, dilates the pupils, and slows digestion and urine production. Increased digestion is a parasympathetic (rest and digest) effect.",
+   "source": "Slide 12"
+  },
+  {
+   "id": "ns-9",
+   "q": "The sympathetic and parasympathetic divisions both send neurons to the heart. How do the two divisions relate to each other?",
+   "options": [
+    "They innervate different organs, so they never share a target",
+    "Both raise heart rate, so their effects add together",
+    "They innervate the same targets but act in opposition",
+    "Both are part of the somatic division",
+    "Together they produce the fight-or-flight response"
+   ],
+   "answer": 2,
+   "why": "The two subdivisions of the autonomic division innervate the same targets but act in opposition. Here the sympathetic division increases heart rate and the parasympathetic division reduces it.",
+   "source": "Slides 10, 12, 13"
+  },
+  {
+   "id": "ns-10",
+   "q": "In the pictured reflex, a painful stimulus on the right foot makes the right leg withdraw and the left leg extend. Which neurons inside the spinal cord stimulate the motor neurons on both sides of the body?",
+   "options": [
+    "Sensory neurons",
+    "Motor neurons",
+    "Parasympathetic neurons",
+    "Oligodendrocytes",
+    "Interneurons"
+   ],
+   "answer": 4,
+   "why": "In the picture, the interneurons (shown in gray) stimulate specific motor neurons on both sides of the body and also send signals to the brain. The sensory neurons only carry the signal in to the spinal cord.",
+   "source": "Slide 11",
+   "img": {
+    "src": "img/nervous/reflex_11.webp",
+    "alt": "A drawing of a spinal reflex: a painful stimulus to the right foot, sensory neurons to the spinal cord, interneurons and motor neurons on both sides, the right leg withdrawing and the left leg extending."
+   }
+  },
+  {
+   "id": "ns-11",
+   "q": "Structurally, what is a nerve?",
+   "options": [
+    "Many axons bundled together in a connective tissue sheath, along with supporting glial cells",
+    "A cluster of neuron soma in the PNS",
+    "A layer of connective tissue that protects the brain",
+    "A single neuron with its dendrites, soma, axon and terminals",
+    "A branching network of nerves"
+   ],
+   "answer": 0,
+   "why": "A nerve is many axons bundled (fasciculated) in a connective tissue sheath with supporting glia. A cluster of soma in the PNS is a ganglion, the meninges protect the CNS, and a plexus is a branching network of nerves.",
+   "source": "Slide 14"
+  },
+  {
+   "id": "ns-12",
+   "q": "Na⁺ also leaks into a resting neuron, yet the inside stays negative at about -70 mV. Which explanation fits best?",
+   "options": [
+    "Voltage-gated Na⁺ channels stay open at rest and let Na⁺ flow back out",
+    "The Na⁺/K⁺ pump moves Na⁺ into the cell and K⁺ out of it",
+    "Myelin blocks all ion movement across the membrane at rest",
+    "There are many more leaky K⁺ channels than leaky Na⁺ channels, and the pump removes one net positive charge per cycle",
+    "Ca²⁺ channels hold the inside of the cell negative"
+   ],
+   "answer": 3,
+   "why": "K⁺ leaks out through many passive channels while Na⁺ leaks in through far fewer, and each pump cycle removes one net positive charge from the cell. Together these keep the inside negative.",
+   "source": "Slide 18"
+  },
+  {
+   "id": "ns-13",
+   "q": "In the picture, each cycle of the Na⁺/K⁺ pump moves 3 Na⁺ ions out of the cell and 2 K⁺ ions into the cell. What is the net change in positive charge inside the cell for each cycle?",
+   "options": [
+    "The cell gains 1 positive charge",
+    "The cell loses 1 positive charge",
+    "The cell loses 2 positive charges",
+    "The cell loses 3 positive charges",
+    "The cell loses 5 positive charges"
+   ],
+   "answer": 1,
+   "why": "3 positive charges leave and 2 enter, so the net change is a loss of 1 positive charge per cycle. This matches the idea that one positive charge is removed from the cell for each pump cycle.",
+   "source": "Slide 18 (3 Na⁺ and 2 K⁺ read from the figure labels)",
+   "img": {
+    "src": "img/nervous/resting_18.webp",
+    "alt": "A cutaway of a membrane with sodium and potassium ions, the sodium-potassium pump moving 3 Na+ out and 2 K+ in, and two leak channels, labelled resting potential -70 mV with the inside negative."
+   }
+  },
+  {
+   "id": "ns-14",
+   "q": "Three small depolarizing graded potentials arrive at a neuron in quick succession. None is strong enough by itself to reach threshold, but together they bring the membrane to threshold. What happens next?",
+   "options": [
+    "The three graded potentials cancel each other out",
+    "Voltage-gated K⁺ channels open first and K⁺ leaves the cell",
+    "Nothing, because graded potentials cannot add up",
+    "The Na⁺/K⁺ pump reverses the membrane potential",
+    "Voltage-gated Na⁺ channels open and an action potential begins"
+   ],
+   "answer": 4,
+   "why": "Graded potentials are summative. When their sum passes the threshold, voltage-gated Na⁺ channels open and Na⁺ rushes in, which starts depolarization.",
+   "source": "Slides 19, 21"
+  },
+  {
+   "id": "ns-15",
+   "q": "Which phase of the action potential does the picture show?",
+   "options": [
+    "Resting state",
+    "Depolarization",
+    "Repolarization",
+    "Recovery",
+    "A hyperpolarizing graded potential"
+   ],
+   "answer": 2,
+   "why": "The sodium channel is labelled inactivated, K⁺ flows out through the open voltage-gated K⁺ channel, and the highlighted part of the graph is the falling side of the spike. That is repolarization.",
+   "source": "Slide 22",
+   "img": {
+    "src": "img/nervous/ap_22.webp",
+    "alt": "The sodium channel labelled inactivated and K+ leaving through the open voltage-gated K+ channel, above a graph with the falling part of the spike highlighted."
+   }
+  },
+  {
+   "id": "ns-16",
+   "q": "Which statement about an action potential is NOT correct?",
+   "options": [
+    "Depolarization happens because Na⁺ rapidly diffuses into the cell",
+    "Repolarization happens because K⁺ rapidly diffuses out of the cell",
+    "The Na⁺/K⁺ pump helps restore the resting membrane potential during recovery",
+    "An action potential occurs only if a voltage threshold is reached",
+    "During repolarization the voltage-gated Na⁺ channels open and the voltage-gated K⁺ channels close"
+   ],
+   "answer": 4,
+   "why": "It is the other way round: during repolarization the voltage-gated Na⁺ channels close and the voltage-gated K⁺ channels open.",
+   "source": "Slides 17, 21-23"
+  },
+  {
+   "id": "ns-17",
+   "q": "Which statement about the refractory periods in the graph is correct?",
+   "options": [
+    "During the absolute refractory period no new action potential can be generated",
+    "During the relative refractory period no new action potential can be generated",
+    "During the absolute refractory period a new action potential is easier to generate than at rest",
+    "The relative refractory period happens before the action potential starts",
+    "Both periods happen at the resting potential before threshold is reached"
+   ],
+   "answer": 0,
+   "why": "While an action potential is underway the axon cannot generate another one (absolute). After the axon has repolarized, another can be generated but it is temporarily harder than from rest (relative).",
+   "source": "Slide 24",
+   "img": {
+    "src": "img/nervous/refractory_24.webp",
+    "alt": "A graph of one action potential with the absolute refractory period marked over the spike and the relative refractory period marked after it, with the threshold line shown."
+   }
+  },
+  {
+   "id": "ns-18",
+   "q": "In the picture, which ion entering the axon bulb makes vesicles release neurotransmitter?",
+   "options": [
+    "Na⁺",
+    "K⁺",
+    "Cl⁻",
+    "Ca²⁺",
+    "Mg²⁺"
+   ],
+   "answer": 3,
+   "why": "When the action potential arrives, Ca²⁺ diffuses into the axon bulb and causes vesicles containing neurotransmitter to fuse with the cell membrane and release it. Na⁺ enters the postsynaptic cell later, after the neurotransmitter binds.",
+   "source": "Slide 25",
+   "img": {
+    "src": "img/nervous/synapse_25.webp",
+    "alt": "A presynaptic neuron and axon bulb with Ca2+ entering, vesicles of neurotransmitter releasing into the synaptic cleft, and neurotransmitter opening sodium channels on the postsynaptic membrane, in four numbered steps."
+   }
+  },
+  {
+   "id": "ns-19",
+   "q": "A toxin blocks the Ca²⁺ channels in an axon terminal, but an action potential still reaches the terminal. What is the most likely result?",
+   "options": [
+    "Neurotransmitter is released but cannot cross the synaptic cleft",
+    "No neurotransmitter is released, so the postsynaptic cell receives no signal from this neuron",
+    "The postsynaptic cell is depolarized more strongly",
+    "The postsynaptic chemically-gated Na⁺ channels open on their own",
+    "The presynaptic cell fires a second action potential"
+   ],
+   "answer": 1,
+   "why": "Ca²⁺ entry is what causes the presynaptic cell to release neurotransmitter. Without release, nothing reaches the chemically-gated Na⁺ channels, so no graded potential is generated.",
+   "source": "Slide 25"
+  },
+  {
+   "id": "ns-20",
+   "q": "A drug increases the release of the inhibitory neurotransmitter GABA onto a neuron. What is the effect on the postsynaptic cell?",
+   "options": [
+    "It depolarizes, so the threshold is reached more easily",
+    "It opens voltage-gated Na⁺ channels along its axon",
+    "It hyperpolarizes, so the threshold to fire an action potential is harder to reach",
+    "It stays in the cleft for a long time, so the signal never ends",
+    "It has no effect, because only excitatory neurotransmitters change the postsynaptic cell"
+   ],
+   "answer": 2,
+   "why": "Inhibitory neurotransmitters such as GABA cause hyperpolarization of the postsynaptic cell, which makes the threshold harder to reach. Released neurotransmitter is also quickly removed from the cleft.",
+   "source": "Slide 26"
+  },
+  {
+   "id": "ns-21",
+   "q": "Why do action potentials travel much faster along a myelinated axon?",
+   "options": [
+    "Myelin adds extra Na⁺/K⁺ pumps along the axon",
+    "Myelin makes the axon membrane leakier, so ions move faster",
+    "Myelin carries neurotransmitter along the axon to the next neuron",
+    "Myelin converts the electrical signal into a chemical signal",
+    "The action potential jumps between gaps in the insulating myelin (nodes of Ranvier)"
+   ],
+   "answer": 4,
+   "why": "Myelin insulates the axon, so action potentials jump between the gaps called nodes of Ranvier (saltatory conduction). Myelin also prevents some leaky diffusion of Na⁺ and K⁺, which saves energy.",
+   "source": "Slide 27"
+  },
+  {
+   "id": "ns-22",
+   "q": "A signal crosses an unmyelinated axon in 100 ms. Myelin makes conduction about 50 times faster. About how long would the same signal take on a myelinated axon of the same length?",
+   "options": [
+    "2 ms",
+    "5 ms",
+    "50 ms",
+    "100 ms",
+    "5000 ms"
+   ],
+   "answer": 0,
+   "why": "Fifty times faster means the time is divided by 50: 100 ms / 50 = 2 ms. Multiplying by 50 would give 5000 ms, which would be a much slower signal.",
+   "source": "Slide 27 (50X); the 100 ms is a made-up number (outside source)"
+  },
+  {
+   "id": "ns-23",
+   "q": "Which statement about the myelinating glial cells is correct?",
+   "options": [
+    "Oligodendrocytes myelinate axons in the PNS",
+    "Many individual Schwann cells wrap around a single axon in the PNS",
+    "A single Schwann cell myelinates multiple axons in the CNS",
+    "Astrocytes are the axon-myelinating glia of the CNS",
+    "Microglia myelinate axons in the PNS"
+   ],
+   "answer": 1,
+   "why": "Schwann cells myelinate PNS axons, with many Schwann cells along one axon. Oligodendrocytes myelinate CNS axons, and one oligodendrocyte may myelinate several axons.",
+   "source": "Slide 28"
+  },
+  {
+   "id": "ns-24",
+   "q": "Which glial cell is the tissue-resident macrophage (immune cell) of the brain and is also vital for synapse pruning?",
+   "options": [
+    "Astrocyte",
+    "Oligodendrocyte",
+    "Schwann cell",
+    "Microglia",
+    "Interneuron"
+   ],
+   "answer": 3,
+   "why": "Microglia are the immune cells of the brain, and they are vital for forming and pruning synapses. Astrocytes help form the blood-brain barrier and repair injury, and the other glia myelinate axons.",
+   "source": "Slide 28"
+  },
+  {
+   "id": "ns-25",
+   "q": "From which embryonic tissue does the CNS form, and what induces it?",
+   "options": [
+    "Endoderm, induced by the ectoderm",
+    "Mesoderm, induced by the neural crest",
+    "Ectoderm, induced by the endoderm",
+    "Neural crest, induced by the neural tube",
+    "Ectoderm, induced by the underlying mesoderm (notochord)"
+   ],
+   "answer": 4,
+   "why": "The CNS forms from ectoderm. Ectodermal cells are induced by the underlying mesoderm (the notochord) to become the neural plate, which folds into the neural tube.",
+   "source": "Slide 30"
+  },
+  {
+   "id": "ns-26",
+   "q": "Which of the following come from neural crest cells?\nI. The brain and spinal cord\nII. The glia of the PNS\nIII. The dorsal root (sensory) ganglia",
+   "options": [
+    "I and II only",
+    "I and III only",
+    "II and III only",
+    "all of the above",
+    "none of the above"
+   ],
+   "answer": 2,
+   "why": "Neural crest cells form the glia of the PNS, the dorsal root (sensory) ganglia and the sympathetic and parasympathetic ganglia. The brain and spinal cord come from the neural tube.",
+   "source": "Slides 29-30, 36"
+  },
+  {
+   "id": "ns-27",
+   "q": "Which statement about neural tube closure defects (NTDs) is correct?",
+   "options": [
+    "A deficiency of folate (vitamin B9) is a leading cause",
+    "They occur in about 1 in 10 live births",
+    "The later closure fails, the more severe the disorder",
+    "The neural tube closes from a single point along its length",
+    "They affect only the PNS"
+   ],
+   "answer": 0,
+   "why": "Folate deficiency is a leading cause. NTDs occur in about 1 in 1000 live births, the tube closes from five points, and the earlier closure fails, the more severe the disorder. The neural tube becomes the brain and spinal cord, so NTDs affect the CNS.",
+   "source": "Slide 32"
+  },
+  {
+   "id": "ns-28",
+   "q": "Neural tube closure defects occur in about 1 in 1000 live births. About how many NTD cases would you expect among 25,000 live births?",
+   "options": [
+    "2.5",
+    "8",
+    "25",
+    "250",
+    "2500"
+   ],
+   "answer": 2,
+   "why": "25,000 / 1000 = 25. (Using the spina bifida rate of about 1 in 3000 would give about 8, but this question is about all NTDs.)",
+   "source": "Slides 32-33 (25,000 is a made-up number, outside source)"
+  },
+  {
+   "id": "ns-29",
+   "q": "After the neural tube closes, it swells with fluid. Which pairing of a primary vesicle with the brain region it gives rise to is correct?",
+   "options": [
+    "Prosencephalon: hindbrain",
+    "Rhombencephalon: hindbrain",
+    "Mesencephalon: forebrain",
+    "Prosencephalon: midbrain",
+    "Rhombencephalon: midbrain"
+   ],
+   "answer": 1,
+   "why": "The prosencephalon gives rise to the forebrain, the mesencephalon to the midbrain and the rhombencephalon to the hindbrain.",
+   "source": "Slide 34"
+  },
+  {
+   "id": "ns-30",
+   "q": "Where do the sensory portions of the cranial nerves originate?",
+   "options": [
+    "Only from the neural tube",
+    "Only from neural crest cells",
+    "From the mesoderm around the notochord",
+    "From neurogenic cranial placodes, with some contribution from neural crest cells",
+    "From the dorsal roots of the spinal cord"
+   ],
+   "answer": 3,
+   "why": "The sensory portions of the cranial nerves originate from neurogenic cranial placodes (regions of thickened ectoderm in the head), with some contribution from neural crest cells.",
+   "source": "Slide 37"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Phases of an action potential",
+   "prompt": "Put the events in the order they happen along an axon, from the resting state to recovery.",
+   "why": "At rest the voltage-gated channels are closed. When summed graded potentials pass threshold, Na⁺ channels open and Na⁺ rushes in (depolarization). Then Na⁺ channels close and K⁺ channels open, so K⁺ rushes out (repolarization). Finally K⁺ channels close and the pump restores the resting potential (recovery).",
+   "topLabel": "Last: recovery",
+   "bottomLabel": "First: resting axon",
+   "layers": [
+    {
+     "name": "Resting: voltage-gated channels closed at -70 mV",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Summed graded potentials pass the threshold",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Depolarization: Na⁺ channels open and Na⁺ rushes in",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Repolarization: Na⁺ channels close, K⁺ channels open and K⁺ rushes out",
+     "color": "#b45309"
+    },
+    {
+     "name": "Recovery: K⁺ channels close and the Na⁺/K⁺ pump restores rest",
+     "color": "#15803d"
+    }
+   ]
+  },
+  {
+   "title": "Crossing a chemical synapse",
+   "prompt": "Put the steps in the order they happen when a signal passes from one neuron to the next.",
+   "why": "The action potential has to arrive first. It opens Ca²⁺ channels, Ca²⁺ triggers release of neurotransmitter, and the neurotransmitter diffuses across the synaptic cleft. It then activates chemically-gated Na⁺ channels on the postsynaptic cell, and Na⁺ flowing in produces the graded potential.",
+   "topLabel": "Last: graded potential",
+   "bottomLabel": "First: action potential arrives",
+   "layers": [
+    {
+     "name": "An action potential reaches the axon terminal",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Ca²⁺ channels open and Ca²⁺ enters the terminal",
+     "color": "#c2410c"
+    },
+    {
+     "name": "The presynaptic cell releases neurotransmitter",
+     "color": "#b45309"
+    },
+    {
+     "name": "Neurotransmitter diffuses across the synaptic cleft",
+     "color": "#15803d"
+    },
+    {
+     "name": "It activates chemically-gated Na⁺ channels on the postsynaptic cell",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Na⁺ flows in and produces a graded potential",
+     "color": "#1d4ed8"
+    }
+   ]
+  },
+  {
+   "title": "A spinal reflex",
+   "prompt": "Put the steps of the pictured withdrawal reflex in order, from the painful stimulus to the leg movements.",
+   "why": "The stimulus is detected first, sensory neurons carry the signal to the spinal cord, and interneurons pass it to motor neurons on both sides (and to the brain). The motor neurons then cause the flexor reflex that withdraws the right leg and the crossed extensor reflex that extends the left leg.",
+   "topLabel": "Last: left leg extends",
+   "bottomLabel": "First: painful stimulus",
+   "layers": [
+    {
+     "name": "A painful stimulus is applied to the right foot",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Sensory neurons carry the signal to the spinal cord",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Interneurons stimulate motor neurons on both sides and signal the brain",
+     "color": "#b45309"
+    },
+    {
+     "name": "Flexor reflex withdraws the right leg",
+     "color": "#15803d"
+    },
+    {
+     "name": "Crossed extensor reflex extends the left leg",
+     "color": "#1d4ed8"
+    }
+   ]
+  },
+  {
+   "title": "Making a brain from ectoderm",
+   "prompt": "Put the stages of early nervous system development in order.",
+   "why": "The ectoderm becomes the neural plate when the underlying mesoderm (notochord) induces it. The plate folds inward and forms a neural tube, which closes by zipping up from five points. After closure the tube swells into fluid-filled vesicles, and these give rise to the forebrain, midbrain and hindbrain.",
+   "topLabel": "Last: brain regions",
+   "bottomLabel": "First: ectoderm",
+   "layers": [
+    {
+     "name": "Ectoderm cells become the neural plate (induced by the notochord)",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "The neural plate invaginates (folds inward)",
+     "color": "#c2410c"
+    },
+    {
+     "name": "A neural tube forms and closes by zipping up from five points",
+     "color": "#b45309"
+    },
+    {
+     "name": "The closed tube swells with fluid into vesicles",
+     "color": "#15803d"
+    },
+    {
+     "name": "The vesicles give rise to the forebrain, midbrain and hindbrain",
+     "color": "#1d4ed8"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "CNS or PNS?",
+   "prompt": "Sort each part or cell into the CNS or the PNS.",
+   "buckets": [
+    "CNS",
+    "PNS"
+   ],
+   "items": [
+    {
+     "text": "Brain",
+     "b": 0
+    },
+    {
+     "text": "Spinal cord",
+     "b": 0
+    },
+    {
+     "text": "Oligodendrocytes",
+     "b": 0
+    },
+    {
+     "text": "Astrocytes",
+     "b": 0
+    },
+    {
+     "text": "Soma of motor neurons",
+     "b": 0
+    },
+    {
+     "text": "Soma of interneurons",
+     "b": 0
+    },
+    {
+     "text": "A cluster of soma called a nucleus",
+     "b": 0
+    },
+    {
+     "text": "Cranial nerves",
+     "b": 1
+    },
+    {
+     "text": "Spinal nerves",
+     "b": 1
+    },
+    {
+     "text": "A cluster of soma called a ganglion",
+     "b": 1
+    },
+    {
+     "text": "Schwann cells",
+     "b": 1
+    },
+    {
+     "text": "Soma of sensory neurons",
+     "b": 1
+    }
+   ],
+   "why": "The CNS is the brain and spinal cord, and the CNS contains the oligodendrocytes, astrocytes, and the soma of motor neurons and interneurons (clusters there are called nuclei). The PNS is all the nerves outside the CNS, including cranial and spinal nerves, Schwann cells, and the soma of sensory neurons (clusters there are called ganglia)."
+  },
+  {
+   "title": "Sympathetic or parasympathetic?",
+   "prompt": "Sort each effect or feature into the sympathetic or the parasympathetic division.",
+   "buckets": [
+    "Sympathetic",
+    "Parasympathetic"
+   ],
+   "items": [
+    {
+     "text": "Fight-or-flight response",
+     "b": 0
+    },
+    {
+     "text": "Norepinephrine is the key neurotransmitter",
+     "b": 0
+    },
+    {
+     "text": "Increases heart rate and respiration",
+     "b": 0
+    },
+    {
+     "text": "Raises blood pressure",
+     "b": 0
+    },
+    {
+     "text": "Dilates the pupils",
+     "b": 0
+    },
+    {
+     "text": "Slows digestion and urine production",
+     "b": 0
+    },
+    {
+     "text": "Rest-and-digest response",
+     "b": 1
+    },
+    {
+     "text": "Acetylcholine is the key neurotransmitter",
+     "b": 1
+    },
+    {
+     "text": "Reduces heart rate and respiration",
+     "b": 1
+    },
+    {
+     "text": "Increases digestion",
+     "b": 1
+    },
+    {
+     "text": "Permits urination and defecation",
+     "b": 1
+    },
+    {
+     "text": "Constricts the pupil",
+     "b": 1
+    }
+   ],
+   "why": "The sympathetic division prepares the body for action (norepinephrine, faster heart and breathing, higher blood pressure, wider pupils, slower digestion). The parasympathetic division relaxes the body (acetylcholine, slower heart and breathing, more digestion, urination and defecation permitted, smaller pupils). Both act on the same targets in opposite ways."
+  },
+  {
+   "title": "Who does the job?",
+   "prompt": "Sort each description into neurons, myelinating glia or other glia.",
+   "buckets": [
+    "Neurons",
+    "Myelinating glia",
+    "Other glia"
+   ],
+   "items": [
+    {
+     "text": "Generates and conducts action potentials",
+     "b": 0
+    },
+    {
+     "text": "Passes information between neurons",
+     "b": 0
+    },
+    {
+     "text": "Carries commands to muscles and glands",
+     "b": 0
+    },
+    {
+     "text": "Sends sensory stimuli to the CNS",
+     "b": 0
+    },
+    {
+     "text": "Schwann cell",
+     "b": 1
+    },
+    {
+     "text": "Oligodendrocyte",
+     "b": 1
+    },
+    {
+     "text": "Many cells wrap around a single axon in the PNS",
+     "b": 1
+    },
+    {
+     "text": "One cell may myelinate several axons in the CNS",
+     "b": 1
+    },
+    {
+     "text": "Helps form the blood-brain barrier",
+     "b": 2
+    },
+    {
+     "text": "Involved in injury repair in the CNS",
+     "b": 2
+    },
+    {
+     "text": "Tissue-resident macrophage (immune cell) of the brain",
+     "b": 2
+    },
+    {
+     "text": "Vital for pruning synapses",
+     "b": 2
+    }
+   ],
+   "why": "Neurons generate and conduct impulses (sensory neurons, interneurons and motor neurons). Schwann cells (PNS) and oligodendrocytes (CNS) are the myelinating glia. Astrocytes (blood-brain barrier, injury repair) and microglia (immune cells, pruning) are the other glia covered here."
+  }
+ ]
+}

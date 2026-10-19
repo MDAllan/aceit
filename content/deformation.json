@@ -1,0 +1,2305 @@
+{
+ "id": "deformation",
+ "title": "Crustal Deformation and Mountain Building",
+ "chapter": "Oct 19",
+ "icon": "🗻",
+ "color": "#8c5e3c",
+ "slideFile": "2026 Oct. 19 Ch 9 Crustal Deformation v1.pdf",
+ "intro": "Rocks bend, break and slip when forces act on them. These notes cover how geologists describe that deformation (stress, strain, brittle and ductile behaviour), the structures it makes (joints, faults and folds), and how it builds mountains and basins.",
+ "sections": [
+  {
+   "id": "basics",
+   "title": "Deformation, stress and strain",
+   "slides": "3-8 (56-57 are review questions)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/basics_3.webp",
+      "slide": "slide 3",
+      "alt": "Cliff of flat limestone, sandstone and shale layers beside a road, with a close-up circle showing round, equal-sized sand grains."
+     },
+     "title": "Rock that is not deformed",
+     "bullets": [
+      "These flat layers of limestone, sandstone and shale are labelled **undeformed**: they are not tilted, bent or shifted.",
+      "The close-up shows sand grains that are **equant**, meaning about as wide as they are long, so they look round from every side.",
+      "Keep this picture as the starting point. Deformed rock is compared with it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/basics_4.webp",
+      "slide": "slide 4",
+      "alt": "Mountain side with folded dark and light layers cut by a fault, and a close-up circle showing stretched, oval grains."
+     },
+     "title": "Rock that is deformed",
+     "bullets": [
+      "In this mountain side the layers are folded and cut by a fault, and the grains in the quartzite are **stretched** into ovals.",
+      "Stretched grains are a sign that the rock has been strained.",
+      "The labels also name a cleavage, a fold and a fault. You will meet all three later on."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/types_5.webp",
+      "slide": "slide 5",
+      "alt": "Three block drawings with matching photos: a block shifted along a fault, a flat block turned to a tilt, and flat layers bent into a fold."
+     },
+     "title": "Three kinds of deformation",
+     "bullets": [
+      "**Displacement** means a block of rock moves from one place to another, for example when it slips along a fault.",
+      "**Rotation** means the rock turns, so layers laid down flat end up tilted.",
+      "**Distortion** means the rock changes shape, so flat layers of even thickness end up bent and warped."
+     ]
+    },
+    {
+     "title": "Stress and strain",
+     "bullets": [
+      "**Stress** is force per unit area: how hard something pushes or pulls on each unit of the rock's surface.",
+      "**Strain** is the change in the rock caused by stress. It is a proportion of the original, for example the fraction of volume change.",
+      "Stress is the cause and strain is the result. Both words are used for rocks and for other materials."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/stress_7.webp",
+      "slide": "slide 7",
+      "alt": "Cartoon of a boot crushing one soda can and a boot standing on a board over many cans that hold the weight."
+     },
+     "title": "Same force, different stress",
+     "bullets": [
+      "Stress depends on area as well as force: stress = force divided by area.",
+      "A boot pressing on the top of one can puts the force on a small area. The stress is large and the can crushes.",
+      "The same force spread over many cans acts on a large area. The stress on each can is small, so the cans hold your weight."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/strain_8.webp",
+      "slide": "slide 8",
+      "alt": "Five drawings of a fossil shell and a card deck: unstrained, stretched, shortened and sheared, with a circle turning into an oval."
+     },
+     "title": "Strain: how a shape changes",
+     "bullets": [
+      "A fossil shell shows strain clearly. Unstrained, it has its normal shape. **Stretching (elongation)** pulls it long and thin, and **shortening (contraction)** squeezes it narrow.",
+      "**Shear** slants the shell sideways, like pushing the top of a deck of cards over the bottom.",
+      "The circle drawn on the card deck turns into an oval after shearing. Round grains in real rock turn into ovals in the same way."
+     ]
+    }
+   ],
+   "bullets": [
+    "Stress is force per unit area. Strain is the resulting change, as a proportion of the original."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does rock deform at all? Rock keeps its shape while the stress is smaller than its internal strength. When the stress becomes larger than that strength, the rock is forced to change: it shifts, turns, bends or breaks. Spreading a force over a larger area lowers the stress, which is why many cans can hold a weight that one can cannot."
+    },
+    {
+     "type": "trick",
+     "text": "Stress is the push (the cause). Strain is the change you can see (the result). Move, turn, warp: displacement moves a block, rotation turns it and distortion warps its shape."
+    },
+    {
+     "type": "trap",
+     "text": "Strain wording: the deck defines strain as a 'fraction of volume change' and the later review question says 'deformation expressed as a proportional amount of original body geometry'. The textbook (9.1) defines strain as the physical change in response to stress, shown as a change in rock volume and/or rock shape, and also as fracturing. So volume change is only one part of strain: the strain pictures (stretching, shortening, shear) mostly change shape. The slide wording is used in the student text. For the review question, strain is the proportional change from the original, and it is NOT 'force per unit area' (that is stress)."
+    },
+    {
+     "type": "trap",
+     "text": "Do not mix up the lists. Displacement, rotation and distortion describe WHAT HAPPENED to the rock. Compression, tension and shear (next section) describe the STRESS that caused it."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 3-4 (undeformed vs deformed photos), slide 5 (three types: a/b/c photo captions), slide 6 (stress = force/unit area; strain = fraction of volume change), slide 7 (can example captions), slide 8 (strain examples).",
+    "Slides 56 and 57 are review questions on stress and strain (used in quiz def-1 and def-2).",
+    "Textbook 9.1 Stress and Strain: stress is force per unit area; strain is volume and/or shape change and fracturing; deformation occurs when stress exceeds rock strength.",
+    "The shape-vs-volume comment and the 'round grains turn to ovals' link to slide 4 are read from the pictures. Slide 3 also labels a joint (covered in the joints section)."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/basics_3.webp",
+     "slide": "slide 3",
+     "alt": "Cliff of flat limestone, sandstone and shale layers beside a road, with a close-up circle showing round, equal-sized sand grains."
+    },
+    {
+     "src": "img/deformation/basics_4.webp",
+     "slide": "slide 4",
+     "alt": "Mountain side with folded dark and light layers cut by a fault, and a close-up circle showing stretched, oval grains."
+    },
+    {
+     "src": "img/deformation/types_5.webp",
+     "slide": "slide 5",
+     "alt": "Three block drawings with matching photos: a block shifted along a fault, a flat block turned to a tilt, and flat layers bent into a fold."
+    },
+    {
+     "src": "img/deformation/stress_7.webp",
+     "slide": "slide 7",
+     "alt": "Cartoon of a boot crushing one soda can and a boot standing on a board over many cans that hold the weight."
+    },
+    {
+     "src": "img/deformation/strain_8.webp",
+     "slide": "slide 8",
+     "alt": "Five drawings of a fossil shell and a card deck: unstrained, stretched, shortened and sheared, with a circle turning into an oval."
+    }
+   ]
+  },
+  {
+   "id": "stress",
+   "title": "Kinds of stress",
+   "slides": "9-12",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/pressure_9.webp",
+      "slide": "slide 9",
+      "alt": "A cube squeezed by arrows from every side next to a diver underwater who feels pressure."
+     },
+     "title": "Pressure: squeezed from all sides",
+     "bullets": [
+      "**Pressure** pushes on a body equally from every direction, like the water around a diver.",
+      "Rock buried deep in the crust is squeezed the same way by the weight of the rock above and around it.",
+      "In the cube drawing, arrows point in from the top, the bottom and both sides."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/compress_10.webp",
+      "slide": "slide 10",
+      "alt": "A block pushed from both sides becoming shorter and taller, next to a mountain belt formed by horizontal compression."
+     },
+     "title": "Compression: pushed together",
+     "bullets": [
+      "**Compression** pushes from opposite sides toward the middle. The block gets shorter in the direction of the push and taller across it.",
+      "Horizontal compression drives collision: the crust is shortened and piled up into mountains."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/tension_11.webp",
+      "slide": "slide 11",
+      "alt": "A block pulled apart and a stretched landscape with a fault scarp, a range and a basin."
+     },
+     "title": "Tension: pulled apart",
+     "bullets": [
+      "**Tension** pulls in opposite directions. The block gets longer in the direction of the pull and thinner.",
+      "Horizontal tension drives crustal rifting. The stretched crust breaks along faults into high ranges and low basins, and faults can leave a scarp where they reach the surface."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/shear_12.webp",
+      "slide": "slide 12",
+      "alt": "A block sheared sideways and two ground blocks moving in opposite directions past each other."
+     },
+     "title": "Shear: pushed sideways",
+     "bullets": [
+      "**Shear** pushes one part of a body one way and the part next to it the opposite way.",
+      "Horizontal shear stress moves blocks sideways past each other."
+     ]
+    }
+   ],
+   "bullets": [
+    "Compression shortens and thickens, tension stretches and thins, shear moves blocks sideways, pressure squeezes from all sides."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the direction of the push matter? The same rock shortens and thickens if it is squeezed (compression), stretches and thins if it is pulled (tension), and tears sideways if two parts are pushed past each other (shear). That is why each stress goes with its own structures: folds and thrust faults with compression, normal faults with tension, and strike-slip faults with shear."
+    },
+    {
+     "type": "trick",
+     "text": "Compression = Crunch together. Tension = Tear apart. Shear = Shift sideways. Pressure is the odd one out: it squeezes from every direction at once."
+    },
+    {
+     "type": "trap",
+     "text": "The deck shows four kinds of stress (pressure, compression, tension, shear). The textbook (9.1) lists three types of stress: tensional, compressional and shear, and treats pressure as a separate factor (confining pressure, 9.2). If a question asks for 'the three types of stress', the answer is compression, tension and shear. Also keep pressure (all directions) apart from compression (two opposite directions)."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 9-12 (pictures with captions: 'A diver underwater feels pressure', 'Horizontal compression drives collision', 'Horizontal tension drives crustal rifting', 'Horizontal shear stress moved these blocks sideways').",
+    "Textbook 9.1: three stress types and the table linking tension to divergent boundaries, stretching and thinning and normal faults, compression to convergent boundaries, shortening and thickening and reverse faults, shear to transform boundaries, tearing and strike-slip faults. Textbook 9.2: confining pressure.",
+    "Deep rock is squeezed by the weight above it: textbook 2.2.1 and 9.4 say deeper crust has higher pressure."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/pressure_9.webp",
+     "slide": "slide 9",
+     "alt": "A cube squeezed by arrows from every side next to a diver underwater who feels pressure."
+    },
+    {
+     "src": "img/deformation/compress_10.webp",
+     "slide": "slide 10",
+     "alt": "A block pushed from both sides becoming shorter and taller, next to a mountain belt formed by horizontal compression."
+    },
+    {
+     "src": "img/deformation/tension_11.webp",
+     "slide": "slide 11",
+     "alt": "A block pulled apart and a stretched landscape with a fault scarp, a range and a basin."
+    },
+    {
+     "src": "img/deformation/shear_12.webp",
+     "slide": "slide 12",
+     "alt": "A block sheared sideways and two ground blocks moving in opposite directions past each other."
+    }
+   ]
+  },
+  {
+   "id": "brittle",
+   "title": "Brittle and ductile behaviour",
+   "slides": "13-18 (59 is a review question)",
+   "steps": [
+    {
+     "title": "Two behaviours",
+     "bullets": [
+      "A **brittle** material breaks into pieces when it is stressed, like glass or pottery.",
+      "A **ductile** material bends and flows into a new shape without breaking apart, like soft plastic or putty.",
+      "Geologists use these two words for rocks and for other materials."
+     ]
+    },
+    {
+     "title": "Four things decide which one",
+     "bullets": [
+      "Which behaviour occurs is controlled by temperature, pressure, deformation rate and the composition of the rock.",
+      "Hot rock, high pressure (deep burial) and slow deformation push rock toward ductile behaviour. Cold, shallow, quickly stressed rock tends to be brittle.",
+      "Composition matters because some rocks are stronger than others: shale is weak and granite is strong, and stronger rock tends to break rather than flow."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/brittle_15.webp",
+      "slide": "slide 15",
+      "alt": "Before and after drawing of a plate pressed by a force that cracks into pieces."
+     },
+     "title": "Brittle: a plate cracks",
+     "bullets": [
+      "A plate pressed by a force cracks, and the cracks separate it into pieces. That is brittle behaviour.",
+      "In rock, brittle behaviour makes fractures: joints and faults."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/ductile_17.webp",
+      "slide": "slide 17",
+      "alt": "Before and after drawing of a heavy blue block pressing dough, which squashes but stays in one piece."
+     },
+     "title": "Ductile: dough flows",
+     "bullets": [
+      "Dough pressed by a heavy weight squashes into a new shape but stays a single, coherent piece. That is ductile behaviour.",
+      "In rock, ductile behaviour bends layers into folds and smears them out without breaking them apart."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/rocks_16_18.webp",
+      "slide": "slides 16 and 18",
+      "alt": "Two rock photos: on the left layered rock broken into angular blocks, on the right banded rock with stretched layers."
+     },
+     "title": "Brittle rock and ductile rock",
+     "bullets": [
+      "Left: layered rock that has broken into angular blocks and slabs. Breaking like this is brittle deformation.",
+      "Right: banded rock whose layers have been stretched and smeared without breaking into pieces. Flowing like this is ductile deformation."
+     ]
+    }
+   ],
+   "bullets": [
+    "Brittle rock breaks (joints and faults). Ductile rock bends and flows (folds)."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are deep rocks ductile and shallow rocks brittle? Deeper rock is hotter and under higher pressure, and heat makes materials soft, like heated glass that can be bent. Near the surface the rock is cold and rigid, so it snaps, especially when the force comes quickly. Slow forces give rock time to flow, just as a piece of wood bends if you push it slowly."
+    },
+    {
+     "type": "trick",
+     "text": "Brittle breaks like a plate. Ductile flows like dough. Hot and slow gives ductile; cold and fast gives brittle."
+    },
+    {
+     "type": "trap",
+     "text": "Easy swaps: a faster deformation rate makes rock MORE brittle (not more ductile), while higher temperature makes it MORE ductile. Faulting (breaking) shows the brittle regime and folding (bending) shows ductile behaviour. The textbook (9.2) adds a third behaviour, elastic, which is reversible (a rubber band snaps back); the deck only compares brittle with ductile. The directions of the four controls come from the textbook table (temperature, strain rate, rock strength), because the deck only lists the four controls."
+    }
+   ],
+   "table": {
+    "title": "What pushes rock toward each behaviour",
+    "head": [
+     "Control",
+     "More brittle",
+     "More ductile"
+    ],
+    "rows": [
+     [
+      "Temperature",
+      "Cold",
+      "Hot"
+     ],
+     [
+      "Pressure",
+      "Low (near the surface)",
+      "High (deep in the crust)"
+     ],
+     [
+      "Deformation rate",
+      "Fast",
+      "Slow"
+     ],
+     [
+      "Rock composition",
+      "Stronger rock (such as granite)",
+      "Weaker rock (such as shale)"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Slides 13-14 (brittle vs ductile; four controls), slide 15 (plate cracks), slide 17 (dough stays one piece), slides 16 and 18 (rock photos without captions; read as a brittle rock and a ductile rock because they sit between the plate and dough pictures).",
+    "Textbook 2.2.1 Crust: surface crust brittle, deeper crust ductile, brittle breaks 'especially when applied quickly'. Textbook 9.2: yield point; temperature, strain rate, rock strength, confining pressure, pore pressure; shale low strength, granite high strength; heated glass bends.",
+    "Slide 59 is a review question on faulting and the brittle regime (quiz def-4). The picture of the dough shows a book labelled Geology."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/brittle_15.webp",
+     "slide": "slide 15",
+     "alt": "Before and after drawing of a plate pressed by a force that cracks into pieces."
+    },
+    {
+     "src": "img/deformation/ductile_17.webp",
+     "slide": "slide 17",
+     "alt": "Before and after drawing of a heavy blue block pressing dough, which squashes but stays in one piece."
+    },
+    {
+     "src": "img/deformation/rocks_16_18.webp",
+     "slide": "slides 16 and 18",
+     "alt": "Two rock photos: on the left layered rock broken into angular blocks, on the right banded rock with stretched layers."
+    }
+   ]
+  },
+  {
+   "id": "joints",
+   "title": "Joints and veins",
+   "slides": "19-22 (22 is a placeholder)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/joints_19_20.webp",
+      "slide": "slides 19 and 20",
+      "alt": "Two photos: a landscape of tall red rock fins separated by parallel cracks, and a cliff split by vertical cracks into columns."
+     },
+     "title": "Joints: cracks with no slip",
+     "bullets": [
+      "A **joint** is a crack in rock where the two sides have not moved past each other. There is no offset.",
+      "Joints are brittle fractures. Cooling, a drop in pressure (depressurizing) or folding can all make them.",
+      "Joints often come in parallel sets. In the photos they cut the rock into tall slabs, fins and columns."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/vein_21.webp",
+      "slide": "slide 21",
+      "alt": "Grey layered rock cut by thin white veins, with the bedding marked by a dashed yellow line and a red knife for scale."
+     },
+     "title": "Veins and bedding",
+     "bullets": [
+      "A **vein** is a crack that has been filled with a different mineral. Here the veins look like thin white lines.",
+      "**Bedding** is the original layering of a sedimentary rock. The dashed yellow line marks one bedding surface.",
+      "The white veins are steep and the bedding is nearly flat, so these cracks opened across the layers."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are joints not faults? Both are cracks in brittle rock, but in a joint the two sides stay in place. When the sides slip past each other the crack becomes a fault. Joints can form simply because rock cools, loses pressure or is bent."
+    },
+    {
+     "type": "trick",
+     "text": "Joints just crack. Faults slip."
+    },
+    {
+     "type": "trap",
+     "text": "Joint vs fault: both are brittle fractures. The difference is movement. A fault has displacement along it (layers are offset); a joint does not. The photos on slides 19-20 and the vein photo have no captions in the deck except the labels Vein and Bedding; the joint explanation comes from the textbook (9.5). Slide 22 is a Google Earth placeholder ('Venezuelan joints') with no content."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 19-20: photos without captions, read as examples of joints (the next placeholder slide 22 is titled 'Venezuelan joints'). Slide 21: labels Vein and Bedding. Slide 3 also labels a joint.",
+    "Textbook 9.5: a joint or fracture is a plane of brittle deformation created by movement that is not offset or sheared; joints can result from cooling, depressurizing or folding; joint systems may be regional.",
+    "The definition of a vein as a mineral-filled crack is general geology (outside source); the textbook only uses 'veins' loosely for filled cracks."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/joints_19_20.webp",
+     "slide": "slides 19 and 20",
+     "alt": "Two photos: a landscape of tall red rock fins separated by parallel cracks, and a cliff split by vertical cracks into columns."
+    },
+    {
+     "src": "img/deformation/vein_21.webp",
+     "slide": "slide 21",
+     "alt": "Grey layered rock cut by thin white veins, with the bedding marked by a dashed yellow line and a red knife for scale."
+    }
+   ]
+  },
+  {
+   "id": "faults",
+   "title": "Faults: rock that has slipped",
+   "slides": "23-25",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/faults_dipslip_23.webp",
+      "slide": "slide 23 (panel a)",
+      "alt": "Block diagrams of a reverse fault, a thrust fault and a normal fault, with the hanging wall and footwall labelled."
+     },
+     "title": "Dip-slip faults",
+     "bullets": [
+      "A **fault** is a fracture where the rock on one side has slipped past the rock on the other side. In dip-slip faults the slip is up or down the tilt (dip) of the fault.",
+      "The **hanging wall** is the block above the fault plane. The **footwall** is the block below it.",
+      "Hanging wall down: **normal** fault. Hanging wall up: **reverse** fault, called a thrust fault when the dip is gentle."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/faults_sideways_23.webp",
+      "slide": "slide 23 (panels b and c)",
+      "alt": "Block diagrams of left-lateral and right-lateral strike-slip faults and two oblique-slip faults."
+     },
+     "title": "Sideways and mixed slip",
+     "bullets": [
+      "In **strike-slip** faults the blocks move sideways past each other. Left-lateral and right-lateral name the way the far block moves, as seen from your side of the fault.",
+      "**Oblique-slip** faults mix up-and-down and sideways motion, for example reverse plus left-lateral, or normal plus right-lateral."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/faultoffset_24.webp",
+      "slide": "slide 24",
+      "alt": "Photo of a cliff with a red layer shifted along a fault, next to a sketch labelling the marker bed, drag fold, fault zone and displacement."
+     },
+     "title": "Reading a fault in a cliff",
+     "bullets": [
+      "The red layer is a **marker bed**, a layer that was once continuous. It is now broken and shifted, and the amount of shift is the displacement.",
+      "Layers bent next to the fault form a **drag fold**. The orange arrows show the right-hand block moving down, so the hanging wall dropped and this is a normal fault.",
+      "The joints in the sketch are nearby cracks that show no shift."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/sanandreas_25.webp",
+      "slide": "slide 25",
+      "alt": "Aerial photo of the San Andreas fault with a creek bed shifted sideways, next to a sketch showing points A and B and the two plates."
+     },
+     "title": "A fault seen from the air",
+     "bullets": [
+      "Along the San Andreas fault the creek bed is cut and shifted sideways. Point A was once next to point B.",
+      "The North American Plate and the Pacific Plate move past each other here, so this is a strike-slip fault. It is right-lateral.",
+      "A shifted stream channel is a useful marker, because it shows how far the blocks have moved."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do different stresses make different faults? Tension pulls the crust apart, so the hanging wall can slip down: a normal fault. Compression pushes the crust together, so the hanging wall is pushed up: a reverse or thrust fault. Shear pushes blocks past each other sideways: a strike-slip fault."
+    },
+    {
+     "type": "trick",
+     "text": "Hanging wall and footwall: picture a mine tunnel along the fault. The miner hangs a lantern on the wall above (hanging wall) and stands on the wall below (footwall). For left or right lateral: stand on one side and look across the fault. If the far side moved to your left it is left-lateral, if it moved to your right it is right-lateral."
+    },
+    {
+     "type": "trap",
+     "text": "Normal vs reverse: normal = hanging wall DOWN, reverse = hanging wall UP. A thrust fault is a reverse fault with a gentle dip: the deck labels reverse 'steep dip' and thrust 'gentle dip', while the textbook (9.5.2) sets the thrust limit at a dip below 45 degrees. Strike-slip (sideways only) is not the same as oblique-slip (sideways plus up or down). The normal-fault reading of the cliff sketch on slide 24 is taken from its arrows; the deck itself gives no fault name there."
+    }
+   ],
+   "table": {
+    "title": "Fault types at a glance",
+    "head": [
+     "Fault",
+     "Motion",
+     "Typical stress",
+     "Typical setting"
+    ],
+    "rows": [
+     [
+      "Normal",
+      "Hanging wall moves down",
+      "Tension",
+      "Rifting, Basin and Range"
+     ],
+     [
+      "Reverse",
+      "Hanging wall moves up (steep dip)",
+      "Compression",
+      "Collision and convergent boundaries"
+     ],
+     [
+      "Thrust",
+      "Hanging wall moves up (gentle dip)",
+      "Compression",
+      "Collision and convergent boundaries"
+     ],
+     [
+      "Strike-slip",
+      "Blocks move sideways (left or right lateral)",
+      "Shear",
+      "Transform boundaries such as the San Andreas fault"
+     ],
+     [
+      "Oblique-slip",
+      "Sideways plus up or down",
+      "A combination",
+      "Mixes the motions above"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Slide 23: dip-slip faults (reverse steep dip, thrust gentle dip, normal; hanging wall up or down; hanging wall and footwall labels), strike-slip faults (left-lateral, right-lateral), oblique-slip faults (reverse plus left-lateral, normal plus right-lateral). Slide 24: marker bed, drag fold, displacement, fault zone, joints, 2 m. Slide 25: San Andreas fault trace, North American Plate, Pacific Plate, 'Point A was once next to Point B'.",
+    "Textbook 9.5 Faults: hanging wall and footwall (mine lantern memory aid), normal faults from tension, reverse and thrust faults from compression, strike-slip faults with sinistral and dextral motion, San Andreas as a dextral (right-lateral) fault. Textbook 9.1 table: tension and normal, compression and reverse, shear and strike-slip.",
+    "The stress for oblique-slip faults is not given; the table row marks it as a combination."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/faults_dipslip_23.webp",
+     "slide": "slide 23 (panel a)",
+     "alt": "Block diagrams of a reverse fault, a thrust fault and a normal fault, with the hanging wall and footwall labelled."
+    },
+    {
+     "src": "img/deformation/faults_sideways_23.webp",
+     "slide": "slide 23 (panels b and c)",
+     "alt": "Block diagrams of left-lateral and right-lateral strike-slip faults and two oblique-slip faults."
+    },
+    {
+     "src": "img/deformation/faultoffset_24.webp",
+     "slide": "slide 24",
+     "alt": "Photo of a cliff with a red layer shifted along a fault, next to a sketch labelling the marker bed, drag fold, fault zone and displacement."
+    },
+    {
+     "src": "img/deformation/sanandreas_25.webp",
+     "slide": "slide 25",
+     "alt": "Aerial photo of the San Andreas fault with a creek bed shifted sideways, next to a sketch showing points A and B and the two plates."
+    }
+   ]
+  },
+  {
+   "id": "faultclues",
+   "title": "Clues left by faults",
+   "slides": "26-28",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/scarp_26.webp",
+      "slide": "slide 26",
+      "alt": "A pale bare slope between bushes with a small person sitting on it, labelled as a scarp from slip on a normal fault in Nevada."
+     },
+     "title": "A fault scarp",
+     "bullets": [
+      "A **scarp** is a small cliff or step in the ground, made where slip on a fault breaks through to the surface.",
+      "This scarp in Nevada formed from slip on a normal fault. A small person on the slope gives the scale.",
+      "Normal faults form where the crust is pulled apart (tension), so scarps like this are common in stretched regions."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/breccia_27.webp",
+      "slide": "slide 27",
+      "alt": "Close-up of rock made of angular broken pieces in a dark matrix, with a yellow pencil for scale."
+     },
+     "title": "Fault breccia",
+     "bullets": [
+      "**Fault breccia** is rock made of angular, broken pieces of different sizes.",
+      "Brittle slip grinds and shatters the rock along a fault, so the pieces have sharp corners. A yellow pencil gives the scale."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/striation_28.webp",
+      "slide": "slide 28",
+      "alt": "A hand pointing at parallel grooves on a rock surface, with a line marking the striation orientation."
+     },
+     "title": "Striations on a fault surface",
+     "bullets": [
+      "**Striations** are parallel grooves or scratches on a fault surface. Friction between the blocks cuts them as the blocks rub past each other.",
+      "The white line marks the striation orientation, the direction in which the grooves run. The blocks moved along that direction."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do faults leave these clues? Brittle rock breaks, and then the two sides rub together under a great force. The break offsets the ground (a scarp), shatters rock into angular pieces (breccia) and scratches the surface (striations)."
+    },
+    {
+     "type": "trick",
+     "text": "Scarp = a Step in the ground. Breccia = Broken bits. Striations = Stripes (scratches) made by rubbing."
+    },
+    {
+     "type": "trap",
+     "text": "The textbook (9.5) calls a polished, grooved fault surface 'slickensides'; the deck labels the grooves 'striations'. Striations also appear in other topics (on mineral faces and on rocks scratched by glaciers), but here they mean scratches on a fault surface. Slides 27 and 28 have only the label 'Striation orientation'; the name fault breccia and the grinding explanation are not written in the deck (outside source)."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 26 caption: 'A scarp due to slip on a normal fault in Nevada.' Slide 27: photo with a pencil, no caption (identified as fault breccia from the lecture topic list). Slide 28: label 'Striation orientation'.",
+    "Textbook 9.5: fault scarp is the offset of the surface where the fault breaks through; slickensides are polished, grooved surfaces created by friction; normal faults form from tension.",
+    "How breccia forms (grinding of brittle rock) and that striations show the slip direction are general geology (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/scarp_26.webp",
+     "slide": "slide 26",
+     "alt": "A pale bare slope between bushes with a small person sitting on it, labelled as a scarp from slip on a normal fault in Nevada."
+    },
+    {
+     "src": "img/deformation/breccia_27.webp",
+     "slide": "slide 27",
+     "alt": "Close-up of rock made of angular broken pieces in a dark matrix, with a yellow pencil for scale."
+    },
+    {
+     "src": "img/deformation/striation_28.webp",
+     "slide": "slide 28",
+     "alt": "A hand pointing at parallel grooves on a rock surface, with a line marking the striation orientation."
+    }
+   ]
+  },
+  {
+   "id": "folds",
+   "title": "Folds: bent rock layers",
+   "slides": "29-32 (60 is a review question)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/folds_29.webp",
+      "slide": "slide 29",
+      "alt": "Six block diagrams of folds: an arch, a trough, a step, a plunging fold, a dome and a basin, with limb, hinge and axial plane labelled."
+     },
+     "title": "Six pictures of folds",
+     "bullets": [
+      "A **fold** is a bend in rock layers made by ductile deformation, most often by compression deep in the crust.",
+      "The sides of a fold are the **limbs**. The line of greatest bend is the **hinge**.",
+      "The **axial plane** is the plane that splits the fold into two halves. Panels (a) to (f) show an arch, a trough, a step, a fold whose hinge plunges, a dome and a basin."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/cliff_30.webp",
+      "slide": "slide 30",
+      "alt": "Photo of folded layers in a cliff next to a sketch labelling an anticline, a syncline and the trace of the axial plane."
+     },
+     "title": "Folds in a real cliff",
+     "bullets": [
+      "In the sketch the arch is an **anticline** and the trough beside it is a **syncline**.",
+      "The red line marks the trace of the axial plane, which is its line on the cliff face.",
+      "Younger sediment lies on top of the folded layers."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/foldform_31_32.webp",
+      "slide": "slides 31 and 32",
+      "alt": "Two before and after drawings: a flat layer squeezed into waves by compression, and a wavy layer curled into a tight fold by opposite shearing motions."
+     },
+     "title": "Two ways to make a fold",
+     "bullets": [
+      "**Compression** along a flat layer shortens it, and the layer buckles into waves.",
+      "**Shear** can fold a layer too. Opposite pushes along the layer bend a gently wavy band into a tight, curled fold. The points X and Y show how far it has been dragged."
+     ]
+    }
+   ],
+   "bullets": [
+    "Folds are bends in layers made by ductile deformation, usually from compression at depth."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do folds need ductile behaviour? To bend without breaking, rock has to flow slowly. That happens deep in the crust, where it is hot and under high pressure. Near the surface the same push would crack the rock and make faults instead."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a folded sheet of paper. The flat sides are the limbs, the crease is the hinge, and the imaginary plane through the crease that cuts the fold in half is the axial plane."
+    },
+    {
+     "type": "trap",
+     "text": "Review slide 60 asks 'Folds are the result of what kind of deformation?' with options displacement, rotation, ductile, distortion and 'all of the above'. This is ambiguous. The textbook (9.4) says folds form by ductile deformation, slide 5 shows a bent layer as distortion, and the tilted limbs of a fold have rotated, so several answers are defensible and 'all of the above' could be argued. Ductile is a behaviour while displacement, rotation and distortion are types of deformation, so the options mix two lists. The quiz rewrites it as 'Which behaviour of the rock does a fold show?', with the single answer ductile. If you meet the original wording, ask which answer the instructor wants."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 29: six block diagrams (a) to (f) with Axial plane, Hinge, Limb, Basement and Plunging hinge labels; panels read as (a) anticline, (b) syncline, (c) monocline, (d) plunging fold, (e) dome, (f) basin (panel names are not written on the slide; they match the five categories in the textbook). Slide 30: sketch labels Younger sediment, Anticline, Syncline, Trace of the axial plane. Slide 31: before and after compression. Slide 32: before and after shear with points X and Y.",
+    "Textbook 9.4 Folds: folds are bent layers made by ductile deformation, most commonly by compression at depth; axial plane, hinge line, limbs; five categories (anticline, syncline, monocline, dome, basin).",
+    "Slide 60 review question (reworded in quiz def-5). The paper-fold analogy is outside source."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/folds_29.webp",
+     "slide": "slide 29",
+     "alt": "Six block diagrams of folds: an arch, a trough, a step, a plunging fold, a dome and a basin, with limb, hinge and axial plane labelled."
+    },
+    {
+     "src": "img/deformation/cliff_30.webp",
+     "slide": "slide 30",
+     "alt": "Photo of folded layers in a cliff next to a sketch labelling an anticline, a syncline and the trace of the axial plane."
+    },
+    {
+     "src": "img/deformation/foldform_31_32.webp",
+     "slide": "slides 31 and 32",
+     "alt": "Two before and after drawings: a flat layer squeezed into waves by compression, and a wavy layer curled into a tight fold by opposite shearing motions."
+    }
+   ]
+  },
+  {
+   "id": "foldparts",
+   "title": "Anticlines, synclines and plunging folds",
+   "slides": "33-37",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/syncline_33.webp",
+      "slide": "slide 33",
+      "alt": "Block diagram of a trough-shaped fold with the limb, hinge and axial plane labelled."
+     },
+     "title": "Syncline: a trough",
+     "bullets": [
+      "A **syncline** is a trough-shaped (U-shaped) fold. The beds dip (tilt) down and in toward the centre line of the fold.",
+      "In a syncline the youngest rock is in the middle and the older rock is on the outside.",
+      "The labels show the limb, the hinge (red dashed line) and the axial plane (blue sheet)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/anticline_35.webp",
+      "slide": "slide 35",
+      "alt": "Block diagram of an arch-shaped fold with the limb, hinge and axial plane labelled."
+     },
+     "title": "Anticline: an arch",
+     "bullets": [
+      "An **anticline** is an arch-shaped (A-shaped) fold. The beds dip down and away from the centre line.",
+      "In an anticline the oldest rock is in the middle, with younger beds on the outside.",
+      "Oil can travel up the limbs of an anticline and collect at the high point, so oil geologists look for them."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/roadcuts_34_36.webp",
+      "slide": "slides 34 and 36",
+      "alt": "Two road-cut photos showing tilted and curved rock layers with cars on the road for scale."
+     },
+     "title": "Folds in road cuts",
+     "bullets": [
+      "Road cuts slice through hillsides and show tilted and curved layers from the side. Cars on the road give the scale.",
+      "Layers like these show what folding looks like in real rock, not only in drawings."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/plunge_37.webp",
+      "slide": "slide 37",
+      "alt": "Block diagram of a fold whose hinge plunges into the ground, with a red dashed arrow marking the hinge."
+     },
+     "title": "A plunging hinge",
+     "bullets": [
+      "In a **plunging fold** the hinge is tilted down into the ground instead of running level.",
+      "Where erosion has cut the surface flat, the layers curve around the end of the fold like the tip of a nose.",
+      "The red dashed arrow marks the hinge line and the direction in which it plunges."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is the oldest rock in the middle of an anticline? Layers are laid down oldest first, with younger ones on top. When the layers are arched up and the top is worn away, the older layers show in the middle. In a syncline the layers sag down, so the youngest layers are kept in the middle."
+    },
+    {
+     "type": "trick",
+     "text": "Anticline: Arch, with an Ancient (oldest) core. Syncline: Sagging, with the Youngest rock inside."
+    },
+    {
+     "type": "trap",
+     "text": "Do not swap the two: anticline beds dip AWAY from the axis, syncline beds dip TOWARD it. A plunging fold is not a separate kind: it is a fold whose hinge tilts into the ground. The textbook (9.4) lists five categories (anticline, syncline, monocline, dome, basin), while slide 29 shows six panels because it adds the plunging fold. The textbook also defines antiform and synform as the same shapes when the ages of the beds cannot be told. The age pattern (oldest or youngest in the middle) is textbook text, not written on the slides. The photos on slides 34 and 36 have no captions."
+    }
+   ],
+   "table": {
+    "title": "Anticline and syncline compared",
+    "head": [
+     "Feature",
+     "Anticline",
+     "Syncline"
+    ],
+    "rows": [
+     [
+      "Shape",
+      "Arch (A-shaped)",
+      "Trough (U-shaped)"
+     ],
+     [
+      "Beds dip",
+      "Down and away from the axis",
+      "Down and in toward the axis"
+     ],
+     [
+      "Oldest rock",
+      "In the centre, along the axis",
+      "On the outside"
+     ],
+     [
+      "Youngest rock",
+      "On the outside",
+      "In the centre"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Slide 33: syncline block diagram (Axial plane, Hinge, Limb). Slide 35: anticline block diagram (same labels). Slides 34 and 36: road-cut photos without captions. Slide 37: Plunging hinge label.",
+    "Textbook 9.4.1 Anticline (arch-like, A-shaped, convex upward, beds dip away from the axis, oldest rock in the centre, oil traps), 9.4.2 Syncline (trough-like, U-shaped, beds dip toward the axis, youngest rock inside), plunging fold definition in 9.4 intro.",
+    "The superposition reason in the why box (older layers lie below younger ones) is general geology (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/syncline_33.webp",
+     "slide": "slide 33",
+     "alt": "Block diagram of a trough-shaped fold with the limb, hinge and axial plane labelled."
+    },
+    {
+     "src": "img/deformation/anticline_35.webp",
+     "slide": "slide 35",
+     "alt": "Block diagram of an arch-shaped fold with the limb, hinge and axial plane labelled."
+    },
+    {
+     "src": "img/deformation/roadcuts_34_36.webp",
+     "slide": "slides 34 and 36",
+     "alt": "Two road-cut photos showing tilted and curved rock layers with cars on the road for scale."
+    },
+    {
+     "src": "img/deformation/plunge_37.webp",
+     "slide": "slide 37",
+     "alt": "Block diagram of a fold whose hinge plunges into the ground, with a red dashed arrow marking the hinge."
+    }
+   ]
+  },
+  {
+   "id": "domes",
+   "title": "Domes, basins and cleavage",
+   "slides": "29 (panels e and f), 38-39",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/domebasin_29.webp",
+      "slide": "slide 29 (panels e and f); slide 38 enlarges panel f",
+      "alt": "Two block diagrams: a dome with layers arching up and a basin with layers sagging down, both with ring-shaped outcrops."
+     },
+     "title": "Dome and basin",
+     "bullets": [
+      "A **dome** is an upward bulge of rock layers shaped like an upside-down bowl. A **basin** is the inverse: a bowl-shaped sag where the layers dip toward the centre.",
+      "In panel (e) the layers arch up, and erosion has cut away the middle so rings of rock layers show on the surface.",
+      "In panel (f) the layers sag down into a bowl, and here too erosion leaves a ring pattern on the surface."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/cleavage_39.webp",
+      "slide": "slide 39",
+      "alt": "Three drawings: undeformed sand grains and clay flakes, the same rock squeezed and flattened with a cleavage plane, and a folded arch with slaty cleavage."
+     },
+     "title": "Cleavage from intense folding",
+     "bullets": [
+      "Intense folding squeezes rock. Round sand grains are flattened and flat clay flakes are turned to line up in the same direction.",
+      "The lined-up flakes make **cleavage** planes: flat surfaces along which the rock splits easily. In slate this is called slaty cleavage.",
+      "In the arch drawing the cleavage lines are steep and fan out around the axial plane, while the bedding follows the bend of the layers."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do clay flakes line up? When rock is squeezed, flat grains turn until they lie at right angles to the squeeze, like pages being pressed flat. Once most flakes face the same way, the rock has weak planes and splits easily along them."
+    },
+    {
+     "type": "trick",
+     "text": "Cleavage: the rock cleaves (splits) along these planes. Dome = an upside-down bowl, basin = a bowl the right way up."
+    },
+    {
+     "type": "trap",
+     "text": "Three things named 'cleavage' or 'layers' are easy to confuse: bedding is the ORIGINAL layering of a sedimentary rock; cleavage here is a NEW set of planes made by squeezing; mineral cleavage (a mineral's breaking along flat surfaces) is another topic. Slide 38 is titled 'Google Earth Monterey' and shows an enlarged basin drawing (the same drawing as panel f on slide 29); the Google Earth view itself is not in the PDF, and the slides never name dome or basin on the pictures."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 38 (title 'Google Earth Monterey'): block diagram of a basin, identical to panel (f) of slide 29; no text. Slide 29 panels (e) dome and (f) basin are not labelled on the slide; they are read from the shapes and the textbook 9.4.4 and 9.4.5 definitions.",
+    "Textbook 9.4.4 Dome (upwarping like an inverted bowl; the centre of an eroded dome is worn away) and 9.4.5 Basin (inverse of a dome, bowl-shaped, beds dipping toward the centre).",
+    "Slide 39: sand grains, clay flakes, cleavage plane, slaty cleavage, axial plane trace, bedding; captions 'Undeformed sand grains are spherical; clay flakes lie parallel to the bedding' and 'Deformation flattens sand grains and reorients clay flakes'. The pages-pressed-flat comparison is outside source."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/domebasin_29.webp",
+     "slide": "slide 29 (panels e and f); slide 38 enlarges panel f",
+     "alt": "Two block diagrams: a dome with layers arching up and a basin with layers sagging down, both with ring-shaped outcrops."
+    },
+    {
+     "src": "img/deformation/cleavage_39.webp",
+     "slide": "slide 39",
+     "alt": "Three drawings: undeformed sand grains and clay flakes, the same rock squeezed and flattened with a cleavage plane, and a folded arch with slaty cleavage."
+    }
+   ]
+  },
+  {
+   "id": "collision",
+   "title": "Collision, crustal roots and isostasy",
+   "slides": "40-44 (58 is a review question)",
+   "steps": [
+    {
+     "title": "Four ways mountains form",
+     "bullets": [
+      "The settings covered here are continental collision, convergent boundaries (with subduction), continental rifting and delamination.",
+      "Collision and subduction squeeze the crust (compression). Rifting stretches it (tension). Delamination changes the deep lithosphere under a mountain range."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/india_41.webp",
+      "slide": "slide 41",
+      "alt": "Satellite view of India and Asia with arrows showing India moving north into Asia and the Himalayas between them."
+     },
+     "title": "India meets Asia",
+     "bullets": [
+      "Arrows show India moving north into Asia while Asia pushes back toward India. The Himalayas rise where the two continents collide.",
+      "Continental crust is too buoyant to sink deeply, so neither side subducts. The crust crumples and thickens instead.",
+      "With no sinking plate to make magma, collision zones have tall mountains but very few volcanoes."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/collision_42.webp",
+      "slide": "slide 42",
+      "alt": "Cross-section of two continental plates colliding, with a suture, a mountain range, metamorphic rock and fold-thrust belts."
+     },
+     "title": "Inside a collision belt",
+     "bullets": [
+      "Two continental plates push together (red arrows). The crust folds, breaks on thrust faults and piles up into a mountain range.",
+      "The **suture** is the seam where the two plates were joined. Metamorphic rock lies in the core of the range.",
+      "On each side, the **fold-thrust belts** are zones of folded layers stacked on thrust faults. The scale bar is 10 km."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/root_43.webp",
+      "slide": "slide 43",
+      "alt": "Block diagram of mountains with thicker crust beneath them forming a crustal root above the lithospheric mantle."
+     },
+     "title": "A crustal root",
+     "bullets": [
+      "Beneath a collisional mountain belt the crust is thicker. The extra thickness hangs down into the mantle as a **crustal root**.",
+      "The **Moho** is the boundary between the crust and the mantle. Under continents it lies about 30 to 40 km down, and near big mountain-building events that depth is doubled.",
+      "Below the crust lie the lithospheric mantle (rigid) and then the asthenosphere, the weaker layer that flows slowly."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/isostasy_44.webp",
+      "slide": "slide 44",
+      "alt": "Blocks of different thickness floating in water, with the thickest block floating highest and sinking deepest and pressure gauges at the same depth."
+     },
+     "title": "Isostasy: floating blocks",
+     "bullets": [
+      "**Isostasy** means the height of crustal pieces is governed by buoyancy: they float on the weaker rock below, like blocks floating in water.",
+      "The thickest block floats highest and also sinks deepest. The pressure gauges at the same depth all read the same, so the blocks are in balance.",
+      "That is why high mountains have deep roots. When a heavy load is removed, such as melting ice or an eroded mountain, the crust floats back upward (isostatic rebound)."
+     ]
+    }
+   ],
+   "bullets": [
+    "Collision shortens and thickens the crust. Thick crust floats high and has a deep root because of isostasy."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do high mountains have deep roots? Crust floats on the mantle like a block in water. A thicker block floats higher but also has to sink deeper to balance its weight. When two continents collide the crust is shortened and thickened, so it stands high as a mountain range and also hangs deep as a root."
+    },
+    {
+     "type": "trick",
+     "text": "Think of an ice cube floating in a glass of water: the bigger the cube, the more sticks out above the water, and the deeper the rest sinks below it."
+    },
+    {
+     "type": "trap",
+     "text": "Isostasy is about BUOYANCY (floating). It is not controlled by strength or by strain; those are the tempting wrong choices on the review question (slide 58, with two joke options about 2 for 1 nights). The Moho depth of 30 to 40 km and its doubling near orogenies are textbook numbers (2.2.1), not on the slides. Collision zones have few volcanoes (textbook 2.3.2) while subduction zones make volcanic arcs."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 40: list of mountain-building settings. Slide 41: India and Asia map with arrows and Himalayas label. Slide 42: suture, mountain range, metamorphic rock, fold-thrust belt, continental crust, scale 0-10 km. Slide 43: crustal root, Moho, lithospheric mantle, asthenosphere; caption 'Crust is thicker beneath collisional mountain belts.' Slide 44: blocks in water, caption 'The thickest block floats highest and sinks deepest.', pressure gauges at a specified depth. Slide 58: isostasy review question (quiz def-3).",
+    "Textbook 2.2.1 (Moho 30-40 km under continents, doubled near orogenies), 2.3 and 2.3.2 (collision, buoyant continental lithosphere, tall non-volcanic mountains, few volcanoes), 14.5.2 (isostatic rebound from melting ice and from erosion).",
+    "'Suture' as the join between the plates and the ice cube analogy (the textbook uses an ice cube for floating lithosphere at ridges) are partly outside source."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/india_41.webp",
+     "slide": "slide 41",
+     "alt": "Satellite view of India and Asia with arrows showing India moving north into Asia and the Himalayas between them."
+    },
+    {
+     "src": "img/deformation/collision_42.webp",
+     "slide": "slide 42",
+     "alt": "Cross-section of two continental plates colliding, with a suture, a mountain range, metamorphic rock and fold-thrust belts."
+    },
+    {
+     "src": "img/deformation/root_43.webp",
+     "slide": "slide 43",
+     "alt": "Block diagram of mountains with thicker crust beneath them forming a crustal root above the lithospheric mantle."
+    },
+    {
+     "src": "img/deformation/isostasy_44.webp",
+     "slide": "slide 44",
+     "alt": "Blocks of different thickness floating in water, with the thickest block floating highest and sinking deepest and pressure gauges at the same depth."
+    }
+   ]
+  },
+  {
+   "id": "boundaries",
+   "title": "Subduction and rifting",
+   "slides": "45-49 (49 is a placeholder)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/subduction_45.webp",
+      "slide": "slide 45",
+      "alt": "Cross-section of subduction with an accretionary prism, a volcanic arc, thrust slices and a fold-thrust belt."
+     },
+     "title": "Convergent boundary with subduction",
+     "bullets": [
+      "At a subduction zone an oceanic plate sinks beneath another plate. Ocean-floor sediment is scraped off and piled up as the **accretionary prism**.",
+      "Rock melts above the sinking plate and rises to feed a **volcanic arc**, a curved line of volcanoes.",
+      "Farther inland the crust is squeezed into a fold-thrust belt, where thrust slices of rock stack up."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/andes_46.webp",
+      "slide": "slide 46",
+      "alt": "Satellite map of the Andes with the Nazca Plate moving at 7 cm per year toward South America and the trench marked."
+     },
+     "title": "The Andes",
+     "bullets": [
+      "The Nazca Plate moves toward South America at about 7 cm per year and sinks at the trench. The Andes rise on the South American side.",
+      "The small black arrows on the land point inland, away from the trench.",
+      "Check the rate: 7 cm per year for 1 million years is 7 million cm, which is 70 km."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/rift_47_48.webp",
+      "slide": "slides 47 and 48",
+      "alt": "A cross-section of a rift with fault blocks and a rift volcano above a photo of mountain ranges and basins in Nevada."
+     },
+     "title": "Continental rifting",
+     "bullets": [
+      "Where a continent is pulled apart (tension), the crust stretches and breaks along faults. Basins are low areas that fill with sediment, and ranges are exposed fault-bounded blocks.",
+      "The margins of the rift rise to form mountains. Magma can rise from below and feed rift volcanoes.",
+      "A **detachment fault** is a low-angle fault below the tilted blocks. The Nevada photo shows fault-block ranges separated by basins."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do subduction zones have volcanoes but collision zones do not? A sinking oceanic plate carries water down. The water lowers the melting point of the hot mantle above it, so magma forms and rises to make a volcanic arc. When two continents collide neither one sinks, so there is no sinking plate to feed magma and very little volcanism."
+    },
+    {
+     "type": "trick",
+     "text": "Subduction = a plate Sinks. Rifting = the crust Rips apart. Compression builds mountains by crunching, while tension makes ranges and basins by stretching."
+    },
+    {
+     "type": "trap",
+     "text": "Both rift ranges and fold-thrust belts are called mountains, but they form differently: rift ranges are fault-bounded blocks made by tension (normal faults), while fold-thrust belts are folded and stacked layers made by compression (thrust faults). The accretionary prism sits on the trench side and the volcanic arc is farther inland. The volcano explanation comes from the textbook (2.3.1); slide 49 is a Google Earth placeholder (Nevada basin and range) with no content. Slide 46 shows 7 cm per year as the plate speed label; the 70 km check is a calculation made for these notes."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 45: Active accretionary prism, Volcanic arc, Fold-thrust belt, Thrust slice. Slide 46: Trench, Nazca Plate, South American Plate, Andes, '(7 cm per year)'. Slide 47: basins, ranges, rift margins, rift volcano, rotated fault block, detachment fault, magma chamber, Moho. Slide 48: photo with Fault block and Basin labels.",
+    "Textbook 2.3.1 (accretionary prism, mantle wedge melting, volcanic arcs, Andes thrust faulting), 2.4.1 (rifting, normal faults, rift valleys), 9.5.1 (detachment faults, Basin and Range from tension).",
+    "The black arrows on the Andes map are not explained on the slide; they are described only as pointing inland."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/subduction_45.webp",
+     "slide": "slide 45",
+     "alt": "Cross-section of subduction with an accretionary prism, a volcanic arc, thrust slices and a fold-thrust belt."
+    },
+    {
+     "src": "img/deformation/andes_46.webp",
+     "slide": "slide 46",
+     "alt": "Satellite map of the Andes with the Nazca Plate moving at 7 cm per year toward South America and the trench marked."
+    },
+    {
+     "src": "img/deformation/rift_47_48.webp",
+     "slide": "slides 47 and 48",
+     "alt": "A cross-section of a rift with fault blocks and a rift volcano above a photo of mountain ranges and basins in Nevada."
+    }
+   ]
+  },
+  {
+   "id": "interiors",
+   "title": "Cratons, delamination and basins",
+   "slides": "50-55",
+   "steps": [
+    {
+     "img": {
+      "src": "img/deformation/craton_50.webp",
+      "slide": "slides 50 and 55 (same map)",
+      "alt": "Map of North America showing the craton with the Canadian Shield, the platform and the mountain belts around it."
+     },
+     "title": "The North American craton",
+     "bullets": [
+      "A **craton** is the old, stable core of a continent. Most cratons formed long ago and have changed little, while mountain building happened around them.",
+      "It has two parts: the **shield**, where old crystalline rock is at the surface (the Canadian Shield), and the **platform**, sedimentary rock lying on top of the shield.",
+      "Mountain belts such as the Cordillera in the west and the Appalachians in the east lie outside the craton. The Colorado Plateau is a cratonic region surrounded by mountains."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/delam_51.webp",
+      "slide": "slide 51",
+      "alt": "Two cross-sections: lower mountains over a deep lithospheric root, and higher mountains after the root peels off and sinks."
+     },
+     "title": "Lithosphere delamination",
+     "bullets": [
+      "In (a) a deep root of lithospheric mantle (the rigid part of the mantle that moves with the plate) hangs down under lower mountains.",
+      "In (b) that dense root has peeled away and sunk into the asthenosphere. This is **delamination**, and the mountains are now higher.",
+      "The surface rises because the heavy root that weighed the lithosphere down is gone. It is the same buoyancy idea as isostasy."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/intrabasin_52.webp",
+      "slide": "slide 52",
+      "alt": "Cross-section showing thin rock layers over a dome and thicker layers in a basin above faulted basement."
+     },
+     "title": "Domes and basins inside continents",
+     "bullets": [
+      "Away from plate edges the crust still moves up and down a little. These 'minor' uplifts and downdrops come from thermal expansion and contraction.",
+      "Rock that warms expands, so the land rises into a dome. Rock that cools contracts, so the land sinks into an **intracontinental basin**.",
+      "Rock layers (strata) are thinner on the dome and thicker in the basin, because the sinking basin had more room to collect sediment."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/intrabasins_53.webp",
+      "slide": "slide 53",
+      "alt": "Map of the eastern United States showing the Michigan, Illinois and Appalachian basins and the arches and domes between them."
+     },
+     "title": "Eastern basins, arches and domes",
+     "bullets": [
+      "On this map the Michigan, Illinois and Appalachian basins are low areas, and the Cincinnati arch, Wisconsin arch, Ozark dome and Nashville dome are high areas.",
+      "Precambrian basement rock (the old rock under the layers) is deeper beneath basins and closer to the surface in arches and domes.",
+      "The rock layers form rings around each basin and dome, the pattern left when erosion cuts across them."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/deformation/foreland_54.webp",
+      "slide": "slide 54",
+      "alt": "Cross-section of a mountain belt with a sediment-filled basin at its edge, and a drawing of a weight pressing down on a plate."
+     },
+     "title": "A foreland basin",
+     "bullets": [
+      "A **foreland basin** forms at the edge of a mountain belt, because the weight of the mountains pushes the lithosphere down, like a heavy weight pressing on a plate.",
+      "Erosion carries sediment from the range into the basin, where it fills the low area at the edge of the range.",
+      "The picture also shows deep rock changed by heat and pressure (metamorphosed) and moved up faults by plastic flow, and a pluton, a mass of once-molten rock, with baked rock (contact metamorphism) around it."
+     ]
+    }
+   ],
+   "bullets": [
+    "Cratons are old stable cores. Delamination can raise mountains. Interior basins sink slowly, and foreland basins form under the weight of mountains."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do foreland basins form? Mountains are heavy. The lithosphere bends down under their weight, leaving a low area next to the range, and the sediment eroded from the mountains fills it. As the basin fills, the extra weight of sediment can push it down further (a positive feedback)."
+    },
+    {
+     "type": "trick",
+     "text": "FORE-land basin = the basin in FRONT of the mountains. Delamination = a dense layer peeling off from underneath, like peeling a layer off an onion."
+    },
+    {
+     "type": "trap",
+     "text": "The word basin has four meanings here, with different causes: a bowl-shaped fold (basin vs dome), a rift basin between fault-block ranges (tension, slide 47), an intracontinental basin (slow downdrop from thermal contraction, slides 52-53) and a foreland basin (weight of mountains, slide 54). The deck explains the interior uplifts and downdrops by thermal expansion and contraction, not by plate collision. Colour warning: on slide 50 the shield is purple and the platform is orange, but the textbook map colours them the other way round, so read the legend, not the colour."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 50 (and the repeated map on slide 55): craton, Canadian Shield, platform, Precambrian rocks of the shield, cratonic platform, Cordillera, Colorado Plateau, Rocky Mountains, Appalachians, coastal plain, Ouachita Mountains. Slide 51: delamination (a) lower mountains with deep lithospheric mantle root, (b) higher mountains with delaminated lithosphere, 'Not to scale'. Slide 52: strata thinner on the dome, thicker in the basin, basement, fault. Slide 53: map of basins, arches and domes; caption on Precambrian basement depth. Slide 54: foreland basin cross-section and weight analogy.",
+    "Textbook 8.4.2 (craton = shield + platform, stable interior, mostly formed in the Archean, tectonic activity mostly around cratons), 2.3.2 (foreland basin from the weight of mountains; Persian Gulf), 9.4.5 (basins subside as sediment accumulates, positive feedback), 14.5.2 (isostasy).",
+    "The textbook has no text on delamination. The explanation that removing the dense root lets the surface rise (isostasy) and the warm-to-dome, cool-to-basin pairing are inferred from the slide titles and are partly outside source. The onion comparison is outside source."
+   ],
+   "images": [
+    {
+     "src": "img/deformation/craton_50.webp",
+     "slide": "slides 50 and 55 (same map)",
+     "alt": "Map of North America showing the craton with the Canadian Shield, the platform and the mountain belts around it."
+    },
+    {
+     "src": "img/deformation/delam_51.webp",
+     "slide": "slide 51",
+     "alt": "Two cross-sections: lower mountains over a deep lithospheric root, and higher mountains after the root peels off and sinks."
+    },
+    {
+     "src": "img/deformation/intrabasin_52.webp",
+     "slide": "slide 52",
+     "alt": "Cross-section showing thin rock layers over a dome and thicker layers in a basin above faulted basement."
+    },
+    {
+     "src": "img/deformation/intrabasins_53.webp",
+     "slide": "slide 53",
+     "alt": "Map of the eastern United States showing the Michigan, Illinois and Appalachian basins and the arches and domes between them."
+    },
+    {
+     "src": "img/deformation/foreland_54.webp",
+     "slide": "slide 54",
+     "alt": "Cross-section of a mountain belt with a sediment-filled basin at its edge, and a drawing of a weight pressing down on a plate."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Stress and structures at a glance",
+  "head": [
+   "Stress",
+   "What happens to the rock",
+   "Typical structures",
+   "Typical setting"
+  ],
+  "rows": [
+   [
+    "Compression",
+    "Shortens and thickens",
+    "Folds, reverse and thrust faults",
+    "Collision and subduction zones"
+   ],
+   [
+    "Tension",
+    "Stretches and thins",
+    "Normal faults, ranges and basins",
+    "Continental rifting"
+   ],
+   [
+    "Shear",
+    "Blocks move sideways past each other",
+    "Strike-slip faults",
+    "Transform boundaries such as the San Andreas fault"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "def-c1",
+   "front": "What are the three types of deformation?",
+   "back": "Displacement (a block moves from one place to another), rotation (the rock turns, so flat layers tilt) and distortion (the rock changes shape).",
+   "short": "Displacement, rotation, distortion",
+   "src": "Slide 5"
+  },
+  {
+   "id": "def-c2",
+   "front": "Stress",
+   "back": "Force per unit area acting on a rock or other material.",
+   "short": "Force per unit area",
+   "src": "Slides 6, 56"
+  },
+  {
+   "id": "def-c3",
+   "front": "Strain",
+   "back": "The change a body undergoes because of stress, expressed as a proportion of the original (for example the fraction of volume change).",
+   "short": "Proportional change caused by stress",
+   "src": "Slides 6, 57; textbook 9.1"
+  },
+  {
+   "id": "def-c4",
+   "front": "Pressure (as a kind of stress)",
+   "back": "Stress that squeezes a body equally from all directions, like the water around a diver.",
+   "short": "Squeeze equally from all sides",
+   "src": "Slide 9"
+  },
+  {
+   "id": "def-c5",
+   "front": "Compression",
+   "back": "Stress that pushes from opposite sides toward the middle. Rock shortens and thickens. Horizontal compression drives collision.",
+   "short": "Pushes together, shortens and thickens",
+   "src": "Slide 10; textbook 9.1"
+  },
+  {
+   "id": "def-c6",
+   "front": "Tension",
+   "back": "Stress that pulls in opposite directions. Rock stretches and thins. Horizontal tension drives crustal rifting.",
+   "short": "Pulls apart, stretches and thins",
+   "src": "Slide 11; textbook 9.1"
+  },
+  {
+   "id": "def-c7",
+   "front": "Shear stress",
+   "back": "Stress that pushes one part of a body one way and the part next to it the other way, so blocks move sideways past each other.",
+   "short": "Moves blocks sideways past each other",
+   "src": "Slide 12"
+  },
+  {
+   "id": "def-c8",
+   "front": "Brittle behaviour",
+   "back": "The material breaks into pieces (fractures) when it is stressed, like a plate.",
+   "short": "Breaks into pieces",
+   "src": "Slides 13, 15"
+  },
+  {
+   "id": "def-c9",
+   "front": "Ductile behaviour",
+   "back": "The material bends and flows to a new shape without breaking into pieces, like dough.",
+   "short": "Bends and flows without breaking",
+   "src": "Slides 13, 17"
+  },
+  {
+   "id": "def-c10",
+   "front": "What four things control brittle versus ductile behaviour?",
+   "back": "Temperature, pressure, deformation rate and the composition of the rock.",
+   "short": "Temperature, pressure, rate, composition",
+   "src": "Slide 14"
+  },
+  {
+   "id": "def-c11",
+   "front": "Which conditions make rock ductile rather than brittle?",
+   "back": "Higher temperature, higher pressure (deep burial) and a slower deformation rate favour ductile behaviour. Cold, shallow rock deformed quickly tends to be brittle.",
+   "short": "Hot, deep and slow favours ductile",
+   "src": "Slide 14; textbook 2.2.1, 9.2"
+  },
+  {
+   "id": "def-c12",
+   "front": "Joint",
+   "back": "A crack in rock along which the two sides have not moved past each other (no offset). Joints are brittle fractures.",
+   "short": "Crack with no offset",
+   "src": "Slides 3, 19-20; textbook 9.5"
+  },
+  {
+   "id": "def-c13",
+   "front": "Vein",
+   "back": "A crack in rock that has been filled with a different mineral, seen as a thin band cutting across the layers.",
+   "short": "Crack filled with a mineral",
+   "src": "Slide 21 (definition outside source)"
+  },
+  {
+   "id": "def-c14",
+   "front": "Fault",
+   "back": "A fracture along which the rock on one side has slipped past the rock on the other side.",
+   "short": "Fracture with slip between blocks",
+   "src": "Slide 23; textbook 9.5"
+  },
+  {
+   "id": "def-c15",
+   "front": "Hanging wall and footwall",
+   "back": "In a dip-slip fault the hanging wall is the block above the fault plane and the footwall is the block below it.",
+   "short": "Block above and block below the fault plane",
+   "src": "Slide 23; textbook 9.5"
+  },
+  {
+   "id": "def-c16",
+   "front": "Normal fault",
+   "back": "A dip-slip fault in which the hanging wall moves down relative to the footwall. It is made by tension.",
+   "short": "Hanging wall moves down",
+   "src": "Slide 23; textbook 9.5.1"
+  },
+  {
+   "id": "def-c17",
+   "front": "Reverse fault",
+   "back": "A dip-slip fault in which the hanging wall moves up, on a steep dip. It is made by compression.",
+   "short": "Hanging wall moves up on steep dip",
+   "src": "Slide 23; textbook 9.5.2"
+  },
+  {
+   "id": "def-c18",
+   "front": "Thrust fault",
+   "back": "A reverse fault with a gentle (low-angle) dip, in which the hanging wall moves up. By convention the dip is below 45 degrees.",
+   "short": "Hanging wall moves up on gentle dip",
+   "src": "Slide 23; textbook 9.5.2 (45 degree limit is textbook only)"
+  },
+  {
+   "id": "def-c19",
+   "front": "Strike-slip fault",
+   "back": "A fault along which blocks move sideways past each other, either left-lateral or right-lateral. It is caused by shear. The San Andreas fault is an example.",
+   "short": "Blocks move sideways past each other",
+   "src": "Slides 23, 25; textbook 9.5.3"
+  },
+  {
+   "id": "def-c20",
+   "front": "Oblique-slip fault",
+   "back": "A fault with both dip-slip and strike-slip motion, for example reverse plus left-lateral or normal plus right-lateral.",
+   "short": "Mix of up-down and sideways slip",
+   "src": "Slide 23"
+  },
+  {
+   "id": "def-c21",
+   "front": "Fault scarp",
+   "back": "A small cliff or step in the ground made where slip on a fault breaks through to the surface, for example from a normal fault in Nevada.",
+   "short": "Step in the ground from fault slip",
+   "src": "Slide 26; textbook 9.5"
+  },
+  {
+   "id": "def-c22",
+   "front": "Fault breccia",
+   "back": "Rock made of angular, broken pieces, produced by brittle slip and grinding along a fault.",
+   "short": "Angular broken rock from faulting",
+   "src": "Slide 27 (explanation outside source)"
+  },
+  {
+   "id": "def-c23",
+   "front": "Striations on a fault surface",
+   "back": "Parallel grooves or scratches cut into a fault surface by friction as the blocks rub past each other.",
+   "short": "Grooves scratched by fault movement",
+   "src": "Slide 28; textbook 9.5 (slickensides)"
+  },
+  {
+   "id": "def-c24",
+   "front": "Fold",
+   "back": "A bend in rock layers made by ductile deformation, most often by compression deep in the crust.",
+   "short": "Bent layers from ductile deformation",
+   "src": "Slide 29; textbook 9.4"
+  },
+  {
+   "id": "def-c25",
+   "front": "Limb, hinge and axial plane",
+   "back": "The limbs are the two sides of a fold, the hinge is the line of greatest bend, and the axial plane is the plane that splits the fold into two halves.",
+   "short": "Sides, line of greatest bend, halving plane",
+   "src": "Slides 29, 33, 35"
+  },
+  {
+   "id": "def-c26",
+   "front": "Anticline",
+   "back": "An arch-shaped (A-shaped) fold. The beds dip away from the axis and the oldest rock is in the centre.",
+   "short": "Arch fold with oldest rock in centre",
+   "src": "Slides 30, 35; textbook 9.4.1"
+  },
+  {
+   "id": "def-c27",
+   "front": "Syncline",
+   "back": "A trough-shaped (U-shaped) fold. The beds dip toward the axis and the youngest rock is in the centre.",
+   "short": "Trough fold with youngest rock in centre",
+   "src": "Slides 30, 33; textbook 9.4.2"
+  },
+  {
+   "id": "def-c28",
+   "front": "Plunging hinge",
+   "back": "A fold whose hinge tilts down into the ground instead of running level.",
+   "short": "Fold hinge tilted into the ground",
+   "src": "Slide 37; textbook 9.4"
+  },
+  {
+   "id": "def-c29",
+   "front": "Dome and basin",
+   "back": "A dome is an upward bulge of layers like an upside-down bowl. A basin is the inverse: a bowl-shaped sag with layers dipping toward the centre.",
+   "short": "Upward bulge versus bowl-shaped sag",
+   "src": "Slides 29, 38; textbook 9.4.4-9.4.5"
+  },
+  {
+   "id": "def-c30",
+   "front": "Monocline",
+   "back": "A step-like fold in which flat layers are bent up or down and then continue flat.",
+   "short": "Step-like fold in flat layers",
+   "src": "Slide 29 (panel c); textbook 9.4.3"
+  },
+  {
+   "id": "def-c31",
+   "front": "Cleavage (from intense folding)",
+   "back": "Flat planes along which a rock splits easily. They form when intense folding flattens grains and lines up clay flakes.",
+   "short": "Planes from lined-up flakes in folding",
+   "src": "Slide 39"
+  },
+  {
+   "id": "def-c32",
+   "front": "What are the four mountain-building settings in this topic?",
+   "back": "Continental collision, convergent boundaries (with subduction), continental rifting and delamination.",
+   "short": "Collision, subduction, rifting, delamination",
+   "src": "Slide 40"
+  },
+  {
+   "id": "def-c33",
+   "front": "Crustal root",
+   "back": "The thick part of the crust beneath a collisional mountain belt, which hangs down into the mantle.",
+   "short": "Thick crust hanging below mountains",
+   "src": "Slide 43"
+  },
+  {
+   "id": "def-c34",
+   "front": "Isostasy",
+   "back": "The height of crustal pieces is governed by buoyancy: the crust floats on the weaker mantle, so the thickest block floats highest and also sinks deepest.",
+   "short": "Crust height governed by buoyancy",
+   "src": "Slides 44, 58"
+  },
+  {
+   "id": "def-c35",
+   "front": "Accretionary prism",
+   "back": "The pile of ocean-floor sediment scraped off a sinking plate at a subduction zone.",
+   "short": "Scraped-off sediment pile at the trench",
+   "src": "Slide 45; textbook 2.3.1"
+  },
+  {
+   "id": "def-c36",
+   "front": "Continental rifting",
+   "back": "The crust is pulled apart by tension. Normal faults make fault-bounded ranges and sediment-filled basins, and rift volcanoes can form.",
+   "short": "Stretched crust makes ranges and basins",
+   "src": "Slides 11, 47-48"
+  },
+  {
+   "id": "def-c37",
+   "front": "Craton",
+   "back": "The old, stable core of a continent. It has a shield (exposed old crystalline rock) and a platform (sedimentary rock covering the shield).",
+   "short": "Old stable core of a continent",
+   "src": "Slide 50; textbook 8.4.2"
+  },
+  {
+   "id": "def-c38",
+   "front": "Delamination",
+   "back": "A dense root of lithospheric mantle peels off and sinks into the asthenosphere, and the mountains above become higher.",
+   "short": "Dense lithospheric root peels off and sinks",
+   "src": "Slide 51"
+  },
+  {
+   "id": "def-c39",
+   "front": "Intracontinental basin",
+   "back": "A basin inside a continent formed by slow downdrop linked to thermal contraction. Rock layers are thicker in the basin than on a nearby dome.",
+   "short": "Interior basin with thicker layers",
+   "src": "Slides 52-53"
+  },
+  {
+   "id": "def-c40",
+   "front": "Foreland basin",
+   "back": "A basin at the edge of a mountain belt, formed because the weight of the mountains pushes the lithosphere down. Sediment from the range fills it.",
+   "short": "Basin made by the weight of mountains",
+   "src": "Slide 54; textbook 2.3.2"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "def-1",
+   "q": "What is stress?",
+   "options": [
+    "force divided by volume",
+    "force divided by area",
+    "force multiplied by distance",
+    "pressure from a gas only",
+    "both (a) and (b)"
+   ],
+   "answer": 1,
+   "why": "Stress is force per unit area, so it is force divided by area. Dividing by volume is wrong, and gas pressure is only one kind of stress.",
+   "source": "Slides 6, 56; textbook 9.1"
+  },
+  {
+   "id": "def-2",
+   "q": "What is strain?",
+   "options": [
+    "the force applied to each unit of area",
+    "the result of failure on fault planes",
+    "deformation expressed as a proportional amount of the original body geometry",
+    "what happens along joints",
+    "both (b) and (c)"
+   ],
+   "answer": 2,
+   "why": "Strain is the change in a body caused by stress, expressed as a proportion of the original. Force per unit area is stress, and failure on faults or joints is a result of brittle deformation, not the definition of strain.",
+   "source": "Slides 6, 57; textbook 9.1"
+  },
+  {
+   "id": "def-3",
+   "q": "What is isostasy?",
+   "options": [
+    "when the height of crustal pieces is controlled by their strength",
+    "when the height of crustal pieces is governed by strain",
+    "when rocks break along a fault",
+    "when rock layers are bent into folds",
+    "when the height of crustal pieces is governed by buoyancy"
+   ],
+   "answer": 4,
+   "why": "Isostasy is the balance of floating crust: the height of crustal pieces is set by buoyancy, like blocks floating in water.",
+   "source": "Slides 44, 58"
+  },
+  {
+   "id": "def-4",
+   "q": "If a rock has deformed by faulting, this is an indication that the deformation occurred in which regime?",
+   "options": [
+    "the ductile regime",
+    "the isostatic regime",
+    "the elastic regime",
+    "the brittle regime",
+    "the asthenosphere"
+   ],
+   "answer": 3,
+   "why": "A fault is a fracture, so the rock broke. Breaking is brittle behaviour. Ductile rock bends and flows, and elastic strain disappears when the stress is removed.",
+   "source": "Slides 13, 23, 59; textbook 9.5"
+  },
+  {
+   "id": "def-5",
+   "q": "Layers of rock have been bent into a fold without breaking apart. Which behaviour of the rock does this show?",
+   "options": [
+    "ductile behaviour",
+    "brittle behaviour",
+    "elastic behaviour (fully reversible)",
+    "isostatic behaviour",
+    "no deformation at all"
+   ],
+   "answer": 0,
+   "why": "Bending without breaking is ductile behaviour. Brittle rock would fracture into joints or faults, and a fold is permanent, so it is not elastic.",
+   "source": "Slides 13, 60 (reworded); textbook 9.4"
+  },
+  {
+   "id": "def-6",
+   "q": "Which of the following are types of deformation?\nI. Displacement\nII. Rotation\nIII. Distortion",
+   "options": [
+    "I only",
+    "I and II only",
+    "all of the above",
+    "II and III only",
+    "none of the above"
+   ],
+   "answer": 2,
+   "why": "Deformation can be displacement (a block moves), rotation (it turns) or distortion (it changes shape), so all three are types.",
+   "source": "Slide 5"
+  },
+  {
+   "id": "def-7",
+   "q": "In panel (b) of the picture, red sandstone beds that were horizontal when they were deposited are now tilted. Which type of deformation does this show?",
+   "options": [
+    "displacement",
+    "rotation",
+    "distortion",
+    "a joint",
+    "a fold"
+   ],
+   "answer": 1,
+   "why": "The beds were flat and now lean, so the rock has turned: rotation. Displacement would move the block without turning it, and distortion would change its shape.",
+   "source": "Slide 5",
+   "img": {
+    "src": "img/deformation/types_5.webp",
+    "alt": "Three block drawings with matching photos: a block shifted along a fault, a flat block turned to a tilt, and flat layers bent into a fold."
+   }
+  },
+  {
+   "id": "def-8",
+   "q": "In panel (c) of the picture, the fossil shell is squeezed from both sides until it becomes narrow. What kind of strain is this?",
+   "options": [
+    "shortening (contraction)",
+    "stretching (elongation)",
+    "shear",
+    "no strain (unstrained)",
+    "isostatic uplift"
+   ],
+   "answer": 0,
+   "why": "Pushing from both sides makes the shell shorter and narrower, which is shortening (contraction). Stretching would pull it long, and shear would slant it sideways.",
+   "source": "Slide 8",
+   "img": {
+    "src": "img/deformation/strain_8.webp",
+    "alt": "Five drawings of a fossil shell and a card deck: unstrained, stretched, shortened and sheared, with a circle turning into an oval."
+   }
+  },
+  {
+   "id": "def-9",
+   "q": "A boot presses with the same force first on the top of one soda can and then on a board resting on a long row of cans. Only the single can is crushed. Why?",
+   "options": [
+    "A single can is always weaker than a can in a row.",
+    "A larger area gives a larger stress.",
+    "The boot pushes with a bigger force on one can.",
+    "The same force on a smaller area gives a larger stress.",
+    "Stress does not depend on area."
+   ],
+   "answer": 3,
+   "why": "Stress is force divided by area. The same force on one can acts on a small area, so the stress is large. Spread over many cans the area is large, so the stress on each is small.",
+   "source": "Slides 6-7"
+  },
+  {
+   "id": "def-10",
+   "q": "Under pressure, a block of rock shrinks from a volume of 200 cm³ to 180 cm³. If strain is the fraction of volume change, what is the strain?",
+   "options": [
+    "0.05",
+    "0.11",
+    "0.90",
+    "20",
+    "0.10"
+   ],
+   "answer": 4,
+   "why": "The volume change is 200 - 180 = 20 cm³. As a fraction of the original volume, 20 / 200 = 0.10 (10 percent). Using the new volume gives 0.11, and 20 is only the raw change.",
+   "source": "Slide 6 (numbers made for these notes, outside source)"
+  },
+  {
+   "id": "def-11",
+   "q": "Which of these statements about kinds of stress are correct?\nI. Compression pushes rock together, so it shortens and thickens.\nII. Tension pulls rock apart, so it stretches and thins.\nIII. Pressure squeezes a body from one direction only.",
+   "options": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "I and III only",
+    "all of the above"
+   ],
+   "answer": 1,
+   "why": "Compression shortens and thickens, and tension stretches and thins. Pressure squeezes a body equally from all directions, so statement III is wrong.",
+   "source": "Slides 9-11; textbook 9.1"
+  },
+  {
+   "id": "def-12",
+   "q": "Why are rocks deep in the crust more likely to bend and flow, while rocks near the surface tend to break?",
+   "options": [
+    "Deep rock is hotter and under higher pressure, which favours ductile behaviour.",
+    "Deep rock is colder, so it is more flexible.",
+    "Deep rock is deformed faster than rock at the surface.",
+    "Rock near the surface is under higher pressure.",
+    "Brittle behaviour happens only in sedimentary rock."
+   ],
+   "answer": 0,
+   "why": "Temperature and pressure both rise with depth, and hot rock under high pressure flows instead of breaking. Cold, shallow rock tends to be brittle.",
+   "source": "Slide 14; textbook 2.2.1, 9.2"
+  },
+  {
+   "id": "def-13",
+   "q": "A geologist squeezes a piece of cold rock very quickly instead of very slowly, with everything else unchanged. How does the rock's behaviour most likely change?",
+   "options": [
+    "It becomes more ductile and more likely to fold.",
+    "It turns into a different kind of rock.",
+    "Its behaviour does not depend on how fast it is deformed.",
+    "It becomes elastic and always returns to its original shape.",
+    "It becomes more brittle and more likely to fracture."
+   ],
+   "answer": 4,
+   "why": "Deformation rate is one of the four controls, and a faster rate favours brittle behaviour. A slow push gives rock time to flow.",
+   "source": "Slide 14; textbook 9.2"
+  },
+  {
+   "id": "def-14",
+   "q": "Which statements about joints are correct?\nI. Layers are displaced (offset) across a joint.\nII. A joint is a brittle fracture.\nIII. Joints can form by cooling, by loss of pressure or by folding.",
+   "options": [
+    "I only",
+    "II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 3,
+   "why": "A joint is a brittle crack with no offset, so statement I is wrong. Joints can form when rock cools, loses pressure or is folded.",
+   "source": "Slides 19-20; textbook 9.5"
+  },
+  {
+   "id": "def-15",
+   "q": "In the picture, the reverse fault and the thrust fault both have the hanging wall moving up. How do they differ?",
+   "options": [
+    "The thrust fault is formed by tension.",
+    "The reverse fault moves sideways.",
+    "The thrust fault has a gentler dip than the reverse fault.",
+    "The thrust fault has its hanging wall moving down.",
+    "They do not differ in any way."
+   ],
+   "answer": 2,
+   "why": "Both are made by compression and both move the hanging wall up. The difference is the dip: steep for a reverse fault and gentle for a thrust fault.",
+   "source": "Slide 23; textbook 9.5.2",
+   "img": {
+    "src": "img/deformation/faults_dipslip_23.webp",
+    "alt": "Block diagrams of a reverse fault, a thrust fault and a normal fault, with the hanging wall and footwall labelled."
+   }
+  },
+  {
+   "id": "def-16",
+   "q": "Along a fault the hanging wall has moved down relative to the footwall. Which fault is this, and which stress usually forms it?",
+   "options": [
+    "normal fault, formed by tension",
+    "reverse fault, formed by compression",
+    "normal fault, formed by compression",
+    "thrust fault, formed by shear",
+    "strike-slip fault, formed by tension"
+   ],
+   "answer": 0,
+   "why": "Hanging wall down is a normal fault, and normal faults form where the crust is pulled apart (tension). Reverse and thrust faults have the hanging wall up.",
+   "source": "Slide 23; textbook 9.1, 9.5.1"
+  },
+  {
+   "id": "def-17",
+   "q": "The picture shows a creek bed cut and shifted sideways along the San Andreas fault, so that point A was once next to point B. What type of fault is this?",
+   "options": [
+    "normal",
+    "reverse",
+    "thrust",
+    "strike-slip",
+    "dip-slip"
+   ],
+   "answer": 3,
+   "why": "The blocks moved sideways past each other (right-lateral), which is strike-slip motion. Normal, reverse and thrust faults are dip-slip: they move up or down.",
+   "source": "Slide 25; textbook 9.5.3",
+   "img": {
+    "src": "img/deformation/sanandreas_25.webp",
+    "alt": "Aerial photo of the San Andreas fault with a creek bed shifted sideways, next to a sketch showing points A and B and the two plates."
+   }
+  },
+  {
+   "id": "def-18",
+   "q": "Which of the following statements about faults is INCORRECT?",
+   "options": [
+    "The hanging wall lies above the fault plane.",
+    "Normal faults form where the crust is pulled apart.",
+    "A thrust fault is a reverse fault with a gentle dip.",
+    "Oblique-slip faults combine dip-slip and strike-slip motion.",
+    "Strike-slip faults mainly move blocks up and down."
+   ],
+   "answer": 4,
+   "why": "Strike-slip faults move blocks sideways, not up and down. The other four statements are correct.",
+   "source": "Slide 23; textbook 9.5"
+  },
+  {
+   "id": "def-19",
+   "q": "On a hillside the oldest rocks are in the middle of a fold and younger rocks lie on both sides, with the beds dipping away from the centre. What is the fold?",
+   "options": [
+    "a syncline",
+    "an anticline",
+    "a monocline",
+    "a basin",
+    "a normal fault"
+   ],
+   "answer": 1,
+   "why": "An anticline is an arch whose beds dip away from the axis, with the oldest rock in the centre. A syncline would have the youngest rock in the middle.",
+   "source": "Slides 30, 35; textbook 9.4.1"
+  },
+  {
+   "id": "def-20",
+   "q": "Which statements about domes and basins are correct?\nI. A dome is an upward bulge of layers shaped like an upside-down bowl.\nII. In a basin the layers dip toward the centre.\nIII. In a dome the layers dip toward the centre.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "II and III only",
+    "none of the above"
+   ],
+   "answer": 2,
+   "why": "A dome bulges up, and a basin is the inverse: its layers dip toward the centre. In a dome the layers dip away from the centre, so statement III is wrong.",
+   "source": "Slides 29, 38; textbook 9.4.4-9.4.5"
+  },
+  {
+   "id": "def-21",
+   "q": "Intense folding can produce cleavage planes in a rock. What happens inside the rock to cause this?",
+   "options": [
+    "Sand grains are flattened and clay flakes are turned to line up in the same direction.",
+    "Sand grains stay round and clay flakes stay parallel to the original bedding.",
+    "The rock melts and recrystallizes without being squeezed.",
+    "Joints open and fill with a different mineral.",
+    "Blocks slip sideways along a strike-slip fault."
+   ],
+   "answer": 0,
+   "why": "Deformation flattens the grains and reorients the clay flakes so they line up, which creates planes along which the rock splits. Undeformed rock keeps round grains and flakes parallel to the bedding.",
+   "source": "Slide 39"
+  },
+  {
+   "id": "def-22",
+   "q": "Which statement about a continental collision is INCORRECT?",
+   "options": [
+    "Neither continent sinks easily, because continental crust is buoyant.",
+    "The crust is shortened and thickened into tall mountains.",
+    "Fold-thrust belts form beside the mountain range.",
+    "A volcanic arc is the main feature that forms along the suture.",
+    "A crustal root forms beneath the mountains."
+   ],
+   "answer": 3,
+   "why": "Volcanic arcs form at subduction zones, where a sinking plate makes magma. In a collision neither continent sinks, so there is very little volcanism.",
+   "source": "Slides 41-43; textbook 2.3.2"
+  },
+  {
+   "id": "def-23",
+   "q": "Why do tall mountain ranges built by continental collision have deep crustal roots?",
+   "options": [
+    "The root is made of ocean-floor sediment scraped off a sinking plate.",
+    "Tension pulls the crust down under the range.",
+    "A volcanic arc builds the root.",
+    "Delamination always removes the root.",
+    "The crust floats like a block in water, so a thicker block sits higher and also sinks deeper."
+   ],
+   "answer": 4,
+   "why": "Isostasy: crust floats on the mantle by buoyancy. The thickest block floats highest and sinks deepest, so a high range must have a deep root.",
+   "source": "Slides 43-44"
+  },
+  {
+   "id": "def-24",
+   "q": "The Nazca Plate moves toward South America at about 7 cm per year. About how far does it move in 2 million years?",
+   "options": [
+    "14 km",
+    "70 km",
+    "140 km",
+    "1,400 km",
+    "14,000 km"
+   ],
+   "answer": 2,
+   "why": "7 cm per year × 2,000,000 years = 14,000,000 cm = 140,000 m = 140 km. Forgetting to convert centimetres to kilometres is the common slip.",
+   "source": "Slide 46"
+  },
+  {
+   "id": "def-25",
+   "q": "In the picture of a convergent boundary with subduction, which labelled feature is the pile of sediment scraped off the sinking plate at the trench?",
+   "options": [
+    "the volcanic arc",
+    "the active accretionary prism",
+    "the fold-thrust belt",
+    "the thrust slice",
+    "the detachment fault"
+   ],
+   "answer": 1,
+   "why": "Ocean-floor sediment is scraped together and compressed at the trench to form the accretionary prism. The volcanic arc is the line of volcanoes farther inland.",
+   "source": "Slide 45; textbook 2.3.1",
+   "img": {
+    "src": "img/deformation/subduction_45.webp",
+    "alt": "Cross-section of subduction with an accretionary prism, a volcanic arc, thrust slices and a fold-thrust belt."
+   }
+  },
+  {
+   "id": "def-26",
+   "q": "In the Basin and Range region long mountain ranges alternate with flat basins. What process produced this pattern?",
+   "options": [
+    "Horizontal tension, which stretches the crust and breaks it into fault-bounded blocks",
+    "Horizontal compression, as in a continental collision",
+    "Horizontal shear, which moves blocks sideways",
+    "Pressure squeezing the rock equally from all sides",
+    "Isostatic rebound after a glacier melts"
+   ],
+   "answer": 0,
+   "why": "Tension stretches the crust, which breaks along normal faults. Some blocks drop to form basins that fill with sediment, and the exposed blocks form the ranges.",
+   "source": "Slides 11, 47-48; textbook 9.5.1"
+  },
+  {
+   "id": "def-27",
+   "q": "Which statements about a craton are correct?\nI. A craton is the old, stable core of a continent.\nII. It has a shield of old crystalline rock and a platform of sedimentary rock covering the shield.\nIII. Most mountain building happens in the middle of the craton.",
+   "options": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "all of the above",
+    "none of the above"
+   ],
+   "answer": 1,
+   "why": "A craton is the stable core and has a shield plus a platform. Mountain belts such as the Cordillera and the Appalachians lie around the craton, so statement III is wrong.",
+   "source": "Slide 50; textbook 8.4.2"
+  },
+  {
+   "id": "def-28",
+   "q": "When the deep lithospheric mantle root under a mountain range peels off and sinks into the asthenosphere (delamination), what happens to the mountains?",
+   "options": [
+    "They become lower.",
+    "They stay exactly the same.",
+    "They become higher.",
+    "They turn into a foreland basin.",
+    "They split along a rift valley."
+   ],
+   "answer": 2,
+   "why": "The picture shows lower mountains over the deep root and higher mountains after the root has been delaminated. The surface rises once the dense root is gone.",
+   "source": "Slide 51"
+  },
+  {
+   "id": "def-29",
+   "q": "In the picture, rock layers are thinner over the dome and thicker in the basin. What does this suggest?",
+   "options": [
+    "The dome sank while the basin stood still.",
+    "The basin and the dome sank by equal amounts.",
+    "The basin was squeezed by compression, which thickened its layers.",
+    "The basin sank while sediment was being deposited, so it collected more layers.",
+    "The layers formed after the basin and dome were already complete."
+   ],
+   "answer": 3,
+   "why": "Thicker layers in the basin mean it had more room to collect sediment as it sank. These interior uplifts and downdrops are linked to thermal expansion and contraction, not to compression.",
+   "source": "Slide 52; textbook 9.4.5",
+   "img": {
+    "src": "img/deformation/intrabasin_52.webp",
+    "alt": "Cross-section showing thin rock layers over a dome and thicker layers in a basin above faulted basement."
+   }
+  },
+  {
+   "id": "def-30",
+   "q": "Why does a foreland basin form along the edge of a mountain belt?",
+   "options": [
+    "Tension from rifting stretches the crust at the edge.",
+    "A deep root peels off during delamination.",
+    "Sediment is scraped off a sinking plate.",
+    "Cooling of the rock makes it expand upward.",
+    "The weight of the mountains pushes the lithosphere down."
+   ],
+   "answer": 4,
+   "why": "Mountains are heavy, so the lithosphere bends down beside them, like a weight on a plate. Sediment eroded from the range then fills the basin.",
+   "source": "Slide 54; textbook 2.3.2"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "From flat layers to cleavage",
+   "prompt": "Put the steps in the order they happen, from the first step at the bottom to the last step at the top.",
+   "why": "Flat, undeformed layers come first. Compression then squeezes them and they bend into folds. Only when the folding is intense enough are the grains flattened and the clay flakes lined up, and that is what creates cleavage planes.",
+   "topLabel": "End: cleavage planes",
+   "bottomLabel": "Start: flat layers",
+   "layers": [
+    {
+     "name": "Flat, undeformed layers (clay flakes lie parallel to the bedding)",
+     "color": "#7c3f1d"
+    },
+    {
+     "name": "Compression squeezes the layers from both ends",
+     "color": "#b45309"
+    },
+    {
+     "name": "The layers shorten and bend into folds (ductile behaviour)",
+     "color": "#15803d"
+    },
+    {
+     "name": "Folding becomes intense and flattens the grains",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Clay flakes line up and cleavage planes form",
+     "color": "#6d28d9"
+    }
+   ]
+  },
+  {
+   "title": "Building a collision mountain range",
+   "prompt": "Put the steps in the order they happen, from the first step at the bottom to the last step at the top.",
+   "why": "An ocean basin must close before two continents can meet. Neither continent sinks easily because continental crust is buoyant, so compression folds the crust and stacks it on thrust faults. The thickened crust floats high as a mountain range and hangs down as a root.",
+   "topLabel": "End: high range with a root",
+   "bottomLabel": "Start: an ocean closes",
+   "layers": [
+    {
+     "name": "Oceanic crust between two continents is consumed until the ocean closes",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "The two continents collide and a suture marks the join",
+     "color": "#be123c"
+    },
+    {
+     "name": "Compression folds the crust and stacks it on thrust faults",
+     "color": "#b45309"
+    },
+    {
+     "name": "The crust thickens and a crustal root grows below",
+     "color": "#7c3f1d"
+    },
+    {
+     "name": "The thick crust floats high as a mountain range (isostasy)",
+     "color": "#15803d"
+    }
+   ]
+  },
+  {
+   "title": "How a rift develops",
+   "prompt": "Put the steps in the order they happen, from the first step at the bottom to the last step at the top.",
+   "why": "Tension comes first and stretches the crust, which thins it. The thin, stretched crust cracks along normal faults and breaks into blocks. Blocks that drop and tilt form low basins next to high ranges, and the basins then collect sediment.",
+   "topLabel": "End: basins fill with sediment",
+   "bottomLabel": "Start: tension pulls",
+   "layers": [
+    {
+     "name": "Horizontal tension pulls the continent apart",
+     "color": "#be123c"
+    },
+    {
+     "name": "The crust stretches and thins",
+     "color": "#b45309"
+    },
+    {
+     "name": "Normal faults break the crust into blocks",
+     "color": "#7c3f1d"
+    },
+    {
+     "name": "Blocks drop and tilt: low basins and high ranges form",
+     "color": "#0e7490"
+    },
+    {
+     "name": "The basins fill with sediment",
+     "color": "#15803d"
+    }
+   ]
+  },
+  {
+   "title": "Across a subduction zone",
+   "prompt": "Put the features in order as you travel from the ocean toward the inside of the continent. The ocean side goes at the bottom.",
+   "why": "The oceanic plate sinks at the trench, and the sediment scraped off it piles up as the accretionary prism. Melting above the sinking plate feeds the volcanic arc farther inland, and beyond the arc the crust is folded and stacked in the fold-thrust belt.",
+   "topLabel": "Farthest inland",
+   "bottomLabel": "Ocean side",
+   "layers": [
+    {
+     "name": "Trench: the oceanic plate bends down",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Active accretionary prism",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Volcanic arc",
+     "color": "#be123c"
+    },
+    {
+     "name": "Fold-thrust belt",
+     "color": "#15803d"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Which stress?",
+   "prompt": "Sort each example into compression, tension or shear.",
+   "buckets": [
+    "Compression",
+    "Tension",
+    "Shear"
+   ],
+   "items": [
+    {
+     "text": "Two continents collide",
+     "b": 0
+    },
+    {
+     "text": "Rock shortens and thickens",
+     "b": 0
+    },
+    {
+     "text": "Reverse and thrust faults",
+     "b": 0
+    },
+    {
+     "text": "Convergent plate boundary",
+     "b": 0
+    },
+    {
+     "text": "The crust is pulled apart in rifting",
+     "b": 1
+    },
+    {
+     "text": "Rock stretches and thins",
+     "b": 1
+    },
+    {
+     "text": "Normal faults",
+     "b": 1
+    },
+    {
+     "text": "Divergent plate boundary",
+     "b": 1
+    },
+    {
+     "text": "Blocks move sideways past each other",
+     "b": 2
+    },
+    {
+     "text": "Strike-slip faults",
+     "b": 2
+    },
+    {
+     "text": "The San Andreas fault",
+     "b": 2
+    },
+    {
+     "text": "Transform plate boundary",
+     "b": 2
+    }
+   ],
+   "why": "Compression pushes rock together (shortening, thickening, reverse and thrust faults, collisions). Tension pulls it apart (stretching, thinning, normal faults, rifting). Shear moves blocks sideways past each other (strike-slip faults, transform boundaries)."
+  },
+  {
+   "title": "Fault, fold or joint?",
+   "prompt": "Sort each term or description into fault, fold or joint.",
+   "buckets": [
+    "Fault",
+    "Fold",
+    "Joint"
+   ],
+   "items": [
+    {
+     "text": "Hanging wall and footwall",
+     "b": 0
+    },
+    {
+     "text": "A scarp at the surface",
+     "b": 0
+    },
+    {
+     "text": "Grooved striations on a surface",
+     "b": 0
+    },
+    {
+     "text": "Fault breccia",
+     "b": 0
+    },
+    {
+     "text": "Limb",
+     "b": 1
+    },
+    {
+     "text": "Hinge",
+     "b": 1
+    },
+    {
+     "text": "Axial plane",
+     "b": 1
+    },
+    {
+     "text": "Syncline",
+     "b": 1
+    },
+    {
+     "text": "A crack with no offset",
+     "b": 2
+    },
+    {
+     "text": "Parallel cracks that cut rock into tall slabs",
+     "b": 2
+    },
+    {
+     "text": "A crack that forms as rock cools",
+     "b": 2
+    }
+   ],
+   "why": "Faults are fractures with slip, so they have walls, scarps, breccia and striations. Folds are bends in layers, described by limbs, hinge and axial plane. Joints are cracks where the sides have not moved."
+  },
+  {
+   "title": "Which mountain-building setting?",
+   "prompt": "Sort each item into continental collision, subduction or continental rifting.",
+   "buckets": [
+    "Continental collision",
+    "Subduction",
+    "Continental rifting"
+   ],
+   "items": [
+    {
+     "text": "India pushing into Asia",
+     "b": 0
+    },
+    {
+     "text": "The Himalayas",
+     "b": 0
+    },
+    {
+     "text": "A suture between two continents",
+     "b": 0
+    },
+    {
+     "text": "Very few volcanoes because neither continent sinks",
+     "b": 0
+    },
+    {
+     "text": "The Nazca Plate sinking beneath South America",
+     "b": 1
+    },
+    {
+     "text": "Accretionary prism",
+     "b": 1
+    },
+    {
+     "text": "Volcanic arc",
+     "b": 1
+    },
+    {
+     "text": "The Andes",
+     "b": 1
+    },
+    {
+     "text": "The Basin and Range",
+     "b": 2
+    },
+    {
+     "text": "A detachment fault under tilted blocks",
+     "b": 2
+    },
+    {
+     "text": "A rift volcano",
+     "b": 2
+    },
+    {
+     "text": "Rift margins that rise to form mountains",
+     "b": 2
+    }
+   ],
+   "why": "In a collision two continents meet and neither sinks, so there is a suture and few volcanoes. At a subduction zone an oceanic plate sinks, which builds an accretionary prism and a volcanic arc such as the Andes. In rifting the crust is stretched into ranges and basins, with detachment faults and rift volcanoes."
+  }
+ ]
+}

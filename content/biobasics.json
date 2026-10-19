@@ -1,0 +1,2398 @@
+{
+ "id": "biobasics",
+ "title": "Human Biology Basics",
+ "chapter": "Unit 1",
+ "icon": "🧬",
+ "color": "#c0392b",
+ "slideFile": "Human Biology Basics.pdf",
+ "intro": "Life is built in layers: a human is a species made of cells, and cells group into tissues. This unit follows that path from how humans are classified to the cell, its membrane and organelles, the four tissue types and their germ layers, and the words used to say where things are in the body.",
+ "sections": [
+  {
+   "id": "classify",
+   "title": "Classifying humans and cells",
+   "slides": "1-3",
+   "steps": [
+    {
+     "title": "Goals for this unit",
+     "bullets": [
+      "Recall how *Homo sapiens* is classified, and how eukaryotic cells differ from prokaryotic cells.",
+      "Contrast the ways molecules cross the plasma membrane, and describe the cell parts that make and package proteins.",
+      "Describe the tissue types and the germ layers they come from, and place body structures using the anatomical planes."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/taxonomy_2.webp",
+      "slide": "slide 2",
+      "alt": "A stack of nine labelled levels from Life at the top down to Species at the bottom."
+     },
+     "title": "The ladder of classification",
+     "bullets": [
+      "**Taxonomy** is a method used to classify and categorize organisms. Groups that share specific characteristics are placed in the same **taxon**.",
+      "The levels run from broad to specific: Life, Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+      "Taxa may include both extant (living) and extinct organisms. Taxa are distinct from clades."
+     ]
+    },
+    {
+     "title": "Where humans fit",
+     "bullets": [
+      "Humans (*Homo sapiens*) are categorized as Eukarya, Animalia, Chordata, Mammalia, Primates, Hominidae, *Homo*, *sapiens*.",
+      "Read in ladder order: domain Eukarya, kingdom Animalia, phylum Chordata, class Mammalia, order Primates, family Hominidae, genus *Homo*, species *sapiens*."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/prok_euk_3.webp",
+      "slide": "slide 3",
+      "alt": "A large animal cell with a big nucleus and many organelles, next to a small rod-shaped bacterium with a cell wall."
+     },
+     "title": "Eukaryote or prokaryote?",
+     "bullets": [
+      "A **eukaryotic** animal cell has a large nucleus and numerous small organelles. A flexible plasma membrane encloses its cytoplasm.",
+      "A **prokaryotic** cell, such as a bacterium, has a rigid cell wall surrounding the plasma membrane.",
+      "Its genetic material is not surrounded by a membrane, and it has no organelles. Humans belong to Eukarya, so human cells are eukaryotic."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Grouping organisms by shared characteristics gives every species one place on a ladder, from the broadest group down to the single species. That is why the human list starts with Eukarya and ends with *sapiens*."
+    },
+    {
+     "type": "trick",
+     "text": "After Life, the levels spell out with a silly sentence: Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species = 'Dear King Philip Came Over For Good Soup'."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 2 lists the human taxa in text and shows the ladder level names in the picture, with matching colours. Matching Primates to order and Hominidae to family is read from the matching order and colours, not stated word for word. The ladder starts with Life above Domain, but the human list starts at Eukarya. The deck says taxa are distinct from clades but never defines a clade, so do not build a question on that definition."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slides 1-3 (slide 1 = learning objectives, slide 2 = taxonomy ladder, slide 3 = eukaryote vs prokaryote with caption text from the figure).",
+    "The sentence about why classification helps is a generic gloss (outside source).",
+    "The 'Dear King Philip...' mnemonic is generic (outside source).",
+    "The gloss 'living' for 'extant' is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/taxonomy_2.webp",
+     "slide": "slide 2",
+     "alt": "A stack of nine labelled levels from Life at the top down to Species at the bottom."
+    },
+    {
+     "src": "img/biobasics/prok_euk_3.webp",
+     "slide": "slide 3",
+     "alt": "A large animal cell with a big nucleus and many organelles, next to a small rod-shaped bacterium with a cell wall."
+    }
+   ]
+  },
+  {
+   "id": "cellmem",
+   "title": "The cell and its membrane",
+   "slides": "4-6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/cell_4.webp",
+      "slide": "slide 4",
+      "alt": "A cut-away animal cell with labelled parts such as the nucleus, mitochondrion, Golgi apparatus and plasma membrane."
+     },
+     "title": "A tour of the cell",
+     "bullets": [
+      "The **cytosol** is the semifluid gel inside the cell. The **plasma membrane** controls the movement of materials into and out of the cell.",
+      "The nucleus holds DNA, the mitochondrion produces energy for the cell, and the lysosome digests damaged organelles and cellular debris.",
+      "Ribosomes are the site of protein synthesis. The rough ER makes proteins, and the Golgi apparatus refines, packages and ships macromolecular products."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/membrane_5.webp",
+      "slide": "slide 5",
+      "alt": "A slice through the plasma membrane showing a double layer of phospholipids with several kinds of embedded proteins and cholesterol."
+     },
+     "title": "Proteins sit in the membrane",
+     "bullets": [
+      "The plasma membrane is a **lipid bilayer**. Molecules with diverse functions are embedded in it, including transmembrane proteins and cholesterol.",
+      "The picture labels a receptor protein, an always-open channel protein, a gated channel protein (shown closed), a transport protein, and a glycoprotein with carbohydrate groups.",
+      "The membrane is a **selectively permeable** barrier, so it lets some molecules cross and keeps others out."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/phospholipid_6.webp",
+      "slide": "slide 6",
+      "alt": "A single phospholipid with a round polar head on top and two long fatty acid tails hanging down."
+     },
+     "title": "One phospholipid up close",
+     "bullets": [
+      "A phospholipid has a **polar head** made of a phosphate and glycerol.",
+      "Its **nonpolar tail** is made of two fatty acids.",
+      "In the picture, the heads form the two outer faces of the bilayer and the tails point inward between them."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A cell has to keep its inside organized while still taking in what it needs and sending out its products. A selectively permeable membrane can do both, because it lets some molecules cross and blocks others."
+    },
+    {
+     "type": "trick",
+     "text": "Picture a phospholipid as a lollipop with two sticks: a round polar head and two nonpolar tails. A bilayer is two rows of lollipops with the sticks pointing at each other."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 4 labels the plasma membrane as 'controls movement of materials into and out of cell'. Selectively permeable does not mean impermeable: some molecules do cross (see the transport slides). The slide 6 figure labels the head 'polar head' and the tail 'nonpolar tail'. Do not swap them."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slides 4-6 (labels and captions read from the figures).",
+    "The head/tail arrangement in the bilayer is read from the picture (the inset shows heads on both outer faces).",
+    "The 'why' sentence, the lollipop analogy and the gloss of selectively permeable (lets some molecules cross and keeps others out) are generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/cell_4.webp",
+     "slide": "slide 4",
+     "alt": "A cut-away animal cell with labelled parts such as the nucleus, mitochondrion, Golgi apparatus and plasma membrane."
+    },
+    {
+     "src": "img/biobasics/membrane_5.webp",
+     "slide": "slide 5",
+     "alt": "A slice through the plasma membrane showing a double layer of phospholipids with several kinds of embedded proteins and cholesterol."
+    },
+    {
+     "src": "img/biobasics/phospholipid_6.webp",
+     "slide": "slide 6",
+     "alt": "A single phospholipid with a round polar head on top and two long fatty acid tails hanging down."
+    }
+   ]
+  },
+  {
+   "id": "transport",
+   "title": "Moving across the membrane",
+   "slides": "7-9",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/passive_7.webp",
+      "slide": "slide 7",
+      "alt": "Three panels showing molecules crossing a membrane by diffusion through the lipid layer, through a channel, and by facilitated transport."
+     },
+     "title": "Passive transport needs no energy",
+     "bullets": [
+      "**Passive transport** does not require energy. Molecules move from regions of higher concentration to regions of lower concentration.",
+      "a) Lipid-soluble molecules such as O₂ and CO₂ diffuse freely through the lipid layer. b) Some polar and charged molecules diffuse through protein channels, and water is a typical example.",
+      "c) In **facilitated transport**, a molecule binds a protein, the protein changes shape, and the molecule is carried across. Glucose typically enters cells this way."
+     ]
+    },
+    {
+     "title": "Osmosis and channels",
+     "bullets": [
+      "**Osmosis** is the diffusion of H₂O from areas of lower solute concentration to areas of higher solute concentration.",
+      "Channels can be highly specific. Some are always open, while others are 'gated'."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/active_8.webp",
+      "slide": "slide 8",
+      "alt": "Two panels of carrier proteins moving molecules uphill, one powered by ATP breakdown and one powered by another molecule moving downhill."
+     },
+     "title": "Active transport needs energy",
+     "bullets": [
+      "**Active transport** requires energy. Molecules move from lower concentration to higher concentration, 'against' the concentration gradient.",
+      "It requires a transmembrane protein (a transporter protein) and uses ATP or another energy source.",
+      "In a) the breakdown of ATP (to ADP + Pi) changes the shape of the carrier protein. In b) the 'downhill' movement of one molecule supplies the energy to move another molecule 'uphill'."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/cf_9.webp",
+      "slide": "slide 9",
+      "alt": "A normal CFTR channel moving chloride ions out of the cell, next to a mutant channel with sticky mucus building up outside."
+     },
+     "title": "Cystic fibrosis: a faulty channel",
+     "bullets": [
+      "**Cystic fibrosis** is a genetic disorder (autosomal recessive). Mucus builds up in the lungs and causes chronic lung infection.",
+      "Mutations in the **CFTR** gene (cystic fibrosis transmembrane conductance regulator) affect a channel protein that transports Cl⁻ ions and HCO₃⁻ out of the cell.",
+      "As a result, osmosis is reduced and the extracellular space dehydrates."
+     ]
+    }
+   ],
+   "bullets": [
+    "Passive transport: no energy, from higher to lower concentration. Active transport: energy needed, from lower to higher concentration."
+   ],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a faulty CFTR channel matter? The channel normally moves Cl⁻ and HCO₃⁻ out of the cell. When it fails, osmosis is reduced, the extracellular space dehydrates, and sticky mucus builds up on the outside of the cell."
+    },
+    {
+     "type": "why",
+     "text": "Why does active transport need energy? It moves molecules against the concentration gradient, from lower to higher concentration, so the cell must spend ATP or another energy source."
+    },
+    {
+     "type": "trick",
+     "text": "Passive = downhill, like a ball rolling down a slope with no effort. Active = uphill, like pushing the ball up the slope, which takes energy."
+    },
+    {
+     "type": "trap",
+     "text": "Having a protein does not make transport active. Facilitated transport and channels use proteins but are listed under passive transport (no energy, high to low). Active transport is the one that needs energy and a transporter protein. Osmosis direction: the deck says water moves from LOWER solute concentration to HIGHER solute concentration. Do not reverse it. (Reading this as water moving from a higher to a lower water concentration is an inference, not stated in the deck.)"
+    }
+   ],
+   "table": {
+    "head": [
+     "Feature",
+     "Passive transport",
+     "Active transport"
+    ],
+    "rows": [
+     [
+      "Energy",
+      "None required",
+      "Required (ATP or another energy source)"
+     ],
+     [
+      "Direction",
+      "Higher to lower concentration",
+      "Lower to higher concentration, against the gradient"
+     ],
+     [
+      "Protein",
+      "Not always needed (lipid layer), or a channel or facilitated-transport protein",
+      "Needs a transmembrane transporter protein"
+     ],
+     [
+      "Examples",
+      "O₂ and CO₂ through the lipid layer, water through channels, glucose by facilitated transport",
+      "A carrier powered by ATP breakdown, or by another molecule moving downhill"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slides 7-9 (panel captions on slides 7 and 8 and the CFTR caption on slide 9 are read from the figures).",
+    "Slide 7 text: passive transport, osmosis, channels (always open or 'gated'). Slide 8 text: active transport.",
+    "The uphill/downhill ball analogy is generic glue; the words 'downhill' and 'uphill' also appear in the slide 8 figure caption (outside source for the ball image).",
+    "The cystic fibrosis 'why' box restates the slide's own points (CFTR defect, osmosis reduced, extracellular space dehydrates, sticky mucus on the outside of the cell); the slide does not say outright that dehydration causes the mucus, so the box does not either."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/passive_7.webp",
+     "slide": "slide 7",
+     "alt": "Three panels showing molecules crossing a membrane by diffusion through the lipid layer, through a channel, and by facilitated transport."
+    },
+    {
+     "src": "img/biobasics/active_8.webp",
+     "slide": "slide 8",
+     "alt": "Two panels of carrier proteins moving molecules uphill, one powered by ATP breakdown and one powered by another molecule moving downhill."
+    },
+    {
+     "src": "img/biobasics/cf_9.webp",
+     "slide": "slide 9",
+     "alt": "A normal CFTR channel moving chloride ions out of the cell, next to a mutant channel with sticky mucus building up outside."
+    }
+   ]
+  },
+  {
+   "id": "nucribo",
+   "title": "Nucleus and ribosomes",
+   "slides": "10-11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/nucleus_10.webp",
+      "slide": "slide 10",
+      "alt": "A nucleus cut open to show the nucleolus inside, with a close-up of the double nuclear membrane and its pores."
+     },
+     "title": "The nucleus: control center",
+     "bullets": [
+      "The **nucleus** contains the cell's genetic information (DNA) as chromosomes or chromatin. It controls all cellular activities.",
+      "The **nucleolus** is the nuclear site of ribosome biogenesis, which means making ribosomes.",
+      "A double-layered nuclear membrane surrounds the nucleus, and it has nuclear pores."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/ribosome_11.webp",
+      "slide": "slide 11",
+      "alt": "A ribosome with large and small subunits reading an mRNA strand while a chain of amino acids grows out of it."
+     },
+     "title": "Ribosomes translate mRNA",
+     "bullets": [
+      "**Ribosomes** are the site of protein synthesis. They are made of ribosomal RNA (rRNA) and proteins.",
+      "A ribosome translates messenger RNA (mRNA) into protein. In the picture, a growing chain of amino acids (the newly born protein) comes out of the ribosome.",
+      "Ribosomes attached to the ER surface make proteins that will be transported or exported. Free-floating ribosomes in the cytoplasm make proteins for immediate use."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are there two groups of ribosomes? Ribosomes on the ER make proteins that will be transported or exported, while free ribosomes in the cytoplasm make proteins the cell uses right away."
+    },
+    {
+     "type": "trick",
+     "text": "Think of mRNA as a written message and the ribosome as the reader. The ribosome 'translates' the message into a protein."
+    },
+    {
+     "type": "trap",
+     "text": "Protein is made on ribosomes, not in the nucleus. The nucleus holds the DNA, and the nucleolus is where ribosomes are built (ribosome biogenesis). Do not call the nucleolus the site of protein synthesis. The deck does not describe how the mRNA is copied from DNA, so questions should start from translation."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slides 10-11. Slide 4 figure adds 'nucleolus: synthesis of ribosomal subunits'.",
+    "Amino acids, tRNA and the A and P sites appear in the slide 11 picture only; the bottom rRNA diagrams (28S, 5S, 5.8S, 18S) were not used.",
+    "The message and reader analogy is generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/nucleus_10.webp",
+     "slide": "slide 10",
+     "alt": "A nucleus cut open to show the nucleolus inside, with a close-up of the double nuclear membrane and its pores."
+    },
+    {
+     "src": "img/biobasics/ribosome_11.webp",
+     "slide": "slide 11",
+     "alt": "A ribosome with large and small subunits reading an mRNA strand while a chain of amino acids grows out of it."
+    }
+   ]
+  },
+  {
+   "id": "package",
+   "title": "The ER, Golgi and vesicles",
+   "slides": "12-15",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/rough_er_12.webp",
+      "slide": "slide 12",
+      "alt": "Stacked folded membranes next to the nucleus covered in tiny dots, labelled rough ER."
+     },
+     "title": "Rough ER makes proteins",
+     "bullets": [
+      "The **endoplasmic reticulum (ER)** is a folded membranous network, like a 'net' or 'mesh'. It has two parts, the rough ER and the smooth ER.",
+      "The **rough ER** has ribosomes on its surface. It manufactures proteins, generally transmembrane proteins or proteins that will be secreted from the cell."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/smooth_er_13.webp",
+      "slide": "slide 13",
+      "alt": "Tube-like membranes with no dots, labelled smooth ER, and a small vesicle near the Golgi stack."
+     },
+     "title": "Smooth ER and vesicles",
+     "bullets": [
+      "The **smooth ER** has no ribosomes. It functions in lipid and hormone synthesis.",
+      "It packages proteins and lipids for delivery to the Golgi apparatus using **vesicles**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/golgi_14.webp",
+      "slide": "slide 14",
+      "alt": "A stack of flat green sacs, the Golgi apparatus, with vesicles, a lysosome and a secretory vesicle nearby."
+     },
+     "title": "The Golgi apparatus",
+     "bullets": [
+      "The **Golgi apparatus** is a stack of interconnected membrane-bound sacs. Vesicles from the ER fuse to one specific side of the Golgi.",
+      "Biomolecules are successively modified as they pass through. One example is **glycosylation**, which is adding a sugar to a protein or lipid.",
+      "Refined products are shipped elsewhere using vesicles."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/vesicles_15.webp",
+      "slide": "slide 15",
+      "alt": "A cell cut-away showing a peroxisome handling toxic waste and alcohol, and a lysosome handling an engulfed bacterium."
+     },
+     "title": "Four kinds of vesicle",
+     "bullets": [
+      "**Secretory vesicles** contain products destined for cellular export. **Endocytic vesicles** contain molecules imported from the external environment.",
+      "**Peroxisomes** contain enzymes that detoxify cell waste and other molecules. In the picture they handle alcohol and cell toxic waste.",
+      "**Lysosomes** contain digestive enzymes and catabolize macromolecules. In the picture a lysosome deals with a bacterium taken into the cell."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why use vesicles? Products have to travel from one compartment to another, from the ER to the Golgi and from the Golgi to the cell surface. Small membrane-bound bubbles carry the cargo safely between them."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a post office. The ribosome writes the letter (protein), the ER puts it in an envelope (vesicle), the Golgi sorts and stamps it (modifies it), and a secretory vesicle is the truck that carries it out of the cell."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 13 places 'packages proteins and lipids for delivery to the Golgi using vesicles' under the smooth ER, while slide 12 says the rough ER (with ribosomes) manufactures the proteins. The deck never says which part of the ER buds off the vesicles, so do not ask a question that depends on it. Also keep peroxisome (detoxify) and lysosome (digest) apart, and secretory (export) apart from endocytic (import)."
+    }
+   ],
+   "sourceNotes": [
+    "Deck slides 12-15. Slides 12 and 13 use the same ER picture, so the figure was cropped to two parts.",
+    "Slide 15 figure shows alcohol and toxic waste going into the peroxisome and a bacterium ending up in a lysosome with a residual body.",
+    "The 'why' sentence and post office analogy are generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/rough_er_12.webp",
+     "slide": "slide 12",
+     "alt": "Stacked folded membranes next to the nucleus covered in tiny dots, labelled rough ER."
+    },
+    {
+     "src": "img/biobasics/smooth_er_13.webp",
+     "slide": "slide 13",
+     "alt": "Tube-like membranes with no dots, labelled smooth ER, and a small vesicle near the Golgi stack."
+    },
+    {
+     "src": "img/biobasics/golgi_14.webp",
+     "slide": "slide 14",
+     "alt": "A stack of flat green sacs, the Golgi apparatus, with vesicles, a lysosome and a secretory vesicle nearby."
+    },
+    {
+     "src": "img/biobasics/vesicles_15.webp",
+     "slide": "slide 15",
+     "alt": "A cell cut-away showing a peroxisome handling toxic waste and alcohol, and a lysosome handling an engulfed bacterium."
+    }
+   ]
+  },
+  {
+   "id": "mitocyto",
+   "title": "Mitochondria and the cytoskeleton",
+   "slides": "16-18",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/mito_16.webp",
+      "slide": "slide 16",
+      "alt": "A cut-open mitochondrion with inner and outer membranes; O2, nutrients, ADP and Pi go in, and ATP and CO2 come out."
+     },
+     "title": "Mitochondria make ATP",
+     "bullets": [
+      "A **mitochondrion** is surrounded by a double membrane (an outer and an inner membrane). It produces energy for the cell as the site of cellular respiration.",
+      "It uses high-energy molecules and O₂ to generate adenosine triphosphate (**ATP**), producing CO₂ as a by-product.",
+      "Respiration happens at the inner membrane, using the electron transport chain and ATP synthase. Different cell types can contain vastly different numbers of mitochondria."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/cilia_17.webp",
+      "slide": "slide 17",
+      "alt": "A cross-section of a cilium or flagellum with pairs of microtubules arranged in a ring inside the plasma membrane."
+     },
+     "title": "Cytoskeleton, flagella and cilia",
+     "bullets": [
+      "The **cytoskeleton** is the internal scaffolding of cells. It maintains shape and anchors cellular structures.",
+      "It is made of **microtubules** (hollow tubes of tubulin protein) and microfilaments (thin fibres of actin protein).",
+      "The cytoskeleton is also found in flagella and cilia, which consist of a basal body (formed from a centriole) and an extended axoneme. Flagella enable sperm cells to swim."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/primary_cilia_18.webp",
+      "slide": "slide 18",
+      "alt": "Two diagrams of a primary cilium, one with no Hedgehog signal and no gene activity, and one with a Hedgehog signal and gene activity."
+     },
+     "title": "Primary cilia send signals",
+     "bullets": [
+      "Cells lining the airways have **motile cilia**. **Primary cilia** are used in signal transduction.",
+      "Example: the Hedgehog pathway. With no Hedgehog signal, Hedgehog-responsive genes are not transcribed. When Hedgehog is present, those genes are transcribed."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a cell need oxygen? Mitochondria use O₂ together with high-energy molecules to make ATP, and CO₂ leaves as the by-product."
+    },
+    {
+     "type": "trick",
+     "text": "A mitochondrion is a power plant: fuel (high-energy molecules) and O₂ go in, ATP (usable energy) comes out, and CO₂ is the exhaust."
+    },
+    {
+     "type": "trap",
+     "text": "Easy swap: microtubules are hollow tubes of TUBULIN; microfilaments are thin fibres of ACTIN. Another trio to keep apart: flagella (sperm swimming), motile cilia (airway lining) and primary cilia (signal transduction). The slide 18 pathway diagram is labelled 'Ex.' and its protein names (Patched, Smoothened, Gli) are not explained in the deck, so only the idea of a signalling cilium is testable."
+    }
+   ],
+   "table": {
+    "head": [
+     "Cell part",
+     "What it does"
+    ],
+    "rows": [
+     [
+      "Nucleus",
+      "Holds DNA and controls all cellular activities"
+     ],
+     [
+      "Nucleolus",
+      "Nuclear site of ribosome biogenesis"
+     ],
+     [
+      "Ribosome",
+      "Site of protein synthesis; translates mRNA into protein"
+     ],
+     [
+      "Rough ER",
+      "Has ribosomes; manufactures transmembrane and secreted proteins"
+     ],
+     [
+      "Smooth ER",
+      "Has no ribosomes; lipid and hormone synthesis"
+     ],
+     [
+      "Golgi apparatus",
+      "Modifies biomolecules (for example by glycosylation) and ships refined products in vesicles"
+     ],
+     [
+      "Secretory vesicle",
+      "Holds products destined for export"
+     ],
+     [
+      "Endocytic vesicle",
+      "Holds molecules imported from outside"
+     ],
+     [
+      "Peroxisome",
+      "Enzymes that detoxify cell waste and other molecules"
+     ],
+     [
+      "Lysosome",
+      "Digestive enzymes; catabolizes macromolecules"
+     ],
+     [
+      "Mitochondrion",
+      "Site of cellular respiration; makes ATP"
+     ],
+     [
+      "Cytoskeleton",
+      "Scaffolding that maintains shape and anchors cellular structures"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slides 16-18.",
+    "'Signal transduction' is not defined in the deck; no gloss is given in the notes.",
+    "The power plant analogy is generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/mito_16.webp",
+     "slide": "slide 16",
+     "alt": "A cut-open mitochondrion with inner and outer membranes; O2, nutrients, ADP and Pi go in, and ATP and CO2 come out."
+    },
+    {
+     "src": "img/biobasics/cilia_17.webp",
+     "slide": "slide 17",
+     "alt": "A cross-section of a cilium or flagellum with pairs of microtubules arranged in a ring inside the plasma membrane."
+    },
+    {
+     "src": "img/biobasics/primary_cilia_18.webp",
+     "slide": "slide 18",
+     "alt": "Two diagrams of a primary cilium, one with no Hedgehog signal and no gene activity, and one with a Hedgehog signal and gene activity."
+    }
+   ]
+  },
+  {
+   "id": "epith",
+   "title": "Tissues and epithelium",
+   "slides": "19-22",
+   "steps": [
+    {
+     "title": "Four tissue families",
+     "bullets": [
+      "A **tissue** is a group of cells within similar structures, specialized to perform a common function.",
+      "The four tissue types are epithelial tissue, connective tissue, muscle tissue and nervous tissue."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/epithelium_20.webp",
+      "slide": "slide 20",
+      "alt": "A human figure surrounded by six blocks of epithelial tissue, simple on the left and stratified on the right, each labelled with where it is found."
+     },
+     "title": "Epithelial shapes and layers",
+     "bullets": [
+      "Epithelial cells are connected to form a sheet. A sheet is classified by cell shape, such as **squamous** (flattened) or **cuboidal** (cube shaped).",
+      "The third shape is **columnar** (column shaped). A sheet is either **simple** (one layer) or stratified (many layers).",
+      "Simple squamous tissue lines blood vessels and the air sacs of the lungs and permits exchange of nutrients, wastes and gases. **Stratified** squamous tissue forms the outer layer of skin and protects against abrasion, drying out and infection."
+     ]
+    },
+    {
+     "title": "Glands, basement membrane, polarity",
+     "bullets": [
+      "Epithelial tissue lines body surfaces and cavities. It also forms **glands**: exocrine glands (for example saliva or sweat) and endocrine glands (for example thyroid or adrenal).",
+      "A **basement membrane** is a non-cellular layer of secreted proteins that attaches epithelial layers to the underlying tissues.",
+      "Epithelial cells are polarized, with an apical surface and a basal surface."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/junctions_22.webp",
+      "slide": "slide 22",
+      "alt": "Three drawings of cell junctions: tight junctions sealing cells, adhesion junctions anchoring cells, and gap junctions with protein channels."
+     },
+     "title": "Three kinds of cell junction",
+     "bullets": [
+      "Adjacent cells are held together by cell junctions. **Tight junctions** seal the plasma membranes tightly together and form leak-proof seals between cells.",
+      "**Adhesion junctions** anchor two cells together yet permit some movement, stretching or bending.",
+      "**Gap junctions** have protein channels that allow the direct transfer of water and ions between adjacent cells."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do some epithelia have one layer and others many? A thin single layer suits exchange, as in simple squamous tissue that lets nutrients, wastes and gases pass. Many layers suit protection, as in stratified squamous skin that guards against abrasion, drying out and infection."
+    },
+    {
+     "type": "trick",
+     "text": "Squamous = squashed flat, cuboidal = cubes, columnar = columns. Simple = a single layer, stratified = stacked strata."
+    },
+    {
+     "type": "trap",
+     "text": "Junction mix-up: TIGHT = sealed and leak-proof, ADHESION = anchored but flexible, GAP = protein channels that allow transport between cells. Gap junctions also appear in cardiac muscle (slide 26), so 'gap junctions' alone does not mean epithelium. Exocrine examples are saliva and sweat; endocrine examples are thyroid and adrenal. The slide 20 picture spells epididymis as 'epididymus'; use the correct spelling if it ever appears."
+    }
+   ],
+   "table": {
+    "head": [
+     "Epithelial type",
+     "Where it is found",
+     "What it does"
+    ],
+    "rows": [
+     [
+      "Simple squamous",
+      "Lines blood vessels and air sacs of the lungs",
+      "Permits exchange of nutrients, wastes and gases"
+     ],
+     [
+      "Simple cuboidal",
+      "Lines kidney tubules and glands",
+      "Secretes and reabsorbs water and small molecules"
+     ],
+     [
+      "Simple columnar",
+      "Lines most digestive organs",
+      "Absorbs nutrients and produces mucus"
+     ],
+     [
+      "Stratified squamous",
+      "Outer layer of skin, mouth and vagina",
+      "Protects against abrasion, drying out and infection"
+     ],
+     [
+      "Stratified cuboidal",
+      "Lines ducts of sweat glands",
+      "Secretes water and ions"
+     ],
+     [
+      "Stratified columnar",
+      "Lines the epididymis, mammary glands and larynx",
+      "Secretes mucus"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slides 19-22 (slide 19 = tissue types, slide 20 = epithelial shape and layers with figure labels, slide 21 = properties and junction list, slide 22 = junction figure captions).",
+    "The mnemonic for squamous, cuboidal, columnar, simple and stratified is generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/epithelium_20.webp",
+     "slide": "slide 20",
+     "alt": "A human figure surrounded by six blocks of epithelial tissue, simple on the left and stratified on the right, each labelled with where it is found."
+    },
+    {
+     "src": "img/biobasics/junctions_22.webp",
+     "slide": "slide 22",
+     "alt": "Three drawings of cell junctions: tight junctions sealing cells, adhesion junctions anchoring cells, and gap junctions with protein channels."
+    }
+   ]
+  },
+  {
+   "id": "connect",
+   "title": "Connective tissue",
+   "slides": "23-25",
+   "steps": [
+    {
+     "title": "What connective tissue does",
+     "bullets": [
+      "Connective tissue supports and connects body parts, and it stores fat.",
+      "It contains cells embedded in a nonliving **extracellular matrix**, which is synthesized by those same cells. The matrix is what provides strength.",
+      "It is generally categorized as either **fibrous** or specialized connective tissue."
+     ]
+    },
+    {
+     "title": "What fibrous tissue is made of",
+     "bullets": [
+      "Fibrous connective tissue is made of fibres (collagen, elastic and reticular fibres) and cells (fibroblasts, white blood cells and fat cells).",
+      "These are embedded in a 'ground substance' made of water, polysaccharides and proteins.",
+      "**Fibroblasts** secrete collagen, elastin and fibrillin proteins, as well as the components of the ground substance."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/loose_ct_24.webp",
+      "slide": "slide 24",
+      "alt": "A microscope photo and a drawing of loose connective tissue with randomly arranged fibres and fibroblasts."
+     },
+     "title": "Loose connective tissue",
+     "bullets": [
+      "**Loose connective tissue** has fewer fibres, with no pattern. It surrounds internal organs, muscles and blood vessels.",
+      "In the picture, collagen and elastin fibres are arrayed in a random pattern, with fibroblasts between them."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/dense_ct_24.webp",
+      "slide": "slide 24",
+      "alt": "A microscope photo and a drawing of dense connective tissue with parallel collagen fibres and fibroblast nuclei between them."
+     },
+     "title": "Dense connective tissue",
+     "bullets": [
+      "**Dense connective tissue** has more collagen fibres, aligned in parallel. It forms tendons, ligaments and deep skin layers.",
+      "In tendons and ligaments the fibres all point in the same direction, with fibroblasts in the narrow spaces between them."
+     ]
+    },
+    {
+     "title": "Elastic and reticular tissue",
+     "bullets": [
+      "**Elastic connective tissue** surrounds hollow organs that regularly change size or shape.",
+      "**Reticular connective tissue** makes up the internal framework of soft organs."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/cartilage_25.webp",
+      "slide": "slide 25",
+      "alt": "A microscope photo and a drawing of cartilage cells sitting in small chambers inside a dotted ground substance."
+     },
+     "title": "Cartilage",
+     "bullets": [
+      "**Cartilage** is an embryonic tissue that gives rise to bone. It also forms the nose, vertebral disks and joint cavities.",
+      "Mature cartilage cells, called chondrocytes, become trapped in chambers called lacunae within the hard, rubbery ground substance.",
+      "The ground substance is made of collagen fibres, polysaccharides, proteins and water."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/adipose_25.webp",
+      "slide": "slide 25",
+      "alt": "A microscope photo and a drawing of fat cells shaped like big bubbles with small nuclei pushed to the side."
+     },
+     "title": "Adipose tissue",
+     "bullets": [
+      "**Adipose tissue** is mostly fat cells (adipocytes). It functions in insulation, protection and energy storage.",
+      "A fat deposit can become so large that it pushes the nucleus of the fat cell to the side."
+     ]
+    },
+    {
+     "title": "Bone and blood",
+     "bullets": [
+      "**Bone** has a matrix of calcium and phosphate and forms the skeleton.",
+      "**Blood** has a fluid matrix of plasma, red and white blood cells, and platelets. It transports materials through the body."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the matrix matter so much? The cells make it and then sit inside it, and the matrix is what provides strength. A matrix of calcium and phosphate forms the skeleton, while a fluid matrix lets blood carry materials around the body."
+    },
+    {
+     "type": "trick",
+     "text": "Dense = tightly packed parallel ropes (tendons pull in one direction). Loose = a tangle of threads with no pattern."
+    },
+    {
+     "type": "trap",
+     "text": "Loose vs dense: loose has FEWER fibres in no pattern (around organs, muscles, blood vessels); dense has MORE collagen fibres aligned in parallel (tendons, ligaments, deep skin). Bone, blood, cartilage and adipose tissue are all special connective tissues, not separate tissue families. Cartilage is called an 'embryonic tissue that gives rise to bone' but it also stays in the nose, vertebral disks and joint cavities."
+    }
+   ],
+   "table": {
+    "head": [
+     "Type",
+     "What it is or does",
+     "Where or what for"
+    ],
+    "rows": [
+     [
+      "Loose",
+      "Fewer fibres, no pattern",
+      "Surrounds internal organs, muscles and blood vessels"
+     ],
+     [
+      "Dense",
+      "More collagen fibres, aligned in parallel",
+      "Tendons, ligaments and deep skin layers"
+     ],
+     [
+      "Elastic",
+      "Fibrous connective tissue",
+      "Surrounds hollow organs that change size or shape"
+     ],
+     [
+      "Reticular",
+      "Fibrous connective tissue",
+      "Internal framework of soft organs"
+     ],
+     [
+      "Cartilage",
+      "Embryonic tissue that gives rise to bone",
+      "Nose, vertebral disks and joint cavities"
+     ],
+     [
+      "Bone",
+      "Matrix of calcium and phosphate",
+      "Forms the skeleton"
+     ],
+     [
+      "Blood",
+      "Fluid matrix of plasma, red and white blood cells, and platelets",
+      "Transports materials through the body"
+     ],
+     [
+      "Adipose",
+      "Mostly fat cells (adipocytes)",
+      "Insulation, protection and energy storage"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slides 23-25 (figure captions on slides 24 and 25 are read from the figures).",
+    "Slide 23 splits fibrous from specialized; slide 25 is titled 'Special Connective Tissue'.",
+    "The rope and tangle analogy is generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/loose_ct_24.webp",
+     "slide": "slide 24",
+     "alt": "A microscope photo and a drawing of loose connective tissue with randomly arranged fibres and fibroblasts."
+    },
+    {
+     "src": "img/biobasics/dense_ct_24.webp",
+     "slide": "slide 24",
+     "alt": "A microscope photo and a drawing of dense connective tissue with parallel collagen fibres and fibroblast nuclei between them."
+    },
+    {
+     "src": "img/biobasics/cartilage_25.webp",
+     "slide": "slide 25",
+     "alt": "A microscope photo and a drawing of cartilage cells sitting in small chambers inside a dotted ground substance."
+    },
+    {
+     "src": "img/biobasics/adipose_25.webp",
+     "slide": "slide 25",
+     "alt": "A microscope photo and a drawing of fat cells shaped like big bubbles with small nuclei pushed to the side."
+    }
+   ]
+  },
+  {
+   "id": "muscnerv",
+   "title": "Muscle and nervous tissue",
+   "slides": "26-28",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/skeletal_27.webp",
+      "slide": "slide 27",
+      "alt": "A microscope photo and a drawing of skeletal muscle showing very long cells with many nuclei."
+     },
+     "title": "Skeletal muscle",
+     "bullets": [
+      "**Muscle tissue** consists of long, thin cells (muscle fibres) specialized to contract.",
+      "**Skeletal muscle** connects to tendons, which attach to bones. Its cells (myocytes) are very long and multinucleated.",
+      "It is used for the voluntary movement of body parts and is activated by nerves."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/cardiac_27.webp",
+      "slide": "slide 27",
+      "alt": "A microscope photo and a drawing of cardiac muscle cells that interconnect, with an intercalated disc and a nucleus labelled."
+     },
+     "title": "Cardiac muscle",
+     "bullets": [
+      "**Cardiac muscle** functions in the heart. Cardiomyocytes are largely mononucleated and are connected by gap junctions.",
+      "The cells interconnect with each other, and the picture labels an intercalated disc.",
+      "Its movement is involuntary and can occur without neural stimulation."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/smooth_27.webp",
+      "slide": "slide 27",
+      "alt": "A microscope photo and a drawing of a sheet of thin, tapered smooth muscle cells with their nuclei labelled."
+     },
+     "title": "Smooth muscle",
+     "bullets": [
+      "**Smooth muscle** surrounds hollow organs and tubes.",
+      "Its cells are thin and tapered, and its movement is also involuntary."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/neuron_28.webp",
+      "slide": "slide 28",
+      "alt": "A microscope photo and a drawing of a neuron with its cell body, branching dendrites and an axon, with glial cell nuclei around it."
+     },
+     "title": "Nervous tissue and neurons",
+     "bullets": [
+      "**Nervous tissue** consists primarily of **neurons**, cells specialized for generating and transmitting electrical impulses. It is located in the brain, spinal cord and peripheral nerves.",
+      "A neuron has a cell body (soma), **dendrites** that receive impulses, and an axon that transmits impulses.",
+      "**Glial cells** surround and protect neurons."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are the three muscle types treated differently? Skeletal muscle moves bones on purpose and is activated by nerves. Cardiac muscle and smooth muscle move involuntarily, and cardiac muscle can contract without neural stimulation."
+    },
+    {
+     "type": "trick",
+     "text": "Only skeletal muscle is voluntary: the skeleton moves when you decide. The heart and the muscle around hollow tubes are involuntary, and the heart can even contract without a nerve signal. For neurons: dendrites receive (D for 'door in') and the axon transmits (A for 'away')."
+    },
+    {
+     "type": "trap",
+     "text": "Nucleus count: skeletal muscle cells are multinucleated, cardiac cells are LARGELY mononucleated. Do not say all muscle is multinucleated. Dendrites receive impulses and the axon transmits them; glial cells protect neurons, they are not the cells that transmit impulses. The deck says smooth muscle movement is 'also involuntary' and does not say whether it needs neural stimulation, so only cardiac muscle is stated to move without neural stimulation."
+    }
+   ],
+   "table": {
+    "head": [
+     "Muscle type",
+     "Where it is",
+     "Control",
+     "Nuclei and connections"
+    ],
+    "rows": [
+     [
+      "Skeletal",
+      "Connects to tendons, which attach to bones",
+      "Voluntary; activated by nerves",
+      "Multinucleated, very long cells"
+     ],
+     [
+      "Cardiac",
+      "Heart",
+      "Involuntary; can occur without neural stimulation",
+      "Largely mononucleated; connected by gap junctions"
+     ],
+     [
+      "Smooth",
+      "Surrounds hollow organs and tubes",
+      "Involuntary",
+      "Thin, tapered cells"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slides 26-28 (slide 27 is the three muscle pictures with captions; slide 28 text plus labelled neuron picture).",
+    "Intercalated disc is only a label on the slide 27 picture; it is not explained in the text.",
+    "The 'D for door in' and 'A for away' memory aid is generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/skeletal_27.webp",
+     "slide": "slide 27",
+     "alt": "A microscope photo and a drawing of skeletal muscle showing very long cells with many nuclei."
+    },
+    {
+     "src": "img/biobasics/cardiac_27.webp",
+     "slide": "slide 27",
+     "alt": "A microscope photo and a drawing of cardiac muscle cells that interconnect, with an intercalated disc and a nucleus labelled."
+    },
+    {
+     "src": "img/biobasics/smooth_27.webp",
+     "slide": "slide 27",
+     "alt": "A microscope photo and a drawing of a sheet of thin, tapered smooth muscle cells with their nuclei labelled."
+    },
+    {
+     "src": "img/biobasics/neuron_28.webp",
+     "slide": "slide 28",
+     "alt": "A microscope photo and a drawing of a neuron with its cell body, branching dendrites and an axon, with glial cell nuclei around it."
+    }
+   ]
+  },
+  {
+   "id": "germ",
+   "title": "Germ layers",
+   "slides": "29",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/germ_stages_29.webp",
+      "slide": "slide 29",
+      "alt": "Three drawings in order: a round zygote, a blastula with a hollow space inside, and a folded gastrula."
+     },
+     "title": "From zygote to germ layers",
+     "bullets": [
+      "The early embryo goes through these stages in order: zygote, then blastula, then gastrula.",
+      "From the gastrula branch the three **primary germ layers**: ectoderm (outer layer), mesoderm (middle layer) and endoderm (internal layer).",
+      "The same picture also lists germ cells (sperm and egg) as their own branch."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/ectoderm_29.webp",
+      "slide": "slide 29",
+      "alt": "A box labelled ectoderm with three branches: outer surface with epidermal cells of skin, central nervous system with a brain neuron, and neural crest with a pigment cell."
+     },
+     "title": "Ectoderm: the outer layer",
+     "bullets": [
+      "The **ectoderm** is the outer layer.",
+      "Its branches are the outer surface (epidermal cells of skin), the central nervous system (neuron of the brain) and the neural crest (pigment cell, or melanocyte)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/mesoderm_29.webp",
+      "slide": "slide 29",
+      "alt": "A box labelled mesoderm with five branches: notochord, bone tissue, tubule cell of the kidney, red blood cells and facial muscle."
+     },
+     "title": "Mesoderm: the middle layer",
+     "bullets": [
+      "The **mesoderm** is the middle layer.",
+      "Its branches are dorsal (notochord), paraxial (bone tissue), intermediate (tubule cell of the kidney), lateral (red blood cells) and head (facial muscle)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/biobasics/endoderm_29.webp",
+      "slide": "slide 29",
+      "alt": "A box labelled endoderm with stomach, thyroid and lung cells, next to a box labelled germ cells with sperm and egg."
+     },
+     "title": "Endoderm and germ cells",
+     "bullets": [
+      "The **endoderm** is the internal layer. Its branches are the digestive tube (stomach cell), the pharynx (thyroid cell) and the respiratory tube (lung or alveolar cell).",
+      "**Germ cells** form a separate branch: male (sperm) and female (egg)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why learn the germ layers? Each of these adult cell types can be traced back to one layer of the early embryo, so the layer name tells you where the cell came from."
+    },
+    {
+     "type": "trick",
+     "text": "Ecto = outer, meso = middle, endo = inner. The layers are named in order from the outside of the embryo to the inside."
+    },
+    {
+     "type": "trap",
+     "text": "Easy swaps: bone, kidney tubule cells, red blood cells and facial muscle are MESODERM; the brain neuron is ECTODERM even though it ends up deep inside the body; stomach, thyroid and lung cells are ENDODERM. Germ cells (sperm and egg) are shown as a separate branch, not as one of the three primary germ layers. The deck gives only these example cells, so do not assume a tissue type comes from a single layer."
+    }
+   ],
+   "table": {
+    "head": [
+     "Germ layer",
+     "Branches shown",
+     "Example cells"
+    ],
+    "rows": [
+     [
+      "Ectoderm (outer layer)",
+      "Outer surface, central nervous system, neural crest",
+      "Epidermal cells of skin, neuron of the brain, pigment cell (melanocyte)"
+     ],
+     [
+      "Mesoderm (middle layer)",
+      "Dorsal, paraxial, intermediate, lateral, head",
+      "Notochord, bone tissue, tubule cell of the kidney, red blood cells, facial muscle"
+     ],
+     [
+      "Endoderm (internal layer)",
+      "Digestive tube, pharynx, respiratory tube",
+      "Stomach cell, thyroid cell, lung (alveolar) cell"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slide 29 only (figure from Developmental Biology, read from the picture; the three blue arrows point at ectoderm, mesoderm and endoderm).",
+    "The picture shows a line from the gastrula to the three layers and to germ cells.",
+    "The meaning of ecto, meso and endo as outer, middle and inner is given by the slide's labels (outer, middle, internal); the 'named from outside to inside' remark is generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/germ_stages_29.webp",
+     "slide": "slide 29",
+     "alt": "Three drawings in order: a round zygote, a blastula with a hollow space inside, and a folded gastrula."
+    },
+    {
+     "src": "img/biobasics/ectoderm_29.webp",
+     "slide": "slide 29",
+     "alt": "A box labelled ectoderm with three branches: outer surface with epidermal cells of skin, central nervous system with a brain neuron, and neural crest with a pigment cell."
+    },
+    {
+     "src": "img/biobasics/mesoderm_29.webp",
+     "slide": "slide 29",
+     "alt": "A box labelled mesoderm with five branches: notochord, bone tissue, tubule cell of the kidney, red blood cells and facial muscle."
+    },
+    {
+     "src": "img/biobasics/endoderm_29.webp",
+     "slide": "slide 29",
+     "alt": "A box labelled endoderm with stomach, thyroid and lung cells, next to a box labelled germ cells with sperm and egg."
+    }
+   ]
+  },
+  {
+   "id": "cavities",
+   "title": "Body cavities and membranes",
+   "slides": "30",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/cavities_30.webp",
+      "slide": "slide 30",
+      "alt": "A side view and a front view of a person with the cranial, vertebral, thoracic, abdominal and pelvic cavities labelled, and the diaphragm marked."
+     },
+     "title": "The main body cavities",
+     "bullets": [
+      "Tissue membranes line the four main body cavities: the **thoracic cavity** (including the pericardial cavity and two pleural cavities), the abdominal cavity, the cranial cavity and the spinal cavity.",
+      "In the picture, the cranial cavity and the vertebral canal (the space called the spinal cavity above) are grouped as the posterior cavity. The thoracic, abdominal and pelvic cavities are grouped as the anterior cavity. The picture also shows a pelvic cavity, which is not one of the four listed.",
+      "The diaphragm separates the thoracic and abdominal cavities."
+     ]
+    },
+    {
+     "title": "Four kinds of tissue membrane",
+     "bullets": [
+      "**Serous membranes** line and lubricate body cavities. **Mucous membranes** line and lubricate the airways and the digestive and reproductive tracts.",
+      "**Synovial membranes** line joint spaces. **Cutaneous membranes** form the skin."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are the linings described as lubricating? That is what these membranes do to the surfaces they cover: serous membranes lubricate the body cavities, and mucous membranes lubricate the airways and the digestive and reproductive tracts."
+    },
+    {
+     "type": "trick",
+     "text": "Match each name to its place: Cutaneous = cut-ous = skin. Synovial = joints. Mucous = mucus-covered tubes (airways, digestive and reproductive tracts). Serous = body cavities."
+    },
+    {
+     "type": "trap",
+     "text": "The text on slide 30 names four main cavities (thoracic, abdominal, cranial, spinal), but the figure also labels a pelvic cavity and calls the spinal cavity the 'vertebral canal', and it groups them as posterior and anterior cavities. Avoid questions that ask how many cavities there are or whether the pelvic cavity counts. Use the figure labels for naming the diaphragm, pericardial and pleural cavities."
+    }
+   ],
+   "table": {
+    "head": [
+     "Membrane",
+     "Where it is",
+     "Job"
+    ],
+    "rows": [
+     [
+      "Serous",
+      "Lines body cavities",
+      "Lines and lubricates"
+     ],
+     [
+      "Mucous",
+      "Airways, digestive tract and reproductive tract",
+      "Lines and lubricates"
+     ],
+     [
+      "Synovial",
+      "Joint spaces",
+      "Lines the joint space"
+     ],
+     [
+      "Cutaneous",
+      "The skin",
+      "Forms the skin"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slide 30 (text for the four main cavities and the four membranes; figure labels for pelvic cavity, vertebral canal, posterior and anterior cavity, and diaphragm).",
+    "The lubricating remark is generic glue (outside source).",
+    "The 'cut-ous' memory aid is generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/cavities_30.webp",
+     "slide": "slide 30",
+     "alt": "A side view and a front view of a person with the cranial, vertebral, thoracic, abdominal and pelvic cavities labelled, and the diaphragm marked."
+    }
+   ]
+  },
+  {
+   "id": "planes",
+   "title": "Anatomical planes and directions",
+   "slides": "31",
+   "steps": [
+    {
+     "img": {
+      "src": "img/biobasics/planes_31.webp",
+      "slide": "slide 31",
+      "alt": "A woman standing with three flat sheets cutting through her body, labelled frontal, transverse and midsagittal planes, with direction words such as superior, inferior, anterior, posterior, proximal and distal."
+     },
+     "title": "Three anatomical planes",
+     "bullets": [
+      "The **midsagittal plane** separates left from right.",
+      "The **frontal (coronal) plane** separates front from back.",
+      "The **transverse (horizontal) plane** separates top from bottom."
+     ]
+    },
+    {
+     "title": "Direction words",
+     "bullets": [
+      "**Superior** means closer to the head or upper part of a structure. **Inferior** means farther from the head or toward the lower part.",
+      "**Anterior** means at or near the front. **Posterior** means at or near the back.",
+      "**Proximal** means nearer to the trunk. **Distal** means farther away from the trunk."
+     ]
+    },
+    {
+     "title": "Embryos and four-legged animals",
+     "bullets": [
+      "Different terms are used when discussing the embryo. The picture shows the alternative words in blue: anterior beside superior, posterior beside inferior, ventral beside anterior, and dorsal beside posterior.",
+      "The frontal and transverse planes are flipped for quadrupeds."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why use fixed planes and direction words? Words like 'above' or 'on the left' change when the body moves. Planes and terms such as superior, inferior, proximal and distal describe a position in the same way every time."
+    },
+    {
+     "type": "trick",
+     "text": "Proximal sounds like proximity (near the trunk), and distal sounds like distance (far from the trunk). Transverse means across, so it cuts the body into a top part and a bottom part."
+    },
+    {
+     "type": "trap",
+     "text": "The slide gives '(Left - Right)', '(Front - Back)' and '(Top - Bottom)' beside the plane names; these are read as what each plane separates, which is the standard meaning, but the slide does not spell this out. Slide 31 also does not say outright that the blue words are the embryo terms; they sit beside the 'different terms are used when discussing the embryo' bullet. The slide gives no list of organs for each plane, so only the plane names, direction words and cavity positions are testable. Do not confuse anterior (front, ventral) with superior (toward the head)."
+    }
+   ],
+   "table": {
+    "head": [
+     "Plane",
+     "Separates",
+     "Other name"
+    ],
+    "rows": [
+     [
+      "Midsagittal",
+      "Left from right",
+      "None given"
+     ],
+     [
+      "Frontal",
+      "Front from back",
+      "Coronal"
+     ],
+     [
+      "Transverse",
+      "Top from bottom",
+      "Horizontal"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Deck slide 31 (text for the planes and the embryo and quadruped note; figure labels for superior, inferior, anterior, posterior, proximal and distal and the blue alternative terms).",
+    "The learning objective about assigning organ positions in each plane is covered through the plane and direction terms and the cavity figure, because the deck gives no organ-by-plane list.",
+    "'Separates' for each plane is the standard reading of the parenthetical pairs (outside source).",
+    "The 'above or left changes with posture' remark and the memory aids are generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/biobasics/planes_31.webp",
+     "slide": "slide 31",
+     "alt": "A woman standing with three flat sheets cutting through her body, labelled frontal, transverse and midsagittal planes, with direction words such as superior, inferior, anterior, posterior, proximal and distal."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "head": [
+   "Tissue",
+   "Main job",
+   "Key features",
+   "Examples"
+  ],
+  "rows": [
+   [
+    "Epithelial",
+    "Lines body surfaces and cavities; forms glands",
+    "Cells joined in a sheet (simple or stratified); sits on a basement membrane; held together by cell junctions",
+    "Outer layer of skin, lining of digestive organs, sweat and thyroid glands"
+   ],
+   [
+    "Connective",
+    "Supports and connects body parts; stores fat",
+    "Cells embedded in a nonliving extracellular matrix made by those cells; the matrix gives strength",
+    "Tendons, ligaments, cartilage, bone, blood, adipose tissue"
+   ],
+   [
+    "Muscle",
+    "Contracts (long, thin cells called muscle fibres)",
+    "Skeletal is voluntary; cardiac and smooth are involuntary",
+    "Skeletal muscle on bones, heart muscle, muscle around hollow organs"
+   ],
+   [
+    "Nervous",
+    "Generates and transmits electrical impulses",
+    "Neurons (cell body, dendrites, axon) protected by glial cells",
+    "Brain, spinal cord, peripheral nerves"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "hb-c1",
+   "front": "What is taxonomy, and what is a taxon?",
+   "back": "Taxonomy is a method used to classify and categorize organisms. Groups of organisms that share specific characteristics are grouped within the same taxon, and taxa may include both extant and extinct organisms.",
+   "short": "Method to classify organisms into taxa",
+   "src": "Slide 2"
+  },
+  {
+   "id": "hb-c2",
+   "front": "Give the classification of humans from broadest to most specific.",
+   "back": "Eukarya, Animalia, Chordata, Mammalia, Primates, Hominidae, Homo, sapiens.",
+   "short": "Eukarya down to sapiens, eight groups",
+   "src": "Slide 2"
+  },
+  {
+   "id": "hb-c3",
+   "front": "List the levels of the classification ladder from broad to specific.",
+   "back": "Life, Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species.",
+   "short": "Life, Domain, Kingdom, Phylum ... Species",
+   "src": "Slide 2"
+  },
+  {
+   "id": "hb-c4",
+   "front": "Humans belong to the domain Eukarya. How do eukaryotic and prokaryotic cells differ?",
+   "back": "A eukaryotic animal cell has a large nucleus and numerous small organelles. A prokaryotic cell such as a bacterium has a rigid cell wall around its plasma membrane, no membrane around its genetic material, and no organelles.",
+   "short": "Eukaryote: nucleus, organelles; prokaryote: neither",
+   "src": "Slides 2-3"
+  },
+  {
+   "id": "hb-c5",
+   "front": "What is the plasma membrane?",
+   "back": "A selectively permeable barrier built from a lipid bilayer, with embedded molecules such as transmembrane proteins and cholesterol. It controls the movement of materials into and out of the cell.",
+   "short": "Selectively permeable lipid bilayer barrier",
+   "src": "Slides 4-5"
+  },
+  {
+   "id": "hb-c6",
+   "front": "Describe the structure of a phospholipid.",
+   "back": "A phospholipid has a polar head (a phosphate and glycerol) and a nonpolar tail made of two fatty acids.",
+   "short": "Polar head, two nonpolar fatty acid tails",
+   "src": "Slide 6"
+  },
+  {
+   "id": "hb-c7",
+   "front": "What is passive transport?",
+   "back": "Transport across the membrane that does not require energy. Molecules move from regions of higher concentration to regions of lower concentration.",
+   "short": "No energy; high to low concentration",
+   "src": "Slide 7"
+  },
+  {
+   "id": "hb-c8",
+   "front": "What is active transport?",
+   "back": "Transport that requires energy (ATP or another energy source). Molecules move from lower to higher concentration, against the concentration gradient, using a transmembrane transporter protein.",
+   "short": "Needs energy; low to high concentration",
+   "src": "Slide 8"
+  },
+  {
+   "id": "hb-c9",
+   "front": "What is osmosis?",
+   "back": "The diffusion of H₂O from areas of lower solute concentration to areas of higher solute concentration.",
+   "short": "Water moves toward higher solute concentration",
+   "src": "Slide 7"
+  },
+  {
+   "id": "hb-c10",
+   "front": "What is facilitated transport?",
+   "back": "A passive process in which a molecule binds a protein, the protein changes shape, and the molecule is carried across the membrane. Glucose typically enters cells this way.",
+   "short": "Binds a protein that changes shape",
+   "src": "Slide 7 (figure caption)"
+  },
+  {
+   "id": "hb-c11",
+   "front": "What are the two ways active transport can be powered?",
+   "back": "The breakdown of ATP (to ADP + Pi) can change the shape of the carrier protein. Or the 'downhill' transport of one molecule can supply the energy to move another molecule 'uphill'.",
+   "short": "ATP breakdown or another molecule's downhill move",
+   "src": "Slide 8 (figure caption)"
+  },
+  {
+   "id": "hb-c12",
+   "front": "What causes cystic fibrosis, and what happens in the body?",
+   "back": "It is an autosomal recessive genetic disorder caused by mutations in the CFTR gene, which encodes a channel protein that transports Cl⁻ and HCO₃⁻ out of the cell. Osmosis is reduced, the extracellular space dehydrates, and mucus builds up in the lungs, causing chronic lung infection.",
+   "short": "Faulty CFTR channel; mucus builds in lungs",
+   "src": "Slide 9"
+  },
+  {
+   "id": "hb-c13",
+   "front": "What does the nucleus contain and do, and what is the nucleolus?",
+   "back": "The nucleus contains the cell's genetic information (DNA) as chromosomes or chromatin, and it controls all cellular activities. The nucleolus is the nuclear site of ribosome biogenesis (making ribosomes). The nucleus has a double-layered nuclear membrane with nuclear pores.",
+   "short": "Holds DNA; nucleolus makes ribosomes",
+   "src": "Slide 10"
+  },
+  {
+   "id": "hb-c14",
+   "front": "What are ribosomes made of, and what do they do?",
+   "back": "Ribosomes are made of ribosomal RNA (rRNA) and proteins. They are the site of protein synthesis and translate messenger RNA (mRNA) into proteins.",
+   "short": "rRNA plus proteins; translate mRNA",
+   "src": "Slide 11"
+  },
+  {
+   "id": "hb-c15",
+   "front": "How do ER-attached ribosomes differ from free ribosomes?",
+   "back": "Ribosomes attached to the ER surface make proteins that will be transported or exported from the cell. Free-floating ribosomes in the cytoplasm make proteins for immediate use.",
+   "short": "Attached: export proteins; free: immediate use",
+   "src": "Slide 11"
+  },
+  {
+   "id": "hb-c16",
+   "front": "What is the rough ER?",
+   "back": "The part of the endoplasmic reticulum (a folded membranous network) that has ribosomes on its surface. It manufactures proteins, generally transmembrane proteins or proteins that will be secreted from the cell.",
+   "short": "ER with ribosomes making secreted proteins",
+   "src": "Slide 12"
+  },
+  {
+   "id": "hb-c17",
+   "front": "What is the smooth ER?",
+   "back": "The part of the endoplasmic reticulum with no ribosomes. It functions in lipid and hormone synthesis and packages proteins and lipids in vesicles for delivery to the Golgi apparatus.",
+   "short": "ER without ribosomes; lipids and hormones",
+   "src": "Slide 13"
+  },
+  {
+   "id": "hb-c18",
+   "front": "What does the Golgi apparatus do?",
+   "back": "It is a stack of interconnected membrane-bound sacs. Vesicles from the ER fuse to one specific side, biomolecules are successively modified as they pass through (for example by glycosylation, adding a sugar), and refined products are shipped elsewhere in vesicles.",
+   "short": "Stack of sacs that modifies and ships",
+   "src": "Slide 14"
+  },
+  {
+   "id": "hb-c19",
+   "front": "Compare secretory and endocytic vesicles.",
+   "back": "Secretory vesicles contain products destined for cellular export. Endocytic vesicles contain molecules imported from the external environment.",
+   "short": "Export vesicles versus import vesicles",
+   "src": "Slide 15"
+  },
+  {
+   "id": "hb-c20",
+   "front": "Compare peroxisomes and lysosomes.",
+   "back": "Peroxisomes contain enzymes that detoxify cell waste and other molecules. Lysosomes contain digestive enzymes and catabolize macromolecules.",
+   "short": "Peroxisome detoxifies; lysosome digests",
+   "src": "Slide 15"
+  },
+  {
+   "id": "hb-c21",
+   "front": "What do mitochondria do?",
+   "back": "A mitochondrion has a double membrane and is the site of cellular respiration (at the inner membrane, through the electron transport chain and ATP synthase). It uses high-energy molecules and O₂ to make ATP, with CO₂ as a by-product.",
+   "short": "Double membrane; makes ATP by respiration",
+   "src": "Slide 16"
+  },
+  {
+   "id": "hb-c22",
+   "front": "What is the cytoskeleton made of?",
+   "back": "Microtubules (hollow tubes of tubulin protein) and microfilaments (thin fibres of actin protein). It is the internal scaffolding that maintains cell shape and anchors cellular structures.",
+   "short": "Tubulin microtubules and actin microfilaments",
+   "src": "Slide 17"
+  },
+  {
+   "id": "hb-c23",
+   "front": "Compare flagella, motile cilia and primary cilia.",
+   "back": "Flagella and cilia are built from a basal body (formed from a centriole) and an extended axoneme. Flagella enable sperm cells to swim, cells lining the airways have motile cilia, and primary cilia are used in signal transduction.",
+   "short": "Sperm swim; airways move; primary signal",
+   "src": "Slides 17-18"
+  },
+  {
+   "id": "hb-c24",
+   "front": "What is a tissue, and what are the four tissue types?",
+   "back": "A tissue is a group of cells within similar structures, specialized to perform a common function. The four types are epithelial, connective, muscle and nervous tissue.",
+   "short": "Epithelial, connective, muscle, nervous",
+   "src": "Slide 19"
+  },
+  {
+   "id": "hb-c25",
+   "front": "How are epithelial tissues classified?",
+   "back": "By cell shape (squamous = flattened, cuboidal = cube shaped, columnar = column shaped) and by layers (simple = one layer, stratified = many layers). Epithelial tissue also forms exocrine glands (saliva, sweat) and endocrine glands (thyroid, adrenal).",
+   "short": "By shape and by number of layers",
+   "src": "Slides 20-21"
+  },
+  {
+   "id": "hb-c26",
+   "front": "What is the basement membrane?",
+   "back": "A non-cellular layer of secreted proteins that attaches epithelial layers to the underlying tissues. Epithelial cells are polarized, with apical and basal surfaces.",
+   "short": "Protein layer attaching epithelium to tissue below",
+   "src": "Slide 21"
+  },
+  {
+   "id": "hb-c27",
+   "front": "Compare tight, adhesion and gap junctions.",
+   "back": "Tight junctions seal plasma membranes tightly together (leak-proof). Adhesion junctions anchor cells but permit some movement, stretching or bending. Gap junctions have protein channels that allow transport between cells.",
+   "short": "Seal, anchor, or pass molecules between cells",
+   "src": "Slides 21-22"
+  },
+  {
+   "id": "hb-c28",
+   "front": "What is the extracellular matrix of connective tissue?",
+   "back": "A nonliving material synthesized by the tissue's own cells, in which those cells are embedded. It is what provides strength. In fibrous tissue, fibroblasts secrete collagen, elastin and fibrillin proteins and the ground substance.",
+   "short": "Nonliving matrix that gives strength",
+   "src": "Slide 23"
+  },
+  {
+   "id": "hb-c29",
+   "front": "Name the four types of fibrous connective tissue and where each is found.",
+   "back": "Loose (around internal organs, muscles and blood vessels), dense (tendons, ligaments and deep skin), elastic (around hollow organs that change size or shape) and reticular (internal framework of soft organs).",
+   "short": "Loose, dense, elastic, reticular",
+   "src": "Slide 24"
+  },
+  {
+   "id": "hb-c30",
+   "front": "Name the special connective tissues and what each does.",
+   "back": "Cartilage (embryonic tissue that gives rise to bone; also forms the nose, vertebral disks and joint cavities), bone (matrix of calcium and phosphate; forms the skeleton), blood (fluid matrix of plasma, red and white blood cells and platelets; transports materials) and adipose tissue (fat cells; insulation, protection, energy storage).",
+   "short": "Cartilage, bone, blood, adipose",
+   "src": "Slide 25"
+  },
+  {
+   "id": "hb-c31",
+   "front": "Compare skeletal, cardiac and smooth muscle.",
+   "back": "Skeletal muscle attaches to bones through tendons, has multinucleated cells and moves voluntarily under nerve control. Cardiac muscle is in the heart, is largely mononucleated with gap junctions, and moves involuntarily without needing neural stimulation. Smooth muscle surrounds hollow organs and tubes and is also involuntary.",
+   "short": "Skeletal voluntary; cardiac and smooth involuntary",
+   "src": "Slide 26"
+  },
+  {
+   "id": "hb-c32",
+   "front": "Describe a neuron and the cells that protect it.",
+   "back": "A neuron generates and transmits electrical impulses. It has a cell body (soma), dendrites that receive impulses, and an axon that transmits impulses. Glial cells surround and protect neurons.",
+   "short": "Soma, dendrites receive, axon transmits",
+   "src": "Slide 28"
+  },
+  {
+   "id": "hb-c33",
+   "front": "What are the early embryo stages, in order?",
+   "back": "Zygote, then blastula, then gastrula, from which the germ layers branch.",
+   "short": "Zygote, blastula, gastrula",
+   "src": "Slide 29"
+  },
+  {
+   "id": "hb-c34",
+   "front": "Name the three primary germ layers.",
+   "back": "Ectoderm (outer layer), mesoderm (middle layer) and endoderm (internal layer).",
+   "short": "Outer, middle and internal germ layers",
+   "src": "Slide 29"
+  },
+  {
+   "id": "hb-c35",
+   "front": "Give example cells from each germ layer.",
+   "back": "Ectoderm: epidermal cells of skin, brain neurons, pigment cells. Mesoderm: notochord, bone tissue, kidney tubule cells, red blood cells, facial muscle. Endoderm: stomach, thyroid and lung (alveolar) cells.",
+   "short": "Skin and neurons; blood and bone; stomach and lung",
+   "src": "Slide 29"
+  },
+  {
+   "id": "hb-c36",
+   "front": "Which four main body cavities do tissue membranes line?",
+   "back": "The thoracic cavity (including the pericardial cavity and two pleural cavities), the abdominal cavity, the cranial cavity and the spinal cavity. The diaphragm separates the thoracic and abdominal cavities.",
+   "short": "Thoracic, abdominal, cranial and spinal cavities",
+   "src": "Slide 30 (diaphragm from the figure)"
+  },
+  {
+   "id": "hb-c37",
+   "front": "Match each tissue membrane to its location.",
+   "back": "Serous membranes line and lubricate body cavities. Mucous membranes line and lubricate the airways and the digestive and reproductive tracts. Synovial membranes line joint spaces. Cutaneous membranes form the skin.",
+   "short": "Serous, mucous, synovial, cutaneous locations",
+   "src": "Slide 30"
+  },
+  {
+   "id": "hb-c38",
+   "front": "Name the three anatomical planes and what each separates.",
+   "back": "The midsagittal plane separates left from right, the frontal (coronal) plane separates front from back, and the transverse (horizontal) plane separates top from bottom. The frontal and transverse planes are flipped for quadrupeds.",
+   "short": "Midsagittal, frontal, transverse planes",
+   "src": "Slide 31 ('separates' is the standard reading of the pairs, outside source)"
+  },
+  {
+   "id": "hb-c39",
+   "front": "What do superior, inferior, anterior and posterior mean?",
+   "back": "Superior means closer to the head or upper part of a structure, and inferior means farther from the head or toward the lower part. Anterior means at or near the front, and posterior means at or near the back.",
+   "short": "Head, lower part, front and back words",
+   "src": "Slide 31 (figure labels)"
+  },
+  {
+   "id": "hb-c40",
+   "front": "What do proximal and distal mean?",
+   "back": "Proximal means nearer to the trunk. Distal means farther away from the trunk.",
+   "short": "Proximal is near the trunk, distal is far",
+   "src": "Slide 31 (figure labels)"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "hb-1",
+   "q": "Humans are classified as Eukarya, Animalia, Chordata, Mammalia, Primates, Hominidae, *Homo*, *sapiens*. Which of these groups is the broadest, meaning it includes the greatest variety of organisms?",
+   "options": [
+    "Primates",
+    "Mammalia",
+    "Chordata",
+    "Animalia",
+    "Eukarya"
+   ],
+   "answer": 4,
+   "why": "The ladder runs from Life and Domain at the top down to Species. Eukarya is the domain, the highest level in the human list, so it is the broadest. The group *sapiens* is a single species.",
+   "source": "Slide 2"
+  },
+  {
+   "id": "hb-2",
+   "q": "Which of the following is NOT one of the groups in the classification of *Homo sapiens*?",
+   "options": [
+    "Reptilia",
+    "Primates",
+    "Chordata",
+    "Hominidae",
+    "Animalia"
+   ],
+   "answer": 0,
+   "why": "The human classification is Eukarya, Animalia, Chordata, Mammalia, Primates, Hominidae, *Homo*, *sapiens*. Reptilia is not in the list, because humans are in Mammalia.",
+   "source": "Slide 2"
+  },
+  {
+   "id": "hb-3",
+   "q": "Which statements about a prokaryotic cell, such as a bacterium, are correct?\nI. A rigid cell wall surrounds its plasma membrane.\nII. Its genetic material is not surrounded by a membrane.\nIII. It contains numerous small organelles.",
+   "options": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "I, II and III",
+    "none of the above"
+   ],
+   "answer": 1,
+   "why": "A prokaryotic cell has a rigid cell wall around the plasma membrane, no membrane around its genetic material, and no organelles. Numerous small organelles are a feature of the eukaryotic animal cell.",
+   "source": "Slide 3 (figure caption)"
+  },
+  {
+   "id": "hb-4",
+   "q": "Which of the following is NOT a feature of the plasma membrane?",
+   "options": [
+    "It is a selectively permeable barrier.",
+    "It is built around a lipid bilayer.",
+    "It has transmembrane proteins embedded in it.",
+    "It blocks every molecule from crossing, so nothing can enter or leave.",
+    "It contains cholesterol."
+   ],
+   "answer": 3,
+   "why": "The plasma membrane is selectively permeable, so some molecules do cross, by passive or active transport. A barrier that blocks everything is not what the membrane is.",
+   "source": "Slides 5, 7, 8"
+  },
+  {
+   "id": "hb-5",
+   "q": "Which statements about active transport are correct?\nI. It requires energy, such as ATP.\nII. Molecules move from lower to higher concentration, against the concentration gradient.\nIII. It requires a transmembrane transporter protein.",
+   "options": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "I and III only",
+    "all of the above"
+   ],
+   "answer": 4,
+   "why": "All three statements describe active transport: it uses ATP or another energy source, moves molecules against the gradient, and needs a transporter protein.",
+   "source": "Slide 8"
+  },
+  {
+   "id": "hb-6",
+   "q": "The picture shows three ways molecules cross the plasma membrane without energy. In panel (c), a molecule binds a protein, the protein changes shape, and the molecule is carried across. What is this process called?",
+   "options": [
+    "Facilitated transport",
+    "Osmosis",
+    "Active transport using ATP",
+    "Diffusion through the lipid layer",
+    "Diffusion through an always-open channel"
+   ],
+   "answer": 0,
+   "why": "Panel (c) shows facilitated transport. The binding and shape change of the protein carry the molecule across, and no energy is needed. Glucose typically enters cells this way.",
+   "source": "Slide 7 (figure caption)",
+   "img": {
+    "src": "img/biobasics/passive_7.webp",
+    "alt": "Three panels showing molecules crossing a membrane by diffusion through the lipid layer, through a channel, and by facilitated transport."
+   }
+  },
+  {
+   "id": "hb-7",
+   "q": "Glucose typically enters cells by facilitated transport, which uses a protein that changes shape. Why is this still classed as passive transport?",
+   "options": [
+    "Because passive transport never involves proteins",
+    "Because ATP is used to change the shape of the protein",
+    "Because glucose moves from lower to higher concentration",
+    "Because glucose moves down its concentration gradient and no energy is required",
+    "Because glucose crosses through the lipid layer itself"
+   ],
+   "answer": 3,
+   "why": "Passive transport is defined by needing no energy and by movement from higher to lower concentration. It is not defined by the absence of proteins, so a protein that only helps the molecule across does not make it active.",
+   "source": "Slide 7"
+  },
+  {
+   "id": "hb-8",
+   "q": "In osmosis, H₂O diffuses from areas of lower solute concentration to areas of higher solute concentration. A cell is placed in a solution that has a higher solute concentration than the inside of the cell. Assume only water can cross the membrane. Which way does water tend to move?",
+   "options": [
+    "Into the cell, because the cell has more solute",
+    "Out of the cell, toward the higher solute concentration",
+    "Neither way, because osmosis needs ATP",
+    "Into the cell, because water moves toward lower solute concentration",
+    "Out of the cell, because water moves from higher to lower solute concentration"
+   ],
+   "answer": 1,
+   "why": "Water moves toward the side with the higher solute concentration. The solution has more solute than the cell, so water leaves the cell. Osmosis is passive and needs no ATP.",
+   "source": "Slide 7"
+  },
+  {
+   "id": "hb-9",
+   "q": "Which of the following statements about cystic fibrosis is INCORRECT?",
+   "options": [
+    "It is a genetic disorder (autosomal recessive).",
+    "Mucus builds up in the lungs, leading to chronic lung infection.",
+    "The faulty protein is an ATP-powered pump that moves Cl⁻ into the cell.",
+    "Mutations in the CFTR gene affect a channel protein that transports Cl⁻ and HCO₃⁻ out of the cell.",
+    "Osmosis is reduced, so the extracellular space dehydrates."
+   ],
+   "answer": 2,
+   "why": "The CFTR gene encodes a channel protein that transports Cl⁻ and HCO₃⁻ out of the cell. It is not an ATP-powered pump that moves chloride in. With the channel faulty, osmosis is reduced and the extracellular space dehydrates.",
+   "source": "Slide 9"
+  },
+  {
+   "id": "hb-10",
+   "q": "Which sequence correctly shows the path of a protein that will be exported from the cell?",
+   "options": [
+    "Golgi apparatus, then ribosome on the rough ER, then vesicle, then secretory vesicle",
+    "Ribosome on the rough ER, then secretory vesicle, then Golgi apparatus, then vesicle",
+    "Vesicle, then ribosome on the rough ER, then Golgi apparatus, then secretory vesicle",
+    "Secretory vesicle, then Golgi apparatus, then vesicle, then ribosome on the rough ER",
+    "Ribosome on the rough ER, then a vesicle to the Golgi apparatus, then a secretory vesicle out of the cell"
+   ],
+   "answer": 4,
+   "why": "Ribosomes on the rough ER make the protein. Vesicles carry it to the Golgi apparatus, which modifies it. Refined products are shipped in vesicles, and secretory vesicles hold products destined for export.",
+   "source": "Slides 11-15"
+  },
+  {
+   "id": "hb-11",
+   "q": "A cell is making a protein that will be exported from the cell. Where is that protein most likely made?",
+   "options": [
+    "On a ribosome attached to the rough ER",
+    "On a free-floating ribosome in the cytoplasm",
+    "Inside the nucleolus",
+    "Inside a lysosome",
+    "On the smooth ER, using ribosomes on its surface"
+   ],
+   "answer": 0,
+   "why": "Ribosomes attached to the ER make proteins that will be transported or exported. Free ribosomes make proteins for immediate use. The nucleolus builds ribosomes, and the smooth ER has no ribosomes.",
+   "source": "Slides 10-13"
+  },
+  {
+   "id": "hb-12",
+   "q": "Which pairing of structure and function is correct?",
+   "options": [
+    "The smooth ER manufactures proteins using ribosomes on its surface",
+    "The rough ER carries out lipid and hormone synthesis",
+    "Lysosomes detoxify cell waste with detoxifying enzymes",
+    "The rough ER manufactures proteins, generally transmembrane or secreted ones",
+    "The Golgi apparatus is the site of cellular respiration"
+   ],
+   "answer": 3,
+   "why": "The rough ER has ribosomes and makes proteins. The smooth ER has no ribosomes and handles lipid and hormone synthesis. Peroxisomes (not lysosomes) detoxify, and mitochondria (not the Golgi) carry out respiration.",
+   "source": "Slides 12, 13, 15, 16"
+  },
+  {
+   "id": "hb-13",
+   "q": "A protein made on the rough ER has a sugar added to it before it is shipped onward. Where does this modification happen, and what is it called?",
+   "options": [
+    "The nucleolus, where it is called translation",
+    "The Golgi apparatus, where it is called glycosylation",
+    "The mitochondrion, where it is called glycosylation",
+    "The smooth ER, where it is called translation",
+    "The lysosome, where it is called glycosylation"
+   ],
+   "answer": 1,
+   "why": "The Golgi apparatus successively modifies biomolecules as they pass through it. Adding a sugar to a protein or lipid is glycosylation.",
+   "source": "Slide 14"
+  },
+  {
+   "id": "hb-14",
+   "q": "Which statements about vesicles are correct?\nI. Peroxisomes contain enzymes that detoxify cell waste and other molecules.\nII. Lysosomes contain digestive enzymes and catabolize macromolecules.\nIII. Secretory vesicles contain molecules imported from the external environment.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "Statements I and II are correct. Statement III describes endocytic vesicles; secretory vesicles hold products destined for cellular export.",
+   "source": "Slide 15"
+  },
+  {
+   "id": "hb-15",
+   "q": "Which statement correctly describes what a mitochondrion takes in and releases during cellular respiration?",
+   "options": [
+    "It uses high-energy molecules and O₂ to make ATP, with CO₂ as a by-product.",
+    "It uses CO₂ and ATP to make O₂ as a by-product.",
+    "It uses ATP and O₂ to make high-energy molecules, with CO₂ as a by-product.",
+    "It uses high-energy molecules and CO₂ to make ATP, with O₂ as a by-product.",
+    "It uses O₂ to make ATP, with no by-product."
+   ],
+   "answer": 0,
+   "why": "A mitochondrion uses high-energy molecules and O₂ to generate ATP, and CO₂ is produced as a by-product. ATP is the product, not the fuel.",
+   "source": "Slide 16"
+  },
+  {
+   "id": "hb-16",
+   "q": "Which statement correctly matches the parts of the cytoskeleton with their proteins?",
+   "options": [
+    "Microtubules are made of actin and microfilaments are made of tubulin.",
+    "Microtubules are made of collagen and microfilaments are made of actin.",
+    "Microtubules and microfilaments are both made of actin.",
+    "Microtubules are made of tubulin and microfilaments are made of actin.",
+    "Microtubules and microfilaments are both made of tubulin."
+   ],
+   "answer": 3,
+   "why": "Microtubules are hollow tubes of tubulin protein, and microfilaments are thin fibres of actin protein.",
+   "source": "Slide 17"
+  },
+  {
+   "id": "hb-17",
+   "q": "The picture shows six types of epithelial tissue. Which one forms the outer layer of skin and protects against abrasion, drying out and infection?",
+   "options": [
+    "Simple squamous",
+    "Simple cuboidal",
+    "Simple columnar",
+    "Stratified squamous",
+    "Stratified columnar"
+   ],
+   "answer": 3,
+   "why": "Stratified squamous epithelium has many layers of flattened cells. It forms the outer layer of skin and protects against abrasion, drying out and infection. Simple squamous tissue is a single thin layer that permits exchange.",
+   "source": "Slide 20",
+   "img": {
+    "src": "img/biobasics/epithelium_20.webp",
+    "alt": "A human figure surrounded by six blocks of epithelial tissue, simple on the left and stratified on the right, each labelled with where it is found."
+   }
+  },
+  {
+   "id": "hb-18",
+   "q": "Cardiac muscle cells are connected by gap junctions. What does a gap junction do?",
+   "options": [
+    "It seals plasma membranes tightly together to make a leak-proof seal.",
+    "It anchors two cells together while allowing flexibility of movement.",
+    "It uses protein channels to allow transport of water and ions between adjacent cells.",
+    "It attaches the epithelial layer to the underlying tissues.",
+    "It secretes collagen into the extracellular matrix."
+   ],
+   "answer": 2,
+   "why": "Gap junctions have protein channels that allow the direct transfer of water and ions between adjacent cells. Tight junctions seal, adhesion junctions anchor, and the basement membrane attaches epithelium to the tissue beneath.",
+   "source": "Slides 21, 22, 26"
+  },
+  {
+   "id": "hb-19",
+   "q": "Which of the following statements about connective tissue is INCORRECT?",
+   "options": [
+    "It supports and connects body parts and stores fat.",
+    "Its strength comes mainly from its cells rather than from the matrix around them.",
+    "Its cells are embedded in a nonliving extracellular matrix.",
+    "The matrix is synthesized by the same cells that are embedded in it.",
+    "It is generally categorized as fibrous or specialized connective tissue."
+   ],
+   "answer": 1,
+   "why": "The matrix is what provides strength. The cells make the matrix and sit inside it, but the strength comes from the matrix.",
+   "source": "Slide 23"
+  },
+  {
+   "id": "hb-20",
+   "q": "The picture shows a tissue whose fibres are mostly collagen and all run in the same direction, with fibroblasts in the narrow spaces between them. Which tissue is this, and where is it found?",
+   "options": [
+    "Loose connective tissue, found around internal organs, muscles and blood vessels",
+    "Elastic connective tissue, found around hollow organs that change size or shape",
+    "Reticular connective tissue, found in the internal framework of soft organs",
+    "Adipose tissue, found as a fat store under the skin",
+    "Dense connective tissue, found in tendons and ligaments"
+   ],
+   "answer": 4,
+   "why": "Dense connective tissue has more collagen fibres aligned in parallel, and it forms tendons, ligaments and deep skin layers. Loose tissue has fewer fibres in a random pattern.",
+   "source": "Slide 24",
+   "img": {
+    "src": "img/biobasics/dense_ct_24.webp",
+    "alt": "A microscope photo and a drawing of dense connective tissue with parallel collagen fibres and fibroblast nuclei between them."
+   }
+  },
+  {
+   "id": "hb-21",
+   "q": "Which of the following pairings of connective tissue and description is INCORRECT?",
+   "options": [
+    "Bone: a fluid matrix of plasma, red and white blood cells, and platelets",
+    "Cartilage: an embryonic tissue that gives rise to bone",
+    "Blood: transports materials through the body",
+    "Adipose tissue: mostly fat cells that insulate, protect and store energy",
+    "Bone: a matrix of calcium and phosphate that forms the skeleton"
+   ],
+   "answer": 0,
+   "why": "A fluid matrix of plasma, red and white blood cells and platelets describes blood, not bone. Bone has a matrix of calcium and phosphate and forms the skeleton.",
+   "source": "Slide 25"
+  },
+  {
+   "id": "hb-22",
+   "q": "Which statements about muscle tissue are correct?\nI. Skeletal muscle movement is involuntary.\nII. Cardiac muscle cells are largely mononucleated and connected by gap junctions.\nIII. Smooth muscle surrounds hollow organs and tubes.",
+   "options": [
+    "I only",
+    "I and III only",
+    "II and III only",
+    "all of the above",
+    "none of the above"
+   ],
+   "answer": 2,
+   "why": "Skeletal muscle is used for voluntary movement and is activated by nerves, so statement I is wrong. Statements II and III are correct.",
+   "source": "Slide 26"
+  },
+  {
+   "id": "hb-23",
+   "q": "Which statement about cardiac muscle is correct?",
+   "options": [
+    "It is multinucleated and attached to bones by tendons.",
+    "Its movement is voluntary and activated by nerves.",
+    "Its movement is involuntary and can occur without neural stimulation.",
+    "It surrounds hollow organs and tubes.",
+    "It has dendrites that receive impulses and an axon that transmits them."
+   ],
+   "answer": 2,
+   "why": "Cardiac muscle functions in the heart and its movement is involuntary. It can occur without neural stimulation, unlike skeletal muscle, which nerves activate.",
+   "source": "Slide 26"
+  },
+  {
+   "id": "hb-24",
+   "q": "A neuron receives an impulse and passes it on. Which parts perform these two jobs?",
+   "options": [
+    "The axon receives impulses and the dendrites transmit them",
+    "Dendrites receive impulses and the axon transmits them",
+    "The cell body receives impulses and glial cells transmit them",
+    "Glial cells receive impulses and the axon surrounds and protects them",
+    "Dendrites both receive and transmit impulses, while the axon protects the neuron"
+   ],
+   "answer": 1,
+   "why": "Dendrites receive impulses and the axon transmits them. Glial cells surround and protect neurons; they are not the cells that transmit impulses.",
+   "source": "Slide 28"
+  },
+  {
+   "id": "hb-25",
+   "q": "The cells shown (epidermal cells of skin, a neuron of the brain and a pigment cell) all come from the same germ layer. Which one?",
+   "options": [
+    "Ectoderm",
+    "Mesoderm",
+    "Endoderm",
+    "Germ cells",
+    "Blastula"
+   ],
+   "answer": 0,
+   "why": "Epidermal cells of skin, the brain neuron and the pigment cell (melanocyte) all branch from the ectoderm, the outer layer.",
+   "source": "Slide 29",
+   "img": {
+    "src": "img/biobasics/ectoderm_29.webp",
+    "alt": "A box labelled ectoderm with three branches: outer surface with epidermal cells of skin, central nervous system with a brain neuron, and neural crest with a pigment cell."
+   }
+  },
+  {
+   "id": "hb-26",
+   "q": "Which of the following cells does NOT come from the mesoderm?",
+   "options": [
+    "Red blood cells",
+    "Bone tissue",
+    "Facial muscle",
+    "Tubule cell of the kidney",
+    "Stomach cell"
+   ],
+   "answer": 4,
+   "why": "The stomach cell comes from the endoderm (digestive tube). Red blood cells, bone tissue, facial muscle and the kidney tubule cell all branch from the mesoderm.",
+   "source": "Slide 29"
+  },
+  {
+   "id": "hb-27",
+   "q": "In the picture, which structure separates the thoracic cavity from the abdominal cavity?",
+   "options": [
+    "The vertebral canal",
+    "The pericardial cavity",
+    "The diaphragm",
+    "The pelvic cavity",
+    "The cranial cavity"
+   ],
+   "answer": 2,
+   "why": "The diaphragm separates the thoracic and abdominal cavities. The cranial cavity and vertebral canal are the posterior cavities, and the pericardial cavity is part of the thoracic cavity.",
+   "source": "Slide 30 (figure labels)",
+   "img": {
+    "src": "img/biobasics/cavities_30.webp",
+    "alt": "A side view and a front view of a person with the cranial, vertebral, thoracic, abdominal and pelvic cavities labelled, and the diaphragm marked."
+   }
+  },
+  {
+   "id": "hb-28",
+   "q": "Which of the following statements about tissue membranes is INCORRECT?",
+   "options": [
+    "Serous membranes line and lubricate body cavities.",
+    "Mucous membranes line and lubricate the airways and the digestive and reproductive tracts.",
+    "Synovial membranes line joint spaces.",
+    "Mucous membranes form the skin.",
+    "Cutaneous membranes form the skin."
+   ],
+   "answer": 3,
+   "why": "Cutaneous membranes form the skin. Mucous membranes line and lubricate the airways and the digestive and reproductive tracts.",
+   "source": "Slide 30"
+  },
+  {
+   "id": "hb-29",
+   "q": "In the picture, which plane separates the body into front and back parts?",
+   "options": [
+    "Midsagittal plane",
+    "Frontal (coronal) plane",
+    "Transverse (horizontal) plane",
+    "Both the midsagittal and transverse planes",
+    "None of the planes shown"
+   ],
+   "answer": 1,
+   "why": "The frontal (coronal) plane separates front from back. The midsagittal plane separates left from right, and the transverse plane separates top from bottom.",
+   "source": "Slide 31 (standard reading of the plane pairs, outside source)",
+   "img": {
+    "src": "img/biobasics/planes_31.webp",
+    "alt": "A woman standing with three flat sheets cutting through her body, labelled frontal, transverse and midsagittal planes, with direction words such as superior, inferior, anterior, posterior, proximal and distal."
+   }
+  },
+  {
+   "id": "hb-30",
+   "q": "Structure A is nearer to the trunk than structure B. Which statement is correct?",
+   "options": [
+    "A is distal to B, and B is proximal to A.",
+    "A is superior to B, and B is inferior to A.",
+    "A is anterior to B, and B is posterior to A.",
+    "A is posterior to B, and B is anterior to A.",
+    "A is proximal to B, and B is distal to A."
+   ],
+   "answer": 4,
+   "why": "Proximal means nearer to the trunk and distal means farther away from the trunk. Superior, inferior, anterior and posterior describe head-to-foot and front-to-back positions instead.",
+   "source": "Slide 31"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Levels of classification",
+   "prompt": "Put these levels in order from the broadest group to the most specific group.",
+   "why": "The classification ladder runs from Life and Domain at the top down to Species. Each level is narrower than the one above it.",
+   "topLabel": "Most specific",
+   "bottomLabel": "Broadest",
+   "layers": [
+    {
+     "name": "Domain",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Kingdom",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Phylum",
+     "color": "#15803d"
+    },
+    {
+     "name": "Class",
+     "color": "#4d7c0f"
+    },
+    {
+     "name": "Order",
+     "color": "#b45309"
+    },
+    {
+     "name": "Family",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Genus",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Species",
+     "color": "#9d174d"
+    }
+   ]
+  },
+  {
+   "title": "Where humans fit",
+   "prompt": "Put the groups that classify *Homo sapiens* in order from the broadest to the most specific.",
+   "why": "Humans are categorized as Eukarya, Animalia, Chordata, Mammalia, Primates, Hominidae, Homo and sapiens, going from the domain down to the species.",
+   "topLabel": "Most specific",
+   "bottomLabel": "Broadest",
+   "layers": [
+    {
+     "name": "Eukarya",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Animalia",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Chordata",
+     "color": "#15803d"
+    },
+    {
+     "name": "Mammalia",
+     "color": "#4d7c0f"
+    },
+    {
+     "name": "Primates",
+     "color": "#b45309"
+    },
+    {
+     "name": "Hominidae",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Homo",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "sapiens",
+     "color": "#9d174d"
+    }
+   ]
+  },
+  {
+   "title": "A protein's journey out of the cell",
+   "prompt": "Put the steps in order, from the genetic information to export from the cell.",
+   "why": "The nucleus holds the genetic information. Ribosomes on the rough ER translate mRNA into protein, vesicles carry it to the Golgi apparatus, the Golgi modifies it step by step, vesicles ship the refined product, and secretory vesicles carry products destined for export.",
+   "topLabel": "Finish: leaves the cell",
+   "bottomLabel": "Start: genetic information",
+   "layers": [
+    {
+     "name": "Nucleus: DNA holds the genetic information",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Ribosome on the rough ER translates mRNA into protein",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Vesicles carry the protein from the ER to the Golgi",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Golgi apparatus modifies the protein step by step",
+     "color": "#15803d"
+    },
+    {
+     "name": "Refined product is shipped in a vesicle",
+     "color": "#b45309"
+    },
+    {
+     "name": "Secretory vesicle delivers the product out of the cell",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "From zygote to germ layers",
+   "prompt": "Put these stages of the early embryo in order, from the earliest to the latest.",
+   "why": "The zygote becomes a blastula, then a gastrula, and the three primary germ layers (ectoderm, mesoderm and endoderm) branch from the gastrula.",
+   "topLabel": "Latest",
+   "bottomLabel": "Earliest",
+   "layers": [
+    {
+     "name": "Zygote",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Blastula",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Gastrula",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Germ layers: ectoderm, mesoderm and endoderm",
+     "color": "#15803d"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Passive or active transport?",
+   "prompt": "Sort each description into passive transport or active transport.",
+   "buckets": [
+    "Passive transport",
+    "Active transport"
+   ],
+   "items": [
+    {
+     "text": "Needs no energy",
+     "b": 0
+    },
+    {
+     "text": "Moves molecules from higher to lower concentration",
+     "b": 0
+    },
+    {
+     "text": "Osmosis, with water moving toward higher solute concentration",
+     "b": 0
+    },
+    {
+     "text": "O₂ and CO₂ diffusing through the lipid layer",
+     "b": 0
+    },
+    {
+     "text": "Glucose entering a cell by facilitated transport",
+     "b": 0
+    },
+    {
+     "text": "Water diffusing through a protein channel",
+     "b": 0
+    },
+    {
+     "text": "Needs ATP or another energy source",
+     "b": 1
+    },
+    {
+     "text": "Moves molecules from lower to higher concentration",
+     "b": 1
+    },
+    {
+     "text": "Moves a molecule against its concentration gradient",
+     "b": 1
+    },
+    {
+     "text": "A carrier protein changes shape using energy from ATP breakdown",
+     "b": 1
+    },
+    {
+     "text": "One molecule moving downhill supplies energy to move another uphill",
+     "b": 1
+    }
+   ],
+   "why": "Passive transport needs no energy and moves molecules from higher to lower concentration, whether through the lipid layer, a channel or a helper protein. Active transport needs energy such as ATP and moves molecules from lower to higher concentration, against the gradient."
+  },
+  {
+   "title": "Which tissue family?",
+   "prompt": "Sort each feature into epithelial, connective or muscle tissue.",
+   "buckets": [
+    "Epithelial",
+    "Connective",
+    "Muscle"
+   ],
+   "items": [
+    {
+     "text": "Lines body surfaces and cavities",
+     "b": 0
+    },
+    {
+     "text": "Sits on a basement membrane",
+     "b": 0
+    },
+    {
+     "text": "Cells held together by tight junctions",
+     "b": 0
+    },
+    {
+     "text": "Forms glands such as sweat glands and the thyroid",
+     "b": 0
+    },
+    {
+     "text": "Cells embedded in a nonliving extracellular matrix",
+     "b": 1
+    },
+    {
+     "text": "Includes loose, dense, elastic and reticular types",
+     "b": 1
+    },
+    {
+     "text": "Blood, with a fluid matrix of plasma",
+     "b": 1
+    },
+    {
+     "text": "Adipose tissue that stores fat and insulates",
+     "b": 1
+    },
+    {
+     "text": "Long, thin cells specialized to contract",
+     "b": 2
+    },
+    {
+     "text": "Multinucleated cells attached to tendons",
+     "b": 2
+    },
+    {
+     "text": "Found in the heart, with involuntary movement",
+     "b": 2
+    },
+    {
+     "text": "Includes skeletal, cardiac and smooth types",
+     "b": 2
+    }
+   ],
+   "why": "Epithelial tissue forms sheets and glands that line surfaces on a basement membrane. Connective tissue has cells in an extracellular matrix, and it includes fibrous tissue, blood and fat. Muscle tissue is made of long cells specialized to contract."
+  },
+  {
+   "title": "Which germ layer?",
+   "prompt": "Sort each cell type by the germ layer it comes from.",
+   "buckets": [
+    "Ectoderm (outer)",
+    "Mesoderm (middle)",
+    "Endoderm (internal)"
+   ],
+   "items": [
+    {
+     "text": "Epidermal cells of skin",
+     "b": 0
+    },
+    {
+     "text": "Neuron of the brain",
+     "b": 0
+    },
+    {
+     "text": "Pigment cell (melanocyte)",
+     "b": 0
+    },
+    {
+     "text": "Notochord",
+     "b": 1
+    },
+    {
+     "text": "Bone tissue",
+     "b": 1
+    },
+    {
+     "text": "Tubule cell of the kidney",
+     "b": 1
+    },
+    {
+     "text": "Red blood cells",
+     "b": 1
+    },
+    {
+     "text": "Facial muscle",
+     "b": 1
+    },
+    {
+     "text": "Stomach cell",
+     "b": 2
+    },
+    {
+     "text": "Thyroid cell",
+     "b": 2
+    },
+    {
+     "text": "Lung cell (alveolar cell)",
+     "b": 2
+    }
+   ],
+   "why": "Skin cells, brain neurons and pigment cells branch from the outer layer. Notochord, bone, kidney tubule cells, red blood cells and facial muscle branch from the middle layer. Stomach, thyroid and lung cells branch from the internal layer."
+  }
+ ]
+}

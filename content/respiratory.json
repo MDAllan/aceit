@@ -1,0 +1,2056 @@
+{
+ "id": "respiratory",
+ "title": "The Respiratory System",
+ "chapter": "Unit 5",
+ "icon": "💨",
+ "color": "#c0392b",
+ "slideFile": "The Respiratory System.pdf",
+ "intro": "The respiratory system brings oxygen into the body and removes carbon dioxide. Learn the parts of the airway, how muscles move air, how gases cross into the blood and the tissues, how breathing is controlled and how the system forms in the embryo.",
+ "sections": [
+  {
+   "id": "function",
+   "title": "What respiration means",
+   "slides": "1-2",
+   "steps": [
+    {
+     "title": "Main job of the system",
+     "bullets": [
+      "The main job of the respiratory system is to exchange **oxygen (O₂)** and **carbon dioxide (CO₂)** between the air and the blood.",
+      "Inhalation brings O₂ into the body. Exhalation rids the body of CO₂.",
+      "The system also helps with vocalization, which means making sounds."
+     ]
+    },
+    {
+     "title": "Four meanings of respiration",
+     "bullets": [
+      "**Breathing** (ventilation) moves air into and out of the lungs.",
+      "**External respiration** exchanges gases between the air and the lungs (alveoli to blood). **Internal respiration** exchanges gases between the blood and the cells, organs and tissues.",
+      "**Cellular respiration** uses oxygen to produce ATP inside cells."
+     ]
+    },
+    {
+     "title": "What you should be able to do",
+     "bullets": [
+      "Describe the parts of the airway (upper and lower tract) and what each part does.",
+      "Explain how muscles drive breathing, how gases are exchanged in the lungs and tissues, and how they are carried in the blood.",
+      "Explain how breathing is regulated and monitored, and where the respiratory system comes from in the embryo."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Cells use oxygen to make ATP, so the body needs a steady supply of O₂ from the air. It also needs a way to get rid of CO₂, a gas the body must remove. The respiratory system does both."
+    },
+    {
+     "type": "trick",
+     "text": "Picture a delivery chain. Breathing is the truck bringing air to town. External respiration is the unloading dock at the lungs. Internal respiration is the delivery to each house (the tissues). Cellular respiration is the kitchen where the oxygen is used to make ATP."
+    },
+    {
+     "type": "trap",
+     "text": "The word 'respiration' is used for four different things: breathing (ventilation), external respiration, internal respiration and cellular respiration. Slide 2 says external respiration is exchange 'between the air and lungs'; slide 1 and slides 18-19 describe it as alveoli-to-blood. Check which one a question means."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 1 (learning objectives) and slide 2 (Respiration).",
+    "The 'why' box link between making ATP and needing O2 and removing CO2 is generic glue (outside source). The delivery-chain analogy is outside source."
+   ],
+   "images": []
+  },
+  {
+   "id": "overview",
+   "title": "The airway at a glance",
+   "slides": "3-4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/respiratory/overview_3.webp",
+      "slide": "slide 3",
+      "alt": "A labelled drawing of the head and chest showing the nose, throat, larynx, trachea, bronchi, lungs, ribs and diaphragm, with the upper and lower respiratory tracts marked."
+     },
+     "title": "Parts of the respiratory system",
+     "bullets": [
+      "Air travels through the nasal cavity, **pharynx** (throat), larynx (voice box) and trachea (windpipe), then into the bronchi and the lungs.",
+      "The alveoli are the air sacs for gas exchange. Pleural membranes cover the lungs and line the chest cavity.",
+      "The **intercostal muscles** move the ribs, and the **diaphragm** is the skeletal muscle of respiration."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/overview_4.webp",
+      "slide": "slide 4",
+      "alt": "A simple outline of a person showing the airway, two lungs inside the chest cavity and the diaphragm below them."
+     },
+     "title": "Lungs, chest cavity and diaphragm",
+     "bullets": [
+      "The two lungs sit inside the **chest cavity**, with the diaphragm below them.",
+      "Oxygen (O₂) enters at the nose and travels down the airway to the lungs."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The diaphragm separates the chest (thoracic) cavity from the abdominal cavity and lies under the lungs. Because of that position, when the diaphragm moves it changes the size of the space around the lungs."
+    },
+    {
+     "type": "trick",
+     "text": "Order of the airway: Nose, Pharynx, Larynx, Trachea, Bronchi, Bronchioles, Alveoli. 'Nice People Like To Breathe Bright Air.'"
+    },
+    {
+     "type": "trap",
+     "text": "The labelled drawing on slide 3 puts the mouth inside the upper-tract bracket and starts the lower-tract bracket at the epiglottis. The text on slides 5-6 defines the upper tract as the nose (nasal cavity) and pharynx, and the lower tract as the larynx, trachea, bronchi and lungs. Use the text list for exam answers."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 3 (labelled figure) and slide 4 (overview figure). Slide 13 states that the diaphragm separates the thoracic and abdominal cavities.",
+    "The mnemonic sentence is outside source."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/overview_3.webp",
+     "slide": "slide 3",
+     "alt": "A labelled drawing of the head and chest showing the nose, throat, larynx, trachea, bronchi, lungs, ribs and diaphragm, with the upper and lower respiratory tracts marked."
+    },
+    {
+     "src": "img/respiratory/overview_4.webp",
+     "slide": "slide 4",
+     "alt": "A simple outline of a person showing the airway, two lungs inside the chest cavity and the diaphragm below them."
+    }
+   ]
+  },
+  {
+   "id": "upper",
+   "title": "The upper respiratory tract",
+   "slides": "5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/respiratory/upper_5.webp",
+      "slide": "slide 5",
+      "alt": "A cutaway of the head showing the sinuses, nasal cavity, nostril, tongue, pharynx, epiglottis, larynx and trachea."
+     },
+     "title": "Nose and throat clean the air",
+     "bullets": [
+      "The upper tract is the **nose** (nasal cavity) and the **pharynx** (throat).",
+      "The nasal lining (epithelium) **warms** incoming air using heat from nearby blood vessels and **humidifies** it with mucus.",
+      "Hairs and mucus filter the air and trap particles."
+     ]
+    },
+    {
+     "title": "Moving the mucus along",
+     "bullets": [
+      "Nasal epithelial cells are **ciliated**. Their motile (moving) cilia beat to make a current that sweeps mucus down into the pharynx.",
+      "The sinuses, tear ducts and auditory (eustachian) tubes drain into the nasal cavity and pharynx."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Air from outside can be cold, dry and dusty. Warming, wetting and filtering it in the nose prepares it before it reaches the delicate lungs."
+    },
+    {
+     "type": "trick",
+     "text": "The nose is an air conditioner plus a filter: warm it, wet it and trap the dust."
+    },
+    {
+     "type": "trap",
+     "text": "Cilia direction: in the nose the cilia sweep mucus DOWN into the pharynx (slide 5). In the bronchi and bronchioles the cilia sweep mucus UP into the pharynx (slide 10). Both end up in the pharynx."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 5 text and figure.",
+    "The 'why' sentence about cold, dry, dusty air is generic glue (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/upper_5.webp",
+     "slide": "slide 5",
+     "alt": "A cutaway of the head showing the sinuses, nasal cavity, nostril, tongue, pharynx, epiglottis, larynx and trachea."
+    }
+   ]
+  },
+  {
+   "id": "lower",
+   "title": "Larynx, voice box and trachea",
+   "slides": "6-8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/respiratory/lower_6.webp",
+      "slide": "slide 6",
+      "alt": "The larynx, trachea, left and right bronchi, bronchioles and clusters of alveoli drawn inside the lungs."
+     },
+     "title": "The lower respiratory tract",
+     "bullets": [
+      "The lower tract is the **larynx**, trachea, bronchi and lungs. The lungs include the bronchioles and alveoli.",
+      "The larynx sits below the pharynx and routes food away from the trachea.",
+      "The **epiglottis** is a cartilage flap that blocks the opening to the trachea during the involuntary swallowing phase, so food cannot enter."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/vocal_7.webp",
+      "slide": "slide 7",
+      "alt": "Two front views of the larynx: one with the glottis open during quiet breathing and one with the glottis closed during sound production, plus a view down the airway."
+     },
+     "title": "Vocal cords make sound",
+     "bullets": [
+      "**Vocal cords** are folds of connective tissue stretched across the opening to the airway, called the **glottis**.",
+      "Sound is mostly made when air flows across the vocal cords and makes them vibrate. Shorter or more-stretched cords make higher tones.",
+      "Skeletal muscles control how far the cords stretch. The nasal cavity adds resonance to the sound."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/trachea_8.webp",
+      "slide": "slide 8",
+      "alt": "Two stacks of cartilage rings with smooth muscle: a wide relaxed trachea on the left and a narrowed trachea during a cough on the right."
+     },
+     "title": "The trachea and the cough reflex",
+     "bullets": [
+      "The **trachea** runs from the larynx to the bronchi. It is surrounded by incomplete rings of cartilage held together by connective tissue and smooth muscle.",
+      "The cartilage rings keep the trachea constantly open. The smooth muscle lets it expand and contract.",
+      "Choking triggers the **cough reflex**. The smooth muscle briefly narrows the trachea and, together with the abdominal muscles, speeds up the air to expel irritants or mucus."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The cartilage rings keep the trachea open so air can always get through. The smooth muscle can briefly narrow the tube, and a narrower tube plus a push from the abdominal muscles makes air move faster, which is what clears a blockage in a cough."
+    },
+    {
+     "type": "trick",
+     "text": "The epiglottis is a lid: it shuts the door to the trachea when you swallow so food goes elsewhere. The larynx is the voice box."
+    },
+    {
+     "type": "trap",
+     "text": "Glottis, vocal cords and epiglottis are easy to swap. The glottis is the OPENING. The vocal cords are the folds across it. The epiglottis is the flap that covers the trachea opening during swallowing. The figure on slide 7 shows the glottis open in quiet breathing and closed during sound production."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 6 text and figure, slide 7 text and figure, slide 8 text and figure (panels a and b)."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/lower_6.webp",
+     "slide": "slide 6",
+     "alt": "The larynx, trachea, left and right bronchi, bronchioles and clusters of alveoli drawn inside the lungs."
+    },
+    {
+     "src": "img/respiratory/vocal_7.webp",
+     "slide": "slide 7",
+     "alt": "Two front views of the larynx: one with the glottis open during quiet breathing and one with the glottis closed during sound production, plus a view down the airway."
+    },
+    {
+     "src": "img/respiratory/trachea_8.webp",
+     "slide": "slide 8",
+     "alt": "Two stacks of cartilage rings with smooth muscle: a wide relaxed trachea on the left and a narrowed trachea during a cough on the right."
+    }
+   ]
+  },
+  {
+   "id": "lungs",
+   "title": "Lungs, bronchial tree and alveoli",
+   "slides": "9-12",
+   "steps": [
+    {
+     "img": {
+      "src": "img/respiratory/lungs_9.webp",
+      "slide": "slide 9",
+      "alt": "The chest with the right lung divided into three lobes and the left lung into two, and a zoomed box showing the pleural membranes and pleural cavity."
+     },
+     "title": "Two lungs with lobes",
+     "bullets": [
+      "The lungs sit in the pleural cavities, one left and one right. One **pleural membrane** covers each lung surface and another lines the chest wall.",
+      "The **right lung has three lobes** and the **left lung has two**. Lobes are divided by the pattern of the bronchial tree.",
+      "Each lobe can largely work on its own. The lungs are responsible for gas exchange."
+     ]
+    },
+    {
+     "title": "The bronchial tree",
+     "bullets": [
+      "The trachea branches into the left and right **primary bronchi**, which keep branching into smaller **bronchioles**. Bronchial walls have connective tissue and smooth muscle reinforced with cartilage.",
+      "Bronchioles are the branches that lack cartilage. They end in air-filled sacs called **alveoli**.",
+      "Bronchi and bronchioles also warm, clean and humidify air. Most are lined with ciliated epithelium that sweeps mucus up into the pharynx."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/alveoli_11a.webp",
+      "slide": "slide 11",
+      "alt": "Bronchioles ending in clusters of alveoli wrapped in blood vessels, and a close-up of O2 and CO2 crossing between an alveolus and a capillary with red blood cells."
+     },
+     "title": "Alveoli end the airway",
+     "bullets": [
+      "Gas exchange happens in the **alveoli**, which are clustered at the end of the terminal bronchioles.",
+      "Each alveolus is surrounded by capillaries, and O₂ and CO₂ cross the capillary and alveolar walls by diffusion.",
+      "The alveolar wall is only one cell layer thick, so gases have a very short distance to cross."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/alveoli_11b.webp",
+      "slide": "slide 11",
+      "alt": "A single alveolus covered by a mesh of capillaries between a blue pulmonary arteriole and a red pulmonary venule."
+     },
+     "title": "Blood vessels around an alveolus",
+     "bullets": [
+      "A network of **pulmonary capillaries** brings blood into close contact with the air in the alveoli.",
+      "Pulmonary arterioles bring deoxygenated blood to the lungs. Pulmonary venules bring oxygenated blood back to the heart."
+     ]
+    },
+    {
+     "title": "Surfactant keeps alveoli open",
+     "bullets": [
+      "Type II alveolar cells secrete **pulmonary surfactant**, a lipoprotein that reduces surface tension.",
+      "With too little surfactant, surface tension rises on the thin-walled alveoli and they can collapse."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/atelect_12a.webp",
+      "slide": "slide 12",
+      "alt": "A normal lung beside a smaller collapsed lung, with close-ups of normal alveoli and collapsed alveoli."
+     },
+     "title": "Atelectasis: a collapsed lung",
+     "bullets": [
+      "**Atelectasis** is the partial collapse of a lung, specifically from collapse of the alveoli.",
+      "It can be a complication of surgical anesthesia, or happen when too little pulmonary surfactant is made or secreted.",
+      "Collapsed alveoli cannot exchange gas. The collapse can be reversed by positive-pressure ventilation or by removing blockages in the lungs."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/atelect_12b.webp",
+      "slide": "slide 12",
+      "alt": "Three lungs labelled compressive, obstructive and contraction, with blood, air or fluid; airflow obstruction; and lung scarring as the causes."
+     },
+     "title": "Three types of atelectasis",
+     "bullets": [
+      "The three types are compressive (blood, air or fluid), obstructive (airflow obstruction) and contraction (lung scarring)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Surfactant lowers surface tension in the thin-walled alveoli. When there is too little, surface tension rises, the alveoli collapse, and collapsed alveoli cannot exchange gas."
+    },
+    {
+     "type": "trick",
+     "text": "Alveoli are like tiny balloons on the ends of branches (the bronchioles), wrapped in a net of capillaries. Surfactant is a slippery coating that stops the balloons from sticking shut."
+    },
+    {
+     "type": "trap",
+     "text": "Pulmonary arterioles carry DEOXYGENATED blood to the lungs and pulmonary venules carry OXYGENATED blood back to the heart (slide 11). It is easy to flip these if you assume arteries always carry oxygen-rich blood. Also easy to swap: right lung = 3 lobes, left lung = 2 lobes; bronchi have cartilage, bronchioles lack it."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 9 (lungs), slide 10 (bronchial tree, text only), slide 11 (alveolar sacs and surfactant), slide 12 (atelectasis and types).",
+    "'Very short distance to cross' is a plain inference from the one-cell-thick wall (outside source). The balloon and coating analogy is outside source.",
+    "The micrograph at the lower left of the slide 11 figure is not used."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/lungs_9.webp",
+     "slide": "slide 9",
+     "alt": "The chest with the right lung divided into three lobes and the left lung into two, and a zoomed box showing the pleural membranes and pleural cavity."
+    },
+    {
+     "src": "img/respiratory/alveoli_11a.webp",
+     "slide": "slide 11",
+     "alt": "Bronchioles ending in clusters of alveoli wrapped in blood vessels, and a close-up of O2 and CO2 crossing between an alveolus and a capillary with red blood cells."
+    },
+    {
+     "src": "img/respiratory/alveoli_11b.webp",
+     "slide": "slide 11",
+     "alt": "A single alveolus covered by a mesh of capillaries between a blue pulmonary arteriole and a red pulmonary venule."
+    },
+    {
+     "src": "img/respiratory/atelect_12a.webp",
+     "slide": "slide 12",
+     "alt": "A normal lung beside a smaller collapsed lung, with close-ups of normal alveoli and collapsed alveoli."
+    },
+    {
+     "src": "img/respiratory/atelect_12b.webp",
+     "slide": "slide 12",
+     "alt": "Three lungs labelled compressive, obstructive and contraction, with blood, air or fluid; airflow obstruction; and lung scarring as the causes."
+    }
+   ]
+  },
+  {
+   "id": "ventilation",
+   "title": "Breathing: pressure and muscles",
+   "slides": "13-16",
+   "steps": [
+    {
+     "title": "Pressure drives airflow",
+     "bullets": [
+      "The lungs expand and contract **passively**. Their size follows the size of the airtight pleural cavity, which depends on the skeletal muscles around it: the intercostal muscles between the ribs and the diaphragm.",
+      "Gas pressure is caused by gas molecules colliding. When a closed chamber gets bigger its gas pressure falls, and when it gets smaller the pressure rises.",
+      "Gases flow from areas of higher pressure to areas of lower pressure."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/cycle_14_relaxed.webp",
+      "slide": "slide 14",
+      "alt": "A rib cage at rest with the external intercostal muscles and the diaphragm labelled and no air movement."
+     },
+     "title": "At rest",
+     "bullets": [
+      "At rest the diaphragm and the intercostal muscles are relaxed, and no air is moving."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/cycle_14_inspire.webp",
+      "slide": "slide 14",
+      "alt": "A rib cage during inspiration with arrows showing the ribs moving up and out and the flattened diaphragm moving down."
+     },
+     "title": "Inspiration: breathing in",
+     "bullets": [
+      "The diaphragm and intercostal muscles **contract**. The diaphragm flattens and moves down, and the ribs move up and out.",
+      "The pleural cavity gets bigger, so the lungs expand and air pressure in the lungs falls.",
+      "Air rushes in from the higher outside pressure."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/cycle_14_expire.webp",
+      "slide": "slide 14",
+      "alt": "A rib cage during expiration with arrows showing the ribs returning to their resting position and the relaxed diaphragm moving up."
+     },
+     "title": "Expiration: breathing out",
+     "bullets": [
+      "The diaphragm and intercostal muscles **relax**. The ribs return to their resting position and the diaphragm moves back up.",
+      "The pleural cavity and lungs get smaller, so air pressure in the lungs rises.",
+      "Air flows out."
+     ]
+    },
+    {
+     "title": "Quiet breathing versus effort",
+     "bullets": [
+      "In quiet breathing, inspiration is active (muscles contract) and expiration is passive. During exertion both can be active.",
+      "Extra muscles, including the abdominal muscles, can push the ribcage and diaphragm higher, which increases the speed and force of breathing in and out.",
+      "In a sneeze or cough the abdominal muscles contract rapidly, push the diaphragm upward and force air out of the lungs."
+     ]
+    },
+    {
+     "title": "Tidal volume and vital capacity",
+     "bullets": [
+      "**Tidal volume** is the volume of air breathed in and out in a single breath during quiet breathing.",
+      "**Vital capacity** is the maximum volume of air you can inhale and exhale."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/breath_16.webp",
+      "slide": "slide 16",
+      "alt": "A breathing trace with an up-wave and a down-wave marked Ti, Te, Ttot, I amplitude and E amplitude, and a long flat stretch labelled classic apnea."
+     },
+     "title": "Anatomy of one breath",
+     "bullets": [
+      "One full breath is called the **breath length** or breath period (Ttot). The trace also marks the I amplitude and the E amplitude, which show the size of each wave.",
+      "A prolonged event lasting more than 2 × the average Ttot is called **classic apnea**: a long flat stretch in the trace."
+     ]
+    }
+   ],
+   "bullets": [],
+   "table": {
+    "head": [
+     "",
+     "Inspiration",
+     "Expiration"
+    ],
+    "rows": [
+     [
+      "Diaphragm",
+      "Contracts, flattens and moves down",
+      "Relaxes and moves up"
+     ],
+     [
+      "Intercostal muscles and ribs",
+      "Muscles contract, ribs move up and out",
+      "Muscles relax, ribs return to rest"
+     ],
+     [
+      "Pleural cavity and lung volume",
+      "Increases",
+      "Decreases"
+     ],
+     [
+      "Air pressure in the lungs",
+      "Falls",
+      "Rises"
+     ],
+     [
+      "Airflow",
+      "Into the lungs",
+      "Out of the lungs"
+     ],
+     [
+      "In quiet breathing",
+      "Active",
+      "Passive"
+     ]
+    ]
+   },
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A bigger chamber spreads the same gas molecules further apart, so they collide less often and the pressure falls. Air then flows in from the higher outside pressure. A smaller chamber squeezes the molecules together, the pressure rises, and air flows out."
+    },
+    {
+     "type": "trick",
+     "text": "Contract and air comes in; relax and air is let out. Remember: in = low pressure inside, out = high pressure inside."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 13 says the lungs expand and contract passively, while slide 15 says inspiration is active. Both are true: the lung tissue follows the pleural cavity (passive), but the inspiratory muscles that enlarge the cavity actively contract. Slide 15 also words the abdominal-muscle point loosely ('ribcage and diaphragm higher... inspiration and expiration, respectively'); the clear examples are a cough or sneeze, where the abdominal muscles push the diaphragm up and force air out. The deck gives no numbers for tidal volume or vital capacity."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 13 (ventilation basics), slide 14 (respiratory cycle figure, three panels), slide 15 (lung function), slide 16 (Anatomy of a Breath figure).",
+    "Slide 16 gives only labels: Ti, Te, I Amplitude, E Amplitude, Ttot (Breath Length, Breath Period) and 'Prolonged Events: >2 x mean Ttot = Classic Apnea'. Reading the bar over x as 'average' and I/E as inspiration/expiration is an interpretation (outside source).",
+    "The 'contract and air comes in' mnemonic is outside source."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/cycle_14_relaxed.webp",
+     "slide": "slide 14",
+     "alt": "A rib cage at rest with the external intercostal muscles and the diaphragm labelled and no air movement."
+    },
+    {
+     "src": "img/respiratory/cycle_14_inspire.webp",
+     "slide": "slide 14",
+     "alt": "A rib cage during inspiration with arrows showing the ribs moving up and out and the flattened diaphragm moving down."
+    },
+    {
+     "src": "img/respiratory/cycle_14_expire.webp",
+     "slide": "slide 14",
+     "alt": "A rib cage during expiration with arrows showing the ribs returning to their resting position and the relaxed diaphragm moving up."
+    },
+    {
+     "src": "img/respiratory/breath_16.webp",
+     "slide": "slide 16",
+     "alt": "A breathing trace with an up-wave and a down-wave marked Ti, Te, Ttot, I amplitude and E amplitude, and a long flat stretch labelled classic apnea."
+    }
+   ]
+  },
+  {
+   "id": "exchange",
+   "title": "Partial pressures and gas exchange",
+   "slides": "17-19",
+   "steps": [
+    {
+     "title": "Gases in the air",
+     "bullets": [
+      "Air is about 78% N₂, 21% O₂, 1% other gases and 0.04% CO₂. Air pressure at sea level is 760 mm Hg (millimetres of mercury).",
+      "Each gas exerts a **partial pressure** proportional to its concentration: PO₂ is about 160 mm Hg and PCO₂ is about 0.3 mm Hg.",
+      "Check: 21% of 760 is about 160, and 0.04% of 760 is about 0.3."
+     ]
+    },
+    {
+     "title": "Gases move down their gradients",
+     "bullets": [
+      "Gases **diffuse** from regions of higher partial pressure to regions of lower partial pressure.",
+      "Gas movement in external and internal respiration is entirely passive. It depends only on differences in partial pressure between the air, the blood and the tissues."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/pressure_18.webp",
+      "slide": "slides 18-19",
+      "alt": "A loop diagram of breathing, lung capillaries, the heart and body tissues with the O2 and CO2 pressures written at each stage."
+     },
+     "title": "Pressures around the body",
+     "bullets": [
+      "Inhaled air: PO₂ 160 and PCO₂ 0.3. Alveolar air: PO₂ 104 and PCO₂ 40 (mm Hg).",
+      "Blood returning from the body (systemic veins and pulmonary artery): PO₂ 40, PCO₂ 46. Blood leaving the lungs (pulmonary vein and aorta): PO₂ 100, PCO₂ 40.",
+      "Interstitial fluid around the cells: PO₂ below 40 and PCO₂ above 46."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/external_18.webp",
+      "slide": "slide 18",
+      "alt": "An alveolus with O2 moving from 104 into a capillary where the value is 100, and CO2 moving from 46 in the capillary to 40 in the alveolus."
+     },
+     "title": "External respiration in the lungs",
+     "bullets": [
+      "Alveolar PO₂ (about 104 mm Hg) is higher than PO₂ in the arriving blood, so O₂ diffuses into the deoxygenated blood in the pulmonary capillaries.",
+      "CO₂ diffuses the other way, out of the blood into the alveolus.",
+      "Result: oxygenated blood has PO₂ about 100 mm Hg and PCO₂ about 40 mm Hg."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/internal_19.webp",
+      "slide": "slide 19",
+      "alt": "A capillary beside tissue cells with O2 moving out toward the cells at less than 40 and CO2 moving into the blood from more than 46."
+     },
+     "title": "Internal respiration at the tissues",
+     "bullets": [
+      "Interstitial fluid PO₂ is lower than the PO₂ of oxygenated blood, so O₂ diffuses out of the capillaries into the fluid, where cells take it up.",
+      "CO₂ diffuses from the interstitial fluid into the capillary blood.",
+      "Result: deoxygenated blood has PO₂ about 40 mm Hg and PCO₂ about 46 mm Hg."
+     ]
+    }
+   ],
+   "bullets": [],
+   "table": {
+    "head": [
+     "Where",
+     "PO₂ (mm Hg)",
+     "PCO₂ (mm Hg)"
+    ],
+    "rows": [
+     [
+      "Inhaled air",
+      "about 160",
+      "about 0.3"
+     ],
+     [
+      "Alveolar air",
+      "about 104",
+      "about 40"
+     ],
+     [
+      "Oxygenated blood (pulmonary vein and aorta)",
+      "about 100",
+      "about 40"
+     ],
+     [
+      "Deoxygenated blood (systemic veins and pulmonary artery)",
+      "about 40",
+      "about 46"
+     ],
+     [
+      "Interstitial fluid around cells",
+      "below 40",
+      "above 46"
+     ]
+    ]
+   },
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Gas molecules move from where they push harder (higher partial pressure) to where they push less. Blood arriving at the lungs has low PO₂ (40) and the alveolus has high PO₂ (104), so O₂ moves into the blood. At the tissues the order flips, so O₂ moves out of the blood. CO₂ always moves the opposite way."
+    },
+    {
+     "type": "trick",
+     "text": "Gases roll downhill from high pressure to low pressure. In the lungs O₂ rolls into the blood and CO₂ rolls out. In the tissues O₂ rolls out of the blood and CO₂ rolls in."
+    },
+    {
+     "type": "trap",
+     "text": "Learn the numbers as pairs (PO₂ / PCO₂ in mm Hg): inhaled air 160 / 0.3, alveolar air 104 / 40, oxygenated blood 100 / 40, deoxygenated blood 40 / 46. Alveolar PO₂ (104) is not the same as oxygenated blood (100). All values are approximate (~) on slides 17-19. The CO₂ gradient in the lungs is small (46 to 40) compared with the O₂ gradient (104 to 40). Slides 18 and 19 share one figure."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 17 (partial pressure text), slide 18 (external respiration) and slide 19 (internal respiration); the left-hand figure is the same on slides 18 and 19 and gives the pressure bar charts.",
+    "In the figure the capillary label in the external panel reads 46 (CO2 leaving) and 100 (O2 arriving)."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/pressure_18.webp",
+     "slide": "slides 18-19",
+     "alt": "A loop diagram of breathing, lung capillaries, the heart and body tissues with the O2 and CO2 pressures written at each stage."
+    },
+    {
+     "src": "img/respiratory/external_18.webp",
+     "slide": "slide 18",
+     "alt": "An alveolus with O2 moving from 104 into a capillary where the value is 100, and CO2 moving from 46 in the capillary to 40 in the alveolus."
+    },
+    {
+     "src": "img/respiratory/internal_19.webp",
+     "slide": "slide 19",
+     "alt": "A capillary beside tissue cells with O2 moving out toward the cells at less than 40 and CO2 moving into the blood from more than 46."
+    }
+   ]
+  },
+  {
+   "id": "transport",
+   "title": "Carrying O₂ and CO₂ in the blood",
+   "slides": "20-21",
+   "steps": [
+    {
+     "img": {
+      "src": "img/respiratory/o2_20.webp",
+      "slide": "slide 20",
+      "alt": "An alveolus next to a capillary with O2 arrows into the plasma (2 percent) and into a red blood cell where it joins hemoglobin to make HbO2 (98 percent)."
+     },
+     "title": "Oxygen rides on hemoglobin",
+     "bullets": [
+      "About 2% of the O₂ in blood is dissolved in plasma. About 98% is bound to **hemoglobin (Hb)** inside red blood cells.",
+      "Hb is a large protein with four **heme groups** that bind O₂. Hb + O₂ gives HbO₂ (oxyhemoglobin)."
+     ]
+    },
+    {
+     "title": "When hemoglobin lets go of O₂",
+     "bullets": [
+      "The binding of O₂ to Hb is highly reversible and is affected by partial pressure, temperature and pH.",
+      "HbO₂ forms in the neutral, cool lungs. HbO₂ dissociates (releases O₂) in warm, acidic tissues."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/co2_21.webp",
+      "slide": "slide 21",
+      "alt": "Tissue cells releasing CO2 into a capillary, where 10 percent dissolves in plasma, 20 percent binds hemoglobin and 70 percent becomes bicarbonate inside a red blood cell."
+     },
+     "title": "Three ways CO₂ travels",
+     "bullets": [
+      "About 10% of the CO₂ is dissolved in plasma, about 20% is bound to Hb, and about 70% is carried as **bicarbonate** (HCO₃⁻).",
+      "Globin groups in Hb bind CO₂. Hb + CO₂ gives HbCO₂ (carbaminohemoglobin)."
+     ]
+    },
+    {
+     "title": "Making bicarbonate",
+     "bullets": [
+      "The enzyme **carbonic anhydrase** in red blood cells converts CO₂ into carbonic acid (H₂CO₃).",
+      "Carbonic acid immediately dissociates into HCO₃⁻ and H⁺ ions, and the HCO₃⁻ diffuses into the plasma.",
+      "This reaction reverses in the lungs."
+     ]
+    }
+   ],
+   "bullets": [],
+   "table": {
+    "head": [
+     "",
+     "Oxygen (O₂)",
+     "Carbon dioxide (CO₂)"
+    ],
+    "rows": [
+     [
+      "Dissolved in plasma",
+      "about 2%",
+      "about 10%"
+     ],
+     [
+      "Bound to hemoglobin",
+      "about 98% (HbO₂, oxyhemoglobin; binds at the heme groups)",
+      "about 20% (HbCO₂, carbaminohemoglobin; binds at the globin groups)"
+     ],
+     [
+      "Other form",
+      "none",
+      "about 70% as bicarbonate (HCO₃⁻), made with carbonic anhydrase"
+     ]
+    ]
+   },
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Because Hb binding is reversible, the same molecule can pick up O₂ where O₂ is plentiful and cool (the lungs) and drop it where it is needed and the surroundings are warm and acidic (the tissues). The carbonic acid reaction also runs backward in the lungs, which lets CO₂ be released there."
+    },
+    {
+     "type": "trick",
+     "text": "Hemoglobin is like a bus with four seats (four heme groups) that picks up O₂ passengers in the lungs and drops them off at the tissues."
+    },
+    {
+     "type": "trap",
+     "text": "Heme groups bind O₂; globin groups bind CO₂ (slides 20-21). Most CO₂ is NOT carried on hemoglobin: about 70% is bicarbonate. The slide 21 text gives only the 10% dissolved; the 20% (on Hb) and 70% (bicarbonate) come from the slide 21 figure. Slide 20 says 'about 2% dissolved', and the figure says 98% on Hb."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 20 (O2 transport text and figure) and slide 21 (CO2 transport text and figure).",
+    "The bus analogy is outside source."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/o2_20.webp",
+     "slide": "slide 20",
+     "alt": "An alveolus next to a capillary with O2 arrows into the plasma (2 percent) and into a red blood cell where it joins hemoglobin to make HbO2 (98 percent)."
+    },
+    {
+     "src": "img/respiratory/co2_21.webp",
+     "slide": "slide 21",
+     "alt": "Tissue cells releasing CO2 into a capillary, where 10 percent dissolves in plasma, 20 percent binds hemoglobin and 70 percent becomes bicarbonate inside a red blood cell."
+    }
+   ]
+  },
+  {
+   "id": "regulation",
+   "title": "How breathing is controlled",
+   "slides": "22-24",
+   "steps": [
+    {
+     "img": {
+      "src": "img/respiratory/regulation_22.webp",
+      "slide": "slide 22",
+      "alt": "A person's head and chest showing the respiratory center in the medulla, nerve signals to the diaphragm and intercostal muscles, and receptors near the medulla and in the carotid and aortic bodies."
+     },
+     "title": "The brain sets the breathing rhythm",
+     "bullets": [
+      "Respiration is controlled by the nervous system. **Breathing rhythmogenesis** (making the rhythm) occurs in the medulla.",
+      "Groups of neurons in the medulla generate cyclical impulse patterns that stimulate the diaphragm and intercostal muscles to contract.",
+      "Breathing rate and depth are adjusted in response to gas concentrations and pH. Higher centers in the cortex can also exert conscious control."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/cpg_23.webp",
+      "slide": "slide 23",
+      "alt": "A map of named groups of neurons in the medulla, linked by colored pathways to the phrenic nucleus, the diaphragm and the lungs."
+     },
+     "title": "A network of groups in the medulla",
+     "bullets": [
+      "The respiratory central pattern generator is a network of named groups of neurons.",
+      "Groups named in the figure: Kölliker-Fuse nucleus, post-inspiratory complex, Bötzinger complex, pre-Bötzinger complex, parafacial respiratory group, nucleus of the solitary tract, medial reticular formation (MRF) and ventral respiratory group.",
+      "The output reaches the phrenic nucleus, which connects to the diaphragm."
+     ]
+    },
+    {
+     "title": "Chemoreceptors watch pH and O₂",
+     "bullets": [
+      "More CO₂ in the blood means more H⁺, because carbonic acid dissociates into HCO₃⁻ and H⁺. A lower (acidic) pH in the cerebrospinal fluid triggers faster and deeper breathing.",
+      "**Central chemoreceptors** in the brain detect changes in the pH of the interstitial fluid (for example the retrotrapezoid nucleus).",
+      "**Peripheral chemoreceptors** (the carotid and aortic bodies) monitor PO₂ in the blood, but are typically only active in specific circumstances: disease states, drug overdose and high altitudes."
+     ]
+    }
+   ],
+   "bullets": [],
+   "table": {
+    "head": [
+     "",
+     "Central chemoreceptors",
+     "Peripheral chemoreceptors"
+    ],
+    "rows": [
+     [
+      "Where",
+      "In the brain (for example the retrotrapezoid nucleus)",
+      "Carotid and aortic bodies"
+     ],
+     [
+      "What they detect",
+      "pH of the interstitial fluid of the brain (cerebrospinal fluid), which falls when blood PCO₂ rises",
+      "PO₂ in the blood"
+     ],
+     [
+      "Effect or activity",
+      "A lower (acidic) pH increases breathing rate and depth",
+      "Typically only active in disease states, drug overdose and high altitudes"
+     ]
+    ]
+   },
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Breathing is adjusted by feedback. More CO₂ means more H⁺ and a lower pH. The brain senses that change and increases breathing rate and depth, so more CO₂ can leave in the exhaled air."
+    },
+    {
+     "type": "trick",
+     "text": "Central watches CO₂ (through pH) inside the brain. Peripheral watches O₂ in the carotid and aortic bodies."
+    },
+    {
+     "type": "trap",
+     "text": "The everyday chemical driver is CO₂ through pH (central chemoreceptors), not O₂. The O₂ sensors (peripheral) are typically only active in special circumstances (slide 24). The rhythm itself is made in the medulla, although the cortex can override it consciously (slide 22 figure). Slide 23 only names the groups and gives no functions, so do not guess any."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 22 (breathing regulation text and figure), slide 23 (respiratory central pattern generator figure, labelled '*Ex.' as an example), slide 24 (chemoreceptors, text only).",
+    "'So more CO2 can leave in the exhaled air' links slide 24 to slide 2 and is generic glue (outside source). The Kolliker-Fuse nucleus sits inside the box labelled Medulla in the slide 23 figure."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/regulation_22.webp",
+     "slide": "slide 22",
+     "alt": "A person's head and chest showing the respiratory center in the medulla, nerve signals to the diaphragm and intercostal muscles, and receptors near the medulla and in the carotid and aortic bodies."
+    },
+    {
+     "src": "img/respiratory/cpg_23.webp",
+     "slide": "slide 23",
+     "alt": "A map of named groups of neurons in the medulla, linked by colored pathways to the phrenic nucleus, the diaphragm and the lungs."
+    }
+   ]
+  },
+  {
+   "id": "development",
+   "title": "How the respiratory system forms",
+   "slides": "25-28",
+   "steps": [
+    {
+     "img": {
+      "src": "img/respiratory/dev_25.webp",
+      "slide": "slide 25",
+      "alt": "Three stages in which a pocket on the foregut, the respiratory diverticulum, separates from the esophagus and forms the trachea and lung buds."
+     },
+     "title": "Foregut splits into two tubes",
+     "bullets": [
+      "The **foregut** develops from the endoderm. About 4 weeks after fertilization it is partitioned into the esophagus and the **respiratory diverticulum**.",
+      "The trachea forms buds (lung buds). They keep branching and finally form the alveoli on the terminal bronchioles."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/pharynx_26.webp",
+      "slide": "slide 26",
+      "alt": "Three stages of the embryonic throat showing four numbered pharyngeal pouches and arches and the finished structures in the head and neck."
+     },
+     "title": "Pharyngeal pouches and arches",
+     "bullets": [
+      "The pharynx develops from paired, endoderm-derived **pharyngeal pouches**.",
+      "Pharyngeal pouch 1 becomes the middle ear cavity and the auditory tube.",
+      "The epiglottis develops from **pharyngeal arch** 4. The picture also follows other pouch structures, such as the tonsil in the wall of pouch 2."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/branch_27.webp",
+      "slide": "slide 27",
+      "alt": "Six green images of a developing lung labelled E11 to E16, showing a small forked bud turning into a lung full of branches and divided into lobes."
+     },
+     "title": "The lung bud branches over time",
+     "bullets": [
+      "The respiratory epithelium branches in response to signals from the surrounding lung **mesenchyme**, a type of embryonic connective tissue.",
+      "The three-dimensional branching pattern of the lungs is not random.",
+      "From E11 to E16 a simple fork becomes a dense tree, and by E16 the lung is divided into labelled lobes."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/respiratory/modes_28.webp",
+      "slide": "slide 28",
+      "alt": "Three rows of drawings showing domain branching in blue, planar bifurcation in green and orthogonal bifurcation in red."
+     },
+     "title": "Three branching patterns",
+     "bullets": [
+      "The bronchial tree branches in a highly stereotypical (predictable) way, using sequences of three geometric behaviours.",
+      "**Domain branching** forms perpendicular rows of outgrowths on a tube, from a circumferentially shifted position.",
+      "**Planar bifurcation** splits the tip of a lobe at its midline and can repeat along the same plane. **Orthogonal bifurcation** also splits lobe tips, but a 90° rotation occurs between branching events."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The trachea and the esophagus both come from the foregut, which splits into two tubes. The trachea then keeps budding and branching until alveoli form on the ends of the terminal bronchioles."
+    },
+    {
+     "type": "trick",
+     "text": "Build order: gut tube splits, a bud grows, the bud branches, the tips become alveoli. Planar = flat (same plane). Orthogonal = at right angles (a 90° turn). Domain = rows of outgrowths along a tube."
+    },
+    {
+     "type": "trap",
+     "text": "Pouch 1 becomes the middle ear cavity and auditory tube; the epiglottis comes from arch 4. Do not swap pouches and arches. The foregut and pharyngeal pouches are endoderm-derived, while the mesenchyme is the connective tissue that sends branching signals. The slide 26 figure also shows other pouch derivatives (tonsil, thymus, parathyroids, thyroid) that the slide text does not discuss. The coloured E15 picture on slide 28 is not explained on the slide, and the slides do not say what animal E11 to E16 came from."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 25 (development of the respiratory system), slide 26 (pharynx), slide 27 (bronchial tree development), slide 28 (morphogenesis of branches). Figures on 25-28 are credited to Developmental Biology 13e (Oxford University Press).",
+    "'Labelled lobes' at E16 reads the lobe labels RCr, RMd, RAc, RCd and L in the slide 27 figure.",
+    "The slide 28 E15 picture with coloured dots is not described in the slide text, so it is not used."
+   ],
+   "images": [
+    {
+     "src": "img/respiratory/dev_25.webp",
+     "slide": "slide 25",
+     "alt": "Three stages in which a pocket on the foregut, the respiratory diverticulum, separates from the esophagus and forms the trachea and lung buds."
+    },
+    {
+     "src": "img/respiratory/pharynx_26.webp",
+     "slide": "slide 26",
+     "alt": "Three stages of the embryonic throat showing four numbered pharyngeal pouches and arches and the finished structures in the head and neck."
+    },
+    {
+     "src": "img/respiratory/branch_27.webp",
+     "slide": "slide 27",
+     "alt": "Six green images of a developing lung labelled E11 to E16, showing a small forked bud turning into a lung full of branches and divided into lobes."
+    },
+    {
+     "src": "img/respiratory/modes_28.webp",
+     "slide": "slide 28",
+     "alt": "Three rows of drawings showing domain branching in blue, planar bifurcation in green and orthogonal bifurcation in red."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "head": [
+   "",
+   "External respiration",
+   "Internal respiration"
+  ],
+  "rows": [
+   [
+    "Where",
+    "Lungs: alveoli and pulmonary capillaries",
+    "Tissues: capillaries and the interstitial fluid around cells"
+   ],
+   [
+    "O₂ moves",
+    "From the alveoli into the blood (alveolar PO₂ about 104 mm Hg)",
+    "From the blood into the interstitial fluid (PO₂ below 40 mm Hg)"
+   ],
+   [
+    "CO₂ moves",
+    "From the blood into the alveoli (blood about 46 to alveoli about 40 mm Hg)",
+    "From the interstitial fluid into the blood (PCO₂ above 46 mm Hg)"
+   ],
+   [
+    "Blood afterward",
+    "Oxygenated: PO₂ about 100, PCO₂ about 40 mm Hg",
+    "Deoxygenated: PO₂ about 40, PCO₂ about 46 mm Hg"
+   ],
+   [
+    "Driving force",
+    "Passive diffusion down partial pressure gradients",
+    "Passive diffusion down partial pressure gradients"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "rs-c1",
+   "front": "What is the primary function of the respiratory system?",
+   "back": "To exchange O₂ and CO₂ between the air and the blood. Inhalation brings O₂ into the body and exhalation rids the body of CO₂.",
+   "short": "Swap O₂ and CO₂ with the air",
+   "src": "Slide 2"
+  },
+  {
+   "id": "rs-c2",
+   "front": "What is the difference between ventilation, external respiration and internal respiration?",
+   "back": "Ventilation (breathing) moves air into and out of the lungs. External respiration exchanges gases between the air and the lungs (alveoli to blood). Internal respiration exchanges gases between the blood and the cells, organs and tissues.",
+   "short": "Breathing versus lung and tissue exchange",
+   "src": "Slides 1-2"
+  },
+  {
+   "id": "rs-c3",
+   "front": "What is cellular respiration?",
+   "back": "Cellular respiration uses oxygen to produce ATP within cells.",
+   "short": "Uses O₂ to make ATP in cells",
+   "src": "Slide 2"
+  },
+  {
+   "id": "rs-c4",
+   "front": "Which structures make up the upper respiratory tract?",
+   "back": "The nose (nasal cavity) and the pharynx (throat). The sinuses, tear ducts and auditory (eustachian) tubes drain into the nasal cavity and pharynx.",
+   "short": "Nose and pharynx",
+   "src": "Slide 5"
+  },
+  {
+   "id": "rs-c5",
+   "front": "Which structures make up the lower respiratory tract?",
+   "back": "The larynx, trachea, bronchi and lungs. The lungs include the bronchioles and alveoli.",
+   "short": "Larynx, trachea, bronchi and lungs",
+   "src": "Slide 6"
+  },
+  {
+   "id": "rs-c6",
+   "front": "How does the nasal epithelium prepare incoming air?",
+   "back": "It warms the air (heat transfer from surrounding blood vessels) and humidifies it with mucus. Hairs and mucus filter and trap particles.",
+   "short": "Warms, humidifies and filters the air",
+   "src": "Slide 5"
+  },
+  {
+   "id": "rs-c7",
+   "front": "What do the motile cilia of the nasal epithelium do?",
+   "back": "They beat to generate a current that sweeps mucus down into the pharynx.",
+   "short": "Sweep nasal mucus down into pharynx",
+   "src": "Slide 5"
+  },
+  {
+   "id": "rs-c8",
+   "front": "What is the epiglottis?",
+   "back": "A cartilage flap that blocks the opening to the trachea during the involuntary swallowing phase, preventing food from entering the trachea.",
+   "short": "Cartilage flap that shuts the trachea",
+   "src": "Slide 6"
+  },
+  {
+   "id": "rs-c9",
+   "front": "What are the vocal cords and the glottis?",
+   "back": "The vocal cords are folds of connective tissue stretched across the opening to the airway. That opening is the glottis.",
+   "short": "Tissue folds and the opening they span",
+   "src": "Slide 6"
+  },
+  {
+   "id": "rs-c10",
+   "front": "How is sound produced, and what raises its pitch?",
+   "back": "Sound is mostly produced when air flows across the vocal cords and makes them vibrate. Shorter or more-stretched cords make higher tones. Skeletal muscles control the stretching, and the nasal cavity adds resonance.",
+   "short": "Vibrating cords, tighter cords give higher pitch",
+   "src": "Slide 7"
+  },
+  {
+   "id": "rs-c11",
+   "front": "Describe the wall of the trachea.",
+   "back": "Incomplete rings of cartilage held together by connective tissue and smooth muscle. The rings keep the trachea constantly open and the smooth muscle lets it expand and contract.",
+   "short": "Incomplete cartilage rings plus smooth muscle",
+   "src": "Slide 8"
+  },
+  {
+   "id": "rs-c12",
+   "front": "What happens in the cough reflex?",
+   "back": "Choking (a blocked airway) stimulates it. The smooth muscle briefly narrows the trachea and, with contraction of the abdominal muscles, speeds up the air to forcibly expel irritants or mucus.",
+   "short": "Narrowed trachea and abdominal push expel irritants",
+   "src": "Slides 8, 15"
+  },
+  {
+   "id": "rs-c13",
+   "front": "How many lobes does each lung have, and what surrounds the lungs?",
+   "back": "The left lung has two lobes and the right lung has three. Each lung is surrounded by pleural membranes within the pleural cavity.",
+   "short": "Left 2 lobes, right 3 lobes",
+   "src": "Slide 9"
+  },
+  {
+   "id": "rs-c14",
+   "front": "How do bronchioles differ from bronchi?",
+   "back": "Bronchioles are defined as the airway branches that lack cartilage. Bronchi walls have connective tissue and smooth muscle reinforced with cartilage.",
+   "short": "Bronchioles lack cartilage",
+   "src": "Slide 10"
+  },
+  {
+   "id": "rs-c15",
+   "front": "Where does gas exchange occur?",
+   "back": "In the alveoli, which are clustered at the end of the terminal bronchioles. Their walls are only one cell layer thick, and a network of pulmonary capillaries wraps them.",
+   "short": "Alveoli at the ends of bronchioles",
+   "src": "Slide 11"
+  },
+  {
+   "id": "rs-c16",
+   "front": "What is pulmonary surfactant and who makes it?",
+   "back": "A lipoprotein secreted by type II alveolar cells. It reduces surface tension in the alveoli.",
+   "short": "Type II cell lipoprotein lowering surface tension",
+   "src": "Slide 11"
+  },
+  {
+   "id": "rs-c17",
+   "front": "What is atelectasis and what can cause it?",
+   "back": "Partial collapse of a lung due to collapse of the alveoli. Causes include surgical anesthesia and too little surfactant (higher surface tension). It results in a lack of gas exchange and can be reversed by positive-pressure ventilation or removing blockages.",
+   "short": "Partial lung collapse from collapsed alveoli",
+   "src": "Slide 12"
+  },
+  {
+   "id": "rs-c18",
+   "front": "Which vessels bring blood to and from the alveoli?",
+   "back": "Pulmonary arterioles bring deoxygenated blood to the lungs and pulmonary venules bring oxygenated blood back to the heart. Pulmonary capillaries wrap the alveoli.",
+   "short": "Arterioles bring deoxygenated blood, venules return oxygenated",
+   "src": "Slide 11"
+  },
+  {
+   "id": "rs-c19",
+   "front": "What is the pressure rule for a closed chamber of gas?",
+   "back": "Gas pressure comes from gas molecules colliding. When a closed chamber gets bigger its pressure decreases, and when it gets smaller its pressure increases. Gases flow from higher to lower pressure.",
+   "short": "Bigger chamber lowers pressure, smaller raises it",
+   "src": "Slide 13"
+  },
+  {
+   "id": "rs-c20",
+   "front": "What happens during inspiration?",
+   "back": "The diaphragm and intercostal muscles contract, the pleural cavity volume increases, the lungs expand, air pressure in the lungs decreases and air rushes in.",
+   "short": "Muscles contract, volume up, pressure down, air in",
+   "src": "Slide 14"
+  },
+  {
+   "id": "rs-c21",
+   "front": "What happens during expiration?",
+   "back": "The diaphragm and intercostal muscles relax, the pleural cavity and lungs get smaller, air pressure in the lungs rises and air flows out.",
+   "short": "Muscles relax, volume down, pressure up, air out",
+   "src": "Slide 14"
+  },
+  {
+   "id": "rs-c22",
+   "front": "In quiet breathing, which phase is active and which is passive?",
+   "back": "Inspiration is active and expiration is passive. During exertion both can be active.",
+   "short": "Quiet breathing: in active, out passive",
+   "src": "Slide 15"
+  },
+  {
+   "id": "rs-c23",
+   "front": "What do the abdominal muscles do in a cough, a sneeze or hard breathing?",
+   "back": "In a cough or sneeze they contract rapidly, push the diaphragm upward and force air out of the lungs. During exertion they can push the ribcage and diaphragm higher to increase the speed and force of breathing.",
+   "short": "Push the diaphragm up to force air out",
+   "src": "Slide 15"
+  },
+  {
+   "id": "rs-c24",
+   "front": "What are tidal volume and vital capacity?",
+   "back": "Tidal volume is the volume of air inhaled and exhaled in a single breath during quiet breathing. Vital capacity is the maximum volume you can inhale and exhale.",
+   "short": "Single quiet breath versus maximum breath",
+   "src": "Slide 15"
+  },
+  {
+   "id": "rs-c25",
+   "front": "What is classic apnea on a breathing trace?",
+   "back": "A prolonged event lasting more than 2 × the average breath length (Ttot, the breath period).",
+   "short": "Pause longer than two breath periods",
+   "src": "Slide 16 (reading of the bar over x as average is outside source)"
+  },
+  {
+   "id": "rs-c26",
+   "front": "What are the PO₂ and PCO₂ of inhaled air at sea level?",
+   "back": "About 160 mm Hg and 0.3 mm Hg. Air is about 78% N₂, 21% O₂, 1% other gases and 0.04% CO₂ at 760 mm Hg, and partial pressure is proportional to concentration.",
+   "short": "Inhaled air: about 160 and 0.3",
+   "src": "Slides 17, 18"
+  },
+  {
+   "id": "rs-c27",
+   "front": "What are the PO₂ and PCO₂ of alveolar air?",
+   "back": "About 104 mm Hg and about 40 mm Hg.",
+   "short": "Alveolar air: about 104 and 40",
+   "src": "Slide 18"
+  },
+  {
+   "id": "rs-c28",
+   "front": "What happens in external respiration and what are the blood values afterward?",
+   "back": "O₂ diffuses from the alveoli into the deoxygenated blood in the pulmonary capillaries while CO₂ diffuses out. Oxygenated blood then has PO₂ about 100 mm Hg and PCO₂ about 40 mm Hg.",
+   "short": "Alveoli to blood, leaving at 100 and 40",
+   "src": "Slide 18"
+  },
+  {
+   "id": "rs-c29",
+   "front": "What happens in internal respiration and what are the blood values afterward?",
+   "back": "O₂ diffuses out of the capillaries into the interstitial fluid (for uptake by cells) while CO₂ diffuses from the interstitial fluid into the blood. Deoxygenated blood then has PO₂ about 40 mm Hg and PCO₂ about 46 mm Hg.",
+   "short": "Blood to tissues, returning at 40 and 46",
+   "src": "Slide 19"
+  },
+  {
+   "id": "rs-c30",
+   "front": "How is O₂ carried in the blood, and what is hemoglobin?",
+   "back": "About 2% is dissolved in plasma and about 98% is bound to hemoglobin (Hb) in red blood cells as HbO₂ (oxyhemoglobin). Hb is a large protein with four heme groups that bind O₂.",
+   "short": "2% dissolved, 98% on hemoglobin",
+   "src": "Slide 20"
+  },
+  {
+   "id": "rs-c31",
+   "front": "When does HbO₂ form and when does it release O₂?",
+   "back": "The binding is highly reversible and depends on partial pressure, temperature and pH. HbO₂ forms in the neutral, cool lungs and dissociates in warm, acidic tissues.",
+   "short": "Forms in cool lungs, releases in warm tissues",
+   "src": "Slide 20"
+  },
+  {
+   "id": "rs-c32",
+   "front": "How is CO₂ carried in the blood?",
+   "back": "About 10% dissolved in plasma, about 20% bound to Hb (HbCO₂, carbaminohemoglobin, at the globin groups) and about 70% as bicarbonate (HCO₃⁻).",
+   "short": "10% dissolved, 20% on Hb, 70% bicarbonate",
+   "src": "Slide 21 (20% and 70% from the figure)"
+  },
+  {
+   "id": "rs-c33",
+   "front": "What does carbonic anhydrase do?",
+   "back": "This enzyme in red blood cells converts CO₂ into carbonic acid (H₂CO₃), which immediately dissociates into HCO₃⁻ and H⁺. The reaction reverses in the lungs.",
+   "short": "Enzyme turning CO₂ into carbonic acid",
+   "src": "Slide 21"
+  },
+  {
+   "id": "rs-c34",
+   "front": "Where is the breathing rhythm generated?",
+   "back": "In the medulla, where groups of neurons generate cyclical impulse patterns that stimulate the diaphragm and intercostal muscles to contract.",
+   "short": "Medulla neurons set the rhythm",
+   "src": "Slides 22-23"
+  },
+  {
+   "id": "rs-c35",
+   "front": "How do central chemoreceptors change breathing?",
+   "back": "More CO₂ in the blood raises H⁺, so the pH of the cerebrospinal fluid falls. Central chemoreceptors in the brain (for example the retrotrapezoid nucleus) detect this and breathing rate and depth increase.",
+   "short": "Brain cells sensing low pH speed breathing",
+   "src": "Slide 24"
+  },
+  {
+   "id": "rs-c36",
+   "front": "What are peripheral chemoreceptors?",
+   "back": "The carotid and aortic bodies. They monitor PO₂ in the blood but are typically only active in specific circumstances such as disease states, drug overdose and high altitudes.",
+   "short": "Carotid and aortic bodies sensing O₂",
+   "src": "Slide 24"
+  },
+  {
+   "id": "rs-c37",
+   "front": "How does the respiratory system begin in the embryo?",
+   "back": "About 4 weeks after fertilization the foregut (from the endoderm) is partitioned into the esophagus and the respiratory diverticulum. The trachea forms buds that keep branching and form alveoli on the terminal bronchioles.",
+   "short": "Foregut splits into esophagus and diverticulum",
+   "src": "Slide 25"
+  },
+  {
+   "id": "rs-c38",
+   "front": "What do pharyngeal pouch 1 and pharyngeal arch 4 become?",
+   "back": "Pharyngeal pouch 1 becomes the middle ear cavity and auditory tube. The epiglottis develops from pharyngeal arch 4.",
+   "short": "Pouch 1 makes ear tube, arch 4 epiglottis",
+   "src": "Slide 26"
+  },
+  {
+   "id": "rs-c39",
+   "front": "What drives lung branching and what are the three branching patterns?",
+   "back": "The epithelium branches in response to signals from the surrounding lung mesenchyme, and the pattern is not random. The three patterns are domain branching, planar bifurcation and orthogonal bifurcation (90° rotation between branchings).",
+   "short": "Mesenchyme signals and three branching patterns",
+   "src": "Slides 27-28"
+  },
+  {
+   "id": "rs-c40",
+   "front": "What drains into the nasal cavity and pharynx?",
+   "back": "The sinuses, tear ducts and auditory (eustachian) tubes.",
+   "short": "Sinuses, tear ducts and auditory tubes",
+   "src": "Slide 5"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "rs-1",
+   "q": "In the human respiratory system, which structures make up the upper respiratory tract?",
+   "options": [
+    "The nose (nasal cavity) and the pharynx (throat)",
+    "The pharynx and the larynx",
+    "The larynx and the trachea",
+    "The trachea and the bronchi",
+    "The bronchioles and the alveoli"
+   ],
+   "answer": 0,
+   "why": "The upper tract is the nose (nasal cavity) and the pharynx. The larynx, trachea, bronchi and lungs make up the lower tract.",
+   "source": "Slides 5-6"
+  },
+  {
+   "id": "rs-2",
+   "q": "Which of the following is NOT a function of the nasal cavity and its lining?",
+   "options": [
+    "Warming incoming air using heat from nearby blood vessels",
+    "Humidifying the air with mucus",
+    "Trapping particles with hairs and mucus",
+    "Sweeping mucus toward the pharynx with motile cilia",
+    "Secreting pulmonary surfactant to reduce surface tension"
+   ],
+   "answer": 4,
+   "why": "Pulmonary surfactant is secreted by type II alveolar cells deep in the lungs. The nasal lining warms, humidifies and filters the air and sweeps mucus down into the pharynx.",
+   "source": "Slides 5, 11"
+  },
+  {
+   "id": "rs-3",
+   "q": "Which of the following statements about the trachea are correct?\nI. It is surrounded by incomplete rings of cartilage.\nII. The cartilage rings keep it constantly open.\nIII. It is the airway branch that lacks cartilage.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "I and III only",
+    "I, II and III"
+   ],
+   "answer": 2,
+   "why": "The trachea has incomplete cartilage rings that keep it open. The airway branches defined by lacking cartilage are the bronchioles, so III is wrong.",
+   "source": "Slides 8, 10"
+  },
+  {
+   "id": "rs-4",
+   "q": "During a cough, the smooth muscle of the trachea briefly contracts while the abdominal muscles also contract. Why does this help clear a blockage?",
+   "options": [
+    "The wider trachea lets the air move more slowly and gently past the blockage",
+    "The narrower trachea and the abdominal push make the air move faster, forcibly expelling irritants or mucus",
+    "The cartilage rings collapse so the blockage can fall away",
+    "The diaphragm moves down so the pressure in the lungs falls and pulls the blockage in",
+    "The epiglottis opens wider so the blockage can be swallowed"
+   ],
+   "answer": 1,
+   "why": "Narrowing the trachea together with abdominal muscle contraction increases the velocity of the air, so irritants or mucus are forcibly expelled. The abdominal muscles push the diaphragm up, not down.",
+   "source": "Slides 8, 15"
+  },
+  {
+   "id": "rs-5",
+   "q": "Which of the following statements are correct?\nI. The epiglottis is a cartilage flap that blocks the opening to the trachea during swallowing.\nII. The vocal cords are connective tissue folds that stretch across the glottis.\nIII. The glottis is the cartilage flap that covers the larynx during swallowing.",
+   "options": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "I and III only",
+    "all of the above"
+   ],
+   "answer": 1,
+   "why": "The epiglottis is the flap and the vocal cords are the folds. The glottis is the opening that the vocal cords stretch across, so III is wrong.",
+   "source": "Slide 6"
+  },
+  {
+   "id": "rs-6",
+   "q": "A singer raises the pitch of a note. Which change in the vocal cords gives the higher tone, and what controls it?",
+   "options": [
+    "Longer, more relaxed vocal cords, controlled by smooth muscle",
+    "Longer, more relaxed vocal cords, controlled by skeletal muscles",
+    "Shorter or more-stretched vocal cords, controlled by smooth muscle",
+    "Shorter or more-stretched vocal cords, controlled by skeletal muscles",
+    "A wider glottis, controlled by the nasal cavity"
+   ],
+   "answer": 3,
+   "why": "Shorter or more-stretched cords make higher tones. Skeletal muscles control the stretch across the glottis. The nasal cavity only adds resonance.",
+   "source": "Slide 7"
+  },
+  {
+   "id": "rs-7",
+   "q": "Which statement about the lungs is INCORRECT?",
+   "options": [
+    "Each lobe can largely function independently of the other lobes",
+    "The lungs lie within the pleural cavities and are surrounded by two pleural membranes",
+    "The lobes are divided by the pattern of the internal bronchial tree",
+    "The right lung has two lobes and the left lung has three lobes",
+    "The lungs are responsible for gas exchange"
+   ],
+   "answer": 3,
+   "why": "The left lung has two lobes and the right lung has three. The other statements are correct.",
+   "source": "Slide 9"
+  },
+  {
+   "id": "rs-8",
+   "q": "Bronchioles are defined as the airway branches that",
+   "options": [
+    "have incomplete rings of cartilage",
+    "are the only airways lined with ciliated epithelium",
+    "branch directly off the pharynx",
+    "carry blood into the lungs",
+    "lack cartilage"
+   ],
+   "answer": 4,
+   "why": "Bronchioles are the airway branches that lack cartilage. Incomplete cartilage rings belong to the trachea, and most bronchi are also lined with ciliated epithelium.",
+   "source": "Slides 8, 10"
+  },
+  {
+   "id": "rs-9",
+   "q": "The picture shows a normal lung and a collapsed lung. Which change would most directly cause alveoli to collapse like this?",
+   "options": [
+    "Too much pulmonary surfactant",
+    "A decrease in surface tension in the alveoli",
+    "Too little pulmonary surfactant, which raises surface tension on the thin-walled alveoli",
+    "Thickening of the cartilage rings in the trachea",
+    "An increase in tidal volume"
+   ],
+   "answer": 2,
+   "why": "Surfactant lowers surface tension. A shortage raises surface tension on the thin-walled alveoli, so they collapse and cannot exchange gas.",
+   "source": "Slides 11-12",
+   "img": {
+    "src": "img/respiratory/atelect_12a.webp",
+    "alt": "A normal lung beside a smaller collapsed lung, with close-ups of normal alveoli and collapsed alveoli."
+   }
+  },
+  {
+   "id": "rs-10",
+   "q": "The picture shows an alveolus surrounded by capillaries. Which statement about the blood vessels is correct?",
+   "options": [
+    "Pulmonary arterioles carry oxygenated blood from the lungs to the heart",
+    "Pulmonary venules bring deoxygenated blood to the alveoli",
+    "The capillaries carry air into the alveolus",
+    "Pulmonary arterioles bring deoxygenated blood to the lungs, and pulmonary venules bring oxygenated blood back to the heart",
+    "The capillary network stays far from the alveolar air so that gases cannot mix"
+   ],
+   "answer": 3,
+   "why": "Arterioles deliver deoxygenated blood to the pulmonary capillaries. After gas exchange, venules carry oxygenated blood back to the heart. The capillaries sit in close contact with the alveolus.",
+   "source": "Slide 11",
+   "img": {
+    "src": "img/respiratory/alveoli_11b.webp",
+    "alt": "A single alveolus covered by a mesh of capillaries between a blue pulmonary arteriole and a red pulmonary venule."
+   }
+  },
+  {
+   "id": "rs-11",
+   "q": "The picture shows the rib cage during inspiration. Which statement correctly links the muscles, the lung volume and the airflow?",
+   "options": [
+    "The diaphragm contracts and flattens and the ribs move up and out, so lung volume increases, air pressure falls and air flows in",
+    "The diaphragm relaxes and moves up, so lung volume decreases, air pressure rises and air flows in",
+    "The diaphragm contracts, so lung volume increases, air pressure rises and air flows out",
+    "The ribs move down and in, so lung volume increases, air pressure falls and air flows in",
+    "The diaphragm relaxes, so lung volume increases, air pressure falls and air flows out"
+   ],
+   "answer": 0,
+   "why": "Contraction of the diaphragm and intercostal muscles enlarges the pleural cavity. A larger volume means lower pressure in the lungs, so air flows in from the higher outside pressure.",
+   "source": "Slides 13-14",
+   "img": {
+    "src": "img/respiratory/cycle_14_inspire.webp",
+    "alt": "A rib cage during inspiration with arrows showing the ribs moving up and out and the flattened diaphragm moving down."
+   }
+  },
+  {
+   "id": "rs-12",
+   "q": "During quiet breathing, which statement is correct?",
+   "options": [
+    "Both inspiration and expiration are active",
+    "Inspiration is active and expiration is passive",
+    "Inspiration is passive and expiration is active",
+    "Both inspiration and expiration are passive",
+    "Expiration is active and is powered mainly by the abdominal muscles"
+   ],
+   "answer": 1,
+   "why": "In quiet breathing the diaphragm and intercostal muscles contract to breathe in, and breathing out happens when they relax. Both phases can be active only during exertion.",
+   "source": "Slide 15"
+  },
+  {
+   "id": "rs-13",
+   "q": "Which of the following occurs during inspiration EXCEPT:",
+   "options": [
+    "The diaphragm contracts and flattens",
+    "The ribs move upward and outward",
+    "The volume of the pleural cavity increases",
+    "Air pressure in the lungs decreases",
+    "The diaphragm relaxes and moves upward"
+   ],
+   "answer": 4,
+   "why": "During inspiration the diaphragm contracts and moves down. Relaxing and moving up is part of expiration.",
+   "source": "Slide 14"
+  },
+  {
+   "id": "rs-14",
+   "q": "During heavy exercise, which of the following statements are correct?\nI. Expiration can become active as well as inspiration.\nII. The abdominal muscles can push the diaphragm higher, which increases the force of expiration.\nIII. Expiration always remains passive.",
+   "options": [
+    "I only",
+    "III only",
+    "I and III only",
+    "I and II only",
+    "all of the above"
+   ],
+   "answer": 3,
+   "why": "During exertion both inspiration and expiration can be active, and the abdominal muscles can push the diaphragm higher to force air out. Expiration is passive only in quiet breathing, so III is wrong.",
+   "source": "Slide 15"
+  },
+  {
+   "id": "rs-15",
+   "q": "A student breathes quietly, then takes the deepest possible breath in and then out. The air moved in one quiet breath is the _____, and the maximum air that can be inhaled and exhaled is the _____.",
+   "options": [
+    "vital capacity; tidal volume",
+    "tidal volume; partial pressure",
+    "tidal volume; vital capacity",
+    "partial pressure; vital capacity",
+    "tidal volume; ventilation"
+   ],
+   "answer": 2,
+   "why": "Tidal volume is the air moved in a single quiet breath. Vital capacity is the maximum volume you can inhale and exhale.",
+   "source": "Slide 15"
+  },
+  {
+   "id": "rs-16",
+   "q": "At sea level, atmospheric pressure is 760 mm Hg and air is about 21% O₂. Because partial pressure is proportional to concentration, what is the approximate PO₂ of inhaled air?",
+   "options": [
+    "About 160 mm Hg",
+    "About 104 mm Hg",
+    "About 21 mm Hg",
+    "About 40 mm Hg",
+    "About 760 mm Hg"
+   ],
+   "answer": 0,
+   "why": "0.21 × 760 = 159.6, which is about 160 mm Hg. A value of 104 mm Hg is the PO₂ of alveolar air, not inhaled air.",
+   "source": "Slides 17-18"
+  },
+  {
+   "id": "rs-17",
+   "q": "Using the picture, which pair of values (PO₂ and PCO₂, in mm Hg) describes the air inside the alveoli?",
+   "options": [
+    "104 and 40",
+    "160 and 0.3",
+    "100 and 40",
+    "40 and 46",
+    "below 40 and above 46"
+   ],
+   "answer": 0,
+   "why": "Alveolar air has PO₂ about 104 and PCO₂ about 40 mm Hg. 160 and 0.3 is inhaled air, 100 and 40 is oxygenated blood, 40 and 46 is deoxygenated blood, and the last pair is the interstitial fluid.",
+   "source": "Slides 17-19",
+   "img": {
+    "src": "img/respiratory/pressure_18.webp",
+    "alt": "A loop diagram of breathing, lung capillaries, the heart and body tissues with the O2 and CO2 pressures written at each stage."
+   }
+  },
+  {
+   "id": "rs-18",
+   "q": "Blood arriving at the lungs has PO₂ about 40 mm Hg and PCO₂ about 46 mm Hg. Alveolar air has PO₂ about 104 mm Hg and PCO₂ about 40 mm Hg. What happens, and why?",
+   "options": [
+    "Both gases diffuse into the blood because the alveolus is at a higher total pressure",
+    "O₂ diffuses out of the blood and CO₂ diffuses into the alveolus",
+    "O₂ is actively pumped into the blood against its gradient while CO₂ diffuses out",
+    "Neither gas has a net movement because the pressures are close",
+    "O₂ diffuses into the blood and CO₂ diffuses out, because each gas moves from higher to lower partial pressure"
+   ],
+   "answer": 4,
+   "why": "O₂ is higher in the alveolus (104) than in the blood (40), and CO₂ is higher in the blood (46) than in the alveolus (40). Gas movement is entirely passive and follows these gradients.",
+   "source": "Slides 17-18"
+  },
+  {
+   "id": "rs-19",
+   "q": "In the lungs, how large is the driving partial pressure difference for each gas? Use alveolar air (PO₂ 104, PCO₂ 40 mm Hg) and blood arriving at the lungs (PO₂ 40, PCO₂ 46 mm Hg).",
+   "options": [
+    "O₂: 4 mm Hg into the blood; CO₂: 6 mm Hg out of the blood",
+    "O₂: 144 mm Hg into the blood; CO₂: 86 mm Hg out of the blood",
+    "O₂: 64 mm Hg into the blood; CO₂: 6 mm Hg out of the blood",
+    "O₂: 64 mm Hg into the blood; CO₂: 86 mm Hg out of the blood",
+    "O₂: 6 mm Hg into the blood; CO₂: 64 mm Hg out of the blood"
+   ],
+   "answer": 2,
+   "why": "For O₂ the difference is 104 - 40 = 64 mm Hg. For CO₂ it is 46 - 40 = 6 mm Hg. The O₂ gradient is much larger than the CO₂ gradient.",
+   "source": "Slides 18-19"
+  },
+  {
+   "id": "rs-20",
+   "q": "Which of the following terms is NOT correctly matched with its description?",
+   "options": [
+    "Ventilation: movement of air into and out of the lungs",
+    "Cellular respiration: exchange of gases between the air and the lungs",
+    "External respiration: gas exchange between the alveoli and the blood",
+    "Internal respiration: gas exchange between the blood and the tissues",
+    "Inhalation: brings O₂ into the body"
+   ],
+   "answer": 1,
+   "why": "Cellular respiration uses oxygen to produce ATP inside cells. Exchange between the air and the lungs is external respiration.",
+   "source": "Slides 1-2"
+  },
+  {
+   "id": "rs-21",
+   "q": "An arterial blood sample carries 400 units of O₂. Using the approximate percentages, how many units are dissolved in plasma and how many are bound to hemoglobin?",
+   "options": [
+    "2 dissolved; 398 bound",
+    "98 dissolved; 302 bound",
+    "20 dissolved; 380 bound",
+    "8 dissolved; 392 bound",
+    "392 dissolved; 8 bound"
+   ],
+   "answer": 3,
+   "why": "About 2% is dissolved: 0.02 × 400 = 8. About 98% is bound to Hb: 0.98 × 400 = 392. The two add to 400.",
+   "source": "Slide 20"
+  },
+  {
+   "id": "rs-22",
+   "q": "Venous blood carries 300 units of CO₂. How many units travel as bicarbonate, bound to hemoglobin and dissolved in plasma, in that order?",
+   "options": [
+    "210; 60; 30",
+    "60; 210; 30",
+    "30; 60; 210",
+    "210; 30; 60",
+    "150; 100; 50"
+   ],
+   "answer": 0,
+   "why": "About 70% is bicarbonate (210), about 20% is bound to Hb (60) and about 10% is dissolved in plasma (30). 210 + 60 + 30 = 300.",
+   "source": "Slide 21 (percentages from the figure and text)"
+  },
+  {
+   "id": "rs-23",
+   "q": "Why does hemoglobin tend to pick up O₂ in the lungs but release it in the tissues?",
+   "options": [
+    "Hb binds O₂ only in the tissues, where the PO₂ is highest",
+    "Hb is destroyed in the tissues and new Hb is made in the lungs",
+    "The tissues are cool and neutral, which makes HbO₂ dissociate there",
+    "O₂ is pumped off Hb by active transport in the tissues",
+    "The binding is reversible and depends on partial pressure, temperature and pH: HbO₂ forms in the neutral, cool lungs and dissociates in warm, acidic tissues"
+   ],
+   "answer": 4,
+   "why": "O₂ binding to Hb is highly reversible. Neutral, cool conditions in the lungs favor HbO₂, while warm, acidic conditions in tissues make it dissociate.",
+   "source": "Slide 20"
+  },
+  {
+   "id": "rs-24",
+   "q": "Which statements about hemoglobin (Hb) are correct?\nI. Hb is a large protein found in red blood cells.\nII. The heme groups of Hb bind CO₂.\nIII. The globin groups of Hb bind CO₂ to form carbaminohemoglobin (HbCO₂).",
+   "options": [
+    "I only",
+    "II only",
+    "I and III only",
+    "II and III only",
+    "all of the above"
+   ],
+   "answer": 2,
+   "why": "Hb is a large protein in red blood cells. Its heme groups bind O₂, and its globin groups bind CO₂ (HbCO₂). So II is wrong.",
+   "source": "Slides 20-21"
+  },
+  {
+   "id": "rs-25",
+   "q": "In the picture, an enzyme inside the red blood cell acts on CO₂ and water. What is the enzyme, and what main product leaves the cell?",
+   "options": [
+    "Hemoglobin; oxyhemoglobin (HbO₂)",
+    "Carbonic anhydrase; bicarbonate (HCO₃⁻), which diffuses into the plasma",
+    "Carbonic anhydrase; carbaminohemoglobin (HbCO₂)",
+    "Surfactant; carbonic acid",
+    "Hemoglobin; bicarbonate"
+   ],
+   "answer": 1,
+   "why": "Carbonic anhydrase converts CO₂ into carbonic acid, which dissociates into HCO₃⁻ and H⁺. About 70% of the CO₂ is carried this way, with the HCO₃⁻ diffusing into the plasma.",
+   "source": "Slide 21",
+   "img": {
+    "src": "img/respiratory/co2_21.webp",
+    "alt": "Tissue cells releasing CO2 into a capillary, where 10 percent dissolves in plasma, 20 percent binds hemoglobin and 70 percent becomes bicarbonate inside a red blood cell."
+   }
+  },
+  {
+   "id": "rs-26",
+   "q": "Which statement correctly describes how breathing is controlled?",
+   "options": [
+    "The lungs generate the breathing rhythm and signal the brain",
+    "The carotid and aortic bodies generate the breathing rhythm",
+    "The diaphragm starts each breath on its own and then signals the brain",
+    "Groups of neurons in the medulla generate cyclical impulses that stimulate the diaphragm and intercostal muscles",
+    "The cerebral cortex has no influence on breathing"
+   ],
+   "answer": 3,
+   "why": "The rhythm comes from groups of neurons in the medulla. The figure also shows that higher centers in the cortex can exert conscious control over respiration.",
+   "source": "Slides 22-23"
+  },
+  {
+   "id": "rs-27",
+   "q": "Blood PCO₂ rises. Which sequence best explains the change in breathing?",
+   "options": [
+    "More CO₂ gives more H⁺, so the pH of the cerebrospinal fluid falls; central chemoreceptors detect this and breathing rate and depth increase",
+    "More CO₂ lowers blood PO₂, which central chemoreceptors detect, so breathing slows",
+    "More CO₂ raises the pH of the cerebrospinal fluid, so peripheral chemoreceptors slow breathing",
+    "More CO₂ activates the carotid and aortic bodies, which detect PCO₂ directly and stop breathing",
+    "More CO₂ lowers H⁺, so pH rises, which increases breathing"
+   ],
+   "answer": 0,
+   "why": "Carbonic acid dissociates into HCO₃⁻ and H⁺, so more CO₂ means more H⁺ and a lower (acidic) pH. Central chemoreceptors detect the pH change in the brain and breathing rate and depth rise.",
+   "source": "Slide 24"
+  },
+  {
+   "id": "rs-28",
+   "q": "Which statement about peripheral chemoreceptors is INCORRECT?",
+   "options": [
+    "They include the carotid and aortic bodies",
+    "They monitor PO₂ in the blood",
+    "They are the main cells that detect the pH of the cerebrospinal fluid",
+    "They are typically only active in specific circumstances such as high altitudes",
+    "They are typically active in disease states or drug overdose"
+   ],
+   "answer": 2,
+   "why": "The cells that detect pH changes in the brain's interstitial fluid are the central chemoreceptors. Peripheral chemoreceptors (carotid and aortic bodies) monitor blood PO₂ and are typically only active in specific circumstances.",
+   "source": "Slide 24"
+  },
+  {
+   "id": "rs-29",
+   "q": "Which statement about the development of the respiratory system is INCORRECT?",
+   "options": [
+    "The foregut develops from the endoderm",
+    "About 4 weeks after fertilization the foregut is partitioned into the esophagus and the respiratory diverticulum",
+    "Pharyngeal pouch 1 becomes the middle ear cavity and the auditory tube",
+    "The epiglottis develops from pharyngeal arch 4",
+    "The respiratory epithelium branches randomly, without signals from the surrounding tissue"
+   ],
+   "answer": 4,
+   "why": "The epithelium branches in response to signals from the surrounding lung mesenchyme, and the three-dimensional pattern is not random.",
+   "source": "Slides 25-27"
+  },
+  {
+   "id": "rs-30",
+   "q": "The picture shows three branching behaviours of the developing bronchial tree. Which one has a 90° rotation between successive branching events at the lobe tips?",
+   "options": [
+    "Domain branching",
+    "Orthogonal bifurcation",
+    "Planar bifurcation",
+    "All three of them",
+    "None of them"
+   ],
+   "answer": 1,
+   "why": "Orthogonal bifurcation splits lobe tips with a 90° rotation between branching events. Planar bifurcation can repeat along the same plane, and domain branching makes perpendicular rows of outgrowths on a tube.",
+   "source": "Slide 28",
+   "img": {
+    "src": "img/respiratory/modes_28.webp",
+    "alt": "Three rows of drawings showing domain branching in blue, planar bifurcation in green and orthogonal bifurcation in red."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "The path of air",
+   "prompt": "Put these parts in the order that air passes through them when you breathe in, starting at the nose.",
+   "why": "Air enters the nose (nasal cavity), then passes the pharynx, larynx and trachea. The trachea branches into the primary bronchi, which branch into bronchioles that end in the alveoli, where gas exchange happens.",
+   "topLabel": "End: the alveoli",
+   "bottomLabel": "Start: the nose",
+   "layers": [
+    {
+     "name": "Nose (nasal cavity)",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Pharynx (throat)",
+     "color": "#b45309"
+    },
+    {
+     "name": "Larynx (voice box)",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Trachea (windpipe)",
+     "color": "#15803d"
+    },
+    {
+     "name": "Primary bronchi",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Bronchioles",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Alveoli",
+     "color": "#be185d"
+    }
+   ]
+  },
+  {
+   "title": "One full breath",
+   "prompt": "Put the steps of one breath in order, from the muscles contracting to air flowing out.",
+   "why": "Contraction of the diaphragm and intercostals enlarges the pleural cavity, so lung pressure falls and air flows in. When the muscles relax the cavity shrinks, lung pressure rises and air flows out.",
+   "topLabel": "End: air flows out",
+   "bottomLabel": "Start: muscles contract",
+   "layers": [
+    {
+     "name": "Diaphragm and intercostal muscles contract",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Pleural cavity volume increases and the lungs expand",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Air pressure in the lungs decreases",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Air rushes in (inspiration)",
+     "color": "#15803d"
+    },
+    {
+     "name": "Diaphragm and intercostal muscles relax",
+     "color": "#b45309"
+    },
+    {
+     "name": "Pleural cavity and lungs get smaller",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Air pressure in the lungs rises",
+     "color": "#be185d"
+    },
+    {
+     "name": "Air flows out (expiration)",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "The journey of an oxygen molecule",
+   "prompt": "Put the steps in the order O₂ follows from the air in the alveolus to the cells of a tissue.",
+   "why": "O₂ diffuses from the alveolus into the blood (external respiration), binds hemoglobin in red blood cells, travels to the tissues, is released from HbO₂ in the warm, acidic tissues and diffuses out of the capillary into the interstitial fluid for the cells (internal respiration).",
+   "topLabel": "End: O₂ reaches the cells",
+   "bottomLabel": "Start: air in the alveolus",
+   "layers": [
+    {
+     "name": "O₂ in alveolar air (PO₂ about 104 mm Hg)",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "O₂ diffuses into pulmonary capillary blood",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "O₂ binds hemoglobin in red blood cells (HbO₂)",
+     "color": "#be185d"
+    },
+    {
+     "name": "Blood carries HbO₂ to the tissues",
+     "color": "#c2410c"
+    },
+    {
+     "name": "HbO₂ releases O₂ in warm, acidic tissues",
+     "color": "#b45309"
+    },
+    {
+     "name": "O₂ diffuses into the interstitial fluid and the cells",
+     "color": "#15803d"
+    }
+   ]
+  },
+  {
+   "title": "From more CO₂ to faster breathing",
+   "prompt": "Put these events in order, from a rise in blood CO₂ to a change in breathing.",
+   "why": "More CO₂ means more H⁺ (carbonic acid dissociates into HCO₃⁻ and H⁺), so the pH of the cerebrospinal fluid falls. Central chemoreceptors detect the pH change and breathing rate and depth increase.",
+   "topLabel": "End: faster, deeper breathing",
+   "bottomLabel": "Start: blood CO₂ rises",
+   "layers": [
+    {
+     "name": "Blood PCO₂ rises",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "H⁺ increases (carbonic acid dissociates)",
+     "color": "#c2410c"
+    },
+    {
+     "name": "pH of the cerebrospinal fluid falls",
+     "color": "#b45309"
+    },
+    {
+     "name": "Central chemoreceptors detect the pH change",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Breathing rate and depth increase",
+     "color": "#15803d"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Upper or lower respiratory tract?",
+   "prompt": "Sort each part into the upper or the lower respiratory tract.",
+   "buckets": [
+    "Upper tract",
+    "Lower tract"
+   ],
+   "items": [
+    {
+     "text": "Nasal cavity",
+     "b": 0
+    },
+    {
+     "text": "Pharynx (throat)",
+     "b": 0
+    },
+    {
+     "text": "Hairs and mucus in the nose",
+     "b": 0
+    },
+    {
+     "text": "Ciliated nasal epithelium",
+     "b": 0
+    },
+    {
+     "text": "Larynx",
+     "b": 1
+    },
+    {
+     "text": "Epiglottis",
+     "b": 1
+    },
+    {
+     "text": "Vocal cords",
+     "b": 1
+    },
+    {
+     "text": "Trachea",
+     "b": 1
+    },
+    {
+     "text": "Primary bronchi",
+     "b": 1
+    },
+    {
+     "text": "Alveoli",
+     "b": 1
+    }
+   ],
+   "why": "The upper tract is the nose (nasal cavity) and the pharynx. The larynx (with the epiglottis and vocal cords), trachea, bronchi and lungs (bronchioles and alveoli) make up the lower tract."
+  },
+  {
+   "title": "Inspiration or expiration?",
+   "prompt": "Sort each event into inspiration (breathing in) or expiration (breathing out).",
+   "buckets": [
+    "Inspiration",
+    "Expiration"
+   ],
+   "items": [
+    {
+     "text": "Diaphragm contracts and flattens",
+     "b": 0
+    },
+    {
+     "text": "Intercostal muscles contract",
+     "b": 0
+    },
+    {
+     "text": "Ribs move upward and outward",
+     "b": 0
+    },
+    {
+     "text": "Pleural cavity volume increases",
+     "b": 0
+    },
+    {
+     "text": "Air pressure in the lungs falls",
+     "b": 0
+    },
+    {
+     "text": "Air rushes into the lungs",
+     "b": 0
+    },
+    {
+     "text": "Diaphragm relaxes and moves up",
+     "b": 1
+    },
+    {
+     "text": "Intercostal muscles relax",
+     "b": 1
+    },
+    {
+     "text": "Ribs return to their resting position",
+     "b": 1
+    },
+    {
+     "text": "Pleural cavity and lungs get smaller",
+     "b": 1
+    },
+    {
+     "text": "Air pressure in the lungs rises",
+     "b": 1
+    },
+    {
+     "text": "Air flows out of the lungs",
+     "b": 1
+    }
+   ],
+   "why": "In inspiration the muscles contract, the cavity gets bigger, pressure falls and air flows in. In expiration the muscles relax, the cavity gets smaller, pressure rises and air flows out."
+  },
+  {
+   "title": "O₂ or CO₂ in the blood?",
+   "prompt": "Sort each fact into the gas it describes.",
+   "buckets": [
+    "Oxygen (O₂)",
+    "Carbon dioxide (CO₂)"
+   ],
+   "items": [
+    {
+     "text": "About 98% is carried bound to hemoglobin",
+     "b": 0
+    },
+    {
+     "text": "Only about 2% is dissolved in plasma",
+     "b": 0
+    },
+    {
+     "text": "Binds to the heme groups of hemoglobin",
+     "b": 0
+    },
+    {
+     "text": "Forms oxyhemoglobin (HbO₂)",
+     "b": 0
+    },
+    {
+     "text": "Is released from Hb in warm, acidic tissues",
+     "b": 0
+    },
+    {
+     "text": "PO₂ of inhaled air is about 160 mm Hg",
+     "b": 0
+    },
+    {
+     "text": "About 70% travels as bicarbonate (HCO₃⁻)",
+     "b": 1
+    },
+    {
+     "text": "About 20% is bound to hemoglobin",
+     "b": 1
+    },
+    {
+     "text": "Binds to the globin groups of hemoglobin",
+     "b": 1
+    },
+    {
+     "text": "Forms carbaminohemoglobin (HbCO₂)",
+     "b": 1
+    },
+    {
+     "text": "Carbonic anhydrase converts it to carbonic acid",
+     "b": 1
+    },
+    {
+     "text": "PCO₂ of inhaled air is about 0.3 mm Hg",
+     "b": 1
+    }
+   ],
+   "why": "O₂ is carried almost entirely on the heme groups of hemoglobin as HbO₂. CO₂ is carried mostly as bicarbonate, with some on the globin groups (HbCO₂) and some dissolved."
+  }
+ ]
+}

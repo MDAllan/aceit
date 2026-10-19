@@ -1,0 +1,2146 @@
+{
+ "id": "cardio",
+ "title": "The Cardiovascular System",
+ "chapter": "Unit 6",
+ "icon": "💓",
+ "color": "#c0392b",
+ "slideFile": "The Cardiovascular System.pdf",
+ "intro": "The cardiovascular system is the heart plus the blood vessels that carry blood to every part of the body. This unit covers blood and blood types, the vessels, the heart's chambers and valves, the two circuits through the lungs and body, how the heartbeat is timed and controlled, and how the system forms in the embryo.",
+ "sections": [
+  {
+   "id": "blood",
+   "title": "Blood and what it is made of",
+   "slides": "2-5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/blood_2.webp",
+      "slide": "slide 2",
+      "alt": "Two test tubes of blood: whole blood on the left, and on the right blood spun in a centrifuge into pale plasma on top, a thin band of platelets and white blood cells, and red blood cells at the bottom."
+     },
+     "title": "Whole blood and its parts",
+     "bullets": [
+      "**Blood** is a specialized connective tissue whose main job is to transport things around the body. The heart is the pump that makes it flow.",
+      "Whole blood is red blood cells, white blood cells and platelets floating in **plasma**, the liquid part.",
+      "Spun in a centrifuge, blood separates into plasma (55%), platelets and white blood cells (1%) and red blood cells (44%)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/rbc_3.webp",
+      "slide": "slide 3",
+      "alt": "A microscope picture of many red disc-shaped blood cells above a drawing of a hemoglobin protein with its heme groups and iron atoms marked."
+     },
+     "title": "Red blood cells carry gases",
+     "bullets": [
+      "**Red blood cells** (erythrocytes) transport O₂ and CO₂. They lack organelles and a nucleus, so they are essentially bags of hemoglobin.",
+      "Each **hemoglobin** protein has four heme groups, and each heme can bind one O₂ through an iron atom.",
+      "Their shape gives flexibility and helps gas exchange. They make energy by anaerobic cellular respiration."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/wbc_4.webp",
+      "slide": "slide 4",
+      "alt": "A chart of mature blood cells: a red blood cell, five kinds of white blood cells grouped as granular or agranular, and platelets budding off a megakaryocyte."
+     },
+     "title": "White blood cells and platelets",
+     "bullets": [
+      "**White blood cells** (leukocytes) work in immunity and defence against disease. The types are neutrophils, eosinophils, basophils, monocytes and lymphocytes.",
+      "Neutrophils, eosinophils and basophils are granular. Monocytes (which become macrophages) and lymphocytes are agranular.",
+      "**Platelets** help blood clot and repair damaged vessels. They are just bits of cytoplasm and cell membrane shed from megakaryocytes in the bone marrow."
+     ]
+    },
+    {
+     "title": "Plasma and its proteins",
+     "bullets": [
+      "Plasma is mostly water with dissolved proteins, hormones and other molecules such as electrolytes, gases and vitamins.",
+      "**Albumins** bind water, hormones and several ions, and help keep the water balance between blood and interstitial fluid.",
+      "**Globulins** (α, β and γ) bind hormones and other molecules. Some form lipoproteins that carry lipids, and some γ globulins are antibodies. Clotting proteins such as fibrinogen help blood clot."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "With no nucleus and no organelles, a red blood cell has room to be packed with hemoglobin. That is why a single cell can carry so much O₂."
+    },
+    {
+     "type": "trick",
+     "text": "Picture a red blood cell as a delivery bag. The bag is stuffed with hemoglobin, and each of its four heme pockets holds one O₂ with the help of an iron atom."
+    },
+    {
+     "type": "trap",
+     "text": "Centrifuged blood: plasma 55%, red blood cells 44%, and only 1% for platelets AND white blood cells together (slide 2). Do not swap the plasma and red cell numbers. Platelets are cell fragments, not white blood cells. Slide 3 says red blood cells transport both O2 and CO2, not O2 only. Antibodies are plasma proteins (some gamma globulins), not platelet products."
+    }
+   ],
+   "table": {
+    "head": [
+     "Part of blood",
+     "Share after spinning",
+     "Main job"
+    ],
+    "rows": [
+     [
+      "Plasma",
+      "55%",
+      "Liquid that carries proteins, hormones, electrolytes, gases and vitamins"
+     ],
+     [
+      "Platelets and white blood cells",
+      "1%",
+      "Clotting and vessel repair (platelets); immunity and defence (white cells)"
+     ],
+     [
+      "Red blood cells",
+      "44%",
+      "Transport O₂ and CO₂ using hemoglobin"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Slides 2-5. Percentages are read from the figure labels on slide 2.",
+    "Granular vs agranular groups are read from the figure on slide 4.",
+    "Why-box (room for hemoglobin) and trick-box (delivery bag) are generic reasoning (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/blood_2.webp",
+     "slide": "slide 2",
+     "alt": "Two test tubes of blood: whole blood on the left, and on the right blood spun in a centrifuge into pale plasma on top, a thin band of platelets and white blood cells, and red blood cells at the bottom."
+    },
+    {
+     "src": "img/cardio/rbc_3.webp",
+     "slide": "slide 3",
+     "alt": "A microscope picture of many red disc-shaped blood cells above a drawing of a hemoglobin protein with its heme groups and iron atoms marked."
+    },
+    {
+     "src": "img/cardio/wbc_4.webp",
+     "slide": "slide 4",
+     "alt": "A chart of mature blood cells: a red blood cell, five kinds of white blood cells grouped as granular or agranular, and platelets budding off a megakaryocyte."
+    }
+   ]
+  },
+  {
+   "id": "types",
+   "title": "Blood types and transfusion",
+   "slides": "6-7",
+   "steps": [
+    {
+     "title": "ABO blood groups",
+     "bullets": [
+      "Red blood cells are covered with **antigens**, molecules that mark cells as self and can trigger an immune response if they are foreign.",
+      "Type A blood has A antigens, type B has B antigens, type AB has both and type O has neither.",
+      "Your blood contains antibodies against the other ABO antigens, the ones not on your cells, because they count as foreign."
+     ]
+    },
+    {
+     "title": "Rh factor and other antigens",
+     "bullets": [
+      "The **Rh factor** is another major antigen. It is either present (Rh+) or absent (Rh-).",
+      "Humans also have hundreds of other, less common blood antigens."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/compat_7.webp",
+      "slide": "slide 7",
+      "alt": "A grid with eight donor blood types across the top and eight recipient blood types down the side, with a blood drop wherever the donor is compatible with the recipient."
+     },
+     "title": "Who can give blood to whom",
+     "bullets": [
+      "A transfusion cannot contain antigens that are foreign to the recipient. The recipient's antibodies react and the foreign cells **agglutinate** (clump), which can block vessels or damage organs.",
+      "In the chart, a drop means the donor type (column) is compatible with the recipient type (row). The AB+ row has a drop in every column, and the O- column has a drop in every row.",
+      "**Cross-matching** checks compatibility: mix donor blood with recipient plasma, which holds the antibodies, then look for clumping."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Wrong blood is dangerous because the recipient's antibodies react with foreign antigens on the donor cells. The donor cells clump together and can block vessels or damage organs."
+    },
+    {
+     "type": "trick",
+     "text": "Your antibodies are against the antigens you lack. Type A: anti-B. Type B: anti-A. Type AB: neither. Type O: both. Run the test the same way each time: what do the donor cells carry that the recipient does not?"
+    },
+    {
+     "type": "trap",
+     "text": "Read the chart (slide 7) with donor types across the top and recipient types down the side; do not read it backwards. AB+ is the row with a drop in every column (accepts all donors) and O- is the column with a drop in every row (accepted by all recipients). The deck does not use the words universal donor or universal recipient; get them from the chart. The deck says antibodies exist against the other ABO antigens only; for Rh the chart simply shows that Rh- recipients accept only Rh- donors."
+    }
+   ],
+   "table": {
+    "head": [
+     "Blood type",
+     "Antigens on red cells",
+     "Antibodies in the blood"
+    ],
+    "rows": [
+     [
+      "A",
+      "A",
+      "Against B"
+     ],
+     [
+      "B",
+      "B",
+      "Against A"
+     ],
+     [
+      "AB",
+      "A and B",
+      "Against neither A nor B"
+     ],
+     [
+      "O",
+      "Neither",
+      "Against both A and B"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Slides 6-7.",
+    "The antibody column is derived from the slide 6 rule: antibodies are made against the ABO antigens that are NOT present in your blood.",
+    "Trick-box is a restatement of that rule (derived, not a separate fact)."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/compat_7.webp",
+     "slide": "slide 7",
+     "alt": "A grid with eight donor blood types across the top and eight recipient blood types down the side, with a blood drop wherever the donor is compatible with the recipient."
+    }
+   ]
+  },
+  {
+   "id": "system",
+   "title": "The heart, the vessels and three vessel types",
+   "slides": "8-9",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/vessels_9.webp",
+      "slide": "slide 9 (same figure on slide 8)",
+      "alt": "A diagram of the heart with an artery leaving it, a capillary bed in the tissues and a vein returning to it, with cutaways of the wall layers of an artery, a vein, an arteriole and a venule."
+     },
+     "title": "Heart plus three kinds of vessel",
+     "bullets": [
+      "The cardiovascular system is the heart plus the blood vessels. The heart is a pump that makes the force to circulate blood, and the vessels are tubes that bring blood to different parts of the body.",
+      "**Arteries** carry blood away from the heart. **Capillaries** exchange solutes and water with the cells of the body.",
+      "**Veins** store blood and return it to the heart."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Capillaries have the thinnest, most porous walls, so they are the place where solutes and water pass between the blood and the body's cells."
+    },
+    {
+     "type": "trick",
+     "text": "Arteries carry blood Away from the heart (both words start with A). Veins carry blood back to the heart."
+    },
+    {
+     "type": "trap",
+     "text": "Do not define arteries as vessels that carry oxygenated blood. The deck defines them by direction: arteries carry blood away from the heart and veins return it (slide 9). The pulmonary arteries carry deoxygenated blood (slides 20-21) and the pulmonary veins carry oxygenated blood."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 8-9 (the same figure; slide 9 adds blue boxes on Vein, Artery and Capillary).",
+    "Trick-box mnemonic is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/vessels_9.webp",
+     "slide": "slide 9 (same figure on slide 8)",
+     "alt": "A diagram of the heart with an artery leaving it, a capillary bed in the tissues and a vein returning to it, with cutaways of the wall layers of an artery, a vein, an arteriole and a venule."
+    }
+   ]
+  },
+  {
+   "id": "smallvessels",
+   "title": "Arteries, arterioles and capillaries",
+   "slides": "10-12",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/artery_10.webp",
+      "slide": "slide 10",
+      "alt": "A cutaway of an artery wall showing the outer connective tissue layer, the thick middle layer of smooth muscle, the inner endothelium and the hollow lumen."
+     },
+     "title": "Artery walls",
+     "bullets": [
+      "Arteries are thick-walled and carry blood under **high pressure**.",
+      "The wall has an inner layer of endothelium (squamous epithelial cells), a thick middle layer of smooth muscle and an outer layer of connective tissue.",
+      "Steady partial contraction of the smooth muscle stiffens the artery so it resists the pressure. The smallest arteries are **arterioles**, which connect to capillaries."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/arteriole_11.webp",
+      "slide": "slide 11",
+      "alt": "An arteriole feeding a capillary bed, with relaxed precapillary sphincters letting blood flow in on the left and constricted sphincters shutting off the capillaries on the right."
+     },
+     "title": "Arterioles control capillary flow",
+     "bullets": [
+      "Arterioles regulate how much blood flows into each capillary of a capillary bed. A band of smooth muscle called a **precapillary sphincter** sits where an arteriole joins the bed.",
+      "**Vasodilation** relaxes the smooth muscle and increases blood flow to the capillaries.",
+      "**Vasoconstriction** contracts the smooth muscle and decreases blood flow to the capillaries."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/capillary_12.webp",
+      "slide": "slide 12",
+      "alt": "A microscope picture of red blood cells lined up single file in a capillary, above a drawing of a capillary wall with pores and slits between its cells."
+     },
+     "title": "Capillaries: where exchange happens",
+     "bullets": [
+      "Capillaries are the smallest blood vessels. They are very thin-walled and porous, and red blood cells usually pass through in single file. Networks of them are called **capillary beds**.",
+      "The wall is a single layer of squamous endothelial cells with pores and thin slits, so fluid and solutes can pass between the blood and the interstitial fluid.",
+      "Water and solutes diffuse back into a capillary before it joins a vein."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Blood leaves the heart under high pressure, so artery walls need a thick, steadily toned muscle layer to stay stiff enough to resist it."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a precapillary sphincter as a tap on each capillary bed. Dilation opens the tap (more flow); constriction squeezes it shut (less flow)."
+    },
+    {
+     "type": "trap",
+     "text": "Vasodilation RELAXES the smooth muscle (slide 11), vasoconstriction CONTRACTS it. Students often swap these. Precapillary sphincters sit where an arteriole joins a capillary bed, not on veins. Note the deck typo on slide 11 ('Where are arteriole joins')."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 10-12.",
+    "Trick-box tap analogy is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/artery_10.webp",
+     "slide": "slide 10",
+     "alt": "A cutaway of an artery wall showing the outer connective tissue layer, the thick middle layer of smooth muscle, the inner endothelium and the hollow lumen."
+    },
+    {
+     "src": "img/cardio/arteriole_11.webp",
+     "slide": "slide 11",
+     "alt": "An arteriole feeding a capillary bed, with relaxed precapillary sphincters letting blood flow in on the left and constricted sphincters shutting off the capillaries on the right."
+    },
+    {
+     "src": "img/cardio/capillary_12.webp",
+     "slide": "slide 12",
+     "alt": "A microscope picture of red blood cells lined up single file in a capillary, above a drawing of a capillary wall with pores and slits between its cells."
+    }
+   ]
+  },
+  {
+   "id": "veins",
+   "title": "Veins and getting blood back",
+   "slides": "13-15",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/vein_13.webp",
+      "slide": "slide 13",
+      "alt": "A cutaway of a vein wall showing the same three layers as an artery around a wide hollow lumen."
+     },
+     "title": "Veins: thin walls, wide lumen",
+     "bullets": [
+      "Veins are thin-walled and carry blood under **very low pressure**. They have the same three layers as arteries, but the middle and outer layers are thinner.",
+      "The lumen (hollow centre) of a vein is larger than that of an artery. A large lumen and thin walls let veins act as **blood volume reservoirs**.",
+      "Veins are highly distensible, so they hold more blood. This can make it harder to return blood to the heart."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/return_14.webp",
+      "slide": "slide 14",
+      "alt": "Two drawings of the lower leg: with the calf muscles relaxed the vein valves are closed, and with the calf muscles contracted the vein is squeezed and a valve is open."
+     },
+     "title": "Three helpers push blood home",
+     "bullets": [
+      "The **skeletal muscle pump**: muscle contractions make the veins collapse, which pushes blood towards the heart.",
+      "Internal **one-way valves** prevent backflow of blood.",
+      "The **respiratory pump**: pressure changes in the thoracic and abdominal cavities during breathing push blood towards the heart."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/loop_15.webp",
+      "slide": "slide 15",
+      "alt": "A body outline with the heart in the chest and vessels looping to the head, the lungs and the lower body, with arrows showing the direction of blood flow."
+     },
+     "title": "One loop through the whole body",
+     "bullets": [
+      "Blood leaves the heart in arteries, passes through capillaries in the tissues and returns to the heart in veins.",
+      "The picture shows loops to the head, the lungs and the lower body, with arrows for the direction of flow."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Vein pressure is very low and veins stretch easily, so blood could pool in them. The muscle pump, the valves and breathing each add a push or stop blood from slipping backwards."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a vein valve as a one-way door. The calf muscle squeezes the blood up, the door shuts behind it, and the blood cannot slip back down."
+    },
+    {
+     "type": "trap",
+     "text": "Do not confuse the valves inside veins with the four heart valves (two AV valves and two semilunar valves). The skeletal muscle pump and respiratory pump help VEINS return blood; arteries do not need them. Slide 15 is a picture only; its caption idea (loops through body and lungs) is stated on slides 9, 19 and 23."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 13-15.",
+    "Slide 15 has no text. The two bullets on that picture are built from slides 9 and 19.",
+    "Why-box (blood could pool) and trick-box (door) are generic reasoning (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/vein_13.webp",
+     "slide": "slide 13",
+     "alt": "A cutaway of a vein wall showing the same three layers as an artery around a wide hollow lumen."
+    },
+    {
+     "src": "img/cardio/return_14.webp",
+     "slide": "slide 14",
+     "alt": "Two drawings of the lower leg: with the calf muscles relaxed the vein valves are closed, and with the calf muscles contracted the vein is squeezed and a valve is open."
+    },
+    {
+     "src": "img/cardio/loop_15.webp",
+     "slide": "slide 15",
+     "alt": "A body outline with the heart in the chest and vessels looping to the head, the lungs and the lower body, with arrows showing the direction of blood flow."
+    }
+   ]
+  },
+  {
+   "id": "heart",
+   "title": "Inside the heart: layers, chambers and valves",
+   "slides": "16-18",
+   "steps": [
+    {
+     "title": "Pericardium and the three wall layers",
+     "bullets": [
+      "The **pericardium** protects and anchors the heart inside the pericardial cavity.",
+      "The wall has three layers. The outer **epicardium** is thin epithelial and connective tissue. The inner **endocardium** is endothelial cells, continuous with the lining of the blood vessels.",
+      "The middle **myocardium** is thick cardiac muscle that contracts when the heart beats. Electrical signals pass between its cells (cardiomyocytes) through gap junctions."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/heart_16.webp",
+      "slide": "slide 16 (labels also used for slides 17-18)",
+      "alt": "A cutaway of the heart labelling the four chambers, the valves, the septum, the large vessels and the three wall layers."
+     },
+     "title": "Four chambers and four valves",
+     "bullets": [
+      "Two upper **atria** and two lower **ventricles** are divided into a left and a right side by the cardiac septum. The thickest myocardium is in the left ventricle.",
+      "Two **atrioventricular (AV) valves** prevent backflow into the atria: the right tricuspid valve and the left bicuspid (mitral) valve.",
+      "Two **semilunar valves**, the pulmonary and aortic valves, prevent backflow into the ventricles."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The left ventricle sends blood to the whole body, while the right ventricle sends it only to the lungs. That is a sensible reason for the left ventricle to have the thickest wall."
+    },
+    {
+     "type": "trick",
+     "text": "AV valves sit between Atria and Ventricles. Semilunar valves guard the exits where blood leaves the ventricles. 'Tri' goes with the right side (tRIcuspid has 'ri' like Right) and the bicuspid is on the left."
+    },
+    {
+     "type": "trap",
+     "text": "Valve pairs (slides 18, 20, 21): right AV = tricuspid, left AV = bicuspid (mitral), right semilunar = pulmonary valve, left semilunar = aortic valve. AV valves prevent backflow into the ATRIA; semilunar valves prevent backflow into the VENTRICLES. The deck states only that the left ventricle has the thickest myocardium; the reason given in the why-box is generic."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 16-18. The labelled heart on slide 16 is used as the figure for the chamber and valve step; slide 17 (wall layers) has no picture of its own.",
+    "Why-box links slide 18 (thickest in left ventricle) to slide 19 (systemic circuit serves the rest of the body); the cause-and-effect wording is generic (outside source).",
+    "Trick-box mnemonics are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/heart_16.webp",
+     "slide": "slide 16 (labels also used for slides 17-18)",
+     "alt": "A cutaway of the heart labelling the four chambers, the valves, the septum, the large vessels and the three wall layers."
+    }
+   ]
+  },
+  {
+   "id": "circuits",
+   "title": "Two circuits: the lungs and the body",
+   "slides": "19-23",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/circuits_19.webp",
+      "slide": "slide 19",
+      "alt": "The heart in the middle with a lung on each side, the head and upper limbs above and the torso and lower limbs below, with numbers marking each step of blood flow."
+     },
+     "title": "Two circuits at the same time",
+     "bullets": [
+      "The heart pumps blood through two circuits at the same time.",
+      "The **pulmonary circuit** takes blood to the lungs to pick up O₂ and discard CO₂.",
+      "The **systemic circuit** takes blood to the rest of the body to deliver O₂ to tissues and pick up CO₂ waste."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/pulm_20.webp",
+      "slide": "slide 20 (identical picture on slide 21)",
+      "alt": "The heart between the two lungs with numbered steps showing blood entering the right atrium, going to the lungs, returning to the left atrium and leaving through the aorta."
+     },
+     "title": "From the body to the lungs",
+     "bullets": [
+      "Deoxygenated blood returns from the body to the **right atrium**, then passes through the right AV (tricuspid) valve into the right ventricle.",
+      "From the right ventricle it flows through the right semilunar (pulmonary) valve into the **pulmonary trunk**.",
+      "The pulmonary trunk divides into the right and left pulmonary arteries, which lead towards the lungs."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/pulm_20.webp",
+      "slide": "slide 20 (identical picture on slide 21)",
+      "alt": "The heart between the two lungs with numbered steps showing blood entering the right atrium, going to the lungs, returning to the left atrium and leaving through the aorta."
+     },
+     "title": "From the lungs to the aorta",
+     "bullets": [
+      "In the pulmonary capillaries the blood is oxygenated and gives up CO₂.",
+      "Oxygenated blood returns through the **pulmonary veins** to the left atrium, then through the left AV (bicuspid) valve into the left ventricle.",
+      "It leaves through the left semilunar (aortic) valve into the aorta."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/systemic_22.webp",
+      "slide": "slide 22",
+      "alt": "Blood vessels of the head and upper limbs and of the torso and lower limbs, with arteries in red and veins in blue meeting at capillaries."
+     },
+     "title": "Out to the tissues and back",
+     "bullets": [
+      "Blood flows through branching arteries and arterioles to tissues throughout the body, then through arterioles to capillaries.",
+      "In the capillaries, O₂ and solutes are delivered to the interstitial fluid while CO₂ and waste products are picked up.",
+      "Blood then flows from the capillaries into venules and veins."
+     ]
+    },
+    {
+     "title": "Twice through the heart",
+     "bullets": [
+      "Blood passes through the heart twice for every trip around the body: once as deoxygenated blood through the right side, towards the lungs.",
+      "And once as oxygenated blood through the left side, towards the rest of the body.",
+      "In humans, deoxygenated blood does not mix with oxygenated blood within the heart, except in special circumstances."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The right side only handles blood on its way to pick up O₂, and the left side only handles blood that already has it. Keeping the two sides apart means the blood sent to the body has just been loaded with O₂."
+    },
+    {
+     "type": "trick",
+     "text": "Follow the blood in order: body, right atrium, right ventricle, lungs, left atrium, left ventricle, body. Right side to the lungs, left side to the body."
+    },
+    {
+     "type": "trap",
+     "text": "The deck titles slides 20-22 'The Pulmonary and Respiratory Circuit', but the 12 steps cover BOTH the pulmonary and the systemic circuit. Pulmonary arteries carry DEOXYGENATED blood (step 5) and pulmonary veins carry OXYGENATED blood (step 7). Do not mix up where O2 is picked up (pulmonary capillaries, step 6) and where it is delivered (systemic capillaries, step 12). Slide 23 says the sides do not mix 'except during special circumstances'; slide 41 gives gestation as an example."
+    }
+   ],
+   "table": {
+    "head": [
+     "",
+     "Pulmonary circuit",
+     "Systemic circuit"
+    ],
+    "rows": [
+     [
+      "Blood goes to",
+      "The lungs",
+      "The rest of the body"
+     ],
+     [
+      "Main job",
+      "Pick up O₂ and discard CO₂",
+      "Deliver O₂ to tissues and pick up CO₂ waste"
+     ],
+     [
+      "Leaves the heart through",
+      "The pulmonary trunk (from the right ventricle)",
+      "The aorta (from the left ventricle)"
+     ],
+     [
+      "Returns to the heart through",
+      "The pulmonary veins (to the left atrium)",
+      "Venules and veins, then back to the right atrium"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Slides 19-23. Slide 20 and slide 21 carry an identical figure, so one saved picture serves both steps.",
+    "Last table cell: returns to the right atrium is step 1-2 of slide 20 (deoxygenated blood from the body enters the right atrium).",
+    "Why-box (sides kept apart) is generic reasoning (outside source); the separation itself is on slides 18 and 23."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/circuits_19.webp",
+     "slide": "slide 19",
+     "alt": "The heart in the middle with a lung on each side, the head and upper limbs above and the torso and lower limbs below, with numbers marking each step of blood flow."
+    },
+    {
+     "src": "img/cardio/pulm_20.webp",
+     "slide": "slide 20 (identical picture on slide 21)",
+     "alt": "The heart between the two lungs with numbered steps showing blood entering the right atrium, going to the lungs, returning to the left atrium and leaving through the aorta."
+    },
+    {
+     "src": "img/cardio/systemic_22.webp",
+     "slide": "slide 22",
+     "alt": "Blood vessels of the head and upper limbs and of the torso and lower limbs, with arteries in red and veins in blue meeting at capillaries."
+    }
+   ]
+  },
+  {
+   "id": "named",
+   "title": "Naming vessels and heart attacks",
+   "slides": "24-26",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/body_25.webp",
+      "slide": "slide 25",
+      "alt": "A front view of the whole body with the main arteries in red and veins in blue labelled, including the carotid, jugular, aorta, vena cavae, renal, common iliac and femoral vessels."
+     },
+     "title": "Artery and vein pairs",
+     "bullets": [
+      "Arteries and veins that serve the same region often share a name. The common iliac artery supplies each leg and the common iliac vein returns blood from each leg to the heart.",
+      "**Carotid arteries** supply the head, and **jugular veins** return blood from the head to the heart.",
+      "The picture also labels the aorta, the vena cavae and the renal, femoral and subclavian vessels."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/coronary_25.webp",
+      "slide": "slide 25",
+      "alt": "The outside of the heart showing the coronary arteries and cardiac veins running over the heart muscle, with the aorta and pulmonary trunk on top."
+     },
+     "title": "The heart's own blood supply",
+     "bullets": [
+      "The heart itself is served by the **coronary arteries** and the cardiac veins.",
+      "The coronary arteries branch from the aorta just above the left semilunar (aortic) valve."
+     ]
+    },
+    {
+     "title": "Myocardial infarction",
+     "bullets": [
+      "A **myocardial infarction** (heart attack) happens when an area of heart tissue dies from a lack of oxygen.",
+      "Males may feel chest pain or tightness, difficulty breathing and pain in the left arm. Females may additionally feel nausea and pain in the jaw or back.",
+      "The damage to the heart is permanent and may contribute to ventricular fibrillation (an arrhythmia) or heart failure."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Heart muscle needs its own oxygen supply, which the coronary arteries provide. Tissue that loses its oxygen dies, and because the damage is permanent the heart cannot simply repair it."
+    },
+    {
+     "type": "trick",
+     "text": "Same region, same name: the artery brings blood to a region and the vein with the matching name takes it back. Carotid is the artery to the head, jugular is the vein from the head."
+    },
+    {
+     "type": "trap",
+     "text": "Symptoms (slide 26): the deck lists chest pain/tightness, difficulty breathing and left arm pain for males, and says females 'additionally' may have nausea and jaw/back pain. Do not say females have only the extra symptoms. Infarction is tissue death from lack of oxygen. The deck says the damage may contribute to BOTH ventricular fibrillation (an arrhythmia) and heart failure."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 24-26. Slide 25 holds two pictures (the body with blue-boxed vessels, and the outside of the heart); each gets its own step.",
+    "Why-box links the coronary arteries (slide 24) to the cause of infarction (slide 26); the supply-of-oxygen wording is generic (outside source).",
+    "Names in the third bullet of the first step come from the labels in the slide 25 body figure."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/body_25.webp",
+     "slide": "slide 25",
+     "alt": "A front view of the whole body with the main arteries in red and veins in blue labelled, including the carotid, jugular, aorta, vena cavae, renal, common iliac and femoral vessels."
+    },
+    {
+     "src": "img/cardio/coronary_25.webp",
+     "slide": "slide 25",
+     "alt": "The outside of the heart showing the coronary arteries and cardiac veins running over the heart muscle, with the aorta and pulmonary trunk on top."
+    }
+   ]
+  },
+  {
+   "id": "cycle",
+   "title": "The cardiac cycle",
+   "slides": "27",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/cycle_27.webp",
+      "slide": "slide 27",
+      "alt": "A circle diagram of one heartbeat showing atrial systole (0.1 second), ventricular systole (0.3 second) and diastole (0.4 second), each with a drawing of the heart and its valves."
+     },
+     "title": "Three phases of one heartbeat",
+     "bullets": [
+      "**Atrial systole** (0.1 s): both atria contract and force blood into the ventricles. The AV valves are open and the semilunar valves are closed.",
+      "**Ventricular systole** (0.3 s): both ventricles contract, the AV valves close and the semilunar valves open. Blood is ejected into the pulmonary trunk and aorta while the atria relax.",
+      "**Diastole** (0.4 s): the ventricles relax and fill passively through the open AV valves. The semilunar valves are closed and the atria stay relaxed."
+     ]
+    },
+    {
+     "title": "Pulsatile pumping and the pulse",
+     "bullets": [
+      "The heart's pumping is pulsatile (in beats) rather than continuous. One cycle is the two atria contracting, then the two ventricles contracting, then the heart relaxing.",
+      "The expansion of the arteries during systole can be felt as a **pulse**.",
+      "The times add up to 0.1 + 0.3 + 0.4 = 0.8 s per cycle. At that rate the heart would beat 60 ÷ 0.8 = 75 times per minute."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The atria contract first so the ventricles are filled before they contract. The ventricles then have a full load of blood to send to the lungs and the body."
+    },
+    {
+     "type": "trick",
+     "text": "Systole = Squeeze (contraction). Diastole = Dilate and fill (relaxation)."
+    },
+    {
+     "type": "trap",
+     "text": "In the figure on slide 27 the label 'Systole' covers BOTH atrial systole and ventricular systole (0.1 + 0.3 = 0.4 s), while 'Diastole' is 0.4 s on its own, so the cycle is 0.8 s. The AV valves are open in atrial systole AND diastole and closed only in ventricular systole; the semilunar valves are open only in ventricular systole. The deck gives no heart rate; 75 beats per minute is only the arithmetic from the times in the figure."
+    }
+   ],
+   "table": {
+    "head": [
+     "Phase",
+     "Time",
+     "What contracts",
+     "AV valves",
+     "Semilunar valves"
+    ],
+    "rows": [
+     [
+      "Atrial systole",
+      "0.1 s",
+      "Both atria",
+      "Open",
+      "Closed"
+     ],
+     [
+      "Ventricular systole",
+      "0.3 s",
+      "Both ventricles",
+      "Closed",
+      "Open"
+     ],
+     [
+      "Diastole",
+      "0.4 s",
+      "Nothing (ventricles relax and fill)",
+      "Open",
+      "Closed"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Slide 27 (text and figure).",
+    "The 75 per minute figure is the arithmetic 60 / 0.8 from the figure's times (the 60 seconds per minute is outside source).",
+    "Why-box wording about the ventricles having a full load is generic reasoning (outside source); the facts are on slide 27."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/cycle_27.webp",
+     "slide": "slide 27",
+     "alt": "A circle diagram of one heartbeat showing atrial systole (0.1 second), ventricular systole (0.3 second) and diastole (0.4 second), each with a drawing of the heart and its valves."
+    }
+   ]
+  },
+  {
+   "id": "conduction",
+   "title": "The heart's wiring and blood pressure control",
+   "slides": "28-30",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/conduction_28.webp",
+      "slide": "slide 28",
+      "alt": "The heart with a green glow at the sinoatrial node and green arrows spreading across the atria to the atrioventricular node."
+     },
+     "title": "Starting the heartbeat",
+     "bullets": [
+      "Specialized cardiomyocytes spontaneously start and spread electrical impulses (cardiac action potentials) through the heart.",
+      "A heartbeat begins in the **sinoatrial (SA) node**, also called the cardiac pacemaker.",
+      "The impulse travels across the atria, making them contract, and then reaches the **atrioventricular (AV) node**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/conduction_29.webp",
+      "slide": "slide 29 (same figure as slide 28, lower part)",
+      "alt": "The lower heart showing the AV node, AV bundle, bundle branches and Purkinje fibres drawn in yellow through the septum and the ventricle walls."
+     },
+     "title": "Down to the ventricles",
+     "bullets": [
+      "The signal travels through the septum along the **AV bundle**, which extends into **Purkinje fibres** throughout the ventricles.",
+      "The Purkinje fibres make the ventricles contract from the bottom up, pushing blood into the aorta and the pulmonary trunk.",
+      "Cardiac branches of the vagus nerve reach the SA node and can modify the rhythm that it generates."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/baro_30.webp",
+      "slide": "slide 30",
+      "alt": "A loop diagram in which baroreceptors in the aorta signal the brain's cardiovascular centre, which signals the heart and blood vessels so that cardiac output and vascular resistance fall and blood pressure returns to normal."
+     },
+     "title": "Keeping blood pressure steady",
+     "bullets": [
+      "A constant arterial blood pressure is crucial for homeostasis. **Baroreceptors** in the aorta and carotid arteries monitor it.",
+      "If pressure is high, baroreceptors send more signals to the cardiovascular centre in the brain, which sends fewer signals to the heart. The opposite happens when pressure is too low.",
+      "In the picture, the lowered signals reduce cardiac output and vascular resistance, so blood pressure returns to normal. Hormones also have an influence."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Contracting from the bottom up squeezes blood towards the exits at the top of the ventricles, the aorta and the pulmonary trunk."
+    },
+    {
+     "type": "trick",
+     "text": "SA node = Start (it sets the pace for the Atria). AV node = the hand-off to the Ventricles. Then follow the yellow lines in the picture: AV bundle, bundle branches, Purkinje fibres."
+    },
+    {
+     "type": "trap",
+     "text": "The SA node is the pacemaker and starts the beat by itself (spontaneously); the vagus nerve only MODIFIES its rhythm. The AV node comes after the atria contract. Baroreceptors detect pressure, but it is the cardiovascular centre that lowers signalling to the heart. High pressure means LESS signalling to the heart, low pressure means more (slide 30). 'Bundle branches' is a label in the figure on slides 28-29 but the text only names the AV bundle and Purkinje fibres."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 28-30. Slides 28 and 29 share one figure, so the saved pictures are the upper part (SA and AV nodes) and the lower part (AV bundle to Purkinje fibres).",
+    "Trick-box mnemonic is generic (outside source).",
+    "The description of the lowered signals in the third step is read from the (minus) labels on the figure on slide 30."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/conduction_28.webp",
+     "slide": "slide 28",
+     "alt": "The heart with a green glow at the sinoatrial node and green arrows spreading across the atria to the atrioventricular node."
+    },
+    {
+     "src": "img/cardio/conduction_29.webp",
+     "slide": "slide 29 (same figure as slide 28, lower part)",
+     "alt": "The lower heart showing the AV node, AV bundle, bundle branches and Purkinje fibres drawn in yellow through the septum and the ventricle walls."
+    },
+    {
+     "src": "img/cardio/baro_30.webp",
+     "slide": "slide 30",
+     "alt": "A loop diagram in which baroreceptors in the aorta signal the brain's cardiovascular centre, which signals the heart and blood vessels so that cardiac output and vascular resistance fall and blood pressure returns to normal."
+    }
+   ]
+  },
+  {
+   "id": "embryo1",
+   "title": "Building the heart in the embryo",
+   "slides": "31-36",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/mesoderm_31.webp",
+      "slide": "slide 31",
+      "alt": "A family tree of the embryonic mesoderm layers with an arrow pointing to splanchnic mesoderm, the part of the lateral plate mesoderm that forms the circulatory system."
+     },
+     "title": "Where the heart tissue comes from",
+     "bullets": [
+      "The human cardiovascular system largely comes from the **splanchnic mesoderm**, the ventral part of the lateral plate mesoderm.",
+      "In the anterior region (up in the throat), two bilateral groups of cardiac progenitor cells form the **cardiogenic mesoderm**, also called the heart fields.",
+      "The heart fields move towards the midline as the gut forms and make a **cardiac crescent**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/fields_32.webp",
+      "slide": "slide 32",
+      "alt": "Four drawings of the early embryo showing the first and second heart fields forming a heart tube that then shows an outflow tract, atria and ventricles."
+     },
+     "title": "Heart fields make a heart tube",
+     "bullets": [
+      "All three layers of the heart are generated from the cardiogenic mesoderm of the heart fields.",
+      "The cardiac crescent fuses at the midline to create a linear **heart tube**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/crescent_33.webp",
+      "slide": "slide 33",
+      "alt": "Drawings of an embryo showing the cardiac crescent, the paired dorsal aortae and the two endocardial tubes fusing at the midline."
+     },
+     "title": "Crescent and dorsal aortae",
+     "bullets": [
+      "The drawings show the cardiac crescent and the endocardial tubes fusing at the midline.",
+      "Paired **dorsal aortae** also form, from somites, next to the notochord. They eventually fuse to create the descending aorta."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/tube_34.webp",
+      "slide": "slide 34",
+      "alt": "A coloured drawing of the day-21 heart tube with its parts labelled, above a drawing of the aortic arches that give rise to major arteries."
+     },
+     "title": "The heart tube starts beating",
+     "bullets": [
+      "In humans the heart tube begins to beat spontaneously about 22 days after fertilization.",
+      "The heart tube forms the outflow tract (truncus arteriosus), the right and left ventricles and the right and left atria.",
+      "Many major vessels develop from the dorsal aortae and the **aortic arches** (pharyngeal arch arteries)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/looping_35.webp",
+      "slide": "slide 35",
+      "alt": "Three drawings of the heart tube at day 21, day 28 and the newborn stage, showing the tube bending so that the atria sit above the ventricles."
+     },
+     "title": "Cardiac looping",
+     "bullets": [
+      "**Cardiac looping** sets up the spatial relationships of the four chambers.",
+      "The heart tube loops up to the right in vertebrates, bringing the atria to rest anterior (superior) to the ventricles."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The straight heart tube starts with its chambers in a line. Looping bends it up to the right so the atria end up above the ventricles."
+    },
+    {
+     "type": "trick",
+     "text": "Build order: heart fields, cardiac crescent, heart tube (it starts beating about 22 days after fertilization), then looping."
+    },
+    {
+     "type": "trap",
+     "text": "Two lookalike sources: the heart tissue comes from splanchnic mesoderm (lateral plate), but the dorsal aortae form from somites next to the notochord (slides 31-33). The figure on slide 32 is labelled 'Embryonic day 7.5 to 10.5', while slides 33-35 show 20 to 28 days and the text says ~22 days for the human heart tube. The deck does not say which species the day numbers on slide 32 belong to (it looks like a different animal's timeline, outside source), so use ~22 days for humans. Slide 36 is an unlabelled photo of a looped heart tube and has no text."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 31-35 (slide 36 is a photo only and is not used as a figure).",
+    "Slide 33 has no text; its bullets are read from the figure labels (cardiac crescent, left dorsal aorta, endocardial tubes) and from slide 32 text for the dorsal aortae.",
+    "Why-box is read from the day 21 to day 28 figure on slide 35."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/mesoderm_31.webp",
+     "slide": "slide 31",
+     "alt": "A family tree of the embryonic mesoderm layers with an arrow pointing to splanchnic mesoderm, the part of the lateral plate mesoderm that forms the circulatory system."
+    },
+    {
+     "src": "img/cardio/fields_32.webp",
+     "slide": "slide 32",
+     "alt": "Four drawings of the early embryo showing the first and second heart fields forming a heart tube that then shows an outflow tract, atria and ventricles."
+    },
+    {
+     "src": "img/cardio/crescent_33.webp",
+     "slide": "slide 33",
+     "alt": "Drawings of an embryo showing the cardiac crescent, the paired dorsal aortae and the two endocardial tubes fusing at the midline."
+    },
+    {
+     "src": "img/cardio/tube_34.webp",
+     "slide": "slide 34",
+     "alt": "A coloured drawing of the day-21 heart tube with its parts labelled, above a drawing of the aortic arches that give rise to major arteries."
+    },
+    {
+     "src": "img/cardio/looping_35.webp",
+     "slide": "slide 35",
+     "alt": "Three drawings of the heart tube at day 21, day 28 and the newborn stage, showing the tube bending so that the atria sit above the ventricles."
+    }
+   ]
+  },
+  {
+   "id": "embryo2",
+   "title": "Vessels, blood and the first breath",
+   "slides": "37-41",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cardio/septum_37.webp",
+      "slide": "slide 37",
+      "alt": "A drawing of cardiac neural crest cells moving from the neural tube to form the aortic-pulmonary septum between the aorta and the pulmonary artery."
+     },
+     "title": "Separating aorta and pulmonary artery",
+     "bullets": [
+      "The **aortic-pulmonary septum** divides the pulmonary artery from the aorta, which prevents oxygenated and deoxygenated blood from mixing.",
+      "It is formed from **cardiac neural crest** cells."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/blood_island_38.webp",
+      "slide": "slide 38",
+      "alt": "Three stages in the yolk sac: undifferentiated mesenchyme cells, then blood islands, then endothelial cells forming a vessel around primitive blood cells."
+     },
+     "title": "Blood vessels form on their own",
+     "bullets": [
+      "Blood vessels largely form independently of the heart. Everyone's vasculature is slightly different because of variations in vessel connections.",
+      "In **vasculogenesis**, vessels are created de novo from splanchnic mesoderm. Intraembryonic vasculogenesis forms the dorsal aortae, while extraembryonic vasculogenesis happens in yolk sac blood islands.",
+      "In the picture, mesenchyme cells gather into blood islands, which become vessels of endothelial cells around primitive blood cells."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cardio/angio_39.webp",
+      "slide": "slide 39",
+      "alt": "A flow chart of vessel formation from mesoderm cells through blood islands and tubes to a pruned young vessel network and finally a mature network, with the signalling molecules for each stage."
+     },
+     "title": "Pruning vessels into a mature network",
+     "bullets": [
+      "**Angiogenesis** remodels and prunes the vascular network.",
+      "In the example, mesoderm cells form blood islands and tubes, a capillary plexus recruits pericyte support cells, pruning produces a young (juvenile) vessel system, and further remodeling produces a mature one."
+     ]
+    },
+    {
+     "title": "Where blood cells come from",
+     "bullets": [
+      "Hemogenic endothelial cells in the embryonic aorta give rise to **hematopoietic stem cells**, which move into the liver and bone marrow.",
+      "Stem cells can self-renew, unlike most mature cell types. All blood cells and platelets in adults come from hematopoietic stem cells in the bone marrow.",
+      "**Erythropoietin** stimulates these stem cells and biases production towards red blood cells."
+     ]
+    },
+    {
+     "title": "From placenta to lungs at birth",
+     "bullets": [
+      "Before birth, gas exchange happens through the placenta.",
+      "After birth, circulation must move away from the placenta and towards the lungs once breathing begins. Vessels constrict and collapse, and the opening (foramen) between the right and left atria closes.",
+      "That opening had allowed oxygenated blood to move into the left ventricle and circulate through the body. During gestation, oxygenated and deoxygenated blood do mix."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Before birth the placenta does the gas exchange, and after birth the lungs must take over. Once breathing begins, blood has to be sent to the lungs, so the circulation changes route."
+    },
+    {
+     "type": "trick",
+     "text": "Vasculogenesis builds vessels from scratch. Angiogenesis edits what is already there, pruning and remodeling it, like trimming a new road network."
+    },
+    {
+     "type": "trap",
+     "text": "Vasculogenesis (vessels made de novo from splanchnic mesoderm) is not the same as angiogenesis (remodels and prunes the network). The aortic-pulmonary septum comes from cardiac neural crest cells, not from mesoderm. Erythropoietin biases stem cells towards RED blood cells only. Slide 23 says oxygenated and deoxygenated blood do not mix in the human heart (except in special circumstances) and slide 41 says they DO mix during gestation; the gestation case is the special circumstance. Slide 39 is marked '*Ex.' (an example figure); the signalling molecules in it are not described in the deck text."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 37-41.",
+    "Slide 39 has an example figure only (marked *Ex.); the bullets paraphrase the stage labels in the figure and the definitions on slide 38.",
+    "Why-box wording is generic (outside source); the facts are on slide 41. Trick-box road analogy is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cardio/septum_37.webp",
+     "slide": "slide 37",
+     "alt": "A drawing of cardiac neural crest cells moving from the neural tube to form the aortic-pulmonary septum between the aorta and the pulmonary artery."
+    },
+    {
+     "src": "img/cardio/blood_island_38.webp",
+     "slide": "slide 38",
+     "alt": "Three stages in the yolk sac: undifferentiated mesenchyme cells, then blood islands, then endothelial cells forming a vessel around primitive blood cells."
+    },
+    {
+     "src": "img/cardio/angio_39.webp",
+     "slide": "slide 39",
+     "alt": "A flow chart of vessel formation from mesoderm cells through blood islands and tubes to a pruned young vessel network and finally a mature network, with the signalling molecules for each stage."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "head": [
+   "Vessel",
+   "Wall",
+   "Main job"
+  ],
+  "rows": [
+   [
+    "Artery",
+    "Thick wall with a thick smooth muscle layer; high pressure",
+    "Carries blood away from the heart"
+   ],
+   [
+    "Arteriole",
+    "Smallest artery; a band of smooth muscle (precapillary sphincter) where it joins a capillary bed",
+    "Controls how much blood enters the capillaries (vasodilation or vasoconstriction)"
+   ],
+   [
+    "Capillary",
+    "One layer of squamous endothelial cells with pores and thin slits",
+    "Exchanges fluid and solutes with the cells; red blood cells pass in single file"
+   ],
+   [
+    "Vein",
+    "Thin wall, larger lumen than an artery; very low pressure; internal valves",
+    "Stores blood as a reservoir and returns it to the heart"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "cs-c1",
+   "front": "What is blood, and what is its main job?",
+   "back": "Blood is a specialized connective tissue that transports things throughout the body. The heart is the pump that generates blood flow.",
+   "short": "Connective tissue that transports",
+   "src": "Slide 2"
+  },
+  {
+   "id": "cs-c2",
+   "front": "What are the parts of whole blood, and what share does each make after centrifuging?",
+   "back": "Red blood cells, white blood cells and platelets, plus plasma (the liquid part). After centrifuging: plasma 55%, red blood cells 44%, platelets and white blood cells 1%.",
+   "short": "Plasma 55%, red cells 44%, rest 1%",
+   "src": "Slide 2 (figure labels)"
+  },
+  {
+   "id": "cs-c3",
+   "front": "Red blood cells: what do they do, and what is special about them?",
+   "back": "Erythrocytes transport O₂ and CO₂. They lack organelles and a nucleus, so they are essentially bags of hemoglobin. Their shape gives flexibility and helps gas exchange, and they use anaerobic cellular respiration.",
+   "short": "Gas carriers with no nucleus",
+   "src": "Slide 3"
+  },
+  {
+   "id": "cs-c4",
+   "front": "How does hemoglobin carry O₂?",
+   "back": "A hemoglobin protein has four heme groups, and each heme can bind one O₂ through an iron atom.",
+   "short": "Four hemes, one O₂ each",
+   "src": "Slide 3"
+  },
+  {
+   "id": "cs-c5",
+   "front": "White blood cells: what do they do, and which types are there?",
+   "back": "Leukocytes work in immunity and defence against disease. Types: neutrophils, eosinophils, basophils, monocytes (which differentiate into macrophages) and lymphocytes.",
+   "short": "Defence cells in five types",
+   "src": "Slide 4"
+  },
+  {
+   "id": "cs-c6",
+   "front": "Platelets: what do they do, and where do they come from?",
+   "back": "They help the clotting process and the repair of damaged vessels. They are bits of cytoplasm and cell membrane shed from megakaryocytes in the bone marrow.",
+   "short": "Clotting fragments shed by megakaryocytes",
+   "src": "Slide 4"
+  },
+  {
+   "id": "cs-c7",
+   "front": "Plasma: what is in it, and what are its protein groups?",
+   "back": "Mostly water, with dissolved proteins, hormones, electrolytes, gases and vitamins. The proteins are albumins (water balance, bind hormones and ions), globulins (bind hormones; some are antibodies) and clotting proteins such as fibrinogen.",
+   "short": "Water, albumins, globulins, clotting proteins",
+   "src": "Slide 5"
+  },
+  {
+   "id": "cs-c8",
+   "front": "In the ABO system, which antigens does each blood type carry?",
+   "back": "Type A has A antigens, type B has B antigens, type AB has both and type O has neither.",
+   "short": "A, B, both or neither antigen",
+   "src": "Slide 6"
+  },
+  {
+   "id": "cs-c9",
+   "front": "Which antibodies does your blood contain in the ABO system?",
+   "back": "Antibodies against the other ABO antigens, the ones not present on your own cells, because they are treated as foreign.",
+   "short": "Antibodies against the antigens you lack",
+   "src": "Slide 6"
+  },
+  {
+   "id": "cs-c10",
+   "front": "What is the Rh factor?",
+   "back": "Another major antigen on red blood cells. It is either present (Rh+) or absent (Rh-).",
+   "short": "Rh antigen present or absent",
+   "src": "Slide 6"
+  },
+  {
+   "id": "cs-c11",
+   "front": "What is cross-matching, and what happens if blood is incompatible?",
+   "back": "Cross-matching mixes donor blood with recipient plasma (which holds the antibodies) and checks for clumping. Foreign antigens make the recipient's antibodies react, so the foreign cells agglutinate (clump) and can block vessels or damage organs.",
+   "short": "Donor blood plus recipient plasma, check clumping",
+   "src": "Slide 7"
+  },
+  {
+   "id": "cs-c12",
+   "front": "What is the cardiovascular system, and what does each vessel type do?",
+   "back": "The heart (a pump that generates the force to circulate blood) plus the blood vessels (tubes that bring blood to the body). Arteries carry blood away from the heart, capillaries exchange solutes and water with cells, and veins store blood and return it to the heart.",
+   "short": "Heart pump plus artery, capillary, vein tubes",
+   "src": "Slides 8-9"
+  },
+  {
+   "id": "cs-c13",
+   "front": "Describe the wall of an artery.",
+   "back": "Thick-walled, for high pressure: inner endothelium (squamous epithelial cells), a thick middle layer of smooth muscle and an outer layer of connective tissue. Steady partial contraction of the smooth muscle stiffens the artery to resist the pressure.",
+   "short": "Thick muscular wall for high pressure",
+   "src": "Slide 10"
+  },
+  {
+   "id": "cs-c14",
+   "front": "Vasodilation versus vasoconstriction: what does each do?",
+   "back": "Both act on the smooth muscle at the precapillary sphincter, where an arteriole joins a capillary bed. Vasodilation relaxes it and increases blood flow to the capillaries; vasoconstriction contracts it and decreases flow.",
+   "short": "Relax gives more flow, contract gives less",
+   "src": "Slide 11"
+  },
+  {
+   "id": "cs-c15",
+   "front": "What are capillaries like, and what happens in them?",
+   "back": "The smallest blood vessels, with a wall of one layer of squamous endothelial cells containing pores and thin slits. Red blood cells pass in single file, and fluid and solutes are exchanged between blood and interstitial fluid.",
+   "short": "One-cell-thick walls with pores for exchange",
+   "src": "Slide 12"
+  },
+  {
+   "id": "cs-c16",
+   "front": "Describe a vein and why it works as a reservoir.",
+   "back": "Thin-walled, very low pressure, with the same three layers as an artery but thinner middle and outer layers and a larger lumen. The large lumen, thin walls and high distensibility let it hold extra blood.",
+   "short": "Thin, wide, stretchy vessels hold extra blood",
+   "src": "Slide 13"
+  },
+  {
+   "id": "cs-c17",
+   "front": "Which three mechanisms help return blood from the veins to the heart?",
+   "back": "The skeletal muscle pump (contractions collapse the veins and push blood towards the heart), internal one-way valves (prevent backflow) and the respiratory pump (pressure changes in the thoracic and abdominal cavities during breathing).",
+   "short": "Muscle pump, valves and breathing pump",
+   "src": "Slide 14"
+  },
+  {
+   "id": "cs-c18",
+   "front": "What are the pericardium and the three layers of the heart wall?",
+   "back": "The pericardium protects and anchors the heart in the pericardial cavity. The wall layers are the epicardium (outer, thin epithelial and connective tissue), myocardium (middle, thick cardiac muscle linked by gap junctions) and endocardium (inner, endothelial cells continuous with the vessels).",
+   "short": "Epicardium, myocardium, endocardium and pericardium",
+   "src": "Slide 17"
+  },
+  {
+   "id": "cs-c19",
+   "front": "How many chambers does the heart have, and where is the myocardium thickest?",
+   "back": "Four: two upper atria and two lower ventricles, with the septum separating the left and right sides. The thickest part of the myocardium is in the left ventricle.",
+   "short": "Two atria, two ventricles, thickest left",
+   "src": "Slide 18"
+  },
+  {
+   "id": "cs-c20",
+   "front": "Name the two atrioventricular (AV) valves.",
+   "back": "The right tricuspid valve and the left bicuspid (mitral) valve. They prevent backflow into the atria.",
+   "short": "Tricuspid on right, bicuspid on left",
+   "src": "Slide 18"
+  },
+  {
+   "id": "cs-c21",
+   "front": "Name the two semilunar valves and their job.",
+   "back": "The pulmonary and aortic valves. They prevent backflow into the ventricles.",
+   "short": "Pulmonary and aortic valves",
+   "src": "Slide 18"
+  },
+  {
+   "id": "cs-c22",
+   "front": "What are the pulmonary and systemic circuits?",
+   "back": "The heart pumps blood through both circuits at once. In the pulmonary circuit blood goes to the lungs to pick up O₂ and discard CO₂. In the systemic circuit blood goes to the rest of the body to deliver O₂ and pick up CO₂ waste.",
+   "short": "Lung loop versus body loop",
+   "src": "Slide 19"
+  },
+  {
+   "id": "cs-c23",
+   "front": "Trace the blood from the body through the right side of the heart to the lungs.",
+   "back": "Right atrium, right AV (tricuspid) valve, right ventricle, right semilunar (pulmonary) valve, pulmonary trunk, right and left pulmonary arteries, then the pulmonary capillaries in the lungs.",
+   "short": "Right atrium to pulmonary arteries",
+   "src": "Slides 20-21"
+  },
+  {
+   "id": "cs-c24",
+   "front": "Trace the blood from the lungs through the left side of the heart to the body.",
+   "back": "Pulmonary veins, left atrium, left AV (bicuspid) valve, left ventricle, left semilunar (aortic) valve, then the aorta and on to arteries, arterioles and capillaries in the tissues.",
+   "short": "Pulmonary veins to the aorta",
+   "src": "Slides 21-22"
+  },
+  {
+   "id": "cs-c25",
+   "front": "How many times does blood pass through the heart on one trip around the body?",
+   "back": "Twice: once as deoxygenated blood through the right side towards the lungs, and once as oxygenated blood through the left side towards the rest of the body. In humans the two do not mix in the heart, except in special circumstances.",
+   "short": "Twice per trip around the body",
+   "src": "Slide 23"
+  },
+  {
+   "id": "cs-c26",
+   "front": "Which vessels serve the head, the legs and the heart itself?",
+   "back": "Carotid arteries supply the head and jugular veins return blood from it. The common iliac artery supplies each leg and the common iliac vein returns blood. The coronary arteries and cardiac veins serve the heart, and the coronary arteries branch from the aorta just above the aortic valve.",
+   "short": "Carotid, jugular, iliac and coronary vessels",
+   "src": "Slides 24-25"
+  },
+  {
+   "id": "cs-c27",
+   "front": "What is a myocardial infarction?",
+   "back": "A heart attack: an area of heart tissue dies from a lack of oxygen. The damage is permanent and may contribute to ventricular fibrillation (an arrhythmia) or heart failure. Symptoms differ between males and females.",
+   "short": "Heart tissue dies from lack of oxygen",
+   "src": "Slide 26"
+  },
+  {
+   "id": "cs-c28",
+   "front": "What are the phases of the cardiac cycle, and how long does each last?",
+   "back": "Atrial systole (0.1 s), ventricular systole (0.3 s) and diastole (0.4 s). The expansion of the arteries during systole can be felt as a pulse.",
+   "short": "Atrial 0.1 s, ventricular 0.3 s, diastole 0.4 s",
+   "src": "Slide 27"
+  },
+  {
+   "id": "cs-c29",
+   "front": "Where does a heartbeat begin?",
+   "back": "In the sinoatrial (SA) node, also called the cardiac pacemaker. From there the impulse spreads across the atria and makes them contract.",
+   "short": "SA node is the pacemaker",
+   "src": "Slide 28"
+  },
+  {
+   "id": "cs-c30",
+   "front": "What path does the impulse take after it reaches the AV node?",
+   "back": "It travels through the septum along the AV bundle into the Purkinje fibres, which make the ventricles contract from the bottom up and push blood into the aorta and pulmonary trunk.",
+   "short": "AV bundle then Purkinje fibres, bottom up",
+   "src": "Slide 29"
+  },
+  {
+   "id": "cs-c31",
+   "front": "What does the vagus nerve do to the heart?",
+   "back": "Cardiac branches of the vagus nerve innervate the SA node and can modify the rhythm that the node generates.",
+   "short": "Vagus nerve modifies the SA node rhythm",
+   "src": "Slide 29"
+  },
+  {
+   "id": "cs-c32",
+   "front": "How do baroreceptors help regulate blood pressure?",
+   "back": "Baroreceptors in the aorta and carotid arteries monitor blood pressure. If pressure is high they increase signalling to the cardiovascular centre in the brain, which decreases signalling to the heart; the opposite happens when pressure is low.",
+   "short": "Pressure sensors lower heart signals when pressure rises",
+   "src": "Slide 30"
+  },
+  {
+   "id": "cs-c33",
+   "front": "Which tissue does the cardiovascular system mostly come from, and what are the heart fields?",
+   "back": "Largely the splanchnic mesoderm, the ventral part of the lateral plate mesoderm. Two bilateral groups of cardiac progenitor cells (the cardiogenic mesoderm, or heart fields) move towards the midline to make a cardiac crescent.",
+   "short": "Splanchnic mesoderm and the heart fields",
+   "src": "Slide 31"
+  },
+  {
+   "id": "cs-c34",
+   "front": "How does the heart tube form, and when does it start beating?",
+   "back": "The cardiac crescent fuses at the midline to create a linear heart tube. In humans it begins to beat spontaneously about 22 days after fertilization.",
+   "short": "Crescent fuses into a tube, beats at 22 days",
+   "src": "Slides 32, 34"
+  },
+  {
+   "id": "cs-c35",
+   "front": "What is cardiac looping?",
+   "back": "The process that sets up the spatial relationships of the four chambers. The heart tube loops up to the right, bringing the atria to rest anterior (superior) to the ventricles.",
+   "short": "Tube bends right, atria end up on top",
+   "src": "Slides 34-35"
+  },
+  {
+   "id": "cs-c36",
+   "front": "What are the dorsal aortae?",
+   "back": "Paired vessels that form from somites next to the notochord. They eventually fuse to create the descending aorta, and many major vessels develop from them and the aortic arches.",
+   "short": "Paired vessels that fuse into the descending aorta",
+   "src": "Slides 32, 34"
+  },
+  {
+   "id": "cs-c37",
+   "front": "What does the aortic-pulmonary septum do, and where does it come from?",
+   "back": "It divides the pulmonary artery from the aorta, preventing oxygenated and deoxygenated blood from mixing. It is formed from cardiac neural crest cells.",
+   "short": "Splits aorta from pulmonary artery, neural crest origin",
+   "src": "Slide 37"
+  },
+  {
+   "id": "cs-c38",
+   "front": "Vasculogenesis versus angiogenesis: what is the difference?",
+   "back": "In vasculogenesis, blood vessels are created de novo from splanchnic mesoderm (for example the dorsal aortae and yolk sac blood islands). Angiogenesis remodels and prunes the vascular network.",
+   "short": "New vessels versus remodeling and pruning",
+   "src": "Slide 38"
+  },
+  {
+   "id": "cs-c39",
+   "front": "Where do blood cells come from, and what does erythropoietin do?",
+   "back": "Hemogenic endothelial cells in the embryonic aorta give rise to hematopoietic stem cells, which move into the liver and bone marrow. All blood cells and platelets in adults come from these stem cells in bone marrow. Erythropoietin biases them towards making red blood cells.",
+   "short": "Stem cells in bone marrow, erythropoietin boosts red cells",
+   "src": "Slide 40"
+  },
+  {
+   "id": "cs-c40",
+   "front": "What changes in the circulation right after birth?",
+   "back": "Blood circulation moves away from the placenta and towards the lungs once breathing begins. Vessels constrict and collapse, and the foramen between the right and left atria closes. During gestation oxygenated and deoxygenated blood do mix.",
+   "short": "Placenta route closes, lungs take over",
+   "src": "Slide 41"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "cs-1",
+   "q": "The picture shows a blood sample after it was spun in a centrifuge. Which description of the layers is correct?",
+   "options": [
+    "The pale top layer is red blood cells (about 55%) and the dark bottom layer is plasma (about 44%).",
+    "The pale top layer is plasma (about 55% of the blood) and the dark bottom layer is red blood cells (about 44%).",
+    "The thin middle band is plasma, about 1% of the blood.",
+    "The dark bottom layer is platelets and white blood cells, about 44% of the blood.",
+    "The pale top layer is plasma, about 44% of the blood, and the dark bottom layer is red blood cells, about 55%."
+   ],
+   "answer": 1,
+   "why": "Plasma is the liquid layer on top and makes up 55%. Red blood cells form the dark bottom layer at 44%. The thin band between them is platelets plus white blood cells, only 1%.",
+   "source": "Slide 2 (figure labels)",
+   "img": {
+    "src": "img/cardio/blood_2.webp",
+    "alt": "Two test tubes of blood: whole blood, and blood separated by a centrifuge into pale plasma on top, a thin band, and dark red blood cells at the bottom."
+   }
+  },
+  {
+   "id": "cs-2",
+   "q": "A 200 mL sample of blood is spun in a centrifuge. Plasma makes up 55% of the volume, red blood cells 44%, and platelets with white blood cells 1%. How much of each is in the sample?",
+   "options": [
+    "Plasma 88 mL, red blood cells 110 mL, platelets and white blood cells 2 mL",
+    "Plasma 55 mL, red blood cells 44 mL, platelets and white blood cells 1 mL",
+    "Plasma 100 mL, red blood cells 80 mL, platelets and white blood cells 20 mL",
+    "Plasma 110 mL, red blood cells 88 mL, platelets and white blood cells 2 mL",
+    "Plasma 110 mL, red blood cells 88 mL, platelets and white blood cells 22 mL"
+   ],
+   "answer": 3,
+   "why": "Multiply the volume by each share: 200 × 0.55 = 110 mL, 200 × 0.44 = 88 mL and 200 × 0.01 = 2 mL. The three add to 200 mL, which is a good check.",
+   "source": "Slide 2 percentages (figure labels); the 200 mL sample is a made-up number (outside source)"
+  },
+  {
+   "id": "cs-3",
+   "q": "Which feature best explains how one red blood cell can carry so much O₂?",
+   "options": [
+    "It has many mitochondria that make extra O₂ for it to carry.",
+    "It has a large nucleus that makes hemoglobin on demand.",
+    "It has no nucleus or organelles, so it is essentially a bag packed with hemoglobin, and each heme group binds one O₂.",
+    "It stores O₂ in granules, like a neutrophil does.",
+    "Each heme group binds O₂ through a calcium atom."
+   ],
+   "answer": 2,
+   "why": "A red blood cell lacks organelles and a nucleus, so it is essentially a bag of hemoglobin. Each hemoglobin has four heme groups, and each heme binds one O₂ through an iron atom.",
+   "source": "Slide 3"
+  },
+  {
+   "id": "cs-4",
+   "q": "Which of the following is NOT a function described for a blood component?",
+   "options": [
+    "Red blood cells transport O₂ and CO₂.",
+    "Albumins help maintain the water balance between blood and interstitial fluid.",
+    "Platelets take part in clotting and in the repair of damaged blood vessels.",
+    "Platelets produce antibodies against foreign antigens.",
+    "White blood cells function in immunity and defence against disease."
+   ],
+   "answer": 3,
+   "why": "Antibodies are plasma proteins (some of the γ globulins, the immunoglobulins). Platelets are fragments that help with clotting and vessel repair.",
+   "source": "Slides 3-5"
+  },
+  {
+   "id": "cs-5",
+   "q": "Which of the following statements about blood cells are correct?\nI. Platelets are bits of cytoplasm and cell membrane shed from megakaryocytes in bone marrow.\nII. Monocytes can differentiate into macrophages.\nIII. Mature red blood cells contain a nucleus and many organelles.",
+   "options": [
+    "I only",
+    "II only",
+    "I and II only",
+    "I and III only",
+    "I, II and III"
+   ],
+   "answer": 2,
+   "why": "Platelets are shed from megakaryocytes (I is true) and monocytes become macrophages (II is true). Red blood cells are anucleate and lack organelles, so III is false.",
+   "source": "Slides 3-4"
+  },
+  {
+   "id": "cs-6",
+   "q": "A person has type A blood in the ABO system. Which statement is correct?",
+   "options": [
+    "Their red blood cells carry A antigens, and their blood contains antibodies against B antigens.",
+    "Their red blood cells carry A antigens, and their blood contains antibodies against A antigens.",
+    "Their red blood cells carry B antigens, and their blood contains antibodies against A antigens.",
+    "Their red blood cells carry no A or B antigens, and their blood contains antibodies against both.",
+    "Their red blood cells carry both A and B antigens, and their blood contains no ABO antibodies."
+   ],
+   "answer": 0,
+   "why": "Type A means A antigens on the red cells. Blood contains antibodies against the ABO antigens it lacks, which here is the B antigen.",
+   "source": "Slide 6"
+  },
+  {
+   "id": "cs-7",
+   "q": "Using the compatibility chart in the picture (donor types across the top, recipient types down the side), which recipient blood type can receive blood from all eight donor types?",
+   "options": [
+    "O-",
+    "A+",
+    "B+",
+    "AB+",
+    "AB-"
+   ],
+   "answer": 3,
+   "why": "The AB+ row has a drop in every column, so every donor type is compatible. O- is the opposite case: as a recipient it accepts only O-, although O- donor blood is accepted by every recipient.",
+   "source": "Slide 7 (chart)",
+   "img": {
+    "src": "img/cardio/compat_7.webp",
+    "alt": "A grid of donor blood types across the top and recipient blood types down the side, with a blood drop where the donor is compatible."
+   }
+  },
+  {
+   "id": "cs-8",
+   "q": "Why can O- donor blood be given to every recipient type in the chart?",
+   "options": [
+    "Its plasma contains no antibodies, so it cannot react with anything.",
+    "Its red cells carry both A and B antigens, which every recipient accepts.",
+    "Recipient antibodies only react with donor plasma, never with donor red cells.",
+    "Antibodies form only against antigens on white blood cells, which O- blood lacks.",
+    "Its red cells carry no A, B or Rh antigens, so there is nothing foreign for a recipient's antibodies to react with."
+   ],
+   "answer": 4,
+   "why": "A transfusion fails when the recipient's antibodies meet foreign antigens on the donor cells. Type O has neither A nor B antigen and Rh- means the Rh factor is absent, so O- cells carry no antigen to attract a reaction.",
+   "source": "Slides 6-7 (antigens and chart)"
+  },
+  {
+   "id": "cs-9",
+   "q": "Which statement about veins is INCORRECT?",
+   "options": [
+    "They carry blood under high pressure, so their walls are thicker than the walls of arteries.",
+    "They have the same three layers as arteries, but the middle and outer layers are thinner.",
+    "Their large lumens and thin walls let them act as blood volume reservoirs.",
+    "They are highly distensible, which can make returning blood to the heart harder.",
+    "Internal one-way valves in them prevent backflow of blood."
+   ],
+   "answer": 0,
+   "why": "Veins carry blood under very low pressure and have thinner walls than arteries. Their large lumen and distensibility let them store blood, so the first statement is the incorrect one.",
+   "source": "Slides 13-14"
+  },
+  {
+   "id": "cs-10",
+   "q": "Why is the smooth muscle in an artery wall kept in steady partial contraction?",
+   "options": [
+    "It pushes red blood cells through the artery in single file.",
+    "It lets the artery act as a blood volume reservoir.",
+    "It allows fluid and solutes to leave through pores and slits.",
+    "It closes one-way valves to stop backflow of blood.",
+    "It stiffens the artery so that it can resist high-pressure blood flow."
+   ],
+   "answer": 4,
+   "why": "Arteries carry blood under high pressure. Steady partial contraction of the middle smooth muscle layer stiffens the wall so it can resist that pressure.",
+   "source": "Slide 10"
+  },
+  {
+   "id": "cs-11",
+   "q": "In the picture, the precapillary sphincters on the right are constricted. What effect does this have?",
+   "options": [
+    "More blood flows into the capillaries beyond them.",
+    "Less blood flows into the capillaries beyond them.",
+    "The arteriole turns into a vein.",
+    "Blood flows backwards from the venule into the arteriole.",
+    "The capillary walls gain a thick layer of smooth muscle."
+   ],
+   "answer": 1,
+   "why": "Vasoconstriction contracts the smooth muscle of the precapillary sphincter, which decreases blood flow to the capillaries. Vasodilation, on the left, relaxes it and increases flow.",
+   "source": "Slide 11",
+   "img": {
+    "src": "img/cardio/arteriole_11.webp",
+    "alt": "An arteriole feeding a capillary bed, with relaxed precapillary sphincters on the left and constricted sphincters on the right."
+   }
+  },
+  {
+   "id": "cs-12",
+   "q": "Which statement about the vessels shown in the picture is correct?",
+   "options": [
+    "The thick smooth muscle wall resists high-pressure blood flow.",
+    "Internal one-way valves prevent backflow of blood.",
+    "The wall is a single layer of squamous endothelial cells with pores and slits, and red blood cells pass through in single file.",
+    "The large lumen lets the vessel act as a blood volume reservoir.",
+    "It is the largest vessel type and carries blood away from the heart."
+   ],
+   "answer": 2,
+   "why": "Capillaries are the smallest, thin-walled and porous vessels. Red blood cells usually pass in single file, and the pores and slits let fluid and solutes be exchanged.",
+   "source": "Slide 12",
+   "img": {
+    "src": "img/cardio/capillary_12.webp",
+    "alt": "A microscope picture of red blood cells in single file inside a capillary, above a drawing of a capillary wall with pores and slits."
+   }
+  },
+  {
+   "id": "cs-13",
+   "q": "Which of the following help return blood from the veins to the heart?\nI. Contraction of skeletal muscles that squeezes the veins\nII. Internal one-way valves in the veins\nIII. Pressure changes in the thoracic and abdominal cavities during breathing",
+   "options": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "I and III only",
+    "I, II and III"
+   ],
+   "answer": 4,
+   "why": "All three assist: the skeletal muscle pump pushes blood towards the heart, the valves prevent backflow, and the respiratory pump uses the pressure changes of breathing.",
+   "source": "Slide 14"
+  },
+  {
+   "id": "cs-14",
+   "q": "Which statement about the heart valves is NOT correct?",
+   "options": [
+    "The right atrioventricular valve is the tricuspid valve.",
+    "Atrioventricular valves prevent backflow into the atria.",
+    "The pulmonary and aortic valves are semilunar valves.",
+    "The left atrioventricular valve is the tricuspid valve.",
+    "Semilunar valves prevent backflow into the ventricles."
+   ],
+   "answer": 3,
+   "why": "The left AV valve is the bicuspid (mitral) valve, and the tricuspid valve is on the right. The other four statements are correct.",
+   "source": "Slide 18"
+  },
+  {
+   "id": "cs-15",
+   "q": "A red blood cell has just returned from the body. Which sequence shows its path through the heart on the way to the lungs?",
+   "options": [
+    "Right atrium, tricuspid valve, right ventricle, pulmonary valve, pulmonary trunk",
+    "Right atrium, bicuspid valve, right ventricle, aortic valve, aorta",
+    "Left atrium, bicuspid valve, left ventricle, aortic valve, aorta",
+    "Right ventricle, tricuspid valve, right atrium, pulmonary valve, pulmonary trunk",
+    "Right atrium, tricuspid valve, right ventricle, aortic valve, pulmonary veins"
+   ],
+   "answer": 0,
+   "why": "Deoxygenated blood enters the right atrium, passes the right AV (tricuspid) valve into the right ventricle, and leaves through the pulmonary valve into the pulmonary trunk, which divides into the pulmonary arteries.",
+   "source": "Slide 20"
+  },
+  {
+   "id": "cs-16",
+   "q": "Which vessel carries oxygenated blood to the heart?",
+   "options": [
+    "The pulmonary arteries",
+    "The pulmonary trunk",
+    "The superior vena cava",
+    "The aorta",
+    "The pulmonary veins"
+   ],
+   "answer": 4,
+   "why": "Veins return blood to the heart, and the pulmonary veins bring oxygenated blood from the lungs to the left atrium. The pulmonary arteries and trunk carry deoxygenated blood away from the heart, the vena cava brings deoxygenated blood back from the body, and the aorta carries oxygenated blood away from the heart.",
+   "source": "Slides 20-21 (steps 5, 7, 10 and figure labels)"
+  },
+  {
+   "id": "cs-17",
+   "q": "Which of the following statements about the pulmonary circuit are correct?\nI. Blood travels to the lungs to pick up O₂ and discard CO₂.\nII. The pulmonary arteries carry deoxygenated blood towards the lungs.\nIII. The circuit begins when blood leaves the left ventricle.",
+   "options": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "I and III only",
+    "I, II and III"
+   ],
+   "answer": 1,
+   "why": "I and II are correct. The pulmonary circuit starts when the right ventricle sends blood through the pulmonary valve into the pulmonary trunk, so III is false (blood leaves the left ventricle for the systemic circuit).",
+   "source": "Slides 19-21"
+  },
+  {
+   "id": "cs-18",
+   "q": "Why does blood pass through the heart twice for every trip around the body?",
+   "options": [
+    "The right side pumps deoxygenated blood to the lungs and the left side pumps oxygenated blood to the rest of the body.",
+    "Oxygenated and deoxygenated blood mix in the heart and must be sorted a second time.",
+    "The left ventricle sends all of its blood back to the left atrium.",
+    "The pulmonary trunk and the aorta both carry deoxygenated blood.",
+    "Each atrioventricular valve opens twice per beat."
+   ],
+   "answer": 0,
+   "why": "One trip around the body includes one pass through the right side (towards the lungs) and one pass through the left side (towards the rest of the body). In humans the two kinds of blood do not mix in the heart, except in special circumstances.",
+   "source": "Slide 23"
+  },
+  {
+   "id": "cs-19",
+   "q": "In the picture, the blood at the points labelled 6 is inside the lungs. What happens to it there?",
+   "options": [
+    "It delivers O₂ and solutes to the interstitial fluid and picks up CO₂ waste.",
+    "It flows through the left semilunar valve into the aorta.",
+    "It enters the right atrium from the body.",
+    "It flows through the right atrioventricular valve into the right ventricle.",
+    "It is oxygenated and gives up CO₂ in the pulmonary capillaries."
+   ],
+   "answer": 4,
+   "why": "Step 6 is the pulmonary capillaries, where blood picks up O₂ and gives up CO₂. Delivering O₂ and picking up CO₂ waste happens later, in the systemic capillaries.",
+   "source": "Slide 21 (step 6)",
+   "img": {
+    "src": "img/cardio/pulm_20.webp",
+    "alt": "The heart between two lungs with numbered steps showing blood flowing to the lungs and back."
+   }
+  },
+  {
+   "id": "cs-20",
+   "q": "Which pair correctly matches a vessel with the region it serves?",
+   "options": [
+    "Carotid arteries and the head",
+    "Jugular veins and the supply of blood to the head",
+    "Coronary arteries and the lungs",
+    "Common iliac vein and the supply of blood to each leg",
+    "Pulmonary veins and the legs"
+   ],
+   "answer": 0,
+   "why": "Carotid arteries supply the head. Jugular veins return blood from the head, coronary arteries serve the heart itself, the common iliac artery (not the vein) supplies each leg, and the pulmonary veins return blood from the lungs.",
+   "source": "Slides 24-25"
+  },
+  {
+   "id": "cs-21",
+   "q": "Which statement about a myocardial infarction is correct?",
+   "options": [
+    "It is caused by the heart tube failing to loop during development.",
+    "Damaged heart tissue regenerates fully within a few days.",
+    "Females have only the chest pain symptom and none of the other symptoms.",
+    "An area of heart tissue dies from a lack of oxygen, and the damage is permanent.",
+    "It affects only the right atrium."
+   ],
+   "answer": 3,
+   "why": "A myocardial infarction (heart attack) is the death of an area of heart tissue from lack of oxygen. The damage is permanent and may contribute to ventricular fibrillation or heart failure. Females may additionally have nausea and jaw or back pain.",
+   "source": "Slide 26"
+  },
+  {
+   "id": "cs-22",
+   "q": "In the picture of the cardiac cycle, what are the valves doing during the phase that lasts 0.3 second?",
+   "options": [
+    "The AV valves are closed and the semilunar valves are open, so blood is ejected into the pulmonary trunk and aorta.",
+    "The AV valves are open and the semilunar valves are closed, so the ventricles fill passively with blood.",
+    "The AV valves are open and the semilunar valves are closed while the atria push blood into the ventricles.",
+    "Both the AV valves and the semilunar valves are open.",
+    "Both the AV valves and the semilunar valves are closed."
+   ],
+   "answer": 0,
+   "why": "The 0.3 second phase is ventricular systole. The ventricles contract, the AV valves close and the semilunar valves open, so blood is ejected into the pulmonary trunk and the aorta.",
+   "source": "Slide 27 (figure)",
+   "img": {
+    "src": "img/cardio/cycle_27.webp",
+    "alt": "A circle diagram of one heartbeat with three phases of 0.1 second, 0.3 second and 0.4 second, each drawn with the heart and its valves."
+   }
+  },
+  {
+   "id": "cs-23",
+   "q": "In the cardiac cycle, atrial systole lasts 0.1 s, ventricular systole 0.3 s and diastole 0.4 s. If every heartbeat took exactly this long, how many complete cycles would occur in one minute?",
+   "options": [
+    "7.5",
+    "60",
+    "75",
+    "150",
+    "600"
+   ],
+   "answer": 2,
+   "why": "One cycle lasts 0.1 + 0.3 + 0.4 = 0.8 s. In 60 s there are 60 ÷ 0.8 = 75 cycles. Check: 75 × 0.8 = 60.",
+   "source": "Slide 27 (times in the figure); 60 seconds per minute is outside source"
+  },
+  {
+   "id": "cs-24",
+   "q": "Which sequence correctly shows how the impulse spreads in a normal heartbeat?",
+   "options": [
+    "AV node, SA node, atria, AV bundle, Purkinje fibres, ventricles",
+    "SA node, atria, AV node, AV bundle, Purkinje fibres, ventricles",
+    "SA node, AV node, atria, Purkinje fibres, AV bundle, ventricles",
+    "SA node, atria, AV node, Purkinje fibres, AV bundle, ventricles",
+    "Purkinje fibres, AV bundle, AV node, atria, SA node, ventricles"
+   ],
+   "answer": 1,
+   "why": "The beat starts in the SA node and crosses the atria, making them contract. It then reaches the AV node, passes along the AV bundle through the septum and into the Purkinje fibres, which make the ventricles contract.",
+   "source": "Slides 28-29"
+  },
+  {
+   "id": "cs-25",
+   "q": "What would happen if the signal could not pass through the AV node, while the SA node kept working?",
+   "options": [
+    "The atria would stop contracting, because the AV node triggers them.",
+    "The ventricles would contract from the top down instead of the bottom up.",
+    "The SA node would stop producing impulses.",
+    "The vagus nerve would take over and start each heartbeat.",
+    "The impulse would still start in the SA node and cross the atria, but it would not reach the AV bundle and Purkinje fibres that make the ventricles contract."
+   ],
+   "answer": 4,
+   "why": "The SA node starts the impulse and it crosses the atria on its own. After the atria, the signal must pass the AV node to travel down the AV bundle into the Purkinje fibres, so blocking the AV node cuts the signal to the ventricles.",
+   "source": "Slides 28-29"
+  },
+  {
+   "id": "cs-26",
+   "q": "Blood pressure in the aorta suddenly rises. Which response follows?",
+   "options": [
+    "Baroreceptors send fewer signals to the brain, which sends more signals to the heart.",
+    "Baroreceptors send more signals to the cardiovascular centre in the brain, which sends fewer signals to the heart.",
+    "The cardiovascular centre sends more signals to the heart so that it pumps harder.",
+    "Baroreceptors in the veins signal the lungs to open the pulmonary valve.",
+    "The SA node stops permanently until pressure falls."
+   ],
+   "answer": 1,
+   "why": "Baroreceptors in the aorta and carotid arteries monitor blood pressure. When pressure is high they increase signalling to the cardiovascular centre, which decreases signalling to the heart; the opposite happens when pressure is low.",
+   "source": "Slide 30"
+  },
+  {
+   "id": "cs-27",
+   "q": "From which tissue does the human cardiovascular system largely originate?",
+   "options": [
+    "Intermediate mesoderm, which also forms the kidney and gonads",
+    "The notochord",
+    "The neural tube",
+    "Splanchnic mesoderm, the ventral part of the lateral plate mesoderm",
+    "The dermatome, which forms the skin"
+   ],
+   "answer": 3,
+   "why": "The heart and blood vessels largely come from the splanchnic mesoderm, the ventral part of the lateral plate mesoderm. Heart fields in this tissue form the cardiac crescent.",
+   "source": "Slide 31"
+  },
+  {
+   "id": "cs-28",
+   "q": "Which statement about the development of the heart and vessels is NOT correct?",
+   "options": [
+    "The cardiac crescent fuses at the midline to create a linear heart tube.",
+    "The heart tube begins to beat spontaneously about 22 days after fertilization.",
+    "The aortic-pulmonary septum forms from splanchnic mesoderm and separates the right atrium from the left atrium.",
+    "Cardiac looping brings the atria to rest anterior (superior) to the ventricles.",
+    "Paired dorsal aortae form next to the notochord and eventually fuse to create the descending aorta."
+   ],
+   "answer": 2,
+   "why": "The aortic-pulmonary septum forms from cardiac neural crest cells, and it divides the pulmonary artery from the aorta. The other four statements are correct.",
+   "source": "Slides 32-37"
+  },
+  {
+   "id": "cs-29",
+   "q": "Which statement correctly describes the change in circulation immediately after birth?",
+   "options": [
+    "Blood begins to flow to the placenta instead of the lungs.",
+    "Blood moves away from the placenta towards the lungs once breathing begins, and the opening between the right and left atria closes.",
+    "A new opening forms between the right and left atria so that the two kinds of blood can mix.",
+    "The aortic-pulmonary septum forms for the first time.",
+    "The heart tube begins to beat spontaneously."
+   ],
+   "answer": 1,
+   "why": "Before birth the placenta handles gas exchange. Right after birth, circulation shifts away from the placenta and towards the lungs once breathing begins, with vessels collapsing and the foramen between the atria closing.",
+   "source": "Slide 41"
+  },
+  {
+   "id": "cs-30",
+   "q": "Which statement correctly distinguishes vasculogenesis from angiogenesis?",
+   "options": [
+    "Vasculogenesis remodels and prunes the vascular network, while angiogenesis creates vessels de novo from splanchnic mesoderm.",
+    "Vasculogenesis forms the heart tube, while angiogenesis forms the heart valves.",
+    "Vasculogenesis creates blood vessels de novo from splanchnic mesoderm, while angiogenesis remodels and prunes the vascular network.",
+    "Vasculogenesis occurs only after birth, while angiogenesis occurs only in the embryo.",
+    "Both terms mean the pruning of an existing vascular network."
+   ],
+   "answer": 2,
+   "why": "Vasculogenesis builds vessels from scratch (de novo), for example the dorsal aortae and yolk sac blood islands. Angiogenesis then remodels and prunes the network.",
+   "source": "Slide 38"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "One lap through the heart and lungs",
+   "prompt": "Put the stops in order, starting with blood returning from the body and ending with blood leaving through the aorta.",
+   "why": "Deoxygenated blood from the body enters the right atrium, goes to the right ventricle and out through the pulmonary trunk and arteries to the lungs. Oxygenated blood returns by the pulmonary veins to the left atrium, then the left ventricle, and leaves through the aorta.",
+   "topLabel": "End: leaves to the body",
+   "bottomLabel": "Start: back from the body",
+   "layers": [
+    {
+     "name": "Right atrium",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Right ventricle",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Pulmonary trunk and pulmonary arteries",
+     "color": "#a16207"
+    },
+    {
+     "name": "Lungs (pulmonary capillaries)",
+     "color": "#15803d"
+    },
+    {
+     "name": "Pulmonary veins",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Left atrium",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Left ventricle",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Aorta",
+     "color": "#be185d"
+    }
+   ]
+  },
+  {
+   "title": "One heartbeat, start to finish",
+   "prompt": "Put these events of a single heartbeat in order, from the first electrical spark to the relaxed heart.",
+   "why": "The beat starts in the SA node and crosses the atria, so the atria contract first (0.1 s). The signal then passes the AV node and runs down the AV bundle and Purkinje fibres, so the ventricles contract from the bottom up (0.3 s). Then the heart relaxes in diastole (0.4 s).",
+   "topLabel": "End: the heart relaxes",
+   "bottomLabel": "Start: the pacemaker fires",
+   "layers": [
+    {
+     "name": "SA node fires (the pacemaker)",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Impulse crosses the atria and they contract (0.1 s)",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Impulse reaches the AV node",
+     "color": "#a16207"
+    },
+    {
+     "name": "Signal runs down the AV bundle into the Purkinje fibres",
+     "color": "#15803d"
+    },
+    {
+     "name": "Ventricles contract from the bottom up (0.3 s)",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Diastole: ventricles relax and fill (0.4 s)",
+     "color": "#1d4ed8"
+    }
+   ]
+  },
+  {
+   "title": "Baroreceptor response to high pressure",
+   "prompt": "Put the steps in order, starting with a rise in blood pressure.",
+   "why": "A rise in arterial pressure is sensed by baroreceptors in the aorta and carotid arteries. They signal the cardiovascular centre in the brain, which sends fewer signals to the heart. Cardiac output and vascular resistance fall, so pressure returns to normal.",
+   "topLabel": "End: pressure is back to normal",
+   "bottomLabel": "Start: pressure rises",
+   "layers": [
+    {
+     "name": "Arterial blood pressure rises",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Baroreceptors in the aorta and carotid arteries detect it",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Sensory neurons carry the signal to the cardiovascular centre in the brain",
+     "color": "#a16207"
+    },
+    {
+     "name": "The cardiovascular centre sends fewer signals to the heart",
+     "color": "#15803d"
+    },
+    {
+     "name": "Cardiac output and vascular resistance fall",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Blood pressure returns to normal",
+     "color": "#1d4ed8"
+    }
+   ]
+  },
+  {
+   "title": "Building the heart in the embryo",
+   "prompt": "Put these stages of heart development in order, from the earliest to the latest.",
+   "why": "Cardiac progenitor cells form the heart fields, which move to the midline as a cardiac crescent. The crescent fuses into a linear heart tube that begins to beat spontaneously about 22 days after fertilization. The tube then loops to the right, which places the atria above the ventricles.",
+   "topLabel": "Latest: the tube loops",
+   "bottomLabel": "Earliest: heart fields",
+   "layers": [
+    {
+     "name": "Heart fields (cardiogenic mesoderm) form",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Fields move to the midline as a cardiac crescent",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Crescent fuses into a linear heart tube",
+     "color": "#a16207"
+    },
+    {
+     "name": "Heart tube begins to beat (about 22 days)",
+     "color": "#15803d"
+    },
+    {
+     "name": "Heart tube loops up to the right",
+     "color": "#0e7490"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Which part of the blood?",
+   "prompt": "Sort each description into red blood cells, white blood cells or plasma.",
+   "buckets": [
+    "Red blood cells",
+    "White blood cells",
+    "Plasma"
+   ],
+   "items": [
+    {
+     "text": "Transport O₂ and CO₂",
+     "b": 0
+    },
+    {
+     "text": "Have no nucleus and no organelles",
+     "b": 0
+    },
+    {
+     "text": "Are essentially bags of hemoglobin",
+     "b": 0
+    },
+    {
+     "text": "Hemoglobin binds O₂ with iron atoms",
+     "b": 0
+    },
+    {
+     "text": "Work in immunity and defence against disease",
+     "b": 1
+    },
+    {
+     "text": "Include neutrophils, eosinophils and basophils",
+     "b": 1
+    },
+    {
+     "text": "Monocytes become macrophages",
+     "b": 1
+    },
+    {
+     "text": "Lymphocytes are one type",
+     "b": 1
+    },
+    {
+     "text": "Mostly water with dissolved proteins and hormones",
+     "b": 2
+    },
+    {
+     "text": "Contains albumins and globulins",
+     "b": 2
+    },
+    {
+     "text": "Fibrinogen for clotting is dissolved in it",
+     "b": 2
+    },
+    {
+     "text": "Carries antibodies (some γ globulins)",
+     "b": 2
+    }
+   ],
+   "why": "Red blood cells are gas carriers packed with hemoglobin. White blood cells defend the body, and their types include neutrophils, eosinophils, basophils, monocytes and lymphocytes. Plasma is the liquid that carries proteins such as albumins, globulins and fibrinogen."
+  },
+  {
+   "title": "Artery, capillary or vein?",
+   "prompt": "Sort each fact into the vessel type it describes.",
+   "buckets": [
+    "Artery",
+    "Capillary",
+    "Vein"
+   ],
+   "items": [
+    {
+     "text": "Carries blood away from the heart",
+     "b": 0
+    },
+    {
+     "text": "Thick wall with a thick middle layer of smooth muscle",
+     "b": 0
+    },
+    {
+     "text": "Carries blood under high pressure",
+     "b": 0
+    },
+    {
+     "text": "Carotid arteries that supply the head",
+     "b": 0
+    },
+    {
+     "text": "Wall is one layer of squamous endothelial cells",
+     "b": 1
+    },
+    {
+     "text": "Red blood cells pass in single file",
+     "b": 1
+    },
+    {
+     "text": "Pores and thin slits let fluid and solutes be exchanged",
+     "b": 1
+    },
+    {
+     "text": "Smallest blood vessel, found in capillary beds",
+     "b": 1
+    },
+    {
+     "text": "Carries blood under very low pressure",
+     "b": 2
+    },
+    {
+     "text": "Has internal one-way valves",
+     "b": 2
+    },
+    {
+     "text": "Acts as a blood volume reservoir",
+     "b": 2
+    },
+    {
+     "text": "Jugular veins that return blood from the head",
+     "b": 2
+    }
+   ],
+   "why": "Arteries are thick-walled, high-pressure vessels that carry blood away from the heart. Capillaries are the thin, porous exchange vessels. Veins are thin-walled, low-pressure vessels with a large lumen and valves that return blood to the heart."
+  },
+  {
+   "title": "Pulmonary or systemic circuit?",
+   "prompt": "Sort each fact into the circuit it belongs to.",
+   "buckets": [
+    "Pulmonary circuit",
+    "Systemic circuit"
+   ],
+   "items": [
+    {
+     "text": "Blood travels to the lungs",
+     "b": 0
+    },
+    {
+     "text": "Blood picks up O₂ and discards CO₂",
+     "b": 0
+    },
+    {
+     "text": "Blood leaves the heart through the pulmonary trunk",
+     "b": 0
+    },
+    {
+     "text": "Pulmonary veins return oxygenated blood to the left atrium",
+     "b": 0
+    },
+    {
+     "text": "The right ventricle pumps blood into it",
+     "b": 0
+    },
+    {
+     "text": "Its arteries carry deoxygenated blood",
+     "b": 0
+    },
+    {
+     "text": "Blood travels to the rest of the body",
+     "b": 1
+    },
+    {
+     "text": "Blood delivers O₂ to tissues and picks up CO₂ waste",
+     "b": 1
+    },
+    {
+     "text": "Blood leaves the heart through the aorta",
+     "b": 1
+    },
+    {
+     "text": "The left ventricle pumps blood into it",
+     "b": 1
+    },
+    {
+     "text": "Branching arteries and arterioles lead to capillaries in the tissues",
+     "b": 1
+    }
+   ],
+   "why": "The pulmonary circuit sends blood from the right side of the heart to the lungs to pick up O₂ and discard CO₂. The systemic circuit sends blood from the left side through the aorta to the rest of the body to deliver O₂ and pick up CO₂ waste."
+  }
+ ],
+ "calc": []
+}

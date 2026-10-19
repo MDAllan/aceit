@@ -26,10 +26,11 @@ let MAN = {};                                  // the course lectures' skeletons
 let EXTRA = { lectures: [], extra: {}, announcements: [] }; // what instructors added to the person's classes
 let builtVersion = -1, builtDrafts = null;
 const EXAMS = {};
-const CLASS_COLORS = { erth209: "#2a9d8f", astr207: "#6c5ce7" };
+const CLASS_COLORS = { erth209: "#2a9d8f", astr207: "#6c5ce7", biol305: "#c0392b" };
 const PALETTES = {
-  erth209: ["#2a9d8f", "#e76f51", "#457b9d", "#8d6a9f", "#5f9e4e", "#bc4749", "#277da1", "#c9822b", "#577590"],
+  erth209: ["#2a9d8f", "#e76f51", "#457b9d", "#8d6a9f", "#5f9e4e", "#bc4749", "#277da1", "#c9822b", "#577590", "#8c5e3c"],
   astr207: ["#6c5ce7", "#3d9be9", "#2fa7b5", "#9b5de5", "#4361ee", "#7b2cbf", "#4895ef"],
+  biol305: ["#d35400", "#7d3c98", "#2874a6", "#a04000", "#148f77", "#c0392b"],
 };
 let curCls = null; try { curCls = localStorage.getItem("erth209:cls"); } catch {}
 const myClasses = () => SUBJECTS.filter((sj) => S.hasAccess(sj.id));

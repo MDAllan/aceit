@@ -1,6 +1,6 @@
 # ACEIT
 
-Plain-language notes, flashcards, quizzes and games for several classes (ERTH 209, ASTR 207), with dashboards for instructors, school managers and platform admins. A static site (no build step) hosted on GitHub Pages. Logins, class membership, progress syncing and every permission rule run on Supabase.
+Plain-language notes, flashcards, quizzes and games for several classes (ERTH 209, ASTR 207, BIOL 305), with dashboards for instructors, school managers and platform admins. A static site (no build step) hosted on GitHub Pages. Logins, class membership, progress syncing and every permission rule run on Supabase.
 
 **Who can do what:** platform admin -> schools -> school managers + instructors -> classes -> students. Each school sees only its own people. See `docs/SECURITY.md`.
 
@@ -11,7 +11,7 @@ Instructors can add their own questions, flashcards, notes, whole lectures and a
 2. Add `"<id>"` to that course's `lectures` list in `content/subjects.json`.
 3. `python tools/build_manifest.py` (CI fails if `content/manifest.json` is stale).
 
-To add a new course, add an entry to `content/subjects.json` and a row in the `courses` table (`insert into public.courses (id, title) values ('id', 'Title');`), then license it to a school in Platform > Schools.
+To add a new course, add an entry to `content/subjects.json` and a row in the `courses` table (`insert into public.courses (id, title) values ('id', 'Title');`), then license it to a school in Platform > Schools. `supabase/add-biol305.sql` does this for BIOL 305 and is a template for the next course.
 
 ## Run locally
 `python -m http.server 8765` then open http://localhost:8765

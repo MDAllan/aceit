@@ -123,12 +123,20 @@ const P = {
   pencil: "M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z",
   archive: "M21 8v13H3V8M1 3h22v5H1zM10 12h4",
   shieldcheck: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM9 12l2 2 4-4",
+  /* course symbols: geology (mountain) and human biology */
+  mountain: "M8 3l4 8 5-5 5 15H2L8 3z",
+  heart: "M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z",
+  person: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2 | M12 3a4 4 0 100 8 4 4 0 000-8z",
+  cell: "M12 3a9 9 0 100 18 9 9 0 000-18z | M12 9a3 3 0 100 6 3 3 0 000-6z",
+  wind: "M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2",
 };
 // symbol shown for each subject and lecture (instead of emoji)
 export const SYM = {
   erth209: "globe", astr207: "telescope",
   interior: "layers", plates: "plates", minerals: "gem", igneous: "volcano", sedimentary: "strata", metamorphism: "gear", strat: "hourglass", fossils: "spiral", biography: "globe",
   scale: "galaxy", timesky: "clock", motion: "rocket", conserve: "bolt", gravity: "orbit", light: "wave", matter: "atom",
+  deformation: "mountain",
+  biol305: "heart", biobasics: "person", cellgrowth: "cell", nervous: "brain", digestive: "spiral", respiratory: "wind", cardio: "heart",
 };
 export const symOf = (x) => SYM[x.id] || "star";
 export function symTile(x, size = 52) {

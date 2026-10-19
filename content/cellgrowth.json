@@ -1,0 +1,1989 @@
+{
+ "id": "cellgrowth",
+ "title": "Cell Division and Growth",
+ "chapter": "Unit 2",
+ "icon": "🔬",
+ "color": "#c0392b",
+ "slideFile": "Cell Division and Growth.pdf",
+ "intro": "Cells grow and reproduce through a controlled cycle: interphase (G1, S, G2) and then the M phase, where the nucleus divides (mitosis) and the cell splits in two (cytokinesis). Mitosis makes genetically identical daughter cells, while meiosis is a separate process that makes gametes. Errors in this process can cause disorders such as trisomy and cancer, and switching genes on and off lets one fertilized egg build many cell types.",
+ "sections": [
+  {
+   "id": "reproduction",
+   "title": "Two ways cells reproduce",
+   "slides": "1-2",
+   "steps": [
+    {
+     "title": "Why cells divide",
+     "bullets": [
+      "Cells divide in the same basic way in all **eukaryotes** (cells that have a nucleus).",
+      "In a many-celled body (a multicellular organism), cell division makes **growth** possible.",
+      "There are two kinds of cell reproduction: **mitosis** and **meiosis**."
+     ]
+    },
+    {
+     "title": "Mitosis versus meiosis",
+     "bullets": [
+      "**Mitosis** makes two new diploid cells. The two daughter cells are genetically identical.",
+      "**Meiosis** makes haploid gametes (sperm and eggs). It uses two rounds of division."
+     ]
+    },
+    {
+     "title": "Diploid and haploid",
+     "bullets": [
+      "**Diploid (2n)** means two sets of chromosomes, one from the mother (maternal) and one from the father (paternal).",
+      "**Haploid (n)** means only one set of chromosomes.",
+      "In humans n = 23. A diploid cell has 22 pairs of autosomes (the chromosomes that are not sex chromosomes) plus 1 pair of sex chromosomes, so most cells have 46 chromosomes."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why two kinds of division? Mitosis keeps the full chromosome number, so a growing body gets identical cells. Meiosis halves the number, so a sperm and an egg together can restore the full number in the zygote."
+    },
+    {
+     "type": "trick",
+     "text": "Mitosis makes twins (two identical cells). Meiosis makes halves (haploid gametes)."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 2 says meiosis 'generates two haploid gametes', but slide 10 says meiosis has two rounds of division and its figure ends with 'four haploid daughter cells'. The figure shows two haploid cells after meiosis I and four after meiosis II. The student text uses the figure (four at the end of the whole process); if a question says 'two', check whether it means after meiosis I."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 1 (learning objectives: phases of the cell cycle; mitosis vs meiosis; mutations and errors; gene expression regulation; fertilization, cleavage, gastrulation)",
+    "Slide 2 (two types of cell reproduction, diploid and haploid, n = 23)",
+    "Slide 6 (46 chromosomes in most cells)",
+    "Gloss of 'eukaryotes' and 'autosomes' and the 'restore the full number' sentence are short generic wording (outside source). The zygote being diploid is on slide 21."
+   ],
+   "images": []
+  },
+  {
+   "id": "cycle",
+   "title": "The cell cycle: interphase and M phase",
+   "slides": "3-5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/cycle_3.webp",
+      "slide": "slide 3",
+      "alt": "The cell cycle drawn as a wheel with G1, S, G2 and a thin M phase wedge, and a separate G0 cell outside the wheel."
+     },
+     "title": "Interphase: G1, S and G2",
+     "bullets": [
+      "**Interphase** is the long growth period between cell divisions. It has three parts.",
+      "**G1** (gap 1) holds most of the cell growth. **S** (synthesis) is when DNA is replicated, which means copied.",
+      "**G2** (gap 2) is when organelles are duplicated and the cell prepares to divide."
+     ]
+    },
+    {
+     "title": "The mitotic (M) phase",
+     "bullets": [
+      "The **M phase** is when the cell actually divides.",
+      "**Mitosis** is the division of the nucleus and the sharing out of DNA between the daughter cells.",
+      "**Cytokinesis** divides the cytoplasm and organelles and ends with two daughter cells."
+     ]
+    },
+    {
+     "title": "Timing and the G0 state",
+     "bullets": [
+      "The whole cell cycle takes 18 to 24 hours, but mitosis plus cytokinesis take less than 1 hour. Most of the cycle is interphase.",
+      "Many cells enter a non-dividing **G0** state. It can be temporary or permanent, for example in neurons (nerve cells) and osteocytes (bone cells).",
+      "Some molecules can stimulate G0 cells to re-enter the cell cycle."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is interphase so long? Before dividing the cell must grow, copy all of its DNA and duplicate its organelles. The actual splitting takes under an hour."
+    },
+    {
+     "type": "trick",
+     "text": "G1 = Grow, S = Synthesize (copy DNA), G2 = Get ready, M = Move apart."
+    },
+    {
+     "type": "trap",
+     "text": "G0 is a non-dividing state that many cells enter. It is not one of the three parts of interphase (G1, S, G2). The figure says 'growth continues slowly' in both S and G2, while G1 is the 'primary period of cell growth'. Do not say DNA is copied in G1 or G2."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 3 (interphase, figure with G1, S, G2 and G0)",
+    "Slide 4 (M phase, mitosis, cytokinesis; the picture is the same wheel as slide 3, so it is not repeated)",
+    "Slide 5 (18-24 hours, under 1 hour, G0 examples; same wheel picture)",
+    "The glosses '(nerve cells)' and '(bone cells)' and the 'most of the cycle is interphase' sentence are generic or simple arithmetic from slide 5 (outside source for the glosses)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/cycle_3.webp",
+     "slide": "slide 3",
+     "alt": "The cell cycle drawn as a wheel with G1, S, G2 and a thin M phase wedge, and a separate G0 cell outside the wheel."
+    }
+   ],
+   "table": {
+    "head": [
+     "Phase",
+     "Key event"
+    ],
+    "rows": [
+     [
+      "G1",
+      "Most of the cell growth"
+     ],
+     [
+      "S",
+      "DNA replication"
+     ],
+     [
+      "G2",
+      "Organelle duplication, preparing to divide"
+     ],
+     [
+      "M",
+      "Mitosis (nucleus divides), then cytokinesis (cytoplasm divides)"
+     ],
+     [
+      "G0",
+      "Non-dividing state, temporary or permanent"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "dna",
+   "title": "Chromosomes and DNA replication",
+   "slides": "6-7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/chromatin_6.webp",
+      "slide": "slide 6",
+      "alt": "DNA coiling around histone balls and folding step by step into a compact chromosome with two sister chromatids and a centromere."
+     },
+     "title": "From DNA to a chromosome",
+     "bullets": [
+      "In most human cells DNA is organized into **46 chromosomes**.",
+      "Double-stranded DNA wraps around histone proteins to make a **nucleosome**. DNA plus protein is called **chromatin**. It is not visible during interphase.",
+      "During mitosis the DNA is compacted into a visible chromosome. Each chromosome is one **chromatid** paired with its duplicate **sister chromatid**, joined by a centromere."
+     ]
+    },
+    {
+     "title": "Open and closed chromatin",
+     "bullets": [
+      "**Euchromatin** is 'open' chromatin and **heterochromatin** is 'closed' chromatin."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/replication_7.webp",
+      "slide": "slide 7",
+      "alt": "A DNA double helix unzipping, with new nucleotides pairing with A, T, C and G along each parent strand."
+     },
+     "title": "Copying DNA in S phase",
+     "bullets": [
+      "DNA strands uncoil, or 'unzip'. Each strand guides a **complementary** new strand by base-pairing: A with T, and G with C.",
+      "**DNA polymerase**, an enzyme, positions the new nucleotides and links them together.",
+      "Replication starts at many sites at the same time along the DNA molecule."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why must DNA be copied first? Each daughter cell needs a full set of DNA. S phase builds a matching copy on every strand, so each chromosome can carry two identical sister chromatids."
+    },
+    {
+     "type": "trick",
+     "text": "Base pairs: Apples (A) hang from Trees (T), Cars (C) park in Garages (G)."
+    },
+    {
+     "type": "trap",
+     "text": "Chromosome versus chromatid: slide 6 calls the paired structure a chromosome (one chromatid joined to its sister chromatid) and slide 8 also calls each separated daughter a chromosome. A human cell in prophase has 46 chromosomes made of 92 chromatids. Count chromosomes by centromeres, and count chromatids as two per chromosome until anaphase."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 6 (46 chromosomes, nucleosome, chromatin, euchromatin and heterochromatin, chromatid, sister chromatid, centromere; figure labels)",
+    "Slide 7 (A-T and G-C, DNA polymerase, many sites at once; figure)",
+    "The mnemonic 'Apples and Trees, Cars and Garages' and the 92-chromatid count (46 x 2) are made for this site (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/chromatin_6.webp",
+     "slide": "slide 6",
+     "alt": "DNA coiling around histone balls and folding step by step into a compact chromosome with two sister chromatids and a centromere."
+    },
+    {
+     "src": "img/cellgrowth/replication_7.webp",
+     "slide": "slide 7",
+     "alt": "A DNA double helix unzipping, with new nucleotides pairing with A, T, C and G along each parent strand."
+    }
+   ]
+  },
+  {
+   "id": "mitosis",
+   "title": "Mitosis, step by step",
+   "slides": "8-9",
+   "steps": [
+    {
+     "title": "Four stages of nuclear division",
+     "bullets": [
+      "Nuclear division goes through four stages in this order: prophase, metaphase, anaphase, telophase.",
+      "Mitosis together with cytokinesis gives two genetically identical diploid daughter cells."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/mitosis_9a.webp",
+      "slide": "slide 9",
+      "alt": "Drawings and photos of a dividing cell in prophase and in metaphase, with the spindle, centrioles, centromere and sister chromatids labelled."
+     },
+     "title": "Prophase and metaphase",
+     "bullets": [
+      "**Prophase**: chromatin condenses into chromosomes (sister chromatid pairs joined by a centromere) and a **spindle** forms from the centrioles.",
+      "**Metaphase**: the chromosome pairs line up along the equator (the middle) of the cell."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/mitosis_9b.webp",
+      "slide": "slide 9",
+      "alt": "Drawings and photos of a dividing cell in anaphase and in telophase with cytokinesis, showing daughter chromosomes and a cleavage furrow."
+     },
+     "title": "Anaphase and telophase",
+     "bullets": [
+      "**Anaphase**: the chromosome pairs separate. One daughter chromosome from each pair moves to opposite sides of the cell.",
+      "**Telophase**: the nuclear envelope reforms around the DNA and the chromosomes uncoil. A cleavage furrow shows that cytokinesis is splitting the cell."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why line up first? Lining up on the equator lets the cell pull one daughter chromosome from each pair to each side. Both daughter cells then receive the same DNA."
+    },
+    {
+     "type": "trick",
+     "text": "PMAT: Prophase = Pack up (chromosomes condense), Metaphase = Middle, Anaphase = Apart, Telophase = Two nuclei."
+    },
+    {
+     "type": "trap",
+     "text": "Cytokinesis overlaps with telophase. Slide 8 says 'cytokinesis occurs' in telophase, slide 4 defines the M phase as mitosis plus cytokinesis, and the slide 9 figure starts its 'cytokinesis' tab at telophase. Do not list cytokinesis as a fifth stage of nuclear division: the slides list four stages."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 8 (four stages of nuclear division, with descriptions)",
+    "Slide 9 (figure of mitosis with labels; split into two crops so the labels stay readable)",
+    "The mnemonic PMAT is made for this site (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/mitosis_9a.webp",
+     "slide": "slide 9",
+     "alt": "Drawings and photos of a dividing cell in prophase and in metaphase, with the spindle, centrioles, centromere and sister chromatids labelled."
+    },
+    {
+     "src": "img/cellgrowth/mitosis_9b.webp",
+     "slide": "slide 9",
+     "alt": "Drawings and photos of a dividing cell in anaphase and in telophase with cytokinesis, showing daughter chromosomes and a cleavage furrow."
+    }
+   ]
+  },
+  {
+   "id": "meiosis",
+   "title": "Meiosis and crossing-over",
+   "slides": "10-11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/meiosis1_10.webp",
+      "slide": "slide 10",
+      "alt": "Meiosis I drawn as a vertical series of cells from prophase I to two daughter cells, with homologous pairs lining up and separating."
+     },
+     "title": "Meiosis I: homologous pairs split",
+     "bullets": [
+      "Meiosis follows the same steps as mitosis but with **two rounds** of division.",
+      "In prophase I the homologous chromosomes pair up and cross over. In metaphase I the pairs line up, and in anaphase I the homologous pairs separate.",
+      "After meiosis I the ploidy has fallen from 2n to n. Each cell has a haploid number of chromosomes, each still made of two sister chromatids."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/meiosis2_10.webp",
+      "slide": "slide 10",
+      "alt": "Meiosis II drawn as a vertical series from prophase II to four haploid daughter cells, with sister chromatids separating."
+     },
+     "title": "Meiosis II: sister chromatids split",
+     "bullets": [
+      "In prophase II a spindle forms, and in metaphase II the chromosomes line up on the equator.",
+      "In anaphase II the **sister chromatids** separate. In telophase II nuclei form and cytokinesis occurs.",
+      "The end result in the picture is four haploid daughter cells."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/homologs_11.webp",
+      "slide": "slide 11",
+      "alt": "Two matching purple chromosomes side by side with coloured bands marking gene loci, labelled as a pair of homologous autosomes."
+     },
+     "title": "Homologous chromosomes",
+     "bullets": [
+      "A pair of **homologous chromosomes** carries the same gene loci (the locations of specific pairs of genes). One is maternal and one is paternal.",
+      "The pairing-up of homologous chromosomes during prophase I is called **synapsis**.",
+      "A gene pair made of identical **alleles** (versions of a gene) is homozygous. A gene pair of different alleles is heterozygous."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/crossover_11.webp",
+      "slide": "slide 11",
+      "alt": "A paternal (purple) and a maternal (teal) chromosome pair swapping pieces, ending as two chromosomes that each carry both colours."
+     },
+     "title": "Crossing-over",
+     "bullets": [
+      "**Crossing-over** swaps genetic material (homologous recombination) between non-sister chromatids, at points called chiasmata.",
+      "In the picture a paternal (purple) and a maternal (teal) chromosome trade pieces, so each ends up carrying both colours.",
+      "This increases genetic variation in offspring. Errors may occur during crossing-over."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why two rounds? Meiosis I separates the homologous pairs and cuts the number from 2n to n. Meiosis II then separates the sister chromatids, so the end result is four haploid daughter cells."
+    },
+    {
+     "type": "trick",
+     "text": "Meiosis I splits the homologs (mom's copy and dad's copy, like a couple parting). Meiosis II splits the sisters (identical twins)."
+    },
+    {
+     "type": "trap",
+     "text": "Crossing-over happens between NON-sister chromatids of the two homologous chromosomes, never between the two sister chromatids of one chromosome. Also keep the two anaphases apart: anaphase I = homologous pairs separate, anaphase II = sister chromatids separate (labels in the slide 10 figure)."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 10 (text and the two-part figure: meiosis I and meiosis II labels)",
+    "Slide 11 (synapsis, crossing-over, chiasmata, variation; figure labels incl. gene loci, homozygous, heterozygous)",
+    "The gloss '(versions of a gene)' and the 'couple parting / identical twins' analogy are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/meiosis1_10.webp",
+     "slide": "slide 10",
+     "alt": "Meiosis I drawn as a vertical series of cells from prophase I to two daughter cells, with homologous pairs lining up and separating."
+    },
+    {
+     "src": "img/cellgrowth/meiosis2_10.webp",
+     "slide": "slide 10",
+     "alt": "Meiosis II drawn as a vertical series from prophase II to four haploid daughter cells, with sister chromatids separating."
+    },
+    {
+     "src": "img/cellgrowth/homologs_11.webp",
+     "slide": "slide 11",
+     "alt": "Two matching purple chromosomes side by side with coloured bands marking gene loci, labelled as a pair of homologous autosomes."
+    },
+    {
+     "src": "img/cellgrowth/crossover_11.webp",
+     "slide": "slide 11",
+     "alt": "A paternal (purple) and a maternal (teal) chromosome pair swapping pieces, ending as two chromosomes that each carry both colours."
+    }
+   ]
+  },
+  {
+   "id": "ploidy",
+   "title": "Chromosome number errors",
+   "slides": "12",
+   "steps": [
+    {
+     "title": "The normal number: euploidy",
+     "bullets": [
+      "Most cells are diploid (2n) and gametes (sperm and eggs) are haploid (n). This normal state in humans is **euploidy**."
+     ]
+    },
+    {
+     "title": "When separation fails",
+     "bullets": [
+      "Sometimes homologous chromosomes (in meiosis I) or sister chromatids (in meiosis II) fail to separate. This error is **non-disjunction**.",
+      "It can produce gametes with an atypical number of chromosomes, called **aneuploidy**.",
+      "If such a gamete is fertilized the offspring is **polysomic**. Most often this is a **trisomy**: 3 copies of one chromosome in a cell."
+     ]
+    },
+    {
+     "title": "Trisomy examples",
+     "bullets": [
+      "Trisomy 21 is Down syndrome, trisomy 18 is Edwards syndrome and trisomy 13 is Patau syndrome. Trisomy of the sex chromosomes also occurs.",
+      "A person with trisomy 21 has 47 chromosomes in a body cell: the normal 46 plus the extra copy of chromosome 21."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does one meiosis error matter? The gamete carries the wrong number of chromosomes, so after fertilization the offspring does too. A cell then has 3 copies of that chromosome instead of 2."
+    },
+    {
+     "type": "trick",
+     "text": "Tri means three: trisomy = three copies. Count down 21, 18, 13 to match Down, Edwards, Patau."
+    },
+    {
+     "type": "trap",
+     "text": "Euploidy is the NORMAL number (diploid body cells, haploid gametes), not 'extra chromosomes'. Aneuploidy is the atypical number. Slide 12 says 'homologous or sister chromatids fail to separate'; non-disjunction in meiosis I involves homologous pairs and in meiosis II sister chromatids (anaphase labels on slide 10)."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 12 (euploidy, non-disjunction, aneuploidy, polysomic, trisomy examples; no figure on this slide)",
+    "47 chromosomes is simple arithmetic from 46 (slides 2, 6) plus one extra copy (slide 12).",
+    "Linking non-disjunction to meiosis I and II uses the anaphase labels on slide 10.",
+    "The mnemonic about counting down is made for this site (outside source)."
+   ],
+   "images": []
+  },
+  {
+   "id": "cancer",
+   "title": "Checkpoints and cancer",
+   "slides": "13-15",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/checkpoints_13.webp",
+      "slide": "slide 13",
+      "alt": "The cell cycle wheel with three red gates marked G1 checkpoint, G2 checkpoint and M checkpoint."
+     },
+     "title": "Checkpoints control the cycle",
+     "bullets": [
+      "Cell reproduction is controlled by internal surveillance and control mechanisms, and by mechanisms that repair damage to DNA.",
+      "There are several **checkpoints** in the cell cycle. A 'go-ahead' signal must be received before the cycle moves into the next phase. The picture marks the G1, G2 and M checkpoints.",
+      "Outside influences matter too: hormones, **growth factors** and other cells. Cells usually will not replicate if there is no space."
+     ]
+    },
+    {
+     "title": "Genes that go wrong in cancer",
+     "bullets": [
+      "Cell cycle controls can fail from DNA replication errors (**mutations**) or from DNA damage, for example from carcinogens.",
+      "**Proto-oncogenes** usually encode growth or survival proteins. Mutations may increase protein activity (examples: EGFR, YAP1).",
+      "**Tumor suppressor genes** usually encode cell cycle-regulator or DNA-repair proteins. Mutations may reduce or remove protein activity (examples: TP53, BRCA2)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/benign_15.webp",
+      "slide": "slide 15",
+      "alt": "A genetically altered cell in a sheet of cells growing into a patch of hyperplasia and then a benign tumour."
+     },
+     "title": "The first steps of a tumour",
+     "bullets": [
+      "A genetically altered cell starts the process.",
+      "In **hyperplasia** the cell divides more rapidly than normal and forms a small clump.",
+      "The clump can grow into a benign tumour."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/tumour_15.webp",
+      "slide": "slide 15",
+      "alt": "Cross-section of tissue showing cells progressing from hyperplasia to dysplasia, in situ cancer, an invading malignant tumour and metastases near a blood vessel."
+     },
+     "title": "From altered cell to metastasis",
+     "bullets": [
+      "After hyperplasia the cells show **dysplasia** (cells change form). In **in situ cancer** the cells stay in one place.",
+      "In a malignant tumour (cancer) the cells invade surrounding tissue and enter blood and lymph.",
+      "Metastases may form at distant sites. Metastasis is the breakaway of a diseased cell from its neighbours."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do checkpoints matter? If the go-ahead signal is missing, the cycle does not move on. When the genes that run these controls are damaged, cells can divide without control, and mutations and DNA damage pile up."
+    },
+    {
+     "type": "trick",
+     "text": "Proto-oncogene = gas pedal (mutation = pedal pushed down, more activity). Tumor suppressor = brake (mutation = brake lost, less activity)."
+    },
+    {
+     "type": "trap",
+     "text": "Opposite effects: a proto-oncogene mutation INCREASES activity; a tumor suppressor mutation REDUCES or REMOVES activity. NOT/INCORRECT questions swap them. Slide 13 text only says 'several checkpoints'; the G1, G2 and M labels come from the figure. On slide 15 the top picture ends in a benign tumour and the bottom picture follows the malignant path (invasion, metastases)."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 13 (checkpoints, outside influences; figure with G1, G2, M checkpoints)",
+    "Slide 14 (mutations, proto-oncogenes, tumor suppressor genes, metastasis; text only)",
+    "Slide 15 (tumour development; two pictures: benign tumour path and malignant path with stage labels)",
+    "The gas pedal and brake analogy is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/checkpoints_13.webp",
+     "slide": "slide 13",
+     "alt": "The cell cycle wheel with three red gates marked G1 checkpoint, G2 checkpoint and M checkpoint."
+    },
+    {
+     "src": "img/cellgrowth/benign_15.webp",
+     "slide": "slide 15",
+     "alt": "A genetically altered cell in a sheet of cells growing into a patch of hyperplasia and then a benign tumour."
+    },
+    {
+     "src": "img/cellgrowth/tumour_15.webp",
+     "slide": "slide 15",
+     "alt": "Cross-section of tissue showing cells progressing from hyperplasia to dysplasia, in situ cancer, an invading malignant tumour and metastases near a blood vessel."
+    }
+   ]
+  },
+  {
+   "id": "expression",
+   "title": "From gene to protein",
+   "slides": "16-17",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/expression_16.webp",
+      "slide": "slide 16",
+      "alt": "DNA in the nucleus copied into mRNA by transcription, then the mRNA read by a ribosome in the cytoplasm to build a protein by translation."
+     },
+     "title": "Transcription, then translation",
+     "bullets": [
+      "**Transcription** happens in the nucleus. A gene (DNA letters A, T, G, C) is copied into RNA (letters A, U, G, C).",
+      "**Translation** happens in the cytoplasm. The RNA message is converted into a protein, a chain of amino acids such as Met, Leu, Asp and Glu. In the picture a ribosome reads the mRNA.",
+      "**Gene expression** is the whole process of turning the information in a gene's DNA sequence into a functional protein."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/regulation_17.webp",
+      "slide": "slide 17",
+      "alt": "A gene with promoter, exons, introns and enhancer region, followed by nuclear RNA, mRNA, an amino acid chain and a folded protein, with blue arrows marking control points."
+     },
+     "title": "Many points of control",
+     "bullets": [
+      "Gene expression can be regulated at several points. The blue arrows in the picture mark places where control can happen.",
+      "The listed points are the chromatin level (**epigenetics**, for example histone modifications), cis- and trans-regulatory elements, RNA splicing and changes made to the finished protein (post-translational modifications).",
+      "In the picture the nuclear RNA still has introns between its exons, while the mature mRNA keeps only the exons. Removing the introns is RNA splicing."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why have so many control points? Each point lets the cell turn a gene up or down, or change the finished protein, so protein amounts can be fine-tuned."
+    },
+    {
+     "type": "trick",
+     "text": "Transcription = same language: DNA copied to RNA, in the nucleus. Translation = new language: RNA changed to protein, in the cytoplasm."
+    },
+    {
+     "type": "trap",
+     "text": "Location and letters are easy to swap: transcription is in the nucleus, translation is in the cytoplasm. DNA uses A, T, G, C and RNA uses A, U, G, C (U replaces T). Slide 17 lists 'cis- and trans-regulatory elements' without defining 'trans', so just know it is one listed control point."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 16 (transcription, translation, gene expression; figure with nucleus, mRNA, ribosome, protein)",
+    "Slide 17 (regulation points; figure with promoter, exons, introns, nuclear RNA, mRNA, post-translational modification)",
+    "The statement that introns are removed in RNA splicing is read from the exon/intron layout of the slide 17 figure plus the term 'RNA splicing' (slightly beyond the slide text; outside source).",
+    "The 'fine-tuned' sentence in the why box is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/expression_16.webp",
+     "slide": "slide 16",
+     "alt": "DNA in the nucleus copied into mRNA by transcription, then the mRNA read by a ribosome in the cytoplasm to build a protein by translation."
+    },
+    {
+     "src": "img/cellgrowth/regulation_17.webp",
+     "slide": "slide 17",
+     "alt": "A gene with promoter, exons, introns and enhancer region, followed by nuclear RNA, mRNA, an amino acid chain and a folded protein, with blue arrows marking control points."
+    }
+   ]
+  },
+  {
+   "id": "celltypes",
+   "title": "Enhancers and different cell types",
+   "slides": "18-19",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/enhancer_18.webp",
+      "slide": "slide 18",
+      "alt": "An enhancer and a promoter on DNA, first with no transcription and then looped together by transcription factors and RNA polymerase so transcription starts."
+     },
+     "title": "How enhancers switch genes on",
+     "bullets": [
+      "**Enhancers** are non-coding DNA sequences (called cis-regulatory) where specific **transcription factor** proteins can bind.",
+      "In the picture a set of transcription factors bridges the enhancer and the promoter, where RNA polymerase sits. That triggers transcription. Without the bridge there is no transcription.",
+      "Enhancer activity is usually needed for a human gene to be expressed beyond a basal (baseline) level. Enhancers can be nearby or far from the gene, upstream or downstream."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/diffexp_19.webp",
+      "slide": "slide 19",
+      "alt": "Gene A with a brain-specific and a limb-specific enhancer, shown in three embryos: expressed in both, in the brain only, and in the limb only."
+     },
+     "title": "Same DNA, different cell types",
+     "bullets": [
+      "Most body cells hold the same DNA and so the same genes. So how can one cell give rise to different mature cell types?",
+      "The answer is **differential gene expression**. It largely depends on which transcription factors are present in each cell.",
+      "In the picture gene A has a brain-specific and a limb-specific enhancer. Brain transcription factors switch gene A on in the brain, and limb transcription factors switch it on in the limb."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do identical genes give different cells? An enhancer only works with matching transcription factors. Each cell type has a different mix of them, so each switches on a different set of genes. The mix can also change during development."
+    },
+    {
+     "type": "trick",
+     "text": "Enhancer plus the right transcription factors is like a key in a lock. Different cell types carry different keys."
+    },
+    {
+     "type": "trap",
+     "text": "Differential gene expression means different genes are switched ON, not different DNA. Also, an enhancer is non-coding (it is not part of the protein-making sequence) and it does not have to sit next to its gene. 'Basal level' means the baseline amount of expression."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 18 (enhancers, transcription factors, basal level, nearby or distant; figure with captions)",
+    "Slide 19 (differential gene expression; figure with brain-specific and limb-specific enhancers)",
+    "The key and lock analogy and the gloss '(baseline)' are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/enhancer_18.webp",
+     "slide": "slide 18",
+     "alt": "An enhancer and a promoter on DNA, first with no transcription and then looped together by transcription factors and RNA polymerase so transcription starts."
+    },
+    {
+     "src": "img/cellgrowth/diffexp_19.webp",
+     "slide": "slide 19",
+     "alt": "Gene A with a brain-specific and a limb-specific enhancer, shown in three embryos: expressed in both, in the brain only, and in the limb only."
+    }
+   ]
+  },
+  {
+   "id": "fertilization",
+   "title": "Gametes and fertilization",
+   "slides": "20-21",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/oocyte_20.webp",
+      "slide": "slide 20",
+      "alt": "A secondary oocyte with its nucleus, a first polar body, the zona pellucida and a surrounding layer of corona radiata cells."
+     },
+     "title": "The oocyte",
+     "bullets": [
+      "The oocyte is arrested in meiosis II before sperm fuse with it. Meiosis resumes at that point.",
+      "It is surrounded by the **zona pellucida**, an extracellular matrix (a layer outside the cell).",
+      "The picture also labels the corona radiata cells around the oocyte and a first polar body."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/sperm_20.webp",
+      "slide": "slide 20",
+      "alt": "A sperm with the acrosomal vesicle and haploid nucleus in the head, then the midpiece with mitochondria, the tail and the end piece."
+     },
+     "title": "The sperm",
+     "bullets": [
+      "The sperm head holds a haploid nucleus and an **acrosome** (the acrosomal vesicle) filled with enzymes.",
+      "The acrosome's enzymes help the sperm get through the zona pellucida.",
+      "Fertilization occurs when one sperm fuses with one egg in the upper oviduct, forming a **zygote**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/fertilize_21a.webp",
+      "slide": "slide 21",
+      "alt": "Sperm reaching the egg surface, with four numbered steps: acrosome enzymes released, membranes fuse, granules release enzymes, sperm nucleus enters the egg."
+     },
+     "title": "Four steps at the egg surface",
+     "bullets": [
+      "Step 1: the acrosome releases enzymes that digest the zona pellucida. Step 2: the oocyte and sperm plasma membranes fuse.",
+      "Step 3: **cortical granules** in the egg release enzymes that change the zona pellucida so other sperm cannot get in.",
+      "Step 4: the sperm nucleus is taken into the egg cytoplasm."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/fertilize_21b.webp",
+      "slide": "slide 21",
+      "alt": "Three stages: sperm nucleus enters the oocyte, meiosis finishes giving an egg with polar bodies, and the egg and sperm nuclei fuse into a zygote."
+     },
+     "title": "Finishing fertilization",
+     "bullets": [
+      "The sperm nucleus entering triggers the completion of meiosis II. This gives an egg with a haploid nucleus plus another polar body.",
+      "The egg and sperm nuclei (**pronuclei**) fuse and the polar bodies die.",
+      "A single diploid cell called the zygote is formed, and fertilization is complete."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the egg change the zona pellucida right away? One sperm fertilizes one egg to make the zygote. The change made by the cortical granules keeps other sperm out."
+    },
+    {
+     "type": "trick",
+     "text": "A-M-C-N: Acrosome digests, Membranes fuse, Cortical granules lock the door, Nuclei join."
+    },
+    {
+     "type": "trap",
+     "text": "At fertilization the egg is still an oocyte stuck in meiosis II, not a finished haploid egg: meiosis II completes only after the sperm fuses (slides 20 and 21). The figure names it 'secondary oocyte'. Fertilization occurs in the upper oviduct, not in the uterus. The sperm acrosome digests the zona pellucida; the egg cortical granules make it impenetrable: do not swap them."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 20 (properties of gametes; oocyte and sperm figures)",
+    "Slide 21 (fertilization steps; figure with steps 1-4 and panels a, b, c)",
+    "The glosses '(a layer outside the cell)' and the A-M-C-N mnemonic are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/oocyte_20.webp",
+     "slide": "slide 20",
+     "alt": "A secondary oocyte with its nucleus, a first polar body, the zona pellucida and a surrounding layer of corona radiata cells."
+    },
+    {
+     "src": "img/cellgrowth/sperm_20.webp",
+     "slide": "slide 20",
+     "alt": "A sperm with the acrosomal vesicle and haploid nucleus in the head, then the midpiece with mitochondria, the tail and the end piece."
+    },
+    {
+     "src": "img/cellgrowth/fertilize_21a.webp",
+     "slide": "slide 21",
+     "alt": "Sperm reaching the egg surface, with four numbered steps: acrosome enzymes released, membranes fuse, granules release enzymes, sperm nucleus enters the egg."
+    },
+    {
+     "src": "img/cellgrowth/fertilize_21b.webp",
+     "slide": "slide 21",
+     "alt": "Three stages: sperm nucleus enters the oocyte, meiosis finishes giving an egg with polar bodies, and the egg and sperm nuclei fuse into a zygote."
+    }
+   ]
+  },
+  {
+   "id": "cleavage",
+   "title": "Cleavage and implantation",
+   "slides": "22-23",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/cleavage_22.webp",
+      "slide": "slide 22",
+      "alt": "A zygote dividing as it travels down the oviduct to the uterus, becoming a morula and then a blastocyst with an inner cell mass and trophoblast."
+     },
+     "title": "Zygote to blastocyst",
+     "bullets": [
+      "The zygote divides several times with no cell growth. This is **cleavage**. It makes a ball of identical cells called a **morula**.",
+      "The zona pellucida keeps the embryo from implanting before it reaches the uterus.",
+      "Different positional cues start cellular **differentiation** in the morula. After more divisions it becomes a **blastocyst**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/implant_23.webp",
+      "slide": "slide 23",
+      "alt": "A blastocyst sinking into the uterine lining in three numbered stages, ending with a two-layered embryonic disk between the amniotic cavity and the yolk sac."
+     },
+     "title": "Implantation",
+     "bullets": [
+      "The blastocyst has an outer **trophoblast** layer, which forms parts of the placenta, and an **inner cell mass** inside a hollow cavity (the blastocoel), which forms the body of the embryo.",
+      "The blastocyst implants into the endometrium of the uterus and forms a **bilaminar** (two-layered) embryonic (germ) disk. This occurs at about 9 days after fertilization.",
+      "The picture also labels the amniotic cavity, the yolk sac and the epiblast and hypoblast layers."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the zona pellucida stay around the early embryo? It keeps the embryo from implanting too soon, before it has reached the uterus. The picture shows the embryo travelling from the oviduct to the uterus."
+    },
+    {
+     "type": "trick",
+     "text": "Morula = solid ball (like a mulberry). Blastocyst = hollow ball with an inside (inner cell mass) and an outside (trophoblast)."
+    },
+    {
+     "type": "trap",
+     "text": "Do not swap the fates: trophoblast (outer layer) forms parts of the placenta, inner cell mass forms the body of the embryo. Slide 23 says 'this occurs at ~9 days' after describing implantation and the bilaminar disk, so treat about 9 days as the time for implantation and the two-layered disk. Cleavage has NO cell growth."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 22 (cleavage, morula, blastocyst, zona pellucida; figure of the journey along the oviduct)",
+    "Slide 23 (blastocyst parts, implantation, bilaminar disk, about 9 days; figure with steps 1-3)",
+    "The mulberry comparison is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/cleavage_22.webp",
+     "slide": "slide 22",
+     "alt": "A zygote dividing as it travels down the oviduct to the uterus, becoming a morula and then a blastocyst with an inner cell mass and trophoblast."
+    },
+    {
+     "src": "img/cellgrowth/implant_23.webp",
+     "slide": "slide 23",
+     "alt": "A blastocyst sinking into the uterine lining in three numbered stages, ending with a two-layered embryonic disk between the amniotic cavity and the yolk sac."
+    }
+   ]
+  },
+  {
+   "id": "gastrulation",
+   "title": "Gastrulation: three germ layers",
+   "slides": "24-26",
+   "steps": [
+    {
+     "img": {
+      "src": "img/cellgrowth/disk_24.webp",
+      "slide": "slide 24",
+      "alt": "A cross-section of the embryo with the amniotic cavity above the three layers ectoderm, mesoderm and endoderm and the yolk sac below."
+     },
+     "title": "The three-layer disk",
+     "bullets": [
+      "By about 14 days after fertilization the two-layer disk becomes a **trilaminar** (three-layered) germ disk.",
+      "The picture labels the three layers: ectoderm, mesoderm and endoderm, with the amniotic cavity on one side and the yolk sac on the other.",
+      "Making the three germ layers is called **gastrulation**. In humans it mostly happens in the third week of development."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/gastr_25a.webp",
+      "slide": "slide 25",
+      "alt": "A cut-away view of the embryonic disk inside the amniotic cavity with a groove called the primitive streak and the node at one end."
+     },
+     "title": "Epiblast and primitive streak",
+     "bullets": [
+      "The bilaminar disk is made of the **epiblast** and the **hypoblast**. The entire body of the embryo comes from the epiblast.",
+      "The picture shows the disk in the amniotic cavity with a groove called the **primitive streak** and the node at one end."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/gastr_25b.webp",
+      "slide": "slide 25",
+      "alt": "At 14 to 15 days: epiblast on top, hypoblast below, and endoderm cells forming where cells enter at the primitive streak."
+     },
+     "title": "Cells move through the streak",
+     "bullets": [
+      "Epiblast cells migrate through the primitive streak. This is how the endoderm and the mesoderm form.",
+      "At 14 to 15 days the picture shows epiblast on top, hypoblast below and endoderm forming where the cells enter."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/cellgrowth/gastr_25c.webp",
+      "slide": "slide 25",
+      "alt": "At 16 days: a layer of mesoderm and a layer of endoderm have formed beneath the surface epiblast, with the node labelled."
+     },
+     "title": "Three layers at 16 days",
+     "bullets": [
+      "By 16 days the picture labels the mesoderm and the endoderm that have formed from the cells that moved in.",
+      "The part of the epiblast that does not move in forms the **ectoderm**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the epiblast matter so much? Epiblast cells that move through the primitive streak make the endoderm and mesoderm, and those that stay on the surface make the ectoderm. All three layers come from the epiblast, which is why the entire body comes from it."
+    },
+    {
+     "type": "trick",
+     "text": "The epiblast sits on top (next to the amniotic cavity) and builds the whole body. The hypoblast is the lower layer."
+    },
+    {
+     "type": "trap",
+     "text": "Timeline: about 9 days = bilaminar disk (slide 23); about 14 days = trilaminar disk (slide 24); gastrulation mostly in week 3. Ectoderm is the epiblast that does NOT ingress; endoderm and mesoderm are the epiblast cells that DO migrate through the primitive streak. Slide 25 has the typo 'the does not ingress' (means 'that does not'). Slide 26 is only a video (day 15, size 1 mm) with no text to study."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 24 (trilaminar disk, gastrulation, third week; figure with ectoderm, mesoderm, endoderm)",
+    "Slide 25 (epiblast, hypoblast, primitive streak, ectoderm; three figures: 3D view, 14-15 days, 16 days)",
+    "Slide 26 is a video placeholder ('Gastrulation and Neurulation', approximate embryonic age day 15, size 1 mm); no student content.",
+    "The 'epiblast sits on top' wording is read from the labelled figures on slides 23 and 25."
+   ],
+   "images": [
+    {
+     "src": "img/cellgrowth/disk_24.webp",
+     "slide": "slide 24",
+     "alt": "A cross-section of the embryo with the amniotic cavity above the three layers ectoderm, mesoderm and endoderm and the yolk sac below."
+    },
+    {
+     "src": "img/cellgrowth/gastr_25a.webp",
+     "slide": "slide 25",
+     "alt": "A cut-away view of the embryonic disk inside the amniotic cavity with a groove called the primitive streak and the node at one end."
+    },
+    {
+     "src": "img/cellgrowth/gastr_25b.webp",
+     "slide": "slide 25",
+     "alt": "At 14 to 15 days: epiblast on top, hypoblast below, and endoderm cells forming where cells enter at the primitive streak."
+    },
+    {
+     "src": "img/cellgrowth/gastr_25c.webp",
+     "slide": "slide 25",
+     "alt": "At 16 days: a layer of mesoderm and a layer of endoderm have formed beneath the surface epiblast, with the node labelled."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Mitosis and meiosis at a glance",
+  "head": [
+   "Feature",
+   "Mitosis",
+   "Meiosis"
+  ],
+  "rows": [
+   [
+    "Cells made",
+    "Two genetically identical diploid daughter cells",
+    "Haploid gametes (four haploid daughter cells at the end)"
+   ],
+   [
+    "Rounds of division",
+    "One",
+    "Two"
+   ],
+   [
+    "Ploidy",
+    "Stays diploid (2n)",
+    "Falls from 2n to n after meiosis I"
+   ],
+   [
+    "Prophase",
+    "Chromatin condenses and a spindle forms",
+    "Prophase I: homologous chromosomes pair up and cross over"
+   ],
+   [
+    "Anaphase",
+    "Chromosome pairs separate (daughter chromosomes)",
+    "Anaphase I: homologous pairs separate. Anaphase II: sister chromatids separate"
+   ],
+   [
+    "Genetic variation",
+    "Daughter cells are identical",
+    "Crossing-over increases variation"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "cd-c1",
+   "front": "Mitosis",
+   "back": "Cell division that generates two new diploid cells. The two daughter cells are genetically identical.",
+   "short": "Two identical diploid daughter cells",
+   "src": "Slide 2"
+  },
+  {
+   "id": "cd-c2",
+   "front": "Meiosis",
+   "back": "Cell division with two rounds of division that generates haploid gametes. The ploidy falls from 2n to n after meiosis I.",
+   "short": "Makes haploid gametes",
+   "src": "Slides 2, 10"
+  },
+  {
+   "id": "cd-c3",
+   "front": "Diploid (2n)",
+   "back": "A cell with two sets of chromosomes, one maternal and one paternal. Most human cells are diploid, with 46 chromosomes.",
+   "short": "Two sets of chromosomes",
+   "src": "Slides 2, 6, 12"
+  },
+  {
+   "id": "cd-c4",
+   "front": "Haploid (n)",
+   "back": "A cell with only one set of chromosomes. In humans n = 23, which matches 22 autosome pairs plus 1 sex chromosome pair in a diploid cell.",
+   "short": "One set of chromosomes (n = 23)",
+   "src": "Slide 2"
+  },
+  {
+   "id": "cd-c5",
+   "front": "Interphase",
+   "back": "The long growth period between cell divisions. It includes the G1, S and G2 phases.",
+   "short": "Long growth period between divisions",
+   "src": "Slide 3"
+  },
+  {
+   "id": "cd-c6",
+   "front": "G1 phase",
+   "back": "Gap 1: the phase that holds most of the cell growth (the primary period of cell growth).",
+   "short": "Gap 1: most cell growth",
+   "src": "Slide 3"
+  },
+  {
+   "id": "cd-c7",
+   "front": "S phase",
+   "back": "Synthesis: DNA replication happens in this phase.",
+   "short": "Synthesis: DNA is replicated",
+   "src": "Slides 3, 7"
+  },
+  {
+   "id": "cd-c8",
+   "front": "G2 phase",
+   "back": "Gap 2: organelles are duplicated and the cell prepares for division.",
+   "short": "Gap 2: organelles duplicate",
+   "src": "Slide 3"
+  },
+  {
+   "id": "cd-c9",
+   "front": "M phase (mitotic phase)",
+   "back": "The phase when the cell divides: mitosis (nuclear division and sharing of DNA) followed by cytokinesis (division of the cytoplasm and organelles), ending in two daughter cells.",
+   "short": "Mitosis plus cytokinesis",
+   "src": "Slide 4"
+  },
+  {
+   "id": "cd-c10",
+   "front": "Length of the cell cycle",
+   "back": "The complete cell cycle takes 18 to 24 hours. Mitosis and cytokinesis together take less than 1 hour.",
+   "short": "18-24 hours; M phase under 1 hour",
+   "src": "Slide 5"
+  },
+  {
+   "id": "cd-c11",
+   "front": "G0 state",
+   "back": "A non-dividing state that many cells enter. It can be temporary or permanent (for example neurons and osteocytes). Some molecules can stimulate G0 cells to re-enter the cell cycle.",
+   "short": "Non-dividing state outside the cycle",
+   "src": "Slide 5"
+  },
+  {
+   "id": "cd-c12",
+   "front": "Chromatin and nucleosome",
+   "back": "Double-stranded DNA wrapped around histone proteins makes a nucleosome. DNA plus protein is chromatin: euchromatin is 'open' and heterochromatin is 'closed'.",
+   "short": "DNA plus histones; open or closed",
+   "src": "Slide 6"
+  },
+  {
+   "id": "cd-c13",
+   "front": "Chromosome in mitosis",
+   "back": "DNA compacted into a visible chromosome during mitosis: one chromatid paired with its duplicate sister chromatid, joined by a centromere. Most human cells have 46 chromosomes.",
+   "short": "Sister chromatids joined at a centromere",
+   "src": "Slide 6"
+  },
+  {
+   "id": "cd-c14",
+   "front": "DNA replication",
+   "back": "In S phase each strand guides a complementary strand by base-pairing: A with T and G with C. DNA polymerase links the new nucleotides, and replication starts at many sites at once.",
+   "short": "A-T, G-C pairing builds new strands",
+   "src": "Slide 7"
+  },
+  {
+   "id": "cd-c15",
+   "front": "Prophase",
+   "back": "Chromatin condenses into chromosomes (sister chromatid pairs joined by a centromere) and a spindle apparatus forms from the centrioles.",
+   "short": "Chromosomes condense; spindle forms",
+   "src": "Slide 8"
+  },
+  {
+   "id": "cd-c16",
+   "front": "Metaphase",
+   "back": "The chromosome pairs align along the equator of the cell.",
+   "short": "Chromosome pairs line up at equator",
+   "src": "Slide 8"
+  },
+  {
+   "id": "cd-c17",
+   "front": "Anaphase",
+   "back": "The chromosome pairs separate. One daughter chromosome from each pair moves to opposite sides of the cell.",
+   "short": "Daughter chromosomes pulled apart",
+   "src": "Slide 8"
+  },
+  {
+   "id": "cd-c18",
+   "front": "Telophase",
+   "back": "The nuclear envelope reforms around the DNA while cytokinesis occurs. A cleavage furrow is visible on the cell.",
+   "short": "Nuclei reform; cleavage furrow appears",
+   "src": "Slide 8"
+  },
+  {
+   "id": "cd-c19",
+   "front": "How meiosis differs from mitosis",
+   "back": "Meiosis follows the same steps as mitosis but has two rounds of division. Homologous chromosomes pair up in prophase I, and the ploidy falls from 2n to n after meiosis I.",
+   "short": "Two rounds, ploidy 2n to n",
+   "src": "Slide 10"
+  },
+  {
+   "id": "cd-c20",
+   "front": "Prophase I",
+   "back": "Homologous chromosomes pair up (synapsis) and crossing-over occurs between non-sister chromatids.",
+   "short": "Homologs pair up, then cross over",
+   "src": "Slides 10, 11"
+  },
+  {
+   "id": "cd-c21",
+   "front": "Crossing-over",
+   "back": "Exchange of genetic material (homologous recombination) between non-sister chromatids at chiasmata. It increases genetic variation in offspring, and errors may occur.",
+   "short": "Swap between non-sister chromatids",
+   "src": "Slide 11"
+  },
+  {
+   "id": "cd-c22",
+   "front": "Anaphase I versus anaphase II",
+   "back": "In anaphase I the homologous pairs separate. In anaphase II the sister chromatids separate.",
+   "short": "Homologs split, then sisters split",
+   "src": "Slide 10"
+  },
+  {
+   "id": "cd-c23",
+   "front": "Euploidy",
+   "back": "The normal chromosome number in humans: body cells are diploid (2n) and gametes (sperm and eggs) are haploid (n).",
+   "short": "Normal diploid or haploid number",
+   "src": "Slide 12"
+  },
+  {
+   "id": "cd-c24",
+   "front": "Non-disjunction",
+   "back": "An error in meiosis where homologous chromosomes or sister chromatids fail to separate. It can produce gametes with an atypical number of chromosomes (aneuploidy).",
+   "short": "Chromosomes fail to separate",
+   "src": "Slide 12"
+  },
+  {
+   "id": "cd-c25",
+   "front": "Trisomy",
+   "back": "Three copies of a chromosome in a cell, the most frequent result of fertilization with an aneuploid gamete. Examples: trisomy 21 (Down), 18 (Edwards), 13 (Patau).",
+   "short": "Three copies of one chromosome",
+   "src": "Slide 12"
+  },
+  {
+   "id": "cd-c26",
+   "front": "Cell cycle checkpoints",
+   "back": "Points where go-ahead signals must be received for the cycle to move into the next phase. Hormones, growth factors and other cells (space) also affect cell reproduction.",
+   "short": "Go-ahead gates between phases",
+   "src": "Slide 13"
+  },
+  {
+   "id": "cd-c27",
+   "front": "Proto-oncogenes",
+   "back": "Genes that typically encode growth or survival proteins. Mutations may increase protein activity (examples: EGFR, YAP1).",
+   "short": "Growth genes; mutation raises activity",
+   "src": "Slide 14"
+  },
+  {
+   "id": "cd-c28",
+   "front": "Tumor suppressor genes",
+   "back": "Genes that typically encode cell cycle-regulator or DNA-repairing proteins. Mutations may reduce or remove protein activity (examples: TP53, BRCA2).",
+   "short": "Regulator genes; mutation lowers activity",
+   "src": "Slide 14"
+  },
+  {
+   "id": "cd-c29",
+   "front": "Cancer progression and metastasis",
+   "back": "Mutations or DNA damage can build up and cause uncontrolled cell proliferation. Stages: hyperplasia (divides faster), dysplasia (cells change form), in situ cancer (cells stay in one place), then a malignant tumor that invades. Metastasis is the breakaway of a diseased cell.",
+   "short": "Faster growth, invasion, metastasis",
+   "src": "Slides 14, 15"
+  },
+  {
+   "id": "cd-c30",
+   "front": "Transcription",
+   "back": "Occurs in the nucleus: DNA sequences (genes; A, T, G, C) are copied into RNA sequences (transcripts; A, U, G, C).",
+   "short": "DNA copied into RNA in nucleus",
+   "src": "Slide 16"
+  },
+  {
+   "id": "cd-c31",
+   "front": "Translation",
+   "back": "Occurs in the cytoplasm: RNA sequences are converted into proteins (polypeptides made of amino acids). Gene expression is the whole process from gene to functional protein.",
+   "short": "RNA converted to protein in cytoplasm",
+   "src": "Slide 16"
+  },
+  {
+   "id": "cd-c32",
+   "front": "Regulating gene expression",
+   "back": "Gene expression can be regulated at the chromatin level (epigenetics, such as histone modifications), by cis- and trans-regulatory elements, by RNA splicing and by post-translational protein modifications.",
+   "short": "Four points of gene control",
+   "src": "Slide 17"
+  },
+  {
+   "id": "cd-c33",
+   "front": "Enhancer",
+   "back": "A non-coding (cis-regulatory) DNA sequence where specific transcription factor proteins bind. It is usually required for expression beyond a basal level and can be nearby or distant from the gene.",
+   "short": "DNA site that transcription factors bind",
+   "src": "Slide 18"
+  },
+  {
+   "id": "cd-c34",
+   "front": "Differential gene expression",
+   "back": "Most cells hold the same DNA, yet different cell types arise because which genes are expressed depends largely on which transcription factors are present in each cell.",
+   "short": "Same DNA, different genes switched on",
+   "src": "Slide 19"
+  },
+  {
+   "id": "cd-c35",
+   "front": "Zona pellucida and acrosome",
+   "back": "The zona pellucida is the extracellular matrix around the oocyte. The sperm head carries an acrosome filled with enzymes that help it penetrate the zona pellucida.",
+   "short": "Egg coat and sperm enzyme cap",
+   "src": "Slide 20"
+  },
+  {
+   "id": "cd-c36",
+   "front": "Steps of fertilization",
+   "back": "The acrosome digests the zona pellucida, the plasma membranes fuse, cortical granules modify the zona pellucida so no other sperm enter, then meiosis II completes and the pronuclei fuse. One sperm and one egg form a zygote in the upper oviduct.",
+   "short": "Four steps from sperm contact to zygote",
+   "src": "Slides 20, 21"
+  },
+  {
+   "id": "cd-c37",
+   "front": "Cleavage and the morula",
+   "back": "The zygote divides several times without cell growth to make a ball of identical cells called a morula. The zona pellucida keeps the embryo from implanting before it reaches the uterus.",
+   "short": "Division without growth makes a morula",
+   "src": "Slide 22"
+  },
+  {
+   "id": "cd-c38",
+   "front": "Blastocyst and implantation",
+   "back": "The blastocyst has an outer trophoblast (forms parts of the placenta) and an inner cell mass (forms the body of the embryo) around a hollow cavity. It implants in the endometrium at about 9 days and forms a bilaminar germ disk.",
+   "short": "Trophoblast, inner cell mass, about day 9",
+   "src": "Slide 23"
+  },
+  {
+   "id": "cd-c39",
+   "front": "Gastrulation",
+   "back": "The process of making the three germ layers (the trilaminar germ disk), by about 14 days and mostly in the third week. Epiblast cells migrate through the primitive streak to form endoderm and mesoderm. The epiblast that does not ingress forms ectoderm.",
+   "short": "Making ectoderm, mesoderm and endoderm",
+   "src": "Slides 24, 25"
+  },
+  {
+   "id": "cd-c40",
+   "front": "Epiblast and hypoblast",
+   "back": "The bilaminar germ disk is made of the epiblast and the hypoblast. The entire body of the embryo comes from the epiblast.",
+   "short": "Epiblast builds the whole body",
+   "src": "Slide 25"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "cd-1",
+   "q": "The figure shows the cell cycle. A drug blocks DNA polymerase, so new DNA strands cannot be built. Where does the cycle stall, and why?",
+   "options": [
+    "In G1, because DNA is copied during the main period of growth",
+    "In S phase, because DNA is replicated there",
+    "In G2, because organelles and DNA are both copied there",
+    "In the M phase, because DNA is divided between daughter cells there",
+    "In G0, because DNA is replicated during the non-dividing state"
+   ],
+   "answer": 1,
+   "why": "DNA replication is the job of S (synthesis) phase, and DNA polymerase is the enzyme that links the new nucleotides. G1 is mostly cell growth and G2 is organelle duplication.",
+   "source": "Slides 3, 7",
+   "img": {
+    "src": "img/cellgrowth/cycle_3.webp",
+    "alt": "The cell cycle drawn as a wheel with G1, S, G2 and a thin M phase wedge, and a separate G0 cell outside the wheel."
+   }
+  },
+  {
+   "id": "cd-2",
+   "q": "Consider these statements about interphase.\nI. It is a long growth period between cell divisions.\nII. DNA replication takes place in G2.\nIII. Organelle duplication takes place in G2.\nWhich is correct?",
+   "options": [
+    "I only",
+    "I and III only",
+    "II and III only",
+    "I, II and III",
+    "none of the statements"
+   ],
+   "answer": 1,
+   "why": "Interphase is a long growth period between divisions, so I is true. DNA replication belongs to S phase, so II is false. Organelles are duplicated in G2, so III is true.",
+   "source": "Slide 3"
+  },
+  {
+   "id": "cd-3",
+   "q": "A cell cycle takes 18 to 24 hours, and mitosis plus cytokinesis take less than 1 hour. You photograph a large culture of cycling cells at one random moment. What will you most likely see?",
+   "options": [
+    "Most cells in prophase, because it is the longest stage",
+    "Equal numbers of cells in every phase of the cycle",
+    "Most cells in cytokinesis, because it finishes the cycle",
+    "Most cells in interphase and only a few in mitosis",
+    "Most cells in G0, because G0 follows every division"
+   ],
+   "answer": 3,
+   "why": "The M phase lasts under 1 hour out of 18 to 24 hours. Even for the shortest cycle (18 hours) more than 17 of the 18 hours, about 94 percent, is interphase. So a random snapshot mostly catches cells in interphase.",
+   "source": "Slides 3-5 (simple arithmetic)"
+  },
+  {
+   "id": "cd-4",
+   "q": "Which statement about the G0 state is INCORRECT?",
+   "options": [
+    "G0 is a non-dividing state.",
+    "G0 can be temporary or permanent.",
+    "Neurons and osteocytes are examples of cells in G0.",
+    "Some molecules can stimulate G0 cells to re-enter the cell cycle.",
+    "Every cell in G0 has permanently left the cell cycle and can never divide again."
+   ],
+   "answer": 4,
+   "why": "G0 can be temporary, and some molecules can push G0 cells back into the cycle. So it is not true that every G0 cell has permanently left.",
+   "source": "Slide 5"
+  },
+  {
+   "id": "cd-5",
+   "q": "Which event occurs in telophase of mitosis?",
+   "options": [
+    "The spindle apparatus forms from the centrioles",
+    "Chromosome pairs align along the equator of the cell",
+    "The nuclear envelope reforms around the DNA while cytokinesis occurs",
+    "One daughter chromosome from each pair moves to opposite sides of the cell",
+    "Chromatin condenses into chromosomes joined by a centromere"
+   ],
+   "answer": 2,
+   "why": "Spindle formation and chromatin condensing are prophase, alignment is metaphase and separation is anaphase. Telophase is the last stage: the nuclear envelope reforms and a cleavage furrow shows cytokinesis.",
+   "source": "Slides 8, 9"
+  },
+  {
+   "id": "cd-6",
+   "q": "Why must S phase finish before mitosis begins?",
+   "options": [
+    "Mitosis shares the DNA between two daughter cells, so the DNA must already be duplicated",
+    "S phase is when the cell divides, so mitosis would have nothing to do without it",
+    "Mitosis duplicates the organelles, so S phase must first finish copying the cytoplasm",
+    "G0 must come before mitosis to give the cell time to rest",
+    "The cell must first reduce its ploidy from 2n to n, which S phase does"
+   ],
+   "answer": 0,
+   "why": "S phase is when DNA is replicated. Mitosis then distributes the DNA between genetically identical daughter cells, so each chromosome must already be copied into two sister chromatids.",
+   "source": "Slides 3, 4, 7, 8"
+  },
+  {
+   "id": "cd-7",
+   "q": "One DNA strand reads A-A-G-C-T-C. Using the base-pairing rules, which new strand is built along it?",
+   "options": [
+    "U-U-C-G-A-G",
+    "A-A-G-C-T-C",
+    "T-T-G-C-A-C",
+    "T-T-C-G-A-G",
+    "C-C-T-A-G-A"
+   ],
+   "answer": 3,
+   "why": "A pairs with T and G pairs with C, so A-A-G-C-T-C is matched by T-T-C-G-A-G. U belongs to RNA, not DNA.",
+   "source": "Slides 7, 16"
+  },
+  {
+   "id": "cd-8",
+   "q": "A human cell has 46 chromosomes before S phase. After S phase each chromosome is a pair of sister chromatids joined by a centromere. How many sister chromatids does the cell contain in prophase?",
+   "options": [
+    "23",
+    "46",
+    "92",
+    "138",
+    "184"
+   ],
+   "answer": 2,
+   "why": "Each of the 46 chromosomes is now two sister chromatids: 46 x 2 = 92 chromatids.",
+   "source": "Slides 6, 8 (simple arithmetic)"
+  },
+  {
+   "id": "cd-9",
+   "q": "Consider these statements.\nI. Mitosis generates two genetically identical diploid daughter cells.\nII. Meiosis includes two rounds of division.\nIII. Meiosis leaves each daughter cell diploid (2n).\nWhich is correct?",
+   "options": [
+    "I and II only",
+    "I only",
+    "II only",
+    "I and III only",
+    "I, II and III"
+   ],
+   "answer": 0,
+   "why": "Statements I and II are true. Meiosis reduces the ploidy from 2n to n, so its daughter cells are haploid and III is false.",
+   "source": "Slides 2, 10"
+  },
+  {
+   "id": "cd-10",
+   "q": "The figure shows meiosis I. How do the daughter cells at the end compare with the cell that started meiosis?",
+   "options": [
+    "Each has half the chromosome number (haploid), and each chromosome still has two sister chromatids",
+    "Each has the same chromosome number (diploid), but each chromosome now has only one chromatid",
+    "Each has half the chromosome number, and the sister chromatids have already separated",
+    "Each has the same chromosome number and the homologous pairs are still together",
+    "Each has twice the chromosome number because the DNA was replicated"
+   ],
+   "answer": 0,
+   "why": "Anaphase I separates the homologous pairs, so the ploidy falls from 2n to n. The sister chromatids stay joined until anaphase II.",
+   "source": "Slide 10 (figure labels)",
+   "img": {
+    "src": "img/cellgrowth/meiosis1_10.webp",
+    "alt": "Meiosis I drawn as a vertical series of cells from prophase I to two daughter cells, with homologous pairs lining up and separating."
+   }
+  },
+  {
+   "id": "cd-11",
+   "q": "Which pair of events happens in prophase I of meiosis?",
+   "options": [
+    "Sister chromatids separate and nuclei reform",
+    "Chromosome pairs align along the equator of the cell",
+    "Homologous pairs separate and the cell becomes haploid",
+    "The cell divides its cytoplasm and forms four haploid cells",
+    "Homologous chromosomes pair up (synapsis) and crossing-over occurs between non-sister chromatids"
+   ],
+   "answer": 4,
+   "why": "Pairing of homologous chromosomes (synapsis) and crossing-over are prophase I events. Alignment is metaphase, separation of homologous pairs is anaphase I and sister chromatids separate in anaphase II.",
+   "source": "Slides 10, 11"
+  },
+  {
+   "id": "cd-12",
+   "q": "Which statement about crossing-over is INCORRECT?",
+   "options": [
+    "It exchanges genetic material between non-sister chromatids.",
+    "It exchanges genetic material between the two sister chromatids of the same chromosome.",
+    "It takes place at points called chiasmata.",
+    "It increases genetic variation in offspring.",
+    "Errors may occur during it."
+   ],
+   "answer": 1,
+   "why": "Crossing-over exchanges material between NON-sister chromatids of homologous chromosomes, not between sister chromatids.",
+   "source": "Slide 11"
+  },
+  {
+   "id": "cd-13",
+   "q": "Why does crossing-over make offspring more genetically varied?",
+   "options": [
+    "It increases the number of chromosomes in each gamete",
+    "It makes both daughter cells identical copies of the parent cell",
+    "It swaps genetic material between maternal and paternal chromatids, so the chromatids carry new combinations",
+    "It stops sister chromatids from separating in anaphase II",
+    "It copies each chromosome twice so every gamete is diploid"
+   ],
+   "answer": 2,
+   "why": "Crossing-over exchanges genetic material (homologous recombination) between non-sister chromatids of the maternal and paternal chromosomes. Each chromatid becomes a mix, which increases genetic variation.",
+   "source": "Slide 11 (mixing explanation is short glue, outside source)"
+  },
+  {
+   "id": "cd-14",
+   "q": "Non-disjunction in meiosis gives a sperm with two copies of chromosome 21. It fertilizes a normal egg. What results?",
+   "options": [
+    "A zygote with three copies of chromosome 21 (trisomy 21, Down syndrome)",
+    "A zygote with one copy of chromosome 21",
+    "A normal euploid zygote, because the egg corrects the extra copy",
+    "A zygote with three copies of every chromosome",
+    "A zygote with two copies of chromosome 21, because fertilization removes extras"
+   ],
+   "answer": 0,
+   "why": "The egg brings 1 copy and the sperm brings 2, so the zygote has 3 copies of chromosome 21. This is trisomy 21. The other chromosomes stay at 2 copies.",
+   "source": "Slide 12"
+  },
+  {
+   "id": "cd-15",
+   "q": "A person with trisomy 21 has how many chromosomes in a typical body cell?",
+   "options": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "92"
+   ],
+   "answer": 2,
+   "why": "Trisomy means 3 copies of one chromosome. The normal 46 plus 1 extra copy of chromosome 21 gives 47.",
+   "source": "Slides 6, 12 (simple arithmetic)"
+  },
+  {
+   "id": "cd-16",
+   "q": "The figure marks checkpoints in the cell cycle. What happens at a checkpoint if the 'go-ahead' signal is not received?",
+   "options": [
+    "The cell moves straight into the next phase anyway",
+    "The cell switches from mitosis to meiosis",
+    "The checkpoint signals are only needed in G0 cells",
+    "The cycle does not progress to the next phase",
+    "The cell cycle speeds up"
+   ],
+   "answer": 3,
+   "why": "Go-ahead signals must be received for the cycle to progress through the next phase. Without the signal the cycle does not move on.",
+   "source": "Slide 13",
+   "img": {
+    "src": "img/cellgrowth/checkpoints_13.webp",
+    "alt": "The cell cycle wheel with three red gates marked G1 checkpoint, G2 checkpoint and M checkpoint."
+   }
+  },
+  {
+   "id": "cd-17",
+   "q": "Consider these statements about genes and cancer.\nI. Mutations in proto-oncogenes may increase the activity of growth or survival proteins.\nII. Mutations in tumor suppressor genes may reduce or remove the activity of cell cycle-regulator or DNA-repairing proteins.\nIII. Tumor suppressor genes typically encode growth or survival proteins.\nWhich is correct?",
+   "options": [
+    "III only",
+    "I and III only",
+    "II and III only",
+    "I, II and III",
+    "I and II only"
+   ],
+   "answer": 4,
+   "why": "Statements I and II are correct. Growth or survival proteins are encoded by proto-oncogenes, not by tumor suppressor genes, so III is false.",
+   "source": "Slide 14"
+  },
+  {
+   "id": "cd-18",
+   "q": "A mutation removes the activity of a tumor suppressor gene such as TP53. Why can this lead to uncontrolled cell division?",
+   "options": [
+    "The protein it encodes becomes overactive and over-stimulates cell growth",
+    "The cell loses a regulator of the cell cycle or of DNA repair, so mutations and damage can build up unchecked",
+    "The mutation makes the cell enter meiosis instead of mitosis",
+    "The cell becomes haploid and divides without checkpoints",
+    "The cell is moved permanently into the non-dividing G0 state"
+   ],
+   "answer": 1,
+   "why": "Tumor suppressor genes typically encode cell cycle-regulator or DNA-repairing proteins. Losing their activity removes control or repair, and an accumulation of mutations or damage can lead to uncontrolled proliferation. An overactive growth protein describes a proto-oncogene instead.",
+   "source": "Slide 14"
+  },
+  {
+   "id": "cd-19",
+   "q": "In the figure, what separates the malignant tumour (right side) from the in situ cancer next to it?",
+   "options": [
+    "Its cells stay in one place, while the in situ cancer cells invade the blood",
+    "It is made only of normal-looking epithelial cells",
+    "Only the in situ cancer begins with a genetically altered cell",
+    "It is separated from the blood vessel and cannot spread",
+    "Its cells invade the surrounding tissue, enter blood and lymph, and may form metastases"
+   ],
+   "answer": 4,
+   "why": "In situ cancer cells stay in one place. In a malignant tumour (cancer) the cells invade surrounding tissue and enter blood and lymph, and metastases may form at distant sites.",
+   "source": "Slide 15",
+   "img": {
+    "src": "img/cellgrowth/tumour_15.webp",
+    "alt": "Cross-section of tissue showing cells progressing from hyperplasia to dysplasia, in situ cancer, an invading malignant tumour and metastases near a blood vessel."
+   }
+  },
+  {
+   "id": "cd-20",
+   "q": "Which statement correctly describes translation?",
+   "options": [
+    "It occurs in the nucleus, where DNA sequences are copied into RNA",
+    "It occurs in the cytoplasm, where DNA sequences are copied into RNA",
+    "It occurs in the cytoplasm, where RNA sequences are converted into proteins (polypeptides)",
+    "It occurs in the nucleus, where RNA sequences are converted into proteins",
+    "It occurs in the nucleus, where proteins are copied into DNA"
+   ],
+   "answer": 2,
+   "why": "Translation happens in the cytoplasm and converts RNA sequences into proteins. Copying DNA into RNA is transcription, which occurs in the nucleus.",
+   "source": "Slide 16"
+  },
+  {
+   "id": "cd-21",
+   "q": "Which of the following is NOT listed as a point where gene expression can be regulated?",
+   "options": [
+    "DNA replication during S phase",
+    "At the chromatin level (epigenetics)",
+    "Cis- and trans-regulatory elements",
+    "RNA splicing",
+    "Post-translational protein modifications"
+   ],
+   "answer": 0,
+   "why": "Gene expression can be regulated at the chromatin level, by cis- and trans-regulatory elements, by RNA splicing and by post-translational protein modifications. DNA replication in S phase is not one of these control points.",
+   "source": "Slide 17"
+  },
+  {
+   "id": "cd-22",
+   "q": "According to the figure, what allows transcription to start at the promoter?",
+   "options": [
+    "The enhancer sequence on its own switches the gene on without any proteins",
+    "RNA polymerase at the promoter is enough by itself",
+    "The enhancer must sit right next to the promoter, never far away",
+    "Chemical changes made to the protein after translation",
+    "A particular set of transcription factors bridges the enhancer region and the promoter region"
+   ],
+   "answer": 4,
+   "why": "The figure shows no transcription until a set of transcription factors bridges the enhancer and the promoter. Enhancers can be nearby or distant, and protein modifications after translation act later.",
+   "source": "Slide 18",
+   "img": {
+    "src": "img/cellgrowth/enhancer_18.webp",
+    "alt": "An enhancer and a promoter on DNA, first with no transcription and then looped together by transcription factors and RNA polymerase so transcription starts."
+   }
+  },
+  {
+   "id": "cd-23",
+   "q": "A brain cell and a limb cell from the same person contain the same genes but are different cell types. What is the most likely reason?",
+   "options": [
+    "The brain cell has lost the genes that the limb cell uses",
+    "The two cells contain different DNA sequences",
+    "The limb cell is haploid and the brain cell is diploid",
+    "Each cell has a different mix of transcription factors, so different genes are switched on",
+    "Transcription only occurs in brain cells"
+   ],
+   "answer": 3,
+   "why": "Most cells hold the same DNA and genes. Cell types differ through differential gene expression, which largely depends on which transcription factors are present.",
+   "source": "Slides 18, 19"
+  },
+  {
+   "id": "cd-24",
+   "q": "Which sequence of events in fertilization is correct?",
+   "options": [
+    "Plasma membranes fuse, acrosome digests the zona pellucida, cortical granules modify the zona pellucida, pronuclei fuse",
+    "Acrosome digests the zona pellucida, plasma membranes fuse, cortical granules modify the zona pellucida, pronuclei fuse",
+    "Acrosome digests the zona pellucida, cortical granules modify the zona pellucida, plasma membranes fuse, pronuclei fuse",
+    "Pronuclei fuse, acrosome digests the zona pellucida, plasma membranes fuse, cortical granules modify the zona pellucida",
+    "Cortical granules modify the zona pellucida, acrosome digests the zona pellucida, plasma membranes fuse, pronuclei fuse"
+   ],
+   "answer": 1,
+   "why": "First the acrosome enzymes digest a path through the zona pellucida, then the membranes fuse. The cortical granules then change the zona pellucida so no other sperm enter. Meiosis II completes and the pronuclei fuse last.",
+   "source": "Slide 21"
+  },
+  {
+   "id": "cd-25",
+   "q": "Consider these statements about fertilization.\nI. The oocyte is arrested in meiosis II before a sperm fuses with it.\nII. Meiosis II is completed after sperm fusion.\nIII. Fertilization occurs in the lower uterus.\nWhich is correct?",
+   "options": [
+    "II only",
+    "III only",
+    "I and III only",
+    "I and II only",
+    "I, II and III"
+   ],
+   "answer": 3,
+   "why": "The oocyte is arrested in meiosis II and meiosis resumes and completes after the sperm fuses, so I and II are true. Fertilization occurs in the upper oviduct, so III is false.",
+   "source": "Slides 20, 21"
+  },
+  {
+   "id": "cd-26",
+   "q": "Why does the egg release the contents of its cortical granules right after the membranes fuse?",
+   "options": [
+    "The enzymes modify the zona pellucida so that other sperm cannot penetrate it",
+    "The enzymes digest the zona pellucida so the first sperm can enter",
+    "The enzymes finish meiosis I",
+    "The enzymes fuse the two pronuclei into one",
+    "The enzymes help the blastocyst implant in the endometrium"
+   ],
+   "answer": 0,
+   "why": "Cortical granule enzymes make the zona pellucida impenetrable to other sperm, so one sperm fertilizes one egg. The acrosome of the sperm, not the egg, digests the zona pellucida.",
+   "source": "Slide 21"
+  },
+  {
+   "id": "cd-27",
+   "q": "The last stage in the figure is a hollow ball with an outer layer and an inner cell mass. What will each part form?",
+   "options": [
+    "The outer trophoblast forms the body of the embryo and the inner cell mass forms parts of the placenta",
+    "Both parts form the placenta",
+    "The outer trophoblast forms parts of the placenta and the inner cell mass forms the body of the embryo",
+    "Both parts form the zona pellucida",
+    "The outer trophoblast forms the zygote and the inner cell mass forms the morula"
+   ],
+   "answer": 2,
+   "why": "The blastocyst has an external trophoblast layer that will form parts of the placenta and an inner cell mass that will form the body of the embryo.",
+   "source": "Slides 22, 23",
+   "img": {
+    "src": "img/cellgrowth/cleavage_22.webp",
+    "alt": "A zygote dividing as it travels down the oviduct to the uterus, becoming a morula and then a blastocyst with an inner cell mass and trophoblast."
+   }
+  },
+  {
+   "id": "cd-28",
+   "q": "What would you expect if an early embryo lost its zona pellucida while still in the oviduct?",
+   "options": [
+    "It would stop dividing, because the zona pellucida supplies cell growth",
+    "It would skip the morula stage and become a trilaminar disk",
+    "It would turn into a morula without ever forming a blastocyst",
+    "It could implant before it reaches the uterus",
+    "Its cells would become haploid"
+   ],
+   "answer": 3,
+   "why": "The zona pellucida keeps the embryo from implanting before it reaches the uterus. Without it, early implantation becomes possible.",
+   "source": "Slide 22"
+  },
+  {
+   "id": "cd-29",
+   "q": "A researcher stops epiblast cells from migrating through the primitive streak. Which germ layers can NOT form normally?",
+   "options": [
+    "Ectoderm only",
+    "Ectoderm and mesoderm",
+    "Ectoderm and endoderm",
+    "None, because the hypoblast makes all three layers",
+    "Endoderm and mesoderm"
+   ],
+   "answer": 4,
+   "why": "Epiblast cells that migrate through the primitive streak form the endoderm and mesoderm. The part of the epiblast that does not ingress forms the ectoderm, so only the endoderm and mesoderm are lost.",
+   "source": "Slide 25"
+  },
+  {
+   "id": "cd-30",
+   "q": "Which list shows early human development in the correct order, from earliest to latest?",
+   "options": [
+    "Zygote, blastocyst, morula, bilaminar germ disk, trilaminar germ disk",
+    "Zygote, morula, blastocyst, bilaminar germ disk, trilaminar germ disk",
+    "Zygote, morula, blastocyst, trilaminar germ disk, bilaminar germ disk",
+    "Morula, zygote, blastocyst, bilaminar germ disk, trilaminar germ disk",
+    "Zygote, morula, bilaminar germ disk, blastocyst, trilaminar germ disk"
+   ],
+   "answer": 1,
+   "why": "Cleavage turns the zygote into a morula, which becomes a blastocyst. The blastocyst implants and forms a two-layered disk (about 9 days), and by about 14 days gastrulation has made the three-layered disk.",
+   "source": "Slides 22-24"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "The cell cycle in order",
+   "prompt": "Put the stages in the order a dividing cell goes through them, starting with G1.",
+   "why": "G1 holds most of the growth, then S phase copies the DNA and G2 duplicates organelles. In the M phase the nucleus divides (mitosis) and the cytoplasm divides (cytokinesis), ending in two daughter cells.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "G1: most of the cell growth",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "S: DNA is replicated",
+     "color": "#0e7490"
+    },
+    {
+     "name": "G2: organelles are duplicated",
+     "color": "#15803d"
+    },
+    {
+     "name": "Mitosis: the nucleus divides",
+     "color": "#b45309"
+    },
+    {
+     "name": "Cytokinesis: the cytoplasm divides",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Stages of mitosis",
+   "prompt": "Put these events in the order they happen during mitosis.",
+   "why": "Chromosomes condense and the spindle forms (prophase), the pairs line up at the equator (metaphase), the daughter chromosomes are pulled apart (anaphase) and the nuclear envelope reforms as the cell splits (telophase). The result is two genetically identical diploid cells.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Prophase: chromosomes condense, spindle forms",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Metaphase: chromosome pairs line up at the equator",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Anaphase: daughter chromosomes move to opposite sides",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Telophase: nuclear envelope reforms",
+     "color": "#15803d"
+    },
+    {
+     "name": "Two genetically identical diploid cells",
+     "color": "#b45309"
+    }
+   ]
+  },
+  {
+   "title": "Fertilization step by step",
+   "prompt": "Order the events of fertilization from the first contact to the zygote.",
+   "why": "The acrosome enzymes digest a path through the zona pellucida, the sperm and egg membranes fuse, and the cortical granules then change the zona pellucida so no other sperm enter. Finally meiosis II completes and the pronuclei fuse to make the zygote.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Acrosome enzymes digest the zona pellucida",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Sperm and oocyte plasma membranes fuse",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Cortical granules make the zona pellucida impenetrable",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Meiosis II completes",
+     "color": "#15803d"
+    },
+    {
+     "name": "Gamete pronuclei fuse to form the zygote",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "From zygote to three layers",
+   "prompt": "Order these stages of early human development from earliest to latest.",
+   "why": "Cleavage turns the zygote into a morula, and differentiation then makes a blastocyst. The blastocyst implants and forms a two-layered disk at about 9 days. Gastrulation makes the three-layered disk by about 14 days.",
+   "topLabel": "Latest",
+   "bottomLabel": "Earliest",
+   "layers": [
+    {
+     "name": "Zygote",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Morula: a ball of identical cells",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Blastocyst: trophoblast and inner cell mass",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Bilaminar germ disk (about 9 days)",
+     "color": "#15803d"
+    },
+    {
+     "name": "Trilaminar germ disk (about 14 days)",
+     "color": "#b91c1c"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Mitosis, meiosis or both?",
+   "prompt": "Sort each feature into mitosis only, meiosis only, or both.",
+   "buckets": [
+    "Mitosis only",
+    "Meiosis only",
+    "Both"
+   ],
+   "items": [
+    {
+     "text": "Makes two genetically identical daughter cells",
+     "b": 0
+    },
+    {
+     "text": "Daughter cells stay diploid (2n)",
+     "b": 0
+    },
+    {
+     "text": "One round of division",
+     "b": 0
+    },
+    {
+     "text": "Two rounds of division",
+     "b": 1
+    },
+    {
+     "text": "Homologous chromosomes pair up in prophase I",
+     "b": 1
+    },
+    {
+     "text": "Crossing-over between non-sister chromatids",
+     "b": 1
+    },
+    {
+     "text": "Ploidy falls from 2n to n",
+     "b": 1
+    },
+    {
+     "text": "Makes haploid gametes",
+     "b": 1
+    },
+    {
+     "text": "Goes through prophase, metaphase, anaphase and telophase",
+     "b": 2
+    },
+    {
+     "text": "A spindle apparatus forms",
+     "b": 2
+    },
+    {
+     "text": "Chromosomes line up along the equator",
+     "b": 2
+    },
+    {
+     "text": "Sister chromatids are joined by a centromere",
+     "b": 2
+    }
+   ],
+   "why": "Mitosis is one round that keeps the cells diploid and identical. Meiosis has two rounds, pairs homologous chromosomes, crosses over and halves the ploidy. Both use the same four stages, a spindle and an equator lineup."
+  },
+  {
+   "title": "Proto-oncogene or tumor suppressor gene?",
+   "prompt": "Sort each fact by the type of gene it describes.",
+   "buckets": [
+    "Proto-oncogene",
+    "Tumor suppressor gene"
+   ],
+   "items": [
+    {
+     "text": "Typically encodes growth or survival proteins",
+     "b": 0
+    },
+    {
+     "text": "Mutation may increase protein activity",
+     "b": 0
+    },
+    {
+     "text": "EGFR",
+     "b": 0
+    },
+    {
+     "text": "YAP1",
+     "b": 0
+    },
+    {
+     "text": "Typically encodes cell cycle-regulator proteins",
+     "b": 1
+    },
+    {
+     "text": "Typically encodes DNA-repairing proteins",
+     "b": 1
+    },
+    {
+     "text": "Mutation may reduce or remove protein activity",
+     "b": 1
+    },
+    {
+     "text": "TP53",
+     "b": 1
+    },
+    {
+     "text": "BRCA2",
+     "b": 1
+    }
+   ],
+   "why": "Proto-oncogenes make growth or survival proteins, and mutations raise their activity (EGFR, YAP1). Tumor suppressor genes make cell cycle-regulator or DNA-repair proteins, and mutations lower or remove their activity (TP53, BRCA2)."
+  },
+  {
+   "title": "Which early development step?",
+   "prompt": "Sort each event into fertilization, cleavage or gastrulation.",
+   "buckets": [
+    "Fertilization",
+    "Cleavage",
+    "Gastrulation"
+   ],
+   "items": [
+    {
+     "text": "Acrosome digests the zona pellucida",
+     "b": 0
+    },
+    {
+     "text": "Cortical granules block other sperm",
+     "b": 0
+    },
+    {
+     "text": "Gamete pronuclei fuse",
+     "b": 0
+    },
+    {
+     "text": "Meiosis II completes",
+     "b": 0
+    },
+    {
+     "text": "Divides with no cell growth",
+     "b": 1
+    },
+    {
+     "text": "Makes a ball of identical cells (the morula)",
+     "b": 1
+    },
+    {
+     "text": "Positional cues start differentiation toward a blastocyst",
+     "b": 1
+    },
+    {
+     "text": "Epiblast cells move through the primitive streak",
+     "b": 2
+    },
+    {
+     "text": "Endoderm and mesoderm form",
+     "b": 2
+    },
+    {
+     "text": "The bilaminar disk becomes a trilaminar disk",
+     "b": 2
+    },
+    {
+     "text": "Mostly happens in the third week",
+     "b": 2
+    }
+   ],
+   "why": "Fertilization is sperm and egg joining into a zygote. Cleavage is division without growth that makes the morula and then the blastocyst. Gastrulation turns the two-layered disk into three germ layers."
+  }
+ ]
+}
