@@ -4,7 +4,8 @@ import { viewAdmin as adminView } from "./admin.js";
 import { viewWorkspace, workspaceLabel } from "./staff.js";
 import * as Demo from "./demo.js";
 import { challengeBody, enrollBody, mfaCard } from "./mfa.js";
-import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp } from "./ui.js";
+import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp, pic } from "./ui.js";
+import { buildExtras } from "./classcontent.js";
 
 // This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
 if (window.top !== window.self) { document.documentElement.style.display = "none"; try { window.top.location.href = window.self.location.href; } catch {} }
@@ -21,6 +22,9 @@ function setA11y(patch) { try { localStorage.setItem(A11Y_KEY, JSON.stringify({ 
 const app = $("#app");
 let LECS = [];
 let SUBJECTS = [];
+let MAN = {};                                  // the course lectures' skeletons (content/manifest.json)
+let EXTRA = { lectures: [], extra: {}, announcements: [] }; // what instructors added to the person's classes
+let builtVersion = -1, builtDrafts = null;
 const EXAMS = {};
 const CLASS_COLORS = { erth209: "#2a9d8f", astr207: "#6c5ce7" };
 const PALETTES = {
@@ -37,6 +41,26 @@ const open_ = () => LECS.filter((l) => S.hasAccess(l.subject));
 const gamesFor = (x) => [...new Set([...DEFAULT_GAMES, ...(x.games || []), (Array.isArray(x.order) ? x.order.length : x.order) && "order", (Array.isArray(x.sort) ? x.sort.length : x.sort) && "sort", (Array.isArray(x.calc) ? x.calc.length : x.calc) && "calc"].filter(Boolean))];
 // a light "skeleton" (ids and counts only) is enough for class and lecture lists and for progress percentages
 const skeleton = (m, subject) => ({ id: m.id, title: m.title, chapter: m.chapter, icon: m.icon, subject, sections: m.sections.map((id) => ({ id })), cards: m.cards.map((id) => ({ id })), quiz: m.quiz.map((id) => ({ id })), games: gamesFor(m), _full: false });
+// What instructors added to a course lecture is kept apart from the course's own arrays (_base) so it can be rebuilt at any time.
+// Lecture lists only need ids and counts until the lecture is opened.
+function applyExtras(l) {
+  const e = EXTRA.extra[l.id] || { sections: [], cards: [], quiz: [] };
+  if (!l._base) l._base = { sections: l.sections, cards: l.cards, quiz: l.quiz };
+  const part = (a) => (l._full ? a : a.map((x) => ({ id: x.id })));
+  l.sections = [...l._base.sections, ...part(e.sections)]; l.cards = [...l._base.cards, ...part(e.cards)]; l.quiz = [...l._base.quiz, ...part(e.quiz)];
+}
+const classRows = () => (S.DEMO ? Demo.classRows() : S.classes);
+const wantDrafts = () => S.isStaff() && !S.pref("student"); // instructors see their own unpublished items too, marked as drafts
+function buildLecs() {
+  builtVersion = S.itemsVersion; builtDrafts = wantDrafts();
+  EXTRA = buildExtras(S.classItems, classRows(), { showDrafts: builtDrafts, today: new Date().toISOString().slice(0, 10) });
+  const keep = new Map(LECS.filter((l) => !l.custom).map((l) => [l.id, l]));
+  const base = SUBJECTS.flatMap((sj) => sj.lectures.map((id) => keep.get(id) || (MAN[id] ? skeleton(MAN[id], sj.id) : null))).filter(Boolean);
+  const n = {}, color = (l) => { const pal = PALETTES[l.subject] || ["#0d3b66"]; n[l.subject] = n[l.subject] || 0; return pal[n[l.subject]++ % pal.length]; };
+  base.forEach((l) => { l.color = color(l); applyExtras(l); });
+  EXTRA.lectures.forEach((l) => { l.color = color(l); });
+  LECS = [...base, ...EXTRA.lectures];
+}
 const inflight = {};
 const getJson = async (url) => { const r = await fetch(url); if (!r.ok) throw new Error(r.status); return r.json(); };
 async function loadFull(l) {
@@ -46,6 +70,7 @@ async function loadFull(l) {
     // local previews and the first rollout fall back to the published files
     const full = (S.DEMO ? null : await S.dbLecture(l.id)) || (await getJson("content/" + l.id + ".json"));
     const { subject, color } = l; Object.assign(l, full, { subject, color, _full: true }); l.cards ||= []; l.games = gamesFor(full);
+    l._base = { sections: l.sections, cards: l.cards, quiz: l.quiz }; applyExtras(l);
   })();
   try { await inflight[l.id]; } finally { delete inflight[l.id]; }
 }
@@ -68,11 +93,10 @@ async function boot() {
   if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
   await S.initBackend();
   const [subs, man] = await Promise.all([fetch("content/subjects.json").then((r) => r.json()), fetch("content/manifest.json").then((r) => r.json())]);
-  SUBJECTS = subs;
-  LECS = SUBJECTS.flatMap((sj) => sj.lectures.map((id) => (man[id] ? skeleton(man[id], sj.id) : null))).filter(Boolean);
+  SUBJECTS = subs; MAN = man;
   SUBJECTS.forEach((sj) => (sj.color = CLASS_COLORS[sj.id] || "#0d3b66"));
-  const nth = {};
-  LECS.forEach((l) => { const pal = PALETTES[l.subject] || ["#0d3b66"]; nth[l.subject] = nth[l.subject] || 0; l.color = pal[nth[l.subject]++ % pal.length]; });
+  if (S.DEMO) { S.setDemoContent(() => Demo.items(), (p) => Demo.media(p)); await S.loadClassItems(); }
+  buildLecs();
   S.onChange(checkMilestones);
   S.setSummaryProvider(classSummaries);
   watchIdle();
@@ -135,6 +159,7 @@ async function route() {
   if (g === "blocked") return viewBlocked();
   if (g === "mfa") return viewMfa();
   const claimed = S.takeInvitesClaimed(); if (claimed) toast("Your invite was accepted. Your Workspace tab is ready.");
+  if (builtVersion !== S.itemsVersion || builtDrafts !== wantDrafts()) buildLecs(); // classes or their content changed since the lists were built
   const page = parts[0] || "", need = [];
   if (page === "l") { const lx = LECS.find((z) => z.id === parts[1]); if (lx && S.hasAccess(lx.subject)) need.push(lx); }
   else if (["cards", "practice", "progress", "search", "glossary"].includes(page)) need.push(...pool_());
@@ -185,7 +210,7 @@ function shell(parts) {
   if (page === "cards") return viewAllCards(v, parts[1]);
   if (page === "practice") return viewPractice(v);
   if (page === "progress") return viewProgress(v);
-  if (page === "work" && staff) return viewWorkspace(v, { LECS, SUBJECTS, EXAMS, route, ensureCourse }, parts);
+  if (page === "work" && staff) return viewWorkspace(v, { LECS, SUBJECTS, EXAMS, route, ensureCourse, refreshExtras: () => S.loadClassItems() }, parts);
   if (page === "admin" && staff) return adminView(v, { LECS, SUBJECTS, route }); // legacy
   viewHome(v);
 }
@@ -395,6 +420,14 @@ function ring(pct, color) {
 }
 // "Alpha University · ASTR 207 Section 1" for a course the student joined through a class
 const classLine = (courseId) => { const k = S.classes.find((c) => c.course_id === courseId && c.role === "student") || S.classes.find((c) => c.course_id === courseId); return k && k.school_name ? `${k.school_name} · ${k.name}` : ""; };
+// notes from the instructors of the person's classes (newest first)
+function announcementsCard(courseId) {
+  const rows = classRows(), list = EXTRA.announcements.filter((a) => !courseId || rows.find((c) => c.class_id === a.classId)?.course_id === courseId).slice(0, 3);
+  if (!list.length) return "";
+  return h(".card.ann", { style: "margin-bottom:12px;border-left:6px solid var(--sun)" }, h("b", { style: "display:flex;gap:8px;align-items:center" }, ic("bell", 16), list.length === 1 ? "From your instructor" : "From your instructors"),
+    list.map((a) => h("div", { style: "margin-top:8px" }, h("b", md(a.title)), a.draft ? h("span.pill.bad", { style: "margin-left:8px" }, "Draft") : "", a.text ? h("p", { style: "margin:2px 0 0" }, md(a.text)) : "",
+      h(".src", { style: "margin:2px 0 0" }, [a.by, a.at ? new Date(a.at).toLocaleDateString([], { month: "short", day: "numeric" }) : "", rows.filter((c) => c.role !== "manager").length > 1 ? a.className : ""].filter(Boolean).join(" · ")))));
+}
 function subjectStats(sj) {
   const ls = LECS.filter((l) => l.subject === sj.id);
   return { n: ls.length, pct: ls.length ? Math.round(ls.reduce((t, l) => t + S.lectureStats(l).pct, 0) / ls.length) : 0 };
@@ -436,6 +469,7 @@ function viewHome(v) {
     h(".card.row", { style: "margin-bottom:14px;justify-content:space-between" },
       h("div", { style: "flex:1;min-width:150px" }, h("b", `Level ${x.lvl}`), h(".bar", { style: "margin:6px 0" }, h("i", { style: `width:${x.pct}%` })), h(".src", h("span", { "data-count": x.xp }, "0"), ` XP. ${x.next - x.xp} more for level ${x.lvl + 1}`)),
       lastLec ? h("button.btn", { style: `--c:${lastLec.color}`, onclick: () => (location.hash = `#/l/${lastLec.id}/${lastp.tab || "notes"}`) }, "Continue: " + lastLec.title, ic("right", 18)) : ""),
+    announcementsCard(null),
     h("h2", "Your classes"),
     mine.length ? "" : h(".card", { style: "margin-bottom:12px" }, h("b", "You haven't joined a class yet"), h("p", { style: "margin:4px 0 0;color:var(--mute)" }, "Enter the class code from your instructor below to get started.")),
     h(".grid", mine.map((sj, i) => {
@@ -464,6 +498,7 @@ function viewSubject(v, id) {
   }
   const ls = LECS.filter((l) => l.subject === sj.id);
   if (!ls.length) return v.append(h(".card", h("h2", "Coming soon"), h("p", "Lectures for this class are being added.")));
+  v.append(announcementsCard(sj.id));
   const ex = EXAMS[sj.id];
   const cfg = S.settings[sj.id], days = cfg?.exam_date ? Math.ceil((new Date(cfg.exam_date + "T00:00:00") - new Date().setHours(0, 0, 0, 0)) / 864e5) : null;
   if (days !== null && days >= 0) {
@@ -480,7 +515,7 @@ function viewSubject(v, id) {
     const s = S.lectureStats(l);
     return h("button.card.lec", { style: `animation-delay:${i * 45}ms;--tc:${l.color}`, onclick: () => (location.hash = `#/l/${l.id}/notes`) },
       emojiTile(l, 52),
-      h("div", { style: "flex:1" }, h("b", l.title), h("small", (l.chapter || "") + ` · ${l.sections.length} topics`), h(".mastery", { title: "How well you remember this lecture" }, h("i", { style: `width:${S.mastery(l)}%` }), h("span", `Mastery ${S.mastery(l)}%`))),
+      h("div", { style: "flex:1" }, h("b", l.title), h("small", (l.chapter || "") + ` · ${l.sections.length} topics`), l.custom ? h("small", { style: "display:block" }, "Added by your instructor" + (l.draft ? " (draft)" : "")) : "", h(".mastery", { title: "How well you remember this lecture" }, h("i", { style: `width:${S.mastery(l)}%` }), h("span", `Mastery ${S.mastery(l)}%`))),
       ring(s.pct, l.color));
   })));
   if (ex) {
@@ -533,7 +568,7 @@ function table(t) {
   return h(".tw", h("table", h("thead", h("tr", t.head.map((x) => h("th", md(x))))), h("tbody", t.rows.map((r) => h("tr", r.map((c) => h("td", md(c))))))));
 }
 function lightbox(im) {
-  const lb = h(".lightbox", { onclick: () => lb.remove() }, h("button.chip.x", { "aria-label": "Close" }, ic("x", 18), "Close"), h("img", { src: im.src, alt: im.alt }));
+  const lb = h(".lightbox", { onclick: () => lb.remove() }, h("button.chip.x", { "aria-label": "Close" }, ic("x", 18), "Close"), pic(im));
   document.body.append(lb);
 }
 // One box: a picture and its own explanation. Changing the picture (1/3, 2/3...) changes the text with it.
@@ -546,7 +581,7 @@ function stepper(sec) {
     const st = steps[i], im = st.img, n = steps.length;
     const go = (d) => { dir = d; i = (i + d + n) % n; draw(); };
     const fig = im ? h(".fig",
-      h("button.figbtn", { "aria-label": "Enlarge picture", onclick: () => lightbox(im) }, h("img", { src: im.src, alt: im.alt || sec.title, loading: "lazy" }), h("span.zoom", ic("zoom", 14), "Enlarge")),
+      h("button.figbtn", { "aria-label": "Enlarge picture", onclick: () => lightbox(im) }, pic({ ...im, alt: im.alt || sec.title }, { loading: "lazy" }), h("span.zoom", ic("zoom", 14), "Enlarge")),
       n > 1 ? [h("button.nv.l", { "aria-label": "Previous", onclick: (e) => { e.stopPropagation(); go(-1); } }, ic("left", 18)), h("button.nv.r", { "aria-label": "Next", onclick: (e) => { e.stopPropagation(); go(1); } }, ic("right", 18))] : "",
       n > 1 ? h("span.cnt", `${i + 1} / ${n}`) : "") : "";
     const txt = h(".steptxt" + (dir < 0 ? ".back" : ""),
@@ -563,6 +598,7 @@ function stepper(sec) {
 const pageIdx = {};
 function notes(b, l) {
   const pages = [...l.sections];
+  if (!pages.length && !l.table) return b.append(h(".card", { style: "margin-top:10px" }, h("p", { style: "margin:0" }, "There are no notes in this lecture yet.")));
   if (l.table) pages.push({ id: "_glance", title: l.table.title || "At a glance", slides: "", bullets: [], boxes: [], table: l.table, glance: true });
   let i = Math.min(pageIdx[l.id] || 0, pages.length - 1), dir = 1;
   const readSet = () => S.progress().read[l.id] || {};
@@ -577,7 +613,7 @@ function notes(b, l) {
       h(".pager", h("button.arrow", { "aria-label": "Previous topic", disabled: i === 0, onclick: () => go(i - 1) }, ic("left", 22)), h(".mid", sel), h("button.arrow", { "aria-label": "Next topic", disabled: i === pages.length - 1, onclick: () => go(i + 1) }, ic("right", 22))),
       h(".dots", pages.map((q, k) => h("i" + (k === i ? ".on" : readSet()[q.id] ? ".done" : "")))),
       h(".card.page" + (dir < 0 ? ".back" : ""),
-        h("h2", p.title, refs && p.slides ? h("span.refchip", "Slides " + p.slides) : ""),
+        h("h2", p.title, refs && p.slides ? h("span.refchip", "Slides " + p.slides) : "", p.custom ? h("span.pill.mute", { style: "font-size:.7rem" }, "Your instructor") : "", p.draft ? h("span.pill.bad", { style: "font-size:.7rem" }, "Draft") : ""),
         i === 0 && l.intro ? h("p", { style: "color:var(--mute);margin:0 0 6px" }, md(l.intro)) : "",
         stepper(p),
         (p.bullets || []).length ? h("ul.pts", p.bullets.map((x) => h("li", md(x)))) : "",
@@ -596,6 +632,7 @@ function notes(b, l) {
 
 /* ----- flashcards ----- */
 export function cards(b, all, color, startMode = "all") {
+  if (!all.length) return b.append(h(".card", { style: "margin-top:10px" }, h("p", { style: "margin:0" }, "There are no flashcards in this lecture yet.")));
   let deck = startMode === "due" ? S.dueCards(all) : all.slice(), i = 0, mode = startMode === "due" && deck.length ? "due" : "all";
   if (!deck.length) deck = all.slice();
   const draw = () => {
@@ -618,7 +655,7 @@ export function cards(b, all, color, startMode = "all") {
       return;
     }
     const c = deck[i];
-    const front = h(".face.front", h("span.tag", "Term"), h("b", md(c.front)), h(".hint", "Tap to reveal")), back = h(".face.back", { "aria-hidden": "true" }, h("span.tag", "Meaning"), h("div", md(c.back)), S.canSeeRefs() && c.src ? h(".src.admin", c.src) : "");
+    const front = h(".face.front", h("span.tag", c.custom ? "Term · your instructor" + (c.draft ? " · draft" : "") : "Term"), h("b", md(c.front)), h(".hint", "Tap to reveal")), back = h(".face.back", { "aria-hidden": "true" }, h("span.tag", "Meaning"), h("div", md(c.back)), S.canSeeRefs() && c.src ? h(".src.admin", c.src) : "");
     const fc = h(".fc", { role: "button", tabindex: 0 }, h(".inner", front, back));
     const flip = () => { const f = fc.classList.toggle("flip"); front.setAttribute("aria-hidden", String(f)); back.setAttribute("aria-hidden", String(!f)); };
     let sx = 0, dx = 0, drag = false, moved = false;
@@ -687,7 +724,7 @@ export function runQuiz(b, list, title, color, back) {
       return bt;
     });
     b.append(h(".src", `${title} · Question ${i + 1} of ${list.length}`), h(".bar", { style: `--c:${color}` }, h("i", { style: `width:${(i / list.length) * 100}%` })),
-      h(".card", { style: "margin-top:10px" }, q.img ? h(".qimg", { role: "button", tabindex: 0, "aria-label": "Enlarge picture", onclick: () => lightbox(q.img) }, h("img", { src: q.img.src, alt: q.img.alt || "Figure for the question", loading: "lazy" })) : "", h(".q", md(q.q)), opts, fb));
+      h(".card", { style: "margin-top:10px" }, q.custom ? h(".src", { style: "margin:0 0 6px" }, "From your instructor" + (q.draft ? " (draft)" : "")) : "", q.img ? h(".qimg", { role: "button", tabindex: 0, "aria-label": "Enlarge picture", onclick: () => lightbox(q.img) }, pic({ ...q.img, alt: q.img.alt || "Figure for the question" }, { loading: "lazy" })) : "", h(".q", md(q.q)), opts, fb));
   };
   draw();
 }

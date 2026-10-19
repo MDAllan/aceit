@@ -4,6 +4,8 @@ import { launch, SHOTS } from "./common.mjs";
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
+import { lectureId } from "../../js/classcontent.js";
+const L1 = "00000001-0000-4000-8000-000000000000"; // the sample lecture of the preview
 const axeSource = readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
 const b = await launch();
 let bad = 0;
@@ -13,6 +15,14 @@ const PAGES = [
   ["progress", "/?demo#/progress"], ["search", "/?demo#/search"], ["profile", "/?demo#/profile"],
   ["admin: schools", "/?demo&role=admin#/work"], ["admin: school", "/?demo&role=admin#/work/school/sch-a"], ["admin: class", "/?demo&role=admin#/work/class/k-a1"], ["admin: settings", "/?demo&role=admin#/work/settings"], ["admin: people", "/?demo&role=admin#/work/school/sch-a/people"],
   ["manager: school", "/?demo&role=manager#/work"], ["instructor: classes", "/?demo&role=instructor#/work"],
+  // what instructors add to their class
+  ["instructor: class content", `/?demo&role=instructor#/work/class/k-a1/content`], ["instructor: one of their lectures", `/?demo&role=instructor#/work/class/k-a1/content/lecture/${L1}`],
+  ["instructor: additions to a course lecture", `/?demo&role=instructor#/work/class/k-a1/content/lecture/motion`], ["instructor: new question", `/?demo&role=instructor#/work/class/k-a1/content/edit/question/new/motion`],
+  ["instructor: new note", `/?demo&role=instructor#/work/class/k-a1/content/edit/note/new/motion`], ["instructor: new flashcard", `/?demo&role=instructor#/work/class/k-a1/content/edit/card/new/motion`],
+  ["instructor: new lecture", `/?demo&role=instructor#/work/class/k-a1/content/edit/lecture/new`], ["instructor: new announcement", `/?demo&role=instructor#/work/class/k-a1/content/edit/announcement/new`],
+  ["instructor: paste many questions", `/?demo&role=instructor#/work/class/k-a1/content/bulk/questions/motion`], ["manager: approval and queue", `/?demo&role=manager#/work/school/sch-a/approvals`],
+  ["instructor: the class as a student sees it", `/?demo&role=instructor#/s/astr207`], ["instructor: a lecture of their own, as a student sees it", `/?demo&role=instructor#/l/${lectureId(L1)}/notes`],
+  ["instructor: its quiz", `/?demo&role=instructor#/l/${lectureId(L1)}/quiz`],
 ];
 for (const scheme of ["light", "dark"]) {
   const p = await b.newPage();

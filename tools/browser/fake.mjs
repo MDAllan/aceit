@@ -37,6 +37,21 @@ export async function fakeSupabase(page, db) {
     } else if (path === "/rest/v1/profiles") r = { status: 200, body: db.profile ? [db.profile] : [] };
     else if (path === "/rest/v1/progress") { if (method === "GET") r = { status: 200, body: db.progress ? [{ data: db.progress }] : [] }; else { db.progressPosts.push(body); r = { status: 201, body: null }; } }
     else if (path === "/rest/v1/progress_summary") { if (method === "GET") r = { status: 200, body: [] }; else { db.summaryPosts.push(body); r = { status: db.summaryFails ? 400 : 201, body: db.summaryFails ? { message: "nope" } : null }; } }
+    else if (path === "/rest/v1/class_items") {
+      const m = /^in\.\((.*)\)$/.exec(q.get("class_id") || ""), ids = m ? m[1].split(",") : null, eq = /^eq\.(.*)$/.exec(q.get("class_id") || "");
+      r = db.noItemsTable ? { status: 404, body: { code: "42P01", message: "relation public.class_items does not exist" } } : { status: 200, body: (db.items || []).filter((i) => (ids ? ids.includes(i.class_id) : eq ? i.class_id === eq[1] : true)) };
+    }
+    else if (path.startsWith("/storage/v1/")) {
+      const rest = path.slice("/storage/v1/".length);
+      db.uploads ||= []; db.removed ||= []; db.copies ||= []; db.downloads ||= [];
+      if (rest.startsWith("object/class-media/") && method === "POST" && db.mediaFull) r = { status: 403, body: { statusCode: "403", error: "Unauthorized", message: "new row violates row-level security policy" } };
+      else if (rest.startsWith("object/class-media/") && method === "POST") { const p = decodeURIComponent(rest.slice("object/class-media/".length)); db.uploads.push({ path: p, size: (req.postData() || "").length, type: req.headers()["content-type"] }); r = { status: 200, body: { Key: "class-media/" + p, Id: "id-" + db.uploads.length } }; }
+      else if (rest.startsWith("object/class-media/") && method === "GET") { const p = decodeURIComponent(rest.slice("object/class-media/".length)); db.downloads.push(p); r = (db.missingMedia || []).includes(p) ? { status: 404, body: { statusCode: "404", error: "not_found", message: "Object not found" } } : { raw: Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==", "base64"), type: "image/png" }; }
+      else if (rest === "object/class-media" && method === "DELETE") { db.removed.push(...(body?.prefixes || [])); r = { status: 200, body: (body?.prefixes || []).map((name) => ({ name })) }; }
+      else if (rest === "object/copy" && method === "POST") { db.copies.push(body); r = { status: 200, body: { Key: "class-media/" + body?.destinationKey } }; }
+      else if (rest.startsWith("object/list/class-media") && method === "POST") r = { status: 200, body: (db.listing || {})[body?.prefix] || [] };
+      else r = { status: 404, body: { message: "Mock has no storage call " + method + " " + rest } };
+    }
     else if (path === "/rest/v1/class_access") r = { status: 200, body: db.legacyAccess || [] };
     else if (path === "/rest/v1/class_instructors") r = { status: 200, body: db.legacyInstructors || [] };
     else if (["/rest/v1/class_settings", "/rest/v1/lecture_content", "/rest/v1/exam_content"].includes(path)) r = { status: 200, body: [] };
@@ -52,6 +67,7 @@ export async function fakeSupabase(page, db) {
     else if (/^\/auth\/v1\/factors\/[^/]+$/.test(path) && method === "DELETE") { const fid = path.split("/")[4]; db.factors = (db.factors || []).filter((f) => f.id !== fid); db.unenrolled = fid; r = { status: 200, body: { id: fid } }; }
     else if (path.startsWith("/auth/v1/settings")) r = { status: 200, body: { mailer_autoconfirm: db.autoconfirm ?? true, external: {} } };
     else if (path.startsWith("/auth/v1/")) r = { status: 200, body: {} };
+    if (r.raw) return req.respond({ status: 200, headers: { ...CORS, "content-type": r.type }, body: r.raw });
     req.respond({ status: r.status, headers: { ...CORS, "content-type": "application/json" }, body: r.body === null ? "" : JSON.stringify(r.body) });
   });
 }

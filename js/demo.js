@@ -2,6 +2,7 @@
 //   ?demo&role=admin   ?demo&role=manager   ?demo&role=instructor     (?demo&admin is the same as role=admin)
 // It answers the same function names, with the same argument names, as the real database, so the screens behave the same way.
 import { demoRole } from "./store.js";
+import { problem } from "./itemrules.js";
 
 const DAY = 864e5;
 const DEFAULT_SCHOOL = "00000000-0000-0000-0000-000000000001"; // the school your existing classes move into (cannot be deleted)
@@ -15,9 +16,9 @@ const uid = (n) => "u" + n;
 const email = (n, dom) => n.toLowerCase().replace(/[^a-z ]/g, "").replace(" ", ".") + "@" + dom;
 
 function build() {
-  T = { schools: [], classes: [], people: {}, enrol: [], invites: [], admins: [], audit: [], confirm: true, domains: "", mfa: false };
+  T = { schools: [], classes: [], people: {}, enrol: [], invites: [], admins: [], audit: [], confirm: true, domains: "", mfa: false, items: [], media: {}, nid: 0 };
   const school = (id, name, region, seat_limit, courses) => T.schools.push({ id, name, region, active: true, seat_limit, courses, managers: [] });
-  school("sch-a", "Alpha University", "Alberta", 400, ["astr207", "erth209"]);
+  school("sch-a", "Alpha University", "Alberta", 400, ["astr207", "erth209"]); T.schools[0].require_approval = true;
   school("sch-b", "Beta College", "Ontario", 120, ["erth209"]);
   school(DEFAULT_SCHOOL, "ACEIT Direct", "Alberta, Canada", null, ["astr207", "erth209"]);
   const person = (id, nm, em) => (T.people[id] = { id, email: em, display_name: nm, blocked: false });
@@ -86,7 +87,46 @@ function summaries() {
   }
 }
 
-export function init(lecs) { LECS = lecs; if (!T) build(); summaries(); }
+// a pretend picture (a small drawing) for sample items and for pictures chosen in the preview
+const SAMPLE_PICTURE = "data:image/svg+xml;utf8," + encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='320' height='180'><rect width='320' height='180' fill='#dbe7f4'/><circle cx='160' cy='90' r='54' fill='#0d3b66'/><circle cx='160' cy='90' r='22' fill='#faf0ca'/></svg>");
+const newId = () => String(++T.nid).padStart(8, "0") + "-0000-4000-8000-000000000000";
+function seedItems() {
+  const add = (class_id, kind, lecture_ref, status, body, by = "Dr. Rivera") => { const id = newId(); T.items.push({ id, class_id, kind, lecture_ref, status, body, position: T.items.length + 1, author_name: by, created_at: new Date(Date.now() - (50 - T.items.length) * 3600e3).toISOString(), updated_at: new Date(Date.now() - (50 - T.items.length) * 3600e3).toISOString() }); return id; };
+  const soon = new Date(Date.now() + 30 * DAY).toISOString().slice(0, 10);
+  const L = add("k-a1", "lecture", null, "published", { title: "Week 1 review", chapter: "Revision", icon: "\u{1F9EA}", intro: "A short recap before the midterm." });
+  add("k-a1", "note", L, "published", { title: "Start here", bullets: ["In **lecture** one we met the main ideas.", "Read the textbook pages again before the quiz."] });
+  add("k-a1", "note", L, "published", { title: "The key picture", bullets: ["The dark disc is the object", "The light centre is where the force acts"], img: { path: "k-a1/sample01.webp", alt: "A dark disc with a light centre" } });
+  add("k-a1", "card", L, "published", { front: "Speed", back: "How far something goes in a given time" });
+  add("k-a1", "card", L, "published", { front: "Velocity", back: "Speed in a given direction" });
+  add("k-a1", "question", L, "published", { q: "Which quantity has a direction?", options: ["Speed", "Velocity", "Distance"], answer: 1, why: "Velocity is speed with a direction." });
+  add("k-a1", "question", L, "draft", { q: "A draft question nobody sees yet?", options: ["Yes", "No"], answer: 1 });
+  add("k-a1", "question", "motion", "published", { q: "A question your instructor added to the Motion lecture?", options: ["Added", "Not added"], answer: 0, why: "It sits at the end of that lecture's quiz." });
+  add("k-a1", "card", "motion", "draft", { front: "Draft card", back: "Not published yet" });
+  add("k-a1", "announcement", null, "published", { title: "Midterm moved to Friday", text: "Bring a calculator. We will review the Week 1 notes on Thursday.", until: soon });
+  add("k-a1", "question", "gravity", "review", { q: "Waiting for approval: what keeps planets in orbit?", options: ["Gravity", "Magnets", "Wind"], answer: 0 }, "Prof. Okafor");
+  add("k-a2", "lecture", null, "draft", { title: "Plate tectonics warm-up", icon: "\u{1F30D}" }, "Prof. Okafor");
+}
+const classRowsOf = (c, role) => ({ class_id: c.id, course_id: c.course_id, name: c.name, term: c.term, school_id: c.school_id, school_name: T.schools.find((s) => s.id === c.school_id).name, role, exam_name: c.exam_name, exam_date: c.exam_date, archived: c.archived });
+// the classes the previewed person teaches or manages, as the study screens see them
+export function classRows() {
+  ensure();
+  if (role() === "instructor") return T.classes.filter((c) => c.teacher_ids.includes("me")).map((c) => classRowsOf(c, "teacher"));
+  if (role() === "manager") return T.classes.filter((c) => c.school_id === mySchoolId()).map((c) => classRowsOf(c, "manager"));
+  return [];
+}
+export const items = () => { ensure(); const ids = new Set(classRows().map((c) => c.class_id)); return T.items.filter((i) => ids.has(i.class_id)).map((i) => ({ ...i })); };
+export const media = (path) => { ensure(); return T.media[path] || (path.endsWith("sample01.webp") ? SAMPLE_PICTURE : null); };
+export const itemsOf = (kid) => { ensure(); const c = classOf(kid); return c && canTeach(c) ? T.items.filter((i) => i.class_id === kid).map((i) => ({ ...i })) : []; };
+// pictures chosen in the editor are kept in memory as data addresses
+export async function uploadPicture(kid, blob) {
+  ensure(); const path = `${kid}/${Math.random().toString(36).slice(2, 12)}${Math.random().toString(36).slice(2, 8)}.webp`;
+  const url = await new Promise((res) => { const r = new FileReader(); r.onload = () => res(r.result); r.readAsDataURL(blob); });
+  T.media[path] = url; return { path };
+}
+export const removePictures = (paths) => { ensure(); (paths || []).forEach((p) => delete T.media[p]); };
+export const copyPictures = (pairs) => { ensure(); (pairs || []).forEach(({ old_path, new_path }) => { T.media[new_path] = T.media[old_path] || SAMPLE_PICTURE; }); };
+function ensure() { if (!T) { build(); seedItems(); } }
+export function init(lecs) { LECS = lecs; ensure(); summaries(); }
 const role = () => demoRole();
 const adminView = () => role() === "admin";
 const mySchoolId = () => "sch-a";
@@ -107,7 +147,7 @@ const API = {
     return list.map((s) => {
       const cs = T.classes.filter((c) => c.school_id === s.id), en = T.enrol.filter((e) => cs.some((c) => c.id === e.class_id));
       return { school_id: s.id, name: s.name, region: s.region, active: s.active, seat_limit: s.seat_limit, seats_used: new Set(en.map((e) => e.user_id)).size, courses: s.courses, classes: cs.length,
-        teachers: new Set(cs.flatMap((c) => c.teacher_ids)).size, managers: s.managers.length, students: new Set(en.map((e) => e.user_id)).size, active7: new Set(en.filter(week).map((e) => e.user_id)).size };
+        teachers: new Set(cs.flatMap((c) => c.teacher_ids)).size, managers: s.managers.length, students: new Set(en.map((e) => e.user_id)).size, active7: new Set(en.filter(week).map((e) => e.user_id)).size, require_approval: !!s.require_approval };
     });
   },
   staff_classes({ sid, kid } = {}) {
@@ -201,6 +241,56 @@ const API = {
     need(adminView(), "admin only"); const em = target_email.trim().toLowerCase(); const p = Object.values(T.people).find((x) => x.email === em); need(p, "no account with that email");
     if (!flag) need(T.admins.length > 1, "you cannot remove the last admin");
     T.admins = flag ? [...T.admins.filter((a) => a.email !== em), { user_id: p.id, email: em, display_name: p.display_name }] : T.admins.filter((a) => a.email !== em); log(flag ? "add admin" : "remove admin", em);
+  },
+  save_class_item({ kid, k, ref, b, item_id, pos }) {
+    const c = classOf(kid); need(c && canTeach(c), "instructors only");
+    const p = problem(k, b); need(!p, p);
+    if (b.img) need(b.img.path.startsWith(kid + "/"), "That picture belongs to another class.");
+    if (["note", "card", "question"].includes(k)) {
+      need(ref, "Choose a lecture.");
+      if (/^[0-9a-f]{8}-/.test(ref)) need(T.items.some((i) => i.id === ref && i.class_id === kid && i.kind === "lecture"), "That lecture is not in this class.");
+    } else need(!ref, "This kind of item does not belong to a lecture.");
+    const mgr = canManage(c), req = !!T.schools.find((s) => s.id === c.school_id).require_approval;
+    if (item_id) {
+      const cur = T.items.find((i) => i.id === item_id); need(cur && cur.class_id === kid, "That item is not in this class."); need(cur.kind === k, "The kind of an item cannot change.");
+      cur.body = b; cur.lecture_ref = ref || null; if (pos != null) cur.position = pos; if (cur.status === "published" && req && !mgr) cur.status = "review"; cur.updated_at = new Date().toISOString(); return item_id;
+    }
+    const mine = T.items.filter((i) => i.class_id === kid); need(mine.length < 600, "This class already has 600 items, the most it can hold.");
+    if (ref) need(mine.filter((i) => i.lecture_ref === ref).length < 200, "That lecture already has 200 items, the most it can hold.");
+    const id = newId(), now = new Date().toISOString();
+    T.items.push({ id, class_id: kid, kind: k, lecture_ref: ref || null, status: "draft", body: b, position: pos ?? (Math.max(0, ...mine.filter((i) => i.kind === k && i.lecture_ref === (ref || null)).map((i) => i.position)) + 1), author_name: "You", created_at: now, updated_at: now });
+    log("add " + k, b.title || b.q || b.front, c.name, c.school_id); return id;
+  },
+  set_class_item_status({ item_id, new_status, with_children }) {
+    const cur = T.items.find((i) => i.id === item_id); need(cur, "no such item"); const c = classOf(cur.class_id); need(canTeach(c), "instructors only");
+    need(["draft", "review", "published"].includes(new_status), "unknown status");
+    const mgr = canManage(c), req = !!T.schools.find((s) => s.id === c.school_id).require_approval;
+    const res = new_status === "draft" ? "draft" : cur.status === "published" ? "published" : req && !mgr ? "review" : "published";
+    T.items.forEach((i) => { if (i.id === item_id || (with_children && cur.kind === "lecture" && i.lecture_ref === item_id && (res === "draft" || i.status !== "published"))) { i.status = res; i.updated_at = new Date().toISOString(); } });
+    log(res === "published" ? "publish class item" : res === "review" ? "submit class item for approval" : "unpublish class item", cur.body.title || cur.body.q || cur.body.front, c.name, c.school_id); return res;
+  },
+  delete_class_item({ item_id }) {
+    const cur = T.items.find((i) => i.id === item_id); if (!cur) return []; const c = classOf(cur.class_id); need(canTeach(c), "instructors only");
+    const gone = T.items.filter((i) => i.id === item_id || (cur.kind === "lecture" && i.lecture_ref === item_id)), paths = gone.map((i) => i.body.img?.path).filter(Boolean);
+    T.items = T.items.filter((i) => !gone.includes(i)); log("delete class item", cur.body.title || cur.body.q || cur.body.front, c.name, c.school_id); return paths;
+  },
+  reorder_class_items({ kid, ids }) { const c = classOf(kid); need(canTeach(c), "instructors only"); ids.forEach((id, n) => { const i = T.items.find((x) => x.id === id && x.class_id === kid); if (i) i.position = n + 1; }); },
+  copy_class_items({ from_kid, to_kid }) {
+    const a = classOf(from_kid), b = classOf(to_kid); need(canTeach(a) && canTeach(b), "instructors only"); need(from_kid !== to_kid, "Choose a different class.");
+    const map = {}, out = [], now = new Date().toISOString();
+    T.items.filter((i) => i.class_id === from_kid && i.kind === "lecture").forEach((i) => { const id = newId(); map[i.id] = id; T.items.push({ ...i, id, class_id: to_kid, status: "draft", author_name: "You", created_at: now, updated_at: now }); });
+    T.items.filter((i) => i.class_id === from_kid && ["note", "card", "question"].includes(i.kind)).forEach((i) => {
+      const id = newId(), nb = JSON.parse(JSON.stringify(i.body)); let op = null, np = null;
+      if (nb.img) { op = nb.img.path; np = to_kid + "/" + op.split("/")[1]; nb.img.path = np; }
+      T.items.push({ ...i, id, class_id: to_kid, lecture_ref: map[i.lecture_ref] || i.lecture_ref, status: "draft", body: nb, author_name: "You", created_at: now, updated_at: now });
+      if (op) out.push({ new_id: id, old_path: op, new_path: np });
+    });
+    log("copy class content", a.name, b.name, b.school_id); return out;
+  },
+  set_school_approval({ sid, flag }) { need(adminView() || (role() === "manager" && sid === mySchoolId()), "school managers only"); T.schools.find((s) => s.id === sid).require_approval = flag; log(flag ? "require approval of class content" : "stop requiring approval of class content", "", null, sid); },
+  review_queue({ sid }) {
+    need(adminView() || (role() === "manager" && sid === mySchoolId()), "not allowed");
+    return T.items.filter((i) => i.status === "review" && classOf(i.class_id).school_id === sid).map((i) => ({ item_id: i.id, class_id: i.class_id, class_name: classOf(i.class_id).name, kind: i.kind, lecture_ref: i.lecture_ref, body: i.body, author_name: i.author_name, updated_at: i.updated_at }));
   },
   admin_get_confirm_email() { return T.confirm; },
   mfa_required() { return T.mfa; },

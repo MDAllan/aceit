@@ -26,6 +26,8 @@ const finish = async (code) => {
   try { rmSync(dir, { recursive: true, force: true }); } catch {}
   process.exit(code);
 };
+// a test that throws must not leave a database server running behind it
+for (const ev of ["uncaughtException", "unhandledRejection"]) process.on(ev, async (e) => { console.log((e && e.stack) || e); await finish(1); });
 const conn = () => new pg.Client({ host: "localhost", port: PORT, user: "postgres", password: "pw", database: "postgres" });
 const admin = conn(); await admin.connect();
 const q = (sql, params) => admin.query(sql, params);
@@ -515,6 +517,13 @@ await q(`update public.schools set active=true where id=$1`, [A]);
 ok(await denied(S1, `delete from storage.objects where bucket_id='class-media'`) && await denied(T2, `delete from storage.objects where bucket_id='class-media'`), "students and other classes' instructors cannot delete pictures");
 await keep(T1, (x) => x(`delete from storage.objects where bucket_id='class-media' and name=$1`, [`${KA}/adminfile1.jpg`]));
 ok(await getObj(T1, `${KA}/adminfile1.jpg`) === 0, "the class's staff can delete pictures");
+// a class holds at most 400 picture files
+const have = (await q(`select count(*)::int n from storage.objects where bucket_id='class-media' and split_part(name,'/',1)=$1`, [KA])).rows[0].n;
+await q(`insert into storage.objects(bucket_id, name) select 'class-media', $1 || '/fill' || lpad(g::text, 6, '0') || '.webp' from generate_series(1, $2) g`, [KA, 399 - have]);
+ok(!!(await put(T1, `${KA}/lastone01.webp`)), "the 400th picture file of a class is accepted");
+ok(await fails(() => put(T1, `${KA}/onetoomany.webp`)), "the 401st is refused");
+ok(!!(await put(T2, `${KB}/other-class.webp`)), "another class has its own allowance");
+await q(`delete from storage.objects where name like $1 and name <> $2`, [KA + "/fill%", `${KA}/picture01.webp`]);
 
 // a school that leaves takes its items with it
 const GS3 = (await keep(ADMIN, (x) => x(`select public.admin_create_school('Epsilon School','x',null) id`))).rows[0].id;

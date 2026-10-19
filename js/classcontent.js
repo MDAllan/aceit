@@ -8,7 +8,9 @@ import { MARK } from "./itemrules.js";
 export const mark = (t) => (typeof t === "string" && t ? MARK + t : t);
 export const isMarked = (t) => typeof t === "string" && t.charCodeAt(0) === MARK.charCodeAt(0);
 
-const hex = (id, n) => String(id).replace(/-/g, "").slice(0, n);
+// a short, stable name made from the whole id (two 32-bit FNV hashes), the same on every device
+const fnv = (str, seed) => { let x = seed >>> 0; for (let i = 0; i < str.length; i++) { x ^= str.charCodeAt(i); x = Math.imul(x, 16777619) >>> 0; } return x; };
+const hex = (id, n) => (fnv(String(id), 2166136261).toString(16).padStart(8, "0") + fnv(String(id), 0x9747b28c).toString(16).padStart(8, "0")).slice(0, n);
 export const lectureId = (itemId) => "c" + hex(itemId, 12);  // id of an instructor's own lecture in progress and in addresses
 export const itemId = (id) => "cx" + hex(id, 10);             // id of a note, card or question
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;

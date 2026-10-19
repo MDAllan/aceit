@@ -287,12 +287,12 @@ details.panel[open]>summary::after{content:"\25B4"}
 .field .src{margin-top:4px}
 .fgrid{display:grid;gap:10px;grid-template-columns:1fr}
 @media(min-width:640px){.fgrid.two{grid-template-columns:1fr 1fr}}
-input[type=checkbox]{width:20px;min-height:0;height:20px;padding:0;accent-color:var(--brand)}
+input[type=checkbox],input[type=radio]{width:20px;min-height:0;height:20px;padding:0;flex:none;accent-color:var(--brand)}
 label.check{display:flex;gap:10px;align-items:center;font-weight:600;margin:6px 0;min-height:36px}
 .codebox{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--accent);color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent-ink) 25%,var(--accent));border-radius:var(--r);padding:12px 14px}
 .codebox code{font:700 1.5rem Lexend,monospace;letter-spacing:.12em;font-variant-numeric:tabular-nums;word-break:break-all}
 .codebox .btn.alt{background:#fff;color:#0d3b66}
-.pill.ok{background:var(--ok)}.pill.bad{background:var(--bad)}.pill.mute{background:#64748b}.pill.navy{background:#0d3b66}
+.pill.ok{background:#2c7a56}.pill.bad{background:#c0452f}.pill.mute{background:#64748b}.pill.navy{background:#0d3b66}
 details.person{border:1px solid var(--line);border-radius:var(--r);background:var(--card);box-shadow:var(--shadow)}
 details.person>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:36px minmax(0,1fr) minmax(88px,34%);gap:4px 10px;align-items:center;padding:10px 12px;min-height:56px}
 details.person>summary::-webkit-details-marker{display:none}
@@ -332,3 +332,10 @@ details.person .pbody{padding:2px 12px 12px;border-top:1px solid var(--line)}
 .row.wrapx>select{flex:1 1 150px}
 .btn.sm{white-space:nowrap}
 .tiles{grid-template-columns:repeat(auto-fit,minmax(104px,1fr))}
+.pill.amber{background:#8a5a00}
+.itemrow{padding:12px 14px}
+textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:4px;padding:11px;width:100%;resize:vertical;line-height:1.45}
+textarea:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+input[type=file]{padding:8px;min-height:0}
+.row .chip[role=radio]{min-width:44px;justify-content:center;font-size:1.15rem}
+[hidden]{display:none!important}

@@ -5,29 +5,12 @@ import * as A from "./staffapi.js";
 import { h, ic, toast } from "./ui.js";
 import { download, publishPanel } from "./admin.js";
 import { mfaCard } from "./mfa.js";
+import { contentCard, viewContent, reviewTab } from "./author.js";
+import { itemId } from "./classcontent.js";
 
 /* ---------- small helpers ---------- */
-const DAY = 864e5;
-const ago = (t) => { if (!t) return "has not opened ACEIT yet"; const d = Math.floor((Date.now() - new Date(t)) / DAY); return d <= 0 ? "active today" : d === 1 ? "active yesterday" : d < 30 ? `active ${d} days ago` : "active " + new Date(t).toLocaleDateString(); };
-const when = (t) => (t ? new Date(t).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }) : "-");
-const quiet = (t) => !t || Date.now() - new Date(t) > 7 * DAY;
-const plural = (n, w, many) => `${n} ${n === 1 ? w : many || w + "s"}`;
-const site = () => location.origin + location.pathname;
-const initials = (n) => (n || "?").trim().split(/\s+/).map((x) => x[0]).slice(0, 2).join("").toUpperCase();
-const nameOf = (r) => r.display_name || r.name || (r.email || "").split("@")[0] || "Unknown";
-const meter = (pct, tc) => h(".mastery", { style: tc ? `--tc:${tc}` : "", role: "img", "aria-label": pct + " percent" }, h("i", { style: `width:${Math.max(0, Math.min(100, pct || 0))}%` }), h("span", (pct || 0) + "%"));
-const csvCell = (t) => { let s = String(t ?? ""); if (/^[=+\-@\t\r]/.test(s)) s = "'" + s; return `"${s.replace(/"/g, '""')}"`; }; // a leading = + - @ would run as a formula in Excel
-async function copy(text, msg = "Copied") { try { await navigator.clipboard.writeText(text); toast(msg); } catch { prompt("Copy this:", text); } }
-const field = (label, input, help) => h(".field", h("label", label), input, help ? h(".src", help) : "");
-const panel = (title, open, ...kids) => { const d = h("details.card.panel", { style: "margin-top:12px" }, h("summary", title), h("div", { style: "margin-top:10px" }, ...kids)); if (open) d.open = true; return d; };
-const busy = async (btn, fn) => { btn.disabled = true; try { return await fn(); } finally { btn.disabled = false; } };
-const go = (p) => { location.hash = "#/work" + (p ? "/" + p : ""); };
-const tile = (label, value, sub) => h(".tile", h("b", String(value ?? 0)), h("span", label), sub ? h("small", sub) : "");
-const empty = (msg) => h(".card.empty", msg);
-const warn = (...kids) => h(".warnbox", ...kids);
-const crumb = (label, to) => h("button.crumb", { onclick: () => go(to) }, ic("left", 16), label);
-const loading = (v) => { const p = h("p.boot", "Loading..."); v.append(p); return () => p.remove(); };
-const fail = (v, e) => v.append(h(".card", h("p.err", e.message || String(e))));
+import { ago, when, quiet, plural, site, initials, nameOf, meter, csvCell, copy, field, panel, busy, go, tile, empty, warn, crumb, loading, fail } from "./wsui.js";
+import { DAY } from "./wsui.js";
 const CSV_HEAD = ["Name", "Email", "Joined", "Progress %", "Mastery %", "Topics read", "Cards known", "Cards total", "Quiz attempts", "Quiz correct", "Quiz accuracy %", "Last active"];
 const csvRow = (r) => [nameOf(r), r.email, r.joined_at ? r.joined_at.slice(0, 10) : "", r.pct, r.mastery, r.read_topics, r.cards_known, r.cards_total, r.quiz_attempts, r.quiz_correct, r.quiz_attempts ? Math.round((r.quiz_correct / r.quiz_attempts) * 100) : "", r.last_active ? r.last_active.slice(0, 10) : ""];
 const csvText = (head, rows) => "\uFEFF" + [head, ...rows].map((l) => l.map(csvCell).join(",")).join("\r\n"); // the BOM makes Excel read accents correctly
@@ -62,7 +45,7 @@ export async function viewWorkspace(v, X, parts) {
   c.head = head;
   if (page === "schools" && S.isAdmin()) { head("Platform", "Every school, class and person on ACEIT."); v.append(tabBar("schools")); return pageSchools(c); }
   if (page === "school") { const sid = rest[1]; if (!managesSchool(sid) && !(await A.mySchools()).data.some((s) => s.school_id === sid)) return v.append(empty("You don't have access to that school.")); v.append(tabBar(S.isAdmin() ? "schools" : "school/" + sid)); return pageSchool(c, sid, rest[2] || "classes"); }
-  if (page === "class") { return pageClass(c, rest[1]); }
+  if (page === "class") { return pageClass(c, rest[1], rest.slice(2)); }
   if (page === "teaching") { head("My classes", "The classes you teach: progress, join codes and exam dates."); v.append(tabBar("teaching")); return pageTeaching(c); }
   if (page === "admins" && S.isAdmin()) { head("Platform admins", "People who can manage every school."); v.append(tabBar("admins")); return pageAdmins(c); }
   if (page === "people" && S.isAdmin()) { head("Find a person", "Look up an account to block it or remove it."); v.append(tabBar("people")); return pagePeople(c); }
@@ -112,12 +95,13 @@ async function pageSchool(c, sid, tab) {
   const sc = sr.data.find((s) => s.school_id === sid);
   if (!sc) return v.append(empty("School not found, or you don't have access to it."));
   const classes = cr.data, manage = managesSchool(sid), admin = S.isAdmin();
-  const tabs = [["classes", "Classes", "cards"], ["people", "Instructors", "users"], admin ? ["settings", "Settings", "gear"] : null, manage ? ["activity", "Activity", "history"] : null].filter(Boolean);
+  const tabs = [["classes", "Classes", "cards"], ["people", "Instructors", "users"], manage ? ["approvals", "Approvals", "check"] : null, admin ? ["settings", "Settings", "gear"] : null, manage ? ["activity", "Activity", "history"] : null].filter(Boolean);
   v.append(admin ? crumb("All schools", "schools") : "",
     h(".hero", h("h1", sc.name, sc.active ? "" : h("span.pill.bad", { style: "margin-left:10px;vertical-align:middle" }, "Suspended")), h("p", [sc.region, sc.courses.map(c.courseName).join(", ")].filter(Boolean).join(" · "))),
     h(".tiles", tile("Classes", sc.classes), tile("Instructors", sc.teachers), tile("Students", sc.students, sc.seat_limit ? `of ${sc.seat_limit} seats` : "no seat limit"), tile("Active this week", sc.active7)),
     h(".ws-tabs", tabs.map(([k, label, icon]) => h("button.chip" + (tab === k ? ".on" : ""), { onclick: () => go(`school/${sid}/${k}`) }, ic(icon, 16), label))));
   if (tab === "people") return v.append(await peopleTab(c, sc, classes));
+  if (tab === "approvals" && manage) return v.append(await reviewTab(c, sc));
   if (tab === "settings" && admin) return v.append(settingsTab(c, sc));
   if (tab === "activity" && manage) return v.append(await activityBlock(sid));
   const open = classes.filter((k) => !k.archived), arch = classes.filter((k) => k.archived);
@@ -227,6 +211,7 @@ function deleteSchoolCard(c, sc) {
   const accounts = h("input", { type: "checkbox" }); accounts.checked = true;
   const del = h("button.btn.warn", { onclick: () => busy(del, async () => {
     if (confirmBox.value.trim() !== sc.name) { toast("Type the school's name exactly to confirm"); return; }
+    for (const k of (await A.classesOf(sc.school_id)).data) await A.removeClassFolder(k.class_id); // the pictures instructors added
     const r = await A.deleteSchool(sc.school_id, accounts.checked); if (r.error) { toast(r.error.message); return; }
     toast(`School deleted${accounts.checked ? ` (${plural(r.data, "student account")} deleted)` : ""}`); go("schools");
   }) }, ic("trash", 16), "Delete this school");
@@ -253,17 +238,19 @@ async function pageTeaching(c) {
 }
 
 /* ---------- one class ---------- */
-async function pageClass(c, kid) {
-  const { v, X } = c, done = loading(v), [cs, ro] = await Promise.all([A.classesOf(null, kid), A.roster(kid)]); done();
+async function pageClass(c, kid, sub = []) {
+  const { v, X } = c, done = loading(v), [cs, ro, ir] = await Promise.all([A.classesOf(null, kid), sub[0] === "content" ? { data: [] } : A.roster(kid), sub[0] === "content" ? { data: [] } : A.items(kid)]); done();
   const cls = cs.data.find((k) => k.class_id === kid);
   if (!cls) return v.append(empty("Class not found, or you don't have access to it."));
+  if (sub[0] === "content") return viewContent(c, cls, sub.slice(1), managesSchool(cls.school_id)); // what instructors add to the class
   try { await X.ensureCourse(cls.course_id); } catch {} // lecture lists give the question text and per-lecture bars
   const manage = managesSchool(cls.school_id), rows = ro.data, col = c.courseColor(cls.course_id);
+  const added = new Map((ir.data || []).filter((i) => i.kind === "question").map((i) => [itemId(i.id), i.body])); // questions instructors wrote, for the hardest-questions list
   const backTo = manage ? "school/" + cls.school_id : "teaching";
   v.append(c.tabBar(S.isAdmin() ? "schools" : manage ? "school/" + cls.school_id : "teaching"), crumb(manage ? cls.school_name : "My classes", backTo),
     h(".hero", h("h1", cls.name, cls.archived ? h("span.pill.mute", { style: "margin-left:10px;vertical-align:middle" }, "Archived") : ""), h("p", [c.courseName(cls.course_id), cls.term, cls.school_name].filter(Boolean).join(" · "))),
     h(".tiles", tile("Students", cls.students, cls.max_students ? `of ${cls.max_students} seats` : ""), tile("Active this week", cls.active7), tile("Average progress", cls.avg_pct + "%"), tile("Average mastery", cls.avg_mastery + "%")),
-    codeCard(c, cls, manage), examCard(c, cls), rosterCard(c, cls, rows, col), insightsCard(c, cls, rows), manage ? teachersCard(c, cls) : "", feedbackCard(cls));
+    codeCard(c, cls, manage), examCard(c, cls), contentCard(c, cls), rosterCard(c, cls, rows, col), insightsCard(c, cls, rows, added), manage ? teachersCard(c, cls) : "", feedbackCard(cls));
 }
 
 function codeCard(c, cls, manage) {
@@ -279,7 +266,10 @@ function codeCard(c, cls, manage) {
     const term = (prompt("Term for the copy (for example Winter 2027):", "") || "").trim(); if (!term) return;
     const r = await A.createClass(cls.school_id, cls.course_id, (cls.term ? cls.name.split(cls.term).join("").trim() : cls.name) + " " + term, term, cls.max_students, ""); if (r.error) { toast(r.error.message); return; }
     for (const t of cls.teachers) await A.invite(t.email, "teacher", null, r.data);
-    toast("Class copied"); go("class/" + r.data);
+    const cp = await A.copyItems(cls.class_id, r.data); let note = "Class copied";
+    if (cp.error) { if (!/database upgrade/i.test(cp.error.message)) note += ". Its content could not be copied: " + cp.error.message; }
+    else { const failed = await A.copyPictures(cp.data || []); if (failed) note += `. ${plural(failed, "picture")} could not be copied`; }
+    toast(note); go("class/" + r.data);
   }) }, ic("copy", 16), "Copy for a new term");
   const save = h("button.btn.sm", { onclick: () => busy(save, async () => { const r = await A.updateClass(cls.class_id, nm.value.trim() || cls.name, term.value.trim(), +seats.value || null, exp.value || null, closed.checked); if (r.error) toast(r.error.message); else { toast("Saved"); c.X.route(); } }) }, ic("check", 16), "Save settings");
   return h(".card", { style: "margin-top:12px" }, h("h3", "Join code"), h(".src", { style: "margin:0 0 8px" }, "Students tap Join a class and type this code."),
@@ -333,13 +323,14 @@ function personRow(c, cls, r, col) {
   return d;
 }
 
-function insightsCard(c, cls, rows) {
+function insightsCard(c, cls, rows, added = new Map()) {
   const box = h("div", h(".src", "Loading..."));
   const quietList = rows.filter((r) => quiet(r.last_active));
   A.questionStats(cls.class_id).then((r) => {
     const byId = new Map();
     c.X.LECS.filter((l) => l.subject === cls.course_id).forEach((l) => (l.quiz || []).forEach((q) => q.q && byId.set(q.id, { q, where: l.title })));
     (c.X.EXAMS[cls.course_id]?.tests || []).forEach((t) => t.questions.forEach((q) => byId.set(q.id, { q, where: t.title })));
+    added.forEach((b, id) => byId.set(id, { q: { q: b.q }, where: "Added by an instructor" }));
     const hard = r.data.filter((x) => x.attempts >= 3 && byId.has(x.qid)).map((x) => ({ ...x, acc: x.correct / x.attempts, ...byId.get(x.qid) })).sort((a, b) => a.acc - b.acc).slice(0, 8);
     box.replaceChildren(h("b", { style: "font-size:.9rem" }, "Hardest questions (3+ attempts)"),
       hard.length ? h("div", hard.map((x) => h(".fb", { style: "margin-top:6px" }, h("b", `${Math.round(x.acc * 100)}% correct `), h("span.src", { style: "margin:0" }, `${plural(x.attempts, "attempt")} · ${x.where}`), h("div", String(x.q.q).split("\n")[0])))) : h(".src", "Not enough answers yet. This fills in as students take quizzes."),

@@ -7,6 +7,10 @@ import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const axeSource = readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
+import { writeFileSync, mkdtempSync } from "node:fs";
+import { tmpdir } from "node:os";
+import path from "node:path";
+const PNG = path.join(mkdtempSync(path.join(tmpdir(), "aceit-")), "tiny.png"); writeFileSync(PNG, Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==", "base64"));
 const b = await launch();
 let bad = 0, scanned = 0;
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -60,6 +64,15 @@ for (const scheme of ["light", "dark"]) {
   await open(p, "/?demo&role=admin#/work/admins"); await scan(p, "admins" + tag);
   await open(p, "/?demo&role=admin#/work/people"); await p.type("input[type=search]", "noah"); await wait(500); await scan(p, "find a person" + tag);
   await open(p, "/?demo&role=admin#/work/activity"); await scan(p, "activity" + tag);
+  // content editors with their extra parts showing: a question with every option, a note with a picture chosen, a preview, the checked paste screen, open panels
+  await open(p, "/?demo&role=instructor#/work/class/k-a1/content/edit/question/new/motion");
+  await p.evaluate(() => { const a = document.querySelector("input[aria-label='Option A']"); a.value = "A"; a.dispatchEvent(new Event("input")); const q = document.querySelector("textarea[aria-label='Question']"); q.value = "Which?"; q.dispatchEvent(new Event("input")); [...document.querySelectorAll("button")].find((x) => x.textContent.includes("Add an option")).click(); });
+  await click(p, "button", "Save as draft"); await wait(400); await scan(p, "question editor with an error message" + tag);
+  await p.evaluate(() => { const b = document.querySelector("input[aria-label='Option B']"); b.value = "B"; b.dispatchEvent(new Event("input")); document.querySelector("input[aria-label='Option B is the correct answer']").click(); }); await click(p, "button", "Preview"); await wait(300); await scan(p, "question editor with a preview" + tag);
+  await open(p, "/?demo&role=instructor#/work/class/k-a1/content/edit/note/new/motion");
+  const up = await p.$("input[type=file]"); await up.uploadFile(PNG); await wait(900); await scan(p, "note editor with a picture chosen" + tag);
+  await open(p, "/?demo&role=instructor#/work/class/k-a1/content/bulk/questions/motion"); await p.evaluate(() => { const t = document.querySelector("textarea"); t.value = "1. A?\na) x *\nb) y\n\n2. Broken\na) only"; }); await click(p, "button", "Check"); await wait(300); await scan(p, "paste screen after checking" + tag);
+  await open(p, "/?demo&role=instructor#/work/class/k-a1/content"); await p.evaluate(() => document.querySelectorAll("details.panel > summary").forEach((s) => s.click())); await click(p, "button", "Preview"); await wait(300); await scan(p, "class content with panels open" + tag);
   await open(p, "/?demo&role=admin#/work/content"); await scan(p, "content" + tag);
   await p.close();
 

@@ -16,7 +16,7 @@ const friendly = (e) => {
   if (/not licensed/.test(m)) return "This school isn't licensed for that course yet.";
   if (/code too short/.test(m)) return "Use at least 6 characters for a code.";
   if (/does not look like an email/.test(m)) return "That doesn't look like an email address.";
-  if (/PGRST202|Could not find the function/.test(m + (e?.code || ""))) return "The database upgrade has not been installed yet (supabase/RUN-ME-2.sql).";
+  if (/PGRST202|PGRST205|Could not find the (function|table)|does not exist/.test(m + (e?.code || ""))) return `The database upgrade has not been installed yet (supabase/${/class_item|review_queue|school_approval|class_media/.test(m) ? "RUN-ME-3" : "RUN-ME-2"}.sql).`;
   return m;
 };
 async function call(name, args) {
@@ -82,5 +82,44 @@ export const mfaRequiredFlag = async () => (await call("mfa_required")).data ===
 export const setRequireMfa = (flag) => call("admin_set_require_mfa", { flag });
 export const blockAccount = (uid, flag) => call("admin_set_blocked", { uid, flag });
 export const deleteAccount = (uid) => call("admin_delete_user", { uid });
+/* ----- what the class's staff add: notes, flashcards, questions, lectures, announcements ----- */
+export async function items(kid) {
+  if (S.DEMO) return { data: D.itemsOf(kid) };
+  const r = await S.sb.from("class_items").select("*").eq("class_id", kid).order("position");
+  return r.error ? { error: new Error(friendly(r.error)), data: [] } : { data: r.data || [] };
+}
+export const saveItem = (kid, k, ref, b, item_id, pos) => call("save_class_item", { kid, k, ref: ref || null, b, item_id: item_id || null, pos: pos ?? null });
+export const setItemStatus = (item_id, new_status, with_children) => call("set_class_item_status", { item_id, new_status, with_children: !!with_children });
+export const deleteItem = (item_id) => call("delete_class_item", { item_id });
+export const reorderItems = (kid, ids) => call("reorder_class_items", { kid, ids });
+export const copyItems = (from_kid, to_kid) => call("copy_class_items", { from_kid, to_kid });
+export const setApproval = (sid, flag) => call("set_school_approval", { sid, flag });
+export const reviewQueue = (sid) => rows("review_queue", { sid });
+
+/* ----- pictures: the class's private storage (see supabase/patch7.sql) ----- */
+const BUCKET = "class-media";
+const randomName = () => Array.from(crypto.getRandomValues(new Uint8Array(12)), (b) => b.toString(16).padStart(2, "0")).join("");
+export async function uploadPicture(kid, blob) {
+  if (S.DEMO) return D.uploadPicture(kid, blob);
+  const ext = blob.type === "image/png" ? "png" : blob.type === "image/jpeg" ? "jpg" : "webp", path = `${kid}/${randomName()}.${ext}`;
+  const r = await S.sb.storage.from(BUCKET).upload(path, blob, { contentType: blob.type, upsert: false });
+  return r.error ? { error: new Error(uploadProblem(r.error.message)) } : { path };
+}
+// the storage service words a refused insert as a row-level-security error: here that means the class already holds 400 pictures (or the sign-in ran out)
+const uploadProblem = (m) => /size|exceed/i.test(m) ? "That picture is too large (the limit is 1 MB)."
+  : /row.level security|unauthori[sz]ed|forbidden/i.test(m) ? "The picture could not be added. A class can hold 400 pictures, so delete ones you no longer use. If that is not the reason, sign in again and retry."
+  : m;
+export async function removePictures(paths) { const list = (paths || []).filter(Boolean); if (!list.length) return; if (S.DEMO) return D.removePictures(list); try { await S.sb.storage.from(BUCKET).remove(list); } catch {} }
+// copies the files named by copy_class_items; answers how many could not be copied
+export async function copyPictures(pairs) {
+  if (S.DEMO) { D.copyPictures(pairs); return 0; }
+  let failed = 0; for (const p of pairs || []) { const r = await S.sb.storage.from(BUCKET).copy(p.old_path, p.new_path).catch(() => ({ error: true })); if (r.error) failed++; }
+  return failed;
+}
+// every picture of a class (used when a school leaves)
+export async function removeClassFolder(kid) {
+  if (S.DEMO) return;
+  try { const { data } = await S.sb.storage.from(BUCKET).list(kid, { limit: 1000 }); await removePictures((data || []).map((f) => `${kid}/${f.name}`)); } catch {}
+}
 export const getDomains = async () => (await call("admin_get_domains")).data || "";
 export const setDomains = (list) => call("admin_set_domains", { list });

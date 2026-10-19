@@ -102,6 +102,7 @@ ok(isMarked(lec.title) && isMarked(lec.sections[0].title) && isMarked(lec.sectio
 ok(lec.sections[0].bullets[0] === MARK + "In **lecture** one we met the textbook.", "the words are kept exactly as written");
 ok(lec.sections[1].steps?.[0]?.img?.path === "k1/abcdefgh.webp" && lec.sections[1].bullets.length === 0 && lec.sections[1].steps[0].bullets.length === 1, "a note with a picture becomes one box: picture and its points");
 ok(lec.sections[0].id === itemId("a0000001-0000-4000-8000-000000000001") && /^cx[0-9a-f]{10}$/.test(lec.sections[0].id) && /^c[0-9a-f]{12}$/.test(lec.id), "ids are stable and cannot clash with the course's own");
+ok(new Set(items.filter((i) => i.kind !== "lecture").map((i) => itemId(i.id))).size === items.filter((i) => i.kind !== "lecture").length && lectureId(L1) !== lectureId(L2), "ids of different items differ, even when the ids only differ at one end");
 ok(lec.chapter === MARK + "ASTR 207 Section 1" && lec.icon === "\u{1F9EA}", "the label defaults to the class name");
 ok(asStudent.extra.motion.quiz.length === 1 && asStudent.extra.motion.cards.length === 0, "extra questions for a course lecture are kept apart; drafts are hidden from students");
 ok(asStudent.announcements.length === 1 && asStudent.announcements[0].title === MARK + "Midterm moved" && asStudent.announcements[0].by === "Dr. Rivera", "only current, published announcements");

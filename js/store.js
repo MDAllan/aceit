@@ -148,6 +148,7 @@ export async function loadClasses() {
     access = new Set(classes.map((x) => x.course_id));
     instructorOf = new Set(classes.filter((x) => x.role !== "student").map((x) => x.course_id));
     settings = examByCourse(classes);
+    await loadClassItems();
     return;
   }
   model = "legacy"; classes = []; managed = []; // legacy
@@ -157,6 +158,27 @@ export async function loadClasses() {
   try { const { data: ins } = await sb.from("class_instructors").select("class_id").eq("user_id", session.user.id); instructorOf = new Set((ins || []).map((x) => x.class_id)); } catch { instructorOf = new Set(); } // legacy
   try { const { data: st } = await sb.from("class_settings").select("*"); settings = Object.fromEntries((st || []).map((x) => [x.class_id, x])); } catch { settings = {}; } // legacy
 }
+/* ---------- what instructors added to the person's classes (notes, cards, questions, lectures, announcements) ---------- */
+export let classItems = [], itemsVersion = 0; // itemsVersion goes up whenever the list is reloaded, so the screens know to rebuild
+let demoItems = null, demoMedia = null;
+export const setDemoContent = (items, media) => { demoItems = items; demoMedia = media; };
+export async function loadClassItems() {
+  itemsVersion++;
+  if (DEMO) { classItems = demoItems ? demoItems() : []; return; }
+  const ids = [...new Set(classes.map((c) => c.class_id))];
+  if (!sb || !session || model !== "v2" || !ids.length || mfaGate) { classItems = []; return; }
+  const r = await sb.from("class_items").select("id,class_id,kind,lecture_ref,position,status,body,author_name,created_at,updated_at").in("class_id", ids);
+  classItems = r.error ? [] : r.data || []; // an error means the database upgrade for this feature is not installed yet: nothing was added
+}
+// the picture file of an item, from the class's private storage, as an address the page can show (cached for the session)
+const mediaCache = new Map();
+export function mediaUrl(path) {
+  if (DEMO) return Promise.resolve(demoMedia ? demoMedia(path) : null);
+  if (!sb || !path) return Promise.resolve(null);
+  if (!mediaCache.has(path)) mediaCache.set(path, sb.storage.from("class-media").download(path).then((r) => (r.error ? null : URL.createObjectURL(r.data)), () => null));
+  return mediaCache.get(path);
+}
+
 // one exam date per course for the student countdown: the nearest upcoming one, otherwise the most recent
 function examByCourse(rows) {
   const today = new Date().toISOString().slice(0, 10), out = {};
@@ -189,7 +211,7 @@ export async function signIn(email, password) {
   return r;
 }
 // "local" ends this device's session only; "global" ends every device's
-export async function signOut(scope = "local") { await sb.auth.signOut({ scope }); session = null; profile = null; access = new Set(); instructorOf = new Set(); settings = {}; classes = []; managed = []; lastSummary = ""; mfaGate = null; mfaLevel = "aal1"; }
+export async function signOut(scope = "local") { await sb.auth.signOut({ scope }); classItems = []; session = null; profile = null; access = new Set(); instructorOf = new Set(); settings = {}; classes = []; managed = []; lastSummary = ""; mfaGate = null; mfaLevel = "aal1"; }
 export async function forgot(email) {
   return sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname });
 }

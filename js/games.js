@@ -28,7 +28,7 @@ export function renderGame(b, lec, all) {
         const [icon, col, name, desc] = META[g], played = S.progress().games[lec.id + ":" + g];
         return h("button.card.gcard", { style: `animation:rise .4s var(--ease) ${i * 40}ms backwards;--gc:${GCOL[g] || col}`, onclick: () => start(g) },
           h(".gi", EMOJI[g] || ""), h("div", { style: "flex:1" }, h("b", name), h(".src", { style: "margin:0" }, desc)),
-          played ? h("span.pill", { style: "background:var(--ok)" }, "Played") : "");
+          played ? h("span.pill.ok", "Played") : "");
       })));
   };
   const start = (g) => {

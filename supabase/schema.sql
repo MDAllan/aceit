@@ -1414,9 +1414,15 @@ begin
     on conflict (id) do update set public = false, file_size_limit = excluded.file_size_limit, allowed_mime_types = excluded.allowed_mime_types;
     execute 'drop policy if exists "class media read" on storage.objects';
     execute $p$create policy "class media read" on storage.objects for select to authenticated using (bucket_id = 'class-media' and public.can_read_media(name))$p$;
+    -- a class may hold at most 400 picture files (the app deletes a picture when its item goes; this stops a runaway upload loop)
+    execute $f$create or replace function public.media_room(fname text) returns boolean
+      language sql security definer set search_path = public, storage stable as $g$
+        select (select count(*) from storage.objects o where o.bucket_id = 'class-media' and split_part(o.name, '/', 1) = split_part(fname, '/', 1)) < 400;
+      $g$
+    $f$;
     execute 'drop policy if exists "class media add" on storage.objects';
     execute $p$create policy "class media add" on storage.objects for insert to authenticated with check (bucket_id = 'class-media'
-      and name ~ '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/[A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$' and public.can_teach_class(public.media_class(name)))$p$;
+      and name ~ '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/[A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$' and public.can_teach_class(public.media_class(name)) and public.media_room(name))$p$;
     execute 'drop policy if exists "class media remove" on storage.objects';
     execute $p$create policy "class media remove" on storage.objects for delete to authenticated using (bucket_id = 'class-media' and public.can_teach_class(public.media_class(name)))$p$;
   end if;
@@ -1427,6 +1433,12 @@ grant execute on function
   public.save_class_item(uuid, text, text, jsonb, uuid, int), public.set_class_item_status(uuid, text, boolean), public.delete_class_item(uuid), public.reorder_class_items(uuid, uuid[]),
   public.copy_class_items(uuid, uuid), public.set_school_approval(uuid, boolean), public.review_queue(uuid), public.can_read_media(text), public.class_open(uuid)
 to authenticated;
+do $$ begin
+  if to_regprocedure('public.media_room(text)') is not null then
+    revoke all on function public.media_room(text) from public, anon;
+    grant execute on function public.media_room(text) to authenticated;
+  end if;
+end $$;
 revoke all on function public.txt_ok(jsonb, int, int), public.img_ok(jsonb), public.item_problem(text, jsonb) from public, anon, authenticated;
 revoke all on function public.save_class_item(uuid, text, text, jsonb, uuid, int), public.set_class_item_status(uuid, text, boolean), public.delete_class_item(uuid), public.reorder_class_items(uuid, uuid[]),
   public.copy_class_items(uuid, uuid), public.set_school_approval(uuid, boolean), public.review_queue(uuid) from anon;

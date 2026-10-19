@@ -1,4 +1,4 @@
-import { canSeeRefs } from "./store.js";
+import { canSeeRefs, mediaUrl } from "./store.js";
 
 export const $ = (s, r = document) => r.querySelector(s);
 
@@ -28,6 +28,7 @@ function add(el, a) {
 /* ---------- student-safe text ---------- */
 // Slide numbers, textbook sections and "outside source" notes are for the admin only.
 export function clean(t) {
+  if (typeof t === "string" && t.charCodeAt(0) === 0x2063) return t.slice(1); // text an instructor wrote is theirs: leave it exactly as written (see classcontent.js)
   if (canSeeRefs()) return String(t);
   let x = String(t)
     .replace(/^(?:Slides?|Textbook|Sed|Weathering)\s+[\d.]+[^:]{0,40}:\s*/i, "")
@@ -98,6 +99,12 @@ const P = {
   exam: "M6 3h9l4 4v14H6zM14 3v5h5M9 13h6M9 17h4",
   trophy: "M8 4h8v6a4 4 0 01-8 0zM8 6H4v1a4 4 0 004 4M16 6h4v1a4 4 0 01-4 4M12 14v4M8 21h8M9 18h6",
   lock: "M6 11h12v10H6zM8 11V7a4 4 0 018 0v4M12 15v2",
+  bell: "M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 01-3.4 0",
+  up2: "M12 19V5M5 12l7-7 7 7",
+  down2: "M12 5v14M19 12l-7 7-7-7",
+  edit: "M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z",
+  image: "M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zM8.5 11a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM21 16l-5-5-8 8",
+  send: "M22 2L11 13M22 2l-7 20-4-9-9-4z",
   /* workspace (staff) icons */
   users: "M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75",
   userplus: "M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM19 8v6M22 11h-6",
@@ -139,6 +146,15 @@ export function ic(name, size = 20) {
     s.append(p);
   }
   return s;
+}
+
+// A picture: the course's own figures have an address (src); a picture an instructor added lives in the class's private storage (path)
+// and is fetched when it is shown.
+export function pic(im, attrs = {}) {
+  const el = h("img", { alt: im.alt || "", ...attrs });
+  if (im.src) el.src = im.src;
+  else if (im.path) mediaUrl(im.path).then((u) => { if (u) el.src = u; else el.alt = (im.alt || "Picture") + " (could not be loaded)"; });
+  return el;
 }
 
 /* ---------- toasts, shuffle, confetti ---------- */

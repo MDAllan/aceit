@@ -1,6 +1,7 @@
 // The real (non-demo) code paths against a pretend Supabase: students, instructors, school managers, admins, a database that has not been upgraded.
 import { launch, SHOTS } from "./common.mjs";
 import { fakeSupabase, seedSession } from "./fake.mjs";
+import { lectureId } from "../../js/classcontent.js";
 const b = await launch();
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 let bad = 0;
@@ -165,6 +166,139 @@ const staffRpc = {
   const db = { v2: true, profile: prof(), classes: [klass({ role: "teacher" })], roles: [], claimed: 1, rpc: staffRpc };
   const p = await session(db);
   chk("welcome message after an invite is accepted", await p.evaluate(() => /invite was accepted/.test(document.querySelector("#toast").textContent)) || /invite was accepted/.test(await p.txt()));
+  await p.close_();
+}
+
+/* ---- 9. what instructors added to the class ---- */
+{
+  const L = "11111111-1111-4111-8111-111111111111", row = (id, kind, ref, status, body, extra = {}) => ({ id, class_id: "k1", kind, lecture_ref: ref, status, body, position: 1, author_name: "Dr. Rivera", created_at: "2026-10-10T10:00:00Z", updated_at: "2026-10-18T10:00:00Z", ...extra });
+  const items = [
+    row(L, "lecture", null, "published", { title: "Week 1 review", icon: "\u{1F9EA}" }),
+    row("a0000001-0000-4000-8000-000000000001", "note", L, "published", { title: "Start here", bullets: ["In **lecture** one we met the textbook. Read the book again."] }),
+    row("a0000001-0000-4000-8000-000000000002", "card", L, "published", { front: "Speed", back: "Distance over time" }),
+    row("a0000001-0000-4000-8000-000000000003", "question", L, "published", { q: "Which has a direction?", options: ["Speed", "Velocity"], answer: 1, why: "Velocity does." }),
+    row("a0000001-0000-4000-8000-000000000004", "question", "motion", "published", { q: "An extra question about motion?", options: ["Yes", "No"], answer: 0 }),
+    row("a0000001-0000-4000-8000-000000000005", "card", "motion", "published", { front: "Extra card front", back: "Extra card back" }),
+    row("a0000001-0000-4000-8000-000000000006", "note", "motion", "published", { title: "Picture note", bullets: ["See the picture"], img: { path: "k1/pic00001.webp", alt: "A small test picture" } }),
+    row("a0000001-0000-4000-8000-000000000007", "announcement", null, "published", { title: "Midterm moved to Friday", text: "Bring a calculator.", until: "2099-01-01" }),
+    row("a0000001-0000-4000-8000-000000000008", "announcement", null, "published", { title: "Old news", until: "2020-01-01" }),
+    row("a0000001-0000-4000-8000-000000000009", "question", "motion", "draft", { q: "A draft question", options: ["a", "b"], answer: 0 }),
+    row("a0000001-0000-4000-8000-00000000000a", "question", "motion", "review", { q: "A question waiting for approval", options: ["a", "b"], answer: 0 }),
+    row("a0000001-0000-4000-8000-00000000000b", "question", "motion", "published", { q: "A question of another class", options: ["a", "b"], answer: 0 }, { class_id: "k9" }),
+    row("22222222-2222-4222-8222-222222222222", "lecture", null, "published", { title: "Only one card" }),
+    row("a0000001-0000-4000-8000-00000000000c", "card", "22222222-2222-4222-8222-222222222222", "published", { front: "Lonely", back: "The only card here" }),
+  ];
+  const db = { v2: true, profile: prof(), classes: [klass()], roles: [], items };
+  const p = await session(db);
+  let t = await p.txt();
+  chk("the announcement is shown", /From your instructor/.test(t) && /Midterm moved to Friday/.test(t) && /Bring a calculator/.test(t) && /Dr\. Rivera/.test(t));
+  chk("expired announcements are not", !/Old news/.test(t));
+  chk("the class's own lecture is in the list, marked", /Week 1 review/.test(t) && /Added by your instructor/.test(t));
+  const base = await (await fetch("http://localhost:8765/content/manifest.json")).json();
+  await p.evaluate(() => { location.hash = "#/l/motion/quiz"; }); await wait(900); t = await p.txt();
+  chk("extra questions join the course lecture's quiz (drafts, approvals and other classes' items do not)", new RegExp(`${base.motion.quiz.length + 1} questions`).test(t), (t.match(/\d+ questions/) || [""])[0]);
+  await p.evaluate(() => { location.hash = "#/l/motion/cards"; }); await wait(900); t = await p.txt();
+  chk("extra cards join the cards", new RegExp(`of ${base.motion.cards.length + 1}`).test(t), (t.match(/Card 1 of \d+/) || [""])[0]);
+  await p.evaluate(() => { location.hash = "#/l/motion/notes"; }); await wait(900);
+  await p.evaluate(() => { const sel = document.querySelector("select[aria-label='Jump to topic']"); sel.value = String([...sel.options].findIndex((o) => o.textContent.includes("Picture note"))); sel.dispatchEvent(new Event("change")); }); await wait(900); t = await p.txt();
+  chk("the instructor's note is a page of the lecture, with its tag", /Picture note/.test(t) && /Your instructor/.test(t));
+  await wait(800);
+  chk("its picture is fetched from the private storage and shown", db.downloads?.includes("k1/pic00001.webp") && await p.evaluate(() => /^blob:/.test(document.querySelector(".figbtn img")?.src || "")), JSON.stringify(db.downloads));
+  await p.evaluate(() => { location.hash = "#/s/astr207"; }); await wait(700);
+  const ownId = await p.evaluate(() => [...document.querySelectorAll("button.lec")].find((x) => x.textContent.includes("Week 1 review")).click() || location.hash); await wait(900);
+  t = await p.txt();
+  chk("the own lecture opens with its note", /Start here/.test(t) && /Your instructor/.test(t), ownId);
+  chk("words about sources are left exactly as the instructor wrote them", /In lecture one we met the textbook\. Read the book again\./.test(t), (t.match(/In lecture[^\n]*/) || [""])[0]);
+  await p.evaluate(() => { location.hash = location.hash.replace("/notes", "/quiz"); }); await wait(700);
+  await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => x.textContent.includes("Start quiz")).click()); await wait(500); t = await p.txt();
+  chk("its quiz shows the question, marked as the instructor's", /Which has a direction\?/.test(t) && /From your instructor/.test(t));
+  const L2id = lectureId("22222222-2222-4222-8222-222222222222");
+  await p.evaluate((id) => { location.hash = `#/l/${id}/notes`; }, L2id); await wait(900); t = await p.txt();
+  chk("a lecture with no notes yet says so instead of breaking", /There are no notes in this lecture yet/.test(t) && /Only one card/.test(t));
+  await p.evaluate((id) => { location.hash = `#/l/${id}/quiz`; }, L2id); await wait(700);
+  chk("...and so does one with no questions", /No questions yet/.test(await p.txt()));
+  await p.evaluate((id) => { location.hash = `#/l/${id}/cards`; }, L2id); await wait(700);
+  chk("...and its single card is there", /Lonely/.test(await p.txt()));
+  chk("progress summaries count the added cards", db.summaryPosts.some((rows) => rows.some((r) => r.course_id === "astr207" && r.cards_total >= base.motion.cards.length + 2)), JSON.stringify(db.summaryPosts.at(-1)?.[0] || {}).slice(0, 120));
+  await p.close_();
+}
+{
+  const db = { v2: true, profile: prof(), classes: [klass()], roles: [], items: [], noItemsTable: true };
+  const p = await session(db);
+  chk("without the upgrade for this feature everything still works", /ASTR 207/.test(await p.txt()) && !/From your instructor/.test(await p.txt()));
+  await p.close_();
+}
+
+/* ---- 10. an instructor adds content (the calls the screens make) ---- */
+{
+  const png = Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==", "base64");
+  const { writeFileSync, mkdtempSync } = await import("node:fs"), { tmpdir } = await import("node:os"), nodePath = await import("node:path");
+  const pth = nodePath.join(mkdtempSync(nodePath.join(tmpdir(), "aceit-")), "tiny.png"); writeFileSync(pth, png);
+  const existing = { id: "a0000001-0000-4000-8000-000000000001", class_id: "k1", kind: "note", lecture_ref: "motion", status: "draft", position: 1, body: { title: "An old note", img: { path: "k1/oldpicture1.webp", alt: "Old picture" } }, author_name: "Sam", created_at: "2026-10-10T10:00:00Z", updated_at: "2026-10-10T10:00:00Z" };
+  const db = { v2: true, profile: prof(), classes: [klass({ role: "teacher" })], roles: [], items: [existing], rpc: { ...staffRpc,
+    staff_schools: [{ ...staffRpc.staff_schools[0], require_approval: false }],
+    save_class_item: (body) => (body.b.q === "Refuse me?" ? { __err: "Use 2 to 5 answer options." } : "b0000001-0000-4000-8000-000000000009"),
+    set_class_item_status: "published", delete_class_item: ["k1/oldpicture1.webp"], copy_class_items: [{ new_id: "c1", old_path: "k1/a.webp", new_path: "k2/a.webp" }], review_queue: [], set_school_approval: null, reorder_class_items: null } };
+  const p = await session(db);
+  await p.evaluate(() => { location.hash = "#/work/class/k1/content"; }); await wait(1500);
+  let t = await p.txt();
+  chk("the content screen loads the class's items from the database", /Class content/.test(t) && db.log.some((l) => /\/rest\/v1\/class_items\?.*class_id=eq\.k1/.test(l)));
+  await p.evaluate(() => { location.hash = "#/work/class/k1/content/edit/question/new/motion"; }); await wait(800);
+  const type = (sel, v) => p.evaluate((sel, v) => { const el = document.querySelector(sel); el.value = v; el.dispatchEvent(new Event("input", { bubbles: true })); }, sel, v);
+  await type("textarea[aria-label='Question']", "What is 2 + 2?"); await type("input[aria-label='Option A']", "3"); await type("input[aria-label='Option B']", "4");
+  await p.evaluate(() => document.querySelector("input[aria-label='Option B is the correct answer']").click());
+  const f = await p.$("input[type=file]"); await f.uploadFile(pth); await wait(900);
+  await type("input[aria-label='Picture description']", "A tiny picture");
+  await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => /Save as draft/.test(x.textContent)).click()); await wait(1500);
+  const sv = db.rpcCalls.find((c) => c.fn === "save_class_item");
+  chk("saving sends kid, kind, lecture, body, no item id", sv && sv.body.kid === "k1" && sv.body.k === "question" && sv.body.ref === "motion" && sv.body.item_id === null && sv.body.b.q === "What is 2 + 2?" && JSON.stringify(sv.body.b.options) === '["3","4"]' && sv.body.b.answer === 1, JSON.stringify(sv?.body).slice(0, 200));
+  chk("the picture was uploaded into this class's folder first and the item refers to it", db.uploads?.length === 1 && /^k1\/[0-9a-f]{24}\.(webp|jpg)$/.test(db.uploads[0].path) && sv.body.b.img.path === db.uploads[0].path && sv.body.b.img.alt === "A tiny picture", JSON.stringify(db.uploads));
+  // a refused save removes the picture that was just uploaded
+  await p.evaluate(() => { location.hash = "#/work/class/k1/content/edit/question/new/motion"; }); await wait(800);
+  await type("textarea[aria-label='Question']", "Refuse me?"); await type("input[aria-label='Option A']", "yes"); await type("input[aria-label='Option B']", "no");
+  await p.evaluate(() => document.querySelector("input[aria-label='Option A is the correct answer']").click());
+  const f2 = await p.$("input[type=file]"); await f2.uploadFile(pth); await wait(800); await type("input[aria-label='Picture description']", "Another picture");
+  await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => /Save as draft/.test(x.textContent)).click()); await wait(1500);
+  chk("when the database refuses the item, the new picture is deleted again and the message is shown", db.uploads.length === 2 && db.removed.includes(db.uploads[1].path) && /Use 2 to 5 answer options/.test(await p.txt()), JSON.stringify(db.removed));
+  // a class that already holds all the pictures it may: the upload is refused, the editor says why, nothing is saved
+  db.mediaFull = true; const uploadsBefore = db.uploads.length;
+  await p.evaluate(() => { location.hash = "#/work/class/k1/content/edit/question/new/motion"; }); await wait(800);
+  await type("textarea[aria-label='Question']", "No room?"); await type("input[aria-label='Option A']", "yes"); await type("input[aria-label='Option B']", "no");
+  await p.evaluate(() => document.querySelector("input[aria-label='Option A is the correct answer']").click());
+  const f2b = await p.$("input[type=file]"); await f2b.uploadFile(pth); await wait(800); await type("input[aria-label='Picture description']", "One too many");
+  await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => /Save as draft/.test(x.textContent)).click()); await wait(1500);
+  chk("a class that holds 400 pictures is told so in plain words, and the item is not saved", /400 pictures/.test(await p.txt()) && db.uploads.length === uploadsBefore && !db.rpcCalls.some((c) => c.fn === "save_class_item" && c.body.b.q === "No room?"), (await p.txt()).replace(/\s+/g, " ").slice(0, 100));
+  db.mediaFull = false;
+  // edit an item: its picture is replaced, the old file is removed after a successful save
+  await p.evaluate(() => { location.hash = "#/work/class/k1/content/edit/note/a0000001-0000-4000-8000-000000000001/motion"; }); await wait(1000);
+  chk("the existing item and its picture open for editing", await p.evaluate(() => document.querySelector("input[aria-label='Note title']")?.value === "An old note"));
+  const f3 = await p.$("input[type=file]"); await f3.uploadFile(pth); await wait(800);
+  await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => /Save changes/.test(x.textContent)).click()); await wait(1500);
+  const sv2 = db.rpcCalls.filter((c) => c.fn === "save_class_item").pop();
+  chk("editing sends the item id, and the replaced picture file is removed", sv2.body.item_id === existing.id && sv2.body.b.img.path !== "k1/oldpicture1.webp" && db.removed.includes("k1/oldpicture1.webp"), JSON.stringify(sv2.body).slice(0, 160));
+  // status and delete
+  await p.evaluate(() => { location.hash = "#/work/class/k1/content/lecture/motion"; }); await wait(1000);
+  await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => /^Publish/.test(x.textContent.trim())).click()); await wait(900);
+  const st = db.rpcCalls.find((c) => c.fn === "set_class_item_status");
+  chk("publishing sends item_id, new_status and with_children", st && st.body.item_id === existing.id && st.body.new_status === "published" && st.body.with_children === false, JSON.stringify(st?.body));
+  db.removed.length = 0;
+  await p.evaluate(() => [...document.querySelectorAll("button[aria-label^='Delete']")][0].click()); await wait(1000);
+  const del = db.rpcCalls.find((c) => c.fn === "delete_class_item");
+  chk("deleting sends item_id and removes the pictures the database names", del && del.body.item_id === existing.id && db.removed.includes("k1/oldpicture1.webp"), JSON.stringify(db.removed));
+  await p.close_();
+}
+{
+  const db = { v2: true, profile: prof(), classes: [], roles: [{ role: "manager", school_id: "s1", school_name: "Alpha University" }], items: [], rpc: { ...staffRpc, staff_classes: [], staff_schools: [{ ...staffRpc.staff_schools[0], require_approval: true }],
+    review_queue: [{ item_id: "q1", class_id: "k1", class_name: "ASTR 207 Section 1", kind: "question", lecture_ref: "motion", body: { q: "Please approve me?", options: ["a", "b"], answer: 0 }, author_name: "Dr. Rivera", updated_at: "2026-10-18T10:00:00Z" }],
+    set_class_item_status: "published", set_school_approval: null } };
+  const p = await session(db);
+  await p.evaluate(() => { location.hash = "#/work/school/s1/approvals"; }); await wait(1500);
+  let t = await p.txt();
+  chk("the school's Approvals tab asks review_queue for this school", t.includes("Please approve me?") && db.rpcCalls.some((c) => c.fn === "review_queue" && c.body.sid === "s1"));
+  await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => x.textContent.trim() === "Approve").click()); await wait(900);
+  chk("approving sends set_class_item_status published", db.rpcCalls.some((c) => c.fn === "set_class_item_status" && c.body.item_id === "q1" && c.body.new_status === "published"));
+  await p.evaluate(() => document.querySelector("label.check input").click()); await wait(700);
+  chk("the approval switch sends set_school_approval", db.rpcCalls.some((c) => c.fn === "set_school_approval" && c.body.sid === "s1" && c.body.flag === false));
   await p.close_();
 }
 

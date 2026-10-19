@@ -60,7 +60,7 @@ for sj in subjects:
         if len(set(ids)) != len(ids): bad(sj["exams"], "duplicate exam question ids")
 # the screens themselves must not talk about the source of the material either (admin-only lines are marked with "refs", "admin" or "canSeeRefs")
 UI_REF = re.compile(r"\b(prof['’]s|profs?|professors?|text ?books?|marshak)\b", re.I)
-for f in ("js/main.js", "js/games.js", "js/staff.js", "js/mfa.js"):
+for f in ("js/main.js", "js/games.js", "js/staff.js", "js/mfa.js", "js/author.js", "js/classcontent.js"):
     for n, line in enumerate(open(f, encoding="utf8"), 1):
         code = line.split("//")[0] if "http" not in line else line
         if UI_REF.search(code) and not re.search(r"admin|refs|canSeeRefs|REF\b", line):
