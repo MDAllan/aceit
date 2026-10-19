@@ -492,7 +492,7 @@ revoke all on function public.log_action(text, text, text) from public, anon, au
 
 -- 0. catalogue of courses (the content a class can use) ------------------------------------------------------------------
 create table if not exists public.courses (id text primary key, title text not null, active boolean not null default true);
-insert into public.courses (id, title) values ('erth209', 'Geology (ERTH 209)'), ('astr207', 'Astronomy (ASTR 207)') on conflict (id) do nothing;
+insert into public.courses (id, title) values ('erth209', 'Geology (ERTH 209)'), ('astr207', 'Astronomy (ASTR 207)'), ('biol305', 'Human Biology (BIOL 305)') on conflict (id) do nothing;
 alter table public.courses enable row level security;
 drop policy if exists "courses read" on public.courses;
 create policy "courses read" on public.courses for select using (auth.uid() is not null);

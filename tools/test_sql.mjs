@@ -78,12 +78,19 @@ if (process.env.MODE === "upgrade") {
   await q(`insert into public.class_instructors(user_id,class_id) values ($1,'astr207')`, [LI]);
   await q(`insert into public.class_settings(class_id,exam_name,exam_date) values ('astr207','Midterm','2026-11-02') on conflict (class_id) do update set exam_name='Midterm', exam_date='2026-11-02'`);
   await q(`update public.class_codes set code='cry@18' where class_id='astr207'`);
+  // BIOL 305 added to the older model with supabase/add-biol305.sql, one student already joined with its code
+  var LBIO = await mk("legacy.bio@x.ca", "Legacy Bio Student");
+  try { await q(read("add-biol305.sql")); } catch (e) { console.log("ADD-BIOL305 (older model) ERROR:", e.message); await finish(1); }
+  ok((await q(`select code from public.class_codes where class_id='biol305'`)).rows[0]?.code === "Ace305", "add-biol305.sql sets the BIOL 305 code in the older model");
+  ok((await keep(LBIO, (x) => x(`select public.redeem_class_by_code('Ace305') as c`))).rows[0].c === "biol305", "a student joins BIOL 305 with its code in the older model");
+  ok((await keep(LBIO, (x) => x(`select public.redeem_class_by_code('ace305') as c`))).rows[0].c === null, "older model: the code must match exactly (capital letters count)");
   try { await q(read("RUN-ME-2.sql")); ok(true, "RUN-ME-2.sql upgrades it"); } catch (e) { console.log("RUNME2 ERROR:", e.message); await finish(1); }
   try { await q(read("RUN-ME-3.sql")); ok(true, "RUN-ME-3.sql adds instructor content on top"); } catch (e) { console.log("RUNME3 ERROR:", e.message); await finish(1); }
   const cls = Object.fromEntries((await q(`select c.course_id, c.code, c.exam_name, c.exam_date::text d, (select count(*) from public.enrollments e where e.class_id=c.id)::int en, (select count(*) from public.class_teachers t where t.class_id=c.id)::int te from public.classes c`)).rows.map((r) => [r.course_id, r]));
   ok(cls.astr207?.code === "cry@18" && cls.erth209?.code === "madi@77", "the two existing classes keep their codes: " + JSON.stringify(cls));
   ok(cls.astr207?.exam_name === "Midterm" && cls.astr207?.d === "2026-11-02", "the exam date is carried over: " + JSON.stringify(cls.astr207));
   ok(cls.astr207?.en === 1 && cls.erth209?.en === 1 && cls.astr207?.te === 1, "existing students and the instructor are carried over: " + JSON.stringify(cls));
+  ok(cls.biol305?.code === "Ace305" && cls.biol305?.en === 1, "BIOL 305's code and the student who joined it are carried over: " + JSON.stringify(cls.biol305));
 } else {
   try { await q(read("schema.sql")); ok(true, "schema installs"); } catch (e) { console.log("SCHEMA ERROR:", e.message); await finish(1); }
 }
