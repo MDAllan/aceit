@@ -6,6 +6,7 @@ What is built, and what comes next, in the order that matters for selling to sch
 
 - Platform admin -> schools -> school managers + instructors -> classes -> students, enforced in the database and covered by 200+ automated tests (two schools, cross-school isolation, invites, seat limits, expiry, last-admin guard, two-step login, deletion).
 - Workspace screens for each role; per-class progress, hardest questions, quiet students, CSV export, exam dates, feedback; copy a class for a new term; delete a school that leaves.
+- **Instructors add their own content**: questions, flashcards and notes for the course's lectures, whole lectures of their own, announcements and pictures (private storage), drafts and publishing, optional manager approval, paste-many from documents and spreadsheets, copy to a new term. The database enforces the same rules as the app and is tested against it on thousands of generated examples.
 - Email invites (apply only to confirmed addresses), optional two-step login (can be required for staff), staff idle sign-out, log out everywhere.
 - No third-party code on the page; strict Content-Security-Policy; automated accessibility scan (WCAG 2.x A/AA) of about 80 screens in light and dark.
 - Documents for schools: security overview, pitch, quick starts, pilot plan, legal drafts.
@@ -22,9 +23,9 @@ What is built, and what comes next, in the order that matters for selling to sch
 
 | # | Item | Why | Effort |
 |---|---|---|---|
-| 1 | **Instructors add to their own class** (class overlay): extra quiz questions, flashcards, short notes and announcements stored per class and merged with the course on the client, checked with the same rules as `tools/check_content.py`, optional manager approval, never editing the shared course | Instructors asked for it; makes the product theirs | 2 days |
-| 2 | **Private picture storage**: serve figures from a private bucket with signed links, so pictures are protected like the lectures | Finishes content protection; needed once instructors can upload | 1 day |
-| 3 | **Full lecture authoring** with image upload | Lets a school bring its own course | 3 to 4 days |
+| 1 | **A shared library**: let an instructor offer questions, flashcards or whole lectures to other instructors of the same school (and later across schools), with the author credited | The next thing instructors ask for once they have written something good | 2 days |
+| 2 | Import a whole question set from Word or a spreadsheet file (today: paste), and export a class's content | Saves the first-time set-up for a big course | 1 day |
+| 3 | Version history for an item ("who changed what, restore the earlier wording") | Useful when several instructors share a class | 1 day |
 | 4 | CAPTCHA on sign-up and password reset (Cloudflare Turnstile) | Stops bulk fake accounts | half a day plus keys |
 | 5 | Roster import (CSV of emails) and bulk invite | Saves a school manager an hour per term | 1 day |
 | 6 | Weekly email digest for instructors (who is quiet, hardest questions) | The feature instructors remember | 1 day (needs the email sender) |

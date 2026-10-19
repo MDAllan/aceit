@@ -23,8 +23,8 @@ Every quiz answer in the first two courses (geology and astronomy) was checked a
 
 | Role | Sees | Controls |
 |---|---|---|
-| **Instructor** | Each student's progress in their classes, which questions the class finds hardest, who has gone quiet for a week | Join code, exam date, removing a student, CSV export |
-| **School manager** | Every class in the school, with progress and activity | Creating classes, inviting instructors, seat limits, code expiry, archiving, the school's audit trail |
+| **Instructor** | Each student's progress in their classes, which questions the class finds hardest, who has gone quiet for a week | Join code, exam date, removing a student, CSV export, **adding their own questions, flashcards, notes, lectures and announcements** (with pictures) |
+| **School manager** | Every class in the school, with progress and activity | Creating classes, inviting instructors, seat limits, code expiry, archiving, the school's audit trail, **optional approval of what instructors publish** |
 | **Platform admin (ACEIT)** | The whole service | Adding schools, courses per school, admins, account safety |
 
 Each school's information stays inside that school. Instructors see only their own classes.

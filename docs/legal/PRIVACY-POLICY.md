@@ -14,9 +14,10 @@ When ACEIT is used by a school, the **school decides** why and how its students'
 - A summary of that activity: percent complete, mastery, and the last time you opened ACEIT.
 - Messages you choose to send as feedback.
 - Technical error reports: an error message and the page it happened on.
+- Content written by instructors for their class (notes, flashcards, questions, announcements, lectures and pictures). This is the instructors' own work and is shown to the members of that class.
 - A record of actions taken by instructors, school managers and administrators (who did what, and when).
 
-We do not collect your date of birth, home address, phone number, photos, location, or grades from your school.
+We do not collect your date of birth, home address, phone number, photos of you, location, or grades from your school.
 
 ## 3. Why we use it
 

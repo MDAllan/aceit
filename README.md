@@ -4,6 +4,8 @@ Plain-language notes, flashcards, quizzes and games for several classes (ERTH 20
 
 **Who can do what:** platform admin -> schools -> school managers + instructors -> classes -> students. Each school sees only its own people. See `docs/SECURITY.md`.
 
+Instructors can add their own questions, flashcards, notes, whole lectures and announcements (with pictures) to their class, and a school can require a manager to approve what is published: class page > Class content. See `docs/QUICKSTART.md`.
+
 ## Add a lecture
 1. Add `content/<id>.json` (copy `content/biography.json` as the template).
 2. Add `"<id>"` to that course's `lectures` list in `content/subjects.json`.
@@ -22,10 +24,10 @@ Preview the staff screens with sample data (no login, no database), on localhost
 ## Backend
 - New project: run `supabase/schema.sql` once in Supabase > SQL Editor, then put the project's URL and public anon key in `config.js`.
 - Existing project (before schools existed): run `supabase/RUN-ME-2.sql` once. It is safe to run again. Until it is run the app keeps using the older per-course model.
-- `supabase/patch6.sql` is the source of `RUN-ME-2.sql` and of the end of `schema.sql`; `python tools/build_sql.py` keeps the copies in step.
+- `supabase/patch6.sql` (schools) and `supabase/patch7.sql` (what instructors add, with picture storage) are the sources of `RUN-ME-2.sql`, `RUN-ME-3.sql` and of the end of `schema.sql`; `python tools/build_sql.py` keeps the copies in step. Run `RUN-ME-2.sql` and then `RUN-ME-3.sql` on an existing project.
 
 ## Checks
-- `npm run check`: content checks (JSON, ids, answers, images, manifest, student-safe text), SQL copies in step, database calls match the database, logic tests.
+- `npm run check`: content checks (JSON, ids, answers, images, manifest, student-safe text), SQL copies in step, database calls match the database, logic tests, content tests (the rules for what instructors add).
 - `node tools/test_sql.mjs` (and `MODE=upgrade node tools/test_sql.mjs`): 190+ database security tests on a throwaway Postgres. Install it first: `npm i --no-save embedded-postgres pg`.
 - `node tools/test_sql_scale.mjs`: how fast the dashboards answer with 6,000 students in 200 classes (all under half a second).
 - `node tools/vendor.mjs`: rebuilds the self-hosted Supabase client and fonts (developer only).

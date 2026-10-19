@@ -5,6 +5,7 @@
 | Account (email, name) | While the account exists | The person deletes their account (Profile > Your data), or a school or ACEIT admin removes it. Removal also deletes progress, summaries and class memberships |
 | Study progress and summaries | Same as the account | Same. A student who leaves a class keeps their progress (it belongs to the account); a school can ask for it to be deleted |
 | Class and student records of a school | While the school uses ACEIT | On the school's request, ACEIT deletes the school's classes and students |
+| Content and pictures instructors add to a class | While the class exists | An instructor or manager deletes an item (its picture is deleted with it); deleting a school removes all its items and pictures. Pictures of an item that was deleted by other means are removed when the school is deleted |
 | Feedback messages | [12 months] or until the account is deleted | [Delete on request] |
 | Technical error reports | [90 days] | [Periodic clean-up] |
 | Audit trail of staff actions | [24 months] | Kept for accountability; cannot be edited. Removed with the school when it leaves |

@@ -3,7 +3,7 @@
 *Draft for legal review. Between [School] (the "School") and [ACEIT operator] ("ACEIT"). Replace this with the School's own template if it has one.*
 
 1. **Roles.** The School decides why and how its students' and staff members' personal information is used. ACEIT handles that information only on the School's behalf and instructions.
-2. **What is handled.** Names, email addresses, class memberships, study activity and summaries, feedback messages, and a record of staff actions, for the School's users. The categories are listed in `docs/SECURITY.md`, section 2. No sensitive categories are collected.
+2. **What is handled.** Names, email addresses, class memberships, study activity and summaries, feedback messages, a record of staff actions, and the content (text and pictures) the School's instructors add to their classes, for the School's users. The categories are listed in `docs/SECURITY.md`, section 2. No sensitive categories are collected.
 3. **Purpose.** Providing ACEIT to the School's classes: sign-in, showing course content, saving progress, and dashboards for the School's instructors and managers.
 4. **School's responsibilities.** To have the authority to share the information with ACEIT; to tell its users how it is used; to name its school managers; to remove staff access when someone leaves; to obtain any consent the law requires.
 5. **ACEIT's responsibilities.**

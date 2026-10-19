@@ -17,6 +17,16 @@ Check it worked (2 minutes):
 
 If something looks wrong, tell the developer which screen and what you saw. Do not delete tables.
 
+## 0a. Let instructors add their own content (once)
+
+Instructors and school managers can add their own notes, flashcards, questions, whole lectures and announcements to a class, with pictures. Students see an item only after it is published, and the course's own material is never changed.
+
+1. Supabase > SQL Editor > New query. Paste the whole of `supabase/RUN-ME-3.sql` and press Run. Run it after step 0. It must say "Success". It is safe to run again.
+2. It creates the storage for pictures: a **private** bucket called `class-media`. Check Supabase > Storage: it should be listed and marked private. Only a class's staff can add pictures, and a student can only read a picture that a published item of their own class uses.
+3. Open ACEIT as an instructor or manager. The class page now has a **Class content** card. A school can ask a manager to approve what instructors publish (School > Approvals).
+
+Until you run it nothing changes: the Class content screens just say the upgrade is not installed. A school that stops using ACEIT can be removed completely from Platform > Schools > (school) > Settings > Delete this school; that also removes its pictures.
+
 ## 1. Reliable emails (password resets, sign-ups, invites)
 
 Supabase's built-in sender allows only a few emails per hour, which is too few for a school.

@@ -17,17 +17,18 @@ For school IT teams, privacy officers and instructors who want to know how stude
 | Study progress: topics read, cards reviewed, quiz answers, games played | To resume where the student left off and to schedule revision |
 | A summary of that progress: percent complete, mastery, last time ACEIT was opened | So an instructor can see how a class is doing without downloading everyone's detail |
 | Feedback messages a student chooses to send | To improve the product |
+| Notes, flashcards, questions, lectures, announcements and pictures that instructors add to their class | So the class can use them. Pictures are stored privately, in a folder for that class |
 | Technical error reports (message, page) | To fix bugs |
 | An audit trail of staff actions (who, what, when) | Accountability |
 
-No date of birth, address, phone number, grades from the school's gradebook, photos or location is collected. Passwords are never visible to anyone (stored as salted hashes by the sign-in service).
+No date of birth, address, phone number, grades from the school's gradebook, photos of people or location is collected. Passwords are never visible to anyone (stored as salted hashes by the sign-in service).
 
 ## 3. Who can see what
 
 | Role | Can see |
 |---|---|
 | Student | Only their own information and their own classes' content |
-| Instructor | Name, email, progress and summary of the students in the classes they teach. The join code and exam date of those classes |
+| Instructor | Name, email, progress and summary of the students in the classes they teach. The join code and exam date of those classes. Can add their own content to those classes |
 | School manager | The same for every class in their school, plus the instructors of that school and that school's audit trail. Can create classes and invite instructors |
 | Platform admin | Everything, to run the service. Can add schools, add admins, block or delete accounts |
 
@@ -47,6 +48,7 @@ These rules are enforced **in the database** (row level security and permission-
 
 - Strict Content-Security-Policy: scripts, styles, fonts and images only from the site itself; connections only to the site and the Supabase API; no inline scripts; no `eval`.
 - All text from people (names, class names, feedback) is shown as text, never as HTML. Spreadsheet exports neutralise formulas.
+- **Instructor-added content** is checked by the database with the same rules the app uses (length limits, no unexpected fields, a description for every picture, 600 items per class), and is always shown as text, never as web page code. Drafts are visible only to the class's staff; a school can require a manager's approval before anything is published. Pictures live in a private storage bucket: only the class's staff can add files (pictures only, 1 MB each, at most 400 per class), and a student can read a picture only if a published item of their own class uses it. Adding, publishing, approving and deleting are in the audit trail.
 - The single third-party library (Supabase client) is bundled into the site and pinned to a version (`tools/vendor.mjs`), so a compromised CDN cannot change what runs.
 - The page refuses to display inside another site's frame.
 - Accessibility is checked automatically (axe-core, WCAG 2.x A and AA rules) on about 80 screens, in light and dark, on every change. This catches many but not all problems; a manual review is planned.
