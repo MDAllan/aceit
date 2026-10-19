@@ -89,7 +89,8 @@ export async function items(kid) {
   return r.error ? { error: new Error(friendly(r.error)), data: [] } : { data: r.data || [] };
 }
 export const saveItem = (kid, k, ref, b, item_id, pos) => call("save_class_item", { kid, k, ref: ref || null, b, item_id: item_id || null, pos: pos ?? null });
-export const setItemStatus = (item_id, new_status, with_children) => call("set_class_item_status", { item_id, new_status, with_children: !!with_children });
+// expected_at: the updated_at of the version the manager looked at (see set_class_item_status in supabase/patch7.sql)
+export const setItemStatus = (item_id, new_status, with_children, expected_at) => call("set_class_item_status", { item_id, new_status, with_children: !!with_children, ...(expected_at ? { expected_at } : {}) });
 export const deleteItem = (item_id) => call("delete_class_item", { item_id });
 export const reorderItems = (kid, ids) => call("reorder_class_items", { kid, ids });
 export const copyItems = (from_kid, to_kid) => call("copy_class_items", { from_kid, to_kid });

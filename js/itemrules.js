@@ -11,12 +11,12 @@ export const ICONS = ["\u{1F4D8}", "\u{1F4D7}", "\u{1F4D9}", "\u{1F4D5}", "\u{1F
 // text written by an instructor is stored without this invisible marker; the app adds it when showing the text (see classcontent.js)
 export const MARK = String.fromCharCode(0x2063);
 
-const FORBIDDEN = /[\x01-\x08\x0b\x0c\x0e-\x1f\x7f]/; // control characters (tab, new line and return are fine)
+const FORBIDDEN = /[\x01-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f\u200b\u2028-\u202e\u2066-\u2069\ufeff]/; // control characters and invisible spacing or direction characters (tab, new line and return are fine)
 const trim = (s) => s.replace(/^[ \t\r\n]+|[ \t\r\n]+$/g, "");
 const count = (s) => Array.from(s).length; // characters, counted the way the database counts them
 
-// a string that is clean and between lo and hi characters long once the ends are trimmed
-export const text = (v, lo, hi) => typeof v === "string" && !FORBIDDEN.test(v) && !v.includes(MARK) && count(trim(v)) >= lo && count(trim(v)) <= hi;
+// a string that is clean, already trimmed, and between lo and hi characters long
+export const text = (v, lo, hi) => typeof v === "string" && !FORBIDDEN.test(v) && !v.includes(MARK) && trim(v) === v && count(v) >= lo && count(v) <= hi;
 const only = (b, keys) => Object.keys(b).every((k) => keys.includes(k));
 const has = (b, k) => Object.prototype.hasOwnProperty.call(b, k);
 const isObject = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
@@ -84,9 +84,10 @@ export function problem(kind, b) {
   return "Unknown kind of item.";
 }
 
-// tidy what an editor collected: trim the ends of every text and drop optional fields that are empty
+// tidy what an editor collected: take out invisible characters that pasted text carries, trim the ends of every text and drop optional fields that are empty
+const INVISIBLE = /[\x80-\x9f\u200b\u202a-\u202e\u2066-\u2069\ufeff]/g, LINE_SEP = /[\u2028\u2029]/g;
 export function tidy(kind, b) {
-  const t = (v) => (typeof v === "string" ? trim(v) : v), out = {};
+  const t = (v) => (typeof v === "string" ? trim(v.replace(INVISIBLE, "").replace(LINE_SEP, "\n")) : v), out = {};
   const put = (k, v, optional) => { if (v === undefined || v === null) return; if (optional && (v === "" || (Array.isArray(v) && !v.length))) return; out[k] = v; };
   if (kind === "question") { put("q", t(b.q)); put("options", (b.options || []).map(t)); put("answer", b.answer); put("why", t(b.why), true); }
   if (kind === "card") { put("front", t(b.front)); put("back", t(b.back)); put("short", t(b.short), true); }

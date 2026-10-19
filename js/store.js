@@ -172,10 +172,13 @@ export async function loadClassItems() {
 }
 // the picture file of an item, from the class's private storage, as an address the page can show (cached for the session)
 const mediaCache = new Map();
+// a picture is a plain file inside a class's folder, named the way the app names them (the database refuses anything else); the storage library
+// does not encode the path it is given, so anything odd is never sent
+const MEDIA_PATH = /^[A-Za-z0-9-]{1,64}[/][A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$/;
 export function mediaUrl(path) {
   if (DEMO) return Promise.resolve(demoMedia ? demoMedia(path) : null);
-  if (!sb || !path) return Promise.resolve(null);
-  if (!mediaCache.has(path)) mediaCache.set(path, sb.storage.from("class-media").download(path).then((r) => (r.error ? null : URL.createObjectURL(r.data)), () => null));
+  if (!sb || !path || !MEDIA_PATH.test(path)) return Promise.resolve(null);
+  if (!mediaCache.has(path)) mediaCache.set(path, sb.storage.from("class-media").download(path).then((r) => (r.error || !/^image[/]/.test(r.data.type || "") ? null : URL.createObjectURL(r.data)), () => null));
   return mediaCache.get(path);
 }
 

@@ -45,6 +45,7 @@ await q(`create role anon nologin; create role authenticated nologin;
   grant usage on schema auth to anon, authenticated; grant usage on schema public to anon, authenticated;
   alter default privileges in schema public grant all on tables to anon, authenticated;
   alter default privileges in schema public grant all on sequences to anon, authenticated;
+  alter default privileges in schema public grant execute on functions to anon, authenticated; -- like Supabase: a new function can be run by everyone unless the patch revokes it
   create schema storage;
   create table storage.buckets (id text primary key, name text, public boolean default false, file_size_limit bigint, allowed_mime_types text[]);
   create table storage.objects (id uuid primary key default gen_random_uuid(), bucket_id text references storage.buckets(id), name text, owner uuid, metadata jsonb, created_at timestamptz default now());
@@ -94,12 +95,9 @@ if (process.env.MODE === "upgrade") {
 } else {
   try { await q(read("schema.sql")); ok(true, "schema installs"); } catch (e) { console.log("SCHEMA ERROR:", e.message); await finish(1); }
 }
-await q(`grant all on all tables in schema public to anon, authenticated; grant execute on all functions in schema public to anon, authenticated;`);
-for (const fn of ["log_action(text,text,text,uuid)", "email_ok(uuid)", "apply_invites_for(uuid)", "on_user_confirmed()", "audit_immutable()", "make_code()", "txt_ok(jsonb,int,int)", "img_ok(jsonb)", "item_problem(text,jsonb)"]) await q(`revoke all on function public.${fn} from public, anon, authenticated`);
+// (no blanket grants here: the privileges are exactly what the patches leave, as in the real project)
 // the patches must be safe to run again
 for (const f of ["patch5.sql", "patch6.sql", "RUN-ME-2.sql", "patch7.sql", "RUN-ME-3.sql"]) { try { await q(read(f)); ok(true, f + " reruns cleanly"); } catch (e) { ok(false, f + " rerun: " + e.message); } }
-await q(`grant all on all tables in schema public to anon, authenticated; grant execute on all functions in schema public to anon, authenticated;`);
-for (const fn of ["log_action(text,text,text,uuid)", "email_ok(uuid)", "apply_invites_for(uuid)", "on_user_confirmed()", "audit_immutable()", "make_code()", "txt_ok(jsonb,int,int)", "img_ok(jsonb)", "item_problem(text,jsonb)"]) await q(`revoke all on function public.${fn} from public, anon, authenticated`);
 
 // ---- people ----
 const adminEmail = (await q(`select value from public.app_secrets where key='admin_email'`)).rows[0].value;
@@ -366,9 +364,11 @@ const QA = { q: "What is the capital of France?", options: ["Berlin", "Paris", "
 // the database and the app agree on what is a valid item (hundreds of generated examples)
 {
   let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647, pick = (a) => a[Math.floor(rnd() * a.length)];
-  const long = (n) => "x".repeat(n), M = String.fromCharCode(0x2063);
+  const long = (n) => "x".repeat(n), M = String.fromCharCode(0x2063), ch = (c) => String.fromCharCode(c);
+  // text with untrimmed ends, invisible direction and spacing characters, and joiners that are fine
+  const ODD = [" lead", "trail ", ch(10) + "lead", "trail" + ch(10), ch(9) + "tab", ch(0xa0) + "nbsp", "a" + ch(0x80) + "b", "a" + ch(0x85) + "b", "a" + ch(0x9f) + "b", "a" + ch(0x7f) + "b", "zero" + ch(0x200b) + "width", "joiner" + ch(0x200d) + "ok", "nonjoiner" + ch(0x200c) + "ok", "mark" + ch(0x200f) + "ok", "ls" + ch(0x2028) + "x", "ps" + ch(0x2029) + "x", "rlo" + ch(0x202e) + "x", "lre" + ch(0x202a) + "x", "pdf" + ch(0x202c) + "x", "lri" + ch(0x2066) + "x", "pdi" + ch(0x2069) + "x", "bom" + ch(0xfeff) + "x", "naïve café"];
   const bases = { question: QA, card: { front: "Term", back: "Meaning", short: "Short" }, note: { title: "Title", bullets: ["a", "b"], img: { path: "abc/defghijk.webp", alt: "alt" } }, lecture: { title: "Week", chapter: "Ch", icon: "\u{1F4D8}", intro: "Hi" }, announcement: { title: "News", text: "Text", until: "2026-11-02" } };
-  const junk = [null, 0, 1, 2, 3, -1, 2.5, 1000, "", " ", "  ", "x", "ab", long(3), long(4), long(60), long(61), long(100), long(101), long(120), long(121), long(150), long(151), long(200), long(201), long(300), long(301), long(500), long(501), long(700), long(701), long(800), long(801), true, false, [], {}, ["a"], ["a", "a"], ["a", "A "], ["a", "b", "c", "d", "e"], ["a", "b", "c", "d", "e", "f"], "tab\there", "line\nbreak", "bad\u0001ctrl", "has" + M + "mark", "\u{1F600}\u{1F600}", "\u{1F600}".repeat(8), "\u{1F600}".repeat(9), "2026-02-30", "2026-13-01", "1999-12-31", "2101-01-01", "2026-11-02", { path: "p/qrstuvwx.png", alt: "a" }, { path: "p", alt: "a" }, { path: "p/qrstuvwx.png", alt: "" }, { path: "p/qrstuvwx.png", alt: "a", extra: 1 }, Array(15).fill("p"), Array(16).fill("p")];
+  const junk = [null, 0, 1, 2, 3, -1, 2.5, 1000, "", " ", "  ", "x", "ab", long(3), long(4), long(60), long(61), long(100), long(101), long(120), long(121), long(150), long(151), long(200), long(201), long(300), long(301), long(500), long(501), long(700), long(701), long(800), long(801), true, false, [], {}, ["a"], ["a", "a"], ["a", "A "], ["a", "b", "c", "d", "e"], ["a", "b", "c", "d", "e", "f"], "tab\there", "line\nbreak", "bad\u0001ctrl", "has" + M + "mark", "\u{1F600}\u{1F600}", "\u{1F600}".repeat(8), "\u{1F600}".repeat(9), "2026-02-30", "2026-13-01", "1999-12-31", "2101-01-01", "2026-11-02", { path: "p/qrstuvwx.png", alt: "a" }, { path: "p", alt: "a" }, { path: "p/qrstuvwx.png", alt: "" }, { path: "p/qrstuvwx.png", alt: "a", extra: 1 }, Array(15).fill("p"), Array(16).fill("p"), ...ODD];
   const cases = [];
   for (const [kind, base] of Object.entries(bases)) {
     cases.push([kind, base]);
@@ -457,6 +457,31 @@ await item(M1, KA, "question", "motion", { ...QA, q: "A question that needs appr
 await item(M1, KA, "question", "motion", { ...QA, q: "A question that needs approval? (second manager edit)" }, Q2);
 ok((await q(`select status s from public.class_items where id=$1`, [Q2])).rows[0].s === "published", "a manager's edit stays published");
 ok(await status(T1, Q2, "draft") === "draft" && (await seen(S1, KA)) === 5, "an instructor can always take an item back to draft");
+// re-publishing a lecture the manager already approved must not publish what is still waiting inside it
+{
+  const LA = await item(T1, KA, "lecture", null, { title: "Approved lecture" });
+  await status(M1, LA, "published");
+  const inner = await item(T1, KA, "card", LA, { front: "Inner card", back: "Not approved yet" });
+  ok(await status(T1, LA, "published", true) === "published", "an instructor re-publishes a lecture the manager already approved");
+  ok((await q(`select status s from public.class_items where id=$1`, [inner])).rows[0].s === "review" && (await rows(S1, `select id from public.class_items where id=$1`, [inner])).length === 0, "...but the card inside it that nobody approved waits for approval, it is not published");
+  ok((await rows(M1, `select item_id from public.review_queue($1)`, [A])).some((r) => r.item_id === inner), "...and the manager sees it in the queue");
+  ok(await status(T1, LA, "draft", true) === "draft" && (await q(`select status s from public.class_items where id=$1`, [inner])).rows[0].s === "draft", "taking the lecture back takes its items back too");
+  await status(M1, LA, "published", true);
+  ok((await rows(S1, `select id from public.class_items where id=$1`, [inner])).length === 1, "when the manager publishes the lecture with its items they are published");
+  await q(`delete from public.class_items where id=$1::uuid or lecture_ref=$1::text`, [LA]);
+}
+// a manager approves the version they looked at, not whatever is there when they press the button
+{
+  const QD = await item(T1, KA, "question", "motion", { ...QA, q: "Version one of the question?" });
+  ok(await status(T1, QD, "published") === "review", "an instructor submits a question for approval");
+  const looked = (await q(`select updated_at::text t from public.class_items where id=$1`, [QD])).rows[0].t;
+  await item(T1, KA, "question", "motion", { ...QA, q: "Version two, changed after the manager looked?" }, QD);
+  ok(await fails(() => keep(M1, (x) => x(`select public.set_class_item_status($1,'published',false,$2::timestamptz)`, [QD, looked])), /changed after you opened/), "a manager cannot approve a version they did not see");
+  ok((await q(`select status s from public.class_items where id=$1`, [QD])).rows[0].s === "review", "...it stays in the queue");
+  const nowAt = (await q(`select updated_at::text t from public.class_items where id=$1`, [QD])).rows[0].t;
+  ok((await keep(M1, (x) => x(`select public.set_class_item_status($1,'published',false,$2::timestamptz) s`, [QD, nowAt]))).rows[0].s === "published", "approving the version they did see works");
+  await q(`delete from public.class_items where id=$1`, [QD]);
+}
 await keep(M1, (x) => x(`select public.set_school_approval($1,false)`, [A]));
 ok(await status(T1, Q2, "published") === "published", "without the approval rule an instructor publishes directly");
 ok(await status(T1, QM, "review") === "published", "(asking for review in such a school just publishes)");
@@ -497,6 +522,8 @@ await q(`insert into public.class_items(class_id,kind,lecture_ref,body,status) s
 const kbn = (await q(`select count(*)::int n from public.class_items where class_id=$1 and lecture_ref='plates'`, [KB])).rows[0].n;
 for (let i = kbn; i < 200; i++) await item(T2, KB, "card", "plates", { front: "f" + i, back: "b" });
 ok(await fails(() => item(T2, KB, "card", "plates", { front: "one too many", back: "b" }), /200 items/), "a lecture holds at most 200 items");
+const MV = await item(T2, KB, "card", "motion", { front: "mover", back: "b" });
+ok(await fails(() => item(T2, KB, "card", "plates", { front: "mover", back: "b" }, MV), /200 items/), "moving an item into a full lecture is refused too");
 const total = (await q(`select count(*)::int n from public.class_items where class_id=$1`, [KB])).rows[0].n;
 await q(`insert into public.class_items(class_id,kind,lecture_ref,body,status) select $1,'card','other-'||(g/150),'{"front":"f","back":"b"}','draft' from generate_series(1, $2) g`, [KB, 600 - total]);
 ok(await fails(() => item(T2, KB, "card", "motion", { front: "over", back: "the class limit" }), /600 items/), "a class holds at most 600 items");
@@ -531,6 +558,112 @@ ok(!!(await put(T1, `${KA}/lastone01.webp`)), "the 400th picture file of a class
 ok(await fails(() => put(T1, `${KA}/onetoomany.webp`)), "the 401st is refused");
 ok(!!(await put(T2, `${KB}/other-class.webp`)), "another class has its own allowance");
 await q(`delete from storage.objects where name like $1 and name <> $2`, [KA + "/fill%", `${KA}/picture01.webp`]);
+
+// ---- hardening found by an independent review ----
+// only people who are logged in can run the functions at all
+{
+  const sigs = ["save_class_item(uuid,text,text,jsonb,uuid,integer)", "set_class_item_status(uuid,text,boolean,timestamptz)", "delete_class_item(uuid)", "reorder_class_items(uuid,uuid[])", "copy_class_items(uuid,uuid)", "set_school_approval(uuid,boolean)", "review_queue(uuid)", "class_open(uuid)", "can_read_media(text)", "media_class(text)", "class_writable(uuid)", "media_room(text)"].map((s) => "public." + s);
+  const priv = async (role, sig) => (await q(`select has_function_privilege($1, $2::regprocedure, 'execute') ok`, [role, sig])).rows[0].ok;
+  ok((await Promise.all(sigs.map((s) => priv("anon", s)))).every((v) => v === false), "visitors who are not logged in can run none of the instructor-content functions");
+  ok((await Promise.all(sigs.map((s) => priv("authenticated", s)))).every((v) => v === true), "...and logged-in people can");
+  ok((await priv("authenticated", "public.require_class_staff(uuid)")) === false && (await priv("authenticated", "public.item_problem(text,jsonb)")) === false, "the internal helpers cannot be run by anyone from outside");
+  const names = ["join_class", "my_classes", "my_roles", "admin_create_school", "admin_update_school", "admin_delete_school", "admin_set_school_course", "create_class", "update_class", "set_class_code", "set_class_exam", "remove_student", "leave_class", "claim_invites", "invite_user", "revoke_invite", "remove_teacher", "remove_manager", "admin_set_admin", "list_admins", "admin_set_confirm_email", "admin_get_confirm_email", "admin_set_require_mfa", "mfa_required", "staff_schools", "staff_classes", "class_roster", "class_question_stats", "staff_people", "list_invites", "submit_feedback"];
+  const open = (await q(`select p.oid::regprocedure::text f from pg_proc p where p.pronamespace = 'public'::regnamespace and p.proname = any($1) and has_function_privilege('anon', p.oid, 'execute')`, [names])).rows.map((r) => r.f);
+  ok(open.length === 0, "...nor the schools, classes and invites functions: " + open.join(", "));
+  ok((await q(`select count(distinct p.proname)::int n from pg_proc p where p.pronamespace = 'public'::regnamespace and p.proname = any($1)`, [names])).rows[0].n === names.length, "(and every name in that list is a real function)");
+}
+// pictures must be exactly this class's files, not anything that merely starts with its id
+{
+  const bad = [`${KA}/../abcdefgh.webp`, `${KA}/abcdefgh`, `${KA}/abcdefgh.svg`, `${KA}/short.webp`, `${KA}/${"a".repeat(65)}.webp`, `${KA}/dir/abcdefgh.webp`, `${KA}/abcdefgh.webp?x=1`, `${KA}/abcdefgh.WEBP`, `${KA}/`, `${KA}/${KA}/abcdefgh.webp`];
+  const rejected = [];
+  for (const path of bad) if (!await fails(() => item(T1, KA, "question", "motion", { ...QA, img: { path, alt: "A picture" } }), /file name is not valid/)) rejected.push(path);
+  ok(rejected.length === 0, "picture paths that are not a plain file in this class's folder are refused: " + rejected.join(" | "));
+  const good = [`${KA}/abcdefgh.webp`, `${KA}/ABCD_efgh-12.jpg`, `${KA}/${"a".repeat(64)}.png`];
+  const accepted = [];
+  for (const path of good) accepted.push(await item(T1, KA, "question", "motion", { ...QA, img: { path, alt: "A picture" } }));
+  ok(accepted.every(Boolean), "...while the file names the app makes are accepted");
+  await q(`delete from public.class_items where id = any($1::uuid[])`, [accepted]);
+}
+// invisible direction and spacing characters, and text with untrimmed ends
+{
+  const ch = (c) => String.fromCharCode(c);
+  const verdict = async (front) => ({ db: (await q(`select public.item_problem('card', $1::jsonb) is null v`, [JSON.stringify({ front, back: "Meaning" })])).rows[0].v, app: appProblem("card", { front, back: "Meaning" }) === null });
+  const slipped = [];
+  for (const c of [0x80, 0x85, 0x9f, 0x200b, 0x2028, 0x2029, 0x202a, 0x202b, 0x202c, 0x202d, 0x202e, 0x2066, 0x2067, 0x2068, 0x2069, 0xfeff]) { const v = await verdict("a" + ch(c) + "b"); if (v.db || v.app) slipped.push(c.toString(16)); }
+  ok(slipped.length === 0, "the database and the app both refuse invisible direction and spacing characters: " + slipped.join(","));
+  const wrongly = [];
+  for (const f of ["a" + ch(0x200d) + "b", "a" + ch(0x200c) + "b", "a" + ch(0x200f) + "b", "naïve café", "\u{1F469}" + ch(0x200d) + "\u{1F52C}"]) { const v = await verdict(f); if (!(v.db && v.app)) wrongly.push(JSON.stringify(f)); }
+  ok(wrongly.length === 0, "...while joiners, accents and emoji are fine: " + wrongly.join(" "));
+  const untrimmed = [];
+  for (const f of [" leading", "trailing ", ch(10) + "leading", "trailing" + ch(10), ch(9) + "tab", "ok" + ch(13) + ch(10)]) { const v = await verdict(f); if (v.db || v.app) untrimmed.push(JSON.stringify(f)); }
+  ok(untrimmed.length === 0, "text must already be trimmed, so a question cannot hide thousands of blank lines: " + untrimmed.join(" "));
+  ok(await fails(() => item(T1, KA, "question", "motion", { ...QA, q: "Why?" + ch(10).repeat(20000) }), /Write the question/), "...(20,000 trailing new lines are refused)");
+}
+// a blocked account loses its staff powers at once
+{
+  const QB = await item(T1, KA, "question", "motion", { ...QA, q: "A question for the blocked-account test?" });
+  await keep(ADMIN, (x) => x(`select public.admin_set_blocked($1,true)`, [T1]));
+  ok(await fails(() => item(T1, KA, "question", "motion", QA), /instructors only/), "a blocked instructor cannot add items");
+  ok(await fails(() => status(T1, QB, "published"), /instructors only/) && await fails(() => keep(T1, (x) => x(`select public.delete_class_item($1)`, [QB])), /instructors only/), "...or publish or delete them");
+  ok(await fails(() => keep(T1, (x) => x(`select public.reorder_class_items($1,$2::uuid[])`, [KA, [QB]])), /instructors only/) && await fails(() => put(T1, `${KA}/blockedup1.webp`)), "...or reorder them or upload pictures");
+  ok((await seen(T1, KA)) === 0, "...and the class's drafts are hidden from them");
+  await keep(ADMIN, (x) => x(`select public.admin_set_blocked($1,false)`, [T1]));
+  ok(!!(await item(T1, KA, "question", "motion", { ...QA, q: "Back at work?" })), "unblocked, the instructor can work again");
+  await keep(ADMIN, (x) => x(`select public.admin_set_blocked($1,true)`, [M1]));
+  ok(await fails(() => item(M1, KA, "question", "motion", QA), /instructors only/) && (await rows(M1, `select * from public.review_queue($1)`, [A])).length === 0, "a blocked school manager cannot add items or see the approval queue");
+  await keep(ADMIN, (x) => x(`select public.admin_set_blocked($1,false)`, [M1]));
+  await q(`delete from public.class_items where body->>'q' in ('A question for the blocked-account test?', 'Back at work?')`);
+}
+// a suspended school cannot be changed, though its staff can still read
+{
+  const QS = await item(T1, KA, "question", "motion", { ...QA, q: "A question for the suspended-school test?" });
+  await q(`insert into storage.objects(bucket_id, name) values ('class-media', $1)`, [`${KA}/suspend-del1.webp`]);
+  await q(`update public.schools set active=false where id=$1`, [A]);
+  ok(await fails(() => item(T1, KA, "question", "motion", QA), /suspended/) && await fails(() => status(T1, QS, "published"), /suspended/) && await fails(() => keep(T1, (x) => x(`select public.delete_class_item($1)`, [QS])), /suspended/), "while a school is suspended its instructors cannot add, publish or delete items");
+  ok(await fails(() => put(T1, `${KA}/suspended1.webp`)), "...or upload pictures");
+  await keep(T1, (x) => x(`delete from storage.objects where bucket_id='class-media' and name=$1`, [`${KA}/suspend-del1.webp`]));
+  ok((await q(`select count(*)::int n from storage.objects where name=$1`, [`${KA}/suspend-del1.webp`])).rows[0].n === 1, "...or delete them");
+  ok((await seen(T1, KA)) >= 1, "...but they can still read what is there");
+  ok(!!(await item(ADMIN, KA, "announcement", null, { title: "The platform admin can still work in a suspended school" })), "the platform admin can still work in it");
+  await q(`update public.schools set active=true where id=$1`, [A]);
+  ok(!!(await item(T1, KA, "question", "motion", { ...QA, q: "Back after the school was switched on?" })), "...and the instructors can again once it is switched on");
+  await keep(T1, (x) => x(`delete from storage.objects where bucket_id='class-media' and name=$1`, [`${KA}/suspend-del1.webp`]));
+  ok((await q(`select count(*)::int n from storage.objects where name=$1`, [`${KA}/suspend-del1.webp`])).rows[0].n === 0, "...including deleting pictures");
+  await q(`delete from public.class_items where body->>'q' in ('A question for the suspended-school test?', 'Back after the school was switched on?') or body->>'title' = 'The platform admin can still work in a suspended school'`);
+}
+// edits of live items, bigger publishes and copies between schools are in the audit trail
+{
+  const audit = async (action, school = A) => (await q(`select count(*)::int n from public.admin_audit where action=$1 and school_id=$2`, [action, school])).rows[0].n;
+  const live = await item(T1, KA, "card", "motion", { front: "A live card", back: "b" }); await status(T1, live, "published");
+  const draft = await item(T1, KA, "card", "motion", { front: "A draft card", back: "b" });
+  const e0 = await audit("edit class item");
+  await item(T1, KA, "card", "motion", { front: "A draft card, edited", back: "b" }, draft);
+  ok((await audit("edit class item")) === e0, "editing a draft is not logged (nobody can see it yet)");
+  await item(T1, KA, "card", "motion", { front: "A live card, edited", back: "b" }, live);
+  ok((await audit("edit class item")) === e0 + 1, "editing an item that students can see is logged");
+  const LP = await item(T1, KA, "lecture", null, { title: "Audit lecture" }); await item(T1, KA, "card", LP, { front: "one", back: "b" }); await item(T1, KA, "card", LP, { front: "two", back: "b" });
+  await status(T1, LP, "published", true);
+  ok((await q(`select count(*)::int n from public.admin_audit where action='publish class item' and detail like '%2 items inside%'`)).rows[0].n === 1, "publishing a lecture with its items says how many items went with it");
+  const o0 = await audit("copy class content out", A), i0 = await audit("copy class content", B);
+  await keep(ADMIN, (x) => x(`select * from public.copy_class_items($1,$2)`, [KA, KB]));
+  ok((await audit("copy class content out", A)) === o0 + 1 && (await audit("copy class content", B)) === i0 + 1, "copying content to a class of another school is logged in both schools");
+  await q(`delete from public.class_items where class_id=$1`, [KB]);
+  await q(`delete from public.class_items where id = any($1::uuid[]) or lecture_ref = $2`, [[live, draft, LP], LP]);
+}
+// the limits hold even when two requests arrive at the same moment
+{
+  const KC = (await keep(M2, (x) => x(`select public.create_class($1,'erth209','Race target','t',null,null) id`, [B]))).rows[0].id;
+  const KD = (await keep(M2, (x) => x(`select public.create_class($1,'erth209','Full lecture target','t',null,null) id`, [B]))).rows[0].id;
+  await q(`insert into public.class_items(class_id,kind,lecture_ref,body,status) select $1,'card',case when g <= 200 then 'plates' else 'motion' end,'{"front":"f","back":"b"}','draft' from generate_series(1, 400) g`, [KB]);
+  await q(`insert into public.class_items(class_id,kind,lecture_ref,body,status) values ($1,'card','plates','{"front":"already here","back":"b"}','draft')`, [KD]);
+  ok(await fails(() => keep(ADMIN, (x) => x(`select * from public.copy_class_items($1,$2)`, [KB, KD])), /200 items/), "a copy cannot push a lecture of the other class over 200 items");
+  const copy = () => keep(ADMIN, (x) => x(`select count(*)::int n from public.copy_class_items($1,$2)`, [KB, KC])).then(() => "ok", (e) => e.message);
+  const [r1, r2] = await Promise.all([copy(), copy()]);
+  ok([r1, r2].filter((r) => r === "ok").length === 1 && [r1, r2].some((r) => /600 items/.test(r)), "two copies at the same moment cannot get past the 600-item limit: " + r1 + " | " + r2);
+  ok((await q(`select count(*)::int n from public.class_items where class_id=$1`, [KC])).rows[0].n === 400, "...so the other class ends with 400 items, not 800");
+  await q(`delete from public.classes where id = any($1::uuid[])`, [[KC, KD]]);
+  await q(`delete from public.class_items where class_id=$1`, [KB]);
+}
 
 // a school that leaves takes its items with it
 const GS3 = (await keep(ADMIN, (x) => x(`select public.admin_create_school('Epsilon School','x',null) id`))).rows[0].id;

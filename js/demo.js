@@ -119,7 +119,7 @@ export const media = (path) => { ensure(); return T.media[path] || (path.endsWit
 export const itemsOf = (kid) => { ensure(); const c = classOf(kid); return c && canTeach(c) ? T.items.filter((i) => i.class_id === kid).map((i) => ({ ...i })) : []; };
 // pictures chosen in the editor are kept in memory as data addresses
 export async function uploadPicture(kid, blob) {
-  ensure(); const path = `${kid}/${Math.random().toString(36).slice(2, 12)}${Math.random().toString(36).slice(2, 8)}.webp`;
+  ensure(); const path = `${kid}/${(Math.random().toString(36).slice(2) + "00000000").slice(0, 16)}.webp`;
   const url = await new Promise((res) => { const r = new FileReader(); r.onload = () => res(r.result); r.readAsDataURL(blob); });
   T.media[path] = url; return { path };
 }
@@ -245,7 +245,7 @@ const API = {
   save_class_item({ kid, k, ref, b, item_id, pos }) {
     const c = classOf(kid); need(c && canTeach(c), "instructors only");
     const p = problem(k, b); need(!p, p);
-    if (b.img) need(b.img.path.startsWith(kid + "/"), "That picture belongs to another class.");
+    if (b.img) { need(b.img.path.startsWith(kid + "/"), "That picture belongs to another class."); need(/^[A-Za-z0-9-]{1,64}[/][A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$/.test(b.img.path), "That picture file name is not valid."); }
     if (["note", "card", "question"].includes(k)) {
       need(ref, "Choose a lecture.");
       if (/^[0-9a-f]{8}-/.test(ref)) need(T.items.some((i) => i.id === ref && i.class_id === kid && i.kind === "lecture"), "That lecture is not in this class.");
@@ -253,7 +253,11 @@ const API = {
     const mgr = canManage(c), req = !!T.schools.find((s) => s.id === c.school_id).require_approval;
     if (item_id) {
       const cur = T.items.find((i) => i.id === item_id); need(cur && cur.class_id === kid, "That item is not in this class."); need(cur.kind === k, "The kind of an item cannot change.");
-      cur.body = b; cur.lecture_ref = ref || null; if (pos != null) cur.position = pos; if (cur.status === "published" && req && !mgr) cur.status = "review"; cur.updated_at = new Date().toISOString(); return item_id;
+      if (ref && ref !== cur.lecture_ref) need(T.items.filter((i) => i.class_id === kid && i.lecture_ref === ref).length < 200, "That lecture already has 200 items, the most it can hold.");
+      const was = cur.status;
+      cur.body = b; cur.lecture_ref = ref || null; if (pos != null) cur.position = pos; if (cur.status === "published" && req && !mgr) cur.status = "review"; cur.updated_at = new Date().toISOString();
+      if (was !== "draft") log("edit class item", b.title || b.q || b.front, c.name, c.school_id);
+      return item_id;
     }
     const mine = T.items.filter((i) => i.class_id === kid); need(mine.length < 600, "This class already has 600 items, the most it can hold.");
     if (ref) need(mine.filter((i) => i.lecture_ref === ref).length < 200, "That lecture already has 200 items, the most it can hold.");
@@ -261,13 +265,18 @@ const API = {
     T.items.push({ id, class_id: kid, kind: k, lecture_ref: ref || null, status: "draft", body: b, position: pos ?? (Math.max(0, ...mine.filter((i) => i.kind === k && i.lecture_ref === (ref || null)).map((i) => i.position)) + 1), author_name: "You", created_at: now, updated_at: now });
     log("add " + k, b.title || b.q || b.front, c.name, c.school_id); return id;
   },
-  set_class_item_status({ item_id, new_status, with_children }) {
+  set_class_item_status({ item_id, new_status, with_children, expected_at }) {
     const cur = T.items.find((i) => i.id === item_id); need(cur, "no such item"); const c = classOf(cur.class_id); need(canTeach(c), "instructors only");
     need(["draft", "review", "published"].includes(new_status), "unknown status");
+    need(!expected_at || cur.updated_at === expected_at, "This item was changed after you opened it. Reload the page and look at it again before you decide.");
     const mgr = canManage(c), req = !!T.schools.find((s) => s.id === c.school_id).require_approval;
+    // an item that is already published stays published, but what is inside a lecture gets what its own publish would give
     const res = new_status === "draft" ? "draft" : cur.status === "published" ? "published" : req && !mgr ? "review" : "published";
-    T.items.forEach((i) => { if (i.id === item_id || (with_children && cur.kind === "lecture" && i.lecture_ref === item_id && (res === "draft" || i.status !== "published"))) { i.status = res; i.updated_at = new Date().toISOString(); } });
-    log(res === "published" ? "publish class item" : res === "review" ? "submit class item for approval" : "unpublish class item", cur.body.title || cur.body.q || cur.body.front, c.name, c.school_id); return res;
+    const kids = new_status === "draft" ? "draft" : req && !mgr ? "review" : "published", now = new Date().toISOString();
+    cur.status = res; cur.updated_at = now;
+    let n = 0;
+    if (with_children && cur.kind === "lecture") T.items.forEach((i) => { if (i.class_id === cur.class_id && i.lecture_ref === item_id && (kids === "draft" ? i.status !== "draft" : kids === "review" ? i.status === "draft" : i.status !== "published")) { i.status = kids; i.updated_at = now; n++; } });
+    log(res === "published" ? "publish class item" : res === "review" ? "submit class item for approval" : "unpublish class item", cur.body.title || cur.body.q || cur.body.front, c.name + (n ? `, with ${n} ${n === 1 ? "item" : "items"} inside` : ""), c.school_id); return res;
   },
   delete_class_item({ item_id }) {
     const cur = T.items.find((i) => i.id === item_id); if (!cur) return []; const c = classOf(cur.class_id); need(canTeach(c), "instructors only");

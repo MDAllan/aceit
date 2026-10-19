@@ -29,13 +29,22 @@ ok(problem("lecture", { title: "Week 1", chapter: "Ch 1", icon: "\u{1F4D8}", int
 ok(problem("announcement", { title: "Midterm moved", text: "Now on Friday.", until: "2026-11-02" }) === null && problem("announcement", { title: "x", until: "2026-13-45" }) !== null && problem("announcement", { title: "x", until: "tomorrow" }) !== null, "announcements need a real date");
 ok(problem("question", null) !== null && problem("question", [1]) !== null && problem("nope", {}) !== null, "nonsense is refused");
 ok(KINDS.length === 5, "five kinds of item");
-ok(text("  hi  ", 2, 2) && !text("   ", 1, 5) && text("\u{1F600}\u{1F600}", 2, 2), "text length counts characters, not code units");
+ok(text("hi", 2, 2) && !text("  hi  ", 2, 2) && !text("   ", 1, 5) && text("\u{1F600}\u{1F600}", 2, 2), "text length counts characters, not code units, and the ends must already be trimmed");
 
 // tidy() prepares what an editor collected
 eq(tidy("card", { front: "  A ", back: " B  ", short: "   " }), { front: "A", back: "B" }, "tidy trims and drops empty optional fields");
 eq(tidy("note", { title: " T ", bullets: [" a ", "", "  "] }), { title: "T", bullets: ["a"] }, "tidy drops empty points");
 eq(tidy("question", { q: " Q? ", options: [" a ", "b"], answer: 1, why: "" }), { q: "Q?", options: ["a", "b"], answer: 1 }, "tidy keeps the answer index");
 ok(problem("note", tidy("note", { title: "T", bullets: ["p"], img: { path: "abc/defghijk.webp", alt: " a map " } })) === null, "tidy output passes the rules");
+// pasted text often carries invisible characters: tidy takes them out instead of making the instructor hunt for them
+{
+  const ch = (c) => String.fromCharCode(c), pasted = "Pla" + ch(0x200b) + "te " + ch(0x202e) + "tectonics" + ch(0xfeff) + ch(0x2028) + "second line";
+  eq(tidy("card", { front: pasted, back: "B" }).front, "Plate tectonics" + ch(10) + "second line", "tidy removes zero-width and direction characters and turns line separators into new lines");
+  ok(problem("card", tidy("card", { front: pasted, back: "B" })) === null, "...so pasted text passes the rules");
+  ok(problem("card", { front: pasted, back: "B" }) !== null, "but the rules still refuse such characters when they get that far");
+  ok(problem("card", { front: " leading", back: "B" }) !== null && problem("card", { front: "trailing" + ch(10), back: "B" }) !== null, "text with untrimmed ends is refused");
+  ok(problem("card", { front: "a" + ch(0x200d) + "b", back: "B" }) === null && problem("card", { front: "caf" + ch(0xe9) + " " + String.fromCodePoint(0x1f469, 0x200d, 0x1f52c), back: "B" }) === null, "joiners, accents and emoji sequences are fine");
+}
 ok(summary("question", Q).startsWith("What is the capital") && summary("card", { front: "Term\nsecond line" }) === "Term" && summary("note", { title: "x".repeat(200) }).length === 90, "list summaries");
 
 // ---- pasting many questions ----

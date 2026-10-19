@@ -289,14 +289,17 @@ const staffRpc = {
 }
 {
   const db = { v2: true, profile: prof(), classes: [], roles: [{ role: "manager", school_id: "s1", school_name: "Alpha University" }], items: [], rpc: { ...staffRpc, staff_classes: [], staff_schools: [{ ...staffRpc.staff_schools[0], require_approval: true }],
-    review_queue: [{ item_id: "q1", class_id: "k1", class_name: "ASTR 207 Section 1", kind: "question", lecture_ref: "motion", body: { q: "Please approve me?", options: ["a", "b"], answer: 0 }, author_name: "Dr. Rivera", updated_at: "2026-10-18T10:00:00Z" }],
-    set_class_item_status: "published", set_school_approval: null } };
+    review_queue: [{ item_id: "q1", class_id: "k1", class_name: "ASTR 207 Section 1", kind: "question", lecture_ref: "motion", body: { q: "Please approve me?", options: ["a", "b"], answer: 0 }, author_name: "Dr. Rivera", updated_at: "2026-10-18T10:00:00Z" },
+      { item_id: "q2", class_id: "k1", class_name: "ASTR 207 Section 1", kind: "question", lecture_ref: "motion", body: { q: "Changed while you looked?", options: ["a", "b"], answer: 1 }, author_name: "Dr. Rivera", updated_at: "2026-10-18T11:00:00Z" }],
+    set_class_item_status: (body) => (body.item_id === "q2" ? { __err: "This item was changed after you opened it. Reload the page and look at it again before you decide." } : "published"), set_school_approval: null } };
   const p = await session(db);
   await p.evaluate(() => { location.hash = "#/work/school/s1/approvals"; }); await wait(1500);
   let t = await p.txt();
   chk("the school's Approvals tab asks review_queue for this school", t.includes("Please approve me?") && db.rpcCalls.some((c) => c.fn === "review_queue" && c.body.sid === "s1"));
   await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => x.textContent.trim() === "Approve").click()); await wait(900);
-  chk("approving sends set_class_item_status published", db.rpcCalls.some((c) => c.fn === "set_class_item_status" && c.body.item_id === "q1" && c.body.new_status === "published"));
+  chk("approving sends set_class_item_status published, naming the version the manager looked at", db.rpcCalls.some((c) => c.fn === "set_class_item_status" && c.body.item_id === "q1" && c.body.new_status === "published" && c.body.expected_at === "2026-10-18T10:00:00Z"));
+  await p.evaluate(() => [...document.querySelectorAll("button")].filter((x) => x.textContent.trim() === "Approve")[1].click()); await wait(900);
+  chk("when the instructor changed the item meanwhile, the manager is told and the queue is loaded again", /changed after you opened it/.test(await p.evaluate(() => document.querySelector("#toast")?.textContent || "")) && db.rpcCalls.filter((c) => c.fn === "review_queue").length >= 3, String(db.rpcCalls.filter((c) => c.fn === "review_queue").length));
   await p.evaluate(() => document.querySelector("label.check input").click()); await wait(700);
   chk("the approval switch sends set_school_approval", db.rpcCalls.some((c) => c.fn === "set_school_approval" && c.body.sid === "s1" && c.body.flag === false));
   await p.close_();

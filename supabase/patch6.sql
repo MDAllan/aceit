@@ -89,9 +89,11 @@ create index if not exists progress_summary_course_idx on public.progress_summar
 -- passed the second step (aal2). Students are not affected. Until it is switched on nothing changes.
 create or replace function public.session_aal() returns text
 language sql stable as $$ select coalesce(nullif(current_setting('request.jwt.claims', true), '')::jsonb ->> 'aal', 'aal1'); $$;
+-- May this session use staff powers? Not if the account is blocked, and, when the platform asks for two-step login, only after the second step.
 create or replace function public.staff_step_ok() returns boolean
 language sql security definer set search_path = public stable as $$
-  select coalesce((select value <> '1' from public.app_secrets where key = 'require_staff_mfa'), true) or public.session_aal() = 'aal2';
+  select (coalesce((select value <> '1' from public.app_secrets where key = 'require_staff_mfa'), true) or public.session_aal() = 'aal2')
+     and not coalesce((select blocked from public.profiles where id = auth.uid()), false);
 $$;
 create or replace function public.is_admin() returns boolean
 language sql security definer set search_path = public stable as $$
@@ -658,6 +660,17 @@ grant execute on function
   public.staff_schools(), public.staff_classes(uuid, uuid), public.class_roster(uuid), public.class_question_stats(uuid), public.staff_people(uuid), public.list_invites(uuid),
   public.submit_feedback(text, int, text)
 to authenticated;
+-- Postgres lets everybody run a new function unless it is told otherwise. These are for people who are logged in (each one refuses a visitor anyway).
+-- The permission helpers above (is_manager_of ... has_class) stay open: table rules call them.
+revoke execute on function
+  public.join_class(text), public.redeem_class_by_code(text), public.redeem_class_code(text, text), public.my_classes(), public.my_roles(),
+  public.admin_create_school(text, text, int), public.admin_update_school(uuid, text, text, boolean, int), public.admin_delete_school(uuid, boolean), public.admin_set_school_course(uuid, text, boolean),
+  public.create_class(uuid, text, text, text, int, text), public.update_class(uuid, text, text, int, date, boolean), public.set_class_code(uuid, text),
+  public.set_class_exam(uuid, text, date), public.remove_student(uuid, uuid), public.leave_class(uuid), public.claim_invites(), public.invite_user(text, text, uuid, uuid), public.revoke_invite(uuid),
+  public.remove_teacher(uuid, uuid), public.remove_manager(uuid, uuid), public.admin_set_admin(text, boolean), public.list_admins(), public.admin_set_confirm_email(boolean), public.admin_get_confirm_email(), public.admin_set_require_mfa(boolean), public.mfa_required(),
+  public.staff_schools(), public.staff_classes(uuid, uuid), public.class_roster(uuid), public.class_question_stats(uuid), public.staff_people(uuid), public.list_invites(uuid),
+  public.submit_feedback(text, int, text)
+from public, anon;
 revoke all on function public.email_ok(uuid), public.apply_invites_for(uuid), public.on_user_confirmed(), public.audit_immutable(), public.make_code(), public.session_aal(), public.staff_step_ok() from public, anon, authenticated;
 
 -- let the API pick up the new functions straight away

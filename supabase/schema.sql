@@ -576,9 +576,11 @@ create index if not exists progress_summary_course_idx on public.progress_summar
 -- passed the second step (aal2). Students are not affected. Until it is switched on nothing changes.
 create or replace function public.session_aal() returns text
 language sql stable as $$ select coalesce(nullif(current_setting('request.jwt.claims', true), '')::jsonb ->> 'aal', 'aal1'); $$;
+-- May this session use staff powers? Not if the account is blocked, and, when the platform asks for two-step login, only after the second step.
 create or replace function public.staff_step_ok() returns boolean
 language sql security definer set search_path = public stable as $$
-  select coalesce((select value <> '1' from public.app_secrets where key = 'require_staff_mfa'), true) or public.session_aal() = 'aal2';
+  select (coalesce((select value <> '1' from public.app_secrets where key = 'require_staff_mfa'), true) or public.session_aal() = 'aal2')
+     and not coalesce((select blocked from public.profiles where id = auth.uid()), false);
 $$;
 create or replace function public.is_admin() returns boolean
 language sql security definer set search_path = public stable as $$
@@ -1145,6 +1147,17 @@ grant execute on function
   public.staff_schools(), public.staff_classes(uuid, uuid), public.class_roster(uuid), public.class_question_stats(uuid), public.staff_people(uuid), public.list_invites(uuid),
   public.submit_feedback(text, int, text)
 to authenticated;
+-- Postgres lets everybody run a new function unless it is told otherwise. These are for people who are logged in (each one refuses a visitor anyway).
+-- The permission helpers above (is_manager_of ... has_class) stay open: table rules call them.
+revoke execute on function
+  public.join_class(text), public.redeem_class_by_code(text), public.redeem_class_code(text, text), public.my_classes(), public.my_roles(),
+  public.admin_create_school(text, text, int), public.admin_update_school(uuid, text, text, boolean, int), public.admin_delete_school(uuid, boolean), public.admin_set_school_course(uuid, text, boolean),
+  public.create_class(uuid, text, text, text, int, text), public.update_class(uuid, text, text, int, date, boolean), public.set_class_code(uuid, text),
+  public.set_class_exam(uuid, text, date), public.remove_student(uuid, uuid), public.leave_class(uuid), public.claim_invites(), public.invite_user(text, text, uuid, uuid), public.revoke_invite(uuid),
+  public.remove_teacher(uuid, uuid), public.remove_manager(uuid, uuid), public.admin_set_admin(text, boolean), public.list_admins(), public.admin_set_confirm_email(boolean), public.admin_get_confirm_email(), public.admin_set_require_mfa(boolean), public.mfa_required(),
+  public.staff_schools(), public.staff_classes(uuid, uuid), public.class_roster(uuid), public.class_question_stats(uuid), public.staff_people(uuid), public.list_invites(uuid),
+  public.submit_feedback(text, int, text)
+from public, anon;
 revoke all on function public.email_ok(uuid), public.apply_invites_for(uuid), public.on_user_confirmed(), public.audit_immutable(), public.make_code(), public.session_aal(), public.staff_step_ok() from public, anon, authenticated;
 
 -- let the API pick up the new functions straight away
@@ -1158,14 +1171,15 @@ notify pgrst, 'reload schema';
 alter table public.schools add column if not exists require_approval boolean not null default false;
 
 -- 2. the rules every item must follow (the app checks the same rules; tools/test_sql.mjs makes sure they agree) ---------------------------
--- a text value of lo to hi characters once the ends are trimmed, with no control characters and without the app's reserved marker
+-- a text value of lo to hi characters that is already trimmed, with no control, invisible direction or spacing characters and without the app's reserved marker
 create or replace function public.txt_ok(v jsonb, lo int, hi int) returns boolean
 language sql immutable as $$
   select coalesce(
     jsonb_typeof(v) = 'string'
-    and (v #>> '{}') !~ '[\x01-\x08\x0b\x0c\x0e-\x1f\x7f]'
+    and (v #>> '{}') !~ '[\x01-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f\u200b\u2028-\u202e\u2066-\u2069\ufeff]'
     and position(chr(8291) in (v #>> '{}')) = 0
-    and char_length(regexp_replace(v #>> '{}', '^[ \t\r\n]+|[ \t\r\n]+$', '', 'g')) between lo and hi,
+    and (v #>> '{}') = regexp_replace(v #>> '{}', '^[ \t\r\n]+|[ \t\r\n]+$', '', 'g')
+    and char_length(v #>> '{}') between lo and hi,
     false);
 $$;
 create or replace function public.img_ok(v jsonb) returns boolean
@@ -1264,6 +1278,17 @@ create or replace function public.class_open(cid uuid) returns boolean
 language sql security definer set search_path = public stable as $$
   select exists (select 1 from public.classes c join public.schools s on s.id = c.school_id where c.id = cid and s.active);
 $$;
+-- the staff of a class may change what it holds, unless its school is suspended (the platform admin always may)
+create or replace function public.class_writable(cid uuid) returns boolean
+language sql security definer set search_path = public stable as $$
+  select public.can_teach_class(cid) and (public.class_open(cid) or public.is_admin());
+$$;
+create or replace function public.require_class_staff(cid uuid) returns void
+language plpgsql security definer set search_path = public stable as $$
+begin
+  if auth.uid() is null or not public.can_teach_class(cid) then raise exception 'instructors only'; end if;
+  if not public.class_open(cid) and not public.is_admin() then raise exception 'This school is suspended, so nothing in it can be changed.'; end if;
+end $$;
 drop policy if exists "class items read" on public.class_items;
 create policy "class items read" on public.class_items for select using (
   public.can_teach_class(class_id)
@@ -1274,13 +1299,17 @@ create or replace function public.save_class_item(kid uuid, k text, ref text, b 
 language plpgsql security definer set search_path = public as $$
 declare sid uuid; p text; cnt int; per int; cur public.class_items; st text; newid uuid; nm text; cname text; mgr boolean; req boolean;
 begin
-  if auth.uid() is null or not public.can_teach_class(kid) then raise exception 'instructors only'; end if;
+  perform public.require_class_staff(kid);
   select c.school_id, c.name, s.require_approval into sid, cname, req from public.classes c join public.schools s on s.id = c.school_id where c.id = kid;
   if sid is null then raise exception 'unknown class'; end if;
   if k not in ('lecture', 'note', 'card', 'question', 'announcement') then raise exception 'unknown kind'; end if;
   p := public.item_problem(k, b);
   if p is not null then raise exception '%', p; end if;
-  if jsonb_exists(b, 'img') and (b -> 'img' ->> 'path') not like (kid::text || '/%') then raise exception 'That picture belongs to another class.'; end if;
+  if jsonb_exists(b, 'img') then
+    if (b -> 'img' ->> 'path') not like (kid::text || '/%') then raise exception 'That picture belongs to another class.'; end if;
+    -- exactly a file of this class, named the way the app names them (the same rule as the upload policy below)
+    if (b -> 'img' ->> 'path') !~ ('^' || kid::text || '/[A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$') then raise exception 'That picture file name is not valid.'; end if;
+  end if;
   if k in ('note', 'card', 'question') then
     if coalesce(ref, '') = '' then raise exception 'Choose a lecture.'; end if;
     if ref ~ '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$' then
@@ -1289,13 +1318,21 @@ begin
   elsif ref is not null then raise exception 'This kind of item does not belong to a lecture.';
   end if;
   mgr := public.is_manager_of(sid);
+  perform pg_advisory_xact_lock(hashtextextended('class_items:' || kid::text, 0));   -- one save at a time per class, so the limits below are counted correctly
   if item_id is not null then
     select * into cur from public.class_items where id = item_id;
     if cur.id is null or cur.class_id <> kid then raise exception 'That item is not in this class.'; end if;
     if cur.kind <> k then raise exception 'The kind of an item cannot change.'; end if;
+    if ref is not null and ref is distinct from cur.lecture_ref then
+      select count(*) into per from public.class_items where class_id = kid and lecture_ref = ref;
+      if per >= 200 then raise exception 'That lecture already has 200 items, the most it can hold.'; end if;
+    end if;
     st := cur.status;
     if st = 'published' and req and not mgr then st := 'review'; end if;   -- in a school that wants approval, a changed item goes back for review
     update public.class_items set body = b, lecture_ref = ref, position = coalesce(pos, position), status = st, updated_at = now() where id = item_id;
+    if cur.status <> 'draft' then   -- a change that students (or the approving manager) can see is in the audit trail
+      perform public.log_action('edit class item', left(coalesce(b ->> 'title', b ->> 'q', b ->> 'front', ''), 60), cname || case when st <> cur.status then ' (sent back for approval)' else '' end, sid);
+    end if;
     return item_id;
   end if;
   select count(*) into cnt from public.class_items where class_id = kid;
@@ -1312,22 +1349,33 @@ begin
   return newid;
 end $$;
 
--- draft -> published (or, in a school that wants approval, -> review until a manager approves); published/review -> draft takes it back
-create or replace function public.set_class_item_status(item_id uuid, new_status text, with_children boolean default false) returns text
+-- draft -> published (or, in a school that wants approval, -> review until a manager approves); published/review -> draft takes it back.
+-- expected_at: the updated_at of the version the person looked at; a manager deciding on a queued item passes it, so they cannot approve a version they did not see.
+drop function if exists public.set_class_item_status(uuid, text, boolean);
+create or replace function public.set_class_item_status(item_id uuid, new_status text, with_children boolean default false, expected_at timestamptz default null) returns text
 language plpgsql security definer set search_path = public as $$
-declare cur public.class_items; sid uuid; mgr boolean; req boolean; res text; cname text;
+declare cur public.class_items; sid uuid; mgr boolean; req boolean; res text; kids text; cname text; n int := 0;
 begin
   if new_status not in ('draft', 'review', 'published') then raise exception 'unknown status'; end if;
   select * into cur from public.class_items where id = item_id;
   if cur.id is null then raise exception 'no such item'; end if;
-  if auth.uid() is null or not public.can_teach_class(cur.class_id) then raise exception 'instructors only'; end if;
+  perform public.require_class_staff(cur.class_id);
   select c.school_id, c.name, s.require_approval into sid, cname, req from public.classes c join public.schools s on s.id = c.school_id where c.id = cur.class_id;
   mgr := public.is_manager_of(sid);
+  if expected_at is not null and cur.updated_at <> expected_at then raise exception 'This item was changed after you opened it. Reload the page and look at it again before you decide.'; end if;
+  -- an item that is already published stays published, but what is inside a lecture never inherits that: each item gets what its own publish would give
   res := case when new_status = 'draft' then 'draft' when cur.status = 'published' then 'published' when req and not mgr then 'review' else 'published' end;
-  update public.class_items set status = res, updated_at = now()
-   where id = item_id or (with_children and cur.kind = 'lecture' and lecture_ref = item_id::text and (res = 'draft' or status <> 'published'));
+  kids := case when new_status = 'draft' then 'draft' when req and not mgr then 'review' else 'published' end;
+  update public.class_items set status = res, updated_at = now() where id = item_id;
+  if with_children and cur.kind = 'lecture' then
+    update public.class_items set status = kids, updated_at = now()
+     where class_id = cur.class_id and lecture_ref = item_id::text
+       and case kids when 'draft' then status <> 'draft' when 'review' then status = 'draft' else status <> 'published' end;
+    get diagnostics n = row_count;
+  end if;
   perform public.log_action(case res when 'published' then 'publish class item' when 'review' then 'submit class item for approval' else 'unpublish class item' end,
-                            left(coalesce(cur.body ->> 'title', cur.body ->> 'q', cur.body ->> 'front', ''), 60), cname, sid);
+                            left(coalesce(cur.body ->> 'title', cur.body ->> 'q', cur.body ->> 'front', ''), 60),
+                            cname || case when n = 0 then '' else ', with ' || n || case when n = 1 then ' item' else ' items' end || ' inside' end, sid);
   return res;
 end $$;
 
@@ -1338,11 +1386,11 @@ declare cur public.class_items; paths jsonb; sid uuid; cname text;
 begin
   select * into cur from public.class_items where id = item_id;
   if cur.id is null then return '[]'::jsonb; end if;
-  if auth.uid() is null or not public.can_teach_class(cur.class_id) then raise exception 'instructors only'; end if;
+  perform public.require_class_staff(cur.class_id);
   select c.school_id, c.name into sid, cname from public.classes c where c.id = cur.class_id;
   select coalesce(jsonb_agg(x.body #>> '{img,path}') filter (where x.body #>> '{img,path}' is not null), '[]'::jsonb) into paths
-    from public.class_items x where x.id = item_id or (cur.kind = 'lecture' and x.lecture_ref = item_id::text);
-  delete from public.class_items where id = item_id or (cur.kind = 'lecture' and lecture_ref = item_id::text);
+    from public.class_items x where x.class_id = cur.class_id and (x.id = item_id or (cur.kind = 'lecture' and x.lecture_ref = item_id::text));
+  delete from public.class_items where class_id = cur.class_id and (id = item_id or (cur.kind = 'lecture' and lecture_ref = item_id::text));
   perform public.log_action('delete class item', left(coalesce(cur.body ->> 'title', cur.body ->> 'q', cur.body ->> 'front', ''), 60), cname, sid);
   return paths;
 end $$;
@@ -1350,7 +1398,7 @@ end $$;
 create or replace function public.reorder_class_items(kid uuid, ids uuid[]) returns void
 language plpgsql security definer set search_path = public as $$
 begin
-  if auth.uid() is null or not public.can_teach_class(kid) then raise exception 'instructors only'; end if;
+  perform public.require_class_staff(kid);
   update public.class_items c set position = o.ord from unnest(ids) with ordinality as o(id, ord) where c.id = o.id and c.class_id = kid;
 end $$;
 
@@ -1358,10 +1406,12 @@ end $$;
 -- say which file goes where.
 create or replace function public.copy_class_items(from_kid uuid, to_kid uuid) returns table (new_id uuid, old_path text, new_path text)
 language plpgsql security definer set search_path = public as $$
-declare r public.class_items; m jsonb := '{}'::jsonb; nid uuid; nb jsonb; nref text; op text; np text; have int; adding int; nm text;
+declare r public.class_items; m jsonb := '{}'::jsonb; nid uuid; nb jsonb; nref text; op text; np text; have int; adding int; nm text; from_sid uuid; to_sid uuid; from_name text; to_name text;
 begin
   if auth.uid() is null or not public.can_teach_class(from_kid) or not public.can_teach_class(to_kid) then raise exception 'instructors only'; end if;
+  perform public.require_class_staff(to_kid);   -- the class being copied from may be read-only (suspended), the one being filled may not
   if from_kid = to_kid then raise exception 'Choose a different class.'; end if;
+  perform pg_advisory_xact_lock(hashtextextended('class_items:' || to_kid::text, 0));   -- one fill at a time per class, so the limits are counted correctly
   select count(*) into have from public.class_items where class_id = to_kid;
   select count(*) into adding from public.class_items where class_id = from_kid and kind <> 'announcement';
   if have + adding > 600 then raise exception 'The other class would have more than 600 items.'; end if;
@@ -1377,7 +1427,11 @@ begin
     insert into public.class_items (class_id, kind, lecture_ref, position, status, body, author_id, author_name) values (to_kid, r.kind, nref, r.position, 'draft', nb, auth.uid(), nm) returning id into nid;
     if op is not null then new_id := nid; old_path := op; new_path := np; return next; end if;
   end loop;
-  perform public.log_action('copy class content', (select name from public.classes where id = from_kid), (select name from public.classes where id = to_kid), (select school_id from public.classes where id = to_kid));
+  if exists (select 1 from public.class_items where class_id = to_kid and lecture_ref is not null group by lecture_ref having count(*) > 200) then raise exception 'A lecture in the other class would have more than 200 items.'; end if;
+  select school_id, name into from_sid, from_name from public.classes where id = from_kid;
+  select school_id, name into to_sid, to_name from public.classes where id = to_kid;
+  perform public.log_action('copy class content', from_name, to_name, to_sid);
+  if from_sid is distinct from to_sid then perform public.log_action('copy class content out', from_name, to_name, from_sid); end if;   -- the school the content came from keeps a record too
 end $$;
 
 create or replace function public.set_school_approval(sid uuid, flag boolean) returns void
@@ -1414,7 +1468,7 @@ begin
     on conflict (id) do update set public = false, file_size_limit = excluded.file_size_limit, allowed_mime_types = excluded.allowed_mime_types;
     execute 'drop policy if exists "class media read" on storage.objects';
     execute $p$create policy "class media read" on storage.objects for select to authenticated using (bucket_id = 'class-media' and public.can_read_media(name))$p$;
-    -- a class may hold at most 400 picture files (the app deletes a picture when its item goes; this stops a runaway upload loop)
+    -- a class may hold at most 400 picture files (the app deletes a picture when its item goes; this stops a runaway upload loop; many uploads at the very same moment can overshoot a little)
     execute $f$create or replace function public.media_room(fname text) returns boolean
       language sql security definer set search_path = public, storage stable as $g$
         select (select count(*) from storage.objects o where o.bucket_id = 'class-media' and split_part(o.name, '/', 1) = split_part(fname, '/', 1)) < 400;
@@ -1422,25 +1476,28 @@ begin
     $f$;
     execute 'drop policy if exists "class media add" on storage.objects';
     execute $p$create policy "class media add" on storage.objects for insert to authenticated with check (bucket_id = 'class-media'
-      and name ~ '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/[A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$' and public.can_teach_class(public.media_class(name)) and public.media_room(name))$p$;
+      and name ~ '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/[A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$' and public.class_writable(public.media_class(name)) and public.media_room(name))$p$;
     execute 'drop policy if exists "class media remove" on storage.objects';
-    execute $p$create policy "class media remove" on storage.objects for delete to authenticated using (bucket_id = 'class-media' and public.can_teach_class(public.media_class(name)))$p$;
+    execute $p$create policy "class media remove" on storage.objects for delete to authenticated using (bucket_id = 'class-media' and public.class_writable(public.media_class(name)))$p$;
   end if;
 end $$;
 
 -- 6. who may call what -----------------------------------------------------------------------------------------------------------------------
+-- Postgres lets everybody run a new function unless it is told otherwise, so visitors who are not logged in are shut out explicitly.
 grant execute on function
-  public.save_class_item(uuid, text, text, jsonb, uuid, int), public.set_class_item_status(uuid, text, boolean), public.delete_class_item(uuid), public.reorder_class_items(uuid, uuid[]),
-  public.copy_class_items(uuid, uuid), public.set_school_approval(uuid, boolean), public.review_queue(uuid), public.can_read_media(text), public.class_open(uuid)
+  public.save_class_item(uuid, text, text, jsonb, uuid, int), public.set_class_item_status(uuid, text, boolean, timestamptz), public.delete_class_item(uuid), public.reorder_class_items(uuid, uuid[]),
+  public.copy_class_items(uuid, uuid), public.set_school_approval(uuid, boolean), public.review_queue(uuid), public.can_read_media(text), public.class_open(uuid), public.class_writable(uuid), public.media_class(text)
 to authenticated;
+revoke execute on function
+  public.save_class_item(uuid, text, text, jsonb, uuid, int), public.set_class_item_status(uuid, text, boolean, timestamptz), public.delete_class_item(uuid), public.reorder_class_items(uuid, uuid[]),
+  public.copy_class_items(uuid, uuid), public.set_school_approval(uuid, boolean), public.review_queue(uuid), public.can_read_media(text), public.class_open(uuid), public.class_writable(uuid), public.media_class(text)
+from public, anon;
 do $$ begin
   if to_regprocedure('public.media_room(text)') is not null then
     revoke all on function public.media_room(text) from public, anon;
     grant execute on function public.media_room(text) to authenticated;
   end if;
 end $$;
-revoke all on function public.txt_ok(jsonb, int, int), public.img_ok(jsonb), public.item_problem(text, jsonb) from public, anon, authenticated;
-revoke all on function public.save_class_item(uuid, text, text, jsonb, uuid, int), public.set_class_item_status(uuid, text, boolean), public.delete_class_item(uuid), public.reorder_class_items(uuid, uuid[]),
-  public.copy_class_items(uuid, uuid), public.set_school_approval(uuid, boolean), public.review_queue(uuid) from anon;
+revoke all on function public.txt_ok(jsonb, int, int), public.img_ok(jsonb), public.item_problem(text, jsonb), public.require_class_staff(uuid) from public, anon, authenticated;
 
 notify pgrst, 'reload schema';
