@@ -138,7 +138,7 @@ export const SYM = {
   deformation: "mountain",
   biol305: "heart", biobasics: "person", cellgrowth: "cell", nervous: "brain", digestive: "spiral", respiratory: "wind", cardio: "heart",
 };
-export const symOf = (x) => SYM[x.id] || "star";
+export const symOf = (x) => SYM[x.id] || "notes";
 export function symTile(x, size = 52) {
   return h(".symtile", { style: `width:${size}px;height:${size}px`, "aria-hidden": "true" }, ic(symOf(x), Math.round(size * 0.52)));
 }
