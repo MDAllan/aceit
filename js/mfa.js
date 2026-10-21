@@ -37,7 +37,7 @@ export function enrollBody(done) {
     code.onkeydown = (e) => { if (e.key === "Enter") go.click(); };
     box.replaceChildren(
       h("p", { style: "margin:0 0 8px" }, "1. Open an authenticator app (Google Authenticator, Microsoft Authenticator, 1Password, Authy) and scan this code."),
-      h("img", { src: totp.qr_code, alt: "QR code for your authenticator app", width: 200, height: 200, style: "background:#fff;padding:8px;border:1px solid var(--line);border-radius:4px" }),
+      h("img", { src: totp.qr_code, alt: "QR code for your authenticator app", width: 200, height: 200, style: "background:#fff;padding:8px;border:1px solid var(--line);border-radius:10px" }),
       h(".src", "Cannot scan it? Type this key into the app instead:"), h("code", { style: "word-break:break-all;display:block;margin:4px 0 12px;font-weight:700" }, totp.secret),
       h("p", { style: "margin:0 0 6px" }, "2. Enter the 6-digit code the app shows."), code, go, err);
   };

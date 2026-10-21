@@ -156,6 +156,22 @@ export function ic(name, size = 20) {
   return s;
 }
 
+// The ACEIT wordmark (same shapes as icons/aceit-logo.svg). It takes the colour of the text around it, so it works in light and dark.
+const LOGO_PATHS = [
+  "M62 815L128 441H206L278 815H223L208 728H129L116 815ZM167 487L201 685H136Z",
+  "M313 496A55 55 0 0 1 368 441H433A55 55 0 0 1 488 496V558H433V498A14 14 0 0 0 419 484H382A15 15 0 0 0 367 499V757A16 16 0 0 0 383 773H419A14 14 0 0 0 433 759V699H488V760A55 55 0 0 1 433 815H368A55 55 0 0 1 313 760Z",
+  "M541 441H699V485H595V600H681V643H595V771H704V815H541Z",
+  "M750 441H804V815H750Z",
+  "M843 441H1022V485H959V815H905V485H843Z",
+];
+export function logo(height = 22) {
+  const NS = "http://www.w3.org/2000/svg", s = document.createElementNS(NS, "svg");
+  s.setAttribute("viewBox", "58 437 968 382"); s.setAttribute("height", height); s.setAttribute("width", Math.round((height * 968) / 382));
+  s.setAttribute("fill", "currentColor"); s.setAttribute("fill-rule", "evenodd"); s.setAttribute("role", "img"); s.setAttribute("aria-label", "ACEIT"); s.classList.add("logo");
+  for (const d of LOGO_PATHS) { const p = document.createElementNS(NS, "path"); p.setAttribute("d", d); s.append(p); }
+  return s;
+}
+
 // A picture: the course's own figures have an address (src); a picture an instructor added lives in the class's private storage (path)
 // and is fetched when it is shown.
 export function pic(im, attrs = {}) {
@@ -178,7 +194,7 @@ export function shuffle(a) {
 export function confetti(n = 90) {
   if (typeof reducedMotion === "function" && reducedMotion()) return;
   const c = h("canvas.confetti"); c.width = innerWidth; c.height = innerHeight; document.body.append(c);
-  const g = c.getContext("2d"), cols = ["#2563eb", "#7c3aed", "#f59e0b", "#10b981", "#ef4444", "#ec4899"];
+  const g = c.getContext("2d"), cols = ["#324586", "#B8B3F0", "#93D2E9", "#00E6B8", "#FAC285", "#FFABB8"];
   const ps = Array.from({ length: n }, () => ({ x: Math.random() * c.width, y: -20 - Math.random() * c.height * 0.4, r: 4 + Math.random() * 6, vx: -2 + Math.random() * 4, vy: 3 + Math.random() * 4, a: Math.random() * 6, c: cols[(Math.random() * cols.length) | 0] }));
   let f = 0;
   (function tick() {

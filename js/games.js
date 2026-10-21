@@ -4,19 +4,19 @@ import { h, md, clean, ic, toast, shuffle, confetti, pick, floatXP } from "./ui.
 export const DEFAULT_GAMES = ["match", "memory", "blitz", "guess", "speed", "picture"];
 
 const EMOJI = { match: "\u{1F9E9}", memory: "\u{1F9E0}", blitz: "\u26A1", guess: "\u{1F4A1}", speed: "\u23F1\uFE0F", picture: "\u{1F5BC}\uFE0F", timeline: "\u23F3", order: "\u{1FA9C}", halflife: "\u2622\uFE0F", sort: "\u{1F5C2}\uFE0F", calc: "\u{1F9EE}" };
-const GCOL = { match: "#2a9d8f", memory: "#6c5ce7", blitz: "#ee6c4d", guess: "#3d9be9", speed: "#e63946", picture: "#2fa36b", timeline: "#8d6a9f", order: "#e76f51", halflife: "#2fa7b5", sort: "#c44fb0", calc: "#4361ee" };
+const GCOL = { match: "#2F9E94", memory: "#7A6FDB", blitz: "#D9777F", guess: "#4E9FD0", speed: "#C8627A", picture: "#3AA687", timeline: "#8E7CC3", order: "#CC8A3A", halflife: "#3F9FB8", sort: "#B070C8", calc: "#4A63C9" };
 const META = {
-  match: ["games", "#2563eb", "Matching cards", "Match each term with its meaning."],
-  memory: ["cards", "#7c3aed", "Memory flip", "Flip two face-down cards to find pairs."],
-  blitz: ["quiz", "#059669", "True or false blitz", "10 quick statements. Is it true?"],
-  guess: ["bulb", "#f59e0b", "Guess the term", "Read the meaning, pick the right word."],
-  speed: ["fire", "#dc2626", "60-second sprint", "Answer as many quiz questions as you can."],
-  picture: ["zoom", "#0ea5e9", "Picture quiz", "Which topic does this picture belong to?"],
-  timeline: ["chart", "#c0504d", "Clickable timeline", "Tap an eon or era to explore events."],
-  order: ["list", "#8a5a44", "Order the events", "Stack layers from oldest to youngest."],
-  halflife: ["star", "#14b8a6", "Half-life calculator", "Play with radioactive decay."],
-  sort: ["sort", "#ec4899", "Sort it out", "Drop each item into the right group."],
-  calc: ["calc", "#0d9488", "Number cruncher", "Fresh calculations every time. Beat the numbers."],
+  match: ["games", "#2F9E94", "Matching cards", "Match each term with its meaning."],
+  memory: ["cards", "#7A6FDB", "Memory flip", "Flip two face-down cards to find pairs."],
+  blitz: ["quiz", "#D9777F", "True or false blitz", "10 quick statements. Is it true?"],
+  guess: ["bulb", "#4E9FD0", "Guess the term", "Read the meaning, pick the right word."],
+  speed: ["fire", "#C8627A", "60-second sprint", "Answer as many quiz questions as you can."],
+  picture: ["zoom", "#3AA687", "Picture quiz", "Which topic does this picture belong to?"],
+  timeline: ["chart", "#8E7CC3", "Clickable timeline", "Tap an eon or era to explore events."],
+  order: ["list", "#CC8A3A", "Order the events", "Stack layers from oldest to youngest."],
+  halflife: ["star", "#3F9FB8", "Half-life calculator", "Play with radioactive decay."],
+  sort: ["sort", "#B070C8", "Sort it out", "Drop each item into the right group."],
+  calc: ["calc", "#4A63C9", "Number cruncher", "Fresh calculations every time. Beat the numbers."],
 };
 
 export function renderGame(b, lec, all) {

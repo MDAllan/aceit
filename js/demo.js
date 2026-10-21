@@ -88,7 +88,7 @@ function summaries() {
 }
 
 // a pretend picture (a small drawing) for sample items and for pictures chosen in the preview
-const SAMPLE_PICTURE = "data:image/svg+xml;utf8," + encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='320' height='180'><rect width='320' height='180' fill='#dbe7f4'/><circle cx='160' cy='90' r='54' fill='#0d3b66'/><circle cx='160' cy='90' r='22' fill='#faf0ca'/></svg>");
+const SAMPLE_PICTURE = "data:image/svg+xml;utf8," + encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='320' height='180'><rect width='320' height='180' fill='#E6EAF6'/><circle cx='160' cy='90' r='54' fill='#324586'/><circle cx='160' cy='90' r='22' fill='#B8B3F0'/></svg>");
 const newId = () => String(++T.nid).padStart(8, "0") + "-0000-4000-8000-000000000000";
 function seedItems() {
   const add = (class_id, kind, lecture_ref, status, body, by = "Dr. Rivera") => { const id = newId(); T.items.push({ id, class_id, kind, lecture_ref, status, body, position: T.items.length + 1, author_name: by, created_at: new Date(Date.now() - (50 - T.items.length) * 3600e3).toISOString(), updated_at: new Date(Date.now() - (50 - T.items.length) * 3600e3).toISOString() }); return id; };

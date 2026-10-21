@@ -180,7 +180,7 @@ function inviteForm(c, o) {
     if (r.data === "added") { toast(`${email} was added`); c.X.route(); return; }
     const text = inviteText(email, o.role === "manager" ? "a school manager" : o.role === "admin" ? "a platform admin" : "an instructor", o.schoolName || "");
     out.replaceChildren(h(".warnbox.good", h("b", "Invite saved for " + email), h(".src", "They get the role as soon as they sign up and confirm this email address. Send them this message:"),
-      h("pre", { style: "white-space:pre-wrap;font:inherit;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:8px;margin:6px 0" }, text), h("button.btn.alt.sm", { onclick: () => copy(text, "Message copied") }, ic("copy", 16), "Copy message")));
+      h("pre", { style: "white-space:pre-wrap;font:inherit;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px;margin:6px 0" }, text), h("button.btn.alt.sm", { onclick: () => copy(text, "Message copied") }, ic("copy", 16), "Copy message")));
     o.pending?.();
   }) }, ic("userplus", 16), o.button || "Invite");
   return h("div", { style: "margin-top:10px" }, h(".row.wrapx", em, sel || "", btn), out);

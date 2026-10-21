@@ -4,7 +4,7 @@ import { viewAdmin as adminView } from "./admin.js";
 import { viewWorkspace, workspaceLabel } from "./staff.js";
 import * as Demo from "./demo.js";
 import { challengeBody, enrollBody, mfaCard } from "./mfa.js";
-import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp, pic } from "./ui.js";
+import { $, h, md, clean, ic, toast, shuffle, confetti, symTile, symOf, emojiTile, floatXP, countUp, pic, logo } from "./ui.js";
 import { buildExtras } from "./classcontent.js";
 
 // This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
@@ -26,11 +26,11 @@ let MAN = {};                                  // the course lectures' skeletons
 let EXTRA = { lectures: [], extra: {}, announcements: [] }; // what instructors added to the person's classes
 let builtVersion = -1, builtDrafts = null;
 const EXAMS = {};
-const CLASS_COLORS = { erth209: "#2a9d8f", astr207: "#6c5ce7", biol305: "#c0392b" };
+const CLASS_COLORS = { erth209: "#2F9E94", astr207: "#6F66D6", biol305: "#C8627A" };
 const PALETTES = {
-  erth209: ["#2a9d8f", "#e76f51", "#457b9d", "#8d6a9f", "#5f9e4e", "#bc4749", "#277da1", "#c9822b", "#577590", "#8c5e3c"],
-  astr207: ["#6c5ce7", "#3d9be9", "#2fa7b5", "#9b5de5", "#4361ee", "#7b2cbf", "#4895ef"],
-  biol305: ["#d35400", "#7d3c98", "#2874a6", "#a04000", "#148f77", "#c0392b"],
+  erth209: ["#2F9E94", "#5B7FD6", "#7A6FDB", "#4E9FD0", "#3AA687", "#D9777F", "#3F6FB0", "#CC8A3A", "#6C86B8", "#8E7CC3"],
+  astr207: ["#6F66D6", "#4E9FD0", "#2F9E94", "#8E7CC3", "#4A63C9", "#7A6FDB", "#5B8FD6"],
+  biol305: ["#C8627A", "#8E7CC3", "#3F7FB8", "#CC8A3A", "#2F9E94", "#D9777F"],
 };
 let curCls = null; try { curCls = localStorage.getItem("erth209:cls"); } catch {}
 const myClasses = () => SUBJECTS.filter((sj) => S.hasAccess(sj.id));
@@ -57,7 +57,7 @@ function buildLecs() {
   EXTRA = buildExtras(S.classItems, classRows(), { showDrafts: builtDrafts, today: new Date().toISOString().slice(0, 10) });
   const keep = new Map(LECS.filter((l) => !l.custom).map((l) => [l.id, l]));
   const base = SUBJECTS.flatMap((sj) => sj.lectures.map((id) => keep.get(id) || (MAN[id] ? skeleton(MAN[id], sj.id) : null))).filter(Boolean);
-  const n = {}, color = (l) => { const pal = PALETTES[l.subject] || ["#0d3b66"]; n[l.subject] = n[l.subject] || 0; return pal[n[l.subject]++ % pal.length]; };
+  const n = {}, color = (l) => { const pal = PALETTES[l.subject] || ["#324586"]; n[l.subject] = n[l.subject] || 0; return pal[n[l.subject]++ % pal.length]; };
   base.forEach((l) => { l.color = color(l); applyExtras(l); });
   EXTRA.lectures.forEach((l) => { l.color = color(l); });
   LECS = [...base, ...EXTRA.lectures];
@@ -95,7 +95,7 @@ async function boot() {
   await S.initBackend();
   const [subs, man] = await Promise.all([fetch("content/subjects.json").then((r) => r.json()), fetch("content/manifest.json").then((r) => r.json())]);
   SUBJECTS = subs; MAN = man;
-  SUBJECTS.forEach((sj) => (sj.color = CLASS_COLORS[sj.id] || "#0d3b66"));
+  SUBJECTS.forEach((sj) => (sj.color = CLASS_COLORS[sj.id] || "#324586"));
   if (S.DEMO) { S.setDemoContent(() => Demo.items(), (p) => Demo.media(p)); await S.loadClassItems(); }
   buildLecs();
   S.onChange(checkMilestones);
@@ -183,7 +183,7 @@ function shell(parts) {
   if (cc) document.documentElement.style.setProperty("--c", cc.color);
   app.replaceChildren(
     h("header.top", h(".in",
-      h("button.brand", { onclick: () => (location.hash = "#/") }, h("span.logo", ic("star", 18)), "ACEIT"),
+      h("button.brand", { "aria-label": "ACEIT home", onclick: () => (location.hash = "#/") }, logo(22)),
       cc && page !== "work" ? h("button.cls", { style: `--tc:${cc.color}`, title: "Your classes", onclick: () => (location.hash = "#/") }, h("span.em", cc.icon), cc.name) : "",
       page === "work" ? h("span", { style: "margin-left:auto" }) : h(".xp", { title: `${x.xp} XP in ${cc ? cc.name : "this class"}` }, ic("fire", 16), "Lv " + x.lvl, h(".bar", h("i", { style: `width:${x.pct}%` }))),
       admin && !S.DEMO ? h("button.chip", { "aria-label": "Switch between admin and student view", onclick: () => { S.setPref("student", !S.pref("student")); route(); } }, ic("eye", 16), S.pref("student") ? "Student view" : "Admin view") : "",
@@ -275,11 +275,11 @@ function paintSync(st) {
 
 /* ---------- profile ---------- */
 const AV_SYMS = ["globe", "telescope", "rocket", "gem", "volcano", "atom", "orbit", "bolt", "wave", "clock", "trophy", "star"];
-const AV_COLS = ["#0d3b66", "#1b6ca8", "#2c7a56", "#7a3b69", "#a8541a", "#4a5568"];
-const avatarStyle = () => `background:${S.prefs().avatarColor || AV_COLS[0]};color:#faf0ca`;
+const AV_COLS = ["#324586", "#323C64", "#3F7FB8", "#2F8F84", "#6F66D6", "#B5566C"];
+const avatarStyle = () => `background:${S.prefs().avatarColor || AV_COLS[0]};color:#F5F6F7`;
 const avatarGlyph = (size) => { const sy = S.prefs().avatarSym; return sy ? ic(sy, size) : h("span", S.myName().slice(0, 1).toUpperCase()); };
 function feedbackCard() {
-  let rating = 0; const msg = h("textarea", { rows: 3, maxlength: 1000, placeholder: "What would make ACEIT better for you? (optional)", "aria-label": "Feedback message", style: "width:100%;font:inherit;padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--card);color:var(--ink)" });
+  let rating = 0; const msg = h("textarea", { rows: 3, maxlength: 1000, placeholder: "What would make ACEIT better for you? (optional)", "aria-label": "Feedback message", style: "width:100%;font:inherit;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)" });
   const stars = h(".row", { style: "margin:6px 0" }); const paint = () => stars.replaceChildren(...[1, 2, 3, 4, 5].map((n) => h("button.chip" + (rating >= n ? ".on" : ""), { "aria-label": n + " out of 5", onclick: () => { rating = n; paint(); } }, "\u2605")));
   paint();
   return h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F4AC} Send feedback"), h(".src", { style: "margin:0" }, "How is ACEIT working for you?"), stars, msg,
@@ -295,7 +295,7 @@ function viewProfile(v) {
     const pwMsg = h("p.err", { role: "alert", style: "margin:4px 0 0;min-height:0" });
     const cur = document.documentElement.dataset.theme || "auto";
     v.append(h(".hero", h("h1", "Your profile")),
-      h(".card", h(".profhead", h("div.avatar.big", { style: avatarStyle() }, avatarGlyph(34)), h("div", h("b", { style: "font-size:1.1rem" }, S.myName()), h(".src", { style: "margin:2px 0" }, email), S.profile?.is_admin ? h("span.pill", { style: "background:#0d3b66" }, "Admin") : h("span.pill", `Level ${x.lvl}`)))),
+      h(".card", h(".profhead", h("div.avatar.big", { style: avatarStyle() }, avatarGlyph(34)), h("div", h("b", { style: "font-size:1.1rem" }, S.myName()), h(".src", { style: "margin:2px 0" }, email), S.profile?.is_admin ? h("span.pill", { style: "background:#324586" }, "Admin") : h("span.pill", `Level ${x.lvl}`)))),
       h(".card", { style: "margin-top:12px" }, h("h3", "\u{1F3A8} Avatar"), h(".src", { style: "margin:0 0 6px" }, "Pick a symbol and a colour."),
         h(".pgrid", AV_SYMS.map((sy) => h("button" + (pf.avatarSym === sy ? ".on" : ""), { "aria-label": sy, onclick: () => { S.setPrefs({ avatarSym: sy }); draw(); } }, ic(sy, 22)))),
         h(".swatches", AV_COLS.map((cl) => h("button" + ((pf.avatarColor || AV_COLS[0]) === cl ? ".on" : ""), { style: `background:${cl}`, "aria-label": "Colour " + cl, onclick: () => { S.setPrefs({ avatarColor: cl }); draw(); } })))),
@@ -341,7 +341,7 @@ function viewPrivacy() {
       h("h3", "Questions or requests"), h("p", { style: "margin-bottom:0" }, "Ask your instructor or your school. They can also ask us to remove a class or a student."))));
 }
 function authBox(title, ...kids) {
-  app.replaceChildren(h(".auth", h("h1", { style: "text-align:center" }, "ACEIT"),
+  app.replaceChildren(h(".auth", h("h1.authlogo", { "aria-label": "ACEIT" }, logo(46)),
     h("p", { style: "text-align:center;color:var(--mute)" }, "Learn it, play it, ace it."), h(".card", h("h2", title), ...kids), h("p", { style: "text-align:center;margin-top:12px" }, h("a", { href: "#/privacy" }, "Privacy"))));
 }
 function viewAuth() {
@@ -435,7 +435,7 @@ function subjectStats(sj) {
 }
 function joinCard() {
   const inp = h("input", { placeholder: "Enter a class code", autocomplete: "off", "aria-label": "Class code" }), err = h("p.err", { role: "alert", style: "margin:4px 0 0" });
-  const go = h("button.btn", { style: "--c:#2563eb" }, "Join class");
+  const go = h("button.btn", { style: "--c:var(--blue)" }, "Join class");
   const submit = async () => {
     const code = inp.value.trim(); if (!code) return; go.disabled = true; err.textContent = "";
     const r = await S.joinByCode(code, SUBJECTS.map((x) => x.id)); go.disabled = false;
@@ -754,7 +754,7 @@ function viewPractice(v) {
       LS.map((l) => h("button.chip" + (sel?.has(l.id) ? ".on" : ""), { onclick: () => { sel = sel || new Set(); sel.has(l.id) ? sel.delete(l.id) : sel.add(l.id); if (!sel.size) sel = null; draw(); } }, [ic(symOf(l), 15), l.title]))),
       h(".card", h("p", `${pool.length} questions available.`),
         h(".row", [10, 20, 40, pool.length].filter((n, k, a) => n <= pool.length && a.indexOf(n) === k).map((n) =>
-          h("button.btn", { style: "--c:#2563eb", onclick: () => { v.replaceChildren(); runQuiz(v, shuffle(pool.slice()).slice(0, n), "Practice exam", "var(--brand)", draw); } }, n === pool.length ? `All ${n}` : `${n} questions`)))));
+          h("button.btn", { style: "--c:var(--blue)", onclick: () => { v.replaceChildren(); runQuiz(v, shuffle(pool.slice()).slice(0, n), "Practice exam", "var(--brand)", draw); } }, n === pool.length ? `All ${n}` : `${n} questions`)))));
   };
   draw();
 }

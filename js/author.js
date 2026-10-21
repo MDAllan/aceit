@@ -165,7 +165,7 @@ export function previewNode(kind, b) {
   if (kind === "question") return h(".card", { style: "margin-top:8px" }, b.img ? pic({ ...b.img }, { style: "max-width:100%;max-height:200px;margin-bottom:8px" }) : "", h(".q", t(b.q)),
     b.options.map((o, i) => h(".opt" + (i === b.answer ? ".ok" : ""), h("b", LETTER[i].toLowerCase()), h("span", t(o)))), b.why ? h(".fb", h("b", "Explanation: "), t(b.why)) : "", h(".src", "The correct answer is marked here only. Students pick one first."));
   if (kind === "card") return h(".card", { style: "margin-top:8px" }, h(".src", { style: "margin:0" }, "Front"), h("b", t(b.front)), h(".src", { style: "margin:8px 0 0" }, "Back"), h("div", t(b.back)));
-  if (kind === "note") return h(".card", { style: "margin-top:8px" }, h("h3", t(b.title)), b.img ? pic({ ...b.img }, { style: "max-width:100%;max-height:240px;border:1px solid var(--line);border-radius:4px" }) : "", (b.bullets || []).length ? h("ul.pts", b.bullets.map((x) => h("li", t(x)))) : "");
+  if (kind === "note") return h(".card", { style: "margin-top:8px" }, h("h3", t(b.title)), b.img ? pic({ ...b.img }, { style: "max-width:100%;max-height:240px;border:1px solid var(--line);border-radius:10px" }) : "", (b.bullets || []).length ? h("ul.pts", b.bullets.map((x) => h("li", t(x)))) : "");
   if (kind === "lecture") return h(".card", { style: "margin-top:8px" }, h("h3", (b.icon || ICONS[0]) + " " + b.title), b.intro ? h("p", t(b.intro)) : "");
   return h(".card", { style: "margin-top:8px;border-left:6px solid var(--sun)" }, h("b", t(b.title)), b.text ? h("p", { style: "margin:2px 0 0" }, t(b.text)) : "");
 }
@@ -190,7 +190,7 @@ function pictureField(ctx, current) {
   const file = h("input", { type: "file", accept: "image/png,image/jpeg,image/webp,image/gif", "aria-label": "Choose a picture" }), err = h("p.err", { role: "alert", style: "margin:4px 0 0;min-height:0" }), show = h("div", { style: "margin:8px 0" });
   const draw = () => {
     const has = blob || (current && !removed);
-    show.replaceChildren(blob ? h("img", { src: url, alt: "The picture you chose", style: "max-width:100%;max-height:200px;border:1px solid var(--line);border-radius:4px" }) : current && !removed ? pic({ ...current }, { style: "max-width:100%;max-height:200px;border:1px solid var(--line);border-radius:4px" }) : h(".src", "No picture."),
+    show.replaceChildren(blob ? h("img", { src: url, alt: "The picture you chose", style: "max-width:100%;max-height:200px;border:1px solid var(--line);border-radius:10px" }) : current && !removed ? pic({ ...current }, { style: "max-width:100%;max-height:200px;border:1px solid var(--line);border-radius:10px" }) : h(".src", "No picture."),
       has ? h("div", { style: "margin-top:6px" }, h("button.btn.alt.sm", { type: "button", onclick: () => { blob = null; removed = true; file.value = ""; draw(); } }, ic("trash", 16), "Remove picture")) : "");
     altBox.hidden = !has;
   };

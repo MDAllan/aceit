@@ -90,7 +90,7 @@ export async function viewAdmin(v, ctx) {
       h(".row", { style: "margin:10px 0" }, mine.map((x) => h("button.chip" + (sj === x.id ? ".on" : ""), { onclick: () => { sj = x.id; draw(); } }, [ic(symOf(x), 15), x.name])), isAdm && !S.DEMO ? h("button.chip" + (everyone ? ".on" : ""), { onclick: () => { everyone = !everyone; draw(); } }, "Show everyone") : ""),
       h(".tw", h("table", h("thead", h("tr", ["Student", "Classes", "Overall", ...ls.map((l) => ic(symOf(l), 16)), "Quiz acc.", "Last active", ""].map((x) => h("th", x)))),
         h("tbody", rows.map((r) => h("tr",
-          h("td", h("b", r.p.display_name || ""), h(".src", r.p.email), r.p.is_admin ? h("span.pill", { style: "background:#0d3b66" }, "admin") : "", r.p.blocked ? h("span.pill", { style: "background:#dc2626" }, "blocked") : ""),
+          h("td", h("b", r.p.display_name || ""), h(".src", r.p.email), r.p.is_admin ? h("span.pill", { style: "background:#324586" }, "admin") : "", r.p.blocked ? h("span.pill", { style: "background:#B8404F" }, "blocked") : ""),
           h("td", r.p.is_admin ? "all" : r.classes.map(nameOf).join(", ") || "none yet"),
           h("td", r.avg + "%"), ...r.stats.map((x) => h("td", x + "%")),
           h("td", r.acc === null ? "-" : r.acc + "%"), h("td", r.last ? new Date(r.last).toLocaleDateString() : "-"),
