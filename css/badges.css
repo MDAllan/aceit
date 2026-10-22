@@ -1,0 +1,91 @@
+/* Badges: the profile grid, the detail popup and the celebration. Uses the app's colour tokens, so light and dark both work.
+   Every class starts with bdg- so nothing here can clash with style.css. */
+
+/* ---------- a badge picture ---------- */
+.bdg-art{--sz:64px;position:relative;display:block;width:var(--sz);height:var(--sz);flex:none}
+.bdg-art img{display:block;width:100%;height:100%;object-fit:contain;-webkit-user-drag:none;user-select:none}
+/* locked = the same picture in grey, a little faded */
+.bdg-art.locked{filter:grayscale(1);opacity:.55}
+/* picture missing: a plain circle with the first letters of the badge name */
+.bdg-ini{position:absolute;inset:6%;display:grid;place-items:center;border-radius:50%;border:3px solid var(--brand);background:color-mix(in srgb,var(--brand) 16%,var(--card));color:var(--ink);font:700 calc(var(--sz) * .3)/1 Lexend,Nunito,system-ui,sans-serif}
+
+/* ---------- the grid in the profile ---------- */
+.bdg-sec{margin-top:18px}
+.bdg-sum{margin:0 0 4px;color:var(--mute);font-weight:700;font-size:.85rem}
+.bdg-grid{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
+.bdg-grid>li{min-width:0}
+.bdg-tile{width:100%;height:100%;min-height:44px;display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 8px 11px;text-align:center;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow-s);transition:transform .15s var(--ease),box-shadow .15s,border-color .15s}
+.bdg-tile.earned{border-color:color-mix(in srgb,var(--brand) 38%,var(--line))}
+.bdg-tile.locked{background:var(--soft);box-shadow:none}
+.bdg-tile:hover{transform:translateY(-2px);box-shadow:var(--shadow-m)}
+.bdg-tile:active{transform:scale(.97)}
+.bdg-tile:focus-visible,.bdg-step:focus-visible,.bdg-x:focus-visible,.bdg-skip:focus-visible,.bdg-ok:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.bdg-meta{display:flex;flex-direction:column;align-items:center;gap:5px;width:100%;min-width:0}
+.bdg-name{display:grid;place-items:center;min-height:2.4em;font:600 .78rem/1.2 Lexend,Nunito,system-ui,sans-serif;overflow-wrap:anywhere}
+.bdg-tile.locked .bdg-name{color:var(--mute)}
+.bdg-prog{display:flex;flex-direction:column;align-items:center;gap:4px;width:100%}
+.bdg-bar{display:block;width:100%;height:6px;border-radius:99px;background:var(--line);overflow:hidden}
+.bdg-bar>i{display:block;height:100%;border-radius:99px;background:var(--brand);transition:width .5s var(--ease)}
+.bdg-num{font:700 .72rem/1.2 Lexend,Nunito,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--mute)}
+.bdg-num.gen::after{content:attr(data-num)}
+
+/* ---------- popups ---------- */
+body.bdg-lock{overflow:hidden}
+.bdg-back{position:fixed;inset:0;z-index:75;display:grid;place-items:center;padding:16px;background:rgba(14,21,49,.62);overflow-y:auto;overscroll-behavior:contain;animation:bdg-fade .18s ease-out}
+.bdg-dlg{position:relative;width:min(100%,420px);max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow-y:auto;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:calc(var(--r) + 6px);box-shadow:var(--shadow-m);padding:12px 16px 18px;text-align:center;outline:none;animation:bdg-rise .26s var(--ease)}
+.bdg-dhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}
+.bdg-detail-dlg .bdg-dhead{position:sticky;top:0;z-index:3;margin:-12px -16px 4px;padding:12px 16px 6px;background:var(--card);border-radius:calc(var(--r) + 5px) calc(var(--r) + 5px) 0 0}
+.bdg-eyebrow{margin:0;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);text-align:left}
+.bdg-cele .bdg-eyebrow{text-align:center;margin-bottom:6px}
+.bdg-x{min-height:44px;min-width:44px;padding:0 14px;display:inline-flex;align-items:center;justify-content:center;gap:6px;margin-left:auto;font-weight:700;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);box-shadow:var(--shadow-s)}
+.bdg-hero{--sz:140px;display:grid;place-items:center;width:var(--sz);height:var(--sz);margin:6px auto 12px;position:relative}
+.bdg-hero .bdg-art{--sz:inherit}
+.bdg-title{margin:0 0 8px;font-size:1.3rem;overflow-wrap:anywhere}
+.bdg-status{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:0 0 10px}
+.bdg-chip{display:inline-flex;align-items:center;gap:4px;padding:3px 11px;border-radius:99px;font-size:.78rem;font-weight:700;color:var(--ink);background:var(--soft);border:1px solid var(--line)}
+.bdg-chip.rank{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+.bdg-chip.ok{background:#1F7A66;color:#fff;border-color:transparent}
+.bdg-how{margin:0 0 10px;font-weight:700}
+.bdg-progwrap{margin:0 0 10px}
+.bdg-progwrap .bdg-prog{gap:6px}
+.bdg-progwrap .bdg-bar{height:10px}
+.bdg-progwrap .bdg-num{font-size:.85rem}
+.bdg-cheer{margin:0 0 4px;color:var(--mute);font-weight:600}
+.bdg-lh{margin:16px 0 8px;font-size:.85rem;color:var(--mute);text-align:left;text-transform:uppercase;letter-spacing:.08em}
+
+/* the whole ladder: one small picture per step */
+.bdg-ladder{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.bdg-ladder>li{flex:1 1 76px;max-width:132px;min-width:0}
+.bdg-step{width:100%;height:100%;min-height:44px;display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 4px 9px;text-align:center;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);transition:transform .12s var(--ease),border-color .12s}
+.bdg-step:active{transform:scale(.96)}
+.bdg-step[aria-pressed=true]{border-color:var(--brand);background:color-mix(in srgb,var(--brand) 10%,var(--card));box-shadow:inset 0 0 0 1px var(--brand)}
+.bdg-stepart{position:relative;display:block}
+.bdg-tick{position:absolute;right:-4px;bottom:-4px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:#1F7A66;color:#fff;border:2px solid var(--card)}
+.bdg-step-name{font:600 .74rem/1.2 Lexend,Nunito,system-ui,sans-serif;overflow-wrap:anywhere}
+.bdg-step.locked .bdg-step-name{color:var(--mute)}
+.bdg-step-how{font-size:.68rem;line-height:1.25;color:var(--mute);overflow-wrap:anywhere}
+
+/* ---------- the celebration ---------- */
+.bdg-cele{padding-top:18px}
+.bdg-cele .bdg-hero{--sz:150px}
+.bdg-glow::before{content:"";position:absolute;inset:-18px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--sun) 38%,transparent) 0,color-mix(in srgb,var(--lav) 24%,transparent) 55%,transparent 72%);z-index:0}
+.bdg-glow .bdg-art{position:relative;z-index:1}
+.bdg-popin .bdg-art{animation:bdg-pop .7s var(--ease) both}
+.bdg-popin::before{animation:bdg-glow 1.6s ease-in-out infinite}
+.bdg-desc{margin:0 0 6px}
+.bdg-actions{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:14px}
+.bdg-ok{min-width:160px;min-height:48px}
+.bdg-skip{min-height:44px;padding:0 14px;background:none;border:0;color:var(--mute);font-weight:700;text-decoration:underline;border-radius:var(--r-s)}
+
+@keyframes bdg-fade{from{opacity:0}to{opacity:1}}
+@keyframes bdg-rise{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes bdg-pop{0%{opacity:0;transform:scale(.45) rotate(-10deg)}55%{opacity:1;transform:scale(1.12) rotate(3deg)}100%{transform:none}}
+@keyframes bdg-glow{50%{transform:scale(1.08);opacity:.75}}
+
+/* people who asked for less motion get none (the OS setting, or the switch in the profile) */
+@media (prefers-reduced-motion:reduce){
+  .bdg-back,.bdg-dlg,.bdg-popin .bdg-art,.bdg-popin::before{animation:none!important}
+  .bdg-tile,.bdg-step,.bdg-bar>i{transition:none!important}
+}
+:root[data-motion=reduce] .bdg-back,:root[data-motion=reduce] .bdg-dlg,:root[data-motion=reduce] .bdg-popin .bdg-art,:root[data-motion=reduce] .bdg-popin::before{animation:none!important}
+:root[data-motion=reduce] .bdg-tile,:root[data-motion=reduce] .bdg-step,:root[data-motion=reduce] .bdg-bar>i{transition:none!important}

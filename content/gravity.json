@@ -805,6 +805,7 @@
   {
    "id": "gr-c2",
    "front": "Formula for the force of gravity",
+   "gloss": false,
    "back": "F = G M₁ M₂ / d², where d is the distance between the centers.",
    "short": "F = G M₁ M₂ / d²",
    "src": "Gravity deck slide 2"
@@ -819,6 +820,7 @@
   {
    "id": "gr-c4",
    "front": "What is d in the gravity formula?",
+   "gloss": false,
    "back": "The distance between the centers of the two objects.",
    "short": "Distance between the two centers",
    "src": "Gravity deck slide 2"
@@ -826,6 +828,7 @@
   {
    "id": "gr-c5",
    "front": "Directly proportional to the masses",
+   "gloss": false,
    "back": "Double one mass and the force doubles. Halve one mass and the force halves.",
    "short": "Double one mass, force doubles",
    "src": "Cosmic Perspective 4.4; practice test 2 Q13"
@@ -854,6 +857,7 @@
   {
    "id": "gr-c9",
    "front": "Double both masses at the same distance",
+   "gloss": false,
    "back": "Force becomes 2 × 2 = 4 times as strong.",
    "short": "Double both masses, force is 4 times",
    "src": "Derived from slide 2 formula"
@@ -861,6 +865,7 @@
   {
    "id": "gr-c10",
    "front": "Does Earth pull you harder than you pull Earth?",
+   "gloss": false,
    "back": "No. The two forces are equal and opposite. Earth barely moves because its mass is huge.",
    "short": "Equal pulls, Earth barely moves",
    "src": "Practice test 2 Q10 (Newton's third law)"
@@ -882,6 +887,7 @@
   {
    "id": "gr-c13",
    "front": "Do Kepler's laws only apply to planets?",
+   "gloss": false,
    "back": "No. They apply to all orbiting objects, including moons, satellites and asteroids.",
    "short": "Apply to all orbiting objects",
    "src": "Gravity deck slide 3"
@@ -889,6 +895,7 @@
   {
    "id": "gr-c14",
    "front": "Where is the Sun in a planet's elliptical orbit?",
+   "gloss": false,
    "back": "At one focus of the ellipse, not at its center.",
    "short": "At one focus, not the center",
    "src": "Cosmic Perspective 4.4; practice test 1 Q23"
@@ -896,6 +903,7 @@
   {
    "id": "gr-c15",
    "front": "Newton's version of Kepler's third law",
+   "gloss": false,
    "back": "p² = 4π² a³ / [G (M₁ + M₂)].",
    "short": "p² = 4π²a³ / G(M₁+M₂)",
    "src": "Gravity deck slides 4-5"
@@ -903,6 +911,7 @@
   {
    "id": "gr-c16",
    "front": "Meaning of p and a in Newton's version",
+   "gloss": false,
    "back": "p is the orbital period and a is the average orbital distance.",
    "short": "p = period, a = average distance",
    "src": "Gravity deck slide 4"
@@ -910,6 +919,7 @@
   {
    "id": "gr-c17",
    "front": "What Newton's version of Kepler's third law lets us find",
+   "gloss": false,
    "back": "The total mass of an orbiting system from its period and average distance.",
    "short": "Total mass of an orbiting system",
    "src": "Gravity deck slides 4-5"
@@ -917,6 +927,7 @@
   {
    "id": "gr-c18",
    "front": "How to get the Sun's mass",
+   "gloss": false,
    "back": "Use Earth's orbital period (1 year) and average distance (1 AU) in Newton's version of Kepler's third law.",
    "short": "Earth's 1 year period and 1 AU",
    "src": "Gravity deck slide 5"
@@ -938,6 +949,7 @@
   {
    "id": "gr-c21",
    "front": "Closer to the Sun in an orbit",
+   "gloss": false,
    "back": "More kinetic energy (faster) and less gravitational potential energy.",
    "short": "Closer: more kinetic, less potential",
    "src": "Orbits and Tides deck slide 2"
@@ -945,6 +957,7 @@
   {
    "id": "gr-c22",
    "front": "Farther from the Sun in an orbit",
+   "gloss": false,
    "back": "Less kinetic energy (slower) and more gravitational potential energy.",
    "short": "Farther: less kinetic, more potential",
    "src": "Orbits and Tides deck slide 2"
@@ -952,6 +965,7 @@
   {
    "id": "gr-c23",
    "front": "Can an orbit change on its own?",
+   "gloss": false,
    "back": "No. Orbits cannot change spontaneously. A change of total energy is needed.",
    "short": "Orbits never change by themselves",
    "src": "Orbits and Tides deck slides 2 and 8"
@@ -959,6 +973,7 @@
   {
    "id": "gr-c24",
    "front": "Ways an object gains or loses orbital energy",
+   "gloss": false,
    "back": "Friction or atmospheric drag, a gravitational encounter, or a collision or impact.",
    "short": "Drag, gravitational encounter, collision",
    "src": "Orbits and Tides deck slide 3"
@@ -966,6 +981,7 @@
   {
    "id": "gr-c25",
    "front": "Effect of atmospheric drag on a satellite",
+   "gloss": false,
    "back": "It loses orbital energy (turned into heat) and gradually falls toward Earth.",
    "short": "Satellite loses energy and falls",
    "src": "Cosmic Perspective 4.5; practice Q19"
@@ -987,6 +1003,7 @@
   {
    "id": "gr-c28",
    "front": "Does escape velocity depend on the object's mass?",
+   "gloss": false,
    "back": "No. Atoms, rocks and spacecraft all need about 11 km/s to leave Earth.",
    "short": "Not dependent on the object's mass",
    "src": "Cosmic Perspective 4.5; practice Q20"
@@ -1029,6 +1046,7 @@
   {
    "id": "gr-c34",
    "front": "Synchronous rotation of the Moon",
+   "gloss": false,
    "back": "The Moon turns once per orbit, so it always shows nearly the same face to Earth. Tidal friction slowed its once-faster spin.",
    "short": "Same face always toward Earth",
    "src": "Orbits and Tides deck slide 6"
@@ -1043,6 +1061,7 @@
   {
    "id": "gr-c36",
    "front": "Acceleration of gravity at Earth's surface",
+   "gloss": false,
    "back": "About 9.8 m/s².",
    "short": "g about 9.8 m/s² at surface",
    "src": "Cosmic Perspective 4.5 (not on slides)"
@@ -1071,6 +1090,7 @@
   {
    "id": "gr-c40",
    "front": "Common center of mass in an orbit",
+   "gloss": false,
    "back": "Two objects held by gravity both orbit the point where they would balance. It is halfway for equal masses and closer to the heavier object. For the Sun and a planet it is inside or almost inside the Sun.",
    "short": "Both orbit their balance point",
    "src": "Cosmic Perspective 4.4 and Figure 4.19"

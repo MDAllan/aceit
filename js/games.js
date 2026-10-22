@@ -1,5 +1,6 @@
 import * as S from "./store.js";
 import { h, md, clean, ic, toast, shuffle, confetti, pick, floatXP } from "./ui.js";
+import { shareGame } from "./share.js";
 
 export const DEFAULT_GAMES = ["match", "memory", "blitz", "guess", "speed", "picture"];
 
@@ -19,7 +20,11 @@ const META = {
   calc: ["calc", "#4A63C9", "Number cruncher", "Fresh calculations every time. Beat the numbers."],
 };
 
-export function renderGame(b, lec, all) {
+// main.js listens here to show how a challenge went and to offer sharing after a game ends
+let hook = null;
+export const onGameEnd = (fn) => { hook = fn; };
+
+export function renderGame(b, lec, all, opts = {}) {
   const imgSecs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title));
   const ok = (g) => (g === "picture" ? imgSecs.length >= 4 : ["match", "memory", "blitz", "guess"].includes(g) ? lec.cards.length >= 8 : g === "speed" ? (lec.quiz || []).length >= 5 : g === "sort" ? lec.sort?.length : g === "calc" ? lec.calc?.length : g === "order" ? lec.order?.length : true);
   const draw = () => {
@@ -33,16 +38,21 @@ export function renderGame(b, lec, all) {
   };
   const start = (g) => {
     b.style.setProperty("--c", GCOL[g] || "var(--brand)");
-    b.replaceChildren(h("button.btn.alt.sm", { onclick: () => { b.style.removeProperty("--c"); draw(); }, style: "margin:8px 0" }, ic("left", 16), "All games"));
+    b.replaceChildren(h(".row", { style: "margin:8px 0;justify-content:space-between" }, h("button.btn.alt.sm", { onclick: () => { b.style.removeProperty("--c"); draw(); } }, ic("left", 16), "All games"),
+      h("button.btn.alt.sm", { onclick: () => shareGame({ lec, game: g, kind: "share", className: opts.className }) }, ic("send", 16), "Share")));
     const box = h("div"); b.append(box);
     const again = () => { box.replaceChildren(); G[g](box, lec, again); };
     G[g](box, lec, again);
   };
-  draw();
+  if (opts.start && lec.games.includes(opts.start) && META[opts.start] && ok(opts.start)) start(opts.start); else draw();
 }
 
 const txt = (c) => c.short || c.back;
-const done = (lec, g) => S.gameDone(lec.id + ":" + g);
+// a game ended: remember it (and the score for the badges); the hook runs a moment later, after the end card is on the screen
+const done = (lec, g, score = null, total = null, box = null) => {
+  S.gameDone(lec.id + ":" + g); S.gameResult(lec.id, g, score ?? 0, total ?? 0);
+  if (hook && box) setTimeout(() => { try { hook({ lec, game: g, score, total, box }); } catch (e) { console.error(e); } }, 0);
+};
 const endCard = (title, score, total, again, extra) => h(".card.pop", { style: "text-align:center" }, h("h2", title), h(".score", `${score}/${total}`),
   extra || "", h("button.btn", { style: "margin-top:10px", onclick: again }, "Play again"));
 const nextBtn = (last, fn) => h("button.btn", { style: "margin-top:10px", onclick: fn }, last ? "See score" : "Next", ic("right", 18));
@@ -63,13 +73,13 @@ const G = {
         tries++; lock = true; const a = first; first = null;
         if (a.t.id === t.id && a.t.k !== t.k) {
           a.el.classList.replace("sel", "done"); el.classList.replace("sel", "done"); found++; lock = false;
-          if (found === pool.length) { done(lec, "match"); confetti(); toast(`All matched in ${tries} tries!`); grid.after(h("button.btn", { style: "margin-top:12px", onclick: again }, "Play again")); }
+          if (found === pool.length) { done(lec, "match", null, null, b); confetti(); toast(`All matched in ${tries} tries!`); grid.after(h("button.btn", { style: "margin-top:12px", onclick: again }, "Play again")); }
         } else { a.el.classList.add("shake"); el.classList.add("shake"); setTimeout(() => { [a.el, el].forEach((x) => x.classList.remove("sel", "shake")); lock = false; }, 600); }
         info.textContent = `Tries: ${tries} · Pairs: ${found}/${pool.length}`;
       };
       grid.append(el);
     });
-    b.append(h("h2", "\u{1F9E9} Matching cards"), h("p", "Tap a term, then tap its meaning."), info, grid);
+    b.append(h("h2", "Matching cards"), h("p", "Tap a term, then tap its meaning."), info, grid);
   },
 
   /* ---- memory: face-down pairs ---- */
@@ -88,13 +98,13 @@ const G = {
         el.setUp(true); open.push({ t, el });
         if (open.length < 2) return;
         moves++; lock = true; const [a, c] = open; open = [];
-        if (a.t.id === c.t.id) { a.el.classList.add("done"); c.el.classList.add("done"); found++; lock = false; if (found === pool.length) { done(lec, "memory"); confetti(); toast(`Cleared in ${moves} moves!`); grid.after(h("button.btn", { style: "margin-top:12px", onclick: again }, "Play again")); } }
+        if (a.t.id === c.t.id) { a.el.classList.add("done"); c.el.classList.add("done"); found++; lock = false; if (found === pool.length) { done(lec, "memory", null, null, b); confetti(); toast(`Cleared in ${moves} moves!`); grid.after(h("button.btn", { style: "margin-top:12px", onclick: again }, "Play again")); } }
         else setTimeout(() => { a.el.setUp(false); c.el.setUp(false); lock = false; }, 900);
         info.textContent = `Moves: ${moves} · Pairs: ${found}/${pool.length}`;
       };
       grid.append(el);
     });
-    b.append(h("h2", "\u{1F9E0} Memory flip"), h("p", "Flip two cards. A term and its meaning make a pair."), info, grid);
+    b.append(h("h2", "Memory flip"), h("p", "Flip two cards. A term and its meaning make a pair."), info, grid);
   },
 
   /* ---- true / false blitz ---- */
@@ -102,7 +112,7 @@ const G = {
     const rounds = pick(lec.cards, 10); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "blitz"); if (score >= 8) confetti(); return b.append(endCard("\u26A1 Blitz finished!", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "blitz", score, rounds.length, b); if (score >= 8) confetti(); return b.append(endCard("\u26A1 Blitz finished!", score, rounds.length, again)); }
       const c = rounds[i], truth = Math.random() < 0.5;
       const other = pick(lec.cards.filter((x) => x.id !== c.id && txt(x) !== txt(c)), 1)[0];
       const shown = truth ? txt(c) : txt(other);
@@ -124,7 +134,7 @@ const G = {
     const rounds = pick(lec.cards, 8); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "guess"); if (score >= 6) confetti(); return b.append(endCard("\u{1F4A1} Terms guessed!", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "guess", score, rounds.length, b); if (score >= 6) confetti(); return b.append(endCard("\u{1F4A1} Terms guessed!", score, rounds.length, again)); }
       const c = rounds[i], opts = shuffle([c, ...pick(lec.cards.filter((x) => x.id !== c.id), 3)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcd"[k]), h("span", md(o.front))); bt.onclick = () => {
@@ -145,7 +155,7 @@ const G = {
     const bar = h(".row", { style: "justify-content:space-between" }, h("span", "Time ", clock), h("span", "Score ", sc), cmb);
     const body = h("div");
     const tick = setInterval(() => { if (!b.isConnected) return clearInterval(tick); t--; clock.textContent = t; if (t <= 0) { clearInterval(tick); finish(); } }, 1000);
-    const finish = () => { if (over) return; over = true; done(lec, "speed"); if (score >= 6) confetti(); b.replaceChildren(endCard("\u23F1\uFE0F Time's up!", score, i, again, h("p", `Best streak: ${best}`))); };
+    const finish = () => { if (over) return; over = true; done(lec, "speed", score, i, b); if (score >= 6) confetti(); b.replaceChildren(endCard("\u23F1\uFE0F Time's up!", score, i, again, h("p", `Best streak: ${best}`))); };
     const draw = () => {
       if (over) return;
       const q = qs[i % qs.length]; let got = false;
@@ -158,7 +168,7 @@ const G = {
       }; return bt; });
       body.replaceChildren(h(".card", h(".q", md(q.q)), els));
     };
-    b.append(h("h2", "\u23F1\uFE0F 60-second sprint"), bar, body); draw();
+    b.append(h("h2", "60-second sprint"), bar, body); draw();
   },
 
   /* ---- picture quiz ---- */
@@ -166,7 +176,7 @@ const G = {
     const secs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title)), rounds = pick(secs, Math.min(8, secs.length)); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "picture"); if (score >= rounds.length - 2) confetti(); return b.append(endCard("\u{1F5BC}\uFE0F Picture quiz done!", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "picture", score, rounds.length, b); if (score >= rounds.length - 2) confetti(); return b.append(endCard("\u{1F5BC}\uFE0F Picture quiz done!", score, rounds.length, again)); }
       const s = rounds[i], im = pick(s.images, 1)[0], opts = shuffle([s, ...pick(secs.filter((x) => x !== s), 3)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcd"[k]), h("span", clean(o.title))); bt.onclick = () => {
@@ -183,7 +193,7 @@ const G = {
   /* ---- clickable timeline ---- */
   timeline(b, lec) {
     const T = lec.timeline; if (!T) return b.append(h("p", "No timeline data."));
-    let range = null, openEv = null;
+    let range = null, openEv = null, played = false;
     const kindName = { life: "Life", earth: "Earth", super: "Supercontinent", extinct: "Extinction", climate: "Climate" };
     const kindIcon = { life: "star", earth: "fire", super: "list", extinct: "alert", climate: "chart" };
     const bar = (items, total) => h(".tl", items.map((e) => { const w = ((e.from - e.to) / total) * 100;
@@ -191,12 +201,12 @@ const G = {
     const draw = () => {
       b.replaceChildren();
       const inRange = T.events.filter((e) => !range || (e.ma <= range.from && e.ma >= range.to));
-      b.append(h("h2", "\u23F3 Earth's timeline"), h("p", { style: "color:var(--mute)" }, "Top bar: all 4,570 million years to scale. Bottom bar: zoom on the last 542 million. Tap a block to filter events."),
+      b.append(h("h2", "Earth's timeline"), h("p", { style: "color:var(--mute)" }, "Top bar: all 4,570 million years to scale. Bottom bar: zoom on the last 542 million. Tap a block to filter events."),
         h(".src", "Whole history (4570 to 0 Ma)"), bar(T.eons, T.total), h(".src", "Zoom: Phanerozoic eras (542 to 0 Ma)"), bar(T.eras, 542),
         h(".row", range ? [h("span.pill", { style: `background:${range.color}` }, `${range.name}: ${range.from} to ${range.to} Ma`), h("button.btn.alt.sm", { onclick: () => { range = null; draw(); } }, "Show all")] : h(".src", "Showing all events")),
         range?.note ? h(".card", { style: "margin:8px 0" }, h("b", "About the " + range.name), h("p", { style: "margin:.2rem 0 0" }, md(range.note))) : "",
         h("div", inRange.map((e, k) => { const on = openEv === e;
-          return h("button.ev", { style: `animation-delay:${Math.min(k, 10) * 25}ms`, onclick: () => { openEv = on ? null : e; if (!on) done(lec, "timeline"); draw(); } },
+          return h("button.ev", { style: `animation-delay:${Math.min(k, 10) * 25}ms`, onclick: () => { openEv = on ? null : e; if (!on && !played) { played = true; done(lec, "timeline"); } draw(); } },
             h("span.k", ic(kindIcon[e.kind] || "star", 20)), h("span.ma", e.show || fmt(e.ma)),
             h("div", { style: "flex:1" }, h("b", e.title), " ", h("span.pill", kindName[e.kind] || ""),
               on ? [h("div", { style: "margin-top:6px" }, md(e.text)), e.why ? h(".acc.why.open", { style: "margin-top:6px;padding:8px 12px" }, h("b", "Why: "), md(e.why)) : "", S.canSeeRefs() ? h(".src.admin", e.src) : ""] : "")); })));
@@ -234,19 +244,20 @@ const G = {
     const sel = h("select", { "aria-label": "Isotope" }, iso.map((x, i) => h("option", { value: i }, `${x.name} (half-life ${span(x.half, x.unit)})`)));
     const n = h("input", { type: "range", min: 0, max: 8, step: 0.5, value: 2, "aria-label": "Half-lives passed" });
     const out = h("div"), vis = h("div");
+    let counted = false;
     const upd = () => {
       const x = iso[sel.value], k = +n.value, frac = Math.pow(0.5, k), age = k * x.half;
       vis.replaceChildren(h(".bar", { style: "height:26px" }, h("i", { style: `width:${frac * 100}%;background:var(--accent)` })));
       out.replaceChildren(h("p", h("b", k + " half-lives"), " have passed = ", h("b", span(age, x.unit))), h("p", `Parent left: ${(frac * 100).toFixed(2)}% · Daughter made: ${(100 - frac * 100).toFixed(2)}%`),
         h(".acc.why.open", { style: "padding:10px 14px" }, h("b", "Why it works: "), "Every half-life, half of the remaining parent atoms decay. It never reaches zero; it just halves again and again. Measure the parent and daughter amounts and you can run the clock backwards."));
-      done(lec, "halflife");
+      if (!counted) { counted = true; done(lec, "halflife"); }
     };
     sel.onchange = n.oninput = upd;
     const rev = h("input", { type: "number", min: 0.01, max: 100, step: 0.01, placeholder: "e.g. 25", style: "max-width:160px", "aria-label": "Percent of parent left" });
     const revOut = h("p");
     rev.oninput = () => { const p = +rev.value; if (!(p > 0 && p <= 100)) { revOut.textContent = ""; return; } const x = iso[sel.value], k = Math.log2(100 / p);
       revOut.replaceChildren("If ", h("b", p + "%"), " of the parent is left, the sample is about ", h("b", span(k * x.half, x.unit)), ` old (${k.toFixed(2)} half-lives).`); };
-    b.append(h("h2", "\u2622\uFE0F Half-life calculator"), h("label", "Isotope"), sel, h("label", "Half-lives passed"), n, h("div", { style: "margin:10px 0" }, vis), out,
+    b.append(h("h2", "Half-life calculator"), h("label", "Isotope"), sel, h("label", "Half-lives passed"), n, h("div", { style: "margin:10px 0" }, vis), out,
       h("h3", { style: "margin-top:16px" }, "Run it backwards: find the age"), h("label", "% of parent isotope still left"), rev, revOut);
     upd();
   },
@@ -258,7 +269,7 @@ const G = {
       const items = shuffle(act.items.slice()); let i = 0, score = 0;
       const draw = () => {
         b.replaceChildren();
-        if (i >= items.length) { done(lec, "sort"); if (score >= items.length - 1) confetti(); const more = ai + 1 < acts.length;
+        if (i >= items.length) { done(lec, "sort", score, items.length, b); if (score >= items.length - 1) confetti(); const more = ai + 1 < acts.length;
           return b.append(h(".card.pop", { style: "text-align:center" }, h("h2", act.title), h(".score", `${score}/${items.length}`), h("button.btn", { style: "margin-top:10px", onclick: () => { ai = (ai + 1) % acts.length; run(acts[ai]); } }, more ? "Next activity" : "Play again"))); }
         const it = items[i]; let got = false; const fb = h("div", { "aria-live": "polite" });
         const bt = act.buckets.map((name, k) => h("button.btn.alt", { onclick: () => {
@@ -280,7 +291,7 @@ const G = {
     const gids = ids.filter((id) => CALC[id]);
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds) { done(lec, "calc"); if (score >= 6) confetti(); return b.append(endCard("\u{1F9EE} Calculations done!", score, rounds, again)); }
+      if (i >= rounds) { done(lec, "calc", score, rounds, b); if (score >= 6) confetti(); return b.append(endCard("\u{1F9EE} Calculations done!", score, rounds, again)); }
       const gid = gids[i % gids.length]; let g; do { g = CALC[gid](); } while (g.wrong.length < 3);
       const opts = shuffle([g.ans, ...g.wrong.slice(0, 4)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });

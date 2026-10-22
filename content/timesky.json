@@ -1118,6 +1118,7 @@
   {
    "id": "ts-c3",
    "front": "Why is a solar day about 4 minutes longer than a sidereal day?",
+   "gloss": false,
    "back": "Earth moves about 1 degree along its orbit each day, so it must turn about 361 degrees to face the Sun again. 1/360 of a day is about 4 minutes.",
    "short": "Extra 1 degree of spin: 4 minutes",
    "src": "TimePeriods 3-4"
@@ -1125,6 +1126,7 @@
   {
    "id": "ts-c4",
    "front": "How much earlier does a star cross your meridian each night?",
+   "gloss": false,
    "back": "About 4 minutes earlier each night (the sidereal day is 4 minutes shorter than the solar day).",
    "short": "Stars cross 4 minutes earlier nightly",
    "src": "TimePeriods 3-4; Practice exam Q1"
@@ -1160,6 +1162,7 @@
   {
    "id": "ts-c9",
    "front": "Why is the synodic month longer than the sidereal month?",
+   "gloss": false,
    "back": "Earth moves about 30 degrees around the Sun during the month, so the Moon needs an extra 30 degrees (1/12) to line up with the Sun again: about 2.2 days longer.",
    "short": "Extra 30 degrees of Moon orbit",
    "src": "TimePeriods 5, 7"
@@ -1195,6 +1198,7 @@
   {
    "id": "ts-c14",
    "front": "Sidereal period of a planet",
+   "gloss": false,
    "back": "The time it takes a planet to orbit the Sun, measured with respect to the background stars.",
    "short": "Planet orbit time against stars",
    "src": "TimePeriods 8"
@@ -1202,6 +1206,7 @@
   {
    "id": "ts-c15",
    "front": "Synodic period of a planet",
+   "gloss": false,
    "back": "The time from when a planet is aligned with the Sun in our sky until it is aligned similarly again, such as between two conjunctions.",
    "short": "Time between repeated Sun alignments",
    "src": "TimePeriods 8"
@@ -1251,6 +1256,7 @@
   {
    "id": "ts-c22",
    "front": "Why does the apparent solar day change length through the year?",
+   "gloss": false,
    "back": "Earth's orbit is slightly elliptical AND Earth's axis is tilted.",
    "short": "Elliptical orbit plus axial tilt",
    "src": "TimeZones 3"
@@ -1272,6 +1278,7 @@
   {
    "id": "ts-c25",
    "front": "How many time zones are there?",
+   "gloss": false,
    "back": "24 in theory (one per hour, 15 degrees of longitude each); 38 in practice because of politics and geography, mostly half-hour offsets.",
    "short": "24 ideal zones, 38 actual",
    "src": "TimeZones 6"
@@ -1307,6 +1314,7 @@
   {
    "id": "ts-c30",
    "front": "Why do we need leap years?",
+   "gloss": false,
    "back": "The tropical year is about 365 1/4 days, not a whole number, so a 365-day calendar drifts about 1 day every 4 years.",
    "short": "Year is not a whole number of days",
    "src": "TimeZones 11, 14; Practice exam Q8"
@@ -1314,6 +1322,7 @@
   {
    "id": "ts-c31",
    "front": "Noon altitude of the Sun",
+   "gloss": false,
    "back": "Altitude = 90 degrees minus the gap between your latitude and the Sun's declination. The Sun is toward the north if its declination is north of you, otherwise south.",
    "short": "Altitude = 90 minus latitude gap",
    "src": "SkyMotion 2-7; Practice Test 2 Q4-Q5"
@@ -1321,6 +1330,7 @@
   {
    "id": "ts-c32",
    "front": "Special latitudes from the 23.5-degree tilt",
+   "gloss": false,
    "back": "Tropics of Cancer and Capricorn at 23.5 N and S; Arctic and Antarctic Circles at 66.5 N and S (66.5 = 90 - 23.5).",
    "short": "Tropics 23.5 degrees, circles 66.5",
    "src": "SkyMotion 3"
@@ -1349,6 +1359,7 @@
   {
    "id": "ts-c36",
    "front": "Sun at the Arctic and Antarctic Circles",
+   "gloss": false,
    "back": "Above the horizon for 24 hours on at least one day a year: June at the Arctic Circle, December at the Antarctic Circle.",
    "short": "At least one 24-hour Sun day",
    "src": "SkyMotion 7"
@@ -1370,6 +1381,7 @@
   {
    "id": "ts-c39",
    "front": "When is a star circumpolar?",
+   "gloss": false,
    "back": "When its declination is greater than 90 degrees minus your latitude (above +50 at 40 N). It never sets.",
    "short": "Never sets: dec above 90 minus latitude",
    "src": "Textbook S1.2; Practice exam Q9"
@@ -1377,6 +1389,7 @@
   {
    "id": "ts-c40",
    "front": "How do you get a planet's orbital period from its synodic period?",
+   "gloss": false,
    "back": "Outer planet: P = Psyn x 1 yr / (Psyn - 1 yr). Inner planet: P = Psyn x 1 yr / (Psyn + 1 yr). Jupiter: 1.092 yr gives 11.87 yr. Venus: 1.599 yr gives 0.6152 yr.",
    "short": "Synodic to orbital period formulas",
    "src": "Textbook Mathematical Insight S1.1"
@@ -1384,6 +1397,7 @@
   {
    "id": "ts-c41",
    "front": "How do you find latitude from Polaris?",
+   "gloss": false,
    "back": "Your latitude equals the altitude of the north celestial pole, and Polaris is within 1 degree of it. Polaris at 17 degrees means latitude between 16 N and 18 N.",
    "short": "Polaris altitude gives latitude",
    "src": "Textbook S1.3"
@@ -1391,6 +1405,7 @@
   {
    "id": "ts-c42",
    "front": "How do you find longitude from a time difference?",
+   "gloss": false,
    "back": "Compare your local time with Greenwich time. Each hour is 15 degrees. Earlier than Greenwich means west, later means east. 2 hours behind = 30 W.",
    "short": "Hours from Greenwich times 15 degrees",
    "src": "Textbook S1.3"
@@ -1398,6 +1413,7 @@
   {
    "id": "ts-c43",
    "front": "What is the relation between hour angle, sidereal time and right ascension?",
+   "gloss": false,
    "back": "Hour angle of an object = local sidereal time - its right ascension. On March 21 at 9:00 p.m. solar time the local sidereal time is 9:00.",
    "short": "Hour angle equals LST minus RA",
    "src": "Textbook Mathematical Insight S1.2"
@@ -1405,6 +1421,7 @@
   {
    "id": "ts-c44",
    "front": "What are the Sun's right ascension and declination at each season?",
+   "gloss": false,
    "back": "March equinox: RA 0 h, dec 0. June solstice: 6 h, +23.5. September equinox: 12 h, 0. December solstice: 18 h, -23.5.",
    "short": "Sun RA and dec at four seasons",
    "src": "Textbook Table S1.1"
@@ -1412,6 +1429,7 @@
   {
    "id": "ts-c45",
    "front": "Where does the celestial equator cross your meridian?",
+   "gloss": false,
    "back": "At altitude 90 degrees - latitude (due south in the Northern Hemisphere). At 40 N that is 50 degrees. A star's meridian altitude is that value plus (or minus) its declination.",
    "short": "Equator crosses meridian at 90 minus latitude",
    "src": "Textbook S1.2; Figure S1.15"

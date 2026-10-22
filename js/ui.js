@@ -181,6 +181,31 @@ export function pic(im, attrs = {}) {
   return el;
 }
 
+/* ---------- popups ---------- */
+// A dialog on top of the page (a bottom sheet on a phone): focus moves in and comes back, Tab stays inside, Escape or a tap outside closes it
+// (unless dismissable is false) and the page behind does not scroll.
+export function openModal(content, { label = "Dialog", onClose, dismissable = true } = {}) {
+  const prev = document.activeElement;
+  const card = h(".mdl-card", { role: "dialog", "aria-modal": "true", "aria-label": label, tabindex: "-1" }, content);
+  const back = h(".mdl", card);
+  let closed = false;
+  const close = () => { if (closed) return; closed = true; document.removeEventListener("keydown", key, true); back.remove(); document.body.classList.remove("noscroll"); try { prev?.focus?.(); } catch {} onClose?.(); };
+  const key = (e) => {
+    if (e.key === "Escape" && dismissable) { e.stopPropagation(); close(); return; }
+    if (e.key !== "Tab") return;
+    const f = [...card.querySelectorAll("button,[href],input,select,textarea,[tabindex]:not([tabindex='-1'])")].filter((x) => !x.disabled && x.offsetParent !== null);
+    if (!f.length) { e.preventDefault(); return; }
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); } else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  };
+  if (dismissable) back.addEventListener("pointerdown", (e) => { if (e.target === back) close(); });
+  document.addEventListener("keydown", key, true);
+  document.body.classList.add("noscroll"); document.body.append(back);
+  (card.querySelector("[autofocus]") || card).focus({ preventScroll: true });
+  return { close, el: card };
+}
+export const firstName = (n) => String(n || "").trim().split(/\s+/)[0] || "";
+
 /* ---------- toasts, shuffle, confetti ---------- */
 let tt;
 export function toast(msg) {

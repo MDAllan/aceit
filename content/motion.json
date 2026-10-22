@@ -762,6 +762,7 @@
   {
    "id": "mo-c3",
    "front": "Which is a velocity: 50 km/h, or 50 km/h due east?",
+   "gloss": false,
    "back": "50 km/h due east, because it has a direction attached. 50 km/h alone is only a speed.",
    "short": "The one that names a direction",
    "src": "Ch4.1 slide 3"
@@ -790,6 +791,7 @@
   {
    "id": "mo-c7",
    "front": "Does turning count as acceleration?",
+   "gloss": false,
    "back": "Yes. Changing direction changes velocity, even if the speed stays the same.",
    "short": "Yes, direction change changes velocity",
    "src": "Ch4.1 slide 5"
@@ -797,6 +799,7 @@
   {
    "id": "mo-c8",
    "front": "Direction of acceleration in circular motion",
+   "gloss": false,
    "back": "Toward the center of the circle. The object is continuously accelerating toward the center.",
    "short": "Points toward the circle's center",
    "src": "Ch4.1 slide 5"
@@ -804,6 +807,7 @@
   {
    "id": "mo-c9",
    "front": "Acceleration due to gravity (g)",
+   "gloss": false,
    "back": "On Earth, falling speed increases by 9.81 m/s each second (g = 9.81 m/s²). Often rounded to 9.8 or about 10 m/s².",
    "short": "Falling speed gains 9.81 m/s each second",
    "src": "Ch4.1 slide 6; Textbook 4.1"
@@ -811,6 +815,7 @@
   {
    "id": "mo-c10",
    "front": "Why do a feather and a rock fall differently on Earth?",
+   "gloss": false,
    "back": "Air resistance. Without air, all falling objects accelerate at very nearly the same rate.",
    "short": "Air resistance, not different gravity",
    "src": "Ch4.1 slide 6; Textbook 4.1"
@@ -839,6 +844,7 @@
   {
    "id": "mo-c14",
    "front": "Momentum of a stationary object",
+   "gloss": false,
    "back": "Zero, because its velocity is zero.",
    "short": "Zero when it is not moving",
    "src": "Ch4.1 slide 8"
@@ -874,6 +880,7 @@
   {
    "id": "mo-c19",
    "front": "Mass versus weight",
+   "gloss": false,
    "back": "Mass is the amount of matter in an object. Weight is the force of gravity acting on it.",
    "short": "Matter versus force of gravity",
    "src": "Ch4.1 slide 10"
@@ -888,6 +895,7 @@
   {
    "id": "mo-c21",
    "front": "Mass of an astronaut on the Moon",
+   "gloss": false,
    "back": "The same as on Earth. Weight is smaller because the Moon's gravity is weaker.",
    "short": "Mass stays, weight shrinks",
    "src": "Textbook 4.1"
@@ -902,6 +910,7 @@
   {
    "id": "mo-c23",
    "front": "Scale reading in an elevator",
+   "gloss": false,
    "back": "Normal at constant velocity or at rest, more when accelerating up, less when accelerating down, zero in free-fall.",
    "short": "Changes only when the elevator accelerates",
    "src": "Ch4.1 slide 11; Textbook Fig. 4.4"
@@ -916,6 +925,7 @@
   {
    "id": "mo-c25",
    "front": "Why astronauts feel weightless",
+   "gloss": false,
    "back": "They are in constant free-fall around Earth, so nothing pushes back against gravity. Gravity is still there.",
    "short": "Constant free-fall, not zero gravity",
    "src": "Ch4.1 slide 12"
@@ -923,6 +933,7 @@
   {
    "id": "mo-c26",
    "front": "\"There is no gravity in space\"",
+   "gloss": false,
    "back": "Wrong. Gravity keeps the Moon and the space station in orbit; at the station's altitude it is only about 10% weaker than at Earth's surface.",
    "short": "Gravity acts in space, nearly as strong",
    "src": "Ch4.1 slide 12; Textbook 4.1"
@@ -958,6 +969,7 @@
   {
    "id": "mo-c31",
    "front": "Same force on a big mass and a small mass",
+   "gloss": false,
    "back": "The smaller mass accelerates more. For example, the same force from your arm gives a baseball a larger acceleration than a shot.",
    "short": "Heavier object accelerates less",
    "src": "Ch4.2 slide 3; Textbook 4.2"
@@ -972,6 +984,7 @@
   {
    "id": "mo-c33",
    "front": "How does a rocket accelerate?",
+   "gloss": false,
    "back": "Its engine pushes hot gas out the back; the gas pushes the rocket forward with an equal and opposite force. It does not push off the ground.",
    "short": "Pushes on exhaust gas, not the ground",
    "src": "Ch4.2 slide 4; Textbook 4.2"
@@ -986,6 +999,7 @@
   {
    "id": "mo-c35",
    "front": "Newton's dates and the Principia",
+   "gloss": false,
    "back": "Isaac Newton lived 1642 to 1727 and published his laws of motion and gravity in the Principia in 1687.",
    "short": "Lived 1642 to 1727, Principia in 1687",
    "src": "Ch4.1 slide 2; Textbook 4.2"
@@ -993,6 +1007,7 @@
   {
    "id": "mo-c36",
    "front": "How do you calculate acceleration?",
+   "gloss": false,
    "back": "Change in velocity divided by change in time: a = Δv / Δt. Example: 0 to 20 m/s in 4 s gives 5 m/s².",
    "short": "Acceleration equals Δv over Δt",
    "src": "Ch4.1 slide 4"
@@ -1000,6 +1015,7 @@
   {
    "id": "mo-c37",
    "front": "Speed of a falling object after 4 s (g = 9.8 m/s²)",
+   "gloss": false,
    "back": "v = 4 × 9.8 = 39.2 m/s. Speed grows by 9.8 m/s each second.",
    "short": "Falling speed after 4 seconds",
    "src": "Textbook 4.1 Fig. 4.2, Exercise 42"
@@ -1007,6 +1023,7 @@
   {
    "id": "mo-c38",
    "front": "Momentum of a 1200 kg car moving at 25 m/s",
+   "gloss": false,
    "back": "p = mv = 1200 × 25 = 30,000 kg·m/s.",
    "short": "Momentum of 1200 kg at 25 m/s",
    "src": "Ch4.1 slide 8"
@@ -1014,6 +1031,7 @@
   {
    "id": "mo-c39",
    "front": "Net force to accelerate 1500 kg at 2 m/s²",
+   "gloss": false,
    "back": "F = ma = 1500 × 2 = 3000 N.",
    "short": "Force on 1500 kg at 2 m/s²",
    "src": "Ch4.1 slide 9"
@@ -1021,6 +1039,7 @@
   {
    "id": "mo-c40",
    "front": "Why does a rifle kick back when fired?",
+   "gloss": false,
    "back": "The rifle pushes the bullet forward and the bullet pushes the rifle back with an equal force (third law). The light bullet gets the much bigger acceleration.",
    "short": "Rifle kick is an action-reaction pair",
    "src": "Ch4.2 slide 4 (outside source for the rifle example)"
@@ -1028,6 +1047,7 @@
   {
    "id": "mo-c41",
    "front": "Force as change in momentum",
+   "gloss": false,
    "back": "F = Δp / Δt. A 12 kg·m/s change in 0.04 s needs 300 N.",
    "short": "Force equals momentum change per time",
    "src": "Ch4.2 slide 3"

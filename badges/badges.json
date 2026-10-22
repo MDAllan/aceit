@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "families": [
+    {
+      "id": "game-on", "name": "Games", "metric": "gamesPlayed", "unit": "games", "minLevel": 1, "ladder": "competitive ranks",
+      "tiers": [
+        { "name": "Game On", "rank": "Rookie", "at": 1, "image": "badges/img/game-on-1.png", "how": "Play your first game" },
+        { "name": "Warmed Up", "rank": "Regular", "at": 10, "image": "badges/img/game-on-2.png", "how": "Play 10 games" },
+        { "name": "High Scorer", "rank": "Veteran", "at": 50, "image": "badges/img/game-on-3.png", "how": "Play 50 games" },
+        { "name": "Arcade Legend", "rank": "Legend", "at": 200, "image": "badges/img/game-on-4.png", "how": "Play 200 games" }
+      ]
+    },
+    {
+      "id": "correct", "name": "Right Answers", "metric": "correctAnswers", "unit": "correct answers", "minLevel": 1, "ladder": "minerals",
+      "tiers": [
+        { "name": "Busy Beaver", "rank": "Quartz", "at": 10, "image": "badges/img/correct-1.png", "how": "Answer 10 questions correctly" },
+        { "name": "Quiz Whiz", "rank": "Topaz", "at": 50, "image": "badges/img/correct-2.png", "how": "Answer 50 questions correctly" },
+        { "name": "Answer Machine", "rank": "Onyx", "at": 250, "image": "badges/img/correct-3.png", "how": "Answer 250 questions correctly" }
+      ]
+    },
+    {
+      "id": "streak", "name": "Streak", "metric": "streak", "unit": "days", "minLevel": 1, "ladder": "metals",
+      "cheer": [
+        "{remaining} more {unit} to unlock {next}. You've got this!",
+        "Just {remaining} {unit} to go until {next}. Keep the chain alive!",
+        "{remaining} {unit} from {next}. Come back tomorrow and keep it going!"
+      ],
+      "tiers": [
+        { "name": "Hot Streak", "rank": "Copper", "at": 3, "image": "badges/img/streak-1.png", "how": "Study 3 days in a row" },
+        { "name": "On Fire", "rank": "Silver", "at": 7, "image": "badges/img/streak-2.png", "how": "Study 7 days in a row" },
+        { "name": "Unstoppable", "rank": "Gold", "at": 30, "image": "badges/img/streak-3.png", "how": "Study 30 days in a row" },
+        { "name": "Eternal Flame", "rank": "Platinum", "at": 100, "image": "badges/img/streak-4.png", "how": "Study 100 days in a row" }
+      ]
+    },
+    {
+      "id": "level", "name": "Level Up", "metric": "level", "unit": "levels", "minLevel": 1, "ladder": "martial arts belts",
+      "tiers": [
+        { "name": "High Five", "rank": "Yellow Belt", "at": 5, "image": "badges/img/level-1.png", "how": "Reach level 5" },
+        { "name": "Double Digits", "rank": "Green Belt", "at": 10, "image": "badges/img/level-2.png", "how": "Reach level 10" },
+        { "name": "Level Boss", "rank": "Black Belt", "at": 20, "image": "badges/img/level-3.png", "how": "Reach level 20" }
+      ]
+    },
+    {
+      "id": "share", "name": "Sharing", "metric": "shares", "unit": "friends", "minLevel": 1, "ladder": "military ranks",
+      "tiers": [
+        { "name": "Study Buddy", "rank": "Private", "at": 1, "image": "badges/img/share-1.png", "how": "Share a game with a friend" },
+        { "name": "Squad Goals", "rank": "Sergeant", "at": 5, "image": "badges/img/share-2.png", "how": "Share a game with 5 friends" },
+        { "name": "Team Captain", "rank": "Captain", "at": 10, "image": "badges/img/share-3.png", "how": "Share a game with 10 friends" },
+        { "name": "Campus Celebrity", "rank": "General", "at": 20, "image": "badges/img/share-4.png", "how": "Share a game with 20 friends" }
+      ]
+    },
+    {
+      "id": "review", "name": "Review", "metric": "reviews", "unit": "reviews", "minLevel": 1, "ladder": "single gold",
+      "tiers": [
+        { "name": "Golden Critic", "rank": "Gold", "at": 1, "image": "badges/img/review-1.png", "how": "Review the app from your profile" }
+      ]
+    },
+
+    {
+      "id": "accuracy", "name": "Accuracy", "metric": "quizBest", "unit": "percentage points", "suffix": "%", "minLevel": 2, "ladder": "target rings",
+      "tiers": [
+        { "name": "Sharpshooter", "rank": "Red Ring", "at": 90, "image": "badges/img/accuracy-1.png", "how": "Score 90% or more on a quiz" },
+        { "name": "Bullseye", "rank": "Gold Ring", "at": 100, "image": "badges/img/accuracy-2.png", "how": "Score 100% on a quiz" }
+      ]
+    },
+    {
+      "id": "cards", "name": "Flashcards", "metric": "cardsReviewed", "unit": "cards", "minLevel": 2, "ladder": "playing cards",
+      "tiers": [
+        { "name": "Card Shark", "rank": "Jack", "at": 50, "image": "badges/img/cards-1.png", "how": "Review 50 flashcards" },
+        { "name": "High Roller", "rank": "Queen", "at": 250, "image": "badges/img/cards-2.png", "how": "Review 250 flashcards" },
+        { "name": "Royal Flush", "rank": "King", "at": 1000, "image": "badges/img/cards-3.png", "how": "Review 1000 flashcards" }
+      ]
+    },
+    {
+      "id": "xp", "name": "XP", "metric": "xp", "unit": "XP", "minLevel": 2, "ladder": "gems",
+      "tiers": [
+        { "name": "Century Club", "rank": "Amber", "at": 100, "image": "badges/img/xp-1.png", "how": "Earn 100 XP" },
+        { "name": "Brain Bank", "rank": "Emerald", "at": 500, "image": "badges/img/xp-2.png", "how": "Earn 500 XP" },
+        { "name": "Mastermind", "rank": "Sapphire", "at": 1000, "image": "badges/img/xp-3.png", "how": "Earn 1000 XP" },
+        { "name": "Galaxy Brain", "rank": "Ruby", "at": 5000, "image": "badges/img/xp-4.png", "how": "Earn 5000 XP" }
+      ]
+    },
+    {
+      "id": "sprint", "name": "Sprint", "metric": "sprintBeats", "unit": "times", "minLevel": 3, "ladder": "tournament rounds",
+      "tiers": [
+        { "name": "Flash", "rank": "Heat", "at": 1, "image": "badges/img/sprint-1.png", "how": "Beat your personal best in the 60-second sprint (for example 6 then 9)" },
+        { "name": "Lightning", "rank": "Semifinal", "at": 5, "image": "badges/img/sprint-2.png", "how": "Beat your sprint personal best 5 times" },
+        { "name": "Speed of Light", "rank": "Final", "at": 15, "image": "badges/img/sprint-3.png", "how": "Beat your sprint personal best 15 times" }
+      ]
+    },
+    {
+      "id": "decks", "name": "Decks", "metric": "decksFinished", "unit": "decks", "minLevel": 3, "ladder": "chess pieces",
+      "tiers": [
+        { "name": "Deck Master", "rank": "Knight", "at": 1, "image": "badges/img/decks-1.png", "how": "Finish a full flashcard deck" },
+        { "name": "Deck Boss", "rank": "Rook", "at": 10, "image": "badges/img/decks-2.png", "how": "Finish 10 full flashcard decks" }
+      ]
+    },
+    {
+      "id": "words", "name": "Glossary", "metric": "glossaryStudied", "unit": "terms", "minLevel": 3, "ladder": "school years",
+      "tiers": [
+        { "name": "Word Nerd", "rank": "Freshman", "at": 25, "image": "badges/img/words-1.png", "how": "Study 25 glossary terms" },
+        { "name": "Walking Dictionary", "rank": "Junior", "at": 100, "image": "badges/img/words-2.png", "how": "Study 100 glossary terms" },
+        { "name": "Word Wizard", "rank": "Graduate", "at": 300, "image": "badges/img/words-3.png", "how": "Study 300 glossary terms" }
+      ]
+    },
+    {
+      "id": "night", "name": "Night Sessions", "metric": "nightSessions", "unit": "nights", "minLevel": 3, "ladder": "moon phases",
+      "tiers": [
+        { "name": "Night Owl", "rank": "Crescent", "at": 1, "image": "badges/img/night-1.png", "how": "Study after 10 pm" },
+        { "name": "Midnight Scholar", "rank": "Full Moon", "at": 10, "image": "badges/img/night-2.png", "how": "Study after 10 pm on 10 different days" }
+      ]
+    },
+    {
+      "id": "early", "name": "Early Sessions", "metric": "earlySessions", "unit": "mornings", "minLevel": 3, "ladder": "sunrise stages",
+      "tiers": [
+        { "name": "Early Bird", "rank": "Dawn", "at": 1, "image": "badges/img/early-1.png", "how": "Study before 8 am" },
+        { "name": "Rise and Shine", "rank": "Sunrise", "at": 10, "image": "badges/img/early-2.png", "how": "Study before 8 am on 10 different days" }
+      ]
+    },
+    {
+      "id": "comeback", "name": "Comeback", "metric": "comebacks", "unit": "topics", "minLevel": 4, "ladder": "underdog to contender",
+      "tiers": [
+        { "name": "Comeback Kid", "rank": "Underdog", "at": 1, "image": "badges/img/comeback-1.png", "how": "Turn a weak topic into a strong one" },
+        { "name": "Phoenix Rising", "rank": "Contender", "at": 5, "image": "badges/img/comeback-2.png", "how": "Turn 5 weak topics into strong ones" }
+      ]
+    },
+    {
+      "id": "tamer", "name": "Topic Tamer", "metric": "topicsTamed", "unit": "topics", "minLevel": 4, "ladder": "fantasy guild ranks",
+      "tiers": [
+        { "name": "Topic Tamer", "rank": "Apprentice", "at": 1, "image": "badges/img/tamer-1.png", "how": "Complete every question in a topic" },
+        { "name": "Beast Master", "rank": "Adept", "at": 5, "image": "badges/img/tamer-2.png", "how": "Complete every question in 5 topics" }
+      ]
+    },
+    {
+      "id": "challenge", "name": "Challenges", "metric": "challengesSent", "unit": "challenges", "minLevel": 5, "ladder": "boxing weight classes",
+      "tiers": [
+        { "name": "Challenger", "rank": "Flyweight", "at": 1, "image": "badges/img/challenge-1.png", "how": "Challenge a friend" },
+        { "name": "Arch Rival", "rank": "Heavyweight", "at": 10, "image": "badges/img/challenge-2.png", "how": "Challenge friends 10 times" }
+      ]
+    },
+    {
+      "id": "champion", "name": "Champion", "metric": "challengesWon", "unit": "wins", "minLevel": 5, "ladder": "trophy cups",
+      "tiers": [
+        { "name": "Champion", "rank": "Silver Cup", "at": 1, "image": "badges/img/champion-1.png", "how": "Win a challenge against a friend" },
+        { "name": "Grand Champion", "rank": "Gold Cup", "at": 10, "image": "badges/img/champion-2.png", "how": "Win 10 challenges against friends" }
+      ]
+    },
+    {
+      "id": "exam", "name": "Exam Prep", "metric": "examPrepped", "unit": "practice tests", "minLevel": 6, "ladder": "grade bands",
+      "tiers": [
+        { "name": "Exam Ready", "rank": "Merit", "at": 1, "image": "badges/img/exam-1.png", "how": "Finish a practice test before a midterm or final" },
+        { "name": "Exam Ace", "rank": "Distinction", "at": 5, "image": "badges/img/exam-2.png", "how": "Finish 5 practice tests before a midterm or final" }
+      ]
+    },
+    {
+      "id": "conquer", "name": "Conqueror", "metric": "classesConquered", "unit": "classes", "minLevel": 8, "ladder": "nobility",
+      "tiers": [
+        { "name": "Class Conqueror", "rank": "Baron", "at": 1, "image": "badges/img/conquer-1.png", "how": "Complete every topic in a class" },
+        { "name": "Empire Builder", "rank": "Emperor", "at": 3, "image": "badges/img/conquer-2.png", "how": "Complete every topic in 3 classes" }
+      ]
+    }
+  ]
+}

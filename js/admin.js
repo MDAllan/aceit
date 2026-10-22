@@ -21,7 +21,7 @@ function insights(ls, rows, name) {
     const lines = [head.map(esc).join(",")].concat(rows.filter((r) => !r.p.is_admin).map((r) => [r.p.display_name, r.p.email, r.classes.join(" "), r.avg, ...r.stats, r.acc ?? "", r.last ? new Date(r.last).toISOString().slice(0, 10) : ""].map(esc).join(",")));
     download(`aceit-${name.replace(/\s+/g, "")}-progress.csv`, lines.join("\r\n"), "text/csv");
   };
-  return h(".card", { style: "margin-top:14px" }, h("h3", `\u{1F4C8} Class insights: ${name}`),
+  return h(".card", { style: "margin-top:14px" }, h("h3", `Class insights: ${name}`),
     h("b", { style: "font-size:.9rem" }, "Hardest questions (3+ attempts)"),
     hard.length ? h("div", hard.map((x) => h(".fb", { style: "margin-top:6px" }, h("b", `${Math.round(x.acc * 100)}% correct `), h("span.src", { style: "margin:0" }, `${x.a} attempts, ${x.l.title}`), h("div", md(x.q.q.split(String.fromCharCode(10))[0]))))) : h(".src", "Not enough answers yet. This fills in as students take quizzes."),
     h("b", { style: "font-size:.9rem;display:block;margin-top:12px" }, `Quiet for 7+ days (${quiet.length})`),
@@ -105,14 +105,14 @@ export async function viewAdmin(v, ctx) {
 }
 
 function codeCard(mine, codes) {
-  return h(".card", { style: "margin-top:14px" }, h("h3", "\u{1F511} Class access codes"), h(".src", { style: "margin:0 0 6px" }, "Students enter a class's code to join it."),
+  return h(".card", { style: "margin-top:14px" }, h("h3", "Class access codes"), h(".src", { style: "margin:0 0 6px" }, "Students enter a class's code to join it."),
     mine.map((x) => { const inp = h("input", { value: codes[x.id] || "", placeholder: "Set a code (4+ characters)", "aria-label": x.name + " code" });
       return h("div", { style: "margin:8px 0" }, h("label", { style: "margin:0 0 4px;display:flex;gap:6px;align-items:center" }, ic(symOf(x), 15), x.name), h(".row", { style: "flex-wrap:nowrap" }, inp,
         h("button.btn.sm", { onclick: async () => { if (inp.value.trim().length < 4) { toast("Use at least 4 characters"); return; } if (S.DEMO) { toast("Demo only"); return; } const r = await S.setCode(x.id, inp.value.trim()); toast(r.error ? r.error.message : x.name + " code saved"); } }, "Save"))); }));
 }
 
 function examCard(mine) {
-  return h(".card", { style: "margin-top:14px" }, h("h3", "\u{1F4C5} Exam date"), h(".src", { style: "margin:0 0 6px" }, "Students see a countdown and a study plan for the weakest lectures."),
+  return h(".card", { style: "margin-top:14px" }, h("h3", "Exam date"), h(".src", { style: "margin:0 0 6px" }, "Students see a countdown and a study plan for the weakest lectures."),
     mine.map((x) => { const cur = S.settings[x.id] || {};
       const nm = h("input", { value: cur.exam_name || "", placeholder: "e.g. Midterm", "aria-label": x.name + " exam name" }), dt = h("input", { type: "date", value: cur.exam_date || "", "aria-label": x.name + " exam date" });
       return h("div", { style: "margin:8px 0" }, h("label", { style: "margin:0 0 4px;display:flex;gap:6px;align-items:center" }, ic(symOf(x), 15), x.name),
@@ -125,7 +125,7 @@ function feedbackCard() {
     const avg = list.length ? (list.reduce((t, f) => t + (f.rating || 0), 0) / list.length).toFixed(1) : null;
     box.replaceChildren(list.length ? h("div", h("p", { style: "margin:0 0 6px" }, `Average rating ${avg} from ${list.length} message${list.length === 1 ? "" : "s"}.`), ...list.slice(0, 6).map((f) => h(".fb", { style: "margin-top:6px" }, h("b", "★".repeat(f.rating || 0) + " "), f.message || "(no message)", h(".src", `${when(f.at)}${f.class_id ? ", " + f.class_id : ""}`)))) : h(".src", "No feedback yet. Students can send it from their profile."));
   }); else box.replaceChildren(h(".src", "Feedback appears here once students send it."));
-  return h(".card", { style: "margin-top:14px" }, h("h3", "\u{1F4AC} Student feedback"), box);
+  return h(".card", { style: "margin-top:14px" }, h("h3", "Student feedback"), box);
 }
 
 /* ----- admin-only tools ----- */

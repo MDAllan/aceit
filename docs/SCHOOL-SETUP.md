@@ -34,6 +34,26 @@ Until you run it nothing changes: the Class content screens just say the upgrade
 3. When you run step 0, BIOL 305 and the students who already joined it are carried over, like ERTH 209 and ASTR 207. Afterwards the course is licensed to **ACEIT Direct** and its class is there. For another school, tick BIOL 305 in Platform > Schools > (school) > Settings and create a class for it.
 4. Once the new site version is live, open Platform > Content and press **Publish content to the database** again so the new lectures (the biology course and the geology deformation lecture) are protected like the others.
 
+## 0c. Account deletion, questions, terms and admin tools (once)
+
+1. Supabase > SQL Editor > New query. Paste the whole of `supabase/RUN-ME-4.sql` and press Run. Run it after steps 0 and 0a (`RUN-ME-2.sql` and `RUN-ME-3.sql`). It must say "Success". It is safe to run again.
+2. What it adds:
+   - **A record of acceptance.** When someone agrees to the Terms of Use and Privacy Policy, ACEIT keeps which version they agreed to and when. You and the person can see it; nobody can change it.
+   - **Deleting an account waits 22 days.** The person asks to delete; nothing is removed yet. If they log in again within 22 days the request is cancelled and everything is back as it was. After 22 days a daily job removes the account for good: the profile, progress and class memberships. Admin accounts are never removed this way. The job needs a Supabase extension called pg_cron (next paragraph).
+   - **A customer service inbox.** Students and staff send a question from the app (up to 5 a day each). Only you, the platform admin, can read them. You mark each one open, answered or closed and can add a note; the person sees your note and the status in the app, so no email is needed.
+   - **Instructor tools for you.** You can make any confirmed person an instructor of any class, see which classes a person teaches, and take the role away again.
+   - **Editing the course lectures.** You can change a lecture's text and add pictures to it. Every save keeps the version it replaced (the newest 100 per lecture) and any change can be undone. Pictures go in a **private** bucket called `course-media`: check Supabase > Storage, it should be listed and marked private. Only you can add pictures; people who may read the course can see them.
+3. **The daily job (pg_cron).** The patch tries to switch it on by itself. If the SQL Editor shows a notice that says the daily job "could not be set up", do this once:
+   1. Supabase > Database > Extensions > search for **pg_cron** > turn it on.
+   2. In the SQL Editor run this one line: `select cron.schedule('aceit-purge-deleted-accounts', '17 3 * * *', 'select public.purge_deleted_accounts()');`
+   3. Check it with `select jobname, schedule from cron.job;`. It should list `aceit-purge-deleted-accounts`.
+
+   Until the job exists nobody is removed automatically; the accounts just keep waiting.
+4. **Supabase sign-in settings to check** (Supabase > Authentication):
+   - **Password reset link lifetime and code expiry**: Providers > Email > *Email OTP Expiration*. This is how long a password reset link and an emailed code keep working. 3600 seconds (1 hour) is the most you should allow; 900 (15 minutes) is better.
+   - **Secure email change**: Providers > Email > turn it **on**. When a person changes their email, the old and the new address must both confirm it.
+   - **"Email me a code" sign-in**: keep the Email provider on, and make sure the *Magic Link* and *Confirm signup* email templates (Authentication > Emails) show the 6-digit code (`{{ .Token }}`), not only the link. Do step 1 below first so these emails arrive.
+
 ## 1. Reliable emails (password resets, sign-ups, invites)
 
 Supabase's built-in sender allows only a few emails per hour, which is too few for a school.

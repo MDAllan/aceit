@@ -1353,6 +1353,7 @@
   {
    "id": "hb-c1",
    "front": "What is taxonomy, and what is a taxon?",
+   "gloss": false,
    "back": "Taxonomy is a method used to classify and categorize organisms. Groups of organisms that share specific characteristics are grouped within the same taxon, and taxa may include both extant and extinct organisms.",
    "short": "Method to classify organisms into taxa",
    "src": "Slide 2"
@@ -1360,6 +1361,7 @@
   {
    "id": "hb-c2",
    "front": "Give the classification of humans from broadest to most specific.",
+   "gloss": false,
    "back": "Eukarya, Animalia, Chordata, Mammalia, Primates, Hominidae, Homo, sapiens.",
    "short": "Eukarya down to sapiens, eight groups",
    "src": "Slide 2"
@@ -1367,6 +1369,7 @@
   {
    "id": "hb-c3",
    "front": "List the levels of the classification ladder from broad to specific.",
+   "gloss": false,
    "back": "Life, Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species.",
    "short": "Life, Domain, Kingdom, Phylum ... Species",
    "src": "Slide 2"
@@ -1374,6 +1377,7 @@
   {
    "id": "hb-c4",
    "front": "Humans belong to the domain Eukarya. How do eukaryotic and prokaryotic cells differ?",
+   "gloss": false,
    "back": "A eukaryotic animal cell has a large nucleus and numerous small organelles. A prokaryotic cell such as a bacterium has a rigid cell wall around its plasma membrane, no membrane around its genetic material, and no organelles.",
    "short": "Eukaryote: nucleus, organelles; prokaryote: neither",
    "src": "Slides 2-3"
@@ -1381,6 +1385,7 @@
   {
    "id": "hb-c5",
    "front": "What is the plasma membrane?",
+   "term": "Plasma membrane",
    "back": "A selectively permeable barrier built from a lipid bilayer, with embedded molecules such as transmembrane proteins and cholesterol. It controls the movement of materials into and out of the cell.",
    "short": "Selectively permeable lipid bilayer barrier",
    "src": "Slides 4-5"
@@ -1388,6 +1393,7 @@
   {
    "id": "hb-c6",
    "front": "Describe the structure of a phospholipid.",
+   "term": "Phospholipid",
    "back": "A phospholipid has a polar head (a phosphate and glycerol) and a nonpolar tail made of two fatty acids.",
    "short": "Polar head, two nonpolar fatty acid tails",
    "src": "Slide 6"
@@ -1395,6 +1401,7 @@
   {
    "id": "hb-c7",
    "front": "What is passive transport?",
+   "term": "Passive transport",
    "back": "Transport across the membrane that does not require energy. Molecules move from regions of higher concentration to regions of lower concentration.",
    "short": "No energy; high to low concentration",
    "src": "Slide 7"
@@ -1402,6 +1409,7 @@
   {
    "id": "hb-c8",
    "front": "What is active transport?",
+   "term": "Active transport",
    "back": "Transport that requires energy (ATP or another energy source). Molecules move from lower to higher concentration, against the concentration gradient, using a transmembrane transporter protein.",
    "short": "Needs energy; low to high concentration",
    "src": "Slide 8"
@@ -1409,6 +1417,7 @@
   {
    "id": "hb-c9",
    "front": "What is osmosis?",
+   "term": "Osmosis",
    "back": "The diffusion of H₂O from areas of lower solute concentration to areas of higher solute concentration.",
    "short": "Water moves toward higher solute concentration",
    "src": "Slide 7"
@@ -1416,6 +1425,7 @@
   {
    "id": "hb-c10",
    "front": "What is facilitated transport?",
+   "term": "Facilitated transport",
    "back": "A passive process in which a molecule binds a protein, the protein changes shape, and the molecule is carried across the membrane. Glucose typically enters cells this way.",
    "short": "Binds a protein that changes shape",
    "src": "Slide 7 (figure caption)"
@@ -1423,6 +1433,7 @@
   {
    "id": "hb-c11",
    "front": "What are the two ways active transport can be powered?",
+   "gloss": false,
    "back": "The breakdown of ATP (to ADP + Pi) can change the shape of the carrier protein. Or the 'downhill' transport of one molecule can supply the energy to move another molecule 'uphill'.",
    "short": "ATP breakdown or another molecule's downhill move",
    "src": "Slide 8 (figure caption)"
@@ -1430,6 +1441,7 @@
   {
    "id": "hb-c12",
    "front": "What causes cystic fibrosis, and what happens in the body?",
+   "gloss": false,
    "back": "It is an autosomal recessive genetic disorder caused by mutations in the CFTR gene, which encodes a channel protein that transports Cl⁻ and HCO₃⁻ out of the cell. Osmosis is reduced, the extracellular space dehydrates, and mucus builds up in the lungs, causing chronic lung infection.",
    "short": "Faulty CFTR channel; mucus builds in lungs",
    "src": "Slide 9"
@@ -1437,6 +1449,7 @@
   {
    "id": "hb-c13",
    "front": "What does the nucleus contain and do, and what is the nucleolus?",
+   "gloss": false,
    "back": "The nucleus contains the cell's genetic information (DNA) as chromosomes or chromatin, and it controls all cellular activities. The nucleolus is the nuclear site of ribosome biogenesis (making ribosomes). The nucleus has a double-layered nuclear membrane with nuclear pores.",
    "short": "Holds DNA; nucleolus makes ribosomes",
    "src": "Slide 10"
@@ -1444,6 +1457,7 @@
   {
    "id": "hb-c14",
    "front": "What are ribosomes made of, and what do they do?",
+   "gloss": false,
    "back": "Ribosomes are made of ribosomal RNA (rRNA) and proteins. They are the site of protein synthesis and translate messenger RNA (mRNA) into proteins.",
    "short": "rRNA plus proteins; translate mRNA",
    "src": "Slide 11"
@@ -1451,6 +1465,7 @@
   {
    "id": "hb-c15",
    "front": "How do ER-attached ribosomes differ from free ribosomes?",
+   "gloss": false,
    "back": "Ribosomes attached to the ER surface make proteins that will be transported or exported from the cell. Free-floating ribosomes in the cytoplasm make proteins for immediate use.",
    "short": "Attached: export proteins; free: immediate use",
    "src": "Slide 11"
@@ -1458,6 +1473,7 @@
   {
    "id": "hb-c16",
    "front": "What is the rough ER?",
+   "term": "Rough ER",
    "back": "The part of the endoplasmic reticulum (a folded membranous network) that has ribosomes on its surface. It manufactures proteins, generally transmembrane proteins or proteins that will be secreted from the cell.",
    "short": "ER with ribosomes making secreted proteins",
    "src": "Slide 12"
@@ -1465,6 +1481,7 @@
   {
    "id": "hb-c17",
    "front": "What is the smooth ER?",
+   "term": "Smooth ER",
    "back": "The part of the endoplasmic reticulum with no ribosomes. It functions in lipid and hormone synthesis and packages proteins and lipids in vesicles for delivery to the Golgi apparatus.",
    "short": "ER without ribosomes; lipids and hormones",
    "src": "Slide 13"
@@ -1472,6 +1489,7 @@
   {
    "id": "hb-c18",
    "front": "What does the Golgi apparatus do?",
+   "term": "Golgi apparatus",
    "back": "It is a stack of interconnected membrane-bound sacs. Vesicles from the ER fuse to one specific side, biomolecules are successively modified as they pass through (for example by glycosylation, adding a sugar), and refined products are shipped elsewhere in vesicles.",
    "short": "Stack of sacs that modifies and ships",
    "src": "Slide 14"
@@ -1479,6 +1497,7 @@
   {
    "id": "hb-c19",
    "front": "Compare secretory and endocytic vesicles.",
+   "gloss": false,
    "back": "Secretory vesicles contain products destined for cellular export. Endocytic vesicles contain molecules imported from the external environment.",
    "short": "Export vesicles versus import vesicles",
    "src": "Slide 15"
@@ -1486,6 +1505,7 @@
   {
    "id": "hb-c20",
    "front": "Compare peroxisomes and lysosomes.",
+   "gloss": false,
    "back": "Peroxisomes contain enzymes that detoxify cell waste and other molecules. Lysosomes contain digestive enzymes and catabolize macromolecules.",
    "short": "Peroxisome detoxifies; lysosome digests",
    "src": "Slide 15"
@@ -1493,6 +1513,7 @@
   {
    "id": "hb-c21",
    "front": "What do mitochondria do?",
+   "term": "Mitochondria",
    "back": "A mitochondrion has a double membrane and is the site of cellular respiration (at the inner membrane, through the electron transport chain and ATP synthase). It uses high-energy molecules and O₂ to make ATP, with CO₂ as a by-product.",
    "short": "Double membrane; makes ATP by respiration",
    "src": "Slide 16"
@@ -1500,6 +1521,7 @@
   {
    "id": "hb-c22",
    "front": "What is the cytoskeleton made of?",
+   "gloss": false,
    "back": "Microtubules (hollow tubes of tubulin protein) and microfilaments (thin fibres of actin protein). It is the internal scaffolding that maintains cell shape and anchors cellular structures.",
    "short": "Tubulin microtubules and actin microfilaments",
    "src": "Slide 17"
@@ -1507,6 +1529,7 @@
   {
    "id": "hb-c23",
    "front": "Compare flagella, motile cilia and primary cilia.",
+   "gloss": false,
    "back": "Flagella and cilia are built from a basal body (formed from a centriole) and an extended axoneme. Flagella enable sperm cells to swim, cells lining the airways have motile cilia, and primary cilia are used in signal transduction.",
    "short": "Sperm swim; airways move; primary signal",
    "src": "Slides 17-18"
@@ -1514,6 +1537,7 @@
   {
    "id": "hb-c24",
    "front": "What is a tissue, and what are the four tissue types?",
+   "gloss": false,
    "back": "A tissue is a group of cells within similar structures, specialized to perform a common function. The four types are epithelial, connective, muscle and nervous tissue.",
    "short": "Epithelial, connective, muscle, nervous",
    "src": "Slide 19"
@@ -1521,6 +1545,7 @@
   {
    "id": "hb-c25",
    "front": "How are epithelial tissues classified?",
+   "gloss": false,
    "back": "By cell shape (squamous = flattened, cuboidal = cube shaped, columnar = column shaped) and by layers (simple = one layer, stratified = many layers). Epithelial tissue also forms exocrine glands (saliva, sweat) and endocrine glands (thyroid, adrenal).",
    "short": "By shape and by number of layers",
    "src": "Slides 20-21"
@@ -1528,6 +1553,7 @@
   {
    "id": "hb-c26",
    "front": "What is the basement membrane?",
+   "term": "Basement membrane",
    "back": "A non-cellular layer of secreted proteins that attaches epithelial layers to the underlying tissues. Epithelial cells are polarized, with apical and basal surfaces.",
    "short": "Protein layer attaching epithelium to tissue below",
    "src": "Slide 21"
@@ -1535,6 +1561,7 @@
   {
    "id": "hb-c27",
    "front": "Compare tight, adhesion and gap junctions.",
+   "gloss": false,
    "back": "Tight junctions seal plasma membranes tightly together (leak-proof). Adhesion junctions anchor cells but permit some movement, stretching or bending. Gap junctions have protein channels that allow transport between cells.",
    "short": "Seal, anchor, or pass molecules between cells",
    "src": "Slides 21-22"
@@ -1542,6 +1569,7 @@
   {
    "id": "hb-c28",
    "front": "What is the extracellular matrix of connective tissue?",
+   "gloss": false,
    "back": "A nonliving material synthesized by the tissue's own cells, in which those cells are embedded. It is what provides strength. In fibrous tissue, fibroblasts secrete collagen, elastin and fibrillin proteins and the ground substance.",
    "short": "Nonliving matrix that gives strength",
    "src": "Slide 23"
@@ -1549,6 +1577,7 @@
   {
    "id": "hb-c29",
    "front": "Name the four types of fibrous connective tissue and where each is found.",
+   "gloss": false,
    "back": "Loose (around internal organs, muscles and blood vessels), dense (tendons, ligaments and deep skin), elastic (around hollow organs that change size or shape) and reticular (internal framework of soft organs).",
    "short": "Loose, dense, elastic, reticular",
    "src": "Slide 24"
@@ -1556,6 +1585,7 @@
   {
    "id": "hb-c30",
    "front": "Name the special connective tissues and what each does.",
+   "gloss": false,
    "back": "Cartilage (embryonic tissue that gives rise to bone; also forms the nose, vertebral disks and joint cavities), bone (matrix of calcium and phosphate; forms the skeleton), blood (fluid matrix of plasma, red and white blood cells and platelets; transports materials) and adipose tissue (fat cells; insulation, protection, energy storage).",
    "short": "Cartilage, bone, blood, adipose",
    "src": "Slide 25"
@@ -1563,6 +1593,7 @@
   {
    "id": "hb-c31",
    "front": "Compare skeletal, cardiac and smooth muscle.",
+   "gloss": false,
    "back": "Skeletal muscle attaches to bones through tendons, has multinucleated cells and moves voluntarily under nerve control. Cardiac muscle is in the heart, is largely mononucleated with gap junctions, and moves involuntarily without needing neural stimulation. Smooth muscle surrounds hollow organs and tubes and is also involuntary.",
    "short": "Skeletal voluntary; cardiac and smooth involuntary",
    "src": "Slide 26"
@@ -1570,6 +1601,7 @@
   {
    "id": "hb-c32",
    "front": "Describe a neuron and the cells that protect it.",
+   "gloss": false,
    "back": "A neuron generates and transmits electrical impulses. It has a cell body (soma), dendrites that receive impulses, and an axon that transmits impulses. Glial cells surround and protect neurons.",
    "short": "Soma, dendrites receive, axon transmits",
    "src": "Slide 28"
@@ -1577,6 +1609,7 @@
   {
    "id": "hb-c33",
    "front": "What are the early embryo stages, in order?",
+   "gloss": false,
    "back": "Zygote, then blastula, then gastrula, from which the germ layers branch.",
    "short": "Zygote, blastula, gastrula",
    "src": "Slide 29"
@@ -1584,6 +1617,7 @@
   {
    "id": "hb-c34",
    "front": "Name the three primary germ layers.",
+   "gloss": false,
    "back": "Ectoderm (outer layer), mesoderm (middle layer) and endoderm (internal layer).",
    "short": "Outer, middle and internal germ layers",
    "src": "Slide 29"
@@ -1591,6 +1625,7 @@
   {
    "id": "hb-c35",
    "front": "Give example cells from each germ layer.",
+   "gloss": false,
    "back": "Ectoderm: epidermal cells of skin, brain neurons, pigment cells. Mesoderm: notochord, bone tissue, kidney tubule cells, red blood cells, facial muscle. Endoderm: stomach, thyroid and lung (alveolar) cells.",
    "short": "Skin and neurons; blood and bone; stomach and lung",
    "src": "Slide 29"
@@ -1598,6 +1633,7 @@
   {
    "id": "hb-c36",
    "front": "Which four main body cavities do tissue membranes line?",
+   "gloss": false,
    "back": "The thoracic cavity (including the pericardial cavity and two pleural cavities), the abdominal cavity, the cranial cavity and the spinal cavity. The diaphragm separates the thoracic and abdominal cavities.",
    "short": "Thoracic, abdominal, cranial and spinal cavities",
    "src": "Slide 30 (diaphragm from the figure)"
@@ -1605,6 +1641,7 @@
   {
    "id": "hb-c37",
    "front": "Match each tissue membrane to its location.",
+   "gloss": false,
    "back": "Serous membranes line and lubricate body cavities. Mucous membranes line and lubricate the airways and the digestive and reproductive tracts. Synovial membranes line joint spaces. Cutaneous membranes form the skin.",
    "short": "Serous, mucous, synovial, cutaneous locations",
    "src": "Slide 30"
@@ -1612,6 +1649,7 @@
   {
    "id": "hb-c38",
    "front": "Name the three anatomical planes and what each separates.",
+   "gloss": false,
    "back": "The midsagittal plane separates left from right, the frontal (coronal) plane separates front from back, and the transverse (horizontal) plane separates top from bottom. The frontal and transverse planes are flipped for quadrupeds.",
    "short": "Midsagittal, frontal, transverse planes",
    "src": "Slide 31 ('separates' is the standard reading of the pairs, outside source)"
@@ -1619,6 +1657,7 @@
   {
    "id": "hb-c39",
    "front": "What do superior, inferior, anterior and posterior mean?",
+   "gloss": false,
    "back": "Superior means closer to the head or upper part of a structure, and inferior means farther from the head or toward the lower part. Anterior means at or near the front, and posterior means at or near the back.",
    "short": "Head, lower part, front and back words",
    "src": "Slide 31 (figure labels)"
@@ -1626,6 +1665,7 @@
   {
    "id": "hb-c40",
    "front": "What do proximal and distal mean?",
+   "gloss": false,
    "back": "Proximal means nearer to the trunk. Distal means farther away from the trunk.",
    "short": "Proximal is near the trunk, distal is far",
    "src": "Slide 31 (figure labels)"

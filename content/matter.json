@@ -904,6 +904,7 @@
   {
    "id": "ma-c7",
    "front": "How to find an atom's charge",
+   "gloss": false,
    "back": "Charge = number of protons minus number of electrons. A neutral atom has equal numbers, and losing electrons leaves a positive ion.",
    "short": "Charge = protons minus electrons",
    "src": "Matter deck slide 4; Cosmic Perspective 5.3"
@@ -911,6 +912,7 @@
   {
    "id": "ma-c8",
    "front": "Calcium-44, doubly ionized: 20 protons, 24 neutrons, 18 electrons",
+   "gloss": false,
    "back": "Atomic number 20, atomic mass number 44 (20 + 24), charge 2+ (20 - 18).",
    "short": "Atomic number 20, mass number 44, 2+",
    "src": "Practice test 2 Q18; Matter deck slides 3-4"
@@ -918,6 +920,7 @@
   {
    "id": "ma-c9",
    "front": "What decides the phase of a substance?",
+   "gloss": false,
    "back": "Both temperature and pressure. Temperature is the main driver, but squeezing a gas can turn it into a liquid.",
    "short": "Temperature and pressure together",
    "src": "Matter deck slide 5; practice test 2 Q19"
@@ -967,6 +970,7 @@
   {
    "id": "ma-c16",
    "front": "Order of phase changes as temperature rises",
+   "gloss": false,
    "back": "Melting, evaporation, dissociation, ionization (solid, liquid, gas, atoms, plasma).",
    "short": "Melt, evaporate, dissociate, ionize",
    "src": "Matter deck slide 7"
@@ -995,6 +999,7 @@
   {
    "id": "ma-c20",
    "front": "Hydrogen energy levels in eV",
+   "gloss": false,
    "back": "Level 1 = 0, level 2 = 10.2, level 3 = 12.1, level 4 = 12.8, ionization level = 13.6 eV.",
    "short": "0, 10.2, 12.1, 12.8, 13.6 eV",
    "src": "Matter deck slides 8-9"
@@ -1002,6 +1007,7 @@
   {
    "id": "ma-c21",
    "front": "When can an atom absorb or emit a photon?",
+   "gloss": false,
    "back": "Only when the photon energy exactly equals the gap between two energy levels. Otherwise no transition happens.",
    "short": "Photon energy must match a level gap",
    "src": "Matter deck slide 9"
@@ -1009,6 +1015,7 @@
   {
    "id": "ma-c22",
    "front": "Energy needed to take hydrogen from level 1 to level 2",
+   "gloss": false,
    "back": "10.2 eV. A 5 eV or 11 eV photon will not be absorbed by an atom in level 1.",
    "short": "10.2 eV; others are refused",
    "src": "Matter deck slide 9; Cosmic Perspective 5.3"
@@ -1023,6 +1030,7 @@
   {
    "id": "ma-c24",
    "front": "Source moving away: what happens to wavelength?",
+   "gloss": false,
    "back": "The wavelength is increased (stretched). For light this is a redshift.",
    "short": "Wavelength increased, redshift",
    "src": "Doppler deck slides 1-2"
@@ -1030,6 +1038,7 @@
   {
    "id": "ma-c25",
    "front": "Source moving toward you: what happens to wavelength?",
+   "gloss": false,
    "back": "The wavelength is decreased (squeezed). For light this is a blueshift.",
    "short": "Wavelength decreased, blueshift",
    "src": "Doppler deck slides 1-2"
@@ -1037,6 +1046,7 @@
   {
    "id": "ma-c26",
    "front": "What does a bigger Doppler shift mean?",
+   "gloss": false,
    "back": "A faster speed. A large redshift means moving away faster; a large blueshift means moving toward us faster.",
    "short": "Bigger shift means faster speed",
    "src": "Doppler deck slide 2"
@@ -1044,6 +1054,7 @@
   {
    "id": "ma-c27",
    "front": "What part of motion does the Doppler shift measure?",
+   "gloss": false,
    "back": "Only the part directly toward or away from us.",
    "short": "Only toward or away motion",
    "src": "Doppler deck slide 3"
@@ -1051,6 +1062,7 @@
   {
    "id": "ma-c28",
    "front": "Object moving perpendicular to our line of sight",
+   "gloss": false,
    "back": "It has no Doppler shift at all.",
    "short": "No Doppler shift",
    "src": "Doppler deck slide 3"
@@ -1058,6 +1070,7 @@
   {
    "id": "ma-c29",
    "front": "Edge-on rotating galaxy: Doppler shifts",
+   "gloss": false,
    "back": "One side moves toward us (blueshift) and the other moves away (redshift). Comparing both sides gives the rotation rate.",
    "short": "One side blue, other side red",
    "src": "Doppler deck slide 4; practice test 2 Q24"
@@ -1065,6 +1078,7 @@
   {
    "id": "ma-c30",
    "front": "Rotating star seen as a single dot",
+   "gloss": false,
    "back": "Its spectral lines look broader, and the faster it spins the broader they are.",
    "short": "Faster spin means broader lines",
    "src": "Cosmic Perspective Fig 5.24 (not on the slides)"
@@ -1107,6 +1121,7 @@
   {
    "id": "ma-c36",
    "front": "What does the shape of a thermal spectrum tell us?",
+   "gloss": false,
    "back": "The object's temperature. A peak at shorter wavelengths means a hotter object.",
    "short": "Temperature; short-wavelength peak is hotter",
    "src": "Doppler deck slide 6"
@@ -1114,6 +1129,7 @@
   {
    "id": "ma-c37",
    "front": "Which objects emit thermal spectra?",
+   "gloss": false,
    "back": "Practically all large objects, such as stars, planets, rocks and people.",
    "short": "Practically all large objects",
    "src": "Doppler deck slide 6"
@@ -1121,6 +1137,7 @@
   {
    "id": "ma-c38",
    "front": "Wien's law (peak wavelength of a thermal spectrum)",
+   "gloss": false,
    "back": "Peak wavelength is about 2,900,000 K nm divided by the temperature T in kelvin. Hotter means a shorter peak wavelength.",
    "short": "Peak wavelength = 2,900,000 / T",
    "src": "Cosmic Perspective Mathematical Insight 5.2; practice test 2 Q23 explained"
@@ -1128,6 +1145,7 @@
   {
    "id": "ma-c39",
    "front": "Stefan-Boltzmann law (light from each square metre)",
+   "gloss": false,
    "back": "Emitted power per square metre = sigma x T^4, with sigma = 5.7 x 10^-8 watt/(m^2 K^4) and T in kelvin.",
    "short": "Power per square metre = sigma T^4",
    "src": "Cosmic Perspective Mathematical Insight 5.2"
@@ -1135,6 +1153,7 @@
   {
    "id": "ma-c40",
    "front": "A star's temperature doubles. What happens to the light from each square metre, and to the peak wavelength?",
+   "gloss": false,
    "back": "It becomes 2^4 = 16 times brighter per square metre, and the peak wavelength halves.",
    "short": "Double T: 16 times brighter, half peak",
    "src": "Practice questions Q28; Cosmic Perspective Mathematical Insight 5.2"
@@ -1142,6 +1161,7 @@
   {
    "id": "ma-c41",
    "front": "Vega's hydrogen line: rest 656.285 nm, seen 656.255 nm",
+   "gloss": false,
    "back": "(656.255 - 656.285) / 656.285 = -4.57 x 10^-5. Times c gives -13.7 km/s: Vega moves toward us at 13.7 km/s.",
    "short": "Vega moves toward us at 13.7 km/s",
    "src": "Cosmic Perspective Mathematical Insight 5.3"
@@ -1149,6 +1169,7 @@
   {
    "id": "ma-c42",
    "front": "Ion charges of oxygen (8 protons)",
+   "gloss": false,
    "back": "O+ lost 1 electron (7 left, charge +1). O2+ lost 2 (6 left, charge +2). With all 8 electrons gone the charge is +8.",
    "short": "Oxygen ions: 7 electrons, then 6, then 0",
    "src": "Cosmic Perspective 5.3 (Molecular Dissociation and Ionization)"
@@ -1156,6 +1177,7 @@
   {
    "id": "ma-c43",
    "front": "How to find the wavelength shift from a known speed",
+   "gloss": false,
    "back": "Shift = rest wavelength x (v / c). Moving away adds the shift (redshift); moving toward subtracts it (blueshift).",
    "short": "Shift in nm = rest x v / c",
    "src": "Cosmic Perspective Mathematical Insight 5.3 (rearranged)"

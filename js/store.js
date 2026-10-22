@@ -31,15 +31,15 @@ let timer = null;
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || blank(); } catch { return blank(); }
 }
-function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {}, sr: {} }; }
+function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {}, sr: {}, stats: {} }; }
 export const progress = () => data;
 
 const subs = [];
 export const onChange = (fn) => subs.push(fn);
-export function save() {
+export const localDay = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+export function save(studied = false) {
+  if (studied) { data.days[localDay()] = 1; noteStudyTime(); }
   try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {}
-  const d = new Date().toISOString().slice(0, 10);
-  data.days[d] = 1;
   clearTimeout(timer);
   timer = setTimeout(push, 1500);
   subs.forEach((f) => { try { f(); } catch {} });
@@ -93,6 +93,10 @@ export async function loadProfile() {
   let { data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle();
   if (!p) { await sb.rpc("ensure_profile"); ({ data: p } = await sb.from("profiles").select("*").eq("id", session.user.id).maybeSingle()); }
   profile = p;
+  if (p?.deletion_requested_at) { // logging back in within the grace period cancels a scheduled account deletion
+    const r = await sb.rpc("cancel_account_deletion");
+    if (!r.error && r.data) { p.deletion_requested_at = null; deletionCancelled = true; }
+  }
   if (p && !p.blocked) await sb.rpc("claim_invites").then((r) => { if (r.data > 0) invitesClaimed = r.data; }, () => {}); // roles from email invites are applied once the email is confirmed
   await loadClasses();
   await refreshMfaGate();
@@ -136,6 +140,8 @@ export const mfa = {
 };
 export const setRequireMfa = (flag) => sb.rpc("admin_set_require_mfa", { flag });
 
+export let deletionCancelled = false; // set when this login cancelled a scheduled account deletion (shown once as a welcome-back message)
+export const takeDeletionCancelled = () => { const f = deletionCancelled; deletionCancelled = false; return f; };
 export let invitesClaimed = 0; // set when this login turned an email invite into a role (shown once as a welcome message)
 export const takeInvitesClaimed = () => { const n = invitesClaimed; invitesClaimed = 0; return n; };
 
@@ -202,11 +208,21 @@ function merge(a, b) {
     const x = (a.quiz || {})[id], y = (b.quiz || {})[id];
     out.quiz[id] = !x ? y : !y ? x : (x.attempts >= y.attempts ? x : y);
   }
+  out.stats = mergeStats(a.stats, b.stats);
+  return out;
+}
+// numbers keep the larger value, lists of days / decks / terms are joined
+function mergeStats(a = {}, b = {}) {
+  const out = { ...b };
+  for (const [k, v] of Object.entries(a)) {
+    const w = b[k];
+    out[k] = typeof v === "number" ? Math.max(v, typeof w === "number" ? w : 0) : v && typeof v === "object" ? mergeStats(v, w && typeof w === "object" ? w : {}) : v;
+  }
   return out;
 }
 
-export async function signUp(email, password, name) {
-  return sb.auth.signUp({ email, password, options: { data: { name } } });
+export async function signUp(email, password, name, terms) {
+  return sb.auth.signUp({ email, password, options: { data: { name, ...(terms ? { terms_version: terms.terms, privacy_version: terms.privacy } : {}) } } });
 }
 export async function signIn(email, password) {
   const r = await sb.auth.signInWithPassword({ email, password });
@@ -268,16 +284,49 @@ export async function adminAccess() { const { data } = await sb.from("class_acce
 
 // ---------- progress helpers ----------
 export function cardState(id) { return data.cards[id]; }
-export function setCard(id, v) { data.cards[id] = v; (data.sr ||= {})[id] = nextState(data.sr[id], v === "know"); save(); }
+export function setCard(id, v) { data.cards[id] = v; (data.sr ||= {})[id] = nextState(data.sr[id], v === "know"); stats().cardsReviewed = (stats().cardsReviewed || 0) + 1; save(true); }
 export const dueCards = (cards) => srsDue(cards, data.sr || {});
 export const dueCount = (cards) => dueCards(cards).length;
 export function setConf(id, conf) { const q = data.quiz[id]; if (q) { q.conf = conf; save(); } }
 export function recordAnswer(id, correct) {
   const q = data.quiz[id] || { attempts: 0, correct: 0, last: null };
-  q.attempts++; if (correct) q.correct++; q.last = correct; data.quiz[id] = q; save();
+  const wasWeak = q.attempts >= 2 && q.correct / q.attempts < 0.6; // a weak question that climbs back above 60% is a comeback
+  q.attempts++; if (correct) q.correct++; q.last = correct; data.quiz[id] = q;
+  if (wasWeak && q.correct / q.attempts >= 0.6) stats().comebacks = (stats().comebacks || 0) + 1;
+  save(true);
 }
-export function markRead(lec, sec) { (data.read[lec] ||= {})[sec] = 1; save(); }
-export function gameDone(id) { data.games[id] = (data.games[id] || 0) + 1; save(); }
+export function markRead(lec, sec) { (data.read[lec] ||= {})[sec] = 1; save(true); }
+export function gameDone(id) { data.games[id] = (data.games[id] || 0) + 1; save(true); }
+
+/* ---------- numbers behind the badges (they live in the progress record, so they follow the student across devices) ---------- */
+export const stats = () => (data.stats ||= {});
+export function bump(k, n = 1) { const s = stats(); s[k] = (s[k] || 0) + n; save(); }
+export function setMax(k, v) { const s = stats(); if (v > (s[k] || 0)) { s[k] = v; save(); return true; } return false; }
+// counts each key once: mark("decksDone", lectureId) is true the first time and false after that
+export function mark(map, key) { const m = (stats()[map] ||= {}); if (m[key]) return false; m[key] = 1; save(); return true; }
+export const count = (map) => Object.keys(stats()[map] || {}).length;
+function noteStudyTime() {
+  const h = new Date().getHours(), s = stats();
+  if (h >= 22 || h < 4) (s.nightDays ||= {})[localDay()] = 1; else if (h < 8) (s.earlyDays ||= {})[localDay()] = 1;
+}
+// one finished game: how many games were played, the sprint personal best and how often it was beaten
+export function gameResult(id, game, score, total) {
+  const s = stats();
+  s.gamesPlayed = (s.gamesPlayed || 0) + 1;
+  if (total > 0 && score > 0) s.gameCorrect = (s.gameCorrect || 0) + score;
+  let beat = false;
+  if (game === "speed") {
+    const pb = (s.sprintPB ||= {}), old = pb[id] || 0;
+    if (score > old) { pb[id] = score; if (old > 0) { s.sprintBeats = (s.sprintBeats || 0) + 1; beat = true; } }
+    s.sprintBest = Math.max(s.sprintBest || 0, score);
+  }
+  s.lastGame = { lec: id, game, score: total > 0 ? score : null, total: total > 0 ? total : null, day: localDay() };
+  save(); return { beat };
+}
+// one finished quiz: best percentage (quizzes of at least 5 questions) and every correct answer counts toward "answers right"
+export function quizResult(score, total) {
+  if (total >= 5) setMax("quizBest", Math.round((score / total) * 100));
+}
 
 export const lectureStats = (lec) => statsFrom(data, lec);
 // the same numbers for any progress record (staff open a student's progress to see where they are)
@@ -301,9 +350,9 @@ export function statsFrom(d, lec) {
 export function streak() {
   let n = 0; const d = new Date();
   for (;;) {
-    const k = d.toISOString().slice(0, 10);
+    const k = localDay(d);
     if (data.days[k]) { n++; d.setDate(d.getDate() - 1); }
-    else if (n === 0) { d.setDate(d.getDate() - 1); if (!data.days[d.toISOString().slice(0, 10)]) return 0; }
+    else if (n === 0) { d.setDate(d.getDate() - 1); if (!data.days[localDay(d)]) return 0; }
     else return n;
   }
 }

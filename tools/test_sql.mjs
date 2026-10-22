@@ -2,7 +2,7 @@
 // with simulated people: platform admins, school managers, instructors and students of two different schools.
 //   npm i --no-save embedded-postgres pg
 //   node tools/test_sql.mjs                 fresh install of supabase/schema.sql
-//   MODE=upgrade node tools/test_sql.mjs    the owner's real path: first schema + patch 1 + RUN-ME.sql, legacy data, then RUN-ME-2.sql
+//   MODE=upgrade node tools/test_sql.mjs    the owner's real path: first schema + patch 1 + RUN-ME.sql, legacy data, then RUN-ME-2.sql, RUN-ME-3.sql and RUN-ME-4.sql
 import EmbeddedPostgres from "embedded-postgres";
 import pg from "pg";
 import { readFileSync, rmSync } from "node:fs";
@@ -89,6 +89,7 @@ if (process.env.MODE === "upgrade") {
   ok((await keep(LBIO, (x) => x(`select public.redeem_class_by_code('ace305') as c`))).rows[0].c === null, "older model: the code must match exactly (capital letters count)");
   try { await q(read("RUN-ME-2.sql")); ok(true, "RUN-ME-2.sql upgrades it"); } catch (e) { console.log("RUNME2 ERROR:", e.message); await finish(1); }
   try { await q(read("RUN-ME-3.sql")); ok(true, "RUN-ME-3.sql adds instructor content on top"); } catch (e) { console.log("RUNME3 ERROR:", e.message); await finish(1); }
+  try { await q(read("RUN-ME-4.sql")); ok(true, "RUN-ME-4.sql adds terms, account deletion, questions and admin content tools on top"); } catch (e) { console.log("RUNME4 ERROR:", e.message); await finish(1); }
   const cls = Object.fromEntries((await q(`select c.course_id, c.code, c.exam_name, c.exam_date::text d, (select count(*) from public.enrollments e where e.class_id=c.id)::int en, (select count(*) from public.class_teachers t where t.class_id=c.id)::int te from public.classes c`)).rows.map((r) => [r.course_id, r]));
   ok(cls.astr207?.code === "cry@18" && cls.erth209?.code === "madi@77", "the two existing classes keep their codes: " + JSON.stringify(cls));
   ok(cls.astr207?.exam_name === "Midterm" && cls.astr207?.d === "2026-11-02", "the exam date is carried over: " + JSON.stringify(cls.astr207));
@@ -99,7 +100,7 @@ if (process.env.MODE === "upgrade") {
 }
 // (no blanket grants here: the privileges are exactly what the patches leave, as in the real project)
 // the patches must be safe to run again
-for (const f of ["patch5.sql", "patch6.sql", "RUN-ME-2.sql", "patch7.sql", "RUN-ME-3.sql"]) { try { await q(read(f)); ok(true, f + " reruns cleanly"); } catch (e) { ok(false, f + " rerun: " + e.message); } }
+for (const f of ["patch5.sql", "patch6.sql", "RUN-ME-2.sql", "patch7.sql", "RUN-ME-3.sql", "patch8.sql", "RUN-ME-4.sql"]) { try { await q(read(f)); ok(true, f + " reruns cleanly"); } catch (e) { ok(false, f + " rerun: " + e.message); } }
 
 // ---- people ----
 const adminEmail = (await q(`select value from public.app_secrets where key='admin_email'`)).rows[0].value;
@@ -728,6 +729,396 @@ const D = await mk("d@alpha.ca", "Dee");
 await keep(D, (x) => x(`select public.delete_my_account()`));
 ok((await q(`select count(*)::int n from auth.users where id=$1`, [D])).rows[0].n === 0, "a student can delete their own account");
 ok(await fails(() => keep(ADMIN, (x) => x(`select public.delete_my_account()`)), /admin accounts/), "the admin account cannot be deleted by the self-service button");
+
+// ---- patch 8: terms, account deletion, customer questions, admin tools for instructors, admin content editing ----
+{
+  const notices = []; admin.on("notice", (n) => notices.push(n.message));
+  const priv = async (role, sig) => (await q(`select has_function_privilege($1, $2::regprocedure, 'execute') ok`, [role, sig])).rows[0].ok;
+  const tpriv = async (role, tbl, what) => (await q(`select has_table_privilege($1, $2, $3) ok`, [role, tbl, what])).rows[0].ok;
+  const callable = ["accept_terms(text,text)", "deletion_grace()", "request_account_deletion()", "cancel_account_deletion()", "submit_question(text,text)", "my_questions()", "admin_questions(text)", "admin_set_question_status(bigint,text,text)", "admin_set_instructor_of(uuid,uuid,boolean)", "admin_instructor_classes(uuid)", "admin_save_lecture(text,text,jsonb,jsonb,text)", "admin_content_history(text)", "admin_undo_content_change(bigint)"].map((s) => "public." + s);
+  const internal = ["purge_deleted_accounts()", "sync_profile_email()", "scrub_support_questions()", "version_ok(text)"].map((s) => "public." + s);
+  ok((await Promise.all(callable.map((s) => priv("anon", s)))).every((v) => v === false), "patch 8: visitors who are not logged in can run none of its functions");
+  ok((await Promise.all(callable.map((s) => priv("authenticated", s)))).every((v) => v === true), "...and logged-in people can run the ones meant for them");
+  ok((await Promise.all(internal.flatMap((s) => [priv("anon", s), priv("authenticated", s)]))).every((v) => v === false), "...but nobody outside the database can run the purge job or the internal helpers");
+  for (const t of ["terms_acceptances", "support_questions", "content_history"]) {
+    const full = "public." + t;
+    ok(!(await tpriv("anon", full, "select")) && !(await tpriv("authenticated", full, "insert")) && !(await tpriv("authenticated", full, "update")) && !(await tpriv("authenticated", full, "delete")) && !(await tpriv("anon", full, "insert")), `${t}: nobody can write to it directly and visitors cannot read it`);
+    ok((await q(`select relrowsecurity r from pg_class where oid = $1::regclass`, [full])).rows[0].r === true, `${t}: row level security is on`);
+  }
+
+  // -- terms of service and privacy policy
+  const TU = await mk("terms1@alpha.ca", "Tina");
+  ok((await q(`select terms_version tv, terms_accepted_at ta from public.profiles where id=$1`, [TU])).rows[0].tv === null, "a new account has accepted nothing yet");
+  await keep(TU, (x) => x(`select public.accept_terms('2026-10','2026-10')`));
+  const tp = (await q(`select terms_version tv, privacy_version pv, terms_accepted_at between now() - interval '1 minute' and now() + interval '1 minute' as recent from public.profiles where id=$1`, [TU])).rows[0];
+  ok(tp.tv === "2026-10" && tp.pv === "2026-10" && tp.recent === true, "accept_terms records both versions and the server time");
+  const nAcc = async (uid) => (await q(`select count(*)::int n from public.terms_acceptances where user_id=$1`, [uid])).rows[0].n;
+  ok((await nAcc(TU)) === 1, "...and one acceptance line");
+  await keep(TU, (x) => x(`select public.accept_terms('2026-10','2026-10')`));
+  ok((await nAcc(TU)) === 1, "accepting the same versions again adds nothing");
+  await keep(TU, (x) => x(`select public.accept_terms('2027-01','2027-01.b')`));
+  ok((await nAcc(TU)) === 2 && (await q(`select terms_version tv, privacy_version pv from public.profiles where id=$1`, [TU])).rows[0].pv === "2027-01.b", "new versions are recorded as a new line and update the profile");
+  {
+    const badV = [];
+    for (const v of ["", " ", "a b", "x".repeat(33), "v1;drop", "<b>", "../x", "caf" + String.fromCharCode(233), "tab" + String.fromCharCode(9), null]) {
+      if (!(await fails(() => keep(TU, (x) => x(`select public.accept_terms($1,'1')`, [v])), /invalid version/)) || !(await fails(() => keep(TU, (x) => x(`select public.accept_terms('1',$1)`, [v])), /invalid version/))) badV.push(JSON.stringify(v));
+    }
+    ok(badV.length === 0, "a version that is not 1 to 32 letters, numbers, dots, dashes or underscores is refused: " + badV.join(" "));
+    ok((await nAcc(TU)) === 2, "...and nothing is recorded for it");
+    const fine = [];
+    for (const v of ["v1", "2026-10", "1.2.3", "A_b-c.9", "x".repeat(32)]) { try { await keep(TU, (x) => x(`select public.accept_terms($1,$1)`, [v])); } catch (e) { fine.push(v + ": " + e.message); } }
+    ok(fine.length === 0, "...while ordinary version labels are accepted: " + fine.join(" "));
+  }
+  {
+    const TC = await mk("terms-cap@alpha.ca", "Cap");
+    let last = "";
+    for (let i = 0; i < 10; i++) last = await keep(TC, (x) => x(`select public.accept_terms($1,'1')`, ["a" + i])).then(() => "ok", (e) => e.message);
+    ok(last === "ok" && await fails(() => keep(TC, (x) => x(`select public.accept_terms('a99','1')`)), /too many changes today/), "one account cannot fill the table with acceptance lines (10 changes a day)");
+  }
+  ok(await fails(() => asAnon((x) => x(`select public.accept_terms('1','1')`)), /permission denied/), "a visitor who is not logged in cannot call accept_terms");
+  ok((await rows(TU, `select user_id from public.terms_acceptances`)).every((r) => r.user_id === TU) && (await rows(TU, `select user_id from public.terms_acceptances`)).length >= 2, "a person reads their own acceptance lines");
+  ok((await rows(S2, `select * from public.terms_acceptances where user_id=$1`, [TU])).length === 0 && (await rows(M1, `select * from public.terms_acceptances where user_id=$1`, [TU])).length === 0 && (await rows(T1, `select * from public.terms_acceptances where user_id=$1`, [TU])).length === 0, "...and nobody else's, not even a manager's or an instructor's");
+  ok((await rows(ADMIN, `select * from public.terms_acceptances where user_id=$1`, [TU])).length >= 2, "the platform admin reads them all");
+  ok(await denied(TU, `insert into public.terms_acceptances(user_id, terms_version, privacy_version) values (auth.uid(), 'x', 'x')`) && await denied(TU, `update public.terms_acceptances set terms_version = 'hack'`) && await denied(TU, `delete from public.terms_acceptances`), "a person cannot write, change or delete acceptance lines directly");
+  ok(await denied(ADMIN, `insert into public.terms_acceptances(user_id, terms_version, privacy_version) values ($1, 'x', 'x')`, [TU]) && await denied(ADMIN, `delete from public.terms_acceptances`), "...and neither can the platform admin");
+  ok(await denied(TU, `update public.profiles set terms_version = 'hack', deletion_requested_at = null where id = auth.uid()`), "the new profile columns cannot be written directly either");
+  ok((await nAcc(TU)) >= 2, "...and the lines are still there");
+  // the versions chosen on the sign-up form
+  const mkMeta = async (email, meta) => (await q(`insert into auth.users(email, email_confirmed_at, raw_user_meta_data) values ($1, now(), $2::jsonb) returning id`, [email, JSON.stringify(meta)])).rows[0].id;
+  const SM = await mkMeta("meta1@alpha.ca", { name: "Meta One", terms_version: "2026-10", privacy_version: "2026-10" });
+  const smp = (await q(`select display_name dn, terms_version tv, privacy_version pv, terms_accepted_at is not null as stamped from public.profiles where id=$1`, [SM])).rows[0];
+  ok(smp.tv === "2026-10" && smp.pv === "2026-10" && smp.stamped && smp.dn === "Meta One" && (await nAcc(SM)) === 1, "terms chosen on the sign-up form are recorded for the new account");
+  {
+    const junk = [{ terms_version: "2026-10" }, { privacy_version: "2026-10" }, { terms_version: "bad value!", privacy_version: "1" }, { terms_version: { a: 1 }, privacy_version: [1] }, { terms_version: "x".repeat(40), privacy_version: "1" }, { terms_version: null, privacy_version: null }, { name: "No terms" }, {}, "just text", [1, 2]];
+    const bad = [];
+    for (const [i, meta] of junk.entries()) {
+      try {
+        const id = await mkMeta(`junk${i}@alpha.ca`, meta);
+        const p = (await q(`select terms_version tv from public.profiles where id=$1`, [id])).rows[0];
+        if (!p || p.tv !== null || (await nAcc(id)) !== 0) bad.push(i);
+      } catch (e) { bad.push(i + ": " + e.message); }
+    }
+    ok(bad.length === 0, "bad or missing terms values at sign-up are ignored and never stop the account being made: " + bad.join(" | "));
+  }
+
+  // -- deleting an account: 22 days, then gone
+  ok((await one(TU, `select public.deletion_grace() = interval '22 days' v`)).v === true, "the wait before an account is removed is 22 days");
+  const DU = await mk("delme@alpha.ca", "Dell");
+  const audN = async (action) => (await q(`select count(*)::int n from public.admin_audit where action=$1`, [action])).rows[0].n;
+  const HOUR = 3600000;   // (22 days across a clock change in the test machine's time zone is 21 days 23 hours or 22 days 1 hour)
+  const d1 = (await keep(DU, (x) => x(`select public.request_account_deletion() d, now() n, public.request_account_deletion() = now() + public.deletion_grace() as exact`))).rows[0];
+  ok(d1.exact === true && Math.abs(d1.d - d1.n - 22 * 24 * HOUR) <= 2 * HOUR, "request_account_deletion answers with the day the account will be removed: 22 days from now");
+  ok(Math.abs((await q(`select deletion_requested_at t from public.profiles where id=$1`, [DU])).rows[0].t - d1.n) < 1000, "...and the profile remembers when it was asked");
+  ok((await audN("request account deletion")) === 1, "...and the request is in the audit trail");
+  await q(`update public.profiles set deletion_requested_at = now() - interval '5 days' where id=$1`, [DU]);
+  const d2 = (await keep(DU, (x) => x(`select public.request_account_deletion() d, now() n`))).rows[0];
+  ok(Math.abs(d2.d - d2.n - 17 * 24 * HOUR) <= 2 * HOUR, "asking a second time does not move the date");
+  ok(Math.abs((await q(`select now() - deletion_requested_at as age_ms from public.profiles where id=$1`, [DU])).rows[0].age_ms.days * 1 - 5) < 1 && (await audN("request account deletion")) === 1, "...the profile keeps the first date and nothing more is logged");
+  ok(await fails(() => keep(ADMIN, (x) => x(`select public.request_account_deletion()`)), /admin accounts cannot be deleted here/) && (await q(`select deletion_requested_at t from public.profiles where id=$1`, [ADMIN])).rows[0].t === null, "an admin account cannot ask to be deleted, and nothing is set");
+  ok(await fails(() => asAnon((x) => x(`select public.request_account_deletion()`)), /permission denied/) && await fails(() => asAnon((x) => x(`select public.cancel_account_deletion()`)), /permission denied/), "a visitor who is not logged in can neither ask nor cancel");
+  ok((await keep(TU, (x) => x(`select public.cancel_account_deletion() v`))).rows[0].v === false && (await audN("cancel account deletion")) === 0, "cancelling when nothing was asked answers false and logs nothing");
+  ok((await keep(DU, (x) => x(`select public.cancel_account_deletion() v`))).rows[0].v === true, "cancel_account_deletion answers true when a deletion was waiting");
+  ok((await q(`select deletion_requested_at t from public.profiles where id=$1`, [DU])).rows[0].t === null && (await audN("cancel account deletion")) === 1, "...the account is restored and the cancel is logged");
+  ok((await keep(DU, (x) => x(`select public.cancel_account_deletion() v`))).rows[0].v === false && (await audN("cancel account deletion")) === 1, "...a second cancel does nothing");
+  const d3 = (await keep(DU, (x) => x(`select public.request_account_deletion() d, now() n`))).rows[0];
+  ok(Math.abs(d3.d - d3.n - 22 * 24 * HOUR) <= 2 * HOUR, "after a cancel a new request starts a fresh 22 days");
+  await keep(DU, (x) => x(`select public.cancel_account_deletion()`));
+
+  // the daily purge
+  const mkOld = async (email, age) => { const id = await mk(email, "Old"); await q(`update public.profiles set deletion_requested_at = now() - $2::interval where id=$1`, [id, age]); return id; };
+  const PO1 = await mkOld("purge1@alpha.ca", "23 days"), PO2 = await mkOld("purge2@alpha.ca", "40 days"), P21 = await mkOld("purge21@alpha.ca", "21 days 23 hours"), PNO = await mk("purge-none@alpha.ca", "None");
+  const PADM = await mk("purge-admin@x.ca", "Adm"); await q(`update public.profiles set is_admin = true, deletion_requested_at = now() - interval '60 days' where id=$1`, [PADM]);
+  await q(`insert into public.progress(user_id, data) values ($1, '{}'), ($2, '{}')`, [PO1, P21]);
+  await q(`insert into public.enrollments(user_id, class_id) values ($1, $3), ($2, $3)`, [PO1, P21, KB]);
+  await q(`insert into public.terms_acceptances(user_id, terms_version, privacy_version) values ($1, '1', '1'), ($2, '1', '1')`, [PO1, P21]);
+  await keep(PO1, (x) => x(`select public.submit_question('Account', 'Please help me with something')`));
+  ok(await fails(() => keep(S1, (x) => x(`select public.purge_deleted_accounts()`)), /permission denied/) && await fails(() => keep(ADMIN, (x) => x(`select public.purge_deleted_accounts()`)), /permission denied/) && await fails(() => keep(PO1, (x) => x(`select public.purge_deleted_accounts()`)), /permission denied/), "no logged-in person, not even the platform admin or the account itself, can run the purge");
+  ok(await fails(() => asAnon((x) => x(`select public.purge_deleted_accounts()`)), /permission denied/), "...and neither can a visitor");
+  ok((await q(`select count(*)::int n from auth.users where id = any($1::uuid[])`, [[PO1, PO2, P21, PNO, PADM]])).rows[0].n === 5, "(nothing was removed by those attempts)");
+  const audBefore = await audN("purge deleted account");
+  ok((await q(`select public.purge_deleted_accounts() n`)).rows[0].n === 2, "the purge removes exactly the accounts whose 22 days are over (23 and 40 days)");
+  const there = async (id) => (await q(`select (select count(*) from auth.users where id=$1)::int u, (select count(*) from public.profiles where id=$1)::int p, (select count(*) from public.progress where user_id=$1)::int g, (select count(*) from public.enrollments where user_id=$1)::int e, (select count(*) from public.terms_acceptances where user_id=$1)::int t`, [id])).rows[0];
+  const gone1 = await there(PO1), gone2 = await there(PO2);
+  ok(Object.values(gone1).every((v) => v === 0) && Object.values(gone2).every((v) => v === 0), "...with their profile, progress, class memberships and acceptance lines");
+  const kept = [await there(P21), await there(PNO), await there(PADM), await there(DU)];
+  ok(kept.every((k) => k.u === 1 && k.p === 1), "...an account at 21 days and 23 hours stays, and so do accounts that never asked or took it back");
+  ok((await there(P21)).g === 1 && (await there(P21)).e === 1 && (await there(P21)).t === 1, "...with all their data");
+  ok((await there(PADM)).u === 1 && (await q(`select is_admin from public.profiles where id=$1`, [PADM])).rows[0].is_admin === true, "an admin is never removed by the purge, however old the request");
+  ok((await q(`select public.purge_deleted_accounts() n`)).rows[0].n === 0, "running the purge again removes nothing more");
+  {
+    const lines = (await q(`select actor, target, detail from public.admin_audit where action='purge deleted account' order by id`)).rows;
+    ok(lines.length === audBefore + 2 && lines.slice(-2).map((l) => l.target).sort().join() === [PO1, PO2].sort().join(), "each removed account has one audit line");
+    ok(lines.every((l) => !String(l.target).includes("@") && !String(l.detail).includes("@") && !String(l.detail).includes("purge")), "...which holds an id and a date, not a name or an email");
+  }
+  const orphan = (await q(`select user_id, email, name, message from public.support_questions where message = 'Please help me with something'`)).rows[0];
+  ok(orphan && orphan.user_id === null && orphan.email === null && orphan.name === null, "a removed account's old question keeps its text but loses the name, email and link to the account");
+  await q(`update public.profiles set deletion_requested_at = null where id = any($1::uuid[])`, [[P21]]);
+  await q(`delete from auth.users where id = any($1::uuid[])`, [[P21, PNO, PADM]]);
+  {
+    // every other way of removing an account scrubs the name and email on old questions too
+    const SD = await mk("selfdelete@alpha.ca", "Selfie");
+    await keep(SD, (x) => x(`select public.submit_question('Account', 'A question before I leave')`));
+    await keep(SD, (x) => x(`select public.delete_my_account()`));
+    const sq1 = (await q(`select user_id, email, name from public.support_questions where message = 'A question before I leave'`)).rows[0];
+    ok(sq1 && sq1.user_id === null && sq1.email === null && sq1.name === null, "deleting an account at once (the old button, or by an admin) scrubs the name and email on its questions too");
+  }
+  // when someone changes their sign-in email the profile follows
+  const EU = await mk("oldmail@alpha.ca", "Evie");
+  await q(`update auth.users set email = 'newmail@alpha.ca' where id=$1`, [EU]);
+  ok((await q(`select email from public.profiles where id=$1`, [EU])).rows[0].email === "newmail@alpha.ca", "changing the sign-in email updates the email in the profile");
+  await q(`update auth.users set raw_user_meta_data = '{"name":"Evie B"}'::jsonb where id=$1`, [EU]);
+  ok((await q(`select email from public.profiles where id=$1`, [EU])).rows[0].email === "newmail@alpha.ca", "...and other changes to the sign-in record leave it alone");
+  ok(await fails(() => keep(EU, (x) => x(`select public.sync_profile_email()`)), /permission denied/), "...and the trigger function cannot be called from outside");
+
+  // -- customer service questions
+  const QU = await mk("asker@alpha.ca", "Quinn");
+  const sq = (uid, topic, message) => keep(uid, (x) => x(`select public.submit_question($1,$2)`, [topic, message]));
+  await sq(QU, "Billing", "   How do I change my plan?\n");
+  const qrow = (await q(`select user_id, email, name, topic, message, status, admin_note, handled_by from public.support_questions where user_id=$1`, [QU])).rows[0];
+  ok(qrow && qrow.email === "asker@alpha.ca" && qrow.name === "Quinn" && qrow.topic === "Billing" && qrow.message === "How do I change my plan?" && qrow.status === "open" && qrow.admin_note === null && qrow.handled_by === null, "a question is stored with the asker's email and name, trimmed, and starts open");
+  {
+    const QL = await mk("limits@alpha.ca", "Lim");
+    const cnt = async () => (await q(`select count(*)::int n from public.support_questions where user_id=$1`, [QL])).rows[0].n;
+    const badTopics = [["", "A fine message"], ["   ", "A fine message"], ["t".repeat(61), "A fine message"], ["two" + String.fromCharCode(10) + "lines", "A fine message"], [null, "A fine message"]];
+    const badMsgs = [["Topic", "1234"], ["Topic", "   ab   "], ["Topic", ""], ["Topic", null], ["Topic", "x".repeat(2001)], ["Topic", " ".repeat(10) + "abc"]];
+    const wrong = [];
+    for (const [t, m] of badTopics) if (!(await fails(() => sq(QL, t, m), /Choose a topic/))) wrong.push("topic " + JSON.stringify(t));
+    for (const [t, m] of badMsgs) if (!(await fails(() => sq(QL, t, m), /5 to 2000/))) wrong.push("message " + JSON.stringify(m).slice(0, 20));
+    ok(wrong.length === 0 && (await cnt()) === 0, "bad topics (empty, over 60, more than one line) and bad messages (under 5, over 2000 characters) are refused with a readable message: " + wrong.join(", "));
+    await sq(QL, "t".repeat(60), "12345"); await sq(QL, "Topic", "x".repeat(2000)); await sq(QL, "Topic", "  hello there  ");
+    ok((await cnt()) === 3 && (await q(`select count(*)::int n from public.support_questions where user_id=$1 and message = 'hello there'`, [QL])).rows[0].n === 1, "...while a 60 character topic, a 5 character message and a 2000 character message are fine");
+    await sq(QL, "Topic", "fourth message"); await sq(QL, "Topic", "fifth message");
+    ok(await fails(() => sq(QL, "Topic", "sixth message"), /too many messages today/), "at most 5 questions per person per day");
+    ok(!!(await sq(QU, "Billing", "Someone else can still write")), "...and the limit is per person");
+    await q(`update public.support_questions set at = now() - interval '2 days' where user_id=$1`, [QL]);
+    ok(!!(await sq(QL, "Topic", "a day later it works again")), "...the limit counts the last 24 hours only");
+  }
+  ok(await fails(() => asAnon((x) => x(`select public.submit_question('Topic','A message from a visitor')`)), /permission denied/), "a visitor who is not logged in cannot send a question");
+  const aq = (uid, f) => rows(uid, `select * from public.admin_questions($1)`, [f === undefined ? null : f]);
+  {
+    const all = await aq(ADMIN);
+    ok(all.length >= 9 && all.some((r) => r.email === "asker@alpha.ca" && r.message === "How do I change my plan?" && r.topic === "Billing" && r.status === "open"), "the platform admin reads the questions");
+    ok(all.every((r, i) => i === 0 || all[i - 1].at >= r.at), "...newest first");
+    ok((await aq(S1)).length === 0 && (await aq(T1)).length === 0 && (await aq(M1)).length === 0 && (await aq(QU)).length === 0 && (await aq(T2)).length === 0, "everybody else, including the person who asked, gets an empty list (no error)");
+    ok((await aq(ADMIN, "open")).length === all.length && (await aq(ADMIN, "answered")).length === 0 && (await aq(ADMIN, "closed")).length === 0 && (await aq(ADMIN, "bogus")).length === 0 && (await aq(ADMIN, "")).length === all.length, "the status filter works (and an empty one means all)");
+    await q(`insert into public.support_questions(user_id, email, name, topic, message) select null, 'bulk@x.ca', 'Bulk', 'Bulk', 'Bulk message ' || g from generate_series(1, 205) g`);
+    ok((await aq(ADMIN)).length === 200, "at most 200 questions are listed");
+    await q(`delete from public.support_questions where email = 'bulk@x.ca'`);
+  }
+  {
+    const qid = (await aq(ADMIN, "open")).find((r) => r.message === "How do I change my plan?").id;
+    const setS = (uid, id, st, note) => keep(uid, (x) => x(`select public.admin_set_question_status($1,$2,$3)`, [id, st, note === undefined ? null : note]));
+    const wrong = [];
+    for (const [name, uid] of [["a student", S1], ["an instructor", T1], ["a manager", M1], ["the asker", QU]]) if (!(await fails(() => setS(uid, qid, "closed"), /admin only/))) wrong.push(name);
+    ok(wrong.length === 0, "only the platform admin can change a question's status: " + wrong.join(", "));
+    await setS(ADMIN, qid, "answered", "  Replied by email  ");
+    const r1 = (await q(`select status, admin_note, handled_by, handled_at is not null as stamped from public.support_questions where id=$1`, [qid])).rows[0];
+    ok(r1.status === "answered" && r1.admin_note === "Replied by email" && r1.handled_by === ADMIN && r1.stamped, "the admin marks it answered with a note, and who and when are recorded");
+    {
+      const mq = (uid) => rows(uid, `select * from public.my_questions()`);
+      const mine = await mq(QU), reply = mine.find((r) => r.id === qid);
+      ok(mine.length === 2 && mine[0].message === "Someone else can still write" && reply && reply.message === "How do I change my plan?" && reply.topic === "Billing", "a person reads their own questions, newest first");
+      ok(reply.status === "answered" && reply.admin_note === "Replied by email" && reply.handled_at !== null && mine[0].status === "open" && mine[0].admin_note === null, "...and sees the admin's reply (note and status) once the admin has answered");
+      ok(Object.keys(reply).sort().join() === "admin_note,at,handled_at,id,message,status,topic", "...but not who handled it or anyone's email: " + Object.keys(reply).join());
+      ok((await mq(S1)).length === 0 && (await mq(T1)).length === 0 && (await mq(M1)).length === 0 && (await mq(ADMIN)).length === 0, "everyone else sees only their own, so they see none of it (not even the admin)");
+      ok(mine.every((r) => r.id !== undefined) && (await rows(ADMIN, `select * from public.admin_questions()`)).length > mine.length, "(other people's questions exist, and are not in the list)");
+      await q(`insert into public.support_questions(user_id, email, name, topic, message, at) select $1, 'asker@alpha.ca', 'Quinn', 'Bulk', 'Bulk own ' || g, now() + g * interval '1 second' from generate_series(1, 55) g`, [QU]);
+      const many = await mq(QU);
+      ok(many.length === 50 && many[0].message === "Bulk own 55", "at most 50 are listed, newest first");
+      await q(`delete from public.support_questions where topic = 'Bulk' and user_id = $1`, [QU]);
+      ok(await fails(() => asAnon((x) => x(`select * from public.my_questions()`)), /permission denied/), "a visitor cannot call it");
+    }
+    await setS(ADMIN, qid, "closed");
+    ok((await q(`select status, admin_note from public.support_questions where id=$1`, [qid])).rows[0].admin_note === "Replied by email", "a status change without a note keeps the note");
+    await setS(ADMIN, qid, "open", "");
+    ok((await q(`select status, admin_note from public.support_questions where id=$1`, [qid])).rows[0].admin_note === null, "...and an empty note clears it");
+    ok(await fails(() => setS(ADMIN, qid, "bogus"), /unknown status/) && await fails(() => setS(ADMIN, qid, null), /unknown status/), "an unknown status is refused");
+    ok(await fails(() => setS(ADMIN, qid, "open", "n".repeat(1001)), /1000 characters/) && !!(await setS(ADMIN, qid, "open", "n".repeat(1000))), "a note is at most 1000 characters");
+    ok(await fails(() => setS(ADMIN, "999999999", "open"), /no such question/), "an unknown question is refused");
+    ok((await audN("set question status")) >= 4, "status changes are in the audit trail");
+    ok(await fails(() => asAnon((x) => x(`select public.admin_set_question_status(1,'open')`)), /permission denied/) && (await asAnon((x) => x(`select * from public.support_questions`)).catch(() => ({ rows: [] }))).rows.length === 0, "a visitor can neither change nor read questions");
+  }
+  ok((await rows(QU, `select * from public.support_questions`)).length === 0 && (await rows(S1, `select * from public.support_questions`)).length === 0 && (await rows(T1, `select * from public.support_questions`)).length === 0 && (await rows(M1, `select * from public.support_questions`)).length === 0, "nobody but the admin can read the table: not the asker, an instructor or a manager");
+  ok((await rows(ADMIN, `select * from public.support_questions`)).length >= 9, "the platform admin can read it");
+  ok(await denied(QU, `insert into public.support_questions(user_id, message) values (auth.uid(), 'direct')`) && await denied(QU, `update public.support_questions set status = 'closed'`) && await denied(QU, `delete from public.support_questions`), "a person cannot write to the table directly");
+  ok(await denied(ADMIN, `insert into public.support_questions(message) values ('direct')`) && await denied(ADMIN, `update public.support_questions set status = 'closed'`) && await denied(ADMIN, `delete from public.support_questions`), "...and neither can the admin (the functions do it)");
+  ok(await fails(() => q(`insert into public.support_questions(message, status) values ('some message', 'weird')`)), "a status outside open, answered and closed is refused by the table itself");
+
+  // -- the platform admin makes people instructors
+  const NI = await mk("newinstr@alpha.ca", "Nia"), NU = await mk("unconfirmed2@alpha.ca", "Una", false);
+  const setI = (uid, who, kid, flag) => keep(uid, (x) => x(`select public.admin_set_instructor_of($1,$2,$3)`, [who, kid, flag]));
+  const teaches = async (uid, kid) => (await q(`select count(*)::int n from public.class_teachers where user_id=$1 and class_id=$2`, [uid, kid])).rows[0].n;
+  {
+    const wrong = [];
+    for (const [name, uid] of [["a student", S1], ["an instructor", T1], ["a manager of the school", M1], ["a manager of another school", M2], ["the person themselves", NI]]) if (!(await fails(() => setI(uid, NI, KA, true), /admin only/))) wrong.push(name);
+    ok(wrong.length === 0 && (await teaches(NI, KA)) === 0, "only the platform admin can make someone an instructor: " + wrong.join(", "));
+    ok(await fails(() => setI(T1, T1, KB, false), /admin only/) && (await teaches(T1, KA)) === 1, "...or take the role away");
+  }
+  ok(await fails(() => setI(ADMIN, NI, "00000000-0000-4000-8000-000000000000", true), /unknown class/), "the class must exist");
+  ok(await fails(() => setI(ADMIN, NU, KA, true), /confirm their email/) && (await teaches(NU, KA)) === 0, "a person who has not confirmed their email cannot be made an instructor");
+  ok(await fails(() => setI(ADMIN, "11111111-1111-4111-8111-111111111111", KA, true), /no such account/) && await fails(() => setI(ADMIN, NI, KA, null), /add or remove/), "an unknown account, or no choice, is refused");
+  await setI(ADMIN, NI, KA, true); await setI(ADMIN, NI, KA, true);
+  ok((await teaches(NI, KA)) === 1, "the admin makes a person an instructor of a class (twice is fine)");
+  ok((await q(`select count(*)::int n from public.admin_audit where action='add instructor' and target='newinstr@alpha.ca' and school_id=$1`, [A])).rows[0].n >= 1, "...and it is in the audit trail of that school");
+  ok((await rows(NI, `select class_id from public.staff_classes()`)).map((r) => r.class_id).join() === KA, "...and they now see that class");
+  const ic = (uid, who) => rows(uid, `select * from public.admin_instructor_classes($1)`, [who]);
+  {
+    const r = await ic(ADMIN, NI);
+    ok(r.length === 1 && r[0].class_id === KA && r[0].school_name === "Alpha University" && typeof r[0].class_name === "string", "the admin lists the classes a person teaches");
+    ok((await ic(S1, NI)).length === 0 && (await ic(T1, NI)).length === 0 && (await ic(M1, NI)).length === 0 && (await ic(NI, NI)).length === 0, "everyone else gets an empty list");
+    await setI(ADMIN, NI, KB, true);
+    ok((await ic(ADMIN, NI)).map((x) => x.school_name).join() === "Alpha University,Beta College", "...across schools, sorted by school");
+    ok((await ic(ADMIN, S1)).length === 0, "...and a person who teaches nothing has an empty list");
+    await setI(ADMIN, NI, KB, false); await setI(ADMIN, NI, KB, false);
+    ok((await teaches(NI, KB)) === 0 && (await teaches(NI, KA)) === 1, "the admin takes the role away from one class only (twice is fine)");
+    ok((await q(`select count(*)::int n from public.admin_audit where action='remove instructor' and target='newinstr@alpha.ca' and school_id=$1`, [B])).rows[0].n >= 1, "...and that is in the audit trail too");
+  }
+  ok(await fails(() => asAnon((x) => x(`select public.admin_set_instructor_of('${NI}','${KA}',true)`)), /permission denied/) && (await asAnon((x) => x(`select * from public.admin_instructor_classes('${NI}')`)).catch(() => ({ rows: [] }))).rows.length === 0, "a visitor can do neither");
+  await setI(ADMIN, NI, KA, false);
+  {
+    const VA = await mk("viaadmin@beta.ca", "Via");
+    ok((await keep(ADMIN, (x) => x(`select public.invite_user('viaadmin@beta.ca','teacher',null,$1) r`, [KB]))).rows[0].r === "added" && (await teaches(VA, KB)) === 1, "the platform admin can also invite an instructor with invite_user");
+    ok((await keep(ADMIN, (x) => x(`select public.invite_user('later2@beta.ca','teacher',null,$1) r`, [KB]))).rows[0].r === "invited", "...even before the person has signed up");
+    const LT = await mk("later2@beta.ca", "Later");
+    ok((await teaches(LT, KB)) === 1, "...and the role arrives when they do");
+    await q(`delete from public.class_teachers where user_id = any($1::uuid[]) and class_id=$2`, [[VA, LT], KB]);
+  }
+
+  // -- the platform admin edits course lectures, with a history
+  const BODY = { id: "t1", title: "Test lecture", sections: [{ h: "One", p: "Text" }], cards: [{ front: "a", back: "b" }], quiz: [{ q: "Q?", options: ["a", "b"], answer: 0 }] };
+  const BODY2 = { ...BODY, title: "Test lecture, second version" }, BODY3 = { ...BODY, title: "Test lecture, third version" };
+  const OLD = { ...BODY, title: "As published in the file" };
+  const save = (uid, lid, cid, body, old, summary) => keep(uid, (x) => x(`select public.admin_save_lecture($1,$2,$3::jsonb,$4::jsonb,$5) id`, [lid, cid, body === undefined || body === null ? null : JSON.stringify(body), old === undefined || old === null ? null : JSON.stringify(old), summary === undefined ? null : summary])).then((r) => r.rows[0].id);
+  const raw = (uid, lid, cid, bodyText) => keep(uid, (x) => x(`select public.admin_save_lecture($1,$2,$3::jsonb) id`, [lid, cid, bodyText])).then((r) => r.rows[0].id);
+  const lecBody = async (lid) => (await q(`select body, class_id from public.lecture_content where lecture_id=$1`, [lid])).rows[0];
+  const hist = async (id) => (await q(`select * from public.content_history where id=$1`, [id])).rows[0];
+  const hl = (uid, lid) => rows(uid, `select * from public.admin_content_history($1)`, [lid]);
+  {
+    const wrong = [];
+    for (const [name, uid] of [["a student", S1], ["an instructor", T1], ["a manager", M1], ["another school's manager", M2]]) {
+      if (!(await fails(() => save(uid, "nope-lecture", "astr207", BODY), /admin only/))) wrong.push(name + " saves");
+      if (!(await fails(() => keep(uid, (x) => x(`select public.admin_undo_content_change(1)`)), /admin only/))) wrong.push(name + " undoes");
+    }
+    ok(wrong.length === 0 && (await lecBody("nope-lecture")) === undefined, "only the platform admin can save or undo a lecture change: " + wrong.join(", "));
+    ok(await fails(() => asAnon((x) => x(`select public.admin_save_lecture('nope-lecture','astr207','{}'::jsonb)`)), /permission denied/), "a visitor cannot");
+  }
+  {
+    const bad = [];
+    for (const lid of ["", "a b", "a/b", "x".repeat(65), "../x", "caf" + String.fromCharCode(233), "a.json", "a" + String.fromCharCode(10)]) if (!(await fails(() => save(ADMIN, lid, "astr207", BODY), /lecture id/))) bad.push("lecture id " + JSON.stringify(lid));
+    for (const cid of ["", "a b", "a/b", "x".repeat(65), "../x"]) if (!(await fails(() => save(ADMIN, "okid", cid, BODY), /course id/))) bad.push("course id " + JSON.stringify(cid));
+    ok(bad.length === 0, "lecture and course ids must be 1 to 64 letters, numbers, dashes or underscores: " + bad.join(", "));
+    ok(await fails(() => save(ADMIN, "okid", "nosuchcourse", BODY), /unknown course/), "the course must exist");
+    for (const t of ["[]", "\"text\"", "123", "null", "true"]) if (!(await fails(() => raw(ADMIN, "okid", "astr207", t), /must be an object/))) bad.push("body " + t);
+    if (!(await fails(() => save(ADMIN, "okid", "astr207", null), /must be an object/))) bad.push("body SQL null");
+    for (const b of [{ sections: {} }, { sections: "x" }, { sections: null }, { cards: "x" }, { cards: { a: 1 } }, { quiz: null }, { quiz: 5 }, { quiz: true }, { ...BODY, cards: {} }]) if (!(await fails(() => save(ADMIN, "okid", "astr207", b), /must be a list/))) bad.push("shape " + JSON.stringify(b).slice(0, 30));
+    ok(bad.length === 0, "the lecture must be an object whose sections, cards and quiz are lists: " + bad.join(", "));
+    ok(await fails(() => save(ADMIN, "okid", "astr207", { sections: [{ t: "x".repeat(2100000) }] }), /too large/), "a lecture over 2 MB is refused");
+    ok(await fails(() => save(ADMIN, "okid", "astr207", BODY, ["not", "an", "object"]), /earlier version/) && await fails(() => save(ADMIN, "okid", "astr207", BODY, { sections: [{ t: "x".repeat(2100000) }] }), /earlier version/), "...and so is an earlier version that is not an object or is over 2 MB");
+    ok((await q(`select count(*)::int n from public.content_history where lecture_id = 'okid'`)).rows[0].n === 0 && (await lecBody("okid")) === undefined, "nothing was saved by any of those");
+    const big = await save(ADMIN, "bigok", "astr207", { sections: [{ t: "x".repeat(1900000) }] });
+    ok(!!big, "a lecture just under 2 MB is accepted");
+    ok(!!(await save(ADMIN, "tiny-ok", "astr207", { title: "No lists at all" })), "...and a lecture without sections, cards or a quiz is fine");
+    await q(`delete from public.content_history where lecture_id in ('bigok', 'tiny-ok')`); await q(`delete from public.lecture_content where lecture_id in ('bigok', 'tiny-ok')`);
+  }
+  const LID = "testlect1", CID = "astr207";
+  const h1 = await save(ADMIN, LID, CID, BODY, OLD);
+  {
+    const lb = await lecBody(LID), r = await hist(h1);
+    ok(lb && lb.class_id === CID && lb.body.title === "Test lecture", "saving a new lecture stores it for its course");
+    ok(r.user_id === ADMIN && r.user_email === adminEmail && r.lecture_id === LID && r.course_id === CID && r.summary === "Edited" && r.undone === false, "...and records who, which lecture and a default summary");
+    ok(r.before && r.before.title === "As published in the file" && r.after.title === "Test lecture", "...with the published file as the 'before' (the database had no copy yet) and the new text as the 'after'");
+  }
+  ok((await rows(S1, `select lecture_id from public.lecture_content where lecture_id=$1`, [LID])).length === 1 && (await rows(S2, `select lecture_id from public.lecture_content where lecture_id=$1`, [LID])).length === 0, "students of the course read it, students of other courses do not");
+  const h2 = await save(ADMIN, LID, CID, BODY2, { ignored: "the database already has a copy" }, "  Fixed a typo  ");
+  {
+    const r = await hist(h2);
+    ok(r.summary === "Fixed a typo" && r.before.title === "Test lecture" && r.after.title === "Test lecture, second version", "a later save keeps the copy the database had as 'before' (the earlier version sent by the app is ignored) and trims the summary");
+  }
+  const h3 = await save(ADMIN, LID, CID, BODY3, null, "s".repeat(300));
+  ok((await hist(h3)).summary.length === 200, "a summary is cut to 200 characters");
+  ok(await fails(() => save(ADMIN, LID, "erth209", BODY), /belongs to another course/) && (await lecBody(LID)).class_id === CID, "a lecture cannot be moved to another course by saving it");
+  {
+    const l = await hl(ADMIN, LID);
+    ok(l.length === 3 && l[0].id === h3 && l[1].id === h2 && l[2].id === h1 && l[1].summary === "Fixed a typo" && l[1].user_email === adminEmail && l.every((x) => x.undone === false), "the history lists the changes, newest first");
+    ok((await hl(S1, LID)).length === 0 && (await hl(T1, LID)).length === 0 && (await hl(M1, LID)).length === 0 && (await hl(ADMIN, "no-such-lecture")).length === 0, "...to the admin only (everyone else gets an empty list), and only for that lecture");
+  }
+  const u2 = await keep(ADMIN, (x) => x(`select public.admin_undo_content_change($1) id`, [h2])).then((r) => r.rows[0].id);
+  {
+    const lb = await lecBody(LID), r = await hist(u2);
+    ok(lb.body.title === "Test lecture" && lb.class_id === CID, "undoing a change puts back the text from before it");
+    ok((await hist(h2)).undone === true && r.summary === "Undid: Fixed a typo" && r.before.title === "Test lecture, third version" && r.after.title === "Test lecture" && r.undone === false && Number(u2) > Number(h3), "...marks it undone, and the undo is a new line with the text it replaced and the text it restored");
+    ok(await fails(() => keep(ADMIN, (x) => x(`select public.admin_undo_content_change($1)`, [h2])), /already undone/), "a change cannot be undone twice");
+    await keep(ADMIN, (x) => x(`select public.admin_undo_content_change($1)`, [u2]));
+    ok((await lecBody(LID)).body.title === "Test lecture, third version", "...but the undo itself can be undone");
+    await keep(ADMIN, (x) => x(`select public.admin_undo_content_change($1)`, [h1]));
+    ok((await lecBody(LID)).body.title === "As published in the file", "the first change can be undone back to the published file");
+  }
+  {
+    const hn = await save(ADMIN, "nobefore1", CID, BODY);
+    ok(await fails(() => keep(ADMIN, (x) => x(`select public.admin_undo_content_change($1)`, [hn])), /nothing to go back to/) && (await lecBody("nobefore1")).body.title === "Test lecture", "a change with no earlier version cannot be undone, and says why");
+    ok(await fails(() => keep(ADMIN, (x) => x(`select public.admin_undo_content_change(999999999)`)), /no such change/), "an unknown change is refused");
+    await q(`delete from public.content_history where lecture_id = 'nobefore1'`); await q(`delete from public.lecture_content where lecture_id = 'nobefore1'`);
+  }
+  ok((await rows(S1, `select * from public.content_history`)).length === 0 && (await rows(T1, `select * from public.content_history`)).length === 0 && (await rows(M1, `select * from public.content_history`)).length === 0, "nobody but the admin can read the history table");
+  ok((await rows(ADMIN, `select * from public.content_history where lecture_id=$1`, [LID])).length >= 5 && (await asAnon((x) => x(`select * from public.content_history`)).catch(() => ({ rows: [] }))).rows.length === 0, "the admin can; a visitor cannot");
+  ok(await denied(S1, `insert into public.content_history(lecture_id, course_id) values ('x', 'astr207')`) && await denied(S1, `update public.content_history set undone = true`) && await denied(S1, `delete from public.content_history`), "a person cannot write to the history directly");
+  ok(await denied(ADMIN, `insert into public.content_history(lecture_id, course_id) values ('x', 'astr207')`) && await denied(ADMIN, `update public.content_history set after = '{}'::jsonb`) && await denied(ADMIN, `delete from public.content_history`), "...and neither can the admin (the history can only grow through the functions)");
+  {
+    const before = (await q(`select count(*)::int n from public.content_history where lecture_id=$1`, [LID])).rows[0].n;
+    ok(before >= 5 && (await q(`select count(*)::int n from public.admin_audit where action in ('edit lecture', 'undo lecture change')`)).rows[0].n >= 5, "saves and undos are in the audit trail");
+  }
+  {
+    // only the newest 100 changes of a lecture are kept
+    await keep(ADMIN, (x) => x(`select count(public.admin_save_lecture('prunetest1', 'astr207', jsonb_build_object('sections', jsonb_build_array(g)), null, 'v' || g)) from generate_series(1, 105) g`));
+    const pr = (await q(`select count(*)::int n, min(id) lo, max(id) hi, (array_agg(summary order by id))[1] first_summary, (array_agg(summary order by id desc))[1] last_summary from public.content_history where lecture_id = 'prunetest1'`)).rows[0];
+    ok(pr.n === 100 && pr.first_summary === "v6" && pr.last_summary === "v105", "only the newest 100 changes of a lecture are kept: " + JSON.stringify(pr));
+    const l = await hl(ADMIN, "prunetest1");
+    ok(l.length === 50 && l[0].summary === "v105" && l[49].summary === "v56", "...and the history list shows the newest 50");
+    ok((await q(`select count(*)::int n from public.content_history where lecture_id = $1`, [LID])).rows[0].n >= 5, "...pruning one lecture leaves the others alone");
+  }
+  await q(`delete from public.content_history where lecture_id in ($1, 'prunetest1')`, [LID]); await q(`delete from public.lecture_content where lecture_id in ($1, 'prunetest1')`, [LID]);
+
+  // -- pictures in course lectures: a private bucket the admin fills and the course's members read
+  {
+    const putM = (uid, name, bucket = "course-media") => put(uid, name, bucket);
+    const seeM = async (uid, name) => (await rows(uid, `select name from storage.objects where bucket_id='course-media' and name=$1`, [name])).length;
+    ok((await q(`select public, file_size_limit, allowed_mime_types from storage.buckets where id='course-media'`)).rows.some((r) => r.public === false && Number(r.file_size_limit) === 2097152 && r.allowed_mime_types.join() === "image/webp,image/jpeg,image/png"), "the course picture bucket is private, 2 MB and pictures only");
+    const FA1 = "astr207/figure0001.webp", FE1 = "erth209/figure0002.png";
+    ok(!!(await putM(ADMIN, FA1)) && !!(await putM(ADMIN, FE1)), "the platform admin adds pictures to a course folder");
+    ok(await seeM(S1, FA1) === 1 && await seeM(S1, FE1) === 0, "a student of a course reads its pictures and not another course's");
+    ok(await seeM(S2, FE1) === 1 && await seeM(S2, FA1) === 0, "...the student of the other school reads the course they have");
+    ok(await seeM(T2, FE1) === 1 && await seeM(T2, FA1) === 0 && await seeM(M2, FE1) === 1 && await seeM(M2, FA1) === 0, "an instructor and a manager read the courses they teach or are licensed for, no more");
+    ok(await seeM(M1, FA1) === 1 && await seeM(M1, FE1) === 1 && await seeM(ADMIN, FA1) === 1, "...a manager of a school licensed for both reads both, and so does the admin");
+    ok(await seeM(X, FA1) === 0 && await seeM(X, FE1) === 0 && (await asAnon((x) => x(`select name from storage.objects where bucket_id='course-media'`)).catch(() => ({ rows: [] }))).rows.length === 0, "a person with no class, and a visitor, read nothing");
+    ok((await rows(S1, `select name from storage.objects where bucket_id='course-media'`)).map((r) => r.name).join() === FA1, "a student listing the bucket sees only their course's pictures");
+    const wrote = [];
+    for (const [name, uid] of [["a student", S1], ["an instructor of the course", T1], ["a manager of the school", M1], ["an instructor of another course", T2], ["another school's manager", M2], ["a stranger", X]]) if (!(await fails(() => putM(uid, "astr207/hacked0001.webp")))) wrote.push(name);
+    ok(wrote.length === 0, "only the platform admin can add pictures: " + wrote.join(", "));
+    const badNames = ["astr207/x.svg", "astr207/short.webp", "astr207/nested/abcdefgh.webp", "figure0001.webp", "bad folder/abcdefgh.webp", "astr207/abcdefgh.WEBP", "astr207/abcdefgh.webp.exe", "c".repeat(65) + "/abcdefgh.webp", "astr207/", "astr207/../abcdefgh.webp", "astr207/" + "a".repeat(65) + ".webp"];
+    const accepted = [];
+    for (const n of badNames) if (!(await fails(() => putM(ADMIN, n)))) accepted.push(n);
+    if (!(await fails(() => putM(ADMIN, "astr207/abcdefgh.webp", "class-media")))) accepted.push("class-media bucket");
+    if (!(await fails(() => putM(ADMIN, "astr207/abcdefgh.webp", "somewhere-else")))) accepted.push("other bucket");
+    ok(accepted.length === 0, "even the admin must use <course>/<name>.<webp|jpg|png> with a plain name: " + accepted.join(" | "));
+    ok(!!(await putM(ADMIN, "astr207/ABCD_efgh-12.jpg")) && !!(await putM(ADMIN, "a".repeat(64) + "/" + "b".repeat(64) + ".png")), "...while ordinary names are fine");
+    ok(await denied(S1, `update storage.objects set name = 'astr207/renamed001.webp' where bucket_id = 'course-media'`) && await denied(T1, `update storage.objects set name = 'astr207/renamed001.webp' where bucket_id = 'course-media'`) && await denied(M1, `update storage.objects set name = 'astr207/renamed001.webp' where bucket_id = 'course-media'`), "nobody but the admin can replace or rename a picture");
+    ok((await as(ADMIN, (x) => x(`update storage.objects set name = 'astr207/figure0003.webp' where bucket_id = 'course-media' and name = $1`, [FA1]), true)).rowCount === 1 && await seeM(S1, "astr207/figure0003.webp") === 1, "the admin can");
+    ok(await denied(ADMIN, `update storage.objects set name = 'astr207/x.svg' where bucket_id = 'course-media' and name = 'astr207/figure0003.webp'`), "...but only to a name that is allowed");
+    ok(await denied(S1, `delete from storage.objects where bucket_id = 'course-media'`) && await denied(T1, `delete from storage.objects where bucket_id = 'course-media'`) && await denied(M1, `delete from storage.objects where bucket_id = 'course-media'`) && await denied(X, `delete from storage.objects where bucket_id = 'course-media'`), "nobody but the admin can delete a picture");
+    ok((await as(ADMIN, (x) => x(`delete from storage.objects where bucket_id = 'course-media'`), true)).rowCount >= 4 && await seeM(ADMIN, "astr207/figure0003.webp") === 0, "the admin can");
+  }
+
+  // -- the patch can be run again once there is data, and nothing it protects opens up
+  {
+    const nb = notices.length;
+    try { await q(read("patch8.sql")); ok(true, "patch8.sql runs again with data in place"); } catch (e) { ok(false, "patch8.sql rerun with data: " + e.message); }
+    const cron = (await q(`select exists (select 1 from pg_available_extensions where name = 'pg_cron') v`)).rows[0].v;
+    ok(cron || notices.slice(nb).some((m) => m.includes("pg_cron") && m.includes("cron.schedule") && m.includes("purge_deleted_accounts")), "...and where pg_cron is not available it succeeds anyway and says how to schedule the daily job by hand");
+    ok((await priv("authenticated", "public.purge_deleted_accounts()")) === false && (await priv("anon", "public.purge_deleted_accounts()")) === false && (await Promise.all(callable.map((s) => priv("anon", s)))).every((v) => v === false), "...and the privileges are the same afterwards");
+    ok((await q(`select public, file_size_limit from storage.buckets where id='course-media'`)).rows.every((r) => r.public === false && Number(r.file_size_limit) === 2097152) && (await q(`select count(*)::int n from pg_policies where schemaname='storage' and policyname like 'course media %'`)).rows[0].n === 4, "...the course picture bucket is still private with its 4 rules");
+    ok((await nAcc(TU)) >= 2 && (await mk("after-rerun@alpha.ca", "Aft")) && (await q(`select count(*)::int n from pg_trigger where tgname in ('on_auth_user_email_changed', 'scrub_support_on_user_delete', 'on_auth_user_created')`)).rows[0].n === 3, "...nothing was lost, and sign-up and the triggers still work");
+  }
+}
 
 // ---- the existing codes still work through the older entry points ----
 ok((await keep(X, (x) => x(`select public.redeem_class_by_code('madi@77') r`))).rows[0].r === "erth209", "the original ERTH 209 code still joins ERTH 209");
