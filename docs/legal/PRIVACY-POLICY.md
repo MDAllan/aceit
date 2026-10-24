@@ -10,14 +10,15 @@ When ACEIT is used by a school, the **school decides** why and how its students'
 
 - Your email address and the display name you choose.
 - Which classes you joined, and the school each class belongs to.
-- Your study activity: topics read, flashcards reviewed, quiz answers, games played.
+- Your study activity: topics read, flashcards reviewed, quiz answers, games played, and recent practice-exam scores.
 - A summary of that activity: percent complete, mastery, and the last time you opened ACEIT.
+- A profile photo, if you choose to add one.
 - Messages you choose to send as feedback.
 - Technical error reports: an error message and the page it happened on.
 - Content written by instructors for their class (notes, flashcards, questions, announcements, lectures and pictures). This is the instructors' own work and is shown to the members of that class.
 - A record of actions taken by instructors, school managers and administrators (who did what, and when).
 
-We do not collect your date of birth, home address, phone number, photos of you, location, or grades from your school.
+We do not collect your date of birth, home address, phone number, location, or grades from your school.
 
 ## 3. Why we use it
 
@@ -26,7 +27,8 @@ To let you log in, show the right course, remember where you stopped, schedule r
 ## 4. Who can see it
 
 - You can see all of it.
-- Instructors of a class you joined, and the managers of that class's school, can see your name, email, progress and summary for that class.
+- Instructors of a class you joined, and the managers of that class's school, can see your name, email, profile photo, progress, weak topics, flashcards marked as still being learned, recent practice-exam scores, and summary for that class.
+- Platform administrators can see the same class information across schools to administer ACEIT.
 - People in other schools, and other students, cannot.
 - The people who operate ACEIT can see account information when needed to run and protect the service.
 - The services in `SUBPROCESSORS.md` store and process it on our behalf.

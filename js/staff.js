@@ -21,7 +21,7 @@ const managesSchool = (sid) => S.isAdmin() || managedSchools().some((m) => m.sch
 
 function tabsFor() {
   const t = [];
-  if (S.isAdmin()) t.push({ k: "schools", label: "Schools", icon: "school" }, { k: "admins", label: "Admins", icon: "shieldcheck" }, { k: "people", label: "People", icon: "users" }, { k: "content", label: "Content", icon: "layers" }, { k: "settings", label: "Settings", icon: "gear" }, { k: "activity", label: "Activity", icon: "history" });
+  if (S.isAdmin()) t.push({ k: "schools", label: "Schools", icon: "school" }, { k: "teaching", label: "My classes", icon: "users" }, { k: "admins", label: "Admins", icon: "shieldcheck" }, { k: "people", label: "People", icon: "users" }, { k: "content", label: "Content", icon: "layers" }, { k: "settings", label: "Settings", icon: "gear" }, { k: "activity", label: "Activity", icon: "history" });
   else {
     const ms = managedSchools();
     ms.forEach((m) => t.push({ k: "school/" + m.school_id, label: ms.length > 1 ? m.school_name : "My school", icon: "school" }));
@@ -35,7 +35,7 @@ export const workspaceLabel = () => (S.isAdmin() ? "Platform" : S.isManager() ? 
 // X = { LECS, SUBJECTS, EXAMS, route, ensureCourse } from main.js
 export async function viewWorkspace(v, X, parts) {
   const tabs = tabsFor();
-  if (!tabs.length) return v.append(h(".hero", h("h1", "Workspace")), empty("You are not set up as an instructor, school manager or admin yet. Ask your school to add your email address."));
+  if (!tabs.length) return v.append(h(".hero", h("h1", "Workspace")), empty("You are not set up as an instructor, school manager or admin yet. Ask your school to add your email address. If you expected platform-admin access, ask another current platform admin to restore your account in Platform → Admins."));
   v.classList.add("ws");
   const rest = (parts[1] ? parts.slice(1) : tabs[0].k.split("/")), page = rest[0];
   const c = { v, X, tabs, active: null, courseName: (id) => X.SUBJECTS.find((s) => s.id === id)?.name || id, courseColor: (id) => X.SUBJECTS.find((s) => s.id === id)?.color || "var(--brand)" };
@@ -306,14 +306,34 @@ function rosterCard(c, cls, rows, col) {
 function personRow(c, cls, r, col) {
   const d = h("details.person");
   const body = h("div.pbody");
-  d.append(h("summary", h("span.av", initials(nameOf(r))), h(".meta", h("b", nameOf(r)), h(".src", r.email)), meter(r.pct, col),
+  const avatar = h("span.av", initials(nameOf(r)));
+  d.append(h("summary", avatar, h(".meta", h("b", nameOf(r)), h(".src", r.email)), meter(r.pct, col),
     h("span.when", ago(r.last_active), r.blocked ? " · blocked" : "", quiet(r.last_active) ? " · quiet" : "")), body);
   let loaded = false;
   d.addEventListener("toggle", async () => {
     if (!d.open || loaded) return; loaded = true; body.append(h(".src", { style: "margin-top:8px" }, "Loading..."));
-    const prog = await A.studentProgress(r.user_id), ls = c.X.LECS.filter((l) => l.subject === cls.course_id);
+    const result = await A.studentProgress(r.user_id), prog = result.data, ls = c.X.LECS.filter((l) => l.subject === cls.course_id);
+    const photo = prog?.prefs?.photo;
+    if (typeof photo === "string" && /^data:image\/(?:jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(photo)) {
+      avatar.replaceWith(h("span.av", h("img.avph", { src: photo, alt: "" })));
+    }
+    const questions = ls.flatMap((l) => (l.quiz || []).map((q) => ({ lecture: l, question: q, result: prog?.quiz?.[q.id] })))
+      .filter((x) => x.result && (x.result.last === false || ((x.result.attempts || 0) >= 2 && x.result.correct / x.result.attempts < 0.6)))
+      .sort((a, b) => (a.result.correct / a.result.attempts) - (b.result.correct / b.result.attempts));
+    const learning = ls.flatMap((l) => (l.cards || []).filter((card) => prog?.cards?.[card.id] === "learning").map((card) => ({ lecture: l, card })));
+    const exams = (prog?.stats?.practiceExams || []).slice().sort((a, b) => (b.at || "").localeCompare(a.at || ""));
     body.replaceChildren(
-      !prog ? h(".src", { style: "margin-top:8px" }, "No progress saved yet.") : h("div", { style: "margin-top:6px" }, ls.map((l) => { const st = S.statsFrom(prog, l); return h(".lrow", h("b", l.title), meter(st.pct, l.color), h(".src", `Read ${st.read}/${st.secs} · Cards ${st.known}/${st.cards} · Quiz ${st.right}/${st.qs} right`)); })),
+      result.error ? warn(h("b", "Could not load this student's progress."), h(".src", result.error)) : "",
+      !result.error && !prog ? h(".src", { style: "margin-top:8px" }, "No progress saved yet.") : "",
+      prog ? h("div", { style: "margin-top:8px" },
+        h("h3", "Lecture progress"),
+        ls.map((l) => { const st = S.statsFrom(prog, l); return h(".lrow", h("b", l.title), meter(st.pct, l.color), h(".src", `Read ${st.read}/${st.secs} · Cards ${st.known}/${st.cards} · Quiz ${st.right}/${st.qs} right`)); }),
+        h("h3", { style: "margin-top:14px" }, "Weak topics"),
+        questions.length ? h(".stack", questions.slice(0, 12).map(({ lecture, question, result: q }) => h(".fb", h("b", lecture.title + ": "), question.q.split("\n")[0], h(".src", `${q.correct || 0}/${q.attempts || 0} correct${q.last === false ? " · missed last time" : ""}`)))) : h(".src", "No weak topics flagged yet."),
+        h("h3", { style: "margin-top:14px" }, "Flashcards still learning"),
+        learning.length ? h(".stack", learning.map(({ lecture, card }) => h(".fb", h("b", lecture.title + ": "), card.front))) : h(".src", "No flashcards currently marked as learning."),
+        h("h3", { style: "margin-top:14px" }, "Practice exam marks"),
+        exams.length ? h(".stack", exams.slice(0, 10).map((exam) => h(".fb", h("b", exam.title || "Practice exam"), h("span", ` · ${exam.score}/${exam.total} (${exam.total ? Math.round(exam.score / exam.total * 100) : 0}%)`), h(".src", new Date(exam.at).toLocaleString())))) : h(".src", "No practice-exam marks have been recorded yet.")) : "",
       h(".kv", h("span", "Joined ", h("b", r.joined_at ? new Date(r.joined_at).toLocaleDateString() : "-")), h("span", "Quiz accuracy ", h("b", r.quiz_attempts ? Math.round((r.quiz_correct / r.quiz_attempts) * 100) + "%" : "-")), h("span", "Mastery ", h("b", r.mastery + "%"))),
       h(".row", { style: "margin-top:10px" },
         h("button.btn.alt.sm", { onclick: async () => { if (!confirm(`Remove ${nameOf(r)} from ${cls.name}? Their account stays, they just lose access to this class.`)) return; const x = await A.removeStudent(r.user_id, cls.class_id); if (x.error) toast(x.error.message); else { toast("Removed from class"); c.X.route(); } } }, ic("x", 16), "Remove from class"),

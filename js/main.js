@@ -691,16 +691,16 @@ function quizMenu(b, l) {
       h("button.btn", { onclick: () => runQuiz(b, shuffle(qs.slice()), l.title, l.color, back) }, "Start quiz"),
       h("button.btn.alt", { disabled: !wrong.length, onclick: () => runQuiz(b, wrong.slice(), "Review mistakes", l.color, back) }, `Review mistakes (${wrong.length})`))));
 }
-export function runQuiz(b, list, title, color, back, opts = {}) {
+export function runQuiz(b, list, title, color, back, examOpts = {}) {
   let i = 0, score = 0, combo = 0, reported = false; const miss = [];
   const draw = () => {
     b.replaceChildren();
     if (i >= list.length) {
       const pct = score / list.length;
       if (!reported) { // once per run: best score, and a practice test finished before an exam counts as exam preparation
-        reported = true; S.quizResult(score, list.length);
-        const cfg = opts.exam && opts.courseId ? S.settings[opts.courseId] : null;
-        if (cfg?.exam_date && S.localDay() <= cfg.exam_date && S.mark("examDays", opts.courseId + ":" + S.localDay())) S.bump("examPrepped");
+        reported = true; S.quizResult(score, list.length, examOpts.exam ? { title, courseId: examOpts.courseId } : null);
+        const cfg = examOpts.exam && examOpts.courseId ? S.settings[examOpts.courseId] : null;
+        if (cfg?.exam_date && S.localDay() <= cfg.exam_date && S.mark("examDays", examOpts.courseId + ":" + S.localDay())) S.bump("examPrepped");
       }
       if (pct >= 0.8) confetti(pct === 1 ? 140 : 80);
       b.append(h(".card.pop", { style: "text-align:center;--c:" + color }, h("h2", "" + title + " complete"), h(".score", `${score}/${list.length}`),

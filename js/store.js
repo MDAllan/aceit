@@ -216,7 +216,13 @@ function mergeStats(a = {}, b = {}) {
   const out = { ...b };
   for (const [k, v] of Object.entries(a)) {
     const w = b[k];
-    out[k] = typeof v === "number" ? Math.max(v, typeof w === "number" ? w : 0) : v && typeof v === "object" ? mergeStats(v, w && typeof w === "object" ? w : {}) : v;
+    if (typeof v === "number") out[k] = Math.max(v, typeof w === "number" ? w : 0);
+    else if (Array.isArray(v)) {
+      const items = [...(Array.isArray(w) ? w : []), ...v], unique = new Map(items.map((item) => [item?.id ?? JSON.stringify(item), item]));
+      out[k] = k === "practiceExams"
+        ? [...unique.values()].sort((x, y) => (y.at || "").localeCompare(x.at || "")).slice(0, 30)
+        : [...unique.values()];
+    } else out[k] = v && typeof v === "object" ? mergeStats(v, w && typeof w === "object" ? w : {}) : v;
   }
   return out;
 }
@@ -324,7 +330,13 @@ export function gameResult(id, game, score, total) {
   save(); return { beat };
 }
 // one finished quiz: best percentage (quizzes of at least 5 questions) and every correct answer counts toward "answers right"
-export function quizResult(score, total) {
+export function quizResult(score, total, practiceExam = null) {
+  if (practiceExam && total > 0 && Number.isFinite(score) && Number.isFinite(total)) {
+    const exams = data.stats.practiceExams || [];
+    exams.unshift({ id: `${Date.now()}-${Math.random().toString(36).slice(2)}`, title: practiceExam.title || "Practice exam", courseId: practiceExam.courseId || "", score, total, at: new Date().toISOString() });
+    data.stats.practiceExams = exams.slice(0, 30);
+    save();
+  }
   if (total >= 5) setMax("quizBest", Math.round((score / total) * 100));
 }
 

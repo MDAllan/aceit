@@ -34,9 +34,14 @@ export const schoolPeople = (sid) => rows("staff_people", { sid });
 export const pendingInvites = (sid) => rows("list_invites", { sid: sid || null });
 export const admins = () => rows("list_admins");
 export async function studentProgress(userId) {
-  if (S.DEMO) return D.progressOf(userId);
-  const { data } = await S.sb.from("progress").select("data").eq("user_id", userId).maybeSingle();
-  return data?.data || null;
+  if (S.DEMO) return { data: D.progressOf(userId), error: null };
+  if (!S.sb) return { data: null, error: "Your database connection is not available. Sign in again and retry." };
+  try {
+    const { data, error } = await S.sb.from("progress").select("data").eq("user_id", userId).maybeSingle();
+    return error ? { data: null, error: friendly(error) } : { data: data?.data || null, error: null };
+  } catch (error) {
+    return { data: null, error: friendly(error) };
+  }
 }
 export async function findAccounts(q) {
   q = q.trim().toLowerCase().replace(/[%,()]/g, ""); if (q.length < 2) return [];
