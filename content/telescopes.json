@@ -1,0 +1,385 @@
+{
+ "id": "telescopes",
+ "title": "Optics and Telescopes",
+ "chapter": "Ch 6",
+ "icon": "🔭",
+ "color": "#7c3aed",
+ "slideFile": "Ch6.1.pdf; Ch6.2_pt1.pdf; Ch6.2_pt2.pdf; Ch6.3.pdf; Ch6.4.pdf",
+ "intro": "Telescopes gather and focus light so astronomers can make images, measure spectra and track changes in the sky. Learn how optics form images, what makes a telescope powerful, how the atmosphere affects observations, and how telescopes observe different wavelengths.",
+ "sections": [
+  {
+   "id": "image-formation",
+   "title": "How eyes and cameras form images",
+   "slides": "6.1, slides 1-14",
+   "steps": [
+    {
+     "title": "Light must be brought into focus",
+     "bullets": [
+      "An image forms when light from each point on an object is directed to a corresponding point on an image plane.",
+      "A pinhole can make a recognizable image by limiting which rays enter, but the image is dim and appears upside down and reversed.",
+      "A convex lens refracts light to form a brighter focused image. The retina in an eye and the detector in a camera occupy the image plane."
+     ]
+    },
+    {
+     "title": "Lenses and detectors",
+     "bullets": [
+      "**Refraction** is the bending of light as it passes between materials. Lenses use refraction to focus light.",
+      "The image's location and size depend on the lens and the object's distance. A wider lens admits more light but produces a shallower depth of field.",
+      "Digital camera and telescope detectors use charge-coupled device (CCD) pixels, which convert incoming photons into electrical signals."
+     ]
+    },
+    {
+     "title": "Why telescopes use mirrors",
+     "bullets": [
+      "A mirror focuses light by reflection rather than refraction.",
+      "Lenses can be heavy and are supported at their edges; large mirrors can be supported from behind and assembled from segments.",
+      "Refraction varies with wavelength, which can blur colours in a lens. Mirrors avoid this chromatic aberration."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A telescope is useful only if light from the same point in the sky reaches the same detector region. Focusing turns scattered incoming light into a measurable image."
+    },
+    {
+     "type": "trick",
+     "text": "Lens: refracts light. Mirror: reflects light. Both can focus an image."
+    },
+    {
+     "type": "trap",
+     "text": "The focal point is not always where the final image is recorded. The detector or retina sits at the image plane."
+    }
+   ],
+   "sourceNotes": [
+    "ASTR 207 instructor materials, Ch6.1 slides 1-14.",
+    "Explanations are paraphrased and newly written from the instructor's material."
+   ],
+   "images": []
+  },
+  {
+   "id": "telescope-power",
+   "title": "Light collection and sharpness",
+   "slides": "6.2 part 1, slides 1-10",
+   "steps": [
+    {
+     "title": "Aperture gathers light",
+     "bullets": [
+      "The primary mirror or lens is the telescope's **aperture**. Its collecting area increases with the square of its diameter.",
+      "A larger aperture gathers more photons each second, allowing dimmer objects to be recorded or images to be captured in less time.",
+      "Doubling a telescope's diameter gives four times its light-collecting area."
+     ]
+    },
+    {
+     "title": "Angular resolution separates detail",
+     "bullets": [
+      "**Angular resolution** describes how close two points can appear and still be distinguished.",
+      "A smaller minimum angular separation means finer detail can be resolved.",
+      "Diffraction sets a limit: a larger aperture and shorter observed wavelength improve the theoretical resolution."
+     ]
+    },
+    {
+     "title": "Refractors and reflectors",
+     "bullets": [
+      "A refracting telescope focuses light with lenses; a reflecting telescope focuses it with mirrors.",
+      "Large lenses are difficult to support without distortion, whereas a mirror can be supported from behind.",
+      "Modern research telescopes therefore mostly use reflecting designs, often with large or segmented mirrors."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Light collection and resolution answer different questions: how much light is gathered, and how finely separated details can be seen."
+    },
+    {
+     "type": "trick",
+     "text": "Bigger aperture means more light and usually sharper detail; it does not mean magnification alone."
+    },
+    {
+     "type": "trap",
+     "text": "Do not confuse angular resolution with image brightness. Aperture affects both light collection and diffraction-limited detail, but they describe different properties."
+    }
+   ],
+   "sourceNotes": [
+    "ASTR 207 instructor materials, Ch6.2 part 1 slides 1-10.",
+    "The square-area example is a direct implication of the slide's area relationship; explanations are newly written."
+   ],
+   "images": []
+  },
+  {
+   "id": "observing",
+   "title": "What astronomers measure",
+   "slides": "6.2 part 2, slides 1-13",
+   "steps": [
+    {
+     "title": "Images and photometry",
+     "bullets": [
+      "**Photometry** measures light received from an object. Images can reveal brightness, colour, shape, size and changes in position.",
+      "Detectors often record one wavelength range at a time. Images taken through different filters can be combined to show colour information.",
+      "An image may use assigned colours to represent wavelengths humans cannot see directly."
+     ]
+    },
+    {
+     "title": "Spectroscopy separates wavelengths",
+     "bullets": [
+      "A spectrometer separates light by wavelength, often with a diffraction grating, and records the intensity at each wavelength.",
+      "Patterns in a spectrum can reveal an object's chemical composition, temperature and motion.",
+      "Light passing through Earth's atmosphere can carry absorption features from both the source and the atmosphere."
+     ]
+    },
+    {
+     "title": "Time monitoring and light curves",
+     "bullets": [
+      "A **light curve** plots an object's measured brightness over time.",
+      "Repeated observations can reveal changes such as variable stars, an exoplanet passing in front of its star, or a flare.",
+      "The observing schedule depends on how quickly the target is expected to change."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Images show where light comes from, spectra show how its intensity varies with wavelength, and light curves show how brightness changes with time."
+    },
+    {
+     "type": "trick",
+     "text": "Image: where and how bright. Spectrum: wavelength clues. Light curve: brightness over time."
+    },
+    {
+     "type": "trap",
+     "text": "A colourful astronomical image does not necessarily show visible colours; colour may be assigned to non-visible wavelength data."
+    }
+   ],
+   "sourceNotes": [
+    "ASTR 207 instructor materials, Ch6.2 part 2 slides 1-13.",
+    "Explanations are paraphrased and newly written from the instructor's material."
+   ],
+   "images": []
+  },
+  {
+   "id": "atmosphere",
+   "title": "The atmosphere and observing sites",
+   "slides": "6.3, slides 1-10",
+   "steps": [
+    {
+     "title": "Choose a good ground site",
+     "bullets": [
+      "Ground observatories work best where the air is calm, the sky is dark, the site is high and the air is dry.",
+      "Artificial light scatters in the atmosphere and brightens the sky, making faint objects harder to detect.",
+      "Turbulent air changes the direction of incoming light, making stars appear to twinkle and images less sharp."
+     ]
+    },
+    {
+     "title": "Adaptive optics and space telescopes",
+     "bullets": [
+      "**Adaptive optics** changes a telescope mirror rapidly to correct some image distortion caused by atmospheric turbulence.",
+      "A space telescope avoids atmospheric distortion and light pollution and can observe wavelengths blocked by the atmosphere.",
+      "Space missions cost more and are harder to repair; telescope size is also limited by what can be launched."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A high, dry, dark and calm site reduces several sources of lost or distorted light before it reaches the detector."
+    },
+    {
+     "type": "trick",
+     "text": "Good ground site: calm, dark, high and dry."
+    },
+    {
+     "type": "trap",
+     "text": "Adaptive optics reduces some atmospheric blur; it does not remove clouds, light pollution or every observing limitation."
+    }
+   ],
+   "sourceNotes": [
+    "ASTR 207 instructor materials, Ch6.3 slides 1-10.",
+    "Explanations are paraphrased and newly written from the instructor's material."
+   ],
+   "images": []
+  },
+  {
+   "id": "wavelengths",
+   "title": "Observing across the spectrum",
+   "slides": "6.4, slides 1-10",
+   "steps": [
+    {
+     "title": "The atmosphere is a filter",
+     "bullets": [
+      "Earth's atmosphere lets visible light and radio waves through relatively well, along with some infrared wavelengths.",
+      "Much of the infrared, ultraviolet, X-ray and gamma-ray light from space is blocked or absorbed before reaching the ground.",
+      "Space-based instruments are needed to observe wavelengths that do not pass through the atmosphere effectively."
+     ]
+    },
+    {
+     "title": "Different wavelengths, different instruments",
+     "bullets": [
+      "Radio telescopes use large reflecting dishes or mesh because radio wavelengths are much longer than visible light.",
+      "X-ray telescopes use nested mirrors at shallow angles to redirect X-rays, which otherwise tend to pass through ordinary mirrors.",
+      "Gamma rays are especially difficult to focus, so their detection uses specialized approaches."
+     ]
+    },
+    {
+     "title": "Interferometry combines telescopes",
+     "bullets": [
+      "**Interferometry** links signals from two or more telescopes so they work together.",
+      "The combined observations can achieve the angular resolution of a much larger telescope.",
+      "Interferometry improves resolving detail; it does not simply make each individual telescope's mirror larger."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Different parts of the spectrum interact differently with the atmosphere and optical materials, so astronomers match the telescope design to the wavelength."
+    },
+    {
+     "type": "trick",
+     "text": "Ask two things: can this wavelength reach the ground, and what detector or reflector can handle it?"
+    },
+    {
+     "type": "trap",
+     "text": "A space telescope is not automatically better for every observation; ground-based instruments remain useful for wavelengths that reach the surface."
+    }
+   ],
+   "sourceNotes": [
+    "ASTR 207 instructor materials, Ch6.4 slides 1-10.",
+    "Explanations are paraphrased and newly written from the instructor's material."
+   ],
+   "images": []
+  }
+ ],
+ "cards": [
+  {
+   "id": "tel-c1",
+   "front": "Aperture",
+   "back": "The primary lens or mirror that gathers light for a telescope.",
+   "short": "The telescope's light-gathering opening.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c2",
+   "front": "Angular resolution",
+   "back": "The smallest apparent angular separation at which two sources can be distinguished.",
+   "short": "Smaller minimum angle means finer detail.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c3",
+   "front": "Photometry",
+   "back": "Measurement of the light received from an astronomical object.",
+   "short": "Measures brightness and light through filters.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c4",
+   "front": "Spectroscopy",
+   "back": "Separating light by wavelength and measuring its intensity to learn about an object.",
+   "short": "Wavelength patterns reveal physical clues.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c5",
+   "front": "Light curve",
+   "back": "A record or plot of an object's brightness measured over time.",
+   "short": "Brightness versus time.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c6",
+   "front": "Adaptive optics",
+   "back": "Rapidly adjusting a telescope mirror to correct some atmospheric distortion.",
+   "short": "Corrects some blur caused by turbulent air.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c7",
+   "front": "Interferometry",
+   "back": "Combining observations from multiple telescopes to achieve the resolving power of a larger instrument.",
+   "short": "Linked telescopes resolve finer detail.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c8",
+   "front": "CCD",
+   "back": "A detector whose pixels convert incoming photons into electrical signals.",
+   "short": "A pixel sensor for incoming light.",
+   "gloss": false
+  }
+ ],
+ "quiz": [
+  {
+   "id": "tel-1",
+   "q": "What is the main purpose of a telescope's aperture?",
+   "options": ["Gather light", "Measure air pressure", "Produce gamma rays", "Change a star's orbit"],
+   "answer": 0,
+   "why": "The primary mirror or lens collects incoming light."
+  },
+  {
+   "id": "tel-2",
+   "q": "Which change increases a telescope's light-collecting area most directly?",
+   "options": ["Increase the aperture diameter", "Add a longer exposure label", "Move the detector farther from the telescope", "Use a brighter screen"],
+   "answer": 0,
+   "why": "Collecting area is proportional to the square of the aperture diameter."
+  },
+  {
+   "id": "tel-3",
+   "q": "What does a smaller minimum angular separation indicate?",
+   "options": ["Finer angular resolution", "Lower light collection", "More atmospheric absorption", "A longer light curve"],
+   "answer": 0,
+   "why": "A telescope with a smaller minimum separation can distinguish closer sources."
+  },
+  {
+   "id": "tel-4",
+   "q": "Which technique records how an object's brightness changes over time?",
+   "options": ["Time monitoring", "Refraction", "Interferometry", "Aperture masking"],
+   "answer": 0,
+   "why": "Repeated brightness measurements form a light curve."
+  },
+  {
+   "id": "tel-5",
+   "q": "What can a spectrum help astronomers infer?",
+   "options": ["An object's composition and motion", "The exact shape of Earth's orbit only", "The mass of a telescope mount only", "The colour of the detector casing"],
+   "answer": 0,
+   "why": "Wavelength patterns can reveal composition, temperature and motion."
+  },
+  {
+   "id": "tel-6",
+   "q": "Why are observatories often placed at high, dry and remote sites?",
+   "options": ["To reduce atmosphere, clouds and light pollution", "To increase Earth's gravity", "To make stars brighter", "To remove the need for detectors"],
+   "answer": 0,
+   "why": "These site conditions reduce atmospheric interference and sky brightness."
+  },
+  {
+   "id": "tel-7",
+   "q": "What does adaptive optics correct?",
+   "options": ["Some image distortion from turbulent air", "All cloud cover", "Light pollution from nearby cities", "The orbit of an observed planet"],
+   "answer": 0,
+   "why": "Adaptive optics adjusts a mirror to counter some atmospheric distortion."
+  },
+  {
+   "id": "tel-8",
+   "q": "Why do many infrared, ultraviolet and X-ray observations use space telescopes?",
+   "options": ["Earth's atmosphere absorbs much of this light", "Those wavelengths exist only in space", "Ground telescopes cannot use mirrors", "These wavelengths have no energy"],
+   "answer": 0,
+   "why": "The atmosphere blocks or absorbs much of these wavelengths."
+  },
+  {
+   "id": "tel-9",
+   "q": "What is the main benefit of interferometry?",
+   "options": ["Improved angular resolution", "A wider range of colours from one pixel", "No need for multiple observations", "A larger atmosphere window"],
+   "answer": 0,
+   "why": "Linked telescopes can resolve detail like a much larger instrument."
+  }
+ ],
+ "sourceNotes": [
+  "Primary source: ASTR 207 instructor materials, Ch6.1, Ch6.2 part 1, Ch6.2 part 2, Ch6.3 and Ch6.4 PDFs in Downloads.",
+  "Course-focused explanations are paraphrased and newly written from the instructor materials."
+ ]
+}

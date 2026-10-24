@@ -1,0 +1,432 @@
+{
+ "id": "massmovement",
+ "title": "Mass Movements",
+ "chapter": "Ch 13",
+ "icon": "⛰️",
+ "color": "#8c5e3c",
+ "slideFile": "2026 October 21 & 23 Mass Movements v1.pdf",
+ "intro": "Mass movements are gravity-driven downslope movements of rock and loose material. Learn how geologists describe and classify them, what weakens a slope, and how creep, slumps, flows and falls differ.",
+ "sections": [
+  {
+   "id": "overview",
+   "title": "What counts as a mass movement",
+   "slides": "3-5",
+   "steps": [
+    {
+     "title": "Gravity moves material downslope",
+     "bullets": [
+      "**Mass movement** (mass wasting) is the downslope movement of rock or loose surface material under gravity.",
+      "Geologists distinguish types rather than calling every event a landslide. A useful description identifies the material, its speed, how it moves, and how much water it contains.",
+      "Events range from extremely slow movement to sudden failures. Avalanches are outside the scope of this unit."
+     ]
+    },
+    {
+     "title": "Describe the movement, not just the hazard",
+     "bullets": [
+      "Material may move as a coherent block, as loose fragments, or as a water-rich mixture.",
+      "The movement style and speed help distinguish a landslide from a flow, creep or fall.",
+      "A single slope can experience different kinds of movement as its water content, strength or geometry changes."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A specific name communicates what moved and how. That makes it easier to compare events and recognize the conditions that could produce them."
+    },
+    {
+     "type": "trick",
+     "text": "For any event ask: what material, how fast, what movement style, and how wet?"
+    },
+    {
+     "type": "trap",
+     "text": "Mass movement is the broad category. A landslide is not a precise description of every kind of slope movement."
+    }
+   ],
+   "sourceNotes": [
+    "Instructor's ERTH 209 deck, Mass Movements, slides 3-5; the slide deck excludes avalanches.",
+    "OpenGeology, 10 Mass Wasting: https://opengeology.org/textbook/10-mass-wasting/ . Used as a supporting explanation; wording here is original."
+   ],
+   "images": []
+  },
+  {
+   "id": "stability",
+   "title": "Why slopes fail",
+   "slides": "6, 16-20",
+   "steps": [
+    {
+     "title": "Driving forces and resistance",
+     "bullets": [
+      "Gravity pulls slope material downhill. A steeper slope increases the part of gravity acting parallel to the slope.",
+      "Material strength resists movement. Cohesion and friction help hold grains and blocks in place.",
+      "Water can add weight and reduce resistance, while added structures can increase the load on a slope."
+     ]
+    },
+    {
+     "title": "Weak layers and changing slopes",
+     "bullets": [
+      "A saturated sand or clay layer, weak bedding, joints parallel to the surface, or metamorphic foliation can provide a surface along which material slips.",
+      "A weak layer that meets the hillside can allow a block to move downslope.",
+      "Weathering breaks down strong rock into weaker surface material. Roots can help hold soil together, so removing vegetation can make a slope less stable."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Failure begins when the downhill forces become greater than the slope's resistance. Water, steepening, added load and weakened material can shift that balance."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a tug-of-war: gravity pulls down the slope; material strength holds it back."
+    },
+    {
+     "type": "trap",
+     "text": "Water does not affect every slope in just one way: it can add weight, lubricate a weak surface, or change how clay behaves."
+    }
+   ],
+   "sourceNotes": [
+    "Instructor's ERTH 209 deck, Mass Movements, slides 6 and 16-20.",
+    "OpenGeology, 10.1-10.2, used to clarify slope forces and triggers; wording here is original."
+   ],
+   "images": []
+  },
+  {
+   "id": "creep-slumps",
+   "title": "Creep and slumps",
+   "slides": "7-9",
+   "steps": [
+    {
+     "title": "Creep is slow but visible",
+     "bullets": [
+      "**Creep** is the very slow downhill movement of loose surface material.",
+      "Repeated wetting and drying or freezing and thawing can nudge grains over time.",
+      "Look for tilted trees, poles, walls or foundations: these can reveal gradual movement."
+     ]
+    },
+    {
+     "title": "A slump moves as blocks",
+     "bullets": [
+      "A **slump** is a rotational landslide in which coherent blocks of loose material move along a curved, spoon-shaped failure surface.",
+      "The moving mass can break into smaller blocks as it descends.",
+      "Unlike creep, a slump is a distinct slope failure rather than slow grain-by-grain movement."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Creep can be hard to notice on a single day, but small seasonal movements accumulate. A slump leaves a clearer curved scar and displaced blocks."
+    },
+    {
+     "type": "trick",
+     "text": "Creep: slow grains. Slump: coherent blocks on a curved surface."
+    },
+    {
+     "type": "trap",
+     "text": "A slump's curved failure surface is different from the more planar surface often associated with a translational slide."
+    }
+   ],
+   "sourceNotes": [
+    "Instructor's ERTH 209 deck, Mass Movements, slides 7-9.",
+    "OpenGeology, 10.3, used as a supporting explanation; wording here is original."
+   ],
+   "images": []
+  },
+  {
+   "id": "flows",
+   "title": "Mudflows, debris flows and lahars",
+   "slides": "21-39",
+   "steps": [
+    {
+     "title": "Water-rich flows",
+     "bullets": [
+      "A **mudflow** is a fast-moving mixture dominated by water and fine sediment.",
+      "A **debris flow** carries a wider range of material, including gravel and large boulders, within a flowing mixture.",
+      "More water and a steeper route can help a flow move faster; less water and a gentler slope tend to slow it."
+     ]
+    },
+    {
+     "title": "Volcanic flows",
+     "bullets": [
+      "A **lahar** is a volcanic mud or debris flow. Ash and other volcanic sediment mix with water from rain or melted snow and ice.",
+      "A lahar can travel down river valleys, so areas far from a volcano's summit may still be exposed.",
+      "The material and water content distinguish a lahar from a lava flow."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water can turn loose sediment into a mobile mixture. Once moving, a flow can carry both fine particles and large rock fragments downhill."
+    },
+    {
+     "type": "trick",
+     "text": "Mudflow: mostly fine sediment. Debris flow: mixed sizes, including boulders. Lahar: volcanic debris mixed with water."
+    },
+    {
+     "type": "trap",
+     "text": "A lahar is not molten lava. It is a water-rich flow of volcanic debris."
+    }
+   ],
+   "sourceNotes": [
+    "Instructor's ERTH 209 deck, Mass Movements, slides 21-39.",
+    "OpenGeology, 10.3, used as a supporting explanation; wording here is original."
+   ],
+   "images": []
+  },
+  {
+   "id": "slides-falls",
+    "title": "Landslides and falls",
+   "slides": "40-48",
+   "steps": [
+    {
+     "title":      "Landslides move along a surface",
+     "bullets": [
+      "A **rock landslide** moves mainly solid rock; a **debris landslide** moves mostly loose surface material.",
+      "Landslides can move suddenly along a failure surface, so a large event may be extremely dangerous.",
+      "The material involved and the style of movement are both part of naming the event."
+     ]
+    },
+    {
+     "title": "Falls detach from steep slopes",
+     "bullets": [
+      "In a **rockfall**, rock detaches from a steep face and drops, bounces or rolls downslope.",
+      "Fragments may collect at the base of a cliff as talus.",
+      "A fall is different from a landslide: the material is not travelling as one coherent block along a continuous failure surface."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Naming the moving material helps explain what the deposit contains; naming the movement helps distinguish a falling block from a sliding one."
+    },
+    {
+     "type": "trick",
+     "text": "Landslide: moves along a surface. Fall: detaches from a steep face and drops or bounces."
+    },
+    {
+     "type": "trap",
+     "text": "A rock slide and a debris slide are distinguished by the material; a rockfall is distinguished by its falling motion."
+    }
+   ],
+   "sourceNotes": [
+    "Instructor's ERTH 209 deck, Mass Movements, slides 40-48.",
+    "OpenGeology, 10.3, used as a supporting explanation; wording here is original."
+   ],
+   "images": []
+  },
+  {
+   "id": "water-weak-layers",
+   "title": "Water and weak layers",
+   "slides": "10, 16-20, 49-56",
+   "steps": [
+    {
+     "title": "Water changes slope strength",
+     "bullets": [
+      "Water can load a slope, lubricate a weak layer, and change how clay particles interact.",
+      "Some clays swell when wet. In quick clay, a change in water and salt conditions can cause a once-firm sediment to lose strength.",
+      "Rainfall can trigger failure when a slope is already weakened or a slip surface becomes saturated."
+     ]
+    },
+    {
+     "title": "Recognize planes of weakness",
+     "bullets": [
+      "Potential weak surfaces include bedding, joints, faults and metamorphic foliation.",
+      "If a weak layer slopes toward and reaches an exposed hillside, it can provide a route for slope failure.",
+      "A strong-looking surface can conceal a weak layer below it, so the geometry underground matters."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A slope may remain in place until water or another trigger reduces its strength enough for gravity to move the material."
+    },
+    {
+     "type": "trick",
+     "text": "When evaluating water, ask: did it add weight, lubricate a surface, or change the clay?"
+    },
+    {
+     "type": "trap",
+     "text": "The presence of water alone does not identify a movement type. Describe the material and how it moves as well."
+    }
+   ],
+   "sourceNotes": [
+    "Instructor's ERTH 209 deck, Mass Movements, slides 10, 16-20 and 49-56.",
+    "OpenGeology, 10.1-10.3, used as a supporting explanation; wording here is original."
+   ],
+   "images": []
+  },
+  {
+   "id": "submarine",
+   "title": "Submarine landslides",
+   "slides": "57-68",
+   "steps": [
+    {
+     "title": "Movement can happen underwater",
+     "bullets": [
+      "Mass movement also occurs beneath the ocean, where sediment can fail and travel downslope along the seafloor.",
+      "A submarine landslide can disturb infrastructure on the seabed, including communication cables.",
+      "Sediment-rich underwater flows can continue moving after the initial slope failure."
+     ]
+    },
+    {
+     "title": "The same forces still matter",
+     "bullets": [
+      "Gravity remains the driving force, while slope geometry, sediment strength and pore-water conditions affect stability.",
+      "A change in pressure or loading can help trigger failure in underwater sediment.",
+      "The resulting movement can travel a long way from its starting point."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The ocean floor is not motionless: a sediment failure can move a large volume of material and affect equipment far from shore."
+    },
+    {
+     "type": "trick",
+     "text": "Underwater does not mean no gravity; seafloor sediment can still fail and flow downslope."
+    },
+    {
+     "type": "trap",
+     "text": "A submarine landslide is still a mass movement, even when the material moves below the water rather than on a dry hillside."
+    }
+   ],
+   "sourceNotes": [
+    "Instructor's ERTH 209 deck, Mass Movements, slides 57-68.",
+    "OpenGeology, 10 Mass Wasting, used as a supporting explanation; wording here is original."
+   ],
+   "images": []
+  }
+ ],
+ "cards": [
+  {
+   "id": "mm-c1",
+   "front": "Mass movement",
+   "back": "Gravity-driven downslope movement of rock or loose surface material.",
+   "short": "Material moves downhill under gravity.",
+   "gloss": false
+  },
+  {
+   "id": "mm-c2",
+   "front": "Creep",
+   "back": "Very slow downhill movement of loose material, often revealed by tilted trees, poles or walls.",
+   "short": "Slow movement; look for tilted features.",
+   "gloss": false
+  },
+  {
+   "id": "mm-c3",
+   "front": "Slump",
+   "back": "A rotational landslide in which coherent blocks move along a curved failure surface.",
+   "short": "Blocks move along a curved surface.",
+   "gloss": false
+  },
+  {
+   "id": "mm-c4",
+   "front": "Mudflow",
+   "back": "A water-rich flow dominated by fine sediment.",
+   "short": "Fine sediment mixed with water.",
+   "gloss": false
+  },
+  {
+   "id": "mm-c5",
+   "front": "Debris flow",
+   "back": "A flowing mixture that can carry sediment from fine particles to large boulders.",
+   "short": "A water-rich flow with mixed-size debris.",
+   "gloss": false
+  },
+  {
+   "id": "mm-c6",
+   "front": "Lahar",
+   "back": "A volcanic mud or debris flow made when water mixes with volcanic sediment.",
+   "short": "Volcanic debris mixed with water.",
+   "gloss": false
+  },
+  {
+   "id": "mm-c7",
+   "front": "Rockfall",
+   "back": "Rock detaches from a steep slope and drops, bounces or rolls downslope.",
+   "short": "Detached rock falls from a steep face.",
+   "gloss": false
+  },
+  {
+   "id": "mm-c8",
+   "front": "Plane of weakness",
+   "back": "A surface such as bedding, a joint or foliation that can guide slope failure.",
+   "short": "A weak surface that can guide slope failure.",
+   "gloss": false
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mm-1",
+   "q": "What is the main force that drives mass movement downslope?",
+   "options": ["Gravity", "Magnetism", "Sunlight", "Crystallization"],
+   "answer": 0,
+   "why": "Gravity pulls rock and loose material downhill."
+  },
+  {
+   "id": "mm-2",
+   "q": "Which observation is a common sign of creep?",
+   "options": ["A tilted tree or telephone pole", "A fresh lava flow", "A perfectly horizontal shoreline", "A new crystal in a geode"],
+   "answer": 0,
+   "why": "Slow seasonal movement can gradually tilt features rooted in the moving material."
+  },
+  {
+   "id": "mm-3",
+   "q": "What is distinctive about the failure surface of a slump?",
+   "options": ["It is curved", "It is always vertical", "It is made of lava", "It is absent"],
+   "answer": 0,
+   "why": "Slumps move as coherent blocks along a curved, spoon-shaped surface."
+  },
+  {
+   "id": "mm-4",
+   "q": "Which movement is a water-rich mixture dominated by fine sediment?",
+   "options": ["Mudflow", "Rockfall", "Creep", "Rock landslide"],
+   "answer": 0,
+   "why": "A mudflow is dominated by water and fine sediment."
+  },
+  {
+   "id": "mm-5",
+   "q": "What material makes a lahar volcanic?",
+   "options": ["Volcanic sediment mixed with water", "Only molten lava", "Dry sand with no volcanic material", "Ice moving over bedrock"],
+   "answer": 0,
+   "why": "A lahar is a water-rich flow of volcanic ash and other debris."
+  },
+  {
+   "id": "mm-6",
+   "q": "Which combination can reduce slope stability?",
+   "options": ["Steepening and water-saturated weak layers", "Less load and stronger cohesion", "A gentler slope and dry material", "Lower gravity and stronger rock"],
+   "answer": 0,
+   "why": "Steepness increases the downhill force, and water can add weight or weaken a slip surface."
+  },
+  {
+   "id": "mm-7",
+   "q": "Which is an example of a plane of weakness in rock?",
+   "options": ["A bedding plane", "A clear sky", "A tree canopy", "A river's surface"],
+   "answer": 0,
+   "why": "Bedding, joints, faults and foliation can all provide weak surfaces."
+  },
+  {
+   "id": "mm-8",
+   "q": "How does a rockfall differ from a landslide?",
+   "options": ["Rock detaches and drops or bounces from a steep face", "It always travels underwater", "It moves only as a slow creep", "It contains only fine mud"],
+   "answer": 0,
+   "why": "A fall is characterized by detached material dropping, bouncing or rolling."
+  }
+ ],
+ "sourceNotes": [
+  "Primary source: instructor's ERTH 209 deck, 2026 October 21 & 23 Mass Movements v1, slides 3-75 (avalanches excluded).",
+  "Supporting reference: OpenGeology, 10 Mass Wasting, https://opengeology.org/textbook/10-mass-wasting/ . Explanations are newly written."
+ ]
+}
