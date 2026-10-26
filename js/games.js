@@ -112,7 +112,7 @@ const G = {
     const rounds = pick(lec.cards, 10); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "blitz", score, rounds.length, b); if (score >= 8) confetti(); return b.append(endCard("\u26A1 Blitz finished!", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "blitz", score, rounds.length, b); if (score >= 8) confetti(); return b.append(endCard("Blitz finished!", score, rounds.length, again)); }
       const c = rounds[i], truth = Math.random() < 0.5;
       const other = pick(lec.cards.filter((x) => x.id !== c.id && txt(x) !== txt(c)), 1)[0];
       const shown = truth ? txt(c) : txt(other);
@@ -134,7 +134,7 @@ const G = {
     const rounds = pick(lec.cards, 8); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "guess", score, rounds.length, b); if (score >= 6) confetti(); return b.append(endCard("\u{1F4A1} Terms guessed!", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "guess", score, rounds.length, b); if (score >= 6) confetti(); return b.append(endCard("Terms guessed!", score, rounds.length, again)); }
       const c = rounds[i], opts = shuffle([c, ...pick(lec.cards.filter((x) => x.id !== c.id), 3)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcd"[k]), h("span", md(o.front))); bt.onclick = () => {
@@ -176,7 +176,7 @@ const G = {
     const secs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title)), rounds = pick(secs, Math.min(8, secs.length)); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds.length) { done(lec, "picture", score, rounds.length, b); if (score >= rounds.length - 2) confetti(); return b.append(endCard("\u{1F5BC}\uFE0F Picture quiz done!", score, rounds.length, again)); }
+      if (i >= rounds.length) { done(lec, "picture", score, rounds.length, b); if (score >= rounds.length - 2) confetti(); return b.append(endCard("Picture quiz done!", score, rounds.length, again)); }
       const s = rounds[i], im = pick(s.images, 1)[0], opts = shuffle([s, ...pick(secs.filter((x) => x !== s), 3)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcd"[k]), h("span", clean(o.title))); bt.onclick = () => {
@@ -291,7 +291,7 @@ const G = {
     const gids = ids.filter((id) => CALC[id]);
     const draw = () => {
       b.replaceChildren();
-      if (i >= rounds) { done(lec, "calc", score, rounds, b); if (score >= 6) confetti(); return b.append(endCard("\u{1F9EE} Calculations done!", score, rounds, again)); }
+      if (i >= rounds) { done(lec, "calc", score, rounds, b); if (score >= 6) confetti(); return b.append(endCard("Calculations done!", score, rounds, again)); }
       const gid = gids[i % gids.length]; let g; do { g = CALC[gid](); } while (g.wrong.length < 3);
       const opts = shuffle([g.ans, ...g.wrong.slice(0, 4)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });

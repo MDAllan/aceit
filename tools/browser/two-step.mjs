@@ -8,7 +8,7 @@ const chk = (name, ok, extra = "") => { if (!ok) bad++; console.log((ok ? "PASS 
 const errs = [];
 const UID = "11111111-1111-1111-1111-111111111111";
 const klass = (o = {}) => ({ class_id: "k1", course_id: "astr207", name: "ASTR 207 Section 1", term: "Fall 2026", school_id: "s1", school_name: "Alpha University", role: "student", exam_name: null, exam_date: null, archived: false, ...o });
-const prof = (o = {}) => ({ id: UID, email: "sam@alpha.ca", display_name: "Sam", is_admin: false, blocked: false, access_ok: true, ...o });
+const prof = (o = {}) => ({ id: UID, email: "sam@alpha.ca", display_name: "Sam", is_admin: false, blocked: false, access_ok: true, terms_version: "1.0", privacy_version: "1.0", ...o });
 const F1 = { id: "f1", status: "verified", factor_type: "totp", friendly_name: "ACEIT" };
 
 async function session(db, seed, hash = "") {

@@ -39,7 +39,7 @@ In a cloud database operated by [provider] in the region [region]. It is encrypt
 
 ## 6. How long we keep it
 
-While your account exists. When you delete your account, your profile, progress and class memberships are deleted. A school can ask us to remove a class or its students. Inactive accounts may be deleted after [period]. Backups are kept for [period] and then expire. (See `RETENTION-AND-DELETION.md`.)
+While your account exists. When you ask to delete your account, it is permanently deleted after 22 days (logging in again with the same email in that time cancels the deletion); your profile, progress and class memberships are then deleted. A school can ask us to remove a class or its students. Inactive accounts may be deleted after [period]. Backups are kept for [period] and then expire. (See `RETENTION-AND-DELETION.md`.)
 
 ## 7. Your choices and rights
 

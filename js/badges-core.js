@@ -1,16 +1,20 @@
 // The pure part of the badge system: no DOM and no imports, so it runs in the browser and in Node tests.
 // js/badges.js (the screens) imports everything from here and re-exports it.
 //
-// A badge FAMILY is one tile in the profile grid; it has an ordered ladder of TIERS. A tier is earned when
-// snapshot[family.metric] >= tier.at. The snapshot is a plain object of numbers that js/main.js builds.
+// A badge FAMILY is one tile in the profile grid ("Study Buddy"); it has an ordered list of TIERS (Bronze, Silver, Gold ...).
+// A tier is earned when snapshot[family.metric] >= tier.at. The snapshot is a plain object of numbers that js/main.js builds.
 
 export const SNAPSHOT_KEYS = [
   "level", "xp", "streak", "gamesPlayed", "correctAnswers", "sprintBeats", "sprintBest", "shares",
-  "challengesSent", "challengesWon", "reviews", "quizBest", "cardsReviewed", "decksFinished", "glossaryStudied",
+  "challengesSent", "challengesWon", "reviews", "quizBest", "quizzes90", "quizzes100", "cardsReviewed", "decksFinished", "glossaryStudied",
   "comebacks", "topicsTamed", "classesConquered", "nightSessions", "earlySessions", "examPrepped",
 ];
 
-// Motivational lines. {remaining} {unit} {next} {how} {name} {rank} are filled in. A family can bring its own "cheer" list.
+// The default tier names, in order. A tier in badges.json that has no "name" of its own gets the name for its position,
+// so a family that needs 3 tiers is Bronze, Silver, Gold and one that needs 8 uses them all.
+export const TIER_NAMES = ["Bronze", "Silver", "Gold", "Emerald", "Diamond", "Ruby", "Celestial", "Legendary"];
+
+// Motivational lines for the detail popup. {remaining} {unit} {next} {how} {name} are filled in. A family can bring its own "cheer" list.
 export const DEFAULT_CHEER = [
   "{remaining} more {unit} to unlock {next}. You've got this!",
   "Only {remaining} {unit} to go until {next}. Keep going!",
@@ -35,7 +39,7 @@ const pickStable = (list, seed) => list[hash(seed) % list.length];
 
 export const formatCount = (n) => (Number.isInteger(n) ? n : Math.round(n * 10) / 10).toLocaleString("en-US");
 
-// "days" -> "day", "classes" -> "class", "percentage points" -> "percentage point", "XP" stays "XP"
+// "days" -> "day", "classes" -> "class", "personal bests" -> "personal best", "XP" stays "XP"
 export function singular(unit) {
   const u = String(unit || "");
   if (/(sses|xes|ches|shes)$/.test(u)) return u.slice(0, -2);
@@ -53,13 +57,23 @@ function fill(template, vars) {
   return String(template).replace(/[{]([a-zA-Z]+)[}]/g, (m, k) => (k in vars ? String(vars[k]) : m));
 }
 // the "how" line without a trailing example in brackets, so it can sit inside a longer sentence
-const shortHow = (how) => String(how || "").replace(/ *[(][^)]*[)] *$/, "");
+const shortHow = (how) => String(how || "").replace(/ *[(][^)]*[)] *$/, "").replace(/[.]$/, "");
+
+// The name a tier shows: its own "name" when badges.json gives one, otherwise the default for its place in the ladder.
+// A family with a single tier shows no tier name at all ("Golden Critic", not "Golden Critic – Bronze") unless one is given.
+function tierName(t, i, count) {
+  if (isStr(t.name)) return String(t.name).trim();
+  if (count === 1) return "";
+  return TIER_NAMES[i] || `Tier ${i + 1}`;
+}
+// "Study Buddy – Silver", "Golden Critic"
+export const badgeTitle = (family, tier) => (tier && tier.name ? `${family.name} – ${tier.name}` : family.name);
 
 function cheerFor(f) {
   const pool = Array.isArray(f.cheerList) && f.cheerList.length ? f.cheerList.filter(isStr) : DEFAULT_CHEER;
   const seed = f.id + ":" + f.value + ":" + f.earnedCount;
   if (!f.next) return fill(pickStable(DONE_CHEER, seed), { name: f.name });
-  const vars = { remaining: formatCount(f.remaining), unit: unitLabel(f, f.remaining), next: f.next.name, how: shortHow(f.next.how), name: f.name, rank: f.next.rank };
+  const vars = { remaining: formatCount(f.remaining), unit: unitLabel(f, f.remaining), next: f.next.name || f.name, how: shortHow(f.next.how), name: f.name };
   if (f.earnedCount === 0 && f.value === 0) return fill(pickStable(WAKE_CHEER, seed), vars);
   return fill(pickStable(pool.length ? pool : DEFAULT_CHEER, seed), vars);
 }
@@ -86,7 +100,7 @@ export function evaluateBadges(config, snap, saved) {
     while (hit < raw.length && value >= raw[hit].at) hit++;
     const was = Math.min(raw.length, nextSaved[f.id] || 0);
     const earnedCount = Math.max(hit, was);
-    const tiers = raw.map((t, i) => ({ index: i, name: String(t.name || ""), rank: String(t.rank || ""), at: t.at, image: String(t.image || ""), how: String(t.how || ""), earned: i < earnedCount }));
+    const tiers = raw.map((t, i) => ({ index: i, name: tierName(t, i, raw.length), at: t.at, image: String(t.image || ""), how: String(t.how || ""), earned: i < earnedCount }));
     const minLevel = Number.isFinite(f.minLevel) ? f.minLevel : 1;
     const next = tiers[earnedCount] || null;
     const fam = {
@@ -107,7 +121,7 @@ export function evaluateBadges(config, snap, saved) {
 }
 
 // ---------- text helpers shared by the screens and the tests ----------
-export const tierImageAlt = (family, tier) => `${tier.name} badge${tier.rank ? ", " + tier.rank + " rank" : ""}`;
+export const tierImageAlt = (family, tier) => badgeTitle(family, tier) + " badge";
 
 // "4 more days"
 export const moreText = (f) => (f.next ? `${formatCount(f.remaining)} more ${unitLabel(f, f.remaining)}` : "");
@@ -119,24 +133,27 @@ export function progressText(f) {
   const sx = f.suffix || "";
   return `${formatCount(Math.min(f.value, f.next.at))}${sx} / ${formatCount(f.next.at)}${sx}`;
 }
-// what a screen reader says for a tile
-export function tileAriaLabel(f) {
-  const t = shownTier(f);
-  if (!f.current) return `${t.name}, locked. ${t.how}`;
-  return `${t.name}, ${t.rank} rank, earned. ` + (f.next ? `Next: ${f.next.name}, ${moreText(f)}` : "Every tier unlocked");
+// The line under a tile in the profile:
+//   nothing earned yet      -> { kind: "locked",   text: "Share a game with a friend to unlock" }
+//   earned, a higher tier   -> { kind: "progress", text: "4 more shares to unlock Silver" }   (the tile also shows a thin progress bar)
+//   the last tier earned    -> { kind: "max",      text: "Max level reached" }
+export function tileLine(f) {
+  if (!f.current) return { kind: "locked", text: `${shortHow(f.tiers[0].how)} to unlock` };
+  if (!f.next) return { kind: "max", text: "Max level reached" };
+  return { kind: "progress", text: `${moreText(f)} to unlock ${f.next.name || f.name}` };
 }
-// "Next: On Fire, 4 more days" for the celebration. tier = the tier just earned.
+// "Next: Gold, 4 more shares" for the celebration. tier = the tier just earned.
 export function nextGoalText(f, tier) {
   const nx = f.tiers[tier.index + 1];
-  if (!nx) return "That is every tier of this badge. Legendary!";
+  if (!nx) return "Max level reached. That is every tier of this badge!";
   if (nx.earned) return `Next: ${nx.name}, and you have already earned it too!`;
   const left = Math.max(0, Math.ceil(nx.at - f.value));
   return `Next: ${nx.name}, ${formatCount(left)} more ${unitLabel(f, left)}`;
 }
-// "7 of 52 earned" (counts every tier in the config)
+// "7 of 28 earned": counts the tiers of the badges the person can see (more badges, and more tiers, appear as they level up)
 export function badgeTotals(model) {
   let earned = 0, total = 0, visible = 0;
-  for (const f of (model && model.families) || []) { earned += f.earnedCount; total += f.tiers.length; if (f.visible) visible++; }
+  for (const f of (model && model.families) || []) if (f.visible) { earned += f.earnedCount; total += f.tiers.length; visible++; }
   return { earned, total, visible };
 }
 // the first letters of a name for the placeholder circle: "Speed of Light" -> "SL"
@@ -164,25 +181,28 @@ export function validateBadgeConfig(config, keys = SNAPSHOT_KEYS) {
     else if (ids.has(f.id)) bad.push(where + ": duplicate family id");
     else ids.add(f.id);
     if (!isStr(f.name)) bad.push(where + ": name is missing");
+    else if (names.has(f.name.toLowerCase())) bad.push(where + ": duplicate family name");
+    else names.add(f.name.toLowerCase());
     if (!isStr(f.metric)) bad.push(where + ": metric is missing");
     else if (!keys.includes(f.metric)) bad.push(`${where}: unknown metric "${f.metric}" (valid: ${keys.join(", ")})`);
     if (!isStr(f.unit)) bad.push(where + ": unit is missing");
     if (!Number.isInteger(f.minLevel) || f.minLevel < 1) bad.push(where + ": minLevel must be a whole number, 1 or more");
-    if (f.ladder != null && !isStr(f.ladder)) bad.push(where + ": ladder must be text");
     if (f.suffix != null && typeof f.suffix !== "string") bad.push(where + ": suffix must be text");
     if (f.cheer != null) {
       if (!Array.isArray(f.cheer) || !f.cheer.length || !f.cheer.every(isStr)) bad.push(where + ": cheer must be a list of phrases");
-      else for (const c of f.cheer) for (const m of c.match(/[{][^}]*[}]/g) || []) if (!["{remaining}", "{unit}", "{next}", "{how}", "{name}", "{rank}"].includes(m)) bad.push(`${where}: unknown placeholder ${m} in cheer`);
+      else for (const c of f.cheer) for (const m of c.match(/[{][^}]*[}]/g) || []) if (!["{remaining}", "{unit}", "{next}", "{how}", "{name}"].includes(m)) bad.push(`${where}: unknown placeholder ${m} in cheer`);
     }
     if (!Array.isArray(f.tiers) || !f.tiers.length) { bad.push(where + ": needs at least one tier"); return; }
+    if (f.tiers.length > TIER_NAMES.length && f.tiers.some((t) => !t || !isStr(t.name))) bad.push(`${where}: more than ${TIER_NAMES.length} tiers, so every tier needs its own "name" (the default names run out)`);
     let last = -Infinity;
+    const tierNames = new Set();
     f.tiers.forEach((t, ti) => {
       const tw = `${where}, tier ${ti + 1}${t && t.name ? ` (${t.name})` : ""}`;
       if (!t || typeof t !== "object") { bad.push(tw + ": not an object"); return; }
-      if (!isStr(t.name)) bad.push(tw + ": name is missing");
-      else if (names.has(t.name.toLowerCase())) bad.push(tw + ": duplicate tier name");
-      else names.add(t.name.toLowerCase());
-      if (!isStr(t.rank)) bad.push(tw + ": rank is missing");
+      if (t.name != null && !isStr(t.name)) bad.push(tw + ": name must be text (or leave it out to use the default)");
+      if (t.rank != null) bad.push(tw + ': "rank" is no longer used; the tier name is the rank (leave "name" out for Bronze, Silver, Gold ...)');
+      const shown = tierName(t, ti, f.tiers.length).toLowerCase();
+      if (shown) { if (tierNames.has(shown)) bad.push(tw + ": duplicate tier name in this family"); else tierNames.add(shown); }
       if (!isStr(t.how)) bad.push(tw + ": how is missing");
       if (typeof t.at !== "number" || !Number.isFinite(t.at) || t.at <= 0) bad.push(tw + ": at must be a number above 0");
       else { if (t.at <= last) bad.push(tw + `: at (${t.at}) must be bigger than the tier before it (${last})`); last = t.at; }

@@ -16,7 +16,7 @@ const uid = (n) => "u" + n;
 const email = (n, dom) => n.toLowerCase().replace(/[^a-z ]/g, "").replace(" ", ".") + "@" + dom;
 
 function build() {
-  T = { schools: [], classes: [], people: {}, enrol: [], invites: [], admins: [], audit: [], confirm: true, domains: "", mfa: false, items: [], media: {}, nid: 0 };
+  T = { schools: [], classes: [], people: {}, enrol: [], invites: [], admins: [], audit: [], confirm: true, domains: "", mfa: false, items: [], media: {}, nid: 0, lec: {}, hist: [], hid: 0 };
   const school = (id, name, region, seat_limit, courses) => T.schools.push({ id, name, region, active: true, seat_limit, courses, managers: [] });
   school("sch-a", "Alpha University", "Alberta", 400, ["astr207", "erth209"]); T.schools[0].require_approval = true;
   school("sch-b", "Beta College", "Ontario", 120, ["erth209"]);
@@ -123,6 +123,8 @@ export async function uploadPicture(kid, blob) {
   const url = await new Promise((res) => { const r = new FileReader(); r.onload = () => res(r.result); r.readAsDataURL(blob); });
   T.media[path] = url; return { path };
 }
+// the lecture as the preview's database holds it (null until the admin has saved it once)
+export const lectureBody = (lid) => { ensure(); const x = T.lec[lid]; return x ? JSON.parse(JSON.stringify(x.body)) : null; };
 export const removePictures = (paths) => { ensure(); (paths || []).forEach((p) => delete T.media[p]); };
 export const copyPictures = (pairs) => { ensure(); (pairs || []).forEach(({ old_path, new_path }) => { T.media[new_path] = T.media[old_path] || SAMPLE_PICTURE; }); };
 function ensure() { if (!T) { build(); seedItems(); } }
@@ -307,6 +309,34 @@ const API = {
   admin_set_confirm_email({ flag }) { need(adminView(), "admin only"); T.confirm = flag; log("confirm email setting", flag ? "on" : "off"); },
   admin_set_blocked({ uid: id, flag }) { need(adminView(), "admin only"); T.people[id].blocked = flag; log(flag ? "block" : "unblock", T.people[id].email); },
   admin_delete_user({ uid: id }) { need(adminView(), "admin only"); T.enrol = T.enrol.filter((e) => e.user_id !== id); log("delete account", T.people[id]?.email); delete T.people[id]; },
+  // the admin's edits of the course lectures, kept in memory with a history that can be undone (same names and arguments as supabase/patch8.sql)
+  admin_save_lecture({ lid, cid, new_body, old_body, summary }) {
+    need(adminView(), "admin only");
+    need(typeof lid === "string" && /^[A-Za-z0-9_-]{1,64}$/.test(lid), "The lecture id must be 1 to 64 letters, numbers, dashes or underscores.");
+    need(typeof cid === "string" && /^[A-Za-z0-9_-]{1,64}$/.test(cid), "The course id must be 1 to 64 letters, numbers, dashes or underscores.");
+    need(new_body && typeof new_body === "object" && !Array.isArray(new_body), "The lecture must be an object.");
+    for (const k of ["sections", "cards", "quiz"]) need(!(k in new_body) || Array.isArray(new_body[k]), `The "${k}" part of the lecture must be a list.`);
+    need(JSON.stringify(new_body).length <= 2000000, "This lecture is too large (the limit is 2 MB).");
+    const cur = T.lec[lid]; if (cur) need(cur.cid === cid, "That lecture belongs to another course.");
+    const before = cur ? cur.body : old_body ? JSON.parse(JSON.stringify(old_body)) : null;
+    T.lec[lid] = { cid, body: JSON.parse(JSON.stringify(new_body)) };
+    const id = ++T.hid; T.hist.push({ id, at: new Date().toISOString(), user_email: "you@alpha.ca", lecture_id: lid, course_id: cid, summary: (String(summary || "").trim().slice(0, 200)) || "Edited", before, after: T.lec[lid].body, undone: false });
+    return id;
+  },
+  admin_content_history({ lid }) {
+    need(adminView(), "admin only");
+    return T.hist.filter((h) => h.lecture_id === lid).sort((a, b) => b.id - a.id).slice(0, 50).map((h) => ({ id: h.id, at: h.at, user_email: h.user_email, summary: h.summary, undone: h.undone }));
+  },
+  admin_undo_content_change({ hid }) {
+    need(adminView(), "admin only");
+    const h = T.hist.find((x) => x.id === hid); need(h, "no such change");
+    need(h.before, "There is nothing to go back to: no earlier version of this lecture was kept.");
+    need(!h.undone, "That change was already undone.");
+    const cur = T.lec[h.lecture_id] ? T.lec[h.lecture_id].body : null;
+    T.lec[h.lecture_id] = { cid: h.course_id, body: JSON.parse(JSON.stringify(h.before)) }; h.undone = true;
+    const id = ++T.hid; T.hist.push({ id, at: new Date().toISOString(), user_email: "you@alpha.ca", lecture_id: h.lecture_id, course_id: h.course_id, summary: ("Undid: " + (h.summary || "Edited")).slice(0, 200), before: cur, after: h.before, undone: false });
+    return id;
+  },
   admin_get_domains() { return T.domains; },
   admin_set_domains({ list }) { T.domains = list; log("set allowed domains", list); },
 };

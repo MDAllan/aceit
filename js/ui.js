@@ -177,7 +177,7 @@ export function logo(height = 22) {
 export function pic(im, attrs = {}) {
   const el = h("img", { alt: im.alt || "", ...attrs });
   if (im.src) el.src = im.src;
-  else if (im.path) mediaUrl(im.path).then((u) => { if (u) el.src = u; else el.alt = (im.alt || "Picture") + " (could not be loaded)"; });
+  else if (im.path) mediaUrl(im.path, im.bucket).then((u) => { if (u) el.src = u; else el.alt = (im.alt || "Picture") + " (could not be loaded)"; });
   return el;
 }
 

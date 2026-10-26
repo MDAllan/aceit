@@ -43,7 +43,7 @@ These rules are enforced **in the database** (row level security and permission-
 - Join codes: each class has its own random code (8 characters) or one chosen by the instructor (6+ characters), which can expire, be limited in seats, or be changed at any time. Wrong guesses are limited to 8 per 10 minutes per account.
 - Staff are signed out after 30 minutes without activity.
 - Sign-ups can be limited to the school's own email domains.
-- Students can download their data, leave a class, or delete their account at any time.
+- Students can download their data, leave a class, or delete their account at any time. Deleting waits 22 days: the account is signed out and scheduled, logging in again with the same email within 22 days cancels it, and after 22 days a daily database job removes the profile, progress and memberships for good. Everyone agrees to the Terms of Service and Privacy Policy when signing up; the date and version are stored, and people are asked again when the Terms change.
 
 ## 5. Application security
 
@@ -60,7 +60,7 @@ These rules are enforced **in the database** (row level security and permission-
 - Data is stored in the Supabase project's region (confirm and record it for each deployment; a Canadian region is recommended for Canadian schools).
 - Encrypted in transit (HTTPS) and at rest (managed by the database provider).
 - Backups: depends on the Supabase plan. Daily backups need the Pro plan; one restore test should be done before a school goes live.
-- Retention: data is kept while the account exists. Deleting an account removes the profile, progress, memberships and summaries. A school can ask for a class or all of its students to be removed.
+- Retention: data is kept while the account exists. Deleting an account removes the profile, progress, memberships and summaries after a 22-day grace period (see Account rights above). A school can ask for a class or all of its students to be removed.
 
 ## 7. Planned
 

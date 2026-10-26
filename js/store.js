@@ -181,7 +181,18 @@ const mediaCache = new Map();
 // a picture is a plain file inside a class's folder, named the way the app names them (the database refuses anything else); the storage library
 // does not encode the path it is given, so anything odd is never sent
 const MEDIA_PATH = /^[A-Za-z0-9-]{1,64}[/][A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$/;
-export function mediaUrl(path) {
+// a picture of a course lecture (put there by the platform admin in edit mode) lives in the course's own private bucket: { path, bucket: "course" }
+export const COURSE_PATH = /^[A-Za-z0-9_-]{1,64}[/][A-Za-z0-9_-]{8,64}[.](webp|jpg|png)$/;
+const demoCourseMedia = new Map(); // the local preview keeps chosen pictures in memory
+export function mediaUrl(path, bucket) {
+  if (bucket === "course") {
+    if (!path || !COURSE_PATH.test(path)) return Promise.resolve(null);
+    if (DEMO) return Promise.resolve(demoCourseMedia.get(path) || null);
+    if (!sb) return Promise.resolve(null);
+    const key = "course:" + path;
+    if (!mediaCache.has(key)) mediaCache.set(key, sb.storage.from("course-media").download(path).then((r) => (r.error || !/^image[/]/.test(r.data.type || "") ? null : URL.createObjectURL(r.data)), () => null));
+    return mediaCache.get(key);
+  }
   if (DEMO) return Promise.resolve(demoMedia ? demoMedia(path) : null);
   if (!sb || !path || !MEDIA_PATH.test(path)) return Promise.resolve(null);
   if (!mediaCache.has(path)) mediaCache.set(path, sb.storage.from("class-media").download(path).then((r) => (r.error || !/^image[/]/.test(r.data.type || "") ? null : URL.createObjectURL(r.data)), () => null));
@@ -329,7 +340,7 @@ export function gameResult(id, game, score, total) {
   s.lastGame = { lec: id, game, score: total > 0 ? score : null, total: total > 0 ? total : null, day: localDay() };
   save(); return { beat };
 }
-// one finished quiz: best percentage (quizzes of at least 5 questions) and every correct answer counts toward "answers right"
+// one finished quiz of at least 5 questions: the best percentage, and how many quizzes scored 90% or more and 100% (the Sharpshooter and Bullseye badges)
 export function quizResult(score, total, practiceExam = null) {
   if (practiceExam && total > 0 && Number.isFinite(score) && Number.isFinite(total)) {
     const exams = data.stats.practiceExams || [];
@@ -337,7 +348,10 @@ export function quizResult(score, total, practiceExam = null) {
     data.stats.practiceExams = exams.slice(0, 30);
     save();
   }
-  if (total >= 5) setMax("quizBest", Math.round((score / total) * 100));
+  if (!(total >= 5)) return;
+  setMax("quizBest", Math.round((score / total) * 100));
+  if (score / total >= 0.9) bump("quizzes90");
+  if (score === total) bump("quizzes100");
 }
 
 export const lectureStats = (lec) => statsFrom(data, lec);
@@ -406,12 +420,45 @@ export async function dbLecture(id) {
   if (!sb || !session) return null;
   try { const { data: r, error } = await sb.from("lecture_content").select("body").eq("lecture_id", id).maybeSingle(); return error ? null : r?.body || null; } catch { return null; }
 }
+// the lecture's body with the time it was last saved; dbLectureAt reads only that time (a very small answer), so a lecture that has not changed is not downloaded again
+export async function dbLectureRow(id) {
+  if (!sb || !session) return null;
+  try { const { data: r, error } = await sb.from("lecture_content").select("body,updated_at").eq("lecture_id", id).maybeSingle(); return error || !r?.body ? null : { body: r.body, at: r.updated_at || null }; } catch { return null; }
+}
+export async function dbLectureAt(id) {
+  if (!sb || !session) return null;
+  try { const { data: r, error } = await sb.from("lecture_content").select("updated_at").eq("lecture_id", id).maybeSingle(); return error ? null : r?.updated_at || null; } catch { return null; }
+}
 export async function dbExam(classId) {
   if (!sb || !session) return null;
   try { const { data: r, error } = await sb.from("exam_content").select("body").eq("class_id", classId).maybeSingle(); return error ? null : r?.body || null; } catch { return null; }
 }
 export const publishLecture = (lecture_id, class_id, body) => sb.from("lecture_content").upsert({ lecture_id, class_id, body, updated_at: new Date().toISOString() });
 export const publishExam = (class_id, body) => sb.from("exam_content").upsert({ class_id, body, updated_at: new Date().toISOString() });
+
+/* ---------- the platform admin edits the course lectures (supabase/patch8.sql, section 5): saves keep a history that can be undone ---------- */
+// every call answers { data } or { error: { message, code } }; the local preview answers from js/demo.js (memory)
+async function call(name, args) {
+  if (DEMO) { const D = await import("./demo.js"); return D.rpc(name, args); }
+  if (!sb || !session) return { error: { message: "You are not signed in." } };
+  try { const r = await sb.rpc(name, args); return r.error ? { error: { message: r.error.message, code: r.error.code } } : { data: r.data }; } catch (e) { return { error: { message: e?.message || "Something went wrong." } }; }
+}
+// oldBody: what the lecture looked like before its first edit (the published file); the database uses it only when it holds no copy yet
+export const saveLecture = (lid, cid, body, oldBody, summary) => call("admin_save_lecture", { lid, cid, new_body: body, old_body: oldBody ?? null, summary: summary ?? null });
+export async function lectureHistory(lid) { const r = await call("admin_content_history", { lid }); return r.error ? r : { data: r.data || [] }; }
+export const undoChange = (hid) => call("admin_undo_content_change", { hid });
+// the lecture as the database holds it now (null when it holds no copy); after an undo the screens reload it
+export async function fetchLecture(lid) { if (DEMO) { const D = await import("./demo.js"); return D.lectureBody(lid); } return dbLecture(lid); }
+// a picture for a course lecture: a private file <course id>/<name>.<webp|jpg|png> in the course-media bucket (admins only); answers { path } or { error }
+export async function uploadCourseImage(courseId, blob) {
+  const ext = blob.type === "image/png" ? "png" : blob.type === "image/jpeg" ? "jpg" : "webp";
+  const name = Array.from(crypto.getRandomValues(new Uint8Array(12)), (b) => b.toString(16).padStart(2, "0")).join(""), path = `${courseId}/${name}.${ext}`;
+  if (!COURSE_PATH.test(path)) return { error: { message: "That course cannot hold pictures." } };
+  if (DEMO) { if (demoRole() !== "admin") return { error: { message: "admin only" } }; demoCourseMedia.set(path, URL.createObjectURL(blob)); return { path }; }
+  if (!sb || !session) return { error: { message: "You are not signed in." } };
+  const r = await sb.storage.from("course-media").upload(path, blob, { contentType: blob.type, upsert: false });
+  return r.error ? { error: { message: r.error.message } } : { path };
+}
 
 /* ---------- instructors, codes, exam dates ---------- */
 // legacy (until the schools upgrade is installed): the older admin screen reads and sets one code per course

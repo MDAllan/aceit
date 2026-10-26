@@ -9,7 +9,7 @@ export const seedSession = (page, uid, email, o = {}) => page.evaluateOnNewDocum
   user: userJson(uid, email, o.factors || []),
 });
 
-const CORS = { "access-control-allow-origin": "*", "access-control-allow-headers": "*", "access-control-allow-methods": "GET,POST,PATCH,DELETE,OPTIONS", "access-control-expose-headers": "*" };
+const CORS = { "access-control-allow-origin": "*", "access-control-allow-headers": "*", "access-control-allow-methods": "GET,POST,PUT,PATCH,DELETE,OPTIONS", "access-control-expose-headers": "*" };
 const err = (message, code = "P0001", status = 400) => ({ status, body: { code, details: null, hint: null, message } });
 const missing = (fn) => ({ status: 404, body: { code: "PGRST202", details: null, hint: null, message: `Could not find the function public.${fn} in the schema cache` } });
 
@@ -56,6 +56,20 @@ export async function fakeSupabase(page, db) {
     else if (path === "/rest/v1/class_instructors") r = { status: 200, body: db.legacyInstructors || [] };
     else if (["/rest/v1/class_settings", "/rest/v1/lecture_content", "/rest/v1/exam_content"].includes(path)) r = { status: 200, body: [] };
     else if (path.startsWith("/rest/v1/")) r = { status: 200, body: (db.tables || {})[path.split("/").pop()] || [] };
+    else if (path === "/auth/v1/signup" && method === "POST") { (db.signups ||= []).push(body); r = { status: 200, body: { ...userJson("22222222-2222-2222-2222-222222222222", body?.email), confirmation_sent_at: "2026-10-21T00:00:00Z" } }; }
+    else if (path === "/auth/v1/token" && method === "POST") { // password sign-in: db.passwords = { email: password }
+      (db.tokenCalls ||= []).push(body); const uid = db.profile?.id || db.uid;
+      r = (db.passwords || {})[body?.email] === body?.password
+        ? { status: 200, body: { access_token: jwt(uid), token_type: "bearer", expires_in: 36000, expires_at: Math.floor(Date.now() / 1000) + 36000, refresh_token: "r2", user: userJson(uid, body?.email) } }
+        : { status: 400, body: { code: "invalid_credentials", error_code: "invalid_credentials", message: "Invalid login credentials" } };
+    }
+    else if (path === "/auth/v1/recover" && method === "POST") { (db.recovers ||= []).push(body); r = { status: 200, body: {} }; }
+    else if (path === "/auth/v1/otp" && method === "POST") { (db.otps ||= []).push(body); r = { status: 200, body: {} }; }
+    else if (path === "/auth/v1/verify" && method === "POST") {
+      r = body?.token === "123456" ? { status: 200, body: { access_token: jwt(db.profile?.id || db.uid), token_type: "bearer", expires_in: 36000, expires_at: Math.floor(Date.now() / 1000) + 36000, refresh_token: "r3", user: userJson(db.profile?.id || db.uid, body?.email) } }
+        : { status: 403, body: { code: "otp_expired", error_code: "otp_expired", message: "Token has expired or is invalid" } };
+    }
+    else if (path === "/auth/v1/user" && method === "PUT") { (db.userUpdates ||= []).push(body); r = { status: 200, body: { ...userJson(db.profile?.id || db.uid, db.profile?.email), new_email: body?.email } }; }
     else if (path === "/auth/v1/user") r = { status: 200, body: userJson(db.uid, db.profile?.email, db.factors || []) };
     else if (path === "/auth/v1/factors" && method === "POST") { db.factors = [...(db.factors || []), { id: "f-new", status: "unverified", factor_type: "totp", friendly_name: body?.friendly_name }]; r = { status: 200, body: { id: "f-new", type: "totp", friendly_name: body?.friendly_name, totp: { qr_code: "data:image/svg+xml;utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'/>", secret: "JBSWY3DPEHPK3PXP", uri: "otpauth://totp/ACEIT" } } }; }
     else if (/^\/auth\/v1\/factors\/[^/]+\/challenge$/.test(path)) r = { status: 200, body: { id: "c1", type: "totp", expires_at: Math.floor(Date.now() / 1000) + 300 } };

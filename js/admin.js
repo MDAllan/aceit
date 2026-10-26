@@ -133,14 +133,14 @@ function instructorPanel(list, profiles, mine, SUBJECTS, route) {
   const em = h("input", { type: "email", placeholder: "instructor@school.ca (must have signed up)", "aria-label": "Instructor email" });
   const cl = h("select", { "aria-label": "Class" }, SUBJECTS.map((x) => h("option", { value: x.id }, x.name)));
   const act = async (email, cid, flag) => { const r = await S.setInstructor(email, cid, flag); toast(r.error ? r.error.message : flag ? "Instructor added" : "Instructor removed"); if (!r.error) route(); };
-  return panel("\u{1F9D1}‍\u{1F3EB} Instructors", h(".src", { style: "margin:0 0 6px" }, "An instructor sees only the students in their class and can change that class's code and exam date."),
+  return panel("Instructors", h(".src", { style: "margin:0 0 6px" }, "An instructor sees only the students in their class and can change that class's code and exam date."),
     list.length ? h("div", list.map((i) => { const p = profiles.find((x) => x.id === i.user_id); return h(".row", { style: "padding:4px 0;flex-wrap:nowrap" }, h("span", { style: "flex:1" }, `${p?.email || i.user_id} (${SUBJECTS.find((x) => x.id === i.class_id)?.name || i.class_id})`), h("button.btn.alt.sm", { onclick: () => act(p?.email, i.class_id, false) }, "Remove")); })) : h(".src", "No instructors yet."),
     h(".row", { style: "margin-top:8px;flex-wrap:nowrap" }, em, cl, h("button.btn.sm", { onclick: () => em.value.trim() && act(em.value.trim(), cl.value, true) }, "Add")));
 }
 function domainPanel() {
   const inp = h("input", { placeholder: "school.ca, uni.ca (leave empty to allow anyone)", "aria-label": "Allowed email domains" });
   S.getDomains().then((d) => { inp.value = d; });
-  return panel("\u{1F3EB} Allowed school emails", h(".src", { style: "margin:0 0 6px" }, "Only these email domains can create accounts. Your own admin email always works."),
+  return panel("Allowed school emails", h(".src", { style: "margin:0 0 6px" }, "Only these email domains can create accounts. Your own admin email always works."),
     h(".row", { style: "flex-wrap:nowrap" }, inp, h("button.btn.sm", { onclick: async () => { const r = await S.setDomains(inp.value.trim()); toast(r.error ? r.error.message : "Saved"); } }, "Save")));
 }
 export function publishPanel(LECS, SUBJECTS) {
@@ -156,15 +156,15 @@ export function publishPanel(LECS, SUBJECTS) {
     status.textContent = bad.length ? `Published ${done} of ${jobs.length}. Problems: ${bad.join("; ")}` : `Done: ${done} of ${jobs.length} published. Only class members can read these now.`;
     go.disabled = false;
   } }, "Publish content to the database");
-  return panel("\u{1F512} Protect lecture content", h(".src", { style: "margin:0 0 6px" }, "Copies every lecture and exam into the database, where only members of each class can read them. Run this again after you change any lecture."), go, status);
+  return panel("Protect lecture content", h(".src", { style: "margin:0 0 6px" }, "Copies every lecture and exam into the database, where only members of each class can read them. Run this again after you change any lecture."), go, status);
 }
 function auditPanel() {
   const box = h("div", h(".src", "Loading..."));
   S.auditLog().then((rows) => box.replaceChildren(rows.length ? h("div", rows.map((r) => h(".row", { style: "padding:3px 0;font-size:.85rem;flex-wrap:nowrap" }, h("span.src", { style: "margin:0;min-width:120px" }, when(r.at)), h("span", `${r.action}${r.target ? ": " + r.target : ""}${r.detail ? " (" + r.detail + ")" : ""}`)))) : h(".src", "Nothing yet.")));
-  return panel("\u{1F4DC} Recent admin actions", box);
+  return panel("Recent admin actions", box);
 }
 function errorPanel() {
   const box = h("div", h(".src", "Loading..."));
   S.errorLog().then((rows) => box.replaceChildren(rows.length ? h("div", rows.map((r) => h(".fb", { style: "margin-top:6px" }, h("b", r.msg), h(".src", `${when(r.at)} ${r.url || ""}`)))) : h(".src", "No errors reported. Good.")));
-  return panel("\u{1F6E0}️ Error reports", box);
+  return panel("Error reports", box);
 }

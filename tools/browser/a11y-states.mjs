@@ -78,7 +78,7 @@ for (const scheme of ["light", "dark"]) {
 
   // the login, join and two-step screens (real code path, pretend database)
   const UID = "11111111-1111-1111-1111-111111111111";
-  const prof = { id: UID, email: "sam@alpha.ca", display_name: "Sam", is_admin: false, blocked: false, access_ok: true };
+  const prof = { id: UID, email: "sam@alpha.ca", display_name: "Sam", is_admin: false, blocked: false, access_ok: true, terms_version: "1.0", privacy_version: "1.0" };
   const F1 = { id: "f1", status: "verified", factor_type: "totp" };
   const q = await page(scheme); await fakeSupabase(q, { v2: true, profile: prof, classes: [], roles: [] });
   await q.goto("http://localhost:8765/", { waitUntil: "networkidle0" }); await wait(800); await scan(q, "login" + tag);

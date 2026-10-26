@@ -5,7 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 const dir = path.dirname(fileURLToPath(import.meta.url));
 let failed = 0;
-for (const f of ["policy-and-fonts.mjs", "workspace-demo.mjs", "real-paths.mjs", "two-step.mjs", "authoring-demo.mjs", "a11y.mjs", "a11y-states.mjs"]) {
+for (const f of ["policy-and-fonts.mjs", "workspace-demo.mjs", "real-paths.mjs", "two-step.mjs", "authoring-demo.mjs", "edit-demo.mjs", "edit-real.mjs", "a11y.mjs", "a11y-states.mjs", "a11y-phone.mjs", "account-flows.mjs", "phone-shots.mjs"]) {
   let r = spawnSync(process.execPath, [path.join(dir, f)], { encoding: "utf8", timeout: 900000 });
   if (r.status !== 0) { console.log(`retrying ${f} once (browser tests can be slow on a busy machine)`); r = spawnSync(process.execPath, [path.join(dir, f)], { encoding: "utf8", timeout: 900000 }); }
   const out = (r.stdout || "") + (r.stderr || "");

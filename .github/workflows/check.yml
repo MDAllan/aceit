@@ -21,6 +21,16 @@ jobs:
         run: node tools/test_logic.mjs
       - name: Content tests (rules for instructor-added items, pasting, merging)
         run: node tools/test_content.mjs
+      - name: Glossary rule and cleaned course content (terms only)
+        run: node tools/test_glossary.mjs && python tools/glossary_cleanup.py --check
+      - name: Terms of Service and Privacy Policy (required topics, versions, no contact details)
+        run: node tools/test_legal.mjs
+      - name: Badges (config and rules)
+        run: node tools/test_badges.mjs
+      - name: Stats behind the badges (personal bests, streaks, comebacks)
+        run: node tools/test_stats.mjs
+      - name: Admin edit mode rules (what an admin may save, change history)
+        run: node tools/test_editmode.mjs
   database:
     runs-on: ubuntu-latest
     steps:

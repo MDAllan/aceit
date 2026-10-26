@@ -7,7 +7,7 @@ One page for each person. Share the part that applies.
 1. Open ACEIT. Tap **New here? Sign up** (or log in if you already have an account). Use your school email if you were told to.
 2. Tap **Join a class** and enter the code from your instructor.
 3. Start with **Notes**, then **Cards**, then a **Quiz**. Games are under each lecture.
-4. Your profile (top right) lets you change your name and look, download your data, leave a class or delete your account.
+4. Your profile (top right) lets you change your name, photo and look, see your badges, switch accessibility options (dark mode, colour-blind friendly, text size), download your data and get help. Joining or leaving a class is done from Home. Customer Service in your profile covers a forgotten password, a hacked account, deleting your account (it is permanently deleted after 22 days; logging in again in that time cancels it) and asking a question.
 
 Your instructor can see your name, email and progress in their class. Other students cannot.
 

@@ -31,13 +31,14 @@ export function renderLegal(doc) {
   };
   const para = { style: "margin:.55rem 0;line-height:1.65;max-width:68ch" };
   const toc = h("nav", { "aria-label": "Contents", style: "margin:14px 0;padding:10px 14px;border:1px solid var(--line);border-radius:var(--r-s);background:var(--soft)" },
-    h("p", { style: "margin:0 0 4px;font-weight:700" }, "Contents"),
-    h("ol", { style: "list-style:none;margin:0;padding:0" }, doc.sections.map((s, i) =>
-      h("li", h("button", {
-        type: "button",
-        style: "background:none;border:0;padding:6px 0;min-height:36px;text-align:left;font:inherit;color:var(--brand);text-decoration:underline;cursor:pointer",
-        onclick: () => jump(secId(s))
-      }, `${i + 1}. ${s.title}`)))));
+    h("details", { open: typeof matchMedia === "function" && matchMedia("(min-width:700px)").matches },
+      h("summary", { style: "font-weight:700;cursor:pointer;min-height:40px;display:flex;align-items:center" }, `Contents (${doc.sections.length} sections)`),
+      h("ol", { style: "list-style:none;margin:0;padding:0" }, doc.sections.map((s, i) =>
+        h("li", h("button", {
+          type: "button",
+          style: "background:none;border:0;padding:6px 0;min-height:36px;text-align:left;font:inherit;color:var(--brand);text-decoration:underline;cursor:pointer",
+          onclick: () => jump(secId(s))
+        }, `${i + 1}. ${s.title}`))))));
   return h("article.card.legal", { "aria-labelledby": base + "-title", style: "max-width:46rem;margin:0 auto" },
     h("header",
       h("h1", { id: base + "-title", style: "letter-spacing:0;margin:0" }, doc.title),

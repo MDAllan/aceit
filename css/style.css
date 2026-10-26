@@ -387,12 +387,12 @@ input[type=file]{padding:8px;min-height:0}
 body.noscroll{overflow:hidden}
 
 /* the review stars: big, yellow, cartoon style, no boxes */
-.stars{display:flex;gap:4px;justify-content:center;margin:12px 0}
-.star{background:none;border:0;padding:0;width:56px;height:56px;cursor:pointer;transition:transform .18s var(--ease);-webkit-tap-highlight-color:transparent;display:grid;place-items:center}
+.stars{display:flex;gap:0;justify-content:center;margin:12px 0}
+.star{background:none;border:0;padding:0;width:60px;height:60px;cursor:pointer;transition:transform .18s var(--ease);-webkit-tap-highlight-color:transparent;display:grid;place-items:center}
 .star svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 3px 0 rgba(0,0,0,.13))}
-.star .body{fill:#DDE1EC;stroke:#B6BDD3;stroke-width:3.5;stroke-linejoin:round}
-.star .shine{fill:#fff;opacity:.55}
-.star.on .body{fill:#FFCF33;stroke:#E8970C}
+.star .body{fill:#FFEDA8;stroke:#F3B21B;stroke-width:2.6;stroke-linejoin:round}
+.star .shine{fill:#fff;opacity:.7}
+.star.on .body{fill:#FFD21F;stroke:#EE9B0C}
 .star.on{animation:starpop .35s var(--ease)}
 .star:active{transform:scale(1.18) rotate(-8deg)}
 .star:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:50%}
@@ -439,6 +439,11 @@ body.noscroll{overflow:hidden}
 @media(prefers-color-scheme:dark){:root[data-cb="1"]:not([data-theme=light]){--ok:#56B4E9;--bad:#F0A33B;--why-b:#56B4E9;--trap-b:#F0A33B;--why:#0F2C3F;--trap:#3B2A12}}
 :root[data-cb="1"][data-theme=dark]{--ok:#56B4E9;--bad:#F0A33B;--why-b:#56B4E9;--trap-b:#F0A33B;--why:#0F2C3F;--trap:#3B2A12}
 
+/* softer warm neutrals reduce the bright-white page glare without reducing text contrast */
+:root[data-eye="1"]{--bg:#F1EEE5;--card:#FAF8F1;--ink:#282720;--mute:#555247;--line:#D6D1C4;--soft:#EAE6DA;--shadow:0 1px 2px rgba(45,40,30,.05),0 6px 18px rgba(45,40,30,.06);--shadow-s:0 1px 2px rgba(45,40,30,.06);--shadow-m:0 8px 22px rgba(45,40,30,.10);color-scheme:light}
+@media(prefers-color-scheme:dark){:root[data-eye="1"]:not([data-theme=light]){--bg:#191916;--card:#24231F;--ink:#F0EEE7;--mute:#C1BDB2;--line:#45433C;--soft:#2C2B26;--shadow:0 1px 2px rgba(0,0,0,.36),0 8px 22px rgba(0,0,0,.30);--shadow-s:0 1px 2px rgba(0,0,0,.32);--shadow-m:0 10px 26px rgba(0,0,0,.42);color-scheme:dark}}
+:root[data-eye="1"][data-theme=dark]{--bg:#191916;--card:#24231F;--ink:#F0EEE7;--mute:#C1BDB2;--line:#45433C;--soft:#2C2B26;--shadow:0 1px 2px rgba(0,0,0,.36),0 8px 22px rgba(0,0,0,.30);--shadow-s:0 1px 2px rgba(0,0,0,.32);--shadow-m:0 10px 26px rgba(0,0,0,.42);color-scheme:dark}
+
 /* on/off switches (the whole row is the button) */
 .swrow{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--line);padding:12px 0;min-height:56px;color:var(--ink);margin-top:8px}
 .swrow.first{border-top:0;margin-top:0}
@@ -450,3 +455,13 @@ body.noscroll{overflow:hidden}
 .swrow[aria-checked=true] .sw{background:var(--blue)}
 .swrow[aria-checked=true] .sw::after{transform:translateX(20px);background:#fff}
 .gl-letter{scroll-margin-top:calc(var(--bar-h) + 12px)}
+
+/* cards: three card sets as one segmented control, Shuffle and Glossary on the progress line */
+.seg.modes{margin:6px 0 0}
+.seg.modes .btn{padding:8px 4px;font-size:.8rem;line-height:1.2;min-height:44px;white-space:normal}
+.cardtools{justify-content:space-between;flex-wrap:nowrap;gap:8px;margin:6px 0 0}
+.cardtools .src{margin:0}
+.cardtools .row{flex-wrap:nowrap;gap:6px;flex:none}
+.cardtools .chip{min-height:36px;padding:4px 10px}
+/* the Join button never breaks "Join class" over two lines */
+.joinrow .btn{white-space:nowrap;flex:none}

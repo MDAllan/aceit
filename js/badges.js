@@ -1,12 +1,10 @@
 // Badge screens: the profile grid, the detail popup and the "you earned it" celebration.
 // All the rules live in badges-core.js (pure, tested in Node); the badges themselves live in badges/badges.json.
 import { h, ic, confetti, reducedMotion } from "./ui.js";
-import {
-  tierImageAlt, shownTier, tileAriaLabel, progressText, badgeTotals, nextGoalText, initials, formatCount, unitLabel,
-} from "./badges-core.js";
+import { tierImageAlt, shownTier, badgeTotals, nextGoalText, initials, formatCount, tileLine, badgeTitle } from "./badges-core.js";
 
 export {
-  SNAPSHOT_KEYS, evaluateBadges, tierImageAlt, validateBadgeConfig, badgeTotals, tileAriaLabel, progressText, nextGoalText,
+  SNAPSHOT_KEYS, TIER_NAMES, evaluateBadges, tierImageAlt, validateBadgeConfig, badgeTotals, badgeTitle, tileLine, progressText, nextGoalText,
   formatCount, unitLabel, singular, moreText, shownTier, initials, DEFAULT_CHEER, WAKE_CHEER, DONE_CHEER,
 } from "./badges-core.js";
 
@@ -36,12 +34,12 @@ let uid = 0;
 const nextId = (p) => `${p}-${++uid}`;
 
 /* ---------- a badge picture (colour when earned, grey when locked, a simple circle if the file is missing) ---------- */
-function art(tier, { locked = false, alt = "", size = 0, lazy = false } = {}) {
+function art(tier, { locked = false, alt = "", size = 0, lazy = false, ini = "" } = {}) {
   const wrap = h("span.bdg-art" + (locked ? ".locked" : ""));
   if (size) wrap.style.setProperty("--sz", size + "px");
   const fallback = () => {
     wrap.classList.add("noimg");
-    wrap.append(h("span.bdg-ini", { "aria-hidden": "true" }, initials(tier.name)));
+    wrap.append(h("span.bdg-ini", { "aria-hidden": "true" }, initials(ini || tier.name)));
     if (alt) { wrap.setAttribute("role", "img"); wrap.setAttribute("aria-label", alt); }
   };
   if (!tier.image) { fallback(); return wrap; }
@@ -68,7 +66,11 @@ function progressBar(frac, { label, now, max, text }) {
 }
 
 /* ---------- the grid for the profile ---------- */
-// model = evaluateBadges(...). Shows the families that are visible (the starter badges first, in config order).
+// model = evaluateBadges(...). One tile per family that is visible (the six starters first, then the others as the person levels up).
+// A tile shows the highest tier earned (in colour), or the first tier in grey while nothing is earned, and under it one short line:
+//   locked:  "Share a game with a friend to unlock"
+//   earned:  a thin progress bar and "4 more shares to unlock Silver"
+//   last:    "Max level reached"
 export function badgesSection(model, snap, { onOpen } = {}) {
   ensureStyles();
   const fams = (model && model.families) || [];
@@ -80,14 +82,16 @@ export function badgesSection(model, snap, { onOpen } = {}) {
   sec.append(h("p.bdg-sum", `${earned} of ${total} earned` + (shown.length < fams.length ? ". More badges appear as you level up." : "")));
   const open = (f) => (typeof onOpen === "function" ? onOpen(f) : openBadge(f, snap));
   sec.append(h("ul.bdg-grid", shown.map((f) => {
-    const t = shownTier(f), locked = !f.current;
-    const btn = h("button.bdg-tile" + (locked ? ".locked" : ".earned"), { type: "button", "aria-label": tileAriaLabel(f) });
+    const t = shownTier(f), locked = !f.current, line = tileLine(f);
+    const btn = h("button.bdg-tile" + (locked ? ".locked" : ".earned"), { type: "button" });
     btn.onclick = () => open(f);
-    // Everything inside a tile is decoration: the button's own label already says it all. The numbers ("3 / 7") are drawn by CSS
-    // (data-num) so the only text inside the button is the badge name, which the label starts with (WCAG 2.5.3 "label in name").
-    const meta = h("span.bdg-meta", { "aria-hidden": "true" },
-      h("span.bdg-name", t.name), h("span.bdg-prog", barOnly(f.progress), h("span.bdg-num.gen", { "data-num": progressText(f) })));
-    btn.append(art(t, { locked, lazy: true }), meta);
+    // the picture is decoration (its name is the text next to it); the words are the button's name
+    btn.append(
+      art(t, { locked, lazy: true, ini: f.name }),
+      h("span.bdg-name", h("span.sr", locked ? "Locked: " : "Unlocked: "), f.name),
+      !locked && t.name ? h("span.bdg-tier", t.name) : "",
+      line.kind === "progress" ? barOnly(f.progress) : "",
+      h("span.bdg-line." + line.kind, line.text));
     return h("li", btn);
   })));
   return sec;
@@ -146,71 +150,42 @@ function closeButton(label, onclick) {
 
 /* ---------- the detail popup ---------- */
 // family = one entry of evaluateBadges(...).families. snap is only used if the family has no value of its own.
+// Shows the badge name and current tier, how to unlock the next tier, and a small picture for every tier (colour = earned, grey = locked).
 export function openBadge(family, snap) {
   const f = family;
   if (!f || !Array.isArray(f.tiers) || !f.tiers.length) return null;
   const value = typeof f.value === "number" ? f.value : Number(snap && snap[f.metric]) || 0;
   const titleId = nextId("bdg-t");
-  const defIdx = f.current ? f.current.index : 0; // the picture shown at first: the best earned tier, or the first tier
-  let sel = defIdx;
+  const t = shownTier(f), locked = !f.current;
+  const next = f.next, sx = f.suffix || "";
 
-  const hero = h(".bdg-hero");
-  const title = h("h2.bdg-title", { id: titleId });
-  const status = h("p.bdg-status");
-  const how = h("p.bdg-how");
-  const prog = h(".bdg-progwrap");
-  const cheer = h("p.bdg-cheer");
-  const detail = h(".bdg-detail", { "aria-live": "polite" }, status, how, prog, cheer);
-  const steps = [];
+  const status = h("p.bdg-status",
+    f.current && f.current.name ? h("span.bdg-chip.tier", f.current.name) : "",
+    locked ? h("span.bdg-chip", ic("lock", 14), "Locked") : h("span.bdg-chip.ok", ic("check", 14), next ? "Unlocked" : "Max level"));
+  const goal = h(".bdg-goal");
+  if (next) {
+    goal.append(
+      h("p.bdg-next", next.name ? `Next: ${next.name}` : "How to unlock"),
+      h("p.bdg-how", next.how),
+      progressBar(f.progress, { label: `Progress toward ${next.name || f.name}`, now: value, max: next.at, text: `${formatCount(Math.min(value, next.at))}${sx} / ${formatCount(next.at)}${sx}` }),
+      h("p.bdg-cheer", f.cheer));
+  } else goal.append(h("p.bdg-next", "Max level reached"), h("p.bdg-cheer", f.cheer));
 
-  function paint() {
-    const t = f.tiers[sel], def = sel === defIdx;
-    hero.replaceChildren(art(t, { locked: !t.earned, alt: tierImageAlt(f, t) }));
-    title.textContent = t.name;
-    status.replaceChildren(
-      h("span.bdg-chip.rank", `${t.rank} rank`),
-      t.earned ? h("span.bdg-chip.ok", ic("check", 14), "Earned") : h("span.bdg-chip", ic("lock", 14), "Locked"));
-    const sx = f.suffix || "";
-    if (def) {
-      how.textContent = f.next ? `Next goal: ${f.next.how}` : "You have unlocked every tier";
-      prog.replaceChildren(f.next
-        ? progressBar(f.progress, { label: `Progress toward ${f.next.name}`, now: value, max: f.next.at, text: progressText(f) })
-        : progressBar(1, { label: `${f.name} badge complete`, now: 1, max: 1, text: "Complete" }));
-      cheer.textContent = f.cheer;
-    } else if (t.earned) {
-      how.textContent = `Earned: ${t.how}`;
-      prog.replaceChildren(progressBar(1, { label: `${t.name} earned`, now: 1, max: 1, text: "Earned" }));
-      cheer.textContent = "You earned this one. Nice work!";
-    } else {
-      const left = Math.max(0, Math.ceil(t.at - value));
-      how.textContent = `How to unlock: ${t.how}`;
-      prog.replaceChildren(progressBar(Math.min(1, value / t.at), { label: `Progress toward ${t.name}`, now: value, max: t.at, text: `${formatCount(Math.min(value, t.at))}${sx} / ${formatCount(t.at)}${sx}` }));
-      cheer.textContent = `${formatCount(left)} more ${unitLabel(f, left)} to unlock ${t.name}.`;
-    }
-    steps.forEach((b, i) => b.setAttribute("aria-pressed", i === sel ? "true" : "false"));
-  }
-
-  const ladder = h("ol.bdg-ladder", f.tiers.map((t, i) => {
-    const b = h("button.bdg-step" + (t.earned ? ".earned" : ".locked"), { type: "button", "aria-pressed": "false", "aria-label": `${t.name}, ${t.how}, ${t.rank} rank, ${t.earned ? "earned" : "locked"}` });
-    b.onclick = () => { sel = i; paint(); };
-    b.append(
-      h("span.bdg-stepart", art(t, { locked: !t.earned, size: 52 }), t.earned ? h("span.bdg-tick", { "aria-hidden": "true" }, ic("check", 12)) : ""),
-      h("span.bdg-step-name", t.name), " ", h("span.bdg-step-how", t.how)); // the space keeps the two texts apart for tools that read the button text
-    steps.push(b);
-    return h("li", b);
-  }));
+  const row = h("ul.bdg-tiers", { "aria-label": `All ${f.name} tiers` }, f.tiers.map((x) => h("li" + (x.earned ? ".earned" : ".locked"),
+    h("span.bdg-tierart", art(x, { locked: !x.earned, size: 48, ini: f.name, alt: tierImageAlt(f, x) + (x.earned ? ", unlocked" : ", locked") }), x.earned ? h("span.bdg-tick", { "aria-hidden": "true" }, ic("check", 12)) : ""),
+    h("span.bdg-tiername", x.name || f.name))));
 
   const x = closeButton("Close", () => entry.close());
   const entry = openDialog({
     cls: "bdg-detail-dlg", labelId: titleId,
     content: [
-      h(".bdg-dhead", h("p.bdg-eyebrow", `${f.name} badge`), x),
-      hero, title, detail,
-      h("h3.bdg-lh", "All the steps"), ladder,
+      h(".bdg-dhead", h("p.bdg-eyebrow", "Badge"), x),
+      h(".bdg-hero", art(t, { locked, ini: f.name, alt: tierImageAlt(f, t) + (locked ? ", locked" : "") })),
+      h("h2.bdg-title", { id: titleId }, f.name), status, goal,
+      h("h3.bdg-lh", f.tiers.length > 1 ? "All tiers" : "This badge"), row,
     ],
     focus: () => x,
   });
-  paint();
   return entry;
 }
 
@@ -249,9 +224,9 @@ function show({ it, model, n, of }) {
     role: "alertdialog", cls: "bdg-cele", labelId: titleId, descId,
     content: [
       of > 1 ? h("p.bdg-eyebrow", `Badge ${n} of ${of}`) : "",
-      h(".bdg-hero.bdg-glow" + (calm ? "" : ".bdg-popin"), art(t, { alt: tierImageAlt(f, t) })),
-      h("h2.bdg-title", { id: titleId }, `Congrats! You've earned the ${t.name} badge!`),
-      h(".bdg-desc", { id: descId }, h("p.bdg-status", h("span.bdg-chip.rank", `${t.rank} rank`)), h("p.bdg-how", nextGoalText(f, t))),
+      h(".bdg-hero.bdg-glow" + (calm ? "" : ".bdg-popin"), art(t, { ini: f.name, alt: tierImageAlt(f, t) })),
+      h("h2.bdg-title", { id: titleId }, `Congrats! You've earned ${badgeTitle(f, t)}!`),
+      h(".bdg-desc", { id: descId }, h("p.bdg-how", nextGoalText(f, t))),
       h(".bdg-actions", ok, skip),
     ],
     focus: () => ok,

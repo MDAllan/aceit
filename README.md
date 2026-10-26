@@ -28,10 +28,11 @@ Preview the staff screens with sample data (no login, no database), on localhost
 - `supabase/patch8.sql` (acceptance of the Terms, account deletion with a 22 day wait and a daily job, the customer service inbox, admin instructor tools, admin lecture editing with history) is the source of `RUN-ME-4.sql` and of the end of `schema.sql` too. Run `RUN-ME-4.sql` after `RUN-ME-2.sql` and `RUN-ME-3.sql`; see `docs/SCHOOL-SETUP.md` step 0c.
 
 ## Checks
-- `npm run check`: content checks (JSON, ids, answers, images, manifest, student-safe text), SQL copies in step, database calls match the database, logic tests, content tests (the rules for what instructors add).
+- `npm run check`: content checks (JSON, ids, answers, images, manifest, student-safe text), SQL copies in step, database calls match the database, logic tests, content tests (the rules for what instructors add), the glossary rule, the Terms and Privacy Policy (required clauses, versions, no contact details), the badges (config, pictures, every threshold) and the numbers behind them, and the admin edit-mode rules.
 - `node tools/test_sql.mjs` (and `MODE=upgrade node tools/test_sql.mjs`): 490+ database security tests on a throwaway Postgres. Install it first: `npm i --no-save embedded-postgres pg`.
 - `node tools/test_sql_scale.mjs`: how fast the dashboards answer with 6,000 students in 200 classes (all under half a second).
 - `node tools/vendor.mjs`: rebuilds the self-hosted Supabase client and fonts (developer only).
+- `node tools/browser/run.mjs`: every browser test (needs Chrome and `python -m http.server 8765`): staff screens, real code paths, two-step login, accessibility scans of about 100 screens in light and dark, the phone checks at 375 px (`phone-shots.mjs` also saves a picture of every student screen to your temp folder), account flows, and admin edit mode.
 - CI runs all of these on every push (`.github/workflows/check.yml`).
 
 ## Documents
@@ -43,3 +44,4 @@ Preview the staff screens with sample data (no login, no database), on localhost
 | `docs/PITCH.md`, `docs/PILOT-PLAN.md` | Talking to a school |
 | `docs/legal/` | Drafts for a lawyer: privacy policy, terms, data processing agreement, sub-processors, retention, incident response |
 | `docs/ROADMAP.md` | What is built and what comes next |
+| `badges/README.md` | The site owner: add or change a badge (drop in a PNG, add a few lines of `badges.json`) |

@@ -7,6 +7,7 @@ import { go, field, busy, plural, tile, empty, warn, crumb, loading, fail, when 
 import { problem, tidy, summary, ICONS, KIND_NAME, LIMITS } from "./itemrules.js";
 import { parseQuestions, parseCards } from "./bulk.js";
 import { mark } from "./classcontent.js";
+import { checkTerm } from "./glossaryrules.js";
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
 const STATUS = { published: ["Published", "ok"], review: ["Waiting for approval", "amber"], draft: ["Draft", "mute"] };
@@ -239,7 +240,11 @@ function editor(ctx, kind, id, ref) {
   } else if (kind === "card") {
     const front = h("input", { value: b.front || "", maxlength: 200, "aria-label": "Front of the card" }), back_ = h("textarea", { rows: 3, maxlength: 800, "aria-label": "Back of the card" }); back_.value = b.back || "";
     const short = h("input", { value: b.short || "", maxlength: 100, "aria-label": "Short version" });
-    form.append(field("Front: the term or question", front), field("Back: the meaning or answer", back_), field("Short version (optional)", short, "A shorter wording for the matching and memory games. Leave empty to use the start of the back."));
+    // a flashcard may be a question; it is also listed in the class glossary only when its front is a term (rules: js/glossaryrules.js)
+    const gl = h(".src", { style: "margin:-6px 0 8px", "aria-live": "polite" });
+    const glHint = () => { const c = checkTerm(front.value); gl.textContent = !front.value.trim() ? "A term, vocabulary word or name (up to 4 words) is also listed in the class glossary." : c.ok ? "This card is also listed in the class glossary." : "A flashcard only, not in the glossary. " + c.why; };
+    front.addEventListener("input", glHint); glHint();
+    form.append(field("Front: the term or question", front), gl, field("Back: the meaning or answer", back_), field("Short version (optional)", short, "A shorter wording for the matching and memory games. Leave empty to use the start of the back."));
     collect = () => ({ front: front.value, back: back_.value, short: short.value });
   } else if (kind === "note") {
     const title = h("input", { value: b.title || "", maxlength: 150, "aria-label": "Note title" }), pts = h("textarea", { rows: 6, maxlength: 7600, "aria-label": "Points" }); pts.value = (b.bullets || []).join("\n");

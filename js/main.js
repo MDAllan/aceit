@@ -10,6 +10,7 @@ import { viewProfile, avatarNode, avatarStyle, maybeAskReview } from "./profile.
 import { viewHelp } from "./support.js";
 import { adminCard } from "./admintools.js";
 import { viewGlossary } from "./glossary.js";
+import * as E from "./editmode.js";
 import { shareGame, parseChallenge, gameName, SCORED } from "./share.js";
 import { computeNotes, notesCards, daysUntil } from "./notify.js";
 import * as Account from "./account.js";
@@ -20,12 +21,12 @@ import { loadBadgeConfig, evaluateBadges, badgesSection, celebrate } from "./bad
 // This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
 if (window.top !== window.self) { document.documentElement.style.display = "none"; try { window.top.location.href = window.self.location.href; } catch {} }
 
-// accessibility options live on this device (text size, easy-read font, reduced motion)
+// accessibility options live on this device (text size, easy-read font, reduced motion and appearance)
 const A11Y_KEY = "erth209:a11y";
 const a11y = () => { try { return JSON.parse(localStorage.getItem(A11Y_KEY)) || {}; } catch { return {}; } };
 function applyA11y() {
   const o = a11y(), r = document.documentElement;
-  r.dataset.fs = o.fs || "md"; r.dataset.motion = o.motion ? "reduce" : ""; r.dataset.font = o.easy ? "easy" : ""; r.dataset.cb = o.cb ? "1" : "";
+  r.dataset.fs = o.fs || "md"; r.dataset.motion = o.motion ? "reduce" : ""; r.dataset.font = o.easy ? "easy" : ""; r.dataset.cb = o.cb ? "1" : ""; r.dataset.eye = o.eye ? "1" : "";
 }
 function setA11y(patch) { try { localStorage.setItem(A11Y_KEY, JSON.stringify({ ...a11y(), ...patch })); } catch {} applyA11y(); }
 
@@ -75,14 +76,33 @@ function buildLecs() {
 }
 const inflight = {};
 const getJson = async (url) => { const r = await fetch(url); if (!r.ok) throw new Error(r.status); return r.json(); };
+// l._raw is the exact body the lecture was loaded from (the object the database or the published file gave). Admin edit mode changes it and saves it;
+// the lists the screens use (l.sections, l.cards, l.quiz) are rebuilt from it. l._orig is the first text of it (the published version, kept for the first save).
+function adopt(l, full, fromDb, at) {
+  const { subject, color } = l, old = l._raw, text = JSON.stringify(full);
+  if (old) for (const k of Object.keys(old)) if (!(k in full) && k !== "id" && k !== "color") delete l[k]; // a part of the lecture an undo took away
+  full.sections ||= []; full.cards ||= []; full.quiz ||= [];
+  Object.assign(l, full, { subject, color, _full: true }); l.games = gamesFor(full);
+  l._raw = full; l._fromDb = fromDb; l._stamp = at || null; l._at = Date.now(); l._snap = text; l._orig ||= text;
+  rebuildLecture(l);
+}
+const rebuildLecture = (l) => { l._base = { sections: l._raw.sections, cards: l._raw.cards, quiz: l._raw.quiz }; applyExtras(l); };
+// a lecture is read from the database again when it was loaded more than two minutes ago, so students soon see what an admin changed
+const STALE_MS = 120000;
+const stale = (l) => !!l._raw && !S.DEMO && navigator.onLine !== false && !l._pending && !l._failed && Date.now() - (l._at || 0) > STALE_MS;
 async function loadFull(l) {
-  if (l._full) return;
+  if (l._full && !stale(l)) return;
   inflight[l.id] ||= (async () => {
+    if (l._full) { // shown before: only a newer copy from the database counts; offline or on an error the lecture stays as it is
+      l._at = Date.now();
+      const at = await S.dbLectureAt(l.id); // a tiny question first: the lecture is downloaded again only when it was saved since
+      if (at && at !== l._stamp && !l._pending) { const row = await S.dbLectureRow(l.id); if (row && !l._pending) adopt(l, row.body, true, row.at); }
+      return;
+    }
     // logged-in students read their lectures from the database, where only members of the class can see them;
     // local previews and the first rollout fall back to the published files
-    const full = (S.DEMO ? null : await S.dbLecture(l.id)) || (await getJson("content/" + l.id + ".json"));
-    const { subject, color } = l; Object.assign(l, full, { subject, color, _full: true }); l.cards ||= []; l.games = gamesFor(full);
-    l._base = { sections: l.sections, cards: l.cards, quiz: l.quiz }; applyExtras(l);
+    const db = S.DEMO ? null : await S.dbLectureRow(l.id);
+    adopt(l, db ? db.body : await getJson("content/" + l.id + ".json"), !!db, db?.at);
   })();
   try { await inflight[l.id]; } finally { delete inflight[l.id]; }
 }
@@ -108,6 +128,7 @@ async function boot() {
   SUBJECTS = subs; MAN = man;
   BADGE_CFG = await loadBadgeConfig();
   SUBJECTS.forEach((sj) => (sj.color = CLASS_COLORS[sj.id] || "#324586"));
+  E.setHost({ route, rebuild: rebuildLecture, adopt: (l, body) => adopt(l, body, true), gotoPage: (l, i) => { pageIdx[l.id] = i; } });
   if (S.DEMO) { S.setDemoContent(() => Demo.items(), (p) => Demo.media(p)); await S.loadClassItems(); }
   buildLecs();
   baselineBadges();
@@ -166,6 +187,7 @@ function gate() {
   if (!S.session) return "auth";
   if (!S.profile) return "setup";
   if (S.profile.blocked) return "blocked";
+  if (Account.needsTerms(TERMS_VERSION, PRIVACY_VERSION)) return "terms"; // not agreed yet, or the Terms changed since
   if (S.mfaGate) return "mfa";
   return null;
 }
@@ -194,6 +216,7 @@ async function route() {
   const claimed = S.takeInvitesClaimed(); if (claimed) toast("Your invite was accepted. Your Workspace tab is ready.");
   if (S.takeDeletionCancelled()) toast("Welcome back. Your account deletion was cancelled and your account is restored.", 5000);
   if (builtVersion !== S.itemsVersion || builtDrafts !== wantDrafts()) buildLecs(); // classes or their content changed since the lists were built
+  baselineBadges(); // a person who just signed up or logged in has no saved badge baseline yet (it returns at once when there is one)
   // Home is the only place to pick a class: these screens show the class opened from Home and nothing else
   if (["cards", "practice", "progress", "glossary", "search"].includes(parts[0]) && !clsOf()) { toast(myClasses().length ? "Pick a class on Home first." : "Join a class first."); location.hash = "#/"; return; }
   const page = parts[0] || "", need = [];
@@ -201,7 +224,7 @@ async function route() {
   else if (["cards", "practice", "progress", "search", "glossary"].includes(page)) need.push(...pool_());
   else if (page === "admin" && !S.isV2()) need.push(...LECS); // legacy: the older admin screen needs every lecture
   const exSj = page === "s" ? parts[1] : null;
-  if (need.some((l) => !l._full) || (exSj && !(exSj in EXAMS))) {
+  if (need.some((l) => !l._full || stale(l)) || (exSj && !(exSj in EXAMS))) {
     const t = setTimeout(() => { if (my === routeSeq) app.replaceChildren(h("p.boot", "Loading...")); }, 180);
     try { await Promise.all([...need.map(loadFull), exSj ? loadExams(exSj) : null]); } catch { clearTimeout(t); app.replaceChildren(h("p.boot", "Couldn't load this page. Check your connection and try again.")); return; }
     clearTimeout(t);
@@ -223,7 +246,7 @@ function shell(parts, query) {
       admin && !S.pref("student") ? h("button.chip.editpill" + (S.pref("edit") ? ".on" : ""), { "aria-pressed": String(S.pref("edit")), onclick: () => { S.setPref("edit", !S.pref("edit")); route(); } }, ic("pencil", 14), "Edit") : "",
       h("button.chip.wide-only", { "aria-label": "Search your class", onclick: () => (location.hash = "#/search") }, ic("zoom", 16)),
       h("button.lvl", { "aria-label": `Lv ${x.lvl}, open your profile`, onclick: () => (location.hash = "#/profile") }, "Lv " + x.lvl),
-      h("button.me", { "aria-label": "Your profile" + (first ? ", " + first : ""), onclick: () => (location.hash = "#/profile") }, first ? h("span.nm", first) : "", h("span.avatar", { style: avatarStyle() }, avatarNode(18)),
+      h("button.me", { onclick: () => (location.hash = "#/profile") }, first ? h("span.nm", first) : "", h("span.avatar", { style: avatarStyle(), "aria-hidden": "true" }, avatarNode(18)), h("span.sr", first ? ", your profile" : "Your profile"),
         S.DEMO ? "" : h("span.syncdot#syncdot", { role: "status", "aria-label": "Sync status" })),
     )),
     h("main.wrap#view"),
@@ -417,7 +440,7 @@ function joinCard() {
     const sj = SUBJECTS.find((x) => x.id === r.cid); setCls(r.cid); toast(`\u{1F389} Joined ${r.name || (sj ? sj.name : "class")}!`); confetti(); route();
   };
   go.onclick = submit; inp.onkeydown = (e) => { if (e.key === "Enter") submit(); };
-  return h(".card", { style: "margin-bottom:14px" }, h("h3", "\u{1F39F}\uFE0F Join a class"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "Each class has its own code from your instructor."), h(".row", { style: "flex-wrap:nowrap" }, inp, go), err);
+  return h(".card", { style: "margin-bottom:14px" }, h("h3", "Join a class"), h("p", { style: "margin:0 0 8px;color:var(--mute);font-size:.9rem" }, "Each class has its own code from your instructor."), h(".row.joinrow", { style: "flex-wrap:nowrap" }, inp, go), err);
 }
 // three small steps for a brand-new student; disappears once done or dismissed
 function onboardCard() {
@@ -509,7 +532,7 @@ function viewSubject(v, id) {
   }
   const allCards = ls.flatMap((l) => l.cards || []), due = S.dueCount(allCards);
   v.append(h(".card.review", due ? { style: "border-left:6px solid var(--coral)" } : {},
-    h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("div", h("b", due ? `\u{1F5D3}\uFE0F ${due} card${due === 1 ? "" : "s"} to review today` : "\u2728 You're all caught up"), h(".src", { style: "margin:2px 0 0" }, due ? "Reviewing right on time is the fastest way to remember." : "Cards come back at the best time for your memory.")),
+    h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("div", h("b", due ? `${due} card${due === 1 ? "" : "s"} to review today` : "You\'re all caught up"), h(".src", { style: "margin:2px 0 0" }, due ? "Reviewing right on time is the fastest way to remember." : "Cards come back at the best time for your memory.")),
       due ? h("button.btn.sm", { onclick: () => (location.hash = "#/cards/due") }, "Review now") : "")));
   v.append(h(".grid", { style: "margin-top:12px" }, ls.map((l, i) => {
     const s = S.lectureStats(l);
@@ -531,7 +554,7 @@ function viewSubject(v, id) {
 const pool_ = () => { const c = clsOf(); return c ? open_().filter((l) => l.subject === c.id) : []; };
 
 /* ---------- lecture ---------- */
-const TABS = [["notes", "\u{1F4D6}", "Notes"], ["cards", "\u{1F0CF}", "Cards"], ["quiz", "\u2705", "Quiz"], ["games", "\u{1F3AE}", "Games"]];
+const TABS = [["notes", "notes", "Notes"], ["cards", "cards", "Cards"], ["quiz", "quiz", "Quiz"], ["games", "games", "Games"]];
 function viewLecture(v, id, tab) {
   const l = LECS.find((x) => x.id === id);
   if (!l) return viewHome(v);
@@ -542,17 +565,18 @@ function viewLecture(v, id, tab) {
   v.append(
     h("button.chip", { style: "margin-top:8px", onclick: () => (location.hash = `#/s/${l.subject}`) }, ic("left", 14), subjOf(l)?.name || "Back"),
     h(".hero", { style: "padding-bottom:0" }, h(".row", { style: "flex-wrap:nowrap" }, emojiTile(l, 48), h("div", { style: "flex:1" }, h("h1", l.title), h("p", l.chapter || "")), ring(s.pct, l.color, 52))),
-    h(".tabs", TABS.map(([k, icn, t]) => h("button.tab" + (k === tab ? ".on" : ""), { onclick: () => (location.hash = `#/l/${id}/${k}`) }, h("span.em", icn), t))),
+    h(".tabs", TABS.map(([k, icn, t]) => h("button.tab" + (k === tab ? ".on" : ""), { onclick: () => (location.hash = `#/l/${id}/${k}`) }, h("span.em", ic(icn, 20)), t))),
   );
+  if (E.editing()) { const tb = E.toolbar(l, tab, { section: () => l.sections[pageIdx[l.id] || 0] }); if (tb) v.append(tb); } // admin edit mode only
   const body = h("div"); v.append(body);
   if (tab === "notes") notes(body, l);
-  if (tab === "cards") cards(body, l.cards, l.color, "all", l.id);
+  if (tab === "cards") cards(body, l.cards, l.color, "all", l.id, cardHook([l]));
   if (tab === "quiz") quizMenu(body, l);
   if (tab === "games") renderGame(body, l, LECS);
 }
 
 /* ----- notes: one topic per page, arrows to move ----- */
-const BOX = { why: ["\u{1F4A1}", "Why it works"], trick: ["\u{1F9E0}", "Memory trick"], trap: ["\u26A0\uFE0F", "Exam trap (admin only)"] };
+const BOX = { why: ["bulb", "Why it works"], trick: ["brain", "Memory trick"], trap: ["alert", "Exam trap (admin only)"] };
 function acc(cls, icon, title, content, open) {
   const body = h(".in", content);
   const el = h(".acc." + cls + (open ? ".open" : ""), h("button", { "aria-expanded": !!open }, h("span.ico", icon), title, h("span.chev", ic("down", 18))), h(".body", h("div", body)));
@@ -567,19 +591,20 @@ function lightbox(im) {
   document.body.append(lb);
 }
 // One box: a picture and its own explanation. Changing the picture (1/3, 2/3...) changes the text with it.
-function stepper(sec) {
+function stepper(sec, X) {
   const steps = sec.steps?.length ? sec.steps : (sec.images?.length ? sec.images.map((im) => ({ img: im, bullets: [] })) : []);
   if (!steps.length) return "";
+  if (X && !sec.steps?.length) X = null; // pictures that are only a list of images (no steps) are not edited
   let i = 0, dir = 1;
   const wrap = h(".stepper");
   const draw = () => {
     const st = steps[i], im = st.img, n = steps.length;
     const go = (d) => { dir = d; i = (i + d + n) % n; draw(); };
     const fig = im ? h(".fig",
-      h("button.figbtn", { "aria-label": "Enlarge picture", onclick: () => lightbox(im) }, pic({ ...im, alt: im.alt || sec.title }, { loading: "lazy" }), h("span.zoom", ic("zoom", 14), "Enlarge")),
+      h("button.figbtn", { "aria-label": X ? "Edit picture" : "Enlarge picture", onclick: () => (X ? X.pic(st, draw) : lightbox(im)) }, pic({ ...im, alt: im.alt || sec.title }, { loading: "lazy" }), h("span.zoom", ic(X ? "pencil" : "zoom", 14), X ? "Edit" : "Enlarge")),
       n > 1 ? [h("button.nv.l", { "aria-label": "Previous", onclick: (e) => { e.stopPropagation(); go(-1); } }, ic("left", 18)), h("button.nv.r", { "aria-label": "Next", onclick: (e) => { e.stopPropagation(); go(1); } }, ic("right", 18))] : "",
-      n > 1 ? h("span.cnt", `${i + 1} / ${n}`) : "") : "";
-    const txt = h(".steptxt" + (dir < 0 ? ".back" : ""),
+      n > 1 ? h("span.cnt", `${i + 1} / ${n}`) : "") : X ? X.addPic(st, draw) : "";
+    const txt = X ? X.stepText(st, draw, dir < 0) : h(".steptxt" + (dir < 0 ? ".back" : ""),
       st.title ? h("h3", md(st.title)) : "",
       (st.bullets || []).length ? h("ul.pts", st.bullets.map((x) => h("li", md(x)))) : "");
     wrap.replaceChildren(fig,
@@ -599,7 +624,7 @@ function notes(b, l) {
   const readSet = () => S.progress().read[l.id] || {};
   const draw = () => {
     pageIdx[l.id] = i;
-    const p = pages[i], refs = S.canSeeRefs();
+    const p = pages[i], refs = S.canSeeRefs(), X = E.forPage(l, p, draw); // X: the admin edit mode tools for this topic (null for everyone else)
     const sel = h("select", { "aria-label": "Jump to topic", onchange: (e) => go(+e.target.value) }, pages.map((q, k) => h("option", { value: k, selected: k === i }, `${k + 1}. ${q.title}`)));
     const go = (k, d) => { if (k < 0 || k >= pages.length) return; if (!pages[i].glance && !readSet()[pages[i].id]) floatXP("+3 XP"); if (!pages[i].glance) S.markRead(l.id, pages[i].id); dir = d ?? (k > i ? 1 : -1); i = k; draw(); if (i === pages.length - 1 && pages.every((q) => q.glance || readSet()[q.id])) { confetti(60); } window.scrollTo({ top: 0, behavior: "smooth" }); };
     window.__next = () => go(i + 1); window.__prev = () => go(i - 1);
@@ -608,12 +633,13 @@ function notes(b, l) {
       h(".pager", h("button.arrow", { "aria-label": "Previous topic", disabled: i === 0, onclick: () => go(i - 1) }, ic("left", 22)), h(".mid", sel), h("button.arrow", { "aria-label": "Next topic", disabled: i === pages.length - 1, onclick: () => go(i + 1) }, ic("right", 22))),
       h(".dots", pages.map((q, k) => h("i" + (k === i ? ".on" : readSet()[q.id] ? ".done" : "")))),
       h(".card.page" + (dir < 0 ? ".back" : ""),
-        h("h2", p.title, refs && p.slides ? h("span.refchip", "Slides " + p.slides) : "", p.custom ? h("span.pill.mute", { style: "font-size:.7rem" }, "Your instructor") : "", p.draft ? h("span.pill.bad", { style: "font-size:.7rem" }, "Draft") : ""),
-        i === 0 && l.intro ? h("p", { style: "color:var(--mute);margin:0 0 6px" }, md(l.intro)) : "",
-        stepper(p),
-        (p.bullets || []).length ? h("ul.pts", p.bullets.map((x) => h("li", md(x)))) : "",
-        boxes.map((x) => acc(x.type, BOX[x.type][0], BOX[x.type][1], md(x.text), false)),
-        p.table ? (p.glance ? table(p.table) : acc("cmp", "\u{1F4CA}", "Compare table", table(p.table), false)) : "",
+        h("h2", X ? X.title() : p.title, refs && p.slides ? h("span.refchip", "Slides " + p.slides) : "", p.custom ? h("span.pill.mute", { style: "font-size:.7rem" }, "Your instructor") : "", p.draft ? h("span.pill.bad", { style: "font-size:.7rem" }, "Draft") : ""),
+        X && i === 0 ? X.intro() : i === 0 && l.intro ? h("p", { style: "color:var(--mute);margin:0 0 6px" }, md(l.intro)) : "",
+        stepper(p, X),
+        X ? X.bullets() : (p.bullets || []).length ? h("ul.pts", p.bullets.map((x) => h("li", md(x)))) : "",
+        boxes.map((x) => acc(x.type, ic(BOX[x.type][0], 18), BOX[x.type][1], X ? X.box(x) : md(x.text), !!X)),
+        p.table ? (p.glance ? table(p.table) : acc("cmp", ic("chart", 18), "Compare table", table(p.table), false)) : "",
+        X ? X.pageTools() : "",
         refs && p.sourceNotes ? h(".src.admin", "Source: " + p.sourceNotes.join(" · ")) : "",
       ),
       h(".row", { style: "justify-content:space-between;margin-top:12px" },
@@ -626,21 +652,20 @@ function notes(b, l) {
 }
 
 /* ----- flashcards ----- */
-export function cards(b, all, color, startMode = "all", deckId = null) {
+// admin edit mode: Edit and Delete under the card being studied (nothing for anyone else)
+const cardHook = (LS) => (E.editing() ? (c, redraw) => { const o = LS.find((x) => E.canEdit(x) && x._raw.cards.includes(c)); return o ? E.cardTools(o, c, redraw) : ""; } : null);
+export function cards(b, all, color, startMode = "all", deckId = null, edit = null) {
   if (!all.length) return b.append(h(".card", { style: "margin-top:10px" }, h("p", { style: "margin:0" }, "There are no flashcards in this lecture yet.")));
   let deck = startMode === "due" ? S.dueCards(all) : all.slice(), i = 0, mode = startMode === "due" && deck.length ? "due" : "all";
   if (!deck.length) deck = all.slice();
   const draw = () => {
     b.replaceChildren();
     const known = all.filter((c) => S.cardState(c.id) === "know").length;
-    const row = h(".swipe", { role: "group", "aria-label": "Card sets" },
-      h("button.chip" + (mode === "all" ? ".on" : ""), { onclick: () => { mode = "all"; deck = all.slice(); i = 0; draw(); } }, "All cards"),
-      h("button.chip" + (mode === "due" ? ".on" : ""), { onclick: () => { mode = "due"; deck = S.dueCards(all); i = 0; draw(); } }, `Due today (${S.dueCount(all)})`),
-      h("button.chip" + (mode === "missed" ? ".on" : ""), { onclick: () => { mode = "missed"; deck = all.filter((c) => S.cardState(c.id) !== "know"); i = 0; draw(); } }, "Still learning"),
-      h("button.chip", { onclick: () => { deck = shuffle(deck); i = 0; draw(); } }, "Shuffle"),
-      h("button.chip", { onclick: () => (location.hash = "#/glossary") }, "Glossary"));
-    b.append(row, h(".bar", { style: `--c:${color}` }, h("i", { style: `width:${all.length ? (known / all.length) * 100 : 0}%` })), h(".src", `${known} of ${all.length} known`));
-    requestAnimationFrame(() => row.querySelector(".on")?.scrollIntoView({ inline: "center", block: "nearest" }));
+    // the three card sets are a segmented control (all visible at once); Shuffle and Glossary sit on the progress line
+    const sets = [["all", "All cards", () => all.slice()], ["due", `Due today (${S.dueCount(all)})`, () => S.dueCards(all)], ["missed", "Still learning", () => all.filter((c) => S.cardState(c.id) !== "know")]];
+    const seg = h(".seg.modes", { role: "group", "aria-label": "Card sets" }, sets.map(([k, t, pick]) => h("button.btn.sm" + (mode === k ? "" : ".alt"), { "aria-pressed": String(mode === k), onclick: () => { mode = k; deck = pick(); i = 0; draw(); } }, t)));
+    b.append(seg, h(".bar", { style: `--c:${color};margin-top:10px` }, h("i", { style: `width:${all.length ? (known / all.length) * 100 : 0}%` })),
+      h(".row.cardtools", h(".src", `${known} of ${all.length} known`), h(".row", h("button.chip", { onclick: () => { deck = shuffle(deck); i = 0; draw(); } }, ic("refresh", 14), "Shuffle"), h("button.chip", { onclick: () => (location.hash = "#/glossary") }, ic("list", 14), "Glossary"))));
     if (!deck.length) { b.append(h(".card.pop", { style: "margin-top:14px;text-align:center" }, h("h2", "Nothing left here!"), h("p", "You know every card in this set."))); confetti(70); return; }
     if (i >= deck.length) {
       const missed = all.filter((c) => S.cardState(c.id) !== "know");
@@ -669,7 +694,7 @@ export function cards(b, all, color, startMode = "all", deckId = null) {
     b.append(h(".pager", { style: "margin-top:12px" }, h("button.arrow", { "aria-label": "Previous card", disabled: i === 0, onclick: window.__prev }, ic("left", 22)),
       h(".mid.src", { style: "text-align:center;margin:0" }, `Card ${i + 1} of ${deck.length}`), h("button.arrow", { "aria-label": "Next card", onclick: window.__next }, ic("right", 22))),
       fc, h(".swipehint", "Tap to flip. Swipe right if you know it, left if you're still learning."), h(".row", { style: "justify-content:center;margin-top:8px" },
-        h("button.btn.warn", { onclick: () => mark("learning") }, "\u{1F615} Still learning"), h("button.btn.ok", { onclick: () => mark("know") }, "\u{1F60E} I know it")));
+        h("button.btn.warn", { onclick: () => mark("learning") }, "\u{1F615} Still learning"), h("button.btn.ok", { onclick: () => mark("know") }, "\u{1F60E} I know it")), edit ? edit(c, draw) : "");
   };
   draw();
 }
@@ -682,6 +707,7 @@ function confRow(qid) {
   return row;
 }
 function quizMenu(b, l) {
+  if (E.canEdit(l)) b.append(E.questionPanel(l)); // admin edit mode: every question with Edit and Delete, and Add question
   const qs = l.quiz;
   if (!qs?.length) return b.append(h(".card", "No questions yet."));
   const pr = S.progress().quiz, wrong = qs.filter((q) => pr[q.id]?.last === false).sort((x, y) => (pr[y.id]?.conf === "sure") - (pr[x.id]?.conf === "sure"));
@@ -719,7 +745,7 @@ export function runQuiz(b, list, title, color, back, examOpts = {}) {
         S.recordAnswer(q.id, ok);
         fb.append(confRow(q.id));
         opts.forEach((x, j) => { if (j === q.answer) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
-        fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), combo >= 3 ? h("span.combo", `\u{1F525} ${combo} in a row! `) : "", md(q.why), S.canSeeRefs() ? h(".src.admin", "Source: " + q.source) : ""),
+        fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), combo >= 3 ? h("span.combo", `\u{1F525} ${combo} in a row! `) : "", md(q.why), S.canSeeRefs() && q.source ? h(".src.admin", "Source: " + q.source) : ""),
           h("button.btn", { style: "margin-top:10px", onclick: () => { i++; draw(); } }, i + 1 === list.length ? "See score" : "Next", ic("right", 18)));
       };
       return bt;
@@ -738,7 +764,7 @@ function viewAllCards(v, startMode) {
     const show = (sel) => {
       chips.replaceChildren(h("button.chip" + (!sel ? ".on" : ""), { onclick: () => show(null) }, "All lectures"),
         ...LS.map((l) => h("button.chip" + (sel === l ? ".on" : ""), { onclick: () => show(l) }, [ic(symOf(l), 15), l.title])));
-      body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LS.flatMap((l) => l.cards)), sel ? sel.color : "var(--c)", startMode === "due" && !sel ? "due" : "all", sel ? sel.id : "class:" + cls.id);
+      body.replaceChildren(); cards(body, sel ? sel.cards : shuffle(LS.flatMap((l) => l.cards)), sel ? sel.color : "var(--c)", startMode === "due" && !sel ? "due" : "all", sel ? sel.id : "class:" + cls.id, cardHook(LS));
       requestAnimationFrame(() => chips.querySelector(".on")?.scrollIntoView({ inline: "center", block: "nearest" }));
     };
     v.append(chips, body); show(null);
@@ -771,7 +797,7 @@ function badgeSnapshot() {
   const tamed = LS.filter((l) => (l.quiz || []).length >= 5 && l.quiz.every((q) => pr.quiz[q.id]?.last === true)).length;
   const conquered = myClasses().filter((sj) => { const ls = LS.filter((l) => l.subject === sj.id); return ls.length > 0 && ls.every((l) => S.lectureStats(l).pct === 100); }).length;
   return { level: x.lvl, xp: x.xp, streak: S.streak(), gamesPlayed: st.gamesPlayed || 0, correctAnswers: right + (st.gameCorrect || 0), sprintBeats: st.sprintBeats || 0, sprintBest: st.sprintBest || 0,
-    shares: st.shares || 0, challengesSent: st.challengesSent || 0, challengesWon: st.challengesWon || 0, reviews: st.reviews || 0, quizBest: st.quizBest || 0, cardsReviewed: st.cardsReviewed || 0,
+    shares: st.shares || 0, challengesSent: st.challengesSent || 0, challengesWon: st.challengesWon || 0, reviews: st.reviews || 0, quizBest: st.quizBest || 0, quizzes90: st.quizzes90 || 0, quizzes100: st.quizzes100 || 0, cardsReviewed: st.cardsReviewed || 0,
     decksFinished: S.count("decksDone"), glossaryStudied: S.count("glossSeen"), comebacks: st.comebacks || 0, topicsTamed: tamed, classesConquered: conquered,
     nightSessions: S.count("nightDays"), earlySessions: S.count("earlyDays"), examPrepped: st.examPrepped || 0 };
 }
@@ -781,10 +807,14 @@ function badgesNode() {
   const snap = badgeSnapshot(), model = evaluateBadges(BADGE_CFG, snap, S.prefs().badgeTiers);
   return h(".card#badges", { style: "margin-top:12px" }, badgesSection(model, snap));
 }
-// badges a person already earned before badges existed are saved quietly, so only new ones get a celebration
+// Badges a person already earned before badges existed (or before the badge list changed shape) are saved quietly, so only new ones get a celebration.
+// Raise BADGE_SCHEMA when badges/badges.json changes in a way that makes the saved tier counts mean something else (new family ids or tier order).
+const BADGE_SCHEMA = 2;
 function baselineBadges() {
-  if (!BADGE_CFG || S.prefs().badgeTiers != null) return;
-  S.setPrefs({ badgeTiers: evaluateBadges(BADGE_CFG, badgeSnapshot(), {}).saved, lvl: S.xp(open_()).lvl });
+  if (!BADGE_CFG || !BADGE_CFG.families.length) return; // the list did not load: do not save an empty baseline
+  const pf = S.prefs();
+  if (pf.badgeTiers != null && pf.badgeSchema === BADGE_SCHEMA) return;
+  S.setPrefs({ badgeTiers: evaluateBadges(BADGE_CFG, badgeSnapshot(), {}).saved, badgeSchema: BADGE_SCHEMA, lvl: S.xp(open_()).lvl });
 }
 let checking = false;
 function checkMilestones() {
@@ -793,7 +823,7 @@ function checkMilestones() {
     const x = S.xp(open_()), pf = S.prefs();
     if (pf.lvl != null && x.lvl > pf.lvl) { toast(`Level ${x.lvl}! Nice work.`); confetti(110); }
     if (pf.lvl !== x.lvl) S.setPrefs({ lvl: x.lvl });
-    if (pf.badgeTiers == null) return; // not set up yet (baselineBadges runs at start)
+    if (pf.badgeTiers == null || pf.badgeSchema !== BADGE_SCHEMA) return; // not set up yet (baselineBadges runs at start)
     const model = evaluateBadges(BADGE_CFG, badgeSnapshot(), pf.badgeTiers);
     if (JSON.stringify(model.saved) !== JSON.stringify(pf.badgeTiers)) S.setPrefs({ badgeTiers: model.saved });
     if (model.fresh.length) setTimeout(() => celebrate(model.fresh, model), 700); // a moment after the answer or game that earned it
@@ -808,6 +838,8 @@ function confBlock(LS) {
     h("p", { style: "margin:0 0 6px" }, `When you said "sure", you were right ${Math.round((sureOk / sure.length) * 100)}% of the time.`),
     trap.length ? h("div", h("b", { style: "font-size:.9rem" }, "Sure but wrong: look at these first"), ...trap.slice(0, 5).map((x) => h(".fb", { style: "margin-top:6px" }, h("b", x.l.title + ": "), md(x.q.q.split(String.fromCharCode(10))[0])))) : h(".src", "No overconfident mistakes. Nice calibration."));
 }
+// the title of the topic a question belongs to (set by the admin in edit mode); "" when there is none
+const topicName = (l, id) => { const s = id && (l.sections || []).find((x) => x.id === id); return s ? clean(s.title) : ""; };
 // questions answered right less than 60% of the time, grouped by lecture
 function weakTopics(LS) {
   const pr = S.progress().quiz;
@@ -822,7 +854,7 @@ function viewProgress(v) {
     const weak = weakTopics(LS);
     const weakNodes = weak.length
       ? weak.map(({ l, qs }) => h(".card", { style: `margin-bottom:10px;--c:${l.color}` }, h(".row", { style: "justify-content:space-between;flex-wrap:nowrap" }, h("b", l.title), h("span.pill.bad", `${qs.length} weak`)),
-        h("div", qs.slice(0, 3).map((q) => h(".fb", { style: "margin-top:6px" }, md(q.q.split("\n")[0])))),
+        h("div", qs.slice(0, 3).map((q) => h(".fb", { style: "margin-top:6px" }, md(q.q.split("\n")[0]), topicName(l, q.topic) ? h(".src", { style: "margin:2px 0 0" }, "Topic: " + topicName(l, q.topic)) : ""))),
         h("button.btn.sm", { style: "margin-top:10px", onclick: () => { v.replaceChildren(); runQuiz(v, qs.slice(), l.title + ": weak questions", l.color, draw); } }, `Practice these (${qs.length})`)))
       : [h("p", "No weak topics yet. Take a quiz and they'll show up here.")];
     v.append(h(".hero", h(".ctag", h("i"), cls.name), h("h1", "My progress")),

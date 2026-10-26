@@ -17,10 +17,10 @@ export function computeNotes(ctx, now = new Date()) {
   const who = firstName(ctx.name) || "there", out = [], day = S.localDay(now);
   for (const e of ctx.exams || []) {
     const d = daysUntil(e.exam_date, now), b = d >= 0 ? bucket(d) : null; if (b === null) continue;
-    const what = e.exam_name || "exam";
+    const what = (e.exam_name || "exam").toLowerCase();
     out.push({ id: `exam:${e.cid}:${e.exam_date}:${b}`, kind: "exam",
       title: d === 0 ? `Hello ${who}, your ${what} is ${phrase(d)}.` : `Hello ${who}, your ${what} is coming up ${phrase(d)}.`,
-      body: d === 0 ? `${e.cname}: you have put in the work. A short sprint will warm you up.` : `${e.cname}: do a sprint practice test and see what to review.`,
+      body: d === 0 ? `You have put in the work. Warm up with a quick sprint! (${e.cname})` : `Do a sprint practice test! (${e.cname})`,
       cta: e.sprintLec ? { label: "Start a sprint", to: `#/play/${e.sprintLec}/speed` } : { label: "Open the class", to: `#/s/${e.cid}` } });
   }
   if (ctx.streak >= 2 && !ctx.studiedToday && (ctx.hour ?? now.getHours()) >= 17)

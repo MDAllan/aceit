@@ -11,6 +11,6 @@
 7. **Availability.** We work to keep ACEIT available but do not promise uninterrupted service, and may change or stop features. We will give a school [30] days' notice before ending its access, except for security or legal reasons.
 8. **Fees.** [Free pilot; after that: per school or per student fee as agreed in writing.]
 9. **Our responsibility.** [Limit liability as your lawyer advises.] Study tools are an aid; they do not replace the course.
-10. **Ending.** You can delete your account at any time. We may suspend accounts that break these terms. A school can ask us to remove its classes and students.
+10. **Ending.** You can ask to delete your account at any time; it is permanently deleted after 22 days. The full Terms of Service and Privacy Policy shown in the app (version and date on each page) are what people agree to when they sign up. We may suspend accounts that break these terms. A school can ask us to remove its classes and students.
 11. **Law.** [Governing law and courts, for example Alberta, Canada.]
 12. **Contact.** [Email].

@@ -10,7 +10,7 @@ const errs = [];
 const UID = "11111111-1111-1111-1111-111111111111";
 const soon = new Date(Date.now() + 12 * 864e5).toISOString().slice(0, 10);
 const klass = (o = {}) => ({ class_id: "k1", course_id: "astr207", name: "ASTR 207 Section 1", term: "Fall 2026", school_id: "s1", school_name: "Alpha University", role: "student", exam_name: "Midterm", exam_date: soon, archived: false, ...o });
-const prof = (o = {}) => ({ id: UID, email: "sam@alpha.ca", display_name: "Sam", is_admin: false, blocked: false, access_ok: true, ...o });
+const prof = (o = {}) => ({ id: UID, email: "sam@alpha.ca", display_name: "Sam", is_admin: false, blocked: false, access_ok: true, terms_version: "1.0", privacy_version: "1.0", ...o });
 
 async function session(db, hash = "", width = 390) {
   const ctx = await b.createBrowserContext(); const p = await ctx.newPage();
@@ -30,18 +30,15 @@ async function session(db, hash = "", width = 390) {
   const db = { v2: true, profile: prof(), classes: [klass()], roles: [] };
   const p = await session(db);
   let t = await p.txt();
-  chk("student sees their class", /ASTR 207/.test(t) && /Doppler|Motion|Gravity/.test(t));
+  chk("student sees their class on Home", /ASTR 207/.test(t));
   chk("student sees which school and class it is", /Alpha University . ASTR 207 Section 1/.test(t));
   chk("student sees no ERTH 209 (classes never mixed)", !/ERTH 209/.test(t) || /Quick check|Lv/.test(t) && !/Igneous|Plate/.test(t));
-  chk("exam countdown from the class", /Midterm in 1[123] days/.test(t), (t.match(/Midterm[^\n]*/) || [""])[0]);
+  chk("exam countdown from the class (Coming up on Home)", /Coming up/.test(t) && /Midterm/.test(t) && /In 1[123] days/.test(t), (t.match(/Midterm[^\n]*/) || [""])[0]);
   chk("student nav has no workspace", !/Platform|School|Teaching|Admin|Instructor/.test(await p.nav()), await p.nav());
   chk("progress summary was sent for the class", db.summaryPosts.length >= 1 && db.summaryPosts[0].some((r) => r.course_id === "astr207" && r.user_id === UID && typeof r.pct === "number" && r.cards_total > 0), JSON.stringify(db.summaryPosts[0]?.[0] || {}).slice(0, 160));
   chk("only the student's own classes are summarised", db.summaryPosts.every((rows) => rows.every((r) => r.course_id === "astr207")));
-  await p.evaluate(() => { location.hash = "#/profile"; }); await wait(700); t = await p.txt();
-  chk("profile lists class, school", /ASTR 207 Section 1/.test(t) && /Alpha University/.test(t) && /Fall 2026/.test(t));
-  chk("profile has a Leave button", /\bLeave\b/.test(t));
-  await p.evaluate(() => [...document.querySelectorAll("button")].find((x) => x.textContent.trim() === "Leave").click()); await wait(600);
-  chk("leave_class called with the class id", db.rpcCalls.some((c) => c.fn === "leave_class" && c.body?.kid === "k1"));
+  await p.evaluate(() => { location.hash = "#/s/astr207"; }); await wait(900); t = await p.txt();
+  chk("the class page lists the class's lectures", /Doppler|Motion|Gravity/.test(t) && /Alpha University/.test(t), (t.match(/Alpha University[^\n]*/) || [""])[0]);
   await p.close_();
 }
 
@@ -147,7 +144,8 @@ const staffRpc = {
   const db = { v2: false, profile: prof(), legacyAccess: [{ class_id: "erth209" }], classes: [], roles: [] };
   const p = await session(db);
   let t = await p.txt();
-  chk("legacy student still sees their class", /ERTH 209/.test(t) && /Igneous|Plate|Minerals|Interior/.test(t));
+  await p.evaluate(() => { location.hash = "#/s/erth209"; }); await wait(900); t += " " + await p.txt();
+  chk("legacy student still sees their class and its lectures", /ERTH 209/.test(t) && /Igneous|Plate|Minerals|Interior/.test(t));
   chk("no summaries are sent to a table that does not exist", db.summaryPosts.length === 0);
   chk("legacy student nav has no workspace", !/Platform|School|Teaching/.test(await p.nav()));
   await p.close_();
@@ -193,7 +191,8 @@ const staffRpc = {
   let t = await p.txt();
   chk("the announcement is shown", /From your instructor/.test(t) && /Midterm moved to Friday/.test(t) && /Bring a calculator/.test(t) && /Dr\. Rivera/.test(t));
   chk("expired announcements are not", !/Old news/.test(t));
-  chk("the class's own lecture is in the list, marked", /Week 1 review/.test(t) && /Added by your instructor/.test(t));
+  await p.evaluate(() => { location.hash = "#/s/astr207"; }); await wait(900); const tc = await p.txt();
+  chk("the class's own lecture is in the class's list, marked", /Week 1 review/.test(tc) && /Added by your instructor/.test(tc));
   const base = await (await fetch("http://localhost:8765/content/manifest.json")).json();
   await p.evaluate(() => { location.hash = "#/l/motion/quiz"; }); await wait(900); t = await p.txt();
   chk("extra questions join the course lecture's quiz (drafts, approvals and other classes' items do not)", new RegExp(`${base.motion.quiz.length + 1} questions`).test(t), (t.match(/\d+ questions/) || [""])[0]);

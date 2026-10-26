@@ -2,7 +2,7 @@
 
 | Information | Kept for | How it is removed |
 |---|---|---|
-| Account (email, name) | While the account exists | The person deletes their account (Profile > Your data), or a school or ACEIT admin removes it. Removal also deletes progress, summaries and class memberships |
+| Account (email, name) | While the account exists | The person asks to delete their account (Profile > Customer Service > Delete my account; it is permanently deleted 22 days later, and logging in again in that time cancels it), or a school or ACEIT admin removes it. Removal also deletes progress, summaries and class memberships |
 | Study progress and summaries | Same as the account | Same. A student who leaves a class keeps their progress (it belongs to the account); a school can ask for it to be deleted |
 | Class and student records of a school | While the school uses ACEIT | On the school's request, ACEIT deletes the school's classes and students |
 | Content and pictures instructors add to a class | While the class exists | An instructor or manager deletes an item (its picture is deleted with it); deleting a school removes all its items and pictures. Pictures of an item that was deleted by other means are removed when the school is deleted |
@@ -12,6 +12,6 @@
 | Backups | [per the database plan, for example 7 days] | Expire automatically |
 | Inactive accounts | [after 24 months without opening ACEIT, send a warning and then delete] | [Planned: automatic] |
 
-**Requests.** A student can delete their own account at any time. Requests from a school or from an individual to delete other information are answered within [10] business days and confirmed in writing.
+**Requests.** A student can ask to delete their own account at any time; the account is permanently deleted after a 22-day grace period. Requests from a school or from an individual to delete other information are answered within [10] business days and confirmed in writing.
 
 **Today.** Account deletion, class removal and student removal are available in the product. Automatic deletion of inactive accounts and old error reports is planned and not yet automatic.
