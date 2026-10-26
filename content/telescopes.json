@@ -66,9 +66,9 @@
     {
      "title": "Aperture gathers light",
      "bullets": [
-      "The primary mirror or lens is the telescope's **aperture**. Its collecting area increases with the square of its diameter.",
-      "A larger aperture gathers more photons each second, allowing dimmer objects to be recorded or images to be captured in less time.",
-      "Doubling a telescope's diameter gives four times its light-collecting area."
+      "The primary mirror or lens is the telescope's **aperture**. A wider aperture gathers more light from faint objects.",
+      "Collecting more light can make dimmer objects observable or shorten the time needed to record an image.",
+      "Light-collecting power is distinct from magnification: gathering more light does not simply make an image look larger."
      ]
     },
     {
@@ -105,7 +105,7 @@
    ],
    "sourceNotes": [
     "ASTR 207 instructor materials, Ch6.2 part 1 slides 1-10.",
-    "The square-area example is a direct implication of the slide's area relationship; explanations are newly written."
+    "The Cosmic Perspective, 10th ed., Chapter 6; mathematical insights are intentionally excluded."
    ],
    "images": []
   },
@@ -205,7 +205,7 @@
   },
   {
    "id": "wavelengths",
-   "title": "Observing across the spectrum",
+   "title": "Observing the spectrum and other messengers",
    "slides": "6.4, slides 1-10",
    "steps": [
     {
@@ -231,6 +231,15 @@
       "The combined observations can achieve the angular resolution of a much larger telescope.",
       "Interferometry improves resolving detail; it does not simply make each individual telescope's mirror larger."
      ]
+    },
+    {
+     "title": "The universe sends messengers beyond light",
+     "bullets": [
+      "Neutrinos are produced in energetic events and can pass through matter with little interaction. Large detectors in ice or water look for the rare interactions that reveal them.",
+      "Cosmic rays are energetic particles from space. Magnetic fields bend their paths, making it difficult to trace them directly back to their sources.",
+      "Gravitational waves are ripples in spacetime. Laser interferometer observatories detect the tiny changes they produce as they pass Earth.",
+      "Combining light with neutrino, cosmic-ray and gravitational-wave observations gives complementary evidence about energetic events."
+     ]
     }
    ],
    "bullets": [],
@@ -250,7 +259,8 @@
    ],
    "sourceNotes": [
     "ASTR 207 instructor materials, Ch6.4 slides 1-10.",
-    "Explanations are paraphrased and newly written from the instructor's material."
+    "The Cosmic Perspective, 10th ed., Chapter 6, sections 6.3-6.4; mathematical insights are intentionally excluded.",
+    "Explanations are paraphrased and newly written from the instructor's material and textbook."
    ],
    "images": []
   }
@@ -311,6 +321,27 @@
    "back": "A detector whose pixels convert incoming photons into electrical signals.",
    "short": "A pixel sensor for incoming light.",
    "gloss": false
+  },
+  {
+   "id": "tel-c9",
+   "front": "Neutrino observatory",
+   "back": "A detector, often placed in deep ice or water, that looks for rare interactions from neutrinos arriving from space.",
+   "short": "Detects rare interactions from cosmic neutrinos.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c10",
+   "front": "Gravitational wave",
+   "back": "A ripple in spacetime produced by accelerating massive objects and detected by measuring tiny changes in distance.",
+   "short": "A ripple in spacetime detected by interferometers.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c11",
+   "front": "Cosmic ray",
+   "back": "An energetic particle arriving from space; its path can be bent by magnetic fields.",
+   "short": "An energetic space particle with a deflected path.",
+   "gloss": false
   }
  ],
  "quiz": [
@@ -323,10 +354,10 @@
   },
   {
    "id": "tel-2",
-   "q": "Which change increases a telescope's light-collecting area most directly?",
+   "q": "Which telescope feature most directly helps it collect more light?",
    "options": ["Increase the aperture diameter", "Add a longer exposure label", "Move the detector farther from the telescope", "Use a brighter screen"],
    "answer": 0,
-   "why": "Collecting area is proportional to the square of the aperture diameter."
+   "why": "A wider aperture gathers more incoming light."
   },
   {
    "id": "tel-3",
@@ -376,10 +407,25 @@
    "options": ["Improved angular resolution", "A wider range of colours from one pixel", "No need for multiple observations", "A larger atmosphere window"],
    "answer": 0,
    "why": "Linked telescopes can resolve detail like a much larger instrument."
+  },
+  {
+   "id": "tel-10",
+   "q": "Why are neutrino observatories often built deep in ice or water?",
+   "options": ["Large volumes can reveal rare neutrino interactions", "Water makes neutrinos travel in straight lines", "Ice amplifies incoming radio waves", "Deep sites remove the need for detectors"],
+   "answer": 0,
+   "why": "Neutrinos interact only rarely, so observatories monitor large volumes for the few interactions that occur."
+  },
+  {
+   "id": "tel-11",
+   "q": "What does a gravitational-wave observatory detect?",
+   "options": ["Tiny changes in distance caused by spacetime ripples", "Visible light absorbed by Earth's atmosphere", "Charged particles in a telescope mirror", "The colour of a star's image"],
+   "answer": 0,
+   "why": "Laser interferometers measure tiny distance changes as gravitational waves pass."
   }
  ],
  "sourceNotes": [
-  "Primary source: ASTR 207 instructor materials, Ch6.1, Ch6.2 part 1, Ch6.2 part 2, Ch6.3 and Ch6.4 PDFs in Downloads.",
-  "Course-focused explanations are paraphrased and newly written from the instructor materials."
+  "Primary textbook: The Cosmic Perspective, 10th ed., Chapter 6, pages 166-186; Mathematical Insights 6.1 and 6.2 are intentionally excluded.",
+  "Supplementary sources: ASTR 207 instructor materials, Ch6.1, Ch6.2 part 1, Ch6.2 part 2, Ch6.3 and Ch6.4 PDFs.",
+  "Course-focused explanations are paraphrased and newly written from the instructor materials and textbook."
  ]
 }
