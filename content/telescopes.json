@@ -13,7 +13,12 @@
    "slides": "6.1, slides 1-14",
    "steps": [
     {
-     "title": "Light must be brought into focus",
+   "img": {
+    "src": "img/astronomy/telescope-optics.svg",
+    "slide": "Original course diagram",
+    "alt": "Incoming parallel light rays reflect from a telescope mirror and converge on a detector at the focal plane."
+   },
+   "title": "Light must be brought into focus",
      "bullets": [
       "An image forms when light from each point on an object is directed to a corresponding point on an image plane.",
       "A pinhole can make a recognizable image by limiting which rays enter, but the image is dim and appears upside down and reversed.",
@@ -64,7 +69,12 @@
    "slides": "6.2 part 1, slides 1-10",
    "steps": [
     {
-     "title": "Aperture gathers light",
+   "img": {
+    "src": "img/astronomy/telescope-optics.svg",
+    "slide": "Original course diagram",
+    "alt": "A telescope aperture gathers incoming light and directs it toward a focused image."
+   },
+   "title": "Aperture gathers light",
      "bullets": [
       "The primary mirror or lens is the telescope's **aperture**. A wider aperture gathers more light from faint objects.",
       "Collecting more light can make dimmer objects observable or shorten the time needed to record an image.",
@@ -115,7 +125,12 @@
    "slides": "6.2 part 2, slides 1-13",
    "steps": [
     {
-     "title": "Images and photometry",
+   "img": {
+    "src": "img/astronomy/observing-modes.svg",
+    "slide": "Original course diagram",
+    "alt": "An image, a spectrum, and a light curve represent spatial, wavelength, and time-domain measurements."
+   },
+   "title": "Images and photometry",
      "bullets": [
       "**Photometry** measures light received from an object. Images can reveal brightness, colour, shape, size and changes in position.",
       "Detectors often record one wavelength range at a time. Images taken through different filters can be combined to show colour information.",
@@ -166,7 +181,12 @@
    "slides": "6.3, slides 1-10",
    "steps": [
     {
-     "title": "Choose a good ground site",
+   "img": {
+    "src": "img/astronomy/observing-modes.svg",
+    "slide": "Original course diagram",
+    "alt": "Three observing records illustrate the evidence collected by ground and space telescopes."
+   },
+   "title": "Choose a good ground site",
      "bullets": [
       "Ground observatories work best where the air is calm, the sky is dark, the site is high and the air is dry.",
       "Artificial light scatters in the atmosphere and brightens the sky, making faint objects harder to detect.",
@@ -209,7 +229,12 @@
    "slides": "6.4, slides 1-10",
    "steps": [
     {
-     "title": "The atmosphere is a filter",
+   "img": {
+    "src": "img/astronomy/observing-modes.svg",
+    "slide": "Original course diagram",
+    "alt": "A spectrum separates observed wavelengths so astronomers can compare different parts of the electromagnetic spectrum."
+   },
+   "title": "The atmosphere is a filter",
      "bullets": [
       "Earth's atmosphere lets visible light and radio waves through relatively well, along with some infrared wavelengths.",
       "Much of the infrared, ultraviolet, X-ray and gamma-ray light from space is blocked or absorbed before reaching the ground.",
@@ -342,85 +367,232 @@
    "back": "An energetic particle arriving from space; its path can be bent by magnetic fields.",
    "short": "An energetic space particle with a deflected path.",
    "gloss": false
+  },
+  {
+   "id": "tel-c12",
+   "front": "Focal plane",
+   "back": "The surface where light from the telescope is brought into focus and recorded by a detector.",
+   "short": "Where the focused image is recorded.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c13",
+   "front": "Diffraction limit",
+   "back": "The fundamental resolution limit caused by light behaving as a wave around a finite aperture.",
+   "short": "Wave-related limit on resolving detail.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c14",
+   "front": "Chromatic aberration",
+   "back": "Color-dependent focusing by a lens that can cause different wavelengths to form images at different locations.",
+   "short": "A lens focuses colors differently.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c15",
+   "front": "Spectrograph",
+   "back": "An instrument that separates incoming light by wavelength so its intensity pattern can be measured.",
+   "short": "Separates and measures wavelengths.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c16",
+   "front": "Atmospheric window",
+   "back": "A wavelength range that passes through Earth's atmosphere well enough for ground-based observation.",
+   "short": "A wavelength range that reaches the ground.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c17",
+   "front": "Grazing-incidence optics",
+   "back": "A shallow-angle mirror arrangement that redirects X-rays that would otherwise penetrate an ordinary mirror.",
+   "short": "Shallow-angle mirrors redirect X-rays.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c18",
+   "front": "Neutrino",
+   "back": "A weakly interacting subatomic particle that can carry information from energetic events.",
+   "short": "A weakly interacting cosmic particle.",
+   "gloss": false
+  },
+  {
+   "id": "tel-c19",
+   "front": "Gravitational-wave interferometer",
+   "back": "A detector that compares laser paths to measure tiny distance changes caused by passing gravitational waves.",
+   "short": "Measures tiny changes from spacetime waves.",
+   "gloss": false
   }
  ],
  "quiz": [
   {
    "id": "tel-1",
-   "q": "What is the main purpose of a telescope's aperture?",
-   "options": ["Gather light", "Measure air pressure", "Produce gamma rays", "Change a star's orbit"],
+   "q": "An astronomer needs to record a very dim nebula without changing the exposure time. Which telescope change most directly improves the number of source photons reaching the detector?",
+   "options": ["Use a larger primary aperture", "Increase magnification alone", "Move the detector farther from the focal plane", "Observe from a lower, wetter site"],
    "answer": 0,
-   "why": "The primary mirror or lens collects incoming light."
+   "why": "The aperture is the primary light-gathering surface; magnification by itself does not collect additional photons."
   },
   {
    "id": "tel-2",
-   "q": "Which telescope feature most directly helps it collect more light?",
-   "options": ["Increase the aperture diameter", "Add a longer exposure label", "Move the detector farther from the telescope", "Use a brighter screen"],
+   "q": "Two stars blur into one spot in a telescope image, although the combined image is bright. Which property is most directly limiting the ability to distinguish the stars?",
+   "options": ["Angular resolution", "Total image brightness", "The detector's colour balance", "The observing schedule"],
    "answer": 0,
-   "why": "A wider aperture gathers more incoming light."
+   "why": "Angular resolution concerns separation of nearby sources, not how bright their combined light appears."
   },
   {
    "id": "tel-3",
-   "q": "What does a smaller minimum angular separation indicate?",
-   "options": ["Finer angular resolution", "Lower light collection", "More atmospheric absorption", "A longer light curve"],
+   "q": "A telescope records more photons from a faint source, but two close sources remain unresolved. Which interpretation best separates the two outcomes?",
+   "options": ["Light collection improved; resolving power may still be limited.", "Both brightness and resolution must have improved equally.", "More photons guarantee unlimited resolution.", "The detector has become a spectrograph."],
    "answer": 0,
-   "why": "A telescope with a smaller minimum separation can distinguish closer sources."
+   "why": "Aperture supports both photon collection and diffraction-limited detail, but a bright image is not proof that two sources are resolved."
   },
   {
    "id": "tel-4",
-   "q": "Which technique records how an object's brightness changes over time?",
-   "options": ["Time monitoring", "Refraction", "Interferometry", "Aperture masking"],
+   "q": "A planet passes in front of its star, producing a repeated dip in measured brightness. Which data product is best suited to reveal the event?",
+   "options": ["A light curve from time monitoring", "One spectrum without time information", "A single image without calibrated brightness", "A mirror's focal-plane diagram"],
    "answer": 0,
-   "why": "Repeated brightness measurements form a light curve."
+   "why": "A light curve tracks brightness over time, so recurring transits appear as repeated dips."
   },
   {
    "id": "tel-5",
-   "q": "What can a spectrum help astronomers infer?",
-   "options": ["An object's composition and motion", "The exact shape of Earth's orbit only", "The mass of a telescope mount only", "The colour of the detector casing"],
+   "q": "A star's spectrum contains a recognizable pattern of absorption lines shifted from the laboratory pattern. Which combined inference is most justified?",
+   "options": ["Its chemical composition and motion can be investigated.", "Its physical diameter is measured directly from the line pattern.", "The star's image must have been recorded only in radio waves.", "The shift proves that Earth's atmosphere created the star."],
    "answer": 0,
-   "why": "Wavelength patterns can reveal composition, temperature and motion."
+   "why": "Spectral line identities reveal composition, while their wavelength shifts can indicate relative motion."
   },
   {
    "id": "tel-6",
-   "q": "Why are observatories often placed at high, dry and remote sites?",
-   "options": ["To reduce atmosphere, clouds and light pollution", "To increase Earth's gravity", "To make stars brighter", "To remove the need for detectors"],
+   "q": "An observatory has clear skies but severe city glow and turbulent air. Which site change would address both problems most directly?",
+   "options": ["Move to a dark, calm location, preferably at high elevation.", "Use a longer focal length at the same site.", "Replace the mirror with a larger screen.", "Observe through more atmosphere to average out distortions."],
    "answer": 0,
-   "why": "These site conditions reduce atmospheric interference and sky brightness."
+   "why": "A remote dark site reduces light pollution, and a high, calm site reduces atmospheric interference."
   },
   {
    "id": "tel-7",
-   "q": "What does adaptive optics correct?",
-   "options": ["Some image distortion from turbulent air", "All cloud cover", "Light pollution from nearby cities", "The orbit of an observed planet"],
+   "q": "Adaptive optics sharpens a stellar image at a windy observatory. Which limitation remains even after the mirror is adjusted?",
+   "options": ["Clouds and light pollution are not removed by correcting turbulence.", "The technique changes a planet's orbital path.", "The atmosphere becomes transparent to every wavelength.", "The telescope no longer needs a detector."],
    "answer": 0,
-   "why": "Adaptive optics adjusts a mirror to counter some atmospheric distortion."
+   "why": "Adaptive optics corrects some wavefront distortion from turbulence but does not remove clouds, sky glow, or wavelength absorption."
   },
   {
    "id": "tel-8",
-   "q": "Why do many infrared, ultraviolet and X-ray observations use space telescopes?",
-   "options": ["Earth's atmosphere absorbs much of this light", "Those wavelengths exist only in space", "Ground telescopes cannot use mirrors", "These wavelengths have no energy"],
+   "q": "A ground observatory is designed to study ultraviolet radiation, but no signal from the target reaches it. Which explanation and response best fit?",
+   "options": ["The atmosphere absorbs much ultraviolet; place the instrument above most of the atmosphere.", "Ultraviolet exists only at night; increase the exposure.", "Mirrors cannot reflect ultraviolet; use a larger dish on the ground.", "The target emits only visible light; measure a light curve."],
    "answer": 0,
-   "why": "The atmosphere blocks or absorbs much of these wavelengths."
+   "why": "Earth's atmosphere blocks most ultraviolet radiation, so space-based observations are needed for many ultraviolet studies."
   },
   {
    "id": "tel-9",
-   "q": "What is the main benefit of interferometry?",
-   "options": ["Improved angular resolution", "A wider range of colours from one pixel", "No need for multiple observations", "A larger atmosphere window"],
+   "q": "Several radio dishes are linked so their observations behave like a much wider instrument. Which capability is principally improved?",
+   "options": ["Angular resolution", "The total collecting area beyond the sum of the dishes", "Atmospheric transmission at X-ray wavelengths", "The temperature of the radio source"],
    "answer": 0,
-   "why": "Linked telescopes can resolve detail like a much larger instrument."
+   "why": "Interferometry can improve resolution to that of a much larger baseline; it does not make the dishes' combined collecting area larger."
   },
   {
    "id": "tel-10",
-   "q": "Why are neutrino observatories often built deep in ice or water?",
-   "options": ["Large volumes can reveal rare neutrino interactions", "Water makes neutrinos travel in straight lines", "Ice amplifies incoming radio waves", "Deep sites remove the need for detectors"],
+   "q": "Why does a neutrino detector monitor a very large volume of ice or water rather than relying on an ordinary optical telescope?",
+   "options": ["Neutrinos interact rarely, so a huge target volume increases the chance of detecting an interaction.", "Neutrinos are visible only when reflected from a mirror.", "Water forces all neutrinos to stop before reaching the detector.", "Optical telescopes cannot record any particles."],
    "answer": 0,
-   "why": "Neutrinos interact only rarely, so observatories monitor large volumes for the few interactions that occur."
+   "why": "A neutrino usually passes through matter without interacting; large detectors search for the occasional detectable interaction."
   },
   {
    "id": "tel-11",
-   "q": "What does a gravitational-wave observatory detect?",
-   "options": ["Tiny changes in distance caused by spacetime ripples", "Visible light absorbed by Earth's atmosphere", "Charged particles in a telescope mirror", "The colour of a star's image"],
+   "q": "A laser interferometer registers a passing signal that changes the relative lengths of its perpendicular arms by a tiny amount. What is the intended interpretation?",
+   "options": ["A gravitational wave has changed spacetime distances.", "Atmospheric absorption has changed a star's spectrum.", "A cosmic ray has become a visible-light image.", "The observatory has measured a planet's surface temperature."],
    "answer": 0,
-   "why": "Laser interferometers measure tiny distance changes as gravitational waves pass."
+   "why": "Gravitational-wave detectors use interferometry to sense tiny changes in distance as spacetime ripples pass."
+  },
+  {
+   "id": "tel-12",
+   "q": "A lens-based instrument produces slightly different focus positions for blue and red light. Which design change most directly avoids this particular image defect?",
+   "options": ["Use a reflecting telescope.", "Increase the camera's colour saturation.", "Add a radio receiver.", "Place the detector outside the focal plane."],
+   "answer": 0,
+   "why": "Refraction varies with wavelength, while a mirror focuses light by reflection and avoids this lens-related chromatic aberration."
+  },
+  {
+   "id": "tel-13",
+   "q": "Light rays from a distant point are reflected correctly by the primary mirror, but the recorded image is still blurred because the sensor is misplaced. What should be corrected?",
+   "options": ["Put the detector at the focal plane.", "Increase the target's apparent angular size.", "Use a second light curve.", "Move the telescope below the atmosphere."],
+   "answer": 0,
+   "why": "The detector must occupy the plane where the optics bring the incoming light into focus."
+  },
+  {
+   "id": "tel-14",
+   "q": "A researcher wants both a sky image and a quantitative brightness comparison between two stars. Which statement about the measurements is most accurate?",
+   "options": ["Imaging records spatial information; photometry quantifies received light.", "Photometry reveals only the stars' chemical elements.", "An image cannot contain brightness information.", "A spectrum and a light curve are interchangeable."],
+   "answer": 0,
+   "why": "Images show where light is recorded, while photometry measures the light received from an object."
+  },
+  {
+   "id": "tel-15",
+   "q": "A colourful image combines observations at wavelengths invisible to the human eye. Which interpretation is scientifically sound?",
+   "options": ["Colours may be assigned to show data from non-visible wavelengths.", "Every displayed colour must be directly visible to the eye in the original radiation.", "The image cannot represent real astronomical measurements.", "The detector must have changed the source's physical colour."],
+   "answer": 0,
+   "why": "Astronomers often map non-visible wavelength data to displayed colours so different signals can be compared."
+  },
+  {
+   "id": "tel-16",
+   "q": "A ground telescope detects visible light and radio waves but not most X-rays from a target. Which factor best explains this pattern?",
+   "options": ["Earth's atmosphere has different transmission windows at different wavelengths.", "The target emits X-rays only when observed from the ground.", "Visible and radio light do not interact with detectors.", "X-rays have no measurable energy."],
+   "answer": 0,
+   "why": "The atmosphere transmits some wavelength ranges and absorbs much of others, including cosmic X-rays."
+  },
+  {
+   "id": "tel-17",
+   "q": "An X-ray instrument uses nested mirrors at shallow angles. Why is this geometry useful?",
+   "options": ["X-rays can reflect at grazing incidence even though they penetrate ordinary mirrors.", "X-rays behave exactly like visible light in a flat mirror.", "Shallow angles turn X-rays into radio waves.", "The mirrors block all high-energy photons."],
+   "answer": 0,
+   "why": "Grazing-incidence mirrors redirect X-rays that would otherwise penetrate an ordinary mirror."
+  },
+  {
+   "id": "tel-18",
+   "q": "A radio array has excellent detail but only modest total photon collection. Which statement best explains how this is possible?",
+   "options": ["A long interferometer baseline can improve resolution without increasing total collecting area beyond the dishes.", "High resolution always proves that the array has a huge collecting area.", "Radio waves are unaffected by aperture size.", "Interferometry changes the wavelength of the source."],
+   "answer": 0,
+   "why": "Interferometric baseline controls resolving detail, while total light collection is the sum of individual telescope areas."
+  },
+  {
+   "id": "tel-19",
+   "q": "A neutrino from a stellar explosion crosses a planet without being absorbed. Which property explains why a detector must search for rare events?",
+   "options": ["Neutrinos interact very weakly with matter.", "Neutrinos are identical to photons.", "Neutrinos are blocked by visible-light filters.", "Neutrinos orbit the detector."],
+   "answer": 0,
+   "why": "Their weak interaction lets neutrinos travel through matter, but also makes them difficult to detect."
+  },
+  {
+   "id": "tel-20",
+   "q": "A high-energy charged particle arrives from a distant source after passing through galactic magnetic fields. Why may its arrival direction not point back to the source?",
+   "options": ["Magnetic fields can bend the particle's path.", "Its path is focused by a refracting telescope.", "The atmosphere turns it into a neutrino.", "It always follows Earth's orbital plane."],
+   "answer": 0,
+   "why": "Cosmic rays are charged particles and can be deflected by magnetic fields during their journey."
+  },
+  {
+   "id": "tel-21",
+   "q": "An event is observed in visible light and later by a gravitational-wave detector. Why is the combined observation valuable?",
+   "options": ["Different messengers provide complementary evidence about the same event.", "The gravitational-wave signal is just a coloured optical image.", "Only the visible-light observation can carry information.", "The observations must have come from unrelated sources."],
+   "answer": 0,
+   "why": "Light and gravitational waves carry different kinds of information and can jointly constrain an energetic event."
+  },
+  {
+   "id": "tel-22",
+   "q": "A telescope is moved to orbit to study a wavelength strongly absorbed by the atmosphere. Which benefit is most directly expected?",
+   "options": ["More of that incoming radiation can reach the detector.", "The target's intrinsic luminosity increases.", "The orbiting telescope no longer needs calibration.", "Every wavelength becomes equally easy to observe."],
+   "answer": 0,
+   "why": "An above-atmosphere observatory can collect wavelength ranges that ground observatories cannot effectively detect."
+  },
+  {
+   "id": "tel-23",
+   "q": "A camera takes exposures through separate filters and combines them into a colour image. What must be considered when interpreting its colours?",
+   "options": ["The displayed colours may encode filter measurements rather than a single direct-eye view.", "Each pixel must have measured every wavelength simultaneously.", "The filters remove all information about brightness.", "The colours prove the source is inside Earth's atmosphere."],
+   "answer": 0,
+   "why": "Filtered exposures can be mapped to displayed colours, including colours not directly perceived by the eye."
+  },
+  {
+   "id": "tel-24",
+   "q": "Which observing plan would best distinguish a changing star's brightness from its chemical composition?",
+   "options": ["Use repeated brightness measurements for a light curve and a spectrograph for wavelength patterns.", "Use one uncalibrated image for both measurements.", "Use only an interferometer baseline measurement.", "Use a mirror test and assume the spectrum."],
+   "answer": 0,
+   "why": "Time monitoring measures brightness changes; spectroscopy measures the distribution of light by wavelength."
   }
  ],
  "sourceNotes": [

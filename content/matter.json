@@ -588,6 +588,10 @@
    "slides": "Doppler deck (Ch5.4_Doppler.pdf) pages 1-2 (idea); formula from Cosmic Perspective Mathematical Insight 5.3",
    "steps": [
     {
+     "img": {
+      "src": "img/astronomy/doppler-shift.svg",
+      "alt": "Spectral lines shift to longer wavelengths for a receding source and shorter wavelengths for an approaching source."
+     },
      "title": "The speed formula",
      "bullets": [
       "For speeds well below the speed of light: **v / c = (seen - rest) / rest**, where 'rest' is the normal wavelength of a line and 'seen' is the wavelength you measure. Use c = 3 x 10^5 km/s.",
@@ -1270,7 +1274,7 @@
   },
   {
    "id": "ma-31",
-   "q": "Which of the following statements is INCORRECT?",
+   "q": "Which claim about phase changes and molecular behaviour is INCORRECT?",
    "options": [
     "Squeezing a gas at constant temperature can never change its phase, because phase depends only on temperature.",
     "Some water molecules in liquid water always have enough energy to escape as vapor, even well below the boiling point.",

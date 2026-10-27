@@ -1,0 +1,752 @@
+{
+ "id": "planetarysystem",
+ "title": "Our Planetary System",
+ "chapter": "Ch 7",
+ "icon": "🪐",
+ "color": "#7c3aed",
+ "slideFile": "The Cosmic Perspective, Chapter 7",
+ "intro": "Compare the Sun, planets, and small bodies as parts of one system. Use their shared patterns, distinct planet families, and spacecraft observations to reason about how the system works.",
+ "sections": [
+  {
+   "id": "layout",
+   "title": "A map of the solar system",
+   "slides": "Chapter 7, sections 7.1-7.2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/astronomy/planetary-orbits.svg",
+      "slide": "Original course diagram",
+      "alt": "The Sun, inner planets, asteroid belt, outer planets, Kuiper belt, and distant small bodies arranged outward by orbital region."
+     },
+     "title": "Regions and scale",
+     "bullets": [
+      "The Sun dominates the system's mass and supplies most of its energy. The planets orbit at distances that grow dramatically from the inner rocky worlds to the outer giants.",
+      "The asteroid belt lies between Mars and Jupiter. Beyond Neptune, the Kuiper belt contains many icy bodies, including dwarf planets.",
+      "A diagram that enlarges planets for visibility cannot also show their actual distances to the same scale; apparent spacing in such a drawing is not a measurement."
+     ]
+    },
+    {
+     "title": "The solar system includes more than planets",
+     "bullets": [
+      "The solar system includes the Sun and every body gravitationally bound to it: planets, dwarf planets, moons, asteroids, comets, and smaller debris.",
+      "A body's orbit and physical properties help astronomers classify it; being round or large alone does not make an object one of the eight major planets."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Knowing where a body formed and where it orbits helps explain its composition, temperature, and interactions with the rest of the system."
+    },
+    {
+     "type": "trick",
+     "text": "Move outward from the Sun: rocky planets, asteroid belt, giant planets, then distant icy populations."
+    },
+    {
+     "type": "trap",
+     "text": "A not-to-scale solar-system picture is useful for identifying order and categories, but it cannot be used to compare both planet sizes and orbital distances."
+    }
+   ],
+   "sourceNotes": [
+    "The Cosmic Perspective, 10th ed., Chapter 7, sections 7.1-7.2.",
+    "Explanations and the diagram are original course materials based on paraphrased concepts."
+   ],
+   "images": []
+  },
+  {
+   "id": "planet-families",
+   "title": "Terrestrial and jovian worlds",
+   "slides": "Chapter 7, sections 7.1-7.2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/astronomy/planetary-families.svg",
+      "slide": "Original course diagram",
+      "alt": "A side-by-side comparison of terrestrial rocky planets and larger, gas-rich jovian planets."
+     },
+     "title": "Two useful comparisons",
+     "bullets": [
+      "Mercury, Venus, Earth, and Mars are the terrestrial planets: relatively small, rocky, and dense, with solid surfaces.",
+      "Jupiter, Saturn, Uranus, and Neptune are the jovian planets: much larger, with thick envelopes rich in hydrogen compounds and extensive moon systems.",
+      "Jovian planets are not all identical. Jupiter and Saturn are gas giants, while Uranus and Neptune contain larger proportions of substances that astronomers classify as ices."
+     ]
+    },
+    {
+     "title": "Compare properties, not just names",
+     "bullets": [
+      "Planetary families differ in size, composition, average density, atmosphere, and moons. A single property does not explain every contrast.",
+      "Comparing planets with similar properties can reveal meaningful exceptions, such as a world with an unusually thick atmosphere or a strongly tilted rotation axis."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Comparative planetology uses similarities and differences to test how planets formed and how their environments changed."
+    },
+    {
+     "type": "trick",
+     "text": "Terrestrial means rocky inner planets; jovian means the larger outer planets and their distinct giant-planet properties."
+    },
+    {
+     "type": "trap",
+     "text": "Do not infer that every jovian planet has the same composition or structure; Uranus and Neptune differ from Jupiter and Saturn."
+    }
+   ],
+   "sourceNotes": [
+    "The Cosmic Perspective, 10th ed., Chapter 7, sections 7.1-7.2.",
+    "Explanations and the diagram are original course materials based on paraphrased concepts."
+   ],
+   "images": []
+  },
+  {
+   "id": "terrestrial-worlds",
+   "title": "The four terrestrial planets",
+   "slides": "Chapter 7, planetary profiles",
+   "steps": [
+    {
+     "title": "Mercury and Venus",
+     "bullets": [
+      "Mercury has almost no substantial atmosphere, so its surface experiences large temperature contrasts and preserves abundant impact craters.",
+      "Venus is similar to Earth in size but has a dense carbon-dioxide atmosphere and an extreme greenhouse effect. Similar size does not imply similar surface conditions.",
+      "The slowly rotating or backward-rotating inner planets show that planetary spin directions are not all identical."
+     ],
+     "img": {
+      "src": "img/astronomy/planetary-families.svg",
+      "slide": "Original course diagram",
+      "alt": "The inner terrestrial planets are grouped separately from the outer giants."
+     }
+    },
+    {
+     "title": "Earth and Mars",
+     "bullets": [
+      "Earth's liquid-water surface, atmosphere, and active geology make it a distinctive habitable world, not a representative sample of every planet.",
+      "Mars is cold and dry at the surface today, but its channels, minerals, and other evidence indicate that liquid water flowed there in the past.",
+      "A planet's present conditions can differ greatly from its earlier history; surface features and rocks preserve clues to change."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The inner planets formed in the warmer part of the solar nebula, where rock and metal could condense but water ice could not remain stable as readily."
+    },
+    {
+     "type": "trick",
+     "text": "Earth and Venus are similar in size, yet their surface environments are dramatically different."
+    },
+    {
+     "type": "trap",
+     "text": "Evidence for ancient water on Mars does not mean liquid water is stable across most of its surface today."
+    }
+   ],
+   "sourceNotes": [
+    "The Cosmic Perspective, 10th ed., Chapter 7, planetary profiles and sections 7.1-7.2.",
+    "Course-focused explanations are paraphrased and newly written."
+   ],
+   "images": []
+  },
+  {
+   "id": "giant-worlds",
+   "title": "Jupiter, Saturn, Uranus, and Neptune",
+   "slides": "Chapter 7, planetary profiles",
+   "steps": [
+    {
+     "title": "Giant planets are systems of their own",
+     "bullets": [
+      "Jupiter and Saturn are massive hydrogen-rich gas giants with deep atmospheres, rings, and many moons.",
+      "Uranus and Neptune are also giant planets, but their composition includes a larger fraction of water, ammonia, and methane than Jupiter's and Saturn's.",
+      "A giant planet's moons can have active geology, subsurface oceans, atmospheres, or other environments unlike the planet itself."
+     ],
+     "img": {
+      "src": "img/astronomy/planetary-families.svg",
+      "slide": "Original course diagram",
+      "alt": "Jovian planets are compared, including gas giants and ice giants."
+     }
+    },
+    {
+     "title": "Distinctive rotations and rings",
+     "bullets": [
+      "Saturn's rings are broad but extremely thin relative to their diameter, and are made of countless pieces of ice and rock.",
+      "Uranus rotates with an extreme axial tilt, making its seasonal illumination unusual.",
+      "The presence of rings or many moons is characteristic of the giant-planet systems, but those features do not mean the planets are solid all the way through."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A planet and its moons form a linked system: gravity, tidal heating, impacts, and sunlight can shape each moon differently."
+    },
+    {
+     "type": "trick",
+     "text": "Jupiter and Saturn are gas giants; Uranus and Neptune are ice giants."
+    },
+    {
+     "type": "trap",
+     "text": "A ring system is not a solid disk. It consists of many separate orbiting particles."
+    }
+   ],
+   "sourceNotes": [
+    "The Cosmic Perspective, 10th ed., Chapter 7, planetary profiles and sections 7.1-7.2.",
+    "Course-focused explanations are paraphrased and newly written."
+   ],
+   "images": []
+  },
+  {
+   "id": "small-bodies",
+   "title": "Asteroids, comets, and dwarf planets",
+   "slides": "Chapter 7, sections 7.1-7.2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/astronomy/planetary-orbits.svg",
+      "slide": "Original course diagram",
+      "alt": "The asteroid belt is shown between the inner rocky planets and the outer giants, with distant icy bodies beyond Neptune."
+     },
+     "title": "Small bodies occupy distinct regions",
+     "bullets": [
+      "Asteroids are rocky or metallic bodies. Many orbit in the belt between Mars and Jupiter, though asteroid orbits occur elsewhere too.",
+      "Comets contain substantial ice mixed with dust and rock. When a comet approaches the Sun, heating releases gas and dust that form a coma and tails.",
+      "The Kuiper belt beyond Neptune contains icy bodies, including Pluto. The more distant Oort cloud is inferred to be a reservoir for many long-period comets."
+     ]
+    },
+    {
+     "title": "A coma and tail are temporary",
+     "bullets": [
+      "A comet's tail forms as solar heating releases material, while sunlight and the solar wind push that material away from the Sun.",
+      "A comet can travel through most of its orbit without a conspicuous tail. The bright display develops mainly near the Sun."
+     ]
+    },
+    {
+     "title": "Planets and dwarf planets",
+     "bullets": [
+      "Dwarf planets orbit the Sun and are massive enough to become nearly round, but they have not cleared their orbital neighborhoods of other sizable bodies.",
+      "Pluto's classification reflects a formal category based on orbital-neighborhood clearing, not a claim that Pluto is uninteresting or geologically inactive."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The distribution of icy and rocky small bodies preserves clues about the temperatures and mixing of material in the early solar system."
+    },
+    {
+     "type": "trick",
+     "text": "A comet's tail points generally away from the Sun, not necessarily behind the comet along its direction of travel."
+    },
+    {
+     "type": "trap",
+     "text": "The asteroid belt is not a crowded ring of planet-sized objects; its members are separated by large distances."
+    }
+   ],
+   "sourceNotes": [
+    "The Cosmic Perspective, 10th ed., Chapter 7, sections 7.1-7.2.",
+    "Course-focused explanations are paraphrased and newly written."
+   ],
+   "images": []
+  },
+  {
+   "id": "formation-patterns",
+   "title": "Patterns that reveal the system's history",
+   "slides": "Chapter 7, section 7.2",
+   "steps": [
+    {
+     "title": "A shared direction and plane",
+     "bullets": [
+      "Most planets orbit the Sun in the same direction and in nearly the same plane. Most also rotate in the same general direction as their orbits.",
+      "These coordinated motions are evidence that the solar system formed from a rotating, flattened cloud rather than from unrelated objects captured at random.",
+      "Exceptions such as unusual rotation directions and highly tilted axes are important evidence, not reasons to discard the overall pattern."
+     ],
+     "img": {
+      "src": "img/astronomy/nebular-model.svg",
+      "slide": "Original course diagram",
+      "alt": "A collapsing cloud forms a rotating disk in which planetesimals accumulate."
+     }
+    },
+    {
+     "title": "The nebular hypothesis",
+     "bullets": [
+      "The nebular hypothesis describes the solar system forming as gravity collapsed a cloud of gas and dust, producing a young Sun surrounded by a rotating disk.",
+      "Material in the disk collided and accumulated into planetesimals, which grew into planets and smaller bodies.",
+      "The temperature gradient in the disk helps explain why rocky material dominated near the Sun while ices could also accumulate farther out."
+     ]
+    },
+    {
+     "title": "Test a model with multiple observations",
+     "bullets": [
+      "A successful formation model must explain common orbital patterns, the differences between inner and outer planets, and the existence of smaller-body reservoirs.",
+      "A model should also account for exceptions and make predictions that can be compared with observations of other planetary systems."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A rotating disk naturally produces a flattened system with many bodies orbiting in a shared direction."
+    },
+    {
+     "type": "trick",
+     "text": "Observation first: identify a pattern. Explanation next: decide what formation process could produce it."
+    },
+    {
+     "type": "trap",
+     "text": "The nebular hypothesis is not supported by one similarity alone; it must explain many independent patterns and survive tests."
+    }
+   ],
+   "sourceNotes": [
+    "The Cosmic Perspective, 10th ed., Chapter 7, section 7.2.",
+    "Course-focused explanations are paraphrased and newly written."
+   ],
+   "images": []
+  },
+  {
+   "id": "spacecraft",
+   "title": "How spacecraft explore other worlds",
+   "slides": "Chapter 7, section 7.3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/astronomy/spacecraft-missions.svg",
+      "slide": "Original course diagram",
+      "alt": "Flyby, orbital, lander, and rover mission paths around and on a planetary body."
+     },
+     "title": "Match the mission to the question",
+     "bullets": [
+      "A flyby passes a target and can survey many objects, but its close observation window is brief.",
+      "An orbiter circles a world for repeated measurements and broad mapping, but reaching and maintaining orbit requires additional energy and propulsion.",
+      "A lander or rover can make direct surface measurements. Its observations are detailed but limited to a small region and depend on landing safely."
+     ]
+    },
+    {
+     "title": "Remote sensing and direct measurements",
+     "bullets": [
+      "Cameras and spectrometers remotely measure reflected or emitted light; radar can reveal surfaces through some clouds and darkness.",
+      "Landers and rovers examine local conditions, while sample-return missions can bring material to laboratories on Earth.",
+      "Mission design balances scientific goals, communication delay, power, travel time, hazards, and cost."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "No single mission type answers every question. Remote coverage, repeated orbital views, and local sampling provide different kinds of evidence."
+    },
+    {
+     "type": "trick",
+     "text": "Flyby: brief pass. Orbiter: repeated global views. Lander or rover: local surface evidence."
+    },
+    {
+     "type": "trap",
+     "text": "A photograph alone does not replace compositional measurements or direct surface analysis; each method has different limits."
+    }
+   ],
+   "sourceNotes": [
+    "The Cosmic Perspective, 10th ed., Chapter 7, section 7.3.",
+    "Course-focused explanations and the diagram are paraphrased and newly written."
+   ],
+   "images": []
+  }
+ ],
+ "cards": [
+  {
+   "id": "pln-c1",
+   "front": "Terrestrial planet",
+   "back": "A relatively small, rocky, dense planet of the inner solar system.",
+   "short": "Small, rocky inner world.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c2",
+   "front": "Jovian planet",
+   "back": "A large outer planet with a deep atmosphere and an extensive moon system.",
+   "short": "Large outer planet.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c3",
+   "front": "Gas giant",
+   "back": "Jupiter or Saturn, a giant planet dominated by hydrogen and helium.",
+   "short": "Jupiter or Saturn.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c4",
+   "front": "Ice giant",
+   "back": "Uranus or Neptune, giant planets with a larger fraction of water, ammonia, and methane than Jupiter or Saturn.",
+   "short": "Uranus or Neptune.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c5",
+   "front": "Asteroid",
+   "back": "A small rocky or metallic body orbiting the Sun.",
+   "short": "Small rocky or metallic body.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c6",
+   "front": "Comet",
+   "back": "An ice-rich small body that can release gas and dust when heated near the Sun.",
+   "short": "Icy body that can grow a coma and tail.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c7",
+   "front": "Kuiper belt",
+   "back": "A region beyond Neptune containing many icy bodies, including dwarf planets.",
+   "short": "Distant icy region beyond Neptune.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c8",
+   "front": "Oort cloud",
+   "back": "A distant, roughly spherical reservoir inferred to supply many long-period comets.",
+   "short": "Inferred reservoir of long-period comets.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c9",
+   "front": "Dwarf planet",
+   "back": "A Sun-orbiting body massive enough to be nearly round but not to have cleared its orbital neighborhood.",
+   "short": "Round body that has not cleared its orbit.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c10",
+   "front": "Nebular hypothesis",
+   "back": "The model that the solar system formed from a collapsing, rotating cloud of gas and dust that flattened into a disk.",
+   "short": "A rotating disk formed from a collapsing cloud.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c11",
+   "front": "Flyby",
+   "back": "A spacecraft mission that passes a target without entering orbit or landing.",
+   "short": "Brief close pass of a target.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c12",
+   "front": "Orbiter",
+   "back": "A spacecraft that remains in orbit to make repeated observations of a world.",
+   "short": "Repeated observations from orbit.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c13",
+   "front": "Lander",
+   "back": "A spacecraft designed to reach a body's surface and make measurements at a fixed location.",
+   "short": "Surface science at one location.",
+   "gloss": false
+  },
+  {
+   "id": "pln-c14",
+   "front": "Comparative planetology",
+   "back": "The study of worlds by comparing their similarities and differences to test explanations for their histories and processes.",
+   "short": "Use differences and similarities to test planetary explanations.",
+   "gloss": false
+  }
+ ],
+ "quiz": [
+  {
+   "id": "pln-1",
+   "q": "A diagram enlarges all planets but preserves their order from the Sun. Which conclusion is justified?",
+   "options": [
+    "The planet order is shown, but the drawn sizes or gaps may not represent actual scale.",
+    "The gaps between every neighboring orbit are equal.",
+    "The sizes and distances are both accurately represented.",
+    "The asteroid belt must be denser than the rings of Saturn."
+   ],
+   "answer": 0,
+   "why": "A schematic can preserve the order of bodies while changing sizes or distances so the objects can be seen."
+  },
+  {
+   "id": "pln-2",
+   "q": "Which observation best supports classifying Earth with the terrestrial planets rather than with the jovian planets?",
+   "options": [
+    "It is a comparatively small, dense world with a rocky surface.",
+    "It has a moon that orbits it.",
+    "It travels around the Sun.",
+    "It reflects sunlight into space."
+   ],
+   "answer": 0,
+   "why": "Rocky composition, small size, and higher density are characteristic of the terrestrial family."
+  },
+  {
+   "id": "pln-3",
+   "q": "A student groups Uranus with Jupiter because both are enormous compared with Earth. What important distinction should be added?",
+   "options": [
+    "Uranus is an ice giant, while Jupiter is a gas giant.",
+    "Uranus is a terrestrial planet, while Jupiter is a dwarf planet.",
+    "Uranus orbits beyond the Kuiper belt, while Jupiter is inside the asteroid belt.",
+    "Uranus has no atmosphere, while Jupiter has one."
+   ],
+   "answer": 0,
+   "why": "Both are giant planets, but Uranus and Neptune have a different composition from hydrogen-rich Jupiter and Saturn."
+  },
+  {
+   "id": "pln-4",
+   "q": "Two planets have similar radii, but one has a dense carbon-dioxide atmosphere and a far hotter surface. Which inference is strongest?",
+   "options": [
+    "Similar size alone does not determine a planet's surface environment.",
+    "Their surface conditions must be identical because their sizes are similar.",
+    "The denser atmosphere proves the hotter planet formed farther from the Sun.",
+    "The hotter planet cannot be terrestrial."
+   ],
+   "answer": 0,
+   "why": "Venus and Earth illustrate that comparable size does not guarantee similar atmospheric or surface conditions."
+  },
+  {
+   "id": "pln-5",
+   "q": "A cratered world has almost no atmosphere to redistribute heat. Which additional observation would best fit Mercury?",
+   "options": [
+    "Large temperature contrasts between its day and night sides.",
+    "Clouds that hide nearly all surface features.",
+    "A global ocean beneath a thick atmosphere.",
+    "A tail that always points along its orbit."
+   ],
+   "answer": 0,
+   "why": "With little atmosphere, Mercury cannot efficiently redistribute heat around the planet."
+  },
+  {
+   "id": "pln-6",
+   "q": "Which evidence most directly supports the claim that Mars had flowing liquid water in its past?",
+   "options": [
+    "Surface channels and minerals associated with water-altered environments.",
+    "Its current surface temperature is always above water's boiling point.",
+    "Its two small moons are made of ice.",
+    "Its orbit is nearly circular."
+   ],
+   "answer": 0,
+   "why": "Surface landforms and altered minerals preserve evidence for ancient water even though surface liquid water is not broadly stable today."
+  },
+  {
+   "id": "pln-7",
+   "q": "A probe detects many narrow ring features around a giant planet. What is the best physical interpretation?",
+   "options": [
+    "The rings consist of many separate particles orbiting the planet.",
+    "The rings are a single rigid sheet attached to the planet.",
+    "The rings are the planet's solid surface viewed edge-on.",
+    "The rings are trails left by planets that escaped the system."
+   ],
+   "answer": 0,
+   "why": "Planetary rings are made from large numbers of separate pieces of ice and rock."
+  },
+  {
+   "id": "pln-8",
+   "q": "A body is round and orbits the Sun, but many sizable objects share its orbital region. Which classification best fits?",
+   "options": [
+    "Dwarf planet",
+    "Major planet",
+    "Moon",
+    "Cometary tail"
+   ],
+   "answer": 0,
+   "why": "A dwarf planet can be round and orbit the Sun without clearing its orbital neighborhood."
+  },
+  {
+   "id": "pln-9",
+   "q": "Why can a comet become much more visible as it approaches the Sun?",
+   "options": [
+    "Heating releases gas and dust that create a coma and tails.",
+    "Its orbital speed converts its whole body into visible light.",
+    "The Sun pulls it into a permanent ring.",
+    "Its surface turns into a liquid ocean."
+   ],
+   "answer": 0,
+   "why": "Solar heating causes volatile material to escape from an icy comet, producing a coma and tails."
+  },
+  {
+   "id": "pln-10",
+   "q": "A comet's tail points away from the Sun even while the comet is moving toward the Sun. What does this show?",
+   "options": [
+    "Tail direction is not simply the direction opposite to the comet's motion.",
+    "The comet must be orbiting backward.",
+    "The comet's tail is a solid extension of its nucleus.",
+    "All comet tails point behind the comet's orbital path."
+   ],
+   "answer": 0,
+   "why": "Sunlight and the solar wind push tail material away from the Sun, so the tail need not trail the comet's motion."
+  },
+  {
+   "id": "pln-11",
+   "q": "Which pairing of small-body population and location is most accurate?",
+   "options": [
+    "Kuiper belt — beyond Neptune",
+    "Asteroid belt — beyond the Oort cloud",
+    "Oort cloud — between Earth and Mars",
+    "Kuiper belt — inside Mercury's orbit"
+   ],
+   "answer": 0,
+   "why": "The Kuiper belt is a population of icy objects beyond Neptune."
+  },
+  {
+   "id": "pln-12",
+   "q": "A long-period comet approaches the inner solar system from a highly extended orbit. Which distant source is most strongly associated with such comets?",
+   "options": [
+    "The Oort cloud",
+    "The asteroid belt",
+    "Saturn's rings",
+    "The terrestrial planets"
+   ],
+   "answer": 0,
+   "why": "The distant, roughly spherical Oort cloud is inferred to supply many long-period comets."
+  },
+  {
+   "id": "pln-13",
+   "q": "Which pattern is most consistent with planets forming in a rotating disk?",
+   "options": [
+    "Most planets orbit in nearly the same plane and direction.",
+    "Every planet has the same orbital period.",
+    "All moons orbit in exactly the same plane as their planet.",
+    "Every planet rotates at the same rate."
+   ],
+   "answer": 0,
+   "why": "A rotating, flattened disk naturally produces coordinated orbital directions and a shared orbital plane."
+  },
+  {
+   "id": "pln-14",
+   "q": "Which statement correctly describes the nebular hypothesis?",
+   "options": [
+    "A rotating cloud of gas and dust collapsed and flattened into a disk from which the Sun and planets formed.",
+    "The planets formed independently and were later captured into random orbits by the Sun.",
+    "The Sun formed first as a solid object and later split into the planets.",
+    "Comets collided to create the gas cloud that became the Sun."
+   ],
+   "answer": 0,
+   "why": "The model begins with a collapsing, rotating cloud that forms a central Sun and a surrounding disk."
+  },
+  {
+   "id": "pln-15",
+   "q": "Why does the nebular model predict rocky planets closer to the Sun and icy material farther out?",
+   "options": [
+    "The early disk had a temperature gradient that affected which materials could condense.",
+    "The Sun's gravity only affected rocky material near its surface.",
+    "Icy objects cannot orbit inside the asteroid belt today.",
+    "The outer planets formed before the Sun began to shine."
+   ],
+   "answer": 0,
+   "why": "Temperature varied across the disk, so different materials could condense in different regions."
+  },
+  {
+   "id": "pln-16",
+   "q": "A model explains the shared orbital plane but cannot explain why the inner planets are rocky and the outer planets are giant worlds. What is the best scientific response?",
+   "options": [
+    "Treat the model as incomplete and test a mechanism that explains both patterns.",
+    "Ignore the compositional evidence because one pattern already fits.",
+    "Change the observations until they match the model.",
+    "Conclude that all planets formed independently."
+   ],
+   "answer": 0,
+   "why": "A useful formation model must account for multiple independent patterns, not just one."
+  },
+  {
+   "id": "pln-17",
+   "q": "A spacecraft must map a planet repeatedly over several years. Which mission design best fits that goal?",
+   "options": [
+    "Orbiter",
+    "Flyby",
+    "Atmospheric entry probe with no transmitter",
+    "One-time impactor"
+   ],
+   "answer": 0,
+   "why": "An orbiter can make repeated measurements and survey a world from many viewing angles."
+  },
+  {
+   "id": "pln-18",
+   "q": "A mission needs high-resolution measurements of soil chemistry at one safe landing site. Which approach is most direct?",
+   "options": [
+    "Lander or rover",
+    "Distant flyby only",
+    "Telescope on Earth",
+    "A second planet's moon"
+   ],
+   "answer": 0,
+   "why": "A lander or rover can directly analyze the local surface, although it samples only a limited area."
+  },
+  {
+   "id": "pln-19",
+   "q": "Why might scientists choose a flyby instead of an orbiter for a mission to several small bodies?",
+   "options": [
+    "A flyby can visit multiple targets without carrying the fuel needed to orbit each one.",
+    "A flyby provides continuous global mapping of each target for years.",
+    "A flyby can collect surface samples without approaching a target.",
+    "A flyby removes communication delays."
+   ],
+   "answer": 0,
+   "why": "Flybys trade long-duration coverage for the ability to encounter multiple targets with a simpler trajectory."
+  },
+  {
+   "id": "pln-20",
+   "q": "A thick atmosphere prevents a camera from seeing the surface clearly. Which method could provide complementary surface information?",
+   "options": [
+    "Radar remote sensing or measurements from a probe that enters the atmosphere.",
+    "A visible-light image from a farther distance.",
+    "A measurement of the planet's orbital direction only.",
+    "A telescope pointed at the planet's rings."
+   ],
+   "answer": 0,
+   "why": "Radar can penetrate some cloud layers, and atmospheric probes can make measurements below the clouds."
+  },
+  {
+   "id": "pln-21",
+   "q": "What is a key limitation of a rover compared with an orbiter?",
+   "options": [
+    "It makes detailed measurements over a very limited surface area.",
+    "It cannot send any scientific data.",
+    "It observes only the planet's global magnetic field.",
+    "It must remain outside the atmosphere."
+   ],
+   "answer": 0,
+   "why": "Surface missions provide local detail but cannot directly survey the entire planet."
+  },
+  {
+   "id": "pln-22",
+   "q": "A scientist compares the number of moons, surface geology, and atmospheric composition across several planets. What is the central purpose of this comparison?",
+   "options": [
+    "To use similarities and differences to test explanations of planetary history.",
+    "To determine that planets with moons must be more massive than the Sun.",
+    "To prove that every world formed in a separate system.",
+    "To replace measurements with visual resemblance."
+   ],
+   "answer": 0,
+   "why": "Comparative planetology tests hypotheses by examining patterns and exceptions among worlds."
+  },
+  {
+   "id": "pln-23",
+   "q": "A spacecraft returns a rock sample, while an orbiter maps the full planet. Why are both missions scientifically useful?",
+   "options": [
+    "The sample gives detailed local composition while orbital data supplies broad context.",
+    "The sample determines the entire planet's surface history by itself.",
+    "Orbital mapping reveals no information about surface features.",
+    "The two data types measure the same thing at the same scale."
+   ],
+   "answer": 0,
+   "why": "Local analysis and global mapping are complementary forms of evidence."
+  },
+  {
+   "id": "pln-24",
+   "q": "Which conclusion best combines the orbital and compositional patterns of the solar system?",
+   "options": [
+    "A rotating, temperature-structured disk can explain both shared orbital motions and inner-to-outer composition differences.",
+    "The planets' common direction proves that all have identical compositions.",
+    "The locations of asteroids show that planets do not orbit the Sun.",
+    "The differences among planets rule out a common formation process."
+   ],
+   "answer": 0,
+   "why": "The nebular model links the rotating disk's geometry with temperature-dependent material condensation."
+  }
+ ],
+ "sourceNotes": [
+  "Primary source: The Cosmic Perspective, 10th ed., Chapter 7, pages 193-211.",
+  "The chapter, questions, cards, and diagrams are original course materials; textbook concepts are paraphrased."
+ ]
+}

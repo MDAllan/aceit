@@ -1,0 +1,213 @@
+{
+ "title": "ERTH 209 practice exams",
+ "intro": "Cumulative single-best-answer practice. Each question combines evidence, process, and interpretation from the course units.",
+ "tests": [
+  {
+   "id": "midterm",
+   "title": "Cumulative Midterm Practice",
+   "blurb": "24 original questions across Earth's interior, tectonics, minerals, rocks, time, fossils, deformation, and mass movement.",
+   "questions": [
+    {
+     "id": "erth-mid-1",
+     "q": "A coastline is quiet today, but its continental crust gradually changes into oceanic crust without crossing onto another plate. How should the margin be classified?",
+     "options": ["Passive margin within one plate", "Transform plate boundary", "Oceanic-continental subduction zone", "Mid-ocean ridge"],
+     "answer": 0,
+     "why": "A passive margin is not a plate boundary; the continental-to-oceanic transition occurs within the same plate.",
+     "source": "admin-only: ERTH 209 units on plate margins"
+    },
+    {
+     "id": "erth-mid-2",
+     "q": "Oceanic crust near a ridge has thin sediment, symmetric magnetic bands, and becomes older away from the ridge. Which process best explains all three observations?",
+     "options": ["Seafloor spreading from newly formed ridge crust", "Continental collision without oceanic crust formation", "Transform motion that removes crust along the ridge", "Hotspot activity beneath a stationary plate"],
+     "answer": 0,
+     "why": "New crust forms at the ridge, records the magnetic field, and moves outward, collecting sediment as it ages.",
+     "img": {
+      "src": "img/geology/seafloor-spreading.svg",
+      "alt": "A ridge forms new crust that spreads outward with symmetric magnetic bands."
+     },
+     "source": "admin-only: ERTH 209 plate-tectonics unit"
+    },
+    {
+     "id": "erth-mid-3",
+     "q": "A volcanic arc forms above a sinking oceanic plate, but the melting occurs mainly in the mantle wedge. Which explanation best connects the slab and the arc?",
+     "options": ["Water released from the slab lowers the mantle wedge's melting temperature.", "The cold slab melts completely and rises as the arc.", "The trench compresses air until it becomes magma.", "Magnetic reversals heat the overriding plate."],
+     "answer": 0,
+     "why": "Volatiles released from the subducting slab promote flux melting in the overlying mantle wedge.",
+     "source": "admin-only: ERTH 209 plate-tectonics unit"
+    },
+    {
+     "id": "erth-mid-4",
+     "q": "A mineral scratches calcite but is scratched by fluorite. Which property is being used, and what range does this observation establish?",
+     "options": ["Hardness; greater than calcite and less than fluorite", "Cleavage; greater than fluorite and less than calcite", "Density; equal to calcite", "Streak; darker than fluorite"],
+     "answer": 0,
+     "why": "A scratch test compares hardness: the tested mineral is harder than calcite but softer than fluorite.",
+     "source": "admin-only: ERTH 209 minerals unit"
+    },
+    {
+     "id": "erth-mid-5",
+     "q": "Two samples have the same chemical composition, but one breaks along repeated smooth planes while the other breaks irregularly. Which property most directly explains the difference?",
+     "options": ["Cleavage reflects weaknesses in the crystal structure.", "Streak records each sample's fracture pattern.", "Hardness determines the number of crystal faces.", "Lustre measures the sample's internal layering."],
+     "answer": 0,
+     "why": "Cleavage occurs along planes of weakness in a mineral's atomic structure; fracture is irregular breakage.",
+     "source": "admin-only: ERTH 209 minerals unit"
+    },
+    {
+     "id": "erth-mid-6",
+     "q": "A coarse-grained granite and a fine-grained basalt have similar overall silica-rich minerals. What most directly explains their different crystal sizes?",
+     "options": ["Granite cooled more slowly underground; basalt cooled more rapidly at or near the surface.", "Basalt cooled more slowly because it erupted.", "Granite contains no magma-derived minerals.", "Crystal size is determined only by the rock's age."],
+     "answer": 0,
+     "why": "Slow cooling gives crystals more time to grow; rapid cooling produces finer-grained textures.",
+     "source": "admin-only: ERTH 209 igneous-rocks unit"
+    },
+    {
+     "id": "erth-mid-7",
+     "q": "A sandstone contains rounded quartz grains cemented together. Which sequence most plausibly produced it?",
+     "options": ["Weathering, transport, deposition, burial, and lithification", "Melting, cooling, and crystal fractionation", "Burial, foliation, partial melting, and eruption", "Crystallization directly from a water-rich magma"],
+     "answer": 0,
+     "why": "Clastic sedimentary rocks form as weathered grains are transported, deposited, compacted, and cemented.",
+     "source": "admin-only: ERTH 209 sedimentary-rocks unit"
+    },
+    {
+     "id": "erth-mid-8",
+     "q": "A metamorphic rock has aligned mica, and its mineral grains grow larger toward a nearby intrusion. Which interpretation best fits these observations?",
+     "options": ["Foliation reflects directed stress, while heating can raise metamorphic grade near the intrusion.", "Foliation proves the rock formed from a lava flow.", "The intrusion cooled the rock and reversed metamorphism.", "Mineral alignment is evidence only of sediment deposition."],
+     "answer": 0,
+     "why": "Directed stress can produce foliation, while increased heat near an intrusion can intensify metamorphic changes.",
+     "source": "admin-only: ERTH 209 metamorphism unit"
+    },
+    {
+     "id": "erth-mid-9",
+     "q": "An undeformed sequence contains sandstone below shale and a volcanic ash layer above both. Which principle supports placing the sandstone earliest?",
+     "options": ["Superposition", "Cross-cutting relationships", "Faunal succession", "Original horizontality"],
+     "answer": 0,
+     "why": "In an undeformed sedimentary sequence, lower layers were deposited before the layers above them.",
+     "source": "admin-only: ERTH 209 stratigraphy unit"
+    },
+    {
+     "id": "erth-mid-10",
+     "q": "A fault cuts a fossil-bearing bed but does not cut a younger ash layer above it. What can be concluded relative to those layers?",
+     "options": ["The fault is younger than the bed it cuts and older than the ash layer that seals it.", "The fault predates both layers.", "The ash layer must be older than the fault and the bed.", "The relative order cannot be constrained by cross-cutting."],
+     "answer": 0,
+     "why": "A cross-cutting feature is younger than what it cuts; a layer sealing the feature is younger than the feature.",
+     "source": "admin-only: ERTH 209 stratigraphy unit"
+    },
+    {
+     "id": "erth-mid-11",
+     "q": "A rock contains 25% of its original radioactive parent isotope and 75% daughter product. Assuming a closed system, how many half-lives have elapsed?",
+     "options": ["Two", "One", "Three", "Four"],
+     "answer": 0,
+     "why": "The parent fraction declines from 100% to 50%, then to 25%: two half-lives.",
+     "source": "admin-only: ERTH 209 age-dating unit"
+    },
+    {
+     "id": "erth-mid-12",
+     "q": "A fossil species is widespread but existed for a short interval. Why is it especially useful for correlating separated rock layers?",
+     "options": ["Its short time range and broad distribution help identify equivalent intervals.", "Its long time range proves every layer formed simultaneously.", "Its presence provides an exact radiometric age.", "Its location determines the original latitude of every rock."],
+     "answer": 0,
+     "why": "A widespread, short-lived index fossil can correlate layers deposited during the same relatively narrow time interval.",
+     "source": "admin-only: ERTH 209 fossils and stratigraphy units"
+    },
+    {
+     "id": "erth-mid-13",
+     "q": "Fossils from two layers differ, but both occur in a long sequence of successive faunas. Which idea allows their order to be compared even when the layers are far apart?",
+     "options": ["Faunal succession", "Isostatic rebound", "Magnetic inclination", "Metamorphic facies"],
+     "answer": 0,
+     "why": "Fossil assemblages change through time in a recognizable order and can be used to correlate strata.",
+     "source": "admin-only: ERTH 209 fossils unit"
+    },
+    {
+     "id": "erth-mid-14",
+     "q": "A rock layer is tilted and folded, but its youngest beds are still on top when restored to their original orientation. Which principle supports that reconstruction?",
+     "options": ["Original horizontality", "Uniformitarianism", "Faunal succession", "Isotope closure"],
+     "answer": 0,
+     "why": "Sediments are generally deposited in near-horizontal layers; tilting and folding happened after deposition.",
+     "source": "admin-only: ERTH 209 stratigraphy and deformation units"
+    },
+    {
+     "id": "erth-mid-15",
+     "q": "A rock layer bends without breaking under high temperature and pressure. Which description best fits the observed deformation?",
+     "options": ["Ductile strain producing a fold", "Brittle failure producing an open joint", "Elastic rebound without permanent change", "Chemical weathering producing cleavage"],
+     "answer": 0,
+     "why": "Ductile deformation bends rock into folds rather than breaking it along a fault or joint.",
+     "source": "admin-only: ERTH 209 deformation unit"
+    },
+    {
+     "id": "erth-mid-16",
+     "q": "A fault has a vertical component of displacement and the hanging wall moved downward relative to the footwall. Which stress regime most likely produced it?",
+     "options": ["Extension forming a normal fault", "Compression forming a reverse fault", "Shear forming a strike-slip fault", "Heating forming a joint"],
+     "answer": 0,
+     "why": "Extension commonly produces normal faults, in which the hanging wall moves downward relative to the footwall.",
+     "source": "admin-only: ERTH 209 deformation unit"
+    },
+    {
+     "id": "erth-mid-17",
+     "q": "A folded rock layer plunges beneath the surface and its map pattern closes in one direction. Which additional information is most useful for identifying the fold as an anticline or syncline?",
+     "options": ["The ages of the beds at the fold's core", "The colour of the outcrop", "The local slope angle alone", "The current temperature of the rock"],
+     "answer": 0,
+     "why": "An anticline generally exposes older rocks in its core, whereas a syncline generally has younger rocks in its core.",
+     "source": "admin-only: ERTH 209 deformation unit"
+    },
+    {
+     "id": "erth-mid-18",
+     "q": "A landslide moves as a coherent mass along a curved, spoon-shaped failure surface. Which classification is most appropriate?",
+     "options": ["Slump", "Creep", "Rockfall", "Mudflow"],
+     "answer": 0,
+     "why": "A slump is rotational movement of coherent blocks along a curved failure surface.",
+     "img": {
+      "src": "img/geology/mass-movement.svg",
+      "alt": "Creep, slump, translational movement, and flow are shown moving downslope in different ways."
+     },
+     "source": "admin-only: ERTH 209 mass-movement unit"
+    },
+    {
+     "id": "erth-mid-19",
+     "q": "After intense rain, a moving mixture carries mud, gravel, and boulders through a steep valley below a volcano. Which term best describes the event?",
+     "options": ["Lahar if volcanic debris is mobilized by water", "Rockfall because all large fragments fall freely", "Creep because the slope is wet", "Lava flow because the material came from a volcano"],
+     "answer": 0,
+     "why": "A lahar is a water-rich flow of volcanic debris; it is not molten lava.",
+     "source": "admin-only: ERTH 209 mass-movement unit"
+    },
+    {
+     "id": "erth-mid-20",
+     "q": "A hillside begins moving after a prolonged storm, although its angle has not changed. Which mechanism can explain the change in stability?",
+     "options": ["Water added weight and reduced resistance along a weak layer.", "Rain removed gravity from the slope.", "Saturation increased cohesion in every material.", "The storm converted the soil into bedrock."],
+     "answer": 0,
+     "why": "Water can increase the driving load and lower resistance by saturating or lubricating weak material.",
+     "source": "admin-only: ERTH 209 mass-movement unit"
+    },
+    {
+     "id": "erth-mid-21",
+     "q": "A seismologist observes an abrupt change in seismic-wave speed at a deep boundary. Which inference is most defensible?",
+     "options": ["The waves have crossed into material with different physical or compositional properties.", "The boundary must be the surface of the inner core.", "The speed change proves all layers are liquid.", "The observation directly measures mantle convection speed."],
+     "answer": 0,
+     "why": "Seismic-wave behavior changes at boundaries where material properties or physical state change; more evidence is needed to identify the layer.",
+     "source": "admin-only: ERTH 209 interior unit"
+    },
+    {
+     "id": "erth-mid-22",
+     "q": "A region of continental lithosphere stands higher than nearby oceanic lithosphere. Which explanation best uses isostasy?",
+     "options": ["Differences in lithosphere thickness and density affect how the crust floats on the mantle.", "Continental crust is denser and thinner, so it sinks lower.", "Earth's magnetic field supports continents above oceans.", "Oceanic plates have no lithosphere beneath them."],
+     "answer": 0,
+     "why": "Isostasy relates elevation to the buoyant balance of lithosphere with different thicknesses and densities.",
+     "source": "admin-only: ERTH 209 interior and tectonics units"
+    },
+    {
+     "id": "erth-mid-23",
+     "q": "A sedimentary basin contains successive layers that record changing rivers, shorelines, and climates. Which approach best uses this record?",
+     "options": ["Interpret sedimentary structures and facies as evidence of changing depositional environments.", "Treat each layer as a direct measurement of the modern environment.", "Use only mineral hardness to reconstruct the basin.", "Assume every layer formed at the same time."],
+     "answer": 0,
+     "why": "Sedimentary structures and facies help reconstruct the environments and processes that deposited the layers.",
+     "source": "admin-only: ERTH 209 sedimentary unit"
+    },
+    {
+     "id": "erth-mid-24",
+     "q": "A mountain belt shows metamorphic rocks, folded strata, and reverse faults. Which tectonic setting best explains the combined evidence?",
+     "options": ["Convergence and crustal shortening", "A stable passive margin with no deformation", "A transform boundary with only extension", "A mid-ocean ridge with no compression"],
+     "answer": 0,
+     "why": "Convergence shortens and thickens crust, producing folds, reverse faults, and metamorphism.",
+     "source": "admin-only: ERTH 209 plate-tectonics and deformation units"
+    }
+   ]
+  }
+ ]
+}

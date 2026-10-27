@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Gregorian leap-year rule</title><desc id="desc">Years divisible by four are leap years except century years, which qualify only when divisible by four hundred.</desc>
+<rect width="640" height="360" rx="24" fill="#101b35"/><text x="32" y="42" fill="#f3f6ff" font-family="Arial" font-size="24" font-weight="700">Calendar rule keeps seasons aligned</text>
+<rect x="204" y="82" width="232" height="48" rx="13" fill="#344264"/><text x="320" y="113" text-anchor="middle" fill="#fff" font-family="Arial" font-size="17">Is the year divisible by 4?</text>
+<path d="M260 130v39m120-39v39" stroke="#d7e1f4" stroke-width="3"/><text x="238" y="157" fill="#f4c981" font-family="Arial" font-size="14">No</text><text x="394" y="157" fill="#9de0c7" font-family="Arial" font-size="14">Yes</text>
+<rect x="150" y="174" width="163" height="48" rx="13" fill="#705452"/><text x="231" y="204" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16">Common year</text>
+<rect x="350" y="174" width="164" height="48" rx="13" fill="#344264"/><text x="432" y="204" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16">Is it a century year?</text>
+<path d="M390 223v38m84-38v38" stroke="#d7e1f4" stroke-width="3"/><text x="371" y="250" fill="#f4c981" font-family="Arial" font-size="14">No</text><text x="490" y="250" fill="#9de0c7" font-family="Arial" font-size="14">Yes</text>
+<rect x="324" y="264" width="123" height="42" rx="12" fill="#32715f"/><text x="385" y="291" text-anchor="middle" fill="#fff" font-family="Arial" font-size="15">Leap year</text>
+<rect x="479" y="264" width="131" height="42" rx="12" fill="#344264"/><text x="544" y="291" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Divisible by 400?</text>
+<text x="320" y="340" text-anchor="middle" fill="#c5cee3" font-family="Arial" font-size="14">Century years are leap years only when divisible by 400.</text>
+</svg>

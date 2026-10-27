@@ -71,6 +71,10 @@
    "slides": "Gravity deck: 2",
    "steps": [
     {
+     "img": {
+      "src": "img/astronomy/inverse-square-gravity.svg",
+      "alt": "Doubling the distance between two masses reduces their gravitational force to one quarter."
+     },
      "title": "Changing the distance",
      "bullets": [
       "Distance doubled: force is **1/4** (2² = 4). Distance tripled: force is **1/9** (3² = 9).",
@@ -1155,17 +1159,17 @@
   },
   {
    "id": "gr-29",
-   "q": "In which of the following situations is Newton's third law NOT applicable?",
+   "q": "A satellite moves from a circular orbit of radius r to one of radius 2r around the same planet. What happens to gravitational force and orbital speed?",
    "options": [
-    "when one object is much more massive than the other",
-    "Newton's third law is applicable in all cases.",
-    "when the force in question is gravity and the objects are physically separated",
-    "when the objects are microscopic",
-    "when more than two objects are involved"
+    "Force becomes one-quarter as strong, and orbital speed becomes about 0.71 of its original value.",
+    "Force becomes half as strong, and orbital speed remains unchanged.",
+    "Force becomes one-quarter as strong, and orbital speed doubles.",
+    "Force becomes four times stronger, and orbital speed becomes about 0.71 of its original value.",
+    "Neither force nor orbital speed changes because the planet's mass is unchanged."
    ],
-   "answer": 1,
-   "why": "Every force comes as an equal and opposite pair. Earth pulls on you exactly as hard as you pull on Earth. The different masses only give different accelerations, not different forces. The law also holds for gravity at a distance.",
-   "source": "Practice test 2 Q10 and its explained file"
+   "answer": 0,
+   "why": "The inverse-square law makes the force one-quarter as large at twice the radius. Circular orbital speed varies as the square root of the inverse radius, so it becomes 1/√2, or about 0.71, of its original value.",
+   "source": "Gravity deck: inverse-square law and circular orbits; original ACEIT question"
   },
   {
    "id": "gr-30",
@@ -1353,17 +1357,17 @@
   },
   {
    "id": "gr-14",
-   "q": "A satellite in low Earth orbit slowly loses altitude because of drag from the thin upper atmosphere. What happens to its orbital energy?",
+   "q": "Why does a satellite in a higher circular orbit move more slowly than one closer to the same planet?",
    "options": [
-    "It increases, so the satellite moves to a higher orbit.",
-    "It stays exactly the same.",
-    "It is converted into extra mass for the satellite.",
-    "It is transferred to the Moon.",
-    "It decreases, turning into heat, so the satellite gradually falls toward Earth."
+    "A larger orbital radius requires a lower speed to provide the needed centripetal acceleration.",
+    "The planet's gravitational force becomes stronger at greater distances.",
+    "The satellite loses mass as it rises, reducing its orbital speed.",
+    "A higher orbit has no gravitational force acting on the satellite.",
+    "The satellite must travel faster to remain farther from the planet."
    ],
-   "answer": 4,
-   "why": "Drag takes orbital energy away as thermal energy, so the orbit shrinks until the satellite falls and often burns up.",
-   "source": "ASTR207 Practice questions Q19; Cosmic Perspective 4.5 (Atmospheric Drag, p. 127)"
+   "answer": 0,
+   "why": "A circular orbit balances gravitational acceleration with the acceleration required to curve the path. At a greater radius, gravity is weaker and a lower orbital speed is needed.",
+   "source": "Gravity deck: circular orbital motion; original ACEIT question"
   },
   {
    "id": "gr-16",

@@ -1296,6 +1296,309 @@
      "derived": false
     }
    ]
-  }
+   },
+   {
+    "id": "midterm",
+    "title": "Cumulative Midterm Practice",
+    "blurb": "24 original questions across sky motions, gravity, light, matter, telescopes, and planetary science.",
+    "questions": [
+     {
+      "id": "astr-mid-1",
+      "q": "An observer travels north while keeping the same local time. Which sky change should be expected from latitude alone?",
+      "options": [
+       "The north celestial pole appears higher above the horizon.",
+       "The ecliptic changes into a physical orbit around the observer.",
+       "The Sun's apparent daily motion reverses direction.",
+       "The stars become fixed relative to Earth's surface."
+      ],
+      "answer": 0,
+      "why": "The altitude of the celestial pole tracks the observer's latitude."
+     },
+     {
+      "id": "astr-mid-2",
+      "q": "A star rises about four minutes earlier on successive nights. Which combination best explains the shift?",
+      "options": [
+       "Earth rotates relative to distant stars faster than it completes a solar day.",
+       "Earth's orbit stops while the star moves westward.",
+       "The star's light takes longer to arrive each night.",
+       "Earth's axis changes direction by four minutes each day."
+      ],
+      "answer": 0,
+      "why": "Earth must rotate slightly more than one sidereal rotation to bring the Sun back to the same position in the sky."
+     },
+     {
+      "id": "astr-mid-3",
+      "q": "A planet appears to move backward against the background stars for several weeks. Which interpretation is best?",
+      "options": [
+       "The planet's apparent retrograde motion results from changing viewing geometry as Earth and the planet orbit.",
+       "The planet has stopped orbiting and is physically reversing its entire path.",
+       "The background stars are orbiting Earth in the opposite direction.",
+       "The Sun's rotation reverses the planet's orbit."
+      ],
+      "answer": 0,
+      "why": "Relative orbital motion can create an apparent reversal against distant background stars."
+     },
+     {
+      "id": "astr-mid-4",
+      "q": "A satellite moves farther from a planet while remaining gravitationally bound. Ignoring propulsion, what happens to its orbital speed and gravitational potential energy?",
+      "options": [
+       "Its speed decreases while its gravitational potential energy increases toward zero.",
+       "Its speed increases while its potential energy becomes more negative.",
+       "Both speed and potential energy remain constant at every point.",
+       "Its speed becomes zero as soon as its distance changes."
+      ],
+      "answer": 0,
+      "why": "In a bound orbit, a satellite is generally slower farther from the central body, and gravitational potential energy increases as separation grows."
+     },
+     {
+      "id": "astr-mid-5",
+      "q": "Two objects have the same mass, but one is twice as far from a planet's centre. How does the planet's gravitational force on it compare?",
+      "options": [
+       "It is one quarter as strong.",
+       "It is half as strong.",
+       "It is twice as strong.",
+       "It is four times as strong."
+      ],
+      "answer": 0,
+      "why": "Gravity follows an inverse-square dependence on separation."
+     },
+     {
+      "id": "astr-mid-6",
+      "q": "An astronaut feels weightless while orbiting Earth. Which explanation is most accurate?",
+      "options": [
+       "The astronaut and spacecraft are in continuous free fall together.",
+       "Earth's gravity is absent at orbital altitude.",
+       "The astronaut has lost mass but kept the same density.",
+       "The spacecraft is outside Earth's gravitational influence."
+      ],
+      "answer": 0,
+      "why": "Gravity remains significant in orbit; apparent weightlessness comes from shared free fall."
+     },
+     {
+      "id": "astr-mid-7",
+      "q": "A rotating cloud contracts while conserving angular momentum. Which outcome is expected if external torque is negligible?",
+      "options": [
+       "Its rotation rate increases as its size decreases.",
+       "Its rotation rate falls to zero.",
+       "Its total angular momentum must increase.",
+       "Its mass converts entirely into thermal energy."
+      ],
+      "answer": 0,
+      "why": "A smaller rotating system spins faster when angular momentum is conserved."
+     },
+     {
+      "id": "astr-mid-8",
+      "q": "A collision between two isolated objects occurs, but some kinetic energy becomes heat. Which statement can still remain true?",
+      "options": [
+       "Total momentum is conserved even though kinetic energy is not.",
+       "Both momentum and kinetic energy must decrease.",
+       "Kinetic energy conservation requires momentum to change.",
+       "Heat production prevents conservation of momentum."
+      ],
+      "answer": 0,
+      "why": "Momentum is conserved in an isolated system; kinetic energy can be transformed into other forms."
+     },
+     {
+      "id": "astr-mid-9",
+      "q": "A planet's orbit becomes more elliptical after an interaction. At which part of the orbit is its speed greatest?",
+      "options": [
+       "At its closest approach to the Sun",
+       "At its greatest distance from the Sun",
+       "At every point equally",
+       "Only when it crosses Earth's orbital plane"
+      ],
+      "answer": 0,
+      "why": "An orbiting object moves faster when nearer the Sun, consistent with conservation of orbital energy and angular momentum."
+     },
+     {
+      "id": "astr-mid-10",
+      "q": "A spectrum from a star has absorption lines at the same pattern of wavelengths as a laboratory element but shifted together. What does the shared pattern indicate?",
+      "options": [
+       "The element can be present in the star, while the shift can reveal relative motion.",
+       "The star must be made only of that element.",
+       "The element's lines are caused by the telescope's mirror shape.",
+       "The shift directly gives the star's distance without other information."
+      ],
+      "answer": 0,
+      "why": "Line patterns identify atoms or molecules, and a common shift can indicate Doppler motion."
+     },
+     {
+      "id": "astr-mid-11",
+      "q": "Two thermal sources have peaks at different wavelengths. Which source has the higher surface temperature?",
+      "options": [
+       "The source whose spectrum peaks at the shorter wavelength",
+       "The source whose spectrum peaks at the longer wavelength",
+       "The source with the smaller apparent size, regardless of spectrum",
+       "Neither; peak wavelength contains no temperature information"
+      ],
+      "answer": 0,
+      "why": "A hotter thermal source has its peak emission at a shorter wavelength."
+     },
+     {
+      "id": "astr-mid-12",
+      "q": "An atom emits a photon as an electron moves from a higher energy level to a lower one. Which statement must be true?",
+      "options": [
+       "The photon carries energy equal to the difference between the levels.",
+       "The electron gains energy from the photon while moving downward.",
+       "The photon must be a radio wave regardless of the level spacing.",
+       "The atom's number of protons changes."
+      ],
+      "answer": 0,
+      "why": "The emitted photon carries the energy lost as the electron transitions between levels."
+     },
+     {
+      "id": "astr-mid-13",
+      "q": "A galaxy's spectral lines are shifted toward longer wavelengths. Which conclusion is best supported before other effects are considered?",
+      "options": [
+       "The galaxy is receding along our line of sight.",
+       "The galaxy must be rotating so rapidly that it is breaking apart.",
+       "The galaxy is moving only across the sky with no radial motion.",
+       "The shift proves that its temperature is increasing."
+      ],
+      "answer": 0,
+      "why": "A redshift indicates motion away along the line of sight, though cosmological expansion can also contribute."
+     },
+     {
+      "id": "astr-mid-14",
+      "q": "A star's spectrum contains broad absorption features from both the star and Earth's atmosphere. What should an astronomer do to separate the sources?",
+      "options": [
+       "Compare with reference or calibration observations of the atmosphere.",
+       "Assume every absorption feature came from the star.",
+       "Replace spectroscopy with a single colour image.",
+       "Use only the star's apparent position."
+      ],
+      "answer": 0,
+      "why": "The atmosphere can imprint absorption features, so calibration helps distinguish terrestrial from astronomical signals."
+     },
+     {
+      "id": "astr-mid-15",
+      "q": "A larger telescope produces a brighter image of a dim galaxy, but the galaxy's apparent size is unchanged. Which statement best explains this?",
+      "options": [
+       "Aperture improves light collection; image scale and magnification are separate properties.",
+       "The aperture cannot affect recorded brightness.",
+       "The detector has become a gravitational-wave instrument.",
+       "The galaxy's physical size has changed."
+      ],
+      "answer": 0,
+      "why": "Aperture collects more light, while magnification and image scale address apparent size."
+     },
+     {
+      "id": "astr-mid-16",
+      "q": "An observatory combines two separated radio dishes and can distinguish a close pair of sources better than either dish alone. What has primarily improved?",
+      "options": [
+       "Angular resolution from the longer effective baseline",
+       "The sum of the dish areas beyond their physical sizes",
+       "The atmosphere's transmission of X-rays",
+       "The intrinsic brightness of both sources"
+      ],
+      "answer": 0,
+      "why": "Interferometry uses separation between telescopes to improve resolving power without enlarging each dish."
+     },
+     {
+      "id": "astr-mid-17",
+      "q": "A telescope's detector records a sharp image only when placed at one precise location behind the optics. What is that location?",
+      "options": [
+       "The focal plane",
+       "The celestial equator",
+       "The horizon",
+       "The transmission window"
+      ],
+      "answer": 0,
+      "why": "The focal plane is where incoming rays from a source are brought into focus."
+     },
+     {
+      "id": "astr-mid-18",
+      "q": "An orbit diagram shows Mercury, the asteroid belt, Jupiter, and a distant icy population in that order. Which interpretation best matches the solar-system structure?",
+      "options": [
+       "Rocky inner planets precede the asteroid belt and outer giant planets, with icy bodies beyond.",
+       "The asteroid belt lies beyond the Oort cloud.",
+       "All icy bodies orbit inside Mercury's path.",
+       "The diagram proves the planets' sizes are drawn to scale."
+      ],
+      "answer": 0,
+      "why": "The broad order of the regions is inner rocky planets, asteroid belt, outer planets, and distant small-body populations.",
+      "img": {
+       "src": "img/astronomy/planetary-orbits.svg",
+       "alt": "The Sun, inner planets, asteroid belt, outer planets, and distant icy bodies in orbital order."
+      }
+     },
+     {
+      "id": "astr-mid-19",
+      "q": "A world is similar to Earth in size but has a dense carbon-dioxide atmosphere and extreme surface heating. Which comparison is most useful?",
+      "options": [
+       "Venus shows that similar size does not guarantee similar surface conditions.",
+       "Jupiter shows that rocky planets cannot retain atmospheres.",
+       "Mercury shows that every dense atmosphere causes extreme heating.",
+       "Neptune shows that all inner planets are ice giants."
+      ],
+      "answer": 0,
+      "why": "Venus and Earth are similar in size but have very different atmospheres and surface environments."
+     },
+     {
+      "id": "astr-mid-20",
+      "q": "A comet becomes active near the Sun and its tail points away from the Sun while the nucleus moves in another direction. Which process best accounts for this geometry?",
+      "options": [
+       "Solar heating releases gas and dust that radiation and solar wind push outward.",
+       "The tail is a solid extension trailing the comet's velocity.",
+       "The comet's gravity bends its own tail toward the Sun.",
+       "The nucleus is pushed backward by Earth's atmosphere."
+      ],
+      "answer": 0,
+      "why": "Released gas and dust are pushed away from the Sun, so the tail direction is not simply behind the comet's motion."
+     },
+     {
+      "id": "astr-mid-21",
+      "q": "Which observation is the strongest evidence for a rotating disk during solar-system formation?",
+      "options": [
+       "Most planets orbit in nearly the same plane and direction.",
+       "Every planet has the same number of moons.",
+       "All planets have exactly equal densities.",
+       "Every comet has a visible tail throughout its orbit."
+      ],
+      "answer": 0,
+      "why": "A flattened rotating disk naturally explains the coordinated orbital directions and planes.",
+      "img": {
+       "src": "img/astronomy/nebular-model.svg",
+       "alt": "A collapsing cloud forms a rotating disk around a young Sun, where planetesimals accumulate."
+      }
+     },
+     {
+      "id": "astr-mid-22",
+      "q": "A small rocky body is round and orbits the Sun, but it shares its orbital neighborhood with many other sizable objects. Which classification is most appropriate?",
+      "options": [
+       "Dwarf planet",
+       "Major planet",
+       "Natural satellite",
+       "Cometary coma"
+      ],
+      "answer": 0,
+      "why": "A dwarf planet orbits the Sun and is nearly round but has not cleared its orbital neighborhood."
+     },
+     {
+      "id": "astr-mid-23",
+      "q": "A spacecraft must compare a surface mineral at one location with the composition of the planet as a whole. Which pairing provides the most complementary evidence?",
+      "options": [
+       "A lander or rover for local analysis and an orbiter for broad mapping",
+       "Two flybys with no instruments",
+       "A light curve alone and a larger display screen",
+       "A terrestrial telescope and a clock"
+      ],
+      "answer": 0,
+      "why": "Surface missions provide local measurements, while orbiters give repeated broad coverage."
+     },
+     {
+      "id": "astr-mid-24",
+      "q": "A space observatory detects radiation absorbed by Earth's atmosphere, while a ground telescope continues visible-light observations. Which conclusion follows?",
+      "options": [
+       "Space and ground observatories provide complementary wavelength access.",
+       "Ground telescopes cannot collect any electromagnetic radiation.",
+       "The atmosphere blocks every wavelength equally.",
+       "The space observatory changes the source's emission."
+      ],
+      "answer": 0,
+      "why": "Ground instruments remain valuable in atmospheric windows, while space telescopes can access blocked wavelengths."
+     }
+    ]
+   }
  ]
 }

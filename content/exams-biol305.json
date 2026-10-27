@@ -1,0 +1,189 @@
+{
+ "title": "BIOL 305 practice exams",
+ "intro": "Cumulative single-best-answer practice. Each item asks you to evaluate a set of biological statements, not recognize one isolated definition.",
+ "tests": [
+  {
+   "id": "midterm",
+   "title": "Cumulative Midterm Practice",
+   "blurb": "24 original statement-analysis questions across cells, tissues, development, and human body systems.",
+   "questions": [
+    {
+     "id": "biol-mid-1",
+     "q": "A cell is synthesizing a protein that will be secreted outside the cell. Which of the following statements are true? I. Translation occurs on ribosomes. II. The rough endoplasmic reticulum can process proteins entering the secretory pathway. III. The Golgi apparatus can sort and package proteins for transport.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 3,
+     "why": "Ribosomes translate proteins, and the rough ER and Golgi help process and route many secreted proteins.",
+     "source": "admin-only: BIOL 305 cell-biology unit"
+    },
+    {
+     "id": "biol-mid-2",
+     "q": "A drug prevents a cell from assembling functional spindle fibres. Which of the following statements are true? I. Chromosomes may fail to separate correctly. II. Cell division can be arrested at a checkpoint. III. DNA replication is the same event as cytokinesis.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "The spindle helps segregate chromosomes, and checkpoints can delay division; DNA replication and cytokinesis are distinct processes.",
+     "source": "admin-only: BIOL 305 cell-growth unit"
+    },
+    {
+     "id": "biol-mid-3",
+     "q": "A progenitor cell divides, and its daughters activate different sets of genes despite having the same genome. Which of the following statements are true? I. Differential gene expression can produce distinct cell functions. II. Every cell must express every gene at the same level. III. Cell specialization can arise without changing the DNA sequence.",
+     "options": ["I and III only", "I and II only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "Different patterns of gene expression let cells specialize while retaining nearly the same genome.",
+     "source": "admin-only: BIOL 305 cell-growth and development units"
+    },
+    {
+     "id": "biol-mid-4",
+     "q": "A sensory neuron detects a stimulus and sends information toward the central nervous system. Which of the following statements are true? I. Dendrites commonly receive input. II. An action potential propagates along the axon. III. A synapse is a gap where signals can be transferred to another cell.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "These structures support reception, signal conduction, and communication between cells."
+    },
+    {
+     "id": "biol-mid-5",
+     "q": "A drug blocks voltage-gated sodium channels in a neuron. Which of the following statements are true? I. Action-potential initiation or propagation may be impaired. II. The resting membrane potential is created only by sodium entering through those channels. III. Electrical signaling depends on ion gradients across the membrane.",
+     "options": ["I and III only", "I and II only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "Voltage-gated sodium channels support action potentials, and membrane signaling relies on ion gradients; resting potential has several contributors."
+    },
+    {
+     "id": "biol-mid-6",
+     "q": "A neurotransmitter is released from a motor neuron onto a skeletal-muscle fibre. Which of the following statements are true? I. The communication site is a neuromuscular junction. II. Acetylcholine can trigger an electrical response in the muscle membrane. III. The motor-neuron signal directly shortens actin filaments.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "The neural signal initiates muscle excitation; contraction follows through calcium-regulated actin-myosin interactions."
+    },
+    {
+     "id": "biol-mid-7",
+     "q": "A skeletal-muscle fibre has released calcium from its sarcoplasmic reticulum. Which of the following statements are true? I. Calcium binds troponin. II. Tropomyosin shifts to expose binding sites on actin. III. Myosin can form cross-bridges with exposed actin.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "Calcium binding changes the regulatory complex so myosin can bind actin and pull."
+    },
+    {
+     "id": "biol-mid-8",
+     "q": "A patient has cardiac-muscle cells that cannot communicate efficiently with neighbours. Which of the following statements are true? I. Intercalated discs normally connect cardiac cells. II. Gap junctions support electrical communication. III. Cardiac contraction is ordinarily under conscious voluntary control.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "Intercalated discs and gap junctions help coordinate cardiac activity, which is not voluntarily controlled."
+    },
+    {
+     "id": "biol-mid-9",
+     "q": "A muscle contracts slowly and sustains tension in an intestinal wall. Which of the following statements are true? I. Smooth muscle is a likely tissue type. II. Smooth muscle is nonstriated. III. Smooth muscle cells use actin and myosin.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "Smooth muscle is nonstriated, contracts involuntarily, and still uses actin and myosin."
+    },
+    {
+     "id": "biol-mid-10",
+     "q": "A bone is exposed to repeated compressive loading. Which of the following statements are true? I. Bone remodeling can respond to mechanical stress. II. Osteoblasts deposit matrix. III. Osteoclasts resorb bone.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "Bone is dynamically remodeled through coordinated osteoblast deposition and osteoclast resorption.",
+     "img": {
+      "src": "img/biology/bone-remodeling.svg",
+      "alt": "Osteoclast resorption and osteoblast deposition contribute to bone remodeling."
+     },
+     "source": "admin-only: BIOL 305 skeletal-system unit"
+    },
+    {
+     "id": "biol-mid-11",
+     "q": "A long bone has reached adult length, but its outer diameter continues to change. Which of the following statements are true? I. Closure of the growth plate stops lengthening at that site. II. Bone can still remodel after growth-plate closure. III. Appositional growth can alter diameter.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "Growth-plate closure ends longitudinal growth there, but remodeling and outer-surface deposition can continue."
+    },
+    {
+     "id": "biol-mid-12",
+     "q": "A fracture is healing. Which of the following statements are true? I. A hematoma forms early after vessel damage. II. A soft callus is followed by a hard callus. III. Remodeling is an early stage that precedes the hematoma.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "Fracture repair proceeds through hematoma and callus formation before later remodeling."
+    },
+    {
+     "id": "biol-mid-13",
+     "q": "A food bolus moves through the esophagus even when a person is not standing upright. Which of the following statements are true? I. Peristaltic contractions help propel it. II. Smooth muscle can contribute to involuntary movement. III. Gravity is the only force that moves food through the digestive tract.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "Peristalsis moves contents through the tract; propulsion is not dependent on gravity alone."
+    },
+    {
+     "id": "biol-mid-14",
+     "q": "A person digests dietary fat and absorbs many resulting molecules in the small intestine. Which of the following statements are true? I. Bile helps emulsify fat. II. Pancreatic enzymes contribute to digestion. III. Intestinal villi increase absorptive surface area.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "Bile, digestive enzymes, and the increased surface area of the intestine each support fat digestion and nutrient uptake."
+    },
+    {
+     "id": "biol-mid-15",
+     "q": "A person has impaired pancreatic secretion into the small intestine. Which of the following statements are true? I. Digestion of multiple food molecules may be affected. II. The pancreas is an accessory digestive organ. III. The pancreas is part of the alimentary canal through which food passes.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "The pancreas releases digestive secretions but food does not pass through it as part of the alimentary canal."
+    },
+    {
+     "id": "biol-mid-16",
+     "q": "During inhalation, thoracic volume increases. Which of the following statements are true? I. The diaphragm contracts and moves downward. II. Thoracic pressure falls below atmospheric pressure. III. Air flows into the lungs down a pressure gradient.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "Expansion of the thoracic cavity lowers pressure and drives airflow into the lungs."
+    },
+    {
+     "id": "biol-mid-17",
+     "q": "Oxygen moves from alveolar air into pulmonary capillary blood. Which of the following statements are true? I. Diffusion follows a partial-pressure gradient. II. A thin respiratory surface supports gas exchange. III. Hemoglobin binding helps transport oxygen in blood.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "Gas exchange depends on gradients and a thin barrier; hemoglobin carries much of the oxygen in blood."
+    },
+    {
+     "id": "biol-mid-18",
+     "q": "A person breathes rapidly during exercise, but carbon dioxide removal does not rise as expected. Which of the following statements are true? I. Ventilation alone does not guarantee effective gas exchange. II. Gas diffusion depends on gradients and exchange surface. III. Pulmonary blood flow contributes to gas exchange.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "Ventilation, diffusion, and perfusion must work together for effective exchange."
+    },
+    {
+     "id": "biol-mid-19",
+     "q": "A red blood cell travels from the right ventricle to the lungs and then returns to the left atrium. Which of the following statements are true? I. It passed through the pulmonary circuit. II. The pulmonary arteries carry blood away from the heart. III. Pulmonary arteries usually carry oxygen-rich blood.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "Pulmonary arteries carry blood from the right ventricle to the lungs and are unusual because their blood is oxygen-poor."
+    },
+    {
+     "id": "biol-mid-20",
+     "q": "A blockage reduces blood flow through a coronary artery. Which of the following statements are true? I. The myocardium may receive less oxygen. II. Coronary vessels supply the heart muscle. III. The blockage directly prevents air from entering the lungs.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "Coronary arteries supply the myocardium; they are part of the cardiovascular rather than respiratory pathway."
+    },
+    {
+     "id": "biol-mid-21",
+     "q": "An electrocardiogram shows altered timing between atrial and ventricular activity. Which of the following statements are true? I. Electrical conduction helps coordinate heart contraction. II. The sinoatrial node normally initiates the heartbeat. III. The ECG directly measures the amount of oxygen bound to hemoglobin.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "The ECG records electrical activity, and the sinoatrial node normally initiates the cardiac rhythm."
+    },
+    {
+     "id": "biol-mid-22",
+     "q": "A person with type A blood is considered for a red-cell transfusion. Which of the following statements are true? I. Type A red cells display A antigen. II. Plasma from type A blood contains anti-B antibodies. III. ABO compatibility depends on antibodies reacting with donor red-cell antigens.",
+     "options": ["I, II, and III", "I and II only", "I and III only", "II and III only"],
+     "answer": 0,
+     "why": "ABO transfusion compatibility depends on whether recipient antibodies recognize antigens on donor red cells."
+    },
+    {
+     "id": "biol-mid-23",
+     "q": "A developing embryo has a cell population that contributes to vertebrae and ribs. Which of the following statements are true? I. Somites derive from paraxial mesoderm. II. The sclerotome contributes to axial skeletal structures. III. The somatic lateral plate mesoderm is the sole source of all skeletal bones.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "Somites and the sclerotome contribute to axial structures; other skeletal regions have distinct embryonic sources."
+    },
+    {
+     "id": "biol-mid-24",
+     "q": "A patient has reduced activity of both respiratory and cardiovascular systems during exercise. Which of the following statements are true? I. The respiratory system loads oxygen into blood. II. The cardiovascular system transports oxygen to tissues. III. Either system can fully replace the other's role.",
+     "options": ["I and II only", "I and III only", "II and III only", "I, II, and III"],
+     "answer": 0,
+     "why": "The systems cooperate: lungs exchange gases and the cardiovascular system distributes them; neither substitutes for the other."
+    }
+   ]
+  }
+ ]
+}

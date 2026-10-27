@@ -12,6 +12,10 @@
    "slides": "Energy deck 1-2; textbook Table 4.1 (p.120)",
    "steps": [
     {
+     "img": {
+      "src": "img/astronomy/energy-forms.svg",
+      "alt": "Motion, height, heat, and light represent different forms of energy."
+     },
      "title": "Energy and work",
      "bullets": [
       "**Energy** is the ability to do work or to make power. It can also show up as light or heat.",
@@ -391,6 +395,10 @@
    "slides": "Energy deck 2 and 9; textbook p.122",
    "steps": [
     {
+     "img": {
+      "src": "img/astronomy/energy-conservation.svg",
+      "alt": "A ball exchanges gravitational potential, kinetic, and thermal energy while the total remains conserved."
+     },
      "title": "Energy is never created or destroyed",
      "bullets": [
       "**Conservation of energy**: energy can only be changed from one form to another, never created or destroyed.",
@@ -809,7 +817,12 @@
     "Momentum deck slide 1 (three questions), Energy deck slide 9 (what have we learned)",
     "Cosmic Perspective 4.3 overview"
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/astronomy/energy-forms.svg",
+     "alt": "Three conservation laws keep track of linear momentum, angular momentum, and total energy."
+    }
+   ],
    "table": {
     "head": [
      "Law",
@@ -1391,17 +1404,17 @@
   },
   {
    "id": "cv-15",
-   "q": "A spacecraft in deep space, far from any star or planet, shuts off its engines. What happens?",
+   "q": "Two carts collide on a nearly frictionless track and lock together. Which statement must be true if external forces are negligible?",
    "options": [
-    "It gradually slows down and stops.",
-    "It stops immediately.",
-    "It keeps moving in a straight line at constant speed.",
-    "It speeds up because there is no air resistance.",
-    "It starts to move in a circle."
+    "The carts' total momentum after impact equals their total momentum before impact.",
+    "Each cart keeps its original velocity after the collision.",
+    "The carts' total kinetic energy must be unchanged.",
+    "The heavier cart must transfer all of its momentum to the lighter cart.",
+    "The system's momentum becomes zero because the carts stick together."
    ],
-   "answer": 2,
-   "why": "With no net force, momentum cannot change, so velocity stays constant.",
-   "source": "Momentum deck slide 2; Practice questions Q13"
+   "answer": 0,
+   "why": "With negligible external force, the combined system's momentum is conserved. The carts can change velocity and lose kinetic energy in a sticking collision, but their total momentum remains the same.",
+   "source": "Momentum deck: conservation of momentum; original ACEIT collision question"
   },
   {
    "id": "cv-16",

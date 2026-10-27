@@ -13,7 +13,12 @@
    "slides": "1-3, 20-23",
    "steps": [
     {
-     "title": "Three kinds of muscle tissue",
+   "img": {
+    "src": "img/biology/muscle-types.svg",
+    "slide": "Original course diagram",
+    "alt": "Skeletal, cardiac, and smooth muscle are compared by striation, control, and function."
+   },
+   "title": "Three kinds of muscle tissue",
      "bullets": [
       "**Skeletal muscle** attaches to bones through tendons and supports body movement. Its activity is generally under voluntary control.",
       "**Cardiac muscle** forms the heart wall and contracts to pump blood.",
@@ -63,7 +68,12 @@
    "slides": "4-9",
    "steps": [
     {
-     "title": "Muscles attach and work in groups",
+   "img": {
+    "src": "img/biology/muscle-organization.svg",
+    "slide": "Original course diagram",
+    "alt": "A hierarchy runs from whole muscle through fascicles, fibres, and myofibrils to sarcomeres."
+   },
+   "title": "Muscles attach and work in groups",
      "bullets": [
       "Tendons connect skeletal muscles to bones. The **origin** is the relatively stable attachment; the **insertion** is usually on the bone that moves across a joint.",
       "When a muscle contracts, it pulls the insertion toward the origin.",
@@ -113,7 +123,12 @@
    "slides": "10, 13-17",
    "steps": [
     {
-     "title": "The signal reaches a muscle fibre",
+   "img": {
+    "src": "img/biology/muscle-contraction.svg",
+    "slide": "Original course diagram",
+    "alt": "A nerve signal triggers calcium release, exposes actin sites, and enables myosin cross-bridge cycling."
+   },
+   "title": "The signal reaches a muscle fibre",
      "bullets": [
       "A motor neuron communicates with a skeletal muscle fibre at the **neuromuscular junction**.",
       "The neuron releases **acetylcholine (ACh)**. ACh binds receptors that open ion channels and start an electrical impulse in the muscle membrane.",
@@ -171,7 +186,12 @@
    "slides": "20-23",
    "steps": [
     {
-     "title": "Involuntary activity and cell connections",
+   "img": {
+    "src": "img/biology/muscle-types.svg",
+    "slide": "Original course diagram",
+    "alt": "Cardiac muscle is striated and connected, while smooth muscle is nonstriated and arranged in tapered cells."
+   },
+   "title": "Involuntary activity and cell connections",
      "bullets": [
       "Cardiac and smooth muscle contract involuntarily, and some cells can initiate activity without a nerve signal.",
       "Cardiac cells connect at **intercalated discs**. Gap junctions in these discs let electrical activity pass between neighbouring cells.",
@@ -221,7 +241,12 @@
    "slides": "24-28",
    "steps": [
     {
-     "title": "Paraxial mesoderm forms muscle precursors",
+   "img": {
+    "src": "img/biology/skeletal-development.svg",
+    "slide": "Original course diagram",
+    "alt": "Paraxial mesoderm and somites give rise to muscle-forming tissues during development."
+   },
+   "title": "Paraxial mesoderm forms muscle precursors",
      "bullets": [
       "Much of the muscular system develops from **paraxial mesoderm**.",
       "Anterior head mesoderm contributes to muscles of the face and skull.",

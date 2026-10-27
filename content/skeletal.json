@@ -1,0 +1,729 @@
+{
+  "id": "skeletal",
+  "title": "The Skeletal System",
+  "chapter": "Unit 5",
+  "icon": "🦴",
+  "color": "#c0392b",
+  "slideFile": "The Skeletal System.pdf",
+  "intro": "Connect bone structure with support, movement, mineral balance, growth, repair, and development. Distinguish the skeleton's regions, joint types, and the two main routes of bone formation.",
+  "sections": [
+    {
+      "id": "bone-structure",
+      "title": "Bone tissue and long-bone structure",
+      "slides": "2-5",
+      "steps": [
+        {
+          "img": {
+            "src": "img/biology/bone-anatomy.svg",
+            "slide": "Original course diagram",
+            "alt": "A long bone labeled with epiphyses, diaphysis, periosteum, compact bone, and marrow cavity."
+          },
+          "title": "Bone is living connective tissue",
+          "bullets": [
+            "Bone contains living cells embedded in a mineralized extracellular matrix. Collagen contributes flexibility and tensile strength; mineral salts make the matrix rigid and resistant to compression.",
+            "A long bone has a shaft called the **diaphysis** and expanded ends called **epiphyses**. The periosteum covers its external surface except at articular regions.",
+            "Compact bone forms a dense outer region, while spongy bone contains a lattice of trabeculae. The spaces within spongy bone can contain marrow."
+          ]
+        },
+        {
+          "title": "Bone-cell roles are distinct",
+          "bullets": [
+            "**Osteoblasts** build bone by secreting osteoid and supporting its mineralization.",
+            "**Osteoclasts** resorb bone, while **osteocytes** are mature cells that help maintain the matrix and sense mechanical conditions.",
+            "Bone also stores minerals, protects organs, provides attachment sites for muscles, and houses marrow involved in blood-cell production."
+          ]
+        },
+        {
+          "title": "Cartilage and ligaments are different tissues",
+          "bullets": [
+            "Cartilage supports and cushions structures; articular cartilage reduces friction where bones meet.",
+            "Ligaments connect bone to bone and help stabilize joints. They are not the same as tendons, which connect muscle to bone."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "Bone combines a tough collagen framework with mineral reinforcement, allowing it to resist forces while remaining a living tissue that can adapt."
+        },
+        {
+          "type": "trick",
+          "text": "Osteoblasts build; osteoclasts resorb; osteocytes maintain and sense."
+        },
+        {
+          "type": "trap",
+          "text": "Ligaments join bone to bone; tendons join muscle to bone. Do not use the terms interchangeably."
+        }
+      ],
+      "sourceNotes": [
+        "Primary source: instructor's The Skeletal System deck, slides 2-5.",
+        "Explanations and diagrams are paraphrased and newly written."
+      ],
+      "images": []
+    },
+    {
+      "id": "remodeling-repair",
+      "title": "Bone remodeling and fracture repair",
+      "slides": "6-9",
+      "steps": [
+        {
+          "img": {
+            "src": "img/biology/bone-remodeling.svg",
+            "slide": "Original course diagram",
+            "alt": "Osteoclasts remove bone while osteoblasts deposit it; a fractured bone heals through hematoma, callus formation, and remodeling."
+          },
+          "title": "Remodeling responds to the body",
+          "bullets": [
+            "Bone is continually resorbed and replaced. Osteoclasts and osteoblasts coordinate the removal and deposition of matrix.",
+            "Mechanical loading influences where bone is maintained or added. Calcium needs and hormonal signals also affect remodeling.",
+            "Remodeling is not the same as growth in bone length: it renews and reshapes existing tissue."
+          ]
+        },
+        {
+          "title": "A fracture heals in stages",
+          "bullets": [
+            "Damage to blood vessels forms a fracture hematoma. Inflammatory and repair cells then enter the injured region.",
+            "A soft callus bridges the fracture before a harder bony callus develops. Remodeling gradually reshapes the new bone.",
+            "The sequence depends on adequate blood supply and stabilization; a fracture does not immediately return to its original structure."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "Bone's ability to remodel allows it to respond to repeated loads and maintain mineral balance, while staged repair restores continuity after injury."
+        },
+        {
+          "type": "trick",
+          "text": "Fracture repair: hematoma → soft callus → hard callus → remodeling."
+        },
+        {
+          "type": "trap",
+          "text": "A soft callus is not mature bone. The repair site is strengthened and reshaped over time."
+        }
+      ],
+      "sourceNotes": [
+        "Primary source: instructor's The Skeletal System deck, slides 6-9.",
+        "Explanations and diagram are paraphrased and newly written."
+      ],
+      "images": []
+    },
+    {
+      "id": "skeleton-regions",
+      "title": "Axial and appendicular skeleton",
+      "slides": "10-16",
+      "steps": [
+        {
+          "img": {
+            "src": "img/biology/skeleton-regions.svg",
+            "slide": "Original course diagram",
+            "alt": "A human skeleton with the axial central framework distinguished from the appendicular limb girdles and limbs."
+          },
+          "title": "The axial skeleton forms the central framework",
+          "bullets": [
+            "The axial skeleton includes the skull, vertebral column, ribs, and sternum. It supports the body axis and protects the brain, spinal cord, heart, and lungs.",
+            "The vertebral column has cervical, thoracic, lumbar, sacral, and coccygeal regions. There are seven cervical, twelve thoracic, and five lumbar vertebrae.",
+            "The rib cage includes twelve pairs of ribs. The first seven pairs attach directly to the sternum; the lower rib groups have indirect or no anterior attachment."
+          ]
+        },
+        {
+          "title": "The appendicular skeleton supports movement",
+          "bullets": [
+            "The appendicular skeleton includes the pectoral and pelvic girdles and the bones of the upper and lower limbs.",
+            "The pectoral girdle includes the clavicle and scapula. The pelvic girdle transfers upper-body weight to the lower limbs.",
+            "Bone names and landmarks help identify where muscles attach, how joints move, and which structures protect nearby organs."
+          ]
+        },
+        {
+          "title": "Skull and specialized bones",
+          "bullets": [
+            "Cranial bones enclose the brain; facial bones support the face and sensory structures.",
+            "The hyoid is unusual because it does not articulate directly with another bone. It provides attachment for muscles of the tongue and throat.",
+            "The small auditory ossicles transmit vibrations through the middle ear."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "The axial skeleton prioritizes support and protection, while the appendicular skeleton connects limbs to the trunk and enables a wide range of movement."
+        },
+        {
+          "type": "trick",
+          "text": "Axial = central axis. Appendicular = girdles and limbs."
+        },
+        {
+          "type": "trap",
+          "text": "The sacrum belongs to the axial vertebral column; the pelvic girdle also includes the coxal bones."
+        }
+      ],
+      "sourceNotes": [
+        "Primary source: instructor's The Skeletal System deck, slides 10-16.",
+        "Explanations and diagram are paraphrased and newly written."
+      ],
+      "images": []
+    },
+    {
+      "id": "joints",
+      "title": "Joint structure and movement",
+      "slides": "17-18",
+      "steps": [
+        {
+          "img": {
+            "src": "img/biology/joints.svg",
+            "slide": "Original course diagram",
+            "alt": "Fibrous, cartilaginous, and synovial joints compared by movement, with a synovial joint capsule and fluid illustrated."
+          },
+          "title": "Classify joints by structure and motion",
+          "bullets": [
+            "A joint, or articulation, is a location where bones meet. Structural classes include fibrous, cartilaginous, and synovial joints.",
+            "Fibrous joints generally allow little movement; cartilaginous joints allow limited movement; synovial joints are freely movable.",
+            "Functional classifications describe how much movement a joint permits. Structural type and functional movement are related but are not the same classification."
+          ]
+        },
+        {
+          "title": "Synovial joints share key structures",
+          "bullets": [
+            "A joint capsule surrounds the synovial cavity. Its inner synovial membrane produces fluid that lubricates and helps nourish the joint surfaces.",
+            "Articular cartilage covers the ends of bones, reducing friction and distributing forces.",
+            "Ligaments reinforce a joint and limit excessive movement; the shape of the articulating surfaces also affects the permitted motion."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "A fluid-filled cavity and lubricated cartilage permit low-friction movement while the capsule and ligaments help maintain joint stability."
+        },
+        {
+          "type": "trick",
+          "text": "Synovial: capsule, cavity, synovial fluid, and articular cartilage."
+        },
+        {
+          "type": "trap",
+          "text": "A freely movable joint is not an unsupported joint: its capsule, ligaments, muscles, and tendons contribute to stability."
+        }
+      ],
+      "sourceNotes": [
+        "Primary source: instructor's The Skeletal System deck, slides 17-18.",
+        "Explanations and diagram are paraphrased and newly written."
+      ],
+      "images": []
+    },
+    {
+      "id": "ossification-growth",
+      "title": "Bone formation and growth",
+      "slides": "19-25",
+      "steps": [
+        {
+          "img": {
+            "src": "img/biology/ossification.svg",
+            "slide": "Original course diagram",
+            "alt": "Intramembranous ossification forms bone directly from mesenchymal tissue, while endochondral ossification replaces a cartilage model."
+          },
+          "title": "Two routes form bone",
+          "bullets": [
+            "**Intramembranous ossification** forms bone directly as mesenchymal cells differentiate into osteoblasts and deposit osteoid.",
+            "**Endochondral ossification** begins with a cartilage model that is gradually replaced by bone. Many limb bones form through this route.",
+            "These terms describe how bone forms, not which embryonic region the precursor tissue came from."
+          ]
+        },
+        {
+          "title": "Growth plates lengthen long bones",
+          "bullets": [
+            "At an epiphyseal growth plate, cartilage cells divide and enlarge while bone is deposited on the shaft-facing side.",
+            "When the growth plate closes, lengthwise growth at that site stops; bones can still remodel.",
+            "Hormones regulate growth and maturation. Growth hormone supports childhood growth, while sex hormones contribute to the adolescent growth spurt and eventual plate closure."
+          ]
+        },
+        {
+          "title": "Bone growth is regulated",
+          "bullets": [
+            "Long-bone lengthening requires an active growth plate. Abnormalities that disrupt cartilage-cell development can alter growth.",
+            "Bone diameter can increase through deposition at the outer surface even as internal bone is remodeled."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "A cartilage model permits the developing long bone to grow in length before the growth plate closes and the bone reaches maturity."
+        },
+        {
+          "type": "trick",
+          "text": "Intramembranous: bone directly from mesenchyme. Endochondral: bone replaces cartilage."
+        },
+        {
+          "type": "trap",
+          "text": "Embryonic origin and ossification route are separate questions; a tissue's source does not by itself determine which formation process it uses."
+        }
+      ],
+      "sourceNotes": [
+        "Primary source: instructor's The Skeletal System deck, slides 19-25.",
+        "Explanations and diagram are paraphrased and newly written."
+      ],
+      "images": []
+    },
+    {
+      "id": "embryonic-origins",
+      "title": "Embryonic origins of the skeleton",
+      "slides": "26-32",
+      "steps": [
+        {
+          "img": {
+            "src": "img/biology/skeletal-development.svg",
+            "slide": "Original course diagram",
+            "alt": "Paraxial mesoderm and somites contribute to the axial skeleton, lateral plate mesoderm contributes to limb bones, and cranial neural crest contributes many facial bones."
+          },
+          "title": "Different regions contribute different bones",
+          "bullets": [
+            "Much of the axial skeleton below the skull develops from somites derived from paraxial mesoderm. The sclerotome contributes to vertebrae and ribs.",
+            "The appendicular skeleton develops largely from somatic lateral plate mesoderm and the limb buds.",
+            "Cranial neural crest contributes many facial bones, auditory ossicles, and the hyoid."
+          ]
+        },
+        {
+          "title": "Regional identity is patterned",
+          "bullets": [
+            "Vertebrae acquire different regional identities along the head-to-tail axis. Hox gene expression contributes to this positional pattern.",
+            "Somite derivatives include more than bone: sclerotome forms skeletal components, while adjacent somite regions contribute muscle and other tissues.",
+            "A bone's embryonic origin is not identical to its adult structural classification or its route of ossification."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "Regional patterning coordinates bones, muscles, and joints so that structures form in the right place and connect appropriately."
+        },
+        {
+          "type": "trick",
+          "text": "Somites contribute axial structures; lateral plate mesoderm contributes limb skeleton; cranial neural crest contributes many facial structures."
+        },
+        {
+          "type": "trap",
+          "text": "Do not confuse where a bone's precursor cells originate with whether that bone forms by intramembranous or endochondral ossification."
+        }
+      ],
+      "sourceNotes": [
+        "Primary source: instructor's The Skeletal System deck, slides 26-32.",
+        "Explanations and diagram are paraphrased and newly written."
+      ],
+      "images": []
+    }
+  ],
+  "cards": [
+    {
+      "id": "skl-c1",
+      "front": "Osteoblast",
+      "back": "A bone-forming cell that secretes osteoid and supports its mineralization.",
+      "short": "Builds bone matrix.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c2",
+      "front": "Osteoclast",
+      "back": "A cell that resorbs bone matrix.",
+      "short": "Resorbs bone.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c3",
+      "front": "Osteocyte",
+      "back": "A mature bone cell that helps maintain the matrix and respond to mechanical conditions.",
+      "short": "Maintains bone and senses loading.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c4",
+      "front": "Diaphysis",
+      "back": "The shaft of a long bone.",
+      "short": "Long-bone shaft.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c5",
+      "front": "Epiphysis",
+      "back": "An expanded end of a long bone.",
+      "short": "Expanded long-bone end.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c6",
+      "front": "Periosteum",
+      "back": "A connective-tissue covering on the external surface of bone, except at articular regions.",
+      "short": "Outer covering of bone.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c7",
+      "front": "Axial skeleton",
+      "back": "The central framework including the skull, vertebral column, ribs, and sternum.",
+      "short": "Central skeleton and rib cage.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c8",
+      "front": "Appendicular skeleton",
+      "back": "The limb bones and the pectoral and pelvic girdles.",
+      "short": "Girdles and limbs.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c9",
+      "front": "Ligament",
+      "back": "Dense connective tissue that joins bone to bone and helps stabilize a joint.",
+      "short": "Connects bone to bone.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c10",
+      "front": "Tendon",
+      "back": "Connective tissue that joins muscle to bone.",
+      "short": "Connects muscle to bone.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c11",
+      "front": "Synovial joint",
+      "back": "A freely movable joint with a capsule around a fluid-containing cavity.",
+      "short": "Freely movable, fluid-filled joint.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c12",
+      "front": "Endochondral ossification",
+      "back": "Bone formation that replaces a pre-existing cartilage model.",
+      "short": "Bone replaces cartilage.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c13",
+      "front": "Intramembranous ossification",
+      "back": "Bone formation directly from mesenchymal tissue without a cartilage model.",
+      "short": "Bone forms directly from mesenchyme.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c14",
+      "front": "Epiphyseal growth plate",
+      "back": "A cartilage region where long bones lengthen before the plate closes.",
+      "short": "Site of long-bone lengthening.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c15",
+      "front": "Sclerotome",
+      "back": "A somite region that contributes to vertebrae and ribs.",
+      "short": "Somite region that forms axial skeletal structures.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c16",
+      "front": "Fracture hematoma",
+      "back": "The blood clot that forms at a fracture after local blood vessels are damaged.",
+      "short": "First clot at a fracture site.",
+      "gloss": false
+    }
+  ],
+  "quiz": [
+    {
+      "id": "skl-1",
+      "q": "Which of these statements are true? I. Osteoblasts secrete osteoid. II. Osteoclasts deposit most new bone matrix. III. Osteocytes help maintain mature bone.",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Osteoblasts form osteoid, and osteocytes maintain mature bone. Osteoclasts resorb rather than deposit bone."
+    },
+    {
+      "id": "skl-2",
+      "q": "Which of these statements are true? I. Collagen contributes tensile strength to bone. II. Mineral salts contribute rigidity. III. Bone matrix is entirely nonliving.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Collagen and mineral contribute different mechanical properties, and bone also contains living cells."
+    },
+    {
+      "id": "skl-3",
+      "q": "Which of these statements are true? I. The diaphysis is the shaft of a long bone. II. The epiphyses are its expanded ends. III. The periosteum covers the articular surfaces.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "The diaphysis is the shaft and epiphyses are the ends; articular regions are not covered by periosteum."
+    },
+    {
+      "id": "skl-4",
+      "q": "Which of these statements are true? I. A ligament normally joins bone to bone. II. A tendon normally joins muscle to bone. III. Both terms describe the same attachment.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Ligaments connect bones; tendons connect muscle and bone."
+    },
+    {
+      "id": "skl-5",
+      "q": "Which of these statements are true? I. The axial skeleton includes the vertebral column. II. The appendicular skeleton includes the pectoral girdle. III. The pelvic girdle is part of the axial skeleton.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "The axial skeleton includes the vertebral column; both limb girdles belong to the appendicular skeleton."
+    },
+    {
+      "id": "skl-6",
+      "q": "Which of these statements are true? I. The rib cage protects organs in the thorax. II. Humans typically have twelve pairs of ribs. III. Every rib attaches directly to the sternum.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "There are twelve rib pairs, but only the upper seven pairs attach directly to the sternum."
+    },
+    {
+      "id": "skl-7",
+      "q": "Which of these statements are true? I. The hyoid directly articulates with the mandible. II. The hyoid provides muscle attachment in the throat. III. Auditory ossicles transmit vibrations in the middle ear.",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "The hyoid does not articulate directly with another bone; it anchors muscles. Ossicles transmit sound vibrations."
+    },
+    {
+      "id": "skl-8",
+      "q": "Which of these statements are true? I. The vertebral column has five anatomical regions. II. Thoracic vertebrae are associated with ribs. III. The cervical region contains twelve vertebrae.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "The column has five regions and twelve thoracic vertebrae; the cervical region has seven."
+    },
+    {
+      "id": "skl-9",
+      "q": "Which of these statements are true? I. Fibrous joints generally allow little movement. II. Cartilaginous joints permit limited movement. III. Synovial joints lack a joint cavity.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Synovial joints have a cavity enclosed by a capsule."
+    },
+    {
+      "id": "skl-10",
+      "q": "Which of these statements are true? I. Synovial fluid reduces friction. II. Articular cartilage covers bone ends at a synovial joint. III. Ligaments reinforce joints.",
+      "options": [
+        "I, II, and III",
+        "I and II only",
+        "I and III only",
+        "II and III only"
+      ],
+      "answer": 0,
+      "why": "Synovial fluid, articular cartilage, and ligaments each contribute to joint function and stability."
+    },
+    {
+      "id": "skl-11",
+      "q": "Which of these statements are true? I. Intramembranous ossification uses a cartilage model. II. Endochondral ossification replaces cartilage. III. Both processes produce bone tissue.",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Endochondral ossification replaces cartilage, while intramembranous ossification forms bone directly from mesenchymal tissue."
+    },
+    {
+      "id": "skl-12",
+      "q": "Which of these statements are true? I. Long bones lengthen at growth plates. II. Growth plates contain cartilage. III. Longitudinal growth continues at a site after its plate has closed.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Closure of the growth plate ends lengthwise growth at that location, although remodeling continues."
+    },
+    {
+      "id": "skl-13",
+      "q": "Which of these statements are true? I. The fracture sequence begins with a hematoma. II. A soft callus precedes a hard callus. III. Remodeling is the first event after a fracture.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "The early hematoma is followed by callus formation; remodeling occurs later."
+    },
+    {
+      "id": "skl-14",
+      "q": "Which of these statements are true? I. Mechanical loading can influence bone remodeling. II. Osteoclasts remove bone matrix. III. Remodeling and lengthwise growth are identical processes.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Remodeling renews and reshapes bone, whereas lengthwise growth depends on growth plates."
+    },
+    {
+      "id": "skl-15",
+      "q": "Which of these statements are true? I. The sclerotome contributes to vertebrae and ribs. II. Somites derive from paraxial mesoderm. III. Every skull bone derives from a somite.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Many skull structures have other embryonic sources, including cranial neural crest."
+    },
+    {
+      "id": "skl-16",
+      "q": "Which of these statements are true? I. The limb skeleton develops largely from lateral plate mesoderm. II. Many facial bones receive cranial neural crest contributions. III. Bone embryonic origin identifies its ossification method without exception.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Embryonic origin and the process by which bone forms are separate characteristics."
+    },
+    {
+      "id": "skl-17",
+      "q": "Which of these statements are true? I. Hox gene expression contributes to regional identity along the body axis. II. Vertebrae differ in features by region. III. All vertebrae are structurally identical.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Regional patterning produces vertebrae with different features, such as the association of thoracic vertebrae with ribs."
+    },
+    {
+      "id": "skl-18",
+      "q": "Which of these statements are true? I. Compact bone is dense tissue. II. Spongy bone contains trabeculae. III. The spaces in spongy bone can contain marrow.",
+      "options": [
+        "I, II, and III",
+        "I and II only",
+        "II and III only",
+        "I and III only"
+      ],
+      "answer": 0,
+      "why": "All three statements describe features of compact and spongy bone."
+    },
+    {
+      "id": "skl-19",
+      "q": "Which of these statements are true? I. Bone protects organs. II. Bone provides muscle attachment. III. Bone contributes to mineral storage.",
+      "options": [
+        "I, II, and III",
+        "I and II only",
+        "I and III only",
+        "II and III only"
+      ],
+      "answer": 0,
+      "why": "Bone supports protection, movement, and mineral homeostasis."
+    },
+    {
+      "id": "skl-20",
+      "q": "Which of these statements are true? I. Osteoclasts resorb tissue. II. Osteoblasts secrete osteoid. III. Osteocytes are mature cells embedded in bone.",
+      "options": [
+        "I, II, and III",
+        "I and II only",
+        "I and III only",
+        "II and III only"
+      ],
+      "answer": 0,
+      "why": "Each cell type has a distinct role in the living bone tissue."
+    },
+    {
+      "id": "skl-21",
+      "q": "Which of these statements are true? I. The synovial membrane lines the inner capsule. II. Synovial fluid helps lubricate the joint. III. Articular cartilage is a ligament.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Articular cartilage is cartilage covering bone ends; it is not a ligament."
+    },
+    {
+      "id": "skl-22",
+      "q": "Which of these statements are true? I. A tendon joins muscle to bone. II. A ligament joins bone to bone. III. Both structures can contribute to movement or joint stability.",
+      "options": [
+        "I, II, and III",
+        "I and II only",
+        "I and III only",
+        "II and III only"
+      ],
+      "answer": 0,
+      "why": "Tendons transmit muscle force to bone, while ligaments connect bones and help stabilize joints."
+    },
+    {
+      "id": "skl-23",
+      "q": "Which of these statements are true? I. Growth hormone supports bone growth during childhood. II. Sex hormones contribute to adolescent growth and growth-plate closure. III. Bone lengthening occurs at the outer periosteum.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "Longitudinal growth occurs at growth plates; outer-surface deposition can increase bone diameter."
+    },
+    {
+      "id": "skl-24",
+      "q": "Which of these statements are true? I. The pelvic girdle helps transfer upper-body weight to the lower limbs. II. The pectoral girdle includes clavicles and scapulae. III. The sacrum is an appendicular bone.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II, and III"
+      ],
+      "answer": 0,
+      "why": "The sacrum is part of the axial vertebral column; the pelvic girdle includes coxal bones."
+    }
+  ],
+  "sourceNotes": [
+    "Primary source: instructor's The Skeletal System deck, slides 1-32.",
+    "All questions, explanations, cards, and diagrams are original and paraphrased from the supplied course material."
+  ]
+}

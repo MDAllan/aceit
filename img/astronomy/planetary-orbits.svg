@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+<title id="title">Solar system regions and orbital layout</title><desc id="desc">The Sun at the center, inner rocky planets, asteroid belt, outer giant planets, Kuiper belt, and distant comet reservoir.</desc>
+<rect width="640" height="360" rx="24" fill="#101b35"/><text x="32" y="42" fill="#f3f6ff" font-family="Arial" font-size="24" font-weight="700">A structured solar system</text>
+<circle cx="92" cy="190" r="27" fill="#ffbf52"/><text x="68" y="246" fill="#fff" font-family="Arial" font-size="16">Sun</text>
+<path d="M92 190H526" stroke="#7180a3" stroke-width="2"/>
+<g font-family="Arial" text-anchor="middle" fill="#f3f6ff">
+<circle cx="145" cy="190" r="5" fill="#adbdcf"/><text x="145" y="220" font-size="12">Mercury</text>
+<circle cx="178" cy="190" r="8" fill="#e5a56a"/><text x="178" y="220" font-size="12">Venus</text>
+<circle cx="212" cy="190" r="9" fill="#53b9e8"/><text x="212" y="220" font-size="12">Earth</text>
+<circle cx="247" cy="190" r="7" fill="#db715b"/><text x="247" y="220" font-size="12">Mars</text>
+<rect x="274" y="138" width="12" height="104" rx="6" fill="#e5c15d" opacity=".8"/><text x="280" y="270" font-size="12">Asteroid belt</text>
+<circle cx="345" cy="190" r="18" fill="#e1a15e"/><text x="345" y="225" font-size="12">Jupiter</text>
+<circle cx="400" cy="190" r="16" fill="#ebcf8a"/><ellipse cx="400" cy="190" rx="27" ry="7" fill="none" stroke="#ebcf8a" stroke-width="3"/><text x="400" y="225" font-size="12">Saturn</text>
+<circle cx="457" cy="190" r="12" fill="#74d2d3"/><text x="457" y="225" font-size="12">Uranus</text>
+<circle cx="500" cy="190" r="12" fill="#568bdf"/><text x="500" y="225" font-size="12">Neptune</text>
+<text x="562" y="164" font-size="12">Kuiper</text><text x="562" y="180" font-size="12">belt &amp;</text><text x="562" y="196" font-size="12">comets</text>
+</g>
+<path d="M124 289H269M300 289H510M525 289H600" stroke="#657493" stroke-width="2"/><text x="196" y="316" text-anchor="middle" fill="#bdc9df" font-family="Arial" font-size="14">Inner rocky worlds</text><text x="405" y="316" text-anchor="middle" fill="#bdc9df" font-family="Arial" font-size="14">Outer giant worlds</text><text x="560" y="316" text-anchor="middle" fill="#bdc9df" font-family="Arial" font-size="14">Small icy bodies</text>
+</svg>
