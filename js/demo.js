@@ -73,8 +73,8 @@ function summaries() {
     const qa = Object.values(data.quiz);
     const st = ls.map((l) => {
       const secs = (l.sections || []).filter((s) => data.read[l.id]?.[s.id]).length, known = (l.cards || []).filter((cd) => data.cards[cd.id] === "know").length;
-      const right = (l.quiz || []).filter((q) => data.quiz[q.id]?.last).length, games = Math.min((l.games || []).filter((g) => data.games[l.id + ":" + g]).length, 3);
-      const parts = [[secs, (l.sections || []).length], [known, (l.cards || []).length], [right, (l.quiz || []).length], [games, Math.min(3, (l.games || []).length)]].filter((p) => p[1] > 0);
+      const right = (l.quiz || []).filter((q) => data.quiz[q.id]?.last).length;
+      const parts = [[secs, (l.sections || []).length], [known, (l.cards || []).length], [right, (l.quiz || []).length]].filter((p) => p[1] > 0);
       return parts.length ? Math.round((parts.reduce((s, p) => s + p[0] / p[1], 0) / parts.length) * 100) : 0;
     });
     const pct = st.length ? Math.round(st.reduce((a, b) => a + b, 0) / st.length) : 0;

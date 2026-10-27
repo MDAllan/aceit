@@ -70,6 +70,13 @@ ok((h >= 22 || h < 4) ? night === 1 : (h < 8) ? early === 1 : night === 0 && ear
 
 // --- XP and level
 ok(S.xp([]).lvl === 1 && S.xp([]).xp === 0, "no lectures: level 1");
+const completionLecture = { id: "completion", sections: [{ id: "s1" }, { id: "s2" }], cards: [{ id: "c1" }, { id: "c2" }], quiz: [{ id: "q1" }, { id: "q2" }], games: ["g1", "g2", "g3"] };
+const completionData = { read: { completion: { s1: 1 } }, cards: { c1: "know" }, quiz: { q1: { last: true } }, games: {} };
+const completionWithoutGames = S.statsFrom(completionData, completionLecture).pct;
+completionData.games["completion:g1"] = 1; completionData.games["completion:g2"] = 1; completionData.games["completion:g3"] = 1;
+ok(S.statsFrom(completionData, completionLecture).pct === completionWithoutGames, "playing games does not change lecture completion");
+completionData.read.completion.s2 = 1; completionData.cards.c2 = "know"; completionData.quiz.q2 = { last: true };
+ok(S.statsFrom(completionData, completionLecture).pct === 100, "reading all topics, knowing all cards, and answering all quiz questions completes a lecture without requiring games");
 
 if (fails) { console.error(fails + " stats check(s) failed"); process.exit(1); }
 console.log("all stats checks passed");

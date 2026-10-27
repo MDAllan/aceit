@@ -28,7 +28,7 @@ export function renderGame(b, lec, all, opts = {}) {
   const imgSecs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title));
   const ok = (g) => (g === "picture" ? imgSecs.length >= 4 : ["match", "memory", "blitz", "guess"].includes(g) ? lec.cards.length >= 8 : g === "speed" ? (lec.quiz || []).length >= 5 : g === "sort" ? lec.sort?.length : g === "calc" ? lec.calc?.length : g === "order" ? lec.order?.length : true);
   const draw = () => {
-    b.replaceChildren(h("p", { style: "color:var(--mute);margin:6px 0" }, "Pick a game. Playing any 3 counts toward your completion."),
+    b.replaceChildren(h("p", { style: "color:var(--mute);margin:6px 0" }, "Games are optional practice and do not count toward course completion."),
       h(".grid", lec.games.filter((g) => META[g] && ok(g)).map((g, i) => {
         const [icon, col, name, desc] = META[g], played = S.progress().games[lec.id + ":" + g];
         return h("button.card.gcard", { style: `animation:rise .4s var(--ease) ${i * 40}ms backwards;--gc:${GCOL[g] || col}`, onclick: () => start(g) },

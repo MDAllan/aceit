@@ -64,12 +64,7 @@ export async function viewAdmin(v, ctx) {
     const ls = LECS.filter((l) => l.subject === sj), sjObj = SUBJECTS.find((x) => x.id === sj);
     let rows = profiles.map((p) => {
       const d = byId[p.id]?.data || { cards: {}, quiz: {}, read: {}, games: {} };
-      const stats = ls.map((l) => {
-        const secs = (l.sections || []).filter((s) => d.read?.[l.id]?.[s.id]).length, known = l.cards.filter((c) => d.cards?.[c.id] === "know").length;
-        const right = (l.quiz || []).filter((q) => d.quiz?.[q.id]?.last).length, games = Math.min((l.games || []).filter((g) => d.games?.[l.id + ":" + g]).length, 3);
-        const parts = [[secs, (l.sections || []).length], [known, l.cards.length], [right, (l.quiz || []).length], [games, 3]].filter((x) => x[1]);
-        return Math.round((parts.reduce((s, x) => s + x[0] / x[1], 0) / (parts.length || 1)) * 100);
-      });
+      const stats = ls.map((l) => S.statsFrom(d, l).pct);
       const avg = stats.length ? Math.round(stats.reduce((a, c) => a + c, 0) / stats.length) : 0;
       const att = Object.values(d.quiz || {}).reduce((s, x) => s + x.attempts, 0), cor = Object.values(d.quiz || {}).reduce((s, x) => s + x.correct, 0);
       return { p, stats, avg, acc: att ? Math.round((cor / att) * 100) : null, last: byId[p.id]?.updated_at, classes: [...(accessBy[p.id] || [])], quiz: d.quiz || {} };

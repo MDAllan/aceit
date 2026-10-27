@@ -365,9 +365,8 @@ export function statsFrom(d, lec) {
   const qs = lec.quiz || [];
   const right = qs.filter((q) => d.quiz?.[q.id]?.last).length;
   const games = (lec.games || []).filter((g) => d.games?.[lec.id + ":" + g]).length;
-  const gameGoal = Math.min(3, (lec.games || []).length); // play any 3 games for full credit
   const parts = [
-    [read, secs.length], [known, cards.length], [right, qs.length], [Math.min(games, gameGoal), gameGoal],
+    [read, secs.length], [known, cards.length], [right, qs.length],
   ].filter((p) => p[1] > 0);
   const pct = parts.length ? Math.round((parts.reduce((s, p) => s + p[0] / p[1], 0) / parts.length) * 100) : 0;
   return { read, secs: secs.length, known, cards: cards.length, right, qs: qs.length, games, pct };
