@@ -7,6 +7,8 @@ globalThis.addEventListener = () => {};
 let fails = 0;
 const ok = (c, msg) => { if (!c) { fails++; console.error("FAIL:", msg); } };
 const S = await import("../js/store.js");
+const { speedQuestions } = await import("../js/game-questions.js");
+const { readFile } = await import("node:fs/promises");
 
 // --- days and streaks use the person's own calendar day, and only studying counts
 const d = (n) => { const x = new Date(); x.setDate(x.getDate() - n); return S.localDay(x); };
@@ -77,6 +79,13 @@ completionData.games["completion:g1"] = 1; completionData.games["completion:g2"]
 ok(S.statsFrom(completionData, completionLecture).pct === completionWithoutGames, "playing games does not change lecture completion");
 completionData.read.completion.s2 = 1; completionData.cards.c2 = "know"; completionData.quiz.q2 = { last: true };
 ok(S.statsFrom(completionData, completionLecture).pct === 100, "reading all topics, knowing all cards, and answering all quiz questions completes a lecture without requiring games");
+
+const earthquakeContent = JSON.parse(await readFile(new URL("../content/earthquakes.json", import.meta.url), "utf8"));
+const speedQs = speedQuestions(earthquakeContent.cards);
+const quizPrompts = new Set(earthquakeContent.quiz.map((q) => q.q));
+ok(speedQs.length >= 5 && speedQs.every((q) => q.options.length === 4 && q.answer >= 0 && q.answer < 4), "speed-game questions are built from flashcards with four valid choices");
+ok(new Set(speedQs.map((q) => q.q)).size === speedQs.length, "speed-game question prompts are unique");
+ok(speedQs.every((q) => !quizPrompts.has(q.q)), "speed-game prompts are distinct from the earthquake quiz questions");
 
 if (fails) { console.error(fails + " stats check(s) failed"); process.exit(1); }
 console.log("all stats checks passed");

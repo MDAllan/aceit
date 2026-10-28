@@ -1,6 +1,7 @@
 import * as S from "./store.js";
 import { h, md, clean, ic, toast, shuffle, confetti, pick, floatXP } from "./ui.js";
 import { shareGame } from "./share.js";
+import { speedQuestions } from "./game-questions.js";
 
 export const DEFAULT_GAMES = ["match", "memory", "blitz", "guess", "speed", "picture"];
 
@@ -11,7 +12,7 @@ const META = {
   memory: ["cards", "#7A6FDB", "Memory flip", "Flip two face-down cards to find pairs."],
   blitz: ["quiz", "#D9777F", "True or false blitz", "10 quick statements. Is it true?"],
   guess: ["bulb", "#4E9FD0", "Guess the term", "Read the meaning, pick the right word."],
-  speed: ["fire", "#C8627A", "60-second sprint", "Answer as many quiz questions as you can."],
+  speed: ["fire", "#C8627A", "60-second sprint", "Match key terms and concepts under time pressure."],
   picture: ["zoom", "#3AA687", "Picture quiz", "Which topic does this picture belong to?"],
   timeline: ["chart", "#8E7CC3", "Clickable timeline", "Tap an eon or era to explore events."],
   order: ["list", "#CC8A3A", "Order the events", "Stack layers from oldest to youngest."],
@@ -26,7 +27,7 @@ export const onGameEnd = (fn) => { hook = fn; };
 
 export function renderGame(b, lec, all, opts = {}) {
   const imgSecs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title));
-  const ok = (g) => (g === "picture" ? imgSecs.length >= 4 : ["match", "memory", "blitz", "guess"].includes(g) ? lec.cards.length >= 8 : g === "speed" ? (lec.quiz || []).length >= 5 : g === "sort" ? lec.sort?.length : g === "calc" ? lec.calc?.length : g === "order" ? lec.order?.length : true);
+  const ok = (g) => (g === "picture" ? imgSecs.length >= 4 : ["match", "memory", "blitz", "guess"].includes(g) ? lec.cards.length >= 8 : g === "speed" ? speedQuestions(lec.cards).length >= 5 : g === "sort" ? lec.sort?.length : g === "calc" ? lec.calc?.length : g === "order" ? lec.order?.length : true);
   const draw = () => {
     b.replaceChildren(h("p", { style: "color:var(--mute);margin:6px 0" }, "Games are optional practice and do not count toward course completion."),
       h(".grid", lec.games.filter((g) => META[g] && ok(g)).map((g, i) => {
@@ -150,7 +151,11 @@ const G = {
 
   /* ---- 60-second sprint ---- */
   speed(b, lec, again) {
-    const qs = shuffle(lec.quiz.slice()); let i = 0, score = 0, combo = 0, best = 0, t = 60, over = false;
+    const qs = shuffle(speedQuestions(lec.cards)).map((q) => {
+      const correct = q.options[q.answer], options = shuffle(q.options);
+      return { ...q, options, answer: options.indexOf(correct) };
+    });
+    let i = 0, score = 0, combo = 0, best = 0, t = 60, over = false;
     const clock = h(".timer", "60"), sc = h("b", "0"), cmb = h("span.combo", "");
     const bar = h(".row", { style: "justify-content:space-between" }, h("span", "Time ", clock), h("span", "Score ", sc), cmb);
     const body = h("div");

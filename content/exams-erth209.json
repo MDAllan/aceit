@@ -5,7 +5,7 @@
   {
    "id": "midterm",
    "title": "Cumulative Midterm Practice",
-   "blurb": "24 original questions across Earth's interior, tectonics, minerals, rocks, time, fossils, deformation, and mass movement.",
+   "blurb": "34 challenging questions across Earth materials, tectonics, relative time, deformation, mass movements, and earthquakes.",
    "questions": [
     {
      "id": "erth-mid-1",
@@ -206,6 +206,86 @@
      "answer": 0,
      "why": "Convergence shortens and thickens crust, producing folds, reverse faults, and metamorphism.",
      "source": "admin-only: ERTH 209 plate-tectonics and deformation units"
+    },
+    {
+     "id": "erth-mid-25",
+     "q": "A limestone is buried and recrystallizes without melting. What is the metamorphic rock called?",
+     "options": ["Schist", "Quartzite", "Marble", "Phyllite", "Gneiss"],
+     "answer": 2,
+     "why": "Limestone is composed mainly of calcite; recrystallization during metamorphism produces marble.",
+     "source": "admin-only: ERTH 209 metamorphism unit"
+    },
+    {
+     "id": "erth-mid-26",
+     "q": "Which metamorphic rock commonly forms without foliation when quartz-rich sandstone recrystallizes?",
+     "options": ["Phyllite", "Quartzite", "Gneiss", "Slate", "Schist"],
+     "answer": 1,
+     "why": "Quartzite forms from quartz-rich sandstone and is commonly nonfoliated; the other choices are foliated rocks.",
+     "source": "admin-only: ERTH 209 metamorphism unit"
+    },
+    {
+     "id": "erth-mid-27",
+     "q": "A geologist compares two clastic sedimentary rocks. Which property is NOT ordinarily used to classify their clasts?",
+     "options": ["Clast composition", "Angularity", "Colour", "Clast size", "Sorting"],
+     "answer": 2,
+     "why": "Clast composition, size, shape or angularity, and sorting are useful classification properties; colour alone is not a defining clastic classification criterion.",
+     "source": "admin-only: ERTH 209 sedimentary-rocks unit"
+    },
+    {
+     "id": "erth-mid-28",
+     "q": "Which term is NOT one of the four broad sedimentary-rock groups used in the course?",
+     "options": ["Organic", "Biochemical", "Chemical", "Clastic", "Mafic"],
+     "answer": 4,
+     "why": "The course groups sedimentary rocks as clastic, chemical, biochemical, and organic; mafic describes igneous composition.",
+     "source": "admin-only: ERTH 209 sedimentary-rocks unit"
+    },
+    {
+     "id": "erth-mid-29",
+     "q": "Ripple marks and dunes preserved in sedimentary layers are examples of which feature?",
+     "options": ["Bedforms produced by moving fluid and sediment", "Foliation produced by directed pressure", "Fault scarps produced by elastic rebound", "Intrusive bodies produced by slow cooling", "Index fossils restricted to one geologic period"],
+     "answer": 0,
+     "why": "Bedforms are sedimentary structures shaped by moving water, wind, or sediment transport.",
+     "source": "admin-only: ERTH 209 sedimentary-rocks unit"
+    },
+    {
+     "id": "erth-mid-30",
+     "q": "Two earthquakes produce different maximum amplitudes on seismograms recorded at different distances and sites. Which conclusion is best supported by amplitude alone?",
+     "options": ["The larger recorded amplitude proves its Mercalli intensity was lower.", "Its epicenter must be directly beneath the station.", "The reading alone does not isolate source size from distance and local ground effects.", "It must have been a thrust fault.", "Its hypocenter was necessarily deeper."],
+     "answer": 2,
+     "why": "Recorded shaking depends on source properties, distance, wave path, and local site conditions; amplitude at one station alone is not enough to isolate magnitude.",
+     "source": "admin-only: ERTH 209 earthquake unit"
+    },
+    {
+     "id": "erth-mid-31",
+     "q": "A seismograph records an early-arriving compressional wave after an earthquake. Which statement about that wave is correct?",
+     "options": ["It is a Love wave that travels only along the surface.", "It is an S wave that cannot pass through liquid.", "It is a Rayleigh wave with rolling surface motion.", "It is a P wave that can travel through solid and liquid material.", "It is a tsunami moving through the ocean."],
+     "answer": 3,
+     "why": "P waves are compressional body waves and can travel through solids and liquids.",
+     "source": "admin-only: ERTH 209 earthquake unit"
+    },
+    {
+     "id": "erth-mid-32",
+     "q": "During a quake, the block above an inclined fault moves upward relative to the footwall. If the fault is shallowly dipping, which name is most specific?",
+     "options": ["Normal fault", "Thrust fault", "Strike-slip fault", "Joint", "Creep surface"],
+     "answer": 1,
+     "why": "A thrust fault is a low-angle reverse fault, where the hanging wall moves up relative to the footwall.",
+     "source": "admin-only: ERTH 209 earthquake unit"
+    },
+    {
+     "id": "erth-mid-33",
+     "q": "An earthquake ruptures the seafloor and displaces water across a broad area. Which wave property helps explain why the resulting tsunami can cross an ocean rapidly?",
+     "options": ["It is confined to the upper ocean and has a short wavelength.", "It is generated only by wind and is driven by surface friction.", "Its wavelength is long and the motion involves the full water column.", "It breaks continuously as soon as it forms in deep water.", "It is a shear wave traveling through oceanic crust."],
+     "answer": 2,
+     "why": "Tsunamis have very long wavelengths and involve the full depth of the ocean, allowing them to travel rapidly across deep water.",
+     "source": "admin-only: ERTH 209 earthquake unit"
+    },
+    {
+     "id": "erth-mid-34",
+     "q": "A large earthquake damages two neighbourhoods differently: one is built on soft saturated sediment and the other on firm bedrock. Which process most directly explains stronger shaking in the first neighbourhood?",
+     "options": ["Elastic rebound", "Strike-slip motion", "Moment magnitude", "Isostatic adjustment", "Local ground amplification"],
+     "answer": 4,
+     "why": "Soft or loose ground can amplify shaking; if saturated and loose, it may also be susceptible to liquefaction.",
+     "source": "admin-only: ERTH 209 earthquake unit"
     }
    ]
   }

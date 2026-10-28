@@ -405,61 +405,118 @@
  "quiz": [
   {
    "id": "mm-1",
-   "q": "What is the main force that drives mass movement downslope?",
-   "options": ["Gravity", "Magnetism", "Sunlight", "Crystallization"],
-   "answer": 0,
-   "why": "Gravity pulls rock and loose material downhill."
+   "q": "A steep slope remains stable until a rainstorm saturates a weak layer parallel to the hillside. Which force still drives the material downslope?",
+   "options": ["Water pressure", "Friction", "Cohesion", "Gravity", "The slope's magnetic field"],
+   "answer": 3,
+   "why": "Gravity is the driving force; water and the weak layer can reduce the slope's resistance to movement."
   },
   {
    "id": "mm-2",
-   "q": "Which observation is a common sign of creep?",
-   "options": ["A tilted tree or telephone pole", "A fresh lava flow", "A perfectly horizontal shoreline", "A new crystal in a geode"],
-   "answer": 0,
-   "why": "Slow seasonal movement can gradually tilt features rooted in the moving material."
+   "q": "A fence slowly tilts downhill over several years, but no single rapid failure is observed. Which process best explains the evidence?",
+   "options": ["Rockfall", "Debris flow", "Creep", "Lahar", "Slump"],
+   "answer": 2,
+   "why": "Creep is very slow downslope movement that can gradually tilt fences, trees, and poles."
   },
   {
    "id": "mm-3",
-   "q": "What is distinctive about the failure surface of a slump?",
-   "options": ["It is curved", "It is always vertical", "It is made of lava", "It is absent"],
-   "answer": 0,
-   "why": "Slumps move as coherent blocks along a curved, spoon-shaped surface."
+   "q": "Which observation most strongly distinguishes a slump from translational block movement?",
+   "options": ["The moving material contains rock.", "The movement is caused by gravity.", "The material is part of a hillside.", "The moving blocks rotate along a curved failure surface.", "The movement occurs after rainfall."],
+   "answer": 3,
+   "why": "A slump is rotational movement along a curved, spoon-shaped failure surface."
   },
   {
    "id": "mm-4",
-   "q": "Which movement is a water-rich mixture dominated by fine sediment?",
-   "options": ["Mudflow", "Rockfall", "Creep", "Rock landslide"],
+   "q": "Which name best fits a water-rich flow in which fine sediment dominates the moving mixture?",
+   "options": ["Mudflow", "Rockfall", "Creep", "Slump", "Rock landslide"],
    "answer": 0,
-   "why": "A mudflow is dominated by water and fine sediment."
+   "why": "Mudflows are water-rich flows dominated by fine sediment."
   },
   {
    "id": "mm-5",
-   "q": "What material makes a lahar volcanic?",
-   "options": ["Volcanic sediment mixed with water", "Only molten lava", "Dry sand with no volcanic material", "Ice moving over bedrock"],
-   "answer": 0,
-   "why": "A lahar is a water-rich flow of volcanic ash and other debris."
+   "q": "A volcanic slope sends a water-saturated mixture of ash, soil, and blocks into a valley. Which term identifies its volcanic origin?",
+   "options": ["Rockfall", "Creep", "Slump", "Translational movement", "Lahar"],
+   "answer": 4,
+   "why": "A lahar is a water-rich flow of volcanic sediment and debris; it is not molten lava."
   },
   {
    "id": "mm-6",
-   "q": "Which combination can reduce slope stability?",
-   "options": ["Steepening and water-saturated weak layers", "Less load and stronger cohesion", "A gentler slope and dry material", "Lower gravity and stronger rock"],
-   "answer": 0,
-   "why": "Steepness increases the downhill force, and water can add weight or weaken a slip surface."
+   "q": "Which change would most likely decrease a slope's resistance to failure without changing the slope angle?",
+   "options": ["Drying a saturated clay layer", "Increasing cohesion between grains", "Reducing water pressure in a weak layer", "Adding a retaining structure at the slope toe", "Saturating loose material above a weak surface"],
+   "answer": 4,
+   "why": "Water can add weight and weaken or lubricate susceptible layers, lowering slope stability."
   },
   {
    "id": "mm-7",
-   "q": "Which is an example of a plane of weakness in rock?",
-   "options": ["A bedding plane", "A clear sky", "A tree canopy", "A river's surface"],
+   "q": "A block of rock moves along a surface parallel to its bedding. What role does the bedding most likely play?",
+   "options": ["It is a plane of weakness guiding movement.", "It is the force that pulls the block uphill.", "It proves the movement is a mudflow.", "It is the name for the block below the slope.", "It prevents any form of mass movement."],
    "answer": 0,
-   "why": "Bedding, joints, faults and foliation can all provide weak surfaces."
+   "why": "Bedding, joints, faults, and foliation can form weak surfaces that guide slope failure."
   },
   {
    "id": "mm-8",
-   "q": "How does a rockfall differ from a landslide?",
-   "options": ["Rock detaches and drops or bounces from a steep face", "It always travels underwater", "It moves only as a slow creep", "It contains only fine mud"],
+   "q": "A detached block falls from a cliff, strikes the slope, and bounces downslope. Which movement classification is most specific?",
+   "options": ["Creep", "Rockfall", "Slump", "Mudflow", "Debris landslide"],
+   "answer": 1,
+   "why": "A fall involves detached material dropping, bouncing, or rolling from a steep face."
+  },
+  {
+   "id": "mm-9",
+   "q": "A fast-moving water-rich mass carries clay, gravel, and large boulders through a steep channel. Which term best describes its range of particle sizes?",
+   "options": ["Creep", "Mudflow", "Debris flow", "Rockfall", "Rotational slump"],
+   "answer": 2,
+   "why": "Debris flows can transport a wide range of sediment sizes, including large boulders."
+  },
+  {
+   "id": "mm-10",
+   "q": "A coherent block moves downslope along a nearly planar surface of weakness with little rotation. Which classification is most appropriate?",
+   "options": ["Slump", "Creep", "Rockfall", "Translational movement", "Mudflow"],
+   "answer": 3,
+   "why": "Translational movement follows a relatively planar failure surface rather than rotating along a curved surface."
+  },
+  {
+   "id": "mm-11",
+   "q": "Why can water-saturated loose sediment become more likely to fail during shaking or prolonged rainfall?",
+   "options": ["Water removes gravity from the slope.", "Water always increases grain-to-grain friction.", "Saturation turns sediment into intact bedrock.", "Water prevents pore pressure from changing.", "Increased pore-water pressure can reduce effective grain contact and resistance."],
+   "answer": 4,
+   "why": "Higher pore-water pressure reduces effective stress between grains and can lower shear resistance."
+  },
+  {
+   "id": "mm-12",
+   "q": "Which statement correctly distinguishes a fall from coherent movement along a failure surface?",
+   "options": ["A fall detaches from a steep face and drops or bounces; coherent material moves along a failure surface.", "A fall always contains more water than coherent movement.", "Coherent movement can only happen below sea level.", "A fall moves as a coherent block along a curved surface.", "Coherent movement is defined by the volcanic source of its material."],
    "answer": 0,
-   "why": "A fall is characterized by detached material dropping, bouncing or rolling."
+   "why": "The movement path distinguishes these types: falling material detaches, while coherent movement follows a failure surface."
+  },
+  {
+   "id": "mm-13",
+   "q": "A submerged slope fails and sends sediment downslope across the seafloor. Which impact is a particular concern even though the failure is underwater?",
+   "options": ["It can only change the colour of the water.", "It may damage seabed infrastructure such as communication cables.", "It cannot disturb the water column.", "It becomes a lava flow when it reaches the ocean floor.", "It is classified as atmospheric erosion."],
+   "answer": 1,
+   "why": "Submarine landslides can damage infrastructure on the seafloor, including communication cables."
+  },
+  {
+   "id": "mm-14",
+   "q": "If other conditions remain the same, what is the most direct effect of steepening a slope?",
+   "options": ["It removes gravity from the material.", "It eliminates all planes of weakness.", "It increases the component of gravity acting downslope.", "It guarantees that the material will become stronger.", "It converts translational movement into creep in every case."],
+   "answer": 2,
+   "why": "A steeper slope increases the downslope component of gravity, raising the driving force."
+  },
+  {
+   "id": "mm-15",
+   "q": "A slope fails after new construction adds weight near its upper edge. Which change best explains the increased hazard?",
+   "options": ["The extra load increases resistance along every weak layer.", "The new structure reduces the mass above the slope.", "Construction changes the direction of gravity.", "The added load can increase the driving stress on the slope.", "The added load prevents water from entering the soil."],
+   "answer": 3,
+   "why": "Additional load can increase the driving force on a slope and contribute to failure."
+  },
+  {
+   "id": "mm-16",
+   "q": "Two slope failures move at similar speeds, but one consists mostly of solid bedrock and the other mostly of loose surface debris. Which description best explains why their names may differ?",
+   "options": ["Material type is one of the criteria used to classify mass movements.", "Speed alone determines every mass-movement name.", "The source elevation is the only relevant classification.", "Both must be called mudflows because they move downslope.", "The failures cannot be classified without knowing the date."],
+   "answer": 0,
+   "why": "Geologists describe mass movements by material, movement style, speed, and water content."
   }
  ],
+ "games": ["match", "memory", "blitz", "guess", "speed", "picture"],
  "sourceNotes": [
   "Primary source: instructor's ERTH 209 deck, 2026 October 21 & 23 Mass Movements v1, slides 3-75 (avalanches excluded).",
   "Supporting reference: OpenGeology, 10 Mass Wasting, https://opengeology.org/textbook/10-mass-wasting/ . Explanations are newly written."
