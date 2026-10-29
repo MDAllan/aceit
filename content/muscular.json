@@ -10,37 +10,39 @@
   {
    "id": "types-functions",
    "title": "Muscle types and functions",
-   "slides": "1-3, 20-23",
+   "slides": "1, 2, 3",
    "steps": [
-    {
-   "img": {
-    "src": "img/biology/muscle-types.svg",
-    "slide": "Original course diagram",
-    "alt": "Skeletal, cardiac, and smooth muscle are compared by striation, control, and function."
-   },
-   "title": "Three kinds of muscle tissue",
-     "bullets": [
-      "**Skeletal muscle** attaches to bones through tendons and supports body movement. Its activity is generally under voluntary control.",
-      "**Cardiac muscle** forms the heart wall and contracts to pump blood.",
-      "**Smooth muscle** contracts in the walls of organs and blood vessels, helping move contents or adjust their diameter."
-     ]
-    },
-    {
-     "title": "Muscles move, hold and warm the body",
-     "bullets": [
-      "Muscles create movement, but they can also resist movement to maintain posture or keep a vessel's diameter steady.",
-      "Normal skeletal-muscle activity releases heat. Rapid repeated contraction and relaxation during shivering adds heat in cold conditions.",
-      "Muscle cells respond to chemical or electrical signals, and their contractile machinery produces tension and shortening."
-     ]
-    },
-    {
-     "title": "Compare contraction patterns",
-     "bullets": [
-      "Skeletal muscle can contract rapidly, but its contractions are less sustainable than those of the other types.",
-      "Cardiac muscle has an intermediate contraction speed and can relax during the resting phase of each heartbeat.",
-      "Smooth muscle contracts slowly and can sustain tension for long periods, such as when maintaining blood-vessel tone."
-     ]
-    }
+     {
+       "title": "Three kinds of muscle tissue",
+       "bullets": [
+         "**Skeletal muscle** attaches to bones through tendons and supports body movement. Its activity is generally under voluntary control.",
+         "**Cardiac muscle** forms the heart wall and contracts to pump blood.",
+         "**Smooth muscle** contracts in the walls of organs and blood vessels, helping move contents or adjust their diameter."
+       ]
+     },
+     {
+       "title": "Muscles move, hold and warm the body",
+       "bullets": [
+         "Muscles create movement, but they can also resist movement to maintain posture or keep a vessel's diameter steady.",
+         "Normal skeletal-muscle activity releases heat. Rapid repeated contraction and relaxation during shivering adds heat in cold conditions.",
+         "Muscle cells respond to chemical or electrical signals, and their contractile machinery produces tension and shortening."
+       ]
+     },
+     {
+       "title": "Compare contraction patterns",
+       "bullets": [
+         "Skeletal muscle can contract rapidly, but its contractions are less sustainable than those of the other types.",
+         "Cardiac muscle has an intermediate contraction speed and can relax during the resting phase of each heartbeat.",
+         "Smooth muscle contracts slowly and can sustain tension for long periods, such as when maintaining blood-vessel tone."
+       ]
+     },
+     {
+       "title": "Additional course details: muscle functions and three tissue types",
+       "bullets": [
+         "Skeletal muscles attach to skeleton for strength and mobility and generate heat; cardiac muscle pumps blood; smooth muscle supplies steady contraction in organs and blood vessels. Control can be voluntary or involuntary.",
+         "Muscles produce and resist movement: skeletal muscle maintains posture and smooth muscle maintains vessel diameter. Skeletal-muscle activity produces heat; shivering adds heat through rapid repeated contraction and relaxation. Chemical and electrical signals excite muscle and cause shortening."
+       ]
+     }
    ],
    "bullets": [],
    "boxes": [
@@ -58,44 +60,102 @@
     }
    ],
    "sourceNotes": [
-    "Primary source: instructor's The Muscular System deck, slides 1-3 and 20-23. Explanations are paraphrased and newly written from the deck."
+     "Primary source: instructor-provided The Muscular System.pdf, slides 1, 2, 3.",
+     "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
    ],
    "images": []
   },
   {
    "id": "organization",
    "title": "Skeletal muscle from whole muscle to sarcomere",
-   "slides": "4-9",
+   "slides": "4, 5, 6, 7, 8, 9",
    "steps": [
-    {
-   "img": {
-    "src": "img/biology/muscle-organization.svg",
-    "slide": "Original course diagram",
-    "alt": "A hierarchy runs from whole muscle through fascicles, fibres, and myofibrils to sarcomeres."
-   },
-   "title": "Muscles attach and work in groups",
-     "bullets": [
-      "Tendons connect skeletal muscles to bones. The **origin** is the relatively stable attachment; the **insertion** is usually on the bone that moves across a joint.",
-      "When a muscle contracts, it pulls the insertion toward the origin.",
-      "**Synergists** cooperate in a movement, while **antagonists** produce opposing actions."
-     ]
-    },
-    {
-     "title": "Layers of organization",
-     "bullets": [
-      "A whole muscle contains bundles called **fascicles**, wrapped in connective tissue.",
-      "Each fascicle contains long muscle cells, also called muscle fibres. Their connective-tissue coverings join toward the ends to form tendons.",
-      "Muscle fibres contain many **myofibrils**, which are made mostly of repeating actin and myosin filaments."
-     ]
-    },
-    {
-     "title": "The sarcomere is the repeating unit",
-     "bullets": [
-      "A **sarcomere** is the contractile segment of a myofibril between two Z lines.",
-      "Each sarcomere contains thin actin filaments and thick myosin filaments.",
-      "The orderly arrangement of these filaments gives skeletal muscle its striped, or striated, appearance."
-     ]
-    }
+     {
+       "title": "Muscles attach and work in groups",
+       "bullets": [
+         "Tendons connect skeletal muscles to bones. The **origin** is the relatively stable attachment; the **insertion** is usually on the bone that moves across a joint.",
+         "When a muscle contracts, it pulls the insertion toward the origin.",
+         "**Synergists** cooperate in a movement, while **antagonists** produce opposing actions."
+       ]
+     },
+     {
+       "title": "Layers of organization",
+       "bullets": [
+         "A whole muscle contains bundles called **fascicles**, wrapped in connective tissue.",
+         "Each fascicle contains long muscle cells, also called muscle fibres. Their connective-tissue coverings join toward the ends to form tendons.",
+         "Muscle fibres contain many **myofibrils**, which are made mostly of repeating actin and myosin filaments."
+       ]
+     },
+     {
+       "title": "The sarcomere is the repeating unit",
+       "bullets": [
+         "A **sarcomere** is the contractile segment of a myofibril between two Z lines.",
+         "Each sarcomere contains thin actin filaments and thick myosin filaments.",
+         "The orderly arrangement of these filaments gives skeletal muscle its striped, or striated, appearance."
+       ]
+     },
+     {
+       "title": "Additional course details: attachments and structural hierarchy",
+       "bullets": [
+         "Muscles in groups attach by tendons. Origin is generally more proximal and attaches to the relatively stationary bone; insertion is generally more distal across a joint and is pulled toward the origin. Synergists produce the same movement; antagonists oppose it.",
+         "A whole muscle groups cells with a common origin, insertion, and function. Fascicles are fibre bundles wrapped in fascia; fasciae converge at muscle ends to form tendons. Muscle fibres are long, tube-shaped, variable in length, multinucleate cells packed with myofibrils made mainly of actin and myosin.",
+         "Sarcomeres extend between Z lines and contain thick myosin and thin actin. Their parallel alignment creates striations. During contraction filaments move past each other and draw Z lines together without shortening the filaments."
+       ]
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p04-f01.jpeg",
+         "slide": "4",
+         "alt": "Skeletal muscle groups and anatomy. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Skeletal muscle groups and anatomy",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p06-f01.jpeg",
+         "slide": "6",
+         "alt": "Muscle movement and attachments. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Muscle movement and attachments",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p06-f02.jpeg",
+         "slide": "6",
+         "alt": "Muscle movement and attachments. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Muscle movement and attachments",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p07-f01.jpeg",
+         "slide": "7",
+         "alt": "Muscle fascicles and connective tissue. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Muscle fascicles and connective tissue",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p08-f01.jpeg",
+         "slide": "8",
+         "alt": "Muscle fibre and myofibril organization. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Muscle fibre and myofibril organization",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p09-f01.jpeg",
+         "slide": "9",
+         "alt": "Sarcomeres and sliding filaments. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Sarcomeres and sliding filaments",
+       "bullets": []
+     }
    ],
    "bullets": [],
    "boxes": [
@@ -113,52 +173,138 @@
     }
    ],
    "sourceNotes": [
-    "Primary source: instructor's The Muscular System deck, slides 4-9. Explanations are paraphrased and newly written from the deck."
+     "Primary source: instructor-provided The Muscular System.pdf, slides 4, 5, 6, 7, 8, 9.",
+     "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
    ],
    "images": []
   },
   {
    "id": "signal",
    "title": "From nerve signal to muscle contraction",
-   "slides": "10, 13-17",
+   "slides": "10, 11, 12, 13, 14, 15, 16, 17, 18, 19",
    "steps": [
-    {
-   "img": {
-    "src": "img/biology/muscle-contraction.svg",
-    "slide": "Original course diagram",
-    "alt": "A nerve signal triggers calcium release, exposes actin sites, and enables myosin cross-bridge cycling."
-   },
-   "title": "The signal reaches a muscle fibre",
-     "bullets": [
-      "A motor neuron communicates with a skeletal muscle fibre at the **neuromuscular junction**.",
-      "The neuron releases **acetylcholine (ACh)**. ACh binds receptors that open ion channels and start an electrical impulse in the muscle membrane.",
-      "The impulse travels into the fibre through **T tubules**."
-     ]
-    },
-    {
-     "title": "Calcium exposes actin's binding sites",
-     "bullets": [
-      "The electrical impulse prompts the **sarcoplasmic reticulum** to release stored calcium ions (Ca²⁺) into the muscle cell.",
-      "Calcium binds to **troponin**, causing the troponin-tropomyosin complex to move away from myosin-binding sites on actin.",
-      "Without calcium, those sites remain covered and cross-bridges cannot form."
-     ]
-    },
-    {
-     "title": "Cross-bridges pull filaments",
-     "bullets": [
-      "An exposed site lets a myosin head bind to actin, forming a **cross-bridge**.",
-      "The myosin head bends and pulls the actin filament toward the sarcomere's centre.",
-      "Repeated pulls bring the Z lines closer together. Many shortening sarcomeres cause the myofibril and fibre to shorten."
-     ]
-    },
-    {
-     "title": "Relaxation also needs energy",
-     "bullets": [
-      "When stimulation ends, calcium is moved back into the sarcoplasmic reticulum and the binding sites become covered again.",
-      "ATP is needed for myosin to detach from actin as well as for calcium to be pumped back into storage.",
-      "Muscle cells replenish ATP using creatine phosphate, glucose breakdown and aerobic metabolism of fuels."
-     ]
-    }
+     {
+       "title": "The signal reaches a muscle fibre",
+       "bullets": [
+         "A motor neuron communicates with a skeletal muscle fibre at the **neuromuscular junction**.",
+         "The neuron releases **acetylcholine (ACh)**. ACh binds receptors that open ion channels and start an electrical impulse in the muscle membrane.",
+         "The impulse travels into the fibre through **T tubules**."
+       ]
+     },
+     {
+       "title": "Calcium exposes actin's binding sites",
+       "bullets": [
+         "The electrical impulse prompts the **sarcoplasmic reticulum** to release stored calcium ions (Ca²⁺) into the muscle cell.",
+         "Calcium binds to **troponin**, causing the troponin-tropomyosin complex to move away from myosin-binding sites on actin.",
+         "Without calcium, those sites remain covered and cross-bridges cannot form."
+       ]
+     },
+     {
+       "title": "Cross-bridges pull filaments",
+       "bullets": [
+         "An exposed site lets a myosin head bind to actin, forming a **cross-bridge**.",
+         "The myosin head bends and pulls the actin filament toward the sarcomere's centre.",
+         "Repeated pulls bring the Z lines closer together. Many shortening sarcomeres cause the myofibril and fibre to shorten."
+       ]
+     },
+     {
+       "title": "Relaxation also needs energy",
+       "bullets": [
+         "When stimulation ends, calcium is moved back into the sarcoplasmic reticulum and the binding sites become covered again.",
+         "ATP is needed for myosin to detach from actin as well as for calcium to be pumped back into storage.",
+         "Muscle cells replenish ATP using creatine phosphate, glucose breakdown and aerobic metabolism of fuels."
+       ]
+     },
+     {
+       "title": "Additional course details: excitation, contraction, and ATP",
+       "bullets": [
+         "Motor neurons release acetylcholine at neuromuscular junctions; chemically gated channels open, Na? enters, and an impulse travels along the fibre and into T tubules. The signal releases Ca?? from the sarcoplasmic reticulum into the sarcoplasm.",
+         "Ca?? binds troponin, shifting tropomyosin and exposing actin sites. Myosin binds actin, forms cross-bridges, bends, and pulls thin filaments toward the sarcomere centre. Repeated cycles shorten sarcomeres and the fibre. Without Ca?? binding sites remain covered; stopping stimulation ends contraction.",
+         "Only a little ATP is stored. ATP is required for myosin attachment and detachment and for pumping Ca?? back into the sarcoplasmic reticulum. Creatine phosphate replenishes ATP; further ATP comes from anaerobic breakdown of glycogen-derived glucose and aerobic metabolism of glucose and circulating fatty acids.",
+         "A twitch has a latent period, contraction phase, and relaxation phase. Repeated stimuli before relaxation produce summation and, at high frequency, sustained tetanus. Tetanus infection by *Clostridium tetani* produces tetanospasmin, which blocks inhibitory neurons, causing uncontrolled motor-neuron activity, spasms, and spastic paralysis; immunization prevents infection and treatment can include immunoglobulin."
+       ]
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p10-f01.jpeg",
+         "slide": "10",
+         "alt": "Motor neurons and muscle fibres. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Motor neurons and muscle fibres",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p11-f01.jpeg",
+         "slide": "11",
+         "alt": "Tetanus and sustained muscle contraction. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Tetanus and sustained muscle contraction",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p12-f01.jpeg",
+         "slide": "12",
+         "alt": "Muscle contraction overview. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Muscle contraction overview",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p13-f01.jpeg",
+         "slide": "13",
+         "alt": "Neuromuscular junction. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Neuromuscular junction",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p14-f01.jpeg",
+         "slide": "14",
+         "alt": "Calcium release and contraction. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Calcium release and contraction",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p15-f01.jpeg",
+         "slide": "15",
+         "alt": "Cross-bridge formation and the power stroke. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Cross-bridge formation and the power stroke",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p16-f01.jpeg",
+         "slide": "16",
+         "alt": "Calcium regulation of actin binding sites. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Calcium regulation of actin binding sites",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p16-f02.jpeg",
+         "slide": "16",
+         "alt": "Calcium regulation of actin binding sites. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Calcium regulation of actin binding sites",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p19-f01.jpeg",
+         "slide": "19",
+         "alt": "Muscle twitch, summation, and tetanus. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Muscle twitch, summation, and tetanus",
+       "bullets": []
+     }
    ],
    "bullets": [],
    "boxes": [
@@ -176,44 +322,84 @@
     }
    ],
    "sourceNotes": [
-    "Primary source: instructor's The Muscular System deck, slides 10 and 13-18. Explanations are paraphrased and newly written from the deck."
+     "Primary source: instructor-provided The Muscular System.pdf, slides 10, 11, 12, 13, 14, 15, 16, 17, 18, 19.",
+     "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
    ],
    "images": []
   },
   {
    "id": "muscle-types-detail",
    "title": "Cardiac and smooth muscle",
-   "slides": "20-23",
+   "slides": "20, 21, 22, 23",
    "steps": [
-    {
-   "img": {
-    "src": "img/biology/muscle-types.svg",
-    "slide": "Original course diagram",
-    "alt": "Cardiac muscle is striated and connected, while smooth muscle is nonstriated and arranged in tapered cells."
-   },
-   "title": "Involuntary activity and cell connections",
-     "bullets": [
-      "Cardiac and smooth muscle contract involuntarily, and some cells can initiate activity without a nerve signal.",
-      "Cardiac cells connect at **intercalated discs**. Gap junctions in these discs let electrical activity pass between neighbouring cells.",
-      "Smooth muscle cells also use gap junctions. The autonomic nervous system can adjust how strongly both cardiac and smooth muscle contract."
-     ]
-    },
-    {
-     "title": "Cardiac muscle coordinates a heartbeat",
-     "bullets": [
-      "Cardiac cells contain actin and myosin arranged in sarcomeres, so cardiac muscle is striated.",
-      "Pacemaker cells establish the rhythm that coordinates contraction across the heart muscle.",
-      "Cardiac muscle relaxes during diastole, the relaxation phase of the cardiac cycle."
-     ]
-    },
-    {
-     "title": "Smooth muscle sustains tension",
-     "bullets": [
-      "Smooth-muscle actin and myosin are arranged in criss-cross bundles anchored to the cell membrane, rather than in sarcomeres.",
-      "This arrangement gives smooth muscle its non-striated appearance.",
-      "In the intestine, interstitial cells of Cajal act as pacemaker cells for the smooth-muscle layer."
-     ]
-    }
+     {
+       "title": "Involuntary activity and cell connections",
+       "bullets": [
+         "Cardiac and smooth muscle contract involuntarily, and some cells can initiate activity without a nerve signal.",
+         "Cardiac cells connect at **intercalated discs**. Gap junctions in these discs let electrical activity pass between neighbouring cells.",
+         "Smooth muscle cells also use gap junctions. The autonomic nervous system can adjust how strongly both cardiac and smooth muscle contract."
+       ]
+     },
+     {
+       "title": "Cardiac muscle coordinates a heartbeat",
+       "bullets": [
+         "Cardiac cells contain actin and myosin arranged in sarcomeres, so cardiac muscle is striated.",
+         "Pacemaker cells establish the rhythm that coordinates contraction across the heart muscle.",
+         "Cardiac muscle relaxes during diastole, the relaxation phase of the cardiac cycle."
+       ]
+     },
+     {
+       "title": "Smooth muscle sustains tension",
+       "bullets": [
+         "Smooth-muscle actin and myosin are arranged in criss-cross bundles anchored to the cell membrane, rather than in sarcomeres.",
+         "This arrangement gives smooth muscle its non-striated appearance.",
+         "In the intestine, interstitial cells of Cajal act as pacemaker cells for the smooth-muscle layer."
+       ]
+     },
+     {
+       "title": "Additional course details: involuntary muscle and contraction properties",
+       "bullets": [
+         "Cardiac and smooth muscle can contract spontaneously without nerve stimulation and are modulated by autonomic innervation. Cardiac intercalated discs contain gap junctions that conduct impulses cell-to-cell. Most smooth muscle has gap junctions and spontaneous activity; trachea and iris are exceptions.",
+         "Cardiac sarcomeres make the tissue striated; pacemaker cells set the rhythm and contraction is followed by diastolic relaxation. Smooth-muscle filaments form membrane-anchored criss-cross bundles rather than sarcomeres; intestinal interstitial cells of Cajal act as pacemakers.",
+         "Skeletal contractions are fastest and least sustainable; cardiac are moderate in speed and sustainability; smooth are slowest but most sustainable and commonly partly contracted. Slow smooth-muscle contractions help keep ATP use within supply."
+       ]
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p21-f01.jpeg",
+         "slide": "21",
+         "alt": "Cardiac muscle and intercalated discs. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Cardiac muscle and intercalated discs",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p21-f02.jpeg",
+         "slide": "21",
+         "alt": "Cardiac muscle and intercalated discs. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Cardiac muscle and intercalated discs",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p22-f01.jpeg",
+         "slide": "22",
+         "alt": "Smooth muscle structure and pacemaker cells. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Smooth muscle structure and pacemaker cells",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p22-f02.jpeg",
+         "slide": "22",
+         "alt": "Smooth muscle structure and pacemaker cells. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Smooth muscle structure and pacemaker cells",
+       "bullets": []
+     }
    ],
    "bullets": [],
    "boxes": [
@@ -231,44 +417,112 @@
     }
    ],
    "sourceNotes": [
-    "Primary source: instructor's The Muscular System deck, slides 20-23. Explanations are paraphrased and newly written from the deck."
+     "Primary source: instructor-provided The Muscular System.pdf, slides 20, 21, 22, 23.",
+     "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
    ],
    "images": []
   },
   {
    "id": "development",
    "title": "Embryonic origins of muscle and tendons",
-   "slides": "24-28",
+   "slides": "24, 25, 26, 27, 28",
    "steps": [
-    {
-   "img": {
-    "src": "img/biology/skeletal-development.svg",
-    "slide": "Original course diagram",
-    "alt": "Paraxial mesoderm and somites give rise to muscle-forming tissues during development."
-   },
-   "title": "Paraxial mesoderm forms muscle precursors",
-     "bullets": [
-      "Much of the muscular system develops from **paraxial mesoderm**.",
-      "Anterior head mesoderm contributes to muscles of the face and skull.",
-      "More posterior paraxial mesoderm forms paired blocks called **somites**."
-     ]
-    },
-    {
-     "title": "Somites divide into skeletal and muscle-forming regions",
-     "bullets": [
-      "A somite's ventral region forms the **sclerotome**, which contributes to the axial skeleton and tendon precursors.",
-      "Its dorsal **dermomyotome** gives rise to the dermis and to the **myotome**, which produces skeletal muscle.",
-      "The syndetome, a region associated with the sclerotome, develops into tendons in coordination with nearby muscle."
-     ]
-    },
-    {
-     "title": "Primaxial and abaxial muscle",
-     "bullets": [
-      "The dorsomedial lip of the dermomyotome forms **primaxial** muscle, including deep back and intercostal muscles.",
-      "The ventrolateral lip contributes to **abaxial** muscle, including muscles of the ventral body wall and limbs.",
-      "Somites form in pairs along the embryo. In humans there are about 38-45 pairs, and Hox gene expression helps establish their regional identities."
-     ]
-    }
+     {
+       "title": "Paraxial mesoderm forms muscle precursors",
+       "bullets": [
+         "Much of the muscular system develops from **paraxial mesoderm**.",
+         "Anterior head mesoderm contributes to muscles of the face and skull.",
+         "More posterior paraxial mesoderm forms paired blocks called **somites**."
+       ]
+     },
+     {
+       "title": "Somites divide into skeletal and muscle-forming regions",
+       "bullets": [
+         "A somite's ventral region forms the **sclerotome**, which contributes to the axial skeleton and tendon precursors.",
+         "Its dorsal **dermomyotome** gives rise to the dermis and to the **myotome**, which produces skeletal muscle.",
+         "The syndetome, a region associated with the sclerotome, develops into tendons in coordination with nearby muscle."
+       ]
+     },
+     {
+       "title": "Primaxial and abaxial muscle",
+       "bullets": [
+         "The dorsomedial lip of the dermomyotome forms **primaxial** muscle, including deep back and intercostal muscles.",
+         "The ventrolateral lip contributes to **abaxial** muscle, including muscles of the ventral body wall and limbs.",
+         "Somites form in pairs along the embryo. In humans there are about 38-45 pairs, and Hox gene expression helps establish their regional identities."
+       ]
+     },
+     {
+       "title": "Additional course details: somites, tendons, and muscle regions",
+       "bullets": [
+         "Paraxial mesoderm forms anterior head mesoderm (face/skull muscles) and posterior somitic mesoderm. Somites are paired transient blocks formed periodically along the dorsal embryo by the clock-wavefront mechanism; humans have about 38?45 pairs. Hox collinearity assigns identities, including cervical vertebrae without ribs and thoracic vertebrae with ribs.",
+         "Ventral somite forms sclerotome; dorsal somite forms dermomyotome. Sclerotome contributes axial skeleton and tendon precursors through syndetome. Dermomyotome forms dermis through dermatome and muscle through myotome, including limb, back, and rib-cage musculature.",
+         "The syndetome is the dorsal-most sclerotome and is specified by neighbouring myotome; it resolves into anterior and posterior tendon-precursor stripes associated with neighbouring muscle and skeleton.",
+         "The dorsomedial dermomyotome lip forms primaxial deep-back and intercostal muscles. The ventrolateral/mediolateral lip forms abaxial ventral-body-wall and limb muscles."
+       ]
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p24-f01.jpeg",
+         "slide": "24",
+         "alt": "Paraxial mesoderm and muscle development. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Paraxial mesoderm and muscle development",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p25-f01.jpeg",
+         "slide": "25",
+         "alt": "Somite regions and derivatives. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Somite regions and derivatives",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p26-f01.jpeg",
+         "slide": "26",
+         "alt": "Somitogenesis and body segmentation. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Somitogenesis and body segmentation",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p27-f01.jpeg",
+         "slide": "27",
+         "alt": "Tendon precursors and syndetome. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Tendon precursors and syndetome",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p28-f01.jpeg",
+         "slide": "28",
+         "alt": "Primaxial and abaxial muscle formation. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Primaxial and abaxial muscle formation",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p28-f02.jpeg",
+         "slide": "28",
+         "alt": "Primaxial and abaxial muscle formation. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Primaxial and abaxial muscle formation",
+       "bullets": []
+     },
+     {
+       "img": {
+         "src": "img/biology/course-slides/muscular-p28-f05.jpeg",
+         "slide": "28",
+         "alt": "Primaxial and abaxial muscle formation. Original figure from the instructor-provided course presentation."
+       },
+       "title": "Primaxial and abaxial muscle formation",
+       "bullets": []
+     }
    ],
    "bullets": [],
    "boxes": [
@@ -286,7 +540,8 @@
     }
    ],
    "sourceNotes": [
-    "Primary source: instructor's The Muscular System deck, slides 24-28. Explanations are paraphrased and newly written from the deck."
+     "Primary source: instructor-provided The Muscular System.pdf, slides 24, 25, 26, 27, 28.",
+     "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
    ],
    "images": []
   }

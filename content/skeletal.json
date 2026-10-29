@@ -2,7 +2,7 @@
   "id": "skeletal",
   "title": "The Skeletal System",
   "chapter": "Unit 5",
-  "icon": "🦴",
+  "icon": "ðŸ¦´",
   "color": "#c0392b",
   "slideFile": "The Skeletal System.pdf",
   "intro": "Connect bone structure with support, movement, mineral balance, growth, repair, and development. Distinguish the skeleton's regions, joint types, and the two main routes of bone formation.",
@@ -10,14 +10,9 @@
     {
       "id": "bone-structure",
       "title": "Bone tissue and long-bone structure",
-      "slides": "2-5",
+      "slides": "1, 2, 3, 4, 5",
       "steps": [
         {
-          "img": {
-            "src": "img/biology/bone-anatomy.svg",
-            "slide": "Original course diagram",
-            "alt": "A long bone labeled with epiphyses, diaphysis, periosteum, compact bone, and marrow cavity."
-          },
           "title": "Bone is living connective tissue",
           "bullets": [
             "Bone contains living cells embedded in a mineralized extracellular matrix. Collagen contributes flexibility and tensile strength; mineral salts make the matrix rigid and resistant to compression.",
@@ -39,6 +34,32 @@
             "Cartilage supports and cushions structures; articular cartilage reduces friction where bones meet.",
             "Ligaments connect bone to bone and help stabilize joints. They are not the same as tendons, which connect muscle to bone."
           ]
+        },
+        {
+          "title": "Additional course details: bone composition, cells, and supporting tissues",
+          "bullets": [
+            "Bone consists of calcium-phosphate crystals in extracellular matrix together with living cells, nerves, and blood vessels. Compact bone forms the shaft and outer ends; the diaphysis holds yellow, fat-rich marrow, while trabeculae fill the inner epiphyses and contain red marrow with hematopoietic stem cells.",
+            "Osteoblasts in the periosteum secrete mostly collagen osteoid and enzymes that crystallize calcium phosphate. Osteoclasts degrade bone. Osteocytes are embedded osteoblasts in lacunae within osteons and receive nutrients from vessels in central canals.",
+            "Ligaments are dense fibrous connective tissue with aligned collagen and fibroblasts. Cartilage contains collagen and elastic fibres in a gel-like matrix: fibrocartilage makes knee menisci and intervertebral discs; hyaline cartilage covers joint ends; elastic cartilage forms the outer ear and epiglottis."
+          ]
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p03-f01.jpeg",
+            "slide": "3",
+            "alt": "Long-bone anatomy and marrow. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Long-bone anatomy and marrow",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p04-f01.jpeg",
+            "slide": "4",
+            "alt": "Osteons and living bone cells. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Osteons and living bone cells",
+          "bullets": []
         }
       ],
       "bullets": [],
@@ -57,22 +78,17 @@
         }
       ],
       "sourceNotes": [
-        "Primary source: instructor's The Skeletal System deck, slides 2-5.",
-        "Explanations and diagrams are paraphrased and newly written."
+        "Primary source: instructor-provided The Skeletal System.pdf, slides 1, 2, 3, 4, 5.",
+        "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
       ],
       "images": []
     },
     {
       "id": "remodeling-repair",
       "title": "Bone remodeling and fracture repair",
-      "slides": "6-9",
+      "slides": "6, 7, 8, 9",
       "steps": [
         {
-          "img": {
-            "src": "img/biology/bone-remodeling.svg",
-            "slide": "Original course diagram",
-            "alt": "Osteoclasts remove bone while osteoblasts deposit it; a fractured bone heals through hematoma, callus formation, and remodeling."
-          },
           "title": "Remodeling responds to the body",
           "bullets": [
             "Bone is continually resorbed and replaced. Osteoclasts and osteoblasts coordinate the removal and deposition of matrix.",
@@ -87,6 +103,41 @@
             "A soft callus bridges the fracture before a harder bony callus develops. Remodeling gradually reshapes the new bone.",
             "The sequence depends on adequate blood supply and stabilization; a fracture does not immediately return to its original structure."
           ]
+        },
+        {
+          "title": "Additional course details: loading, minerals, hormones, and repair",
+          "bullets": [
+            "Bone remodeling responds to mechanical stress and circulating Ca?? needs. When blood Ca?? is low, bone is resorbed; osteoclast enzymes dissolve matrix and Ca?? and phosphate are released to blood. Removal stimulates osteoblasts to deposit new osteoid.",
+            "High compressive stress increases osteoblast deposition; low-compression regions experience resorption and comparatively less osteoblast activity. The course deck identifies parathyroid hormone as stimulating osteoclast activity and calcitonin as stimulating osteoblast activity.",
+            "After fracture, a hematoma forms. Bone-marrow mesenchymal stem cells become fibroblasts and chondroblasts that make a fibrocartilage callus; osteoclasts clear dead tissue and clot remnants; periosteal osteoblasts deposit osteoid that mineralizes. Repair takes weeks to months and the healed region is often thicker and stronger."
+          ]
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p06-f01.jpeg",
+            "slide": "6",
+            "alt": "Bone resorption and formation. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Bone resorption and formation",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p07-f01.jpeg",
+            "slide": "7",
+            "alt": "Bone response to compressive stress. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Bone response to compressive stress",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p08-f01.jpeg",
+            "slide": "8",
+            "alt": "Stages of fracture repair. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Stages of fracture repair",
+          "bullets": []
         }
       ],
       "bullets": [],
@@ -97,7 +148,7 @@
         },
         {
           "type": "trick",
-          "text": "Fracture repair: hematoma → soft callus → hard callus → remodeling."
+          "text": "Fracture repair: hematoma â†’ soft callus â†’ hard callus â†’ remodeling."
         },
         {
           "type": "trap",
@@ -105,22 +156,17 @@
         }
       ],
       "sourceNotes": [
-        "Primary source: instructor's The Skeletal System deck, slides 6-9.",
-        "Explanations and diagram are paraphrased and newly written."
+        "Primary source: instructor-provided The Skeletal System.pdf, slides 6, 7, 8, 9.",
+        "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
       ],
       "images": []
     },
     {
       "id": "skeleton-regions",
       "title": "Axial and appendicular skeleton",
-      "slides": "10-16",
+      "slides": "10, 11, 12, 13, 14, 15, 16",
       "steps": [
         {
-          "img": {
-            "src": "img/biology/skeleton-regions.svg",
-            "slide": "Original course diagram",
-            "alt": "A human skeleton with the axial central framework distinguished from the appendicular limb girdles and limbs."
-          },
           "title": "The axial skeleton forms the central framework",
           "bullets": [
             "The axial skeleton includes the skull, vertebral column, ribs, and sternum. It supports the body axis and protects the brain, spinal cord, heart, and lungs.",
@@ -143,6 +189,87 @@
             "The hyoid is unusual because it does not articulate directly with another bone. It provides attachment for muscles of the tongue and throat.",
             "The small auditory ossicles transmit vibrations through the middle ear."
           ]
+        },
+        {
+          "title": "Additional course details: named bones and counts",
+          "bullets": [
+            "The typical skeleton has 206 bones: long bones (limbs and digits), short bones (wrists and ankles), flat bones (cranium, sternum, ribs), irregular bones (hip bones and vertebrae), and sesamoid bones (patella).",
+            "Cranial bones: frontal, parietal, temporal, occipital, sphenoid, ethmoid. Facial bones: maxilla, palatine, vomer, zygomatic, nasal, lacrimal, mandible. Skull foramina transmit cranial nerves, spinal cord, and vessels. The hyoid does not articulate with another bone and anchors tongue, larynx, and pharynx muscles; malleus, incus, and stapes transmit eardrum vibrations to the inner ear.",
+            "Vertebral counts are 7 cervical, 12 thoracic, 5 lumbar, 5 fused sacral, and 4 fused coccygeal. Twelve rib pairs protect heart and lungs; the upper ten connect to sternum through cartilage, while the lower two are floating ribs.",
+            "The pectoral girdle is clavicle and scapula; forelimb: humerus, radius, ulna, 8 carpals, 5 metacarpals, 14 phalanges, with opposable thumbs. The pelvic girdle includes sacrum and coxal bones; hindlimb: femur, patella, tibia, fibula, 7 tarsals, 5 metatarsals, 14 phalanges."
+          ]
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p10-f01.jpeg",
+            "slide": "10",
+            "alt": "The human skeleton. Original figure from the instructor-provided course presentation."
+          },
+          "title": "The human skeleton",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p11-f01.jpeg",
+            "slide": "11",
+            "alt": "Cranial and facial bones. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Cranial and facial bones",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p12-f01.jpeg",
+            "slide": "12",
+            "alt": "The hyoid and auditory ossicles. Original figure from the instructor-provided course presentation."
+          },
+          "title": "The hyoid and auditory ossicles",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p12-f02.png",
+            "slide": "12",
+            "alt": "The hyoid and auditory ossicles. Original figure from the instructor-provided course presentation."
+          },
+          "title": "The hyoid and auditory ossicles",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p13-f01.jpeg",
+            "slide": "13",
+            "alt": "Vertebral column regions. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Vertebral column regions",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p14-f01.jpeg",
+            "slide": "14",
+            "alt": "Ribs and sternum. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Ribs and sternum",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p15-f01.jpeg",
+            "slide": "15",
+            "alt": "Pectoral girdle and forelimbs. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Pectoral girdle and forelimbs",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p16-f01.jpeg",
+            "slide": "16",
+            "alt": "Pelvic girdle and hindlimbs. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Pelvic girdle and hindlimbs",
+          "bullets": []
         }
       ],
       "bullets": [],
@@ -161,22 +288,17 @@
         }
       ],
       "sourceNotes": [
-        "Primary source: instructor's The Skeletal System deck, slides 10-16.",
-        "Explanations and diagram are paraphrased and newly written."
+        "Primary source: instructor-provided The Skeletal System.pdf, slides 10, 11, 12, 13, 14, 15, 16.",
+        "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
       ],
       "images": []
     },
     {
       "id": "joints",
       "title": "Joint structure and movement",
-      "slides": "17-18",
+      "slides": "17, 18",
       "steps": [
         {
-          "img": {
-            "src": "img/biology/joints.svg",
-            "slide": "Original course diagram",
-            "alt": "Fibrous, cartilaginous, and synovial joints compared by movement, with a synovial joint capsule and fluid illustrated."
-          },
           "title": "Classify joints by structure and motion",
           "bullets": [
             "A joint, or articulation, is a location where bones meet. Structural classes include fibrous, cartilaginous, and synovial joints.",
@@ -191,6 +313,31 @@
             "Articular cartilage covers the ends of bones, reducing friction and distributing forces.",
             "Ligaments reinforce a joint and limit excessive movement; the shape of the articulating surfaces also affects the permitted motion."
           ]
+        },
+        {
+          "title": "Additional course details: articulation types and movement",
+          "bullets": [
+            "Fibrous joints are immovable (cranial fontanels harden into sutures); cartilaginous joints are slightly movable (including vertebral joints); synovial joints are freely movable and have a fluid-filled capsule with ligaments attaching the bones.",
+            "The synovial membrane lines the capsule and secretes cushioning, lubricating fluid; hyaline cartilage covers the articulating surfaces. Hinge joints move in one plane (knee, elbow), while ball-and-socket joints move in all planes (hip, shoulder)."
+          ]
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p17-f01.jpeg",
+            "slide": "17",
+            "alt": "Fibrous, cartilaginous, and synovial joints. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Fibrous, cartilaginous, and synovial joints",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p18-f01.jpeg",
+            "slide": "18",
+            "alt": "Synovial joint structure. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Synovial joint structure",
+          "bullets": []
         }
       ],
       "bullets": [],
@@ -209,22 +356,17 @@
         }
       ],
       "sourceNotes": [
-        "Primary source: instructor's The Skeletal System deck, slides 17-18.",
-        "Explanations and diagram are paraphrased and newly written."
+        "Primary source: instructor-provided The Skeletal System.pdf, slides 17, 18.",
+        "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
       ],
       "images": []
     },
     {
       "id": "ossification-growth",
       "title": "Bone formation and growth",
-      "slides": "19-25",
+      "slides": "19, 20, 21, 22, 23, 24, 25",
       "steps": [
         {
-          "img": {
-            "src": "img/biology/ossification.svg",
-            "slide": "Original course diagram",
-            "alt": "Intramembranous ossification forms bone directly from mesenchymal tissue, while endochondral ossification replaces a cartilage model."
-          },
           "title": "Two routes form bone",
           "bullets": [
             "**Intramembranous ossification** forms bone directly as mesenchymal cells differentiate into osteoblasts and deposit osteoid.",
@@ -246,6 +388,69 @@
             "Long-bone lengthening requires an active growth plate. Abnormalities that disrupt cartilage-cell development can alter growth.",
             "Bone diameter can increase through deposition at the outer surface even as internal bone is remodeled."
           ]
+        },
+        {
+          "title": "Additional course details: formation, growth, hormones, and achondroplasia",
+          "bullets": [
+            "Endochondral ossification begins with a hyaline-cartilage model: chondroblasts/chondrocytes form the model, chondrocytes degenerate, fetal osteoblasts migrate in, and bone replaces cartilage. The primary ossification centre forms in the fetus; secondary centres form in childhood.",
+            "Growth plates contain actively dividing chondrocytes and bone deposition. Chondrocyte division lengthens bone; their cartilage is replaced by bone. Growth ceases when the plate closes and all its cartilage becomes bone. Intramembranous ossification starts when mesenchymal stem cells become osteoblasts; osteoid spicules fuse into trabeculae, and osteoblasts trapped in matrix become osteocytes.",
+            "Growth hormone stimulates childhood lengthening; estrogen and testosterone promote early-adolescent lengthening and later growth-plate replacement and closure. Adult bone shape and thickness remain responsive to parathyroid hormone, calcitonin, fracture repair, and compression.",
+            "Achondroplasia (about 1 in 20,000 births) is usually autosomal dominant and associated with an activating FGFR3 mutation. Persistent receptor activity stops chondrocyte division, impairing growth, especially in long bones."
+          ]
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p20-f01.jpeg",
+            "slide": "20",
+            "alt": "Bone growth through development. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Bone growth through development",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p21-f01.jpeg",
+            "slide": "21",
+            "alt": "Endochondral ossification. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Endochondral ossification",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p22-f01.jpeg",
+            "slide": "22",
+            "alt": "Growth plate structure and activity. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Growth plate structure and activity",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p23-f02.jpeg",
+            "slide": "23",
+            "alt": "Intramembranous ossification. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Intramembranous ossification",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p23-f03.jpeg",
+            "slide": "23",
+            "alt": "Intramembranous ossification. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Intramembranous ossification",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p23-f04.jpeg",
+            "slide": "23",
+            "alt": "Intramembranous ossification. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Intramembranous ossification",
+          "bullets": []
         }
       ],
       "bullets": [],
@@ -264,22 +469,17 @@
         }
       ],
       "sourceNotes": [
-        "Primary source: instructor's The Skeletal System deck, slides 19-25.",
-        "Explanations and diagram are paraphrased and newly written."
+        "Primary source: instructor-provided The Skeletal System.pdf, slides 19, 20, 21, 22, 23, 24, 25.",
+        "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
       ],
       "images": []
     },
     {
       "id": "embryonic-origins",
       "title": "Embryonic origins of the skeleton",
-      "slides": "26-32",
+      "slides": "26, 27, 28, 29, 30, 31, 32",
       "steps": [
         {
-          "img": {
-            "src": "img/biology/skeletal-development.svg",
-            "slide": "Original course diagram",
-            "alt": "Paraxial mesoderm and somites contribute to the axial skeleton, lateral plate mesoderm contributes to limb bones, and cranial neural crest contributes many facial bones."
-          },
           "title": "Different regions contribute different bones",
           "bullets": [
             "Much of the axial skeleton below the skull develops from somites derived from paraxial mesoderm. The sclerotome contributes to vertebrae and ribs.",
@@ -294,6 +494,123 @@
             "Somite derivatives include more than bone: sclerotome forms skeletal components, while adjacent somite regions contribute muscle and other tissues.",
             "A bone's embryonic origin is not identical to its adult structural classification or its route of ossification."
           ]
+        },
+        {
+          "title": "Additional course details: embryonic origin and patterning",
+          "bullets": [
+            "Axial skeleton below the skull largely derives from somite sclerotome and the notochord; appendicular skeleton derives largely from somatic lateral-plate mesoderm. Facial bones, hyoid, and ossicles derive from cranial neural crest.",
+            "Sclerotome forms ribs and vertebrae; its central arthrotome contributes to vertebral joints and parts of ribs. Most intervertebral-disc tissue derives from notochord. Limb-bone precursors migrate into limb buds; a reaction-diffusion (Turing-model) framework describes sequential limb-skeleton patterning.",
+            "HOX spatial collinearity links gene order to position: 3? HOX genes are expressed more anteriorly, 5? genes more posteriorly. HOX patterns establish vertebral identity and differ among species.",
+            "Embryonic origin is not the same as ossification route: most neural-crest skull bones are intramembranous, but neural-crest-derived ossicles and hyoid are endochondral; the paraxial-mesoderm-derived parietal bone is intramembranous. Pharyngeal arch 1 forms facial bones and mandible; arches 1 and 2 form ossicles; arches 2 and 3 form hyoid."
+          ]
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p26-f01.jpeg",
+            "slide": "26",
+            "alt": "Embryonic origins of the skeleton. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Embryonic origins of the skeleton",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p27-f01.jpeg",
+            "slide": "27",
+            "alt": "Somite derivatives and vertebral development. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Somite derivatives and vertebral development",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p27-f03.jpeg",
+            "slide": "27",
+            "alt": "Somite derivatives and vertebral development. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Somite derivatives and vertebral development",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p28-f02.jpeg",
+            "slide": "28",
+            "alt": "Vertebral patterning. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Vertebral patterning",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p29-f01.png",
+            "slide": "29",
+            "alt": "HOX gene collinearity. Original figure from the instructor-provided course presentation."
+          },
+          "title": "HOX gene collinearity",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p30-f01.jpeg",
+            "slide": "30",
+            "alt": "Limb bone development. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Limb bone development",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p30-f02.png",
+            "slide": "30",
+            "alt": "Limb bone development. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Limb bone development",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p30-f03.jpeg",
+            "slide": "30",
+            "alt": "Limb bone development. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Limb bone development",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p31-f01.jpeg",
+            "slide": "31",
+            "alt": "Cranial neural crest derivatives. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Cranial neural crest derivatives",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p31-f02.jpeg",
+            "slide": "31",
+            "alt": "Cranial neural crest derivatives. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Cranial neural crest derivatives",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p32-f01.jpeg",
+            "slide": "32",
+            "alt": "Embryonic origin compared with ossification route. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Embryonic origin compared with ossification route",
+          "bullets": []
+        },
+        {
+          "img": {
+            "src": "img/biology/course-slides/skeletal-p32-f02.jpeg",
+            "slide": "32",
+            "alt": "Embryonic origin compared with ossification route. Original figure from the instructor-provided course presentation."
+          },
+          "title": "Embryonic origin compared with ossification route",
+          "bullets": []
         }
       ],
       "bullets": [],
@@ -312,8 +629,8 @@
         }
       ],
       "sourceNotes": [
-        "Primary source: instructor's The Skeletal System deck, slides 26-32.",
-        "Explanations and diagram are paraphrased and newly written."
+        "Primary source: instructor-provided The Skeletal System.pdf, slides 26, 27, 28, 29, 30, 31, 32.",
+        "Original embedded figures are extracted from the provided PDF; lesson explanations summarize the full slide content."
       ],
       "images": []
     }
