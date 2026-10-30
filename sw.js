@@ -1,7 +1,7 @@
 // ACEIT service worker: lets the app open offline and load faster.
 // App code is "network first" (always fresh when online, cached copy when offline).
 // Lectures and pictures are "cache first, refresh in the background" so anything a student has opened works offline.
-const VERSION = "aceit-v9";
+const VERSION = "aceit-v10";
 const SHELL = ["./", "index.html", "css/style.css", "js/main.js", "js/ui.js", "js/store.js", "js/games.js", "js/srs.js", "js/admin.js", "js/staff.js", "js/staffapi.js", "js/demo.js", "js/mfa.js", "js/author.js", "js/wsui.js", "js/itemrules.js", "js/classcontent.js", "js/bulk.js", "js/vendor/supabase.js", "js/profile.js", "js/support.js", "js/admintools.js", "js/account.js", "js/glossary.js", "js/glossaryrules.js", "js/share.js", "js/notify.js", "js/legal.js", "js/legal-text.js", "js/badges.js", "js/badges-core.js", "css/badges.css", "badges/badges.json", "js/editmode.js", "js/editmode-core.js", "css/edit.css", "css/fonts.css", "fonts/lexend-latin.woff2", "fonts/nunito-latin.woff2", "config.js", "content/subjects.json", "content/manifest.json", "manifest.webmanifest"];
 
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
