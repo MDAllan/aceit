@@ -1,9 +1,10 @@
 // Unit tests for what instructors add to their classes: the rules for each kind of item, pasting many questions or cards at once,
 // and how the items are merged into the study screens. Run: node tools/test_content.mjs
+import { readFileSync } from "node:fs";
 import { problem, tidy, summary, text, MARK, KINDS } from "../js/itemrules.js";
 import { parseQuestions, parseCards } from "../js/bulk.js";
 import { buildExtras, mark, isMarked, lectureId, itemId } from "../js/classcontent.js";
-import { needsPublishedFigures } from "../js/lecture-source.js";
+import { inlineCourseFigures, needsPublishedFigures } from "../js/lecture-source.js";
 let fails = 0, n = 0;
 const ok = (c, msg) => { n++; if (!c) { fails++; console.error("FAIL:", msg); } };
 const eq = (a, b, msg) => ok(JSON.stringify(a) === JSON.stringify(b), msg + "  got " + JSON.stringify(a));
@@ -39,6 +40,31 @@ ok(needsPublishedFigures("skeletal", generatedFigure, slideFigures), "skeletal l
 ok(needsPublishedFigures("muscular", generatedFigure, slideFigures), "muscular lecture also falls back when database figures differ");
 ok(!needsPublishedFigures("skeletal", slideFigures, slideFigures), "matching skeletal slide figures keep the saved database lesson");
 ok(!needsPublishedFigures("earth-stratigraphy", generatedFigure, slideFigures), "other lessons do not compare against these course figures");
+{
+  const sourceSteps = [
+    { title: "Long-bone anatomy", bullets: ["Long bones contain marrow."] },
+    { title: "Bone-cell roles", bullets: ["Osteocytes maintain the matrix."] },
+    { title: "Long-bone anatomy and marrow", img: { src: "slide-bone.jpeg" }, bullets: [] },
+    { title: "Osteons and living bone cells", img: { src: "slide-cells.jpeg" }, bullets: [] },
+  ];
+  const displayed = inlineCourseFigures("skeletal", sourceSteps);
+  ok(displayed.length === 2, "slide figures are combined with the lesson steps rather than left as separate carousel stops");
+  ok(displayed[0].figures[0].img.src === "slide-bone.jpeg" && displayed[1].figures[0].img.src === "slide-cells.jpeg", "each original figure is paired with its matching explanation");
+  ok(sourceSteps.length === 4 && !sourceSteps[0].figures, "figure pairing does not mutate published lesson content");
+  ok(inlineCourseFigures("earthquake", sourceSteps) === sourceSteps, "other subjects retain their existing notes layout");
+}
+for (const id of ["skeletal", "muscular"]) {
+  const lecture = JSON.parse(readFileSync(new URL(`../content/${id}.json`, import.meta.url), "utf8"));
+  let originalFigures = 0, displayedFigures = 0;
+  for (const section of lecture.sections) {
+    const sourceSteps = section.steps || [];
+    originalFigures += sourceSteps.filter((step) => step.img).length;
+    const displayed = inlineCourseFigures(id, sourceSteps);
+    displayedFigures += displayed.reduce((sum, step) => sum + (step.figures?.length || 0) + (step.img ? 1 : 0), 0);
+    ok(displayed.every((step) => !step.img || (step.bullets || []).length > 0), `${id} ${section.id}: diagrams are shown with explanatory steps`);
+  }
+  ok(originalFigures === displayedFigures, `${id}: all ${originalFigures} instructor-PDF figures remain in the Notes presentation`);
+}
 
 // tidy() prepares what an editor collected
 eq(tidy("card", { front: "  A ", back: " B  ", short: "   " }), { front: "A", back: "B" }, "tidy trims and drops empty optional fields");

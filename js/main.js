@@ -17,7 +17,7 @@ import * as Account from "./account.js";
 import { TERMS_VERSION, PRIVACY_VERSION, TERMS, PRIVACY, renderLegal } from "./legal.js";
 import { onGameEnd } from "./games.js";
 import { loadBadgeConfig, evaluateBadges, badgesSection, celebrate } from "./badges.js";
-import { needsPublishedFigures } from "./lecture-source.js";
+import { inlineCourseFigures, needsPublishedFigures } from "./lecture-source.js";
 
 // This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
 if (window.top !== window.self) { document.documentElement.style.display = "none"; try { window.top.location.href = window.self.location.href; } catch {} }
@@ -606,23 +606,36 @@ function lightbox(im) {
   document.body.append(lb);
 }
 // One box: a picture and its own explanation. Changing the picture (1/3, 2/3...) changes the text with it.
-function stepper(sec, X) {
-  const steps = sec.steps?.length ? sec.steps : (sec.images?.length ? sec.images.map((im) => ({ img: im, bullets: [] })) : []);
+function stepper(sec, X, lectureId) {
+  const sourceSteps = sec.steps?.length ? sec.steps : (sec.images?.length ? sec.images.map((im) => ({ img: im, bullets: [] })) : []);
+  const steps = X ? sourceSteps : inlineCourseFigures(lectureId, sourceSteps);
   if (!steps.length) return "";
   if (X && !sec.steps?.length) X = null; // pictures that are only a list of images (no steps) are not edited
   let i = 0, dir = 1;
+  const figureIndexes = new Map();
   const wrap = h(".stepper");
   const draw = () => {
-    const st = steps[i], im = st.img, n = steps.length;
+    const st = steps[i], figures = st.figures?.length ? st.figures : st.img ? [{ img: st.img, title: st.title }] : [];
+    let figureIndex = figureIndexes.get(i) || 0;
+    const n = steps.length;
     const go = (d) => { dir = d; i = (i + d + n) % n; draw(); };
+    const figure = figures[figureIndex];
+    const im = figure?.img;
     const fig = im ? h(".fig",
-      h("button.figbtn", { "aria-label": X ? "Edit picture" : "Enlarge picture", onclick: () => (X ? X.pic(st, draw) : lightbox(im)) }, pic({ ...im, alt: im.alt || sec.title }, { loading: "lazy" }), h("span.zoom", ic(X ? "pencil" : "zoom", 14), X ? "Edit" : "Enlarge")),
-      n > 1 ? [h("button.nv.l", { "aria-label": "Previous", onclick: (e) => { e.stopPropagation(); go(-1); } }, ic("left", 18)), h("button.nv.r", { "aria-label": "Next", onclick: (e) => { e.stopPropagation(); go(1); } }, ic("right", 18))] : "",
+      h("button.figbtn", { "aria-label": X ? "Edit picture" : "Enlarge picture", onclick: () => (X ? X.pic(st, draw) : lightbox(im)) }, pic({ ...im, alt: im.alt || figure.title || sec.title }, { loading: "lazy" }), h("span.zoom", ic(X ? "pencil" : "zoom", 14), X ? "Edit" : "Enlarge")),
+      n > 1 ? [h("button.nv.l", { "aria-label": "Previous topic", onclick: (e) => { e.stopPropagation(); go(-1); } }, ic("left", 18)), h("button.nv.r", { "aria-label": "Next topic", onclick: (e) => { e.stopPropagation(); go(1); } }, ic("right", 18))] : "",
       n > 1 ? h("span.cnt", `${i + 1} / ${n}`) : "") : X ? X.addPic(st, draw) : "";
     const txt = X ? X.stepText(st, draw, dir < 0) : h(".steptxt" + (dir < 0 ? ".back" : ""),
       st.title ? h("h3", md(st.title)) : "",
       (st.bullets || []).length ? h("ul.pts", st.bullets.map((x) => h("li", md(x)))) : "");
+    const gallery = figures.length > 1 ? h(".figure-gallery",
+      h(".row", { style: "justify-content:space-between;margin:6px 0" },
+        h("button.chip", { "aria-label": "Previous diagram", onclick: () => { figureIndex = (figureIndex + figures.length - 1) % figures.length; figureIndexes.set(i, figureIndex); draw(); } }, ic("left", 14), "Diagram"),
+        h(".src", `${figureIndex + 1} of ${figures.length} · ${figures[figureIndex].title || "Instructor slide figure"}`),
+        h("button.chip", { "aria-label": "Next diagram", onclick: () => { figureIndex = (figureIndex + 1) % figures.length; figureIndexes.set(i, figureIndex); draw(); } }, "Diagram", ic("right", 14)))) : "";
     wrap.replaceChildren(fig,
+      gallery,
+      figures.length === 1 && figure.title ? h(".src", figure.title) : "",
       im && n > 1 ? h(".dots", { style: "margin:8px 0 2px" }, steps.map((_, k) => h("i" + (k === i ? ".on" : "")))) : "",
       n > 1 && !im ? h(".row", { style: "justify-content:space-between;margin:6px 0" }, h("button.arrow", { "aria-label": "Previous", onclick: () => go(-1) }, ic("left", 20)), h("span.src", `${i + 1} / ${n}`), h("button.arrow", { "aria-label": "Next", onclick: () => go(1) }, ic("right", 20))) : "",
       txt, S.canSeeRefs() && im?.slide ? h(".src.admin", "Slide " + im.slide) : "");
@@ -660,7 +673,7 @@ function notes(b, l) {
       h(".card.page" + (dir < 0 ? ".back" : ""),
         h("h2", X ? X.title() : p.title, refs && p.slides ? h("span.refchip", "Slides " + p.slides) : "", p.custom ? h("span.pill.mute", { style: "font-size:.7rem" }, "Your instructor") : "", p.draft ? h("span.pill.bad", { style: "font-size:.7rem" }, "Draft") : ""),
         X && i === 0 ? X.intro() : i === 0 && l.intro ? h("p", { style: "color:var(--mute);margin:0 0 6px" }, md(l.intro)) : "",
-        stepper(p, X),
+        stepper(p, X, l.id),
         X ? X.bullets() : (p.bullets || []).length ? h("ul.pts", p.bullets.map((x) => h("li", md(x)))) : "",
         boxes.map((x) => acc(x.type, ic(BOX[x.type][0], 18), BOX[x.type][1], X ? X.box(x) : md(x.text), !!X)),
         p.table ? (p.glance ? table(p.table) : acc("cmp", ic("chart", 18), "Compare table", table(p.table), false)) : "",
