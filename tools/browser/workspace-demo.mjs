@@ -117,7 +117,9 @@ await p.evaluate(() => { location.hash = "#/work/people"; }); await wait(700);
 await p.type("input[type=search]", "noah"); await wait(600);
 t = await txt(); chk("people finder", /Noah Singh/.test(t) && /Block/.test(t) && /Delete account/.test(t));
 // content + settings + activity
-await p.evaluate(() => { location.hash = "#/work/content"; }); await wait(800); t = await txt(); chk("content page", /Protect lecture content/.test(t));
+await p.evaluate(() => { location.hash = "#/work/content"; }); await wait(800); t = await txt();
+chk("content page", /Protect lecture content/.test(t) && /Publish all content to the database/.test(t));
+chk("targeted biology publishing is available", /Publish Skeletal \+ Muscular/.test(t));
 await p.evaluate(() => { location.hash = "#/work/settings"; }); await wait(900); t = await txt(); chk("settings page", /Confirm email/.test(t) && /Allowed email domains/.test(t));
 await p.screenshot({ path: SHOTS + "/w_admin_settings.png", fullPage: true });
 await p.evaluate(() => { location.hash = "#/work/activity"; }); await wait(800); t = await txt(); chk("activity page", /Recent changes/.test(t) && /Error reports/.test(t));

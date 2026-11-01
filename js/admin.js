@@ -140,18 +140,35 @@ function domainPanel() {
 }
 export function publishPanel(LECS, SUBJECTS) {
   const status = h("p", { style: "margin:8px 0 0" }, "");
-  const go = h("button.btn.sm", { onclick: async () => {
-    go.disabled = true; let done = 0, bad = [];
-    const jobs = [...LECS.map((l) => ({ id: l.id, cls: l.subject, url: `content/${l.id}.json` })), ...SUBJECTS.filter((x) => x.exams).map((x) => ({ id: x.exams, cls: x.id, url: `content/${x.exams}.json`, exam: true }))];
-    for (const j of jobs) {
-      try { const body = await (await fetch(j.url, { cache: "no-store" })).json(); const r = j.exam ? await S.publishExam(j.cls, body) : await S.publishLecture(j.id, j.cls, body); if (r.error) throw r.error; done++; }
-      catch (e) { bad.push(`${j.id}: ${e.message || e}`); }
-      status.textContent = `Published ${done} of ${jobs.length}...`;
-    }
-    status.textContent = bad.length ? `Published ${done} of ${jobs.length}. Problems: ${bad.join("; ")}` : `Done: ${done} of ${jobs.length} published. Only class members can read these now.`;
-    go.disabled = false;
-  } }, "Publish content to the database");
-  return panel("Protect lecture content", h(".src", { style: "margin:0 0 6px" }, "Copies every lecture and exam into the database, where only members of each class can read them. Run this again after you change any lecture."), go, status);
+  const buttons = [];
+  const publish = async (button, jobs, scope) => {
+    if (buttons.some((b) => b.disabled)) return;
+    buttons.forEach((b) => { b.disabled = true; });
+    let done = 0, bad = [];
+    try {
+      for (const j of jobs) {
+        try {
+          const response = await fetch(j.url, { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const body = await response.json();
+          const r = j.exam ? await S.publishExam(j.cls, body) : await S.publishLecture(j.id, j.cls, body);
+          if (r.error) throw r.error;
+          done++;
+        }
+        catch (e) { bad.push(`${j.id}: ${e.message || e}`); }
+        status.textContent = `Published ${done} of ${jobs.length} ${scope}...`;
+      }
+      status.textContent = bad.length ? `Published ${done} of ${jobs.length} ${scope}. Problems: ${bad.join("; ")}` : `Done: ${done} of ${jobs.length} ${scope} published. Only class members can read these now.`;
+    } finally { buttons.forEach((b) => { b.disabled = false; }); }
+  };
+  const go = h("button.btn.sm", { onclick: () => publish(go, [...LECS.map((l) => ({ id: l.id, cls: l.subject, url: `content/${l.id}.json` })), ...SUBJECTS.filter((x) => x.exams).map((x) => ({ id: x.exams, cls: x.id, url: `content/${x.exams}.json`, exam: true }))], "lectures and exams") }, "Publish all content to the database");
+  const biologyJobs = ["skeletal", "muscular"].flatMap((id) => {
+    const lecture = LECS.find((l) => l.id === id);
+    return lecture ? [{ id, cls: lecture.subject, url: `content/${id}.json` }] : [];
+  });
+  const biology = h("button.btn.alt.sm", { disabled: biologyJobs.length !== 2, onclick: () => publish(biology, biologyJobs, "biology lessons") }, "Publish Skeletal + Muscular");
+  buttons.push(go, biology);
+  return panel("Protect lecture content", h(".src", { style: "margin:0 0 6px" }, "Signed-in students read saved copies from the database. Publish all content to replace every saved lecture and exam, or publish only the skeletal and muscular lessons to leave other saved content unchanged. Run the relevant action again after changing a lesson."), h(".row", go, biology), status);
 }
 function auditPanel() {
   const box = h("div", h(".src", "Loading..."));
