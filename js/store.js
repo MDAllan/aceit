@@ -31,7 +31,7 @@ let timer = null;
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || blank(); } catch { return blank(); }
 }
-function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {}, sr: {}, stats: {} }; }
+function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {}, sr: {}, objectives: {}, stats: {} }; }
 export const progress = () => data;
 
 const subs = [];
@@ -214,6 +214,9 @@ function examByCourse(rows) {
 function merge(a, b) {
   const out = blank();
   for (const k of ["cards", "read", "games", "days", "prefs", "sr"]) out[k] = { ...b[k], ...a[k] };
+  for (const id of new Set([...Object.keys(a.objectives || {}), ...Object.keys(b.objectives || {})])) {
+    out.objectives[id] = { ...(b.objectives || {})[id], ...(a.objectives || {})[id] };
+  }
   const ids = new Set([...Object.keys(a.quiz || {}), ...Object.keys(b.quiz || {})]);
   for (const id of ids) {
     const x = (a.quiz || {})[id], y = (b.quiz || {})[id];
@@ -313,6 +316,8 @@ export function recordAnswer(id, correct) {
   save(true);
 }
 export function markRead(lec, sec) { (data.read[lec] ||= {})[sec] = 1; save(true); }
+export const objectiveDone = (lec, objective) => !!data.objectives?.[lec]?.[objective];
+export function setObjective(lec, objective, checked) { (data.objectives[lec] ||= {})[objective] = !!checked; save(); }
 export function gameDone(id) { data.games[id] = (data.games[id] || 0) + 1; save(true); }
 
 /* ---------- numbers behind the badges (they live in the progress record, so they follow the student across devices) ---------- */

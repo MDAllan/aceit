@@ -1,5 +1,5 @@
-"""Builds content/manifest.json: a tiny index (ids and counts only) so the app can show classes,
-lectures and progress without downloading every lecture file. Run after any content change.
+"""Builds content/manifest.json: a course index and lesson objectives so the app can show classes,
+lectures, progress, and objective checklists without downloading every lecture file. Run after any content change.
    python tools/build_manifest.py          # write
    python tools/build_manifest.py --check  # exit 1 if the manifest is out of date (used by CI)"""
 import json, sys, os
@@ -13,6 +13,7 @@ for sj in subjects:
         out[lid] = {
             "id": d["id"], "title": d["title"], "chapter": d.get("chapter", ""), "icon": d.get("icon", ""), "subject": sj["id"],
             "sections": [s["id"] for s in d["sections"]], "cards": [c["id"] for c in d.get("cards", [])], "quiz": [q["id"] for q in d.get("quiz", [])],
+            "learningObjectives": d.get("learningObjectives", []),
             "games": d.get("games", []), "order": bool(d.get("order")), "sort": bool(d.get("sort")), "calc": bool(d.get("calc")),
         }
 text = json.dumps(out, ensure_ascii=False, separators=(",", ":"))

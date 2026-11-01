@@ -53,9 +53,9 @@ const open_ = () => LECS.filter((l) => S.hasAccess(l.subject));
 
 const gamesFor = (x) => [...new Set([...DEFAULT_GAMES, ...(x.games || []), (Array.isArray(x.order) ? x.order.length : x.order) && "order", (Array.isArray(x.sort) ? x.sort.length : x.sort) && "sort", (Array.isArray(x.calc) ? x.calc.length : x.calc) && "calc"].filter(Boolean))];
 // a light "skeleton" (ids and counts only) is enough for class and lecture lists and for progress percentages
-const skeleton = (m, subject) => ({ id: m.id, title: m.title, chapter: m.chapter, icon: m.icon, subject, sections: m.sections.map((id) => ({ id })), cards: m.cards.map((id) => ({ id })), quiz: m.quiz.map((id) => ({ id })), games: gamesFor(m), _full: false });
+const skeleton = (m, subject) => ({ id: m.id, title: m.title, chapter: m.chapter, icon: m.icon, subject, learningObjectives: m.learningObjectives || [], sections: m.sections.map((id) => ({ id })), cards: m.cards.map((id) => ({ id })), quiz: m.quiz.map((id) => ({ id })), games: gamesFor(m), _full: false });
 // What instructors added to a course lecture is kept apart from the course's own arrays (_base) so it can be rebuilt at any time.
-// Lecture lists only need ids and counts until the lecture is opened.
+// Lecture lists carry ids, objective text and counts until the lecture is opened.
 function applyExtras(l) {
   const e = EXTRA.extra[l.id] || { sections: [], cards: [], quiz: [] };
   if (!l._base) l._base = { sections: l.sections, cards: l.cards, quiz: l.quiz };
@@ -79,9 +79,11 @@ const getJson = async (url) => { const r = await fetch(url); if (!r.ok) throw ne
 // l._raw is the exact body the lecture was loaded from (the object the database or the published file gave). Admin edit mode changes it and saves it;
 // the lists the screens use (l.sections, l.cards, l.quiz) are rebuilt from it. l._orig is the first text of it (the published version, kept for the first save).
 function adopt(l, full, fromDb, at) {
-  const { subject, color } = l, old = l._raw, text = JSON.stringify(full);
+  const { subject, color } = l, old = l._raw, inheritedObjectives = l.learningObjectives || old?.learningObjectives || [];
   if (old) for (const k of Object.keys(old)) if (!(k in full) && k !== "id" && k !== "color") delete l[k]; // a part of the lecture an undo took away
+  full.learningObjectives ||= inheritedObjectives;
   full.sections ||= []; full.cards ||= []; full.quiz ||= [];
+  const text = JSON.stringify(full);
   Object.assign(l, full, { subject, color, _full: true }); l.games = gamesFor(full);
   l._raw = full; l._fromDb = fromDb; l._stamp = at || null; l._at = Date.now(); l._snap = text; l._orig ||= text;
   rebuildLecture(l);
@@ -629,6 +631,16 @@ function notes(b, l) {
     const go = (k, d) => { if (k < 0 || k >= pages.length) return; if (!pages[i].glance && !readSet()[pages[i].id]) floatXP("+3 XP"); if (!pages[i].glance) S.markRead(l.id, pages[i].id); dir = d ?? (k > i ? 1 : -1); i = k; draw(); if (i === pages.length - 1 && pages.every((q) => q.glance || readSet()[q.id])) { confetti(60); } window.scrollTo({ top: 0, behavior: "smooth" }); };
     window.__next = () => go(i + 1); window.__prev = () => go(i - 1);
     const boxes = (p.boxes || []).filter((x) => x.type !== "trap" || refs);
+    const objectives = l.learningObjectives || [];
+    const objectiveCount = objectives.filter((o) => S.objectiveDone(l.id, o.id)).length;
+    const objectiveCountLabel = h("span", `${objectiveCount}/${objectives.length} checked`);
+    const objectiveList = objectives.length ? h(".learning-objectives", objectives.map((o) => {
+      const input = h("input", { type: "checkbox", id: `objective-${l.id}-${o.id}`, checked: S.objectiveDone(l.id, o.id), onchange: (e) => {
+        S.setObjective(l.id, o.id, e.target.checked);
+        objectiveCountLabel.textContent = `${objectives.filter((item) => S.objectiveDone(l.id, item.id)).length}/${objectives.length} checked`;
+      } });
+      return h("label.check.learning-objective", input, h("span", md(o.text)));
+    })) : "";
     b.replaceChildren(
       h(".pager", h("button.arrow", { "aria-label": "Previous topic", disabled: i === 0, onclick: () => go(i - 1) }, ic("left", 22)), h(".mid", sel), h("button.arrow", { "aria-label": "Next topic", disabled: i === pages.length - 1, onclick: () => go(i + 1) }, ic("right", 22))),
       h(".dots", pages.map((q, k) => h("i" + (k === i ? ".on" : readSet()[q.id] ? ".done" : "")))),
@@ -639,6 +651,7 @@ function notes(b, l) {
         X ? X.bullets() : (p.bullets || []).length ? h("ul.pts", p.bullets.map((x) => h("li", md(x)))) : "",
         boxes.map((x) => acc(x.type, ic(BOX[x.type][0], 18), BOX[x.type][1], X ? X.box(x) : md(x.text), !!X)),
         p.table ? (p.glance ? table(p.table) : acc("cmp", ic("chart", 18), "Compare table", table(p.table), false)) : "",
+        objectives.length ? acc("objectives", ic("check", 18), h("span", "Learning objectives ", objectiveCountLabel), objectiveList, false) : "",
         X ? X.pageTools() : "",
         refs && p.sourceNotes ? h(".src.admin", "Source: " + p.sourceNotes.join(" · ")) : "",
       ),

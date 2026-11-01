@@ -21,6 +21,14 @@ for sj in subjects:
         for k in ("id", "title", "sections", "cards", "quiz"):
             if k not in d: bad(w, "missing " + k)
         if d.get("id") != lid: bad(w, "id does not match file name")
+        objectives = d.get("learningObjectives", [])
+        if not isinstance(objectives, list) or not objectives: bad(w, "missing learning objectives")
+        elif len({o.get("id") for o in objectives if isinstance(o, dict)}) != len(objectives):
+            bad(w, "duplicate or invalid learning objective ids")
+        for o in objectives if isinstance(objectives, list) else []:
+            if not isinstance(o, dict) or not o.get("id") or not isinstance(o.get("text"), str) or not o["text"].strip():
+                bad(w, "invalid learning objective")
+            else: leak(f"{w}/{o['id']} objective", o["text"])
         leak(w + " title", d.get("title")); leak(w + " intro", d.get("intro", ""))
         sids = [s["id"] for s in d["sections"]]
         if len(set(sids)) != len(sids): bad(w, "duplicate section ids")

@@ -294,6 +294,8 @@ details.panel[open]>summary::after{content:"\25B4"}
 @media(min-width:640px){.fgrid.two{grid-template-columns:1fr 1fr}}
 input[type=checkbox],input[type=radio]{width:20px;min-height:0;height:20px;padding:0;flex:none;accent-color:var(--brand)}
 label.check{display:flex;gap:10px;align-items:center;font-weight:600;margin:6px 0;min-height:36px}
+.learning-objectives label.check{align-items:flex-start;font-weight:500;line-height:1.45}
+.learning-objectives input[type=checkbox]{flex:none;width:1rem;height:1rem;margin:.25rem 0 0;accent-color:var(--brand)}
 .codebox{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--accent);color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--accent-ink) 25%,var(--accent));border-radius:var(--r);padding:12px 14px}
 .codebox code{font:700 1.5rem Lexend,monospace;letter-spacing:.12em;font-variant-numeric:tabular-nums;word-break:break-all}
 .codebox .btn.alt{background:#fff;color:#323C64}
