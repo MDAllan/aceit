@@ -3,6 +3,7 @@
 import { problem, tidy, summary, text, MARK, KINDS } from "../js/itemrules.js";
 import { parseQuestions, parseCards } from "../js/bulk.js";
 import { buildExtras, mark, isMarked, lectureId, itemId } from "../js/classcontent.js";
+import { needsPublishedFigures } from "../js/lecture-source.js";
 let fails = 0, n = 0;
 const ok = (c, msg) => { n++; if (!c) { fails++; console.error("FAIL:", msg); } };
 const eq = (a, b, msg) => ok(JSON.stringify(a) === JSON.stringify(b), msg + "  got " + JSON.stringify(a));
@@ -30,6 +31,14 @@ ok(problem("announcement", { title: "Midterm moved", text: "Now on Friday.", unt
 ok(problem("question", null) !== null && problem("question", [1]) !== null && problem("nope", {}) !== null, "nonsense is refused");
 ok(KINDS.length === 5, "five kinds of item");
 ok(text("hi", 2, 2) && !text("  hi  ", 2, 2) && !text("   ", 1, 5) && text("\u{1F600}\u{1F600}", 2, 2), "text length counts characters, not code units, and the ends must already be trimmed");
+
+// Published course figures replace saved database copies that still point at older or generated diagrams.
+const slideFigures = { sections: [{ steps: [{ img: { src: "img/biology/course-slides/skeletal-p03-f01.jpeg" } }] }] };
+const generatedFigure = { sections: [{ steps: [{ img: { src: "img/biology/old-generated.svg" } }] }] };
+ok(needsPublishedFigures("skeletal", generatedFigure, slideFigures), "skeletal lecture falls back to original slide figures when database figures differ");
+ok(needsPublishedFigures("muscular", generatedFigure, slideFigures), "muscular lecture also falls back when database figures differ");
+ok(!needsPublishedFigures("skeletal", slideFigures, slideFigures), "matching skeletal slide figures keep the saved database lesson");
+ok(!needsPublishedFigures("earth-stratigraphy", generatedFigure, slideFigures), "other lessons do not compare against these course figures");
 
 // tidy() prepares what an editor collected
 eq(tidy("card", { front: "  A ", back: " B  ", short: "   " }), { front: "A", back: "B" }, "tidy trims and drops empty optional fields");

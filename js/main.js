@@ -17,6 +17,7 @@ import * as Account from "./account.js";
 import { TERMS_VERSION, PRIVACY_VERSION, TERMS, PRIVACY, renderLegal } from "./legal.js";
 import { onGameEnd } from "./games.js";
 import { loadBadgeConfig, evaluateBadges, badgesSection, celebrate } from "./badges.js";
+import { needsPublishedFigures } from "./lecture-source.js";
 
 // This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
 if (window.top !== window.self) { document.documentElement.style.display = "none"; try { window.top.location.href = window.self.location.href; } catch {} }
@@ -98,13 +99,25 @@ async function loadFull(l) {
     if (l._full) { // shown before: only a newer copy from the database counts; offline or on an error the lecture stays as it is
       l._at = Date.now();
       const at = await S.dbLectureAt(l.id); // a tiny question first: the lecture is downloaded again only when it was saved since
-      if (at && at !== l._stamp && !l._pending) { const row = await S.dbLectureRow(l.id); if (row && !l._pending) adopt(l, row.body, true, row.at); }
+      if (at && at !== l._stamp && !l._pending) {
+        const row = await S.dbLectureRow(l.id);
+        if (row && !l._pending) {
+          const body = needsPublishedFigures(l.id, row.body, l._publishedBody) ? l._publishedBody : row.body;
+          adopt(l, body, body === row.body, body === row.body ? row.at : null);
+        }
+      }
       return;
     }
     // logged-in students read their lectures from the database, where only members of the class can see them;
     // local previews and the first rollout fall back to the published files
-    const db = S.DEMO ? null : await S.dbLectureRow(l.id);
-    adopt(l, db ? db.body : await getJson("content/" + l.id + ".json"), !!db, db?.at);
+    const [db, published] = await Promise.all([
+      S.DEMO ? null : S.dbLectureRow(l.id),
+      getJson("content/" + l.id + ".json"),
+    ]);
+    l._publishedBody = published;
+    const usePublished = db && needsPublishedFigures(l.id, db.body, published);
+    const body = usePublished ? published : db?.body || published;
+    adopt(l, body, !!db && !usePublished, usePublished ? null : db?.at);
   })();
   try { await inflight[l.id]; } finally { delete inflight[l.id]; }
 }

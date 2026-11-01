@@ -1,8 +1,8 @@
 // ACEIT service worker: lets the app open offline and load faster.
 // App code is "network first" (always fresh when online, cached copy when offline).
-// Lectures and pictures are "cache first, refresh in the background" so anything a student has opened works offline.
-const VERSION = "aceit-v10";
-const SHELL = ["./", "index.html", "css/style.css", "js/main.js", "js/ui.js", "js/store.js", "js/games.js", "js/srs.js", "js/admin.js", "js/staff.js", "js/staffapi.js", "js/demo.js", "js/mfa.js", "js/author.js", "js/wsui.js", "js/itemrules.js", "js/classcontent.js", "js/bulk.js", "js/vendor/supabase.js", "js/profile.js", "js/support.js", "js/admintools.js", "js/account.js", "js/glossary.js", "js/glossaryrules.js", "js/share.js", "js/notify.js", "js/legal.js", "js/legal-text.js", "js/badges.js", "js/badges-core.js", "css/badges.css", "badges/badges.json", "js/editmode.js", "js/editmode-core.js", "css/edit.css", "css/fonts.css", "fonts/lexend-latin.woff2", "fonts/nunito-latin.woff2", "config.js", "content/subjects.json", "content/manifest.json", "manifest.webmanifest"];
+// Lectures and pictures are "network first" so updates appear immediately when online and saved copies work offline.
+const VERSION = "aceit-v11";
+const SHELL = ["./", "index.html", "css/style.css", "js/main.js", "js/lecture-source.js", "js/ui.js", "js/store.js", "js/games.js", "js/srs.js", "js/admin.js", "js/staff.js", "js/staffapi.js", "js/demo.js", "js/mfa.js", "js/author.js", "js/wsui.js", "js/itemrules.js", "js/classcontent.js", "js/bulk.js", "js/vendor/supabase.js", "js/profile.js", "js/support.js", "js/admintools.js", "js/account.js", "js/glossary.js", "js/glossaryrules.js", "js/share.js", "js/notify.js", "js/legal.js", "js/legal-text.js", "js/badges.js", "js/badges-core.js", "css/badges.css", "badges/badges.json", "js/editmode.js", "js/editmode-core.js", "css/edit.css", "css/fonts.css", "fonts/lexend-latin.woff2", "fonts/nunito-latin.woff2", "config.js", "content/subjects.json", "content/manifest.json", "manifest.webmanifest"];
 
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
@@ -14,8 +14,7 @@ self.addEventListener("fetch", (e) => {
   if (lazy) {
     e.respondWith(caches.open(VERSION).then(async (c) => {
       const hit = await c.match(req);
-      const net = fetch(req).then((r) => { if (r.ok) c.put(req, r.clone()); return r; }).catch(() => hit);
-      return hit || net;
+      return fetch(req).then((r) => { if (r.ok) c.put(req, r.clone()); return r; }).catch(() => hit || Promise.reject(new Error("Resource is unavailable offline")));
     }));
   } else {
     e.respondWith(fetch(req).then((r) => { const copy = r.clone(); if (r.ok) caches.open(VERSION).then((c) => c.put(req, copy)); return r; }).catch(() => caches.match(req).then((m) => m || caches.match("index.html"))));
