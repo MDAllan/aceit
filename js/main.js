@@ -17,7 +17,7 @@ import * as Account from "./account.js";
 import { TERMS_VERSION, PRIVACY_VERSION, TERMS, PRIVACY, renderLegal } from "./legal.js";
 import { onGameEnd } from "./games.js";
 import { loadBadgeConfig, evaluateBadges, badgesSection, celebrate } from "./badges.js";
-import { inlineCourseFigures, needsPublishedFigures } from "./lecture-source.js";
+import { inlineCourseFigures, needsPublishedFigures, stripSvgFigures } from "./lecture-source.js";
 
 // This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
 if (window.top !== window.self) { document.documentElement.style.display = "none"; try { window.top.location.href = window.self.location.href; } catch {} }
@@ -80,6 +80,7 @@ const getJson = async (url) => { const r = await fetch(url); if (!r.ok) throw ne
 // l._raw is the exact body the lecture was loaded from (the object the database or the published file gave). Admin edit mode changes it and saves it;
 // the lists the screens use (l.sections, l.cards, l.quiz) are rebuilt from it. l._orig is the first text of it (the published version, kept for the first save).
 function adopt(l, full, fromDb, at) {
+  full = stripSvgFigures(full);
   const { subject, color } = l, old = l._raw, inheritedObjectives = l.learningObjectives || old?.learningObjectives || [];
   if (old) for (const k of Object.keys(old)) if (!(k in full) && k !== "id" && k !== "color") delete l[k]; // a part of the lecture an undo took away
   full.learningObjectives ||= inheritedObjectives;
@@ -127,7 +128,7 @@ async function loadExams(sjId) {
   if (!sj?.exams || sjId in EXAMS) return;
   EXAMS[sjId] = null;
   try {
-    const e = (S.DEMO ? null : await S.dbExam(sjId)) || (await getJson("content/" + sj.exams + ".json"));
+    const e = stripSvgFigures((S.DEMO ? null : await S.dbExam(sjId)) || (await getJson("content/" + sj.exams + ".json")));
     if (e?.tests?.length) EXAMS[sjId] = e;
   } catch {}
 }

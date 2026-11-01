@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { problem, tidy, summary, text, MARK, KINDS } from "../js/itemrules.js";
 import { parseQuestions, parseCards } from "../js/bulk.js";
 import { buildExtras, mark, isMarked, lectureId, itemId } from "../js/classcontent.js";
-import { inlineCourseFigures, needsPublishedFigures } from "../js/lecture-source.js";
+import { inlineCourseFigures, needsPublishedFigures, stripSvgFigures } from "../js/lecture-source.js";
 let fails = 0, n = 0;
 const ok = (c, msg) => { n++; if (!c) { fails++; console.error("FAIL:", msg); } };
 const eq = (a, b, msg) => ok(JSON.stringify(a) === JSON.stringify(b), msg + "  got " + JSON.stringify(a));
@@ -40,6 +40,15 @@ ok(needsPublishedFigures("skeletal", generatedFigure, slideFigures), "skeletal l
 ok(needsPublishedFigures("muscular", generatedFigure, slideFigures), "muscular lecture also falls back when database figures differ");
 ok(!needsPublishedFigures("skeletal", slideFigures, slideFigures), "matching skeletal slide figures keep the saved database lesson");
 ok(!needsPublishedFigures("earth-stratigraphy", generatedFigure, slideFigures), "other lessons do not compare against these course figures");
+{
+  const saved = {
+    sections: [{ steps: [{ img: { src: "img/geology/old-diagram.svg", alt: "Old" } }, { img: { src: "img/biology/course-slides/lesson-p03-f01.jpeg" } }] }],
+    quiz: [{ q: "Which description is correct?", options: ["A", "B"], img: { src: "data:image/svg+xml;utf8,<svg></svg>" } }],
+  };
+  const clean = stripSvgFigures(saved);
+  ok(clean.sections[0].steps.length === 1 && clean.sections[0].steps[0].img.src.endsWith(".jpeg"), "stale database SVG diagrams are removed while original slide images remain");
+  ok(!clean.quiz[0].img && saved.sections[0].steps.length === 2, "SVG exam/quiz images are removed without mutating saved data");
+}
 {
   const sourceSteps = [
     { title: "Long-bone anatomy", bullets: ["Long bones contain marrow."] },

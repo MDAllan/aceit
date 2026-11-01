@@ -11,14 +11,28 @@ def bad(where, msg): problems.append(f"{where}: {msg}")
 def leak(where, t):
     if isinstance(t, str) and REF.search(t): bad(where, f"source word in student text: {t[:80]!r}")
 def img_ok(where, img):
-    if img and not os.path.exists(img["src"]): bad(where, "missing image " + img["src"])
+    if img:
+        if not os.path.exists(img["src"]): bad(where, "missing image " + img["src"])
+def no_svg_images(where, value):
+    if isinstance(value, dict):
+        src = value.get("src")
+        if isinstance(src, str) and re.search(r"\.svg(?:[?#].*)?$|^data:image/svg\+xml", src, re.I):
+            bad(where, "SVG course diagrams are not allowed; use original course images")
+        for key, child in value.items(): no_svg_images(f"{where}/{key}", child)
+    elif isinstance(value, list):
+        for index, child in enumerate(value): no_svg_images(f"{where}[{index}]", child)
 
 subjects = json.load(open("content/subjects.json", encoding="utf8"))
+for course_images in ("img/astronomy", "img/geology", "img/biology"):
+    for filename in os.listdir(course_images) if os.path.isdir(course_images) else []:
+        if filename.lower().endswith(".svg"):
+            bad(course_images, "SVG course diagram assets are not allowed: " + filename)
 for sj in subjects:
     for lid in sj["lectures"]:
         w = lid
         try: d = json.load(open(f"content/{lid}.json", encoding="utf8"))
         except Exception as e: bad(w, f"invalid JSON ({e})"); continue
+        no_svg_images(w, d)
         for k in ("id", "title", "sections", "cards", "quiz"):
             if k not in d: bad(w, "missing " + k)
         if d.get("id") != lid: bad(w, "id does not match file name")
@@ -37,6 +51,7 @@ for sj in subjects:
         if len(set(sids)) != len(sids): bad(w, "duplicate section ids")
         for s in d["sections"]:
             leak(f"{w}/{s['id']} title", s["title"])
+            for im in s.get("images", []): img_ok(f"{w}/{s['id']}", im)
             for b in s.get("bullets", []): leak(f"{w}/{s['id']} bullet", b)
             for b in s.get("boxes", []):
                 if b["type"] != "trap": leak(f"{w}/{s['id']} box", b["text"])
@@ -61,6 +76,7 @@ for sj in subjects:
             img_ok(f"{w}/{q['id']}", q.get("img"))
     if sj.get("exams"):
         e = json.load(open(f"content/{sj['exams']}.json", encoding="utf8"))
+        no_svg_images(sj["exams"], e)
         ids = []
         for t in e["tests"]:
             for q in t["questions"]:

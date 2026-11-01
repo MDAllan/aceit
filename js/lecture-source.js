@@ -1,5 +1,23 @@
 const COURSE_FIGURE_LECTURES = new Set(["skeletal", "muscular"]);
 const FIGURE_STOP_WORDS = new Set(["a", "an", "and", "are", "as", "at", "by", "for", "from", "in", "into", "of", "on", "or", "the", "to", "with"]);
+const SVG_SOURCE = /(?:\.svg(?:[?#].*)?|^data:image\/svg\+xml)/i;
+
+function isSvgImage(value) {
+  return !!value && typeof value === "object" && typeof value.src === "string" && SVG_SOURCE.test(value.src);
+}
+
+export function stripSvgFigures(value) {
+  if (Array.isArray(value)) return value.map(stripSvgFigures).filter((item) => item !== null);
+  if (!value || typeof value !== "object") return value;
+  if (isSvgImage(value)) return null;
+  if (isSvgImage(value.img) && !(value.bullets || []).length && Object.keys(value).every((key) => ["img", "title", "bullets"].includes(key))) return null;
+  const clean = {};
+  for (const [key, item] of Object.entries(value)) {
+    if (key === "img" && isSvgImage(item)) continue;
+    clean[key] = stripSvgFigures(item);
+  }
+  return clean;
+}
 
 function stepText(step) {
   return [step.title, ...(step.bullets || [])].join(" ").toLowerCase();

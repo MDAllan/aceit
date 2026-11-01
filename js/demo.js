@@ -87,15 +87,13 @@ function summaries() {
   }
 }
 
-// a pretend picture (a small drawing) for sample items and for pictures chosen in the preview
-const SAMPLE_PICTURE = "data:image/svg+xml;utf8," + encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='320' height='180'><rect width='320' height='180' fill='#E6EAF6'/><circle cx='160' cy='90' r='54' fill='#324586'/><circle cx='160' cy='90' r='22' fill='#B8B3F0'/></svg>");
 const newId = () => String(++T.nid).padStart(8, "0") + "-0000-4000-8000-000000000000";
 function seedItems() {
   const add = (class_id, kind, lecture_ref, status, body, by = "Dr. Rivera") => { const id = newId(); T.items.push({ id, class_id, kind, lecture_ref, status, body, position: T.items.length + 1, author_name: by, created_at: new Date(Date.now() - (50 - T.items.length) * 3600e3).toISOString(), updated_at: new Date(Date.now() - (50 - T.items.length) * 3600e3).toISOString() }); return id; };
   const soon = new Date(Date.now() + 30 * DAY).toISOString().slice(0, 10);
   const L = add("k-a1", "lecture", null, "published", { title: "Week 1 review", chapter: "Revision", icon: "\u{1F9EA}", intro: "A short recap before the midterm." });
   add("k-a1", "note", L, "published", { title: "Start here", bullets: ["In **lecture** one we met the main ideas.", "Read the textbook pages again before the quiz."] });
-  add("k-a1", "note", L, "published", { title: "The key picture", bullets: ["The dark disc is the object", "The light centre is where the force acts"], img: { path: "k-a1/sample01.webp", alt: "A dark disc with a light centre" } });
+  add("k-a1", "note", L, "published", { title: "Movement and forces", bullets: ["A force can change an object's motion.", "The effect depends on the force and the object's mass."] });
   add("k-a1", "card", L, "published", { front: "Speed", back: "How far something goes in a given time" });
   add("k-a1", "card", L, "published", { front: "Velocity", back: "Speed in a given direction" });
   add("k-a1", "question", L, "published", { q: "Which quantity has a direction?", options: ["Speed", "Velocity", "Distance"], answer: 1, why: "Velocity is speed with a direction." });
@@ -115,7 +113,7 @@ export function classRows() {
   return [];
 }
 export const items = () => { ensure(); const ids = new Set(classRows().map((c) => c.class_id)); return T.items.filter((i) => ids.has(i.class_id)).map((i) => ({ ...i })); };
-export const media = (path) => { ensure(); return T.media[path] || (path.endsWith("sample01.webp") ? SAMPLE_PICTURE : null); };
+export const media = (path) => { ensure(); return T.media[path] || null; };
 export const itemsOf = (kid) => { ensure(); const c = classOf(kid); return c && canTeach(c) ? T.items.filter((i) => i.class_id === kid).map((i) => ({ ...i })) : []; };
 // pictures chosen in the editor are kept in memory as data addresses
 export async function uploadPicture(kid, blob) {
@@ -126,7 +124,7 @@ export async function uploadPicture(kid, blob) {
 // the lecture as the preview's database holds it (null until the admin has saved it once)
 export const lectureBody = (lid) => { ensure(); const x = T.lec[lid]; return x ? JSON.parse(JSON.stringify(x.body)) : null; };
 export const removePictures = (paths) => { ensure(); (paths || []).forEach((p) => delete T.media[p]); };
-export const copyPictures = (pairs) => { ensure(); (pairs || []).forEach(({ old_path, new_path }) => { T.media[new_path] = T.media[old_path] || SAMPLE_PICTURE; }); };
+export const copyPictures = (pairs) => { ensure(); (pairs || []).forEach(({ old_path, new_path }) => { if (T.media[old_path]) T.media[new_path] = T.media[old_path]; }); };
 function ensure() { if (!T) { build(); seedItems(); } }
 export function init(lecs) { LECS = lecs; ensure(); summaries(); }
 const role = () => demoRole();
