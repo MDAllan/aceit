@@ -5,6 +5,7 @@ import json, os, re, subprocess, sys
 root = os.path.join(os.path.dirname(__file__), "..")
 os.chdir(root)
 REF = re.compile(r"\b(slides?|lectures?|text ?books?|books?|professor|profs?|marshak|clickers?|outside source|chapter \d|section \d|practice (?:test|exam|questions?)|tophat|top hat)\b", re.I)
+OBJECTIVE_FILLER = re.compile(r"\b(?:concepts introduced|major ideas in this lesson|course questions)\b", re.I)
 problems = []
 def bad(where, msg): problems.append(f"{where}: {msg}")
 def leak(where, t):
@@ -28,7 +29,9 @@ for sj in subjects:
         for o in objectives if isinstance(objectives, list) else []:
             if not isinstance(o, dict) or not o.get("id") or not isinstance(o.get("text"), str) or not o["text"].strip():
                 bad(w, "invalid learning objective")
-            else: leak(f"{w}/{o['id']} objective", o["text"])
+            else:
+                leak(f"{w}/{o['id']} objective", o["text"])
+                if OBJECTIVE_FILLER.search(o["text"]): bad(f"{w}/{o['id']} objective", "generic placeholder wording")
         leak(w + " title", d.get("title")); leak(w + " intro", d.get("intro", ""))
         sids = [s["id"] for s in d["sections"]]
         if len(set(sids)) != len(sids): bad(w, "duplicate section ids")

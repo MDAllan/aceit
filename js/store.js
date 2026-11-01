@@ -102,7 +102,7 @@ export async function loadProfile() {
   await refreshMfaGate();
   if (p && !p.blocked) {
     const { data: r } = await sb.from("progress").select("data").eq("user_id", session.user.id).maybeSingle();
-    if (r?.data) data = merge(data, r.data);
+    if (r?.data) data = mergeProgress(data, r.data);
     try { localStorage.setItem(KEY, JSON.stringify(data)); } catch {}
   }
 }
@@ -211,7 +211,7 @@ function examByCourse(rows) {
 }
 
 // keep the best of local and cloud progress
-function merge(a, b) {
+export function mergeProgress(a, b) {
   const out = blank();
   for (const k of ["cards", "read", "games", "days", "prefs", "sr"]) out[k] = { ...b[k], ...a[k] };
   for (const id of new Set([...Object.keys(a.objectives || {}), ...Object.keys(b.objectives || {})])) {

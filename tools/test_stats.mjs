@@ -10,6 +10,15 @@ const S = await import("../js/store.js");
 const { speedQuestions } = await import("../js/game-questions.js");
 const { readFile } = await import("node:fs/promises");
 
+// Objective checks merge across devices without losing remote checks or local unchecks.
+const objectiveMerge = S.mergeProgress(
+  { objectives: { lecture: { first: true, second: false } } },
+  { objectives: { lecture: { second: true, third: true }, other: { remote: true } } },
+);
+ok(objectiveMerge.objectives.lecture.first === true && objectiveMerge.objectives.lecture.second === false &&
+  objectiveMerge.objectives.lecture.third === true && objectiveMerge.objectives.other.remote === true,
+"objective checks merge across devices and preserve an explicit local uncheck");
+
 // --- days and streaks use the person's own calendar day, and only studying counts
 const d = (n) => { const x = new Date(); x.setDate(x.getDate() - n); return S.localDay(x); };
 ok(/^\d{4}-\d{2}-\d{2}$/.test(S.localDay()), "localDay is YYYY-MM-DD");
