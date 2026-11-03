@@ -6,9 +6,10 @@ const courses = {
     testId: "second-midterm",
     ids: ["def-31", "def-32", "def-33", "def-34", "eq-25", "str-26", "bio-24", "eq-26", "eq-27", "mm-17", "mm-18", "mm-19", "eq-28", "str-27"],
     volcanic: {
+      lectureId: "volcanic-eruptions",
       count: 16,
       testId: "volcanic-eruptions",
-      ids: ["ign-26", "ign-27", "ign-28", "ign-29", "ign-30", "ign-31", "ign-32", "ign-33", "ign-34", "ign-35", "ign-36", "ign-37", "ign-38", "ign-39", "ign-40", "ign-41"],
+      ids: ["vol-1", "vol-2", "vol-3", "vol-4", "vol-5", "vol-6", "vol-7", "vol-8", "vol-9", "vol-10", "vol-11", "vol-12", "vol-13", "vol-14", "vol-15", "vol-16"],
     },
   },
   astr207: {
@@ -48,7 +49,16 @@ for (const [courseId, expected] of Object.entries(courses)) {
   }
   if (expected.volcanic) {
     const volcanic = expected.volcanic;
+    const lecture = JSON.parse(await readFile(new URL(`../content/${volcanic.lectureId}.json`, import.meta.url), "utf8"));
     const test = exam.tests.find((item) => item.id === volcanic.testId);
+    ok(subject.lectures.includes(volcanic.lectureId), `${courseId}: volcanic eruptions is a course unit`);
+    ok(lecture.learningObjectives.length >= 5, `${courseId}: volcanic unit has learning objectives`);
+    ok(lecture.sections.length >= 6 && lecture.sections.every((section) => section.steps?.length),
+      `${courseId}: volcanic unit has structured study notes`);
+    ok(lecture.cards.length >= 15, `${courseId}: volcanic unit has enough cards for games`);
+    ok(["match", "memory", "blitz", "guess", "speed"].every((game) => lecture.games.includes(game)),
+      `${courseId}: volcanic unit offers the card-based study games`);
+    ok(lecture.quiz.length === volcanic.count, `${courseId}: volcanic unit includes its chapter quiz`);
     ok(test?.questionIds?.length === volcanic.count, `${courseId}: volcanic practice has ${volcanic.count} selected questions`);
     ok(JSON.stringify(test?.questionIds) === JSON.stringify(volcanic.ids), `${courseId}: volcanic questions stay in the intended exam order`);
     ok(new Set(volcanic.ids).size === volcanic.count, `${courseId}: volcanic practice question IDs are unique`);

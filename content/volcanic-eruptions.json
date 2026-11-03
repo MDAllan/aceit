@@ -1,0 +1,714 @@
+{
+  "id": "volcanic-eruptions",
+  "title": "Volcanic Eruptions",
+  "chapter": "Ch 5",
+  "icon": "🌋",
+  "color": "#d9482b",
+  "intro": "Volcanic eruptions connect plate tectonics, magma properties, landforms, and natural hazards. Practice explaining why volcanoes form in particular settings, what controls eruption style, and how scientists recognize and reduce volcanic risk.",
+  "learningObjectives": [
+    {
+      "id": "goal-01",
+      "text": "Compare the tectonic settings where volcanoes commonly form and explain why transform boundaries usually lack volcanism."
+    },
+    {
+      "id": "goal-02",
+      "text": "Use magma viscosity, volatile content, and erupted volume to reason about eruption style."
+    },
+    {
+      "id": "goal-03",
+      "text": "Distinguish lava flows, pyroclastic debris, and volcanic gases as eruption products."
+    },
+    {
+      "id": "goal-04",
+      "text": "Relate shield volcanoes, cinder cones, stratovolcanoes, craters, and calderas to their structures and materials."
+    },
+    {
+      "id": "goal-05",
+      "text": "Recognize major volcanic hazards and explain how they can affect people and landscapes."
+    },
+    {
+      "id": "goal-06",
+      "text": "Interpret ground deformation, seismicity, gas emissions, and spring changes as possible signs of changing volcanic activity."
+    },
+    {
+      "id": "goal-07",
+      "text": "Explain how major eruptions can influence climate and compare volcanism on Earth with volcanic activity elsewhere in the Solar System."
+    }
+  ],
+  "sections": [
+    {
+      "id": "volcanic-settings",
+      "title": "Where volcanoes form",
+      "steps": [
+        {
+          "title": "Plate motion and melting",
+          "bullets": [
+            "Earth's internal heat and mantle convection help drive plate motion and volcanism. The tectonic setting controls how mantle or crustal rock begins to melt.",
+            "At **mid-ocean ridges** and **continental rifts**, hot mantle rises as plates separate. The pressure drop can cause decompression melting and produce basaltic magma.",
+            "At **convergent boundaries**, a sinking oceanic plate releases water and other volatiles. These lower the melting temperature of rock in the mantle above the slab and promote melting."
+          ]
+        },
+        {
+          "title": "Hot spots and exceptions",
+          "bullets": [
+            "**Mantle-plume hot spots** can produce volcanoes within a plate as buoyant hot mantle rises. A moving plate over a long-lived hot spot can leave a chain of volcanoes.",
+            "A hot spot can interact with a spreading ridge; Iceland is an example of volcanism associated with both a ridge and a mantle plume.",
+            "Transform boundaries mainly move plates sideways relative to one another. They generally lack the rising mantle or volatile transfer that drives large-scale melting at ridges and subduction zones."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "The melting process depends on the setting: pressure decreases at spreading centers and hot spots, while water from a sinking slab promotes melting above subduction zones."
+        },
+        {
+          "type": "trap",
+          "text": "Volcanoes do not occur only at plate boundaries. Hot spots can form within a plate, and not every plate boundary produces abundant magma."
+        }
+      ],
+      "sourceNotes": [
+        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 8-12 and 54."
+      ],
+      "images": []
+    },
+    {
+      "id": "eruption-style",
+      "title": "What controls eruption style",
+      "steps": [
+        {
+          "title": "Effusive and explosive eruptions",
+          "bullets": [
+            "An **effusive eruption** releases lava that flows from a vent. An **explosive eruption** violently fragments magma and sends ash, gas, and rock outward.",
+            "**Viscosity** describes resistance to flow. Hot, low-silica basaltic magma is usually runny, allowing gas to escape and lava to travel away from the vent.",
+            "Cooler, silica-rich magma is more viscous. If it also contains abundant volatiles, gas can remain trapped as pressure builds, increasing the potential for an explosive eruption."
+          ]
+        },
+        {
+          "title": "Volume matters",
+          "bullets": [
+            "Eruption style also depends on the amount of magma erupted. Some events produce enormous volumes of lava that spread over broad regions as **flood basalts**.",
+            "Viscosity, volatile content, and erupted volume work together; no single property describes every eruption."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "Gas expands as magma rises and pressure falls. Runny magma lets gas escape more readily, while viscous magma can trap gas and build pressure."
+        },
+        {
+          "type": "trick",
+          "text": "For an eruption-style question, check three things: how easily the magma flows, how much gas it contains, and how much material erupts."
+        },
+        {
+          "type": "trap",
+          "text": "A hotter basaltic magma can be less viscous and erupt gently. High temperature alone does not mean an eruption will be more explosive."
+        }
+      ],
+      "sourceNotes": [
+        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 13-17 and 21."
+      ],
+      "images": []
+    },
+    {
+      "id": "eruption-products",
+      "title": "Lava, fragments, and gases",
+      "steps": [
+        {
+          "title": "Three broad product groups",
+          "bullets": [
+            "**Lava flows** are molten rock moving over the ground. Basaltic lava is commonly hot and low in viscosity, so it can spread into thin flows and travel a long distance.",
+            "**Pyroclastic debris** consists of fragments thrown out during an eruption. The size of fragments can range from fine ash to much larger blocks.",
+            "**Volcanic gases and aerosols** are released during eruptions. Their composition and amount can change as a volcanic system becomes more active."
+          ]
+        },
+        {
+          "title": "How deposits form",
+          "bullets": [
+            "Fragments produced by explosive eruptions can accumulate as **pyroclastic deposits**. Other fragmental volcanic deposits can include sediment moved by water or broken pieces of lava.",
+            "A **lava tube** is a conduit that can carry basaltic lava beneath the surface of a flow. A cooled crust can insulate the still-moving lava inside."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "Lava, fragmented rock, and gases are different eruption products and create different hazards. Identify what is moving before deciding what risk it poses."
+        },
+        {
+          "type": "trap",
+          "text": "A lava flow is molten rock moving along the ground. A pyroclastic flow is a hot, ground-hugging mixture of gas and fragments, not a stream of liquid lava."
+        }
+      ],
+      "sourceNotes": [
+        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 19-30 and 35-36."
+      ],
+      "images": []
+    },
+    {
+      "id": "volcanic-architecture",
+      "title": "Volcano structure and shape",
+      "steps": [
+        {
+          "title": "Vents and depressions",
+          "bullets": [
+            "Magma can rise from a **magma chamber** through a vent or a crack called a **fissure**.",
+            "A **crater** is a bowl-shaped depression at the top of a volcano.",
+            "A **caldera** is a much larger depression that can form when the ground above a magma system collapses after a large amount of magma has been withdrawn."
+          ]
+        },
+        {
+          "title": "Volcano profiles",
+          "bullets": [
+            "**Shield volcanoes** have broad, gently sloping sides built from repeated flows of runny basalt. Mauna Loa in Hawaii is a well-known example.",
+            "**Cinder cones** are steep, relatively small cones built largely from fragments erupted around a vent.",
+            "**Stratovolcanoes**, also called composite volcanoes, are built from layers of lava and fragmental material. Their magma can be viscous and gas-rich, allowing explosive eruptions."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "A volcano's shape reflects how its erupted material moves and accumulates. Runny lava spreads widely; more fragmental or viscous material tends to build steeper forms."
+        },
+        {
+          "type": "trick",
+          "text": "A crater is a summit bowl; a caldera is a much broader collapse depression."
+        }
+      ],
+      "table": {
+        "title": "Compare volcanic forms",
+        "head": [
+          "Feature",
+          "Typical shape or origin",
+          "Common material or process"
+        ],
+        "rows": [
+          [
+            "Shield volcano",
+            "Broad, gently sloping",
+            "Repeated fluid basalt flows"
+          ],
+          [
+            "Cinder cone",
+            "Small and steep",
+            "Erupted fragments accumulating around a vent"
+          ],
+          [
+            "Stratovolcano",
+            "Steep layered cone",
+            "Lava and fragmental deposits"
+          ],
+          [
+            "Caldera",
+            "Large collapse depression",
+            "Withdrawal of magma and collapse above the chamber"
+          ]
+        ]
+      },
+      "sourceNotes": [
+        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 40-45."
+      ],
+      "images": []
+    },
+    {
+      "id": "volcanic-hazards",
+      "title": "Volcanic hazards and their impacts",
+      "steps": [
+        {
+          "title": "Fast-moving hazards",
+          "bullets": [
+            "**Pyroclastic flows** are hot, fast-moving mixtures of gas and volcanic fragments that race along the ground. They can be deadly and destructive.",
+            "**Lahars** are water-rich flows of volcanic debris. They can travel down river valleys and remain dangerous beyond the immediate eruption area.",
+            "Ash can disrupt breathing, transportation, buildings, and machinery. Volcanic gases such as sulfur dioxide, hydrogen sulfide, carbon monoxide, and concentrated carbon dioxide can also harm health."
+          ]
+        },
+        {
+          "title": "Other consequences",
+          "bullets": [
+            "Some eruptions can trigger tsunamis. The 1883 Krakatau eruption generated destructive waves.",
+            "The 1980 Mount St. Helens eruption caused deaths and extensive damage, and its ash and debris disrupted communities and transportation over a broad area.",
+            "Hazard maps help identify areas that may be affected by lava, ash, lahars, or other eruption products. Risk depends on both the hazard and the people and infrastructure exposed to it."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "Volcanic hazards can travel in different ways: lava follows the ground, ash can be carried through the air, lahars follow valleys, and gases can spread downwind."
+        },
+        {
+          "type": "trap",
+          "text": "Lahars do not require a lava flow. Water can mobilize ash and loose volcanic debris into a destructive flow."
+        }
+      ],
+      "sourceNotes": [
+        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 31, 46, 48-52, and 63."
+      ],
+      "images": []
+    },
+    {
+      "id": "eruption-monitoring",
+      "title": "Monitoring and eruption warnings",
+      "steps": [
+        {
+          "title": "Watch for multiple changes",
+          "bullets": [
+            "Moving magma can deform the ground. Tiltmeters, GPS measurements, repeated surveys, and satellite radar such as **InSAR** can help detect swelling or other changes in shape.",
+            "Earthquake activity can change as magma moves upward. Increasing or migrating earthquakes and volcanic tremor can indicate that the system is changing.",
+            "Scientists also monitor the amount and composition of volcanic gases and look for changes in nearby springs, including their temperature and water chemistry."
+          ]
+        },
+        {
+          "title": "What a warning can tell us",
+          "bullets": [
+            "Several warning signs together can indicate that a volcano is becoming more active and that an eruption may be approaching.",
+            "Monitoring does not guarantee an eruption, and warning signs alone cannot specify its exact timing, size, or style.",
+            "Preparedness uses monitoring together with hazard maps, communication, and guidance from responsible authorities."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "Magma movement affects several parts of a volcanic system. Looking for independent changes in shape, earthquakes, gases, and water provides more information than relying on one sign."
+        },
+        {
+          "type": "trap",
+          "text": "A rise in seismicity or ground swelling is a warning sign, not an exact countdown to an eruption."
+        }
+      ],
+      "sourceNotes": [
+        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 57-59."
+      ],
+      "images": []
+    },
+    {
+      "id": "volcanoes-beyond-earth",
+      "title": "Climate effects and volcanoes beyond Earth",
+      "steps": [
+        {
+          "title": "Eruptions and climate",
+          "bullets": [
+            "Large eruptions can send ash and aerosols high into the atmosphere. By reducing the sunlight that reaches the surface, these materials can cause temporary atmospheric cooling.",
+            "The 1815 eruption of Mount Tambora is associated with the period remembered as the \"year without a summer.\""
+          ]
+        },
+        {
+          "title": "Volcanism across the Solar System",
+          "bullets": [
+            "Evidence of volcanic activity is found on the Moon, other planets, and moons of other planets.",
+            "Volcanism beyond Earth shows that volcanic processes are not limited to Earth's surface or its familiar plate settings."
+          ]
+        }
+      ],
+      "bullets": [],
+      "boxes": [
+        {
+          "type": "why",
+          "text": "The effects of an eruption depend on where its products go. Aerosols high in the atmosphere can affect sunlight far from the volcano."
+        }
+      ],
+      "sourceNotes": [
+        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 69-71."
+      ],
+      "images": []
+    }
+  ],
+  "games": [
+    "match",
+    "memory",
+    "blitz",
+    "guess",
+    "speed"
+  ],
+  "cards": [
+    {
+      "id": "vol-c1",
+      "front": "Decompression melting",
+      "back": "Melting that occurs as hot rock rises and pressure decreases, such as beneath ridges, rifts, and some hot spots.",
+      "short": "Pressure drops as hot rock rises.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c2",
+      "front": "Flux melting",
+      "back": "Melting promoted when water and other volatiles are released from a sinking slab into the mantle above it.",
+      "short": "Slab-released volatiles promote melting.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c3",
+      "front": "Mantle-plume hot spot",
+      "back": "A volcanic region supplied by buoyant hot mantle, which can occur within a tectonic plate.",
+      "short": "Volcanism above rising hot mantle.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c4",
+      "front": "Transform boundary",
+      "back": "A plate boundary where plates mainly move sideways past one another and large-scale volcanism is generally limited.",
+      "short": "Plates move sideways; little melting is driven.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c5",
+      "front": "Effusive eruption",
+      "back": "An eruption in which lava flows out relatively steadily rather than being violently fragmented.",
+      "short": "Lava flows from a vent.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c6",
+      "front": "Explosive eruption",
+      "back": "An eruption that fragments magma and ejects gas, ash, and other volcanic material.",
+      "short": "Gas and fragments are violently expelled.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c7",
+      "front": "Viscosity",
+      "back": "A fluid's resistance to flowing; high-viscosity magma moves less readily and can trap gas.",
+      "short": "Resistance to flow.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c8",
+      "front": "Flood basalt",
+      "back": "A broad region covered by very large volumes of erupted basaltic lava.",
+      "short": "A vast area of basalt flows.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c9",
+      "front": "Pyroclastic debris",
+      "back": "Fragments of volcanic material produced and expelled during an eruption.",
+      "short": "Eruption-produced volcanic fragments.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c10",
+      "front": "Pyroclastic flow",
+      "back": "A fast, ground-hugging current of hot gas and volcanic fragments.",
+      "short": "Hot gas and fragments move along the ground.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c11",
+      "front": "Lahar",
+      "back": "A water-rich flow of volcanic debris that can move rapidly down valleys.",
+      "short": "Water and volcanic debris flow downhill.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c12",
+      "front": "Lava tube",
+      "back": "A conduit beneath a cooled crust that carries still-molten lava through a flow.",
+      "short": "A passage carrying lava beneath a flow's crust.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c13",
+      "front": "Shield volcano",
+      "back": "A broad, gently sloping volcano commonly built by repeated flows of fluid basalt.",
+      "short": "Broad volcano built by runny lava.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c14",
+      "front": "Cinder cone",
+      "back": "A relatively small, steep cone built mainly from fragments erupted around a vent.",
+      "short": "Small, steep cone of volcanic fragments.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c15",
+      "front": "Stratovolcano",
+      "back": "A steep composite volcano built from layers of lava and fragmental material.",
+      "short": "Steep volcano built in layers.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c16",
+      "front": "Crater",
+      "back": "A bowl-shaped depression at the top of a volcano.",
+      "short": "Bowl-shaped depression at a summit.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c17",
+      "front": "Caldera",
+      "back": "A broad volcanic depression that can form when the ground above a magma system collapses.",
+      "short": "Large depression formed by collapse.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c18",
+      "front": "Volcanic tremor",
+      "back": "Sustained seismic shaking that can be associated with the movement of magma or volcanic fluids.",
+      "short": "Ongoing seismic signal linked to volcanic activity.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c19",
+      "front": "InSAR",
+      "back": "Satellite radar technique used to detect changes in ground elevation and deformation.",
+      "short": "Radar measurement of ground deformation.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c20",
+      "front": "Volcanic gas",
+      "back": "Gas released from magma; its amount, composition, or temperature can change as volcanic activity changes.",
+      "short": "Gases released from a volcanic system.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c21",
+      "front": "Volcanic aerosol",
+      "back": "Fine airborne particles or droplets from an eruption that can reduce incoming sunlight when they remain high in the atmosphere.",
+      "short": "Airborne particles that can reduce sunlight.",
+      "gloss": false
+    },
+    {
+      "id": "vol-c22",
+      "front": "Ground deformation",
+      "back": "A change in a volcano's shape or elevation that can provide evidence of movement within the volcanic system.",
+      "short": "A measurable change in ground shape.",
+      "gloss": false
+    }
+  ],
+  "quiz": [
+    {
+      "id": "vol-1",
+      "q": "A geologist is comparing active plate boundaries and finds little magma production along a transform fault. Which explanation best fits this observation?",
+      "options": [
+        "Transform faults mainly move plates laterally rather than creating the melting conditions common at ridges or subduction zones",
+        "Transform faults always have very cold mantle that cannot melt",
+        "Transform faults are the only places where volcanic gases escape",
+        "Transform faults stop all mantle movement beneath a plate",
+        "Transform faults produce only felsic magma"
+      ],
+      "answer": 0,
+      "why": "Transform boundaries are not a major volcanic setting because they do not normally drive the mantle melting processes found at spreading centers, subduction zones, or hot spots.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 8-12 and 76"
+    },
+    {
+      "id": "vol-2",
+      "q": "Basalt is produced beneath a spreading ridge as hot mantle rises without gaining much heat. What change allows melting to begin?",
+      "options": [
+        "Pressure falls as the mantle rises, allowing decompression melting",
+        "The mantle absorbs water from a sinking slab",
+        "Silica is removed from the mantle by a lava flow",
+        "The rising mantle cools until it melts",
+        "A caldera collapses above the ridge"
+      ],
+      "answer": 0,
+      "why": "At spreading centers, rising mantle undergoes a pressure decrease. This decompression can cause partial melting even without a large temperature increase.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 8-9"
+    },
+    {
+      "id": "vol-3",
+      "q": "Two magmas contain abundant gas, but one is much more viscous. Which is more likely to build pressure and erupt explosively?",
+      "options": [
+        "The more viscous magma, because it resists gas escaping",
+        "The less viscous magma, because gas can escape more easily",
+        "Neither; gas has no effect on eruption style",
+        "Both must erupt gently because they contain gas",
+        "The magma with the lower volume, regardless of viscosity"
+      ],
+      "answer": 0,
+      "why": "Viscous magma can trap expanding volatiles. The combination of high viscosity and gas favors pressure buildup and explosive activity.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 13 and 16-17"
+    },
+    {
+      "id": "vol-4",
+      "q": "A volcanic province consists of basalt spread across an exceptionally broad region. Which eruption characteristic best explains the scale of this province?",
+      "options": [
+        "A very large total volume of erupted lava",
+        "A single small crater with no lava output",
+        "A low magma supply over a very short time",
+        "A large amount of ash but no magma",
+        "Repeated collapse of one small cinder cone"
+      ],
+      "answer": 0,
+      "why": "Flood-basalt provinces form when enormous volumes of basaltic lava are erupted, covering broad areas.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 13-15"
+    },
+    {
+      "id": "vol-5",
+      "q": "A hot basaltic flow travels a long distance before stopping. Which magma property most directly helps it keep moving?",
+      "options": [
+        "Low silica content and low viscosity",
+        "High silica content and high viscosity",
+        "High viscosity caused by cooling",
+        "A large amount of solid ash mixed into it",
+        "A lack of molten material"
+      ],
+      "answer": 0,
+      "why": "Basaltic magma is typically hot and low in silica, so its low viscosity lets lava flow readily and travel farther.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 19-21"
+    },
+    {
+      "id": "vol-6",
+      "q": "An eruption sends out a cloud of gas, throws fragmented rock into the air, and sends molten rock across the ground. Which classification is correct?",
+      "options": [
+        "Gas and aerosols, pyroclastic debris, and lava flows",
+        "Lava flows, calderas, and magma chambers",
+        "Pyroclastic debris, magma chambers, and craters",
+        "Lahars, fissures, and mantle plumes",
+        "Craters, volcanic gases, and intrusive plutons"
+      ],
+      "answer": 0,
+      "why": "Eruption products include volcanic gases, fragmented pyroclastic material, and lava flows.",
+      "source": "ERTH 209 Chapter 5 lecture, slide 19"
+    },
+    {
+      "id": "vol-7",
+      "q": "During an eruption, a ground-hugging current of hot gas and volcanic fragments races down a volcano's flank. Which hazard is occurring?",
+      "options": [
+        "A pyroclastic flow",
+        "A lava tube",
+        "A caldera",
+        "A shield-volcano flow",
+        "A mantle plume"
+      ],
+      "answer": 0,
+      "why": "Pyroclastic flows are fast-moving, hot mixtures of gas and volcanic fragments that travel along the ground and are extremely hazardous.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 29-31 and 35"
+    },
+    {
+      "id": "vol-8",
+      "q": "Heavy rain mobilizes loose volcanic ash and debris into a destructive flow down a river valley. What is this volcanic hazard called?",
+      "options": [
+        "A lahar",
+        "A caldera",
+        "A dike",
+        "A lava tube",
+        "A crater"
+      ],
+      "answer": 0,
+      "why": "A lahar is a water-rich flow of volcanic debris that can move down valleys and threaten communities far from the vent.",
+      "source": "ERTH 209 Chapter 5 lecture, slide 46"
+    },
+    {
+      "id": "vol-9",
+      "q": "A broad volcano has gentle slopes built from repeated flows of runny basalt. Which volcano shape is most likely?",
+      "options": [
+        "A shield volcano",
+        "A steep cinder cone",
+        "A caldera",
+        "A volcanic dike",
+        "A stratovolcano formed only from ash"
+      ],
+      "answer": 0,
+      "why": "Fluid basalt can spread widely in successive flows, building the broad, gently sloping profile characteristic of a shield volcano.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 40 and 42"
+    },
+    {
+      "id": "vol-10",
+      "q": "After a large eruption, the roof above a partly emptied magma chamber collapses and leaves a vast depression. What feature has formed?",
+      "options": [
+        "A caldera",
+        "A small summit crater",
+        "A lava tube",
+        "A fissure vent",
+        "A cinder cone"
+      ],
+      "answer": 0,
+      "why": "A caldera is a large collapse depression associated with loss of support as magma is withdrawn from a volcanic system; it is larger and formed differently from a summit crater.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 40 and 45"
+    },
+    {
+      "id": "vol-11",
+      "q": "A volcano-monitoring team wants to detect changes that could signal moving magma. Which observation set is most useful?",
+      "options": [
+        "Ground deformation, changing earthquake activity, altered gas emissions, and changes in nearby springs",
+        "Daily cloud cover, ocean tides, and the color of distant rocks",
+        "Only the shape of the summit crater",
+        "Only the number of people visiting the volcano",
+        "The mineral hardness of old lava flows"
+      ],
+      "answer": 0,
+      "why": "Magma movement can deform the ground, change seismic activity, alter gas output, and affect the temperature or chemistry of springs.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 57-59"
+    },
+    {
+      "id": "vol-12",
+      "q": "Monitoring shows increasing earthquakes migrating upward, ground swelling, and changing gas emissions. What is the most responsible interpretation?",
+      "options": [
+        "These are warning signs that activity may be increasing, but they do not establish the exact eruption time or style",
+        "They prove an eruption will occur at a precise time and will be effusive",
+        "They show that the volcano has permanently stopped moving magma",
+        "They guarantee that no eruption can happen",
+        "They identify the exact volume of the next eruption"
+      ],
+      "answer": 0,
+      "why": "These changes can indicate an impending eruption, but monitoring cannot determine its exact timing or eruption style with certainty.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 57-59"
+    },
+    {
+      "id": "vol-13",
+      "q": "People near a volcano develop respiratory symptoms while hazardous gases are being released. Which response is most appropriate?",
+      "options": [
+        "Treat the gas plume as a health hazard and follow official evacuation or shelter guidance",
+        "Assume volcanic gases are harmless once they reach the air",
+        "Move closer to the vent to identify the gas by smell",
+        "Wait for visible lava before taking precautions",
+        "Drink untreated spring water to prevent exposure"
+      ],
+      "answer": 0,
+      "why": "Volcanic gases such as sulfur dioxide, hydrogen sulfide, carbon monoxide, and concentrated carbon dioxide can be poisonous or cause respiratory illness.",
+      "source": "ERTH 209 Chapter 5 lecture, slide 63"
+    },
+    {
+      "id": "vol-14",
+      "q": "Following a major eruption, fine ash and aerosols remain high in the atmosphere and less sunlight reaches Earth's surface. What climate effect is expected?",
+      "options": [
+        "Temporary cooling as incoming sunlight is reduced",
+        "Permanent warming because all aerosols trap heat",
+        "No change because ash remains below the clouds",
+        "A stronger greenhouse effect caused by removing sunlight",
+        "Immediate melting of the entire volcanic cone"
+      ],
+      "answer": 0,
+      "why": "Ash and aerosols high in the atmosphere can block or reflect sunlight, producing temporary cooling; Tambora's 1815 eruption is one example.",
+      "source": "ERTH 209 Chapter 5 lecture, slides 69-70"
+    },
+    {
+      "id": "vol-15",
+      "q": "A coastal community experiences a destructive tsunami after a nearby volcanic island erupts. Which explanation is scientifically plausible?",
+      "options": [
+        "Some eruptions can generate tsunamis, as occurred at Krakatau",
+        "Tsunamis can only be caused by mid-ocean ridges",
+        "Volcanoes cannot produce waves in the ocean",
+        "The wave must have come from a shield volcano's slow lava flow",
+        "Tsunamis are another name for volcanic gases"
+      ],
+      "answer": 0,
+      "why": "Although uncommon, volcanic eruptions can generate tsunamis; Krakatau's 1883 eruption is a well-known example.",
+      "source": "ERTH 209 Chapter 5 lecture, slide 52"
+    },
+    {
+      "id": "vol-16",
+      "q": "Scientists find landforms consistent with ancient volcanic activity on a moon orbiting another planet. What does this show?",
+      "options": [
+        "Volcanism occurs on the Moon, other planets, and moons of other planets",
+        "Volcanism is possible only on Earth",
+        "Only planets with oceans can have volcanoes",
+        "Volcanism occurs only at Earth's plate boundaries",
+        "A volcanic landform proves the body has active plate tectonics like Earth"
+      ],
+      "answer": 0,
+      "why": "Volcanic activity is found beyond Earth, including on the Moon and on other planets and planetary moons.",
+      "source": "ERTH 209 Chapter 5 lecture, slide 71"
+    }
+  ]
+}
