@@ -1510,6 +1510,32 @@
     "slide": "textbook p.143 / Figure 5.7 (top)",
     "alt": "The electromagnetic spectrum from gamma rays on the left to radio waves on the right, with scales for wavelength, frequency and energy."
    }
+  },
+  {
+    "id": "li-33",
+    "q": "A star's distance from an observer triples while its luminosity stays constant. How does its apparent brightness change?",
+    "options": [
+     "It becomes one-third as bright.",
+     "It becomes one-sixth as bright.",
+     "It becomes one-ninth as bright.",
+     "It becomes three times as bright.",
+     "It stays the same."
+    ],
+    "answer": 2,
+    "why": "Apparent brightness follows the inverse-square law: brightness is proportional to 1/d². Tripling the distance divides the brightness by 3² = 9."
+  },
+  {
+    "id": "li-34",
+    "q": "A photon wavelength changes from 800 nm to 400 nm. What happens to its frequency and energy?",
+    "options": [
+     "Both are cut in half.",
+     "Frequency doubles and energy doubles.",
+     "Frequency doubles and energy is cut in half.",
+     "Frequency is cut in half and energy doubles.",
+     "Neither changes because the speed of light is constant."
+    ],
+    "answer": 1,
+    "why": "Since c = λf, halving wavelength doubles frequency. Photon energy is E = hf, so doubling frequency also doubles the energy."
   }
  ],
  "games": [

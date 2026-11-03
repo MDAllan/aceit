@@ -18,6 +18,8 @@ import { TERMS_VERSION, PRIVACY_VERSION, TERMS, PRIVACY, renderLegal } from "./l
 import { onGameEnd } from "./games.js";
 import { loadBadgeConfig, evaluateBadges, badgesSection, celebrate } from "./badges.js";
 import { inlineCourseFigures, needsPublishedFigures, stripSvgFigures } from "./lecture-source.js";
+import { prepareOptions } from "./quiz-options.js";
+import { balancedQuestionSample } from "./practice-questions.js";
 
 // This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
 if (window.top !== window.self) { document.documentElement.style.display = "none"; try { window.top.location.href = window.self.location.href; } catch {} }
@@ -538,7 +540,31 @@ function viewSubject(v, id) {
   if (!ls.length) return v.append(h(".card", h("h2", "Coming soon"), h("p", "Lectures for this class are being added.")));
   v.append(h(".swipe", h("button.chip", { onclick: () => (location.hash = "#/glossary") }, "Glossary"), h("button.chip", { onclick: () => (location.hash = "#/search") }, ic("zoom", 14), "Search this class")));
   v.append(announcementsCard(sj.id));
-  const ex = EXAMS[sj.id];
+  const biolNotePractice = sj.id === "biol305";
+  const ex = biolNotePractice
+    ? { intro: "Cumulative and topic-focused practice drawn from BIOL 305 quizzes, with explanations for every answer.", tests: [
+      {
+        id: "biol305-notes",
+        title: "Cumulative Midterm Practice",
+        blurb: "24 questions: three from each BIOL 305 lecture.",
+        questions: [],
+      },
+      {
+        id: "quiz-3",
+        title: "Quiz 3: The Gastrointestinal System",
+        blurb: "Six questions covering digestion, the microbiome, and gut development.",
+        questionIds: ["gi-31", "gi-32", "gi-33", "gi-34", "gi-35", "gi-36"],
+        questions: [],
+      },
+      {
+        id: "quiz-4",
+        title: "Quiz 4: Respiratory and Cardiovascular Systems",
+        blurb: "Six questions covering respiration, blood compatibility, circulation, and vessel development.",
+        questionIds: ["rs-31", "rs-32", "rs-33", "cs-31", "cs-32", "cs-33"],
+        questions: [],
+      },
+    ] }
+    : EXAMS[sj.id];
   const cfg = S.settings[sj.id], days = cfg?.exam_date ? Math.ceil((new Date(cfg.exam_date + "T00:00:00") - new Date().setHours(0, 0, 0, 0)) / 864e5) : null;
   if (days !== null && days >= 0) {
     const weakest = ls.map((l) => ({ l, m: S.mastery(l) })).sort((a, b) => a.m - b.m).slice(0, 3);
@@ -558,12 +584,52 @@ function viewSubject(v, id) {
       ring(s.pct, l.color));
   })));
   if (ex) {
-    const run = (t, shuf) => { v.replaceChildren(); const list = shuf ? shuffle(t.questions.slice()) : t.questions.slice(); runQuiz(v, list, t.title, sj.color, () => { v.replaceChildren(); viewSubject(v, id); }); };
+    const run = async (t, shuf, button, resume = false) => {
+      button.disabled = true;
+      let questions = t.questions.slice();
+      const runKey = `exam:${sj.id}:${t.id}`;
+      if (biolNotePractice || t.questionIds) {
+        try {
+          await Promise.all(ls.map(loadFull));
+          const courseQuestions = ls.flatMap((l) => (l.quiz || []).map((q) => ({ ...q, lec: l.id })));
+          if (t.questionIds) {
+            const byId = new Map(courseQuestions.map((q) => [q.id, q]));
+            questions = t.questionIds.map((id) => byId.get(id));
+            if (questions.some((q) => !q)) throw new Error(`The question pool is missing an item from ${t.title}.`);
+          } else {
+            if (courseQuestions.length < 24) throw new Error("The BIOL 305 question pool has fewer than 24 questions.");
+            questions = balancedQuestionSample(courseQuestions, 24, shuffle, (q) => q.options.some((option) => /\b(?:both\s+)?[A-E](?:\s*(?:and|or|&|,)\s*[A-E])+\b/i.test(option)));
+          }
+        } catch (error) {
+          console.error(error);
+          button.disabled = false;
+          toast("Couldn't load the practice questions. Try again when you're online.");
+          return;
+        }
+      }
+      const options = { biol305: sj.id === "biol305", exam: true, courseId: sj.id, runKey };
+      const back = () => { v.replaceChildren(); viewSubject(v, id); };
+      if (resume) {
+        if (!resumeQuizRun(v, runKey, questions, back, options)) button.disabled = false;
+      } else {
+        v.replaceChildren();
+        runQuiz(v, shuf ? shuffle(questions) : questions, t.title, sj.color, back, options);
+      }
+    };
     v.append(h("h2", { style: "margin-top:22px" }, "Practice exams"), h("p", { style: "color:var(--mute);margin:0 0 8px" }, ex.intro || "Real exam-style questions. Take them in order like a test, or shuffled."),
-      h(".grid", ex.tests.map((t, i) => h(".card", { style: `animation:rise .4s var(--ease) ${i * 50}ms backwards` },
-        h(".row", { style: "flex-wrap:nowrap;margin-bottom:6px" }, h(".symtile", { style: `width:44px;height:44px;--tc:${sj.color}` }, "\u{1F4DD}"), h("div", h("b", t.title), h(".src", { style: "margin:0" }, `${t.questions.length} questions`))),
-        t.blurb ? h("p", { style: "margin:4px 0 10px;color:var(--mute);font-size:.9rem" }, t.blurb) : "",
-        h(".row", h("button.btn.sm", { style: `--c:${sj.color}`, onclick: () => run(t, false) }, "Start in order"), h("button.btn.alt.sm", { onclick: () => run(t, true) }, "Shuffled"))))));
+      h(".grid", ex.tests.map((t, i) => {
+        const runKey = `exam:${sj.id}:${t.id}`, activeRun = S.quizRun(runKey);
+        const questionCount = t.questionIds?.length || (biolNotePractice ? 24 : t.questions.length);
+        return h(".card", { style: `animation:rise .4s var(--ease) ${i * 50}ms backwards` },
+          h(".row", { style: "flex-wrap:nowrap;margin-bottom:6px" }, h(".symtile", { style: `width:44px;height:44px;--tc:${sj.color}` }, "\u{1F4DD}"), h("div", h("b", t.title), h(".src", { style: "margin:0" }, `${questionCount} questions`))),
+          t.blurb ? h("p", { style: "margin:4px 0 10px;color:var(--mute);font-size:.9rem" }, t.blurb) : "",
+          h(".row",
+            activeRun && !activeRun.completed
+              ? h("button.btn.sm", { style: `--c:${sj.color}`, onclick: (event) => run(t, false, event.currentTarget, true) }, "Continue")
+              : "",
+            h("button.btn.sm", { style: `--c:${sj.color}`, onclick: (event) => run(t, false, event.currentTarget) }, "Start in order"),
+            h("button.btn.alt.sm", { onclick: (event) => run(t, true, event.currentTarget) }, "Shuffled")));
+      })));
   }
 }
 
@@ -684,7 +750,7 @@ function notes(b, l) {
       ),
       h(".row", { style: "justify-content:space-between;margin-top:12px" },
         h("button.btn.alt", { disabled: i === 0, onclick: () => go(i - 1) }, ic("left", 18), "Back"),
-        i === pages.length - 1 && l.quiz?.length >= 5 ? h("button.btn.alt", { onclick: () => { const qs = shuffle(l.quiz.slice()).slice(0, 5); runQuiz(b, qs, "Quick check", l.color, () => { b.replaceChildren(); notes(b, l); }); } }, "\u26A1 Quick check") : "",
+        i === pages.length - 1 && l.quiz?.length >= 5 ? h("button.btn.alt", { onclick: () => { const qs = shuffle(l.quiz.slice()).slice(0, 5); runQuiz(b, qs, "Quick check", l.color, () => { b.replaceChildren(); notes(b, l); }, { biol305: l.subject === "biol305" }); } }, "\u26A1 Quick check") : "",
         i === pages.length - 1 ? h("button.btn.ok", { onclick: () => { S.markRead(l.id, pages[i].id); location.hash = `#/l/${l.id}/cards`; } }, "Practice cards", ic("right", 18)) : h("button.btn", { onclick: () => go(i + 1) }, "Next", ic("right", 18))),
     );
   };
@@ -751,47 +817,121 @@ function quizMenu(b, l) {
   const qs = l.quiz;
   if (!qs?.length) return b.append(h(".card", "No questions yet."));
   const pr = S.progress().quiz, wrong = qs.filter((q) => pr[q.id]?.last === false).sort((x, y) => (pr[y.id]?.conf === "sure") - (pr[x.id]?.conf === "sure"));
+  const runKey = `quiz:${l.id}`, activeRun = S.quizRun(runKey);
   const back = () => { b.replaceChildren(); quizMenu(b, l); };
   b.append(h(".card", h("h2", "Quiz: " + l.title), h("p", `${qs.length} questions in exam style. You get instant feedback and an explanation for every answer.`),
     h(".row",
-      h("button.btn", { onclick: () => runQuiz(b, shuffle(qs.slice()), l.title, l.color, back) }, "Start quiz"),
-      h("button.btn.alt", { disabled: !wrong.length, onclick: () => runQuiz(b, wrong.slice(), "Review mistakes", l.color, back) }, `Review mistakes (${wrong.length})`))));
+      activeRun && !activeRun.completed
+        ? h("button.btn", { onclick: () => resumeQuizRun(b, runKey, qs, back, { biol305: l.subject === "biol305", courseId: l.subject }) }, "Continue")
+        : "",
+      h("button.btn", { onclick: () => runQuiz(b, shuffle(qs.slice()), l.title, l.color, back, { biol305: l.subject === "biol305", courseId: l.subject, runKey }) }, activeRun && !activeRun.completed ? "Start new quiz" : "Start quiz"),
+      h("button.btn.alt", { disabled: !wrong.length, onclick: () => runQuiz(b, wrong.slice(), "Review mistakes", l.color, back, { biol305: l.subject === "biol305", courseId: l.subject, runKey: `review:${l.id}` }) }, `Review mistakes (${wrong.length})`))));
+}
+function resumeQuizRun(b, runKey, availableQuestions, back, options = {}) {
+  const saved = S.quizRun(runKey);
+  if (!saved || saved.completed) return false;
+  const byId = new Map(availableQuestions.map((q) => [q.id, q]));
+  const questions = (saved.questionIds || []).map((id) => byId.get(id));
+  if (!questions.length || questions.some((q) => !q)) {
+    toast("Some saved questions are no longer available. Start a new quiz to continue.");
+    return false;
+  }
+  for (const q of questions) {
+    const answer = saved.answers?.[q.id];
+    if (answer !== undefined && (!Number.isInteger(answer) || answer < 0 || answer >= q.options.length)) {
+      toast("A saved answer could not be restored. Start a new quiz to continue.");
+      return false;
+    }
+  }
+  runQuiz(b, questions, saved.title, saved.color || options.color || "var(--brand)", back, {
+    ...options,
+    exam: !!saved.exam,
+    courseId: saved.courseId || options.courseId,
+    runKey,
+    resume: true,
+  });
+  return true;
 }
 export function runQuiz(b, list, title, color, back, examOpts = {}) {
-  let i = 0, score = 0, combo = 0, reported = false; const miss = [];
+  const runKey = examOpts.runKey;
+  const saved = examOpts.resume && runKey ? S.quizRun(runKey) : null;
+  const answers = { ...(saved?.answers || {}) };
+  let i = saved ? Math.min(saved.index || 0, list.length) : 0;
+  let score = list.filter((q) => answers[q.id] === q.answer).length, combo = 0, reported = false;
+  const saveRun = (completed = false) => {
+    if (!runKey) return;
+    S.saveQuizRun(runKey, {
+      title,
+      color,
+      courseId: examOpts.courseId,
+      exam: !!examOpts.exam,
+      questionIds: list.map((q) => q.id),
+      answers,
+      index: i,
+      completed,
+    });
+  };
+  if (!saved) saveRun();
   const draw = () => {
     b.replaceChildren();
     if (i >= list.length) {
       const pct = score / list.length;
-      if (!reported) { // once per run: best score, and a practice test finished before an exam counts as exam preparation
+      if (!reported) {
         reported = true; S.quizResult(score, list.length, examOpts.exam ? { title, courseId: examOpts.courseId } : null);
         const cfg = examOpts.exam && examOpts.courseId ? S.settings[examOpts.courseId] : null;
         if (cfg?.exam_date && S.localDay() <= cfg.exam_date && S.mark("examDays", examOpts.courseId + ":" + S.localDay())) S.bump("examPrepped");
       }
+      saveRun(true);
       if (pct >= 0.8) confetti(pct === 1 ? 140 : 80);
       b.append(h(".card.pop", { style: "text-align:center;--c:" + color }, h("h2", "" + title + " complete"), h(".score", `${score}/${list.length}`),
         h("p", pct === 1 ? "\u{1F3C6} Perfect score!" : pct >= 0.7 ? "\u{1F4AA} Strong work." : "\u{1F331} Good start. Review the mistakes and try again."),
-        miss.length ? h("div", { style: "text-align:left" }, h("h3", "Missed"), miss.map((q) => h(".fb", md(q.q.split("\n")[0]), h(".src", "Answer: " + clean(q.options[q.answer]))))) : "",
+        h("div", { style: "margin-top:16px;text-align:left" }, h("h3", "Your answers and explanations"),
+          list.map((q, index) => {
+            const selected = answers[q.id], correct = selected === q.answer;
+            return h(".fb", h("b", `Question ${index + 1} · ${correct ? "Correct" : "Review"}`),
+              h(".q", md(q.q)),
+              h(".src", h("b", "Your answer: "), selected === undefined ? "Not answered" : q.options[selected]),
+              h(".src", h("b", "Correct answer: "), q.options[q.answer]),
+              h(".src", h("b", "Why: "), md(q.why || "No explanation is available for this question.")));
+          })),
         h("button.btn", { style: "margin-top:12px", onclick: back }, "Done")));
       return;
     }
-    const q = list[i]; let picked = null;
+    const q = list[i], presented = prepareOptions(q);
+    const savedAnswer = answers[q.id], alreadyAnswered = savedAnswer !== undefined;
+    let picked = alreadyAnswered ? presented.options.findIndex((option) => option.index === savedAnswer) : null;
     const fb = h("div", { "aria-live": "polite" });
-    const opts = q.options.map((o, k) => {
-      const bt = h("button.opt", h("b", "abcde"[k]), h("span", md(o)));
+    const showFeedback = (ok, pickedIndex) => {
+      fb.append(confRow(q.id));
+      presented.options.forEach((option, j) => {
+        if (option.index === q.answer) opts[j].classList.add("ok");
+        else if (j === pickedIndex) opts[j].classList.add("no");
+      });
+      fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "),
+        combo >= 3 && !alreadyAnswered ? h("span.combo", `\u{1F525} ${combo} in a row! `) : "",
+        md(q.why || "No explanation is available for this question."),
+        S.canSeeRefs() && q.source ? h(".src.admin", "Source: " + q.source) : "",
+        h("button.btn", { style: "margin-top:10px", onclick: () => { i++; saveRun(i >= list.length); draw(); } },
+          i + 1 === list.length ? "See score" : "Next", ic("right", 18))));
+    };
+    const opts = presented.options.map((option, k) => {
+      const label = examOpts.biol305 ? `${"abcdefghijklmnopqrstuvwxyz"[k]})` : "abcdefghijklmnopqrstuvwxyz"[k];
+      const letter = h(examOpts.biol305 ? "b.lower" : "b", examOpts.biol305 ? { style: "text-transform:none" } : {}, label);
+      const bt = h("button.opt", letter, h("span", md(option.text)));
       bt.onclick = () => {
         if (picked !== null) return; picked = k;
-        const ok = k === q.answer; if (ok) { score++; combo++; floatXP(combo >= 3 ? `+4 XP \u{1F525}x${combo}` : "+4 XP"); } else { miss.push(q); combo = 0; }
+        const ok = option.index === q.answer;
+        answers[q.id] = option.index;
+        if (ok) { score++; combo++; floatXP(combo >= 3 ? `+4 XP \u{1F525}x${combo}` : "+4 XP"); } else combo = 0;
         S.recordAnswer(q.id, ok);
-        fb.append(confRow(q.id));
-        opts.forEach((x, j) => { if (j === q.answer) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
-        fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), combo >= 3 ? h("span.combo", `\u{1F525} ${combo} in a row! `) : "", md(q.why), S.canSeeRefs() && q.source ? h(".src.admin", "Source: " + q.source) : ""),
-          h("button.btn", { style: "margin-top:10px", onclick: () => { i++; draw(); } }, i + 1 === list.length ? "See score" : "Next", ic("right", 18)));
+        saveRun();
+        showFeedback(ok, k);
       };
       return bt;
     });
+    if (alreadyAnswered) showFeedback(savedAnswer === q.answer, picked);
     b.append(h(".src", `${title} · Question ${i + 1} of ${list.length}`), h(".bar", { style: `--c:${color}` }, h("i", { style: `width:${(i / list.length) * 100}%` })),
-      h(".card", { style: "margin-top:10px" }, q.custom ? h(".src", { style: "margin:0 0 6px" }, "From your instructor" + (q.draft ? " (draft)" : "")) : "", q.img ? h(".qimg", { role: "button", tabindex: 0, "aria-label": "Enlarge picture", onclick: () => lightbox(q.img) }, pic({ ...q.img, alt: q.img.alt || "Figure for the question" }, { loading: "lazy" })) : "", h(".q", md(q.q)), opts, fb));
+      h(".card", { style: "margin-top:10px" }, q.custom ? h(".src", { style: "margin:0 0 6px" }, "From your instructor" + (q.draft ? " (draft)" : "")) : "", examOpts.biol305 ? h(".src", { style: "margin:0 0 6px" }, "Select the single best response for each of the following questions:") : "", q.img ? h(".qimg", { role: "button", tabindex: 0, "aria-label": "Enlarge picture", onclick: () => lightbox(q.img) }, pic({ ...q.img, alt: q.img.alt || "Figure for the question" }, { loading: "lazy" })) : "", h(".q", md(q.q)), opts, fb));
   };
   draw();
 }
@@ -817,12 +957,32 @@ function viewPractice(v) {
   const draw = () => {
     const LS = pool_(), all = LS.flatMap((l) => (l.quiz || []).map((q) => ({ ...q, lec: l.id })));
     v.replaceChildren(h(".hero", h(".ctag", h("i"), cls.name), h("h1", "Practice exam"), h("p", "Mixed questions, shuffled like the real thing. Pick lectures or take them all.")));
+    const activeRuns = Object.entries(S.progress().quizRuns || {})
+      .filter(([key, run]) => run.courseId === cls.id && !run.completed && /^(practice|exam):/.test(key))
+      .sort((a, b) => Date.parse(b[1].updatedAt || "") - Date.parse(a[1].updatedAt || ""));
+    if (activeRuns.length) {
+      v.append(h(".card", h("h2", "Continue where you left off"),
+        activeRuns.map(([runKey, run]) => h(".row", { style: "justify-content:space-between;margin-top:8px" },
+          h("span", run.title), h("button.btn.sm", { onclick: () => resumeQuizRun(v, runKey, all, draw, { biol305: cls.id === "biol305", courseId: cls.id }) }, "Continue")))));
+    }
     const pool = sel ? all.filter((q) => sel.has(q.lec)) : all;
     v.append(h(".swipe", { role: "group", "aria-label": "Lectures" }, h("button.chip" + (!sel ? ".on" : ""), { onclick: () => { sel = null; draw(); } }, "All lectures"),
       ...LS.map((l) => h("button.chip" + (sel?.has(l.id) ? ".on" : ""), { onclick: () => { sel = sel || new Set(); sel.has(l.id) ? sel.delete(l.id) : sel.add(l.id); if (!sel.size) sel = null; draw(); } }, [ic(symOf(l), 15), l.title]))),
       h(".card", h("p", `${pool.length} questions available.`),
-        h(".row", [10, 20, 40, pool.length].filter((n, k, a) => n <= pool.length && a.indexOf(n) === k).map((n) =>
-          h("button.btn", { style: "--c:var(--blue)", onclick: () => { v.replaceChildren(); runQuiz(v, shuffle(pool.slice()).slice(0, n), "Practice exam", "var(--brand)", draw, { exam: true, courseId: cls.id }); } }, n === pool.length ? `All ${n}` : `${n} questions`)))));
+        h(".row", [10, 20, 40, pool.length].filter((n, k, a) => n <= pool.length && a.indexOf(n) === k).flatMap((n) => {
+          const scope = sel ? [...sel].sort().join(",") : "all";
+          const runKey = `practice:${cls.id}:${scope}:${n}`, saved = S.quizRun(runKey);
+          return [
+            saved && !saved.completed
+              ? h("button.btn", { style: "--c:var(--blue)", onclick: () => resumeQuizRun(v, runKey, all, draw, { exam: true, courseId: cls.id, biol305: cls.id === "biol305" }) }, "Continue")
+              : "",
+            h("button.btn.alt", { onclick: () => {
+              const questions = balancedQuestionSample(pool, n, shuffle);
+              v.replaceChildren();
+              runQuiz(v, questions, `${cls.name} practice · ${n} questions`, "var(--brand)", draw, { exam: true, courseId: cls.id, biol305: cls.id === "biol305", runKey });
+            } }, saved && !saved.completed ? `Start new (${n})` : n === pool.length ? `All ${n}` : `${n} questions`),
+          ];
+        }))));
     requestAnimationFrame(() => v.querySelector(".swipe .on")?.scrollIntoView({ inline: "center", block: "nearest" }));
   };
   draw();

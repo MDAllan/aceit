@@ -1582,6 +1582,32 @@
    "answer": 4,
    "why": "I and II are true. III is false: the Moon turns once for each orbit, so it does rotate, and that is why we always see nearly the same face.",
    "source": "Cosmic Perspective 4.5 (The Moon's Synchronous Rotation, p. 130); Orbits and Tides deck slide 6"
+  },
+  {
+   "id": "gr-50",
+   "q": "A satellite moves from a circular orbit of radius r to a circular orbit of radius 4r around the same planet. What happens to the planet's gravitational force on it and its orbital speed?",
+   "options": [
+    "Force becomes 1/4 as large; speed becomes 1/4 as large.",
+    "Force becomes 1/16 as large; speed becomes 1/2 as large.",
+    "Force becomes 1/16 as large; speed stays the same.",
+    "Force becomes 4 times as large; speed becomes 2 times as large.",
+    "Force and speed both stay the same."
+   ],
+   "answer": 1,
+   "why": "Gravity follows an inverse-square relation, so quadrupling orbital radius makes the force 1/16 as large. For a circular orbit, v = √(GM/r), so the speed is halved."
+  },
+  {
+   "id": "gr-51",
+   "q": "A planet orbits the same star in a nearly circular orbit at 4 AU instead of 1 AU. By Kepler's third law, approximately how does its orbital period change?",
+   "options": [
+    "It doubles, from 1 to 2 years.",
+    "It quadruples, from 1 to 4 years.",
+    "It increases eightfold, from 1 to 8 years.",
+    "It increases sixteenfold, from 1 to 16 years.",
+    "It stays at 1 year because the star is unchanged."
+   ],
+   "answer": 2,
+   "why": "For planets orbiting the same star, P² = a³ when P is in years and a is in AU. At 4 AU, P = √(4³) = √64 = 8 years."
   }
  ],
  "games": [

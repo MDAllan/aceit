@@ -1914,6 +1914,90 @@
    "answer": 1,
    "why": "Add the four types: 8 + 4 + 8 + 12 = 32 adult teeth.",
    "source": "Slide 9 (tooth counts from the figure; the total is a sum)"
+  },
+  {
+   "id": "gi-31",
+   "q": "Which type of gut motility mainly mixes chyme within the small intestine?",
+   "options": [
+    "Swallowing",
+    "Segmentation",
+    "Peristalsis",
+    "Both segmentation and peristalsis",
+    "All of the above",
+    "None of the above"
+   ],
+   "answer": 1,
+   "why": "Segmentation contracts short sections of the small intestine to mix chyme with digestive juices. Peristalsis mainly propels contents forward, and swallowing moves food into the esophagus."
+  },
+  {
+   "id": "gi-32",
+   "q": "Which statement about the human stomach is true?",
+   "options": [
+    "Parietal cells secrete intrinsic factor into the stomach lumen.",
+    "Chief cells secrete pepsin into the stomach lumen.",
+    "Sodium bicarbonate makes the stomach highly alkaline for protein digestion.",
+    "Both A and B",
+    "All of the above",
+    "None of the above"
+   ],
+   "answer": 0,
+   "why": "Parietal cells secrete intrinsic factor. Chief cells release pepsinogen, which stomach acid activates into pepsin; the stomach remains acidic rather than highly alkaline."
+  },
+  {
+   "id": "gi-33",
+   "q": "Which digestive component is not secreted by the pancreas?",
+   "options": [
+    "Trypsin",
+    "Sodium bicarbonate",
+    "Lipase",
+    "Bile",
+    "All of the above",
+    "None of the above"
+   ],
+   "answer": 3,
+   "why": "The pancreas supplies bicarbonate and digestive enzymes, including lipase and trypsinogen (the inactive precursor of trypsin). Bile is made by the liver and stored in the gallbladder."
+  },
+  {
+   "id": "gi-34",
+   "q": "What type of digestion is carried out by chymotrypsin?",
+   "options": [
+    "Mechanical digestion",
+    "Primary digestion",
+    "Chemical digestion",
+    "Passive digestion",
+    "All of the above",
+    "None of the above"
+   ],
+   "answer": 2,
+   "why": "Chymotrypsin is a protease: it chemically hydrolyzes peptide bonds in proteins into smaller peptides."
+  },
+  {
+   "id": "gi-35",
+   "q": "Which statement about the human gut microbiome is false?",
+   "options": [
+    "Gut microbes can synthesize vitamins such as vitamin K, B12, and biotin.",
+    "The gut microbiome is identical in every person and does not change over a lifetime.",
+    "The gut microbiome includes bacteria, archaea, fungi, and viruses.",
+    "The gut microbiome helps defend the body against microbial pathogens.",
+    "All of the above",
+    "None of the above"
+   ],
+   "answer": 1,
+   "why": "Microbiome composition varies among people and changes over time with factors such as diet, age, health, and medication. Gut microbes can also make some vitamins and help resist pathogens."
+  },
+  {
+   "id": "gi-36",
+   "q": "Which mesoderm derivatives induce the developing endoderm to form the liver and pancreas, respectively?",
+   "options": [
+    "Neural crest and cardiogenic mesoderm",
+    "Notochord and paraxial mesoderm",
+    "Cardiogenic mesoderm and intermediate mesoderm",
+    "Paraxial mesoderm and notochord",
+    "Splanchnic mesoderm and neural crest",
+    "None of the above"
+   ],
+   "answer": 5,
+   "why": "The liver is induced by signals from nearby cardiogenic mesoderm, while notochord-derived signals help specify the pancreas. None of the listed pairs gives that combination."
   }
  ],
  "games": [
@@ -2216,6 +2300,28 @@
     }
    ],
    "why": "Gastrin goes with the stretched stomach and gastric juice, secretin goes with acidic chyme and the pancreas, and CCK goes with fat and protein and is the one that also makes the gallbladder release bile."
+  },
+  {
+   "title": "Secreted by the pancreas or elsewhere?",
+   "prompt": "Sort each digestive secretion by its source.",
+   "buckets": [
+    "Pancreatic secretion",
+    "Secreted elsewhere"
+   ],
+   "items": [
+    { "text": "Pancreatic amylase", "b": 0 },
+    { "text": "Trypsin", "b": 0 },
+    { "text": "Chymotrypsin", "b": 0 },
+    { "text": "Carboxypeptidase", "b": 0 },
+    { "text": "Lipase", "b": 0 },
+    { "text": "Pancreatic nucleases", "b": 0 },
+    { "text": "Salivary amylase", "b": 1 },
+    { "text": "Pepsinogen", "b": 1 },
+    { "text": "Maltase", "b": 1 },
+    { "text": "Hydrochloric acid", "b": 1 },
+    { "text": "Bile", "b": 1 }
+   ],
+   "why": "The pancreas supplies amylase, protein-digesting enzymes, lipase, and nucleases. Salivary amylase comes from salivary glands, pepsinogen and hydrochloric acid from the stomach, maltase from the intestine, and bile from the liver."
   }
  ]
 }

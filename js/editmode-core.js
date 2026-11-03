@@ -5,7 +5,7 @@ import { checkTerm, inGlossary, termOf } from "./glossaryrules.js";
 
 /* ---------- limits (the longest existing course text is well inside every one of them) ---------- */
 export const LIMITS = {
-  question: [3, 700], option: 300, optionsMin: 2, optionsMax: 5, why: 1500,
+  question: [3, 700], option: 300, optionsMin: 2, optionsMax: 6, why: 1500,
   front: 300, back: 1200, short: 160,
   bullet: 1500, title: 200, intro: 1500, box: 2000, alt: 400, topic: 64,
   body: 2000000, // bytes, the same limit as the database (admin_save_lecture)

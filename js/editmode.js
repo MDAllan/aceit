@@ -24,7 +24,7 @@ export const rerender = async () => { const y = window.scrollY; await host.route
 
 /* ---------- small building blocks ---------- */
 const nid = (() => { let n = 0; return (p = "ed") => `${p}-${++n}`; })();
-const LETTERS = "ABCDE";
+const LETTERS = "ABCDEF";
 const iconBtn = (label, icon, disabled, onclick) => h("button.ed-iconbtn", { type: "button", "aria-label": label, title: label, disabled, onclick }, ic(icon, 18));
 const textBtn = (label, icon, onclick, cls = "") => h("button.btn.alt.ed-btn" + cls, { type: "button", onclick }, icon ? ic(icon, 16) : "", label);
 const renderText = (v, placeholder) => (String(v ?? "").trim() ? md(String(v)) : h("span.ed-empty", placeholder || "Tap to add text"));
@@ -389,7 +389,7 @@ export function questionEditor(l, q, o = {}) {
   const ctl = pictureControl(l, q?.img, { removable: true, label: "Picture (optional)" });
   const err = h("p.ed-msg", { role: "alert" }), save = h("button.btn.ed-btn", { type: "button" }, ic("check", 16), isNew ? "Add question" : "Save question");
   const m = openSheet(isNew ? "Add a question" : "Edit question", fq.node,
-    h(".ed-field", h("label", { id: gid }, "Answer options"), h("p.ed-hint", "Choose the correct answer with the round button. Use 2 to 5 options."), group, gerr, addOpt),
+    h(".ed-field", h("label", { id: gid }, "Answer options"), h("p.ed-hint", "Choose the correct answer with the round button. Use 2 to 6 options."), group, gerr, addOpt),
     fw.node, ft.node, ctl.node, err, actions(textBtn("Cancel", "", () => m.close()), save), sheetOpts({ onClose: ctl.dispose }));
   save.onclick = () => busy(save, async () => {
     err.textContent = "";

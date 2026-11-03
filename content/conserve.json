@@ -1665,6 +1665,32 @@
    "answer": 0,
    "why": "m = E / c² = 4.5 × 10¹⁶ / (9 × 10¹⁶) = 0.5 kg. Using c instead of c² gives 1.5 × 10⁸ kg, and a 1 kg rock would give 9 × 10¹⁶ J, twice as much.",
    "source": "Energy deck slide 7; Cosmic Perspective Mathematical Insight 4.2"
+  },
+  {
+   "id": "cv-30",
+   "q": "A 2 kg cart moving at 6 m/s collides with a stationary 4 kg cart, and they lock together. If external forces are negligible, what is their shared speed just after impact?",
+   "options": [
+    "1 m/s",
+    "2 m/s",
+    "3 m/s",
+    "6 m/s",
+    "12 m/s"
+   ],
+   "answer": 1,
+   "why": "Conserve momentum: the initial momentum is (2 kg)(6 m/s) + (4 kg)(0) = 12 kg·m/s. The joined mass is 6 kg, so its speed is 12/6 = 2 m/s. Kinetic energy is not conserved in a sticking collision."
+  },
+  {
+   "id": "cv-31",
+   "q": "A 2 kg object starts from rest and falls 5 m. Ignoring air resistance, what speed does it reach just before impact? Use g = 9.8 m/s².",
+   "options": [
+    "4.9 m/s",
+    "7.0 m/s",
+    "9.9 m/s",
+    "14 m/s",
+    "49 m/s"
+   ],
+   "answer": 2,
+   "why": "Gravitational potential energy becomes kinetic energy: mgh = ½mv². Mass cancels, giving v = √(2gh) = √(2 × 9.8 × 5) ≈ 9.9 m/s."
   }
  ],
  "games": [

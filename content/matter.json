@@ -1507,7 +1507,7 @@
    }
   },
   {
-   "id": "ma-28",
+   "id": "ma-44",
    "q": "Star A looks orange-red and star B looks yellow-white. Which statement is true?",
    "options": [
     "Star A is hotter, since its light peaks at a longer wavelength.",
@@ -1685,6 +1685,32 @@
     "src": "img/matter/star_rotation_a.webp",
     "alt": "Two spinning stars, A slowly and B faster, with blueshifted light from the approaching side and redshifted light from the receding side."
    }
+  },
+  {
+    "id": "ma-28",
+    "q": "A hydrogen line with a rest wavelength of 656.3 nm is observed at 657.6 nm. Using v/c ≈ Δλ/λ and c = 300,000 km/s, what is the best estimate of the star's motion?",
+    "options": [
+     "About 600 km/s toward us",
+     "About 600 km/s away from us",
+     "About 1,300 km/s toward us",
+     "About 1,300 km/s away from us",
+     "It has no motion along our line of sight."
+    ],
+    "answer": 1,
+    "why": "The fractional shift is (657.6 − 656.3)/656.3 ≈ 0.00198. Multiplying by 300,000 km/s gives about 594 km/s. The longer observed wavelength is a redshift, indicating recession."
+  },
+  {
+    "id": "ma-45",
+    "q": "Two stars have blackbody peak wavelengths of 400 nm and 800 nm. According to Wien's law, how do their surface temperatures compare?",
+    "options": [
+     "The 400 nm star is about twice as hot.",
+     "The 400 nm star is about half as hot.",
+     "They have the same temperature because both emit visible light.",
+     "The 800 nm star is about twice as hot.",
+     "The 400 nm star is four times as hot."
+    ],
+    "answer": 0,
+    "why": "Wien's law says peak wavelength is inversely proportional to temperature. Halving the peak wavelength from 800 to 400 nm means the 400 nm star's surface temperature is about twice as high."
   }
  ],
  "games": [

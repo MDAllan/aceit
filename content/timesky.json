@@ -1944,6 +1944,19 @@
    "answer": 3,
    "why": "At 9:00 p.m. the Sun crossed the meridian 9 hours ago, so its hour angle is 9 h. On March 21 the Sun sits at the March equinox point, which therefore also has hour angle 9 h. So local sidereal time = 9:00.",
    "source": "Textbook Mathematical Insight S1.2, Example 1"
+  },
+  {
+   "id": "ts-40",
+   "q": "A star crosses the meridian at 9:00 p.m. tonight. About what time will it cross the meridian six nights from now?",
+   "options": [
+    "8:36 p.m.",
+    "9:00 p.m.",
+    "9:24 p.m.",
+    "10:00 p.m.",
+    "3:00 a.m."
+   ],
+   "answer": 0,
+   "why": "A star crosses about 4 minutes earlier on each successive night because a sidereal day is about 4 minutes shorter than a solar day. Six nights × 4 minutes is 24 minutes, so the crossing will be near 8:36 p.m."
   }
  ],
  "games": [

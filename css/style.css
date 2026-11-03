@@ -140,6 +140,7 @@ th{background:var(--soft)}
 .opt{display:flex;gap:10px;width:100%;text-align:left;border:1px solid var(--line);border-left:4px solid var(--line);background:var(--card);color:var(--ink);border-radius:var(--r-s);padding:10px 12px;margin:8px 0;min-height:50px;align-items:center;box-shadow:var(--shadow-s);transition:transform .12s var(--ease)}
 .opt:active{transform:translateY(2px)}
 .opt b{flex:none;width:26px;height:26px;border-radius:6px;background:var(--soft);display:grid;place-items:center;font-size:.8rem;text-transform:uppercase}
+.opt b.lower{text-transform:none}
 .opt.ok{border-color:var(--ok);border-left-color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,var(--card));animation:pop .4s}
 .opt.no{border-color:var(--bad);border-left-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--card));animation:shake .35s}
 .fb{margin-top:10px;border-radius:var(--r);padding:12px;background:var(--soft);border:1px solid var(--line);animation:rise .3s}

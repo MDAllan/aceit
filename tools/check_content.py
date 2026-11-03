@@ -69,7 +69,7 @@ for sj in subjects:
         if len(set(qids)) != len(qids): bad(w, "duplicate quiz ids")
         for q in d["quiz"]:
             n = len(q["options"])
-            if n not in (4, 5) or not (0 <= q["answer"] < n): bad(w, f"quiz {q['id']} has a bad answer index")
+            if n not in (4, 5, 6) or not (0 <= q["answer"] < n): bad(w, f"quiz {q['id']} has a bad answer index")
             if len(set(q["options"])) != n: bad(w, f"quiz {q['id']} has duplicate options")
             leak(f"{w}/{q['id']} q", q["q"]); leak(f"{w}/{q['id']} why", q["why"])
             for o in q["options"]: leak(f"{w}/{q['id']} option", o)

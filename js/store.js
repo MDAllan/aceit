@@ -31,7 +31,7 @@ let timer = null;
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || blank(); } catch { return blank(); }
 }
-function blank() { return { cards: {}, quiz: {}, read: {}, games: {}, days: {}, prefs: {}, sr: {}, objectives: {}, stats: {} }; }
+function blank() { return { cards: {}, quiz: {}, quizRuns: {}, read: {}, games: {}, days: {}, prefs: {}, sr: {}, objectives: {}, stats: {} }; }
 export const progress = () => data;
 
 const subs = [];
@@ -222,6 +222,10 @@ export function mergeProgress(a, b) {
     const x = (a.quiz || {})[id], y = (b.quiz || {})[id];
     out.quiz[id] = !x ? y : !y ? x : (x.attempts >= y.attempts ? x : y);
   }
+  for (const id of new Set([...Object.keys(a.quizRuns || {}), ...Object.keys(b.quizRuns || {})])) {
+    const x = (a.quizRuns || {})[id], y = (b.quizRuns || {})[id];
+    out.quizRuns[id] = !x ? y : !y ? x : (Date.parse(x.updatedAt || "") >= Date.parse(y.updatedAt || "") ? x : y);
+  }
   out.stats = mergeStats(a.stats, b.stats);
   return out;
 }
@@ -314,6 +318,11 @@ export function recordAnswer(id, correct) {
   q.attempts++; if (correct) q.correct++; q.last = correct; data.quiz[id] = q;
   if (wasWeak && q.correct / q.attempts >= 0.6) stats().comebacks = (stats().comebacks || 0) + 1;
   save(true);
+}
+export const quizRun = (id) => data.quizRuns?.[id] || null;
+export function saveQuizRun(id, run) {
+  (data.quizRuns ||= {})[id] = { ...run, updatedAt: new Date().toISOString() };
+  save();
 }
 export function markRead(lec, sec) { (data.read[lec] ||= {})[sec] = 1; save(true); }
 export const objectiveDone = (lec, objective) => !!data.objectives?.[lec]?.[objective];

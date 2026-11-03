@@ -71,7 +71,8 @@ const goodQ = () => ({ q: "What is stress?", options: ["force per area", "force 
   bad({ options: ["only one"], answer: 0 }, "options"); bad({ options: [], answer: 0 }, "options");
   ok(C.checkQuestion({ ...goodQ(), options: ["a", "b"], answer: 1 }).ok, "two options are fine");
   ok(C.checkQuestion({ ...goodQ(), options: ["a", "b", "c", "d", "e"], answer: 4 }).ok, "five options are fine");
-  bad({ options: ["a", "b", "c", "d", "e", "f"], answer: 0 }, "options");
+  ok(C.checkQuestion({ ...goodQ(), options: ["a", "b", "c", "d", "e", "f"], answer: 5 }).ok, "six options are fine");
+  bad({ options: ["a", "b", "c", "d", "e", "f", "g"], answer: 0 }, "options");
   const e = bad({ options: ["a", "", "c", "d"], answer: 0 }, "options"); ok(/empty/.test(e.optionErrs[1]) && e.optionErrs[0] === "", "an empty option is named in the list of option messages");
   const d = bad({ options: ["Same", "same ", "c", "d"], answer: 0 }, "options"); ok(/same as option A/.test(d.optionErrs[1]), "duplicate options (ignoring case and spaces) are refused");
   bad({ options: ["a", "b", "c", "x".repeat(301)], answer: 0 }, "options");
@@ -214,7 +215,7 @@ const goodQ = () => ({ q: "What is stress?", options: ["force per area", "force 
     see("intro", l.intro);
     for (const s of l.sections) { see("title", s.title); s.bullets.forEach((b) => see("bullet", b)); s.boxes.forEach((b) => see("box", b.text)); for (const st of s.steps || []) { see("title", st.title); st.bullets.forEach((b) => see("bullet", b)); see("alt", st.img?.alt); } }
     for (const c of l.cards) { see("front", c.front); see("back", c.back); see("short", c.short); }
-    for (const q of l.quiz) { see("q", q.q); see("why", q.why); q.options.forEach((o) => see("option", o)); see("alt", q.img?.alt); ok(q.options.length <= C.LIMITS.optionsMax, "an existing question has at most 5 options"); }
+    for (const q of l.quiz) { see("q", q.q); see("why", q.why); q.options.forEach((o) => see("option", o)); see("alt", q.img?.alt); ok(q.options.length <= C.LIMITS.optionsMax, "an existing question stays within the supported option limit"); }
   }
   for (const [k, lim] of [["intro", C.LIMITS.intro], ["title", C.LIMITS.title], ["bullet", C.LIMITS.bullet], ["box", C.LIMITS.box], ["alt", C.LIMITS.alt], ["front", C.LIMITS.front], ["back", C.LIMITS.back], ["short", C.LIMITS.short], ["q", C.LIMITS.question[1]], ["why", C.LIMITS.why], ["option", C.LIMITS.option]])
     ok(longest[k] <= lim, `existing ${k} texts fit the limit (longest ${longest[k]}, limit ${lim})`);

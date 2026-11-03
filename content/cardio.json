@@ -1809,11 +1809,11 @@
    "id": "cs-25",
    "q": "What would happen if the signal could not pass through the AV node, while the SA node kept working?",
    "options": [
-    "The atria would stop contracting, because the AV node triggers them.",
-    "The ventricles would contract from the top down instead of the bottom up.",
-    "The SA node would stop producing impulses.",
-    "The vagus nerve would take over and start each heartbeat.",
-    "The impulse would still start in the SA node and cross the atria, but it would not reach the AV bundle and Purkinje fibres that make the ventricles contract."
+    "The atria would stop contracting because the AV node starts the heartbeat before the SA node acts.",
+    "The ventricles would still contract because Purkinje fibres receive the impulse directly from the SA node.",
+    "The SA node would stop producing impulses because the AV node sends it the signal that starts each heartbeat.",
+    "The vagus nerve would take over from the SA node and send each impulse through the AV bundle to the ventricles.",
+    "The atria could still contract, but the ventricles would not receive the impulse through the AV bundle and Purkinje fibres."
    ],
    "answer": 4,
    "why": "The SA node starts the impulse and it crosses the atria on its own. After the atria, the signal must pass the AV node to travel down the AV bundle into the Purkinje fibres, so blocking the AV node cuts the signal to the ventricles.",
@@ -1888,6 +1888,48 @@
    "answer": 2,
    "why": "Vasculogenesis builds vessels from scratch (de novo), for example the dorsal aortae and yolk sac blood islands. Angiogenesis then remodels and prunes the network.",
    "source": "Slide 38"
+  },
+  {
+   "id": "cs-31",
+   "q": "Which listed blood type is compatible with someone who has type O+ blood?",
+   "options": [
+    "A+",
+    "AB-",
+    "B-",
+    "O+",
+    "All of the above",
+    "None of the above"
+   ],
+   "answer": 3,
+   "why": "Among these options, O+ is compatible with an O+ recipient. O+ recipients can also receive O− red cells, but O− is not one of the listed choices."
+  },
+  {
+   "id": "cs-32",
+   "q": "Where does blood flow immediately after passing through the pulmonary veins?",
+   "options": [
+    "Into the right atrium",
+    "Into the left atrium",
+    "Through the tricuspid valve into the right ventricle",
+    "Through the left semilunar valve into the pulmonary arteries",
+    "All of the above",
+    "None of the above"
+   ],
+   "answer": 1,
+   "why": "Pulmonary veins return oxygenated blood from the lungs to the left atrium. Blood then passes through the mitral valve into the left ventricle."
+  },
+  {
+   "id": "cs-33",
+   "q": "What happens during vasculogenesis in the developing embryo?",
+   "options": [
+    "Blood vessels form de novo from blood islands.",
+    "The heart tube loops to form a four-chambered heart.",
+    "The vascular network is pruned and remodeled.",
+    "Splanchnic mesoderm differentiates into the cardiac crescent.",
+    "All of the above",
+    "None of the above"
+   ],
+   "answer": 0,
+   "why": "Vasculogenesis forms blood vessels from scratch, including from endothelial precursors in blood islands. Remodeling and pruning of existing vessels is angiogenesis."
   }
  ],
  "games": [
@@ -2206,6 +2248,25 @@
     }
    ],
    "why": "The pulmonary circuit sends blood from the right side of the heart to the lungs to pick up O₂ and discard CO₂. The systemic circuit sends blood from the left side through the aorta to the rest of the body to deliver O₂ and pick up CO₂ waste."
+  },
+  {
+   "title": "Oxygenated or deoxygenated blood?",
+   "prompt": "Sort each structure by the oxygen content of the blood it carries.",
+   "buckets": [
+    "Oxygenated blood",
+    "Deoxygenated blood"
+   ],
+   "items": [
+    { "text": "Aorta", "b": 0 },
+    { "text": "Pulmonary veins", "b": 0 },
+    { "text": "Left ventricle", "b": 0 },
+    { "text": "Systemic arteries", "b": 0 },
+    { "text": "Venae cavae", "b": 1 },
+    { "text": "Pulmonary arteries", "b": 1 },
+    { "text": "Right ventricle", "b": 1 },
+    { "text": "Systemic veins", "b": 1 }
+   ],
+   "why": "Systemic arteries and the left side of the heart carry oxygenated blood; the pulmonary veins also carry oxygenated blood back from the lungs. The venae cavae, right ventricle, and pulmonary arteries carry deoxygenated blood."
   }
  ],
  "calc": []

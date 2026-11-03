@@ -11,6 +11,7 @@ export function speedQuestions(cards) {
   return unique.map((card, index) => {
     const distractors = unique.filter((_, i) => i !== index).slice(0, 3);
     return {
+      id: card.id,
       q: "Which term best matches this description? " + (card.short || card.back),
       options: [card, ...distractors].map((choice) => choice.front),
       answer: 0,

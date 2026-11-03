@@ -590,6 +590,19 @@
    "options": ["Use repeated brightness measurements for a light curve and a spectrograph for wavelength patterns.", "Use one uncalibrated image for both measurements.", "Use only an interferometer baseline measurement.", "Use a mirror test and assume the spectrum."],
    "answer": 0,
    "why": "Time monitoring measures brightness changes; spectroscopy measures the distribution of light by wavelength."
+  },
+  {
+   "id": "tel-25",
+   "q": "Two otherwise identical telescopes observe the same wavelength. Telescope B has twice the aperture diameter of telescope A. Which combination best describes the main effects?",
+   "options": [
+    "B collects about twice as much light and has twice the resolving power.",
+    "B collects about four times as much light and can resolve details about half as large.",
+    "B collects the same amount of light but has four times the resolving power.",
+    "B collects about half as much light and resolves details twice as large.",
+    "Neither light gathering nor resolution depends on aperture."
+   ],
+   "answer": 1,
+   "why": "Light-gathering area scales with diameter squared, so doubling diameter collects four times as much light. At a fixed wavelength, angular resolution improves in proportion to aperture, allowing roughly half-sized details to be distinguished."
   }
  ],
  "sourceNotes": [

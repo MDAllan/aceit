@@ -769,6 +769,62 @@
       "back": "The blood clot that forms at a fracture after local blood vessels are damaged.",
       "short": "First clot at a fracture site.",
       "gloss": false
+    },
+    {
+      "id": "skl-c17",
+      "front": "Cervical vertebrae",
+      "back": "The seven vertebrae in the neck region.",
+      "short": "Seven vertebrae in the neck.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c18",
+      "front": "Thoracic vertebrae",
+      "back": "The twelve vertebrae associated with the rib cage.",
+      "short": "Twelve vertebrae associated with ribs.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c19",
+      "front": "Lumbar vertebrae",
+      "back": "The five vertebrae in the lower back region.",
+      "short": "Five vertebrae in the lower back.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c20",
+      "front": "Pectoral girdle",
+      "back": "The clavicle and scapula form the pectoral girdle.",
+      "short": "Clavicle and scapula.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c22",
+      "front": "Hyoid",
+      "back": "A bone that does not articulate directly with another bone.",
+      "short": "Does not articulate directly with another bone.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c23",
+      "front": "Auditory ossicles",
+      "back": "Malleus, incus, and stapes transmit eardrum vibrations to the inner ear.",
+      "short": "Malleus, incus, and stapes.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c24",
+      "front": "Cranial bones",
+      "back": "Frontal, parietal, temporal, occipital, sphenoid, and ethmoid bones.",
+      "short": "Six named bones enclose the brain.",
+      "gloss": false
+    },
+    {
+      "id": "skl-c25",
+      "front": "Facial bones",
+      "back": "Maxilla, palatine, vomer, zygomatic, nasal, lacrimal, and mandible.",
+      "short": "Seven named bones support the face.",
+      "gloss": false
     }
   ],
   "quiz": [
@@ -1059,6 +1115,43 @@
       ],
       "answer": 0,
       "why": "The sacrum is part of the axial vertebral column; the pelvic girdle includes coxal bones."
+    },
+    {
+      "id": "skl-25",
+      "q": "Three cell types are active during bone maintenance. Which answer combines the TRUE statements? A. Osteoblasts secrete osteoid. B. Osteoclasts resorb bone. C. Osteocytes build new bone matrix.",
+      "options": [
+        "A only",
+        "B and C",
+        "C only",
+        "Both A and B",
+        "None of the above"
+      ],
+      "answer": 3,
+      "why": "Osteoblasts form osteoid, osteoclasts resorb bone, and osteocytes maintain mature bone rather than build new matrix."
+    }
+  ],
+  "sort": [
+    {
+      "title": "Axial or appendicular skeleton?",
+      "prompt": "Sort each named bone or region by its place in the skeleton.",
+      "buckets": [
+        "Axial skeleton",
+        "Appendicular skeleton"
+      ],
+      "items": [
+        { "text": "Sternum", "b": 0 },
+        { "text": "Ribs", "b": 0 },
+        { "text": "Cervical vertebrae", "b": 0 },
+        { "text": "Thoracic vertebrae", "b": 0 },
+        { "text": "Lumbar vertebrae", "b": 0 },
+        { "text": "Sacrum", "b": 0 },
+        { "text": "Clavicle", "b": 1 },
+        { "text": "Scapula", "b": 1 },
+        { "text": "Coxal bones", "b": 1 },
+        { "text": "Upper-limb bones", "b": 1 },
+        { "text": "Lower-limb bones", "b": 1 }
+      ],
+      "why": "The axial skeleton includes the skull, vertebral column, ribs, and sternum. The appendicular skeleton includes the girdles and limb bones."
     }
   ],
   "sourceNotes": [

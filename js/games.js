@@ -2,11 +2,31 @@ import * as S from "./store.js";
 import { h, md, clean, ic, toast, shuffle, confetti, pick, floatXP } from "./ui.js";
 import { shareGame } from "./share.js";
 import { speedQuestions } from "./game-questions.js";
+import { createReviewPool, uniquePairs } from "./game-pool.js";
+import { prepareOptions } from "./quiz-options.js";
 
 export const DEFAULT_GAMES = ["match", "memory", "blitz", "guess", "speed", "picture"];
 
 const EMOJI = { match: "\u{1F9E9}", memory: "\u{1F9E0}", blitz: "\u26A1", guess: "\u{1F4A1}", speed: "\u23F1\uFE0F", picture: "\u{1F5BC}\uFE0F", timeline: "\u23F3", order: "\u{1FA9C}", halflife: "\u2622\uFE0F", sort: "\u{1F5C2}\uFE0F", calc: "\u{1F9EE}" };
 const GCOL = { match: "#2F9E94", memory: "#7A6FDB", blitz: "#D9777F", guess: "#4E9FD0", speed: "#C8627A", picture: "#3AA687", timeline: "#8E7CC3", order: "#CC8A3A", halflife: "#3F9FB8", sort: "#B070C8", calc: "#4A63C9" };
+const REVIEW_POOLS = new Map();
+const reviewPool = (lec, game) => {
+  const key = `${lec.id}:${game}`;
+  if (!REVIEW_POOLS.has(key)) REVIEW_POOLS.set(key, createReviewPool());
+  return REVIEW_POOLS.get(key);
+};
+const cardRound = (lec, game, cards, size, idOf) => reviewPool(lec, game).draw(cards, size, idOf);
+const limitedRound = (available, selected, size, noun = "card") => {
+  if (available.length < size) {
+    const plural = available.length === 1 ? noun : `${noun}s`;
+    return h(".src", `This topic has ${available.length} usable ${plural}; this round includes all ${available.length}.`);
+  }
+  if (selected.length < size) {
+    const plural = selected.length === 1 ? noun : `${noun}s`;
+    return h(".src", `This round has ${selected.length} new ${plural} left before the pool resets.`);
+  }
+  return "";
+};
 const META = {
   match: ["games", "#2F9E94", "Matching cards", "Match each term with its meaning."],
   memory: ["cards", "#7A6FDB", "Memory flip", "Flip two face-down cards to find pairs."],
@@ -27,7 +47,7 @@ export const onGameEnd = (fn) => { hook = fn; };
 
 export function renderGame(b, lec, all, opts = {}) {
   const imgSecs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title));
-  const ok = (g) => (g === "picture" ? imgSecs.length >= 4 : ["match", "memory", "blitz", "guess"].includes(g) ? lec.cards.length >= 8 : g === "speed" ? speedQuestions(lec.cards).length >= 5 : g === "sort" ? lec.sort?.length : g === "calc" ? lec.calc?.length : g === "order" ? lec.order?.length : true);
+  const ok = (g) => (g === "picture" ? imgSecs.length >= 1 : ["match", "memory"].includes(g) ? uniquePairs(lec.cards).length >= 1 : ["blitz", "guess"].includes(g) ? uniquePairs(lec.cards).length >= 2 : g === "speed" ? speedQuestions(lec.cards).length >= 5 : g === "sort" ? lec.sort?.length : g === "calc" ? lec.calc?.length : g === "order" ? lec.order?.length : true);
   const draw = () => {
     b.replaceChildren(h("p", { style: "color:var(--mute);margin:6px 0" }, "Games are optional practice and do not count toward course completion."),
       h(".grid", lec.games.filter((g) => META[g] && ok(g)).map((g, i) => {
@@ -61,10 +81,11 @@ const nextBtn = (last, fn) => h("button.btn", { style: "margin-top:10px", onclic
 const G = {
   /* ---- matching cards: tap a term, then its meaning ---- */
   match(b, lec, again) {
-    const pool = pick(lec.cards, 6);
+    const cards = uniquePairs(lec.cards), pool = cardRound(lec, "match", cards, 6);
     const tiles = shuffle(pool.flatMap((c) => [{ id: c.id, t: c.front, k: "t" }, { id: c.id, t: txt(c), k: "d" }]));
     let first = null, lock = false, found = 0, tries = 0;
     const info = h(".src", "Tries: 0 · Pairs: 0/" + pool.length), grid = h(".mg");
+    const feedback = h("div", { "aria-live": "polite" });
     tiles.forEach((t) => {
       const el = h("button.mc", t.k === "t" ? h("b", md(t.t)) : md(t.t));
       el.onclick = () => {
@@ -73,22 +94,37 @@ const G = {
         if (!first) { first = { t, el }; return; }
         tries++; lock = true; const a = first; first = null;
         if (a.t.id === t.id && a.t.k !== t.k) {
-          a.el.classList.replace("sel", "done"); el.classList.replace("sel", "done"); found++; lock = false;
+          a.el.classList.replace("sel", "done"); el.classList.replace("sel", "done"); found++; lock = false; feedback.replaceChildren();
           if (found === pool.length) { done(lec, "match", null, null, b); confetti(); toast(`All matched in ${tries} tries!`); grid.after(h("button.btn", { style: "margin-top:12px", onclick: again }, "Play again")); }
-        } else { a.el.classList.add("shake"); el.classList.add("shake"); setTimeout(() => { [a.el, el].forEach((x) => x.classList.remove("sel", "shake")); lock = false; }, 600); }
+        } else {
+          const termTile = a.t.k === "t" ? a.t : t.k === "t" ? t : null;
+          const meaningTile = a.t.k === "d" ? a.t : t.k === "d" ? t : null;
+          const term = termTile && pool.find((card) => card.id === termTile.id);
+          const meaning = meaningTile && pool.find((card) => card.id === meaningTile.id);
+          [a.t.id, t.id].forEach((id) => reviewPool(lec, "match").markMissed(id));
+          const firstCard = pool.find((card) => card.id === a.t.id), secondCard = pool.find((card) => card.id === t.id);
+          const explanation = term && meaning
+            ? `${term.front} matches ${txt(term)}. The selected meaning, "${txt(meaning)}", belongs to ${meaning.front}.`
+            : term
+              ? `Both selected tiles are terms. ${firstCard.front} matches ${txt(firstCard)}; ${secondCard.front} matches ${txt(secondCard)}.`
+              : `Both selected tiles are meanings. ${txt(firstCard)} belongs to ${firstCard.front}; ${txt(secondCard)} belongs to ${secondCard.front}.`;
+          feedback.replaceChildren(h(".fb", h("b", "Not quite. "), explanation));
+          a.el.classList.add("shake"); el.classList.add("shake"); setTimeout(() => { [a.el, el].forEach((x) => x.classList.remove("sel", "shake")); lock = false; }, 600);
+        }
         info.textContent = `Tries: ${tries} · Pairs: ${found}/${pool.length}`;
       };
       grid.append(el);
     });
-    b.append(h("h2", "Matching cards"), h("p", "Tap a term, then tap its meaning."), info, grid);
+    b.append(h("h2", "Matching cards"), h("p", "Tap a term, then tap its meaning."), limitedRound(cards, pool, 6), info, grid, feedback);
   },
 
   /* ---- memory: face-down pairs ---- */
   memory(b, lec, again) {
-    const pool = pick(lec.cards, 6);
+    const cards = uniquePairs(lec.cards), pool = cardRound(lec, "memory", cards, 6);
     const tiles = shuffle(pool.flatMap((c) => [{ id: c.id, t: c.front, k: "t" }, { id: c.id, t: txt(c), k: "d" }]));
     let open = [], lock = false, found = 0, moves = 0;
     const info = h(".src", "Moves: 0 · Pairs: 0/" + pool.length), grid = h(".mg.mem");
+    const feedback = h("div", { "aria-live": "polite" });
     tiles.forEach((t) => {
       // face-down: announced as "Hidden card"; face-up: announced by what it shows (the "?" is drawn by CSS, the hidden face is not read)
       const bk = h(".f.bk", t.k === "t" ? h("b", md(t.t)) : md(t.t)), sr = h("span.sr", "Hidden card");
@@ -99,32 +135,39 @@ const G = {
         el.setUp(true); open.push({ t, el });
         if (open.length < 2) return;
         moves++; lock = true; const [a, c] = open; open = [];
-        if (a.t.id === c.t.id) { a.el.classList.add("done"); c.el.classList.add("done"); found++; lock = false; if (found === pool.length) { done(lec, "memory", null, null, b); confetti(); toast(`Cleared in ${moves} moves!`); grid.after(h("button.btn", { style: "margin-top:12px", onclick: again }, "Play again")); } }
-        else setTimeout(() => { a.el.setUp(false); c.el.setUp(false); lock = false; }, 900);
+        if (a.t.id === c.t.id) { a.el.classList.add("done"); c.el.classList.add("done"); found++; lock = false; feedback.replaceChildren(); if (found === pool.length) { done(lec, "memory", null, null, b); confetti(); toast(`Cleared in ${moves} moves!`); grid.after(h("button.btn", { style: "margin-top:12px", onclick: again }, "Play again")); } }
+        else {
+          const first = pool.find((card) => card.id === a.t.id), second = pool.find((card) => card.id === c.t.id);
+          reviewPool(lec, "memory").markMissed(first.id);
+          reviewPool(lec, "memory").markMissed(second.id);
+          feedback.replaceChildren(h(".fb", h("b", "Not quite. "), `${first.front} matches ${txt(first)}; ${second.front} matches ${txt(second)}.`));
+          setTimeout(() => { a.el.setUp(false); c.el.setUp(false); lock = false; }, 900);
+        }
         info.textContent = `Moves: ${moves} · Pairs: ${found}/${pool.length}`;
       };
       grid.append(el);
     });
-    b.append(h("h2", "Memory flip"), h("p", "Flip two cards. A term and its meaning make a pair."), info, grid);
+    b.append(h("h2", "Memory flip"), h("p", "Flip two cards. A term and its meaning make a pair."), limitedRound(cards, pool, 6), info, grid, feedback);
   },
 
   /* ---- true / false blitz ---- */
   blitz(b, lec, again) {
-    const rounds = pick(lec.cards, 10); let i = 0, score = 0;
+    const cards = uniquePairs(lec.cards), rounds = cardRound(lec, "blitz", cards, 10); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
       if (i >= rounds.length) { done(lec, "blitz", score, rounds.length, b); if (score >= 8) confetti(); return b.append(endCard("Blitz finished!", score, rounds.length, again)); }
       const c = rounds[i], truth = Math.random() < 0.5;
-      const other = pick(lec.cards.filter((x) => x.id !== c.id && txt(x) !== txt(c)), 1)[0];
+      const other = pick(cards.filter((x) => x.id !== c.id), 1)[0];
       const shown = truth ? txt(c) : txt(other);
       const fb = h("div", { "aria-live": "polite" });
       const ans = (v) => {
         const ok = v === truth; if (ok) { score++; floatXP("\u2705 +1"); }
+        else reviewPool(lec, "blitz").markMissed(c.id);
         fb.replaceChildren(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F605} Oops. "), truth ? "Yes: " : "Not quite. The real meaning: ", md(`${c.front} = ${txt(c)}`)), nextBtn(i + 1 === rounds.length, () => { i++; draw(); }));
         btns.forEach((x) => (x.disabled = true));
       };
       const btns = [h("button.btn.ok", { onclick: () => ans(true) }, "True"), h("button.btn.warn", { onclick: () => ans(false) }, "False")];
-      b.append(h(".src", `Statement ${i + 1} of ${rounds.length}`), h(".bar", h("i", { style: `width:${(i / rounds.length) * 100}%` })),
+      b.append(limitedRound(cards, rounds, 10), h(".src", `Statement ${i + 1} of ${rounds.length}`), h(".bar", h("i", { style: `width:${(i / rounds.length) * 100}%` })),
         h(".card", { style: "margin-top:10px;text-align:center" }, h("p", { style: "color:var(--mute);margin:0" }, "True or false?"), h("h2", { style: "margin:.4rem 0" }, md(c.front)), h("p", { style: "font-size:1.05rem" }, "means: ", h("b", md(shown))), h(".tf", btns), fb));
     };
     draw();
@@ -132,18 +175,18 @@ const G = {
 
   /* ---- guess the term ---- */
   guess(b, lec, again) {
-    const rounds = pick(lec.cards, 8); let i = 0, score = 0;
+    const cards = uniquePairs(lec.cards), rounds = cardRound(lec, "guess", cards, 8); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
       if (i >= rounds.length) { done(lec, "guess", score, rounds.length, b); if (score >= 6) confetti(); return b.append(endCard("Terms guessed!", score, rounds.length, again)); }
-      const c = rounds[i], opts = shuffle([c, ...pick(lec.cards.filter((x) => x.id !== c.id), 3)]); let got = false;
+      const c = rounds[i], opts = shuffle([c, ...pick(cards.filter((x) => x.id !== c.id), 3)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcd"[k]), h("span", md(o.front))); bt.onclick = () => {
-        if (got) return; got = true; const ok = o === c; if (ok) { score++; floatXP("\u2705 +1"); }
+        if (got) return; got = true; const ok = o === c; if (ok) { score++; floatXP("\u2705 +1"); } else reviewPool(lec, "guess").markMissed(c.id);
         els.forEach((x, j) => { if (opts[j] === c) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
-        fb.append(nextBtn(i + 1 === rounds.length, () => { i++; draw(); }));
+        fb.append(ok ? "" : h(".fb", h("b", "Not quite. "), `${c.front} means ${txt(c)}.`), nextBtn(i + 1 === rounds.length, () => { i++; draw(); }));
       }; return bt; });
-      b.append(h(".src", `Round ${i + 1} of ${rounds.length}`), h(".bar", h("i", { style: `width:${(i / rounds.length) * 100}%` })),
+      b.append(limitedRound(cards, rounds, 8), h(".src", `Round ${i + 1} of ${rounds.length}`), h(".bar", h("i", { style: `width:${(i / rounds.length) * 100}%` })),
         h(".card", { style: "margin-top:10px" }, h("p", { style: "color:var(--mute);margin:0 0 4px" }, "Which term is this?"), h(".q", md(c.back)), els, fb));
     };
     draw();
@@ -151,10 +194,8 @@ const G = {
 
   /* ---- 60-second sprint ---- */
   speed(b, lec, again) {
-    const qs = shuffle(speedQuestions(lec.cards)).map((q) => {
-      const correct = q.options[q.answer], options = shuffle(q.options);
-      return { ...q, options, answer: options.indexOf(correct) };
-    });
+    const sourceQuestions = speedQuestions(uniquePairs(lec.cards));
+    const qs = cardRound(lec, "speed", sourceQuestions, sourceQuestions.length);
     let i = 0, score = 0, combo = 0, best = 0, t = 60, over = false;
     const clock = h(".timer", "60"), sc = h("b", "0"), cmb = h("span.combo", "");
     const bar = h(".row", { style: "justify-content:space-between" }, h("span", "Time ", clock), h("span", "Score ", sc), cmb);
@@ -163,12 +204,13 @@ const G = {
     const finish = () => { if (over) return; over = true; done(lec, "speed", score, i, b); if (score >= 6) confetti(); b.replaceChildren(endCard("\u23F1\uFE0F Time's up!", score, i, again, h("p", `Best streak: ${best}`))); };
     const draw = () => {
       if (over) return;
-      const q = qs[i % qs.length]; let got = false;
-      const els = q.options.map((o, k) => { const bt = h("button.opt", h("b", "abcde"[k]), h("span", md(o))); bt.onclick = () => {
-        if (got || over) return; got = true; const ok = k === q.answer; i++;
+      const q = qs[i % qs.length], presented = prepareOptions(q); let got = false;
+      const els = presented.options.map((option, k) => { const bt = h("button.opt", h("b", "abcde"[k]), h("span", md(option.text))); bt.onclick = () => {
+        if (got || over) return; got = true; const ok = option.id === presented.options[presented.answerIndex]?.id; i++;
         if (ok) { score++; combo++; best = Math.max(best, combo); floatXP("\u2705 +1"); } else combo = 0;
+        if (!ok) reviewPool(lec, "speed").markMissed(q.id);
         sc.textContent = score; cmb.textContent = combo >= 2 ? `${combo} streak` : "";
-        els.forEach((x, j) => { if (j === q.answer) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
+        els.forEach((x, j) => { if (j === presented.answerIndex) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
         setTimeout(draw, ok ? 450 : 1100);
       }; return bt; });
       body.replaceChildren(h(".card", h(".q", md(q.q)), els));
@@ -178,18 +220,18 @@ const G = {
 
   /* ---- picture quiz ---- */
   picture(b, lec, again) {
-    const secs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title)), rounds = pick(secs, Math.min(8, secs.length)); let i = 0, score = 0;
+    const secs = lec.sections.filter((s) => s.images?.length && !/clicker|question/i.test(s.title)), rounds = cardRound(lec, "picture", secs, 8); let i = 0, score = 0;
     const draw = () => {
       b.replaceChildren();
       if (i >= rounds.length) { done(lec, "picture", score, rounds.length, b); if (score >= rounds.length - 2) confetti(); return b.append(endCard("Picture quiz done!", score, rounds.length, again)); }
       const s = rounds[i], im = pick(s.images, 1)[0], opts = shuffle([s, ...pick(secs.filter((x) => x !== s), 3)]); let got = false;
       const fb = h("div", { "aria-live": "polite" });
       const els = opts.map((o, k) => { const bt = h("button.opt", h("b", "abcd"[k]), h("span", clean(o.title))); bt.onclick = () => {
-        if (got) return; got = true; const ok = o === s; if (ok) { score++; floatXP("\u2705 +1"); }
+        if (got) return; got = true; const ok = o === s; if (ok) { score++; floatXP("\u2705 +1"); } else reviewPool(lec, "picture").markMissed(s.id);
         els.forEach((x, j) => { if (opts[j] === s) x.classList.add("ok"); else if (j === k) x.classList.add("no"); });
         fb.append(nextBtn(i + 1 === rounds.length, () => { i++; draw(); }));
       }; return bt; });
-      b.append(h(".src", `Picture ${i + 1} of ${rounds.length}`), h(".bar", h("i", { style: `width:${(i / rounds.length) * 100}%` })),
+      b.append(limitedRound(secs, rounds, 8, "picture topic"), h(".src", `Picture ${i + 1} of ${rounds.length}`), h(".bar", h("i", { style: `width:${(i / rounds.length) * 100}%` })),
         h(".card", { style: "margin-top:10px" }, h(".fig", { style: "cursor:default;margin-bottom:10px" }, h("img", { src: im.src, alt: "Mystery picture" })), h(".q", "Which topic is this picture from?"), els, fb));
     };
     draw();
@@ -271,7 +313,8 @@ const G = {
   sort(b, lec, again) {
     const acts = shuffle(lec.sort.slice()); let ai = 0;
     const run = (act) => {
-      const items = shuffle(act.items.slice()); let i = 0, score = 0;
+      const sourceItems = act.items.map((item, index) => ({ ...item, id: item.id || `${lec.id}:${act.title}:${index}` }));
+      const items = cardRound(lec, `sort:${act.title}`, sourceItems, 8); let i = 0, score = 0;
       const draw = () => {
         b.replaceChildren();
         if (i >= items.length) { done(lec, "sort", score, items.length, b); if (score >= items.length - 1) confetti(); const more = ai + 1 < acts.length;
@@ -280,9 +323,10 @@ const G = {
         const bt = act.buckets.map((name, k) => h("button.btn.alt", { onclick: () => {
           if (got) return; got = true; const ok = k === it.b; if (ok) { score++; floatXP("\u2705 +1"); }
           bt.forEach((x, j) => { x.disabled = true; if (j === it.b) x.classList.add("ok"); });
-          fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), `It belongs with "${act.buckets[it.b]}".`, i === items.length - 1 || ok ? "" : "", act.why && !ok ? h("span", " ", md(act.why)) : ""), nextBtn(i + 1 === items.length, () => { i++; draw(); }));
+          if (!ok) reviewPool(lec, `sort:${act.title}`).markMissed(it.id);
+          fb.append(h(".fb", h("b", ok ? "\u{1F389} Correct! " : "\u{1F914} Not quite. "), `It belongs with "${act.buckets[it.b]}".`, act.why && !ok ? h("span", " ", md(act.why)) : ""), nextBtn(i + 1 === items.length, () => { i++; draw(); }));
         } }, md(name)));
-        b.append(h("h2", act.title), act.prompt ? h("p", { style: "color:var(--mute)" }, md(act.prompt)) : "", h(".src", `Item ${i + 1} of ${items.length}`), h(".bar", h("i", { style: `width:${(i / items.length) * 100}%` })),
+        b.append(h("h2", act.title), act.prompt ? h("p", { style: "color:var(--mute)" }, md(act.prompt)) : "", limitedRound(sourceItems, items, 8, "item"), h(".src", `Item ${i + 1} of ${items.length}`), h(".bar", h("i", { style: `width:${(i / items.length) * 100}%` })),
           h(".card", { style: "margin-top:10px" }, h(".sortitem", md(it.text)), h(".bkts.c" + Math.min(act.buckets.length, 3), bt), fb));
       };
       draw();
