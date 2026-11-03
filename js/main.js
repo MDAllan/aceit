@@ -524,6 +524,7 @@ function viewHome(v) {
 }
 
 function viewSubject(v, id) {
+  const dismissedRunPrompts = new Set();
   const sj = SUBJECTS.find((x) => x.id === id);
   if (!sj) return viewHome(v);
   v.style.setProperty("--c", sj.color);
@@ -542,7 +543,7 @@ function viewSubject(v, id) {
   v.append(announcementsCard(sj.id));
   const biolNotePractice = sj.id === "biol305";
   const ex = biolNotePractice
-    ? { intro: "Cumulative and topic-focused practice drawn from BIOL 305 quizzes, with explanations for every answer.", tests: [
+    ? { intro: "Topic-focused practice drawn from BIOL 305 quizzes, with explanations for every answer.", tests: [
       {
         id: "biol305-notes",
         title: "Cumulative Midterm Practice",
@@ -616,16 +617,19 @@ function viewSubject(v, id) {
         runQuiz(v, shuf ? shuffle(questions) : questions, t.title, sj.color, back, options);
       }
     };
-    v.append(h("h2", { style: "margin-top:22px" }, "Practice exams"), h("p", { style: "color:var(--mute);margin:0 0 8px" }, ex.intro || "Real exam-style questions. Take them in order like a test, or shuffled."),
-      h(".grid", ex.tests.map((t, i) => {
+    const practiceTests = ex.tests.filter((t) => !/\bcumulative\b/i.test(t.title));
+    v.append(h("h2", { style: "margin-top:22px" }, "Practice quizzes"), h("p", { style: "color:var(--mute);margin:0 0 8px" }, ex.intro || "Choose a focused quiz or practice with questions from across the course."),
+      h(".grid", practiceTests.map((t, i) => {
         const runKey = `exam:${sj.id}:${t.id}`, activeRun = S.quizRun(runKey);
         const questionCount = t.questionIds?.length || (biolNotePractice ? 24 : t.questions.length);
         return h(".card", { style: `animation:rise .4s var(--ease) ${i * 50}ms backwards` },
           h(".row", { style: "flex-wrap:nowrap;margin-bottom:6px" }, h(".symtile", { style: `width:44px;height:44px;--tc:${sj.color}` }, "\u{1F4DD}"), h("div", h("b", t.title), h(".src", { style: "margin:0" }, `${questionCount} questions`))),
           t.blurb ? h("p", { style: "margin:4px 0 10px;color:var(--mute);font-size:.9rem" }, t.blurb) : "",
           h(".row",
-            activeRun && !activeRun.completed
-              ? h("button.btn.sm", { style: `--c:${sj.color}`, onclick: (event) => run(t, false, event.currentTarget, true) }, "Continue")
+            activeRun && !activeRun.completed && !dismissedRunPrompts.has(runKey)
+              ? h(".row", { style: "gap:4px" },
+                h("button.btn.sm", { style: `--c:${sj.color}`, onclick: (event) => run(t, false, event.currentTarget, true) }, "Continue"),
+                h("button.btn.alt.sm", { style: "min-width:28px;min-height:28px;padding:2px 7px", title: "Dismiss continue prompt", "aria-label": "Dismiss continue prompt", onclick: (event) => { dismissedRunPrompts.add(runKey); event.currentTarget.parentElement.remove(); } }, "×"))
               : "",
             h("button.btn.sm", { style: `--c:${sj.color}`, onclick: (event) => run(t, false, event.currentTarget) }, "Start in order"),
             h("button.btn.alt.sm", { onclick: (event) => run(t, true, event.currentTarget) }, "Shuffled")));
@@ -954,16 +958,27 @@ function viewAllCards(v, startMode) {
 
 function viewPractice(v) {
   const cls = clsOf(); let sel = null;
+  const dismissedRunPrompts = new Set();
   const draw = () => {
     const LS = pool_(), all = LS.flatMap((l) => (l.quiz || []).map((q) => ({ ...q, lec: l.id })));
     v.replaceChildren(h(".hero", h(".ctag", h("i"), cls.name), h("h1", "Practice exam"), h("p", "Mixed questions, shuffled like the real thing. Pick lectures or take them all.")));
     const activeRuns = Object.entries(S.progress().quizRuns || {})
       .filter(([key, run]) => run.courseId === cls.id && !run.completed && /^(practice|exam):/.test(key))
+      .filter(([key]) => !dismissedRunPrompts.has(key))
       .sort((a, b) => Date.parse(b[1].updatedAt || "") - Date.parse(a[1].updatedAt || ""));
     if (activeRuns.length) {
-      v.append(h(".card", h("h2", "Continue where you left off"),
-        activeRuns.map(([runKey, run]) => h(".row", { style: "justify-content:space-between;margin-top:8px" },
-          h("span", run.title), h("button.btn.sm", { onclick: () => resumeQuizRun(v, runKey, all, draw, { biol305: cls.id === "biol305", courseId: cls.id }) }, "Continue")))));
+      const rows = activeRuns.map(([runKey, run]) => h(".row.resume-row", { style: "justify-content:space-between;margin-top:8px" },
+        h("span", run.title),
+        h(".row", { style: "gap:4px" },
+            h("button.btn.sm", { onclick: () => resumeQuizRun(v, runKey, all, draw, { biol305: cls.id === "biol305", courseId: cls.id }) }, "Continue"),
+            h("button.btn.alt.sm", { style: "min-width:28px;min-height:28px;padding:2px 7px", title: "Dismiss continue prompt", "aria-label": "Dismiss continue prompt", onclick: (event) => {
+              dismissedRunPrompts.add(runKey);
+              const row = event.currentTarget.closest(".resume-row");
+              row.remove();
+              if (!resumeCard.querySelector(".resume-row")) resumeCard.remove();
+            } }, "×"))));
+      const resumeCard = h(".card", h("h2", "Continue where you left off"), rows);
+      v.append(resumeCard);
     }
     const pool = sel ? all.filter((q) => sel.has(q.lec)) : all;
     v.append(h(".swipe", { role: "group", "aria-label": "Lectures" }, h("button.chip" + (!sel ? ".on" : ""), { onclick: () => { sel = null; draw(); } }, "All lectures"),
@@ -973,7 +988,7 @@ function viewPractice(v) {
           const scope = sel ? [...sel].sort().join(",") : "all";
           const runKey = `practice:${cls.id}:${scope}:${n}`, saved = S.quizRun(runKey);
           return [
-            saved && !saved.completed
+            saved && !saved.completed && !dismissedRunPrompts.has(runKey)
               ? h("button.btn", { style: "--c:var(--blue)", onclick: () => resumeQuizRun(v, runKey, all, draw, { exam: true, courseId: cls.id, biol305: cls.id === "biol305" }) }, "Continue")
               : "",
             h("button.btn.alt", { onclick: () => {
