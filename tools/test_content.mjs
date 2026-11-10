@@ -5,6 +5,7 @@ import { problem, tidy, summary, text, MARK, KINDS } from "../js/itemrules.js";
 import { parseQuestions, parseCards } from "../js/bulk.js";
 import { buildExtras, mark, isMarked, lectureId, itemId } from "../js/classcontent.js";
 import { inlineCourseFigures, needsPublishedFigures, stripSvgFigures } from "../js/lecture-source.js";
+import { stripInstructorDeck, geologyVisualIds } from "../js/geology-visuals.js";
 let fails = 0, n = 0;
 const ok = (c, msg) => { n++; if (!c) { fails++; console.error("FAIL:", msg); } };
 const eq = (a, b, msg) => ok(JSON.stringify(a) === JSON.stringify(b), msg + "  got " + JSON.stringify(a));
@@ -50,6 +51,29 @@ ok(!needsPublishedFigures("earth-stratigraphy", generatedFigure, slideFigures), 
   ok(!clean.quiz[0].img && saved.sections[0].steps.length === 2, "SVG exam/quiz images are removed without mutating saved data");
 }
 {
+  const saved = {
+    slideFile: "instructor-deck.pdf",
+    sourceNotes: ["Slides 1-3"],
+    sections: [{
+      id: "topic",
+      slides: "1-3",
+      sourceNotes: ["Instructor deck"],
+      images: [{ src: "img/earthquakes/s1.webp", slide: "1", alt: "Slide 1" }],
+      steps: [
+        { title: "Deck figure", img: { src: "img/geology/figure.webp" }, bullets: [] },
+        { title: "Concept", bullets: ["Keep this idea. Slide 2 adds an instructor note. Keep this too."] },
+      ],
+    }],
+    quiz: [{ q: "Question", img: { src: "img/earthquakes/q1.webp" } }],
+    customNote: { img: { path: "class-upload/figure.webp", alt: "Instructor-uploaded class figure" } },
+  };
+  const clean = stripInstructorDeck("earthquakes", saved);
+  ok(!clean.slideFile && !clean.sourceNotes && !clean.sections[0].slides && !clean.sections[0].sourceNotes, "ERTH cleanup removes deck metadata and citations");
+  ok(!clean.sections[0].images.length && !clean.sections[0].steps.some((step) => step.title === "Deck figure") && !clean.quiz[0].img, "ERTH cleanup removes instructor-deck image references");
+  eq(clean.sections[0].steps[0].bullets, ["Keep this idea. Keep this too."], "ERTH cleanup removes only sentences that cite slides");
+  ok(clean.customNote.img.path === "class-upload/figure.webp" && saved.slideFile === "instructor-deck.pdf", "ERTH cleanup keeps uploaded class images and does not mutate its input");
+}
+{
   const sourceSteps = [
     { title: "Long-bone anatomy", bullets: ["Long bones contain marrow."] },
     { title: "Bone-cell roles", bullets: ["Osteocytes maintain the matrix."] },
@@ -73,6 +97,32 @@ for (const id of ["skeletal", "muscular"]) {
     ok(displayed.every((step) => !step.img || (step.bullets || []).length > 0), `${id} ${section.id}: diagrams are shown with explanatory steps`);
   }
   ok(originalFigures === displayedFigures, `${id}: all ${originalFigures} instructor-PDF figures remain in the Notes presentation`);
+}
+{
+  const subjects = JSON.parse(readFileSync(new URL("../content/subjects.json", import.meta.url), "utf8"));
+  const geology = subjects.find((subject) => subject.id === "erth209");
+  const visuals = new Set(geologyVisualIds);
+  let assigned = 0;
+  for (const id of geology.lectures) {
+    const lesson = JSON.parse(readFileSync(new URL(`../content/${id}.json`, import.meta.url), "utf8"));
+    let deckArtifacts = 0;
+    const visit = (value, key = "") => {
+      if (typeof value === "string") {
+        if (key !== "id" && /\bslides?\b/i.test(value)) deckArtifacts++;
+      } else if (Array.isArray(value)) value.forEach((item) => visit(item));
+      else if (value && typeof value === "object") {
+        for (const [childKey, child] of Object.entries(value)) {
+          if (["slide", "slides", "slideFile", "sourceNotes"].includes(childKey)) deckArtifacts++;
+          if (childKey === "src" && typeof child === "string" && (child.startsWith(`img/${id}/`) || child.startsWith("img/geology/"))) deckArtifacts++;
+          visit(child, childKey);
+        }
+      }
+    };
+    visit(lesson);
+    assigned += lesson.sections.filter((section) => section.visual && visuals.has(section.visual)).length;
+    ok(deckArtifacts === 0, `${id}: published content has no instructor-deck screenshots or references`);
+  }
+  ok(assigned === geology.lectures.length, "each ERTH 209 lesson has an original diagram");
 }
 
 // tidy() prepares what an editor collected

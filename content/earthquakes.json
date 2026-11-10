@@ -4,43 +4,41 @@
  "chapter": "Ch 8",
  "icon": "🌐",
  "color": "#b4533c",
- "slideFile": "2026 October 28 & 30 Ch 8 Earthquakes v1.pdf",
  "intro": "Earthquakes happen when rocks rupture and release elastic strain energy as seismic waves. Connect fault motion and earthquake locations to wave behavior, magnitude, ground shaking, secondary hazards, tsunamis, and preparedness.",
  "learningObjectives": [
    {
-     "id": "goal-01",
-     "text": "Explain how elastic strain builds and is released during fault rupture."
+    "id": "goal-01",
+    "text": "Explain how elastic strain builds and is released during fault rupture."
    },
    {
-     "id": "goal-02",
-     "text": "Use fault geometry and block motion to identify the relative movement of rocks."
+    "id": "goal-02",
+    "text": "Use fault geometry and block motion to identify the relative movement of rocks."
    },
    {
-     "id": "goal-03",
-     "text": "Distinguish an earthquake's focus from its epicenter and explain how seismographs record shaking."
+    "id": "goal-03",
+    "text": "Distinguish an earthquake's focus from its epicenter and explain how seismographs record shaking."
    },
    {
-     "id": "goal-04",
-     "text": "Compare body waves with surface waves by their paths, motion, and effects."
+    "id": "goal-04",
+    "text": "Compare body waves with surface waves by their paths, motion, and effects."
    },
    {
-     "id": "goal-05",
-     "text": "Distinguish magnitude from intensity and relate earthquake magnitude to energy release."
+    "id": "goal-05",
+    "text": "Distinguish magnitude from intensity and relate earthquake magnitude to energy release."
    },
    {
-     "id": "goal-06",
-     "text": "Explain how ground conditions affect shaking and earthquake damage."
+    "id": "goal-06",
+    "text": "Explain how ground conditions affect shaking and earthquake damage."
    },
    {
-     "id": "goal-07",
-     "text": "Explain how tsunamis form and compare the roles of warnings and prediction."
+    "id": "goal-07",
+    "text": "Explain how tsunamis form and compare the roles of warnings and prediction."
    }
  ],
  "sections": [
   {
    "id": "earthquake-cycle",
    "title": "Elastic strain and fault rupture",
-   "slides": "3-8",
    "steps": [
     {
      "title": "The earthquake cycle",
@@ -70,15 +68,12 @@
      "text": "A fault can remain locked even as plates move. Elastic strain builds around it until the resistance to slip is overcome."
     }
    ],
-   "sourceNotes": [
-    "Instructor's ERTH 209 deck, Ch 8 Earthquakes, slides 3-8."
-   ],
-   "images": []
+   "images": [],
+   "visual": "earthquakes"
   },
   {
    "id": "fault-motion",
    "title": "Faults and block motion",
-   "slides": "14-18",
    "steps": [
     {
      "title": "Name a fault from its displacement",
@@ -105,15 +100,11 @@
      "text": "Normal: hanging wall down. Reverse: hanging wall up. Thrust: low-angle reverse. Strike-slip: side-to-side."
     }
    ],
-   "sourceNotes": [
-    "Instructor's ERTH 209 deck, Ch 8 Earthquakes, slides 14-18 and 24-27."
-   ],
    "images": []
   },
   {
    "id": "earthquake-location",
    "title": "Focus, epicenter, and seismographs",
-   "slides": "9-11, 23",
    "steps": [
     {
      "title": "Where rupture begins",
@@ -139,15 +130,11 @@
      "text": "Focus/hypocenter: where the rupture starts underground. Epicenter: the point directly above it at the surface."
     }
    ],
-   "sourceNotes": [
-    "Instructor's ERTH 209 deck, Ch 8 Earthquakes, slides 9-11 and 23."
-   ],
    "images": []
   },
   {
    "id": "seismic-waves",
    "title": "Body waves and surface waves",
-   "slides": "19-22",
    "steps": [
     {
      "title": "P and S body waves",
@@ -177,15 +164,11 @@
      "text": "S waves do not travel through liquid. P waves can travel through both solid and liquid material."
     }
    ],
-   "sourceNotes": [
-    "Instructor's ERTH 209 deck, Ch 8 Earthquakes, slides 19-22."
-   ],
    "images": []
   },
   {
    "id": "earthquake-size",
    "title": "Magnitude, energy, and intensity",
-   "slides": "12-13",
    "steps": [
     {
      "title": "Magnitude scales describe earthquake size",
@@ -211,15 +194,11 @@
      "text": "Do not confuse Richter/local magnitude (ML), moment magnitude (Mw), and Mercalli effects. Moment magnitude is the most accurate measure of earthquake size."
     }
    ],
-   "sourceNotes": [
-    "Instructor's ERTH 209 deck, Ch 8 Earthquakes, slides 12-13."
-   ],
    "images": []
   },
   {
    "id": "shaking-hazards",
    "title": "Shaking, ground conditions, and damage",
-   "slides": "28-50",
    "steps": [
     {
      "title": "Why shaking becomes a disaster",
@@ -253,15 +232,11 @@
      "text": "Earthquake magnitude alone cannot predict damage. Ground amplification, resonance, duration, construction, and secondary hazards help explain why outcomes differ."
     }
    ],
-   "sourceNotes": [
-    "Instructor's ERTH 209 deck, Ch 8 Earthquakes, slides 28-51."
-   ],
    "images": []
   },
   {
    "id": "tsunami-prediction",
    "title": "Tsunamis, warnings, and prediction",
-   "slides": "52-62",
    "steps": [
     {
      "title": "Tsunami waves are not ordinary wind waves",
@@ -294,9 +269,6 @@
      "type": "trap",
      "text": "An early-warning alert is not a prediction weeks ahead. It detects an earthquake already underway and may provide only a short time before damaging waves arrive."
     }
-   ],
-   "sourceNotes": [
-    "Instructor's ERTH 209 deck, Ch 8 Earthquakes, slides 52-62."
    ],
    "images": []
   }
@@ -354,9 +326,12 @@
   {"id":"eq-27","q":"A flexible mid-rise building suffers more motion than a shorter nearby building during long-period shaking. The ground-motion period is close to the mid-rise building's natural period. What best explains the difference?","options":["Resonance amplifies the response of the mid-rise building.","The earthquake's magnitude is higher at the taller building.","The shorter building converts S waves into P waves.","The taller building is farther from the hypocenter by definition.","Base isolation makes every structure resonate."],"answer":0,"why":"When shaking has a period close to a structure's natural response, resonance can amplify that structure's motion. Building height and design influence that natural response."},
   {"id":"eq-28","q":"After a cluster of small earthquakes, a city asks whether scientists can reliably name the date and location of the next damaging earthquake weeks in advance. Which answer best reflects current understanding?","options":["Yes; a foreshock cluster always gives the exact time and place.","Yes; earthquake magnitude can be read from the local weather.","No; reliable short-range prediction weeks or months ahead is not currently possible.","No; earthquakes cannot be detected even after rupture begins.","Yes; a tsunami buoy predicts an earthquake before it starts."],"answer":2,"why":"Earthquake scientists cannot reliably predict the exact time and place of an event weeks or months ahead. Early-warning systems are different: they detect an earthquake after rupture begins and may alert people before stronger waves arrive."}
  ],
- "games": ["match", "memory", "blitz", "guess", "speed", "picture"],
- "sourceNotes": [
-  "Primary source: instructor's ERTH 209, 2026 October 28 & 30 Ch 8 Earthquakes lecture deck.",
-  "Question wording and diagrams are original. Course definitions and claims are paraphrased from the lecture."
+ "games": [
+  "match",
+  "memory",
+  "blitz",
+  "guess",
+  "speed",
+  "picture"
  ]
 }

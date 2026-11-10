@@ -4,59 +4,57 @@
  "chapter": "Ch 4",
  "icon": "🌋",
  "color": "#d9482b",
- "slideFile": "2026 Sept 16 & 18 Ch 4 Igneous Rocks v1.pdf",
  "intro": "Igneous rocks form when molten rock cools. Learn three things: HOW rock melts (pressure drops, volatiles added, heat added), WHY the melt differs (silica, partial melting, fractional crystallization), and HOW to name the rock (texture plus minerals on the classification chart).",
  "learningObjectives": [
-  {
-   "id": "goal-01",
-   "text": "Distinguish magma from lava and intrusive rocks from extrusive rocks."
-  },
-  {
-   "id": "goal-02",
-   "text": "Explain decompression, volatile addition, and heat transfer as ways rocks melt."
-  },
-  {
-   "id": "goal-03",
-   "text": "Relate melting processes to their tectonic settings."
-  },
-  {
-   "id": "goal-04",
-   "text": "Compare magmas by silica content, density, and viscosity."
-  },
-  {
-   "id": "goal-05",
-   "text": "Explain how source composition, melting, and crystallization produce different melts."
-  },
-  {
-   "id": "goal-06",
-   "text": "Explain fractional crystallization and use Bowen's reaction series to predict mineral order."
-  },
-  {
-   "id": "goal-07",
-   "text": "Classify igneous rocks by texture and composition using the classification chart."
-  },
-  {
-   "id": "goal-08",
-   "text": "Identify igneous textures and distinguish fragmental rocks."
-  },
-  {
-   "id": "goal-09",
-   "text": "Distinguish dikes from sills by their relationship to surrounding rock layers."
-  },
-  {
-   "id": "goal-10",
-   "text": "Identify plutons and batholiths and explain how they become exposed."
-  },
-  {
-   "id": "goal-11",
-   "text": "Compare the main volcano types by shape and eruption products."
-  }
+   {
+    "id": "goal-01",
+    "text": "Distinguish magma from lava and intrusive rocks from extrusive rocks."
+   },
+   {
+    "id": "goal-02",
+    "text": "Explain decompression, volatile addition, and heat transfer as ways rocks melt."
+   },
+   {
+    "id": "goal-03",
+    "text": "Relate melting processes to their tectonic settings."
+   },
+   {
+    "id": "goal-04",
+    "text": "Compare magmas by silica content, density, and viscosity."
+   },
+   {
+    "id": "goal-05",
+    "text": "Explain how source composition, melting, and crystallization produce different melts."
+   },
+   {
+    "id": "goal-06",
+    "text": "Explain fractional crystallization and use Bowen's reaction series to predict mineral order."
+   },
+   {
+    "id": "goal-07",
+    "text": "Classify igneous rocks by texture and composition using the classification chart."
+   },
+   {
+    "id": "goal-08",
+    "text": "Identify igneous textures and distinguish fragmental rocks."
+   },
+   {
+    "id": "goal-09",
+    "text": "Distinguish dikes from sills by their relationship to surrounding rock layers."
+   },
+   {
+    "id": "goal-10",
+    "text": "Identify plutons and batholiths and explain how they become exposed."
+   },
+   {
+    "id": "goal-11",
+    "text": "Compare the main volcano types by shape and eruption products."
+   }
  ],
  "sections": [
   {
    "id": "magma-lava",
    "title": "Magma, lava, intrusive, extrusive",
-   "slides": "5-8",
    "bullets": [],
    "boxes": [
     {
@@ -72,34 +70,9 @@
      "text": "Magma and lava are the SAME stuff. The name only depends on location, not on composition. 'Intrusive vs extrusive' is also about location (below vs above ground)."
     }
    ],
-   "sourceNotes": [
-    "Slides 5-8",
-    "Intro to Geology 4.1, 4.3, 4.3.1"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s5.webp",
-     "slide": "5",
-     "alt": "The rock cycle: arrows link igneous, sedimentary and metamorphic rock, and melting turns rock into a melt."
-    },
-    {
-     "src": "img/igneous/s6.webp",
-     "slide": "6",
-     "alt": "A photo of lava erupting at the surface next to a drawing of a magma chamber feeding a volcano."
-    },
-    {
-     "src": "img/igneous/s7.webp",
-     "slide": "7",
-     "alt": "Cross-section of a volcano with the extrusive realm above ground and the intrusive realm, including the magma chamber, below ground."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s5.webp",
-      "slide": "5",
-      "alt": "The rock cycle: arrows link igneous, sedimentary and metamorphic rock, and melting turns rock into a melt."
-     },
      "title": "The rock cycle",
      "bullets": [
       "This is the **rock cycle**. Rock keeps changing from one type to another.",
@@ -107,11 +80,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s6.webp",
-      "slide": "6",
-      "alt": "A photo of lava erupting at the surface next to a drawing of a magma chamber feeding a volcano."
-     },
      "title": "Lava versus magma",
      "bullets": [
       "**Magma** = molten rock below the surface. **Lava** = molten rock at or above the surface.",
@@ -119,11 +87,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s7.webp",
-      "slide": "7",
-      "alt": "Cross-section of a volcano with the extrusive realm above ground and the intrusive realm, including the magma chamber, below ground."
-     },
      "title": "Above ground and below ground",
      "bullets": [
       "**Intrusive** (also called plutonic) rock forms below ground, in the intrusive realm.",
@@ -136,12 +99,12 @@
       "The crust and the upper mantle (asthenosphere) are **mostly solid rock**. Melts only form in **localized areas** (small pockets), not everywhere."
      ]
     }
-   ]
+   ],
+   "visual": "igneous"
   },
   {
    "id": "melting",
    "title": "Three ways rock melts",
-   "slides": "8-14",
    "bullets": [],
    "boxes": [
     {
@@ -158,7 +121,7 @@
     },
     {
      "type": "trap",
-     "text": "Decompression melting does NOT need the rock to get hotter. Flux melting does NOT need the rock to get hotter either. Only heat transfer adds heat. Textbook adds that a hotspot is decompression plus extra heat, but the slide lists the mantle plume under decompression."
+     "text": "Decompression melting does NOT need the rock to get hotter. Flux melting does NOT need the rock to get hotter either. Only heat transfer adds heat."
     }
    ],
    "table": {
@@ -185,34 +148,9 @@
      ]
     ]
    },
-   "sourceNotes": [
-    "Slides 8-14",
-    "Intro to Geology 4.3.1 to 4.3.4"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s11.webp",
-     "slide": "11",
-     "alt": "Cross-section of a subducting plate with volatiles rising from it into the hot mantle above, creating a melt that rises to a volcano."
-    },
-    {
-     "src": "img/igneous/s12.webp",
-     "slide": "12",
-     "alt": "Labelled drawing of flux melting at a subduction zone: volatiles leave the sinking plate and the asthenosphere above it melts to feed a volcanic arc."
-    },
-    {
-     "src": "img/igneous/s14.webp",
-     "slide": "14",
-     "alt": "Drawing of heat-transfer melting: hot magma pools at the base of the crust and heat rising from it melts the crust above."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s11.webp",
-      "slide": "11",
-      "alt": "Cross-section of a subducting plate with volatiles rising from it into the hot mantle above, creating a melt that rises to a volcano."
-     },
      "title": "Flux melting: add volatiles",
      "bullets": [
       "**Flux melting**: volatiles help break chemical bonds, creating a melt.",
@@ -220,11 +158,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s12.webp",
-      "slide": "12",
-      "alt": "Labelled drawing of flux melting at a subduction zone: volatiles leave the sinking plate and the asthenosphere above it melts to feed a volcanic arc."
-     },
      "title": "Flux melting at a subduction zone",
      "bullets": [
       "The sinking slab releases volatiles into the asthenosphere above it.",
@@ -232,11 +165,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s14.webp",
-      "slide": "14",
-      "alt": "Drawing of heat-transfer melting: hot magma pools at the base of the crust and heat rising from it melts the crust above."
-     },
      "title": "Heat-transfer melting",
      "bullets": [
       "**Heat from magma melts adjacent rocks.** Hot magma pools at the base of the crust and the heat rising from it melts the crust itself.",
@@ -256,7 +184,6 @@
   {
    "id": "settings",
    "title": "Melting by tectonic setting",
-   "slides": "15-23",
    "bullets": [],
    "boxes": [
     {
@@ -306,34 +233,9 @@
      ]
     ]
    },
-   "sourceNotes": [
-    "Slides 15-23",
-    "Intro to Geology 4.3, 4.5.1"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s15.webp",
-     "slide": "15",
-     "alt": "World map of plate boundaries and volcanoes with an inset block diagram of a subduction zone."
-    },
-    {
-     "src": "img/igneous/s17.webp",
-     "slide": "17",
-     "alt": "World map with an inset of a mid-ocean ridge and drawings of pillow basalts forming under water."
-    },
-    {
-     "src": "img/igneous/s23.webp",
-     "slide": "23",
-     "alt": "Drawing of a mantle plume head and fissure eruptions, a map of the Columbia River flood basalts, and a photo of layered basalt cliffs."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s15.webp",
-      "slide": "15",
-      "alt": "World map of plate boundaries and volcanoes with an inset block diagram of a subduction zone."
-     },
      "title": "Subduction zones",
      "bullets": [
       "At a **subduction zone** one plate sinks. A trench and a **volcanic arc** form (for example the Aleutian arc).",
@@ -342,11 +244,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s17.webp",
-      "slide": "17",
-      "alt": "World map with an inset of a mid-ocean ridge and drawings of pillow basalts forming under water."
-     },
      "title": "Mid-ocean ridges and rifts",
      "bullets": [
       "At a **mid-ocean ridge** the melting type is **decompression melting**. Ocean-floor volcanoes are basaltic because partial melting of ultramafic mantle makes basalt.",
@@ -355,11 +252,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s23.webp",
-      "slide": "23",
-      "alt": "Drawing of a mantle plume head and fissure eruptions, a map of the Columbia River flood basalts, and a photo of layered basalt cliffs."
-     },
      "title": "Large igneous provinces",
      "bullets": [
       "**Large Igneous Provinces (LIPs)** are huge areas of **flood basalts** over mantle hot spots. Fissure eruptions pour out the basalt, as in the Columbia River flood basalts.",
@@ -379,7 +271,6 @@
   {
    "id": "silica",
    "title": "Melt types: silica, density, viscosity",
-   "slides": "24-27",
    "bullets": [],
    "boxes": [
     {
@@ -392,7 +283,7 @@
     },
     {
      "type": "trap",
-     "text": "Slide ranges: felsic 66-76, intermediate 52-66, mafic 45-52, ultramafic 38-45. The textbook gives different round numbers (felsic 65-75, intermediate 55-60, mafic 45-50, ultramafic 40 or less). Use the slide's numbers."
+     "text": "The textbook gives different round numbers (felsic 65-75, intermediate 55-60, mafic 45-50, ultramafic 40 or less)."
     }
    ],
    "table": {
@@ -434,47 +325,15 @@
      ]
     ]
    },
-   "sourceNotes": [
-    "Slides 24-27",
-    "Intro to Geology 4.1.2, 4.5.2",
-    "Silica chains idea in the first why box is outside source"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s24.webp",
-     "slide": "24",
-     "alt": "Table of the four magma types by weight percent silica, with an arrow showing silica increasing toward felsic and example rocks rhyolite, diorite and gabbro."
-    },
-    {
-     "src": "img/igneous/s25.webp",
-     "slide": "25",
-     "alt": "Table comparing density, temperature, silica and viscosity of felsic, intermediate, mafic and ultramafic melts, with photos of felsic, intermediate and mafic rocks."
-    },
-    {
-     "src": "img/igneous/s26.webp",
-     "slide": "26",
-     "alt": "Bullet list on viscosity with drawings of runny lava flows and a lava fountain above and a thick lava dome below."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s24.webp",
-      "slide": "24",
-      "alt": "Table of the four magma types by weight percent silica, with an arrow showing silica increasing toward felsic and example rocks rhyolite, diorite and gabbro."
-     },
-     "title": "",
      "bullets": [
       "Melts are sorted into four types by **% silica (SiO2)**: felsic 66 to 76%, intermediate 52 to 66%, mafic 45 to 52%, ultramafic 38 to 45%.",
       "The arrow shows silica increases toward felsic. Example rocks: rhyolite (felsic), diorite (intermediate), gabbro (mafic)."
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s25.webp",
-      "slide": "25",
-      "alt": "Table comparing density, temperature, silica and viscosity of felsic, intermediate, mafic and ultramafic melts, with photos of felsic, intermediate and mafic rocks."
-     },
      "title": "Four melt types compared",
      "bullets": [
       "Felsic: very low density, very low temperature (**600 to 850 C**), **very high viscosity**, explosive eruptions. Intermediate: low density, low temperature, high viscosity, explosive.",
@@ -482,11 +341,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s26.webp",
-      "slide": "26",
-      "alt": "Bullet list on viscosity with drawings of runny lava flows and a lava fountain above and a thick lava dome below."
-     },
      "title": "Viscosity and melt movement",
      "bullets": [
       "**Viscosity** = resistance to flow (syrup is runny, toothpaste is thick). It depends on **temperature, volatile content and % silica**.",
@@ -505,7 +359,6 @@
   {
    "id": "vary",
    "title": "Why do melts vary?",
-   "slides": "28-30",
    "bullets": [],
    "boxes": [
     {
@@ -521,34 +374,9 @@
      "text": "Partial melting does not copy the source. Ultramafic mantle does not make ultramafic magma; it makes mafic magma (practice midterm Q24)."
     }
    ],
-   "sourceNotes": [
-    "Slides 28-30, 51",
-    "Intro to Geology 4.4.1, 4.4.2"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s28.webp",
-     "slide": "28",
-     "alt": "Table of the four categories of magma by weight percent silica."
-    },
-    {
-     "src": "img/igneous/s29.webp",
-     "slide": "29",
-     "alt": "Graph of silica content of magma against rising temperature with circles showing rock going from no melt to partial melt to nearly complete melt."
-    },
-    {
-     "src": "img/igneous/s30.webp",
-     "slide": "30",
-     "alt": "Drawing of a magma body with wall rock melting into it and blocks of rock falling in and dissolving."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s28.webp",
-      "slide": "28",
-      "alt": "Table of the four categories of magma by weight percent silica."
-     },
      "title": "The source rock matters",
      "bullets": [
       "The **source rock** sets the first melt composition in many cases.",
@@ -556,11 +384,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s29.webp",
-      "slide": "29",
-      "alt": "Graph of silica content of magma against rising temperature with circles showing rock going from no melt to partial melt to nearly complete melt."
-     },
      "title": "Partial melting",
      "bullets": [
       "Rock is a mixture of minerals and they melt at different temperatures, so only part of it melts. This is **partial melting**.",
@@ -569,11 +392,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s30.webp",
-      "slide": "30",
-      "alt": "Drawing of a magma body with wall rock melting into it and blocks of rock falling in and dissolving."
-     },
      "title": "Assimilation",
      "bullets": [
       "**Assimilation**: partial melting of wall rock makes new magma that mixes with magma from below. Blocks of rock also fall into the magma and dissolve.",
@@ -592,7 +410,6 @@
   {
    "id": "fractional",
    "title": "Fractional crystallization and Bowen's series",
-   "slides": "31-33",
    "bullets": [],
    "boxes": [
     {
@@ -605,7 +422,7 @@
     },
     {
      "type": "trap",
-     "text": "Temperatures differ by source. The slide scale runs about 1400 down to 800; the textbook says about 1,250 down to about 700 C. The order of minerals is what matters. Also: fractional crystallization (crystals leave, melt becomes felsic) is the opposite of partial melting (midterm example Q5)."
+     "text": "Temperatures differ by source. The order of minerals is what matters. Also: fractional crystallization (crystals leave, melt becomes felsic) is the opposite of partial melting (midterm example Q5)."
     }
    ],
    "table": {
@@ -628,34 +445,9 @@
      ]
     ]
    },
-   "sourceNotes": [
-    "Slides 31-33",
-    "Intro to Geology 4.2, 4.4.2"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s31.webp",
-     "slide": "31",
-     "alt": "Two circles of melt at Time 1 and Time 2 showing crystals forming and settling to the bottom so the remaining magma becomes more felsic."
-    },
-    {
-     "src": "img/igneous/s32.webp",
-     "slide": "32",
-     "alt": "Drawing of a cooling mafic melt where olivine and Ca-rich plagioclase form first, then pyroxene and Na-rich plagioclase, leaving a leftover melt that makes felsic rock."
-    },
-    {
-     "src": "img/igneous/s33.webp",
-     "slide": "33",
-     "alt": "Bowen's reaction series chart with the discontinuous and continuous branches, temperature scale and rock types from ultramafic to felsic."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s31.webp",
-      "slide": "31",
-      "alt": "Two circles of melt at Time 1 and Time 2 showing crystals forming and settling to the bottom so the remaining magma becomes more felsic."
-     },
      "title": "Mafic crystals leave first",
      "bullets": [
       "Mafic minerals crystallize first; felsic minerals crystallize last. This is **fractional crystallization**.",
@@ -663,11 +455,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s32.webp",
-      "slide": "32",
-      "alt": "Drawing of a cooling mafic melt where olivine and Ca-rich plagioclase form first, then pyroxene and Na-rich plagioclase, leaving a leftover melt that makes felsic rock."
-     },
      "title": "Which minerals form when",
      "bullets": [
       "A mafic melt starts to cool. **Olivine and Ca-rich plagioclase** form first and settle out.",
@@ -676,11 +463,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s33.webp",
-      "slide": "33",
-      "alt": "Bowen's reaction series chart with the discontinuous and continuous branches, temperature scale and rock types from ultramafic to felsic."
-     },
      "title": "Bowen's reaction series",
      "bullets": [
       "Two branches. **Discontinuous series**: olivine, pyroxene, amphibole, biotite. **Continuous series**: plagioclase, from Ca-rich to Na-rich. Both finish with K-feldspar, muscovite and quartz.",
@@ -699,7 +481,6 @@
   {
    "id": "classify",
    "title": "The classification chart (texture + composition)",
-   "slides": "34-38",
    "bullets": [],
    "boxes": [
     {
@@ -754,34 +535,9 @@
      ]
     ]
    },
-   "sourceNotes": [
-    "Slides 34-38",
-    "Intro to Geology 4.1.1, 4.1.2"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s36.webp",
-     "slide": "36",
-     "alt": "Cross-section of a volcano and magma body showing small drops and thin flows cooling quickly, a large blob cooling slowly and a shallow sheet cooling faster than a deep sheet."
-    },
-    {
-     "src": "img/igneous/s37.webp",
-     "slide": "37",
-     "alt": "Diagram comparing a small and a large ball of melt, and a flat pancake shape and a sphere, to show which cools faster."
-    },
-    {
-     "src": "img/igneous/s38.webp",
-     "slide": "38",
-     "alt": "Classification chart for crystalline igneous rocks with fine and coarse rock names, side arrows for temperature, density and silica, and mineral percentage bars."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s36.webp",
-      "slide": "36",
-      "alt": "Cross-section of a volcano and magma body showing small drops and thin flows cooling quickly, a large blob cooling slowly and a shallow sheet cooling faster than a deep sheet."
-     },
      "title": "Cooling near the surface or deep",
      "bullets": [
       "Small drops and thin flows cool quickly. A large blob cools slowly.",
@@ -789,23 +545,12 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s37.webp",
-      "slide": "37",
-      "alt": "Diagram comparing a small and a large ball of melt, and a flat pancake shape and a sphere, to show which cools faster."
-     },
      "title": "Size and shape change cooling",
      "bullets": [
       "For the same shape, a **smaller volume** cools faster."
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s38.webp",
-      "slide": "38",
-      "alt": "Classification chart for crystalline igneous rocks with fine and coarse rock names, side arrows for temperature, density and silica, and mineral percentage bars."
-     },
-     "title": "",
      "bullets": [
       "How to use it: (1) look at grain size, fine (cooled fast, extrusive, aphanitic) or coarse (cooled slowly, intrusive, phaneritic); (2) look at the minerals and their percentages on the bars; (3) find the row whose bar matches; (4) read the rock name in the fine or coarse column.",
       "Moving from felsic down to ultramafic, **freezing temperature rises** (about 600 to 1,250 C), density rises (about 2.5 to 3.4 g/cm3) and silica falls (about 70% to 40%).",
@@ -824,7 +569,6 @@
   {
    "id": "textures",
    "title": "Textures and fragmental rocks",
-   "slides": "39-44",
    "bullets": [],
    "boxes": [
     {
@@ -837,7 +581,7 @@
     },
     {
      "type": "trap",
-     "text": "Glass is not a mineral (no crystal structure), so obsidian is not a mineral (practice midterm Q12). Slide 42 groups pumice and scoria with glassy rocks, while the textbook calls scoria vesicular and pumice glassy froth. Fastest cooling texture is glassy; slowest is pegmatitic."
+     "text": "Glass is not a mineral (no crystal structure), so obsidian is not a mineral (practice midterm Q12). Fastest cooling texture is glassy; slowest is pegmatitic."
     }
    ],
    "table": {
@@ -884,34 +628,9 @@
      ]
     ]
    },
-   "sourceNotes": [
-    "Slides 39-44",
-    "Intro to Geology 4.1.1"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s39.webp",
-     "slide": "39",
-     "alt": "Three rocks with close-ups showing crystalline, fragmental and glassy textures."
-    },
-    {
-     "src": "img/igneous/s40.webp",
-     "slide": "40",
-     "alt": "Two rock samples side by side, a fine-grained aphanitic rock and a coarse-grained phaneritic rock with visible crystals."
-    },
-    {
-     "src": "img/igneous/s44.webp",
-     "slide": "44",
-     "alt": "Photos of a layered ash deposit with a group of people for scale, an ash cloud over a pyroclastic flow, and a golf ball-sized fragment."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s39.webp",
-      "slide": "39",
-      "alt": "Three rocks with close-ups showing crystalline, fragmental and glassy textures."
-     },
      "title": "Three basic textures",
      "bullets": [
       "**Crystalline texture**: interlocking crystals. **Fragmental texture**: broken pieces, seen under a microscope.",
@@ -919,11 +638,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s40.webp",
-      "slide": "40",
-      "alt": "Two rock samples side by side, a fine-grained aphanitic rock and a coarse-grained phaneritic rock with visible crystals."
-     },
      "title": "Crystal size: fine to giant",
      "bullets": [
       "**Aphanitic** = grains too small to see, fast cooling, extrusive. **Phaneritic** = crystals you can see, slow cooling, intrusive.",
@@ -932,11 +646,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s44.webp",
-      "slide": "44",
-      "alt": "Photos of a layered ash deposit with a group of people for scale, an ash cloud over a pyroclastic flow, and a golf ball-sized fragment."
-     },
      "title": "Pyroclastic rocks",
      "bullets": [
       "**Pyroclastic rocks** are made of **tephra** thrown out of explosive eruptions. Examples: tuff and volcanic breccia. Welded tuff forms when hot fragments stick together.",
@@ -955,7 +664,6 @@
   {
    "id": "dikes",
    "title": "Dikes and sills",
-   "slides": "45-49",
    "bullets": [],
    "boxes": [
     {
@@ -971,56 +679,21 @@
      "text": "Younger vs older: a dike or sill is YOUNGER than the layers it cuts or lies between. Do not say it is the same age as the surrounding rock."
     }
    ],
-   "sourceNotes": [
-    "Slides 45-49",
-    "Intro to Geology 4.1.3"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s46.webp",
-     "slide": "46",
-     "alt": "Two block drawings of a sill: magma squeezes between rock layers and lifts the layers above it."
-    },
-    {
-     "src": "img/igneous/s47.webp",
-     "slide": "47",
-     "alt": "A photo of Antarctic mountains with a geologist's sketch labelling a sill between sandstone and coal-rich beds."
-    },
-    {
-     "src": "img/igneous/s49.webp",
-     "slide": "49",
-     "alt": "Photo of Shiprock, New Mexico, with thin dike walls radiating from the eroded volcanic neck."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s46.webp",
-      "slide": "46",
-      "alt": "Two block drawings of a sill: magma squeezes between rock layers and lifts the layers above it."
-     },
      "title": "How a sill forms",
      "bullets": [
       "Magma squeezes **between** layers and lifts the layers above it. The arrow shows the roof being pushed up."
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s47.webp",
-      "slide": "47",
-      "alt": "A photo of Antarctic mountains with a geologist's sketch labelling a sill between sandstone and coal-rich beds."
-     },
      "title": "A real sill",
      "bullets": [
       "A sill in the Antarctic mountains. The 'What a Geologist Sees' sketch shows it as a flat band lying between layers."
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s49.webp",
-      "slide": "49",
-      "alt": "Photo of Shiprock, New Mexico, with thin dike walls radiating from the eroded volcanic neck."
-     },
      "title": "Dikes and Shiprock",
      "bullets": [
       "Magma fills cracks that cut across the layers, so the rock is pushed sideways.",
@@ -1039,7 +712,6 @@
   {
    "id": "plutons",
    "title": "Plutons, batholiths and exposing them",
-   "slides": "50-62",
    "bullets": [],
    "boxes": [
     {
@@ -1052,7 +724,7 @@
     },
     {
      "type": "trap",
-     "text": "Slides show batholiths as granite (felsic). Do not confuse a batholith (big, discordant, felsic) with a laccolith (small blister, concordant, between layers)."
+     "text": "Do not confuse a batholith (big, discordant, felsic) with a laccolith (small blister, concordant, between layers)."
     }
    ],
    "table": {
@@ -1089,34 +761,9 @@
      ]
     ]
    },
-   "sourceNotes": [
-    "Slides 50-62",
-    "Intro to Geology 4.1.3"
-   ],
-   "images": [
-    {
-     "src": "img/igneous/s52.webp",
-     "slide": "52",
-     "alt": "Block diagram with three time planes showing volcanoes, a lava flow, a laccolith and magma chambers at Time 1."
-    },
-    {
-     "src": "img/igneous/s53.webp",
-     "slide": "53",
-     "alt": "Block diagram at Time 2 showing a dike, a lava plateau, a sill and a pluton."
-    },
-    {
-     "src": "img/igneous/s61.webp",
-     "slide": "61",
-     "alt": "Photo of jagged granite peaks of the Bugaboos with a climber in the foreground."
-    }
-   ],
+   "images": [],
    "steps": [
     {
-     "img": {
-      "src": "img/igneous/s52.webp",
-      "slide": "52",
-      "alt": "Block diagram with three time planes showing volcanoes, a lava flow, a laccolith and magma chambers at Time 1."
-     },
      "title": "Exposing igneous features, Time 1",
      "bullets": [
       "At Time 1 the picture shows volcanoes, a lava flow, a laccolith and magma chambers.",
@@ -1125,11 +772,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s53.webp",
-      "slide": "53",
-      "alt": "Block diagram at Time 2 showing a dike, a lava plateau, a sill and a pluton."
-     },
      "title": "Exposing igneous features, Time 2",
      "bullets": [
       "At Time 2 the picture shows a dike, a lava plateau, a sill and a pluton.",
@@ -1137,11 +779,6 @@
      ]
     },
     {
-     "img": {
-      "src": "img/igneous/s61.webp",
-      "slide": "61",
-      "alt": "Photo of jagged granite peaks of the Bugaboos with a climber in the foreground."
-     },
      "title": "Batholiths and granite peaks",
      "bullets": [
       "A **batholith** is many plutons merged, more than 100 km2, linked to subduction zones and mostly felsic.",
@@ -1161,7 +798,6 @@
   {
    "id": "volcanoes",
    "title": "Volcano types",
-   "slides": "26 and Textbook 4.5",
    "bullets": [
     "Volcano shape follows the viscosity idea: runny magma builds broad low cones, sticky magma builds steep ones.",
     "**Shield volcano**: broad, low-angle flanks, mafic, low viscosity, gentle **effusive** eruptions (Kilauea, Mauna Loa). Found at hotspots, ridges, rifts.",
@@ -1213,17 +849,11 @@
      ]
     ]
    },
-   "sourceNotes": [
-    "Slide 26",
-    "Intro to Geology 4.5.2, 4.5.3",
-    "Volcano types are not covered in the slides; textbook only"
-   ],
    "images": []
   },
   {
    "id": "prof-q",
    "title": "Check yourself: composition and melting",
-   "slides": "63-68",
    "bullets": [
     "Which does NOT describe a composition? ultramafic, felsic, intermediate, mafic, **porphyritic** (porphyritic is a texture). Answer: **E**.",
     "Which of these is a texture, not a composition? basaltic, **aphanitic**, dioritic, rhyolitic, peridotitic. Aphanitic is the texture; the others name compositions. Answer: **B**.",
@@ -1244,12 +874,6 @@
      "type": "trap",
      "text": "'Porphyritic' and 'aphanitic' end in -itic like 'dioritic' and 'peridotitic'. Check what the word describes, not how it sounds."
     }
-   ],
-   "sourceNotes": [
-    "Slides 63-68",
-    "Intro to Geology 4.1",
-    "Slide 65 does not show the answer; D (Ca) is derived from Textbook 4.2",
-    "Slide 68 shows only the letter B and follows slide 67, so B is read as the answer (some uncertainty)"
    ],
    "images": []
   }
@@ -1306,8 +930,7 @@
     "Tephra underground, magma at the surface"
    ],
    "answer": 2,
-   "why": "Magma is molten rock below the surface; lava is molten rock at or above it. Same material, new name when it reaches the surface.",
-   "source": "Slides 6, 27"
+   "why": "Magma is molten rock below the surface; lava is molten rock at or above it. Same material, new name when it reaches the surface."
   },
   {
    "id": "ign-2",
@@ -1320,8 +943,7 @@
     "Extrusive rocks usually have small crystals or glass"
    ],
    "answer": 0,
-   "why": "Surface lava loses heat fast, so extrusive rocks cool faster (fine grains). Intrusive rocks cool slowly underground and grow big crystals.",
-   "source": "Slide 7; Textbook 4.1.1"
+   "why": "Surface lava loses heat fast, so extrusive rocks cool faster (fine grains). Intrusive rocks cool slowly underground and grow big crystals."
   },
   {
    "id": "ign-3",
@@ -1334,12 +956,11 @@
     "The rock turns into glass"
    ],
    "answer": 3,
-   "why": "This is decompression melting: pressure drops, T stays constant, and the rock now sits beyond its melting line.",
-   "source": "Slides 9-10; Textbook 4.3.2"
+   "why": "This is decompression melting: pressure drops, T stays constant, and the rock now sits beyond its melting line."
   },
   {
    "id": "ign-4",
-   "q": "Consider these statements about flux melting:\nI. Volatiles help break chemical bonds, making a melt.\nII. It occurs above a subducting slab that releases water.\nIII. It happens when pressure drops and temperature stays constant.\nWhich are correct?",
+   "q": "Consider these statements about flux melting:\nI. Volatiles help break chemical bonds, making a melt. II. It occurs above a subducting slab that releases water. III. It happens when pressure drops and temperature stays constant. Which are correct?",
    "options": [
     "I only",
     "I and II only",
@@ -1348,8 +969,7 @@
     "none of the above"
    ],
    "answer": 1,
-   "why": "I and II describe flux melting. III describes decompression melting.",
-   "source": "Slides 8-12"
+   "why": "I and II describe flux melting. III describes decompression melting."
   },
   {
    "id": "ign-5",
@@ -1362,12 +982,11 @@
     "Transform fault: flux melting from added water"
    ],
    "answer": 4,
-   "why": "Flux melting needs a subducting slab releasing water. Transform faults have shallow earthquakes and almost no volcanism.",
-   "source": "Slides 10-14; practice midterm Q2, Q23"
+   "why": "Flux melting needs a subducting slab releasing water. Transform faults have shallow earthquakes and almost no volcanism."
   },
   {
    "id": "ign-6",
-   "q": "Which of the following produces magmas?\n(a) pressure relief melting\n(b) felsic crystallization\n(c) fluxing by volatiles\n(d) all of the above\n(e) both (a) and (c)",
+   "q": "Which of the following produces magmas? (a) pressure relief melting\n(b) felsic crystallization\n(c) fluxing by volatiles\n(d) all of the above\n(e) both (a) and (c)",
    "options": [
     "(a) pressure relief melting",
     "(b) felsic crystallization",
@@ -1376,12 +995,11 @@
     "(e) both (a) and (c)"
    ],
    "answer": 4,
-   "why": "Pressure relief (decompression) and fluxing both create melt. Crystallization turns melt into solid, so it does not produce magma.",
-   "source": "Slides 8, 27; midterm example Q8"
+   "why": "Pressure relief (decompression) and fluxing both create melt. Crystallization turns melt into solid, so it does not produce magma."
   },
   {
    "id": "ign-7",
-   "q": "Consider these statements about hot spots:\nI. Mantle plumes rise because they are buoyant compared with the surrounding rock.\nII. Large igneous provinces of flood basalts form above mantle hot spots.\nIII. Hot spots occur only at plate boundaries.\nWhich are correct?",
+   "q": "Consider these statements about hot spots:\nI. Mantle plumes rise because they are buoyant compared with the surrounding rock. II. Large igneous provinces of flood basalts form above mantle hot spots. III. Hot spots occur only at plate boundaries. Which are correct?",
    "options": [
     "I only",
     "II only",
@@ -1390,8 +1008,7 @@
     "all of the above"
    ],
    "answer": 3,
-   "why": "I and II are true: plumes are buoyant and flood basalts form above hot spots. Hot spots are intraplate sites, so III is false.",
-   "source": "Slides 19-23"
+   "why": "I and II are true: plumes are buoyant and flood basalts form above hot spots. Hot spots are intraplate sites, so III is false."
   },
   {
    "id": "ign-8",
@@ -1404,8 +1021,7 @@
     "Impossible to say from the table"
    ],
    "answer": 2,
-   "why": "45 to 52% SiO2 is mafic: low viscosity, thin hot runny eruptions.",
-   "source": "Slide 25"
+   "why": "45 to 52% SiO2 is mafic: low viscosity, thin hot runny eruptions."
   },
   {
    "id": "ign-9",
@@ -1418,12 +1034,11 @@
     "Viscosity depends on temperature, volatile content and silica content"
    ],
    "answer": 0,
-   "why": "More silica means HIGHER viscosity (thicker). So felsic flows less easily than mafic.",
-   "source": "Slide 26"
+   "why": "More silica means HIGHER viscosity (thicker). So felsic flows less easily than mafic."
   },
   {
    "id": "ign-10",
-   "q": "Mount St. Helens erupts explosively while Hawaiian volcanoes erupt gentle lava flows. Which factor best explains the difference?\n(a) Hawaiian magma has more silica\n(b) St. Helens magma has more silica and gas, so it is more viscous and traps gas until it blasts out\n(c) St. Helens magma is hotter\n(d) Hawaiian volcanoes are on a subduction zone\n(e) Both (a) and (c)",
+   "q": "Mount St. Helens erupts explosively while Hawaiian volcanoes erupt gentle lava flows. Which factor best explains the difference? (a) Hawaiian magma has more silica\n(b) St. Helens magma has more silica and gas, so it is more viscous and traps gas until it blasts out\n(c) St. Helens magma is hotter\n(d) Hawaiian volcanoes are on a subduction zone\n(e) Both (a) and (c)",
    "options": [
     "(a) Hawaiian magma has more silica",
     "(b) St. Helens magma has more silica and gas, so it is more viscous and traps gas until it blasts out",
@@ -1432,8 +1047,7 @@
     "(e) Both (a) and (c)"
    ],
    "answer": 1,
-   "why": "Felsic to intermediate magma is cooler, high in silica and gas, and very viscous. Hawaiian mafic magma is runny, so gas escapes.",
-   "source": "Slides 25-26; practice midterm Q22"
+   "why": "Felsic to intermediate magma is cooler, high in silica and gas, and very viscous. Hawaiian mafic magma is runny, so gas escapes."
   },
   {
    "id": "ign-11",
@@ -1446,8 +1060,7 @@
     "Al"
    ],
    "answer": 3,
-   "why": "Silica, sodium, aluminum and potassium increase toward felsic; iron, magnesium and calcium go with the mafic side.",
-   "source": "Slide 65; Textbook 4.2"
+   "why": "Silica, sodium, aluminum and potassium increase toward felsic; iron, magnesium and calcium go with the mafic side."
   },
   {
    "id": "ign-12",
@@ -1460,8 +1073,7 @@
     "phaneritic"
    ],
    "answer": 4,
-   "why": "Phaneritic is a texture (visible crystals). The others are compositions.",
-   "source": "Slides 63-64"
+   "why": "Phaneritic is a texture (visible crystals). The others are compositions."
   },
   {
    "id": "ign-13",
@@ -1474,8 +1086,7 @@
     "Carbonate-rich"
    ],
    "answer": 1,
-   "why": "The silica-rich minerals melt first, so the melt has more silica than the source. Mantle peridotite gives basalt.",
-   "source": "Slide 29; Textbook 4.4.1; practice midterm Q24"
+   "why": "The silica-rich minerals melt first, so the melt has more silica than the source. Mantle peridotite gives basalt."
   },
   {
    "id": "ign-14",
@@ -1488,8 +1099,7 @@
     "Loss of all its silica"
    ],
    "answer": 2,
-   "why": "Pieces of felsic wall rock melt into or dissolve in the magma, which adds silica.",
-   "source": "Slide 30; Textbook 4.4.2"
+   "why": "Pieces of felsic wall rock melt into or dissolve in the magma, which adds silica."
   },
   {
    "id": "ign-15",
@@ -1502,8 +1112,7 @@
     "Tectonic sliding"
    ],
    "answer": 2,
-   "why": "Fractional crystallization removes the first crystals from a cooling melt. Partial melting makes a melt from only part of a rock.",
-   "source": "Slides 29, 31-32; midterm example Q5"
+   "why": "Fractional crystallization removes the first crystals from a cooling melt. Partial melting makes a melt from only part of a rock."
   },
   {
    "id": "ign-16",
@@ -1516,8 +1125,7 @@
     "It turns into limestone"
    ],
    "answer": 1,
-   "why": "Olivine and pyroxene take Mg and Fe out of the liquid, so the leftover magma becomes more silica-rich (more felsic).",
-   "source": "Slides 31-32; practice midterm Q18"
+   "why": "Olivine and pyroxene take Mg and Fe out of the liquid, so the leftover magma becomes more silica-rich (more felsic)."
   },
   {
    "id": "ign-17",
@@ -1530,12 +1138,11 @@
     "amphibole"
    ],
    "answer": 0,
-   "why": "Bowen's series ends with K-feldspar, muscovite and quartz at the bottom (lowest temperature). Olivine is first.",
-   "source": "Slide 33; midterm example Q9"
+   "why": "Bowen's series ends with K-feldspar, muscovite and quartz at the bottom (lowest temperature). Olivine is first."
   },
   {
    "id": "ign-18",
-   "q": "Consider these statements about Bowen's reaction series:\nI. Olivine and Ca-rich plagioclase crystallize early.\nII. Quartz crystallizes late, at low temperature.\nIII. Felsic rocks crystallize at higher temperatures than mafic rocks.\nWhich are correct?",
+   "q": "Consider these statements about Bowen's reaction series:\nI. Olivine and Ca-rich plagioclase crystallize early. II. Quartz crystallizes late, at low temperature. III. Felsic rocks crystallize at higher temperatures than mafic rocks. Which are correct?",
    "options": [
     "I only",
     "III only",
@@ -1544,8 +1151,7 @@
     "all of the above"
    ],
    "answer": 3,
-   "why": "Mafic minerals crystallize at high temperature and felsic ones at low temperature. III is backwards.",
-   "source": "Slides 32-33; Textbook 4.2"
+   "why": "Mafic minerals crystallize at high temperature and felsic ones at low temperature. III is backwards."
   },
   {
    "id": "ign-19",
@@ -1558,8 +1164,7 @@
     "that rock composition is not included in the figure"
    ],
    "answer": 0,
-   "why": "The felsic bar is about 40% quartz, 32% plagioclase, 18% K-feldspar and a few % biotite. This mix is close to it, so the rock is rhyolite (fine) or granite (coarse).",
-   "source": "Slides 34, 38; midterm example Q6"
+   "why": "The felsic bar is about 40% quartz, 32% plagioclase, 18% K-feldspar and a few % biotite. This mix is close to it, so the rock is rhyolite (fine) or granite (coarse)."
   },
   {
    "id": "ign-20",
@@ -1572,8 +1177,7 @@
     "that rock composition is not included in the figure"
    ],
    "answer": 3,
-   "why": "The ultramafic bar is about 83% olivine and 17% pyroxene, so this is ultramafic: komatiite (fine) or peridotite (coarse).",
-   "source": "Slides 34, 38; midterm example Q7"
+   "why": "The ultramafic bar is about 83% olivine and 17% pyroxene, so this is ultramafic: komatiite (fine) or peridotite (coarse)."
   },
   {
    "id": "ign-21",
@@ -1586,8 +1190,7 @@
     "That composition is not in the figure"
    ],
    "answer": 2,
-   "why": "The intermediate bar is mostly plagioclase (~61%) with amphibole (~27%). Fine grained makes it andesite, not diorite (coarse).",
-   "source": "Slides 34, 38; practice midterm Q21"
+   "why": "The intermediate bar is mostly plagioclase (~61%) with amphibole (~27%). Fine grained makes it andesite, not diorite (coarse)."
   },
   {
    "id": "ign-22",
@@ -1600,8 +1203,7 @@
     "It never fully cooled"
    ],
    "answer": 3,
-   "why": "Porphyritic texture means a two-stage history: big phenocrysts grew slowly, then the rest froze fast.",
-   "source": "Slide 41; Textbook 4.1.1; practice midterm Q19"
+   "why": "Porphyritic texture means a two-stage history: big phenocrysts grew slowly, then the rest froze fast."
   },
   {
    "id": "ign-23",
@@ -1614,8 +1216,7 @@
     "Glassy"
    ],
    "answer": 4,
-   "why": "Glassy rock (obsidian) cooled so fast that no crystals formed at all.",
-   "source": "Slide 42; practice midterm Q20"
+   "why": "Glassy rock (obsidian) cooled so fast that no crystals formed at all."
   },
   {
    "id": "ign-24",
@@ -1628,8 +1229,7 @@
     "The blob, and it will be glassy"
    ],
    "answer": 0,
-   "why": "For the same volume, a pancake shape has more surface area and cools faster. Faster cooling gives smaller crystals.",
-   "source": "Slide 37"
+   "why": "For the same volume, a pancake shape has more surface area and cools faster. Faster cooling gives smaller crystals."
   },
   {
    "id": "ign-25",
@@ -1642,8 +1242,7 @@
     "Both are intrusive bodies"
    ],
    "answer": 1,
-   "why": "It is the other way round: dikes are vertical and cut across layers; sills are horizontal and run parallel to layers.",
-   "source": "Slides 45-49; Textbook 4.1.3"
+   "why": "It is the other way round: dikes are vertical and cut across layers; sills are horizontal and run parallel to layers."
   }
  ],
  "games": [
@@ -1655,59 +1254,51 @@
    "front": "Magma vs lava",
    "gloss": false,
    "back": "Magma is molten rock below Earth's surface. Lava is molten rock at or above the surface.",
-   "short": "Magma below, lava at surface",
-   "src": "Slide 27"
+   "short": "Magma below, lava at surface"
   },
   {
    "id": "ign-c2",
    "front": "Intrusive vs extrusive",
    "gloss": false,
    "back": "Intrusive rock forms below ground (slow cooling, large crystals). Extrusive rock forms above ground (fast cooling, small crystals or glass).",
-   "short": "Intrusive below, extrusive above",
-   "src": "Slide 7; Textbook 4.1.1"
+   "short": "Intrusive below, extrusive above"
   },
   {
    "id": "ign-c3",
    "front": "Three causes of melting",
    "back": "Decompression (pressure drops), flux melting (volatiles added), and heat transfer (heat from magma).",
-   "short": "Decompression, flux, heat transfer",
-   "src": "Slides 8, 27"
+   "short": "Decompression, flux, heat transfer"
   },
   {
    "id": "ign-c4",
    "front": "Decompression melting",
    "back": "Pressure decreases while temperature stays constant, so the rock crosses its melting point and a melt forms.",
-   "short": "Pressure drops, same temperature",
-   "src": "Slides 9-10"
+   "short": "Pressure drops, same temperature"
   },
   {
    "id": "ign-c5",
    "front": "Where decompression melting happens",
    "gloss": false,
    "back": "Mantle plumes (hot spots), continental rifts and mid-ocean ridges.",
-   "short": "Plume, rift, mid-ocean ridge",
-   "src": "Slide 10"
+   "short": "Plume, rift, mid-ocean ridge"
   },
   {
    "id": "ign-c6",
    "front": "Flux melting",
    "back": "Volatiles help break chemical bonds and lower the melting point, creating a melt. Happens above subducting slabs.",
-   "short": "Volatiles added, melting point lowered",
-   "src": "Slides 11-12"
+   "short": "Volatiles added, melting point lowered"
   },
   {
    "id": "ign-c7",
    "front": "Heat-transfer melting",
    "back": "Heat from magma melts adjacent rocks, such as the crust above a magma body.",
-   "short": "Magma heat melts nearby rock",
-   "src": "Slides 13-14"
+   "short": "Magma heat melts nearby rock"
   },
   {
    "id": "ign-c8",
    "front": "Solidus",
    "back": "The line on a pressure-temperature graph where melting starts. Solid to the left, melt to the right.",
-   "short": "Temperature where melting begins",
-   "src": "Slide 9; Textbook 4.3.1"
+   "short": "Temperature where melting begins"
   },
   {
    "id": "ign-c9",
@@ -1720,73 +1311,63 @@
    "id": "ign-c10",
    "front": "Melting at subduction zones",
    "back": "Flux melting: the sinking slab releases volatiles into the overlying asthenosphere, which melts.",
-   "short": "Flux melting",
-   "src": "Slides 12, 15-16"
+   "short": "Flux melting"
   },
   {
    "id": "ign-c11",
    "front": "Melting at ridges and rifts",
    "gloss": false,
    "back": "Decompression melting as rising mantle loses pressure; mid-ocean ridges make basalt and pillow basalts.",
-   "short": "Decompression melting",
-   "src": "Slides 10, 17-18"
+   "short": "Decompression melting"
   },
   {
    "id": "ign-c12",
    "front": "Hot spot",
    "back": "An intraplate site of active plutonism and volcanism over a buoyant mantle plume.",
-   "short": "Intraplate volcano over a plume",
-   "src": "Slides 19-20"
+   "short": "Intraplate volcano over a plume"
   },
   {
    "id": "ign-c13",
    "front": "Large igneous province (LIP)",
    "back": "A huge area of flood basalts that forms above mantle hot spots, for example Siberian, Deccan, Columbia River.",
-   "short": "Giant flood basalt area",
-   "src": "Slides 20, 22-23"
+   "short": "Giant flood basalt area"
   },
   {
    "id": "ign-c14",
    "front": "Four melt types and silica",
    "gloss": false,
    "back": "Felsic 66-76%, intermediate 52-66%, mafic 45-52%, ultramafic 38-45% SiO2.",
-   "short": "Felsic to ultramafic SiO2 ranges",
-   "src": "Slide 25"
+   "short": "Felsic to ultramafic SiO2 ranges"
   },
   {
    "id": "ign-c15",
    "front": "Felsic melt properties",
    "back": "66-76% SiO2, very low density, very low temperature (600-850 C), very high viscosity, explosive eruptions.",
-   "short": "High silica, cool, very viscous",
-   "src": "Slide 25"
+   "short": "High silica, cool, very viscous"
   },
   {
    "id": "ign-c16",
    "front": "Mafic melt properties",
    "back": "45-52% SiO2, high density, high temperature, low viscosity: thin, hot, runny eruptions.",
-   "short": "Low silica, hot, runny",
-   "src": "Slide 25"
+   "short": "Low silica, hot, runny"
   },
   {
    "id": "ign-c17",
    "front": "Ultramafic melt properties",
    "back": "38-45% SiO2, very high density, up to 1,300 C, very low viscosity.",
-   "short": "Lowest silica, hottest, thinnest",
-   "src": "Slide 25"
+   "short": "Lowest silica, hottest, thinnest"
   },
   {
    "id": "ign-c18",
    "front": "Viscosity depends on",
    "back": "Temperature, volatile content and % silica. Cooler, more silica and more volatiles means higher viscosity.",
-   "short": "Temperature, volatiles, silica",
-   "src": "Slide 26"
+   "short": "Temperature, volatiles, silica"
   },
   {
    "id": "ign-c19",
    "front": "Partial melting",
    "back": "Only some minerals melt (the lower melting point, silica-rich ones first), so the melt differs from the source rock.",
-   "short": "Easy-melting parts melt first",
-   "src": "Slide 29; Textbook 4.4.1"
+   "short": "Easy-melting parts melt first"
   },
   {
    "id": "ign-c20",
@@ -1799,22 +1380,19 @@
    "id": "ign-c21",
    "front": "Assimilation",
    "back": "Wall rock melts into, or blocks fall into and dissolve in, the magma, changing its composition (often more felsic).",
-   "short": "Magma swallows wall rock",
-   "src": "Slide 30; Textbook 4.4.2"
+   "short": "Magma swallows wall rock"
   },
   {
    "id": "ign-c22",
    "front": "Xenolith",
    "back": "An unmelted piece of country rock inside an igneous rock.",
-   "short": "Foreign rock chunk in igneous rock",
-   "src": "Slide 51; Textbook 4.4.2"
+   "short": "Foreign rock chunk in igneous rock"
   },
   {
    "id": "ign-c23",
    "front": "Fractional crystallization",
    "back": "Mafic minerals crystallize first and settle out; the remaining magma becomes more felsic.",
-   "short": "Early crystals leave, melt turns felsic",
-   "src": "Slides 31-32"
+   "short": "Early crystals leave, melt turns felsic"
   },
   {
    "id": "ign-c24",
@@ -1827,37 +1405,32 @@
    "id": "ign-c25",
    "front": "Bowen's series order",
    "back": "Discontinuous: olivine, pyroxene, amphibole, biotite. Continuous: Ca to Na plagioclase. Then K-feldspar, muscovite, quartz.",
-   "short": "Olivine first, quartz last",
-   "src": "Slide 33"
+   "short": "Olivine first, quartz last"
   },
   {
    "id": "ign-c26",
    "front": "First and last to crystallize",
    "gloss": false,
    "back": "First: olivine and Ca-rich plagioclase (high temperature, last to melt). Last: quartz (low temperature, first to melt).",
-   "short": "Olivine first, quartz last (Bowen)",
-   "src": "Slides 32-33"
+   "short": "Olivine first, quartz last (Bowen)"
   },
   {
    "id": "ign-c27",
    "front": "Aphanitic texture",
    "back": "Grains too small to see; fast cooling; extrusive (example: rhyolite, basalt).",
-   "short": "Fine grains, fast cooling",
-   "src": "Slide 40"
+   "short": "Fine grains, fast cooling"
   },
   {
    "id": "ign-c28",
    "front": "Phaneritic texture",
    "back": "Crystals large enough to see; slow cooling; intrusive (example: granite, gabbro).",
-   "short": "Visible crystals, slow cooling",
-   "src": "Slide 40"
+   "short": "Visible crystals, slow cooling"
   },
   {
    "id": "ign-c29",
    "front": "Porphyritic texture",
    "back": "Large phenocrysts in a fine groundmass; slow cooling at depth, then fast cooling nearer the surface.",
-   "short": "Big crystals in fine groundmass",
-   "src": "Slide 41; Textbook 4.1.1"
+   "short": "Big crystals in fine groundmass"
   },
   {
    "id": "ign-c30",
@@ -1877,51 +1450,44 @@
    "id": "ign-c32",
    "front": "Glassy texture",
    "back": "No crystals because of extremely fast cooling; obsidian. It is the fastest-cooling texture.",
-   "short": "No crystals, fastest cooling",
-   "src": "Slide 42"
+   "short": "No crystals, fastest cooling"
   },
   {
    "id": "ign-c33",
    "front": "Pumice and scoria",
    "back": "Pumice: froth of glass full of vesicles, can float. Scoria: vesicular volcanic rock.",
-   "short": "Gas-filled volcanic rocks",
-   "src": "Slide 42; Textbook 4.1.1"
+   "short": "Gas-filled volcanic rocks"
   },
   {
    "id": "ign-c34",
    "front": "Pyroclastic rocks",
    "back": "Made of tephra thrown out in explosive eruptions: tuff, welded tuff, volcanic breccia. Ash under 2 mm, lapilli 2-64 mm, bombs over 64 mm.",
-   "short": "Rock from erupted fragments",
-   "src": "Slides 43-44"
+   "short": "Rock from erupted fragments"
   },
   {
    "id": "ign-c35",
    "front": "Rock names by composition",
    "back": "Felsic: rhyolite (fine), granite (coarse). Intermediate: andesite, diorite. Mafic: basalt, gabbro. Ultramafic: komatiite, peridotite.",
-   "short": "Rhyolite/granite, andesite/diorite, basalt/gabbro",
-   "src": "Slides 34, 38"
+   "short": "Rhyolite/granite, andesite/diorite, basalt/gabbro"
   },
   {
    "id": "ign-c36",
    "front": "Cooling rate rules",
    "back": "Smaller volume cools faster. A flat pancake shape cools faster than a sphere. A shallow sheet cools faster than a deep one.",
-   "short": "Small, flat, shallow cools fastest",
-   "src": "Slides 36-37"
+   "short": "Small, flat, shallow cools fastest"
   },
   {
    "id": "ign-c37",
    "front": "Dike vs sill",
    "gloss": false,
    "back": "A dike cuts across layers (vertical). A sill runs along layers (horizontal). Both are younger than the rock around them.",
-   "short": "Dike vertical, sill horizontal",
-   "src": "Slides 45-49"
+   "short": "Dike vertical, sill horizontal"
   },
   {
    "id": "ign-c38",
    "front": "Batholith",
    "back": "Many plutons merged, over 100 km2, mostly felsic granite, found in the cores of mountain ranges such as the Sierra Nevada.",
-   "short": "Merged plutons, big granite mass",
-   "src": "Slides 55, 59; Textbook 4.1.3"
+   "short": "Merged plutons, big granite mass"
   }
  ]
 }

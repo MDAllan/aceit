@@ -18,6 +18,7 @@ import { TERMS_VERSION, PRIVACY_VERSION, TERMS, PRIVACY, renderLegal } from "./l
 import { onGameEnd } from "./games.js";
 import { loadBadgeConfig, evaluateBadges, badgesSection, celebrate } from "./badges.js";
 import { inlineCourseFigures, needsPublishedFigures, stripSvgFigures } from "./lecture-source.js";
+import { geologyVisual, stripInstructorDeck } from "./geology-visuals.js";
 import { prepareOptions } from "./quiz-options.js";
 import { balancedQuestionSample } from "./practice-questions.js";
 
@@ -83,6 +84,7 @@ const getJson = async (url) => { const r = await fetch(url); if (!r.ok) throw ne
 // the lists the screens use (l.sections, l.cards, l.quiz) are rebuilt from it. l._orig is the first text of it (the published version, kept for the first save).
 function adopt(l, full, fromDb, at) {
   full = stripSvgFigures(full);
+  if (l.subject === "erth209") full = stripInstructorDeck(l.id, full);
   const { subject, color } = l, old = l._raw, inheritedObjectives = l.learningObjectives || old?.learningObjectives || [];
   if (old) for (const k of Object.keys(old)) if (!(k in full) && k !== "id" && k !== "color") delete l[k]; // a part of the lecture an undo took away
   full.learningObjectives ||= inheritedObjectives;
@@ -744,6 +746,7 @@ function notes(b, l) {
       h(".card.page" + (dir < 0 ? ".back" : ""),
         h("h2", X ? X.title() : p.title, refs && p.slides ? h("span.refchip", "Slides " + p.slides) : "", p.custom ? h("span.pill.mute", { style: "font-size:.7rem" }, "Your instructor") : "", p.draft ? h("span.pill.bad", { style: "font-size:.7rem" }, "Draft") : ""),
         X && i === 0 ? X.intro() : i === 0 && l.intro ? h("p", { style: "color:var(--mute);margin:0 0 6px" }, md(l.intro)) : "",
+        l.subject === "erth209" && p.visual ? geologyVisual(p.visual) : "",
         stepper(p, X, l.id),
         X ? X.bullets() : (p.bullets || []).length ? h("ul.pts", p.bullets.map((x) => h("li", md(x)))) : "",
         boxes.map((x) => acc(x.type, ic(BOX[x.type][0], 18), BOX[x.type][1], X ? X.box(x) : md(x.text), !!X)),

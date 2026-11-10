@@ -68,9 +68,6 @@
           "text": "Volcanoes do not occur only at plate boundaries. Hot spots can form within a plate, and not every plate boundary produces abundant magma."
         }
       ],
-      "sourceNotes": [
-        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 8-12 and 54."
-      ],
       "images": []
     },
     {
@@ -108,10 +105,8 @@
           "text": "A hotter basaltic magma can be less viscous and erupt gently. High temperature alone does not mean an eruption will be more explosive."
         }
       ],
-      "sourceNotes": [
-        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 13-17 and 21."
-      ],
-      "images": []
+      "images": [],
+      "visual": "eruptions"
     },
     {
       "id": "eruption-products",
@@ -143,9 +138,6 @@
           "type": "trap",
           "text": "A lava flow is molten rock moving along the ground. A pyroclastic flow is a hot, ground-hugging mixture of gas and fragments, not a stream of liquid lava."
         }
-      ],
-      "sourceNotes": [
-        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 19-30 and 35-36."
       ],
       "images": []
     },
@@ -211,9 +203,6 @@
           ]
         ]
       },
-      "sourceNotes": [
-        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 40-45."
-      ],
       "images": []
     },
     {
@@ -247,9 +236,6 @@
           "type": "trap",
           "text": "Lahars do not require a lava flow. Water can mobilize ash and loose volcanic debris into a destructive flow."
         }
-      ],
-      "sourceNotes": [
-        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 31, 46, 48-52, and 63."
       ],
       "images": []
     },
@@ -285,9 +271,6 @@
           "text": "A rise in seismicity or ground swelling is a warning sign, not an exact countdown to an eruption."
         }
       ],
-      "sourceNotes": [
-        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 57-59."
-      ],
       "images": []
     },
     {
@@ -315,9 +298,6 @@
           "type": "why",
           "text": "The effects of an eruption depend on where its products go. Aerosols high in the atmosphere can affect sunlight far from the volcano."
         }
-      ],
-      "sourceNotes": [
-        "ERTH 209, Chapter 5, Volcanic Eruptions, Nov. 2 and 4, 2026, slides 69-71."
       ],
       "images": []
     }
@@ -497,8 +477,7 @@
         "Transform faults produce only felsic magma"
       ],
       "answer": 0,
-      "why": "Transform boundaries are not a major volcanic setting because they do not normally drive the mantle melting processes found at spreading centers, subduction zones, or hot spots.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 8-12 and 76"
+      "why": "Transform boundaries are not a major volcanic setting because they do not normally drive the mantle melting processes found at spreading centers, subduction zones, or hot spots."
     },
     {
       "id": "vol-2",
@@ -511,8 +490,7 @@
         "A caldera collapses above the ridge"
       ],
       "answer": 0,
-      "why": "At spreading centers, rising mantle undergoes a pressure decrease. This decompression can cause partial melting even without a large temperature increase.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 8-9"
+      "why": "At spreading centers, rising mantle undergoes a pressure decrease. This decompression can cause partial melting even without a large temperature increase."
     },
     {
       "id": "vol-3",
@@ -525,8 +503,7 @@
         "The magma with the lower volume, regardless of viscosity"
       ],
       "answer": 0,
-      "why": "Viscous magma can trap expanding volatiles. The combination of high viscosity and gas favors pressure buildup and explosive activity.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 13 and 16-17"
+      "why": "Viscous magma can trap expanding volatiles. The combination of high viscosity and gas favors pressure buildup and explosive activity."
     },
     {
       "id": "vol-4",
@@ -539,8 +516,7 @@
         "Repeated collapse of one small cinder cone"
       ],
       "answer": 0,
-      "why": "Flood-basalt provinces form when enormous volumes of basaltic lava are erupted, covering broad areas.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 13-15"
+      "why": "Flood-basalt provinces form when enormous volumes of basaltic lava are erupted, covering broad areas."
     },
     {
       "id": "vol-5",
@@ -553,8 +529,7 @@
         "A lack of molten material"
       ],
       "answer": 0,
-      "why": "Basaltic magma is typically hot and low in silica, so its low viscosity lets lava flow readily and travel farther.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 19-21"
+      "why": "Basaltic magma is typically hot and low in silica, so its low viscosity lets lava flow readily and travel farther."
     },
     {
       "id": "vol-6",
@@ -567,8 +542,7 @@
         "Craters, volcanic gases, and intrusive plutons"
       ],
       "answer": 0,
-      "why": "Eruption products include volcanic gases, fragmented pyroclastic material, and lava flows.",
-      "source": "ERTH 209 Chapter 5 lecture, slide 19"
+      "why": "Eruption products include volcanic gases, fragmented pyroclastic material, and lava flows."
     },
     {
       "id": "vol-7",
@@ -581,8 +555,7 @@
         "A mantle plume"
       ],
       "answer": 0,
-      "why": "Pyroclastic flows are fast-moving, hot mixtures of gas and volcanic fragments that travel along the ground and are extremely hazardous.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 29-31 and 35"
+      "why": "Pyroclastic flows are fast-moving, hot mixtures of gas and volcanic fragments that travel along the ground and are extremely hazardous."
     },
     {
       "id": "vol-8",
@@ -595,8 +568,7 @@
         "A crater"
       ],
       "answer": 0,
-      "why": "A lahar is a water-rich flow of volcanic debris that can move down valleys and threaten communities far from the vent.",
-      "source": "ERTH 209 Chapter 5 lecture, slide 46"
+      "why": "A lahar is a water-rich flow of volcanic debris that can move down valleys and threaten communities far from the vent."
     },
     {
       "id": "vol-9",
@@ -609,8 +581,7 @@
         "A stratovolcano formed only from ash"
       ],
       "answer": 0,
-      "why": "Fluid basalt can spread widely in successive flows, building the broad, gently sloping profile characteristic of a shield volcano.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 40 and 42"
+      "why": "Fluid basalt can spread widely in successive flows, building the broad, gently sloping profile characteristic of a shield volcano."
     },
     {
       "id": "vol-10",
@@ -623,8 +594,7 @@
         "A cinder cone"
       ],
       "answer": 0,
-      "why": "A caldera is a large collapse depression associated with loss of support as magma is withdrawn from a volcanic system; it is larger and formed differently from a summit crater.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 40 and 45"
+      "why": "A caldera is a large collapse depression associated with loss of support as magma is withdrawn from a volcanic system; it is larger and formed differently from a summit crater."
     },
     {
       "id": "vol-11",
@@ -637,8 +607,7 @@
         "The mineral hardness of old lava flows"
       ],
       "answer": 0,
-      "why": "Magma movement can deform the ground, change seismic activity, alter gas output, and affect the temperature or chemistry of springs.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 57-59"
+      "why": "Magma movement can deform the ground, change seismic activity, alter gas output, and affect the temperature or chemistry of springs."
     },
     {
       "id": "vol-12",
@@ -651,8 +620,7 @@
         "They identify the exact volume of the next eruption"
       ],
       "answer": 0,
-      "why": "These changes can indicate an impending eruption, but monitoring cannot determine its exact timing or eruption style with certainty.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 57-59"
+      "why": "These changes can indicate an impending eruption, but monitoring cannot determine its exact timing or eruption style with certainty."
     },
     {
       "id": "vol-13",
@@ -665,8 +633,7 @@
         "Drink untreated spring water to prevent exposure"
       ],
       "answer": 0,
-      "why": "Volcanic gases such as sulfur dioxide, hydrogen sulfide, carbon monoxide, and concentrated carbon dioxide can be poisonous or cause respiratory illness.",
-      "source": "ERTH 209 Chapter 5 lecture, slide 63"
+      "why": "Volcanic gases such as sulfur dioxide, hydrogen sulfide, carbon monoxide, and concentrated carbon dioxide can be poisonous or cause respiratory illness."
     },
     {
       "id": "vol-14",
@@ -679,8 +646,7 @@
         "Immediate melting of the entire volcanic cone"
       ],
       "answer": 0,
-      "why": "Ash and aerosols high in the atmosphere can block or reflect sunlight, producing temporary cooling; Tambora's 1815 eruption is one example.",
-      "source": "ERTH 209 Chapter 5 lecture, slides 69-70"
+      "why": "Ash and aerosols high in the atmosphere can block or reflect sunlight, producing temporary cooling; Tambora's 1815 eruption is one example."
     },
     {
       "id": "vol-15",
@@ -693,8 +659,7 @@
         "Tsunamis are another name for volcanic gases"
       ],
       "answer": 0,
-      "why": "Although uncommon, volcanic eruptions can generate tsunamis; Krakatau's 1883 eruption is a well-known example.",
-      "source": "ERTH 209 Chapter 5 lecture, slide 52"
+      "why": "Although uncommon, volcanic eruptions can generate tsunamis; Krakatau's 1883 eruption is a well-known example."
     },
     {
       "id": "vol-16",
@@ -707,8 +672,7 @@
         "A volcanic landform proves the body has active plate tectonics like Earth"
       ],
       "answer": 0,
-      "why": "Volcanic activity is found beyond Earth, including on the Moon and on other planets and planetary moons.",
-      "source": "ERTH 209 Chapter 5 lecture, slide 71"
+      "why": "Volcanic activity is found beyond Earth, including on the Moon and on other planets and planetary moons."
     }
   ]
 }
