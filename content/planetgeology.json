@@ -1,0 +1,2924 @@
+{
+ "id": "planetgeology",
+ "title": "Planetary Geology",
+ "chapter": "Ch 9.1, 9.2 and 9.6",
+ "icon": "🌋",
+ "color": "#7c3aed",
+ "slideFile": "Ch9.1_pt1.pdf; Ch9.1_pt2.pdf; Ch9.2.pdf; Ch9.6.pdf",
+ "intro": "Why do the rocky worlds look so different today? Look inside a planet (core, mantle, crust and the rigid lithosphere, and how earthquake waves reveal them), follow the internal heat that powers geology and magnetic fields, and see why size decides how long a world stays active. Then meet the four processes that shape every surface (impact cratering, volcanism, tectonics and erosion), learn to date a surface by its craters, and finish with Earth's unique plate tectonics: moving plates, young seafloor, trenches, rifts, faults and hot spots.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Describe the core, mantle and crust of a terrestrial world and explain how P and S waves from earthquakes reveal Earth's interior, including its liquid outer core."
+  },
+  {
+   "id": "goal-02",
+   "text": "Define the lithosphere (the cool, rigid crust plus uppermost mantle) and the asthenosphere, and explain why smaller worlds have thicker lithospheres."
+  },
+  {
+   "id": "goal-03",
+   "text": "Explain differentiation as gravity separating molten material by density, with metal sinking to the core."
+  },
+  {
+   "id": "goal-04",
+   "text": "Name the three sources of internal heat (accretion, differentiation, radioactive decay) and identify radioactive decay as the main one today."
+  },
+  {
+   "id": "goal-05",
+   "text": "Distinguish convection, conduction and radiation and say where each one carries heat out of a planet."
+  },
+  {
+   "id": "goal-06",
+   "text": "Use the surface area-to-volume ratio of a sphere (3/r) to explain why larger planets keep their heat, volcanism, tectonics and atmosphere longer."
+  },
+  {
+   "id": "goal-07",
+   "text": "State the three requirements for a global magnetic field and predict what happens to the field if a planet's core cools or its rotation is slow."
+  },
+  {
+   "id": "goal-08",
+   "text": "Identify impact cratering, volcanism, tectonics and erosion, classify landforms by the process that made them, and relate crater size to impactor size and volcano steepness to lava viscosity."
+  },
+  {
+   "id": "goal-09",
+   "text": "Use crater counts to compare the geological ages of surfaces, and explain how size, distance from the Sun and rotation rate shape a world's geology."
+  },
+  {
+   "id": "goal-10",
+   "text": "Describe Earth's plate tectonics: plate speeds, young seafloor and old continental crust, subduction at trenches, convergent, divergent and transform boundaries, and hot-spot island chains such as Hawaii."
+  }
+ ],
+ "sections": [
+  {
+   "id": "inside",
+   "title": "Looking inside a rocky world",
+   "slides": "Ch9.1 pt1: slides 2-5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_five_worlds.webp",
+      "slide": "slide 2 (Ch9.1 pt1)",
+      "alt": "Mercury, Venus, Earth, the Moon and Mars shown to scale, each with a close-up of its surface: craters, a radar view of a volcano, clouds and land, more craters and dry channels."
+     },
+     "title": "Same start, different faces",
+     "bullets": [
+      "The five **terrestrial worlds** are Mercury, Venus, Earth, the Moon and Mars. All are rocky and all were pounded by impacts when young, so they probably started out looking alike.",
+      "Today they look very different: Mercury and the Moon are crowded with craters, Venus has strange volcanoes, Mars has giant volcanoes, a huge canyon and dry channels, and Earth shows every kind of feature.",
+      "Those differences built up over billions of years, and most of the change was driven from **inside** each world.",
+      "**Planetary geology** extends the study of Earth's rocks to every solid world, so Earth is the best place to start."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_nebula_composition.webp",
+      "slide": "slide 3 (Ch9.1 pt1)",
+      "alt": "Pie chart of the gas the solar system formed from: hydrogen 71%, helium 27%, hydrogen compounds 1.4%, rocks 0.4% and metals 0.2%."
+     },
+     "title": "Built from rock and metal",
+     "bullets": [
+      "The gas cloud the solar system formed from was about 98% **hydrogen and helium** by mass. Rock and metal together were well under 1%.",
+      "The inner planets did not collect that hydrogen and helium, so they are made almost entirely of the rare ingredients: **rock and metal**.",
+      "That is why each terrestrial world is a metal centre wrapped in rock."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_p_s_waves.webp",
+      "slide": "slide 4 (Ch9.1 pt1)",
+      "alt": "A hand pushing a coiled spring back and forth to make a compression wave, and a hand shaking it up and down to make a sideways wave."
+     },
+     "title": "Earthquake waves: P and S",
+     "bullets": [
+      "Our deepest drill holes reach less than 1% of the way to Earth's centre, so we learn about the interior from **seismic waves**, the vibrations an earthquake sends through the planet. It is like shaking a wrapped present to guess what is inside.",
+      "**P waves** (push-pull) squeeze and stretch the rock in the direction they travel. They pass through solids, liquids and gases, and bend when they cross into a new layer.",
+      "**S waves** (shear, side to side) shake the rock across their direction of travel. They move only through **solids**, because a liquid cannot pass on a sideways push.",
+      "The speed and path of both waves depend on the density, temperature, pressure and makeup of the rock, and on whether it is solid or liquid."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_seismic_paths.webp",
+      "slide": "slide 5 (Ch9.1 pt1)",
+      "alt": "Cutaway Earth showing wave paths from an earthquake to a monitoring station: S waves travel only through the mantle while P waves also pass through the core."
+     },
+     "title": "What the waves reveal",
+     "bullets": [
+      "Stations on the far side of Earth from an earthquake pick up P waves but no S waves. A liquid layer must be stopping the S waves: Earth's **liquid outer core**.",
+      "Combining records from many stations shows a solid **mantle**, a dense **core** with a liquid outer part and a solid inner part, and a thin **crust** on top.",
+      "The Moon and Mars got the same treatment from seismometers: some left behind by Apollo astronauts, one carried by the Mars InSight lander.",
+      "For other worlds we rely on indirect clues: comparing a world's **average density** with the density of its surface rock, gravity measured by spacecraft, magnetic fields and volcanic rocks."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why can S waves not cross a liquid? A sideways shake travels only if neighbouring particles are bonded tightly enough to drag each other along. In a liquid the particles flow past one another, so the shear wave dies, while a push-pull wave still gets through."
+    },
+    {
+     "type": "trick",
+     "text": "P = Push (passes through anything). S = Shear or Sideways (solids only). No S waves on the far side of Earth = a liquid layer inside."
+    },
+    {
+     "type": "trap",
+     "text": "When asked how we know what is inside Earth, the answer is seismic data from earthquakes. Drilling, X-ray or gamma-ray imaging and probes dropped into volcanoes are distractors. Ch9.1 pt1 slides 4-5; Cosmic Perspective 9.1 Special Topic."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.1, pp. 238-241 (Figure 9.1, Special Topic 'How do we know what's inside Earth?')",
+    "Ch9.1 pt1 slides 2-5"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_five_worlds.webp",
+     "slide": "slide 2 (Ch9.1 pt1)",
+     "alt": "Mercury, Venus, Earth, the Moon and Mars shown to scale, each with a close-up of its surface: craters, a radar view of a volcano, clouds and land, more craters and dry channels."
+    },
+    {
+     "src": "img/planetgeology/pg_nebula_composition.webp",
+     "slide": "slide 3 (Ch9.1 pt1)",
+     "alt": "Pie chart of the gas the solar system formed from: hydrogen 71%, helium 27%, hydrogen compounds 1.4%, rocks 0.4% and metals 0.2%."
+    },
+    {
+     "src": "img/planetgeology/pg_p_s_waves.webp",
+     "slide": "slide 4 (Ch9.1 pt1)",
+     "alt": "A hand pushing a coiled spring back and forth to make a compression wave, and a hand shaking it up and down to make a sideways wave."
+    },
+    {
+     "src": "img/planetgeology/pg_seismic_paths.webp",
+     "slide": "slide 5 (Ch9.1 pt1)",
+     "alt": "Cutaway Earth showing wave paths from an earthquake to a monitoring station: S waves travel only through the mantle while P waves also pass through the core."
+    }
+   ]
+  },
+  {
+   "id": "layers",
+   "title": "Layers by density and by rock strength",
+   "slides": "Ch9.1 pt1: slides 6-11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_earth_layers.webp",
+      "slide": "slide 8 (Ch9.1 pt1)",
+      "alt": "A wedge cut from Earth labelled from the surface down: continental and oceanic crust, lithosphere, asthenosphere, mantle to 2900 km, liquid outer core to 5100 km and solid inner core to 6378 km."
+     },
+     "title": "Core, mantle and crust",
+     "bullets": [
+      "Sorted by density, every terrestrial world has three layers. The **core** at the centre is the densest and is made mostly of **iron and nickel**.",
+      "The **mantle** around it is a thick layer of medium-density rock rich in silicon and oxygen, with heavier elements such as magnesium and iron.",
+      "The **crust** is a thin outer skin of the least dense rock, such as granite and basalt.",
+      "Earth's core has a **solid inner core** inside a **liquid outer core**. The inner core is hotter, but the even greater pressure at its depth keeps it solid.",
+      "Earth's radius is about 6378 km. The mantle ends about 2900 km down, and the outer core ends about 5100 km down."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_interior_rocks.webp",
+      "slide": "slide 7 (Ch9.1 pt1)",
+      "alt": "Six labelled photos: quartzite, marble, granite peaks, an iron-nickel meteorite, green peridotite and white limestone terraces."
+     },
+     "title": "Rocks from each layer",
+     "bullets": [
+      "An **iron-nickel alloy**, like the metal in some meteorites, stands in for the core.",
+      "**Peridotite**, a dense green rock rich in magnesium and iron, is typical of the mantle.",
+      "Granite, quartzite, marble and limestone are lighter rocks of the **crust**.",
+      "Seismic models of density at each depth agree: density jumps sharply at the core and is lowest near the surface."
+     ]
+    },
+    {
+     "title": "Lithosphere and asthenosphere",
+     "bullets": [
+      "Layers can also be grouped by **rock strength**. Over millions of years solid rock can bend and flow, like putty that snaps when pulled fast but stretches when pulled slowly, and warm rock flows more easily.",
+      "The **lithosphere** is the cool, rigid outer layer. It is made of the **crust plus the uppermost part of the mantle**.",
+      "The lithosphere \"floats\" on the **asthenosphere**, a warmer, softer layer of the mantle beneath it.",
+      "Earth is not full of molten lava: its mantle and crust are almost entirely **solid**. Only the outer core is fully molten, and lava comes from small pockets of partly melted rock below the lithosphere."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_terrestrial_interiors.webp",
+      "slide": "slide 11 (Ch9.1 pt1)",
+      "alt": "Cutaways of Earth, Venus, Mars, Mercury and the Moon drawn to scale, showing crust, mantle, metal core and a dashed line for the bottom of the rigid lithosphere."
+     },
+     "title": "Comparing five interiors",
+     "bullets": [
+      "Drawn to scale, all five worlds have a core, mantle and crust. Smaller worlds have relatively **thicker lithospheres**: in Mars, Mercury and the Moon the rigid layer reaches almost to the core, while Earth's and Venus's are thin.",
+      "A **thin lithosphere** cracks easily and lets molten rock through. A **thick lithosphere** is strong and blocks it, so volcanoes and new mountains become unlikely.",
+      "Mercury's metal core is surprisingly large and the Moon's is tiny, which hints that giant impacts shaped both worlds.",
+      "Gravity can slowly mould rock: any rocky body more than about **500 km** across becomes round, while smaller ones stay potato-shaped."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do small worlds have thick lithospheres? Their interiors have lost more heat, and cool rock is rigid. As a world cools, the rigid zone creeps deeper and deeper."
+    },
+    {
+     "type": "trick",
+     "text": "Lithosphere = 'stone sphere' = crust + top of the mantle, rigid. Asthenosphere = the soft layer under it. Core = metal, mantle = dense rock, crust = light rock."
+    },
+    {
+     "type": "trap",
+     "text": "The lithosphere is not the layer between the crust and the mantle, not the soft rock below, and not lava: it is the crust plus the rigid uppermost mantle. Cosmic Perspective 9.1 Common Misconceptions box: our planet is not filled with molten lava."
+    }
+   ],
+   "table": {
+    "title": "Two ways to divide the inside",
+    "head": [
+     "Way of dividing",
+     "Layers",
+     "What sets the boundary"
+    ],
+    "rows": [
+     [
+      "By density (chemical)",
+      "Core, mantle, crust",
+      "What the material is made of and how dense it is"
+     ],
+     [
+      "By strength (physical)",
+      "Rigid lithosphere over the softer asthenosphere",
+      "How cool and stiff or warm and soft the rock is"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Cosmic Perspective 9.1, pp. 239-240 (Figures 9.2 and 9.3)",
+    "Ch9.1 pt1 slides 6-11"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_earth_layers.webp",
+     "slide": "slide 8 (Ch9.1 pt1)",
+     "alt": "A wedge cut from Earth labelled from the surface down: continental and oceanic crust, lithosphere, asthenosphere, mantle to 2900 km, liquid outer core to 5100 km and solid inner core to 6378 km."
+    },
+    {
+     "src": "img/planetgeology/pg_interior_rocks.webp",
+     "slide": "slide 7 (Ch9.1 pt1)",
+     "alt": "Six labelled photos: quartzite, marble, granite peaks, an iron-nickel meteorite, green peridotite and white limestone terraces."
+    },
+    {
+     "src": "img/planetgeology/pg_terrestrial_interiors.webp",
+     "slide": "slide 11 (Ch9.1 pt1)",
+     "alt": "Cutaways of Earth, Venus, Mars, Mercury and the Moon drawn to scale, showing crust, mantle, metal core and a dashed line for the bottom of the rigid lithosphere."
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "title": "Differentiation and the sources of internal heat",
+   "slides": "Ch9.1 pt2: slides 1-3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_differentiation.webp",
+      "slide": "slide 1 (Ch9.1 pt2)",
+      "alt": "Cutaway Earth labelled rocky crust of lower density, mantle of medium density, metal core of highest density, and the rigid lithosphere made of the crust and part of the mantle."
+     },
+     "title": "Differentiation sorts by density",
+     "bullets": [
+      "When a young world was hot enough inside for rock and metal to **melt**, gravity pulled the denser material down and the lighter material rose.",
+      "This sorting by density is **differentiation**: dense **iron and nickel** sank to form the core, and lighter rock floated up to make the mantle and crust.",
+      "It works like oil and water in a jar: the denser water sinks and the oil ends up on top.",
+      "Because all the terrestrial worlds are layered, all of them must once have been molten inside."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_heat_sources.webp",
+      "slide": "slide 2 (Ch9.1 pt2)",
+      "alt": "A cutaway planet with arrows to an impact on its surface labelled accretion, to sparks in the mantle labelled radioactivity, and to sinking material labelled differentiation."
+     },
+     "title": "Three sources of internal heat",
+     "bullets": [
+      "Geology runs on **internal heat**, not sunlight. Sunlight warms only the top few metres of the ground.",
+      "**Accretion**: planetesimals crashed into the growing planet, and their energy of motion turned into heat on impact.",
+      "**Differentiation**: as dense metal sank, friction turned its lost gravitational energy into heat, like a brick very slightly warming a pool as it sinks to the bottom.",
+      "**Radioactive decay**: unstable atoms of uranium, potassium and thorium break apart, and the fast particles they shoot out heat the surrounding rock."
+     ]
+    },
+    {
+     "title": "Which heat source still works today?",
+     "bullets": [
+      "Accretion and differentiation added heat only while the planets were **very young**. Their leftover heat is still slowly leaking out.",
+      "**Radioactive decay** never stopped, so it is now the **only major source** of new heat inside the terrestrial worlds (uranium-238 is one example).",
+      "Decay was even stronger early on, because more radioactive atoms were still around.",
+      "High pressure alone does not keep rock hot. When the radioactive atoms run out, Earth's deep interior will cool even though the pressure stays the same.",
+      "Early on, impacts melted the outer layers, which started differentiation, which released more heat; with strong early radioactivity the interiors melted all the way through."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why can sunlight not power volcanoes? Its energy is absorbed in the top few metres of ground and radiated away again. The heat that melts rock deep down comes from the planet itself."
+    },
+    {
+     "type": "trick",
+     "text": "Heat sources = A-D-R: Accretion, Differentiation, Radioactive decay. Only R still adds much heat today."
+    },
+    {
+     "type": "trap",
+     "text": "Convection, conduction, radiation and eruption are ways heat moves or escapes, not sources of heat. Tidal heating matters for some moons such as Io but not for the terrestrial planets. Ch9.1 pt2 slides 2-3; Cosmic Perspective Figure 9.4."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.1, pp. 239-242 (differentiation; Figure 9.4; Common Misconceptions 'Pressure and Temperature')",
+    "Ch9.1 pt2 slides 1-3"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_differentiation.webp",
+     "slide": "slide 1 (Ch9.1 pt2)",
+     "alt": "Cutaway Earth labelled rocky crust of lower density, mantle of medium density, metal core of highest density, and the rigid lithosphere made of the crust and part of the mantle."
+    },
+    {
+     "src": "img/planetgeology/pg_heat_sources.webp",
+     "slide": "slide 2 (Ch9.1 pt2)",
+     "alt": "A cutaway planet with arrows to an impact on its surface labelled accretion, to sparks in the mantle labelled radioactivity, and to sinking material labelled differentiation."
+    }
+   ]
+  },
+  {
+   "id": "cooling",
+   "title": "How interiors cool and why size matters",
+   "slides": "Ch9.1 pt2: slides 4-6; Ch9.2: slide 21",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_cooling.webp",
+      "slide": "slide 4 (Ch9.1 pt2)",
+      "alt": "Cutaway planet with looping arrows of convection in the mantle under a rigid outer shell and wavy arrows of radiation leaving the surface."
+     },
+     "title": "Convection, conduction and radiation",
+     "bullets": [
+      "**Convection**: heated material swells and rises, cooler material shrinks and sinks, and the motion carries heat upward, just like soup in a pot on a stove.",
+      "In Earth's mantle, mostly **solid rock** convects very slowly, a few centimetres a year, in loops called **convection cells**. A piece of rock takes about 100 million years to rise from the bottom of the mantle to the top.",
+      "Convection stops at the base of the rigid **lithosphere**. Through the lithosphere heat moves mainly by **conduction**: fast-jiggling atoms pass energy to slower neighbours by contact, as when you touch a hot pan.",
+      "At the surface the heat leaves into space by **radiation**, mostly as infrared light. Volcanic eruptions also carry some heat straight up through the lithosphere."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_role_size.webp",
+      "slide": "slide 21 (Ch9.2)",
+      "alt": "A small cutaway planet with a cold, thick rigid shell beside a large cutaway planet with many glowing convection loops in its mantle."
+     },
+     "title": "Big worlds stay hot longer",
+     "bullets": [
+      "Inside, a hot potato keeps its heat far longer than a hot pea does. Think of a big planet as a small one wrapped in extra rock, and that extra rock works as **insulation**.",
+      "The small **Moon and Mercury** cooled within about a billion years. Their lithospheres thickened, mantle convection stopped, and they are now geologically **\"dead\"**.",
+      "Earth, the largest, is still hot inside: mantle convection continues and the lithosphere stays thin, so the surface keeps changing. Venus, almost the same size, is probably nearly as active.",
+      "Mars, in between in size, has cooled a lot but may keep some activity.",
+      "From most to least geologically active: **Earth, Venus, Mars, Mercury, the Moon**."
+     ]
+    },
+    {
+     "title": "Surface area-to-volume ratio: a worked example",
+     "bullets": [
+      "The heat a planet stores depends on its **volume**, but heat can escape only through its **surface area**.",
+      "For a sphere of radius r, surface area = 4πr² and volume = (4/3)πr³, so **surface area ÷ volume = 3/r**. A bigger r gives a **smaller ratio** and slower cooling.",
+      "Worked example: a ball of radius 2 km has surface area 16π km² and volume (32/3)π km³, a ratio of 1.5 per km. A ball of radius 6 km has surface area 144π km² and volume 288π km³, a ratio of 0.5 per km.",
+      "Tripling the radius cuts the ratio to one third, so each cubic kilometre of the big ball has a third as much surface to lose heat through: it cools about three times more slowly.",
+      "To go from one quantity to the other, find r first, then use volume = surface area ÷ (3/r). The Moon's radius is 1738 km and Earth's is 6378 km, so the Moon's ratio is about 3.7 times Earth's."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a thin lithosphere mean an active planet? A hot interior keeps the rigid layer thin, and a thin lithosphere cracks and lets magma through, giving volcanoes and tectonics. As a world cools, its lithosphere thickens until nothing gets through."
+    },
+    {
+     "type": "trick",
+     "text": "Ratio = 3/r: bigger radius, smaller ratio, slower cooling, longer-lasting geology. Big world = hot potato; small world = pea."
+    },
+    {
+     "type": "trap",
+     "text": "Inside the rigid lithosphere heat travels mainly by conduction, not convection. Being bigger does not make a planet's surface warmer: surface temperature depends mainly on distance from the Sun and the atmosphere. Cosmic Perspective Figure 9.5 and Mathematical Insight 9.1."
+    }
+   ],
+   "table": {
+    "title": "Three ways heat moves",
+    "head": [
+     "Process",
+     "How it works",
+     "Where it happens in a planet"
+    ],
+    "rows": [
+     [
+      "Convection",
+      "Hot material rises, cooler material sinks",
+      "The mantle (and the liquid outer core)"
+     ],
+     [
+      "Conduction",
+      "Heat passes from hot to cooler material by contact",
+      "Through the rigid lithosphere"
+     ],
+     [
+      "Radiation",
+      "Energy leaves as light, mostly infrared",
+      "From the surface out to space"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Cosmic Perspective 9.1, pp. 242-243 (Figure 9.5, 'Planetary Size Controls Geological Activity', Mathematical Insight 9.1)",
+    "Ch9.1 pt2 slides 4-6; Ch9.2 slide 21"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_cooling.webp",
+     "slide": "slide 4 (Ch9.1 pt2)",
+     "alt": "Cutaway planet with looping arrows of convection in the mantle under a rigid outer shell and wavy arrows of radiation leaving the surface."
+    },
+    {
+     "src": "img/planetgeology/pg_role_size.webp",
+     "slide": "slide 21 (Ch9.2)",
+     "alt": "A small cutaway planet with a cold, thick rigid shell beside a large cutaway planet with many glowing convection loops in its mantle."
+    }
+   ]
+  },
+  {
+   "id": "magnetic",
+   "title": "Why some worlds have magnetic fields",
+   "slides": "Ch9.1 pt2: slides 7-10",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_magnet_bar_earth.webp",
+      "slide": "slide 7 (Ch9.1 pt2)",
+      "alt": "Iron filings lining up along curved field lines around a bar magnet, next to a model of Earth's magnetic field lines looping out of the planet."
+     },
+     "title": "A planet-sized magnet",
+     "bullets": [
+      "Earth's **magnetic field** has much the same shape as the field around a bar magnet, with field lines looping from one pole to the other.",
+      "It is what makes a compass needle point north.",
+      "But there is no giant bar magnet inside Earth. The field is made by moving electric charges, the way an electromagnet works."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_electromagnet.webp",
+      "slide": "slide 8 (Ch9.1 pt2)",
+      "alt": "A battery wired to a coil wrapped around a metal bar, with magnetic field lines looping around the coil."
+     },
+     "title": "Moving charges make magnetic fields",
+     "bullets": [
+      "In an **electromagnet**, a battery drives electrons around a coil of wire, and the moving charges create a magnetic field.",
+      "The more charges are moving, and the faster they move, the **stronger** the field.",
+      "So a planet needs some way to keep large numbers of charges moving inside it, and that is the job of a molten metal core."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_earth_dynamo.webp",
+      "slide": "slide 9 (Ch9.1 pt2)",
+      "alt": "Earth cut open to show its core, with field lines looping around the planet and labels for moderately rapid rotation and electrically conducting, convecting molten metals."
+     },
+     "title": "Three requirements",
+     "bullets": [
+      "Earth's liquid outer core is **molten metal** that conducts electricity. Internal heat makes it **convect**, and Earth's **rotation** twists the flow, so charges circulate as in an electromagnet.",
+      "A global magnetic field needs all three: an interior layer of **electrically conducting fluid** such as molten metal, **convection** in that layer, and at least **moderately rapid rotation**.",
+      "Of the terrestrial worlds, only Earth satisfies all three, which is why its field is the **strongest**.",
+      "The **Moon**'s core cooled and stopped convecting long ago, and **Mars** no longer has enough core heat for convection, so neither has a global field today. **Venus**, whose core is probably molten, rotates only once every 243 days and has no field. **Mercury** has a weak field, probably from its huge, partly molten core."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_aurora.webp",
+      "slide": "slide 10 (Ch9.1 pt2)",
+      "alt": "Two night-sky photos of auroras: purple light above a line of trees and green curtains of light above a snowy landscape."
+     },
+     "title": "The magnetosphere and auroras",
+     "bullets": [
+      "Earth's field forms a protective bubble, the **magnetosphere**, that steers the fast charged particles of the **solar wind** around the planet.",
+      "Some particles are funnelled toward the poles, where they make the upper air glow as **auroras**.",
+      "By stopping the solar wind from stripping away the atmosphere, the field has probably helped Earth stay habitable."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why would cooling end a magnetic field? If the core freezes or stops convecting, the conducting fluid stops circulating, so nothing is left to generate the field, however fast the planet spins."
+    },
+    {
+     "type": "trick",
+     "text": "Field = Fluid metal + Flowing (convection) + Fast spin. Remove any one and the global field fails."
+    },
+    {
+     "type": "trap",
+     "text": "A molten core alone is not enough (Venus spins too slowly) and fast rotation alone is not enough. A metal core under a rocky mantle can be completely solid, as on the Moon. Ch9.1 pt2 slide 9; Cosmic Perspective Figure 9.6."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.1, pp. 243-244 (Figure 9.6)",
+    "Ch9.1 pt2 slides 7-10"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_magnet_bar_earth.webp",
+     "slide": "slide 7 (Ch9.1 pt2)",
+     "alt": "Iron filings lining up along curved field lines around a bar magnet, next to a model of Earth's magnetic field lines looping out of the planet."
+    },
+    {
+     "src": "img/planetgeology/pg_electromagnet.webp",
+     "slide": "slide 8 (Ch9.1 pt2)",
+     "alt": "A battery wired to a coil wrapped around a metal bar, with magnetic field lines looping around the coil."
+    },
+    {
+     "src": "img/planetgeology/pg_earth_dynamo.webp",
+     "slide": "slide 9 (Ch9.1 pt2)",
+     "alt": "Earth cut open to show its core, with field lines looping around the planet and labels for moderately rapid rotation and electrically conducting, convecting molten metals."
+    },
+    {
+     "src": "img/planetgeology/pg_aurora.webp",
+     "slide": "slide 10 (Ch9.1 pt2)",
+     "alt": "Two night-sky photos of auroras: purple light above a line of trees and green curtains of light above a snowy landscape."
+    }
+   ]
+  },
+  {
+   "id": "impacts",
+   "title": "Four processes and impact cratering",
+   "slides": "Ch9.2: slides 2-5",
+   "steps": [
+    {
+     "title": "Four processes shape every surface",
+     "bullets": [
+      "Rocky surfaces are remarkably smooth: Earth's tallest mountains rise only about 10 km, less than 1/600 of its radius, like a grain of sand on a globe.",
+      "Almost every surface feature comes from four processes: **impact cratering**, **volcanism**, **tectonics** and **erosion**.",
+      "**Impact cratering**: asteroids or comets strike the surface and blast out bowl-shaped craters. **Volcanism**: molten rock erupts from inside onto the surface.",
+      "**Tectonics**: stresses from inside stretch, squeeze and break the surface. **Erosion**: wind, water and ice wear features down or build them up.",
+      "Impact cratering is the only one with a cause from **outside** the planet."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_impact_sequence.webp",
+      "slide": "slide 3 (Ch9.2)",
+      "alt": "A sequence of drawings from top to bottom: an object striking a surface, a fan of debris spraying out, and a wide bowl-shaped crater left behind."
+     },
+     "title": "How an impact makes a crater",
+     "bullets": [
+      "An asteroid or comet hits at roughly **10-70 km/s** (40,000-250,000 km/h). The energy vaporizes rock and blasts out a crater, and debris rains down over a wide area.",
+      "Craters are almost always **round**, because the blast throws material out in every direction, whatever angle the impactor came in at.",
+      "Rule of thumb: a crater is about **10 times as wide** as the object that made it (often wider) and about 10-20% as deep as it is wide. A 1 km asteroid digs a crater about 10 km across and 1-2 km deep.",
+      "Most craters formed during the **heavy bombardment**, when the planets were young. Small craters far outnumber large ones, because small leftover objects were far more common."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_meteor_tycho.webp",
+      "slide": "slide 4 (Ch9.2)",
+      "alt": "An aerial photo of Meteor Crater in the Arizona desert beside an orbital view of Tycho crater on the Moon with its central peak."
+     },
+     "title": "Two real craters",
+     "bullets": [
+      "**Meteor Crater** in Arizona is more than 1 km across and almost 200 m deep. A metal asteroid only about 50 m wide made it about 50,000 years ago.",
+      "**Tycho** on the Moon shows the classic shape: a raised rim and a **central peak**.",
+      "The impactor's **kinetic energy**, set by its mass and above all its speed, decides how big the crater is."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_crater_shapes.webp",
+      "slide": "slide 5 (Ch9.2)",
+      "alt": "Three Mars craters side by side: a typical bowl-shaped crater, a crater with mud-like flows from an impact on icy ground, and a smoothed, eroded crater."
+     },
+     "title": "Crater shapes tell a story",
+     "bullets": [
+      "A large crater can have a **central peak**: for an instant the ground is hot and soft, and the centre rebounds upward, like water splashing back when a pebble drops in, then freezes in place.",
+      "On Mars, a simple **bowl** with a sharp rim and a ring of debris is a typical fresh crater.",
+      "A crater with a big central bump and flows that look like hardened mud suggests an impact into **icy or wet ground**.",
+      "A crater with a worn-down rim and a flat floor suggests **erosion** by ancient rain, so crater shapes reveal past conditions."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is a crater so much wider than the impactor? At tens of kilometres per second, the impactor carries huge energy for its size. It explodes on contact and digs out far more rock than its own volume."
+    },
+    {
+     "type": "trick",
+     "text": "Crater ≈ 10 × the impactor. A 1 km rock makes a crater about 10 km wide."
+    },
+    {
+     "type": "trap",
+     "text": "Do not pick 'the same size' or '10-20 percent larger': 10-20% is how deep a crater is compared with its own width. Ch9.2 slide 3 adds that craters are often wider than 10 times; Cosmic Perspective 9.2."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.2, pp. 244-246 (Figures 9.7, 9.8, 9.9)",
+    "Ch9.2 slides 2-5"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_impact_sequence.webp",
+     "slide": "slide 3 (Ch9.2)",
+     "alt": "A sequence of drawings from top to bottom: an object striking a surface, a fan of debris spraying out, and a wide bowl-shaped crater left behind."
+    },
+    {
+     "src": "img/planetgeology/pg_meteor_tycho.webp",
+     "slide": "slide 4 (Ch9.2)",
+     "alt": "An aerial photo of Meteor Crater in the Arizona desert beside an orbital view of Tycho crater on the Moon with its central peak."
+    },
+    {
+     "src": "img/planetgeology/pg_crater_shapes.webp",
+     "slide": "slide 5 (Ch9.2)",
+     "alt": "Three Mars craters side by side: a typical bowl-shaped crater, a crater with mud-like flows from an impact on icy ground, and a smoothed, eroded crater."
+    }
+   ]
+  },
+  {
+   "id": "volcanism",
+   "title": "Volcanism and outgassing",
+   "slides": "Ch9.2: slides 7-11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_volcanism.webp",
+      "slide": "slide 7 (Ch9.2)",
+      "alt": "A fountain and river of glowing lava from an erupting volcano, with an inset block diagram of molten rock collecting below the surface and rising to a vent."
+     },
+     "title": "Why molten rock rises",
+     "bullets": [
+      "**Volcanism** happens when underground molten rock, **magma**, finds a path up through the lithosphere. Once it reaches the surface it is called **lava**.",
+      "Magma rises because it is **less dense** than the solid rock around it, because the surrounding rock **squeezes** it, and because gas trapped in it **expands** as it rises, which can make eruptions violent.",
+      "It often collects in a **magma chamber** before erupting.",
+      "Volcanoes are described as active, dormant or extinct. Earth may have hundreds of thousands of volcanoes, but only several hundred (about 0.1%) are active."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_lava_types.webp",
+      "slide": "slide 9 (Ch9.2)",
+      "alt": "Three views with cutaway blocks: flat lava plains on the Moon from runny lava, the broad shield volcano Olympus Mons on Mars, and steep Mount Hood on Earth from the thickest lava."
+     },
+     "title": "Thick or runny lava sets the shape",
+     "bullets": [
+      "A volcano's steepness depends on how easily its lava flows, its **viscosity**: water has a low viscosity, honey a high one.",
+      "The **runniest lava** flows far before hardening and makes flat **volcanic plains**, such as the dark maria of the Moon.",
+      "**Slightly thicker lava** builds broad, gently sloping **shield volcanoes**, such as the mountains of Hawaii and Olympus Mons on Mars. They can be very tall but are not steep.",
+      "The **thickest lava** cannot flow far, so it piles up into steep **stratovolcanoes** such as Mount Hood and Mount Fuji. Pressure builds up inside them, so they tend to erupt explosively."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_volcano_examples.webp",
+      "slide": "slide 11 (Ch9.2)",
+      "alt": "Four photos: glowing lava fields giving off gas in Iceland, Mount Etna erupting seen from space, the steep snowy cone of Augustine in Alaska, and the low broad Skjaldbreiður volcano in Iceland."
+     },
+     "title": "Volcanoes on Earth",
+     "bullets": [
+      "Augustine in Alaska is a steep, cone-shaped stratovolcano; Skjaldbreiður in Iceland is a low, broad shield volcano.",
+      "Plains and shield volcanoes of runny, dense **basalt** are found on every terrestrial world. Steep stratovolcanoes, made of lower-density, thicker lava, are common on Earth but rare elsewhere.",
+      "A volcano's age, how long it erupted and how much lava it produced do not set its slope; the lava's viscosity does."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_outgassing.webp",
+      "slide": "slide 10 (Ch9.2)",
+      "alt": "Two photos of volcanic gas: steam and fumes rising from a lava lake, and glowing lava with a gas plume next to a town at night."
+     },
+     "title": "Outgassing builds atmospheres",
+     "bullets": [
+      "Water and gases brought in by planetesimals were trapped inside the young planets, like the gas in a sealed bottle of fizzy drink.",
+      "Eruptions and quieter volcanic vents let these gases out. This is **outgassing**; on Earth the gas is mostly water vapour and carbon dioxide.",
+      "Nearly all of the atmospheric gas on Venus, Earth and Mars came from planetary interiors this way, and so did the water that rained down to fill Earth's oceans."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does thick lava make a steep volcano? Sticky lava cools and stops close to the vent, so each eruption stacks on top of the last. Runny lava races away before it hardens and spreads out thin."
+    },
+    {
+     "type": "trick",
+     "text": "Runny → flat plains. Medium → shield (broad). Sticky → strato (steep). Steepness follows viscosity."
+    },
+    {
+     "type": "trap",
+     "text": "If asked what sets a volcano's steepness, the answer is how easily the lava flows (viscosity), not the eruption's duration, the volcano's age or the volume of lava. Ch9.2 slides 9 and 24. Ch9.2 slide 10 says the gas is mostly CO2; water vapour is also a major part (Cosmic Perspective 9.2)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.2, pp. 246-247 (Figures 9.10, 9.11, 9.12)",
+    "Ch9.2 slides 7-11"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_volcanism.webp",
+     "slide": "slide 7 (Ch9.2)",
+     "alt": "A fountain and river of glowing lava from an erupting volcano, with an inset block diagram of molten rock collecting below the surface and rising to a vent."
+    },
+    {
+     "src": "img/planetgeology/pg_lava_types.webp",
+     "slide": "slide 9 (Ch9.2)",
+     "alt": "Three views with cutaway blocks: flat lava plains on the Moon from runny lava, the broad shield volcano Olympus Mons on Mars, and steep Mount Hood on Earth from the thickest lava."
+    },
+    {
+     "src": "img/planetgeology/pg_volcano_examples.webp",
+     "slide": "slide 11 (Ch9.2)",
+     "alt": "Four photos: glowing lava fields giving off gas in Iceland, Mount Etna erupting seen from space, the steep snowy cone of Augustine in Alaska, and the low broad Skjaldbreiður volcano in Iceland."
+    },
+    {
+     "src": "img/planetgeology/pg_outgassing.webp",
+     "slide": "slide 10 (Ch9.2)",
+     "alt": "Two photos of volcanic gas: steam and fumes rising from a lava lake, and glowing lava with a gas plume next to a town at night."
+    }
+   ]
+  },
+  {
+   "id": "tectonics",
+   "title": "Tectonics",
+   "slides": "Ch9.2: slides 12-15",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_tectonic_stress.webp",
+      "slide": "slide 13 (Ch9.2)",
+      "alt": "Wrinkled mountain ridges of the Appalachians on the left, cracked parallel valleys on Mars on the right, and a cutaway of convection cells between them pushing the crust together and pulling it apart."
+     },
+     "title": "Stresses from mantle convection",
+     "bullets": [
+      "**Tectonics** is the building or reshaping of surface features by forces that stretch, squeeze, bend or crack the **lithosphere**. The word comes from the Greek for 'builder'.",
+      "Most tectonics comes directly or indirectly from **mantle convection**. Where convection cells push the crust together it is **compressed** into **mountain ranges**, such as the Appalachians.",
+      "Where convection cells pull the crust apart it **stretches** and cracks, opening **rifts and valleys**, such as the Ceraunius Valleys on Mars.",
+      "The weight of a volcano can also bend the lithosphere, and a rising plume of hot rock can push up a bulge.",
+      "Tectonics and volcanism usually go together, because both need **internal heat**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_venus_mars_tectonics.webp",
+      "slide": "slide 14 (Ch9.2)",
+      "alt": "Radar image of the folded ridges of Akna Montes on Venus with a crater, and an orbital image of the long canyons of Valles Marineris on Mars."
+     },
+     "title": "Tectonics on other worlds",
+     "bullets": [
+      "**Akna Montes** on Venus is a mountain range made by squeezing of the crust; an impact crater sits in the middle of the view.",
+      "**Valles Marineris** on Mars is a vast canyon system, roughly 8-9 times longer than the Grand Canyon, opened largely by tectonic cracking.",
+      "Some tectonics has happened on every terrestrial world, but Earth has the most."
+     ]
+    },
+    {
+     "title": "Plate tectonics is special",
+     "bullets": [
+      "On Earth, mantle convection has broken the lithosphere into more than a dozen **plates** that move over, under and around one another: **plate tectonics**.",
+      "**Tectonics** is the general process; **plate tectonics** is one particular kind, and as far as we know only Earth has it.",
+      "When a question says the surface was disrupted by forces from inside, think tectonics; when it names wind, water or ice, think erosion."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does tectonics need a hot interior? The stresses come from mantle convection, which runs only while the interior is hot. On a cooled world with a thick lithosphere, nothing pushes or pulls the surface any more."
+    },
+    {
+     "type": "trick",
+     "text": "Pushed together → mountains. Pulled apart → rifts and valleys. Both are tectonics."
+    },
+    {
+     "type": "trap",
+     "text": "A rift valley is tectonic even if a river later flows along it: the crust was pulled apart first. Cosmic Perspective 9.6 notes that the Rio Grande river came after its valley formed."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.2, pp. 247-248 (Figure 9.13)",
+    "Ch9.2 slides 12-15"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_tectonic_stress.webp",
+     "slide": "slide 13 (Ch9.2)",
+     "alt": "Wrinkled mountain ridges of the Appalachians on the left, cracked parallel valleys on Mars on the right, and a cutaway of convection cells between them pushing the crust together and pulling it apart."
+    },
+    {
+     "src": "img/planetgeology/pg_venus_mars_tectonics.webp",
+     "slide": "slide 14 (Ch9.2)",
+     "alt": "Radar image of the folded ridges of Akna Montes on Venus with a crater, and an orbital image of the long canyons of Valles Marineris on Mars."
+    }
+   ]
+  },
+  {
+   "id": "erosion",
+   "title": "Erosion",
+   "slides": "Ch9.2: slides 16-20",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_grand_canyon.webp",
+      "slide": "slide 17 (Ch9.2)",
+      "alt": "The Colorado River winding along the bottom of the deep, layered red walls of the Grand Canyon."
+     },
+     "title": "Erosion by water",
+     "bullets": [
+      "**Erosion** is the breaking down or carrying away of surface rock by **water, ice and wind**, the weather of a planet.",
+      "The Colorado River has been cutting the **Grand Canyon** for millions of years; tiny changes each year add up.",
+      "The rock layers the river cuts through were themselves built by erosion: sediment piled up on old sea floors and hardened into **sedimentary rock**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_yosemite.webp",
+      "slide": "slide 18 (Ch9.2)",
+      "alt": "Yosemite Valley seen from above, a wide forested valley between steep granite walls and the dome of Half Dome."
+     },
+     "title": "Erosion by ice",
+     "bullets": [
+      "Slow-moving **glaciers** of the ice ages scraped out **Yosemite Valley** in California, leaving a wide U-shaped valley with sheer cliffs.",
+      "Glaciers carve **fjords**, the deep, steep-sided valleys flooded by the sea on coasts such as Norway's, in the same way.",
+      "Glacial erosion needs snow and ice that build up and flow, so it depends on a world having water and the right temperatures."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_sand_dunes.webp",
+      "slide": "slide 19 (Ch9.2)",
+      "alt": "Rows of tall orange sand dunes stretching to the horizon in a desert."
+     },
+     "title": "Erosion by wind",
+     "bullets": [
+      "**Wind** sandblasts rock and wears it away, then piles the loose grains into **sand dunes**.",
+      "So erosion can **build up** features as well as wear them down.",
+      "Wind is driven by a planet's weather, and faster rotation means stronger winds, so wind erosion depends on how fast a world spins."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_river_delta.webp",
+      "slide": "slide 20 (Ch9.2)",
+      "alt": "Aerial view of a river spreading into many channels and sandbars where it enters a lake, with forested land behind."
+     },
+     "title": "Erosion builds new land",
+     "bullets": [
+      "Rivers carry sediment worn from the land and drop it where they slow down at a lake or the sea, building a **river delta**.",
+      "Erosion makes canyons, glacial valleys, fjords, dunes, deltas and lakes. Rift valleys, volcanoes and craters come from the other processes.",
+      "The Rocky Mountains were once about twice as tall as today; erosion has worn them down.",
+      "Erosion depends on an **atmosphere** and weather, so no other terrestrial world feels its effects as strongly as Earth does."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do airless worlds keep crisp craters? With no wind, rain or ice, nothing wears the rims down, so a crater on the Moon can look fresh for billions of years."
+    },
+    {
+     "type": "trick",
+     "text": "Erosion = Water, Wind, Ice. If wind, water or ice shaped it, it is erosion; if the crust itself moved, it is tectonics."
+    },
+    {
+     "type": "trap",
+     "text": "Which feature is not erosion? Sand dunes (wind), canyons (rivers), fjords (glaciers) and deltas (river sediment) all are erosion; a rift valley is tectonic. Ch9.2 slides 16-20; Cosmic Perspective Figure 9.14."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.2, p. 248 (Figure 9.14)",
+    "Ch9.2 slides 16-20"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_grand_canyon.webp",
+     "slide": "slide 17 (Ch9.2)",
+     "alt": "The Colorado River winding along the bottom of the deep, layered red walls of the Grand Canyon."
+    },
+    {
+     "src": "img/planetgeology/pg_yosemite.webp",
+     "slide": "slide 18 (Ch9.2)",
+     "alt": "Yosemite Valley seen from above, a wide forested valley between steep granite walls and the dome of Half Dome."
+    },
+    {
+     "src": "img/planetgeology/pg_sand_dunes.webp",
+     "slide": "slide 19 (Ch9.2)",
+     "alt": "Rows of tall orange sand dunes stretching to the horizon in a desert."
+    },
+    {
+     "src": "img/planetgeology/pg_river_delta.webp",
+     "slide": "slide 20 (Ch9.2)",
+     "alt": "Aerial view of a river spreading into many channels and sandbars where it enters a lake, with forested land behind."
+    }
+   ]
+  },
+  {
+   "id": "crater-ages",
+   "title": "Craters as a clock for surface age",
+   "slides": "Ch9.2: slide 6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_moon_cratering.webp",
+      "slide": "slide 6 (Ch9.2)",
+      "alt": "The Moon photographed from space, with bright areas packed with overlapping craters and a few darker, smoother patches with fewer craters."
+     },
+     "title": "More craters means an older surface",
+     "bullets": [
+      "Impacts land at random everywhere, and the impact rate dropped sharply when the heavy bombardment ended almost **4 billion years ago**.",
+      "So a surface crowded with craters has stayed almost unchanged for billions of years: it is geologically **old**.",
+      "A surface with **few craters** must have had its old craters erased by lava flows, tectonics or erosion: it is geologically **young**.",
+      "**Geological age** means the age of the surface as it looks today, not the age of the planet. Mercury and Venus formed at about the same time, but Venus's surface is far younger."
+     ]
+    },
+    {
+     "title": "The Moon sets the clock",
+     "bullets": [
+      "In the bright **lunar highlands** craters overlap craters. Rocks brought back by the Apollo astronauts from there are about **4.4 billion years** old.",
+      "The dark **lunar maria** are giant impact basins that were later flooded by runny lava. They have only about 3% as many craters, and their rocks are **3.0-3.9 billion years** old.",
+      "Dating Moon rocks tells us how the impact rate changed over time. Because impacts are random, the same rate applies to every terrestrial world, so counting craters on orbital photos gives a surface's age with an uncertainty of a few hundred million years.",
+      "Earth's and Venus's active geology has erased nearly all their ancient craters, Mars has kept more, and Mercury and the Moon keep most of theirs."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a smooth patch mean young? Craters only accumulate over time, so a region can have fewer of them only if something wiped the slate clean more recently, usually lava flooding it."
+    },
+    {
+     "type": "trick",
+     "text": "Craters are a clock: many craters = old surface, few craters = young (resurfaced) surface."
+    },
+    {
+     "type": "trap",
+     "text": "A lightly cratered region is younger, not older. It is not explained by 'little volcanism' (volcanism erases craters) or by only one side of a planet being hit. Ch9.2 slide 6; Cosmic Perspective Figure 9.15."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.2, pp. 248-250 (Figure 9.15; 'Planetary Properties Controlling Impact Cratering')",
+    "Ch9.2 slide 6"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_moon_cratering.webp",
+     "slide": "slide 6 (Ch9.2)",
+     "alt": "The Moon photographed from space, with bright areas packed with overlapping craters and a few darker, smoother patches with fewer craters."
+    }
+   ]
+  },
+  {
+   "id": "properties",
+   "title": "Size, distance from the Sun and rotation",
+   "slides": "Ch9.2: slides 21-23",
+   "steps": [
+    {
+     "title": "Size",
+     "bullets": [
+      "**Size** is the most important property. A larger world stays hot inside, so **volcanism and tectonics** keep going and erase old craters.",
+      "A larger world also has more **erosion**: more outgassing supplies an atmosphere and stronger **gravity holds on to it**. Small worlds have little outgassing and weak gravity, so they lose their air and have almost no erosion.",
+      "A large world's core may stay molten and make a **magnetic field**, if it rotates fast enough."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_role_distance.webp",
+      "slide": "slide 22 (Ch9.2)",
+      "alt": "Three planets at increasing distance from the Sun: a hot dry one close in, a blue Earth-like one at an intermediate distance, and a frosty one far away."
+     },
+     "title": "Distance from the Sun",
+     "bullets": [
+      "Worlds **close to the Sun** are too hot for rain, snow or ice, and hot gas escapes more easily, so there is little erosion.",
+      "Worlds **far from the Sun** are too cold for rain or oceans; water and other gases freeze out as ice, so erosion is limited.",
+      "At Earth's in-between distance, water vapour can condense into **liquid water**, the strongest eroder. This is sometimes called a 'Goldilocks' position: not too hot, not too cold."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_role_rotation.webp",
+      "slide": "slide 23 (Ch9.2)",
+      "alt": "Two planets compared: a slowly rotating one with few clouds and a rapidly rotating one with swirling storm clouds."
+     },
+     "title": "Rotation rate",
+     "bullets": [
+      "Rotation is the main driver of **wind and weather**. Faster rotation means stronger winds and storms, so more erosion.",
+      "Slow rotation means less weather and less erosion, even with a thick atmosphere. Venus turns once in 243 days, has little wind at the ground and almost no erosion.",
+      "Rotation also matters for magnetic fields: a slow spinner has a weak field or none, even with a molten core."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does Earth have so much erosion? It is big enough to have outgassed and kept an atmosphere, at the right distance for liquid water, and it spins fast enough for strong weather. All three properties line up."
+    },
+    {
+     "type": "trick",
+     "text": "Size → internal heat (volcanism, tectonics) and an atmosphere (erosion). Distance → liquid water or not. Rotation → weather and magnetic field."
+    },
+    {
+     "type": "trap",
+     "text": "Larger size means longer activity, heat and atmosphere kept longer, and more erosion, but not a warmer surface: surface temperature depends mostly on distance from the Sun and the atmosphere. Earth and Venus are almost the same size with very different surface temperatures. Ch9.2 slides 21-23; Cosmic Perspective Figure 9.16."
+    }
+   ],
+   "table": {
+    "title": "The five rocky worlds compared",
+    "head": [
+     "World",
+     "Size rank",
+     "Volcanism and tectonics today",
+     "Global magnetic field",
+     "Erosion today"
+    ],
+    "rows": [
+     [
+      "Earth",
+      "1 (largest)",
+      "Active",
+      "Strong",
+      "Strong (water, ice, wind)"
+     ],
+     [
+      "Venus",
+      "2",
+      "Probably active",
+      "None (very slow rotation)",
+      "Very little (too hot, little wind)"
+     ],
+     [
+      "Mars",
+      "3",
+      "Much less than in the past",
+      "None today",
+      "Limited (thin atmosphere)"
+     ],
+     [
+      "Mercury",
+      "4",
+      "None (geologically dead)",
+      "Weak",
+      "None (no real atmosphere)"
+     ],
+     [
+      "Moon",
+      "5 (smallest)",
+      "None (geologically dead)",
+      "None",
+      "None (no atmosphere)"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Cosmic Perspective 9.2, pp. 250-251 (Figure 9.16); comparison table uses only facts stated in 9.1 and 9.2",
+    "Ch9.2 slides 21-23"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_role_distance.webp",
+     "slide": "slide 22 (Ch9.2)",
+     "alt": "Three planets at increasing distance from the Sun: a hot dry one close in, a blue Earth-like one at an intermediate distance, and a frosty one far away."
+    },
+    {
+     "src": "img/planetgeology/pg_role_rotation.webp",
+     "slide": "slide 23 (Ch9.2)",
+     "alt": "Two planets compared: a slowly rotating one with few clouds and a rapidly rotating one with swirling storm clouds."
+    }
+   ]
+  },
+  {
+   "id": "plates",
+   "title": "Earth's moving plates",
+   "slides": "Ch9.6: slides 2-4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_plate_map.webp",
+      "slide": "slide 2 (Ch9.6)",
+      "alt": "World map divided into coloured tectonic plates such as the Pacific, North American, Eurasian and African plates, with lines marking mid-ocean ridges, subduction zones and transform boundaries."
+     },
+     "title": "A broken lithosphere",
+     "bullets": [
+      "Earth is the only planet shaped mainly by ongoing **plate tectonics**. Its lithosphere is broken into about **16 major plates**, plus many smaller ones, that ride on the softer mantle.",
+      "Plates move on average **a few centimetres per year**, about as fast as fingernails grow. They do not sit still between earthquakes.",
+      "That adds up: at 2 cm per year, a plate travels 2000 km in 100 million years.",
+      "Plate motion is tied to **mantle convection**, powered by Earth's internal heat, and GPS stations now measure it directly."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_continent_fit.webp",
+      "slide": "slide 3 (Ch9.6)",
+      "alt": "Outline map showing the east coast of South America fitting neatly against the west coast of Africa."
+     },
+     "title": "Continental drift",
+     "bullets": [
+      "In 1912 Alfred Wegener proposed **continental drift**, partly because South America and Africa fit together like jigsaw pieces.",
+      "The fit is even better along the edges of the **continental shelves**, the true underwater edges of the continents, and matching rocks and fossils are found on both sides of the Atlantic.",
+      "Most geologists rejected the idea for decades, because no force strong enough to move continents was known. The mechanism came in the 1950s and 1960s with the discovery of seafloor spreading."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_continents_time.webp",
+      "slide": "slide 4 (Ch9.6)",
+      "alt": "Four small world maps showing the continents joined together 200 million years ago, drifting apart 120 million years ago, their present positions, and a possible arrangement 150 million years from now."
+     },
+     "title": "Continents on the move",
+     "bullets": [
+      "About **200 million years ago** all of today's continents were joined in one supercontinent, **Pangaea**.",
+      "They have drifted apart at a few centimetres per year, opening the Atlantic Ocean, and they will keep moving; the figure even shows a possible map 150 million years from now.",
+      "Plate tectonics, not impacts, volcanism or erosion, has set the **arrangement of the continents**.",
+      "Geologists now speak of plate tectonics rather than drift: continents ride along on plates instead of ploughing through solid rock."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why was continental drift rejected at first? A good idea needs a mechanism. Wegener had strong evidence that continents had moved but no force able to move them; seafloor spreading and mantle convection supplied it later."
+    },
+    {
+     "type": "trick",
+     "text": "Plates move about as fast as your fingernails grow: a few centimetres per year."
+    },
+    {
+     "type": "trap",
+     "text": "Do not choose 'a few kilometres per hour' (far too fast), 'a few millimetres or centimetres per century' (far too slow) or 'only during earthquakes'. An earthquake can jump several metres in seconds, but the long-term average is a few cm per year. Ch9.6 slides 4 and 12. The slides say about 16 major plates; Cosmic Perspective says more than a dozen."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 9.6, pp. 264-265 and 269 (Figures 9.41, 9.42, 9.50)",
+    "Ch9.6 slides 2-4"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_plate_map.webp",
+     "slide": "slide 2 (Ch9.6)",
+     "alt": "World map divided into coloured tectonic plates such as the Pacific, North American, Eurasian and African plates, with lines marking mid-ocean ridges, subduction zones and transform boundaries."
+    },
+    {
+     "src": "img/planetgeology/pg_continent_fit.webp",
+     "slide": "slide 3 (Ch9.6)",
+     "alt": "Outline map showing the east coast of South America fitting neatly against the west coast of Africa."
+    },
+    {
+     "src": "img/planetgeology/pg_continents_time.webp",
+     "slide": "slide 4 (Ch9.6)",
+     "alt": "Four small world maps showing the continents joined together 200 million years ago, drifting apart 120 million years ago, their present positions, and a possible arrangement 150 million years from now."
+    }
+   ]
+  },
+  {
+   "id": "crust",
+   "title": "Seafloor spreading, two kinds of crust and subduction",
+   "slides": "Ch9.6: slides 5-7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_seafloor_age.webp",
+      "slide": "slide 5 (Ch9.6)",
+      "alt": "World map of the ocean floor coloured by age, red for the youngest rock along the mid-ocean ridges and blue for the oldest, beside a photo of a rift crossing the land in Iceland."
+     },
+     "title": "New crust at mid-ocean ridges",
+     "bullets": [
+      "At **mid-ocean ridges**, mantle material rises and erupts through the lithosphere, making new seafloor and pushing the older seafloor aside: **seafloor spreading**.",
+      "On the age map the youngest rock (red) runs along the ridges, and the rock gets older (blue) farther away on both sides.",
+      "Iceland sits on the Mid-Atlantic Ridge, one of the few places where a ridge rises above sea level.",
+      "Ridges add about 2 km² of new crust a year, enough to replace the whole seafloor in about **200 million years**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_crust_types.webp",
+      "slide": "slide 6 (Ch9.6)",
+      "alt": "Block diagram of thin, dense young seafloor crust 5 to 10 km thick next to thicker, less dense older continental crust 20 to 70 km thick, both on the upper mantle."
+     },
+     "title": "Two kinds of crust",
+     "bullets": [
+      "**Seafloor crust** is thin (5-10 km), dense basalt and young: most is a few tens of millions of years old, and almost none is older than about 200 million years.",
+      "**Continental crust** is thick (20-70 km), made of lower-density rock such as granite, and old: some of its rocks are nearly **4 billion years** old.",
+      "The seafloor also has far fewer large impact craters than the continents, another sign that it is younger.",
+      "No other planet shows two such different kinds of crust."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_conveyor_belt.webp",
+      "slide": "slide 7 (Ch9.6)",
+      "alt": "Cross-section of the upper mantle under the Pacific and Atlantic with convection cells, new seafloor forming at the mid-Atlantic ridge and seafloor crust sinking at an ocean trench under North America."
+     },
+     "title": "Subduction recycles the seafloor",
+     "bullets": [
+      "Where dense seafloor crust meets lighter continental crust, the seafloor plate dives under it and sinks back into the mantle: **subduction**. A subduction zone is one kind of **convergent** boundary.",
+      "The sinking plate drags the surface down into a deep **ocean trench**; some trenches are more than 8 km deep.",
+      "The sinking crust heats up and partly melts. The lightest melt rises into volcanoes along the edge of the continent, adding new **continental crust**; that is why steep volcanoes line many coasts.",
+      "Ridges and trenches together work like a **conveyor belt**: seafloor is made at ridges, carried across the ocean, and destroyed at trenches. Continental crust is too light to sink, so it survives for billions of years."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is the seafloor young? It is constantly being made at ridges and destroyed at trenches, so no piece lasts more than about 200 million years. Continents ride too high to be pulled under, so their ancient rock remains."
+    },
+    {
+     "type": "trick",
+     "text": "Ridge = make (divergent). Trench = take (subduction, convergent). Seafloor crust: thin, dense, young. Continental crust: thick, light, old."
+    },
+    {
+     "type": "trap",
+     "text": "The seafloor is young because dense seafloor crust is pushed under continental crust and recycled, not because ocean water erodes it or because it is 'closer to the mantle'. Ch9.6 slide 13 says rifts and trenches form at divergent boundaries, but Cosmic Perspective 9.6 places trenches at subduction zones, which are convergent."
+    }
+   ],
+   "table": {
+    "title": "Seafloor and continental crust",
+    "head": [
+     "Property",
+     "Seafloor crust",
+     "Continental crust"
+    ],
+    "rows": [
+     [
+      "Thickness",
+      "5-10 km",
+      "20-70 km"
+     ],
+     [
+      "Density",
+      "Higher (basalt)",
+      "Lower (granite-like rock)"
+     ],
+     [
+      "Typical age",
+      "Under about 200 million years",
+      "Up to about 4 billion years"
+     ],
+     [
+      "Fate",
+      "Recycled into the mantle by subduction",
+      "Not recycled; grows and is reshaped"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Cosmic Perspective 9.6, pp. 265-266 (Figures 9.43, 9.44)",
+    "Ch9.6 slides 5-7"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_seafloor_age.webp",
+     "slide": "slide 5 (Ch9.6)",
+     "alt": "World map of the ocean floor coloured by age, red for the youngest rock along the mid-ocean ridges and blue for the oldest, beside a photo of a rift crossing the land in Iceland."
+    },
+    {
+     "src": "img/planetgeology/pg_crust_types.webp",
+     "slide": "slide 6 (Ch9.6)",
+     "alt": "Block diagram of thin, dense young seafloor crust 5 to 10 km thick next to thicker, less dense older continental crust 20 to 70 km thick, both on the upper mantle."
+    },
+    {
+     "src": "img/planetgeology/pg_conveyor_belt.webp",
+     "slide": "slide 7 (Ch9.6)",
+     "alt": "Cross-section of the upper mantle under the Pacific and Atlantic with convection cells, new seafloor forming at the mid-Atlantic ridge and seafloor crust sinking at an ocean trench under North America."
+    }
+   ]
+  },
+  {
+   "id": "boundaries",
+   "title": "Plate boundaries and hot spots",
+   "slides": "Ch9.6: slides 8-11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetgeology/pg_himalaya.webp",
+      "slide": "slide 8 (Ch9.6)",
+      "alt": "Satellite view of India pushing north into Asia, with arrows showing the plates converging along the snowy Himalayas."
+     },
+     "title": "Convergent: plates push together",
+     "bullets": [
+      "At **convergent boundaries** plates push together.",
+      "When a seafloor plate meets a continent, the seafloor subducts, making a trench, volcanoes and earthquakes, as along the Andes.",
+      "When two **continental** plates meet, neither is dense enough to sink, so the crust crumples upward into mountains.",
+      "The **Himalayas** began rising when the Indian plate ran into the Eurasian plate about 50 million years ago, and they are still getting higher. The Appalachians formed in older collisions and have since been worn down by erosion."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_red_sea.webp",
+      "slide": "slide 9 (Ch9.6)",
+      "alt": "View from orbit of the Red Sea between Africa and the Arabian Peninsula, with arrows showing the two sides moving apart."
+     },
+     "title": "Divergent: plates pull apart",
+     "bullets": [
+      "At **divergent boundaries** crust is pulled apart or new crust forms. Mid-ocean ridges are divergent boundaries on the sea floor.",
+      "When a **continent** is pulled apart, the crust thins and drops into a long **rift valley**. The **East African Rift**, or Great Rift Valley, is slowly tearing Africa apart.",
+      "If rifting continues, the valley floods and becomes a new sea with seafloor spreading. That is how the **Red Sea** opened between Africa and the Arabian Peninsula."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_san_andreas.webp",
+      "slide": "slide 10 (Ch9.6)",
+      "alt": "Map of California with the San Andreas Fault and dated earthquake sites, arrows showing the two sides sliding past each other, a photo of a road offset by the fault and a block diagram of sideways slip."
+     },
+     "title": "Transform: plates grind past",
+     "bullets": [
+      "At **transform boundaries**, also called strike-slip faults, plates move **sideways** past each other.",
+      "The **San Andreas Fault** in California marks where the Pacific plate moves northwest past the North American plate. In about 20 million years Los Angeles will lie beside San Francisco.",
+      "The rough edges catch, stress builds up, and then they slip suddenly in an **earthquake**, moving several metres in seconds. Earthquakes can happen at any type of plate boundary."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetgeology/pg_hawaii_hotspot.webp",
+      "slide": "slide 11 (Ch9.6)",
+      "alt": "Map of the Hawaiian island chain on the Pacific plate with photos of eroded Midway, heavily eroded Kauai, fresh lava on Hawaii, and a sonar image of the underwater volcano Loihi."
+     },
+     "title": "Hot spots: volcanoes inside a plate",
+     "bullets": [
+      "A **hot spot** is a plume of hot mantle rock rising under a plate, away from any boundary.",
+      "The **Hawaiian Islands** formed as the Pacific plate moved northwest over a hot spot that stays put: each island was built over the plume and then carried away.",
+      "The Big Island is the youngest, with fresh lava. Older islands such as Kauai (about 5 million years) are deeply eroded, and Midway (about 27 million years) is worn almost down to sea level. A new island, Loihi, is growing under water.",
+      "Hot spots can lie under continents too: one heats the geysers and hot springs of **Yellowstone**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do the Hawaiian islands get older toward the northwest? The plume stays in place while the plate moves over it like paper moved over a candle, so each new volcano forms at the southeast end and older ones are carried off and worn down."
+    },
+    {
+     "type": "trick",
+     "text": "Converge = crunch (mountains, trenches). Diverge = divide (ridges, rifts). Transform = sideways (faults, earthquakes). Hot spot = island chain."
+    },
+    {
+     "type": "trap",
+     "text": "Hawaii is not on a plate boundary, so a fault, a collision or a rift is not the answer: a mantle plume (hot spot) inside the Pacific plate built it. The Great Rift Valley is continental crust pulled apart at a divergent boundary. Ch9.6 slides 9 and 11; Cosmic Perspective Figure 9.49."
+    }
+   ],
+   "table": {
+    "title": "Plate boundaries at a glance",
+    "head": [
+     "Boundary",
+     "What the plates do",
+     "What forms",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Convergent (seafloor meets continent)",
+      "Seafloor plate subducts under the other",
+      "Ocean trench, coastal volcanoes, earthquakes",
+      "Andes, Aleutian Islands"
+     ],
+     [
+      "Convergent (continent meets continent)",
+      "Collide; neither sinks",
+      "High mountain ranges",
+      "Himalayas"
+     ],
+     [
+      "Divergent",
+      "Pull apart; new crust forms",
+      "Mid-ocean ridge, rift valley, new sea",
+      "Mid-Atlantic Ridge, East African Rift, Red Sea"
+     ],
+     [
+      "Transform",
+      "Move sideways past each other",
+      "Faults and earthquakes",
+      "San Andreas Fault"
+     ],
+     [
+      "Hot spot (not a boundary)",
+      "Plate moves over a mantle plume",
+      "Chain of volcanic islands",
+      "Hawaii, Yellowstone"
+     ]
+    ]
+   },
+   "sourceNotes": [
+    "Cosmic Perspective 9.6, pp. 266-269 (Figures 9.46-9.49)",
+    "Ch9.6 slides 8-11"
+   ],
+   "images": [
+    {
+     "src": "img/planetgeology/pg_himalaya.webp",
+     "slide": "slide 8 (Ch9.6)",
+     "alt": "Satellite view of India pushing north into Asia, with arrows showing the plates converging along the snowy Himalayas."
+    },
+    {
+     "src": "img/planetgeology/pg_red_sea.webp",
+     "slide": "slide 9 (Ch9.6)",
+     "alt": "View from orbit of the Red Sea between Africa and the Arabian Peninsula, with arrows showing the two sides moving apart."
+    },
+    {
+     "src": "img/planetgeology/pg_san_andreas.webp",
+     "slide": "slide 10 (Ch9.6)",
+     "alt": "Map of California with the San Andreas Fault and dated earthquake sites, arrows showing the two sides sliding past each other, a photo of a road offset by the fault and a block diagram of sideways slip."
+    },
+    {
+     "src": "img/planetgeology/pg_hawaii_hotspot.webp",
+     "slide": "slide 11 (Ch9.6)",
+     "alt": "Map of the Hawaiian island chain on the Pacific plate with photos of eroded Midway, heavily eroded Kauai, fresh lava on Hawaii, and a sonar image of the underwater volcano Loihi."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Four geological processes",
+  "head": [
+   "Process",
+   "What causes it",
+   "Typical landforms",
+   "Example"
+  ],
+  "rows": [
+   [
+    "Impact cratering",
+    "Asteroids or comets striking from space (the only outside cause)",
+    "Round craters with raised rims, central peaks and rings of debris",
+    "Meteor Crater (Arizona), Tycho (Moon)"
+   ],
+   [
+    "Volcanism",
+    "Molten rock rising from the hot interior",
+    "Volcanic plains, shield volcanoes, stratovolcanoes; gas released by outgassing",
+    "Lunar maria, Olympus Mons, Mount Hood"
+   ],
+   [
+    "Tectonics",
+    "Stresses inside the planet, mostly from mantle convection",
+    "Mountain ranges, rift valleys, cracks and faults",
+    "Himalayas, East African Rift, Valles Marineris"
+   ],
+   [
+    "Erosion",
+    "Wind, water and ice (a planet's weather)",
+    "Canyons, glacial valleys and fjords, sand dunes, river deltas",
+    "Grand Canyon, Yosemite Valley"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "pg-c1",
+   "front": "Planetary geology",
+   "back": "The study of the surfaces and interiors of solid worlds: Earth's geology extended to other planets, moons, asteroids and comets.",
+   "short": "Geology of every solid world",
+   "src": "Ch9.1 pt1 slide 2; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c2",
+   "front": "Seismic waves",
+   "back": "Vibrations from an earthquake that travel through a planet and along its surface. Their speeds and paths depend on the density and state (solid or liquid) of the rock, so they map the interior.",
+   "short": "Earthquake vibrations that map the inside",
+   "src": "Ch9.1 pt1 slides 4-5; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c3",
+   "front": "Planetary core",
+   "back": "The central, densest layer of a terrestrial world, made mostly of iron and nickel. Earth's has a solid inner core and a liquid outer core.",
+   "short": "Dense iron-nickel centre",
+   "src": "Ch9.1 pt1 slides 5, 10; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c4",
+   "front": "Planetary mantle",
+   "back": "The thick layer of medium-density rock between the core and the crust, rich in silicon, oxygen, magnesium and iron. Almost entirely solid, but it flows very slowly.",
+   "short": "Thick rocky middle layer",
+   "src": "Ch9.1 pt1 slide 10; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c5",
+   "front": "Planetary crust",
+   "back": "The thin outer skin of a terrestrial world, made of its lowest-density rock, such as granite and basalt.",
+   "short": "Thin outer skin of light rock",
+   "src": "Ch9.1 pt1 slide 10; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c6",
+   "front": "Peridotite",
+   "back": "A dense, green rock rich in magnesium and iron that is typical of Earth's mantle.",
+   "short": "Typical mantle rock",
+   "src": "Ch9.1 pt1 slide 7"
+  },
+  {
+   "id": "pg-c7",
+   "front": "Average density",
+   "back": "A world's total mass divided by its total volume. If it is much higher than the density of the surface rock, the interior must hold denser material such as a metal core.",
+   "short": "Mass ÷ volume; hints at a metal core",
+   "src": "Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c8",
+   "front": "Differentiation",
+   "back": "The separation of materials by density inside a molten world: gravity sinks dense metal to the core while lighter rock rises to form the mantle and crust.",
+   "short": "Gravity sorting by density",
+   "src": "Ch9.1 pt2 slide 1; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c9",
+   "front": "Geological activity",
+   "back": "Ongoing change of a world's surface by volcanism, tectonics, earthquakes and erosion. Most of it is powered by internal heat.",
+   "short": "Ongoing reshaping of a surface",
+   "src": "Ch9.1 pt2 slide 2; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c10",
+   "front": "Internal heat",
+   "back": "The heat inside a planet that drives volcanism and tectonics. It comes from accretion, differentiation and radioactive decay, not from sunlight.",
+   "short": "Heat from within that powers geology",
+   "src": "Ch9.1 pt2 slides 2-3; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c11",
+   "front": "Heat of accretion",
+   "back": "Heat deposited when planetesimals crashed into a forming planet: their energy of motion became heat on impact. It was added only when the planet was young.",
+   "short": "Heat from impacts of planetesimals",
+   "src": "Ch9.1 pt2 slides 2-3; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c12",
+   "front": "Heat of differentiation",
+   "back": "Heat released as dense material sank toward the core: friction turned the lost gravitational energy into heat. Important early, minor today.",
+   "short": "Heat from metal sinking to the core",
+   "src": "Ch9.1 pt2 slides 2-3; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c13",
+   "front": "Radioactive heating",
+   "back": "Heat from the decay of radioactive atoms such as uranium, potassium and thorium in a planet's rock. It is the only major source of new internal heat today.",
+   "short": "Main heat source today",
+   "src": "Ch9.1 pt2 slide 3; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c14",
+   "front": "Mantle convection",
+   "back": "The slow rising of hot mantle rock and sinking of cooler rock, a few centimetres a year, that carries heat upward and drives tectonics.",
+   "short": "Slow overturning of solid mantle rock",
+   "src": "Ch9.1 pt2 slide 4; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c15",
+   "front": "Conduction",
+   "back": "The transfer of heat from hotter to cooler material by direct contact, as fast-moving atoms bump slower ones. It carries heat through the rigid lithosphere.",
+   "short": "Heat passed by contact",
+   "src": "Ch9.1 pt2 slide 4; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c16",
+   "front": "Radiative cooling",
+   "back": "Loss of heat by giving off light. A planet radiates its heat into space from its surface, mostly as infrared light.",
+   "short": "Heat leaving the surface as light",
+   "src": "Ch9.1 pt2 slide 4; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c17",
+   "front": "Surface area-to-volume ratio",
+   "back": "Surface area divided by volume. For a sphere it equals 3/r, so a larger world has a smaller ratio, loses heat more slowly and stays geologically active longer.",
+   "short": "3/r for a sphere; smaller means slower cooling",
+   "src": "Ch9.1 pt2 slide 6; Cosmic Perspective Mathematical Insight 9.1"
+  },
+  {
+   "id": "pg-c18",
+   "front": "Geologically dead",
+   "back": "Describes a world whose interior has cooled so much that volcanism and tectonics have stopped, such as the Moon and Mercury.",
+   "short": "Interior too cool for activity",
+   "src": "Ch9.1 pt2 slide 5; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c19",
+   "front": "Global magnetic field",
+   "back": "A planet-wide magnetic field made by charges moving in an interior layer of conducting fluid. It needs molten conducting material, convection in it, and at least moderately rapid rotation.",
+   "short": "Needs molten metal, convection, fast spin",
+   "src": "Ch9.1 pt2 slides 8-9; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c20",
+   "front": "Magnetosphere",
+   "back": "The region around a planet controlled by its magnetic field. Earth's deflects the charged particles of the solar wind and protects the atmosphere.",
+   "short": "Magnetic bubble that shields a planet",
+   "src": "Ch9.1 pt2 slide 10; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-c21",
+   "front": "Aurora",
+   "back": "Glowing light in the upper atmosphere near the poles, made when charged particles from the Sun are guided in by the magnetic field and strike the air.",
+   "short": "Polar sky glow from solar particles",
+   "src": "Ch9.1 pt2 slide 10"
+  },
+  {
+   "id": "pg-c22",
+   "front": "Impact cratering",
+   "back": "The making of round, bowl-shaped craters by asteroids or comets striking a surface. The only one of the four geological processes with an outside cause.",
+   "short": "Asteroids or comets blasting craters",
+   "src": "Ch9.2 slides 2-4; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c23",
+   "front": "Central peak",
+   "back": "A mound in the middle of a large crater, made when the briefly hot, soft ground rebounds upward after the impact and then hardens.",
+   "short": "Rebound bump in a big crater",
+   "src": "Ch9.2 slide 5; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c24",
+   "front": "Magma chamber",
+   "back": "An underground pocket where molten rock collects before it erupts through the lithosphere as lava.",
+   "short": "Underground store of molten rock",
+   "src": "Ch9.2 slide 7; Cosmic Perspective Figure 9.10"
+  },
+  {
+   "id": "pg-c25",
+   "front": "Volcanism",
+   "back": "Molten rock (lava) erupting from inside a planet out onto its surface. It needs internal heat.",
+   "short": "Molten rock erupting onto the surface",
+   "src": "Ch9.2 slides 2, 7; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c26",
+   "front": "Volcanic plains",
+   "back": "Wide, flat areas made by very runny lava that spread far before hardening, such as the lunar maria.",
+   "short": "Flat land from very runny lava",
+   "src": "Ch9.2 slide 9; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c27",
+   "front": "Outgassing",
+   "back": "The release of gases trapped inside a planet through volcanic eruptions and vents. Nearly all of the atmospheric gas on Venus, Earth and Mars, and the water in Earth's oceans, came from it.",
+   "short": "Volcanic release of trapped gas",
+   "src": "Ch9.2 slide 10; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c28",
+   "front": "Tectonics",
+   "back": "The disruption and reshaping of a planet's lithosphere by internal stresses, mostly from mantle convection: compression makes mountains, stretching makes rifts and valleys.",
+   "short": "Surface reshaped by stresses from inside",
+   "src": "Ch9.2 slides 12-13; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c29",
+   "front": "Erosion",
+   "back": "The wearing down or building up of surface features by wind, water and ice. It makes canyons, glacial valleys, dunes and deltas, and needs an atmosphere.",
+   "short": "Shaping by wind, water and ice",
+   "src": "Ch9.2 slides 16-20; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c30",
+   "front": "Crater counting",
+   "back": "Estimating a surface's geological age from how many craters it has: more craters mean an older surface, fewer mean a younger, resurfaced one.",
+   "short": "More craters = older surface",
+   "src": "Ch9.2 slide 6; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c31",
+   "front": "Geological age",
+   "back": "The age of a surface as it looks today, not of the planet itself. A young surface has been reshaped recently; an old one has barely changed in billions of years.",
+   "short": "How long since a surface was reshaped",
+   "src": "Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c32",
+   "front": "Lunar maria",
+   "back": "Dark, smooth plains on the Moon: huge impact basins flooded by runny lava 3 to 4 billion years ago. They have few craters.",
+   "short": "Lava-flooded basins on the Moon",
+   "src": "Ch9.2 slide 6; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c33",
+   "front": "Lunar highlands",
+   "back": "The bright, heavily cratered, oldest parts of the Moon's surface, about 4.4 billion years old.",
+   "short": "Ancient crater-packed lunar terrain",
+   "src": "Ch9.2 slide 6; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-c34",
+   "front": "Plate tectonics",
+   "back": "The theory that Earth's lithosphere is broken into plates that move a few centimetres a year over the mantle, explaining continental motion, seafloor spreading and the two kinds of crust. Unique to Earth among known planets.",
+   "short": "Earth's moving lithospheric plates",
+   "src": "Ch9.6 slides 2, 12; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c35",
+   "front": "Continental drift",
+   "back": "Wegener's 1912 idea that the continents slowly move across Earth's surface, inspired by the jigsaw fit of South America and Africa. Now explained by plate tectonics.",
+   "short": "Wegener's idea of moving continents",
+   "src": "Ch9.6 slide 3; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c36",
+   "front": "Seafloor spreading",
+   "back": "The making of new seafloor crust where mantle material rises at a mid-ocean ridge, pushing the older seafloor apart on both sides.",
+   "short": "New seafloor pushing the old apart",
+   "src": "Ch9.6 slide 5; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c37",
+   "front": "Mid-ocean ridge",
+   "back": "An undersea mountain chain at a divergent boundary where mantle material rises and erupts to form new seafloor crust.",
+   "short": "Where new seafloor is made",
+   "src": "Ch9.6 slides 5, 9; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c38",
+   "front": "Seafloor crust",
+   "back": "Thin (5-10 km), dense basalt crust under the oceans. It is young, usually under 200 million years old, because it is recycled by subduction.",
+   "short": "Thin, dense, young crust",
+   "src": "Ch9.6 slide 6; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c39",
+   "front": "Continental crust",
+   "back": "Thick (20-70 km), lower-density crust, mostly granite-like rock, that is too light to subduct, so some of it is nearly 4 billion years old.",
+   "short": "Thick, light, old crust",
+   "src": "Ch9.6 slide 6; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c40",
+   "front": "Ocean trench",
+   "back": "A deep trough in the sea floor where a seafloor plate is sinking under another plate at a subduction zone, returning old crust to the mantle.",
+   "short": "Marks a subduction zone",
+   "src": "Ch9.6 slide 7; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c41",
+   "front": "Convergent plate boundary",
+   "back": "A place where plates push together. Seafloor meeting a continent gives subduction and a trench; two continents meeting build mountains such as the Himalayas.",
+   "short": "Plates pushing together",
+   "src": "Ch9.6 slides 7-8; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c42",
+   "front": "Divergent plate boundary",
+   "back": "A place where plates pull apart and new crust forms, such as a mid-ocean ridge or a continental rift like the East African Rift or the Red Sea.",
+   "short": "Plates pulling apart",
+   "src": "Ch9.6 slide 9; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c43",
+   "front": "Rift valley",
+   "back": "A long valley that forms where continental crust is pulled apart and thins at a divergent boundary, such as the Great Rift Valley in East Africa. Tectonic, not erosional.",
+   "short": "Valley from crust pulling apart",
+   "src": "Ch9.2 slide 13; Ch9.6 slide 9; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-c44",
+   "front": "San Andreas Fault",
+   "back": "The transform boundary in California where the Pacific plate moves northwest past the North American plate, causing frequent earthquakes.",
+   "short": "California's sideways-slipping plate boundary",
+   "src": "Ch9.6 slide 10; Cosmic Perspective 9.6"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "pg-1",
+   "q": "Which observation shows that part of Earth's core is liquid?",
+   "options": [
+    "P waves reach the side of Earth opposite an earthquake, but S waves do not",
+    "S waves reach the opposite side of Earth, but P waves do not",
+    "Drill cores have brought up liquid iron from deep inside Earth",
+    "Volcanoes sometimes erupt molten metal from the core",
+    "Both kinds of wave speed up as they enter the core"
+   ],
+   "answer": 0,
+   "why": "S waves cannot travel through a liquid, so when they fail to reach the far side while P waves still arrive, a liquid layer must be blocking them: the outer core. Drills reach under 1% of the way down, volcanoes erupt rock from just below the lithosphere, not core metal, and the reverse pattern would mean the opposite of what is seen.",
+   "source": "Ch9.1 pt1 slides 4-5; Cosmic Perspective 9.1 Special Topic"
+  },
+  {
+   "id": "pg-2",
+   "q": "A spacecraft finds that a rocky planet's average density is much higher than the density of the rocks on its surface. What is the best conclusion?",
+   "options": [
+    "Its surface must be covered by young lava",
+    "It must have a thick atmosphere",
+    "Its interior must contain denser material, such as a metal core",
+    "It must be geologically dead",
+    "It must be made mostly of hydrogen and helium"
+   ],
+   "answer": 2,
+   "why": "If the whole planet is denser than its surface rock, something inside must be denser still, which points to a metal core. The comparison says nothing about lava, atmosphere or activity, and hydrogen and helium would make the average density low, not high.",
+   "source": "Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-3",
+   "q": "Why are the terrestrial planets made mostly of rock and metal, even though the cloud they formed from was mostly hydrogen and helium?",
+   "options": [
+    "Rock and metal made up most of the cloud",
+    "The inner planets did not collect the hydrogen and helium gas, so only the rare rock and metal built them",
+    "The Sun turned their hydrogen into rock",
+    "Comets later removed their hydrogen and helium oceans"
+   ],
+   "answer": 1,
+   "why": "About 98% of the cloud was hydrogen and helium, but the inner planets did not gather these gases, so they were built from the less than 1% that was rock and metal. Rock and metal were never the main part of the cloud, and the Sun does not convert a planet's gas into rock.",
+   "source": "Ch9.1 pt1 slide 3"
+  },
+  {
+   "id": "pg-4",
+   "q": "Which statement about Earth's lithosphere is correct?",
+   "options": [
+    "It is the soft, partly molten layer that the plates ride on",
+    "It is the liquid layer between the mantle and the core",
+    "It is the crust alone, without any mantle rock",
+    "It is the cool, rigid outer layer made of the crust and the uppermost mantle",
+    "It is a thin layer of loose soil above the crust"
+   ],
+   "answer": 3,
+   "why": "The lithosphere is defined by strength: the cool, rigid rock of the crust plus the top of the mantle. The softer layer beneath is the asthenosphere, the liquid layer is the outer core, and leaving out the uppermost mantle makes it just the crust.",
+   "source": "Ch9.1 pt1 slide 9; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-5",
+   "q": "Two rocky worlds have the same composition, but one is much smaller. Compared with the larger one, the smaller world's lithosphere is most likely",
+   "options": [
+    "thicker, because its interior has cooled more",
+    "thinner, because its weaker gravity cannot compress rock",
+    "the same thickness, because the rock is the same",
+    "missing, because small worlds have no crust"
+   ],
+   "answer": 0,
+   "why": "Small worlds lose heat faster, and cool rock is rigid, so the rigid lithosphere extends deeper; Mars, Mercury and the Moon have lithospheres reaching almost to their cores. Same rock does not mean same thickness, because temperature controls stiffness, and small worlds still have crusts.",
+   "source": "Ch9.1 pt1 slide 11; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-6",
+   "q": "A young planet is molten all the way through. What does gravity do to its iron and its lighter silicate rock?",
+   "options": [
+    "The iron rises to form a metal shell because metals carry heat upward",
+    "The iron sinks toward the centre and the lighter rock rises toward the surface",
+    "Both stay evenly mixed, because gravity pulls on everything equally",
+    "The rock sinks to the centre and the iron forms the crust"
+   ],
+   "answer": 1,
+   "why": "This is differentiation: in a molten world denser material sinks and less dense material rises, like water and oil, giving a metal core under a rocky mantle and crust. Gravity pulls harder on each unit of the denser material compared with what it displaces, so the mixture does not stay even.",
+   "source": "Ch9.1 pt2 slide 1; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-7",
+   "q": "Which source still adds significant new heat to Earth's interior today?",
+   "options": [
+    "Accretion of planetesimals",
+    "Differentiation of iron sinking to the core",
+    "Sunlight soaking down into the rock",
+    "Decay of radioactive elements such as uranium",
+    "Conduction through the lithosphere"
+   ],
+   "answer": 3,
+   "why": "Accretion and differentiation added their heat when Earth was young; only radioactive decay keeps releasing new heat. Sunlight warms only the top few metres, and conduction moves heat outward rather than making it.",
+   "source": "Ch9.1 pt2 slide 3; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-8",
+   "q": "Which list contains only processes that carry heat out of a planet rather than create it?",
+   "options": [
+    "Convection, conduction and radiation",
+    "Accretion, differentiation and radioactive decay",
+    "Accretion, convection and radiation",
+    "Radioactive decay, conduction and radiation"
+   ],
+   "answer": 0,
+   "why": "Convection, conduction and radiation all move heat outward. Accretion, differentiation and radioactive decay are the sources that put heat in, so any list containing one of them mixes the two ideas.",
+   "source": "Ch9.1 pt2 slides 2-4; Cosmic Perspective Figures 9.4 and 9.5"
+  },
+  {
+   "id": "pg-9",
+   "q": "Hot rock rises from deep in Earth's mantle and reaches the bottom of the rigid lithosphere. How does the heat mostly continue upward from there?",
+   "options": [
+    "By convection, because the lithosphere flows quickly",
+    "By radiation of infrared light through the solid rock",
+    "By conduction, passed from hotter rock to cooler rock by contact",
+    "By differentiation of dense material"
+   ],
+   "answer": 2,
+   "why": "Rigid rock cannot flow readily, so convection halts at the base of the lithosphere; heat gets through it mainly by conduction and then radiates from the surface. Light cannot shine through kilometres of rock, and differentiation is a heat source, not a way heat travels.",
+   "source": "Ch9.1 pt2 slide 4; Cosmic Perspective Figure 9.5"
+  },
+  {
+   "id": "pg-10",
+   "q": "Sphere A has a radius of 2 km and sphere B a radius of 6 km. How do their surface area-to-volume ratios compare, and which cools faster if both start equally hot?",
+   "options": [
+    "B's ratio is 3 times A's, so B cools faster",
+    "A's ratio is 3 times B's, so A cools faster",
+    "A's ratio is 9 times B's, so A cools faster",
+    "The ratios are equal, so both cool at the same rate"
+   ],
+   "answer": 1,
+   "why": "For a sphere the ratio is 3/r: 3/2 = 1.5 per km for A and 3/6 = 0.5 per km for B, so A's is three times larger and A loses heat faster for the heat it holds. A factor of 9 would come from comparing areas alone (r²), and the ratios are not equal because they depend on r.",
+   "source": "Ch9.1 pt2 slide 6; Cosmic Perspective Mathematical Insight 9.1"
+  },
+  {
+   "id": "pg-11",
+   "q": "A sphere has a radius of 6 km and a volume of 288π km³. Using surface area ÷ volume = 3/r, what is its surface area?",
+   "options": [
+    "288π km²",
+    "48π km²",
+    "36π km²",
+    "96π km²",
+    "144π km²"
+   ],
+   "answer": 4,
+   "why": "The ratio is 3/6 = 0.5 per km, so surface area = 0.5 × 288π = 144π km². Check: 4π × 6² = 144π km². 288π repeats the volume, and the other values come from using the wrong radius or ratio.",
+   "source": "Ch9.1 pt2 slide 6; Cosmic Perspective Mathematical Insight 9.1"
+  },
+  {
+   "id": "pg-12",
+   "q": "Planet X has twice the radius of planet Y, and both are made of the same rock. Which prediction is best?",
+   "options": [
+    "Y stays active longer, because heat leaks more slowly out of a small world",
+    "Both stay active equally long, because the same rock makes the same heat",
+    "X stays active longer only if it is closer to the Sun",
+    "X stays geologically active longer, because its surface area-to-volume ratio is half of Y's"
+   ],
+   "answer": 3,
+   "why": "Doubling r halves 3/r, so X has half as much surface per unit of stored heat and cools more slowly; it also starts with more heat. Heat escapes faster, not slower, from a small world, and internal activity depends on size, not on distance from the Sun.",
+   "source": "Ch9.1 pt2 slides 5-6; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-13",
+   "q": "Why is the Moon geologically dead today while Earth is still active?",
+   "options": [
+    "The Moon is much older than Earth",
+    "The Moon has no gravity, so magma cannot rise",
+    "The small Moon lost its internal heat quickly, so its lithosphere thickened and convection stopped",
+    "Impacts destroyed the Moon's core",
+    "The Moon is too far from the Sun to melt rock"
+   ],
+   "answer": 2,
+   "why": "Size controls cooling: the small Moon cooled within about a billion years, its rigid layer thickened and mantle convection stopped. The Moon and Earth are about the same age, the Moon does have gravity, and internal melting does not come from sunlight.",
+   "source": "Ch9.1 pt2 slide 5; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-14",
+   "q": "If Earth's liquid outer core slowly froze solid, what would happen to its global magnetic field?",
+   "options": [
+    "It would fade away, because no convecting, conducting fluid would be left to move charges",
+    "It would grow stronger, because solid iron is magnetic",
+    "It would not change, as long as Earth keeps rotating",
+    "It would become stronger at the equator than at the poles"
+   ],
+   "answer": 0,
+   "why": "The field is generated by electric charges moving with convecting molten metal. Freeze the core and that motion stops, so rotation alone cannot keep the field going. Hot iron in a planet's core does not act as a permanent magnet.",
+   "source": "Ch9.1 pt2 slide 9; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-15",
+   "q": "Venus is almost Earth's size and probably has a partly molten core, yet it has no global magnetic field. What is the most likely reason?",
+   "options": [
+    "It is too close to the Sun",
+    "It rotates very slowly, about once every 243 days",
+    "Its core is made of rock rather than metal",
+    "Its thick atmosphere blocks magnetic fields",
+    "It is covered in craters"
+   ],
+   "answer": 1,
+   "why": "A field needs conducting fluid, convection and at least moderately rapid rotation; Venus's very slow spin (or too weak convection) is the missing piece. Its core is metal, distance from the Sun does not switch off a dynamo, and an atmosphere does not block a magnetic field.",
+   "source": "Ch9.1 pt2 slide 9; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-16",
+   "q": "Which terrestrial world meets all three requirements for a strong global magnetic field?",
+   "options": [
+    "Mars",
+    "Mercury",
+    "the Moon",
+    "Earth",
+    "Venus"
+   ],
+   "answer": 3,
+   "why": "Only Earth has a convecting, conducting molten outer core and fairly fast rotation. The Moon and Mars have cooled too much for core convection, Venus spins too slowly, and Mercury's field is only weak.",
+   "source": "Ch9.1 pt2 slides 9-10; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-17",
+   "q": "How does Earth's magnetosphere help life on the surface?",
+   "options": [
+    "It traps sunlight to keep the planet warm",
+    "It causes the seasons",
+    "It deflects the charged particles of the solar wind and helps keep the atmosphere from being stripped away",
+    "It pulls meteorites in so they burn up"
+   ],
+   "answer": 2,
+   "why": "The magnetosphere steers solar-wind particles around Earth (some reach the poles and make auroras), protecting the atmosphere and life. Warming comes from sunlight and the atmosphere, the seasons come from the axis tilt, and meteors burn up because of air friction, not magnetism.",
+   "source": "Ch9.1 pt2 slide 10; Cosmic Perspective 9.1"
+  },
+  {
+   "id": "pg-18",
+   "q": "An asteroid 3 km across hits a rocky moon. About how wide will the crater be?",
+   "options": [
+    "About 3 km",
+    "About 3.5 km",
+    "About 300 km",
+    "About 3000 km",
+    "About 30 km"
+   ],
+   "answer": 4,
+   "why": "A crater usually ends up about 10 times wider than the object that made it, so 3 km × 10 ≈ 30 km. The same width or a little wider ignores the explosion, and 100 or 1000 times is far too large.",
+   "source": "Ch9.2 slide 3; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-19",
+   "q": "A crater on Mars has an unusually large central bump and is surrounded by flows that look like hardened mud. What does this most likely tell us?",
+   "options": [
+    "The impact hit ground that held water or ice",
+    "The crater was made by a volcano, not an impact",
+    "It is the oldest crater on Mars",
+    "The impactor itself was made of mud"
+   ],
+   "answer": 0,
+   "why": "Mud-like flows suggest that underground water or ice melted on impact and the muddy debris spread and hardened. The shape is still an impact crater, age is judged from crater crowding not from flows, and impactors are rock, metal or ice, not mud.",
+   "source": "Ch9.2 slide 5; Cosmic Perspective Figure 9.9"
+  },
+  {
+   "id": "pg-20",
+   "q": "Very runny lava erupts on a planet. Which landform is it most likely to build?",
+   "options": [
+    "A steep-sided stratovolcano",
+    "Wide, flat volcanic plains",
+    "A deep ocean trench",
+    "A long rift valley"
+   ],
+   "answer": 1,
+   "why": "Runny (low-viscosity) lava flows far before hardening, so it spreads into flat plains like the lunar maria. Steep stratovolcanoes need thick lava, and trenches and rifts are tectonic features, not eruptions.",
+   "source": "Ch9.2 slide 9; Cosmic Perspective Figure 9.11"
+  },
+  {
+   "id": "pg-21",
+   "q": "Mount Hood is a steep stratovolcano while Olympus Mons is a broad shield volcano. What best explains the difference in shape?",
+   "options": [
+    "Mount Hood is much older",
+    "Olympus Mons erupted for a shorter time",
+    "Mount Hood's lava was thicker and flowed less easily",
+    "Mount Hood erupted more lava in total",
+    "Olympus Mons is on a smaller planet"
+   ],
+   "answer": 2,
+   "why": "Volcano steepness is set by lava viscosity: thick lava piles up steeply near the vent, while runnier lava spreads into a broad shield. Age, eruption length and total volume do not set the slope, and Olympus Mons is actually far taller than Mount Hood.",
+   "source": "Ch9.2 slide 9; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-22",
+   "q": "Where did nearly all the gas in the atmospheres of Venus, Earth and Mars originally come from?",
+   "options": [
+    "Hydrogen and helium captured from the solar nebula",
+    "Gas blown onto them by the solar wind",
+    "Evaporation of ancient oceans of liquid nitrogen",
+    "Outgassing from the planets' interiors through volcanoes"
+   ],
+   "answer": 3,
+   "why": "Gas and water trapped inside the young planets were released by eruptions and volcanic vents. The terrestrial planets did not keep nebular hydrogen and helium, and the solar wind strips gas away rather than supplying it.",
+   "source": "Ch9.2 slide 10; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-23",
+   "q": "Which of these features was made by tectonics rather than erosion?",
+   "options": [
+    "A canyon cut by a river",
+    "A rift valley where the crust is being pulled apart",
+    "A U-shaped valley carved by a glacier",
+    "A field of sand dunes",
+    "A river delta"
+   ],
+   "answer": 1,
+   "why": "A rift valley forms when internal stresses stretch and break the crust, which is tectonics. Rivers, glaciers and wind (canyons, glacial valleys, dunes) and river sediment (deltas) are all erosion.",
+   "source": "Ch9.2 slides 13 and 16-20; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-24",
+   "q": "Which of these is an example of erosion building a feature up rather than wearing it down?",
+   "options": [
+    "A river delta",
+    "A rift valley",
+    "A shield volcano",
+    "A crater's central peak"
+   ],
+   "answer": 0,
+   "why": "Erosion moves material as well as removing it: a delta is built from sediment that a river carried downstream. A rift valley is tectonic, a shield volcano is volcanic and a central peak is part of an impact crater.",
+   "source": "Ch9.2 slide 20; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-25",
+   "q": "On an orbital photo of a rocky world, region A is crowded with overlapping craters and region B is a smooth plain with only a few small craters. What is the best conclusion?",
+   "options": [
+    "B's surface is younger: lava or another process erased its older craters",
+    "B's surface is older, because its craters had time to wear away",
+    "A was hit more because it faces the Sun",
+    "B is smooth because there were few impactors when the planet formed",
+    "Both surfaces must be the same age, because the planet formed all at once"
+   ],
+   "answer": 0,
+   "why": "Craters only build up with time and impacts fall everywhere at random, so a lightly cratered region must have been resurfaced more recently. Impacts do not favour the sunward side, the early impact rate was highest, and the planet's age is not the same thing as a surface's age.",
+   "source": "Ch9.2 slide 6; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-26",
+   "q": "Mercury is heavily cratered, while Venus has relatively few craters. Which statement is correct?",
+   "options": [
+    "Venus formed much later than Mercury",
+    "Mercury's surface is younger than Venus's",
+    "Venus's surface is younger, although both planets formed at about the same time",
+    "Venus is never hit by asteroids or comets"
+   ],
+   "answer": 2,
+   "why": "Crater counts date surfaces, not planets. Venus is large enough to stay active, so volcanism and tectonics erased its old craters, while small Mercury kept its ancient ones. Both planets are about 4.5 billion years old, and Venus does get hit, as its craters show.",
+   "source": "Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-27",
+   "q": "Why do larger terrestrial planets generally have more erosion?",
+   "options": [
+    "They are always closer to the Sun",
+    "They have more craters to wear down",
+    "Their stronger gravity pulls rocks downhill faster",
+    "More outgassing and stronger gravity let them build and keep an atmosphere, which brings wind and rain"
+   ],
+   "answer": 3,
+   "why": "Erosion needs weather, and weather needs an atmosphere. Big worlds outgas more and their gravity holds the gas. Size does not set distance from the Sun, crater numbers do not cause erosion, and downhill pull alone does not make wind and rain.",
+   "source": "Ch9.2 slide 21; Cosmic Perspective 9.2"
+  },
+  {
+   "id": "pg-28",
+   "q": "Two planets have the same size and composition, but one spins once a day and the other once every 200 days. Which difference is expected?",
+   "options": [
+    "The slow spinner has more erosion, because its days are longer",
+    "The fast spinner has more wind, more erosion and a better chance of a strong magnetic field",
+    "The slow spinner has the stronger magnetic field",
+    "Both have the same weather, because rotation does not affect wind"
+   ],
+   "answer": 1,
+   "why": "Rotation drives winds and storms, so the fast spinner has more weather and erosion, and moderately rapid rotation is needed for a strong global field. Slow rotation means less weather and a weaker field even with a molten core.",
+   "source": "Ch9.2 slide 23; Cosmic Perspective Figure 9.16"
+  },
+  {
+   "id": "pg-29",
+   "q": "An Earth-sized planet orbits far from its star, where it is very cold. Why would it have little erosion even with an atmosphere?",
+   "options": [
+    "It is too cold for rain or liquid oceans, so water is locked up as ice and snow",
+    "It cannot have any wind",
+    "Its gravity is too weak to hold gas",
+    "It would have too much liquid water"
+   ],
+   "answer": 0,
+   "why": "Far from the Sun, water and other gases freeze out, so there is no rain and no flowing water, the most effective eroder. An Earth-sized planet has enough gravity to keep an atmosphere and can still have some wind, but liquid water is what is missing.",
+   "source": "Ch9.2 slide 22; Cosmic Perspective Figure 9.16"
+  },
+  {
+   "id": "pg-30",
+   "q": "Seafloor crust is rarely older than about 200 million years, but some continental rock is nearly 4 billion years old. Why?",
+   "options": [
+    "Ocean water dissolves old seafloor rock",
+    "The oceans formed only 200 million years ago",
+    "Dense seafloor crust is carried back into the mantle at subduction zones, while lighter continental crust stays on top",
+    "Hot ocean water melts the seafloor from above"
+   ],
+   "answer": 2,
+   "why": "The seafloor is part of a conveyor belt: made at mid-ocean ridges and destroyed by subduction, so none of it survives very long. Continental crust is too light to sink. Ocean water erodes the deep sea floor very little, and Earth has had oceans for billions of years.",
+   "source": "Ch9.6 slides 6-7; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-31",
+   "q": "Which feature marks a place where a seafloor plate is sinking beneath another plate?",
+   "options": [
+    "A deep ocean trench",
+    "A mid-ocean ridge",
+    "A continental rift valley",
+    "A sideways-slipping fault such as the San Andreas",
+    "A hot-spot island chain"
+   ],
+   "answer": 0,
+   "why": "Subduction drags the sea floor down into a trench. Ridges and rifts are where plates pull apart, transform faults are where plates move sideways, and hot-spot islands form inside a plate over a mantle plume.",
+   "source": "Ch9.6 slide 7; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-32",
+   "q": "The Himalayas are still getting taller today. Why?",
+   "options": [
+    "A hot spot under Tibet keeps erupting new lava",
+    "Erosion piles sediment higher every year",
+    "The plates there are pulling apart",
+    "The Indian plate keeps pushing into the Eurasian plate, and neither continental plate can sink"
+   ],
+   "answer": 3,
+   "why": "At a continent-continent convergent boundary the light crust cannot subduct, so the collision crumples it upward, and the collision is still going on. A hot spot builds volcanoes, erosion lowers mountains, and pulling apart makes rifts, not mountains.",
+   "source": "Ch9.6 slide 8; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-33",
+   "q": "If the East African Rift keeps widening for many millions of years, what is expected to happen?",
+   "options": [
+    "It turns into a mountain range like the Himalayas",
+    "The rift floods and becomes a new sea with seafloor spreading, as the Red Sea did",
+    "It becomes a deep subduction trench",
+    "It is filled in and erased by sand dunes"
+   ],
+   "answer": 1,
+   "why": "A continental rift is a divergent boundary: as Africa splits, rising mantle rock erupts on the valley floor and the sea floods in, just as the Red Sea opened between Africa and Arabia. Mountains and trenches belong to convergent boundaries, and erosion cannot stop the plates moving apart.",
+   "source": "Ch9.6 slide 9; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-34",
+   "q": "A plate moves 3 cm per year. About how far does it travel in 100 million years?",
+   "options": [
+    "About 3 km",
+    "About 30 km",
+    "About 3000 km",
+    "About 300,000 km",
+    "About 30 m"
+   ],
+   "answer": 2,
+   "why": "3 cm × 100,000,000 = 300,000,000 cm = 3,000,000 m = 3000 km. Slow motion becomes huge distances over geological time, which is how the Atlantic opened. The other answers slip by factors of 1000 or more.",
+   "source": "Ch9.6 slide 4; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pg-35",
+   "q": "In the Hawaiian chain the Big Island has fresh lava, Kauai is deeply eroded and Midway is worn almost to sea level. What does this pattern show?",
+   "options": [
+    "The Pacific plate is moving over a hot spot that stays in place, so islands farther northwest are older",
+    "All the islands formed at the same time, but the northwest gets more rain",
+    "The islands formed at a subduction trench and are sinking into it",
+    "Each island formed at its own boundary where plates pull apart"
+   ],
+   "answer": 0,
+   "why": "A mantle plume stays put while the Pacific plate moves northwest over it, so the youngest island sits over the plume and older ones have been carried away and eroded for millions of years. Hawaii is in the middle of a plate, not at a trench or a divergent boundary, and the islands clearly differ in age.",
+   "source": "Ch9.6 slide 11; Cosmic Perspective Figure 9.49"
+  },
+  {
+   "id": "pg-36",
+   "q": "Which world's surface is shaped mainly by ongoing plate tectonics?",
+   "options": [
+    "Earth only",
+    "Earth and Venus",
+    "Earth and Mars",
+    "All five terrestrial worlds"
+   ],
+   "answer": 0,
+   "why": "Tectonics of some kind has happened on every terrestrial world, but plate tectonics, with a lithosphere broken into moving plates, is known only on Earth. Venus is nearly Earth's size yet shows no plate tectonics.",
+   "source": "Ch9.2 slide 15; Cosmic Perspective 9.6"
+  },
+  {
+   "id": "pla-x6-27",
+   "q": "The lithosphere of a planet is the layer that consists of",
+   "options": [
+    "material between the crust and the mantle.",
+    "the rigid rocky material of the crust and uppermost portion of the mantle.",
+    "material above the crust.",
+    "the lava that comes out of volcanoes.",
+    "the softer rocky material of the mantle."
+   ],
+   "answer": 1,
+   "why": "Think of the lithosphere as a planet's stiff outer shell: the crust together with the cold top layer of the mantle beneath it. What sets the boundary is how stiff the rock is, not what chemicals it contains. The softer rock below it is the asthenosphere, the crust is only part of the lithosphere, and lava is just molten rock that erupts.",
+   "source": "Owner's question set (t6 x6-27)"
+  },
+  {
+   "id": "pla-x6-28",
+   "q": "How do scientists learn about the internal composition of our planet?",
+   "options": [
+    "They collect seismic data to infer the densities and thicknesses of different regions in the Earth's interior.",
+    "They use x-ray and gamma ray imaging, which can penetrate the Earth's surface.",
+    "They drill into the earth with state-of-the-art equipment to collect samples from deep within the Earth's interior.",
+    "They drop special, heat-resistant probes into volcanoes to explore and obtain data from underneath the Earth's crust."
+   ],
+   "answer": 0,
+   "why": "We cannot drill deep or see inside, so scientists use seismic waves from earthquakes. Their speeds and paths depend on density and on whether the material is solid or liquid, which reveals the layers inside Earth. X-rays and gamma rays do not penetrate far, drills reach less than 1% of the way to the centre, and probes cannot be dropped into volcanoes that deep.",
+   "source": "Owner's question set (t6 x6-28)"
+  },
+  {
+   "id": "pla-x6-29",
+   "q": "Which of the following best describes differentiation in planetary geology?",
+   "options": [
+    "One planet's surface evolves differently from another planet's surface.",
+    "Different types of minerals form a conglomerate rock.",
+    "Gravity separates molten materials according to density.",
+    "One part of a planet's surface evolves differently from another part of the same planet's surface.",
+    "Dense materials condense at higher temperatures than less dense materials."
+   ],
+   "answer": 2,
+   "why": "Differentiation happens when a planet is molten enough that gravity separates material by density: dense metals sink to the core and lighter rock rises to form the mantle and crust, like oil and water separating. The other options mix this up with how surfaces evolve, how rocks form or how materials condense.",
+   "source": "Owner's question set (t6 x6-29)"
+  },
+  {
+   "id": "pla-x6-30",
+   "q": "Which internal energy source is the most important in continuing to heat the terrestrial planets today?",
+   "options": [
+    "accretion",
+    "differentiation",
+    "tidal heating",
+    "radioactivity"
+   ],
+   "answer": 3,
+   "why": "Heat from accretion and differentiation was mostly deposited when the planets were young, while radioactive decay of uranium, potassium and thorium is still releasing heat, so it is the main source now. Tidal heating matters for moons such as Io, but not for the terrestrial planets.",
+   "source": "Owner's question set (t6 x6-30)"
+  },
+  {
+   "id": "pla-x6-31",
+   "q": "Which of the following best describes convection?",
+   "options": [
+    "Warm material expands and rises while cool material contracts and falls.",
+    "Bubbles of gas move upward through a liquid of the same temperature.",
+    "A liquid separates according to density, such as oil and water separating in a jar.",
+    "Rocks sink in water.",
+    "Warm material gets even warmer and cool material gets even cooler."
+   ],
+   "answer": 0,
+   "why": "Convection is the process in which warm material expands and rises while cooler material contracts and falls, carrying heat upward, as in a pot of soup or in Earth's mantle. Gas bubbles rising, a liquid separating by density and rocks sinking in water are other ideas, and in convection warm material does not simply warm up more.",
+   "source": "Owner's question set (t6 x6-31)"
+  },
+  {
+   "id": "pla-x6-32",
+   "q": "What are the three main sources of internal heat for terrestrial planets?",
+   "options": [
+    "convection, differentiation, and eruption",
+    "conduction, differentiation, and accretion",
+    "accretion, differentiation, and eruption",
+    "conduction, convection, and eruption",
+    "accretion, differentiation, and radioactivity"
+   ],
+   "answer": 4,
+   "why": "Terrestrial planets get internal heat from accretion (impacts of planetesimals), differentiation (dense material sinking) and radioactive decay. Convection, conduction and eruption are ways heat moves or escapes, not sources of heat.",
+   "source": "Owner's question set (t6 x6-32)"
+  },
+  {
+   "id": "pla-x6-33",
+   "q": "What conditions are thought to be necessary for a terrestrial planet to have a strong magnetic field?",
+   "options": [
+    "fast rotation only",
+    "both a metal core and a rocky mantle",
+    "a molten metallic core only",
+    "a rocky mantle only",
+    "both a molten metallic core and reasonably fast rotation"
+   ],
+   "answer": 4,
+   "why": "A strong magnetic field needs an electrically conducting fluid such as molten metal, convection in it, and reasonably fast rotation. Earth has a molten outer core and rotates in a day, so it has a strong field. A molten core alone is not enough (Venus rotates very slowly), fast rotation alone is not enough, and a metal core with a rocky mantle can be solid, as with the Moon and Mars.",
+   "source": "Owner's question set (t6 x6-33)"
+  },
+  {
+   "id": "pla-x6-34",
+   "q": "What is the main process by which heat flows upward through the lithosphere?",
+   "options": [
+    "conduction",
+    "differentiation",
+    "convection",
+    "radiation",
+    "accretion"
+   ],
+   "answer": 0,
+   "why": "Inside the rigid lithosphere the rock cannot flow, so mantle convection stops at its base and heat moves upward mainly by conduction, atom to atom through contact, and is then radiated into space. Differentiation and accretion are heat sources, convection occurs below the lithosphere, and radiation is how the heat leaves from the surface into space.",
+   "source": "Owner's question set (t6 x6-34)"
+  },
+  {
+   "id": "pla-x6-35",
+   "q": "If a spherical body has a surface area of 36π km², what is its volume? (Recall that the surface area-to-volume ratio of a sphere is 3/r.)",
+   "options": [
+    "216 km³",
+    "36π km³",
+    "10π km³",
+    "3 km³"
+   ],
+   "answer": 1,
+   "why": "A sphere's surface area is 4πr². If 4πr² = 36π, then r² = 9 and r = 3 km. The surface area to volume ratio is 3/r = 1 per km, so volume = surface area ÷ ratio = 36π km² ÷ (1 per km) = 36π km³. Check: (4/3)π(3)³ = 36π km³. The 216 km³ choice cubes the diameter (6³) instead of using (4/3)πr³, and 3 km³ is just the number 3/r, not a volume.",
+   "source": "Owner's question set (t6 x6-35)"
+  },
+  {
+   "id": "pla-x6-36",
+   "q": "Which of the following is NOT an effect of a planet having a larger size?",
+   "options": [
+    "The planet undergoes internal geological activity for longer.",
+    "The planet retains an atmosphere for longer and experiences more erosion.",
+    "The planet has a warmer surface temperature.",
+    "The planet loses heat less quickly."
+   ],
+   "answer": 2,
+   "why": "A larger planet keeps its interior heat longer, so it stays geologically active longer, and its stronger gravity holds an atmosphere longer, leading to more erosion. Surface temperature is not an effect of size, because it depends mainly on distance from the Sun and on the atmosphere. Earth and Venus are almost the same size but have very different surface temperatures.",
+   "source": "Owner's question set (t6 x6-36)"
+  },
+  {
+   "id": "pla-x6-37",
+   "q": "Which terrestrial world has the strongest magnetic field?",
+   "options": [
+    "the Moon",
+    "Venus",
+    "Mars",
+    "Mercury",
+    "Earth"
+   ],
+   "answer": 4,
+   "why": "Earth has a molten, convecting metal outer core and rotates fairly quickly, so it has a strong global magnetic field. The Moon and Mars have cooled too much to have such a core, Venus rotates too slowly, and Mercury has only a weak field.",
+   "source": "Owner's question set (t6 x6-37)"
+  },
+  {
+   "id": "pla-x6-38",
+   "q": "Approximately how large (across) is an impact crater compared to the size of the impactor?",
+   "options": [
+    "10 times larger",
+    "100 times larger",
+    "the same size",
+    "1000 times larger",
+    "10—20 percent larger"
+   ],
+   "answer": 0,
+   "why": "Because the impactor explodes on contact and blasts out material all around, the crater ends up roughly ten times wider than the object that hit. For example, a 1 km asteroid makes a crater about 10 km across. The other sizes are too large or too small.",
+   "source": "Owner's question set (t6 x6-38)"
+  },
+  {
+   "id": "pla-x6-39",
+   "q": "Which factor below determines the steepness of a volcano?",
+   "options": [
+    "the duration of the eruption",
+    "the age of the volcano",
+    "the temperature of the lava",
+    "the volume of lava",
+    "how easily the lava flows"
+   ],
+   "answer": 4,
+   "why": "Thick, sticky lava cannot flow far, so it piles up into steep stratovolcanoes, while runny lava spreads out into gently sloping shield volcanoes or flat lava plains. Steepness is set by how easily the lava flows (its viscosity), not by how long the volcano erupted, its age or the total volume of lava.",
+   "source": "Owner's question set (t6 x6-39)"
+  },
+  {
+   "id": "pla-x6-40",
+   "q": "A planet is most likely to have volcanic and tectonic activity if it has",
+   "options": [
+    "low internal temperature.",
+    "high internal temperature.",
+    "high surface gravity.",
+    "low surface gravity.",
+    "a dense atmosphere."
+   ],
+   "answer": 1,
+   "why": "Volcanism and tectonics are driven by internal heat, which melts rock and drives mantle convection. So a planet with a high internal temperature is most likely to be active. A low internal temperature leads to a geologically dead planet, and surface gravity or a thick atmosphere does not drive volcanism.",
+   "source": "Owner's question set (t6 x6-40)"
+  },
+  {
+   "id": "pla-x6-41",
+   "q": "What can we conclude when we see a region of a planet that is not as heavily cratered as other regions?",
+   "options": [
+    "There is little volcanic activity to create craters.",
+    "The surface in the region is younger than the surface in more heavily cratered regions.",
+    "The planet is rotating very slowly and only one side was hit by impactors.",
+    "The surface in the region is older than the surface in more heavily cratered regions.",
+    "The planet formed after the age of bombardment and missed out on getting hit by leftover planetesimals."
+   ],
+   "answer": 1,
+   "why": "Craters build up over time, so a region with fewer craters must have been resurfaced more recently, for example by lava or erosion, which erased older craters. That makes it younger than a heavily cratered region. Volcanic activity erases craters rather than makes them, and planets do not get impacts on only one side.",
+   "source": "Owner's question set (t6 x6-41)"
+  },
+  {
+   "id": "pla-x6-42",
+   "q": "Which of the following natural geological features is NOT a result of erosion?",
+   "options": [
+    "Sand dunes",
+    "Canyons",
+    "Fjords",
+    "Rift valleys",
+    "River deltas"
+   ],
+   "answer": 3,
+   "why": "Rift valleys form when tectonic forces pull the crust apart, not by erosion. Canyons are cut by rivers, fjords are valleys carved by glaciers, sand dunes are shaped by wind and river deltas are built from sediment carried by water, so all of these come from erosion.",
+   "source": "Owner's question set (t6 x6-42)"
+  },
+  {
+   "id": "pla-x6-44",
+   "q": "What is the overall geological process occurring at the Great Rift Valley in Africa?",
+   "options": [
+    "Continental crust is pushing together at a convergent plate boundary.",
+    "Ocean crust is subducting under continental crust.",
+    "Continental crust is being pulled apart at a divergent plate boundary.",
+    "Two tectonic plates are sliding past each other, resulting in earthquakes."
+   ],
+   "answer": 2,
+   "why": "The Great Rift Valley in East Africa is where continental crust is being pulled apart at a divergent boundary, thinning the crust so a rift valley forms, and eventually the continent could split. Convergent boundaries push together, subduction is an ocean plate going under another plate, and sliding past is a transform fault like the San Andreas.",
+   "source": "Owner's question set (t6 x6-44)"
+  },
+  {
+   "id": "pla-x6-45",
+   "q": "What process has played the greatest role in determining the arrangement of the continents on Earth?",
+   "options": [
+    "impact cratering",
+    "acid rain",
+    "erosion",
+    "volcanism",
+    "plate tectonics"
+   ],
+   "answer": 4,
+   "why": "The slow movement of tectonic plates over millions of years has carried the continents into their present arrangement. Impacts, acid rain, erosion and volcanism shape surfaces but do not move continents.",
+   "source": "Owner's question set (t6 x6-45)"
+  },
+  {
+   "id": "pla-x6-46",
+   "q": "On average, approximately how fast do plates move with plate tectonics on Earth?",
+   "options": [
+    "They do not move at all, except during earthquakes.",
+    "a few centimeters per year",
+    "a few millimeters per century",
+    "a few centimeters per century",
+    "a few kilometers per hour"
+   ],
+   "answer": 1,
+   "why": "Tectonic plates move a few centimeters per year, about as fast as fingernails grow. That is slow, but over millions of years it moves continents thousands of kilometers. Plates are not stationary except in earthquakes, and a few millimeters per century or a few centimeters per century are far too slow, while a few kilometers per hour is much too fast.",
+   "source": "Owner's question set (t6 x6-46)"
+  },
+  {
+   "id": "pla-x6-47",
+   "q": "Deep trenches in the ocean mark places where",
+   "options": [
+    "one plate moves under another, returning older crust to the mantle.",
+    "plates pull apart, leaving great rifts in the crust.",
+    "plates push together, creating ocean mountain chains.",
+    "hot mantle material rises upward and spreads sideways, pushing the plates apart.",
+    "plates slip sideways relative to one another."
+   ],
+   "answer": 0,
+   "why": "Deep ocean trenches mark subduction zones, where the denser plate of seafloor crust moves under another plate and is returned to the mantle. Plates pulling apart make rifts and mid-ocean ridges, plates pushing together can make mountains, and plates sliding sideways make faults.",
+   "source": "Owner's question set (t6 x6-47)"
+  },
+  {
+   "id": "pla-x6-48",
+   "q": "The islands of Hawaii were created by",
+   "options": [
+    "a plate that has run up against an existing continental plate.",
+    "a fault.",
+    "plumes of hot mantle rising in a hot spot within a plate.",
+    "plates that have slipped sideways relative to each other, creating a fault.",
+    "thin continental crust separating and creating a rift valley."
+   ],
+   "answer": 2,
+   "why": "The Hawaiian Islands formed over a hot spot, a plume of hot mantle rising inside the Pacific plate. As the plate moves over the hot spot, new volcanoes build islands in a chain. Hawaii is not on a plate boundary, so a fault, a collision or a rift valley is not the cause.",
+   "source": "Owner's question set (t6 x6-48)"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Earth's layers by depth",
+   "prompt": "Put Earth's layers in order from the deepest at the bottom to the surface at the top.",
+   "why": "The solid inner core sits at the centre (down to 6378 km), wrapped in the liquid outer core (from about 5100 km up to 2900 km). Above it is the mantle; its upper part includes the soft asthenosphere, and above that is the rigid uppermost mantle that, together with the crust, forms the lithosphere.",
+   "topLabel": "Surface",
+   "bottomLabel": "Centre of Earth",
+   "layers": [
+    {
+     "name": "Solid inner core",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Liquid outer core",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Lower mantle",
+     "color": "#b45309"
+    },
+    {
+     "name": "Asthenosphere (soft upper mantle)",
+     "color": "#a16207"
+    },
+    {
+     "name": "Rigid uppermost mantle",
+     "color": "#4d7c0f"
+    },
+    {
+     "name": "Crust",
+     "color": "#15803d"
+    }
+   ]
+  },
+  {
+   "title": "How long each world stays active",
+   "prompt": "Order the terrestrial worlds by how much geological activity they keep, from the least at the bottom to the most at the top.",
+   "why": "Size decides how long a world keeps its internal heat. The tiny Moon and small Mercury are geologically dead, Mars is in between and has much less activity than in the past, Venus is almost Earth's size and is probably still active, and Earth, the largest, is the most active.",
+   "topLabel": "Most activity",
+   "bottomLabel": "Least activity",
+   "layers": [
+    {
+     "name": "The Moon",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Mercury",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Mars",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Venus",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Earth",
+     "color": "#15803d"
+    }
+   ]
+  },
+  {
+   "title": "Heat on its way out",
+   "prompt": "Follow heat from where it is made to where it leaves the planet. Put the first step at the bottom and the last at the top.",
+   "why": "Radioactive decay heats the deep rock; that hot rock rises in mantle convection cells; convection stops at the base of the rigid lithosphere; the heat crosses the lithosphere by conduction; finally it leaves the surface as infrared radiation.",
+   "topLabel": "Last step",
+   "bottomLabel": "First step",
+   "layers": [
+    {
+     "name": "Radioactive decay heats deep rock",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Hot mantle rock rises in a convection cell",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Rising rock reaches the base of the lithosphere",
+     "color": "#a16207"
+    },
+    {
+     "name": "Heat crosses the lithosphere by conduction",
+     "color": "#15803d"
+    },
+    {
+     "name": "Heat leaves the surface as infrared light",
+     "color": "#2563eb"
+    }
+   ]
+  },
+  {
+   "title": "Life of a piece of seafloor",
+   "prompt": "Put the life of a piece of seafloor crust in order, with the first event at the bottom and the last at the top.",
+   "why": "Mantle rock rises at a mid-ocean ridge and erupts as new basalt crust, then spreads away from the ridge across the ocean over tens of millions of years. At a trench it is pushed under a continent and sinks into the mantle, where part of it melts and feeds volcanoes on the continent's edge.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Mantle rock rises under a mid-ocean ridge",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "It erupts as new seafloor crust",
+     "color": "#c2410c"
+    },
+    {
+     "name": "It spreads across the ocean floor",
+     "color": "#2563eb"
+    },
+    {
+     "name": "It reaches an ocean trench",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "It subducts into the mantle",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Partly melted, it feeds coastal volcanoes",
+     "color": "#15803d"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Which process made it?",
+   "prompt": "Sort each landform by the geological process that made it.",
+   "buckets": [
+    "Impact cratering",
+    "Volcanism",
+    "Tectonics",
+    "Erosion"
+   ],
+   "items": [
+    {
+     "text": "Meteor Crater, Arizona",
+     "b": 0
+    },
+    {
+     "text": "Tycho's central peak",
+     "b": 0
+    },
+    {
+     "text": "A ring of debris around a fresh crater",
+     "b": 0
+    },
+    {
+     "text": "Olympus Mons on Mars",
+     "b": 1
+    },
+    {
+     "text": "Lava plains of the lunar maria",
+     "b": 1
+    },
+    {
+     "text": "Mount Hood",
+     "b": 1
+    },
+    {
+     "text": "The Hawaiian Islands",
+     "b": 1
+    },
+    {
+     "text": "The Himalayas",
+     "b": 2
+    },
+    {
+     "text": "The East African Rift valley",
+     "b": 2
+    },
+    {
+     "text": "Valles Marineris canyons on Mars",
+     "b": 2
+    },
+    {
+     "text": "The San Andreas Fault",
+     "b": 2
+    },
+    {
+     "text": "The Grand Canyon",
+     "b": 3
+    },
+    {
+     "text": "Yosemite Valley",
+     "b": 3
+    },
+    {
+     "text": "Desert sand dunes",
+     "b": 3
+    },
+    {
+     "text": "A river delta",
+     "b": 3
+    },
+    {
+     "text": "Norway's fjords",
+     "b": 3
+    }
+   ],
+   "why": "Craters and their peaks come from impacts; lava plains, shields, stratovolcanoes and hot-spot islands from volcanism; mountains, rifts, tectonic canyons and faults from stresses in the crust; and canyons cut by rivers, glacial valleys, fjords, dunes and deltas from erosion by water, ice and wind."
+  },
+  {
+   "title": "Heat source or heat mover?",
+   "prompt": "Sort each item by whether it adds heat to a planet's interior or moves heat outward.",
+   "buckets": [
+    "Adds heat to the interior",
+    "Moves heat outward"
+   ],
+   "items": [
+    {
+     "text": "Accretion",
+     "b": 0
+    },
+    {
+     "text": "Differentiation",
+     "b": 0
+    },
+    {
+     "text": "Radioactive decay",
+     "b": 0
+    },
+    {
+     "text": "Planetesimals crashing into a young planet",
+     "b": 0
+    },
+    {
+     "text": "Iron sinking toward the core",
+     "b": 0
+    },
+    {
+     "text": "Convection",
+     "b": 1
+    },
+    {
+     "text": "Conduction",
+     "b": 1
+    },
+    {
+     "text": "Radiation from the surface",
+     "b": 1
+    },
+    {
+     "text": "Lava erupting onto the surface",
+     "b": 1
+    }
+   ],
+   "why": "Accretion (impacts), differentiation (sinking metal) and radioactive decay are the three heat sources. Convection, conduction and radiation, helped by eruptions, carry the heat out to space."
+  },
+  {
+   "title": "Larger or smaller world?",
+   "prompt": "Sort each feature by whether it fits a larger or a smaller terrestrial world, if everything else is the same.",
+   "buckets": [
+    "Larger world",
+    "Smaller world"
+   ],
+   "items": [
+    {
+     "text": "Keeps its internal heat longer",
+     "b": 0
+    },
+    {
+     "text": "Thin lithosphere",
+     "b": 0
+    },
+    {
+     "text": "Ongoing volcanism and tectonics",
+     "b": 0
+    },
+    {
+     "text": "Holds on to an atmosphere",
+     "b": 0
+    },
+    {
+     "text": "More erosion",
+     "b": 0
+    },
+    {
+     "text": "Most ancient craters erased",
+     "b": 0
+    },
+    {
+     "text": "Thick lithosphere",
+     "b": 1
+    },
+    {
+     "text": "Geologically dead today",
+     "b": 1
+    },
+    {
+     "text": "Heavily cratered, ancient surface",
+     "b": 1
+    },
+    {
+     "text": "Little or no atmosphere",
+     "b": 1
+    },
+    {
+     "text": "Larger surface area-to-volume ratio",
+     "b": 1
+    }
+   ],
+   "why": "A larger world has a smaller surface area-to-volume ratio, so it cools slowly, keeps a thin lithosphere, stays volcanically and tectonically active, outgasses and holds an atmosphere, and erases its old craters. A small world cools fast, thickens its lithosphere, goes dead and keeps its craters."
+  },
+  {
+   "title": "Which kind of plate boundary?",
+   "prompt": "Sort each place or feature by the kind of plate boundary it belongs to.",
+   "buckets": [
+    "Convergent",
+    "Divergent",
+    "Transform"
+   ],
+   "items": [
+    {
+     "text": "A deep ocean trench",
+     "b": 0
+    },
+    {
+     "text": "The Himalayas",
+     "b": 0
+    },
+    {
+     "text": "Volcanoes of the Andes",
+     "b": 0
+    },
+    {
+     "text": "A subduction zone",
+     "b": 0
+    },
+    {
+     "text": "The Mid-Atlantic Ridge",
+     "b": 1
+    },
+    {
+     "text": "The Red Sea",
+     "b": 1
+    },
+    {
+     "text": "The East African Rift",
+     "b": 1
+    },
+    {
+     "text": "The rift crossing Iceland",
+     "b": 1
+    },
+    {
+     "text": "The San Andreas Fault",
+     "b": 2
+    },
+    {
+     "text": "Plates sliding sideways past each other",
+     "b": 2
+    }
+   ],
+   "why": "Plates push together at convergent boundaries (trenches, subduction, the Andes, the Himalayas), pull apart at divergent boundaries (ridges, rifts, the Red Sea, Iceland) and move sideways past each other at transform boundaries such as the San Andreas Fault."
+  }
+ ],
+ "sourceNotes": [
+  "Primary text: The Cosmic Perspective, 10th ed., sections 9.1 (pp. 238-244), 9.2 (pp. 244-251) and 9.6 (pp. 264-270). Sections 9.3-9.5 (Moon and Mercury, Mars, Venus) are not taught; only the comparison table in the 'properties' section uses single facts about those worlds that are stated in 9.1 and 9.2. Mathematical Insight 9.1 is used only for the 3/r surface area-to-volume idea and a sphere example.",
+  "Teacher slides: Ch9.1_pt1.pdf (11 slides), Ch9.1_pt2.pdf (12), Ch9.2.pdf (25), Ch9.6.pdf (13). All figures are cropped from these slides.",
+  "Slide and textbook differences: Ch9.6 slide 13 says rifts and trenches form at divergent boundaries; the textbook places trenches at subduction zones (convergent), which the notes follow. Ch9.6 slide 2 says about 16 major plates; the textbook says more than a dozen. Ch9.2 slide 10 says volcanic gas is mostly CO2; the textbook stresses water vapour and gases, so the notes say water vapour and carbon dioxide. Ch9.2 slide 5 ties central peaks especially to icy terrain; the textbook ties central peaks to large craters and an extra-large bump plus mud flows to icy ground.",
+  "Quiz questions are new for this unit; none copy the owner's exam questions x6-27 to x6-48, which were used only to check coverage and difficulty."
+ ]
+}

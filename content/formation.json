@@ -1,0 +1,2523 @@
+{
+ "id": "formation",
+ "title": "Formation of the Solar System",
+ "chapter": "Ch 8",
+ "icon": "🌌",
+ "color": "#7c3aed",
+ "slideFile": "Ch8.1.pdf; Ch8.2_pt1.pdf; Ch8.2_pt2.pdf",
+ "intro": "Where did the Sun, Earth and the other planets come from? Follow the nebular theory step by step: a cloud enriched by earlier stars collapses under gravity, heats up, spins faster and flattens into a disk; metal, rock and, beyond the frost line, ice condense into tiny seeds; the seeds grow by accretion into small rocky planets near the Sun and giant gas-wrapped planets farther out; the solar wind clears the leftover gas; and the leftovers become asteroids and comets that bombard the planets. Then see how captures and giant impacts, including the one that made our Moon, explain the exceptions.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Name the four major features of the solar system that any theory of its formation must explain."
+  },
+  {
+   "id": "goal-02",
+   "text": "Explain why the close encounter hypothesis was rejected and why the many planetary systems around other stars support the nebular theory."
+  },
+  {
+   "id": "goal-03",
+   "text": "Describe galactic recycling, give the solar nebula's make-up by mass (98% hydrogen and helium, 2% everything else) and explain why the first stars could not have had planets."
+  },
+  {
+   "id": "goal-04",
+   "text": "Explain why a collapsing cloud heats up (conservation of energy), spins faster (conservation of angular momentum) and flattens into a disk (collisions)."
+  },
+  {
+   "id": "goal-05",
+   "text": "Use the spinning disk to explain why the planets orbit in the same direction, in nearly the same plane, on nearly circular orbits."
+  },
+  {
+   "id": "goal-06",
+   "text": "List the four ingredients of the solar nebula from most to least abundant and say which ones condense at which temperatures."
+  },
+  {
+   "id": "goal-07",
+   "text": "Explain what the frost line is, where it was, and how moving it (for example with a hotter or cooler young Sun) would change where planets form."
+  },
+  {
+   "id": "goal-08",
+   "text": "Describe how grains grew into planetesimals and planets by accretion, and contrast how the terrestrial and jovian planets and their moons formed."
+  },
+  {
+   "id": "goal-09",
+   "text": "Explain how the solar wind cleared the nebula, why the Sun spins slowly today, and what would change if the gas had stayed longer or left earlier."
+  },
+  {
+   "id": "goal-10",
+   "text": "Explain asteroids and comets as leftovers, the heavy bombardment, how Earth got its water, and how giant impacts and captures explain exceptions such as our Moon."
+  }
+ ],
+ "sections": [
+  {
+   "id": "origins",
+   "title": "What a formation theory must explain",
+   "slides": "Ch8.1: slides 1-4",
+   "steps": [
+    {
+     "title": "Four features to explain",
+     "bullets": [
+      "A theory of how the solar system formed is tested against the **four major features** we see today.",
+      "**1. Orderly motions**: every planet circles the Sun the same way, on a nearly circular orbit in almost the same plane, and most of them also spin in that direction.",
+      "**2. Two kinds of planets**: close to the Sun, small rocky **terrestrial** planets; farther out, big hydrogen-rich **jovian** planets.",
+      "**3. Huge numbers of small bodies**: **asteroids** and **comets**.",
+      "**4. A few exceptions**: Venus and Uranus spin backward, Uranus is tipped on its side, and Earth has an unusually large Moon.",
+      "A theory that fails even one of these four tests cannot be correct."
+     ]
+    },
+    {
+     "title": "The close encounter hypothesis",
+     "bullets": [
+      "In the first half of the 1900s, a rival idea said the planets were blobs of gas **pulled out of the Sun** by the gravity of another star that passed very close.",
+      "Calculations showed it could not give the planets their **observed orbital motions** and could not explain the neat split into **two types of planets**.",
+      "Gas torn from the Sun would share the Sun's make-up, almost all hydrogen and helium, so it gives no reason for small planets of **rock and metal** near the Sun.",
+      "It also needed a near-collision between two stars, which is **extremely rare** because stars are so far apart. Planets would then be rare too.",
+      "We now know planets orbit a great many stars, so this idea has been **discarded**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_young_star_disk.webp",
+      "slide": "slide 1 (Ch8.1)",
+      "alt": "An artist's view of a newborn star glowing through a thick, dark ring of dust and gas that surrounds it."
+     },
+     "title": "The nebular theory",
+     "bullets": [
+      "According to the **nebular theory**, the solar system began when a giant interstellar cloud of gas and dust, the **solar nebula**, underwent **gravitational collapse**.",
+      "**Kant** (around 1755) and later **Laplace** proposed the idea more than two centuries ago. **Nebula** is Latin for cloud.",
+      "With better physics it explained all four features, so it rose from a hypothesis to a scientific **theory**.",
+      "Its biggest test: it says planets are a normal by-product of star birth, so **planetary systems should be common**. Observations of many other planetary systems have confirmed this."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why test a theory against four features? A theory of origins has to account for what the solar system looks like now. Explaining one feature is easy; explaining all four with the same physics is what makes the nebular theory convincing."
+    },
+    {
+     "type": "trick",
+     "text": "Close encounter = a rare accident, debris torn from the Sun. Nebular = a normal event, a collapsing cloud. Many planetary systems seen around other stars favour the normal event."
+    },
+    {
+     "type": "trap",
+     "text": "The close encounter hypothesis is rejected for three reasons: the wrong orbital motions, no reason for two planet types, and it makes planets rare. Observations of stars forming in disks support the nebular theory; they are not evidence about close encounters themselves. Ch8.1 slide 4 calls it the nebular theory; the hypothesis of Kant and Laplace is its older form."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.1 slides 1-4",
+    "Cosmic Perspective 8.1 (pp. 217-219): four criteria, Kant and Laplace, close encounter hypothesis and why it was discarded, nebular theory passing the test of other planetary systems."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_young_star_disk.webp",
+     "slide": "slide 1 (Ch8.1)",
+     "alt": "An artist's view of a newborn star glowing through a thick, dark ring of dust and gas that surrounds it."
+    }
+   ]
+  },
+  {
+   "id": "recycling",
+   "title": "Where the gas came from: galactic recycling",
+   "slides": "Ch8.1: slides 5-6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/formation/fo_galactic_recycling.webp",
+      "slide": "slide 5 (Ch8.1)",
+      "alt": "A loop of three pictures joined by arrows: stars are born in clouds of gas and dust, stars make heavier elements from lighter ones, and stars return material to space when they die."
+     },
+     "title": "Stars recycle the galaxy's gas",
+     "bullets": [
+      "The **Big Bang** made almost only **hydrogen and helium**.",
+      "Clouds of gas and dust are where stars are born. Inside stars, **nuclear fusion** turns lighter elements into **heavier elements**.",
+      "When a star dies it returns its material to space, gently as a **planetary nebula** or violently in a **supernova**. Supernovae also make many other elements.",
+      "That enriched gas mixes into interstellar clouds that form the next generation of stars. This loop is **galactic recycling**."
+     ]
+    },
+    {
+     "title": "What the solar nebula was made of",
+     "bullets": [
+      "Even after billions of years of this recycling, most matter was still the original hydrogen and helium; only a small share had been turned into heavier elements.",
+      "By mass the solar nebula was about **98% hydrogen and helium** and only about **2% everything else** combined.",
+      "The Sun and the jovian planets are mostly that hydrogen and helium. Earth and the other terrestrial worlds are built almost entirely from the small **2%**.",
+      "We are **star stuff**: the atoms in our planet and our bodies were made in stars that lived and died before the Sun formed."
+     ]
+    },
+    {
+     "title": "The first stars could not have had planets like ours",
+     "bullets": [
+      "The very **first generation** of stars formed from gas that held **only hydrogen and helium**.",
+      "Hydrogen and helium never condense into solid grains in a nebula, so there was **no rock, metal or ice** to make solid seeds.",
+      "With no solid seeds there could be **no planetesimals**, so no terrestrial planets, no jovian cores, and no asteroids or comets.",
+      "Evidence for recycling: **old stars** contain a smaller share of heavy elements than **young stars**, because they formed before much enrichment had happened."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_orion_beta_pictoris.webp",
+      "slide": "slide 6 (Ch8.1)",
+      "alt": "Two pictures: a small glowing disk around a young star inside the Orion Nebula, and an infrared image of the dusty disk around the star Beta Pictoris, seen edge-on, with a probable jovian planet marked close to the star."
+     },
+     "title": "We can watch star systems forming today",
+     "bullets": [
+      "Telescopes show stars being born inside gas clouds like the **Orion Nebula**, many with **disks** of gas and dust around them, the places where planets can form.",
+      "An infrared image of the young star **Beta Pictoris** shows a dusty disk seen edge-on and a probable jovian planet orbiting inside it.",
+      "Collapsing clouds should heat up and glow in **infrared**, and they do. Some young disks fire **jets** of gas out of their poles.",
+      "**Computer simulations** that start from real cloud conditions and apply the laws of physics reproduce the general motions of our solar system."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does recycling matter for planets? Only the heavy elements, about 2% of the nebula by mass, can become solid. Without earlier generations of stars there would have been nothing solid to build Earth from."
+    },
+    {
+     "type": "trick",
+     "text": "98 : 2. Ninety-eight percent hydrogen and helium gas that never condenses; two percent everything else, from which every rocky world was made."
+    },
+    {
+     "type": "trap",
+     "text": "Radioactive decay is not a step in galactic recycling and does not refill the galaxy with hydrogen and helium. The steps are: stars form in clouds, fusion makes heavier elements, dying stars return them, new stars form. Ch8.1 slide 5 says elements are released 'in the form of a planetary nebula, or in a supernova explosion'."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.1 slides 5-6",
+    "Cosmic Perspective 8.1 (pp. 218-220, Figures 8.1 and 8.2): galactic recycling, 98% / 2%, star stuff, Think About It on the first generation of stars, old stars poor in heavy elements; 8.2 (p. 221, Figure 8.4): infrared from heated clouds, disks with jets, computer simulations."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_galactic_recycling.webp",
+     "slide": "slide 5 (Ch8.1)",
+     "alt": "A loop of three pictures joined by arrows: stars are born in clouds of gas and dust, stars make heavier elements from lighter ones, and stars return material to space when they die."
+    },
+    {
+     "src": "img/formation/fo_orion_beta_pictoris.webp",
+     "slide": "slide 6 (Ch8.1)",
+     "alt": "Two pictures: a small glowing disk around a young star inside the Orion Nebula, and an infrared image of the dusty disk around the star Beta Pictoris, seen edge-on, with a probable jovian planet marked close to the star."
+    }
+   ]
+  },
+  {
+   "id": "collapse",
+   "title": "Collapse: gravity takes over and the cloud heats up",
+   "slides": "Ch8.2 pt1: slides 2-3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/formation/fo_cloud_collapse.webp",
+      "slide": "slide 2 (Ch8.2 pt1)",
+      "alt": "A large, ragged cloud with arrows pointing inward shrinks into a smaller, hotter, swirling cloud that is starting to rotate faster."
+     },
+     "title": "What started and drove the collapse",
+     "bullets": [
+      "The solar nebula began as a huge, cold, thin, roughly round cloud, perhaps a few **light-years** across, turning imperceptibly slowly.",
+      "Spread out that much, its own gravity may have been too weak to start a collapse. An outside event, probably the **shock wave of a nearby supernova**, likely gave it a push.",
+      "Once started, **gravity** kept it going. The mass stayed the same while the cloud shrank, so gravity grew stronger (an **inverse square law**) and the collapse sped up.",
+      "Gravity pulls equally in every direction, which is why the Sun and planets are round. Other laws, not gravity, decided the shape of the nebula itself."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_disk_young_sun.webp",
+      "slide": "slide 3 (Ch8.2 pt1)",
+      "alt": "An artist's view of a bright young Sun at the centre of a wide, glowing disk of gas and dust."
+     },
+     "title": "Heating: energy is conserved",
+     "bullets": [
+      "As the cloud shrank, its **gravitational potential energy** turned into **kinetic energy** of gas falling inward.",
+      "The falling particles crashed into each other, turning that kinetic energy into random motion, which is **thermal energy**. So the cloud **heated up**. Some energy escaped as light.",
+      "This is **conservation of energy** at work: the energy did not appear from nowhere; it changed form.",
+      "The centre became the densest and hottest place. There the pressure and temperature finally became high enough to make the **young Sun**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a shrinking cloud get hot? Gas falling inward speeds up as it loses gravitational potential energy, and collisions convert that speed into heat. No fuel is burned; it is energy changing form."
+    },
+    {
+     "type": "trick",
+     "text": "Shrink = heat (energy) and spin (angular momentum). Gravity starts the collapse squeezing; the conservation laws decide what happens next."
+    },
+    {
+     "type": "trap",
+     "text": "Gravity, not outside pressure, light pressure or electric charge, is what collapses the cloud. A supernova shock wave may trigger the collapse, but gravity does the work. Ch8.2 pt1 slide 3 says the energy became 'heat and light as particles collided'."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt1 slides 2-3",
+    "Cosmic Perspective 8.2 (pp. 220-221, Figure 8.3): roughly spherical cold cloud a few light-years across, supernova trigger, inverse square law, heating by conservation of energy; Special Topic p. 232 (supernova trigger, short-lived iodine-129 clue)."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_cloud_collapse.webp",
+     "slide": "slide 2 (Ch8.2 pt1)",
+     "alt": "A large, ragged cloud with arrows pointing inward shrinks into a smaller, hotter, swirling cloud that is starting to rotate faster."
+    },
+    {
+     "src": "img/formation/fo_disk_young_sun.webp",
+     "slide": "slide 3 (Ch8.2 pt1)",
+     "alt": "An artist's view of a bright young Sun at the centre of a wide, glowing disk of gas and dust."
+    }
+   ]
+  },
+  {
+   "id": "disk",
+   "title": "Spinning faster and flattening into a disk",
+   "slides": "Ch8.2 pt1: slides 2 and 4",
+   "steps": [
+    {
+     "title": "Spinning: angular momentum is conserved",
+     "bullets": [
+      "The cloud spun **faster and faster as it shrank**, the same way an **ice skater pulling in her arms** speeds up. This is **conservation of angular momentum**.",
+      "Even a cloud that turned imperceptibly slowly before collapse ends up spinning fast once it is much smaller.",
+      "The fast spin stopped everything from falling into the centre. Material orbiting in a disk could stay out of the Sun. The more angular momentum a cloud has, the more **spread out** it ends up."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_flattening_disk.webp",
+      "slide": "slide 4 (Ch8.2 pt1)",
+      "alt": "A rotating cloud is squashed into a flat disk by collisions between particles, ending as a spinning, flattened disk with its mass and highest temperature at the centre."
+     },
+     "title": "Flattening: collisions average out the motions",
+     "bullets": [
+      "Clumps of gas inside the cloud first moved in **random directions** at random speeds.",
+      "As the cloud shrank, clumps **collided and merged**, and each merged clump took the **average** motion of the clumps that made it.",
+      "Motions up and down cancelled out, but the overall spin did not, so the lumpy cloud settled into a **rotating, flattened disk** with mass and heat concentrated in the centre.",
+      "Collisions also made stretched (elliptical) orbits **more circular**. Stir pepper into water at random and it soon settles into one slow swirl, the average of all the stirring."
+     ]
+    },
+    {
+     "title": "Why the planets move in such an orderly way",
+     "bullets": [
+      "The planets formed **inside the flat disk**, so they orbit in **nearly the same plane**.",
+      "The **Sun's rotation** and **every planet's orbit** both go the same way the disk spun.",
+      "Computer models show forming planets also tended to **rotate** in that same direction, which is why most planets do. Planets are small compared with the disk, so a few exceptions could arise.",
+      "The circularizing effect of collisions explains why planetary orbits are **nearly circular**. Flattened disks appear wherever orbiting particles collide: spiral galaxies, planetary rings and disks around young stars."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a cloud become a disk rather than a smaller ball? Collisions cancel motions that do not match the overall spin, but angular momentum cannot be cancelled. The only arrangement left is material circling in one plane in one direction."
+    },
+    {
+     "type": "trick",
+     "text": "Three outcomes of collapse: HEATS (energy), SPINS faster (angular momentum), FLATTENS (collisions). Heating + spinning + flattening = the orderly solar system."
+    },
+    {
+     "type": "trap",
+     "text": "The disk was not a lucky original shape, and the Sun did not form first and then spread out like spinning pizza dough. Any rotating, collapsing cloud ends up as a spinning disk. A system with planets orbiting in completely different planes would not fit the nebular theory, while a few backward-spinning planets or backward-orbiting small moons would."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt1 slides 2 and 4",
+    "Cosmic Perspective 8.2 (pp. 220-221, Figure 8.3): spinning (skater), flattening by collisions, more circular orbits, See It For Yourself pepper experiment, orderly motions explained, other flattened disks."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_flattening_disk.webp",
+     "slide": "slide 4 (Ch8.2 pt1)",
+     "alt": "A rotating cloud is squashed into a flat disk by collisions between particles, ending as a spinning, flattened disk with its mass and highest temperature at the centre."
+    }
+   ],
+   "table": {
+    "title": "Three things a collapsing cloud does",
+    "head": [
+     "What happens",
+     "Why (physical law or cause)",
+     "What it explains today"
+    ],
+    "rows": [
+     [
+      "Heats up",
+      "Conservation of energy: gravitational potential energy becomes kinetic, then thermal energy",
+      "A hot centre where the Sun formed; a nebula hotter near the centre than far out"
+     ],
+     [
+      "Spins faster",
+      "Conservation of angular momentum: smaller radius means faster spin",
+      "Material stayed in orbit as a disk instead of all falling into the Sun"
+     ],
+     [
+      "Flattens",
+      "Collisions between particles average out random motions",
+      "Planets orbit in one plane, in one direction, on nearly circular orbits"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "condensation",
+   "title": "Ingredients of the nebula and condensation",
+   "slides": "Ch8.2 pt1: slides 5-6",
+   "steps": [
+    {
+     "title": "Four kinds of ingredients",
+     "bullets": [
+      "**Hydrogen and helium gas** (about **98%** of the mass) never condense in the nebula.",
+      "**Hydrogen compounds** (about **1.4%**): water, methane and ammonia. They freeze into **ices** only below about **150 K**.",
+      "**Rock** (about **0.4%**): various minerals, solid below about **500 to 1300 K**.",
+      "**Metal** (about **0.2%**): iron, nickel and aluminum, solid below about **1000 to 1600 K**.",
+      "From most to least by mass: **hydrogen and helium, hydrogen compounds, rock, metal**. Metal condenses at the **highest** temperature even though it is the scarcest."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_condensation_seeds.webp",
+      "slide": "slide 6 (Ch8.2 pt1)",
+      "alt": "A top view of the young solar system with a hot grey centre, a rock and metal condensation line, a frost line, and a close-up showing scattered tiny solid grains."
+     },
+     "title": "Condensation makes the seeds of planets",
+     "bullets": [
+      "In the disk the gas was far too spread out for gravity alone to pull it into planets. Planets needed solid **seeds** first.",
+      "**Condensation** is when solid (or liquid) particles form out of a gas, like snowflakes forming in a cold cloud. Pressure in the nebula was too low for liquid droplets, so the particles were solid.",
+      "What condensed at each place depended on **temperature**, which fell with distance from the hot centre.",
+      "Mixing kept the composition the **same everywhere**; only the temperature changed, and that alone decided which ingredients became solid."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why did temperature decide what became solid? Each ingredient has its own condensation temperature. Where the nebula was hotter than that temperature, the ingredient stayed gas; where it was cooler, tiny solid grains formed."
+    },
+    {
+     "type": "trick",
+     "text": "Order of abundance: H/He >> hydrogen compounds > rock > metal (98, 1.4, 0.4, 0.2). Order of condensing as it cools: metal first, then rock, then ices; hydrogen and helium never."
+    },
+    {
+     "type": "trap",
+     "text": "Rock is more abundant than metal (0.4% versus 0.2%), and hydrogen compounds outweigh rock and metal together. A list that puts metal above rock, or hydrogen compounds above hydrogen and helium, is wrong. The temperatures are from Table 8.1 of Cosmic Perspective; the Ch8.2 pt1 slides give only the zones."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt1 slides 5-6",
+    "Cosmic Perspective 8.2 (pp. 221-222, Table 8.1): 200 AU disk, uniform composition, condensation and snowflake analogy, no liquid droplets, four ingredient types with condensation temperatures and mass percentages."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_condensation_seeds.webp",
+     "slide": "slide 6 (Ch8.2 pt1)",
+     "alt": "A top view of the young solar system with a hot grey centre, a rock and metal condensation line, a frost line, and a close-up showing scattered tiny solid grains."
+    }
+   ],
+   "table": {
+    "title": "Ingredients of the solar nebula",
+    "head": [
+     "Ingredient",
+     "Examples",
+     "Solid below about",
+     "Share of mass"
+    ],
+    "rows": [
+     [
+      "Hydrogen and helium gas",
+      "Hydrogen, helium",
+      "Never condense in the nebula",
+      "98%"
+     ],
+     [
+      "Hydrogen compounds",
+      "Water, methane, ammonia",
+      "150 K (as ices)",
+      "1.4%"
+     ],
+     [
+      "Rock",
+      "Various minerals",
+      "500 to 1300 K",
+      "0.4%"
+     ],
+     [
+      "Metal",
+      "Iron, nickel, aluminum",
+      "1000 to 1600 K",
+      "0.2%"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "frostline",
+   "title": "The frost line: two kinds of seeds",
+   "slides": "Ch8.2 pt1: slide 5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/formation/fo_frost_line.webp",
+      "slide": "slide 5 (Ch8.2 pt1)",
+      "alt": "A glowing disk around the young Sun with a white ring marking the frost line, a hot thermometer inside the ring and a cold thermometer beyond it."
+     },
+     "title": "Temperature zones in the nebula",
+     "bullets": [
+      "**Right next to the young Sun**: too hot for anything to condense. Rock, metal and hydrogen compounds all stayed gas.",
+      "**Near Mercury's orbit**: cool enough for **metals and some rock** to form tiny solid grains.",
+      "**Where Venus, Earth and Mars formed**: more kinds of rock could condense. In the **asteroid belt** region, dark carbon-rich minerals and minerals holding a little water could condense.",
+      "**Beyond the frost line**: cold enough for **hydrogen compounds to freeze into ices**, alongside rock and metal."
+     ]
+    },
+    {
+     "title": "Where the frost line was and why it matters",
+     "bullets": [
+      "The **frost line** marks the distance past which ices could condense. It sat **between the orbits of Mars and Jupiter**, in the outer asteroid belt, roughly **2.7 AU** out from the Sun.",
+      "**Inside** it, seeds were only **metal and rock**. **Beyond** it, seeds were **ice plus metal and rock**.",
+      "Rock and metal combined were outnumbered nearly three to one: hydrogen compounds were about **three times as abundant**. So beyond the frost line there was **much more solid material**.",
+      "That difference set the stage for two kinds of planets: small rocky ones inside and giant ones outside."
+     ]
+    },
+    {
+     "title": "Moving the frost line: what-if thinking",
+     "bullets": [
+      "The frost line sits where the nebula's temperature drops to the temperature at which ices form.",
+      "If ices could form only at a **lower** temperature, the frost line would be **farther** out. If they could form at a higher temperature, it would be **closer**.",
+      "A **hotter, brighter young Sun** would warm the nebula farther out, pushing the frost line **outward**, so jovian planets would form farther away. A **cooler Sun** would pull it **inward**.",
+      "Gravity did not sort the materials: everything orbited together, and an orbit does not depend on an object's size or density. **Temperature** made the difference."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are the inner planets made of denser material? Near the Sun only metal and rock could become solid, even though hydrogen compounds were more plentiful. Far out, abundant ices joined the rock and metal, giving far more, and lighter, solid material."
+    },
+    {
+     "type": "trick",
+     "text": "Frost line between Mars and Jupiter: rocky worlds (and rocky asteroids) inside, icy worlds (and comets) outside. Colder needed = farther out."
+    },
+    {
+     "type": "trap",
+     "text": "It is a common misconception that the Sun's gravity pulled dense material inward or that spinning flung light material outward. The orbits do not depend on density; the cause was temperature. Cosmic Perspective puts the frost line at about 2.7 AU; the Ch8.2 pt1 slide only shows it on a diagram."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt1 slide 5",
+    "Cosmic Perspective 8.2 (pp. 222-223, Figure 8.5, Common Misconceptions 'Solar Gravity and the Density of Planets'): temperature zones, frost line between Mars and Jupiter at about 2.7 AU, hydrogen compounds about three times as abundant as rock and metal; Think About It on 1300 K and 100 K regions."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_frost_line.webp",
+     "slide": "slide 5 (Ch8.2 pt1)",
+     "alt": "A glowing disk around the young Sun with a white ring marking the frost line, a hot thermometer inside the ring and a cold thermometer beyond it."
+    }
+   ]
+  },
+  {
+   "id": "terrestrial",
+   "title": "Building the terrestrial planets by accretion",
+   "slides": "Ch8.2 pt1: slides 6-7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/formation/fo_static_cat.webp",
+      "slide": "slide 6 (Ch8.2 pt1)",
+      "alt": "A cat covered in white foam packing pieces that cling to its fur by static electricity."
+     },
+     "title": "Tiny grains stick together",
+     "bullets": [
+      "**Accretion** is the growth of small solid seeds into larger bodies by colliding and sticking.",
+      "The grains circled the young Sun along the same neat, circular paths as the gas around them, so neighbouring grains moved at almost the same speed and their collisions were just **gentle touches**.",
+      "Too small to attract each other by gravity, they stuck by **electrostatic forces**, the same **static electricity** that makes foam packing pieces cling to a cat's fur.",
+      "Small particles combined into larger ones, eventually becoming **planetesimals**, meaning pieces of planets."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_accretion_sequence.webp",
+      "slide": "slide 7 (Ch8.2 pt1)",
+      "alt": "Three views of the inner solar system: many small bodies on crossing orbits, then fewer larger bodies, then just a few planets on separate orbits."
+     },
+     "title": "Gravity takes over",
+     "bullets": [
+      "Once planetesimals reached about **1 km across**, their **gravity** began to pull in other planetesimals.",
+      "Bigger bodies had more surface to hit and more gravity, so they grew fast. Some reached **hundreds of kilometres** within a few million years.",
+      "Over **tens of millions of years**, many small objects accreted into **just a few large ones**.",
+      "As they grew, gravitational encounters made their orbits **cross**. Collisions became faster and often **shattered** planetesimals rather than building them. Only the largest and luckiest survived to become **Mercury, Venus, Earth and Mars**."
+     ]
+    },
+    {
+     "title": "Why the terrestrial planets are small and rocky",
+     "bullets": [
+      "Closer to the Sun than the frost line, the only possible solids were **metal and rock**, and these made up just about **0.6%** of the nebula's mass.",
+      "So there was little solid material to build with, and the terrestrial planets ended up **small**.",
+      "Their gravity was too weak to capture much hydrogen and helium gas, so they stayed made of **metal and rock**.",
+      "Evidence: some **meteorites** that date from this time contain **flakes of metal mixed into rock**, just what condensation in the inner nebula predicts. Meteorites from the outer asteroid belt are rich in **carbon** and some hold **water**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why could gravity not build planets from the start? Microscopic grains have far too little mass to pull on each other. Only after electrostatic sticking built bodies about a kilometre across did gravity become strong enough to take over."
+    },
+    {
+     "type": "trick",
+     "text": "Accretion ladder: grains (static) → planetesimals (~1 km, gravity takes over) → a few planets (tens of millions of years)."
+    },
+    {
+     "type": "trap",
+     "text": "Accretion is particles growing by colliding and sticking. Separating metal and rock from ices was condensation, an earlier stage, and Earth gaining water came later through impacts. Hydrogen and helium never bonded into solids. Ch8.2 pt1 slide 7 gives about 1 km as the size where gravity takes over."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt1 slides 6-7",
+    "Cosmic Perspective 8.2 (pp. 223-224, Figures 8.6 and 8.7): accretion, gentle collisions, electrostatic forces, planetesimals, hundreds of km in a few million years, destructive collisions, only four terrestrial planets survived, meteorite evidence (metal flakes; carbon-rich and watery meteorites)."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_static_cat.webp",
+     "slide": "slide 6 (Ch8.2 pt1)",
+     "alt": "A cat covered in white foam packing pieces that cling to its fur by static electricity."
+    },
+    {
+     "src": "img/formation/fo_accretion_sequence.webp",
+     "slide": "slide 7 (Ch8.2 pt1)",
+     "alt": "Three views of the inner solar system: many small bodies on crossing orbits, then fewer larger bodies, then just a few planets on separate orbits."
+    }
+   ]
+  },
+  {
+   "id": "jovian",
+   "title": "Building the jovian planets and their moons",
+   "slides": "Ch8.2 pt1: slides 8-9",
+   "steps": [
+    {
+     "title": "Big icy planetesimals capture gas",
+     "bullets": [
+      "Beyond the frost line, **ices** joined rock and metal in the seeds. With so much more solid material, **larger planetesimals** could form there.",
+      "The early growth was the same as in the inner solar system: small grains of ice, rock and metal stuck together by **static electricity** and other non-gravitational forces.",
+      "Once the largest ice-rich planetesimals were massive enough, their **gravity** pulled in the surrounding **hydrogen and helium gas**.",
+      "The added gas made their gravity stronger still, so they captured even more gas. The jovian planets ended up **mostly hydrogen and helium**, far bigger than the icy seeds they grew from."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_jovian_disk.webp",
+      "slide": "slide 9 (Ch8.2 pt1)",
+      "alt": "A painting of the glowing solar nebula around the Sun with a magnified inset of a smaller spinning disk of gas around a forming jovian planet."
+     },
+     "title": "Mini solar nebulae made the moons",
+     "bullets": [
+      "Gas pulled toward a young jovian planet went through the same **heating, spinning and flattening** as the whole solar nebula.",
+      "Around each jovian planet formed its own **spinning disk**, rotating the same way the planet spun.",
+      "**Large moons** (and rings) formed by **condensation and accretion** inside these disks, like a solar system in miniature.",
+      "That is why most large jovian moons have **nearly circular orbits**, go the **same direction** as their planet rotates, and lie close to its **equatorial plane**. A young planet called PDS 70c has been seen inside its own dusty disk where moons may be forming."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why did only the outer planets become giants? Only beyond the frost line was there enough solid material (ice as well as rock and metal) for planetesimals to become massive enough to pull in hydrogen and helium gas, which made up 98% of the nebula."
+    },
+    {
+     "type": "trick",
+     "text": "Jovian recipe: ice + rock + metal seed (static, then gravity) → big core → gravity captures H and He gas → spinning disk around it → regular moons."
+    },
+    {
+     "type": "trap",
+     "text": "The seeds of jovian planets did not grow by gravity from the start; like all seeds they first stuck by static electricity and other non-gravitational forces, and only a large planetesimal's gravity could then attract hydrogen and helium gas. Large jovian moons were not captured and are not pieces of a broken planet; they formed in disks around the planets. Ch8.2 pt1 slide 9 says the disks gave rise to 'moons and rings'."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt1 slides 8-9",
+    "Cosmic Perspective 8.2 (pp. 223-224, Figures 8.8 and 8.9): more solid material beyond the frost line, ice-rich planetesimals capture hydrogen and helium, disks around jovian planets form regular moons, PDS 70c."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_jovian_disk.webp",
+     "slide": "slide 9 (Ch8.2 pt1)",
+     "alt": "A painting of the glowing solar nebula around the Sun with a magnified inset of a smaller spinning disk of gas around a forming jovian planet."
+    }
+   ]
+  },
+  {
+   "id": "clearing",
+   "title": "Clearing the nebula and slowing the Sun",
+   "slides": "Ch8.2 pt2: slide 1",
+   "steps": [
+    {
+     "title": "The leftover gas is blown away",
+     "bullets": [
+      "Most of the nebula's hydrogen and helium never became part of any planet.",
+      "It was cleared away by the young Sun's **high-energy radiation** (ultraviolet and X-rays) and its **solar wind**, a stream of charged particles blowing outward in all directions.",
+      "Young stars have **much stronger winds** and give off much more high-energy radiation than older stars, so the young Sun's wind was **stronger than today's**.",
+      "Clearing **sealed the planets' compositions**: once the gas was gone, no planet could gather any more of it."
+     ]
+    },
+    {
+     "title": "What if the timing had been different?",
+     "bullets": [
+      "**Gas stays longer**: the nebula would have kept cooling until ices could condense even in the inner solar system. The terrestrial planets could then have grown bigger and collected lots of ice, maybe hydrogen and helium gas too, which would have changed their basic nature.",
+      "**Gas blown away earlier**: the raw materials could have been swept off before the planets finished forming, leaving them smaller or unfinished.",
+      "Neither happened in our solar system, but both may happen around other stars. Radiation from hot neighbouring stars can also strip a young star's nebula."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_magnetic_braking.webp",
+      "slide": "slide 1 (Ch8.2 pt2)",
+      "alt": "The young Sun inside the glowing nebula with purple magnetic field loops, and two arrows showing the magnetic field sweeping around faster than the nebula gas."
+     },
+     "title": "Why the Sun spins slowly now",
+     "bullets": [
+      "Conservation of angular momentum says the young Sun, holding most of the mass at the fast-spinning centre, should have rotated **very fast**. Today it turns only about **once a month**.",
+      "Angular momentum cannot disappear, but it can be **transferred and carried away**, like a spinning skater who grabs a partner and pushes him off.",
+      "The fast-spinning young Sun had a strong **magnetic field**. The field swept through the nebula faster than the gas orbited and **dragged the charged particles** along, which slowed the Sun.",
+      "When the gas was cleared into interstellar space, it **carried that angular momentum away**. Young stars spin fast with strong fields and winds; older stars spin slowly, so this seems to happen to almost all stars."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why could clearing the nebula change everything? The planets' make-up depended on what was solid and what gas they could hold onto while the nebula was there. The moment the gas left, their basic compositions were fixed."
+    },
+    {
+     "type": "trick",
+     "text": "Young Sun: fast spin → strong magnetic field → strong wind and radiation → gas cleared, and the gas leaves carrying the Sun's spin."
+    },
+    {
+     "type": "trap",
+     "text": "The Sun did not slow down because spinning objects always slow down by themselves, and it is not a mystery for the nebular theory. Angular momentum was transferred to charged particles and carried away when the gas was cleared. Ch8.2 pt2 slide 1 credits the magnetic field; Cosmic Perspective adds the solar wind and high-energy radiation."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt2 slide 1",
+    "Cosmic Perspective 8.2 (pp. 224-225, Figure 8.10): clearing by ultraviolet, X-rays and solar wind, young stars have stronger winds, what-if the gas stayed or left early, Sun's slow rotation, skater and partner analogy, magnetic drag on charged particles, young versus old stars."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_magnetic_braking.webp",
+     "slide": "slide 1 (Ch8.2 pt2)",
+     "alt": "The young Sun inside the glowing nebula with purple magnetic field loops, and two arrows showing the magnetic field sweeping around faster than the nebula gas."
+    }
+   ]
+  },
+  {
+   "id": "leftovers",
+   "title": "Leftovers: asteroids, comets and the heavy bombardment",
+   "slides": "Ch8.2 pt2: slides 2-4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/formation/fo_asteroid_comet.webp",
+      "slide": "slide 2 (Ch8.2 pt2)",
+      "alt": "Two photos: a grey, potato-shaped, cratered asteroid with a 5 km scale bar, and a comet with a glowing tail in the night sky above rocky peaks."
+     },
+     "title": "Asteroids and comets are leftover planetesimals",
+     "bullets": [
+      "**Asteroids** and **comets** are planetesimals that were never built into a planet. Some large ones count as **dwarf planets**.",
+      "**Asteroids** are rocky and metallic: leftovers from **inside the frost line**.",
+      "**Comets** are ice-rich: leftovers from **beyond the frost line**.",
+      "Evidence comes from meteorites, spacecraft visits and computer models. The theory even predicted that the **Kuiper belt** held comets, decades before anyone found one."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_heavy_bombardment.webp",
+      "slide": "slide 3 (Ch8.2 pt2)",
+      "alt": "A painting of the young, heavily cratered Earth and Moon, with a large impact throwing up a bright spray of debris on Earth."
+     },
+     "title": "The heavy bombardment",
+     "bullets": [
+      "The asteroids and comets left today are only a small fraction of the original leftovers. Some were flung into deep space; many **crashed into the planets and moons**.",
+      "Most of these collisions happened in the **first few hundred million years**, a period called the **heavy bombardment**, ending roughly 4 billion years ago.",
+      "Every world was pelted, and the impacts left **craters**. Most craters on the Moon date from this time.",
+      "A heavily cratered surface is therefore an **old surface** that has changed little since the bombardment; a smooth surface was reshaped later."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_earth_water.webp",
+      "slide": "slide 4 (Ch8.2 pt2)",
+      "alt": "Earth seen from space, with blue oceans, white clouds and the African continent."
+     },
+     "title": "Where Earth's water came from",
+     "bullets": [
+      "Earth formed **inside the frost line**, where it was too hot for water and other hydrogen compounds to condense, so its own planetesimals were dry.",
+      "Water and gases arrived with **icy planetesimals** that formed **farther from the Sun** and hit Earth while it was forming and during the heavy bombardment.",
+      "The ratio of **deuterium** (heavy hydrogen) to ordinary hydrogen suggests most of it came from planetesimals in the **outer asteroid belt**, just beyond the frost line. Some may have come from comets.",
+      "That means the water in our glasses and the air in our lungs were probably assembled **beyond the orbit of Mars**. Earth's water does not break the theory; impacts explain it."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why are there leftovers at all? Accretion was never perfectly efficient. Many planetesimals avoided being swept up, and those that survived to the present are the asteroids and comets."
+    },
+    {
+     "type": "trick",
+     "text": "Asteroid = rocky leftover (inside the frost line). Comet = icy leftover (beyond it). Heavy bombardment = leftovers hitting planets in the first few hundred million years."
+    },
+    {
+     "type": "trap",
+     "text": "The heavy bombardment was impacts of leftover planetesimals on planets and moons, not planetesimals sticking together to make planets (that was accretion) and not planets hitting each other. Asteroids and comets did not condense long after the planets, are not wreckage of planets or moons and are not volcanic debris. Ch8.2 pt2 slide 4 says water 'may have' arrived on icy planetesimals."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt2 slides 2-4",
+    "Cosmic Perspective 8.2 (pp. 225-226, Figure 8.11): asteroids and comets as leftovers, Kuiper belt prediction, heavy bombardment in the first few hundred million years, most lunar craters from that time, water delivered by icy planetesimals, deuterium evidence pointing to the outer asteroid belt."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_asteroid_comet.webp",
+     "slide": "slide 2 (Ch8.2 pt2)",
+     "alt": "Two photos: a grey, potato-shaped, cratered asteroid with a 5 km scale bar, and a comet with a glowing tail in the night sky above rocky peaks."
+    },
+    {
+     "src": "img/formation/fo_heavy_bombardment.webp",
+     "slide": "slide 3 (Ch8.2 pt2)",
+     "alt": "A painting of the young, heavily cratered Earth and Moon, with a large impact throwing up a bright spray of debris on Earth."
+    },
+    {
+     "src": "img/formation/fo_earth_water.webp",
+     "slide": "slide 4 (Ch8.2 pt2)",
+     "alt": "Earth seen from space, with blue oceans, white clouds and the African continent."
+    }
+   ]
+  },
+  {
+   "id": "exceptions",
+   "title": "Exceptions: captured moons and giant impacts",
+   "slides": "Ch8.2 pt2: slide 5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/formation/fo_phobos_deimos_uranus.webp",
+      "slide": "slide 5 (Ch8.2 pt2)",
+      "alt": "Close-ups of Mars's two small, lumpy moons Phobos and Deimos with kilometre scale bars, and Uranus with its rings running nearly up and down because the planet is tipped on its side."
+     },
+     "title": "Captured moons",
+     "bullets": [
+      "Some moons orbit the **wrong way** (opposite their planet's rotation) or on steeply **tilted** orbits. They did not form in the planet's disk.",
+      "They are probably **leftover planetesimals captured** into orbit.",
+      "Capture is hard: a passing body must **lose orbital energy**. Around young jovian planets, **friction with the thick gas** around them could slow passing planetesimals enough.",
+      "This works only for bodies up to a few kilometres across, and most small jovian moons are about that size. Mars's tiny moons **Phobos** (about 13 km) and **Deimos** (about 8 km) may be captured asteroids from a time when Mars had a thicker atmosphere."
+     ]
+    },
+    {
+     "title": "Giant impacts",
+     "bullets": [
+      "Models suggest a few leftover planetesimals were as large as **Mars**. A collision with one could **tilt a planet's axis**, change its **spin**, or even shatter it.",
+      "A giant impact may have tipped **Uranus on its side** and could explain the **backward rotation** of Venus (and Uranus). Some scientists think Venus's thick atmosphere caused its slow, backward spin instead.",
+      "Mercury's huge metal core may be left over after an impact blasted away much of its rock. Pluto's moon **Charon** may have formed in an impact like the one that made our Moon.",
+      "Giant impacts are random, so we expect **a few exceptions**, which is exactly what we see. Most exceptions come from **collisions or close gravitational encounters** with leftover planetesimals."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do exceptions support the theory instead of breaking it? The early solar system was full of leftover planetesimals, some very large. With so many objects, a few rare collisions and captures were bound to happen, so a few oddballs are expected."
+    },
+    {
+     "type": "trick",
+     "text": "Wrong-way or tilted small moon → captured. Tipped or backward-spinning planet → giant impact. Big regular moon of a jovian planet → formed in its disk."
+    },
+    {
+     "type": "trap",
+     "text": "The exceptions are not explained by a passing star, by objects formed recently, or by objects captured from interstellar space. A few moons orbiting backward or planets spinning backward fit the nebular theory. Ch8.2 pt2 slide 5 says Mars's moons 'may be' captured and that giant impacts 'might' explain Uranus's tilt."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt2 slide 5",
+    "Cosmic Perspective 8.2 (pp. 226-227, Figure 8.12): captured moons by gas drag, only a few km in size, Phobos 13 km and Deimos 8 km, Mars-size leftover planetesimals, Uranus tilt, Venus rotation (possibly atmosphere), Mercury's core, Charon."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_phobos_deimos_uranus.webp",
+     "slide": "slide 5 (Ch8.2 pt2)",
+     "alt": "Close-ups of Mars's two small, lumpy moons Phobos and Deimos with kilometre scale bars, and Uranus with its rings running nearly up and down because the planet is tipped on its side."
+    }
+   ]
+  },
+  {
+   "id": "moon",
+   "title": "How our Moon formed: the giant impact",
+   "slides": "Ch8.2 pt2: slides 6-7",
+   "steps": [
+    {
+     "title": "Why the other ideas fail",
+     "bullets": [
+      "**Capture** fails: our Moon is far too large compared with Earth to have been captured.",
+      "**Forming alongside Earth** fails: they would have been made from the same planetesimals and have about the same density, but the Moon's density is **much lower** than Earth's.",
+      "**Splitting off a fast-spinning Earth** (fission) needed an impossibly fast spin and a way to stop the piece flying off.",
+      "Moon rocks brought back by the **Apollo** missions ruled these out. The leading idea since 1974 is a **giant impact**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/formation/fo_giant_impact.webp",
+      "slide": "slide 6 (Ch8.2 pt2)",
+      "alt": "Three stages of an artist's sequence: a Mars-sized body smashes into the young Earth, molten debris is thrown into orbit, and a ring of leftover debris surrounds Earth as the young Moon gathers."
+     },
+     "title": "The giant impact",
+     "bullets": [
+      "A **Mars-sized planetesimal** hit the young Earth hard enough, and at the right angle, to blast material from Earth's **outer rocky layers** out into space.",
+      "Hours later Earth was molten and spinning very fast. Some debris fell back; the rest formed a ring in orbit.",
+      "Within the ring the debris **accreted into the Moon**, which was nearly complete in less than a thousand years.",
+      "The Moon formed close to Earth. Over billions of years tides have slowed Earth's spin and moved the Moon farther out."
+     ]
+    },
+    {
+     "title": "Evidence for the giant impact",
+     "bullets": [
+      "**Computer simulations** of a collision with a Mars-sized body can reproduce today's Earth-Moon system.",
+      "The Moon's overall composition is very **similar to Earth's outer layers** (mantle and crust), as expected if it came from them. It has very **little metal**, because the material came from outside Earth's metal core.",
+      "Moon samples lack **volatile** substances such as **water, sodium and zinc**, which the heat of the impact would have turned to gas so they never joined the Moon.",
+      "The oldest Moon rocks are about **4.4 billion years** old, so the impact happened **more than 4.4 billion years ago**. We may never prove it directly, but it is very likely correct."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a missing-volatiles clue matter? Only something extremely hot could boil away water, sodium and zinc. A gentle formation alongside Earth would have kept them; a giant impact would have vaporized them."
+    },
+    {
+     "type": "trick",
+     "text": "Four clues for the giant impact: it works in simulations, it matches Earth's outer layers, it lost the easily boiled substances, and it has little metal."
+    },
+    {
+     "type": "trap",
+     "text": "The Moon being geologically quiet today says nothing about how it formed; it is due to its small size, which let it cool fast. The same goes for the Moon always showing us the same face. The giant impact hypothesis says the Moon came from Earth's mantle and crust, not that two asteroids collided or that a once Earth-sized Moon was mostly blasted away. Ch8.2 pt2 slide 7 lists water, sodium and zinc as missing volatiles."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt2 slides 6-7",
+    "Cosmic Perspective 8.2 (pp. 227-228, Figure 8.13, Extraordinary Claims 'A Giant Impact Made Our Moon'): capture, co-formation and fission ruled out, Apollo samples, Hartmann and Davis 1974, impact sequence, composition like Earth's outer layers, little metal, few volatiles; 8.3 (p. 232): oldest Moon rocks about 4.4 billion years."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_giant_impact.webp",
+     "slide": "slide 6 (Ch8.2 pt2)",
+     "alt": "Three stages of an artist's sequence: a Mars-sized body smashes into the young Earth, molten debris is thrown into orbit, and a ring of leftover debris surrounds Earth as the young Moon gathers."
+    }
+   ]
+  },
+  {
+   "id": "destiny",
+   "title": "Putting it together: an orderly start and chancy details",
+   "slides": "Ch8.2 pt2: slides 8-10",
+   "steps": [
+    {
+     "img": {
+      "src": "img/formation/fo_formation_summary.webp",
+      "slide": "slide 8 (Ch8.2 pt2)",
+      "alt": "A top-to-bottom sequence: a cloud collapses into a flat disk, solid grains condense, planetesimals grow and gather, and the final system of planets orbits the Sun."
+     },
+     "title": "The whole story in order",
+     "bullets": [
+      "A large interstellar cloud, enriched by earlier stars, **collapses under gravity**.",
+      "It **heats up, spins faster and flattens** into a spinning disk with the young Sun at the centre.",
+      "Metal and rock **condense** everywhere cool enough; ices condense only **beyond the frost line**.",
+      "Seeds **accrete** into planetesimals: terrestrial planets inside the frost line; big icy cores that capture **hydrogen and helium** outside it, with moons forming in their disks.",
+      "The **solar wind clears** the leftover gas. **Leftovers** become asteroids and comets, and many hit the planets during the **heavy bombardment**."
+     ]
+    },
+    {
+     "title": "What was inevitable and what was luck",
+     "bullets": [
+      "The early stages, making a **spinning disk**, **condensation** and the first steps of **accretion**, were orderly and **inevitable**. So two types of planets, inner rocky and outer giant, were bound to form.",
+      "The later stages, crossing orbits, **giant impacts** and planets nudging each other's orbits, were **random**. The details of each planet could easily have been different.",
+      "No other planetary system is likely to be exactly like ours. Planets can even **migrate** inward or outward from where they formed.",
+      "The solar system formed about **4.5 billion years ago**, about a third of the age of the universe."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why can we say two planet types were inevitable? They follow directly from physics that acts the same in every collapsing cloud: heating makes the centre hot, so a frost line must exist, with rocky seeds inside and icy seeds outside."
+    },
+    {
+     "type": "trick",
+     "text": "Orderly: disk, condensation, early accretion. Chance: giant impacts, captures, exact orbits. Patterns are predicted; exceptions are luck."
+    },
+    {
+     "type": "trap",
+     "text": "Earth's large Moon, Uranus's tilt and Venus's backward spin would probably be different if the solar system formed again, but rocky inner planets and giant outer planets would not. Ch8.2 pt2 slide 9 gives the age as about 4.5 billion years; radiometric dating (Cosmic Perspective 8.3) is not on the slides and is left out of this unit."
+    }
+   ],
+   "sourceNotes": [
+    "Ch8.2 pt2 slides 8-10",
+    "Cosmic Perspective 8.2 (pp. 228-230, Figure 8.14): summary of the nebular theory, inevitable early stages versus random later events, planetary migration; 8.3 (pp. 230-232) radiometric dating is not covered on the slides and is skipped except for the 4.5 billion year age (slide 9) and the 4.4 billion year oldest Moon rocks."
+   ],
+   "images": [
+    {
+     "src": "img/formation/fo_formation_summary.webp",
+     "slide": "slide 8 (Ch8.2 pt2)",
+     "alt": "A top-to-bottom sequence: a cloud collapses into a flat disk, solid grains condense, planetesimals grow and gather, and the final system of planets orbits the Sun."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "How the two kinds of planets formed",
+  "head": [
+   "",
+   "Terrestrial planets",
+   "Jovian planets"
+  ],
+  "rows": [
+   [
+    "Where they formed",
+    "Inside the frost line (warm inner nebula)",
+    "Beyond the frost line (cold outer nebula)"
+   ],
+   [
+    "What condensed there",
+    "Only metal and rock",
+    "Ices (hydrogen compounds) as well as metal and rock"
+   ],
+   [
+    "Amount of solid material",
+    "Small (rock and metal are about 0.6% of the mass)",
+    "Much larger (ices were about three times as abundant as rock and metal combined)"
+   ],
+   [
+    "How the seeds grew",
+    "Grains stuck by static electricity, then planetesimals grew by gravity",
+    "The same, but into much larger ice-rich planetesimals"
+   ],
+   [
+    "Gas captured",
+    "Almost none; too small before the nebula was cleared",
+    "Huge amounts of hydrogen and helium pulled in by gravity"
+   ],
+   [
+    "Result",
+    "Small, dense, rocky worlds: Mercury, Venus, Earth, Mars",
+    "Giant, low-density, mostly hydrogen and helium worlds: Jupiter, Saturn, Uranus, Neptune"
+   ],
+   [
+    "Moons",
+    "Few; Earth's Moon from a giant impact, Mars's tiny moons possibly captured",
+    "Large regular moons formed in disks around each planet; small irregular moons captured"
+   ],
+   [
+    "Leftovers",
+    "Asteroids (rock and metal)",
+    "Comets (ice-rich)"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "fo-c1",
+   "front": "Nebular theory",
+   "back": "The scientific theory that a giant interstellar cloud of gas and dust, the solar nebula, underwent gravitational collapse and formed the solar system, with the Sun at the centre and the planets in a spinning disk around it. It explains all four major features of the solar system.",
+   "short": "Solar system formed from a collapsing gas cloud",
+   "src": "Ch8.1 slide 4; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-c2",
+   "front": "Close encounter hypothesis",
+   "back": "A discarded idea that the planets formed from blobs of gas pulled out of the Sun by a near-collision with another star. It could not explain the planets' orbital motions or the two planet types, and it would make planetary systems extremely rare.",
+   "short": "Planets as debris from a passing star (rejected)",
+   "src": "Ch8.1 slide 3; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-c3",
+   "front": "Solar nebula",
+   "back": "The interstellar cloud of gas and dust from which the Sun and planets formed. By mass it was about 98% hydrogen and helium and 2% everything else.",
+   "short": "The cloud the solar system formed from",
+   "src": "Ch8.1 slide 4; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-c4",
+   "front": "Four major features",
+   "back": "The facts a formation theory must explain: orderly motions (same direction, same plane), two types of planets, huge numbers of asteroids and comets, and a few exceptions such as Uranus's tilt and Earth's large Moon.",
+   "short": "Motions, two planet types, small bodies, exceptions",
+   "src": "Ch8.1 slide 2; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-c5",
+   "front": "Galactic recycling",
+   "back": "The loop in which stars form from interstellar clouds, make heavier elements by fusion, and return that material to space when they die (as a planetary nebula or a supernova), enriching the gas that forms the next stars.",
+   "short": "Stars make elements and return them to space",
+   "src": "Ch8.1 slide 5; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-c6",
+   "front": "Heavy elements",
+   "back": "In astronomy, every element other than hydrogen and helium. The Big Bang made almost none; they were made in stars. They were only about 2% of the solar nebula's mass, yet they built every rocky world.",
+   "short": "Everything besides hydrogen and helium",
+   "src": "Ch8.1 slide 5; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-c7",
+   "front": "First-generation stars",
+   "back": "The first stars after the Big Bang, made from gas that was only hydrogen and helium. With nothing that could condense into solid grains, they could not have had planets, asteroids or comets.",
+   "short": "Hydrogen-and-helium-only stars with no planets",
+   "src": "Ch8.1 slide 5; Cosmic Perspective 8.1 (Think About It)"
+  },
+  {
+   "id": "fo-c8",
+   "front": "Supernova trigger",
+   "back": "The likely outside push that started the solar nebula's collapse: a shock wave from a nearby exploding star. After the trigger, gravity kept the collapse going.",
+   "short": "A shock wave that may have started the collapse",
+   "src": "Ch8.2 pt1 slide 2; Cosmic Perspective 8.2 and Special Topic"
+  },
+  {
+   "id": "fo-c9",
+   "front": "Gravitational collapse",
+   "back": "The shrinking of a gas cloud under its own gravity. Because the mass stays the same while the cloud shrinks, gravity grows stronger and the collapse speeds up.",
+   "short": "A cloud shrinking under its own gravity",
+   "src": "Ch8.1 slide 4; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c10",
+   "front": "Collapse heating",
+   "back": "The warming of a shrinking cloud as gravitational potential energy turns into kinetic energy of infalling gas and then into thermal energy when particles collide. It is conservation of energy at work.",
+   "short": "Shrinking cloud heats up (energy conserved)",
+   "src": "Ch8.2 pt1 slide 3; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c11",
+   "front": "Spin-up of the nebula",
+   "back": "The faster rotation of the solar nebula as it shrank, required by conservation of angular momentum, like a skater pulling in her arms. It kept most material orbiting in a disk instead of falling into the Sun.",
+   "short": "Shrinking cloud spins faster (angular momentum)",
+   "src": "Ch8.2 pt1 slide 2; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c12",
+   "front": "Flattening",
+   "back": "The squashing of a rotating, collapsing cloud into a disk. Colliding clumps average out their random motions, leaving only the overall spin, and orbits become more circular.",
+   "short": "Collisions turn a cloud into a flat disk",
+   "src": "Ch8.2 pt1 slide 4; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c13",
+   "front": "Protoplanetary disk",
+   "back": "A flattened, spinning disk of gas and dust around a young star, in which planets can form. Examples are seen in the Orion Nebula and around Beta Pictoris.",
+   "short": "Disk around a young star where planets form",
+   "src": "Ch8.1 slide 6; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c14",
+   "front": "Proto-Sun",
+   "back": "The young Sun forming at the dense, hot centre of the collapsing solar nebula, before the leftover gas was cleared.",
+   "short": "The Sun while it was still forming",
+   "src": "Ch8.2 pt1 slides 3-4; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c15",
+   "front": "Hydrogen compounds",
+   "back": "Molecules such as water, methane and ammonia. They were about 1.4% of the solar nebula's mass and froze into ices only below about 150 K, so only beyond the frost line.",
+   "short": "Water, methane, ammonia: ices below about 150 K",
+   "src": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2 (Table 8.1)"
+  },
+  {
+   "id": "fo-c16",
+   "front": "Rocky material",
+   "back": "Various minerals, about 0.4% of the solar nebula's mass, which condense into solid grains below about 500 to 1300 K depending on the mineral.",
+   "short": "Minerals: 0.4%, solid below 500 to 1300 K",
+   "src": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2 (Table 8.1)"
+  },
+  {
+   "id": "fo-c17",
+   "front": "Metals in the nebula",
+   "back": "Iron, nickel and aluminum: the scarcest ingredient (about 0.2% of the mass) but the first to condense, below about 1000 to 1600 K.",
+   "short": "Iron, nickel, aluminum: 0.2%, condense first",
+   "src": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2 (Table 8.1)"
+  },
+  {
+   "id": "fo-c18",
+   "front": "Condensation",
+   "back": "The formation of solid (or liquid) particles from a gas when it is cool enough, like snowflakes forming in a cloud. In the solar nebula it made the tiny solid seeds of the planets.",
+   "short": "Solid grains forming out of a gas",
+   "src": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c19",
+   "front": "Frost line",
+   "back": "The distance from the young Sun past which it was cold enough that hydrogen compounds could condense into ices. It lay between the orbits of Mars and Jupiter, about 2.7 AU from the Sun.",
+   "short": "Where ices could start to form (about 2.7 AU)",
+   "src": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c20",
+   "front": "Accretion",
+   "back": "The growth of small solid particles into larger bodies by colliding and sticking together, first by static electricity and then, once large enough, by gravity.",
+   "short": "Growth by colliding and sticking",
+   "src": "Ch8.2 pt1 slides 6-7; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c21",
+   "front": "Planetesimal",
+   "back": "A small body, from boulder size up to hundreds of kilometres, built by accretion in the solar nebula. The name means piece of a planet. Planetesimals merged to make planets; the leftovers are asteroids and comets.",
+   "short": "A piece of a planet built by accretion",
+   "src": "Ch8.2 pt1 slide 6; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c22",
+   "front": "Electrostatic sticking",
+   "back": "The way microscopic grains stuck together before they were big enough to attract each other by gravity: static electricity, like foam pieces clinging to a cat's fur.",
+   "short": "Static electricity holding tiny grains together",
+   "src": "Ch8.2 pt1 slide 6; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c23",
+   "front": "Meteorite",
+   "back": "A rock that has fallen to Earth from space. Some date from the birth of the solar system and contain metal flakes mixed with rock, as the nebular theory predicts for the inner nebula.",
+   "short": "A space rock that reached the ground",
+   "src": "Cosmic Perspective 8.2 (Figure 8.7)"
+  },
+  {
+   "id": "fo-c24",
+   "front": "Gas capture",
+   "back": "The last stage of jovian planet growth: a large ice-rich planetesimal's gravity pulls in hydrogen and helium gas from the nebula, which strengthens its gravity so it captures still more.",
+   "short": "Big icy cores pulling in hydrogen and helium",
+   "src": "Ch8.2 pt1 slide 8; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c25",
+   "front": "Circumplanetary disk",
+   "back": "A spinning disk of gas and dust around a forming jovian planet, a small copy of the solar nebula. Large regular moons and rings formed in these disks.",
+   "short": "Disk around a young giant planet where moons form",
+   "src": "Ch8.2 pt1 slide 9; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c26",
+   "front": "Regular moon",
+   "back": "A moon that formed in its planet's disk, so it has a nearly circular orbit in the direction of the planet's rotation, close to its equator. Most large jovian moons are regular.",
+   "short": "Moon born in its planet's disk",
+   "src": "Ch8.2 pt1 slide 9; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c27",
+   "front": "Captured moon",
+   "back": "A moon that was once a leftover planetesimal orbiting the Sun and was trapped by a planet, for example after friction with the gas around a young jovian planet. It may orbit backward or on a tilted orbit.",
+   "short": "Leftover planetesimal trapped in orbit",
+   "src": "Ch8.2 pt2 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c28",
+   "front": "Phobos and Deimos",
+   "back": "Mars's two small, lumpy moons, about 13 km and 8 km across. They may be captured asteroids rather than moons that formed around Mars.",
+   "short": "Mars's tiny moons, possibly captured",
+   "src": "Ch8.2 pt2 slide 5; Cosmic Perspective 8.2 (Figure 8.12)"
+  },
+  {
+   "id": "fo-c29",
+   "front": "Solar wind",
+   "back": "Charged particles (protons and electrons, for example) streaming away from the Sun in every direction. The young Sun's wind was much stronger than today's.",
+   "short": "Charged particles streaming from the Sun",
+   "src": "Ch8.2 pt2 slide 1; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c30",
+   "front": "Clearing the nebula",
+   "back": "The removal of the leftover hydrogen and helium gas by the young Sun's strong solar wind and high-energy radiation. It fixed the planets' compositions and carried away the Sun's angular momentum.",
+   "short": "Leftover gas blown out of the solar system",
+   "src": "Ch8.2 pt2 slide 1; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c31",
+   "front": "Magnetic braking",
+   "back": "How the young Sun slowed down: its magnetic field swept through the nebula faster than the gas orbited, dragging charged particles and handing them angular momentum, which left the solar system when the gas was cleared.",
+   "short": "Sun's field passed its spin to the nebula gas",
+   "src": "Ch8.2 pt2 slide 1; Cosmic Perspective 8.2 (Figure 8.10)"
+  },
+  {
+   "id": "fo-c32",
+   "front": "Leftover planetesimals",
+   "back": "Planetesimals that never became part of a planet: rocky asteroids from inside the frost line and icy comets from beyond it. Many others hit the planets or were flung into deep space.",
+   "short": "Asteroids and comets",
+   "src": "Ch8.2 pt2 slide 2; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c33",
+   "front": "Heavy bombardment",
+   "back": "An early era, lasting a few hundred million years after the solar system formed and ending roughly 4 billion years ago, when leftover planetesimals often slammed into planets and moons and made most of the craters we see.",
+   "short": "Early era of frequent impacts",
+   "src": "Ch8.2 pt2 slide 3; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c34",
+   "front": "Impact crater",
+   "back": "A bowl-shaped scar left when an asteroid or comet hits a solid surface. A surface crowded with craters is old, dating back to the heavy bombardment.",
+   "short": "Scar left by an impact",
+   "src": "Ch8.2 pt2 slide 3; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c35",
+   "front": "Water delivery",
+   "back": "How Earth got water although it formed where water could not condense: icy planetesimals from beyond the frost line, mostly from the outer asteroid belt, hit the young Earth.",
+   "short": "Icy planetesimals brought Earth its water",
+   "src": "Ch8.2 pt2 slide 4; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c36",
+   "front": "Deuterium",
+   "back": "Heavy hydrogen, with a neutron in its nucleus. Its ratio to ordinary hydrogen in Earth's water matches planetesimals from the outer asteroid belt, pointing to where the water came from.",
+   "short": "Heavy hydrogen used to trace water's origin",
+   "src": "Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c37",
+   "front": "Giant impact",
+   "back": "A collision between a planet and a very large leftover planetesimal, which can tilt the planet's axis, change its spin or blast away its outer layers.",
+   "short": "A planet-scale collision",
+   "src": "Ch8.2 pt2 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c38",
+   "front": "Giant impact hypothesis",
+   "back": "The leading idea for our Moon's origin: a Mars-sized planetesimal struck the young Earth, throwing material from Earth's outer layers into orbit, where it accreted into the Moon more than 4.4 billion years ago.",
+   "short": "Moon made from debris of a Mars-sized impact",
+   "src": "Ch8.2 pt2 slides 6-7; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c39",
+   "front": "Volatiles",
+   "back": "Substances that turn to gas easily, such as water, sodium and zinc. Moon samples have very few of them, as expected if the heat of a giant impact boiled them away.",
+   "short": "Easily vaporized substances (water, sodium, zinc)",
+   "src": "Ch8.2 pt2 slide 7; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c40",
+   "front": "Exceptions to the rules",
+   "back": "Features that break the solar system's general patterns, such as Uranus's extreme tilt, the backward rotations of Venus and Uranus, captured moons and Earth's large Moon. Most are explained by giant impacts, captures or close encounters.",
+   "short": "Oddities explained by impacts and captures",
+   "src": "Ch8.2 pt2 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c41",
+   "front": "Uranus's tilt",
+   "back": "Uranus's axis is tipped almost onto its side, an exception to the rules. A giant impact with a large planetesimal may have knocked it over.",
+   "short": "Tipped on its side, maybe by a giant impact",
+   "src": "Ch8.2 pt2 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-c42",
+   "front": "Solar system age",
+   "back": "About 4.5 billion years: the planets formed within roughly the first 50 million years after accretion began, about a third of the age of the universe.",
+   "short": "About 4.5 billion years",
+   "src": "Ch8.2 pt2 slide 9; Cosmic Perspective 8.3"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "fo-1",
+   "q": "Which of these would a successful theory of how the solar system formed NOT be expected to explain?",
+   "options": [
+    "Why the planets orbit in the same direction and nearly the same plane",
+    "The exact number of moons that each planet has",
+    "Why there are small rocky planets near the Sun and giant planets farther out",
+    "Why there are huge numbers of asteroids and comets",
+    "Why a few objects, such as Uranus, break the general patterns"
+   ],
+   "answer": 1,
+   "why": "A formation theory has to explain four major features: orderly motions, two types of planets, many asteroids and comets, and the existence of a few exceptions. The exact moon count of each planet depends on chance events such as captures and impacts, so no theory is expected to predict it. The other four options are the four features themselves.",
+   "source": "Ch8.1 slide 2; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-2",
+   "q": "Thousands of planetary systems have now been found around other stars. Why does this count against the close encounter hypothesis but in favour of the nebular theory?",
+   "options": [
+    "The other systems all contain exactly the same planets as ours",
+    "Close encounters can only make jovian planets, and the systems found are all terrestrial",
+    "The nebular theory says planets form only around stars that have no neighbours",
+    "Close encounters would make every star have planets, which is too many",
+    "Near-collisions between stars are so rare that they could not make planets common, while the nebular theory makes planets a normal by-product of star birth"
+   ],
+   "answer": 4,
+   "why": "Stars are so far apart that a near-collision is extremely unlikely, so if planets came from such accidents they would be very rare. The nebular theory says disks and planets form whenever stars form, so it predicts many planetary systems, which is what we see. Other systems are not copies of ours, and close encounters would make planets rare, not common.",
+   "source": "Ch8.1 slides 3-4; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-3",
+   "q": "Where did most of the iron now in Earth's core originally come from?",
+   "options": [
+    "It was made in the Big Bang",
+    "It was made by nuclear fusion in the young Sun's core",
+    "It was made inside earlier generations of stars and released when they died",
+    "It was produced by radioactive decay inside the young Earth",
+    "It condensed directly from hydrogen in the solar nebula"
+   ],
+   "answer": 2,
+   "why": "The Big Bang made almost only hydrogen and helium. Heavier elements such as iron were made in earlier stars and returned to space when those stars died, then mixed into the solar nebula. The young Sun's fusion stays inside the Sun, radioactive decay breaks heavy nuclei down rather than building iron, and hydrogen cannot condense into iron.",
+   "source": "Ch8.1 slide 5; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-4",
+   "q": "A sample of solar nebula material has a mass of 1000 kg. About how much of it is rock?",
+   "options": [
+    "About 4 kg",
+    "About 2 kg",
+    "About 14 kg",
+    "About 20 kg",
+    "About 980 kg"
+   ],
+   "answer": 0,
+   "why": "Rock was about 0.4% of the nebula's mass, and 0.4% of 1000 kg is 4 kg. About 2 kg would be the metal (0.2%), 14 kg the hydrogen compounds (1.4%), 20 kg all the heavy materials together (2%), and 980 kg the hydrogen and helium gas (98%).",
+   "source": "Cosmic Perspective 8.2 (Table 8.1)"
+  },
+  {
+   "id": "fo-5",
+   "q": "Spectra show that old stars contain a smaller share of heavy elements than young stars. What does this support?",
+   "options": [
+    "Old stars have destroyed their heavy elements by fusion",
+    "Heavy elements sink to the centres of old stars, where we cannot see them",
+    "Young stars make heavy elements much faster than old stars did",
+    "Galactic recycling has slowly enriched the gas in the galaxy with heavy elements over time",
+    "Heavy elements escape from stars as they grow old"
+   ],
+   "answer": 3,
+   "why": "Old stars formed early, before many generations of stars had added heavy elements to interstellar gas. Young stars formed later from enriched gas. This is just what galactic recycling predicts. The other options invent processes that would not explain why the difference depends on when the star formed.",
+   "source": "Ch8.1 slide 5; Cosmic Perspective 8.1"
+  },
+  {
+   "id": "fo-6",
+   "q": "Imagine a star system forming today from a cloud with twice the usual share of heavy elements (4% instead of 2%). Based on the nebular theory, what is the most reasonable expectation?",
+   "options": [
+    "No planets could form, because the extra elements would stop the collapse",
+    "More solid material could condense, so planetesimals and planets could grow larger or more easily",
+    "Only jovian planets could form",
+    "The planets would orbit in random planes",
+    "The cloud could not form a star at its centre"
+   ],
+   "answer": 1,
+   "why": "Only the heavy elements (rock, metal and hydrogen compounds) can become solid seeds, so a richer cloud gives more raw material for accretion. Nothing in the theory says extra heavy elements stop collapse, ruin the disk's orderly spin, or prevent a central star; the gas is still mostly hydrogen and helium.",
+   "source": "Ch8.1 slide 5; Cosmic Perspective 8.1-8.2 (reasoning from the 98% / 2% composition)"
+  },
+  {
+   "id": "fo-7",
+   "q": "Once the collapse of the solar nebula had started, what kept it going?",
+   "options": [
+    "The supernova shock wave, which kept pushing for millions of years",
+    "Magnetic attraction between iron grains",
+    "Pressure from the light of the young Sun",
+    "The cloud's rotation, which pulled material inward",
+    "Gravity, which grew stronger as the cloud shrank"
+   ],
+   "answer": 4,
+   "why": "A shock wave may have started the collapse, but gravity kept it going: the mass stayed the same while the cloud got smaller, so gravity grew stronger. A shock wave is a brief push, iron grains were a tiny fraction of the cloud, light pushes outward, and rotation resists collapse rather than causing it.",
+   "source": "Ch8.2 pt1 slide 2; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-8",
+   "q": "Where did the heat of the collapsing solar nebula come from?",
+   "options": [
+    "Nuclear fusion throughout the cloud",
+    "Friction between the disk and the young Sun's magnetic field",
+    "Gravitational potential energy became kinetic energy of falling gas, which collisions turned into thermal energy",
+    "Radioactive decay of elements made in the Big Bang",
+    "Starlight absorbed from neighbouring stars"
+   ],
+   "answer": 2,
+   "why": "As gas fell inward it lost gravitational potential energy and gained speed; collisions then turned that motion into random thermal motion, so the cloud heated up. This is conservation of energy. Fusion began only in the Sun's core, the magnetic drag came later and slowed the Sun, the Big Bang made almost no radioactive elements, and starlight cannot explain heat concentrated at the centre.",
+   "source": "Ch8.2 pt1 slide 3; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-9",
+   "q": "Why do astronomers search for infrared light from clouds where stars are forming, and what has the search found?",
+   "options": [
+    "A collapsing cloud heats up, and warm gas gives off thermal radiation mostly in the infrared; such radiation is seen from many star-forming clouds",
+    "Infrared light shows that the clouds are cooling as they collapse",
+    "Infrared is the only light that can show a cloud's rotation",
+    "Infrared light is produced by the supernova that triggers the collapse",
+    "Infrared shows that the clouds contain no dust"
+   ],
+   "answer": 0,
+   "why": "The theory predicts that collapsing clouds heat up, and warm (but not very hot) objects emit thermal radiation mainly in the infrared. Infrared radiation has been detected from many nebulae where stars appear to be forming, which supports the theory. The clouds heat rather than cool, rotation is measured with Doppler shifts, and the clouds clearly contain dust.",
+   "source": "Ch8.1 slide 6; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-10",
+   "q": "What was the main reason that not all of the solar nebula fell into the Sun?",
+   "options": [
+    "Pressure from the hot centre blew the outer material away",
+    "The outer material was too cold to be pulled in by gravity",
+    "The young Sun's magnetic field held the material out",
+    "The cloud's rotation sped up as it shrank, so much material kept orbiting in a spread-out disk",
+    "The Sun's gravity was switched off until it began fusion"
+   ],
+   "answer": 3,
+   "why": "Conservation of angular momentum made the shrinking cloud spin faster, and fast-orbiting material cannot fall straight in, so it formed a disk. The more angular momentum, the more spread out the result. Temperature does not stop gravity, the magnetic field acted later on the gas, and gravity never switches off.",
+   "source": "Ch8.2 pt1 slides 2 and 4; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-11",
+   "q": "Why did the spinning solar nebula end up flat instead of staying a smaller ball?",
+   "options": [
+    "Gravity pulls only toward the equator of a cloud",
+    "Colliding clumps averaged out their random motions, leaving only the overall spin in one plane",
+    "The young Sun's light pushed material into a thin layer",
+    "Spinning flung all the gas outward equally in every direction",
+    "The original cloud happened to be shaped like a disk"
+   ],
+   "answer": 1,
+   "why": "Clumps moving in random directions collided and merged, each taking the average motion. Up-and-down motions cancelled, but the overall spin could not, so the cloud became a rotating disk. Gravity pulls in all directions (which is why the Sun is round), light pressure did not shape the disk, spinning does not push equally in all directions, and the disk shape was not luck.",
+   "source": "Ch8.2 pt1 slide 4; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-12",
+   "q": "Which of the following is NOT explained by the planets forming in a spinning, flattened disk?",
+   "options": [
+    "The planets orbit in nearly the same plane",
+    "The planets orbit in the same direction as the Sun rotates",
+    "Planetary orbits are nearly circular",
+    "Most planets rotate in the same direction as they orbit",
+    "Venus rotates backward"
+   ],
+   "answer": 4,
+   "why": "Venus's backward rotation is an exception to the rules, probably caused by a giant impact or by its thick atmosphere, not by the disk. The disk explains the common plane, the shared direction of the Sun's spin and the planets' orbits, the nearly circular orbits (collisions circularized them) and why most planets spin the same way.",
+   "source": "Ch8.2 pt1 slide 4 and Ch8.2 pt2 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-13",
+   "q": "Which pairing of a law with what it predicts for a shrinking gas cloud is correct?",
+   "options": [
+    "Conservation of energy: it spins faster; conservation of angular momentum: it heats up",
+    "Conservation of energy: it cools off; conservation of angular momentum: it spins slower",
+    "Conservation of energy: it heats up; conservation of angular momentum: it spins faster",
+    "Conservation of energy: it stops shrinking; conservation of angular momentum: it flattens",
+    "Both laws predict only that it keeps shrinking"
+   ],
+   "answer": 2,
+   "why": "Energy conservation turns gravitational potential energy into thermal energy, so the cloud heats up. Angular momentum conservation means a smaller cloud must spin faster, like a skater pulling in her arms. The swapped pair mixes up the two laws, cooling and spinning slower are the opposite of what happens, and flattening comes from collisions.",
+   "source": "Ch8.2 pt1 slides 2-3; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-14",
+   "q": "Imagine a cloud that somehow had exactly zero overall rotation when it began to collapse. What would the nebular theory predict?",
+   "options": [
+    "Almost all of the material would fall straight into the centre, leaving little or no disk to build planets",
+    "It would still form a wide, flat disk exactly like ours",
+    "It would spin faster and faster as it shrank",
+    "It would form planets that orbit in random planes around a star",
+    "It would not heat up as it collapsed"
+   ],
+   "answer": 0,
+   "why": "Rotation is what holds material out in a disk: the more angular momentum, the more spread out the cloud ends up. With none, nothing would stop the gas falling straight in, so there would be little or no disk. Zero rotation cannot speed up, it would still heat up because heating comes from energy conservation, and without a disk there is nothing to make planets. In practice the random motions of a real cloud almost never cancel exactly.",
+   "source": "Ch8.2 pt1 slides 2 and 4; Cosmic Perspective 8.2 (reasoning)"
+  },
+  {
+   "id": "fo-15",
+   "q": "A region of the solar nebula had a temperature of about 1300 K. What was solid there?",
+   "options": [
+    "Ice, rock and metal grains",
+    "Nothing at all; every ingredient was gas",
+    "Rock but no metal",
+    "Tiny grains of metal and a little of the most heat-resistant rock, while almost all of the mass stayed gas",
+    "Grains of frozen hydrogen and helium"
+   ],
+   "answer": 3,
+   "why": "Metals condense below about 1000 to 1600 K, so they were solid at 1300 K; rock condenses below 500 to 1300 K, so only its toughest minerals could just form. Hydrogen compounds need below about 150 K, and hydrogen and helium never condense. Since 98% of the mass is hydrogen and helium, nearly everything stayed gas.",
+   "source": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2 (Table 8.1, Think About It)"
+  },
+  {
+   "id": "fo-16",
+   "q": "A region of the solar nebula had a temperature of about 100 K. Where was it, and what was solid there?",
+   "options": [
+    "Inside the frost line; only metal grains",
+    "Beyond the frost line; grains of ice as well as rock and metal",
+    "Inside the frost line; ice, rock and metal",
+    "Beyond the frost line; only rock and metal, because ice needs higher temperatures",
+    "Near the young Sun; nothing solid"
+   ],
+   "answer": 1,
+   "why": "100 K is colder than the roughly 150 K needed for hydrogen compounds to freeze, so the region was beyond the frost line, farther from the Sun, and ices could form along with rock and metal. The inner nebula was much warmer, and ices form at low, not high, temperatures.",
+   "source": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2 (Table 8.1, Think About It)"
+  },
+  {
+   "id": "fo-17",
+   "q": "Why did the planets beyond the frost line grow so much larger than the terrestrial planets?",
+   "options": [
+    "The Sun's gravity pushed light gas outward to where they were forming",
+    "The outer nebula was much denser than the inner nebula",
+    "The outer part of the disk spun faster, gathering material more quickly",
+    "They formed much earlier, before the Sun had begun to shine",
+    "Ices could condense there, and hydrogen compounds were about three times as abundant as rock and metal combined, so planetesimals grew big enough to capture hydrogen and helium gas"
+   ],
+   "answer": 4,
+   "why": "Beyond the frost line, abundant ices joined rock and metal, so there was far more solid material and the planetesimals became massive enough for their gravity to pull in the hydrogen and helium gas. Gravity does not sort material by weight, the inner nebula was denser, the outer disk orbits more slowly, and timing is not the reason.",
+   "source": "Ch8.2 pt1 slides 5 and 8; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-18",
+   "q": "A student says the inner planets are dense because the Sun's gravity pulled heavy materials inward while light gas drifted out. What is wrong with this idea?",
+   "options": [
+    "Nothing is wrong; this is what the nebular theory says",
+    "The Sun's gravity actually pushed heavy materials outward",
+    "All the materials orbited the Sun together, and an orbit does not depend on an object's size or density; temperature decided what became solid",
+    "The Sun had no gravity until fusion began",
+    "Heavy materials were only made after the planets had formed"
+   ],
+   "answer": 2,
+   "why": "The Sun's gravity acts on every particle in the same way regardless of its density, so it cannot sort materials. What differed was temperature: near the Sun only metal and rock could condense, while ices could form only far out. Gravity never pushes outward, it existed from the start, and the heavy elements were already in the nebula.",
+   "source": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2 (Common Misconceptions)"
+  },
+  {
+   "id": "fo-19",
+   "q": "Suppose the young Sun had been dimmer and cooler than it really was. What would the nebular theory predict?",
+   "options": [
+    "The frost line would have been closer to the Sun, so icy planetesimals and jovian planets could have formed nearer the Sun",
+    "The frost line would have been farther from the Sun",
+    "There would have been no frost line at all",
+    "Terrestrial planets would have formed beyond the jovian planets",
+    "The nebula would not have flattened into a disk"
+   ],
+   "answer": 0,
+   "why": "A dimmer Sun warms the nebula less, so the temperature low enough for ices is reached closer in, moving the frost line inward and letting jovian planets form nearer the Sun. A brighter Sun would push it outward instead. A frost line still exists wherever the disk gets cold enough, the planet order would not reverse, and flattening does not depend on the Sun's brightness.",
+   "source": "Ch8.2 pt1 slide 5; Cosmic Perspective 8.2 (reasoning)"
+  },
+  {
+   "id": "fo-20",
+   "q": "In the earliest stage of accretion, what made microscopic grains stick together?",
+   "options": [
+    "Their mutual gravity",
+    "Magnetism in iron grains only",
+    "Melting and welding by the Sun's heat",
+    "Electrostatic forces (static electricity)",
+    "Nuclear forces between their atoms"
+   ],
+   "answer": 3,
+   "why": "Grains moved gently alongside each other and stuck by static electricity, the same force that makes foam packing cling to a cat. Their gravity was far too weak until they reached about a kilometre across, most grains were not magnetic, melting would have destroyed them, and nuclear forces act only inside nuclei.",
+   "source": "Ch8.2 pt1 slide 6; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-21",
+   "q": "At about what size could a planetesimal start pulling in other planetesimals by its gravity?",
+   "options": [
+    "About 1 millimetre across",
+    "About 1 kilometre across",
+    "About 1 metre across",
+    "About 1000 kilometres across",
+    "Only once it was as big as Earth"
+   ],
+   "answer": 1,
+   "why": "Once planetesimals reached roughly a kilometre across, their gravity was strong enough to attract other planetesimals, and growth sped up. Millimetre or metre-sized bodies have far too little mass, and gravity was already working long before bodies reached 1000 km or Earth size.",
+   "source": "Ch8.2 pt1 slide 7"
+  },
+  {
+   "id": "fo-22",
+   "q": "The inner solar system once held many large planetesimals, yet only four terrestrial planets exist today. Why?",
+   "options": [
+    "The solar wind blew away all but four of them",
+    "The Sun's gravity swallowed all but four",
+    "Four is the number of rock and metal types that condensed",
+    "They were captured as moons by the jovian planets",
+    "Their orbits came to cross, so collisions grew faster and often shattered planetesimals; only the largest and luckiest survived and swept up the rest"
+   ],
+   "answer": 4,
+   "why": "Gravitational encounters altered the planetesimals' orbits so that they crossed. Faster collisions shattered many bodies instead of building them, and it took size plus luck for one to keep growing; four survivors became Mercury, Venus, Earth and Mars. The solar wind cleared gas, not large solid bodies, and the other options have no basis.",
+   "source": "Ch8.2 pt1 slide 7; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-23",
+   "q": "Why did the terrestrial planets end up relatively small?",
+   "options": [
+    "The Sun's gravity tore pieces off them",
+    "They formed after most of the material had been used up by the jovian planets",
+    "Only metal and rock could be solid in the inner nebula, and together they were less than 1% of its mass",
+    "The inner nebula contained no hydrogen or helium gas",
+    "Inner planetesimals could not stick together"
+   ],
+   "answer": 2,
+   "why": "Inside the frost line only metal (0.2%) and rock (0.4%) could condense, so there was very little solid material. The planets never grew large enough to capture much gas before the nebula was cleared. The Sun did not break them apart, the timing was not the issue, there was plenty of gas in the inner nebula, and inner planetesimals stuck together just as outer ones did.",
+   "source": "Ch8.2 pt1 slides 5-7; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-24",
+   "q": "Some very old meteorites contain shiny flakes of metal mixed in with rocky minerals. What does this support?",
+   "options": [
+    "Metal and rock condensed as separate tiny solid grains in the inner solar nebula, as the nebular theory predicts",
+    "The meteorites came from the core of a destroyed planet",
+    "Metals condensed only beyond the frost line",
+    "Meteorites formed long after the planets",
+    "Ice and rock condensed together near the Sun"
+   ],
+   "answer": 0,
+   "why": "Metal and rock condense at different high temperatures, so in the inner nebula both formed small grains that were then stuck together, exactly as seen. A planet's core would be nearly all metal, metals condensed near the Sun, these meteorites date from the solar system's birth, and ice could not condense near the Sun.",
+   "source": "Cosmic Perspective 8.2 (Figure 8.7)"
+  },
+  {
+   "id": "fo-25",
+   "q": "Most large moons of Jupiter and Saturn orbit in nearly circular paths, in the direction their planet rotates, near its equator. What explains this pattern?",
+   "options": [
+    "The moons were captured one by one from the asteroid belt",
+    "The moons are pieces that broke off the planets as they spun",
+    "The Sun's gravity lined the moons up with the planets' equators",
+    "Each giant planet had its own spinning disk of gas and dust, and the moons formed in it like a small solar system",
+    "They were formed by a giant impact on each planet"
+   ],
+   "answer": 3,
+   "why": "Gas drawn toward a young jovian planet heated, spun up and flattened into a disk, just like the solar nebula, so moons that accreted there inherited its orderly motion. Captured moons would have random directions and tilts, planets did not fling off moons, the Sun's gravity does not align moon orbits, and giant impacts explain exceptions, not a regular pattern.",
+   "source": "Ch8.2 pt1 slide 9; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-26",
+   "q": "A jovian planet has a small moon, about 3 km across, that orbits opposite to the planet's rotation on a steeply tilted orbit. How did it most likely become a moon?",
+   "options": [
+    "It formed in the planet's spinning disk",
+    "It was a leftover planetesimal that lost orbital energy to friction with gas around the young planet and was captured",
+    "It broke off the planet during a giant impact",
+    "It formed from the planet's rings",
+    "It condensed after the nebula was cleared"
+   ],
+   "answer": 1,
+   "why": "A backward, tilted orbit cannot come from the planet's disk, which would give a forward, equatorial orbit. Capture through drag in the thick gas around a young jovian planet works for bodies up to a few kilometres across, which fits this moon's size. The other options would not give a random direction and tilt.",
+   "source": "Ch8.2 pt2 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-27",
+   "q": "What if the young Sun's wind had blown away the nebula's gas much EARLIER than it did?",
+   "options": [
+    "The terrestrial planets would have become gas giants",
+    "The frost line would have moved inside Mercury's orbit",
+    "The Sun would be spinning much faster today",
+    "Nothing would change, because the planets were already complete",
+    "The raw materials might have been swept away before the planets finished forming, leaving smaller or unfinished planets"
+   ],
+   "answer": 4,
+   "why": "Clearing ends the planets' chance to gather material. If it had happened too early, material could have been removed before accretion and gas capture were done, so the planets, especially the jovian ones, would have been smaller. Becoming gas giants would need more time, not less; the frost line depends on temperature; an earlier clearing would still carry away the Sun's angular momentum.",
+   "source": "Ch8.2 pt2 slide 1; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-28",
+   "q": "Which observation of other stars supports the idea that the young Sun spun fast and was slowed by its magnetic field?",
+   "options": [
+    "Old stars rotate faster than young stars",
+    "Young stars have no magnetic fields",
+    "Young stars nearly all rotate rapidly and have strong magnetic fields and winds, while older stars almost all rotate slowly",
+    "Every star spins at the same rate throughout its life",
+    "Young stars have no disks of gas around them"
+   ],
+   "answer": 2,
+   "why": "If stars generally lose angular momentum by transferring it to charged particles in their disks, which are later blown away, then young stars should spin fast and old stars slowly, which is what we see. The other options either contradict the observations or would give no reason for the Sun to slow down.",
+   "source": "Ch8.2 pt2 slide 1; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-29",
+   "q": "A newly found small body is a mix of ice and rocky dust. According to the nebular theory, where did it most likely form?",
+   "options": [
+    "Beyond the frost line, as an icy leftover planetesimal (a comet)",
+    "Inside the frost line, as a rocky leftover planetesimal (an asteroid)",
+    "In the Sun's outer layers, ejected by the solar wind",
+    "From a volcano on one of the terrestrial planets",
+    "Long after the planets, from gas left in the inner solar system"
+   ],
+   "answer": 0,
+   "why": "Ice can be part of a solid body only if it formed where the nebula was cold enough, beyond the frost line, so this is a comet. Asteroids from inside the frost line are rock and metal. The Sun does not throw out solid icy bodies, volcanoes do not make comets, and leftovers formed with the planets, not long after.",
+   "source": "Ch8.2 pt2 slide 2; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-30",
+   "q": "One region of the Moon is crowded with overlapping craters, while another has very few. What does the heavily cratered region most likely tell us?",
+   "options": [
+    "It is the youngest part of the Moon's surface",
+    "It was hit recently by a swarm of asteroids",
+    "It faces away from Earth, so asteroids only hit that side",
+    "Its surface dates from the heavy bombardment, early in the solar system's history, and has changed little since",
+    "Craters form only on high ground"
+   ],
+   "answer": 3,
+   "why": "Most impacts happened during the heavy bombardment in the first few hundred million years, so a surface covered with craters must be very old and undisturbed since then. A smooth region was resurfaced later, for example by lava. Impacts are rare today, both sides of the Moon were hit, and craters form on any solid ground.",
+   "source": "Ch8.2 pt2 slide 3; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-31",
+   "q": "Earth formed where it was too warm for water to condense, yet it has oceans. What does current evidence suggest?",
+   "options": [
+    "The water condensed directly at Earth's distance as the nebula cooled",
+    "Most of the water came from water-bearing planetesimals of the outer asteroid belt, which formed beyond the frost line and hit the young Earth",
+    "The water was made by chemical reactions in Earth's metal core",
+    "The water was captured from the solar wind",
+    "The water shows that the nebular theory is wrong"
+   ],
+   "answer": 1,
+   "why": "Ratios of deuterium to ordinary hydrogen point to planetesimals from the outer asteroid belt, just beyond the frost line, which held some ice; comets may have added some too. Water never condensed near Earth's orbit, the core is metal, the solar wind carries no oceans' worth of water, and impacts explain the water within the theory.",
+   "source": "Ch8.2 pt2 slide 4; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-32",
+   "q": "Which observation would be hardest to explain if the Moon had formed alongside Earth from the same planetesimals?",
+   "options": [
+    "The Moon orbits in roughly the same direction that Earth spins",
+    "The Moon is covered with craters",
+    "The Moon has no thick atmosphere",
+    "The Moon is round",
+    "The Moon's average density is much lower than Earth's"
+   ],
+   "answer": 4,
+   "why": "Bodies formed together from the same kind of planetesimals should have about the same composition and density, but the Moon's density is much lower, which points to a different origin. The direction of orbit, craters from the bombardment, the lack of an atmosphere (it is small) and its round shape (gravity) fit any idea.",
+   "source": "Ch8.2 pt2 slide 7; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-33",
+   "q": "The oldest Moon rocks are about 4.4 billion years old. What does this tell us about the giant impact that formed the Moon?",
+   "options": [
+    "It happened less than 4.4 billion years ago",
+    "It happened exactly 4.4 billion years ago",
+    "It happened more than 4.4 billion years ago",
+    "It tells us nothing about when the impact happened",
+    "It happened before the Sun had formed"
+   ],
+   "answer": 2,
+   "why": "The Moon had to exist before any rock on it could solidify, so the impact that made it must be older than its oldest rocks. It cannot be younger than the rocks, rocks need not have formed at the exact moment of impact, and the planets formed after the Sun.",
+   "source": "Cosmic Perspective 8.2 (Figure 8.13) and 8.3"
+  },
+  {
+   "id": "fo-34",
+   "q": "Which of these does NOT support the giant impact hypothesis for our Moon?",
+   "options": [
+    "The Moon always keeps the same face toward Earth",
+    "Moon samples have very few volatile substances such as water and zinc",
+    "The Moon's composition is similar to Earth's outer rocky layers",
+    "Computer simulations of a Mars-sized impact can produce an Earth-Moon system like ours",
+    "The Moon contains very little metal"
+   ],
+   "answer": 0,
+   "why": "Keeping one face toward Earth is synchronous rotation, caused later by tides, and would happen however the Moon formed. The missing volatiles (boiled off by the heat), the match with Earth's mantle and crust, the successful simulations and the lack of metal (the material came from outside Earth's core) all support the giant impact.",
+   "source": "Ch8.2 pt2 slide 7; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-35",
+   "q": "Why does the nebular theory expect the solar system to have a few exceptions to its general patterns?",
+   "options": [
+    "A star passed close to the Sun after the planets formed",
+    "Some planets formed recently from captured interstellar gas",
+    "The laws of physics worked differently in the young solar system",
+    "The early solar system held many leftover planetesimals, some very large, so a few random collisions and captures were bound to happen",
+    "Exceptions show that the nebular theory is mostly wrong"
+   ],
+   "answer": 3,
+   "why": "With so many leftover planetesimals, a few giant impacts and captures were unavoidable, and these explain features such as Uranus's tilt, Venus's backward spin, captured moons and our Moon. No passing star or recent formation is needed, physics did not change, and exceptions of this kind fit the theory rather than break it.",
+   "source": "Ch8.2 pt2 slide 5; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "fo-36",
+   "q": "If the solar system could form again from the same cloud, which feature would most likely turn out the same?",
+   "options": [
+    "Earth having a large Moon",
+    "Rocky planets close to the Sun and giant planets farther out",
+    "Uranus being tipped on its side",
+    "Venus rotating backward",
+    "Exactly four terrestrial planets in today's orbits"
+   ],
+   "answer": 1,
+   "why": "The two types of planets follow from orderly physics: heating creates a frost line, with rocky seeds inside and icy seeds outside. The Moon, Uranus's tilt and Venus's spin came from random giant impacts, and the exact number and orbits of the survivors depended on chance collisions, so those would probably differ.",
+   "source": "Ch8.2 pt2 slide 8; Cosmic Perspective 8.2"
+  },
+  {
+   "id": "for-x6-1",
+   "q": "Which of the following observations of an extrasolar planet system would be inconsistent with what we expect from the nebular theory of solar system formation?",
+   "options": [
+    "a system in which some planets have small moons orbiting in a direction opposite to the planet's rotation",
+    "a system which has two terrestrial planets close in and two jovian planets farther out",
+    "a system in which all the planets orbit in completely different planes",
+    "a system in which some planets rotate in a direction opposite to their orbits"
+   ],
+   "answer": 2,
+   "why": "The nebular theory says planets form in a flat disk made when the collapsing cloud flattened, so planets should orbit in nearly the same plane. A system where every planet orbits in a completely different plane would contradict that. The other systems fit the theory: some small moons can be captured planetesimals orbiting the wrong way, rocky planets inside and gas giants outside is the pattern the frost line predicts, and a planet spinning against its orbit can come from a giant impact.",
+   "source": "Owner's question set (t6 x6-1)"
+  },
+  {
+   "id": "for-x6-2",
+   "q": "Which of the following is NOT evidence against the close encounter hypothesis of star system formation?",
+   "options": [
+    "We observe the planets all orbiting in the same direction around the Sun.",
+    "The vast majority of stars have orbiting planets.",
+    "The composition of the Sun is very different from that of the planets.",
+    "We observe stars forming from protoplanetary disks in nebulae."
+   ],
+   "answer": 3,
+   "why": "Three of the statements are things the close encounter idea cannot explain. It could not account for the orderly motions of the planets, such as all orbiting the same way, or for planets that differ so much from the Sun (the Sun is nearly all hydrogen and helium, while the terrestrial planets are rock and metal). It also required a very rare near-collision between stars, which cannot explain the many planetary systems we see around most stars. Watching young stars form with disks in nebulae is different: it is direct support for the nebular theory rather than a failure of the close encounter idea itself.",
+   "source": "Owner's question set (t6 x6-2)"
+  },
+  {
+   "id": "for-x6-3",
+   "q": "Which of the following is NOT a step in the stellar recycling process?",
+   "options": [
+    "Stars release their chemical contents at the end of their lives, either gradually in the form of a planetary nebula, or more violently in a supernova explosion.",
+    "Radioactivity breaks down the large nuclei of heavy elements, ensuring there is sufficient hydrogen and helium for future generations of stars.",
+    "Nuclear fusion within stars produces elements with higher atomic numbers, up to iron in some stars.",
+    "Nebulae collapse under gravity, forming new stars."
+   ],
+   "answer": 1,
+   "why": "Stellar recycling is: stars form in gas clouds, fusion builds heavier elements, dying stars return that material to space as a planetary nebula or supernova, and the enriched gas forms new stars. Radioactivity breaking down heavy nuclei is not a step, and hydrogen and helium were made in the Big Bang, not by decay. Fusion in stars building elements up to iron is a correct step.",
+   "source": "Owner's question set (t6 x6-3)"
+  },
+  {
+   "id": "for-x6-4",
+   "q": "Which of the following is most important in causing a cloud of gas to collapse to form a star and planets?",
+   "options": [
+    "Pressure from other gas clouds pushes the gas inward.",
+    "Gravity pulls all the gas inward.",
+    "Pressure from light from nearby stars pushes the gas inward.",
+    "Opposite charges in the gas attract.",
+    "Some gas is sent outward, causing the rest to move inward to conserve momentum."
+   ],
+   "answer": 1,
+   "why": "Gravity pulls every bit of gas toward all the rest, so when a cloud is dense enough gravity makes it collapse and form a star and planets. A shock wave from a nearby supernova may start the collapse, but it is gravity that keeps it going. Pressure from light or other clouds, attraction of opposite charges (the gas is neutral overall) and momentum from outward-flung gas are not the main cause.",
+   "source": "Owner's question set (t6 x6-4)"
+  },
+  {
+   "id": "for-x6-5",
+   "q": "If an interstellar gas cloud shrinks in size, what does the law of conservation of energy predict it will do?",
+   "options": [
+    "spin slower",
+    "heat up",
+    "spin faster",
+    "cool off",
+    "continue shrinking"
+   ],
+   "answer": 1,
+   "why": "As the cloud shrinks, gravitational potential energy is converted into the kinetic energy of the falling gas. The particles collide and that motion becomes thermal energy, so the cloud heats up. Spinning faster is predicted by conservation of angular momentum, a different law. Cooling off or spinning slower is the opposite of what happens, and conservation of energy says nothing about it continuing to shrink.",
+   "source": "Owner's question set (t6 x6-5)"
+  },
+  {
+   "id": "for-x6-6",
+   "q": "If an interstellar gas cloud shrinks in size, what does the law of conservation of angular momentum predict it will do?",
+   "options": [
+    "cool off",
+    "continue shrinking",
+    "spin faster",
+    "heat up",
+    "spin slower"
+   ],
+   "answer": 2,
+   "why": "A shrinking cloud has to spin faster to keep its angular momentum constant, just as a skater speeds up when she pulls in her arms. Heating up comes from conservation of energy, not angular momentum. Spinning slower would mean losing angular momentum, and cooling off or continuing to shrink are not predicted by this law.",
+   "source": "Owner's question set (t6 x6-6)"
+  },
+  {
+   "id": "for-x6-7",
+   "q": "According to our theory of solar system formation, why do all the planets orbit the Sun in the same direction and in nearly the same plane?",
+   "options": [
+    "It is a coincidence, as we would expect that most other solar systems would not have all their planets orbiting in such a pattern.",
+    "Any planets that once orbited in the opposite direction or a different plane were ejected from the solar system.",
+    "The laws of conservation of energy and conservation of angular momentum ensure that any rotating, collapsing cloud will end up as a spinning disk.",
+    "The Sun formed first, and as it grew in size it spread into a disk, rather like the way a ball of dough can be flattened into a pizza by spinning it.",
+    "The original solar nebula happened to be disk shaped by chance."
+   ],
+   "answer": 2,
+   "why": "A collapsing, rotating cloud heats up, spins faster and has its random motions smoothed out by collisions, so it flattens into a disk turning in one direction. The planets formed in that disk, so they orbit in the same direction and nearly the same plane. This is a natural result, not a coincidence or a clean-up of misfits. The Sun formed at the centre of the disk; it did not form first and then spread out like pizza dough.",
+   "source": "Owner's question set (t6 x6-7)"
+  },
+  {
+   "id": "for-x6-8",
+   "q": "Which of the following lists the ingredients of the solar nebula from highest to lowest percentage of mass of the nebula?",
+   "options": [
+    "hydrogen compounds, hydrogen and helium gas, metals, rocks",
+    "hydrogen compounds, rocks, metals, hydrogen and helium gas",
+    "hydrogen compounds, hydrogen and helium gas, rocks, metals",
+    "hydrogen and helium gas, hydrogen compounds, metals, rocks",
+    "hydrogen and helium gas, hydrogen compounds, rocks, metals"
+   ],
+   "answer": 4,
+   "why": "By mass the solar nebula was about 98% hydrogen and helium gas, 1.4% hydrogen compounds (water, methane, ammonia), 0.4% rock and 0.2% metal. So the order from highest to lowest is hydrogen and helium gas, hydrogen compounds, rock, metal. The wrong lists put the gas lower or swap rock and metal with hydrogen compounds.",
+   "source": "Owner's question set (t6 x6-8)"
+  },
+  {
+   "id": "for-x6-9",
+   "q": "About what percentage of the mass of the solar nebula consisted of elements other than hydrogen and helium?",
+   "options": [
+    "2 percent",
+    "0 percent",
+    "0.1 percent",
+    "80 percent",
+    "20 percent"
+   ],
+   "answer": 0,
+   "why": "Hydrogen and helium made up about 98% of the nebula's mass, so everything else together (hydrogen compounds, rock and metal) was about 2%. Zero or 0.1% is too small to build the planets, and 20% or 80% would be far too much.",
+   "source": "Owner's question set (t6 x6-9)"
+  },
+  {
+   "id": "for-x6-10",
+   "q": "The very first generation of star systems in the universe must have been born from gas that consisted entirely of hydrogen and helium (and no other elements). Which of the following statements is most likely to have been true about these first-generation star systems?",
+   "options": [
+    "They did not have any planets or asteroids or comets.",
+    "They had terrestrial planets but no jovian planets.",
+    "They did not have any disks of gas around them as they formed.",
+    "They had asteroids and comets but no large planets."
+   ],
+   "answer": 0,
+   "why": "With only hydrogen and helium there is nothing that can condense into solid grains, so there would be no rock, metal or ice to build planetesimals. Without planetesimals there can be no asteroids or comets, and no planets either, because even gas giants grow from a solid core that then captures gas. Disks still form from any collapsing, spinning cloud, so the lack of a disk is not the answer.",
+   "source": "Owner's question set (t6 x6-10)"
+  },
+  {
+   "id": "for-x6-11",
+   "q": "What happened during the accretion phase of the early solar system?",
+   "options": [
+    "Particles grew by colliding and sticking together.",
+    "Atoms of hydrogen and helium gas bonded together and solidified.",
+    "The solar nebula differentiated into metals inside of the frost line and ices beyond.",
+    "Earth gained its oceans from icy planetesimal capture.",
+    "Large planetesimals captured atmospheres from the solar nebula."
+   ],
+   "answer": 0,
+   "why": "Accretion is the growth of solid particles: tiny grains stuck together, then planetesimals grew and pulled in others by gravity. Separating metals and rocks inside the frost line from ices beyond it was condensation, which came before. Earth's water arrived later through impacts, and hydrogen and helium gas do not bond and solidify in the nebula.",
+   "source": "Owner's question set (t6 x6-11)"
+  },
+  {
+   "id": "for-x6-12",
+   "q": "Which of the following accurately describes how the Jovian planetesimals were formed?",
+   "options": [
+    "Planetesimals grew from tiny grains of rock and metal via static electricity and other non-gravitational forces. When they reached a critical size, they also began attracting hydrogen compounds and hydrogen and helium gas from the surrounding protoplanetary nebula.",
+    "Planetesimals grew from tiny grains of hydrogen compounds via gravity. When they reached a critical size, they also began attracting rocks and metals from the surrounding protoplanetary nebula.",
+    "Planetesimals grew from tiny grains of hydrogen compounds, rock, and metal via static electricity and other non-gravitational forces. When they reached a critical size, they also began attracting hydrogen and helium gas from the surrounding protoplanetary nebula via gravity.",
+    "Planetesimals grew from tiny grains of hydrogen compounds, rock, and metal via gravity. When they reached a critical size, they also began attracting hydrogen and helium gas from the surrounding protoplanetary nebula."
+   ],
+   "answer": 2,
+   "why": "Beyond the frost line the tiny grains were a mix of ice (hydrogen compounds), rock and metal. Gravity is much too weak to pull such small specks together, so they stuck by static electricity and other non-gravitational forces. Only when planetesimals were large enough did their gravity start to attract hydrogen and helium gas. The wrong options either start the process with gravity on tiny grains or leave out part of the mix of ice, rock and metal.",
+   "source": "Owner's question set (t6 x6-12)"
+  },
+  {
+   "id": "for-x6-13",
+   "q": "How did most of the moons around Jovian planets come to be?",
+   "options": [
+    "The Jovian moons are the scattered remnants of a fifth Jovian planet that was destroyed by an impact in the Heavy Bombardment, and which settled into orbit around the remaining Jovian planets.",
+    "Smaller planetesimals were gravitationally captured by the larger Jovian planetesimals and became the Jovian moons.",
+    "Parts of the Jovian planetesimals broke off in the accretion phase and became the Jovian moons.",
+    "They formed by accretion in much the same way that planets formed around the Sun in the protoplanetary nebula, but on a smaller scale."
+   ],
+   "answer": 3,
+   "why": "The large moons of the jovian planets formed in disks of gas and dust around each growing giant planet, by accretion in the same way planets formed around the Sun but on a smaller scale. That is why they orbit in the planet's rotation direction in nearly circular orbits. They did not come from a destroyed fifth planet or break off the planets. A few small odd moons were captured, but capture needs an object to lose energy (for example to friction in the planet's gas), so simple gravitational capture is not how most moons formed.",
+   "source": "Owner's question set (t6 x6-13)"
+  },
+  {
+   "id": "for-x6-14",
+   "q": "The frost line of the solar system was located approximately between",
+   "options": [
+    "the present-day orbits of Venus and Earth.",
+    "the present-day orbits of Mars and Jupiter.",
+    "the present-day orbits of Uranus and Neptune.",
+    "the present-day orbits of Mercury and Venus.",
+    "the Sun and the present-day orbit of Mercury."
+   ],
+   "answer": 1,
+   "why": "Hydrogen compounds freeze into ice only below about 150 K, and in the solar nebula that temperature was reached around 2.7 AU, which is between the present orbits of Mars and Jupiter. Between Mercury and Earth the nebula was too hot for ice, and the orbits of Uranus and Neptune are far beyond the frost line.",
+   "source": "Owner's question set (t6 x6-14)"
+  },
+  {
+   "id": "for-x6-15",
+   "q": "Why are the inner planets made of denser materials than the outer planets?",
+   "options": [
+    "In the inner part of the nebula only metals and rocks were able to condense because of the high temperatures, whereas hydrogen compounds, although more abundant, were only able to condense in the cooler outer regions.",
+    "When the solar nebula formed a disk, materials naturally segregated into bands, and in our particular solar system, the denser materials settled nearer the Sun, while lighter materials are found in the outer part.",
+    "The Sun's gravity pulled denser materials toward the inner part of the solar nebula, while lighter gases escaped more easily.",
+    "In the beginning, when the protoplanetary disk was spinning faster, centrifugal forces flung the lighter materials toward the outer parts of the solar nebula.",
+    "Denser materials were heavier and sank to the center of the nebula."
+   ],
+   "answer": 0,
+   "why": "Near the young Sun, ices such as water could not stay frozen, so the only solids available there were metal and rock, even though ice-forming material was more plentiful overall. Beyond the frost line ices could condense as well, so the outer planets gained lighter, icy material and far more of it. The Sun's gravity pulling dense material in, spinning flinging light material out, or dense material sinking are not what happened, because every ingredient orbits the Sun in the same way regardless of its density.",
+   "source": "Owner's question set (t6 x6-15)"
+  },
+  {
+   "id": "for-x6-17",
+   "q": "Hydrogen compounds in the solar nebula could condense into ice at temperatures of about 150 K. Suppose they instead could have condensed only at temperatures below 50 K? What would have been different in the solar nebula?",
+   "options": [
+    "Jovian planets would have formed inside the frost line.",
+    "The frost line would have been farther from the Sun.",
+    "The frost line would have been closer to the Sun.",
+    "Terrestrial planets would have formed outside the frost line."
+   ],
+   "answer": 1,
+   "why": "Ice can form only where the gas is colder than the temperature at which the compound condenses. If hydrogen compounds needed to be below 50 K instead of 150 K, the nebula would have to be much colder, which happens only farther from the Sun, so the frost line would be farther out. Terrestrial planets form inside the frost line and jovian planets outside it, so those other statements contradict the definition.",
+   "source": "Owner's question set (t6 x6-17)"
+  },
+  {
+   "id": "for-x6-18",
+   "q": "Observations of young stars suggest that when the Sun was young, the solar wind",
+   "options": [
+    "was weaker than it is today.",
+    "was stronger than it is today.",
+    "was about the same strength as it is today.",
+    "was nonexistent.",
+    "blew outward only along the Sun's poles."
+   ],
+   "answer": 1,
+   "why": "Young stars rotate fast and have strong magnetic fields, so they have much stronger winds and emit more high-energy radiation than older stars. The young Sun's strong wind and radiation helped blow away the leftover gas of the solar nebula. So it was stronger than today, not weaker, the same or absent, and the wind blew in all directions.",
+   "source": "Owner's question set (t6 x6-18)"
+  },
+  {
+   "id": "for-x6-19",
+   "q": "What might have happened if the hydrogen and helium gas pervading the early Solar System had not been driven out (i.e., if the solar nebula had not been cleared)?",
+   "options": [
+    "The asteroids would have been able to assemble into a planet.",
+    "Accretion would have been stifled, leading to much smaller planets.",
+    "Only the Jovian planets would have grown much larger.",
+    "All planets would have grown much larger, and the terrestrial planets would have accreted hydrogen and helium gas."
+   ],
+   "answer": 3,
+   "why": "If the hydrogen and helium had stayed, the nebula would have kept cooling until ices could form even in the inner Solar System, so the terrestrial planets could have grown larger and could have gathered hydrogen and helium gas, changing their basic nature. Asteroids do not assemble into a planet because the gas is cleared, and gas would not stifle growth or make only the jovian planets larger.",
+   "source": "Owner's question set (t6 x6-19)"
+  },
+  {
+   "id": "for-x6-20",
+   "q": "According to the nebular theory, what are asteroids and comets?",
+   "options": [
+    "leftover planetesimals that never accreted into planets",
+    "chunks of rock or ice that condensed long after the planets had formed",
+    "the shattered remains of collisions between planets",
+    "the shattered remains of collisions between moons",
+    "chunks of rock or ice that have been expelled from the planets by volcanoes"
+   ],
+   "answer": 0,
+   "why": "Asteroids (rocky, from inside the frost line) and comets (icy, from beyond it) are leftover planetesimals that never became part of a planet. They did not form long after the planets, are not the remains of collisions between planets or moons, and are not volcanic debris.",
+   "source": "Owner's question set (t6 x6-20)"
+  },
+  {
+   "id": "for-x6-21",
+   "q": "What happened during the heavy bombardment?",
+   "options": [
+    "Planetesimals collided with one another and stuck together to form planets.",
+    "A supernova disrupted a gas cloud, causing it to start collapsing to form the solar system.",
+    "The planets of the solar system suffered many impacts.",
+    "A large meteor collided with Earth, killing the dinosaurs.",
+    "The planets collided with one another."
+   ],
+   "answer": 2,
+   "why": "Once the planets had formed, the leftover planetesimals kept slamming into them and their moons for a few hundred million years; this cratering era is the heavy bombardment. Planetesimals sticking together to form planets was accretion, which came earlier. A supernova may have triggered the nebula's collapse, the dinosaur impact happened about 66 million years ago, and the planets did not collide with each other.",
+   "source": "Owner's question set (t6 x6-21)"
+  },
+  {
+   "id": "for-x6-22",
+   "q": "What is the giant impact hypothesis for the origin of the Moon?",
+   "options": [
+    "The Moon formed just like Earth, from accretion in the solar nebula.",
+    "The Moon formed from material blasted out of Earth's mantle and crust by the impact of a Mars-size object.",
+    "The Moon formed when two gigantic asteroids collided with one another.",
+    "The Moon originally was about the same size as Earth, but a giant impact blasted most of it away so that it ended up much smaller than Earth."
+   ],
+   "answer": 1,
+   "why": "The giant impact hypothesis says a Mars-size object hit the young Earth, blasting material from Earth's outer rocky layers into orbit, where it gathered to form the Moon. The Moon did not form in the nebula like Earth, because its density and composition differ. It did not come from two asteroids colliding, and it was not once an Earth-sized body that lost most of its mass.",
+   "source": "Owner's question set (t6 x6-22)"
+  },
+  {
+   "id": "for-x6-23",
+   "q": "Which of the following does NOT directly support the giant impact hypothesis for the formation of our Moon?",
+   "options": [
+    "The Moon is very quiet geologically compared to most other bodies.",
+    "The Moon lacks volatile chemicals that would vaporize in a large impact.",
+    "The Moon is very large for its host body, the Earth.",
+    "Computer simulations show that a collision between planetesimals can result in an Earth-Moon system like ours."
+   ],
+   "answer": 0,
+   "why": "The Moon's lack of volcanism and tectonics is only a result of its small size, which let it cool quickly, and it says nothing about how the Moon formed. The other three do support the hypothesis: the missing volatile chemicals fit the heat of an impact vaporizing them, computer simulations can reproduce the Earth-Moon system, and the Moon's large size relative to Earth is what the impact idea explains and what capture cannot.",
+   "source": "Owner's question set (t6 x6-23)"
+  },
+  {
+   "id": "for-x6-24",
+   "q": "We know that Earth has water. However, according to our theory of solar system formation, the inner solar system was too hot for hydrogen compounds like water to condense. What do we conclude?",
+   "options": [
+    "Earth's water likely was brought here by asteroids or comets that formed beyond the frost line.",
+    "Our theory of solar system formation will need modification because it is unable to account for the existence of water on Earth.",
+    "Water arrived on Earth at a time when it rained throughout the inner solar system.",
+    "Earth's water probably originated through chemical reactions among the rock and metal of Earth's interior."
+   ],
+   "answer": 0,
+   "why": "The terrestrial planets formed where it was too hot for ice, so Earth's water was probably delivered by icy planetesimals, asteroids or comets that formed beyond the frost line and struck Earth during the heavy bombardment. The theory is therefore not broken by Earth's water. It did not rain throughout the inner nebula, and water does not come from chemical reactions of rock and metal alone.",
+   "source": "Owner's question set (t6 x6-24)"
+  },
+  {
+   "id": "for-x6-25",
+   "q": "According to our theory of solar system formation, why do we find some exceptions to the general rules and patterns of the planets?",
+   "options": [
+    "The exceptions are probably the result of the Sun passing very close to another star billions of years ago.",
+    "The exceptions probably represent objects that formed recently, rather than early in the history of the solar system.",
+    "The exceptions probably represent objects that were captured by our solar system from interstellar space.",
+    "Most of the exceptions are the result of giant impacts or close gravitational encounters.",
+    "Our theory is not quite correct because it cannot explain these exceptions."
+   ],
+   "answer": 3,
+   "why": "The nebular theory explains the general patterns with the collapse of the nebula, and it explains most exceptions, such as Uranus's tilt, Venus's backward spin and Earth's large Moon, by random events like giant impacts and close gravitational encounters among leftover planetesimals. A star passing close to the Sun is the discarded close encounter hypothesis. The exceptions are not recent objects, captured moons were mostly captured from material orbiting the Sun rather than interstellar space, and exceptions do not show the theory is wrong.",
+   "source": "Owner's question set (t6 x6-25)"
+  },
+  {
+   "id": "for-x6-26",
+   "q": "Suppose the Sun had been born with more mass, making it larger and hotter. Which of the following consequences would we expect according to the nebular theory?",
+   "options": [
+    "Jovian planets would have formed farther from the Sun.",
+    "Asteroids would have formed closer to the Sun.",
+    "There would be no comets.",
+    "There would have been no solar nebula in which material could condense to form planets."
+   ],
+   "answer": 0,
+   "why": "A more massive, hotter Sun would heat the nebula more, so the temperature low enough for ices to form would be reached farther from the Sun, and the frost line, where jovian planets form, would be farther out. Asteroids, which form inside the frost line, would also form farther out, not closer. Comets would still form, and a nebula would still exist.",
+   "source": "Owner's question set (t6 x6-26)"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "How the solar system formed",
+   "prompt": "Put these stages in order, from the earliest at the bottom to the latest at the top.",
+   "why": "Earlier stars enriched the gas; a shock wave helped start the collapse; the cloud heated, spun up and flattened into a disk; solids condensed; grains accreted into planetesimals; big icy cores captured hydrogen and helium; the solar wind cleared the leftover gas; leftover planetesimals then bombarded the planets.",
+   "topLabel": "Latest",
+   "bottomLabel": "Earliest",
+   "layers": [
+    {
+     "name": "Earlier stars enrich the gas with heavy elements",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "A shock wave helps start the cloud collapsing",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "The cloud heats, spins faster and flattens into a disk",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Metal, rock and (far out) ice condense into tiny grains",
+     "color": "#0891b2"
+    },
+    {
+     "name": "Grains stick together and grow into planetesimals",
+     "color": "#15803d"
+    },
+    {
+     "name": "Big icy planetesimals pull in hydrogen and helium gas",
+     "color": "#ca8a04"
+    },
+    {
+     "name": "The solar wind clears the leftover gas",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Leftover planetesimals bombard the planets",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Which ingredient condenses first?",
+   "prompt": "Put the ingredients of the solar nebula in order of the temperature at which they become solid, from the highest at the bottom to the lowest at the top.",
+   "why": "Metals condense below about 1000 to 1600 K, rock below about 500 to 1300 K and hydrogen compounds below about 150 K. Hydrogen and helium never condense in the nebula, so they belong at the top.",
+   "topLabel": "Lowest temperature (or never)",
+   "bottomLabel": "Highest condensation temperature",
+   "layers": [
+    {
+     "name": "Metal (iron, nickel, aluminum)",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Rock (various minerals)",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Hydrogen compounds (water, methane, ammonia)",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Hydrogen and helium gas",
+     "color": "#0891b2"
+    }
+   ]
+  },
+  {
+   "title": "Moving out from the young Sun",
+   "prompt": "Put these zones of the solar nebula in order of distance from the young Sun, from the closest at the bottom to the farthest at the top.",
+   "why": "Right beside the Sun nothing could condense. Near Mercury's orbit metals and some rock formed grains; farther out, where Venus, Earth and Mars formed, more types of rock could. In the asteroid belt region carbon-rich minerals with a little water condensed, and beyond the frost line (about 2.7 AU) ices joined rock and metal where the jovian planets formed.",
+   "topLabel": "Farthest from the Sun",
+   "bottomLabel": "Closest to the Sun",
+   "layers": [
+    {
+     "name": "Too hot for anything to condense",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Metal and some rock grains (near Mercury's orbit)",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Many kinds of rock grains (Venus, Earth, Mars)",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Carbon-rich minerals with a little water (asteroid belt)",
+     "color": "#0891b2"
+    },
+    {
+     "name": "The frost line (about 2.7 AU)",
+     "color": "#15803d"
+    },
+    {
+     "name": "Ice, rock and metal grains (jovian planets)",
+     "color": "#ca8a04"
+    }
+   ]
+  },
+  {
+   "title": "Growing a planet",
+   "prompt": "Put these stages of accretion in order of size, from the smallest at the bottom to the largest at the top.",
+   "why": "Microscopic grains condensed from the gas, then stuck together by static electricity into larger clumps and boulders. At about 1 km across a planetesimal's gravity took over; some grew to hundreds of kilometres within a few million years, and over tens of millions of years a few became planets.",
+   "topLabel": "Largest",
+   "bottomLabel": "Smallest",
+   "layers": [
+    {
+     "name": "Microscopic grain condensed from the gas",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Clump of grains held by static electricity",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Boulder-sized body",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Planetesimal about 1 km across (gravity takes over)",
+     "color": "#0891b2"
+    },
+    {
+     "name": "Planetesimal hundreds of km across",
+     "color": "#15803d"
+    },
+    {
+     "name": "Terrestrial planet",
+     "color": "#ca8a04"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "What makes it happen?",
+   "prompt": "Sort each event in the collapsing solar nebula by its main cause.",
+   "buckets": [
+    "Conservation of energy",
+    "Conservation of angular momentum",
+    "Collisions between particles"
+   ],
+   "items": [
+    {
+     "text": "The shrinking cloud heats up",
+     "b": 0
+    },
+    {
+     "text": "Collapsing clouds glow in infrared light",
+     "b": 0
+    },
+    {
+     "text": "Gravitational potential energy becomes thermal energy",
+     "b": 0
+    },
+    {
+     "text": "The centre gets hot enough to form the Sun",
+     "b": 0
+    },
+    {
+     "text": "The shrinking cloud spins faster",
+     "b": 1
+    },
+    {
+     "text": "Much material stays in orbit instead of falling into the Sun",
+     "b": 1
+    },
+    {
+     "text": "The young Sun spun very fast",
+     "b": 1
+    },
+    {
+     "text": "A skater spins faster when she pulls in her arms",
+     "b": 1
+    },
+    {
+     "text": "The lumpy cloud flattens into a disk",
+     "b": 2
+    },
+    {
+     "text": "Elliptical orbits become nearly circular",
+     "b": 2
+    },
+    {
+     "text": "Random up-and-down motions cancel out",
+     "b": 2
+    }
+   ],
+   "why": "Energy conservation turns the energy of infalling gas into heat, making the hot centre and the infrared glow. Angular momentum conservation makes the shrinking cloud and the young Sun spin fast and keeps material orbiting in a disk. Collisions average out random motions, flattening the cloud and circularizing orbits."
+  },
+  {
+   "title": "Terrestrial or jovian?",
+   "prompt": "Sort each fact by the kind of planet whose formation it describes.",
+   "buckets": [
+    "Terrestrial planets",
+    "Jovian planets"
+   ],
+   "items": [
+    {
+     "text": "Formed inside the frost line",
+     "b": 0
+    },
+    {
+     "text": "Seeds made only of metal and rock",
+     "b": 0
+    },
+    {
+     "text": "Built from less than 1% of the nebula's mass",
+     "b": 0
+    },
+    {
+     "text": "Too small to capture hydrogen and helium gas",
+     "b": 0
+    },
+    {
+     "text": "Leftovers became asteroids",
+     "b": 0
+    },
+    {
+     "text": "Got water later from icy planetesimals",
+     "b": 0
+    },
+    {
+     "text": "Formed beyond the frost line",
+     "b": 1
+    },
+    {
+     "text": "Seeds of ice as well as metal and rock",
+     "b": 1
+    },
+    {
+     "text": "Gravity pulled in huge amounts of hydrogen and helium",
+     "b": 1
+    },
+    {
+     "text": "Surrounded by their own spinning disks",
+     "b": 1
+    },
+    {
+     "text": "Large regular moons formed by accretion around them",
+     "b": 1
+    },
+    {
+     "text": "Leftovers became comets",
+     "b": 1
+    }
+   ],
+   "why": "Inside the frost line only metal and rock could condense, so the terrestrial planets were built from little material, stayed small and could not hold gas; their leftovers are rocky asteroids. Beyond it, ices added much more solid material, so large cores captured hydrogen and helium, had their own disks with moons, and left icy comets."
+  },
+  {
+   "title": "Nebular theory or close encounter?",
+   "prompt": "Sort each statement by the idea it belongs to.",
+   "buckets": [
+    "Nebular theory",
+    "Close encounter hypothesis"
+   ],
+   "items": [
+    {
+     "text": "Planets form from a collapsing cloud of gas and dust",
+     "b": 0
+    },
+    {
+     "text": "Proposed by Kant and Laplace",
+     "b": 0
+    },
+    {
+     "text": "Predicts planetary systems should be common",
+     "b": 0
+    },
+    {
+     "text": "Explains why planets orbit in one plane and one direction",
+     "b": 0
+    },
+    {
+     "text": "Supported by disks seen around young stars",
+     "b": 0
+    },
+    {
+     "text": "Planets are blobs of gas pulled out of the Sun",
+     "b": 1
+    },
+    {
+     "text": "Needs another star to pass very close to the Sun",
+     "b": 1
+    },
+    {
+     "text": "Makes planetary systems extremely rare",
+     "b": 1
+    },
+    {
+     "text": "Cannot explain the two types of planets",
+     "b": 1
+    },
+    {
+     "text": "Has been discarded",
+     "b": 1
+    }
+   ],
+   "why": "The nebular theory treats planet formation as a normal part of star birth in a collapsing, spinning cloud, which explains the orderly motions and predicts many planetary systems. The close encounter hypothesis needed an extremely unlikely near-collision, could not explain the orbits or the two planet types, and has been discarded."
+  },
+  {
+   "title": "Evidence for the giant impact?",
+   "prompt": "Sort each fact by whether it supports the idea that our Moon formed in a giant impact.",
+   "buckets": [
+    "Supports the giant impact",
+    "Does not bear on how the Moon formed"
+   ],
+   "items": [
+    {
+     "text": "Simulations of a Mars-sized impact reproduce the Earth-Moon system",
+     "b": 0
+    },
+    {
+     "text": "The Moon's rocks resemble Earth's mantle and crust",
+     "b": 0
+    },
+    {
+     "text": "The Moon lacks water, sodium and zinc",
+     "b": 0
+    },
+    {
+     "text": "The Moon has very little metal",
+     "b": 0
+    },
+    {
+     "text": "The Moon's density is much lower than Earth's",
+     "b": 0
+    },
+    {
+     "text": "The Moon is geologically quiet today",
+     "b": 1
+    },
+    {
+     "text": "The Moon keeps the same face toward Earth",
+     "b": 1
+    },
+    {
+     "text": "The Moon is round",
+     "b": 1
+    },
+    {
+     "text": "The Moon has no thick atmosphere",
+     "b": 1
+    }
+   ],
+   "why": "The simulations, the match with Earth's outer layers, the missing volatile substances, the lack of metal and the low density all point to the Moon being made from Earth's outer layers in a hot impact. Being geologically quiet and airless comes from the Moon's small size, being round from gravity, and keeping one face toward Earth from tides; these would be true however it formed."
+  }
+ ],
+ "sourceNotes": [
+  "Primary text: The Cosmic Perspective, 10th ed., Chapter 8, pages 217-232. This printing's Chapter 8 has three parts (8.1 The Search for Origins, 8.2 Explaining the Major Features of the Solar System, 8.3 The Age of the Solar System), which match the slide titles. Mathematical Insight 8.1 (radiometric dating) and the rest of 8.3 are left out because the slides stop before the age of the solar system; only the 4.5 billion year age (Ch8.2 pt2 slide 9) and the 4.4 billion year oldest Moon rocks are used.",
+  "Teacher slides: Ch8.1.pdf (7 slides), Ch8.2_pt1.pdf (9), Ch8.2_pt2.pdf (10). All 18 figures are cropped from these slides. Not used as figures: Ch8.1 slides 2-4 and 7, Ch8.2 pt1 slides 1 and 8, Ch8.2 pt2 slides 7, 9 and 10 (text only or summary), and Ch8.2 pt1 slide 1 (a disk painting that repeats slide 3).",
+  "Slide and textbook differences: Ch8.2 pt2 slide 1 credits the magnetic field alone with clearing the nebula and slowing the Sun; the textbook says the magnetic field slowed the Sun while the solar wind and high-energy radiation cleared the gas. The textbook frost line value (about 2.7 AU) and condensation temperatures (Table 8.1) are not on the slides. Ch8.2 pt1 slide 7 gives about 1 km as the size where gravity takes over and 'tens of millions of years' for accretion; the textbook gives hundreds of km within a few million years for the first growth and about 50 million years for the whole process.",
+  "Quiz questions fo-1 to fo-38 are new and do not copy the owner's practice set 2 (questions 1-26 on this unit, keys in exams-astr207.json test t6). Every idea those questions need is taught in the sections."
+ ]
+}
