@@ -1,105 +1,164 @@
-const GEOLOGY_FIGURES = {
+const PROFILES = {
+  investigation: { caption: "Geologists combine indirect observations to infer processes and structures that cannot be seen directly.", nodes: [["wave", "Measure", "Collect observations"], ["layers", "Compare", "Look for patterns"], ["earth", "Infer", "Test an Earth model"]] },
+  chemical: { caption: "Earth separates into layers with different compositions and densities.", nodes: [["crust", "Crust", "Thin rocky shell"], ["mantle", "Mantle", "Silicate rock"], ["core", "Core", "Iron-rich center"]] },
+  mechanical: { caption: "Earth's physical layers differ in strength and how they deform over time.", nodes: [["crust", "Lithosphere", "Rigid outer shell"], ["mantle", "Asthenosphere", "Weak, solid rock"], ["core", "Deep interior", "Hot and under pressure"]] },
+  gradient: { caption: "Pressure, temperature, and density generally increase toward Earth's center.", nodes: [["crust", "Surface", "Lower pressure"], ["mantle", "Depth", "Heat and pressure rise"], ["core", "Center", "Highest density"]] },
+  waves: { caption: "Seismic waves change speed and direction as they cross materials with different properties.", nodes: [["wave", "P waves", "Travel through solids and liquids"], ["wave", "S waves", "Do not cross liquid"], ["layers", "Wave paths", "Reveal hidden boundaries"]] },
+  shadow: { caption: "The absence and bending of seismic waves create shadow zones that reveal a liquid outer core.", nodes: [["wave", "Earthquake", "Waves begin"], ["layers", "Liquid outer core", "S waves stop"], ["earth", "Shadow zone", "Wave gaps map structure"]] },
+  gravity: { caption: "Gravity varies slightly across Earth because mass is unevenly distributed and the planet rotates.", nodes: [["earth", "Mass", "Uneven inside Earth"], ["layers", "Gravity", "Changes by location"], ["earth", "Geoid", "Shape of equal gravity"]] },
+  buoyancy: { caption: "Crust floats in gravitational balance: thicker or lighter crust tends to stand higher.", nodes: [["layers", "Crust", "Floats in balance"], ["mantle", "Mantle", "Supports the crust"], ["earth", "Elevation", "Reflects density and thickness"]] },
+  convection: { caption: "Heat escaping from Earth's interior drives slow circulation in the mantle.", nodes: [["heat", "Warm rock", "Rises slowly"], ["mantle", "Flow", "Rock circulates"], ["crust", "Cooler rock", "Sinks and returns"]] },
+  geodynamo: { caption: "Flowing, electrically conducting liquid iron in the outer core generates Earth's magnetic field.", nodes: [["core", "Liquid iron", "Moves in outer core"], ["heat", "Convection", "Drives circulation"], ["earth", "Magnetic field", "Generated around Earth"]] },
+  reflection: { caption: "Reflected seismic waves help build images of boundaries beneath Earth's surface.", nodes: [["wave", "Send a pulse", "Seismic energy travels"], ["layers", "Reflect", "Boundaries return echoes"], ["earth", "Image", "Combine the signals"]] },
+  drift: { caption: "Continents now separated by oceans once fit together and share geological clues.", nodes: [["layers", "Match clues", "Fossils and rocks"], ["rift", "Separate", "Ocean basin opens"], ["earth", "Drift", "Continents change position"]] },
+  tectonics: { caption: "Multiple lines of evidence connect moving plates to earthquakes, volcanoes, and ocean-floor patterns.", nodes: [["layers", "Observe", "Map the seafloor"], ["wave", "Compare", "Use quake and magnetic patterns"], ["rift", "Explain", "Plates move and interact"]] },
+  boundaries: { caption: "Plate motion shapes the land differently where plates diverge, converge, or slide past.", nodes: [["rift", "Divergent", "Move apart"], ["collision", "Convergent", "Move together"], ["fault", "Transform", "Slide past"]] },
+  subduction: { caption: "At a subduction zone, denser oceanic lithosphere sinks beneath another plate.", nodes: [["collision", "Converge", "Plates move together"], ["layers", "Subduct", "Oceanic plate sinks"], ["volcano", "Arc", "Magma may rise"]] },
+  collision: { caption: "Continental collision shortens and thickens crust, building high mountain belts.", nodes: [["collision", "Converge", "Continents approach"], ["fold", "Thicken", "Crust shortens"], ["layers", "Mountains", "Thick roots support relief"]] },
+  rifting: { caption: "Extension stretches continental crust; a mature rift can develop into a new ocean basin.", nodes: [["rift", "Stretch", "Crust pulls apart"], ["fault", "Thin", "Blocks drop along faults"], ["water", "Flood", "New basin may form"]] },
+  spreading: { caption: "New oceanic crust forms at ridges and moves outward as the seafloor spreads.", nodes: [["magma", "Magma rises", "New crust forms"], ["layers", "Record reversals", "Magnetic stripes form"], ["transport", "Move outward", "Crust gets older"]] },
+  transform: { caption: "Transform faults accommodate sideways motion between neighboring plates.", nodes: [["fault", "Lock", "Friction resists motion"], ["pressure", "Strain", "Stress builds"], ["rupture", "Slip", "Blocks move sideways"]] },
+  driving: { caption: "Gravity and heat help move plates through slab pull, ridge forces, and mantle circulation.", nodes: [["heat", "Earth's heat", "Drives mantle flow"], ["collision", "Slab pull", "Dense plate sinks"], ["rift", "Ridge force", "Plates move apart"]] },
+  hotspot: { caption: "A mantle plume can make a chain of volcanoes as a tectonic plate moves over it.", nodes: [["magma", "Plume", "Hot rock rises"], ["volcano", "Volcano", "Erupts above plume"], ["timeline", "Track motion", "A chain records movement"]] },
+  mineral: { caption: "Mineral identity comes from a combination of composition, structure, and observable properties.", nodes: [["crystal", "Structure", "Ordered atoms"], ["scratch", "Properties", "Test hardness and streak"], ["cleavage", "Identify", "Compare diagnostic clues"]] },
+  crystal: { caption: "Atoms link in repeating arrangements that control crystal shape and mineral properties.", nodes: [["crystal", "Atoms", "Bond together"], ["layers", "Lattice", "Repeating structure"], ["crystal", "Crystal", "Grows in a pattern"]] },
+  formation: { caption: "Minerals crystallize as magma cools or as dissolved material precipitates from water.", nodes: [["magma", "Melt or solution", "Supplies elements"], ["cooling", "Crystallize", "Atoms arrange"], ["crystal", "Mineral", "A solid forms"]] },
+  hardness: { caption: "A scratch test ranks hardness by checking which mineral scratches another.", nodes: [["scratch", "Test", "Try a scratch"], ["crystal", "Compare", "Use known references"], ["mineral", "Rank", "Place on Mohs scale"]] },
+  silicate: { caption: "Silicate minerals are built from silicon–oxygen tetrahedra linked in different arrangements.", nodes: [["crystal", "Tetrahedron", "One silicon, four oxygen"], ["layers", "Link units", "Share oxygen atoms"], ["mineral", "Silicate", "Build mineral structures"]] },
+  rockcycle: { caption: "Magma cools into igneous rock; melting, weathering, and burial can transform it again.", nodes: [["magma", "Melt", "Magma forms"], ["cooling", "Cool", "Igneous rock crystallizes"], ["weather", "Change", "Weathering or melting continues the cycle"]] },
+  melting: { caption: "Decompression, added water, or heat can cause solid rock to begin melting.", nodes: [["pressure", "Decompression", "Pressure drops"], ["water", "Add water", "Melting temperature falls"], ["heat", "Add heat", "Rock can melt"]] },
+  magma: { caption: "Magma composition and cooling history shape crystals, viscosity, and the resulting rock.", nodes: [["magma", "Magma", "Composition varies"], ["transport", "Move", "Melt rises or erupts"], ["cooling", "Cool", "Texture and rock form"]] },
+  differentiation: { caption: "As magma cools, minerals crystallize in sequence and the remaining melt changes composition.", nodes: [["magma", "Starting melt", "Mixed composition"], ["crystal", "Crystallize", "Some minerals form first"], ["magma", "Remaining melt", "Composition evolves"]] },
+  texture: { caption: "Cooling rate controls crystal size: slow cooling grows larger crystals; rapid cooling makes finer textures.", nodes: [["magma", "Melt", "Crystals have not formed"], ["cooling", "Cool slowly", "Crystals have time to grow"], ["crystal", "Fine or coarse", "Texture records cooling"]] },
+  intrusion: { caption: "Magma that cools underground forms intrusive bodies such as dikes, sills, and plutons.", nodes: [["magma", "Magma", "Moves through crust"], ["fault", "Intrude", "Cuts across or follows layers"], ["cooling", "Solidify", "An igneous body remains"]] },
+  volcano: { caption: "Volcano shape reflects magma properties, eruption style, and the materials deposited over time.", nodes: [["magma", "Magma", "Rises toward surface"], ["volcano", "Erupt", "Lava and fragments emerge"], ["layers", "Build", "Layers shape the volcano"]] },
+  eruption: { caption: "Viscosity and gas content affect how easily magma flows and whether an eruption is explosive.", nodes: [["magma", "Magma", "Viscosity varies"], ["gas", "Gas expands", "Pressure builds"], ["volcano", "Erupt", "Style and hazards differ"]] },
+  products: { caption: "Eruptions release lava, volcanic fragments, and gases that move and settle in different ways.", nodes: [["volcano", "Erupt", "Magma and gas escape"], ["magma", "Lava", "Flows along the ground"], ["layers", "Ash and blocks", "Fragments settle"]] },
+  hazards: { caption: "Lava, ash, hot currents, and lahars pose different hazards at different distances from a volcano.", nodes: [["volcano", "Source", "Eruption releases material"], ["transport", "Travel", "Flows and ash move"], ["earth", "Impact", "Exposure shapes risk"]] },
+  monitoring: { caption: "Changes in earthquakes, ground shape, and volcanic gases can signal changing activity.", nodes: [["wave", "Seismicity", "Track earthquakes"], ["layers", "Deformation", "Measure swelling"], ["volcano", "Gas", "Watch emissions"]] },
+  planets: { caption: "Volcanic landforms and lava reveal that volcanism has shaped other worlds as well as Earth.", nodes: [["magma", "Melt", "Rock becomes mobile"], ["volcano", "Erupt", "Volcanism reshapes a surface"], ["earth", "Compare worlds", "Gravity and climate differ"]] },
+  weathering: { caption: "Physical and chemical weathering break down rock and supply sediment to landscapes.", nodes: [["weather", "Break down", "Rock is exposed"], ["water", "Weather", "Water and climate act"], ["transport", "Sediment", "Material becomes mobile"]] },
+  soil: { caption: "Soil develops from weathered parent material, organic matter, water, and time.", nodes: [["weather", "Parent material", "Rock weathers"], ["fossil", "Organic matter", "Life adds material"], ["layers", "Soil horizons", "Layers develop"]] },
+  sediment: { caption: "Sediment is transported, deposited, buried, and eventually cemented into sedimentary rock.", nodes: [["weather", "Weather", "Make particles"], ["transport", "Transport", "Move sediment"], ["layers", "Deposit", "Bury and lithify"]] },
+  structure: { caption: "Layers, ripples, and other sedimentary structures preserve clues to past flow and deposition.", nodes: [["transport", "Flow", "Water or wind moves"], ["layers", "Deposit", "Sediment settles"], ["layers", "Structure", "Patterns are preserved"]] },
+  environment: { caption: "Sediment type and structures help identify the environment where a layer formed.", nodes: [["transport", "Carry sediment", "Environment moves material"], ["layers", "Deposit", "Facies vary across a basin"], ["earth", "Interpret", "Infer the environment"]] },
+  metamorphism: { caption: "Heat, pressure, and fluids change minerals and textures while rock remains solid.", nodes: [["heat", "Heat", "Speeds mineral reactions"], ["pressure", "Stress", "Changes mineral alignment"], ["crystal", "Recrystallize", "New texture forms"]] },
+  grade: { caption: "Index minerals and textures help track increasing metamorphic grade and changing conditions.", nodes: [["crystal", "Low grade", "Early mineral changes"], ["layers", "Higher grade", "Minerals reorganize"], ["heat", "Conditions", "Temperature and pressure rise"]] },
+  contact: { caption: "A hot intrusion heats nearby country rock, creating a metamorphic aureole.", nodes: [["magma", "Intrusion", "Hot magma enters"], ["heat", "Transfer heat", "Nearby rock changes"], ["crystal", "Aureole", "Metamorphic zone forms"]] },
+  exhumation: { caption: "Uplift and erosion can bring deeply buried rocks back to the surface.", nodes: [["layers", "Burial", "Rock moves deeper"], ["pressure", "Metamorphism", "Conditions change"], ["weather", "Exhumation", "Uplift and erosion expose rock"]] },
+  deepTime: { caption: "Geologic time records Earth history across billions of years and many kinds of evidence.", nodes: [["layers", "Relative order", "Place events in sequence"], ["fossil", "Fossils", "Correlate rock layers"], ["timeline", "Deep time", "Build the long history"]] },
+  dating: { caption: "Relative dating orders events; radiometric dating can estimate numerical ages.", nodes: [["layers", "Relative time", "Earlier or later"], ["fossil", "Correlate", "Match rock records"], ["crystal", "Numerical age", "Use isotope decay"]] },
+  unconformity: { caption: "An unconformity marks time missing from the rock record through erosion or non-deposition.", nodes: [["layers", "Deposit", "Older layers form"], ["weather", "Erode or pause", "Time is missing"], ["layers", "Resume", "Younger layers cover the gap"]] },
+  isotopes: { caption: "Radioactive parent isotopes decay at known rates, providing clocks for suitable rocks.", nodes: [["crystal", "Parent isotope", "Starts in a mineral"], ["timeline", "Decay", "Half-life passes"], ["crystal", "Daughter isotope", "Measure the ratio"]] },
+  fossil: { caption: "Burial and preservation turn remains or traces of past life into evidence in rock.", nodes: [["fossil", "Life", "Organism or trace"], ["layers", "Burial", "Sediment protects evidence"], ["fossil", "Fossil", "Preserved in rock"]] },
+  evolution: { caption: "Inherited variation and differential survival can change populations over generations.", nodes: [["fossil", "Variation", "Individuals differ"], ["earth", "Selection", "Environment affects survival"], ["timeline", "Change", "Populations evolve"]] },
+  extinction: { caption: "Extinction removes lineages; changes in fossil assemblages help identify major events.", nodes: [["fossil", "Fossil record", "Assemblages change"], ["earth", "Disturbance", "Environmental stress"], ["timeline", "Extinction", "Some lineages disappear"]] },
+  history: { caption: "Earth history links changing continents, oceans, climate, and life through geologic time.", nodes: [["earth", "Early Earth", "A changing planet"], ["layers", "Surface changes", "Crust, oceans, and climate"], ["timeline", "Life evolves", "Across deep time"]] },
+  hadean: { caption: "The Hadean Earth cooled from a hot, heavily bombarded planet toward a crust with early oceans.", nodes: [["magma", "Molten Earth", "Early surface was hot"], ["earth", "Impacts", "Large collisions shaped Earth"], ["water", "Cooling", "Crust and early oceans formed"]] },
+  earlyCrust: { caption: "Repeated melting and volcanism helped build the first long-lived continental crust.", nodes: [["collision", "Subduction", "Plates recycle rock"], ["volcano", "Arcs", "Magma rises"], ["layers", "Crust grows", "Continental fragments join"]] },
+  earlyLife: { caption: "Archean rocks preserve evidence of early crust and microbial life.", nodes: [["earth", "Early crust", "Ancient rocks survive"], ["fossil", "Microbes", "Life leaves traces"], ["layers", "Preservation", "Evidence enters the rock record"]] },
+  cratons: { caption: "Stable cratons preserve ancient cores that later joined to form larger continents.", nodes: [["layers", "Craton", "Stable continental core"], ["collision", "Assembly", "Blocks join"], ["earth", "North America", "A larger continent develops"]] },
+  oxygen: { caption: "Photosynthetic life gradually added oxygen to the atmosphere during Proterozoic time.", nodes: [["fossil", "Photosynthesis", "Microbes release oxygen"], ["earth", "Oxygen rises", "Atmosphere changes"], ["layers", "New conditions", "Life and rocks respond"]] },
+  snowball: { caption: "Major Proterozoic glaciations left evidence of ice reaching low latitudes.", nodes: [["earth", "Cooling", "Ice expands"], ["layers", "Glaciation", "Ice alters landscapes"], ["fossil", "After the ice", "Climate and life change"]] },
+  paleoGeo: { caption: "Paleozoic geography changed as seas advanced, mountain belts formed, and continents assembled.", nodes: [["water", "Shallow seas", "Cover continental margins"], ["collision", "Orogenies", "Continents converge"], ["earth", "Pangaea", "A supercontinent assembles"]] },
+  paleozoic: { caption: "Paleozoic life diversified in the seas and on land before the end-Permian mass extinction.", nodes: [["fossil", "Marine life", "Diversity expands"], ["earth", "Life on land", "Plants and animals spread"], ["timeline", "End-Permian", "Mass extinction reshapes life"]] },
+  mesoGeo: { caption: "The breakup of Pangaea opened new ocean basins while western North America grew through accretion.", nodes: [["earth", "Pangaea", "Continents joined"], ["rift", "Breakup", "New ocean basins open"], ["collision", "Accretion", "Terranes join the west coast"]] },
+  mesozoic: { caption: "Mesozoic ecosystems included dinosaurs and ended with a major mass extinction.", nodes: [["fossil", "Triassic", "Life recovers and diversifies"], ["fossil", "Jurassic–Cretaceous", "Dinosaurs flourish"], ["timeline", "End-Cretaceous", "Mass extinction"]] },
+  impact: { caption: "A large impact at the K–Pg boundary caused rapid environmental disruption and a mass extinction.", nodes: [["earth", "Impact", "Asteroid reaches Earth"], ["layers", "Global effects", "Dust and climate disruption"], ["fossil", "Recovery", "Surviving groups diversify"]] },
+  cenoGeo: { caption: "Cenozoic plate motion built mountain belts and helped shape western North America's basins and ranges.", nodes: [["collision", "Plate convergence", "Continents approach"], ["fold", "Mountain building", "Crust deforms"], ["layers", "Basin and Range", "Crust stretches"]] },
+  cenozoic: { caption: "Mammals diversified during the Cenozoic as continents, climates, and ecosystems changed.", nodes: [["fossil", "Mammals diversify", "New groups spread"], ["earth", "Climate shifts", "Ice ages recur"], ["timeline", "Recent Earth", "Landscapes keep changing"]] },
+  strain: { caption: "Stress changes rock shape; strain records the resulting deformation.", nodes: [["pressure", "Stress", "Force acts on rock"], ["fold", "Strain", "Shape changes"], ["fault", "Deformation", "Rock bends or breaks"]] },
+  fault: { caption: "Fault geometry and the direction of displacement distinguish normal, reverse, and strike-slip motion.", nodes: [["pressure", "Stress", "Pull, push, or shear"], ["fault", "Fault", "Rock blocks separate"], ["rupture", "Slip", "Classify the motion"]] },
+  fold: { caption: "Layered rocks can bend into folds under compression and ductile deformation.", nodes: [["pressure", "Compression", "Layers shorten"], ["fold", "Fold", "Layers bend"], ["layers", "Read the shape", "Name fold geometry"]] },
+  mountain: { caption: "Tectonic forces can thicken crust, form mountain roots, and create broad basins.", nodes: [["collision", "Tectonic force", "Crust shortens or stretches"], ["fold", "Deform", "Layers bend or break"], ["layers", "Relief", "Mountains or basins form"]] },
+  slope: { caption: "Slope failure occurs when downslope driving forces overcome the strength holding material in place.", nodes: [["slope", "Slope", "Gravity pulls downslope"], ["water", "Stability falls", "Water or weak layers matter"], ["slide", "Failure", "Material moves downhill"]] },
+  movement: { caption: "Creep, slides, falls, and flows differ in how material moves downslope.", nodes: [["slope", "Material loosens", "Slope loses stability"], ["transport", "Movement", "Creep, slide, fall, or flow"], ["layers", "Deposit", "Material comes to rest"]] },
+  earthquake: { caption: "Elastic strain accumulates on a locked fault and is released when the fault slips.", nodes: [["fault", "Locked fault", "Plates continue moving"], ["pressure", "Strain", "Stress accumulates"], ["rupture", "Earthquake", "Slip releases energy"]] },
+  seismic: { caption: "P, S, and surface waves move differently and leave different patterns of shaking.", nodes: [["wave", "P wave", "Compressional body wave"], ["wave", "S wave", "Shear body wave"], ["wave", "Surface waves", "Move along the surface"]] },
+  magnitude: { caption: "Magnitude describes earthquake size; intensity describes shaking and effects at a location.", nodes: [["rupture", "Rupture", "Fault releases energy"], ["wave", "Magnitude", "Estimate source size"], ["earth", "Intensity", "Describe local effects"]] },
+  tsunami: { caption: "A tsunami can form when seafloor displacement moves a large volume of water.", nodes: [["rupture", "Seafloor moves", "Water is displaced"], ["wave", "Long wave", "Crosses the ocean"], ["earth", "Coast", "Wave grows in shallow water"]] },
+};
+
+const SECTION_PROFILES = {
   interior: {
-    title: "A layered planet",
-    caption: "Earth's outer shell is thin above a thick mantle and a dense, iron-rich core.",
-    nodes: [["crust", "Crust", "Thin, rigid surface"], ["mantle", "Mantle", "Hot, slowly flowing rock"], ["core", "Core", "Dense metallic center"]],
+    investigation: "probes", chemical: "chemical", mechanical: "physical", gradient: "density-temp",
+    waves: "waves", shadow: "shadow", gravity: "gravity", buoyancy: "isostasy",
+    convection: "heat-convection", geodynamo: "magnetic", reflection: "reflection",
   },
   plates: {
-    title: "Three ways plates meet",
-    caption: "Plates move apart, move together, or slide past one another.",
-    nodes: [["rift", "Divergent", "Move apart"], ["collision", "Convergent", "Move together"], ["fault", "Transform", "Slide past"]],
+    drift: "wegener", tectonics: "evidence", mechanical: "layers", boundaries: "types",
+    subduction: "subduction", collision: "collision", rifting: "rifts", spreading: "ridges",
+    transform: "transform", driving: "forces", hotspot: "hotspots",
   },
   minerals: {
-    title: "Identify a mineral",
-    caption: "Combine observable properties instead of relying on color alone.",
-    nodes: [["crystal", "Observe", "Luster and shape"], ["scratch", "Test", "Hardness and streak"], ["cleavage", "Compare", "Breakage pattern"]],
+    mineral: "definition not-mineral identify special elements rockforming",
+    crystal: "atoms-bonds crystal-growth", formation: "formation",
+    hardness: "hardness cleavage", silicate: "silicates",
   },
   igneous: {
-    title: "Cooling leaves a texture",
-    caption: "Slow cooling underground allows larger crystals; rapid cooling makes smaller crystals.",
-    nodes: [["magma", "Magma", "Molten rock"], ["cooling", "Cooling", "Slow or fast"], ["crystal", "Texture", "Crystal size"]],
+    magma: "magma-lava settings vary silica", melting: "melting", eruption: "volcanoes prof-q",
+    differentiation: "fractional", texture: "classify textures", intrusion: "dikes plutons",
   },
-  eruptions: {
-    title: "Why eruptions differ",
-    caption: "Viscous magma can trap gas; pressure builds until gas and magma escape.",
-    nodes: [["magma", "Magma", "Viscosity matters"], ["gas", "Gas builds", "Pressure rises"], ["volcano", "Eruption", "Style varies"]],
+  "volcanic-eruptions": {
+    subduction: "volcanic-settings", eruption: "eruption-style", products: "eruption-products",
+    volcano: "volcanic-architecture", hazards: "volcanic-hazards",
+    monitoring: "eruption-monitoring", planets: "volcanoes-beyond-earth",
   },
   sedimentary: {
-    title: "From rock to sediment",
-    caption: "Weathering makes particles; transport moves them; deposition begins a new layer.",
-    nodes: [["weather", "Weathering", "Breaks rock down"], ["transport", "Transport", "Moves particles"], ["layers", "Deposition", "Particles settle"]],
+    weathering: "water wtypes wmech wchem", soil: "soil soilclass", sediment: "sedintro clastic nonclastic",
+    structure: "structures", environment: "env basins",
   },
   metamorphism: {
-    title: "Changing rock without melting",
-    caption: "Heat, pressure, and fluids reorganize minerals while the rock remains solid.",
-    nodes: [["heat", "Heat", "Raises temperature"], ["pressure", "Pressure", "Changes conditions"], ["crystal", "New minerals", "Rock stays solid"]],
+    metamorphism: "what-is-meta texture-foliation five-processes agents nonfoliated",
+    grade: "foliated-rocks grade-facies", contact: "types-contact",
+    mountain: "dynamic-regional other-settings", exhumation: "exhumation slide-quiz",
   },
-  stratigraphy: {
-    title: "Read relative time",
-    caption: "Layer order and cross-cutting features reveal which events happened first.",
-    nodes: [["layers", "Layering", "Lower is older"], ["fault", "Cross-cutting", "Feature is younger"], ["timeline", "Order events", "Build a sequence"]],
+  strat: {
+    deepTime: "deep", dating: "unif principles apply fossil corr scale age",
+    unconformity: "uncon", isotopes: "decay iso",
   },
   fossils: {
-    title: "How a fossil can form",
-    caption: "Rapid burial protects remains while minerals or sediment preserve evidence of past life.",
-    nodes: [["fossil", "Burial", "Remains are covered"], ["layers", "Preservation", "Evidence is protected"], ["fossil", "Discovery", "Fossil is exposed"]],
+    fossil: "succession timeline types trace incomplete archean shelly dna",
+    evolution: "evolution", extinction: "extinction",
   },
   biography: {
-    title: "Earth's history spans deep time",
-    caption: "The planet's history includes early crust, changing oceans and atmosphere, and evolving life.",
-    nodes: [["earth", "Early Earth", "A changing planet"], ["layers", "Changing surface", "Crust and oceans"], ["timeline", "Life evolves", "Across deep time"]],
+    hadean: "hadean", earlyCrust: "arcs", earlyLife: "archean", cratons: "cratons",
+    oxygen: "proterozoic", snowball: "glaciation", paleoGeo: "paleo-geo",
+    paleozoic: "paleozoic", mesoGeo: "meso-geo", mesozoic: "mesozoic",
+    impact: "kpg", cenoGeo: "ceno-geo", cenozoic: "cenozoic", history: "clicker",
   },
   deformation: {
-    title: "Stress changes rock",
-    caption: "Rock may bend slowly or break, depending on conditions such as temperature and strain rate.",
-    nodes: [["pressure", "Stress", "Force on rock"], ["fold", "Bend", "Ductile response"], ["fault", "Break", "Brittle response"]],
+    strain: "basics stress brittle joints faultclues", fault: "faults",
+    fold: "folds foldparts domes", mountain: "collision boundaries interiors",
   },
   massmovement: {
-    title: "A slope can fail",
-    caption: "Gravity pulls material downhill; water, steepness, and weak layers can reduce stability.",
-    nodes: [["slope", "Unstable slope", "Gravity acts"], ["water", "Weakening", "Water can add weight"], ["slide", "Movement", "Material moves downhill"]],
+    slope: "overview stability water-weak-layers", movement: "creep-slumps flows slides-falls submarine",
   },
   earthquakes: {
-    title: "A fault releases stored strain",
-    caption: "When a locked fault slips, seismic energy travels outward as waves.",
-    nodes: [["fault", "Locked fault", "Strain builds"], ["rupture", "Rupture", "Fault slips"], ["wave", "Seismic waves", "Energy travels"]],
+    earthquake: "earthquake-cycle", fault: "fault-motion",
+    waves: "earthquake-location", seismic: "seismic-waves", magnitude: "earthquake-size",
+    slope: "shaking-hazards", tsunami: "tsunami-prediction",
   },
 };
 
-const deckImage = (src, id) => typeof src === "string"
-  && (src.startsWith(`img/${id}/`) || src.startsWith("img/geology/"));
-
-function cleanText(text) {
-  const kept = text.split(/(?<=[.!?])\s+/).filter((part) => !/\bslides?\b/i.test(part));
-  const clean = kept.join(" ").replace(/\s{2,}/g, " ").trim();
-  return clean || null;
+function sectionProfile(lectureId, sectionId) {
+  const profiles = SECTION_PROFILES[lectureId];
+  if (!profiles) return null;
+  for (const [profile, sectionIds] of Object.entries(profiles)) {
+    if (sectionIds.split(/\s+/).includes(sectionId)) return profile;
+  }
+  return null;
 }
 
-export function stripInstructorDeck(id, value) {
-  const isDeckFigure = (image) => image && (image.slide || deckImage(image.src, id));
-  const visit = (item, key = "") => {
-    if (typeof item === "string") return key === "id" ? item : cleanText(item);
-    if (Array.isArray(item)) return item.map((child) => visit(child, key)).filter((child) => child !== null);
-    if (!item || typeof item !== "object") return item;
-    if (deckImage(item.src, id)) return null;
-
-    const emptyDeckStep = key === "steps"
-      && (isDeckFigure(item.img) || (item.figures || []).some((figure) => isDeckFigure(figure.img)))
-      && !(item.bullets || []).length;
-    const clean = {};
-    for (const [childKey, child] of Object.entries(item)) {
-      if (["slide", "slides", "slideFile", "sourceNotes"].includes(childKey)) continue;
-      const next = visit(child, childKey);
-      if (next !== null) clean[childKey] = next;
-    }
-    if (emptyDeckStep) return null;
-    return clean;
-  };
-  return visit(value);
+export function geologyVisualContent(lectureId, section) {
+  const profile = (PROFILES[section?.visual] && section.visual) || sectionProfile(lectureId, section?.id);
+  const definition = PROFILES[profile];
+  if (!definition) return null;
+  return { profile, title: section.title, caption: definition.caption, nodes: definition.nodes };
 }
 
-export function geologyVisual(id) {
-  const figure = GEOLOGY_FIGURES[id];
+export function geologyVisual(id, section) {
+  const figure = geologyVisualContent(id, section);
   if (!figure) return "";
   const element = (tag, className = "", text = "") => {
     const node = document.createElement(tag);
@@ -123,4 +182,4 @@ export function geologyVisual(id) {
   return result;
 }
 
-export const geologyVisualIds = Object.keys(GEOLOGY_FIGURES);
+export const geologyVisualIds = Object.keys(SECTION_PROFILES);

@@ -6,67 +6,68 @@
  "color": "#8a5a44",
  "intro": "How do we know the order of Earth's events and how many years ago they happened? Learn the rules for older vs younger (relative dating), the gaps in the record (unconformities), and how radioactive clocks give real ages (half-life, isotopes, closure temperature).",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Explain deep time and why geologic time dwarfs human history."
-   },
-   {
-    "id": "goal-02",
-    "text": "State uniformitarianism (?the present is the key to the past?), identify Hutton?s contribution, and describe Lyell?s role."
-   },
-   {
-    "id": "goal-03",
-    "text": "Distinguish relative age (older or younger) from numerical age (years)."
-   },
-   {
-    "id": "goal-04",
-    "text": "Apply original horizontality, superposition, lateral continuity, cross-cutting relations, baked contacts, and inclusions."
-   },
-   {
-    "id": "goal-05",
-    "text": "Recognize and sketch angular unconformities, nonconformities, and disconformities."
-   },
-   {
-    "id": "goal-06",
-    "text": "Read a block diagram and place its geologic events in order."
-   },
-   {
-    "id": "goal-07",
-    "text": "Use fossil succession, index fossils, and fossil ranges (FAD/LAD) for relative dating."
-   },
-   {
-    "id": "goal-08",
-    "text": "Explain formations, stratigraphic columns, correlation, and geologic maps."
-   },
-   {
-    "id": "goal-09",
-    "text": "Describe how the composite geologic column became the geologic time scale of eons, eras, periods, and epochs."
-   },
-   {
-    "id": "goal-10",
-    "text": "Explain radioactive decay, parent and daughter isotopes, and half-life; solve half-life calculations."
-   },
-   {
-    "id": "goal-11",
-    "text": "Explain what an isotopic date records (closure temperature) and identify which rocks can be dated."
-   },
-   {
-    "id": "goal-12",
-    "text": "Describe non-radiometric numerical dating using tree rings, growth bands, varves, and ice layers."
-   },
-   {
-    "id": "goal-13",
-    "text": "Bracket the age of sedimentary layers using datable igneous rocks."
-   },
-   {
-    "id": "goal-14",
-    "text": "State Earth?s age and describe the evidence used to determine it."
-   }
+  {
+   "id": "goal-01",
+   "text": "Explain deep time and why geologic time dwarfs human history."
+  },
+  {
+   "id": "goal-02",
+   "text": "State uniformitarianism (?the present is the key to the past?), identify Hutton?s contribution, and describe Lyell?s role."
+  },
+  {
+   "id": "goal-03",
+   "text": "Distinguish relative age (older or younger) from numerical age (years)."
+  },
+  {
+   "id": "goal-04",
+   "text": "Apply original horizontality, superposition, lateral continuity, cross-cutting relations, baked contacts, and inclusions."
+  },
+  {
+   "id": "goal-05",
+   "text": "Recognize and sketch angular unconformities, nonconformities, and disconformities."
+  },
+  {
+   "id": "goal-06",
+   "text": "Read a block diagram and place its geologic events in order."
+  },
+  {
+   "id": "goal-07",
+   "text": "Use fossil succession, index fossils, and fossil ranges (FAD/LAD) for relative dating."
+  },
+  {
+   "id": "goal-08",
+   "text": "Explain formations, stratigraphic columns, correlation, and geologic maps."
+  },
+  {
+   "id": "goal-09",
+   "text": "Describe how the composite geologic column became the geologic time scale of eons, eras, periods, and epochs."
+  },
+  {
+   "id": "goal-10",
+   "text": "Explain radioactive decay, parent and daughter isotopes, and half-life; solve half-life calculations."
+  },
+  {
+   "id": "goal-11",
+   "text": "Explain what an isotopic date records (closure temperature) and identify which rocks can be dated."
+  },
+  {
+   "id": "goal-12",
+   "text": "Describe non-radiometric numerical dating using tree rings, growth bands, varves, and ice layers."
+  },
+  {
+   "id": "goal-13",
+   "text": "Bracket the age of sedimentary layers using datable igneous rocks."
+  },
+  {
+   "id": "goal-14",
+   "text": "State Earth?s age and describe the evidence used to determine it."
+  }
  ],
  "sections": [
   {
    "id": "deep",
    "title": "Deep time: why geology needs a huge clock",
+   "slides": "2-10",
    "bullets": [],
    "boxes": [
     {
@@ -78,9 +79,25 @@
      "text": "Think of the rock record as a very long story. Relative dating tells you the order of the chapters. Numerical dating tells you the date written on some pages."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s4.webp",
+     "slide": "4",
+     "alt": "Tall block diagram of Earth's history showing the Hadean, Archean, Proterozoic and Phanerozoic with ages in millions of years."
+    },
+    {
+     "src": "img/strat/s10.webp",
+     "slide": "10",
+     "alt": "A short list of extra topics that are not covered in this chapter."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s4.webp",
+      "slide": "4",
+      "alt": "Tall block diagram of Earth's history showing the Hadean, Archean, Proterozoic and Phanerozoic with ages in millions of years."
+     },
      "title": "The geologic column",
      "bullets": [
       "The **geologic column** is a tall stack of time blocks: Hadean, Archean, Proterozoic and Phanerozoic. The first three together are the Precambrian.",
@@ -89,6 +106,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s10.webp",
+      "slide": "10",
+      "alt": "A short list of extra topics that are not covered in this chapter."
+     },
      "title": "Topics this chapter leaves out",
      "bullets": [
       "Not covered here: the evolution of planets, stars, solar systems, galaxies and the universe, and how Earth interacts with the solar system."
@@ -106,6 +128,7 @@
   {
    "id": "unif",
    "title": "Uniformitarianism, relative vs numerical",
+   "slides": "11-16",
    "bullets": [],
    "boxes": [
     {
@@ -121,9 +144,30 @@
      "text": "Relative = 'older than / younger than', like saying you are older than your cousin. Numerical = 'I am 22 years old'."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s13.webp",
+     "slide": "13",
+     "alt": "Photos of sand ripples under water and an ancient rippled rock surface, with Hutton's famous quotes."
+    },
+    {
+     "src": "img/strat/s14.webp",
+     "slide": "14",
+     "alt": "Photos of mudcracks drying today next to mudcracks preserved in ancient rock."
+    },
+    {
+     "src": "img/strat/s16.webp",
+     "slide": "16",
+     "alt": "Cliff cross-section with layers, a basalt dike, fossil bones and labelled ages of granite, dike and volcanic ash."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s13.webp",
+      "slide": "13",
+      "alt": "Photos of sand ripples under water and an ancient rippled rock surface, with Hutton's famous quotes."
+     },
      "title": "The present is the key to the past",
      "bullets": [
       "'The present is the key to the past' is the short version of uniformitarianism: the processes we see today are the same as those that worked long ago.",
@@ -132,6 +176,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s14.webp",
+      "slide": "14",
+      "alt": "Photos of mudcracks drying today next to mudcracks preserved in ancient rock."
+     },
      "title": "Uniformitarianism and Lyell",
      "bullets": [
       "The **Principle of Uniformitarianism** says processes observed today were the same in the past. Example: mudcracks in ancient sediments formed just like mudcracks drying today.",
@@ -139,6 +188,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s16.webp",
+      "slide": "16",
+      "alt": "Cliff cross-section with layers, a basalt dike, fossil bones and labelled ages of granite, dike and volcanic ash."
+     },
      "title": "Relative vs numerical dating",
      "bullets": [
       "**Relative dating** = qualitative (older or younger), developed hundreds of years ago. **Numerical dating** = quantitative (a number of years), developed in the last 70 years. Geologists use both.",
@@ -157,6 +211,7 @@
   {
    "id": "principles",
    "title": "The principles of relative dating",
+   "slides": "17-29",
    "bullets": [],
    "boxes": [
     {
@@ -216,9 +271,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s20.webp",
+     "slide": "20",
+     "alt": "Grand Canyon cliffs with a drawing of sand poured into a glass in three stages, oldest layer at the bottom."
+    },
+    {
+     "src": "img/strat/s21.webp",
+     "slide": "21",
+     "alt": "Close-up of tilted red sandstone beds with fine internal layering."
+    },
+    {
+     "src": "img/strat/s23.webp",
+     "slide": "23",
+     "alt": "Diagram of a wide layered sheet later cut by a valley, above a Grand Canyon photo with the Kaibab, Coconino and Hermit layers labelled."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s20.webp",
+      "slide": "20",
+      "alt": "Grand Canyon cliffs with a drawing of sand poured into a glass in three stages, oldest layer at the bottom."
+     },
      "title": "Flat layers, youngest on top",
      "bullets": [
       "**Original horizontality**: sediments settle out of a fluid by gravity, so they pile up flat. Sediment does not favour a slope, so most sedimentary beds started horizontal.",
@@ -226,12 +302,22 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s21.webp",
+      "slide": "21",
+      "alt": "Close-up of tilted red sandstone beds with fine internal layering."
+     },
      "title": "'Younging' features",
      "bullets": [
       "**'Younging' features** show which way is younger, even if the rocks are tilted upside down."
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s23.webp",
+      "slide": "23",
+      "alt": "Diagram of a wide layered sheet later cut by a valley, above a Grand Canyon photo with the Kaibab, Coconino and Hermit layers labelled."
+     },
      "title": "Lateral continuity",
      "bullets": [
       "**Lateral continuity**: strata form wide horizontal sheets.",
@@ -266,6 +352,7 @@
   {
    "id": "uncon",
    "title": "Unconformities: gaps in the record",
+   "slides": "30-37",
    "bullets": [],
    "boxes": [
     {
@@ -306,9 +393,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s33.webp",
+     "slide": "33",
+     "alt": "Photo and sketch of vertical sandstone layers overlain by gently tilted red layers at Siccar Point, Scotland."
+    },
+    {
+     "src": "img/strat/s35.webp",
+     "slide": "35",
+     "alt": "Photo of sandstone resting on granite beside a three-step diagram of a nonconformity forming."
+    },
+    {
+     "src": "img/strat/s36.webp",
+     "slide": "36",
+     "alt": "Diagrams of sea level dropping and rising above a red rock face with a channel surface and a paleosol horizon labelled."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s33.webp",
+      "slide": "33",
+      "alt": "Photo and sketch of vertical sandstone layers overlain by gently tilted red layers at Siccar Point, Scotland."
+     },
      "title": "Angular unconformity",
      "bullets": [
       "**Angular unconformity**: old strata are folded or tilted, mountains are eroded flat, then new horizontal beds are laid on top. Layers below are at an ANGLE to layers above.",
@@ -317,6 +425,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s35.webp",
+      "slide": "35",
+      "alt": "Photo of sandstone resting on granite beside a three-step diagram of a nonconformity forming."
+     },
      "title": "Nonconformity",
      "bullets": [
       "**Nonconformity**: sedimentary rock sits on **igneous or metamorphic** rock (for example sandstone on granite).",
@@ -324,6 +437,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s36.webp",
+      "slide": "36",
+      "alt": "Diagrams of sea level dropping and rising above a red rock face with a channel surface and a paleosol horizon labelled."
+     },
      "title": "Disconformity",
      "bullets": [
       "**Disconformity**: a gap between PARALLEL sedimentary layers because sedimentation stopped or erosion removed some. Often subtle.",
@@ -341,6 +459,7 @@
   {
    "id": "apply",
    "title": "Putting the principles together",
+   "slides": "38-40",
    "bullets": [],
    "boxes": [
     {
@@ -352,9 +471,30 @@
      "text": "A fault is younger than everything it cuts. A dike that cuts the fault with no offset is younger than the fault. Always check which one is displaced."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s38.webp",
+     "slide": "38",
+     "alt": "Block diagram showing folded layers, a granite pluton, a sill, a basalt dike and a fault."
+    },
+    {
+     "src": "img/strat/s39.webp",
+     "slide": "39",
+     "alt": "Three cross-sections: layers pile up, a sill intrudes, then the whole stack is folded."
+    },
+    {
+     "src": "img/strat/s40.webp",
+     "slide": "40",
+     "alt": "Cross-sections showing a granite pluton intruding, a fault cutting it, then a basalt dike feeding a volcano."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s38.webp",
+      "slide": "38",
+      "alt": "Block diagram showing folded layers, a granite pluton, a sill, a basalt dike and a fault."
+     },
      "title": "Reading a block diagram",
      "bullets": [
       "This block shows folded sediments, intrusions, granite, basalt, a fault, xenoliths, inclusions and a baked contact.",
@@ -362,6 +502,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s39.webp",
+      "slide": "39",
+      "alt": "Three cross-sections: layers pile up, a sill intrudes, then the whole stack is folded."
+     },
      "title": "Events 1 to 3",
      "bullets": [
       "(1) Horizontal strata pile up. Number 1 is oldest (superposition).",
@@ -370,6 +515,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s40.webp",
+      "slide": "40",
+      "alt": "Cross-sections showing a granite pluton intruding, a fault cutting it, then a basalt dike feeding a volcano."
+     },
      "title": "Events 4 to 6",
      "bullets": [
       "(4) A **granitic pluton** intrudes the folded sediments. Xenoliths fall into the magma and it bakes the country rock.",
@@ -388,6 +538,7 @@
   {
    "id": "fossil",
    "title": "Fossil succession and index fossils",
+   "slides": "41-45",
    "bullets": [],
    "boxes": [
     {
@@ -403,9 +554,30 @@
      "text": "A fossil that lived a very long time is a poor index fossil, even if common. Short range and wide distribution make a good one. Fossils give RELATIVE ages unless tied to dated rocks."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s42.webp",
+     "slide": "42",
+     "alt": "Collage of fossils: an ammonite, a shell, a dinosaur skeleton and a dinosaur footprint."
+    },
+    {
+     "src": "img/strat/s43.webp",
+     "slide": "43",
+     "alt": "A mounted dinosaur skeleton in a museum, with text about fossil succession."
+    },
+    {
+     "src": "img/strat/s45.webp",
+     "slide": "45",
+     "alt": "Text naming the first appearance datum (FAD) and the last appearance datum (LAD)."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s42.webp",
+      "slide": "42",
+      "alt": "Collage of fossils: an ammonite, a shell, a dinosaur skeleton and a dinosaur footprint."
+     },
      "bullets": [
       "**Principle of Fossil Succession**: fossils appear in a predictable order through time.",
       "Specific fossils are found only in a limited, often narrow, time range, so they are time markers.",
@@ -413,6 +585,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s43.webp",
+      "slide": "43",
+      "alt": "A mounted dinosaur skeleton in a museum, with text about fossil succession."
+     },
      "title": "Species come and go",
      "bullets": [
       "Species **evolve, exist for a time, then disappear forever**. Time periods are recognised by their fossil content.",
@@ -421,6 +598,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s45.webp",
+      "slide": "45",
+      "alt": "Text naming the first appearance datum (FAD) and the last appearance datum (LAD)."
+     },
      "title": "FAD and LAD",
      "bullets": [
       "**FAD** = first appearance datum. **LAD** = last appearance datum.",
@@ -432,6 +614,7 @@
   {
    "id": "corr",
    "title": "Stratigraphic correlation and geologic maps",
+   "slides": "46-53",
    "bullets": [],
    "boxes": [
     {
@@ -447,9 +630,30 @@
      "text": "'Strata' Smith = first map of strata, 1815."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s46.webp",
+     "slide": "46",
+     "alt": "Grand Canyon photo with a labelled sketch of its rock formations, from the Kaibab at the top to the Vishnu Schist at the bottom."
+    },
+    {
+     "src": "img/strat/s47.webp",
+     "slide": "47",
+     "alt": "A Grand Canyon rock column on the left linked by grey bands to a time scale on the right, with gaps marked 'No rock preserved'."
+    },
+    {
+     "src": "img/strat/s48.webp",
+     "slide": "48",
+     "alt": "Labelled stratigraphic column of the Grand Canyon with formations, groups and rock types."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s46.webp",
+      "slide": "46",
+      "alt": "Grand Canyon photo with a labelled sketch of its rock formations, from the Kaibab at the top to the Vishnu Schist at the bottom."
+     },
      "title": "Formations in the Grand Canyon",
      "bullets": [
       "A **formation** is a rock unit recognised by notable changes in rock type and fossils.",
@@ -457,6 +661,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s47.webp",
+      "slide": "47",
+      "alt": "A Grand Canyon rock column on the left linked by grey bands to a time scale on the right, with gaps marked 'No rock preserved'."
+     },
      "title": "Gaps in the record",
      "bullets": [
       "Grey bands link each Grand Canyon formation (left) to its place in time (right).",
@@ -465,6 +674,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s48.webp",
+      "slide": "48",
+      "alt": "Labelled stratigraphic column of the Grand Canyon with formations, groups and rock types."
+     },
      "title": "Stratigraphic columns",
      "bullets": [
       "A **stratigraphic column** shows the sequence of strata.",
@@ -497,6 +711,7 @@
   {
    "id": "scale",
    "title": "The geologic column and time scale",
+   "slides": "54-57, 68",
    "bullets": [],
    "boxes": [
     {
@@ -541,9 +756,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s54.webp",
+     "slide": "54",
+     "alt": "Chart of the geologic column with eons, eras, periods and epochs, and a world map of rock columns being stacked together."
+    },
+    {
+     "src": "img/strat/s57.webp",
+     "slide": "57",
+     "alt": "Spiral drawing of life through geologic time, from single cells and the Cambrian explosion to dinosaurs and mammals."
+    },
+    {
+     "src": "img/strat/s68.webp",
+     "slide": "68",
+     "alt": "Detailed chart of the geologic time scale with eons, eras, periods and epochs and their boundary ages in millions of years."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s54.webp",
+      "slide": "54",
+      "alt": "Chart of the geologic column with eons, eras, periods and epochs, and a world map of rock columns being stacked together."
+     },
      "bullets": [
       "The **geologic column** is a composite built from incomplete sections around the world. Correlation stacks them into one sequence covering almost all of Earth history.",
       "The **geologic time scale** divides the column into blocks, like Earth's calendar. Biggest to smallest: Eon, Era, Period, Epoch.",
@@ -551,6 +787,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s57.webp",
+      "slide": "57",
+      "alt": "Spiral drawing of life through geologic time, from single cells and the Cambrian explosion to dinosaurs and mammals."
+     },
      "title": "Life through time",
      "bullets": [
       "Life first appeared about **3.8 Ga** as single cells.",
@@ -559,6 +800,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s68.webp",
+      "slide": "68",
+      "alt": "Detailed chart of the geologic time scale with eons, eras, periods and epochs and their boundary ages in millions of years."
+     },
      "bullets": [
       "Phanerozoic = Paleozoic, Mesozoic, Cenozoic. Boundary ages: **542 Ma** (start of Phanerozoic and Cambrian), **251.0 Ma** (Paleozoic to Mesozoic), 65.5 Ma (Mesozoic to Cenozoic).",
       "The Jurassic starts at 199.6 Ma and the Cretaceous at 145.5 Ma.",
@@ -570,6 +816,7 @@
   {
    "id": "decay",
    "title": "Radioactive decay and half-life",
+   "slides": "58-63",
    "bullets": [],
    "boxes": [
     {
@@ -626,9 +873,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s58.webp",
+     "slide": "58",
+     "alt": "A hand holding several rock samples with yellow-green stains."
+    },
+    {
+     "src": "img/strat/s60.webp",
+     "slide": "60",
+     "alt": "A person holding a radiation counter and probe against a rock."
+    },
+    {
+     "src": "img/strat/s63.webp",
+     "slide": "63",
+     "alt": "Scientists working in an isotope laboratory with a table of isotopes and half-lives."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s58.webp",
+      "slide": "58",
+      "alt": "A hand holding several rock samples with yellow-green stains."
+     },
      "title": "Radiometric dating",
      "bullets": [
       "Many relative ages can be given real dates by **radiometric dating** (also called **geochronology**).",
@@ -636,6 +904,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s60.webp",
+      "slide": "60",
+      "alt": "A person holding a radiation counter and probe against a rock."
+     },
      "title": "Isotopes",
      "bullets": [
       "**Isotopes** = atoms of the same element with different numbers of neutrons, so different mass numbers.",
@@ -658,6 +931,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s63.webp",
+      "slide": "63",
+      "alt": "Scientists working in an isotope laboratory with a table of isotopes and half-lives."
+     },
      "title": "Age from the ratio",
      "bullets": [
       "The age of a mineral comes from the **ratio of parent to daughter** isotopes plus the known half-life of the parent.",
@@ -669,6 +947,7 @@
   {
    "id": "iso",
    "title": "Isotope systems, closure temperature and other methods",
+   "slides": "63-67",
    "bullets": [],
    "boxes": [
     {
@@ -728,9 +1007,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s64.webp",
+     "slide": "64",
+     "alt": "Close-up of a pink and black speckled granite."
+    },
+    {
+     "src": "img/strat/s65.webp",
+     "slide": "65",
+     "alt": "Diagrams of living, dead and buried trees with matching ring patterns, plus a clam shell, a tree cross-section and layered glacier ice."
+    },
+    {
+     "src": "img/strat/s66.webp",
+     "slide": "66",
+     "alt": "Banded sedimentary rock face with thin repeating layers."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s64.webp",
+      "slide": "64",
+      "alt": "Close-up of a pink and black speckled granite."
+     },
      "title": "Isotopic date and closure temperature",
      "bullets": [
       "An **isotopic date** is the time a mineral began to keep ALL its parent and daughter atoms.",
@@ -739,6 +1039,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s65.webp",
+      "slide": "65",
+      "alt": "Diagrams of living, dead and buried trees with matching ring patterns, plus a clam shell, a tree cross-section and layered glacier ice."
+     },
      "title": "Counting rings and layers",
      "bullets": [
       "Numerical ages are possible without isotopes, but they have a **very limited range**.",
@@ -747,6 +1052,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s66.webp",
+      "slide": "66",
+      "alt": "Banded sedimentary rock face with thin repeating layers."
+     },
      "title": "Varves",
      "bullets": [
       "**Varves** are annual layers in sediment. Counting them gives a numerical age."
@@ -778,6 +1088,7 @@
   {
    "id": "age",
    "title": "Age of the Earth and review questions",
+   "slides": "69-75",
    "bullets": [],
    "boxes": [
     {
@@ -793,9 +1104,25 @@
      "text": "The numbers climb: 4.03 rocks, 4.4 zircon, 4.57 Earth."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/strat/s72.webp",
+     "slide": "72",
+     "alt": "A multiple-choice question asking the age of the Earth."
+    },
+    {
+     "src": "img/strat/s75.webp",
+     "slide": "75",
+     "alt": "A multiple-choice question about what relative ages let us find out."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/strat/s72.webp",
+      "slide": "72",
+      "alt": "A multiple-choice question asking the age of the Earth."
+     },
      "title": "How old is the Earth?",
      "bullets": [
       "The **oldest rocks on Earth's surface** are 4.03 Ga. **Zircons** in ancient sandstones are 4.4 Ga.",
@@ -804,6 +1131,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/strat/s75.webp",
+      "slide": "75",
+      "alt": "A multiple-choice question about what relative ages let us find out."
+     },
      "title": "What relative ages tell us",
      "bullets": [
       "Relative ages let us find out which of two side-by-side rocks is younger and which is older."

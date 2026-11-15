@@ -6,63 +6,64 @@
  "color": "#2f7d6d",
  "intro": "Earth's life story in four chapters (eons): Hadean, Archean, Proterozoic, Phanerozoic. For each one, learn WHAT happened and WHY it mattered.",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Describe the Hadean Eon and the early molten Earth."
-   },
-   {
-    "id": "goal-02",
-    "text": "Explain how arcs and greenstone belts contributed to the growth of the first continents."
-   },
-   {
-    "id": "goal-03",
-    "text": "Summarize evidence for Archean rocks and early life."
-   },
-   {
-    "id": "goal-04",
-    "text": "Explain how cratons formed and how they contributed to the assembly of North America."
-   },
-   {
-    "id": "goal-05",
-    "text": "Describe Proterozoic oxygenation and the growth of large continents."
-   },
-   {
-    "id": "goal-06",
-    "text": "Describe evidence for major glaciations on the early Earth."
-   },
-   {
-    "id": "goal-07",
-    "text": "Relate Paleozoic seas, orogens, terranes, and Pangaea to changing geography."
-   },
-   {
-    "id": "goal-08",
-    "text": "Summarize major Paleozoic biological events, including the end-Permian extinction."
-   },
-   {
-    "id": "goal-09",
-    "text": "Explain how Pangaea broke apart and how western North America developed during the Mesozoic."
-   },
-   {
-    "id": "goal-10",
-    "text": "Describe major Mesozoic events and evidence for the age of dinosaurs."
-   },
-   {
-    "id": "goal-11",
-    "text": "Explain the evidence for the K?Pg impact and its consequences for life."
-   },
-   {
-    "id": "goal-12",
-    "text": "Relate Cenozoic continental movement to the Basin and Range, mountain building, and ice ages."
-   },
-   {
-    "id": "goal-13",
-    "text": "Summarize the rise and diversification of mammals during the Cenozoic."
-   }
+  {
+   "id": "goal-01",
+   "text": "Describe the Hadean Eon and the early molten Earth."
+  },
+  {
+   "id": "goal-02",
+   "text": "Explain how arcs and greenstone belts contributed to the growth of the first continents."
+  },
+  {
+   "id": "goal-03",
+   "text": "Summarize evidence for Archean rocks and early life."
+  },
+  {
+   "id": "goal-04",
+   "text": "Explain how cratons formed and how they contributed to the assembly of North America."
+  },
+  {
+   "id": "goal-05",
+   "text": "Describe Proterozoic oxygenation and the growth of large continents."
+  },
+  {
+   "id": "goal-06",
+   "text": "Describe evidence for major glaciations on the early Earth."
+  },
+  {
+   "id": "goal-07",
+   "text": "Relate Paleozoic seas, orogens, terranes, and Pangaea to changing geography."
+  },
+  {
+   "id": "goal-08",
+   "text": "Summarize major Paleozoic biological events, including the end-Permian extinction."
+  },
+  {
+   "id": "goal-09",
+   "text": "Explain how Pangaea broke apart and how western North America developed during the Mesozoic."
+  },
+  {
+   "id": "goal-10",
+   "text": "Describe major Mesozoic events and evidence for the age of dinosaurs."
+  },
+  {
+   "id": "goal-11",
+   "text": "Explain the evidence for the K?Pg impact and its consequences for life."
+  },
+  {
+   "id": "goal-12",
+   "text": "Relate Cenozoic continental movement to the Basin and Range, mountain building, and ice ages."
+  },
+  {
+   "id": "goal-13",
+   "text": "Summarize the rise and diversification of mammals during the Cenozoic."
+  }
  ],
  "sections": [
   {
    "id": "hadean",
    "title": "Hadean Eon: the molten start",
+   "slides": "3-6",
    "bullets": [],
    "boxes": [
     {
@@ -81,9 +82,30 @@
      "type": "trap"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s3.webp",
+     "slide": "3",
+     "alt": "Artist's drawing of rocky bodies crashing together and melting into a glowing hot young Earth."
+    },
+    {
+     "src": "img/biography/s5.webp",
+     "slide": "5",
+     "alt": "Artist's painting of steaming volcanic vents beside a young sea under a stormy sky."
+    },
+    {
+     "src": "img/biography/s6.webp",
+     "slide": "6",
+     "alt": "A tall column chart of Earth's time scale from the Hadean at the bottom to the Phanerozoic on top."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s3.webp",
+      "slide": "3",
+      "alt": "Artist's drawing of rocky bodies crashing together and melting into a glowing hot young Earth."
+     },
      "title": "Earth forms and melts",
      "bullets": [
       "Hadean = **4.57 to 3.8 Ga**. It starts when Earth forms by **planetesimal accretion** (small rocks crashing together and sticking).",
@@ -92,6 +114,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s5.webp",
+      "slide": "5",
+      "alt": "Artist's painting of steaming volcanic vents beside a young sea under a stormy sky."
+     },
      "title": "A young sea and volcanic vents",
      "bullets": [
       "An artist's picture of steaming volcanic vents beside a young sea.",
@@ -100,6 +127,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s6.webp",
+      "slide": "6",
+      "alt": "A tall column chart of Earth's time scale from the Hadean at the bottom to the Phanerozoic on top."
+     },
      "title": "The time scale column",
      "bullets": [
       "Hadean is at the bottom (birth of Earth 4,570 Ma), then Archean, Proterozoic and Phanerozoic on top. The Phanerozoic splits into Paleozoic (to 251 Ma), Mesozoic (to 65 Ma) and Cenozoic (to 0).",
@@ -119,6 +151,7 @@
   {
    "id": "arcs",
    "title": "Building the first continents: arcs and greenstone belts",
+   "slides": "7-9",
    "bullets": [],
    "boxes": [
     {
@@ -133,9 +166,25 @@
      "type": "trap"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s7.webp",
+     "slide": "7",
+     "alt": "Cross-section of an early ocean showing a rift, two volcanic arcs and an oceanic plateau labelled A to E."
+    },
+    {
+     "src": "img/biography/s9.webp",
+     "slide": "9",
+     "alt": "Cross-section of arcs, a plateau and a rift squeezed into one block with a greenstone belt."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s7.webp",
+      "slide": "7",
+      "alt": "Cross-section of an early ocean showing a rift, two volcanic arcs and an oceanic plateau labelled A to E."
+     },
      "title": "An early ocean in cross-section",
      "bullets": [
       "A cross-section (not to scale) of an early ocean. Labelled: a **rift filled with volcanic rocks** (B), **volcanic arcs** (C and E) and an oceanic plateau (D) above a rising magma plume.",
@@ -144,6 +193,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s9.webp",
+      "slide": "9",
+      "alt": "Cross-section of arcs, a plateau and a rift squeezed into one block with a greenstone belt."
+     },
      "title": "Pieces squeezed into one block",
      "bullets": [
       "The arcs, plateau and rift pieces (A to E) are squeezed together into one block. Asthenosphere sits on both sides.",
@@ -156,6 +210,7 @@
   {
    "id": "archean",
    "title": "Archean Eon: first rocks, first life",
+   "slides": "10-14",
    "bullets": [],
    "boxes": [
     {
@@ -166,9 +221,30 @@
      "type": "trap"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s12.webp",
+     "slide": "12",
+     "alt": "A person points at the curved layers of a stromatolite rock, with two tiny microfossils in the corner."
+    },
+    {
+     "src": "img/biography/s13.webp",
+     "slide": "13",
+     "alt": "Close-up of the curved layers in a stromatolite with a hand resting on the rock."
+    },
+    {
+     "src": "img/biography/s14.webp",
+     "slide": "14",
+     "alt": "Dark stromatolite mounds sticking out of shallow, clear water."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s12.webp",
+      "slide": "12",
+      "alt": "A person points at the curved layers of a stromatolite rock, with two tiny microfossils in the corner."
+     },
      "title": "Stromatolites and microfossils",
      "bullets": [
       "**Stromatolites** are layered mounds built by microbial mats (photosynthesising bacteria).",
@@ -176,6 +252,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s13.webp",
+      "slide": "13",
+      "alt": "Close-up of the curved layers in a stromatolite with a hand resting on the rock."
+     },
      "title": "Layers up close",
      "bullets": [
       "A close-up shows the curved layers that give a stromatolite its look.",
@@ -183,6 +264,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s14.webp",
+      "slide": "14",
+      "alt": "Dark stromatolite mounds sticking out of shallow, clear water."
+     },
      "title": "Mounds in shallow water",
      "bullets": [
       "Dark stromatolite mounds sit in shallow water, each one built by microbial mats."
@@ -200,6 +286,7 @@
   {
    "id": "cratons",
    "title": "Cratons and the assembly of North America",
+   "slides": "15-18",
    "bullets": [],
    "boxes": [
     {
@@ -215,9 +302,30 @@
      "text": "Shield and platform are different parts of the same craton. Shield = exposed crystalline rock; platform = sedimentary layers on top."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s16.webp",
+     "slide": "16",
+     "alt": "World map coloured by geologic province, with old shield cores inside each continent."
+    },
+    {
+     "src": "img/biography/s17.webp",
+     "slide": "17",
+     "alt": "Map of North America showing the shield, the platforms and the mountain belts around the craton."
+    },
+    {
+     "src": "img/biography/s18.webp",
+     "slide": "18",
+     "alt": "Map of North America showing belts of crust that get younger moving outward from the Archean core."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s16.webp",
+      "slide": "16",
+      "alt": "World map coloured by geologic province, with old shield cores inside each continent."
+     },
      "title": "World map of geologic provinces",
      "bullets": [
       "Legend: stretched crust, large igneous provinces, Phanerozoic orogens, basins and platforms, **Precambrian shields**, and Archean crustal remnants.",
@@ -225,6 +333,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s17.webp",
+      "slide": "17",
+      "alt": "Map of North America showing the shield, the platforms and the mountain belts around the craton."
+     },
      "title": "North America's craton",
      "bullets": [
       "A **craton** is the stable interior of a continent, mostly formed in the Archean. It has a **shield** (crystalline basement rock at the surface) and a platform (sedimentary rock covering the shield).",
@@ -233,6 +346,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s18.webp",
+      "slide": "18",
+      "alt": "Map of North America showing belts of crust that get younger moving outward from the Archean core."
+     },
      "title": "How North America was assembled",
      "bullets": [
       "Grey **Archean provinces (>2.5 Ga)** (Superior, Slave, Rae and Hearn, Wyoming) form the core.",
@@ -251,6 +369,7 @@
   {
    "id": "proterozoic",
    "title": "Proterozoic Eon: oxygen and big continents",
+   "slides": "19-23",
    "bullets": [],
    "boxes": [
     {
@@ -266,9 +385,30 @@
      "text": "Rodinia vs Pannotia: both are Proterozoic. Pannotia was short-lived and formed ~600 Ma; the supercontinent that comes later in the Paleozoic is Pangaea."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s21.webp",
+     "slide": "21",
+     "alt": "Red, blue and grey banded iron formation rock with a rock hammer for scale."
+    },
+    {
+     "src": "img/biography/s22.webp",
+     "slide": "22",
+     "alt": "A ribbed fossil imprint of a soft-bodied Ediacara animal next to a ruler."
+    },
+    {
+     "src": "img/biography/s23.webp",
+     "slide": "23",
+     "alt": "Painting of an Ediacara sea floor with leaf-shaped animals, plus a fossil imprint in the corner."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s21.webp",
+      "slide": "21",
+      "alt": "Red, blue and grey banded iron formation rock with a rock hammer for scale."
+     },
      "title": "Banded iron formations",
      "bullets": [
       "**Banded iron formations (BIFs)** are the evidence of oxygen build-up in the oceans.",
@@ -276,12 +416,22 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s22.webp",
+      "slide": "22",
+      "alt": "A ribbed fossil imprint of a soft-bodied Ediacara animal next to a ruler."
+     },
      "title": "An Ediacara fossil",
      "bullets": [
       "The ribbed imprint is a fossil of one of the Ediacara animals. The ruler shows its size."
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s23.webp",
+      "slide": "23",
+      "alt": "Painting of an Ediacara sea floor with leaf-shaped animals, plus a fossil imprint in the corner."
+     },
      "title": "A leap in complexity",
      "bullets": [
       "In the last 500 Ma of the Proterozoic, simple organisms gave way to complex ones.",
@@ -300,6 +450,7 @@
   {
    "id": "glaciation",
    "title": "Ice on a young Earth",
+   "slides": "24-25",
    "bullets": [],
    "boxes": [
     {
@@ -315,9 +466,25 @@
      "text": "The 2.1 Ga and 700 Ma dates come from the textbook, and Snowball Earth is described there as controversial."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s24.webp",
+     "slide": "24",
+     "alt": "Two globes showing ice spreading over more of the planet as time passes."
+    },
+    {
+     "src": "img/biography/s25.webp",
+     "slide": "25",
+     "alt": "Two geologists beside rock layers with a large pale clast surrounded by mudstone."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s24.webp",
+      "slide": "24",
+      "alt": "Two globes showing ice spreading over more of the planet as time passes."
+     },
      "title": "Ice spreads over the planet",
      "bullets": [
       "Two globes with a TIME arrow. On the later globe, ice covers more of the planet. Labels: sea ice, ice-covered land, mountains and the equator.",
@@ -326,6 +493,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s25.webp",
+      "slide": "25",
+      "alt": "Two geologists beside rock layers with a large pale clast surrounded by mudstone."
+     },
      "title": "Large clasts in mudstone",
      "bullets": [
       "These strata contain **large clasts surrounded by mudstone**.",
@@ -343,6 +515,7 @@
   {
    "id": "paleo-geo",
    "title": "Paleozoic geography: seas, orogens, terranes and Pangea",
+   "slides": "26-28, 30-31, 35-36",
    "bullets": [],
    "boxes": [
     {
@@ -358,9 +531,30 @@
      "text": "Pannotia (Proterozoic, ~600 Ma) is not Pangea (late Paleozoic). Panthalassa is an ocean, Pangea is land. An orogen is the mountain belt; an orogeny is the event. In the late Paleozoic the east coast of North America had the high mountains and the west coast was smaller isolated volcanic highlands (Textbook 8.6.1)."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s27.webp",
+     "slide": "27",
+     "alt": "Map of Laurentia with dry land, a shallow sea, a carbonate shelf and a transcontinental arch."
+    },
+    {
+     "src": "img/biography/s28.webp",
+     "slide": "28",
+     "alt": "Map of North America in the Paleozoic with shallow seas covering much of the continent."
+    },
+    {
+     "src": "img/biography/s31.webp",
+     "slide": "31",
+     "alt": "Map of North America in the middle Paleozoic showing orogens, the Catskill Delta and terranes."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s27.webp",
+      "slide": "27",
+      "alt": "Map of Laurentia with dry land, a shallow sea, a carbonate shelf and a transcontinental arch."
+     },
      "title": "Laurentia with a shallow sea",
      "bullets": [
       "At ~510 Ma (Cambrian-Ordovician) the continents are scattered. **Gondwana** (South America, Africa, India, Antarctica, Australia) is one big mass; Laurentia, Baltica and Siberia are separate.",
@@ -368,6 +562,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s28.webp",
+      "slide": "28",
+      "alt": "Map of North America in the Paleozoic with shallow seas covering much of the continent."
+     },
      "title": "Seas rise and fall",
      "bullets": [
       "Sea level rose and fell four times in the Paleozoic.",
@@ -375,6 +574,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s31.webp",
+      "slide": "31",
+      "alt": "Map of North America in the middle Paleozoic showing orogens, the Catskill Delta and terranes."
+     },
      "bullets": [
       "In the Silurian and Devonian, the oceans Iapetus, Rheic, Paleotethys and Panthalassa lay between Laurentia, Baltica, Avalonia, Siberia and Kazakhstania. The **Caledonides** are the mountains where Laurentia meets Baltica; the **Taconic orogen** was a relict of an Ordovician collision.",
       "**Antler orogeny** (Devonian to Pennsylvanian, west): a volcanic island arc accreted onto western North America, subducting away from it. In the east are the Caledonian orogen, the Acadian orogeny and the Catskill Delta.",
@@ -393,6 +597,7 @@
   {
    "id": "paleozoic",
    "title": "Paleozoic Era: life explodes, then nearly dies",
+   "slides": "29, 32-34, 37-39",
    "bullets": [],
    "boxes": [
     {
@@ -407,9 +612,30 @@
      "text": "Do not mix the units. Textbook says up to 96% of marine species and 70% of land vertebrates."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s32.webp",
+     "slide": "32",
+     "alt": "Painting of the first forests with tall plants beside a river."
+    },
+    {
+     "src": "img/biography/s33.webp",
+     "slide": "33",
+     "alt": "Photos of Tiktaalik and an early amphibian in front of a painted Devonian landscape."
+    },
+    {
+     "src": "img/biography/s39.webp",
+     "slide": "39",
+     "alt": "Graph of the number of marine animal families through time with five arrows marking mass extinctions."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s32.webp",
+      "slide": "32",
+      "alt": "Painting of the first forests with tall plants beside a river."
+     },
      "title": "Plants, then animals, move onto land",
      "bullets": [
       "In the Silurian and Devonian, **vascular plants** (internal veins, woody tissue, seeds) spread and formed the first forests.",
@@ -417,6 +643,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s33.webp",
+      "slide": "33",
+      "alt": "Photos of Tiktaalik and an early amphibian in front of a painted Devonian landscape."
+     },
      "title": "Tiktaalik and the first amphibians",
      "bullets": [
       "**Tiktaalik** (found 1996) was a lobe-finned fish with push-up fins and a swivel-jointed neck. It is a fossil between fish and amphibians, dated about 385 Ma.",
@@ -424,6 +655,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s39.webp",
+      "slide": "39",
+      "alt": "Graph of the number of marine animal families through time with five arrows marking mass extinctions."
+     },
      "title": "Five mass extinctions",
      "bullets": [
       "This graph counts **families** of marine animals with hard skeletons through time.",
@@ -442,6 +678,7 @@
   {
    "id": "meso-geo",
    "title": "Mesozoic geography: Pangea splits and the west coast builds up",
+   "slides": "40, 42-46",
    "bullets": [],
    "boxes": [
     {
@@ -456,9 +693,30 @@
      "type": "trap"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s42.webp",
+     "slide": "42",
+     "alt": "Map of North America in the Late Cretaceous with a seaway, a volcanic arc and a fold-thrust belt, plus a cross-section."
+    },
+    {
+     "src": "img/biography/s43.webp",
+     "slide": "43",
+     "alt": "Black and white bands showing reversals of Earth's magnetic field through time."
+    },
+    {
+     "src": "img/biography/s46.webp",
+     "slide": "46",
+     "alt": "World map in the Late Mesozoic with shallow seas flooding parts of the continents."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s42.webp",
+      "slide": "42",
+      "alt": "Map of North America in the Late Cretaceous with a seaway, a volcanic arc and a fold-thrust belt, plus a cross-section."
+     },
      "title": "The Late Cretaceous west coast",
      "bullets": [
       "Legend: **convergent boundary**, **thrust fault**, volcanic arc. Labels: Trench, Sierran arc, Sevier fold-thrust belt, Western Interior Seaway, Coastal plain. The inset shows an accretionary prism, then the Sierran arc, then the Sevier belt. In the early Cretaceous, several island arcs collided with western North America.",
@@ -467,6 +725,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s43.webp",
+      "slide": "43",
+      "alt": "Black and white bands showing reversals of Earth's magnetic field through time."
+     },
      "title": "Magnetic polarity time scale",
      "bullets": [
       "Black and white bands show the two magnetic polarities, with chrons Brunhes, Matuyama, Gauss and Gilbert and named subchrons.",
@@ -475,6 +738,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s46.webp",
+      "slide": "46",
+      "alt": "World map in the Late Mesozoic with shallow seas flooding parts of the continents."
+     },
      "title": "A Cretaceous world map",
      "bullets": [
       "Light blue shows shallow seas flooding parts of the continents.",
@@ -493,6 +761,7 @@
   {
    "id": "mesozoic",
    "title": "Mesozoic Era: age of dinosaurs",
+   "slides": "41, 47-48",
    "bullets": [],
    "boxes": [
     {
@@ -500,9 +769,30 @@
      "text": "Why did flowering plants spread fast? They make seeds quickly and use insects to carry pollen, so they reproduce faster than plants relying on wind."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s41.webp",
+     "slide": "41",
+     "alt": "Painting of long-necked and plated dinosaurs with a flying pterosaur beside a pond."
+    },
+    {
+     "src": "img/biography/s47.webp",
+     "slide": "47",
+     "alt": "A fish fossil, a hardwood forest and small flowers."
+    },
+    {
+     "src": "img/biography/s48.webp",
+     "slide": "48",
+     "alt": "A dinosaur skeleton, dinosaur tracks and a close-up of a dinosaur head."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s41.webp",
+      "slide": "41",
+      "alt": "Painting of long-necked and plated dinosaurs with a flying pterosaur beside a pond."
+     },
      "title": "Triassic and Jurassic dinosaurs",
      "bullets": [
       "A Triassic-Jurassic scene with long-necked and plated dinosaurs and a flying pterosaur.",
@@ -511,6 +801,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s47.webp",
+      "slide": "47",
+      "alt": "A fish fossil, a hardwood forest and small flowers."
+     },
      "title": "Cretaceous seas and plants",
      "bullets": [
       "Modern fish, aquatic reptiles and giant turtles filled the seas.",
@@ -518,6 +813,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s48.webp",
+      "slide": "48",
+      "alt": "A dinosaur skeleton, dinosaur tracks and a close-up of a dinosaur head."
+     },
      "title": "Dinosaurs, pterosaurs and early birds",
      "bullets": [
       "Dinosaurs lived in nearly every environment. Trackways show herds of grazing dinosaurs on the plains, and large carnivores fed on them.",
@@ -535,6 +835,7 @@
   {
    "id": "kpg",
    "title": "The K-Pg impact",
+   "slides": "49-51",
    "bullets": [],
    "boxes": [
     {
@@ -550,9 +851,30 @@
      "text": "K-T and K-Pg are the same boundary (Tertiary was renamed Paleogene). Birds descend from dinosaurs, so 'all the dinosaurs' means the non-bird dinosaurs."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s49.webp",
+     "slide": "49",
+     "alt": "Artist's painting of the impact with a globe marking the strike near the Gulf of Mexico."
+    },
+    {
+     "src": "img/biography/s50.webp",
+     "slide": "50",
+     "alt": "Satellite view of the Gulf of Mexico with the Yucatan Peninsula and a circle marking the crater."
+    },
+    {
+     "src": "img/biography/s51.webp",
+     "slide": "51",
+     "alt": "Colour map of a ring-shaped structure at about 20 to 22 degrees north."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s49.webp",
+      "slide": "49",
+      "alt": "Artist's painting of the impact with a globe marking the strike near the Gulf of Mexico."
+     },
      "bullets": [
       "An artist's picture of the impact. The globe 'Earth at 66 Ma' marks the strike location near the Gulf of Mexico.",
       "The extinction was likely caused by a large **bolide** that hit 66 Ma.",
@@ -560,12 +882,22 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s50.webp",
+      "slide": "50",
+      "alt": "Satellite view of the Gulf of Mexico with the Yucatan Peninsula and a circle marking the crater."
+     },
      "title": "Where it hit",
      "bullets": [
       "A satellite view of the Gulf of Mexico. The circle on the Yucatan Peninsula shows where the crater lies."
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s51.webp",
+      "slide": "51",
+      "alt": "Colour map of a ring-shaped structure at about 20 to 22 degrees north."
+     },
      "title": "The buried crater",
      "bullets": [
       "A colour map of a ring-shaped structure at about 20 to 22 N, 89 to 90 W. The picture has no caption; the ring is presumably the buried **Chicxulub crater**.",
@@ -585,6 +917,7 @@
   {
    "id": "ceno-geo",
    "title": "Cenozoic geography: moving continents, Basin and Range, ice ages",
+   "slides": "52-53, 56-57",
    "bullets": [],
    "boxes": [
     {
@@ -600,9 +933,30 @@
      "text": "Laramide = squeezing and uplift (compression, thick-skinned). Basin and Range = stretching (extension). Both are in the western US but are opposite stresses."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s52.webp",
+     "slide": "52",
+     "alt": "World map of today's plate movement arrows and mountain belts, with an inset of the world at 50 Ma."
+    },
+    {
+     "src": "img/biography/s53.webp",
+     "slide": "53",
+     "alt": "Map of the western US showing the Basin and Range, Sierra Nevada and Colorado Plateau, with a cross-section."
+    },
+    {
+     "src": "img/biography/s57.webp",
+     "slide": "57",
+     "alt": "Map of North America with red lines showing the ice-age coastline far out from today's."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s52.webp",
+      "slide": "52",
+      "alt": "World map of today's plate movement arrows and mountain belts, with an inset of the world at 50 Ma."
+     },
      "title": "Plates moving today",
      "bullets": [
       "The world today, with **arrows showing plate movement** and **present-day mountain belts** (Alpine-Himalayan, Cordilleran, Andean). The inset says the southern continents were moving north at 50 Ma.",
@@ -610,6 +964,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s53.webp",
+      "slide": "53",
+      "alt": "Map of the western US showing the Basin and Range, Sierra Nevada and Colorado Plateau, with a cross-section."
+     },
      "title": "The western US",
      "bullets": [
       "Labelled: **Sierra Nevada batholith**, **Basin and Range**, Colorado Plateau, Rio Grande Rift, Snake River Plain, Yellowstone hot spot, and arrows for the opening direction. The cross-section shows tilted fault blocks in the Basin and Range.",
@@ -617,6 +976,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s57.webp",
+      "slide": "57",
+      "alt": "Map of North America with red lines showing the ice-age coastline far out from today's."
+     },
      "title": "Ice-age coastline",
      "bullets": [
       "Red lines show the **ice-age coastline**, far out from today's. The inset shows the Bering Strait land bridge between Siberia and Alaska.",
@@ -634,6 +998,7 @@
   {
    "id": "cenozoic",
    "title": "Cenozoic Era: age of mammals",
+   "slides": "54-55, 58-59",
    "bullets": [],
    "boxes": [
     {
@@ -641,9 +1006,30 @@
      "text": "Why did land bridges appear? Ice sheets locked up ocean water, so sea level fell and shallow shelves became dry land."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s54.webp",
+     "slide": "54",
+     "alt": "A grassy wetland with a hummingbird and a large stork-like bird."
+    },
+    {
+     "src": "img/biography/s55.webp",
+     "slide": "55",
+     "alt": "Skeletons of giant ice-age mammals including a mastodon and a ground sloth."
+    },
+    {
+     "src": "img/biography/s58.webp",
+     "slide": "58",
+     "alt": "Two models of early human-like primates."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s54.webp",
+      "slide": "54",
+      "alt": "A grassy wetland with a hummingbird and a large stork-like bird."
+     },
      "title": "Life recovers after K-Pg",
      "bullets": [
       "After the **K-Pg boundary**, plant life recovered and forests of angiosperms and gymnosperms reappeared. The first grasses appeared in the middle Cenozoic.",
@@ -651,6 +1037,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s55.webp",
+      "slide": "55",
+      "alt": "Skeletons of giant ice-age mammals including a mastodon and a ground sloth."
+     },
      "title": "The Age of Mammals",
      "bullets": [
       "Mammals diversified to fill the empty niches after the extinction. By the middle Cenozoic they had spread everywhere.",
@@ -658,6 +1049,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s58.webp",
+      "slide": "58",
+      "alt": "Two models of early human-like primates."
+     },
      "title": "Primates to humans",
      "bullets": [
       "Ape-like primates diversified in the Miocene (~20 Ma). The first human-like primate appeared ~4 Ma. The genus *Homo* appeared 2.4 Ma.",
@@ -675,6 +1071,7 @@
   {
    "id": "clicker",
    "title": "Three summary check questions",
+   "slides": "60-62",
    "bullets": [],
    "boxes": [
     {
@@ -686,9 +1083,30 @@
      "text": "Hot spots make oceanic plateaus and greenstone, not most of the continental crust."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/biography/s60.webp",
+     "slide": "60",
+     "alt": "A question about the iron in car steel with five answer choices."
+    },
+    {
+     "src": "img/biography/s61.webp",
+     "slide": "61",
+     "alt": "A question about when continental crust was extracted from the mantle, with five answer choices."
+    },
+    {
+     "src": "img/biography/s62.webp",
+     "slide": "62",
+     "alt": "A question about how continental crust was extracted from the mantle, with five answer choices."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/biography/s60.webp",
+      "slide": "60",
+      "alt": "A question about the iron in car steel with five answer choices."
+     },
      "title": "Where did car steel iron come from?",
      "bullets": [
       "Question: 'The iron in the steel in my car was probably deposited during an ______?'",
@@ -696,6 +1114,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s61.webp",
+      "slide": "61",
+      "alt": "A question about when continental crust was extracted from the mantle, with five answer choices."
+     },
      "title": "When did continents form?",
      "bullets": [
       "Question: 'The continental crust was mostly extracted from the mantle during the ______?'",
@@ -703,6 +1126,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/biography/s62.webp",
+      "slide": "62",
+      "alt": "A question about how continental crust was extracted from the mantle, with five answer choices."
+     },
      "title": "How was continental crust made?",
      "bullets": [
       "Best answer **C, subduction zones**, which build volcanic arcs that grow into continents."

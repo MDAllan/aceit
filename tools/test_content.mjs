@@ -1,11 +1,11 @@
 // Unit tests for what instructors add to their classes: the rules for each kind of item, pasting many questions or cards at once,
 // and how the items are merged into the study screens. Run: node tools/test_content.mjs
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { problem, tidy, summary, text, MARK, KINDS } from "../js/itemrules.js";
 import { parseQuestions, parseCards } from "../js/bulk.js";
 import { buildExtras, mark, isMarked, lectureId, itemId } from "../js/classcontent.js";
 import { inlineCourseFigures, needsPublishedFigures, stripSvgFigures } from "../js/lecture-source.js";
-import { stripInstructorDeck, geologyVisualIds } from "../js/geology-visuals.js";
+import { geologyVisualContent } from "../js/geology-visuals.js";
 let fails = 0, n = 0;
 const ok = (c, msg) => { n++; if (!c) { fails++; console.error("FAIL:", msg); } };
 const eq = (a, b, msg) => ok(JSON.stringify(a) === JSON.stringify(b), msg + "  got " + JSON.stringify(a));
@@ -51,29 +51,6 @@ ok(!needsPublishedFigures("earth-stratigraphy", generatedFigure, slideFigures), 
   ok(!clean.quiz[0].img && saved.sections[0].steps.length === 2, "SVG exam/quiz images are removed without mutating saved data");
 }
 {
-  const saved = {
-    slideFile: "instructor-deck.pdf",
-    sourceNotes: ["Slides 1-3"],
-    sections: [{
-      id: "topic",
-      slides: "1-3",
-      sourceNotes: ["Instructor deck"],
-      images: [{ src: "img/earthquakes/s1.webp", slide: "1", alt: "Slide 1" }],
-      steps: [
-        { title: "Deck figure", img: { src: "img/geology/figure.webp" }, bullets: [] },
-        { title: "Concept", bullets: ["Keep this idea. Slide 2 adds an instructor note. Keep this too."] },
-      ],
-    }],
-    quiz: [{ q: "Question", img: { src: "img/earthquakes/q1.webp" } }],
-    customNote: { img: { path: "class-upload/figure.webp", alt: "Instructor-uploaded class figure" } },
-  };
-  const clean = stripInstructorDeck("earthquakes", saved);
-  ok(!clean.slideFile && !clean.sourceNotes && !clean.sections[0].slides && !clean.sections[0].sourceNotes, "ERTH cleanup removes deck metadata and citations");
-  ok(!clean.sections[0].images.length && !clean.sections[0].steps.some((step) => step.title === "Deck figure") && !clean.quiz[0].img, "ERTH cleanup removes instructor-deck image references");
-  eq(clean.sections[0].steps[0].bullets, ["Keep this idea. Keep this too."], "ERTH cleanup removes only sentences that cite slides");
-  ok(clean.customNote.img.path === "class-upload/figure.webp" && saved.slideFile === "instructor-deck.pdf", "ERTH cleanup keeps uploaded class images and does not mutate its input");
-}
-{
   const sourceSteps = [
     { title: "Long-bone anatomy", bullets: ["Long bones contain marrow."] },
     { title: "Bone-cell roles", bullets: ["Osteocytes maintain the matrix."] },
@@ -101,28 +78,37 @@ for (const id of ["skeletal", "muscular"]) {
 {
   const subjects = JSON.parse(readFileSync(new URL("../content/subjects.json", import.meta.url), "utf8"));
   const geology = subjects.find((subject) => subject.id === "erth209");
-  const visuals = new Set(geologyVisualIds);
-  let assigned = 0;
-  for (const id of geology.lectures) {
-    const lesson = JSON.parse(readFileSync(new URL(`../content/${id}.json`, import.meta.url), "utf8"));
-    let deckArtifacts = 0;
-    const visit = (value, key = "") => {
-      if (typeof value === "string") {
-        if (key !== "id" && /\bslides?\b/i.test(value)) deckArtifacts++;
-      } else if (Array.isArray(value)) value.forEach((item) => visit(item));
-      else if (value && typeof value === "object") {
-        for (const [childKey, child] of Object.entries(value)) {
-          if (["slide", "slides", "slideFile", "sourceNotes"].includes(childKey)) deckArtifacts++;
-          if (childKey === "src" && typeof child === "string" && (child.startsWith(`img/${id}/`) || child.startsWith("img/geology/"))) deckArtifacts++;
-          visit(child, childKey);
-        }
+  const read = (id) => JSON.parse(readFileSync(new URL(`../content/${id}.json`, import.meta.url), "utf8"));
+  const sections = geology.lectures.map((id) => [id, read(id)]);
+  const PRACTICE_SECTIONS = new Set(["slide-quiz", "prof-q"]); // "check yourself" practice questions: answers are shown, so no slide picture
+  const NO_SLIDE_PICTURE = new Set(["plates/wegener", "plates/evidence", "plates/forces"]); // the teacher's plate tectonics handout is text only on those pages; they keep the animated overview
+  let illustrated = 0, figures = 0;
+  for (const [id, lesson] of sections) {
+    for (const section of lesson.sections) {
+      // 1. the animated overview: every notes topic has its own three-part illustration
+      const visual = geologyVisualContent(id, section);
+      ok(!!visual && visual.title === section.title && !!visual.caption && visual.nodes.length === 3, `${id}/${section.id}: has a relevant three-part illustration`);
+      illustrated++;
+      if (id === "biography") ok(visual.profile !== "history" || section.id === "clicker", `Earth history topic ${section.id} has a topic-specific timeline illustration`);
+      // 2. the teacher's slide figures: each section shows at least one, and each picture file exists and is described
+      const stepFigures = (section.steps || []).flatMap((step) => [step.img, ...(step.figures || []).map((figure) => figure.img)]).filter(Boolean);
+      const pictures = section.steps?.length ? stepFigures : section.images || [];
+      if (!PRACTICE_SECTIONS.has(section.id) && !NO_SLIDE_PICTURE.has(`${id}/${section.id}`)) ok(pictures.length > 0, `${id}/${section.id}: shows at least one slide figure`);
+      const seen = new Set();
+      for (const picture of pictures) {
+        figures++;
+        ok(existsSync(new URL(`../${picture.src}`, import.meta.url)), `${id}/${section.id}: picture file ${picture.src} exists`);
+        ok(typeof picture.alt === "string" && picture.alt.length > 15, `${id}/${section.id}: ${picture.src} has a description`);
+        ok(!seen.has(picture.src), `${id}/${section.id}: ${picture.src} is not repeated within the topic`);
+        seen.add(picture.src);
       }
-    };
-    visit(lesson);
-    assigned += lesson.sections.filter((section) => section.visual && visuals.has(section.visual)).length;
-    ok(deckArtifacts === 0, `${id}: published content has no instructor-deck screenshots or references`);
+      if (section.steps?.length) for (const picture of section.images || []) ok(stepFigures.some((figure) => figure.src === picture.src), `${id}/${section.id}: gallery picture ${picture.src} belongs to a step`);
+    }
   }
-  ok(assigned === geology.lectures.length, "each ERTH 209 lesson has an original diagram");
+  ok(illustrated === sections.reduce((sum, [, lesson]) => sum + lesson.sections.length, 0), "every ERTH 209 notes topic has its own illustration");
+  ok(figures >= 300, `ERTH 209 notes show the teacher's slide figures (${figures} found)`);
+  ok(new Set(sections.map(([id, lesson]) => geologyVisualContent(id, lesson.sections[0]).profile)).size === sections.length, "each ERTH 209 unit starts with a unit-specific illustration");
+  ok(new Set(read("biography").sections.map((section) => geologyVisualContent("biography", section).profile)).size === read("biography").sections.length, "each Earth history topic illustrates its own period or event");
 }
 
 // tidy() prepares what an editor collected

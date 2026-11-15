@@ -6,55 +6,56 @@
  "color": "#5b8a5b",
  "intro": "Metamorphism means a rock is cooked, squeezed or soaked while it stays SOLID, and turns into a new rock. Learn: the starting rock (protolith), the 3 agents (heat, pressure, fluids), the 5 processes, foliated vs nonfoliated rocks, the grade ladder (slate, phyllite, schist, gneiss), and where each kind of metamorphism happens.",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Define metamorphism and identify a protolith as the rock before metamorphism."
-   },
-   {
-    "id": "goal-02",
-    "text": "Explain how metamorphism changes rock texture and produces foliation."
-   },
-   {
-    "id": "goal-03",
-    "text": "Describe the five processes that change rocks during metamorphism."
-   },
-   {
-    "id": "goal-04",
-    "text": "Explain how heat, pressure, differential stress, and fluids alter rocks."
-   },
-   {
-    "id": "goal-05",
-    "text": "Identify foliated rocks and place them along the metamorphic-grade sequence."
-   },
-   {
-    "id": "goal-06",
-    "text": "Recognize common nonfoliated metamorphic rocks and their protoliths."
-   },
-   {
-    "id": "goal-07",
-    "text": "Relate metamorphic grade, index minerals, and facies to pressure and temperature conditions."
-   },
-   {
-    "id": "goal-08",
-    "text": "Compare contact metamorphism with other types of metamorphism."
-   },
-   {
-    "id": "goal-09",
-    "text": "Distinguish dynamic from regional metamorphism by setting and process."
-   },
-   {
-    "id": "goal-10",
-    "text": "Compare hydrothermal, subduction, burial, and shock metamorphism."
-   },
-   {
-    "id": "goal-11",
-    "text": "Explain how metamorphic rocks return to the surface and relate shields to exposed ancient crust."
-   }
+  {
+   "id": "goal-01",
+   "text": "Define metamorphism and identify a protolith as the rock before metamorphism."
+  },
+  {
+   "id": "goal-02",
+   "text": "Explain how metamorphism changes rock texture and produces foliation."
+  },
+  {
+   "id": "goal-03",
+   "text": "Describe the five processes that change rocks during metamorphism."
+  },
+  {
+   "id": "goal-04",
+   "text": "Explain how heat, pressure, differential stress, and fluids alter rocks."
+  },
+  {
+   "id": "goal-05",
+   "text": "Identify foliated rocks and place them along the metamorphic-grade sequence."
+  },
+  {
+   "id": "goal-06",
+   "text": "Recognize common nonfoliated metamorphic rocks and their protoliths."
+  },
+  {
+   "id": "goal-07",
+   "text": "Relate metamorphic grade, index minerals, and facies to pressure and temperature conditions."
+  },
+  {
+   "id": "goal-08",
+   "text": "Compare contact metamorphism with other types of metamorphism."
+  },
+  {
+   "id": "goal-09",
+   "text": "Distinguish dynamic from regional metamorphism by setting and process."
+  },
+  {
+   "id": "goal-10",
+   "text": "Compare hydrothermal, subduction, burial, and shock metamorphism."
+  },
+  {
+   "id": "goal-11",
+   "text": "Explain how metamorphic rocks return to the surface and relate shields to exposed ancient crust."
+  }
  ],
  "sections": [
   {
    "id": "what-is-meta",
    "title": "What is metamorphism? Protoliths",
+   "slides": "3-9",
    "bullets": [],
    "boxes": [
     {
@@ -70,9 +71,30 @@
      "text": "Protolith means the rock BEFORE it is metamorphosed (midterm Q11). It is NOT the rock before it is weathered. Any rock type can be a protolith, not only sedimentary rock."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s4.webp",
+     "slide": "4",
+     "alt": "A person looks closely at a swirly, banded metamorphic rock outcrop."
+    },
+    {
+     "src": "img/metamorphism/s7.webp",
+     "slide": "7",
+     "alt": "Steep canyon walls of banded pink and grey rock, with notes defining metamorphic rocks and protoliths."
+    },
+    {
+     "src": "img/metamorphism/s8.webp",
+     "slide": "8",
+     "alt": "Folded, broken grey rock with a pale band, with notes about what changes and how fast."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s4.webp",
+      "slide": "4",
+      "alt": "A person looks closely at a swirly, banded metamorphic rock outcrop."
+     },
      "title": "Solid-state alteration",
      "bullets": [
       "**Metamorphic rocks** result from **solid-state alteration** of preexisting rocks: an older rock is changed while it stays solid.",
@@ -80,6 +102,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s7.webp",
+      "slide": "7",
+      "alt": "Steep canyon walls of banded pink and grey rock, with notes defining metamorphic rocks and protoliths."
+     },
      "title": "Meta, morphe and protolith",
      "bullets": [
       "**Meta** = beyond/change and **morphe** = form, so metamorphism means a change of form.",
@@ -87,6 +114,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s8.webp",
+      "slide": "8",
+      "alt": "Folded, broken grey rock with a pale band, with notes about what changes and how fast."
+     },
      "title": "What changes, and how fast",
      "bullets": [
       "Protoliths change in **texture** (how the grains look and line up) and **mineralogy** (which minerals are there).",
@@ -106,6 +138,7 @@
   {
    "id": "texture-foliation",
    "title": "Metamorphism changes texture: foliation",
+   "slides": "10-12",
    "bullets": [],
    "boxes": [
     {
@@ -117,9 +150,30 @@
      "text": "Foliation comes from Latin folium = LEAF. Think of pages or leaves in a stack, all parallel."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s10.webp",
+     "slide": "10",
+     "alt": "Two microscope views: a rock full of fossil fragments on the left, and a rock made of big calcite crystals on the right."
+    },
+    {
+     "src": "img/metamorphism/s11.webp",
+     "slide": "11",
+     "alt": "Two rock close-ups: one with randomly placed quartz and feldspar, one with feldspar crystals lined up roughly parallel."
+    },
+    {
+     "src": "img/metamorphism/s12.webp",
+     "slide": "12",
+     "alt": "A large boulder with alternating light and dark bands."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s10.webp",
+      "slide": "10",
+      "alt": "Two microscope views: a rock full of fossil fragments on the left, and a rock made of big calcite crystals on the right."
+     },
      "title": "Texture before and after",
      "bullets": [
       "Under a microscope the protolith has fossil fragments.",
@@ -127,6 +181,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s11.webp",
+      "slide": "11",
+      "alt": "Two rock close-ups: one with randomly placed quartz and feldspar, one with feldspar crystals lined up roughly parallel."
+     },
      "title": "What foliation looks like",
      "bullets": [
       "Metamorphism often gives the new rock a **foliation**: a **planar fabric** (a flat, sheet-like pattern) that cuts through the rock.",
@@ -134,6 +193,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s12.webp",
+      "slide": "12",
+      "alt": "A large boulder with alternating light and dark bands."
+     },
      "title": "Two ways to make foliation",
      "bullets": [
       "Foliation is made by the **alignment of platy minerals** (like micas).",
@@ -145,6 +209,7 @@
   {
    "id": "five-processes",
    "title": "The five processes of change",
+   "slides": "13-18",
    "bullets": [],
    "boxes": [
     {
@@ -194,9 +259,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s14.webp",
+     "slide": "14",
+     "alt": "A blue kyanite crystal on white rock, labelled with the example andalusite, kyanite, sillimanite."
+    },
+    {
+     "src": "img/metamorphism/s16.webp",
+     "slide": "16",
+     "alt": "Dark red almandine garnet crystals scattered through fine-grained grey rock."
+    },
+    {
+     "src": "img/metamorphism/s17.webp",
+     "slide": "17",
+     "alt": "Diagram: round grains in the original rock become flattened, elliptical grains, with dissolving at pressed contacts and new growth in between."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s14.webp",
+      "slide": "14",
+      "alt": "A blue kyanite crystal on white rock, labelled with the example andalusite, kyanite, sillimanite."
+     },
      "title": "Phase change",
      "bullets": [
       "**Phase change**: new minerals form with the **same chemical formula but a different crystal structure**.",
@@ -204,6 +290,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s16.webp",
+      "slide": "16",
+      "alt": "Dark red almandine garnet crystals scattered through fine-grained grey rock."
+     },
      "title": "Pressure and denser minerals",
      "bullets": [
       "Pressure rises with depth at **270 to 300 bars per km** (1 bar is about 1 atm = 14.7 psi). Most metamorphism happens at **2 to 12 kbar** (2,000 to 12,000 bars).",
@@ -212,6 +303,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s17.webp",
+      "slide": "17",
+      "alt": "Diagram: round grains in the original rock become flattened, elliptical grains, with dissolving at pressed contacts and new growth in between."
+     },
      "title": "Pressure solution",
      "bullets": [
       "**Pressure solution**: grains partly **dissolve where their surfaces press together**. The ions travel in a thin water film and **reprecipitate** elsewhere. It needs a little water.",
@@ -231,6 +327,7 @@
   {
    "id": "agents",
    "title": "Agents: heat, pressure, differential stress, fluids",
+   "slides": "19-25",
    "bullets": [],
    "boxes": [
     {
@@ -278,9 +375,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s19.webp",
+     "slide": "19",
+     "alt": "Block diagram of a mountain belt showing rocks changing from shale and slate to schist, gneiss, migmatite, hornfels and mylonite."
+    },
+    {
+     "src": "img/metamorphism/s22.webp",
+     "slide": "22",
+     "alt": "A hand pressing on a lump of dough-like rock: first squeezed from all sides, then sheared sideways."
+    },
+    {
+     "src": "img/metamorphism/s24.webp",
+     "slide": "24",
+     "alt": "Diagram: a round (equant) grain turns into a cigar-shaped (elongate) or flat (platy) grain under stress."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s19.webp",
+      "slide": "19",
+      "alt": "Block diagram of a mountain belt showing rocks changing from shale and slate to schist, gneiss, migmatite, hornfels and mylonite."
+     },
      "title": "The four agents",
      "bullets": [
       "The **agents of metamorphism** are **heat (T)**, **pressure (P)**, **compression and shear**, and **hydrothermal (hot water) fluids**.",
@@ -289,6 +407,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s22.webp",
+      "slide": "22",
+      "alt": "A hand pressing on a lump of dough-like rock: first squeezed from all sides, then sheared sideways."
+     },
      "title": "Pressure, stress and shear",
      "bullets": [
       "**Pressure** is **equal in all directions**. **Differential stress** is greater in one direction, like dough under a heavy weight on top (vertical compression) instead of an even squeeze.",
@@ -297,6 +420,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s24.webp",
+      "slide": "24",
+      "alt": "Diagram: a round (equant) grain turns into a cigar-shaped (elongate) or flat (platy) grain under stress."
+     },
      "title": "Grain shapes under stress",
      "bullets": [
       "Compression and shear plus high T and P make minerals and rocks **change shape without breaking**. Crystals line up at a right angle to the compression.",
@@ -310,6 +438,7 @@
   {
    "id": "foliated-rocks",
    "title": "Foliated rocks and the grade ladder",
+   "slides": "26-34",
    "bullets": [],
    "boxes": [
     {
@@ -359,15 +488,41 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s26.webp",
+     "slide": "26",
+     "alt": "Close view of a rock with swirling, folded light and dark layers and a 10 cm scale bar."
+    },
+    {
+     "src": "img/metamorphism/s28.webp",
+     "slide": "28",
+     "alt": "Diagram of slaty cleavage forming at right angles to the squeeze, and a worker splitting slate into roofing tiles."
+    },
+    {
+     "src": "img/metamorphism/s32.webp",
+     "slide": "32",
+     "alt": "A banded gneiss with a coin for scale, and a diagram of felsic and mafic minerals separating into bands over time."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s26.webp",
+      "slide": "26",
+      "alt": "Close view of a rock with swirling, folded light and dark layers and a 10 cm scale bar."
+     },
      "bullets": [
       "**Foliated** rocks have a planar fabric. The grade ladder from shale runs: **slate, phyllite, schist, gneiss**, then migmatite at the extreme.",
       "**Metaconglomerate** is a metamorphosed conglomerate: a foliated rock with stretched pebbles."
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s28.webp",
+      "slide": "28",
+      "alt": "Diagram of slaty cleavage forming at right angles to the squeeze, and a worker splitting slate into roofing tiles."
+     },
      "title": "Slate and slaty cleavage",
      "bullets": [
       "**Slate** is a fine-grained, **low-grade** metamorphic shale with a distinct foliation called **slaty cleavage**.",
@@ -376,6 +531,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s32.webp",
+      "slide": "32",
+      "alt": "A banded gneiss with a coin for scale, and a diagram of felsic and mafic minerals separating into bands over time."
+     },
      "title": "Gneiss and migmatite",
      "bullets": [
       "**Gneiss** has distinct **compositional bands**: **light** bands of **felsic** minerals (quartz and feldspar) alternate with **dark** bands of **mafic** minerals (biotite or amphibole).",
@@ -395,6 +555,7 @@
   {
    "id": "nonfoliated",
    "title": "Nonfoliated rocks",
+   "slides": "35-36",
    "bullets": [],
    "boxes": [
     {
@@ -449,9 +610,25 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s35.webp",
+     "slide": "35",
+     "alt": "Orange layered sandstone outcrop next to a hard grey quartzite sample with a coin for scale."
+    },
+    {
+     "src": "img/metamorphism/s36.webp",
+     "slide": "36",
+     "alt": "A grey limestone outcrop, a marble quarry with pale blocks, and a marble sculpture."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s35.webp",
+      "slide": "35",
+      "alt": "Orange layered sandstone outcrop next to a hard grey quartzite sample with a coin for scale."
+     },
      "title": "Quartzite",
      "bullets": [
       "**Quartzite** is metamorphic **quartz sandstone**. The sand grains recrystallize and fuse into a rock that is **hard, glassy, and resistant**.",
@@ -459,6 +636,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s36.webp",
+      "slide": "36",
+      "alt": "A grey limestone outcrop, a marble quarry with pale blocks, and a marble sculpture."
+     },
      "title": "Marble",
      "bullets": [
       "**Marble** is coarsely crystalline **calcite or dolomite** from a **limestone or dolostone** protolith.",
@@ -477,6 +659,7 @@
   {
    "id": "grade-facies",
    "title": "Grade, heat, index minerals and facies",
+   "slides": "37-43",
    "bullets": [],
    "boxes": [
     {
@@ -531,9 +714,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s37.webp",
+     "slide": "37",
+     "alt": "Graph of temperature against depth with the geotherm curve running through the crust, lithosphere and asthenosphere."
+    },
+    {
+     "src": "img/metamorphism/s38.webp",
+     "slide": "38",
+     "alt": "Chart of shale and sandstone changing into slate, phyllite and quartzite, schist and gneiss, with the minerals that appear at each grade."
+    },
+    {
+     "src": "img/metamorphism/s40.webp",
+     "slide": "40",
+     "alt": "Chart with temperature increasing to the right and pressure increasing downward, placing hornfels, slate, schist, gneiss, migmatite and blueschist."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s37.webp",
+      "slide": "37",
+      "alt": "Graph of temperature against depth with the geotherm curve running through the crust, lithosphere and asthenosphere."
+     },
      "title": "Temperature and heat sources",
      "bullets": [
       "Metamorphism occurs between **250 degrees C and 850 degrees C**. The depth to this temperature depends on the tectonic setting.",
@@ -541,6 +745,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s38.webp",
+      "slide": "38",
+      "alt": "Chart of shale and sandstone changing into slate, phyllite and quartzite, schist and gneiss, with the minerals that appear at each grade."
+     },
      "title": "The grade ladder",
      "bullets": [
       "**Metamorphic grade**: **low grade = slight** change, **high grade = intense** change. More T and P means higher grade.",
@@ -549,6 +758,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s40.webp",
+      "slide": "40",
+      "alt": "Chart with temperature increasing to the right and pressure increasing downward, placing hornfels, slate, schist, gneiss, migmatite and blueschist."
+     },
      "title": "Where each rock forms",
      "bullets": [
       "Temperature goes right and pressure goes down. **Hornfels** is on the high-T, low-P side; **blueschist** is on the high-P, low-T side.",
@@ -568,6 +782,7 @@
   {
    "id": "types-contact",
    "title": "Types of metamorphism and contact metamorphism",
+   "slides": "44-47",
    "bullets": [],
    "boxes": [
     {
@@ -583,15 +798,41 @@
      "text": "Hornfels is an intrusion-baked metamorphic rock, NOT an igneous rock."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s45.webp",
+     "slide": "45",
+     "alt": "A map and block diagram of a granodiorite pluton in Maine ringed by low-, intermediate- and high-grade hornfels, with slate beyond."
+    },
+    {
+     "src": "img/metamorphism/s46.webp",
+     "slide": "46",
+     "alt": "Block diagram of an igneous pluton surrounded by bands of hornfels, with clay, brick, pottery and porcelain drawn above."
+    },
+    {
+     "src": "img/metamorphism/s47.webp",
+     "slide": "47",
+     "alt": "Close-up of dark, fine-grained hornfels with pale patches."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s45.webp",
+      "slide": "45",
+      "alt": "A map and block diagram of a granodiorite pluton in Maine ringed by low-, intermediate- and high-grade hornfels, with slate beyond."
+     },
      "bullets": [
       "**Contact (thermal) metamorphism** is caused by heat from a **magma body intruding host rock**.",
       "It is **high temperature, low pressure**. Fine-grained shale and basalt recrystallize to hornfels; sandstone becomes quartzite and limestone becomes marble."
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s46.webp",
+      "slide": "46",
+      "alt": "Block diagram of an igneous pluton surrounded by bands of hornfels, with clay, brick, pottery and porcelain drawn above."
+     },
      "title": "The contact aureole",
      "bullets": [
       "Contact heat makes a **contact aureole**: zoned bands of alteration, **high grade near the pluton** to **low grade away from it**. The zones are low-grade, intermediate and high-grade hornfels.",
@@ -599,6 +840,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s47.webp",
+      "slide": "47",
+      "alt": "Close-up of dark, fine-grained hornfels with pale patches."
+     },
      "title": "Hornfels",
      "bullets": [
       "**Hornfels** is a fine-grained, hard, durable rock from the **baked margin** of an intrusion.",
@@ -616,6 +862,7 @@
   {
    "id": "dynamic-regional",
    "title": "Dynamic and regional metamorphism",
+   "slides": "48-51",
    "bullets": [],
    "boxes": [
     {
@@ -660,9 +907,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s49.webp",
+     "slide": "49",
+     "alt": "Block diagram of a shear zone between two blocks sliding past each other, with zoom circles of tiny-grained mylonite and coarse original rock."
+    },
+    {
+     "src": "img/metamorphism/s50.webp",
+     "slide": "50",
+     "alt": "Two cross sections: Point A as sediment at the surface (20 degrees C, 1 bar), then about 15 km deep after a collision (450 degrees C, 6 kbar)."
+    },
+    {
+     "src": "img/metamorphism/s51.webp",
+     "slide": "51",
+     "alt": "The same before-and-after cross sections drawn over a photo of banded metamorphic rock."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s49.webp",
+      "slide": "49",
+      "alt": "Block diagram of a shear zone between two blocks sliding past each other, with zoom circles of tiny-grained mylonite and coarse original rock."
+     },
      "bullets": [
       "**Dynamic metamorphism** is breakage of rock by **shearing in a fault zone**.",
       "**Shallow crust (0 to 15 km)**: rocks are **brittle** and crush to **fault breccia**.",
@@ -670,6 +938,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s50.webp",
+      "slide": "50",
+      "alt": "Two cross sections: Point A as sediment at the surface (20 degrees C, 1 bar), then about 15 km deep after a collision (450 degrees C, 6 kbar)."
+     },
      "title": "Regional: before and after",
      "bullets": [
       "Point A starts as sediment near the surface at 20 degrees C and 1 bar.",
@@ -677,6 +950,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s51.webp",
+      "slide": "51",
+      "alt": "The same before-and-after cross sections drawn over a photo of banded metamorphic rock."
+     },
      "title": "Why regional makes the most rock",
      "bullets": [
       "**Regional (dynamothermal) metamorphism**: tectonic collisions deform huge **mobile belts** hundreds to thousands of km long. Directed compression buries rocks deeply, where the geothermal gradient and plutons heat them.",
@@ -688,6 +966,7 @@
   {
    "id": "other-settings",
    "title": "Hydrothermal, subduction, burial, shock",
+   "slides": "52-58",
    "bullets": [],
    "boxes": [
     {
@@ -747,9 +1026,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s52.webp",
+     "slide": "52",
+     "alt": "Cross section of a mid-ocean ridge with cold seawater sinking, heating up and rising, plus an outcrop of metamorphosed pillow basalt (greenstone)."
+    },
+    {
+     "src": "img/metamorphism/s55.webp",
+     "slide": "55",
+     "alt": "Block diagram of a subduction zone showing blueschist forming in an accretionary prism and contact metamorphism near the volcanoes."
+    },
+    {
+     "src": "img/metamorphism/s57.webp",
+     "slide": "57",
+     "alt": "Aerial view of a large round impact crater."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s52.webp",
+      "slide": "52",
+      "alt": "Cross section of a mid-ocean ridge with cold seawater sinking, heating up and rising, plus an outcrop of metamorphosed pillow basalt (greenstone)."
+     },
      "title": "Hydrothermal at ridges",
      "bullets": [
       "At **mid-ocean ridges**, cold seawater seeps into fractured crust, is heated by magma, reacts with the **mafic rock (basalt)**, and exits through **black smokers**.",
@@ -757,6 +1057,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s55.webp",
+      "slide": "55",
+      "alt": "Block diagram of a subduction zone showing blueschist forming in an accretionary prism and contact metamorphism near the volcanoes."
+     },
      "title": "Subduction and blueschist",
      "bullets": [
       "Trenches and accretionary prisms have a **low geothermal gradient**. This produces **low T, high P** rock called **blueschist**.",
@@ -764,6 +1069,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s57.webp",
+      "slide": "57",
+      "alt": "Aerial view of a large round impact crater."
+     },
      "title": "Shock metamorphism",
      "bullets": [
       "A comet or asteroid impact makes **extremely high pressure and heat** that vaporizes rock, makes shock minerals, or makes high-pressure minerals.",
@@ -781,6 +1091,7 @@
   {
    "id": "exhumation",
    "title": "Back to the surface and shields",
+   "slides": "59-60",
    "bullets": [],
    "boxes": [
     {
@@ -792,9 +1103,25 @@
      "text": "Recipe: VISE (squeeze up), CHEESE in the sun (collapse), RASP (erosion) = deep rock arrives at the top."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/metamorphism/s59.webp",
+     "slide": "59",
+     "alt": "Three-stage diagram: continents squeeze rock up like dough in a vise, the thick belt collapses like cheese in the sun, and erosion removes the top like a rasp."
+    },
+    {
+     "src": "img/metamorphism/s60.webp",
+     "slide": "60",
+     "alt": "World map labelling the ancient shields on each continent."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/metamorphism/s59.webp",
+      "slide": "59",
+      "alt": "Three-stage diagram: continents squeeze rock up like dough in a vise, the thick belt collapses like cheese in the sun, and erosion removes the top like a rasp."
+     },
      "bullets": [
       "**Exhumation** brings deep metamorphic rocks back up. As continents squeeze together in a collision, rock is pushed up like dough in a vise.",
       "Uplift thickens the crust; the softened deep rock then **collapses and thins**, like a block of cheese in the hot sun.",
@@ -802,6 +1129,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/metamorphism/s60.webp",
+      "slide": "60",
+      "alt": "World map labelling the ancient shields on each continent."
+     },
      "bullets": [
       "**Shields** are large regions of ancient high-grade metamorphic rock in continental interiors, the eroded remnants of **orogenic belts**.",
       "They form the **basement** under sedimentary cover over much of the world. Examples on the map: Canadian, Baltic, Siberian, African, Australian and more."
@@ -818,6 +1150,7 @@
   {
    "id": "slide-quiz",
    "title": "Check questions",
+   "slides": "61-64",
    "bullets": [
     "Which is NOT metamorphic? Gneiss, phyllite, schist and slate are metamorphic; **basalt is igneous**.",
     "Which IS metamorphic? Quartzite and marble, so the answer is both. Granite is igneous, sandstone is sedimentary.",

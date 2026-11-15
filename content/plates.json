@@ -6,55 +6,56 @@
  "color": "#3a7ca5",
  "intro": "Earth's outer shell is cracked into big slabs called plates. They creep around very slowly, and almost every earthquake, volcano and mountain range is a result of how the plates touch each other. Learn the evidence, the three boundary types (and what each one makes), how to read the seafloor's magnetic stripes, what pushes and pulls the plates, and how hotspots record plate motion.",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Summarize Wegener's continental-drift hypothesis and the evidence supporting it."
-   },
-   {
-    "id": "goal-02",
-    "text": "Explain how evidence developed in the 1950s and 1960s established plate tectonics."
-   },
-   {
-    "id": "goal-03",
-    "text": "Distinguish Earth's crust, mantle, core, and lithosphere."
-   },
-   {
-    "id": "goal-04",
-    "text": "Classify plate margins as convergent, divergent, or transform."
-   },
-   {
-    "id": "goal-05",
-    "text": "Explain how subduction occurs at convergent boundaries and identify its results."
-   },
-   {
-    "id": "goal-06",
-    "text": "Compare continental collision with subduction and relate collision to supercontinent assembly."
-   },
-   {
-    "id": "goal-07",
-    "text": "Explain how divergent boundaries form rifts and triple junctions."
-   },
-   {
-    "id": "goal-08",
-    "text": "Use magnetic stripes to explain seafloor spreading and determine spreading rates."
-   },
-   {
-    "id": "goal-09",
-    "text": "Describe transform-boundary motion and the features it produces."
-   },
-   {
-    "id": "goal-10",
-    "text": "Explain the forces that move plates and summarize the Wilson Cycle."
-   },
-   {
-    "id": "goal-11",
-    "text": "Explain how hotspots and mantle plumes produce volcanic activity away from plate boundaries."
-   }
+  {
+   "id": "goal-01",
+   "text": "Summarize Wegener's continental-drift hypothesis and the evidence supporting it."
+  },
+  {
+   "id": "goal-02",
+   "text": "Explain how evidence developed in the 1950s and 1960s established plate tectonics."
+  },
+  {
+   "id": "goal-03",
+   "text": "Distinguish Earth's crust, mantle, core, and lithosphere."
+  },
+  {
+   "id": "goal-04",
+   "text": "Classify plate margins as convergent, divergent, or transform."
+  },
+  {
+   "id": "goal-05",
+   "text": "Explain how subduction occurs at convergent boundaries and identify its results."
+  },
+  {
+   "id": "goal-06",
+   "text": "Compare continental collision with subduction and relate collision to supercontinent assembly."
+  },
+  {
+   "id": "goal-07",
+   "text": "Explain how divergent boundaries form rifts and triple junctions."
+  },
+  {
+   "id": "goal-08",
+   "text": "Use magnetic stripes to explain seafloor spreading and determine spreading rates."
+  },
+  {
+   "id": "goal-09",
+   "text": "Describe transform-boundary motion and the features it produces."
+  },
+  {
+   "id": "goal-10",
+   "text": "Explain the forces that move plates and summarize the Wilson Cycle."
+  },
+  {
+   "id": "goal-11",
+   "text": "Explain how hotspots and mantle plumes produce volcanic activity away from plate boundaries."
+  }
  ],
  "sections": [
   {
    "id": "wegener",
    "title": "Wegener and continental drift",
+   "slides": "1-2",
    "bullets": [
     "**Alfred Wegener** (1880-1930) was a German meteorologist/climatologist. In 1910 he started doubting that **land bridges** (like the Bering Land Bridge) explained why continents share animals and plants.",
     "His idea, **continental drift**: the continents were once joined and then drifted apart.",
@@ -83,6 +84,7 @@
   {
    "id": "evidence",
    "title": "How drift became plate tectonics (1950s to 60s)",
+   "slides": "2-3",
    "bullets": [
     "Wegener died in **1930** on a Greenland expedition, still seen as a fringe scientist. The proof came after his death.",
     "**Mapping the ocean floor**: in **1947** researchers adapted **SONAR** to map the mid-Atlantic. **Bruce Heezen and Marie Tharp** made the first detailed ocean-floor map and found the **Mid-Atlantic Ridge**, a basalt mountain range unlike continental mountains.",
@@ -114,6 +116,7 @@
   {
    "id": "layers",
    "title": "Layers of the Earth: crust, mantle, core, and lithosphere",
+   "slides": "4-5",
    "bullets": [],
    "boxes": [
     {
@@ -129,9 +132,20 @@
      "text": "LITHOSPHERE is not the same as CRUST. Lithosphere = crust + the uppermost solid mantle (it is a physical layer). The crust is a chemical layer. Also the asthenosphere is NOT liquid magma: it is solid rock that flows slowly. And a tectonic PLATE is the lithosphere (the plate is 100% lithosphere, not a small share of it)."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/plates/s4.webp",
+     "slide": "4",
+     "alt": "Cutaway diagram of Earth showing the crust, mantle, outer core and inner core, with the lithosphere and asthenosphere labelled."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/plates/s4.webp",
+      "slide": "4",
+      "alt": "Cutaway diagram of Earth showing the crust, mantle, outer core and inner core, with the lithosphere and asthenosphere labelled."
+     },
      "bullets": [
       "Earth is cut two ways: by **chemical composition** (what it is made of) and by **physical behaviour** (rigid or flowing). The chemical layers are the **crust** (continental = lower density, granite-like; oceanic = denser, basalt-like), the **mantle** (largest by volume, down to ~2,900 km, mostly peridotite, an ultramafic rock) and the **core** (mostly iron and nickel).",
       "The **Moho** (Mohorovicic Discontinuity) is the boundary at the base of the crust. It shows up as a jump in seismic wave speed. Discovered in 1909. Depth: ~5 km under oceans, ~30-40 km under continents.",
@@ -150,6 +164,7 @@
   {
    "id": "types",
    "title": "Plates, margins and the three boundary types",
+   "slides": "6",
    "bullets": [
     "A **plate boundary** is where two plates meet and move relative to each other. This is where quakes, volcanism and mountain building happen.",
     "**Passive margin**: no relative plate motion. Continental lithosphere gradually becomes oceanic lithosphere **within the same plate**. Example: eastern coasts of North and South America.",
@@ -171,12 +186,19 @@
      "text": "'Passive margin' does not mean 'no coast activity today because of weather'. It means no plate boundary. And a coastline is not automatically a plate boundary."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/plates/s6.webp",
+     "slide": "6",
+     "alt": "Three block diagrams of plate boundaries: divergent, with plates moving apart over rising magma; convergent, with one plate sinking beneath another; and transform, with two plates sliding sideways past each other."
+    }
+   ],
    "visual": "plates"
   },
   {
    "id": "subduction",
    "title": "Convergent boundaries: subduction",
+   "slides": "6-8",
    "bullets": [
     "Convergent = **destructive** boundaries. Two kinds: **subduction** (a denser plate is pushed beneath a more buoyant one) and **collision** (two continents meet).",
     "**Subduction**: dense oceanic lithosphere meets a more buoyant plate (continental, or younger/warmer oceanic) and sinks into the mantle. Global average rate ~**25 miles per million years** (~half an inch per year).",
@@ -202,11 +224,23 @@
      "text": "Flux melting (added water) is for SUBDUCTION. Decompression melting (pressure drop) is for RIDGES, RIFTS and hotspots."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/plates/s7a.webp",
+     "slide": "7",
+     "alt": "Two cross sections of a subduction zone: in the top picture a green crustal fragment rides the sinking oceanic plate toward the trench, and in the bottom picture it has been added to the wedge of scraped-up sediment on the overriding plate."
+    },
+    {
+     "src": "img/plates/s7b.webp",
+     "slide": "7",
+     "alt": "Cross section of an oceanic plate sinking beneath a continent, with magma rising from above the sinking slab to feed a volcano on the continental crust."
+    }
+   ]
   },
   {
    "id": "collision",
    "title": "Convergent boundaries: collision and supercontinents",
+   "slides": "9",
    "bullets": [
     "**Collision**: two continental plates converge (for example when an ocean basin closes). Neither is dense enough to subduct, so they crash instead.",
     "**No subduction = no magma = no volcanism.** Result: tall, **non-volcanic mountains** and broad zones of frequent large earthquakes, sometimes hundreds of km from the boundary (continental lithosphere is more plastic).",
@@ -230,11 +264,18 @@
      "text": "A convergent boundary does NOT always have volcanoes. Subduction = volcanoes. Continent-continent collision = mountains but (almost) no volcanoes."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/plates/s9.webp",
+     "slide": "9",
+     "alt": "Cross section of two continents colliding, with thick crust and lithosphere piling up beneath a mountain range and high plateau."
+    }
+   ]
   },
   {
    "id": "rifts",
    "title": "Divergent boundaries: rifts and triple junctions",
+   "slides": "10-11",
    "bullets": [
     "Divergent = **constructive** boundaries (plates move apart). Two kinds by location: **continental rifts** and **mid-ocean ridges**.",
     "**Rift-to-drift**: a rift widens until it splits the plate, seawater floods in, and the pieces drift apart as separate continents with a new ridge between them.",
@@ -259,11 +300,28 @@
      "text": "A triple junction is NOT three earthquakes, three passive margins or three normal faults. It is where three plate boundaries intersect. Also, failed rift arms are the ones that STOP spreading, not the ones that continue."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/plates/s10a.webp",
+     "slide": "10",
+     "alt": "Block diagram of a continental rift: the crust stretches and drops along fault blocks to form a rift valley above rising asthenosphere and magma."
+    },
+    {
+     "src": "img/plates/s10b.webp",
+     "slide": "10",
+     "alt": "Two cross sections comparing a narrow rift, where the crust and mantle neck in one place, with a wide rift, where stretching spreads across a broad area."
+    },
+    {
+     "src": "img/plates/s11a.webp",
+     "slide": "11",
+     "alt": "Three-part illustration of rift volcanism: tectonic forces pull the continental crust apart, the crust cracks into a rift valley, and magma rises from the mantle below."
+    }
+   ]
   },
   {
    "id": "ridges",
    "title": "Mid-ocean ridges, magnetic stripes and spreading-rate maths",
+   "slides": "11-12",
    "bullets": [
     "**Mid-ocean ridges** (**spreading centres**) are the only places that create **new oceanic lithosphere**, by decompression melting of the asthenosphere. Ridge volcanism makes more lava than all other volcanism combined (most is unseen on the deep seafloor).",
     "The ridge is high because new, hot lithosphere is more buoyant (like an ice cube floating). Moving away, it cools, becomes denser and sinks into flat **abyssal plains**.",
@@ -287,11 +345,18 @@
      "text": "Each plate moves 2 cm/yr, so the stripe is 40 km from the axis on ONE side, and age = 40 km / 2 cm/yr = 2 Ma (not 1 Ma and not 4 Ma). Only if the question gave the total opening rate (both sides together) would you divide by the full rate. Also: the ocean floor is YOUNGEST at the ridge, not oldest."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/plates/s11b.webp",
+     "slide": "11",
+     "alt": "World map coloured by seafloor age, with the youngest red crust along the mid-ocean ridges and older green, blue and purple crust farther away."
+    }
+   ]
   },
   {
    "id": "transform",
    "title": "Transform boundaries",
+   "slides": "12-13",
    "bullets": [
     "Transform = **strike-slip** or **conservative** boundary: plates move past each other sideways. **No crust is created or destroyed.**",
     "Direction: stand on one plate and look across. **Dextral (right-lateral)**: the other plate seems to move right. **Sinistral (left-lateral)**: it seems to move left.",
@@ -316,11 +381,18 @@
      "text": "Transform boundaries do not make new crust or destroy it. Do not call them 'constructive' (that is divergent) or 'destructive' (convergent). On the exam, 'shallow earthquakes but almost no volcanism' = transform fault."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/plates/s6b.webp",
+     "slide": "6",
+     "alt": "Block diagram of a transform plate boundary with two blocks of crust sliding past each other in opposite directions."
+    }
+   ]
   },
   {
    "id": "forces",
    "title": "What moves the plates, and the Wilson Cycle",
+   "slides": "2, 13",
    "bullets": [
     "Modern view: **convection, gravity and density differences** drive plate motion. The energy is Earth's **internal heat**, not sunlight.",
     "**Wilson Cycle** (J. Tuzo Wilson, 1966): the ongoing birth and breakup of supercontinents (Pangaea, Rodinia). It has run for at least **3 billion years**. Steps: **rifting, ocean basin creation, subduction, basin closure**, then collision builds a new supercontinent.",
@@ -351,6 +423,7 @@
   {
    "id": "hotspots",
    "title": "Hotspots and mantle plumes",
+   "slides": "14-15",
    "bullets": [
     "A **hotspot** is a fixed area where magma breaks through the lithosphere and makes a volcanic centre. First postulated by **J. Tuzo Wilson in 1963**.",
     "As the plate moves over the stationary hotspot, the old volcano goes **extinct** (no longer over the magma) and a new one forms. Result: a **chain** of islands or mountains.",
@@ -375,7 +448,13 @@
      "text": "Hotspots are the exception to 'volcanoes are at plate boundaries'. They are not caused by subduction or rifting. Another trap: the hotspot is stationary and the PLATE moves. Do not say the volcano moved."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/plates/s14.webp",
+     "slide": "14",
+     "alt": "World map of hotspot locations, with large red dots for major hotspots such as Iceland, Hawaii and Tristan, smaller dots for others, and plate boundaries drawn as lines."
+    }
+   ]
   }
  ],
  "table": {

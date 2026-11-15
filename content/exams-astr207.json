@@ -1296,308 +1296,1731 @@
      "derived": false
     }
    ]
-   },
-   {
-    "id": "midterm",
-    "title": "Cumulative Midterm Practice",
-    "blurb": "24 original questions across sky motions, gravity, light, matter, telescopes, and planetary science.",
-    "questions": [
-     {
-      "id": "astr-mid-1",
-      "q": "An observer travels north while keeping the same local time. Which sky change should be expected from latitude alone?",
-      "options": [
-       "The north celestial pole appears higher above the horizon.",
-       "The ecliptic changes into a physical orbit around the observer.",
-       "The Sun's apparent daily motion reverses direction.",
-       "The stars become fixed relative to Earth's surface."
-      ],
-      "answer": 0,
-      "why": "The altitude of the celestial pole tracks the observer's latitude."
-     },
-     {
-      "id": "astr-mid-2",
-      "q": "A star rises about four minutes earlier on successive nights. Which combination best explains the shift?",
-      "options": [
-       "Earth rotates relative to distant stars faster than it completes a solar day.",
-       "Earth's orbit stops while the star moves westward.",
-       "The star's light takes longer to arrive each night.",
-       "Earth's axis changes direction by four minutes each day."
-      ],
-      "answer": 0,
-      "why": "Earth must rotate slightly more than one sidereal rotation to bring the Sun back to the same position in the sky."
-     },
-     {
-      "id": "astr-mid-3",
-      "q": "A planet appears to move backward against the background stars for several weeks. Which interpretation is best?",
-      "options": [
-       "The planet's apparent retrograde motion results from changing viewing geometry as Earth and the planet orbit.",
-       "The planet has stopped orbiting and is physically reversing its entire path.",
-       "The background stars are orbiting Earth in the opposite direction.",
-       "The Sun's rotation reverses the planet's orbit."
-      ],
-      "answer": 0,
-      "why": "Relative orbital motion can create an apparent reversal against distant background stars."
-     },
-     {
-      "id": "astr-mid-4",
-      "q": "A satellite moves farther from a planet while remaining gravitationally bound. Ignoring propulsion, what happens to its orbital speed and gravitational potential energy?",
-      "options": [
-       "Its speed decreases while its gravitational potential energy increases toward zero.",
-       "Its speed increases while its potential energy becomes more negative.",
-       "Both speed and potential energy remain constant at every point.",
-       "Its speed becomes zero as soon as its distance changes."
-      ],
-      "answer": 0,
-      "why": "In a bound orbit, a satellite is generally slower farther from the central body, and gravitational potential energy increases as separation grows."
-     },
-     {
-      "id": "astr-mid-5",
-      "q": "Two objects have the same mass, but one is twice as far from a planet's centre. How does the planet's gravitational force on it compare?",
-      "options": [
-       "It is one quarter as strong.",
-       "It is half as strong.",
-       "It is twice as strong.",
-       "It is four times as strong."
-      ],
-      "answer": 0,
-      "why": "Gravity follows an inverse-square dependence on separation."
-     },
-     {
-      "id": "astr-mid-6",
-      "q": "An astronaut feels weightless while orbiting Earth. Which explanation is most accurate?",
-      "options": [
-       "The astronaut and spacecraft are in continuous free fall together.",
-       "Earth's gravity is absent at orbital altitude.",
-       "The astronaut has lost mass but kept the same density.",
-       "The spacecraft is outside Earth's gravitational influence."
-      ],
-      "answer": 0,
-      "why": "Gravity remains significant in orbit; apparent weightlessness comes from shared free fall."
-     },
-     {
-      "id": "astr-mid-7",
-      "q": "A rotating cloud contracts while conserving angular momentum. Which outcome is expected if external torque is negligible?",
-      "options": [
-       "Its rotation rate increases as its size decreases.",
-       "Its rotation rate falls to zero.",
-       "Its total angular momentum must increase.",
-       "Its mass converts entirely into thermal energy."
-      ],
-      "answer": 0,
-      "why": "A smaller rotating system spins faster when angular momentum is conserved."
-     },
-     {
-      "id": "astr-mid-8",
-      "q": "A collision between two isolated objects occurs, but some kinetic energy becomes heat. Which statement can still remain true?",
-      "options": [
-       "Total momentum is conserved even though kinetic energy is not.",
-       "Both momentum and kinetic energy must decrease.",
-       "Kinetic energy conservation requires momentum to change.",
-       "Heat production prevents conservation of momentum."
-      ],
-      "answer": 0,
-      "why": "Momentum is conserved in an isolated system; kinetic energy can be transformed into other forms."
-     },
-     {
-      "id": "astr-mid-9",
-      "q": "A planet's orbit becomes more elliptical after an interaction. At which part of the orbit is its speed greatest?",
-      "options": [
-       "At its closest approach to the Sun",
-       "At its greatest distance from the Sun",
-       "At every point equally",
-       "Only when it crosses Earth's orbital plane"
-      ],
-      "answer": 0,
-      "why": "An orbiting object moves faster when nearer the Sun, consistent with conservation of orbital energy and angular momentum."
-     },
-     {
-      "id": "astr-mid-10",
-      "q": "A spectrum from a star has absorption lines at the same pattern of wavelengths as a laboratory element but shifted together. What does the shared pattern indicate?",
-      "options": [
-       "The element can be present in the star, while the shift can reveal relative motion.",
-       "The star must be made only of that element.",
-       "The element's lines are caused by the telescope's mirror shape.",
-       "The shift directly gives the star's distance without other information."
-      ],
-      "answer": 0,
-      "why": "Line patterns identify atoms or molecules, and a common shift can indicate Doppler motion."
-     },
-     {
-      "id": "astr-mid-11",
-      "q": "Two thermal sources have peaks at different wavelengths. Which source has the higher surface temperature?",
-      "options": [
-       "The source whose spectrum peaks at the shorter wavelength",
-       "The source whose spectrum peaks at the longer wavelength",
-       "The source with the smaller apparent size, regardless of spectrum",
-       "Neither; peak wavelength contains no temperature information"
-      ],
-      "answer": 0,
-      "why": "A hotter thermal source has its peak emission at a shorter wavelength."
-     },
-     {
-      "id": "astr-mid-12",
-      "q": "An atom emits a photon as an electron moves from a higher energy level to a lower one. Which statement must be true?",
-      "options": [
-       "The photon carries energy equal to the difference between the levels.",
-       "The electron gains energy from the photon while moving downward.",
-       "The photon must be a radio wave regardless of the level spacing.",
-       "The atom's number of protons changes."
-      ],
-      "answer": 0,
-      "why": "The emitted photon carries the energy lost as the electron transitions between levels."
-     },
-     {
-      "id": "astr-mid-13",
-      "q": "A galaxy's spectral lines are shifted toward longer wavelengths. Which conclusion is best supported before other effects are considered?",
-      "options": [
-       "The galaxy is receding along our line of sight.",
-       "The galaxy must be rotating so rapidly that it is breaking apart.",
-       "The galaxy is moving only across the sky with no radial motion.",
-       "The shift proves that its temperature is increasing."
-      ],
-      "answer": 0,
-      "why": "A redshift indicates motion away along the line of sight, though cosmological expansion can also contribute."
-     },
-     {
-      "id": "astr-mid-14",
-      "q": "A star's spectrum contains broad absorption features from both the star and Earth's atmosphere. What should an astronomer do to separate the sources?",
-      "options": [
-       "Compare with reference or calibration observations of the atmosphere.",
-       "Assume every absorption feature came from the star.",
-       "Replace spectroscopy with a single colour image.",
-       "Use only the star's apparent position."
-      ],
-      "answer": 0,
-      "why": "The atmosphere can imprint absorption features, so calibration helps distinguish terrestrial from astronomical signals."
-     },
-     {
-      "id": "astr-mid-15",
-      "q": "A larger telescope produces a brighter image of a dim galaxy, but the galaxy's apparent size is unchanged. Which statement best explains this?",
-      "options": [
-       "Aperture improves light collection; image scale and magnification are separate properties.",
-       "The aperture cannot affect recorded brightness.",
-       "The detector has become a gravitational-wave instrument.",
-       "The galaxy's physical size has changed."
-      ],
-      "answer": 0,
-      "why": "Aperture collects more light, while magnification and image scale address apparent size."
-     },
-     {
-      "id": "astr-mid-16",
-      "q": "An observatory combines two separated radio dishes and can distinguish a close pair of sources better than either dish alone. What has primarily improved?",
-      "options": [
-       "Angular resolution from the longer effective baseline",
-       "The sum of the dish areas beyond their physical sizes",
-       "The atmosphere's transmission of X-rays",
-       "The intrinsic brightness of both sources"
-      ],
-      "answer": 0,
-      "why": "Interferometry uses separation between telescopes to improve resolving power without enlarging each dish."
-     },
-     {
-      "id": "astr-mid-17",
-      "q": "A telescope's detector records a sharp image only when placed at one precise location behind the optics. What is that location?",
-      "options": [
-       "The focal plane",
-       "The celestial equator",
-       "The horizon",
-       "The transmission window"
-      ],
-      "answer": 0,
-      "why": "The focal plane is where incoming rays from a source are brought into focus."
-     },
-     {
-      "id": "astr-mid-18",
-      "q": "An orbit diagram shows Mercury, the asteroid belt, Jupiter, and a distant icy population in that order. Which interpretation best matches the solar-system structure?",
-      "options": [
-       "Rocky inner planets precede the asteroid belt and outer giant planets, with icy bodies beyond.",
-       "The asteroid belt lies beyond the Oort cloud.",
-       "All icy bodies orbit inside Mercury's path.",
-       "The diagram proves the planets' sizes are drawn to scale."
-      ],
-      "answer": 0,
-      "why": "The broad order of the regions is inner rocky planets, asteroid belt, outer planets, and distant small-body populations."
-     },
-     {
-      "id": "astr-mid-19",
-      "q": "A world is similar to Earth in size but has a dense carbon-dioxide atmosphere and extreme surface heating. Which comparison is most useful?",
-      "options": [
-       "Venus shows that similar size does not guarantee similar surface conditions.",
-       "Jupiter shows that rocky planets cannot retain atmospheres.",
-       "Mercury shows that every dense atmosphere causes extreme heating.",
-       "Neptune shows that all inner planets are ice giants."
-      ],
-      "answer": 0,
-      "why": "Venus and Earth are similar in size but have very different atmospheres and surface environments."
-     },
-     {
-      "id": "astr-mid-20",
-      "q": "A comet becomes active near the Sun and its tail points away from the Sun while the nucleus moves in another direction. Which process best accounts for this geometry?",
-      "options": [
-       "Solar heating releases gas and dust that radiation and solar wind push outward.",
-       "The tail is a solid extension trailing the comet's velocity.",
-       "The comet's gravity bends its own tail toward the Sun.",
-       "The nucleus is pushed backward by Earth's atmosphere."
-      ],
-      "answer": 0,
-      "why": "Released gas and dust are pushed away from the Sun, so the tail direction is not simply behind the comet's motion."
-     },
-     {
-      "id": "astr-mid-21",
-      "q": "Which observation is the strongest evidence for a rotating disk during solar-system formation?",
-      "options": [
-       "Most planets orbit in nearly the same plane and direction.",
-       "Every planet has the same number of moons.",
-       "All planets have exactly equal densities.",
-       "Every comet has a visible tail throughout its orbit."
-      ],
-      "answer": 0,
-      "why": "A flattened rotating disk naturally explains the coordinated orbital directions and planes."
-     },
-     {
-      "id": "astr-mid-22",
-      "q": "A small rocky body is round and orbits the Sun, but it shares its orbital neighborhood with many other sizable objects. Which classification is most appropriate?",
-      "options": [
-       "Dwarf planet",
-       "Major planet",
-       "Natural satellite",
-       "Cometary coma"
-      ],
-      "answer": 0,
-      "why": "A dwarf planet orbits the Sun and is nearly round but has not cleared its orbital neighborhood."
-     },
-     {
-      "id": "astr-mid-23",
-      "q": "A spacecraft must compare a surface mineral at one location with the composition of the planet as a whole. Which pairing provides the most complementary evidence?",
-      "options": [
-       "A lander or rover for local analysis and an orbiter for broad mapping",
-       "Two flybys with no instruments",
-       "A light curve alone and a larger display screen",
-       "A terrestrial telescope and a clock"
-      ],
-      "answer": 0,
-      "why": "Surface missions provide local measurements, while orbiters give repeated broad coverage."
-     },
-     {
-      "id": "astr-mid-24",
-      "q": "A space observatory detects radiation absorbed by Earth's atmosphere, while a ground telescope continues visible-light observations. Which conclusion follows?",
-      "options": [
-       "Space and ground observatories provide complementary wavelength access.",
-       "Ground telescopes cannot collect any electromagnetic radiation.",
-       "The atmosphere blocks every wavelength equally.",
-       "The space observatory changes the source's emission."
-      ],
-      "answer": 0,
-      "why": "Ground instruments remain valuable in atmospheric windows, while space telescopes can access blocked wavelengths."
-     }
-    ]
-   },
-   {
-    "id": "challenge",
-    "title": "ASTR 207 Challenge Practice",
-    "blurb": "12 multi-step questions on sky motions, Newton's laws, orbits, light, spectra, and telescopes.",
-    "questionIds": ["ts-40", "mo-49", "cv-30", "cv-31", "gr-50", "gr-51", "li-33", "li-34", "ma-44", "ma-45", "tel-25", "pln-25"],
-    "questions": []
-   }
+  },
+  {
+   "id": "midterm",
+   "title": "Cumulative Midterm Practice",
+   "blurb": "24 original questions across sky motions, gravity, light, matter, telescopes, and planetary science.",
+   "questions": [
+    {
+     "id": "astr-mid-1",
+     "q": "An observer travels north while keeping the same local time. Which sky change should be expected from latitude alone?",
+     "options": [
+      "The north celestial pole appears higher above the horizon.",
+      "The ecliptic changes into a physical orbit around the observer.",
+      "The Sun's apparent daily motion reverses direction.",
+      "The stars become fixed relative to Earth's surface."
+     ],
+     "answer": 0,
+     "why": "The altitude of the celestial pole tracks the observer's latitude."
+    },
+    {
+     "id": "astr-mid-2",
+     "q": "A star rises about four minutes earlier on successive nights. Which combination best explains the shift?",
+     "options": [
+      "Earth rotates relative to distant stars faster than it completes a solar day.",
+      "Earth's orbit stops while the star moves westward.",
+      "The star's light takes longer to arrive each night.",
+      "Earth's axis changes direction by four minutes each day."
+     ],
+     "answer": 0,
+     "why": "Earth must rotate slightly more than one sidereal rotation to bring the Sun back to the same position in the sky."
+    },
+    {
+     "id": "astr-mid-3",
+     "q": "A planet appears to move backward against the background stars for several weeks. Which interpretation is best?",
+     "options": [
+      "The planet's apparent retrograde motion results from changing viewing geometry as Earth and the planet orbit.",
+      "The planet has stopped orbiting and is physically reversing its entire path.",
+      "The background stars are orbiting Earth in the opposite direction.",
+      "The Sun's rotation reverses the planet's orbit."
+     ],
+     "answer": 0,
+     "why": "Relative orbital motion can create an apparent reversal against distant background stars."
+    },
+    {
+     "id": "astr-mid-4",
+     "q": "A satellite moves farther from a planet while remaining gravitationally bound. Ignoring propulsion, what happens to its orbital speed and gravitational potential energy?",
+     "options": [
+      "Its speed decreases while its gravitational potential energy increases toward zero.",
+      "Its speed increases while its potential energy becomes more negative.",
+      "Both speed and potential energy remain constant at every point.",
+      "Its speed becomes zero as soon as its distance changes."
+     ],
+     "answer": 0,
+     "why": "In a bound orbit, a satellite is generally slower farther from the central body, and gravitational potential energy increases as separation grows."
+    },
+    {
+     "id": "astr-mid-5",
+     "q": "Two objects have the same mass, but one is twice as far from a planet's centre. How does the planet's gravitational force on it compare?",
+     "options": [
+      "It is one quarter as strong.",
+      "It is half as strong.",
+      "It is twice as strong.",
+      "It is four times as strong."
+     ],
+     "answer": 0,
+     "why": "Gravity follows an inverse-square dependence on separation."
+    },
+    {
+     "id": "astr-mid-6",
+     "q": "An astronaut feels weightless while orbiting Earth. Which explanation is most accurate?",
+     "options": [
+      "The astronaut and spacecraft are in continuous free fall together.",
+      "Earth's gravity is absent at orbital altitude.",
+      "The astronaut has lost mass but kept the same density.",
+      "The spacecraft is outside Earth's gravitational influence."
+     ],
+     "answer": 0,
+     "why": "Gravity remains significant in orbit; apparent weightlessness comes from shared free fall."
+    },
+    {
+     "id": "astr-mid-7",
+     "q": "A rotating cloud contracts while conserving angular momentum. Which outcome is expected if external torque is negligible?",
+     "options": [
+      "Its rotation rate increases as its size decreases.",
+      "Its rotation rate falls to zero.",
+      "Its total angular momentum must increase.",
+      "Its mass converts entirely into thermal energy."
+     ],
+     "answer": 0,
+     "why": "A smaller rotating system spins faster when angular momentum is conserved."
+    },
+    {
+     "id": "astr-mid-8",
+     "q": "A collision between two isolated objects occurs, but some kinetic energy becomes heat. Which statement can still remain true?",
+     "options": [
+      "Total momentum is conserved even though kinetic energy is not.",
+      "Both momentum and kinetic energy must decrease.",
+      "Kinetic energy conservation requires momentum to change.",
+      "Heat production prevents conservation of momentum."
+     ],
+     "answer": 0,
+     "why": "Momentum is conserved in an isolated system; kinetic energy can be transformed into other forms."
+    },
+    {
+     "id": "astr-mid-9",
+     "q": "A planet's orbit becomes more elliptical after an interaction. At which part of the orbit is its speed greatest?",
+     "options": [
+      "At its closest approach to the Sun",
+      "At its greatest distance from the Sun",
+      "At every point equally",
+      "Only when it crosses Earth's orbital plane"
+     ],
+     "answer": 0,
+     "why": "An orbiting object moves faster when nearer the Sun, consistent with conservation of orbital energy and angular momentum."
+    },
+    {
+     "id": "astr-mid-10",
+     "q": "A spectrum from a star has absorption lines at the same pattern of wavelengths as a laboratory element but shifted together. What does the shared pattern indicate?",
+     "options": [
+      "The element can be present in the star, while the shift can reveal relative motion.",
+      "The star must be made only of that element.",
+      "The element's lines are caused by the telescope's mirror shape.",
+      "The shift directly gives the star's distance without other information."
+     ],
+     "answer": 0,
+     "why": "Line patterns identify atoms or molecules, and a common shift can indicate Doppler motion."
+    },
+    {
+     "id": "astr-mid-11",
+     "q": "Two thermal sources have peaks at different wavelengths. Which source has the higher surface temperature?",
+     "options": [
+      "The source whose spectrum peaks at the shorter wavelength",
+      "The source whose spectrum peaks at the longer wavelength",
+      "The source with the smaller apparent size, regardless of spectrum",
+      "Neither; peak wavelength contains no temperature information"
+     ],
+     "answer": 0,
+     "why": "A hotter thermal source has its peak emission at a shorter wavelength."
+    },
+    {
+     "id": "astr-mid-12",
+     "q": "An atom emits a photon as an electron moves from a higher energy level to a lower one. Which statement must be true?",
+     "options": [
+      "The photon carries energy equal to the difference between the levels.",
+      "The electron gains energy from the photon while moving downward.",
+      "The photon must be a radio wave regardless of the level spacing.",
+      "The atom's number of protons changes."
+     ],
+     "answer": 0,
+     "why": "The emitted photon carries the energy lost as the electron transitions between levels."
+    },
+    {
+     "id": "astr-mid-13",
+     "q": "A galaxy's spectral lines are shifted toward longer wavelengths. Which conclusion is best supported before other effects are considered?",
+     "options": [
+      "The galaxy is receding along our line of sight.",
+      "The galaxy must be rotating so rapidly that it is breaking apart.",
+      "The galaxy is moving only across the sky with no radial motion.",
+      "The shift proves that its temperature is increasing."
+     ],
+     "answer": 0,
+     "why": "A redshift indicates motion away along the line of sight, though cosmological expansion can also contribute."
+    },
+    {
+     "id": "astr-mid-14",
+     "q": "A star's spectrum contains broad absorption features from both the star and Earth's atmosphere. What should an astronomer do to separate the sources?",
+     "options": [
+      "Compare with reference or calibration observations of the atmosphere.",
+      "Assume every absorption feature came from the star.",
+      "Replace spectroscopy with a single colour image.",
+      "Use only the star's apparent position."
+     ],
+     "answer": 0,
+     "why": "The atmosphere can imprint absorption features, so calibration helps distinguish terrestrial from astronomical signals."
+    },
+    {
+     "id": "astr-mid-15",
+     "q": "A larger telescope produces a brighter image of a dim galaxy, but the galaxy's apparent size is unchanged. Which statement best explains this?",
+     "options": [
+      "Aperture improves light collection; image scale and magnification are separate properties.",
+      "The aperture cannot affect recorded brightness.",
+      "The detector has become a gravitational-wave instrument.",
+      "The galaxy's physical size has changed."
+     ],
+     "answer": 0,
+     "why": "Aperture collects more light, while magnification and image scale address apparent size."
+    },
+    {
+     "id": "astr-mid-16",
+     "q": "An observatory combines two separated radio dishes and can distinguish a close pair of sources better than either dish alone. What has primarily improved?",
+     "options": [
+      "Angular resolution from the longer effective baseline",
+      "The sum of the dish areas beyond their physical sizes",
+      "The atmosphere's transmission of X-rays",
+      "The intrinsic brightness of both sources"
+     ],
+     "answer": 0,
+     "why": "Interferometry uses separation between telescopes to improve resolving power without enlarging each dish."
+    },
+    {
+     "id": "astr-mid-17",
+     "q": "A telescope's detector records a sharp image only when placed at one precise location behind the optics. What is that location?",
+     "options": [
+      "The focal plane",
+      "The celestial equator",
+      "The horizon",
+      "The transmission window"
+     ],
+     "answer": 0,
+     "why": "The focal plane is where incoming rays from a source are brought into focus."
+    },
+    {
+     "id": "astr-mid-18",
+     "q": "An orbit diagram shows Mercury, the asteroid belt, Jupiter, and a distant icy population in that order. Which interpretation best matches the solar-system structure?",
+     "options": [
+      "Rocky inner planets precede the asteroid belt and outer giant planets, with icy bodies beyond.",
+      "The asteroid belt lies beyond the Oort cloud.",
+      "All icy bodies orbit inside Mercury's path.",
+      "The diagram proves the planets' sizes are drawn to scale."
+     ],
+     "answer": 0,
+     "why": "The broad order of the regions is inner rocky planets, asteroid belt, outer planets, and distant small-body populations."
+    },
+    {
+     "id": "astr-mid-19",
+     "q": "A world is similar to Earth in size but has a dense carbon-dioxide atmosphere and extreme surface heating. Which comparison is most useful?",
+     "options": [
+      "Venus shows that similar size does not guarantee similar surface conditions.",
+      "Jupiter shows that rocky planets cannot retain atmospheres.",
+      "Mercury shows that every dense atmosphere causes extreme heating.",
+      "Neptune shows that all inner planets are ice giants."
+     ],
+     "answer": 0,
+     "why": "Venus and Earth are similar in size but have very different atmospheres and surface environments."
+    },
+    {
+     "id": "astr-mid-20",
+     "q": "A comet becomes active near the Sun and its tail points away from the Sun while the nucleus moves in another direction. Which process best accounts for this geometry?",
+     "options": [
+      "Solar heating releases gas and dust that radiation and solar wind push outward.",
+      "The tail is a solid extension trailing the comet's velocity.",
+      "The comet's gravity bends its own tail toward the Sun.",
+      "The nucleus is pushed backward by Earth's atmosphere."
+     ],
+     "answer": 0,
+     "why": "Released gas and dust are pushed away from the Sun, so the tail direction is not simply behind the comet's motion."
+    },
+    {
+     "id": "astr-mid-21",
+     "q": "Which observation is the strongest evidence for a rotating disk during solar-system formation?",
+     "options": [
+      "Most planets orbit in nearly the same plane and direction.",
+      "Every planet has the same number of moons.",
+      "All planets have exactly equal densities.",
+      "Every comet has a visible tail throughout its orbit."
+     ],
+     "answer": 0,
+     "why": "A flattened rotating disk naturally explains the coordinated orbital directions and planes."
+    },
+    {
+     "id": "astr-mid-22",
+     "q": "A small rocky body is round and orbits the Sun, but it shares its orbital neighborhood with many other sizable objects. Which classification is most appropriate?",
+     "options": [
+      "Dwarf planet",
+      "Major planet",
+      "Natural satellite",
+      "Cometary coma"
+     ],
+     "answer": 0,
+     "why": "A dwarf planet orbits the Sun and is nearly round but has not cleared its orbital neighborhood."
+    },
+    {
+     "id": "astr-mid-23",
+     "q": "A spacecraft must compare a surface mineral at one location with the composition of the planet as a whole. Which pairing provides the most complementary evidence?",
+     "options": [
+      "A lander or rover for local analysis and an orbiter for broad mapping",
+      "Two flybys with no instruments",
+      "A light curve alone and a larger display screen",
+      "A terrestrial telescope and a clock"
+     ],
+     "answer": 0,
+     "why": "Surface missions provide local measurements, while orbiters give repeated broad coverage."
+    },
+    {
+     "id": "astr-mid-24",
+     "q": "A space observatory detects radiation absorbed by Earth's atmosphere, while a ground telescope continues visible-light observations. Which conclusion follows?",
+     "options": [
+      "Space and ground observatories provide complementary wavelength access.",
+      "Ground telescopes cannot collect any electromagnetic radiation.",
+      "The atmosphere blocks every wavelength equally.",
+      "The space observatory changes the source's emission."
+     ],
+     "answer": 0,
+     "why": "Ground instruments remain valuable in atmospheric windows, while space telescopes can access blocked wavelengths."
+    }
+   ]
+  },
+  {
+   "id": "challenge",
+   "title": "ASTR 207 Challenge Practice",
+   "blurb": "12 multi-step questions on sky motions, Newton's laws, orbits, light, spectra, and telescopes.",
+   "questionIds": [
+    "ts-40",
+    "mo-49",
+    "cv-30",
+    "cv-31",
+    "gr-50",
+    "gr-51",
+    "li-33",
+    "li-34",
+    "ma-44",
+    "ma-45",
+    "tel-25",
+    "pln-25"
+   ],
+   "questions": []
+  },
+  {
+   "id": "t5",
+   "title": "Practice Exam 5: Telescopes and Our Planetary System",
+   "blurb": "48 questions on lenses, mirrors and telescopes, light across the spectrum, then the Sun, planets, moons and small bodies.",
+   "questions": [
+    {
+     "id": "x5-1",
+     "q": "What is the purpose of the lens in an eye?",
+     "options": [
+      "to prevent dust and irritants from entering the eye",
+      "to bend light entering the eye so that it is focused onto the retina",
+      "to adjust the amount of light entering the eye",
+      "to send optical signals to the brain to be interpreted",
+      "to separate the light collected by the eye into colours"
+     ],
+     "answer": 1,
+     "why": "The lens of the eye bends (refracts) incoming light so that it comes to a focus on the retina, where the image is detected. Adjusting how much light enters is the job of the iris and pupil, not the lens. Eyelids, lashes and tears keep out dust, and the retina and optic nerve (not the lens) send the signals to the brain. The eye does not split light into colours.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q1; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-2",
+     "q": "Which of the following is used in a lens to focus light into an image?",
+     "options": [
+      "Refraction",
+      "Transmission",
+      "Absorption",
+      "Diffraction",
+      "Reflection"
+     ],
+     "answer": 0,
+     "why": "A lens focuses light by refraction: light changes direction as it passes from air into curved glass, so parallel rays are bent to meet at a focus. Transmission only means light passes through, and absorption removes light instead of focusing it. Reflection is what a mirror uses, not a lens. Diffraction is the spreading of waves at edges, which limits how sharp an image can be but does not form it.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q2; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-3",
+     "q": "What is the benefit of a longer exposure time when making an image?",
+     "options": [
+      "It allows the detector to collect more total light.",
+      "It allows the detector to achieve higher angular resolution.",
+      "It allows the detector to measure rapid variations in light intensity.",
+      "It allows the detector to record light at very short wavelengths."
+     ],
+     "answer": 0,
+     "why": "A longer exposure lets the detector keep adding up light from a faint source, so it records more total light and can reveal dimmer objects. Angular resolution depends on the telescope's diameter and the wavelength, not on how long you expose. Following rapid changes in brightness needs short exposures, not long ones, and which wavelengths can be recorded depends on the detector itself.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q3; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-4",
+     "q": "How does the light-collecting area of a telescope with a 10-meter diameter mirror compare to that of a telescope with a 5-meter diameter mirror?",
+     "options": [
+      "The 10-meter telescope has 4 times the light collecting area.",
+      "The 10-meter telescope has 2 times the light collecting area.",
+      "The 10-meter telescope has 10 times the light collecting area."
+     ],
+     "answer": 0,
+     "why": "Light-collecting area depends on the square of the diameter, because area = π(D/2)². Going from 5 m to 10 m doubles the diameter, so the area is 2² = 4 times larger. A factor of 2 is just the ratio of the diameters, which is the usual slip, and a factor of 10 would need a mirror 10 times wider than the small one.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q4; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-5",
+     "q": "How does the best possible angular resolution of a telescope with a 10-meter diameter mirror compare to that of a telescope with a 5-meter diameter mirror?",
+     "options": [
+      "The 10-meter telescope's angular resolution is better by a factor of 2.",
+      "The 10-meter telescope's angular resolution is better by a factor of 4.",
+      "The 10-meter telescope's angular resolution is better by a factor of 10."
+     ],
+     "answer": 0,
+     "why": "The best angular resolution (the diffraction limit) is proportional to the wavelength divided by the diameter. Doubling the diameter from 5 m to 10 m therefore halves the smallest angle the telescope can separate, so its resolution is better by a factor of 2. The factor of 4 belongs to light-collecting area, not to resolution, and nothing makes the improvement tenfold.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q5; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-6",
+     "q": "Suppose two stars are separated in the sky by 0.1 arcseconds. If you take a picture of them with the SOAR telescope, which has an angular resolution of 0.6 arcsecond, what will you see?",
+     "options": [
+      "nothing at all",
+      "two separate points of light",
+      "one point of light that is the blurred image of both stars"
+     ],
+     "answer": 2,
+     "why": "SOAR can only separate objects that are more than about 0.6 arcsecond apart. These two stars are just 0.1 arcsecond apart, six times closer than that limit, so their images overlap and merge into one blurred spot of light. Blurring does not make the light disappear, so you would still see something. Two separate points would require a resolution of 0.1 arcsecond or better.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q6; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-7",
+     "q": "If you want to see the image formed by a telescope, you should place your eye at the location of the telescope's",
+     "options": [
+      "Cassegrain.",
+      "focus.",
+      "secondary mirror.",
+      "primary mirror.",
+      "central hole in the primary mirror."
+     ],
+     "answer": 1,
+     "why": "A telescope brings light to a focus, and the image exists at that point, so that is where an eyepiece (or your eye) must be placed to see it. The primary and secondary mirrors only collect and redirect the light. A Cassegrain is a type of telescope design, and the hole in the primary mirror is just a passage the light travels through on its way to the focus.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q7; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-8",
+     "q": "Which of the following is one important reason why most large astronomical telescopes are reflecting telescopes rather than refracting telescopes?",
+     "options": [
+      "Reflecting telescopes have their heaviest component (the mirror) at the bottom rather than the top of the telescope's tube.",
+      "Reflecting telescopes take up less space than refracting telescopes.",
+      "Reflecting telescopes are taller than refracting telescopes.",
+      "For a mirror and lens of the same diameter, a mirror will collect more light."
+     ],
+     "answer": 0,
+     "why": "A big mirror sits at the bottom of the tube and can be supported across its whole back, while a big lens sits at the top and can be held only around its edge, so it sags under its own weight. That support problem is a major reason why giant telescopes are reflectors. A mirror and a lens of the same diameter collect the same amount of light, so that option is wrong. Reflectors are not taller, and being more compact is a side benefit, not what makes very large telescopes possible.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q8; key = the option the student selected and scored correct (48/48); key 0 matches the reason given in the book (mirror mounted at the bottom, large lens held only at its edge, p. 170, PDF p. 192; Ch6.2_pt1 slides 8-9)",
+     "derived": false
+    },
+    {
+     "id": "x5-9",
+     "q": "Which of the following measurements can be made only by recording and comparing the amount of light received from an astronomical source at many different times?",
+     "options": [
+      "the rate at which a variable star brightens and dims",
+      "the color of a planet",
+      "the general shape of an interstellar cloud of gas",
+      "the number of bright stars in a nearby star cluster"
+     ],
+     "answer": 0,
+     "why": "To find how fast a variable star brightens and dims you have to measure its brightness again and again and compare the measurements over time. The colour of a planet, the shape of a gas cloud and the number of bright stars in a cluster can all be found from a single image taken at one moment.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q9; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-10",
+     "q": "Which of the following could not be determined by an observation that only uses spectroscopy?",
+     "options": [
+      "the chemical composition of a distant star",
+      "the speed at which a distant galaxy is moving away from us",
+      "the surface temperature of a distant star",
+      "the rotation rate of a distant star",
+      "the angular size of a distant galaxy"
+     ],
+     "answer": 4,
+     "why": "A spectrum spreads light out by wavelength, but it is not an image, so it cannot tell you how large an object appears on the sky. Spectral lines still reveal composition (which lines appear), temperature (the shape of the spectrum and which lines are strong), the Doppler shift that gives how fast a galaxy recedes, and rotation (spinning broadens the lines).",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q10; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-11",
+     "q": "What is meant by spectral resolution?",
+     "options": [
+      "It is a measure of how close two stars can be in the sky and still be distinguishable.",
+      "It is a measure of how close two spectral lines can be and still be distinguishable.",
+      "It is a measure of how much energy an object emits in different parts of the electromagnetic spectrum.",
+      "It is the same as angular resolution but applied to telescopes operating at different wavelengths."
+     ],
+     "answer": 1,
+     "why": "Spectral resolution describes how well a spectrograph can tell two nearby wavelengths apart, meaning how close two spectral lines can be and still be seen as separate lines. How close two stars can be in the sky is angular resolution. Energy emitted at different wavelengths is the spectrum itself, not its resolution, and spectral resolution is not just angular resolution at other wavelengths.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q11; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-12",
+     "q": "What do astronomers mean by light pollution?",
+     "options": [
+      "Light pollution refers to pollution caused by light industry as opposed to heavy industry.",
+      "Light pollution refers to harmful gases emitted by common street lights.",
+      "Light pollution refers to light used for human activities that brightens the sky and hinders astronomical observations.",
+      "Light pollution refers to the lights that must be used inside major observatories and that make it difficult for astronomers' eyes to adapt to darkness.",
+      "Light pollution is another name for sunlight, which makes it impossible to see stars in the daytime."
+     ],
+     "answer": 2,
+     "why": "Light pollution is stray artificial light from cities, streets and buildings that brightens the night sky and washes out faint astronomical objects. It has nothing to do with light industry, harmful gases from lamps or the lights inside an observatory, and sunlight in the daytime is a natural effect, not pollution.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q12; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-13",
+     "q": "What causes stars to twinkle?",
+     "options": [
+      "The human eye has difficulty seeing faint objects.",
+      "Interstellar gas along the line of sight to the star absorbs different amounts of radiation.",
+      "Moving gases in Earth's atmosphere randomly bend light rays from stars.",
+      "Stars constantly vary in brightness as they expand and contract."
+     ],
+     "answer": 2,
+     "why": "Twinkling happens because pockets of air in Earth's atmosphere are constantly moving, and they randomly bend the starlight in slightly different directions from moment to moment. That makes the star's brightness and position flicker. It is not a weakness of the eye, and stars that are pulsing change over days or longer, not many times a second. Gas between the stars does not flicker on this time scale.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q13; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-14",
+     "q": "What is the purpose of adaptive optics?",
+     "options": [
+      "to increase the collecting area of telescopes on the ground",
+      "to reduce the distorting effects of atmospheric turbulence for telescopes on the ground",
+      "to allow several small telescopes to work together like a single larger telescope",
+      "to increase the magnification of telescopes on the ground",
+      "to improve the angular resolution of telescopes in space"
+     ],
+     "answer": 1,
+     "why": "Adaptive optics uses a flexible mirror, adjusted many times each second, to cancel the blurring that turbulent air causes, so a ground telescope gets much sharper images. It does not enlarge the collecting area, combine separate telescopes (that is interferometry), or add magnification. Space telescopes are above the air and do not need it.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q14; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-15",
+     "q": "Which of the following is not a good reason to place an observatory on a remote mountain?",
+     "options": [
+      "allow study of infrared light",
+      "reduce the twinkling caused by Earth's atmosphere",
+      "reduce the impact of light pollution",
+      "allow observations at ultraviolet and x-ray wavelengths"
+     ],
+     "answer": 3,
+     "why": "A remote mountaintop helps with infrared light (it is above most of the water vapour that absorbs it), with steadier images (less air above) and with darker skies away from city lights. It does not help with ultraviolet or x-rays, because the atmosphere blocks those wavelengths even at the summit, so they can only be observed from space.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q15; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-16",
+     "q": "Earth's atmosphere is most transparent to all wavelengths of ________ light.",
+     "options": [
+      "both visible and ultraviolet",
+      "ultraviolet",
+      "x-ray",
+      "visible",
+      "infrared"
+     ],
+     "answer": 3,
+     "why": "The atmosphere lets visible light through (and radio waves, which are not offered here). Ultraviolet and x-rays are absorbed high in the atmosphere, so options that include them are wrong. Infrared is only partly transmitted: water vapour and carbon dioxide block most of it, leaving a few narrow windows.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q16; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-17",
+     "q": "What is the best reason to put a visible-light telescope in space instead of on the ground?",
+     "options": [
+      "Space telescopes are not affected by earthquakes.",
+      "A space telescope is closer to the source of the light, so it can make a clearer image.",
+      "The telescope is above the atmosphere so the light does not get distorted by turbulent air.",
+      "It is easier to launch very large space telescopes into space than to find places for them on the ground."
+     ],
+     "answer": 2,
+     "why": "Above the atmosphere there is no turbulent air to blur the light, so a space telescope can reach the sharpness its mirror allows. Being slightly closer to a star changes nothing, since the stars are trillions of kilometres away. Earthquakes are rarely the main problem on the ground, and launching a huge telescope is actually harder than building it on the ground.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q17; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-18",
+     "q": "The largest diameter telescopes are used to observe",
+     "options": [
+      "infrared light.",
+      "x-rays.",
+      "ultraviolet light.",
+      "visible light.",
+      "radio waves."
+     ],
+     "answer": 4,
+     "why": "Radio waves are very long, so a radio telescope must be enormous to reach a useful angular resolution, and radio signals from space are very weak. The surface of a radio dish also only has to be smooth to a fraction of a long wavelength, so huge dishes and arrays are practical. Mirrors for shorter wavelengths have to be polished far more precisely, which limits their size.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q18; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-19",
+     "q": "Which of the following would be the most useful ultraviolet telescope?",
+     "options": [
+      "a 30-meter telescope on a mountain",
+      "a 1-meter telescope in space",
+      "a 10-meter telescope on a mountain",
+      "a 2.5-meter telescope in space"
+     ],
+     "answer": 3,
+     "why": "Ultraviolet light is absorbed by Earth's atmosphere, so a useful ultraviolet telescope has to be in space. That rules out the two mountain telescopes however big they are. Of the two space telescopes, the 2.5-meter one collects about 2.5² ≈ 6 times as much light as the 1-meter one and also has finer resolution.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q19; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-20",
+     "q": "Which of the following best describes how and why x-ray telescopes differ from visible light telescopes?",
+     "options": [
+      "X-ray telescopes use grazing incidence mirrors because x-ray photons will penetrate a normal mirror.",
+      "X-ray telescopes have to be built with very thick mirrors because x-ray photons will penetrate a thin mirror.",
+      "X-ray telescopes do not use mirrors because x-ray photons cannot be focused.",
+      "X-ray telescopes must be much larger because of the small number of x-ray photons.",
+      "X-ray telescopes cannot do spectroscopy because all x-ray photons have the same wavelength."
+     ],
+     "answer": 0,
+     "why": "X-ray photons carry so much energy that they would pass into an ordinary mirror instead of bouncing off. They can only be reflected if they skim the surface at a very shallow angle, so x-ray telescopes use nested grazing-incidence mirrors. They can be focused, they do not need thick mirrors, and x-ray photons come in many wavelengths, so spectroscopy is possible.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q20; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-21",
+     "q": "What does the technique of interferometry allow?",
+     "options": [
+      "It allows two or more telescopes to obtain a total light-collecting area much larger than the total light-collecting area of the individual telescopes.",
+      "It allows us to determine the chemical composition of stars.",
+      "It allows astronomers to make astronomical observations without interference from light pollution.",
+      "It allows the same telescope to make images with both radio waves and visible light.",
+      "It allows two or more telescopes to obtain the angular resolution of a single telescope much larger than any of the individual telescopes."
+     ],
+     "answer": 4,
+     "why": "Interferometry combines the signals from several telescopes so that together they achieve the angular resolution of one telescope as wide as the distance between them. It does not create extra light-collecting area (the total light collected is still the sum of the separate telescopes), and it has nothing to do with composition, light pollution or imaging in two kinds of waves.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q21; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-22",
+     "q": "Astronomers sometimes make use of \"neutrino telescopes,\" which are typically located deep underground. What are neutrinos?",
+     "options": [
+      "a very high-energy form of light",
+      "a type of light-weight subatomic particle",
+      "a very low-energy form of light",
+      "a type of wave predicted to exist by Einstein's general theory of relativity"
+     ],
+     "answer": 1,
+     "why": "Neutrinos are extremely light subatomic particles that hardly ever interact with matter, made in nuclear reactions in the Sun and in exploding stars. They are particles, not forms of light of any energy, and they are not the gravitational waves of general relativity. The detectors sit deep underground so that other particles are blocked and only the neutrinos get through.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q22; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-23",
+     "q": "Are cosmic rays a form of light?",
+     "options": [
+      "No, they consist of high-energy subatomic particles, not of electromagnetic waves.",
+      "Yes, they are the name we give to all rays of light that come from the cosmos.",
+      "Yes, they are light waves with higher energy than gamma rays.",
+      "Yes, they are light waves with lower energy than radio waves."
+     ],
+     "answer": 0,
+     "why": "Cosmic rays are fast-moving subatomic particles, mostly protons and atomic nuclei, not electromagnetic waves, so they are not light. Light of higher energy than gamma rays or lower energy than radio waves does not exist as a separate class, and the name does not mean all light from the cosmos.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q23; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-24",
+     "q": "What are gravitational waves?",
+     "options": [
+      "the name we give to electromagnetic waves that come from astronomical objects that have gravity",
+      "a type of energy that is different from light and that has been detected from sources such as merging neutron stars and black holes",
+      "a form of light with higher energy than gamma rays",
+      "a form of light with lower energy than radio waves"
+     ],
+     "answer": 1,
+     "why": "Gravitational waves are ripples in space and time predicted by Einstein's general theory of relativity. They are a different kind of signal from light, and they have been detected from merging black holes and merging neutron stars. They are not electromagnetic waves, so they cannot be light with more energy than gamma rays or less than radio waves.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q24; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-25",
+     "q": "Which of the following telescopes is best suited for studying the hottest intergalactic gas (10 million K) in a cluster of galaxies?",
+     "options": [
+      "Chandra X-ray Telescope",
+      "Very Large Array Radio Telescope",
+      "Hubble Space Telescope (UV, optical, and some infrared)",
+      "Herschel Infrared Telescope"
+     ],
+     "answer": 0,
+     "why": "Gas at 10 million K is so hot that it glows mainly in x-rays, and x-rays are blocked by the atmosphere, so you need an x-ray telescope in space such as Chandra. Radio, ultraviolet/visible and infrared telescopes are suited to cooler material, because hotter objects emit shorter wavelengths.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q25; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-26",
+     "q": "If we could combine all the planets together, their total mass would be about ________ the Sun's mass.",
+     "options": [
+      "double",
+      "1/1000 of",
+      "half of",
+      "1/10 of",
+      "the same as"
+     ],
+     "answer": 1,
+     "why": "The Sun holds about 99.9% of all the mass in the Solar System. The planets together add up to only about 1/1000 of the Sun's mass, and Jupiter alone is most of that. Every other choice makes the planets far too massive.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q26; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-27",
+     "q": "Where does nuclear fusion occur in the Sun?",
+     "options": [
+      "in the photosphere",
+      "in the chromosphere",
+      "in the core",
+      "in the corona",
+      "in the convection layer"
+     ],
+     "answer": 2,
+     "why": "Fusion needs a temperature of about 15 million K and enormous pressure, which exist only in the Sun's core. The photosphere is about 5800 K, and the chromosphere, corona and convection layer are all too cool or too thin for fusion.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q27; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-28",
+     "q": "Which planet has the most extreme differences between its daytime and nighttime temperatures?",
+     "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Mercury",
+      "Earth"
+     ],
+     "answer": 3,
+     "why": "Mercury has almost no atmosphere to trap or spread heat and it rotates slowly, so its sunlit side reaches about 700 K while the night side falls to around 100 K. Venus has a thick atmosphere that keeps day and night nearly equal, and Earth and Mars have atmospheres and much smaller swings than Mercury. Jupiter has no solid surface to compare, and it is far from the Sun.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q28; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-29",
+     "q": "Which planet is most similar in size and mass to Earth?",
+     "options": [
+      "Venus",
+      "Jupiter",
+      "Mars",
+      "Neptune",
+      "Mercury"
+     ],
+     "answer": 0,
+     "why": "Venus is about 95% of Earth's diameter and about 80% of its mass, so it is Earth's near twin in size and mass. Mars and Mercury are much smaller, and Jupiter and Neptune are giant planets many times bigger than Earth.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q29; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-30",
+     "q": "What is surprising about Earth's Moon?",
+     "options": [
+      "It has a surprisingly large number of craters.",
+      "It orbits surprisingly far away from Earth.",
+      "It is surprisingly large in comparison to the size of its planet.",
+      "The fact that it lacks a significant atmosphere."
+     ],
+     "answer": 2,
+     "why": "Earth's Moon is unusually large compared with the planet it orbits, about one quarter of Earth's diameter, while most moons are tiny compared with their planets. Many craters are expected on a world that has no atmosphere or active geology to erase them, its distance is not unusual, and small bodies are not expected to keep an atmosphere.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q30; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-31",
+     "q": "Which of the following indicates that past conditions on Mars may have been suitable for life?",
+     "options": [
+      "There are very large extinct volcanoes on Mars.",
+      "There are dried up riverbeds, rock-strewn floodplains, and minerals that form in water.",
+      "Mars has two small Moons, Phobos, and Deimos.",
+      "Mars has been studied by numerous spacecraft, including both orbiters and landers.",
+      "Mars has polar caps."
+     ],
+     "answer": 1,
+     "why": "Dried-up riverbeds, rock-strewn floodplains and minerals that form in water show that liquid water once flowed on Mars, and water is a key requirement for life as we know it. Volcanoes, small moons, spacecraft visits and polar caps do not by themselves say anything about habitability.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q31; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-32",
+     "q": "Which planet is orbited by the four \"Galilean moons\" known individually as Io, Europa, Ganymede, and Callisto?",
+     "options": [
+      "Uranus",
+      "Mars",
+      "Neptune",
+      "Saturn",
+      "Jupiter"
+     ],
+     "answer": 4,
+     "why": "Io, Europa, Ganymede and Callisto were discovered by Galileo orbiting Jupiter, which is why they are called the Galilean moons. The other planets listed have their own moon systems, but not these four.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q32; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-33",
+     "q": "The most massive planet in our solar system is",
+     "options": [
+      "Jupiter.",
+      "Saturn.",
+      "Uranus.",
+      "Neptune.",
+      "Mars."
+     ],
+     "answer": 0,
+     "why": "Jupiter is more massive than all the other planets put together (about 318 times Earth's mass). Saturn is next at about 95 Earth masses, Uranus and Neptune are around 15 to 17, and Mars is a small fraction of Earth's.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q33; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-34",
+     "q": "Uranus's large axis tilt causes it to",
+     "options": [
+      "have very short days and nights.",
+      "be very hot.",
+      "be very cold.",
+      "keep one side facing the Sun at all times.",
+      "have extreme seasonal variations."
+     ],
+     "answer": 4,
+     "why": "Uranus is tipped on its side (its axis is tilted nearly 98°), so over its 84-year orbit each pole points toward the Sun and then away from it, which gives extreme seasons. The tilt does not change the length of its day, make it hot, or lock one side toward the Sun, and its low temperature comes from its great distance from the Sun.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q34; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-35",
+     "q": "Which of the following factors was very important to the decision to classify Pluto as a dwarf planet rather than a \"regular\" planet?",
+     "options": [
+      "its large distance from the Sun",
+      "its relatively large moon, Charon",
+      "its small size and mass",
+      "its composition of ice and rock"
+     ],
+     "answer": 2,
+     "why": "Pluto is small, and it has less mass than our Moon, so its gravity has not cleared other objects out of its neighbourhood in the Kuiper belt. Its great distance, its icy and rocky makeup and its large moon Charon do not separate it from the planets: Neptune is also distant and made of ice and rock, and Earth has a large moon.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q35; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-36",
+     "q": "In what region of the solar system is Pluto found?",
+     "options": [
+      "the Oort cloud",
+      "the asteroid belt",
+      "the terrestrial planet region",
+      "the Kuiper belt"
+     ],
+     "answer": 3,
+     "why": "Pluto orbits in the Kuiper belt, the region of icy bodies beyond Neptune. The Oort cloud is much farther out, the asteroid belt lies between Mars and Jupiter, and the terrestrial planet region is the inner Solar System.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q36; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-37",
+     "q": "Which of the following worlds could an astronaut visit without the need for a spacesuit (and survive)?",
+     "options": [
+      "Mercury",
+      "Venus",
+      "The Moon",
+      "Mars",
+      "None of the above; an astronaut would need a spacesuit to survive a visit to any world in the solar system (aside from Earth)."
+     ],
+     "answer": 4,
+     "why": "Mercury and the Moon have no atmosphere, Mars has an atmosphere far too thin to breathe or to keep your blood from boiling, and Venus has a crushing, hot, poisonous atmosphere. An astronaut would need a spacesuit on all of them, so none of the listed worlds is safe without one.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q37; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-38",
+     "q": "Which of the following planets has a ring system?",
+     "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune",
+      "All of the above"
+     ],
+     "answer": 4,
+     "why": "All four of the jovian planets have rings. Saturn's are the famous ones, but Jupiter, Uranus and Neptune each have rings too, much fainter and thinner ones.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q38; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-39",
+     "q": "Which of the following is not a characteristic of all the terrestrial planets?",
+     "options": [
+      "They have higher densities than the jovian planets.",
+      "They have substantial atmospheres.",
+      "They are located closer to the Sun than the jovian planets.",
+      "They are smaller than the jovian planets.",
+      "They have solid, rocky surfaces."
+     ],
+     "answer": 1,
+     "why": "Mercury has almost no atmosphere, and Mars has a very thin one, so having a substantial atmosphere is not true of all the terrestrial planets. They are all rocky, small, dense and closer to the Sun than the jovian planets, which is true of every one of them.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q39; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-40",
+     "q": "Which of the following is not a characteristic of the jovian planets?",
+     "options": [
+      "They have rings.",
+      "They are primarily made of hydrogen, helium, and hydrogen compounds.",
+      "They are located further from the Sun than the terrestrial planets.",
+      "They have higher average densities than the terrestrial planets.",
+      "They have thick atmospheres."
+     ],
+     "answer": 3,
+     "why": "The jovian planets are made mostly of light gases, so their average densities are much lower than those of the rocky terrestrial planets (Saturn is less dense than water). They do have rings, hydrogen and helium rich makeup, thick atmospheres and positions farther from the Sun.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q40; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-41",
+     "q": "The Oort cloud is",
+     "options": [
+      "the cloud of gas from which the solar system formed.",
+      "a region in the same plane as the planets that contains hundreds of thousands of comets.",
+      "a roughly spherical region larger than the orbit of Pluto that may contain a trillion comets.",
+      "a vast cloud of gas that encircles the solar system at a great distance from the Sun.",
+      "a circular region between the orbits of Mars and Jupiter that contains most known asteroids."
+     ],
+     "answer": 2,
+     "why": "The Oort cloud is a roughly spherical shell of icy bodies, far outside the orbit of Pluto, that may hold a trillion comets. A flat region near the planets is the Kuiper belt, the gas cloud that formed the Solar System was the solar nebula, and the asteroid belt lies between Mars and Jupiter.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q41; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-42",
+     "q": "Which of the following is farthest from the Sun?",
+     "options": [
+      "a comet in the Oort cloud",
+      "a comet in the Kuiper belt",
+      "Neptune",
+      "Pluto",
+      "an asteroid in the asteroid belt"
+     ],
+     "answer": 0,
+     "why": "Oort cloud comets are thousands of times farther from the Sun than Earth, far beyond everything else listed. Kuiper belt comets, Neptune and Pluto are all within about 30 to 50 AU, and asteroids in the asteroid belt are only 2 to 3 AU from the Sun.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q42; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-43",
+     "q": "What is the major difference between asteroids and comets?",
+     "options": [
+      "Asteroids never have tails and comets always have tails.",
+      "Asteroids are smaller than comets.",
+      "Asteroids are larger than comets.",
+      "Asteroids are low in density and comets are high in density.",
+      "Asteroids are rocky and comets are icy."
+     ],
+     "answer": 4,
+     "why": "Asteroids are mainly rock and metal, while comets are ice-rich, which comes from the places where they formed (inside or beyond the frost line). Size and density do not separate them: both come in many sizes. Comets develop tails only when they warm up near the Sun, so they do not always have tails.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q43; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-44",
+     "q": "What is unusual about the planet Venus?",
+     "options": [
+      "It orbits the Sun faster than it should give the size of its orbit.",
+      "It does not orbit the Sun in the same plane as the other planets.",
+      "It orbits the Sun in a direction opposite that of all the other planets.",
+      "It rotates in a direction opposite to the direction of its orbit.",
+      "It rotates extremely rapidly around its axis."
+     ],
+     "answer": 3,
+     "why": "Venus rotates backward (retrograde), in the direction opposite to its own orbit, and very slowly, so the Sun would rise in the west. It orbits the Sun in the same direction as the other planets and in nearly the same plane, at the speed expected for its distance. It rotates once in 243 Earth days, which is extremely slow, not rapid.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q44; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-45",
+     "q": "Which of the following is a significant drawback for a flyby mission as compared to an orbiter to a distant world?",
+     "options": [
+      "The flyby can study the planet for a much shorter time than the orbiter.",
+      "The flyby cannot reach the planet as quickly as the orbiter.",
+      "The flyby cannot have instruments as sophisticated as the orbiter.",
+      "The flyby cannot get as close to the planet as the orbiter."
+     ],
+     "answer": 0,
+     "why": "A flyby spacecraft passes the planet once and has to keep going, so it can study the planet only for a short time, while an orbiter stays and observes for years. A flyby often reaches the planet sooner than an orbiter, which must also spend fuel slowing down, and it can carry sophisticated instruments, so those are not its drawbacks.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q45; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-46",
+     "q": "Why would it not be a good idea to send a lander to one of the jovian planets?",
+     "options": [
+      "There is nothing interesting to find on the jovian planets.",
+      "It would be impossible to slow the lander down sufficiently to avoid a catastrophic crash.",
+      "The jovian planets are too far away.",
+      "The jovian planets have no solid surface to land on.",
+      "There's too much risk of hitting a boulder in the planet's rings on the way down."
+     ],
+     "answer": 3,
+     "why": "Jupiter, Saturn, Uranus and Neptune have no solid surface: they are made mostly of gas and liquid that gets thicker and hotter with depth, so a lander would have nothing to land on. Slowing down is possible, they are not too far to reach, and there is plenty of interesting science there.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q46; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-47",
+     "q": "Have astronomers ever seen a gas cloud that looks like it contains planetary systems that are in the process of forming?",
+     "options": [
+      "Yes, but only the original cloud that formed our own solar system.",
+      "Yes, but only in distant galaxies, not in our own Milky Way.",
+      "Yes, there are many such clouds, including the Orion Nebula.",
+      "No, there is no evidence that any interstellar clouds are currently giving birth to stars."
+     ],
+     "answer": 2,
+     "why": "The Orion Nebula is a gas cloud where many stars are forming, and the Hubble images show young stars surrounded by disks where planets are probably forming. This is the same kind of process thought to have formed our Solar System. Stars are forming in many clouds in our own Milky Way, so it is not true that only our original cloud, or only distant galaxies, show this.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q47; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    },
+    {
+     "id": "x5-48",
+     "q": "Which of the following is NOT a pattern of motion in our Solar System?",
+     "options": [
+      "The planets orbit the Sun in a direction opposite that of the Sun's rotation.",
+      "Most planets rotate in the same direction they orbit.",
+      "Most planetary orbits lie in the same plane.",
+      "Most planets orbit in the same direction.",
+      "Almost all large moons orbit their planet in the same direction as the planet's rotation."
+     ],
+     "answer": 0,
+     "why": "The planets orbit the Sun in the same direction as the Sun rotates, so the statement that they orbit the opposite way is false and is not a pattern. The other statements are real patterns: most planets rotate in the direction they orbit (Venus and Uranus are exceptions), most orbits lie in nearly the same plane, most planets orbit in the same direction, and large moons orbit in the direction their planet rotates.",
+     "source": "admin-only: student's Assignment 5 (optics, telescopes and our planetary system) Q48; key = the option the student selected and scored correct (48/48)",
+     "derived": false
+    }
+   ]
+  },
+  {
+   "id": "t6",
+   "title": "Practice Exam 6: Solar System Formation and Planetary Geology",
+   "blurb": "48 questions on how the Solar System formed, then on the interiors, surfaces and plate tectonics of the terrestrial planets.",
+   "questions": [
+    {
+     "id": "x6-1",
+     "q": "Which of the following observations of an extrasolar planet system would be inconsistent with what we expect from the nebular theory of solar system formation?",
+     "options": [
+      "a system in which some planets have small moons orbiting in a direction opposite to the planet's rotation",
+      "a system which has two terrestrial planets close in and two jovian planets farther out",
+      "a system in which all the planets orbit in completely different planes",
+      "a system in which some planets rotate in a direction opposite to their orbits"
+     ],
+     "answer": 2,
+     "why": "The nebular theory says planets form in a flat disk made when the collapsing cloud flattened, so planets should orbit in nearly the same plane. A system where every planet orbits in a completely different plane would contradict that. The other systems fit the theory: some small moons can be captured planetesimals orbiting the wrong way, rocky planets inside and gas giants outside is the pattern the frost line predicts, and a planet spinning against its orbit can come from a giant impact.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q1 (no printed key); key checked: nebular theory predicts one flat disk: Cosmic Perspective 10e p. 221 (PDF p. 243); Ch8.2_pt1 slide 4; key 2 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-2",
+     "q": "Which of the following is NOT evidence against the close encounter hypothesis of star system formation?",
+     "options": [
+      "We observe the planets all orbiting in the same direction around the Sun.",
+      "The vast majority of stars have orbiting planets.",
+      "The composition of the Sun is very different from that of the planets.",
+      "We observe stars forming from protoplanetary disks in nebulae."
+     ],
+     "answer": 3,
+     "why": "Three of the statements are things the close encounter idea cannot explain. It could not account for the orderly motions of the planets, such as all orbiting the same way, or for planets that differ so much from the Sun (the Sun is nearly all hydrogen and helium, while the terrestrial planets are rock and metal). It also required a very rare near-collision between stars, which cannot explain the many planetary systems we see around most stars. Watching young stars form with disks in nebulae is different: it is direct support for the nebular theory rather than a failure of the close encounter idea itself.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q2 (no printed key); key checked: KEY CHANGED from tentative 0 (same direction) to 3. Close encounter problems listed: could not explain observed orbital motions and the terrestrial/jovian division, needs a rare near-collision, cannot explain many other planetary systems (Cosmic Perspective 10e p. 218, PDF p. 240; Ch8.1 slide 3). Watching stars form with disks in nebulae is listed as support for the nebular theory (Ch8.1 slide 6; p. 219-220, PDF p. 241-242), not as a problem of the close encounter idea. Least certain key of the set.",
+     "derived": true
+    },
+    {
+     "id": "x6-3",
+     "q": "Which of the following is NOT a step in the stellar recycling process?",
+     "options": [
+      "Stars release their chemical contents at the end of their lives, either gradually in the form of a planetary nebula, or more violently in a supernova explosion.",
+      "Radioactivity breaks down the large nuclei of heavy elements, ensuring there is sufficient hydrogen and helium for future generations of stars.",
+      "Nuclear fusion within stars produces elements with higher atomic numbers, up to iron in some stars.",
+      "Nebulae collapse under gravity, forming new stars."
+     ],
+     "answer": 1,
+     "why": "Stellar recycling is: stars form in gas clouds, fusion builds heavier elements, dying stars return that material to space as a planetary nebula or supernova, and the enriched gas forms new stars. Radioactivity breaking down heavy nuclei is not a step, and hydrogen and helium were made in the Big Bang, not by decay. Fusion in stars building elements up to iron is a correct step.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q3 (no printed key); key checked: galactic recycling: Ch8.1 slide 5; p. 219 (PDF p. 241); key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-4",
+     "q": "Which of the following is most important in causing a cloud of gas to collapse to form a star and planets?",
+     "options": [
+      "Pressure from other gas clouds pushes the gas inward.",
+      "Gravity pulls all the gas inward.",
+      "Pressure from light from nearby stars pushes the gas inward.",
+      "Opposite charges in the gas attract.",
+      "Some gas is sent outward, causing the rest to move inward to conserve momentum."
+     ],
+     "answer": 1,
+     "why": "Gravity pulls every bit of gas toward all the rest, so when a cloud is dense enough gravity makes it collapse and form a star and planets. A shock wave from a nearby supernova may start the collapse, but it is gravity that keeps it going. Pressure from light or other clouds, attraction of opposite charges (the gas is neutral overall) and momentum from outward-flung gas are not the main cause.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q4 (no printed key); key checked: gravity drives the collapse (supernova may trigger it): p. 220 (PDF p. 242); key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-5",
+     "q": "If an interstellar gas cloud shrinks in size, what does the law of conservation of energy predict it will do?",
+     "options": [
+      "spin slower",
+      "heat up",
+      "spin faster",
+      "cool off",
+      "continue shrinking"
+     ],
+     "answer": 1,
+     "why": "As the cloud shrinks, gravitational potential energy is converted into the kinetic energy of the falling gas. The particles collide and that motion becomes thermal energy, so the cloud heats up. Spinning faster is predicted by conservation of angular momentum, a different law. Cooling off or spinning slower is the opposite of what happens, and conservation of energy says nothing about it continuing to shrink.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q5 (no printed key); key checked: heating = conservation of energy: p. 220 (PDF p. 242); Ch8.2_pt1 slide 3; key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-6",
+     "q": "If an interstellar gas cloud shrinks in size, what does the law of conservation of angular momentum predict it will do?",
+     "options": [
+      "cool off",
+      "continue shrinking",
+      "spin faster",
+      "heat up",
+      "spin slower"
+     ],
+     "answer": 2,
+     "why": "A shrinking cloud has to spin faster to keep its angular momentum constant, just as a skater speeds up when she pulls in her arms. Heating up comes from conservation of energy, not angular momentum. Spinning slower would mean losing angular momentum, and cooling off or continuing to shrink are not predicted by this law.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q6 (no printed key); key checked: spin-up = conservation of angular momentum: p. 221 (PDF p. 243); Ch8.2_pt1 slide 2; key 2 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-7",
+     "q": "According to our theory of solar system formation, why do all the planets orbit the Sun in the same direction and in nearly the same plane?",
+     "options": [
+      "It is a coincidence, as we would expect that most other solar systems would not have all their planets orbiting in such a pattern.",
+      "Any planets that once orbited in the opposite direction or a different plane were ejected from the solar system.",
+      "The laws of conservation of energy and conservation of angular momentum ensure that any rotating, collapsing cloud will end up as a spinning disk.",
+      "The Sun formed first, and as it grew in size it spread into a disk, rather like the way a ball of dough can be flattened into a pizza by spinning it.",
+      "The original solar nebula happened to be disk shaped by chance."
+     ],
+     "answer": 2,
+     "why": "A collapsing, rotating cloud heats up, spins faster and has its random motions smoothed out by collisions, so it flattens into a disk turning in one direction. The planets formed in that disk, so they orbit in the same direction and nearly the same plane. This is a natural result, not a coincidence or a clean-up of misfits. The Sun formed at the centre of the disk; it did not form first and then spread out like pizza dough.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q7 (no printed key); key checked: heating, spinning, flattening: p. 220-221 (PDF p. 242-243); Ch8.2_pt1 slides 2-4; key 2 is the best available choice",
+     "derived": true
+    },
+    {
+     "id": "x6-8",
+     "q": "Which of the following lists the ingredients of the solar nebula from highest to lowest percentage of mass of the nebula?",
+     "options": [
+      "hydrogen compounds, hydrogen and helium gas, metals, rocks",
+      "hydrogen compounds, rocks, metals, hydrogen and helium gas",
+      "hydrogen compounds, hydrogen and helium gas, rocks, metals",
+      "hydrogen and helium gas, hydrogen compounds, metals, rocks",
+      "hydrogen and helium gas, hydrogen compounds, rocks, metals"
+     ],
+     "answer": 4,
+     "why": "By mass the solar nebula was about 98% hydrogen and helium gas, 1.4% hydrogen compounds (water, methane, ammonia), 0.4% rock and 0.2% metal. So the order from highest to lowest is hydrogen and helium gas, hydrogen compounds, rock, metal. The wrong lists put the gas lower or swap rock and metal with hydrogen compounds.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q8 (no printed key); key checked: Table 8.1: 98% H/He, 1.4% hydrogen compounds, 0.4% rock, 0.2% metal, p. 222 (PDF p. 244); key 4 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-9",
+     "q": "About what percentage of the mass of the solar nebula consisted of elements other than hydrogen and helium?",
+     "options": [
+      "2 percent",
+      "0 percent",
+      "0.1 percent",
+      "80 percent",
+      "20 percent"
+     ],
+     "answer": 0,
+     "why": "Hydrogen and helium made up about 98% of the nebula's mass, so everything else together (hydrogen compounds, rock and metal) was about 2%. Zero or 0.1% is too small to build the planets, and 20% or 80% would be far too much.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q9 (no printed key); key checked: about 98% hydrogen and helium, 2% everything else: p. 219 (PDF p. 241); key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-10",
+     "q": "The very first generation of star systems in the universe must have been born from gas that consisted entirely of hydrogen and helium (and no other elements). Which of the following statements is most likely to have been true about these first-generation star systems?",
+     "options": [
+      "They did not have any planets or asteroids or comets.",
+      "They had terrestrial planets but no jovian planets.",
+      "They did not have any disks of gas around them as they formed.",
+      "They had asteroids and comets but no large planets."
+     ],
+     "answer": 0,
+     "why": "With only hydrogen and helium there is nothing that can condense into solid grains, so there would be no rock, metal or ice to build planetesimals. Without planetesimals there can be no asteroids or comets, and no planets either, because even gas giants grow from a solid core that then captures gas. Disks still form from any collapsing, spinning cloud, so the lack of a disk is not the answer.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q10 (no printed key); key checked: no heavy elements, no solids to condense: p. 219 (PDF p. 241, Think about it) and p. 222 (Table 8.1, PDF p. 244); key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-11",
+     "q": "What happened during the accretion phase of the early solar system?",
+     "options": [
+      "Particles grew by colliding and sticking together.",
+      "Atoms of hydrogen and helium gas bonded together and solidified.",
+      "The solar nebula differentiated into metals inside of the frost line and ices beyond.",
+      "Earth gained its oceans from icy planetesimal capture.",
+      "Large planetesimals captured atmospheres from the solar nebula."
+     ],
+     "answer": 0,
+     "why": "Accretion is the growth of solid particles: tiny grains stuck together, then planetesimals grew and pulled in others by gravity. Separating metals and rocks inside the frost line from ices beyond it was condensation, which came before. Earth's water arrived later through impacts, and hydrogen and helium gas do not bond and solidify in the nebula.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q11 (no printed key); key checked: accretion = particles stick and grow: p. 223 (PDF p. 245); Ch8.2_pt1 slides 6-7; key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-12",
+     "q": "Which of the following accurately describes how the Jovian planetesimals were formed?",
+     "options": [
+      "Planetesimals grew from tiny grains of rock and metal via static electricity and other non-gravitational forces. When they reached a critical size, they also began attracting hydrogen compounds and hydrogen and helium gas from the surrounding protoplanetary nebula.",
+      "Planetesimals grew from tiny grains of hydrogen compounds via gravity. When they reached a critical size, they also began attracting rocks and metals from the surrounding protoplanetary nebula.",
+      "Planetesimals grew from tiny grains of hydrogen compounds, rock, and metal via static electricity and other non-gravitational forces. When they reached a critical size, they also began attracting hydrogen and helium gas from the surrounding protoplanetary nebula via gravity.",
+      "Planetesimals grew from tiny grains of hydrogen compounds, rock, and metal via gravity. When they reached a critical size, they also began attracting hydrogen and helium gas from the surrounding protoplanetary nebula."
+     ],
+     "answer": 2,
+     "why": "Beyond the frost line the tiny grains were a mix of ice (hydrogen compounds), rock and metal. Gravity is much too weak to pull such small specks together, so they stuck by static electricity and other non-gravitational forces. Only when planetesimals were large enough did their gravity start to attract hydrogen and helium gas. The wrong options either start the process with gravity on tiny grains or leave out part of the mix of ice, rock and metal.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q12 (no printed key); key checked: tiny particles stick by electrostatic forces (p. 223, PDF p. 245), icy planetesimals then capture H/He by gravity (p. 224, PDF p. 246); Ch8.2_pt1 slide 8; key 2 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-13",
+     "q": "How did most of the moons around Jovian planets come to be?",
+     "options": [
+      "The Jovian moons are the scattered remnants of a fifth Jovian planet that was destroyed by an impact in the Heavy Bombardment, and which settled into orbit around the remaining Jovian planets.",
+      "Smaller planetesimals were gravitationally captured by the larger Jovian planetesimals and became the Jovian moons.",
+      "Parts of the Jovian planetesimals broke off in the accretion phase and became the Jovian moons.",
+      "They formed by accretion in much the same way that planets formed around the Sun in the protoplanetary nebula, but on a smaller scale."
+     ],
+     "answer": 3,
+     "why": "The large moons of the jovian planets formed in disks of gas and dust around each growing giant planet, by accretion in the same way planets formed around the Sun but on a smaller scale. That is why they orbit in the planet's rotation direction in nearly circular orbits. They did not come from a destroyed fifth planet or break off the planets. A few small odd moons were captured, but capture needs an object to lose energy (for example to friction in the planet's gas), so simple gravitational capture is not how most moons formed.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q13 (no printed key); key checked: moons formed in disks around jovian planets: p. 224 (PDF p. 246); Ch8.2_pt1 slide 9; captured moons only for small bodies p. 226 (PDF p. 248); key 3 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-14",
+     "q": "The frost line of the solar system was located approximately between",
+     "options": [
+      "the present-day orbits of Venus and Earth.",
+      "the present-day orbits of Mars and Jupiter.",
+      "the present-day orbits of Uranus and Neptune.",
+      "the present-day orbits of Mercury and Venus.",
+      "the Sun and the present-day orbit of Mercury."
+     ],
+     "answer": 1,
+     "why": "Hydrogen compounds freeze into ice only below about 150 K, and in the solar nebula that temperature was reached around 2.7 AU, which is between the present orbits of Mars and Jupiter. Between Mercury and Earth the nebula was too hot for ice, and the orbits of Uranus and Neptune are far beyond the frost line.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q14 (no printed key); key checked: frost line between Mars and Jupiter, about 2.7 AU: p. 223 (PDF p. 245); key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-15",
+     "q": "Why are the inner planets made of denser materials than the outer planets?",
+     "options": [
+      "In the inner part of the nebula only metals and rocks were able to condense because of the high temperatures, whereas hydrogen compounds, although more abundant, were only able to condense in the cooler outer regions.",
+      "When the solar nebula formed a disk, materials naturally segregated into bands, and in our particular solar system, the denser materials settled nearer the Sun, while lighter materials are found in the outer part.",
+      "The Sun's gravity pulled denser materials toward the inner part of the solar nebula, while lighter gases escaped more easily.",
+      "In the beginning, when the protoplanetary disk was spinning faster, centrifugal forces flung the lighter materials toward the outer parts of the solar nebula.",
+      "Denser materials were heavier and sank to the center of the nebula."
+     ],
+     "answer": 0,
+     "why": "Close to the Sun it was too hot for hydrogen compounds to freeze, so only metal and rock could condense, even though hydrogen compounds were more abundant. Beyond the frost line ices could condense as well, so the outer planets gained lighter, icy material and far more of it. The Sun's gravity pulling dense material in, spinning flinging light material out, or dense material sinking are not what happened, because every ingredient orbits the Sun in the same way regardless of its density.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q15 (no printed key); key checked: temperature, not Sun's gravity, caused the compositional split: p. 223 and Common Misconceptions box (PDF p. 245); Ch8.2_pt1 slide 5; key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-16",
+     "q": "The nebular theory predicts that the young Sun should have been rotating quite rapidly, but the Sun rotates slowly today. Can this fact be explained by the nebular theory?",
+     "options": [
+      "Yes, objects always slow their rotations over time.",
+      "Yes; the young Sun's solar wind would have carried away angular momentum, slowing the Sun's rotation.",
+      "No, it is a complete mystery as to why the Sun would rotate slowly today."
+     ],
+     "answer": 1,
+     "why": "Yes. The young Sun spun fast and had a strong magnetic field and wind. Its field dragged on the charged particles in the surrounding gas, transferring angular momentum to them, and the wind and radiation carried that gas and its angular momentum away into space, slowing the Sun. Objects do not always slow down, because angular momentum is conserved unless it is transferred elsewhere. It is not a mystery.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q16 (no printed key); key checked: Sun's magnetic field dragged on charged particles in the nebula; wind and cleared gas carried angular momentum away: p. 225 (PDF p. 247); Ch8.2_pt2 slide 1; key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-17",
+     "q": "Hydrogen compounds in the solar nebula could condense into ice at temperatures of about 150 K. Suppose they instead could have condensed only at temperatures below 50 K? What would have been different in the solar nebula?",
+     "options": [
+      "Jovian planets would have formed inside the frost line.",
+      "The frost line would have been farther from the Sun.",
+      "The frost line would have been closer to the Sun.",
+      "Terrestrial planets would have formed outside the frost line."
+     ],
+     "answer": 1,
+     "why": "Ice can form only where the gas is colder than the temperature at which the compound condenses. If hydrogen compounds needed to be below 50 K instead of 150 K, the nebula would have to be much colder, which happens only farther from the Sun, so the frost line would be farther out. Terrestrial planets form inside the frost line and jovian planets outside it, so those other statements contradict the definition.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q17 (no printed key); key checked: lower condensation temperature puts the frost line farther out: p. 222-223 (PDF p. 244-245); key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-18",
+     "q": "Observations of young stars suggest that when the Sun was young, the solar wind",
+     "options": [
+      "was weaker than it is today.",
+      "was stronger than it is today.",
+      "was about the same strength as it is today.",
+      "was nonexistent.",
+      "blew outward only along the Sun's poles."
+     ],
+     "answer": 1,
+     "why": "Young stars rotate fast and have strong magnetic fields, so they have much stronger winds and emit more high-energy radiation than older stars. The young Sun's strong wind and radiation helped blow away the leftover gas of the solar nebula. So it was stronger than today, not weaker, the same or absent, and the wind blew in all directions.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q18 (no printed key); key checked: young stars have much stronger winds: p. 224 (PDF p. 246); key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-19",
+     "q": "What might have happened if the hydrogen and helium gas pervading the early Solar System had not been driven out (i.e., if the solar nebula had not been cleared)?",
+     "options": [
+      "The asteroids would have been able to assemble into a planet.",
+      "Accretion would have been stifled, leading to much smaller planets.",
+      "Only the Jovian planets would have grown much larger.",
+      "All planets would have grown much larger, and the terrestrial planets would have accreted hydrogen and helium gas."
+     ],
+     "answer": 3,
+     "why": "If the hydrogen and helium had stayed, the nebula would have kept cooling until ices could form even in the inner Solar System, so the terrestrial planets could have grown larger and could have gathered hydrogen and helium gas, changing their basic nature. Asteroids do not assemble into a planet because the gas is cleared, and gas would not stifle growth or make only the jovian planets larger.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q19 (no printed key); key checked: if the gas had stayed, terrestrial planets might have accreted ices and perhaps H/He: p. 224 (PDF p. 246); key 3 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-20",
+     "q": "According to the nebular theory, what are asteroids and comets?",
+     "options": [
+      "leftover planetesimals that never accreted into planets",
+      "chunks of rock or ice that condensed long after the planets had formed",
+      "the shattered remains of collisions between planets",
+      "the shattered remains of collisions between moons",
+      "chunks of rock or ice that have been expelled from the planets by volcanoes"
+     ],
+     "answer": 0,
+     "why": "Asteroids (rocky, from inside the frost line) and comets (icy, from beyond it) are leftover planetesimals that never became part of a planet. They did not form long after the planets, are not the remains of collisions between planets or moons, and are not volcanic debris.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q20 (no printed key); key checked: asteroids and comets are leftover planetesimals: p. 225 (PDF p. 247); Ch8.2_pt2 slide 2; key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-21",
+     "q": "What happened during the heavy bombardment?",
+     "options": [
+      "Planetesimals collided with one another and stuck together to form planets.",
+      "A supernova disrupted a gas cloud, causing it to start collapsing to form the solar system.",
+      "The planets of the solar system suffered many impacts.",
+      "A large meteor collided with Earth, killing the dinosaurs.",
+      "The planets collided with one another."
+     ],
+     "answer": 2,
+     "why": "The heavy bombardment was a period of a few hundred million years, after the planets had formed, when leftover planetesimals frequently struck the planets and moons, leaving craters. Planetesimals sticking together to form planets was accretion, which came earlier. A supernova may have triggered the nebula's collapse, the dinosaur impact happened about 66 million years ago, and the planets did not collide with each other.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q21 (no printed key); key checked: heavy bombardment lasted a few hundred million years: p. 226 (PDF p. 248); Ch8.2_pt2 slide 3; key 2 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-22",
+     "q": "What is the giant impact hypothesis for the origin of the Moon?",
+     "options": [
+      "The Moon formed just like Earth, from accretion in the solar nebula.",
+      "The Moon formed from material blasted out of Earth's mantle and crust by the impact of a Mars-size object.",
+      "The Moon formed when two gigantic asteroids collided with one another.",
+      "The Moon originally was about the same size as Earth, but a giant impact blasted most of it away so that it ended up much smaller than Earth."
+     ],
+     "answer": 1,
+     "why": "The giant impact hypothesis says a Mars-size object hit the young Earth, blasting material from Earth's outer rocky layers into orbit, where it gathered to form the Moon. The Moon did not form in the nebula like Earth, because its density and composition differ. It did not come from two asteroids colliding, and it was not once an Earth-sized body that lost most of its mass.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q22 (no printed key); key checked: giant impact hypothesis: p. 227 (PDF p. 249); key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-23",
+     "q": "Which of the following does NOT directly support the giant impact hypothesis for the formation of our Moon?",
+     "options": [
+      "The Moon is very quiet geologically compared to most other bodies.",
+      "The Moon lacks volatile chemicals that would vaporize in a large impact.",
+      "The Moon is very large for its host body, the Earth.",
+      "Computer simulations show that a collision between planetesimals can result in an Earth-Moon system like ours."
+     ],
+     "answer": 0,
+     "why": "The Moon's lack of volcanism and tectonics is only a result of its small size, which let it cool quickly, and it says nothing about how the Moon formed. The other three do support the hypothesis: the missing volatile chemicals fit the heat of an impact vaporizing them, computer simulations can reproduce the Earth-Moon system, and the Moon's large size relative to Earth is what the impact idea explains and what capture cannot.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q23 (no printed key); key checked: evidence for the giant impact: simulations, similar outer layers, missing volatiles (Ch8.2_pt2 slide 7; p. 227, PDF p. 249); the Moon's geological quiet is not on that list and is unrelated to its origin; key 0 kept, fairly confident (the Moon's large size is the puzzle the impact explains, p. 227)",
+     "derived": true
+    },
+    {
+     "id": "x6-24",
+     "q": "We know that Earth has water. However, according to our theory of solar system formation, the inner solar system was too hot for hydrogen compounds like water to condense. What do we conclude?",
+     "options": [
+      "Earth's water likely was brought here by asteroids or comets that formed beyond the frost line.",
+      "Our theory of solar system formation will need modification because it is unable to account for the existence of water on Earth.",
+      "Water arrived on Earth at a time when it rained throughout the inner solar system.",
+      "Earth's water probably originated through chemical reactions among the rock and metal of Earth's interior."
+     ],
+     "answer": 0,
+     "why": "The terrestrial planets formed where it was too hot for ice, so Earth's water was probably delivered by icy planetesimals, asteroids or comets that formed beyond the frost line and struck Earth during the heavy bombardment. The theory is therefore not broken by Earth's water. It did not rain throughout the inner nebula, and water does not come from chemical reactions of rock and metal alone.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q24 (no printed key); key checked: water brought by icy planetesimals from beyond the frost line: p. 226 (PDF p. 248); Ch8.2_pt2 slide 4; key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-25",
+     "q": "According to our theory of solar system formation, why do we find some exceptions to the general rules and patterns of the planets?",
+     "options": [
+      "The exceptions are probably the result of the Sun passing very close to another star billions of years ago.",
+      "The exceptions probably represent objects that formed recently, rather than early in the history of the solar system.",
+      "The exceptions probably represent objects that were captured by our solar system from interstellar space.",
+      "Most of the exceptions are the result of giant impacts or close gravitational encounters.",
+      "Our theory is not quite correct because it cannot explain these exceptions."
+     ],
+     "answer": 3,
+     "why": "The nebular theory explains the general patterns with the collapse of the nebula, and it explains most exceptions, such as Uranus's tilt, Venus's backward spin and Earth's large Moon, by random events like giant impacts and close gravitational encounters among leftover planetesimals. A star passing close to the Sun is the discarded close encounter hypothesis. The exceptions are not recent objects, captured moons were mostly captured from material orbiting the Sun rather than interstellar space, and exceptions do not show the theory is wrong.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q25 (no printed key); key checked: exceptions arise from collisions or close gravitational encounters: p. 226 (PDF p. 248); Ch8.2_pt2 slide 5; key 3 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-26",
+     "q": "Suppose the Sun had been born with more mass, making it larger and hotter. Which of the following consequences would we expect according to the nebular theory?",
+     "options": [
+      "Jovian planets would have formed farther from the Sun.",
+      "Asteroids would have formed closer to the Sun.",
+      "There would be no comets.",
+      "There would have been no solar nebula in which material could condense to form planets."
+     ],
+     "answer": 0,
+     "why": "A more massive, hotter Sun would heat the nebula more, so the temperature low enough for ices to form would be reached farther from the Sun, and the frost line, where jovian planets form, would be farther out. Asteroids, which form inside the frost line, would also form farther out, not closer. Comets would still form, and a nebula would still exist.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q26 (no printed key); key checked: hotter Sun moves the frost line out: p. 223 (PDF p. 245); key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-27",
+     "q": "The lithosphere of a planet is the layer that consists of",
+     "options": [
+      "material between the crust and the mantle.",
+      "the rigid rocky material of the crust and uppermost portion of the mantle.",
+      "material above the crust.",
+      "the lava that comes out of volcanoes.",
+      "the softer rocky material of the mantle."
+     ],
+     "answer": 1,
+     "why": "The lithosphere is the cool, rigid outer layer of a planet, made of the crust plus the uppermost part of the mantle. It is defined by the strength of the rock rather than by what it is made of. The softer rock below it is the asthenosphere, the crust is only part of the lithosphere, and lava is just molten rock that erupts.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q27 (no printed key); key checked: lithosphere = crust plus uppermost mantle, rigid: p. 240 (PDF p. 262); Ch9.1_pt1 slide 9; key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-28",
+     "q": "How do scientists learn about the internal composition of our planet?",
+     "options": [
+      "They collect seismic data to infer the densities and thicknesses of different regions in the Earth's interior.",
+      "They use x-ray and gamma ray imaging, which can penetrate the Earth's surface.",
+      "They drill into the earth with state-of-the-art equipment to collect samples from deep within the Earth's interior.",
+      "They drop special, heat-resistant probes into volcanoes to explore and obtain data from underneath the Earth's crust."
+     ],
+     "answer": 0,
+     "why": "We cannot drill deep or see inside, so scientists use seismic waves from earthquakes. Their speeds and paths depend on density and on whether the material is solid or liquid, which reveals the layers inside Earth. X-rays and gamma rays do not penetrate far, drills reach less than 1% of the way to the centre, and probes cannot be dropped into volcanoes that deep.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q28 (no printed key); key checked: seismic waves: p. 239 and Special Topic p. 241 (PDF p. 261, 263); Ch9.1_pt1 slides 4-5; key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-29",
+     "q": "Which of the following best describes differentiation in planetary geology?",
+     "options": [
+      "One planet's surface evolves differently from another planet's surface.",
+      "Different types of minerals form a conglomerate rock.",
+      "Gravity separates molten materials according to density.",
+      "One part of a planet's surface evolves differently from another part of the same planet's surface.",
+      "Dense materials condense at higher temperatures than less dense materials."
+     ],
+     "answer": 2,
+     "why": "Differentiation happens when a planet is molten enough that gravity separates material by density: dense metals sink to the core and lighter rock rises to form the mantle and crust, like oil and water separating. The other options mix this up with how surfaces evolve, how rocks form or how materials condense.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q29 (no printed key); key checked: differentiation: p. 239 (PDF p. 261); Ch9.1_pt2 slide 1; key 2 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-30",
+     "q": "Which internal energy source is the most important in continuing to heat the terrestrial planets today?",
+     "options": [
+      "accretion",
+      "differentiation",
+      "tidal heating",
+      "radioactivity"
+     ],
+     "answer": 3,
+     "why": "Heat from accretion and differentiation was mostly deposited when the planets were young, while radioactive decay of uranium, potassium and thorium is still releasing heat, so it is the main source now. Tidal heating matters for moons such as Io, but not for the terrestrial planets.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q30 (no printed key); key checked: radioactive decay is the only major heat source today: p. 242 (PDF p. 264); Ch9.1_pt2 slide 3; key 3 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-31",
+     "q": "Which of the following best describes convection?",
+     "options": [
+      "Warm material expands and rises while cool material contracts and falls.",
+      "Bubbles of gas move upward through a liquid of the same temperature.",
+      "A liquid separates according to density, such as oil and water separating in a jar.",
+      "Rocks sink in water.",
+      "Warm material gets even warmer and cool material gets even cooler."
+     ],
+     "answer": 0,
+     "why": "Convection is the process in which warm material expands and rises while cooler material contracts and falls, carrying heat upward, as in a pot of soup or in Earth's mantle. Gas bubbles rising, a liquid separating by density and rocks sinking in water are other ideas, and in convection warm material does not simply warm up more.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q31 (no printed key); key checked: convection: p. 242 (PDF p. 264); Ch9.1_pt2 slide 4; key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-32",
+     "q": "What are the three main sources of internal heat for terrestrial planets?",
+     "options": [
+      "convection, differentiation, and eruption",
+      "conduction, differentiation, and accretion",
+      "accretion, differentiation, and eruption",
+      "conduction, convection, and eruption",
+      "accretion, differentiation, and radioactivity"
+     ],
+     "answer": 4,
+     "why": "Terrestrial planets get internal heat from accretion (impacts of planetesimals), differentiation (dense material sinking) and radioactive decay. Convection, conduction and eruption are ways heat moves or escapes, not sources of heat.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q32 (no printed key); key checked: accretion, differentiation, radioactive decay: p. 241 (PDF p. 263); Ch9.1_pt2 slide 2; key 4 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-33",
+     "q": "What conditions are thought to be necessary for a terrestrial planet to have a strong magnetic field?",
+     "options": [
+      "fast rotation only",
+      "both a metal core and a rocky mantle",
+      "a molten metallic core only",
+      "a rocky mantle only",
+      "both a molten metallic core and reasonably fast rotation"
+     ],
+     "answer": 4,
+     "why": "A strong magnetic field needs an electrically conducting fluid such as molten metal, convection in it, and reasonably fast rotation. Earth has a molten outer core and rotates in a day, so it has a strong field. A molten core alone is not enough (Venus rotates very slowly), fast rotation alone is not enough, and a metal core with a rocky mantle can be solid, as with the Moon and Mars.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q33 (no printed key); key checked: molten conducting interior, convection, moderately rapid rotation: p. 244 (PDF p. 266); Ch9.1_pt2 slide 9; key 4 is the best available choice",
+     "derived": true
+    },
+    {
+     "id": "x6-34",
+     "q": "What is the main process by which heat flows upward through the lithosphere?",
+     "options": [
+      "conduction",
+      "differentiation",
+      "convection",
+      "radiation",
+      "accretion"
+     ],
+     "answer": 0,
+     "why": "Inside the rigid lithosphere the rock cannot flow, so mantle convection stops at its base and heat moves upward mainly by conduction, atom to atom through contact, and is then radiated into space. Differentiation and accretion are heat sources, convection occurs below the lithosphere, and radiation is how the heat leaves from the surface into space.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q34 (no printed key); key checked: heat moves up through the lithosphere mainly by conduction: p. 243 (PDF p. 265) and Fig. 9.5; key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-35",
+     "q": "If a spherical body has a surface area of 36π km², what is its volume? (Recall that the surface area-to-volume ratio of a sphere is 3/r.)",
+     "options": [
+      "216 km³",
+      "36π km³",
+      "10π km³",
+      "3 km³"
+     ],
+     "answer": 1,
+     "why": "A sphere's surface area is 4πr². If 4πr² = 36π, then r² = 9 and r = 3 km. The surface area to volume ratio is 3/r = 1 per km, so volume = surface area ÷ ratio = 36π km² ÷ (1 per km) = 36π km³. Check: (4/3)π(3)³ = 36π km³. The 216 km³ choice cubes the diameter (6³) instead of using (4/3)πr³, and 3 km³ is just the number 3/r, not a volume.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q35 (no printed key); key checked: numbers lost in the student's paste; reconstructed with surface area 36 pi km^2 (r = 3 km, V = 36 pi km^3, the only value of the surface area that lands on one of the four given options); Ch9.1_pt2 slide 6; p. 243 Mathematical Insight 9.1 (PDF p. 265); key 1",
+     "derived": true
+    },
+    {
+     "id": "x6-36",
+     "q": "Which of the following is NOT an effect of a planet having a larger size?",
+     "options": [
+      "The planet undergoes internal geological activity for longer.",
+      "The planet retains an atmosphere for longer and experiences more erosion.",
+      "The planet has a warmer surface temperature.",
+      "The planet loses heat less quickly."
+     ],
+     "answer": 2,
+     "why": "A larger planet keeps its interior heat longer, so it stays geologically active longer, and its stronger gravity holds an atmosphere longer, leading to more erosion. Surface temperature is not an effect of size, because it depends mainly on distance from the Sun and on the atmosphere. Earth and Venus are almost the same size but have very different surface temperatures.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q36 (no printed key); key checked: larger worlds stay active longer and keep an atmosphere; temperature depends on distance from the Sun: Ch9.2 slides 21-22; p. 243 (PDF p. 265); key 2 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-37",
+     "q": "Which terrestrial world has the strongest magnetic field?",
+     "options": [
+      "the Moon",
+      "Venus",
+      "Mars",
+      "Mercury",
+      "Earth"
+     ],
+     "answer": 4,
+     "why": "Earth has a molten, convecting metal outer core and rotates fairly quickly, so it has a strong global magnetic field. The Moon and Mars have cooled too much to have such a core, Venus rotates too slowly, and Mercury has only a weak field.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q37 (no printed key); key checked: Earth has the strongest field of the terrestrial worlds: p. 244 (PDF p. 266); Ch9.1_pt2 slide 10; key 4 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-38",
+     "q": "Approximately how large (across) is an impact crater compared to the size of the impactor?",
+     "options": [
+      "10 times larger",
+      "100 times larger",
+      "the same size",
+      "1000 times larger",
+      "10—20 percent larger"
+     ],
+     "answer": 0,
+     "why": "Laboratory experiments and observations show that an impact crater is typically about 10 times as wide as the object that made it. For example, a 1 km asteroid makes a crater about 10 km across. The other sizes are too large or too small.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q38 (no printed key); key checked: craters about 10 times as wide as the impactor: p. 245 (PDF p. 267); Ch9.2 slide 3; key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-39",
+     "q": "Which factor below determines the steepness of a volcano?",
+     "options": [
+      "the duration of the eruption",
+      "the age of the volcano",
+      "the temperature of the lava",
+      "the volume of lava",
+      "how easily the lava flows"
+     ],
+     "answer": 4,
+     "why": "Thick, sticky lava cannot flow far, so it piles up into steep stratovolcanoes, while runny lava spreads out into gently sloping shield volcanoes or flat lava plains. Steepness is set by how easily the lava flows (its viscosity), not by how long the volcano erupted, its age or the total volume of lava.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q39 (no printed key); key checked: thicker lava makes steeper volcanoes: p. 246 (PDF p. 268); Ch9.2 slide 9; key 4 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-40",
+     "q": "A planet is most likely to have volcanic and tectonic activity if it has",
+     "options": [
+      "low internal temperature.",
+      "high internal temperature.",
+      "high surface gravity.",
+      "low surface gravity.",
+      "a dense atmosphere."
+     ],
+     "answer": 1,
+     "why": "Volcanism and tectonics are driven by internal heat, which melts rock and drives mantle convection. So a planet with a high internal temperature is most likely to be active. A low internal temperature leads to a geologically dead planet, and surface gravity or a thick atmosphere does not drive volcanism.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q40 (no printed key); key checked: geological activity is driven by internal heat: p. 241 (PDF p. 263); key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-41",
+     "q": "What can we conclude when we see a region of a planet that is not as heavily cratered as other regions?",
+     "options": [
+      "There is little volcanic activity to create craters.",
+      "The surface in the region is younger than the surface in more heavily cratered regions.",
+      "The planet is rotating very slowly and only one side was hit by impactors.",
+      "The surface in the region is older than the surface in more heavily cratered regions.",
+      "The planet formed after the age of bombardment and missed out on getting hit by leftover planetesimals."
+     ],
+     "answer": 1,
+     "why": "Craters build up over time, so a region with fewer craters must have been resurfaced more recently, for example by lava or erosion, which erased older craters. That makes it younger than a heavily cratered region. Volcanic activity erases craters rather than makes them, and planets do not get impacts on only one side.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q41 (no printed key); key checked: fewer craters means a younger surface: p. 248 (PDF p. 270); Ch9.2 slides 5-6; key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-42",
+     "q": "Which of the following natural geological features is NOT a result of erosion?",
+     "options": [
+      "Sand dunes",
+      "Canyons",
+      "Fjords",
+      "Rift valleys",
+      "River deltas"
+     ],
+     "answer": 3,
+     "why": "Rift valleys form when tectonic forces pull the crust apart, not by erosion. Canyons are cut by rivers, fjords are valleys carved by glaciers, sand dunes are shaped by wind and river deltas are built from sediment carried by water, so all of these come from erosion.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q42 (no printed key); key checked: erosion features vs tectonic rifts: p. 248 (PDF p. 270, Fig. 9.14); p. 268 (PDF p. 290, rift valleys); Ch9.2 slides 16-20, 25; key 3 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-43",
+     "q": "Why is seafloor crust generally much younger than continental crust?",
+     "options": [
+      "Seafloor crust is closer to Earth's mantle than continental crust, so it is heated more and experiences convection that continuously replaces older crust.",
+      "Seafloor crust is thinner and denser, so it gets pushed beneath the continental crust wherever they meet and is constantly recycled this way.",
+      "The seafloor experiences continuous erosion by the ocean, exposing new crust, but the rocks on land erode much more slowly."
+     ],
+     "answer": 1,
+     "why": "Seafloor crust is thin and dense, so where it meets thicker, lighter continental crust it is pushed down in a subduction zone and recycled into the mantle. That is why seafloor crust is usually less than about 200 million years old, while continental crust can be billions of years old. It is not closer to the mantle and replaced by convection, and ocean water erodes the seafloor very little.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q43 (no printed key); key checked: seafloor crust is thinner, denser and younger and is recycled by subduction: p. 265-266 (PDF p. 287-288); Ch9.6 slides 6-7; key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-44",
+     "q": "What is the overall geological process occurring at the Great Rift Valley in Africa?",
+     "options": [
+      "Continental crust is pushing together at a convergent plate boundary.",
+      "Ocean crust is subducting under continental crust.",
+      "Continental crust is being pulled apart at a divergent plate boundary.",
+      "Two tectonic plates are sliding past each other, resulting in earthquakes."
+     ],
+     "answer": 2,
+     "why": "The Great Rift Valley in East Africa is where continental crust is being pulled apart at a divergent boundary, thinning the crust so a rift valley forms, and eventually the continent could split. Convergent boundaries push together, subduction is an ocean plate going under another plate, and sliding past is a transform fault like the San Andreas.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q44 (no printed key); key checked: East African rift: continental plates pulling apart: p. 268 (PDF p. 290); Ch9.6 slide 9; key 2 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-45",
+     "q": "What process has played the greatest role in determining the arrangement of the continents on Earth?",
+     "options": [
+      "impact cratering",
+      "acid rain",
+      "erosion",
+      "volcanism",
+      "plate tectonics"
+     ],
+     "answer": 4,
+     "why": "The slow movement of tectonic plates over millions of years has carried the continents into their present arrangement. Impacts, acid rain, erosion and volcanism shape surfaces but do not move continents.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q45 (no printed key); key checked: Earth is shaped primarily by plate tectonics: p. 264 (PDF p. 286); key 4 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-46",
+     "q": "On average, approximately how fast do plates move with plate tectonics on Earth?",
+     "options": [
+      "They do not move at all, except during earthquakes.",
+      "a few centimeters per year",
+      "a few millimeters per century",
+      "a few centimeters per century",
+      "a few kilometers per hour"
+     ],
+     "answer": 1,
+     "why": "Tectonic plates move a few centimeters per year, about as fast as fingernails grow. That is slow, but over millions of years it moves continents thousands of kilometers. Plates are not stationary except in earthquakes, and a few millimeters per century or a few centimeters per century are far too slow, while a few kilometers per hour is much too fast.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q46 (no printed key); key checked: plates move a few centimeters per year: p. 265 (PDF p. 287); Ch9.6 slides 4 and 12; key 1 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-47",
+     "q": "Deep trenches in the ocean mark places where",
+     "options": [
+      "one plate moves under another, returning older crust to the mantle.",
+      "plates pull apart, leaving great rifts in the crust.",
+      "plates push together, creating ocean mountain chains.",
+      "hot mantle material rises upward and spreads sideways, pushing the plates apart.",
+      "plates slip sideways relative to one another."
+     ],
+     "answer": 0,
+     "why": "Deep ocean trenches mark subduction zones, where the denser plate of seafloor crust moves under another plate and is returned to the mantle. Plates pulling apart make rifts and mid-ocean ridges, plates pushing together can make mountains, and plates sliding sideways make faults.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q47 (no printed key); key checked: ocean trenches form at subduction zones: p. 266 (PDF p. 288) and Fig. 9.44; Ch9.6 slide 7 (note: Ch9.6 slide 13 loosely says trenches form at divergent boundaries, which conflicts with the book; the book is explicit); key 0 confirmed",
+     "derived": true
+    },
+    {
+     "id": "x6-48",
+     "q": "The islands of Hawaii were created by",
+     "options": [
+      "a plate that has run up against an existing continental plate.",
+      "a fault.",
+      "plumes of hot mantle rising in a hot spot within a plate.",
+      "plates that have slipped sideways relative to each other, creating a fault.",
+      "thin continental crust separating and creating a rift valley."
+     ],
+     "answer": 2,
+     "why": "The Hawaiian Islands formed over a hot spot, a plume of hot mantle rising inside the Pacific plate. As the plate moves over the hot spot, new volcanoes build islands in a chain. Hawaii is not on a plate boundary, so a fault, a collision or a rift valley is not the cause.",
+     "source": "admin-only: student's solar system formation and planetary geology set Q48 (no printed key); key checked: Hawaii formed over a mantle hot spot: p. 268 (PDF p. 290); Ch9.6 slide 11; key 2 confirmed",
+     "derived": true
+    }
+   ]
+  }
  ]
 }

@@ -423,6 +423,34 @@ const CALC = {
       wrong: uniq(ans, [`${num(v)} km/s, ${away ? "moving toward us" : "moving away from us"}`, `${num(v / 2)} km/s, ${away ? "moving away from us" : "moving toward us"}`, `${num(v * 10)} km/s, ${away ? "moving away from us" : "moving toward us"}`, `${num(dl)} km/s, ${away ? "moving away from us" : "moving toward us"}`]),
       why: `Speed = c x (change in wavelength / rest wavelength) = 300,000 x (${dl}/500) = ${num(v)} km/s. A longer observed wavelength (redshift) means moving away; a shorter one (blueshift) means moving toward us.` };
   },
+  "tel-area"() {
+    const k = rnd([2, 3, 4, 5]), base = rnd([1, 2, 3, 4, 5]), bigger = Math.random() < 0.7, dA = bigger ? base : base * k, dB = bigger ? base * k : base;
+    const ans = bigger ? `${k * k} times as much light` : `1/${k * k} as much light`;
+    return { q: `Telescope A has a mirror ${dA} m across and telescope B has a mirror ${dB} m across. Compared with telescope A, telescope B collects:`, ans,
+      wrong: uniq(ans, bigger ? [`${k} times as much light`, `${2 * k} times as much light`, `${k ** 3} times as much light`, `1/${k * k} as much light`, `1/${k} as much light`] : [`1/${k} as much light`, `1/${2 * k} as much light`, `1/${k ** 3} as much light`, `${k * k} times as much light`, `${k} times as much light`]),
+      why: `Light-collecting area is proportional to the diameter squared. B's mirror is ${bigger ? "" : "1/"}${k} times the diameter of A's, so it collects ${bigger ? `${k}^2 = ${k * k} times` : `(1/${k})^2 = 1/${k * k}`} as much light.` };
+  },
+  "tel-res"() {
+    const v = rnd([0, 1, 2]);
+    if (v === 0) {
+      const k = rnd([2, 3, 4, 5, 10]), ans = frac(1, k);
+      return { q: `A telescope's mirror is made ${k} times wider and it observes the same wavelength of light. The smallest angle it can separate becomes:`, ans,
+        wrong: uniq(ans, [frac(1, k * k), frac(k, 1), frac(k * k, 1), frac(1, k + 1), frac(2, k)]),
+        why: `The smallest angle is proportional to wavelength / diameter. A mirror ${k} times wider divides that angle by ${k}, so the telescope can see finer detail (a smaller angle is sharper). It is not squared: that rule is for light-collecting area.` };
+    }
+    if (v === 1) {
+      const k = rnd([2, 3, 4, 5, 10]), ans = frac(k, 1);
+      return { q: `The same telescope observes light with a wavelength ${k} times longer. The smallest angle it can separate becomes:`, ans,
+        wrong: uniq(ans, [frac(1, k), frac(k * k, 1), frac(1, k * k), frac(k + 1, 1), frac(k, 2)]),
+        why: `The smallest angle is proportional to wavelength / diameter. With the diameter unchanged, a wavelength ${k} times longer makes the angle ${k} times larger, so the image is blurrier.` };
+    }
+    let a, c;
+    do { a = rnd([2, 3, 4, 5]); c = rnd([2, 3, 4, 5]); } while (a === c || (c * a) % 2 === 1 && a * c > 20);
+    const ans = frac(c, a);
+    return { q: `A telescope's mirror is made ${a} times wider and it now observes light with a wavelength ${c} times longer. The smallest angle it can separate becomes:`, ans,
+      wrong: uniq(ans, [frac(a, c), frac(a * c, 1), frac(1, a * c), frac(c * c, a), frac(c, a * a)]),
+      why: `The smallest angle is proportional to wavelength / diameter. The longer wavelength multiplies it by ${c}; the wider mirror divides it by ${a}. Net factor: ${c}/${a}.` };
+  },
   kepler() {
     const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
@@ -441,5 +469,7 @@ const HINTS = {
   momentum: "Momentum = mass x velocity. Unlike kinetic energy, velocity is not squared.",
   force: "Newton's second law: force = mass x acceleration.",
   doppler: "Speed = c x (shift in wavelength / rest wavelength). A longer wavelength means moving away.",
+  "tel-area": "Light-collecting area is proportional to the mirror's diameter squared.",
+  "tel-res": "The smallest angle a telescope can separate is proportional to wavelength / diameter. A smaller angle means a sharper image.",
   kepler: "For a Sun-like star, period squared = distance cubed (years and AU), so period = distance^1.5.",
 };

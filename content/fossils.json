@@ -6,67 +6,68 @@
  "color": "#b5651d",
  "intro": "Fossils are the preserved evidence of past life. Learn HOW they form (and why so few do), how they date rocks (index fossils), and how evolution, natural selection and extinction explain the changing fossil record.",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Explain the principle of fossil succession and use fossil ranges to date and match rock layers."
-   },
-   {
-    "id": "goal-02",
-    "text": "Define FAD and LAD, and explain why overlapping ranges narrow down an age."
-   },
-   {
-    "id": "goal-03",
-    "text": "Explain what makes a good index fossil."
-   },
-   {
-    "id": "goal-04",
-    "text": "Place major events in the history of life on the geologic time scale."
-   },
-   {
-    "id": "goal-05",
-    "text": "Name and describe the eight types of fossilization, with an example of each."
-   },
-   {
-    "id": "goal-06",
-    "text": "Describe the steps that turn a dead animal into a fossil exposed at the surface."
-   },
-   {
-    "id": "goal-07",
-    "text": "Explain why fossilization is rare and why the fossil record is biased."
-   },
-   {
-    "id": "goal-08",
-    "text": "Explain how scientists infer what extinct organisms did using observation, analogy, and analysis."
-   },
-   {
-    "id": "goal-09",
-    "text": "Describe stromatolites and explain how cyanobacteria changed Earth?s atmosphere."
-   },
-   {
-    "id": "goal-10",
-    "text": "Recognize common invertebrate fossils, including trilobites, brachiopods, and ammonites."
-   },
-   {
-    "id": "goal-11",
-    "text": "Explain why the Burgess Shale is special and why new fossil sites matter."
-   },
-   {
-    "id": "goal-12",
-    "text": "Explain natural selection and how new species form."
-   },
-   {
-    "id": "goal-13",
-    "text": "Compare background and mass extinction, and interpret the five major drops on the extinction graph."
-   },
-   {
-    "id": "goal-14",
-    "text": "Explain how DNA provides a partial record of evolutionary history, including the carpenter bee example."
-   }
+  {
+   "id": "goal-01",
+   "text": "Explain the principle of fossil succession and use fossil ranges to date and match rock layers."
+  },
+  {
+   "id": "goal-02",
+   "text": "Define FAD and LAD, and explain why overlapping ranges narrow down an age."
+  },
+  {
+   "id": "goal-03",
+   "text": "Explain what makes a good index fossil."
+  },
+  {
+   "id": "goal-04",
+   "text": "Place major events in the history of life on the geologic time scale."
+  },
+  {
+   "id": "goal-05",
+   "text": "Name and describe the eight types of fossilization, with an example of each."
+  },
+  {
+   "id": "goal-06",
+   "text": "Describe the steps that turn a dead animal into a fossil exposed at the surface."
+  },
+  {
+   "id": "goal-07",
+   "text": "Explain why fossilization is rare and why the fossil record is biased."
+  },
+  {
+   "id": "goal-08",
+   "text": "Explain how scientists infer what extinct organisms did using observation, analogy, and analysis."
+  },
+  {
+   "id": "goal-09",
+   "text": "Describe stromatolites and explain how cyanobacteria changed Earth?s atmosphere."
+  },
+  {
+   "id": "goal-10",
+   "text": "Recognize common invertebrate fossils, including trilobites, brachiopods, and ammonites."
+  },
+  {
+   "id": "goal-11",
+   "text": "Explain why the Burgess Shale is special and why new fossil sites matter."
+  },
+  {
+   "id": "goal-12",
+   "text": "Explain natural selection and how new species form."
+  },
+  {
+   "id": "goal-13",
+   "text": "Compare background and mass extinction, and interpret the five major drops on the extinction graph."
+  },
+  {
+   "id": "goal-14",
+   "text": "Explain how DNA provides a partial record of evolutionary history, including the carpenter bee example."
+  }
  ],
  "sections": [
   {
    "id": "succession",
    "title": "Fossils, fossil ranges and index fossils",
+   "slides": "4-5, 8-11",
    "bullets": [],
    "boxes": [
     {
@@ -82,9 +83,30 @@
      "text": "Do not mix up a fossil range with an index fossil. A species that lived a very long time is a poor index fossil. A short-ranging, widespread one is the good one. The textbook says the average species lifespan in the fossil record is about a million years."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s5.webp",
+     "slide": "5",
+     "alt": "Text naming the first appearance datum (FAD) and the last appearance datum (LAD)."
+    },
+    {
+     "src": "img/fossils/s8.webp",
+     "slide": "8",
+     "alt": "Photo of a fossil fish skeleton pressed into pale rock."
+    },
+    {
+     "src": "img/fossils/s11.webp",
+     "slide": "11",
+     "alt": "Photo of an open museum drawer holding fossil fish slabs, spiral ammonite shells and a large jaw bone."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s5.webp",
+      "slide": "5",
+      "alt": "Text naming the first appearance datum (FAD) and the last appearance datum (LAD)."
+     },
      "title": "First and last appearance",
      "bullets": [
       "The **fossil range** is the span from a species' first appearance to its last appearance. Each fossil species has its own unique range, and ranges can overlap.",
@@ -93,6 +115,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s8.webp",
+      "slide": "8",
+      "alt": "Photo of a fossil fish skeleton pressed into pale rock."
+     },
      "title": "A fossil fish in rock",
      "bullets": [
       "**Fossils** are any evidence of past life preserved in rock: real body parts (rare), impressions, casts and molds, parts replaced by minerals, or signs of behaviour such as footprints and burrows.",
@@ -100,6 +127,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s11.webp",
+      "slide": "11",
+      "alt": "Photo of an open museum drawer holding fossil fish slabs, spiral ammonite shells and a large jaw bone."
+     },
      "title": "Fossils collected and stored",
      "bullets": [
       "A museum drawer holds fossil fish, ammonites and a jaw.",
@@ -118,6 +150,7 @@
   {
    "id": "timeline",
    "title": "Life on the geologic timeline",
+   "slides": "6-7",
    "bullets": [],
    "boxes": [
     {
@@ -133,9 +166,25 @@
      "text": "Order to remember: single cells (3.8 Ga), oxygen (2 Ga), many cells (700 Ma), shells (542 Ma). Slow, slow, slow, then BOOM."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s6.webp",
+     "slide": "6",
+     "alt": "Spiral diagram of Earth history from the Big Bang to humans, with notes on when life, oxygen, many-celled life and hard shells appeared."
+    },
+    {
+     "src": "img/fossils/s7.webp",
+     "slide": "7",
+     "alt": "Tall block diagram of the geologic column listing eons and eras with ages in millions of years, and a key for Ka, Ma and Ga."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s6.webp",
+      "slide": "6",
+      "alt": "Spiral diagram of Earth history from the Big Bang to humans, with notes on when life, oxygen, many-celled life and hard shells appeared."
+     },
      "title": "Life through geologic time",
      "bullets": [
       "**Life first appeared ~3.8 Ga** and early life was **single-celled**. O2 from bacteria built up in the atmosphere by 2 Ga.",
@@ -144,6 +193,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s7.webp",
+      "slide": "7",
+      "alt": "Tall block diagram of the geologic column listing eons and eras with ages in millions of years, and a key for Ka, Ma and Ga."
+     },
      "title": "The geologic column",
      "bullets": [
       "From oldest to youngest the eons are **Hadean** (back to 4,570 Ma, the birth of the Earth), Archean, Proterozoic, then **Phanerozoic**.",
@@ -156,6 +210,7 @@
   {
    "id": "types",
    "title": "Types of fossilization",
+   "slides": "12-18, 20",
    "bullets": [],
    "table": {
     "head": [
@@ -210,9 +265,30 @@
      "text": "Matching each photo to a type here is my reading of the picture (skeleton = bones, shells = shells, ferns = carbonization). Memorize the definitions, not the photos."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s12.webp",
+     "slide": "12",
+     "alt": "Text list of the eight types of fossilization."
+    },
+    {
+     "src": "img/fossils/s13.webp",
+     "slide": "13",
+     "alt": "Photo of a frozen baby mammoth with its skin and trunk still intact."
+    },
+    {
+     "src": "img/fossils/s20.webp",
+     "slide": "20",
+     "alt": "Magnified black-and-white image of tiny, lattice-like microscopic shells with a scale bar of 0.01 mm."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s12.webp",
+      "slide": "12",
+      "alt": "Text list of the eight types of fossilization."
+     },
      "title": "The eight types",
      "bullets": [
       "There are eight types: **frozen or dried body fossils**; body fossils in **amber or tar**; preserved or replaced bones, teeth and shells; permineralized organisms; carbonized impressions; molds and casts; trace fossils; chemical fossils.",
@@ -221,6 +297,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s13.webp",
+      "slide": "13",
+      "alt": "Photo of a frozen baby mammoth with its skin and trunk still intact."
+     },
      "title": "Actual preservation",
      "bullets": [
       "**Actual preservation** is rare: the original material is kept. A frozen baby mammoth is one example.",
@@ -228,6 +309,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s20.webp",
+      "slide": "20",
+      "alt": "Magnified black-and-white image of tiny, lattice-like microscopic shells with a scale bar of 0.01 mm."
+     },
      "title": "Microfossils",
      "bullets": [
       "These are tiny, intricate microscopic shells; the scale bar is only 0.01 mm. They are an example of **microfossils**.",
@@ -247,6 +333,7 @@
   {
    "id": "trace",
    "title": "Trace and chemical fossils: what organisms DID",
+   "slides": "19, 22",
    "bullets": [],
    "boxes": [
     {
@@ -258,9 +345,25 @@
      "text": "A burrow or footprint is a trace fossil, NOT a body fossil, even though an animal made it. A coprolite (fossil dropping) is also a trace fossil."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s19.webp",
+     "slide": "19",
+     "alt": "Photo of several footprints pressed into a slab of rock."
+    },
+    {
+     "src": "img/fossils/s22.webp",
+     "slide": "22",
+     "alt": "Text asking what organisms did that are fossils, with the words observation, analogy and analysis."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s19.webp",
+      "slide": "19",
+      "alt": "Photo of several footprints pressed into a slab of rock."
+     },
      "title": "Footprints in rock",
      "bullets": [
       "**Trace fossils** are indirect evidence: footprints, burrows, droppings (**coprolites**) and stomach stones (gastroliths). This photo shows footprints pressed in rock.",
@@ -269,6 +372,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s22.webp",
+      "slide": "22",
+      "alt": "Text asking what organisms did that are fossils, with the words observation, analogy and analysis."
+     },
      "title": "Reading a trace",
      "bullets": [
       "The question to ask of a trace fossil is: what did the organism **do**? Three steps help: **observation, analogy, analysis**.",
@@ -286,6 +394,7 @@
   {
    "id": "incomplete",
    "title": "How fossils form and why the record is incomplete",
+   "slides": "21, 39",
    "bullets": [],
    "boxes": [
     {
@@ -297,9 +406,25 @@
      "text": "(E) is clearly wrong, since chance and circumstance (for example, quick burial) decide everything. Textbook 7.3 supports (B) and (C)."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s21.webp",
+     "slide": "21",
+     "alt": "Block diagrams showing a dinosaur dying, its bones being buried by sediment over time, and later erosion exposing the fossil layer."
+    },
+    {
+     "src": "img/fossils/s39.webp",
+     "slide": "39",
+     "alt": "Text of a multiple-choice question about how often a life form is preserved as a fossil, from 'happens every day' to 'isn't a result of chance and circumstance'."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s21.webp",
+      "slide": "21",
+      "alt": "Block diagrams showing a dinosaur dying, its bones being buried by sediment over time, and later erosion exposing the fossil layer."
+     },
      "title": "From death to discovery",
      "bullets": [
       "A dinosaur **collapses and dies**. The flesh rots away and the bones remain. Footprints are left in the mud.",
@@ -308,6 +433,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s39.webp",
+      "slide": "39",
+      "alt": "Text of a multiple-choice question about how often a life form is preserved as a fossil, from 'happens every day' to 'isn't a result of chance and circumstance'."
+     },
      "title": "Why so few become fossils",
      "bullets": [
       "Most life today is **soft-bodied or single-celled** and is not likely to be preserved except in unusual conditions.",
@@ -327,6 +457,7 @@
   {
    "id": "archean",
    "title": "Earliest life: Archean evidence and stromatolites",
+   "slides": "23-24",
    "bullets": [],
    "boxes": [
     {
@@ -338,9 +469,25 @@
      "text": "Also: first chemical evidence (3.5 Ga) is OLDER than the oldest cell fossils (3.2 Ga)."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s23.webp",
+     "slide": "23",
+     "alt": "Close-up of layered stromatolite rock with a hand on it, and a small inset of microscope images of ancient bacterial cells."
+    },
+    {
+     "src": "img/fossils/s24.webp",
+     "slide": "24",
+     "alt": "Photo of dark rounded stromatolite domes standing in shallow, clear water."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s23.webp",
+      "slide": "23",
+      "alt": "Close-up of layered stromatolite rock with a hand on it, and a small inset of microscope images of ancient bacterial cells."
+     },
      "title": "Evidence of the first life",
      "bullets": [
       "Life first appeared in the **Archean**, known from **biomarkers and isotopes**. The first chemical evidence of life is ~3.5 Ga.",
@@ -349,6 +496,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s24.webp",
+      "slide": "24",
+      "alt": "Photo of dark rounded stromatolite domes standing in shallow, clear water."
+     },
      "title": "Stromatolites and oxygen",
      "bullets": [
       "Stromatolites can look like these dark domes in shallow water.",
@@ -361,6 +513,7 @@
   {
    "id": "shelly",
    "title": "Ancient sea animals: ammonoids and the Burgess Shale",
+   "slides": "25-30",
    "bullets": [],
    "boxes": [
     {
@@ -376,9 +529,30 @@
      "text": "Ammonoid = Ancient and gone. Nautilus = Now still here."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s28.webp",
+     "slide": "28",
+     "alt": "Text announcing a new Burgess Shale site in Kootenay Park, from a 2014 Nature Communications paper."
+    },
+    {
+     "src": "img/fossils/s29.webp",
+     "slide": "29",
+     "alt": "Photos of rock outcrops beside a stratigraphic column labelled Eldon, Stephen and Cathedral Formations, with a legend of rock types."
+    },
+    {
+     "src": "img/fossils/s30.webp",
+     "slide": "30",
+     "alt": "Collage of photos of dark, soft-bodied fossil animals preserved on rock."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s28.webp",
+      "slide": "28",
+      "alt": "Text announcing a new Burgess Shale site in Kootenay Park, from a 2014 Nature Communications paper."
+     },
      "title": "New fossils all the time",
      "bullets": [
       "A **new Burgess Shale site** in Kootenay Park was reported in a Nature Communications paper (Feb 11, 2014).",
@@ -386,6 +560,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s29.webp",
+      "slide": "29",
+      "alt": "Photos of rock outcrops beside a stratigraphic column labelled Eldon, Stephen and Cathedral Formations, with a legend of rock types."
+     },
      "title": "Rock layers at the new site",
      "bullets": [
       "This is a **stratigraphic column** (rock layers drawn in order) from the new site: the **Cathedral Formation** at the bottom, the Stephen Formation above it and the Eldon Formation on top.",
@@ -393,6 +572,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s30.webp",
+      "slide": "30",
+      "alt": "Collage of photos of dark, soft-bodied fossil animals preserved on rock."
+     },
      "title": "Soft-bodied fossils",
      "bullets": [
       "A collage of **soft-bodied fossils** from the new site.",
@@ -411,6 +595,7 @@
   {
    "id": "evolution",
    "title": "Evolution and natural selection",
+   "slides": "31-34",
    "bullets": [],
    "boxes": [
     {
@@ -426,9 +611,30 @@
      "text": "'Survival of the fittest' means best fit for the environment AND able to reproduce, not simply strongest or biggest."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s31.webp",
+     "slide": "31",
+     "alt": "Text reading 'Theory of evolution: survival of the fittest'."
+    },
+    {
+     "src": "img/fossils/s32.webp",
+     "slide": "32",
+     "alt": "Text reading 'Evolution happens everyday. Why is life so perfect?'"
+    },
+    {
+     "src": "img/fossils/s34.webp",
+     "slide": "34",
+     "alt": "Text reading 'Theory of evolution: background vs. mass extinction'."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s31.webp",
+      "slide": "31",
+      "alt": "Text reading 'Theory of evolution: survival of the fittest'."
+     },
      "title": "Survival of the fittest",
      "bullets": [
       "The theory of evolution is often summed up as 'survival of the fittest'. Charles Darwin (1809-1882) said life forms evolve into descendant life forms, and **natural selection** is the mechanism.",
@@ -437,6 +643,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s32.webp",
+      "slide": "32",
+      "alt": "Text reading 'Evolution happens everyday. Why is life so perfect?'"
+     },
      "title": "Evolution happens every day",
      "bullets": [
       "Evolution happens every day. Life looks 'so perfect' because natural selection keeps the traits that fit the environment.",
@@ -444,6 +655,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s34.webp",
+      "slide": "34",
+      "alt": "Text reading 'Theory of evolution: background vs. mass extinction'."
+     },
      "title": "Background vs mass extinction",
      "bullets": [
       "**Background extinction** is the steady, normal loss of species.",
@@ -461,6 +677,7 @@
   {
    "id": "extinction",
    "title": "Mass extinctions through time",
+   "slides": "34-35",
    "bullets": [],
    "boxes": [
     {
@@ -472,9 +689,20 @@
      "text": "'K/T' means Cretaceous/Tertiary, NOT Triassic."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s35.webp",
+     "slide": "35",
+     "alt": "Line graph of the number of genera through the last 540 million years, with five labelled mass extinction drops."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s35.webp",
+      "slide": "35",
+      "alt": "Line graph of the number of genera through the last 540 million years, with five labelled mass extinction drops."
+     },
      "title": "Genera through time",
      "bullets": [
       "The graph plots **number of genera** (y-axis, up to ~4,000) against **geologic time in millions of years** (x-axis, 500 to 0).",
@@ -493,6 +721,7 @@
   {
    "id": "dna",
    "title": "DNA as a new tool",
+   "slides": "36-38, 40-41",
    "bullets": [],
    "boxes": [
     {
@@ -508,15 +737,41 @@
      "text": "For 'why more species now': life keeps spreading into new habitats. Not gravity, the Sun or luck."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/fossils/s36.webp",
+     "slide": "36",
+     "alt": "Text announcing a 2013 study on evidence for a massive extinction event affecting bees close to the K-T boundary."
+    },
+    {
+     "src": "img/fossils/s37.webp",
+     "slide": "37",
+     "alt": "Circular family tree of four carpenter bee tribes in different colours, with a photo of a bee from each tribe."
+    },
+    {
+     "src": "img/fossils/s38.webp",
+     "slide": "38",
+     "alt": "Four graphs of computer-simulated lineages in black with a red line for the real bee tree and a blue bar at 65 million years ago."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/fossils/s36.webp",
+      "slide": "36",
+      "alt": "Text announcing a 2013 study on evidence for a massive extinction event affecting bees close to the K-T boundary."
+     },
      "bullets": [
       "**DNA is a new tool** for studying life's past.",
       "A 2013 study (PLoS ONE) gave the first evidence for a **massive extinction event affecting bees** close to the K-T boundary."
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s37.webp",
+      "slide": "37",
+      "alt": "Circular family tree of four carpenter bee tribes in different colours, with a photo of a bee from each tribe."
+     },
      "title": "A carpenter bee family tree",
      "bullets": [
       "**Carpenter bees evolved in the Mid Cretaceous**, at the same time as a **dominant type of flowering plants**.",
@@ -524,6 +779,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/fossils/s38.webp",
+      "slide": "38",
+      "alt": "Four graphs of computer-simulated lineages in black with a red line for the real bee tree and a blue bar at 65 million years ago."
+     },
      "title": "Testing an extinction with models",
      "bullets": [
       "Computer simulations of different histories are compared with the real bee tree (the red lines).",

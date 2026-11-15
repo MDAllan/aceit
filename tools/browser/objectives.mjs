@@ -9,6 +9,7 @@ const chk = (name, ok, detail = "") => {
   console.log((ok ? "PASS " : "FAIL ") + name + (detail ? "  " + detail : ""));
 };
 const open = async (id) => {
+  await p.goto("about:blank"); // a fresh page each time, so the checklist counted below always belongs to this lesson
   await p.goto(`http://localhost:8765/?demo#/l/${id}/notes`, { waitUntil: "networkidle0" });
   await p.waitForSelector(".acc.objectives");
 };
@@ -41,7 +42,7 @@ try {
   await p.reload({ waitUntil: "networkidle0" });
   await p.waitForSelector(".acc.objectives");
   chk("unchecked state also survives reload", !(await p.$eval(selector, input => input.checked)));
-  for (const [id, expected] of [["telescopes", 5], ["skeletal", 5]]) {
+  for (const [id, expected] of [["telescopes", 10], ["skeletal", 5]]) {
     await open(id);
     const n = await p.$$eval(selector, inputs => inputs.length);
     chk(`${id} lesson shows its checklist`, n === expected, `count=${n}`);

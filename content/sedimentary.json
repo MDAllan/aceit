@@ -6,59 +6,60 @@
  "color": "#c99a3b",
  "intro": "First weathering (how rock breaks down, and how soil forms), then sedimentary rocks (how the pieces become layered rock and what the layers tell us).",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Explain how water drives weathering and transports sediment."
-   },
-   {
-    "id": "goal-02",
-    "text": "Compare physical and chemical weathering and explain how surface area affects weathering rate."
-   },
-   {
-    "id": "goal-03",
-    "text": "Identify mechanical weathering processes and explain how they break rock apart."
-   },
-   {
-    "id": "goal-04",
-    "text": "Explain chemical weathering and how it produces differential weathering."
-   },
-   {
-    "id": "goal-05",
-    "text": "Explain how climate and parent material affect soil formation and soil horizons."
-   },
-   {
-    "id": "goal-06",
-    "text": "Classify soils using their horizons and the criteria covered in the lesson."
-   },
-   {
-    "id": "goal-07",
-    "text": "Define sediment and distinguish clastic, biochemical, organic, and chemical sedimentary rocks."
-   },
-   {
-    "id": "goal-08",
-    "text": "Explain how clastic sedimentary rocks form and classify them by grain size, sorting, and composition."
-   },
-   {
-    "id": "goal-09",
-    "text": "Distinguish biochemical, organic, and chemical sedimentary rocks by how they form."
-   },
-   {
-    "id": "goal-10",
-    "text": "Identify bedding, formations, and common sedimentary structures in rock exposures."
-   },
-   {
-    "id": "goal-11",
-    "text": "Relate depositional environments to the sedimentary features of deltas."
-   },
-   {
-    "id": "goal-12",
-    "text": "Explain how basins, sea-level change, and facies relate to sediment deposition."
-   }
+  {
+   "id": "goal-01",
+   "text": "Explain how water drives weathering and transports sediment."
+  },
+  {
+   "id": "goal-02",
+   "text": "Compare physical and chemical weathering and explain how surface area affects weathering rate."
+  },
+  {
+   "id": "goal-03",
+   "text": "Identify mechanical weathering processes and explain how they break rock apart."
+  },
+  {
+   "id": "goal-04",
+   "text": "Explain chemical weathering and how it produces differential weathering."
+  },
+  {
+   "id": "goal-05",
+   "text": "Explain how climate and parent material affect soil formation and soil horizons."
+  },
+  {
+   "id": "goal-06",
+   "text": "Classify soils using their horizons and the criteria covered in the lesson."
+  },
+  {
+   "id": "goal-07",
+   "text": "Define sediment and distinguish clastic, biochemical, organic, and chemical sedimentary rocks."
+  },
+  {
+   "id": "goal-08",
+   "text": "Explain how clastic sedimentary rocks form and classify them by grain size, sorting, and composition."
+  },
+  {
+   "id": "goal-09",
+   "text": "Distinguish biochemical, organic, and chemical sedimentary rocks by how they form."
+  },
+  {
+   "id": "goal-10",
+   "text": "Identify bedding, formations, and common sedimentary structures in rock exposures."
+  },
+  {
+   "id": "goal-11",
+   "text": "Relate depositional environments to the sedimentary features of deltas."
+  },
+  {
+   "id": "goal-12",
+   "text": "Explain how basins, sea-level change, and facies relate to sediment deposition."
+  }
  ],
  "sections": [
   {
    "id": "water",
    "title": "Water: the engine of weathering",
+   "slides": "Weathering 5, 25 (clicker); Textbook 5.1",
    "bullets": [],
    "boxes": [
     {
@@ -74,9 +75,25 @@
      "text": "Frost wedging needs the freeze-thaw cycle (temperature going above and below 0 C again and again), not just cold. Rock frozen all year long does not wedge much."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/weathering5.webp",
+     "slide": "Weathering 5",
+     "alt": "A diagram of a rock cliff with water frozen in its cracks; one crack grows and a block is pushed out."
+    },
+    {
+     "src": "img/sedimentary/weathering25.webp",
+     "slide": "Weathering 25",
+     "alt": "A multiple-choice question asking why frost wedging works as a mechanical weathering agent."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/weathering5.webp",
+      "slide": "Weathering 5",
+      "alt": "A diagram of a rock cliff with water frozen in its cracks; one crack grows and a block is pushed out."
+     },
      "title": "Frost wedging",
      "bullets": [
       "Water is odd: when it freezes it **expands** (the molecules move apart to fit the ice crystal pattern), so ice is less dense than liquid water and floats. Water is densest at about 4 C.",
@@ -84,6 +101,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/weathering25.webp",
+      "slide": "Weathering 25",
+      "alt": "A multiple-choice question asking why frost wedging works as a mechanical weathering agent."
+     },
      "title": "Why frost wedging works",
      "bullets": [
       "Two things are needed together: water **expands** when it freezes, and Earth has **temperature swings** that give a freeze-thaw cycle.",
@@ -102,6 +124,7 @@
   {
    "id": "wtypes",
    "title": "Physical vs chemical weathering and surface area",
+   "slides": "Weathering 3",
    "bullets": [],
    "boxes": [
     {
@@ -145,9 +168,20 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/weathering3.webp",
+     "slide": "Weathering 3",
+     "alt": "Cubes cut into more and more pieces with growing surface area, and a granite breaking down into loose quartz grains and clay."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/weathering3.webp",
+      "slide": "Weathering 3",
+      "alt": "Cubes cut into more and more pieces with growing surface area, and a granite breaking down into loose quartz grains and clay."
+     },
      "title": "Surface area and the granite story",
      "bullets": [
       "The two kinds of weathering work together. Physical weathering makes cracks and new surfaces. Chemical weathering only attacks surfaces, so more surface means faster chemical weathering.",
@@ -167,6 +201,7 @@
   {
    "id": "wmech",
    "title": "Mechanical weathering types",
+   "slides": "Weathering 4-7, 24-26",
    "bullets": [],
    "boxes": [
     {
@@ -182,9 +217,30 @@
      "text": "Salt wedging is MECHANICAL (crystals physically push), not chemical, even though it involves salt. Also: the textbook says salt wedging happens where evaporation is high or near the sea."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/weathering4.webp",
+     "slide": "Weathering 4",
+     "alt": "Photos and a block diagram of joints in sandstone and granite, labelled bedding, vertical joints and exfoliation joints."
+    },
+    {
+     "src": "img/sedimentary/weathering24.webp",
+     "slide": "Weathering 24",
+     "alt": "A multiple-choice question asking what typically limits the size of the largest lumps of intact rock."
+    },
+    {
+     "src": "img/sedimentary/weathering26.webp",
+     "slide": "Weathering 26",
+     "alt": "A multiple-choice question about what would be growing on you during cavernous weathering."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/weathering4.webp",
+      "slide": "Weathering 4",
+      "alt": "Photos and a block diagram of joints in sandstone and granite, labelled bedding, vertical joints and exfoliation joints."
+     },
      "title": "Jointing",
      "bullets": [
       "**Jointing** is natural cracks in rock. Different rock types have different joints: horizontal bedding joints and vertical joints in sandstone, **exfoliation joints** (curved sheets parallel to the surface) in granite.",
@@ -192,6 +248,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/weathering24.webp",
+      "slide": "Weathering 24",
+      "alt": "A multiple-choice question asking what typically limits the size of the largest lumps of intact rock."
+     },
      "title": "Joints limit block size",
      "bullets": [
       "Joints limit the size of the largest lumps of intact rock, so the answer is jointing.",
@@ -199,6 +260,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/weathering26.webp",
+      "slide": "Weathering 26",
+      "alt": "A multiple-choice question about what would be growing on you during cavernous weathering."
+     },
      "title": "Salt crystal wedging",
      "bullets": [
       "**Salt crystal wedging**: salty water evaporates in rock pores, salt crystals grow and push the rock apart.",
@@ -216,6 +282,7 @@
   {
    "id": "wchem",
    "title": "Chemical weathering and differential weathering",
+   "slides": "Weathering 8-11, 27",
    "bullets": [],
    "boxes": [
     {
@@ -260,9 +327,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/weathering9.webp",
+     "slide": "Weathering 9",
+     "alt": "Close-up of a grey rock with weathered pyrite crystals surrounded by rusty rings, next to a Canadian 5-cent coin for scale."
+    },
+    {
+     "src": "img/sedimentary/weathering11.webp",
+     "slide": "Weathering 11",
+     "alt": "Large rounded granite boulders in the Mojave desert."
+    },
+    {
+     "src": "img/sedimentary/weathering27.webp",
+     "slide": "Weathering 27",
+     "alt": "A multiple-choice question asking whether life increases the rate of chemical weathering."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/weathering9.webp",
+      "slide": "Weathering 9",
+      "alt": "Close-up of a grey rock with weathered pyrite crystals surrounded by rusty rings, next to a Canadian 5-cent coin for scale."
+     },
      "title": "Oxidation",
      "bullets": [
       "**Oxidation**: iron in a mineral combines with oxygen, like rust. The picture shows weathered **pyrite** crystals with rusty rings around them.",
@@ -270,6 +358,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/weathering11.webp",
+      "slide": "Weathering 11",
+      "alt": "Large rounded granite boulders in the Mojave desert."
+     },
      "bullets": [
       "Weathering attacks a **corner on three sides, an edge on two sides, a face on one side**. So corners wear fastest and blocks turn into rounded boulders, like this granite in the Mojave desert.",
       "This is also called spheroidal weathering, a kind of exfoliation caused by chemical weathering moving along joints.",
@@ -277,6 +370,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/weathering27.webp",
+      "slide": "Weathering 27",
+      "alt": "A multiple-choice question asking whether life increases the rate of chemical weathering."
+     },
      "title": "Does life speed it up?",
      "bullets": [
       "Salt (halite) and calcite dissolve easily, and slightly acidic water dissolves faster.",
@@ -295,6 +393,7 @@
   {
    "id": "soil",
    "title": "Soil formation, horizons and climate",
+   "slides": "Weathering 13-21",
    "bullets": [],
    "boxes": [
     {
@@ -334,7 +433,13 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/weathering18.webp",
+     "slide": "Weathering 18",
+     "alt": "A red-orange soil exposed in a cut, with scrubby plants growing on top."
+    }
+   ],
    "steps": [
     {
      "title": "How soil forms and its layers",
@@ -344,6 +449,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/weathering18.webp",
+      "slide": "Weathering 18",
+      "alt": "A red-orange soil exposed in a cut, with scrubby plants growing on top."
+     },
      "title": "Climate: desert, temperate, tropical",
      "bullets": [
       "A diagram compares polar, temperate, desert and tropical soils. The **tropical** block has the thickest weathered zone and is orange (iron and aluminum oxides). A red soil like the one in the picture has the colour you would expect from iron oxide.",
@@ -371,6 +481,7 @@
   {
    "id": "soilclass",
    "title": "Soil classification and quick checks",
+   "slides": "Weathering 22-27",
    "bullets": [],
    "boxes": [
     {
@@ -386,9 +497,25 @@
      "text": "Do not memorise all orders word for word; know the ones tied to climate (Oxisol, Aridisol, Gelisol, Histosol)."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/weathering22.webp",
+     "slide": "Weathering 22",
+     "alt": "A table listing the 12 soil orders of the U.S. soil classification system with a short description of each."
+    },
+    {
+     "src": "img/sedimentary/weathering23.webp",
+     "slide": "Weathering 23",
+     "alt": "A world map coloured by soil order, with red Oxisols covering tropical South America and Africa."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/weathering22.webp",
+      "slide": "Weathering 22",
+      "alt": "A table listing the 12 soil orders of the U.S. soil classification system with a short description of each."
+     },
      "title": "Soil orders",
      "bullets": [
       "The US uses the **U.S. Comprehensive Soil Classification System**. It sorts soils into **soil orders**.",
@@ -397,6 +524,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/weathering23.webp",
+      "slide": "Weathering 23",
+      "alt": "A world map coloured by soil order, with red Oxisols covering tropical South America and Africa."
+     },
      "title": "Soils of the world",
      "bullets": [
       "The world map colours each region by its soil order, so you can see where each kind of soil is common.",
@@ -414,6 +546,7 @@
   {
    "id": "sedintro",
    "title": "What is sediment? The four rock types",
+   "slides": "Sed 3-10",
    "bullets": [],
    "boxes": [
     {
@@ -458,9 +591,25 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/sed7.webp",
+     "slide": "Sed 7",
+     "alt": "An aerial view of the Grand Canyon showing many colourful horizontal rock layers."
+    },
+    {
+     "src": "img/sedimentary/sed10.webp",
+     "slide": "Sed 10",
+     "alt": "Four photos labelled clastic, biochemical, organic and chemical, with a short definition of each type."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/sed7.webp",
+      "slide": "Sed 7",
+      "alt": "An aerial view of the Grand Canyon showing many colourful horizontal rock layers."
+     },
      "title": "Layers record Earth's history",
      "bullets": [
       "Sedimentary rocks form layers like pages in a stack. The layers record ancient events and ancient environments, and geologists can read this history. The Grand Canyon is a famous example.",
@@ -468,6 +617,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed10.webp",
+      "slide": "Sed 10",
+      "alt": "Four photos labelled clastic, biochemical, organic and chemical, with a short definition of each type."
+     },
      "bullets": [
       "There are four types: clastic, biochemical, organic and chemical.",
       "**Clastic**: loose rock fragments (**clasts**) cemented together. Biochemical: cemented shells of organisms. Chemical: minerals that crystallize directly from water. Organic: carbon-rich remains of once-living organisms (coal).",
@@ -485,6 +639,7 @@
   {
    "id": "clastic",
    "title": "Clastic rocks: making them and classifying them",
+   "slides": "Sed 11-20",
    "bullets": [],
    "boxes": [
     {
@@ -529,15 +684,41 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/sed11.webp",
+     "slide": "Sed 11",
+     "alt": "A sandstone layer in a cliff above cliff dwellings, with a circular close-up of the sand grains."
+    },
+    {
+     "src": "img/sedimentary/sed12.webp",
+     "slide": "Sed 12",
+     "alt": "A block diagram showing rock weathering on a cliff, a river eroding it, and sediment deposited at the coast, coarse near land and fine farther out."
+    },
+    {
+     "src": "img/sedimentary/sed15.webp",
+     "slide": "Sed 15",
+     "alt": "Five circles of grains, from very poorly sorted (mixed sizes) to very well sorted (all about the same size)."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/sed11.webp",
+      "slide": "Sed 11",
+      "alt": "A sandstone layer in a cliff above cliff dwellings, with a circular close-up of the sand grains."
+     },
      "title": "A clastic rock: sandstone",
      "bullets": [
       "A clastic rock is made of grains (**clasts**) cemented together. The picture shows a sandstone layer in a cliff, and the circle zooms in on the sand grains."
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed12.webp",
+      "slide": "Sed 12",
+      "alt": "A block diagram showing rock weathering on a cliff, a river eroding it, and sediment deposited at the coast, coarse near land and fine farther out."
+     },
      "title": "Making a clastic rock",
      "bullets": [
       "Weathering breaks rock, erosion carries it, **deposition** drops it. Coarse grains drop near the source, fine grains travel farther.",
@@ -545,6 +726,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed15.webp",
+      "slide": "Sed 15",
+      "alt": "Five circles of grains, from very poorly sorted (mixed sizes) to very well sorted (all about the same size)."
+     },
      "title": "Sorting",
      "bullets": [
       "**Sorting** has five levels: very poorly, poorly, moderately, well and very well sorted. Well sorted = grains about the same size; poorly sorted = mixed sizes.",
@@ -564,6 +750,7 @@
   {
    "id": "nonclastic",
    "title": "Biochemical, organic and chemical rocks",
+   "slides": "Sed 21-26",
    "bullets": [],
    "boxes": [
     {
@@ -579,9 +766,30 @@
      "text": "Both are true: silica shells = biochemical chert, silica out of groundwater = chemical chert."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/sed21.webp",
+     "slide": "Sed 21",
+     "alt": "Three photos of limestone: a coral reef, fossil shells in rock with a coin for scale, and a layered limestone cliff."
+    },
+    {
+     "src": "img/sedimentary/sed22.webp",
+     "slide": "Sed 22",
+     "alt": "Thin layers of reddish-brown chert exposed in a hillside."
+    },
+    {
+     "src": "img/sedimentary/sed23.webp",
+     "slide": "Sed 23",
+     "alt": "A black coal layer between layers of sandstone and shale in a riverside cliff."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/sed21.webp",
+      "slide": "Sed 21",
+      "alt": "Three photos of limestone: a coral reef, fossil shells in rock with a coin for scale, and a layered limestone cliff."
+     },
      "title": "Biochemical limestone",
      "bullets": [
       "**Biochemical limestone** is built from shells and reefs. The mineral is mainly **calcite** (CaCO3). Shells start as aragonite (same formula, different crystal structure), which usually turns to calcite.",
@@ -589,12 +797,22 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed22.webp",
+      "slide": "Sed 22",
+      "alt": "Thin layers of reddish-brown chert exposed in a hillside."
+     },
      "title": "Biochemical chert",
      "bullets": [
       "**Biochemical chert** comes from tiny silica shells (radiolarians, diatoms) that settle on the deep ocean floor."
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed23.webp",
+      "slide": "Sed 23",
+      "alt": "A black coal layer between layers of sandstone and shale in a riverside cliff."
+     },
      "title": "Organic: coal and oil shale",
      "bullets": [
       "**Organic** rocks are the carbon-rich remains of life: **coal and oil shale**. Plant and animal remains that are buried and heated become coal, oil and natural gas.",
@@ -613,6 +831,7 @@
   {
    "id": "structures",
    "title": "Bedding, formations and sedimentary structures",
+   "slides": "Sed 27-38, 56",
    "bullets": [],
    "boxes": [
     {
@@ -628,9 +847,30 @@
      "text": "Ripples form perpendicular to flow. Midterm Q15: bedforms are structures formed in sediment during and soon after deposition. If a graded bed is coarse on TOP, the beds may be upside down (up-direction indicators, textbook 5.4.9)."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/sed30.webp",
+     "slide": "Sed 30",
+     "alt": "A title card reading sedimentary structures (or bedforms), indicators diagnostic of the depositional environment."
+    },
+    {
+     "src": "img/sedimentary/sed38.webp",
+     "slide": "Sed 38",
+     "alt": "Polygonal cracks in dried mud with a rock hammer for scale, and fossil footprints on a rock surface."
+    },
+    {
+     "src": "img/sedimentary/sed56.webp",
+     "slide": "Sed 56",
+     "alt": "A multiple-choice question asking what a sedimentary bed may have."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/sed30.webp",
+      "slide": "Sed 30",
+      "alt": "A title card reading sedimentary structures (or bedforms), indicators diagnostic of the depositional environment."
+     },
      "title": "Bedforms are clues",
      "bullets": [
       "Sedimentary structures (bedforms) are clues to the **depositional environment**. Water flowing over loose sediment creates bedforms that reflect flow speed and grain size.",
@@ -652,6 +892,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed38.webp",
+      "slide": "Sed 38",
+      "alt": "Polygonal cracks in dried mud with a rock hammer for scale, and fossil footprints on a rock surface."
+     },
      "title": "Mudcracks and footprints",
      "bullets": [
       "**Mudcracks** are polygonal drying cracks in wet mud. They show alternating wet and dry **terrestrial** conditions.",
@@ -659,6 +904,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed56.webp",
+      "slide": "Sed 56",
+      "alt": "A multiple-choice question asking what a sedimentary bed may have."
+     },
      "title": "A bed may have bedforms",
      "bullets": [
       "A sedimentary bed may have **bedforms**: structures such as ripples, dunes, cross beds and mudcracks."
@@ -676,6 +926,7 @@
   {
    "id": "env",
    "title": "Depositional environments and deltas",
+   "slides": "Sed 31, 39-45",
    "bullets": [],
    "boxes": [
     {
@@ -719,9 +970,30 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/sed43.webp",
+     "slide": "Sed 43",
+     "alt": "An orbital view of a fan-shaped river delta in Jezero crater on Mars."
+    },
+    {
+     "src": "img/sedimentary/sed44.webp",
+     "slide": "Sed 44",
+     "alt": "A butte on Mars (Kodiak Butte, a delta remnant) with a close-up labelling topsets, foresets and bottomsets."
+    },
+    {
+     "src": "img/sedimentary/sed45.webp",
+     "slide": "Sed 45",
+     "alt": "An aerial photo of an island with a reef around it, and a diagram labelling reef, lagoon, calcite sand, calcite mud and reef face."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/sedimentary/sed43.webp",
+      "slide": "Sed 43",
+      "alt": "An orbital view of a fan-shaped river delta in Jezero crater on Mars."
+     },
      "title": "A delta on Mars",
      "bullets": [
       "A **delta** forms where a river slows as it meets the sea, so its sediment drops.",
@@ -729,6 +1001,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed44.webp",
+      "slide": "Sed 44",
+      "alt": "A butte on Mars (Kodiak Butte, a delta remnant) with a close-up labelling topsets, foresets and bottomsets."
+     },
      "title": "Delta layers: top, fore, bottom",
      "bullets": [
       "A delta has topset beds (gravel, nearly horizontal), foreset beds (gravel and sand, sloping), and bottomset beds (finer sediment, horizontal). Kodiak Butte, a delta remnant, shows all three.",
@@ -736,6 +1013,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed45.webp",
+      "slide": "Sed 45",
+      "alt": "An aerial photo of an island with a reef around it, and a diagram labelling reef, lagoon, calcite sand, calcite mud and reef face."
+     },
      "title": "Shallow-water carbonate",
      "bullets": [
       "Shallow-water carbonate settings have a **reef**, a lagoon, calcite sand and calcite mud, and a reef face with broken reef fragments."
@@ -753,6 +1035,7 @@
   {
    "id": "basins",
    "title": "Basins, sea level and facies",
+   "slides": "Sed 46-55",
    "bullets": [],
    "boxes": [
     {
@@ -792,7 +1075,13 @@
      ]
     ]
    },
-   "images": [],
+   "images": [
+    {
+     "src": "img/sedimentary/sed55.webp",
+     "slide": "Sed 55",
+     "alt": "A multiple-choice question asking what type of accommodation space Calgary sits on."
+    }
+   ],
    "steps": [
     {
      "title": "Four basin types",
@@ -815,6 +1104,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/sedimentary/sed55.webp",
+      "slide": "Sed 55",
+      "alt": "A multiple-choice question asking what type of accommodation space Calgary sits on."
+     },
      "title": "Foreland basins",
      "bullets": [
       "**Foreland basins** lie on the craton side of a collisional mountain belt. The lithosphere flexes under the load, and the downwarp fills with debris eroded from the mountains.",

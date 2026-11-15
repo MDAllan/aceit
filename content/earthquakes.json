@@ -6,41 +6,47 @@
  "color": "#b4533c",
  "intro": "Earthquakes happen when rocks rupture and release elastic strain energy as seismic waves. Connect fault motion and earthquake locations to wave behavior, magnitude, ground shaking, secondary hazards, tsunamis, and preparedness.",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Explain how elastic strain builds and is released during fault rupture."
-   },
-   {
-    "id": "goal-02",
-    "text": "Use fault geometry and block motion to identify the relative movement of rocks."
-   },
-   {
-    "id": "goal-03",
-    "text": "Distinguish an earthquake's focus from its epicenter and explain how seismographs record shaking."
-   },
-   {
-    "id": "goal-04",
-    "text": "Compare body waves with surface waves by their paths, motion, and effects."
-   },
-   {
-    "id": "goal-05",
-    "text": "Distinguish magnitude from intensity and relate earthquake magnitude to energy release."
-   },
-   {
-    "id": "goal-06",
-    "text": "Explain how ground conditions affect shaking and earthquake damage."
-   },
-   {
-    "id": "goal-07",
-    "text": "Explain how tsunamis form and compare the roles of warnings and prediction."
-   }
+  {
+   "id": "goal-01",
+   "text": "Explain how elastic strain builds and is released during fault rupture."
+  },
+  {
+   "id": "goal-02",
+   "text": "Use fault geometry and block motion to identify the relative movement of rocks."
+  },
+  {
+   "id": "goal-03",
+   "text": "Distinguish an earthquake's focus from its epicenter and explain how seismographs record shaking."
+  },
+  {
+   "id": "goal-04",
+   "text": "Compare body waves with surface waves by their paths, motion, and effects."
+  },
+  {
+   "id": "goal-05",
+   "text": "Distinguish magnitude from intensity and relate earthquake magnitude to energy release."
+  },
+  {
+   "id": "goal-06",
+   "text": "Explain how ground conditions affect shaking and earthquake damage."
+  },
+  {
+   "id": "goal-07",
+   "text": "Explain how tsunamis form and compare the roles of warnings and prediction."
+  }
  ],
  "sections": [
   {
    "id": "earthquake-cycle",
    "title": "Elastic strain and fault rupture",
+   "slides": "4, 6",
    "steps": [
     {
+     "img": {
+      "src": "img/earthquakes/s4.webp",
+      "slide": "4",
+      "alt": "Diagram comparing a bent rock layer and a bent stick that snaps back, showing stored elastic strain released as slip along a fault."
+     },
      "title": "The earthquake cycle",
      "bullets": [
       "An earthquake is the release of energy stored as **elastic deformation** of rock, propagated through Earth as seismic waves.",
@@ -49,6 +55,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s6.webp",
+      "slide": "6",
+      "alt": "Diagram of a block pulled by a spring that sticks, then slips, with a graph of stress building up and dropping at each slip."
+     },
      "title": "Stick-slip behavior",
      "bullets": [
       "A locked fault can alternate between periods of little slip and sudden movement. This is called **stick-slip behavior**.",
@@ -68,14 +79,31 @@
      "text": "A fault can remain locked even as plates move. Elastic strain builds around it until the resistance to slip is overcome."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/earthquakes/s4.webp",
+     "slide": "4",
+     "alt": "Diagram comparing a bent rock layer and a bent stick that snaps back, showing stored elastic strain released as slip along a fault."
+    },
+    {
+     "src": "img/earthquakes/s6.webp",
+     "slide": "6",
+     "alt": "Diagram of a block pulled by a spring that sticks, then slips, with a graph of stress building up and dropping at each slip."
+    }
+   ],
    "visual": "earthquakes"
   },
   {
    "id": "fault-motion",
    "title": "Faults and block motion",
+   "slides": "15, 16",
    "steps": [
     {
+     "img": {
+      "src": "img/earthquakes/s15.webp",
+      "slide": "15",
+      "alt": "Block diagram of a normal fault with the footwall block, the hanging-wall block, a fault scarp and arrows showing extension."
+     },
      "title": "Name a fault from its displacement",
      "bullets": [
       "A **fault** is a break in Earth's crust along which rock has moved. The block above an inclined fault is the **hanging wall**; the block below it is the **footwall**.",
@@ -85,6 +113,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s16.webp",
+      "slide": "16",
+      "alt": "Block diagram of a reverse fault dipping at 60 degrees, with the hanging wall and footwall labelled and arrows showing compression."
+     },
      "title": "Use the relative motion",
      "bullets": [
       "Fault names describe observed displacement, not simply the appearance of a crack.",
@@ -100,13 +133,30 @@
      "text": "Normal: hanging wall down. Reverse: hanging wall up. Thrust: low-angle reverse. Strike-slip: side-to-side."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/earthquakes/s15.webp",
+     "slide": "15",
+     "alt": "Block diagram of a normal fault with the footwall block, the hanging-wall block, a fault scarp and arrows showing extension."
+    },
+    {
+     "src": "img/earthquakes/s16.webp",
+     "slide": "16",
+     "alt": "Block diagram of a reverse fault dipping at 60 degrees, with the hanging wall and footwall labelled and arrows showing compression."
+    }
+   ]
   },
   {
    "id": "earthquake-location",
    "title": "Focus, epicenter, and seismographs",
+   "slides": "9, 23",
    "steps": [
     {
+     "img": {
+      "src": "img/earthquakes/s9.webp",
+      "slide": "9",
+      "alt": "Block diagram of a fault showing the hypocenter on the fault surface and the epicenter directly above it, plus a map of epicenters along the Denali Fault in Alaska."
+     },
      "title": "Where rupture begins",
      "bullets": [
       "The **hypocenter**, also called the **focus**, is the place on the fault where rupture begins.",
@@ -115,6 +165,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s23.webp",
+      "slide": "23",
+      "alt": "Diagrams of two seismographs, with a spring weight and pen recording vertical motion and a hanging weight and pen recording horizontal motion on a rotating drum."
+     },
      "title": "Recording ground motion",
      "bullets": [
       "A **seismograph** records ground motion as seismic waves arrive.",
@@ -130,13 +185,30 @@
      "text": "Focus/hypocenter: where the rupture starts underground. Epicenter: the point directly above it at the surface."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/earthquakes/s9.webp",
+     "slide": "9",
+     "alt": "Block diagram of a fault showing the hypocenter on the fault surface and the epicenter directly above it, plus a map of epicenters along the Denali Fault in Alaska."
+    },
+    {
+     "src": "img/earthquakes/s23.webp",
+     "slide": "23",
+     "alt": "Diagrams of two seismographs, with a spring weight and pen recording vertical motion and a hanging weight and pen recording horizontal motion on a rotating drum."
+    }
+   ]
   },
   {
    "id": "seismic-waves",
    "title": "Body waves and surface waves",
+   "slides": "19, 21",
    "steps": [
     {
+     "img": {
+      "src": "img/earthquakes/s19.webp",
+      "slide": "19",
+      "alt": "Diagram of P waves as compressions and dilations travelling through rock, shown with a stretched and squeezed spring."
+     },
      "title": "P and S body waves",
      "bullets": [
       "**P waves** are compressional body waves: particles move back and forth in the direction the wave travels. P waves can move through solids and liquids.",
@@ -145,6 +217,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s21.webp",
+      "slide": "21",
+      "alt": "Diagram of a Love wave moving along the ground surface, with arrows showing side-to-side ground motion."
+     },
      "title": "Love and Rayleigh surface waves",
      "bullets": [
       "**Love waves (L waves)** and **Rayleigh waves (R waves)** travel along Earth's exterior.",
@@ -164,13 +241,30 @@
      "text": "S waves do not travel through liquid. P waves can travel through both solid and liquid material."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/earthquakes/s19.webp",
+     "slide": "19",
+     "alt": "Diagram of P waves as compressions and dilations travelling through rock, shown with a stretched and squeezed spring."
+    },
+    {
+     "src": "img/earthquakes/s21.webp",
+     "slide": "21",
+     "alt": "Diagram of a Love wave moving along the ground surface, with arrows showing side-to-side ground motion."
+    }
+   ]
   },
   {
    "id": "earthquake-size",
    "title": "Magnitude, energy, and intensity",
+   "slides": "12, 31",
    "steps": [
     {
+     "img": {
+      "src": "img/earthquakes/s12.webp",
+      "slide": "12",
+      "alt": "Seismogram showing the largest wave amplitude, next to a chart of earthquake magnitude against energy released."
+     },
      "title": "Magnitude scales describe earthquake size",
      "bullets": [
       "**Magnitude** describes earthquake size using measurements from seismic waves. The Richter or local magnitude (**ML**) is most useful near the epicenter.",
@@ -179,6 +273,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s31.webp",
+      "slide": "31",
+      "alt": "USGS shaking-intensity map of the 1999 Izmit, Turkey earthquake, with strongest shaking along the fault and weaker shaking farther away."
+     },
      "title": "Magnitude is not the same as observed effects",
      "bullets": [
       "The **Mercalli** scale is useful for classifying observed effects and damage at a location.",
@@ -194,13 +293,30 @@
      "text": "Do not confuse Richter/local magnitude (ML), moment magnitude (Mw), and Mercalli effects. Moment magnitude is the most accurate measure of earthquake size."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/earthquakes/s12.webp",
+     "slide": "12",
+     "alt": "Seismogram showing the largest wave amplitude, next to a chart of earthquake magnitude against energy released."
+    },
+    {
+     "src": "img/earthquakes/s31.webp",
+     "slide": "31",
+     "alt": "USGS shaking-intensity map of the 1999 Izmit, Turkey earthquake, with strongest shaking along the fault and weaker shaking farther away."
+    }
+   ]
   },
   {
    "id": "shaking-hazards",
    "title": "Shaking, ground conditions, and damage",
+   "slides": "39, 44, 48",
    "steps": [
     {
+     "img": {
+      "src": "img/earthquakes/s39.webp",
+      "slide": "39",
+      "alt": "Cross-section from hard rock to silt and mud with a trace above it showing shaking growing stronger on softer ground."
+     },
      "title": "Why shaking becomes a disaster",
      "bullets": [
       "Ground shaking damages buildings and infrastructure. Building failure is a major cause of earthquake-related loss of life.",
@@ -209,6 +325,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s44.webp",
+      "slide": "44",
+      "alt": "Cracked, sand-venting ground after liquefaction, with a before-and-after diagram of sand volcanoes forming through mud."
+     },
      "title": "Secondary hazards",
      "bullets": [
       "**Liquefaction** occurs when saturated, loose sediment loses strength during shaking and behaves more like a fluid.",
@@ -217,6 +338,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s48.webp",
+      "slide": "48",
+      "alt": "Four diagrams of earthquake-resistant design: a braced wood-frame house, a cross-braced tall building, a bridge column wrapped in cable, and a building on rollers and springs."
+     },
      "title": "Preparedness and mitigation",
      "bullets": [
       "Preparedness includes community training, practice drills, education, and maintaining emergency supplies.",
@@ -232,13 +358,35 @@
      "text": "Earthquake magnitude alone cannot predict damage. Ground amplification, resonance, duration, construction, and secondary hazards help explain why outcomes differ."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/earthquakes/s39.webp",
+     "slide": "39",
+     "alt": "Cross-section from hard rock to silt and mud with a trace above it showing shaking growing stronger on softer ground."
+    },
+    {
+     "src": "img/earthquakes/s44.webp",
+     "slide": "44",
+     "alt": "Cracked, sand-venting ground after liquefaction, with a before-and-after diagram of sand volcanoes forming through mud."
+    },
+    {
+     "src": "img/earthquakes/s48.webp",
+     "slide": "48",
+     "alt": "Four diagrams of earthquake-resistant design: a braced wood-frame house, a cross-braced tall building, a bridge column wrapped in cable, and a building on rollers and springs."
+    }
+   ]
   },
   {
    "id": "tsunami-prediction",
    "title": "Tsunamis, warnings, and prediction",
+   "slides": "54, 59, 62",
    "steps": [
     {
+     "img": {
+      "src": "img/earthquakes/s59.webp",
+      "slide": "59",
+      "alt": "Comparison of wind waves and tsunami waves, with side-view diagrams of a small wave washing onto a beach and a large tsunami submerging low land."
+     },
      "title": "Tsunami waves are not ordinary wind waves",
      "bullets": [
       "Wind waves mainly affect the ocean's upper layer and have much shorter wavelengths.",
@@ -247,6 +395,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s54.webp",
+      "slide": "54",
+      "alt": "Intensity map of the Haiti earthquake beside a box saying no reliable short-range predictions exist and listing proposed precursors."
+     },
      "title": "Warnings are not long-range predictions",
      "bullets": [
       "Reliable short-range earthquake predictions over weeks or months are not currently possible.",
@@ -255,6 +408,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/earthquakes/s62.webp",
+      "slide": "62",
+      "alt": "Photo of a yellow and red tsunami detection buoy floating at sea with a research ship behind it."
+     },
      "title": "Respond to risk",
      "bullets": [
       "Community preparedness, drills, education, and emergency supplies help reduce risk.",
@@ -270,61 +428,518 @@
      "text": "An early-warning alert is not a prediction weeks ahead. It detects an earthquake already underway and may provide only a short time before damaging waves arrive."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/earthquakes/s59.webp",
+     "slide": "59",
+     "alt": "Comparison of wind waves and tsunami waves, with side-view diagrams of a small wave washing onto a beach and a large tsunami submerging low land."
+    },
+    {
+     "src": "img/earthquakes/s54.webp",
+     "slide": "54",
+     "alt": "Intensity map of the Haiti earthquake beside a box saying no reliable short-range predictions exist and listing proposed precursors."
+    },
+    {
+     "src": "img/earthquakes/s62.webp",
+     "slide": "62",
+     "alt": "Photo of a yellow and red tsunami detection buoy floating at sea with a research ship behind it."
+    }
+   ]
   }
  ],
  "cards": [
-  {"id":"eq-c1","front":"Elastic strain","back":"Reversible deformation that stores energy in rock as stress accumulates.","short":"Reversible deformation storing energy."},
-  {"id":"eq-c2","front":"Stick-slip behavior","back":"A fault alternates between being locked and slipping suddenly.","short":"A locked fault slips suddenly."},
-  {"id":"eq-c3","front":"Hypocenter","back":"The underground point on a fault where earthquake rupture begins.","short":"Underground rupture origin."},
-  {"id":"eq-c5","front":"Epicenter","back":"The point at Earth's surface directly above the hypocenter.","short":"Surface point above the hypocenter."},
-  {"id":"eq-c6","front":"Fault","back":"A break in Earth's crust along which rock has moved.","short":"A crustal break with displacement."},
-  {"id":"eq-c7","front":"Hanging wall","back":"The rock block above an inclined fault surface.","short":"Block above an inclined fault."},
-  {"id":"eq-c8","front":"Footwall","back":"The rock block below an inclined fault surface.","short":"Block below an inclined fault."},
-  {"id":"eq-c9","front":"Normal fault","back":"A fault in which the hanging wall moves down relative to the footwall.","short":"Hanging wall moves down."},
-  {"id":"eq-c10","front":"Reverse fault","back":"A fault in which the hanging wall moves up relative to the footwall.","short":"Hanging wall moves up."},
-  {"id":"eq-c11","front":"Thrust fault","back":"A low-angle reverse fault.","short":"Low-angle reverse fault."},
-  {"id":"eq-c12","front":"Strike-slip fault","back":"A fault with mainly horizontal displacement along its trace.","short":"Mainly horizontal displacement."},
-  {"id":"eq-c13","front":"P wave","back":"A compressional body wave that travels through solids and liquids.","short":"Compressional; solids and liquids."},
-  {"id":"eq-c14","front":"S wave","back":"A shear body wave that travels through solids but not liquids.","short":"Shear; solids only."},
-  {"id":"eq-c15","front":"Love wave","back":"A surface wave with horizontal side-to-side ground motion.","short":"Surface wave; horizontal shear."},
-  {"id":"eq-c16","front":"Rayleigh wave","back":"A surface wave with rolling, elliptical particle motion.","short":"Surface wave; rolling motion."},
-  {"id":"eq-c17","front":"Seismograph","back":"An instrument that records ground motion caused by seismic waves.","short":"Instrument recording ground motion."},
-  {"id":"eq-c18","front":"Moment magnitude (Mw)","back":"A magnitude scale based on rupture properties and the most accurate measure of earthquake size.","short":"Rupture-based earthquake magnitude."},
-  {"id":"eq-c19","front":"Liquefaction","back":"Loss of strength in saturated, loose sediment during earthquake shaking.","short":"Saturated sediment loses strength."},
-  {"id":"eq-c20","front":"Resonance","back":"Amplified structural motion when ground shaking matches a structure's natural response.","short":"Ground motion matches structural response."},
-  {"id":"eq-c21","front":"Tsunami","back":"A long-wavelength wave that moves the full depth of the ocean and can inundate coasts.","short":"Long wave involving the full water column."},
-  {"id":"eq-c22","front":"Base isolation","back":"A building design that reduces transfer of earthquake motion from the ground to the structure.","short":"Separates building response from ground motion."}
+  {
+   "id": "eq-c1",
+   "front": "Elastic strain",
+   "back": "Reversible deformation that stores energy in rock as stress accumulates.",
+   "short": "Reversible deformation storing energy."
+  },
+  {
+   "id": "eq-c2",
+   "front": "Stick-slip behavior",
+   "back": "A fault alternates between being locked and slipping suddenly.",
+   "short": "A locked fault slips suddenly."
+  },
+  {
+   "id": "eq-c3",
+   "front": "Hypocenter",
+   "back": "The underground point on a fault where earthquake rupture begins.",
+   "short": "Underground rupture origin."
+  },
+  {
+   "id": "eq-c5",
+   "front": "Epicenter",
+   "back": "The point at Earth's surface directly above the hypocenter.",
+   "short": "Surface point above the hypocenter."
+  },
+  {
+   "id": "eq-c6",
+   "front": "Fault",
+   "back": "A break in Earth's crust along which rock has moved.",
+   "short": "A crustal break with displacement."
+  },
+  {
+   "id": "eq-c7",
+   "front": "Hanging wall",
+   "back": "The rock block above an inclined fault surface.",
+   "short": "Block above an inclined fault."
+  },
+  {
+   "id": "eq-c8",
+   "front": "Footwall",
+   "back": "The rock block below an inclined fault surface.",
+   "short": "Block below an inclined fault."
+  },
+  {
+   "id": "eq-c9",
+   "front": "Normal fault",
+   "back": "A fault in which the hanging wall moves down relative to the footwall.",
+   "short": "Hanging wall moves down."
+  },
+  {
+   "id": "eq-c10",
+   "front": "Reverse fault",
+   "back": "A fault in which the hanging wall moves up relative to the footwall.",
+   "short": "Hanging wall moves up."
+  },
+  {
+   "id": "eq-c11",
+   "front": "Thrust fault",
+   "back": "A low-angle reverse fault.",
+   "short": "Low-angle reverse fault."
+  },
+  {
+   "id": "eq-c12",
+   "front": "Strike-slip fault",
+   "back": "A fault with mainly horizontal displacement along its trace.",
+   "short": "Mainly horizontal displacement."
+  },
+  {
+   "id": "eq-c13",
+   "front": "P wave",
+   "back": "A compressional body wave that travels through solids and liquids.",
+   "short": "Compressional; solids and liquids."
+  },
+  {
+   "id": "eq-c14",
+   "front": "S wave",
+   "back": "A shear body wave that travels through solids but not liquids.",
+   "short": "Shear; solids only."
+  },
+  {
+   "id": "eq-c15",
+   "front": "Love wave",
+   "back": "A surface wave with horizontal side-to-side ground motion.",
+   "short": "Surface wave; horizontal shear."
+  },
+  {
+   "id": "eq-c16",
+   "front": "Rayleigh wave",
+   "back": "A surface wave with rolling, elliptical particle motion.",
+   "short": "Surface wave; rolling motion."
+  },
+  {
+   "id": "eq-c17",
+   "front": "Seismograph",
+   "back": "An instrument that records ground motion caused by seismic waves.",
+   "short": "Instrument recording ground motion."
+  },
+  {
+   "id": "eq-c18",
+   "front": "Moment magnitude (Mw)",
+   "back": "A magnitude scale based on rupture properties and the most accurate measure of earthquake size.",
+   "short": "Rupture-based earthquake magnitude."
+  },
+  {
+   "id": "eq-c19",
+   "front": "Liquefaction",
+   "back": "Loss of strength in saturated, loose sediment during earthquake shaking.",
+   "short": "Saturated sediment loses strength."
+  },
+  {
+   "id": "eq-c20",
+   "front": "Resonance",
+   "back": "Amplified structural motion when ground shaking matches a structure's natural response.",
+   "short": "Ground motion matches structural response."
+  },
+  {
+   "id": "eq-c21",
+   "front": "Tsunami",
+   "back": "A long-wavelength wave that moves the full depth of the ocean and can inundate coasts.",
+   "short": "Long wave involving the full water column."
+  },
+  {
+   "id": "eq-c22",
+   "front": "Base isolation",
+   "back": "A building design that reduces transfer of earthquake motion from the ground to the structure.",
+   "short": "Separates building response from ground motion."
+  }
  ],
  "quiz": [
-  {"id":"eq-1","q":"A fault remains locked while nearby rock bends, then slips suddenly. What supplied the energy released in the earthquake?","options":["Elastic deformation accumulated in the rock","Heat produced only after the rupture","Sunlight stored in the surface soil","Water pressure created after shaking","The mass of the epicenter"],"answer":0,"why":"Elastic strain accumulates while the fault is locked and is released when slip occurs."},
-  {"id":"eq-2","q":"Which location is the epicenter?","options":["The point on the fault where rupture first begins","The point at the surface directly above the hypocenter","The end of the fault farthest from the rupture","The nearest seismograph station","The point where surface waves stop"],"answer":1,"why":"The hypocenter is underground; the epicenter is directly above it at the surface."},
-  {"id":"eq-3","q":"A reverse fault has a low dip angle. What is the more specific name for this fault?","options":["Normal fault","Strike-slip fault","Thrust fault","Transform fault","Detachment joint"],"answer":2,"why":"A thrust fault is a low-angle reverse fault."},
-  {"id":"eq-4","q":"A fault forms as crust is pulled apart. The block above the inclined fault moves down relative to the block below. Which fault formed?","options":["Reverse fault","Thrust fault","Strike-slip fault","Normal fault","Oblique fold"],"answer":3,"why":"Extension and downward movement of the hanging wall characterize a normal fault."},
-  {"id":"eq-5","q":"Which earthquake location is the underground point on a fault where rupture begins?","options":["Epicenter","Seismogram","Fault scarp","Seismic gap","Hypocenter"],"answer":4,"why":"The hypocenter, or focus, is the rupture origin beneath the surface."},
-  {"id":"eq-6","q":"Which body wave can pass through a liquid layer of Earth?","options":["P wave","S wave","Love wave only","Rayleigh wave only","Neither P nor S wave"],"answer":0,"why":"P waves are compressional and travel through both solids and liquids; S waves cannot travel through liquids."},
-  {"id":"eq-7","q":"A seismic wave moves particles perpendicular to the direction in which the wave travels. Which wave best matches this motion?","options":["P wave","S wave","Sound wave","Tsunami","Rayleigh wave only"],"answer":1,"why":"S waves are shear waves, with particle motion perpendicular to their direction of travel."},
-  {"id":"eq-8","q":"Which statement best distinguishes Love and Rayleigh waves from P and S waves?","options":["They travel only through the liquid outer core.","They are magnitude scales rather than seismic waves.","They travel along Earth's surface and are often especially destructive.","They cannot be recorded by a seismograph.","They always arrive before body waves."],"answer":2,"why":"Love and Rayleigh waves are surface waves with slower speed and destructive ground motion."},
-  {"id":"eq-9","q":"A magnitude 6 earthquake is compared with a magnitude 3 earthquake. How do their maximum recorded amplitudes compare?","options":["The magnitude 6 amplitude is 3 times greater.","The magnitude 3 amplitude is 10 times greater.","They have equal amplitude but different intensity.","The magnitude 6 amplitude is about 1,000 times greater.","The magnitude 6 amplitude is about 30 times greater."],"answer":3,"why":"Each magnitude unit corresponds to a tenfold amplitude change; a three-unit difference is 10 × 10 × 10."},
-  {"id":"eq-10","q":"Which measure provides the most accurate estimate of earthquake size among these choices?","options":["Mercalli intensity","Moment magnitude","Richter/local magnitude ML","P-wave velocity","Rupture displacement"],"answer":1,"why":"Moment magnitude uses properties of the rupture to characterize earthquake size."},
-  {"id":"eq-11","q":"Which scale is most useful for classifying observed effects and damage at a particular location?","options":["Mercalli","Moment magnitude","Richter ML","P-wave velocity","Rupture displacement"],"answer":0,"why":"Mercalli classifies observed effects; magnitude scales describe the earthquake's size."},
-  {"id":"eq-12","q":"Two communities experience the same earthquake magnitude, but one has more severe shaking on soft, loose ground. Which explanation best accounts for the difference?","options":["The epicenter changes location when the ground is soft.","Local ground conditions can amplify seismic shaking.","Soft ground prevents seismic waves from reaching the surface.","Magnitude directly measures the strength of every building.","Mercalli intensity is constant everywhere for one earthquake."],"answer":1,"why":"Ground conditions can amplify shaking, so one earthquake can produce different local effects."},
-  {"id":"eq-13","q":"A saturated, loose sediment layer loses strength during shaking and buildings begin to settle. Which hazard is occurring?","options":["Elastic rebound","Directivity","Liquefaction","Base isolation","Stick-slip"],"answer":2,"why":"Liquefaction is the loss of strength in saturated loose sediment during shaking."},
-  {"id":"eq-14","q":"A building is damaged more severely when prolonged ground motion matches its natural vibration. What process amplified its motion?","options":["Liquefaction","Fault locking","Mercalli conversion","Resonance","Elastic recovery"],"answer":3,"why":"Resonance can amplify structural motion when ground shaking matches the structure's response."},
-  {"id":"eq-15","q":"Which statement about shallow, intermediate, and deep earthquakes is most accurate?","options":["All occur only along passive continental margins.","Deep earthquakes occur mainly at mid-ocean ridges.","Transform boundaries produce the deepest earthquakes.","Earthquakes occur at every depth equally along all boundaries.","Convergent plate boundaries can host earthquakes at all three depth ranges."],"answer":4,"why":"Convergent boundaries can host shallow, intermediate, and deep earthquakes."},
-  {"id":"eq-16","q":"A deep-focus earthquake occurs within a descending slab. At approximately what depth do the deepest earthquake foci occur?","options":["660 km","120 km","240 km","360 km","5 km"],"answer":0,"why":"The deepest earthquake foci occur at approximately 660 km depth."},
-  {"id":"eq-17","q":"Which measure combines source size with the physical properties of a rupture rather than simply describing local damage?","options":["Mercalli intensity","Moment magnitude","Epicentral distance","Liquefaction index","Seismogram duration"],"answer":1,"why":"Moment magnitude characterizes earthquake size using properties of the rupture."},
-  {"id":"eq-18","q":"A phone alert arrives seconds before strong shaking, after rupture has started elsewhere. What is the alert an example of?","options":["Reliable prediction weeks ahead","A foreshock forecast","Early warning after an earthquake has begun","A Mercalli magnitude report","A guarantee that no damaging waves will arrive"],"answer":2,"why":"Early-warning systems detect an ongoing earthquake and may alert locations before stronger waves arrive."},
-  {"id":"eq-19","q":"Which claim about short-term earthquake prediction is supported by current evidence?","options":["Foreshocks always identify the exact time and place.","Radon measurements reliably predict every large earthquake.","Animal behavior is a dependable warning method.","No reliable short-range prediction over weeks or months is currently possible.","Tsunami buoys predict earthquakes before rupture."],"answer":3,"why":"Reliable short-range earthquake predictions are not currently possible."},
-  {"id":"eq-20","q":"Which characteristic most clearly distinguishes a tsunami from an ordinary wind-generated wave?","options":["It affects only the ocean's upper 100 metres.","It is driven by wind speed and has a short wavelength.","It dissipates all its energy offshore.","It cannot travel across deep ocean.","It has a very long wavelength and moves the full water column."],"answer":4,"why":"Tsunamis have long wavelengths and involve the full ocean depth, unlike ordinary wind waves."},
-  {"id":"eq-21","q":"Why can a tsunami become especially destructive as it reaches a shallow coast?","options":["Its speed decreases and water can pile up and inundate the land.","Its wavelength becomes identical to that of a wind wave.","The ocean floor stops moving beneath the wave.","It loses all stored energy before reaching shore.","It changes into a body wave inside the crust."],"answer":0,"why":"Tsunami waves slow in shallow water and can build up, producing coastal inundation."},
-  {"id":"eq-22","q":"Which combination best explains why earthquake damage varies between locations?","options":["Only the number of nearby seismographs","Ground conditions, shaking duration, structural response, and construction","The names assigned to the earthquake's faults","The time of day and the color of the surface rocks","Only the maximum magnitude number"],"answer":1,"why":"Local ground amplification, resonance, duration, and building performance affect damage."},
-  {"id":"eq-23","q":"A building is designed so the ground can move beneath it without transferring as much motion to the structure. Which mitigation feature is being used?","options":["Seismograph","Thrust fault","Base isolation","Liquefaction","Moment magnitude"],"answer":2,"why":"Base isolation reduces the transfer of ground motion into a building."},
-  {"id":"eq-24","q":"A fault trace shows mainly horizontal displacement, with no dominant up-or-down motion of the blocks. What is the best classification?","options":["Normal fault","Reverse fault","Thrust fault","Strike-slip fault","Footwall collapse"],"answer":3,"why":"Strike-slip faults are characterized mainly by horizontal motion along the fault."},
-  {"id":"eq-25","q":"A seismograph records a P wave followed by an S wave from one earthquake. Which statement classifies both arrivals correctly?","options":["Both are body waves that travel through Earth's interior.","P is a surface wave and S is a body wave.","Both are surface waves that travel only along the crust.","P and S are earthquake intensity scales, not waves.","Only the later S wave is seismic."],"answer":0,"why":"P waves and S waves travel through Earth's interior, so both are body waves. Love and Rayleigh waves travel along the surface."},
-  {"id":"eq-26","q":"Two neighborhoods are the same distance from an earthquake. One is built on solid bedrock; the other is on thick, loose, water-saturated sediment and experiences stronger shaking. Which explanation best connects the site to the hazard?","options":["The sediment can amplify shaking, and saturation can allow liquefaction.","The sediment reduces wave amplitude and guarantees less damage.","The earthquake has a different magnitude beneath each neighborhood.","Bedrock always resonates more strongly than every sediment layer.","Saturation prevents seismic waves from entering the ground."],"answer":0,"why":"Local ground materials affect shaking. Loose sediments can amplify motion, and saturated loose sediment may lose strength through liquefaction."},
-  {"id":"eq-27","q":"A flexible mid-rise building suffers more motion than a shorter nearby building during long-period shaking. The ground-motion period is close to the mid-rise building's natural period. What best explains the difference?","options":["Resonance amplifies the response of the mid-rise building.","The earthquake's magnitude is higher at the taller building.","The shorter building converts S waves into P waves.","The taller building is farther from the hypocenter by definition.","Base isolation makes every structure resonate."],"answer":0,"why":"When shaking has a period close to a structure's natural response, resonance can amplify that structure's motion. Building height and design influence that natural response."},
-  {"id":"eq-28","q":"After a cluster of small earthquakes, a city asks whether scientists can reliably name the date and location of the next damaging earthquake weeks in advance. Which answer best reflects current understanding?","options":["Yes; a foreshock cluster always gives the exact time and place.","Yes; earthquake magnitude can be read from the local weather.","No; reliable short-range prediction weeks or months ahead is not currently possible.","No; earthquakes cannot be detected even after rupture begins.","Yes; a tsunami buoy predicts an earthquake before it starts."],"answer":2,"why":"Earthquake scientists cannot reliably predict the exact time and place of an event weeks or months ahead. Early-warning systems are different: they detect an earthquake after rupture begins and may alert people before stronger waves arrive."}
+  {
+   "id": "eq-1",
+   "q": "A fault remains locked while nearby rock bends, then slips suddenly. What supplied the energy released in the earthquake?",
+   "options": [
+    "Elastic deformation accumulated in the rock",
+    "Heat produced only after the rupture",
+    "Sunlight stored in the surface soil",
+    "Water pressure created after shaking",
+    "The mass of the epicenter"
+   ],
+   "answer": 0,
+   "why": "Elastic strain accumulates while the fault is locked and is released when slip occurs."
+  },
+  {
+   "id": "eq-2",
+   "q": "Which location is the epicenter?",
+   "options": [
+    "The point on the fault where rupture first begins",
+    "The point at the surface directly above the hypocenter",
+    "The end of the fault farthest from the rupture",
+    "The nearest seismograph station",
+    "The point where surface waves stop"
+   ],
+   "answer": 1,
+   "why": "The hypocenter is underground; the epicenter is directly above it at the surface."
+  },
+  {
+   "id": "eq-3",
+   "q": "A reverse fault has a low dip angle. What is the more specific name for this fault?",
+   "options": [
+    "Normal fault",
+    "Strike-slip fault",
+    "Thrust fault",
+    "Transform fault",
+    "Detachment joint"
+   ],
+   "answer": 2,
+   "why": "A thrust fault is a low-angle reverse fault."
+  },
+  {
+   "id": "eq-4",
+   "q": "A fault forms as crust is pulled apart. The block above the inclined fault moves down relative to the block below. Which fault formed?",
+   "options": [
+    "Reverse fault",
+    "Thrust fault",
+    "Strike-slip fault",
+    "Normal fault",
+    "Oblique fold"
+   ],
+   "answer": 3,
+   "why": "Extension and downward movement of the hanging wall characterize a normal fault."
+  },
+  {
+   "id": "eq-5",
+   "q": "Which earthquake location is the underground point on a fault where rupture begins?",
+   "options": [
+    "Epicenter",
+    "Seismogram",
+    "Fault scarp",
+    "Seismic gap",
+    "Hypocenter"
+   ],
+   "answer": 4,
+   "why": "The hypocenter, or focus, is the rupture origin beneath the surface."
+  },
+  {
+   "id": "eq-6",
+   "q": "Which body wave can pass through a liquid layer of Earth?",
+   "options": [
+    "P wave",
+    "S wave",
+    "Love wave only",
+    "Rayleigh wave only",
+    "Neither P nor S wave"
+   ],
+   "answer": 0,
+   "why": "P waves are compressional and travel through both solids and liquids; S waves cannot travel through liquids."
+  },
+  {
+   "id": "eq-7",
+   "q": "A seismic wave moves particles perpendicular to the direction in which the wave travels. Which wave best matches this motion?",
+   "options": [
+    "P wave",
+    "S wave",
+    "Sound wave",
+    "Tsunami",
+    "Rayleigh wave only"
+   ],
+   "answer": 1,
+   "why": "S waves are shear waves, with particle motion perpendicular to their direction of travel."
+  },
+  {
+   "id": "eq-8",
+   "q": "Which statement best distinguishes Love and Rayleigh waves from P and S waves?",
+   "options": [
+    "They travel only through the liquid outer core.",
+    "They are magnitude scales rather than seismic waves.",
+    "They travel along Earth's surface and are often especially destructive.",
+    "They cannot be recorded by a seismograph.",
+    "They always arrive before body waves."
+   ],
+   "answer": 2,
+   "why": "Love and Rayleigh waves are surface waves with slower speed and destructive ground motion."
+  },
+  {
+   "id": "eq-9",
+   "q": "A magnitude 6 earthquake is compared with a magnitude 3 earthquake. How do their maximum recorded amplitudes compare?",
+   "options": [
+    "The magnitude 6 amplitude is 3 times greater.",
+    "The magnitude 3 amplitude is 10 times greater.",
+    "They have equal amplitude but different intensity.",
+    "The magnitude 6 amplitude is about 1,000 times greater.",
+    "The magnitude 6 amplitude is about 30 times greater."
+   ],
+   "answer": 3,
+   "why": "Each magnitude unit corresponds to a tenfold amplitude change; a three-unit difference is 10 × 10 × 10."
+  },
+  {
+   "id": "eq-10",
+   "q": "Which measure provides the most accurate estimate of earthquake size among these choices?",
+   "options": [
+    "Mercalli intensity",
+    "Moment magnitude",
+    "Richter/local magnitude ML",
+    "P-wave velocity",
+    "Rupture displacement"
+   ],
+   "answer": 1,
+   "why": "Moment magnitude uses properties of the rupture to characterize earthquake size."
+  },
+  {
+   "id": "eq-11",
+   "q": "Which scale is most useful for classifying observed effects and damage at a particular location?",
+   "options": [
+    "Mercalli",
+    "Moment magnitude",
+    "Richter ML",
+    "P-wave velocity",
+    "Rupture displacement"
+   ],
+   "answer": 0,
+   "why": "Mercalli classifies observed effects; magnitude scales describe the earthquake's size."
+  },
+  {
+   "id": "eq-12",
+   "q": "Two communities experience the same earthquake magnitude, but one has more severe shaking on soft, loose ground. Which explanation best accounts for the difference?",
+   "options": [
+    "The epicenter changes location when the ground is soft.",
+    "Local ground conditions can amplify seismic shaking.",
+    "Soft ground prevents seismic waves from reaching the surface.",
+    "Magnitude directly measures the strength of every building.",
+    "Mercalli intensity is constant everywhere for one earthquake."
+   ],
+   "answer": 1,
+   "why": "Ground conditions can amplify shaking, so one earthquake can produce different local effects."
+  },
+  {
+   "id": "eq-13",
+   "q": "A saturated, loose sediment layer loses strength during shaking and buildings begin to settle. Which hazard is occurring?",
+   "options": [
+    "Elastic rebound",
+    "Directivity",
+    "Liquefaction",
+    "Base isolation",
+    "Stick-slip"
+   ],
+   "answer": 2,
+   "why": "Liquefaction is the loss of strength in saturated loose sediment during shaking."
+  },
+  {
+   "id": "eq-14",
+   "q": "A building is damaged more severely when prolonged ground motion matches its natural vibration. What process amplified its motion?",
+   "options": [
+    "Liquefaction",
+    "Fault locking",
+    "Mercalli conversion",
+    "Resonance",
+    "Elastic recovery"
+   ],
+   "answer": 3,
+   "why": "Resonance can amplify structural motion when ground shaking matches the structure's response."
+  },
+  {
+   "id": "eq-15",
+   "q": "Which statement about shallow, intermediate, and deep earthquakes is most accurate?",
+   "options": [
+    "All occur only along passive continental margins.",
+    "Deep earthquakes occur mainly at mid-ocean ridges.",
+    "Transform boundaries produce the deepest earthquakes.",
+    "Earthquakes occur at every depth equally along all boundaries.",
+    "Convergent plate boundaries can host earthquakes at all three depth ranges."
+   ],
+   "answer": 4,
+   "why": "Convergent boundaries can host shallow, intermediate, and deep earthquakes."
+  },
+  {
+   "id": "eq-16",
+   "q": "A deep-focus earthquake occurs within a descending slab. At approximately what depth do the deepest earthquake foci occur?",
+   "options": [
+    "660 km",
+    "120 km",
+    "240 km",
+    "360 km",
+    "5 km"
+   ],
+   "answer": 0,
+   "why": "The deepest earthquake foci occur at approximately 660 km depth."
+  },
+  {
+   "id": "eq-17",
+   "q": "Which measure combines source size with the physical properties of a rupture rather than simply describing local damage?",
+   "options": [
+    "Mercalli intensity",
+    "Moment magnitude",
+    "Epicentral distance",
+    "Liquefaction index",
+    "Seismogram duration"
+   ],
+   "answer": 1,
+   "why": "Moment magnitude characterizes earthquake size using properties of the rupture."
+  },
+  {
+   "id": "eq-18",
+   "q": "A phone alert arrives seconds before strong shaking, after rupture has started elsewhere. What is the alert an example of?",
+   "options": [
+    "Reliable prediction weeks ahead",
+    "A foreshock forecast",
+    "Early warning after an earthquake has begun",
+    "A Mercalli magnitude report",
+    "A guarantee that no damaging waves will arrive"
+   ],
+   "answer": 2,
+   "why": "Early-warning systems detect an ongoing earthquake and may alert locations before stronger waves arrive."
+  },
+  {
+   "id": "eq-19",
+   "q": "Which claim about short-term earthquake prediction is supported by current evidence?",
+   "options": [
+    "Foreshocks always identify the exact time and place.",
+    "Radon measurements reliably predict every large earthquake.",
+    "Animal behavior is a dependable warning method.",
+    "No reliable short-range prediction over weeks or months is currently possible.",
+    "Tsunami buoys predict earthquakes before rupture."
+   ],
+   "answer": 3,
+   "why": "Reliable short-range earthquake predictions are not currently possible."
+  },
+  {
+   "id": "eq-20",
+   "q": "Which characteristic most clearly distinguishes a tsunami from an ordinary wind-generated wave?",
+   "options": [
+    "It affects only the ocean's upper 100 metres.",
+    "It is driven by wind speed and has a short wavelength.",
+    "It dissipates all its energy offshore.",
+    "It cannot travel across deep ocean.",
+    "It has a very long wavelength and moves the full water column."
+   ],
+   "answer": 4,
+   "why": "Tsunamis have long wavelengths and involve the full ocean depth, unlike ordinary wind waves."
+  },
+  {
+   "id": "eq-21",
+   "q": "Why can a tsunami become especially destructive as it reaches a shallow coast?",
+   "options": [
+    "Its speed decreases and water can pile up and inundate the land.",
+    "Its wavelength becomes identical to that of a wind wave.",
+    "The ocean floor stops moving beneath the wave.",
+    "It loses all stored energy before reaching shore.",
+    "It changes into a body wave inside the crust."
+   ],
+   "answer": 0,
+   "why": "Tsunami waves slow in shallow water and can build up, producing coastal inundation."
+  },
+  {
+   "id": "eq-22",
+   "q": "Which combination best explains why earthquake damage varies between locations?",
+   "options": [
+    "Only the number of nearby seismographs",
+    "Ground conditions, shaking duration, structural response, and construction",
+    "The names assigned to the earthquake's faults",
+    "The time of day and the color of the surface rocks",
+    "Only the maximum magnitude number"
+   ],
+   "answer": 1,
+   "why": "Local ground amplification, resonance, duration, and building performance affect damage."
+  },
+  {
+   "id": "eq-23",
+   "q": "A building is designed so the ground can move beneath it without transferring as much motion to the structure. Which mitigation feature is being used?",
+   "options": [
+    "Seismograph",
+    "Thrust fault",
+    "Base isolation",
+    "Liquefaction",
+    "Moment magnitude"
+   ],
+   "answer": 2,
+   "why": "Base isolation reduces the transfer of ground motion into a building."
+  },
+  {
+   "id": "eq-24",
+   "q": "A fault trace shows mainly horizontal displacement, with no dominant up-or-down motion of the blocks. What is the best classification?",
+   "options": [
+    "Normal fault",
+    "Reverse fault",
+    "Thrust fault",
+    "Strike-slip fault",
+    "Footwall collapse"
+   ],
+   "answer": 3,
+   "why": "Strike-slip faults are characterized mainly by horizontal motion along the fault."
+  },
+  {
+   "id": "eq-25",
+   "q": "A seismograph records a P wave followed by an S wave from one earthquake. Which statement classifies both arrivals correctly?",
+   "options": [
+    "Both are body waves that travel through Earth's interior.",
+    "P is a surface wave and S is a body wave.",
+    "Both are surface waves that travel only along the crust.",
+    "P and S are earthquake intensity scales, not waves.",
+    "Only the later S wave is seismic."
+   ],
+   "answer": 0,
+   "why": "P waves and S waves travel through Earth's interior, so both are body waves. Love and Rayleigh waves travel along the surface."
+  },
+  {
+   "id": "eq-26",
+   "q": "Two neighborhoods are the same distance from an earthquake. One is built on solid bedrock; the other is on thick, loose, water-saturated sediment and experiences stronger shaking. Which explanation best connects the site to the hazard?",
+   "options": [
+    "The sediment can amplify shaking, and saturation can allow liquefaction.",
+    "The sediment reduces wave amplitude and guarantees less damage.",
+    "The earthquake has a different magnitude beneath each neighborhood.",
+    "Bedrock always resonates more strongly than every sediment layer.",
+    "Saturation prevents seismic waves from entering the ground."
+   ],
+   "answer": 0,
+   "why": "Local ground materials affect shaking. Loose sediments can amplify motion, and saturated loose sediment may lose strength through liquefaction."
+  },
+  {
+   "id": "eq-27",
+   "q": "A flexible mid-rise building suffers more motion than a shorter nearby building during long-period shaking. The ground-motion period is close to the mid-rise building's natural period. What best explains the difference?",
+   "options": [
+    "Resonance amplifies the response of the mid-rise building.",
+    "The earthquake's magnitude is higher at the taller building.",
+    "The shorter building converts S waves into P waves.",
+    "The taller building is farther from the hypocenter by definition.",
+    "Base isolation makes every structure resonate."
+   ],
+   "answer": 0,
+   "why": "When shaking has a period close to a structure's natural response, resonance can amplify that structure's motion. Building height and design influence that natural response."
+  },
+  {
+   "id": "eq-28",
+   "q": "After a cluster of small earthquakes, a city asks whether scientists can reliably name the date and location of the next damaging earthquake weeks in advance. Which answer best reflects current understanding?",
+   "options": [
+    "Yes; a foreshock cluster always gives the exact time and place.",
+    "Yes; earthquake magnitude can be read from the local weather.",
+    "No; reliable short-range prediction weeks or months ahead is not currently possible.",
+    "No; earthquakes cannot be detected even after rupture begins.",
+    "Yes; a tsunami buoy predicts an earthquake before it starts."
+   ],
+   "answer": 2,
+   "why": "Earthquake scientists cannot reliably predict the exact time and place of an event weeks or months ahead. Early-warning systems are different: they detect an earthquake after rupture begins and may alert people before stronger waves arrive."
+  }
  ],
  "games": [
   "match",

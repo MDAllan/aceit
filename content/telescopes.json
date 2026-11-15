@@ -5,57 +5,105 @@
  "icon": "🔭",
  "color": "#7c3aed",
  "slideFile": "Ch6.1.pdf; Ch6.2_pt1.pdf; Ch6.2_pt2.pdf; Ch6.3.pdf; Ch6.4.pdf",
- "intro": "Telescopes gather and focus light so astronomers can make images, measure spectra and track changes in the sky. Learn how optics form images, what makes a telescope powerful, how the atmosphere affects observations, and how telescopes observe different wavelengths.",
+ "intro": "A telescope is a giant eye. Learn how lenses and mirrors form images, why a bigger mirror collects more light (area grows with the diameter squared) and sees finer detail (angular resolution), what astronomers do with the light (imaging, spectroscopy and time monitoring), how the atmosphere and the choice of site affect what we see, why some kinds of light need space telescopes, how linked telescopes gain sharpness through interferometry, and what neutrinos, cosmic rays and gravitational waves add to light.",
  "learningObjectives": [
-   {
-     "id": "goal-01",
-     "text": "Compare how the eye and a camera form images."
-   },
-   {
-     "id": "goal-02",
-     "text": "Explain how telescope aperture affects light collection and how telescope design affects image sharpness."
-   },
-   {
-     "id": "goal-03",
-     "text": "Identify the properties of astronomical objects that can be measured from their light."
-   },
-   {
-     "id": "goal-04",
-     "text": "Explain how Earth's atmosphere affects observations and compare observing sites."
-   },
-   {
-     "id": "goal-05",
-     "text": "Compare what astronomers can learn from spectra and from non-visible astronomical messengers."
-   }
+  {
+   "id": "goal-01",
+   "text": "Compare how the eye and a camera form images, including the roles of the lens, the retina or detector and the image plane."
+  },
+  {
+   "id": "goal-02",
+   "text": "Explain how telescope aperture affects light collection and how telescope design affects image sharpness."
+  },
+  {
+   "id": "goal-03",
+   "text": "Identify the properties of astronomical objects that can be measured from their light."
+  },
+  {
+   "id": "goal-04",
+   "text": "Explain how Earth's atmosphere affects observations and compare observing sites."
+  },
+  {
+   "id": "goal-05",
+   "text": "Compare what astronomers can learn from spectra and from non-visible astronomical messengers."
+  },
+  {
+   "id": "goal-06",
+   "text": "Compare the light-collecting power of two telescopes using the rule that area is proportional to diameter squared."
+  },
+  {
+   "id": "goal-07",
+   "text": "Predict how angular resolution changes when the mirror diameter or the wavelength changes (it is proportional to wavelength divided by diameter), and say how interferometry helps."
+  },
+  {
+   "id": "goal-08",
+   "text": "Explain why most large research telescopes are reflectors rather than refractors, and describe where the focus is in the main reflector designs."
+  },
+  {
+   "id": "goal-09",
+   "text": "Choose imaging, spectroscopy or time monitoring for a given astronomical question and say what each one measures."
+  },
+  {
+   "id": "goal-10",
+   "text": "Match each kind of light, from radio waves to gamma rays, with a suitable telescope design and a ground or space location."
+  }
  ],
  "sections": [
   {
    "id": "image-formation",
-   "title": "How eyes and cameras form images",
-   "slides": "6.1, slides 1-14",
+   "title": "Getting an image: pinhole, lens and image plane",
+   "slides": "Ch6.1: slides 2-5",
    "steps": [
     {
-   "title": "Light must be brought into focus",
+     "img": {
+      "src": "img/telescopes/tel_no_image.webp",
+      "slide": "slide 2 (Ch6.1)",
+      "alt": "A tree lit by the Sun with rays running from two points on the tree to a plain screen, labelled as giving no image, only a blurry mess of scattered light."
+     },
+     "title": "A bare screen shows no image",
      "bullets": [
-      "An image forms when light from each point on an object is directed to a corresponding point on an image plane.",
-      "A pinhole can make a recognizable image by limiting which rays enter, but the image is dim and appears upside down and reversed.",
-      "A convex lens refracts light to form a brighter focused image. The retina in an eye and the detector in a camera occupy the image plane."
+      "An **image** forms only when light from each point of an object is sent to one matching point on a surface.",
+      "The Sun lights a tree and every point of the tree scatters light in all directions. A plain screen catches light from every part of the tree at every spot, so all you get is a blurry wash of light.",
+      "To get a picture, something has to sort the rays so that each point of the object lands in only one place."
      ]
     },
     {
-     "title": "Lenses and detectors",
+     "img": {
+      "src": "img/telescopes/tel_pinhole.webp",
+      "slide": "slide 3 (Ch6.1)",
+      "alt": "A tree lit by the Sun, with rays passing through a tiny hole in a box to form a small flipped copy of the tree on the back wall."
+     },
+     "title": "A pinhole sorts the rays",
      "bullets": [
-      "**Refraction** is the bending of light as it passes between materials. Lenses use refraction to focus light.",
-      "The image's location and size depend on the lens and the object's distance. A wider lens admits more light but produces a shallower depth of field.",
-      "Digital camera and telescope detectors use charge-coupled device (CCD) pixels, which convert incoming photons into electrical signals."
+      "A tiny hole lets through only one thin ray from each point of the tree. Each spot on the back wall then gets light from just one part of the object, so the image is sharp even with no lens.",
+      "The image is flipped left-right and upside down: rays from the top of the tree travel downward through the hole, and rays from the bottom travel upward.",
+      "The price is brightness. A tiny hole lets in very little light, so the picture is dim."
      ]
     },
     {
-     "title": "Why telescopes use mirrors",
+     "img": {
+      "src": "img/telescopes/tel_lens_focus.webp",
+      "slide": "slide 4 (Ch6.1)",
+      "alt": "Parallel light rays from a distant object passing through a convex lens and meeting at the focal point on the focal plane, with the focal length marked."
+     },
+     "title": "A lens brings rays to a focus",
      "bullets": [
-      "A mirror focuses light by reflection rather than refraction.",
-      "Lenses can be heavy and are supported at their edges; large mirrors can be supported from behind and assembled from segments.",
-      "Refraction varies with wavelength, which can blur colours in a lens. Mirrors avoid this chromatic aberration."
+      "A **convex lens** lets far more light through than a pinhole, so the image is brighter. The glass has to be shaped very carefully.",
+      "It works by **refraction**. Parallel rays from a very distant object, such as a star, are bent so that they all meet at one spot, the **focal point**. The distance from the lens to that spot is the **focal length**.",
+      "The dotted line through the focal point, at right angles to the rays, is the **focal plane**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_image_plane.webp",
+      "slide": "slide 5 (Ch6.1)",
+      "alt": "Rays from the top and bottom of a tree crossing at a convex lens and forming an upside-down tree at the image plane."
+     },
+     "title": "The image forms at the image plane",
+     "bullets": [
+      "Light from a nearby object is not brought to a focus exactly at the focal point. It comes into focus at the **image plane**.",
+      "The size and position of the image depend on how far away the object is and on the focal length of the lens.",
+      "Rays from the top of the tree cross and end up at the bottom of the image, so a single convex lens makes an upside-down image. A screen, retina or detector must sit at the image plane to record it sharply."
      ]
     }
    ],
@@ -63,50 +111,271 @@
    "boxes": [
     {
      "type": "why",
-     "text": "A telescope is useful only if light from the same point in the sky reaches the same detector region. Focusing turns scattered incoming light into a measurable image."
+     "text": "Why must the screen sit in one particular place? A lens brings the light from each point of the object back together at one particular distance behind it. Put the screen nearer or farther and each point is smeared into a blurry disc."
     },
     {
      "type": "trick",
-     "text": "Lens: refracts light. Mirror: reflects light. Both can focus an image."
+     "text": "Pinhole: sharp but dim (tiny opening). Lens: sharp and bright (refraction). Both flip the image upside down."
     },
     {
      "type": "trap",
-     "text": "The focal point is not always where the final image is recorded. The detector or retina sits at the image plane."
+     "text": "The focal point and the image plane are the same place only for very distant objects such as stars. Assignment 5 Q7: to see the image a telescope makes, put your eye at the focus (not at the primary mirror, the secondary mirror or the central hole). Ch6.1 slide 3 draws the pinhole image flipped both horizontally and vertically."
     }
    ],
    "sourceNotes": [
-    "ASTR 207 instructor materials, Ch6.1 slides 1-14.",
-    "Explanations are paraphrased and newly written from the instructor's material."
+    "Ch6.1 slides 2-5",
+    "Cosmic Perspective 6.1 (pp. 166-167, Figures 6.4 and 6.5): focus, focal plane, upside-down image.",
+    "Assignment 5 Q7 (answer: focus)."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/telescopes/tel_no_image.webp",
+     "slide": "slide 2 (Ch6.1)",
+     "alt": "A tree lit by the Sun with rays running from two points on the tree to a plain screen, labelled as giving no image, only a blurry mess of scattered light."
+    },
+    {
+     "src": "img/telescopes/tel_pinhole.webp",
+     "slide": "slide 3 (Ch6.1)",
+     "alt": "A tree lit by the Sun, with rays passing through a tiny hole in a box to form a small flipped copy of the tree on the back wall."
+    },
+    {
+     "src": "img/telescopes/tel_lens_focus.webp",
+     "slide": "slide 4 (Ch6.1)",
+     "alt": "Parallel light rays from a distant object passing through a convex lens and meeting at the focal point on the focal plane, with the focal length marked."
+    },
+    {
+     "src": "img/telescopes/tel_image_plane.webp",
+     "slide": "slide 5 (Ch6.1)",
+     "alt": "Rays from the top and bottom of a tree crossing at a convex lens and forming an upside-down tree at the image plane."
+    }
+   ]
+  },
+  {
+   "id": "lenses-mirrors",
+   "title": "Refraction, colour fringes and mirrors",
+   "slides": "Ch6.1: slides 7-9",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_refraction.webp",
+      "slide": "slide 7 (Ch6.1)",
+      "alt": "Three photos of refraction: a light beam shifting sideways through a glass block, a pen that looks bent in a bowl of water, and cars on a road with a shiny wet-looking surface."
+     },
+     "title": "Refraction bends light",
+     "bullets": [
+      "**Refraction** is the bending of light when it passes from one transparent substance into another, such as air into glass or water.",
+      "Light travels more slowly in glass or water than in air. When it arrives at an angle, the side that enters first slows first, and the ray turns. That is why a pen looks bent where it meets the water.",
+      "Lenses, including the one in your eye, use refraction to focus light."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_chromatic.webp",
+      "slide": "slide 8 (Ch6.1)",
+      "alt": "A lens bending parallel red, green and blue rays so that blue crosses the axis nearest the lens and red farthest away, labelled chromatic aberration."
+     },
+     "title": "Chromatic aberration",
+     "bullets": [
+      "How much light bends depends on its wavelength: blue light bends more than red. A lens therefore focuses the colours at slightly different distances.",
+      "This lens defect is called **chromatic aberration**. It can show up as coloured fringes around bright objects such as planets.",
+      "Mirrors reflect every colour at the same angle, so they have no chromatic aberration. That makes them more practical for many telescopes."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_concave_mirror.webp",
+      "slide": "slide 9 (Ch6.1)",
+      "alt": "Parallel light rays reflecting off a concave mirror and meeting at a focal point on the same side as the incoming light, with the focal length marked."
+     },
+     "title": "Mirrors focus by reflection",
+     "bullets": [
+      "A curved (**concave**) mirror also brings parallel rays to a focus, but it does so by **reflection**, not refraction.",
+      "The focal plane is on the same side of the mirror as the incoming light, so the light does not pass through anything on its way to the focus.",
+      "Mirrors are easier to build and to look after than lenses: only the front surface has to be shaped perfectly, and the glass can be supported from behind."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do telescope makers prefer mirrors? A lens must be flawless glass all the way through, is held only at its rim and splits colours apart. A mirror needs a good surface only on its front, can be braced across its back and treats all colours alike."
+    },
+    {
+     "type": "trick",
+     "text": "Lens = refract (light goes THROUGH, focus on the far side). Mirror = reflect (light bounces BACK, focus on the same side as the incoming light)."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q2: the process a lens uses to focus light is refraction. Transmission only says the light passes through; diffraction is spreading around an edge; reflection is what a mirror uses. Chromatic aberration is caused by refraction depending on wavelength, so only lenses have it."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.1 slides 7-9",
+    "Cosmic Perspective 6.1 (p. 166, Figure 6.2) for why light bends; 6.2 (p. 170) for chromatic aberration and for why mirrors are preferred.",
+    "Assignment 5 Q2 (answer: refraction)."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_refraction.webp",
+     "slide": "slide 7 (Ch6.1)",
+     "alt": "Three photos of refraction: a light beam shifting sideways through a glass block, a pen that looks bent in a bowl of water, and cars on a road with a shiny wet-looking surface."
+    },
+    {
+     "src": "img/telescopes/tel_chromatic.webp",
+     "slide": "slide 8 (Ch6.1)",
+     "alt": "A lens bending parallel red, green and blue rays so that blue crosses the axis nearest the lens and red farthest away, labelled chromatic aberration."
+    },
+    {
+     "src": "img/telescopes/tel_concave_mirror.webp",
+     "slide": "slide 9 (Ch6.1)",
+     "alt": "Parallel light rays reflecting off a concave mirror and meeting at a focal point on the same side as the incoming light, with the focal length marked."
+    }
+   ]
+  },
+  {
+   "id": "eye-camera",
+   "title": "The eye, the camera and the CCD",
+   "slides": "Ch6.1: slides 10-14 (slide 11 is covered in text only)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_eye.webp",
+      "slide": "slide 10 (Ch6.1)",
+      "alt": "A cross-section of the human eye labelling the cornea, lens, pupil, iris, ciliary muscles, retina and optic nerve."
+     },
+     "title": "Parts of the eye",
+     "bullets": [
+      "The **cornea** is the clear front. The **pupil** is the opening that controls how much light enters, and the **iris** is the coloured ring around it that makes the pupil larger in dim light and smaller in bright light.",
+      "The **lens** (helped by the cornea) bends light, and the **ciliary muscles** change the lens shape so that near and far objects can be focused.",
+      "The **retina** at the back holds the light-sensitive cells. The **optic nerve** carries their signals to the brain."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_eye_image_plane.webp",
+      "slide": "slide 12 (Ch6.1)",
+      "alt": "A lens and a human eye each forming an upside-down image of a dog at a dashed image plane, which lies on the retina in the eye."
+     },
+     "title": "The retina is the image plane",
+     "bullets": [
+      "Refraction in the cornea and the lens brings rays from different directions to a focus on the retina.",
+      "So the **image plane** of the eye is the retina. It is the same idea as the lens and screen in the first drawing, with the retina as the screen.",
+      "A single convex lens makes an upside-down image, so the image on your retina is upside down. Your brain turns it right way up."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_camera.webp",
+      "slide": "slide 13 (Ch6.1)",
+      "alt": "A digital camera cut open to show light from a dog passing through the lens and shutter to a CCD detector at the back."
+     },
+     "title": "A camera is an eye with a detector",
+     "bullets": [
+      "A camera focuses light with its lens and puts a **detector** at the image plane. The shutter works like an eyelid: light reaches the detector only while it is open.",
+      "The **exposure time** is how long light collects on the detector. A longer exposure collects more total light and shows fainter details, though very bright parts can become overexposed.",
+      "Matching parts: pupil is the opening, lens is the lens, retina is the detector, eyelid is the shutter."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_ccd.webp",
+      "slide": "slide 14 (Ch6.1)",
+      "alt": "A diagram of a CCD in which green photons strike a grid of pixels and release electrons, which are read out row by row through an amplifier to a digital converter."
+     },
+     "title": "CCD pixels count photons",
+     "bullets": [
+      "Modern detectors are **CCDs** (charge-coupled devices): a grid of tiny **pixels**. Each pixel turns arriving photons into electrons.",
+      "After the exposure a computer reads out the charge in each pixel row by row. More photons mean more charge, so the numbers give a map of how much light landed on each spot.",
+      "Phone cameras use the same kind of chip. Telescope detectors are much larger and are built from many CCDs with millions of pixels each."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do astronomers expose for minutes or hours? Photons from a faint object arrive one at a time, and a pixel keeps adding up its charge as long as the shutter is open. Twice the exposure time counts twice the photons."
+    },
+    {
+     "type": "trick",
+     "text": "Eye to camera: pupil = opening, lens = lens, retina = CCD, eyelid = shutter. In both, the detector sits at the image plane."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q3: the benefit of a longer exposure is that the detector collects more total light. It does not improve angular resolution, does not let you record shorter wavelengths, and does not help measure rapid variations (a long exposure blurs them together). Assignment 5 Q1: the lens focuses light onto the retina; the iris adjusts how much light enters; the optic nerve sends the signals."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.1 slides 10, 12, 13, 14 (slide 11 shows the same lens-and-eye focus idea as slides 4 and 12)",
+    "Cosmic Perspective 6.1 (pp. 165-167): pupil, retina, camera, exposure time, pixels.",
+    "Assignment 5 Q1 and Q3."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_eye.webp",
+     "slide": "slide 10 (Ch6.1)",
+     "alt": "A cross-section of the human eye labelling the cornea, lens, pupil, iris, ciliary muscles, retina and optic nerve."
+    },
+    {
+     "src": "img/telescopes/tel_eye_image_plane.webp",
+     "slide": "slide 12 (Ch6.1)",
+     "alt": "A lens and a human eye each forming an upside-down image of a dog at a dashed image plane, which lies on the retina in the eye."
+    },
+    {
+     "src": "img/telescopes/tel_camera.webp",
+     "slide": "slide 13 (Ch6.1)",
+     "alt": "A digital camera cut open to show light from a dog passing through the lens and shutter to a CCD detector at the back."
+    },
+    {
+     "src": "img/telescopes/tel_ccd.webp",
+     "slide": "slide 14 (Ch6.1)",
+     "alt": "A diagram of a CCD in which green photons strike a grid of pixels and release electrons, which are read out row by row through an amplifier to a digital converter."
+    }
+   ]
   },
   {
    "id": "telescope-power",
-   "title": "Light collection and sharpness",
-   "slides": "6.2 part 1, slides 1-10",
+   "title": "Collecting light: aperture and area",
+   "slides": "Ch6.1: slide 6; Ch6.2 pt1: slides 2-3",
    "steps": [
     {
-   "title": "Aperture gathers light",
+     "img": {
+      "src": "img/telescopes/tel_lens_diameter.webp",
+      "slide": "slide 6 (Ch6.1)",
+      "alt": "Two ray diagrams with photos of a twig bud: a wide lens gives a bright image with a blurred background, and a narrow lens gives a dimmer image with more of the scene in focus."
+     },
+     "title": "A wider lens gathers more light",
      "bullets": [
-      "The primary mirror or lens is the telescope's **aperture**. A wider aperture gathers more light from faint objects.",
-      "Collecting more light can make dimmer objects observable or shorten the time needed to record an image.",
-      "Light-collecting power is distinct from magnification: gathering more light does not simply make an image look larger."
+      "A larger lens diameter **D** means a greater exposure: more light reaches the detector each second. A smaller diameter means less light.",
+      "There is a trade-off. A wide lens has a shallow **depth of field** (only things at one distance are sharp and the background blurs), while a narrow lens keeps more of the scene in focus.",
+      "Telescopes follow the same rule: a bigger primary lens or mirror gathers more light."
      ]
     },
     {
-     "title": "Angular resolution separates detail",
+     "img": {
+      "src": "img/telescopes/tel_area_formula.webp",
+      "slide": "slide 2 (Ch6.2 pt1)",
+      "alt": "A narrow telescope tube and a wide one with their diameters D marked in red above the formula A is proportional to D squared, or A equals pi D squared over 4."
+     },
+     "title": "Area grows with diameter squared",
      "bullets": [
-      "**Angular resolution** describes how close two points can appear and still be distinguished.",
-      "A smaller minimum angular separation means finer detail can be resolved.",
-      "Diffraction sets a limit: a larger aperture and shorter observed wavelength improve the theoretical resolution."
+      "The **light-collecting area** of a round mirror or lens is proportional to the square of its diameter: A is proportional to D², or A = πD²/4.",
+      "More area means more light per second, so brighter images in less time and a chance to see fainter objects.",
+      "Doubling the diameter gives 4 times the area, tripling gives 9 times. A 10 m mirror has 25 times the area of a 2 m mirror, and a 6.5 m mirror (JWST) about 7 times the area of Hubble's 2.4 m mirror."
      ]
     },
     {
-     "title": "Refractors and reflectors",
+     "img": {
+      "src": "img/telescopes/tel_elt_vlt_colosseum.webp",
+      "slide": "slide 3 (Ch6.2 pt1)",
+      "alt": "An artist's picture of the 39.3 m Extremely Large Telescope dome, the four-telescope Very Large Telescope and the Colosseum side by side for scale."
+     },
+     "title": "How big are the biggest telescopes?",
      "bullets": [
-      "A refracting telescope focuses light with lenses; a reflecting telescope focuses it with mirrors.",
-      "Large lenses are difficult to support without distortion, whereas a mirror can be supported from behind.",
-      "Modern research telescopes therefore mostly use reflecting designs, often with large or segmented mirrors."
+      "The largest optical telescopes in use today are about 10 m across, for example the twin Keck telescopes.",
+      "Telescopes 30 m or more across are being built. The Extremely Large Telescope in Chile will have a 39.3 m mirror made of 798 segments, and has about 15 times the light-collecting area of a 10 m telescope.",
+      "The Very Large Telescope in the picture is a facility of four 8.2 m telescopes."
      ]
     }
    ],
@@ -114,50 +383,350 @@
    "boxes": [
     {
      "type": "why",
-     "text": "Light collection and resolution answer different questions: how much light is gathered, and how finely separated details can be seen."
+     "text": "Why keep building bigger mirrors? Distant objects are faint, and a mirror with more area catches proportionally more photons. That lets astronomers see dimmer objects or finish an observation in less time."
     },
     {
      "type": "trick",
-     "text": "Bigger aperture means more light and usually sharper detail; it does not mean magnification alone."
+     "text": "Area goes as D squared: twice as wide, 4 times the light; three times as wide, 9 times; ten times as wide, 100 times."
     },
     {
      "type": "trap",
-     "text": "Do not confuse angular resolution with image brightness. Aperture affects both light collection and diffraction-limited detail, but they describe different properties."
+     "text": "Do not use D instead of D². Assignment 5 Q4: a 10 m mirror has 4 times the light-collecting area of a 5 m mirror (not 2 times and not 10 times). Also, magnification is not a key property: magnify an image too much without enough light or resolution and you only get a bigger blur. Ch6.2 pt1 slide 3 says telescopes of 30+ m will work in the 2030s; the textbook (written earlier) gives 2027 for the Extremely Large Telescope, so do not memorise the date."
     }
    ],
    "sourceNotes": [
-    "ASTR 207 instructor materials, Ch6.2 part 1 slides 1-10.",
-    "The Cosmic Perspective, 10th ed., Chapter 6; mathematical insights are intentionally excluded."
+    "Ch6.1 slide 6; Ch6.2 pt1 slides 2-3",
+    "Cosmic Perspective 6.2 (p. 168: 10 m versus 2 m telescope; p. 172: Extremely Large Telescope; p. 179: JWST mirror 2.7 times as wide as Hubble's, more than 7 times the light).",
+    "Assignment 5 Q4 (answer: 4 times).",
+    "The 15 times figure is (39.3/10)^2; the 25 times figure is (10/2)^2."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/telescopes/tel_lens_diameter.webp",
+     "slide": "slide 6 (Ch6.1)",
+     "alt": "Two ray diagrams with photos of a twig bud: a wide lens gives a bright image with a blurred background, and a narrow lens gives a dimmer image with more of the scene in focus."
+    },
+    {
+     "src": "img/telescopes/tel_area_formula.webp",
+     "slide": "slide 2 (Ch6.2 pt1)",
+     "alt": "A narrow telescope tube and a wide one with their diameters D marked in red above the formula A is proportional to D squared, or A equals pi D squared over 4."
+    },
+    {
+     "src": "img/telescopes/tel_elt_vlt_colosseum.webp",
+     "slide": "slide 3 (Ch6.2 pt1)",
+     "alt": "An artist's picture of the 39.3 m Extremely Large Telescope dome, the four-telescope Very Large Telescope and the Colosseum side by side for scale."
+    }
+   ]
+  },
+  {
+   "id": "resolution",
+   "title": "Angular resolution and diffraction",
+   "slides": "Ch6.2 pt1: slides 4-6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_angular_separation.webp",
+      "slide": "slide 4 (Ch6.2 pt1)",
+      "alt": "An illustration of a car's headlights and a distant light on a road, with the angle between two lights as seen by a person marked as the angular separation."
+     },
+     "title": "Telling two points apart",
+     "bullets": [
+      "The **angular separation** of two objects is the angle between them as you see them. The farther away a pair is, the smaller their angular separation: the car's headlights merge into one as it drives away.",
+      "A telescope's **angular resolution** θmin is the smallest separation at which it can still show two objects as separate. It is usually measured in arcseconds, and a smaller θmin means finer detail.",
+      "For scale: the human eye resolves about 1 arcminute (60 arcseconds), the Hubble Space Telescope about 0.05 arcsecond in visible light. Two stars closer than θmin blur into one point of light."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_diffraction_waves.webp",
+      "slide": "slide 5 (Ch6.2 pt1)",
+      "alt": "Colourful overlapping circular ripples from two sources, showing how waves interfere where they meet."
+     },
+     "title": "Diffraction sets the limit",
+     "bullets": [
+      "Light is a wave, and waves **interfere**, like overlapping ripples on a pond. The interference of light waves inside a telescope is called **diffraction**, and it limits the angular resolution even when everything else is perfect.",
+      "The limit is θmin proportional to λ/D. A **larger diameter** or a **shorter wavelength** gives a smaller θmin, so sharper images.",
+      "Double D and θmin is halved. Double the wavelength and θmin doubles. That is why a radio telescope must be enormous to match the sharpness of a visible-light telescope."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_psf_hubble.webp",
+      "slide": "slide 6 (Ch6.2 pt1)",
+      "alt": "A Hubble Space Telescope image of a single star showing a bright centre surrounded by faint rings and a blotchy halo."
+     },
+     "title": "A star is never a perfect point",
+     "bullets": [
+      "Even in space, a star in a Hubble image has a bright centre with rings and blotches around it. The pattern a telescope makes from a single point of light is its **point-spread function**, and it comes from diffraction.",
+      "Good optics make the pattern smaller, but it can never be removed altogether.",
+      "On the ground, turbulent air blurs images much more, to about 0.5 arcsecond, so large ground telescopes usually fall far short of their diffraction limit."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does a wider mirror give a sharper image? A wave squeezed through a small opening spreads out; the wider the opening compared with the wavelength, the less it spreads. A wide mirror lets the incoming wave blur less, and shorter waves spread less for any given opening."
+    },
+    {
+     "type": "trick",
+     "text": "θmin is proportional to λ/D, and a small angle is a sharp image. To see finer detail, go wider (bigger D) or go bluer (smaller λ)."
+    },
+    {
+     "type": "trap",
+     "text": "Light collection (D²) and resolution (1/D) are different jobs: area says how faint, resolution says how fine. Assignment 5 Q5: a 10 m telescope's best angular resolution is better than a 5 m telescope's by a factor of 2 (not 4, not 10). Assignment 5 Q6: if two stars are 0.1 arcsecond apart and the telescope resolves only 0.6 arcsecond, you see one blurred point of light, not two points and not nothing. Better resolution means a SMALLER number."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.2 pt1 slides 4-6",
+    "Cosmic Perspective 6.2 (pp. 168-169, Figures 6.7-6.9): angular resolution, diffraction limit, Hubble about 0.05 arcsecond; 6.3 (p. 176): turbulence limits ground telescopes to about 0.5 arcsecond. The numerical diffraction-limit formula (Mathematical Insight 6.2) is not used here; only the proportionality from the slides.",
+    "Assignment 5 Q5 and Q6."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_angular_separation.webp",
+     "slide": "slide 4 (Ch6.2 pt1)",
+     "alt": "An illustration of a car's headlights and a distant light on a road, with the angle between two lights as seen by a person marked as the angular separation."
+    },
+    {
+     "src": "img/telescopes/tel_diffraction_waves.webp",
+     "slide": "slide 5 (Ch6.2 pt1)",
+     "alt": "Colourful overlapping circular ripples from two sources, showing how waves interfere where they meet."
+    },
+    {
+     "src": "img/telescopes/tel_psf_hubble.webp",
+     "slide": "slide 6 (Ch6.2 pt1)",
+     "alt": "A Hubble Space Telescope image of a single star showing a bright centre surrounded by faint rings and a blotchy halo."
+    }
+   ],
+   "table": {
+    "title": "What changes what",
+    "head": [
+     "Change",
+     "Light collected",
+     "Smallest angle θmin"
+    ],
+    "rows": [
+     [
+      "Mirror diameter doubles",
+      "4 times as much",
+      "Half as large (sharper)"
+     ],
+     [
+      "Mirror diameter triples",
+      "9 times as much",
+      "One third as large"
+     ],
+     [
+      "Wavelength doubles (same mirror)",
+      "No change",
+      "Twice as large (blurrier)"
+     ],
+     [
+      "Wavelength halves (same mirror)",
+      "No change",
+      "Half as large (sharper)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "designs",
+   "title": "Refractors, reflectors and where the light comes out",
+   "slides": "Ch6.2 pt1: slides 7-10",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_two_designs.webp",
+      "slide": "slide 7 (Ch6.2 pt1)",
+      "alt": "Two ray diagrams: a lens focusing parallel rays for a refracting telescope and a curved mirror focusing them for a reflecting telescope."
+     },
+     "title": "Two basic designs",
+     "bullets": [
+      "A **refracting telescope** focuses light with a lens. Galileo's first telescopes were refractors.",
+      "A **reflecting telescope** focuses light with a curved primary mirror, then a smaller mirror sends the light to the focus.",
+      "Virtually all modern research telescopes are reflectors."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_refractor.webp",
+      "slide": "slide 8 (Ch6.2 pt1)",
+      "alt": "A large refracting telescope inside an observatory dome beside a drawing of the lens at the top of the tube, with starlight passing down to the eyepiece and focus."
+     },
+     "title": "Why big refractors fail",
+     "bullets": [
+      "Light passes through a lens, so the glass must be flawless all the way through and shaped on both sides.",
+      "Large lenses are heavy and can be held only by their edges, at the top of a very long tube. They sag and are hard to keep steady, which limits their size. The biggest ever, at Yerkes (1897), is 1 m across with a tube 19.5 m long.",
+      "Glass also absorbs infrared and ultraviolet light, and a lens has chromatic aberration."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_focus_types.webp",
+      "slide": "slide 9 (Ch6.2 pt1)",
+      "alt": "Three reflecting telescope diagrams labelled Cassegrain, Newtonian and Nasmyth or Coude focus, beside a photo of a large primary mirror with a hole in its centre."
+     },
+     "title": "Where the focus is: Cassegrain, Newtonian, Nasmyth",
+     "bullets": [
+      "The primary mirror at the bottom reflects light up to a smaller **secondary mirror**. The secondary blocks only a small fraction of the light.",
+      "**Cassegrain**: the secondary sends the light back down through a hole in the primary to instruments underneath. **Newtonian**: the secondary sends it out the side of the tube. **Nasmyth or Coude**: a third mirror sends it out the side lower down.",
+      "The photo shows the hole in the middle of a large Cassegrain primary mirror."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_keck_jwst_mirrors.webp",
+      "slide": "slide 10 (Ch6.2 pt1)",
+      "alt": "Two photos: the segmented mirror of the Keck II telescope and the gold hexagonal mirror of the James Webb Space Telescope with two people in clean suits for scale."
+     },
+     "title": "Segmented mirrors",
+     "bullets": [
+      "A mirror can be supported across its whole back and can be built from many pieces. That is why reflectors can be much wider than lenses.",
+      "Each Keck telescope (Maunakea, 10 m) has a primary of 36 hexagonal segments. The James Webb Space Telescope has 18 gold-coated hexagons that make a 6.5 m mirror, folded for launch and unfolded in space. The Extremely Large Telescope will have 798.",
+      "All the segments are adjusted to work as one mirror, so the whole diameter sets the light collected and the sharpness."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why can mirrors be so much bigger than lenses? A lens is held at its edge and light passes through all of it, so any flaw or sag spoils the image. A mirror only needs a perfect front surface, can be braced from behind and can be made in pieces."
+    },
+    {
+     "type": "trick",
+     "text": "Refractor: rays go through glass, heavy lens at the top. Reflector: rays bounce, heavy mirror at the bottom."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q8: a main reason big telescopes are reflectors is that the heavy mirror sits at the bottom and can be supported from behind. It is NOT true that a mirror collects more light than a lens of the same diameter (the same diameter gives the same area), and reflectors are not taller. Assignment 5 Q7: your eye goes at the focus, not at the primary mirror or the secondary mirror."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.2 pt1 slides 7-10",
+    "Cosmic Perspective 6.2 (pp. 169-172, Figures 6.10-6.12): Yerkes 1 m refractor, Cassegrain, Newtonian and Nasmyth/Coude foci, Keck 36 segments, Extremely Large Telescope 798 segments; 6.3 (p. 179): JWST 18 segments.",
+    "Assignment 5 Q7 and Q8."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_two_designs.webp",
+     "slide": "slide 7 (Ch6.2 pt1)",
+     "alt": "Two ray diagrams: a lens focusing parallel rays for a refracting telescope and a curved mirror focusing them for a reflecting telescope."
+    },
+    {
+     "src": "img/telescopes/tel_refractor.webp",
+     "slide": "slide 8 (Ch6.2 pt1)",
+     "alt": "A large refracting telescope inside an observatory dome beside a drawing of the lens at the top of the tube, with starlight passing down to the eyepiece and focus."
+    },
+    {
+     "src": "img/telescopes/tel_focus_types.webp",
+     "slide": "slide 9 (Ch6.2 pt1)",
+     "alt": "Three reflecting telescope diagrams labelled Cassegrain, Newtonian and Nasmyth or Coude focus, beside a photo of a large primary mirror with a hole in its centre."
+    },
+    {
+     "src": "img/telescopes/tel_keck_jwst_mirrors.webp",
+     "slide": "slide 10 (Ch6.2 pt1)",
+     "alt": "Two photos: the segmented mirror of the Keck II telescope and the gold hexagonal mirror of the James Webb Space Telescope with two people in clean suits for scale."
+    }
+   ],
+   "table": {
+    "title": "Refractor and reflector compared",
+    "head": [
+     "Feature",
+     "Refracting telescope",
+     "Reflecting telescope"
+    ],
+    "rows": [
+     [
+      "Focuses light with",
+      "A lens (refraction)",
+      "A curved mirror (reflection)"
+     ],
+     [
+      "Support",
+      "Lens held only at its edge",
+      "Mirror braced across its back, or built from segments"
+     ],
+     [
+      "Glass quality",
+      "Flawless all the way through",
+      "Only the reflecting surface must be precise"
+     ],
+     [
+      "Colour problem",
+      "Chromatic aberration",
+      "None"
+     ],
+     [
+      "Heavy part sits",
+      "At the top of a long tube",
+      "At the bottom"
+     ],
+     [
+      "Used for research today",
+      "Rarely (largest is 1 m)",
+      "Virtually every large telescope"
+     ]
+    ]
+   }
   },
   {
    "id": "observing",
-   "title": "What astronomers measure",
-   "slides": "6.2 part 2, slides 1-13",
+   "title": "What astronomers do: imaging and photometry",
+   "slides": "Ch6.2 pt2: slides 1-6",
    "steps": [
     {
-   "title": "Images and photometry",
+     "img": {
+      "src": "img/telescopes/tel_filters_stack.webp",
+      "slide": "slide 2 (Ch6.2 pt2)",
+      "alt": "Three separate images of the Trifid Nebula taken through blue, green and red filters, joined to a full colour combined image."
+     },
+     "title": "Imaging: one colour at a time",
      "bullets": [
-      "**Photometry** measures light received from an object. Images can reveal brightness, colour, shape, size and changes in position.",
-      "Detectors often record one wavelength range at a time. Images taken through different filters can be combined to show colour information.",
-      "An image may use assigned colours to represent wavelengths humans cannot see directly."
+      "Astronomers do three main things with a telescope: **imaging** (photometry, taking pictures), **spectroscopy** (taking spectra) and **time monitoring** (watching changes). This section is about imaging.",
+      "A telescope detector records only one colour of light at a time. To make a colour picture, several images, each taken through a different filter, are combined, or **stacked**.",
+      "In the example, separate blue, green and red filter images of the Trifid Nebula are added together into one true-colour image."
      ]
     },
     {
-     "title": "Spectroscopy separates wavelengths",
+     "img": {
+      "src": "img/telescopes/tel_ubvri_filters.webp",
+      "slide": "slide 3 (Ch6.2 pt2)",
+      "alt": "Five coloured filter discs labelled B, U, V, I and R above a graph of the transmission of the Johnson and Bessel U, B, V, R and I filters against wavelength."
+     },
+     "title": "Filters and passbands",
      "bullets": [
-      "A spectrometer separates light by wavelength, often with a diffraction grating, and records the intensity at each wavelength.",
-      "Patterns in a spectrum can reveal an object's chemical composition, temperature and motion.",
-      "Light passing through Earth's atmosphere can carry absorption features from both the source and the atmosphere."
+      "Filters fitted over the CCD let through only a range of wavelengths, called a **passband**. The standard set is U (ultraviolet), B (blue), V (visual, green-yellow), R (red) and I (infrared).",
+      "The graph shows how much light each filter lets through at each wavelength. The passbands run in order U, B, V, R, I from short to long wavelength.",
+      "Comparing a star's brightness through two filters, such as B and V, measures its colour."
      ]
     },
     {
-     "title": "Time monitoring and light curves",
+     "img": {
+      "src": "img/telescopes/tel_false_colour.webp",
+      "slide": "slide 4 (Ch6.2 pt2)",
+      "alt": "A collage of colourful astronomical images, including nebulae, a supernova remnant and colliding galaxies, with a note that colour often stands for non-visible wavelengths."
+     },
+     "title": "Colour can be a code",
      "bullets": [
-      "A **light curve** plots an object's measured brightness over time.",
-      "Repeated observations can reveal changes such as variable stars, an exoplanet passing in front of its star, or a flare.",
-      "The observing schedule depends on how quickly the target is expected to change."
+      "Many astronomical images are made from invisible light: X-rays, infrared, radio. Invisible light has no natural colour, because colour is a property of visible light only.",
+      "So colours are assigned to stand for something else, such as the wavelength or energy of the light or how intense it is. In a Chandra X-ray image, for example, blue can mark the highest-energy X-rays and red the lowest.",
+      "The picture shows where the detector recorded light, not what your eye would see."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_cluster_cmd.webp",
+      "slide": "slide 6 (Ch6.2 pt2)",
+      "alt": "A plot of star luminosity against colour (B minus V) for many stars in a cluster, with the main sequence, giants, supergiants and white dwarfs labelled."
+     },
+     "title": "What photometry can tell us",
+     "bullets": [
+      "Photometry is the main detection method in astronomy. It can discover new objects and give a star's or galaxy's luminosity, distance, colour, size (radius), shape and, for star systems, orbital period.",
+      "Plotting luminosity against colour (B minus V) for the stars in a cluster gives a characteristic pattern: most stars lie on a diagonal main sequence, with giants and supergiants above and white dwarfs below.",
+      "Comparing the pattern with known stars lets astronomers work out properties of the whole cluster, such as its distance."
      ]
     }
    ],
@@ -165,42 +734,314 @@
    "boxes": [
     {
      "type": "why",
-     "text": "Images show where light comes from, spectra show how its intensity varies with wavelength, and light curves show how brightness changes with time."
+     "text": "Why take separate exposures through filters? A pixel counts photons but cannot tell their colour. A filter lets only one band through, so each exposure measures brightness in that band. Comparing the bands gives colour, and colour hints at temperature."
     },
     {
      "type": "trick",
-     "text": "Image: where and how bright. Spectrum: wavelength clues. Light curve: brightness over time."
+     "text": "One filter, one image. Stack three or more for a colour picture. Colour in an invisible-light image is a code, not a true colour."
     },
     {
      "type": "trap",
-     "text": "A colourful astronomical image does not necessarily show visible colours; colour may be assigned to non-visible wavelength data."
+     "text": "Colourful does not mean 'what you would see'. Textbook Quick Quiz 5: a red region in a Chandra X-ray image means colours were chosen to show something about the X-rays, not that the object looks red. Also note the filter photo on Ch6.2 pt2 slide 3 is labelled B U V I R, but the passbands on the graph run U B V R I by wavelength."
     }
    ],
    "sourceNotes": [
-    "ASTR 207 instructor materials, Ch6.2 part 2 slides 1-13.",
-    "Explanations are paraphrased and newly written from the instructor's material."
+    "Ch6.2 pt2 slides 1-6",
+    "Cosmic Perspective 6.2 (pp. 172-173, Figures 6.14-6.15): imaging, filters, invisible-light images. Photometry is listed on the slides as the main detection method; the textbook counts it inside imaging (footnote p. 172).",
+    "UBVRI order: the slide graph and standard use give U, B, V, R, I; the photo is labelled B U V I R."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/telescopes/tel_filters_stack.webp",
+     "slide": "slide 2 (Ch6.2 pt2)",
+     "alt": "Three separate images of the Trifid Nebula taken through blue, green and red filters, joined to a full colour combined image."
+    },
+    {
+     "src": "img/telescopes/tel_ubvri_filters.webp",
+     "slide": "slide 3 (Ch6.2 pt2)",
+     "alt": "Five coloured filter discs labelled B, U, V, I and R above a graph of the transmission of the Johnson and Bessel U, B, V, R and I filters against wavelength."
+    },
+    {
+     "src": "img/telescopes/tel_false_colour.webp",
+     "slide": "slide 4 (Ch6.2 pt2)",
+     "alt": "A collage of colourful astronomical images, including nebulae, a supernova remnant and colliding galaxies, with a note that colour often stands for non-visible wavelengths."
+    },
+    {
+     "src": "img/telescopes/tel_cluster_cmd.webp",
+     "slide": "slide 6 (Ch6.2 pt2)",
+     "alt": "A plot of star luminosity against colour (B minus V) for many stars in a cluster, with the main sequence, giants, supergiants and white dwarfs labelled."
+    }
+   ],
+   "table": {
+    "title": "Three jobs for a telescope",
+    "head": [
+     "Job",
+     "What is recorded",
+     "What it tells you",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Imaging (photometry)",
+      "Brightness at each place, one filter at a time",
+      "Shape, size, colour, luminosity, distance clues",
+      "Stacked blue, green and red images of a nebula"
+     ],
+     [
+      "Spectroscopy",
+      "Intensity at each wavelength",
+      "Composition, temperature, speed, rotation",
+      "Absorption lines in the Sun's spectrum"
+     ],
+     [
+      "Time monitoring",
+      "Brightness over weeks, months or years",
+      "Variability, periods, transits, flares",
+      "Mira's 331 day cycle; TRAPPIST-1 transits"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "spectroscopy",
+   "title": "Spectroscopy: splitting light by wavelength",
+   "slides": "Ch6.2 pt2: slides 7-10",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_spectrograph.webp",
+      "slide": "slide 7 (Ch6.2 pt2)",
+      "alt": "A cutaway of a spectrograph attached under a telescope mirror with five labelled stages: slit, collimating mirror, diffraction grating, camera mirror and detector."
+     },
+     "title": "A spectrograph splits starlight",
+     "bullets": [
+      "A **spectrograph** (spectrometer) sits at the telescope focus. A narrow **slit** lets in only the light of the object of interest.",
+      "A collimating mirror makes the rays parallel, a **diffraction grating** (often an echelle grating) spreads them out by wavelength, and a camera mirror focuses the spread-out light onto the detector.",
+      "The detector records an image of the spectrum."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_solar_spectrum_curve.webp",
+      "slide": "slide 8 (Ch6.2 pt2)",
+      "alt": "A rainbow strip of the solar spectrum with dark lines above a graph of sunlight intensity against wavelength, with dips where the atmosphere absorbs."
+     },
+     "title": "From spectrum to graph",
+     "bullets": [
+      "Plotting the intensity at each wavelength gives a **spectrum**. It can be shown as a rainbow strip with dark lines, or as a graph.",
+      "The graph shows the Sun's light: strongest in the visible, falling off into the infrared and close to a 5778 K thermal curve (the smooth curve).",
+      "The red region is the light that reaches sea level. The dips below the yellow region are where Earth's atmosphere absorbs, mainly by water vapour, oxygen and carbon dioxide."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_spectral_resolution.webp",
+      "slide": "slide 8 (Ch6.2 pt2)",
+      "alt": "Two graphs of the same absorption feature, one broad shallow dip at lower spectral resolution and several separate narrow dips at higher spectral resolution."
+     },
+     "title": "Spectral resolution",
+     "bullets": [
+      "**Spectral resolution** tells how close two spectral lines can be and still be seen as separate lines. At low resolution neighbouring lines merge into one broad dip; at high resolution each line shows up on its own.",
+      "It is not the same as angular resolution, which is about telling two objects apart in the sky.",
+      "Higher spectral resolution costs light: the light is spread out more, so each wavelength gets less of it, and a longer exposure is needed. A spectrum therefore takes longer to record than an image, and a high-resolution spectrum takes longest."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_sun_spectrum_lines.webp",
+      "slide": "slide 9 (Ch6.2 pt2)",
+      "alt": "A graph of the Sun's spectrum measured at Earth's surface, with labelled absorption lines of calcium, iron, magnesium, sodium and hydrogen and Earth-atmosphere oxygen and water lines."
+     },
+     "title": "Reading a real spectrum",
+     "bullets": [
+      "A spectrum of the Sun taken from Earth's surface contains both solar absorption lines (iron, calcium, magnesium, sodium, hydrogen) and absorption features from our own atmosphere (oxygen, water).",
+      "Line identities give **composition**, the shape of the spectrum and which lines appear give **temperature**, and shifts in the lines (the Doppler effect) give **motion**; the width of lines can show rotation.",
+      "Astronomers also quote mass, age, distance (from the Hubble expansion speed) and dark matter content from spectra. Those come from combining the spectrum with other knowledge, not from the spectrum alone."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why spread light into a spectrum? An image only counts total light. A spectrum shows which wavelengths are bright or missing, and each element absorbs and emits at its own wavelengths, so the pattern is a chemical fingerprint that also carries temperature and motion."
+    },
+    {
+     "type": "trick",
+     "text": "Image: where. Spectrum: what is it made of, how hot, how fast. Light curve: how it changes with time."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q10: with spectroscopy alone you can find chemical composition, speed toward or away (Doppler shift), surface temperature and rotation rate, but you cannot find the angular size of a distant galaxy (that needs an image). Assignment 5 Q11: spectral resolution is how close two spectral LINES can be and still be told apart. It is not how close two stars can be (that is angular resolution)."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.2 pt2 slides 7-10",
+    "Cosmic Perspective 6.2 (p. 174, Figures 6.16-6.17): spectrograph design, spectral resolution and its exposure-time cost.",
+    "Assignment 5 Q10 and Q11.",
+    "The Sun-from-the-ground graph and the list of what spectroscopy reveals come from the slides; the remark that mass, age, distance and dark matter are indirect is added for accuracy."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_spectrograph.webp",
+     "slide": "slide 7 (Ch6.2 pt2)",
+     "alt": "A cutaway of a spectrograph attached under a telescope mirror with five labelled stages: slit, collimating mirror, diffraction grating, camera mirror and detector."
+    },
+    {
+     "src": "img/telescopes/tel_solar_spectrum_curve.webp",
+     "slide": "slide 8 (Ch6.2 pt2)",
+     "alt": "A rainbow strip of the solar spectrum with dark lines above a graph of sunlight intensity against wavelength, with dips where the atmosphere absorbs."
+    },
+    {
+     "src": "img/telescopes/tel_spectral_resolution.webp",
+     "slide": "slide 8 (Ch6.2 pt2)",
+     "alt": "Two graphs of the same absorption feature, one broad shallow dip at lower spectral resolution and several separate narrow dips at higher spectral resolution."
+    },
+    {
+     "src": "img/telescopes/tel_sun_spectrum_lines.webp",
+     "slide": "slide 9 (Ch6.2 pt2)",
+     "alt": "A graph of the Sun's spectrum measured at Earth's surface, with labelled absorption lines of calcium, iron, magnesium, sodium and hydrogen and Earth-atmosphere oxygen and water lines."
+    }
+   ]
+  },
+  {
+   "id": "timing",
+   "title": "Time monitoring and light curves",
+   "slides": "Ch6.2 pt2: slides 11-13",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_mira_light_curve.webp",
+      "slide": "slide 11 (Ch6.2 pt2)",
+      "alt": "A graph of the brightness of the variable star Mira over about 2000 days, rising and falling again and again with a 331 day period marked."
+     },
+     "title": "A light curve",
+     "bullets": [
+      "A **light curve** is a series of brightness measurements that shows how brightness changes with time. Time monitoring is like taking a video of the sky.",
+      "The graph shows the star Mira rising and falling in a repeating cycle of about 331 days. Its brightness changes by more than a factor of 100.",
+      "A light curve can cover weeks, months or even years, depending on the target and the project."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_flare_light_curve.webp",
+      "slide": "slide 12 (Ch6.2 pt2)",
+      "alt": "A satellite picture of a solar flare above a graph of the Sun's X-ray brightness against time on one day, with three sharp flare spikes labelled M5.8, M2.3 and X2.8."
+     },
+     "title": "What changes can we catch?",
+     "bullets": [
+      "Light curves are used for Cepheid variable stars, exoplanet transits, star systems that eclipse each other, solar flares, weather and storms on other worlds, asteroids and the motion of stars across the sky.",
+      "The graph is the Sun's X-ray brightness during one day. Each sharp spike is a flare that rises quickly and then fades.",
+      "A slowly varying object may only need images or spectra compared at different times. Fast changes need rapid repeated exposures."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_trappist.webp",
+      "slide": "slide 13 (Ch6.2 pt2)",
+      "alt": "Stacked light curves showing small dips in brightness as each of seven TRAPPIST-1 planets crosses its star, next to a picture of the system compared with the inner Solar System."
+     },
+     "title": "Transits of TRAPPIST-1",
+     "bullets": [
+      "An **exoplanet transit** happens when a planet passes in front of its star and blocks a small part of the star's light. The light curve shows a dip that returns each orbit.",
+      "In the TRAPPIST-1 curves, each of the seven planets makes its own dip. The time between dips is the planet's orbital period (from 1.51 days for the innermost to about 14 to 25 days for the outermost).",
+      "TRAPPIST-1 is about 40 light-years away. The planets are close to the star and mostly Earth-sized; the picture enlarges the system 25 times to compare it with the inner Solar System."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do the dips repeat? The planet keeps orbiting, so every time it crosses the face of the star it blocks a little light again. The gap between two dips is one orbit."
+    },
+    {
+     "type": "trick",
+     "text": "A light curve is brightness (up) against time (across). Flat, then a repeating dip: something crosses in front. Smooth repeating hills and valleys: the star itself pulses."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q9: only recording and comparing the light at many different times can show how a variable star brightens and dims. The colour of a planet, the shape of a gas cloud and the number of stars in a cluster can all come from a single image. A transit light curve shows the dip, not a picture of the planet."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.2 pt2 slides 11-13",
+    "Cosmic Perspective 6.2 (p. 174, Figure 6.18): light curves, Mira 331 days.",
+    "Assignment 5 Q9."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_mira_light_curve.webp",
+     "slide": "slide 11 (Ch6.2 pt2)",
+     "alt": "A graph of the brightness of the variable star Mira over about 2000 days, rising and falling again and again with a 331 day period marked."
+    },
+    {
+     "src": "img/telescopes/tel_flare_light_curve.webp",
+     "slide": "slide 12 (Ch6.2 pt2)",
+     "alt": "A satellite picture of a solar flare above a graph of the Sun's X-ray brightness against time on one day, with three sharp flare spikes labelled M5.8, M2.3 and X2.8."
+    },
+    {
+     "src": "img/telescopes/tel_trappist.webp",
+     "slide": "slide 13 (Ch6.2 pt2)",
+     "alt": "Stacked light curves showing small dips in brightness as each of seven TRAPPIST-1 planets crosses its star, next to a picture of the system compared with the inner Solar System."
+    }
+   ]
   },
   {
    "id": "atmosphere",
-   "title": "The atmosphere and observing sites",
-   "slides": "6.3, slides 1-10",
+   "title": "Observing through the atmosphere",
+   "slides": "Ch6.3: slides 2-7",
    "steps": [
     {
-   "title": "Choose a good ground site",
+     "img": {
+      "src": "img/telescopes/tel_twinkling.webp",
+      "slide": "slide 5 (Ch6.3)",
+      "alt": "Two images of the same bright star: a blurry blob seen with a ground-based telescope and a sharp point seen with the Hubble Space Telescope."
+     },
+     "title": "Turbulence makes stars twinkle",
      "bullets": [
-      "Ground observatories work best where the air is calm, the sky is dark, the site is high and the air is dry.",
-      "Artificial light scatters in the atmosphere and brightens the sky, making faint objects harder to detect.",
-      "Turbulent air changes the direction of incoming light, making stars appear to twinkle and images less sharp."
+      "Moving pockets of air in the atmosphere keep refracting starlight in random ways. The star's image dances and blurs, which we see as **twinkling**.",
+      "In the pictures, the same bright star is a blurry blob from the ground but a sharp point with the Hubble Space Telescope, which is above the air.",
+      "Stars twinkle more on windy nights and near the horizon (thicker air). Planets twinkle less because they have a measurable angular size. In space nothing twinkles."
      ]
     },
     {
-     "title": "Adaptive optics and space telescopes",
+     "img": {
+      "src": "img/telescopes/tel_light_pollution.webp",
+      "slide": "slide 3 (Ch6.3)",
+      "alt": "A night-time map of Earth showing bright clusters of city lights in North America, Europe and Asia and dark areas elsewhere."
+     },
+     "title": "Light pollution",
      "bullets": [
-      "**Adaptive optics** changes a telescope mirror rapidly to correct some image distortion caused by atmospheric turbulence.",
-      "A space telescope avoids atmospheric distortion and light pollution and can observe wavelengths blocked by the atmosphere.",
-      "Space missions cost more and are harder to repair; telescope size is also limited by what can be launched."
+      "Light from human sources scatters in the atmosphere and brightens the sky, which can drown out faint objects. This is **light pollution**.",
+      "Remote areas such as islands and deserts have less of it. The night map shows how the lights of cities spread across the continents.",
+      "Even without cities, the daytime sky is bright because air scatters sunlight, so most observing is done at night. Radio waves are not scattered, so radio telescopes can work in daytime and through clouds."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_satellite_trails.webp",
+      "slide": "slide 4 (Ch6.3)",
+      "alt": "A star field crossed by many thin straight streaks left by satellites during a long exposure."
+     },
+     "title": "Satellite trails",
+     "bullets": [
+      "Satellites in low orbit reflect sunlight and cross long exposures as bright streaks.",
+      "Satellite trails are becoming more common as huge networks of satellites for internet service are launched. Thousands are in orbit and over 100,000 have been proposed.",
+      "Astronomers must remove the streaks or lose part of the image, and they are working with the satellite operators to reduce the problem."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_observing_sites.webp",
+      "slide": "slide 7 (Ch6.3)",
+      "alt": "Four photos of mountaintop observatories: Mauna Kea in Hawaii, Cerro Tololo in Chile, Kitt Peak in Arizona and the Nordic Optical Telescope in the Canary Islands."
+     },
+     "title": "Calm, dark, high, dry",
+     "bullets": [
+      "The best ground sites are **calm** (little wind and turbulence), **dark** (far from light pollution), **high** (less air above) and **dry** (fewer clouds, less water vapour).",
+      "Famous sites include Maunakea in Hawaii (4300 m), Cerro Tololo and Paranal in Chile, Kitt Peak in Arizona and La Palma in the Canary Islands. In some photos the telescopes sit above a sea of low clouds.",
+      "Even at the best site, bad weather can spoil a night of observing."
      ]
     }
    ],
@@ -208,59 +1049,195 @@
    "boxes": [
     {
      "type": "why",
-     "text": "A high, dry, dark and calm site reduces several sources of lost or distorted light before it reaches the detector."
+     "text": "Why build on a high, remote mountain? The telescope sits above a good part of the air and the low clouds, in thinner, drier and often smoother air, and far from city lights."
     },
     {
      "type": "trick",
-     "text": "Good ground site: calm, dark, high and dry."
+     "text": "Site checklist: Calm, Dark, High, Dry. Calm fights twinkling, dark fights light pollution, high leaves air below you, dry fights clouds."
     },
     {
      "type": "trap",
-     "text": "Adaptive optics reduces some atmospheric blur; it does not remove clouds, light pollution or every observing limitation."
+     "text": "Assignment 5 Q15: 'to observe ultraviolet and X-rays' is NOT a reason for a mountain site. UV and X-rays are absorbed far above any mountaintop and need space telescopes. A mountain does help infrared (less water vapour), twinkling and light pollution. Assignment 5 Q13: twinkling is caused by moving gases in Earth's atmosphere bending light, not by variable stars, interstellar gas or your eye. Assignment 5 Q12: light pollution is human-made light that brightens the sky, not industrial gases or sunlight."
     }
    ],
    "sourceNotes": [
-    "ASTR 207 instructor materials, Ch6.3 slides 1-10.",
-    "Explanations are paraphrased and newly written from the instructor's material."
+    "Ch6.3 slides 2-7",
+    "Cosmic Perspective 6.3 (pp. 175-177, Figures 6.20-6.23): light pollution, satellites, twinkling, site choice; Common Misconceptions: Twinkle, Twinkle, Little Star.",
+    "Assignment 5 Q12, Q13 and Q15."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/telescopes/tel_twinkling.webp",
+     "slide": "slide 5 (Ch6.3)",
+     "alt": "Two images of the same bright star: a blurry blob seen with a ground-based telescope and a sharp point seen with the Hubble Space Telescope."
+    },
+    {
+     "src": "img/telescopes/tel_light_pollution.webp",
+     "slide": "slide 3 (Ch6.3)",
+     "alt": "A night-time map of Earth showing bright clusters of city lights in North America, Europe and Asia and dark areas elsewhere."
+    },
+    {
+     "src": "img/telescopes/tel_satellite_trails.webp",
+     "slide": "slide 4 (Ch6.3)",
+     "alt": "A star field crossed by many thin straight streaks left by satellites during a long exposure."
+    },
+    {
+     "src": "img/telescopes/tel_observing_sites.webp",
+     "slide": "slide 7 (Ch6.3)",
+     "alt": "Four photos of mountaintop observatories: Mauna Kea in Hawaii, Cerro Tololo in Chile, Kitt Peak in Arizona and the Nordic Optical Telescope in the Canary Islands."
+    }
+   ]
+  },
+  {
+   "id": "adaptive-space",
+   "title": "Adaptive optics and space telescopes",
+   "slides": "Ch6.3: slides 8-10",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_adaptive_optics.webp",
+      "slide": "slide 8 (Ch6.3)",
+      "alt": "Two false-colour star images: without adaptive optics a single blurry glow, and with adaptive optics two separate bright stars."
+     },
+     "title": "Adaptive optics",
+     "bullets": [
+      "**Adaptive optics** (AO) changes the shape of a telescope mirror in real time, many times each second, using tiny actuators (motors). A computer measures the distortion from a bright star near the target, or from a laser guide star, and the mirror does the opposite dance.",
+      "This cancels some of the blurring from turbulence. In the example, without AO a double star is one fuzzy glow; with AO the two stars are clearly separated (0.28 arcsecond apart).",
+      "AO sharpens the image; it does not collect more light, remove clouds or let X-rays through the air."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_hubble_jwst.webp",
+      "slide": "slide 9 (Ch6.3)",
+      "alt": "Pictures of the Hubble Space Telescope and the James Webb Space Telescope in orbit above Earth."
+     },
+     "title": "Why go to space?",
+     "bullets": [
+      "**Advantages**: no atmosphere (so no turbulence, light pollution, satellites or weather) and access to the full electromagnetic spectrum.",
+      "**Disadvantages**: more expensive, design limits such as the size of the mirror that a rocket can carry (the James Webb Space Telescope folds its mirror), and very hard to maintain or repair.",
+      "Hubble has a modest 2.4 m mirror but sharp images because it is above the air. Most of the world's telescopes are on the ground because ground telescopes are far cheaper to build and run."
+     ]
+    },
+    {
+     "title": "What space does not do",
+     "bullets": [
+      "Space telescopes are not helpful because they are closer to the stars. On the scale of the Voyage model, even the JWST orbit (1.5 million km) is a few centimetres from Earth while the nearest stars are thousands of kilometres away.",
+      "The real advantages come from being above the atmosphere. JWST sits far from Earth and behind a huge sunshield so that its infrared detectors stay very cold. Its 6.5 m mirror is 2.7 times as wide as Hubble's and collects more than 7 times the light.",
+      "A space telescope is not automatically better for every job: radio and visible light work well from the ground, where bigger telescopes can be built."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does adaptive optics not make space telescopes unnecessary? AO only fixes blurring of light that reaches the ground. It cannot bring X-rays, gamma rays, most ultraviolet and most infrared through the air."
+    },
+    {
+     "type": "trick",
+     "text": "Ground: cheap, huge, repairable, but blurred and blocked. Space: sharp and every wavelength, but costly, smaller and hard to fix."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q14: the purpose of adaptive optics is to reduce the distorting effects of atmospheric turbulence for ground telescopes. It is not about collecting area, not linking telescopes (that is interferometry), and not magnification. Assignment 5 Q17: the best reason to put a visible-light telescope in space is that it is above the turbulent air, not that it is closer to the stars or safe from earthquakes."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.3 slides 8-10",
+    "Cosmic Perspective 6.3 (pp. 176-179, Figures 6.22-6.27): adaptive optics, space telescopes, Common Misconceptions: Closer to the Stars?, JWST features.",
+    "Assignment 5 Q14 and Q17."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_adaptive_optics.webp",
+     "slide": "slide 8 (Ch6.3)",
+     "alt": "Two false-colour star images: without adaptive optics a single blurry glow, and with adaptive optics two separate bright stars."
+    },
+    {
+     "src": "img/telescopes/tel_hubble_jwst.webp",
+     "slide": "slide 9 (Ch6.3)",
+     "alt": "Pictures of the Hubble Space Telescope and the James Webb Space Telescope in orbit above Earth."
+    }
+   ],
+   "table": {
+    "title": "Ground and space compared",
+    "head": [
+     "Question",
+     "Ground telescope",
+     "Space telescope"
+    ],
+    "rows": [
+     [
+      "Blur and twinkling",
+      "Present (adaptive optics fixes some)",
+      "None"
+     ],
+     [
+      "Light pollution, satellites, weather",
+      "Affect observations",
+      "Avoided"
+     ],
+     [
+      "Wavelengths",
+      "Radio, visible, a few infrared windows",
+      "The whole spectrum"
+     ],
+     [
+      "Cost and repairs",
+      "Cheaper; easy to repair and upgrade",
+      "Expensive and hard to maintain"
+     ],
+     [
+      "Size",
+      "Very large (10 m now, 39 m planned)",
+      "Limited by what a rocket can carry"
+     ]
+    ]
+   }
   },
   {
    "id": "wavelengths",
-   "title": "Observing the spectrum and other messengers",
-   "slides": "6.4, slides 1-10",
+   "title": "Which light reaches the ground? Radio and infrared",
+   "slides": "Ch6.4: slides 2-4",
    "steps": [
     {
-   "title": "The atmosphere is a filter",
+     "img": {
+      "src": "img/telescopes/tel_atmosphere_windows.webp",
+      "slide": "slide 2 (Ch6.4)",
+      "alt": "A graph of how opaque Earth's atmosphere is at each wavelength from gamma rays to long radio waves, showing windows for visible light and radio waves and blocked regions elsewhere."
+     },
+     "title": "The atmosphere is a filter",
      "bullets": [
-      "Earth's atmosphere lets visible light and radio waves through relatively well, along with some infrared wavelengths.",
-      "Much of the infrared, ultraviolet, X-ray and gamma-ray light from space is blocked or absorbed before reaching the ground.",
-      "Space-based instruments are needed to observe wavelengths that do not pass through the atmosphere effectively."
+      "The graph shows how opaque the atmosphere is at each wavelength. Where the curve is low, light gets through: these are **atmospheric windows**.",
+      "Visible light, radio waves and a few narrow infrared bands pass through with little loss. Gamma rays, X-rays and ultraviolet are blocked by the upper atmosphere, most infrared is absorbed by gases such as water vapour, and very long radio waves are blocked.",
+      "To observe the blocked wavelengths we need telescopes in space (or at least very high up)."
      ]
     },
     {
-     "title": "Different wavelengths, different instruments",
+     "img": {
+      "src": "img/telescopes/tel_radio_arecibo.webp",
+      "slide": "slide 3 (Ch6.4)",
+      "alt": "The Arecibo radio telescope, a huge dish set in a forested hollow in Puerto Rico, with a platform held above it by cables."
+     },
+     "title": "Radio telescopes",
      "bullets": [
-      "Radio telescopes use large reflecting dishes or mesh because radio wavelengths are much longer than visible light.",
-      "X-ray telescopes use nested mirrors at shallow angles to redirect X-rays, which otherwise tend to pass through ordinary mirrors.",
-      "Gamma rays are especially difficult to focus, so their detection uses specialized approaches."
+      "Radio waves are so long that the dish does not have to be perfectly smooth: metal panels or even wire mesh will bring them to a focus at a receiver.",
+      "Radio telescopes are the largest single telescopes: Arecibo's dish was 305 m across (it collapsed in 2020) and China's FAST is 500 m. Even so, the long wavelength gives them poor resolution, about 1 arcminute, so they are often linked by interferometry.",
+      "Radio waves are not scattered by air, so radio telescopes work day and night and through clouds. Human radio signals are their main pollution."
      ]
     },
     {
-     "title": "Interferometry combines telescopes",
+     "img": {
+      "src": "img/telescopes/tel_infrared_telescopes.webp",
+      "slide": "slide 4 (Ch6.4)",
+      "alt": "The SOFIA infrared telescope carried in a Boeing 747 aircraft and the Spitzer Space Telescope in space."
+     },
+     "title": "Infrared telescopes",
      "bullets": [
-      "**Interferometry** links signals from two or more telescopes so they work together.",
-      "The combined observations can achieve the angular resolution of a much larger telescope.",
-      "Interferometry improves resolving detail; it does not simply make each individual telescope's mirror larger."
-     ]
-    },
-    {
-     "title": "The universe sends messengers beyond light",
-     "bullets": [
-      "Neutrinos are produced in energetic events and can pass through matter with little interaction. Large detectors in ice or water look for the rare interactions that reveal them.",
-      "Cosmic rays are energetic particles from space. Magnetic fields bend their paths, making it difficult to trace them directly back to their sources.",
-      "Gravitational waves are ripples in spacetime. Laser interferometer observatories detect the tiny changes they produce as they pass Earth.",
-      "Combining light with neutrino, cosmic-ray and gravitational-wave observations gives complementary evidence about energetic events."
+      "Infrared telescopes must be above most of the atmosphere to see all wavelengths. SOFIA (2010-2022) carried a 2.5 m telescope in a Boeing 747 at high altitude; the Spitzer Space Telescope (2003-2020) orbited in space.",
+      "Warm things glow in infrared, including Earth and the telescope itself. To avoid that glare, infrared telescopes are kept very cold: Spitzer was cooled with liquid helium and JWST uses a sunshield.",
+      "Infrared wavelengths are close to visible ones, so infrared telescopes look much like visible-light telescopes."
      ]
     }
    ],
@@ -268,328 +1245,910 @@
    "boxes": [
     {
      "type": "why",
-     "text": "Different parts of the spectrum interact differently with the atmosphere and optical materials, so astronomers match the telescope design to the wavelength."
+     "text": "Why does the sky have windows? Air molecules absorb light at particular wavelengths: the upper air stops gamma rays, X-rays and most ultraviolet, and gases such as water vapour and carbon dioxide absorb infrared. Only some wavelength bands slip through."
     },
     {
      "type": "trick",
-     "text": "Ask two things: can this wavelength reach the ground, and what detector or reflector can handle it?"
+     "text": "Ground-friendly light: radio and visible (plus a few infrared bands). Everything else needs space or a very high flight."
     },
     {
      "type": "trap",
-     "text": "A space telescope is not automatically better for every observation; ground-based instruments remain useful for wavelengths that reach the surface."
+     "text": "Assignment 5 Q16: the atmosphere is most transparent to visible light, not ultraviolet, X-rays or all infrared. The textbook adds that the very longest ultraviolet wavelengths and small parts of the infrared also get through. Assignment 5 Q18: the largest-diameter telescopes are radio telescopes, because long wavelengths need a huge aperture to give decent resolution."
     }
    ],
    "sourceNotes": [
-    "ASTR 207 instructor materials, Ch6.4 slides 1-10.",
-    "The Cosmic Perspective, 10th ed., Chapter 6, sections 6.3-6.4; mathematical insights are intentionally excluded.",
-    "Explanations are paraphrased and newly written from the instructor's material and textbook."
+    "Ch6.4 slides 2-4",
+    "Cosmic Perspective 6.4 (pp. 181-182, Figures 6.25, 6.28-6.30): atmospheric depth, radio dishes, FAST, Arecibo, SOFIA, Spitzer. Slide 2 says visible, radio and some infrared pass; the textbook also notes the longest ultraviolet wavelengths.",
+    "Assignment 5 Q16 and Q18."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_atmosphere_windows.webp",
+     "slide": "slide 2 (Ch6.4)",
+     "alt": "A graph of how opaque Earth's atmosphere is at each wavelength from gamma rays to long radio waves, showing windows for visible light and radio waves and blocked regions elsewhere."
+    },
+    {
+     "src": "img/telescopes/tel_radio_arecibo.webp",
+     "slide": "slide 3 (Ch6.4)",
+     "alt": "The Arecibo radio telescope, a huge dish set in a forested hollow in Puerto Rico, with a platform held above it by cables."
+    },
+    {
+     "src": "img/telescopes/tel_infrared_telescopes.webp",
+     "slide": "slide 4 (Ch6.4)",
+     "alt": "The SOFIA infrared telescope carried in a Boeing 747 aircraft and the Spitzer Space Telescope in space."
+    }
+   ]
+  },
+  {
+   "id": "high-energy",
+   "title": "Ultraviolet, X-ray and gamma-ray telescopes",
+   "slides": "Ch6.4: slides 5-7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_uv_xray_telescopes.webp",
+      "slide": "slide 5 (Ch6.4)",
+      "alt": "Artist pictures of the planned Canadian ultraviolet telescope CASTOR and the Chandra X-ray Observatory orbiting above Earth."
+     },
+     "title": "Ultraviolet and X-ray telescopes belong in space",
+     "bullets": [
+      "Ultraviolet and X-ray light is absorbed by the atmosphere, so these telescopes must be above it. The Chandra X-Ray Observatory (1999-) and the planned Canadian ultraviolet telescope CASTOR are examples; Hubble also takes some ultraviolet images.",
+      "Ultraviolet light close to the visible range behaves much like visible light and can be focused by mirrors similar to visible-light ones.",
+      "Very hot gas of millions of kelvin glows in X-rays, so X-ray telescopes are used to study things like the hot gas in galaxy clusters."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_xray_design.webp",
+      "slide": "slide 6 (Ch6.4)",
+      "alt": "A cutaway of nested cylindrical X-ray mirrors in which a first set deflects X-rays slightly onto a second set that sends them to a focus 10 metres away."
+     },
+     "title": "Grazing-incidence mirrors",
+     "bullets": [
+      "X-rays carry enough energy to go straight into or through an ordinary mirror, much like bullets fired at a metal sheet.",
+      "If the sheet is tilted so the bullets just graze it, they are deflected slightly. X-ray telescopes use sets of **nested mirrors** hit at a very shallow angle (**grazing incidence**) that bend the X-rays gradually.",
+      "In the drawing, a first set of mirrors deflects the X-rays to a second set, which deflects them again to the focus, about 10 m behind the mirrors."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_fermi_gamma.webp",
+      "slide": "slide 7 (Ch6.4)",
+      "alt": "An artist picture of the Fermi Gamma-ray Observatory, a boxy detector with two solar panels, in space."
+     },
+     "title": "Gamma rays",
+     "bullets": [
+      "Gamma-ray telescopes must also be in space.",
+      "Gamma rays have so much energy that they pass through even grazing-incidence mirrors, so they cannot be focused in the usual way.",
+      "Instead, observatories such as Fermi (2008-) use very massive detectors that capture each photon and work out the direction it came from. Fermi's main instrument weighs about 3 tons."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does the photon energy matter for the design? The more energy a photon carries, the better it passes through matter. X-rays slip through normal mirrors, and gamma rays slip through even grazing mirrors."
+    },
+    {
+     "type": "trick",
+     "text": "Radio: dish. Infrared, visible and some ultraviolet: mirror. X-ray: nested grazing mirrors. Gamma ray: no focusing, just a big detector."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q20: X-ray telescopes use grazing-incidence mirrors because X-rays would penetrate a normal mirror. They do not use extra-thick mirrors, X-rays CAN be focused, and X-rays have a range of wavelengths so spectroscopy is possible. Assignment 5 Q19: the best ultraviolet telescope is one above the atmosphere, even a small one, not a bigger one on a mountain. Assignment 5 Q25: hot gas at about 10 million kelvin in a galaxy cluster shines in X-rays, so the Chandra X-ray telescope is the right tool."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.4 slides 5-7",
+    "Cosmic Perspective 6.4 (pp. 182-183, Figures 6.31-6.32): UV, X-ray grazing incidence, gamma-ray telescopes. The link between very hot gas and X-ray emission is from the thermal-spectrum idea in Cosmic Perspective 5.4 (hotter objects peak at shorter wavelengths).",
+    "Assignment 5 Q19, Q20 and Q25."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_uv_xray_telescopes.webp",
+     "slide": "slide 5 (Ch6.4)",
+     "alt": "Artist pictures of the planned Canadian ultraviolet telescope CASTOR and the Chandra X-ray Observatory orbiting above Earth."
+    },
+    {
+     "src": "img/telescopes/tel_xray_design.webp",
+     "slide": "slide 6 (Ch6.4)",
+     "alt": "A cutaway of nested cylindrical X-ray mirrors in which a first set deflects X-rays slightly onto a second set that sends them to a focus 10 metres away."
+    },
+    {
+     "src": "img/telescopes/tel_fermi_gamma.webp",
+     "slide": "slide 7 (Ch6.4)",
+     "alt": "An artist picture of the Fermi Gamma-ray Observatory, a boxy detector with two solar panels, in space."
+    }
+   ]
+  },
+  {
+   "id": "interferometry",
+   "title": "Interferometry: linking telescopes",
+   "slides": "Ch6.4: slides 8-9",
+   "steps": [
+    {
+     "img": {
+      "src": "img/telescopes/tel_vla.webp",
+      "slide": "slide 8 (Ch6.4)",
+      "alt": "Several large radio dishes of the Very Large Array standing on the New Mexico plain at sunset."
+     },
+     "title": "The Very Large Array",
+     "bullets": [
+      "**Interferometry** links two or more telescopes so they work together to give the angular resolution of a single, much larger telescope. Computers combine the signals using the precise time at which each wave reaches each dish.",
+      "The Very Large Array in New Mexico has 27 radio dishes on railway tracks. Spread out as far as possible, it can match a single dish almost 40 km across.",
+      "But the VLA's light-collecting area is only the sum of its 27 dishes, about that of one dish 130 m across."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/telescopes/tel_vlt.webp",
+      "slide": "slide 9 (Ch6.4)",
+      "alt": "The four large domed telescopes of the Very Large Telescope on a mountaintop in Chile's Atacama desert."
+     },
+     "title": "Beyond radio",
+     "bullets": [
+      "Interferometry is harder at shorter wavelengths but now works at infrared and visible wavelengths too, for example with the Very Large Telescope in Chile and with paired telescopes such as Keck.",
+      "ALMA in Chile combines 66 radio dishes. The Event Horizon Telescope linked radio dishes around the world to take the first image of a black hole.",
+      "Linking telescopes sharpens the image; it does not make it brighter."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does spacing help? The interference between waves reaching widely separated dishes carries the fine detail that one huge dish would show. The resolution is set by the size of the whole spread, not of each dish."
+    },
+    {
+     "type": "trick",
+     "text": "Interferometry = sharper, not brighter. Resolution of the whole span; light of just the sum."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q21: interferometry gives the angular resolution of a much larger telescope. It does NOT give the collecting area of a much larger telescope, does not remove light pollution and does not reveal chemical composition. Textbook Quick Quiz 10 agrees."
+    }
+   ],
+   "sourceNotes": [
+    "Ch6.4 slides 8-9",
+    "Cosmic Perspective 6.4 (pp. 182-184, Figures 6.33-6.35): VLA 27 dishes, 130 m equivalent area, almost 40 km resolution, ALMA 66 dishes, Event Horizon Telescope.",
+    "Assignment 5 Q21."
+   ],
+   "images": [
+    {
+     "src": "img/telescopes/tel_vla.webp",
+     "slide": "slide 8 (Ch6.4)",
+     "alt": "Several large radio dishes of the Very Large Array standing on the New Mexico plain at sunset."
+    },
+    {
+     "src": "img/telescopes/tel_vlt.webp",
+     "slide": "slide 9 (Ch6.4)",
+     "alt": "The four large domed telescopes of the Very Large Telescope on a mountaintop in Chile's Atacama desert."
+    }
+   ]
+  },
+  {
+   "id": "messengers",
+   "title": "Beyond light: neutrinos, cosmic rays and gravitational waves",
+   "slides": "No slides; Cosmic Perspective 6.4 (pp. 184-185)",
+   "steps": [
+    {
+     "title": "Neutrinos",
+     "bullets": [
+      "A **neutrino** is an extremely light subatomic particle made in nuclear reactions, such as fusion in the Sun and the reactions in exploding stars.",
+      "Neutrinos pass through almost everything, so a detector must be huge and must wait for the rare interaction. Neutrino telescopes sit in deep mines or under water or ice. The IceCube detectors hang on cables 1.5 to 2.5 km down in Antarctic ice.",
+      "They have already taught us about the Sun and stellar explosions."
+     ]
+    },
+    {
+     "title": "Cosmic rays",
+     "bullets": [
+      "**Cosmic rays** are not light. They are very high-energy subatomic particles that constantly strike Earth.",
+      "At least some come from supernovas, the explosions at the end of massive stars. We still know relatively little about their origin.",
+      "Being charged particles, they are bent by magnetic fields on the way, so the direction they arrive from does not point back to the source. Satellites and ground detectors catch them."
+     ]
+    },
+    {
+     "title": "Gravitational waves",
+     "bullets": [
+      "**Gravitational waves** are ripples in spacetime predicted by Einstein's general theory of relativity. They travel at the speed of light but are a different kind of thing from light.",
+      "They are made by accelerating masses, such as pairs of neutron stars or black holes that spiral together and merge. LIGO in the United States (two sites) and Virgo in Italy use laser interferometers to measure tiny changes in distance as a wave passes.",
+      "They have already been detected from many neutron-star and black-hole mergers."
+     ]
+    },
+    {
+     "title": "Why use several messengers?",
+     "bullets": [
+      "Light can be blocked or absorbed by dust, and some events give off little light at all. Neutrinos, cosmic rays and gravitational waves carry different information.",
+      "Combining light with these messengers gives independent, complementary evidence about the same event, and tells us things that light alone cannot.",
+      "None of the three is a form of light, so the electromagnetic spectrum (gamma rays to radio waves) does not include them."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why bother with more messengers? Light can be hidden by dust, and violent events such as black-hole mergers may give off little light. Neutrinos from deep inside an exploding star and gravitational waves carry information that light does not."
+    },
+    {
+     "type": "trick",
+     "text": "Neutrino: tiny, ghost-like, needs a HUGE detector. Cosmic ray: a charged particle, not a ray of light. Gravitational wave: a ripple of spacetime, not light."
+    },
+    {
+     "type": "trap",
+     "text": "Assignment 5 Q22 to Q24: a neutrino is a very light subatomic particle (not a form of light and not Einstein's wave). Cosmic rays are high-energy subatomic particles, not light, despite the name. Gravitational waves are a type of energy different from light, detected from merging neutron stars and black holes; they are not a form of light above gamma rays or below radio waves."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 6.4 (pp. 184-185, Figures 6.36-6.37). These topics are not on the Ch6.4 slides.",
+    "Assignment 5 Q22, Q23 and Q24."
    ],
    "images": []
   }
  ],
+ "table": {
+  "title": "Telescopes across the spectrum",
+  "head": [
+   "Kind of light",
+   "Ground or space?",
+   "How it is focused or detected",
+   "Example"
+  ],
+  "rows": [
+   [
+    "Radio",
+    "Ground (works day and night, through clouds)",
+    "Big metal dish or mesh reflects the waves to a receiver; often linked by interferometry",
+    "Very Large Array, FAST, Arecibo"
+   ],
+   [
+    "Infrared",
+    "Mostly space or very high flight; a few windows from high dry mountains",
+    "Mirrors like a visible-light reflector, kept very cold so the telescope does not glow",
+    "Spitzer, JWST, SOFIA"
+   ],
+   [
+    "Visible",
+    "Ground (calm, dark, high, dry site, with adaptive optics) or space",
+    "Reflecting telescope with a large, often segmented, mirror and a CCD detector",
+    "Keck, Very Large Telescope, Hubble"
+   ],
+   [
+    "Ultraviolet",
+    "Space (the atmosphere absorbs it)",
+    "Mirrors similar to visible-light ones",
+    "Hubble, CASTOR (planned)"
+   ],
+   [
+    "X-ray",
+    "Space",
+    "Nested mirrors hit at a very shallow (grazing) angle",
+    "Chandra X-Ray Observatory"
+   ],
+   [
+    "Gamma ray",
+    "Space",
+    "Cannot be focused; massive detectors find each photon's direction",
+    "Fermi Gamma-ray Observatory"
+   ]
+  ]
+ },
  "cards": [
   {
    "id": "tel-c1",
    "front": "Aperture",
-   "back": "The primary lens or mirror that gathers light for a telescope.",
-   "short": "The telescope's light-gathering opening.",
-   "gloss": false
+   "back": "The width (diameter) of a telescope's primary lens or mirror. It sets how much light the telescope can collect, because the light-collecting area is proportional to the diameter squared.",
+   "short": "Width of the main mirror or lens",
+   "src": "Ch6.2 pt1 slide 2; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-c2",
    "front": "Angular resolution",
-   "back": "The smallest apparent angular separation at which two sources can be distinguished.",
-   "short": "Smaller minimum angle means finer detail.",
-   "gloss": false
+   "back": "The smallest angle between two objects at which a telescope can still show them as separate, usually measured in arcseconds. A smaller angle means finer detail. Diffraction limits it: it is proportional to wavelength divided by diameter.",
+   "short": "Smaller minimum angle means finer detail",
+   "src": "Ch6.2 pt1 slides 4-5; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-c3",
    "front": "Photometry",
-   "back": "Measurement of the light received from an astronomical object.",
-   "short": "Measures brightness and light through filters.",
-   "gloss": false
+   "back": "Measuring how much light is received from an astronomical object, often through coloured filters. It gives brightness and colour and, with other information, luminosity, distance and size.",
+   "short": "Measures brightness, often through filters",
+   "src": "Ch6.2 pt2 slides 2-5; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-c4",
    "front": "Spectroscopy",
-   "back": "Separating light by wavelength and measuring its intensity to learn about an object.",
-   "short": "Wavelength patterns reveal physical clues.",
-   "gloss": false
+   "back": "Spreading light into a spectrum and measuring its intensity at each wavelength. The pattern reveals chemical composition, temperature and motion.",
+   "short": "Wavelength patterns reveal composition, temperature, motion",
+   "src": "Ch6.2 pt2 slides 7-10; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-c5",
    "front": "Light curve",
-   "back": "A record or plot of an object's brightness measured over time.",
-   "short": "Brightness versus time.",
-   "gloss": false
+   "back": "A graph of an object's brightness measured over time. It shows repeating changes such as variable stars, planet transits and flares.",
+   "short": "Brightness versus time",
+   "src": "Ch6.2 pt2 slides 11-13; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-c6",
    "front": "Adaptive optics",
-   "back": "Rapidly adjusting a telescope mirror to correct some atmospheric distortion.",
-   "short": "Corrects some blur caused by turbulent air.",
-   "gloss": false
+   "back": "Changing the shape of a telescope mirror many times a second to cancel part of the blurring caused by turbulent air. It sharpens images but does not collect more light or remove clouds.",
+   "short": "Mirror reshaped to cancel some turbulence blur",
+   "src": "Ch6.3 slide 8; Cosmic Perspective 6.3"
   },
   {
    "id": "tel-c7",
    "front": "Interferometry",
-   "back": "Combining observations from multiple telescopes to achieve the resolving power of a larger instrument.",
-   "short": "Linked telescopes resolve finer detail.",
-   "gloss": false
+   "back": "Linking two or more telescopes so that together they give the angular resolution of a single telescope as wide as their spacing. It sharpens detail; the light collected is only the sum of the individual telescopes.",
+   "short": "Linked telescopes resolve finer detail",
+   "src": "Ch6.4 slides 8-9; Cosmic Perspective 6.4"
   },
   {
    "id": "tel-c8",
    "front": "CCD",
-   "back": "A detector whose pixels convert incoming photons into electrical signals.",
-   "short": "A pixel sensor for incoming light.",
-   "gloss": false
+   "back": "Charge-coupled device: a grid of pixels that turn arriving photons into electrons. The charge in each pixel is read out and counted to make an image. Used in phones and telescopes.",
+   "short": "A pixel sensor that counts photons",
+   "src": "Ch6.1 slides 13-14; Cosmic Perspective 6.1"
   },
   {
    "id": "tel-c9",
    "front": "Neutrino observatory",
-   "back": "A detector, often placed in deep ice or water, that looks for rare interactions from neutrinos arriving from space.",
-   "short": "Detects rare interactions from cosmic neutrinos.",
-   "gloss": false
+   "back": "A detector, often deep underground or in water or ice, that waits for the rare interactions of neutrinos arriving from space. IceCube in Antarctic ice is an example.",
+   "short": "Huge detector for rare neutrino hits",
+   "src": "Cosmic Perspective 6.4 (p. 184)"
   },
   {
    "id": "tel-c10",
    "front": "Gravitational wave",
-   "back": "A ripple in spacetime produced by accelerating massive objects and detected by measuring tiny changes in distance.",
-   "short": "A ripple in spacetime detected by interferometers.",
-   "gloss": false
+   "back": "A ripple in spacetime made by accelerating masses, such as merging neutron stars or black holes. It travels at the speed of light but is not light.",
+   "short": "A spacetime ripple, not light",
+   "src": "Cosmic Perspective 6.4 (p. 184)"
   },
   {
    "id": "tel-c11",
    "front": "Cosmic ray",
-   "back": "An energetic particle arriving from space; its path can be bent by magnetic fields.",
-   "short": "An energetic space particle with a deflected path.",
-   "gloss": false
+   "back": "A very high-energy subatomic particle arriving from space. It is not light. Magnetic fields bend the paths of charged cosmic rays, so their arrival direction does not point back to the source.",
+   "short": "A fast space particle, not light",
+   "src": "Cosmic Perspective 6.4 (p. 184)"
   },
   {
    "id": "tel-c12",
    "front": "Focal plane",
-   "back": "The surface where light from the telescope is brought into focus and recorded by a detector.",
-   "short": "Where the focused image is recorded.",
-   "gloss": false
+   "back": "The flat surface through the focal point, at right angles to the optical axis. For distant objects, the focused image forms here and a detector placed here records it.",
+   "short": "Where distant objects come into focus",
+   "src": "Ch6.1 slide 4; Cosmic Perspective 6.1"
   },
   {
    "id": "tel-c13",
    "front": "Diffraction limit",
-   "back": "The fundamental resolution limit caused by light behaving as a wave around a finite aperture.",
-   "short": "Wave-related limit on resolving detail.",
-   "gloss": false
+   "back": "The best angular resolution a telescope can reach if it is limited only by the wave nature (interference) of light. It gets smaller (better) with larger diameter and shorter wavelength.",
+   "short": "Wave limit on resolving detail",
+   "src": "Ch6.2 pt1 slide 5; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-c14",
    "front": "Chromatic aberration",
-   "back": "Color-dependent focusing by a lens that can cause different wavelengths to form images at different locations.",
-   "short": "A lens focuses colors differently.",
-   "gloss": false
+   "back": "A lens defect: refraction depends on wavelength, so different colours focus at slightly different places and bright objects get coloured fringes. Mirrors do not have it.",
+   "short": "A lens focuses colours at different places",
+   "src": "Ch6.1 slide 8; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-c15",
    "front": "Spectrograph",
-   "back": "An instrument that separates incoming light by wavelength so its intensity pattern can be measured.",
-   "short": "Separates and measures wavelengths.",
-   "gloss": false
+   "back": "An instrument that uses a slit, a diffraction grating and a detector to spread light into a spectrum and record it.",
+   "short": "Separates and records wavelengths",
+   "src": "Ch6.2 pt2 slide 7; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-c16",
    "front": "Atmospheric window",
-   "back": "A wavelength range that passes through Earth's atmosphere well enough for ground-based observation.",
-   "short": "A wavelength range that reaches the ground.",
-   "gloss": false
+   "back": "A range of wavelengths that passes through Earth's atmosphere well enough to be observed from the ground: visible light, radio waves and a few narrow infrared bands.",
+   "short": "A wavelength range that reaches the ground",
+   "src": "Ch6.4 slide 2; Cosmic Perspective 6.4"
   },
   {
    "id": "tel-c17",
    "front": "Grazing-incidence optics",
-   "back": "A shallow-angle mirror arrangement that redirects X-rays that would otherwise penetrate an ordinary mirror.",
-   "short": "Shallow-angle mirrors redirect X-rays.",
-   "gloss": false
+   "back": "Nested mirrors hit at a very shallow angle, which deflect X-rays gradually to a focus. X-rays would pass into or through an ordinary mirror.",
+   "short": "Shallow-angle mirrors focus X-rays",
+   "src": "Ch6.4 slide 6; Cosmic Perspective 6.4"
   },
   {
    "id": "tel-c18",
    "front": "Neutrino",
-   "back": "A weakly interacting subatomic particle that can carry information from energetic events.",
-   "short": "A weakly interacting cosmic particle.",
-   "gloss": false
+   "back": "An extremely light subatomic particle made in nuclear reactions, including fusion in the Sun and exploding stars. It passes through matter with almost no interaction.",
+   "short": "A ghost-like particle from nuclear reactions",
+   "src": "Cosmic Perspective 6.4 (p. 184)"
   },
   {
    "id": "tel-c19",
    "front": "Gravitational-wave interferometer",
-   "back": "A detector that compares laser paths to measure tiny distance changes caused by passing gravitational waves.",
-   "short": "Measures tiny changes from spacetime waves.",
-   "gloss": false
+   "back": "A detector, such as LIGO, that sends laser light along long perpendicular arms and measures the tiny change in their lengths as a gravitational wave passes.",
+   "short": "Laser arms measure tiny length changes",
+   "src": "Cosmic Perspective 6.4 (pp. 184-185)"
+  },
+  {
+   "id": "tel-c20",
+   "front": "Image plane",
+   "back": "The place behind a lens or mirror where light from an object comes into focus. A screen, retina or detector must sit here to record a sharp image. A single convex lens makes an upside-down image there.",
+   "short": "Where the focused image forms",
+   "src": "Ch6.1 slides 5 and 12; Cosmic Perspective 6.1"
+  },
+  {
+   "id": "tel-c21",
+   "front": "Focal point",
+   "back": "The point where parallel rays from a very distant object meet after passing through a convex lens or reflecting from a concave mirror.",
+   "short": "Where parallel rays meet",
+   "src": "Ch6.1 slides 4 and 9; Cosmic Perspective 6.1"
+  },
+  {
+   "id": "tel-c22",
+   "front": "Pinhole camera",
+   "back": "A box with a tiny hole instead of a lens. Each point of the scene sends one thin ray through the hole, so the image is sharp but dim, flipped left-right and upside down.",
+   "short": "Tiny hole: sharp but dim image",
+   "src": "Ch6.1 slide 3"
+  },
+  {
+   "id": "tel-c23",
+   "front": "Focal length",
+   "back": "The distance from a lens or mirror to its focal point.",
+   "short": "Distance from lens to focal point",
+   "src": "Ch6.1 slides 4 and 9; Cosmic Perspective 6.1"
+  },
+  {
+   "id": "tel-c24",
+   "front": "Convex lens",
+   "back": "A lens thicker in the middle than at the edges. It refracts parallel rays to a focus and forms an upside-down image. Eyes and refracting telescopes use one.",
+   "short": "Bends rays together by refraction",
+   "src": "Ch6.1 slides 4-5, 12"
+  },
+  {
+   "id": "tel-c25",
+   "front": "Concave mirror",
+   "back": "A mirror curved inward. It brings parallel rays to a focus by reflection, on the same side as the incoming light. It is the primary mirror of a reflecting telescope.",
+   "short": "Focuses by reflection",
+   "src": "Ch6.1 slide 9; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c26",
+   "front": "Depth of field",
+   "back": "How much of the scene, in distance, is in sharp focus. A larger lens diameter gives more light but a shallower depth of field.",
+   "short": "Range of distances in sharp focus",
+   "src": "Ch6.1 slide 6"
+  },
+  {
+   "id": "tel-c27",
+   "front": "Exposure time",
+   "back": "How long the shutter stays open so light collects on the detector. A longer exposure gathers more total light and shows fainter detail, but very bright parts can overexpose.",
+   "short": "Time the detector collects light",
+   "src": "Cosmic Perspective 6.1 (p. 167)"
+  },
+  {
+   "id": "tel-c28",
+   "front": "Pixel",
+   "back": "One picture element of a detector. It accumulates charge from arriving photons, and the charge is measured to count how much light landed there.",
+   "short": "One light-counting square of a detector",
+   "src": "Ch6.1 slide 14; Cosmic Perspective 6.1"
+  },
+  {
+   "id": "tel-c29",
+   "front": "Light-collecting area",
+   "back": "The area of a telescope's primary mirror or lens that gathers light: A = πD²/4, so it is proportional to the diameter squared. Doubling the diameter gives 4 times the light.",
+   "short": "Proportional to diameter squared",
+   "src": "Ch6.2 pt1 slide 2; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c30",
+   "front": "Angular separation",
+   "back": "The angle between two objects as seen by an observer. It shrinks as the pair moves farther away. A telescope shows them as two only if the separation is larger than its angular resolution.",
+   "short": "Angle between two objects",
+   "src": "Ch6.2 pt1 slide 4; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c31",
+   "front": "Point-spread function",
+   "back": "The pattern a telescope makes from a single point of light, a bright centre with rings or blotches caused by diffraction. It can be minimised but never removed.",
+   "short": "Diffraction pattern of a star",
+   "src": "Ch6.2 pt1 slide 6; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c32",
+   "front": "Refracting telescope",
+   "back": "A telescope that focuses light with a large lens. Big lenses are heavy, held only at the edge, and show chromatic aberration, so research telescopes are rarely refractors.",
+   "short": "Uses a lens to focus",
+   "src": "Ch6.2 pt1 slides 7-8; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c33",
+   "front": "Reflecting telescope",
+   "back": "A telescope that focuses light with a curved primary mirror and a smaller secondary mirror. The mirror can be supported from behind or built from segments, so virtually all large telescopes are reflectors.",
+   "short": "Uses mirrors to focus",
+   "src": "Ch6.2 pt1 slides 7, 9; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c34",
+   "front": "Cassegrain focus",
+   "back": "A reflecting-telescope design in which the secondary mirror sends the light back down through a hole in the primary mirror to instruments underneath. In a Newtonian design the light goes out the side instead.",
+   "short": "Light exits through a hole in the primary",
+   "src": "Ch6.2 pt1 slide 9; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c35",
+   "front": "Segmented mirror",
+   "back": "A large mirror built from many smaller pieces that work as one. Each Keck telescope has 36 hexagons, JWST has 18 and the Extremely Large Telescope will have 798.",
+   "short": "Many small mirrors acting as one",
+   "src": "Ch6.2 pt1 slides 9-10; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c36",
+   "front": "Passband",
+   "back": "The range of wavelengths a filter lets through, such as the U, B, V, R and I filters.",
+   "short": "Wavelength range of one filter",
+   "src": "Ch6.2 pt2 slide 3"
+  },
+  {
+   "id": "tel-c37",
+   "front": "False colour",
+   "back": "Colour assigned to stand for something other than the true colour: the wavelength, energy or intensity of invisible light. Colour is a property of visible light only.",
+   "short": "Colour used as a code",
+   "src": "Ch6.2 pt2 slide 4; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c38",
+   "front": "Spectral resolution",
+   "back": "How close together two spectral lines can be and still be seen as separate. Higher resolution shows more detail but spreads the light out and needs a longer exposure.",
+   "short": "Ability to separate close spectral lines",
+   "src": "Cosmic Perspective 6.2 (p. 174)"
+  },
+  {
+   "id": "tel-c39",
+   "front": "Exoplanet transit",
+   "back": "A planet passing in front of its star, which blocks a small part of the starlight. The light curve shows a dip that repeats every orbit.",
+   "short": "A repeating dip in a star's light",
+   "src": "Ch6.2 pt2 slide 13; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-c40",
+   "front": "Light pollution",
+   "back": "Human-made light that scatters in the atmosphere and brightens the night sky, making faint objects harder to see. Satellite trails add to the problem.",
+   "short": "Artificial light that brightens the sky",
+   "src": "Ch6.3 slides 3-4; Cosmic Perspective 6.3"
+  },
+  {
+   "id": "tel-c41",
+   "front": "Twinkling",
+   "back": "The flickering of a star seen through the atmosphere. Moving air refracts the light in random directions. It does not happen in space.",
+   "short": "Turbulent air bending starlight",
+   "src": "Ch6.3 slide 5; Cosmic Perspective 6.3"
+  },
+  {
+   "id": "tel-c42",
+   "front": "Radio telescope",
+   "back": "A large metal dish or mesh that reflects radio waves to a receiver at its focus. The long wavelengths mean it need not be perfectly smooth, but it must be huge for good resolution.",
+   "short": "Big dish or mesh for radio waves",
+   "src": "Ch6.4 slide 3; Cosmic Perspective 6.4"
+  },
+  {
+   "id": "tel-c43",
+   "front": "James Webb Space Telescope",
+   "back": "A space telescope with a 6.5 m mirror of 18 hexagonal segments, observing mainly infrared light from far beyond the Moon behind a large sunshield that keeps it cold.",
+   "short": "Cold 6.5 m infrared space telescope",
+   "src": "Ch6.2 pt1 slide 10; Ch6.3 slide 9; Cosmic Perspective 6.3"
   }
  ],
  "quiz": [
   {
    "id": "tel-1",
    "q": "An astronomer needs to record a very dim nebula without changing the exposure time. Which telescope change most directly improves the number of source photons reaching the detector?",
-   "options": ["Use a larger primary aperture", "Increase magnification alone", "Move the detector farther from the focal plane", "Observe from a lower, wetter site"],
+   "options": [
+    "Use a larger primary aperture",
+    "Increase magnification alone",
+    "Move the detector farther from the focal plane",
+    "Observe from a lower, wetter site"
+   ],
    "answer": 0,
-   "why": "The aperture is the primary light-gathering surface; magnification by itself does not collect additional photons."
+   "why": "A larger aperture has more area to catch photons, and that is what a dim nebula needs. Magnification only enlarges the picture, moving the detector off the focal plane blurs it, and a lower, wetter site puts more absorbing, turbulent air in the way.",
+   "source": "Ch6.2 pt1 slide 2; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-2",
    "q": "Two stars blur into one spot in a telescope image, although the combined image is bright. Which property is most directly limiting the ability to distinguish the stars?",
-   "options": ["Angular resolution", "Total image brightness", "The detector's colour balance", "The observing schedule"],
+   "options": [
+    "Angular resolution",
+    "Total image brightness",
+    "The detector's colour balance",
+    "The observing schedule"
+   ],
    "answer": 0,
-   "why": "Angular resolution concerns separation of nearby sources, not how bright their combined light appears."
+   "why": "Angular resolution is the smallest angle at which two sources show as separate. A bright combined image shows there is enough light, so brightness is not the problem, and neither colour balance nor schedule decides whether two points can be told apart.",
+   "source": "Ch6.2 pt1 slide 4; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-3",
    "q": "A telescope records more photons from a faint source, but two close sources remain unresolved. Which interpretation best separates the two outcomes?",
-   "options": ["Light collection improved; resolving power may still be limited.", "Both brightness and resolution must have improved equally.", "More photons guarantee unlimited resolution.", "The detector has become a spectrograph."],
+   "options": [
+    "Light collection improved; resolving power may still be limited.",
+    "Both brightness and resolution must have improved equally.",
+    "More photons guarantee unlimited resolution.",
+    "The detector has become a spectrograph."
+   ],
    "answer": 0,
-   "why": "Aperture supports both photon collection and diffraction-limited detail, but a bright image is not proof that two sources are resolved."
+   "why": "Light collection and resolution are separate properties. More photons make a source brighter, but two sources still blur together if their separation is smaller than the angular resolution. More light does not remove the diffraction or turbulence limit.",
+   "source": "Ch6.2 pt1 slides 2 and 4; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-4",
    "q": "A planet passes in front of its star, producing a repeated dip in measured brightness. Which data product is best suited to reveal the event?",
-   "options": ["A light curve from time monitoring", "One spectrum without time information", "A single image without calibrated brightness", "A mirror's focal-plane diagram"],
+   "options": [
+    "A light curve from time monitoring",
+    "One spectrum without time information",
+    "A single image without calibrated brightness",
+    "A mirror's focal-plane diagram"
+   ],
    "answer": 0,
-   "why": "A light curve tracks brightness over time, so recurring transits appear as repeated dips."
+   "why": "A light curve tracks brightness over time, so recurring transits show up as repeated dips. One spectrum or one image is a single moment and cannot show a repeating change, and a focal-plane diagram describes the optics, not the star.",
+   "source": "Ch6.2 pt2 slides 11-13; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-5",
    "q": "A star's spectrum contains a recognizable pattern of absorption lines shifted from the laboratory pattern. Which combined inference is most justified?",
-   "options": ["Its chemical composition and motion can be investigated.", "Its physical diameter is measured directly from the line pattern.", "The star's image must have been recorded only in radio waves.", "The shift proves that Earth's atmosphere created the star."],
+   "options": [
+    "Its chemical composition and motion can be investigated.",
+    "Its physical diameter is measured directly from the line pattern.",
+    "The star's image must have been recorded only in radio waves.",
+    "The shift proves that Earth's atmosphere created the star."
+   ],
    "answer": 0,
-   "why": "Spectral line identities reveal composition, while their wavelength shifts can indicate relative motion."
+   "why": "Which lines appear tells you the elements present, and the shift of the lines (the Doppler effect) tells you about motion toward or away from us. A spectrum does not give a star's diameter directly, and the shift says nothing about radio waves or the atmosphere.",
+   "source": "Ch6.2 pt2 slides 8-10; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-6",
    "q": "An observatory has clear skies but severe city glow and turbulent air. Which site change would address both problems most directly?",
-   "options": ["Move to a dark, calm location, preferably at high elevation.", "Use a longer focal length at the same site.", "Replace the mirror with a larger screen.", "Observe through more atmosphere to average out distortions."],
+   "options": [
+    "Move to a dark, calm location, preferably at high elevation.",
+    "Use a longer focal length at the same site.",
+    "Replace the mirror with a larger screen.",
+    "Observe through more atmosphere to average out distortions."
+   ],
    "answer": 0,
-   "why": "A remote dark site reduces light pollution, and a high, calm site reduces atmospheric interference."
+   "why": "A dark site cuts light pollution, and a calm, high site means less turbulent air above the telescope. A longer focal length does not change either problem, and looking through more air makes both turbulence and sky glow worse.",
+   "source": "Ch6.3 slides 2-3, 6; Cosmic Perspective 6.3"
   },
   {
    "id": "tel-7",
    "q": "Adaptive optics sharpens a stellar image at a windy observatory. Which limitation remains even after the mirror is adjusted?",
-   "options": ["Clouds and light pollution are not removed by correcting turbulence.", "The technique changes a planet's orbital path.", "The atmosphere becomes transparent to every wavelength.", "The telescope no longer needs a detector."],
+   "options": [
+    "Clouds and light pollution are not removed by correcting turbulence.",
+    "The technique changes a planet's orbital path.",
+    "The atmosphere becomes transparent to every wavelength.",
+    "The telescope no longer needs a detector."
+   ],
    "answer": 0,
-   "why": "Adaptive optics corrects some wavefront distortion from turbulence but does not remove clouds, sky glow, or wavelength absorption."
+   "why": "Adaptive optics cancels part of the blurring from turbulent air. It cannot remove clouds, sky glow or atmospheric absorption, and the telescope still needs a detector to record the image.",
+   "source": "Ch6.3 slide 8; Cosmic Perspective 6.3"
   },
   {
    "id": "tel-8",
    "q": "A ground observatory is designed to study ultraviolet radiation, but no signal from the target reaches it. Which explanation and response best fit?",
-   "options": ["The atmosphere absorbs much ultraviolet; place the instrument above most of the atmosphere.", "Ultraviolet exists only at night; increase the exposure.", "Mirrors cannot reflect ultraviolet; use a larger dish on the ground.", "The target emits only visible light; measure a light curve."],
+   "options": [
+    "The atmosphere absorbs much ultraviolet; place the instrument above most of the atmosphere.",
+    "Ultraviolet exists only at night; increase the exposure.",
+    "Mirrors cannot reflect ultraviolet; use a larger dish on the ground.",
+    "The target emits only visible light; measure a light curve."
+   ],
    "answer": 0,
-   "why": "Earth's atmosphere blocks most ultraviolet radiation, so space-based observations are needed for many ultraviolet studies."
+   "why": "Earth's atmosphere absorbs most ultraviolet light, so it never reaches the ground and a space telescope is needed. A longer exposure cannot collect light that has been absorbed, ultraviolet near the visible range can be focused by mirrors, and a light curve does not change what wavelengths arrive.",
+   "source": "Ch6.4 slides 2, 5; Cosmic Perspective 6.4"
   },
   {
    "id": "tel-9",
    "q": "Several radio dishes are linked so their observations behave like a much wider instrument. Which capability is principally improved?",
-   "options": ["Angular resolution", "The total collecting area beyond the sum of the dishes", "Atmospheric transmission at X-ray wavelengths", "The temperature of the radio source"],
+   "options": [
+    "Angular resolution",
+    "The total collecting area beyond the sum of the dishes",
+    "Atmospheric transmission at X-ray wavelengths",
+    "The temperature of the radio source"
+   ],
    "answer": 0,
-   "why": "Interferometry can improve resolution to that of a much larger baseline; it does not make the dishes' combined collecting area larger."
+   "why": "Interferometry gives the angular resolution of a telescope as wide as the spread of the dishes. The collecting area is only the sum of the dishes, the atmosphere is unchanged, and the source's temperature is not affected by how we observe it.",
+   "source": "Ch6.4 slide 8; Cosmic Perspective 6.4"
   },
   {
    "id": "tel-10",
    "q": "Why does a neutrino detector monitor a very large volume of ice or water rather than relying on an ordinary optical telescope?",
-   "options": ["Neutrinos interact rarely, so a huge target volume increases the chance of detecting an interaction.", "Neutrinos are visible only when reflected from a mirror.", "Water forces all neutrinos to stop before reaching the detector.", "Optical telescopes cannot record any particles."],
+   "options": [
+    "Neutrinos interact rarely, so a huge target volume increases the chance of detecting an interaction.",
+    "Neutrinos are visible only when reflected from a mirror.",
+    "Water forces all neutrinos to stop before reaching the detector.",
+    "Optical telescopes cannot record any particles."
+   ],
    "answer": 0,
-   "why": "A neutrino usually passes through matter without interacting; large detectors search for the occasional detectable interaction."
+   "why": "A neutrino usually passes through matter without a trace. Only a huge amount of material gives a reasonable chance of catching an occasional interaction. Neutrinos are not light and do not reflect from mirrors, and water does not stop them.",
+   "source": "Cosmic Perspective 6.4 (p. 184)"
   },
   {
    "id": "tel-11",
-   "q": "A laser interferometer registers a passing signal that changes the relative lengths of its perpendicular arms by a tiny amount. What is the intended interpretation?",
-   "options": ["A gravitational wave has changed spacetime distances.", "Atmospheric absorption has changed a star's spectrum.", "A cosmic ray has become a visible-light image.", "The observatory has measured a planet's surface temperature."],
+   "q": "A laser interferometer registers a signal that changes the relative lengths of its perpendicular arms by a tiny amount. What is the intended interpretation?",
+   "options": [
+    "A gravitational wave has changed spacetime distances.",
+    "Atmospheric absorption has changed a star's spectrum.",
+    "A cosmic ray has become a visible-light image.",
+    "The observatory has measured a planet's surface temperature."
+   ],
    "answer": 0,
-   "why": "Gravitational-wave detectors use interferometry to sense tiny changes in distance as spacetime ripples pass."
+   "why": "A passing gravitational wave stretches and squeezes distances by a tiny amount, which laser interferometers such as LIGO can measure. The other options describe spectra, cosmic rays or temperature, none of which change the arm lengths.",
+   "source": "Cosmic Perspective 6.4 (pp. 184-185)"
   },
   {
    "id": "tel-12",
    "q": "A lens-based instrument produces slightly different focus positions for blue and red light. Which design change most directly avoids this particular image defect?",
-   "options": ["Use a reflecting telescope.", "Increase the camera's colour saturation.", "Add a radio receiver.", "Place the detector outside the focal plane."],
+   "options": [
+    "Use a reflecting telescope.",
+    "Increase the camera's colour saturation.",
+    "Add a radio receiver.",
+    "Place the detector outside the focal plane."
+   ],
    "answer": 0,
-   "why": "Refraction varies with wavelength, while a mirror focuses light by reflection and avoids this lens-related chromatic aberration."
+   "why": "This defect is chromatic aberration: refraction depends on wavelength, so a lens focuses colours at different places. A mirror reflects every colour at the same angle. Image colour settings, radio receivers and misplacing the detector do not fix it.",
+   "source": "Ch6.1 slide 8; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-13",
    "q": "Light rays from a distant point are reflected correctly by the primary mirror, but the recorded image is still blurred because the sensor is misplaced. What should be corrected?",
-   "options": ["Put the detector at the focal plane.", "Increase the target's apparent angular size.", "Use a second light curve.", "Move the telescope below the atmosphere."],
+   "options": [
+    "Put the detector at the focal plane.",
+    "Increase the target's apparent angular size.",
+    "Use a second light curve.",
+    "Move the telescope below the atmosphere."
+   ],
    "answer": 0,
-   "why": "The detector must occupy the plane where the optics bring the incoming light into focus."
+   "why": "The detector must sit where the optics bring the light into focus. The target's size, a light curve and the atmosphere do not matter when the sensor is simply in the wrong place.",
+   "source": "Ch6.1 slides 4-5; Cosmic Perspective 6.1"
   },
   {
    "id": "tel-14",
    "q": "A researcher wants both a sky image and a quantitative brightness comparison between two stars. Which statement about the measurements is most accurate?",
-   "options": ["Imaging records spatial information; photometry quantifies received light.", "Photometry reveals only the stars' chemical elements.", "An image cannot contain brightness information.", "A spectrum and a light curve are interchangeable."],
+   "options": [
+    "Imaging records spatial information; photometry quantifies received light.",
+    "Photometry reveals only the stars' chemical elements.",
+    "An image cannot contain brightness information.",
+    "A spectrum and a light curve are interchangeable."
+   ],
    "answer": 0,
-   "why": "Images show where light is recorded, while photometry measures the light received from an object."
+   "why": "An image shows where light arrives, and photometry measures how much of it. Chemical elements come from spectra, images do contain brightness, and a spectrum (intensity against wavelength) is not a light curve (intensity against time).",
+   "source": "Ch6.2 pt2 slides 2-5; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-15",
    "q": "A colourful image combines observations at wavelengths invisible to the human eye. Which interpretation is scientifically sound?",
-   "options": ["Colours may be assigned to show data from non-visible wavelengths.", "Every displayed colour must be directly visible to the eye in the original radiation.", "The image cannot represent real astronomical measurements.", "The detector must have changed the source's physical colour."],
+   "options": [
+    "Colours may be assigned to show data from non-visible wavelengths.",
+    "Every displayed colour must be directly visible to the eye in the original radiation.",
+    "The image cannot represent real astronomical measurements.",
+    "The detector must have changed the source's physical colour."
+   ],
    "answer": 0,
-   "why": "Astronomers often map non-visible wavelength data to displayed colours so different signals can be compared."
+   "why": "Invisible light has no natural colour, so astronomers assign colours to stand for wavelength, energy or intensity. The image is still real data. The detector does not change the source, and the colours are a code, not what an eye would see.",
+   "source": "Ch6.2 pt2 slide 4; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-16",
    "q": "A ground telescope detects visible light and radio waves but not most X-rays from a target. Which factor best explains this pattern?",
-   "options": ["Earth's atmosphere has different transmission windows at different wavelengths.", "The target emits X-rays only when observed from the ground.", "Visible and radio light do not interact with detectors.", "X-rays have no measurable energy."],
+   "options": [
+    "Earth's atmosphere has different transmission windows at different wavelengths.",
+    "The target emits X-rays only when observed from the ground.",
+    "Visible and radio light do not interact with detectors.",
+    "X-rays have no measurable energy."
+   ],
    "answer": 0,
-   "why": "The atmosphere transmits some wavelength ranges and absorbs much of others, including cosmic X-rays."
+   "why": "The atmosphere lets some wavelength ranges through (visible, radio) and absorbs others, including X-rays. The target does not depend on where we observe it, and X-rays carry a lot of energy.",
+   "source": "Ch6.4 slide 2; Cosmic Perspective 6.4"
   },
   {
    "id": "tel-17",
    "q": "An X-ray instrument uses nested mirrors at shallow angles. Why is this geometry useful?",
-   "options": ["X-rays can reflect at grazing incidence even though they penetrate ordinary mirrors.", "X-rays behave exactly like visible light in a flat mirror.", "Shallow angles turn X-rays into radio waves.", "The mirrors block all high-energy photons."],
+   "options": [
+    "X-rays can reflect at grazing incidence even though they penetrate ordinary mirrors.",
+    "X-rays behave exactly like visible light in a flat mirror.",
+    "Shallow angles turn X-rays into radio waves.",
+    "The mirrors block all high-energy photons."
+   ],
    "answer": 0,
-   "why": "Grazing-incidence mirrors redirect X-rays that would otherwise penetrate an ordinary mirror."
+   "why": "X-rays go into or through an ordinary mirror, like bullets hitting a metal sheet head-on. At a very shallow angle they graze the surface and are gradually deflected toward a focus. They are not changed into radio waves and the mirrors do not block them.",
+   "source": "Ch6.4 slide 6; Cosmic Perspective 6.4"
   },
   {
    "id": "tel-18",
    "q": "A radio array has excellent detail but only modest total photon collection. Which statement best explains how this is possible?",
-   "options": ["A long interferometer baseline can improve resolution without increasing total collecting area beyond the dishes.", "High resolution always proves that the array has a huge collecting area.", "Radio waves are unaffected by aperture size.", "Interferometry changes the wavelength of the source."],
+   "options": [
+    "A long interferometer baseline can improve resolution without increasing total collecting area beyond the dishes.",
+    "High resolution always proves that the array has a huge collecting area.",
+    "Radio waves are unaffected by aperture size.",
+    "Interferometry changes the wavelength of the source."
+   ],
    "answer": 0,
-   "why": "Interferometric baseline controls resolving detail, while total light collection is the sum of individual telescope areas."
+   "why": "The spacing of the dishes sets the resolving detail, while the light collected is just the sum of the individual dishes. Good resolution does not prove a huge collecting area, and observing method never changes the source's wavelength.",
+   "source": "Ch6.4 slide 8; Cosmic Perspective 6.4"
   },
   {
    "id": "tel-19",
    "q": "A neutrino from a stellar explosion crosses a planet without being absorbed. Which property explains why a detector must search for rare events?",
-   "options": ["Neutrinos interact very weakly with matter.", "Neutrinos are identical to photons.", "Neutrinos are blocked by visible-light filters.", "Neutrinos orbit the detector."],
+   "options": [
+    "Neutrinos interact very weakly with matter.",
+    "Neutrinos are identical to photons.",
+    "Neutrinos are blocked by visible-light filters.",
+    "Neutrinos orbit the detector."
+   ],
    "answer": 0,
-   "why": "Their weak interaction lets neutrinos travel through matter, but also makes them difficult to detect."
+   "why": "Neutrinos hardly interact with matter, so they travel through planets, but that also makes them very hard to catch. They are not photons, and they are not stopped by filters or bound to the detector.",
+   "source": "Cosmic Perspective 6.4 (p. 184)"
   },
   {
    "id": "tel-20",
    "q": "A high-energy charged particle arrives from a distant source after passing through galactic magnetic fields. Why may its arrival direction not point back to the source?",
-   "options": ["Magnetic fields can bend the particle's path.", "Its path is focused by a refracting telescope.", "The atmosphere turns it into a neutrino.", "It always follows Earth's orbital plane."],
+   "options": [
+    "Magnetic fields can bend the particle's path.",
+    "Its path is focused by a refracting telescope.",
+    "The atmosphere turns it into a neutrino.",
+    "It always follows Earth's orbital plane."
+   ],
    "answer": 0,
-   "why": "Cosmic rays are charged particles and can be deflected by magnetic fields during their journey."
+   "why": "Cosmic rays are charged particles, and magnetic fields bend their paths as they travel. Light is not bent this way. Telescopes and the atmosphere do not control the direction they came from.",
+   "source": "Cosmic Perspective 6.4 (p. 184)"
   },
   {
    "id": "tel-21",
    "q": "An event is observed in visible light and later by a gravitational-wave detector. Why is the combined observation valuable?",
-   "options": ["Different messengers provide complementary evidence about the same event.", "The gravitational-wave signal is just a coloured optical image.", "Only the visible-light observation can carry information.", "The observations must have come from unrelated sources."],
+   "options": [
+    "Different messengers provide complementary evidence about the same event.",
+    "The gravitational-wave signal is just a coloured optical image.",
+    "Only the visible-light observation can carry information.",
+    "The observations must have come from unrelated sources."
+   ],
    "answer": 0,
-   "why": "Light and gravitational waves carry different kinds of information and can jointly constrain an energetic event."
+   "why": "Light and gravitational waves carry different kinds of information, so together they constrain the event better than either alone. A gravitational wave is not light, and both signals carry information.",
+   "source": "Cosmic Perspective 6.4 (p. 184)"
   },
   {
    "id": "tel-22",
    "q": "A telescope is moved to orbit to study a wavelength strongly absorbed by the atmosphere. Which benefit is most directly expected?",
-   "options": ["More of that incoming radiation can reach the detector.", "The target's intrinsic luminosity increases.", "The orbiting telescope no longer needs calibration.", "Every wavelength becomes equally easy to observe."],
+   "options": [
+    "More of that incoming radiation can reach the detector.",
+    "The target's intrinsic luminosity increases.",
+    "The orbiting telescope no longer needs calibration.",
+    "Every wavelength becomes equally easy to observe."
+   ],
    "answer": 0,
-   "why": "An above-atmosphere observatory can collect wavelength ranges that ground observatories cannot effectively detect."
+   "why": "Above the atmosphere, wavelengths that the air absorbs can reach the telescope. The source itself is unchanged, calibration is still needed, and some wavelengths are still harder to observe than others.",
+   "source": "Ch6.3 slide 9; Cosmic Perspective 6.3"
   },
   {
    "id": "tel-23",
    "q": "A camera takes exposures through separate filters and combines them into a colour image. What must be considered when interpreting its colours?",
-   "options": ["The displayed colours may encode filter measurements rather than a single direct-eye view.", "Each pixel must have measured every wavelength simultaneously.", "The filters remove all information about brightness.", "The colours prove the source is inside Earth's atmosphere."],
+   "options": [
+    "The displayed colours may encode filter measurements rather than a single direct-eye view.",
+    "Each pixel must have measured every wavelength simultaneously.",
+    "The filters remove all information about brightness.",
+    "The colours prove the source is inside Earth's atmosphere."
+   ],
    "answer": 0,
-   "why": "Filtered exposures can be mapped to displayed colours, including colours not directly perceived by the eye."
+   "why": "Each exposure measures only one passband, and the combined colours come from mapping those measurements to displayed colours. A filter does not remove brightness information, and the colours say nothing about where the source is.",
+   "source": "Ch6.2 pt2 slides 2-4; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-24",
    "q": "Which observing plan would best distinguish a changing star's brightness from its chemical composition?",
-   "options": ["Use repeated brightness measurements for a light curve and a spectrograph for wavelength patterns.", "Use one uncalibrated image for both measurements.", "Use only an interferometer baseline measurement.", "Use a mirror test and assume the spectrum."],
+   "options": [
+    "Use repeated brightness measurements for a light curve and a spectrograph for wavelength patterns.",
+    "Use one uncalibrated image for both measurements.",
+    "Use only an interferometer baseline measurement.",
+    "Use a mirror test and assume the spectrum."
+   ],
    "answer": 0,
-   "why": "Time monitoring measures brightness changes; spectroscopy measures the distribution of light by wavelength."
+   "why": "Brightness change needs repeated measurements over time (a light curve), and composition needs the wavelength pattern (a spectrum). A single image cannot give either, and interferometry is about resolution.",
+   "source": "Ch6.2 pt2 slides 7-12; Cosmic Perspective 6.2"
   },
   {
    "id": "tel-25",
@@ -602,12 +2161,584 @@
     "Neither light gathering nor resolution depends on aperture."
    ],
    "answer": 1,
-   "why": "Light-gathering area scales with diameter squared, so doubling diameter collects four times as much light. At a fixed wavelength, angular resolution improves in proportion to aperture, allowing roughly half-sized details to be distinguished."
+   "why": "Light-gathering area scales with diameter squared, so doubling the diameter collects four times as much light. At a fixed wavelength the smallest resolvable angle is proportional to 1/D, so details about half as large can be distinguished. The other options mix up the square law with the simple one.",
+   "source": "Ch6.2 pt1 slides 2 and 5; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-26",
+   "q": "A faint galaxy needs a 16-hour exposure on a 3 m telescope to collect enough light for a good image. Using the same detector under the same conditions, about how long would a 12 m telescope need?",
+   "options": [
+    "4 hours",
+    "1 hour",
+    "8 hours",
+    "16 hours",
+    "64 hours"
+   ],
+   "answer": 1,
+   "why": "The diameter is 4 times larger, so the light-collecting area is 4² = 16 times larger and the same total light arrives in 1/16 of the time: 16 hours ÷ 16 = 1 hour. Four hours forgets the square, 16 hours assumes no gain, and 64 hours multiplies instead of dividing.",
+   "source": "Ch6.2 pt1 slide 2; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-27",
+   "q": "A telescope's diffraction-limited angular resolution is 0.10 arcsecond for light of wavelength 500 nm. Using the same telescope at 1000 nm, the best possible angular resolution is about",
+   "options": [
+    "0.05 arcsecond, twice as sharp",
+    "0.20 arcsecond, twice as coarse",
+    "0.40 arcsecond, four times as coarse",
+    "0.10 arcsecond, unchanged",
+    "0.025 arcsecond, four times as sharp"
+   ],
+   "answer": 1,
+   "why": "The smallest angle is proportional to wavelength divided by diameter. The diameter is the same and the wavelength doubles, so the angle doubles to 0.20 arcsecond and details must be twice as large to be seen. A shorter wavelength would be sharper, 0.40 would square the change, and 0.10 ignores wavelength.",
+   "source": "Ch6.2 pt1 slide 5; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-28",
+   "q": "A 2 m telescope has a certain diffraction-limited sharpness at 500 nm. A team plans an infrared telescope for 1500 nm light and wants the same diffraction-limited sharpness. What mirror diameter do they need?",
+   "options": [
+    "6 m",
+    "18 m",
+    "4 m",
+    "2 m",
+    "0.67 m"
+   ],
+   "answer": 0,
+   "why": "The smallest angle is proportional to λ/D. To keep the angle the same while the wavelength triples, the diameter must triple too: 3 × 2 m = 6 m. The square (18 m), simple addition (4 m), no change (2 m) and dividing (0.67 m) all misuse the proportion.",
+   "source": "Ch6.2 pt1 slide 5; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-29",
+   "q": "Two stars are 0.3 arcsecond apart in the sky. Which observation can show them as two separate points of light?",
+   "options": [
+    "A ground-based 10 m telescope in typical turbulent air, which blurs stars to about 0.7 arcsecond",
+    "A telescope with a resolution of 1 arcsecond used for a very long exposure",
+    "A telescope with a resolution of 0.5 arcsecond, magnifying the image 100 times",
+    "A space telescope with an angular resolution of 0.1 arcsecond",
+    "A telescope with an angular resolution of 0.4 arcsecond"
+   ],
+   "answer": 3,
+   "why": "The telescope's smallest resolvable angle must be smaller than the 0.3 arcsecond separation, and only 0.1 arcsecond qualifies. Turbulence (0.7) and 0.4 and 1 arcsecond are all coarser than the separation. A long exposure gathers more light but does not sharpen, and magnification only enlarges the blur.",
+   "source": "Ch6.2 pt1 slide 4; Ch6.3 slide 5; Cosmic Perspective 6.2-6.3"
+  },
+  {
+   "id": "tel-30",
+   "q": "A ground-based 8 m telescope images a double star whose stars are 0.3 arcsecond apart. Turbulence limits the image to about 0.7 arcsecond; with adaptive optics the telescope reaches close to its diffraction limit of about 0.05 arcsecond. What do the two images show?",
+   "options": [
+    "Two separate stars both times, but dimmer without adaptive optics",
+    "One blurred blob both times, but brighter with adaptive optics",
+    "Without adaptive optics one blurred blob; with it two separate stars",
+    "Two separate stars without adaptive optics and one blob with it",
+    "Nothing without adaptive optics and one blob with it"
+   ],
+   "answer": 2,
+   "why": "Without correction, turbulence spreads each star over about 0.7 arcsecond, bigger than the 0.3 arcsecond gap, so they merge into one blob. Adaptive optics cancels much of the blur, so the resolution is well below 0.3 arcsecond and two stars appear. It does not add photons, so the 'brighter' and 'dimmer' options are wrong.",
+   "source": "Ch6.3 slide 8; Cosmic Perspective 6.3 (Figure 6.22)"
+  },
+  {
+   "id": "tel-31",
+   "q": "A star's brightness is measured every few minutes for ten days. The light curve is flat at 100 percent, except that every 4 days the brightness drops sharply to 99 percent, stays there about 3 hours, and returns to 100 percent. What is the best interpretation?",
+   "options": [
+    "A planet crosses in front of the star every 4 days, blocking about 1 percent of its light",
+    "The star pulses, becoming 1 percent fainter every 4 days as it expands and contracts",
+    "A planet orbits the star every 3 hours",
+    "The star moves toward us every 4 days, shifting its spectral lines",
+    "Earth's atmosphere gets thicker every 4 days and dims the star"
+   ],
+   "answer": 0,
+   "why": "A flat curve with a repeating, sudden dip and return is the signature of a transit. The gap between dips (4 days) is the orbital period; the 3 hours is only how long the crossing takes. Pulsating stars change smoothly, spectral shifts are measured in spectra, not in a light curve, and atmospheric changes would not repeat so regularly.",
+   "source": "Ch6.2 pt2 slides 11-13; Cosmic Perspective 6.2"
+  },
+  {
+   "id": "tel-32",
+   "q": "Astronomers want to detect faint infrared light from some of the earliest galaxies. Which plan best deals with BOTH the absorbing atmosphere AND the infrared glow of warm objects?",
+   "options": [
+    "A 30 m visible-light telescope with adaptive optics on a high mountain",
+    "A telescope far from Earth in space, shielded from the Sun and kept very cold",
+    "A refracting telescope with a very large lens on a dry mountaintop",
+    "A telescope in a room-temperature dome on a mountaintop",
+    "A radio dish with a mesh surface in a desert"
+   ],
+   "answer": 1,
+   "why": "Most infrared is absorbed by gases in the air, so the telescope should be above it, and warm objects such as Earth and the telescope itself glow in infrared, so it must stay cold, as JWST does with its sunshield. A mountain still has some air, and a warm dome would add glow. Adaptive optics does not stop absorption, and a radio dish detects the wrong wavelengths.",
+   "source": "Ch6.4 slide 4; Cosmic Perspective 6.3-6.4"
+  },
+  {
+   "id": "tel-33",
+   "q": "Astronomers want to focus X-rays from gas falling toward a black hole. Which description matches a workable telescope?",
+   "options": [
+    "One large flat mirror hit head-on, on a very high mountain",
+    "A large mesh dish like a radio telescope, in a dry desert",
+    "Several nested mirror shells hit at a very shallow angle, in orbit above the atmosphere",
+    "A large glass lens in orbit, since lenses bend X-rays strongly",
+    "Many 8 m visible-light mirrors linked together on Maunakea"
+   ],
+   "answer": 2,
+   "why": "X-rays are blocked by the atmosphere, so the telescope must be in space, and X-rays go straight into an ordinary mirror, so grazing-incidence nested mirrors that deflect them gradually are used. A mesh dish suits long radio waves, glass lenses let X-rays pass straight through, and mountain telescopes cannot receive X-rays at all.",
+   "source": "Ch6.4 slides 5-6; Cosmic Perspective 6.4"
+  },
+  {
+   "id": "tel-34",
+   "q": "Two identical 10 m radio dishes are used together as an interferometer with 100 m between them, at one wavelength. Compared with a single 10 m dish, which statement is correct?",
+   "options": [
+    "The resolution is like a 20 m dish and the light collected is 4 times as much",
+    "The resolution is like a 100 m dish and the light collected is 100 times as much",
+    "The resolution is the same, but the light collected is 2 times as much",
+    "The resolution is like a 100 m dish, but the light collected is only 2 times as much",
+    "The resolution is like a 100 m dish, but the light collected is 10 times as much"
+   ],
+   "answer": 3,
+   "why": "Interferometry gives the angular resolution of a telescope as wide as the spread of the dishes (about 100 m). The light collected is only the sum of the areas, 2 times that of one dish. A 100 m dish would collect 100 times as much light, but the pair cannot. Adding the diameters (20 m) or scaling light linearly (10 times) are other common mistakes.",
+   "source": "Ch6.4 slide 8; Cosmic Perspective 6.4 (Figure 6.33)"
+  },
+  {
+   "id": "tel-35",
+   "q": "An 8 m ground-based telescope (no adaptive optics) and a 2.4 m space telescope both observe in visible light. Which statement compares them correctly?",
+   "options": [
+    "The space telescope collects about 11 times more light because no atmosphere is in the way, and it also shows finer detail",
+    "The ground telescope collects more light and also shows finer detail, because its mirror is bigger",
+    "The two collect about the same light, but the ground telescope is sharper because of its larger mirror",
+    "The space telescope collects more light because it is closer to the stars, but shows the same detail",
+    "The ground telescope collects about 11 times more light, but the space telescope shows finer detail"
+   ],
+   "answer": 4,
+   "why": "The light-collecting area goes as D², so (8/2.4)² is about 11 times more for the ground telescope. But turbulence blurs ground images to about 0.5 arcsecond, while the space telescope reaches about 0.05 arcsecond. Space is not meaningfully closer to the stars, and the air absorbs little visible light, so it does not give the space telescope more light.",
+   "source": "Ch6.2 pt1 slides 2, 5; Ch6.3 slides 5, 9; Cosmic Perspective 6.2-6.3"
+  },
+  {
+   "id": "tel-36",
+   "q": "Astronomers record two spectra of the same galaxy with the same telescope: spectrum A at low spectral resolution and spectrum B at high spectral resolution. Which statement is correct?",
+   "options": [
+    "Spectrum A shows more detail and needs a longer exposure",
+    "Spectrum B shows narrow lines that are merged together in A, but it needs a longer exposure",
+    "Spectrum B has better angular resolution",
+    "Spectrum B can only be recorded from space",
+    "Both show the same detail; B is just brighter"
+   ],
+   "answer": 1,
+   "why": "Higher spectral resolution separates close lines that merge at low resolution. But it spreads the light out more, so each wavelength gets less of it, and a longer exposure is needed. Spectral resolution is about lines in a spectrum, not about separating objects in the sky, and it does not require space.",
+   "source": "Cosmic Perspective 6.2 (p. 174, Figure 6.17)"
+  },
+  {
+   "id": "tel-37",
+   "q": "A university plans a large new infrared and visible-light telescope. Which site is best?",
+   "options": [
+    "A 500 m hill beside a big city so staff can commute",
+    "A calm, dry, high desert plateau far from city lights",
+    "A windy sea-level coast, because moving air averages out the blurring",
+    "A humid rainforest valley, because water vapour helps infrared light pass",
+    "A high mountain inside a large city, for the electricity supply"
+   ],
+   "answer": 1,
+   "why": "A good site is calm (less twinkling), dark (little light pollution), high (less air above) and dry (fewer clouds and less water vapour, which absorbs infrared). Wind adds turbulence rather than averaging it out, and city light and low humid air each cause their own problems.",
+   "source": "Ch6.3 slides 2, 6; Cosmic Perspective 6.3"
+  },
+  {
+   "id": "tel-38",
+   "q": "The tiny hole of a pinhole camera (no lens) is made 10 times wider. What happens to the image on the back wall?",
+   "options": [
+    "It becomes dimmer but sharper",
+    "It becomes brighter and just as sharp",
+    "It becomes dimmer and more blurred",
+    "It becomes brighter but more blurred",
+    "It is unchanged"
+   ],
+   "answer": 3,
+   "why": "A wider hole lets in more light, so the image is brighter. But each point of the object now sends a wider cone of rays through the hole, which lands as a bigger disc on the wall, so the discs overlap and the image blurs. A lens solves both problems by bending the cone back to a single point.",
+   "source": "Ch6.1 slides 3-4"
   }
  ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Telescope sizes",
+   "prompt": "Put these light collectors in order of the diameter of their main lens or mirror, from the smallest at the bottom to the largest at the top.",
+   "why": "Your eye's pupil is only a few millimetres wide. Hubble's mirror is 2.4 m, JWST's is 6.5 m, each Very Large Telescope unit is 8.2 m, each Keck telescope is 10 m, and the Extremely Large Telescope will be 39.3 m across. Light-collecting area grows as the square of these numbers.",
+   "topLabel": "Largest diameter",
+   "bottomLabel": "Smallest diameter",
+   "layers": [
+    {
+     "name": "Your eye's pupil",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Hubble Space Telescope",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "James Webb Space Telescope",
+     "color": "#2563eb"
+    },
+    {
+     "name": "A Very Large Telescope unit",
+     "color": "#15803d"
+    },
+    {
+     "name": "A Keck telescope",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Extremely Large Telescope",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Sharpness at different wavelengths",
+   "prompt": "The same size of mirror observes different kinds of light. Order them by the sharpest detail the mirror could resolve, with the coarsest detail at the bottom and the finest at the top.",
+   "why": "The smallest resolvable angle is proportional to wavelength divided by diameter. With the diameter fixed, the longest wavelength (radio) gives the coarsest detail and the shortest (ultraviolet) the finest, which is why a radio telescope must be so much bigger than a visible-light telescope to match it.",
+   "topLabel": "Finest detail (smallest angle)",
+   "bottomLabel": "Coarsest detail (largest angle)",
+   "layers": [
+    {
+     "name": "Radio waves",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Infrared",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Visible light",
+     "color": "#15803d"
+    },
+    {
+     "name": "Ultraviolet",
+     "color": "#4f46e5"
+    }
+   ]
+  },
+  {
+   "title": "Inside a spectrograph",
+   "prompt": "Put the parts of a spectrograph in the order the light meets them, first at the bottom and last at the top.",
+   "why": "Light from the telescope focus first passes a narrow slit so that only the target's light enters. A collimating mirror makes the rays parallel, a diffraction grating spreads them by wavelength, a camera mirror focuses the spread-out spectrum, and the detector records it.",
+   "topLabel": "Last stage",
+   "bottomLabel": "First stage",
+   "layers": [
+    {
+     "name": "Slit",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Collimating mirror",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Diffraction grating",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Camera mirror",
+     "color": "#15803d"
+    },
+    {
+     "name": "Detector",
+     "color": "#c2410c"
+    }
+   ]
+  },
+  {
+   "title": "Light path in a Cassegrain telescope",
+   "prompt": "Put the journey of starlight through a Cassegrain reflecting telescope in order, first at the bottom and last at the top.",
+   "why": "Starlight enters the open top of the tube and reaches the large primary mirror at the bottom. The primary reflects it up to the smaller secondary mirror, the secondary reflects it back down through the hole in the primary, and a detector or instrument at the focus records it.",
+   "topLabel": "Last step",
+   "bottomLabel": "First step",
+   "layers": [
+    {
+     "name": "Starlight enters the open tube",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Primary mirror reflects it upward",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Secondary mirror reflects it back down",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Light passes through the hole in the primary",
+     "color": "#15803d"
+    },
+    {
+     "name": "Detector at the focus records it",
+     "color": "#c2410c"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Ground or space?",
+   "prompt": "Sort each kind of light or telescope by whether it can work well from the ground or needs space (or a very high flight).",
+   "buckets": [
+    "Works from the ground",
+    "Needs space or a very high flight"
+   ],
+   "items": [
+    {
+     "text": "Radio waves",
+     "b": 0
+    },
+    {
+     "text": "Visible light",
+     "b": 0
+    },
+    {
+     "text": "A few narrow near-infrared bands at a high, dry site",
+     "b": 0
+    },
+    {
+     "text": "Keck telescope on Maunakea",
+     "b": 0
+    },
+    {
+     "text": "Very Large Array dishes in New Mexico",
+     "b": 0
+    },
+    {
+     "text": "Arecibo dish",
+     "b": 0
+    },
+    {
+     "text": "Most infrared light",
+     "b": 1
+    },
+    {
+     "text": "Ultraviolet light",
+     "b": 1
+    },
+    {
+     "text": "X-rays",
+     "b": 1
+    },
+    {
+     "text": "Gamma rays",
+     "b": 1
+    },
+    {
+     "text": "Chandra X-Ray Observatory",
+     "b": 1
+    },
+    {
+     "text": "Fermi Gamma-ray Observatory",
+     "b": 1
+    },
+    {
+     "text": "Spitzer Space Telescope",
+     "b": 1
+    },
+    {
+     "text": "SOFIA flying in a Boeing 747",
+     "b": 1
+    },
+    {
+     "text": "Hubble's ultraviolet pictures",
+     "b": 1
+    }
+   ],
+   "why": "Only visible light, radio waves and a few narrow infrared bands pass through the atmosphere well. Gamma rays, X-rays, ultraviolet and most infrared are absorbed, so they need space or an aircraft high above most of the air."
+  },
+  {
+   "title": "Which technique measures it?",
+   "prompt": "Sort each question by the main kind of observation that answers it.",
+   "buckets": [
+    "Imaging (photometry)",
+    "Spectroscopy",
+    "Time monitoring"
+   ],
+   "items": [
+    {
+     "text": "Brightness through a blue filter",
+     "b": 0
+    },
+    {
+     "text": "The shape of a spiral galaxy",
+     "b": 0
+    },
+    {
+     "text": "A star's colour from its B and V brightness",
+     "b": 0
+    },
+    {
+     "text": "Whether two stars in a cluster are separate points",
+     "b": 0
+    },
+    {
+     "text": "Which chemical elements a star contains",
+     "b": 1
+    },
+    {
+     "text": "The speed of a galaxy moving away (Doppler shift)",
+     "b": 1
+    },
+    {
+     "text": "A star's temperature from its spectrum",
+     "b": 1
+    },
+    {
+     "text": "The rotation rate of a star from broadened lines",
+     "b": 1
+    },
+    {
+     "text": "How a Cepheid variable star pulses",
+     "b": 2
+    },
+    {
+     "text": "Repeating dips as a planet transits",
+     "b": 2
+    },
+    {
+     "text": "A solar flare brightening and fading",
+     "b": 2
+    },
+    {
+     "text": "A star's movement across the sky over many years",
+     "b": 2
+    }
+   ],
+   "why": "An image records where light comes from and how bright it is in each filter. A spectrum shows intensity at each wavelength, so it reveals composition, temperature, speed and rotation. Time monitoring repeats measurements to see changes in brightness or position."
+  },
+  {
+   "title": "Reflector or refractor?",
+   "prompt": "Sort each description by the kind of telescope it fits.",
+   "buckets": [
+    "Refracting telescope",
+    "Reflecting telescope"
+   ],
+   "items": [
+    {
+     "text": "Focuses light with a lens",
+     "b": 0
+    },
+    {
+     "text": "Large main optic held only at its rim",
+     "b": 0
+    },
+    {
+     "text": "Can show coloured fringes (chromatic aberration)",
+     "b": 0
+    },
+    {
+     "text": "Yerkes 1 m telescope",
+     "b": 0
+    },
+    {
+     "text": "Galileo's first telescopes",
+     "b": 0
+    },
+    {
+     "text": "Needs glass that is flawless all the way through",
+     "b": 0
+    },
+    {
+     "text": "Tube becomes very long for a big telescope",
+     "b": 0
+    },
+    {
+     "text": "Focuses light with a curved mirror",
+     "b": 1
+    },
+    {
+     "text": "Main optic supported across its whole back",
+     "b": 1
+    },
+    {
+     "text": "Has no chromatic aberration",
+     "b": 1
+    },
+    {
+     "text": "Keck's 36 hexagonal segments",
+     "b": 1
+    },
+    {
+     "text": "Cassegrain and Newtonian foci",
+     "b": 1
+    },
+    {
+     "text": "Only the front surface must be shaped precisely",
+     "b": 1
+    },
+    {
+     "text": "James Webb Space Telescope",
+     "b": 1
+    }
+   ],
+   "why": "A refractor focuses with a lens, so the glass must be perfect throughout, can be held only at its edge, and splits colours. A reflector focuses with a mirror that is supported from behind, can be built in segments, and has no colour problem, which is why almost every large telescope is a reflector."
+  },
+  {
+   "title": "Light collection or resolution?",
+   "prompt": "Sort each statement by the property of a telescope it is about.",
+   "buckets": [
+    "Light-collecting area",
+    "Angular resolution"
+   ],
+   "items": [
+    {
+     "text": "Grows with the diameter squared",
+     "b": 0
+    },
+    {
+     "text": "Doubling the diameter gives 4 times as much",
+     "b": 0
+    },
+    {
+     "text": "Lets you see fainter galaxies",
+     "b": 0
+    },
+    {
+     "text": "A longer exposure helps make up for too little of it",
+     "b": 0
+    },
+    {
+     "text": "Does not depend on the wavelength",
+     "b": 0
+    },
+    {
+     "text": "For linked telescopes it is just the sum of the individual ones",
+     "b": 0
+    },
+    {
+     "text": "Depends on wavelength divided by diameter",
+     "b": 1
+    },
+    {
+     "text": "Doubling the diameter halves the smallest angle",
+     "b": 1
+    },
+    {
+     "text": "Lets you split a close double star",
+     "b": 1
+    },
+    {
+     "text": "Measured in arcseconds",
+     "b": 1
+    },
+    {
+     "text": "Changes when the wavelength changes",
+     "b": 1
+    },
+    {
+     "text": "Interferometry improves it",
+     "b": 1
+    },
+    {
+     "text": "Diffraction sets its limit",
+     "b": 1
+    }
+   ],
+   "why": "Light-collecting area is about how much light, which goes as D² and just adds up for linked telescopes. Angular resolution is about how fine the detail is, which goes as λ/D, is limited by diffraction and is what interferometry improves."
+  }
+ ],
+ "calc": [
+  "tel-area",
+  "tel-res"
+ ],
  "sourceNotes": [
-  "Primary textbook: The Cosmic Perspective, 10th ed., Chapter 6, pages 166-186; Mathematical Insights 6.1 and 6.2 are intentionally excluded.",
-  "Supplementary sources: ASTR 207 instructor materials, Ch6.1, Ch6.2 part 1, Ch6.2 part 2, Ch6.3 and Ch6.4 PDFs.",
-  "Course-focused explanations are paraphrased and newly written from the instructor materials and textbook."
+  "Primary text: The Cosmic Perspective, 10th ed., Chapter 6, pages 166-186. The Mathematical Insight boxes (6.1 angular separation formula, 6.2 numerical diffraction-limit formula) are intentionally excluded; only the proportionality from the slides is used.",
+  "Teacher slides: Ch6.1.pdf (14 slides), Ch6.2_pt1.pdf (10), Ch6.2_pt2.pdf (13), Ch6.3.pdf (10), Ch6.4.pdf (10). Figures are cropped from these slides; two figures (IceCube, LIGO) come from the textbook because the slides do not cover neutrinos, cosmic rays or gravitational waves.",
+  "Slide and textbook differences: Ch6.2 pt1 slide 3 says telescopes of 30+ m will be working in the 2030s, while the textbook gives 2027 for the Extremely Large Telescope. Ch6.4 slide 2 lists visible, radio and some infrared as passing through the atmosphere; the textbook adds the longest ultraviolet wavelengths. The filter photo on Ch6.2 pt2 slide 3 is labelled B U V I R but the passband graph on the same slide runs U B V R I.",
+  "Quiz questions tel-1 to tel-25 are kept from the earlier version (wording of the explanations improved); tel-26 to tel-38 are new questions written for this unit."
  ]
 }

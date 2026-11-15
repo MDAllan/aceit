@@ -4,57 +4,107 @@
  "chapter": "Ch 7",
  "icon": "🪐",
  "color": "#7c3aed",
- "slideFile": "The Cosmic Perspective, Chapter 7",
- "intro": "Compare the Sun, planets, and small bodies as parts of one system. Use their shared patterns, distinct planet families, and spacecraft observations to reason about how the system works.",
+ "slideFile": "Ch7.1.pdf; Ch7.2.pdf; Ch7.3.pdf",
+ "intro": "Learn the solar system as one family of worlds: the Sun that holds almost all the mass, the four rocky terrestrial planets and the four giant jovian planets, their moons and rings, dwarf planets, asteroids, comets, the Kuiper belt and the Oort cloud. Then see how the shared patterns of motion (and the exceptions) point to a common birth, and how flybys, orbiters, landers and sample-return missions have taught us all of this.",
  "learningObjectives": [
-   {
-     "id": "goal-01",
-     "text": "Interpret a map of the Solar System and identify major orbital patterns."
-   },
-   {
-     "id": "goal-02",
-     "text": "Compare terrestrial and jovian worlds by their defining properties."
-   },
-   {
-     "id": "goal-03",
-     "text": "Compare Mercury, Venus, Earth, and Mars by their atmospheres, surface conditions, and evidence of past activity."
-   },
-   {
-     "id": "goal-04",
-     "text": "Compare Jupiter and Saturn as gas giants with Uranus and Neptune as ice giants."
-   },
-   {
-     "id": "goal-05",
-     "text": "Distinguish asteroids, comets, and dwarf planets."
-   },
-   {
-     "id": "goal-06",
-     "text": "Use patterns among Solar System objects to infer clues about the system's history."
-   },
-   {
-     "id": "goal-07",
-     "text": "Describe how spacecraft investigate other worlds and compare mission types."
-   }
+  {
+   "id": "goal-01",
+   "text": "Place the Sun, the eight planets, the asteroid belt, the Kuiper belt and the Oort cloud on a map of the solar system, and explain why one picture cannot show true sizes and distances."
+  },
+  {
+   "id": "goal-02",
+   "text": "Compare terrestrial and jovian planets by size, density, composition, surface, moons and rings."
+  },
+  {
+   "id": "goal-03",
+   "text": "Compare Mercury, Venus, Earth and Mars by their atmospheres, surface conditions and evidence of past activity."
+  },
+  {
+   "id": "goal-04",
+   "text": "Compare Jupiter and Saturn (gas giants) with Uranus and Neptune (ice giants), including their rings."
+  },
+  {
+   "id": "goal-05",
+   "text": "Tell asteroids, comets and dwarf planets apart, and say where each is found."
+  },
+  {
+   "id": "goal-06",
+   "text": "Use the patterns of motion, and the exceptions to them, to reason about how the solar system formed."
+  },
+  {
+   "id": "goal-07",
+   "text": "Describe how flybys, orbiters, landers and sample-return missions work, and match each to a science goal."
+  },
+  {
+   "id": "goal-08",
+   "text": "Explain why the Sun holds almost all of the solar system's mass and where its energy is produced."
+  },
+  {
+   "id": "goal-09",
+   "text": "Describe the Galilean moons, Titan, Triton and Earth's Moon, and explain why our Moon is surprising."
+  },
+  {
+   "id": "goal-10",
+   "text": "State the three tests for a planet and use them to explain why Pluto is a dwarf planet."
+  }
  ],
  "sections": [
   {
    "id": "layout",
    "title": "A map of the solar system",
-   "slides": "Chapter 7, sections 7.1-7.2",
+   "slides": "Ch7.1: 1-3, 5-6",
    "steps": [
     {
-     "title": "Regions and scale",
+     "img": {
+      "src": "img/planetarysystem/pl_sun_planets_scale.webp",
+      "slide": "slide 2 (Ch7.1)",
+      "alt": "The Sun, a huge glowing ball on the right, with the eight planets and the dwarf planets Pluto and Eris drawn at the same relative scale so they look tiny beside it."
+     },
+     "title": "Eight planets, one huge Sun",
      "bullets": [
-      "The Sun dominates the system's mass and supplies most of its energy. The planets orbit at distances that grow dramatically from the inner rocky worlds to the outer giants.",
-      "The asteroid belt lies between Mars and Jupiter. Beyond Neptune, the Kuiper belt contains many icy bodies, including dwarf planets.",
-      "A diagram that enlarges planets for visibility cannot also show their actual distances to the same scale; apparent spacing in such a drawing is not a measurement."
+      "The solar system is the **Sun** plus everything its gravity holds: eight **major planets**, dwarf planets, moons, asteroids, comets and dust.",
+      "The eight planets travel on nearly circular orbits. **Dwarf planets** such as Pluto and Eris are smaller, and some of them have quite stretched-out (elliptical) orbits.",
+      "Drawn to one size scale, the planets are specks beside the Sun. Even Jupiter, the biggest planet, is only about 1/10 of the Sun's width."
      ]
     },
     {
-     "title": "The solar system includes more than planets",
+     "img": {
+      "src": "img/planetarysystem/pl_solar_system_regions.webp",
+      "slide": "slide 3 (Ch7.1)",
+      "alt": "Two maps side by side: on the left the inner solar system with the asteroid belt between Mars and Jupiter, and on the right the Kuiper belt around the planets' orbits and the vast spherical Oort cloud around everything."
+     },
+     "title": "Belts and clouds beyond the planets",
      "bullets": [
-      "The solar system includes the Sun and every body gravitationally bound to it: planets, dwarf planets, moons, asteroids, comets, and smaller debris.",
-      "A body's orbit and physical properties help astronomers classify it; being round or large alone does not make an object one of the eight major planets."
+      "The **asteroid belt** is a doughnut of rocky bodies between Mars and Jupiter, about 2 to 3.5 AU from the Sun.",
+      "The **Kuiper belt** is a wider doughnut of icy bodies beyond Neptune's orbit, about 30 to 50 AU out.",
+      "The **Oort cloud** is a huge, roughly spherical shell of icy bodies at the far edge of the solar system, from about 2,000 to 100,000 AU.",
+      "1 AU (astronomical unit) is the average Earth-Sun distance, about 150 million km."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_log_distance_scale.webp",
+      "slide": "slide 5 (Ch7.1)",
+      "alt": "A line running outward from the Sun on a logarithmic scale, marking the planets, the edge of the Sun's wind bubble, Voyager 1, the Oort cloud and the nearest stars, with distances in astronomical units."
+     },
+     "title": "Why distances need a log scale",
+     "bullets": [
+      "Neptune is 30 AU out, but the Oort cloud reaches about 100,000 AU. To fit both on one line, each tick mark is 10 times farther than the last. This is a **logarithmic scale**.",
+      "On such a map all eight planets crowd into the first part of the line, even though the gaps between them are huge in real life. Spacing on a log map is not a measurement of true distance.",
+      "Voyager 1, launched in 1977, has left the Sun's wind bubble (the heliosphere) and is in interstellar space. It is still nowhere near the Oort cloud: it needs roughly 300 years just to reach its inner edge."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_planets_montage.webp",
+      "slide": "slide 6 (Ch7.1)",
+      "alt": "A column of planet photographs at their relative sizes: Mercury, Venus, Earth with its Moon, Mars, Jupiter, Saturn, Uranus and Neptune."
+     },
+     "title": "Comparative planetology: learn by comparing",
+     "bullets": [
+      "**Comparative planetology** means understanding one world by comparing it with others, much like learning about a person by meeting their family and friends.",
+      "It asks: How are Earth and the other planets alike and different? What makes a planet habitable, and why did life not start on the others? Which processes run across the solar system, and how do they affect Earth? How did the solar system, and Earth, form?",
+      "The same method now helps us make sense of planetary systems around other stars."
      ]
     }
    ],
@@ -62,41 +112,153 @@
    "boxes": [
     {
      "type": "why",
-     "text": "Knowing where a body formed and where it orbits helps explain its composition, temperature, and interactions with the rest of the system."
+     "text": "Why does a to-scale map look so empty? Space is mostly empty. The planets are tiny compared with the gaps between them, so no single picture can show both true sizes and true distances."
     },
     {
      "type": "trick",
-     "text": "Move outward from the Sun: rocky planets, asteroid belt, giant planets, then distant icy populations."
+     "text": "Going outward from the Sun: rocky planets, asteroid belt, giant planets, Kuiper belt, Oort cloud. Rock near the Sun, ice far away."
     },
     {
      "type": "trap",
-     "text": "A not-to-scale solar-system picture is useful for identifying order and categories, but it cannot be used to compare both planet sizes and orbital distances."
+     "text": "A picture with enlarged planets and neat spacing is not to scale, so it cannot be used to compare both sizes and distances. 'Nearly circular orbits in nearly the same plane' describes the eight planets, not every dwarf planet: Eris, for example, has a stretched-out, tilted orbit (see the Eris picture in the dwarf planets part). Slide 4 gives the belts as 2 to 3.5 AU (asteroids) and 30 to 50 AU (Kuiper) and the Oort cloud as 2,000 to 100,000 AU."
     }
    ],
    "sourceNotes": [
-    "The Cosmic Perspective, 10th ed., Chapter 7, sections 7.1-7.2.",
-    "Explanations and the diagram are original course materials based on paraphrased concepts."
+    "Ch7.1 slides 2, 3, 5, 6 (slide 4 text for the distances)",
+    "Cosmic Perspective 7.1 (pp. 192-194, Figure 7.1; comparative planetology p. 193 and p. 207)",
+    "The 'about 300 years to reach the inner Oort cloud' figure for Voyager 1 is from NASA outreach material, not from the slides or the textbook: (outside source)."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_sun_planets_scale.webp",
+     "slide": "slide 2 (Ch7.1)",
+     "alt": "The Sun, a huge glowing ball on the right, with the eight planets and the dwarf planets Pluto and Eris drawn at the same relative scale so they look tiny beside it."
+    },
+    {
+     "src": "img/planetarysystem/pl_solar_system_regions.webp",
+     "slide": "slide 3 (Ch7.1)",
+     "alt": "Two maps side by side: on the left the inner solar system with the asteroid belt between Mars and Jupiter, and on the right the Kuiper belt around the planets' orbits and the vast spherical Oort cloud around everything."
+    },
+    {
+     "src": "img/planetarysystem/pl_log_distance_scale.webp",
+     "slide": "slide 5 (Ch7.1)",
+     "alt": "A line running outward from the Sun on a logarithmic scale, marking the planets, the edge of the Sun's wind bubble, Voyager 1, the Oort cloud and the nearest stars, with distances in astronomical units."
+    },
+    {
+     "src": "img/planetarysystem/pl_planets_montage.webp",
+     "slide": "slide 6 (Ch7.1)",
+     "alt": "A column of planet photographs at their relative sizes: Mercury, Venus, Earth with its Moon, Mars, Jupiter, Saturn, Uranus and Neptune."
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "title": "The Sun: nearly all of the mass",
+   "slides": "Ch7.1: 7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_sun_mass_budget.webp",
+      "slide": "slide 7 (Ch7.1)",
+      "alt": "A pie chart of the solar system's mass that is almost entirely the yellow Sun slice, with Jupiter and Saturn as thin slivers beside it."
+     },
+     "title": "The Sun is almost the whole solar system",
+     "bullets": [
+      "The Sun holds more than **99.8%** of the solar system's mass. Planets, moons, asteroids and comets together add up to only about 0.2%.",
+      "Jupiter has about 1/1000 of the Sun's mass, and it is roughly 2.5 times as massive as all the other planets together. So all the planets combined are still only about 1/1000 of the Sun's mass.",
+      "That is why the Sun's gravity rules the whole system: it sets the orbit of every planet."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_sun_photos.webp",
+      "slide": "slide 7 (Ch7.1)",
+      "alt": "A photograph of the whole Sun dotted with dark sunspots, next to a close-up of a huge streamer of hot gas leaping off the Sun with a tiny Earth added for size."
+     },
+     "title": "What the Sun is made of",
+     "bullets": [
+      "The Sun is a ball of hot, ionized gas: about 73% hydrogen and 25% helium by mass. Its visible surface is about 5500 °C (5800 K).",
+      "Its radius is 109 times Earth's and its mass is 333,000 times Earth's. It rotates about once every 27 Earth days.",
+      "**Sunspots** look dark only because they are cooler than the gas around them, and they can be big enough to swallow several Earths."
+     ]
+    },
+    {
+     "title": "Where the Sun's energy comes from",
+     "bullets": [
+      "The Sun is a **nuclear fusion** power plant. Fusion happens only in the **core**, where temperature and pressure are enormous. The visible surface (photosphere) and the thin layers above it only let the energy out.",
+      "Each second the Sun turns about 600 million tonnes of hydrogen into about 596 million tonnes of helium. The 'missing' 4 million tonnes or so becomes energy through E = mc^2.",
+      "The result is a **luminosity** of 3.8 x 10^26 W. Even losing over 4 million tonnes every second, the Sun has so much hydrogen that it has shone for almost 5 billion years and will shine about 5 billion more.",
+      "Sunlight sets the temperatures of the planets' surfaces and atmospheres. Planets and moons shine only by reflecting it."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does fusion happen only in the core? Fusing hydrogen nuclei needs extreme temperature and pressure. Both rise steadily with depth, and only the core is hot and dense enough."
+    },
+    {
+     "type": "trick",
+     "text": "Planets together = about 1/1000 of the Sun. Fusion = core only. The Sun is 99.8% of the mass, but it is not solid: it is gas all the way through."
+    },
+    {
+     "type": "trap",
+     "text": "'Where does nuclear fusion occur in the Sun?' The answer is the core, not the photosphere, chromosphere, corona or convection layer. 'If we combined all the planets, their mass would be about ___ the Sun's mass' is 1/1000 (not double, half, 1/10 or equal). Slide 7 gives 73% hydrogen and 25% helium; Cosmic Perspective 7.1 says 98% hydrogen and helium together. They agree."
+    }
+   ],
+   "sourceNotes": [
+    "Ch7.1 slide 7 (mass budget pie chart, composition, luminosity, 4 million tonnes per second)",
+    "Cosmic Perspective 7.1 (p. 196): 99.8% of the mass, 600 million tons of hydrogen into 596 million tons of helium each second, nearly 5 billion years of shining so far.",
+    "The layer names photosphere, chromosphere, corona and convection layer are Chapter 14 topics (outside the Ch7 slides); they are named only so that 'fusion is in the core' can be checked against them."
+   ],
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_sun_mass_budget.webp",
+     "slide": "slide 7 (Ch7.1)",
+     "alt": "A pie chart of the solar system's mass that is almost entirely the yellow Sun slice, with Jupiter and Saturn as thin slivers beside it."
+    },
+    {
+     "src": "img/planetarysystem/pl_sun_photos.webp",
+     "slide": "slide 7 (Ch7.1)",
+     "alt": "A photograph of the whole Sun dotted with dark sunspots, next to a close-up of a huge streamer of hot gas leaping off the Sun with a tiny Earth added for size."
+    }
+   ]
   },
   {
    "id": "planet-families",
    "title": "Terrestrial and jovian worlds",
-   "slides": "Chapter 7, sections 7.1-7.2",
+   "slides": "Ch7.2: 3",
    "steps": [
     {
-     "title": "Two useful comparisons",
+     "img": {
+      "src": "img/planetarysystem/pl_two_planet_types.webp",
+      "slide": "slide 3 (Ch7.2)",
+      "alt": "Two photo panels: Mercury, Venus, Earth and Mars on the left, and Saturn, Jupiter, Uranus and Neptune on the right, all labelled, with the right-hand group far larger."
+     },
+     "title": "Two families of planets",
      "bullets": [
-      "Mercury, Venus, Earth, and Mars are the terrestrial planets: relatively small, rocky, and dense, with solid surfaces.",
-      "Jupiter, Saturn, Uranus, and Neptune are the jovian planets: much larger, with thick envelopes rich in hydrogen compounds and extensive moon systems.",
-      "Jovian planets are not all identical. Jupiter and Saturn are gas giants, while Uranus and Neptune contain larger proportions of substances that astronomers classify as ices."
+      "The four **terrestrial planets** (Mercury, Venus, Earth, Mars) are small, rocky, dense and close to the Sun. 'Terrestrial' means Earth-like.",
+      "The four **jovian planets** (Jupiter, Saturn, Uranus, Neptune) are much larger, far from the Sun, and made mostly of hydrogen, helium and hydrogen compounds. 'Jovian' means Jupiter-like.",
+      "The Moon is rocky and shares Earth's orbit, so planetary scientists sometimes count it as a fifth terrestrial world. It is not a planet."
      ]
     },
     {
-     "title": "Compare properties, not just names",
+     "title": "Side-by-side properties",
      "bullets": [
-      "Planetary families differ in size, composition, average density, atmosphere, and moons. A single property does not explain every contrast.",
-      "Comparing planets with similar properties can reveal meaningful exceptions, such as a world with an unusually thick atmosphere or a strongly tilted rotation axis."
+      "Terrestrial: smaller size and mass, higher density, rock and metal, a solid surface, few or no moons, no rings, warmer surfaces.",
+      "Jovian: larger size and mass, lower density, mostly hydrogen and helium and hydrogen compounds, no solid surface, many moons, rings, cold cloud tops.",
+      "Density is the clearest split: Earth is 5.5 g/cm3 and Saturn is 0.7 g/cm3. A jovian planet is huge but light for its size.",
+      "Moons: Mercury 0, Venus 0, Earth 1, Mars 2 tiny ones. Each jovian planet has dozens, and Saturn has close to 300."
+     ]
+    },
+    {
+     "title": "Gas giants and ice giants",
+     "bullets": [
+      "Jupiter and Saturn are the **gas giants**: mostly hydrogen and helium. Uranus and Neptune are the **ice giants**: they also contain much more water, ammonia and methane, which are hydrogen compounds.",
+      "'Gas' and 'ice' are only labels. Deep inside, the pressure is so high that the material is no longer an ordinary gas, and the 'ices' of Uranus and Neptune are hot fluids, not frozen solids.",
+      "All four count as jovian: each is mostly hydrogen and hydrogen compounds, with no solid surface, rings and many moons.",
+      "Judge a planet by several properties together. Venus is almost Earth's size but has a hostile surface, and Uranus and Neptune differ from Jupiter and Saturn."
      ]
     }
    ],
@@ -104,42 +266,136 @@
    "boxes": [
     {
      "type": "why",
-     "text": "Comparative planetology uses similarities and differences to test how planets formed and how their environments changed."
+     "text": "Why are there two families? Near the young Sun it was hot, so only rock and metal could form solid grains. Farther out ices could freeze too, giving far more material to build big planets that could then hold on to hydrogen and helium. The next unit builds this story."
     },
     {
      "type": "trick",
-     "text": "Terrestrial means rocky inner planets; jovian means the larger outer planets and their distinct giant-planet properties."
+     "text": "Terrestrial = Tiny, Tough (solid) and Toasty. Jovian = Jumbo, no solid surface, with Jewellery (rings) and loads of moons."
     },
     {
      "type": "trap",
-     "text": "Do not infer that every jovian planet has the same composition or structure; Uranus and Neptune differ from Jupiter and Saturn."
+     "text": "'Which is NOT a characteristic of all the terrestrial planets?' The trap option is 'They have substantial atmospheres': Mercury has almost none and Mars has a thin one. 'Which is NOT a characteristic of the jovian planets?' The false option is 'higher average densities than the terrestrial planets': jovian planets are LESS dense. Rings belong to all four jovian planets. Table 7.2 in the textbook has the full side-by-side list."
     }
    ],
    "sourceNotes": [
-    "The Cosmic Perspective, 10th ed., Chapter 7, sections 7.1-7.2.",
-    "Explanations and the diagram are original course materials based on paraphrased concepts."
+    "Ch7.2 slide 3 (two planet types); slide 4 for the moons",
+    "Cosmic Perspective 7.2 (pp. 207-208, Table 7.2 and footnotes on 'gas giant' and 'ice giant')",
+    "The textbook calls all four jovian planets 'gas giants' loosely and notes in a footnote that 'ice giant' is used for Uranus and Neptune; the interiors are hot, not frozen."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_two_planet_types.webp",
+     "slide": "slide 3 (Ch7.2)",
+     "alt": "Two photo panels: Mercury, Venus, Earth and Mars on the left, and Saturn, Jupiter, Uranus and Neptune on the right, all labelled, with the right-hand group far larger."
+    }
+   ],
+   "table": {
+    "head": [
+     "Property",
+     "Terrestrial planets",
+     "Jovian planets"
+    ],
+    "rows": [
+     [
+      "Size and mass",
+      "Smaller",
+      "Larger"
+     ],
+     [
+      "Average density",
+      "Higher (3.9 to 5.5 g/cm3)",
+      "Lower (0.7 to 1.6 g/cm3)"
+     ],
+     [
+      "Made mostly of",
+      "Rock and metal",
+      "Hydrogen, helium and hydrogen compounds"
+     ],
+     [
+      "Surface",
+      "Solid",
+      "No solid surface"
+     ],
+     [
+      "Moons and rings",
+      "Few moons (0 to 2), no rings",
+      "Many moons and rings"
+     ],
+     [
+      "Distance from the Sun",
+      "Closer together and closer to the Sun, warmer",
+      "Farther apart and far from the Sun, cold cloud tops"
+     ],
+     [
+      "Members",
+      "Mercury, Venus, Earth, Mars",
+      "Jupiter, Saturn, Uranus, Neptune"
+     ]
+    ]
+   }
   },
   {
    "id": "terrestrial-worlds",
    "title": "The four terrestrial planets",
-   "slides": "Chapter 7, planetary profiles",
+   "slides": "Ch7.1: 8-11",
    "steps": [
     {
-     "title": "Mercury and Venus",
+     "img": {
+      "src": "img/planetarysystem/pl_mercury_profile.webp",
+      "slide": "slide 8 (Ch7.1)",
+      "alt": "Mercury shown as a grey cratered globe with a close-up of a crater field, a table of its size, day length and temperatures, and an inset of yellow patches of water ice near its north pole."
+     },
+     "title": "Mercury: the planet of extremes",
      "bullets": [
-      "Mercury has almost no substantial atmosphere, so its surface experiences large temperature contrasts and preserves abundant impact craters.",
-      "Venus is similar to Earth in size but has a dense carbon-dioxide atmosphere and an extreme greenhouse effect. Similar size does not imply similar surface conditions.",
-      "The slowly rotating or backward-rotating inner planets show that planetary spin directions are not all identical."
+      "Mercury is the smallest planet (0.38 Earth radii, 0.055 Earth masses) and the closest to the Sun. It has almost no atmosphere, so nothing spreads the heat around.",
+      "Surface temperatures swing from about 425 °C in daylight to about -170 °C at night: the biggest day-night difference of any planet.",
+      "The surface is cratered like the Moon, with long steep cliffs (scarps). Water ice survives in craters near the poles that never see sunlight.",
+      "Its density is high for such a small planet (5.4 g/cm3), which tells us it has a very large iron core.",
+      "One sunrise-to-sunrise day lasts 176 Earth days, twice its 88-day year, because Mercury spins exactly three times for every two orbits."
      ]
     },
     {
-     "title": "Earth and Mars",
+     "img": {
+      "src": "img/planetarysystem/pl_venus_profile.webp",
+      "slide": "slide 9 (Ch7.1)",
+      "alt": "Venus shown as a pale cloud-covered globe beside a radar-style view of its volcanic surface, a table of its size and temperature, and an inset of Venus shining as a bright morning star over the horizon."
+     },
+     "title": "Venus: Earth's size, a very different world",
      "bullets": [
-      "Earth's liquid-water surface, atmosphere, and active geology make it a distinctive habitable world, not a representative sample of every planet.",
-      "Mars is cold and dry at the surface today, but its channels, minerals, and other evidence indicate that liquid water flowed there in the past.",
-      "A planet's present conditions can differ greatly from its earlier history; surface features and rocks preserve clues to change."
+      "Venus is Earth's near twin in size and mass: 95% as wide and 81.5% as massive.",
+      "A thick carbon dioxide atmosphere, about 100 times the mass of Earth's, hides the surface. Cloud-penetrating radar shows volcanoes, mountains and craters underneath.",
+      "An extreme **greenhouse effect** keeps the whole surface at about 470 °C, day and night. Venus is hotter than Mercury even though it is farther from the Sun.",
+      "Venus rotates very slowly and **backward** compared with its orbit direction (once in 243 Earth days), so the Sun would rise in the west.",
+      "It shines as the bright 'Morning Star' (or evening star) near sunrise or sunset."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_earth_profile.webp",
+      "slide": "slide 10 (Ch7.1)",
+      "alt": "Earth shown as a blue globe with swirling clouds, a table of its size, day, year and temperature range, and a small picture of Earth beside the much smaller Moon at the correct relative sizes."
+     },
+     "title": "Earth: the only known living planet",
+     "bullets": [
+      "Earth is the **densest** planet in the solar system (5.5 g/cm3), the only world known to host life and the only one known to have liquid water on its surface.",
+      "Temperatures run from about -90 °C to 60 °C and average about 15 °C, thanks to a moderate greenhouse effect.",
+      "Its Moon is surprisingly large: about 27% of Earth's diameter. Mercury and Venus have no moons and Mars has two tiny ones.",
+      "Life has been present for about 85% of Earth's history, but our species has existed for only the last 0.007% of it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_mars_profile.webp",
+      "slide": "slide 11 (Ch7.1)",
+      "alt": "Mars shown as a rusty orange globe beside a picture of the huge volcano Olympus Mons, a table of its size and temperatures, and an elevation map of water-carved channels coloured by height."
+     },
+     "title": "Mars: a frozen desert with a wet past",
+     "bullets": [
+      "Mars is about half Earth's width and about 10% of its mass. Iron oxide (rust) dust makes the surface orange-red.",
+      "The air is very thin (far lower pressure than on top of Mount Everest), surface temperatures run from about -110 °C to 35 °C, and the polar caps hold frozen carbon dioxide and water.",
+      "Dried-up riverbeds, rock-strewn floodplains and minerals that form in water show that liquid water once flowed on Mars, and conditions may then have suited life. The big flows probably ended at least 3 billion years ago.",
+      "Mars has **Olympus Mons**, the largest volcano in the solar system, and a canyon that runs nearly one-fifth of the way around the planet (Valles Marineris). Its two small moons, Phobos and Deimos, may be captured asteroids.",
+      "You still could not walk on Mars without a spacesuit: the air pressure is far too low, there is almost no oxygen, it is bitterly cold, and no ozone layer blocks ultraviolet light."
      ]
     }
    ],
@@ -147,42 +403,152 @@
    "boxes": [
     {
      "type": "why",
-     "text": "The inner planets formed in the warmer part of the solar nebula, where rock and metal could condense but water ice could not remain stable as readily."
+     "text": "Why is Venus so hot when Earth is not? Venus's thick carbon dioxide blanket traps heat so well that night brings no relief. Earth has the same gas, but only enough for a moderate greenhouse effect. Comparing the two shows how much an atmosphere matters."
+    },
+    {
+     "type": "why",
+     "text": "Why does Mercury's density point to a big iron core? A small planet is squeezed only a little by its own gravity, so a density as high as 5.4 g/cm3 means it must be made of much denser material than Earth's average: lots of iron."
     },
     {
      "type": "trick",
-     "text": "Earth and Venus are similar in size, yet their surface environments are dramatically different."
+     "text": "Mercury = extremes (biggest day-night swing, no air). Venus = hottest average (greenhouse). Earth = densest, liquid water, life. Mars = once wet, now cold and thin."
     },
     {
      "type": "trap",
-     "text": "Evidence for ancient water on Mars does not mean liquid water is stable across most of its surface today."
+     "text": "'Which planet is most similar in size and mass to Earth?' Venus (not Mars or Mercury). 'Most extreme difference between day and night temperature?' Mercury, not Venus: Venus is equally hot everywhere. 'Which indicates that Mars could once have supported life?' Dried-up riverbeds, floodplains and water-formed minerals, not its volcanoes, polar caps, moons or the number of spacecraft sent there. 'Which world could you visit without a spacesuit?' None except Earth: Mercury, Venus, the Moon and Mars all need one."
     }
    ],
    "sourceNotes": [
-    "The Cosmic Perspective, 10th ed., Chapter 7, planetary profiles and sections 7.1-7.2.",
-    "Course-focused explanations are paraphrased and newly written."
+    "Ch7.1 slides 8, 9, 10, 11 (each slide's data table: length of day = sunrise to sunrise)",
+    "Cosmic Perspective 7.1 (pp. 197-200 and Table 7.1): Mercury rotation 58.6 days and orbit 87.9 days (3 rotations per 2 orbits), Venus rotation 243 days backward, densities 5.43, 5.24, 5.52 and 3.93 g/cm3.",
+    "Slide 9 gives Venus's 'length of day' as 117 Earth days; that is sunrise to sunrise. The rotation period itself is 243 Earth days (Table 7.1)."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_mercury_profile.webp",
+     "slide": "slide 8 (Ch7.1)",
+     "alt": "Mercury shown as a grey cratered globe with a close-up of a crater field, a table of its size, day length and temperatures, and an inset of yellow patches of water ice near its north pole."
+    },
+    {
+     "src": "img/planetarysystem/pl_venus_profile.webp",
+     "slide": "slide 9 (Ch7.1)",
+     "alt": "Venus shown as a pale cloud-covered globe beside a radar-style view of its volcanic surface, a table of its size and temperature, and an inset of Venus shining as a bright morning star over the horizon."
+    },
+    {
+     "src": "img/planetarysystem/pl_earth_profile.webp",
+     "slide": "slide 10 (Ch7.1)",
+     "alt": "Earth shown as a blue globe with swirling clouds, a table of its size, day, year and temperature range, and a small picture of Earth beside the much smaller Moon at the correct relative sizes."
+    },
+    {
+     "src": "img/planetarysystem/pl_mars_profile.webp",
+     "slide": "slide 11 (Ch7.1)",
+     "alt": "Mars shown as a rusty orange globe beside a picture of the huge volcano Olympus Mons, a table of its size and temperatures, and an elevation map of water-carved channels coloured by height."
+    }
+   ],
+   "table": {
+    "head": [
+     "Planet",
+     "Radius (Earth = 1)",
+     "Mass (Earth = 1)",
+     "Surface temperature",
+     "Atmosphere",
+     "Moons"
+    ],
+    "rows": [
+     [
+      "Mercury",
+      "0.38",
+      "0.055",
+      "-170 to 425 °C",
+      "Almost none",
+      "0"
+     ],
+     [
+      "Venus",
+      "0.95",
+      "0.82",
+      "About 470 °C everywhere",
+      "Very thick, carbon dioxide",
+      "0"
+     ],
+     [
+      "Earth",
+      "1.00",
+      "1.00",
+      "-90 to 60 °C",
+      "Moderate",
+      "1"
+     ],
+     [
+      "Mars",
+      "0.53",
+      "0.11",
+      "-110 to 35 °C",
+      "Very thin",
+      "2 (tiny)"
+     ]
+    ]
+   }
   },
   {
    "id": "giant-worlds",
    "title": "Jupiter, Saturn, Uranus, and Neptune",
-   "slides": "Chapter 7, planetary profiles",
+   "slides": "Ch7.1: 12, 14, 16-17",
    "steps": [
     {
-     "title": "Giant planets are systems of their own",
+     "img": {
+      "src": "img/planetarysystem/pl_jupiter_profile.webp",
+      "slide": "slide 12 (Ch7.1)",
+      "alt": "Jupiter shown as a banded orange and white globe with the huge Great Red Spot, a table of its size, day length and temperature, and a glowing infrared image of the planet."
+     },
+     "title": "Jupiter: the giant of giants",
      "bullets": [
-      "Jupiter and Saturn are massive hydrogen-rich gas giants with deep atmospheres, rings, and many moons.",
-      "Uranus and Neptune are also giant planets, but their composition includes a larger fraction of water, ammonia, and methane than Jupiter's and Saturn's.",
-      "A giant planet's moons can have active geology, subsurface oceans, atmospheres, or other environments unlike the planet itself."
+      "Jupiter is the largest planet in size and mass: 11 times Earth's radius, 318 Earth masses, nearly 2.5 times the mass of all the other planets combined, yet only about 1/1000 of the Sun's mass.",
+      "It is mostly hydrogen and helium, with thick cloud layers and storms (the Great Red Spot could swallow two or three Earths). There is no solid surface: a probe sinks until pressure crushes it.",
+      "Jupiter also spins fastest: a day lasts only 9 h 55 min. A year lasts 11.86 Earth years, and cloud tops are near -145 °C.",
+      "It has around 100 known moons (the count keeps rising), including the four big Galilean moons, and a thin, faint ring."
      ]
     },
     {
-     "title": "Distinctive rotations and rings",
+     "img": {
+      "src": "img/planetarysystem/pl_saturn_profile.webp",
+      "slide": "slide 14 (Ch7.1)",
+      "alt": "Saturn shown as a pale yellow globe with its broad rings, a table of its size, day length and temperature, and a hazy orange picture of its largest moon, Titan."
+     },
+     "title": "Saturn: the ringed, low-density planet",
      "bullets": [
-      "Saturn's rings are broad but extremely thin relative to their diameter, and are made of countless pieces of ice and rock.",
-      "Uranus rotates with an extreme axial tilt, making its seasonal illumination unusual.",
-      "The presence of rings or many moons is characteristic of the giant-planet systems, but those features do not mean the planets are solid all the way through."
+      "Saturn is the second-largest planet: 9.4 Earth radii and 95 Earth masses. Its average density, 0.7 g/cm3, is lower than water's (1.0).",
+      "Low gravity and density plus a fast spin (10 h 32 min a day) squish it: it is about 10% wider than it is tall.",
+      "It has the most spectacular ring system (though not the only one) and the most moons of any planet, close to 300, including the cloudy giant **Titan**.",
+      "Like Jupiter it is mostly hydrogen and helium, with no solid surface. A year lasts 29.45 Earth years."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_uranus_profile.webp",
+      "slide": "slide 16 (Ch7.1)",
+      "alt": "Uranus shown as a pale blue-green globe with thin rings circling it almost vertically, a table of its size and day length, and an infrared telescope image showing its bright rings."
+     },
+     "title": "Uranus: the planet on its side",
+     "bullets": [
+      "Uranus is an **ice giant**: hydrogen and helium plus water, ammonia and methane. Methane gives it a pale blue-green colour. It is 4 Earth radii wide and 14.5 Earth masses.",
+      "Its axis is tilted about 98 degrees (the same tilt is sometimes quoted as 82 degrees, measured from the other direction), so it rolls around the Sun on its side and spins backward compared with most planets.",
+      "That tilt gives the most extreme seasons of any planet: each pole gets about 42 years of continuous sunshine, then about 42 years of darkness.",
+      "It has the second-most visible rings after Saturn (dark and narrow) and at least 27 moons. Only Voyager 2 has visited it, in 1986."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_neptune_profile.webp",
+      "slide": "slide 17 (Ch7.1)",
+      "alt": "Neptune shown as a pale blue globe with faint cloud streaks, a table of its size and day length, and a deep blue processed image of the planet from Voyager 2."
+     },
+     "title": "Neptune: Uranus's blue twin",
+     "bullets": [
+      "Neptune is a physical and chemical twin of Uranus, except that its axis is not tipped on its side. It is slightly smaller (3.9 Earth radii) but slightly more massive (17.1 Earth masses) because it is denser (1.64 g/cm3).",
+      "It looks deep blue in the famous Voyager 2 picture, but that image was processed. In real colour Neptune is similar to Uranus.",
+      "It is the farthest planet, 30 AU from the Sun, with a year of 165 Earth years. Only Voyager 2 has visited it, in 1989.",
+      "Its large moon **Triton** orbits backward and is thought to be a captured Kuiper belt object."
      ]
     }
    ],
@@ -190,48 +556,475 @@
    "boxes": [
     {
      "type": "why",
-     "text": "A planet and its moons form a linked system: gravity, tidal heating, impacts, and sunlight can shape each moon differently."
+     "text": "Why does Uranus look blue-green? Methane gas in its atmosphere absorbs red light, so the light that comes back to us is blue-green."
     },
     {
      "type": "trick",
-     "text": "Jupiter and Saturn are gas giants; Uranus and Neptune are ice giants."
+     "text": "Gas giants = Jupiter and Saturn. Ice giants = Uranus and Neptune. By size: Jupiter > Saturn > Uranus > Neptune, but Neptune is slightly MORE massive than Uranus."
     },
     {
      "type": "trap",
-     "text": "A ring system is not a solid disk. It consists of many separate orbiting particles."
+     "text": "'The most massive planet?' Jupiter, not Saturn. 'Which planets have a ring system?' All four jovian planets, so the answer is 'all of the above', not just Saturn. 'Uranus's large axis tilt causes it to...' have extreme seasonal variations (not very short days, very hot, very cold, or one side always facing the Sun). Slide 12 lists about 115 moons for Jupiter and slide 14 about 300 for Saturn, while the textbook (2022 counts) gives 79 and 82; counts keep rising, so remember only that the jovian planets have many more moons than the terrestrial ones. Slide 16 quotes Uranus's tilt as 82.23 degrees and Table 7.1 as 97.9 degrees: the same tilt measured from opposite directions."
     }
    ],
    "sourceNotes": [
-    "The Cosmic Perspective, 10th ed., Chapter 7, planetary profiles and sections 7.1-7.2.",
-    "Course-focused explanations are paraphrased and newly written."
+    "Ch7.1 slides 12, 14, 16, 17 (data tables and bullets)",
+    "Cosmic Perspective 7.1 (pp. 201-204 and Table 7.1): densities 1.33, 0.70, 1.32, 1.64 g/cm3; Uranus 42-year seasons; Triton orbits backward.",
+    "Moon counts differ between the slides (Jupiter about 115, Saturn about 300) and the textbook's 2022 table (79, 82, 27, 14); the notes say 'around 100' and 'close to 300'."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_jupiter_profile.webp",
+     "slide": "slide 12 (Ch7.1)",
+     "alt": "Jupiter shown as a banded orange and white globe with the huge Great Red Spot, a table of its size, day length and temperature, and a glowing infrared image of the planet."
+    },
+    {
+     "src": "img/planetarysystem/pl_saturn_profile.webp",
+     "slide": "slide 14 (Ch7.1)",
+     "alt": "Saturn shown as a pale yellow globe with its broad rings, a table of its size, day length and temperature, and a hazy orange picture of its largest moon, Titan."
+    },
+    {
+     "src": "img/planetarysystem/pl_uranus_profile.webp",
+     "slide": "slide 16 (Ch7.1)",
+     "alt": "Uranus shown as a pale blue-green globe with thin rings circling it almost vertically, a table of its size and day length, and an infrared telescope image showing its bright rings."
+    },
+    {
+     "src": "img/planetarysystem/pl_neptune_profile.webp",
+     "slide": "slide 17 (Ch7.1)",
+     "alt": "Neptune shown as a pale blue globe with faint cloud streaks, a table of its size and day length, and a deep blue processed image of the planet from Voyager 2."
+    }
+   ],
+   "table": {
+    "head": [
+     "Planet",
+     "Type",
+     "Radius (Earth = 1)",
+     "Mass (Earth = 1)",
+     "Density (g/cm3)",
+     "Length of day",
+     "Rings",
+     "Moons"
+    ],
+    "rows": [
+     [
+      "Jupiter",
+      "Gas giant",
+      "11.2",
+      "318",
+      "1.33",
+      "9 h 55 min",
+      "Thin and faint",
+      "Around 100"
+     ],
+     [
+      "Saturn",
+      "Gas giant",
+      "9.4",
+      "95",
+      "0.70",
+      "10 h 32 min",
+      "Broad and bright",
+      "Close to 300"
+     ],
+     [
+      "Uranus",
+      "Ice giant",
+      "4.0",
+      "14.5",
+      "1.32",
+      "17 h 14 min",
+      "Dark and narrow",
+      "At least 27"
+     ],
+     [
+      "Neptune",
+      "Ice giant",
+      "3.9",
+      "17.1",
+      "1.64",
+      "16 h 6 min",
+      "Dark and faint",
+      "At least 14"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "moons",
+   "title": "Moons: worlds in their own right",
+   "slides": "Ch7.1: 13; Ch7.2: 1, 4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_moons_overview.webp",
+      "slide": "slide 4 (Ch7.2)",
+      "alt": "A black chart of selected moons grouped under their planets, with Earth drawn at the right for size; Jupiter and Saturn have the longest columns of moons."
+     },
+     "title": "Jovian planets have far more moons",
+     "bullets": [
+      "Mercury and Venus have no moons, Earth has one and Mars has two tiny ones. Jupiter, Saturn, Uranus and Neptune have dozens each, and Saturn has close to 300.",
+      "Most of those moons are small chunks, but a few are giant worlds with their own geology. Some are larger than Mercury.",
+      "Most large moons orbit in their planet's equatorial plane, in the same direction the planet spins. That is one of the patterns used to work out how the solar system formed."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_galilean_moons.webp",
+      "slide": "slide 13 (Ch7.1)",
+      "alt": "Four photographs of Jupiter's biggest moons side by side: yellow-orange Io, pale cracked Europa, grey and brown Ganymede and dark cratered Callisto."
+     },
+     "title": "Jupiter's four Galilean moons",
+     "bullets": [
+      "Galileo found Io, Europa, Ganymede and Callisto in 1610. In the picture they run left to right in order of distance from Jupiter.",
+      "**Io** is the most geologically active object in the solar system, with erupting volcanoes.",
+      "**Europa** has an icy surface and possibly a liquid water ocean hidden underneath.",
+      "**Ganymede** is the largest moon in the solar system, even larger than Mercury.",
+      "**Callisto** is a heavily cratered, geologically dead 'ice ball'."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_planets_and_moons.webp",
+      "slide": "slide 1 (Ch7.2)",
+      "alt": "A strip with the Sun at the right and the planets drawn to the same scale, with names of well-known moons listed under each planet: Moon, Phobos and Deimos, Io, Europa, Ganymede, Callisto, Titan, Enceladus, Triton and others."
+     },
+     "title": "Other notable moons",
+     "bullets": [
+      "**Titan** (Saturn) is the only moon with a thick atmosphere. Its surface is about -180 °C, with rivers and lakes of liquid methane and ethane. **Enceladus** (Saturn) sprays ice fountains from its southern hemisphere.",
+      "**Triton** (Neptune) is larger than Pluto and has nitrogen geysers. It is the only large moon that orbits backward, so it was probably captured.",
+      "**Charon** (Pluto) is about half of Pluto's width, so big that the pair is almost a double world.",
+      "**Phobos and Deimos** (Mars) are two tiny, lumpy moons that may be captured asteroids. Earth's own Moon is large for its planet (see the exceptions).",
+      "Rank by what a body orbits, not by size. Ganymede and Titan are both larger than Mercury, but they are moons because they circle a planet, not the Sun."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is Io volcanic when our Moon is not? Jupiter's gravity keeps squeezing and stretching Io as it moves along its orbit, which heats its inside enough to power volcanoes. A moon's geology depends on its own heating and history, not just on its size."
+    },
+    {
+     "type": "trick",
+     "text": "Galilean moons in order from Jupiter: Io, Europa, Ganymede, Callisto. 'I Eat Gummy Candy.' Io = volcanoes, Europa = ocean, Ganymede = biggest, Callisto = craters."
+    },
+    {
+     "type": "trap",
+     "text": "'Which planet is orbited by Io, Europa, Ganymede and Callisto?' Jupiter, not Saturn. Ganymede is the largest moon. Our Moon is not the largest (it is about fifth), and Titan, not any other moon, has the thick atmosphere. The tidal-heating explanation of Io is not on the slides; it is only needed for the reason, not for the exam fact that Io is the most volcanic world."
+    }
+   ],
+   "sourceNotes": [
+    "Ch7.1 slide 13 (Galilean moons); Ch7.2 slides 1 and 4 (planets and moons figures)",
+    "Cosmic Perspective 7.1 (pp. 201-205): Galilean moons, Titan and Enceladus, Triton larger than Pluto and orbiting backward, Phobos and Deimos possibly captured asteroids.",
+    "Galileo's discovery date (1610) and the tidal-heating reason for Io are standard textbook material from later chapters (Cosmic Perspective Chapter 9 and Chapter 11): (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_moons_overview.webp",
+     "slide": "slide 4 (Ch7.2)",
+     "alt": "A black chart of selected moons grouped under their planets, with Earth drawn at the right for size; Jupiter and Saturn have the longest columns of moons."
+    },
+    {
+     "src": "img/planetarysystem/pl_galilean_moons.webp",
+     "slide": "slide 13 (Ch7.1)",
+     "alt": "Four photographs of Jupiter's biggest moons side by side: yellow-orange Io, pale cracked Europa, grey and brown Ganymede and dark cratered Callisto."
+    },
+    {
+     "src": "img/planetarysystem/pl_planets_and_moons.webp",
+     "slide": "slide 1 (Ch7.2)",
+     "alt": "A strip with the Sun at the right and the planets drawn to the same scale, with names of well-known moons listed under each planet: Moon, Phobos and Deimos, Io, Europa, Ganymede, Callisto, Titan, Enceladus, Triton and others."
+    }
+   ],
+   "table": {
+    "head": [
+     "Moon",
+     "Planet",
+     "What to remember"
+    ],
+    "rows": [
+     [
+      "Io",
+      "Jupiter",
+      "Most volcanically active world in the solar system"
+     ],
+     [
+      "Europa",
+      "Jupiter",
+      "Icy crust that may hide a liquid water ocean"
+     ],
+     [
+      "Ganymede",
+      "Jupiter",
+      "Largest moon in the solar system, bigger than Mercury"
+     ],
+     [
+      "Callisto",
+      "Jupiter",
+      "Old, cratered, geologically dead"
+     ],
+     [
+      "Titan",
+      "Saturn",
+      "Only moon with a thick atmosphere; methane and ethane lakes"
+     ],
+     [
+      "Enceladus",
+      "Saturn",
+      "Ice fountains spray from its south pole region"
+     ],
+     [
+      "Triton",
+      "Neptune",
+      "Orbits backward, likely a captured Kuiper belt object"
+     ],
+     [
+      "The Moon",
+      "Earth",
+      "About 27% of Earth's diameter, unusually large for its planet"
+     ],
+     [
+      "Charon",
+      "Pluto",
+      "About half Pluto's width, so the pair is almost a double system"
+     ],
+     [
+      "Phobos and Deimos",
+      "Mars",
+      "Two tiny, lumpy moons, possibly captured asteroids"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "rings",
+   "title": "Rings of the giant planets",
+   "slides": "Ch7.1: 14-16",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_saturn_ring_particles.webp",
+      "slide": "slide 15 (Ch7.1)",
+      "alt": "An artist's painting of Saturn's rings up close, with countless chunks of blue-white ice of different sizes drifting in a thin sheet above the planet's golden clouds."
+     },
+     "title": "Rings are swarms of orbiting chunks",
+     "bullets": [
+      "Saturn's rings look like solid sheets from far away, but they are made of countless small chunks of ice and rock.",
+      "Each piece orbits Saturn like a tiny moon. The pieces range from dust grains to blocks as big as a city block.",
+      "A ring is not attached to the planet. It is a flat crowd of independent orbits."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_saturn_ring_structure.webp",
+      "slide": "slide 15 (Ch7.1)",
+      "alt": "A long strip view of Saturn's rings from the inner edge outward, showing many thin ring bands separated by dark gaps, with the Colombo Gap, the Maxwell Gap, the C ring and the B ring labelled."
+     },
+     "title": "Wide but unbelievably thin",
+     "bullets": [
+      "The ring system is enormously wide but extremely thin. To be as thin compared with its width, a sheet of paper would have to be about 2.8 km long.",
+      "The rings divide into many thin ringlets separated by dark gaps, such as the Colombo and Maxwell gaps. The C ring and the B ring are two of the main bands.",
+      "The thinness is why the rings seem to vanish when we see them edge-on from Earth."
+     ]
+    },
+    {
+     "title": "Every giant planet has rings",
+     "bullets": [
+      "Saturn's rings are the only ones that are easy to see, but Jupiter, Uranus and Neptune also have ring systems.",
+      "Jupiter's ring is thin and faint, Uranus's rings are dark and narrow (the second most visible after Saturn's), and Neptune's rings are dark too.",
+      "The terrestrial planets have no rings.",
+      "Voyager 2 helped find and study the rings by looking back at them with the Sun behind them. That view is possible only from beyond the planet."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do the rings look solid? From far away the countless pieces blend into a smooth sheet, just as a beach of fine sand looks like one surface from a plane."
+    },
+    {
+     "type": "trick",
+     "text": "A ring is a river of tiny moons. Rings = all four jovian planets. Saturn = the bright ones."
+    },
+    {
+     "type": "trap",
+     "text": "'Which of the following planets has a ring system? Jupiter, Saturn, Uranus, Neptune, or all of the above?' The answer is all of the above. A ring is never a solid disk, and 'jovian planet' does not mean 'solid all the way through'. The thinness comparison (a 2.8 km sheet of paper) is from slide 15."
+    }
+   ],
+   "sourceNotes": [
+    "Ch7.1 slide 15 (ring particles, thinness, ring structure figure); slide 16 for the Uranus rings",
+    "Cosmic Perspective 7.1 (pp. 201-204): all four giants have rings; particles from dust to city blocks; Voyager 2 backlit views."
+   ],
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_saturn_ring_particles.webp",
+     "slide": "slide 15 (Ch7.1)",
+     "alt": "An artist's painting of Saturn's rings up close, with countless chunks of blue-white ice of different sizes drifting in a thin sheet above the planet's golden clouds."
+    },
+    {
+     "src": "img/planetarysystem/pl_saturn_ring_structure.webp",
+     "slide": "slide 15 (Ch7.1)",
+     "alt": "A long strip view of Saturn's rings from the inner edge outward, showing many thin ring bands separated by dark gaps, with the Colombo Gap, the Maxwell Gap, the C ring and the B ring labelled."
+    }
+   ]
+  },
+  {
+   "id": "dwarf-planets",
+   "title": "Dwarf planets: Pluto, Eris and more",
+   "slides": "Ch7.1: 4, 18",
+   "steps": [
+    {
+     "title": "What makes a planet, and what makes a dwarf planet?",
+     "bullets": [
+      "In 2006 astronomers agreed on three tests. A **planet** (1) orbits the Sun, (2) is massive enough for its own gravity to pull it into a nearly round shape, and (3) has **cleared its orbital neighborhood** of other sizable bodies.",
+      "A **dwarf planet** passes tests 1 and 2 but fails test 3. It is also not a moon. There are eight planets.",
+      "For 75 years Pluto counted as the ninth planet. Then Eris was found in 2005, a little more massive than Pluto, and dozens of other objects turned out to be not much smaller. Counting them all would have made the planet list very long.",
+      "The deciding factor was Pluto's small size and mass. It is too small to dominate its orbital zone. Its great distance, its large moon Charon and its ice-and-rock make-up were not what decided it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_pluto_moons.webp",
+      "slide": "slide 18 (Ch7.1)",
+      "alt": "Pluto as seen by New Horizons, a pale tan and white globe, beside a telescope image labelling Pluto and its moons Charon, Nix, Hydra, P4 and P5."
+     },
+     "title": "Pluto and its big moon Charon",
+     "bullets": [
+      "Pluto is an icy, comet-like world, round but small: radius 1185 km (0.19 Earth radii), mass about 0.2% of Earth's, density 1.9 g/cm3, surface near -230 °C.",
+      "It orbits at 39.5 AU on average and takes 248 Earth years to go around the Sun. It lives in the **Kuiper belt**, not in the asteroid belt or the Oort cloud.",
+      "Pluto has five known moons. The largest, Charon, is about half of Pluto's width, so big that the two circle a point between them and always show each other the same face.",
+      "The New Horizons spacecraft flew past Pluto in 2015."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_eris_orbit.webp",
+      "slide": "slide 4 (Ch7.1)",
+      "alt": "A diagram of the planets' orbits with the very stretched-out, tilted orbit of Eris swinging far outside the orbits of Neptune and Pluto, and Eris marked near the bottom."
+     },
+     "title": "Eris, Ceres and other dwarf planets",
+     "bullets": [
+      "**Eris** is the most massive dwarf planet, yet it is still about 20 times less massive than Mercury. It is the most massive object in the Kuiper belt region, and its orbit is far more elongated and tilted than any planet's.",
+      "**Ceres** is the largest object in the asteroid belt and counts as a dwarf planet: round, but surrounded by thousands of other asteroids. The Dawn spacecraft orbited it from 2015 to 2018.",
+      "Other known dwarf planets include Haumea and Makemake, and astronomers expect many more in the distant outer solar system.",
+      "Dwarf planets are small: the whole group is a tiny part of the solar system's mass."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why does 'clearing the neighborhood' matter? A true planet's gravity dominates its orbital zone, pulling in or flinging away smaller bodies over time. Pluto shares its zone with many similar Kuiper belt objects, so it dominates nothing."
+    },
+    {
+     "type": "trick",
+     "text": "Planet = three yeses: orbits the Sun, is round, has cleared its orbit. Dwarf planet = two yeses and a NO on 'cleared its orbit'. Moon = orbits a planet instead."
+    },
+    {
+     "type": "trap",
+     "text": "'What was important in classifying Pluto as a dwarf planet?' Its small size and mass, not its distance, its moon Charon or its composition. 'In what region is Pluto found?' The Kuiper belt. 'Which dwarf planet is most massive?' Eris, not Pluto. Slide 18 says Charon is 'only slightly smaller than Pluto itself'; by width it is about half of Pluto, so treat it as 'unusually large for a moon'. The three planet tests are not written on the slides; they come from the 2006 International Astronomical Union definition."
+    }
+   ],
+   "sourceNotes": [
+    "Ch7.1 slides 18 and 4 (Eris is the most massive dwarf planet and the most massive object in the Kuiper belt; Eris orbit figure)",
+    "Cosmic Perspective 7.1 (pp. 205-206, Figure 7.11, Table 7.1): Pluto data, Eris discovered in 2005, Ceres, New Horizons 2015, Dawn 2015 to 2018.",
+    "The three-part definition of a planet is the 2006 International Astronomical Union resolution: (outside source). Charon is about 1212 km wide versus Pluto's 2377 km (checked against the textbook's Pluto radius of 1185 km)."
+   ],
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_pluto_moons.webp",
+     "slide": "slide 18 (Ch7.1)",
+     "alt": "Pluto as seen by New Horizons, a pale tan and white globe, beside a telescope image labelling Pluto and its moons Charon, Nix, Hydra, P4 and P5."
+    },
+    {
+     "src": "img/planetarysystem/pl_eris_orbit.webp",
+     "slide": "slide 4 (Ch7.1)",
+     "alt": "A diagram of the planets' orbits with the very stretched-out, tilted orbit of Eris swinging far outside the orbits of Neptune and Pluto, and Eris marked near the bottom."
+    }
+   ],
+   "table": {
+    "head": [
+     "Test",
+     "Major planet",
+     "Dwarf planet",
+     "Moon"
+    ],
+    "rows": [
+     [
+      "Orbits the Sun directly",
+      "Yes",
+      "Yes",
+      "No (orbits a planet or dwarf planet)"
+     ],
+     [
+      "Massive enough to be nearly round",
+      "Yes",
+      "Yes",
+      "The large ones are, many small ones are not"
+     ],
+     [
+      "Has cleared its orbital neighborhood",
+      "Yes",
+      "No",
+      "Not applicable"
+     ],
+     [
+      "Examples",
+      "Mercury to Neptune (eight)",
+      "Pluto, Eris, Ceres, Haumea, Makemake",
+      "Earth's Moon, Ganymede, Titan, Triton, Charon"
+     ]
+    ]
+   }
   },
   {
    "id": "small-bodies",
-   "title": "Asteroids, comets, and dwarf planets",
-   "slides": "Chapter 7, sections 7.1-7.2",
+   "title": "Asteroids, comets, and the distant icy realms",
+   "slides": "Ch7.1: 3-5; Ch7.2: 5",
    "steps": [
     {
-     "title": "Small bodies occupy distinct regions",
+     "img": {
+      "src": "img/planetarysystem/pl_four_asteroids.webp",
+      "slide": "slide 4 (Ch7.1)",
+      "alt": "Four grey rocky bodies in a row labelled Ceres 939 km, Vesta 525 km, Pallas 512 km and Hygiea 434 km, with Ceres the largest and roundest."
+     },
+     "title": "Asteroids: rocky and metallic leftovers",
      "bullets": [
-      "Asteroids are rocky or metallic bodies. Many orbit in the belt between Mars and Jupiter, though asteroid orbits occur elsewhere too.",
-      "Comets contain substantial ice mixed with dust and rock. When a comet approaches the Sun, heating releases gas and dust that form a coma and tails.",
-      "The Kuiper belt beyond Neptune contains icy bodies, including Pluto. The more distant Oort cloud is inferred to be a reservoir for many long-period comets."
+      "**Asteroids** are small rocky or metallic bodies. Most orbit in the **asteroid belt** between Mars and Jupiter, about 2 to 3.5 AU from the Sun, where there are likely about a million objects wider than 1 km.",
+      "The four largest are Ceres (939 km), Vesta (525 km), Pallas (512 km) and Hygiea (434 km). Ceres, the largest, is a dwarf planet. Most asteroids are far smaller and not round.",
+      "There are many asteroids, but the belt is mostly empty space. The bodies are separated by great distances, so it is not a crowded ring of planet-sized objects."
      ]
     },
     {
-     "title": "A coma and tail are temporary",
+     "title": "Comets: icy bodies from the cold outskirts",
      "bullets": [
-      "A comet's tail forms as solar heating releases material, while sunlight and the solar wind push that material away from the Sun.",
-      "A comet can travel through most of its orbit without a conspicuous tail. The bright display develops mainly near the Sun."
+      "**Comets** are small bodies made mostly of ices (water, ammonia, methane) mixed with dust and rock.",
+      "Most comets stay far away in the Kuiper belt or the Oort cloud and never come near the Sun. Only a rare few plunge into the inner solar system.",
+      "When a comet nears the Sun, heating makes gas and dust escape, forming a fuzzy **coma** around the nucleus and a **tail**. The tail points away from the Sun, pushed by sunlight and the solar wind, even while the comet is moving toward the Sun.",
+      "Far from the Sun a comet has no coma and no tail at all."
      ]
     },
     {
-     "title": "Planets and dwarf planets",
+     "img": {
+      "src": "img/planetarysystem/pl_small_body_swarms.webp",
+      "slide": "slide 5 (Ch7.2)",
+      "alt": "A top view of the outer solar system with the Sun in the middle and the positions of Jupiter, Saturn, Uranus and Neptune marked, surrounded by many coloured dots for small rocky and icy bodies gathered in rings and clumps."
+     },
+     "title": "Swarms are not random",
      "bullets": [
-      "Dwarf planets orbit the Sun and are massive enough to become nearly round, but they have not cleared their orbital neighborhoods of other sizable bodies.",
-      "Pluto's classification reflects a formal category based on orbital-neighborhood clearing, not a claim that Pluto is uninteresting or geologically inactive."
+      "Asteroids and comets are not scattered evenly. They gather in three distinct regions: the asteroid belt (rocky), the Kuiper belt (icy) and the Oort cloud (icy).",
+      "The **Kuiper belt** lies beyond Neptune, about 30 to 50 AU out, in a doughnut shape. It holds at least 100,000 icy bodies wider than 100 km and about 100 times the mass of the asteroid belt. Pluto and Eris are its largest known members.",
+      "The **Oort cloud** is a vast, roughly spherical shell from about 2,000 to 100,000 AU, with possibly a trillion or more comets and icy planetesimals. Its comets come from every direction, which is why it is a sphere and not a flat ring.",
+      "An Oort cloud comet is the farthest from the Sun of anything in this unit: asteroid belt (2 to 3.5 AU), Neptune (30 AU), Pluto (about 40 AU), Kuiper belt comet (30 to 50 AU), Oort cloud comet (thousands of AU)."
+     ]
+    },
+    {
+     "title": "Asteroid or comet? The difference that matters",
+     "bullets": [
+      "The major difference is composition: asteroids are rocky or metallic, comets are icy.",
+      "A tail is not the test. A comet shows a tail only near the Sun; farther out it is a dark, icy lump. Size is not the test either.",
+      "Location is a clue: asteroids mostly orbit between Mars and Jupiter, comets mostly live in the Kuiper belt and Oort cloud."
      ]
     }
    ],
@@ -239,49 +1032,108 @@
    "boxes": [
     {
      "type": "why",
-     "text": "The distribution of icy and rocky small bodies preserves clues about the temperatures and mixing of material in the early solar system."
+     "text": "Why are asteroids rocky and comets icy? Near the young Sun only rock and metal could stay solid, while farther out it was cold enough for ice to freeze too. Where a body formed, and still lives, decides what it is made of."
     },
     {
      "type": "trick",
-     "text": "A comet's tail points generally away from the Sun, not necessarily behind the comet along its direction of travel."
+     "text": "Asteroids: rock, between Mars and Jupiter. Comets: ice, Kuiper belt and Oort cloud. A comet's tail always points AWAY from the Sun."
     },
     {
      "type": "trap",
-     "text": "The asteroid belt is not a crowded ring of planet-sized objects; its members are separated by large distances."
+     "text": "'Asteroids never have tails and comets always have tails' and 'asteroids are smaller than comets' are wrong options: the real difference is rocky versus icy. The Oort cloud is not a cloud of gas, not a belt in the planets' plane, and not between Mars and Jupiter; it is a roughly spherical region beyond Pluto's orbit that may hold a trillion comets. A comet in the Oort cloud is farther from the Sun than Neptune, Pluto or an asteroid-belt asteroid. Slide 5 says 'trillions'; the textbook says 'a trillion'."
     }
    ],
    "sourceNotes": [
-    "The Cosmic Perspective, 10th ed., Chapter 7, sections 7.1-7.2.",
-    "Course-focused explanations are paraphrased and newly written."
+    "Ch7.1 slides 3, 4, 5 (belts, distances, four largest asteroids); Ch7.2 slide 5 (swarms figure)",
+    "Cosmic Perspective 7.2 (p. 208): asteroids rocky; comets ices plus rock; Kuiper belt at least 100,000 icy objects over 100 km; Oort cloud may hold a trillion comets and is roughly spherical because the orbits are randomly inclined.",
+    "The statement that a tail forms only near the Sun and points away from it is textbook 7.2 (Figure 7.13) and the existing course notes; Chapter 6 or later notes describe the solar wind."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_four_asteroids.webp",
+     "slide": "slide 4 (Ch7.1)",
+     "alt": "Four grey rocky bodies in a row labelled Ceres 939 km, Vesta 525 km, Pallas 512 km and Hygiea 434 km, with Ceres the largest and roundest."
+    },
+    {
+     "src": "img/planetarysystem/pl_small_body_swarms.webp",
+     "slide": "slide 5 (Ch7.2)",
+     "alt": "A top view of the outer solar system with the Sun in the middle and the positions of Jupiter, Saturn, Uranus and Neptune marked, surrounded by many coloured dots for small rocky and icy bodies gathered in rings and clumps."
+    }
+   ],
+   "table": {
+    "head": [
+     "Population",
+     "Where",
+     "Distance from the Sun",
+     "Made of",
+     "Remember"
+    ],
+    "rows": [
+     [
+      "Asteroid belt",
+      "Between Mars and Jupiter",
+      "2 to 3.5 AU",
+      "Rock and metal",
+      "About a million bodies wider than 1 km; Ceres is the largest"
+     ],
+     [
+      "Kuiper belt",
+      "Beyond Neptune, a doughnut",
+      "30 to 50 AU",
+      "Ice and rock, comet-like",
+      "About 100 times the asteroid belt's mass; Pluto and Eris live here"
+     ],
+     [
+      "Oort cloud",
+      "A huge sphere around everything",
+      "2,000 to 100,000 AU",
+      "Icy comets",
+      "Possibly a trillion or more comets; the farthest region"
+     ]
+    ]
+   }
   },
   {
    "id": "formation-patterns",
    "title": "Patterns that reveal the system's history",
-   "slides": "Chapter 7, section 7.2",
+   "slides": "Ch7.2: 2-5",
    "steps": [
     {
-     "title": "A shared direction and plane",
+     "img": {
+      "src": "img/planetarysystem/pl_orbit_direction.webp",
+      "slide": "slide 2 (Ch7.2)",
+      "alt": "A top view of the solar system: a yellow Sun in the middle and a red planet on a circular orbit, with curved arrows showing that the orbit and the planet's own rotation go the same way."
+     },
+     "title": "Pattern 1: orderly motion",
      "bullets": [
-      "Most planets orbit the Sun in the same direction and in nearly the same plane. Most also rotate in the same general direction as their orbits.",
-      "These coordinated motions are evidence that the solar system formed from a rotating, flattened cloud rather than from unrelated objects captured at random.",
-      "Exceptions such as unusual rotation directions and highly tilted axes are important evidence, not reasons to discard the overall pattern."
+      "All planets orbit the Sun in the **same direction** (counterclockwise seen from above Earth's north pole), on nearly circular orbits in nearly the **same flat plane**.",
+      "Most planets also rotate in that same direction, with fairly small axis tilts. The Sun's own rotation goes the same way.",
+      "Most large moons orbit in their planet's equatorial plane, in the same direction that the planet rotates."
      ]
     },
     {
-     "title": "The nebular hypothesis",
+     "title": "Patterns 2 and 3: two kinds of planets, and swarms of small bodies",
      "bullets": [
-      "The nebular hypothesis describes the solar system forming as gravity collapsed a cloud of gas and dust, producing a young Sun surrounded by a rotating disk.",
-      "Material in the disk collided and accumulated into planetesimals, which grew into planets and smaller bodies.",
-      "The temperature gradient in the disk helps explain why rocky material dominated near the Sun while ices could also accumulate farther out."
+      "Small, rocky, dense planets sit close to the Sun and big, hydrogen-rich planets sit farther out. The change is sharp, not gradual.",
+      "Asteroids and comets are not scattered at random. They are concentrated in the asteroid belt, the Kuiper belt and the Oort cloud.",
+      "A good explanation of the solar system must account for both facts: why rock is inside and gas giants are outside, and why small bodies gather in these regions."
      ]
     },
     {
-     "title": "Test a model with multiple observations",
+     "title": "What the patterns say: the nebular hypothesis",
      "bullets": [
-      "A successful formation model must explain common orbital patterns, the differences between inner and outer planets, and the existence of smaller-body reservoirs.",
-      "A model should also account for exceptions and make predictions that can be compared with observations of other planetary systems."
+      "The **nebular hypothesis** says the solar system formed from a cloud of gas and dust that collapsed under gravity. As it shrank it spun faster and flattened into a rotating **disk**, with the young Sun at the centre.",
+      "A spinning flat disk gives the shared plane and direction of Pattern 1. Material in the disk collided and clumped into **planetesimals**, which grew into planets and smaller bodies.",
+      "The disk was hot near the Sun and cold far away, so rock and metal formed close in while ices could also form farther out. That fits Pattern 2 and explains why comets are icy.",
+      "Astronomers can test this by looking at young stars: telescopes show flattened disks of gas and dust, and planetary systems apparently in the process of forming, in many clouds, including the Orion Nebula."
+     ]
+    },
+    {
+     "title": "Test a model with many observations",
+     "bullets": [
+      "A successful model has to explain the shared orbital pattern, the difference between inner and outer planets, and the small-body reservoirs. One similarity alone is not enough.",
+      "It must also leave room for the exceptions (next section) and make predictions that we can check against other planetary systems.",
+      "Observation first: spot the pattern. Explanation next: decide which formation process could produce it."
      ]
     }
    ],
@@ -289,42 +1141,184 @@
    "boxes": [
     {
      "type": "why",
-     "text": "A rotating disk naturally produces a flattened system with many bodies orbiting in a shared direction."
+     "text": "Why does a rotating disk give one shared direction and plane? When a cloud collapses, its spin keeps going the same way. A spinning cloud flattens into a disk, and everything that forms inside it circles in the direction of the spin, in the plane of the disk."
     },
     {
      "type": "trick",
-     "text": "Observation first: identify a pattern. Explanation next: decide what formation process could produce it."
+     "text": "Same direction, same plane, same spin: if all the orbits match, think 'born in one rotating disk'."
     },
     {
      "type": "trap",
-     "text": "The nebular hypothesis is not supported by one similarity alone; it must explain many independent patterns and survive tests."
+     "text": "'Which is NOT a pattern of motion in the solar system?' The false statement is 'The planets orbit the Sun in a direction opposite to the Sun's rotation': they orbit the SAME way the Sun rotates. Also true: most planets rotate the way they orbit, most orbits lie in the same plane, and most large moons orbit in their planet's spin direction. 'Have astronomers seen clouds that look like planetary systems forming?' Yes: many, including the Orion Nebula. The detailed formation story belongs to the next unit."
     }
    ],
    "sourceNotes": [
-    "The Cosmic Perspective, 10th ed., Chapter 7, section 7.2.",
-    "Course-focused explanations are paraphrased and newly written."
+    "Ch7.2 slides 2, 3, 5 (motion, two planet types, swarms)",
+    "Cosmic Perspective 7.2 (pp. 207-208): the four features, the motions list, planets orbiting counterclockwise seen from above Earth's north pole.",
+    "Nebular hypothesis, planetesimals and the temperature gradient are Cosmic Perspective Chapter 8 material (kept from the earlier version of these notes); disks and the Orion Nebula as direct evidence also come from Chapter 8: (outside the Ch7 slides)."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_orbit_direction.webp",
+     "slide": "slide 2 (Ch7.2)",
+     "alt": "A top view of the solar system: a yellow Sun in the middle and a red planet on a circular orbit, with curved arrows showing that the orbit and the planet's own rotation go the same way."
+    }
+   ],
+   "table": {
+    "head": [
+     "Pattern",
+     "What we observe",
+     "Idea that explains it"
+    ],
+    "rows": [
+     [
+      "Orderly motion",
+      "Same orbital direction, nearly the same plane, most spins match",
+      "A collapsing, spinning cloud flattened into a disk"
+     ],
+     [
+      "Two kinds of planets",
+      "Rocky and dense inside, hydrogen-rich giants outside",
+      "The disk was hot near the Sun and cold far away"
+     ],
+     [
+      "Swarms of small bodies",
+      "Asteroid belt, Kuiper belt, Oort cloud",
+      "Leftover planetesimals from different parts of the disk"
+     ],
+     [
+      "Exceptions",
+      "Tilted Uranus, backward Venus, large Moon, backward Triton",
+      "Special events after formation, such as collisions and captures"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "exceptions",
+   "title": "Exceptions to the patterns",
+   "slides": "Ch7.2: 6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_exception_uranus.webp",
+      "slide": "slide 6 (Ch7.2)",
+      "alt": "Uranus as a pale blue-green disk with thin rings circling it almost vertically, so the planet seems to lie on its side."
+     },
+     "title": "Uranus is tipped on its side",
+     "bullets": [
+      "Most planets spin with their axes fairly upright (Earth's tilt is 23.5 degrees). Uranus's axis is tilted about 98 degrees, so it rotates on its side.",
+      "Its rings and major moons share the sideways tilt. A huge collision while it was forming may explain it.",
+      "The tilt gives Uranus the most extreme seasons of any planet: each pole has about 42 years of sunlight and then about 42 years of night."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_exception_venus.webp",
+      "slide": "slide 6 (Ch7.2)",
+      "alt": "Venus as a yellow-brown globe covered with mottled surface markings in a false-colour radar-style view."
+     },
+     "title": "Venus and Uranus rotate backward",
+     "bullets": [
+      "Most planets rotate in the same direction in which they orbit. Venus rotates the opposite way (retrograde), very slowly: one turn takes 243 Earth days, and the Sun rises in the west.",
+      "Venus still orbits the Sun in the same direction as every other planet, and in the same plane. Only its spin is backward, and it is slow, not fast.",
+      "A tilt above 90 degrees means Uranus also spins backward compared with most planets."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_exception_moon.webp",
+      "slide": "slide 6 (Ch7.2)",
+      "alt": "Earth, a large blue and white globe, beside the much smaller grey Moon drawn at the correct relative sizes."
+     },
+     "title": "Earth's Moon is surprisingly large",
+     "bullets": [
+      "The Moon is about 27% of Earth's diameter (a little over a quarter) and about 1/80 of its mass. Almost every other moon is a much smaller fraction of its planet.",
+      "It is not the largest moon in the solar system (Ganymede is bigger than Mercury), but it is the one that is unusually large for its planet.",
+      "The other terrestrial planets have no moon (Mercury, Venus) or just two tiny ones (Mars). The leading idea is that the Moon formed from a giant impact early in Earth's history."
+     ]
+    },
+    {
+     "title": "Other oddities, and why exceptions are clues",
+     "bullets": [
+      "Triton is the only large moon that orbits its planet backward (opposite to Neptune's rotation), which points to a body that formed elsewhere and was captured.",
+      "Many small moons have unusual, tilted or backward orbits.",
+      "An exception is not a failure of the pattern. A good theory must explain the general rule and also leave room for special events such as collisions and captures."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why do exceptions matter? The rules suggest the planets formed together in one disk, so a body that breaks a rule probably had a special history: a collision (Uranus's tilt, the Moon) or a capture (Triton). Exceptions help us decide which special events happened."
+    },
+    {
+     "type": "trick",
+     "text": "Three planetary exceptions: Uranus = tilted onto its side, Venus = backward slow spin, Earth = oversize Moon."
+    },
+    {
+     "type": "trap",
+     "text": "'What is unusual about Venus?' It ROTATES in the opposite direction to its orbit. It does not orbit backward, orbit in a different plane, orbit too fast or rotate fast; it spins very slowly. 'What is surprising about Earth's Moon?' Its size relative to its planet, not its craters, its distance or its lack of atmosphere. Do not mix up Uranus's tilted AXIS with a tilted ORBIT: its orbit is in the usual plane."
+    }
+   ],
+   "sourceNotes": [
+    "Ch7.2 slide 6 (three exceptions: Uranus's tilt, backward rotations of Venus and Uranus, Earth's large Moon); Ch7.1 slides 10, 16, 17",
+    "Cosmic Perspective 7.2 (pp. 208-209): Uranus on its side, Venus rotating backward, Earth's moon one of the largest; 7.1 (p. 205): Triton orbits backward; 7.1 (p. 203): Uranus's possible collision and 42-year seasons; The giant-impact origin of the Moon is Cosmic Perspective Chapter 8 (outside the Ch7 slides)."
+   ],
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_exception_uranus.webp",
+     "slide": "slide 6 (Ch7.2)",
+     "alt": "Uranus as a pale blue-green disk with thin rings circling it almost vertically, so the planet seems to lie on its side."
+    },
+    {
+     "src": "img/planetarysystem/pl_exception_venus.webp",
+     "slide": "slide 6 (Ch7.2)",
+     "alt": "Venus as a yellow-brown globe covered with mottled surface markings in a false-colour radar-style view."
+    },
+    {
+     "src": "img/planetarysystem/pl_exception_moon.webp",
+     "slide": "slide 6 (Ch7.2)",
+     "alt": "Earth, a large blue and white globe, beside the much smaller grey Moon drawn at the correct relative sizes."
+    }
+   ]
   },
   {
    "id": "spacecraft",
    "title": "How spacecraft explore other worlds",
-   "slides": "Chapter 7, section 7.3",
+   "slides": "Ch7.3: 1-4",
    "steps": [
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_apollo_lander.webp",
+      "slide": "slide 1 (Ch7.3)",
+      "alt": "The Apollo lunar module standing on the grey Moon with an astronaut next to it."
+     },
+     "title": "What goes into a mission",
+     "bullets": [
+      "Space travel is complex, scientifically and administratively. Someone must propose the mission (what will it accomplish?), plan its milestones, decide who designs and builds which parts, and pay for it (is the science worth the cost?).",
+      "Many agencies fly missions: NASA (USA), ESA (Europe), CSA (Canada), ISRO (India), CNSA (China) and Roscosmos (Russia), among others.",
+      "Engineers also have to choose fuel and propulsion, landing and sample-collection equipment, scientific instruments, and backups in case something fails. Crewed missions add life support.",
+      "Robotic spacecraft carry computers, power (for example solar cells), propulsion, instruments and radios. They mostly follow preprogrammed commands plus updates from Earth, and most never come back."
+     ]
+    },
     {
      "title": "Match the mission to the question",
      "bullets": [
-      "A flyby passes a target and can survey many objects, but its close observation window is brief.",
-      "An orbiter circles a world for repeated measurements and broad mapping, but reaching and maintaining orbit requires additional energy and propulsion.",
-      "A lander or rover can make direct surface measurements. Its observations are detailed but limited to a small region and depend on landing safely."
+      "A **flyby** passes a target once and can survey many objects, but its close observation window is brief.",
+      "An **orbiter** circles a world for repeated measurements and broad mapping, but reaching and holding orbit needs extra fuel.",
+      "A **lander** or **rover** makes direct surface measurements. They are detailed but limited to a small region, and the landing has to succeed.",
+      "A **sample return mission** brings material to laboratories on Earth. It is the hardest robotic type, because the spacecraft must also get back home."
      ]
     },
     {
      "title": "Remote sensing and direct measurements",
      "bullets": [
-      "Cameras and spectrometers remotely measure reflected or emitted light; radar can reveal surfaces through some clouds and darkness.",
-      "Landers and rovers examine local conditions, while sample-return missions can bring material to laboratories on Earth.",
-      "Mission design balances scientific goals, communication delay, power, travel time, hazards, and cost."
+      "Cameras and spectrographs measure reflected or emitted light from a distance. Radar sees through thick clouds, which is why it is so useful at Venus and Titan.",
+      "Landers and rovers examine local conditions directly. Probes that fly into an atmosphere measure it on the way down.",
+      "A spacecraft's gravity tug from a world also reveals that world's mass and density, something Earth-based telescopes cannot measure so well.",
+      "Mission design always balances science goals, communication delay, power, travel time, hazards and cost."
      ]
     }
    ],
@@ -332,122 +1326,664 @@
    "boxes": [
     {
      "type": "why",
-     "text": "No single mission type answers every question. Remote coverage, repeated orbital views, and local sampling provide different kinds of evidence."
+     "text": "Why use spacecraft when we have telescopes? Spacecraft get close, so their pictures and spectra are far sharper than any telescope's. They can also feel a world's gravity, look back at rings lit from behind, and sample the surface or atmosphere directly."
     },
     {
      "type": "trick",
-     "text": "Flyby: brief pass. Orbiter: repeated global views. Lander or rover: local surface evidence."
+     "text": "Flyby: a brief pass. Orbiter: repeated global views. Lander or rover: local surface evidence. Sample return: a round trip."
     },
     {
      "type": "trap",
-     "text": "A photograph alone does not replace compositional measurements or direct surface analysis; each method has different limits."
+     "text": "A photograph alone cannot replace composition measurements or direct surface analysis; each method has limits. The teacher's slides also list the cost and scheduling questions (budget, planning, failure modes): they are part of why choosing the mission type depends on both science goals and money."
     }
    ],
    "sourceNotes": [
-    "The Cosmic Perspective, 10th ed., Chapter 7, section 7.3.",
-    "Course-focused explanations and the diagram are paraphrased and newly written."
+    "Ch7.3 slides 1 (opening picture), 2 (space agencies), 3 and 4 (considerations)",
+    "Cosmic Perspective 7.3 (pp. 209-212): spacecraft computers, power, propulsion, instruments, radios; four mission categories; choice depends on science and cost.",
+    "The slide on space agencies is only a set of logos, so it is not used as a picture."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_apollo_lander.webp",
+     "slide": "slide 1 (Ch7.3)",
+     "alt": "The Apollo lunar module standing on the grey Moon with an astronaut next to it."
+    }
+   ],
+   "table": {
+    "head": [
+     "Mission",
+     "What it does",
+     "Best at",
+     "Limit",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Flyby",
+      "Passes a world once",
+      "Cheap; can visit several worlds",
+      "Short time to gather data",
+      "Voyager 2, Pioneer 11"
+     ],
+     [
+      "Orbiter",
+      "Circles a world",
+      "Long-term data and mapping",
+      "Needs extra fuel; no samples",
+      "Galileo, Cassini, Mars Reconnaissance Orbiter"
+     ],
+     [
+      "Lander or rover",
+      "Lands on the surface",
+      "Detailed local measurements",
+      "Small area; landing is risky",
+      "Curiosity, Perseverance, Huygens"
+     ],
+     [
+      "Atmospheric probe",
+      "Descends into an atmosphere",
+      "Direct atmosphere data",
+      "Short life",
+      "Galileo probe at Jupiter"
+     ],
+     [
+      "Sample return",
+      "Collects and returns material",
+      "Lab analysis on Earth",
+      "Most complicated robotic mission",
+      "Moon and asteroid samples"
+     ],
+     [
+      "Human spaceflight",
+      "Crew aboard",
+      "Flexible, on-the-spot decisions",
+      "Most complicated overall; life support",
+      "Apollo Moon landings"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "flybys-orbiters",
+   "title": "Flybys and orbiters",
+   "slides": "Ch7.3: 5-8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_pioneer_voyager.webp",
+      "slide": "slide 6 (Ch7.3)",
+      "alt": "Left: a spacecraft picture of Pioneer 11 against the starry Milky Way. Right: the Voyager 1 spacecraft with its dish antenna and long boom, on a white background."
+     },
+     "title": "Flybys: pass once, cheap, short look",
+     "bullets": [
+      "A **flyby** passes a world just once and carries on. It never has to slow down, so it needs less fuel, weighs less and costs less to launch.",
+      "The drawback is time: a flyby studies the target for a much shorter time than an orbiter does.",
+      "Flybys can still do a lot. Close up, their cameras and spectrographs beat the biggest telescopes, and a target's pull on the spacecraft reveals its mass.",
+      "Pioneer 11 made the first flyby of Saturn. The two Voyagers (launched in 1977) have left the planets far behind and are travelling through interstellar space."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_voyager2_path.webp",
+      "slide": "slide 5 (Ch7.3)",
+      "alt": "A diagram of Voyager 2's path curving past Jupiter in 1979, Saturn in 1981, Uranus in 1986 and Neptune in 1989, over circles marking the planets' orbits."
+     },
+     "title": "Voyager 2 and the gravitational slingshot",
+     "bullets": [
+      "One flyby can visit several worlds. Voyager 2 passed Jupiter (1979), Saturn (1981), Uranus (1986) and Neptune (1989).",
+      "At each planet it used the planet's gravity as a **gravitational slingshot**, which bends the path and can add speed by borrowing a tiny bit of the planet's orbital energy. New Horizons used a Jupiter flyby to gain about 20% in speed and reach Pluto more than 3 years sooner.",
+      "Voyager 2 is still the only spacecraft ever to visit Uranus and Neptune."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_orbiters.webp",
+      "slide": "slide 8 (Ch7.3)",
+      "alt": "Three spacecraft pictures labelled Galileo at Jupiter, Cassini above Saturn's rings and the Mars Reconnaissance Orbiter above the Martian surface."
+     },
+     "title": "Orbiters: stay and study",
+     "bullets": [
+      "An **orbiter** goes into orbit around a world, so it has more time to gather data than a flyby. It can follow an atmosphere, a magnetic environment and a surface over the long term and map them again and again.",
+      "Drawbacks: it needs extra fuel to slow down and enter orbit, so it costs more than a flyby, and it is restricted in collecting samples or seeing precise surface detail.",
+      "Examples: Galileo (first to orbit Jupiter), Cassini (Saturn, 2004 to 2017) and the Mars Reconnaissance Orbiter (Mars). Orbiters have visited every planet except Uranus and Neptune.",
+      "Galileo and Cassini were deliberately sent into Jupiter and Saturn at the end of their missions, so they could never crash into, and contaminate, a moon that might host life."
+     ]
+    },
+    {
+     "title": "Flyby or orbiter? The trade-off",
+     "bullets": [
+      "Choose a flyby for a tight budget, a quick first look, or one trip past several targets.",
+      "Choose an orbiter for years of repeated measurements of one world.",
+      "Mars orbiters save fuel by aerobraking: they enter a long, stretched orbit and then skim the thin martian air at the low point of each pass, slowing a little each time until the orbit is small and circular."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is a flyby cheaper? Launch cost depends mostly on weight, and fuel is a big part of a spacecraft's weight. In space there is no air drag, so a spacecraft needs fuel only to change its trajectory. A flyby never has to slow down, so it carries less fuel."
+    },
+    {
+     "type": "trick",
+     "text": "Flyby = quick look, many targets, cheap. Orbiter = long look, one target, dearer."
+    },
+    {
+     "type": "trap",
+     "text": "'A significant drawback of a flyby compared with an orbiter?' It studies the planet for a much shorter time. It does not reach the planet slower, carry worse instruments or stay farther away. The teacher's flyby table lists Juno, but Juno has orbited Jupiter since 2016, so it belongs with the orbiters. The year column on slides 6 and 8 mixes launch dates (Pioneer 11, 1973) with arrival dates (Galileo, 1995), and Cassini reached Saturn in 2004, not 2005."
+    }
+   ],
+   "sourceNotes": [
+    "Ch7.3 slides 5, 6, 7, 8",
+    "Cosmic Perspective 7.3 (pp. 210-211, Figure 7.14, Table 7.3): flyby cost, Voyager 2 slingshots, New Horizons 20% boost and 3 years saved, orbiters visited every planet but Uranus and Neptune, aerobraking, Juno orbiting since 2016, Cassini at Saturn 2004 to 2017.",
+    "The reason Galileo and Cassini were sent into their planets (to protect possibly habitable moons) is standard NASA planetary-protection practice: (outside source). Pioneer 11's 1979 Saturn flyby is the first flyby of Saturn (slide 6 gives its 1973 launch year)."
+   ],
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_pioneer_voyager.webp",
+     "slide": "slide 6 (Ch7.3)",
+     "alt": "Left: a spacecraft picture of Pioneer 11 against the starry Milky Way. Right: the Voyager 1 spacecraft with its dish antenna and long boom, on a white background."
+    },
+    {
+     "src": "img/planetarysystem/pl_voyager2_path.webp",
+     "slide": "slide 5 (Ch7.3)",
+     "alt": "A diagram of Voyager 2's path curving past Jupiter in 1979, Saturn in 1981, Uranus in 1986 and Neptune in 1989, over circles marking the planets' orbits."
+    },
+    {
+     "src": "img/planetarysystem/pl_orbiters.webp",
+     "slide": "slide 8 (Ch7.3)",
+     "alt": "Three spacecraft pictures labelled Galileo at Jupiter, Cassini above Saturn's rings and the Mars Reconnaissance Orbiter above the Martian surface."
+    }
+   ]
+  },
+  {
+   "id": "landers-samples",
+   "title": "Landers, probes, sample return and humans",
+   "slides": "Ch7.3: 9-12",
+   "steps": [
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_curiosity_selfie.webp",
+      "slide": "slide 9 (Ch7.3)",
+      "alt": "A close-up self-portrait of the Curiosity rover on the rusty-brown Martian surface, showing its wheels, mast and instrument arm."
+     },
+     "title": "Landers and rovers: close up, but local",
+     "bullets": [
+      "A **lander** touches down on a world's surface. A **rover** is a wheeled lander that can explore a wider area. They study rock and soil, weather and local conditions, and can run experiments and collect samples.",
+      "Strength: very detailed, direct measurements. Limit: a small area only, and the landing must succeed. Mars rovers include Curiosity (arrived 2012) and Perseverance (2021), which also carried the Ingenuity helicopter.",
+      "Landers have reached the Moon, Venus, Mars and Saturn's moon Titan, as well as a few asteroids and a comet.",
+      "On the jovian planets there is no solid surface to land on, so spacecraft send **atmospheric probes** instead. The Galileo probe sent data from Jupiter's clouds for about an hour before heat and pressure destroyed it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_sky_crane.webp",
+      "slide": "slide 9 (Ch7.3)",
+      "alt": "Four pictures in order: a spacecraft entering Mars's atmosphere, a parachute opening, rockets slowing the craft above the ground, and a sky crane lowering the rover while the rocket stage flies away."
+     },
+     "title": "Landing softly is the hard part",
+     "bullets": [
+      "Curiosity and Perseverance used a four-step landing: (1) friction with the atmosphere slows the spacecraft, (2) a parachute slows it to about 350 km/h, (3) rockets bring it to a halt just above the ground while a sky crane lowers the rover on a tether, (4) the tether is released and the rocket stage flies off to crash a safe distance away.",
+      "Mars's air is thin, so a parachute is not enough on its own, and rockets must finish the slowing down."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_cassini_huygens.webp",
+      "slide": "slide 10 (Ch7.3)",
+      "alt": "Two photographs of the orange-brown surface of Saturn's moon Titan, with rounded cobbles on a flat plain, next to a photograph of the Huygens probe, a round capsule."
+     },
+     "title": "Combination missions",
+     "bullets": [
+      "Some missions combine spacecraft types to get both broad and close-up views. Viking 1 and 2 each took an orbiter and a lander to Mars.",
+      "**Cassini-Huygens**: the Cassini orbiter studied Saturn, its rings and its moons from 2004 to 2017, and carried the **Huygens** probe, which landed on Titan in 2005 and photographed a pebble-strewn plain carved by liquid methane.",
+      "**Galileo** at Jupiter was an orbiter that also dropped a probe into the atmosphere."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/planetarysystem/pl_aldrin_moon.webp",
+      "slide": "slide 12 (Ch7.3)",
+      "alt": "An astronaut in a white spacesuit and gold visor standing on the grey, dusty surface of the Moon."
+     },
+     "title": "Sample return and human spaceflight",
+     "bullets": [
+      "A **sample return mission** lands, collects samples, blasts off and flies home. It is much more complicated than a flyby or orbiter because of the return trip, but labs on Earth can analyze the samples in far greater detail than any instrument that fits on a spacecraft.",
+      "Samples so far have come from the Moon, a few asteroids and a comet's dust. A sample return from Mars is a major goal for the future.",
+      "**Human spaceflight** is the most complicated type, because the crew must survive: food, water, medicine and oxygen, protection from extreme heat, cold and radiation, the biological effects of weightlessness, and no easy help if something goes wrong (as with Apollo 13).",
+      "Humans have set foot on only one other world, the Moon, and not since 1972."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Why is landing so hard? A spacecraft arrives at thousands of km/h and must slow to nearly zero in a few minutes, using a thin atmosphere, a parachute and rockets, with no way to correct a mistake. A flyby never has to do that."
+    },
+    {
+     "type": "trick",
+     "text": "Flyby: one pass. Orbiter: stays. Lander: touches down. Sample return: touches down and comes home. Human: all of that, plus keeping people alive."
+    },
+    {
+     "type": "trap",
+     "text": "'Why would a lander be a bad idea at a jovian planet?' Because the jovian planets have no solid surface to land on, not because they are too far away or have nothing interesting. 'Which worlds have humans visited?' Only the Moon (the last time in 1972). The year column in the slide tables is not always an arrival date (Cassini is listed as 2005, but it reached Saturn in 2004), so rely on the textbook dates: Cassini at Saturn 2004 to 2017, Huygens on Titan 2005, Galileo probe 1995."
+    }
+   ],
+   "sourceNotes": [
+    "Ch7.3 slides 9, 10, 11, 12",
+    "Cosmic Perspective 7.3 (pp. 211-212): probes and landers, Curiosity 2012 and Perseverance 2021 with Ingenuity, the sky-crane landing (Figure 7.16), sample returns so far (Moon, asteroids, Stardust comet dust), Cassini 2004 to 2017 and Huygens on Titan 2005.",
+    "Slide 11 (sample return) and slide 12 (human spaceflight) list the extra complications; the Apollo-era details are in the slide text."
+   ],
+   "images": [
+    {
+     "src": "img/planetarysystem/pl_curiosity_selfie.webp",
+     "slide": "slide 9 (Ch7.3)",
+     "alt": "A close-up self-portrait of the Curiosity rover on the rusty-brown Martian surface, showing its wheels, mast and instrument arm."
+    },
+    {
+     "src": "img/planetarysystem/pl_sky_crane.webp",
+     "slide": "slide 9 (Ch7.3)",
+     "alt": "Four pictures in order: a spacecraft entering Mars's atmosphere, a parachute opening, rockets slowing the craft above the ground, and a sky crane lowering the rover while the rocket stage flies away."
+    },
+    {
+     "src": "img/planetarysystem/pl_cassini_huygens.webp",
+     "slide": "slide 10 (Ch7.3)",
+     "alt": "Two photographs of the orange-brown surface of Saturn's moon Titan, with rounded cobbles on a flat plain, next to a photograph of the Huygens probe, a round capsule."
+    },
+    {
+     "src": "img/planetarysystem/pl_aldrin_moon.webp",
+     "slide": "slide 12 (Ch7.3)",
+     "alt": "An astronaut in a white spacesuit and gold visor standing on the grey, dusty surface of the Moon."
+    }
+   ]
   }
  ],
+ "table": {
+  "title": "The planets at a glance",
+  "head": [
+   "Planet",
+   "Family",
+   "Radius (Earth = 1)",
+   "Density (g/cm3)",
+   "Atmosphere",
+   "Moons and rings"
+  ],
+  "rows": [
+   [
+    "Mercury",
+    "Terrestrial",
+    "0.38",
+    "5.43",
+    "Almost none",
+    "No moons, no rings"
+   ],
+   [
+    "Venus",
+    "Terrestrial",
+    "0.95",
+    "5.24",
+    "Very thick, carbon dioxide",
+    "No moons, no rings"
+   ],
+   [
+    "Earth",
+    "Terrestrial",
+    "1.00",
+    "5.52 (the densest)",
+    "Moderate, nitrogen and oxygen",
+    "1 large moon, no rings"
+   ],
+   [
+    "Mars",
+    "Terrestrial",
+    "0.53",
+    "3.93",
+    "Very thin, carbon dioxide",
+    "2 tiny moons, no rings"
+   ],
+   [
+    "Jupiter",
+    "Jovian (gas giant)",
+    "11.2",
+    "1.33",
+    "Deep, hydrogen and helium",
+    "Around 100 moons, thin faint ring"
+   ],
+   [
+    "Saturn",
+    "Jovian (gas giant)",
+    "9.4",
+    "0.70 (less than water)",
+    "Deep, hydrogen and helium",
+    "Close to 300 moons, broad bright rings"
+   ],
+   [
+    "Uranus",
+    "Jovian (ice giant)",
+    "4.0",
+    "1.32",
+    "Deep, with water, ammonia and methane",
+    "At least 27 moons, dark narrow rings"
+   ],
+   [
+    "Neptune",
+    "Jovian (ice giant)",
+    "3.9",
+    "1.64",
+    "Deep, with water, ammonia and methane",
+    "At least 14 moons, dark faint rings"
+   ]
+  ]
+ },
  "cards": [
   {
    "id": "pln-c1",
    "front": "Terrestrial planet",
-   "back": "A relatively small, rocky, dense planet of the inner solar system.",
-   "short": "Small, rocky inner world.",
-   "gloss": false
+   "back": "A relatively small, rocky, dense planet of the inner solar system with a solid surface and few or no moons: Mercury, Venus, Earth or Mars.",
+   "short": "Small, rocky, dense inner planet.",
+   "src": "Ch7.2 slide 3; Cosmic Perspective 7.2"
   },
   {
    "id": "pln-c2",
    "front": "Jovian planet",
-   "back": "A large outer planet with a deep atmosphere and an extensive moon system.",
-   "short": "Large outer planet.",
-   "gloss": false
+   "back": "A large outer planet with no solid surface, made mostly of hydrogen, helium and hydrogen compounds, with rings and many moons: Jupiter, Saturn, Uranus or Neptune.",
+   "short": "Large, hydrogen-rich outer planet.",
+   "src": "Ch7.2 slide 3; Cosmic Perspective 7.2"
   },
   {
    "id": "pln-c3",
    "front": "Gas giant",
-   "back": "Jupiter or Saturn, a giant planet dominated by hydrogen and helium.",
+   "back": "Jupiter or Saturn: a giant planet made mostly of hydrogen and helium, with no solid surface.",
    "short": "Jupiter or Saturn.",
-   "gloss": false
+   "src": "Ch7.1 slides 12, 14"
   },
   {
    "id": "pln-c4",
    "front": "Ice giant",
-   "back": "Uranus or Neptune, giant planets with a larger fraction of water, ammonia, and methane than Jupiter or Saturn.",
+   "back": "Uranus or Neptune: giant planets with much more water, ammonia and methane than Jupiter or Saturn. The 'ices' are hot fluids deep inside, not frozen solids.",
    "short": "Uranus or Neptune.",
-   "gloss": false
+   "src": "Ch7.1 slides 16, 17; Cosmic Perspective 7.2 footnote"
   },
   {
    "id": "pln-c5",
    "front": "Asteroid",
-   "back": "A small rocky or metallic body orbiting the Sun.",
+   "back": "A small rocky or metallic body orbiting the Sun; most are in the belt between Mars and Jupiter.",
    "short": "Small rocky or metallic body.",
-   "gloss": false
+   "src": "Ch7.1 slide 4; Cosmic Perspective 7.2"
   },
   {
    "id": "pln-c6",
    "front": "Comet",
-   "back": "An ice-rich small body that can release gas and dust when heated near the Sun.",
+   "back": "An ice-rich small body, mostly ice mixed with dust and rock, that releases gas and dust to form a coma and tail when heated near the Sun.",
    "short": "Icy body that can grow a coma and tail.",
-   "gloss": false
+   "src": "Cosmic Perspective 7.2"
   },
   {
    "id": "pln-c7",
    "front": "Kuiper belt",
-   "back": "A region beyond Neptune containing many icy bodies, including dwarf planets.",
-   "short": "Distant icy region beyond Neptune.",
-   "gloss": false
+   "back": "A doughnut-shaped region beyond Neptune, about 30 to 50 AU out, with many icy bodies (including Pluto and Eris) and about 100 times the asteroid belt's mass.",
+   "short": "Icy region beyond Neptune.",
+   "src": "Ch7.1 slide 4; Cosmic Perspective 7.2"
   },
   {
    "id": "pln-c8",
    "front": "Oort cloud",
-   "back": "A distant, roughly spherical reservoir inferred to supply many long-period comets.",
-   "short": "Inferred reservoir of long-period comets.",
-   "gloss": false
+   "back": "A vast, roughly spherical shell of icy bodies from about 2,000 to 100,000 AU, possibly holding a trillion comets; the source of many comets that come from every direction.",
+   "short": "Spherical comet reservoir, farthest region.",
+   "src": "Ch7.1 slide 5; Cosmic Perspective 7.2"
   },
   {
    "id": "pln-c9",
    "front": "Dwarf planet",
-   "back": "A Sun-orbiting body massive enough to be nearly round but not to have cleared its orbital neighborhood.",
-   "short": "Round body that has not cleared its orbit.",
-   "gloss": false
+   "back": "A body that orbits the Sun and is massive enough to be nearly round, but has not cleared its orbital neighborhood and is not a moon (for example Pluto, Eris, Ceres).",
+   "short": "Round, but has not cleared its orbit.",
+   "src": "Ch7.1 slide 18; IAU 2006 definition"
   },
   {
    "id": "pln-c10",
    "front": "Nebular hypothesis",
-   "back": "The model that the solar system formed from a collapsing, rotating cloud of gas and dust that flattened into a disk.",
+   "back": "The model that the solar system formed from a collapsing, rotating cloud of gas and dust that flattened into a disk, with the Sun at the centre and planets growing in the disk.",
    "short": "A rotating disk formed from a collapsing cloud.",
-   "gloss": false
+   "src": "Cosmic Perspective Ch 8 (preview in 7.2)"
   },
   {
    "id": "pln-c11",
    "front": "Flyby",
-   "back": "A spacecraft mission that passes a target without entering orbit or landing.",
-   "short": "Brief close pass of a target.",
-   "gloss": false
+   "back": "A mission that passes a target once and continues on. Cheaper than other missions, but with much less time to gather data.",
+   "short": "One brief close pass.",
+   "src": "Ch7.3 slide 5; Cosmic Perspective 7.3"
   },
   {
    "id": "pln-c12",
    "front": "Orbiter",
-   "back": "A spacecraft that remains in orbit to make repeated observations of a world.",
+   "back": "A spacecraft that goes into orbit around a world for long-term, repeated observations. It needs more fuel than a flyby and cannot collect samples.",
    "short": "Repeated observations from orbit.",
-   "gloss": false
+   "src": "Ch7.3 slide 7; Cosmic Perspective 7.3"
   },
   {
    "id": "pln-c13",
    "front": "Lander",
-   "back": "A spacecraft designed to reach a body's surface and make measurements at a fixed location.",
+   "back": "A spacecraft that reaches a world's surface and makes close-up measurements at one location; a rover lets it explore more widely.",
    "short": "Surface science at one location.",
-   "gloss": false
+   "src": "Ch7.3 slide 9; Cosmic Perspective 7.3"
   },
   {
    "id": "pln-c14",
    "front": "Comparative planetology",
    "back": "The study of worlds by comparing their similarities and differences to test explanations for their histories and processes.",
-   "short": "Use differences and similarities to test planetary explanations.",
-   "gloss": false
+   "short": "Learn about worlds by comparing them.",
+   "src": "Ch7.1 slide 6; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c15",
+   "front": "Asteroid belt",
+   "back": "The region between the orbits of Mars and Jupiter, about 2 to 3.5 AU from the Sun, holding most asteroids; roughly a million objects wider than 1 km, spread over a huge volume.",
+   "short": "Rocky region between Mars and Jupiter.",
+   "src": "Ch7.1 slides 3-4"
+  },
+  {
+   "id": "pln-c16",
+   "front": "Sun's mass share",
+   "back": "More than 99.8% of the solar system's mass is in the Sun. All the planets together are only about 1/1000 of the Sun's mass.",
+   "short": "Sun = over 99.8% of the mass.",
+   "src": "Ch7.1 slide 7; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c17",
+   "front": "Solar fusion",
+   "back": "Hydrogen nuclei fusing into helium in the Sun's core, turning over 4 million tonnes of mass into energy every second (E = mc^2). It happens only in the core.",
+   "short": "Hydrogen to helium in the core.",
+   "src": "Ch7.1 slide 7; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c18",
+   "front": "Greenhouse effect",
+   "back": "Heating of a planet's surface by an atmosphere that traps heat. Moderate on Earth, extreme on Venus (about 470 °C everywhere).",
+   "short": "Atmosphere traps heat; extreme on Venus.",
+   "src": "Ch7.1 slide 9; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c19",
+   "front": "Retrograde rotation",
+   "back": "Spinning in the direction opposite to the one most planets rotate and orbit. Venus (very slowly) and Uranus (tilted over 90 degrees) rotate this way.",
+   "short": "Spin opposite to the usual direction.",
+   "src": "Ch7.2 slide 6; Cosmic Perspective 7.2"
+  },
+  {
+   "id": "pln-c20",
+   "front": "Axis tilt",
+   "back": "The angle between a planet's spin axis and the line perpendicular to its orbital plane. Earth's is 23.5 degrees; Uranus's is about 98 degrees, giving extreme seasons.",
+   "short": "Spin axis angle: Uranus about 98 degrees.",
+   "src": "Ch7.1 slide 16; Ch7.2 slide 6"
+  },
+  {
+   "id": "pln-c21",
+   "front": "Galilean moons",
+   "back": "Jupiter's four largest moons, discovered by Galileo: Io, Europa, Ganymede and Callisto.",
+   "short": "Io, Europa, Ganymede, Callisto.",
+   "src": "Ch7.1 slide 13; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c22",
+   "front": "Io",
+   "back": "Jupiter's innermost Galilean moon and the most volcanically active world in the solar system.",
+   "short": "Most volcanic world.",
+   "src": "Ch7.1 slide 13"
+  },
+  {
+   "id": "pln-c23",
+   "front": "Europa",
+   "back": "A Galilean moon with an icy surface and a possible liquid water ocean beneath it, a promising place to look for life.",
+   "short": "Icy moon with a possible ocean.",
+   "src": "Ch7.1 slide 13"
+  },
+  {
+   "id": "pln-c24",
+   "front": "Ganymede",
+   "back": "Jupiter's largest moon and the largest moon in the solar system, bigger than Mercury.",
+   "short": "Largest moon in the solar system.",
+   "src": "Ch7.1 slide 13"
+  },
+  {
+   "id": "pln-c25",
+   "front": "Callisto",
+   "back": "The outermost Galilean moon: a large, old, heavily cratered, geologically dead 'ice ball'.",
+   "short": "Cratered, geologically dead.",
+   "src": "Ch7.1 slide 13"
+  },
+  {
+   "id": "pln-c26",
+   "front": "Titan",
+   "back": "Saturn's largest moon and the only moon with a thick atmosphere. Its frigid surface (about -180 °C) has lakes and rivers of liquid methane and ethane.",
+   "short": "Moon with a thick atmosphere.",
+   "src": "Ch7.1 slide 14; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c27",
+   "front": "Triton",
+   "back": "Neptune's largest moon, larger than Pluto. It orbits backward, opposite to Neptune's rotation, so it was probably a Kuiper belt object that Neptune captured.",
+   "short": "Backward-orbiting captured moon.",
+   "src": "Ch7.1 slide 17; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c28",
+   "front": "Charon",
+   "back": "Pluto's largest moon, about half of Pluto's width: so big that Pluto and Charon are almost a double world.",
+   "short": "Pluto's huge moon.",
+   "src": "Ch7.1 slide 18"
+  },
+  {
+   "id": "pln-c29",
+   "front": "Earth's Moon",
+   "back": "About 27% of Earth's diameter: unusually large compared with its planet. Most other moons are much smaller relative to their planets.",
+   "short": "Surprisingly large for its planet.",
+   "src": "Ch7.1 slide 10; Ch7.2 slide 6"
+  },
+  {
+   "id": "pln-c30",
+   "front": "Planetary rings",
+   "back": "Flat swarms of countless separate chunks of ice and rock, each orbiting like a tiny moon. All four jovian planets have them; Saturn's are by far the most visible.",
+   "short": "Orbiting chunks of ice and rock.",
+   "src": "Ch7.1 slide 15; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c31",
+   "front": "Eris",
+   "back": "The most massive dwarf planet, about 20 times less massive than Mercury, with a very elongated, tilted orbit in the Kuiper belt region.",
+   "short": "Most massive dwarf planet.",
+   "src": "Ch7.1 slides 4, 18"
+  },
+  {
+   "id": "pln-c32",
+   "front": "Ceres",
+   "back": "The largest object in the asteroid belt (939 km wide) and a dwarf planet; the Dawn spacecraft orbited it from 2015 to 2018.",
+   "short": "Dwarf planet in the asteroid belt.",
+   "src": "Ch7.1 slide 4; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c33",
+   "front": "Pluto",
+   "back": "A dwarf planet in the Kuiper belt made of ice and rock, with five known moons. It was called the ninth planet for 75 years until it was reclassified because of its small size and mass.",
+   "short": "Kuiper belt dwarf planet.",
+   "src": "Ch7.1 slide 18; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-c34",
+   "front": "Clearing the orbit",
+   "back": "A planet's gravity dominating its orbital zone, so that other sizable bodies have been pulled in or flung away. Planets do it, dwarf planets do not.",
+   "short": "Test that dwarf planets fail.",
+   "src": "IAU 2006 definition; Ch7.1 slide 18"
+  },
+  {
+   "id": "pln-c35",
+   "front": "Major planet",
+   "back": "A body that orbits the Sun, is massive enough to be nearly round, and has cleared its orbital neighborhood. There are eight.",
+   "short": "The eight official planets.",
+   "src": "Ch7.1 slide 2; IAU 2006 definition"
+  },
+  {
+   "id": "pln-c36",
+   "front": "Coma",
+   "back": "The fuzzy cloud of gas and dust around a comet's nucleus, released when sunlight heats the comet near the Sun.",
+   "short": "Fuzzy head of a comet.",
+   "src": "Cosmic Perspective 7.2"
+  },
+  {
+   "id": "pln-c37",
+   "front": "Comet tail",
+   "back": "Gas and dust pushed away from the Sun by sunlight and the solar wind. The tail points away from the Sun, not necessarily behind the comet's path.",
+   "short": "Always points away from the Sun.",
+   "src": "Cosmic Perspective 7.2"
+  },
+  {
+   "id": "pln-c38",
+   "front": "Patterns of motion",
+   "back": "The orderly motions of the large bodies: the planets orbit in the same direction in nearly the same plane, most rotate that way too, and most large moons orbit in their planet's spin direction.",
+   "short": "Same direction, same plane, same spin.",
+   "src": "Ch7.2 slide 2; Cosmic Perspective 7.2"
+  },
+  {
+   "id": "pln-c39",
+   "front": "Atmospheric probe",
+   "back": "A spacecraft that descends into an atmosphere instead of landing, as the Galileo probe did at Jupiter, which has no solid surface.",
+   "short": "Dives into a giant planet's atmosphere.",
+   "src": "Cosmic Perspective 7.3"
+  },
+  {
+   "id": "pln-c40",
+   "front": "Rover",
+   "back": "A wheeled robot that travels over a world's surface to examine a wide area, such as Curiosity and Perseverance on Mars.",
+   "short": "Wheeled explorer.",
+   "src": "Ch7.3 slide 9; Cosmic Perspective 7.3"
+  },
+  {
+   "id": "pln-c41",
+   "front": "Sample return mission",
+   "back": "A round-trip mission that lands, collects material and brings it back to Earth for laboratory study. It is far more complicated than a flyby or an orbiter.",
+   "short": "Brings samples home.",
+   "src": "Ch7.3 slide 11; Cosmic Perspective 7.3"
+  },
+  {
+   "id": "pln-c42",
+   "front": "Gravitational slingshot",
+   "back": "Using a planet's gravity to bend a spacecraft's path and speed it up, which saves fuel. Voyager 2 used it at each giant planet.",
+   "short": "A planet's gravity gives a boost.",
+   "src": "Cosmic Perspective 7.3"
+  },
+  {
+   "id": "pln-c43",
+   "front": "Cassini-Huygens",
+   "back": "A Saturn mission: the Cassini orbiter studied Saturn, its rings and moons (2004 to 2017), and the Huygens probe landed on Titan in 2005.",
+   "short": "Saturn orbiter plus Titan lander.",
+   "src": "Ch7.3 slides 8, 10; Cosmic Perspective 7.3"
+  },
+  {
+   "id": "pln-c44",
+   "front": "Voyager 2",
+   "back": "The only spacecraft to visit Uranus (1986) and Neptune (1989), after flybys of Jupiter (1979) and Saturn (1981).",
+   "short": "Visited all four giants.",
+   "src": "Ch7.3 slides 5, 6; Cosmic Perspective 7.3"
   }
  ],
  "quiz": [
@@ -461,7 +1997,8 @@
     "The asteroid belt must be denser than the rings of Saturn."
    ],
    "answer": 0,
-   "why": "A schematic can preserve the order of bodies while changing sizes or distances so the objects can be seen."
+   "why": "A schematic can preserve the order of bodies while changing sizes or distances so the objects can be seen. Real gaps are far from equal (Neptune is 30 AU out, Mars 1.5 AU), and nothing in the picture says the asteroid belt is denser than Saturn's rings.",
+   "source": "Ch7.1 slides 2, 3, 5; Cosmic Perspective 7.1 (Figure 7.1)"
   },
   {
    "id": "pln-2",
@@ -473,7 +2010,8 @@
     "It reflects sunlight into space."
    ],
    "answer": 0,
-   "why": "Rocky composition, small size, and higher density are characteristic of the terrestrial family."
+   "why": "Rocky composition, small size, a solid surface and high density are the defining traits of the terrestrial family. Having a moon, orbiting the Sun and reflecting sunlight are true of jovian planets as well, so they cannot separate the two families.",
+   "source": "Ch7.2 slide 3; Cosmic Perspective 7.2 (Table 7.2)"
   },
   {
    "id": "pln-3",
@@ -485,7 +2023,8 @@
     "Uranus has no atmosphere, while Jupiter has one."
    ],
    "answer": 0,
-   "why": "Both are giant planets, but Uranus and Neptune have a different composition from hydrogen-rich Jupiter and Saturn."
+   "why": "Both are giant (jovian) planets, but Uranus and Neptune hold much more water, ammonia and methane, while Jupiter and Saturn are mostly hydrogen and helium. Uranus orbits at about 19 AU, well inside the Kuiper belt (30 to 50 AU), and Jupiter orbits beyond the asteroid belt; neither is terrestrial or a dwarf planet, and both have deep atmospheres.",
+   "source": "Ch7.1 slides 12, 16; Cosmic Perspective 7.2 (footnotes)"
   },
   {
    "id": "pln-4",
@@ -497,7 +2036,8 @@
     "The hotter planet cannot be terrestrial."
    ],
    "answer": 0,
-   "why": "Venus and Earth illustrate that comparable size does not guarantee similar atmospheric or surface conditions."
+   "why": "Venus and Earth illustrate that comparable size does not guarantee similar atmospheric or surface conditions: Venus's thick carbon dioxide gives it a 470 °C surface. Venus is nearer the Sun than Earth, not farther, and it is a terrestrial planet.",
+   "source": "Ch7.1 slides 9, 10; Cosmic Perspective 7.1"
   },
   {
    "id": "pln-5",
@@ -509,7 +2049,8 @@
     "A tail that always points along its orbit."
    ],
    "answer": 0,
-   "why": "With little atmosphere, Mercury cannot efficiently redistribute heat around the planet."
+   "why": "With almost no atmosphere, Mercury cannot spread heat around: its surface swings from about 425 °C by day to about -170 °C at night. Clouds, oceans and a thick atmosphere describe other worlds, and tails belong to comets.",
+   "source": "Ch7.1 slide 8; Cosmic Perspective 7.1"
   },
   {
    "id": "pln-6",
@@ -521,7 +2062,8 @@
     "Its orbit is nearly circular."
    ],
    "answer": 0,
-   "why": "Surface landforms and altered minerals preserve evidence for ancient water even though surface liquid water is not broadly stable today."
+   "why": "Dried-up riverbeds, floodplains and water-formed minerals preserve evidence for ancient water even though liquid water is not broadly stable on the surface today. Mars is cold, not hot, its moons are rocky, and a circular orbit says nothing about water.",
+   "source": "Ch7.1 slide 11; Cosmic Perspective 7.1"
   },
   {
    "id": "pln-7",
@@ -533,7 +2075,8 @@
     "The rings are trails left by planets that escaped the system."
    ],
    "answer": 0,
-   "why": "Planetary rings are made from large numbers of separate pieces of ice and rock."
+   "why": "Planetary rings are made from large numbers of separate pieces of ice and rock, each orbiting like a tiny moon. They are not a rigid sheet, and the giant planets have no solid surface.",
+   "source": "Ch7.1 slide 15; Cosmic Perspective 7.1"
   },
   {
    "id": "pln-8",
@@ -542,10 +2085,11 @@
     "Dwarf planet",
     "Major planet",
     "Moon",
-    "Cometary tail"
+    "Comet"
    ],
    "answer": 0,
-   "why": "A dwarf planet can be round and orbit the Sun without clearing its orbital neighborhood."
+   "why": "A dwarf planet can be round and orbit the Sun without clearing its orbital neighborhood. A major planet must clear its orbit, a moon orbits a planet, and a comet is an irregular icy body that need not be round.",
+   "source": "Ch7.1 slide 18; IAU 2006 definition (outside source)"
   },
   {
    "id": "pln-9",
@@ -557,7 +2101,8 @@
     "Its surface turns into a liquid ocean."
    ],
    "answer": 0,
-   "why": "Solar heating causes volatile material to escape from an icy comet, producing a coma and tails."
+   "why": "Solar heating causes volatile material to escape from an icy comet, producing a coma and tails that reflect sunlight. The comet is not turned into light, pulled into a ring or turned into an ocean.",
+   "source": "Cosmic Perspective 7.2 (Figure 7.13)"
   },
   {
    "id": "pln-10",
@@ -569,19 +2114,21 @@
     "All comet tails point behind the comet's orbital path."
    ],
    "answer": 0,
-   "why": "Sunlight and the solar wind push tail material away from the Sun, so the tail need not trail the comet's motion."
+   "why": "Sunlight and the solar wind push tail material away from the Sun, so the tail need not trail the comet's motion. A tail is not solid, and the comet is not orbiting backward.",
+   "source": "Cosmic Perspective 7.2"
   },
   {
    "id": "pln-11",
    "q": "Which pairing of small-body population and location is most accurate?",
    "options": [
-    "Kuiper belt — beyond Neptune",
-    "Asteroid belt — beyond the Oort cloud",
-    "Oort cloud — between Earth and Mars",
-    "Kuiper belt — inside Mercury's orbit"
+    "Kuiper belt: beyond Neptune",
+    "Asteroid belt: beyond the Oort cloud",
+    "Oort cloud: between Earth and Mars",
+    "Kuiper belt: inside Mercury's orbit"
    ],
    "answer": 0,
-   "why": "The Kuiper belt is a population of icy objects beyond Neptune."
+   "why": "The Kuiper belt is a population of icy objects beyond Neptune (about 30 to 50 AU). The asteroid belt lies between Mars and Jupiter, and the Oort cloud is the farthest region of all.",
+   "source": "Ch7.1 slides 3-5"
   },
   {
    "id": "pln-12",
@@ -593,7 +2140,8 @@
     "The terrestrial planets"
    ],
    "answer": 0,
-   "why": "The distant, roughly spherical Oort cloud is inferred to supply many long-period comets."
+   "why": "The distant, roughly spherical Oort cloud is inferred to supply many comets that arrive from random directions on very long orbits. Asteroids and rings are rocky or icy pieces that do not behave this way.",
+   "source": "Ch7.1 slide 5; Cosmic Perspective 7.2"
   },
   {
    "id": "pln-13",
@@ -605,7 +2153,8 @@
     "Every planet rotates at the same rate."
    ],
    "answer": 0,
-   "why": "A rotating, flattened disk naturally produces coordinated orbital directions and a shared orbital plane."
+   "why": "A rotating, flattened disk naturally produces coordinated orbital directions and a shared orbital plane. Periods and rotation rates differ from planet to planet, and some moons have unusual orbits.",
+   "source": "Ch7.2 slide 2; Cosmic Perspective 7.2"
   },
   {
    "id": "pln-14",
@@ -617,7 +2166,8 @@
     "Comets collided to create the gas cloud that became the Sun."
    ],
    "answer": 0,
-   "why": "The model begins with a collapsing, rotating cloud that forms a central Sun and a surrounding disk."
+   "why": "The model begins with a collapsing, rotating cloud that forms a central Sun and a surrounding disk. Random capture would not give shared orbit directions, and the Sun is a gas ball, not a solid object that split.",
+   "source": "Cosmic Perspective Chapter 8 (preview in 7.2)"
   },
   {
    "id": "pln-15",
@@ -629,7 +2179,8 @@
     "The outer planets formed before the Sun began to shine."
    ],
    "answer": 0,
-   "why": "Temperature varied across the disk, so different materials could condense in different regions."
+   "why": "Temperature varied across the disk (hot near the Sun, cold far away), so different materials could condense in different regions. Gravity acts on all material, and the ordering is about where things formed, not about timing.",
+   "source": "Cosmic Perspective Chapter 8 (preview in 7.2)"
   },
   {
    "id": "pln-16",
@@ -641,7 +2192,8 @@
     "Conclude that all planets formed independently."
    ],
    "answer": 0,
-   "why": "A useful formation model must account for multiple independent patterns, not just one."
+   "why": "A useful formation model must account for multiple independent patterns, not just one. Ignoring evidence or altering observations is not science, and independent formation would not explain the shared orbital plane.",
+   "source": "Ch7.2 slides 2-5"
   },
   {
    "id": "pln-17",
@@ -653,7 +2205,8 @@
     "One-time impactor"
    ],
    "answer": 0,
-   "why": "An orbiter can make repeated measurements and survey a world from many viewing angles."
+   "why": "An orbiter can make repeated measurements and survey a world from many viewing angles. A flyby passes once, a probe lasts minutes to hours, and an impactor makes a single event.",
+   "source": "Ch7.3 slide 7; Cosmic Perspective 7.3"
   },
   {
    "id": "pln-18",
@@ -665,7 +2218,8 @@
     "A second planet's moon"
    ],
    "answer": 0,
-   "why": "A lander or rover can directly analyze the local surface, although it samples only a limited area."
+   "why": "A lander or rover can directly analyze the local surface, although it samples only a limited area. A flyby or an Earth telescope cannot measure soil chemistry in place.",
+   "source": "Ch7.3 slide 9; Cosmic Perspective 7.3"
   },
   {
    "id": "pln-19",
@@ -677,7 +2231,8 @@
     "A flyby removes communication delays."
    ],
    "answer": 0,
-   "why": "Flybys trade long-duration coverage for the ability to encounter multiple targets with a simpler trajectory."
+   "why": "Flybys trade long-duration coverage for the ability to encounter multiple targets with a simpler trajectory and less fuel. They do not map for years, collect samples without approaching, or remove communication delay.",
+   "source": "Ch7.3 slide 5; Cosmic Perspective 7.3"
   },
   {
    "id": "pln-20",
@@ -689,7 +2244,8 @@
     "A telescope pointed at the planet's rings."
    ],
    "answer": 0,
-   "why": "Radar can penetrate some cloud layers, and atmospheric probes can make measurements below the clouds."
+   "why": "Radar can penetrate some cloud layers (as at Venus and Titan), and atmospheric probes can make measurements below the clouds. A visible-light image from farther away is no better, and orbital direction says nothing about the surface.",
+   "source": "Cosmic Perspective 7.3"
   },
   {
    "id": "pln-21",
@@ -701,7 +2257,8 @@
     "It must remain outside the atmosphere."
    ],
    "answer": 0,
-   "why": "Surface missions provide local detail but cannot directly survey the entire planet."
+   "why": "Surface missions provide local detail but cannot directly survey the entire planet. Rovers do send data, and they work inside the atmosphere on the surface.",
+   "source": "Ch7.3 slides 7, 9"
   },
   {
    "id": "pln-22",
@@ -713,7 +2270,8 @@
     "To replace measurements with visual resemblance."
    ],
    "answer": 0,
-   "why": "Comparative planetology tests hypotheses by examining patterns and exceptions among worlds."
+   "why": "Comparative planetology tests hypotheses by examining patterns and exceptions among worlds. It relies on measurements, and it does not suggest that planets form in separate systems.",
+   "source": "Ch7.1 slide 6; Cosmic Perspective 7.1"
   },
   {
    "id": "pln-23",
@@ -725,7 +2283,8 @@
     "The two data types measure the same thing at the same scale."
    ],
    "answer": 0,
-   "why": "Local analysis and global mapping are complementary forms of evidence."
+   "why": "Local analysis and global mapping are complementary forms of evidence: one is detailed but from one place, the other is broad but less detailed.",
+   "source": "Ch7.3 slides 7, 11; Cosmic Perspective 7.3"
   },
   {
    "id": "pln-24",
@@ -737,7 +2296,8 @@
     "The differences among planets rule out a common formation process."
    ],
    "answer": 0,
-   "why": "The nebular model links the rotating disk's geometry with temperature-dependent material condensation."
+   "why": "The nebular model links the rotating disk's geometry with temperature-dependent material condensation. A shared direction says nothing about identical compositions, and differences among planets do not rule out a common origin.",
+   "source": "Ch7.2 slides 2-5"
   },
   {
    "id": "pln-25",
@@ -750,11 +2310,594 @@
     "A comet, because its orbit contains other objects."
    ],
    "answer": 1,
-   "why": "A dwarf planet orbits the Sun and is massive enough to be nearly round, but it has not cleared its orbital neighborhood. A major planet satisfies all three criteria, including clearing its orbital region."
+   "why": "A dwarf planet orbits the Sun and is massive enough to be nearly round, but it has not cleared its orbital neighborhood. A major planet satisfies all three criteria, including clearing its orbital region.",
+   "source": "Ch7.1 slide 18; IAU 2006 definition (outside source)"
+  },
+  {
+   "id": "pln-26",
+   "q": "What is surprising about Earth's Moon compared with the moons of the other planets?",
+   "options": [
+    "It is unusually large compared with the planet it orbits.",
+    "It is the largest moon in the solar system.",
+    "It is the only moon that has an atmosphere.",
+    "It orbits Earth backward, opposite to Earth's spin.",
+    "It has more craters than any other moon."
+   ],
+   "answer": 0,
+   "why": "The Moon's diameter is about 27% of Earth's, a far larger fraction than almost any other moon has compared with its planet. It is not the largest moon (Ganymede is bigger than Mercury), the thick atmosphere belongs to Titan, and the only large backward-orbiting moon is Triton.",
+   "source": "Ch7.1 slide 10; Ch7.2 slide 6; Cosmic Perspective 7.2"
+  },
+  {
+   "id": "pln-27",
+   "q": "Mercury is closer to the Sun than Venus, yet Venus has the hotter surface. Which explanation is best?",
+   "options": [
+    "Mercury has a thick cloud layer that reflects most sunlight back to space.",
+    "Venus is larger than Mercury, and larger planets are always hotter.",
+    "Venus has a much bigger iron core that heats its surface from below.",
+    "Venus's thick carbon dioxide atmosphere traps heat, so its surface stays near 470 °C by day and night.",
+    "Venus rotates faster than Mercury, so sunlight is concentrated on its day side."
+   ],
+   "answer": 3,
+   "why": "Venus's atmosphere is about 100 times the mass of Earth's and mostly carbon dioxide, so heat cannot escape and the whole surface stays near 470 °C. Mercury has almost no atmosphere, so it bakes at 425 °C by day and drops to about -170 °C at night. Venus actually rotates very slowly, and size or core cannot explain the temperature.",
+   "source": "Ch7.1 slides 8, 9; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-28",
+   "q": "Mercury is much smaller than Earth, yet its average density (5.4 g/cm3) is almost as high as Earth's (5.5 g/cm3). What is the best inference?",
+   "options": [
+    "Gravity squeezes Mercury's interior harder than Earth's, which raises its density.",
+    "Mercury contains a much larger fraction of dense iron than Earth does, so it must have a very large metal core.",
+    "Mercury is made mostly of ice, which is dense at very low temperatures.",
+    "Mercury is farther from the Sun than it looks, which makes it denser.",
+    "Mercury's thick atmosphere adds extra mass."
+   ],
+   "answer": 1,
+   "why": "A small planet is squeezed much less by its own gravity than Earth is, so reaching nearly Earth's density means Mercury is made of denser material: it must have a very large iron core. Ice would lower the density, and Mercury has almost no atmosphere.",
+   "source": "Ch7.1 slide 8; Cosmic Perspective 7.1 (Mercury, Table 7.1)"
+  },
+  {
+   "id": "pln-29",
+   "q": "Saturn has about 95 times Earth's mass, but its average density is only 0.7 g/cm3, less than the 1.0 g/cm3 of water. What does this show?",
+   "options": [
+    "Saturn is made mainly of rock and metal, just spread over a larger volume.",
+    "Saturn's rings add a large volume but almost no mass, which lowers its density.",
+    "A planet with a large mass must have a high density.",
+    "Saturn has a hollow region at its centre.",
+    "Saturn is made mostly of light gases (hydrogen and helium), so a large mass does not mean a high density."
+   ],
+   "answer": 4,
+   "why": "Density is mass divided by volume. Saturn is enormous in volume but made mostly of hydrogen and helium, so its average density is below water's. Mass and density are different things, and all four jovian planets are less dense than the terrestrial planets.",
+   "source": "Ch7.1 slide 14; Cosmic Perspective 7.1 (Table 7.1)"
+  },
+  {
+   "id": "pln-30",
+   "q": "Jupiter has about 2.5 times the mass of all the other planets combined, and about 1/1000 of the Sun's mass. What follows?",
+   "options": [
+    "The Sun and Jupiter share the solar system's mass about equally.",
+    "The Sun holds only about half of the solar system's mass.",
+    "The planets together hold about 10% of the solar system's mass.",
+    "The Sun holds nearly all of the mass, and all the planets together are only about 1/1000 of it.",
+    "The planets together have more mass than the Sun's core."
+   ],
+   "answer": 3,
+   "why": "Jupiter is about 1/1000 of the Sun's mass, and the other planets together add only about 0.4 of that, so all the planets total roughly 1/1000 of the Sun. The Sun holds more than 99.8% of the system's mass.",
+   "source": "Ch7.1 slides 7, 12; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-31",
+   "q": "Which pairing of a Galilean moon with its main feature is correct?",
+   "options": [
+    "Io: a heavily cratered, geologically dead ice ball",
+    "Callisto: the most volcanically active world in the solar system",
+    "Ganymede: a moon smaller than Mercury",
+    "Europa: an icy surface that may hide an ocean of liquid water",
+    "Europa: a thick atmosphere with lakes of liquid methane"
+   ],
+   "answer": 3,
+   "why": "Europa has an icy crust with a possible subsurface ocean. Io, not Callisto, is the volcanic world, and Callisto is the cratered ice ball. Ganymede is the largest moon in the solar system and bigger than Mercury, and the methane lakes and thick atmosphere belong to Saturn's Titan.",
+   "source": "Ch7.1 slide 13; Cosmic Perspective 7.1"
+  },
+  {
+   "id": "pln-32",
+   "q": "Which of these statements about Pluto is NOT correct?",
+   "options": [
+    "It orbits the Sun in the Kuiper belt.",
+    "It is made largely of ice and rock.",
+    "It has several moons, the largest being Charon.",
+    "It is the most massive dwarf planet.",
+    "It has not cleared the region around its orbit."
+   ],
+   "answer": 3,
+   "why": "Eris, discovered in 2005, is slightly more massive than Pluto, so Pluto is not the most massive dwarf planet. The other statements are true: Pluto is a Kuiper belt body of ice and rock with five known moons, and it has not cleared its orbit, which is why it is a dwarf planet.",
+   "source": "Ch7.1 slide 18; Cosmic Perspective 7.1 (Table 7.1)"
+  },
+  {
+   "id": "pln-33",
+   "q": "Which planet is correctly matched with its unusual feature?",
+   "options": [
+    "Mars: a moon that is unusually large for its planet",
+    "Neptune: an axis tilted nearly 90 degrees, so it rolls on its side",
+    "Venus: a slow spin in the direction opposite to its orbit",
+    "Uranus: an orbit in a different plane from all the other planets",
+    "Mercury: an orbit around the Sun in the opposite direction"
+   ],
+   "answer": 2,
+   "why": "Venus rotates backward (very slowly) compared with its orbit direction, though it orbits the Sun the usual way. Earth, not Mars, has the large moon; Uranus, not Neptune, is tipped on its side; and Uranus's axis is tilted but its orbit is in the usual plane. Every planet orbits in the same direction.",
+   "source": "Ch7.2 slide 6; Cosmic Perspective 7.2"
+  },
+  {
+   "id": "pln-34",
+   "q": "A comet photographed far beyond Neptune's orbit shows no tail at all. What is the best explanation?",
+   "options": [
+    "It is not a comet at all, because every comet always has a tail.",
+    "Comets that far out have lost all of their ice.",
+    "The solar wind is strongest beyond Neptune and blows tails away.",
+    "A tail forms only when the Sun heats the comet enough to release gas and dust, which happens near the Sun.",
+    "Tails always trail behind the comet's motion, so one pointing sideways cannot be seen."
+   ],
+   "answer": 3,
+   "why": "A comet is an icy body, and its coma and tail appear only when sunlight heats it near the Sun. Far from the Sun it is a cold, dark lump. Tails do not last all the time, comets keep their ice until they are heated, and tails point away from the Sun, not along the orbit.",
+   "source": "Cosmic Perspective 7.2 (Figure 7.13); Ch7.1 slide 5"
+  },
+  {
+   "id": "pln-35",
+   "q": "Which statement correctly compares the asteroid belt with the Kuiper belt?",
+   "options": [
+    "Both are made mainly of ice, but the Kuiper belt is closer to the Sun.",
+    "The asteroid belt lies beyond Neptune and holds Pluto, while the Kuiper belt lies between Mars and Jupiter.",
+    "The asteroid belt is rocky and metallic and lies between Mars and Jupiter; the Kuiper belt is icy, lies beyond Neptune and has about 100 times as much mass.",
+    "The Kuiper belt is a roughly spherical shell, and the asteroid belt is a flat ring beyond Neptune.",
+    "The asteroid belt has about 100 times the mass of the Kuiper belt, and both are rocky."
+   ],
+   "answer": 2,
+   "why": "The asteroid belt (2 to 3.5 AU) holds rocky and metallic bodies between Mars and Jupiter. The Kuiper belt (30 to 50 AU) is a doughnut of icy bodies beyond Neptune with about 100 times the asteroid belt's mass and contains Pluto and Eris. The roughly spherical shell is the Oort cloud.",
+   "source": "Ch7.1 slides 3-5; Cosmic Perspective 7.2"
+  },
+  {
+   "id": "pln-36",
+   "q": "Triton, Neptune's largest moon, orbits Neptune in the direction opposite to Neptune's rotation. What does this most strongly suggest?",
+   "options": [
+    "Triton formed together with Neptune in the same disk, like most large moons.",
+    "Neptune's rotation must have reversed after Triton formed.",
+    "Triton orbits backward because it is the most massive moon in the solar system.",
+    "Triton probably formed elsewhere, as a Kuiper belt object, and was captured by Neptune's gravity.",
+    "Triton was thrown out of Jupiter's moon system long ago."
+   ],
+   "answer": 3,
+   "why": "Most large moons orbit in their planet's spin direction because they formed in a disk around it. A moon that orbits the other way almost certainly did not form there; Triton resembles a Kuiper belt object that was captured. Mass does not set an orbit's direction.",
+   "source": "Ch7.1 slide 17; Cosmic Perspective 7.1 (Neptune)"
+  },
+  {
+   "id": "pln-37",
+   "q": "A mission must study Saturn's atmosphere and rings for several years and also examine the surface of Titan. Which combination fits best?",
+   "options": [
+    "A single flyby spacecraft, because a flyby stays near its target for years.",
+    "A lander placed on Saturn itself, because Saturn has a solid surface.",
+    "An orbiter around Saturn that also carries a lander or probe for Titan, as in the Cassini-Huygens mission.",
+    "A sample-return spacecraft alone, since returning a Titan sample answers both goals.",
+    "Two separate flybys, since a flyby can land on a moon."
+   ],
+   "answer": 2,
+   "why": "Years of repeated observations of Saturn and its rings need an orbiter. The surface of Titan needs a lander or probe. Saturn has no solid surface to land on, a flyby studies a target only briefly, and a flyby cannot land. Cassini orbited Saturn from 2004 to 2017 and its Huygens probe landed on Titan in 2005.",
+   "source": "Ch7.3 slides 8, 10; Cosmic Perspective 7.3"
+  },
+  {
+   "id": "pln-38",
+   "q": "Which observation gives the most direct support for the idea that planetary systems form from a rotating disk of gas and dust?",
+   "options": [
+    "Venus rotates backward.",
+    "Earth has an unusually large Moon.",
+    "Telescopes show flattened disks of gas and dust around young stars in clouds such as the Orion Nebula.",
+    "Saturn has bright rings.",
+    "The Sun is much more massive than all the planets."
+   ],
+   "answer": 2,
+   "why": "Seeing flattened disks around newborn stars, in star-forming clouds like the Orion Nebula, is a direct look at planetary systems in the act of forming. Backward rotation, a large moon, rings and the Sun's mass are all facts about our own system and do not show disks forming elsewhere.",
+   "source": "Cosmic Perspective Chapter 8 (outside the Ch7 slides)"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Planets by distance from the Sun",
+   "prompt": "Put the planets in order of average distance from the Sun, the closest at the bottom and the farthest at the top.",
+   "why": "Distances: Mercury 0.39 AU, Venus 0.72, Earth 1.00, Mars 1.52, Jupiter 5.2, Saturn 9.5, Uranus 19.2, Neptune 30.1. The four terrestrial planets are close together; each jovian planet is much farther than the last.",
+   "topLabel": "Farthest from the Sun",
+   "bottomLabel": "Closest to the Sun",
+   "layers": [
+    {
+     "name": "Mercury",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Venus",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Earth",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Mars",
+     "color": "#0f766e"
+    },
+    {
+     "name": "Jupiter",
+     "color": "#15803d"
+    },
+    {
+     "name": "Saturn",
+     "color": "#a16207"
+    },
+    {
+     "name": "Uranus",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Neptune",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Regions of the solar system",
+   "prompt": "Put these regions in order of distance from the Sun, the closest at the bottom and the farthest at the top.",
+   "why": "The terrestrial planets orbit within 1.5 AU, the asteroid belt lies at 2 to 3.5 AU, the jovian planets at 5 to 30 AU, the Kuiper belt at 30 to 50 AU, and the Oort cloud reaches from about 2,000 to 100,000 AU.",
+   "topLabel": "Farthest from the Sun",
+   "bottomLabel": "Closest to the Sun",
+   "layers": [
+    {
+     "name": "Terrestrial planets",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Asteroid belt",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Jovian planets",
+     "color": "#15803d"
+    },
+    {
+     "name": "Kuiper belt",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Oort cloud",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Planets by size",
+   "prompt": "Put the planets in order of radius, the smallest at the bottom and the largest at the top.",
+   "why": "Radius in Earth radii: Mercury 0.38, Mars 0.53, Venus 0.95, Earth 1.00, Neptune 3.9, Uranus 4.0, Saturn 9.4, Jupiter 11.2. Earth and Venus are almost twins, and so are Uranus and Neptune.",
+   "topLabel": "Largest radius",
+   "bottomLabel": "Smallest radius",
+   "layers": [
+    {
+     "name": "Mercury",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Mars",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Venus",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Earth",
+     "color": "#0f766e"
+    },
+    {
+     "name": "Neptune",
+     "color": "#15803d"
+    },
+    {
+     "name": "Uranus",
+     "color": "#a16207"
+    },
+    {
+     "name": "Saturn",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Jupiter",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Planets by average density",
+   "prompt": "Put these planets in order of average density, the least dense at the bottom and the densest at the top.",
+   "why": "Densities in g/cm3: Saturn 0.70, Jupiter 1.33, Neptune 1.64, Mars 3.93, Venus 5.24, Mercury 5.43, Earth 5.52. The jovian planets are far less dense than the terrestrial ones, and Earth is the densest planet of all.",
+   "topLabel": "Densest",
+   "bottomLabel": "Least dense",
+   "layers": [
+    {
+     "name": "Saturn",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Jupiter",
+     "color": "#4f46e5"
+    },
+    {
+     "name": "Neptune",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Mars",
+     "color": "#15803d"
+    },
+    {
+     "name": "Venus",
+     "color": "#a16207"
+    },
+    {
+     "name": "Mercury",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Earth",
+     "color": "#b91c1c"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Terrestrial planet, jovian planet or dwarf planet?",
+   "prompt": "Sort each item into the group it belongs to.",
+   "buckets": [
+    "Terrestrial planet",
+    "Jovian planet",
+    "Dwarf planet"
+   ],
+   "items": [
+    {
+     "text": "Mercury",
+     "b": 0
+    },
+    {
+     "text": "Venus",
+     "b": 0
+    },
+    {
+     "text": "Earth",
+     "b": 0
+    },
+    {
+     "text": "Mars",
+     "b": 0
+    },
+    {
+     "text": "A small, dense world with a solid surface and few or no moons",
+     "b": 0
+    },
+    {
+     "text": "Jupiter",
+     "b": 1
+    },
+    {
+     "text": "Saturn",
+     "b": 1
+    },
+    {
+     "text": "Uranus",
+     "b": 1
+    },
+    {
+     "text": "Neptune",
+     "b": 1
+    },
+    {
+     "text": "A planet with no solid surface that has rings",
+     "b": 1
+    },
+    {
+     "text": "Pluto",
+     "b": 2
+    },
+    {
+     "text": "Eris",
+     "b": 2
+    },
+    {
+     "text": "Ceres",
+     "b": 2
+    }
+   ],
+   "why": "The four inner worlds are small, dense and solid; the four giants are large with no solid surface, rings and many moons. Pluto, Eris and Ceres are round but have not cleared their orbits, so they are dwarf planets."
+  },
+  {
+   "title": "Planet, dwarf planet or moon?",
+   "prompt": "Sort each world by what it is. Remember: size alone does not decide it.",
+   "buckets": [
+    "Major planet",
+    "Dwarf planet",
+    "Moon"
+   ],
+   "items": [
+    {
+     "text": "Earth",
+     "b": 0
+    },
+    {
+     "text": "Neptune",
+     "b": 0
+    },
+    {
+     "text": "Jupiter",
+     "b": 0
+    },
+    {
+     "text": "Pluto",
+     "b": 1
+    },
+    {
+     "text": "Eris",
+     "b": 1
+    },
+    {
+     "text": "Ceres, in the asteroid belt",
+     "b": 1
+    },
+    {
+     "text": "Ganymede, larger than Mercury",
+     "b": 2
+    },
+    {
+     "text": "Titan, with a thick atmosphere",
+     "b": 2
+    },
+    {
+     "text": "Triton, which orbits backward",
+     "b": 2
+    },
+    {
+     "text": "Charon, half the width of Pluto",
+     "b": 2
+    },
+    {
+     "text": "Europa",
+     "b": 2
+    },
+    {
+     "text": "Phobos",
+     "b": 2
+    }
+   ],
+   "why": "A major planet orbits the Sun, is round and has cleared its orbit. A dwarf planet fails the last test. A moon orbits a planet or dwarf planet, even if it is bigger than Mercury (Ganymede, Titan)."
+  },
+  {
+   "title": "Which kind of mission fits?",
+   "prompt": "Sort each description by the mission type it fits best.",
+   "buckets": [
+    "Flyby",
+    "Orbiter",
+    "Lander, rover or sample return"
+   ],
+   "items": [
+    {
+     "text": "Voyager 2 passing Uranus and Neptune",
+     "b": 0
+    },
+    {
+     "text": "One trip past several planets",
+     "b": 0
+    },
+    {
+     "text": "Cheapest, because it never has to slow down",
+     "b": 0
+    },
+    {
+     "text": "Pioneer 11 passing Saturn once",
+     "b": 0
+    },
+    {
+     "text": "Cassini studying Saturn for more than a decade",
+     "b": 1
+    },
+    {
+     "text": "Mars Reconnaissance Orbiter mapping Mars",
+     "b": 1
+    },
+    {
+     "text": "Galileo circling Jupiter and its moons",
+     "b": 1
+    },
+    {
+     "text": "Long-term data on a planet's atmosphere and magnetic field",
+     "b": 1
+    },
+    {
+     "text": "Curiosity analyzing rocks in one crater",
+     "b": 2
+    },
+    {
+     "text": "Huygens landing on Titan",
+     "b": 2
+    },
+    {
+     "text": "A spacecraft that must launch off a world and fly home",
+     "b": 2
+    },
+    {
+     "text": "Measuring the soil at one landing site",
+     "b": 2
+    }
+   ],
+   "why": "A flyby is cheap and quick and can visit several targets. An orbiter stays for years and maps a whole world. Landers, rovers and sample-return craft work at one surface location, and a sample-return craft must also get home."
+  },
+  {
+   "title": "Asteroid belt, Kuiper belt or Oort cloud?",
+   "prompt": "Sort each fact by the region of the solar system it describes.",
+   "buckets": [
+    "Asteroid belt",
+    "Kuiper belt",
+    "Oort cloud"
+   ],
+   "items": [
+    {
+     "text": "Rocky and metallic bodies between Mars and Jupiter",
+     "b": 0
+    },
+    {
+     "text": "Ceres, the largest member",
+     "b": 0
+    },
+    {
+     "text": "2 to 3.5 AU from the Sun",
+     "b": 0
+    },
+    {
+     "text": "Vesta, Pallas and Hygiea",
+     "b": 0
+    },
+    {
+     "text": "A doughnut of icy bodies beyond Neptune",
+     "b": 1
+    },
+    {
+     "text": "Pluto and Eris live here",
+     "b": 1
+    },
+    {
+     "text": "About 100 times the mass of the asteroid belt",
+     "b": 1
+    },
+    {
+     "text": "30 to 50 AU from the Sun",
+     "b": 1
+    },
+    {
+     "text": "A roughly spherical shell of icy comets",
+     "b": 2
+    },
+    {
+     "text": "May hold a trillion comets",
+     "b": 2
+    },
+    {
+     "text": "2,000 to 100,000 AU from the Sun",
+     "b": 2
+    },
+    {
+     "text": "Source of comets that arrive from every direction",
+     "b": 2
+    }
+   ],
+   "why": "Rocky bodies in a belt between Mars and Jupiter are asteroids. The Kuiper belt is icy and lies beyond Neptune with Pluto and Eris. The Oort cloud is far larger, roughly spherical and the farthest region of all."
   }
  ],
  "sourceNotes": [
-  "Primary source: The Cosmic Perspective, 10th ed., Chapter 7, pages 193-211.",
-  "The chapter, questions, cards, and diagrams are original course materials; textbook concepts are paraphrased."
+  "Teacher slides: Ch7.1.pdf (Studying the Solar System), Ch7.2.pdf (Patterns in the Solar System), Ch7.3.pdf (Spacecraft Exploration of the Solar System). All figures are crops of those slides.",
+  "Textbook: The Cosmic Perspective, 10th ed., Chapter 7, pages 192-215 (Table 7.1 planetary data, Table 7.2 terrestrial versus jovian planets); concepts are paraphrased, Mathematical Insight boxes are not used.",
+  "The 2006 planet definition (three tests), the Orion Nebula disks, and a few spacecraft details are marked (outside source) in the section notes."
  ]
 }

@@ -6,59 +6,60 @@
  "color": "#7b5ea7",
  "intro": "A mineral is a natural, solid, crystal 'building block' of rocks. Learn what counts as a mineral, how atoms are arranged inside it, how the silica tetrahedron builds the silicate minerals, and how to tell minerals apart (colour, streak, luster, hardness, cleavage). Key idea: the way the atoms are packed and bonded controls the crystal shape, the hardness AND the cleavage.",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Define a mineral using the five required criteria."
-   },
-   {
-    "id": "goal-02",
-    "text": "Distinguish minerals from glass, synthetic materials, and amber using the mineral criteria."
-   },
-   {
-    "id": "goal-03",
-    "text": "Explain how atoms, chemical bonds, isotopes, and polymorphs relate to mineral properties."
-   },
-   {
-    "id": "goal-04",
-    "text": "Describe crystal growth and distinguish the six crystal systems."
-   },
-   {
-    "id": "goal-05",
-    "text": "Explain the main processes by which minerals form."
-   },
-   {
-    "id": "goal-06",
-    "text": "Identify minerals using color, streak, and luster."
-   },
-   {
-    "id": "goal-07",
-    "text": "Use the Mohs scale to compare mineral hardness."
-   },
-   {
-    "id": "goal-08",
-    "text": "Distinguish cleavage from fracture using mineral breakage patterns."
-   },
-   {
-    "id": "goal-09",
-    "text": "Use special physical properties to identify minerals."
-   },
-   {
-    "id": "goal-10",
-    "text": "Identify the major elements in Earth and its crust."
-   },
-   {
-    "id": "goal-11",
-    "text": "Describe the silica tetrahedron and compare the main silicate structures."
-   },
-   {
-    "id": "goal-12",
-    "text": "Recognize common rock-forming minerals and distinguish silicates from nonsilicates."
-   }
+  {
+   "id": "goal-01",
+   "text": "Define a mineral using the five required criteria."
+  },
+  {
+   "id": "goal-02",
+   "text": "Distinguish minerals from glass, synthetic materials, and amber using the mineral criteria."
+  },
+  {
+   "id": "goal-03",
+   "text": "Explain how atoms, chemical bonds, isotopes, and polymorphs relate to mineral properties."
+  },
+  {
+   "id": "goal-04",
+   "text": "Describe crystal growth and distinguish the six crystal systems."
+  },
+  {
+   "id": "goal-05",
+   "text": "Explain the main processes by which minerals form."
+  },
+  {
+   "id": "goal-06",
+   "text": "Identify minerals using color, streak, and luster."
+  },
+  {
+   "id": "goal-07",
+   "text": "Use the Mohs scale to compare mineral hardness."
+  },
+  {
+   "id": "goal-08",
+   "text": "Distinguish cleavage from fracture using mineral breakage patterns."
+  },
+  {
+   "id": "goal-09",
+   "text": "Use special physical properties to identify minerals."
+  },
+  {
+   "id": "goal-10",
+   "text": "Identify the major elements in Earth and its crust."
+  },
+  {
+   "id": "goal-11",
+   "text": "Describe the silica tetrahedron and compare the main silicate structures."
+  },
+  {
+   "id": "goal-12",
+   "text": "Recognize common rock-forming minerals and distinguish silicates from nonsilicates."
+  }
  ],
  "sections": [
   {
    "id": "definition",
    "title": "What is a mineral? (the 5 criteria)",
+   "slides": "3-4, 7, 9-10",
    "bullets": [],
    "boxes": [
     {
@@ -74,9 +75,30 @@
      "text": "Do not say a mineral can never touch life: biogenic minerals exist (see next section)."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s3.webp",
+     "slide": "3",
+     "alt": "Text defining a mineral as a natural, inorganic, crystalline substance with a fixed chemical composition."
+    },
+    {
+     "src": "img/minerals/s7.webp",
+     "slide": "7",
+     "alt": "A feathery crystal of ice showing its ordered structure."
+    },
+    {
+     "src": "img/minerals/s10.webp",
+     "slide": "10",
+     "alt": "A large red rhodocrosite crystal, 14 cm by 16.5 cm, surrounded by smaller crystals."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s3.webp",
+      "slide": "3",
+      "alt": "Text defining a mineral as a natural, inorganic, crystalline substance with a fixed chemical composition."
+     },
      "title": "The definition",
      "bullets": [
       "A mineral is a **naturally occurring, inorganic** element or compound with a **periodically repeating arrangement of atoms** and a characteristic chemical composition. That gives it distinctive physical properties.",
@@ -84,6 +106,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s7.webp",
+      "slide": "7",
+      "alt": "A feathery crystal of ice showing its ordered structure."
+     },
      "title": "Ice is a mineral",
      "bullets": [
       "Ice is a mineral: it is natural, it is solid, and its feathery crystals show an ordered atom structure.",
@@ -91,6 +118,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s10.webp",
+      "slide": "10",
+      "alt": "A large red rhodocrosite crystal, 14 cm by 16.5 cm, surrounded by smaller crystals."
+     },
      "title": "The five checks",
      "bullets": [
       "In one line: minerals are naturally occurring, (mostly) inorganic **crystalline solids** formed by geologic processes, with a **definite chemical composition**.",
@@ -110,6 +142,7 @@
   {
    "id": "not-mineral",
    "title": "What is NOT a mineral (glass, synthetic, amber)",
+   "slides": "5, 11-14, 56-57",
    "bullets": [],
    "boxes": [
     {
@@ -125,9 +158,35 @@
      "text": "Practice-midterm Q12: obsidian is the NOT-a-mineral answer. Ice, halite, native gold and quartz are all minerals. 'It is a rock' is not the reason; the reason is no crystal structure (glass)."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s5.webp",
+     "slide": "5",
+     "alt": "A broken piece of black obsidian with smooth curved surfaces, and an obsidian stone tool."
+    },
+    {
+     "src": "img/minerals/s12.webp",
+     "slide": "12",
+     "alt": "The inside of a blue mussel shell, which is made of aragonite."
+    },
+    {
+     "src": "img/minerals/s56.webp",
+     "slide": "56",
+     "alt": "A question asking which of quartz, olivine, amber, garnet and diamond is not a mineral."
+    },
+    {
+     "src": "img/minerals/s57.webp",
+     "slide": "57",
+     "alt": "Amber: drops of resin on wood, rough amber pieces, and amber jewelry."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s5.webp",
+      "slide": "5",
+      "alt": "A broken piece of black obsidian with smooth curved surfaces, and an obsidian stone tool."
+     },
      "title": "Glass breaks in curves",
      "bullets": [
       "**Glass has no crystal order**: obsidian is natural volcanic glass. Its atoms have no repeating pattern, so it is not a mineral.",
@@ -135,6 +194,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s12.webp",
+      "slide": "12",
+      "alt": "The inside of a blue mussel shell, which is made of aragonite."
+     },
      "title": "Biogenic minerals",
      "bullets": [
       "**Biogenic minerals** are formed by living things, such as the aragonite in a blue mussel shell. They are a **special case**.",
@@ -142,12 +206,22 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s56.webp",
+      "slide": "56",
+      "alt": "A question asking which of quartz, olivine, amber, garnet and diamond is not a mineral."
+     },
      "title": "Which one is not a mineral?",
      "bullets": [
       "Quartz, olivine, garnet and diamond are all minerals. **Amber** is the one that is not."
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s57.webp",
+      "slide": "57",
+      "alt": "Amber: drops of resin on wood, rough amber pieces, and amber jewelry."
+     },
      "bullets": [
       "Amber is fossil tree resin, an organic material with no crystal lattice. That is why it is not a mineral.",
       "The pictures show resin oozing from wood, rough pieces of amber and amber jewelry."
@@ -165,6 +239,7 @@
   {
    "id": "atoms-bonds",
    "title": "Atoms, bonds, isotopes, polymorphs",
+   "slides": "15-18, 21-22",
    "bullets": [],
    "boxes": [
     {
@@ -180,9 +255,30 @@
      "text": "Isotopes vs polymorphs (practice-midterm Q13). Isotopes = atoms of one element with different neutrons. Polymorphs = minerals with the same formula but different crystal structure. Diamond and graphite are polymorphs, not isotopes."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s17.webp",
+     "slide": "17",
+     "alt": "Ball-and-stick and space-filling models of the halite lattice with sodium and chloride ions."
+    },
+    {
+     "src": "img/minerals/s18.webp",
+     "slide": "18",
+     "alt": "A halite cube and a snowflake each split by a mirror plane to show symmetry."
+    },
+    {
+     "src": "img/minerals/s22.webp",
+     "slide": "22",
+     "alt": "Carbon atom networks and photos of diamond and graphite, with strong and weak bonds labelled."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s17.webp",
+      "slide": "17",
+      "alt": "Ball-and-stick and space-filling models of the halite lattice with sodium and chloride ions."
+     },
      "title": "Atoms as balls and bonds",
      "bullets": [
       "Atoms can be drawn as tiny balls held in place by chemical bonds. How the atoms are packed and what kind of bonding holds them sets the mineral's properties.",
@@ -191,6 +287,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s18.webp",
+      "slide": "18",
+      "alt": "A halite cube and a snowflake each split by a mirror plane to show symmetry."
+     },
      "title": "Order gives symmetry",
      "bullets": [
       "The ordered atom arrangement gives crystals **symmetry**: a mirror plane splits a halite cube or a snowflake into matching halves.",
@@ -199,6 +300,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s22.webp",
+      "slide": "22",
+      "alt": "Carbon atom networks and photos of diamond and graphite, with strong and weak bonds labelled."
+     },
      "title": "Diamond versus graphite",
      "bullets": [
       "**Polymorphs** are minerals with the same chemical formula but different crystal structures. **Diamond and graphite** are both pure carbon.",
@@ -218,6 +324,7 @@
   {
    "id": "crystal-growth",
    "title": "Crystal growth, shapes and the six crystal structures",
+   "slides": "19-20, 23-26, 36-38",
    "bullets": [],
    "boxes": [
     {
@@ -233,9 +340,35 @@
      "text": "The 'why' answer is not shown; the sensible choice is packing in 3-D space (reasoning, not stated in the sources). Textbook 1 does not list the number of crystal systems."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s19.webp",
+     "slide": "19",
+     "alt": "Eight drawn crystals: halite, diamond, staurolite, quartz, garnet, stibnite, calcite and kyanite."
+    },
+    {
+     "src": "img/minerals/s23.webp",
+     "slide": "23",
+     "alt": "Diagram of crystals growing until they touch, plus a crystal that grew into open space."
+    },
+    {
+     "src": "img/minerals/s26.webp",
+     "slide": "26",
+     "alt": "A hand holding a large garnet crystal with twelve flat faces."
+    },
+    {
+     "src": "img/minerals/s36.webp",
+     "slide": "36",
+     "alt": "Six drawn crystal shapes with axes: isometric, tetragonal, orthorhombic, monoclinic, triclinic and hexagonal."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s19.webp",
+      "slide": "19",
+      "alt": "Eight drawn crystals: halite, diamond, staurolite, quartz, garnet, stibnite, calcite and kyanite."
+     },
      "bullets": [
       "Crystals come in many shapes and sizes: halite cube, diamond, staurolite, quartz, garnet, stibnite, calcite, kyanite.",
       "The outside shape of a **euhedral** crystal (one with perfect faces) is a diagnostic property. It is controlled by how the atoms are arranged.",
@@ -243,6 +376,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s23.webp",
+      "slide": "23",
+      "alt": "Diagram of crystals growing until they touch, plus a crystal that grew into open space."
+     },
      "title": "Space gives faces",
      "bullets": [
       "Crystals grow when atoms attach to the outside of an early crystal, which acts as a **seed**. As they grow they bump into each other.",
@@ -251,6 +389,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s26.webp",
+      "slide": "26",
+      "alt": "A hand holding a large garnet crystal with twelve flat faces."
+     },
      "title": "A garnet crystal",
      "bullets": [
       "This large garnet shows a diagnostic **dodecahedral** (12-sided) crystal habit.",
@@ -258,6 +401,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s36.webp",
+      "slide": "36",
+      "alt": "Six drawn crystal shapes with axes: isometric, tetragonal, orthorhombic, monoclinic, triclinic and hexagonal."
+     },
      "bullets": [
       "There are **six crystal structures**, drawn with axes: isometric, tetragonal, orthorhombic, monoclinic, triclinic and hexagonal.",
       "They differ in axis lengths and angles. Isometric has all axes equal at 90 degrees, while triclinic has all angles and lengths variable."
@@ -275,6 +423,7 @@
   {
    "id": "formation",
    "title": "How minerals form",
+   "slides": "6, 12, 23-25",
    "bullets": [],
    "boxes": [
     {
@@ -290,9 +439,30 @@
      "text": "'Freezing from a melt' means magma or lava cooling into rock crystals, not freezing water."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s6.webp",
+     "slide": "6",
+     "alt": "A person standing among enormous white gypsum crystals in a cave."
+    },
+    {
+     "src": "img/minerals/s12.webp",
+     "slide": "12",
+     "alt": "The inside of a blue mussel shell, which is made of aragonite."
+    },
+    {
+     "src": "img/minerals/s23.webp",
+     "slide": "23",
+     "alt": "Diagram of crystals growing until they touch, plus a crystal that grew into open space."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s6.webp",
+      "slide": "6",
+      "alt": "A person standing among enormous white gypsum crystals in a cave."
+     },
      "title": "Giant gypsum crystals",
      "bullets": [
       "These gypsum crystals are the largest mineral crystals known. They grew by precipitation from **hot water** that once filled the cave.",
@@ -300,6 +470,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s12.webp",
+      "slide": "12",
+      "alt": "The inside of a blue mussel shell, which is made of aragonite."
+     },
      "title": "Ways minerals form",
      "bullets": [
       "Minerals form by freezing from a melt, precipitation from solution or chemical reaction. Living things make **biogenic** minerals.",
@@ -308,6 +483,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s23.webp",
+      "slide": "23",
+      "alt": "Diagram of crystals growing until they touch, plus a crystal that grew into open space."
+     },
      "title": "Crystals crowd each other",
      "bullets": [
       "As crystals grow they often run into other growing crystals. Where they have open space they grow good faces; where growth is blocked they do not."
@@ -325,6 +505,7 @@
   {
    "id": "identify",
    "title": "Identifying minerals: colour, streak, luster",
+   "slides": "26-30",
    "bullets": [],
    "boxes": [
     {
@@ -340,9 +521,30 @@
      "text": "Practice-midterm Q16: two hematite samples with different colours but the same reddish-brown streak shows streak is MORE reliable than colour (not the other way round). Also, a mineral harder than the plate cannot give a streak."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s27.webp",
+     "slide": "27",
+     "alt": "A tray of boxed mineral samples in many colours and shapes."
+    },
+    {
+     "src": "img/minerals/s28.webp",
+     "slide": "28",
+     "alt": "Clear, milky and rose quartz next to green malachite."
+    },
+    {
+     "src": "img/minerals/s29.webp",
+     "slide": "29",
+     "alt": "A piece of hematite being rubbed on a porcelain plate and leaving a reddish-brown streak."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s27.webp",
+      "slide": "27",
+      "alt": "A tray of boxed mineral samples in many colours and shapes."
+     },
      "title": "Identification is a skill",
      "bullets": [
       "Identifying minerals is a **skill**. Some properties are obvious at a glance, others need handling or tests.",
@@ -350,6 +552,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s28.webp",
+      "slide": "28",
+      "alt": "Clear, milky and rose quartz next to green malachite."
+     },
      "title": "Color",
      "bullets": [
       "**Color** is the part of visible light that is **not absorbed** by the mineral.",
@@ -358,6 +565,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s29.webp",
+      "slide": "29",
+      "alt": "A piece of hematite being rubbed on a porcelain plate and leaving a reddish-brown streak."
+     },
      "bullets": [
       "**Streak** is the colour of the crushed powder a mineral leaves when rubbed on an **unglazed porcelain plate**. Hematite leaves a reddish-brown streak.",
       "Streak only works for minerals with a hardness of less than about 6. Harder minerals scratch the plate instead.",
@@ -376,6 +588,7 @@
   {
    "id": "hardness",
    "title": "Hardness and the Mohs scale",
+   "slides": "31",
    "bullets": [],
    "table": {
     "head": [
@@ -444,9 +657,20 @@
      "text": "Textbook calls steel pocketknife 5.5 and says it separates hard from soft minerals. Same number, so use 5.5. If a mineral scratches glass (5.5) but is scratched by quartz (7), it must be between 5.5 and 7: orthoclase (6), as in practice-midterm Q14. Topaz (8) is harder than quartz, so it cannot be the answer."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s31.webp",
+     "slide": "31",
+     "alt": "The Mohs hardness scale from 1 to 10 with fingernail, penny, glass and file markers, and a curve of true hardness."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s31.webp",
+      "slide": "31",
+      "alt": "The Mohs hardness scale from 1 to 10 with fingernail, penny, glass and file markers, and a curve of true hardness."
+     },
      "bullets": [
       "Hardness is the scratching resistance of a mineral, directly linked to **atomic-bond strength**. The **Mohs scale** runs from 1 to 10.",
       "Everyday tools help: fingernail 2.5, copper penny 3.5, glass or steel knife 5.5, steel file 6.5.",
@@ -465,6 +689,7 @@
   {
    "id": "cleavage",
    "title": "Cleavage vs fracture",
+   "slides": "5, 32-34",
    "bullets": [],
    "table": {
     "head": [
@@ -516,9 +741,35 @@
      "text": "First-midterm Q10: the feature used to identify minerals is cleavage (not advantage, peerage, lineage or selvage). Also: cleavage is NOT the same as a crystal face. Cleavage goes right through the crystal; faces are only the outside."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s32.webp",
+     "slide": "32",
+     "alt": "A stepped block showing flat cleavage surfaces beside a crystal with outside crystal faces."
+    },
+    {
+     "src": "img/minerals/s33.webp",
+     "slide": "33",
+     "alt": "Diagrams and photos of muscovite, potassium feldspar and amphibole showing one or two cleavage directions."
+    },
+    {
+     "src": "img/minerals/s34.webp",
+     "slide": "34",
+     "alt": "Diagrams and photos of halite breaking into cubes and calcite breaking into rhombs."
+    },
+    {
+     "src": "img/minerals/s5.webp",
+     "slide": "5",
+     "alt": "A broken piece of black obsidian with smooth curved surfaces, and an obsidian stone tool."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s32.webp",
+      "slide": "32",
+      "alt": "A stepped block showing flat cleavage surfaces beside a crystal with outside crystal faces."
+     },
      "title": "What cleavage is",
      "bullets": [
       "**Cleavage** is the tendency of a mineral to break along **lattice planes with weaker atomic bonds**. It makes flat, shiny surfaces, sometimes in steps.",
@@ -526,6 +777,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s33.webp",
+      "slide": "33",
+      "alt": "Diagrams and photos of muscovite, potassium feldspar and amphibole showing one or two cleavage directions."
+     },
      "title": "One or two directions",
      "bullets": [
       "The number of cleavage planes and the angles between them are diagnostic.",
@@ -534,12 +790,22 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s34.webp",
+      "slide": "34",
+      "alt": "Diagrams and photos of halite breaking into cubes and calcite breaking into rhombs."
+     },
      "title": "Three directions",
      "bullets": [
       "**Three directions at 90 degrees**: halite, which breaks into cubes."
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s5.webp",
+      "slide": "5",
+      "alt": "A broken piece of black obsidian with smooth curved surfaces, and an obsidian stone tool."
+     },
      "title": "No weak planes: fracture",
      "bullets": [
       "Minerals with no planes of weakness (bonds equally strong in all directions) break by **fracture** instead of cleavage.",
@@ -557,6 +823,7 @@
   {
    "id": "special",
    "title": "Special properties",
+   "slides": "35",
    "bullets": [],
    "boxes": [
     {
@@ -572,9 +839,20 @@
      "text": "Practice-midterm Q17: white, hardness 3, three cleavages NOT at 90 degrees (rhombs), fizzes in dilute acid = calcite. Halite has cubic cleavage and tastes salty; gypsum is hardness 2 and does not fizz; quartz is hardness 7 with no cleavage."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s35.webp",
+     "slide": "35",
+     "alt": "Magnetite crystals stuck to a large magnet, beside a list of special physical properties."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s35.webp",
+      "slide": "35",
+      "alt": "Magnetite crystals stuck to a large magnet, beside a list of special physical properties."
+     },
      "bullets": [
       "Less common properties can help too: **effervescence** (fizzes in acid), **magnetism**, taste, smell, feel, elasticity, diaphaneity (transparency), piezoelectricity (charge when squeezed), pyroelectricity (charge when heated), refractive index, malleability (hammered into sheets), ductility (drawn into wires), sectility (shaved with a knife).",
       "Examples: sulfur smells like rotten eggs, halite tastes like salt (it IS salt), magnetite is magnetic.",
@@ -592,6 +870,7 @@
   {
    "id": "elements",
    "title": "Which elements make up Earth and the crust",
+   "slides": "39-42, 53",
    "bullets": [],
    "boxes": [
     {
@@ -607,9 +886,25 @@
      "text": "Do not mix up the two charts."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s39.webp",
+     "slide": "39",
+     "alt": "Graph of how common each element is in the Solar System by atom count, falling for heavier elements."
+    },
+    {
+     "src": "img/minerals/s42.webp",
+     "slide": "42",
+     "alt": "Bar chart of crust elements by weight, volume and atoms, with a table of values."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s39.webp",
+      "slide": "39",
+      "alt": "Graph of how common each element is in the Solar System by atom count, falling for heavier elements."
+     },
      "title": "Elements in the Solar System",
      "bullets": [
       "This graph shows how common each element is in the Solar System by atom count (silicon is the reference). Light elements like H and He are most common, and the numbers fall off for heavy elements.",
@@ -617,6 +912,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s42.webp",
+      "slide": "42",
+      "alt": "Bar chart of crust elements by weight, volume and atoms, with a table of values."
+     },
      "bullets": [
       "The **crust** is mostly **8 elements**. Oxygen and silicon together are 74.3% by weight.",
       "By weight: O 46.6, Si 27.7, Al 8.1, Fe 5, Ca 3.6, Na 2.8, K 2.6, Mg 2.1.",
@@ -635,6 +935,7 @@
   {
    "id": "silicates",
    "title": "Silica tetrahedron and the silicate structures",
+   "slides": "43-52",
    "bullets": [],
    "table": {
     "head": [
@@ -690,9 +991,30 @@
      "text": "Ratios disagree between sources. Textbook 3.3.4 says sheet silicates have Si:O of 2:5 (Si4O10), and its amphibole formula (RSi4O11)2 implies 4:11 for double chains. Single chain 1:3 and framework 1:2 agree everywhere. Also: practice-midterm Q15 answer is 'framework silicate with strong Si-O bonds equally in all directions'."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s49.webp",
+     "slide": "49",
+     "alt": "Diagram of single chains of silica tetrahedra beside a photo of pyroxene."
+    },
+    {
+     "src": "img/minerals/s50.webp",
+     "slide": "50",
+     "alt": "Diagram of a double chain of silica tetrahedra beside a photo of hornblende."
+    },
+    {
+     "src": "img/minerals/s45.webp",
+     "slide": "45",
+     "alt": "Three-dimensional framework of linked silica tetrahedra, as in quartz and feldspar."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s49.webp",
+      "slide": "49",
+      "alt": "Diagram of single chains of silica tetrahedra beside a photo of pyroxene."
+     },
      "title": "Single chain",
      "bullets": [
       "In a **single chain** silicate, two of the three basal oxygens of each tetrahedron are bonded to neighbours. The Si:O ratio is **1:3**.",
@@ -700,6 +1022,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s50.webp",
+      "slide": "50",
+      "alt": "Diagram of a double chain of silica tetrahedra beside a photo of hornblende."
+     },
      "title": "Double chain",
      "bullets": [
       "A **double chain** is like two single chains that share oxygens where the tetrahedra touch. The Si:O ratio is **2:7**.",
@@ -707,6 +1034,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s45.webp",
+      "slide": "45",
+      "alt": "Three-dimensional framework of linked silica tetrahedra, as in quartz and feldspar."
+     },
      "title": "Framework",
      "bullets": [
       "In a **framework** silicate all oxygens are shared, forming a 3-D network. Si:O is **1:2**.",
@@ -725,6 +1057,7 @@
   {
    "id": "rockforming",
    "title": "Common rock-forming minerals and non-silicates",
+   "slides": "47-54",
    "bullets": [],
    "boxes": [
     {
@@ -740,9 +1073,30 @@
      "text": "Diamond is a pure carbon mineral. Amber is the non-mineral."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/minerals/s49.webp",
+     "slide": "49",
+     "alt": "Diagram of single chains of silica tetrahedra beside a photo of pyroxene."
+    },
+    {
+     "src": "img/minerals/s50.webp",
+     "slide": "50",
+     "alt": "Diagram of a double chain of silica tetrahedra beside a photo of hornblende."
+    },
+    {
+     "src": "img/minerals/s54.webp",
+     "slide": "54",
+     "alt": "A list of non-silicate mineral groups: sulfides, sulphates, oxides, halides, carbonates, phosphates."
+    }
+   ],
    "steps": [
     {
+     "img": {
+      "src": "img/minerals/s49.webp",
+      "slide": "49",
+      "alt": "Diagram of single chains of silica tetrahedra beside a photo of pyroxene."
+     },
      "title": "Pyroxene",
      "bullets": [
       "Pyroxene is a dark, iron- and magnesium-rich (**ferromagnesian**) mineral and a common single-chain silicate.",
@@ -750,6 +1104,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s50.webp",
+      "slide": "50",
+      "alt": "Diagram of a double chain of silica tetrahedra beside a photo of hornblende."
+     },
      "title": "Amphibole",
      "bullets": [
       "Amphiboles such as hornblende are dark ferromagnesian minerals too, and important double-chain silicates.",
@@ -757,6 +1116,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/minerals/s54.webp",
+      "slide": "54",
+      "alt": "A list of non-silicate mineral groups: sulfides, sulphates, oxides, halides, carbonates, phosphates."
+     },
      "title": "Non-silicate minerals",
      "bullets": [
       "Not all minerals are silicates. Other groups: sulfides (galena, pyrite), sulphates (gypsum), oxides (hematite, magnetite), halides (halite), carbonates (calcite, dolomite) and phosphates (apatite).",

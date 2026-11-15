@@ -6,41 +6,47 @@
  "color": "#8c5e3c",
  "intro": "Mass movements are gravity-driven downslope movements of rock and loose material. Learn how geologists describe and classify them, what weakens a slope, and how creep, slumps, flows and falls differ.",
  "learningObjectives": [
-   {
-    "id": "goal-01",
-    "text": "Define mass movement and identify which downslope processes qualify."
-   },
-   {
-    "id": "goal-02",
-    "text": "Explain how gravity, slope, water, and material strength contribute to slope failure."
-   },
-   {
-    "id": "goal-03",
-    "text": "Distinguish slow creep from slumping by movement and landform evidence."
-   },
-   {
-    "id": "goal-04",
-    "text": "Compare mudflows, debris flows, and lahars by their material and triggers."
-   },
-   {
-    "id": "goal-05",
-    "text": "Distinguish landslides from falls by how material moves downslope."
-   },
-   {
-    "id": "goal-06",
-    "text": "Explain how water and weak layers can destabilize a slope."
-   },
-   {
-    "id": "goal-07",
-    "text": "Explain how submarine landslides occur and describe their potential consequences."
-   }
+  {
+   "id": "goal-01",
+   "text": "Define mass movement and identify which downslope processes qualify."
+  },
+  {
+   "id": "goal-02",
+   "text": "Explain how gravity, slope, water, and material strength contribute to slope failure."
+  },
+  {
+   "id": "goal-03",
+   "text": "Distinguish slow creep from slumping by movement and landform evidence."
+  },
+  {
+   "id": "goal-04",
+   "text": "Compare mudflows, debris flows, and lahars by their material and triggers."
+  },
+  {
+   "id": "goal-05",
+   "text": "Distinguish landslides from falls by how material moves downslope."
+  },
+  {
+   "id": "goal-06",
+   "text": "Explain how water and weak layers can destabilize a slope."
+  },
+  {
+   "id": "goal-07",
+   "text": "Explain how submarine landslides occur and describe their potential consequences."
+  }
  ],
  "sections": [
   {
    "id": "overview",
    "title": "What counts as a mass movement",
+   "slides": "3-4",
    "steps": [
     {
+     "img": {
+      "src": "img/massmovement/s3.webp",
+      "slide": "3",
+      "alt": "Photo of a large boulder that has rolled down a slope and left a track through a vineyard beside a house, shown with the definition of mass movement."
+     },
      "title": "Gravity moves material downslope",
      "bullets": [
       "**Mass movement** (mass wasting) is the downslope movement of rock or loose surface material under gravity.",
@@ -49,6 +55,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/massmovement/s4.webp",
+      "slide": "4",
+      "alt": "Block diagrams of common mass movements arranged from slow soil creep and slumping, through lahars and debris flows, to fast rockfalls and rock avalanches."
+     },
      "title": "Describe the movement, not just the hazard",
      "bullets": [
       "Material may move as a coherent block, as loose fragments, or as a water-rich mixture.",
@@ -72,13 +83,30 @@
      "text": "Mass movement is the broad category. A landslide is not a precise description of every kind of slope movement."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/massmovement/s3.webp",
+     "slide": "3",
+     "alt": "Photo of a large boulder that has rolled down a slope and left a track through a vineyard beside a house, shown with the definition of mass movement."
+    },
+    {
+     "src": "img/massmovement/s4.webp",
+     "slide": "4",
+     "alt": "Block diagrams of common mass movements arranged from slow soil creep and slumping, through lahars and debris flows, to fast rockfalls and rock avalanches."
+    }
+   ]
   },
   {
    "id": "stability",
    "title": "Why slopes fail",
+   "slides": "6, 16",
    "steps": [
     {
+     "img": {
+      "src": "img/massmovement/s6.webp",
+      "slide": "6",
+      "alt": "Two force diagrams of a block on a gentle slope and a steep slope, showing the downslope force, normal force, pull of gravity and resisting force."
+     },
      "title": "Driving forces and resistance",
      "bullets": [
       "Gravity pulls slope material downhill. A steeper slope increases the part of gravity acting parallel to the slope.",
@@ -87,6 +115,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/massmovement/s16.webp",
+      "slide": "16",
+      "alt": "Block diagrams of sliding blocks moving over an exfoliation joint surface, a foliation plane and a weak shale bed, with a list of weak subsurface layers."
+     },
      "title": "Weak layers and changing slopes",
      "bullets": [
       "A saturated sand or clay layer, weak bedding, joints parallel to the surface, or metamorphic foliation can provide a surface along which material slips.",
@@ -110,14 +143,31 @@
      "text": "Water does not affect every slope in just one way: it can add weight, lubricate a weak surface, or change how clay behaves."
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/massmovement/s6.webp",
+     "slide": "6",
+     "alt": "Two force diagrams of a block on a gentle slope and a steep slope, showing the downslope force, normal force, pull of gravity and resisting force."
+    },
+    {
+     "src": "img/massmovement/s16.webp",
+     "slide": "16",
+     "alt": "Block diagrams of sliding blocks moving over an exfoliation joint surface, a foliation plane and a weak shale bed, with a list of weak subsurface layers."
+    }
+   ],
    "visual": "massmovement"
   },
   {
    "id": "creep-slumps",
    "title": "Creep and slumps",
+   "slides": "8-9",
    "steps": [
     {
+     "img": {
+      "src": "img/massmovement/s8.webp",
+      "slide": "8",
+      "alt": "Photos of tilted gravestones and a leaning fence, plus a block diagram of a creep zone with a sagging house, tilted poles and curved tree trunks."
+     },
      "title": "Creep is slow but visible",
      "bullets": [
       "**Creep** is the very slow downhill movement of loose surface material.",
@@ -126,6 +176,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/massmovement/s9.webp",
+      "slide": "9",
+      "alt": "Cross-section diagram of a slump with a head scarp, curved failure surface, slump mass and bulging toe, next to a photo of a slump on a grassy hillside."
+     },
      "title": "A slump moves as blocks",
      "bullets": [
       "A **slump** is a rotational landslide in which coherent blocks of loose material move along a curved, spoon-shaped failure surface.",
@@ -148,13 +203,30 @@
      "type": "trap"
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/massmovement/s8.webp",
+     "slide": "8",
+     "alt": "Photos of tilted gravestones and a leaning fence, plus a block diagram of a creep zone with a sagging house, tilted poles and curved tree trunks."
+    },
+    {
+     "src": "img/massmovement/s9.webp",
+     "slide": "9",
+     "alt": "Cross-section diagram of a slump with a head scarp, curved failure surface, slump mass and bulging toe, next to a photo of a slump on a grassy hillside."
+    }
+   ]
   },
   {
    "id": "flows",
    "title": "Mudflows, debris flows and lahars",
+   "slides": "21, 38",
    "steps": [
     {
+     "img": {
+      "src": "img/massmovement/s21.webp",
+      "slide": "21",
+      "alt": "Photo of a boulder-strewn channel and alluvial fan left by the 1982 Lawn Lake flood, shown with notes on mudflows, debris flows and lahars."
+     },
      "title": "Water-rich flows",
      "bullets": [
       "A **mudflow** is a fast-moving mixture dominated by water and fine sediment.",
@@ -163,6 +235,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/massmovement/s38.webp",
+      "slide": "38",
+      "alt": "Aerial photo of a snow-covered volcano with a dark lahar deposit running down its flank from the crater."
+     },
      "title": "Volcanic flows",
      "bullets": [
       "A **lahar** is a volcanic mud or debris flow. Ash and other volcanic sediment mix with water from rain or melted snow and ice.",
@@ -186,13 +263,30 @@
      "text": "A lahar is not molten lava. It is a water-rich flow of volcanic debris."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/massmovement/s21.webp",
+     "slide": "21",
+     "alt": "Photo of a boulder-strewn channel and alluvial fan left by the 1982 Lawn Lake flood, shown with notes on mudflows, debris flows and lahars."
+    },
+    {
+     "src": "img/massmovement/s38.webp",
+     "slide": "38",
+     "alt": "Aerial photo of a snow-covered volcano with a dark lahar deposit running down its flank from the crater."
+    }
+   ]
   },
   {
    "id": "slides-falls",
    "title": "Landslides and falls",
+   "slides": "34, 40",
    "steps": [
     {
+     "img": {
+      "src": "img/massmovement/s40.webp",
+      "slide": "40",
+      "alt": "Photo of a rocky gully filled with large angular boulders left by sudden rock movement, with a note that separates movement of solid rock from movement of loose debris."
+     },
      "title": "Landslides move along a surface",
      "bullets": [
       "A **rock landslide** moves mainly solid rock; a **debris landslide** moves mostly loose surface material.",
@@ -201,6 +295,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/massmovement/s34.webp",
+      "slide": "34",
+      "alt": "Two photos of a steep granite spire where a rock pillar has collapsed, leaving a pale scar and a pile of broken rock at the base."
+     },
      "title": "Falls detach from steep slopes",
      "bullets": [
       "In a **rockfall**, rock detaches from a steep face and drops, bounces or rolls downslope.",
@@ -223,13 +322,30 @@
      "type": "trap"
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/massmovement/s40.webp",
+     "slide": "40",
+     "alt": "Photo of a rocky gully filled with large angular boulders left by sudden rock movement, with a note that separates movement of solid rock from movement of loose debris."
+    },
+    {
+     "src": "img/massmovement/s34.webp",
+     "slide": "34",
+     "alt": "Two photos of a steep granite spire where a rock pillar has collapsed, leaving a pale scar and a pile of broken rock at the base."
+    }
+   ]
   },
   {
    "id": "water-weak-layers",
    "title": "Water and weak layers",
+   "slides": "18, 20",
    "steps": [
     {
+     "img": {
+      "src": "img/massmovement/s20.webp",
+      "slide": "20",
+      "alt": "Aerial photo of a bare, failed hillside above a lake and road, with notes that water reduces slope strength and that removing vegetation weakens slopes."
+     },
      "title": "Water changes slope strength",
      "bullets": [
       "Water can load a slope, lubricate a weak layer, and change how clay particles interact.",
@@ -238,6 +354,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/massmovement/s18.webp",
+      "slide": "18",
+      "alt": "Three block diagrams showing dipping beds with a weak shale layer, rain, a sliding mass and the debris that dammed a river valley to form a lake."
+     },
      "title": "Recognize planes of weakness",
      "bullets": [
       "Potential weak surfaces include bedding, joints, faults and metamorphic foliation.",
@@ -261,13 +382,30 @@
      "text": "The presence of water alone does not identify a movement type. Describe the material and how it moves as well."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/massmovement/s20.webp",
+     "slide": "20",
+     "alt": "Aerial photo of a bare, failed hillside above a lake and road, with notes that water reduces slope strength and that removing vegetation weakens slopes."
+    },
+    {
+     "src": "img/massmovement/s18.webp",
+     "slide": "18",
+     "alt": "Three block diagrams showing dipping beds with a weak shale layer, rain, a sliding mass and the debris that dammed a river valley to form a lake."
+    }
+   ]
   },
   {
    "id": "submarine",
    "title": "Submarine landslides",
+   "slides": "58, 65",
    "steps": [
     {
+     "img": {
+      "src": "img/massmovement/s65.webp",
+      "slide": "65",
+      "alt": "Relief map of the Congo submarine canyon cutting across the seafloor from the river mouth at Soyo, where an underwater flow broke cables in 2020."
+     },
      "title": "Movement can happen underwater",
      "bullets": [
       "Mass movement also occurs beneath the ocean, where sediment can fail and travel downslope along the seafloor.",
@@ -276,6 +414,11 @@
      ]
     },
     {
+     "img": {
+      "src": "img/massmovement/s58.webp",
+      "slide": "58",
+      "alt": "Map of the 1929 Grand Banks underwater sediment flow, showing its thickness spreading hundreds of kilometres from the slope, with black dots marking cable breaks."
+     },
      "title": "The same forces still matter",
      "bullets": [
       "Gravity remains the driving force, while slope geometry, sediment strength and pore-water conditions affect stability.",
@@ -299,7 +442,18 @@
      "text": "A submarine landslide is still a mass movement, even when the material moves below the water rather than on a dry hillside."
     }
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/massmovement/s65.webp",
+     "slide": "65",
+     "alt": "Relief map of the Congo submarine canyon cutting across the seafloor from the river mouth at Soyo, where an underwater flow broke cables in 2020."
+    },
+    {
+     "src": "img/massmovement/s58.webp",
+     "slide": "58",
+     "alt": "Map of the 1929 Grand Banks underwater sediment flow, showing its thickness spreading hundreds of kilometres from the slope, with black dots marking cable breaks."
+    }
+   ]
   }
  ],
  "cards": [
