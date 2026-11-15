@@ -267,6 +267,24 @@
       "A glass lens and the eye do the same thing: both bend parallel rays to a focus.",
       "When an eye focuses perfectly, its focal plane lands right on the retina and the picture there is sharp. (The retina is actually curved, but we can treat it as the image plane.)",
       "As with any single lens, the image on the retina is upside down, and the brain flips it."
+     ],
+     "figures": [
+      {
+       "img": {
+        "src": "img/telescopes/tel_eye_image_plane.webp",
+        "slide": "slide 12 (Ch6.1)",
+        "alt": "A lens and a human eye each forming an upside-down image of a dog at a dashed image plane, which lies on the retina in the eye."
+       },
+       "title": "The retina is the eye's focal plane"
+      },
+      {
+       "img": {
+        "src": "img/telescopes/tel_lens_eye_focus.webp",
+        "slide": "slide 11 (Ch6.1)",
+        "alt": "A glass lens and the lens of an eye each bend parallel light rays so they meet at a focus, which in the eye lands on the retina."
+       },
+       "title": "Lens and eye focus light the same way"
+      }
      ]
     },
     {
@@ -295,6 +313,24 @@
       "Each photon that strikes a pixel adds a little electric charge. After the exposure a computer measures the charge in every pixel, which tells how many photons hit it, and the picture is stored as an array of numbers.",
       "Consumer cameras now have 10 million or more pixels; telescope cameras join many large CCDs, each with millions of pixels.",
       "Modern detectors record a far wider range of brightness, much more accurately, than photographic film did."
+     ],
+     "figures": [
+      {
+       "img": {
+        "src": "img/telescopes/tel_ccd.webp",
+        "slide": "slide 14 (Ch6.1)",
+        "alt": "A diagram of a CCD in which green photons strike a grid of pixels and release electrons, which are read out row by row through an amplifier to a digital converter."
+       },
+       "title": "Pixels count photons"
+      },
+      {
+       "img": {
+        "src": "img/telescopes/tel_ccd_chip_mosaic.webp",
+        "slide": "slide 14 (Ch6.1)",
+        "alt": "A single CCD chip on a circuit board beside a large telescope camera whose round focal plane is tiled with many CCDs."
+       },
+       "title": "A CCD chip and a telescope camera tiled with CCDs"
+      }
      ]
     },
     {
@@ -594,6 +630,24 @@
       "Reason 1: light goes through a lens, so the whole lens must be clear, flawless glass with both faces precisely shaped. A mirror needs only its reflecting surface to be precise.",
       "Reason 2: big lenses are very heavy and can be held only by their edges, at the top of the tube, where they are hard to steady and tend to sag. A primary mirror sits at the bottom and can be supported across its whole back.",
       "Lenses also absorb some infrared and ultraviolet light and suffer chromatic aberration. So nearly all research telescopes today are reflectors."
+     ],
+     "figures": [
+      {
+       "img": {
+        "src": "img/telescopes/tel_refractor.webp",
+        "slide": "slide 8 (Ch6.2 pt1)",
+        "alt": "A large refracting telescope inside an observatory dome beside a drawing of the lens at the top of the tube, with starlight passing down to the eyepiece and focus."
+       },
+       "title": "Why big refractors lost out"
+      },
+      {
+       "img": {
+        "src": "img/telescopes/tel_archenhold_refractor.webp",
+        "slide": "slide 8 (Ch6.2 pt1)",
+        "alt": "The Archenhold Observatory building in Berlin with the long tube of its refracting telescope sticking out above the roof."
+       },
+       "title": "Refractors grow impractically long"
+      }
      ]
     },
     {
@@ -765,6 +819,24 @@
       "Images and brightness measurements find new objects and give their shape, apparent size, structure, brightness and colour, and, with extra information, luminosity, distance, size and the orbital periods of star systems.",
       "Plotting luminosity against colour (B minus V) for many stars in a cluster sorts them into the main sequence, giants, supergiants and white dwarfs, and reveals properties of the whole cluster, such as its distance.",
       "Only an image shows how big something looks in the sky (its angular size) and its shape; a spectrum alone cannot."
+     ],
+     "figures": [
+      {
+       "img": {
+        "src": "img/telescopes/tel_cluster_cmd.webp",
+        "slide": "slide 6 (Ch6.2 pt2)",
+        "alt": "A plot of star luminosity against colour (B minus V) for many stars in a cluster, with the main sequence, giants, supergiants and white dwarfs labelled."
+       },
+       "title": "What images and photometry tell us"
+      },
+      {
+       "img": {
+        "src": "img/telescopes/tel_pinwheel_galaxy.webp",
+        "slide": "slide 5 (Ch6.2 pt2)",
+        "alt": "A face-on spiral galaxy with a bright yellowish core and bluish spiral arms laced with dark dust lanes."
+       },
+       "title": "Images reveal shape, size and colour"
+      }
      ]
     }
    ],
@@ -855,6 +927,24 @@
       "A **spectrograph** separates light into its colours (a spectrum) with a **diffraction grating** or a similar device, and records the spectrum with a detector.",
       "The light's path: a narrow **slit** lets in only the light of the object being studied; a collimating mirror makes the rays parallel; the grating spreads them out by wavelength; a camera mirror focuses the spread-out light; the detector records it.",
       "Here the spectrograph hangs under a reflecting telescope and the light enters through the hole in the primary mirror."
+     ],
+     "figures": [
+      {
+       "img": {
+        "src": "img/telescopes/tel_spectrograph.webp",
+        "slide": "slide 7 (Ch6.2 pt2)",
+        "alt": "A cutaway of a spectrograph attached under a telescope mirror with five labelled stages: slit, collimating mirror, diffraction grating, camera mirror and detector."
+       },
+       "title": "A spectrograph splits starlight"
+      },
+      {
+       "img": {
+        "src": "img/telescopes/tel_echelle_spectrograph.webp",
+        "slide": "slide 7 (Ch6.2 pt2)",
+        "alt": "Light enters through a slit, bounces off a concave mirror onto an echelle grating, then passes a lens and a prism that spread it into coloured strips on a CCD."
+       },
+       "title": "An echelle spectrograph"
+      }
      ]
     },
     {
@@ -869,6 +959,24 @@
       "A spectrum carries a wealth of information: **chemical composition** (which lines appear), **temperature**, and **motion**: the Doppler shift of the lines gives speed toward or away from us, and lines broadened by spin give a star's rotation rate.",
       "For distant galaxies, the speed of moving away (from the expansion of the universe) also points to their distance. Mass, age and dark matter content are worked out by combining such spectral measurements with other information.",
       "What a spectrum alone cannot give is where things are in the sky: an object's shape or angular size needs an image."
+     ],
+     "figures": [
+      {
+       "img": {
+        "src": "img/telescopes/tel_solar_spectrum_curve.webp",
+        "slide": "slide 8 (Ch6.2 pt2)",
+        "alt": "A rainbow strip of the solar spectrum with dark lines above a graph of sunlight intensity against wavelength, with dips where the atmosphere absorbs."
+       },
+       "title": "What a spectrum can tell us"
+      },
+      {
+       "img": {
+        "src": "img/telescopes/tel_rigel_phoenix.webp",
+        "slide": "slide 10 (Ch6.2 pt2)",
+        "alt": "Two sky photos: the bright blue supergiant star Rigel among glowing red clouds, and the Phoenix dwarf galaxy as a loose swarm of faint stars."
+       },
+       "title": "Spectra reveal temperature, motion and more"
+      }
      ]
     },
     {
@@ -958,6 +1066,24 @@
       "**Time monitoring** tracks these changes. The results are usually shown as a **light curve**, a graph of brightness against time.",
       "The star Mira rises and falls in brightness by more than a factor of 100, with an average period of 331 days, a little under a year.",
       "Some things can only be measured this way: the rate at which a variable star brightens and dims needs brightness recorded and compared at many different times. One image or one spectrum is a single moment."
+     ],
+     "figures": [
+      {
+       "img": {
+        "src": "img/telescopes/tel_mira_light_curve.webp",
+        "slide": "slide 11 (Ch6.2 pt2)",
+        "alt": "A graph of the brightness of the variable star Mira over about 2000 days, rising and falling again and again with a 331 day period marked."
+       },
+       "title": "Light curves"
+      },
+      {
+       "img": {
+        "src": "img/telescopes/tel_rs_puppis.webp",
+        "slide": "slide 11 (Ch6.2 pt2)",
+        "alt": "The pulsating variable star RS Puppis shining brightly in the middle of swirling wisps of glowing dust."
+       },
+       "title": "A pulsating variable star"
+      }
      ]
     },
     {
@@ -1101,6 +1227,24 @@
       "A handful of sites satisfy all four unusually well, so many of the most powerful telescopes on Earth are built there: the 4300 m summit of Maunakea in Hawai'i, a 2400 m site on La Palma in the Canary Islands, and the 2600 m Paranal site in Chile.",
       "Other famous sites in the photos are Kitt Peak in Arizona and Cerro Tololo in Chile.",
       "A mountaintop helps with light pollution, twinkling and some infrared light, but no mountain is high enough to receive ultraviolet light or X-rays."
+     ],
+     "figures": [
+      {
+       "img": {
+        "src": "img/telescopes/tel_observing_sites.webp",
+        "slide": "slide 7 (Ch6.3)",
+        "alt": "Four photos of mountaintop observatories: Mauna Kea in Hawaii, Cerro Tololo in Chile, Kitt Peak in Arizona and the Nordic Optical Telescope in the Canary Islands."
+       },
+       "title": "Choosing a site: calm, dark, high, dry"
+      },
+      {
+       "img": {
+        "src": "img/telescopes/tel_maunakea_sites.webp",
+        "slide": "slide 6 (Ch6.3)",
+        "alt": "Observatory domes scattered across the bare, high summit of Maunakea, and a large dome at twilight above the clouds."
+       },
+       "title": "The summit of Maunakea, Hawaii"
+      }
      ]
     }
    ],
