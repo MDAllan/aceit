@@ -167,8 +167,13 @@ export function publishPanel(LECS, SUBJECTS) {
     return lecture ? [{ id, cls: lecture.subject, url: `content/${id}.json` }] : [];
   });
   const biology = h("button.btn.alt.sm", { disabled: biologyJobs.length !== 2, onclick: () => publish(biology, biologyJobs, "biology lessons") }, "Publish Skeletal + Muscular");
-  buttons.push(go, biology);
-  return panel("Protect lecture content", h(".src", { style: "margin:0 0 6px" }, "Signed-in students read saved copies from the database. Publish all content to replace every saved lecture and exam, or publish only the skeletal and muscular lessons to leave other saved content unchanged. Run the relevant action again after changing a lesson."), h(".row", go, biology), status);
+  const perClass = SUBJECTS.map((x) => {
+    const jobs = [...LECS.filter((l) => l.subject === x.id).map((l) => ({ id: l.id, cls: x.id, url: `content/${l.id}.json` })), ...(x.exams ? [{ id: x.exams, cls: x.id, url: `content/${x.exams}.json`, exam: true }] : [])];
+    const b = h("button.btn.alt.sm", { disabled: !jobs.length, onclick: () => publish(b, jobs, `${x.name} lectures and exams`) }, `Publish ${x.name}`);
+    return b;
+  });
+  buttons.push(go, biology, ...perClass);
+  return panel("Protect lecture content", h(".src", { style: "margin:0 0 6px" }, "Signed-in students read saved copies from the database. Publish all content to replace every saved lecture and exam, or publish only the skeletal and muscular lessons to leave other saved content unchanged. Run the relevant action again after changing a lesson. Publish one class to update only that class's lectures and exams."), h(".row", go, biology), h(".row", { style: "margin-top:6px" }, ...perClass), status);
 }
 function auditPanel() {
   const box = h("div", h(".src", "Loading..."));
