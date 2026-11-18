@@ -2106,6 +2106,20 @@
    "back": "A space telescope with a 6.5 m mirror of 18 hexagonal segments, observing mainly infrared light from far beyond the Moon behind a large sunshield that keeps it cold.",
    "short": "Cold 6.5 m infrared space telescope",
    "src": "Ch6.2 pt1 slide 10; Ch6.3 slide 9; Cosmic Perspective 6.3"
+  },
+  {
+   "id": "tel-pt3c1",
+   "front": "Radio dish vs infrared telescope",
+   "back": "A 40 m radio dish collects 16 times the light of a 10 m telescope (area goes as D squared), but at 1 m wavelength its resolution is far worse, because the smallest angle goes as wavelength over D.",
+   "short": "16x area, much blurrier",
+   "src": "Owner's Practice Test 3"
+  },
+  {
+   "id": "tel-pt3c2",
+   "front": "Interferometry",
+   "back": "Linking several telescopes so they act like one much wider dish, sharpening angular resolution. It does not remove the blurring caused by the atmosphere.",
+   "short": "Linked telescopes: sharper, not less blur",
+   "src": "Owner's Practice Test 3"
   }
  ],
  "quiz": [
@@ -2912,6 +2926,62 @@
    "answer": 0,
    "why": "Gas at 10 million K is so hot that it glows mainly in x-rays, and x-rays are blocked by the atmosphere, so you need an x-ray telescope in space such as Chandra. Radio, ultraviolet/visible and infrared telescopes are suited to cooler material, because hotter objects emit shorter wavelengths.",
    "source": "Owner's question set (t5 x5-25)"
+  },
+  {
+   "id": "tel-x7-1",
+   "q": "How does a lens work?",
+   "options": [
+    "It speeds up light traveling through it, delivering more power to the resulting image, which is focused at the focal plane.",
+    "It refracts light rays in a manner that renders a coherent image on the image plane.",
+    "It reflects light rays in a manner that renders a coherent image at the focal point.",
+    "It uses diffraction to separate wavelengths, forming a coherent image on the image plane.",
+    "It forces light to travel through a narrow opening, decreasing circles of confusion and resulting in a coherent image on the focal plane."
+   ],
+   "answer": 1,
+   "why": "A lens bends (refracts) light so that rays from each point of the object meet at one point on the image plane, giving a coherent image. Mirrors reflect; a pinhole uses a narrow opening; light actually slows down in glass.",
+   "source": "Owner's Practice Test 3 (Q1)"
+  },
+  {
+   "id": "tel-x7-2",
+   "q": "Suppose a 40-meter radio dish is used to observe radio light from a galaxy with a wavelength of 1 meter. Meanwhile, a 10-meter telescope observes infrared light from the same galaxy with a wavelength of 1 micron (10^-6 m). Which statement is true?",
+   "options": [
+    "The radio telescope has 4 times the light-collecting area of the infrared telescope and its minimum angular resolution is greater, rendering the radio image less sharp.",
+    "The radio telescope has 16 times the light-collecting area of the infrared telescope and its minimum angular resolution is smaller, rendering the radio image less sharp.",
+    "The radio telescope has 16 times the light-collecting area of the infrared telescope and its minimum angular resolution is greater, rendering the radio image less sharp.",
+    "The radio telescope has 4 times the light-collecting area of the infrared telescope and its minimum angular resolution is smaller, rendering the radio image sharper.",
+    "The radio telescope has 16 times the light-collecting area of the infrared telescope and its minimum angular resolution is greater, rendering the radio image sharper."
+   ],
+   "answer": 2,
+   "why": "Area grows as D squared: (40/10)^2 = 16 times. Smallest resolvable angle goes as wavelength/D: radio 1/40 = 0.025 versus infrared 10^-6/10 = 10^-7. The radio angle is far larger, so its image is less sharp.",
+   "source": "Owner's Practice Test 3 (Q2)"
+  },
+  {
+   "id": "tel-x7-3",
+   "q": "Which of the following steps would NOT help to reduce or eliminate atmospheric distortions that interfere with telescope observations?",
+   "options": [
+    "Putting a telescope in space to bypass the atmosphere.",
+    "Waiting for a break in the weather.",
+    "Using adaptive optics to account for distortions in real time.",
+    "Operating a telescope in a better location with drier air and a higher altitude.",
+    "Using interferometry to achieve a better angular resolution across multiple telescopes."
+   ],
+   "answer": 4,
+   "why": "Interferometry links telescopes to act like one very wide dish, improving resolution, but it does nothing about the air bending the light. Space, adaptive optics, high dry sites and clear (calm) skies all reduce what the atmosphere does to the light.",
+   "source": "Owner's Practice Test 3 (Q3)"
+  },
+  {
+   "id": "tel-x7-4",
+   "q": "Which of the following wavelength ranges is it best to put a telescope into space to detect?",
+   "options": [
+    "Radio waves",
+    "X-rays",
+    "Visible",
+    "Infrared",
+    "None of the above require space telescopes to detect."
+   ],
+   "answer": 1,
+   "why": "The atmosphere absorbs X-rays completely, so X-ray telescopes must be above it. Radio and visible light reach the ground, and much infrared work can be done from high, dry mountains.",
+   "source": "Owner's Practice Test 3 (Q4)"
   }
  ],
  "games": [

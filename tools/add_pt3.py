@@ -1,0 +1,187 @@
+"""Owner's ASTR 207 'Practice Test 3' (24 questions, no answer key given; keys derived and checked
+against the course notes). Adds it as exam t7, copies each question into its unit quiz, and adds
+flashcards (which feed the matching, memory, blitz, guess and sprint games). Safe to re-run."""
+import json
+
+Q = [  # (unit, question, options, answer index, why)
+ ("telescopes", "How does a lens work?",
+  ["It speeds up light traveling through it, delivering more power to the resulting image, which is focused at the focal plane.",
+   "It refracts light rays in a manner that renders a coherent image on the image plane.",
+   "It reflects light rays in a manner that renders a coherent image at the focal point.",
+   "It uses diffraction to separate wavelengths, forming a coherent image on the image plane.",
+   "It forces light to travel through a narrow opening, decreasing circles of confusion and resulting in a coherent image on the focal plane."],
+  1, "A lens bends (refracts) light so that rays from each point of the object meet at one point on the image plane, giving a coherent image. Mirrors reflect; a pinhole uses a narrow opening; light actually slows down in glass."),
+ ("telescopes", "Suppose a 40-meter radio dish is used to observe radio light from a galaxy with a wavelength of 1 meter. Meanwhile, a 10-meter telescope observes infrared light from the same galaxy with a wavelength of 1 micron (10^-6 m). Which statement is true?",
+  ["The radio telescope has 4 times the light-collecting area of the infrared telescope and its minimum angular resolution is greater, rendering the radio image less sharp.",
+   "The radio telescope has 16 times the light-collecting area of the infrared telescope and its minimum angular resolution is smaller, rendering the radio image less sharp.",
+   "The radio telescope has 16 times the light-collecting area of the infrared telescope and its minimum angular resolution is greater, rendering the radio image less sharp.",
+   "The radio telescope has 4 times the light-collecting area of the infrared telescope and its minimum angular resolution is smaller, rendering the radio image sharper.",
+   "The radio telescope has 16 times the light-collecting area of the infrared telescope and its minimum angular resolution is greater, rendering the radio image sharper."],
+  2, "Area grows as D squared: (40/10)^2 = 16 times. Smallest resolvable angle goes as wavelength/D: radio 1/40 = 0.025 versus infrared 10^-6/10 = 10^-7. The radio angle is far larger, so its image is less sharp."),
+ ("telescopes", "Which of the following steps would NOT help to reduce or eliminate atmospheric distortions that interfere with telescope observations?",
+  ["Putting a telescope in space to bypass the atmosphere.",
+   "Waiting for a break in the weather.",
+   "Using adaptive optics to account for distortions in real time.",
+   "Operating a telescope in a better location with drier air and a higher altitude.",
+   "Using interferometry to achieve a better angular resolution across multiple telescopes."],
+  4, "Interferometry links telescopes to act like one very wide dish, improving resolution, but it does nothing about the air bending the light. Space, adaptive optics, high dry sites and clear (calm) skies all reduce what the atmosphere does to the light."),
+ ("telescopes", "Which of the following wavelength ranges is it best to put a telescope into space to detect?",
+  ["Radio waves", "X-rays", "Visible", "Infrared", "None of the above require space telescopes to detect."],
+  1, "The atmosphere absorbs X-rays completely, so X-ray telescopes must be above it. Radio and visible light reach the ground, and much infrared work can be done from high, dry mountains."),
+ ("planetarysystem", "Which of the following is NOT an exception to the general patterns in the Solar System? (An exception is a feature that would likely not be present if a random or catastrophic event had not occurred.)",
+  ["the retrograde rotation of Venus", "the large size of the Moon compared to the Earth", "the extensive ring system of Saturn",
+   "the extreme obliquity of Uranus", "the backwards orbit of Triton around Neptune"],
+  2, "All the jovian planets have rings, so Saturn's rings fit the normal pattern. Venus spinning backwards, Uranus's huge tilt, Earth's oversized Moon and Triton's backwards orbit are the classic exceptions, probably caused by impacts or captures."),
+ ("planetarysystem", "Which of the following tasks is an orbiter mission generally better suited for than a lander mission?",
+  ["High-detail local topographical mapping", "Sample collection", "Conducting chemical tests of the surface",
+   "Seismological tests", "Magnetosphere measurement"],
+  4, "A planet's magnetosphere surrounds the whole world, so a spacecraft moving through it in orbit measures it best. Sampling, surface chemistry, seismometers and close-up local mapping need a lander or rover on the ground."),
+ ("planetarysystem", "Which of the following is NOT a true difference between Earth and Venus?",
+  ["Earth has frozen water, but Venus does not.", "Earth has a strong magnetic field, but Venus does not.",
+   "Earth has tectonics, but Venus does not.", "Earth experiences large-scale erosion, but Venus does not.",
+   "Earth's surface can be seen from space with the human eye, but Venus' surface cannot."],
+  2, "Venus does have tectonics: its surface is folded and cracked by forces from its hot interior. What it lacks is plate tectonics. The other statements are true differences."),
+ ("planetarysystem", "Which of the following is NOT a true difference between Saturn and Uranus?",
+  ["Saturn has rings but Uranus does not.", "Saturn is much larger and more massive than Uranus.", "Saturn is less dense than Uranus.",
+   "Uranus is chemically more complex than Saturn.", "Uranus has a much longer year than Saturn."],
+  0, "Uranus has rings too (all four jovian planets do), so this is not a real difference. Saturn is bigger and less dense; Uranus has more hydrogen compounds and an 84-year orbit versus Saturn's 29 years."),
+ ("planetarysystem", "Where are most comets in the Solar System found?",
+  ["beyond the frost line between Jupiter and Neptune", "between the Sun and Earth", "between Mars and Jupiter",
+   "beyond Neptune in the Oort cloud", "beyond Neptune in the Kuiper belt"],
+  3, "The Oort cloud, a huge sphere far beyond Neptune, holds possibly trillions of comets, far more than the Kuiper belt. The region between Mars and Jupiter is the asteroid belt."),
+ ("formation", "Where can we find the BEST observational evidence of our current theory of Solar System formation?",
+  ["In the spectra of stars.", "In the dark matter halos of distant galaxies.", "In nearby nebulae.",
+   "In the Kuiper belt and Oort cloud.", "In supernova explosions of nearby stars."],
+  2, "In nearby clouds of gas we can watch stars forming right now, surrounded by flattened spinning disks of gas and dust, just as the nebular theory predicts for our own Sun."),
+ ("formation", "Which of the following correctly describes the sequence of energy conversion processes that occurred in the formation of the early Solar System?",
+  ["Heat energy was converted into gravitational potential energy as the solar nebula collapsed to form the Sun, and some of this potential energy was then converted into nuclear energy to kickstart the Sun's fusion reactions.",
+   "Gravitational potential energy was converted into kinetic energy as the nebula collapsed, and most of this energy was dissipated as heat and radiation.",
+   "Kinetic energy was converted into gravitational potential energy as the nebula collapsed, and this potential energy caused the Sun to shrink and spin faster.",
+   "Gravitational potential energy was converted to kinetic energy as the nebula collapsed, and most of this energy was converted into chemical energy to create the raw materials from which the planets could form.",
+   "Kinetic energy was converted into nuclear energy as the Sun formed, and some of this nuclear energy was converted into radiation to generate the solar wind."],
+  1, "As the cloud fell inward, gravitational potential energy became the motion (kinetic energy) of its particles. Collisions turned that motion into heat, and much of the heat escaped as radiation."),
+ ("formation", "Why are the Jovian planets so much larger than the terrestrial planets?",
+  ["The Jovian planetesimals formed earlier in the Solar System's history, allowing them to accrete more material than the terrestrial planets.",
+   "The Jovian planetesimals were cooler than the terrestrial ones, and could accrete hydrogen and helium gas onto them through condensation.",
+   "The Jovian planetesimals formed beyond the frost line for hydrogen and helium, which allowed them to capture these gases and grow larger than the terrestrial ones.",
+   "The Jovian planetesimals grew more quickly than the terrestrial ones since they could incorporate hydrogen compounds, and were thus able to capture large amounts of hydrogen and helium gas before it was cleared out by the solar wind.",
+   "The Jovian planetesimals simply had more material to assemble from, as their orbits were larger."],
+  3, "Beyond the frost line, ices of hydrogen compounds (water, methane, ammonia) could condense, so planetesimals there had far more solid material and grew big fast. Their strong gravity then pulled in hydrogen and helium gas before the young Sun's wind cleared it. The frost line is for hydrogen compounds, not hydrogen and helium, which never condense."),
+ ("formation", "Which of the following statements best explains why all the major planets orbit the Sun in the same direction and in nearly the same plane?",
+  ["The Sun's gravity is strongest at its equator, so it pulled all the planets into this orbital alignment.",
+   "The planets that did not orbit in the same direction and in different planes got destroyed by collisions or were flung out of the Solar System by gravity.",
+   "The Sun's rotation spun out the planets as it formed.",
+   "The planets originally orbited in different directions, but gravity later pulled them into an ordered formation.",
+   "The planets formed from a disk of rotating gas, and their orbits therefore match the direction and plane of the disk's rotation."],
+  4, "The collapsing nebula spun faster and flattened into a disk. Planets that grew within that spinning disk inherited its direction and its plane."),
+ ("formation", "What is the correct timeline for the formation of the Solar System? (Hint: remember how long the heavy bombardment took, and what would have happened if the solar nebula had not been cleared fairly quickly.)",
+  ["The solar nebula collapsed, the solar nebula was cleared, the planetesimals grew via accretion, the heavy bombardment ended.",
+   "The solar nebula collapsed, the planetesimals grew via accretion, the heavy bombardment ended, the solar nebula was cleared.",
+   "The solar nebula collapsed, the heavy bombardment ended, the planetesimals grew via accretion, the solar nebula was cleared.",
+   "The solar nebula collapsed, the solar nebula was cleared, the heavy bombardment ended, the planetesimals grew via accretion.",
+   "The solar nebula collapsed, the planetesimals grew via accretion, the solar nebula was cleared, the heavy bombardment ended."],
+  4, "Collapse came first, then planetesimals grew by accretion. The leftover gas was cleared early (otherwise the terrestrial planets would have kept gathering gas), and the heavy bombardment dragged on for a few hundred million years after that."),
+ ("formation", "Which of the following did NOT happen during the heavy bombardment?",
+  ["The Moon formed.", "Earth acquired its water and life began to develop.",
+   "Planetesimals were flung by gravitational encounters in different directions, some becoming the moons of larger planetesimals.",
+   "The Sun formed at its current location and hydrogen fusion began.",
+   "Some planetesimals collided violently, resulting in unusual tilts or rotation directions."],
+  3, "The Sun formed and began fusion at the very start, when the centre of the collapsing nebula grew hot and dense, long before the bombardment by leftover planetesimals."),
+ ("planetgeology", "Which of the following properties is MOST important in determining the boundary between the lithosphere and the asthenosphere of the Earth?",
+  ["rock strength and temperature", "chemical composition", "density", "physical state (liquid, solid)", "geological age"],
+  0, "The lithosphere is cool, rigid rock; the asthenosphere below is warmer, softer rock that can flow slowly. Both are solid and similar in makeup, so the boundary is set by temperature and strength."),
+ ("planetgeology", "Which of the following statements about the heating of Earth's interior is NOT true?",
+  ["Radioactivity is the dominant source of internal heating today.",
+   "Impacts during accretion and the heavy bombardment released enormous quantities of heat in the past, but this heat has since completely dissipated.",
+   "Differentiation was once a major heat source, but no longer contributes much to Earth's internal heat budget.",
+   "Convection does not produce any heat within Earth's interior.",
+   "Eventually, all radioactive elements on Earth will decay, differentiation will cease, and all internal heat sources will be exhausted, rendering Earth geologically dead."],
+  1, "Heat from accretion has not completely escaped: a large planet like Earth keeps part of its early heat for billions of years, which is one reason it is still active. Radioactive decay is the main heat source today, and convection only moves heat, it does not make it."),
+ ("planetgeology", "Which of the following statements regarding differentiation and convection in geology is TRUE?",
+  ["Differentiation only involves material sinking, but convection involves material both rising and sinking.",
+   "Differentiation occurs throughout the interior of a planet, but convection takes place only in the core.",
+   "Differentiation involves rocks and metals, but convection involves magma (liquid rock).",
+   "Differentiation concluded long ago, but convection continues to this day.",
+   "Differentiation involves the large-scale movement of material, but convection is a microscopic heat transport process."],
+  3, "Differentiation (dense metal sinking to the core, lighter rock rising) happened early in Earth's history. Mantle convection, slow flow of hot solid rock, still goes on today. Light material also rises during differentiation, and convection is large scale and mostly in solid rock."),
+ ("planetgeology", "Which of the following BEST describes why Mercury does NOT have a strong magnetic field?",
+  ["Mercury has a large iron core relative to its size.", "Mercury has a very long day.",
+   "Mercury is too close to the Sun, leading to the erosion of its magnetic field by the solar wind.",
+   "Mercury has very little atmosphere.", "Mercury's temperature gradient interferes with the generation of a strong magnetic field."],
+  1, "A strong magnetic field needs a convecting, electrically conducting core and fairly rapid rotation. Mercury rotates very slowly (its day lasts months), so its field is weak despite its large iron core."),
+ ("planetgeology", "Jupiter's moon Callisto has many more craters on its surface than either Io or Europa. What can we conclude from this?",
+  ["Callisto has been struck by many more impactors than Io or Europa.",
+   "Callisto's surface is much younger, likely because geological processes on Io and Europa have had time to erode those moons' craters.",
+   "Callisto's surface is much older, likely because geological processes on Io and Europa continuously repave their surfaces.",
+   "Callisto's surface is much older, likely because the moon itself is older than Io or Europa.",
+   "The moon is farther out in its orbit than the others, which explains why it gets struck more often."],
+  2, "More craters means an older surface. All three moons are the same age, but volcanism on Io and ice activity on Europa keep erasing craters, while geologically dead Callisto keeps every one."),
+ ("planetgeology", "Suppose you discover chasms on a rocky exoplanet that stretch for hundreds of kilometers. The planet has no substantial atmosphere but is twice as massive as Earth. Which is a reasonable hypothesis for the origin of the chasms?",
+  ["They are a result of impacts to the surface from asteroids coming in at a glancing blow.",
+   "They are a result of erosion, as these planetary conditions permit a water cycle.",
+   "They are a result of volcanism, as lava flows can carve deep channels in softer rock.",
+   "They are a result of tectonic activity, as internal heat is likely high enough for large-scale surface disruption.",
+   "They are a result of atmospheric processes such as storms that can crack the landscape."],
+  3, "A planet twice Earth's mass keeps plenty of internal heat, so tectonic stretching and cracking of its crust is likely. With no atmosphere there is no water cycle or storms, so erosion and weather are ruled out."),
+ ("planetgeology", "On what kind of world would we expect to see evidence of erosion?",
+  ["On a large planet far enough from its host star to freeze water, with a high rotation rate (short day) and lots of atmosphere.",
+   "On a small planet close enough to its host star to vaporize water, with a slow rotation rate (long day) and little atmosphere.",
+   "On a large planet at a suitable distance from its host star to allow multiple phases of water to coexist, with a high rotation rate (short day) and lots of atmosphere.",
+   "On a small planet far enough from its host star to freeze water, with a high rotation rate (short day) and little atmosphere.",
+   "On a large planet at a suitable distance from its host star to allow multiple phases of water to coexist, with a slow rotation rate (long day) and lots of atmosphere."],
+  2, "Erosion needs weather: a thick atmosphere (large size helps hold one), water that can rain, flow and freeze, and fast rotation, which drives strong winds and storms."),
+ ("planetgeology", "Which of the following is by itself NOT evidence for plate tectonics on Earth?",
+  ["Seismic data shows that most strong earthquakes happen along long fault lines that connect together, dividing Earth's surface.",
+   "Some continental boundaries, and especially their continental shelves, fit together like pieces of a jigsaw puzzle.",
+   "Numerous mountains and active volcanoes are found across the Earth's surface.",
+   "Similar rocks and fossils are found in different continents.",
+   "Satellites detect incremental movement of different large landmasses."],
+  2, "Mountains and volcanoes alone do not prove moving plates: Mars and Venus have them without plate tectonics. Linked earthquake belts, fitting coastlines, matching fossils and measured drift all point to plates."),
+ ("planetgeology", "Mid-ocean ridges are places where",
+  ["hot mantle material rises upward and spreads sideways, pushing the plates apart.",
+   "one plate sinks beneath another, returning older crust to the mantle.",
+   "plates slip sideways relative to one another.",
+   "hot mantle material rises upward, creating volcanic islands.",
+   "plates push together, creating ocean mountain chains."],
+  0, "At mid-ocean ridges hot mantle rock wells up and spreads outward, making new sea floor and pushing plates apart. Sinking beneath is subduction; sideways slipping is a transform fault; rising plumes making islands are hot spots."),
+]
+
+CARDS = {
+ "telescopes": [("Radio dish vs infrared telescope", "A 40 m radio dish collects 16 times the light of a 10 m telescope (area goes as D squared), but at 1 m wavelength its resolution is far worse, because the smallest angle goes as wavelength over D.", "16x area, much blurrier"),
+                ("Interferometry", "Linking several telescopes so they act like one much wider dish, sharpening angular resolution. It does not remove the blurring caused by the atmosphere.", "Linked telescopes: sharper, not less blur")],
+ "planetarysystem": [("Orbiter vs lander", "Orbiters study a whole world from above: global maps, atmosphere, magnetosphere. Landers and rovers do close-up work: samples, surface chemistry, seismometers.", "Global from orbit, close-up on the ground"),
+                     ("Where most comets live", "In the Oort cloud, a vast sphere far beyond Neptune with possibly trillions of comets, many more than the Kuiper belt.", "The Oort cloud")],
+ "formation": [("Energy in the collapsing nebula", "Gravitational potential energy became kinetic energy of falling gas; collisions turned it into heat, and much of it escaped as radiation.", "Potential to kinetic to heat"),
+               ("Formation timeline", "Nebula collapses, planetesimals accrete, leftover gas is cleared, then the heavy bombardment ends a few hundred million years later.", "Collapse, accrete, clear, bombardment ends")],
+ "planetgeology": [("Lithosphere-asthenosphere boundary", "Set by temperature and rock strength: cool rigid rock above, warmer softer rock that flows slowly below. Both are solid.", "Temperature and strength"),
+                   ("Differentiation vs convection", "Differentiation (dense metal sinking, light rock rising) finished early in a planet's history; mantle convection still goes on today.", "Done long ago vs still happening"),
+                   ("Why Mercury's magnetic field is weak", "Its very slow rotation (a day lasting months): a strong field needs a convecting metal core plus fairly rapid rotation.", "Very slow rotation")],
+}
+PRE = {"telescopes": "tel", "planetarysystem": "pln", "formation": "for", "planetgeology": "pg"}
+
+def load(p): return json.load(open(p, encoding="utf-8"))
+def save(p, d):
+    with open(p, "w", encoding="utf-8", newline="\n") as f: json.dump(d, f, indent=1, ensure_ascii=False); f.write("\n")
+
+e = load("content/exams-astr207.json")
+qs = [{"id": f"x7-{i}", "q": q, "options": o, "answer": a, "why": w} for i, (u, q, o, a, w) in enumerate(Q, 1)]
+test = {"id": "t7", "title": "Practice Test 3: Telescopes to Planetary Geology",
+        "blurb": "24 questions on lenses and telescopes, solar system patterns, how the solar system formed, and planetary interiors and surfaces.",
+        "questions": qs}
+e["tests"] = [t for t in e["tests"] if t["id"] != "t7"] + [test]
+save("content/exams-astr207.json", e)
+
+for unit in PRE:
+    p = f"content/{unit}.json"; d = load(p)
+    have = {q["id"] for q in d["quiz"]}
+    for i, (u, q, o, a, w) in enumerate(Q, 1):
+        nid = f"{PRE[unit]}-x7-{i}"
+        if u == unit and nid not in have:
+            d["quiz"].append({"id": nid, "q": q, "options": o, "answer": a, "why": w, "source": f"Owner's Practice Test 3 (Q{i})"})
+    cids = {c["id"] for c in d["cards"]}
+    for k, (front, back, short) in enumerate(CARDS[unit], 1):
+        cid = f"{PRE[unit]}-pt3c{k}"
+        if cid not in cids:
+            d["cards"].append({"id": cid, "front": front, "back": back, "short": short, "src": "Owner's Practice Test 3"})
+    save(p, d)
+    print(unit, "quiz", len(d["quiz"]), "cards", len(d["cards"]))

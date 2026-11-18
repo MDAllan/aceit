@@ -2321,6 +2321,20 @@
    "back": "The only spacecraft to visit Uranus (1986) and Neptune (1989), after flybys of Jupiter (1979) and Saturn (1981).",
    "short": "Visited all four giants.",
    "src": "Ch7.3 slides 5, 6; Cosmic Perspective 7.3"
+  },
+  {
+   "id": "pln-pt3c1",
+   "front": "Orbiter vs lander",
+   "back": "Orbiters study a whole world from above: global maps, atmosphere, magnetosphere. Landers and rovers do close-up work: samples, surface chemistry, seismometers.",
+   "short": "Global from orbit, close-up on the ground",
+   "src": "Owner's Practice Test 3"
+  },
+  {
+   "id": "pln-pt3c2",
+   "front": "Where most comets live",
+   "back": "In the Oort cloud, a vast sphere far beyond Neptune with possibly trillions of comets, many more than the Kuiper belt.",
+   "short": "The Oort cloud",
+   "src": "Owner's Practice Test 3"
   }
  ],
  "quiz": [
@@ -3148,6 +3162,76 @@
    "answer": 0,
    "why": "The Sun spins the same way the planets travel around it, so 'the planets orbit opposite to the Sun's rotation' is simply false and cannot be one of the patterns. The other statements are real patterns: most planets rotate in the direction they orbit (Venus and Uranus are exceptions), most orbits lie in nearly the same plane, most planets orbit in the same direction, and large moons orbit in the direction their planet rotates.",
    "source": "Owner's question set (t5 x5-48)"
+  },
+  {
+   "id": "pln-x7-5",
+   "q": "Which of the following is NOT an exception to the general patterns in the Solar System? (An exception is a feature that would likely not be present if a random or catastrophic event had not occurred.)",
+   "options": [
+    "the retrograde rotation of Venus",
+    "the large size of the Moon compared to the Earth",
+    "the extensive ring system of Saturn",
+    "the extreme obliquity of Uranus",
+    "the backwards orbit of Triton around Neptune"
+   ],
+   "answer": 2,
+   "why": "All the jovian planets have rings, so Saturn's rings fit the normal pattern. Venus spinning backwards, Uranus's huge tilt, Earth's oversized Moon and Triton's backwards orbit are the classic exceptions, probably caused by impacts or captures.",
+   "source": "Owner's Practice Test 3 (Q5)"
+  },
+  {
+   "id": "pln-x7-6",
+   "q": "Which of the following tasks is an orbiter mission generally better suited for than a lander mission?",
+   "options": [
+    "High-detail local topographical mapping",
+    "Sample collection",
+    "Conducting chemical tests of the surface",
+    "Seismological tests",
+    "Magnetosphere measurement"
+   ],
+   "answer": 4,
+   "why": "A planet's magnetosphere surrounds the whole world, so a spacecraft moving through it in orbit measures it best. Sampling, surface chemistry, seismometers and close-up local mapping need a lander or rover on the ground.",
+   "source": "Owner's Practice Test 3 (Q6)"
+  },
+  {
+   "id": "pln-x7-7",
+   "q": "Which of the following is NOT a true difference between Earth and Venus?",
+   "options": [
+    "Earth has frozen water, but Venus does not.",
+    "Earth has a strong magnetic field, but Venus does not.",
+    "Earth has tectonics, but Venus does not.",
+    "Earth experiences large-scale erosion, but Venus does not.",
+    "Earth's surface can be seen from space with the human eye, but Venus' surface cannot."
+   ],
+   "answer": 2,
+   "why": "Venus does have tectonics: its surface is folded and cracked by forces from its hot interior. What it lacks is plate tectonics. The other statements are true differences.",
+   "source": "Owner's Practice Test 3 (Q7)"
+  },
+  {
+   "id": "pln-x7-8",
+   "q": "Which of the following is NOT a true difference between Saturn and Uranus?",
+   "options": [
+    "Saturn has rings but Uranus does not.",
+    "Saturn is much larger and more massive than Uranus.",
+    "Saturn is less dense than Uranus.",
+    "Uranus is chemically more complex than Saturn.",
+    "Uranus has a much longer year than Saturn."
+   ],
+   "answer": 0,
+   "why": "Uranus has rings too (all four jovian planets do), so this is not a real difference. Saturn is bigger and less dense; Uranus has more hydrogen compounds and an 84-year orbit versus Saturn's 29 years.",
+   "source": "Owner's Practice Test 3 (Q8)"
+  },
+  {
+   "id": "pln-x7-9",
+   "q": "Where are most comets in the Solar System found?",
+   "options": [
+    "beyond the frost line between Jupiter and Neptune",
+    "between the Sun and Earth",
+    "between Mars and Jupiter",
+    "beyond Neptune in the Oort cloud",
+    "beyond Neptune in the Kuiper belt"
+   ],
+   "answer": 3,
+   "why": "The Oort cloud, a huge sphere far beyond Neptune, holds possibly trillions of comets, far more than the Kuiper belt. The region between Mars and Jupiter is the asteroid belt.",
+   "source": "Owner's Practice Test 3 (Q9)"
   }
  ],
  "games": [
