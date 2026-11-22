@@ -1,0 +1,2128 @@
+{
+ "id": "endocrine",
+ "title": "The Endocrine System",
+ "chapter": "Unit 7",
+ "icon": "🧪",
+ "color": "#c0392b",
+ "slideFile": "Endocrine System - I.pdf; The Endocrine System (Part 2).pdf",
+ "intro": "The endocrine system is the body's long-distance control system: glands release hormones into the blood, and only cells with the right receptors respond. This unit covers the types of hormones, how insulin and glucagon hold blood glucose steady, the stress response and the hypothalamic-pituitary-adrenal axis, cortisol and aldosterone, the pituitary hormones and their targets, and the hormones made by the thyroid, parathyroids, thymus, pineal gland, heart, gut and kidneys.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Describe what hormones are, compare steroid, peptide and amine hormones, and explain how receptors decide which cells respond."
+  },
+  {
+   "id": "goal-02",
+   "text": "Distinguish homeostasis from allostasis and explain the energy cost of each."
+  },
+  {
+   "id": "goal-03",
+   "text": "Explain how insulin and glucagon keep blood glucose in a narrow range, and compare type I, type II and gestational diabetes."
+  },
+  {
+   "id": "goal-04",
+   "text": "Trace the stress response through the hypothalamic-pituitary-adrenal axis and describe how cortisol acts and is switched off."
+  },
+  {
+   "id": "goal-05",
+   "text": "Describe where aldosterone is made, what triggers it and how it signals."
+  },
+  {
+   "id": "goal-06",
+   "text": "Name the anterior and posterior pituitary hormones, their targets and their effects, including thyroid hormone, calcium control and goitre."
+  },
+  {
+   "id": "goal-07",
+   "text": "Recall the hormones of the thymus, pineal gland, heart, digestive tract and kidneys and what they do."
+  }
+ ],
+ "sections": [
+  {
+   "id": "hormones",
+   "title": "What hormones are",
+   "slides": "P1 3",
+   "steps": [
+    {
+     "title": "The long-distance control system",
+     "bullets": [
+      "The endocrine system is the body's **long-distance control system**. Glands release **hormones** into the blood, and the blood carries them all over the body.",
+      "A **hormone** is a chemical messenger that is not a nutrient. It can act on the cell that released it and on **target cells** far away."
+     ]
+    },
+    {
+     "title": "Three chemical types",
+     "bullets": [
+      "**Steroid hormones** are made from **cholesterol**. They are **hydrophobic** (fat-loving). Examples: cortisol and aldosterone.",
+      "**Peptide hormones** are made like any protein, by reading a gene (transcription and translation). They are **hydrophilic** (water-loving). Examples: insulin and glucagon.",
+      "**Amine hormones** are made from **one amino acid**. Most are hydrophilic and a few are hydrophobic. Thyroid hormone comes from **tyrosine** and serotonin comes from **tryptophan**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Hydrophobic steroids slip through the fatty cell membrane, so their receptors can sit inside the cell. Hydrophilic peptides cannot cross it, so they bind receptors on the cell surface. You will see both kinds later: insulin uses a membrane receptor and cortisol uses receptors inside the cell."
+    },
+    {
+     "type": "trick",
+     "text": "Steroid = Sterol (cholesterol). Peptide = Protein. Amine = one Amino acid."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slide 3: insulin and glucagon are PEPTIDES, not amines. Thyroid hormone is an AMINE (from tyrosine) even though it is not a peptide. Steroids are hydrophobic, peptides hydrophilic; amines are MOSTLY hydrophilic."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 3.",
+    "Why-box (membrane crossing and receptor location) is standard background; the membrane vs nuclear receptors for insulin and cortisol are on Part 1 slides 8 and 13-14."
+   ],
+   "images": [],
+   "table": {
+    "head": [
+     "Type",
+     "Made from",
+     "Water or fat loving",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "Steroid",
+      "Cholesterol",
+      "Hydrophobic",
+      "Cortisol, aldosterone"
+     ],
+     [
+      "Peptide",
+      "A gene (transcription and translation)",
+      "Hydrophilic",
+      "Insulin, glucagon"
+     ],
+     [
+      "Amine",
+      "One amino acid",
+      "Mostly hydrophilic",
+      "Thyroid hormone (tyrosine), serotonin (tryptophan)"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "receptors",
+   "title": "Target cells, receptors and too much or too little hormone",
+   "slides": "P1 4",
+   "steps": [
+    {
+     "title": "Which cells listen",
+     "bullets": [
+      "A cell is a **target cell** only if it has **receptors** for that hormone. Every cell the blood reaches gets the hormone, but only cells with the right receptor respond.",
+      "The **number of receptors** changes between tissues, between life stages and with the body's condition."
+     ]
+    },
+    {
+     "title": "Receptors are not one-to-one",
+     "bullets": [
+      "**One hormone can have more than one receptor.** Epinephrine has **α (alpha)** and **β (beta)** receptors.",
+      "Different receptors can cause **different effects**. For epinephrine, α receptors cause **vasoconstriction** (vessels narrow) and β receptors cause **vasodilation** (vessels widen).",
+      "**One receptor can respond to more than one hormone.** The **mineralocorticoid receptor (MR)** responds to both **cortisol** and **aldosterone**."
+     ]
+    },
+    {
+     "title": "Hormone problems",
+     "bullets": [
+      "**Hyposecretion** is too little hormone. Causes include an **autoimmune response** (the immune system attacks the gland) or faster **breakdown** of the hormone.",
+      "**Hypersecretion** is too much hormone. Causes include a **tumor** or taking the hormone from outside the body (**exogenous** consumption)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Because the response depends on the receptor, the same hormone can do opposite things in two tissues. Epinephrine can narrow vessels in one place and widen them in another."
+    },
+    {
+     "type": "trick",
+     "text": "Hypo = under (too little). Hyper = over (too much). Like hypothermia and hyperthermia."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slide 4: α = vasoCONSTRICTION, β = vasoDILATION. MR is the one receptor that both cortisol AND aldosterone bind. A tumor causes HYPERsecretion; autoimmune attack causes HYPOsecretion."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 4."
+   ],
+   "images": []
+  },
+  {
+   "id": "allostasis",
+   "title": "Homeostasis and allostasis",
+   "slides": "P1 5",
+   "steps": [
+    {
+     "title": "Two ways to stay stable",
+     "bullets": [
+      "**Homeostasis** keeps internal values nearly constant, such as **glucose**, **temperature** and **osmolarity**. These change only a little, in **predictable** ways, over the day.",
+      "**Homeostatic load** is the energy spent to keep homeostasis going.",
+      "**Allostasis** is reaching stability by **changing and holding** the activity of most body systems in response to **unpredicted** changes, such as **starvation, illness or stress**.",
+      "**Allostatic load** is the energy spent on those altered activities."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/budget_p1-5.webp",
+      "slide": "Part 1 slide 5",
+      "alt": "Two stacked bars of the total energy budget. Both have S (standard metabolism) and R (routine activity) at the bottom. In the left bar the rest is scope for adjustments X1 to Xn; in the right bar a large Stress block squeezes X1 to Xn into a thin top layer."
+     },
+     "title": "The energy budget",
+     "bullets": [
+      "The body has a **total energy budget**. **S** is standard metabolism and **R** is routine activity. What is left (X1 to Xn) is the **scope for adjustments**.",
+      "Under **stress**, a big block of the budget goes to the stress response, so much less is left for other adjustments."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Energy spent coping with stress is energy that cannot go to other jobs. That is why long-lasting stress wears the body down."
+    },
+    {
+     "type": "trick",
+     "text": "HOMEostasis = keep things the same as at HOME, day to day. ALLOstasis = ALter everything to cope with a surprise."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slide 5: homeostasis = PREDICTABLE, narrow changes; allostasis = response to UNPREDICTED change (starvation, illness, stress). Homeostatic load and allostatic load are both ENERGY spent. In the figure, S = standard metabolism, R = routine activity (not 'stress' or 'rest')."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 5; figure labels S and R from the slide.",
+    "Why-box (long-term stress wears the body down) is a generic reading of the energy-budget figure."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/budget_p1-5.webp",
+     "slide": "Part 1 slide 5",
+     "alt": "Two stacked bars of the total energy budget. Both have S (standard metabolism) and R (routine activity) at the bottom. In the left bar the rest is scope for adjustments X1 to Xn; in the right bar a large Stress block squeezes X1 to Xn into a thin top layer."
+    }
+   ]
+  },
+  {
+   "id": "glucose",
+   "title": "Insulin and glucagon keep blood glucose steady",
+   "slides": "P1 6-7",
+   "steps": [
+    {
+     "title": "The islets of Langerhans",
+     "bullets": [
+      "The pancreas has small endocrine clusters called **islets of Langerhans**.",
+      "**α (alpha) cells** make **glucagon**, **β (beta) cells** make **insulin** and **δ (delta) cells** make **somatostatin**. Most islet cells are **β cells**.",
+      "Blood glucose is held in a narrow range, about **80 to 120 mg/dl**. Insulin and glucagon are the **glucostatic** hormones that do this."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/meals_p1-6.webp",
+      "slide": "Part 1 slide 6",
+      "alt": "Two sets of graphs over four hours. After a high-carbohydrate meal, plasma glucose peaks, insulin also peaks and glucagon declines. After a high-protein meal, blood amino acids rise, glucose stays nearly flat, and insulin and glucagon both rise."
+     },
+     "title": "What a meal does",
+     "bullets": [
+      "A **carbohydrate-rich meal** raises blood glucose, so **insulin rises** and **glucagon falls**.",
+      "A **protein-rich meal** raises blood **amino acids**, so **insulin and glucagon both rise**. Blood glucose barely changes."
+     ]
+    },
+    {
+     "title": "Insulin lowers glucose",
+     "bullets": [
+      "Insulin is **hypoglycemic**: it lowers blood glucose.",
+      "It is stimulated by **high blood glucose**, **high amino acids**, **GLP-1** (glucagon-like peptide 1) and **parasympathetic** nerve signals to β cells.",
+      "Its main targets are **skeletal muscle, liver and adipose (fat) tissue**.",
+      "It increases glucose **uptake, use and storage** as glycogen, protein and fat. It suppresses glucagon release and the breakdown processes below."
+     ]
+    },
+    {
+     "title": "Glucagon raises glucose",
+     "bullets": [
+      "Glucagon is **hyperglycemic**: it raises blood glucose.",
+      "It is stimulated by **low blood glucose**, **high amino acids** and **sympathetic** nerve signals to α cells.",
+      "Its main target is the **liver**.",
+      "It increases **glycogenolysis** (glycogen broken into glucose), **gluconeogenesis** (new glucose made), **lipolysis** (fat broken down) and **proteolysis** (protein broken down). It suppresses insulin release."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "If a protein meal raised only insulin, insulin would push glucose into cells and blood glucose could drop too low. Glucagon rising at the same time balances it, so glucose stays steady."
+    },
+    {
+     "type": "trick",
+     "text": "glucaGONe: when glucose is GONE, glucagon comes out. INsulin puts glucose INto cells."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slides 6-7: amino acids stimulate BOTH insulin and glucagon. Parasympathetic signals stimulate insulin (β cells); sympathetic signals stimulate glucagon (α cells). Insulin targets muscle, liver AND fat; glucagon's major target is the LIVER only. Most islet cells are β cells, not α."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slides 6-7; meal responses read from the graph on Part 1 slide 6.",
+    "Why-box (glucagon balancing insulin after a protein meal) is standard physiology reasoning."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/meals_p1-6.webp",
+     "slide": "Part 1 slide 6",
+     "alt": "Two sets of graphs over four hours. After a high-carbohydrate meal, plasma glucose peaks, insulin also peaks and glucagon declines. After a high-protein meal, blood amino acids rise, glucose stays nearly flat, and insulin and glucagon both rise."
+    }
+   ],
+   "table": {
+    "head": [
+     "",
+     "Insulin",
+     "Glucagon"
+    ],
+    "rows": [
+     [
+      "Effect on blood glucose",
+      "Lowers it (hypoglycemic)",
+      "Raises it (hyperglycemic)"
+     ],
+     [
+      "Made by",
+      "β cells",
+      "α cells"
+     ],
+     [
+      "Stimulated by",
+      "High glucose, high amino acids, GLP-1, parasympathetic signals",
+      "Low glucose, high amino acids, sympathetic signals"
+     ],
+     [
+      "Main targets",
+      "Skeletal muscle, liver, adipose tissue",
+      "Liver"
+     ],
+     [
+      "Main actions",
+      "Glucose uptake, use and storage (glycogen, protein, fat)",
+      "Glycogenolysis, gluconeogenesis, lipolysis, proteolysis"
+     ],
+     [
+      "Suppresses",
+      "Glucagon release and the breakdown processes",
+      "Insulin release"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "diabetes",
+   "title": "How insulin signals, and diabetes",
+   "slides": "P1 8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/endocrine/insulin_p1-8.webp",
+      "slide": "Part 1 slide 8",
+      "alt": "Insulin binding its receptor (INSR) in the cell membrane, which sets off a chain of signalling proteins inside the cell. The chain leads to GLUT4 glucose transporters moving to the membrane to take up glucose, and to glycogen synthase building glycogen."
+     },
+     "title": "A membrane receptor",
+     "bullets": [
+      "Insulin is a peptide, so it signals through a **receptor in the cell membrane**.",
+      "The insulin receptor belongs to the **receptor tyrosine kinase** superfamily.",
+      "Binding sets off a chain of signals inside the cell. One result is that **GLUT4** glucose transporters move to the membrane so the cell takes up glucose. Another is more **glycogen synthesis**."
+     ]
+    },
+    {
+     "title": "Three kinds of diabetes",
+     "bullets": [
+      "**Type I diabetes** is **autoimmune**. The immune system destroys the **β cells**, so little or no insulin is made.",
+      "**Type II diabetes** is **insulin resistance**. Insulin levels are normal or even high, but communication between insulin and its receptor is impaired.",
+      "**Gestational diabetes** happens in pregnancy. A placental hormone, **human chorionic somatomammotropin**, works against insulin."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "In type II diabetes the problem is the response, not the supply. That is why insulin levels can be normal or high while blood glucose still stays high."
+    },
+    {
+     "type": "trick",
+     "text": "Type I = no Insulin made (1 = none). Type II = Insulin Ignored."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slide 8: type I = destroyed β cells, LACK of insulin. Type II = normal or HIGHER insulin with resistance. The gestational hormone is human chorionic SOMATOMAMMOTROPIN (from the placenta), not growth hormone or prolactin."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 8; GLUT4 and glycogen synthesis read from the figure."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/insulin_p1-8.webp",
+     "slide": "Part 1 slide 8",
+     "alt": "Insulin binding its receptor (INSR) in the cell membrane, which sets off a chain of signalling proteins inside the cell. The chain leads to GLUT4 glucose transporters moving to the membrane to take up glucose, and to glycogen synthase building glycogen."
+    }
+   ]
+  },
+  {
+   "id": "stress",
+   "title": "The stress response and the hypothalamus",
+   "slides": "P1 9-10",
+   "steps": [
+    {
+     "img": {
+      "src": "img/endocrine/stress_p1-9.webp",
+      "slide": "Part 1 slide 9",
+      "alt": "Stress reaches the brain and splits into two paths. One runs through the locus coeruleus and sympathetic nervous system to the adrenal medulla, which releases epinephrine and norepinephrine. The other, also driven by the circadian rhythm, runs hypothalamus (CRH) to pituitary (ACTH) to adrenal cortex to cortisol, which feeds back on the hypothalamus and pituitary."
+     },
+     "title": "Two stages of stress",
+     "bullets": [
+      "**Stress** is a real or possible threat, physical or psychological. The **stress response** is a general, non-specific response that helps the body adapt.",
+      "**Early stage:** **epinephrine and norepinephrine**. The locus coeruleus in the brain drives the **sympathetic nervous system** and the **adrenal medulla**. Heart rate, breathing, blood glucose, muscle tension and alertness go up.",
+      "**Delayed stage:** **cortisol**, made through the **hypothalamic-pituitary-adrenal (HPA) axis**. Cortisol affects energy mobilization, the immune response, ion and mineral balance, behaviour and metabolism."
+     ]
+    },
+    {
+     "title": "The HPA axis",
+     "bullets": [
+      "The **hypothalamus** releases **CRH** (corticotropin-releasing hormone).",
+      "CRH makes the **pituitary** release **ACTH** (adrenocorticotropic hormone).",
+      "ACTH makes the **adrenal cortex** release **cortisol**.",
+      "Cortisol gives **negative feedback** to the pituitary and hypothalamus, which ends the response. The **circadian rhythm** also drives the axis."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/hypothal_p1-10.webp",
+      "slide": "Part 1 slide 10",
+      "alt": "A map of the regions (nuclei) of the hypothalamus in different colours, each with a list of jobs. The paraventricular nucleus (PVN) is boxed: stress response, thyroid regulation, osmoregulation, food intake, breathing, cardiac rhythm and blood pressure."
+     },
+     "title": "The hypothalamus gathers information",
+     "bullets": [
+      "The hypothalamus receives signals from **many brain regions** and from the rest of the body (**nutrient status and hormones**).",
+      "Its **paraventricular nucleus (PVN)** secretes **CRH**, which stimulates the making and release of ACTH. The PVN also works in thyroid regulation, osmoregulation, food intake, breathing, cardiac rhythm and blood pressure."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Nerves are fast, so the epinephrine stage starts within seconds. The HPA axis needs three hormones in a row, so cortisol comes later and keeps the response going."
+    },
+    {
+     "type": "trick",
+     "text": "HPA in order: Hypothalamus (CRH) → Pituitary (ACTH) → Adrenal cortex (cortisol). Each name contains a hint: CRH releases CorticoTropin, ACTH targets the ADrenal Cortex."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slide 9: EARLY = epinephrine and norepinephrine; DELAYED = cortisol. Cortisol's feedback is NEGATIVE and acts on BOTH pituitary and hypothalamus. Epinephrine comes from the adrenal MEDULLA; cortisol from the adrenal CORTEX. Part 1 slide 10: the PVN secretes CRH."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slides 9-10; effects lists read from the figure on Part 1 slide 9; PVN jobs from the figure on Part 1 slide 10.",
+    "Why-box (nerve vs three-hormone timing) is standard reasoning."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/stress_p1-9.webp",
+     "slide": "Part 1 slide 9",
+     "alt": "Stress reaches the brain and splits into two paths. One runs through the locus coeruleus and sympathetic nervous system to the adrenal medulla, which releases epinephrine and norepinephrine. The other, also driven by the circadian rhythm, runs hypothalamus (CRH) to pituitary (ACTH) to adrenal cortex to cortisol, which feeds back on the hypothalamus and pituitary."
+    },
+    {
+     "src": "img/endocrine/hypothal_p1-10.webp",
+     "slide": "Part 1 slide 10",
+     "alt": "A map of the regions (nuclei) of the hypothalamus in different colours, each with a list of jobs. The paraventricular nucleus (PVN) is boxed: stress response, thyroid regulation, osmoregulation, food intake, breathing, cardiac rhythm and blood pressure."
+    }
+   ]
+  },
+  {
+   "id": "pituitary",
+   "title": "The pituitary gland and its portal system",
+   "slides": "P1 11, P2 2",
+   "steps": [
+    {
+     "title": "Two glands fused together",
+     "bullets": [
+      "The pituitary is **two fused glands**: the **anterior pituitary (adenohypophysis)** and the **posterior pituitary (neurohypophysis)**.",
+      "The **anterior** part comes from **oral ectoderm** (tissue of the embryo's mouth). The **posterior** part is an outgrowth of **neuroectoderm** (nerve tissue)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/portal_p1-11.webp",
+      "slide": "Part 1 slide 11",
+      "alt": "Neurosecretory neurons in the PVN of the hypothalamus release hormones into capillaries of the median eminence. Portal vessels carry these releasing and inhibiting hormones down to capillaries in the anterior pituitary, where they switch the pituitary's hormone cells on or off. Pituitary hormones then leave in the venous outflow."
+     },
+     "title": "The portal system",
+     "bullets": [
+      "**Neuroendocrine cells** in the hypothalamus release **releasing and inhibiting hormones** (such as CRH and GnRH) into capillaries.",
+      "**Portal vessels** carry these hormones **straight to the anterior pituitary**, where they switch its hormone cells on or off.",
+      "Each pair of releasing and inhibiting hormones controls one anterior pituitary hormone."
+     ]
+    },
+    {
+     "title": "ACTH comes from a bigger protein",
+     "bullets": [
+      "ACTH is cut from a larger **prohormone** called **proopiomelanocortin (POMC)**.",
+      "POMC contains **several other active peptides** besides ACTH.",
+      "ACTH stimulates the making and release of **cortisol**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/antpit_p2-2.webp",
+      "slide": "Part 2 slide 2",
+      "alt": "Neuroendocrine cells in the hypothalamus release hormones into a portal blood system that carries them straight to the anterior pituitary. Below, the six anterior pituitary hormones and their targets: ACTH to the adrenal cortex, TSH to the thyroid, FSH and LH to the ovaries or testes, prolactin to the mammary glands, and growth hormone to skeletal muscle and bone."
+     },
+     "title": "Six anterior pituitary hormones",
+     "bullets": [
+      "The anterior pituitary makes **ACTH, TSH, FSH, LH, prolactin (PRL)** and **growth hormone (GH)**.",
+      "Through them, the pituitary controls hormone release from **most endocrine glands**. The **pancreas** is the exception."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A portal system links two capillary beds directly. Hypothalamic hormones reach the anterior pituitary in high concentration instead of being diluted in the whole blood supply."
+    },
+    {
+     "type": "trick",
+     "text": "ADENO = gland (the anterior part is true gland tissue). NEURO = nerve (the posterior part is nerve tissue)."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slide 11: ANTERIOR = adenohypophysis from ORAL ECTODERM; POSTERIOR = neurohypophysis from NEUROECTODERM. Don't swap them. ACTH is cleaved from POMC. Part 2 slide 2: the pituitary controls most glands EXCEPT the pancreas."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 11 and Part 2 slide 2; target list read from the figure on Part 2 slide 2.",
+    "Why-box (portal system avoids dilution) is standard background."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/portal_p1-11.webp",
+     "slide": "Part 1 slide 11",
+     "alt": "Neurosecretory neurons in the PVN of the hypothalamus release hormones into capillaries of the median eminence. Portal vessels carry these releasing and inhibiting hormones down to capillaries in the anterior pituitary, where they switch the pituitary's hormone cells on or off. Pituitary hormones then leave in the venous outflow."
+    },
+    {
+     "src": "img/endocrine/antpit_p2-2.webp",
+     "slide": "Part 2 slide 2",
+     "alt": "Neuroendocrine cells in the hypothalamus release hormones into a portal blood system that carries them straight to the anterior pituitary. Below, the six anterior pituitary hormones and their targets: ACTH to the adrenal cortex, TSH to the thyroid, FSH and LH to the ovaries or testes, prolactin to the mammary glands, and growth hormone to skeletal muscle and bone."
+    }
+   ]
+  },
+  {
+   "id": "adrenal",
+   "title": "The adrenal gland and cortisol",
+   "slides": "P1 12-14",
+   "steps": [
+    {
+     "img": {
+      "src": "img/endocrine/adrenal_p1-12.webp",
+      "slide": "Part 1 slide 12",
+      "alt": "The adrenal glands sitting on top of the kidneys, and a cut-away of one gland. From outside in: capsule, zona glomerulosa (mineralocorticoids such as aldosterone), zona fasciculata (glucocorticoids such as cortisol, boxed), zona reticularis (androgens) and the medulla (epinephrine)."
+     },
+     "title": "Cortex and medulla",
+     "bullets": [
+      "Each **adrenal gland** sits on top of a kidney. It has an outer **cortex** and an inner **medulla**.",
+      "The cortex comes from **mesoderm**. The medulla comes from the embryo's **neural crest**.",
+      "The cortex has three zones: **zona glomerulosa** (aldosterone), **zona fasciculata** (cortisol and other glucocorticoids) and **zona reticularis** (androgens). The medulla makes **epinephrine**."
+     ]
+    },
+    {
+     "title": "How cortisol is made and what it does",
+     "bullets": [
+      "Cortisol is made in steps: **cholesterol → pregnenolone → progesterone → 17-OH-progesterone → cortisol**.",
+      "Cortisol **builds on responses that epinephrine has already started**.",
+      "It **raises circulating nutrients**: glucose, amino acids and fatty acids.",
+      "It **inhibits insulin**, so those nutrients are not cleared from the blood.",
+      "It **inhibits food intake**.",
+      "It **inhibits immune function**, so it acts as an **anti-inflammatory** agent."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/cortisol_p1-13.webp",
+      "slide": "Part 1 slide 13",
+      "alt": "Blood cortisol over 24 hours from noon to noon. The red circadian curve is lowest around midnight and peaks in the early morning. A purple acute-stress spike shoots far above it. A low blue dashed line marks the level that switches on MR; a higher green dashed line marks the level that switches on GR."
+     },
+     "title": "A daily rhythm and two receptors",
+     "bullets": [
+      "Cortisol has a **circadian rhythm**. It is lowest around **midnight** and peaks in the **early morning**. Acute stress causes a large spike on top of this.",
+      "It has two receptors inside the cell: the **mineralocorticoid receptor (MR)** and the **glucocorticoid receptor (GR)**.",
+      "**MR** has **high affinity** but is less common. It is switched on even at **basal (normal low)** cortisol levels.",
+      "**GR** has **low affinity** but is found in **almost every cell**. It is switched on only at **high** cortisol levels, such as during stress."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/gr_p1-14.webp",
+      "slide": "Part 1 slide 14",
+      "alt": "Glucocorticoids cross the plasma membrane and bind the GR receptor, which lets go of its chaperone proteins. Two hormone-bound GR receptors pair up, enter the nucleus and bind a DNA site made of two 6 base pair half sites with a 3 base pair spacer, starting a transcriptional response."
+     },
+     "title": "Receptors that work in the nucleus",
+     "bullets": [
+      "GR and MR are **ligand-bound transcription factors**: once the hormone binds, they control genes.",
+      "After binding cortisol, they pair up (**homodimer** or **heterodimer**) and move into the **nucleus**.",
+      "There they bind a specific DNA sequence, a conserved **15 base pair** sequence, and turn genes on (**transactivation**) or off (**transrepression**)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Cortisol raising nutrients and blocking insulin go together: the body keeps fuel in the blood for the brain and muscles during a long stress, instead of letting insulin store it away."
+    },
+    {
+     "type": "trick",
+     "text": "Adrenal cortex zones from outside in, 'GFR': Glomerulosa (salt: aldosterone), Fasciculata (sugar: cortisol), Reticularis (sex: androgens). Salt, sugar, sex."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slide 13: MR = HIGH affinity, LESS abundant, active at BASAL levels; GR = LOW affinity, everywhere, active only at HIGH levels. Don't swap them. Part 1 slide 12: cortex from MESODERM, medulla from NEURAL CREST. Cortisol INHIBITS insulin, food intake and immune function. Part 1 slide 14: the DNA sequence is 15 bp."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slides 12-14; zone products read from the figure on Part 1 slide 12; daily peak and trough read from the graph on Part 1 slide 13.",
+    "Why-box and the 'salt, sugar, sex' trick are standard study aids, not from the course material."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/adrenal_p1-12.webp",
+     "slide": "Part 1 slide 12",
+     "alt": "The adrenal glands sitting on top of the kidneys, and a cut-away of one gland. From outside in: capsule, zona glomerulosa (mineralocorticoids such as aldosterone), zona fasciculata (glucocorticoids such as cortisol, boxed), zona reticularis (androgens) and the medulla (epinephrine)."
+    },
+    {
+     "src": "img/endocrine/cortisol_p1-13.webp",
+     "slide": "Part 1 slide 13",
+     "alt": "Blood cortisol over 24 hours from noon to noon. The red circadian curve is lowest around midnight and peaks in the early morning. A purple acute-stress spike shoots far above it. A low blue dashed line marks the level that switches on MR; a higher green dashed line marks the level that switches on GR."
+    },
+    {
+     "src": "img/endocrine/gr_p1-14.webp",
+     "slide": "Part 1 slide 14",
+     "alt": "Glucocorticoids cross the plasma membrane and bind the GR receptor, which lets go of its chaperone proteins. Two hormone-bound GR receptors pair up, enter the nucleus and bind a DNA site made of two 6 base pair half sites with a 3 base pair spacer, starting a transcriptional response."
+    }
+   ]
+  },
+  {
+   "id": "aldosterone",
+   "title": "Aldosterone",
+   "slides": "P1 15",
+   "steps": [
+    {
+     "img": {
+      "src": "img/endocrine/aldo_p1-15.webp",
+      "slide": "Part 1 slide 15",
+      "alt": "A cut-away of the adrenal gland with the outer zona glomerulosa boxed. Its cells make mineralocorticoids (aldosterone). Deeper layers make glucocorticoids, androgens and, in the medulla, epinephrine."
+     },
+     "title": "Where and when",
+     "bullets": [
+      "**Aldosterone** is made and released by the **zona glomerulosa**, the outer layer of the adrenal cortex.",
+      "It is released when **blood pressure is low**, **plasma Na⁺ (sodium) is low** or **plasma K⁺ (potassium) is high**.",
+      "A drop in blood pressure is sensed at the **afferent arterioles** in the **kidney**."
+     ]
+    },
+    {
+     "title": "How it is made and how it signals",
+     "bullets": [
+      "Aldosterone is made in steps: **cholesterol → progesterone → corticosterone → aldosterone**.",
+      "It signals through the **mineralocorticoid receptor (MR)**."
+     ]
+    },
+    {
+     "title": "Keeping cortisol out of the way",
+     "bullets": [
+      "Normal blood cortisol is about **100 times higher** than aldosterone, and cortisol can also bind MR.",
+      "The enzyme **11β-hydroxysteroid dehydrogenase 2** turns **cortisol** into **cortisone**, which is **inactive**.",
+      "Removing cortisol this way lets aldosterone reach the MR in its target cells."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "If cortisol were not turned into inactive cortisone, its much higher level would keep MR switched on all the time, and aldosterone could no longer control it."
+    },
+    {
+     "type": "trick",
+     "text": "Aldosterone = Salt-o-sterone. It responds to low salt (Na⁺), high K⁺ and low pressure."
+    },
+    {
+     "type": "trap",
+     "text": "Part 1 slide 15: aldosterone comes from the zona GLOMERULOSA, not fasciculata. It is triggered by LOW blood pressure, LOW Na⁺ and HIGH K⁺. Cortisol is ~100x HIGHER than aldosterone. Cortisone is the INACTIVE product."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 15.",
+    "The last bullet and the why-box (11β-HSD2 protects MR for aldosterone) are standard textbook-level explanation of the enzyme shown on the slide."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/aldo_p1-15.webp",
+     "slide": "Part 1 slide 15",
+     "alt": "A cut-away of the adrenal gland with the outer zona glomerulosa boxed. Its cells make mineralocorticoids (aldosterone). Deeper layers make glucocorticoids, androgens and, in the medulla, epinephrine."
+    }
+   ]
+  },
+  {
+   "id": "thyroid",
+   "title": "Thyroid, parathyroids and calcium",
+   "slides": "P2 3-5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/endocrine/thyroid_p2-3.webp",
+      "slide": "Part 2 slide 3",
+      "alt": "The thyroid gland in the neck just below the larynx, shown from the front and the back. Four small yellow parathyroid glands sit on the back of the thyroid."
+     },
+     "title": "Where they are",
+     "bullets": [
+      "The **thyroid gland** sits in the neck just **below the larynx**.",
+      "The **four parathyroid glands** are embedded in the **back** of the thyroid."
+     ]
+    },
+    {
+     "title": "Thyroid hormone",
+     "bullets": [
+      "The anterior pituitary releases **TSH** (thyroid-stimulating hormone, or thyrotropin), which acts on the thyroid.",
+      "In response, the thyroid secretes **thyroxine (T₄)** and **triiodothyronine (T₃)**. Together they are called **thyroid hormone**.",
+      "Thyroid hormone **regulates metabolic rate**, for example by increasing ATP production and use, in many organs."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/calcium_p2-4.webp",
+      "slide": "Part 2 slide 4",
+      "alt": "What happens when blood calcium falls below its set point: the parathyroid releases more PTH and the thyroid releases less calcitonin. Bones release calcium, the digestive tract absorbs more (with vitamin D), and the kidneys save calcium, so blood calcium returns toward normal."
+     },
+     "title": "Calcitonin and PTH",
+     "bullets": [
+      "The thyroid also secretes **calcitonin**, which **lowers** blood calcium by increasing **osteoblast** (bone-building) activity.",
+      "The parathyroids secrete **parathyroid hormone (PTH)**, which **raises** blood calcium, partly by stimulating **osteoclast** (bone-breaking) activity.",
+      "When blood calcium falls, PTH makes bones release calcium, the digestive tract absorb more and the kidneys save calcium.",
+      "In **adults**, PTH is the **main** regulator of blood calcium. Calcitonin stops having a role."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/goitre_p2-5.webp",
+      "slide": "Part 2 slide 5",
+      "alt": "A loop: low plasma thyroxine (or cold temperatures) makes the hypothalamus release TSH-RH, the anterior pituitary then releases TSH, and the thyroid gland releases thyroxine, which brings the level back up."
+     },
+     "title": "Goitre",
+     "bullets": [
+      "Making active thyroid hormone needs **iodine**.",
+      "With too little iodine, thyroxine in the blood stays low. The hypothalamus and anterior pituitary respond by releasing more **TSH-RH** and **TSH**.",
+      "High TSH makes the thyroid **enlarge** as it tries to make thyroxine. An enlarged thyroid is a **goitre**.",
+      "A goitre caused by iodine deficiency is usually treated with **iodine supplements**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Normally thyroxine gives negative feedback and keeps TSH in check. Without iodine the thyroxine never arrives, so the feedback never comes and TSH stays high, which keeps pushing the gland to grow."
+    },
+    {
+     "type": "trick",
+     "text": "CalciTONin TONes DOWN blood calcium. PTH Pulls calcium To the Blood (raises it). Osteo-BLAST Builds bone; osteo-CLAST Cuts bone."
+    },
+    {
+     "type": "trap",
+     "text": "Part 2 slide 4: calcitonin LOWERS calcium (osteoBLASTS); PTH RAISES calcium (osteoCLASTS). In adults PTH is the main regulator and calcitonin has no role. Part 2 slide 5: a goitre from iodine deficiency has HIGH TSH, LOW thyroxine. Thyroid hormone = T4 + T3."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 3-5; calcium responses and the thyroxine loop read from the figures on Part 2 slides 4 and 5.",
+    "Why-box (missing negative feedback) is standard reasoning from the loop on Part 2 slide 5. The goitre photo on Part 2 slide 5 is not reproduced."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/thyroid_p2-3.webp",
+     "slide": "Part 2 slide 3",
+     "alt": "The thyroid gland in the neck just below the larynx, shown from the front and the back. Four small yellow parathyroid glands sit on the back of the thyroid."
+    },
+    {
+     "src": "img/endocrine/calcium_p2-4.webp",
+     "slide": "Part 2 slide 4",
+     "alt": "What happens when blood calcium falls below its set point: the parathyroid releases more PTH and the thyroid releases less calcitonin. Bones release calcium, the digestive tract absorbs more (with vitamin D), and the kidneys save calcium, so blood calcium returns toward normal."
+    },
+    {
+     "src": "img/endocrine/goitre_p2-5.webp",
+     "slide": "Part 2 slide 5",
+     "alt": "A loop: low plasma thyroxine (or cold temperatures) makes the hypothalamus release TSH-RH, the anterior pituitary then releases TSH, and the thyroid gland releases thyroxine, which brings the level back up."
+    }
+   ]
+  },
+  {
+   "id": "anterior",
+   "title": "Prolactin, growth hormone and the gonads",
+   "slides": "P2 6-7",
+   "steps": [
+    {
+     "title": "Prolactin",
+     "bullets": [
+      "**Prolactin (PRL)** stimulates **mammary gland development** and **milk production**.",
+      "Prolactin rises toward the **end of pregnancy**, as **estrogen** rises.",
+      "After birth, a **neuroendocrine reflex** triggered by **suckling** keeps prolactin high.",
+      "Without pregnancy or breastfeeding, the hypothalamus releases a prolactin-inhibiting hormone, **dopamine**."
+     ]
+    },
+    {
+     "title": "Growth hormone",
+     "bullets": [
+      "**Growth hormone (GH)** stimulates **protein synthesis** and **cell division**, mainly in **muscles and bones** (in the cartilage **growth plates**)."
+     ]
+    },
+    {
+     "title": "FSH and LH control the gonads",
+     "bullets": [
+      "The **gonads** (ovaries or testes) are controlled by **FSH** (follicle-stimulating hormone) and **LH** (luteinizing hormone).",
+      "**FSH** drives **egg development** in the ovaries and **sperm development** in the testes.",
+      "**LH** triggers **ovulation**.",
+      "FSH and LH stimulate the ovaries to secrete **estrogen**. After ovulation, LH stimulates **progesterone**.",
+      "In the testes, LH stimulates **testosterone** production."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Prolactin is held down by default with dopamine. Suckling lifts this brake, so milk is made only when it is needed."
+    },
+    {
+     "type": "trick",
+     "text": "FSH = Follicle (egg) and Sperm development. LH = Launches the egg (ovulation), then testosterone and progesterone."
+    },
+    {
+     "type": "trap",
+     "text": "Part 2 slide 6: the prolactin-INHIBITING hormone is DOPAMINE from the hypothalamus. GH acts mainly on muscles and bones. Part 2 slide 7: LH (not FSH) triggers ovulation, progesterone after ovulation, and testosterone in the testes. FSH drives egg AND sperm development."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 6-7.",
+    "Why-box (dopamine as a brake) is standard reasoning."
+   ],
+   "images": []
+  },
+  {
+   "id": "posterior",
+   "title": "The posterior pituitary: ADH and oxytocin",
+   "slides": "P2 8-9",
+   "steps": [
+    {
+     "title": "Two hormones",
+     "bullets": [
+      "Neuroendocrine cells in the hypothalamus and posterior pituitary release **ADH** (antidiuretic hormone) or **oxytocin** into the blood.",
+      "**ADH** acts on the **kidneys** to regulate **water balance**. It reduces the water lost in urine, so it is a **water-conserving** hormone.",
+      "**Oxytocin** acts on the **uterus** (contractions during childbirth) and the **mammary glands** (milk secretion). It is also involved in sexual arousal and social behaviour."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/oxytocin_p2-9.webp",
+      "slide": "Part 2 slide 9",
+      "alt": "A nursing mother. Suckling stimulates nerve endings in the nipple; sensory and spinal nerves carry the signal to neuroendocrine cells in the hypothalamus; these release oxytocin from the posterior pituitary; blood carries oxytocin to the mammary glands and milk is ejected."
+     },
+     "title": "Positive feedback",
+     "bullets": [
+      "Unlike most hormones, oxytocin works in a **positive feedback loop**: its effect causes even more of it to be released.",
+      "Its release is controlled by a **neuroendocrine reflex**. Suckling stimulates **sensory nerves** in the breast. The signal travels to neuroendocrine cells in the hypothalamus, oxytocin is released from the posterior pituitary, and blood carries it to the mammary glands, where milk is ejected."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Most hormones use negative feedback to stay steady. Positive feedback suits events that must build to an end point, like birth or emptying the breast."
+    },
+    {
+     "type": "trick",
+     "text": "ADH = Anti-Diuretic = Against Draining water. Oxytocin = 'O' for Out: baby out, milk out."
+    },
+    {
+     "type": "trap",
+     "text": "Part 2 slide 8: ADH and oxytocin are POSTERIOR pituitary hormones, not anterior. ADH CONSERVES water (less urine). Oxytocin uses POSITIVE feedback. Prolactin MAKES milk (Part 2 slide 6); oxytocin EJECTS it."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 8-9; reflex steps read from the figure on Part 2 slide 9.",
+    "Why-box (when positive feedback is useful) is standard background."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/oxytocin_p2-9.webp",
+     "slide": "Part 2 slide 9",
+     "alt": "A nursing mother. Suckling stimulates nerve endings in the nipple; sensory and spinal nerves carry the signal to neuroendocrine cells in the hypothalamus; these release oxytocin from the posterior pituitary; blood carries oxytocin to the mammary glands and milk is ejected."
+    }
+   ]
+  },
+  {
+   "id": "other",
+   "title": "Other endocrine glands and organs",
+   "slides": "P2 10-14",
+   "steps": [
+    {
+     "title": "Thymus and pineal",
+     "bullets": [
+      "The **thymus** belongs to the lymphatic system but also works as an endocrine gland. It secretes **thymosin** and **thymopoietin**, which help lymphocytes become **mature T cells**.",
+      "The **pineal gland** is in the brain, in the roof of the third ventricle. It releases **melatonin** in a daily cycle.",
+      "Strong **light** on the retina **inhibits** melatonin release.",
+      "Melatonin **synchronizes** body processes, including **sleep**, to the daily light and dark (**circadian**) cycle."
+     ]
+    },
+    {
+     "title": "Hormones from the heart, gut and kidneys",
+     "bullets": [
+      "The heart's **atria** secrete **ANH** (atrial natriuretic hormone). It increases **sodium and water** loss in urine, which **lowers blood volume and blood pressure**.",
+      "The **stomach** secretes **gastrin**, which increases gastric juice production.",
+      "The **small intestine** secretes **secretin** (pancreatic juice from the pancreas) and **CCK** (cholecystokinin; bile from the gallbladder).",
+      "The **kidneys** secrete **erythropoietin**, which stimulates **red blood cell** production in the bone marrow."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/sum1_p2-12.webp",
+      "slide": "Part 2 slide 12",
+      "alt": "A summary table of posterior pituitary hormones (ADH, oxytocin) and anterior pituitary hormones (ACTH, TSH, FSH, LH, prolactin, growth hormone) with their main targets and actions."
+     },
+     "title": "Summary of pituitary hormones",
+     "bullets": [
+      "Posterior pituitary: ADH (kidneys) and oxytocin (uterus and mammary glands).",
+      "Anterior pituitary: ACTH (adrenal cortex), TSH (thyroid), FSH and LH (ovaries or testes), prolactin (mammary glands) and GH (most cells)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/sum2_p2-13.webp",
+      "slide": "Part 2 slide 13",
+      "alt": "A summary table of glands and their hormones: pancreas, adrenal cortex, adrenal medulla, thyroid, parathyroids, testes, ovaries, thymus and pineal, with main targets and primary actions."
+     },
+     "title": "Summary of the other glands",
+     "bullets": [
+      "Pancreas: glucagon raises and insulin lowers blood sugar; somatostatin inhibits glucagon, insulin, GH and digestive secretions.",
+      "Adrenal cortex: glucocorticoids (cortisol) and mineralocorticoids (aldosterone, which promotes sodium reabsorption and potassium excretion). Adrenal medulla: epinephrine and norepinephrine.",
+      "Thyroid: T₄, T₃ and calcitonin. Parathyroids: PTH. Testes: testosterone. Ovaries: estrogen and progesterone. Thymus: thymosin and thymopoietin. Pineal: melatonin."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/endocrine/sum3_p2-14.webp",
+      "slide": "Part 2 slide 14",
+      "alt": "A summary table of hormones from the digestive tract (gastrin, secretin, cholecystokinin), kidneys (erythropoietin), kidneys and liver (renin-angiotensin) and heart (atrial natriuretic hormone)."
+     },
+     "title": "Summary of the organ hormones",
+     "bullets": [
+      "Digestive tract (gastrin, secretin, CCK), kidneys (erythropoietin) and heart (ANH).",
+      "**Renin-angiotensin**, from the kidneys and liver, stimulates aldosterone secretion and constricts blood vessels. It is covered in detail with the urinary system."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "ANH and aldosterone pull in opposite directions. Aldosterone holds on to sodium when pressure is low; ANH dumps sodium and water when the atria are stretched by too much blood."
+    },
+    {
+     "type": "trick",
+     "text": "SECRETIN → pancreatic juice. CCK → Cholecysto = gallbladder → bile. EPO → Erythro = red cells."
+    },
+    {
+     "type": "trap",
+     "text": "Part 2 slide 11: secretin → PANCREATIC JUICE; CCK → BILE (gallbladder). Don't swap. ANH comes from the ATRIA and LOWERS blood pressure. Erythropoietin comes from the KIDNEYS. Part 2 slide 10: light INHIBITS melatonin. Renin-angiotensin (Part 2 slide 14) is deferred to the urinary system unit."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 10-14; summary tables on Part 2 slides 12-14.",
+    "Why-box (ANH vs aldosterone) is standard reasoning; 'stretched atria' trigger is outside the course material."
+   ],
+   "images": [
+    {
+     "src": "img/endocrine/sum1_p2-12.webp",
+     "slide": "Part 2 slide 12",
+     "alt": "A summary table of posterior pituitary hormones (ADH, oxytocin) and anterior pituitary hormones (ACTH, TSH, FSH, LH, prolactin, growth hormone) with their main targets and actions."
+    },
+    {
+     "src": "img/endocrine/sum2_p2-13.webp",
+     "slide": "Part 2 slide 13",
+     "alt": "A summary table of glands and their hormones: pancreas, adrenal cortex, adrenal medulla, thyroid, parathyroids, testes, ovaries, thymus and pineal, with main targets and primary actions."
+    },
+    {
+     "src": "img/endocrine/sum3_p2-14.webp",
+     "slide": "Part 2 slide 14",
+     "alt": "A summary table of hormones from the digestive tract (gastrin, secretin, cholecystokinin), kidneys (erythropoietin), kidneys and liver (renin-angiotensin) and heart (atrial natriuretic hormone)."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Where each hormone comes from",
+  "head": [
+   "Gland or organ",
+   "Hormone",
+   "Main job"
+  ],
+  "rows": [
+   [
+    "Hypothalamus",
+    "CRH, other releasing hormones, dopamine",
+    "Control the anterior pituitary; dopamine blocks prolactin"
+   ],
+   [
+    "Anterior pituitary",
+    "ACTH, TSH, FSH, LH, prolactin, GH",
+    "Control the adrenal cortex, thyroid, gonads, milk production and growth"
+   ],
+   [
+    "Posterior pituitary",
+    "ADH, oxytocin",
+    "Save water; uterine contractions and milk ejection"
+   ],
+   [
+    "Pancreas (islets)",
+    "Insulin, glucagon, somatostatin",
+    "Lower and raise blood glucose"
+   ],
+   [
+    "Adrenal cortex",
+    "Cortisol, aldosterone, androgens",
+    "Stress and fuel; sodium and blood pressure"
+   ],
+   [
+    "Adrenal medulla",
+    "Epinephrine, norepinephrine",
+    "Fast early stress response"
+   ],
+   [
+    "Thyroid",
+    "T₄ and T₃, calcitonin",
+    "Metabolic rate; lowers blood calcium"
+   ],
+   [
+    "Parathyroids",
+    "PTH",
+    "Raises blood calcium"
+   ],
+   [
+    "Thymus",
+    "Thymosin, thymopoietin",
+    "T cell maturation"
+   ],
+   [
+    "Pineal",
+    "Melatonin",
+    "Circadian rhythm and sleep"
+   ],
+   [
+    "Heart (atria)",
+    "ANH",
+    "Lowers blood volume and pressure"
+   ],
+   [
+    "Stomach and small intestine",
+    "Gastrin, secretin, CCK",
+    "Gastric juice, pancreatic juice, bile"
+   ],
+   [
+    "Kidneys",
+    "Erythropoietin",
+    "Red blood cell production"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "en-c1",
+   "front": "What is the endocrine system?",
+   "gloss": false,
+   "back": "The body's long-distance control system. Glands release hormones into the blood, which carries them to target cells far away.",
+   "short": "Long-distance control by hormones in the blood",
+   "src": "Part 1 slide 3"
+  },
+  {
+   "id": "en-c2",
+   "front": "What is a hormone?",
+   "gloss": false,
+   "back": "A chemical messenger that is not a nutrient. It can act on the cell that released it and on distant target cells.",
+   "short": "Non-nutrient chemical messenger",
+   "src": "Part 1 slide 3"
+  },
+  {
+   "id": "en-c3",
+   "front": "Steroid hormones",
+   "gloss": false,
+   "back": "Made from cholesterol and hydrophobic. Examples: cortisol and aldosterone.",
+   "short": "From cholesterol, hydrophobic",
+   "src": "Part 1 slide 3"
+  },
+  {
+   "id": "en-c4",
+   "front": "Peptide hormones",
+   "gloss": false,
+   "back": "Made from a gene by transcription and translation, and hydrophilic. Examples: insulin and glucagon.",
+   "short": "From a gene, hydrophilic",
+   "src": "Part 1 slide 3"
+  },
+  {
+   "id": "en-c5",
+   "front": "Amine hormones",
+   "gloss": false,
+   "back": "Made from one amino acid; mostly hydrophilic. Thyroid hormone comes from tyrosine, serotonin from tryptophan.",
+   "short": "From one amino acid",
+   "src": "Part 1 slide 3"
+  },
+  {
+   "id": "en-c6",
+   "front": "What makes a cell a target cell?",
+   "gloss": false,
+   "back": "It has receptors for that hormone.",
+   "short": "Having the right receptor",
+   "src": "Part 1 slide 4"
+  },
+  {
+   "id": "en-c7",
+   "front": "Epinephrine's α and β receptors",
+   "gloss": false,
+   "back": "One hormone, two receptors with different effects: α causes vasoconstriction and β causes vasodilation.",
+   "short": "α constricts, β dilates vessels",
+   "src": "Part 1 slide 4"
+  },
+  {
+   "id": "en-c8",
+   "front": "Hyposecretion vs hypersecretion",
+   "gloss": false,
+   "back": "Hyposecretion is too little hormone (autoimmune attack or faster breakdown). Hypersecretion is too much (tumor or taking the hormone from outside).",
+   "short": "Too little vs too much hormone",
+   "src": "Part 1 slide 4"
+  },
+  {
+   "id": "en-c9",
+   "front": "Homeostasis",
+   "gloss": false,
+   "back": "Keeping internal values such as glucose, temperature and osmolarity nearly constant, with small, predictable changes over the day.",
+   "short": "Steady, predictable internal constancy",
+   "src": "Part 1 slide 5"
+  },
+  {
+   "id": "en-c10",
+   "front": "Allostasis",
+   "gloss": false,
+   "back": "Reaching stability by changing and holding the activity of most body systems in response to unpredicted change, such as starvation, illness or stress.",
+   "short": "Stability through change after surprises",
+   "src": "Part 1 slide 5"
+  },
+  {
+   "id": "en-c11",
+   "front": "Allostatic load",
+   "gloss": false,
+   "back": "The energy spent on altered body activities in response to unpredicted changes.",
+   "short": "Energy cost of coping with surprises",
+   "src": "Part 1 slide 5"
+  },
+  {
+   "id": "en-c12",
+   "front": "Islets of Langerhans",
+   "gloss": false,
+   "back": "Endocrine clusters in the pancreas: α cells (glucagon), β cells (insulin, the majority) and δ cells (somatostatin).",
+   "short": "Pancreas clusters: α, β, δ cells",
+   "src": "Part 1 slide 6"
+  },
+  {
+   "id": "en-c13",
+   "front": "Normal blood glucose range",
+   "gloss": false,
+   "back": "About 80 to 120 mg/dl.",
+   "short": "80–120 mg/dl",
+   "src": "Part 1 slide 6"
+  },
+  {
+   "id": "en-c14",
+   "front": "What does a protein-rich meal do to insulin and glucagon?",
+   "gloss": false,
+   "back": "Both rise, because blood amino acids rise. Blood glucose barely changes.",
+   "short": "Both rise",
+   "src": "Part 1 slide 6"
+  },
+  {
+   "id": "en-c15",
+   "front": "Insulin: what stimulates it?",
+   "gloss": false,
+   "back": "High blood glucose, high amino acids, GLP-1 and parasympathetic signals to β cells.",
+   "short": "High glucose, amino acids, GLP-1, parasympathetic",
+   "src": "Part 1 slide 7"
+  },
+  {
+   "id": "en-c16",
+   "front": "Glucagon: what stimulates it?",
+   "gloss": false,
+   "back": "Low blood glucose, high amino acids and sympathetic signals to α cells.",
+   "short": "Low glucose, amino acids, sympathetic",
+   "src": "Part 1 slide 7"
+  },
+  {
+   "id": "en-c17",
+   "front": "Glucagon's actions",
+   "gloss": false,
+   "back": "Acting mainly on the liver, it increases glycogenolysis, gluconeogenesis, lipolysis and proteolysis, and suppresses insulin.",
+   "short": "Liver: breaks down stores, raises glucose",
+   "src": "Part 1 slide 7"
+  },
+  {
+   "id": "en-c18",
+   "front": "Insulin receptor type",
+   "gloss": false,
+   "back": "A membrane receptor in the receptor tyrosine kinase superfamily.",
+   "short": "Receptor tyrosine kinase",
+   "src": "Part 1 slide 8"
+  },
+  {
+   "id": "en-c19",
+   "front": "Type I vs type II diabetes",
+   "gloss": false,
+   "back": "Type I: autoimmune destruction of β cells, so no insulin. Type II: insulin resistance with normal or high insulin.",
+   "short": "No insulin vs insulin resistance",
+   "src": "Part 1 slide 8"
+  },
+  {
+   "id": "en-c20",
+   "front": "Gestational diabetes",
+   "gloss": false,
+   "back": "Diabetes in pregnancy, caused by a placental hormone, human chorionic somatomammotropin, that works against insulin.",
+   "short": "Placental hormone blocks insulin",
+   "src": "Part 1 slide 8"
+  },
+  {
+   "id": "en-c21",
+   "front": "Two stages of the stress response",
+   "gloss": false,
+   "back": "Early: epinephrine and norepinephrine. Delayed: cortisol.",
+   "short": "Early epinephrine, delayed cortisol",
+   "src": "Part 1 slide 9"
+  },
+  {
+   "id": "en-c22",
+   "front": "The HPA axis",
+   "gloss": false,
+   "back": "Hypothalamus (CRH) → pituitary (ACTH) → adrenal cortex (cortisol). Cortisol gives negative feedback to the pituitary and hypothalamus.",
+   "short": "CRH → ACTH → cortisol, negative feedback",
+   "src": "Part 1 slide 9"
+  },
+  {
+   "id": "en-c23",
+   "front": "Paraventricular nucleus (PVN)",
+   "gloss": false,
+   "back": "The part of the hypothalamus that secretes CRH, which stimulates ACTH release.",
+   "short": "Hypothalamus part that makes CRH",
+   "src": "Part 1 slide 10"
+  },
+  {
+   "id": "en-c24",
+   "front": "Anterior vs posterior pituitary origin",
+   "gloss": false,
+   "back": "Anterior (adenohypophysis) comes from oral ectoderm. Posterior (neurohypophysis) is an outgrowth of neuroectoderm.",
+   "short": "Oral ectoderm vs neuroectoderm",
+   "src": "Part 1 slide 11"
+  },
+  {
+   "id": "en-c25",
+   "front": "POMC",
+   "gloss": false,
+   "back": "Proopiomelanocortin, the prohormone that ACTH is cut from. It holds several other active peptides too.",
+   "short": "Prohormone that ACTH is cut from",
+   "src": "Part 1 slide 11"
+  },
+  {
+   "id": "en-c26",
+   "front": "Adrenal cortex vs medulla origin",
+   "gloss": false,
+   "back": "The cortex comes from mesoderm; the medulla from the embryo's neural crest.",
+   "short": "Mesoderm vs neural crest",
+   "src": "Part 1 slide 12"
+  },
+  {
+   "id": "en-c27",
+   "front": "What does cortisol do?",
+   "gloss": false,
+   "back": "Raises blood glucose, amino acids and fatty acids; inhibits insulin, food intake and immune function (anti-inflammatory).",
+   "short": "Raises fuel, blocks insulin and immunity",
+   "src": "Part 1 slide 12"
+  },
+  {
+   "id": "en-c28",
+   "front": "MR vs GR",
+   "gloss": false,
+   "back": "MR: high affinity, less common, active at basal cortisol. GR: low affinity, in almost every cell, active only at high cortisol.",
+   "short": "MR high-affinity basal; GR low-affinity high",
+   "src": "Part 1 slide 13"
+  },
+  {
+   "id": "en-c29",
+   "front": "How do GR and MR act?",
+   "gloss": false,
+   "back": "As ligand-bound transcription factors: they pair up, enter the nucleus and bind a conserved 15 bp DNA sequence to turn genes on or off.",
+   "short": "Pair up, enter nucleus, control genes",
+   "src": "Part 1 slide 14"
+  },
+  {
+   "id": "en-c30",
+   "front": "Aldosterone: source and triggers",
+   "gloss": false,
+   "back": "Zona glomerulosa of the adrenal cortex. Released for low blood pressure, low plasma Na⁺ or high plasma K⁺.",
+   "short": "Glomerulosa; low BP, low Na⁺, high K⁺",
+   "src": "Part 1 slide 15"
+  },
+  {
+   "id": "en-c31",
+   "front": "11β-hydroxysteroid dehydrogenase 2",
+   "gloss": false,
+   "back": "The enzyme that turns cortisol into inactive cortisone.",
+   "short": "Cortisol → inactive cortisone",
+   "src": "Part 1 slide 15"
+  },
+  {
+   "id": "en-c32",
+   "front": "Thyroid hormone",
+   "gloss": false,
+   "back": "Thyroxine (T₄) and triiodothyronine (T₃), released when TSH acts on the thyroid. It regulates metabolic rate.",
+   "short": "T₄ + T₃; sets metabolic rate",
+   "src": "Part 2 slide 3"
+  },
+  {
+   "id": "en-c33",
+   "front": "Calcitonin vs PTH",
+   "gloss": false,
+   "back": "Calcitonin (thyroid) lowers blood calcium via osteoblasts. PTH (parathyroids) raises it, partly via osteoclasts. In adults PTH is the main regulator.",
+   "short": "Calcitonin lowers, PTH raises calcium",
+   "src": "Part 2 slide 4"
+  },
+  {
+   "id": "en-c34",
+   "front": "Goitre",
+   "gloss": false,
+   "back": "An enlarged thyroid. With iodine deficiency, thyroxine is low, so TSH stays high and makes the gland grow. Treated with iodine.",
+   "short": "Enlarged thyroid from high TSH",
+   "src": "Part 2 slide 5"
+  },
+  {
+   "id": "en-c35",
+   "front": "Prolactin",
+   "gloss": false,
+   "back": "Stimulates mammary gland development and milk production. Kept high after birth by suckling; inhibited by dopamine from the hypothalamus.",
+   "short": "Milk production; blocked by dopamine",
+   "src": "Part 2 slide 6"
+  },
+  {
+   "id": "en-c36",
+   "front": "Growth hormone (GH)",
+   "gloss": false,
+   "back": "Stimulates protein synthesis and cell division, mainly in muscles and bones (cartilage growth plates).",
+   "short": "Protein synthesis, growth of muscle and bone",
+   "src": "Part 2 slide 6"
+  },
+  {
+   "id": "en-c37",
+   "front": "FSH and LH",
+   "gloss": false,
+   "back": "FSH: egg and sperm development. LH: ovulation, progesterone after ovulation, testosterone. Both stimulate estrogen.",
+   "short": "FSH gametes; LH ovulation, testosterone",
+   "src": "Part 2 slide 7"
+  },
+  {
+   "id": "en-c38",
+   "front": "ADH",
+   "gloss": false,
+   "back": "Antidiuretic hormone from the posterior pituitary. Acts on the kidneys to reduce water lost in urine.",
+   "short": "Water-conserving kidney hormone",
+   "src": "Part 2 slide 8"
+  },
+  {
+   "id": "en-c39",
+   "front": "Oxytocin",
+   "gloss": false,
+   "back": "Posterior pituitary hormone for uterine contractions and milk ejection. Works by positive feedback through a neuroendocrine reflex.",
+   "short": "Contractions, milk ejection; positive feedback",
+   "src": "Part 2 slides 8-9"
+  },
+  {
+   "id": "en-c40",
+   "front": "Melatonin",
+   "gloss": false,
+   "back": "Released in a daily cycle by the pineal gland; light inhibits it. Synchronizes sleep and other processes to the circadian cycle.",
+   "short": "Pineal; syncs body to light/dark",
+   "src": "Part 2 slide 10"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "en-1",
+   "q": "Which hormone is a steroid made from cholesterol?",
+   "options": [
+    "Cortisol",
+    "Glucagon",
+    "Insulin",
+    "Serotonin",
+    "Thyroid hormone"
+   ],
+   "answer": 0,
+   "why": "Steroids are made from cholesterol; cortisol and aldosterone are the examples. Insulin and glucagon are peptides; serotonin and thyroid hormone are amines.",
+   "source": "Part 1 slide 3"
+  },
+  {
+   "id": "en-2",
+   "q": "Thyroid hormone is an amine hormone. What is it made from?",
+   "options": [
+    "Cholesterol",
+    "Tryptophan",
+    "A gene read by transcription and translation",
+    "Tyrosine",
+    "Glucose"
+   ],
+   "answer": 3,
+   "why": "Amine hormones are made from one amino acid. Thyroid hormone comes from tyrosine; serotonin comes from tryptophan.",
+   "source": "Part 1 slide 3"
+  },
+  {
+   "id": "en-3",
+   "q": "Which statement about peptide hormones is correct?",
+   "options": [
+    "They are hydrophobic and made from cholesterol.",
+    "They are made from a single amino acid.",
+    "They are hydrophilic and made by transcription and translation of a gene.",
+    "Cortisol and aldosterone are examples.",
+    "They are mostly hydrophobic, with a few hydrophilic exceptions."
+   ],
+   "answer": 2,
+   "why": "Peptide hormones such as insulin and glucagon are hydrophilic and made from a gene. Cholesterol-based hormones are steroids; single amino acid hormones are amines.",
+   "source": "Part 1 slide 3"
+  },
+  {
+   "id": "en-4",
+   "q": "What decides whether a cell is a target cell for a hormone?",
+   "options": [
+    "Whether the cell is close to the gland",
+    "Whether the cell made the hormone",
+    "Whether the hormone is a steroid",
+    "Whether the cell is in the blood",
+    "Whether the cell has receptors for that hormone"
+   ],
+   "answer": 4,
+   "why": "Hormones reach almost every cell through the blood, but only cells with the matching receptor respond.",
+   "source": "Part 1 slide 4"
+  },
+  {
+   "id": "en-5",
+   "q": "Epinephrine causes vasoconstriction in some vessels and vasodilation in others. Why?",
+   "options": [
+    "It is broken down at different speeds.",
+    "It binds α receptors (vasoconstriction) and β receptors (vasodilation).",
+    "It is a steroid in some tissues and a peptide in others.",
+    "It only acts during hypersecretion.",
+    "Cortisol blocks it in some vessels."
+   ],
+   "answer": 1,
+   "why": "One hormone can have more than one receptor, and different receptors give different effects: α causes vasoconstriction, β causes vasodilation.",
+   "source": "Part 1 slide 4"
+  },
+  {
+   "id": "en-6",
+   "q": "A patient's gland makes far too much hormone because of a tumor. What is this called?",
+   "options": [
+    "Hypersecretion",
+    "Allostasis",
+    "Insulin resistance",
+    "Negative feedback",
+    "Hyposecretion"
+   ],
+   "answer": 0,
+   "why": "Hypersecretion is excessive secretion, caused for example by a tumor or by taking the hormone from outside. Hyposecretion is too little.",
+   "source": "Part 1 slide 4"
+  },
+  {
+   "id": "en-7",
+   "q": "Which is an example of allostasis?",
+   "options": [
+    "Blood glucose rising slightly after breakfast every day",
+    "Body temperature staying near the same value all day",
+    "Body systems shifting their activity for a long time to cope with starvation",
+    "Osmolarity changing a little in a predictable way",
+    "A cell making a peptide hormone from a gene"
+   ],
+   "answer": 2,
+   "why": "Allostasis is stability reached by altered but sustained activity in response to unpredicted change such as starvation, illness or stress. Small predictable daily changes are homeostasis.",
+   "source": "Part 1 slide 5"
+  },
+  {
+   "id": "en-8",
+   "q": "In the energy budget picture, what happens when stress takes a large share of the total budget?",
+   "options": [
+    "Standard metabolism (S) disappears.",
+    "Routine activity (R) doubles.",
+    "The total energy budget grows to fit the stress.",
+    "Nothing changes, because stress is free.",
+    "Less room is left for other adjustments (X1 to Xn)."
+   ],
+   "answer": 4,
+   "why": "S and R stay the same, but the stress block takes space from the scope for adjustments, so X1 to Xn shrink.",
+   "source": "Part 1 slide 5 (figure)",
+   "img": {
+    "src": "img/endocrine/budget_p1-5.webp",
+    "alt": "Two stacked bars of the total energy budget. Both have S (standard metabolism) and R (routine activity) at the bottom. In the left bar the rest is scope for adjustments X1 to Xn; in the right bar a large Stress block squeezes X1 to Xn into a thin top layer."
+   }
+  },
+  {
+   "id": "en-9",
+   "q": "Which islet cells are the most common, and what do they make?",
+   "options": [
+    "α cells, glucagon",
+    "α cells, insulin",
+    "δ cells, somatostatin",
+    "β cells, insulin",
+    "β cells, glucagon"
+   ],
+   "answer": 3,
+   "why": "The islets of Langerhans hold α (glucagon), β (insulin) and δ (somatostatin) cells, and most are β cells.",
+   "source": "Part 1 slide 6"
+  },
+  {
+   "id": "en-10",
+   "q": "The graphs show responses to two meals. After the high-protein meal, what happened to insulin and glucagon?",
+   "options": [
+    "Insulin rose and glucagon fell.",
+    "Both rose.",
+    "Both fell.",
+    "Neither changed.",
+    "Insulin fell and glucagon rose."
+   ],
+   "answer": 1,
+   "why": "A protein meal raises blood amino acids, which stimulate both insulin and glucagon. After the carbohydrate meal, insulin rose and glucagon fell.",
+   "source": "Part 1 slide 6 (figure)",
+   "img": {
+    "src": "img/endocrine/meals_p1-6.webp",
+    "alt": "Two sets of graphs over four hours. After a high-carbohydrate meal, plasma glucose peaks, insulin also peaks and glucagon declines. After a high-protein meal, blood amino acids rise, glucose stays nearly flat, and insulin and glucagon both rise."
+   }
+  },
+  {
+   "id": "en-11",
+   "q": "About what range is blood glucose normally held in?",
+   "options": [
+    "8 to 12 mg/dl",
+    "40 to 60 mg/dl",
+    "80 to 120 mg/dl",
+    "180 to 240 mg/dl",
+    "300 to 400 mg/dl"
+   ],
+   "answer": 2,
+   "why": "Insulin and glucagon keep blood glucose in a narrow range of about 80 to 120 mg/dl.",
+   "source": "Part 1 slide 6"
+  },
+  {
+   "id": "en-12",
+   "q": "Which of these stimulates glucagon release?",
+   "options": [
+    "Sympathetic stimulation of α cells",
+    "GLP-1",
+    "Parasympathetic stimulation of β cells",
+    "High blood glucose",
+    "Insulin"
+   ],
+   "answer": 0,
+   "why": "Glucagon is stimulated by low blood glucose, high amino acids and sympathetic signals to α cells. High glucose, GLP-1 and parasympathetic signals stimulate insulin, and insulin suppresses glucagon.",
+   "source": "Part 1 slide 7"
+  },
+  {
+   "id": "en-13",
+   "q": "Glucagon acts mainly on the liver. Which processes does it increase?",
+   "options": [
+    "Glucose uptake and glycogen storage",
+    "Insulin secretion",
+    "Protein and fat building",
+    "Glycogenolysis, gluconeogenesis, lipolysis and proteolysis",
+    "GLUT4 insertion into membranes"
+   ],
+   "answer": 3,
+   "why": "Glucagon is hyperglycemic: it breaks down glycogen, makes new glucose and breaks down fat and protein. Storage and uptake are insulin's jobs, and glucagon suppresses insulin.",
+   "source": "Part 1 slide 7"
+  },
+  {
+   "id": "en-14",
+   "q": "A person has normal or even high insulin levels, but their cells respond poorly to it. Which condition fits?",
+   "options": [
+    "Type I diabetes",
+    "Hyposecretion of insulin",
+    "Hypersecretion of glucagon",
+    "Goitre",
+    "Type II diabetes"
+   ],
+   "answer": 4,
+   "why": "Type II diabetes is insulin resistance with normal or higher insulin and impaired insulin-receptor communication. Type I is a lack of insulin after β cells are destroyed.",
+   "source": "Part 1 slide 8"
+  },
+  {
+   "id": "en-15",
+   "q": "The insulin receptor belongs to which family?",
+   "options": [
+    "Nuclear receptors that bind DNA",
+    "Receptor tyrosine kinases in the cell membrane",
+    "Mineralocorticoid receptors",
+    "Ion channels for glucose",
+    "Receptors inside the nucleus that bind steroids"
+   ],
+   "answer": 1,
+   "why": "Insulin signals through a membrane receptor in the receptor tyrosine kinase superfamily. The signal leads to GLUT4 moving to the membrane.",
+   "source": "Part 1 slide 8",
+   "img": {
+    "src": "img/endocrine/insulin_p1-8.webp",
+    "alt": "Insulin binding its receptor (INSR) in the cell membrane, which sets off a chain of signalling proteins inside the cell. The chain leads to GLUT4 glucose transporters moving to the membrane to take up glucose, and to glycogen synthase building glycogen."
+   }
+  },
+  {
+   "id": "en-16",
+   "q": "In the stress response, which comes early and which comes later?",
+   "options": [
+    "Early: epinephrine and norepinephrine. Later: cortisol.",
+    "Early: cortisol. Later: epinephrine and norepinephrine.",
+    "Both cortisol and epinephrine appear only after several hours.",
+    "Early: aldosterone. Later: insulin.",
+    "Early: ACTH. Later: CRH."
+   ],
+   "answer": 0,
+   "why": "The early stage uses epinephrine and norepinephrine; the delayed stage uses cortisol from the HPA axis.",
+   "source": "Part 1 slide 9",
+   "img": {
+    "src": "img/endocrine/stress_p1-9.webp",
+    "alt": "Stress reaches the brain and splits into two paths. One runs through the locus coeruleus and sympathetic nervous system to the adrenal medulla, which releases epinephrine and norepinephrine. The other, also driven by the circadian rhythm, runs hypothalamus (CRH) to pituitary (ACTH) to adrenal cortex to cortisol, which feeds back on the hypothalamus and pituitary."
+   }
+  },
+  {
+   "id": "en-17",
+   "q": "What is the correct order of the HPA axis?",
+   "options": [
+    "ACTH from the hypothalamus → CRH from the pituitary → cortisol",
+    "Cortisol → ACTH → CRH",
+    "CRH from the hypothalamus → ACTH from the pituitary → cortisol from the adrenal cortex",
+    "CRH from the adrenal → ACTH from the hypothalamus → cortisol from the pituitary",
+    "Epinephrine → CRH → aldosterone"
+   ],
+   "answer": 2,
+   "why": "The hypothalamus (PVN) releases CRH, the pituitary releases ACTH, and the adrenal cortex releases cortisol.",
+   "source": "Part 1 slides 9-10"
+  },
+  {
+   "id": "en-18",
+   "q": "How does cortisol end the stress response?",
+   "options": [
+    "Positive feedback on the adrenal medulla",
+    "By stimulating insulin release",
+    "By turning into aldosterone",
+    "Negative feedback on the pituitary and hypothalamus",
+    "By activating the locus coeruleus"
+   ],
+   "answer": 3,
+   "why": "Cortisol exerts negative feedback at the pituitary and hypothalamus, which terminates the response.",
+   "source": "Part 1 slide 9"
+  },
+  {
+   "id": "en-19",
+   "q": "Where does the anterior pituitary come from in the embryo?",
+   "options": [
+    "Neuroectoderm",
+    "Neural crest",
+    "Mesoderm",
+    "Endoderm of the gut",
+    "Oral ectoderm"
+   ],
+   "answer": 4,
+   "why": "The anterior pituitary (adenohypophysis) comes from oral ectoderm; the posterior pituitary (neurohypophysis) is a neuroectodermal outgrowth.",
+   "source": "Part 1 slide 11"
+  },
+  {
+   "id": "en-20",
+   "q": "ACTH is cut from which larger prohormone?",
+   "options": [
+    "Pregnenolone",
+    "Proopiomelanocortin (POMC)",
+    "Thyroxine",
+    "Corticosterone",
+    "GLP-1"
+   ],
+   "answer": 1,
+   "why": "ACTH is cleaved from POMC, which also contains several other bioactive peptides.",
+   "source": "Part 1 slide 11"
+  },
+  {
+   "id": "en-21",
+   "q": "Which is NOT an effect of cortisol?",
+   "options": [
+    "Boosting immune function",
+    "Inhibiting insulin",
+    "Inhibiting food intake",
+    "Acting as an anti-inflammatory",
+    "Raising blood glucose, amino acids and fatty acids"
+   ],
+   "answer": 0,
+   "why": "Cortisol inhibits immune function, which is why it acts as an anti-inflammatory. It raises nutrients, inhibits insulin and inhibits food intake.",
+   "source": "Part 1 slide 12"
+  },
+  {
+   "id": "en-22",
+   "q": "In the adrenal gland, which zone makes cortisol?",
+   "options": [
+    "Zona glomerulosa",
+    "Zona reticularis",
+    "Zona fasciculata",
+    "Medulla",
+    "Capsule"
+   ],
+   "answer": 2,
+   "why": "The boxed zona fasciculata makes glucocorticoids such as cortisol. The glomerulosa makes aldosterone, the reticularis makes androgens and the medulla makes epinephrine.",
+   "source": "Part 1 slide 12 (figure)",
+   "img": {
+    "src": "img/endocrine/adrenal_p1-12.webp",
+    "alt": "The adrenal glands sitting on top of the kidneys, and a cut-away of one gland. From outside in: capsule, zona glomerulosa (mineralocorticoids such as aldosterone), zona fasciculata (glucocorticoids such as cortisol, boxed), zona reticularis (androgens) and the medulla (epinephrine)."
+   }
+  },
+  {
+   "id": "en-23",
+   "q": "The graph shows cortisol over 24 hours. At ordinary low (basal) levels, which receptor is active?",
+   "options": [
+    "GR, because it has high affinity",
+    "Both equally, because they have the same affinity",
+    "GR, because it is the only one in the nucleus",
+    "Neither receptor",
+    "MR, because it has high affinity"
+   ],
+   "answer": 4,
+   "why": "MR has high affinity and is switched on at basal levels (blue line). GR has low affinity and is switched on only at high levels (green line), such as during acute stress.",
+   "source": "Part 1 slide 13",
+   "img": {
+    "src": "img/endocrine/cortisol_p1-13.webp",
+    "alt": "Blood cortisol over 24 hours from noon to noon. The red circadian curve is lowest around midnight and peaks in the early morning. A purple acute-stress spike shoots far above it. A low blue dashed line marks the level that switches on MR; a higher green dashed line marks the level that switches on GR."
+   }
+  },
+  {
+   "id": "en-24",
+   "q": "After cortisol binds GR or MR, what happens?",
+   "options": [
+    "The receptor opens a glucose channel.",
+    "The receptor activates a tyrosine kinase at the membrane.",
+    "The hormone is turned into cortisone in the nucleus.",
+    "The receptors pair up, enter the nucleus and bind a 15 base pair DNA sequence.",
+    "The receptor is released into the blood."
+   ],
+   "answer": 3,
+   "why": "GR and MR are ligand-bound transcription factors. They form homo- or heterodimers, move to the nucleus and bind a conserved 15 bp sequence to turn genes on or off.",
+   "source": "Part 1 slide 14",
+   "img": {
+    "src": "img/endocrine/gr_p1-14.webp",
+    "alt": "Glucocorticoids cross the plasma membrane and bind the GR receptor, which lets go of its chaperone proteins. Two hormone-bound GR receptors pair up, enter the nucleus and bind a DNA site made of two 6 base pair half sites with a 3 base pair spacer, starting a transcriptional response."
+   }
+  },
+  {
+   "id": "en-25",
+   "q": "Which change would stimulate aldosterone release?",
+   "options": [
+    "High blood pressure",
+    "High plasma K⁺",
+    "Low plasma K⁺",
+    "High plasma Na⁺",
+    "High blood glucose"
+   ],
+   "answer": 1,
+   "why": "Aldosterone is stimulated by low blood pressure, low plasma Na⁺ and high plasma K⁺.",
+   "source": "Part 1 slide 15"
+  },
+  {
+   "id": "en-26",
+   "q": "What does 11β-hydroxysteroid dehydrogenase 2 do?",
+   "options": [
+    "Turns cortisol into inactive cortisone",
+    "Turns cholesterol into pregnenolone",
+    "Turns progesterone into aldosterone",
+    "Turns T₄ into T₃",
+    "Cuts ACTH from POMC"
+   ],
+   "answer": 0,
+   "why": "The enzyme converts cortisol into cortisone, which is inactive. This matters because cortisol is about 100 times higher than aldosterone and can also bind MR.",
+   "source": "Part 1 slide 15"
+  },
+  {
+   "id": "en-27",
+   "q": "When blood calcium falls, which response is correct?",
+   "options": [
+    "The thyroid releases more calcitonin and osteoblasts build bone.",
+    "The kidneys release more calcium into urine.",
+    "The pineal gland releases melatonin.",
+    "The parathyroids release more PTH, and bones release calcium.",
+    "The anterior pituitary releases TSH."
+   ],
+   "answer": 3,
+   "why": "PTH raises blood calcium, partly through osteoclasts; bones release calcium, the gut absorbs more and the kidneys save it. Calcitonin lowers calcium, so it goes down when calcium is low.",
+   "source": "Part 2 slide 4",
+   "img": {
+    "src": "img/endocrine/calcium_p2-4.webp",
+    "alt": "What happens when blood calcium falls below its set point: the parathyroid releases more PTH and the thyroid releases less calcitonin. Bones release calcium, the digestive tract absorbs more (with vitamin D), and the kidneys save calcium, so blood calcium returns toward normal."
+   }
+  },
+  {
+   "id": "en-28",
+   "q": "A person lacks iodine and develops a goitre. What are their hormone levels most likely to be?",
+   "options": [
+    "High thyroxine and low TSH",
+    "High thyroxine and high TSH",
+    "Low thyroxine and high TSH",
+    "Low thyroxine and low TSH",
+    "Normal thyroxine and no TSH"
+   ],
+   "answer": 2,
+   "why": "Without iodine the thyroid cannot make enough thyroxine, so there is no negative feedback and the hypothalamus and pituitary release more TSH-RH and TSH. High TSH enlarges the thyroid.",
+   "source": "Part 2 slide 5",
+   "img": {
+    "src": "img/endocrine/goitre_p2-5.webp",
+    "alt": "A loop: low plasma thyroxine (or cold temperatures) makes the hypothalamus release TSH-RH, the anterior pituitary then releases TSH, and the thyroid gland releases thyroxine, which brings the level back up."
+   }
+  },
+  {
+   "id": "en-29",
+   "q": "Which hormone triggers ovulation?",
+   "options": [
+    "FSH",
+    "Prolactin",
+    "Oxytocin",
+    "Growth hormone",
+    "LH"
+   ],
+   "answer": 4,
+   "why": "LH promotes ovulation and stimulates progesterone after ovulation and testosterone in the testes. FSH drives egg and sperm development.",
+   "source": "Part 2 slide 7"
+  },
+  {
+   "id": "en-30",
+   "q": "Which statement about oxytocin is correct?",
+   "options": [
+    "It is made in the anterior pituitary and conserves water.",
+    "It is a posterior pituitary hormone that works by positive feedback.",
+    "It is inhibited by dopamine from the hypothalamus.",
+    "It stimulates milk production in the mammary glands during pregnancy.",
+    "It raises blood calcium."
+   ],
+   "answer": 1,
+   "why": "Oxytocin is released from the posterior pituitary, causes uterine contractions and milk ejection, and works in a positive feedback loop. ADH conserves water; dopamine inhibits prolactin, which is the hormone that makes milk.",
+   "source": "Part 2 slides 6, 8-9",
+   "img": {
+    "src": "img/endocrine/oxytocin_p2-9.webp",
+    "alt": "A nursing mother. Suckling stimulates nerve endings in the nipple; sensory and spinal nerves carry the signal to neuroendocrine cells in the hypothalamus; these release oxytocin from the posterior pituitary; blood carries oxytocin to the mammary glands and milk is ejected."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "The HPA stress axis",
+   "prompt": "Put the steps in order, from the brain sensing stress to the response being switched off.",
+   "why": "The hypothalamus (PVN) releases CRH, which makes the pituitary release ACTH. ACTH makes the adrenal cortex release cortisol, which acts on target tissues and then gives negative feedback to the pituitary and hypothalamus.",
+   "topLabel": "End: response switched off",
+   "bottomLabel": "Start: stress sensed",
+   "layers": [
+    {
+     "name": "Hypothalamus releases CRH",
+     "color": "#1e3a8a"
+    },
+    {
+     "name": "Pituitary releases ACTH",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Adrenal cortex releases cortisol",
+     "color": "#b45309"
+    },
+    {
+     "name": "Cortisol acts on target tissues",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Negative feedback on pituitary and hypothalamus",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Making cortisol",
+   "prompt": "Put the molecules in order, from the starting material to cortisol.",
+   "why": "Cortisol is built in the adrenal cortex in steps: cholesterol → pregnenolone → progesterone → 17-OH-progesterone → cortisol.",
+   "topLabel": "End: cortisol",
+   "bottomLabel": "Start",
+   "layers": [
+    {
+     "name": "Cholesterol",
+     "color": "#1e3a8a"
+    },
+    {
+     "name": "Pregnenolone",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Progesterone",
+     "color": "#b45309"
+    },
+    {
+     "name": "17-OH-progesterone",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Cortisol",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "How a goitre forms",
+   "prompt": "Put the events in order, from too little iodine to an enlarged thyroid.",
+   "why": "Without iodine the thyroid cannot make active thyroxine, so blood thyroxine is low. The hypothalamus and anterior pituitary respond with more TSH-RH and TSH, and the high TSH makes the thyroid grow into a goitre.",
+   "topLabel": "End: goitre",
+   "bottomLabel": "Start: low iodine",
+   "layers": [
+    {
+     "name": "Too little iodine in the diet",
+     "color": "#1e3a8a"
+    },
+    {
+     "name": "Thyroxine in the blood stays low",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Hypothalamus releases more TSH-RH",
+     "color": "#b45309"
+    },
+    {
+     "name": "Anterior pituitary releases more TSH",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Thyroid enlarges (goitre)",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "The milk ejection reflex",
+   "prompt": "Put the steps in order, from the baby suckling to milk being ejected.",
+   "why": "Suckling stimulates nerve receptors in the nipple. Sensory and spinal nerves carry the signal to neuroendocrine cells in the hypothalamus, which release oxytocin from the posterior pituitary. Blood carries oxytocin to the mammary glands and milk is ejected.",
+   "topLabel": "End: milk ejected",
+   "bottomLabel": "Start: suckling",
+   "layers": [
+    {
+     "name": "Suckling stimulates nerves in the nipple",
+     "color": "#1e3a8a"
+    },
+    {
+     "name": "Sensory and spinal nerves carry the signal",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Hypothalamus neuroendocrine cells are stimulated",
+     "color": "#b45309"
+    },
+    {
+     "name": "Posterior pituitary releases oxytocin",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Blood carries oxytocin; milk is ejected",
+     "color": "#b91c1c"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Insulin or glucagon?",
+   "prompt": "Sort each fact into insulin or glucagon.",
+   "buckets": [
+    "Insulin",
+    "Glucagon"
+   ],
+   "items": [
+    {
+     "text": "Made by β cells",
+     "b": 0
+    },
+    {
+     "text": "Lowers blood glucose",
+     "b": 0
+    },
+    {
+     "text": "Stimulated by GLP-1",
+     "b": 0
+    },
+    {
+     "text": "Stimulated by parasympathetic signals",
+     "b": 0
+    },
+    {
+     "text": "Targets muscle, liver and fat",
+     "b": 0
+    },
+    {
+     "text": "Increases glucose storage as glycogen",
+     "b": 0
+    },
+    {
+     "text": "Made by α cells",
+     "b": 1
+    },
+    {
+     "text": "Raises blood glucose",
+     "b": 1
+    },
+    {
+     "text": "Stimulated by low blood glucose",
+     "b": 1
+    },
+    {
+     "text": "Stimulated by sympathetic signals",
+     "b": 1
+    },
+    {
+     "text": "Major target is the liver",
+     "b": 1
+    },
+    {
+     "text": "Increases gluconeogenesis",
+     "b": 1
+    }
+   ],
+   "why": "Insulin (β cells) lowers glucose by storing it, and responds to high glucose, GLP-1 and parasympathetic signals. Glucagon (α cells) raises glucose mainly through the liver, and responds to low glucose and sympathetic signals. High amino acids stimulate both."
+  },
+  {
+   "title": "Anterior or posterior pituitary?",
+   "prompt": "Sort each hormone or fact into the anterior or the posterior pituitary.",
+   "buckets": [
+    "Anterior pituitary",
+    "Posterior pituitary"
+   ],
+   "items": [
+    {
+     "text": "ACTH",
+     "b": 0
+    },
+    {
+     "text": "TSH",
+     "b": 0
+    },
+    {
+     "text": "FSH and LH",
+     "b": 0
+    },
+    {
+     "text": "Prolactin",
+     "b": 0
+    },
+    {
+     "text": "Growth hormone",
+     "b": 0
+    },
+    {
+     "text": "Adenohypophysis, from oral ectoderm",
+     "b": 0
+    },
+    {
+     "text": "ADH",
+     "b": 1
+    },
+    {
+     "text": "Oxytocin",
+     "b": 1
+    },
+    {
+     "text": "Neurohypophysis, from neuroectoderm",
+     "b": 1
+    },
+    {
+     "text": "Water-conserving hormone",
+     "b": 1
+    },
+    {
+     "text": "Hormone that works by positive feedback",
+     "b": 1
+    }
+   ],
+   "why": "The anterior pituitary (adenohypophysis) makes ACTH, TSH, FSH, LH, prolactin and GH. The posterior pituitary (neurohypophysis) releases ADH and oxytocin; oxytocin uses positive feedback."
+  },
+  {
+   "title": "Which gland or organ makes it?",
+   "prompt": "Sort each hormone by where it comes from.",
+   "buckets": [
+    "Adrenal gland",
+    "Thyroid or parathyroids",
+    "Heart, gut or kidneys"
+   ],
+   "items": [
+    {
+     "text": "Cortisol",
+     "b": 0
+    },
+    {
+     "text": "Aldosterone",
+     "b": 0
+    },
+    {
+     "text": "Epinephrine",
+     "b": 0
+    },
+    {
+     "text": "Thyroxine (T₄)",
+     "b": 1
+    },
+    {
+     "text": "Calcitonin",
+     "b": 1
+    },
+    {
+     "text": "PTH",
+     "b": 1
+    },
+    {
+     "text": "ANH",
+     "b": 2
+    },
+    {
+     "text": "Gastrin",
+     "b": 2
+    },
+    {
+     "text": "Secretin",
+     "b": 2
+    },
+    {
+     "text": "CCK",
+     "b": 2
+    },
+    {
+     "text": "Erythropoietin",
+     "b": 2
+    }
+   ],
+   "why": "The adrenal cortex makes cortisol and aldosterone and the medulla makes epinephrine. The thyroid makes T₄, T₃ and calcitonin, and the parathyroids make PTH. The heart's atria make ANH, the stomach gastrin, the small intestine secretin and CCK, and the kidneys erythropoietin."
+  }
+ ],
+ "calc": []
+}

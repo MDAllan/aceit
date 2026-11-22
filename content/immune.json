@@ -1,0 +1,2064 @@
+{
+ "id": "immune",
+ "title": "The Immune System",
+ "chapter": "Unit 8",
+ "icon": "🛡️",
+ "color": "#c0392b",
+ "slideFile": "The Immune System (Part 1).pdf; BIOL305_ImmuneSystemPart2.pdf",
+ "intro": "The immune system protects the body from pathogens. This unit covers the kinds of pathogens, the lymphatic system and its organs, the innate defences that act against any invader, the adaptive B cell and T cell responses that target one antigen, immune memory and vaccines, allergies and autoimmune disorders, and how the system forms in the embryo.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Describe the main types of pathogens and the body's three lines of defence."
+  },
+  {
+   "id": "goal-02",
+   "text": "Describe the function and organization of the lymphatic system, including the lymph nodes, spleen and thymus."
+  },
+  {
+   "id": "goal-03",
+   "text": "Explain how complement, phagocytes, inflammation and fever, natural killer cells and interferons give non-specific (innate) protection."
+  },
+  {
+   "id": "goal-04",
+   "text": "Differentiate between innate and adaptive immunity and explain how they work together to respond to a pathogen."
+  },
+  {
+   "id": "goal-05",
+   "text": "Describe and compare humoral (B cell) and cell-mediated (T cell) immunity, including antigen presentation, helper T cells and cytotoxic T cells."
+  },
+  {
+   "id": "goal-06",
+   "text": "Use immunological memory to explain vaccines, and distinguish allergies from autoimmune disorders."
+  },
+  {
+   "id": "goal-07",
+   "text": "Recall the embryonic origins of the thymus, lymphatic vessels, spleen and white blood cells."
+  }
+ ],
+ "sections": [
+  {
+   "id": "pathogens",
+   "title": "Pathogens and the lines of defence",
+   "slides": "P1 2-3; P2 3",
+   "steps": [
+    {
+     "title": "What counts as a pathogen",
+     "bullets": [
+      "A **pathogen** is anything that causes disease. Pathogens include bacteria, viruses, fungi, protozoa, parasites and prions.",
+      "Pathogenic **bacteria** rely on human cells for energy and often make damaging toxins. Examples: botulism, tuberculosis, syphilis.",
+      "**Viruses** hijack a cell's transcription and translation machinery to make copies of themselves. Examples: rabies, chicken pox, colds.",
+      "**Prions** are misfolded proteins that make the normal proteins in a cell misfold too. Example: Creutzfeldt-Jakob disease.",
+      "**Parasites** live on or in a host for part of their life cycle and harm it. Examples: *Giardia*, lice, tapeworms."
+     ]
+    },
+    {
+     "title": "Three lines of defence",
+     "bullets": [
+      "**First line: barriers.** They stop pathogens getting in, or expel or neutralize them before an infection starts. Examples: the skin, stomach acid, tears, and vomiting.",
+      "**Second line: innate (non-specific) immunity.** It responds the same way to all types of pathogens. Examples: phagocytosis and the complement system.",
+      "**Third line: adaptive (specific) immunity.** It recognizes and removes one specific pathogen. Examples: antibodies and T cells."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A virus has no machinery of its own to make proteins. That is why it must get inside a cell and take over the cell's transcription and translation."
+    },
+    {
+     "type": "trick",
+     "text": "Think of a castle: the walls are the first line (barriers), the guards who attack any intruder are the second line (innate), and the trained hunters who track one named enemy are the third line (adaptive)."
+    },
+    {
+     "type": "trap",
+     "text": "Barriers are the first line, innate immunity the second and adaptive immunity the third (Part 2 slide 3). Phagocytosis and complement are innate, not adaptive; antibodies and T cells are adaptive (Part 1 slide 3). A prion is a misfolded protein, not a virus or a bacterium (Part 1 slide 2)."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slides 2-3; Part 2 slide 3 (second and third line of defence).",
+    "Castle analogy is generic (outside source)."
+   ],
+   "images": []
+  },
+  {
+   "id": "lymphvessels",
+   "title": "The lymphatic system and lymphatic vessels",
+   "slides": "P1 4-5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/lymphatic_p1-4.webp",
+      "slide": "Part 1 slide 4",
+      "alt": "An overview of the lymphatic system: a body outline with green lymph vessels, plus red bone marrow in a long bone, the tonsils and adenoids in the throat, lymphatic capillaries beside a blood capillary, a lymph node, the spleen with red and white pulp, and the thymus above the heart."
+     },
+     "title": "The parts of the lymphatic system",
+     "bullets": [
+      "The lymphatic system includes the lymphatic vessels, the lymph nodes, the spleen, the thymus, the tonsils and adenoids, and the red bone marrow.",
+      "Lymphocytes and other white blood cells are made in the **red bone marrow**, and B lymphocytes mature there.",
+      "The **tonsils and adenoids** protect the throat and nasal passages."
+     ]
+    },
+    {
+     "title": "Three jobs of the lymphatic system",
+     "bullets": [
+      "It **maintains blood volume**, it **transports digested fat**, and it **filters out foreign materials** to defend against infection.",
+      "Lymphatic vessels carry **lymph** around the body. Lymph is a fluid made mostly of white blood cells, proteins and fats."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/lymphcap_p1-5.webp",
+      "slide": "Part 1 slide 5 (also on slide 4)",
+      "alt": "A green lymphatic capillary lying between tissue cells next to a purple blood capillary. Arrows show fluid and small particles moving from between the cells into the lymphatic capillary."
+     },
+     "title": "Lymphatic capillaries",
+     "bullets": [
+      "Lymphatic capillaries are **blind-ended**: they start as closed tubes near the blood capillaries.",
+      "They take up substances that are too large to enter the blood capillaries.",
+      "They also take up the extra **interstitial fluid** (the fluid between the cells). Returning this fluid to the blood is how the system keeps blood volume steady."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Fluid constantly leaks out of the blood capillaries into the tissues. If the lymphatic capillaries did not collect the extra and send it back, blood volume would fall and the tissues would swell."
+    },
+    {
+     "type": "trick",
+     "text": "Lymph capillaries are like storm drains: closed at one end, they soak up whatever is left lying between the cells."
+    },
+    {
+     "type": "trap",
+     "text": "Lymphatic capillaries are blind-ended, not open loops like blood capillaries (Part 1 slide 5). Lymph is mostly white blood cells, proteins and fats; it is not blood and has no red blood cells. B lymphocytes mature in the red bone marrow, but T lymphocytes mature in the thymus (Part 1 slide 4)."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 4 (overview figure with captions) and slide 5.",
+    "Storm drain image and the swelling consequence are generic clarifications (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/lymphatic_p1-4.webp",
+     "slide": "Part 1 slide 4",
+     "alt": "An overview of the lymphatic system: a body outline with green lymph vessels, plus red bone marrow in a long bone, the tonsils and adenoids in the throat, lymphatic capillaries beside a blood capillary, a lymph node, the spleen with red and white pulp, and the thymus above the heart."
+    },
+    {
+     "src": "img/immune/lymphcap_p1-5.webp",
+     "slide": "Part 1 slide 5 (also on slide 4)",
+     "alt": "A green lymphatic capillary lying between tissue cells next to a purple blood capillary. Arrows show fluid and small particles moving from between the cells into the lymphatic capillary."
+    }
+   ]
+  },
+  {
+   "id": "organs",
+   "title": "Lymph nodes, the spleen and the thymus",
+   "slides": "P1 6-8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/node_p1-6.webp",
+      "slide": "Part 1 slide 6 (also on slide 4)",
+      "alt": "A cut-open bean-shaped lymph node with several lymph vessels entering it and one leaving it. Arrows show the direction of lymph flow through the node."
+     },
+     "title": "Lymph nodes filter lymph",
+     "bullets": [
+      "**Lymph nodes** sit at intervals along the lymphatic vessels. They filter lymph as it flows through, removing pathogens and debris.",
+      "They are full of **macrophages**, which clean the lymph, and **lymphocytes**, which activate the immune response.",
+      "**Internal valves** in the lymphatic vessels stop lymph flowing backwards.",
+      "Lymph returns to the cardiovascular system through two ducts, the **right lymphatic duct** and the **thoracic duct**, which empty into the **subclavian veins**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/spleen_p1-7.webp",
+      "slide": "Part 1 slide 7 (also on slide 4)",
+      "alt": "The spleen cut open to show dark red pulp with small pale islands of white pulp, and a red artery and blue vein carrying blood in and out."
+     },
+     "title": "The spleen filters blood",
+     "bullets": [
+      "The **spleen** is the largest lymphatic organ. It keeps the blood cells in good condition and fights infection.",
+      "The spleen is to blood what the lymph nodes are to lymph.",
+      "The **red pulp** has macrophages that remove old and damaged red blood cells. It also stores blood for a short time.",
+      "The **white pulp** has lymphocytes that search the blood for pathogens."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/thymus_p1-8.webp",
+      "slide": "Part 1 slide 8 (also on slide 4)",
+      "alt": "The pink, lobed thymus gland sitting on top of the heart, just above it and in front of the large vessels."
+     },
+     "title": "The thymus trains T cells",
+     "bullets": [
+      "The **thymus** sits just above the heart, behind the sternum.",
+      "It is where **T lymphocytes (T cells)** mature. T cells work in adaptive immunity.",
+      "The thymus makes the hormones **thymosin** and **thymopoietin**, which help T cells develop.",
+      "It is largest and most active in childhood. It starts to shrink in adolescence and may disappear later in life, replaced by connective tissue and fat."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Lymph from the whole body passes through many nodes before it reaches the blood, so a pathogen in the tissues is likely to meet macrophages and lymphocytes on the way."
+    },
+    {
+     "type": "trick",
+     "text": "Red pulp recycles Red blood cells; White pulp holds White blood cells (lymphocytes)."
+    },
+    {
+     "type": "trap",
+     "text": "The spleen filters blood, while the lymph nodes filter lymph (Part 1 slide 7). Red pulp removes old red cells and stores blood; white pulp holds lymphocytes, so do not swap them. The thymus is biggest in childhood and shrinks after adolescence, not the other way round (Part 1 slide 8). Lymph drains into the subclavian veins, not the vena cava directly (Part 1 slide 6)."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slides 6-8.",
+    "Red/White pulp memory aid is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/node_p1-6.webp",
+     "slide": "Part 1 slide 6 (also on slide 4)",
+     "alt": "A cut-open bean-shaped lymph node with several lymph vessels entering it and one leaving it. Arrows show the direction of lymph flow through the node."
+    },
+    {
+     "src": "img/immune/spleen_p1-7.webp",
+     "slide": "Part 1 slide 7 (also on slide 4)",
+     "alt": "The spleen cut open to show dark red pulp with small pale islands of white pulp, and a red artery and blue vein carrying blood in and out."
+    },
+    {
+     "src": "img/immune/thymus_p1-8.webp",
+     "slide": "Part 1 slide 8 (also on slide 4)",
+     "alt": "The pink, lobed thymus gland sitting on top of the heart, just above it and in front of the large vessels."
+    }
+   ],
+   "table": {
+    "head": [
+     "Organ",
+     "What it filters or does",
+     "Key cells"
+    ],
+    "rows": [
+     [
+      "Lymph node",
+      "Filters lymph and starts immune responses",
+      "Macrophages and lymphocytes"
+     ],
+     [
+      "Spleen, red pulp",
+      "Removes old and damaged red blood cells; stores blood",
+      "Macrophages"
+     ],
+     [
+      "Spleen, white pulp",
+      "Searches the blood for pathogens",
+      "Lymphocytes"
+     ],
+     [
+      "Thymus",
+      "Site where T cells mature; makes thymosin and thymopoietin",
+      "Developing T cells"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "complement",
+   "title": "Innate immunity and the complement system",
+   "slides": "P1 9-10",
+   "steps": [
+    {
+     "title": "The innate toolkit",
+     "bullets": [
+      "**Innate immunity** defends against any pathogen. It acts the same way whatever the pathogen is.",
+      "It includes the **complement system**, the **phagocytic cells** (neutrophils, macrophages and eosinophils), **inflammation and fever**, **natural killer (NK) cells**, and **interferons**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/complement_p1-10.webp",
+      "slide": "Part 1 slide 10",
+      "alt": "Three stages of a rod-shaped bacterium: complement proteins form ring-shaped protein complexes in its cell wall, water and salts rush in through the holes, and the bacterium swells and bursts."
+     },
+     "title": "Complement proteins",
+     "bullets": [
+      "**Complement** is a group of proteins in the blood plasma that attack and destroy bacteria once they are activated.",
+      "Activation is a **cascade**: one activated protein can activate many others, so the response grows quickly.",
+      "Some activated complement proteins join into complexes that **punch holes in the bacterial cell wall**. Water and salts rush in through the holes, and the bacterium swells and bursts.",
+      "Other complement proteins **mark cells for phagocytosis** or stimulate the release of **histamine**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A cascade amplifies the signal: a few activated proteins quickly become thousands, so the attack is fast enough to matter before bacteria multiply."
+    },
+    {
+     "type": "trick",
+     "text": "Complement \"complements\" the other defences: it kills bacteria itself, but it also tags them for phagocytes and calls in inflammation with histamine."
+    },
+    {
+     "type": "trap",
+     "text": "Complement proteins are plasma proteins, not white blood cells (Part 1 slide 10). The bacterium bursts because water and salts enter through the holes, not because the proteins digest it. Complement is part of innate immunity, not adaptive (Part 1 slide 9)."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slides 9-10.",
+    "Amplification explanation and the name pun are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/complement_p1-10.webp",
+     "slide": "Part 1 slide 10",
+     "alt": "Three stages of a rod-shaped bacterium: complement proteins form ring-shaped protein complexes in its cell wall, water and salts rush in through the holes, and the bacterium swells and bursts."
+    }
+   ]
+  },
+  {
+   "id": "phagocytosis",
+   "title": "Phagocytosis and the phagocytes",
+   "slides": "P1 11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/phago_p1-11.webp",
+      "slide": "Part 1 slide 11",
+      "alt": "Six numbered steps inside a phagocyte: it captures a bacterium, surrounds it, encloses it in a vesicle, the vesicle fuses with lysosomes, lysosomal enzymes digest the bacterium, and wastes and debris are discarded."
+     },
+     "title": "How a phagocyte eats a bacterium",
+     "bullets": [
+      "A phagocyte captures a foreign cell and engulfs it by **endocytosis**, which encloses it in a **vesicle** inside the phagocyte.",
+      "**Lysosomes**, which contain digestive enzymes, fuse with the vesicle and destroy the engulfed cell.",
+      "The wastes and debris are then discarded from the cell."
+     ]
+    },
+    {
+     "title": "Which cells do it",
+     "bullets": [
+      "**Neutrophils** are the first cells to respond to an infection. They can also make **extracellular traps** that catch microbes outside the cell.",
+      "**Macrophages** arrive later. They develop from **monocytes** that reach the area after the neutrophils.",
+      "**Eosinophils** fight **parasites**, which are too big to swallow. They bombard the parasite with digestive enzymes and then phagocytize the digested foreign proteins."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A parasite such as a tapeworm is far larger than any phagocyte, so it cannot be engulfed whole. Eosinophils digest it from the outside first."
+    },
+    {
+     "type": "trick",
+     "text": "Neutrophils are the first responders (N for \"now\"); macrophages are the big eaters (macro = large) that come later from monocytes."
+    },
+    {
+     "type": "trap",
+     "text": "Neutrophils arrive first, not macrophages (Part 1 slide 11). Macrophages come from monocytes. Eosinophils do not swallow whole parasites; they spray enzymes on them first. Phagocytosis is innate, not adaptive."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 11 (six-step figure).",
+    "Mnemonics are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/phago_p1-11.webp",
+     "slide": "Part 1 slide 11",
+     "alt": "Six numbered steps inside a phagocyte: it captures a bacterium, surrounds it, encloses it in a vesicle, the vesicle fuses with lysosomes, lysosomal enzymes digest the bacterium, and wastes and debris are discarded."
+    }
+   ]
+  },
+  {
+   "id": "inflammation",
+   "title": "Inflammation, fever, NK cells and interferons",
+   "slides": "P1 12-13",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/inflam_p1-12.webp",
+      "slide": "Part 1 slide 12",
+      "alt": "Three panels at an injury site: a mast cell and damaged cells release histamine that makes a capillary leaky, complement proteins leave the capillary to attack bacteria, and phagocytes squeeze through the capillary wall to engulf bacteria."
+     },
+     "title": "Inflammation",
+     "bullets": [
+      "At an injury, **histamine** is released by **basophils**, **mast cells** and damaged cells.",
+      "Histamine causes **vasodilation** and makes the capillaries leaky. Complement proteins and phagocytes can then move out of the blood into the injury.",
+      "Phagocytes are drawn in by histamine and other chemicals, squeeze through the capillary walls, and engulf bacteria and debris.",
+      "Some of these phagocytes later enter the lymphatic system and start an **adaptive immune response**."
+     ]
+    },
+    {
+     "title": "Fever",
+     "bullets": [
+      "**Fever** is a higher body temperature. It is caused by **pyrogens** released from macrophages.",
+      "A warmer body is a less comfortable place for foreign microbes."
+     ]
+    },
+    {
+     "title": "Natural killer cells",
+     "bullets": [
+      "**Natural killer (NK) cells** are lymphocytes that attack **tumour cells** and **virus-infected cells**.",
+      "They release **granzymes**, which include protein-digesting enzymes. Granzymes make holes in the target cell's membrane or trigger **apoptosis** (programmed cell death).",
+      "NK cells are **non-specific**, unlike other lymphocytes such as cytotoxic T cells."
+     ]
+    },
+    {
+     "title": "Interferons",
+     "bullets": [
+      "Some virus-infected cells secrete **interferons**. These anti-viral proteins signal to the neighbouring cells to raise their anti-viral defences."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Wider, leakier vessels near an injury let more plasma proteins and white blood cells reach the spot. That is also why an inflamed area turns red, warm and swollen."
+    },
+    {
+     "type": "trick",
+     "text": "Interferons \"interfere\" with a virus spreading: the infected cell warns its neighbours."
+    },
+    {
+     "type": "trap",
+     "text": "Fever comes from pyrogens released by macrophages, not from histamine (Part 1 slide 12). Histamine causes vasodilation, not vasoconstriction. NK cells are non-specific even though they are lymphocytes; cytotoxic T cells are the specific ones (Part 1 slide 13). Interferons protect neighbouring cells; they do not kill the infected cell."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slides 12-13.",
+    "Redness/warmth/swelling and the interferon name hint are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/inflam_p1-12.webp",
+     "slide": "Part 1 slide 12",
+     "alt": "Three panels at an injury site: a mast cell and damaged cells release histamine that makes a capillary leaky, complement proteins leave the capillary to attack bacteria, and phagocytes squeeze through the capillary wall to engulf bacteria."
+    }
+   ]
+  },
+  {
+   "id": "embryo",
+   "title": "How the immune system forms in the embryo",
+   "slides": "P1 14",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/pouches_p1-14.webp",
+      "slide": "Part 1 slide 14",
+      "alt": "The pharyngeal pouches of an embryo numbered 1 to 4, with the thymus labelled where it forms from the third pouch, next to the parathyroid and thyroid primordia."
+     },
+     "title": "Thymus and lymphatic vessels",
+     "bullets": [
+      "The **thymus** forms from **pharyngeal pouch 3**.",
+      "The lymphatic vessels first **bud off from the cardinal veins** of the embryo. These veins formed during vasculogenesis and connect to the sinus venosus of the heart tube."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/cardinal_p1-14.webp",
+      "slide": "Part 1 slide 14",
+      "alt": "Side view of an early embryo's blood vessels in red and blue, showing the anterior, common and posterior cardinal veins, the aortas, and the umbilical and vitelline vessels."
+     },
+     "title": "Spleen and white blood cells",
+     "bullets": [
+      "The **spleen** seems to arise from the **dorsal mesentery**, which comes from splanchnic mesoderm, close to the stomach.",
+      "White blood cells develop from **hematopoietic stem cells**, which first live in the **embryonic liver**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Lymphatic vessels must end up draining into the veins, so it makes sense that they first grow out of the embryo's veins."
+    },
+    {
+     "type": "trick",
+     "text": "Thymus = Three: the thymus comes from pouch 3."
+    },
+    {
+     "type": "trap",
+     "text": "The thymus comes from pharyngeal pouch 3, not pouch 2 or 4 (Part 1 slide 14). Lymphatic vessels bud from the cardinal veins, not the arteries. In the embryo, hematopoietic stem cells start out in the liver, not yet in the bone marrow."
+    }
+   ],
+   "sourceNotes": [
+    "Part 1 slide 14 (two figures).",
+    "The reason lymphatics come from veins and the Thymus = Three aid are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/pouches_p1-14.webp",
+     "slide": "Part 1 slide 14",
+     "alt": "The pharyngeal pouches of an embryo numbered 1 to 4, with the thymus labelled where it forms from the third pouch, next to the parathyroid and thyroid primordia."
+    },
+    {
+     "src": "img/immune/cardinal_p1-14.webp",
+     "slide": "Part 1 slide 14",
+     "alt": "Side view of an early embryo's blood vessels in red and blue, showing the anterior, common and posterior cardinal veins, the aortas, and the umbilical and vitelline vessels."
+    }
+   ]
+  },
+  {
+   "id": "adaptive",
+   "title": "Adaptive immunity: lymphocytes and antigens",
+   "slides": "P2 2-5, 18",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/stemcell_p2-3.webp",
+      "slide": "Part 2 slide 3",
+      "alt": "A family tree of blood cells. A haematopoietic stem cell gives a common myeloid progenitor (red blood cells, platelets, basophils, neutrophils, eosinophils, monocytes) and a common lymphoid progenitor, which becomes a lymphoblast and then T and B lymphocytes (boxed)."
+     },
+     "title": "Where lymphocytes come from",
+     "bullets": [
+      "Lymphocytes develop from stem cells in the bone marrow, through **lymphoid progenitor** cells.",
+      "A hematopoietic stem cell becomes a common lymphoid progenitor, then a **lymphoblast**, which gives rise to **B cells** and **T cells**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/lineage_p2-4.webp",
+      "slide": "Part 2 slide 4",
+      "alt": "A row of cells: hematopoietic stem cell, common lymphoid progenitor, lymphoblast, which then gives rise to a B cell and a T cell."
+     },
+     "title": "What makes adaptive immunity different",
+     "bullets": [
+      "It depends on lymphocytes, **B cells and T cells**.",
+      "It has **immunological memory**.",
+      "Its first response is **slower**: days to weeks after the first exposure.",
+      "It is **specific to antigens**. An **antigen** is a material that provokes an immune response. Antigens sit on the outer surface of a cell or virus and are read as \"non-self\". Antibodies bind specifically to their own antigen.",
+      "The exact part of an antigen that is recognized is called an **epitope**."
+     ]
+    },
+    {
+     "title": "From pathogen to immunity",
+     "bullets": [
+      "1. A pathogen enters the tissue.",
+      "2. The **innate** response starts inflammation and calls immune cells to the area.",
+      "3. Macrophages and neutrophils attack the pathogens, and **dendritic cells** capture antigens.",
+      "4. The lymphatic system carries dendritic cells and free antigens to the lymph nodes and lymphatic organs.",
+      "5. Antigens meet B and T cells in the lymph nodes and organs.",
+      "6. The **adaptive** response is activated and targets that pathogen."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Only a few lymphocytes fit any one antigen. The adaptive response is slow the first time because those few cells must be found and then multiply."
+    },
+    {
+     "type": "trick",
+     "text": "Innate = inborn and general; Adaptive = it Adapts to one particular antigen and remembers it."
+    },
+    {
+     "type": "trap",
+     "text": "Innate immunity is fast but has no memory; adaptive immunity is slower the first time but has memory (Part 2 slide 5). Dendritic cells, macrophages, neutrophils, complement and NK cells are innate; only T and B lymphocytes and antibodies are listed as adaptive. Innate and adaptive work together: the innate response comes first and brings antigens to the lymph nodes (Part 2 slide 18)."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 2-5 and 18.",
+    "Why the first response is slow is a generic clarification (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/stemcell_p2-3.webp",
+     "slide": "Part 2 slide 3",
+     "alt": "A family tree of blood cells. A haematopoietic stem cell gives a common myeloid progenitor (red blood cells, platelets, basophils, neutrophils, eosinophils, monocytes) and a common lymphoid progenitor, which becomes a lymphoblast and then T and B lymphocytes (boxed)."
+    },
+    {
+     "src": "img/immune/lineage_p2-4.webp",
+     "slide": "Part 2 slide 4",
+     "alt": "A row of cells: hematopoietic stem cell, common lymphoid progenitor, lymphoblast, which then gives rise to a B cell and a T cell."
+    }
+   ],
+   "table": {
+    "head": [
+     "",
+     "Innate",
+     "Adaptive"
+    ],
+    "rows": [
+     [
+      "Response",
+      "Quick: immediate to hours",
+      "Slower: days to weeks at the first exposure"
+     ],
+     [
+      "Specificity",
+      "Broad: recognizes common patterns",
+      "Specific: recognizes epitopes on antigens"
+     ],
+     [
+      "Memory",
+      "None",
+      "Yes, a stronger response on re-exposure"
+     ],
+     [
+      "Components",
+      "Barriers, neutrophils, macrophages, complement, dendritic cells, NK cells",
+      "T and B lymphocytes, antibodies"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "humoral",
+   "title": "Humoral immunity: B cells and antibodies",
+   "slides": "P2 6-8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/bactivation_p2-6.webp",
+      "slide": "Part 2 slide 6",
+      "alt": "A cycle of B-cell activation: a virus sheds antigen, a naive B cell binds it and is activated, becomes a lymphoblast, and makes a memory B cell, more B cells and a plasma cell that releases Y-shaped antibodies."
+     },
+     "title": "How a B cell is activated",
+     "bullets": [
+      "Humoral (antibody-mediated) immunity is carried out by **B cells**.",
+      "B cells **mature in the bone marrow** and travel in the blood to the lymphatic organs.",
+      "A B cell's surface receptor must meet and bind its **specific antigen**. Once bound, and with help from **helper T cells**, the B cell becomes **activated**.",
+      "The activated B cell grows and divides into many identical copies, called **clones**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/abproduction_p2-8.webp",
+      "slide": "Part 2 slide 8",
+      "alt": "Five numbered steps: an inactive B cell binds a bacterial antigen, a helper T cell gives cytokines to help activate it, the B cell multiplies into memory cells and plasma cells, plasma cells secrete antibodies, and memory cells wait for the next exposure."
+     },
+     "title": "Plasma cells and memory cells",
+     "bullets": [
+      "Clones that become **plasma cells** secrete antibodies, which circulate in the lymph and blood plasma.",
+      "Other clones become **memory cells**, which store information until the next exposure to the same antigen.",
+      "Helper T cells give **cytokines** that help activate the antigen-stimulated B cells."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/antibodies_p2-7.webp",
+      "slide": "Part 2 slide 7",
+      "alt": "Orange Y-shaped antibodies linking several round yellow antigen particles together into a clump."
+     },
+     "title": "What antibodies do",
+     "bullets": [
+      "A secreted antibody circulates until it finds its matching antigen. Together they form an **antigen-antibody complex**.",
+      "**Agglutination**: antibodies clump antigens or cells together.",
+      "**Neutralization**: antibodies cover the pathogen so it cannot do harm.",
+      "Antibodies can also **mark the antigen for destruction** by the complement system or by phagocytosis."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Each B cell carries receptors for one antigen only. Cloning it makes thousands of cells that all target the same invader."
+    },
+    {
+     "type": "trick",
+     "text": "Plasma cells pump out antibodies into the Plasma; Memory cells Remember for next time."
+    },
+    {
+     "type": "trap",
+     "text": "B cells mature in the bone marrow, not the thymus (Part 2 slide 6). Plasma cells secrete the antibodies; memory cells do not. B cells need help from helper T cells to be activated (Part 2 slides 6 and 8). Antibodies do not kill pathogens by themselves; they clump or neutralize them, or mark them for complement and phagocytes (Part 2 slide 7)."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 6-8 (slide 8 is the B-cell antibody production figure).",
+    "Agglutination and neutralization wordings are brief generic definitions; mnemonics are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/bactivation_p2-6.webp",
+     "slide": "Part 2 slide 6",
+     "alt": "A cycle of B-cell activation: a virus sheds antigen, a naive B cell binds it and is activated, becomes a lymphoblast, and makes a memory B cell, more B cells and a plasma cell that releases Y-shaped antibodies."
+    },
+    {
+     "src": "img/immune/abproduction_p2-8.webp",
+     "slide": "Part 2 slide 8",
+     "alt": "Five numbered steps: an inactive B cell binds a bacterial antigen, a helper T cell gives cytokines to help activate it, the B cell multiplies into memory cells and plasma cells, plasma cells secrete antibodies, and memory cells wait for the next exposure."
+    },
+    {
+     "src": "img/immune/antibodies_p2-7.webp",
+     "slide": "Part 2 slide 7",
+     "alt": "Orange Y-shaped antibodies linking several round yellow antigen particles together into a clump."
+    }
+   ]
+  },
+  {
+   "id": "cellmediated",
+   "title": "Cell-mediated immunity: T cells",
+   "slides": "P2 9-13",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/apc_p2-9.webp",
+      "slide": "Part 2 slide 9",
+      "alt": "An antigen-presenting cell holding an antigen fragment on an MHC molecule, touching an antigen-sensitive cell through its antigen receptor, which leads to an immune response."
+     },
+     "title": "T cells and antigen-presenting cells",
+     "bullets": [
+      "Cell-mediated immunity is carried out by **T cells**. They develop from stem cells in the bone marrow and **mature in the thymus**.",
+      "Each T cell develops a surface protein, **CD4** or **CD8**, which decides what kind of T cell it becomes.",
+      "A T cell can only be activated when an **antigen-presenting cell (APC)** shows it the antigen. APCs are macrophages, activated B cells and **dendritic cells**."
+     ]
+    },
+    {
+     "title": "How an APC presents an antigen",
+     "bullets": [
+      "The APC engulfs the foreign antigen and digests it into small fragments (**peptides**).",
+      "The fragments bind to **MHC molecules**, forming antigen-MHC complexes. There are two types: **MHC-I** and **MHC-II**.",
+      "Vesicles carry the antigen-MHC complexes to the cell surface, where T cells can see them.",
+      "**Dendritic cells** are the key APCs. They process antigen and travel to the lymphoid organs to show it to T cells."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/helper_p2-11.webp",
+      "slide": "Part 2 slide 11",
+      "alt": "An antigen-presenting cell shows an antigen-MHC complex to an inactive T cell with a CD4 receptor. The activated helper T cell divides again and again (clonal expansion), releases cytokines, and some copies become memory T cells."
+     },
+     "title": "Helper T cells (CD4)",
+     "bullets": [
+      "T cells with **CD4** receptors become **helper T cells**.",
+      "Once an antigen is presented to them, they undergo **clonal expansion** into effector T cells.",
+      "They secrete **cytokines**, which stimulate other immune cells (macrophages, B cells, NK cells and cytotoxic T cells) and help **activate B cells**.",
+      "Some clones become **memory cells**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/cytotoxic_p2-12.webp",
+      "slide": "Part 2 slide 12",
+      "alt": "An antigen-presenting cell activates a T cell with a CD8 receptor, helped by cytokines from an activated helper T cell. The cytotoxic T cell divides into many copies, some become memory T cells, and the rest attack a target cell."
+     },
+     "title": "Cytotoxic T cells (CD8)",
+     "bullets": [
+      "T cells with **CD8** receptors become **cytotoxic (killer) T cells**.",
+      "After an APC presents the antigen, they undergo clonal expansion. Some clones become memory cells.",
+      "Activated cytotoxic T cells circulate through the blood, lymph and tissues, scanning other cells' **MHC-I** for infected cells.",
+      "When one finds an infected cell it binds to it. Vesicles fuse and release **perforins**, then **granzymes**, which kill the cell."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/immune/overview_p2-13.webp",
+      "slide": "Part 2 slide 13",
+      "alt": "A flow chart. Antigen recognition splits into T cells (antigen presented by an APC, then T cell activation) and B cells (recognize antigen through the BCR, then activation with T helper cell help). Both lead to clonal expansion, which gives effector T cells, memory cells and plasma cells."
+     },
+     "title": "The whole picture",
+     "bullets": [
+      "Antigen recognition starts two paths. T cells see the antigen when an APC presents it; B cells recognize it directly through their **B cell receptor (BCR)**.",
+      "Both paths lead to activation and **clonal expansion**, which produces effector T cells, plasma cells and memory cells."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Cytotoxic T cells check MHC-I because it shows fragments of the proteins made inside a cell. A virus-infected cell therefore displays pieces of the virus that the T cell can recognize."
+    },
+    {
+     "type": "trick",
+     "text": "\"4 helps, 8 kills\": CD4 cells are the helpers, CD8 cells are the killers."
+    },
+    {
+     "type": "trap",
+     "text": "CD4 means helper T cell and CD8 means cytotoxic T cell; do not swap them (Part 2 slides 11-12). T cells mature in the thymus, B cells in the bone marrow. T cells cannot see free antigen; it must be presented on MHC by an APC, while B cells bind antigen directly through the BCR (Part 2 slide 13). Cytotoxic T cells scan MHC-I (Part 2 slide 12)."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 9-13.",
+    "Why MHC-I shows internal proteins is a standard clarification; the CD4/CD8 aids are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/apc_p2-9.webp",
+     "slide": "Part 2 slide 9",
+     "alt": "An antigen-presenting cell holding an antigen fragment on an MHC molecule, touching an antigen-sensitive cell through its antigen receptor, which leads to an immune response."
+    },
+    {
+     "src": "img/immune/helper_p2-11.webp",
+     "slide": "Part 2 slide 11",
+     "alt": "An antigen-presenting cell shows an antigen-MHC complex to an inactive T cell with a CD4 receptor. The activated helper T cell divides again and again (clonal expansion), releases cytokines, and some copies become memory T cells."
+    },
+    {
+     "src": "img/immune/cytotoxic_p2-12.webp",
+     "slide": "Part 2 slide 12",
+     "alt": "An antigen-presenting cell activates a T cell with a CD8 receptor, helped by cytokines from an activated helper T cell. The cytotoxic T cell divides into many copies, some become memory T cells, and the rest attack a target cell."
+    },
+    {
+     "src": "img/immune/overview_p2-13.webp",
+     "slide": "Part 2 slide 13",
+     "alt": "A flow chart. Antigen recognition splits into T cells (antigen presented by an APC, then T cell activation) and B cells (recognize antigen through the BCR, then activation with T helper cell help). Both lead to clonal expansion, which gives effector T cells, memory cells and plasma cells."
+    }
+   ],
+   "table": {
+    "head": [
+     "",
+     "Helper T cell",
+     "Cytotoxic T cell"
+    ],
+    "rows": [
+     [
+      "Surface protein",
+      "CD4",
+      "CD8"
+     ],
+     [
+      "Main job",
+      "Secretes cytokines that stimulate other immune cells and help activate B cells",
+      "Finds and kills infected cells"
+     ],
+     [
+      "How it acts",
+      "Signals with cytokines",
+      "Binds the cell, releases perforins and then granzymes"
+     ],
+     [
+      "Memory cells?",
+      "Some clones",
+      "Some clones"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "memory",
+   "title": "Immune memory and vaccines",
+   "slides": "P2 14-15",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/memory_p2-14.webp",
+      "slide": "Part 2 slide 14",
+      "alt": "Two graphs of antibody level over time. After the first exposure the level rises slowly to a low peak of about 1 unit per mL near day 10. After a second exposure it rises within days to about 100 units per mL and stays high for weeks."
+     },
+     "title": "The memory response",
+     "bullets": [
+      "B cell and T cell clones can become **memory cells**.",
+      "Memory cells reactivate when the body meets the **same antigen** again. This is the basis of **immunity** to a disease.",
+      "The **secondary immune response** is much faster and more effective than the first one.",
+      "In the graph, the first exposure gives a slow, small rise in antibodies. The second exposure gives a rapid rise to about 100 times as much antibody, which stays high for weeks."
+     ]
+    },
+    {
+     "title": "Vaccines",
+     "bullets": [
+      "A vaccine is called **active immunization**. It relies on immunological memory.",
+      "A **dead or weakened antigen** is given to prime the immune system. If the real pathogen arrives later, adaptive immunity mounts a fast secondary response.",
+      "We get a new flu vaccine nearly every year because the flu virus keeps changing its surface antigens, so last year's memory cells may not recognize this year's virus."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Memory cells are already waiting in large numbers, so the body skips the slow search-and-multiply stage of the first response."
+    },
+    {
+     "type": "trick",
+     "text": "A vaccine is a fire drill: the body practises on a harmless copy so it is ready for the real fire."
+    },
+    {
+     "type": "trap",
+     "text": "The secondary response is faster AND stronger, not just faster (Part 2 slide 14). Vaccines use dead or weakened antigen, not the live full-strength pathogen (Part 2 slide 15). Vaccination is active immunization because your own immune system makes the response and the memory."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 14-15.",
+    "The flu answer (antigen change) is a standard explanation of the question posed on Part 2 slide 15; the fire drill analogy is generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/memory_p2-14.webp",
+     "slide": "Part 2 slide 14",
+     "alt": "Two graphs of antibody level over time. After the first exposure the level rises slowly to a low peak of about 1 unit per mL near day 10. After a second exposure it rises within days to about 100 units per mL and stays high for weeks."
+    }
+   ]
+  },
+  {
+   "id": "disorders",
+   "title": "Allergies and autoimmune disorders",
+   "slides": "P2 16-17, 19",
+   "steps": [
+    {
+     "img": {
+      "src": "img/immune/allergy_p2-16.webp",
+      "slide": "Part 2 slide 16",
+      "alt": "Four steps of an allergy: an allergen makes a B cell produce IgE antibodies, the IgE sticks to a mast cell or basophil, at the next exposure the allergen binds that IgE, and the cell releases histamine."
+     },
+     "title": "Allergies",
+     "bullets": [
+      "An allergy is a **hypersensitive** immune system: an inappropriate response to an **allergen**. The allergen is not dangerous, but the body acts as if it were.",
+      "**IgE** is the type of antibody involved in allergies.",
+      "At the first exposure, the allergen causes a primary immune response, and B cells make **IgE specific to the allergen**.",
+      "The IgE antibodies bind to **mast cells and basophils**, which are now sensitized.",
+      "At the next exposure, the allergen binds that IgE and the cells **release histamine**, causing the allergic reaction."
+     ]
+    },
+    {
+     "title": "Autoimmune disorders",
+     "bullets": [
+      "In an autoimmune disorder, the immune system treats the body's **own cells** as foreign (\"non-self\").",
+      "Antibodies and cytotoxic T cells may attack the body's own cells.",
+      "During a process called **selection**, the immune system learns which antigens are \"self\". An antigen that was never shown to it as self may later be attacked.",
+      "Other times, antibodies **cross-react**: an antibody made against one antigen also binds a similar self antigen.",
+      "**Lupus erythematosus**: the body can attack its own connective tissue.",
+      "**Rheumatoid arthritis**: B cells make antibodies against proteins in the cartilage of the synovial membrane, and the immune response causes more tissue damage."
+     ]
+    },
+    {
+     "title": "Telling them apart",
+     "bullets": [
+      "Both involve an **inappropriate** immune response.",
+      "In an allergy the target is a harmless **outside** substance; in an autoimmune disorder the target is the body's **own** cells."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The first exposure to an allergen causes no symptoms because it only sensitizes the mast cells. Symptoms come at later exposures, when the IgE on those cells is already in place."
+    },
+    {
+     "type": "trick",
+     "text": "IgE is the allergy antibody: think E for an Excessive reaction to something harmless."
+    },
+    {
+     "type": "trap",
+     "text": "Allergies involve IgE, not other antibody types (Part 2 slide 16). The reaction happens on the second or later exposure, not the first. Do not mix up the two disorders: allergy = harmless outside allergen; autoimmune = own cells seen as non-self (Part 2 slides 17 and 19). In rheumatoid arthritis the antibodies target cartilage proteins of the synovial membrane."
+    }
+   ],
+   "sourceNotes": [
+    "Part 2 slides 16-17 and summary slide 19.",
+    "The 'selection' wording on Part 2 slide 17 is unclear; the note rephrases it as the immune system learning self antigens. Cross-reaction definition and the IgE aid are generic (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/immune/allergy_p2-16.webp",
+     "slide": "Part 2 slide 16",
+     "alt": "Four steps of an allergy: an allergen makes a B cell produce IgE antibodies, the IgE sticks to a mast cell or basophil, at the next exposure the allergen binds that IgE, and the cell releases histamine."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Innate versus adaptive immunity",
+  "head": [
+   "",
+   "Innate",
+   "Adaptive"
+  ],
+  "rows": [
+   [
+    "Line of defence",
+    "Second",
+    "Third"
+   ],
+   [
+    "Speed",
+    "Immediate to hours",
+    "Days to weeks the first time; much faster with memory"
+   ],
+   [
+    "Specificity",
+    "Broad, common patterns",
+    "Specific epitopes on antigens"
+   ],
+   [
+    "Memory",
+    "None",
+    "Yes (memory B and T cells)"
+   ],
+   [
+    "Main parts",
+    "Complement, neutrophils, macrophages, eosinophils, dendritic cells, NK cells, interferons, inflammation and fever",
+    "B cells and antibodies (humoral); helper and cytotoxic T cells (cell-mediated)"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "im-c1",
+   "front": "Pathogen",
+   "back": "Anything that causes disease: bacteria, viruses, fungi, protozoa, parasites or prions.",
+   "short": "Disease-causing agent",
+   "src": "Part 1 slide 2"
+  },
+  {
+   "id": "im-c2",
+   "front": "How do pathogenic bacteria harm us?",
+   "gloss": false,
+   "back": "They rely on human cells for energy and often make damaging toxins (for example botulism, tuberculosis, syphilis).",
+   "short": "Use our cells for energy; make toxins",
+   "src": "Part 1 slide 2"
+  },
+  {
+   "id": "im-c3",
+   "front": "How does a virus make copies of itself?",
+   "gloss": false,
+   "back": "It hijacks the cell's transcription and translation machinery to replicate (for example rabies, chicken pox, colds).",
+   "short": "Hijacks the cell's machinery",
+   "src": "Part 1 slide 2"
+  },
+  {
+   "id": "im-c4",
+   "front": "Prion",
+   "back": "A misfolded protein that makes the normal proteins in a cell misfold too. Example: Creutzfeldt-Jakob disease.",
+   "short": "Misfolded protein that spreads misfolding",
+   "src": "Part 1 slide 2"
+  },
+  {
+   "id": "im-c5",
+   "front": "Parasite",
+   "back": "An organism that lives on or in a host for part of its life cycle and harms it, such as Giardia, lice and tapeworms.",
+   "short": "Lives on/in a host and harms it",
+   "src": "Part 1 slide 2"
+  },
+  {
+   "id": "im-c6",
+   "front": "What are the three lines of defence?",
+   "gloss": false,
+   "back": "1st: barriers (skin, stomach acid, tears, vomiting). 2nd: innate, non-specific immunity. 3rd: adaptive, specific immunity.",
+   "short": "Barriers, innate, adaptive",
+   "src": "Part 1 slide 3; Part 2 slide 3"
+  },
+  {
+   "id": "im-c7",
+   "front": "What are the three jobs of the lymphatic system?",
+   "gloss": false,
+   "back": "It maintains blood volume, transports digested fat, and filters out foreign materials to defend against infection.",
+   "short": "Blood volume, fat transport, defence",
+   "src": "Part 1 slide 5"
+  },
+  {
+   "id": "im-c8",
+   "front": "Lymph",
+   "back": "The fluid carried by lymphatic vessels, made mostly of white blood cells, proteins and fats.",
+   "short": "Fluid of WBCs, proteins and fats",
+   "src": "Part 1 slide 5"
+  },
+  {
+   "id": "im-c9",
+   "front": "What do lymphatic capillaries pick up?",
+   "gloss": false,
+   "back": "They are blind-ended and take up substances too large to enter blood capillaries, plus excess interstitial fluid.",
+   "short": "Large substances and extra interstitial fluid",
+   "src": "Part 1 slide 5"
+  },
+  {
+   "id": "im-c10",
+   "front": "Lymph node",
+   "back": "A small organ along the lymphatic vessels that filters lymph. Its macrophages clean the lymph and its lymphocytes activate the immune response.",
+   "short": "Filters lymph",
+   "src": "Part 1 slide 6"
+  },
+  {
+   "id": "im-c11",
+   "front": "How does lymph get back into the blood?",
+   "gloss": false,
+   "back": "Through the right lymphatic duct and the thoracic duct, which drain into the subclavian veins. Valves stop backflow.",
+   "short": "Two ducts into the subclavian veins",
+   "src": "Part 1 slide 6"
+  },
+  {
+   "id": "im-c12",
+   "front": "What does the spleen do?",
+   "gloss": false,
+   "back": "It is the largest lymphatic organ. It keeps blood cells in good condition and fights infection: it is to blood what the lymph nodes are to lymph.",
+   "short": "Filters blood",
+   "src": "Part 1 slide 7"
+  },
+  {
+   "id": "im-c13",
+   "front": "Red pulp versus white pulp of the spleen?",
+   "gloss": false,
+   "back": "Red pulp: macrophages remove old and damaged red blood cells, and it stores blood. White pulp: lymphocytes search the blood for pathogens.",
+   "short": "Red: removes old RBCs; white: lymphocytes",
+   "src": "Part 1 slide 7"
+  },
+  {
+   "id": "im-c14",
+   "front": "Thymus",
+   "back": "Gland above the heart, behind the sternum, where T cells mature. Makes thymosin and thymopoietin. Largest in childhood, shrinks from adolescence.",
+   "short": "Where T cells mature",
+   "src": "Part 1 slide 8"
+  },
+  {
+   "id": "im-c15",
+   "front": "Which parts make up innate immunity?",
+   "gloss": false,
+   "back": "Complement, phagocytic cells (neutrophils, macrophages, eosinophils), inflammation and fever, NK cells, and interferons.",
+   "short": "Complement, phagocytes, inflammation, NK, interferons",
+   "src": "Part 1 slide 9"
+  },
+  {
+   "id": "im-c16",
+   "front": "Complement system",
+   "back": "Plasma proteins that, once activated in a cascade, punch holes in bacterial walls, mark cells for phagocytosis, or trigger histamine release.",
+   "short": "Plasma proteins that burst bacteria",
+   "src": "Part 1 slide 10"
+  },
+  {
+   "id": "im-c17",
+   "front": "How do complement proteins kill a bacterium?",
+   "gloss": false,
+   "back": "They form complexes that make holes in its cell wall. Water and salts diffuse in, and the bacterium swells and bursts.",
+   "short": "Holes, water rushes in, it bursts",
+   "src": "Part 1 slide 10"
+  },
+  {
+   "id": "im-c18",
+   "front": "Phagocytosis",
+   "back": "A cell engulfs a foreign cell by endocytosis into a vesicle; lysosomes fuse with the vesicle and their enzymes destroy it.",
+   "short": "Engulf, then digest with lysosomes",
+   "src": "Part 1 slide 11"
+  },
+  {
+   "id": "im-c19",
+   "front": "Which phagocyte arrives first, and where do macrophages come from?",
+   "gloss": false,
+   "back": "Neutrophils respond first (and can make extracellular traps). Macrophages develop from monocytes that arrive later.",
+   "short": "Neutrophils first; macrophages from monocytes",
+   "src": "Part 1 slide 11"
+  },
+  {
+   "id": "im-c20",
+   "front": "How do eosinophils deal with parasites?",
+   "gloss": false,
+   "back": "Parasites are too big to engulf, so eosinophils bombard them with digestive enzymes and then phagocytize the digested proteins.",
+   "short": "Spray enzymes, then engulf the pieces",
+   "src": "Part 1 slide 11"
+  },
+  {
+   "id": "im-c21",
+   "front": "What happens in inflammation?",
+   "gloss": false,
+   "back": "Basophils, mast cells and damaged cells release histamine. It causes vasodilation and leaky vessels, letting complement and phagocytes into the injury.",
+   "short": "Histamine opens the vessels",
+   "src": "Part 1 slide 12"
+  },
+  {
+   "id": "im-c22",
+   "front": "What causes fever, and why does it help?",
+   "gloss": false,
+   "back": "Pyrogens released from macrophages. A higher temperature makes the body less hospitable to foreign microbes.",
+   "short": "Pyrogens from macrophages",
+   "src": "Part 1 slides 9, 12"
+  },
+  {
+   "id": "im-c23",
+   "front": "Natural killer (NK) cell",
+   "back": "A non-specific lymphocyte that kills tumour cells and virus-infected cells with granzymes.",
+   "short": "Non-specific killer lymphocyte",
+   "src": "Part 1 slide 13"
+  },
+  {
+   "id": "im-c24",
+   "front": "Granzymes",
+   "back": "Enzymes (including protein-digesting ones) released by NK cells and cytotoxic T cells that make holes in a target cell or trigger apoptosis.",
+   "short": "Killer enzymes",
+   "src": "Part 1 slide 13; Part 2 slide 12"
+  },
+  {
+   "id": "im-c25",
+   "front": "Interferons",
+   "back": "Anti-viral proteins secreted by some virus-infected cells; they signal neighbouring cells to raise their anti-viral defences.",
+   "short": "Warn neighbours about a virus",
+   "src": "Part 1 slide 13"
+  },
+  {
+   "id": "im-c26",
+   "front": "Where do the thymus, lymphatic vessels and spleen come from in the embryo?",
+   "gloss": false,
+   "back": "Thymus: pharyngeal pouch 3. Lymphatic vessels: bud off the cardinal veins. Spleen: the dorsal mesentery (splanchnic mesoderm), near the stomach.",
+   "short": "Pouch 3; cardinal veins; dorsal mesentery",
+   "src": "Part 1 slide 14"
+  },
+  {
+   "id": "im-c27",
+   "front": "Where are white blood cells first made in the embryo?",
+   "gloss": false,
+   "back": "From hematopoietic stem cells that first live in the embryonic liver.",
+   "short": "Stem cells in the embryonic liver",
+   "src": "Part 1 slide 14"
+  },
+  {
+   "id": "im-c28",
+   "front": "Antigen",
+   "back": "A material on the surface of a cell or virus that provokes an immune response and is read as \"non-self\". Antibodies bind it specifically.",
+   "short": "Non-self marker that triggers a response",
+   "src": "Part 2 slide 4"
+  },
+  {
+   "id": "im-c29",
+   "front": "Epitope",
+   "back": "The specific part of an antigen that adaptive immunity recognizes.",
+   "short": "Recognized part of an antigen",
+   "src": "Part 2 slide 5"
+  },
+  {
+   "id": "im-c30",
+   "front": "How do innate and adaptive immunity compare?",
+   "gloss": false,
+   "back": "Innate: quick, broad, no memory. Adaptive: slower at first (days to weeks), specific to epitopes, has memory.",
+   "short": "Innate fast and broad; adaptive specific with memory",
+   "src": "Part 2 slide 5"
+  },
+  {
+   "id": "im-c31",
+   "front": "Where do B cells mature, and what activates them?",
+   "gloss": false,
+   "back": "In the bone marrow. A B cell is activated when its receptor binds its specific antigen, with help from helper T cells.",
+   "short": "Bone marrow; antigen plus helper T cells",
+   "src": "Part 2 slide 6"
+  },
+  {
+   "id": "im-c32",
+   "front": "Plasma cell",
+   "back": "A B cell clone that secretes antibodies into the lymph and blood plasma.",
+   "short": "Antibody factory",
+   "src": "Part 2 slides 6, 8"
+  },
+  {
+   "id": "im-c33",
+   "front": "What can antibodies do to a pathogen?",
+   "gloss": false,
+   "back": "Agglutinate (clump) it, neutralize it, or mark it for destruction by complement or phagocytosis.",
+   "short": "Clump, neutralize, or mark it",
+   "src": "Part 2 slide 7"
+  },
+  {
+   "id": "im-c34",
+   "front": "Antigen-presenting cell (APC)",
+   "back": "A cell that digests antigen into peptides and shows them on MHC molecules to T cells: macrophages, activated B cells and dendritic cells.",
+   "short": "Shows antigen on MHC to T cells",
+   "src": "Part 2 slides 9-10"
+  },
+  {
+   "id": "im-c35",
+   "front": "MHC molecule",
+   "back": "A surface molecule that holds antigen fragments for T cells to see. There are two types, MHC-I and MHC-II.",
+   "short": "Holds antigen fragments for T cells",
+   "src": "Part 2 slide 10"
+  },
+  {
+   "id": "im-c36",
+   "front": "Helper T cell",
+   "back": "A CD4 T cell that, once activated by an APC, secretes cytokines that stimulate other immune cells and help activate B cells.",
+   "short": "CD4; cytokines; helps B cells",
+   "src": "Part 2 slide 11"
+  },
+  {
+   "id": "im-c37",
+   "front": "Cytotoxic T cell",
+   "back": "A CD8 killer T cell that scans MHC-I, binds infected cells and kills them with perforins and granzymes.",
+   "short": "CD8 killer of infected cells",
+   "src": "Part 2 slide 12"
+  },
+  {
+   "id": "im-c38",
+   "front": "Why is the secondary immune response better?",
+   "gloss": false,
+   "back": "Memory B and T cells reactivate at once when the same antigen returns, so the response is much faster and more effective.",
+   "short": "Memory cells are ready",
+   "src": "Part 2 slide 14"
+  },
+  {
+   "id": "im-c39",
+   "front": "How does a vaccine work?",
+   "gloss": false,
+   "back": "It is active immunization: a dead or weakened antigen primes the immune system, so a later exposure gets a fast secondary response.",
+   "short": "Dead/weakened antigen creates memory",
+   "src": "Part 2 slide 15"
+  },
+  {
+   "id": "im-c40",
+   "front": "Allergy versus autoimmune disorder?",
+   "gloss": false,
+   "back": "Allergy: an IgE-driven overreaction to a harmless outside allergen. Autoimmune: the immune system attacks the body's own cells as non-self (for example lupus, rheumatoid arthritis).",
+   "short": "Harmless outside thing vs own cells",
+   "src": "Part 2 slides 16-17, 19"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "im-1",
+   "q": "Which pathogen is a misfolded protein that makes normal proteins misfold?",
+   "options": [
+    "A virus",
+    "A bacterium",
+    "A protozoan",
+    "A prion",
+    "A parasite"
+   ],
+   "answer": 3,
+   "why": "Prions are misfolded proteins that can trigger misfolding of normal proteins in a cell, as in Creutzfeldt-Jakob disease.",
+   "source": "Part 1 slide 2"
+  },
+  {
+   "id": "im-2",
+   "q": "How does a virus reproduce?",
+   "options": [
+    "It splits in two on its own while floating free in the blood.",
+    "It hijacks a host cell's transcription and translation machinery.",
+    "It feeds on human cells for energy and releases damaging toxins.",
+    "It misfolds the host cell's normal proteins to copy its own shape.",
+    "It lives on the skin of a host for one part of its life cycle."
+   ],
+   "answer": 1,
+   "why": "Viruses hijack the transcription and translation machinery of a cell to replicate. Using cells for energy and releasing toxins describes bacteria.",
+   "source": "Part 1 slide 2"
+  },
+  {
+   "id": "im-3",
+   "q": "Skin, stomach acid, tears and vomiting belong to which line of defence?",
+   "options": [
+    "The first line: barriers",
+    "The second line: innate immunity",
+    "The third line: adaptive immunity",
+    "Cell-mediated immunity",
+    "Humoral immunity"
+   ],
+   "answer": 0,
+   "why": "Barriers that keep pathogens out, or expel or neutralize them before infection, are the first line of defence.",
+   "source": "Part 1 slide 3"
+  },
+  {
+   "id": "im-4",
+   "q": "Which is NOT one of the jobs of the lymphatic system?",
+   "options": [
+    "Maintaining blood volume by returning fluid",
+    "Transporting digested fat from the intestine",
+    "Filtering out foreign materials from the lymph",
+    "Pumping oxygenated blood to the tissues",
+    "Defending the body against infection"
+   ],
+   "answer": 3,
+   "why": "The lymphatic system maintains blood volume, transports digested fat and filters out foreign material to defend against infection. Pumping blood is the heart's job.",
+   "source": "Part 1 slide 5"
+  },
+  {
+   "id": "im-5",
+   "q": "The picture shows a lymphatic capillary between tissue cells. What does it take up?",
+   "options": [
+    "Only red blood cells that have leaked out of the blood capillaries",
+    "Oxygen and glucose that the surrounding tissue cells need",
+    "Excess interstitial fluid and substances too large to enter blood capillaries",
+    "Nothing at all; it only carries lymph outward from the heart toward the tissues and organs",
+    "Digestive enzymes released by lysosomes in the tissue cells"
+   ],
+   "answer": 2,
+   "why": "Blind-ended lymphatic capillaries take up substances too large for blood capillaries, plus excess interstitial fluid.",
+   "source": "Part 1 slide 5",
+   "img": {
+    "src": "img/immune/lymphcap_p1-5.webp",
+    "alt": "A green lymphatic capillary lying between tissue cells next to a purple blood capillary. Arrows show fluid and small particles moving from between the cells into the lymphatic capillary."
+   }
+  },
+  {
+   "id": "im-6",
+   "q": "Through which vessels does lymph re-enter the cardiovascular system?",
+   "options": [
+    "The pulmonary veins, through the left lymphatic duct and the bronchi",
+    "The subclavian veins, through the right lymphatic duct and the thoracic duct",
+    "The hepatic portal vein, through small ducts that open into the liver",
+    "The coronary arteries, through small ducts in the heart wall itself",
+    "The inferior vena cava, through a single large duct that drains the whole lower body"
+   ],
+   "answer": 1,
+   "why": "Lymphatic vessels drain through the right lymphatic duct and the thoracic duct into the subclavian veins.",
+   "source": "Part 1 slide 6"
+  },
+  {
+   "id": "im-7",
+   "q": "What do lymph nodes contain that lets them clean lymph and start an immune response?",
+   "options": [
+    "Red blood cells and platelets",
+    "Complement proteins only",
+    "Hormone-secreting cells",
+    "Macrophages and lymphocytes",
+    "Fat cells and fibroblasts"
+   ],
+   "answer": 3,
+   "why": "Lymph nodes are full of macrophages, which remove pathogens, and lymphocytes, which activate the immune response.",
+   "source": "Part 1 slide 6"
+  },
+  {
+   "id": "im-8",
+   "q": "In the spleen, what does the red pulp do?",
+   "options": [
+    "Its lymphocytes search the passing blood for circulating pathogens to attack.",
+    "It makes and secretes the antibodies that circulate in the blood plasma.",
+    "It is the site where T lymphocytes mature during childhood, before it shrinks with age.",
+    "It filters lymph that arrives from the lymphatic vessels of the abdomen.",
+    "Its macrophages remove old and damaged red blood cells, and it stores blood."
+   ],
+   "answer": 4,
+   "why": "Red pulp macrophages remove old and damaged red blood cells and the red pulp temporarily stores blood. The white pulp holds the lymphocytes.",
+   "source": "Part 1 slide 7",
+   "img": {
+    "src": "img/immune/spleen_p1-7.webp",
+    "alt": "The spleen cut open to show dark red pulp with small pale islands of white pulp, and a red artery and blue vein carrying blood in and out."
+   }
+  },
+  {
+   "id": "im-9",
+   "q": "Which statement about the thymus is correct?",
+   "options": [
+    "It is where B cells mature, and it grows larger after adolescence.",
+    "It is largest in old age, when it makes the most thymosin.",
+    "It is where T cells mature, and it shrinks after adolescence.",
+    "It filters old red blood cells out of the blood, like the spleen.",
+    "It sits below the stomach, behind the dorsal mesentery."
+   ],
+   "answer": 2,
+   "why": "The thymus, above the heart behind the sternum, is where T cells mature. It is largest in childhood and shrinks from adolescence.",
+   "source": "Part 1 slide 8"
+  },
+  {
+   "id": "im-10",
+   "q": "The picture shows complement proteins attacking a bacterium. Why does the bacterium burst?",
+   "options": [
+    "Complement proteins digest its DNA from the inside out.",
+    "Water and salts enter through holes made in its wall.",
+    "Antibodies attach to it and pull its cell wall apart.",
+    "Phagocytes squeeze it from outside until its wall breaks.",
+    "Fever heats it until the proteins in its wall melt."
+   ],
+   "answer": 1,
+   "why": "Activated complement proteins form complexes that make holes in the bacterial wall. Water and salts diffuse in, and the cell swells and bursts.",
+   "source": "Part 1 slide 10",
+   "img": {
+    "src": "img/immune/complement_p1-10.webp",
+    "alt": "Three stages of a rod-shaped bacterium: complement proteins form ring-shaped protein complexes in its cell wall, water and salts rush in through the holes, and the bacterium swells and bursts."
+   }
+  },
+  {
+   "id": "im-11",
+   "q": "Which of these is NOT part of innate immunity?",
+   "options": [
+    "The complement system of plasma proteins",
+    "Natural killer cells that release granzymes",
+    "Interferons from virus-infected cells",
+    "Plasma cells that secrete antibodies",
+    "Inflammation and fever at an injury"
+   ],
+   "answer": 3,
+   "why": "Innate immunity includes complement, phagocytes, inflammation and fever, NK cells and interferons. Antibody-secreting plasma cells are part of adaptive (humoral) immunity.",
+   "source": "Part 1 slide 9; Part 2 slide 6"
+  },
+  {
+   "id": "im-12",
+   "q": "During phagocytosis, what destroys the engulfed bacterium?",
+   "options": [
+    "Digestive enzymes from lysosomes that fuse with the vesicle",
+    "Histamine released by nearby mast cells and basophils",
+    "Perforins released by a cytotoxic T cell that binds the vesicle",
+    "Interferons that signal from the phagocyte to its neighbours",
+    "Pyrogens that raise the temperature inside the vesicle until it bursts"
+   ],
+   "answer": 0,
+   "why": "After endocytosis encloses the bacterium in a vesicle, lysosomes fuse with it and their enzymes digest the bacterium.",
+   "source": "Part 1 slide 11",
+   "img": {
+    "src": "img/immune/phago_p1-11.webp",
+    "alt": "Six numbered steps inside a phagocyte: it captures a bacterium, surrounds it, encloses it in a vesicle, the vesicle fuses with lysosomes, lysosomal enzymes digest the bacterium, and wastes and debris are discarded."
+   }
+  },
+  {
+   "id": "im-13",
+   "q": "Which cells are the first to respond to an infection?",
+   "options": [
+    "Macrophages",
+    "Neutrophils",
+    "Plasma cells",
+    "Cytotoxic T cells",
+    "Memory cells"
+   ],
+   "answer": 1,
+   "why": "Neutrophils are the first responders. Macrophages develop from monocytes that arrive later.",
+   "source": "Part 1 slide 11"
+  },
+  {
+   "id": "im-14",
+   "q": "How do eosinophils attack a parasite such as a tapeworm?",
+   "options": [
+    "They engulf the whole parasite at once and digest it inside a single vesicle.",
+    "They make antibodies against the parasite's surface antigens and release them.",
+    "They release interferons onto the parasite so that it stops moving and feeding.",
+    "They raise the body's temperature with pyrogens until the parasite can no longer survive.",
+    "They bombard it with digestive enzymes and then phagocytize the digested proteins."
+   ],
+   "answer": 4,
+   "why": "Parasites are too big to phagocytize, so eosinophils spray them with digestive enzymes first and then engulf the digested foreign proteins.",
+   "source": "Part 1 slide 11"
+  },
+  {
+   "id": "im-15",
+   "q": "At an injury, what does histamine do?",
+   "options": [
+    "It constricts the blood vessels at the injury so that bleeding stops quickly.",
+    "It causes vasodilation so complement and phagocytes can reach the injury.",
+    "It directly punches holes in the bacteria at the injury so that they burst.",
+    "It travels to the brain and raises the body's temperature to cause a fever.",
+    "It binds to B cells in the lymph nodes and activates them to make antibodies."
+   ],
+   "answer": 1,
+   "why": "Histamine from basophils, mast cells and damaged cells causes vasodilation; the dilated, leaky vessels let complement proteins and phagocytes into the injury.",
+   "source": "Part 1 slide 12",
+   "img": {
+    "src": "img/immune/inflam_p1-12.webp",
+    "alt": "Three panels at an injury site: a mast cell and damaged cells release histamine that makes a capillary leaky, complement proteins leave the capillary to attack bacteria, and phagocytes squeeze through the capillary wall to engulf bacteria."
+   }
+  },
+  {
+   "id": "im-16",
+   "q": "What causes fever?",
+   "options": [
+    "Histamine released from mast cells",
+    "Interferons from virus-infected cells",
+    "Granzymes released by NK cells",
+    "Pyrogens released from macrophages",
+    "IgE antibodies bound to basophils"
+   ],
+   "answer": 3,
+   "why": "Fever is caused by pyrogens released from macrophages. A higher temperature is less hospitable to microbes.",
+   "source": "Part 1 slide 12"
+  },
+  {
+   "id": "im-17",
+   "q": "Which statement about natural killer (NK) cells is correct?",
+   "options": [
+    "They are non-specific lymphocytes that kill tumour cells and virus-infected cells.",
+    "They are specific to one antigen and mature in the thymus, like cytotoxic T cells.",
+    "They are plasma cells that secrete antibodies against tumours and viruses.",
+    "They only attack bacteria, which they burst using complement proteins.",
+    "They are helper cells that release cytokines to activate the B cells."
+   ],
+   "answer": 0,
+   "why": "NK cells attack tumour and virus-infected cells with granzymes and are non-specific, unlike cytotoxic T cells.",
+   "source": "Part 1 slide 13"
+  },
+  {
+   "id": "im-18",
+   "q": "What do interferons do?",
+   "options": [
+    "They punch holes in bacterial cell walls so that water and salts rush in.",
+    "They carry digested fat through the lymphatic vessels to the subclavian veins.",
+    "They signal neighbouring cells to increase their anti-viral defences.",
+    "They bind to mast cells and cause the histamine release seen in allergies.",
+    "They carry antigen fragments to the cell surface to present them to T cells."
+   ],
+   "answer": 2,
+   "why": "Virus-infected cells secrete interferons, anti-viral proteins that signal neighbouring cells to raise their anti-viral defences.",
+   "source": "Part 1 slide 13"
+  },
+  {
+   "id": "im-19",
+   "q": "In the embryo, where does the thymus come from?",
+   "options": [
+    "The dorsal mesentery",
+    "The cardinal veins",
+    "The embryonic liver",
+    "Pharyngeal pouch 2",
+    "Pharyngeal pouch 3"
+   ],
+   "answer": 4,
+   "why": "The thymus arises from pharyngeal pouch 3. The spleen comes from the dorsal mesentery, and lymphatic vessels bud from the cardinal veins.",
+   "source": "Part 1 slide 14",
+   "img": {
+    "src": "img/immune/pouches_p1-14.webp",
+    "alt": "The pharyngeal pouches of an embryo numbered 1 to 4, with the thymus labelled where it forms from the third pouch, next to the parathyroid and thyroid primordia."
+   }
+  },
+  {
+   "id": "im-20",
+   "q": "Which feature belongs to adaptive immunity but NOT innate immunity?",
+   "options": [
+    "An immediate response that starts within hours",
+    "Broad recognition of patterns common to many pathogens",
+    "Memory, giving a stronger response on re-exposure",
+    "Neutrophils and macrophages that engulf pathogens",
+    "Physical and chemical barriers such as the skin"
+   ],
+   "answer": 2,
+   "why": "Adaptive immunity is specific and has memory. Innate immunity is quick and broad but has no memory.",
+   "source": "Part 2 slide 5"
+  },
+  {
+   "id": "im-21",
+   "q": "Which statement about antigens is correct?",
+   "options": [
+    "They are the Y-shaped proteins that plasma cells secrete into the blood.",
+    "They sit on the surface of a cell or virus, provoke an immune response, and are read as non-self.",
+    "They are the white blood cells that recognize and remove one specific pathogen.",
+    "They are molecules found only inside the nucleus of the body's own healthy cells.",
+    "They are another name for antibodies, the proteins made by B cell clones in lymph nodes."
+   ],
+   "answer": 1,
+   "why": "Antigens provoke an immune response. They sit on the outer surface of a cell or virus, are read as non-self, and antibodies bind them specifically.",
+   "source": "Part 2 slide 4"
+  },
+  {
+   "id": "im-22",
+   "q": "After a B cell is activated and cloned, which clones secrete antibodies?",
+   "options": [
+    "Plasma cells",
+    "Memory cells",
+    "Helper T cells",
+    "Dendritic cells",
+    "Cytotoxic T cells"
+   ],
+   "answer": 0,
+   "why": "Clones that become plasma cells secrete antibodies into the lymph and blood plasma. Other clones become memory cells.",
+   "source": "Part 2 slides 6, 8",
+   "img": {
+    "src": "img/immune/abproduction_p2-8.webp",
+    "alt": "Five numbered steps: an inactive B cell binds a bacterial antigen, a helper T cell gives cytokines to help activate it, the B cell multiplies into memory cells and plasma cells, plasma cells secrete antibodies, and memory cells wait for the next exposure."
+   }
+  },
+  {
+   "id": "im-23",
+   "q": "In the picture, antibodies link antigens into a clump. What is this action called?",
+   "options": [
+    "Neutralization",
+    "Phagocytosis",
+    "Apoptosis",
+    "Agglutination",
+    "Clonal expansion"
+   ],
+   "answer": 3,
+   "why": "Agglutination is the clumping of antigens by antibodies. Neutralization blocks a pathogen without clumping it.",
+   "source": "Part 2 slide 7",
+   "img": {
+    "src": "img/immune/antibodies_p2-7.webp",
+    "alt": "Orange Y-shaped antibodies linking several round yellow antigen particles together into a clump."
+   }
+  },
+  {
+   "id": "im-24",
+   "q": "Which cells are antigen-presenting cells (APCs)?",
+   "options": [
+    "Red blood cells, platelets and the neutrophils of the blood",
+    "Plasma cells and memory cells made by B cell clones",
+    "Eosinophils and basophils that respond to parasites",
+    "Cytotoxic T cells and natural killer cells that kill",
+    "Macrophages, activated B cells and dendritic cells"
+   ],
+   "answer": 4,
+   "why": "APCs are macrophages, activated B cells and dendritic cells. Dendritic cells are the key APCs.",
+   "source": "Part 2 slides 9-10"
+  },
+  {
+   "id": "im-25",
+   "q": "A T cell with CD4 receptors becomes which kind of cell?",
+   "options": [
+    "A cytotoxic T cell that scans MHC-I and releases perforins and granzymes",
+    "A helper T cell that secretes cytokines and helps activate B cells",
+    "A plasma cell that secretes antibodies into the lymph and blood plasma",
+    "A natural killer cell that attacks tumour cells and virus-infected cells",
+    "A dendritic cell that carries antigen to the lymph nodes and lymphatic organs"
+   ],
+   "answer": 1,
+   "why": "CD4 T cells become helper T cells; they secrete cytokines, stimulate other immune cells and help activate B cells. CD8 T cells become cytotoxic T cells.",
+   "source": "Part 2 slides 11-12",
+   "img": {
+    "src": "img/immune/helper_p2-11.webp",
+    "alt": "An antigen-presenting cell shows an antigen-MHC complex to an inactive T cell with a CD4 receptor. The activated helper T cell divides again and again (clonal expansion), releases cytokines, and some copies become memory T cells."
+   }
+  },
+  {
+   "id": "im-26",
+   "q": "How does a cytotoxic T cell kill an infected cell?",
+   "options": [
+    "It engulfs the cell by phagocytosis and digests it with lysosomes.",
+    "It coats the cell with IgE so that nearby mast cells release histamine.",
+    "It binds the cell, then releases perforins and then granzymes.",
+    "It releases histamine so the cell's blood supply becomes leaky.",
+    "It signals the infected cell's neighbours with interferons."
+   ],
+   "answer": 2,
+   "why": "An activated cytotoxic (CD8) T cell finds an infected cell by scanning MHC-I, binds it, and vesicles fuse to release perforins and then granzymes.",
+   "source": "Part 2 slide 12",
+   "img": {
+    "src": "img/immune/cytotoxic_p2-12.webp",
+    "alt": "An antigen-presenting cell activates a T cell with a CD8 receptor, helped by cytokines from an activated helper T cell. The cytotoxic T cell divides into many copies, some become memory T cells, and the rest attack a target cell."
+   }
+  },
+  {
+   "id": "im-27",
+   "q": "The graph shows antibody levels after a first and a second exposure to the same antigen. What explains the second curve?",
+   "options": [
+    "Memory cells reactivate, so the response is faster and much larger.",
+    "The antigen is weaker the second time, so it is easier to remove.",
+    "Innate immunity has learned the antigen and responds more strongly.",
+    "The thymus grows after the first exposure and makes many more T cells.",
+    "Antibodies from the first exposure are still at their very highest level."
+   ],
+   "answer": 0,
+   "why": "B and T memory cells reactivate on re-exposure. The secondary response is much faster and more effective, reaching about 100 times the antibody level.",
+   "source": "Part 2 slide 14",
+   "img": {
+    "src": "img/immune/memory_p2-14.webp",
+    "alt": "Two graphs of antibody level over time. After the first exposure the level rises slowly to a low peak of about 1 unit per mL near day 10. After a second exposure it rises within days to about 100 units per mL and stays high for weeks."
+   }
+  },
+  {
+   "id": "im-28",
+   "q": "Why is a vaccine called active immunization?",
+   "options": [
+    "It gives the person ready-made antibodies collected from another person's blood.",
+    "It contains the live, full-strength pathogen so the body learns to fight the real thing.",
+    "It works only on the innate immune system, which keeps a memory of each vaccine.",
+    "A dead or weakened antigen primes the person's own adaptive immune system to make memory.",
+    "It must be taken as a pill so the antigen passes through the stomach acid barrier."
+   ],
+   "answer": 3,
+   "why": "A vaccine gives a dead or weakened antigen that primes the immune system. It relies on immunological memory, so a real exposure gets a fast secondary response.",
+   "source": "Part 2 slide 15"
+  },
+  {
+   "id": "im-29",
+   "q": "Which antibody type is involved in allergies, and what do these antibodies bind to?",
+   "options": [
+    "IgE, which binds to mast cells and basophils",
+    "IgE, which binds to red blood cells",
+    "Complement, which binds to bacteria",
+    "Interferon, which binds to neighbouring cells",
+    "MHC-I, which binds to cytotoxic T cells"
+   ],
+   "answer": 0,
+   "why": "In an allergy, B cells make IgE specific to the allergen. The IgE binds to mast cells and basophils; at a later exposure these release histamine.",
+   "source": "Part 2 slide 16",
+   "img": {
+    "src": "img/immune/allergy_p2-16.webp",
+    "alt": "Four steps of an allergy: an allergen makes a B cell produce IgE antibodies, the IgE sticks to a mast cell or basophil, at the next exposure the allergen binds that IgE, and the cell releases histamine."
+   }
+  },
+  {
+   "id": "im-30",
+   "q": "In rheumatoid arthritis, what goes wrong?",
+   "options": [
+    "The body overreacts to harmless pollen by making IgE that binds to mast cells.",
+    "The thymus fails to form from pharyngeal pouch 3, so no T cells can mature.",
+    "A virus infects and destroys the helper T cells, so B cells cannot be activated.",
+    "Neutrophils fail to leave the blood, so they cannot reach an infection in a joint.",
+    "B cells make antibodies against cartilage proteins of the synovial membrane."
+   ],
+   "answer": 4,
+   "why": "Rheumatoid arthritis is an autoimmune disorder: B cells make antibodies against cartilage proteins of the synovial membrane, and the response damages the tissue further.",
+   "source": "Part 2 slide 17"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Inside a phagocyte",
+   "prompt": "Put the steps of phagocytosis in order, from first contact to clean-up.",
+   "why": "The phagocyte captures and surrounds the bacterium, encloses it in a vesicle, lysosomes fuse with the vesicle, their enzymes digest the bacterium, and the wastes are discarded.",
+   "topLabel": "End: wastes discarded",
+   "bottomLabel": "Start: bacterium captured",
+   "layers": [
+    {
+     "name": "Phagocyte approaches and captures the bacterium",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Phagocyte surrounds the bacterium",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Bacterium is enclosed in a vesicle",
+     "color": "#0891b2"
+    },
+    {
+     "name": "Lysosomes fuse with the vesicle",
+     "color": "#059669"
+    },
+    {
+     "name": "Lysosomal enzymes digest the bacterium",
+     "color": "#ca8a04"
+    },
+    {
+     "name": "Wastes and debris are discarded",
+     "color": "#c2410c"
+    }
+   ]
+  },
+  {
+   "title": "From pathogen to immunity",
+   "prompt": "Put the stages in order, from a pathogen entering the tissue to the targeted adaptive response.",
+   "why": "The innate response comes first: inflammation, then phagocytes attack while dendritic cells capture antigen. The lymphatic system carries the antigen to the lymph nodes, where B and T cells meet it and the adaptive response begins.",
+   "topLabel": "End: targeted adaptive response",
+   "bottomLabel": "Start: pathogen enters",
+   "layers": [
+    {
+     "name": "Pathogen enters the tissue",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Innate response starts inflammation and recruits immune cells",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Macrophages and neutrophils attack; dendritic cells capture antigens",
+     "color": "#ca8a04"
+    },
+    {
+     "name": "Lymphatics carry dendritic cells and antigens to the lymph nodes",
+     "color": "#059669"
+    },
+    {
+     "name": "Antigens meet B and T cells in the lymph nodes",
+     "color": "#0891b2"
+    },
+    {
+     "name": "Adaptive immune activation and targeted response",
+     "color": "#1d4ed8"
+    }
+   ]
+  },
+  {
+   "title": "Making antibodies",
+   "prompt": "Put the steps of the B cell response in order.",
+   "why": "An inactive B cell binds its antigen, a helper T cell's cytokines help activate it, the activated cell multiplies into clones, the plasma cells secrete antibodies, and the memory cells wait for the next exposure.",
+   "topLabel": "End: ready for next time",
+   "bottomLabel": "Start: antigen arrives",
+   "layers": [
+    {
+     "name": "Inactive B cell binds its specific antigen",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Helper T cell cytokines help activate the B cell",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Activated B cell multiplies into clones",
+     "color": "#0891b2"
+    },
+    {
+     "name": "Plasma cells secrete antibodies",
+     "color": "#059669"
+    },
+    {
+     "name": "Memory cells store information for the next exposure",
+     "color": "#ca8a04"
+    }
+   ]
+  },
+  {
+   "title": "How an allergy develops",
+   "prompt": "Put the events of an allergy in order, from the first meeting with the allergen to the reaction.",
+   "why": "The first exposure only sensitizes: B cells make IgE that binds mast cells and basophils. At the next exposure the allergen binds that IgE, the cells release histamine, and the allergic reaction follows.",
+   "topLabel": "End: allergic reaction",
+   "bottomLabel": "Start: first exposure",
+   "layers": [
+    {
+     "name": "First exposure to the allergen",
+     "color": "#ca8a04"
+    },
+    {
+     "name": "B cells make IgE specific to the allergen",
+     "color": "#c2410c"
+    },
+    {
+     "name": "IgE binds to mast cells and basophils",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Next exposure: allergen binds the IgE",
+     "color": "#9d174d"
+    },
+    {
+     "name": "Histamine is released and the reaction begins",
+     "color": "#7c3aed"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Innate or adaptive?",
+   "prompt": "Sort each feature or component into innate or adaptive immunity.",
+   "buckets": [
+    "Innate immunity",
+    "Adaptive immunity"
+   ],
+   "items": [
+    {
+     "text": "Responds within hours",
+     "b": 0
+    },
+    {
+     "text": "Recognizes broad, common patterns",
+     "b": 0
+    },
+    {
+     "text": "Has no memory",
+     "b": 0
+    },
+    {
+     "text": "Complement proteins",
+     "b": 0
+    },
+    {
+     "text": "Natural killer cells",
+     "b": 0
+    },
+    {
+     "text": "Neutrophils and macrophages",
+     "b": 0
+    },
+    {
+     "text": "Takes days to weeks the first time",
+     "b": 1
+    },
+    {
+     "text": "Recognizes specific epitopes",
+     "b": 1
+    },
+    {
+     "text": "Stronger response on re-exposure",
+     "b": 1
+    },
+    {
+     "text": "B and T lymphocytes",
+     "b": 1
+    },
+    {
+     "text": "Antibodies",
+     "b": 1
+    },
+    {
+     "text": "Basis of how vaccines work",
+     "b": 1
+    }
+   ],
+   "why": "Innate immunity is fast, broad and has no memory: barriers, complement, phagocytes, dendritic cells and NK cells. Adaptive immunity is slower at first, specific to epitopes and has memory: B and T lymphocytes and antibodies."
+  },
+  {
+   "title": "B cells or T cells?",
+   "prompt": "Sort each statement into humoral immunity (B cells) or cell-mediated immunity (T cells).",
+   "buckets": [
+    "B cells (humoral)",
+    "T cells (cell-mediated)"
+   ],
+   "items": [
+    {
+     "text": "Mature in the bone marrow",
+     "b": 0
+    },
+    {
+     "text": "Recognize antigen directly through their receptor (BCR)",
+     "b": 0
+    },
+    {
+     "text": "Some clones become plasma cells",
+     "b": 0
+    },
+    {
+     "text": "Their clones secrete antibodies",
+     "b": 0
+    },
+    {
+     "text": "Make IgE in an allergy",
+     "b": 0
+    },
+    {
+     "text": "Mature in the thymus",
+     "b": 1
+    },
+    {
+     "text": "Carry CD4 or CD8",
+     "b": 1
+    },
+    {
+     "text": "Need antigen presented on MHC by an APC",
+     "b": 1
+    },
+    {
+     "text": "Release perforins and granzymes",
+     "b": 1
+    },
+    {
+     "text": "Secrete cytokines as helpers",
+     "b": 1
+    }
+   ],
+   "why": "B cells mature in the bone marrow, bind antigen directly and clone into plasma cells that secrete antibodies (including IgE). T cells mature in the thymus, carry CD4 or CD8, need an APC to present antigen, and either help with cytokines or kill with perforins and granzymes."
+  },
+  {
+   "title": "Which lymphatic organ?",
+   "prompt": "Sort each description into the lymph nodes, the spleen or the thymus.",
+   "buckets": [
+    "Lymph nodes",
+    "Spleen",
+    "Thymus"
+   ],
+   "items": [
+    {
+     "text": "Filter lymph as it flows through",
+     "b": 0
+    },
+    {
+     "text": "Sit at intervals along lymphatic vessels",
+     "b": 0
+    },
+    {
+     "text": "Macrophages cleanse lymph here",
+     "b": 0
+    },
+    {
+     "text": "Largest lymphatic organ",
+     "b": 1
+    },
+    {
+     "text": "Red pulp removes old red blood cells",
+     "b": 1
+    },
+    {
+     "text": "Temporarily stores blood",
+     "b": 1
+    },
+    {
+     "text": "White pulp searches the blood for pathogens",
+     "b": 1
+    },
+    {
+     "text": "Where T cells mature",
+     "b": 2
+    },
+    {
+     "text": "Makes thymosin and thymopoietin",
+     "b": 2
+    },
+    {
+     "text": "Shrinks after adolescence",
+     "b": 2
+    },
+    {
+     "text": "Forms from pharyngeal pouch 3",
+     "b": 2
+    }
+   ],
+   "why": "Lymph nodes filter lymph. The spleen, the largest lymphatic organ, filters blood: red pulp removes old red cells and stores blood, white pulp holds lymphocytes. The thymus, from pharyngeal pouch 3, is where T cells mature; it makes thymosin and thymopoietin and shrinks after adolescence."
+  }
+ ]
+}
