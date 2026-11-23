@@ -50,7 +50,12 @@
       "**Viruses** hijack a cell's transcription and translation machinery to make copies of themselves. Examples: rabies, chicken pox, colds.",
       "**Prions** are misfolded proteins that make the normal proteins in a cell misfold too. Example: Creutzfeldt-Jakob disease.",
       "**Parasites** live on or in a host for part of their life cycle and harm it. Examples: *Giardia*, lice, tapeworms."
-     ]
+     ],
+     "img": {
+      "src": "img/immune/gen_pathogens.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four labelled pathogen types. Bacteria rely on human cells for energy and make toxins. Viruses hijack a cell's machinery to copy themselves. Prions are misfolded proteins that make normal proteins misfold. Parasites live on or in a host and harm it. Fungi and protozoa are also pathogens."
+     }
     },
     {
      "title": "Three lines of defence",
@@ -58,7 +63,12 @@
       "**First line: barriers.** They stop pathogens getting in, or expel or neutralize them before an infection starts. Examples: the skin, stomach acid, tears, and vomiting.",
       "**Second line: innate (non-specific) immunity.** It responds the same way to all types of pathogens. Examples: phagocytosis and the complement system.",
       "**Third line: adaptive (specific) immunity.** It recognizes and removes one specific pathogen. Examples: antibodies and T cells."
-     ]
+     ],
+     "img": {
+      "src": "img/immune/gen_defence.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: pathogens move toward the body. Most are stopped at the skin barrier (first line: skin, stomach acid, tears, vomiting). Two get through and a phagocyte engulfs them (second line, innate). The last one is tagged by antibodies next to a T cell (third line, adaptive, against one specific pathogen)."
+     }
     }
    ],
    "bullets": [],
@@ -80,7 +90,18 @@
     "Part 1 slides 2-3; Part 2 slide 3 (second and third line of defence).",
     "Castle analogy is generic (outside source)."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/immune/gen_pathogens.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four labelled pathogen types. Bacteria rely on human cells for energy and make toxins. Viruses hijack a cell's machinery to copy themselves. Prions are misfolded proteins that make normal proteins misfold. Parasites live on or in a host and harm it. Fungi and protozoa are also pathogens."
+    },
+    {
+     "src": "img/immune/gen_defence.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: pathogens move toward the body. Most are stopped at the skin barrier (first line: skin, stomach acid, tears, vomiting). Two get through and a phagocyte engulfs them (second line, innate). The last one is tagged by antibodies next to a T cell (third line, adaptive, against one specific pathogen)."
+    }
+   ]
   },
   {
    "id": "lymphvessels",
@@ -407,13 +428,23 @@
       "**Natural killer (NK) cells** are lymphocytes that attack **tumour cells** and **virus-infected cells**.",
       "They release **granzymes**, which include protein-digesting enzymes. Granzymes make holes in the target cell's membrane or trigger **apoptosis** (programmed cell death).",
       "NK cells are **non-specific**, unlike other lymphocytes such as cytotoxic T cells."
-     ]
+     ],
+     "img": {
+      "src": "img/immune/gen_nk.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a natural killer cell moves up to a virus-infected or tumour cell and releases granzymes. Granzymes make holes in the target cell's membrane or trigger apoptosis, and the target cell breaks apart and dies. NK cells are non-specific."
+     }
     },
     {
      "title": "Interferons",
      "bullets": [
       "Some virus-infected cells secrete **interferons**. These anti-viral proteins signal to the neighbouring cells to raise their anti-viral defences."
-     ]
+     ],
+     "img": {
+      "src": "img/immune/gen_interferon.webp",
+      "slide": "none (original diagram)",
+      "alt": "A virus-infected cell in the middle secretes interferons, shown as dots moving outward to the cells on each side. The neighbouring cells, marked with a shield, respond by raising their anti-viral defences."
+     }
     }
    ],
    "bullets": [],
@@ -440,6 +471,16 @@
      "src": "img/immune/inflam_p1-12.webp",
      "slide": "Part 1 slide 12",
      "alt": "Three panels at an injury site: a mast cell and damaged cells release histamine that makes a capillary leaky, complement proteins leave the capillary to attack bacteria, and phagocytes squeeze through the capillary wall to engulf bacteria."
+    },
+    {
+     "src": "img/immune/gen_nk.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a natural killer cell moves up to a virus-infected or tumour cell and releases granzymes. Granzymes make holes in the target cell's membrane or trigger apoptosis, and the target cell breaks apart and dies. NK cells are non-specific."
+    },
+    {
+     "src": "img/immune/gen_interferon.webp",
+     "slide": "none (original diagram)",
+     "alt": "A virus-infected cell in the middle secretes interferons, shown as dots moving outward to the cells on each side. The neighbouring cells, marked with a shield, respond by raising their anti-viral defences."
     }
    ]
   },
@@ -719,7 +760,12 @@
       "The fragments bind to **MHC molecules**, forming antigen-MHC complexes. There are two types: **MHC-I** and **MHC-II**.",
       "Vesicles carry the antigen-MHC complexes to the cell surface, where T cells can see them.",
       "**Dendritic cells** are the key APCs. They process antigen and travel to the lymphoid organs to show it to T cells."
-     ]
+     ],
+     "img": {
+      "src": "img/immune/gen_apc.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four numbered panels. 1: an antigen-presenting cell engulfs a foreign antigen. 2: it digests it into small fragments called peptides. 3: the fragments bind MHC molecules (MHC-I or MHC-II) inside a vesicle. 4: the antigen-MHC complex sits on the cell surface, where a T cell recognizes it. Dendritic cells are the key APCs."
+     }
     },
     {
      "img": {
@@ -801,6 +847,11 @@
      "src": "img/immune/overview_p2-13.webp",
      "slide": "Part 2 slide 13",
      "alt": "A flow chart. Antigen recognition splits into T cells (antigen presented by an APC, then T cell activation) and B cells (recognize antigen through the BCR, then activation with T helper cell help). Both lead to clonal expansion, which gives effector T cells, memory cells and plasma cells."
+    },
+    {
+     "src": "img/immune/gen_apc.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four numbered panels. 1: an antigen-presenting cell engulfs a foreign antigen. 2: it digests it into small fragments called peptides. 3: the fragments bind MHC molecules (MHC-I or MHC-II) inside a vesicle. 4: the antigen-MHC complex sits on the cell surface, where a T cell recognizes it. Dendritic cells are the key APCs."
     }
    ],
    "table": {
@@ -858,7 +909,12 @@
       "A vaccine is called **active immunization**. It relies on immunological memory.",
       "A **dead or weakened antigen** is given to prime the immune system. If the real pathogen arrives later, adaptive immunity mounts a fast secondary response.",
       "We get a new flu vaccine nearly every year because the flu virus keeps changing its surface antigens, so last year's memory cells may not recognize this year's virus."
-     ]
+     ],
+     "img": {
+      "src": "img/immune/gen_vaccine.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four steps left to right. A vaccine gives a dead or weakened antigen. The immune system is primed and memory cells now recognize it. Later the real pathogen arrives with the same antigen. Adaptive immunity mounts a fast secondary response. A note explains that flu keeps changing its surface antigens, so a new vaccine is needed nearly every year."
+     }
     }
    ],
    "bullets": [],
@@ -885,6 +941,11 @@
      "src": "img/immune/memory_p2-14.webp",
      "slide": "Part 2 slide 14",
      "alt": "Two graphs of antibody level over time. After the first exposure the level rises slowly to a low peak of about 1 unit per mL near day 10. After a second exposure it rises within days to about 100 units per mL and stays high for weeks."
+    },
+    {
+     "src": "img/immune/gen_vaccine.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four steps left to right. A vaccine gives a dead or weakened antigen. The immune system is primed and memory cells now recognize it. Later the real pathogen arrives with the same antigen. Adaptive immunity mounts a fast secondary response. A note explains that flu keeps changing its surface antigens, so a new vaccine is needed nearly every year."
     }
    ]
   },
@@ -924,7 +985,12 @@
      "bullets": [
       "Both involve an **inappropriate** immune response.",
       "In an allergy the target is a harmless **outside** substance; in an autoimmune disorder the target is the body's **own** cells."
-     ]
+     ],
+     "img": {
+      "src": "img/immune/gen_disorders.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two columns under the heading: both are an inappropriate immune response. Allergy: the target is a harmless outside substance; IgE on mast cells and basophils binds the allergen and the cells release histamine. Autoimmune disorder: the target is the body's own cells; antibodies and cytotoxic T cells may attack them, as in lupus and rheumatoid arthritis."
+     }
     }
    ],
    "bullets": [],
@@ -951,6 +1017,11 @@
      "src": "img/immune/allergy_p2-16.webp",
      "slide": "Part 2 slide 16",
      "alt": "Four steps of an allergy: an allergen makes a B cell produce IgE antibodies, the IgE sticks to a mast cell or basophil, at the next exposure the allergen binds that IgE, and the cell releases histamine."
+    },
+    {
+     "src": "img/immune/gen_disorders.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two columns under the heading: both are an inappropriate immune response. Allergy: the target is a harmless outside substance; IgE on mast cells and basophils binds the allergen and the cells release histamine. Autoimmune disorder: the target is the body's own cells; antibodies and cytotoxic T cells may attack them, as in lupus and rheumatoid arthritis."
     }
    ]
   }

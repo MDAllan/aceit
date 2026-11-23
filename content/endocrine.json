@@ -47,7 +47,12 @@
      "bullets": [
       "The endocrine system is the body's **long-distance control system**. Glands release **hormones** into the blood, and the blood carries them all over the body.",
       "A **hormone** is a chemical messenger that is not a nutrient. It can act on the cell that released it and on **target cells** far away."
-     ]
+     ],
+     "img": {
+      "src": "img/endocrine/gen_hormone_travel.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a gland releases hormone into a blood vessel, and the blood carries it past three cells. Two cells have no receptor and ignore the hormone. The third, a target cell with receptors, binds the hormone and responds."
+     }
     },
     {
      "title": "Three chemical types",
@@ -55,7 +60,12 @@
       "**Steroid hormones** are made from **cholesterol**. They are **hydrophobic** (fat-loving). Examples: cortisol and aldosterone.",
       "**Peptide hormones** are made like any protein, by reading a gene (transcription and translation). They are **hydrophilic** (water-loving). Examples: insulin and glucagon.",
       "**Amine hormones** are made from **one amino acid**. Most are hydrophilic and a few are hydrophobic. Thyroid hormone comes from **tyrosine** and serotonin comes from **tryptophan**."
-     ]
+     ],
+     "img": {
+      "src": "img/endocrine/gen_chem_types.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three columns. Steroid hormones: made from cholesterol, hydrophobic, e.g. cortisol and aldosterone. Peptide hormones: made from a gene like any protein, hydrophilic, e.g. insulin and glucagon. Amine hormones: made from one amino acid, mostly hydrophilic, e.g. thyroid hormone from tyrosine and serotonin from tryptophan."
+     }
     }
    ],
    "bullets": [],
@@ -77,7 +87,18 @@
     "Part 1 slide 3.",
     "Why-box (membrane crossing and receptor location) is standard background; the membrane vs nuclear receptors for insulin and cortisol are on Part 1 slides 8 and 13-14."
    ],
-   "images": [],
+   "images": [
+    {
+     "src": "img/endocrine/gen_hormone_travel.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a gland releases hormone into a blood vessel, and the blood carries it past three cells. Two cells have no receptor and ignore the hormone. The third, a target cell with receptors, binds the hormone and responds."
+    },
+    {
+     "src": "img/endocrine/gen_chem_types.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three columns. Steroid hormones: made from cholesterol, hydrophobic, e.g. cortisol and aldosterone. Peptide hormones: made from a gene like any protein, hydrophilic, e.g. insulin and glucagon. Amine hormones: made from one amino acid, mostly hydrophilic, e.g. thyroid hormone from tyrosine and serotonin from tryptophan."
+    }
+   ],
    "table": {
     "head": [
      "Type",
@@ -125,14 +146,24 @@
       "**One hormone can have more than one receptor.** Epinephrine has **α (alpha)** and **β (beta)** receptors.",
       "Different receptors can cause **different effects**. For epinephrine, α receptors cause **vasoconstriction** (vessels narrow) and β receptors cause **vasodilation** (vessels widen).",
       "**One receptor can respond to more than one hormone.** The **mineralocorticoid receptor (MR)** responds to both **cortisol** and **aldosterone**."
-     ]
+     ],
+     "img": {
+      "src": "img/endocrine/gen_receptors.webp",
+      "slide": "none (original diagram)",
+      "alt": "Left: epinephrine binds an alpha receptor, causing vasoconstriction, and a beta receptor, causing vasodilation. Right: cortisol and aldosterone both bind the same mineralocorticoid receptor (MR)."
+     }
     },
     {
      "title": "Hormone problems",
      "bullets": [
       "**Hyposecretion** is too little hormone. Causes include an **autoimmune response** (the immune system attacks the gland) or faster **breakdown** of the hormone.",
       "**Hypersecretion** is too much hormone. Causes include a **tumor** or taking the hormone from outside the body (**exogenous** consumption)."
-     ]
+     ],
+     "img": {
+      "src": "img/endocrine/gen_hormone_problems.webp",
+      "slide": "none (original diagram)",
+      "alt": "A hormone level scale. Hyposecretion (too little): caused by an autoimmune response or faster breakdown of the hormone. Normal in the middle. Hypersecretion (too much): caused by a tumor or taking the hormone from outside the body."
+     }
     }
    ],
    "bullets": [],
@@ -153,7 +184,18 @@
    "sourceNotes": [
     "Part 1 slide 4."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/endocrine/gen_receptors.webp",
+     "slide": "none (original diagram)",
+     "alt": "Left: epinephrine binds an alpha receptor, causing vasoconstriction, and a beta receptor, causing vasodilation. Right: cortisol and aldosterone both bind the same mineralocorticoid receptor (MR)."
+    },
+    {
+     "src": "img/endocrine/gen_hormone_problems.webp",
+     "slide": "none (original diagram)",
+     "alt": "A hormone level scale. Hyposecretion (too little): caused by an autoimmune response or faster breakdown of the hormone. Normal in the middle. Hypersecretion (too much): caused by a tumor or taking the hormone from outside the body."
+    }
+   ]
   },
   {
    "id": "allostasis",
@@ -241,7 +283,12 @@
       "It is stimulated by **high blood glucose**, **high amino acids**, **GLP-1** (glucagon-like peptide 1) and **parasympathetic** nerve signals to β cells.",
       "Its main targets are **skeletal muscle, liver and adipose (fat) tissue**.",
       "It increases glucose **uptake, use and storage** as glycogen, protein and fat. It suppresses glucagon release and the breakdown processes below."
-     ]
+     ],
+     "img": {
+      "src": "img/endocrine/gen_glucose_loop.webp",
+      "slide": "none (original diagram)",
+      "alt": "Blood glucose (80 to 120 mg/dl) in the centre. High glucose makes beta cells release insulin, so muscle, liver and fat take up and store glucose and it falls. Low glucose makes alpha cells release glucagon, so the liver breaks down glycogen and makes new glucose and it rises. Each hormone holds back the other."
+     }
     },
     {
      "title": "Glucagon raises glucose",
@@ -277,6 +324,11 @@
      "src": "img/endocrine/meals_p1-6.webp",
      "slide": "Part 1 slide 6",
      "alt": "Two sets of graphs over four hours. After a high-carbohydrate meal, plasma glucose peaks, insulin also peaks and glucagon declines. After a high-protein meal, blood amino acids rise, glucose stays nearly flat, and insulin and glucagon both rise."
+    },
+    {
+     "src": "img/endocrine/gen_glucose_loop.webp",
+     "slide": "none (original diagram)",
+     "alt": "Blood glucose (80 to 120 mg/dl) in the centre. High glucose makes beta cells release insulin, so muscle, liver and fat take up and store glucose and it falls. Low glucose makes alpha cells release glucagon, so the liver breaks down glycogen and makes new glucose and it rises. Each hormone holds back the other."
     }
    ],
    "table": {
@@ -343,7 +395,12 @@
       "**Type I diabetes** is **autoimmune**. The immune system destroys the **β cells**, so little or no insulin is made.",
       "**Type II diabetes** is **insulin resistance**. Insulin levels are normal or even high, but communication between insulin and its receptor is impaired.",
       "**Gestational diabetes** happens in pregnancy. A placental hormone, **human chorionic somatomammotropin**, works against insulin."
-     ]
+     ],
+     "img": {
+      "src": "img/endocrine/gen_diabetes_types.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three panels. Type I: autoimmune; the immune system destroys the beta cells, so little or no insulin is made. Type II: insulin resistance; insulin and its receptor do not communicate properly, insulin normal or high. Gestational: in pregnancy, a placental hormone works against insulin."
+     }
     }
    ],
    "bullets": [],
@@ -369,6 +426,11 @@
      "src": "img/endocrine/insulin_p1-8.webp",
      "slide": "Part 1 slide 8",
      "alt": "Insulin binding its receptor (INSR) in the cell membrane, which sets off a chain of signalling proteins inside the cell. The chain leads to GLUT4 glucose transporters moving to the membrane to take up glucose, and to glycogen synthase building glycogen."
+    },
+    {
+     "src": "img/endocrine/gen_diabetes_types.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three panels. Type I: autoimmune; the immune system destroys the beta cells, so little or no insulin is made. Type II: insulin resistance; insulin and its receptor do not communicate properly, insulin normal or high. Gestational: in pregnancy, a placental hormone works against insulin."
     }
    ]
   },
@@ -796,7 +858,12 @@
       "**LH** triggers **ovulation**.",
       "FSH and LH stimulate the ovaries to secrete **estrogen**. After ovulation, LH stimulates **progesterone**.",
       "In the testes, LH stimulates **testosterone** production."
-     ]
+     ],
+     "img": {
+      "src": "img/endocrine/gen_anterior_map.webp",
+      "slide": "none (original diagram)",
+      "alt": "The anterior pituitary sends prolactin to the mammary glands (development, milk), growth hormone to muscles and bones (growth plates), and FSH and LH to the gonads. Ovaries: FSH egg development, LH ovulation, both estrogen, LH progesterone after ovulation. Testes: FSH sperm development, LH testosterone."
+     }
     }
    ],
    "bullets": [],
@@ -818,7 +885,13 @@
     "Part 2 slides 6-7.",
     "Why-box (dopamine as a brake) is standard reasoning."
    ],
-   "images": []
+   "images": [
+    {
+     "src": "img/endocrine/gen_anterior_map.webp",
+     "slide": "none (original diagram)",
+     "alt": "The anterior pituitary sends prolactin to the mammary glands (development, milk), growth hormone to muscles and bones (growth plates), and FSH and LH to the gonads. Ovaries: FSH egg development, LH ovulation, both estrogen, LH progesterone after ovulation. Testes: FSH sperm development, LH testosterone."
+    }
+   ]
   },
   {
    "id": "posterior",
@@ -831,7 +904,12 @@
       "Neuroendocrine cells in the hypothalamus and posterior pituitary release **ADH** (antidiuretic hormone) or **oxytocin** into the blood.",
       "**ADH** acts on the **kidneys** to regulate **water balance**. It reduces the water lost in urine, so it is a **water-conserving** hormone.",
       "**Oxytocin** acts on the **uterus** (contractions during childbirth) and the **mammary glands** (milk secretion). It is also involved in sexual arousal and social behaviour."
-     ]
+     ],
+     "img": {
+      "src": "img/endocrine/gen_posterior.webp",
+      "slide": "none (original diagram)",
+      "alt": "Neuroendocrine cells of the hypothalamus, with hormones released from the posterior pituitary into the blood. ADH acts on the kidneys so less water is lost in urine. Oxytocin acts on the uterus (contractions in childbirth) and the mammary glands (milk secretion)."
+     }
     },
     {
      "img": {
@@ -870,6 +948,11 @@
      "src": "img/endocrine/oxytocin_p2-9.webp",
      "slide": "Part 2 slide 9",
      "alt": "A nursing mother. Suckling stimulates nerve endings in the nipple; sensory and spinal nerves carry the signal to neuroendocrine cells in the hypothalamus; these release oxytocin from the posterior pituitary; blood carries oxytocin to the mammary glands and milk is ejected."
+    },
+    {
+     "src": "img/endocrine/gen_posterior.webp",
+     "slide": "none (original diagram)",
+     "alt": "Neuroendocrine cells of the hypothalamus, with hormones released from the posterior pituitary into the blood. ADH acts on the kidneys so less water is lost in urine. Oxytocin acts on the uterus (contractions in childbirth) and the mammary glands (milk secretion)."
     }
    ]
   },
