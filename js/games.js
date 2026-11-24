@@ -575,6 +575,31 @@ const CALC = {
       wrong: uniq(ans, [`${num(R)} years`, `${num(R * use)} years`, `${num(yrs * 2)} years`, `${num(yrs / 2)} years`, `${num(yrs * 10)} years`]),
       why: `Lifetime = reserves / amount used per year = ${num(R)} / ${use} = ${yrs} years, if use stays the same.` };
   },
+  "moon-resonance"() {
+    const v = rnd([0, 1, 2, 3]);
+    if (v === 0) {
+      const n = rnd([2, 3, 5, 6, 10]), ans = `${4 * n} orbits`;
+      return { q: `Io, Europa and Ganymede share a 4 : 2 : 1 orbital resonance. While Ganymede completes ${n} orbits of Jupiter, how many orbits does Io complete?`, ans,
+        wrong: uniq(ans, [`${n} orbits`, `${2 * n} orbits`, `${8 * n} orbits`, `${n + 4} orbits`, `${16 * n} orbits`]),
+        why: `In the time Ganymede orbits once, Europa orbits twice and Io four times. So ${n} Ganymede orbits = 4 x ${n} = ${4 * n} Io orbits.` };
+    }
+    if (v === 1) {
+      const m = rnd([8, 12, 16, 20, 40]), ans = `${m / 2} orbits`;
+      return { q: `Io completes ${m} orbits of Jupiter. In the same time, how many orbits does Europa complete?`, ans,
+        wrong: uniq(ans, [`${m / 4} orbits`, `${m} orbits`, `${2 * m} orbits`, `${m / 2 + 2} orbits`, `${4 * m} orbits`]),
+        why: `Io orbits 4 times for every 2 Europa orbits, so Europa makes half as many: ${m} / 2 = ${m / 2} orbits (and Ganymede ${m / 4}).` };
+    }
+    if (v === 2) {
+      const io = rnd([true, false]), ans = io ? "about 1.75 days" : "about 3.5 days";
+      return { q: `Ganymede takes about 7 days to orbit Jupiter. Using the 4 : 2 : 1 resonance, about how long does ${io ? "Io" : "Europa"} take for one orbit?`, ans,
+        wrong: uniq(ans, ["about 1.75 days", "about 3.5 days", "about 7 days", "about 14 days", "about 28 days"]),
+        why: `${io ? "Io fits 4 orbits" : "Europa fits 2 orbits"} into Ganymede's one 7-day orbit, so each takes about 7 / ${io ? 4 : 2} = ${io ? "1.75" : "3.5"} days. Inner moons orbit faster.` };
+    }
+    const k = rnd([8, 12, 20, 40]), d = k * 7 / 4, ans = `about ${num(d)} days`;
+    return { q: `Io completes 4 orbits in about 7 days. About how long does it take Io to complete ${k} orbits?`, ans,
+      wrong: uniq(ans, [`about ${num(k * 7)} days`, `about ${num(k * 4)} days`, `about ${num(k * 7 / 2)} days`, `about ${num(k / 4)} days`, `about ${num(d * 2)} days`]),
+      why: `${k} orbits is ${k} / 4 = ${k / 4} groups of 4 orbits, and each group takes about 7 days: ${k / 4} x 7 = ${num(d)} days.` };
+  },
   kepler() {
     const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
@@ -606,4 +631,5 @@ const HINTS = {
   "gw-travel": "Time = distance / speed. Keep the units the same: metres and metres per day give days.",
   "res-barrels": "1 barrel (bbl) of oil = 42 gallons = 159 litres.",
   "res-lifetime": "Lifetime (years) = calculated reserves / amount used each year.",
+  "moon-resonance": "In the same time: Io 4 orbits, Europa 2, Ganymede 1 (about 7 days). Inner moons orbit faster.",
 };
