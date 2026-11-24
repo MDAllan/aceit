@@ -479,6 +479,25 @@ const CALC = {
       wrong: uniq(ans, [`${(+(kpa / 100 * 10).toFixed(1))} atm`, `${(+(atm * 101.325).toFixed(0))} atm`, `${(+(kpa / 14.7).toFixed(2))} atm`, `${(+(atm / 10).toFixed(3))} atm`]),
       why: `1 atm = 101.325 kPa, so ${kpa} kPa / 101.325 = ${(+atm.toFixed(2))} atm. Calgary, about 1 km up, sits near 89 kPa, roughly 0.88 atm.` };
   },
+  "sb-resonance"() {
+    if (Math.random() < 0.5) {
+      const [n, d] = rnd([[1, 2], [1, 3], [1, 4], [2, 5]]), p = 12 * n / d, ans = `${num(p)} years`;
+      return { q: `Jupiter orbits the Sun every 12 years. An asteroid's orbital period is ${n}/${d} of Jupiter's. Its period is:`, ans,
+        wrong: uniq(ans, [`${num(12 * d / n)} years`, `${num(p * 2)} years`, `${num(p / 2)} years`, `${num(12 + p)} years`, `${num(12 - n - d)} years`]),
+        why: `Period = ${n}/${d} x 12 years = ${num(p)} years. A period that is a simple fraction of Jupiter's means repeated, well-timed tugs from Jupiter, so few asteroids stay there: a Kirkwood gap.` };
+    }
+    const k = rnd([2, 3, 4]), p = 12 / k, ans = `1/${k}`;
+    return { q: `An asteroid takes ${p} years to orbit the Sun. Jupiter takes 12 years. What fraction of Jupiter's period is the asteroid's?`, ans,
+      wrong: uniq(ans, [`${k}`, `1/${k * k}`, `1/${k + 1}`, `1/${2 * k}`, `${p}/${k}`]),
+      why: `${p} / 12 = 1/${k}. Every ${12} years Jupiter has lined up with this asteroid at the same points, nudging it the same way each time, so the orbit gets cleared (a Kirkwood gap).` };
+  },
+  "sb-density"() {
+    const d = rnd([2.4, 1.5, 0.5]), V = rnd([2, 4, 5, 10]), M = +(d * V).toFixed(2), ans = `${num(d)} g/cm^3`;
+    const meaning = d > 2 ? "close to solid rock, like Eros (2.4 g/cm^3)" : d > 1 ? "too low for solid rock: probably a loose rubble pile, like Mathilde (1.5 g/cm^3)" : "less dense than water (1 g/cm^3): ice mixed with empty space, like a comet nucleus";
+    return { q: `A small body has a mass of ${num(M)} x 10^18 g and a volume of ${V} x 10^18 cm^3. Its average density is:`, ans,
+      wrong: uniq(ans, [`${num(+(V / M).toFixed(2))} g/cm^3`, `${num(M * V)} g/cm^3`, `${num(M + V)} g/cm^3`, `${num(d * 2)} g/cm^3`, `${num(d / 10)} g/cm^3`]),
+      why: `Density = mass / volume = ${num(M)} / ${V} = ${num(d)} g/cm^3 (the 10^18 cancels). That is ${meaning}.` };
+  },
   "stm-discharge"() {
     const w = rnd([4, 5, 8, 10, 12, 20]), d = rnd([0.5, 1, 1.5, 2, 3]), v = rnd([0.5, 1, 1.5, 2, 3]), A = w * d, Q = A * v, ans = `${num(Q)} m^3/s`;
     return { q: `A stream channel is ${w} m wide and ${num(d)} m deep, and the water flows at ${num(v)} m/s. Its discharge is:`, ans,
@@ -557,6 +576,8 @@ const HINTS = {
   kepler: "For a Sun-like star, period squared = distance cubed (years and AU), so period = distance^1.5.",
   "atm-pressure": "Pressure = force / area. One pascal (Pa) is one newton per square metre.",
   "atm-units": "1 kPa = 1000 Pa, 1 bar = 100,000 Pa and 1 atm = 101,325 Pa.",
+  "sb-resonance": "Jupiter's period is 12 years. Asteroid period = fraction x 12, and fraction = asteroid period / 12.",
+  "sb-density": "Density = mass / volume. Solid rock is about 2.4 g/cm^3, a rubble pile about 1.5, and less than 1 means lighter than water.",
   "stm-discharge": "Discharge = cross-sectional area x velocity, and area = width x depth for a simple channel.",
   "stm-recurrence": "Chance each year (%) = 100 / recurrence interval in years. A 100-year flood has a 1% chance every year.",
   "gw-gradient": "Hydraulic gradient = difference in head (h1 - h2) / length of the flow path between the two places.",

@@ -137,6 +137,7 @@ export const SYM = {
   scale: "galaxy", timesky: "clock", motion: "rocket", conserve: "bolt", gravity: "orbit", light: "wave", matter: "atom",
   deformation: "mountain", streams: "wave", groundwater: "layers", resources: "gem",
   biol305: "heart", biobasics: "person", cellgrowth: "cell", nervous: "brain", digestive: "spiral", respiratory: "wind", cardio: "heart", endocrine: "bolt", immune: "shieldcheck", urinary: "spiral", atmospheres: "wave",
+  smallbodies: "orbit",
 };
 export const symOf = (x) => SYM[x.id] || "notes";
 export function symTile(x, size = 52) {
