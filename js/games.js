@@ -534,6 +534,38 @@ const CALC = {
       wrong: uniq(ans, [`${num(R)} years`, `${num(R * use)} years`, `${num(yrs * 2)} years`, `${num(yrs / 2)} years`, `${num(yrs * 10)} years`]),
       why: `Lifetime = reserves / amount used per year = ${num(R)} / ${use} = ${yrs} years, if use stays the same.` };
   },
+  "kb-resonance"() {
+    const v = rnd([0, 1, 2]);
+    if (v === 0) {
+      const n = rnd([2, 4, 6, 8, 10, 12]), m = (3 * n) / 2, ans = `${m} orbits`;
+      return { q: `Neptune and Pluto are in a 3:2 orbital resonance. While Pluto completes ${n} orbits of the Sun, Neptune completes:`, ans,
+        wrong: uniq(ans, [`${n} orbits`, `${num((2 * n) / 3)} orbits`, `${3 * n} orbits`, `${n + 3} orbits`, `${2 * n} orbits`, `${n / 2} orbits`]),
+        why: `Neptune goes around 3 times for every 2 Pluto orbits, so Neptune's count = Pluto's count x 3/2 = ${n} x 3/2 = ${m}.` };
+    }
+    if (v === 1) {
+      const m = rnd([3, 6, 9, 12, 15]), n = (2 * m) / 3, ans = `${n} orbits`;
+      return { q: `In the 3:2 resonance, Neptune has just completed ${m} orbits of the Sun. In the same time Pluto has completed:`, ans,
+        wrong: uniq(ans, [`${m} orbits`, `${(3 * m) / 2} orbits`, `${m - 1} orbits`, `${2 * m} orbits`, `${m / 3} orbits`]),
+        why: `Pluto completes 2 orbits for every 3 of Neptune's, so Pluto's count = ${m} x 2/3 = ${n}.` };
+    }
+    const n = rnd([2, 3, 4, 5]), yrs = 248 * n, ans = `${num(yrs)} years`;
+    return { q: `Pluto takes about 248 years to orbit the Sun once. About how long does it take Pluto to complete ${n} orbits?`, ans,
+      wrong: uniq(ans, [`${num(248 + n)} years`, `${num(Math.round(248 / n))} years`, `${num(Math.round(yrs * 1.5))} years`, `${num(Math.round(yrs * 2 / 3))} years`, `${num(248 * n * n)} years`]),
+      why: `Time = number of orbits x time per orbit = ${n} x 248 = ${num(yrs)} years. (In that time Neptune, at 3 orbits per 2 of Pluto's, completes ${num(1.5 * n)} orbits.)` };
+  },
+  "kb-impact-odds"() {
+    const v = rnd([0, 1]);
+    if (v === 0) {
+      const N = rnd([100, 200, 250, 500, 1000, 10000]), p = 100 / N, ans = `about ${num(p)}%`;
+      return { q: `Impacts of a certain size strike Earth on average about once every ${num(N)} years. Roughly what is the chance of one happening in any single year?`, ans,
+        wrong: uniq(ans, [`about ${num(p * 10)}%`, `about ${num(p / 10)}%`, `about ${num(N / 100)}%`, `about ${num(Math.min(100, p * 100))}%`, "about 50%"]),
+        why: `Chance each year is about 1 / ${num(N)} = ${num(p)}%. A rare event is not 'due' on a schedule: the average spacing only tells you the odds per year.` };
+    }
+    const N = rnd([100, 200, 500, 1000]), T = rnd([1000, 2000, 5000, 10000].filter((x) => x > N)), k = T / N, ans = `about ${num(k)}`;
+    return { q: `If impacts of a certain size happen on average once every ${num(N)} years, about how many would you expect in ${num(T)} years?`, ans,
+      wrong: uniq(ans, [`about ${num(k * 10)}`, `about ${num(Math.max(1, k / 10))}`, `about ${num(k * 5)}`, `about ${num(k + 1)}`, `about ${num(k * 2)}`, "about 1"]),
+      why: `Expected number = time span / average time between impacts = ${num(T)} / ${num(N)} = ${num(k)}.` };
+  },
   kepler() {
     const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
@@ -563,4 +595,6 @@ const HINTS = {
   "gw-travel": "Time = distance / speed. Keep the units the same: metres and metres per day give days.",
   "res-barrels": "1 barrel (bbl) of oil = 42 gallons = 159 litres.",
   "res-lifetime": "Lifetime (years) = calculated reserves / amount used each year.",
+  "kb-resonance": "In a 3:2 resonance Neptune orbits 3 times for every 2 Pluto orbits. Pluto takes about 248 years per orbit.",
+  "kb-impact-odds": "Chance per year is about 1 / (average years between impacts). Expected number = time span / average spacing.",
 };
