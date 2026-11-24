@@ -1,0 +1,2785 @@
+{
+ "id": "jovian",
+ "title": "A Different Kind of Planet",
+ "chapter": "Ch 11.1",
+ "icon": "🪐",
+ "color": "#b45309",
+ "slideFile": "none (no teacher slides; Cosmic Perspective 11.1 only)",
+ "intro": "Jupiter, Saturn, Uranus and Neptune are nothing like Earth: huge, low in density, fast-spinning and made mostly of hydrogen, helium and hydrogen compounds. Compare the gas-rich pair with the ice-rich pair and see how their birth explains the difference, dive through layers of liquid and metallic hydrogen to a mixed-up core, find out why some giants give off more heat than they get, watch three cloud decks, belts, zones and centuries-old storms form, see why Uranus and Neptune are blue, and finish with Jupiter's enormous magnetosphere, Io's torus and the strangely tilted fields of Uranus and Neptune.",
+ "learningObjectives": [
+  {
+   "id": "lo-01",
+   "text": "Are jovian planets all alike?"
+  },
+  {
+   "id": "lo-02",
+   "text": "What are jovian planets like on the inside?"
+  },
+  {
+   "id": "lo-03",
+   "text": "What is the weather like on jovian planets?"
+  },
+  {
+   "id": "lo-04",
+   "text": "Do jovian planets have magnetospheres like Earth's?"
+  }
+ ],
+ "sections": [
+  {
+   "id": "discovery",
+   "title": "Finding out how different the giants are",
+   "slides": "Cosmic Perspective 11.1, pp. 318-319",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_size_logic.webp",
+      "slide": "none (original diagram)",
+      "alt": "Flowchart: angular size from a telescope plus distance in kilometres (which needed the true length of the AU, found in the 1760s from a transit of Venus) gives true size; a moon's orbital period and distance, through Newton's version of Kepler's third law, give mass; size and mass together give a low density."
+     },
+     "title": "Too far away to see what they are",
+     "bullets": [
+      "Jupiter and Saturn are easy to see with the naked eye, but the eye shows no detail. **Uranus** was found in **1781** (by William and Caroline Herschel) and **Neptune** in **1846**, so neither was known during the Copernican revolution.",
+      "To get a true size you need an object's **angular size** and its **distance**. Distances in AU were known, but the length of the AU in kilometres was only measured in the **1760s**, using a transit of Venus.",
+      "Then the moons helped: their orbital periods are easy to time, so with their distances, **Newton's version of Kepler's third law** gave each planet's **mass**.",
+      "Size plus mass gave **low densities**, the first proof that these worlds are very different from Earth."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_missions.webp",
+      "slide": "none (original diagram)",
+      "alt": "Timeline from 1970 to 2025: Pioneer 10 and 11 flybys in the early 1970s, Voyager 1 and 2 launched in 1977, Voyager 2 at Uranus in 1986 and then Neptune, Galileo orbiting Jupiter 1995 to 2003, Cassini orbiting Saturn 2004 to 2017, and Juno orbiting Jupiter since 2016."
+     },
+     "title": "Spacecraft visits",
+     "bullets": [
+      "**Pioneer 10 and 11** flew past Jupiter and Saturn in the early 1970s; **Voyager 1 and 2** launched in 1977, and Voyager 2 went on past Uranus and Neptune.",
+      "Orbiters came later: **Galileo** at Jupiter (1995-2003), **Juno** at Jupiter (since 2016) and **Cassini** at Saturn (2004-2017, ending with a plunge into Saturn's atmosphere)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_neptune_found.webp",
+      "slide": "none (original diagram)",
+      "alt": "Sketch of the Sun with the orbits of Uranus and Neptune; a red dashed circle marks the predicted spot with Neptune inside it. Beside it, three steps: Uranus drifted off its predicted path; in 1846 Le Verrier calculated where an unseen planet must be; Galle looked and found Neptune within about 1 degree."
+     },
+     "title": "Neptune: found with mathematics",
+     "bullets": [
+      "Uranus did not quite follow the orbit Newton's law predicted. In 1846 **Le Verrier** calculated where an unseen eighth planet should be, and **Galle** found Neptune within about 1° of that spot.",
+      "So Neptune was discovered by physics first and only confirmed with a telescope."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "You cannot get a density without both a size and a mass, and both needed the solar system's true scale. That is why the giants' strange nature was recognized less than 300 years ago."
+    },
+    {
+     "type": "trick",
+     "text": "Size = angle + distance. Mass = a moon's orbit. Density = mass / volume."
+    },
+    {
+     "type": "trap",
+     "text": "The giants' sizes could not be found until the AU was measured in the 1760s (p. 318). Uranus (1781) and Neptune (1846) were unknown in Copernicus's time. Galileo and Juno orbit Jupiter; Cassini orbited Saturn (p. 319). Neptune story: Special Topic, p. 322."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 318-319 (chapter opener and 'A Different Kind of Planet' intro)",
+    "Special Topic p. 322 (discovery of Uranus and Neptune)",
+    "Original diagrams: size-and-mass flowchart, mission timeline"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_size_logic.webp",
+     "slide": "none (original diagram)",
+     "alt": "Flowchart: angular size from a telescope plus distance in kilometres (which needed the true length of the AU, found in the 1760s from a transit of Venus) gives true size; a moon's orbital period and distance, through Newton's version of Kepler's third law, give mass; size and mass together give a low density."
+    },
+    {
+     "src": "img/jovian/gen_missions.webp",
+     "slide": "none (original diagram)",
+     "alt": "Timeline from 1970 to 2025: Pioneer 10 and 11 flybys in the early 1970s, Voyager 1 and 2 launched in 1977, Voyager 2 at Uranus in 1986 and then Neptune, Galileo orbiting Jupiter 1995 to 2003, Cassini orbiting Saturn 2004 to 2017, and Juno orbiting Jupiter since 2016."
+    },
+    {
+     "src": "img/jovian/gen_neptune_found.webp",
+     "slide": "none (original diagram)",
+     "alt": "Sketch of the Sun with the orbits of Uranus and Neptune; a red dashed circle marks the predicted spot with Neptune inside it. Beside it, three steps: Uranus drifted off its predicted path; in 1846 Le Verrier calculated where an unseen planet must be; Galle looked and found Neptune within about 1 degree."
+    }
+   ]
+  },
+  {
+   "id": "family",
+   "title": "What all four giants share",
+   "slides": "Cosmic Perspective 11.1, pp. 319-320, Figure 11.1",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_sizes.webp",
+      "slide": "none (original diagram)",
+      "alt": "Jupiter, Saturn with its rings, Uranus, Neptune and Earth drawn side by side to scale. Jupiter and Saturn are huge, Uranus and Neptune are about a third of their width, and Earth is a small dot."
+     },
+     "title": "Immense size",
+     "bullets": [
+      "All four jovian planets are **immense** compared with Earth, which is the largest terrestrial planet.",
+      "**Jupiter** and **Saturn** are much bigger than **Uranus** and **Neptune**, the most obvious difference within the family."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_volume.webp",
+      "slide": "none (original diagram)",
+      "alt": "Dot chart where each dot is one Earth volume: a block of about 1400 dots for Jupiter, a small block of 50 dots for Neptune, and a single dot for Earth."
+     },
+     "title": "Room for many Earths",
+     "bullets": [
+      "Even the smallest giant, **Neptune**, could hold the volume of **more than 50 Earths**.",
+      "**Jupiter** has about **1400 times** Earth's volume."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_data_cards.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards. Jupiter: 5.20 AU, 318 Earth masses, 1.33 grams per cubic centimetre, mostly hydrogen and helium. Saturn: 9.54 AU, 95 Earth masses, 0.71, mostly hydrogen and helium. Uranus: 19.2 AU, 14 Earth masses, 1.24, hydrogen compounds and rock with some hydrogen and helium. Neptune: 30.1 AU, 17 Earth masses, 1.67, the same mix as Uranus."
+     },
+     "title": "Low density, hydrogen-rich",
+     "bullets": [
+      "All four have **much lower average densities** than any terrestrial planet.",
+      "All are dominated by **hydrogen, helium and hydrogen compounds**, materials that are rare on the terrestrial planets.",
+      "None has a solid surface, and all four **rotate fast** compared with the terrestrial worlds."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "They formed beyond the frost line, where hydrogen compounds froze into ice and big icy seeds could pull in hydrogen and helium gas. That shared birth gives the shared traits."
+    },
+    {
+     "type": "trick",
+     "text": "The four S's of a giant: Size huge, Spin fast, Surface none, Stuff = hydrogen."
+    },
+    {
+     "type": "trap",
+     "text": "Low density does not mean small mass: Jupiter is 318 Earth masses (Figure 11.1, p. 320). Neptune is the smallest giant yet still holds more than 50 Earths (p. 319)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 319-320 and Figure 11.1 data",
+    "Original diagrams: planets to scale (radii in Earth radii: Jupiter 11.0, Saturn 9.1, Uranus 4.0, Neptune 3.9, general knowledge, used only for drawing), volume dot chart, data cards"
+   ],
+   "table": {
+    "head": [
+     "Planet",
+     "Distance from Sun",
+     "Mass (Earth = 1)",
+     "Density (g/cm³)",
+     "Made mostly of"
+    ],
+    "rows": [
+     [
+      "Jupiter",
+      "5.20 AU",
+      "318",
+      "1.33",
+      "Hydrogen and helium"
+     ],
+     [
+      "Saturn",
+      "9.54 AU",
+      "95",
+      "0.71",
+      "Hydrogen and helium"
+     ],
+     [
+      "Uranus",
+      "19.2 AU",
+      "14",
+      "1.24",
+      "Hydrogen compounds, rock; some H and He"
+     ],
+     [
+      "Neptune",
+      "30.1 AU",
+      "17",
+      "1.67",
+      "Hydrogen compounds, rock; some H and He"
+     ]
+    ]
+   },
+   "images": [
+    {
+     "src": "img/jovian/gen_sizes.webp",
+     "slide": "none (original diagram)",
+     "alt": "Jupiter, Saturn with its rings, Uranus, Neptune and Earth drawn side by side to scale. Jupiter and Saturn are huge, Uranus and Neptune are about a third of their width, and Earth is a small dot."
+    },
+    {
+     "src": "img/jovian/gen_volume.webp",
+     "slide": "none (original diagram)",
+     "alt": "Dot chart where each dot is one Earth volume: a block of about 1400 dots for Jupiter, a small block of 50 dots for Neptune, and a single dot for Earth."
+    },
+    {
+     "src": "img/jovian/gen_data_cards.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards. Jupiter: 5.20 AU, 318 Earth masses, 1.33 grams per cubic centimetre, mostly hydrogen and helium. Saturn: 9.54 AU, 95 Earth masses, 0.71, mostly hydrogen and helium. Uranus: 19.2 AU, 14 Earth masses, 1.24, hydrogen compounds and rock with some hydrogen and helium. Neptune: 30.1 AU, 17 Earth masses, 1.67, the same mix as Uranus."
+    }
+   ]
+  },
+  {
+   "id": "rotation",
+   "title": "Fast spins on worlds without a surface",
+   "slides": "Cosmic Perspective 11.1, p. 319",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_spin_measure.webp",
+      "slide": "none (original diagram)",
+      "alt": "Jupiter with white wind arrows across its clouds, labelled: winds move clouds too, so clouds do not show the true spin. Purple magnetic field loops give off pulses, labelled: time the emissions of particles trapped in the field instead, which shows how fast the interior spins."
+     },
+     "title": "How do you time the day?",
+     "bullets": [
+      "Watching clouds is unreliable, because **winds** move clouds as well as rotation does.",
+      "Instead astronomers time the **emissions from charged particles trapped in the magnetic field**. The field is made deep inside, so this measures how fast the **interior** turns."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_days.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of day length: Earth 24 hours, Jupiter about 10, Saturn about 10, Uranus 16 to 17, and Neptune 16 to 17."
+     },
+     "title": "Short days",
+     "bullets": [
+      "A jovian \"day\" is about **10 hours** on Jupiter and Saturn and **16-17 hours** on Uranus and Neptune.",
+      "Because the planets are so wide, their surface speeds are even greater compared with Earth's than these short periods suggest."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_diffrot.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a red marker on Jupiter's equator moves across the disk faster than blue markers near the poles. Labels: the equator completes a turn in less time, high latitudes take longer, and the Sun's surface spins the same way."
+     },
+     "title": "The equator laps the poles",
+     "bullets": [
+      "Cloud tracking shows rotation changes with latitude: **equatorial regions finish a turn in less time than polar regions**.",
+      "This is possible only because the giants are **not solid balls**. The Sun rotates in the same way."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A point on the equator must travel the whole circumference in one rotation. A huge circumference in a short time means a very high speed."
+    },
+    {
+     "type": "trick",
+     "text": "Clouds can lie (winds); the magnetic field tells the truth (interior)."
+    },
+    {
+     "type": "trap",
+     "text": "Jupiter and Saturn have the SHORTER days (about 10 h); Uranus and Neptune are 16-17 h (p. 319). On the giants the equator rotates faster than the poles, not slower."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 319"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_spin_measure.webp",
+     "slide": "none (original diagram)",
+     "alt": "Jupiter with white wind arrows across its clouds, labelled: winds move clouds too, so clouds do not show the true spin. Purple magnetic field loops give off pulses, labelled: time the emissions of particles trapped in the field instead, which shows how fast the interior spins."
+    },
+    {
+     "src": "img/jovian/gen_days.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of day length: Earth 24 hours, Jupiter about 10, Saturn about 10, Uranus 16 to 17, and Neptune 16 to 17."
+    },
+    {
+     "src": "img/jovian/gen_diffrot.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a red marker on Jupiter's equator moves across the disk faster than blue markers near the poles. Labels: the equator completes a turn in less time, high latitudes take longer, and the Sun's surface spins the same way."
+    }
+   ]
+  },
+  {
+   "id": "bulge",
+   "title": "Squashed by spin",
+   "slides": "Cosmic Perspective 11.1, p. 319, Figure 11.2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_bulge.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a round planet flattens slightly as it spins. Green arrows all around point inward for gravity; red arrows at the equator point outward for spin. A dashed circle shows a perfect sphere, and the planet bulges past it at the equator."
+     },
+     "title": "Gravity versus spin",
+     "bullets": [
+      "Gravity alone would pull each planet into a perfect **sphere**.",
+      "Rotation flings material outward, like the outward push you feel on a merry-go-round. The push is strongest at the **equator**, where the speed around the axis is highest, so the planet gets an **equatorial bulge**.",
+      "How big the bulge is depends on the balance between gravity pulling in and rotation pushing out."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_saturn_shape.webp",
+      "slide": "none (original diagram)",
+      "alt": "Saturn drawn as an oval inside a dashed circle. A red arrow marks the equator as about 10% wider than the blue pole-to-pole arrow. Notes: fast 10-hour spin plus fairly weak gravity cause it, and the bulge helps keep moons and rings lined up with the equator."
+     },
+     "title": "Saturn: the flattest",
+     "bullets": [
+      "Saturn is about **10% wider at its equator** than from pole to pole.",
+      "The reason: a fast **10-hour rotation** plus fairly **weak surface gravity**.",
+      "The bulge also adds a little extra gravity at the equator that helps keep **moons and rings lined up** with the equator."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Weak gravity means less inward pull to resist the spin, so Saturn's balance tips furthest toward flattening."
+    },
+    {
+     "type": "trick",
+     "text": "Fast spin + weak grip = squashed shape."
+    },
+    {
+     "type": "trap",
+     "text": "Saturn, not Jupiter, is the most flattened, even though Jupiter is bigger (p. 319, Figure 11.2). The bulge is at the equator, not the poles."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 319 and Figure 11.2"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_bulge.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a round planet flattens slightly as it spins. Green arrows all around point inward for gravity; red arrows at the equator point outward for spin. A dashed circle shows a perfect sphere, and the planet bulges past it at the equator."
+    },
+    {
+     "src": "img/jovian/gen_saturn_shape.webp",
+     "slide": "none (original diagram)",
+     "alt": "Saturn drawn as an oval inside a dashed circle. A red arrow marks the equator as about 10% wider than the blue pole-to-pole arrow. Notes: fast 10-hour spin plus fairly weak gravity cause it, and the bulge helps keep moons and rings lined up with the equator."
+    }
+   ]
+  },
+  {
+   "id": "composition",
+   "title": "Two pairs: gas-rich and ice-rich",
+   "slides": "Cosmic Perspective 11.1, p. 320",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_composition.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bars showing what each planet's mass is made of: Jupiter (318 Earth masses) about 97% captured hydrogen and helium; Saturn (95) about 90%; Uranus (14) only about one third; Neptune (17) similar to Uranus. The rest of each bar is the ice-rich seed of hydrogen compounds, rock and metal."
+     },
+     "title": "Different recipes",
+     "bullets": [
+      "**Jupiter and Saturn** are made mostly of **hydrogen and helium**, a mix much more like the **Sun** than like the terrestrial planets.",
+      "**Uranus and Neptune** have some hydrogen and helium, but far less. They are made mainly of **hydrogen compounds** such as **water (H₂O), methane (CH₄) and ammonia (NH₃)**, with smaller amounts of **rock and metal**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_failed_star.webp",
+      "slide": "none (original diagram)",
+      "alt": "A stretched mass scale in Jupiter masses from 0.1 to 100: Saturn at 0.3, Jupiter at 1 and the lowest-mass stars at about 80. Jupiter has a starlike mix of hydrogen and helium but only about 1/80 of the mass needed, so its gravity cannot make its centre hot and dense enough for fusion."
+     },
+     "title": "A \"failed star\"?",
+     "bullets": [
+      "Jupiter is sometimes called a **failed star**: it has a starlike composition but no **nuclear fusion** to make it shine.",
+      "The reason is mass: Jupiter has only about **1/80** of the mass of the **lowest-mass stars**, so its gravity is too weak to squeeze the interior to the temperatures and densities fusion needs.",
+      "Seen another way, it is an extremely successful planet."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Fusion needs extreme heat and density at the centre, and only enough gravity (enough mass) can squeeze a ball of gas that hard."
+    },
+    {
+     "type": "trick",
+     "text": "J and S: Sun-like (H, He). U and N: water, methane, ammonia, plus rock."
+    },
+    {
+     "type": "trap",
+     "text": "Uranus and Neptune are not mostly hydrogen and helium; they are mostly hydrogen compounds (p. 320). Jupiter lacks fusion because of too little mass, not too little hydrogen."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 320"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_composition.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bars showing what each planet's mass is made of: Jupiter (318 Earth masses) about 97% captured hydrogen and helium; Saturn (95) about 90%; Uranus (14) only about one third; Neptune (17) similar to Uranus. The rest of each bar is the ice-rich seed of hydrogen compounds, rock and metal."
+    },
+    {
+     "src": "img/jovian/gen_failed_star.webp",
+     "slide": "none (original diagram)",
+     "alt": "A stretched mass scale in Jupiter masses from 0.1 to 100: Saturn at 0.3, Jupiter at 1 and the lowest-mass stars at about 80. Jupiter has a starlike mix of hydrogen and helium but only about 1/80 of the mass needed, so its gravity cannot make its centre hot and dense enough for fusion."
+    }
+   ]
+  },
+  {
+   "id": "density",
+   "title": "The density puzzle",
+   "slides": "Cosmic Perspective 11.1, pp. 320-321, Figure 11.3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_density.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of average density in grams per cubic centimetre with a dashed line for water at 1: Jupiter 1.33, Saturn 0.71 (below the water line), Uranus 1.24 and Neptune 1.67."
+     },
+     "title": "Saturn floats, Jupiter does not fit the pattern",
+     "bullets": [
+      "Saturn's average density, **0.71 g/cm³**, is **less than water's**.",
+      "Uranus and Neptune are denser than Saturn, which makes sense: hydrogen compounds, rock and metal are denser than hydrogen and helium.",
+      "By that logic Jupiter should be even less dense than Saturn, but it is **denser (1.33 g/cm³)**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_pillows.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: pillows drop onto a stack one at a time. The bottom pillows get squashed thinner as more are added on top, while the top pillow stays fluffy. A small graph beside it shows the stack height rising quickly at first and then levelling off."
+     },
+     "title": "The pillow stack",
+     "bullets": [
+      "Building a hydrogen-helium planet is like stacking **pillows**: each new pillow squashes the ones below, and squashed layers pull on each other harder, squeezing them more.",
+      "At first the stack grows a lot with each pillow, but later each pillow adds **almost no height**; it just makes the stack **denser**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_mass_radius.webp",
+      "slide": "none (original diagram)",
+      "alt": "Graph of radius against mass for a hydrogen and helium planet, on a stretched mass axis from 0.1 to 10 Jupiter masses. The curve rises, flattens near Jupiter and then falls. Saturn sits lower left. Notes: three times Saturn's mass gives only a little more width, and much more mass makes a planet smaller."
+     },
+     "title": "More mass, not much more size",
+     "bullets": [
+      "So **Jupiter** is only slightly wider than **Saturn** even though it has **more than three times** the mass: the extra mass compresses its interior.",
+      "Jupiter is close to the **largest radius** a jovian planet can have. Adding much more gas would make it **smaller**, not bigger.",
+      "That is why some planets around other stars with more mass than Jupiter are smaller, and why the smallest **stars**, at least 80 times Jupiter's mass, are smaller than Jupiter."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Gravity grows with mass. In a planet made of squeezable gas, extra mass mainly increases compression, so density rises while radius barely changes and can even shrink."
+    },
+    {
+     "type": "trick",
+     "text": "Pillows: first they add height, then they only add squish."
+    },
+    {
+     "type": "trap",
+     "text": "Jupiter's higher density comes from compression, not from extra rock: Jupiter is actually a smaller fraction rock and ice than Saturn (pp. 320-321). Saturn is the least dense giant; Neptune (1.67) is the densest (Figure 11.1)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 320-321 and Figure 11.3"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_density.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of average density in grams per cubic centimetre with a dashed line for water at 1: Jupiter 1.33, Saturn 0.71 (below the water line), Uranus 1.24 and Neptune 1.67."
+    },
+    {
+     "src": "img/jovian/gen_pillows.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: pillows drop onto a stack one at a time. The bottom pillows get squashed thinner as more are added on top, while the top pillow stays fluffy. A small graph beside it shows the stack height rising quickly at first and then levelling off."
+    },
+    {
+     "src": "img/jovian/gen_mass_radius.webp",
+     "slide": "none (original diagram)",
+     "alt": "Graph of radius against mass for a hydrogen and helium planet, on a stretched mass axis from 0.1 to 10 Jupiter masses. The curve rises, flattens near Jupiter and then falls. Saturn sits lower left. Notes: three times Saturn's mass gives only a little more width, and much more mass makes a planet smaller."
+    }
+   ]
+  },
+  {
+   "id": "origins",
+   "title": "Explaining the differences",
+   "slides": "Cosmic Perspective 11.1, p. 321",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_seeds.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four circles, each with the same small brown centre for an ice-rich seed of about 10 Earth masses. Jupiter's gas shell is the largest, Saturn's large, and Uranus's and Neptune's thin."
+     },
+     "title": "Same seeds",
+     "bullets": [
+      "By the **nebular theory**, the giants formed in the cold outer solar system, where **hydrogen compounds** condensed into ice. Ices were far more plentiful than rock and metal, so some **ice-rich planetesimals** grew very large.",
+      "Models suggest all four started from seeds of about the **same mass, roughly 10 Earth masses**, whose gravity then pulled in hydrogen and helium gas."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_composition.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bars showing what each planet's mass is made of: Jupiter (318 Earth masses) about 97% captured hydrogen and helium; Saturn (95) about 90%; Uranus (14) only about one third; Neptune (17) similar to Uranus. The rest of each bar is the ice-rich seed of hydrogen compounds, rock and metal."
+     },
+     "title": "Different amounts of gas",
+     "bullets": [
+      "Jupiter and Saturn captured so much gas that the original ice-rich seed is now only about **3% of Jupiter's** mass and about **10% of Saturn's**.",
+      "Uranus and Neptune captured much less, so most of their mass is still seed material: hydrogen compounds with some rock and metal.",
+      "Example: **Uranus** has about **14 Earth masses**. Take away a 10 Earth-mass seed and captured gas is only about **one third** of its mass. Neptune is similar; its slightly higher density may mean a somewhat bigger seed."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_gas_race.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: the Sun at left and four seeds in a cloud of gas. Jupiter's seed starts pulling in gas first and grows biggest, then Saturn, Uranus and Neptune start later. Then orange solar wind arrows sweep the leftover gas away and all four stop growing at once."
+     },
+     "title": "A race against the solar wind",
+     "bullets": [
+      "Solid particles farther from the Sun were more spread out, so they took **longer** to build big seeds.",
+      "Jupiter, nearest the Sun, got a big enough seed **first**, then Saturn, Uranus and Neptune.",
+      "All four **stopped** at the same time, when the **solar wind** blew the remaining gas away. The farther planets had less time and ended up smaller.",
+      "Similar processes in other planetary systems may explain much of the variety of planets found around other stars."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A later start with the same finish line means less time to grab gas. Distance from the Sun set the start time; the solar wind set the finish."
+    },
+    {
+     "type": "trick",
+     "text": "Same seed, different start time, same stop time."
+    },
+    {
+     "type": "trap",
+     "text": "The seeds were about the SAME mass (~10 Earth masses) for all four; the difference is how much gas each captured (p. 321). Uranus's gas share is about one third; about two thirds is seed material."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 321"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_seeds.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four circles, each with the same small brown centre for an ice-rich seed of about 10 Earth masses. Jupiter's gas shell is the largest, Saturn's large, and Uranus's and Neptune's thin."
+    },
+    {
+     "src": "img/jovian/gen_composition.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bars showing what each planet's mass is made of: Jupiter (318 Earth masses) about 97% captured hydrogen and helium; Saturn (95) about 90%; Uranus (14) only about one third; Neptune (17) similar to Uranus. The rest of each bar is the ice-rich seed of hydrogen compounds, rock and metal."
+    },
+    {
+     "src": "img/jovian/gen_gas_race.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: the Sun at left and four seeds in a cloud of gas. Jupiter's seed starts pulling in gas first and grows biggest, then Saturn, Uranus and Neptune start later. Then orange solar wind arrows sweep the leftover gas away and all four stop growing at once."
+    }
+   ]
+  },
+  {
+   "id": "probing",
+   "title": "Studying an interior we cannot visit",
+   "slides": "Cosmic Perspective 11.1, pp. 322-323",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_probe.webp",
+      "slide": "none (original diagram)",
+      "alt": "A long bar from Jupiter's cloudtops to its centre about 70,000 km down. A red mark very close to the cloudtop end shows how far the Galileo probe got in 1995: about 200 km, only about 0.3% of the way."
+     },
+     "title": "Nothing survives the trip",
+     "bullets": [
+      "\"Gas giant\" is misleading: the giants lack solid surfaces, but you could not fly through the interior the way a plane flies through air. Rising temperature and pressure would soon destroy any spacecraft.",
+      "Galileo dropped a **probe** into Jupiter in **1995**; it survived only to about **200 km**, about **0.3%** of Jupiter's radius."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_model_loop.webp",
+      "slide": "none (original diagram)",
+      "alt": "A loop of four boxes: measure gravity (Juno) and the magnetic field, build a model using lab data on hot, squeezed hydrogen and helium, predict density, size, shape and atmosphere, then compare and adjust. Centre note: today's models match all four giants."
+     },
+     "title": "Models, measurements and the lab",
+     "bullets": [
+      "As for the terrestrial planets, careful measurements of a planet's **gravity** and **magnetic field** guide a model of its interior. The model predicts things we can check, such as average density, and is adjusted until it matches.",
+      "**Laboratory experiments** show how hydrogen and helium behave at the huge temperatures and pressures inside.",
+      "The best Jupiter data come from **Juno**, which measured very precisely how Jupiter's gravity affects its orbit. Today's models explain the sizes, densities, atmospheres and exact shapes of all four giants."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A model that correctly predicts many independent observations (size, density, shape, composition) earns our confidence even though nobody can go and look."
+    },
+    {
+     "type": "trick",
+     "text": "Measure, model, predict, compare, repeat."
+    },
+    {
+     "type": "trap",
+     "text": "The Galileo probe reached only about 200 km, a tiny 0.3% of the way down (p. 322). Interior knowledge comes from models, Juno's gravity data and lab experiments, not from samples."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 322-323"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_probe.webp",
+     "slide": "none (original diagram)",
+     "alt": "A long bar from Jupiter's cloudtops to its centre about 70,000 km down. A red mark very close to the cloudtop end shows how far the Galileo probe got in 1995: about 200 km, only about 0.3% of the way."
+    },
+    {
+     "src": "img/jovian/gen_model_loop.webp",
+     "slide": "none (original diagram)",
+     "alt": "A loop of four boxes: measure gravity (Juno) and the magnetic field, build a model using lab data on hot, squeezed hydrogen and helium, predict density, size, shape and atmosphere, then compare and adjust. Centre note: today's models match all four giants."
+    }
+   ]
+  },
+  {
+   "id": "jupiter-dive",
+   "title": "A plunge into Jupiter",
+   "slides": "Cosmic Perspective 11.1, p. 323, Figure 11.4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_jupiter_interior.webp",
+      "slide": "none (original diagram)",
+      "alt": "Half cut-away of Jupiter with Earth at the same scale. Layers: gaseous hydrogen, liquid hydrogen from 7,000 km (2,000 K), metallic hydrogen from 14,000 km (5,000 K, 2 million times Earth's air pressure), dense material increasing from halfway, and the core at 60,000 km (20,000 K, 25 grams per cubic centimetre)."
+     },
+     "title": "The layers at a glance",
+     "bullets": [
+      "Jupiter's outer layers are mostly **hydrogen** (mixed with helium), and the hydrogen changes into denser and denser forms with depth: **gaseous**, then **liquid**, then **metallic** hydrogen.",
+      "From about halfway down, the share of denser material (hydrogen compounds, rock and metal) increases.",
+      "Jupiter's core is only slightly larger than Earth but about **10 times as massive**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_dive.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a red dot sinks down a depth column from the cloudtops to 60,000 km while a readout updates temperature, pressure, density and layer. It ends at the core: about 20,000 K, 100 million times sea-level pressure, 25 grams per cubic centimetre, more than twice the density of lead."
+     },
+     "title": "Down through the hydrogen",
+     "bullets": [
+      "**Cloudtops:** about **125 K** (-148 °C), density 0.0002 g/cm³, pressure about the same as sea level on Earth.",
+      "**7,000 km** (about 10% of the way to the centre): **2,000 K**, **500,000 times** Earth's surface pressure, density about **0.5 g/cm³**. Hydrogen now behaves more like a **liquid**.",
+      "**14,000 km** (about 20% of the way): density about that of **water**, about **5,000 K** (almost as hot as the Sun's surface) and **2 million times** Earth's pressure."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_metallic.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: red hydrogen nuclei sit packed in rows while blue electrons drift freely among them. Notes: about 2 million times Earth's air pressure makes hydrogen metallic, and its free electrons carry current, so this layer makes Jupiter's magnetic field."
+     },
+     "title": "Metallic hydrogen",
+     "bullets": [
+      "That extreme pressure forces hydrogen into a compact **metallic** form. As in everyday metals, its **electrons move freely**, so it **conducts electricity** well.",
+      "This layer fills most of the rest of Jupiter's interior and is where Jupiter's **magnetic field** is made."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_core_compare.webp",
+      "slide": "none (original diagram)",
+      "alt": "Jupiter's core drawn as a brown ball speckled with mixed materials beside a smaller blue Earth. Notes: only slightly larger than Earth but about 10 times as massive; about 20,000 K, 100 million times sea-level pressure and 25 grams per cubic centimetre; probably all mixed rather than layered."
+     },
+     "title": "The core",
+     "bullets": [
+      "Halfway down (about **35,000 km**) you are still in metallic hydrogen, but hydrogen compounds, rock and metal keep increasing.",
+      "By about **60,000 km** deep (about 10,000 km from the centre) these dense materials probably dominate: about **20,000 K**, **100 million times** sea-level pressure and about **25 g/cm³**, more than **twice the density of lead**.",
+      "The core materials have familiar names but are in phases unlike any familiar solid or liquid, and they are probably all **mixed together**, not sorted into layers like a terrestrial core, mantle and crust."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The deeper you go, the more weight of overlying layers presses down. That pressure, not a change in ingredients, turns hydrogen from gas to liquid to metal."
+    },
+    {
+     "type": "trick",
+     "text": "Gas, Liquid, Metal, Core: G-L-M-C, 'Giants Love Metal Cores'."
+    },
+    {
+     "type": "trap",
+     "text": "Jupiter's layers are named for the PHASE of hydrogen; each also contains helium and hydrogen compounds (pp. 323-324). Metallic hydrogen is hydrogen, not iron. Juno cannot say whether there is a sharp core boundary (p. 323)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 323 and Figure 11.4"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_jupiter_interior.webp",
+     "slide": "none (original diagram)",
+     "alt": "Half cut-away of Jupiter with Earth at the same scale. Layers: gaseous hydrogen, liquid hydrogen from 7,000 km (2,000 K), metallic hydrogen from 14,000 km (5,000 K, 2 million times Earth's air pressure), dense material increasing from halfway, and the core at 60,000 km (20,000 K, 25 grams per cubic centimetre)."
+    },
+    {
+     "src": "img/jovian/gen_dive.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a red dot sinks down a depth column from the cloudtops to 60,000 km while a readout updates temperature, pressure, density and layer. It ends at the core: about 20,000 K, 100 million times sea-level pressure, 25 grams per cubic centimetre, more than twice the density of lead."
+    },
+    {
+     "src": "img/jovian/gen_metallic.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: red hydrogen nuclei sit packed in rows while blue electrons drift freely among them. Notes: about 2 million times Earth's air pressure makes hydrogen metallic, and its free electrons carry current, so this layer makes Jupiter's magnetic field."
+    },
+    {
+     "src": "img/jovian/gen_core_compare.webp",
+     "slide": "none (original diagram)",
+     "alt": "Jupiter's core drawn as a brown ball speckled with mixed materials beside a smaller blue Earth. Notes: only slightly larger than Earth but about 10 times as massive; about 20,000 K, 100 million times sea-level pressure and 25 grams per cubic centimetre; probably all mixed rather than layered."
+    }
+   ]
+  },
+  {
+   "id": "mixed-core",
+   "title": "Juno's surprise: a mixed-up core",
+   "slides": "Cosmic Perspective 11.1, p. 323",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_fuzzy_core.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two half cut-aways of Jupiter. Left, what was expected: dense material sunk into a small compact core. Right, what Juno found: dense brown specks spread through about the inner half. Note: the core may have grown slowly while gas arrived, or a giant impact may have stirred it."
+     },
+     "title": "Not what anyone expected",
+     "bullets": [
+      "Juno's results show the densest materials **mixed through much of the interior**, roughly the inner half, instead of all sunk to a compact central core.",
+      "This was a surprise, because dense material would be expected to sink to the centre."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_hypotheses.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels. 1, a slow-growing core: gas pours in while icy seeds are still arriving, so dense specks are mixed through the planet. 2, a giant impact: a large body hits a compact core and spreads its material through the inner half."
+     },
+     "title": "Two possible explanations",
+     "bullets": [
+      "**Slow core:** the icy seed grew more slowly than predicted, so Jupiter started pulling in hydrogen and helium while its core was still growing.",
+      "**Giant impact:** the core formed quickly, but a truly giant impact later broke it apart and spread its dense material through the inner half.",
+      "Ongoing Juno observations and better computer models may tell them apart. It is not known whether the other giants are mixed the same way."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A surprising measurement is valuable: it shows that a piece of the formation story is missing and points to new tests."
+    },
+    {
+     "type": "trick",
+     "text": "Mixed core: either it was built while being stirred (slow growth) or stirred after being built (impact)."
+    },
+    {
+     "type": "trap",
+     "text": "Juno did not find that Jupiter has no core; it found dense core material spread through about the inner half (p. 323). Whether Saturn, Uranus and Neptune are mixed the same way is unknown (p. 323)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 323"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_fuzzy_core.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two half cut-aways of Jupiter. Left, what was expected: dense material sunk into a small compact core. Right, what Juno found: dense brown specks spread through about the inner half. Note: the core may have grown slowly while gas arrived, or a giant impact may have stirred it."
+    },
+    {
+     "src": "img/jovian/gen_hypotheses.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels. 1, a slow-growing core: gas pours in while icy seeds are still arriving, so dense specks are mixed through the planet. 2, a giant impact: a large body hits a compact core and spreads its material through the inner half."
+    }
+   ]
+  },
+  {
+   "id": "compare-interiors",
+   "title": "Comparing the four interiors",
+   "slides": "Cosmic Perspective 11.1, pp. 323-324, Figure 11.5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_four_interiors.webp",
+      "slide": "none (original diagram)",
+      "alt": "Half cut-aways of the four giants, roughly to scale. Jupiter and Saturn have gaseous, liquid and metallic hydrogen around a core; Saturn's metallic layer is thinner and deeper. Uranus and Neptune have only gaseous hydrogen around a layer of water, methane and ammonia and a rock and metal centre."
+     },
+     "title": "Same core, different wrapping",
+     "bullets": [
+      "All four giants have cores of rock, metals and hydrogen compounds of about the same mass, about **10 Earth masses**.",
+      "So their interiors differ mainly in the **hydrogen and helium layers** around those cores."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_jup_vs_sat.webp",
+      "slide": "none (original diagram)",
+      "alt": "Half cut-aways of Jupiter and Saturn side by side. Both have gaseous, liquid and metallic hydrogen around a core, but Saturn's metallic layer is thinner and deeper, its gas and liquid layers are thicker, and its core is about Earth-size and near 10,000 K."
+     },
+     "title": "Saturn: Jupiter's layers, stretched",
+     "bullets": [
+      "Saturn has the same basic layering as Jupiter, but its lower mass and weaker gravity mean less weight pressing down.",
+      "You must go **deeper** to reach each change of phase, so Saturn has **thicker gaseous and liquid hydrogen** layers and a **thinner, deeper metallic hydrogen** layer around a roughly **Earth-size core**.",
+      "Its interior is somewhat cooler than Jupiter's, though the core probably still reaches about **10,000 K**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_ice_core.webp",
+      "slide": "none (original diagram)",
+      "alt": "Cut-away circle of Uranus or Neptune: an outer layer of hydrogen gas with helium, a thick middle layer of water, methane and ammonia, and a centre of rock and metal. Notes: no liquid or metallic hydrogen; the core is above about 5000 K and may be liquid; the cores are wider and have separated into layers."
+     },
+     "title": "Uranus and Neptune: no liquid or metallic hydrogen",
+     "bullets": [
+      "Their pressures and temperatures never get high enough for liquid or metallic hydrogen, so they have just a thick layer of **gaseous hydrogen** around the core.",
+      "The core is very hot, probably **above about 5000 K**, and the pressure may keep it **liquid**: odd buried \"oceans\".",
+      "Their cores are **larger in radius** than Jupiter's and Saturn's, though about the same mass, because lighter layers above squeeze them less.",
+      "Milder conditions also let their cores **differentiate**: hydrogen compounds form a layer around a centre of rock and metal. They are sometimes called **ice giants**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Pressure sets the phase of hydrogen. Less mass above means less pressure at a given depth, so phase changes happen deeper (Saturn) or not at all (Uranus, Neptune)."
+    },
+    {
+     "type": "trick",
+     "text": "Jupiter and Saturn: gas, liquid, metal. Uranus and Neptune: gas, then core."
+    },
+    {
+     "type": "trap",
+     "text": "Saturn's metallic layer is THINNER and deeper than Jupiter's, while its gas and liquid layers are thicker (p. 323). Uranus's and Neptune's cores are larger in radius but not more massive (p. 324)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 323-324 and Figure 11.5"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_four_interiors.webp",
+     "slide": "none (original diagram)",
+     "alt": "Half cut-aways of the four giants, roughly to scale. Jupiter and Saturn have gaseous, liquid and metallic hydrogen around a core; Saturn's metallic layer is thinner and deeper. Uranus and Neptune have only gaseous hydrogen around a layer of water, methane and ammonia and a rock and metal centre."
+    },
+    {
+     "src": "img/jovian/gen_jup_vs_sat.webp",
+     "slide": "none (original diagram)",
+     "alt": "Half cut-aways of Jupiter and Saturn side by side. Both have gaseous, liquid and metallic hydrogen around a core, but Saturn's metallic layer is thinner and deeper, its gas and liquid layers are thicker, and its core is about Earth-size and near 10,000 K."
+    },
+    {
+     "src": "img/jovian/gen_ice_core.webp",
+     "slide": "none (original diagram)",
+     "alt": "Cut-away circle of Uranus or Neptune: an outer layer of hydrogen gas with helium, a thick middle layer of water, methane and ammonia, and a centre of rock and metal. Notes: no liquid or metallic hydrogen; the core is above about 5000 K and may be liquid; the cores are wider and have separated into layers."
+    }
+   ]
+  },
+  {
+   "id": "internal-heat",
+   "title": "Internal heat",
+   "slides": "Cosmic Perspective 11.1, p. 324",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_heat_budget.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bars comparing energy given off with sunlight absorbed: Jupiter about twice (slow contraction), Saturn about twice (helium rain), Uranus about the same, with almost no extra heat, and Neptune about twice (perhaps contracting, not explained)."
+     },
+     "title": "Giving off more than they get",
+     "bullets": [
+      "The giants have no surface geology, but internal heat still matters. **Jupiter** gives off almost **twice as much energy** as it receives from the Sun, adding a lot of energy to its upper atmosphere.",
+      "For comparison, Earth's internal heat delivers only **0.005%** as much energy to the surface as sunlight does.",
+      "**Saturn** and **Neptune** also emit nearly twice what they receive; **Uranus** emits virtually **no** excess."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_contraction.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Jupiter shrinks a little inside a fixed outline while green arrows point inward. Beside it, gravitational potential energy turns into thermal energy. Note: too slow to measure, but enough to explain Jupiter's extra heat."
+     },
+     "title": "Jupiter: slow contraction",
+     "bullets": [
+      "Leftover heat from accretion, differentiation and radioactivity is not enough to explain Jupiter's heat loss today.",
+      "The leading idea: Jupiter is still **slowly contracting**, turning **gravitational potential energy into thermal energy**. It is too slow to measure, but calculations show it could easily explain the heat.",
+      "Jupiter was hotter in the past, which \"puffed up\" its atmosphere; a bigger Jupiter reflected more sunlight and looked even brighter in Earth's sky."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_helium_rain.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: blue droplets fall through a cutaway slab of Saturn's interior from the helium-poor upper layers toward the deeper interior. Notes: helium condenses into droplets, the dense droplets sink and release energy, and Saturn's atmosphere has less helium than Jupiter's."
+     },
+     "title": "Saturn: helium rain",
+     "bullets": [
+      "Saturn's mass is too small for contraction to explain its heat.",
+      "Instead its pressure and cooler interior may let **helium condense** into droplets that slowly **rain down** inside: a kind of ongoing **differentiation**, with dense material still sinking.",
+      "Evidence: spacecraft found **less helium** in Saturn's atmosphere than in Jupiter's, as expected if helium has rained down for billions of years."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_heat_budget.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bars comparing energy given off with sunlight absorbed: Jupiter about twice (slow contraction), Saturn about twice (helium rain), Uranus about the same, with almost no extra heat, and Neptune about twice (perhaps contracting, not explained)."
+     },
+     "title": "Uranus and Neptune: a mystery",
+     "bullets": [
+      "Neither has conditions for helium rain, and most of their heat from formation should be long gone, so **Uranus** gives off almost no extra energy.",
+      "Yet **Neptune** emits nearly twice what it receives. The only reasonable idea is that it is somehow **still contracting**, but nobody knows why a planet its size would still be shrinking after more than 4 billion years."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "When a planet shrinks, its material falls inward a little; the lost gravitational potential energy becomes heat. When helium droplets sink, the same thing happens on a smaller scale."
+    },
+    {
+     "type": "trick",
+     "text": "Jupiter Jiggles down (contracts), Saturn Showers (helium rain), Uranus is the cool one, Neptune is the Never-explained one."
+    },
+    {
+     "type": "trap",
+     "text": "Saturn's extra heat is blamed on helium rain, not contraction; its mass is too small for that (p. 324). Uranus, not Neptune, has almost no internal heat. None of the giants heat themselves by fusion."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 324"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_heat_budget.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bars comparing energy given off with sunlight absorbed: Jupiter about twice (slow contraction), Saturn about twice (helium rain), Uranus about the same, with almost no extra heat, and Neptune about twice (perhaps contracting, not explained)."
+    },
+    {
+     "src": "img/jovian/gen_contraction.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Jupiter shrinks a little inside a fixed outline while green arrows point inward. Beside it, gravitational potential energy turns into thermal energy. Note: too slow to measure, but enough to explain Jupiter's extra heat."
+    },
+    {
+     "src": "img/jovian/gen_helium_rain.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: blue droplets fall through a cutaway slab of Saturn's interior from the helium-poor upper layers toward the deeper interior. Notes: helium condenses into droplets, the dense droplets sink and release energy, and Saturn's atmosphere has less helium than Jupiter's."
+    },
+    {
+     "src": "img/jovian/gen_heat_budget.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bars comparing energy given off with sunlight absorbed: Jupiter about twice (slow contraction), Saturn about twice (helium rain), Uranus about the same, with almost no extra heat, and Neptune about twice (perhaps contracting, not explained)."
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "title": "What jovian air is made of",
+   "slides": "Cosmic Perspective 11.1, p. 325",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_ingredients.webp",
+      "slide": "none (original diagram)",
+      "alt": "A pie that is almost all hydrogen and helium with a small slice, drawn larger than real, for hydrogen compounds. Notes: the most common are water, methane and ammonia; there are also traces of acetylene, ethane, propane and ammonium hydrosulfide; these few compounds make all the clouds and colours."
+     },
+     "title": "A pinch of hydrogen compounds",
+     "bullets": [
+      "Jovian atmospheres are mostly **hydrogen and helium** with small amounts of **hydrogen compounds**, most commonly **water (H₂O), methane (CH₄) and ammonia (NH₃)**.",
+      "That makes sense: **oxygen, carbon and nitrogen** are the 3rd, 4th and 5th most abundant elements in the universe, and all bond easily with hydrogen.",
+      "Spectroscopy also finds small amounts of **acetylene, ethane, propane** and **ammonium hydrosulfide (NH₄SH)**.",
+      "These compounds are a tiny fraction of the gas, but they make the **clouds** and nearly all the **colours**. Without them the giants would be featureless grey balls."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_jup_profile.webp",
+      "slide": "none (original diagram)",
+      "alt": "Sketch graph of temperature against height for Jupiter. In the troposphere the temperature rises with depth, passing ammonia, ammonium hydrosulfide and water clouds. Above, the stratosphere warms to about 200 K and the thermosphere climbs toward about 1000 K."
+     },
+     "title": "Jupiter's atmospheric layers",
+     "bullets": [
+      "Like Earth, Jupiter has a **troposphere**, a **stratosphere** and a **thermosphere** (mapped by telescopes, spacecraft and the 1995 Galileo probe).",
+      "**Thermosphere:** very thin gas heated to about **1000 K** by solar **X rays** and by energetic particles from Jupiter's **magnetosphere**.",
+      "**Stratosphere:** Jupiter has no oxygen or ozone, but a few minor gases absorb solar **ultraviolet**, giving a peak of about **200 K** (-73 °C). UV-driven chemistry makes a **smog-like haze** that dulls the clouds below.",
+      "**Troposphere:** temperature **rises with depth**, because greenhouse gases trap both solar heat and Jupiter's own **internal heat**. Warmer below means strong **convection** and thick clouds."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Methane, propane and acetylene are flammable on Earth, yet Jupiter's lightning does not set them on fire: there is no free oxygen to burn with."
+    },
+    {
+     "type": "trick",
+     "text": "Mostly H and He make the planet; the little H compounds make the picture."
+    },
+    {
+     "type": "trap",
+     "text": "Jupiter has a stratosphere WITHOUT ozone: other minor gases absorb UV (p. 325). Hydrogen compounds are a minuscule fraction of the air but cause almost all the colours and clouds."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 325 and Figure 11.6"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_ingredients.webp",
+     "slide": "none (original diagram)",
+     "alt": "A pie that is almost all hydrogen and helium with a small slice, drawn larger than real, for hydrogen compounds. Notes: the most common are water, methane and ammonia; there are also traces of acetylene, ethane, propane and ammonium hydrosulfide; these few compounds make all the clouds and colours."
+    },
+    {
+     "src": "img/jovian/gen_jup_profile.webp",
+     "slide": "none (original diagram)",
+     "alt": "Sketch graph of temperature against height for Jupiter. In the troposphere the temperature rises with depth, passing ammonia, ammonium hydrosulfide and water clouds. Above, the stratosphere warms to about 200 K and the thermosphere climbs toward about 1000 K."
+    }
+   ]
+  },
+  {
+   "id": "cloud-decks",
+   "title": "Three cloud decks",
+   "slides": "Cosmic Perspective 11.1, pp. 325-326, Figure 11.6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_cloud_rise.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a bubble of gas rises from the hot depths. At about 100 km below the cloudtops white water clouds form, higher up brown and red ammonium hydrosulfide clouds, and at the top white ammonia clouds."
+     },
+     "title": "Rising gas builds the layers",
+     "bullets": [
+      "A cloud forms when a gas **condenses** into droplets or flakes. On Earth only water can do this, but Jupiter has **three main cloud layers**, each made by a gas that condenses at a different temperature.",
+      "Deep down it is too hot for any cloud. Rising gas cools: at about **100 km below the highest cloudtops**, **water** condenses into white **water clouds**, which lie so deep we rarely see them.",
+      "Higher and colder, **ammonium hydrosulfide** condenses into clouds that reflect **brown and red** light (no one knows exactly why), giving Jupiter many of its dark colours.",
+      "Highest and coldest, **ammonia** condenses into the **white** upper cloud layer."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Each gas has its own condensation temperature, and temperature falls with height in the troposphere, so each gas makes its cloud at its own altitude."
+    },
+    {
+     "type": "trick",
+     "text": "From the top down: Ammonia, Ammonium hydrosulfide, Water: 'A, AH, Water'."
+    },
+    {
+     "type": "trap",
+     "text": "The deepest cloud deck is water, not ammonia (p. 325). Ammonia clouds are white; the brown-red colour comes from ammonium hydrosulfide."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 325-326 and Figure 11.6"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_cloud_rise.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a bubble of gas rises from the hot depths. At about 100 km below the cloudtops white water clouds form, higher up brown and red ammonium hydrosulfide clouds, and at the top white ammonia clouds."
+    }
+   ]
+  },
+  {
+   "id": "compare-atmos",
+   "title": "Colder planets: deeper clouds and blue colours",
+   "slides": "Cosmic Perspective 11.1, p. 326, Figures 11.7-11.8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_four_profiles.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four columns comparing cloud depths. Jupiter: ammonia, ammonium hydrosulfide and water clouds near the top. Saturn: the same three, deeper and farther apart. Uranus and Neptune: methane clouds near the top, with the other layers buried too deep to see."
+     },
+     "title": "Saturn: the same decks, deeper",
+     "bullets": [
+      "The other giants' atmospheres are much like Jupiter's, but they get **colder with distance from the Sun**, which shifts the clouds.",
+      "**Saturn** has the same three cloud layers, but **deeper**: its water clouds lie about **200 km deeper** than Jupiter's.",
+      "Less light reaches those depths, and the light they reflect is dimmed by the air above, which probably explains Saturn's **more muted colours**. Weaker gravity also spreads its layers **farther apart**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_blue.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: sunlight of all colours enters a layer of methane gas. The red, orange and green rays stop partway, absorbed, while the blue ray reaches the methane-snow clouds and bounces back out to space."
+     },
+     "title": "Why Uranus and Neptune are blue",
+     "bullets": [
+      "They are so cold that any Jupiter-like cloud layers would be buried too deep to see, but high up some **methane** condenses into clouds of **methane snow**.",
+      "Methane **gas** absorbs **red** light and lets **blue** through; the methane **clouds** reflect that blue back to space."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_uranus_seasons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Uranus at four points around its 84-year orbit with its spin axis lying nearly in the orbit plane, so at times a pole faces the Sun. Notes: each hemisphere is sunlit for decades and then dark for decades, and the north began to see sunlight in 2007."
+     },
+     "title": "Why Uranus is paler",
+     "bullets": [
+      "Uranus is a **lighter blue** than Neptune, probably because more **smog-like haze** scatters sunlight high in its atmosphere.",
+      "The haze is likely a result of its **sideways tilt**: one hemisphere stays sunlit for decades, giving the gas time to react with solar UV.",
+      "Constant sunlight may also explain Uranus's surprisingly **hot thermosphere**, which reaches thousands of km above its clouds."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A cloud deck forms where it is cold enough for its gas to condense. On a colder planet that temperature is reached at a different height, so the decks move deeper."
+    },
+    {
+     "type": "trick",
+     "text": "Methane eats red, so blue is what's left."
+    },
+    {
+     "type": "trap",
+     "text": "Uranus and Neptune are blue because methane GAS absorbs red light, not because of oceans or ammonia (p. 326, Figure 11.8). Saturn's clouds are deeper than Jupiter's, not higher."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 326 and Figures 11.7-11.8"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_four_profiles.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four columns comparing cloud depths. Jupiter: ammonia, ammonium hydrosulfide and water clouds near the top. Saturn: the same three, deeper and farther apart. Uranus and Neptune: methane clouds near the top, with the other layers buried too deep to see."
+    },
+    {
+     "src": "img/jovian/gen_blue.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: sunlight of all colours enters a layer of methane gas. The red, orange and green rays stop partway, absorbed, while the blue ray reaches the methane-snow clouds and bounces back out to space."
+    },
+    {
+     "src": "img/jovian/gen_uranus_seasons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Uranus at four points around its 84-year orbit with its spin axis lying nearly in the orbit plane, so at times a pole faces the Sun. Notes: each hemisphere is sunlit for decades and then dark for decades, and the north began to see sunlight in 2007."
+    }
+   ]
+  },
+  {
+   "id": "bands",
+   "title": "Belts and zones",
+   "slides": "Cosmic Perspective 11.1, pp. 326-327, Figure 11.9",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_cells.webp",
+      "slide": "none (original diagram)",
+      "alt": "Earth and Jupiter side by side with small red up-arrows for rising air and blue down-arrows for sinking air along their edges: Earth has three circulation cells per hemisphere, while Jupiter's stronger Coriolis effect splits the flow into many alternating bands."
+     },
+     "title": "Many circulation cells",
+     "bullets": [
+      "On Earth, warm equatorial air rises and flows toward the poles, and the **Coriolis effect** splits that flow into a few smaller cells.",
+      "Jupiter is bigger and spins faster, so its Coriolis effect is much **stronger**: each circulation cell splits into **many alternating bands** of rising and falling air, the stripes we see."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_bands.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a slice through Jupiter's clouds. In zones, red arrows of rising air carry ammonia up to white ammonia clouds; blue specks of ammonia snow fall. In belts, blue arrows of sinking, ammonia-poor air leave a clear view down to the reddish ammonium hydrosulfide clouds."
+     },
+     "title": "White zones, dark belts",
+     "bullets": [
+      "Reddish **ammonium hydrosulfide** clouds cover the whole planet at lower altitude.",
+      "**Zones** (white bands) are rising air that carries ammonia high enough to form cold, white **ammonia clouds**.",
+      "**Belts** (darker bands) are falling air, where we see down to the lower, warmer **reddish clouds**.",
+      "Why no ammonia clouds in falling air? The ammonia that condensed in the rising air falls out as ammonia **snow**, so the air that spills over and sinks has little ammonia left. It is like desert air on Earth around 20°-30° latitude, dried out by rain near the equator."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_infrared.webp",
+      "slide": "none (original diagram)",
+      "alt": "Jupiter in visible light with white zones and reddish belts beside the same planet in infrared, where the belts glow bright because they are warmer and deeper and the zones are dim because they are cooler and higher."
+     },
+     "title": "The infrared check",
+     "bullets": [
+      "Warmer air emits more **infrared** light.",
+      "In an infrared photo the reddish **belts look brighter** than the white zones, confirming that the belts are warmer, deeper cloud levels and the zones are cooler, higher clouds."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Rising air cools until ammonia condenses (white clouds). Sinking air has already lost its ammonia as snow, so it stays clear and we see deeper."
+    },
+    {
+     "type": "trick",
+     "text": "Zones Zoom up (rising, white). Belts Bring air down (falling, dark)."
+    },
+    {
+     "type": "trap",
+     "text": "White zones are HIGHER and COOLER; dark belts are LOWER and WARMER, so belts are brighter in infrared (p. 326, Figure 11.9). The reddish deck is everywhere; belts are just where we can see it."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 326-327 and Figure 11.9"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_cells.webp",
+     "slide": "none (original diagram)",
+     "alt": "Earth and Jupiter side by side with small red up-arrows for rising air and blue down-arrows for sinking air along their edges: Earth has three circulation cells per hemisphere, while Jupiter's stronger Coriolis effect splits the flow into many alternating bands."
+    },
+    {
+     "src": "img/jovian/gen_bands.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a slice through Jupiter's clouds. In zones, red arrows of rising air carry ammonia up to white ammonia clouds; blue specks of ammonia snow fall. In belts, blue arrows of sinking, ammonia-poor air leave a clear view down to the reddish ammonium hydrosulfide clouds."
+    },
+    {
+     "src": "img/jovian/gen_infrared.webp",
+     "slide": "none (original diagram)",
+     "alt": "Jupiter in visible light with white zones and reddish belts beside the same planet in infrared, where the belts glow bright because they are warmer and deeper and the zones are dim because they are cooler and higher."
+    }
+   ]
+  },
+  {
+   "id": "storms",
+   "title": "Jupiter's winds and storms",
+   "slides": "Cosmic Perspective 11.1, pp. 327-328, Figures 11.10-11.11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_winds.webp",
+      "slide": "none (original diagram)",
+      "alt": "Alternating light and dark bands with arrows pointing east and west in turn, like jet streams. Notes: winds top 400 km per hour, are fastest at the equator and along band edges, and reach thousands of kilometres below the cloudtops."
+     },
+     "title": "Fast, deep winds",
+     "bullets": [
+      "Rising and falling air drives slow north-south winds, but Jupiter's strong **Coriolis effect** turns them into fast **east-west winds**.",
+      "Peak speeds top **400 km/hr**, making Earth's hurricane winds seem mild. They are strongest at the **equator** and at the boundaries between bands.",
+      "**Juno** showed the winds are not skin-deep: they blow **thousands of kilometres** below the cloudtops."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_grs.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: white tracers circle anticlockwise around the oval Great Red Spot, marked HIGH at its centre. Two Earths at the same scale fit across it. Notes: winds circle a high-pressure centre, unlike a hurricane, and the storm has been seen for about 200 years."
+     },
+     "title": "The Great Red Spot",
+     "bullets": [
+      "Jupiter's most famous feature is a giant storm **more than twice as wide as Earth**.",
+      "It is like a hurricane, except its winds circle a **high-pressure** region instead of a low-pressure one.",
+      "It has been seen for the whole **two centuries** that telescopes could detect it. It may last so long because there is **no solid surface** to drain its energy, as land does to storms on Earth.",
+      "Its red colour is a mystery; it may come from chemicals made when solar UV hits its high-altitude gas."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_ovals.webp",
+      "slide": "none (original diagram)",
+      "alt": "A brown oval and a white oval from above, then a side sketch: the brown oval is a low-pressure storm whose cloudtops dip below the reddish cloud deck, and the white oval is a high-pressure storm that rises above it, topped by ammonia clouds."
+     },
+     "title": "Brown ovals and white ovals",
+     "bullets": [
+      "Smaller storms keep forming. **Brown ovals** are **low-pressure** storms with their cloudtops deeper down.",
+      "**White ovals** are **high-pressure** storms topped with ammonia clouds."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_polar.webp",
+      "slide": "none (original diagram)",
+      "alt": "Looking down on Jupiter's north pole: eight swirling storms in a ring around the pole. Notes: there are no seasons because Jupiter has almost no axis tilt, and the poles are about as warm as the equator because of internal heat."
+     },
+     "title": "Polar storms and no seasons",
+     "bullets": [
+      "From its polar orbit, Juno found that the bands give way to **vast numbers of swirling storms near both poles**; at the north pole, eight storms form a ring around the pole.",
+      "Seasons are not the cause: Jupiter has **no appreciable axis tilt**, so it has **no seasons**.",
+      "Its poles are about as warm as its equator, probably because **internal heat** keeps the whole planet evenly warm."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Storms on Earth weaken over land because friction and lost moisture drain them. Jupiter has no land, so a big storm can keep going for centuries."
+    },
+    {
+     "type": "trick",
+     "text": "Red Spot = High. Brown ovals = Low. White ovals = High (white tops are high clouds)."
+    },
+    {
+     "type": "trap",
+     "text": "The Great Red Spot is a HIGH-pressure storm, unlike a hurricane's low (p. 327, Figure 11.10). It is more than twice Earth's width. Jupiter has no seasons because it has almost no tilt, not because of its distance (p. 328)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 327-328 and Figures 11.10-11.11"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_winds.webp",
+     "slide": "none (original diagram)",
+     "alt": "Alternating light and dark bands with arrows pointing east and west in turn, like jet streams. Notes: winds top 400 km per hour, are fastest at the equator and along band edges, and reach thousands of kilometres below the cloudtops."
+    },
+    {
+     "src": "img/jovian/gen_grs.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: white tracers circle anticlockwise around the oval Great Red Spot, marked HIGH at its centre. Two Earths at the same scale fit across it. Notes: winds circle a high-pressure centre, unlike a hurricane, and the storm has been seen for about 200 years."
+    },
+    {
+     "src": "img/jovian/gen_ovals.webp",
+     "slide": "none (original diagram)",
+     "alt": "A brown oval and a white oval from above, then a side sketch: the brown oval is a low-pressure storm whose cloudtops dip below the reddish cloud deck, and the white oval is a high-pressure storm that rises above it, topped by ammonia clouds."
+    },
+    {
+     "src": "img/jovian/gen_polar.webp",
+     "slide": "none (original diagram)",
+     "alt": "Looking down on Jupiter's north pole: eight swirling storms in a ring around the pole. Notes: there are no seasons because Jupiter has almost no axis tilt, and the poles are about as warm as the equator because of internal heat."
+    }
+   ]
+  },
+  {
+   "id": "other-weather",
+   "title": "Weather on Saturn, Uranus and Neptune",
+   "slides": "Cosmic Perspective 11.1, p. 328, Figure 11.11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_weather_compare.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four rows. Jupiter: bands, 400 km per hour winds, a centuries-old Great Red Spot and polar storms, no seasons. Saturn: bands, big storms, even faster winds, little seasonal change. Uranus: almost no features in 1986 but storms seen later. Neptune: bands, strong storms and a Great Dark Spot that lasted only 6 years."
+     },
+     "title": "Comparing the four",
+     "bullets": [
+      "**Saturn**, studied by Cassini for more than a decade, has bands of rising and falling air, fast east-west winds and occasional huge storms. Its winds are **even faster than Jupiter's**, which no one has explained yet.",
+      "Saturn's tilt is similar to Earth's, so seasons might be expected; some seasonal changes are seen, but **internal heat** keeps temperatures about the same all year and all over.",
+      "**Neptune** has bands like Jupiter and Saturn. Voyager 2 saw a high-pressure **Great Dark Spot** that looked like the Great Red Spot but **vanished within 6 years**. Neptune's tilt is like Earth's, yet internal heat means little seasonal change."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_uranus_seasons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Uranus at four points around its 84-year orbit with its spin axis lying nearly in the orbit plane, so at times a pole faces the Sun. Notes: each hemisphere is sunlit for decades and then dark for decades, and the north began to see sunlight in 2007."
+     },
+     "title": "Uranus wakes up",
+     "bullets": [
+      "Uranus and Neptune have each had only **one flyby** (Voyager 2) and are hard to study from afar.",
+      "In **1986**, Voyager 2 saw almost no clouds on Uranus, which was blamed on its low internal heat. Later **Hubble** and ground telescopes with **adaptive optics** saw **raging storms**.",
+      "These may come from **seasonal change**: with its extreme tilt and **84-year orbit**, Uranus's northern hemisphere began to see sunlight in **2007** after decades of night.",
+      "As of 2022, no new missions to Uranus or Neptune had been approved."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Internal heat warms a planet from inside evenly, which smooths out the temperature differences that seasons would otherwise create. Uranus has little internal heat, so sunlight and seasons dominate."
+    },
+    {
+     "type": "trick",
+     "text": "Saturn = Speedier winds. Neptune = Spot that Never stays. Uranus = Unexpected storms."
+    },
+    {
+     "type": "trap",
+     "text": "Saturn's winds are FASTER than Jupiter's (p. 328). Neptune's Great Dark Spot lasted only about 6 years, unlike the centuries-old Great Red Spot. Voyager 2's calm view of Uranus in 1986 was not the whole story."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 328 and Figure 11.11"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_weather_compare.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four rows. Jupiter: bands, 400 km per hour winds, a centuries-old Great Red Spot and polar storms, no seasons. Saturn: bands, big storms, even faster winds, little seasonal change. Uranus: almost no features in 1986 but storms seen later. Neptune: bands, strong storms and a Great Dark Spot that lasted only 6 years."
+    },
+    {
+     "src": "img/jovian/gen_uranus_seasons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Uranus at four points around its 84-year orbit with its spin axis lying nearly in the orbit plane, so at times a pole faces the Sun. Notes: each hemisphere is sunlit for decades and then dark for decades, and the north began to see sunlight in 2007."
+    }
+   ]
+  },
+  {
+   "id": "jupiter-mag",
+   "title": "Jupiter's giant magnetosphere",
+   "slides": "Cosmic Perspective 11.1, pp. 328-329, Figure 11.12",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_dynamo.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three boxes feeding one result: an electrically conducting fluid (Jupiter's thick metallic hydrogen), convection in that fluid, and at least moderately fast rotation (about 10 hours) together give Jupiter a field about 20,000 times as strong as Earth's."
+     },
+     "title": "A field made deep inside",
+     "bullets": [
+      "Earth's field comes from moving charged particles in its metallic outer core. The jovian planets also have **global magnetic fields** made by moving charged particles deep inside, and these create bubble-like **magnetospheres** that shield them from the **solar wind**.",
+      "A global field needs (1) an **electrically conducting fluid** inside, (2) **convection** in that fluid and (3) at least moderately **rapid rotation**.",
+      "Jupiter's thick **metallic hydrogen** layer plus its fast spin give it by far the strongest field: about **20,000 times** Earth's."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_jup_mag.webp",
+      "slide": "none (original diagram)",
+      "alt": "The solar wind flows from the left into a huge purple magnetosphere around a tiny Jupiter. An arrow marks about 3 million km, about 40 Jupiter radii, from the planet to the front edge. Note: if we could see it, it would look bigger than the full Moon in our sky."
+     },
+     "title": "Bigger than the full Moon in our sky",
+     "bullets": [
+      "Jupiter's magnetosphere starts deflecting the solar wind about **3 million km** (about **40 Jupiter radii**) in front of the planet.",
+      "If we could see it, it would look **larger than the full Moon** in our sky."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_io_torus.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: the moon Io circles Jupiter, puffing gas that builds a red donut-shaped ring along its orbit, the Io torus. Green rings near Jupiter's poles mark auroras. Notes: volcanic gas is ionized and feeds the torus, and the particles make auroras and radiation belts."
+     },
+     "title": "Io feeds the magnetosphere",
+     "bullets": [
+      "Nearly all the charged particles in Earth's magnetosphere come from the solar wind. Jupiter has an extra source: its volcanic moon **Io**.",
+      "Gas from Io's volcanoes is knocked loose by charged particles, **ionized**, and feeds a donut-shaped belt of charged particles along Io's orbit, the **Io torus**.",
+      "These particles help make Jupiter's **auroras** and intense **radiation belts** that can damage spacecraft."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_sputter.webp",
+      "slide": "none (original diagram)",
+      "alt": "Purple arrows of charged particles from the magnetosphere strike an icy moon's surface, and blue atoms fly off. Notes: each hit knocks off a few atoms or molecules, changing the surface and making a thin atmosphere like those of Mercury and the Moon."
+     },
+     "title": "The magnetosphere bombards the moons",
+     "bullets": [
+      "Charged particles strike the surfaces of Jupiter's **icy moons**, each one blasting away a few atoms or molecules.",
+      "This changes the surface material and can even create **thin atmospheres**, like those of Mercury and the Moon."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A field's strength depends on how much conducting fluid is churning and how fast it spins. Jupiter has a huge metallic hydrogen region and a 10-hour day, so it wins easily."
+    },
+    {
+     "type": "trick",
+     "text": "Field recipe: Conducting fluid + Convection + spin (C-C-S)."
+    },
+    {
+     "type": "trap",
+     "text": "Jupiter's field is made in metallic HYDROGEN, not an iron core (pp. 328-329). Most of the extra particles come from Io, not the solar wind. Its field is about 20,000 times Earth's, not 20 or 2,000."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 pp. 328-329 and Figure 11.12"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_dynamo.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three boxes feeding one result: an electrically conducting fluid (Jupiter's thick metallic hydrogen), convection in that fluid, and at least moderately fast rotation (about 10 hours) together give Jupiter a field about 20,000 times as strong as Earth's."
+    },
+    {
+     "src": "img/jovian/gen_jup_mag.webp",
+     "slide": "none (original diagram)",
+     "alt": "The solar wind flows from the left into a huge purple magnetosphere around a tiny Jupiter. An arrow marks about 3 million km, about 40 Jupiter radii, from the planet to the front edge. Note: if we could see it, it would look bigger than the full Moon in our sky."
+    },
+    {
+     "src": "img/jovian/gen_io_torus.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: the moon Io circles Jupiter, puffing gas that builds a red donut-shaped ring along its orbit, the Io torus. Green rings near Jupiter's poles mark auroras. Notes: volcanic gas is ionized and feeds the torus, and the particles make auroras and radiation belts."
+    },
+    {
+     "src": "img/jovian/gen_sputter.webp",
+     "slide": "none (original diagram)",
+     "alt": "Purple arrows of charged particles from the magnetosphere strike an icy moon's surface, and blue atoms fly off. Notes: each hit knocks off a few atoms or molecules, changing the surface and making a thin atmosphere like those of Mercury and the Moon."
+    }
+   ]
+  },
+  {
+   "id": "compare-mag",
+   "title": "Comparing jovian magnetospheres",
+   "slides": "Cosmic Perspective 11.1, p. 329, Figure 11.13",
+   "steps": [
+    {
+     "img": {
+      "src": "img/jovian/gen_field_source.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four planets with their conducting layer shown. Jupiter: thick metallic hydrogen, the strongest field. Saturn: thinner metallic hydrogen, weaker. Uranus and Neptune: no metallic hydrogen, fields from the core ocean of hydrogen compounds, rock and metal. All four beat Earth's field."
+     },
+     "title": "Where the fields come from",
+     "bullets": [
+      "The other giants have magnetic fields and magnetospheres too, much **weaker than Jupiter's** but still much **stronger than Earth's**.",
+      "Field strength depends mainly on the size of the conducting layer: **Saturn's** field is weaker because its **metallic hydrogen layer is thinner**.",
+      "**Uranus and Neptune** have **no metallic hydrogen**; their fairly weak fields must come from their core \"oceans\" of hydrogen compounds, rock and metal."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_bubble.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels with the same planet and field. Close to the Sun, dense solar wind arrows push the magnetic bubble small; far from the Sun, sparse arrows let it swell larger. Note: this is why Uranus and Neptune have medium-size magnetospheres despite weak fields."
+     },
+     "title": "Bubble size depends on the solar wind too",
+     "bullets": [
+      "A magnetosphere's size depends on the field strength **and** on how hard the **solar wind** pushes on it.",
+      "The solar wind is weaker farther from the Sun, so distant planets have bigger bubbles than they would closer in. That is why Uranus and Neptune have **moderate-size** magnetospheres despite weak fields.",
+      "No other magnetosphere is as full of charged particles as Jupiter's, mainly because no other giant has a moon like **Io**. Jupiter has the **brightest auroras**; the farther giants' auroras are progressively weaker."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/jovian/gen_tilts.webp",
+      "slide": "none (original diagram)",
+      "alt": "Each giant with a dashed spin axis and a red magnetic axis: Jupiter 10 degrees apart, Saturn 0, Uranus 60 and off-centre, and Neptune 46. Note: no one has explained Uranus and Neptune yet."
+     },
+     "title": "Tilted fields: an open puzzle",
+     "bullets": [
+      "Fields made inside rotating planets should line up with the spin axis. That holds for **Jupiter (10°)** and **Saturn (0°)**.",
+      "But **Uranus's** field is tipped a whopping **60°** and its centre is offset from the planet's centre, and **Neptune's** is tilted **46°**. No one has explained this yet."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A magnetosphere is a balance: the field pushes out, the solar wind pushes in. A weaker push far from the Sun lets even a modest field blow a big bubble."
+    },
+    {
+     "type": "trick",
+     "text": "Bubble size = field strength vs. solar wind push."
+    },
+    {
+     "type": "trap",
+     "text": "Uranus and Neptune have weak fields but medium-size magnetospheres, because the solar wind is weak out there (p. 329). Saturn's field is aligned (0°), Jupiter's tilted 10°; Uranus 60° and off-centre; Neptune 46°."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 11.1 p. 329 and Figure 11.13"
+   ],
+   "images": [
+    {
+     "src": "img/jovian/gen_field_source.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four planets with their conducting layer shown. Jupiter: thick metallic hydrogen, the strongest field. Saturn: thinner metallic hydrogen, weaker. Uranus and Neptune: no metallic hydrogen, fields from the core ocean of hydrogen compounds, rock and metal. All four beat Earth's field."
+    },
+    {
+     "src": "img/jovian/gen_bubble.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels with the same planet and field. Close to the Sun, dense solar wind arrows push the magnetic bubble small; far from the Sun, sparse arrows let it swell larger. Note: this is why Uranus and Neptune have medium-size magnetospheres despite weak fields."
+    },
+    {
+     "src": "img/jovian/gen_tilts.webp",
+     "slide": "none (original diagram)",
+     "alt": "Each giant with a dashed spin axis and a red magnetic axis: Jupiter 10 degrees apart, Saturn 0, Uranus 60 and off-centre, and Neptune 46. Note: no one has explained Uranus and Neptune yet."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "The four giants compared",
+  "head": [
+   "Planet",
+   "Mass (Earth = 1)",
+   "Density (g/cm³)",
+   "Day",
+   "Inside",
+   "Extra heat",
+   "Field tilt"
+  ],
+  "rows": [
+   [
+    "Jupiter",
+    "318",
+    "1.33",
+    "~10 h",
+    "Gas, liquid and thick metallic H over a mixed core",
+    "~2x (slow contraction)",
+    "10°"
+   ],
+   [
+    "Saturn",
+    "95",
+    "0.71",
+    "~10 h",
+    "Same layers; thinner, deeper metallic H",
+    "~2x (helium rain)",
+    "0°"
+   ],
+   [
+    "Uranus",
+    "14",
+    "1.24",
+    "16-17 h",
+    "Gaseous H over a layered core 'ocean'",
+    "Almost none",
+    "60° (off-centre)"
+   ],
+   [
+    "Neptune",
+    "17",
+    "1.67",
+    "16-17 h",
+    "Gaseous H over a layered core 'ocean'",
+    "~2x (contracting?)",
+    "46°"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "jov-c1",
+   "front": "Jupiter at a glance",
+   "back": "5.20 AU from the Sun, 318 Earth masses, density 1.33 g/cm³, mostly hydrogen and helium, a day of about 10 hours.",
+   "short": "Biggest giant, 318 Earth masses",
+   "src": "Ch11.1 p. 320 (Fig. 11.1)"
+  },
+  {
+   "id": "jov-c2",
+   "front": "Saturn at a glance",
+   "back": "9.54 AU from the Sun, 95 Earth masses, density 0.71 g/cm³ (less than water), mostly hydrogen and helium, a day of about 10 hours.",
+   "short": "95 Earth masses, 0.71 g/cm³",
+   "src": "Ch11.1 p. 320 (Fig. 11.1)"
+  },
+  {
+   "id": "jov-c3",
+   "front": "Uranus at a glance",
+   "back": "19.2 AU from the Sun, 14 Earth masses, density 1.24 g/cm³, mostly hydrogen compounds and rock with some hydrogen and helium, a day of 16-17 hours.",
+   "short": "14 Earth masses, ice-rich",
+   "src": "Ch11.1 p. 320 (Fig. 11.1)"
+  },
+  {
+   "id": "jov-c4",
+   "front": "Neptune at a glance",
+   "back": "30.1 AU from the Sun, 17 Earth masses, density 1.67 g/cm³ (the densest giant), mostly hydrogen compounds and rock, a day of 16-17 hours.",
+   "short": "17 Earth masses, densest giant",
+   "src": "Ch11.1 p. 320 (Fig. 11.1)"
+  },
+  {
+   "id": "jov-c5",
+   "front": "Discovery of Neptune",
+   "back": "Found in 1846 by Galle within about 1° of the spot Le Verrier calculated from the pull needed to explain Uranus's orbit: a triumph of Newton's law of gravitation.",
+   "short": "Predicted by math, 1846",
+   "src": "Ch11.1 p. 322 Special Topic"
+  },
+  {
+   "id": "jov-c6",
+   "front": "Measuring a jovian day",
+   "back": "Time the emissions from charged particles trapped in the magnetic field. The field is made deep inside, so this gives the interior's rotation; clouds are also pushed by winds.",
+   "short": "Track magnetic-field emissions",
+   "src": "Ch11.1 p. 319"
+  },
+  {
+   "id": "jov-c7",
+   "front": "Rotation varies with latitude",
+   "back": "On the jovian planets the equator completes a rotation in less time than the polar regions, possible because they are not solid. The Sun does the same.",
+   "short": "Equator turns faster",
+   "src": "Ch11.1 p. 319"
+  },
+  {
+   "id": "jov-c8",
+   "front": "Equatorial bulge",
+   "back": "The outward bulge at a planet's equator caused by fast rotation fighting gravity. Saturn's is biggest: about 10% wider at the equator than pole to pole.",
+   "short": "Spin-made equator bulge",
+   "src": "Ch11.1 p. 319"
+  },
+  {
+   "id": "jov-c9",
+   "front": "Failed star",
+   "back": "Nickname for Jupiter: it has a starlike hydrogen-helium makeup but only about 1/80 of the mass of the lowest-mass stars, too little to squeeze its core into fusion.",
+   "short": "Starlike mix, too little mass",
+   "src": "Ch11.1 p. 320"
+  },
+  {
+   "id": "jov-c10",
+   "front": "Pillow analogy",
+   "back": "Stacking pillows: each new one squashes those below, so height grows less and less. Likewise, adding mass to a jovian planet mostly raises its density, not its radius.",
+   "short": "More mass, more squeeze",
+   "src": "Ch11.1 pp. 320-321"
+  },
+  {
+   "id": "jov-c11",
+   "front": "Why is Jupiter denser than Saturn?",
+   "gloss": false,
+   "back": "Its much greater mass (over 3 times Saturn's) compresses its hydrogen and helium interior to a higher density, so it is only slightly wider than Saturn.",
+   "short": "Compression by its own gravity",
+   "src": "Ch11.1 p. 321"
+  },
+  {
+   "id": "jov-c12",
+   "front": "Maximum jovian radius",
+   "back": "Jupiter is close to the largest size a hydrogen-helium planet can have. Add much more mass and the planet shrinks, which is why the smallest stars are smaller than Jupiter.",
+   "short": "Jupiter is near it",
+   "src": "Ch11.1 p. 321"
+  },
+  {
+   "id": "jov-c13",
+   "front": "Ice-rich seeds",
+   "back": "Models say all four giants began as ice-rich planetesimals of about 10 Earth masses, which then pulled in different amounts of hydrogen and helium gas.",
+   "short": "About 10 Earth masses each",
+   "src": "Ch11.1 p. 321"
+  },
+  {
+   "id": "jov-c14",
+   "front": "Why did Uranus and Neptune capture less gas?",
+   "gloss": false,
+   "back": "Farther out, solid particles were more spread out, so their seeds took longer to grow and started capturing gas later. Capture stopped for all four when the solar wind cleared the gas.",
+   "short": "Late start, same stop",
+   "src": "Ch11.1 p. 321"
+  },
+  {
+   "id": "jov-c15",
+   "front": "Galileo probe",
+   "back": "Dropped into Jupiter in 1995 by the Galileo spacecraft; it survived only to about 200 km deep, about 0.3% of Jupiter's radius.",
+   "short": "Reached ~200 km in 1995",
+   "src": "Ch11.1 p. 322"
+  },
+  {
+   "id": "jov-c16",
+   "front": "Juno mission",
+   "back": "Jupiter orbiter since 2016. Its precise gravity measurements refined models of the interior, revealed a mixed core, showed the winds reach thousands of km deep, and found polar storms.",
+   "short": "Jupiter orbiter since 2016",
+   "src": "Ch11.1 pp. 319-328"
+  },
+  {
+   "id": "jov-c17",
+   "front": "Liquid hydrogen layer",
+   "back": "Starts about 7,000 km below Jupiter's cloudtops (about 2,000 K, 500,000 times Earth's surface pressure, 0.5 g/cm³), where hydrogen acts more like a liquid than a gas.",
+   "short": "From ~7,000 km down in Jupiter",
+   "src": "Ch11.1 p. 323"
+  },
+  {
+   "id": "jov-c18",
+   "front": "Metallic hydrogen",
+   "back": "Hydrogen squeezed (about 2 million times Earth's air pressure) into a compact form with free electrons, so it conducts electricity. It makes Jupiter's and Saturn's magnetic fields.",
+   "short": "Conducting, squeezed hydrogen",
+   "src": "Ch11.1 p. 323"
+  },
+  {
+   "id": "jov-c19",
+   "front": "Jupiter's core",
+   "back": "Dense hydrogen compounds, rock and metal probably dominate from about 60,000 km down: about 20,000 K, 100 million times sea-level pressure, about 25 g/cm³ (over twice lead).",
+   "short": "~20,000 K, ~25 g/cm³",
+   "src": "Ch11.1 p. 323"
+  },
+  {
+   "id": "jov-c20",
+   "front": "Juno's mixed-core finding",
+   "back": "Dense material is spread through much of Jupiter's inner half instead of sunk to the centre. Ideas: the core grew slowly while gas arrived, or a giant impact stirred it.",
+   "short": "Dense material mixed through",
+   "src": "Ch11.1 p. 323"
+  },
+  {
+   "id": "jov-c21",
+   "front": "Saturn's interior",
+   "back": "Same layers as Jupiter, but weaker gravity puts each phase change deeper: thicker gaseous and liquid hydrogen, a thinner, deeper metallic layer, a roughly Earth-size core near 10,000 K.",
+   "short": "Thinner, deeper metallic layer",
+   "src": "Ch11.1 pp. 323-324"
+  },
+  {
+   "id": "jov-c22",
+   "front": "Ice giants",
+   "back": "A name sometimes used for Uranus and Neptune: no liquid or metallic hydrogen, mostly hydrogen compounds, with hot (above ~5000 K), possibly liquid, differentiated cores.",
+   "short": "Uranus and Neptune",
+   "src": "Ch11.1 p. 324"
+  },
+  {
+   "id": "jov-c23",
+   "front": "Jupiter's internal heat",
+   "back": "Jupiter emits almost twice as much energy as it receives from the Sun. Earth's internal heat is only 0.005% of the sunlight reaching its surface.",
+   "short": "Emits ~2x what it receives",
+   "src": "Ch11.1 p. 324"
+  },
+  {
+   "id": "jov-c24",
+   "front": "Contraction heating",
+   "back": "A planet that slowly shrinks turns gravitational potential energy into thermal energy. The leading explanation for Jupiter's extra heat, and possibly Neptune's.",
+   "short": "Shrinking makes heat",
+   "src": "Ch11.1 p. 324"
+  },
+  {
+   "id": "jov-c25",
+   "front": "Helium rain",
+   "back": "In Saturn, helium may condense into droplets that sink through the interior, an ongoing differentiation that releases heat. Saturn's air has less helium than Jupiter's.",
+   "short": "Saturn's heat source",
+   "src": "Ch11.1 p. 324"
+  },
+  {
+   "id": "jov-c26",
+   "front": "Which giant has almost no internal heat?",
+   "gloss": false,
+   "back": "Uranus: it emits virtually no extra energy, while Jupiter, Saturn and Neptune each emit nearly twice what they receive from the Sun.",
+   "short": "Uranus",
+   "src": "Ch11.1 p. 324"
+  },
+  {
+   "id": "jov-c27",
+   "front": "Jovian hydrogen compounds",
+   "back": "Mostly water, methane and ammonia, plus traces of acetylene, ethane, propane and ammonium hydrosulfide. A tiny share of the gas, but they make all the clouds and colours.",
+   "short": "Make the clouds and colours",
+   "src": "Ch11.1 p. 325"
+  },
+  {
+   "id": "jov-c28",
+   "front": "Jupiter's stratosphere",
+   "back": "Layer above the clouds warmed to about 200 K by minor gases absorbing solar UV (Jupiter has no ozone). UV chemistry makes a smog-like haze.",
+   "short": "UV-warmed, ~200 K, hazy",
+   "src": "Ch11.1 p. 325"
+  },
+  {
+   "id": "jov-c29",
+   "front": "Jupiter's thermosphere",
+   "back": "Very thin gas high above the clouds heated to about 1000 K by solar X rays and energetic particles from the magnetosphere.",
+   "short": "~1000 K, X-ray heated",
+   "src": "Ch11.1 p. 325"
+  },
+  {
+   "id": "jov-c30",
+   "front": "Jupiter's three cloud layers",
+   "back": "From the top down: white ammonia clouds, brown-red ammonium hydrosulfide clouds, and white water clouds about 100 km below the highest cloudtops.",
+   "short": "Ammonia, NH₄SH, water",
+   "src": "Ch11.1 p. 325"
+  },
+  {
+   "id": "jov-c31",
+   "front": "Ammonium hydrosulfide clouds",
+   "back": "Jupiter's middle cloud layer (NH₄SH). They reflect brown and red light, for reasons no one fully knows, and cover the whole planet at lower altitude.",
+   "short": "Jupiter's red-brown deck",
+   "src": "Ch11.1 pp. 325-326"
+  },
+  {
+   "id": "jov-c32",
+   "front": "Methane clouds",
+   "back": "Clouds of methane snow high on Uranus and Neptune. Methane gas absorbs red light, and these clouds reflect the remaining blue light, making the planets blue.",
+   "short": "Why Uranus and Neptune are blue",
+   "src": "Ch11.1 p. 326"
+  },
+  {
+   "id": "jov-c33",
+   "front": "Zones",
+   "back": "Jupiter's bright, white bands: rising air carrying ammonia high enough to form cold ammonia clouds. Cooler and higher, so dimmer in infrared.",
+   "short": "Rising air, white clouds",
+   "src": "Ch11.1 p. 326"
+  },
+  {
+   "id": "jov-c34",
+   "front": "Belts",
+   "back": "Jupiter's darker bands: falling air depleted of ammonia, so we see down to the warmer, deeper reddish clouds. Brighter in infrared.",
+   "short": "Falling air, deeper red clouds",
+   "src": "Ch11.1 p. 326"
+  },
+  {
+   "id": "jov-c35",
+   "front": "Ammonia snow",
+   "back": "Ammonia ice flakes that fall from the high clouds in rising air, leaving the air that spills over and sinks with too little ammonia to form clouds.",
+   "short": "Dries out the sinking air",
+   "src": "Ch11.1 pp. 326-327"
+  },
+  {
+   "id": "jov-c36",
+   "front": "Great Red Spot",
+   "back": "Jupiter's giant high-pressure storm, more than twice as wide as Earth, seen for about two centuries. Its red colour is still not understood.",
+   "short": "High-pressure, centuries-old storm",
+   "src": "Ch11.1 p. 327"
+  },
+  {
+   "id": "jov-c37",
+   "front": "Great Dark Spot",
+   "back": "A large high-pressure storm on Neptune seen by Voyager 2, similar in structure to the Great Red Spot, that disappeared within 6 years.",
+   "short": "Neptune's short-lived storm",
+   "src": "Ch11.1 p. 328"
+  },
+  {
+   "id": "jov-c38",
+   "front": "Io torus",
+   "back": "A donut-shaped belt of charged particles roughly along Io's orbit, fed by gas from Io's volcanoes that escapes and is ionized.",
+   "short": "Io's donut of ions",
+   "src": "Ch11.1 p. 329"
+  },
+  {
+   "id": "jov-c39",
+   "front": "Jupiter's magnetic field",
+   "back": "About 20,000 times as strong as Earth's, made in its thick metallic hydrogen layer and helped by fast rotation. Its magnetosphere starts about 3 million km (40 Jupiter radii) in front of the planet.",
+   "short": "20,000x Earth's",
+   "src": "Ch11.1 pp. 328-329"
+  },
+  {
+   "id": "jov-c40",
+   "front": "Tilted magnetic fields",
+   "back": "Jupiter's field is tilted 10° to its spin axis and Saturn's 0°, but Uranus's is tipped 60° (and off-centre) and Neptune's 46°, which no one has explained.",
+   "short": "Uranus 60°, Neptune 46°",
+   "src": "Ch11.1 p. 329"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "jov-1",
+   "q": "Which property is shared by ALL four jovian planets?",
+   "options": [
+    "Rapid rotation compared with the terrestrial planets",
+    "A solid rocky surface below the clouds",
+    "Average densities higher than the terrestrial planets'",
+    "A composition dominated by rock and metal",
+    "Strong seasons caused by large axis tilts"
+   ],
+   "answer": 0,
+   "why": "All four are huge, low in density, made mostly of hydrogen, helium and hydrogen compounds, and rotate fast. None has a solid surface, and Jupiter has no seasons.",
+   "source": "Cosmic Perspective 11.1, p. 319"
+  },
+  {
+   "id": "jov-2",
+   "q": "Saturn's average density is 0.71 g/cm³. Which statement follows?",
+   "options": [
+    "Saturn is the densest jovian planet",
+    "Saturn is denser than Jupiter",
+    "Saturn has the same density as Uranus",
+    "Saturn is less dense than water",
+    "Saturn is mostly rock"
+   ],
+   "answer": 3,
+   "why": "Water is 1 g/cm³, so 0.71 g/cm³ is less than water. Jupiter is 1.33, Uranus 1.24 and Neptune 1.67.",
+   "source": "Cosmic Perspective 11.1, p. 320",
+   "img": {
+    "src": "img/jovian/gen_density.webp",
+    "alt": "Bar chart of average density in grams per cubic centimetre with a dashed line for water at 1: Jupiter 1.33, Saturn 0.71 (below the water line), Uranus 1.24 and Neptune 1.67."
+   }
+  },
+  {
+   "id": "jov-3",
+   "q": "Jupiter and Saturn are both mostly hydrogen and helium, yet Jupiter is denser. Why?",
+   "options": [
+    "Jupiter contains a much larger fraction of rock and metal",
+    "Jupiter's much larger mass compresses its interior more",
+    "Jupiter is closer to the Sun, so its gas is warmer",
+    "Jupiter has lost all of its helium",
+    "Jupiter's faster spin squeezes it at the poles"
+   ],
+   "answer": 1,
+   "why": "Like a tall pillow stack, extra mass mainly squeezes the layers below. Jupiter's seed is only about 3% of its mass versus about 10% for Saturn, so extra rock is not the reason.",
+   "source": "Cosmic Perspective 11.1, pp. 320-321",
+   "img": {
+    "src": "img/jovian/gen_pillows.webp",
+    "alt": "Animation: pillows drop onto a stack one at a time. The bottom pillows get squashed thinner as more are added on top, while the top pillow stays fluffy. A small graph beside it shows the stack height rising quickly at first and then levelling off."
+   }
+  },
+  {
+   "id": "jov-4",
+   "q": "Jupiter has more than three times Saturn's mass. How do their radii compare?",
+   "options": [
+    "They have exactly the same radius",
+    "Jupiter is about three times larger",
+    "Jupiter is about nine times larger",
+    "Saturn is larger than Jupiter",
+    "Jupiter is only slightly larger than Saturn"
+   ],
+   "answer": 4,
+   "why": "Extra mass compresses a hydrogen-helium planet, so Jupiter is only a little wider than Saturn despite the much greater mass.",
+   "source": "Cosmic Perspective 11.1, p. 321",
+   "img": {
+    "src": "img/jovian/gen_mass_radius.webp",
+    "alt": "Graph of radius against mass for a hydrogen and helium planet, on a stretched mass axis from 0.1 to 10 Jupiter masses. The curve rises, flattens near Jupiter and then falls. Saturn sits lower left. Notes: three times Saturn's mass gives only a little more width, and much more mass makes a planet smaller."
+   }
+  },
+  {
+   "id": "jov-5",
+   "q": "Why does Jupiter not shine by nuclear fusion like a star?",
+   "options": [
+    "It is too far from the Sun to be heated",
+    "It contains almost no hydrogen",
+    "Its mass is only about 1/80 of the lowest-mass stars, too little to squeeze its core enough",
+    "Its magnetic field blocks fusion",
+    "Its fast spin flings heat away from its core"
+   ],
+   "answer": 2,
+   "why": "Jupiter's composition is starlike, but its gravity is too weak to compress the interior to the temperature and density fusion needs.",
+   "source": "Cosmic Perspective 11.1, p. 320",
+   "img": {
+    "src": "img/jovian/gen_failed_star.webp",
+    "alt": "A stretched mass scale in Jupiter masses from 0.1 to 100: Saturn at 0.3, Jupiter at 1 and the lowest-mass stars at about 80. Jupiter has a starlike mix of hydrogen and helium but only about 1/80 of the mass needed, so its gravity cannot make its centre hot and dense enough for fusion."
+   }
+  },
+  {
+   "id": "jov-6",
+   "q": "Uranus and Neptune are made mostly of:",
+   "options": [
+    "Hydrogen compounds such as water, methane and ammonia, plus some rock and metal",
+    "Almost pure hydrogen and helium",
+    "Rock and iron, like Earth",
+    "Mostly helium",
+    "Carbon dioxide and nitrogen"
+   ],
+   "answer": 0,
+   "why": "They contain some hydrogen and helium, but in much smaller proportions than Jupiter and Saturn. Most of their mass is hydrogen compounds with smaller amounts of rock and metal.",
+   "source": "Cosmic Perspective 11.1, p. 320"
+  },
+  {
+   "id": "jov-7",
+   "q": "According to models, why do Uranus and Neptune hold much less hydrogen and helium than Jupiter and Saturn?",
+   "options": [
+    "Collisions with Jupiter and Saturn stripped them",
+    "Their seeds were only about 1 Earth mass",
+    "The Sun boiled their gas away",
+    "Their seeds grew more slowly farther out, so they began capturing gas later, and capture stopped for all four when the solar wind cleared the gas",
+    "Their magnetic fields repelled the gas"
+   ],
+   "answer": 3,
+   "why": "All four seeds were about 10 Earth masses. Distant seeds took longer to grow, so they had less time before the solar wind blew the remaining gas away.",
+   "source": "Cosmic Perspective 11.1, p. 321",
+   "img": {
+    "src": "img/jovian/gen_gas_race.webp",
+    "alt": "Animation: the Sun at left and four seeds in a cloud of gas. Jupiter's seed starts pulling in gas first and grows biggest, then Saturn, Uranus and Neptune start later. Then orange solar wind arrows sweep the leftover gas away and all four stop growing at once."
+   }
+  },
+  {
+   "id": "jov-8",
+   "q": "Uranus has about 14 Earth masses and probably grew from an ice-rich seed of about 10 Earth masses. Roughly what fraction of its mass is captured hydrogen and helium?",
+   "options": [
+    "About 3%",
+    "About one third",
+    "About 10%",
+    "About two thirds",
+    "About 97%"
+   ],
+   "answer": 1,
+   "why": "Captured gas is about 14 - 10 = 4 Earth masses, close to one third of 14. Two thirds is the seed's share; 3% and 10% are the seed shares of Jupiter and Saturn.",
+   "source": "Cosmic Perspective 11.1, p. 321"
+  },
+  {
+   "id": "jov-9",
+   "q": "Why do astronomers measure a jovian planet's rotation by timing emissions from particles trapped in its magnetic field instead of tracking clouds?",
+   "options": [
+    "Radio waves travel faster than visible light",
+    "Jovian clouds are invisible from Earth",
+    "The clouds do not rotate at all",
+    "The magnetic field spins faster than the planet",
+    "Winds move clouds too, while the field is made deep inside and turns with the interior"
+   ],
+   "answer": 4,
+   "why": "Clouds can appear to move because of wind as well as rotation. The magnetic field is generated deep in the interior, so its emissions reveal the interior's spin.",
+   "source": "Cosmic Perspective 11.1, p. 319",
+   "img": {
+    "src": "img/jovian/gen_spin_measure.webp",
+    "alt": "Jupiter with white wind arrows across its clouds, labelled: winds move clouds too, so clouds do not show the true spin. Purple magnetic field loops give off pulses, labelled: time the emissions of particles trapped in the field instead, which shows how fast the interior spins."
+   }
+  },
+  {
+   "id": "jov-10",
+   "q": "Why is Saturn the most flattened of the jovian planets?",
+   "options": [
+    "It rotates the most slowly",
+    "It has the strongest surface gravity",
+    "Its fast 10-hour rotation combined with its relatively weak surface gravity",
+    "Its rings pull its equator outward",
+    "It is the largest planet"
+   ],
+   "answer": 2,
+   "why": "The bulge depends on gravity pulling in versus rotation flinging out. Saturn spins fast and has fairly weak surface gravity, so it bulges about 10% at the equator.",
+   "source": "Cosmic Perspective 11.1, p. 319",
+   "img": {
+    "src": "img/jovian/gen_saturn_shape.webp",
+    "alt": "Saturn drawn as an oval inside a dashed circle. A red arrow marks the equator as about 10% wider than the blue pole-to-pole arrow. Notes: fast 10-hour spin plus fairly weak gravity cause it, and the bulge helps keep moons and rings lined up with the equator."
+   }
+  },
+  {
+   "id": "jov-11",
+   "q": "Which statement about Jupiter's interior is NOT correct?",
+   "options": [
+    "A solid rock surface lies just below the cloudtops",
+    "Hydrogen behaves like a liquid from about 7,000 km down",
+    "Metallic hydrogen conducts electricity",
+    "The core reaches about 20,000 K",
+    "The core is more than twice as dense as lead"
+   ],
+   "answer": 0,
+   "why": "Jupiter has no solid surface. Going down, hydrogen turns from gas to liquid to metallic form; the core is about 20,000 K and about 25 g/cm³.",
+   "source": "Cosmic Perspective 11.1, p. 323",
+   "img": {
+    "src": "img/jovian/gen_jupiter_interior.webp",
+    "alt": "Half cut-away of Jupiter with Earth at the same scale. Layers: gaseous hydrogen, liquid hydrogen from 7,000 km (2,000 K), metallic hydrogen from 14,000 km (5,000 K, 2 million times Earth's air pressure), dense material increasing from halfway, and the core at 60,000 km (20,000 K, 25 grams per cubic centimetre)."
+   }
+  },
+  {
+   "id": "jov-12",
+   "q": "What makes metallic hydrogen 'metallic'?",
+   "options": [
+    "It is made by nuclear fusion",
+    "It contains a lot of iron",
+    "It is frozen solid and shiny",
+    "Its electrons are free to move, so it conducts electricity",
+    "It is magnetized rock"
+   ],
+   "answer": 3,
+   "why": "Extreme pressure forces hydrogen into a compact form in which electrons move freely, as in everyday metals, so it conducts electricity well.",
+   "source": "Cosmic Perspective 11.1, p. 323",
+   "img": {
+    "src": "img/jovian/gen_metallic.webp",
+    "alt": "Animation: red hydrogen nuclei sit packed in rows while blue electrons drift freely among them. Notes: about 2 million times Earth's air pressure makes hydrogen metallic, and its free electrons carry current, so this layer makes Jupiter's magnetic field."
+   }
+  },
+  {
+   "id": "jov-13",
+   "q": "You descend to about 14,000 km below Jupiter's cloudtops. What would you measure?",
+   "options": [
+    "About 125 K and Earth-like air pressure",
+    "About 5,000 K, 2 million times Earth's surface pressure, density about that of water",
+    "About 20,000 K and 25 g/cm³",
+    "About 2,000 K and 0.0002 g/cm³",
+    "About 1000 K, heated by solar X rays"
+   ],
+   "answer": 1,
+   "why": "At about 20% of the way to the centre the density reaches about 1 g/cm³, the temperature about 5000 K and the pressure about 2 million times Earth's, enough to make hydrogen metallic.",
+   "source": "Cosmic Perspective 11.1, p. 323",
+   "img": {
+    "src": "img/jovian/gen_dive.webp",
+    "alt": "Animation: a red dot sinks down a depth column from the cloudtops to 60,000 km while a readout updates temperature, pressure, density and layer. It ends at the core: about 20,000 K, 100 million times sea-level pressure, 25 grams per cubic centimetre, more than twice the density of lead."
+   }
+  },
+  {
+   "id": "jov-14",
+   "q": "What did the Juno mission reveal about Jupiter's core?",
+   "options": [
+    "The core is made of metallic hydrogen only",
+    "Jupiter has no dense material at all",
+    "The core is a single sphere of pure iron",
+    "The core is hollow",
+    "Dense material is mixed through roughly the inner half rather than all sunk to the centre"
+   ],
+   "answer": 4,
+   "why": "Juno found the densest materials spread through much of the interior. Two ideas explain it: slow core growth while gas arrived, or a later giant impact.",
+   "source": "Cosmic Perspective 11.1, p. 323",
+   "img": {
+    "src": "img/jovian/gen_fuzzy_core.webp",
+    "alt": "Two half cut-aways of Jupiter. Left, what was expected: dense material sunk into a small compact core. Right, what Juno found: dense brown specks spread through about the inner half. Note: the core may have grown slowly while gas arrived, or a giant impact may have stirred it."
+   }
+  },
+  {
+   "id": "jov-15",
+   "q": "How does Saturn's interior compare with Jupiter's?",
+   "options": [
+    "A core about 10 times larger in mass",
+    "No metallic hydrogen at all",
+    "Thicker gaseous and liquid hydrogen layers and a thinner, deeper metallic hydrogen layer",
+    "Higher temperatures at every depth",
+    "A solid surface under the clouds"
+   ],
+   "answer": 2,
+   "why": "Saturn's lower mass and weaker gravity mean less weight above each level, so each phase change happens deeper.",
+   "source": "Cosmic Perspective 11.1, p. 323",
+   "img": {
+    "src": "img/jovian/gen_four_interiors.webp",
+    "alt": "Half cut-aways of the four giants, roughly to scale. Jupiter and Saturn have gaseous, liquid and metallic hydrogen around a core; Saturn's metallic layer is thinner and deeper. Uranus and Neptune have only gaseous hydrogen around a layer of water, methane and ammonia and a rock and metal centre."
+   }
+  },
+  {
+   "id": "jov-16",
+   "q": "Uranus's and Neptune's cores have about the same mass as Jupiter's but a larger radius. Why?",
+   "options": [
+    "Their lighter overlying layers compress them less",
+    "They contain more mass than Jupiter's core",
+    "They are made of metallic hydrogen",
+    "They are colder and so expand",
+    "They spin faster"
+   ],
+   "answer": 0,
+   "why": "With less weight pressing down, the cores are less compressed and so take up more space.",
+   "source": "Cosmic Perspective 11.1, p. 324",
+   "img": {
+    "src": "img/jovian/gen_ice_core.webp",
+    "alt": "Cut-away circle of Uranus or Neptune: an outer layer of hydrogen gas with helium, a thick middle layer of water, methane and ammonia, and a centre of rock and metal. Notes: no liquid or metallic hydrogen; the core is above about 5000 K and may be liquid; the cores are wider and have separated into layers."
+   }
+  },
+  {
+   "id": "jov-17",
+   "q": "Jupiter gives off almost twice as much energy as it gets from the Sun. What is the leading explanation?",
+   "options": [
+    "Heat left from formation alone",
+    "Helium rain in its interior",
+    "Nuclear fusion in its core",
+    "It is slowly contracting, turning gravitational potential energy into heat",
+    "Sunlight stored in its clouds"
+   ],
+   "answer": 3,
+   "why": "Leftover heat is not enough. Slow contraction is too gradual to measure but could easily supply the heat. Helium rain is the explanation for Saturn.",
+   "source": "Cosmic Perspective 11.1, p. 324",
+   "img": {
+    "src": "img/jovian/gen_contraction.webp",
+    "alt": "Animation: Jupiter shrinks a little inside a fixed outline while green arrows point inward. Beside it, gravitational potential energy turns into thermal energy. Note: too slow to measure, but enough to explain Jupiter's extra heat."
+   }
+  },
+  {
+   "id": "jov-18",
+   "q": "What evidence supports the idea of helium rain inside Saturn?",
+   "options": [
+    "Saturn's atmosphere has more helium than Jupiter's",
+    "Saturn's atmosphere has less helium than Jupiter's",
+    "Saturn emits no extra heat",
+    "Saturn's rings contain helium",
+    "Saturn is denser than Jupiter"
+   ],
+   "answer": 1,
+   "why": "If helium droplets have been raining down for billions of years, the upper layers should be helium-poor, and spacecraft found exactly that.",
+   "source": "Cosmic Perspective 11.1, p. 324",
+   "img": {
+    "src": "img/jovian/gen_helium_rain.webp",
+    "alt": "Animation: blue droplets fall through a cutaway slab of Saturn's interior from the helium-poor upper layers toward the deeper interior. Notes: helium condenses into droplets, the dense droplets sink and release energy, and Saturn's atmosphere has less helium than Jupiter's."
+   }
+  },
+  {
+   "id": "jov-19",
+   "q": "Which jovian planet emits virtually no more energy than it receives from the Sun?",
+   "options": [
+    "Jupiter",
+    "Saturn",
+    "None; all emit about twice as much",
+    "Neptune",
+    "Uranus"
+   ],
+   "answer": 4,
+   "why": "Uranus has no helium rain and lost most of its formation heat. Jupiter, Saturn and Neptune each emit nearly twice what they receive.",
+   "source": "Cosmic Perspective 11.1, p. 324",
+   "img": {
+    "src": "img/jovian/gen_heat_budget.webp",
+    "alt": "Bars comparing energy given off with sunlight absorbed: Jupiter about twice (slow contraction), Saturn about twice (helium rain), Uranus about the same, with almost no extra heat, and Neptune about twice (perhaps contracting, not explained)."
+   }
+  },
+  {
+   "id": "jov-20",
+   "q": "Going down from the top, Jupiter's three main cloud layers are:",
+   "options": [
+    "Methane, ammonia, water",
+    "Water, ammonium hydrosulfide, ammonia",
+    "Ammonia, ammonium hydrosulfide, water",
+    "Ammonium hydrosulfide, ammonia, water",
+    "Water, ammonia, methane"
+   ],
+   "answer": 2,
+   "why": "Rising gas cools: water condenses first (deepest, about 100 km below the cloudtops), then ammonium hydrosulfide, and ammonia at the top.",
+   "source": "Cosmic Perspective 11.1, p. 325",
+   "img": {
+    "src": "img/jovian/gen_cloud_rise.webp",
+    "alt": "Animation: a bubble of gas rises from the hot depths. At about 100 km below the cloudtops white water clouds form, higher up brown and red ammonium hydrosulfide clouds, and at the top white ammonia clouds."
+   }
+  },
+  {
+   "id": "jov-21",
+   "q": "Jupiter's stratosphere exists even though Jupiter has no ozone. Why?",
+   "options": [
+    "A few minor gases absorb solar ultraviolet light and warm it",
+    "Its internal heat rises into it",
+    "Ammonia clouds trap infrared there",
+    "The solar wind heats it directly",
+    "Lightning heats the upper air"
+   ],
+   "answer": 0,
+   "why": "A stratosphere needs a gas that absorbs UV. Ozone does it on Earth; on Jupiter some minor ingredients absorb UV, peaking near 200 K and making a smoggy haze.",
+   "source": "Cosmic Perspective 11.1, p. 325",
+   "img": {
+    "src": "img/jovian/gen_jup_profile.webp",
+    "alt": "Sketch graph of temperature against height for Jupiter. In the troposphere the temperature rises with depth, passing ammonia, ammonium hydrosulfide and water clouds. Above, the stratosphere warms to about 200 K and the thermosphere climbs toward about 1000 K."
+   }
+  },
+  {
+   "id": "jov-22",
+   "q": "Why do Uranus and Neptune look blue?",
+   "options": [
+    "Their auroras glow blue",
+    "Their oceans reflect blue sky",
+    "Ammonia ice is blue",
+    "Methane gas absorbs red light and methane clouds reflect the remaining blue light",
+    "Their thermospheres are very hot"
+   ],
+   "answer": 3,
+   "why": "Methane gas absorbs red light and transmits blue; clouds of methane snow then reflect the blue light back to space.",
+   "source": "Cosmic Perspective 11.1, p. 326",
+   "img": {
+    "src": "img/jovian/gen_blue.webp",
+    "alt": "Animation: sunlight of all colours enters a layer of methane gas. The red, orange and green rays stop partway, absorbed, while the blue ray reaches the methane-snow clouds and bounces back out to space."
+   }
+  },
+  {
+   "id": "jov-23",
+   "q": "Why are Saturn's colours more subdued than Jupiter's?",
+   "options": [
+    "It has no ammonium hydrosulfide",
+    "Its cloud layers lie deeper, so less light reaches them and the reflected light is dimmed by the air above",
+    "It has no hydrogen compounds",
+    "It spins more slowly",
+    "Its rings block the light"
+   ],
+   "answer": 1,
+   "why": "Saturn is colder, so each cloud deck forms deeper (its water clouds about 200 km deeper than Jupiter's).",
+   "source": "Cosmic Perspective 11.1, p. 326",
+   "img": {
+    "src": "img/jovian/gen_four_profiles.webp",
+    "alt": "Four columns comparing cloud depths. Jupiter: ammonia, ammonium hydrosulfide and water clouds near the top. Saturn: the same three, deeper and farther apart. Uranus and Neptune: methane clouds near the top, with the other layers buried too deep to see."
+   }
+  },
+  {
+   "id": "jov-24",
+   "q": "Looking into one of Jupiter's dark belts, what would you see?",
+   "options": [
+    "Bright white water clouds",
+    "Rising air topped with white ammonia clouds",
+    "A solid surface",
+    "Methane clouds",
+    "Sinking air with little ammonia, so you see down to the reddish ammonium hydrosulfide clouds"
+   ],
+   "answer": 4,
+   "why": "Belts are falling air that lost its ammonia as snow, so no ammonia clouds form and we see the lower, warmer reddish deck.",
+   "source": "Cosmic Perspective 11.1, p. 326",
+   "img": {
+    "src": "img/jovian/gen_bands.webp",
+    "alt": "Animation: a slice through Jupiter's clouds. In zones, red arrows of rising air carry ammonia up to white ammonia clouds; blue specks of ammonia snow fall. In belts, blue arrows of sinking, ammonia-poor air leave a clear view down to the reddish ammonium hydrosulfide clouds."
+   }
+  },
+  {
+   "id": "jov-25",
+   "q": "Which statement about the Great Red Spot is NOT correct?",
+   "options": [
+    "It has been seen for about two centuries",
+    "It is more than twice as wide as Earth",
+    "It is a low-pressure storm like a hurricane",
+    "It may last so long because Jupiter has no solid surface",
+    "Its red colour is not fully explained"
+   ],
+   "answer": 2,
+   "why": "The Great Red Spot's winds circle a HIGH-pressure region, the reverse of a hurricane.",
+   "source": "Cosmic Perspective 11.1, p. 327",
+   "img": {
+    "src": "img/jovian/gen_grs.webp",
+    "alt": "Animation: white tracers circle anticlockwise around the oval Great Red Spot, marked HIGH at its centre. Two Earths at the same scale fit across it. Notes: winds circle a high-pressure centre, unlike a hurricane, and the storm has been seen for about 200 years."
+   }
+  },
+  {
+   "id": "jov-26",
+   "q": "Jupiter has no seasons. Why?",
+   "options": [
+    "It has no appreciable axis tilt",
+    "It is too far from the Sun",
+    "Its orbit is perfectly circular",
+    "Its clouds block all sunlight",
+    "Its day is too short"
+   ],
+   "answer": 0,
+   "why": "Seasons come from axis tilt, and Jupiter's tilt is negligible. Its poles are about as warm as its equator, kept warm by internal heat.",
+   "source": "Cosmic Perspective 11.1, p. 328",
+   "img": {
+    "src": "img/jovian/gen_polar.webp",
+    "alt": "Looking down on Jupiter's north pole: eight swirling storms in a ring around the pole. Notes: there are no seasons because Jupiter has almost no axis tilt, and the poles are about as warm as the equator because of internal heat."
+   }
+  },
+  {
+   "id": "jov-27",
+   "q": "A planet has a thick layer of electrically conducting fluid that convects, but the planet barely rotates. According to the rules for global magnetic fields, it would:",
+   "options": [
+    "Get its field from the solar wind",
+    "Have a field 20,000 times Earth's",
+    "Have a strong field because conducting fluid alone is enough",
+    "Probably lack a strong global field, because at least moderately rapid rotation is also needed",
+    "Have a field only if it has an iron core"
+   ],
+   "answer": 3,
+   "why": "A global field needs all three: a conducting fluid, convection in it, and at least moderately rapid rotation. Jupiter has all three.",
+   "source": "Cosmic Perspective 11.1, pp. 328-329",
+   "img": {
+    "src": "img/jovian/gen_dynamo.webp",
+    "alt": "Three boxes feeding one result: an electrically conducting fluid (Jupiter's thick metallic hydrogen), convection in that fluid, and at least moderately fast rotation (about 10 hours) together give Jupiter a field about 20,000 times as strong as Earth's."
+   }
+  },
+  {
+   "id": "jov-28",
+   "q": "Why does Jupiter's magnetosphere hold far more charged particles than Earth's?",
+   "options": [
+    "The solar wind is stronger at Jupiter",
+    "Its volcanic moon Io supplies extra particles",
+    "Jupiter's auroras make particles",
+    "Its rings release charged dust",
+    "It has no atmosphere to absorb them"
+   ],
+   "answer": 1,
+   "why": "Earth's particles come almost entirely from the solar wind. Gas from Io's volcanoes is ionized and feeds the Io torus.",
+   "source": "Cosmic Perspective 11.1, p. 329",
+   "img": {
+    "src": "img/jovian/gen_io_torus.webp",
+    "alt": "Animation: the moon Io circles Jupiter, puffing gas that builds a red donut-shaped ring along its orbit, the Io torus. Green rings near Jupiter's poles mark auroras. Notes: volcanic gas is ionized and feeds the torus, and the particles make auroras and radiation belts."
+   }
+  },
+  {
+   "id": "jov-29",
+   "q": "Uranus and Neptune have fairly weak magnetic fields, yet moderate-size magnetospheres. Why?",
+   "options": [
+    "Their fast rotation stretches them",
+    "Their fields are actually stronger than Jupiter's",
+    "Io-like moons inflate them",
+    "They have thick metallic hydrogen layers",
+    "The solar wind pushes more weakly far from the Sun, so their bubbles can be larger"
+   ],
+   "answer": 4,
+   "why": "Magnetosphere size depends on field strength and solar wind pressure; the solar wind is weaker at greater distances.",
+   "source": "Cosmic Perspective 11.1, p. 329",
+   "img": {
+    "src": "img/jovian/gen_bubble.webp",
+    "alt": "Two panels with the same planet and field. Close to the Sun, dense solar wind arrows push the magnetic bubble small; far from the Sun, sparse arrows let it swell larger. Note: this is why Uranus and Neptune have medium-size magnetospheres despite weak fields."
+   }
+  },
+  {
+   "id": "jov-30",
+   "q": "Which planet's magnetic field is tilted about 60° to its rotation axis and offset from its centre?",
+   "options": [
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune",
+    "Earth"
+   ],
+   "answer": 2,
+   "why": "Uranus's field is tipped 60° and off-centre; Neptune's is tilted 46°, Jupiter's 10° and Saturn's 0°. No one has explained Uranus and Neptune yet.",
+   "source": "Cosmic Perspective 11.1, p. 329",
+   "img": {
+    "src": "img/jovian/gen_tilts.webp",
+    "alt": "Each giant with a dashed spin axis and a red magnetic axis: Jupiter 10 degrees apart, Saturn 0, Uranus 60 and off-centre, and Neptune 46. Note: no one has explained Uranus and Neptune yet."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Down into Jupiter",
+   "prompt": "Put Jupiter's layers in order from the centre at the bottom to the cloudtops at the top.",
+   "why": "From the centre out: a core of hydrogen compounds, rock and metal, then metallic hydrogen, then liquid hydrogen (from about 7,000 km down), then gaseous hydrogen up to the cloudtops.",
+   "topLabel": "Top: cloudtops",
+   "bottomLabel": "Bottom: centre",
+   "layers": [
+    {
+     "name": "Core (rock, metal, H compounds)",
+     "color": "#8c6450"
+    },
+    {
+     "name": "Metallic hydrogen",
+     "color": "#8b7fb0"
+    },
+    {
+     "name": "Liquid hydrogen",
+     "color": "#c9a46e"
+    },
+    {
+     "name": "Gaseous hydrogen",
+     "color": "#e6d5b8"
+    }
+   ]
+  },
+  {
+   "title": "Jupiter's air, bottom to top",
+   "prompt": "Order these from the lowest altitude at the bottom to the highest at the top.",
+   "why": "Water clouds are deepest (about 100 km below the highest cloudtops), then ammonium hydrosulfide, then ammonia clouds at the top of the troposphere; above the clouds lie the hazy stratosphere and then the hot thermosphere.",
+   "topLabel": "Highest",
+   "bottomLabel": "Lowest",
+   "layers": [
+    {
+     "name": "Water clouds",
+     "color": "#93c5fd"
+    },
+    {
+     "name": "Ammonium hydrosulfide clouds",
+     "color": "#b45309"
+    },
+    {
+     "name": "Ammonia clouds",
+     "color": "#e5e7eb"
+    },
+    {
+     "name": "Stratosphere (UV haze)",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "Thermosphere (~1000 K)",
+     "color": "#4338ca"
+    }
+   ]
+  },
+  {
+   "title": "Density of the giants",
+   "prompt": "Order the planets by average density, lowest at the bottom.",
+   "why": "Saturn 0.71, Uranus 1.24, Jupiter 1.33 and Neptune 1.67 g/cm³. Saturn is less dense than water; compression lifts Jupiter above Uranus.",
+   "topLabel": "Densest",
+   "bottomLabel": "Least dense",
+   "layers": [
+    {
+     "name": "Saturn",
+     "color": "#ba985c"
+    },
+    {
+     "name": "Uranus",
+     "color": "#62a8b4"
+    },
+    {
+     "name": "Jupiter",
+     "color": "#a0643e"
+    },
+    {
+     "name": "Neptune",
+     "color": "#2c48a0"
+    }
+   ]
+  },
+  {
+   "title": "Mass of the giants",
+   "prompt": "Order the planets by mass, smallest at the bottom.",
+   "why": "Uranus 14, Neptune 17, Saturn 95 and Jupiter 318 Earth masses.",
+   "topLabel": "Most massive",
+   "bottomLabel": "Least massive",
+   "layers": [
+    {
+     "name": "Uranus",
+     "color": "#62a8b4"
+    },
+    {
+     "name": "Neptune",
+     "color": "#2c48a0"
+    },
+    {
+     "name": "Saturn",
+     "color": "#ba985c"
+    },
+    {
+     "name": "Jupiter",
+     "color": "#a0643e"
+    }
+   ]
+  },
+  {
+   "title": "Magnetic field strength",
+   "prompt": "Order from the weakest magnetic field at the bottom to the strongest at the top.",
+   "why": "Earth's is weakest. Uranus and Neptune have no metallic hydrogen and fairly weak fields; Saturn's thinner metallic layer gives a stronger field; Jupiter's is about 20,000 times Earth's.",
+   "topLabel": "Strongest",
+   "bottomLabel": "Weakest",
+   "layers": [
+    {
+     "name": "Earth",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Uranus and Neptune",
+     "color": "#62a8b4"
+    },
+    {
+     "name": "Saturn",
+     "color": "#ba985c"
+    },
+    {
+     "name": "Jupiter",
+     "color": "#a0643e"
+    }
+   ]
+  },
+  {
+   "title": "How the giants got their gas",
+   "prompt": "Put the steps in order, first at the bottom.",
+   "why": "Ices condensed in the cold outer nebula, built seeds of about 10 Earth masses, whose gravity pulled in hydrogen and helium; the solar wind then cleared the gas and stopped growth for all four.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Hydrogen compounds condense into ice",
+     "color": "#93c5fd"
+    },
+    {
+     "name": "Ice-rich seeds grow to ~10 Earth masses",
+     "color": "#8c6450"
+    },
+    {
+     "name": "Seeds pull in hydrogen and helium",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "Solar wind clears the leftover gas",
+     "color": "#ca8a04"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Jupiter and Saturn, or Uranus and Neptune?",
+   "prompt": "Sort each fact into the pair it describes.",
+   "buckets": [
+    "Jupiter and Saturn",
+    "Uranus and Neptune"
+   ],
+   "items": [
+    {
+     "text": "Made mostly of hydrogen and helium",
+     "b": 0
+    },
+    {
+     "text": "Have a layer of metallic hydrogen",
+     "b": 0
+    },
+    {
+     "text": "Days of about 10 hours",
+     "b": 0
+    },
+    {
+     "text": "Ammonia, NH₄SH and water cloud decks visible",
+     "b": 0
+    },
+    {
+     "text": "Ice-rich seed is a small share of the mass",
+     "b": 0
+    },
+    {
+     "text": "Made mostly of hydrogen compounds",
+     "b": 1
+    },
+    {
+     "text": "Days of 16-17 hours",
+     "b": 1
+    },
+    {
+     "text": "Blue from methane",
+     "b": 1
+    },
+    {
+     "text": "Fields made in core 'oceans'",
+     "b": 1
+    },
+    {
+     "text": "Cores separated into layers",
+     "b": 1
+    }
+   ],
+   "why": "Jupiter and Saturn are big, hydrogen-helium worlds with metallic hydrogen and fast days. Uranus and Neptune are smaller, mostly hydrogen compounds, blue from methane, with differentiated core oceans that make their fields."
+  },
+  {
+   "title": "Which planet?",
+   "prompt": "Sort each fact into the planet it describes.",
+   "buckets": [
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune"
+   ],
+   "items": [
+    {
+     "text": "Great Red Spot",
+     "b": 0
+    },
+    {
+     "text": "Io torus",
+     "b": 0
+    },
+    {
+     "text": "Field 20,000 times Earth's",
+     "b": 0
+    },
+    {
+     "text": "Less dense than water",
+     "b": 1
+    },
+    {
+     "text": "Helium rain",
+     "b": 1
+    },
+    {
+     "text": "Most squashed by spin",
+     "b": 1
+    },
+    {
+     "text": "Almost no internal heat",
+     "b": 2
+    },
+    {
+     "text": "Field tipped 60° and off-centre",
+     "b": 2
+    },
+    {
+     "text": "Storms appeared as seasons changed",
+     "b": 2
+    },
+    {
+     "text": "Great Dark Spot",
+     "b": 3
+    },
+    {
+     "text": "Densest giant (1.67 g/cm³)",
+     "b": 3
+    },
+    {
+     "text": "Field tilted 46°",
+     "b": 3
+    }
+   ],
+   "why": "Jupiter: Great Red Spot, Io torus, the strongest field. Saturn: 0.71 g/cm³, helium rain, the biggest bulge. Uranus: no extra heat, 60° tilted field, new seasonal storms. Neptune: Great Dark Spot, 1.67 g/cm³, 46° field."
+  },
+  {
+   "title": "High or low pressure?",
+   "prompt": "Sort each storm by the pressure at its centre.",
+   "buckets": [
+    "High pressure",
+    "Low pressure"
+   ],
+   "items": [
+    {
+     "text": "Great Red Spot",
+     "b": 0
+    },
+    {
+     "text": "White ovals on Jupiter",
+     "b": 0
+    },
+    {
+     "text": "Neptune's Great Dark Spot",
+     "b": 0
+    },
+    {
+     "text": "Brown ovals on Jupiter",
+     "b": 1
+    },
+    {
+     "text": "Hurricanes on Earth",
+     "b": 1
+    }
+   ],
+   "why": "The Great Red Spot, white ovals and the Great Dark Spot are high-pressure storms; brown ovals are low-pressure storms with deeper cloudtops, like Earth's hurricanes."
+  }
+ ],
+ "calc": [
+  "jov-gas",
+  "jov-spin"
+ ],
+ "sourceNotes": [
+  "Notes follow The Cosmic Perspective 10th ed., section 11.1 (pp. 318-329), in the order of its four learning goals, plus the Chapter 11 summary of key concepts. There are no teacher slides for this unit.",
+  "Special Topic p. 322 (discovery of Uranus and Neptune) is used for one step.",
+  "All pictures are original diagrams (gen_*) drawn for this unit; no book figures are copied. Sketch graphs (temperature profiles, mass-radius curve) show the shape of the book's ideas, not exact data.",
+  "Planet radii used to draw the to-scale picture (Jupiter 11.0, Saturn 9.1, Uranus 4.0, Neptune 3.9 Earth radii) are general knowledge, not from the section."
+ ]
+}

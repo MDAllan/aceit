@@ -600,6 +600,25 @@ const CALC = {
       wrong: uniq(ans, [`about ${num(k * 7)} days`, `about ${num(k * 4)} days`, `about ${num(k * 7 / 2)} days`, `about ${num(k / 4)} days`, `about ${num(d * 2)} days`]),
       why: `${k} orbits is ${k} / 4 = ${k / 4} groups of 4 orbits, and each group takes about 7 days: ${k / 4} x 7 = ${num(d)} days.` };
   },
+  "jov-gas"() {
+    const M = rnd([14, 20, 25, 40, 50, 80, 95, 100, 200, 318]), seed = 10, gas = Math.round((M - seed) / M * 100), core = Math.round(seed / M * 100);
+    if (rnd([0, 1]) === 0) {
+      const ans = `${gas}%`;
+      return { q: `A giant planet has ${M} Earth masses. It grew from an ice-rich seed of about ${seed} Earth masses and captured the rest as hydrogen and helium gas. About what percent of its mass is captured gas?`, ans,
+        wrong: uniq(ans, [`${core}%`, `${M - seed}%`, `${Math.min(99, gas + 15)}%`, `${Math.max(1, gas - 20)}%`, `${Math.round(M / (M + seed) * 100)}%`, "50%"]),
+        why: `Captured gas = ${M} - ${seed} = ${M - seed} Earth masses, and ${M - seed} / ${M} is about ${gas}%. The seed is the other ${100 - gas}%.` };
+    }
+    const ans = `${core}%`;
+    return { q: `A giant planet has ${M} Earth masses and grew from an ice-rich seed of about ${seed} Earth masses. About what percent of its mass is the original seed?`, ans,
+      wrong: uniq(ans, [`${gas}%`, `${seed}%`, `${Math.round(M / seed)}%`, `${Math.min(99, core * 2 + 5)}%`, `${Math.max(1, Math.round(core / 3))}%`, "50%"]),
+      why: `Seed fraction = ${seed} / ${M}, about ${core}%. (For Jupiter, 10 / 318 is about 3%; for Saturn, 10 / 95 is about 10%.)` };
+  },
+  "jov-spin"() {
+    const [k, P] = rnd([[5, 12], [10, 12], [4, 16], [5, 10], [10, 10], [6, 16], [8, 12], [4, 12], [11, 10], [9, 12]]), v = k * 24 / P, ans = `${num(v)} times faster`;
+    return { q: `A giant planet's radius is ${k} times Earth's and it spins once every ${P} hours (Earth: 24 hours). A point on its equator moves how many times faster than a point on Earth's equator?`, ans,
+      wrong: uniq(ans, [`${num(k)} times faster`, `${num(24 / P)} times faster`, `${num(k * P / 24)} times faster`, `${num(v * 2)} times faster`, `${num(k * k * 24 / P)} times faster`]),
+      why: `Equator speed = circumference / period, and circumference is proportional to radius. So the ratio is (${k}) x (24 / ${P}) = ${num(v)}. A big radius and a short day both make it faster.` };
+  },
   kepler() {
     const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
@@ -632,4 +651,6 @@ const HINTS = {
   "res-barrels": "1 barrel (bbl) of oil = 42 gallons = 159 litres.",
   "res-lifetime": "Lifetime (years) = calculated reserves / amount used each year.",
   "moon-resonance": "In the same time: Io 4 orbits, Europa 2, Ganymede 1 (about 7 days). Inner moons orbit faster.",
+  "jov-gas": "Captured gas = total mass - seed mass (about 10 Earth masses). Divide each part by the total to get a percent.",
+  "jov-spin": "Equator speed = circumference / period. Circumference grows with radius, so speed ratio = radius ratio x (24 h / period).",
 };
