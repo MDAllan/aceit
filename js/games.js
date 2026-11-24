@@ -479,6 +479,24 @@ const CALC = {
       wrong: uniq(ans, [`${(+(kpa / 100 * 10).toFixed(1))} atm`, `${(+(atm * 101.325).toFixed(0))} atm`, `${(+(kpa / 14.7).toFixed(2))} atm`, `${(+(atm / 10).toFixed(3))} atm`]),
       why: `1 atm = 101.325 kPa, so ${kpa} kPa / 101.325 = ${(+atm.toFixed(2))} atm. Calgary, about 1 km up, sits near 89 kPa, roughly 0.88 atm.` };
   },
+  "stm-discharge"() {
+    const w = rnd([4, 5, 8, 10, 12, 20]), d = rnd([0.5, 1, 1.5, 2, 3]), v = rnd([0.5, 1, 1.5, 2, 3]), A = w * d, Q = A * v, ans = `${num(Q)} m^3/s`;
+    return { q: `A stream channel is ${w} m wide and ${num(d)} m deep, and the water flows at ${num(v)} m/s. Its discharge is:`, ans,
+      wrong: uniq(ans, [`${num(A)} m^3/s`, `${num(w * v)} m^3/s`, `${num(w + d + v)} m^3/s`, `${num(Q * 2)} m^3/s`, `${num(A / v)} m^3/s`, `${num(Q / 2)} m^3/s`]),
+      why: `Discharge = cross-sectional area x velocity. Area = ${w} m x ${num(d)} m = ${num(A)} m^2, so Q = ${num(A)} x ${num(v)} = ${num(Q)} m^3/s.` };
+  },
+  "stm-recurrence"() {
+    if (Math.random() < 0.5) {
+      const ri = rnd([2, 4, 5, 10, 20, 25, 50, 100, 200, 500]), p = 100 / ri, ans = `${num(p)}%`;
+      return { q: `A ${ri}-year flood has what chance of happening in any one year?`, ans,
+        wrong: uniq(ans, [`${num(ri)}%`, `${num(p * 10)}%`, `${num(p / 10)}%`, `${num(100 - p)}%`, `${num(p * 2)}%`]),
+        why: `Chance each year = 100 / recurrence interval = 100 / ${ri} = ${num(p)}%. A ${ri}-year flood can still happen in two years in a row.` };
+    }
+    const p = rnd([50, 25, 20, 10, 5, 2, 1, 0.5, 0.2]), ri = 100 / p, ans = `${num(ri)} years`;
+    return { q: `A flood has a ${num(p)}% chance of happening in any one year. Its recurrence interval is:`, ans,
+      wrong: uniq(ans, [`${num(p)} years`, `${num(ri * 10)} years`, `${num(ri / 10)} years`, `${num(ri * 2)} years`, `${num(100 - p)} years`]),
+      why: `Recurrence interval = 100 / (% chance each year) = 100 / ${num(p)} = ${num(ri)} years.` };
+  },
   kepler() {
     const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
@@ -502,4 +520,6 @@ const HINTS = {
   kepler: "For a Sun-like star, period squared = distance cubed (years and AU), so period = distance^1.5.",
   "atm-pressure": "Pressure = force / area. One pascal (Pa) is one newton per square metre.",
   "atm-units": "1 kPa = 1000 Pa, 1 bar = 100,000 Pa and 1 atm = 101,325 Pa.",
+  "stm-discharge": "Discharge = cross-sectional area x velocity, and area = width x depth for a simple channel.",
+  "stm-recurrence": "Chance each year (%) = 100 / recurrence interval in years. A 100-year flood has a 1% chance every year.",
 };

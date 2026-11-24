@@ -77,9 +77,32 @@ const PROFILES = {
   seismic: { caption: "P, S, and surface waves move differently and leave different patterns of shaking.", nodes: [["wave", "P wave", "Compressional body wave"], ["wave", "S wave", "Shear body wave"], ["wave", "Surface waves", "Move along the surface"]] },
   magnitude: { caption: "Magnitude describes earthquake size; intensity describes shaking and effects at a location.", nodes: [["rupture", "Rupture", "Fault releases energy"], ["wave", "Magnitude", "Estimate source size"], ["earth", "Intensity", "Describe local effects"]] },
   tsunami: { caption: "A tsunami can form when seafloor displacement moves a large volume of water.", nodes: [["rupture", "Seafloor moves", "Water is displaced"], ["wave", "Long wave", "Crosses the ocean"], ["earth", "Coast", "Wave grows in shallow water"]] },
+  runoff: { caption: "Water added by rain, snowmelt and groundwater runs off the land in streams that erode, carry and deposit sediment.", nodes: [["weather", "Water arrives", "Rain, melt and groundwater"], ["water", "Runoff", "Flows over the land"], ["transport", "Shapes land", "Erodes, carries, deposits"]] },
+  channel: { caption: "Sheetwash cuts rills that join into one channel, and headward erosion extends it uphill.", nodes: [["slope", "Sheetwash", "Thin water on a slope"], ["water", "Rills join", "Flow gathers"], ["transport", "Channel grows", "Headward erosion"]] },
+  drainagePattern: { caption: "The pattern of a drainage network reflects the rock and structure beneath it.", nodes: [["layers", "Underlying rock", "Uniform, jointed or folded"], ["water", "Water follows", "The easiest path"], ["earth", "Pattern", "Dendritic, radial, trellis..."]] },
+  watershed: { caption: "A divide splits the land into drainage basins that each feed one trunk stream.", nodes: [["slope", "Divide", "High line between basins"], ["water", "Basin", "Drains to one stream"], ["earth", "Ocean", "Continental divides split flow"]] },
+  streamflow: { caption: "Discharge is cross-sectional area times velocity, and the water moves fastest in the deep centre.", nodes: [["water", "Area", "Width and depth"], ["transport", "Velocity", "Fastest mid-channel"], ["wave", "Discharge", "Volume per second"]] },
+  streamErosion: { caption: "Streams turn gravitational energy into motion that scours, breaks, abrades and dissolves rock.", nodes: [["weather", "Sun lifts water", "Evaporation"], ["slope", "Gravity", "Potential to kinetic"], ["rupture", "Erosion", "Scour, break, abrade"]] },
+  sedimentLoad: { caption: "Streams carry bed, suspended and dissolved load, and drop grains by size as they slow.", nodes: [["transport", "Bed load", "Rolls and bounces"], ["water", "Suspended", "Silt and clay"], ["layers", "Sorted deposit", "Slower water, finer grains"]] },
+  longProfile: { caption: "From steep headwaters to a flat mouth, gradient falls while discharge rises.", nodes: [["slope", "Headwaters", "Steep and coarse"], ["water", "Trunk stream", "More discharge"], ["layers", "Mouth", "Flat and fine"]] },
+  baseLevel: { caption: "Base level is the lowest level a stream can erode to; moving it changes erosion and deposition.", nodes: [["water", "Sea level", "Ultimate base level"], ["layers", "Raise it", "More deposition"], ["rupture", "Lower it", "Faster erosion"]] },
+  canyon: { caption: "Hard and soft layers, base-level changes and waterfalls shape valleys and canyons.", nodes: [["layers", "Hard and soft rock", "Cliffs and slopes"], ["rupture", "Downcutting", "Terraces remain"], ["water", "Waterfall", "Retreats upstream"]] },
+  fanBraid: { caption: "Where a stream slows or is overloaded, it drops sediment into fans and braided bars.", nodes: [["slope", "Mountain front", "Gradient drops"], ["transport", "Too much sediment", "Channels choke"], ["layers", "Fans and bars", "Sediment piles up"]] },
+  meander: { caption: "Meanders erode on the outside, build point bars inside, and are cut off into oxbow lakes.", nodes: [["rupture", "Cut bank", "Outside erodes"], ["layers", "Point bar", "Inside builds"], ["water", "Oxbow lake", "Loop cut off"]] },
+  drainageChange: { caption: "Capture, uplift and old courses change where streams run over time.", nodes: [["transport", "Piracy", "One stream captures another"], ["collision", "Uplift", "Rejuvenation or diversion"], ["layers", "Old course kept", "Superposed and antecedent"]] },
+  delta: { caption: "At standing water a stream slows, drops its load and builds a delta that can switch course.", nodes: [["water", "Standing water", "Current slows"], ["layers", "Deposit", "Distributary channels"], ["timeline", "Avulsion", "Channel jumps over time"]] },
+  flood: { caption: "Heavy rain, saturated ground, fast snowmelt or a dam break send water over the banks.", nodes: [["weather", "Cause", "Rain, melt or dam break"], ["water", "Discharge rises", "Water leaves the channel"], ["earth", "Damage", "Floodplains scoured"]] },
+  floodRisk: { caption: "Recurrence intervals, risk maps, floodways and levees are used to manage flood risk.", nodes: [["timeline", "Recurrence", "Chance each year"], ["earth", "Risk maps", "Where water will reach"], ["layers", "Control", "Levees, dams, floodways"]] },
+  riverUse: { caption: "Rivers supply water, food, transport and energy, but pollution, dams and overuse strain them.", nodes: [["water", "Rivers give", "Water, food, energy"], ["gas", "Pollution", "Sewage, metals, salt, oil"], ["slope", "Overuse", "Too little left"]] },
 };
 
 const SECTION_PROFILES = {
+  streams: {
+    runoff: "draining", channel: "forming", drainagePattern: "patterns", watershed: "basins", streamflow: "flow",
+    streamErosion: "erosion", sedimentLoad: "load", longProfile: "profile", baseLevel: "baselevel", canyon: "valleys",
+    fanBraid: "fans", meander: "meanders", drainageChange: "evolution", delta: "deltas", flood: "floods",
+    floodRisk: "living", riverUse: "resource",
+  },
   interior: {
     investigation: "probes", chemical: "chemical", mechanical: "physical", gradient: "density-temp",
     waves: "waves", shadow: "shadow", gravity: "gravity", buoyancy: "isostasy",

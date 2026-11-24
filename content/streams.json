@@ -1,0 +1,2935 @@
+{
+ "id": "streams",
+ "title": "Streams",
+ "chapter": "Ch 14",
+ "icon": "🏞️",
+ "color": "#2f6f9f",
+ "slideFile": "2026 Nov 16 & 18 Ch 14 Streams.pdf",
+ "intro": "Streams drain the land and shape it. These notes follow water from the first sheet of runoff to a channel and its drainage network, explain discharge, erosion and the sediment a stream carries, then walk down the longitudinal profile past waterfalls, fans, braided channels and meanders to the delta, and finish with floods and how people live with them.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Explain how stream runoff fits into the hydrologic cycle and where streamflow comes from."
+  },
+  {
+   "id": "goal-02",
+   "text": "Describe how sheetwash, rills and headward erosion build channels and drainage networks."
+  },
+  {
+   "id": "goal-03",
+   "text": "Identify dendritic, radial, rectangular, trellis and parallel drainage and the geology each reflects."
+  },
+  {
+   "id": "goal-04",
+   "text": "Define drainage basins, divides and continental divides, and distinguish permanent from ephemeral streams."
+  },
+  {
+   "id": "goal-05",
+   "text": "Calculate discharge from cross-sectional area and velocity, and describe how velocity varies in a channel."
+  },
+  {
+   "id": "goal-06",
+   "text": "Compare bed, suspended and dissolved load, and explain competence, capacity and sorting by velocity."
+  },
+  {
+   "id": "goal-07",
+   "text": "Describe the longitudinal profile and explain how base level controls erosion and deposition."
+  },
+  {
+   "id": "goal-08",
+   "text": "Explain how canyons, terraces, waterfalls, alluvial fans, braided streams, meanders, oxbow lakes and deltas form."
+  },
+  {
+   "id": "goal-09",
+   "text": "Explain stream piracy, rejuvenation, and superposed, antecedent and diverted streams."
+  },
+  {
+   "id": "goal-10",
+   "text": "Compare seasonal and flash floods, their causes, and how recurrence intervals and flood control are used to manage flood risk."
+  }
+ ],
+ "sections": [
+  {
+   "id": "draining",
+   "title": "Streams drain the land",
+   "slides": "3-7 (81 is a review question)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/niagara_3.webp",
+      "slide": "slide 3",
+      "alt": "A wide waterfall pouring over a rock ledge into a misty river gorge."
+     },
+     "title": "Streams and stream runoff",
+     "bullets": [
+      "**Streams** are channels of water that drain the landscape.",
+      "**Stream runoff** is water in motion over the land surface.",
+      "People use streamflow for drinking water, transportation, waste disposal, recreation, commerce, irrigation and energy generation."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/problems_4.webp",
+      "slide": "slide 4",
+      "alt": "A pile of broken logs and branches left by a brown, swollen river, and an old drawing of people swept away by a flood."
+     },
+     "title": "Runoff also causes problems",
+     "bullets": [
+      "Stream runoff also causes many problems.",
+      "**Flooding** destroys lives and property."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/agent_5.webp",
+      "slide": "slide 5",
+      "alt": "Aerial view of dry hills cut into a dense, branching pattern of valleys by running water."
+     },
+     "title": "A geologic agent",
+     "bullets": [
+      "Flowing water **erodes**, **transports** and **deposits** sediment, and it sculpts whole landscapes.",
+      "Earth is the only planet in the Solar System with flowing water. Without flowing water, Earth might look like Mars."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/glance_6.webp",
+      "slide": "slide 6",
+      "alt": "A block diagram following a river from glaciers and steep mountain valleys, past waterfalls, rapids and braided channels, to wide meanders, oxbow lakes, natural levees and a delta at the sea."
+     },
+     "title": "Part of the hydrologic cycle",
+     "bullets": [
+      "Stream runoff is one part of the **hydrologic cycle**, the cycle of water leaving the sea and returning to it.",
+      "The other parts are **evaporation**, **transpiration** (water released by plants), **precipitation**, **infiltration** (water soaking into the ground) and **runoff**.",
+      "The picture follows a river from its mountain source to the sea. Each feature on it has its own topic in these notes."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/sources_7.webp",
+      "slide": "slide 7",
+      "alt": "Block diagram of a valley with snow, a puddle, a swamp, a tributary joining a trunk stream, evaporation from the water and a water table below the ground feeding the stream."
+     },
+     "title": "Where streamflow comes from",
+     "bullets": [
+      "Streamflow begins as water is added to the surface. Water reaches a channel from **rain**, **snowmelt** and **groundwater discharge** (groundwater seeping into the channel).",
+      "Some streamflow is stored for a while in **lakes and wetlands**. Some soaks in (infiltrates) and becomes **groundwater**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The Sun lifts water by evaporation, and gravity pulls it back downhill. Streams are the downhill part of that loop."
+    },
+    {
+     "type": "trick",
+     "text": "Three ways water gets into a stream: rain, melt, seep (groundwater)."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 81 review question: the hydrologic cycle is the cycle of water leaving and returning to the sea, not just clouds forming rain and not only groundwater flow."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 3-7; Fig. 14.1, 14.2 and 'Geology at a Glance'.",
+    "Slide 81 is a review question on the hydrologic cycle (answer C)."
+   ],
+   "images": [
+    {
+     "src": "img/streams/niagara_3.webp",
+     "slide": "slide 3",
+     "alt": "A wide waterfall pouring over a rock ledge into a misty river gorge."
+    },
+    {
+     "src": "img/streams/problems_4.webp",
+     "slide": "slide 4",
+     "alt": "A pile of broken logs and branches left by a brown, swollen river, and an old drawing of people swept away by a flood."
+    },
+    {
+     "src": "img/streams/agent_5.webp",
+     "slide": "slide 5",
+     "alt": "Aerial view of dry hills cut into a dense, branching pattern of valleys by running water."
+    },
+    {
+     "src": "img/streams/glance_6.webp",
+     "slide": "slide 6",
+     "alt": "A block diagram following a river from glaciers and steep mountain valleys, past waterfalls, rapids and braided channels, to wide meanders, oxbow lakes, natural levees and a delta at the sea."
+    },
+    {
+     "src": "img/streams/sources_7.webp",
+     "slide": "slide 7",
+     "alt": "Block diagram of a valley with snow, a puddle, a swamp, a tributary joining a trunk stream, evaporation from the water and a water table below the ground feeding the stream."
+    }
+   ]
+  },
+  {
+   "id": "forming",
+   "title": "How a stream channel forms",
+   "slides": "8-10",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/sheetwash_8.webp",
+      "slide": "slide 8",
+      "alt": "Aerial photo of a canyon landscape where thin sheets of water have carved many small channels on the slopes."
+     },
+     "title": "Sheetwash",
+     "bullets": [
+      "Streamflow begins as **sheetwash**: a thin surface layer of water that moves down the steepest slope.",
+      "Sheetwash erodes the ground and cuts tiny **rill** channels.",
+      "The rills join (coalesce), deepen and cut down, until the flow is concentrated in a **single channel**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/headward_9.webp",
+      "slide": "slide 9",
+      "alt": "Aerial photo of gullies eating back into a flat plain, with an arrow pointing to the head of a channel, and a 1 km scale bar."
+     },
+     "title": "Headward erosion",
+     "bullets": [
+      "**Headward erosion** is intense scouring where sheetflow pours into the uppermost end of a channel.",
+      "It makes the channel grow longer uphill. Headward erosion is how channels, and the drainage networks they belong to, expand to consume the landscape."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/tributary_10.webp",
+      "slide": "slide 10",
+      "alt": "Aerial photo of a winding trunk stream with smaller tributary channels joining it, each labelled with an arrow."
+     },
+     "title": "Tributaries and trunk streams",
+     "bullets": [
+      "Smaller **tributaries** join a larger **trunk stream**.",
+      "The whole set of linked channels is a **drainage network**. Drainage networks change over time."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water scours hardest where it first drops into a channel, so the channel's upper end keeps eating back into the land."
+    },
+    {
+     "type": "trick",
+     "text": "Sheet → rills → one channel → network. Each stage gathers more water into fewer, deeper paths."
+    },
+    {
+     "type": "trap",
+     "text": "Headward erosion lengthens a channel UPSTREAM (toward its source), not downstream."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 8-10; slide 8 is the 4th edition Fig. 14.3."
+   ],
+   "images": [
+    {
+     "src": "img/streams/sheetwash_8.webp",
+     "slide": "slide 8",
+     "alt": "Aerial photo of a canyon landscape where thin sheets of water have carved many small channels on the slopes."
+    },
+    {
+     "src": "img/streams/headward_9.webp",
+     "slide": "slide 9",
+     "alt": "Aerial photo of gullies eating back into a flat plain, with an arrow pointing to the head of a channel, and a 1 km scale bar."
+    },
+    {
+     "src": "img/streams/tributary_10.webp",
+     "slide": "slide 10",
+     "alt": "Aerial photo of a winding trunk stream with smaller tributary channels joining it, each labelled with an arrow."
+    }
+   ]
+  },
+  {
+   "id": "patterns",
+   "title": "Drainage patterns",
+   "slides": "11-15",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/dendritic_11.webp",
+      "slide": "slide 11",
+      "alt": "Aerial photo of branching stream channels and an inset block diagram labelled Dendritic, with channels branching like a tree."
+     },
+     "title": "Dendritic",
+     "bullets": [
+      "Drainage networks often form geometric patterns that reflect the geology underneath.",
+      "**Dendritic** drainage branches like a tree. It forms where the rock being eroded is fairly **uniform (homogeneous)**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/radial_12.webp",
+      "slide": "slide 12",
+      "alt": "Block diagram of streams running outward in all directions from a volcano, labelled Radial, and a photo of a rounded hill."
+     },
+     "title": "Radial",
+     "bullets": [
+      "**Radial** drainage runs outward in all directions from a point uplift, such as a mesa or a volcano."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/rectangular_13.webp",
+      "slide": "slide 13",
+      "alt": "Block diagram labelled Rectangular with channels turning at right angles along joints, and an aerial photo of straight valleys."
+     },
+     "title": "Rectangular",
+     "bullets": [
+      "**Rectangular** drainage follows **joints** in the bedrock that cross at 90° angles, so channels turn sharp corners."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/trellis_14.webp",
+      "slide": "slide 14",
+      "alt": "Aerial photo of long parallel ridges with a trunk stream and short tributaries, and an inset block diagram labelled Trellis showing resistant ridges."
+     },
+     "title": "Trellis",
+     "bullets": [
+      "**Trellis** drainage forms in **deformed (folded) layers** where resistant and weak rocks alternate.",
+      "Long streams run along the weak layers between resistant ridges, and short tributaries join them at right angles."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/parallel_15.webp",
+      "slide": "slide 15",
+      "alt": "Aerial photo of many streams running side by side down a slope, and an inset block diagram labelled Parallel."
+     },
+     "title": "Parallel",
+     "bullets": [
+      "**Parallel** drainage forms on a surface with a **uniform slope**, so the streams run side by side."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water follows the easiest path. Weak layers, joints, a central peak or an even slope each set that path, so the pattern reveals the rock below."
+    },
+    {
+     "type": "trick",
+     "text": "Dendritic = tree. Radial = spokes from a volcano. Rectangular = right-angle joints. Trellis = garden trellis on folded layers. Parallel = one even slope."
+    },
+    {
+     "type": "trap",
+     "text": "Trellis and rectangular both have right-angle junctions. Trellis comes from alternating resistant and weak folded layers; rectangular comes from joints in the bedrock."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 11-15, Fig. 14.4."
+   ],
+   "images": [
+    {
+     "src": "img/streams/dendritic_11.webp",
+     "slide": "slide 11",
+     "alt": "Aerial photo of branching stream channels and an inset block diagram labelled Dendritic, with channels branching like a tree."
+    },
+    {
+     "src": "img/streams/radial_12.webp",
+     "slide": "slide 12",
+     "alt": "Block diagram of streams running outward in all directions from a volcano, labelled Radial, and a photo of a rounded hill."
+    },
+    {
+     "src": "img/streams/rectangular_13.webp",
+     "slide": "slide 13",
+     "alt": "Block diagram labelled Rectangular with channels turning at right angles along joints, and an aerial photo of straight valleys."
+    },
+    {
+     "src": "img/streams/trellis_14.webp",
+     "slide": "slide 14",
+     "alt": "Aerial photo of long parallel ridges with a trunk stream and short tributaries, and an inset block diagram labelled Trellis showing resistant ridges."
+    },
+    {
+     "src": "img/streams/parallel_15.webp",
+     "slide": "slide 15",
+     "alt": "Aerial photo of many streams running side by side down a slope, and an inset block diagram labelled Parallel."
+    }
+   ]
+  },
+  {
+   "id": "basins",
+   "title": "Drainage basins and divides",
+   "slides": "16-18",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/basin_16.webp",
+      "slide": "slide 16",
+      "alt": "Aerial photo of grassy ridges and a block diagram showing the drainage basins of stream A and stream B separated by a drainage divide."
+     },
+     "title": "Drainage basins and divides",
+     "bullets": [
+      "A **drainage basin** (also called a **catchment** or **watershed**) is the land area that drains into one particular trunk stream.",
+      "A **drainage divide** separates neighbouring basins. A raindrop flows to one basin or the other depending on which side of the divide it lands."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/divides_17.webp",
+      "slide": "slide 17",
+      "alt": "Map of North America coloured by where rivers drain: the Pacific, the Arctic Ocean, Hudson Bay, the Atlantic and the Gulf of Mexico, with the continental divide, the Mississippi basin and the Great Basin labelled."
+     },
+     "title": "Scales and continental divides",
+     "bullets": [
+      "Watersheds exist at every scale. Tiny tributaries have tiny watersheds; large continental rivers have huge ones.",
+      "A **continental divide** separates flow to different oceans. In North America, water on one side reaches the Pacific and on the other the Atlantic, the Gulf of Mexico, Hudson Bay or the Arctic Ocean.",
+      "On the map, the **Great Basin** has arrows pointing inward: its water does not reach any ocean."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/endorheic_18.webp",
+      "slide": "slide 18",
+      "alt": "World map coloured by the ocean each region drains to, with dark grey endorheic basins in central Asia, Africa, Australia and western North America."
+     },
+     "title": "Endorheic basins",
+     "bullets": [
+      "An **endorheic basin** drains inward and never reaches the ocean.",
+      "The world map colours each region by the ocean it drains to. The dark grey regions are endorheic basins."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A divide is simply the high line between two slopes. Rain falling on each side runs downhill a different way."
+    },
+    {
+     "type": "trick",
+     "text": "Basin = bowl that collects the water. Divide = the rim between two bowls."
+    },
+    {
+     "type": "trap",
+     "text": "Catchment, watershed and drainage basin all mean the same thing in these notes."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 16-18; Fig. 14.5a, b. Slide 18 is a Wikipedia map with only the title.",
+    "Definition of endorheic (drains to no ocean): outside source."
+   ],
+   "images": [
+    {
+     "src": "img/streams/basin_16.webp",
+     "slide": "slide 16",
+     "alt": "Aerial photo of grassy ridges and a block diagram showing the drainage basins of stream A and stream B separated by a drainage divide."
+    },
+    {
+     "src": "img/streams/divides_17.webp",
+     "slide": "slide 17",
+     "alt": "Map of North America coloured by where rivers drain: the Pacific, the Arctic Ocean, Hudson Bay, the Atlantic and the Gulf of Mexico, with the continental divide, the Mississippi basin and the Great Basin labelled."
+    },
+    {
+     "src": "img/streams/endorheic_18.webp",
+     "slide": "slide 18",
+     "alt": "World map coloured by the ocean each region drains to, with dark grey endorheic basins in central Asia, Africa, Australia and western North America."
+    }
+   ]
+  },
+  {
+   "id": "flow",
+   "title": "Permanent streams, discharge and flow",
+   "slides": "19-22",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/permanent_19.webp",
+      "slide": "slide 19",
+      "alt": "Two block diagrams: a forested valley where a high water table feeds a flowing river, and a dry desert valley with cactus where the water table sits below the dry channel."
+     },
+     "title": "Permanent and ephemeral streams",
+     "bullets": [
+      "**Permanent streams** flow all year. They are common where there is abundant rainfall, groundwater discharge and little evaporation. The water table is high enough to feed the channel.",
+      "**Ephemeral streams** do not flow all year. They are common where annual rainfall is low, the water table is low and evaporation is high."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/discharge_20.webp",
+      "slide": "slide 20",
+      "alt": "A student wading in a stream with a measuring rod, and an inset drawing of a stream-gauging station with a current meter, the channel's cross-sectional area and a well that measures water depth."
+     },
+     "title": "Discharge",
+     "bullets": [
+      "**Discharge** is the volume of water passing a point in a channel per unit of time.",
+      "It is found by measuring the **cross-sectional area** of the channel and multiplying by the **flow velocity**.",
+      "Discharge changes with the seasons as precipitation and runoff change."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/gen_discharge.webp",
+      "slide": "none (original diagram)",
+      "alt": "A trapezoid-shaped channel cross-section labelled width, depth and area A, a red arrow for velocity v, the formula Q = A × v, and an example: 10 m wide times 2 m deep is 20 square metres, times 1.5 m/s gives 30 cubic metres per second."
+     },
+     "title": "Working out discharge",
+     "bullets": [
+      "**Discharge (Q) = cross-sectional area (A) × velocity (v)**.",
+      "For a simple channel, area ≈ width × depth. A channel 10 m wide and 2 m deep has an area of 20 m². If the water moves at 1.5 m/s, the discharge is 20 × 1.5 = **30 m³/s** (cubic metres per second)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/velocity_21.webp",
+      "slide": "slide 21",
+      "alt": "Photo of a curving stream with the far, outside bank steep and the inside bank low and sandy."
+     },
+     "title": "Velocity across a channel",
+     "bullets": [
+      "Velocity is not the same everywhere in a channel. **Friction** slows the water along the edges; water flows **fastest in the deeper centre**.",
+      "In a curved channel, the fastest water swings to the **outside of the curve**, which is scoured and deepened."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/turbulence_22.webp",
+      "slide": "slide 22",
+      "alt": "Block diagram of a stream bed with arrows showing laminar flow, turbulent flow around boulders, an eddy, a whirlpool, and water rotating as it slows along the bank."
+     },
+     "title": "Turbulent flow",
+     "bullets": [
+      "Streamflow is **turbulent**: chaotic and erratic, with lots of mixing by **eddies** (swirls).",
+      "Eddies scour sediment and bedrock."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water drags against the bed and banks, so it moves slowest there and fastest in the deep middle, away from the friction."
+    },
+    {
+     "type": "trick",
+     "text": "Q = A × v. More area or faster water, more discharge."
+    },
+    {
+     "type": "trap",
+     "text": "Discharge is a VOLUME per time (for example m³/s), not a speed. Velocity alone is in m/s."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 19-22; Fig. 14.6a, b and 14.7a, b.",
+    "Area ≈ width × depth and the worked numbers in the discharge diagram are an illustration, not slide values."
+   ],
+   "images": [
+    {
+     "src": "img/streams/permanent_19.webp",
+     "slide": "slide 19",
+     "alt": "Two block diagrams: a forested valley where a high water table feeds a flowing river, and a dry desert valley with cactus where the water table sits below the dry channel."
+    },
+    {
+     "src": "img/streams/discharge_20.webp",
+     "slide": "slide 20",
+     "alt": "A student wading in a stream with a measuring rod, and an inset drawing of a stream-gauging station with a current meter, the channel's cross-sectional area and a well that measures water depth."
+    },
+    {
+     "src": "img/streams/gen_discharge.webp",
+     "slide": "none (original diagram)",
+     "alt": "A trapezoid-shaped channel cross-section labelled width, depth and area A, a red arrow for velocity v, the formula Q = A × v, and an example: 10 m wide times 2 m deep is 20 square metres, times 1.5 m/s gives 30 cubic metres per second."
+    },
+    {
+     "src": "img/streams/velocity_21.webp",
+     "slide": "slide 21",
+     "alt": "Photo of a curving stream with the far, outside bank steep and the inside bank low and sandy."
+    },
+    {
+     "src": "img/streams/turbulence_22.webp",
+     "slide": "slide 22",
+     "alt": "Block diagram of a stream bed with arrows showing laminar flow, turbulent flow around boulders, an eddy, a whirlpool, and water rotating as it slows along the bank."
+    }
+   ]
+  },
+  {
+   "id": "erosion",
+   "title": "How streams erode",
+   "slides": "23-25",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/energy_23.webp",
+      "slide": "slide 23",
+      "alt": "Photo of brown, churning floodwater pouring over a weir around a half-submerged tree."
+     },
+     "title": "Where the energy comes from",
+     "bullets": [
+      "Streamflow does work by turning **potential energy** (water high up) into **kinetic energy** (moving water).",
+      "That energy comes from **gravity** acting on water that the **Sun** lifted up by evaporation."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/scour_24.webp",
+      "slide": "slide 24",
+      "alt": "Photo of a rocky stream bed covered with broken, flat slabs of rock beside a wooded bank."
+     },
+     "title": "Four ways streams erode",
+     "bullets": [
+      "Streams **scour** (sweep away loose material), **break** rock, **abrade** (grind it with the sediment they carry) and **dissolve** material."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/potholes_25.webp",
+      "slide": "slide 25",
+      "alt": "Photos of a narrow, smooth-walled slot canyon and of round holes drilled through pale bedrock, one big enough for a person to stand in."
+     },
+     "title": "Potholes",
+     "bullets": [
+      "**Potholes** form where turbulent eddies swirl sand and gravel round and round.",
+      "This abrasive material drills holes into the bedrock."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Moving water carries grit. Swirling grit acts like sandpaper or a drill on the rock it touches."
+    },
+    {
+     "type": "trick",
+     "text": "Scour, break, abrade, dissolve: SBAD."
+    },
+    {
+     "type": "trap",
+     "text": "Potholes are drilled by the sand and gravel the eddies swirl, not by clear water alone."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 23-25; Fig. 14.8a."
+   ],
+   "images": [
+    {
+     "src": "img/streams/energy_23.webp",
+     "slide": "slide 23",
+     "alt": "Photo of brown, churning floodwater pouring over a weir around a half-submerged tree."
+    },
+    {
+     "src": "img/streams/scour_24.webp",
+     "slide": "slide 24",
+     "alt": "Photo of a rocky stream bed covered with broken, flat slabs of rock beside a wooded bank."
+    },
+    {
+     "src": "img/streams/potholes_25.webp",
+     "slide": "slide 25",
+     "alt": "Photos of a narrow, smooth-walled slot canyon and of round holes drilled through pale bedrock, one big enough for a person to stand in."
+    }
+   ]
+  },
+  {
+   "id": "load",
+   "title": "Sediment load, competence and capacity",
+   "slides": "26-28",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/loads_26.webp",
+      "slide": "slide 26",
+      "alt": "Cut-away drawing of a stream bed: boulders rolling, pebbles hopping (saltation), a magnified circle of dissolved ions and another of tiny suspended clay flakes."
+     },
+     "title": "Three kinds of load",
+     "bullets": [
+      "The material a stream moves is its **sediment load**.",
+      "**Bed load**: the larger grains that roll, slip and bounce along the bed. The bouncing movement is called **saltation**.",
+      "**Suspended load**: fine particles (silt and clay) carried within the flow.",
+      "**Dissolved load**: ions released by the weathering of minerals."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/gen_loads.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of a stream from the side: a boulder rolls along the bed, a pebble bounces in hops, small specks of silt and clay drift in the water, and plus and minus ions move evenly through it."
+     },
+     "title": "Watch the loads move",
+     "bullets": [
+      "Boulders and pebbles stay on or near the bed. Silt and clay ride inside the water. Ions are dissolved and cannot be seen."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/competence_27.webp",
+      "slide": "slide 27",
+      "alt": "Photo of a mountain stream with whitewater rushing between large rounded boulders."
+     },
+     "title": "Competence and capacity",
+     "bullets": [
+      "**Competence** is the **largest grain size** a stream can move.",
+      "**Capacity** is the **total load** (coarse, fine and dissolved) a stream can carry.",
+      "Transport changes with discharge. At high discharge, cobbles and boulders that sit stranded at low discharge can move."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/deposition_28.webp",
+      "slide": "slide 28",
+      "alt": "Photo of a stream bank where gravel lies near the channel and finer sand and mud spread across the flatter, quieter area."
+     },
+     "title": "Deposition sorts the grains",
+     "bullets": [
+      "**Competence drops as velocity drops**, so grains fall out as the water slows.",
+      "The water **sorts** them by size."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/gen_sorting.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three boxes under a bar going from fast to slow: the channel with large grey gravel, point bars and levees with sand, and slack water with very fine mud of silt and clay."
+     },
+     "title": "Where each size settles",
+     "bullets": [
+      "**Gravel** settles where the water is fastest, in the **channel**.",
+      "**Sand** settles where it is a little slower: **point bars** and **levees**.",
+      "**Mud** (silt and clay) settles in **slack (still) water**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A fast stream has the energy to move big grains. As it slows, it drops the heaviest grains first, so each place ends up with one size."
+    },
+    {
+     "type": "trick",
+     "text": "Competence = the biggest piece. Capacity = the whole truckload."
+    },
+    {
+     "type": "trap",
+     "text": "Saltation is part of the BED load (grains bouncing along the bed), not the suspended load. Silt and clay are suspended; ions are dissolved."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 26-28; Fig. 14.8c."
+   ],
+   "images": [
+    {
+     "src": "img/streams/loads_26.webp",
+     "slide": "slide 26",
+     "alt": "Cut-away drawing of a stream bed: boulders rolling, pebbles hopping (saltation), a magnified circle of dissolved ions and another of tiny suspended clay flakes."
+    },
+    {
+     "src": "img/streams/gen_loads.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of a stream from the side: a boulder rolls along the bed, a pebble bounces in hops, small specks of silt and clay drift in the water, and plus and minus ions move evenly through it."
+    },
+    {
+     "src": "img/streams/competence_27.webp",
+     "slide": "slide 27",
+     "alt": "Photo of a mountain stream with whitewater rushing between large rounded boulders."
+    },
+    {
+     "src": "img/streams/deposition_28.webp",
+     "slide": "slide 28",
+     "alt": "Photo of a stream bank where gravel lies near the channel and finer sand and mud spread across the flatter, quieter area."
+    },
+    {
+     "src": "img/streams/gen_sorting.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three boxes under a bar going from fast to slow: the channel with large grey gravel, point bars and levees with sand, and slack water with very fine mud of silt and clay."
+    }
+   ]
+  },
+  {
+   "id": "profile",
+   "title": "The longitudinal profile",
+   "slides": "29, 37, 40",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/profile_29.webp",
+      "slide": "slide 29",
+      "alt": "Block diagram of a stream from its headwaters through a trunk stream, meanders and floodplain to a delta at standing water, with cross-sections A, B and C getting wider and flatter downstream."
+     },
+     "title": "A concave-up curve",
+     "bullets": [
+      "A stream's character changes with distance downstream.",
+      "Cross-section A near the source is a narrow V; cross-section C near the mouth is wide and flat."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/profilecurve_29.webp",
+      "slide": "slide 29",
+      "alt": "Graph of elevation against distance from the mouth: a curve that drops steeply from the source and flattens toward the mouth, ending at base level."
+     },
+     "title": "From source to mouth",
+     "bullets": [
+      "The **longitudinal profile** is the stream's elevation plotted along its length. On average it is a **concave-up curve**: steep near the source, flattening toward the mouth.",
+      "Flow and sediment transport change along this profile."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/headwaters_37.webp",
+      "slide": "slide 37",
+      "alt": "Photo of a mountain river rushing white over boulders between forested banks."
+     },
+     "title": "Near the headwaters",
+     "bullets": [
+      "Near the source, the **gradient is steep**, **discharge is low**, sediment is **coarse** and the channel is **straight and rocky**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/mouth_40.webp",
+      "slide": "slide 40",
+      "alt": "Aerial photo of a broad river winding across farmland, with old curved channel scars beside it."
+     },
+     "title": "Toward the mouth",
+     "bullets": [
+      "Toward the mouth, the **gradient flattens**, **discharge increases**, grains are **smaller** and the channel develops broad **meander belts**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/gen_updown.webp",
+      "slide": "none (original diagram)",
+      "alt": "A comparison table: near the headwaters the gradient is steep, discharge low, sediment coarse and the channel straight and rocky; toward the mouth the gradient flattens, discharge increases, grains are smaller and the channel has broad meander belts."
+     },
+     "title": "Side by side",
+     "bullets": [
+      "Discharge goes **up** downstream because tributaries keep adding water, even as the slope goes **down**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Tributaries keep adding water downstream, so discharge rises while the slope eases. The stream no longer needs a steep slope to move its water."
+    },
+    {
+     "type": "trick",
+     "text": "Steep, small, coarse, straight at the top; flat, big, fine, wiggly at the bottom."
+    },
+    {
+     "type": "trap",
+     "text": "Discharge INCREASES toward the mouth even though the gradient decreases. Don't assume a gentler slope means less water."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 29, 37, 40; Fig. 14.10.",
+    "'Tributaries keep adding water' is an explanation added for clarity."
+   ],
+   "images": [
+    {
+     "src": "img/streams/profile_29.webp",
+     "slide": "slide 29",
+     "alt": "Block diagram of a stream from its headwaters through a trunk stream, meanders and floodplain to a delta at standing water, with cross-sections A, B and C getting wider and flatter downstream."
+    },
+    {
+     "src": "img/streams/profilecurve_29.webp",
+     "slide": "slide 29",
+     "alt": "Graph of elevation against distance from the mouth: a curve that drops steeply from the source and flattens toward the mouth, ending at base level."
+    },
+    {
+     "src": "img/streams/headwaters_37.webp",
+     "slide": "slide 37",
+     "alt": "Photo of a mountain river rushing white over boulders between forested banks."
+    },
+    {
+     "src": "img/streams/mouth_40.webp",
+     "slide": "slide 40",
+     "alt": "Aerial photo of a broad river winding across farmland, with old curved channel scars beside it."
+    },
+    {
+     "src": "img/streams/gen_updown.webp",
+     "slide": "none (original diagram)",
+     "alt": "A comparison table: near the headwaters the gradient is steep, discharge low, sediment coarse and the channel straight and rocky; toward the mouth the gradient flattens, discharge increases, grains are smaller and the channel has broad meander belts."
+    }
+   ]
+  },
+  {
+   "id": "baselevel",
+   "title": "Base level",
+   "slides": "30-31",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/baselevel_30.webp",
+      "slide": "slide 30",
+      "alt": "Photo of a tall, thin waterfall dropping from a ledge of layered rock into a pool at the bottom of a steep gorge."
+     },
+     "title": "What base level is",
+     "bullets": [
+      "**Base level** is the lowest point to which a stream can erode.",
+      "The **ultimate base level** is **sea level**. A **lake** is a **local (temporary) base level**.",
+      "A ledge of **resistant rock** can also set a local base level. Erosion slowly removes the ledge and restores the smooth profile."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/gen_baselevel.webp",
+      "slide": "none (original diagram)",
+      "alt": "A stream profile curving down to the sea with a dashed line for sea level as the ultimate base level, a lake and a resistant ledge as local base levels, and two boxes: raise base level for more deposition, lower base level for faster erosion."
+     },
+     "title": "Raising or lowering base level",
+     "bullets": [
+      "A change in base level makes the stream readjust.",
+      "**Raising** base level causes **more deposition**.",
+      "**Lowering** base level **speeds up erosion**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/hypsometric_31.webp",
+      "slide": "slide 31",
+      "alt": "A graph sorting all of Earth's surface by elevation, from the peak of Mount Everest at 8,848 m down to the Mariana Trench at minus 10,911 m, with sea level marked across it."
+     },
+     "title": "How high is the land?",
+     "bullets": [
+      "This graph sorts Earth's whole surface by elevation, from the top of **Mount Everest (8,848 m)** to the bottom of the **Mariana Trench (−10,911 m)**.",
+      "Sea level, the ultimate base level, is the line that the land's streams erode toward."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water cannot flow below the water body it drains into, so a stream cannot cut deeper than that level."
+    },
+    {
+     "type": "trick",
+     "text": "Raise the floor, the stream fills in. Drop the floor, the stream digs."
+    },
+    {
+     "type": "trap",
+     "text": "A lake or a waterfall ledge is only a LOCAL, temporary base level. The ultimate base level is sea level."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 30-31. Slide 31 is a Wikipedia elevation histogram with only a title."
+   ],
+   "images": [
+    {
+     "src": "img/streams/baselevel_30.webp",
+     "slide": "slide 30",
+     "alt": "Photo of a tall, thin waterfall dropping from a ledge of layered rock into a pool at the bottom of a steep gorge."
+    },
+    {
+     "src": "img/streams/gen_baselevel.webp",
+     "slide": "none (original diagram)",
+     "alt": "A stream profile curving down to the sea with a dashed line for sea level as the ultimate base level, a lake and a resistant ledge as local base levels, and two boxes: raise base level for more deposition, lower base level for faster erosion."
+    },
+    {
+     "src": "img/streams/hypsometric_31.webp",
+     "slide": "slide 31",
+     "alt": "A graph sorting all of Earth's surface by elevation, from the peak of Mount Everest at 8,848 m down to the Mariana Trench at minus 10,911 m, with sea level marked across it."
+    }
+   ]
+  },
+  {
+   "id": "valleys",
+   "title": "Valleys, canyons and waterfalls",
+   "slides": "32-36",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/stairstep_32.webp",
+      "slide": "slide 32",
+      "alt": "Photo of the Grand Canyon's stepped walls, and a drawing of hard and soft layers eroding over time into a stair-step canyon."
+     },
+     "title": "Stair-step canyons",
+     "bullets": [
+      "Rock layers often alternate between **stronger** and **weaker** rocks.",
+      "Erosion of such layers makes a **stair-step profile**: stronger rocks form **vertical cliffs** and weaker rocks form **sloped walls**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/terraces_33.webp",
+      "slide": "slide 33",
+      "alt": "Two block diagrams: at Time 1 a raised base level lets a valley fill with yellow alluvium; at Time 2 a lowered base level lets the stream cut down, leaving terraces on both sides."
+     },
+     "title": "Valley fill and terraces",
+     "bullets": [
+      "A **rise in base level** or a **drop in discharge** makes the valley **fill with alluvium** (stream sediment).",
+      "If base level **falls** or discharge **increases**, the stream **cuts down** into the alluvium and makes a new, lower floodplain.",
+      "**Paired terraces** are the leftover pieces of the old floodplain on both sides."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/landscape_34.webp",
+      "slide": "slide 34",
+      "alt": "Four block diagrams over time: swampy low-relief land is uplifted, becomes well-drained land cut by streams, then valleys broaden, and finally a new low-relief landscape forms."
+     },
+     "title": "Landscapes wear down",
+     "bullets": [
+      "Landscapes change over time, mostly because of streamflow.",
+      "When base level drops, streams cut into the old surface, valleys widen and hills erode. Eventually the land is worn down to the **new base level**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/waterfall_35.webp",
+      "slide": "slide 35",
+      "alt": "Photos of a broad waterfall tumbling over many rocky ledges and of a tall, single waterfall in a misty forest."
+     },
+     "title": "Rapids and waterfalls",
+     "bullets": [
+      "**Waterfalls** are places where a stream cascades or free-falls down a very steep gradient.",
+      "The falling water scours a **plunge pool** at the base. Erosion at the base undercuts the rock above until it collapses.",
+      "Waterfalls are **temporary base levels**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/niagara_gorge_36.webp",
+      "slide": "slide 36",
+      "alt": "Aerial photo of Niagara Falls and a block diagram showing Lake Erie, the falls, Niagara Gorge, the Lockport Dolostone caprock, the Niagara Escarpment and Lake Ontario."
+     },
+     "title": "Niagara Falls",
+     "bullets": [
+      "Lake Erie drops **55 m** to Lake Ontario over Niagara Falls.",
+      "The **dolostone caprock** is resistant. The **shale** underneath erodes, and blocks of unsupported dolostone collapse.",
+      "So the falls keep moving **south (upstream) toward Lake Erie**. Erosion since the ice age glaciers melted has carved **Niagara Gorge**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Hard rock resists and stands as a cliff or a falls lip; soft rock beneath wears away and leaves the hard rock unsupported."
+    },
+    {
+     "type": "trick",
+     "text": "Terraces are bathtub rings of an old, higher floodplain."
+    },
+    {
+     "type": "trap",
+     "text": "Niagara Falls retreats UPSTREAM (south toward Lake Erie), not downstream toward Lake Ontario."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 32-36; Fig. 14.11c, 14.12a, b, 14.13b, 14.14 and 14.19a."
+   ],
+   "images": [
+    {
+     "src": "img/streams/stairstep_32.webp",
+     "slide": "slide 32",
+     "alt": "Photo of the Grand Canyon's stepped walls, and a drawing of hard and soft layers eroding over time into a stair-step canyon."
+    },
+    {
+     "src": "img/streams/terraces_33.webp",
+     "slide": "slide 33",
+     "alt": "Two block diagrams: at Time 1 a raised base level lets a valley fill with yellow alluvium; at Time 2 a lowered base level lets the stream cut down, leaving terraces on both sides."
+    },
+    {
+     "src": "img/streams/landscape_34.webp",
+     "slide": "slide 34",
+     "alt": "Four block diagrams over time: swampy low-relief land is uplifted, becomes well-drained land cut by streams, then valleys broaden, and finally a new low-relief landscape forms."
+    },
+    {
+     "src": "img/streams/waterfall_35.webp",
+     "slide": "slide 35",
+     "alt": "Photos of a broad waterfall tumbling over many rocky ledges and of a tall, single waterfall in a misty forest."
+    },
+    {
+     "src": "img/streams/niagara_gorge_36.webp",
+     "slide": "slide 36",
+     "alt": "Aerial photo of Niagara Falls and a block diagram showing Lake Erie, the falls, Niagara Gorge, the Lockport Dolostone caprock, the Niagara Escarpment and Lake Ontario."
+    }
+   ]
+  },
+  {
+   "id": "fans",
+   "title": "Alluvial fans and braided streams",
+   "slides": "38-39",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/fan_38.webp",
+      "slide": "slide 38",
+      "alt": "Aerial photo of a fan of sediment spreading out from the mouth of a canyon at the foot of a mountain front."
+     },
+     "title": "Alluvial fans",
+     "bullets": [
+      "**Alluvial fans** are cone-shaped, fan-shaped deposits that build at the **base of a mountain front**.",
+      "Sediment drops out quickly where the stream's **gradient suddenly decreases**.",
+      "The **coarsest** material is near the mouth of the canyon; sediment becomes **finer and thinner** with distance."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/braided_39.webp",
+      "slide": "slide 39",
+      "alt": "Aerial photo of a wide grey valley floor crossed by many shallow channels splitting and rejoining around gravel bars."
+     },
+     "title": "Braided streams",
+     "bullets": [
+      "**Braided streams** form where channels are **choked with sediment**.",
+      "Flow is forced around the sediment, and the splitting and rejoining flow builds **sand and gravel bars**.",
+      "The bars are unstable: they form and erode quickly, and water spreads across **many channels** in the valley."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "When a stream suddenly slows or has more sediment than it can carry, it drops the extra load and builds fans and bars."
+    },
+    {
+     "type": "trick",
+     "text": "Braided = many strands woven together, like braided hair."
+    },
+    {
+     "type": "trap",
+     "text": "Braided streams have MANY shallow channels around bars. Meandering streams have ONE looping channel."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 38-39; Fig. 14.15a, b."
+   ],
+   "images": [
+    {
+     "src": "img/streams/fan_38.webp",
+     "slide": "slide 38",
+     "alt": "Aerial photo of a fan of sediment spreading out from the mouth of a canyon at the foot of a mountain front."
+    },
+    {
+     "src": "img/streams/braided_39.webp",
+     "slide": "slide 39",
+     "alt": "Aerial photo of a wide grey valley floor crossed by many shallow channels splitting and rejoining around gravel bars."
+    }
+   ]
+  },
+  {
+   "id": "meanders",
+   "title": "Meandering streams and oxbow lakes",
+   "slides": "41-44",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/meanders_41.webp",
+      "slide": "slide 41",
+      "alt": "Satellite image of a river looping across a forested plain, with a meander, an oxbow lake, an abandoned meander, point bars and a meander neck labelled, and a 20 km scale bar."
+     },
+     "title": "Meanders",
+     "bullets": [
+      "On the gentle, low-gradient part of the profile, channels form tightly looping bends called **meanders**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/meander_time_42.webp",
+      "slide": "slide 42",
+      "alt": "Four map drawings over time: a gently curving stream erodes on the outside of bends and deposits on the inside, grows point bars, forms a narrow meander neck and finally cuts off, leaving an oxbow lake."
+     },
+     "title": "Cut bank and point bar",
+     "bullets": [
+      "The fastest water erodes the **outside** of a bend, called the **cut bank**.",
+      "The **inside** of the bend, the **point bar**, is where sediment is deposited.",
+      "Over time meanders grow more **sinuous** (loopy) by cut-bank erosion and point-bar growth, until they are eventually cut off."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/cutbank_43.webp",
+      "slide": "slide 43",
+      "alt": "Two photos of the same river: a steep, crumbling earth bank on the outside of a bend, and a low, pale gravel point bar on the inside of a bend."
+     },
+     "title": "In a real stream",
+     "bullets": [
+      "Fast flow scours the base of the cut bank, which collapses into the channel. The flow carries the fallen material away.",
+      "Slower water inside the bend drops sediment, and the point bar grows toward the channel."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/oxbow_44.webp",
+      "slide": "slide 44",
+      "alt": "Aerial photo of curved lakes and old channels beside a winding river, above a satellite image of a looping river with oxbow lakes and abandoned meanders labelled."
+     },
+     "title": "Cutoffs and oxbow lakes",
+     "bullets": [
+      "A **meander cutoff** happens when two cut banks grow toward each other and the **meander neck** thins.",
+      "During a flood, fast water jumps out of the channel and erodes through the neck.",
+      "The cut-off loop becomes an **oxbow lake**, which slowly fills with sediment. Old oxbow lakes show up as curved scars on the floodplain."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/gen_meander.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation in map view: a gentle bend in a blue river grows into a large loop, with the cut bank eroding on the outside and a sandy point bar growing inside; the neck thins, the river cuts through it, and the loop is left as an oxbow lake beside the new, shorter channel."
+     },
+     "title": "Watch a meander grow",
+     "bullets": [
+      "The loop grows outward at the cut bank while the point bar fills in behind it.",
+      "Once the river cuts through the neck, it takes the **shorter path** and abandons the loop."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "In a bend, the fastest water is thrown to the outside and erodes it, while the slower water on the inside drops sediment. The bend migrates sideways."
+    },
+    {
+     "type": "trick",
+     "text": "Cut bank = cut away (erosion, outside). Point bar = pile up (deposition, inside)."
+    },
+    {
+     "type": "trap",
+     "text": "Erosion is on the OUTSIDE of a bend (cut bank) and deposition on the INSIDE (point bar). Swapping them is a common mistake."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 41-44; Fig. 14.16a, b. Slide 46 is a video link on meandering river deposits."
+   ],
+   "images": [
+    {
+     "src": "img/streams/meanders_41.webp",
+     "slide": "slide 41",
+     "alt": "Satellite image of a river looping across a forested plain, with a meander, an oxbow lake, an abandoned meander, point bars and a meander neck labelled, and a 20 km scale bar."
+    },
+    {
+     "src": "img/streams/meander_time_42.webp",
+     "slide": "slide 42",
+     "alt": "Four map drawings over time: a gently curving stream erodes on the outside of bends and deposits on the inside, grows point bars, forms a narrow meander neck and finally cuts off, leaving an oxbow lake."
+    },
+    {
+     "src": "img/streams/cutbank_43.webp",
+     "slide": "slide 43",
+     "alt": "Two photos of the same river: a steep, crumbling earth bank on the outside of a bend, and a low, pale gravel point bar on the inside of a bend."
+    },
+    {
+     "src": "img/streams/oxbow_44.webp",
+     "slide": "slide 44",
+     "alt": "Aerial photo of curved lakes and old channels beside a winding river, above a satellite image of a looping river with oxbow lakes and abandoned meanders labelled."
+    },
+    {
+     "src": "img/streams/gen_meander.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation in map view: a gentle bend in a blue river grows into a large loop, with the cut bank eroding on the outside and a sandy point bar growing inside; the neck thins, the river cuts through it, and the loop is left as an oxbow lake beside the new, shorter channel."
+    }
+   ]
+  },
+  {
+   "id": "evolution",
+   "title": "How drainage changes over time",
+   "slides": "47-50",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/piracy_47.webp",
+      "slide": "slide 47",
+      "alt": "Two block diagrams: first a stream's headward erosion eats into the divide next to the Persephone River; then it has captured that river, leaving a dry channel and a water gap."
+     },
+     "title": "Stream piracy",
+     "bullets": [
+      "**Stream piracy** is when one stream **captures** another stream's flow.",
+      "A stream with vigorous **headward erosion** cuts through the divide between two watersheds and steals the neighbouring stream's water.",
+      "Downstream of the point of capture, the old channel **dries up**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/rejuvenation_48.webp",
+      "slide": "slide 48",
+      "alt": "Aerial photo of a river winding in deep, tight loops cut far down into layered rock."
+     },
+     "title": "Stream rejuvenation",
+     "bullets": [
+      "**Stream rejuvenation** starts when **base level falls**.",
+      "Meanders that formed on a gentle slope cut straight down when **uplift** raises the land, like a chainsaw. This makes **incised meanders**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/superposed_49.webp",
+      "slide": "slide 49",
+      "alt": "Two block diagrams: a stream flows on flat young layers above folded older rock and an unconformity; later it has cut down through the folded rock, keeping its old path and leaving a water gap."
+     },
+     "title": "Superposed streams",
+     "bullets": [
+      "**Superposed streams** cross deformed rock but ignore its structure.",
+      "They first formed on **younger, flat-lying layers**. As the stream cut down into the **older, deformed rock** below, it kept the path it had before."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/antecedent_50.webp",
+      "slide": "slide 50",
+      "alt": "Block diagrams of drainage before uplift, then a rising mountain range that a stream either cuts straight through (antecedent) or is pushed around onto a new course (diverted)."
+     },
+     "title": "Antecedent and diverted streams",
+     "bullets": [
+      "If a mountain range rises across a stream's path, the stream either cuts across it or is diverted.",
+      "If **erosion is faster than uplift**, the stream cuts through the range: an **antecedent stream**.",
+      "If **uplift is faster than erosion**, the range deflects the stream: a **diverted stream**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A stream keeps working on whatever surface it already has. Whether it keeps its course depends on whether it can cut down as fast as the land changes."
+    },
+    {
+     "type": "trick",
+     "text": "Antecedent = 'ante' (before): the stream was there before the mountains and won the race."
+    },
+    {
+     "type": "trap",
+     "text": "A superposed stream was set on younger flat layers ABOVE the structure; an antecedent stream was there BEFORE the uplift. Both cut across structure, for different reasons."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 47-50; Fig. 14.19b, 14.20, 14.21, 14.22."
+   ],
+   "images": [
+    {
+     "src": "img/streams/piracy_47.webp",
+     "slide": "slide 47",
+     "alt": "Two block diagrams: first a stream's headward erosion eats into the divide next to the Persephone River; then it has captured that river, leaving a dry channel and a water gap."
+    },
+    {
+     "src": "img/streams/rejuvenation_48.webp",
+     "slide": "slide 48",
+     "alt": "Aerial photo of a river winding in deep, tight loops cut far down into layered rock."
+    },
+    {
+     "src": "img/streams/superposed_49.webp",
+     "slide": "slide 49",
+     "alt": "Two block diagrams: a stream flows on flat young layers above folded older rock and an unconformity; later it has cut down through the folded rock, keeping its old path and leaving a water gap."
+    },
+    {
+     "src": "img/streams/antecedent_50.webp",
+     "slide": "slide 50",
+     "alt": "Block diagrams of drainage before uplift, then a rising mountain range that a stream either cuts straight through (antecedent) or is pushed around onto a new course (diverted)."
+    }
+   ]
+  },
+  {
+   "id": "deltas",
+   "title": "Deltas",
+   "slides": "51-55 (80 is a review question)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/deltas_51.webp",
+      "slide": "slide 51",
+      "alt": "Three maps of deltas: a triangular delta on the Atlantic coast of Africa, an arc-shaped delta on the Mediterranean, and a bird's-foot delta in the Gulf of Mexico."
+     },
+     "title": "What a delta is",
+     "bullets": [
+      "**Deltas** are sediment deposited at the **mouth** of a stream. Where a stream enters standing water, the current slows, loses competence and drops its sediment.",
+      "On top of a delta the stream splits into a fan of **distributary channels**. They form because sediment dropped in the channel diverts the flow.",
+      "A delta's shape (**Δ-shaped**, **arc-like** or **bird's-foot**) depends on sediment supply and on the strength of the river compared with the ocean currents and waves that carry sediment away."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/lobes_52.webp",
+      "slide": "slide 52",
+      "alt": "Satellite image of a delta lobe with channels branching into the sea and narrow strips of green natural levees along them."
+     },
+     "title": "Abandoned lobes",
+     "bullets": [
+      "Abandoned **delta lobes** no longer get sediment from distributary channels.",
+      "They **compact and sink (subside)**, and storm waves attack the delta front."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/avulsion_53.webp",
+      "slide": "slide 53",
+      "alt": "Map of the Mississippi delta showing six old delta lobes, A to F, built at different times over the last 7,500 years, around New Orleans and Baton Rouge."
+     },
+     "title": "Avulsion",
+     "bullets": [
+      "The main channel feeding a delta can **jump** to a new location to find a steeper, shorter path to the sea. This is **avulsion**.",
+      "The Mississippi River has done this several times in the past **7,500 years**. Each old lobe (A to F on the map) is a past position of the delta."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/huang_54.webp",
+      "slide": "slide 54",
+      "alt": "Map of eastern China with coloured lines showing where the lower Huang (Yellow) River flowed in different periods from 2300 BCE to today, some reaching the sea north and some south of the Shandong Peninsula."
+     },
+     "title": "The Huang (Yellow) River",
+     "bullets": [
+      "The lower Huang (Yellow) River has changed course many times since 2300 BCE.",
+      "Its mouth has moved to both sides of the **Shandong Peninsula**, hundreds of kilometres apart."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "When river water meets still water it slows abruptly, so it can no longer carry its load and the sediment piles up."
+    },
+    {
+     "type": "trick",
+     "text": "Distributaries are the reverse of tributaries: they split water off instead of adding it."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 80 review question: deltas are sedimentary accumulations at BASE LEVEL (where the stream meets standing water), not at point bars or river avulsions."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 51-55; Fig. 14.17, 14.17c, 14.18; slides 54-55 are two versions of a Huang and Yangtze map.",
+    "Slide 80 is a review question (answer C, base level)."
+   ],
+   "images": [
+    {
+     "src": "img/streams/deltas_51.webp",
+     "slide": "slide 51",
+     "alt": "Three maps of deltas: a triangular delta on the Atlantic coast of Africa, an arc-shaped delta on the Mediterranean, and a bird's-foot delta in the Gulf of Mexico."
+    },
+    {
+     "src": "img/streams/lobes_52.webp",
+     "slide": "slide 52",
+     "alt": "Satellite image of a delta lobe with channels branching into the sea and narrow strips of green natural levees along them."
+    },
+    {
+     "src": "img/streams/avulsion_53.webp",
+     "slide": "slide 53",
+     "alt": "Map of the Mississippi delta showing six old delta lobes, A to F, built at different times over the last 7,500 years, around New Orleans and Baton Rouge."
+    },
+    {
+     "src": "img/streams/huang_54.webp",
+     "slide": "slide 54",
+     "alt": "Map of eastern China with coloured lines showing where the lower Huang (Yellow) River flowed in different periods from 2300 BCE to today, some reaching the sea north and some south of the Shandong Peninsula."
+    }
+   ]
+  },
+  {
+   "id": "floods",
+   "title": "Floods",
+   "slides": "58-65, 45",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/floods_58.webp",
+      "slide": "slide 58",
+      "alt": "A helicopter lifting a person from churning floodwater, and an aerial photo of a town and highway surrounded by flood water."
+     },
+     "title": "Raging waters",
+     "bullets": [
+      "During a **flood**, discharge and velocity increase and water spills out of the channel, covering the land next to it.",
+      "Flood water scours floodplains, changes the landscape and destroys buildings."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/seasonal_59.webp",
+      "slide": "slide 59",
+      "alt": "Aerial photo of a village with houses standing in brown flood water and people wading between them."
+     },
+     "title": "Seasonal floods",
+     "bullets": [
+      "**Seasonal floods** build over hours or days, so people have time to evacuate. But so many people live on floodplains and delta plains that losses are still huge.",
+      "Seasonal floods come back every year. **Monsoons**, the tropical rains of the Indian subcontinent, bring long periods of rain and severe flooding. In **1990** the monsoon killed **100,000** people in Bangladesh."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/flood1993_60.webp",
+      "slide": "slide 60",
+      "alt": "Two satellite images of where the Illinois, Mississippi and Missouri Rivers meet: thin rivers in August 1991, and wide dark flood water covering the land in August 1993."
+     },
+     "title": "Mississippi and Missouri Rivers, 1993",
+     "bullets": [
+      "In spring 1993 the **jet stream** sat over the midwestern U.S. and trapped moist air from the Gulf of Mexico, so rain fell for a long time.",
+      "From July 1993 the flood lasted **79 days** and covered **40,000 square miles**. 50 people died, 55,000 homes were destroyed and damage reached **$12 billion**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/indus2010_61.webp",
+      "slide": "slide 61",
+      "alt": "Map of Pakistan with a wide blue band of flooded land along the Indus River from the north to Karachi, and a photo of submerged fields."
+     },
+     "title": "Indus Valley, Pakistan, 2010",
+     "bullets": [
+      "In 2010 a huge band of land along the **Indus River** in Pakistan was flooded."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/indus2022_62.webp",
+      "slide": "slide 62",
+      "alt": "Two satellite images of the same part of Pakistan on August 27, 2021 and August 27, 2022; in 2022 a large dark blue area of flood water covers land that was dry the year before."
+     },
+     "title": "Indus Valley, 2021 and 2022",
+     "bullets": [
+      "Satellite images of the same day in 2021 and 2022 show how much of the Indus valley flooded in 2022."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/flash_63.webp",
+      "slide": "slide 63",
+      "alt": "An old drawing of people and houses swept away in a flood, and a photo of a helicopter rescuing a person from rushing floodwater."
+     },
+     "title": "Flash floods",
+     "bullets": [
+      "**Flash floods** rise so quickly that escape may be impossible: a fast-moving wall of water full of debris.",
+      "They come from unusually **intense rainfall**, a **dam collapse** or a **levee failure**, with little warning.",
+      "In **1889** a flash flood from a dam failure killed **2,300** people in Johnstown, Pennsylvania."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/bigthompson_64.webp",
+      "slide": "slide 64",
+      "alt": "Photo of a house knocked off its foundation and a wrecked bridge in a rocky river valley after a flood."
+     },
+     "title": "Big Thompson River, Colorado, 1976",
+     "bullets": [
+      "On July 31, 1976, **19 cm** of rain fell on the Rockies in about an hour.",
+      "Discharge in the Big Thompson River rose to **four times** the largest ever recorded. Rock and soil joined the flow, houses, bridges and roads vanished, and **144** people died."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/calgary2013_45.webp",
+      "slide": "slide 45",
+      "alt": "Aerial photo of a Calgary neighbourhood almost completely surrounded by the brown, flooded Bow River in 2013."
+     },
+     "title": "Calgary, 2013",
+     "bullets": [
+      "In June 2013 the **Bow River** flooded neighbourhoods in Calgary."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/gen_causes.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four panels: abrupt heavy rain dumping water quickly; long continuous rain that has already filled the soil's pores; sudden warm weather melting snow; and a natural or artificial dam breaking."
+     },
+     "title": "What causes floods",
+     "bullets": [
+      "Floods happen when **abrupt, heavy rain** dumps a lot of water quickly,",
+      "when **long, continuous rain** has already **saturated** the soil,",
+      "when **abrupt warm weather** melts winter snow fast,",
+      "or when a **natural or artificial dam** breaks."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Once soil is full of water or frozen, rain and melt can't soak in, so almost all of it runs straight to the channels."
+    },
+    {
+     "type": "trick",
+     "text": "Seasonal = slow and yearly (time to leave). Flash = sudden wall of water (no time)."
+    },
+    {
+     "type": "trap",
+     "text": "Seasonal floods allow time to evacuate, yet they still cause enormous losses because so many people live on floodplains."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 58-65 and 45 (Bow River, Calgary, 2013 photo); Fig. 14.1, 14.23a-c, 14.24a, b. Slides 61-62 are the Indus 2010 map and 2021/2022 satellite images.",
+    "Slide 65 repeats the Big Thompson photo, so the causes list uses an original diagram."
+   ],
+   "images": [
+    {
+     "src": "img/streams/floods_58.webp",
+     "slide": "slide 58",
+     "alt": "A helicopter lifting a person from churning floodwater, and an aerial photo of a town and highway surrounded by flood water."
+    },
+    {
+     "src": "img/streams/seasonal_59.webp",
+     "slide": "slide 59",
+     "alt": "Aerial photo of a village with houses standing in brown flood water and people wading between them."
+    },
+    {
+     "src": "img/streams/flood1993_60.webp",
+     "slide": "slide 60",
+     "alt": "Two satellite images of where the Illinois, Mississippi and Missouri Rivers meet: thin rivers in August 1991, and wide dark flood water covering the land in August 1993."
+    },
+    {
+     "src": "img/streams/indus2010_61.webp",
+     "slide": "slide 61",
+     "alt": "Map of Pakistan with a wide blue band of flooded land along the Indus River from the north to Karachi, and a photo of submerged fields."
+    },
+    {
+     "src": "img/streams/indus2022_62.webp",
+     "slide": "slide 62",
+     "alt": "Two satellite images of the same part of Pakistan on August 27, 2021 and August 27, 2022; in 2022 a large dark blue area of flood water covers land that was dry the year before."
+    },
+    {
+     "src": "img/streams/flash_63.webp",
+     "slide": "slide 63",
+     "alt": "An old drawing of people and houses swept away in a flood, and a photo of a helicopter rescuing a person from rushing floodwater."
+    },
+    {
+     "src": "img/streams/bigthompson_64.webp",
+     "slide": "slide 64",
+     "alt": "Photo of a house knocked off its foundation and a wrecked bridge in a rocky river valley after a flood."
+    },
+    {
+     "src": "img/streams/calgary2013_45.webp",
+     "slide": "slide 45",
+     "alt": "Aerial photo of a Calgary neighbourhood almost completely surrounded by the brown, flooded Bow River in 2013."
+    },
+    {
+     "src": "img/streams/gen_causes.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four panels: abrupt heavy rain dumping water quickly; long continuous rain that has already filled the soil's pores; sudden warm weather melting snow; and a natural or artificial dam breaking."
+    }
+   ]
+  },
+  {
+   "id": "living",
+   "title": "Living with floods",
+   "slides": "66-77",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/levees_66.webp",
+      "slide": "slide 66",
+      "alt": "Photo of water rushing through a broken levee, and a drawing of an artificial levee holding back river water above the old ground surface, with water seeping under it, a slump and puddles on the dry side."
+     },
+     "title": "Levees and dams",
+     "bullets": [
+      "**Flood control** is expensive and sometimes useless. **Dams** hold water back from trunk streams.",
+      "**Artificial levees** and flood walls make the channel hold more water, but they pass **stronger flooding downstream**.",
+      "Levees are sometimes **overtopped** or **undermined**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/floodway_67.webp",
+      "slide": "slide 67",
+      "alt": "Map of the Mississippi River at Davenport and Rock Island with the areas a 100-year (1%) flood would cover in light blue and a 500-year (0.2%) flood in green."
+     },
+     "title": "Floodways",
+     "bullets": [
+      "People living on floodplains face hard choices: move, or eventually suffer a catastrophic loss.",
+      "Defining **floodways** (places designed to carry floods) and moving people and buildings out of them can reduce the losses.",
+      "After the 1972 flood in Rapid City, South Dakota (238 deaths), houses and motels were raised or moved and most of the floodplain became parks."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/recurrence_68.webp",
+      "slide": "slide 68",
+      "alt": "Graph of discharge in cubic feet per second against recurrence interval in years on a logarithmic scale; the points fall on a rising straight line from about 1 year to over 100 years."
+     },
+     "title": "Recurrence intervals",
+     "bullets": [
+      "Flood risk is calculated as a **probability**.",
+      "Plotting discharges against their **recurrence interval** on semi-logarithmic paper gives a **straight line**. The chance of a given discharge can be read from the graph."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/gen_recurrence.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bars showing that a 2-year flood has a 50% chance each year, a 100-year flood a 1% chance and a 500-year flood a 0.2% chance."
+     },
+     "title": "The chance each year",
+     "bullets": [
+      "A **2-year flood** has a **50%** chance of happening in any year; a **100-year flood** a **1%** chance; a **500-year flood** a **0.2%** chance.",
+      "A '100-year flood' can happen two years in a row; it just has a 1% chance each year."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/riskmap_69.webp",
+      "slide": "slide 69",
+      "alt": "Block diagram of a valley with a non-flood channel and dashed lines marking the limit of the 2-year flood (50% probability) close to the stream and the 100-year flood (1% probability) farther out."
+     },
+     "title": "Flood risk maps",
+     "bullets": [
+      "Hydrologic data are used to draw **flood risk maps**, so regulators can manage risk. Building in flood-prone places is tightly regulated.",
+      "Flood risk is carried by homeowners, insurance companies, lenders and government agencies."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/calgarymap_71.webp",
+      "slide": "slide 71",
+      "alt": "Map of central Calgary where the Bow and Elbow Rivers meet, showing the normal water surface, the floodway of deep, fast water and the floodplain of shallow, slow water in 2013."
+     },
+     "title": "Calgary's floodway and floodplain",
+     "bullets": [
+      "This map of central Calgary in 2013 separates the **floodway** (deep, fast-moving water) from the **floodplain** (shallow, slow-moving water)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/redcurve_75.webp",
+      "slide": "slide 75",
+      "alt": "Graph of Red River discharge in cubic metres per second against return period in years on logarithmic scales, with big floods labelled 1776, 1826, 1852, 1997 and others near the top right."
+     },
+     "title": "Red River flood frequency",
+     "bullets": [
+      "The same kind of graph for the **Red River** marks its largest floods, such as 1826, 1852 and 1997, at the long-recurrence end."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/redriver1997_77.webp",
+      "slide": "slide 77",
+      "alt": "Radar satellite image from May 1, 1997 showing a huge blue area of flood water south of Winnipeg along the Red River, the floodway around the city and the Brunkild dike extension."
+     },
+     "title": "Red River, 1997",
+     "bullets": [
+      "In **May 1997** the Red River flooded a huge area south of Winnipeg. The Floodway carried water around the city."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/redriver2011_74.webp",
+      "slide": "slide 74",
+      "alt": "Radar map of the Red River flood extent on May 2, 2011, from the U.S. into Manitoba, with flooded areas in blue."
+     },
+     "title": "Red River, 2011",
+     "bullets": [
+      "The Red River flooded again in **2011**, shown here by radar satellite imagery."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/winnipeg_76.webp",
+      "slide": "slide 76",
+      "alt": "Map of Winnipeg showing the Red River Floodway channel curving around the east side of the city, its inlet and outlet control structures, and the West Dike."
+     },
+     "title": "The Red River Floodway",
+     "bullets": [
+      "Winnipeg's **Floodway** is a channel that takes Red River flood water **around the city**, with control structures at its inlet and outlet and dikes to the west."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Levees squeeze the water into a narrower space, so it rises higher and moves the flood problem downstream."
+    },
+    {
+     "type": "trick",
+     "text": "% chance each year = 100 ÷ recurrence interval. 100-year → 1%, 2-year → 50%."
+    },
+    {
+     "type": "trap",
+     "text": "A 100-year flood is not one that happens only once a century. It has a 1% chance EVERY year."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 66-77; Fig. 14.25a, b and 14.26a-c. Slide 72 is a news headline about Alberta flood zones (not shown). Slide 73 is a Wikipedia quote on Rapid City.",
+    "Recurrence → yearly % values come from slides 67 and 69; '100 ÷ recurrence interval' and 'can happen two years in a row' are explanations added for clarity."
+   ],
+   "images": [
+    {
+     "src": "img/streams/levees_66.webp",
+     "slide": "slide 66",
+     "alt": "Photo of water rushing through a broken levee, and a drawing of an artificial levee holding back river water above the old ground surface, with water seeping under it, a slump and puddles on the dry side."
+    },
+    {
+     "src": "img/streams/floodway_67.webp",
+     "slide": "slide 67",
+     "alt": "Map of the Mississippi River at Davenport and Rock Island with the areas a 100-year (1%) flood would cover in light blue and a 500-year (0.2%) flood in green."
+    },
+    {
+     "src": "img/streams/recurrence_68.webp",
+     "slide": "slide 68",
+     "alt": "Graph of discharge in cubic feet per second against recurrence interval in years on a logarithmic scale; the points fall on a rising straight line from about 1 year to over 100 years."
+    },
+    {
+     "src": "img/streams/gen_recurrence.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bars showing that a 2-year flood has a 50% chance each year, a 100-year flood a 1% chance and a 500-year flood a 0.2% chance."
+    },
+    {
+     "src": "img/streams/riskmap_69.webp",
+     "slide": "slide 69",
+     "alt": "Block diagram of a valley with a non-flood channel and dashed lines marking the limit of the 2-year flood (50% probability) close to the stream and the 100-year flood (1% probability) farther out."
+    },
+    {
+     "src": "img/streams/calgarymap_71.webp",
+     "slide": "slide 71",
+     "alt": "Map of central Calgary where the Bow and Elbow Rivers meet, showing the normal water surface, the floodway of deep, fast water and the floodplain of shallow, slow water in 2013."
+    },
+    {
+     "src": "img/streams/redcurve_75.webp",
+     "slide": "slide 75",
+     "alt": "Graph of Red River discharge in cubic metres per second against return period in years on logarithmic scales, with big floods labelled 1776, 1826, 1852, 1997 and others near the top right."
+    },
+    {
+     "src": "img/streams/redriver1997_77.webp",
+     "slide": "slide 77",
+     "alt": "Radar satellite image from May 1, 1997 showing a huge blue area of flood water south of Winnipeg along the Red River, the floodway around the city and the Brunkild dike extension."
+    },
+    {
+     "src": "img/streams/redriver2011_74.webp",
+     "slide": "slide 74",
+     "alt": "Radar map of the Red River flood extent on May 2, 2011, from the U.S. into Manitoba, with flooded areas in blue."
+    },
+    {
+     "src": "img/streams/winnipeg_76.webp",
+     "slide": "slide 76",
+     "alt": "Map of Winnipeg showing the Red River Floodway channel curving around the east side of the city, its inlet and outlet control structures, and the West Dike."
+    }
+   ]
+  },
+  {
+   "id": "resource",
+   "title": "Rivers: a vanishing resource?",
+   "slides": "57, 78-79",
+   "steps": [
+    {
+     "img": {
+      "src": "img/streams/pollution_57.webp",
+      "slide": "slide 57",
+      "alt": "A river channel under cleanup with steel walls and a crane, a pipe draining into a stream, and a rainbow sheen of oil on water."
+     },
+     "title": "Pollution",
+     "bullets": [
+      "Rivers have guided where people settle for hundreds of thousands of years. They provide drinking water, food, transport, energy, recreation and waste disposal.",
+      "Rivers are still abused. Pollution includes human and animal **sewage**, **heavy metals**, **fertilizers**, **pesticides**, **road salt**, **oil** and **toxic wastes**.",
+      "The Housatonic River in Massachusetts is being cleaned of sediment contaminated with **PCBs**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/dams_78.webp",
+      "slide": "slide 78",
+      "alt": "A tall concrete dam under an arch bridge, an aerial view of fields dotted with shining farm ponds, and a reservoir's branching arms."
+     },
+     "title": "Dams",
+     "bullets": [
+      "People have dammed rivers widely, with **both good and bad** results.",
+      "The bright dots in the aerial photo are sunlight reflecting off dammed farm ponds in central Missouri."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/streams/irrigation_79.webp",
+      "slide": "slide 79",
+      "alt": "Aerial photo of a long concrete canal carrying water across a desert past houses and roads."
+     },
+     "title": "Too much taken",
+     "bullets": [
+      "In many places, especially **dry (arid)** ones, people take so much river water for **irrigation and industry** that too little is left for the river's natural water and ecological functions."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Whatever goes into the watershed (salt, fertilizer, oil) ends up in the river that drains it."
+    },
+    {
+     "type": "trick",
+     "text": "Rivers give: water, food, transport, energy, fun, waste disposal. People take too much and put in too much."
+    },
+    {
+     "type": "trap",
+     "text": "Dams have BOTH positive and negative consequences; the deck does not call them only harmful."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 57, 78-79; Fig. 14.27."
+   ],
+   "images": [
+    {
+     "src": "img/streams/pollution_57.webp",
+     "slide": "slide 57",
+     "alt": "A river channel under cleanup with steel walls and a crane, a pipe draining into a stream, and a rainbow sheen of oil on water."
+    },
+    {
+     "src": "img/streams/dams_78.webp",
+     "slide": "slide 78",
+     "alt": "A tall concrete dam under an arch bridge, an aerial view of fields dotted with shining farm ponds, and a reservoir's branching arms."
+    },
+    {
+     "src": "img/streams/irrigation_79.webp",
+     "slide": "slide 79",
+     "alt": "Aerial photo of a long concrete canal carrying water across a desert past houses and roads."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Stream features at a glance",
+  "head": [
+   "Feature",
+   "Where it forms",
+   "What makes it"
+  ],
+  "rows": [
+   [
+    "Pothole",
+    "Bedrock stream beds",
+    "Sand and gravel swirled by turbulent eddies"
+   ],
+   [
+    "Waterfall and plunge pool",
+    "Very steep gradient, often a resistant ledge",
+    "Falling water scours the base; the rock above collapses"
+   ],
+   [
+    "Alluvial fan",
+    "Base of a mountain front",
+    "Sudden drop in gradient makes the stream drop its load"
+   ],
+   [
+    "Braided stream",
+    "Channels choked with sediment",
+    "Flow splits around unstable sand and gravel bars"
+   ],
+   [
+    "Cut bank",
+    "Outside of a meander bend",
+    "Fastest water erodes the bank"
+   ],
+   [
+    "Point bar",
+    "Inside of a meander bend",
+    "Slower water deposits sediment"
+   ],
+   [
+    "Oxbow lake",
+    "Floodplain beside a meandering stream",
+    "A flood cuts through a meander neck"
+   ],
+   [
+    "Stream terrace",
+    "Valley sides, in pairs",
+    "The stream cuts down into its old floodplain"
+   ],
+   [
+    "Delta",
+    "Mouth of a stream at standing water",
+    "Current slows, loses competence and drops sediment"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "stm-c1",
+   "front": "Stream runoff",
+   "back": "Water in motion over the land surface. It is one part of the hydrologic cycle.",
+   "short": "Water moving over the land",
+   "src": "Slides 3, 6"
+  },
+  {
+   "id": "stm-c2",
+   "front": "Hydrologic cycle",
+   "back": "The cycle of water leaving the sea and returning to it: evaporation, transpiration, precipitation, infiltration and runoff.",
+   "short": "Water leaves the sea and comes back",
+   "src": "Slides 6, 81"
+  },
+  {
+   "id": "stm-c3",
+   "front": "Transpiration",
+   "back": "Water released into the air by plants. One part of the hydrologic cycle.",
+   "short": "Water given off by plants",
+   "src": "Slide 6"
+  },
+  {
+   "id": "stm-c4",
+   "front": "Infiltration",
+   "back": "Water soaking into the ground, where some of it becomes groundwater.",
+   "short": "Water soaking into the ground",
+   "src": "Slides 6-7"
+  },
+  {
+   "id": "stm-c5",
+   "front": "Sheetwash",
+   "back": "A thin surface layer of water that moves down the steepest slope. It is where streamflow begins.",
+   "short": "Thin sheet of water down the slope",
+   "src": "Slide 8"
+  },
+  {
+   "id": "stm-c6",
+   "front": "Rill",
+   "back": "A tiny channel cut by sheetwash. Rills join, deepen and cut down into one channel.",
+   "short": "Tiny channel made by sheetwash",
+   "src": "Slide 8"
+  },
+  {
+   "id": "stm-c7",
+   "front": "Headward erosion",
+   "back": "Intense scouring where sheetflow enters the top of a channel. It lengthens the channel uphill and lets networks expand.",
+   "short": "Channel grows uphill at its head",
+   "src": "Slide 9"
+  },
+  {
+   "id": "stm-c8",
+   "front": "Tributary",
+   "back": "A smaller stream that joins a larger trunk stream.",
+   "short": "Small stream joining a bigger one",
+   "src": "Slide 10"
+  },
+  {
+   "id": "stm-c9",
+   "front": "Drainage network",
+   "back": "The whole set of linked channels: tributaries feeding a trunk stream.",
+   "short": "All the linked channels",
+   "src": "Slide 10"
+  },
+  {
+   "id": "stm-c10",
+   "front": "Dendritic drainage",
+   "back": "A drainage pattern branching like a tree. It forms on fairly uniform rock.",
+   "short": "Tree-like; uniform rock",
+   "src": "Slide 11"
+  },
+  {
+   "id": "stm-c11",
+   "front": "Radial drainage",
+   "back": "Streams running outward in all directions from a point uplift such as a volcano or mesa.",
+   "short": "Spokes from a peak",
+   "src": "Slide 12"
+  },
+  {
+   "id": "stm-c12",
+   "front": "Rectangular drainage",
+   "back": "Channels that follow joints crossing at 90° in the bedrock.",
+   "short": "Follows right-angle joints",
+   "src": "Slide 13"
+  },
+  {
+   "id": "stm-c13",
+   "front": "Trellis drainage",
+   "back": "A pattern in folded layers of alternating resistant and weak rock: long streams in weak layers, short tributaries at right angles.",
+   "short": "Folded resistant and weak layers",
+   "src": "Slide 14"
+  },
+  {
+   "id": "stm-c14",
+   "front": "Parallel drainage",
+   "back": "Streams running side by side down a surface with a uniform slope.",
+   "short": "Side by side on an even slope",
+   "src": "Slide 15"
+  },
+  {
+   "id": "stm-c15",
+   "front": "Drainage basin",
+   "back": "The land area that drains into one trunk stream. Also called a catchment or watershed.",
+   "short": "Land draining to one stream",
+   "src": "Slide 16"
+  },
+  {
+   "id": "stm-c16",
+   "front": "Drainage divide",
+   "back": "The high line separating neighbouring drainage basins. A raindrop goes to one basin or the other depending on its side.",
+   "short": "Line between two basins",
+   "src": "Slide 16"
+  },
+  {
+   "id": "stm-c17",
+   "front": "Continental divide",
+   "back": "A divide that separates flow to different oceans.",
+   "short": "Splits flow between oceans",
+   "src": "Slide 17"
+  },
+  {
+   "id": "stm-c18",
+   "front": "Permanent stream",
+   "back": "A stream that flows all year. Common with abundant rain, groundwater discharge and low evaporation.",
+   "short": "Flows all year",
+   "src": "Slide 19"
+  },
+  {
+   "id": "stm-c19",
+   "front": "Ephemeral stream",
+   "back": "A stream that does not flow all year. Common with low rainfall, a low water table and high evaporation.",
+   "short": "Dry part of the year",
+   "src": "Slide 19"
+  },
+  {
+   "id": "stm-c20",
+   "front": "Discharge",
+   "back": "The volume of water passing a point per unit of time: cross-sectional area × flow velocity.",
+   "short": "Volume per time; A × v",
+   "src": "Slide 20"
+  },
+  {
+   "id": "stm-c21",
+   "front": "Eddy",
+   "back": "A swirl in turbulent flow. Eddies mix the water and scour sediment and bedrock.",
+   "short": "Swirl in turbulent water",
+   "src": "Slides 22, 25"
+  },
+  {
+   "id": "stm-c22",
+   "front": "Pothole",
+   "back": "A hole drilled into bedrock by sand and gravel swirled by turbulent eddies.",
+   "short": "Hole drilled by swirling grit",
+   "src": "Slide 25"
+  },
+  {
+   "id": "stm-c23",
+   "front": "Bed load",
+   "back": "Larger grains that roll, slip and bounce (saltate) along the stream bed.",
+   "short": "Big grains along the bed",
+   "src": "Slide 26"
+  },
+  {
+   "id": "stm-c24",
+   "front": "Saltation",
+   "back": "The bouncing movement of bed-load grains along a stream bed.",
+   "short": "Grains bouncing along the bed",
+   "src": "Slide 26"
+  },
+  {
+   "id": "stm-c25",
+   "front": "Suspended load",
+   "back": "Fine particles (silt and clay) carried within the flow.",
+   "short": "Silt and clay in the water",
+   "src": "Slide 26"
+  },
+  {
+   "id": "stm-c26",
+   "front": "Dissolved load",
+   "back": "Ions from the weathering of minerals, carried dissolved in the water.",
+   "short": "Ions in solution",
+   "src": "Slide 26"
+  },
+  {
+   "id": "stm-c27",
+   "front": "Competence",
+   "back": "The largest grain size a stream can transport. It drops as velocity drops.",
+   "short": "Biggest grain it can move",
+   "src": "Slides 27-28"
+  },
+  {
+   "id": "stm-c28",
+   "front": "Capacity",
+   "back": "The maximum total load (coarse, fine and dissolved) a stream can carry.",
+   "short": "Total load it can carry",
+   "src": "Slide 27"
+  },
+  {
+   "id": "stm-c29",
+   "front": "Longitudinal profile",
+   "back": "A stream's elevation along its length: on average a concave-up curve, steep at the source and flat near the mouth.",
+   "short": "Concave-up curve source to mouth",
+   "src": "Slide 29"
+  },
+  {
+   "id": "stm-c30",
+   "front": "Base level",
+   "back": "The lowest point a stream can erode to. Ultimate base level is sea level; a lake is a local base level.",
+   "short": "Lowest level it can cut to",
+   "src": "Slide 30"
+  },
+  {
+   "id": "stm-c31",
+   "front": "Stream terrace",
+   "back": "A leftover piece of an old, higher floodplain, left when a stream cuts down into its alluvium.",
+   "short": "Step left from an old floodplain",
+   "src": "Slide 33"
+  },
+  {
+   "id": "stm-c32",
+   "front": "Plunge pool",
+   "back": "A pool scoured at the base of a waterfall by the falling water.",
+   "short": "Pool scoured below a waterfall",
+   "src": "Slide 35"
+  },
+  {
+   "id": "stm-c33",
+   "front": "Alluvial fan",
+   "back": "A fan-shaped deposit at the base of a mountain front where the stream gradient suddenly drops. Coarsest near the canyon mouth.",
+   "short": "Fan at a mountain front",
+   "src": "Slide 38"
+  },
+  {
+   "id": "stm-c34",
+   "front": "Braided stream",
+   "back": "A stream choked with sediment, splitting into many channels around unstable sand and gravel bars.",
+   "short": "Many channels around bars",
+   "src": "Slide 39"
+  },
+  {
+   "id": "stm-c35",
+   "front": "Cut bank",
+   "back": "The outside of a meander bend, where the fastest water erodes the bank.",
+   "short": "Outside of a bend; erosion",
+   "src": "Slides 42-43"
+  },
+  {
+   "id": "stm-c36",
+   "front": "Point bar",
+   "back": "The inside of a meander bend, where slower water deposits sediment.",
+   "short": "Inside of a bend; deposition",
+   "src": "Slides 42-43"
+  },
+  {
+   "id": "stm-c37",
+   "front": "Oxbow lake",
+   "back": "A curved lake left when a meander is cut off at its neck during a flood.",
+   "short": "Cut-off meander loop",
+   "src": "Slide 44"
+  },
+  {
+   "id": "stm-c38",
+   "front": "Stream piracy",
+   "back": "When a stream with vigorous headward erosion cuts through a divide and captures another stream's flow.",
+   "short": "One stream captures another",
+   "src": "Slide 47"
+  },
+  {
+   "id": "stm-c39",
+   "front": "Antecedent stream",
+   "back": "A stream that keeps cutting through a rising mountain range because erosion outpaces uplift.",
+   "short": "Cuts through rising mountains",
+   "src": "Slide 50"
+  },
+  {
+   "id": "stm-c40",
+   "front": "Avulsion",
+   "back": "When the main channel feeding a delta jumps to a new, steeper and shorter path to the sea.",
+   "short": "Delta channel jumps course",
+   "src": "Slide 53"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "stm-1",
+   "q": "Which list gives the three ways water is added to a stream channel?",
+   "options": [
+    "Rain, snowmelt and groundwater discharge",
+    "Evaporation, transpiration and infiltration",
+    "Tides, waves and ocean currents",
+    "Sheetwash, saltation and abrasion",
+    "Lakes, wetlands and glaciers only"
+   ],
+   "answer": 0,
+   "why": "Rain, snowmelt and groundwater discharge add water to a channel. Evaporation and infiltration remove water from the stream.",
+   "source": "Slide 7"
+  },
+  {
+   "id": "stm-2",
+   "q": "What is the hydrologic cycle?",
+   "options": [
+    "Clouds forming and making rain",
+    "Water leaving the sea and returning to it",
+    "The groundwater flow system only",
+    "Water entering and leaving the human body",
+    "The yearly rise and fall of a river"
+   ],
+   "answer": 1,
+   "why": "The hydrologic cycle is the whole loop of water leaving the sea (evaporation) and coming back to it (runoff and groundwater).",
+   "source": "Slide 81"
+  },
+  {
+   "id": "stm-3",
+   "q": "How do stream channels and drainage networks grow uphill into the landscape?",
+   "options": [
+    "By deposition on point bars inside each bend",
+    "By avulsion of the channel at the mouth",
+    "By headward erosion at the top of the channel",
+    "By saltation of pebbles along the bed",
+    "By a rise in base level that fills the valley"
+   ],
+   "answer": 2,
+   "why": "Headward erosion is intense scouring where sheetflow enters the uppermost part of a channel, so the channel lengthens upslope.",
+   "source": "Slide 9"
+  },
+  {
+   "id": "stm-4",
+   "q": "Streams flow outward in every direction from the top of a volcano. Which drainage pattern is this?",
+   "options": [
+    "Parallel",
+    "Dendritic",
+    "Trellis",
+    "Rectangular",
+    "Radial"
+   ],
+   "answer": 4,
+   "why": "Radial drainage develops from a point uplift such as a volcano or mesa.",
+   "source": "Slide 12",
+   "img": {
+    "src": "img/streams/radial_12.webp",
+    "alt": "Block diagram of streams running outward in all directions from a volcano, labelled Radial, and a photo of a rounded hill."
+   }
+  },
+  {
+   "id": "stm-5",
+   "q": "A drainage pattern branches like a tree. What does this tell you about the rock below?",
+   "options": [
+    "It is fairly uniform (homogeneous)",
+    "It is folded into hard and soft layers",
+    "It has joints crossing at 90°",
+    "It has a single steep, even slope",
+    "It is a recently uplifted volcano"
+   ],
+   "answer": 0,
+   "why": "Dendritic drainage forms on material that is relatively homogeneous, so no particular direction is easier for the water.",
+   "source": "Slide 11"
+  },
+  {
+   "id": "stm-6",
+   "q": "Trellis drainage develops where...",
+   "options": [
+    "the land slopes evenly in one direction",
+    "deformed layers of resistant and weak rock alternate",
+    "a single peak rises above flat land",
+    "the bedrock has joints crossing at right angles",
+    "the stream has reached its ultimate base level"
+   ],
+   "answer": 1,
+   "why": "Trellis drainage forms in deformed strata with alternating resistant and weak rocks.",
+   "source": "Slide 14",
+   "img": {
+    "src": "img/streams/trellis_14.webp",
+    "alt": "Aerial photo of long parallel ridges with a trunk stream and short tributaries, and an inset block diagram labelled Trellis showing resistant ridges."
+   }
+  },
+  {
+   "id": "stm-7",
+   "q": "What separates two neighbouring drainage basins?",
+   "options": [
+    "A point bar",
+    "A trunk stream",
+    "A drainage divide",
+    "A local base level",
+    "A distributary channel"
+   ],
+   "answer": 2,
+   "why": "A drainage divide is the high line between basins. A raindrop goes to one basin or the other depending on which side it lands.",
+   "source": "Slide 16"
+  },
+  {
+   "id": "stm-8",
+   "q": "Which conditions favour an ephemeral stream?",
+   "options": [
+    "Abundant rain, high water table, low evaporation",
+    "Abundant groundwater discharge all year",
+    "A rise in base level and more discharge",
+    "A uniform slope and homogeneous rock",
+    "Low rainfall, low water table, high evaporation"
+   ],
+   "answer": 4,
+   "why": "Ephemeral streams do not flow all year and are common where rainfall is low, the water table is low and evaporation is high.",
+   "source": "Slide 19",
+   "img": {
+    "src": "img/streams/permanent_19.webp",
+    "alt": "Two block diagrams: a forested valley where a high water table feeds a flowing river, and a dry desert valley with cactus where the water table sits below the dry channel."
+   }
+  },
+  {
+   "id": "stm-9",
+   "q": "A channel is 8 m wide and 2 m deep, and the water moves at 3 m/s. What is the discharge?",
+   "options": [
+    "13 m³/s",
+    "16 m³/s",
+    "24 m³/s",
+    "48 m³/s",
+    "96 m³/s"
+   ],
+   "answer": 3,
+   "why": "Discharge = area × velocity = (8 × 2) × 3 = 16 × 3 = 48 m³/s.",
+   "source": "Slide 20"
+  },
+  {
+   "id": "stm-10",
+   "q": "Where in a straight channel does water flow fastest?",
+   "options": [
+    "In the deeper centre, away from the edges",
+    "Along the bed",
+    "Evenly everywhere across the channel",
+    "Along the banks",
+    "Wherever the channel is shallowest"
+   ],
+   "answer": 0,
+   "why": "Friction slows the water along the edges, so water flows faster in the deeper centre.",
+   "source": "Slide 21"
+  },
+  {
+   "id": "stm-11",
+   "q": "In a curved channel, which part is scoured and deepened?",
+   "options": [
+    "The inside of the curve",
+    "The outside of the curve",
+    "Both banks equally",
+    "Only the downstream end",
+    "Neither bank; only the bed"
+   ],
+   "answer": 1,
+   "why": "The maximum velocity is swept to the outside of the curve, which is preferentially scoured and deepened.",
+   "source": "Slide 21"
+  },
+  {
+   "id": "stm-12",
+   "q": "Where does the energy that lets streams do erosional work come from?",
+   "options": [
+    "Heat from Earth's interior",
+    "Chemical energy in dissolved ions",
+    "Gravity acting on water the Sun lifted up",
+    "Wind blowing across the water surface",
+    "The rotation of the Earth"
+   ],
+   "answer": 2,
+   "why": "Streams convert potential energy to kinetic energy. The energy comes from gravity acting on water that was raised by the Sun through evaporation.",
+   "source": "Slide 23"
+  },
+  {
+   "id": "stm-13",
+   "q": "How do potholes form in stream beds?",
+   "options": [
+    "Dissolved ions eat holes in the bedrock",
+    "Ice wedges pry the rock apart",
+    "Groundwater collapses the rock from below",
+    "Boulders drop from waterfalls above",
+    "Sand and gravel swirled by eddies drill the rock"
+   ],
+   "answer": 4,
+   "why": "Potholes are formed by sand and gravel swirled by turbulent eddies; the abrasive material drills holes in the bedrock.",
+   "source": "Slide 25",
+   "img": {
+    "src": "img/streams/potholes_25.webp",
+    "alt": "Photos of a narrow, smooth-walled slot canyon and of round holes drilled through pale bedrock, one big enough for a person to stand in."
+   }
+  },
+  {
+   "id": "stm-14",
+   "q": "Pebbles bounce along a stream bed in short hops. What is this movement called, and which load is it part of?",
+   "options": [
+    "Saltation, in the bed load",
+    "Suspension, in the suspended load",
+    "Saltation, in the dissolved load",
+    "Avulsion, in the bed load",
+    "Infiltration, in the suspended load"
+   ],
+   "answer": 0,
+   "why": "Bed load grains roll, slip and bounce along the bed. The bouncing is saltation.",
+   "source": "Slide 26",
+   "img": {
+    "src": "img/streams/loads_26.webp",
+    "alt": "Cut-away drawing of a stream bed: boulders rolling, pebbles hopping (saltation), a magnified circle of dissolved ions and another of tiny suspended clay flakes."
+   }
+  },
+  {
+   "id": "stm-15",
+   "q": "Silt and clay carried within the flow make up the...",
+   "options": [
+    "bed load",
+    "suspended load",
+    "dissolved load",
+    "competence",
+    "base level"
+   ],
+   "answer": 1,
+   "why": "Suspended load is fine particles (silt and clay) entrained in the flow.",
+   "source": "Slide 26"
+  },
+  {
+   "id": "stm-16",
+   "q": "What is a stream's competence?",
+   "options": [
+    "The total amount of sediment it can carry",
+    "The volume of water passing per second",
+    "The lowest level it can erode to",
+    "The largest grain size it can move",
+    "The number of tributaries it has"
+   ],
+   "answer": 3,
+   "why": "Competence is the maximum grain size transported. Capacity is the maximum total load.",
+   "source": "Slide 27"
+  },
+  {
+   "id": "stm-17",
+   "q": "As a stream slows, which sediment settles in slack water?",
+   "options": [
+    "Boulders",
+    "Gravel",
+    "Coarse sand",
+    "Cobbles",
+    "Mud (silt and clay)"
+   ],
+   "answer": 4,
+   "why": "Competence decreases with velocity. Gravel settles in fast channels, sand on point bars and levees, and mud in slack water.",
+   "source": "Slide 28"
+  },
+  {
+   "id": "stm-18",
+   "q": "Compared with the headwaters, a stream near its mouth has...",
+   "options": [
+    "a flatter gradient, more discharge and finer grains",
+    "lower discharge and a straighter, rockier channel",
+    "a steeper gradient and coarser, rockier sediment",
+    "the same gradient but much less water in it",
+    "a rocky channel lined with coarse gravel"
+   ],
+   "answer": 0,
+   "why": "Near the mouth the gradient flattens, discharge increases, grains are smaller and broad meander belts develop.",
+   "source": "Slides 37, 40"
+  },
+  {
+   "id": "stm-19",
+   "q": "What is the ultimate base level for most streams?",
+   "options": [
+    "The nearest lake",
+    "Sea level",
+    "The top of a waterfall",
+    "A ledge of resistant rock",
+    "The water table"
+   ],
+   "answer": 1,
+   "why": "Base level is the lowest point to which a stream can erode. The ultimate base level is sea level; lakes and ledges are local base levels.",
+   "source": "Slide 30"
+  },
+  {
+   "id": "stm-20",
+   "q": "A dam raises the base level of a stream. What happens upstream of it?",
+   "options": [
+    "Erosion speeds up",
+    "Discharge doubles",
+    "The stream becomes braided at once",
+    "Deposition increases",
+    "Nothing changes"
+   ],
+   "answer": 3,
+   "why": "Raising base level results in an increase in deposition; lowering base level accelerates erosion.",
+   "source": "Slide 30"
+  },
+  {
+   "id": "stm-21",
+   "q": "A canyon wall has steep cliffs separated by gentler slopes. What explains this stair-step shape?",
+   "options": [
+    "The stream changed direction many times",
+    "Glaciers that melted in steps",
+    "Several floods of different sizes",
+    "Rising base level filling the valley",
+    "Alternating stronger and weaker rock layers"
+   ],
+   "answer": 4,
+   "why": "Stronger rocks produce vertical cliffs and weaker rocks produce sloped walls, giving a stair-step profile.",
+   "source": "Slide 32",
+   "img": {
+    "src": "img/streams/stairstep_32.webp",
+    "alt": "Photo of the Grand Canyon's stepped walls, and a drawing of hard and soft layers eroding over time into a stair-step canyon."
+   }
+  },
+  {
+   "id": "stm-22",
+   "q": "Paired terraces on both sides of a valley are...",
+   "options": [
+    "remnants of an older, higher floodplain",
+    "natural levees built by repeated floods",
+    "the outer edges of an alluvial fan",
+    "point bars left by a braided stream",
+    "ledges of resistant rock in the walls"
+   ],
+   "answer": 0,
+   "why": "When base level falls or discharge increases, the stream cuts down into its alluvium; paired terraces are remnants of the old floodplain.",
+   "source": "Slide 33",
+   "img": {
+    "src": "img/streams/terraces_33.webp",
+    "alt": "Two block diagrams: at Time 1 a raised base level lets a valley fill with yellow alluvium; at Time 2 a lowered base level lets the stream cut down, leaving terraces on both sides."
+   }
+  },
+  {
+   "id": "stm-23",
+   "q": "Why does Niagara Falls keep moving toward Lake Erie?",
+   "options": [
+    "The dolostone caprock dissolves quickly in the river water",
+    "Lake Ontario keeps rising and floods the gorge from below",
+    "Shale under the caprock erodes, so the caprock collapses",
+    "Winter ice pushes the whole falls upstream each year",
+    "Sediment piles up at the base and raises the falls"
+   ],
+   "answer": 2,
+   "why": "The dolostone caprock is resistant, but the shale beneath it erodes, so blocks of unsupported dolostone collapse and the falls retreat upstream.",
+   "source": "Slide 36"
+  },
+  {
+   "id": "stm-24",
+   "q": "Where is the coarsest sediment on an alluvial fan?",
+   "options": [
+    "At the outer edge of the fan",
+    "Spread evenly across the fan",
+    "In the lake beyond the fan",
+    "Near the mouth of the canyon",
+    "Only in the deepest layers"
+   ],
+   "answer": 3,
+   "why": "Sediment drops out rapidly where the gradient changes; the coarsest material is near the canyon mouth and gets finer and thinner with distance.",
+   "source": "Slide 38"
+  },
+  {
+   "id": "stm-25",
+   "q": "Which description fits a braided stream?",
+   "options": [
+    "One deep channel with tight loops",
+    "A dry channel left by stream piracy",
+    "A straight, rocky channel in the mountains",
+    "A channel cutting through a rising range",
+    "Many channels around unstable sand and gravel bars"
+   ],
+   "answer": 4,
+   "why": "Braided streams form where channels are choked by sediment; flow splits around bars and occupies many channels.",
+   "source": "Slide 39",
+   "img": {
+    "src": "img/streams/braided_39.webp",
+    "alt": "Aerial photo of a wide grey valley floor crossed by many shallow channels splitting and rejoining around gravel bars."
+   }
+  },
+  {
+   "id": "stm-26",
+   "q": "On a meander bend, where does deposition happen?",
+   "options": [
+    "On the cut bank, outside the bend",
+    "On the point bar, inside the bend",
+    "Equally on both banks",
+    "Only at the meander neck",
+    "Only during droughts"
+   ],
+   "answer": 1,
+   "why": "The fastest water erodes the outside (cut bank); the inside of the bend (point bar) is where sediment is deposited.",
+   "source": "Slides 42-43",
+   "img": {
+    "src": "img/streams/meander_time_42.webp",
+    "alt": "Four map drawings over time: a gently curving stream erodes on the outside of bends and deposits on the inside, grows point bars, forms a narrow meander neck and finally cuts off, leaving an oxbow lake."
+   }
+  },
+  {
+   "id": "stm-27",
+   "q": "How does an oxbow lake form?",
+   "options": [
+    "A landslide dam blocks a tributary valley",
+    "Headward erosion captures a neighbouring stream",
+    "Two cut banks meet and a flood cuts through the meander neck",
+    "The point bar grows right across the whole channel",
+    "Uplift lifts the stream high above its old floodplain"
+   ],
+   "answer": 2,
+   "why": "Meander cutoffs occur when cut banks converge and the neck thins; floodwater erodes the neck and the abandoned loop becomes an oxbow lake.",
+   "source": "Slide 44"
+  },
+  {
+   "id": "stm-28",
+   "q": "A mountain range rises across a stream, but the stream keeps cutting straight through it. Why, and what is it called?",
+   "options": [
+    "Uplift is faster than erosion; a diverted stream",
+    "It captured another stream; stream piracy",
+    "It flows on younger flat layers; a superposed stream",
+    "Erosion is faster than uplift; an antecedent stream",
+    "Base level rose; a braided stream"
+   ],
+   "answer": 3,
+   "why": "If erosion is faster than uplift, the stream cuts through the range: an antecedent stream. If uplift wins, the stream is diverted.",
+   "source": "Slide 50"
+  },
+  {
+   "id": "stm-29",
+   "q": "Deltas are sedimentary accumulations at...",
+   "options": [
+    "river avulsions",
+    "rock formations",
+    "base level",
+    "stream point bars",
+    "slope breaks"
+   ],
+   "answer": 2,
+   "why": "A delta forms where a stream enters standing water (its base level). The current slows, loses competence and drops its sediment.",
+   "source": "Slides 51, 80"
+  },
+  {
+   "id": "stm-30",
+   "q": "A town lies inside the 100-year flood limit. What is the chance of that flood in any one year?",
+   "options": [
+    "100%",
+    "50%",
+    "10%",
+    "1%",
+    "0.2%"
+   ],
+   "answer": 3,
+   "why": "A 100-year flood has a 1% probability each year. A 2-year flood is 50% and a 500-year flood 0.2%.",
+   "source": "Slides 67, 69",
+   "img": {
+    "src": "img/streams/riskmap_69.webp",
+    "alt": "Block diagram of a valley with a non-flood channel and dashed lines marking the limit of the 2-year flood (50% probability) close to the stream and the 100-year flood (1% probability) farther out."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "From rain to a stream channel",
+   "prompt": "Put the steps in order, from the first at the bottom to the last at the top.",
+   "why": "Water added to the surface first moves as sheetwash down the steepest slope. Sheetwash cuts tiny rills, the rills join, deepen and downcut, and finally the flow is concentrated in one channel that grows uphill by headward erosion.",
+   "topLabel": "End: a single channel",
+   "bottomLabel": "Start: water reaches the surface",
+   "layers": [
+    {
+     "name": "Rain or snowmelt adds water to the surface",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "Sheetwash moves down the steepest slope",
+     "color": "#3b82f6"
+    },
+    {
+     "name": "Tiny rills are cut",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Rills join, deepen and cut down",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Flow is concentrated in a single channel",
+     "color": "#1e3a8a"
+    }
+   ]
+  },
+  {
+   "title": "The life of a meander",
+   "prompt": "Put the stages in order, from the earliest at the bottom to the latest at the top.",
+   "why": "A gentle bend erodes on its outside (cut bank) and builds a point bar inside, so it grows more sinuous. Cut banks converge and the neck thins, a flood cuts through the neck, and the abandoned loop becomes an oxbow lake that slowly fills with sediment.",
+   "topLabel": "Latest",
+   "bottomLabel": "Earliest",
+   "layers": [
+    {
+     "name": "A gentle bend",
+     "color": "#93c5fd"
+    },
+    {
+     "name": "Cut bank erodes and point bar grows",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "The neck thins as cut banks converge",
+     "color": "#3b82f6"
+    },
+    {
+     "name": "A flood cuts through the neck",
+     "color": "#2563eb"
+    },
+    {
+     "name": "The loop becomes an oxbow lake",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "The oxbow lake fills with sediment",
+     "color": "#b45309"
+    }
+   ]
+  },
+  {
+   "title": "Down the longitudinal profile",
+   "prompt": "Put the places in order going downstream, from the source at the bottom to the mouth at the top.",
+   "why": "A stream starts in steep headwaters, collects tributaries into a trunk stream, meanders across a floodplain on the gentle lower profile and deposits a delta where it meets standing water.",
+   "topLabel": "Mouth",
+   "bottomLabel": "Source",
+   "layers": [
+    {
+     "name": "Steep, rocky headwaters",
+     "color": "#78716c"
+    },
+    {
+     "name": "Tributaries join the trunk stream",
+     "color": "#0ea5e9"
+    },
+    {
+     "name": "Meanders on a wide floodplain",
+     "color": "#22c55e"
+    },
+    {
+     "name": "Delta with distributary channels",
+     "color": "#d97706"
+    },
+    {
+     "name": "Standing water (base level)",
+     "color": "#1d4ed8"
+    }
+   ]
+  },
+  {
+   "title": "After base level drops",
+   "prompt": "Put the stages of the landscape in order, from the first at the bottom to the last at the top.",
+   "why": "Uplift lowers base level under swampy, low-relief land. Streams cut in and drain it, then valleys broaden, and finally the land is worn down to a new low-relief landscape at the new base level.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Swampy, low-relief land is uplifted",
+     "color": "#86efac"
+    },
+    {
+     "name": "Streams cut in: well-drained land",
+     "color": "#4ade80"
+    },
+    {
+     "name": "Valleys become broader",
+     "color": "#16a34a"
+    },
+    {
+     "name": "A new low-relief landscape",
+     "color": "#166534"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Erosion or deposition?",
+   "prompt": "Sort each feature or change by what mainly makes it.",
+   "buckets": [
+    "Mostly erosion",
+    "Mostly deposition"
+   ],
+   "items": [
+    {
+     "text": "Cut bank",
+     "b": 0
+    },
+    {
+     "text": "Pothole",
+     "b": 0
+    },
+    {
+     "text": "Headward erosion lengthens a channel",
+     "b": 0
+    },
+    {
+     "text": "Plunge pool below a waterfall",
+     "b": 0
+    },
+    {
+     "text": "Base level is lowered",
+     "b": 0
+    },
+    {
+     "text": "Point bar",
+     "b": 1
+    },
+    {
+     "text": "Alluvial fan",
+     "b": 1
+    },
+    {
+     "text": "Delta",
+     "b": 1
+    },
+    {
+     "text": "Base level is raised",
+     "b": 1
+    },
+    {
+     "text": "Gravel and sand bars of a braided stream",
+     "b": 1
+    }
+   ],
+   "why": "Fast water erodes: cut banks, potholes, plunge pools, headward erosion and the downcutting after base level falls. Slowing water deposits: point bars, alluvial fans, deltas, braided bars and the valley fill after base level rises."
+  },
+  {
+   "title": "Which load?",
+   "prompt": "Sort each description into bed load, suspended load or dissolved load.",
+   "buckets": [
+    "Bed load",
+    "Suspended load",
+    "Dissolved load"
+   ],
+   "items": [
+    {
+     "text": "Boulders rolling along the bottom",
+     "b": 0
+    },
+    {
+     "text": "Pebbles bouncing in hops (saltation)",
+     "b": 0
+    },
+    {
+     "text": "Cobbles that move only at high discharge",
+     "b": 0
+    },
+    {
+     "text": "Silt carried within the flow",
+     "b": 1
+    },
+    {
+     "text": "Clay particles in the water",
+     "b": 1
+    },
+    {
+     "text": "Fine particles entrained in the flow",
+     "b": 1
+    },
+    {
+     "text": "Ions from mineral weathering",
+     "b": 2
+    },
+    {
+     "text": "Material that cannot be seen in the water",
+     "b": 2
+    }
+   ],
+   "why": "Bed load stays on the bed (rolling, slipping, saltation). Suspended load is fine silt and clay in the flow. Dissolved load is ions from weathering, carried in solution."
+  },
+  {
+   "title": "Permanent or ephemeral?",
+   "prompt": "Sort each clue by the kind of stream it points to.",
+   "buckets": [
+    "Permanent stream",
+    "Ephemeral stream"
+   ],
+   "items": [
+    {
+     "text": "Flows all year",
+     "b": 0
+    },
+    {
+     "text": "Abundant rainfall",
+     "b": 0
+    },
+    {
+     "text": "Fed by groundwater discharge",
+     "b": 0
+    },
+    {
+     "text": "Low rates of evaporation",
+     "b": 0
+    },
+    {
+     "text": "Does not flow all year",
+     "b": 1
+    },
+    {
+     "text": "Low annual rainfall",
+     "b": 1
+    },
+    {
+     "text": "Low water table",
+     "b": 1
+    },
+    {
+     "text": "High rates of evaporation",
+     "b": 1
+    }
+   ],
+   "why": "Permanent streams flow all year where rain and groundwater keep them supplied and little water evaporates. Ephemeral streams dry up where rain is scarce, the water table is low and evaporation is high."
+  }
+ ],
+ "calc": [
+  "stm-discharge",
+  "stm-recurrence"
+ ]
+}
