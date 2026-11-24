@@ -1,0 +1,1968 @@
+{
+ "id": "solarlife",
+ "title": "Life in the Solar System",
+ "chapter": "Ch 24.2",
+ "icon": "🦠",
+ "color": "#15803d",
+ "slideFile": "none (no teacher slides; The Cosmic Perspective 10th ed., section 24.2)",
+ "intro": "Life seems to need nutrients, energy and liquid water, and liquid water is the rare one. Follow the water through the solar system: from ancient rivers and hidden underground pockets on Mars (and the Viking landers' puzzling soil tests, perchlorate, meteorites and methane), to the cool acidic clouds of Venus and the phosphine debate, to the buried oceans of Europa, Ganymede and Callisto, the methane lakes and cold volcanoes of Titan, the ice fountains of Enceladus, and even Triton and Pluto.",
+ "learningObjectives": [
+  {
+   "id": "lo-01",
+   "text": "Could there be life on Mars?"
+  },
+  {
+   "id": "lo-02",
+   "text": "Could there be life elsewhere in the solar system?"
+  }
+ ],
+ "sections": [
+  {
+   "id": "where",
+   "title": "Following the water",
+   "slides": "Textbook 24.2 opening (p. 719); 24.1 for the three necessities (p. 718)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_needs.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three cards: 1, nutrients, atoms and molecules to build living cells; 2, energy, from sunlight, chemical reactions or internal heat; 3, liquid water, the rare need that limits where life can be. Below: a habitable world is one that seems to have all the necessities of life."
+     },
+     "title": "Three needs, one bottleneck",
+     "bullets": [
+      "Life on Earth seems to need only three things: a source of **nutrients** (atoms and molecules to build cells), a source of **energy** (sunlight, chemical reactions or internal heat) and **liquid water**.",
+      "Nutrients and energy are available to some degree on almost every planet and moon. **Liquid water is rare**, so the search for life follows the water."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_ruled_out.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two columns. Ruled out: Mercury and the Moon (barren and dry); asteroids, comets and small moons (dry); Jupiter, Saturn, Uranus and Neptune (cloud droplets tossed by strong vertical winds cannot stay liquid). Worth a look: Mars; Europa and Enceladus; others such as Titan, Ganymede, Callisto, Triton, Pluto and perhaps Venus's clouds."
+     },
+     "title": "Worlds that are ruled out",
+     "bullets": [
+      "**Mercury and the Moon** are barren and dry. So are most **small bodies**: asteroids, comets and small moons.",
+      "The **jovian planets** may have droplets of liquid water in some clouds, but their **strong vertical winds** move the droplets around so they cannot stay liquid for long. That makes these planets unlikely homes for life."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_candidates_map.webp",
+      "slide": "none (original diagram)",
+      "alt": "A line of planets from the Sun outward, not to scale: Venus (clouds?), Earth (life), Mars (water ice), Jupiter with Europa in green and Ganymede and Callisto in amber, Saturn with Enceladus and Titan in green, Neptune with Triton in amber, and Pluto (activity?)."
+     },
+     "title": "Worlds still in the running",
+     "bullets": [
+      "A few worlds show evidence of liquid water, or of some other liquid mixture, that gives at least some possibility of life.",
+      "The most notable are **Mars** and a few **jovian moons**, especially Jupiter's moon **Europa** and Saturn's moon **Enceladus**.",
+      "There are a few other possibilities too, perhaps even the **clouds of Venus**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Nutrients and energy turn up almost everywhere, but liquid water does not. So the rare ingredient decides where it is worth looking."
+    },
+    {
+     "type": "trick",
+     "text": "Follow the water: no lasting liquid, no likely life."
+    },
+    {
+     "type": "trap",
+     "text": "Jupiter and Saturn may have water droplets in some clouds, yet they are still ruled out: strong vertical winds keep the droplets from staying liquid for long (textbook 24.2, p. 719)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2 opening paragraph (p. 719)",
+    "The three necessities of life are summarized from 24.1 (p. 718) only as background",
+    "Original diagrams: the three needs, worlds ruled out vs worth a look, and a map of candidate worlds"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_needs.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three cards: 1, nutrients, atoms and molecules to build living cells; 2, energy, from sunlight, chemical reactions or internal heat; 3, liquid water, the rare need that limits where life can be. Below: a habitable world is one that seems to have all the necessities of life."
+    },
+    {
+     "src": "img/solarlife/gen_ruled_out.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two columns. Ruled out: Mercury and the Moon (barren and dry); asteroids, comets and small moons (dry); Jupiter, Saturn, Uranus and Neptune (cloud droplets tossed by strong vertical winds cannot stay liquid). Worth a look: Mars; Europa and Enceladus; others such as Titan, Ganymede, Callisto, Triton, Pluto and perhaps Venus's clouds."
+    },
+    {
+     "src": "img/solarlife/gen_candidates_map.webp",
+     "slide": "none (original diagram)",
+     "alt": "A line of planets from the Sun outward, not to scale: Venus (clouds?), Earth (life), Mars (water ice), Jupiter with Europa in green and Ganymede and Callisto in amber, Saturn with Enceladus and Titan in green, Neptune with Triton in amber, and Pluto (activity?)."
+    }
+   ]
+  },
+  {
+   "id": "habitable",
+   "title": "Habitable worlds",
+   "slides": "Textbook 24.2: Could there be life on Mars? (p. 719)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_habitable.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two overlapping ovals: 'Habitable, has all the necessities of life' and 'Has life, living things are actually there'. Earth sits in the overlap. Each outer part asks: is a world here possible?"
+     },
+     "title": "What 'habitable' means",
+     "bullets": [
+      "When we search for worlds with the necessities of life as we know them from Earth, we are looking for **habitable worlds**.",
+      "A **habitable world** is one that **seems to have all the necessities of life**.",
+      "Think about it: could a world be habitable but have no life? Could a world have life but not be habitable? Being habitable describes the conditions; having life is a separate question."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Habitability is about conditions, so it can be judged from a distance. Whether life is actually there needs direct evidence."
+    },
+    {
+     "type": "trick",
+     "text": "Habitable = the table is set. Inhabited = someone is eating."
+    },
+    {
+     "type": "trap",
+     "text": "A habitable world is not the same as one known to have life; it only seems to have everything life needs (textbook 24.2, p. 719)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, definition of habitable world and the 'Think about it' question (p. 719)",
+    "Original Venn-style diagram"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_habitable.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two overlapping ovals: 'Habitable, has all the necessities of life' and 'Has life, living things are actually there'. Earth sits in the overlap. Each outer part asks: is a world here possible?"
+    }
+   ]
+  },
+  {
+   "id": "marspast",
+   "title": "Mars long ago",
+   "slides": "Textbook 24.2: Could there be life on Mars? (p. 719)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_mars_then_now.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of two panels. Early Mars: rain falls and liquid water flows along a valley floor. Mars today: the same valley is dry, with a white polar ice cap on the surface and a band of ice underground."
+     },
+     "title": "Water once flowed",
+     "bullets": [
+      "Mars seems to have been **habitable in the past**: there is strong evidence that **liquid water flowed** on Mars early in its history.",
+      "There is growing evidence that the water **lasted for long periods** on the surface.",
+      "That is why scientists hope we might someday find **fossil evidence of past life** on Mars."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Liquid water that lasted a long time gives life more chances to start and to leave traces behind."
+    },
+    {
+     "type": "trick",
+     "text": "Early Mars: wet. Mars today: frozen."
+    },
+    {
+     "type": "trap",
+     "text": "The evidence is for liquid water in Mars's PAST; Mars has no liquid water on its surface today (textbook 24.2, p. 719)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2 (p. 719); the book points back to its earlier Mars geology chapter",
+    "Original animation: early Mars with flowing water vs dry, icy Mars today"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_mars_then_now.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of two panels. Early Mars: rain falls and liquid water flows along a valley floor. Mars today: the same valley is dry, with a white polar ice cap on the surface and a band of ice underground."
+    }
+   ]
+  },
+  {
+   "id": "marsnow",
+   "title": "Could life survive on Mars today?",
+   "slides": "Textbook 24.2: Could there be life on Mars? (p. 719)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_mars_underground.webp",
+      "slide": "none (original diagram)",
+      "alt": "Cross-section of Mars's ground: no liquid water on the surface, surface ice, a layer of water ice in the ground, a glowing body of volcanic heat warming a pocket of liquid water above it, and a possible underground lake marked as one unconfirmed claim."
+     },
+     "title": "Hidden pockets of water",
+     "bullets": [
+      "If life ever took hold on Mars, it **might still exist** there.",
+      "Mars has **no liquid water on its surface** today, but it has **abundant water ice**, both on the surface and underground.",
+      "So it seems likely that some **pockets of liquid water** still exist **underground**, especially near sources of **volcanic heat**.",
+      "There has been at least one **claim of evidence** for **underground lakes** on Mars."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Underground, heat from below can melt ice while the rock above shelters the water."
+    },
+    {
+     "type": "trick",
+     "text": "Ice up top, maybe water down below where it is warm."
+    },
+    {
+     "type": "trap",
+     "text": "The underground lakes are only a claim of evidence, not a confirmed discovery (textbook 24.2, p. 719)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2 (p. 719)",
+    "Original cross-section diagram of ice, volcanic heat and possible liquid pockets"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_mars_underground.webp",
+     "slide": "none (original diagram)",
+     "alt": "Cross-section of Mars's ground: no liquid water on the surface, surface ice, a layer of water ice in the ground, a glowing body of volcanic heat warming a pocket of liquid water above it, and a possible underground lake marked as one unconfirmed claim."
+    }
+   ]
+  },
+  {
+   "id": "viking",
+   "title": "The Viking landers",
+   "slides": "Textbook 24.2: Searching for Life on Mars, Figure 24.16 (p. 719)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_viking.webp",
+      "slide": "none (original diagram)",
+      "alt": "A Viking lander with a robotic arm digging a trench in red soil (Viking 1 landed July 20, 1976 and Viking 2 on September 3, 1976). Four steps: scoop soil, mix it with nutrients from Earth, watch for microbes using the nutrients, and a confusing result that ordinary chemistry could explain."
+     },
+     "title": "The first landers, 1976",
+     "bullets": [
+      "The most direct way to search for life on Mars is with **landers and rovers**.",
+      "The first try was the two **Viking landers**, which reached Mars in **1976**: Viking 1 landed on July 20 and Viking 2 on September 3. They were the first spacecraft to land on Mars.",
+      "Each had a **robotic arm** that scooped up soil and fed it into on-board experiments designed to look for life.",
+      "One experiment **mixed martian soil with nutrients from Earth** and watched for signs that microscopic organisms were taking the nutrients up."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_organic.webp",
+      "slide": "none (original diagram)",
+      "alt": "A ring of carbon atoms labelled organic molecule, a carbon compound that could be a building block of carbon-based life. Arrows lead to: building blocks are available, and does NOT show life is there. Note: Viking found no organics, later missions found some."
+     },
+     "title": "Puzzling results",
+     "bullets": [
+      "Some results at first **seemed to suggest life**, but scientists later realized **ordinary chemical reactions** under martian conditions could explain them.",
+      "Another experiment looked for **organic molecules** in the soil and found **none at all**, which seemed to rule out carbon-based life.",
+      "An **organic molecule** is a carbon compound that could be a building block of carbon-based life. Finding one shows the building blocks are available; it does **not** by itself show that life is or was there."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_perchlorate.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: an oven heats a red soil sample holding green organic molecules and white perchlorate salt grains. As it heats, the organic molecules disappear and the detector reads 'No organics found'. The salt destroys organic molecules when heated."
+     },
+     "title": "The missing piece: perchlorate",
+     "bullets": [
+      "More than **30 years** after Viking, scientists realized they had missed part of the soil chemistry.",
+      "The soil holds a salt called **perchlorate** that **destroys organic molecules when heated**, as the Viking experiments heated their samples.",
+      "More recent missions have found **strong evidence** that the martian soil **does contain some organic molecules**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Heating a sample that contains perchlorate wipes out the organic molecules before they can be detected, so 'none found' did not mean 'none there'."
+    },
+    {
+     "type": "trick",
+     "text": "Viking: Very Inconclusive. Perchlorate: the Perfect culprit for the missing organics."
+    },
+    {
+     "type": "trap",
+     "text": "Organic molecules are building blocks, NOT proof of life (textbook 24.2 footnote, p. 719). The Viking results were confounding, not a detection of life."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, Searching for Life on Mars, Figure 24.16 and the footnote on organic molecules (p. 719)",
+    "Original diagrams of the Viking soil test, organic molecules and the perchlorate problem (no book photo used)"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_viking.webp",
+     "slide": "none (original diagram)",
+     "alt": "A Viking lander with a robotic arm digging a trench in red soil (Viking 1 landed July 20, 1976 and Viking 2 on September 3, 1976). Four steps: scoop soil, mix it with nutrients from Earth, watch for microbes using the nutrients, and a confusing result that ordinary chemistry could explain."
+    },
+    {
+     "src": "img/solarlife/gen_organic.webp",
+     "slide": "none (original diagram)",
+     "alt": "A ring of carbon atoms labelled organic molecule, a carbon compound that could be a building block of carbon-based life. Arrows lead to: building blocks are available, and does NOT show life is there. Note: Viking found no organics, later missions found some."
+    },
+    {
+     "src": "img/solarlife/gen_perchlorate.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: an oven heats a red soil sample holding green organic molecules and white perchlorate salt grains. As it heats, the organic molecules disappear and the detector reads 'No organics found'. The salt destroys organic molecules when heated."
+    }
+   ]
+  },
+  {
+   "id": "rovers",
+   "title": "Rovers, samples and people",
+   "slides": "Textbook 24.2: Searching for Life on Mars (p. 719)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_missions.webp",
+      "slide": "none (original diagram)",
+      "alt": "Timeline of the search for life on Mars: Viking 1 and 2 (1976), the Curiosity and Perseverance rovers (ongoing; Perseverance looks for chemical signs of life and collects samples), the Rosalind Franklin rover (expected), sample return (early planning) and perhaps humans in 10 to 20 years."
+     },
+     "title": "Rovers on the hunt",
+     "bullets": [
+      "The search continues with the **Curiosity** and **Perseverance** rovers, and the European Space Agency's **Rosalind Franklin** rover is expected to add more soon.",
+      "Any of these missions could find evidence of life. **Perseverance** in particular can search **rock samples** for **chemical signatures** that could point to life."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_sample_return.webp",
+      "slide": "none (original diagram)",
+      "alt": "Flow: a rover collects samples, a return mission (still in very early planning) brings them back, and Earth laboratories study them. On-board instruments are limited; labs on Earth give much higher odds of detecting life or confirming there is none. Human explorers might be best of all."
+     },
+     "title": "Bring the rocks home",
+     "bullets": [
+      "On-board instruments are limited. We would have a **much higher chance** of detecting life, or of confirming that there is none, if martian rocks were studied in **laboratories on Earth**.",
+      "That is why **Perseverance is collecting samples** meant to be returned to Earth, though the return mission is still only in **very early planning**.",
+      "Perhaps the best search of all would be by **human explorers**, which might happen in about **10 to 20 years**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Earth laboratories hold far more sensitive and varied instruments than any rover can carry."
+    },
+    {
+     "type": "trick",
+     "text": "Rovers look; labs on Earth look harder."
+    },
+    {
+     "type": "trap",
+     "text": "Perseverance is collecting samples, but the mission to bring them back is only in very early planning (textbook 24.2, p. 719)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, Searching for Life on Mars and the 'Think about it' on human explorers (p. 719)",
+    "Original timeline and sample-return diagrams"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_missions.webp",
+     "slide": "none (original diagram)",
+     "alt": "Timeline of the search for life on Mars: Viking 1 and 2 (1976), the Curiosity and Perseverance rovers (ongoing; Perseverance looks for chemical signs of life and collects samples), the Rosalind Franklin rover (expected), sample return (early planning) and perhaps humans in 10 to 20 years."
+    },
+    {
+     "src": "img/solarlife/gen_sample_return.webp",
+     "slide": "none (original diagram)",
+     "alt": "Flow: a rover collects samples, a return mission (still in very early planning) brings them back, and Earth laboratories study them. On-board instruments are limited; labs on Earth give much higher odds of detecting life or confirming there is none. Human explorers might be best of all."
+    }
+   ]
+  },
+  {
+   "id": "clues",
+   "title": "Other clues: meteorites and methane",
+   "slides": "Textbook 24.2: Other Potential Clues About Life on Mars (p. 720)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_meteorite.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four numbered steps: a rock from Mars is found on Earth as a meteorite; its chemistry makes it almost certain it came from Mars; claims of signs of life have been made but most scientists are not convinced; it still teaches us about Mars's geological history."
+     },
+     "title": "Martian meteorites",
+     "bullets": [
+      "**Martian meteorites** are meteorites found on Earth whose **chemical composition** makes it almost certain they **came from Mars**.",
+      "They have more than once been **claimed to show evidence of martian life**, but **most scientists find these claims unconvincing**.",
+      "Studies continue, and at the very least they help us understand Mars's **geological history**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_methane.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: grey methane molecules rise from an unknown source in the martian ground and break apart within a few centuries. Two possible sources are shown: heat-driven geology (far more likely) and life (the only other known source)."
+     },
+     "title": "Methane in the air",
+     "bullets": [
+      "**Methane** (CH₄) gas has apparently been detected in the martian atmosphere.",
+      "Methane **cannot last more than a few centuries** there before chemical reactions turn it into other gases, so if it is present, Mars must have an **ongoing source**.",
+      "Only two sources are known: **heat-driven geological activity** and **life**. Most scientists think geology is **by far more likely**.",
+      "Even a geological source would matter: the **heat** needed to release methane would almost certainly also keep **underground pockets of liquid water** where life could survive.",
+      "Scientists are studying how the methane is **spread through the atmosphere** and how its amount **changes with time** to learn its source."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A gas that breaks down quickly can only stay in the air if something keeps making it, so its presence points to a present-day source."
+    },
+    {
+     "type": "trick",
+     "text": "Methane needs a maker: rocks with heat, or life."
+    },
+    {
+     "type": "trap",
+     "text": "Most scientists favour a GEOLOGICAL source for the methane, not life; and most find the meteorite life claims unconvincing (textbook 24.2, p. 720)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, Other Potential Clues About Life on Mars (p. 720)",
+    "Original diagrams of the meteorite story and the methane puzzle"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_meteorite.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four numbered steps: a rock from Mars is found on Earth as a meteorite; its chemistry makes it almost certain it came from Mars; claims of signs of life have been made but most scientists are not convinced; it still teaches us about Mars's geological history."
+    },
+    {
+     "src": "img/solarlife/gen_methane.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: grey methane molecules rise from an unknown source in the martian ground and break apart within a few centuries. Two possible sources are shown: heat-driven geology (far more likely) and life (the only other known source)."
+    }
+   ]
+  },
+  {
+   "id": "venus",
+   "title": "Venus: life in the clouds?",
+   "slides": "Textbook 24.2: Venus, Figure 24.17 (pp. 720-721)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_venus_story.webp",
+      "slide": "none (original diagram)",
+      "alt": "Venus timeline: long ago, under a dimmer young Sun, it may have had oceans; then a runaway greenhouse effect made the surface far too hot; today, could life linger in the high clouds?; 2020, a disputed claim of phosphine; coming, the DAVINCI, VERITAS and EnVision missions."
+     },
+     "title": "From possible oceans to a runaway greenhouse",
+     "bullets": [
+      "Venus's surface is **far too hot** for liquid water. The heat comes from a **runaway greenhouse effect**.",
+      "Early in the solar system's history, when the **Sun was dimmer**, Venus **might have had oceans** before the runaway happened.",
+      "So scientists have wondered whether Venus had **surface life long ago**, and whether any of it could **still survive in the clouds**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_venus_altitude.webp",
+      "slide": "none (original diagram)",
+      "alt": "Sketch graph of Venus's temperature against altitude from 0 to 100 km. The red curve starts at about 470 degrees Celsius at the surface and falls with height, crossing the band where water can be liquid (0 to 100 degrees) above about 50 km, where acid-laced water clouds form."
+     },
+     "title": "Cooler clouds high up",
+     "bullets": [
+      "Temperatures **drop quickly with altitude** in Venus's atmosphere.",
+      "The surface is about **470 °C**, but **above about 50 km** it is cool enough for droplets of **acid-laced water** to form **clouds**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_phosphine.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four numbered steps: 2020, a claimed detection of phosphine gas at cloud height on Venus; it caused a stir because on Earth only life makes it naturally in the air; it is disputed as a misreading of the data; DAVINCI's probe should check whether it is really there."
+     },
+     "title": "The phosphine puzzle",
+     "bullets": [
+      "In **2020**, a group of scientists claimed to detect the spectral signature of **phosphine** gas at the height of Venus's clouds.",
+      "On Earth, the **only natural source of phosphine** in the atmosphere is **life**, so the claim raised the possibility of life in the clouds.",
+      "The claim is **very controversial**: other scientists argue it is a **misinterpretation of the data**.",
+      "NASA chose two new Venus missions in 2021, **DAVINCI** and **VERITAS** (launch 2028 or later); Europe is building **EnVision** (about 2030). DAVINCI will drop a **probe through the atmosphere** that should show whether phosphine is really there, though maybe not whether life made it."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Temperature falls with height, so a layer high above the scorching surface can be mild enough for liquid droplets."
+    },
+    {
+     "type": "trick",
+     "text": "Venus: Hell below, clouds above."
+    },
+    {
+     "type": "trap",
+     "text": "The phosphine detection is a disputed claim, not a confirmed sign of life; even if it is confirmed, the missions may not show whether life made it (textbook 24.2, pp. 720-721). The cloud droplets are very acidic water, not fresh water."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, Venus and Figure 24.17 (pp. 720-721)",
+    "Original graph sketch of temperature against altitude (shape only, drawn from the figure's message), Venus timeline and phosphine flow"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_venus_story.webp",
+     "slide": "none (original diagram)",
+     "alt": "Venus timeline: long ago, under a dimmer young Sun, it may have had oceans; then a runaway greenhouse effect made the surface far too hot; today, could life linger in the high clouds?; 2020, a disputed claim of phosphine; coming, the DAVINCI, VERITAS and EnVision missions."
+    },
+    {
+     "src": "img/solarlife/gen_venus_altitude.webp",
+     "slide": "none (original diagram)",
+     "alt": "Sketch graph of Venus's temperature against altitude from 0 to 100 km. The red curve starts at about 470 degrees Celsius at the surface and falls with height, crossing the band where water can be liquid (0 to 100 degrees) above about 50 km, where acid-laced water clouds form."
+    },
+    {
+     "src": "img/solarlife/gen_phosphine.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four numbered steps: 2020, a claimed detection of phosphine gas at cloud height on Venus; it caused a stir because on Earth only life makes it naturally in the air; it is disputed as a misreading of the data; DAVINCI's probe should check whether it is really there."
+    }
+   ]
+  },
+  {
+   "id": "europa",
+   "title": "Europa and Jupiter's ocean moons",
+   "slides": "Textbook 24.2: Jupiter's Potentially Habitable Moons (p. 721)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_europa_cutaway.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Jupiter at the left sends tidal heating arrows into Europa. Europa is cut open to show an ice shell several kilometres thick, a deep liquid ocean and a rocky interior, with volcanic vents on the seafloor puffing warm water into the ocean."
+     },
+     "title": "Everything life might need",
+     "bullets": [
+      "In the cold outer solar system, **surface** liquid water is unlikely, but several worlds may have **subsurface lakes or oceans**, including three of Jupiter's moons: **Europa, Ganymede and Callisto**.",
+      "**Europa** is the **strongest candidate**. The ice and rock it formed from surely held the **chemical ingredients** for life.",
+      "Its internal heat, mainly from **tidal heating**, is strong enough to power **volcanic vents on its seafloor**.",
+      "If life on Earth began near **undersea volcanic vents**, Europa seems to have everything life needs to get started. Some scientists ask what the odds are that life arose there; others ask what the odds are that it did NOT, after 4.5 billion years with everything in place."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_jovian_energy.webp",
+      "slide": "none (original diagram)",
+      "alt": "Europa, Ganymede and Callisto with bars sketching the energy available for life: Europa's bar is tallest (strongest candidate, tidal heat powers seafloor vents); Ganymede and Callisto have even less. Note: with no sunlight in a buried ocean, any life is likely microscopic."
+     },
+     "title": "How big could Europan life be?",
+     "bullets": [
+      "Europa's ocean is so **deep** that, in principle, it could hold **very large creatures**.",
+      "But its **energy sources** are far more limited than Earth's: **sunlight cannot fuel photosynthesis** in a buried ocean.",
+      "So most scientists expect any life there to be **microscopic and primitive**.",
+      "**Ganymede and Callisto** would have **even less energy** in their oceans, which is why life there is considered **less likely**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Energy limits life. A buried ocean gets no sunlight, so life must rely on heat and chemistry from below, which supports only small, simple organisms."
+    },
+    {
+     "type": "trick",
+     "text": "Europa ranks first of Jupiter's three because it has the most energy: tides heat it the most."
+    },
+    {
+     "type": "trap",
+     "text": "All three Jupiter moons may have oceans; Europa is favoured because of its ENERGY (tidal heating and vents), not because it is the only one with water (textbook 24.2, p. 721)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, Jupiter's Potentially Habitable Moons (p. 721)",
+    "Original animated cut-away of Europa and an energy comparison sketch (bar heights are qualitative)"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_europa_cutaway.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Jupiter at the left sends tidal heating arrows into Europa. Europa is cut open to show an ice shell several kilometres thick, a deep liquid ocean and a rocky interior, with volcanic vents on the seafloor puffing warm water into the ocean."
+    },
+    {
+     "src": "img/solarlife/gen_jovian_energy.webp",
+     "slide": "none (original diagram)",
+     "alt": "Europa, Ganymede and Callisto with bars sketching the energy available for life: Europa's bar is tallest (strongest candidate, tidal heat powers seafloor vents); Ganymede and Callisto have even less. Note: with no sunlight in a buried ocean, any life is likely microscopic."
+    }
+   ]
+  },
+  {
+   "id": "europasearch",
+   "title": "Searching Europa",
+   "slides": "Textbook 24.2: Jupiter's Potentially Habitable Moons, Figure 24.18 (p. 721)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_europa_search.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of ways to search Europa: an orbiter takes spectra of the icy surface, a lander samples the surface ice, vented water or gas is sampled above the surface, water that wells up through a crack may hold frozen microbes, and a robotic submarine melts down through the ice into the ocean."
+     },
+     "title": "Through the ice",
+     "bullets": [
+      "Searching will be hard: the ocean lies under **several kilometres of ice**.",
+      "Some water **wells up from below and freezes** on the surface, so we might find **frozen microbes** or other evidence by **spectroscopy from an orbiting spacecraft** or by a **lander** sampling the surface.",
+      "Water or gas is sometimes **vented into space**, so orbiting probes could **sample the vented gas**.",
+      "More ambitiously, a **robotic submarine** could someday **melt its way through the ice** to search the ocean itself."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_icefin.webp",
+      "slide": "none (original diagram)",
+      "alt": "Left: a small robotic submarine called Icefin swims in water under Antarctic ice on Earth. An arrow leads right to Europa someday: a probe melts through ice several kilometres thick to explore the ocean below."
+     },
+     "title": "Practising on Earth",
+     "bullets": [
+      "A small robotic submarine called **Icefin** has been tested **under Antarctic ice**.",
+      "Scientists hope similar technology can someday explore the oceans of **Europa** and other worlds with subsurface oceans."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Places where ocean water reaches the surface or escapes into space let us test the ocean without drilling through kilometres of ice."
+    },
+    {
+     "type": "trick",
+     "text": "Look at the ice, sniff the vents, or dive with a sub."
+    },
+    {
+     "type": "trap",
+     "text": "Europa's ocean is buried under several kilometres of ice, so no one has sampled it directly yet (textbook 24.2, p. 721)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2 and Figure 24.18 (Icefin) (p. 721)",
+    "Original animated diagram of search methods and an original Antarctica-to-Europa sketch (no book photo used)"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_europa_search.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of ways to search Europa: an orbiter takes spectra of the icy surface, a lander samples the surface ice, vented water or gas is sampled above the surface, water that wells up through a crack may hold frozen microbes, and a robotic submarine melts down through the ice into the ocean."
+    },
+    {
+     "src": "img/solarlife/gen_icefin.webp",
+     "slide": "none (original diagram)",
+     "alt": "Left: a small robotic submarine called Icefin swims in water under Antarctic ice on Earth. An arrow leads right to Europa someday: a probe melts through ice several kilometres thick to explore the ocean below."
+    }
+   ]
+  },
+  {
+   "id": "titan",
+   "title": "Titan",
+   "slides": "Textbook 24.2: Titan and Enceladus, Figure 24.19 (pp. 721-722)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_titan_cutaway.webp",
+      "slide": "none (original diagram)",
+      "alt": "Cross-section of Titan: a thick hazy atmosphere where ultraviolet light makes carbon compounds, a surface with methane and ethane lakes, dunes and a cold volcano 1000 to 1500 m high, a frozen icy crust, and below it a possible ocean of liquid water or an ammonia and water mixture."
+     },
+     "title": "A moon with lakes",
+     "bullets": [
+      "**Titan** (a moon of Saturn) is the **only moon** with a **substantial atmosphere**.",
+      "Its surface is too cold for water to stay liquid for long, but it has **lakes and rivers of liquid methane and ethane**.",
+      "That liquid could possibly support life the way water does on Earth, though **many biologists think it unlikely**.",
+      "Water-based life is a slim possibility too: **Cassini** measured **small changes in Titan's shape** as it orbits Saturn, which fit a **subsurface ocean** of water, or of a colder **ammonia and water mixture**, far beneath the icy crust."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_titan_paths.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards of slim chances for life on Titan: life in the methane lakes (many biologists doubt it); impact melt pools of warm water lasting about a thousand years; cold volcanic hot springs a little above 0 degrees Celsius; and microbes like those in an oily lake on Trinidad. The Dragonfly mission arrives no earlier than 2036."
+     },
+     "title": "Pockets of warm water",
+     "bullets": [
+      "**Ultraviolet light** striking Titan's atmosphere makes many **carbon compounds**, which over billions of years should pile up as deep **sediment**; these may make up Titan's **dunes**.",
+      "**Impacts** of comets or asteroids could melt ice into pockets of **warm water** lasting about **a thousand years**, allowing interesting organic chemistry, if not life.",
+      "Cassini also found what look like **volcanic cones** about **1000 to 1500 m** high. These **cold volcanoes** probably erupt **water** mixed with **ammonia or methane**, making volcanic **'hot springs'** perhaps slightly above **0 °C**: a slim chance for life.",
+      "On the island of **Trinidad**, bacteria live in **tiny water droplets** inside an **oily lake**, breaking down the oil for energy. Similar microbes might live in watery mixtures in Titan's hydrocarbon seas.",
+      "The **Dragonfly** mission should teach us much more, but it will not reach Titan until at least **2036**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Titan has plenty of carbon chemistry; what it lacks is warmth. Impacts and cold volcanoes are the local, short-lived heat sources that could make liquid water."
+    },
+    {
+     "type": "trick",
+     "text": "Titan: methane on top, maybe water underneath, warm spots where things hit or erupt."
+    },
+    {
+     "type": "trap",
+     "text": "Titan's surface lakes are methane and ethane, NOT water (textbook 24.2, p. 721). Its 'hot springs' are only slightly above 0 °C."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, Titan and Enceladus, Figure 24.19 (pp. 721-722)",
+    "Original cut-away of Titan and a four-card diagram of possible habitats"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_titan_cutaway.webp",
+     "slide": "none (original diagram)",
+     "alt": "Cross-section of Titan: a thick hazy atmosphere where ultraviolet light makes carbon compounds, a surface with methane and ethane lakes, dunes and a cold volcano 1000 to 1500 m high, a frozen icy crust, and below it a possible ocean of liquid water or an ammonia and water mixture."
+    },
+    {
+     "src": "img/solarlife/gen_titan_paths.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards of slim chances for life on Titan: life in the methane lakes (many biologists doubt it); impact melt pools of warm water lasting about a thousand years; cold volcanic hot springs a little above 0 degrees Celsius; and microbes like those in an oily lake on Trinidad. The Dragonfly mission arrives no earlier than 2036."
+    }
+   ]
+  },
+  {
+   "id": "enceladus",
+   "title": "Enceladus",
+   "slides": "Textbook 24.2: Titan and Enceladus (pp. 721-722)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_enceladus_plume.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Enceladus cut open to show an icy crust, a global ocean and a rocky core, with fountains of ice spraying from the south pole. Notes: the spray freezes as it emerges and could carry flash-frozen life; Cassini flew through but could not sample it; no sampling mission was approved as of 2022."
+     },
+     "title": "Fountains from a hidden ocean",
+     "bullets": [
+      "**Enceladus** seems at least as promising as Titan: evidence supports a **global subsurface ocean**.",
+      "Its **ice fountains** presumably spray out ocean material, which **freezes as it emerges**. If the ocean holds life, the fountains might spray out **flash-frozen life-forms**.",
+      "Scientists are working on plans for a spacecraft to **sample the ice spray**, but none had been approved as of **2022**.",
+      "**Cassini** flew through the fountains but **could not sample the ice**: nobody knew the fountains existed when it was built."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The fountains bring the ocean to us: a spacecraft flying through the spray can sample the ocean without landing or drilling."
+    },
+    {
+     "type": "trick",
+     "text": "Enceladus sends free samples into space."
+    },
+    {
+     "type": "trap",
+     "text": "Cassini flew through the fountains but had no instrument to sample the ice; it did not test them for life (textbook 24.2, p. 722)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, Titan and Enceladus (pp. 721-722)",
+    "Original animated cut-away of Enceladus and its fountains"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_enceladus_plume.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Enceladus cut open to show an icy crust, a global ocean and a rocky core, with fountains of ice spraying from the south pole. Notes: the spray freezes as it emerges and could carry flash-frozen life; Cassini flew through but could not sample it; no sampling mission was approved as of 2022."
+    }
+   ]
+  },
+  {
+   "id": "beyond",
+   "title": "Beyond Saturn and the big picture",
+   "slides": "Textbook 24.2: Beyond Saturn (p. 722); chapter summary for 24.2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/solarlife/gen_beyond.webp",
+      "slide": "none (original diagram)",
+      "alt": "Enceladus's heating is still not fully explained, so other worlds may surprise us. Two panels: Triton, seen by Voyager, shows some geological activity; Pluto, seen by New Horizons, shows surprising geological activity. Both might hide water under the surface."
+     },
+     "title": "More surprises?",
+     "bullets": [
+      "Enceladus is **tidally heated**, yet scientists still do not fully understand why it has **enough heat to melt** ice underground. So similar surprises may wait elsewhere.",
+      "**Voyager** saw signs of some **geological activity** on Neptune's moon **Triton**, so it could hold **subsurface liquid water**.",
+      "The surprising geological activity seen by **New Horizons** on **Pluto** has scientists wondering about **subsurface lakes or oceans** even there."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/solarlife/gen_scorecard.webp",
+      "slide": "none (original diagram)",
+      "alt": "Table of candidate worlds: Mars (past surface water, maybe underground pockets; organics, methane; rovers, sample return, meteorites), Venus (acidic cloud droplets; phosphine claim), Europa (ocean under ice; tidal vents), Enceladus (ocean; fountains), Titan (methane lakes, maybe water below), Ganymede and Callisto, Triton and Pluto."
+     },
+     "title": "The big picture",
+     "bullets": [
+      "We do **not yet know** whether any world besides Earth has ever had life.",
+      "But there are **many places worth searching**: Mars; Jupiter's moons Europa, Ganymede and Callisto; Saturn's moons Enceladus and Titan; Neptune's moon Triton; Pluto; and perhaps Venus's high clouds."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "If heat can surprise us on a small moon like Enceladus, other small, cold worlds might also hide liquid water."
+    },
+    {
+     "type": "trick",
+     "text": "Life hunters' list: Mars, Venus clouds, Europa, Ganymede, Callisto, Enceladus, Titan, Triton, Pluto."
+    },
+    {
+     "type": "trap",
+     "text": "No world besides Earth is known to have life; these are places worth SEARCHING, not discoveries (textbook 24.2, p. 722)."
+    }
+   ],
+   "sourceNotes": [
+    "Textbook 24.2, Beyond Saturn (p. 722) and the chapter summary for 24.2",
+    "Original Triton and Pluto panels and a summary table of candidates"
+   ],
+   "images": [
+    {
+     "src": "img/solarlife/gen_beyond.webp",
+     "slide": "none (original diagram)",
+     "alt": "Enceladus's heating is still not fully explained, so other worlds may surprise us. Two panels: Triton, seen by Voyager, shows some geological activity; Pluto, seen by New Horizons, shows surprising geological activity. Both might hide water under the surface."
+    },
+    {
+     "src": "img/solarlife/gen_scorecard.webp",
+     "slide": "none (original diagram)",
+     "alt": "Table of candidate worlds: Mars (past surface water, maybe underground pockets; organics, methane; rovers, sample return, meteorites), Venus (acidic cloud droplets; phosphine claim), Europa (ocean under ice; tidal vents), Enceladus (ocean; fountains), Titan (methane lakes, maybe water below), Ganymede and Callisto, Triton and Pluto."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Where to look for life in the solar system",
+  "head": [
+   "World",
+   "Liquid",
+   "Key clue",
+   "How we might search"
+  ],
+  "rows": [
+   [
+    "Mars",
+    "Water flowed long ago; maybe underground pockets now",
+    "Organics in soil; methane in the air",
+    "Rovers, sample return, meteorites"
+   ],
+   [
+    "Venus",
+    "Acidic water droplets in clouds above about 50 km",
+    "Disputed phosphine claim",
+    "DAVINCI probe; VERITAS; EnVision"
+   ],
+   [
+    "Europa",
+    "Deep ocean under several km of ice",
+    "Tidal heating powers seafloor vents",
+    "Surface spectra, vented gas, landers, a submarine"
+   ],
+   [
+    "Ganymede, Callisto",
+    "Possible subsurface oceans",
+    "Even less energy than Europa",
+    "Less likely homes"
+   ],
+   [
+    "Titan",
+    "Methane and ethane lakes; maybe water or ammonia-water below",
+    "Cold volcanoes, impact melt, shape changes",
+    "Dragonfly (2036 or later)"
+   ],
+   [
+    "Enceladus",
+    "Global ocean under ice",
+    "Ice fountains spray ocean material",
+    "Sample the fountain spray"
+   ],
+   [
+    "Triton, Pluto",
+    "Possible subsurface water",
+    "Geological activity",
+    "Still to be explored"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "sl-c1",
+   "front": "Habitable world",
+   "back": "A world that seems to have all the necessities of life as we know them from Earth.",
+   "short": "Has all of life's necessities",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c2",
+   "front": "What three things does life need?",
+   "gloss": false,
+   "back": "A source of nutrients, a source of energy and liquid water. Liquid water is the rare one.",
+   "short": "Nutrients, energy, liquid water",
+   "src": "Textbook 24.2, p. 718 (24.1)"
+  },
+  {
+   "id": "sl-c3",
+   "front": "Why are the jovian planets unlikely homes for life?",
+   "gloss": false,
+   "back": "Their strong vertical winds keep any cloud droplets of water from staying liquid for long.",
+   "short": "Vertical winds; droplets don't stay liquid",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c4",
+   "front": "Why do scientists think early Mars was habitable?",
+   "gloss": false,
+   "back": "Strong evidence shows liquid water flowed on Mars early on, and growing evidence says it lasted for long periods.",
+   "short": "Liquid water flowed and lasted",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c5",
+   "front": "Where could liquid water exist on Mars today?",
+   "gloss": false,
+   "back": "In underground pockets, especially near sources of volcanic heat; one claim even suggests underground lakes.",
+   "short": "Underground, near volcanic heat",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c6",
+   "front": "Viking landers",
+   "back": "The first spacecraft to land on Mars (1976). Each had a robotic arm and experiments designed to search for life in the soil.",
+   "short": "First Mars landers, 1976",
+   "src": "Textbook 24.2, p. 719, Fig. 24.16"
+  },
+  {
+   "id": "sl-c7",
+   "front": "Viking's nutrient experiment",
+   "back": "Mixed martian soil with nutrients from Earth and watched for signs that microorganisms were taking the nutrients up.",
+   "short": "Soil + nutrients: any uptake?",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c8",
+   "front": "Why were the Viking results confounding?",
+   "gloss": false,
+   "back": "Results that first seemed to suggest life could also be explained by chemical reactions under martian conditions.",
+   "short": "Chemistry could mimic life",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c9",
+   "front": "Organic molecule",
+   "back": "A carbon compound that could be a building block of carbon-based life. Finding one does not by itself mean life is or was present.",
+   "short": "Carbon building block, not proof",
+   "src": "Textbook 24.2, p. 719 footnote"
+  },
+  {
+   "id": "sl-c10",
+   "front": "Perchlorate",
+   "back": "A salt in martian soil that destroys organic molecules when heated, as in the Viking experiments.",
+   "short": "Salt that destroys heated organics",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c11",
+   "front": "Does martian soil contain organic molecules?",
+   "gloss": false,
+   "back": "Yes: more recent missions found strong evidence of at least some organic molecules.",
+   "short": "Yes, some",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c12",
+   "front": "Perseverance rover",
+   "back": "A Mars rover that can search rock samples for chemical signatures of life and is collecting samples to return to Earth.",
+   "short": "Searches rocks; collects samples",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c13",
+   "front": "Rosalind Franklin rover",
+   "back": "A European Space Agency Mars rover expected to add to the search for life soon.",
+   "short": "ESA's coming Mars rover",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c14",
+   "front": "Why return martian samples to Earth?",
+   "gloss": false,
+   "back": "On-board instruments are limited; Earth laboratories give a much higher chance of detecting life or confirming its absence.",
+   "short": "Earth labs are far better",
+   "src": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-c15",
+   "front": "Martian meteorite",
+   "back": "A meteorite found on Earth whose chemical composition makes it almost certain it came from Mars.",
+   "short": "Mars rock found on Earth",
+   "src": "Textbook 24.2, p. 720"
+  },
+  {
+   "id": "sl-c16",
+   "front": "How long can methane last in Mars's air?",
+   "gloss": false,
+   "back": "No more than a few centuries before chemical reactions turn it into other gases.",
+   "short": "A few centuries",
+   "src": "Textbook 24.2, p. 720"
+  },
+  {
+   "id": "sl-c17",
+   "front": "Two known sources of methane on Mars",
+   "gloss": false,
+   "back": "Heat-driven geological activity (thought far more likely) and life.",
+   "short": "Geology or life",
+   "src": "Textbook 24.2, p. 720"
+  },
+  {
+   "id": "sl-c18",
+   "front": "Why would geological methane still matter for life?",
+   "gloss": false,
+   "back": "The heat needed to release the methane would almost certainly also keep underground pockets of liquid water.",
+   "short": "Heat means hidden water",
+   "src": "Textbook 24.2, p. 720"
+  },
+  {
+   "id": "sl-c19",
+   "front": "Why might Venus once have had oceans?",
+   "gloss": false,
+   "back": "Early on the Sun was dimmer, so Venus might have had oceans before its runaway greenhouse effect.",
+   "short": "Dimmer early Sun",
+   "src": "Textbook 24.2, p. 720"
+  },
+  {
+   "id": "sl-c20",
+   "front": "Where on Venus could water be liquid?",
+   "gloss": false,
+   "back": "High in the atmosphere, above about 50 km, where cloud droplets of very acidic water form.",
+   "short": "Clouds above about 50 km",
+   "src": "Textbook 24.2, p. 720, Fig. 24.17"
+  },
+  {
+   "id": "sl-c21",
+   "front": "Phosphine",
+   "back": "A gas claimed in 2020 to be detected in Venus's clouds. On Earth, life is its only natural source in the atmosphere. The claim is disputed.",
+   "short": "Disputed Venus cloud gas",
+   "src": "Textbook 24.2, p. 720"
+  },
+  {
+   "id": "sl-c22",
+   "front": "DAVINCI",
+   "back": "A NASA Venus mission (launch 2028 or later) that will drop a probe through the atmosphere and can check for phosphine.",
+   "short": "Venus probe mission",
+   "src": "Textbook 24.2, pp. 720-721"
+  },
+  {
+   "id": "sl-c23",
+   "front": "Which Jupiter moons may hide oceans?",
+   "gloss": false,
+   "back": "Europa, Ganymede and Callisto. Europa is the strongest candidate for life.",
+   "short": "Europa, Ganymede, Callisto",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c24",
+   "front": "What powers Europa's seafloor vents?",
+   "gloss": false,
+   "back": "Internal heat, mainly from tidal heating.",
+   "short": "Tidal heating",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c25",
+   "front": "Why is any life on Europa likely microscopic?",
+   "gloss": false,
+   "back": "Its energy is limited: sunlight cannot fuel photosynthesis in a buried ocean.",
+   "short": "Little energy, no photosynthesis",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c26",
+   "front": "Why are Ganymede and Callisto less likely homes than Europa?",
+   "gloss": false,
+   "back": "Their oceans would have even less energy for life.",
+   "short": "Even less energy",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c27",
+   "front": "Icefin",
+   "back": "A small robotic submarine tested under Antarctic ice, as practice for exploring oceans like Europa's.",
+   "short": "Test sub for icy oceans",
+   "src": "Textbook 24.2, p. 721, Fig. 24.18"
+  },
+  {
+   "id": "sl-c28",
+   "front": "Titan's surface liquids",
+   "back": "Lakes and rivers of liquid methane and ethane. Titan is the only moon with a substantial atmosphere.",
+   "short": "Methane and ethane lakes",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c29",
+   "front": "Evidence for an ocean inside Titan",
+   "gloss": false,
+   "back": "Cassini measured small changes in Titan's shape as it orbits Saturn, which fit a subsurface ocean of water or ammonia and water.",
+   "short": "Shape changes seen by Cassini",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c30",
+   "front": "Titan's cold volcanoes",
+   "back": "Cones about 1000 to 1500 m high that may erupt water mixed with ammonia or methane, making 'hot springs' slightly above 0 °C.",
+   "short": "Water eruptions; slim chance for life",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c31",
+   "front": "Dragonfly",
+   "back": "A mission to explore Titan, not due to arrive until at least 2036.",
+   "short": "Titan mission, 2036 or later",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c32",
+   "front": "Trinidad oily-lake bacteria",
+   "back": "Microbes living in tiny water droplets in an oily lake, breaking down oil for energy: a model for possible life in Titan's hydrocarbon seas.",
+   "short": "Life in droplets in oil",
+   "src": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-c33",
+   "front": "Enceladus's ice fountains",
+   "back": "Sprays of ocean material that freeze as they emerge; they might carry flash-frozen life-forms.",
+   "short": "Ocean spray into space",
+   "src": "Textbook 24.2, pp. 721-722"
+  },
+  {
+   "id": "sl-c34",
+   "front": "Why couldn't Cassini sample Enceladus's fountains?",
+   "gloss": false,
+   "back": "It had no instrument for it: no one knew the fountains existed when Cassini was built.",
+   "short": "Fountains unknown when built",
+   "src": "Textbook 24.2, p. 722"
+  },
+  {
+   "id": "sl-c35",
+   "front": "Triton and Pluto",
+   "back": "Worlds with signs of geological activity (seen by Voyager and New Horizons) that might hide subsurface water.",
+   "short": "Geologically active; maybe water",
+   "src": "Textbook 24.2, p. 722"
+  },
+  {
+   "id": "sl-c36",
+   "front": "Is any world besides Earth known to have life?",
+   "gloss": false,
+   "back": "No. We do not yet know, but there are many places worth searching.",
+   "short": "Not yet known",
+   "src": "Textbook 24.2, p. 722"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "sl-1",
+   "q": "Which necessity of life does most to limit where life could exist in our solar system?",
+   "options": [
+    "Liquid water",
+    "A source of energy",
+    "A source of nutrients",
+    "A thick atmosphere",
+    "A magnetic field"
+   ],
+   "answer": 0,
+   "why": "Nutrients and energy are available to some degree almost everywhere; liquid water is rare, so it rules out most worlds.",
+   "source": "Textbook 24.2, p. 719 (and 24.1, p. 718)",
+   "img": {
+    "src": "img/solarlife/gen_needs.webp",
+    "alt": "Three cards: 1, nutrients, atoms and molecules to build living cells; 2, energy, from sunlight, chemical reactions or internal heat; 3, liquid water, the rare need that limits where life can be. Below: a habitable world is one that seems to have all the necessities of life."
+   }
+  },
+  {
+   "id": "sl-2",
+   "q": "Jupiter may have droplets of liquid water in some clouds. Why is it still an unlikely home for life?",
+   "options": [
+    "Its clouds hold only methane and ammonia ice, never water",
+    "It has no source of energy, either internal or solar",
+    "It orbits far too close to the Sun for water to survive",
+    "Strong vertical winds keep droplets from staying liquid",
+    "Its strong gravity squeezes every droplet into ice"
+   ],
+   "answer": 3,
+   "why": "The strong vertical winds on the jovian planets move droplets around, so they cannot stay liquid for long.",
+   "source": "Textbook 24.2, p. 719"
+  },
+  {
+   "id": "sl-3",
+   "q": "Which world is the LEAST promising place to search for life?",
+   "options": [
+    "Mars",
+    "Mercury",
+    "Europa",
+    "Enceladus",
+    "Titan"
+   ],
+   "answer": 1,
+   "why": "Mercury (like the Moon) is barren and dry. Mars, Europa, Enceladus and Titan all show signs of liquid water or another liquid.",
+   "source": "Textbook 24.2, p. 719",
+   "img": {
+    "src": "img/solarlife/gen_ruled_out.webp",
+    "alt": "Two columns. Ruled out: Mercury and the Moon (barren and dry); asteroids, comets and small moons (dry); Jupiter, Saturn, Uranus and Neptune (cloud droplets tossed by strong vertical winds cannot stay liquid). Worth a look: Mars; Europa and Enceladus; others such as Titan, Ganymede, Callisto, Triton, Pluto and perhaps Venus's clouds."
+   }
+  },
+  {
+   "id": "sl-4",
+   "q": "A habitable world is best described as one that:",
+   "options": [
+    "Is known to have living organisms",
+    "Has oceans on its surface",
+    "Has an oxygen-rich atmosphere",
+    "Lies at the same distance from the Sun as Earth",
+    "Seems to have all the necessities of life"
+   ],
+   "answer": 4,
+   "why": "A habitable world seems to have all the necessities of life; that does not mean life has been found there.",
+   "source": "Textbook 24.2, p. 719",
+   "img": {
+    "src": "img/solarlife/gen_habitable.webp",
+    "alt": "Two overlapping ovals: 'Habitable, has all the necessities of life' and 'Has life, living things are actually there'. Earth sits in the overlap. Each outer part asks: is a world here possible?"
+   }
+  },
+  {
+   "id": "sl-5",
+   "q": "What is the main reason scientists think Mars was habitable in the past?",
+   "options": [
+    "Its atmospheric methane can only have been made by life",
+    "Martian meteorites contain fossils that all experts accept",
+    "Liquid water flowed on it, perhaps for long periods",
+    "The Viking experiments detected living microbes in the soil",
+    "It still has a thick, warm carbon dioxide atmosphere"
+   ],
+   "answer": 2,
+   "why": "Strong evidence shows liquid water flowed early in Mars's history, with growing evidence it lasted long periods.",
+   "source": "Textbook 24.2, p. 719",
+   "img": {
+    "src": "img/solarlife/gen_mars_then_now.webp",
+    "alt": "Animation of two panels. Early Mars: rain falls and liquid water flows along a valley floor. Mars today: the same valley is dry, with a white polar ice cap on the surface and a band of ice underground."
+   }
+  },
+  {
+   "id": "sl-6",
+   "q": "If life exists on Mars today, where is it most likely to be?",
+   "options": [
+    "Underground, in liquid pockets near volcanic heat",
+    "In shallow ponds of liquid water out on the surface",
+    "On the sunlit surface near the warm equator",
+    "Frozen solid inside the polar ice caps on the surface",
+    "High in the thin clouds above the martian dust storms"
+   ],
+   "answer": 0,
+   "why": "Mars has no surface liquid water now, but pockets of liquid water may exist underground, especially near volcanic heat.",
+   "source": "Textbook 24.2, p. 719",
+   "img": {
+    "src": "img/solarlife/gen_mars_underground.webp",
+    "alt": "Cross-section of Mars's ground: no liquid water on the surface, surface ice, a layer of water ice in the ground, a glowing body of volcanic heat warming a pocket of liquid water above it, and a possible underground lake marked as one unconfirmed claim."
+   }
+  },
+  {
+   "id": "sl-7",
+   "q": "How did one Viking experiment test the soil for life?",
+   "options": [
+    "It photographed soil microbes through an on-board microscope",
+    "It sealed soil in a capsule and sent it back to Earth",
+    "It drilled down through the ice to reach liquid water",
+    "It mixed soil with Earth nutrients and looked for uptake",
+    "It measured how much methane rose from the soil"
+   ],
+   "answer": 3,
+   "why": "One experiment mixed scooped-up soil with nutrients from Earth and watched for signs that microscopic organisms were taking up the nutrients.",
+   "source": "Textbook 24.2, p. 719",
+   "img": {
+    "src": "img/solarlife/gen_viking.webp",
+    "alt": "A Viking lander with a robotic arm digging a trench in red soil (Viking 1 landed July 20, 1976 and Viking 2 on September 3, 1976). Four steps: scoop soil, mix it with nutrients from Earth, watch for microbes using the nutrients, and a confusing result that ordinary chemistry could explain."
+   }
+  },
+  {
+   "id": "sl-8",
+   "q": "Why did the Viking experiments find no organic molecules in the soil?",
+   "options": [
+    "Mars has no carbon at all in its rocks, soil or air",
+    "A soil salt, perchlorate, destroyed them when heated",
+    "The robotic arms could never reach the loose soil",
+    "Both landers came down on solid ice, not on soil",
+    "The lander's own ultraviolet lamps broke them apart"
+   ],
+   "answer": 1,
+   "why": "More than 30 years later, scientists realized perchlorate in the soil destroys organic molecules when heated, as Viking heated its samples.",
+   "source": "Textbook 24.2, p. 719",
+   "img": {
+    "src": "img/solarlife/gen_perchlorate.webp",
+    "alt": "Animation: an oven heats a red soil sample holding green organic molecules and white perchlorate salt grains. As it heats, the organic molecules disappear and the detector reads 'No organics found'. The salt destroys organic molecules when heated."
+   }
+  },
+  {
+   "id": "sl-9",
+   "q": "A rover finds organic molecules in martian soil. What does this show?",
+   "options": [
+    "Life definitely exists somewhere on Mars today",
+    "Life definitely existed on Mars in the distant past",
+    "The soil must contain no perchlorate salt anywhere",
+    "Mars must have liquid water lying on its surface now",
+    "Building blocks for life are present; life is unproven"
+   ],
+   "answer": 4,
+   "why": "Organic molecules could be building blocks of carbon-based life, but their presence does not by itself show that life is or was present.",
+   "source": "Textbook 24.2, p. 719 footnote",
+   "img": {
+    "src": "img/solarlife/gen_organic.webp",
+    "alt": "A ring of carbon atoms labelled organic molecule, a carbon compound that could be a building block of carbon-based life. Arrows lead to: building blocks are available, and does NOT show life is there. Note: Viking found no organics, later missions found some."
+   }
+  },
+  {
+   "id": "sl-10",
+   "q": "Why is Perseverance collecting rock samples to return to Earth?",
+   "options": [
+    "Rovers carry no instruments at all for analysing rocks",
+    "The rocks will be used as building material for a base",
+    "Earth labs give far better odds of finding or ruling out life",
+    "Returned samples are the only way to prove Mars had water",
+    "Bringing rocks home is far cheaper than running any rover"
+   ],
+   "answer": 2,
+   "why": "On-board instruments are limited; studying martian rocks in Earth laboratories gives a much higher probability of detecting life or confirming its absence.",
+   "source": "Textbook 24.2, p. 719",
+   "img": {
+    "src": "img/solarlife/gen_sample_return.webp",
+    "alt": "Flow: a rover collects samples, a return mission (still in very early planning) brings them back, and Earth laboratories study them. On-board instruments are limited; labs on Earth give much higher odds of detecting life or confirming there is none. Human explorers might be best of all."
+   }
+  },
+  {
+   "id": "sl-11",
+   "q": "Which is NOT one of the ways described for learning about past or present life on Mars?",
+   "options": [
+    "Listening for radio signals from Mars",
+    "Studying martian meteorites found on Earth",
+    "Measuring methane in the martian atmosphere",
+    "Returning rock samples to labs on Earth",
+    "Landers and rovers testing soil and rock"
+   ],
+   "answer": 0,
+   "why": "Landers and rovers, sample return, martian meteorites and atmospheric methane are all described. Radio signals are not part of the search for life on Mars.",
+   "source": "Textbook 24.2, pp. 719-720"
+  },
+  {
+   "id": "sl-12",
+   "q": "Methane can last only a few centuries in Mars's atmosphere. If methane is present, what follows?",
+   "options": [
+    "Mars must have life",
+    "Mars must have liquid water on its surface",
+    "The methane must have come from comets long ago",
+    "Mars must have an ongoing source of methane",
+    "The methane must be left over from Mars's formation"
+   ],
+   "answer": 3,
+   "why": "Because methane breaks down within a few centuries, its presence requires an ongoing source: geological heat or life.",
+   "source": "Textbook 24.2, p. 720",
+   "img": {
+    "src": "img/solarlife/gen_methane.webp",
+    "alt": "Animation: grey methane molecules rise from an unknown source in the martian ground and break apart within a few centuries. Two possible sources are shown: heat-driven geology (far more likely) and life (the only other known source)."
+   }
+  },
+  {
+   "id": "sl-13",
+   "q": "Suppose martian methane turns out to come from geology rather than life. Why would that still matter to the search for life?",
+   "options": [
+    "Geological methane is the main food for all microbes",
+    "The heat involved would likely keep underground water liquid",
+    "It would prove that Mars once had deep, long-lived oceans",
+    "It would show that Mars still has a thick, warm atmosphere",
+    "It would mean methane can last for billions of years on Mars"
+   ],
+   "answer": 1,
+   "why": "The heat needed to release methane would almost certainly also sustain underground pockets of liquid water where life could survive.",
+   "source": "Textbook 24.2, p. 720",
+   "img": {
+    "src": "img/solarlife/gen_methane.webp",
+    "alt": "Animation: grey methane molecules rise from an unknown source in the martian ground and break apart within a few centuries. Two possible sources are shown: heat-driven geology (far more likely) and life (the only other known source)."
+   }
+  },
+  {
+   "id": "sl-14",
+   "q": "What do most scientists think about claims that martian meteorites show evidence of life?",
+   "options": [
+    "They have been proven beyond any reasonable doubt",
+    "They prove that life on Earth first arrived from Mars",
+    "The meteorites turned out not to come from Mars after all",
+    "The claims were withdrawn after the rocks were shown to be fakes",
+    "Unconvincing, but the rocks still reveal Mars's geology"
+   ],
+   "answer": 4,
+   "why": "Most scientists find the claims unconvincing, but studying the meteorites at least helps us understand Mars's geological history.",
+   "source": "Textbook 24.2, p. 720",
+   "img": {
+    "src": "img/solarlife/gen_meteorite.webp",
+    "alt": "Four numbered steps: a rock from Mars is found on Earth as a meteorite; its chemistry makes it almost certain it came from Mars; claims of signs of life have been made but most scientists are not convinced; it still teaches us about Mars's geological history."
+   }
+  },
+  {
+   "id": "sl-15",
+   "q": "Venus's surface is about 470 °C. Why do some scientists still consider life possible on Venus?",
+   "options": [
+    "Its poles stay cold enough to hold shallow liquid oceans",
+    "Deep oceans of liquid water are hidden below its crust",
+    "Above about 50 km, cool clouds hold acidic water droplets",
+    "Its long night side freezes into sheets of thick water ice",
+    "Its atmosphere is rich in oxygen made by surface plants"
+   ],
+   "answer": 2,
+   "why": "Temperature drops quickly with altitude; above about 50 km it is cool enough for acid-laced water droplets to form clouds.",
+   "source": "Textbook 24.2, p. 720, Fig. 24.17",
+   "img": {
+    "src": "img/solarlife/gen_venus_altitude.webp",
+    "alt": "Sketch graph of Venus's temperature against altitude from 0 to 100 km. The red curve starts at about 470 degrees Celsius at the surface and falls with height, crossing the band where water can be liquid (0 to 100 degrees) above about 50 km, where acid-laced water clouds form."
+   }
+  },
+  {
+   "id": "sl-16",
+   "q": "Why might Venus have had oceans early in the solar system's history?",
+   "options": [
+    "The young Sun was dimmer, before the runaway greenhouse",
+    "It orbited much farther from the Sun in its early days",
+    "It had no atmosphere at all to trap any heat back then",
+    "Frequent comet impacts kept its surface very cold then",
+    "A large moon shaded it from sunlight for a long time"
+   ],
+   "answer": 0,
+   "why": "When the Sun was dimmer, Venus might have had oceans before its runaway greenhouse effect made the surface far too hot.",
+   "source": "Textbook 24.2, p. 720",
+   "img": {
+    "src": "img/solarlife/gen_venus_story.webp",
+    "alt": "Venus timeline: long ago, under a dimmer young Sun, it may have had oceans; then a runaway greenhouse effect made the surface far too hot; today, could life linger in the high clouds?; 2020, a disputed claim of phosphine; coming, the DAVINCI, VERITAS and EnVision missions."
+   }
+  },
+  {
+   "id": "sl-17",
+   "q": "Why did the claimed detection of phosphine in Venus's clouds attract so much attention?",
+   "options": [
+    "Phosphine is the main gas in Venus's thick atmosphere",
+    "Phosphine can only ever form near active volcanoes",
+    "Phosphine would prove liquid water is on Venus's surface",
+    "On Earth, life is the only natural source of it in the air",
+    "It was found directly by a lander sitting on the surface"
+   ],
+   "answer": 3,
+   "why": "On Earth, life is the only natural source of phosphine in the atmosphere, so finding it on Venus might hint at life in the clouds.",
+   "source": "Textbook 24.2, p. 720",
+   "img": {
+    "src": "img/solarlife/gen_phosphine.webp",
+    "alt": "Four numbered steps: 2020, a claimed detection of phosphine gas at cloud height on Venus; it caused a stir because on Earth only life makes it naturally in the air; it is disputed as a misreading of the data; DAVINCI's probe should check whether it is really there."
+   }
+  },
+  {
+   "id": "sl-18",
+   "q": "What is the status of the phosphine claim on Venus?",
+   "options": [
+    "Confirmed by several landers sampling the clouds directly",
+    "Controversial: some say the data were misinterpreted",
+    "Proven to come from microbes living in Venus's clouds",
+    "Withdrawn after scientists found that Venus has no clouds",
+    "Confirmed to come from volcanoes erupting on the surface"
+   ],
+   "answer": 1,
+   "why": "The claim has proven very controversial, with other scientists arguing it is a misinterpretation of the data.",
+   "source": "Textbook 24.2, p. 720",
+   "img": {
+    "src": "img/solarlife/gen_phosphine.webp",
+    "alt": "Four numbered steps: 2020, a claimed detection of phosphine gas at cloud height on Venus; it caused a stir because on Earth only life makes it naturally in the air; it is disputed as a misreading of the data; DAVINCI's probe should check whether it is really there."
+   }
+  },
+  {
+   "id": "sl-19",
+   "q": "Which planned mission will drop a probe through Venus's atmosphere, helping test whether phosphine is there?",
+   "options": [
+    "Dragonfly",
+    "Perseverance",
+    "Cassini",
+    "Rosalind Franklin",
+    "DAVINCI"
+   ],
+   "answer": 4,
+   "why": "DAVINCI will include a probe that plunges through Venus's atmosphere. Dragonfly goes to Titan; Perseverance and Rosalind Franklin are Mars rovers; Cassini studied Saturn.",
+   "source": "Textbook 24.2, pp. 720-721"
+  },
+  {
+   "id": "sl-20",
+   "q": "Why is Europa considered the strongest candidate for life among Jupiter's moons?",
+   "options": [
+    "It is the only one of Jupiter's moons with any water at all",
+    "It has a thick atmosphere that keeps its surface warm",
+    "Tidal heating powers volcanic vents on its seafloor",
+    "Sunlight shines through thin ice to reach its ocean",
+    "It has lakes of liquid methane on its icy surface"
+   ],
+   "answer": 2,
+   "why": "Europa formed with the chemical ingredients for life, and tidal heating is strong enough to power volcanic vents on its seafloor, like the vents where Earth's life may have begun.",
+   "source": "Textbook 24.2, p. 721",
+   "img": {
+    "src": "img/solarlife/gen_europa_cutaway.webp",
+    "alt": "Animation: Jupiter at the left sends tidal heating arrows into Europa. Europa is cut open to show an ice shell several kilometres thick, a deep liquid ocean and a rocky interior, with volcanic vents on the seafloor puffing warm water into the ocean."
+   }
+  },
+  {
+   "id": "sl-21",
+   "q": "Europa's ocean is deep enough to hold large creatures. Why do most scientists expect any life there to be microscopic?",
+   "options": [
+    "Energy is limited: no sunlight for photosynthesis",
+    "The water is far too salty for any cell to survive",
+    "The whole ocean freezes solid during every winter",
+    "Jupiter's radiation reaches all the way to the seafloor",
+    "Its ice and rock never held any chemical ingredients"
+   ],
+   "answer": 0,
+   "why": "Sunlight cannot fuel photosynthesis in a buried ocean, so energy for life is far more limited than on Earth.",
+   "source": "Textbook 24.2, p. 721",
+   "img": {
+    "src": "img/solarlife/gen_jovian_energy.webp",
+    "alt": "Europa, Ganymede and Callisto with bars sketching the energy available for life: Europa's bar is tallest (strongest candidate, tidal heat powers seafloor vents); Ganymede and Callisto have even less. Note: with no sunlight in a buried ocean, any life is likely microscopic."
+   }
+  },
+  {
+   "id": "sl-22",
+   "q": "Compared with Europa, Ganymede and Callisto are considered less likely homes for life mainly because:",
+   "options": [
+    "They have no ice or water anywhere inside them",
+    "They have lakes of liquid methane instead of water",
+    "They orbit far too close to Jupiter for oceans to last",
+    "Their oceans would have even less energy for life",
+    "They are larger, so their oceans are crushed to ice"
+   ],
+   "answer": 3,
+   "why": "Ganymede and Callisto may also have subsurface oceans, but they would have even less energy for life than Europa.",
+   "source": "Textbook 24.2, p. 721",
+   "img": {
+    "src": "img/solarlife/gen_jovian_energy.webp",
+    "alt": "Europa, Ganymede and Callisto with bars sketching the energy available for life: Europa's bar is tallest (strongest candidate, tidal heat powers seafloor vents); Ganymede and Callisto have even less. Note: with no sunlight in a buried ocean, any life is likely microscopic."
+   }
+  },
+  {
+   "id": "sl-23",
+   "q": "Which is NOT a way scientists have proposed to search for life on Europa?",
+   "options": [
+    "Spectroscopy of the icy surface from orbit",
+    "A boat sailing on its methane lakes",
+    "Sampling water or gas vented into space",
+    "A robotic submarine that melts through the ice",
+    "A lander sampling the surface ice"
+   ],
+   "answer": 1,
+   "why": "Methane lakes are found on Titan, not Europa. The other four are all proposed ways to search Europa.",
+   "source": "Textbook 24.2, p. 721",
+   "img": {
+    "src": "img/solarlife/gen_europa_search.webp",
+    "alt": "Animation of ways to search Europa: an orbiter takes spectra of the icy surface, a lander samples the surface ice, vented water or gas is sampled above the surface, water that wells up through a crack may hold frozen microbes, and a robotic submarine melts down through the ice into the ocean."
+   }
+  },
+  {
+   "id": "sl-24",
+   "q": "What fills the lakes and rivers on Titan's surface?",
+   "options": [
+    "Liquid water",
+    "Molten rock from volcanoes",
+    "Sulfuric acid",
+    "Liquid carbon dioxide and water",
+    "Liquid methane and ethane"
+   ],
+   "answer": 4,
+   "why": "Titan's surface is too cold for liquid water to last; its lakes and rivers are liquid methane and ethane.",
+   "source": "Textbook 24.2, p. 721",
+   "img": {
+    "src": "img/solarlife/gen_titan_cutaway.webp",
+    "alt": "Cross-section of Titan: a thick hazy atmosphere where ultraviolet light makes carbon compounds, a surface with methane and ethane lakes, dunes and a cold volcano 1000 to 1500 m high, a frozen icy crust, and below it a possible ocean of liquid water or an ammonia and water mixture."
+   }
+  },
+  {
+   "id": "sl-25",
+   "q": "What evidence suggests Titan may have an ocean beneath its icy crust?",
+   "options": [
+    "Water geysers photographed erupting by Voyager",
+    "Dragonfly drilled into the crust and hit liquid water",
+    "Cassini saw small changes in its shape as it orbits Saturn",
+    "Its methane lakes were found to taste of salty water",
+    "Radio signals reflected back from a sea under the ice"
+   ],
+   "answer": 2,
+   "why": "Small changes in Titan's shape measured by Cassini fit a subsurface ocean of water or a colder ammonia-water mixture.",
+   "source": "Textbook 24.2, p. 721",
+   "img": {
+    "src": "img/solarlife/gen_titan_cutaway.webp",
+    "alt": "Cross-section of Titan: a thick hazy atmosphere where ultraviolet light makes carbon compounds, a surface with methane and ethane lakes, dunes and a cold volcano 1000 to 1500 m high, a frozen icy crust, and below it a possible ocean of liquid water or an ammonia and water mixture."
+   }
+  },
+  {
+   "id": "sl-26",
+   "q": "What would happen if a comet struck Titan's icy surface?",
+   "options": [
+    "Local ice could melt into warm water for about 1000 years",
+    "Titan would lose its whole thick atmosphere into space",
+    "All of its methane lakes would instantly freeze solid",
+    "It would set off a runaway greenhouse effect like Venus",
+    "Nothing would happen, because Titan has no ice to melt"
+   ],
+   "answer": 0,
+   "why": "Impact heat could melt water ice into pockets of warm water that might persist for a thousand years or so, allowing interesting organic chemistry.",
+   "source": "Textbook 24.2, p. 721",
+   "img": {
+    "src": "img/solarlife/gen_titan_paths.webp",
+    "alt": "Four cards of slim chances for life on Titan: life in the methane lakes (many biologists doubt it); impact melt pools of warm water lasting about a thousand years; cold volcanic hot springs a little above 0 degrees Celsius; and microbes like those in an oily lake on Trinidad. The Dragonfly mission arrives no earlier than 2036."
+   }
+  },
+  {
+   "id": "sl-27",
+   "q": "Why are bacteria in an oily lake on Trinidad relevant to Titan?",
+   "options": [
+    "They breathe methane gas in place of oxygen",
+    "They were found inside a meteorite that came from Titan",
+    "They survive frozen solid at Titan-like temperatures",
+    "They live in tiny water drops in oil, feeding on the oil",
+    "They make phosphine gas, the same gas claimed on Venus"
+   ],
+   "answer": 3,
+   "why": "The bacteria live in tiny water droplets within the lake's sludge and break down the oil for energy; similar life might live in watery mixtures in Titan's hydrocarbon seas.",
+   "source": "Textbook 24.2, p. 721",
+   "img": {
+    "src": "img/solarlife/gen_titan_paths.webp",
+    "alt": "Four cards of slim chances for life on Titan: life in the methane lakes (many biologists doubt it); impact melt pools of warm water lasting about a thousand years; cold volcanic hot springs a little above 0 degrees Celsius; and microbes like those in an oily lake on Trinidad. The Dragonfly mission arrives no earlier than 2036."
+   }
+  },
+  {
+   "id": "sl-28",
+   "q": "Which is the only moon in the solar system with a substantial atmosphere?",
+   "options": [
+    "Europa",
+    "Titan",
+    "Enceladus",
+    "Ganymede",
+    "Triton"
+   ],
+   "answer": 1,
+   "why": "Titan is the only moon with a substantial atmosphere.",
+   "source": "Textbook 24.2, p. 721"
+  },
+  {
+   "id": "sl-29",
+   "q": "What would be the most direct way to test Enceladus's hidden ocean for life?",
+   "options": [
+    "Land a small submarine in its methane and ethane lakes",
+    "Measure small changes in its shape with telescopes on Earth",
+    "Look for the spectral signature of phosphine in its clouds",
+    "Study meteorites from Enceladus that have landed on Earth",
+    "Fly through its ice fountains and sample the spray"
+   ],
+   "answer": 4,
+   "why": "The fountains spray out ocean material that freezes as it emerges, so sampling the spray could catch flash-frozen life-forms.",
+   "source": "Textbook 24.2, pp. 721-722",
+   "img": {
+    "src": "img/solarlife/gen_enceladus_plume.webp",
+    "alt": "Animation: Enceladus cut open to show an icy crust, a global ocean and a rocky core, with fountains of ice spraying from the south pole. Notes: the spray freezes as it emerges and could carry flash-frozen life; Cassini flew through but could not sample it; no sampling mission was approved as of 2022."
+   }
+  },
+  {
+   "id": "sl-30",
+   "q": "Cassini flew through Enceladus's fountains. Why didn't it sample the ice for life?",
+   "options": [
+    "The fountains were far too hot for its instruments",
+    "It ran out of fuel before it could reach the fountains",
+    "It had no instrument for it: the fountains were unknown",
+    "Saturn's rings blocked its view of the fountain spray",
+    "An international treaty banned sampling another world"
+   ],
+   "answer": 2,
+   "why": "Cassini was not equipped to sample the ice, because the fountains were unknown when it was built.",
+   "source": "Textbook 24.2, p. 722",
+   "img": {
+    "src": "img/solarlife/gen_enceladus_plume.webp",
+    "alt": "Animation: Enceladus cut open to show an icy crust, a global ocean and a rocky core, with fountains of ice spraying from the south pole. Notes: the spray freezes as it emerges and could carry flash-frozen life; Cassini flew through but could not sample it; no sampling mission was approved as of 2022."
+   }
+  },
+  {
+   "id": "sl-31",
+   "q": "Why do scientists now think habitats for life might be more widespread than once imagined?",
+   "options": [
+    "Enceladus melts ice inside, by heating not fully understood",
+    "Voyager detected living things on Neptune's moon Triton",
+    "Every moon in the outer solar system has a thick atmosphere",
+    "Jupiter's clouds were found to hold long-lasting water oceans",
+    "Pluto was found to orbit much closer to the Sun than thought"
+   ],
+   "answer": 0,
+   "why": "Enceladus is tidally heated, but its heat is still not fully explained, so similar surprises (such as on Triton or Pluto) may exist elsewhere.",
+   "source": "Textbook 24.2, p. 722",
+   "img": {
+    "src": "img/solarlife/gen_beyond.webp",
+    "alt": "Enceladus's heating is still not fully explained, so other worlds may surprise us. Two panels: Triton, seen by Voyager, shows some geological activity; Pluto, seen by New Horizons, shows surprising geological activity. Both might hide water under the surface."
+   }
+  },
+  {
+   "id": "sl-32",
+   "q": "What do Triton and Pluto have in common that makes them worth a look?",
+   "options": [
+    "Both have methane rain falling into lakes on the surface",
+    "Both have open oceans of liquid water on their surfaces",
+    "Both have thick atmospheres rich in oxygen and nitrogen",
+    "Both show geological activity hinting at hidden water",
+    "Both have phosphine gas detected high in their clouds"
+   ],
+   "answer": 3,
+   "why": "Voyager saw some geological activity on Triton and New Horizons saw surprising activity on Pluto, hinting at possible subsurface water.",
+   "source": "Textbook 24.2, p. 722",
+   "img": {
+    "src": "img/solarlife/gen_beyond.webp",
+    "alt": "Enceladus's heating is still not fully explained, so other worlds may surprise us. Two panels: Triton, seen by Voyager, shows some geological activity; Pluto, seen by New Horizons, shows surprising geological activity. Both might hide water under the surface."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "The search for life on Mars",
+   "prompt": "Put the events in order, earliest at the bottom.",
+   "why": "Viking landed in 1976 and found no organics; more than 30 years later scientists realized perchlorate destroys heated organics; newer missions found organics; Perseverance now collects samples for a future return.",
+   "topLabel": "Latest",
+   "bottomLabel": "Earliest",
+   "layers": [
+    {
+     "name": "Viking landers test the soil",
+     "color": "#9ca3af"
+    },
+    {
+     "name": "Viking finds no organic molecules",
+     "color": "#b45309"
+    },
+    {
+     "name": "Perchlorate is recognised as the culprit",
+     "color": "#dc2626"
+    },
+    {
+     "name": "Newer missions find some organics",
+     "color": "#16a34a"
+    },
+    {
+     "name": "Perseverance collects samples for return",
+     "color": "#2563eb"
+    }
+   ]
+  },
+  {
+   "title": "The methane argument",
+   "prompt": "Put the reasoning in order, starting at the bottom.",
+   "why": "Methane is seen; it breaks down within a few centuries; so there must be an ongoing source; that source is geology or life; either way heat suggests underground liquid water.",
+   "topLabel": "Conclusion",
+   "bottomLabel": "Observation",
+   "layers": [
+    {
+     "name": "Methane is detected in the air",
+     "color": "#6b7280"
+    },
+    {
+     "name": "It breaks down within a few centuries",
+     "color": "#b45309"
+    },
+    {
+     "name": "So something keeps making it",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Source: geology or life",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Either way, heat suggests hidden liquid water",
+     "color": "#2563eb"
+    }
+   ]
+  },
+  {
+   "title": "Up through Venus's air",
+   "prompt": "Order the levels from the surface (bottom) to high altitude (top).",
+   "why": "The surface is about 470 °C; temperature falls with height; above about 50 km the clouds are cool enough for acidic water droplets.",
+   "topLabel": "High altitude",
+   "bottomLabel": "Surface",
+   "layers": [
+    {
+     "name": "Surface: about 470 °C",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Lower air: still far too hot for water",
+     "color": "#ea580c"
+    },
+    {
+     "name": "Above about 50 km: acidic water clouds",
+     "color": "#ca8a04"
+    }
+   ]
+  },
+  {
+   "title": "Candidate worlds outward from the Sun",
+   "prompt": "Order the worlds by distance from the Sun, nearest at the bottom.",
+   "why": "Venus orbits closest, then Mars, then Europa (at Jupiter), then Titan (at Saturn), then Triton (at Neptune), then Pluto.",
+   "topLabel": "Farthest",
+   "bottomLabel": "Nearest the Sun",
+   "layers": [
+    {
+     "name": "Venus",
+     "color": "#ca8a04"
+    },
+    {
+     "name": "Mars",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Europa",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "Titan",
+     "color": "#d97706"
+    },
+    {
+     "name": "Triton",
+     "color": "#3b82f6"
+    },
+    {
+     "name": "Pluto",
+     "color": "#78716c"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Ruled out or worth a look?",
+   "prompt": "Sort each place by whether it is a reasonable place to search for life.",
+   "buckets": [
+    "Ruled out",
+    "Worth a look"
+   ],
+   "items": [
+    {
+     "text": "Mercury",
+     "b": 0
+    },
+    {
+     "text": "The Moon",
+     "b": 0
+    },
+    {
+     "text": "Asteroids and comets",
+     "b": 0
+    },
+    {
+     "text": "Jupiter's clouds",
+     "b": 0
+    },
+    {
+     "text": "Small dry moons",
+     "b": 0
+    },
+    {
+     "text": "Underground on Mars",
+     "b": 1
+    },
+    {
+     "text": "Europa's ocean",
+     "b": 1
+    },
+    {
+     "text": "Enceladus's ocean",
+     "b": 1
+    },
+    {
+     "text": "Titan",
+     "b": 1
+    },
+    {
+     "text": "Venus's high clouds",
+     "b": 1
+    }
+   ],
+   "why": "Mercury, the Moon and small bodies are dry, and jovian cloud droplets cannot stay liquid. Mars, Europa, Enceladus, Titan and perhaps Venus's clouds offer some liquid."
+  },
+  {
+   "title": "Which world?",
+   "prompt": "Match each clue to its world.",
+   "buckets": [
+    "Mars",
+    "Venus",
+    "Europa",
+    "Titan",
+    "Enceladus"
+   ],
+   "items": [
+    {
+     "text": "Viking landers",
+     "b": 0
+    },
+    {
+     "text": "Perchlorate in the soil",
+     "b": 0
+    },
+    {
+     "text": "Methane with a short lifetime",
+     "b": 0
+    },
+    {
+     "text": "Phosphine claim",
+     "b": 1
+    },
+    {
+     "text": "Acidic water clouds",
+     "b": 1
+    },
+    {
+     "text": "Seafloor vents from tidal heating",
+     "b": 2
+    },
+    {
+     "text": "Icefin-style submarine",
+     "b": 2
+    },
+    {
+     "text": "Methane and ethane lakes",
+     "b": 3
+    },
+    {
+     "text": "Dragonfly mission",
+     "b": 3
+    },
+    {
+     "text": "Cold volcanoes",
+     "b": 3
+    },
+    {
+     "text": "Ice fountains from a global ocean",
+     "b": 4
+    },
+    {
+     "text": "Cassini flew through its spray",
+     "b": 4
+    }
+   ],
+   "why": "Viking, perchlorate and methane belong to Mars; phosphine and acidic clouds to Venus; tidal vents and the submarine idea to Europa; methane lakes, cold volcanoes and Dragonfly to Titan; ice fountains to Enceladus."
+  }
+ ],
+ "calc": [],
+ "sourceNotes": [
+  "Notes follow section 24.2 of The Cosmic Perspective (10th ed.), pp. 719-722, in order: the opening survey, life on Mars (Viking, rovers, meteorites, methane), then Venus, Jupiter's moons, Titan, Enceladus and beyond Saturn. The three necessities of life are taken from 24.1 (p. 718) only as background.",
+  "There are no teacher slides for this unit. All pictures are original diagrams (gen_*); no book figures or photos are used. The Venus temperature graph is a sketch of the shape shown in Figure 24.17, not a copy.",
+  "Learning objectives are the two section questions from the textbook, word for word."
+ ]
+}
