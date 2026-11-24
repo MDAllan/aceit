@@ -94,6 +94,23 @@ const PROFILES = {
   flood: { caption: "Heavy rain, saturated ground, fast snowmelt or a dam break send water over the banks.", nodes: [["weather", "Cause", "Rain, melt or dam break"], ["water", "Discharge rises", "Water leaves the channel"], ["earth", "Damage", "Floodplains scoured"]] },
   floodRisk: { caption: "Recurrence intervals, risk maps, floodways and levees are used to manage flood risk.", nodes: [["timeline", "Recurrence", "Chance each year"], ["earth", "Risk maps", "Where water will reach"], ["layers", "Control", "Levees, dams, floodways"]] },
   riverUse: { caption: "Rivers supply water, food, transport and energy, but pollution, dams and overuse strain them.", nodes: [["water", "Rivers give", "Water, food, energy"], ["gas", "Pollution", "Sewage, metals, salt, oil"], ["slope", "Overuse", "Too little left"]] },
+  gwStorage: { caption: "Most of Earth's water is in the ocean and ice; groundwater holds far more than lakes and rivers.", nodes: [["water", "Ocean", "97% of all water"], ["layers", "Groundwater", "1.1%, mostly hidden"], ["weather", "Cycle", "Water moves between reservoirs"]] },
+  gwPorosity: { caption: "Groundwater sits in pore space that formed with the rock or was opened up later.", nodes: [["layers", "Pores", "Open space in rock"], ["crystal", "Primary", "Formed with the rock"], ["rupture", "Secondary", "Fractures and cavities"]] },
+  gwPermeability: { caption: "Permeability measures how easily water flows through connected pores.", nodes: [["layers", "Pores", "Hold the water"], ["transport", "Connections", "Link pore to pore"], ["water", "Flow", "Fast or slow"]] },
+  gwAquifer: { caption: "Aquifers transmit water easily; aquitards hinder flow and can shield confined aquifers.", nodes: [["water", "Unconfined aquifer", "Open to the surface"], ["layers", "Aquitard", "Hinders flow"], ["pressure", "Confined aquifer", "Protected below"]] },
+  gwWaterTable: { caption: "The water table tops the saturated zone and follows the land surface in a gentler form.", nodes: [["weather", "Unsaturated zone", "Air and water"], ["water", "Water table", "Top of saturated zone"], ["layers", "Saturated zone", "All pores full"]] },
+  gwFlow: { caption: "Groundwater moves slowly from high hydraulic head at recharge areas to low head at discharge areas.", nodes: [["slope", "Recharge", "Water enters up high"], ["transport", "Slow flow", "Curving paths"], ["water", "Discharge", "Water exits down low"]] },
+  gwDarcy: { caption: "Darcy's law: flow rate equals permeability times the hydraulic gradient.", nodes: [["pressure", "Head drop", "h1 minus h2"], ["slope", "Gradient", "Divide by path length"], ["transport", "Flow rate", "Times permeability"]] },
+  gwWells: { caption: "Pumping draws the water table into a cone; confined aquifers can push water up artesian wells.", nodes: [["water", "Pump", "Water drawn out"], ["slope", "Cone of depression", "Water table dips"], ["pressure", "Artesian", "Pressure lifts water"]] },
+  gwSprings: { caption: "Springs flow where the water table, a barrier, a layer contrast or fractures send groundwater to the surface.", nodes: [["layers", "Groundwater", "Moving underground"], ["fault", "Barrier or contrast", "Blocks the path"], ["water", "Spring", "Water reaches the surface"]] },
+  gwHot: { caption: "Deep or magma-heated groundwater returns as hot springs, and geysers erupt when pressure drops.", nodes: [["magma", "Heat", "Gradient or magma"], ["pressure", "Held down", "Water above stops boiling"], ["gas", "Eruption", "Pressure drops, steam bursts"]] },
+  gwDepletion: { caption: "Pumping faster than recharge lowers the water table and dries up swamps, streams and wells.", nodes: [["water", "Heavy pumping", "Faster than refill"], ["slope", "Water table falls", "Cones grow"], ["earth", "Surface dries", "Swamps and streams lost"]] },
+  gwPumping: { caption: "Overpumping can reverse flow, pull in salt water and make the land subside for good.", nodes: [["transport", "Reversed flow", "Waste reaches wells"], ["water", "Saltwater", "Boundary rises"], ["layers", "Subsidence", "Pores collapse"]] },
+  gwQuality: { caption: "Groundwater is filtered by porous material but can carry natural substances such as iron and arsenic.", nodes: [["layers", "Filtering", "Pores and clay"], ["mineral", "Natural substances", "Iron, arsenic, sulfide"], ["water", "Treatment", "Removes harmful levels"]] },
+  gwPollution: { caption: "Septic systems, farms, chemicals, fuel, landfills and mines can all contaminate groundwater.", nodes: [["earth", "Sources", "On or in the ground"], ["weather", "Infiltration", "Rain carries it down"], ["water", "Aquifer", "Water is polluted"]] },
+  gwPlume: { caption: "Contaminants spread downgradient as a plume and are costly to clean up.", nodes: [["gas", "Source", "Highest concentration"], ["transport", "Plume", "Spreads with the flow"], ["water", "Cleanup", "Remove source, pump, bacteria"]] },
+  gwCaves: { caption: "Carbonic acid dissolves limestone into caves, and degassing water grows dripstone inside them.", nodes: [["weather", "Carbonic acid", "Water plus CO2"], ["layers", "Dissolve", "Along joints and beds"], ["crystal", "Speleothems", "Calcite deposits"]] },
+  gwKarst: { caption: "Dissolution, a dropping water table and roof collapse build karst landscapes.", nodes: [["layers", "Dissolution", "Near the water table"], ["water", "Caves drain", "Water table drops"], ["rupture", "Sinkholes", "Roofs collapse"]] },
 };
 
 const SECTION_PROFILES = {
@@ -102,6 +119,11 @@ const SECTION_PROFILES = {
     streamErosion: "erosion", sedimentLoad: "load", longProfile: "profile", baseLevel: "baselevel", canyon: "valleys",
     fanBraid: "fans", meander: "meanders", drainageChange: "evolution", delta: "deltas", flood: "floods",
     floodRisk: "living", riverUse: "resource",
+  },
+  groundwater: {
+    gwStorage: "water", gwPorosity: "porosity", gwPermeability: "permeability", gwAquifer: "aquifers", gwWaterTable: "watertable",
+    gwFlow: "flow", gwDarcy: "darcy", gwWells: "wells", gwSprings: "springs", gwHot: "hot", gwDepletion: "depletion",
+    gwPumping: "pumping", gwQuality: "quality", gwPollution: "pollution", gwPlume: "plumes", gwCaves: "caves", gwKarst: "karst",
   },
   interior: {
     investigation: "probes", chemical: "chemical", mechanical: "physical", gradient: "density-temp",

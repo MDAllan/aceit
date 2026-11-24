@@ -497,6 +497,18 @@ const CALC = {
       wrong: uniq(ans, [`${num(p)} years`, `${num(ri * 10)} years`, `${num(ri / 10)} years`, `${num(ri * 2)} years`, `${num(100 - p)} years`]),
       why: `Recurrence interval = 100 / (% chance each year) = 100 / ${num(p)} = ${num(ri)} years.` };
   },
+  "gw-gradient"() {
+    const j = rnd([200, 250, 400, 500, 1000, 2000]), dh = rnd([2, 4, 5, 10, 20]), h2 = rnd([50, 80, 100, 120]), h1 = h2 + dh, g = dh / j, ans = num(g);
+    return { q: `Two wells are ${j} m apart along a groundwater flow path. The hydraulic head is ${h1} m in the first and ${h2} m in the second. The hydraulic gradient is:`, ans,
+      wrong: uniq(ans, [num(j / dh), num(h1 / j), num(dh * j), num(g * 10), num(g / 10), num((h1 + h2) / j)]),
+      why: `Hydraulic gradient = (h1 - h2) / flow path length = (${h1} - ${h2}) / ${j} = ${dh} / ${j} = ${num(g)}.` };
+  },
+  "gw-travel"() {
+    const v = rnd([0.1, 0.2, 0.5, 1, 2]), d = rnd([100, 200, 365, 500, 1000]), t = d / v, ans = `${num(t)} days`;
+    return { q: `Groundwater moves at about ${num(v)} m per day. How long does it take to travel ${d} m to a well?`, ans,
+      wrong: uniq(ans, [`${num(d * v)} days`, `${num(t / 10)} days`, `${num(t * 10)} days`, `${num(v / d)} days`, `${num(t / 2)} days`]),
+      why: `Time = distance / speed = ${d} m / ${num(v)} m per day = ${num(t)} days. Groundwater is slow because it squeezes through tiny pores.` };
+  },
   kepler() {
     const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
@@ -522,4 +534,6 @@ const HINTS = {
   "atm-units": "1 kPa = 1000 Pa, 1 bar = 100,000 Pa and 1 atm = 101,325 Pa.",
   "stm-discharge": "Discharge = cross-sectional area x velocity, and area = width x depth for a simple channel.",
   "stm-recurrence": "Chance each year (%) = 100 / recurrence interval in years. A 100-year flood has a 1% chance every year.",
+  "gw-gradient": "Hydraulic gradient = difference in head (h1 - h2) / length of the flow path between the two places.",
+  "gw-travel": "Time = distance / speed. Keep the units the same: metres and metres per day give days.",
 };

@@ -1,0 +1,2761 @@
+{
+ "id": "groundwater",
+ "title": "Groundwater",
+ "chapter": "Ch 16",
+ "icon": "💧",
+ "color": "#1f7a8c",
+ "slideFile": "2026 Nov 18 & 20 Groundwater.pdf",
+ "intro": "Groundwater is the water hidden in the pores of rock and sediment below our feet. These notes cover where Earth's water is, porosity and permeability, aquifers and the water table, how and how fast groundwater flows, wells, springs, hot springs and geysers, the problems pumping and pollution cause, and how dissolving limestone makes caves and karst.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Describe where Earth's water is stored and how groundwater fits into the hydrologic cycle."
+  },
+  {
+   "id": "goal-02",
+   "text": "Distinguish porosity from permeability and primary from secondary porosity."
+  },
+  {
+   "id": "goal-03",
+   "text": "Compare aquifers and aquitards, and confined and unconfined aquifers."
+  },
+  {
+   "id": "goal-04",
+   "text": "Describe the water table, the saturated and unsaturated zones, and perched water tables."
+  },
+  {
+   "id": "goal-05",
+   "text": "Explain hydraulic head, recharge and discharge areas, and why groundwater moves slowly."
+  },
+  {
+   "id": "goal-06",
+   "text": "Use Darcy's law and calculate a hydraulic gradient."
+  },
+  {
+   "id": "goal-07",
+   "text": "Explain cones of depression, artesian wells, springs, hot springs and geysers."
+  },
+  {
+   "id": "goal-08",
+   "text": "Explain depletion, reversed flow, saltwater intrusion, subsidence and contamination of groundwater."
+  },
+  {
+   "id": "goal-09",
+   "text": "Explain how carbonic acid dissolves limestone to form caves, speleothems and karst landscapes."
+  }
+ ],
+ "sections": [
+  {
+   "id": "water",
+   "title": "Where Earth's water is",
+   "slides": "3-8 (60 is a review question)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/storage_3.webp",
+      "slide": "slide 3",
+      "alt": "Cross-section of land and sea labelled with the water stored in ice, the atmosphere, lakes and rivers, soil, groundwater and the ocean, beside a list of percentages: ocean 97%, ice 2.07%, groundwater 1.1%, lakes and rivers 0.014%, soil 0.009%, atmosphere 0.0009%."
+     },
+     "title": "Global water storage",
+     "bullets": [
+      "Earth holds about **1400 million km³** of water.",
+      "The **ocean** holds 97% of it, **ice** 2.07% and **groundwater** 1.1%. Lakes and rivers hold only 0.014%, soil 0.009% and the atmosphere 0.0009%.",
+      "Groundwater is about 15.3 million km³, far more than all lakes and rivers (200,000 km³).",
+      "Canada has **20%** of the world's freshwater storage."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/cycle_4.webp",
+      "slide": "slide 4",
+      "alt": "A large block diagram of land and sea with arrows for evaporation, precipitation, infiltration, percolation and runoff between the ocean, the atmosphere, glaciers, rivers, the land and the subsurface reservoir, beside a photo of a rock cliff."
+     },
+     "title": "The hydrologic cycle",
+     "bullets": [
+      "Water moves among **reservoirs**: the ocean, atmosphere, rivers, lakes, groundwater, living organisms, soils and glaciers.",
+      "The parts of the cycle include **evaporation**, **transpiration** (water released by plants), **precipitation**, **infiltration** and **runoff**.",
+      "Some water that falls on the surface **infiltrates** and becomes **soil moisture**. Water that **percolates** deeper becomes **groundwater**.",
+      "Groundwater flows slowly underground and resurfaces after **months to thousands of years** to rejoin the cycle."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/flux_5.webp",
+      "slide": "slide 5",
+      "alt": "Cross-section of land and sea with arrows labelled in cubic kilometres per year: 425,000 evaporated from the ocean, 315,000 falling back on the ocean, 110,000 carried to land, 110,000 falling on land, 70,000 evaporated from land and 40,000 running off to the sea."
+     },
+     "title": "Water moving each year",
+     "bullets": [
+      "Each year about **425,000 km³** evaporates from the ocean and 315,000 km³ falls back on it as rain.",
+      "About **110,000 km³** is carried to land and falls there; 70,000 km³ evaporates again from the land.",
+      "The other **40,000 km³** runs off back to the sea. This runoff is the **renewable supply** of fresh water.",
+      "That renewable supply is only about 0.003% of the world's water. About 1/3 of it is in South America and less than 1% in Australia."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/uses_6.webp",
+      "slide": "slide 6",
+      "alt": "Four photos: a glass of water, a windmill pump on dry land, and a woman filling a bottle from a pipe in a stone wall."
+     },
+     "title": "Why groundwater matters",
+     "bullets": [
+      "Groundwater is an important **resource**. People use it for **drinking water**, **irrigation** and **industry**.",
+      "It is **hidden from view**, so most people poorly understand it, and human activity **easily contaminates** it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/canada_7.webp",
+      "slide": "slide 7",
+      "alt": "A map of Canada with sedimentary basins in pink, a graph of salinity against depth where a red curve rises from near sea-water salinity at the surface to about 600 grams per litre at 4 km depth, and a cross-section of layered rock under the prairies."
+     },
+     "title": "Deep groundwater is salty",
+     "bullets": [
+      "Canada's large **sedimentary basins** hold groundwater deep below the surface.",
+      "The graph shows salinity rising with depth. Sea water is about 35 g/L, but deep basin groundwater reaches **hundreds of grams per litre** by about 4 km.",
+      "So deep groundwater is not fresh: it is **saltier than sea water**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/withdrawals_8.webp",
+      "slide": "slide 8",
+      "alt": "A stacked graph of world water withdrawals from 1900 to 2000 rising to about 5000 cubic km per year, split into agriculture, industry, municipal use and reservoir losses, with percentages for the world and for Alberta."
+     },
+     "title": "How we use the water we take",
+     "bullets": [
+      "World water withdrawals rose sharply after about 1950.",
+      "**Agriculture** uses the most: 63% worldwide and 66% in Alberta.",
+      "**Industry** uses 23% (Alberta 21%), **municipal** (towns and cities) 9% (Alberta 8%), and **reservoir losses** 5% in both."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Most of the fresh water we can actually reach is underground, so groundwater matters far more than lakes and rivers for supply."
+    },
+    {
+     "type": "trick",
+     "text": "Order of storage: Ocean > Ice > Groundwater > Lakes and rivers > Soil > Atmosphere."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 60 review question: most groundwater on Earth is salty (deep basin water, slide 7), not fresh. Do not mix up groundwater (1.1% of all water) with lakes and rivers (0.014%). Slide 8: agriculture, not industry, is the biggest user."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 3-8; slide 4 is Interlude F 'Geology at a Glance'. Slides 3, 5, 7 and 8 are picture-only slides; numbers are read from the figures.",
+    "Slide 7: Natural Resources Canada map and salinity graph; 'saltier than sea water' is read from the graph (sea water line vs curve to 600 g/L at 4 km).",
+    "Slide 60 review question: answer taken as C (salty), consistent with slide 7; no key is given on the slide."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/storage_3.webp",
+     "slide": "slide 3",
+     "alt": "Cross-section of land and sea labelled with the water stored in ice, the atmosphere, lakes and rivers, soil, groundwater and the ocean, beside a list of percentages: ocean 97%, ice 2.07%, groundwater 1.1%, lakes and rivers 0.014%, soil 0.009%, atmosphere 0.0009%."
+    },
+    {
+     "src": "img/groundwater/cycle_4.webp",
+     "slide": "slide 4",
+     "alt": "A large block diagram of land and sea with arrows for evaporation, precipitation, infiltration, percolation and runoff between the ocean, the atmosphere, glaciers, rivers, the land and the subsurface reservoir, beside a photo of a rock cliff."
+    },
+    {
+     "src": "img/groundwater/flux_5.webp",
+     "slide": "slide 5",
+     "alt": "Cross-section of land and sea with arrows labelled in cubic kilometres per year: 425,000 evaporated from the ocean, 315,000 falling back on the ocean, 110,000 carried to land, 110,000 falling on land, 70,000 evaporated from land and 40,000 running off to the sea."
+    },
+    {
+     "src": "img/groundwater/uses_6.webp",
+     "slide": "slide 6",
+     "alt": "Four photos: a glass of water, a windmill pump on dry land, and a woman filling a bottle from a pipe in a stone wall."
+    },
+    {
+     "src": "img/groundwater/canada_7.webp",
+     "slide": "slide 7",
+     "alt": "A map of Canada with sedimentary basins in pink, a graph of salinity against depth where a red curve rises from near sea-water salinity at the surface to about 600 grams per litre at 4 km depth, and a cross-section of layered rock under the prairies."
+    },
+    {
+     "src": "img/groundwater/withdrawals_8.webp",
+     "slide": "slide 8",
+     "alt": "A stacked graph of world water withdrawals from 1900 to 2000 rising to about 5000 cubic km per year, split into agriculture, industry, municipal use and reservoir losses, with percentages for the world and for Alberta."
+    }
+   ]
+  },
+  {
+   "id": "porosity",
+   "title": "Porosity: where groundwater sits",
+   "slides": "9-11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/porosity_9.webp",
+      "slide": "slide 9",
+      "alt": "Drawing of rounded sand grains with blue water and pale cement in the spaces between them, a 1 mm scale bar, and a microscope photo of grains with a pore and cement."
+     },
+     "title": "Pore space",
+     "bullets": [
+      "Groundwater sits in **pore spaces**: the open spaces within any sediment or rock.",
+      "The total volume of open space is called **porosity**.",
+      "Pores can be filled with **water or air**. They can also be filled with **mineral cement** or other fluids such as **oil or natural gas**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/primary_10.webp",
+      "slide": "slide 10",
+      "alt": "Photo of a cut bank of loose sediment layers, reddish gravel on top over pale sand and silt."
+     },
+     "title": "Primary porosity",
+     "bullets": [
+      "**Primary porosity** is open space that formed **with the material** itself.",
+      "Examples: voids between sediment grains, **vesicles** (gas bubbles) in basalt, and open cavities in **reef limestone**.",
+      "Primary porosity **decreases** with burial, compaction and cementation. **Crystalline rocks** have very little of it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/secondary_11.webp",
+      "slide": "slide 11",
+      "alt": "Photo of a flat limestone pavement split into blocks by many open cracks, with people walking on it near the sea."
+     },
+     "title": "Secondary porosity",
+     "bullets": [
+      "**Secondary porosity** is new pore space created **after** the rock first formed.",
+      "Examples: **fractures**, **fault breccia** (broken rock along a fault) and **solution cavities** (holes where rock dissolved)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/gen_porosity_types.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels. Primary porosity: water between sand grains and gas bubbles in dark basalt, which lessens after burial. Secondary porosity: blue fractures crossing pale rock and a dissolved cavity, made after the rock formed."
+     },
+     "title": "Primary and secondary side by side",
+     "bullets": [
+      "Primary = formed **with** the rock. Secondary = made **later**.",
+      "A rock can have both: for example, sandstone with pores between grains that is also cut by fractures."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Grains never fit together perfectly, so sediment starts with gaps. Burial squeezes and cements those gaps shut, which is why old buried rocks rely more on cracks."
+    },
+    {
+     "type": "trick",
+     "text": "Primary = Present at birth. Secondary = Second, added later."
+    },
+    {
+     "type": "trap",
+     "text": "Porosity is how much space there is, not how well water moves through it. Vesicles in basalt and reef cavities are PRIMARY, even though they look like holes; fractures and solution cavities are SECONDARY."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 9-11; Fig. 16.2a, b, c.",
+    "The sandstone example in the last step is an illustration (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/porosity_9.webp",
+     "slide": "slide 9",
+     "alt": "Drawing of rounded sand grains with blue water and pale cement in the spaces between them, a 1 mm scale bar, and a microscope photo of grains with a pore and cement."
+    },
+    {
+     "src": "img/groundwater/primary_10.webp",
+     "slide": "slide 10",
+     "alt": "Photo of a cut bank of loose sediment layers, reddish gravel on top over pale sand and silt."
+    },
+    {
+     "src": "img/groundwater/secondary_11.webp",
+     "slide": "slide 11",
+     "alt": "Photo of a flat limestone pavement split into blocks by many open cracks, with people walking on it near the sea."
+    },
+    {
+     "src": "img/groundwater/gen_porosity_types.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels. Primary porosity: water between sand grains and gas bubbles in dark basalt, which lessens after burial. Secondary porosity: blue fractures crossing pale rock and a dissolved cavity, made after the rock formed."
+    }
+   ]
+  },
+  {
+   "id": "permeability",
+   "title": "Permeability: how easily water flows",
+   "slides": "12 (61 is a review question)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/permeability_12.webp",
+      "slide": "slide 12",
+      "alt": "Drawing of sand grains with black arrows showing water winding through connected blue pores, and an inset of a glass beaker of pebbles with air-filled pores and water being poured in."
+     },
+     "title": "Permeability",
+     "bullets": [
+      "**Permeability** is how easily water flows, which depends on how well the pores **connect**.",
+      "**High-permeability** material lets water flow readily. Water flows **slowly** through **low-permeability** material."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/gen_pores.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation. Left panel: water dots stream quickly between large rounded grains with big connected pores, labelled high permeability. Right panel: water dots barely creep between tightly packed flat clay flakes, labelled low permeability."
+     },
+     "title": "Porosity is not permeability",
+     "bullets": [
+      "Porosity and permeability can be **independent**: a material can hold a lot of water but let it through slowly.",
+      "But permeability often **depends on porosity**: water needs open pores, and those pores need to connect."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water has to travel from pore to pore. Big, well-linked openings give it an easy path; tiny or isolated pores make it squeeze through slowly."
+    },
+    {
+     "type": "trick",
+     "text": "POROsity = how much it can hold (pores). PERMEability = how well it lets water PERMEATE (flow through)."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 61 review question: porosity and permeability are potentially independent, but permeability is often dependent on porosity (answer C). They are not the same thing."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 12; Fig. 16.2d, e.",
+    "Slide 61 review question (answer C).",
+    "The clay-flake panel in the animation illustrates low permeability; clay is a common example (outside source)."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/permeability_12.webp",
+     "slide": "slide 12",
+     "alt": "Drawing of sand grains with black arrows showing water winding through connected blue pores, and an inset of a glass beaker of pebbles with air-filled pores and water being poured in."
+    },
+    {
+     "src": "img/groundwater/gen_pores.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation. Left panel: water dots stream quickly between large rounded grains with big connected pores, labelled high permeability. Right panel: water dots barely creep between tightly packed flat clay flakes, labelled low permeability."
+    }
+   ]
+  },
+  {
+   "id": "aquifers",
+   "title": "Aquifers and aquitards",
+   "slides": "13",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/aquifers_13.webp",
+      "slide": "slide 13",
+      "alt": "Block diagram of layered ground: an unconfined aquifer at the top, a dark aquitard in the middle and a confined aquifer below, with arrows for flowing water and close-ups of high and low porosity and permeability."
+     },
+     "title": "Aquifers, aquitards, confined and unconfined",
+     "bullets": [
+      "An **aquifer** is rock with **high porosity and high permeability** that transmits water easily.",
+      "An **aquitard** has **lower permeability** and hinders water flow. Aquifers and aquitards are commonly **interlayered**.",
+      "An **unconfined aquifer** lies at the surface. It is in contact with human activities, so it is **easily contaminated**.",
+      "A **confined aquifer** lies **beneath an aquitard**. Isolated from the surface, it is **less likely to be polluted**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The aquitard acts like a lid. It keeps surface pollution from soaking down into the confined aquifer below."
+    },
+    {
+     "type": "trick",
+     "text": "Aquifer = water FERRY (carries water). Aquitard = reTARDs water."
+    },
+    {
+     "type": "trap",
+     "text": "The unconfined aquifer is the one at the surface and the more easily contaminated one; the confined aquifer is under an aquitard and better protected."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 13; Fig. 16.3a."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/aquifers_13.webp",
+     "slide": "slide 13",
+     "alt": "Block diagram of layered ground: an unconfined aquifer at the top, a dark aquitard in the middle and a confined aquifer below, with arrows for flowing water and close-ups of high and low porosity and permeability."
+    }
+   ]
+  },
+  {
+   "id": "watertable",
+   "title": "The water table",
+   "slides": "14-17",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/watertable_14.webp",
+      "slide": "slide 14",
+      "alt": "Block of ground with soil and plants on top: an upper unsaturated zone where moisture sticks to grains and air pockets remain, a thin capillary fringe, and a lower saturated zone where all pore space is filled with water."
+     },
+     "title": "Unsaturated and saturated zones",
+     "bullets": [
+      "The **water table** is the top of the groundwater reservoir.",
+      "Above it is the **unsaturated zone**: moisture sticks to grain surfaces and **air pockets remain**.",
+      "Below it is the **saturated zone**, where **all pore space is filled with water**.",
+      "The **capillary fringe** forms at the boundary between the two."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/climate_15.webp",
+      "slide": "slide 15",
+      "alt": "Two block diagrams. In a humid region the water table lies near the surface and fills a pond. In a dry region the water table sits deep below a dry valley."
+     },
+     "title": "Humid and dry climates",
+     "bullets": [
+      "The depth to the water table varies with the **climate** and the **seasons**.",
+      "In **humid** regions the water table lies **close to the surface**. Ponds and streams connect to it and stay filled.",
+      "In **dry** regions it sinks **deep below the surface**. Ponds and streams are disconnected from it and **dry up**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/topography_16.webp",
+      "slide": "slide 16",
+      "alt": "Cross-section of hills, a river and a pond, with a dashed water table that rises under the hills and dips to the river and pond, two points marked h1 and h2 on it, and sea level below."
+     },
+     "title": "Following the land surface",
+     "bullets": [
+      "The water table is **not flat**. It is a **subdued replica** of the land surface: high where the land is high and low where the land is low.",
+      "Water flows from **higher elevations to lower** ones, so **topography** can be used to estimate the direction groundwater flows."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/perched_17.webp",
+      "slide": "slide 17",
+      "alt": "Block diagram with a local aquitard lens holding a perched water table above the regional water table, over an unconfined aquifer, a continuous impermeable layer and a confined aquifer."
+     },
+     "title": "Perched water table",
+     "bullets": [
+      "A **perched water table** is a mound of groundwater trapped above a **discontinuous aquitard** (a patch of low-permeability rock) that lies above the regional water table."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Rain recharges the high ground more than it drains away, so the water table bulges up under hills and slopes down toward valleys, like a softened copy of the land."
+    },
+    {
+     "type": "trick",
+     "text": "Unsaturated = Up top (air + water). Saturated = Soaked (all water)."
+    },
+    {
+     "type": "trap",
+     "text": "The water table is not a flat surface and not an underground lake; it is the top of the saturated zone inside the rock and sediment pores."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 14-17; Fig. 16.3b, c, d and 16.4a, b."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/watertable_14.webp",
+     "slide": "slide 14",
+     "alt": "Block of ground with soil and plants on top: an upper unsaturated zone where moisture sticks to grains and air pockets remain, a thin capillary fringe, and a lower saturated zone where all pore space is filled with water."
+    },
+    {
+     "src": "img/groundwater/climate_15.webp",
+     "slide": "slide 15",
+     "alt": "Two block diagrams. In a humid region the water table lies near the surface and fills a pond. In a dry region the water table sits deep below a dry valley."
+    },
+    {
+     "src": "img/groundwater/topography_16.webp",
+     "slide": "slide 16",
+     "alt": "Cross-section of hills, a river and a pond, with a dashed water table that rises under the hills and dips to the river and pond, two points marked h1 and h2 on it, and sea level below."
+    },
+    {
+     "src": "img/groundwater/perched_17.webp",
+     "slide": "slide 17",
+     "alt": "Block diagram with a local aquitard lens holding a perched water table above the regional water table, over an unconfined aquifer, a continuous impermeable layer and a confined aquifer."
+    }
+   ]
+  },
+  {
+   "id": "flow",
+   "title": "How groundwater flows",
+   "slides": "18-20",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/head_18.webp",
+      "slide": "slide 18",
+      "alt": "Cross-section of a hill with a dashed water table, points h1 and h2 on the water table and p1 and p2 below them, beside a photo of a small white well pipe in the grass."
+     },
+     "title": "Hydraulic head",
+     "bullets": [
+      "**Hydraulic head** is the potential energy that drives groundwater flow.",
+      "It comes from **elevation** above sea level and the **pressure** from the weight of the overlying water.",
+      "A **piezometer** is a small well used to **measure** hydraulic head.",
+      "Flow **always** moves from **high to low hydraulic head**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/recharge_19.webp",
+      "slide": "slide 19",
+      "alt": "Cross-section of two hills and a valley with curving black flow lines that start under the hilltops (recharge) and rise into the stream and lake in the valleys (discharge), with a drainage divide between."
+     },
+     "title": "Recharge and discharge areas",
+     "bullets": [
+      "Groundwater **infiltrates** at **recharge areas**, which are at **higher** elevations.",
+      "It leaves the subsurface at **discharge areas**, which are at **lower** elevations.",
+      "It travels between them along **curving flow paths**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/slowflow_20.webp",
+      "slide": "slide 20",
+      "alt": "A photo of a fast white-water mountain stream beside a close-up of rock and sediment with tiny pore spaces."
+     },
+     "title": "Very slow movement",
+     "bullets": [
+      "Groundwater moves **very slowly** compared with surface water.",
+      "It must **percolate through pore openings** and is slowed by **friction** and **electrostatic forces**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/gen_speeds.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of flow speeds: a steep river channel at 30 km per hour, ocean currents at 3 km per hour, and groundwater at only 0.00002 km per hour, about half a metre a day."
+     },
+     "title": "How slow?",
+     "bullets": [
+      "Rapid flow rates compared: a **steep river channel** 30 km/h, **ocean currents** 3 km/h, **groundwater** only **0.00002 km/h**.",
+      "0.00002 km/h is about 0.5 m a day, so groundwater can take years to cross a field."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water in a pore is pressed by all the water above it and sits at some height, so it has energy. It moves to wherever that energy (head) is lower."
+    },
+    {
+     "type": "trick",
+     "text": "Head flows downhill: high head → low head, recharge (high ground) → discharge (low ground)."
+    },
+    {
+     "type": "trap",
+     "text": "Groundwater does not always flow straight down or toward the sea; it follows curving paths from high head to low head, and can flow UP into a valley at a discharge area."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 18-20; Fig. 16.4a and 16.5a.",
+    "The conversion 0.00002 km/h ≈ 0.5 m/day (0.48 m) is worked out here, not stated on the slide."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/head_18.webp",
+     "slide": "slide 18",
+     "alt": "Cross-section of a hill with a dashed water table, points h1 and h2 on the water table and p1 and p2 below them, beside a photo of a small white well pipe in the grass."
+    },
+    {
+     "src": "img/groundwater/recharge_19.webp",
+     "slide": "slide 19",
+     "alt": "Cross-section of two hills and a valley with curving black flow lines that start under the hilltops (recharge) and rise into the stream and lake in the valleys (discharge), with a drainage divide between."
+    },
+    {
+     "src": "img/groundwater/slowflow_20.webp",
+     "slide": "slide 20",
+     "alt": "A photo of a fast white-water mountain stream beside a close-up of rock and sediment with tiny pore spaces."
+    },
+    {
+     "src": "img/groundwater/gen_speeds.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of flow speeds: a steep river channel at 30 km per hour, ocean currents at 3 km per hour, and groundwater at only 0.00002 km per hour, about half a metre a day."
+    }
+   ]
+  },
+  {
+   "id": "darcy",
+   "title": "Darcy's law and flow paths",
+   "slides": "21-22 (62 is a review question)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/darcy_21.webp",
+      "slide": "slide 21",
+      "alt": "Cross-section of a slope with two drillholes reaching the water table at heads h1 and h2, a flow path length j between them, dashed flow paths, and the formulas delta h equals h1 minus h2 and HG equals delta h over j."
+     },
+     "title": "Darcy's law",
+     "bullets": [
+      "**Darcy's law**: the groundwater flow rate is governed by **permeability multiplied by the hydraulic gradient**.",
+      "**High permeability** increases the flow rate; low permeability decreases it.",
+      "A **steeper gradient** increases the flow rate; a less steep one moves slower."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/gen_gradient.webp",
+      "slide": "none (original diagram)",
+      "alt": "Cross-section of a slope with two drillholes. Water stands at 120 m in the first and 100 m in the second, 1000 m apart along the flow path. The gradient is 20 divided by 1000, which is 0.02, and flow rate equals permeability times hydraulic gradient."
+     },
+     "title": "Working out the hydraulic gradient",
+     "bullets": [
+      "The level water rises to in a drillhole is the **hydraulic head (h)**.",
+      "**Hydraulic gradient (HG) = (h1 − h2) ÷ j**, where j is the length of the flow path between the two places.",
+      "Example: heads of 120 m and 100 m, 1000 m apart, give HG = 20 ÷ 1000 = **0.02**.",
+      "The hydraulic gradient shows up as the **slope of the water table**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/scales_22.webp",
+      "slide": "slide 22",
+      "alt": "Cross-section about 100 km across of a sedimentary basin: blue flow paths start at a recharge area in the hills and reach discharge areas after years on short shallow paths, centuries on longer ones and millennia on the deepest, with a fault."
+     },
+     "title": "Flow on many scales",
+     "bullets": [
+      "Groundwater flow happens on many **time and distance scales**.",
+      "Some groundwater flows **hundreds of kilometres** across sedimentary basins.",
+      "The transit time depends on the flow path. **Deeper paths take longer**: years, centuries or even millennia."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Permeability sets how easy the path is, and the gradient sets how hard the water is pushed. Doubling either one speeds the flow."
+    },
+    {
+     "type": "trick",
+     "text": "Darcy: Rate = Permeability × Gradient. Gradient = drop in head ÷ distance."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 62 review question: Darcy's law describes the rate at which GROUNDWATER will flow (answer B), not surface water, recharge time or the age of water."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 21-22; Fig. Bx 16.1 and 16.5b.",
+    "Slide 62 review question (answer B).",
+    "The 120 m / 100 m / 1000 m worked example is an illustration, not slide values."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/darcy_21.webp",
+     "slide": "slide 21",
+     "alt": "Cross-section of a slope with two drillholes reaching the water table at heads h1 and h2, a flow path length j between them, dashed flow paths, and the formulas delta h equals h1 minus h2 and HG equals delta h over j."
+    },
+    {
+     "src": "img/groundwater/gen_gradient.webp",
+     "slide": "none (original diagram)",
+     "alt": "Cross-section of a slope with two drillholes. Water stands at 120 m in the first and 100 m in the second, 1000 m apart along the flow path. The gradient is 20 divided by 1000, which is 0.02, and flow rate equals permeability times hydraulic gradient."
+    },
+    {
+     "src": "img/groundwater/scales_22.webp",
+     "slide": "slide 22",
+     "alt": "Cross-section about 100 km across of a sedimentary basin: blue flow paths start at a recharge area in the hills and reach discharge areas after years on short shallow paths, centuries on longer ones and millennia on the deepest, with a fault."
+    }
+   ]
+  },
+  {
+   "id": "wells",
+   "title": "Wells",
+   "slides": "23-25",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/well_23.webp",
+      "slide": "slide 23",
+      "alt": "Photo of a slotted white well screen and a cutaway drawing of a well: a lid and pump on top, cement or clay seal, casing through aquitards and aquifers, a submersible intake, packed sand and a sand screen at the bottom."
+     },
+     "title": "A modern well",
+     "bullets": [
+      "A modern well pulls water through a **well screen** with a **submersible electric pump** and pushes it up through piping.",
+      "**Packed sand** around the screen **filters** the water."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/cone_24.webp",
+      "slide": "slide 24",
+      "alt": "Two block diagrams: a big well and a small well before and after pumping, with the water table sagging into a cone around the big well, and a later view where the small well is dry; a photo of crop irrigation."
+     },
+     "title": "Cone of depression",
+     "bullets": [
+      "Pumping affects the water table.",
+      "If groundwater is extracted **faster than it can be replaced**, a **cone of depression** develops around the well.",
+      "A large well can lower the water table enough that a **nearby small well goes dry**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/gen_cone.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a big well pumps while the water table sags into a deepening cone of depression around it, until the shallow intake of a nearby small well sits above the water and the small well goes dry."
+     },
+     "title": "Watch the cone grow",
+     "bullets": [
+      "The cone is deepest at the pumping well and shallower farther away.",
+      "A shallow well inside the cone can be left **above** the lowered water table."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/artesian_25.webp",
+      "slide": "slide 25",
+      "alt": "Cross-section of a tilted confined aquifer recharged in the hills, with a potentiometric surface above it, a flowing artesian well and a nonflowing artesian well; below, a town water tower setting the water level for houses."
+     },
+     "title": "Artesian wells",
+     "bullets": [
+      "**Artesian wells** tap **confined, tilted aquifers** that are **pressurized** by recharge in the uplands.",
+      "Water rises in an artesian well to the **potentiometric surface**, the confined aquifer's version of the water table.",
+      "Where the well casing is **below** that surface, the well **flows without pumping**.",
+      "City water systems work the same way: a **water tower** sets the potentiometric surface."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water in a confined aquifer is squeezed by the higher water in its recharge area, so it pushes up any well that opens into it."
+    },
+    {
+     "type": "trick",
+     "text": "Artesian: the aquifer is under pressure like a garden hose with the tap on; a water tower does the same for a city."
+    },
+    {
+     "type": "trap",
+     "text": "An artesian well flows on its own only if its top is BELOW the potentiometric surface. A well into a confined aquifer above that surface still needs a pump."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 23-25; Fig. 16.6a, b, c and 16.7."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/well_23.webp",
+     "slide": "slide 23",
+     "alt": "Photo of a slotted white well screen and a cutaway drawing of a well: a lid and pump on top, cement or clay seal, casing through aquitards and aquifers, a submersible intake, packed sand and a sand screen at the bottom."
+    },
+    {
+     "src": "img/groundwater/cone_24.webp",
+     "slide": "slide 24",
+     "alt": "Two block diagrams: a big well and a small well before and after pumping, with the water table sagging into a cone around the big well, and a later view where the small well is dry; a photo of crop irrigation."
+    },
+    {
+     "src": "img/groundwater/gen_cone.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a big well pumps while the water table sags into a deepening cone of depression around it, until the shallow intake of a nearby small well sits above the water and the small well goes dry."
+    },
+    {
+     "src": "img/groundwater/artesian_25.webp",
+     "slide": "slide 25",
+     "alt": "Cross-section of a tilted confined aquifer recharged in the hills, with a potentiometric surface above it, a flowing artesian well and a nonflowing artesian well; below, a town water tower setting the water level for houses."
+    }
+   ]
+  },
+  {
+   "id": "springs",
+   "title": "Springs",
+   "slides": "26-28",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/spring_26.webp",
+      "slide": "slide 26",
+      "alt": "Photo of a reedy wetland and a block diagram of a hillside where the water table meets the surface in a valley, with water flowing out from recharge to discharge."
+     },
+     "title": "Where springs form",
+     "bullets": [
+      "**Springs** are places of **natural groundwater discharge**. They have been important resources for people for millennia.",
+      "A spring develops where the **water table meets the surface**, most often in a **valley**.",
+      "Springs are marked by **wetland plants**, wetlands that last all year, **saturated soil**, ground that does not freeze, and **streamflow**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/fault_spring_27.webp",
+      "slide": "slide 27",
+      "alt": "Two block diagrams: groundwater blocked by a steep impermeable fault is pushed up into a spring, and a perched water table above a lens of rock seeps out on a hillside."
+     },
+     "title": "Barriers and perched water",
+     "bullets": [
+      "Where flowing groundwater reaches a **steep, impermeable barrier** such as a fault, pressure pushes it up to the surface.",
+      "A **seep** develops where a **perched water table** meets the surface."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/layer_spring_28.webp",
+      "slide": "slide 28",
+      "alt": "Two block diagrams: water flowing out where a permeable layer sits on an impermeable layer in a cliff, and water flowing out of a network of fractures in a hillside."
+     },
+     "title": "Layers and fractures",
+     "bullets": [
+      "Springs develop where there are **strong permeability contrasts** in layered sedimentary rock: water flows out along the top of an impermeable layer.",
+      "A network of **interconnected fractures** also lets springs flow."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Groundwater keeps moving until something sends it to the surface: the land dropping below the water table, a wall it cannot pass, or a layer it cannot sink through."
+    },
+    {
+     "type": "trick",
+     "text": "Spring = where the water table pokes out of the ground."
+    },
+    {
+     "type": "trap",
+     "text": "A seep comes from a PERCHED water table, not the regional one. Springs are discharge points, not recharge points."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 26-28; Fig. 16.8a-e."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/spring_26.webp",
+     "slide": "slide 26",
+     "alt": "Photo of a reedy wetland and a block diagram of a hillside where the water table meets the surface in a valley, with water flowing out from recharge to discharge."
+    },
+    {
+     "src": "img/groundwater/fault_spring_27.webp",
+     "slide": "slide 27",
+     "alt": "Two block diagrams: groundwater blocked by a steep impermeable fault is pushed up into a spring, and a perched water table above a lens of rock seeps out on a hillside."
+    },
+    {
+     "src": "img/groundwater/layer_spring_28.webp",
+     "slide": "slide 28",
+     "alt": "Two block diagrams: water flowing out where a permeable layer sits on an impermeable layer in a cliff, and water flowing out of a network of fractures in a hillside."
+    }
+   ]
+  },
+  {
+   "id": "hot",
+   "title": "Hot springs and geysers",
+   "slides": "29-32",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/hotspring_29.webp",
+      "slide": "slide 29",
+      "alt": "Block diagram of fractured permeable rock over impermeable rock and magma: cool water sinks, is heated at depth and rises as red arrows to a hot spring and a geyser at the surface."
+     },
+     "title": "Where hot springs form",
+     "bullets": [
+      "**Deep groundwater is warm**. The heat comes from the **geothermal gradient** (Earth gets hotter with depth).",
+      "Hot springs develop in two settings: where deep groundwater **discharges along faults**, and in **geothermal regions**.",
+      "In geothermal regions, high geothermal gradients are linked to **shallow magma**. Circulation returns the heated groundwater to the surface."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/iceland_30.webp",
+      "slide": "slide 30",
+      "alt": "Photo of a steaming milky-blue hot spring lagoon with bathers and a footbridge among dark lava rocks."
+     },
+     "title": "Hot springs in Iceland",
+     "bullets": [
+      "Hot springs in **Iceland**, warmed by magma below, attract tourists from around the world."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/yellowstone_31.webp",
+      "slide": "slide 31",
+      "alt": "Photo of a bright blue hot spring pool ringed with white, orange and brown mineral crusts."
+     },
+     "title": "Colourful pools",
+     "bullets": [
+      "Pools in **Yellowstone National Park**, Wyoming, get their colours from **bacteria and archaea** living in the hot water."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/geyser_32.webp",
+      "slide": "slide 32",
+      "alt": "Photo of a tall white column of steam and water erupting from a geyser under a blue sky."
+     },
+     "title": "Geysers",
+     "bullets": [
+      "**Geysers** erupt boiling water and steam **in cycles**.",
+      "Shallow magma heats the groundwater, but the **weight of the overlying water prevents boiling**.",
+      "When **bubbles** form, the pressure drops, the water turns to vapour and **all the water boils at once**.",
+      "The cycle repeats after the emptied chamber **refills**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/gen_geyser.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four panels of a geyser chamber above magma: 1 groundwater fills and is heated, 2 the weight of the water above stops it boiling, 3 bubbles form as pressure drops, 4 all the water boils at once and erupts as steam and water."
+     },
+     "title": "The geyser cycle",
+     "bullets": [
+      "Fill and heat → no boiling yet (held down by the water above) → bubbles form and pressure drops → everything boils and erupts → refill."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water under pressure needs a higher temperature to boil. Once some water escapes, the pressure falls, and the superheated water flashes to steam all at once."
+    },
+    {
+     "type": "trick",
+     "text": "Geyser = a pressure cooker that blows its lid, empties, and starts over."
+    },
+    {
+     "type": "trap",
+     "text": "The heat for hot springs comes from the geothermal gradient or shallow magma, not from the Sun. Geysers erupt because PRESSURE drops, not because more heat is suddenly added."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 29-32; Fig. 16.9a, b, c, e."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/hotspring_29.webp",
+     "slide": "slide 29",
+     "alt": "Block diagram of fractured permeable rock over impermeable rock and magma: cool water sinks, is heated at depth and rises as red arrows to a hot spring and a geyser at the surface."
+    },
+    {
+     "src": "img/groundwater/iceland_30.webp",
+     "slide": "slide 30",
+     "alt": "Photo of a steaming milky-blue hot spring lagoon with bathers and a footbridge among dark lava rocks."
+    },
+    {
+     "src": "img/groundwater/yellowstone_31.webp",
+     "slide": "slide 31",
+     "alt": "Photo of a bright blue hot spring pool ringed with white, orange and brown mineral crusts."
+    },
+    {
+     "src": "img/groundwater/geyser_32.webp",
+     "slide": "slide 32",
+     "alt": "Photo of a tall white column of steam and water erupting from a geyser under a blue sky."
+    },
+    {
+     "src": "img/groundwater/gen_geyser.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four panels of a geyser chamber above magma: 1 groundwater fills and is heated, 2 the weight of the water above stops it boiling, 3 bubbles form as pressure drops, 4 all the water boils at once and erupts as steam and water."
+    }
+   ]
+  },
+  {
+   "id": "depletion",
+   "title": "Using groundwater up",
+   "slides": "33-36, 39, 43",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/resource_33.webp",
+      "slide": "slide 33",
+      "alt": "Aerial photo of a large farm and feedlot complex with long white buildings and fields."
+     },
+     "title": "A threatened resource",
+     "bullets": [
+      "Groundwater is an important natural resource. It makes up **95% of all the liquid fresh water** on Earth and supplies a large share of drinking water.",
+      "It is threatened by **mismanagement, overuse and pollution**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/depletion_34.webp",
+      "slide": "slide 34",
+      "alt": "Two block diagrams. Before: a high water table feeds a flowing river and a swamp. After: pumping wells under irrigated land and a city have lowered the water table, leaving a dry river and a dry swamp."
+     },
+     "title": "Before and after heavy pumping",
+     "bullets": [
+      "Before withdrawal, the water table is **high** and discharges to a **swamp** and a **permanent stream**.",
+      "After long-term withdrawal, the water table **falls** and no longer meets the surface. The swamp and stream **dry up**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/everglades_39.webp",
+      "slide": "slide 39",
+      "alt": "Two maps of southern Florida. Around 1700, water flows south from Lake Okeechobee through the Big Cypress Swamp and the Everglades. Today, canals divert the water and saltwater intrudes along the coasts."
+     },
+     "title": "The Everglades",
+     "bullets": [
+      "Diverting water from the **recharge areas** of the Everglades into **canals** has dried up parts of the Everglades."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/tucson_35.webp",
+      "slide": "slide 35",
+      "alt": "Line graph of the water table in the Tucson basin from 1945 to 2005, dropping steadily deeper below the ground as the population grew."
+     },
+     "title": "A falling water table in Tucson",
+     "bullets": [
+      "In the **Tucson basin** (Arizona), the water table **fell steadily** from 1945 to 2005 as the population grew."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/usa_43.webp",
+      "slide": "slide 43",
+      "alt": "Map of the southwestern United States with coloured dots at wells showing water-level declines of 50 to 100, 100 to 200, and more than 200 feet, clustered in southern Arizona."
+     },
+     "title": "Declines across the southwest",
+     "bullets": [
+      "Wells across the southwestern United States show **water-level declines** of 50 to more than 200 feet, with the biggest clusters in **southern Arizona**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/global_36.webp",
+      "slide": "slide 36",
+      "alt": "World map shading regions by increasing groundwater stress, with the most stressed areas in red in parts of North America, the Middle East, India and China."
+     },
+     "title": "A global problem",
+     "bullets": [
+      "Groundwater is **overused worldwide**. The map shades regions by increasing **groundwater stress**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/gen_problems.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four labelled cards: depletion, where the water table falls and springs, swamps and streams dry up; reversed flow, where a big well pulls septic waste toward a home well; saltwater intrusion near coasts; and land subsidence, where pores collapse and the ground sinks for good."
+     },
+     "title": "Problems from pumping",
+     "bullets": [
+      "Pumping too much causes four problems in these notes: **depletion**, **reversed flow**, **saltwater intrusion** and **land subsidence**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Groundwater refills slowly, over years to millennia. Pumping it faster than it refills is like spending savings faster than you earn."
+    },
+    {
+     "type": "trick",
+     "text": "Too much pumping → water table falls → surface water dries up."
+    },
+    {
+     "type": "trap",
+     "text": "Groundwater is 95% of the LIQUID fresh water, but only 1.1% of ALL water (most fresh water is ice). Do not mix up the two numbers."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 33-36, 39 and 43; Fig. 16.10a-d. Slide 35: The Rillito River Project. Slide 36: Gleeson et al. 2012, Nature. Slide 43: USGS.",
+    "Slides 35, 36 and 43 are picture-only; descriptions are read from the figures. The child photo on slide 33 is left out."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/resource_33.webp",
+     "slide": "slide 33",
+     "alt": "Aerial photo of a large farm and feedlot complex with long white buildings and fields."
+    },
+    {
+     "src": "img/groundwater/depletion_34.webp",
+     "slide": "slide 34",
+     "alt": "Two block diagrams. Before: a high water table feeds a flowing river and a swamp. After: pumping wells under irrigated land and a city have lowered the water table, leaving a dry river and a dry swamp."
+    },
+    {
+     "src": "img/groundwater/everglades_39.webp",
+     "slide": "slide 39",
+     "alt": "Two maps of southern Florida. Around 1700, water flows south from Lake Okeechobee through the Big Cypress Swamp and the Everglades. Today, canals divert the water and saltwater intrudes along the coasts."
+    },
+    {
+     "src": "img/groundwater/tucson_35.webp",
+     "slide": "slide 35",
+     "alt": "Line graph of the water table in the Tucson basin from 1945 to 2005, dropping steadily deeper below the ground as the population grew."
+    },
+    {
+     "src": "img/groundwater/usa_43.webp",
+     "slide": "slide 43",
+     "alt": "Map of the southwestern United States with coloured dots at wells showing water-level declines of 50 to 100, 100 to 200, and more than 200 feet, clustered in southern Arizona."
+    },
+    {
+     "src": "img/groundwater/global_36.webp",
+     "slide": "slide 36",
+     "alt": "World map shading regions by increasing groundwater stress, with the most stressed areas in red in parts of North America, the Middle East, India and China."
+    },
+    {
+     "src": "img/groundwater/gen_problems.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four labelled cards: depletion, where the water table falls and springs, swamps and streams dry up; reversed flow, where a big well pulls septic waste toward a home well; saltwater intrusion near coasts; and land subsidence, where pores collapse and the ground sinks for good."
+    }
+   ]
+  },
+  {
+   "id": "pumping",
+   "title": "Reversed flow, salt water and sinking land",
+   "slides": "37-38, 40-41",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/reversal_37.webp",
+      "slide": "slide 37",
+      "alt": "Two block diagrams of a home with a septic tank and well. Before: regional groundwater carries the septic plume away from the home well. After: a large irrigation well's cone of depression pulls the plume into the home well."
+     },
+     "title": "Reversing the flow",
+     "bullets": [
+      "Pumping can **reverse** the natural hydraulic gradient.",
+      "Before pumping, regional flow carries **septic effluent** away from the home well.",
+      "A large **irrigation well** makes a big cone of depression that **reverses the gradient**, and septic waste contaminates the home well."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/saline_38.webp",
+      "slide": "slide 38",
+      "alt": "Two block diagrams of a coast. Before: fresh groundwater floats on salty groundwater under the land. After: a pumping well pulls the saltwater boundary up into the well."
+     },
+     "title": "Saltwater intrusion",
+     "bullets": [
+      "Beneath coastal land, **fresh water floats on salt water**.",
+      "Pumping makes the **fresh/salt boundary rise** and contaminates the well.",
+      "Saltwater intrusion makes groundwater **unpotable** (not safe to drink)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/subsidence_40.webp",
+      "slide": "slide 40",
+      "alt": "Two block diagrams. Before: water in the pore spaces holds the grains apart. After: with groundwater removed, the grains are compressed, and cracks, fissures and scarps form at the surface."
+     },
+     "title": "Land subsidence",
+     "bullets": [
+      "Water in pore spaces **holds the grains apart**.",
+      "When groundwater is removed, grains **compress** and **pores collapse**.",
+      "The land surface **cracks and subsides**, and the change is **irreversible**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/sinking_41.webp",
+      "slide": "slide 41",
+      "alt": "Three photos: a pole in California's San Joaquin Valley marked with old ground levels high above the present surface, sinking buildings along a canal in Venice, and the Leaning Tower of Pisa."
+     },
+     "title": "Famous sinking places",
+     "bullets": [
+      "Dramatic examples of subsidence from groundwater withdrawal: the **San Joaquin Valley** in California, sinking buildings in **Venice** and the **Leaning Tower of Pisa** in Italy."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The water in pores carries part of the weight above. Pump it out and the grains take all the load, squash together and close the pores for good."
+    },
+    {
+     "type": "trick",
+     "text": "Pump too hard and you get: wrong-way flow, salt in the well, and a sinking town."
+    },
+    {
+     "type": "trap",
+     "text": "Subsidence from pumping is IRREVERSIBLE: refilling the aquifer does not re-open the collapsed pores or lift the land back up."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 37-38, 40-41; Fig. 16.11a-f; slide 41 is Earth 4th edition Fig. 19.20b-d."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/reversal_37.webp",
+     "slide": "slide 37",
+     "alt": "Two block diagrams of a home with a septic tank and well. Before: regional groundwater carries the septic plume away from the home well. After: a large irrigation well's cone of depression pulls the plume into the home well."
+    },
+    {
+     "src": "img/groundwater/saline_38.webp",
+     "slide": "slide 38",
+     "alt": "Two block diagrams of a coast. Before: fresh groundwater floats on salty groundwater under the land. After: a pumping well pulls the saltwater boundary up into the well."
+    },
+    {
+     "src": "img/groundwater/subsidence_40.webp",
+     "slide": "slide 40",
+     "alt": "Two block diagrams. Before: water in the pore spaces holds the grains apart. After: with groundwater removed, the grains are compressed, and cracks, fissures and scarps form at the surface."
+    },
+    {
+     "src": "img/groundwater/sinking_41.webp",
+     "slide": "slide 41",
+     "alt": "Three photos: a pole in California's San Joaquin Valley marked with old ground levels high above the present surface, sinking buildings along a canal in Venice, and the Leaning Tower of Pisa."
+    }
+   ]
+  },
+  {
+   "id": "quality",
+   "title": "Natural groundwater quality",
+   "slides": "42",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/natural_42.webp",
+      "slide": "slide 42",
+      "alt": "Photos of a home water softener tank, frozen icicles of seeping groundwater on a rock face stained by minerals, and an element tile for arsenic."
+     },
+     "title": "Clean, but not always pure",
+     "bullets": [
+      "Groundwater is often of **high quality** because porous material **filters** it and **clay absorbs** substances.",
+      "Natural groundwater can still contain unwanted substances: **hardness**, **iron**, **manganese**, **hydrogen sulfide**, **arsenic** and many others.",
+      "Harmful concentrations can usually be **removed by treatment**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "As water creeps through sediment, the grains act like a sand filter, and clay grabs many dissolved substances."
+    },
+    {
+     "type": "trick",
+     "text": "Natural problems: Hard water, Iron, Manganese, Sulfide (rotten-egg gas), Arsenic."
+    },
+    {
+     "type": "trap",
+     "text": "Not every contaminant is human-made: arsenic, iron and hydrogen sulfide can occur naturally in groundwater."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 42."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/natural_42.webp",
+     "slide": "slide 42",
+     "alt": "Photos of a home water softener tank, frozen icicles of seeping groundwater on a rock face stained by minerals, and an element tile for arsenic."
+    }
+   ]
+  },
+  {
+   "id": "pollution",
+   "title": "Human sources of contamination",
+   "slides": "44-50",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/sources_44.webp",
+      "slide": "slide 44",
+      "alt": "Block diagram of a landscape with acid mine waste, fertilizer, farm animal sewage, a septic tank, a gas station tank, a garbage landfill, salt piles, waste containers and an injection well, each leaking down toward the water table and aquifer."
+     },
+     "title": "Many human sources",
+     "bullets": [
+      "Many human activities **contaminate groundwater**: mine waste, fertilizer, farm animal sewage, septic tanks, leaking tanks, landfills, road salt, waste containers and injection wells."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/septic_45.webp",
+      "slide": "slide 45",
+      "alt": "Photos of a broken septic pipe in the soil and a large animal feedlot with silos."
+     },
+     "title": "Septic systems and feedlots",
+     "bullets": [
+      "**Failing septic systems** and **runoff from animal feedlots** are human sources of contamination."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/farm_46.webp",
+      "slide": "slide 46",
+      "alt": "Photos of a tank of anhydrous ammonia fertilizer on a trailer and a small tractor spraying pesticide on a field."
+     },
+     "title": "Fertilizers and pesticides",
+     "bullets": [
+      "**Agricultural runoff and infiltration** are significant contributors: **fertilizers** and **pesticides** soak into the ground."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/chemicals_47.webp",
+      "slide": "slide 47",
+      "alt": "Photos of rusty barrels of industrial solvents in the weeds and a person in protective gear pouring paint thinners among old paint cans."
+     },
+     "title": "Toxic chemicals",
+     "bullets": [
+      "Improper **storage and disposal** of toxic chemicals contaminates groundwater, for example **industrial solvents and degreasers**, **paints and thinners**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/petroleum_48.webp",
+      "slide": "slide 48",
+      "alt": "Photos of an aerial view of large petroleum storage tanks and an abandoned gas station with a tilted sign."
+     },
+     "title": "Petroleum",
+     "bullets": [
+      "**Petroleum terminals** and **abandoned gas stations** (with leaking underground tanks) are sources too."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/landfill_49.webp",
+      "slide": "slide 49",
+      "alt": "Photos of piles of crushed cars in a junkyard and a grassy landfill hill with a person standing on it."
+     },
+     "title": "Junkyards and landfills",
+     "bullets": [
+      "**Junkyards** and **landfills** leak contaminants into the ground."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/mine_50.webp",
+      "slide": "slide 50",
+      "alt": "Photos of rows of bare mine spoil heaps and a bright orange stream polluted by mine processing waste."
+     },
+     "title": "Mining waste",
+     "bullets": [
+      "**Mine spoil and processing wastes** can contaminate groundwater."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Anything spilled, buried or spread on the ground can be carried down by infiltrating rain into the aquifer below."
+    },
+    {
+     "type": "trick",
+     "text": "Farms, factories, fuel, garbage, mines and septic: if it is on or in the ground, it can reach groundwater."
+    },
+    {
+     "type": "trap",
+     "text": "An unconfined aquifer (open to the surface) is the most at risk from these sources; a confined aquifer under an aquitard is better protected."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 44-50; Fig. 16.12a. 'With leaking underground tanks' is an outside clarification."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/sources_44.webp",
+     "slide": "slide 44",
+     "alt": "Block diagram of a landscape with acid mine waste, fertilizer, farm animal sewage, a septic tank, a gas station tank, a garbage landfill, salt piles, waste containers and an injection well, each leaking down toward the water table and aquifer."
+    },
+    {
+     "src": "img/groundwater/septic_45.webp",
+     "slide": "slide 45",
+     "alt": "Photos of a broken septic pipe in the soil and a large animal feedlot with silos."
+    },
+    {
+     "src": "img/groundwater/farm_46.webp",
+     "slide": "slide 46",
+     "alt": "Photos of a tank of anhydrous ammonia fertilizer on a trailer and a small tractor spraying pesticide on a field."
+    },
+    {
+     "src": "img/groundwater/chemicals_47.webp",
+     "slide": "slide 47",
+     "alt": "Photos of rusty barrels of industrial solvents in the weeds and a person in protective gear pouring paint thinners among old paint cans."
+    },
+    {
+     "src": "img/groundwater/petroleum_48.webp",
+     "slide": "slide 48",
+     "alt": "Photos of an aerial view of large petroleum storage tanks and an abandoned gas station with a tilted sign."
+    },
+    {
+     "src": "img/groundwater/landfill_49.webp",
+     "slide": "slide 49",
+     "alt": "Photos of piles of crushed cars in a junkyard and a grassy landfill hill with a person standing on it."
+    },
+    {
+     "src": "img/groundwater/mine_50.webp",
+     "slide": "slide 50",
+     "alt": "Photos of rows of bare mine spoil heaps and a bright orange stream polluted by mine processing waste."
+    }
+   ]
+  },
+  {
+   "id": "plumes",
+   "title": "Contaminant plumes and cleanup",
+   "slides": "51-52",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/plume_51.webp",
+      "slide": "slide 51",
+      "alt": "Block diagram of a pollutant source leaking into the ground, forming a pink plume in the groundwater that is most concentrated near the source and fades with distance in the direction of flow, with an inset of a pipe leaking between grains."
+     },
+     "title": "Contaminant plumes",
+     "bullets": [
+      "Groundwater carries pollutants away from the source and creates a **contaminant plume**.",
+      "Concentrations are **highest near the source** and **decrease with distance** in the direction of groundwater flow."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/cleanup_52.webp",
+      "slide": "slide 52",
+      "alt": "Photo of a monitoring well pipe and a diagram where steam is injected at the edges of a contaminated zone and pumping wells in the middle draw the pollutant out."
+     },
+     "title": "Cleaning it up",
+     "bullets": [
+      "Contamination can be cleaned up using **engineering** and **natural processes**, but it is **expensive**.",
+      "Most cleanup strategies start by **removing the source**.",
+      "One method injects **steam** and uses **pumping wells** to draw the pollutant out.",
+      "**Bioremediation** uses **bacteria** to clean groundwater."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Groundwater flows slowly in one direction, so a leak spreads into a long tongue downstream that is strongest where it started."
+    },
+    {
+     "type": "trick",
+     "text": "Plume = smoke from a chimney: thick at the source, thinning as it drifts downstream."
+    },
+    {
+     "type": "trap",
+     "text": "The plume moves WITH the groundwater flow (downgradient), not in every direction equally, and bioremediation uses bacteria, not chemicals."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 51-52; Fig. 16.12b, c."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/plume_51.webp",
+     "slide": "slide 51",
+     "alt": "Block diagram of a pollutant source leaking into the ground, forming a pink plume in the groundwater that is most concentrated near the source and fades with distance in the direction of flow, with an inset of a pipe leaking between grains."
+    },
+    {
+     "src": "img/groundwater/cleanup_52.webp",
+     "slide": "slide 52",
+     "alt": "Photo of a monitoring well pipe and a diagram where steam is injected at the edges of a contaminated zone and pumping wells in the middle draw the pollutant out."
+    }
+   ]
+  },
+  {
+   "id": "caves",
+   "title": "Caves",
+   "slides": "53-55 (63 is a review question)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/acid_53.webp",
+      "slide": "slide 53",
+      "alt": "Photo of grey limestone pavement with rounded, dissolved channels and grass growing in the cracks, labelled H2O plus CO2 gives H2CO3."
+     },
+     "title": "Carbonic acid",
+     "bullets": [
+      "Caves form when **weakly acidic groundwater dissolves limestone**.",
+      "CO₂ is added to **rainwater** as it falls through the air, and to groundwater from **decaying organic matter** in the soil.",
+      "CO₂ reacts with water to form **carbonic acid**: H₂O + CO₂ → H₂CO₃."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/gen_carbonic.webp",
+      "slide": "none (original diagram)",
+      "alt": "Diagram: CO2 from the air and soil joins water to make carbonic acid, which dissolves limestone along joints to make caves; inside a cave, dripping water loses CO2 and deposits calcite as stalactites hanging down and stalagmites pointing up."
+     },
+     "title": "From acid to cave to dripstone",
+     "bullets": [
+      "The acid dissolves limestone to open the cave; then, inside the cave, the process runs in **reverse** and calcite is deposited."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/joints_54.webp",
+      "slide": "slide 54",
+      "alt": "Block diagram of layered limestone cut by two joint sets, with dissolved passages along the joints and the more soluble beds."
+     },
+     "title": "Joints and soluble beds",
+     "bullets": [
+      "**Joints** are conduits for water. The flow dissolves them into a network of **caves and passageways**.",
+      "**More soluble beds** dissolve faster."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/speleothems_55.webp",
+      "slide": "slide 55",
+      "alt": "Photo of a cave full of hanging stalactites and rising stalagmites, with an inset drawing of a soda straw, a stalactite meeting a stalagmite, and a limestone column."
+     },
+     "title": "Speleothems",
+     "bullets": [
+      "**Speleothems** are formed by the precipitation of **dripstone**.",
+      "Groundwater entering a cave **degasses CO₂**, so **CaCO₃ (calcite)** is precipitated as a coating that grows into spectacular forms.",
+      "**Stalactites hang down**; **stalagmites point up**. Forms include soda straws and **columns** where the two meet."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water holding extra CO₂ can dissolve calcite. When it drips into cave air and loses that CO₂, it can no longer hold the calcite, so it leaves it behind."
+    },
+    {
+     "type": "trick",
+     "text": "Stalac-TITES hold TIGHT to the ceiling; stalag-MITES MIGHT reach up from the floor."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 63 review question: caves form mostly by DISSOLUTION by carbonic acid (answer A), not physical erosion by underground streams, faulting, folding or buried canyons."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 53-55; Fig. 16.13a, b and Earth 4th edition Fig. 19.25b.",
+    "Slide 63 review question (answer A)."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/acid_53.webp",
+     "slide": "slide 53",
+     "alt": "Photo of grey limestone pavement with rounded, dissolved channels and grass growing in the cracks, labelled H2O plus CO2 gives H2CO3."
+    },
+    {
+     "src": "img/groundwater/gen_carbonic.webp",
+     "slide": "none (original diagram)",
+     "alt": "Diagram: CO2 from the air and soil joins water to make carbonic acid, which dissolves limestone along joints to make caves; inside a cave, dripping water loses CO2 and deposits calcite as stalactites hanging down and stalagmites pointing up."
+    },
+    {
+     "src": "img/groundwater/joints_54.webp",
+     "slide": "slide 54",
+     "alt": "Block diagram of layered limestone cut by two joint sets, with dissolved passages along the joints and the more soluble beds."
+    },
+    {
+     "src": "img/groundwater/speleothems_55.webp",
+     "slide": "slide 55",
+     "alt": "Photo of a cave full of hanging stalactites and rising stalagmites, with an inset drawing of a soda straw, a stalactite meeting a stalagmite, and a limestone column."
+    }
+   ]
+  },
+  {
+   "id": "karst",
+   "title": "Karst landscapes",
+   "slides": "56-59",
+   "steps": [
+    {
+     "img": {
+      "src": "img/groundwater/karst_stages_56.webp",
+      "slide": "slide 56",
+      "alt": "Three block diagrams of limestone beside a river valley: dissolution near the water table, then the river cuts down and the caves drain, then roofs collapse to make sinkholes."
+     },
+     "title": "Karst forms in stages",
+     "bullets": [
+      "1. **Dissolution** happens near the water table in an uplifted sequence of limestone.",
+      "2. **Downcutting** by a nearby river lowers the water table. The caves **drain** and **speleothems grow**.",
+      "3. More dissolution and **roof collapse** create a landscape pockmarked with **sinkholes**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/karst_glance_57.webp",
+      "slide": "slide 57",
+      "alt": "A cutaway block of limestone showing a disappearing stream, sinkholes, collapse breccia, caverns with stalactites, stalagmites and columns, an underground stream, a natural bridge and an emerging spring."
+     },
+     "title": "A karst landscape",
+     "bullets": [
+      "Limestone dissolution creates distinctive **karst** landscapes, named for the **Kras Plateau** in Slovenia.",
+      "Common features: **disappearing streams**, **natural bridges**, **caves**, **speleothems**, **sinkholes** and **springs**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/karst_photos_58.webp",
+      "slide": "slide 58",
+      "alt": "Two photos: green, steep-sided karst hills seen from the air, and a stream flowing out of a cave mouth at the foot of a rocky slope."
+     },
+     "title": "Karst from above and below",
+     "bullets": [
+      "From the air, karst hills can look like a field of steep cones; on the ground, streams vanish into caves and reappear at springs."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/groundwater/karst_world_59.webp",
+      "slide": "slide 59",
+      "alt": "Four photos: a natural rock bridge over a path, steep limestone towers rising beside a river, a landscape dotted with round sinkhole lakes, and a giant radio telescope dish built in a round sinkhole."
+     },
+     "title": "Karst around the world",
+     "bullets": [
+      "Karst features include **natural bridges**, steep **limestone towers**, land dotted with **sinkhole lakes**, and huge sinkholes, one big enough to hold a giant radio telescope."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Dissolution works from inside the rock, so the surface is left with holes, collapsed roofs and streams that disappear underground."
+    },
+    {
+     "type": "trick",
+     "text": "Karst checklist: Caves, Sinkholes, Springs, Disappearing streams, Natural bridges, Speleothems."
+    },
+    {
+     "type": "trap",
+     "text": "Sinkholes form by roof collapse after dissolution, mostly AFTER the water table drops and caves drain, not by stream erosion at the surface."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 56-59; Fig. 16.16, 16.14a, b, 16.1c, 16.15, 'Geology at a Glance' and 'Another View'.",
+    "Slide 58-59 photos have no captions; descriptions are read from the pictures. The radio telescope (Arecibo, Puerto Rico) is identified from outside knowledge."
+   ],
+   "images": [
+    {
+     "src": "img/groundwater/karst_stages_56.webp",
+     "slide": "slide 56",
+     "alt": "Three block diagrams of limestone beside a river valley: dissolution near the water table, then the river cuts down and the caves drain, then roofs collapse to make sinkholes."
+    },
+    {
+     "src": "img/groundwater/karst_glance_57.webp",
+     "slide": "slide 57",
+     "alt": "A cutaway block of limestone showing a disappearing stream, sinkholes, collapse breccia, caverns with stalactites, stalagmites and columns, an underground stream, a natural bridge and an emerging spring."
+    },
+    {
+     "src": "img/groundwater/karst_photos_58.webp",
+     "slide": "slide 58",
+     "alt": "Two photos: green, steep-sided karst hills seen from the air, and a stream flowing out of a cave mouth at the foot of a rocky slope."
+    },
+    {
+     "src": "img/groundwater/karst_world_59.webp",
+     "slide": "slide 59",
+     "alt": "Four photos: a natural rock bridge over a path, steep limestone towers rising beside a river, a landscape dotted with round sinkhole lakes, and a giant radio telescope dish built in a round sinkhole."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Groundwater at a glance",
+  "head": [
+   "Term",
+   "What it is",
+   "Why it matters"
+  ],
+  "rows": [
+   [
+    "Porosity",
+    "Total open space in a rock or sediment",
+    "How much water it can hold"
+   ],
+   [
+    "Permeability",
+    "How well the pores connect",
+    "How easily water flows"
+   ],
+   [
+    "Aquifer",
+    "High porosity and permeability",
+    "Supplies wells and springs"
+   ],
+   [
+    "Aquitard",
+    "Low permeability",
+    "Hinders flow; protects confined aquifers"
+   ],
+   [
+    "Water table",
+    "Top of the saturated zone",
+    "Follows the land surface; sets wells and springs"
+   ],
+   [
+    "Hydraulic head",
+    "Energy from elevation and water pressure",
+    "Flow goes from high to low head"
+   ],
+   [
+    "Cone of depression",
+    "Dip in the water table around a pumping well",
+    "Can dry nearby wells and reverse flow"
+   ],
+   [
+    "Potentiometric surface",
+    "Level water rises to from a confined aquifer",
+    "Wells below it flow without pumping"
+   ],
+   [
+    "Karst",
+    "Landscape of dissolved limestone",
+    "Caves, sinkholes, springs, disappearing streams"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "gw-c1",
+   "front": "Groundwater",
+   "gloss": true,
+   "back": "Water in the pore spaces of sediment and rock below the surface. About 1.1% of all Earth's water and 95% of its liquid fresh water.",
+   "short": "Water in underground pores",
+   "src": "Slides 3, 9, 33"
+  },
+  {
+   "id": "gw-c2",
+   "front": "Reservoir (water)",
+   "gloss": true,
+   "back": "A place water is stored in the hydrologic cycle: ocean, atmosphere, rivers, lakes, groundwater, living things, soils or glaciers.",
+   "short": "Where water is stored",
+   "src": "Slide 4"
+  },
+  {
+   "id": "gw-c3",
+   "front": "Infiltration",
+   "gloss": true,
+   "back": "Water soaking into the ground. Some becomes soil moisture; water that percolates deeper becomes groundwater.",
+   "short": "Water soaking into the ground",
+   "src": "Slide 4"
+  },
+  {
+   "id": "gw-c4",
+   "front": "Percolation",
+   "gloss": true,
+   "back": "Water moving deeper down through the soil and rock to become groundwater.",
+   "short": "Water seeping deeper",
+   "src": "Slide 4"
+  },
+  {
+   "id": "gw-c5",
+   "front": "Renewable water supply",
+   "gloss": true,
+   "back": "The 40,000 km³ of runoff each year: water carried to land that returns to the sea. Only about 0.003% of the world's water.",
+   "short": "40,000 km³ of runoff a year",
+   "src": "Slide 5"
+  },
+  {
+   "id": "gw-c6",
+   "front": "Porosity",
+   "gloss": true,
+   "back": "The total volume of open space (pores) in a sediment or rock.",
+   "short": "Total open space",
+   "src": "Slide 9"
+  },
+  {
+   "id": "gw-c7",
+   "front": "Primary porosity",
+   "gloss": true,
+   "back": "Open space formed with the material: voids between grains, vesicles in basalt, cavities in reef limestone. It decreases with burial.",
+   "short": "Space formed with the rock",
+   "src": "Slide 10"
+  },
+  {
+   "id": "gw-c8",
+   "front": "Secondary porosity",
+   "gloss": true,
+   "back": "New pore space created after the rock formed: fractures, fault breccia and solution cavities.",
+   "short": "Space made later",
+   "src": "Slide 11"
+  },
+  {
+   "id": "gw-c9",
+   "front": "Permeability",
+   "gloss": true,
+   "back": "How easily water flows through a material, set by how well its pores connect.",
+   "short": "Ease of water flow",
+   "src": "Slide 12"
+  },
+  {
+   "id": "gw-c10",
+   "front": "Aquifer",
+   "gloss": true,
+   "back": "Rock with high porosity and high permeability that transmits water easily.",
+   "short": "Rock that carries water well",
+   "src": "Slide 13"
+  },
+  {
+   "id": "gw-c11",
+   "front": "Aquitard",
+   "gloss": true,
+   "back": "Lower-permeability rock that hinders water flow.",
+   "short": "Rock that slows water",
+   "src": "Slide 13"
+  },
+  {
+   "id": "gw-c12",
+   "front": "Unconfined aquifer",
+   "gloss": true,
+   "back": "An aquifer at the surface. In contact with human activities, so easily contaminated.",
+   "short": "Aquifer open to the surface",
+   "src": "Slide 13"
+  },
+  {
+   "id": "gw-c13",
+   "front": "Confined aquifer",
+   "gloss": true,
+   "back": "An aquifer beneath an aquitard. Isolated from the surface, so less likely to be polluted.",
+   "short": "Aquifer under an aquitard",
+   "src": "Slide 13"
+  },
+  {
+   "id": "gw-c14",
+   "front": "Water table",
+   "gloss": true,
+   "back": "The top of the groundwater reservoir: the boundary between the unsaturated and saturated zones.",
+   "short": "Top of the saturated zone",
+   "src": "Slide 14"
+  },
+  {
+   "id": "gw-c15",
+   "front": "Unsaturated zone",
+   "gloss": true,
+   "back": "The zone above the water table where moisture sticks to grains and air pockets remain.",
+   "short": "Air and water in the pores",
+   "src": "Slide 14"
+  },
+  {
+   "id": "gw-c16",
+   "front": "Saturated zone",
+   "gloss": true,
+   "back": "The zone below the water table where all pore space is filled with water.",
+   "short": "All pores full of water",
+   "src": "Slide 14"
+  },
+  {
+   "id": "gw-c17",
+   "front": "Capillary fringe",
+   "gloss": true,
+   "back": "A thin zone at the top of the saturated zone, at the boundary with the unsaturated zone.",
+   "short": "Thin zone at the water table",
+   "src": "Slide 14"
+  },
+  {
+   "id": "gw-c18",
+   "front": "Perched water table",
+   "gloss": true,
+   "back": "A mound of groundwater trapped above a discontinuous aquitard that lies above the regional water table.",
+   "short": "Water held up by a patch of aquitard",
+   "src": "Slide 17"
+  },
+  {
+   "id": "gw-c19",
+   "front": "Hydraulic head",
+   "gloss": true,
+   "back": "The potential energy driving groundwater flow, from elevation and the pressure of overlying water. Flow goes from high to low head.",
+   "short": "Energy that drives the flow",
+   "src": "Slides 18, 21"
+  },
+  {
+   "id": "gw-c20",
+   "front": "Piezometer",
+   "gloss": true,
+   "back": "A small well used to measure hydraulic head.",
+   "short": "Well that measures head",
+   "src": "Slide 18"
+  },
+  {
+   "id": "gw-c21",
+   "front": "Recharge area",
+   "gloss": true,
+   "back": "A higher place where water infiltrates and enters the groundwater system.",
+   "short": "Where water goes in",
+   "src": "Slide 19"
+  },
+  {
+   "id": "gw-c22",
+   "front": "Discharge area",
+   "gloss": true,
+   "back": "A lower place where groundwater leaves the subsurface, such as a stream or lake.",
+   "short": "Where water comes out",
+   "src": "Slide 19"
+  },
+  {
+   "id": "gw-c23",
+   "front": "Hydraulic gradient",
+   "gloss": true,
+   "back": "The difference in head between two places divided by the flow path length: (h1 − h2) ÷ j. Shown by the slope of the water table.",
+   "short": "Drop in head ÷ distance",
+   "src": "Slide 21"
+  },
+  {
+   "id": "gw-c24",
+   "front": "Darcy's law",
+   "gloss": true,
+   "back": "Groundwater flow rate = permeability × hydraulic gradient.",
+   "short": "Rate = permeability × gradient",
+   "src": "Slides 21, 62"
+  },
+  {
+   "id": "gw-c25",
+   "front": "Cone of depression",
+   "gloss": true,
+   "back": "A cone-shaped dip in the water table around a well that pumps water faster than it is replaced.",
+   "short": "Water table dip around a well",
+   "src": "Slide 24"
+  },
+  {
+   "id": "gw-c26",
+   "front": "Artesian well",
+   "gloss": true,
+   "back": "A well into a confined, tilted aquifer pressurized by upland recharge; water rises toward the potentiometric surface.",
+   "short": "Well into a pressurized aquifer",
+   "src": "Slide 25"
+  },
+  {
+   "id": "gw-c27",
+   "front": "Potentiometric surface",
+   "gloss": true,
+   "back": "The level water rises to in wells into a confined aquifer, like a water table for that aquifer. Below it, a well flows without pumping.",
+   "short": "Water-table level of a confined aquifer",
+   "src": "Slide 25"
+  },
+  {
+   "id": "gw-c28",
+   "front": "Spring",
+   "gloss": true,
+   "back": "A place of natural groundwater discharge where the water table meets the surface, often in a valley.",
+   "short": "Natural groundwater outlet",
+   "src": "Slide 26"
+  },
+  {
+   "id": "gw-c29",
+   "front": "Seep",
+   "gloss": true,
+   "back": "A small spring where a perched water table meets the surface.",
+   "short": "Outflow of a perched water table",
+   "src": "Slide 27"
+  },
+  {
+   "id": "gw-c30",
+   "front": "Geothermal gradient",
+   "gloss": true,
+   "back": "The increase of temperature with depth. It warms deep groundwater.",
+   "short": "Earth hotter with depth",
+   "src": "Slide 29"
+  },
+  {
+   "id": "gw-c31",
+   "front": "Geyser",
+   "gloss": true,
+   "back": "A hot spring that erupts boiling water and steam in cycles when pressure drops and all the water boils at once.",
+   "short": "Erupting hot spring",
+   "src": "Slide 32"
+  },
+  {
+   "id": "gw-c32",
+   "front": "Saltwater intrusion",
+   "gloss": true,
+   "back": "Pumping near a coast makes the fresh/salt water boundary rise and contaminates the well with salt water.",
+   "short": "Salt water pulled into wells",
+   "src": "Slide 38"
+  },
+  {
+   "id": "gw-c33",
+   "front": "Land subsidence",
+   "gloss": true,
+   "back": "Sinking of the land when pumping removes the water holding grains apart, so pores collapse. It is irreversible.",
+   "short": "Ground sinks after pumping",
+   "src": "Slides 40-41"
+  },
+  {
+   "id": "gw-c34",
+   "front": "Contaminant plume",
+   "gloss": true,
+   "back": "A tongue of polluted groundwater spreading from a source; most concentrated near the source.",
+   "short": "Pollution spreading downstream",
+   "src": "Slide 51"
+  },
+  {
+   "id": "gw-c35",
+   "front": "Bioremediation",
+   "gloss": true,
+   "back": "Cleaning contaminated groundwater using bacteria.",
+   "short": "Cleanup with bacteria",
+   "src": "Slide 52"
+  },
+  {
+   "id": "gw-c36",
+   "front": "Carbonic acid",
+   "gloss": true,
+   "back": "H₂CO₃, a weak acid formed when CO₂ reacts with water. It dissolves limestone to make caves.",
+   "short": "H₂O + CO₂ → H₂CO₃",
+   "src": "Slides 53, 63"
+  },
+  {
+   "id": "gw-c37",
+   "front": "Speleothem",
+   "gloss": true,
+   "back": "A cave formation of dripstone (CaCO₃) deposited when groundwater entering a cave degasses CO₂.",
+   "short": "Dripstone cave formation",
+   "src": "Slide 55"
+  },
+  {
+   "id": "gw-c38",
+   "front": "Stalactite",
+   "gloss": true,
+   "back": "A speleothem that hangs down from a cave ceiling.",
+   "short": "Hangs down",
+   "src": "Slide 55"
+  },
+  {
+   "id": "gw-c39",
+   "front": "Stalagmite",
+   "gloss": true,
+   "back": "A speleothem that points up from a cave floor.",
+   "short": "Points up",
+   "src": "Slide 55"
+  },
+  {
+   "id": "gw-c40",
+   "front": "Karst",
+   "gloss": true,
+   "back": "A landscape made by limestone dissolution, with caves, sinkholes, springs, disappearing streams and natural bridges. Named for the Kras Plateau in Slovenia.",
+   "short": "Dissolved-limestone landscape",
+   "src": "Slides 56-59"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "gw-1",
+   "q": "Which reservoir holds the most water after the ocean?",
+   "options": [
+    "Ice",
+    "Groundwater",
+    "Lakes and rivers",
+    "The atmosphere",
+    "Soil moisture"
+   ],
+   "answer": 0,
+   "why": "Ice holds 2.07% of Earth's water, groundwater 1.1%, lakes and rivers only 0.014%.",
+   "source": "Slide 3"
+  },
+  {
+   "id": "gw-2",
+   "q": "Most of the groundwater on Earth is...",
+   "options": [
+    "fresh",
+    "sweetwater",
+    "salty",
+    "above ground",
+    "in unknown locations"
+   ],
+   "answer": 2,
+   "why": "Deep groundwater in sedimentary basins becomes saltier with depth, far saltier than sea water.",
+   "source": "Slide 60; slide 7",
+   "img": {
+    "src": "img/groundwater/canada_7.webp",
+    "alt": "A map of Canada with sedimentary basins in pink, a graph of salinity against depth where a red curve rises from near sea-water salinity at the surface to about 600 grams per litre at 4 km depth, and a cross-section of layered rock under the prairies."
+   }
+  },
+  {
+   "id": "gw-3",
+   "q": "Which use takes the largest share of water withdrawals, worldwide and in Alberta?",
+   "options": [
+    "Industry",
+    "Agriculture",
+    "Reservoir losses",
+    "Municipal supply",
+    "Power generation"
+   ],
+   "answer": 1,
+   "why": "Agriculture takes 63% of world withdrawals and 66% in Alberta. Industry is next at 23% (21% in Alberta).",
+   "source": "Slide 8",
+   "img": {
+    "src": "img/groundwater/withdrawals_8.webp",
+    "alt": "A stacked graph of world water withdrawals from 1900 to 2000 rising to about 5000 cubic km per year, split into agriculture, industry, municipal use and reservoir losses, with percentages for the world and for Alberta."
+   }
+  },
+  {
+   "id": "gw-4",
+   "q": "What is porosity?",
+   "options": [
+    "How easily water flows through a rock or sediment",
+    "The pressure of the water standing in a well",
+    "The depth from the land surface down to the water table",
+    "The total volume of open space in a rock or sediment",
+    "The amount of mineral cement holding the grains"
+   ],
+   "answer": 3,
+   "why": "Porosity is the total volume of open space. How easily water flows through is permeability.",
+   "source": "Slide 9"
+  },
+  {
+   "id": "gw-5",
+   "q": "Which is an example of SECONDARY porosity?",
+   "options": [
+    "Gaps between sand grains",
+    "Vesicles in basalt",
+    "Cavities in reef limestone",
+    "Spaces in fresh gravel",
+    "Fractures in granite"
+   ],
+   "answer": 4,
+   "why": "Secondary porosity forms after the rock: fractures, fault breccia, solution cavities. The others formed with the material (primary).",
+   "source": "Slides 10-11"
+  },
+  {
+   "id": "gw-6",
+   "q": "Porosity and permeability are...",
+   "options": [
+    "exactly the same property",
+    "usually independent of each other",
+    "potentially independent, but permeability often depends on porosity",
+    "mostly independent, but porosity depends slightly on permeability",
+    "both unimportant for groundwater"
+   ],
+   "answer": 2,
+   "why": "A rock can hold water but pass it slowly, so they can differ; but water needs connected open pores to flow, so permeability often depends on porosity.",
+   "source": "Slide 61"
+  },
+  {
+   "id": "gw-7",
+   "q": "Which layer is most easily contaminated by human activity?",
+   "options": [
+    "An unconfined aquifer at the surface",
+    "A confined aquifer under an aquitard",
+    "A continuous impermeable layer",
+    "The deepest saline aquifer",
+    "A perched aquitard"
+   ],
+   "answer": 0,
+   "why": "An unconfined aquifer lies at the surface and is in contact with human activities. A confined aquifer is isolated beneath an aquitard.",
+   "source": "Slide 13",
+   "img": {
+    "src": "img/groundwater/aquifers_13.webp",
+    "alt": "Block diagram of layered ground: an unconfined aquifer at the top, a dark aquitard in the middle and a confined aquifer below, with arrows for flowing water and close-ups of high and low porosity and permeability."
+   }
+  },
+  {
+   "id": "gw-8",
+   "q": "Below the water table, the pore spaces are...",
+   "options": [
+    "partly air and partly water",
+    "empty",
+    "completely filled with water",
+    "filled only with cement",
+    "filled with natural gas"
+   ],
+   "answer": 2,
+   "why": "Below the water table is the saturated zone, where all pore space is filled with water. Above it, air pockets remain.",
+   "source": "Slide 14",
+   "img": {
+    "src": "img/groundwater/watertable_14.webp",
+    "alt": "Block of ground with soil and plants on top: an upper unsaturated zone where moisture sticks to grains and air pockets remain, a thin capillary fringe, and a lower saturated zone where all pore space is filled with water."
+   }
+  },
+  {
+   "id": "gw-9",
+   "q": "In a dry region, what usually happens to ponds and streams?",
+   "options": [
+    "They connect to a shallow water table and stay full",
+    "They turn into perched water tables",
+    "They become artesian wells",
+    "They are disconnected from a deep water table and dry up",
+    "They freeze in winter only"
+   ],
+   "answer": 3,
+   "why": "In dry regions the water table sinks deep below the surface, so ponds and streams are cut off from it and dry up.",
+   "source": "Slide 15",
+   "img": {
+    "src": "img/groundwater/climate_15.webp",
+    "alt": "Two block diagrams. In a humid region the water table lies near the surface and fills a pond. In a dry region the water table sits deep below a dry valley."
+   }
+  },
+  {
+   "id": "gw-10",
+   "q": "What is the shape of the water table under hills and valleys?",
+   "options": [
+    "Perfectly flat",
+    "Highest under rivers",
+    "The exact reverse of the land surface",
+    "Always at sea level",
+    "A subdued copy of the land surface"
+   ],
+   "answer": 4,
+   "why": "The water table is a subdued replica of the topography: high under high land and low under low land.",
+   "source": "Slide 16"
+  },
+  {
+   "id": "gw-11",
+   "q": "A perched water table forms above...",
+   "options": [
+    "a confined aquifer, below a continuous aquitard",
+    "the regional water table, on a discontinuous aquitard",
+    "the bottom of a cone of depression around a well",
+    "a geyser chamber heated by shallow magma",
+    "a saltwater wedge beneath coastal land"
+   ],
+   "answer": 1,
+   "why": "A perched water table is a mound of groundwater trapped above a discontinuous aquitard that lies above the regional water table.",
+   "source": "Slide 17",
+   "img": {
+    "src": "img/groundwater/perched_17.webp",
+    "alt": "Block diagram with a local aquitard lens holding a perched water table above the regional water table, over an unconfined aquifer, a continuous impermeable layer and a confined aquifer."
+   }
+  },
+  {
+   "id": "gw-12",
+   "q": "Groundwater always flows from...",
+   "options": [
+    "low to high elevation",
+    "deep to shallow",
+    "discharge areas to recharge areas",
+    "high to low hydraulic head",
+    "the ocean toward the land"
+   ],
+   "answer": 3,
+   "why": "Flow always moves from high to low hydraulic head, which depends on elevation and the pressure of the water above.",
+   "source": "Slide 18"
+  },
+  {
+   "id": "gw-13",
+   "q": "What is a piezometer used for?",
+   "options": [
+    "Pumping water to the surface",
+    "Injecting steam into an aquifer",
+    "Filtering well water",
+    "Measuring rainfall",
+    "Measuring hydraulic head"
+   ],
+   "answer": 4,
+   "why": "A piezometer is a small well used to measure hydraulic head.",
+   "source": "Slide 18",
+   "img": {
+    "src": "img/groundwater/head_18.webp",
+    "alt": "Cross-section of a hill with a dashed water table, points h1 and h2 on the water table and p1 and p2 below them, beside a photo of a small white well pipe in the grass."
+   }
+  },
+  {
+   "id": "gw-14",
+   "q": "Where are recharge areas usually found?",
+   "options": [
+    "At higher elevations",
+    "In valleys, at lower elevations",
+    "Along coastlines only",
+    "Under lakes",
+    "Next to every pumping well"
+   ],
+   "answer": 0,
+   "why": "Water infiltrates at recharge areas at higher elevations and leaves at discharge areas at lower elevations.",
+   "source": "Slide 19",
+   "img": {
+    "src": "img/groundwater/recharge_19.webp",
+    "alt": "Cross-section of two hills and a valley with curving black flow lines that start under the hilltops (recharge) and rise into the stream and lake in the valleys (discharge), with a drainage divide between."
+   }
+  },
+  {
+   "id": "gw-15",
+   "q": "Why is groundwater so much slower than surface water?",
+   "options": [
+    "It is much colder and thicker than the water in rivers",
+    "It is pulled straight down by gravity and nothing else",
+    "It percolates through pores, slowed by friction and electrostatic forces",
+    "It only moves during and right after heavy rainstorms",
+    "It always has to flow uphill against the slope of the land"
+   ],
+   "answer": 2,
+   "why": "Groundwater percolates through pore openings and is slowed by friction and electrostatic forces: about 0.00002 km/h versus 30 km/h in a steep river.",
+   "source": "Slide 20"
+  },
+  {
+   "id": "gw-16",
+   "q": "Darcy's law describes...",
+   "options": [
+    "how groundwater flow depends on the Coriolis effect",
+    "the rate at which groundwater will flow",
+    "the rate at which surface water will flow",
+    "the recharge time of an aquifer",
+    "how to calculate the age of the water"
+   ],
+   "answer": 1,
+   "why": "Darcy's law: groundwater flow rate = permeability × hydraulic gradient.",
+   "source": "Slide 62"
+  },
+  {
+   "id": "gw-17",
+   "q": "Two wells are 500 m apart along a flow path. The head is 60 m in one and 50 m in the other. What is the hydraulic gradient?",
+   "options": [
+    "0.01",
+    "0.02",
+    "0.05",
+    "0.2",
+    "10"
+   ],
+   "answer": 1,
+   "why": "Gradient = (h1 − h2) ÷ j = (60 − 50) ÷ 500 = 10 ÷ 500 = 0.02.",
+   "source": "Slide 21"
+  },
+  {
+   "id": "gw-18",
+   "q": "According to Darcy's law, which change makes groundwater flow FASTER?",
+   "options": [
+    "Lower permeability",
+    "A flatter water table",
+    "A longer flow path for the same drop in head",
+    "A steeper hydraulic gradient",
+    "Smaller, poorly linked pores"
+   ],
+   "answer": 3,
+   "why": "Flow rate = permeability × gradient. A steeper gradient (or higher permeability) increases the rate.",
+   "source": "Slide 21",
+   "img": {
+    "src": "img/groundwater/darcy_21.webp",
+    "alt": "Cross-section of a slope with two drillholes reaching the water table at heads h1 and h2, a flow path length j between them, dashed flow paths, and the formulas delta h equals h1 minus h2 and HG equals delta h over j."
+   }
+  },
+  {
+   "id": "gw-19",
+   "q": "Groundwater on the deepest flow paths across a sedimentary basin can take...",
+   "options": [
+    "minutes",
+    "days",
+    "only a few months",
+    "exactly one year",
+    "up to millennia"
+   ],
+   "answer": 4,
+   "why": "Transit time depends on the flow path. Shallow paths take years, deeper ones centuries, the deepest millennia.",
+   "source": "Slide 22",
+   "img": {
+    "src": "img/groundwater/scales_22.webp",
+    "alt": "Cross-section about 100 km across of a sedimentary basin: blue flow paths start at a recharge area in the hills and reach discharge areas after years on short shallow paths, centuries on longer ones and millennia on the deepest, with a fault."
+   }
+  },
+  {
+   "id": "gw-20",
+   "q": "What forms around a well that pumps water faster than it is replaced?",
+   "options": [
+    "A perched water table",
+    "A cone of depression",
+    "A potentiometric surface",
+    "A contaminant plume",
+    "A capillary fringe"
+   ],
+   "answer": 1,
+   "why": "Extracting groundwater faster than it is replaced lowers the water table into a cone of depression around the well.",
+   "source": "Slide 24",
+   "img": {
+    "src": "img/groundwater/cone_24.webp",
+    "alt": "Two block diagrams: a big well and a small well before and after pumping, with the water table sagging into a cone around the big well, and a later view where the small well is dry; a photo of crop irrigation."
+   }
+  },
+  {
+   "id": "gw-21",
+   "q": "When does an artesian well flow without a pump?",
+   "options": [
+    "When it taps an unconfined aquifer at the surface",
+    "When the regional water table is completely flat",
+    "When its top is below the potentiometric surface",
+    "Whenever the well is drilled deeper than 100 m",
+    "When it is drilled right next to a natural spring"
+   ],
+   "answer": 2,
+   "why": "Water rises to the potentiometric surface; a well casing below that surface flows without pumping.",
+   "source": "Slide 25",
+   "img": {
+    "src": "img/groundwater/artesian_25.webp",
+    "alt": "Cross-section of a tilted confined aquifer recharged in the hills, with a potentiometric surface above it, a flowing artesian well and a nonflowing artesian well; below, a town water tower setting the water level for houses."
+   }
+  },
+  {
+   "id": "gw-22",
+   "q": "Where does a seep form?",
+   "options": [
+    "Where a confined aquifer is pumped",
+    "Where a geyser chamber empties",
+    "At the bottom of every cone of depression",
+    "Where salt water meets fresh water",
+    "Where a perched water table meets the surface"
+   ],
+   "answer": 4,
+   "why": "A seep develops where a perched water table intersects the surface.",
+   "source": "Slide 27",
+   "img": {
+    "src": "img/groundwater/fault_spring_27.webp",
+    "alt": "Two block diagrams: groundwater blocked by a steep impermeable fault is pushed up into a spring, and a perched water table above a lens of rock seeps out on a hillside."
+   }
+  },
+  {
+   "id": "gw-23",
+   "q": "What keeps the hot water in a geyser from boiling until it erupts?",
+   "options": [
+    "The weight of the overlying water",
+    "Cold rain falling into the chamber",
+    "A layer of ice on top",
+    "Bacteria in the water",
+    "The geothermal gradient being too small"
+   ],
+   "answer": 0,
+   "why": "Shallow magma heats the water, but the weight of the overlying water prevents boiling. When bubbles form, pressure drops and it all boils at once.",
+   "source": "Slide 32",
+   "img": {
+    "src": "img/groundwater/geyser_32.webp",
+    "alt": "Photo of a tall white column of steam and water erupting from a geyser under a blue sky."
+   }
+  },
+  {
+   "id": "gw-24",
+   "q": "Long-term heavy pumping lowers a water table that used to feed a swamp and a stream. What happens to them?",
+   "options": [
+    "They overflow",
+    "They dry up",
+    "They become artesian",
+    "They turn salty",
+    "Nothing changes"
+   ],
+   "answer": 1,
+   "why": "Once the falling water table no longer meets the surface, the swamp and stream dry up.",
+   "source": "Slide 34",
+   "img": {
+    "src": "img/groundwater/depletion_34.webp",
+    "alt": "Two block diagrams. Before: a high water table feeds a flowing river and a swamp. After: pumping wells under irrigated land and a city have lowered the water table, leaving a dry river and a dry swamp."
+   }
+  },
+  {
+   "id": "gw-25",
+   "q": "How can a large irrigation well contaminate a nearby home well with septic waste?",
+   "options": [
+    "Its pump leaks oil into the ground",
+    "It pushes the septic plume out to sea",
+    "It raises the water table above the septic tank",
+    "Its cone of depression reverses the hydraulic gradient",
+    "It cools the groundwater"
+   ],
+   "answer": 3,
+   "why": "The big cone of depression reverses the natural gradient, so the septic plume flows toward the home well instead of away.",
+   "source": "Slide 37",
+   "img": {
+    "src": "img/groundwater/reversal_37.webp",
+    "alt": "Two block diagrams of a home with a septic tank and well. Before: regional groundwater carries the septic plume away from the home well. After: a large irrigation well's cone of depression pulls the plume into the home well."
+   }
+  },
+  {
+   "id": "gw-26",
+   "q": "Why does pumping near the coast make a well salty?",
+   "options": [
+    "Sea spray blows inland and falls into the well",
+    "Septic waste from nearby homes adds salt to it",
+    "The pumped aquifer dissolves salt out of the rock",
+    "Rainwater that falls near the sea is already salty",
+    "The fresh/salt water boundary rises toward the well"
+   ],
+   "answer": 4,
+   "why": "Fresh water floats on salt water under coastal land. Pumping makes the fresh/salt boundary rise and contaminates the well.",
+   "source": "Slide 38",
+   "img": {
+    "src": "img/groundwater/saline_38.webp",
+    "alt": "Two block diagrams of a coast. Before: fresh groundwater floats on salty groundwater under the land. After: a pumping well pulls the saltwater boundary up into the well."
+   }
+  },
+  {
+   "id": "gw-27",
+   "q": "Why does land subside when groundwater is pumped out?",
+   "options": [
+    "The water was holding the grains apart, so pores collapse",
+    "The rock slowly dissolves into the water that is pumped",
+    "Every pumping well triggers small earthquakes nearby",
+    "The water table rises and the land floats up, then drops",
+    "Salt water fills the empty pores and weighs the land down"
+   ],
+   "answer": 0,
+   "why": "Water in pore spaces holds grains apart. Remove it and grains compress and pores collapse, so the surface cracks and subsides irreversibly.",
+   "source": "Slide 40",
+   "img": {
+    "src": "img/groundwater/subsidence_40.webp",
+    "alt": "Two block diagrams. Before: water in the pore spaces holds the grains apart. After: with groundwater removed, the grains are compressed, and cracks, fissures and scarps form at the surface."
+   }
+  },
+  {
+   "id": "gw-28",
+   "q": "Where is a contaminant plume most concentrated?",
+   "options": [
+    "Far downstream of the source",
+    "Evenly throughout",
+    "Near the pollutant source",
+    "At the water table only",
+    "Upstream of the source"
+   ],
+   "answer": 2,
+   "why": "Concentrations are high near the source and decrease with distance as groundwater carries the plume away.",
+   "source": "Slide 51",
+   "img": {
+    "src": "img/groundwater/plume_51.webp",
+    "alt": "Block diagram of a pollutant source leaking into the ground, forming a pink plume in the groundwater that is most concentrated near the source and fades with distance in the direction of flow, with an inset of a pipe leaking between grains."
+   }
+  },
+  {
+   "id": "gw-29",
+   "q": "Cave formation is mostly due to...",
+   "options": [
+    "dissolution by carbonic acid",
+    "physical erosion by underground streams",
+    "faulting",
+    "folding",
+    "burial of surface canyons"
+   ],
+   "answer": 0,
+   "why": "Caves develop when weakly acidic groundwater (carbonic acid, from CO₂ + water) dissolves limestone.",
+   "source": "Slides 53, 63"
+  },
+  {
+   "id": "gw-30",
+   "q": "In karst, when do the caves drain and speleothems start to grow?",
+   "options": [
+    "Before any dissolution of the limestone has started",
+    "When the limestone is buried deeper under new layers",
+    "Only after the cave roofs collapse into sinkholes",
+    "When a nearby river cuts down and lowers the water table",
+    "When the water table rises and floods the passages"
+   ],
+   "answer": 3,
+   "why": "Dissolution happens near the water table; downcutting by an adjacent river lowers the water table, the caves drain and speleothems grow; later, roof collapse makes sinkholes.",
+   "source": "Slide 56",
+   "img": {
+    "src": "img/groundwater/karst_stages_56.webp",
+    "alt": "Three block diagrams of limestone beside a river valley: dissolution near the water table, then the river cuts down and the caves drain, then roofs collapse to make sinkholes."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "From rain to groundwater",
+   "prompt": "Put the steps in order, from the first at the bottom to the last at the top.",
+   "why": "Rain falls on a recharge area and infiltrates. Some becomes soil moisture; water that percolates deeper reaches the water table and becomes groundwater, flows slowly along a curving path, and leaves at a discharge area such as a spring or stream.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Rain falls on a recharge area",
+     "color": "#93c5fd"
+    },
+    {
+     "name": "Water infiltrates the soil",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "It percolates down to the water table",
+     "color": "#3b82f6"
+    },
+    {
+     "name": "It flows slowly along a curving path",
+     "color": "#2563eb"
+    },
+    {
+     "name": "It leaves at a discharge area",
+     "color": "#1d4ed8"
+    }
+   ]
+  },
+  {
+   "title": "From the surface down",
+   "prompt": "Put the layers in order from the deepest at the bottom to the land surface at the top.",
+   "why": "Soil sits at the surface over the unsaturated zone (air and water in the pores). The capillary fringe marks the water table, and below it is the saturated zone where all pores are full of water.",
+   "topLabel": "Land surface",
+   "bottomLabel": "Deepest",
+   "layers": [
+    {
+     "name": "Saturated zone",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Water table and capillary fringe",
+     "color": "#3b82f6"
+    },
+    {
+     "name": "Unsaturated zone",
+     "color": "#d6b98c"
+    },
+    {
+     "name": "Soil and plants",
+     "color": "#65a30d"
+    }
+   ]
+  },
+  {
+   "title": "How a cave and karst form",
+   "prompt": "Put the stages in order, from the earliest at the bottom to the latest at the top.",
+   "why": "CO₂ joins rainwater to make carbonic acid, which dissolves limestone near the water table along joints. A river cuts down and lowers the water table, the caves drain and speleothems grow, and finally roofs collapse into sinkholes.",
+   "topLabel": "Latest",
+   "bottomLabel": "Earliest",
+   "layers": [
+    {
+     "name": "CO₂ + water makes carbonic acid",
+     "color": "#93c5fd"
+    },
+    {
+     "name": "Acid dissolves limestone along joints",
+     "color": "#a8a29e"
+    },
+    {
+     "name": "A river cuts down; the water table drops",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "Caves drain and speleothems grow",
+     "color": "#d6b98c"
+    },
+    {
+     "name": "Roofs collapse into sinkholes",
+     "color": "#78716c"
+    }
+   ]
+  },
+  {
+   "title": "One geyser cycle",
+   "prompt": "Put the stages in order, from the first at the bottom to the last at the top.",
+   "why": "Groundwater fills the chamber and is heated by shallow magma, but the weight of the water above stops it boiling. Bubbles form and the pressure drops, the water all boils at once and erupts, and then the empty chamber refills.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Groundwater fills the chamber",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "Magma heats it; the weight above stops boiling",
+     "color": "#f97316"
+    },
+    {
+     "name": "Bubbles form and the pressure drops",
+     "color": "#fb923c"
+    },
+    {
+     "name": "All the water boils and erupts",
+     "color": "#dc2626"
+    },
+    {
+     "name": "The chamber refills",
+     "color": "#2563eb"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Primary or secondary porosity?",
+   "prompt": "Sort each kind of open space.",
+   "buckets": [
+    "Primary porosity",
+    "Secondary porosity"
+   ],
+   "items": [
+    {
+     "text": "Voids between sediment grains",
+     "b": 0
+    },
+    {
+     "text": "Vesicles in basalt",
+     "b": 0
+    },
+    {
+     "text": "Open cavities in reef limestone",
+     "b": 0
+    },
+    {
+     "text": "Fractures in a rock",
+     "b": 1
+    },
+    {
+     "text": "Fault breccia",
+     "b": 1
+    },
+    {
+     "text": "Solution cavities",
+     "b": 1
+    }
+   ],
+   "why": "Primary porosity formed with the material: grain voids, vesicles, reef cavities. Secondary porosity was added later: fractures, fault breccia, solution cavities."
+  },
+  {
+   "title": "Natural or human-caused?",
+   "prompt": "Sort each groundwater contaminant source.",
+   "buckets": [
+    "Occurs naturally",
+    "Human-caused"
+   ],
+   "items": [
+    {
+     "text": "Arsenic",
+     "b": 0
+    },
+    {
+     "text": "Iron and manganese",
+     "b": 0
+    },
+    {
+     "text": "Hydrogen sulfide",
+     "b": 0
+    },
+    {
+     "text": "Hardness",
+     "b": 0
+    },
+    {
+     "text": "Failing septic systems",
+     "b": 1
+    },
+    {
+     "text": "Fertilizers and pesticides",
+     "b": 1
+    },
+    {
+     "text": "Abandoned gas stations",
+     "b": 1
+    },
+    {
+     "text": "Landfills and junkyards",
+     "b": 1
+    },
+    {
+     "text": "Mine spoil and processing waste",
+     "b": 1
+    }
+   ],
+   "why": "Hardness, iron, manganese, hydrogen sulfide and arsenic can occur naturally. Septic systems, farm chemicals, petroleum, landfills, junkyards and mine waste come from people."
+  },
+  {
+   "title": "Aquifer or aquitard?",
+   "prompt": "Sort each description.",
+   "buckets": [
+    "Aquifer",
+    "Aquitard"
+   ],
+   "items": [
+    {
+     "text": "High porosity and high permeability",
+     "b": 0
+    },
+    {
+     "text": "Transmits water easily",
+     "b": 0
+    },
+    {
+     "text": "Can be confined or unconfined",
+     "b": 0
+    },
+    {
+     "text": "Lower permeability",
+     "b": 1
+    },
+    {
+     "text": "Hinders water flow",
+     "b": 1
+    },
+    {
+     "text": "Can hold up a perched water table",
+     "b": 1
+    }
+   ],
+   "why": "An aquifer is high-porosity, high-permeability rock that transmits water easily, either at the surface (unconfined) or beneath an aquitard (confined). An aquitard has lower permeability and hinders flow; a patch of it can trap a perched water table."
+  }
+ ],
+ "calc": [
+  "gw-gradient",
+  "gw-travel"
+ ]
+}
