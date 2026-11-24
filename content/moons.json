@@ -1,0 +1,2895 @@
+{
+ "id": "moons",
+ "title": "A Wealth of Worlds: Satellites of Ice and Rock",
+ "chapter": "Ch 11.2",
+ "icon": "🌙",
+ "color": "#7c3aed",
+ "slideFile": "none (no teacher slides; notes follow Cosmic Perspective 10e, section 11.2)",
+ "intro": "The jovian planets are circled by more than 200 moons, from captured lumps a few kilometres across to worlds bigger than Mercury. Sort moons by size and see why the big ones orbit so neatly while small ones are often captured. Then tour Jupiter's Galilean moons: Io's volcanoes powered by tidal heating and an orbital resonance, Europa's hidden ocean, Ganymede's two-faced surface and cratered Callisto. Continue to Titan's methane rain and lakes, the fountains of Enceladus, Saturn's and Uranus's medium-size moons and Neptune's captured Triton, and finish with why small icy moons stay active far longer than small rocky planets.",
+ "learningObjectives": [
+  {
+   "id": "lo-01",
+   "text": "What kinds of moons orbit the jovian planets?"
+  },
+  {
+   "id": "lo-02",
+   "text": "Why are Jupiter's Galilean moons so geologically active?"
+  },
+  {
+   "id": "lo-03",
+   "text": "What geological activity do we see on Titan and other distant moons?"
+  },
+  {
+   "id": "lo-04",
+   "text": "Why are small icy moons more geologically active than small rocky planets?"
+  }
+ ],
+ "sections": [
+  {
+   "id": "systems",
+   "title": "Jovian systems and their many moons",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 330-331)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_system.webp",
+      "slide": "none (original diagram)",
+      "alt": "A ringed jovian planet with several moons around it: big round moons and small lumpy ones. Caption: moons and rings together have only a tiny fraction of the planet's mass but enormous variety."
+     },
+     "title": "More than the planets",
+     "bullets": [
+      "Each of the four jovian planets has a whole **system** around it: the planet, many **moons** and a set of **rings**.",
+      "All the moons and rings together have only a tiny fraction of the mass of any one jovian planet, but they make up for it in **variety**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_moon_counts.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of known moons as of 2022: Jupiter 79 and Saturn 82. A note says Uranus and Neptune add more, bringing the total past 200, and that all moons and rings together have only a tiny fraction of one jovian planet's mass."
+     },
+     "title": "A crowd of moons",
+     "bullets": [
+      "More than **200** moons are known around the jovian planets.",
+      "**Jupiter** has **79** known moons and **Saturn** **82** (counts as of 2022). New ones keep being found."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_size_classes.webp",
+      "slide": "none (original diagram)",
+      "alt": "A diameter scale split into three groups: small moons under about 300 km (irregular, often captured), medium-size moons about 300 to 1500 km (round and icy) and large moons over about 1500 km. Bigger moons are more likely to show geological activity."
+     },
+     "title": "Three size groups",
+     "bullets": [
+      "**Small moons**: less than about **300 km** across.",
+      "**Medium-size moons**: about **300 to 1500 km** across.",
+      "**Large moons**: more than about **1500 km** across.",
+      "The groups are useful because **size is linked to geological activity**: larger moons are more likely to show signs of past or present activity."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Size matters for moons for the same reason it matters for planets: a bigger body holds its internal heat longer, so it is more likely to have been geologically active."
+    },
+    {
+     "type": "trick",
+     "text": "300 and 1500: under 300 km is small, over 1500 km is large, everything between is medium."
+    },
+    {
+     "type": "trap",
+     "text": "Moon counts change as new moons are found: the section gives 79 (Jupiter) and 82 (Saturn) as of 2022 and 'more than 200' in total; the chapter summary still says 'more than 170'. Saturn, not Jupiter, has the larger count here (section 11.2, p. 330)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 330 (opening of 11.2 and 'What kinds of moons orbit the jovian planets?')",
+    "Original bar chart and size-class diagram"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_system.webp",
+     "slide": "none (original diagram)",
+     "alt": "A ringed jovian planet with several moons around it: big round moons and small lumpy ones. Caption: moons and rings together have only a tiny fraction of the planet's mass but enormous variety."
+    },
+    {
+     "src": "img/moons/gen_moon_counts.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of known moons as of 2022: Jupiter 79 and Saturn 82. A note says Uranus and Neptune add more, bringing the total past 200, and that all moons and rings together have only a tiny fraction of one jovian planet's mass."
+    },
+    {
+     "src": "img/moons/gen_size_classes.webp",
+     "slide": "none (original diagram)",
+     "alt": "A diameter scale split into three groups: small moons under about 300 km (irregular, often captured), medium-size moons about 300 to 1500 km (round and icy) and large moons over about 1500 km. Bigger moons are more likely to show geological activity."
+    }
+   ]
+  },
+  {
+   "id": "bigmoons",
+   "title": "Medium-size and large moons: worlds of their own",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 330-331)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_traits.webp",
+      "slide": "none (original diagram)",
+      "alt": "Six cards of traits that medium-size and large moons share with terrestrial planets: spherical, a solid surface with its own geology, some with atmospheres, some with hot interiors, some with magnetic fields; but unlike those planets they contain lots of ice."
+     },
+     "title": "Like small terrestrial worlds",
+     "bullets": [
+      "Medium-size and large moons are **spherical**, have **solid surfaces**, and each has its own geology.",
+      "Some even have **atmospheres**, **hot interiors** and **magnetic fields**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_moon_sizes.webp",
+      "slide": "none (original diagram)",
+      "alt": "Circles drawn to scale from largest to smallest: Ganymede, Titan, Mercury, Callisto, Io, our Moon, Europa, Triton and Pluto. Ganymede and Titan are larger than Mercury; Io, Europa, Callisto and Triton are larger than Pluto."
+     },
+     "title": "Bigger than planets",
+     "bullets": [
+      "The two largest moons, **Ganymede** (Jupiter) and **Titan** (Saturn), are **larger than the planet Mercury**.",
+      "Four more, **Io, Europa, Callisto** (Jupiter) and **Triton** (Neptune), are larger than **Pluto and Eris**, the largest known dwarf planets."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_ingredients.webp",
+      "slide": "none (original diagram)",
+      "alt": "The Sun at left. The warm inner solar system holds metal and rock (terrestrial planets); the cold outer solar system holds metal, rock and lots of ice (jovian planets and their moons). Uranus's moons' ice includes much ammonia and methane."
+     },
+     "title": "Made with ice",
+     "bullets": [
+      "Unlike the terrestrial worlds, most of these moons contain **lots of ice** as well as metal and rock.",
+      "That is because they formed in the **cold outer solar system**, where ices could condense."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Far from the Sun it was cold enough for ices to condense, so moons built there got ice as a major ingredient."
+    },
+    {
+     "type": "trick",
+     "text": "Ganymede and Titan: the 'G-T' pair that beats Mercury."
+    },
+    {
+     "type": "trap",
+     "text": "Being larger than Mercury does not make Ganymede or Titan planets: they orbit planets, so they are moons. Size alone does not decide what we call an object (p. 330)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 330 and Figure 11.14 (drawn here as an original to-scale diagram; circle sizes use standard diameters, no numbers printed)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_traits.webp",
+     "slide": "none (original diagram)",
+     "alt": "Six cards of traits that medium-size and large moons share with terrestrial planets: spherical, a solid surface with its own geology, some with atmospheres, some with hot interiors, some with magnetic fields; but unlike those planets they contain lots of ice."
+    },
+    {
+     "src": "img/moons/gen_moon_sizes.webp",
+     "slide": "none (original diagram)",
+     "alt": "Circles drawn to scale from largest to smallest: Ganymede, Titan, Mercury, Callisto, Io, our Moon, Europa, Triton and Pluto. Ganymede and Titan are larger than Mercury; Io, Europa, Callisto and Triton are larger than Pluto."
+    },
+    {
+     "src": "img/moons/gen_ingredients.webp",
+     "slide": "none (original diagram)",
+     "alt": "The Sun at left. The warm inner solar system holds metal and rock (terrestrial planets); the cold outer solar system holds metal, rock and lots of ice (jovian planets and their moons). Uranus's moons' ice includes much ammonia and methane."
+    }
+   ]
+  },
+  {
+   "id": "regular",
+   "title": "How the big moons formed, and why they face their planets",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 330-331)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_disk_formation.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a disk of gas and dust around a young jovian planet. Dust gathers into four growing moons on circular orbits in the planet's equatorial plane, all circling in the direction the planet spins."
+     },
+     "title": "Born in a disk",
+     "bullets": [
+      "Most medium-size and large moons probably formed by **accretion** in the **disk of gas** that surrounded each young jovian planet.",
+      "That explains three patterns: their orbits are **nearly circular**, they lie **close to the planet's equatorial plane**, and they orbit **in the same direction the planet rotates**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_synchronous.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a moon circles a planet with a red dot on its surface. The dot always points toward the planet, because the moon turns exactly once per orbit, an effect of the planet's strong tides."
+     },
+     "title": "Synchronous rotation",
+     "bullets": [
+      "Nearly all of these moons always keep the **same face toward their planet**, just as our Moon always shows Earth the same face.",
+      "This **synchronous rotation** comes from the planets' strong **tidal forces**, which made each moon's rotation period equal its orbital period, no matter how fast it spun when it formed."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A spinning disk hands its spin direction and flat shape to everything that forms inside it, just like the planets formed in the Sun's disk."
+    },
+    {
+     "type": "trick",
+     "text": "Disk-born moons are 'tidy': circular, flat (equatorial) and going the same way."
+    },
+    {
+     "type": "trap",
+     "text": "Synchronous rotation does NOT mean the moon does not rotate: it rotates exactly once per orbit (p. 331). It was caused by tides, not by how the moon formed."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, pp. 330-331"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_disk_formation.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a disk of gas and dust around a young jovian planet. Dust gathers into four growing moons on circular orbits in the planet's equatorial plane, all circling in the direction the planet spins."
+    },
+    {
+     "src": "img/moons/gen_synchronous.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a moon circles a planet with a red dot on its surface. The dot always points toward the planet, because the moon turns exactly once per orbit, an effect of the planet's strong tides."
+    }
+   ]
+  },
+  {
+   "id": "smallmoons",
+   "title": "Small moons: captured lumps of ice and rock",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 331)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_small_moons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Six lumpy, irregular small moons of Saturn with their longest lengths: Pan 35 km (with a ridge of ring dust around its equator), Pandora 84 km, Prometheus 135 km, Hyperion 180 km, Janus 180 km and dark Phoebe 220 km."
+     },
+     "title": "Irregular shapes",
+     "bullets": [
+      "We know much less about the many **small moons**; many are only a few kilometres across.",
+      "Like asteroids, they tend to have **irregular shapes**, because their gravity is too weak to pull their rigid material into a sphere.",
+      "Saturn's small moon **Pan** orbits inside the rings and has collected a ridge of ring dust around its equator."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_captured.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: two regular moons circle a planet on circular orbits near its equator in the direction it spins, while a small lumpy captured moon travels a tilted, stretched orbit in the opposite direction."
+     },
+     "title": "Captured, not born there",
+     "bullets": [
+      "Many or most small moons are probably **captured asteroids or comets**.",
+      "That explains why their orbits follow **no particular pattern**, and many even orbit **backward** compared with their planet's rotation.",
+      "They are mostly chunks of ice and rock, **too small for any significant geological activity**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_names.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards on moon names: Jupiter's moons for lovers and relations of the god Jupiter; Saturn's for the Titans; Uranus's for characters of Shakespeare and Pope; Neptune's for sea characters of Greek and Roman myth."
+     },
+     "title": "What's in a name?",
+     "bullets": [
+      "**Jupiter's** moons were named for the mythical lovers of the Roman god Jupiter; newer finds get more distant mythological relations.",
+      "**Saturn's** Titan is named for the Titans, the Greek gods who ruled before Zeus; other Saturn moons are named for individual Titans.",
+      "**Uranus's** moons are characters from William Shakespeare and Alexander Pope. **Neptune's** are sea characters from Greek and Roman mythology."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A captured object keeps the random orbit it arrived on, so captured moons can be tilted, stretched or backward, unlike disk-born moons."
+    },
+    {
+     "type": "trick",
+     "text": "Lumpy + backward = captured."
+    },
+    {
+     "type": "trap",
+     "text": "Small moons are irregular because their gravity is WEAK, not because they were smashed recently (p. 331). A backward orbit points to capture, not to formation in the planet's disk."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 331 and Figure 11.15 (small moon sizes)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_small_moons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Six lumpy, irregular small moons of Saturn with their longest lengths: Pan 35 km (with a ridge of ring dust around its equator), Pandora 84 km, Prometheus 135 km, Hyperion 180 km, Janus 180 km and dark Phoebe 220 km."
+    },
+    {
+     "src": "img/moons/gen_captured.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: two regular moons circle a planet on circular orbits near its equator in the direction it spins, while a small lumpy captured moon travels a tilted, stretched orbit in the opposite direction."
+    },
+    {
+     "src": "img/moons/gen_names.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards on moon names: Jupiter's moons for lovers and relations of the god Jupiter; Saturn's for the Titans; Uranus's for characters of Shakespeare and Pope; Neptune's for sea characters of Greek and Roman myth."
+    }
+   ]
+  },
+  {
+   "id": "galilean",
+   "title": "Jupiter's four Galilean moons",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 331)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_galilean.webp",
+      "slide": "none (original diagram)",
+      "alt": "Jupiter at the left with its four Galilean moons in order outward and roughly to scale: Io (volcanoes, no craters), Europa (icy, few craters), Ganymede (largest; old and young terrain) and Callisto (heavily cratered). An arrow notes tides weaken with distance."
+     },
+     "title": "Galileo's moons",
+     "bullets": [
+      "The four **Galilean moons**, first seen by Galileo, are in order outward from Jupiter: **Io, Europa, Ganymede, Callisto**.",
+      "Each is big enough that it would count as a **planet or dwarf planet** if it orbited the Sun.",
+      "**Io** is about the size of our Moon."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_galilean_heat.webp",
+      "slide": "none (original diagram)",
+      "alt": "Table of the Galilean moons. Io: in the resonance, strongest tidal heating, most volcanic. Europa: resonance, weaker heating, probable ocean. Ganymede: resonance, weaker still, old and young terrain. Callisto: no resonance, no tidal heating, cratered."
+     },
+     "title": "Four very different worlds",
+     "bullets": [
+      "Io is covered in volcanoes, Europa is icy with few craters, Ganymede mixes old and young terrain, and Callisto is a cratered iceball.",
+      "The big question: why are three of them so **geologically active**? The answer involves **tidal heating** and an **orbital resonance**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The closer a moon is to Jupiter, the stronger the tides it feels, so tidal heating fades from Io outward to Callisto."
+    },
+    {
+     "type": "trick",
+     "text": "'I Eat Green Carrots': Io, Europa, Ganymede, Callisto, from Jupiter outward."
+    },
+    {
+     "type": "trap",
+     "text": "Ganymede, not Callisto, is the largest; Callisto is the outermost (pp. 331, 335). The order outward is Io, Europa, Ganymede, Callisto (Figure 11.14)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 331 and Figure 11.16"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_galilean.webp",
+     "slide": "none (original diagram)",
+     "alt": "Jupiter at the left with its four Galilean moons in order outward and roughly to scale: Io (volcanoes, no craters), Europa (icy, few craters), Ganymede (largest; old and young terrain) and Callisto (heavily cratered). An arrow notes tides weaken with distance."
+    },
+    {
+     "src": "img/moons/gen_galilean_heat.webp",
+     "slide": "none (original diagram)",
+     "alt": "Table of the Galilean moons. Io: in the resonance, strongest tidal heating, most volcanic. Europa: resonance, weaker heating, probable ocean. Ganymede: resonance, weaker still, old and young terrain. Callisto: no resonance, no tidal heating, cratered."
+    }
+   ]
+  },
+  {
+   "id": "io",
+   "title": "Io: the volcano world",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 331)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_io_colors.webp",
+      "slide": "none (original diagram)",
+      "alt": "A yellow globe of Io dotted with black, red and white spots, with a key: black, brown and red spots are recently active volcanic features; red and orange is sulfur; white is sulfur dioxide frost; yellow is sulfur; there are no impact craters."
+     },
+     "title": "The most volcanic world",
+     "bullets": [
+      "**Io** is by far the **most volcanically active** world in the solar system. Large volcanoes cover its whole surface.",
+      "Eruptions happen so often that they **repave the surface**: Io has **not a single impact crater**.",
+      "It probably has tectonics too, but volcanic debris has buried most tectonic features."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_io_volcano.webp",
+      "slide": "none (original diagram)",
+      "alt": "Side view of a broad, gently sloping volcano with red basalt lava flows running down from a central vent, like Earth's volcanoes along mid-ocean ridges. Heights exaggerated."
+     },
+     "title": "Volcanoes like Earth's",
+     "bullets": [
+      "Some tall volcanoes look like Earth's **shallow-sloped volcanoes** built from **basalt lava**, like those along mid-ocean ridges.",
+      "Eruptions release gas (**outgassing**): mostly **sulfur dioxide (SO₂)** and **sulfur**, with a hint of **sodium**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_io_gases.webp",
+      "slide": "none (original diagram)",
+      "alt": "Flow chart: gas from Io's volcanoes (mainly sulfur dioxide and sulfur, a little sodium) goes three ways: some escapes to feed the Io torus and Jupiter's magnetosphere, some forms a very thin atmosphere, and much falls back as coloured frost."
+     },
+     "title": "Where the gas goes",
+     "bullets": [
+      "Some gas **escapes into space**, supplying charged gas (plasma) to the **Io torus** and **Jupiter's magnetosphere**.",
+      "Some gives Io a **very thin atmosphere**.",
+      "Much of it falls back: **sulfur** gives Io its **red and orange** colours and **SO₂** makes a **white frost**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_io_plume.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: on Io, a red-hot lava flow spreads over white sulfur dioxide frost. The frost turns to gas explosively and a tall plume rises, helped by low gravity and thin air, then sulfur-rich fallout settles on the ground."
+     },
+     "title": "Giant plumes",
+     "bullets": [
+      "When hot lava flows over SO₂ frost, it turns the frost into gas, much as lava pouring into the sea boils water on Earth.",
+      "Io's **low gravity** and **thin atmosphere** let these plumes climb **hundreds of kilometres** high. One plume was about 80 km tall.",
+      "In a few months, fallout from tall plumes can blanket an area the size of **Arizona**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Constant eruptions bury any crater soon after it forms, so a surface with no craters must be very young."
+    },
+    {
+     "type": "trick",
+     "text": "Io's colours: Sulfur = Sunset reds and yellows; SO₂ = Snow white."
+    },
+    {
+     "type": "trap",
+     "text": "Io's plumes rise so high because of LOW gravity and a thin atmosphere, not because its eruptions are hotter than Earth's (p. 331). Io's red and orange come from sulfur, not iron rust."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 331 and Figures 11.17-11.18 (described, not reproduced)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_io_colors.webp",
+     "slide": "none (original diagram)",
+     "alt": "A yellow globe of Io dotted with black, red and white spots, with a key: black, brown and red spots are recently active volcanic features; red and orange is sulfur; white is sulfur dioxide frost; yellow is sulfur; there are no impact craters."
+    },
+    {
+     "src": "img/moons/gen_io_volcano.webp",
+     "slide": "none (original diagram)",
+     "alt": "Side view of a broad, gently sloping volcano with red basalt lava flows running down from a central vent, like Earth's volcanoes along mid-ocean ridges. Heights exaggerated."
+    },
+    {
+     "src": "img/moons/gen_io_gases.webp",
+     "slide": "none (original diagram)",
+     "alt": "Flow chart: gas from Io's volcanoes (mainly sulfur dioxide and sulfur, a little sodium) goes three ways: some escapes to feed the Io torus and Jupiter's magnetosphere, some forms a very thin atmosphere, and much falls back as coloured frost."
+    },
+    {
+     "src": "img/moons/gen_io_plume.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: on Io, a red-hot lava flow spreads over white sulfur dioxide frost. The frost turns to gas explosively and a tall plume rises, helped by low gravity and thin air, then sulfur-rich fallout settles on the ground."
+    }
+   ]
+  },
+  {
+   "id": "tidal",
+   "title": "Tidal heating: Jupiter flexes Io",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 332)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_heat_bars.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of heat per gram: Earth's radioactive heat is a tiny bar, Io's tidal heat a bar more than 200 times longer. Note: Io is Moon-sized, so without tidal heating it should have cooled long ago."
+     },
+     "title": "A puzzle",
+     "bullets": [
+      "Io's volcanoes mean it must be **hot inside**. But Io is only about the size of our **geologically dead Moon**.",
+      "It should have lost its heat from birth long ago, and it is too small for **radioactivity** to supply much heat. Some other process must heat it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_tidal_flex.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Io travels an exaggerated elliptical orbit around Jupiter. Near Jupiter it is stretched into a long, hot-coloured oval with large tidal bulges; far away the bulges shrink. The changing bulges flex Io and friction heats it."
+     },
+     "title": "Tides that change",
+     "bullets": [
+      "Jupiter's tidal force keeps one side of Io facing Jupiter, but because Jupiter is so massive this tidal force is **far stronger** than Earth's pull on the Moon.",
+      "Io's orbit is **slightly elliptical**, so its speed and distance from Jupiter change around each orbit.",
+      "So the strength and direction of the tidal force keep changing, and so do the **size and direction of Io's tidal bulges**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_paperclip.webp",
+      "slide": "none (original diagram)",
+      "alt": "A bent paper clip with a glowing orange spot at the bend, labelled 'bend point gets warm'. Beside it: Io is flexed the same way by Jupiter's changing tides, giving over 200 times Earth's radioactive heat per gram; the energy comes from Jupiter's rotation."
+     },
+     "title": "Flexing makes heat",
+     "bullets": [
+      "Io is constantly **flexed** in different directions, which causes **friction** inside it and heats the interior, like kneading Silly Putty or bending a paper clip back and forth until it is warm.",
+      "This **tidal heating** gives Io **more than 200 times** as much heat per gram as the radioactive heat behind much of Earth's geology.",
+      "The energy ultimately comes from **Jupiter's rotation**, which is slowing down, though too little to measure."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A body squeezed the same way all the time would just settle into one shape. It is the CHANGING squeeze from an elliptical orbit that keeps working the interior and making heat."
+    },
+    {
+     "type": "trick",
+     "text": "Bend a paper clip back and forth: it gets warm. Io is Jupiter's paper clip."
+    },
+    {
+     "type": "trap",
+     "text": "Tidal heating needs an ELLIPTICAL orbit: a perfectly circular synchronous orbit would give a steady bulge and little heating (p. 332). The energy comes from Jupiter's rotation, not from sunlight or Io's radioactivity."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 332 and Figure 11.19a (redrawn as an original animation)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_heat_bars.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of heat per gram: Earth's radioactive heat is a tiny bar, Io's tidal heat a bar more than 200 times longer. Note: Io is Moon-sized, so without tidal heating it should have cooled long ago."
+    },
+    {
+     "src": "img/moons/gen_tidal_flex.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Io travels an exaggerated elliptical orbit around Jupiter. Near Jupiter it is stretched into a long, hot-coloured oval with large tidal bulges; far away the bulges shrink. The changing bulges flex Io and friction heats it."
+    },
+    {
+     "src": "img/moons/gen_paperclip.webp",
+     "slide": "none (original diagram)",
+     "alt": "A bent paper clip with a glowing orange spot at the bend, labelled 'bend point gets warm'. Beside it: Io is flexed the same way by Jupiter's changing tides, giving over 200 times Earth's radioactive heat per gram; the energy comes from Jupiter's rotation."
+    }
+   ]
+  },
+  {
+   "id": "resonance",
+   "title": "The orbital resonance of Io, Europa and Ganymede",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 332-333)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_resonance.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Io, Europa and Ganymede circle Jupiter with a day counter. In about 7 days Io makes 4 orbits, Europa 2 and Ganymede 1, so they line up at the same places again and again, and the repeated tugs make all three orbits slightly elliptical."
+     },
+     "title": "Why is Io's orbit elliptical?",
+     "bullets": [
+      "Almost all other large moons have nearly circular orbits. Io's is slightly elliptical because of an **orbital resonance**: a simple mathematical relationship between the orbital periods of two or more objects.",
+      "In the time **Ganymede** completes **1** orbit (about **7 days**), **Europa** completes **2** and **Io** completes **4**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_swing.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a child on a swing gets a small push at the same point of every swing and goes higher and higher. Beside it: moons get repeated tugs at each line-up, and the tugs add up to stretch their orbits."
+     },
+     "title": "Tugs that add up",
+     "bullets": [
+      "Because of this 4 : 2 : 1 pattern, the three moons **line up periodically**, always at the same places.",
+      "At each line-up their gravitational tugs pull **in the same direction**, so the tugs **add up** over time and stretch the orbits into **slightly elliptical** shapes.",
+      "It works like **pushing a child on a swing**: small pushes, timed to repeat, build up a big swing."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_resonance_places.webp",
+      "slide": "none (original diagram)",
+      "alt": "Six cards of places where orbital resonances matter: the Galilean moons (4 : 2 : 1), planetary rings, the asteroid belt, the Kuiper belt, some planets around other stars, and Enceladus with Dione at Saturn."
+     },
+     "title": "Common across the cosmos",
+     "bullets": [
+      "Orbital resonances also shape **planetary rings**, the **asteroid belt**, the **Kuiper belt** and some **planets around other stars**.",
+      "The line-ups are not a coincidence: tides the moons raise on Jupiter, and the moons' own repeated tugs, keep the pattern going."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Random tugs from different directions would cancel out. Tugs that repeat at the same point in the orbit all push the same way, so they pile up."
+    },
+    {
+     "type": "trick",
+     "text": "Count the orbits in one week: Io 4, Europa 2, Ganymede 1."
+    },
+    {
+     "type": "trap",
+     "text": "The resonance does not heat the moons directly: it keeps the orbits elliptical, and the elliptical orbit causes the changing tides that heat them (pp. 332-333). Callisto is NOT part of the resonance."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, pp. 332-333 and Figure 11.19b (redrawn as an original animation)",
+    "The 7-day figure is 'about 7 days' in the section"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_resonance.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Io, Europa and Ganymede circle Jupiter with a day counter. In about 7 days Io makes 4 orbits, Europa 2 and Ganymede 1, so they line up at the same places again and again, and the repeated tugs make all three orbits slightly elliptical."
+    },
+    {
+     "src": "img/moons/gen_swing.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a child on a swing gets a small push at the same point of every swing and goes higher and higher. Beside it: moons get repeated tugs at each line-up, and the tugs add up to stretch their orbits."
+    },
+    {
+     "src": "img/moons/gen_resonance_places.webp",
+     "slide": "none (original diagram)",
+     "alt": "Six cards of places where orbital resonances matter: the Galilean moons (4 : 2 : 1), planetary rings, the asteroid belt, the Kuiper belt, some planets around other stars, and Enceladus with Dione at Saturn."
+    }
+   ]
+  },
+  {
+   "id": "europa",
+   "title": "Europa: an ice crust over a hidden ocean?",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 333-334)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_europa_globe.webp",
+      "slide": "none (original diagram)",
+      "alt": "A pale icy globe of Europa criss-crossed by brown cracks, with only one small crater. Notes: covered by water ice, very few craters, cracks with double ridges, heated by tides more weakly than Io."
+     },
+     "title": "An icy contrast",
+     "bullets": [
+      "Instead of volcanoes, **Europa** is covered by **water ice**.",
+      "It is heated by the same kind of **tidal heating** as Io, but more **weakly**, because it is **farther from Jupiter**.",
+      "It has only a **handful of impact craters**, so ongoing activity must have erased nearly all old ones."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_europa_ridges.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation, side view of Europa's icy crust over a soft or liquid layer: tidal stress pushes two blocks of crust back and forth along a crack, friction warms the ice so it swells into a ridge on each side, then the centre sags where ice may melt."
+     },
+     "title": "Double-ridged cracks",
+     "bullets": [
+      "What erases the craters? Either liquid water rising from an ocean under the ice, or warm interior ice slowly convecting up and flowing across the surface.",
+      "Europa's surface has many **double-ridged cracks**. These are best explained by an icy crust **sliding on a softer or liquid layer** below.",
+      "Tidal stresses make parts of the crust scrape past each other; friction warms the ice so it swells into ridges, and may melt it along the fault."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_europa_interior.webp",
+      "slide": "none (original diagram)",
+      "alt": "Cut-away of Europa from outside in: an icy crust with the top 5 to 25 km frozen solid, a liquid salty ocean (about 100 km of water in all), a rocky mantle and a metallic core. The ocean may hold over twice Earth's ocean water."
+     },
+     "title": "Clues from gravity",
+     "bullets": [
+      "Gravity measurements by the **Galileo** spacecraft suggest a **metallic core**, a **rocky mantle** and enough water on top for a layer about **100 km** thick.",
+      "The top **5 to 25 km** should be frozen solid. Tidal heating should keep the ice below either **liquid** or warm and **convecting**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_europa_magnet.webp",
+      "slide": "none (original diagram)",
+      "alt": "Jupiter's magnetic field sweeps past Europa as Jupiter spins, and Europa responds with its own induced field. Such a field needs a liquid layer that conducts electricity: a salty ocean works, convecting ice does not."
+     },
+     "title": "Clues from magnetism",
+     "bullets": [
+      "Europa is one of only a few moons with a **magnetic field**, and that field **changes as Jupiter rotates**.",
+      "The simplest explanation: Europa's field is **induced** by Jupiter's rotating field. That needs a **liquid layer that conducts electricity**.",
+      "A **salty ocean** fits; convecting ice does not. The ocean seems to be **global** and about **as salty as Earth's oceans**. Galileo also found **salty compounds** on the surface."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Only a moving, electrically conducting liquid can respond to Jupiter's changing magnetic field. Solid or slushy ice cannot carry the current, which is why the magnetic clue favours liquid water."
+    },
+    {
+     "type": "trick",
+     "text": "Europa's ocean case = Surface + Gravity + Magnetism (+ salts)."
+    },
+    {
+     "type": "trap",
+     "text": "Galileo's gravity data alone cannot tell liquid water from warm convecting ice; it is the MAGNETIC data that favour liquid (p. 333). Europa is heated less than Io because it is farther from Jupiter, not because it is smaller."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, pp. 333-334 and Figure 11.20 (redrawn as an original animation)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_europa_globe.webp",
+     "slide": "none (original diagram)",
+     "alt": "A pale icy globe of Europa criss-crossed by brown cracks, with only one small crater. Notes: covered by water ice, very few craters, cracks with double ridges, heated by tides more weakly than Io."
+    },
+    {
+     "src": "img/moons/gen_europa_ridges.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation, side view of Europa's icy crust over a soft or liquid layer: tidal stress pushes two blocks of crust back and forth along a crack, friction warms the ice so it swells into a ridge on each side, then the centre sags where ice may melt."
+    },
+    {
+     "src": "img/moons/gen_europa_interior.webp",
+     "slide": "none (original diagram)",
+     "alt": "Cut-away of Europa from outside in: an icy crust with the top 5 to 25 km frozen solid, a liquid salty ocean (about 100 km of water in all), a rocky mantle and a metallic core. The ocean may hold over twice Earth's ocean water."
+    },
+    {
+     "src": "img/moons/gen_europa_magnet.webp",
+     "slide": "none (original diagram)",
+     "alt": "Jupiter's magnetic field sweeps past Europa as Jupiter spins, and Europa responds with its own induced field. Such a field needs a liquid layer that conducts electricity: a salty ocean works, convecting ice does not."
+    }
+   ]
+  },
+  {
+   "id": "europaocean",
+   "title": "Europa's ocean, life and missions",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 334)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_europa_evidence.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four clues point to an ocean on Europa: few craters and double-ridged cracks, gravity data fitting about 100 km of water over rock and metal, an induced magnetic field, and salty compounds on the surface. Tidal heating supplies the warmth."
+     },
+     "title": "All the evidence together",
+     "bullets": [
+      "Surface photos, gravity measurements and magnetic data together make a **strong case** for a deep ocean of liquid water on Europa."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_chaos.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three panels: warm water rises from a seafloor vent, forms a lake inside Europa's icy crust, and the crust above breaks into tilted blocks that refreeze as jumbled iceberg terrain. Hints of gas venting are noted as unconfirmed."
+     },
+     "title": "Lakes in the ice",
+     "bullets": [
+      "With a tidally heated interior, **volcanic vents** may dot the seafloor and erupt, sending up plumes of warm water.",
+      "These may form **lakes inside the icy crust** that crack the surface above, which could explain terrain that looks like **jumbled icebergs**.",
+      "Some astronomers report hints of **gas venting** from cracks or geysers, but this is **not yet confirmed**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_europa_life.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bars comparing liquid water: Europa's ocean is drawn more than twice as long as all of Earth's oceans. Below, possible seafloor vents give off warm plumes. A list of ingredients for life: liquid water, tidal heat and vents."
+     },
+     "title": "Why it matters for life",
+     "bullets": [
+      "Europa's hidden ocean may contain **more than twice** as much liquid water as all of Earth's oceans combined.",
+      "Its seafloor may have the same kinds of **volcanic vents** around which life thrives in Earth's oceans, so Europa might be home to life."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_missions.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four missions: Europa Clipper (NASA), launch 2024, arrive 2030, to confirm Europa's ocean; JUICE (ESA), launch 2023, arrive 2031; Juno, at Jupiter since 2016, now studying rings and moons; Dragonfly drone, launch as soon as 2027, land on Titan 2036."
+     },
+     "title": "Missions on the way",
+     "bullets": [
+      "NASA's **Europa Clipper** (launch planned for 2024, arrival 2030) and ESA's **JUICE**, the Jupiter Icy Moons Explorer (launch 2023, arrival 2031), aim to confirm and study the ocean.",
+      "**Juno**, at Jupiter since 2016, is now in an extended mission focusing on Jupiter's rings and moons."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Life on Earth needs liquid water, energy and chemistry. Europa may offer all three: an ocean, tidal heat and seafloor vents."
+    },
+    {
+     "type": "trick",
+     "text": "Europa = Earth's ocean x 2, hidden under ice."
+    },
+    {
+     "type": "trap",
+     "text": "Europa's ocean is strongly supported but not directly seen; reports of plumes are unconfirmed (p. 334). The mission dates are the planned dates given in the section."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 334 and Figure 11.21 (redrawn as an original cut-away)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_europa_evidence.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four clues point to an ocean on Europa: few craters and double-ridged cracks, gravity data fitting about 100 km of water over rock and metal, an induced magnetic field, and salty compounds on the surface. Tidal heating supplies the warmth."
+    },
+    {
+     "src": "img/moons/gen_chaos.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three panels: warm water rises from a seafloor vent, forms a lake inside Europa's icy crust, and the crust above breaks into tilted blocks that refreeze as jumbled iceberg terrain. Hints of gas venting are noted as unconfirmed."
+    },
+    {
+     "src": "img/moons/gen_europa_life.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bars comparing liquid water: Europa's ocean is drawn more than twice as long as all of Earth's oceans. Below, possible seafloor vents give off warm plumes. A list of ingredients for life: liquid water, tidal heat and vents."
+    },
+    {
+     "src": "img/moons/gen_missions.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four missions: Europa Clipper (NASA), launch 2024, arrive 2030, to confirm Europa's ocean; JUICE (ESA), launch 2023, arrive 2031; Juno, at Jupiter since 2016, now studying rings and moons; Dragonfly drone, launch as soon as 2027, land on Titan 2036."
+    }
+   ]
+  },
+  {
+   "id": "ganymede",
+   "title": "Ganymede: king of the moons",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 334-335)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_ganymede_terrain.webp",
+      "slide": "none (original diagram)",
+      "alt": "Ganymede's surface in two halves split by a sharp boundary: old dark terrain covered in craters, and young light terrain with few craters and long parallel grooves made where water erupted along cracks, froze and expanded."
+     },
+     "title": "Two kinds of terrain",
+     "bullets": [
+      "**Ganymede** is the **largest moon in the solar system**. Like Europa, it has a surface of **water ice**.",
+      "Its surface has a 'dual personality': some regions are **dark and densely cratered** (old, much as they were billions of years ago); others are **light with very few craters** (young). Sharp boundaries can separate them."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_groove.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three panels of a crack in Ganymede's icy crust: the crack opens, water or slush fills it, then it freezes and expands, pushing the sides outward. Repeated, this makes long parallel grooves."
+     },
+     "title": "Making young terrain",
+     "bullets": [
+      "The young terrain suggests **liquid water or icy slush** occasionally welled up, covered the craters and refroze.",
+      "The long **grooves** probably form when water or slush erupts along a crack; as it freezes it **expands** and pushes outward."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_ganymede_interior.webp",
+      "slide": "none (original diagram)",
+      "alt": "A slice of Ganymede: about 150 km of ice above a salty ocean perhaps 100 km deep. Clues: a magnetic field varying with Jupiter's rotation and changing aurorae seen by Hubble. Heat: weak tides plus radioactive heat kept by its large size."
+     },
+     "title": "A deeply buried ocean?",
+     "bullets": [
+      "Galileo found that Ganymede's **magnetic field varies with Jupiter's rotation**, which suggests a **salty ocean**.",
+      "**Hubble** observations of **aurorae** around Ganymede back this up: the way they change makes sense only with an ocean about **150 km below the surface**, perhaps **100 km deep**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_ganymede_heat.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two boxes added together: weak tidal heating (Ganymede is farther from Jupiter) plus heat from radioactive decay (kept better because Ganymede is big) may equal enough heat for a liquid layer."
+     },
+     "title": "What keeps it liquid?",
+     "bullets": [
+      "Ganymede is farther from Jupiter than Io or Europa, so its **tidal heating is weaker** and could not melt the ice by itself today.",
+      "But its **larger size** means it keeps more heat from **radioactive decay**. Tidal heating and radioactive heat together may be enough for a liquid layer."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "When ice freezes it expands, so water freezing inside a crack pushes the sides apart and leaves a groove."
+    },
+    {
+     "type": "trick",
+     "text": "Ganymede = Giant moon, two-faced terrain (old dark, young light)."
+    },
+    {
+     "type": "trap",
+     "text": "Ganymede's ocean is thought to be much DEEPER below the surface (about 150 km) than Europa's (5 to 25 km of ice) (pp. 333-335). Tidal heating alone is not enough for Ganymede; radioactive heat helps."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, pp. 334-335 and Figure 11.22 (redrawn as an original diagram)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_ganymede_terrain.webp",
+     "slide": "none (original diagram)",
+     "alt": "Ganymede's surface in two halves split by a sharp boundary: old dark terrain covered in craters, and young light terrain with few craters and long parallel grooves made where water erupted along cracks, froze and expanded."
+    },
+    {
+     "src": "img/moons/gen_groove.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three panels of a crack in Ganymede's icy crust: the crack opens, water or slush fills it, then it freezes and expands, pushing the sides outward. Repeated, this makes long parallel grooves."
+    },
+    {
+     "src": "img/moons/gen_ganymede_interior.webp",
+     "slide": "none (original diagram)",
+     "alt": "A slice of Ganymede: about 150 km of ice above a salty ocean perhaps 100 km deep. Clues: a magnetic field varying with Jupiter's rotation and changing aurorae seen by Hubble. Heat: weak tides plus radioactive heat kept by its large size."
+    },
+    {
+     "src": "img/moons/gen_ganymede_heat.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two boxes added together: weak tidal heating (Ganymede is farther from Jupiter) plus heat from radioactive decay (kept better because Ganymede is big) may equal enough heat for a liquid layer."
+    }
+   ]
+  },
+  {
+   "id": "callisto",
+   "title": "Callisto: the cratered iceball",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 335)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_callisto_surface.webp",
+      "slide": "none (original diagram)",
+      "alt": "Callisto as a dark globe dotted with bright craters, where big impacts dug up clean ice. A side profile shows dark powder filling the low areas while ridges stay white, perhaps dust left as ice turns to gas, as on a comet."
+     },
+     "title": "The expected kind of moon",
+     "bullets": [
+      "**Callisto**, the outermost Galilean moon, looks the way scientists first expected an outer solar system moon to look: a **heavily cratered iceball**.",
+      "Its bright circular patches are **impact craters**: big impacts blast out clean ice from deep down, which reflects more light than older, dirtier surface ice.",
+      "Close-ups show a **dark powder** in low-lying areas, with ridges left bright. It may be debris left behind as ice **vaporizes**, much like on a comet's nucleus."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_callisto_interior.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two cut-aways. Left: a differentiated moon with ice outside, rock inside and a metal core. Right: Callisto, with rock and ice mixed through most of its interior because it never warmed much."
+     },
+     "title": "No internal heat",
+     "bullets": [
+      "Although it is the **third-largest moon** in the solar system, Callisto has **no volcanic or tectonic features**, so it lacks significant internal heat.",
+      "Galileo's gravity measurements show it **never differentiated**: rock and ice are **mixed** through most of its interior, so it never warmed much.",
+      "That makes sense: Callisto is **not in the orbital resonance**, so it has **no tidal heating**, and its icy interior holds little radioactive material."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_three_oceans.webp",
+      "slide": "none (original diagram)",
+      "alt": "Europa, Ganymede and Callisto, each with a blue ring showing a possible hidden ocean: Europa a strong case under 5 to 25 km of ice; Ganymede perhaps 150 km down; Callisto maybe, insulated by thick ice. Together more water than Earth's oceans."
+     },
+     "title": "Yet maybe an ocean too",
+     "bullets": [
+      "Galileo found that Callisto also has a **varying magnetic field**, hinting at a **salty interior ocean**.",
+      "Perhaps its thick icy crust **insulates** enough for radioactive heat to melt water beneath it.",
+      "If so, **three** of Jupiter's moons could have oceans, with **more total ocean water than Earth**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Differentiation needs heat: only a warmed interior lets dense rock sink and lighter ice rise. A mixed interior shows Callisto stayed cool."
+    },
+    {
+     "type": "trick",
+     "text": "Callisto = Cratered, Cold, Can't (join the resonance)."
+    },
+    {
+     "type": "trap",
+     "text": "Callisto is the least geologically active Galilean moon but may STILL have an ocean (p. 335). Bright spots on Callisto are craters exposing clean ice, not fresh volcanic deposits."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 335 and Figure 11.23"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_callisto_surface.webp",
+     "slide": "none (original diagram)",
+     "alt": "Callisto as a dark globe dotted with bright craters, where big impacts dug up clean ice. A side profile shows dark powder filling the low areas while ridges stay white, perhaps dust left as ice turns to gas, as on a comet."
+    },
+    {
+     "src": "img/moons/gen_callisto_interior.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two cut-aways. Left: a differentiated moon with ice outside, rock inside and a metal core. Right: Callisto, with rock and ice mixed through most of its interior because it never warmed much."
+    },
+    {
+     "src": "img/moons/gen_three_oceans.webp",
+     "slide": "none (original diagram)",
+     "alt": "Europa, Ganymede and Callisto, each with a blue ring showing a possible hidden ocean: Europa a strong case under 5 to 25 km of ice; Ganymede perhaps 150 km down; Callisto maybe, insulated by thick ice. Together more water than Earth's oceans."
+    }
+   ]
+  },
+  {
+   "id": "titan",
+   "title": "Titan: a moon with a thick atmosphere",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 335-336)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_titan_haze.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two views of Titan: in visible light a fuzzy, featureless orange ball wrapped in haze; through special near-infrared filters, the surface below with dark and light patches."
+     },
+     "title": "A hazy giant",
+     "bullets": [
+      "**Titan**, Saturn's biggest moon, is the **second-largest moon** in the solar system (after Ganymede).",
+      "It is the only moon with a **thick atmosphere**, so thick that visible light cannot see through it. Its colour comes from chemicals that act like **smog** over cities.",
+      "The air is about **95% nitrogen (N₂)**, like Earth's mostly-nitrogen air. The rest is **argon, methane (CH₄), ethane (C₂H₆)** and other hydrogen compounds, not oxygen."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_titan_air.webp",
+      "slide": "none (original diagram)",
+      "alt": "Titan's air: about 95% nitrogen, the rest argon, methane, ethane and other hydrogen compounds; 93 K and 50% more pressure than Earth. Flow: ices give off methane and ammonia, UV splits them, hydrogen escapes, ammonia gives nitrogen and methane gives ethane."
+     },
+     "title": "Making Titan's air",
+     "bullets": [
+      "Titan's icy surface supplies **methane and ammonia** gas as ices and liquids vaporize (and possibly from volcanoes).",
+      "**Solar ultraviolet light** breaks some molecules apart. **Hydrogen atoms escape** to space; the leftover pieces react to make the rest of the air.",
+      "The **nitrogen** comes from broken-down **ammonia (NH₃)**, and **ethane** is made from **methane**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_titan_conditions.webp",
+      "slide": "none (original diagram)",
+      "alt": "Standing on Titan: a thermometer near the bottom reading about 93 K (-180 degrees C), and a bar chart showing Titan's surface pressure about 50% higher than Earth's sea-level pressure, with no oxygen."
+     },
+     "title": "Cold, but with a greenhouse",
+     "bullets": [
+      "Methane and ethane are **greenhouse gases**, so Titan is warmer than it would otherwise be.",
+      "Even so, it is far from the Sun: the surface is about **93 K (-180 °C)**.",
+      "Surface pressure is about **50% higher** than at sea level on Earth."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Titan is cold enough to hold onto heavy gases like nitrogen and methane, and its supply of icy methane and ammonia keeps feeding the atmosphere."
+    },
+    {
+     "type": "trick",
+     "text": "Titan's air: 'Nitrogen like Earth, but Methane instead of oxygen'."
+    },
+    {
+     "type": "trap",
+     "text": "Titan's air is NOT mostly methane: it is about 95% nitrogen; methane is only part of the remaining few percent (p. 335). Its greenhouse effect warms it but it is still about -180 °C."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, pp. 335-336 and Figure 11.24",
+    "The section gives Earth's air as 77% nitrogen; other units give 78%. Student text avoids the number."
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_titan_haze.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two views of Titan: in visible light a fuzzy, featureless orange ball wrapped in haze; through special near-infrared filters, the surface below with dark and light patches."
+    },
+    {
+     "src": "img/moons/gen_titan_air.webp",
+     "slide": "none (original diagram)",
+     "alt": "Titan's air: about 95% nitrogen, the rest argon, methane, ethane and other hydrogen compounds; 93 K and 50% more pressure than Earth. Flow: ices give off methane and ammonia, UV splits them, hydrogen escapes, ammonia gives nitrogen and methane gives ethane."
+    },
+    {
+     "src": "img/moons/gen_titan_conditions.webp",
+     "slide": "none (original diagram)",
+     "alt": "Standing on Titan: a thermometer near the bottom reading about 93 K (-180 degrees C), and a bar chart showing Titan's surface pressure about 50% higher than Earth's sea-level pressure, with no oxygen."
+    }
+   ]
+  },
+  {
+   "id": "titansurface",
+   "title": "Titan's surface: rain, rivers and lakes of methane",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 336-337)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_huygens.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three panels of the Huygens probe's 2005 findings on Titan: river valleys merging toward an old shoreline seen during descent; a hard crust over a softer damp layer at landing; and rounded ice boulders 10 to 20 cm across."
+     },
+     "title": "Huygens lands on Titan",
+     "bullets": [
+      "In 2005 NASA's **Cassini** spacecraft released ESA's **Huygens** probe, which parachuted to Titan's surface.",
+      "On the way down it photographed **river valleys** merging and flowing to what looks like an old **shoreline**.",
+      "At landing it found a **hard crust** that was a bit **squishy below**, and photographed **rounded 'ice boulders'**: signs of a wet climate, wet with **liquid methane**, not water."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_titan_regions.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels. Titan's equator: icy hills, dark valleys of smog particles, plains of dunes, like a desert with dry lakes. Titan's poles: many lakes of liquid methane or ethane, storm clouds and riverbeds, more lakes in the north."
+     },
+     "title": "Desert-like equator",
+     "bullets": [
+      "Bright **icy hills** may come from **ice volcanoes**. Dark valleys likely formed where **methane rain** carried 'smog particles' to river bottoms.",
+      "The vast low plains are **not liquid**: they are probably smog particles shaped into **dune fields** by Titan's winds.",
+      "Titan's equator resembles the **desert southwest of the United States**, where rare rain carves valleys and leaves dry lakes (**playas**)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_titan_cycle.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of Titan's methane cycle: a storm cloud rains methane onto hills, a river channel carries the liquid down to a dark lake of methane and ethane, and evaporation lifts it back into the sky."
+     },
+     "title": "Polar lakes and a methane cycle",
+     "bullets": [
+      "Cassini **radar** found many **lakes of liquid methane or ethane** near the poles, plus storm clouds and riverbeds leading into them.",
+      "So Titan has a **methane/ethane cycle** resembling Earth's **water cycle**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_titan_seasons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Saturn, carrying Titan, on an exaggerated elliptical orbit around the Sun with a 27 degree tilt. Northern summer happens nearer the Sun, so it is more intense, which may explain stronger storms and more lakes in the north."
+     },
+     "title": "Seasons on Titan",
+     "bullets": [
+      "Titan shares **Saturn's 27° tilt**, so it has long seasons over Saturn's **29.5-year** orbit.",
+      "In each pole's long summer, warm air rises and brings **methane rainstorms**.",
+      "**Northern summers seem wetter** (most lakes are in the north), perhaps because Saturn's elliptical orbit brings it closer to the Sun then."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_titan_vs_earth.webp",
+      "slide": "none (original diagram)",
+      "alt": "Table comparing Earth and Titan. Liquid that rains and flows: water versus methane and ethane. Bedrock: rock versus water ice. Lava: molten rock versus water-ammonia slush. Dirt: soil versus smog-like particles that fall from the sky."
+     },
+     "title": "Familiar shapes, alien stuff",
+     "bullets": [
+      "Instead of water, Titan has liquid **methane and ethane**. Instead of rock, **ice**. Instead of lava, a **slush of water ice and ammonia**. Instead of dirt, **smog-like particles** that rain out of the sky.",
+      "The **same physical processes** as on Earth matter more for the landscape than the very different materials and temperatures."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Rain, rivers, wind and seasons shape land the same way whatever the liquid is. That is why Titan looks so much like Earth."
+    },
+    {
+     "type": "trick",
+     "text": "Titan's swap list: water -> methane, rock -> ice, lava -> ammonia-water slush, dirt -> smog."
+    },
+    {
+     "type": "trap",
+     "text": "Titan's lakes are liquid methane or ethane, NOT water: it is far too cold for liquid water on the surface (p. 336). The big equatorial plains are dunes, not seas."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, pp. 336-337 and Figures 11.25-11.26"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_huygens.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three panels of the Huygens probe's 2005 findings on Titan: river valleys merging toward an old shoreline seen during descent; a hard crust over a softer damp layer at landing; and rounded ice boulders 10 to 20 cm across."
+    },
+    {
+     "src": "img/moons/gen_titan_regions.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels. Titan's equator: icy hills, dark valleys of smog particles, plains of dunes, like a desert with dry lakes. Titan's poles: many lakes of liquid methane or ethane, storm clouds and riverbeds, more lakes in the north."
+    },
+    {
+     "src": "img/moons/gen_titan_cycle.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of Titan's methane cycle: a storm cloud rains methane onto hills, a river channel carries the liquid down to a dark lake of methane and ethane, and evaporation lifts it back into the sky."
+    },
+    {
+     "src": "img/moons/gen_titan_seasons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Saturn, carrying Titan, on an exaggerated elliptical orbit around the Sun with a 27 degree tilt. Northern summer happens nearer the Sun, so it is more intense, which may explain stronger storms and more lakes in the north."
+    },
+    {
+     "src": "img/moons/gen_titan_vs_earth.webp",
+     "slide": "none (original diagram)",
+     "alt": "Table comparing Earth and Titan. Liquid that rains and flows: water versus methane and ethane. Bedrock: rock versus water ice. Lava: molten rock versus water-ammonia slush. Dirt: soil versus smog-like particles that fall from the sky."
+    }
+   ]
+  },
+  {
+   "id": "titanlife",
+   "title": "Could Titan host life?",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 337)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_titan_life.webp",
+      "slide": "none (original diagram)",
+      "alt": "For and against life on Titan's surface. For: many carbon compounds and Earth-like geology. Against: very low temperatures and liquid methane and ethane that seem less suited to life than water. A better bet may be the water ocean below."
+     },
+     "title": "Life on the surface?",
+     "bullets": [
+      "Titan's many **carbon compounds** (the chemicals that are the basis of life) and Earth-like geology make scientists wonder.",
+      "Most scientists think surface life is **unlikely**: it is **very cold**, and liquid methane and ethane seem **less suited** to biology than liquid water."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_titan_interior.webp",
+      "slide": "none (original diagram)",
+      "alt": "Side-by-side layer columns: Europa has an icy crust over a liquid water ocean sitting on a rocky layer; Titan has an icy crust over a liquid water ocean sitting on high-density ice. Titan's ocean is inferred from changes in its gravity and shape."
+     },
+     "title": "A hidden water ocean",
+     "bullets": [
+      "Cassini saw small changes in Titan's **gravity and shape** as it orbits Saturn, suggesting a **subsurface ocean of liquid water**, like Europa's.",
+      "Models suggest Titan's ocean floor touches a layer of **high-density ice**, not rock as at Europa. Whether that affects habitability is **unknown**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_dragonfly.webp",
+      "slide": "none (original diagram)",
+      "alt": "A simple drawing of a drone with paired rotors hovering over dunes: NASA's Dragonfly, a dual quadcopter planned to launch as soon as 2027 and land on Titan in 2036."
+     },
+     "title": "Dragonfly",
+     "bullets": [
+      "NASA's **Dragonfly** mission will send a 'dual quadcopter' drone to explore Titan on the ground and from the air.",
+      "If all goes as planned it may launch as soon as **2027** and land in **2036**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Liquid water is the solvent life on Earth depends on. Titan's surface liquids are methane and ethane, so the best bet for life may be the water ocean underneath."
+    },
+    {
+     "type": "trick",
+     "text": "Titan's ocean floor is ICE; Europa's ocean floor is ROCK."
+    },
+    {
+     "type": "trap",
+     "text": "Titan's subsurface ocean is liquid WATER; its surface lakes are methane and ethane (p. 337). Do not mix them up."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 337 and Figure 11.27 (artist's concept, not used)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_titan_life.webp",
+     "slide": "none (original diagram)",
+     "alt": "For and against life on Titan's surface. For: many carbon compounds and Earth-like geology. Against: very low temperatures and liquid methane and ethane that seem less suited to life than water. A better bet may be the water ocean below."
+    },
+    {
+     "src": "img/moons/gen_titan_interior.webp",
+     "slide": "none (original diagram)",
+     "alt": "Side-by-side layer columns: Europa has an icy crust over a liquid water ocean sitting on a rocky layer; Titan has an icy crust over a liquid water ocean sitting on high-density ice. Titan's ocean is inferred from changes in its gravity and shape."
+    },
+    {
+     "src": "img/moons/gen_dragonfly.webp",
+     "slide": "none (original diagram)",
+     "alt": "A simple drawing of a drone with paired rotors hovering over dunes: NASA's Dragonfly, a dual quadcopter planned to launch as soon as 2027 and land on Titan in 2036."
+    }
+   ]
+  },
+  {
+   "id": "saturnmoons",
+   "title": "Saturn's medium-size moons",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 338)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_saturn_mid.webp",
+      "slide": "none (original diagram)",
+      "alt": "Saturn's six medium-size moons drawn to scale with diameters: Mimas 398 km, Enceladus 498 km, Tethys 1060 km, Dione 1118 km, Rhea 1528 km and two-toned Iapetus 1436 km. Only Enceladus is active today; Mimas shows little sign of activity."
+     },
+     "title": "Six medium-size moons",
+     "bullets": [
+      "Cassini also visited Saturn's six medium-size moons: **Mimas** (398 km), **Enceladus** (498 km), **Tethys** (1060 km), **Dione** (1118 km), **Rhea** (1528 km) and **Iapetus** (1436 km).",
+      "Each shows a complex geological history; **Enceladus is still active today**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_mimas.webp",
+      "slide": "none (original diagram)",
+      "alt": "Mimas, a grey cratered ball with one enormous crater, Herschel, nicknamed Darth Crater. Notes: heavily cratered; the impact nearly broke Mimas apart; little evidence of volcanism or tectonics."
+     },
+     "title": "Mimas: the quiet one",
+     "bullets": [
+      "**Mimas**, the smallest, shows little evidence of past volcanism or tectonics.",
+      "It is **heavily cratered**, with one huge crater, **Herschel**, nicknamed 'Darth Crater' for its resemblance to the Death Star. The impact nearly broke Mimas apart."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_crater_clock.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three squares of surface: a fresh surface with almost no craters, one resurfaced long ago with some craters, and an ancient one packed with craters. Saturn's medium-size moons' crater counts show their activity ended billions of years ago, except Enceladus."
+     },
+     "title": "Activity that ended long ago",
+     "bullets": [
+      "The other medium-size moons show volcanism and/or tectonics after the end of the **heavy bombardment**.",
+      "**Crater counts** show that activity ended **billions of years ago** for all except Enceladus.",
+      "Smooth regions probably mark places where **icy lava** flowed. Some bright streaks, such as on **Dione**, are huge sets of parallel **tectonic cliffs**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_iapetus.webp",
+      "slide": "none (original diagram)",
+      "alt": "Iapetus, half bright and half dark, with an orange equatorial ridge over 10 km high spanning nearly half the moon. Far out, dark Phoebe orbits backward; dust knocked off it forms a ring and spirals inward to coat Iapetus."
+     },
+     "title": "Iapetus: ridge and dust",
+     "bullets": [
+      "**Iapetus** has an astonishing **ridge more than 10 km high**, running along its **equator** for nearly half its circumference. Its origin is unknown, probably tectonic.",
+      "Much of Iapetus is coated in **dark dust** from **Phoebe**, a dark moon in a distant, **backward** orbit. Small impacts easily knock dust off low-gravity Phoebe; it forms a ring and spirals inward to Iapetus."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Crater counts are a clock: the fewer craters a surface has, the more recently it was resurfaced."
+    },
+    {
+     "type": "trick",
+     "text": "Saturn's six, smallest to largest: 'My Excellent Teacher Drew Interesting Rings' = Mimas, Enceladus, Tethys, Dione, Iapetus, Rhea."
+    },
+    {
+     "type": "trap",
+     "text": "Enceladus is SMALLER than Tethys, Dione, Rhea and Iapetus, yet it is the only one active today (p. 338). Iapetus's dark coating comes from Phoebe's dust, not from its own volcanoes."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 338 and Figures 11.28-11.29"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_saturn_mid.webp",
+     "slide": "none (original diagram)",
+     "alt": "Saturn's six medium-size moons drawn to scale with diameters: Mimas 398 km, Enceladus 498 km, Tethys 1060 km, Dione 1118 km, Rhea 1528 km and two-toned Iapetus 1436 km. Only Enceladus is active today; Mimas shows little sign of activity."
+    },
+    {
+     "src": "img/moons/gen_mimas.webp",
+     "slide": "none (original diagram)",
+     "alt": "Mimas, a grey cratered ball with one enormous crater, Herschel, nicknamed Darth Crater. Notes: heavily cratered; the impact nearly broke Mimas apart; little evidence of volcanism or tectonics."
+    },
+    {
+     "src": "img/moons/gen_crater_clock.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three squares of surface: a fresh surface with almost no craters, one resurfaced long ago with some craters, and an ancient one packed with craters. Saturn's medium-size moons' crater counts show their activity ended billions of years ago, except Enceladus."
+    },
+    {
+     "src": "img/moons/gen_iapetus.webp",
+     "slide": "none (original diagram)",
+     "alt": "Iapetus, half bright and half dark, with an orange equatorial ridge over 10 km high spanning nearly half the moon. Far out, dark Phoebe orbits backward; dust knocked off it forms a ring and spirals inward to coat Iapetus."
+    }
+   ]
+  },
+  {
+   "id": "enceladus",
+   "title": "Enceladus: fountains from a tiny moon",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 338-339)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_enceladus.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation, cut-away of Enceladus: an icy crust over a global ocean of water or ammonia-water around a rocky core. Ice fountains of water vapour and ice, some with salt and rock dust, spray out from cracks near the south pole."
+     },
+     "title": "A big surprise",
+     "bullets": [
+      "**Enceladus** is only about **500 km** across, small enough to fit inside Colorado, so any geological activity might be expected to have ended long ago.",
+      "Instead its surface has **very few craters**, some regions **none at all**, so recent activity has erased them.",
+      "Grooves near its **south pole** ('tiger stripes') are **warmer** than the land around them, and Cassini saw them venting huge clouds of **water vapour and ice crystals**, some with **salt and rock dust**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_wobble.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a cut-away of Enceladus with an icy shell, ocean and rocky core. A red mark on the shell rocks back and forth while a black mark on the core stays still, showing the shell moves separately because liquid lies between."
+     },
+     "title": "An ocean inside",
+     "bullets": [
+      "Salt in the spray and signs of **icy volcanism** pointed to liquid water below.",
+      "Enceladus **wobbles** as it orbits Saturn, by an amount showing that the **ice shell moves separately** from the rocky core.",
+      "Models say a **global ocean** (water, or a colder ammonia-water mix) lies **30 to 40 km** down and may be up to **30 km deep**.",
+      "A future mission could search for life just by **flying through the spray**, without landing."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_enceladus_facts.webp",
+      "slide": "none (original diagram)",
+      "alt": "Enceladus, about 500 km across: few craters, warm tiger-stripe grooves, fountains, and a wobble showing an ocean 30 to 40 km down. Heat: some tidal heating from a resonance with Dione, perhaps extra radioactive heat, and ammonia antifreeze."
+     },
+     "title": "What keeps it warm?",
+     "bullets": [
+      "Scientists do not yet know the full answer.",
+      "Enceladus has some **tidal heating** from an **orbital resonance with Dione**, but this alone is not enough.",
+      "Extra **radioactive material** may add heat and soften the interior, boosting tidal heating. **Ammonia** may act as **antifreeze**, keeping the ocean liquid at lower temperatures."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A wobble tells you the inside is not all one solid piece: if the shell can slip over the core, there must be liquid between them."
+    },
+    {
+     "type": "trick",
+     "text": "Enceladus = 'Enchanted fountains' from the south pole."
+    },
+    {
+     "type": "trap",
+     "text": "The fountains come from near the SOUTH pole (p. 338). Tidal heating from Dione is not enough by itself; radioactive heat and ammonia antifreeze are proposed helpers (p. 339)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, pp. 338-339 and Figures 11.30-11.31"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_enceladus.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation, cut-away of Enceladus: an icy crust over a global ocean of water or ammonia-water around a rocky core. Ice fountains of water vapour and ice, some with salt and rock dust, spray out from cracks near the south pole."
+    },
+    {
+     "src": "img/moons/gen_wobble.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a cut-away of Enceladus with an icy shell, ocean and rocky core. A red mark on the shell rocks back and forth while a black mark on the core stays still, showing the shell moves separately because liquid lies between."
+    },
+    {
+     "src": "img/moons/gen_enceladus_facts.webp",
+     "slide": "none (original diagram)",
+     "alt": "Enceladus, about 500 km across: few craters, warm tiger-stripe grooves, fountains, and a wobble showing an ocean 30 to 40 km down. Heat: some tidal heating from a resonance with Dione, perhaps extra radioactive heat, and ammonia antifreeze."
+    }
+   ]
+  },
+  {
+   "id": "uranus",
+   "title": "The medium-size moons of Uranus",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, pp. 339-340)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_uranus_five.webp",
+      "slide": "none (original diagram)",
+      "alt": "Uranus with its five medium-size moons in order outward: Miranda, Ariel, Umbriel, Titania and Oberon (sizes not to scale). They are mostly ice with much ammonia and methane, seen up close only by Voyager 2 in 1986."
+     },
+     "title": "Five icy moons",
+     "bullets": [
+      "Uranus has **no large moons** but five medium-size ones: **Miranda, Ariel, Umbriel, Titania and Oberon**.",
+      "They are mostly **ice**, and so far from the Sun that the ice includes lots of **ammonia and methane** as well as water.",
+      "Our only close look came from the **Voyager 2 flyby in 1986**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_uranus_moons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Uranus's medium-size moons as two twin pairs: Ariel shows volcanism and tectonics while same-size Umbriel is heavily cratered; Titania was much more active than Oberon. Miranda is the fifth. No one knows why the twins differ."
+     },
+     "title": "Twins that differ",
+     "bullets": [
+      "**Ariel** and **Umbriel** are almost the same size, but Ariel shows volcanism and tectonics while Umbriel is heavily cratered and inactive.",
+      "**Titania** and **Oberon** are also twins in size, but Titania was much more active.",
+      "No one knows why these pairs differ so much."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_miranda_mimas.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two similar-size icy moons. Mimas of Saturn: a cratered iceball never tidally heated. Miranda of Uranus: huge tectonic grooves and cliffs taller than the Grand Canyon, perhaps from tidal heating in a temporary resonance."
+     },
+     "title": "Miranda's surprise",
+     "bullets": [
+      "**Miranda**, the smallest, might be expected to be a cratered iceball like Saturn's similar-size **Mimas**.",
+      "Instead it has **tremendous tectonic features** and relatively few craters; some cliffs are **taller than the Grand Canyon's walls**.",
+      "Best guess: Miranda had an episode of **tidal heating** billions of years ago, perhaps in a **temporary orbital resonance**. Mimas apparently never did."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Two moons of the same size should cool at the same rate, so a big difference in activity points to an extra heat source, such as a past episode of tidal heating."
+    },
+    {
+     "type": "trick",
+     "text": "Uranus moons, inner to outer: 'My Awesome Uncle Takes Out' = Miranda, Ariel, Umbriel, Titania, Oberon."
+    },
+    {
+     "type": "trap",
+     "text": "Miranda is the SMALLEST of the five yet shows the most dramatic tectonics (p. 339). Uranus's moons are medium-size; Uranus has no large moons."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, pp. 339-340 and Figure 11.32",
+    "Inner-to-outer order taken from Figure 11.14 (moons shown in order of distance)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_uranus_five.webp",
+     "slide": "none (original diagram)",
+     "alt": "Uranus with its five medium-size moons in order outward: Miranda, Ariel, Umbriel, Titania and Oberon (sizes not to scale). They are mostly ice with much ammonia and methane, seen up close only by Voyager 2 in 1986."
+    },
+    {
+     "src": "img/moons/gen_uranus_moons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Uranus's medium-size moons as two twin pairs: Ariel shows volcanism and tectonics while same-size Umbriel is heavily cratered; Titania was much more active than Oberon. Miranda is the fifth. No one knows why the twins differ."
+    },
+    {
+     "src": "img/moons/gen_miranda_mimas.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two similar-size icy moons. Mimas of Saturn: a cratered iceball never tidally heated. Miranda of Uranus: huge tectonic grooves and cliffs taller than the Grand Canyon, perhaps from tidal heating in a temporary resonance."
+    }
+   ]
+  },
+  {
+   "id": "triton",
+   "title": "Neptune's Triton: a captured moon",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 340)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_neptune_moons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Neptune with its two moons known before Voyager 2: Triton, its only large moon, and small Nereid, its only medium-size moon. Note: Triton is colder than Pluto because it reflects more sunlight."
+     },
+     "title": "Neptune's moons",
+     "bullets": [
+      "Neptune is so far away that only **Triton** and **Nereid** were known before **Voyager 2** arrived.",
+      "Nereid is Neptune's only **medium-size** moon and Triton its only **large** one.",
+      "Triton is one of the **coldest** worlds in the solar system, even colder than Pluto, because it **reflects more** of the weak sunlight."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_triton_orbit.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Neptune spins one way while Triton circles it the opposite way on an orbit steeply tilted to Neptune's equator. A note says such an orbit means Triton was almost certainly captured from the Kuiper belt."
+     },
+     "title": "Going the wrong way",
+     "bullets": [
+      "Triton orbits Neptune **backward** (opposite to Neptune's rotation) and at a **high tilt** to Neptune's equator.",
+      "That makes it almost certain Triton once orbited the Sun on its own in the **Kuiper belt** and was **captured**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_triton_capture.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a pair of Kuiper belt objects circling each other passes close to Neptune. Triton loses energy and is captured into orbit, while its companion gains energy and is flung away at high speed."
+     },
+     "title": "How to capture a big moon",
+     "bullets": [
+      "Capturing something so large is hard. One model: Triton was half of a **binary Kuiper belt object** that passed very close to Neptune.",
+      "Triton **lost energy** and was captured, while its companion **gained energy** and was flung away at high speed."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_triton_surface.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards about Triton: icy volcanism filling basins like the lunar maria with water or slush; wrinkly cantaloupe terrain from rising and sinking ice blobs; wind streaks from a thin atmosphere; and colder than Pluto because it reflects more sunlight."
+     },
+     "title": "A young-looking surface",
+     "bullets": [
+      "Triton is **smaller than our Moon** yet shows signs of fairly recent geological activity.",
+      "Some regions show past **icy volcanism**, like lunar maria filled with water or slush instead of molten rock.",
+      "Wrinkly '**cantaloupe terrain**' seems tectonic: blobs of ice of different density rose and sank, contorting the crust. A very thin **atmosphere** has left **wind streaks**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_triton_heat.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three stages: just after capture Triton has a very elliptical orbit and fast spin; tides make the orbit circular and the spin synchronous, heating the interior; today the orbit is circular and activity is subsiding."
+     },
+     "title": "Heated by its capture",
+     "bullets": [
+      "Best guess: **tidal heating**. Just after capture Triton probably had a **very elliptical orbit** and a **faster spin**.",
+      "Tides made its orbit **circular** and its rotation **synchronous**, heating its interior along the way. That also explains why its activity has **died down** over time."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Moons that form in a planet's disk orbit the same way the planet spins. A big moon going backward on a tilted orbit cannot have formed there, so it must have come from elsewhere."
+    },
+    {
+     "type": "trick",
+     "text": "Triton = Turned-around (backward orbit), Trapped (captured), Tidally heated."
+    },
+    {
+     "type": "trap",
+     "text": "Triton is a LARGE moon that orbits backward; backward orbits are usually a small-moon trait (pp. 331, 340). Its cold comes from high reflectivity, not just distance: it is colder than Pluto."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 340 and Figure 11.33"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_neptune_moons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Neptune with its two moons known before Voyager 2: Triton, its only large moon, and small Nereid, its only medium-size moon. Note: Triton is colder than Pluto because it reflects more sunlight."
+    },
+    {
+     "src": "img/moons/gen_triton_orbit.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Neptune spins one way while Triton circles it the opposite way on an orbit steeply tilted to Neptune's equator. A note says such an orbit means Triton was almost certainly captured from the Kuiper belt."
+    },
+    {
+     "src": "img/moons/gen_triton_capture.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a pair of Kuiper belt objects circling each other passes close to Neptune. Triton loses energy and is captured into orbit, while its companion gains energy and is flung away at high speed."
+    },
+    {
+     "src": "img/moons/gen_triton_surface.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards about Triton: icy volcanism filling basins like the lunar maria with water or slush; wrinkly cantaloupe terrain from rising and sinking ice blobs; wind streaks from a thin atmosphere; and colder than Pluto because it reflects more sunlight."
+    },
+    {
+     "src": "img/moons/gen_triton_heat.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three stages: just after capture Triton has a very elliptical orbit and fast spin; tides make the orbit circular and the spin synchronous, heating the interior; today the orbit is circular and activity is subsiding."
+    }
+   ]
+  },
+  {
+   "id": "icegeology",
+   "title": "Why small icy moons are more active than small rocky planets",
+   "slides": "none (Cosmic Perspective 10e, section 11.2, p. 340)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/moons/gen_ice_vs_rock.webp",
+      "slide": "none (original diagram)",
+      "alt": "Comparison. Terrestrial worlds: heat mostly from radioactive decay; only large planets stay active; rock must be very hot to flow. Jovian moons: tidal heating, ices that melt and deform at far lower temperatures, ice volcanism; Ganymede active though Mercury-sized."
+     },
+     "title": "A size puzzle",
+     "bullets": [
+      "Many jovian moons stayed geologically active **far longer** than **Mercury** or **our Moon**, even though they are no bigger and often much smaller.",
+      "Two key differences explain it: **icy compositions** and **tidal heating**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_melt_scale.webp",
+      "slide": "none (original diagram)",
+      "alt": "A colour bar from cold to hot. An arrow near the cold end says ice can flow and melt there; an arrow near the hot end says rock needs to be that hot. A small icy moon can cool a lot and still have moving ice."
+     },
+     "title": "Ice moves at low temperatures",
+     "bullets": [
+      "Because they formed far from the Sun, most jovian moons contain **ices that melt or deform at far lower temperatures than rock**.",
+      "So they can stay active even when their interiors have cooled far below what a rocky world would need.",
+      "Except on Io, most outer solar system volcanism is probably **ice volcanism**, with 'lava' made mainly of **water**, perhaps mixed with methane and ammonia."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/moons/gen_size_heat.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four worlds: Mercury (rocky, geologically dead), Mars (rocky, probably some heat left), Earth (rocky, very active) and, past a dashed line, Ganymede (icy, recent activity despite being about Mercury's size)."
+     },
+     "title": "Plus tidal heating",
+     "bullets": [
+      "**Tidal heating** can cause tremendous activity on moons in **elliptical orbits** around **massive planets**, a heat source that is **not important** for the terrestrial worlds.",
+      "Terrestrial worlds rely mostly on **radioactive decay**, so only large ones stay active: **Mars** probably keeps some internal heat; if it were as small as Mercury it would be 'dead'.",
+      "**Ganymede** shows recent activity even though it is about **Mercury's size**.",
+      "Big lesson: 'ice geology' works at far lower temperatures than 'rock geology'."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Geology needs material soft enough to move. Ice reaches that point at much lower temperatures than rock, so a cold icy moon can still be geologically alive."
+    },
+    {
+     "type": "trick",
+     "text": "Two 'T's for icy moons: low melting Temperature of ice, and Tidal heating."
+    },
+    {
+     "type": "trap",
+     "text": "Icy moons are not more active because they are bigger or hotter: they are often SMALLER and COLDER than rocky worlds, but ice flows at low temperatures (p. 340). Tidal heating is not important for terrestrial planets (Figure 11.34)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 10e, section 11.2, p. 340 and Figure 11.34 (redrawn as an original comparison)"
+   ],
+   "images": [
+    {
+     "src": "img/moons/gen_ice_vs_rock.webp",
+     "slide": "none (original diagram)",
+     "alt": "Comparison. Terrestrial worlds: heat mostly from radioactive decay; only large planets stay active; rock must be very hot to flow. Jovian moons: tidal heating, ices that melt and deform at far lower temperatures, ice volcanism; Ganymede active though Mercury-sized."
+    },
+    {
+     "src": "img/moons/gen_melt_scale.webp",
+     "slide": "none (original diagram)",
+     "alt": "A colour bar from cold to hot. An arrow near the cold end says ice can flow and melt there; an arrow near the hot end says rock needs to be that hot. A small icy moon can cool a lot and still have moving ice."
+    },
+    {
+     "src": "img/moons/gen_size_heat.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four worlds: Mercury (rocky, geologically dead), Mars (rocky, probably some heat left), Earth (rocky, very active) and, past a dashed line, Ganymede (icy, recent activity despite being about Mercury's size)."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Notable moons at a glance",
+  "head": [
+   "Moon (planet)",
+   "Size group",
+   "Key facts",
+   "Heat source"
+  ],
+  "rows": [
+   [
+    "Io (Jupiter)",
+    "Large",
+    "Most volcanic world; no craters; sulfur and SO2",
+    "Strong tidal heating"
+   ],
+   [
+    "Europa (Jupiter)",
+    "Large",
+    "Icy crust, few craters; probable global salty ocean",
+    "Tidal heating (weaker)"
+   ],
+   [
+    "Ganymede (Jupiter)",
+    "Large",
+    "Largest moon; old and young terrain; buried ocean?",
+    "Weak tides + radioactive heat"
+   ],
+   [
+    "Callisto (Jupiter)",
+    "Large",
+    "Cratered, undifferentiated; maybe an ocean",
+    "No tidal heating"
+   ],
+   [
+    "Titan (Saturn)",
+    "Large",
+    "Thick nitrogen air; methane rain, rivers, lakes",
+    "Water ocean below"
+   ],
+   [
+    "Enceladus (Saturn)",
+    "Medium-size",
+    "About 500 km; south-pole fountains; global ocean",
+    "Some tides (Dione) + more"
+   ],
+   [
+    "Miranda (Uranus)",
+    "Medium-size",
+    "Huge cliffs and tectonics, few craters",
+    "Past tidal heating?"
+   ],
+   [
+    "Triton (Neptune)",
+    "Large",
+    "Backward orbit; captured; icy volcanism",
+    "Tidal heating after capture"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "moon-c1",
+   "front": "Small moon",
+   "back": "A moon less than about 300 km across. Usually irregular in shape, often a captured asteroid or comet, and too small for significant geology.",
+   "short": "Under about 300 km",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 330"
+  },
+  {
+   "id": "moon-c2",
+   "front": "Medium-size moon",
+   "back": "A moon about 300 to 1500 km across. Round, icy, and often with signs of past or present geological activity.",
+   "short": "About 300 to 1500 km",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 330"
+  },
+  {
+   "id": "moon-c3",
+   "front": "Large moon",
+   "back": "A moon more than about 1500 km across, such as Ganymede, Titan, Callisto, Io, Europa or Triton.",
+   "short": "Over about 1500 km",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 330"
+  },
+  {
+   "id": "moon-c4",
+   "front": "How many moons orbit the jovian planets?",
+   "gloss": false,
+   "back": "More than 200 known; Jupiter has 79 and Saturn 82 (as of 2022).",
+   "short": "200+; Jupiter 79, Saturn 82",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 330"
+  },
+  {
+   "id": "moon-c5",
+   "front": "Which moons are larger than Mercury?",
+   "gloss": false,
+   "back": "Ganymede (Jupiter) and Titan (Saturn).",
+   "short": "Ganymede and Titan",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 330"
+  },
+  {
+   "id": "moon-c6",
+   "front": "Why do large moons orbit in tidy, circular, equatorial orbits?",
+   "gloss": false,
+   "back": "They formed by accretion in the disk of gas around their young planet, so they orbit near its equator, in circles, and in the direction it rotates.",
+   "short": "Formed in the planet's disk",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 330"
+  },
+  {
+   "id": "moon-c7",
+   "front": "Synchronous rotation",
+   "back": "A moon's rotation period equals its orbital period, so it always shows the same face to its planet. Caused by tidal forces.",
+   "short": "Same face always toward planet",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 331"
+  },
+  {
+   "id": "moon-c8",
+   "front": "Why are small moons irregular in shape?",
+   "gloss": false,
+   "back": "Their gravity is too weak to pull their rigid material into a sphere.",
+   "short": "Gravity too weak",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 331"
+  },
+  {
+   "id": "moon-c9",
+   "front": "Where did most small moons come from?",
+   "gloss": false,
+   "back": "They are probably captured asteroids or comets, which is why their orbits have no pattern and many go backward.",
+   "short": "Captured asteroids and comets",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 331"
+  },
+  {
+   "id": "moon-c10",
+   "front": "Galilean moons",
+   "back": "Jupiter's four large moons discovered by Galileo: Io, Europa, Ganymede and Callisto, in order outward.",
+   "short": "Io, Europa, Ganymede, Callisto",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 331"
+  },
+  {
+   "id": "moon-c11",
+   "front": "Io",
+   "back": "Jupiter's innermost Galilean moon: the most volcanically active world in the solar system, with no impact craters.",
+   "short": "Volcano world",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 331"
+  },
+  {
+   "id": "moon-c12",
+   "front": "What gives Io its colours?",
+   "gloss": false,
+   "back": "Sulfur from volcanic gas makes red and orange; sulfur dioxide makes white frost.",
+   "short": "Sulfur and SO2 frost",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 331"
+  },
+  {
+   "id": "moon-c13",
+   "front": "Why can Io's plumes rise hundreds of kilometres?",
+   "gloss": false,
+   "back": "Io's low gravity and thin atmosphere let the vaporized sulfur dioxide rise very high.",
+   "short": "Low gravity, thin air",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 331"
+  },
+  {
+   "id": "moon-c14",
+   "front": "Where does gas from Io's volcanoes go?",
+   "gloss": false,
+   "back": "Some escapes to feed the Io torus and Jupiter's magnetosphere, some forms a thin atmosphere, and much falls back as frost.",
+   "short": "Torus, thin air, frost",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 331"
+  },
+  {
+   "id": "moon-c15",
+   "front": "Tidal heating",
+   "back": "Heating of a moon's interior by friction as changing tidal forces flex it, as happens to Io on its elliptical orbit around Jupiter.",
+   "short": "Flexing by changing tides makes heat",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 332"
+  },
+  {
+   "id": "moon-c16",
+   "front": "Why must Io be heated by something other than its birth heat?",
+   "gloss": false,
+   "back": "It is only about the size of our dead Moon, so it should have lost its birth heat, and it is too small for much radioactive heat.",
+   "short": "Too small to stay hot alone",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 332"
+  },
+  {
+   "id": "moon-c17",
+   "front": "How strong is Io's tidal heating?",
+   "gloss": false,
+   "back": "More than 200 times as much heat per gram as the radioactive heat that drives much of Earth's geology.",
+   "short": "Over 200x Earth's per gram",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 332"
+  },
+  {
+   "id": "moon-c18",
+   "front": "Where does the energy for Io's tidal heating come from?",
+   "gloss": false,
+   "back": "Ultimately from Jupiter's rotation, which is slowing very slightly.",
+   "short": "Jupiter's rotation",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 332"
+  },
+  {
+   "id": "moon-c19",
+   "front": "Orbital resonance",
+   "back": "A simple mathematical relationship between the orbital periods of two or more objects, so that the same gravitational tugs repeat and add up.",
+   "short": "Repeating tugs from period ratios",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 332"
+  },
+  {
+   "id": "moon-c20",
+   "front": "The Galilean resonance",
+   "back": "In about 7 days Io orbits 4 times, Europa 2 times and Ganymede once (4 : 2 : 1).",
+   "short": "Io 4, Europa 2, Ganymede 1",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 332"
+  },
+  {
+   "id": "moon-c21",
+   "front": "Why is Io's orbit slightly elliptical?",
+   "gloss": false,
+   "back": "Its orbital resonance with Europa and Ganymede: their repeated line-ups pull the same way each time and stretch the orbits.",
+   "short": "Resonance with Europa and Ganymede",
+   "src": "Cosmic Perspective 10e, section 11.2, pp. 332-333"
+  },
+  {
+   "id": "moon-c22",
+   "front": "Europa",
+   "back": "Icy Galilean moon with few craters and double-ridged cracks; strong evidence for a global salty ocean under its ice.",
+   "short": "Ice over a hidden ocean",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 333"
+  },
+  {
+   "id": "moon-c23",
+   "front": "What evidence favours liquid water (not warm ice) on Europa?",
+   "gloss": false,
+   "back": "Its magnetic field changes as Jupiter rotates, as if induced in a conducting liquid layer: a salty ocean fits, convecting ice does not.",
+   "short": "Induced magnetic field",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 333"
+  },
+  {
+   "id": "moon-c24",
+   "front": "Europa's interior model",
+   "back": "Metallic core, rocky mantle and about 100 km of water, with the top 5 to 25 km frozen as an icy crust.",
+   "short": "Core, rock, 100 km of water",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 333"
+  },
+  {
+   "id": "moon-c25",
+   "front": "How much water might Europa's ocean hold?",
+   "gloss": false,
+   "back": "More than twice as much liquid water as all of Earth's oceans combined.",
+   "short": "More than 2x Earth's oceans",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 334"
+  },
+  {
+   "id": "moon-c26",
+   "front": "Ganymede",
+   "back": "The largest moon in the solar system: icy, with old dark cratered terrain and young light grooved terrain, and probably a deep ocean.",
+   "short": "Largest moon; two terrains",
+   "src": "Cosmic Perspective 10e, section 11.2, pp. 334-335"
+  },
+  {
+   "id": "moon-c27",
+   "front": "How deep is Ganymede's suspected ocean?",
+   "gloss": false,
+   "back": "About 150 km beneath the surface, and perhaps 100 km deep.",
+   "short": "~150 km down, ~100 km deep",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 335"
+  },
+  {
+   "id": "moon-c28",
+   "front": "Callisto",
+   "back": "The outermost Galilean moon: a heavily cratered iceball, not differentiated, with no tidal heating, though it may still have an ocean.",
+   "short": "Cratered, undifferentiated",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 335"
+  },
+  {
+   "id": "moon-c29",
+   "front": "Why does Callisto lack tidal heating?",
+   "gloss": false,
+   "back": "It does not take part in the orbital resonance of the other three Galilean moons.",
+   "short": "Not in the resonance",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 335"
+  },
+  {
+   "id": "moon-c30",
+   "front": "Titan",
+   "back": "Saturn's largest moon and the second-largest moon overall; the only moon with a thick atmosphere, and home to methane rain, rivers and lakes.",
+   "short": "Moon with thick air",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 335"
+  },
+  {
+   "id": "moon-c31",
+   "front": "Titan's atmosphere",
+   "back": "About 95% nitrogen, with argon, methane, ethane and other hydrogen compounds; surface pressure about 1.5 times Earth's; about 93 K.",
+   "short": "95% N2, methane, cold",
+   "src": "Cosmic Perspective 10e, section 11.2, pp. 335-336"
+  },
+  {
+   "id": "moon-c32",
+   "front": "What are Titan's lakes made of?",
+   "gloss": false,
+   "back": "Liquid methane or ethane, mainly near the poles.",
+   "short": "Methane and ethane",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 336"
+  },
+  {
+   "id": "moon-c33",
+   "front": "Huygens probe",
+   "back": "ESA probe released by Cassini in 2005 that parachuted to Titan, seeing river valleys, a shoreline and rounded ice boulders.",
+   "short": "Landed on Titan in 2005",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 336"
+  },
+  {
+   "id": "moon-c34",
+   "front": "Dragonfly",
+   "back": "Planned NASA 'dual quadcopter' drone to fly and land across Titan's surface; may launch as soon as 2027 and land in 2036.",
+   "short": "Drone mission to Titan",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 337"
+  },
+  {
+   "id": "moon-c35",
+   "front": "Enceladus",
+   "back": "Small (about 500 km) moon of Saturn with few craters, warm south-pole grooves spraying water vapour and ice, and a global subsurface ocean.",
+   "short": "Tiny moon with fountains",
+   "src": "Cosmic Perspective 10e, section 11.2, pp. 338-339"
+  },
+  {
+   "id": "moon-c36",
+   "front": "How do we know Enceladus has an ocean?",
+   "gloss": false,
+   "back": "Salt in its spray, signs of icy volcanism, and a wobble showing its ice shell moves separately from its rocky core.",
+   "short": "Salty spray and a wobble",
+   "src": "Cosmic Perspective 10e, section 11.2, pp. 338-339"
+  },
+  {
+   "id": "moon-c37",
+   "front": "Iapetus",
+   "back": "Saturn moon with an equatorial ridge over 10 km high and a coating of dark dust from the backward-orbiting moon Phoebe.",
+   "short": "Ridge and Phoebe's dust",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 338"
+  },
+  {
+   "id": "moon-c38",
+   "front": "Miranda",
+   "back": "Smallest medium-size moon of Uranus, with tremendous tectonic features, probably from tidal heating in a temporary resonance long ago.",
+   "short": "Small but heavily tectonic",
+   "src": "Cosmic Perspective 10e, section 11.2, pp. 339-340"
+  },
+  {
+   "id": "moon-c39",
+   "front": "Triton",
+   "back": "Neptune's only large moon: it orbits backward on a tilted orbit, was probably captured from the Kuiper belt, and shows fairly recent geological activity.",
+   "short": "Captured, backward moon",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 340"
+  },
+  {
+   "id": "moon-c40",
+   "front": "Ice volcanism",
+   "back": "Volcanism where the 'lava' is mainly water, perhaps mixed with methane and ammonia; the usual kind in the outer solar system except on Io.",
+   "short": "Lava of water",
+   "src": "Cosmic Perspective 10e, section 11.2, p. 340"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "moon-1",
+   "q": "A newly found moon is 1,000 km across. In which size group does it belong?",
+   "options": [
+    "Medium-size",
+    "Small",
+    "Large",
+    "Dwarf planet",
+    "Too big to be a moon"
+   ],
+   "answer": 0,
+   "why": "Medium-size moons are about 300 to 1500 km across. Small moons are under about 300 km and large moons over about 1500 km.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 330",
+   "img": {
+    "src": "img/moons/gen_size_classes.webp",
+    "alt": "A diameter scale split into three groups: small moons under about 300 km (irregular, often captured), medium-size moons about 300 to 1500 km (round and icy) and large moons over about 1500 km. Bigger moons are more likely to show geological activity."
+   }
+  },
+  {
+   "id": "moon-2",
+   "q": "Which of these moons is larger than the planet Mercury?",
+   "options": [
+    "Io",
+    "Europa",
+    "Triton",
+    "Titan",
+    "Callisto"
+   ],
+   "answer": 3,
+   "why": "Ganymede and Titan are the two moons larger than Mercury. Io, Europa, Callisto and Triton are larger than Pluto and Eris but not Mercury.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 330",
+   "img": {
+    "src": "img/moons/gen_moon_sizes.webp",
+    "alt": "Circles drawn to scale from largest to smallest: Ganymede, Titan, Mercury, Callisto, Io, our Moon, Europa, Triton and Pluto. Ganymede and Titan are larger than Mercury; Io, Europa, Callisto and Triton are larger than Pluto."
+   }
+  },
+  {
+   "id": "moon-3",
+   "q": "Which of these is NOT explained by large moons forming in the disk of gas around their planet?",
+   "options": [
+    "Their nearly circular orbits",
+    "Always facing their planet (synchronous rotation)",
+    "Orbiting the way the planet rotates",
+    "Orbits close to the planet's equator",
+    "Orbits lying in nearly the same plane"
+   ],
+   "answer": 1,
+   "why": "Forming in a flat, spinning disk explains nearly circular orbits that lie in the planet's equatorial plane and go the way the planet rotates. Synchronous rotation came later, from the planet's tidal forces.",
+   "source": "Cosmic Perspective 10e, section 11.2, pp. 330-331",
+   "img": {
+    "src": "img/moons/gen_disk_formation.webp",
+    "alt": "Animation: a disk of gas and dust around a young jovian planet. Dust gathers into four growing moons on circular orbits in the planet's equatorial plane, all circling in the direction the planet spins."
+   }
+  },
+  {
+   "id": "moon-4",
+   "q": "A small moon has an irregular shape and orbits backward on a tilted orbit. What is the best explanation?",
+   "options": [
+    "It formed in the planet's disk of gas",
+    "It was knocked loose from a larger moon",
+    "It is in resonance with a larger moon",
+    "It is being heated by strong tides",
+    "It is a captured asteroid or comet"
+   ],
+   "answer": 4,
+   "why": "Captured asteroids or comets keep random orbits, often backward, and small bodies are irregular because their gravity is too weak to make them round.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 331",
+   "img": {
+    "src": "img/moons/gen_captured.webp",
+    "alt": "Animation: two regular moons circle a planet on circular orbits near its equator in the direction it spins, while a small lumpy captured moon travels a tilted, stretched orbit in the opposite direction."
+   }
+  },
+  {
+   "id": "moon-5",
+   "q": "Why do most small moons have irregular, potato-like shapes?",
+   "options": [
+    "They are made mostly of soft ice",
+    "Tidal forces stretch them out of shape",
+    "Their gravity is too weak to make them round",
+    "They spin too fast to stay round",
+    "Volcanoes have built up uneven lumps"
+   ],
+   "answer": 2,
+   "why": "Like asteroids, small moons have too little gravity to force their rigid material into a sphere.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 331",
+   "img": {
+    "src": "img/moons/gen_small_moons.webp",
+    "alt": "Six lumpy, irregular small moons of Saturn with their longest lengths: Pan 35 km (with a ridge of ring dust around its equator), Pandora 84 km, Prometheus 135 km, Hyperion 180 km, Janus 180 km and dark Phoebe 220 km."
+   }
+  },
+  {
+   "id": "moon-6",
+   "q": "What does synchronous rotation mean for a moon?",
+   "options": [
+    "Its rotation period equals its orbital period",
+    "It does not rotate at all",
+    "It rotates once per planetary day",
+    "It orbits in step with another moon",
+    "Its orbit is perfectly circular"
+   ],
+   "answer": 0,
+   "why": "Its rotation and orbital periods are equal, so the same face always points at the planet. Tidal forces caused it.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 331",
+   "img": {
+    "src": "img/moons/gen_synchronous.webp",
+    "alt": "Animation: a moon circles a planet with a red dot on its surface. The dot always points toward the planet, because the moon turns exactly once per orbit, an effect of the planet's strong tides."
+   }
+  },
+  {
+   "id": "moon-7",
+   "q": "If you landed anywhere on Io and searched for impact craters, what would you find?",
+   "options": [
+    "Thousands of old, overlapping craters",
+    "Craters only near the poles",
+    "Craters filled with sulfur lakes",
+    "No impact craters at all",
+    "A few giant basins like the Moon's"
+   ],
+   "answer": 3,
+   "why": "Io's eruptions repave its surface so often that it does not have a single impact crater.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 331",
+   "img": {
+    "src": "img/moons/gen_io_colors.webp",
+    "alt": "A yellow globe of Io dotted with black, red and white spots, with a key: black, brown and red spots are recently active volcanic features; red and orange is sulfur; white is sulfur dioxide frost; yellow is sulfur; there are no impact craters."
+   }
+  },
+  {
+   "id": "moon-8",
+   "q": "Io's volcanic plumes rise hundreds of kilometres high mainly because:",
+   "options": [
+    "Io's lava is far hotter than Earth's",
+    "Io has low gravity and a thin atmosphere",
+    "Jupiter's magnetic field lifts the gas",
+    "Io's thick atmosphere carries the gas up",
+    "Sunlight heats the gas above the surface"
+   ],
+   "answer": 1,
+   "why": "Low gravity and a thin atmosphere let the vaporized sulfur dioxide rise to hundreds of kilometres.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 331",
+   "img": {
+    "src": "img/moons/gen_io_plume.webp",
+    "alt": "Animation: on Io, a red-hot lava flow spreads over white sulfur dioxide frost. The frost turns to gas explosively and a tall plume rises, helped by low gravity and thin air, then sulfur-rich fallout settles on the ground."
+   }
+  },
+  {
+   "id": "moon-9",
+   "q": "What gives Io its red and orange colours?",
+   "options": [
+    "Iron oxide (rust) in its rocks",
+    "Methane ice on its surface",
+    "Sodium in its thin atmosphere",
+    "Sulfur dioxide frost",
+    "Sulfur from volcanic gases"
+   ],
+   "answer": 4,
+   "why": "Sulfur that falls back from volcanic gas colours Io red and orange; sulfur dioxide makes white frost.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 331",
+   "img": {
+    "src": "img/moons/gen_io_colors.webp",
+    "alt": "A yellow globe of Io dotted with black, red and white spots, with a key: black, brown and red spots are recently active volcanic features; red and orange is sulfur; white is sulfur dioxide frost; yellow is sulfur; there are no impact craters."
+   }
+  },
+  {
+   "id": "moon-10",
+   "q": "Io is about the size of our Moon, yet it is extremely hot inside while the Moon is geologically dead. Why?",
+   "options": [
+    "Io has much more radioactive material",
+    "Io still holds the heat from its formation",
+    "Jupiter's changing tides constantly flex Io",
+    "Io absorbs much more sunlight than the Moon",
+    "Io is struck by far more impacts"
+   ],
+   "answer": 2,
+   "why": "Io is too small to keep its birth heat or make much radioactive heat. Tidal heating, from Jupiter's changing tides on Io's elliptical orbit, keeps it hot.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 332",
+   "img": {
+    "src": "img/moons/gen_tidal_flex.webp",
+    "alt": "Animation: Io travels an exaggerated elliptical orbit around Jupiter. Near Jupiter it is stretched into a long, hot-coloured oval with large tidal bulges; far away the bulges shrink. The changing bulges flex Io and friction heats it."
+   }
+  },
+  {
+   "id": "moon-11",
+   "q": "Suppose Io's orbit were made perfectly circular, with everything else unchanged. What would most likely happen?",
+   "options": [
+    "Its tidal heating would mostly stop and volcanism would fade",
+    "Its tidal heating would grow much stronger",
+    "It would stop keeping the same face toward Jupiter",
+    "It would begin to orbit Jupiter backward",
+    "Its volcanoes would erupt water instead of sulfur"
+   ],
+   "answer": 0,
+   "why": "Tidal heating comes from the CHANGING tides on an elliptical orbit. On a circular synchronous orbit the bulges would stay fixed, so the flexing and heating would largely stop.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 332",
+   "img": {
+    "src": "img/moons/gen_tidal_flex.webp",
+    "alt": "Animation: Io travels an exaggerated elliptical orbit around Jupiter. Near Jupiter it is stretched into a long, hot-coloured oval with large tidal bulges; far away the bulges shrink. The changing bulges flex Io and friction heats it."
+   }
+  },
+  {
+   "id": "moon-12",
+   "q": "Per gram of material, how does Io's tidal heating compare with the radioactive heat that drives much of Earth's geology?",
+   "options": [
+    "About half as much",
+    "About the same",
+    "About twice as much",
+    "More than 200 times as much",
+    "About 20 times as much"
+   ],
+   "answer": 3,
+   "why": "Tidal heating gives Io more than 200 times as much heat per gram as Earth's radioactive heat.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 332",
+   "img": {
+    "src": "img/moons/gen_heat_bars.webp",
+    "alt": "Bar chart of heat per gram: Earth's radioactive heat is a tiny bar, Io's tidal heat a bar more than 200 times longer. Note: Io is Moon-sized, so without tidal heating it should have cooled long ago."
+   }
+  },
+  {
+   "id": "moon-13",
+   "q": "Where does the energy for Io's tidal heating ultimately come from?",
+   "options": [
+    "Radioactive decay inside Io",
+    "Jupiter's rotation, which slowly slows",
+    "Sunlight absorbed by Io's surface",
+    "Impacts of comets on Io",
+    "The Sun's tides on Jupiter"
+   ],
+   "answer": 1,
+   "why": "The energy ultimately comes from Jupiter's rotation, which is gradually slowing at a rate too small to observe.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 332"
+  },
+  {
+   "id": "moon-14",
+   "q": "In the time Ganymede orbits Jupiter twice, how many orbits does Io complete?",
+   "options": [
+    "2",
+    "4",
+    "6",
+    "16",
+    "8"
+   ],
+   "answer": 4,
+   "why": "The resonance is 4 : 2 : 1. Io makes 4 orbits for each Ganymede orbit, so 2 Ganymede orbits = 8 Io orbits.",
+   "source": "Cosmic Perspective 10e, section 11.2, pp. 332-333",
+   "img": {
+    "src": "img/moons/gen_resonance.webp",
+    "alt": "Animation: Io, Europa and Ganymede circle Jupiter with a day counter. In about 7 days Io makes 4 orbits, Europa 2 and Ganymede 1, so they line up at the same places again and again, and the repeated tugs make all three orbits slightly elliptical."
+   }
+  },
+  {
+   "id": "moon-15",
+   "q": "Why does the orbital resonance make the three inner Galilean moons' orbits elliptical?",
+   "options": [
+    "Each moon's heat pushes it outward",
+    "Jupiter's magnetic field drags on the moons",
+    "Line-ups repeat, so tugs add up the same way",
+    "Sunlight pushes harder on the inner moons",
+    "Collisions with ring particles alter the orbits"
+   ],
+   "answer": 2,
+   "why": "Because the moons line up again and again at the same places, their gravitational tugs keep pulling the same way and add up, like well-timed pushes on a swing.",
+   "source": "Cosmic Perspective 10e, section 11.2, pp. 332-333",
+   "img": {
+    "src": "img/moons/gen_swing.webp",
+    "alt": "Animation: a child on a swing gets a small push at the same point of every swing and goes higher and higher. Beside it: moons get repeated tugs at each line-up, and the tugs add up to stretch their orbits."
+   }
+  },
+  {
+   "id": "moon-16",
+   "q": "Europa has only a handful of impact craters. What does this tell us?",
+   "options": [
+    "Ongoing activity has erased most craters",
+    "Its atmosphere burns up incoming objects",
+    "Europa formed only recently",
+    "Jupiter shields it from impacts",
+    "Its ice is too hard to be cratered"
+   ],
+   "answer": 0,
+   "why": "So few craters means some kind of ongoing geological activity has erased the evidence of nearly all past impacts.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 333"
+  },
+  {
+   "id": "moon-17",
+   "q": "Which observation best tells a liquid ocean apart from warm convecting ice inside Europa?",
+   "options": [
+    "Its double-ridged surface cracks",
+    "Its small number of craters",
+    "Its gravity measured over the surface",
+    "A magnetic field that changes as Jupiter rotates",
+    "Its bright, icy colour"
+   ],
+   "answer": 3,
+   "why": "An induced magnetic field needs an electrically conducting liquid: a salty ocean works, convecting ice does not. The other clues fit either model.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 333",
+   "img": {
+    "src": "img/moons/gen_europa_magnet.webp",
+    "alt": "Jupiter's magnetic field sweeps past Europa as Jupiter spins, and Europa responds with its own induced field. Such a field needs a liquid layer that conducts electricity: a salty ocean works, convecting ice does not."
+   }
+  },
+  {
+   "id": "moon-18",
+   "q": "Europa's double-ridged cracks are best explained by:",
+   "options": [
+    "Lava flows from volcanoes like Io's",
+    "Icy crust sliding over a soft or liquid layer",
+    "Impacts of small meteorites in rows",
+    "Wind erosion by a thick atmosphere",
+    "Frost deposited from Jupiter's magnetosphere"
+   ],
+   "answer": 1,
+   "why": "Tidal stresses make parts of the crust scrape past each other on a soft or liquid layer; friction warms the ice into ridges and may melt the centre.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 333",
+   "img": {
+    "src": "img/moons/gen_europa_ridges.webp",
+    "alt": "Animation, side view of Europa's icy crust over a soft or liquid layer: tidal stress pushes two blocks of crust back and forth along a crack, friction warms the ice so it swells into a ridge on each side, then the centre sags where ice may melt."
+   }
+  },
+  {
+   "id": "moon-19",
+   "q": "Which is NOT part of the leading model of Europa's interior?",
+   "options": [
+    "A metallic core",
+    "A rocky mantle",
+    "About 100 km of water on top",
+    "An icy crust 5 to 25 km thick",
+    "A layer of high-density ice under the ocean"
+   ],
+   "answer": 4,
+   "why": "Europa's model is metal core, rocky mantle and about 100 km of water with a 5 to 25 km frozen crust. A high-density ice layer under the ocean is what models suggest for Titan.",
+   "source": "Cosmic Perspective 10e, section 11.2, pp. 333, 337",
+   "img": {
+    "src": "img/moons/gen_europa_interior.webp",
+    "alt": "Cut-away of Europa from outside in: an icy crust with the top 5 to 25 km frozen solid, a liquid salty ocean (about 100 km of water in all), a rocky mantle and a metallic core. The ocean may hold over twice Earth's ocean water."
+   }
+  },
+  {
+   "id": "moon-20",
+   "q": "Ganymede is farther from Jupiter than Europa, so its tidal heating is weaker. What helps it keep a possible ocean liquid?",
+   "options": [
+    "Heat from the Sun reaching its interior",
+    "A thick greenhouse atmosphere",
+    "Its larger size holds more radioactive heat",
+    "Frequent large impacts",
+    "Volcanic heat flowing over from Io"
+   ],
+   "answer": 2,
+   "why": "Ganymede's larger size lets it keep more heat from radioactive decay, which together with weak tidal heating may keep a liquid layer.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 335",
+   "img": {
+    "src": "img/moons/gen_ganymede_interior.webp",
+    "alt": "A slice of Ganymede: about 150 km of ice above a salty ocean perhaps 100 km deep. Clues: a magnetic field varying with Jupiter's rotation and changing aurorae seen by Hubble. Heat: weak tides plus radioactive heat kept by its large size."
+   }
+  },
+  {
+   "id": "moon-21",
+   "q": "Ganymede's light, young terrain with few craters most likely formed when:",
+   "options": [
+    "Water or icy slush welled up and refroze",
+    "Lava rich in sulfur flooded the surface",
+    "Dark dust from another moon was blown away",
+    "Strong winds smoothed the old surface",
+    "A huge impact melted the whole surface"
+   ],
+   "answer": 0,
+   "why": "Upwelling liquid water or slush covered the craters before refreezing. Grooves form where water erupts along cracks and expands as it freezes.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 335",
+   "img": {
+    "src": "img/moons/gen_ganymede_terrain.webp",
+    "alt": "Ganymede's surface in two halves split by a sharp boundary: old dark terrain covered in craters, and young light terrain with few craters and long parallel grooves made where water erupted along cracks, froze and expanded."
+   }
+  },
+  {
+   "id": "moon-22",
+   "q": "Gravity data show that Callisto's rock and ice are mixed through most of its interior. What does that mean?",
+   "options": [
+    "It was once tidally heated",
+    "It has a large molten iron core",
+    "It is the youngest Galilean moon",
+    "Its interior never warmed significantly",
+    "It was captured from the Kuiper belt"
+   ],
+   "answer": 3,
+   "why": "Callisto never differentiated: dense rock never sank to the centre, so its interior never got very warm. It has no tidal heating because it is not in the resonance.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 335",
+   "img": {
+    "src": "img/moons/gen_callisto_interior.webp",
+    "alt": "Two cut-aways. Left: a differentiated moon with ice outside, rock inside and a metal core. Right: Callisto, with rock and ice mixed through most of its interior because it never warmed much."
+   }
+  },
+  {
+   "id": "moon-23",
+   "q": "Titan's atmosphere is mostly:",
+   "options": [
+    "Methane",
+    "Nitrogen",
+    "Carbon dioxide",
+    "Oxygen",
+    "Hydrogen"
+   ],
+   "answer": 1,
+   "why": "Titan's air is about 95% molecular nitrogen; the rest is argon, methane, ethane and other hydrogen compounds.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 335",
+   "img": {
+    "src": "img/moons/gen_titan_air.webp",
+    "alt": "Titan's air: about 95% nitrogen, the rest argon, methane, ethane and other hydrogen compounds; 93 K and 50% more pressure than Earth. Flow: ices give off methane and ammonia, UV splits them, hydrogen escapes, ammonia gives nitrogen and methane gives ethane."
+   }
+  },
+  {
+   "id": "moon-24",
+   "q": "If you stood on Titan's surface, which would you experience?",
+   "options": [
+    "Pressure much lower than on Earth, like on Mars",
+    "Liquid water rain falling from clouds",
+    "A clear sky with the Sun sharp and bright",
+    "Breathable air, though very cold",
+    "About 1.5 times Earth's air pressure and about -180 °C"
+   ],
+   "answer": 4,
+   "why": "Titan's surface pressure is about 50% higher than Earth's sea-level pressure and its temperature is about 93 K (-180 °C). There is no oxygen and the haze is thick.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 336"
+  },
+  {
+   "id": "moon-25",
+   "q": "On Titan, which material plays the role that rock plays on Earth?",
+   "options": [
+    "Liquid methane",
+    "Smog-like particles",
+    "Water ice",
+    "Ammonia-water slush",
+    "Frozen nitrogen"
+   ],
+   "answer": 2,
+   "why": "Titan's swap list: liquid methane and ethane for water, ice for rock, water-ammonia slush for lava and smog particles for dirt.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 337",
+   "img": {
+    "src": "img/moons/gen_titan_vs_earth.webp",
+    "alt": "Table comparing Earth and Titan. Liquid that rains and flows: water versus methane and ethane. Bedrock: rock versus water ice. Lava: molten rock versus water-ammonia slush. Dirt: soil versus smog-like particles that fall from the sky."
+   }
+  },
+  {
+   "id": "moon-26",
+   "q": "Why do Titan's northern summers appear wetter, with more lakes in the north?",
+   "options": [
+    "Saturn is closer to the Sun during northern summer",
+    "The north faces Saturn all the time",
+    "The south has more ice volcanoes",
+    "Saturn's rings shade the southern hemisphere",
+    "Titan has no axis tilt, so the north is always lit"
+   ],
+   "answer": 0,
+   "why": "Saturn's elliptical orbit brings it, and Titan, closer to the Sun in northern summer, which may create stronger storms with more rain.",
+   "source": "Cosmic Perspective 10e, section 11.2, pp. 336-337",
+   "img": {
+    "src": "img/moons/gen_titan_seasons.webp",
+    "alt": "Saturn, carrying Titan, on an exaggerated elliptical orbit around the Sun with a 27 degree tilt. Northern summer happens nearer the Sun, so it is more intense, which may explain stronger storms and more lakes in the north."
+   }
+  },
+  {
+   "id": "moon-27",
+   "q": "Which statement about Enceladus is NOT supported by observations?",
+   "options": [
+    "It has regions with no craters at all",
+    "Its south polar grooves are warmer than their surroundings",
+    "It sprays water vapour and ice into space",
+    "Its tidal heating from Dione is enough to explain all its heat",
+    "Its wobble shows its ice shell moves separately from the core"
+   ],
+   "answer": 3,
+   "why": "Calculations suggest tidal heating from the resonance with Dione is NOT enough by itself; extra radioactive heat and ammonia antifreeze may help.",
+   "source": "Cosmic Perspective 10e, section 11.2, pp. 338-339",
+   "img": {
+    "src": "img/moons/gen_enceladus_facts.webp",
+    "alt": "Enceladus, about 500 km across: few craters, warm tiger-stripe grooves, fountains, and a wobble showing an ocean 30 to 40 km down. Heat: some tidal heating from a resonance with Dione, perhaps extra radioactive heat, and ammonia antifreeze."
+   }
+  },
+  {
+   "id": "moon-28",
+   "q": "Miranda (Uranus) and Mimas (Saturn) are about the same size, yet Miranda shows huge tectonic features while Mimas is a cratered iceball. The best explanation is that Miranda:",
+   "options": [
+    "Is made of rock instead of ice",
+    "Had an episode of tidal heating long ago",
+    "Is much closer to the Sun",
+    "Was struck by a giant impact",
+    "Has a thick insulating atmosphere"
+   ],
+   "answer": 1,
+   "why": "Miranda probably had tidal heating billions of years ago, perhaps during a temporary orbital resonance. Mimas apparently never did.",
+   "source": "Cosmic Perspective 10e, section 11.2, pp. 339-340",
+   "img": {
+    "src": "img/moons/gen_miranda_mimas.webp",
+    "alt": "Two similar-size icy moons. Mimas of Saturn: a cratered iceball never tidally heated. Miranda of Uranus: huge tectonic grooves and cliffs taller than the Grand Canyon, perhaps from tidal heating in a temporary resonance."
+   }
+  },
+  {
+   "id": "moon-29",
+   "q": "Which observation most strongly suggests that Triton was captured by Neptune?",
+   "options": [
+    "Its very cold surface",
+    "Its cantaloupe terrain",
+    "Its synchronous rotation",
+    "Its thin atmosphere with wind streaks",
+    "Its backward, steeply tilted orbit"
+   ],
+   "answer": 4,
+   "why": "Disk-born moons orbit in the planet's spin direction near its equator. Triton's backward, highly inclined orbit makes it almost certain it was a captured Kuiper belt object.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 340",
+   "img": {
+    "src": "img/moons/gen_triton_orbit.webp",
+    "alt": "Animation: Neptune spins one way while Triton circles it the opposite way on an orbit steeply tilted to Neptune's equator. A note says such an orbit means Triton was almost certainly captured from the Kuiper belt."
+   }
+  },
+  {
+   "id": "moon-30",
+   "q": "Why can small icy moons stay geologically active when rocky worlds of the same size, like Mercury or our Moon, cannot?",
+   "options": [
+    "They contain more radioactive material than rock",
+    "They are closer to the Sun, so they stay warm",
+    "Ice deforms and melts at far lower temperatures, and tides can add heat",
+    "They have thick atmospheres that trap heat",
+    "They formed more recently than the rocky worlds"
+   ],
+   "answer": 2,
+   "why": "Ices melt and deform at far lower temperatures than rock, and many jovian moons also get tidal heating, a heat source not important for terrestrial worlds.",
+   "source": "Cosmic Perspective 10e, section 11.2, p. 340",
+   "img": {
+    "src": "img/moons/gen_ice_vs_rock.webp",
+    "alt": "Comparison. Terrestrial worlds: heat mostly from radioactive decay; only large planets stay active; rock must be very hot to flow. Jovian moons: tidal heating, ices that melt and deform at far lower temperatures, ice volcanism; Ganymede active though Mercury-sized."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "The Galilean moons",
+   "prompt": "Put Jupiter's four Galilean moons in order of distance from Jupiter, nearest at the bottom.",
+   "why": "Io is closest, then Europa, Ganymede and Callisto. Tidal heating weakens outward, and Callisto is not in the resonance.",
+   "topLabel": "Farthest from Jupiter",
+   "bottomLabel": "Nearest Jupiter",
+   "layers": [
+    {
+     "name": "Io",
+     "color": "#d97706"
+    },
+    {
+     "name": "Europa",
+     "color": "#93c5fd"
+    },
+    {
+     "name": "Ganymede",
+     "color": "#64748b"
+    },
+    {
+     "name": "Callisto",
+     "color": "#57534e"
+    }
+   ]
+  },
+  {
+   "title": "How Io gets so hot",
+   "prompt": "Put the chain of causes in order, first at the bottom.",
+   "why": "The resonance makes Io's orbit elliptical; the elliptical orbit makes the tides change; the changing tides flex Io; friction from flexing heats the interior; the heat drives volcanoes.",
+   "topLabel": "Result",
+   "bottomLabel": "First cause",
+   "layers": [
+    {
+     "name": "Orbital resonance with Europa and Ganymede",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Io's orbit stays slightly elliptical",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Tidal force changes around each orbit",
+     "color": "#b45309"
+    },
+    {
+     "name": "Io's interior is flexed; friction makes heat",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Volcanoes erupt all over Io",
+     "color": "#b91c1c"
+    }
+   ]
+  },
+  {
+   "title": "Europa's interior",
+   "prompt": "Put Europa's layers in order from the centre at the bottom to the surface at the top.",
+   "why": "The model has a metallic core, a rocky mantle, a liquid salty ocean and an icy crust whose top 5 to 25 km is frozen solid.",
+   "topLabel": "Surface",
+   "bottomLabel": "Centre",
+   "layers": [
+    {
+     "name": "Metallic core",
+     "color": "#6b7280"
+    },
+    {
+     "name": "Rocky mantle",
+     "color": "#92400e"
+    },
+    {
+     "name": "Liquid salty ocean",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Icy crust",
+     "color": "#bfdbfe"
+    }
+   ]
+  },
+  {
+   "title": "Biggest moons",
+   "prompt": "Order these moons by size, smallest at the bottom.",
+   "why": "Ganymede is the largest moon, Titan second; Callisto is third-largest; Io is about our Moon's size; Enceladus is only about 500 km across.",
+   "topLabel": "Largest",
+   "bottomLabel": "Smallest",
+   "layers": [
+    {
+     "name": "Enceladus",
+     "color": "#e0f2fe"
+    },
+    {
+     "name": "Io",
+     "color": "#f59e0b"
+    },
+    {
+     "name": "Callisto",
+     "color": "#57534e"
+    },
+    {
+     "name": "Titan",
+     "color": "#d97706"
+    },
+    {
+     "name": "Ganymede",
+     "color": "#64748b"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Disk-born or captured?",
+   "prompt": "Sort each trait by the kind of moon it points to.",
+   "buckets": [
+    "Formed in the planet's disk",
+    "Captured"
+   ],
+   "items": [
+    {
+     "text": "Nearly circular orbit",
+     "b": 0
+    },
+    {
+     "text": "Orbit close to the planet's equator",
+     "b": 0
+    },
+    {
+     "text": "Orbits the way the planet spins",
+     "b": 0
+    },
+    {
+     "text": "Round, medium-size or large",
+     "b": 0
+    },
+    {
+     "text": "Orbits backward",
+     "b": 1
+    },
+    {
+     "text": "Orbit with no particular pattern",
+     "b": 1
+    },
+    {
+     "text": "Irregular, a few km across",
+     "b": 1
+    },
+    {
+     "text": "Triton's tilted orbit",
+     "b": 1
+    }
+   ],
+   "why": "Moons born in the disk have tidy orbits: circular, equatorial and in the spin direction. Captured asteroids, comets and Kuiper belt objects such as Triton keep random, often backward orbits."
+  },
+  {
+   "title": "Which moon?",
+   "prompt": "Sort each fact into the moon it describes.",
+   "buckets": [
+    "Io",
+    "Europa",
+    "Ganymede",
+    "Callisto"
+   ],
+   "items": [
+    {
+     "text": "No impact craters at all",
+     "b": 0
+    },
+    {
+     "text": "Sulfur dioxide plumes",
+     "b": 0
+    },
+    {
+     "text": "Double-ridged cracks",
+     "b": 1
+    },
+    {
+     "text": "Jumbled iceberg terrain",
+     "b": 1
+    },
+    {
+     "text": "Largest moon in the solar system",
+     "b": 2
+    },
+    {
+     "text": "Aurorae studied by Hubble",
+     "b": 2
+    },
+    {
+     "text": "Not in the orbital resonance",
+     "b": 3
+    },
+    {
+     "text": "Rock and ice never separated",
+     "b": 3
+    }
+   ],
+   "why": "Io is volcanic and crater-free; Europa has double ridges and iceberg terrain; Ganymede is the largest, with aurorae pointing to an ocean; Callisto is outside the resonance and undifferentiated."
+  },
+  {
+   "title": "Moons beyond Jupiter",
+   "prompt": "Sort each fact into the moon it describes.",
+   "buckets": [
+    "Titan",
+    "Enceladus",
+    "Triton",
+    "Miranda"
+   ],
+   "items": [
+    {
+     "text": "Thick nitrogen atmosphere",
+     "b": 0
+    },
+    {
+     "text": "Lakes of methane and ethane",
+     "b": 0
+    },
+    {
+     "text": "Ice fountains near the south pole",
+     "b": 1
+    },
+    {
+     "text": "Resonance with Dione",
+     "b": 1
+    },
+    {
+     "text": "Orbits its planet backward",
+     "b": 2
+    },
+    {
+     "text": "Cantaloupe terrain",
+     "b": 2
+    },
+    {
+     "text": "Cliffs taller than the Grand Canyon",
+     "b": 3
+    },
+    {
+     "text": "Smallest medium-size moon of Uranus",
+     "b": 3
+    }
+   ],
+   "why": "Titan has thick air and methane lakes; Enceladus sprays fountains and shares a resonance with Dione; Triton orbits Neptune backward and has cantaloupe terrain; Miranda is Uranus's small moon with giant cliffs."
+  }
+ ],
+ "calc": [
+  "moon-resonance"
+ ],
+ "sourceNotes": [
+  "No teacher slides exist for this unit. Notes, cards and quiz follow Cosmic Perspective 10e, section 11.2 (pp. 330-340), written in plain words; section 11.3 (rings) is not covered.",
+  "Learning objectives are the four learning-goal questions for 11.2 from the chapter opener and end-of-chapter summary.",
+  "Moon counts: the section says 'more than 200' known moons (Jupiter 79, Saturn 82, as of 2022); the chapter summary still says 'more than 170'. The section figure is used.",
+  "All pictures are original diagrams (img/moons/gen_*); no book figures or photos are reproduced. The to-scale moon chart uses standard diameters to set circle sizes without printing them."
+ ]
+}
