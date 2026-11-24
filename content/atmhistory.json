@@ -1,0 +1,2918 @@
+{
+ "id": "atmhistory",
+ "title": "Weather, Climate and Atmospheric Histories",
+ "chapter": "Ch 10.2–10.6",
+ "icon": "🌡️",
+ "color": "#7c3aed",
+ "slideFile": "none (no slides): The Cosmic Perspective, 10th ed., sections 10.2-10.6",
+ "intro": "Why do storms cross North America from west to east, and why do they spin opposite ways in the two hemispheres? Start with Earth's weather: heating, the Coriolis effect, clouds and the limits of forecasting. Then meet the four things that change a planet's climate and see, with real numbers, why light gases escape into space. Tour the airless Moon and Mercury, cold Mars that lost its air and water, and scorching Venus with its runaway greenhouse, then find out what keeps Earth's climate stable and what the evidence says about the warming people are causing today.",
+ "learningObjectives": [
+  {
+   "id": "lo-01",
+   "text": "What creates wind and weather?"
+  },
+  {
+   "id": "lo-02",
+   "text": "What factors can cause long-term climate change?"
+  },
+  {
+   "id": "lo-03",
+   "text": "How does a planet gain or lose atmospheric gases?"
+  },
+  {
+   "id": "lo-04",
+   "text": "Do the Moon and Mercury have any atmosphere?"
+  },
+  {
+   "id": "lo-05",
+   "text": "What is Mars like today?"
+  },
+  {
+   "id": "lo-06",
+   "text": "How has Mars's climate differed in the past?"
+  },
+  {
+   "id": "lo-07",
+   "text": "Why did Mars change?"
+  },
+  {
+   "id": "lo-08",
+   "text": "What is Venus like today?"
+  },
+  {
+   "id": "lo-09",
+   "text": "How did Venus get so hot?"
+  },
+  {
+   "id": "lo-10",
+   "text": "How did Earth's atmosphere end up so different?"
+  },
+  {
+   "id": "lo-11",
+   "text": "Why does Earth's climate stay relatively stable?"
+  },
+  {
+   "id": "lo-12",
+   "text": "What is the evidence for human-caused climate change?"
+  }
+ ],
+ "sections": [
+  {
+   "id": "weather",
+   "title": "Weather versus climate",
+   "slides": "Book 10.2, p. 286",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_weather_climate.webp",
+      "slide": "none (original diagram)",
+      "alt": "A wiggly blue line of temperature over many years, labelled weather: the ever-changing mix of wind, clouds, temperature and pressure, with a flat red line through it labelled climate: the average of weather over many years. A note asks whether a few dry years are random weather or the start of a drier climate."
+     },
+     "title": "Two time scales",
+     "bullets": [
+      "**Weather** is the constantly changing mix of wind, clouds, temperature and pressure that makes one day hotter, cloudier or stormier than another.",
+      "**Climate** is the average of the weather over many years. A cold desert can still get the odd snowfall; its climate is still cold and dry.",
+      "Climates do change naturally, but usually slowly: over decades, centuries or thousands of years.",
+      "Over a human lifetime the two can be hard to separate. A drought of a few years might be random weather or the first sign of a drier climate."
+     ]
+    },
+    {
+     "title": "What drives weather",
+     "bullets": [
+      "Wind, rain and the rest are all powered by **energy in the atmosphere**, so only a world with an atmosphere can have weather.",
+      "Earth has the most varied weather of the rocky planets, so it is the main example for how weather works.",
+      "Weather is so complex that local forecasts are reliable only about a week ahead, yet Earth as a whole shows clear, regular wind patterns."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Telling weather from climate matters most for judging whether people are changing the climate: one hot summer is weather, a decades-long trend is climate."
+    },
+    {
+     "type": "trick",
+     "text": "Weather is your mood today; climate is your personality."
+    },
+    {
+     "type": "trap",
+     "text": "Climate is NOT 'the weather in a place'; it is the AVERAGE of weather over many years (Book 10.2, p. 286). A single cold day says nothing about climate."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.2, p. 286 (introduction and 'What creates wind and weather?')"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_weather_climate.webp",
+     "slide": "none (original diagram)",
+     "alt": "A wiggly blue line of temperature over many years, labelled weather: the ever-changing mix of wind, clouds, temperature and pressure, with a flat red line through it labelled climate: the average of weather over many years. A note asks whether a few dry years are random weather or the start of a drier climate."
+    }
+   ]
+  },
+  {
+   "id": "cells",
+   "title": "Heating and circulation cells",
+   "slides": "Book 10.2, pp. 286-287",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_hadley.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a globe lit by the Sun from the right with one large loop of air in each hemisphere. Dots ride the loops: warm air rises at the equator and flows toward the poles high up, then cool polar air sinks and returns to the equator along the surface. The loops are drawn much taller than the few kilometres they really are."
+     },
+     "title": "Warm air rises at the equator",
+     "bullets": [
+      "Two things shape global winds: **atmospheric heating** and **planetary rotation**.",
+      "The equator receives more solar heat than the poles. Warm equatorial air rises and flows toward the poles high up; cool polar air sinks and flows back toward the equator along the surface.",
+      "If rotation played no part, each hemisphere would have one giant loop of air, a **circulation cell** (also called a **Hadley cell**). The real cells reach only a few kilometres above the ground."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_heat_transport.webp",
+      "slide": "none (original diagram)",
+      "alt": "Venus, Earth and Mars, each with an equator thermometer and a pole thermometer. On Venus both read hot because thick air carries heat to the poles; on Earth the pole is cooler but warmed by circulation; on Mars the thin air carries little heat and the pole is far colder than the equator."
+     },
+     "title": "Cells carry heat poleward",
+     "bullets": [
+      "Circulation cells move heat upward and from the equator toward the poles, so Earth's poles are much warmer than they would be without them.",
+      "**Venus**: the dense air carries so much heat that the equator and the poles are almost the same temperature.",
+      "**Mars**: the thin air carries very little heat, so the poles stay much colder than the equator."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Thicker air holds and carries more thermal energy, so the same circulation evens out temperatures far better on Venus than on Mars."
+    },
+    {
+     "type": "trick",
+     "text": "Hot air goes up and out to the poles; cold air comes down and back to the equator: a conveyor belt for heat."
+    },
+    {
+     "type": "trap",
+     "text": "Without rotation there would be ONE cell per hemisphere, not three (Book 10.2, p. 287, Figure 10.13); rotation is what splits Earth's cells."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.2, pp. 286-287 ('Atmospheric Heating and Circulation Cells')",
+    "Original diagrams: single-cell circulation animation; heat transport on Venus, Earth and Mars"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_hadley.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a globe lit by the Sun from the right with one large loop of air in each hemisphere. Dots ride the loops: warm air rises at the equator and flows toward the poles high up, then cool polar air sinks and returns to the equator along the surface. The loops are drawn much taller than the few kilometres they really are."
+    },
+    {
+     "src": "img/atmhistory/gen_heat_transport.webp",
+     "slide": "none (original diagram)",
+     "alt": "Venus, Earth and Mars, each with an equator thermometer and a pole thermometer. On Venus both read hot because thick air carries heat to the poles; on Earth the pole is cooler but warmed by circulation; on Mars the thin air carries little heat and the pole is far colder than the equator."
+    }
+   ]
+  },
+  {
+   "id": "coriolis",
+   "title": "Rotation and the Coriolis effect",
+   "slides": "Book 10.2, pp. 287-288",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_merry_go_round.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of a merry-go-round seen from above, turning counterclockwise. A red ball rolled inward from the edge and a blue ball rolled outward from near the centre both curve to the right of the dashed lines they were aimed along. Notes: the inward ball starts with the faster outer speed and gets ahead; the outward ball starts slow and lags; spinning the other way, both would veer left."
+     },
+     "title": "The merry-go-round",
+     "bullets": [
+      "On a spinning merry-go-round the outer edge moves faster than the middle, because it has farther to go each turn.",
+      "Roll a ball inward from the edge: it keeps its fast edge speed, gets ahead of the slower inner parts and veers to the **right** (for counterclockwise spin).",
+      "Roll it outward from near the centre: it starts slow, falls behind the faster outer parts and **also** veers right. On a clockwise merry-go-round both would veer left.",
+      "This sideways drift is the **Coriolis effect**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_coriolis_earth.webp",
+      "slide": "none (original diagram)",
+      "alt": "A globe with curved arrows. In the Northern Hemisphere, air moving north and air moving south both bend to their right; in the Southern Hemisphere they bend to their left. Notes explain that the equator circles the axis faster than the poles and that the effect matters only over hundreds of kilometres."
+     },
+     "title": "On the rotating Earth",
+     "bullets": [
+      "The equator circles Earth's axis faster than places near the poles.",
+      "Air moving away from the equator carries extra eastward speed and gets ahead of the ground; air moving toward the equator lags behind to the west.",
+      "Either way, moving air turns to its **right in the Northern Hemisphere** and to its **left in the Southern Hemisphere**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_low_pressure.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of two storms, each around a low-pressure centre marked L. Arrows spiral inward. In the Northern Hemisphere the spiral turns counterclockwise; in the Southern Hemisphere it turns clockwise."
+     },
+     "title": "Why storms spin",
+     "bullets": [
+      "Uneven heating creates areas of slightly high (H) and low (L) pressure. Storms form around lows, which pull in air from all around.",
+      "The Coriolis effect turns the inflowing air, so storms swirl **counterclockwise in the north** and **clockwise in the south**.",
+      "This spin around a low can be very stable, so a storm can last days or weeks while it is carried across the globe."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_drain_scale.webp",
+      "slide": "none (original diagram)",
+      "alt": "Left: a hurricane hundreds of kilometres across whose spin is set by the Coriolis effect. Right: a small sink drain under a metre across, where the Coriolis effect is far too weak; the bowl's shape and how the water started moving decide which way it swirls."
+     },
+     "title": "The draining-sink myth",
+     "bullets": [
+      "Hurricanes really do spin opposite ways in the two hemispheres, but sinks and toilets do not drain 'backward' south of the equator.",
+      "The Coriolis effect matters only when material moves much closer to or farther from the rotation axis, over **hundreds of kilometres**. For a drain it is negligible; the bowl's shape and how the water started moving decide."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Nothing pushes the air sideways: it keeps the speed it started with while the ground underneath moves at a different speed, so it drifts relative to the ground."
+    },
+    {
+     "type": "trick",
+     "text": "North: Right. South: Left. ('NR, SL' - Northern Right, Southern Left.)"
+    },
+    {
+     "type": "trap",
+     "text": "Air bends right in the NORTHERN Hemisphere whether it moves north or south (Book 10.2, p. 287). Northern lows spin COUNTERclockwise even though the air turns right (Figure 10.15). The Coriolis effect does not decide how a toilet flushes (Common Misconceptions, p. 288)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.2, pp. 287-288 ('Rotation and the Coriolis Effect'; Common Misconceptions: toilets in the Southern Hemisphere)",
+    "Original diagrams: merry-go-round animation, Coriolis on Earth, low-pressure spiral animation, drain scale"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_merry_go_round.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of a merry-go-round seen from above, turning counterclockwise. A red ball rolled inward from the edge and a blue ball rolled outward from near the centre both curve to the right of the dashed lines they were aimed along. Notes: the inward ball starts with the faster outer speed and gets ahead; the outward ball starts slow and lags; spinning the other way, both would veer left."
+    },
+    {
+     "src": "img/atmhistory/gen_coriolis_earth.webp",
+     "slide": "none (original diagram)",
+     "alt": "A globe with curved arrows. In the Northern Hemisphere, air moving north and air moving south both bend to their right; in the Southern Hemisphere they bend to their left. Notes explain that the equator circles the axis faster than the poles and that the effect matters only over hundreds of kilometres."
+    },
+    {
+     "src": "img/atmhistory/gen_low_pressure.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of two storms, each around a low-pressure centre marked L. Arrows spiral inward. In the Northern Hemisphere the spiral turns counterclockwise; in the Southern Hemisphere it turns clockwise."
+    },
+    {
+     "src": "img/atmhistory/gen_drain_scale.webp",
+     "slide": "none (original diagram)",
+     "alt": "Left: a hurricane hundreds of kilometres across whose spin is set by the Coriolis effect. Right: a small sink drain under a metre across, where the Coriolis effect is far too weak; the bowl's shape and how the water started moving decide which way it swirls."
+    }
+   ]
+  },
+  {
+   "id": "winds",
+   "title": "Three cells and Earth's wind belts",
+   "slides": "Book 10.2, pp. 286-289",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_three_cells.webp",
+      "slide": "none (original diagram)",
+      "alt": "A globe with three loops of circulating air in each hemisphere, split at about 30 and 60 degrees latitude. Labels: high latitudes 60-90 degrees, winds blow east to west; mid-latitudes 30-60 degrees, winds blow west to east; near the equator 0-30 degrees, winds blow east to west. The Coriolis effect turns north-south flow into east-west winds."
+     },
+     "title": "Each big cell splits into three",
+     "bullets": [
+      "Air flowing south from the North Pole along the ground would have to travel about 10,000 km to reach the equator. Long before then, the Coriolis effect turns it westward.",
+      "This splits each hemisphere's single cell into **three smaller cells** that turn like interlocking gears."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_wind_belts.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of a flat map striped by latitude with moving arrows: east-to-west winds near the equator and at high latitudes, west-to-east winds at mid-latitudes in both hemispheres. A storm cloud drifts eastward across the northern mid-latitudes, like storms crossing North America toward the east coast."
+     },
+     "title": "The wind belts",
+     "bullets": [
+      "In the cells nearest the equator and the poles, surface air flows toward the equator and is turned into winds that blow **east to west**.",
+      "In the mid-latitude cells, surface air flows toward the poles and is turned into winds that blow **west to east**.",
+      "That is why storms usually hit the west coast of the United States first and then move east across the continent.",
+      "In short, rotation turns north-south flow into east-west winds."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_coriolis_planets.webp",
+      "slide": "none (original diagram)",
+      "alt": "Venus, Earth, Mars and a striped Jupiter side by side. Venus spins very slowly, so its Coriolis effect is very weak and it has two big cells; Earth's is strong enough to split each cell into three; small Mars has a weak effect; huge, fast Jupiter has many smaller cells."
+     },
+     "title": "Coriolis on other planets",
+     "bullets": [
+      "The Coriolis effect works on every planet. **Larger size** and **faster rotation** both make it stronger.",
+      "Only Earth, among the rocky planets, has a Coriolis effect strong enough to split its two big cells.",
+      "**Venus** has a very weak effect because it spins so slowly; **Mars** has a weak one because it is small. Huge, fast-spinning **Jupiter** and the other jovian planets have their cells split into many."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The mid-latitude cell is turned by its neighbours like a middle gear, so its surface air runs poleward, the opposite way to the other two cells, and the Coriolis effect turns it eastward."
+    },
+    {
+     "type": "trick",
+     "text": "Equator and poles: 'Easterlies' at both ends. The middle is the odd one out: west to east."
+    },
+    {
+     "type": "trap",
+     "text": "Mid-latitude winds blow FROM west TO east; equatorial and high-latitude winds blow east to west (Book 10.2, Figure 10.12). Mars's weak Coriolis effect comes from its small size, Venus's from its slow spin (p. 289)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.2, pp. 286-289 (Global Wind Patterns; Figures 10.12 and 10.16; Coriolis strength on other planets)",
+    "Original diagrams: three-cell globe, wind belt animation, planet comparison"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_three_cells.webp",
+     "slide": "none (original diagram)",
+     "alt": "A globe with three loops of circulating air in each hemisphere, split at about 30 and 60 degrees latitude. Labels: high latitudes 60-90 degrees, winds blow east to west; mid-latitudes 30-60 degrees, winds blow west to east; near the equator 0-30 degrees, winds blow east to west. The Coriolis effect turns north-south flow into east-west winds."
+    },
+    {
+     "src": "img/atmhistory/gen_wind_belts.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of a flat map striped by latitude with moving arrows: east-to-west winds near the equator and at high latitudes, west-to-east winds at mid-latitudes in both hemispheres. A storm cloud drifts eastward across the northern mid-latitudes, like storms crossing North America toward the east coast."
+    },
+    {
+     "src": "img/atmhistory/gen_coriolis_planets.webp",
+     "slide": "none (original diagram)",
+     "alt": "Venus, Earth, Mars and a striped Jupiter side by side. Venus spins very slowly, so its Coriolis effect is very weak and it has two big cells; Earth's is strong enough to split each cell into three; small Mars has a weak effect; huge, fast Jupiter has many smaller cells."
+    }
+   ]
+  },
+  {
+   "id": "clouds",
+   "title": "Clouds, rain and forecasts",
+   "slides": "Book 10.2, pp. 289-290",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_water_cycle.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: vapour rises from the ocean, a cloud forms high above a mountain, and drops grow and fall as rain on the land. Labels: 1, water evaporates; 2, convection carries the vapour up to cooler air; 3, it condenses into droplets or ice flakes, a cloud; 4, drops grow larger; 5, too heavy to stay up, they fall as rain, snow or hail."
+     },
+     "title": "From vapour to rain",
+     "bullets": [
+      "Rain, snow and hail together are **precipitation**, and precipitation needs clouds.",
+      "Clouds are tiny droplets of liquid water or flakes of ice, made when **water vapour condenses**.",
+      "The cycle: water evaporates from the surface; **convection** lifts the vapour to high, cold parts of the troposphere; it condenses into a cloud; the drops or flakes grow; when updrafts can no longer hold them up they fall as rain, snow or hail.",
+      "Wind forced up over mountains can also lift air high enough to make clouds."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_clouds_balance.webp",
+      "slide": "none (original diagram)",
+      "alt": "Sunlight bouncing off the top of a cloud back to space, and infrared arrows from the ground going up into the cloud and back down. Labels: cooling, clouds reflect sunlight; warming, clouds are made of greenhouse molecules that hold in infrared heat."
+     },
+     "title": "Clouds cool and warm",
+     "bullets": [
+      "Clouds are made from minor ingredients of the air, yet they have big effects.",
+      "They **reflect sunlight** back to space, which cools the surface, but they are also made of **greenhouse molecules**, which warm it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_rain_deserts.webp",
+      "slide": "none (original diagram)",
+      "alt": "A green globe with a dark green rainy band at the equator and sandy bands at about 25 degrees north and south. Notes: the equator gets the most sunlight and convection, so lots of rain and jungles; the cells carry the dried-out air away and it sinks at 20-30 degrees, making deserts; summer afternoon convection brings thunderstorms."
+     },
+     "title": "Jungles and deserts",
+     "bullets": [
+      "Stronger convection means more clouds and rain. That is why thunderstorms are common on summer afternoons, when the sun-warmed ground drives strong convection.",
+      "The equator gets the most sunlight, the most convection and the most rain: lush jungles.",
+      "The rain wrings the moisture out of the air, and the circulation cells carry that dried air away from the equator, leaving little rain for latitudes of **20-30° north or south**: deserts."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_chaos.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of a graph over 30 days with two forecast lines, blue and red, that start almost the same, stay together for the first few days and then wander completely apart by a month. A grey band marks the long-term average, which stays predictable: climate models remain reliable even when weather cannot be forecast."
+     },
+     "title": "Why forecasts fail after about a week",
+     "bullets": [
+      "A forecast needs the current state of the weather (the **initial conditions**) and the physical laws for how it changes. Scientists run a computer 'model world' with both.",
+      "Change the starting wind speed slightly over Brazil and tomorrow's New York forecast barely changes, but next month's may be completely different. This extreme sensitivity is the **butterfly effect**, the hallmark of a **chaotic system** described by nonlinear equations.",
+      "Chaotic does not mean random: weather is 'predictably unpredictable'. Because **climate** is the long-term average, the chaos averages out, so climate models can be trusted far beyond the week or so that weather forecasts last."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Rising air cools; cool air holds less vapour, so it condenses. Anything that lifts air (convection or mountains) makes clouds."
+    },
+    {
+     "type": "trick",
+     "text": "Evaporate, Elevate, Condense, Grow, Fall."
+    },
+    {
+     "type": "trap",
+     "text": "Unpredictable weather does NOT make climate predictions unreliable: climate is an average, so the chaos averages out (Book 10.2, Special Topic, p. 289). Deserts at 20-30° are caused by dry air from the circulation cells, not by distance from the Sun (p. 290)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.2, pp. 289-290 ('Clouds and Precipitation'; Figure 10.17; Special Topic 'Weather and Chaos')",
+    "Original diagrams: water cycle animation, clouds' two effects, jungles and deserts, forecast divergence animation"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_water_cycle.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: vapour rises from the ocean, a cloud forms high above a mountain, and drops grow and fall as rain on the land. Labels: 1, water evaporates; 2, convection carries the vapour up to cooler air; 3, it condenses into droplets or ice flakes, a cloud; 4, drops grow larger; 5, too heavy to stay up, they fall as rain, snow or hail."
+    },
+    {
+     "src": "img/atmhistory/gen_clouds_balance.webp",
+     "slide": "none (original diagram)",
+     "alt": "Sunlight bouncing off the top of a cloud back to space, and infrared arrows from the ground going up into the cloud and back down. Labels: cooling, clouds reflect sunlight; warming, clouds are made of greenhouse molecules that hold in infrared heat."
+    },
+    {
+     "src": "img/atmhistory/gen_rain_deserts.webp",
+     "slide": "none (original diagram)",
+     "alt": "A green globe with a dark green rainy band at the equator and sandy bands at about 25 degrees north and south. Notes: the equator gets the most sunlight and convection, so lots of rain and jungles; the cells carry the dried-out air away and it sinks at 20-30 degrees, making deserts; summer afternoon convection brings thunderstorms."
+    },
+    {
+     "src": "img/atmhistory/gen_chaos.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of a graph over 30 days with two forecast lines, blue and red, that start almost the same, stay together for the first few days and then wander completely apart by a month. A grey band marks the long-term average, which stays predictable: climate models remain reliable even when weather cannot be forecast."
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "title": "Four causes of long-term climate change",
+   "slides": "Book 10.2, pp. 290-291",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_four_factors.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards: 1, solar brightening, slow and noticeable only over tens of millions of years; 2, changes in axis tilt, which make seasons more or less extreme; 3, changes in reflectivity from ice, clouds or volcanic dust; 4, changes in greenhouse gases, more warms and less cools."
+     },
+     "title": "The four factors",
+     "bullets": [
+      "Scientists recognize four major causes of long-term climate change on rocky worlds: **solar brightening**, **changes in axis tilt**, **changes in reflectivity** and **changes in greenhouse gas abundance**.",
+      "More than one can act at the same time."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_solar_brightening.webp",
+      "slide": "none (original diagram)",
+      "alt": "A small young Sun labelled dimmer and a larger Sun today labelled about 30% brighter, joined by an arrow spanning about 4 billion years. A note says the change is too slow to notice over less than tens of millions of years and other factors can outweigh it."
+     },
+     "title": "Solar brightening",
+     "bullets": [
+      "Models of the Sun and observations of Sun-like stars show the Sun brightens with age: it is probably about **30% brighter** now than when the solar system was young.",
+      "The effect is noticeable only over **tens of millions of years** or more, and other factors can easily overwhelm it.",
+      "Proof: brightening alone would make every planet warmer now than in the past, yet Mars and Earth were both warmer at times early on."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_axis_tilt.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Earth's tilted axis rocks slowly back and forth while a label counts between 22 and 25 degrees (today about 23.5). Cards: more tilt brings hotter summers and colder winters and less ice, so warmer overall; less tilt lets ice build up, cooler, matching past ice ages; these Milankovitch cycles come from small gravity tugs."
+     },
+     "title": "Changes in axis tilt",
+     "bullets": [
+      "Small gravitational tugs from moons, other planets and the Sun can change a planet's tilt over thousands to millions of years. Earth's tilt is about **23.5°** now and has ranged from about **22° to 25°**.",
+      "**More tilt**: more extreme seasons. Warmer summers stop ice building up, so the planet reflects less and warms overall.",
+      "**Less tilt**: milder seasons; ice can build up and the planet cools. Times of smaller tilt match Earth's ice ages over the past few million years.",
+      "These cyclic changes in tilt and orbit are called **Milankovitch cycles**. Mars probably has far larger swings."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_reflectivity.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards. Reflect more and cool: ice and snow, more clouds, volcanic dust. Reflect less and warm: open water where sea ice was, shrinking ice caps. People raise reflectivity with smog and by cutting forests. People lower it with roads and cities and by melting Arctic sea ice."
+     },
+     "title": "Changes in reflectivity",
+     "bullets": [
+      "A planet that reflects more sunlight absorbs less and cools.",
+      "Volcanic eruptions release tiny dust particles called **aerosols** that reflect sunlight; cooling can last years if they reach the stratosphere. Growing ice caps and more clouds also raise reflectivity (though clouds add greenhouse warming too).",
+      "People change reflectivity both ways: smog and deforestation raise it, while roads, cities and the loss of Arctic sea ice lower it (water reflects much less sunlight than ice). The net direction and size are not yet certain."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_greenhouse_change.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two rows of linked boxes. Top, in red: more greenhouse gas, the planet warms, more water vaporizes into the air, air pressure rises. Bottom, in blue: less greenhouse gas, the planet cools, some gases freeze out, air pressure may drop."
+     },
+     "title": "Changes in greenhouse gases",
+     "bullets": [
+      "Probably the **most important** factor: more greenhouse gas strengthens the greenhouse effect and the planet warms; less weakens it and the planet cools.",
+      "Enough warming can vaporize more water, adding gas and raising the air pressure. Enough cooling can freeze gases out, lowering the pressure.",
+      "Changes in greenhouse gases seem to have had the biggest effect on the long-term climates of Venus, Earth and Mars."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Every factor works by changing the planet's energy balance: how much sunlight arrives, how much is absorbed, or how easily infrared heat escapes."
+    },
+    {
+     "type": "trick",
+     "text": "S-T-R-G: Sun, Tilt, Reflectivity, Greenhouse."
+    },
+    {
+     "type": "trap",
+     "text": "Greater tilt makes the planet WARMER overall (less ice), not colder (Book 10.2, p. 291). Solar brightening is far too slow to explain changes over centuries (p. 290). Deforestation INCREASES reflectivity; cities DECREASE it (p. 291)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.2, pp. 290-291 ('What factors can cause long-term climate change?'; Figures 10.18 and 10.19)",
+    "Original diagrams: four factors, solar brightening, tilt animation, reflectivity cards, greenhouse change chains"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_four_factors.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards: 1, solar brightening, slow and noticeable only over tens of millions of years; 2, changes in axis tilt, which make seasons more or less extreme; 3, changes in reflectivity from ice, clouds or volcanic dust; 4, changes in greenhouse gases, more warms and less cools."
+    },
+    {
+     "src": "img/atmhistory/gen_solar_brightening.webp",
+     "slide": "none (original diagram)",
+     "alt": "A small young Sun labelled dimmer and a larger Sun today labelled about 30% brighter, joined by an arrow spanning about 4 billion years. A note says the change is too slow to notice over less than tens of millions of years and other factors can outweigh it."
+    },
+    {
+     "src": "img/atmhistory/gen_axis_tilt.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Earth's tilted axis rocks slowly back and forth while a label counts between 22 and 25 degrees (today about 23.5). Cards: more tilt brings hotter summers and colder winters and less ice, so warmer overall; less tilt lets ice build up, cooler, matching past ice ages; these Milankovitch cycles come from small gravity tugs."
+    },
+    {
+     "src": "img/atmhistory/gen_reflectivity.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards. Reflect more and cool: ice and snow, more clouds, volcanic dust. Reflect less and warm: open water where sea ice was, shrinking ice caps. People raise reflectivity with smog and by cutting forests. People lower it with roads and cities and by melting Arctic sea ice."
+    },
+    {
+     "src": "img/atmhistory/gen_greenhouse_change.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two rows of linked boxes. Top, in red: more greenhouse gas, the planet warms, more water vaporizes into the air, air pressure rises. Bottom, in blue: less greenhouse gas, the planet cools, some gases freeze out, air pressure may drop."
+    }
+   ]
+  },
+  {
+   "id": "gainloss",
+   "title": "How atmospheres gain and lose gas",
+   "slides": "Book 10.2, pp. 291-292",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_gas_sources.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three ways to gain gas over the ground: a volcano puffing gas (outgassing of water, carbon dioxide, nitrogen and sulfur gases, the main source), a pool and a patch of ice giving off vapour (vaporization), and small particles striking bare ground and knocking atoms up (surface ejection, only on worlds with almost no air)."
+     },
+     "title": "Three sources of gas",
+     "bullets": [
+      "**Outgassing** by volcanoes was the main source of air for Venus, Earth and Mars. Ice-rich planetesimals from beyond the frost line brought water and gas that were trapped inside the planets as they formed. Volcanoes mostly release water vapour, carbon dioxide, nitrogen and sulfur gases.",
+      "**Vaporization**: gases that condensed into surface liquids or ices can later evaporate or sublimate, a secondary source that grows when a planet warms.",
+      "**Surface ejection**: micrometeorites, solar wind particles and high-energy photons knock atoms off the ground. This only matters on worlds with almost no air, because a real atmosphere stops these particles before they reach the ground."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_gas_losses.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards in two columns. Can be undone: condensation, gas falling back as rain, snow or frost such as dry ice on Mars; chemical reactions, gas locked into rock or metal like rust. Permanent: thermal escape, fast particles reaching escape velocity; solar wind stripping where there is no magnetosphere."
+     },
+     "title": "Four ways to lose gas",
+     "bullets": [
+      "**Condensation** (gas falls as rain, snow or frost; carbon dioxide freezes into dry ice on Mars) and **chemical reactions** (gas locked into rock or metal, as when iron rusts) only move gas to the surface or interior. They can be reversed.",
+      "**Thermal escape** (a particle in the exosphere reaches escape velocity) and **solar wind stripping** (solar wind particles sweep gas away from a world with no protective magnetosphere) remove gas **permanently**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_escape_factors.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three cards: small worlds have low escape velocity; worlds near the Sun have hotter, faster gas; light gases such as hydrogen and helium escape far more easily than carbon dioxide, nitrogen or oxygen. Below: the rocky planets lost their hydrogen and helium but Venus, Earth and Mars kept heavier gases from volcanoes."
+     },
+     "title": "Who loses gas most easily?",
+     "bullets": [
+      "Thermal escape is strongest on **small** worlds (low escape velocity), worlds **close to the Sun** (hotter, faster gas) and for **light gases** such as hydrogen and helium.",
+      "All the rocky planets are small and warm enough to lose hydrogen and helium, so none kept those gases from the solar nebula. Venus, Earth and Mars held on to the heavier gases released later by outgassing."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Gas that condenses or reacts is still on the planet and can come back; gas that escapes to space is gone."
+    },
+    {
+     "type": "trick",
+     "text": "Gain: Out-Vap-Eject. Lose: two that 'park' gas (condense, react) and two that 'launch' it (escape, strip)."
+    },
+    {
+     "type": "trap",
+     "text": "Surface ejection is NOT a source for planets that already have thick air (Book 10.2, p. 292). Condensation and chemical reactions are reversible; only thermal escape and solar wind stripping are permanent (Figure 10.21). Only water existed in modest amounts in the solar nebula; the other outgassed gases formed by chemistry inside the planets (p. 291 footnote)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.2, pp. 291-292 ('How does a planet gain or lose atmospheric gases?'; Figures 10.20 and 10.21)",
+    "Overlaps the 10.1 unit; kept brief here"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_gas_sources.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three ways to gain gas over the ground: a volcano puffing gas (outgassing of water, carbon dioxide, nitrogen and sulfur gases, the main source), a pool and a patch of ice giving off vapour (vaporization), and small particles striking bare ground and knocking atoms up (surface ejection, only on worlds with almost no air)."
+    },
+    {
+     "src": "img/atmhistory/gen_gas_losses.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards in two columns. Can be undone: condensation, gas falling back as rain, snow or frost such as dry ice on Mars; chemical reactions, gas locked into rock or metal like rust. Permanent: thermal escape, fast particles reaching escape velocity; solar wind stripping where there is no magnetosphere."
+    },
+    {
+     "src": "img/atmhistory/gen_escape_factors.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three cards: small worlds have low escape velocity; worlds near the Sun have hotter, faster gas; light gases such as hydrogen and helium escape far more easily than carbon dioxide, nitrogen or oxygen. Below: the rocky planets lost their hydrogen and helium but Venus, Earth and Mars kept heavier gases from volcanoes."
+    }
+   ]
+  },
+  {
+   "id": "escape",
+   "title": "Thermal escape by the numbers",
+   "slides": "Book 10.3, p. 293 (Mathematical Insight 10.2)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_speed_dist.webp",
+      "slide": "none (original diagram)",
+      "alt": "Graph of how many sodium atoms in the Moon's 400 K exosphere move at each speed: a hump peaking near 0.5 km/s (the peak thermal velocity) with a thin shaded tail beyond the escape velocity line at 2.4 km/s. Beside it, an animation of atoms bouncing above the ground while a few fast red ones fly off the top for good."
+     },
+     "title": "Many speeds at once",
+     "bullets": [
+      "Gas particles keep colliding, so at any moment they move at a wide range of speeds. The spread has a typical shape that depends on the temperature and the particle mass.",
+      "The most common speed, the peak of the curve, is the **peak thermal velocity**.",
+      "A particle can escape only if it reaches **escape velocity**, is moving upward and does not hit anything on the way out. Even when the peak is well below escape velocity, a small fast fraction always can, and collisions keep refilling that fast tail."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_vth_formula.webp",
+      "slide": "none (original diagram)",
+      "alt": "The formula v thermal equals the square root of 2kT over m, where T is temperature in kelvin, m the mass of one particle and k is 1.38 x 10^-23 joule per kelvin. Cards: four times the temperature doubles the speed; four times the mass halves it. Rule of thumb: a gas faster than about 20% of escape velocity is lost within a few billion years."
+     },
+     "title": "The formula",
+     "bullets": [
+      "**v_thermal = √(2kT / m)**, where T is the temperature in kelvin, m the mass of one particle and k = 1.38 x 10^-23 joule/K (Boltzmann's constant).",
+      "Hotter gas moves faster: **four times the temperature doubles the speed**. Heavier particles move slower: **four times the mass halves it**.",
+      "Rule of thumb: if a gas's peak thermal velocity is more than about **20% of the escape velocity**, it will be completely lost within a few billion years, less than the age of the solar system."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_moon_h_na.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of peak thermal speeds on the Moon at 400 K against its escape velocity of 2.4 km/s: hydrogen 2.6 km/s, past the line, so it escapes quickly; sodium 0.5 km/s, about 20% of escape, so it leaks slowly and is topped up from the surface."
+     },
+     "title": "Worked example: the Moon",
+     "bullets": [
+      "The Moon's daytime temperature is 400 K and its escape velocity is about 2.4 km/s.",
+      "Hydrogen atoms (1.67 x 10^-27 kg): v = √(2 x 1.38 x 10^-23 x 400 / 1.67 x 10^-27) ≈ 2,600 m/s = **2.6 km/s**, a little above escape velocity, so hydrogen escapes quickly.",
+      "Sodium atoms are about 23 times heavier and peak near **0.5 km/s**, only about 20% of escape velocity. They leak away slowly and are continually replaced from the surface, so the Moon has a thin **sodium exosphere**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Temperature sets the average kinetic energy per particle. At the same energy, a lighter particle must move faster."
+    },
+    {
+     "type": "trick",
+     "text": "Speed goes with the square root: x4 temperature gives x2 speed; x4 mass gives half the speed; x9 gives x3 or a third."
+    },
+    {
+     "type": "trap",
+     "text": "Thermal escape does NOT need the typical particle to reach escape velocity: the fast tail leaks away anyway (Book, Mathematical Insight 10.2, p. 293). Doubling the temperature does not double the speed; it multiplies it by √2 (about 1.4)."
+    }
+   ],
+   "sourceNotes": [
+    "Book Mathematical Insight 10.2, p. 293 (formula, Figure 1, 20% rule of thumb and the Moon example)",
+    "Original diagrams: speed distribution with escaping atoms, formula card, hydrogen vs sodium bars"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_speed_dist.webp",
+     "slide": "none (original diagram)",
+     "alt": "Graph of how many sodium atoms in the Moon's 400 K exosphere move at each speed: a hump peaking near 0.5 km/s (the peak thermal velocity) with a thin shaded tail beyond the escape velocity line at 2.4 km/s. Beside it, an animation of atoms bouncing above the ground while a few fast red ones fly off the top for good."
+    },
+    {
+     "src": "img/atmhistory/gen_vth_formula.webp",
+     "slide": "none (original diagram)",
+     "alt": "The formula v thermal equals the square root of 2kT over m, where T is temperature in kelvin, m the mass of one particle and k is 1.38 x 10^-23 joule per kelvin. Cards: four times the temperature doubles the speed; four times the mass halves it. Rule of thumb: a gas faster than about 20% of escape velocity is lost within a few billion years."
+    },
+    {
+     "src": "img/atmhistory/gen_moon_h_na.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of peak thermal speeds on the Moon at 400 K against its escape velocity of 2.4 km/s: hydrogen 2.6 km/s, past the line, so it escapes quickly; sodium 0.5 km/s, about 20% of escape, so it leaks slowly and is topped up from the surface."
+    }
+   ]
+  },
+  {
+   "id": "moonmercury",
+   "title": "The Moon and Mercury: almost airless",
+   "slides": "Book 10.3, pp. 292-294",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_exosphere_only.webp",
+      "slide": "none (original diagram)",
+      "alt": "A grey lunar landscape under a black sky with the bright Sun, labelled: black sky even in daylight, too little gas to scatter light. Cards: no absorption so no troposphere, stratosphere or thermosphere, only an exosphere; frozen, the whole atmosphere would almost fit in a dorm room; rare collisions let particles reach thousands of kilometres up."
+     },
+     "title": "Only an exosphere",
+     "bullets": [
+      "The Moon and Mercury are not completely without gas, but it is far too thin to scatter or absorb sunlight.",
+      "No scattering: even at noon you would see a **pitch-black sky** around the bright Sun.",
+      "No absorption: there is no troposphere, stratosphere or thermosphere, only an extremely thin **exosphere**.",
+      "Frozen solid, either world's whole atmosphere would almost fit in a dorm room. Collisions are so rare that particles rise as high as their speed allows, so these exospheres reach thousands of kilometres up."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_surface_ejection.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: micrometeorites, solar wind particles and solar photons hit the bare grey ground and knock atoms loose. Most atoms fly in arcs hundreds of kilometres long and land again, bouncing a few dozen times before being absorbed; a red atom fast enough to escape keeps going up."
+     },
+     "title": "Where their gas comes from",
+     "bullets": [
+      "Any gas from ancient volcanoes is long gone, lost to thermal escape (and some probably to the solar wind). Neither world has active volcanoes now.",
+      "Mercury loses gas because it is small and hot in the day; the Moon is cooler but smaller, with a lower escape velocity, so gas escapes about as easily from both.",
+      "The only ongoing source is **surface ejection** by micrometeorites, solar wind particles and solar photons. The gas never builds up: some atoms escape at once, the rest bounce in arcs hundreds of kilometres long, a few dozen times, until the surface absorbs them."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_polar_ice.webp",
+      "slide": "none (original diagram)",
+      "alt": "A cross-section of a deep crater near a pole with the Sun low on the horizon: sunlight skims over the rim and never reaches the floor, where a layer of water ice sits in permanent shadow. Notes: the ice probably came from comet impacts; there is no liquid water because there is almost no air pressure."
+     },
+     "title": "Ice in polar craters",
+     "bullets": [
+      "With almost no air pressure, liquid water cannot exist on either world, and sunlit ice would long ago have vaporized and escaped.",
+      "Yet spacecraft have confirmed an old prediction: both have **water ice at the bottoms of craters near their poles**, where the floors are in permanent shadow. The ice probably came from comet impacts and built up over millions of years.",
+      "The Moon also seems to have small amounts of water chemically bound in its upper soil over much of its surface; its origin is unknown. None of this water trades with the atmosphere today, but lunar water could be very useful to future colonists."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Light is scattered and absorbed only when there is enough gas in its path. With so few atoms, sunlight passes straight through to the ground."
+    },
+    {
+     "type": "trick",
+     "text": "Moon and Mercury: 'all exosphere, no layers, no sky colour'."
+    },
+    {
+     "type": "trap",
+     "text": "The Moon and Mercury DO have an atmosphere, just an extremely thin exosphere (Book 10.3, p. 292). Its gas comes from surface ejection, not volcanoes (p. 293). The Moon, though cooler, loses gas about as easily as Mercury because it is smaller (p. 293)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.3, pp. 292-294 ('Do the Moon and Mercury have any atmosphere?'; Figures 10.22 and 10.23)",
+    "Original diagrams: black-sky card, surface-ejection animation, shadowed polar crater"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_exosphere_only.webp",
+     "slide": "none (original diagram)",
+     "alt": "A grey lunar landscape under a black sky with the bright Sun, labelled: black sky even in daylight, too little gas to scatter light. Cards: no absorption so no troposphere, stratosphere or thermosphere, only an exosphere; frozen, the whole atmosphere would almost fit in a dorm room; rare collisions let particles reach thousands of kilometres up."
+    },
+    {
+     "src": "img/atmhistory/gen_surface_ejection.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: micrometeorites, solar wind particles and solar photons hit the bare grey ground and knock atoms loose. Most atoms fly in arcs hundreds of kilometres long and land again, bouncing a few dozen times before being absorbed; a red atom fast enough to escape keeps going up."
+    },
+    {
+     "src": "img/atmhistory/gen_polar_ice.webp",
+     "slide": "none (original diagram)",
+     "alt": "A cross-section of a deep crater near a pole with the Sun low on the horizon: sunlight skims over the rim and never reaches the floor, where a layer of water ice sits in permanent shadow. Notes: the ice probably came from comet impacts; there is no liquid water because there is almost no air pressure."
+    }
+   ]
+  },
+  {
+   "id": "marstoday",
+   "title": "Mars today",
+   "slides": "Book 10.4, pp. 294-296",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_today.webp",
+      "slide": "none (original diagram)",
+      "alt": "A red Mars with a white polar cap and four cards: air pressure under 1% of Earth's, so liquid water is unstable; mostly carbon dioxide but too little gas for a strong greenhouse; average about -50 degrees C; no ozone layer, so harsh ultraviolet reaches the ground."
+     },
+     "title": "A thin, cold desert",
+     "bullets": [
+      "Mars's surface looks like an Earth desert or volcanic plain, but its air is very different.",
+      "Pressure is **under 1% of Earth's**, so liquid water is unstable on the surface and astronauts would need pressurized suits.",
+      "The air is mostly carbon dioxide, but there is so little of it that the greenhouse effect is weak. The average temperature is about **-50°C**.",
+      "With little oxygen there is **no ozone layer**, so much of the Sun's harmful ultraviolet reaches the ground."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_seasons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Mars's stretched orbit around an off-centre Sun. On the near side Mars is closer and moving fast: southern summer is short and warm while northern winter is short and mild. On the far side it is farther and slower: southern winter is long and frigid, northern summer long and cool."
+     },
+     "title": "Uneven seasons",
+     "bullets": [
+      "Mars's axis tilt is similar to Earth's, so it has seasons. But its **more elliptical orbit** also matters.",
+      "Mars is much closer to the Sun during southern summer, so the **southern hemisphere has more extreme seasons**: short, warm summers and long, cold winters. The north has a long cool summer and a short mild winter."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_poles.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of Mars through a year: the polar cap at the winter pole grows with frozen carbon dioxide while the summer cap shrinks to its water-ice core, and white arrows show wind blowing from the summer pole toward the winter pole. Notes: the winter pole reaches about -130 degrees C, and up to a third of the atmosphere moves pole to pole."
+     },
+     "title": "Carbon dioxide swaps poles",
+     "bullets": [
+      "At the winter pole the temperature drops to about **-130°C**, cold enough for carbon dioxide to freeze into dry ice on the polar cap.",
+      "At the summer pole the dry ice vaporizes; by midsummer only a leftover cap of **water ice** remains.",
+      "The pressure rises at the summer pole and falls at the winter pole. Up to **a third** of the whole atmosphere moves between the poles each year."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_dust.webp",
+      "slide": "none (original diagram)",
+      "alt": "A dusty yellow-brown Martian sky over red ground with a tall swirling dust devil rising from the ground. Notes: dust devils are air heated from below, some 800 m or more tall; seasonal winds raise dust storms that can hide almost the whole planet; settling dust once fooled astronomers into seeing seasonal plants; without dust the sky would be nearly black."
+     },
+     "title": "Wind and dust",
+     "bullets": [
+      "The strong winds from this seasonal flow can start huge **dust storms**, especially as the more extreme southern summer approaches. At times dust hides almost the whole surface.",
+      "Settling dust can change how large areas look, which once fooled astronomers into thinking they saw plants changing with the seasons.",
+      "**Dust devils**, swirls of air heated from below by the sunlit ground, are common in summer and can be much larger than on Earth (one reached at least 800 m).",
+      "The air is so thin that without dust the sky would be nearly black; dust scatters light and gives it a **yellow-brown** colour."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_water_ice.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two cross-sections. A polar cap: a thin layer of carbon dioxide ice a few metres thick on top of a thick body of water ice. Buried ice: glaciers and dusty ice layers under a cover of rocks and dust, found by radar, with an icy cliff at 57 degrees south. Banner: melted, the known ice would cover Mars at least 20 to 30 metres deep."
+     },
+     "title": "Water locked as ice",
+     "bullets": [
+      "There is no liquid water on the surface today, but there is a lot of **water ice**.",
+      "The polar caps are mostly water ice under a thin layer (a few metres at most) of carbon dioxide ice. Radar has found vast dusty ice layers around both poles and glaciers at lower latitudes, protected by rock and dust. A cliff at 57°S exposes ice reaching within a metre or two of the surface.",
+      "Melted, all the known ice would cover Mars to an average depth of at least about **20 to 30 metres**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The air is too thin for a strong greenhouse or for liquid water: low pressure makes water boil or freeze instead of staying liquid."
+    },
+    {
+     "type": "trick",
+     "text": "Mars's weather is 'CO2 commuting' from pole to pole with the seasons."
+    },
+    {
+     "type": "trap",
+     "text": "Mars's south has the MORE extreme seasons because of its elliptical orbit, not its tilt (Book 10.4, p. 295). The leftover summer cap is WATER ice; the seasonal frost is CO2 (p. 295, Figure 10.25). Dust devils rise from the ground; they do not come down from the sky like tornadoes (p. 295)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.4, pp. 294-296 ('What is Mars like today?'; Figures 10.24-10.28)",
+    "Original diagrams: Mars fact cards, orbit and seasons, polar CO2 animation, dust, ice reservoirs"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_mars_today.webp",
+     "slide": "none (original diagram)",
+     "alt": "A red Mars with a white polar cap and four cards: air pressure under 1% of Earth's, so liquid water is unstable; mostly carbon dioxide but too little gas for a strong greenhouse; average about -50 degrees C; no ozone layer, so harsh ultraviolet reaches the ground."
+    },
+    {
+     "src": "img/atmhistory/gen_mars_seasons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Mars's stretched orbit around an off-centre Sun. On the near side Mars is closer and moving fast: southern summer is short and warm while northern winter is short and mild. On the far side it is farther and slower: southern winter is long and frigid, northern summer long and cool."
+    },
+    {
+     "src": "img/atmhistory/gen_mars_poles.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of Mars through a year: the polar cap at the winter pole grows with frozen carbon dioxide while the summer cap shrinks to its water-ice core, and white arrows show wind blowing from the summer pole toward the winter pole. Notes: the winter pole reaches about -130 degrees C, and up to a third of the atmosphere moves pole to pole."
+    },
+    {
+     "src": "img/atmhistory/gen_mars_dust.webp",
+     "slide": "none (original diagram)",
+     "alt": "A dusty yellow-brown Martian sky over red ground with a tall swirling dust devil rising from the ground. Notes: dust devils are air heated from below, some 800 m or more tall; seasonal winds raise dust storms that can hide almost the whole planet; settling dust once fooled astronomers into seeing seasonal plants; without dust the sky would be nearly black."
+    },
+    {
+     "src": "img/atmhistory/gen_mars_water_ice.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two cross-sections. A polar cap: a thin layer of carbon dioxide ice a few metres thick on top of a thick body of water ice. Buried ice: glaciers and dusty ice layers under a cover of rocks and dust, found by radar, with an icy cliff at 57 degrees south. Banner: melted, the known ice would cover Mars at least 20 to 30 metres deep."
+    }
+   ]
+  },
+  {
+   "id": "marspast",
+   "title": "How Mars's climate has changed",
+   "slides": "Book 10.4, pp. 296-297",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_tilt.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Mars's axis swings slowly from upright to tipped far over while a label counts from 0 to 60 degrees. Cards: a small tilt freezes CO2 at the poles, thinning the air and cooling Mars; a large tilt warms the summer pole and thickens the air; the swings are big because Jupiter tugs harder and the tiny moons cannot steady the axis."
+     },
+     "title": "Tilt-driven climate cycles",
+     "bullets": [
+      "Mars's climate changes little from year to year, but calculations suggest its tilt swings from about **0° to about 60°** over hundreds of thousands to millions of years.",
+      "Two reasons: **Jupiter** tugs harder on Mars's axis because Mars orbits closer to it, and Mars's tiny moons, **Phobos and Deimos**, are too small to steady its axis the way our large Moon steadies Earth's.",
+      "**Small tilt**: the poles stay frozen for tens of thousands of years; more CO2 freezes out, the air thins, the greenhouse weakens and the whole planet cools.",
+      "**Large tilt**: the summer pole warms, water ice and CO2 vaporize, the air thickens and Mars warms, though probably not enough for stable liquid water. Layers of dust and ice at the poles record these cycles."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_water_depth.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three bars showing how deep Mars's water would be as a global layer: ice known today, at least about 20-30 m; from the deuterium-to-hydrogen ratio, more than 50 m; from some geology studies, close to 500 m. A note says volcanoes should have made the air about 400 times denser than today."
+     },
+     "title": "Once warmer and wetter",
+     "bullets": [
+      "Geological evidence shows water flowed and rain fell on Mars, but only **before about 3 billion years ago**. That needs warmth and enough pressure, so early Mars must have had a much **thicker atmosphere and stronger greenhouse**.",
+      "Volcanoes should have outgassed enough CO2 to make the air about **400 times as dense** as today, and enough water for oceans tens or hundreds of metres deep.",
+      "The ratio of deuterium to hydrogen in the air suggests enough water to cover Mars **more than 50 m** deep (one reason some suspect a northern ocean); some geology studies suggest close to **500 m**."
+     ]
+    },
+    {
+     "title": "An open debate",
+     "bullets": [
+      "Models say that if today's Mars had its expected ancient CO2 and water, it would be warm enough, with enough pressure, for liquid water.",
+      "But the young Sun was dimmer, so even more greenhouse warming was needed, and its source is a mystery. Carbon dioxide ice clouds or methane might have kept Mars warm and wet for a billion years or more.",
+      "Others doubt the greenhouse was ever that strong; then Mars may have had only short rainy spells, perhaps triggered by large impacts, with lakes and oceans ice-covered for long periods."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Liquid water needs both warmth and pressure. Signs of rain mean the ancient air was much thicker than today's."
+    },
+    {
+     "type": "trick",
+     "text": "Mars has two clocks: a short tilt clock (up to millions of years) and one long one-way change (billions of years) from warm and wet to cold and dry."
+    },
+    {
+     "type": "trap",
+     "text": "Mars's tilt swings MORE than Earth's because of Jupiter and its tiny moons, not because it spins faster (Book 10.4, p. 296). Even a large tilt probably does not make liquid water stable (p. 297). The rainy period ended about 3 billion years ago (p. 297)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.4, pp. 296-297 ('How has Mars's climate differed in the past?'; Figure 10.29)",
+    "Original diagrams: Mars tilt animation, water depth bars"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_mars_tilt.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Mars's axis swings slowly from upright to tipped far over while a label counts from 0 to 60 degrees. Cards: a small tilt freezes CO2 at the poles, thinning the air and cooling Mars; a large tilt warms the summer pole and thickens the air; the swings are big because Jupiter tugs harder and the tiny moons cannot steady the axis."
+    },
+    {
+     "src": "img/atmhistory/gen_mars_water_depth.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three bars showing how deep Mars's water would be as a global layer: ice known today, at least about 20-30 m; from the deuterium-to-hydrogen ratio, more than 50 m; from some geology studies, close to 500 m. A note says volcanoes should have made the air about 400 times denser than today."
+    }
+   ]
+  },
+  {
+   "id": "marschange",
+   "title": "Why Mars changed",
+   "slides": "Book 10.4, pp. 297-299",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_past.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels. Early Mars: a hot glowing core, a thick blue halo of air, lots of volcanism, a magnetic field shielding the air, a strong greenhouse with rain and rivers. Mars today: a cooled core, a thin halo, little volcanism, no global magnetic field so the solar wind strips the air, a weak greenhouse."
+     },
+     "title": "Interior cooling and a lost shield",
+     "bullets": [
+      "Mars must have lost most of the CO2 that once filled its air, weakening the greenhouse until the planet froze.",
+      "The leading idea links this to its **magnetic field**. Early on, convecting molten metal in its core and its rotation should have made a magnetic field and a protective magnetosphere.",
+      "As the small planet cooled, core convection stopped and the field weakened. Sunlight or chemistry split CO2 molecules into carbon and oxygen atoms, and the **solar wind stripped** them away."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_co2_fate.webp",
+      "slide": "none (original diagram)",
+      "alt": "Mars with arrows of gas leaving into space toward the solar wind from the Sun. Labels: most of the carbon dioxide was lost to space, split into carbon and oxygen atoms and swept off by the solar wind once the magnetic field faded; some froze into the polar caps; some is locked into carbonate rocks."
+     },
+     "title": "Where the carbon dioxide went",
+     "bullets": [
+      "Some CO2 condensed into the **polar caps**; orbiters and rovers show some is locked in **carbonate rocks**. But the **bulk was probably lost to space**.",
+      "NASA's **MAVEN** orbiter (at Mars since 2014) measures carbon and oxygen atoms escaping today. Working back from the present loss rate confirms Mars once had far more CO2. The EscaPADE mission's two orbiters will build on these results."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_mars_water_loss.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a wavy ultraviolet ray hits a water molecule; the two hydrogen atoms fly off upward and the oxygen sinks toward the red rocky ground. Labels: 1, with no ozone layer, ultraviolet splits water; 2, light hydrogen escapes to space so the water cannot re-form; 3, the oxygen goes too, some to the solar wind and the rest into rusting rock. Loss speeds up in southern summer."
+     },
+     "title": "Where the water went",
+     "bullets": [
+      "Some water is frozen in the caps and underground and some may be bound in crustal rocks, but most is probably **gone for good**, lost in a different way from the CO2.",
+      "Without an ultraviolet-absorbing stratosphere, **UV photons split water molecules**; the light **hydrogen** then escaped by **thermal escape**, so the water could never re-form. MAVEN sees this hydrogen loss, faster in southern summer when warmth and dust storms lift water higher.",
+      "The leftover oxygen went too: some to the solar wind, the rest into **chemical reactions with surface rock**, literally rusting Mars and giving the red planet its colour."
+     ]
+    },
+    {
+     "title": "Saltier, more acidic water",
+     "bullets": [
+      "Older sediments seem to have formed in purer water than younger ones.",
+      "A simple explanation: volcanoes released sulfur gases that dissolved in the water, making it more acidic so it could dissolve more salts. Over time Martian water became saltier and more acidic. Rover studies agree: low-lying rocks explored by Curiosity formed in purer water than rocks higher up or at the Opportunity site."
+     ]
+    },
+    {
+     "title": "Size was the critical factor",
+     "bullets": [
+      "Mars was big enough for volcanoes to release water and gas early on, but **too small to keep the internal heat** needed to hold them.",
+      "As it cooled, outgassing slowed, while weak gravity and the lost magnetic field let gas be stripped away. An Earth-sized Mars might have a moderate climate today; a Mars closer to the Sun might still have flowing water.",
+      "A world with streams, rain, lakes and perhaps oceans became a frozen desert at least 3 billion years ago, a warning of how drastically a climate can change."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Small planets cool fast: a cold core stops the magnetic dynamo and the volcanoes, so the shield goes and the supply of new gas dries up together."
+    },
+    {
+     "type": "trick",
+     "text": "Mars lost its CO2 to the WIND (solar wind stripping) and its water to the SUN (UV splitting, then hydrogen escape)."
+    },
+    {
+     "type": "trap",
+     "text": "Mars's CO2 went mostly to SPACE, not into the polar caps (Book 10.4, p. 297). Water was lost mainly by UV splitting and hydrogen escape, not by the solar wind (p. 299). Releasing the polar-cap CO2 ('terraforming') could not restore the old atmosphere, because most of it is gone (Think About It, p. 299)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.4, pp. 297-299 ('Why did Mars change?'; Figures 10.30 and 10.31)",
+    "Original diagrams: early vs today panels, fate of CO2, water-loss animation"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_mars_past.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels. Early Mars: a hot glowing core, a thick blue halo of air, lots of volcanism, a magnetic field shielding the air, a strong greenhouse with rain and rivers. Mars today: a cooled core, a thin halo, little volcanism, no global magnetic field so the solar wind strips the air, a weak greenhouse."
+    },
+    {
+     "src": "img/atmhistory/gen_mars_co2_fate.webp",
+     "slide": "none (original diagram)",
+     "alt": "Mars with arrows of gas leaving into space toward the solar wind from the Sun. Labels: most of the carbon dioxide was lost to space, split into carbon and oxygen atoms and swept off by the solar wind once the magnetic field faded; some froze into the polar caps; some is locked into carbonate rocks."
+    },
+    {
+     "src": "img/atmhistory/gen_mars_water_loss.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a wavy ultraviolet ray hits a water molecule; the two hydrogen atoms fly off upward and the oxygen sinks toward the red rocky ground. Labels: 1, with no ozone layer, ultraviolet splits water; 2, light hydrogen escapes to space so the water cannot re-form; 3, the oxygen goes too, some to the solar wind and the rest into rusting rock. Loss speeds up in southern summer."
+    }
+   ]
+  },
+  {
+   "id": "venustoday",
+   "title": "Venus today",
+   "slides": "Book 10.5, pp. 299-300",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_venus_today.webp",
+      "slide": "none (original diagram)",
+      "alt": "A dim orange view of Venus's surface: overcast reddish-orange sky over dark ground, about 470 degrees C day and night. Cards: pressure 90 times Earth's, like nearly 1 km under the ocean; hotter than a self-cleaning oven; almost all carbon dioxide with no oxygen; air about 10% as dense as water."
+     },
+     "title": "On the surface",
+     "bullets": [
+      "Venus kept more interior heat than Mars because it is larger, so it had more volcanism, and outgassing released the huge amount of CO2 behind its strong greenhouse effect.",
+      "On the surface: heat beyond a self-cleaning oven and pressure **90 times Earth's**, like being nearly 1 km under the ocean.",
+      "The air is almost all **carbon dioxide** with virtually no oxygen, so it is unbreathable even if cooled.",
+      "The air is about **10% as dense as water**: moving through it would be like swimming and flying at once. The thick air scatters away nearly all blue light, so the dim overcast sky looks **reddish-orange**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_venus_weather.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two bands. High up, about 400 degrees C cooler than the ground: sulfuric acid clouds, acid rain that evaporates at least 30 km above the surface, winds that circle the planet in 4 days. At the surface: slow 243-day rotation, weak Coriolis effect, winds of a few km/h, no storms or rain. Cards: two big cells, same temperature everywhere, no seasons."
+     },
+     "title": "Dull weather below, lively above",
+     "bullets": [
+      "Venus spins slowly (243 Earth days), so its **Coriolis effect is very weak**: little surface wind (the Venera landers measured at most about 6 km/h) and never any hurricane-like storms. Venus has just **two large circulation cells**.",
+      "No rain reaches the ground: drops falling from the cool upper air evaporate first.",
+      "The thick air moves heat so well that the temperature is the same everywhere: poles as hot as the equator, night as hot as day. Virtually **no axis tilt** means no seasons (its listed tilt of 177.3° is nearly 180°, the same as 0° upside down, because Venus spins backward).",
+      "Higher up, where it is about 400°C cooler, **sulfuric acid** condenses into the bright clouds; acid rain evaporates at least 30 km above the surface. High winds circle the planet in just **4 days**, much faster than it rotates; no one knows why."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Slow spin means a weak Coriolis effect, so there is nothing to split the cells or spin up storms; thick air means heat is spread evenly."
+    },
+    {
+     "type": "trick",
+     "text": "Venus surface forecast: 'hot, heavy, still and dry, every day, everywhere'."
+    },
+    {
+     "type": "trap",
+     "text": "Venus's surface winds are WEAK; the fast 4-day winds are high in the clouds (Book 10.5, p. 300). Venus's tilt of 177° means essentially NO tilt, not a huge one (p. 300 footnote). The rain is sulfuric acid and never reaches the ground (p. 300)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.5, pp. 299-300 ('What is Venus like today?'; Figures 10.32 and 10.33)",
+    "Original diagrams: Venus surface cards, weather at two heights"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_venus_today.webp",
+     "slide": "none (original diagram)",
+     "alt": "A dim orange view of Venus's surface: overcast reddish-orange sky over dark ground, about 470 degrees C day and night. Cards: pressure 90 times Earth's, like nearly 1 km under the ocean; hotter than a self-cleaning oven; almost all carbon dioxide with no oxygen; air about 10% as dense as water."
+    },
+    {
+     "src": "img/atmhistory/gen_venus_weather.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two bands. High up, about 400 degrees C cooler than the ground: sulfuric acid clouds, acid rain that evaporates at least 30 km above the surface, winds that circle the planet in 4 days. At the surface: slow 243-day rotation, weak Coriolis effect, winds of a few km/h, no storms or rain. Cards: two big cells, same temperature everywhere, no seasons."
+    }
+   ]
+  },
+  {
+   "id": "venusgases",
+   "title": "Where Venus's water and CO2 went",
+   "slides": "Book 10.5, pp. 300-302",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_co2_inventory.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two bar pairs. Venus: a tall bar of carbon dioxide in the air (nearly 200,000 times Earth's air) and almost none in rock, because it has no oceans. Earth: almost none in the air and a tall bar locked in carbonate rocks such as limestone. Title: about the same total carbon dioxide, stored in different places."
+     },
+     "title": "Same gases, different storage",
+     "bullets": [
+      "Distance alone does not explain Venus's heat: its bright clouds reflect so much sunlight that without a greenhouse effect Venus would be quite cold.",
+      "The real cause is the huge amount of CO2 in its air, nearly **200,000 times** as much as in Earth's.",
+      "Venus and Earth are similar in size and make-up, so both should have outgassed similar amounts of water and CO2. Earth's water rained into oceans; its CO2 dissolved in water and formed **carbonate rocks** such as limestone.",
+      "Earth has about 200,000 times as much CO2 locked in rocks as in its air, so it has almost as much total CO2 as Venus. If it were in our air, Earth would be nearly as hot as Venus."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_venus_deuterium.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two boxes of hydrogen atoms (small white dots) with a few heavier deuterium atoms (larger purple dots). At the start there are many hydrogen atoms; after ultraviolet splits water and most hydrogen escapes, few hydrogen atoms remain but the deuterium is still there. Note: deuterium makes up about 100 times more of the hydrogen on Venus than on Earth."
+     },
+     "title": "The missing water",
+     "bullets": [
+      "Venus is incredibly dry: too hot for liquid water, ice or even water bound in surface rock, with very little in its air. Its total water is about **100,000 times less** than Earth's.",
+      "That is why its CO2 stays in the air: without oceans, CO2 cannot dissolve or be locked away in carbonate rock.",
+      "Leading idea: solar **ultraviolet split** the water molecules, the **hydrogen escaped** by thermal escape, and the oxygen was lost to reactions with rock and to **solar wind stripping** (Venus has no magnetic field to protect it).",
+      "Evidence: **deuterium**, hydrogen with an extra neutron (about 1 in 6,400 hydrogen atoms in Earth's oceans), is twice as heavy and escapes less easily. On Venus the fraction of deuterium is **about 100 times higher** than on Earth, so a lot of hydrogen from water has been lost to space."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Oceans are the key: they rain the water out of the air (protecting it from UV) and pull CO2 into rock. No oceans means water is destroyed and CO2 piles up."
+    },
+    {
+     "type": "trick",
+     "text": "Earth hid its CO2 in rock; Venus kept its CO2 in the sky."
+    },
+    {
+     "type": "trap",
+     "text": "Venus would be COLD without its greenhouse effect, because its clouds reflect so much sunlight (Book 10.5, p. 300). Earth has nearly as much CO2 as Venus, mostly in carbonate rocks (p. 301). Heavy water behaves chemically like ordinary water; the deuterium stays behind only because it is heavier and escapes less easily (p. 301)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.5, pp. 300-302 ('How did Venus get so hot?': the fate of outgassed water and carbon dioxide)",
+    "Original diagrams: CO2 storage on Venus and Earth, deuterium enrichment"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_co2_inventory.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two bar pairs. Venus: a tall bar of carbon dioxide in the air (nearly 200,000 times Earth's air) and almost none in rock, because it has no oceans. Earth: almost none in the air and a tall bar locked in carbonate rocks such as limestone. Title: about the same total carbon dioxide, stored in different places."
+    },
+    {
+     "src": "img/atmhistory/gen_venus_deuterium.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two boxes of hydrogen atoms (small white dots) with a few heavier deuterium atoms (larger purple dots). At the start there are many hydrogen atoms; after ultraviolet splits water and most hydrogen escapes, few hydrogen atoms remain but the deuterium is still there. Note: deuterium makes up about 100 times more of the hydrogen on Venus than on Earth."
+    }
+   ]
+  },
+  {
+   "id": "runaway",
+   "title": "The runaway greenhouse effect",
+   "slides": "Book 10.5, pp. 301-302",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_feedback.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two loops. Self-reinforcing (positive) feedback: speaker sound, microphone picks it up, louder from the speaker, round and round into a screech. Self-regulating (negative) feedback: the screech makes the person move the microphone away and the sound calms. Note: runaway warming is self-reinforcing; Earth's CO2 cycle is self-regulating."
+     },
+     "title": "Feedback",
+     "bullets": [
+      "A **feedback process** is one where a change amplifies or counteracts itself.",
+      "**Self-reinforcing (positive) feedback** amplifies itself, like a microphone held too close to a speaker that ends in a screech.",
+      "**Self-regulating (negative) feedback** pushes back, like the embarrassed person moving the microphone away."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_runaway.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a loop of four boxes with a dot racing around it: stronger sunlight adds about 30 degrees C (15 to 45); more evaporation and warm air holding more vapour; more water vapour, a greenhouse gas; stronger greenhouse, even hotter. Beside it a thermometer climbs while an ocean shrinks to nothing. End: oceans boil away, carbonate rocks release CO2, Earth becomes hotter than Venus."
+     },
+     "title": "Move Earth to Venus's orbit",
+     "bullets": [
+      "Stronger sunlight would quickly raise Earth's average temperature by about **30°C**, from 15°C to about 45°C, still below boiling.",
+      "More water would evaporate, and warmer air can hold more vapour. Water vapour is a greenhouse gas, so the greenhouse strengthens and the temperature climbs, which adds even more vapour: a self-reinforcing loop, a **runaway greenhouse effect**.",
+      "It would run until the oceans were gone and the carbonate rocks had released all their CO2, leaving Earth **hotter than Venus**. Then UV would split the water vapour and the hydrogen would escape: Earth would become another Venus."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_early_venus.webp",
+      "slide": "none (original diagram)",
+      "alt": "A timeline for Venus. About 4 billion years ago, with a fainter Sun, sunlight on Venus was about like Earth's today: rain, oceans, maybe life were possible. As the Sun brightened, a runaway greenhouse evaporated the water, ultraviolet split it and the hydrogen escaped. Today any ocean is gone and resurfacing has erased the evidence."
+     },
+     "title": "A pleasant early Venus?",
+     "bullets": [
+      "Venus is only about **30% closer** to the Sun, but that was critical: Earth was cool enough for rain and oceans that locked CO2 in rock; on Venus oceans either never formed or soon evaporated.",
+      "About 4 billion years ago the young Sun was dimmer, and sunlight on Venus was not much stronger than on Earth today, so rain, oceans and even life might have existed.",
+      "As the Sun brightened, the runaway greenhouse evaporated the water, UV split it and the hydrogen escaped. Global repaving by tectonics and volcanism has erased any shorelines, so we may never know for sure. Had Earth formed a bit closer to the Sun, it might have met the same fate."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water vapour is both the result of warming and a cause of more warming, so once evaporation outpaces rain the loop feeds itself."
+    },
+    {
+     "type": "trick",
+     "text": "Runaway loop: Hotter, more vapour, hotter, more vapour... until the oceans are gone."
+    },
+    {
+     "type": "trap",
+     "text": "The runaway starts well BELOW boiling (about 45°C), because warmer air holds more water vapour (Book 10.5, p. 301). Moving Venus to Earth's orbit would NOT make it Earth-like: its water is already gone (Think About It, p. 302). 'Positive' feedback means self-reinforcing, not 'good' (p. 301)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.5, pp. 301-302 ('The Runaway Greenhouse Effect'; Figure 10.34; 'A Pleasant Early Venus?')",
+    "Original diagrams: feedback loops, runaway animation, Venus timeline"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_feedback.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two loops. Self-reinforcing (positive) feedback: speaker sound, microphone picks it up, louder from the speaker, round and round into a screech. Self-regulating (negative) feedback: the screech makes the person move the microphone away and the sound calms. Note: runaway warming is self-reinforcing; Earth's CO2 cycle is self-regulating."
+    },
+    {
+     "src": "img/atmhistory/gen_runaway.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a loop of four boxes with a dot racing around it: stronger sunlight adds about 30 degrees C (15 to 45); more evaporation and warm air holding more vapour; more water vapour, a greenhouse gas; stronger greenhouse, even hotter. Beside it a thermometer climbs while an ocean shrinks to nothing. End: oceans boil away, carbonate rocks release CO2, Earth becomes hotter than Venus."
+    },
+    {
+     "src": "img/atmhistory/gen_early_venus.webp",
+     "slide": "none (original diagram)",
+     "alt": "A timeline for Venus. About 4 billion years ago, with a fainter Sun, sunlight on Venus was about like Earth's today: rain, oceans, maybe life were possible. As the Sun brightened, a runaway greenhouse evaporated the water, ultraviolet split it and the hydrogen escaped. Today any ocean is gone and resurfacing has erased the evidence."
+    }
+   ]
+  },
+  {
+   "id": "earthair",
+   "title": "How Earth's atmosphere became unique",
+   "slides": "Book 10.6, pp. 302-303",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_earth_answers.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards. Water: Earth was cool enough for vapour to rain into oceans, maybe 4.3-4.4 billion years ago. Carbon dioxide: the oceans dissolved it into carbonate rocks. Nitrogen and oxygen: nitrogen was the volcanic gas left behind, oxygen comes from life. Stratosphere: life's oxygen made ozone, which absorbs ultraviolet."
+     },
+     "title": "Four questions",
+     "bullets": [
+      "Earth's nitrogen-oxygen air gives just enough warmth and pressure for water to exist as ice, liquid and vapour, shields us from harmful solar radiation and makes our weather.",
+      "Outgassing should have released the same gases on Venus, Earth and Mars, so why is Earth's air different? Four questions: why Earth kept its water; why it has so little CO2; why its air is mostly N₂ and O₂; and why it has an ultraviolet-absorbing stratosphere.",
+      "**Water**: on Mars some was split by UV and the rest froze; on Venus it was too hot to condense, so nearly all was split and the hydrogen escaped. Earth was **cool enough for vapour to rain into oceans**, perhaps as early as 4.3-4.4 billion years ago (from tiny mineral grains)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_co2_storage.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three bars on a stretched scale comparing Earth's carbon dioxide with the amount in the air: atmosphere 1; dissolved in the oceans about 60 times as much; in carbonate rocks about 170,000 times as much. Note: if all of it were in the air, Earth would be nearly as hot as Venus."
+     },
+     "title": "Carbon dioxide went into the sea and rocks",
+     "bullets": [
+      "Most of Earth's outgassed CO2 dissolved in the oceans, where chemical reactions turned it into carbonate rocks.",
+      "Even today the oceans hold about **60 times** as much CO2 as the air, and carbonate rocks about **170,000 times** as much.",
+      "**Nitrogen** (78%) is easy: it is the third most common volcanic gas after water vapour and CO2. With the water in oceans and the CO2 in rocks, nitrogen was left as the main gas."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_oxygen_life.webp",
+      "slide": "none (original diagram)",
+      "alt": "Ocean and land below, an ozone band on top. Green arrows rise from ocean life and land plants: photosynthesis takes in carbon dioxide and releases oxygen. Ultraviolet turns some oxygen into ozone, which absorbs ultraviolet and shields the surface. Note: fire, rust and browning fruit remove oxygen; without life it would be gone in a few million years."
+     },
+     "title": "Oxygen and ozone come from life",
+     "bullets": [
+      "Oxygen (21%) is a puzzle: molecular oxygen is not made by outgassing or any geological process, and it is highly reactive. Fire, rust and browning cut fruit are **oxidation reactions** that remove it; similar reactions redden rocks such as those of the Grand Canyon.",
+      "Without constant replacement, oxygen would vanish in a few million years. The answer is **life**: photosynthesis takes in CO2 and releases O₂.",
+      "It took at least a billion years of photosynthesis before oxygen began to build up, and there has probably been enough to breathe only for the past few hundred million years. Today life adds oxygen about as fast as animals and chemical reactions use it.",
+      "Ultraviolet turns some O₂ into **ozone (O₃)**, which absorbs UV even better, heats the upper air to make the **stratosphere** and shields the surface. Mars and Venus lack photosynthetic life, so they have too little O₂ and ozone for a stratosphere."
+     ]
+    },
+    {
+     "title": "Ozone: good or bad?",
+     "bullets": [
+      "Near the ground, ozone is a main ingredient of urban smog from cars and industry, and it is poisonous to most living things.",
+      "High in the stratosphere, natural ozone is a vital shield against solar ultraviolet. That is why chemicals that destroy it, such as **CFCs** (chlorofluorocarbons), have been a serious environmental problem."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Liquid water is the hinge: oceans saved the water from UV, pulled out the CO2 and let life arise, and life then made the oxygen and ozone."
+    },
+    {
+     "type": "trick",
+     "text": "Earth's air recipe: water to the oceans, CO2 to the rocks, N₂ left over, O₂ from life, O₃ from O₂."
+    },
+    {
+     "type": "trap",
+     "text": "Oxygen does NOT come from volcanoes or any geological process; only life makes it (Book 10.6, p. 302). Nitrogen is only the third most common volcanic gas; it dominates because water and CO2 were removed (p. 302). Ground-level ozone is a pollutant even though stratospheric ozone protects us (Common Misconceptions, p. 303)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.6, pp. 302-303 ('How did Earth's atmosphere end up so different?'; Figure 10.35; Common Misconceptions: ozone)",
+    "Original diagrams: four answers, CO2 storage bars, oxygen and ozone from life"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_earth_answers.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards. Water: Earth was cool enough for vapour to rain into oceans, maybe 4.3-4.4 billion years ago. Carbon dioxide: the oceans dissolved it into carbonate rocks. Nitrogen and oxygen: nitrogen was the volcanic gas left behind, oxygen comes from life. Stratosphere: life's oxygen made ozone, which absorbs ultraviolet."
+    },
+    {
+     "src": "img/atmhistory/gen_co2_storage.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three bars on a stretched scale comparing Earth's carbon dioxide with the amount in the air: atmosphere 1; dissolved in the oceans about 60 times as much; in carbonate rocks about 170,000 times as much. Note: if all of it were in the air, Earth would be nearly as hot as Venus."
+    },
+    {
+     "src": "img/atmhistory/gen_oxygen_life.webp",
+     "slide": "none (original diagram)",
+     "alt": "Ocean and land below, an ozone band on top. Green arrows rise from ocean life and land plants: photosynthesis takes in carbon dioxide and releases oxygen. Ultraviolet turns some oxygen into ozone, which absorbs ultraviolet and shields the surface. Note: fire, rust and browning fruit remove oxygen; without life it would be gone in a few million years."
+    }
+   ]
+  },
+  {
+   "id": "thermostat",
+   "title": "The CO2 cycle: Earth's thermostat",
+   "slides": "Book 10.6, pp. 303-304",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_co2_cycle.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of a carbon atom travelling around a loop: 1, carbon dioxide dissolves in rain making a mild acid; 2, the rain wears down rock and rivers carry minerals to the sea; 3, the minerals and dissolved CO2 form carbonate rock such as limestone; 4, plate tectonics carries it down at a subduction zone; 5, it melts and frees the CO2; 6, volcanoes outgas it again."
+     },
+     "title": "The cycle",
+     "bullets": [
+      "Earth's climate has stayed in the range for liquid water for about 4 billion years, even though the Sun has brightened about 30%. The greenhouse effect must adjust itself. The mechanism is the **carbon dioxide (CO2) cycle**:",
+      "Atmospheric CO2 dissolves in **rainwater**, making a mild acid. The acid rain wears down rock on the continents and **rivers** carry the minerals to the sea.",
+      "In the oceans, calcium from those minerals combines with dissolved CO2 and settles to the floor as **carbonate rock** such as limestone (in the last half billion years mostly as seashells; before that by chemistry alone).",
+      "Over millions of years **plate tectonics** carries the carbonate rock to subduction zones; deep down some of it melts and releases its CO2, which **volcanoes** outgas back into the air."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_thermostat.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two chains of boxes. Too warm: more evaporation and rain, more CO2 dissolved and turned into carbonate rock, less CO2 in the air, weaker greenhouse, Earth cools. Too cool: less rain, less CO2 removed, volcanic CO2 builds up, stronger greenhouse, Earth warms. Note: far too slow to cause or fix today's rapid change."
+     },
+     "title": "Self-regulating feedback",
+     "bullets": [
+      "The rate at which CO2 is pulled out of the air rises with temperature.",
+      "**Too warm**: more evaporation and rain, so more CO2 dissolves and forms carbonates; atmospheric CO2 falls, the greenhouse weakens and Earth cools back.",
+      "**Too cool**: less rain, so less CO2 is removed; volcanic CO2 builds up, the greenhouse strengthens and Earth warms back.",
+      "The cycle takes **hundreds of thousands of years** to stabilize CO2. It works on geological time scales, so it is neither the cause of nor the cure for today's rapid change."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The thermostat works because the CO2 'removal' step (rain and rock weathering) speeds up when it is warm and slows down when it is cool, while volcanoes keep adding CO2 at a steady pace."
+    },
+    {
+     "type": "trick",
+     "text": "Rain, Rivers, Rock, Recycle (subduction), Release (volcanoes)."
+    },
+    {
+     "type": "trap",
+     "text": "The CO2 cycle is SELF-REGULATING (negative feedback), the opposite of a runaway (Book 10.6, p. 304). It is far too slow to remove the CO2 people are adding now (p. 304). Plate tectonics is essential: without subduction the carbonate rock would never return its CO2 (Figure 10.36)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.6, pp. 303-304 ('Why does Earth's climate stay relatively stable?'; Figures 10.36 and 10.37)",
+    "Original diagrams: CO2 cycle animation, thermostat chains"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_co2_cycle.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of a carbon atom travelling around a loop: 1, carbon dioxide dissolves in rain making a mild acid; 2, the rain wears down rock and rivers carry minerals to the sea; 3, the minerals and dissolved CO2 form carbonate rock such as limestone; 4, plate tectonics carries it down at a subduction zone; 5, it melts and frees the CO2; 6, volcanoes outgas it again."
+    },
+    {
+     "src": "img/atmhistory/gen_thermostat.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two chains of boxes. Too warm: more evaporation and rain, more CO2 dissolved and turned into carbonate rock, less CO2 in the air, weaker greenhouse, Earth cools. Too cool: less rain, less CO2 removed, volcanic CO2 builds up, stronger greenhouse, Earth warms. Note: far too slow to cause or fix today's rapid change."
+    }
+   ]
+  },
+  {
+   "id": "iceages",
+   "title": "Ice ages, snowball Earth and the far future",
+   "slides": "Book 10.6, pp. 304-306",
+   "steps": [
+    {
+     "title": "Ice ages",
+     "bullets": [
+      "Earth's climate still varies because the CO2 cycle is slow to respond.",
+      "An **ice age** comes when the global average temperature drops by just a few degrees: more snow falls and ice spreads to fairly low latitudes. The northern United States was buried in glaciers at the peak of the last ice age, which ended only about **12,000 years** ago.",
+      "Over tens to hundreds of millions of years, the brightening Sun and moving continents influence climate. Over the past few million years, ice ages seem driven mainly by **Milankovitch cycles**, small changes in tilt, rotation and orbit, amplified by greenhouse feedbacks into ice ages and warmer **interglacial** periods."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_snowball.webp",
+      "slide": "none (original diagram)",
+      "alt": "A cycle of five boxes around an icy Earth: a long cold spell starts freezing the oceans; ice reflects up to about 90% of sunlight, more cooling, a snowball; ice-covered oceans cannot take up CO2 so volcanic CO2 builds up; the strong greenhouse melts the ice and dark water absorbs more, a hothouse; the CO2 cycle restarts and returns to normal."
+     },
+     "title": "Snowball Earth",
+     "bullets": [
+      "Between about **750 and 580 million years ago**, glaciers may have reached the equator. Ice reflects up to about 90% of sunlight, so more ice meant more cooling: a self-reinforcing plunge into a **snowball Earth** (some models say -50°C, oceans frozen a kilometre or more deep; others say a slushy 'slushball').",
+      "Escape: Earth's interior heat kept volcanoes outgassing CO2, and ice-covered oceans could not absorb it. After perhaps 10 million years the greenhouse melted the ice; dark water absorbed more sunlight and Earth swung into a **hothouse**, perhaps over 50°C, within a few centuries. The CO2 cycle then restored balance over hundreds of thousands of years.",
+      "The end of these episodes roughly coincides with the **Cambrian explosion** of life; the harsh conditions may have spurred evolution."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_earth_future.webp",
+      "slide": "none (original diagram)",
+      "alt": "A timeline (not to scale): for 4 billion years Earth kept liquid water although the Sun brightened about 30%; snowball Earth episodes 750-580 million years ago; the last ice age ended 12,000 years ago; in about a billion years the warming Sun may start removing water; in 3-4 billion years sunlight will be as strong as on Venus today and a runaway greenhouse follows."
+     },
+     "title": "The far future",
+     "bullets": [
+      "Earth's climate has stayed suitable for life for some 4 billion years, but the Sun keeps brightening.",
+      "Some models say Earth could start losing its water in about **a billion years**; others say the CO2 cycle could hold on longer.",
+      "By about **3 to 4 billion years** from now sunlight on Earth will be as strong as on Venus today: a runaway greenhouse will make Earth a Venus-like hothouse. So Earth stays habitable for somewhere between 1 and 4 billion more years."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Ice is both a result of cold and a cause of more cold, because it reflects sunlight; that self-reinforcing loop can tip Earth into a snowball."
+    },
+    {
+     "type": "trick",
+     "text": "Snowball to hothouse: volcanoes never stop, so CO2 always wins in the end."
+    },
+    {
+     "type": "trap",
+     "text": "Earth escaped snowball phases because volcanic CO2 built up, not because the Sun suddenly brightened (Book 10.6, p. 305). The last ice age ended about 12,000 years ago, not millions (p. 305). The far-future runaway greenhouse is 1-4 billion years away, not a near-term threat (p. 306)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.6, pp. 304-306 (snowball Earth, ice ages and long-term climate change, Earth's long-term future climate; Figure 10.38)",
+    "Original diagrams: snowball cycle, Earth climate timeline"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_snowball.webp",
+     "slide": "none (original diagram)",
+     "alt": "A cycle of five boxes around an icy Earth: a long cold spell starts freezing the oceans; ice reflects up to about 90% of sunlight, more cooling, a snowball; ice-covered oceans cannot take up CO2 so volcanic CO2 builds up; the strong greenhouse melts the ice and dark water absorbs more, a hothouse; the CO2 cycle restarts and returns to normal."
+    },
+    {
+     "src": "img/atmhistory/gen_earth_future.webp",
+     "slide": "none (original diagram)",
+     "alt": "A timeline (not to scale): for 4 billion years Earth kept liquid water although the Sun brightened about 30%; snowball Earth episodes 750-580 million years ago; the last ice age ended 12,000 years ago; in about a billion years the warming Sun may start removing water; in 3-4 billion years sunlight will be as strong as on Venus today and a runaway greenhouse follows."
+    }
+   ]
+  },
+  {
+   "id": "evidence",
+   "title": "The evidence for human-caused warming",
+   "slides": "Book 10.6, pp. 306-308",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_two_facts.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two boxes joined by arrows to a conclusion. Fact 1: carbon dioxide and other greenhouse gases trap heat. Fact 2: human activity, mainly burning coal, oil and gas, is adding a lot more of them. Conclusion: warming is inevitable, and measurements show it is happening."
+     },
+     "title": "Simple basic science",
+     "bullets": [
+      "Past rapid changes (several degrees in decades, sea level up or down tens of metres) had natural causes: orbit and tilt changes, big eruptions, CO2 released from oceans. Today's change has a new cause: **human activity** is rapidly raising CO2 and other greenhouse gases.",
+      "**Fact 1**: CO2 and other greenhouse gases trap heat, making a world warmer than it would otherwise be (shown by laboratory measurements and planetary studies).",
+      "**Fact 2**: human activity, especially burning fossil fuels (coal, oil and gas), is adding much more CO2 and other greenhouse gases to the air.",
+      "**Inevitable conclusion**: global warming must follow. The global average temperature has already risen by about **1.1°C** (the 2021 IPCC report: 0.8 to 1.3°C caused by people)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_co2_record.webp",
+      "slide": "none (original diagram)",
+      "alt": "Sketch of carbon dioxide over the past 800,000 years: a blue line rising and falling in long cycles but never above about 280 parts per million, then a red line shooting straight up to over 420 ppm today. Note: low CO2 matches ice ages, high CO2 warm interglacial periods; temperature rises and falls with CO2."
+     },
+     "title": "The CO2 record",
+     "bullets": [
+      "Air bubbles trapped in **Antarctic ice cores** record CO2 for the past 800,000 years; direct measurements began in the late 1950s (Charles Keeling, so the graph is called the **Keeling curve**).",
+      "For 800,000 years CO2 **never exceeded about 280 parts per million (ppm)** until the industrial age began around 1750. It is now **over 420 ppm**, a rise of more than 50%, and still climbing fast.",
+      "CO2 and temperature have risen and fallen **together** throughout those 800,000 years: low CO2 with ice ages, high CO2 with warm interglacials."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_three_evidence.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three cards. 1, the amounts match: human CO2 release has risen in step with the concentration and a little under half of it stays in the air, while natural sources give only about 1% of what is needed. 2, oxygen in the air is dropping slightly, as burning fuel predicts. 3, the carbon isotope mix has shifted toward that of fossil fuels."
+     },
+     "title": "Proof the extra CO2 is ours",
+     "bullets": [
+      "**1. The amounts match.** Human CO2 emissions have risen in step with the concentration and easily account for it; a little less than half stays in the air and the rest goes into the oceans and ground. Natural sources such as volcanoes and the oceans supply only about **1%** of what would be needed.",
+      "**2. Oxygen is dropping.** Burning fossil fuels uses oxygen, and the expected small drop in oxygen in the air and oceans is measured.",
+      "**3. The carbon fingerprint.** The ratio of carbon-12, carbon-13 and carbon-14 in atmospheric CO2 has shifted in a way explained only by adding carbon with the distinctive isotope mix of **fossil fuels**. Perhaps the most convincing evidence of all."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_models.webp",
+      "slide": "none (original diagram)",
+      "alt": "Sketch of global temperature since 1850: a jagged black observed line rising to about plus 1.1 degrees C, a purple line for models that include human greenhouse gases following it closely, and a flat green line for models with only the Sun and volcanoes that does not match the rise."
+     },
+     "title": "Models confirm it",
+     "bullets": [
+      "Climate models are computer simulations of Earth. Models that include **only natural factors** (changes in the Sun's brightness and volcanoes) do not match the temperatures measured since 1850.",
+      "Models that **also include the human greenhouse gases** match the data remarkably well.",
+      "So scientists are nearly unanimous: humans are causing the current warming. Without rapid, dramatic changes, people alive by the end of this century will live in the warmest climate any generation of Homo sapiens has known.",
+      "The idea is old: in 1896 Svante Arrhenius calculated that doubling CO2 would warm Earth by about 5°C and that burning coal already added about as much CO2 each year as volcanoes; Eunice Newton Foote had studied the greenhouse effect 40 years before. Modern models agree with him: a few degrees for a doubling."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The argument has two independent legs: the physics (greenhouse gases trap heat) and the measurements (we are adding them and the world is warming as predicted)."
+    },
+    {
+     "type": "trick",
+     "text": "Three fingerprints of our CO2: the Amount matches, the Oxygen drops, the Isotopes point to fossil fuels (A-O-I)."
+    },
+    {
+     "type": "trap",
+     "text": "The greenhouse effect itself is NOT bad: without it Earth would freeze; the problem is too much of it, as Venus shows (Book 10.6, Common Misconceptions, p. 306). Volcanoes supply only about 1% of the CO2 needed to explain the rise (p. 307). Only a little less than half of our CO2 stays in the air (p. 307)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.6, pp. 306-308 ('What is the evidence for human-caused climate change?'; Figures 10.39-10.41; Common Misconceptions: the greenhouse effect is bad)",
+    "Book p. 312, Extraordinary Claims: human activity can change the climate (Arrhenius, Foote, Keeling)",
+    "Original sketches: the CO2 record and the model comparison are simplified drawings of the trends described, not reproductions of the published graphs"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_two_facts.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two boxes joined by arrows to a conclusion. Fact 1: carbon dioxide and other greenhouse gases trap heat. Fact 2: human activity, mainly burning coal, oil and gas, is adding a lot more of them. Conclusion: warming is inevitable, and measurements show it is happening."
+    },
+    {
+     "src": "img/atmhistory/gen_co2_record.webp",
+     "slide": "none (original diagram)",
+     "alt": "Sketch of carbon dioxide over the past 800,000 years: a blue line rising and falling in long cycles but never above about 280 parts per million, then a red line shooting straight up to over 420 ppm today. Note: low CO2 matches ice ages, high CO2 warm interglacial periods; temperature rises and falls with CO2."
+    },
+    {
+     "src": "img/atmhistory/gen_three_evidence.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three cards. 1, the amounts match: human CO2 release has risen in step with the concentration and a little under half of it stays in the air, while natural sources give only about 1% of what is needed. 2, oxygen in the air is dropping slightly, as burning fuel predicts. 3, the carbon isotope mix has shifted toward that of fossil fuels."
+    },
+    {
+     "src": "img/atmhistory/gen_models.webp",
+     "slide": "none (original diagram)",
+     "alt": "Sketch of global temperature since 1850: a jagged black observed line rising to about plus 1.1 degrees C, a purple line for models that include human greenhouse gases following it closely, and a flat green line for models with only the Sun and volcanoes that does not match the rise."
+    }
+   ]
+  },
+  {
+   "id": "future",
+   "title": "Consequences and solutions",
+   "slides": "Book 10.6, pp. 308-311",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmhistory/gen_pathways.webp",
+      "slide": "none (original diagram)",
+      "alt": "Sketch of warming from 1950 to 2100: an observed black line to today, then three paths: low (green) staying under a dashed 2 degree C line, intermediate (amber) and high (red) climbing above it. Note: only the low path, with fast deep cuts in emissions, stays under 2 degrees."
+     },
+     "title": "How much more warming?",
+     "bullets": [
+      "Models predict future warming along low, intermediate and high pathways, depending on how much greenhouse gas we keep adding.",
+      "Most scientists argue warming should stay below about **2°C**. Only the **low** pathway does that, and it needs an almost immediate, dramatic cut in CO2 emissions.",
+      "Climate **tipping points** could worsen things, such as warming releasing CO2 and methane trapped in Arctic **permafrost**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_consequences.webp",
+      "slide": "none (original diagram)",
+      "alt": "Five cards: 1, regional weather changes, with warmer nights and winters, more extreme heat, droughts in some places and floods in others; 2, stronger and more frequent extreme weather; 3, melting Arctic sea ice, which also lets dark water absorb more heat; 4, rising sea level; 5, ocean acidification from dissolved CO2 harming coral reefs and fisheries."
+     },
+     "title": "Five kinds of consequences",
+     "bullets": [
+      "Almost every region is warmer than a few decades ago, but some (especially the Arctic) much more: that is why we speak of **climate change**, not just warming.",
+      "**1. Regional weather changes**: nights warm more than days and winters more than summers; more extreme summer heat; some regions drier (drought, wildfire), others wetter (floods).",
+      "**2. More extreme weather**: more heat and energy in the lower air and oceans drive stronger or more frequent hurricanes, floods, droughts, heat waves and even winter storms.",
+      "**3. Melting sea ice**: Arctic ice is shrinking fast and summers may be ice-free by about mid-century. It hurts polar bears, freshens the sea (possibly changing currents) and, since ice reflects more than open water, amplifies the warming.",
+      "**5. Ocean acidification**: roughly **30%** of human CO2 dissolves in the oceans and makes them more acidic; with the warming, it has been tied to dying coral reefs and less productive fisheries. (Number 4, sea level, is next.)"
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_sea_level.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three bars on a stretched scale: past century or so, more than 20 cm of sea level rise; by 2100 on intermediate paths, close to 1 m, enough to flood much of Florida; if all polar ice melted, about 70 m over centuries to millennia. Causes: warm water expands and land ice melts; melting sea ice barely changes sea level."
+     },
+     "title": "Rising sea level",
+     "bullets": [
+      "Two causes: water **expands slightly as it warms**, and melting land ice, especially from **Greenland and Antarctica**, adds water. Melting sea ice barely matters, because it was already floating.",
+      "Sea level has already risen more than **20 cm** in about a century. Intermediate scenarios give close to **1 m** by 2100, enough to flood much of Florida; melting all polar ice would raise it about **70 m**, over centuries or millennia.",
+      "'Consequences of consequences' are possible too, such as fresh meltwater changing the Gulf Stream, or losses of forests and biodiversity."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmhistory/gen_solutions.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two boxes joined by an arrow. Step 1, stop adding greenhouse gases: efficiency, wind and solar, nuclear, and later perhaps fusion or solar power from space. Step 2, take carbon dioxide back out: plant trees and store carbon in soil, and machines that capture CO2 from the air. One suggested goal: bring CO2 back to about 350 ppm."
+     },
+     "title": "A solvable problem",
+     "bullets": [
+      "Because the cause is our greenhouse gas emissions, cutting them slows or stops the warming, and the technology exists: better efficiency, renewables such as wind and solar, and nuclear power.",
+      "Future options include **nuclear fusion** (the ITER project in France aims to demonstrate it), new kinds of fission that recycle nuclear waste, and solar power collected in space.",
+      "Stopping emissions does not undo the damage already done, so a second step is **removing CO2**: passively (more trees, farming that stores carbon in soil) and actively (machines capturing CO2 from the air, which need lots of energy). One suggested target is about **350 ppm**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Small changes in the global average shift the whole range of weather, so 'normal' summers of today were 'hot' summers a few decades ago."
+    },
+    {
+     "type": "trick",
+     "text": "Five consequences: Weather, Wild storms, Waning sea ice, Water rising, Wrecked reefs (acid oceans)."
+    },
+    {
+     "type": "trap",
+     "text": "Melting SEA ice does not raise sea level much (it already floats); melting LAND ice and warm water expanding do (Book 10.6, pp. 309-310). Only the low pathway stays under 2°C (p. 308). Ending emissions alone does not reverse damage already done; CO2 must also be removed (p. 311)."
+    }
+   ],
+   "sourceNotes": [
+    "Book 10.6, pp. 308-311 (predicting future warming, consequences, solutions; Figures 10.42-10.45)",
+    "Original sketches of pathways and sea-level bars, simplified from the numbers in the text"
+   ],
+   "images": [
+    {
+     "src": "img/atmhistory/gen_pathways.webp",
+     "slide": "none (original diagram)",
+     "alt": "Sketch of warming from 1950 to 2100: an observed black line to today, then three paths: low (green) staying under a dashed 2 degree C line, intermediate (amber) and high (red) climbing above it. Note: only the low path, with fast deep cuts in emissions, stays under 2 degrees."
+    },
+    {
+     "src": "img/atmhistory/gen_consequences.webp",
+     "slide": "none (original diagram)",
+     "alt": "Five cards: 1, regional weather changes, with warmer nights and winters, more extreme heat, droughts in some places and floods in others; 2, stronger and more frequent extreme weather; 3, melting Arctic sea ice, which also lets dark water absorb more heat; 4, rising sea level; 5, ocean acidification from dissolved CO2 harming coral reefs and fisheries."
+    },
+    {
+     "src": "img/atmhistory/gen_sea_level.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three bars on a stretched scale: past century or so, more than 20 cm of sea level rise; by 2100 on intermediate paths, close to 1 m, enough to flood much of Florida; if all polar ice melted, about 70 m over centuries to millennia. Causes: warm water expands and land ice melts; melting sea ice barely changes sea level."
+    },
+    {
+     "src": "img/atmhistory/gen_solutions.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two boxes joined by an arrow. Step 1, stop adding greenhouse gases: efficiency, wind and solar, nuclear, and later perhaps fusion or solar power from space. Step 2, take carbon dioxide back out: plant trees and store carbon in soil, and machines that capture CO2 from the air. One suggested goal: bring CO2 back to about 350 ppm."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Three planets, three atmospheric histories",
+  "head": [
+   "",
+   "Venus",
+   "Earth",
+   "Mars"
+  ],
+  "rows": [
+   [
+    "Air today",
+    "Thick CO2, 90 times Earth's pressure",
+    "Nitrogen and oxygen, 1 atmosphere",
+    "Thin CO2, under 1% of Earth's pressure"
+   ],
+   [
+    "Surface temperature",
+    "About 470°C everywhere",
+    "About 15°C average",
+    "About -50°C average"
+   ],
+   [
+    "Where the outgassed water went",
+    "Split by UV; hydrogen escaped",
+    "Rained out into oceans",
+    "Partly split and lost, partly frozen"
+   ],
+   [
+    "Where the CO2 is",
+    "Still in the air",
+    "Locked in carbonate rocks",
+    "Mostly stripped to space"
+   ],
+   [
+    "Key reason",
+    "Too close to the Sun: runaway greenhouse",
+    "Just right: oceans and the CO2 cycle",
+    "Too small: cooled, lost its magnetic field"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "ah-c1",
+   "front": "Weather",
+   "back": "The ever-changing mix of wind, clouds, temperature and pressure from day to day.",
+   "short": "Day-to-day conditions",
+   "src": "Book 10.2, p. 286"
+  },
+  {
+   "id": "ah-c2",
+   "front": "Climate",
+   "back": "The average of weather over many years.",
+   "short": "Long-term average weather",
+   "src": "Book 10.2, p. 286"
+  },
+  {
+   "id": "ah-c3",
+   "front": "Circulation cell",
+   "back": "A huge loop of air: warm air rises at the equator and flows poleward aloft; cool air sinks and returns along the surface. Also called a Hadley cell.",
+   "short": "Loop of air carrying heat poleward",
+   "src": "Book 10.2, p. 287"
+  },
+  {
+   "id": "ah-c4",
+   "front": "Coriolis effect",
+   "back": "The sideways drift of moving air on a rotating planet: to the right in the Northern Hemisphere and to the left in the Southern.",
+   "short": "Rotation bends moving air",
+   "src": "Book 10.2, p. 287"
+  },
+  {
+   "id": "ah-c5",
+   "front": "Which way do Northern Hemisphere storms spin?",
+   "gloss": false,
+   "back": "Counterclockwise around a low-pressure centre (clockwise in the Southern Hemisphere).",
+   "short": "Counterclockwise",
+   "src": "Book 10.2, p. 287"
+  },
+  {
+   "id": "ah-c6",
+   "front": "Mid-latitude winds",
+   "back": "Surface winds between about 30° and 60° latitude, blowing west to east because the surface air there flows poleward.",
+   "short": "Blow west to east",
+   "src": "Book 10.2, p. 288"
+  },
+  {
+   "id": "ah-c7",
+   "front": "How many circulation cells per hemisphere on Earth?",
+   "gloss": false,
+   "back": "Three. The Coriolis effect splits the single cell that a non-rotating Earth would have.",
+   "short": "Three",
+   "src": "Book 10.2, p. 288"
+  },
+  {
+   "id": "ah-c8",
+   "front": "What makes the Coriolis effect stronger?",
+   "gloss": false,
+   "back": "Larger planet size and faster rotation. Venus's is very weak (slow spin); Mars's is weak (small size).",
+   "short": "Bigger and faster spin",
+   "src": "Book 10.2, p. 289"
+  },
+  {
+   "id": "ah-c9",
+   "front": "Precipitation",
+   "back": "Rain, snow and hail. It needs clouds, which form when water vapour condenses.",
+   "short": "Rain, snow, hail",
+   "src": "Book 10.2, p. 289"
+  },
+  {
+   "id": "ah-c10",
+   "front": "Butterfly effect",
+   "back": "Extreme sensitivity of a chaotic system to its starting conditions: a tiny change can make a long-range forecast completely different.",
+   "short": "Tiny change, big difference later",
+   "src": "Book 10.2, p. 289"
+  },
+  {
+   "id": "ah-c11",
+   "front": "Why are there deserts at 20-30° latitude?",
+   "gloss": false,
+   "back": "Equatorial rain wrings the moisture out of the air, and the circulation cells carry that dry air to 20-30° where it sinks.",
+   "short": "Dried air from the cells sinks there",
+   "src": "Book 10.2, p. 290"
+  },
+  {
+   "id": "ah-c12",
+   "front": "Solar brightening",
+   "back": "The Sun's slow brightening with age: about 30% brighter now than when the solar system was young.",
+   "short": "Sun about 30% brighter now",
+   "src": "Book 10.2, p. 290"
+  },
+  {
+   "id": "ah-c13",
+   "front": "Milankovitch cycles",
+   "back": "Slow, repeating changes in Earth's axis tilt and orbit that help trigger ice ages.",
+   "short": "Tilt and orbit cycles",
+   "src": "Book 10.2, p. 291"
+  },
+  {
+   "id": "ah-c14",
+   "front": "Aerosols",
+   "back": "Microscopic particles, for example from volcanic eruptions, that reflect sunlight and cool a planet.",
+   "short": "Tiny particles that reflect sunlight",
+   "src": "Book 10.2, p. 291"
+  },
+  {
+   "id": "ah-c15",
+   "front": "Outgassing",
+   "back": "Release of gas from a planet's interior by volcanoes: the main source of air for Venus, Earth and Mars.",
+   "short": "Volcanic gas release",
+   "src": "Book 10.2, p. 291"
+  },
+  {
+   "id": "ah-c16",
+   "front": "Surface ejection",
+   "back": "Atoms knocked off a surface by micrometeorites, solar wind particles and solar photons; matters only on nearly airless worlds.",
+   "short": "Tiny impacts knock atoms loose",
+   "src": "Book 10.2, p. 292"
+  },
+  {
+   "id": "ah-c17",
+   "front": "Solar wind stripping",
+   "back": "Permanent loss of gas swept into space by solar wind particles, on worlds without a protective magnetosphere.",
+   "short": "Solar wind sweeps gas away",
+   "src": "Book 10.2, p. 292"
+  },
+  {
+   "id": "ah-c18",
+   "front": "Peak thermal velocity",
+   "back": "The most common speed of gas particles: v = √(2kT/m). Higher for hotter gas and lighter particles.",
+   "short": "v = √(2kT/m)",
+   "src": "Book MI 10.2, p. 293"
+  },
+  {
+   "id": "ah-c19",
+   "front": "20% rule of thumb",
+   "back": "A gas whose peak thermal velocity is above about 20% of escape velocity is lost within a few billion years.",
+   "short": "Above 20% of escape: lost",
+   "src": "Book MI 10.2, p. 293"
+  },
+  {
+   "id": "ah-c20",
+   "front": "Why does the Moon have sodium but almost no hydrogen?",
+   "gloss": false,
+   "back": "Hydrogen's peak speed (2.6 km/s) beats escape velocity (2.4 km/s); sodium's (0.5 km/s) is only about 20% of it and is topped up from the surface.",
+   "short": "H too fast; Na slow and resupplied",
+   "src": "Book MI 10.2, p. 293"
+  },
+  {
+   "id": "ah-c21",
+   "front": "What would the sky look like from the Moon at noon?",
+   "gloss": false,
+   "back": "Pitch black around the bright Sun, because there is too little gas to scatter light.",
+   "short": "Black",
+   "src": "Book 10.3, p. 292"
+  },
+  {
+   "id": "ah-c22",
+   "front": "Polar crater ice",
+   "back": "Water ice at the bottoms of permanently shadowed craters near the poles of the Moon and Mercury, probably from comets.",
+   "short": "Ice in shadowed craters",
+   "src": "Book 10.3, p. 294"
+  },
+  {
+   "id": "ah-c23",
+   "front": "Mars's air pressure",
+   "back": "Less than 1% of Earth's, so liquid water is unstable on the surface.",
+   "short": "Under 1% of Earth's",
+   "src": "Book 10.4, p. 295"
+  },
+  {
+   "id": "ah-c24",
+   "front": "Dry ice",
+   "back": "Frozen carbon dioxide. It builds up on Mars's winter polar cap at about -130°C.",
+   "short": "Frozen CO2",
+   "src": "Book 10.4, p. 295"
+  },
+  {
+   "id": "ah-c25",
+   "front": "Dust devil",
+   "back": "A swirl of air heated from below by sunlit ground; rises from the ground. Some on Mars are at least 800 m tall.",
+   "short": "Rising whirl of hot dusty air",
+   "src": "Book 10.4, p. 295"
+  },
+  {
+   "id": "ah-c26",
+   "front": "Mars's tilt range",
+   "back": "From about 0° to about 60° over hundreds of thousands to millions of years, because of Jupiter's pull and its tiny moons.",
+   "short": "About 0° to 60°",
+   "src": "Book 10.4, p. 296"
+  },
+  {
+   "id": "ah-c27",
+   "front": "Carbonate rocks",
+   "back": "Rocks rich in carbon and oxygen, such as limestone, made when dissolved CO2 reacts with minerals. They hold most of Earth's CO2.",
+   "short": "CO2 locked in rock",
+   "src": "Book 10.4, p. 297; 10.5, p. 301"
+  },
+  {
+   "id": "ah-c28",
+   "front": "MAVEN",
+   "back": "NASA orbiter at Mars since 2014 that measures carbon, oxygen and hydrogen escaping, confirming large past losses.",
+   "short": "Measures Mars's escaping gas",
+   "src": "Book 10.4, p. 298"
+  },
+  {
+   "id": "ah-c29",
+   "front": "How did Mars lose its water?",
+   "gloss": false,
+   "back": "Ultraviolet split water molecules (no ozone layer); the hydrogen escaped to space; the oxygen went to the solar wind and to rusting rock.",
+   "short": "UV splitting, hydrogen escape",
+   "src": "Book 10.4, p. 299"
+  },
+  {
+   "id": "ah-c30",
+   "front": "Venus's surface pressure",
+   "back": "About 90 times Earth's, like being nearly 1 km deep in the ocean.",
+   "short": "90 times Earth's",
+   "src": "Book 10.5, p. 300"
+  },
+  {
+   "id": "ah-c31",
+   "front": "Deuterium",
+   "back": "Hydrogen with a neutron as well as a proton; twice as heavy, so it escapes less easily. About 100 times more common, relative to hydrogen, on Venus than on Earth.",
+   "short": "Heavy hydrogen",
+   "src": "Book 10.5, p. 301"
+  },
+  {
+   "id": "ah-c32",
+   "front": "Self-reinforcing feedback",
+   "back": "Feedback that amplifies itself (positive feedback), like a microphone screech or a runaway greenhouse.",
+   "short": "Positive feedback",
+   "src": "Book 10.5, p. 301"
+  },
+  {
+   "id": "ah-c33",
+   "front": "Self-regulating feedback",
+   "back": "Feedback that counteracts a change (negative feedback), like Earth's CO2 cycle.",
+   "short": "Negative feedback",
+   "src": "Book 10.5, p. 301"
+  },
+  {
+   "id": "ah-c34",
+   "front": "Runaway greenhouse effect",
+   "back": "Warming adds water vapour, which adds warming, until the oceans evaporate. Would happen if Earth moved to Venus's orbit.",
+   "short": "Warming feeds itself",
+   "src": "Book 10.5, p. 301"
+  },
+  {
+   "id": "ah-c35",
+   "front": "Where is most of Earth's CO2?",
+   "gloss": false,
+   "back": "In carbonate rocks (about 170,000 times the amount in the air); the oceans hold about 60 times the air's amount.",
+   "short": "Carbonate rocks",
+   "src": "Book 10.6, p. 302"
+  },
+  {
+   "id": "ah-c36",
+   "front": "Photosynthesis",
+   "back": "Process by which plants and many microorganisms take in CO2 and release O₂: the source of Earth's oxygen.",
+   "short": "Makes oxygen",
+   "src": "Book 10.6, p. 302"
+  },
+  {
+   "id": "ah-c37",
+   "front": "Carbon dioxide cycle",
+   "back": "Earth's thermostat: CO2 dissolves in rain, forms carbonate rock in the sea, is subducted, and returns through volcanoes.",
+   "short": "Earth's long-term thermostat",
+   "src": "Book 10.6, p. 303"
+  },
+  {
+   "id": "ah-c38",
+   "front": "Snowball Earth",
+   "back": "Episodes about 750-580 million years ago when ice may have reached the equator; ended by volcanic CO2 building up.",
+   "short": "Ice to the equator",
+   "src": "Book 10.6, p. 305"
+  },
+  {
+   "id": "ah-c39",
+   "front": "Keeling curve",
+   "back": "Direct measurements of atmospheric CO2 begun by Charles Keeling in 1958, showing a rapid rise.",
+   "short": "Rising CO2 record since 1958",
+   "src": "Book 10.6, p. 307; p. 312"
+  },
+  {
+   "id": "ah-c40",
+   "front": "Ocean acidification",
+   "back": "Oceans becoming more acidic as they absorb about 30% of human CO2; linked to coral reef loss.",
+   "short": "Oceans absorb CO2, turn acidic",
+   "src": "Book 10.6, p. 310"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "ah-1",
+   "q": "If Earth did not rotate, how would air circulate between the equator and the poles?",
+   "options": [
+    "One large cell per hemisphere: air rises at the equator and sinks at the poles",
+    "One large cell per hemisphere: air rises at the poles and sinks at the equator",
+    "Three cells per hemisphere, as it does today",
+    "Air would not circulate, because rotation is what moves it",
+    "Winds would blow only east to west at every latitude"
+   ],
+   "answer": 0,
+   "why": "Heating alone drives warm equatorial air up and poleward, and cool polar air down and back along the surface: one cell per hemisphere. Rotation (the Coriolis effect) is what splits each one into three.",
+   "source": "Book 10.2, p. 287 (Figure 10.13)",
+   "img": {
+    "src": "img/atmhistory/gen_hadley.webp",
+    "alt": "Animation: a globe lit by the Sun from the right with one large loop of air in each hemisphere. Dots ride the loops: warm air rises at the equator and flows toward the poles high up, then cool polar air sinks and returns to the equator along the surface. The loops are drawn much taller than the few kilometres they really are."
+   }
+  },
+  {
+   "id": "ah-2",
+   "q": "Which statement about the Coriolis effect is NOT correct?",
+   "options": [
+    "It makes moving air turn right in the Northern Hemisphere",
+    "It is stronger on larger, faster-rotating planets",
+    "It splits Earth's circulation into three cells per hemisphere",
+    "It decides which way water swirls down a sink",
+    "It makes storms spin opposite ways in the two hemispheres"
+   ],
+   "answer": 3,
+   "why": "The Coriolis effect matters only when material moves hundreds of kilometres toward or away from the rotation axis. For a sink it is negligible; the bowl's shape and the water's starting motion decide.",
+   "source": "Book 10.2, pp. 287-289 (Common Misconceptions, p. 288)",
+   "img": {
+    "src": "img/atmhistory/gen_drain_scale.webp",
+    "alt": "Left: a hurricane hundreds of kilometres across whose spin is set by the Coriolis effect. Right: a small sink drain under a metre across, where the Coriolis effect is far too weak; the bowl's shape and how the water started moving decide which way it swirls."
+   }
+  },
+  {
+   "id": "ah-3",
+   "q": "You are in the Northern Hemisphere and launch a long-range missile at a target 5,000 km due north. To hit it you should aim:",
+   "options": [
+    "Directly at the target",
+    "Somewhat to the left (west)",
+    "Somewhat to the right (east)",
+    "Higher, but straight at the target",
+    "It depends on the time of day"
+   ],
+   "answer": 1,
+   "why": "Moving away from the equator, the missile keeps its faster eastward speed and gets ahead of the ground, curving to the right (east). Aiming somewhat left makes up for it.",
+   "source": "Book 10.2, pp. 287-288 (Think About It)"
+  },
+  {
+   "id": "ah-4",
+   "q": "Why do surface winds at mid-latitudes (30-60°) blow from west to east?",
+   "options": [
+    "Earth's magnetic field pushes the air eastward",
+    "Surface air there flows toward the equator and is turned eastward",
+    "The Sun heats the western side of continents first",
+    "Mountain ranges steer the winds eastward",
+    "Surface air there flows poleward, and the Coriolis effect turns it eastward"
+   ],
+   "answer": 4,
+   "why": "In the mid-latitude cells the surface air moves toward the poles; the Coriolis effect diverts it into eastward winds. In the cells nearest the equator and the poles the surface air flows toward the equator and becomes westward winds.",
+   "source": "Book 10.2, p. 288",
+   "img": {
+    "src": "img/atmhistory/gen_three_cells.webp",
+    "alt": "A globe with three loops of circulating air in each hemisphere, split at about 30 and 60 degrees latitude. Labels: high latitudes 60-90 degrees, winds blow east to west; mid-latitudes 30-60 degrees, winds blow west to east; near the equator 0-30 degrees, winds blow east to west. The Coriolis effect turns north-south flow into east-west winds."
+   }
+  },
+  {
+   "id": "ah-5",
+   "q": "Earth has rainforests near the equator and deserts near 20-30° latitude mainly because:",
+   "options": [
+    "The equator is closest to the Sun all year",
+    "Winds at 20-30° blow straight from the poles",
+    "Strong equatorial convection rains out the moisture and the cells carry the dry air to 20-30°",
+    "The deserts lie in the rain shadow of the jungles' trees",
+    "The oceans are warmer at 20-30° than at the equator"
+   ],
+   "answer": 2,
+   "why": "More sunlight at the equator drives more convection and rain. That rain depletes the air of moisture, and the circulation cells carry it away to 20-30°, where little is left to fall.",
+   "source": "Book 10.2, p. 290",
+   "img": {
+    "src": "img/atmhistory/gen_rain_deserts.webp",
+    "alt": "A green globe with a dark green rainy band at the equator and sandy bands at about 25 degrees north and south. Notes: the equator gets the most sunlight and convection, so lots of rain and jungles; the cells carry the dried-out air away and it sinks at 20-30 degrees, making deserts; summer afternoon convection brings thunderstorms."
+   }
+  },
+  {
+   "id": "ah-6",
+   "q": "Weather can be forecast only about a week ahead, yet climate models give reliable long-term predictions. Why?",
+   "options": [
+    "Climate is an average, and the chaotic details average out",
+    "Climate models use completely different physical laws",
+    "Climate never changes, so it is easy to predict",
+    "Weather forecasts use too few computers",
+    "The butterfly effect only applies to climate, not weather"
+   ],
+   "answer": 0,
+   "why": "Weather is chaotic: tiny changes in starting conditions grow over time (the butterfly effect). Climate is the long-term average of weather, so those unpredictable details tend to cancel out.",
+   "source": "Book 10.2, p. 289 (Special Topic: Weather and Chaos)",
+   "img": {
+    "src": "img/atmhistory/gen_chaos.webp",
+    "alt": "Animation of a graph over 30 days with two forecast lines, blue and red, that start almost the same, stay together for the first few days and then wander completely apart by a month. A grey band marks the long-term average, which stays predictable: climate models remain reliable even when weather cannot be forecast."
+   }
+  },
+  {
+   "id": "ah-7",
+   "q": "Which change would tend to make Earth WARMER?",
+   "options": [
+    "Ice caps growing larger",
+    "Volcanic aerosols reaching the stratosphere",
+    "More smog particles in the air",
+    "Arctic sea ice melting into open water",
+    "Cutting down large areas of forest"
+   ],
+   "answer": 3,
+   "why": "Open water reflects much less sunlight than ice, so Earth absorbs more and warms. Growing ice, aerosols, smog and deforestation all raise reflectivity and tend to cool.",
+   "source": "Book 10.2, p. 291",
+   "img": {
+    "src": "img/atmhistory/gen_reflectivity.webp",
+    "alt": "Four cards. Reflect more and cool: ice and snow, more clouds, volcanic dust. Reflect less and warm: open water where sea ice was, shrinking ice caps. People raise reflectivity with smog and by cutting forests. People lower it with roads and cities and by melting Arctic sea ice."
+   }
+  },
+  {
+   "id": "ah-8",
+   "q": "Suppose Earth's axis tilt increased from 23.5° to 25°. The most likely result would be:",
+   "options": [
+    "Milder seasons and more ice, so a cooler Earth",
+    "More extreme seasons and less ice, so a slightly warmer Earth",
+    "No change, because tilt does not affect climate",
+    "Shorter years",
+    "A runaway greenhouse effect"
+   ],
+   "answer": 1,
+   "why": "Greater tilt means warmer summers and colder winters. The extra summer warmth keeps ice from building up, which lowers reflectivity and warms the planet overall.",
+   "source": "Book 10.2, pp. 290-291",
+   "img": {
+    "src": "img/atmhistory/gen_axis_tilt.webp",
+    "alt": "Animation: Earth's tilted axis rocks slowly back and forth while a label counts between 22 and 25 degrees (today about 23.5). Cards: more tilt brings hotter summers and colder winters and less ice, so warmer overall; less tilt lets ice build up, cooler, matching past ice ages; these Milankovitch cycles come from small gravity tugs."
+   }
+  },
+  {
+   "id": "ah-9",
+   "q": "Which pair of processes removes gas from an atmosphere PERMANENTLY?",
+   "options": [
+    "Condensation and chemical reactions",
+    "Chemical reactions and solar wind stripping",
+    "Outgassing and vaporization",
+    "Condensation and thermal escape",
+    "Thermal escape and solar wind stripping"
+   ],
+   "answer": 4,
+   "why": "Thermal escape and solar wind stripping send gas into space. Condensation and chemical reactions only move gas to the surface or interior, and could be reversed if conditions change.",
+   "source": "Book 10.2, p. 292 (Figure 10.21)",
+   "img": {
+    "src": "img/atmhistory/gen_gas_losses.webp",
+    "alt": "Four cards in two columns. Can be undone: condensation, gas falling back as rain, snow or frost such as dry ice on Mars; chemical reactions, gas locked into rock or metal like rust. Permanent: thermal escape, fast particles reaching escape velocity; solar wind stripping where there is no magnetosphere."
+   }
+  },
+  {
+   "id": "ah-10",
+   "q": "If the temperature of a gas is multiplied by 4 (in kelvin), its peak thermal velocity is:",
+   "options": [
+    "Multiplied by 16",
+    "Multiplied by 4",
+    "Multiplied by 2",
+    "Halved",
+    "Unchanged"
+   ],
+   "answer": 2,
+   "why": "v_thermal = √(2kT/m), so the speed grows with the square root of T: √4 = 2.",
+   "source": "Book Mathematical Insight 10.2, p. 293",
+   "img": {
+    "src": "img/atmhistory/gen_vth_formula.webp",
+    "alt": "The formula v thermal equals the square root of 2kT over m, where T is temperature in kelvin, m the mass of one particle and k is 1.38 x 10^-23 joule per kelvin. Cards: four times the temperature doubles the speed; four times the mass halves it. Rule of thumb: a gas faster than about 20% of escape velocity is lost within a few billion years."
+   }
+  },
+  {
+   "id": "ah-11",
+   "q": "A gas in a planet's exosphere has a peak thermal velocity equal to 40% of the planet's escape velocity. According to the rule of thumb, the gas will:",
+   "options": [
+    "Be completely lost within a few billion years",
+    "Escape only if the planet has no magnetic field",
+    "Never escape, because 40% is below 100%",
+    "Escape only during impacts",
+    "Condense onto the surface instead"
+   ],
+   "answer": 0,
+   "why": "A peak thermal velocity above about 20% of escape velocity lets a gas be lost completely within a few billion years, because the fast tail of the speed distribution keeps leaking away.",
+   "source": "Book Mathematical Insight 10.2, p. 293",
+   "img": {
+    "src": "img/atmhistory/gen_speed_dist.webp",
+    "alt": "Graph of how many sodium atoms in the Moon's 400 K exosphere move at each speed: a hump peaking near 0.5 km/s (the peak thermal velocity) with a thin shaded tail beyond the escape velocity line at 2.4 km/s. Beside it, an animation of atoms bouncing above the ground while a few fast red ones fly off the top for good."
+   }
+  },
+  {
+   "id": "ah-12",
+   "q": "The Moon has a thin sodium exosphere but almost no hydrogen. Why?",
+   "options": [
+    "Hydrogen freezes onto the lunar surface",
+    "Sodium is lighter than hydrogen",
+    "The Moon's volcanoes release sodium but not hydrogen",
+    "Hydrogen's peak thermal velocity exceeds escape velocity, while sodium's is only about 20% of it and is resupplied from the surface",
+    "The solar wind adds sodium and removes nothing"
+   ],
+   "answer": 3,
+   "why": "At 400 K hydrogen peaks at about 2.6 km/s, above the Moon's 2.4 km/s escape velocity, so it leaves quickly. Sodium peaks near 0.5 km/s, escapes slowly, and surface ejection keeps replacing it.",
+   "source": "Book Mathematical Insight 10.2, p. 293",
+   "img": {
+    "src": "img/atmhistory/gen_moon_h_na.webp",
+    "alt": "Bar chart of peak thermal speeds on the Moon at 400 K against its escape velocity of 2.4 km/s: hydrogen 2.6 km/s, past the line, so it escapes quickly; sodium 0.5 km/s, about 20% of escape, so it leaks slowly and is topped up from the surface."
+   }
+  },
+  {
+   "id": "ah-13",
+   "q": "Standing on the Moon at noon, what would you see?",
+   "options": [
+    "A pale blue sky",
+    "A pitch-black sky around the bright Sun",
+    "A yellow-brown dusty sky",
+    "A reddish-orange sky",
+    "A white, overcast sky"
+   ],
+   "answer": 1,
+   "why": "The Moon's gas is far too thin to scatter sunlight, so the sky stays black even in daylight.",
+   "source": "Book 10.3, p. 292",
+   "img": {
+    "src": "img/atmhistory/gen_exosphere_only.webp",
+    "alt": "A grey lunar landscape under a black sky with the bright Sun, labelled: black sky even in daylight, too little gas to scatter light. Cards: no absorption so no troposphere, stratosphere or thermosphere, only an exosphere; frozen, the whole atmosphere would almost fit in a dorm room; rare collisions let particles reach thousands of kilometres up."
+   }
+  },
+  {
+   "id": "ah-14",
+   "q": "Why are Mars's southern-hemisphere seasons more extreme than its northern ones?",
+   "options": [
+    "Its southern hemisphere has more tilt",
+    "Jupiter's gravity warms the south",
+    "The southern polar cap is made of dry ice",
+    "Dust storms only happen in the south",
+    "Mars is closest to the Sun during southern summer because its orbit is elliptical"
+   ],
+   "answer": 4,
+   "why": "Mars's more elliptical orbit puts it significantly closer to the Sun in southern summer and farther in southern winter, giving short warm southern summers and long frigid southern winters.",
+   "source": "Book 10.4, p. 295 (Figure 10.24)",
+   "img": {
+    "src": "img/atmhistory/gen_mars_seasons.webp",
+    "alt": "Mars's stretched orbit around an off-centre Sun. On the near side Mars is closer and moving fast: southern summer is short and warm while northern winter is short and mild. On the far side it is farther and slower: southern winter is long and frigid, northern summer long and cool."
+   }
+  },
+  {
+   "id": "ah-15",
+   "q": "Which statement about Mars's seasonal polar caps is correct?",
+   "options": [
+    "Water vapour freezes at the winter pole while CO2 melts into lakes",
+    "Both caps are pure dry ice all year",
+    "CO2 freezes into dry ice at the winter pole and vaporizes at the summer pole, leaving a water-ice cap",
+    "The caps never change, because Mars has no seasons",
+    "Air pressure rises at the winter pole as gas freezes there"
+   ],
+   "answer": 2,
+   "why": "The winter pole reaches about -130°C and CO2 condenses there; the summer pole's dry ice vaporizes, leaving water ice. Pressure rises at the summer pole and falls at the winter pole; up to a third of the air moves.",
+   "source": "Book 10.4, p. 295",
+   "img": {
+    "src": "img/atmhistory/gen_mars_poles.webp",
+    "alt": "Animation of Mars through a year: the polar cap at the winter pole grows with frozen carbon dioxide while the summer cap shrinks to its water-ice core, and white arrows show wind blowing from the summer pole toward the winter pole. Notes: the winter pole reaches about -130 degrees C, and up to a third of the atmosphere moves pole to pole."
+   }
+  },
+  {
+   "id": "ah-16",
+   "q": "What would happen if Mars's axis tilt stayed close to 0° for tens of thousands of years?",
+   "options": [
+    "More CO2 would freeze at the poles, thinning the air and cooling the whole planet",
+    "The poles would warm and the atmosphere would thicken",
+    "Liquid water would become stable at the surface",
+    "Mars would develop a strong magnetic field",
+    "Nothing would change, because Mars's tilt has no effect"
+   ],
+   "answer": 0,
+   "why": "With little tilt the poles stay in a deep freeze; more CO2 freezes out, lowering the pressure and weakening the greenhouse effect, so the entire planet cools.",
+   "source": "Book 10.4, p. 296",
+   "img": {
+    "src": "img/atmhistory/gen_mars_tilt.webp",
+    "alt": "Animation: Mars's axis swings slowly from upright to tipped far over while a label counts from 0 to 60 degrees. Cards: a small tilt freezes CO2 at the poles, thinning the air and cooling Mars; a large tilt warms the summer pole and thickens the air; the swings are big because Jupiter tugs harder and the tiny moons cannot steady the axis."
+   }
+  },
+  {
+   "id": "ah-17",
+   "q": "Which is NOT a reason given for why Mars's axis tilt varies so much more than Earth's?",
+   "options": [
+    "Jupiter's gravity has a greater effect on Mars",
+    "Mars's orbit is closer to Jupiter's",
+    "Phobos and Deimos are too small to steady its axis",
+    "Mars spins much faster than Earth",
+    "Earth's axis is steadied by our large Moon"
+   ],
+   "answer": 3,
+   "why": "The two reasons are Jupiter's stronger pull on Mars (its orbit is closer to Jupiter's) and the lack of a large stabilizing moon. Rotation speed is not one of them.",
+   "source": "Book 10.4, p. 296"
+  },
+  {
+   "id": "ah-18",
+   "q": "According to the leading hypothesis, Mars lost most of its carbon dioxide because:",
+   "options": [
+    "It all froze into the polar caps",
+    "Its cooling core stopped making a magnetic field, so the solar wind could strip the gas away",
+    "Plate tectonics buried it deep inside the planet",
+    "A runaway greenhouse boiled it away",
+    "Its moons captured the gas"
+   ],
+   "answer": 1,
+   "why": "As small Mars cooled, core convection stopped and its magnetic field weakened. CO2 split into carbon and oxygen atoms that the solar wind stripped away. Some CO2 is in the caps and carbonate rocks, but most was probably lost to space.",
+   "source": "Book 10.4, pp. 297-298",
+   "img": {
+    "src": "img/atmhistory/gen_mars_co2_fate.webp",
+    "alt": "Mars with arrows of gas leaving into space toward the solar wind from the Sun. Labels: most of the carbon dioxide was lost to space, split into carbon and oxygen atoms and swept off by the solar wind once the magnetic field faded; some froze into the polar caps; some is locked into carbonate rocks."
+   }
+  },
+  {
+   "id": "ah-19",
+   "q": "Some people propose 'terraforming' Mars by releasing all the CO2 frozen in its polar caps. Based on where Mars's ancient atmosphere went, the best prediction is that:",
+   "options": [
+    "The ancient thick atmosphere and oceans would fully return",
+    "The released CO2 would immediately escape by thermal escape",
+    "Mars would undergo a runaway greenhouse like Venus",
+    "It would trigger Mars's magnetic field again",
+    "It would not restore the ancient atmosphere, because most of that CO2 was lost to space"
+   ],
+   "answer": 4,
+   "why": "Only some of the old CO2 condensed into the caps; the bulk was probably lost to space, and most of the water is gone for good. The caps cannot rebuild the dense early atmosphere.",
+   "source": "Book 10.4, pp. 297-299 (Think About It, p. 299)"
+  },
+  {
+   "id": "ah-20",
+   "q": "Deuterium is about 100 times more common, relative to ordinary hydrogen, on Venus than on Earth. This is evidence that Venus:",
+   "options": [
+    "Was struck by deuterium-rich comets",
+    "Still has deep oceans under its crust",
+    "Lost a large amount of water as UV split it and the lighter hydrogen escaped",
+    "Has a strong magnetic field",
+    "Formed farther from the Sun than Earth"
+   ],
+   "answer": 2,
+   "why": "Deuterium is twice as heavy as hydrogen and escapes less easily. If much water was split and its hydrogen lost to space, the deuterium would be left behind, raising its share, as measured.",
+   "source": "Book 10.5, p. 301",
+   "img": {
+    "src": "img/atmhistory/gen_venus_deuterium.webp",
+    "alt": "Two boxes of hydrogen atoms (small white dots) with a few heavier deuterium atoms (larger purple dots). At the start there are many hydrogen atoms; after ultraviolet splits water and most hydrogen escapes, few hydrogen atoms remain but the deuterium is still there. Note: deuterium makes up about 100 times more of the hydrogen on Venus than on Earth."
+   }
+  },
+  {
+   "id": "ah-21",
+   "q": "Imagine Earth were moved to Venus's orbit. What would happen?",
+   "options": [
+    "A runaway greenhouse: oceans evaporate, carbonate rocks release their CO2, and Earth ends up hotter than Venus",
+    "A 30°C warming, after which Earth would settle at about 45°C with its oceans intact",
+    "Earth would freeze because of extra cloud cover",
+    "The CO2 cycle would quickly cool Earth back to 15°C",
+    "Nothing, because distance from the Sun does not matter"
+   ],
+   "answer": 0,
+   "why": "More evaporation adds water vapour, a greenhouse gas, which warms Earth further and adds more vapour: a self-reinforcing loop that would boil off the oceans and free the CO2 in rocks.",
+   "source": "Book 10.5, p. 301 (Figure 10.34)",
+   "img": {
+    "src": "img/atmhistory/gen_runaway.webp",
+    "alt": "Animation: a loop of four boxes with a dot racing around it: stronger sunlight adds about 30 degrees C (15 to 45); more evaporation and warm air holding more vapour; more water vapour, a greenhouse gas; stronger greenhouse, even hotter. Beside it a thermometer climbs while an ocean shrinks to nothing. End: oceans boil away, carbonate rocks release CO2, Earth becomes hotter than Venus."
+   }
+  },
+  {
+   "id": "ah-22",
+   "q": "Earth outgassed about as much carbon dioxide as Venus. Where is most of Earth's CO2 now?",
+   "options": [
+    "In the atmosphere",
+    "Lost to space by thermal escape",
+    "Frozen in the polar ice caps",
+    "Locked in carbonate rocks such as limestone",
+    "Used up by animals breathing"
+   ],
+   "answer": 3,
+   "why": "CO2 dissolved in the oceans and chemical reactions turned it into carbonate rocks, which hold about 170,000 times as much CO2 as the atmosphere (the oceans hold about 60 times as much).",
+   "source": "Book 10.5, p. 301; 10.6, p. 302",
+   "img": {
+    "src": "img/atmhistory/gen_co2_storage.webp",
+    "alt": "Three bars on a stretched scale comparing Earth's carbon dioxide with the amount in the air: atmosphere 1; dissolved in the oceans about 60 times as much; in carbonate rocks about 170,000 times as much. Note: if all of it were in the air, Earth would be nearly as hot as Venus."
+   }
+  },
+  {
+   "id": "ah-23",
+   "q": "Suppose all photosynthetic life on Earth died out. What would happen to the oxygen in our atmosphere?",
+   "options": [
+    "Nothing; volcanoes would keep replacing it",
+    "It would slowly be removed by chemical reactions such as rusting, over a few million years",
+    "It would turn into nitrogen",
+    "It would immediately escape to space",
+    "It would double, since nothing would use it"
+   ],
+   "answer": 1,
+   "why": "Oxygen is not made by outgassing or any geological process, and reactions like fire, rust and oxidation of rock keep removing it. Without photosynthesis to replace it, it would be gone in just a few million years.",
+   "source": "Book 10.6, pp. 302-303 (Think About It)",
+   "img": {
+    "src": "img/atmhistory/gen_oxygen_life.webp",
+    "alt": "Ocean and land below, an ozone band on top. Green arrows rise from ocean life and land plants: photosynthesis takes in carbon dioxide and releases oxygen. Ultraviolet turns some oxygen into ozone, which absorbs ultraviolet and shields the surface. Note: fire, rust and browning fruit remove oxygen; without life it would be gone in a few million years."
+   }
+  },
+  {
+   "id": "ah-24",
+   "q": "Earth warms slightly for natural reasons. How does the carbon dioxide cycle respond?",
+   "options": [
+    "Volcanoes release more CO2, warming Earth further",
+    "Plate tectonics stops, trapping CO2 in the interior",
+    "The oceans release their CO2, causing a runaway greenhouse",
+    "Nothing happens, because the cycle does not depend on temperature",
+    "More rain dissolves more CO2 into carbonate rocks, lowering atmospheric CO2 and cooling Earth"
+   ],
+   "answer": 4,
+   "why": "Warmer temperatures mean more evaporation and rainfall, so more CO2 dissolves and forms carbonate rocks. Atmospheric CO2 drops, the greenhouse weakens and Earth cools: self-regulating feedback.",
+   "source": "Book 10.6, p. 304 (Figure 10.37)",
+   "img": {
+    "src": "img/atmhistory/gen_thermostat.webp",
+    "alt": "Two chains of boxes. Too warm: more evaporation and rain, more CO2 dissolved and turned into carbonate rock, less CO2 in the air, weaker greenhouse, Earth cools. Too cool: less rain, less CO2 removed, volcanic CO2 builds up, stronger greenhouse, Earth warms. Note: far too slow to cause or fix today's rapid change."
+   }
+  },
+  {
+   "id": "ah-25",
+   "q": "How did Earth escape from its 'snowball' episodes?",
+   "options": [
+    "The Sun suddenly brightened",
+    "Large asteroid impacts melted the ice",
+    "Volcanoes kept outgassing CO2, which built up because ice-covered oceans could not absorb it",
+    "Earth's axis tilt dropped to zero",
+    "Life produced enough oxygen to warm the planet"
+   ],
+   "answer": 2,
+   "why": "The cold surface did not affect Earth's interior heat, so volcanoes kept adding CO2. With the oceans iced over, it accumulated until the greenhouse effect melted the ice, even overshooting into a 'hothouse'.",
+   "source": "Book 10.6, p. 305 (Figure 10.38)",
+   "img": {
+    "src": "img/atmhistory/gen_snowball.webp",
+    "alt": "A cycle of five boxes around an icy Earth: a long cold spell starts freezing the oceans; ice reflects up to about 90% of sunlight, more cooling, a snowball; ice-covered oceans cannot take up CO2 so volcanic CO2 builds up; the strong greenhouse melts the ice and dark water absorbs more, a hothouse; the CO2 cycle restarts and returns to normal."
+   }
+  },
+  {
+   "id": "ah-26",
+   "q": "Which is NOT one of the lines of evidence that the recent rise in CO2 comes from human activity?",
+   "options": [
+    "Volcanoes have been erupting much more CO2 than before",
+    "Oxygen in the air is decreasing slightly",
+    "The carbon isotope mix matches that of fossil fuels",
+    "Human CO2 emissions have risen in step with the concentration",
+    "Natural sources could supply only about 1% of the rise"
+   ],
+   "answer": 0,
+   "why": "Natural sources such as volcanoes and the oceans supply only about 1% of what would be needed. The evidence is the matching amounts, the slight drop in oxygen from burning, and the fossil-fuel carbon isotope signature.",
+   "source": "Book 10.6, p. 307",
+   "img": {
+    "src": "img/atmhistory/gen_three_evidence.webp",
+    "alt": "Three cards. 1, the amounts match: human CO2 release has risen in step with the concentration and a little under half of it stays in the air, while natural sources give only about 1% of what is needed. 2, oxygen in the air is dropping slightly, as burning fuel predicts. 3, the carbon isotope mix has shifted toward that of fossil fuels."
+   }
+  },
+  {
+   "id": "ah-27",
+   "q": "CO2 never exceeded about 280 ppm for 800,000 years but is now above 420 ppm. By about what percentage has it increased?",
+   "options": [
+    "About 15%",
+    "About 33%",
+    "About 100%",
+    "About 50%",
+    "About 150%"
+   ],
+   "answer": 3,
+   "why": "(420 - 280) / 280 = 140 / 280 = 0.5, an increase of about 50% since the industrial age began around 1750.",
+   "source": "Book 10.6, p. 307 (Figure 10.40)",
+   "img": {
+    "src": "img/atmhistory/gen_co2_record.webp",
+    "alt": "Sketch of carbon dioxide over the past 800,000 years: a blue line rising and falling in long cycles but never above about 280 parts per million, then a red line shooting straight up to over 420 ppm today. Note: low CO2 matches ice ages, high CO2 warm interglacial periods; temperature rises and falls with CO2."
+   }
+  },
+  {
+   "id": "ah-28",
+   "q": "Climate models that include only natural factors (the Sun and volcanoes) are compared with models that also include human greenhouse gases. What do the results show?",
+   "options": [
+    "Both match the observed warming equally well",
+    "Only the models that include the human contribution match the measured temperatures",
+    "Only the natural-factor models match the data",
+    "Neither matches, so models are not useful",
+    "The models predict cooling since 1850"
+   ],
+   "answer": 1,
+   "why": "Models ignoring the human contribution do not match the data, but the full models including human greenhouse gases match the measured temperatures remarkably well.",
+   "source": "Book 10.6, p. 308 (Figure 10.41)",
+   "img": {
+    "src": "img/atmhistory/gen_models.webp",
+    "alt": "Sketch of global temperature since 1850: a jagged black observed line rising to about plus 1.1 degrees C, a purple line for models that include human greenhouse gases following it closely, and a flat green line for models with only the Sun and volcanoes that does not match the rise."
+   }
+  },
+  {
+   "id": "ah-29",
+   "q": "Melting Arctic sea ice does NOT raise sea level much. Why is it still a concern for climate?",
+   "options": [
+    "It releases large amounts of CO2",
+    "It slows Earth's rotation",
+    "It makes the oceans saltier",
+    "It thickens the ozone layer",
+    "Open water reflects much less sunlight than ice, so Earth absorbs more heat and warms further"
+   ],
+   "answer": 4,
+   "why": "Sea ice already floats, so melting it barely changes sea level. But replacing reflective ice with dark open water amplifies warming; the fresh meltwater can also affect currents and fisheries.",
+   "source": "Book 10.6, pp. 309-310",
+   "img": {
+    "src": "img/atmhistory/gen_consequences.webp",
+    "alt": "Five cards: 1, regional weather changes, with warmer nights and winters, more extreme heat, droughts in some places and floods in others; 2, stronger and more frequent extreme weather; 3, melting Arctic sea ice, which also lets dark water absorb more heat; 4, rising sea level; 5, ocean acidification from dissolved CO2 harming coral reefs and fisheries."
+   }
+  },
+  {
+   "id": "ah-30",
+   "q": "Venus takes 243 Earth days to rotate once. Which description of its weather follows from that slow spin?",
+   "options": [
+    "A huge temperature difference between day and night",
+    "A strong Coriolis effect that splits its circulation into many small cells",
+    "A very weak Coriolis effect: little surface wind, no hurricane-like storms and just two large circulation cells",
+    "Violent hurricanes that circle the planet every 4 days at ground level",
+    "Strong seasons caused by its 177° axis tilt"
+   ],
+   "answer": 2,
+   "why": "Slow rotation means a very weak Coriolis effect, so Venus has little surface wind, never any hurricane-like storms, and only two large cells. Its thick air keeps day and night equally hot; the 4-day winds are high in the clouds; and 177° tilt means virtually no tilt, so no seasons.",
+   "source": "Book 10.5, p. 300",
+   "img": {
+    "src": "img/atmhistory/gen_venus_weather.webp",
+    "alt": "Two bands. High up, about 400 degrees C cooler than the ground: sulfuric acid clouds, acid rain that evaporates at least 30 km above the surface, winds that circle the planet in 4 days. At the surface: slow 243-day rotation, weak Coriolis effect, winds of a few km/h, no storms or rain. Cards: two big cells, same temperature everywhere, no seasons."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "From vapour to rain",
+   "prompt": "Put the steps of making rain in order, first at the bottom.",
+   "why": "Water evaporates, convection lifts the vapour to cooler air, it condenses into a cloud, the drops grow, and they fall as rain, snow or hail.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Water evaporates from the surface",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "Convection carries the vapour up to cooler air",
+     "color": "#3b82f6"
+    },
+    {
+     "name": "Vapour condenses into droplets: a cloud",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Drops and flakes grow larger",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Rain, snow or hail falls",
+     "color": "#1e3a8a"
+    }
+   ]
+  },
+  {
+   "title": "The carbon dioxide cycle",
+   "prompt": "Follow carbon dioxide around Earth's thermostat, starting at the bottom.",
+   "why": "CO2 dissolves in rain, acid rain wears down rock and rivers carry minerals to the sea, carbonate rock forms, plate tectonics carries it down, it melts and volcanoes outgas the CO2 again.",
+   "topLabel": "Back to the air",
+   "bottomLabel": "Start: CO2 in the air",
+   "layers": [
+    {
+     "name": "CO2 dissolves in rainwater",
+     "color": "#a78bfa"
+    },
+    {
+     "name": "Acid rain wears down rock; rivers carry minerals to the sea",
+     "color": "#8b5cf6"
+    },
+    {
+     "name": "Minerals and CO2 form carbonate rock",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "Subduction carries the rock down",
+     "color": "#6d28d9"
+    },
+    {
+     "name": "Volcanoes outgas the CO2",
+     "color": "#4c1d95"
+    }
+   ]
+  },
+  {
+   "title": "The runaway greenhouse",
+   "prompt": "Put the runaway greenhouse in order, first at the bottom.",
+   "why": "Stronger sunlight warms the planet, more water evaporates, the extra vapour strengthens the greenhouse, the loop repeats until the oceans are gone, then UV splits the vapour and the hydrogen escapes.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Stronger sunlight raises the temperature",
+     "color": "#fca5a5"
+    },
+    {
+     "name": "More water evaporates",
+     "color": "#f87171"
+    },
+    {
+     "name": "More water vapour strengthens the greenhouse",
+     "color": "#ef4444"
+    },
+    {
+     "name": "Oceans evaporate; carbonate rocks release CO2",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "UV splits the vapour; hydrogen escapes",
+     "color": "#7f1d1d"
+    }
+   ]
+  },
+  {
+   "title": "Thicker atmospheres",
+   "prompt": "Order the worlds by how much air they have, least at the bottom.",
+   "why": "The Moon and Mercury have only a thin exosphere; Mars's pressure is under 1% of Earth's; Venus's is about 90 times Earth's.",
+   "topLabel": "Most air",
+   "bottomLabel": "Least air",
+   "layers": [
+    {
+     "name": "Moon (exosphere only)",
+     "color": "#9ca3af"
+    },
+    {
+     "name": "Mars (under 1% of Earth's pressure)",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Earth (1 atmosphere)",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Venus (about 90 times Earth's)",
+     "color": "#ca8a04"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Gas source or gas loss?",
+   "prompt": "Sort each process by whether it adds gas to an atmosphere or removes it.",
+   "buckets": [
+    "Adds gas",
+    "Removes gas"
+   ],
+   "items": [
+    {
+     "text": "Volcanic outgassing",
+     "b": 0
+    },
+    {
+     "text": "Evaporation of surface liquids",
+     "b": 0
+    },
+    {
+     "text": "Sublimation of surface ices",
+     "b": 0
+    },
+    {
+     "text": "Surface ejection by tiny impacts",
+     "b": 0
+    },
+    {
+     "text": "Condensation as rain or frost",
+     "b": 1
+    },
+    {
+     "text": "Rusting and other reactions with rock",
+     "b": 1
+    },
+    {
+     "text": "Thermal escape",
+     "b": 1
+    },
+    {
+     "text": "Solar wind stripping",
+     "b": 1
+    }
+   ],
+   "why": "Outgassing, vaporization and surface ejection add gas. Condensation, chemical reactions, thermal escape and solar wind stripping remove it."
+  },
+  {
+   "title": "Reflect more or reflect less?",
+   "prompt": "Sort each change by its effect on a planet's reflectivity.",
+   "buckets": [
+    "Raises reflectivity (cooling)",
+    "Lowers reflectivity (warming)"
+   ],
+   "items": [
+    {
+     "text": "Ice caps growing",
+     "b": 0
+    },
+    {
+     "text": "Volcanic aerosols",
+     "b": 0
+    },
+    {
+     "text": "Smog particles",
+     "b": 0
+    },
+    {
+     "text": "Cutting down forests",
+     "b": 0
+    },
+    {
+     "text": "Roads and cities",
+     "b": 1
+    },
+    {
+     "text": "Arctic sea ice melting",
+     "b": 1
+    },
+    {
+     "text": "Ice caps shrinking",
+     "b": 1
+    }
+   ],
+   "why": "Ice, aerosols, smog and cleared land reflect more sunlight. Dark roads, cities and open water where ice used to be reflect less."
+  },
+  {
+   "title": "Venus, Earth or Mars?",
+   "prompt": "Sort each fact into the world it describes.",
+   "buckets": [
+    "Venus",
+    "Earth",
+    "Mars"
+   ],
+   "items": [
+    {
+     "text": "Surface pressure 90 times Earth's",
+     "b": 0
+    },
+    {
+     "text": "Deuterium share 100 times Earth's",
+     "b": 0
+    },
+    {
+     "text": "Clouds of sulfuric acid",
+     "b": 0
+    },
+    {
+     "text": "No seasons: virtually no tilt",
+     "b": 0
+    },
+    {
+     "text": "Three circulation cells per hemisphere",
+     "b": 1
+    },
+    {
+     "text": "Most CO2 locked in carbonate rocks",
+     "b": 1
+    },
+    {
+     "text": "Ozone layer from life's oxygen",
+     "b": 1
+    },
+    {
+     "text": "CO2 freezes at the winter pole",
+     "b": 2
+    },
+    {
+     "text": "Tilt swings from about 0° to 60°",
+     "b": 2
+    },
+    {
+     "text": "Air stripped after its magnetic field faded",
+     "b": 2
+    }
+   ],
+   "why": "Venus: crushing CO2 air, acid clouds, lost water (deuterium), no tilt. Earth: three cells, CO2 in rock, ozone. Mars: seasonal dry ice, huge tilt swings, air stripped by the solar wind."
+  },
+  {
+   "title": "Self-reinforcing or self-regulating?",
+   "prompt": "Sort each feedback by type.",
+   "buckets": [
+    "Self-reinforcing (positive)",
+    "Self-regulating (negative)"
+   ],
+   "items": [
+    {
+     "text": "Runaway greenhouse on Venus",
+     "b": 0
+    },
+    {
+     "text": "Spreading ice reflecting more sunlight",
+     "b": 0
+    },
+    {
+     "text": "Microphone screech",
+     "b": 0
+    },
+    {
+     "text": "Melting sea ice letting dark water absorb heat",
+     "b": 0
+    },
+    {
+     "text": "The carbon dioxide cycle",
+     "b": 1
+    },
+    {
+     "text": "Moving the microphone away",
+     "b": 1
+    }
+   ],
+   "why": "Self-reinforcing feedback amplifies a change (runaway warming, ice spreading, the screech, melting sea ice). Self-regulating feedback counteracts it (the CO2 cycle, moving the microphone)."
+  }
+ ],
+ "calc": [
+  "ah-thermal",
+  "ah-escape"
+ ],
+ "sourceNotes": [
+  "Notes follow The Cosmic Perspective (10th ed.) Chapter 10, sections 10.2-10.6, in order, including Mathematical Insight 10.2 (thermal escape), the Special Topic on weather and chaos, the Common Misconceptions boxes and the Extraordinary Claims box on human-caused climate change. All text is paraphrased.",
+  "There are no teacher slides for this unit. No publisher figures are used: every picture (gen_*) is an original diagram drawn with _src/diagram_kit.py. The CO2 record, model comparison and future pathways are simplified sketches of the trends the text describes, not copies of the published graphs.",
+  "The 10.2 material on gaining and losing gas overlaps the Atmospheric Basics (10.1) unit and is kept brief here.",
+  "The text gives two figures for Earth's CO2 in rock relative to the air: about 200,000 times (10.5, p. 301) and about 170,000 times (10.6, p. 302). The notes quote each where it appears; quizzes use 170,000."
+ ]
+}

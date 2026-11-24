@@ -479,6 +479,47 @@ const CALC = {
       wrong: uniq(ans, [`${(+(kpa / 100 * 10).toFixed(1))} atm`, `${(+(atm * 101.325).toFixed(0))} atm`, `${(+(kpa / 14.7).toFixed(2))} atm`, `${(+(atm / 10).toFixed(3))} atm`]),
       why: `1 atm = 101.325 kPa, so ${kpa} kPa / 101.325 = ${(+atm.toFixed(2))} atm. Calgary, about 1 km up, sits near 89 kPa, roughly 0.88 atm.` };
   },
+  "ah-thermal"() {
+    const v = rnd([0, 1, 2, 3]);
+    if (v === 0) {
+      const r = rnd([2, 3, 4, 5]), up = Math.random() < 0.6, ans = up ? frac(r, 1) : frac(1, r);
+      return { q: `The temperature of a gas (in kelvin) is ${up ? "multiplied" : "divided"} by ${r * r}. Its peak thermal velocity becomes:`, ans,
+        wrong: uniq(ans, up ? [frac(r * r, 1), frac(1, r), frac(r ** 4, 1), frac(1, r * r), frac(2 * r, 1)] : [frac(1, r * r), frac(r, 1), frac(r * r, 1), frac(1, 2 * r), frac(1, r ** 4)]),
+        why: `v_thermal = √(2kT/m), so speed goes with the square root of T. ${up ? "Multiplying" : "Dividing"} T by ${r * r} ${up ? "multiplies" : "divides"} the speed by √${r * r} = ${r}.` };
+    }
+    if (v === 1) {
+      const r = rnd([2, 3, 4]), ans = frac(1, r);
+      return { q: `At the same temperature, one gas has particles ${r * r} times as massive as another. Its peak thermal velocity is:`, ans,
+        wrong: uniq(ans, [frac(1, r * r), frac(r, 1), frac(r * r, 1), frac(1, 2 * r), frac(1, 1)]),
+        why: `v_thermal = √(2kT/m) falls as 1/√m. Particles ${r * r} times as massive move 1/√${r * r} = 1/${r} as fast, which is why heavy gases escape less easily than hydrogen and helium.` };
+    }
+    if (v === 2) {
+      let a, b; do { a = rnd([2, 3, 4]); b = rnd([2, 3, 4]); } while (a === b);
+      const ans = frac(a, b);
+      return { q: `A gas is heated so its kelvin temperature is ${a * a} times higher, and it is swapped for a gas whose particles are ${b * b} times as massive. The peak thermal velocity becomes:`, ans,
+        wrong: uniq(ans, [frac(a * a, b * b), frac(b, a), frac(a * b, 1), frac(a * a, b), frac(a, b * b), frac(1, a * b)]),
+        why: `v_thermal = √(2kT/m). Temperature x${a * a} gives speed x${a}; mass x${b * b} gives speed /${b}. Net factor: ${a}/${b}.` };
+    }
+    const T = rnd([100, 400, 900, 1600, 2500]), k = 1.38e-23, m = 1.67e-27, vms = Math.sqrt((2 * k * T) / m), ans = `${(vms / 1000).toFixed(1)} km/s`;
+    return { q: `Using v_thermal = √(2kT/m) with k = 1.38 x 10^-23 J/K and a hydrogen-atom mass of 1.67 x 10^-27 kg, what is the peak thermal velocity of hydrogen atoms at ${T} K?`, ans,
+      wrong: uniq(ans, [`${(vms / 1000 / Math.SQRT2).toFixed(1)} km/s`, `${(vms / 1000 * 2).toFixed(1)} km/s`, `${(vms / 1000 / 2).toFixed(1)} km/s`, `${num((2 * k * T) / m / 1000)} km/s`, `${(vms / 1000 * Math.SQRT2).toFixed(1)} km/s`]),
+      why: `v = √(2 x 1.38 x 10^-23 x ${T} / 1.67 x 10^-27) = √(${num((2 * k * T) / m)}) m/s ≈ ${num(Math.round(vms))} m/s ≈ ${(vms / 1000).toFixed(1)} km/s.${T === 400 ? " That is just above the Moon's 2.4 km/s escape velocity, so the Moon cannot keep hydrogen." : ""}` };
+  },
+  "ah-escape"() {
+    const vesc = rnd([2.4, 4, 5, 10, 20, 25]);
+    if (Math.random() < 0.65) {
+      const pct = rnd([5, 8, 10, 12, 30, 40, 50, 60, 80, 120]), vth = +(vesc * pct / 100).toFixed(2), lost = pct > 20;
+      const say = (p, l) => `${p}% of escape velocity: ${l ? "lost within a few billion years" : "escapes only slowly; kept far longer"}`;
+      const ans = say(pct, lost), inv = Math.round(vesc / vth * 100);
+      return { q: `A gas in a world's exosphere has a peak thermal velocity of ${vth} km/s. The world's escape velocity is ${vesc} km/s. By the rule of thumb, what happens to the gas?`, ans,
+        wrong: uniq(ans, [say(pct, !lost), say(inv, inv > 20), say(inv, !(inv > 20)), say(+(pct / 10).toFixed(1), false), say(Math.min(99, pct * 2), true)]),
+        why: `Peak thermal velocity / escape velocity = ${vth} / ${vesc} = ${pct}%. Above about 20%, a gas is completely lost within a few billion years; well below it, only the rare fast tail escapes, slowly.` };
+    }
+    const ans = `${num(vesc * 0.2)} km/s`;
+    return { q: `A world has an escape velocity of ${vesc} km/s. Using the 20% rule of thumb, roughly what peak thermal velocity would let a gas be lost within a few billion years?`, ans: `More than about ${ans}`,
+      wrong: uniq(`More than about ${ans}`, [`More than about ${num(vesc)} km/s`, `More than about ${num(vesc * 0.02)} km/s`, `More than about ${num(vesc * 5)} km/s`, `More than about ${num(vesc * 0.5)} km/s`]),
+      why: `20% of ${vesc} km/s is ${ans}. A gas whose peak thermal velocity is above that is lost within a few billion years, even though most particles are slower than escape velocity.` };
+  },
   "stm-discharge"() {
     const w = rnd([4, 5, 8, 10, 12, 20]), d = rnd([0.5, 1, 1.5, 2, 3]), v = rnd([0.5, 1, 1.5, 2, 3]), A = w * d, Q = A * v, ans = `${num(Q)} m^3/s`;
     return { q: `A stream channel is ${w} m wide and ${num(d)} m deep, and the water flows at ${num(v)} m/s. Its discharge is:`, ans,
@@ -557,6 +598,8 @@ const HINTS = {
   kepler: "For a Sun-like star, period squared = distance cubed (years and AU), so period = distance^1.5.",
   "atm-pressure": "Pressure = force / area. One pascal (Pa) is one newton per square metre.",
   "atm-units": "1 kPa = 1000 Pa, 1 bar = 100,000 Pa and 1 atm = 101,325 Pa.",
+  "ah-thermal": "Peak thermal velocity = √(2kT/m): it rises with the square root of the kelvin temperature and falls with the square root of the particle mass.",
+  "ah-escape": "Rule of thumb: a gas whose peak thermal velocity is more than about 20% of the escape velocity is lost to space within a few billion years.",
   "stm-discharge": "Discharge = cross-sectional area x velocity, and area = width x depth for a simple channel.",
   "stm-recurrence": "Chance each year (%) = 100 / recurrence interval in years. A 100-year flood has a 1% chance every year.",
   "gw-gradient": "Hydraulic gradient = difference in head (h1 - h2) / length of the flow path between the two places.",

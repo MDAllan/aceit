@@ -9,43 +9,15 @@
  "learningObjectives": [
   {
    "id": "goal-01",
-   "text": "Define an atmosphere and explain what holds it to a world."
+   "text": "What is an atmosphere?"
   },
   {
    "id": "goal-02",
-   "text": "Describe the four main effects an atmosphere has on a world's surface."
+   "text": "How does the greenhouse effect warm a planet?"
   },
   {
    "id": "goal-03",
-   "text": "Compare the size and composition of the atmospheres of Mercury, Venus, Earth, the Moon and Mars."
-  },
-  {
-   "id": "goal-04",
-   "text": "Identify the main greenhouse gases and explain how they warm a planet."
-  },
-  {
-   "id": "goal-05",
-   "text": "Calculate pressure from force and area, and convert between Pa, kPa, bar and atm."
-  },
-  {
-   "id": "goal-06",
-   "text": "Explain why air pressure and density decrease with altitude, and how the ideal gas law drives convection."
-  },
-  {
-   "id": "goal-07",
-   "text": "List the processes by which planets gain and lose atmospheric gas."
-  },
-  {
-   "id": "goal-08",
-   "text": "Describe how X rays, ultraviolet, visible and infrared light interact with atmospheric gas, and explain why the sky is blue and sunsets are red."
-  },
-  {
-   "id": "goal-09",
-   "text": "Describe the layers of Earth's atmosphere by how temperature changes with altitude, and explain why only Earth has a stratosphere."
-  },
-  {
-   "id": "goal-10",
-   "text": "Explain how the magnetosphere protects Earth and produces auroras."
+   "text": "Why do atmospheric properties vary with altitude?"
   }
  ],
  "sections": [
@@ -63,7 +35,7 @@
      "title": "A blanket of gas held by gravity",
      "bullets": [
       "An **atmosphere** is a layer of gas that surrounds a world and is held onto it by **gravity**.",
-      "Three questions run through this unit: what an atmosphere is, how planets gain and lose their atmospheres, and how the **greenhouse effect** warms a planet."
+      "Three questions run through this unit: what an atmosphere is, how the **greenhouse effect** warms a planet, and why the air changes with altitude."
      ]
     },
     {
@@ -429,7 +401,23 @@
      "bullets": [
       "Visible sunlight passes through the air and warms the ground.",
       "The warm ground gives off **infrared** light.",
-      "Greenhouse gas molecules absorb that infrared and re-emit it in all directions, some back down, so the surface ends up warmer than it would be without them."
+      "Greenhouse gas molecules absorb that infrared and re-emit it in all directions, some back down, so the surface ends up warmer than it would be without them.",
+      "Think of a **blanket**: it adds no heat of its own, it just slows the escape of heat. The energy still leaves to space in the end, only less directly."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/gen_warming.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of average surface temperature without and with the greenhouse effect: Venus -40 vs 470 degrees Celsius (510 degrees warmer), Earth -16 vs 15 (31 warmer), Mars -56 vs -50 (6 warmer). Mercury and the Moon get no greenhouse warming."
+     },
+     "title": "How much warmer?",
+     "bullets": [
+      "Without greenhouse gases, a world's average temperature would depend only on its **distance from the Sun** and its **reflectivity** (how much sunlight it bounces away).",
+      "**Earth** would average about **-16 °C** instead of **15 °C**: 31 °C of greenhouse warming, which keeps most water liquid.",
+      "**Venus** would be about **-40 °C** (its bright clouds reflect most sunlight) but is really about **470 °C**: over 500 °C of warming from its thick CO₂ air.",
+      "**Mars** gains only about **6 °C** (-56 to -50 °C) because its CO₂ air is so thin. **Mercury and the Moon** have no greenhouse warming at all.",
+      "N₂ and O₂ make up most of Earth's air but barely absorb infrared: molecules with just two atoms have few ways to vibrate and spin."
      ]
     },
     {
@@ -474,7 +462,8 @@
    ],
    "sourceNotes": [
     "Ch10.1 pt1 slides 12-14",
-    "Original animation of the greenhouse effect follows the slide statement that these gases absorb and re-emit infrared"
+    "Original animation of the greenhouse effect follows the slide statement that these gases absorb and re-emit infrared",
+    "'How much warmer?' step, blanket analogy and the bar chart follow the textbook (section 10.1, Table 10.2); the chart is an original drawing of those numbers"
    ],
    "images": [
     {
@@ -486,6 +475,11 @@
      "src": "img/atmospheres/gen_greenhouse.webp",
      "slide": "none (original diagram)",
      "alt": "Animation: yellow visible sunlight passes through the air and warms the ground; the ground gives off red infrared waves; greenhouse gas molecules absorb the infrared and send some of it back down, so the surface stays warmer."
+    },
+    {
+     "src": "img/atmospheres/gen_warming.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of average surface temperature without and with the greenhouse effect: Venus -40 vs 470 degrees Celsius (510 degrees warmer), Earth -16 vs 15 (31 warmer), Mars -56 vs -50 (6 warmer). Mercury and the Moon get no greenhouse warming."
     },
     {
      "src": "img/atmospheres/clouds_p1-13.webp",
@@ -1540,6 +1534,13 @@
    "back": "Glowing light near the magnetic poles where the solar wind energizes the thermosphere.",
    "short": "Polar glow in the thermosphere",
    "src": "Ch10.1 pt3 slide 9"
+  },
+  {
+   "id": "atm-c41",
+   "front": "\"No greenhouse\" temperature",
+   "back": "The average temperature a world would have with no greenhouse warming, set only by its distance from the Sun and its reflectivity. Earth: -16 °C instead of 15 °C.",
+   "short": "Temp from distance + reflectivity only",
+   "src": "Ch10.1 textbook Table 10.2"
   }
  ],
  "quiz": [
@@ -1997,6 +1998,24 @@
    "img": {
     "src": "img/atmospheres/magnetosphere_p3-9.webp",
     "alt": "The solar wind streams from the Sun and bends around Earth's magnetic field, which is squashed on the Sun side and stretched into a long tail; aurora rings sit around the poles and charged particle belts circle the planet."
+   }
+  },
+  {
+   "id": "atm-31",
+   "q": "Venus is closer to the Sun than Earth, yet its \"no greenhouse\" temperature (-40 °C) is lower than Earth's (-16 °C). Why?",
+   "options": [
+    "Its bright clouds reflect most of the sunlight that reaches it",
+    "It is farther from the Sun than Earth",
+    "It has no atmosphere to absorb sunlight",
+    "Its slow rotation lets its night side freeze",
+    "Its carbon dioxide reflects infrared back to space"
+   ],
+   "answer": 0,
+   "why": "Without greenhouse warming, temperature depends only on distance and reflectivity. Venus's clouds reflect about 75% of sunlight, so it absorbs less than Earth. Its real 470 °C comes from a huge greenhouse effect.",
+   "source": "Ch10.1 textbook section 10.1, Table 10.2",
+   "img": {
+    "src": "img/atmospheres/gen_warming.webp",
+    "alt": "Bar chart of average surface temperature without and with the greenhouse effect: Venus -40 vs 470 degrees Celsius (510 degrees warmer), Earth -16 vs 15 (31 warmer), Mars -56 vs -50 (6 warmer). Mercury and the Moon get no greenhouse warming."
    }
   }
  ],
