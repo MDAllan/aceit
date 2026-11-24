@@ -451,6 +451,34 @@ const CALC = {
       wrong: uniq(ans, [frac(a, c), frac(a * c, 1), frac(1, a * c), frac(c * c, a), frac(c, a * a)]),
       why: `The smallest angle is proportional to wavelength / diameter. The longer wavelength multiplies it by ${c}; the wider mirror divides it by ${a}. Net factor: ${c}/${a}.` };
   },
+  "atm-pressure"() {
+    const F = rnd([200, 500, 600, 1000, 1200, 3000, 5000]), A = rnd([0.5, 2, 4, 5, 10]), P = F / A, ans = `${num(P)} Pa`;
+    return { q: `A force of ${num(F)} N pushes evenly on an area of ${num(A)} m^2. The pressure is:`, ans,
+      wrong: uniq(ans, [`${num(F * A)} Pa`, `${num(A / F)} Pa`, `${num(F + A)} Pa`, `${num(P * 2)} Pa`, `${num(P / 10)} Pa`, `${num(P * 10)} Pa`]),
+      why: `Pressure = force / area = ${num(F)} N / ${num(A)} m^2 = ${num(P)} Pa. One pascal is one newton per square metre.` };
+  },
+  "atm-units"() {
+    const v = rnd([0, 1, 2, 3]);
+    if (v === 0) {
+      const k = rnd([2, 5, 12, 50, 89, 101]), ans = `${num(k * 1000)} Pa`;
+      return { q: `A pressure of ${k} kPa is the same as:`, ans, wrong: uniq(ans, [`${num(k * 100)} Pa`, `${num(k * 10)} Pa`, `${num(k * 100000)} Pa`, `${num(k / 1000)} Pa`]),
+        why: `1 kPa = 1000 Pa, so ${k} kPa = ${k} x 1000 = ${num(k * 1000)} Pa.` };
+    }
+    if (v === 1) {
+      const b = rnd([2, 3, 5, 10]), ans = `${num(b * 100000)} Pa`;
+      return { q: `A pressure of ${b} bar is the same as:`, ans, wrong: uniq(ans, [`${num(b * 1000)} Pa`, `${num(b * 101325)} Pa`, `${num(b * 10000)} Pa`, `${num(b * 1000000)} Pa`]),
+        why: `1 bar = 100,000 Pa, so ${b} bar = ${num(b * 100000)} Pa. (1 atmosphere is a little more: 101,325 Pa.)` };
+    }
+    if (v === 2) {
+      const a = rnd([2, 3, 4, 10]), ans = `${num(a * 101325)} Pa`;
+      return { q: `A pressure of ${a} atmospheres is closest to:`, ans, wrong: uniq(ans, [`${num(a * 100000 * 10)} Pa`, `${num(a * 1000)} Pa`, `${num(a * 14.7)} Pa`, `${num(a * 6894.76)} Pa`]),
+        why: `1 atm = 101,325 Pa (about 1.01 x 10^5 Pa), so ${a} atm = ${num(a * 101325)} Pa.` };
+    }
+    const kpa = rnd([89, 101, 50, 26]), atm = kpa / 101.325, ans = `${(+atm.toFixed(2))} atm`;
+    return { q: `The air pressure at a place is ${kpa} kPa. In atmospheres that is about:`, ans,
+      wrong: uniq(ans, [`${(+(kpa / 100 * 10).toFixed(1))} atm`, `${(+(atm * 101.325).toFixed(0))} atm`, `${(+(kpa / 14.7).toFixed(2))} atm`, `${(+(atm / 10).toFixed(3))} atm`]),
+      why: `1 atm = 101.325 kPa, so ${kpa} kPa / 101.325 = ${(+atm.toFixed(2))} atm. Calgary, about 1 km up, sits near 89 kPa, roughly 0.88 atm.` };
+  },
   kepler() {
     const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
@@ -472,4 +500,6 @@ const HINTS = {
   "tel-area": "Light-collecting area is proportional to the mirror's diameter squared.",
   "tel-res": "The smallest angle a telescope can separate is proportional to wavelength / diameter. A smaller angle means a sharper image.",
   kepler: "For a Sun-like star, period squared = distance cubed (years and AU), so period = distance^1.5.",
+  "atm-pressure": "Pressure = force / area. One pascal (Pa) is one newton per square metre.",
+  "atm-units": "1 kPa = 1000 Pa, 1 bar = 100,000 Pa and 1 atm = 101,325 Pa.",
 };

@@ -694,9 +694,12 @@ function stepper(sec, X, lectureId) {
     const figure = figures[figureIndex];
     const im = figure?.img;
     const fig = im ? h(".fig",
-      h("button.figbtn", { "aria-label": X ? "Edit picture" : "Enlarge picture", onclick: () => (X ? X.pic(st, draw) : lightbox(im)) }, pic({ ...im, alt: im.alt || figure.title || sec.title }, { loading: "lazy" }), h("span.zoom", ic(X ? "pencil" : "zoom", 14), X ? "Edit" : "Enlarge")),
-      n > 1 ? [h("button.nv.l", { "aria-label": "Previous topic", onclick: (e) => { e.stopPropagation(); go(-1); } }, ic("left", 18)), h("button.nv.r", { "aria-label": "Next topic", onclick: (e) => { e.stopPropagation(); go(1); } }, ic("right", 18))] : "",
-      n > 1 ? h("span.cnt", `${i + 1} / ${n}`) : "") : X ? X.addPic(st, draw) : "";
+      h("button.figbtn", { "aria-label": X ? "Edit picture" : "Enlarge picture", onclick: () => (X ? X.pic(st, draw) : lightbox(im)) }, pic({ ...im, alt: im.alt || figure.title || sec.title }, { loading: "lazy" }), h("span.zoom", ic(X ? "pencil" : "zoom", 14), X ? "Edit" : "Enlarge"))) : X ? X.addPic(st, draw) : "";
+    // one step control row in the same place for every step (never laid over a picture, where it hid labels)
+    const stepNav = n > 1 ? h(".stepnav",
+      h("button.chip", { "aria-label": "Previous step", onclick: () => go(-1) }, ic("left", 16), "Back"),
+      h(".stepdots", { "aria-label": `Step ${i + 1} of ${n}` }, steps.map((_, k) => h("i" + (k === i ? ".on" : ""))), h("span.src", `${i + 1} / ${n}`)),
+      h("button.chip", { "aria-label": "Next step", onclick: () => go(1) }, "Next", ic("right", 16))) : "";
     const txt = X ? X.stepText(st, draw, dir < 0) : h(".steptxt" + (dir < 0 ? ".back" : ""),
       st.title ? h("h3", md(st.title)) : "",
       (st.bullets || []).length ? h("ul.pts", st.bullets.map((x) => h("li", md(x)))) : "");
@@ -708,8 +711,7 @@ function stepper(sec, X, lectureId) {
     wrap.replaceChildren(fig,
       gallery,
       figures.length === 1 && figure.title ? h(".src", figure.title) : "",
-      im && n > 1 ? h(".dots", { style: "margin:8px 0 2px" }, steps.map((_, k) => h("i" + (k === i ? ".on" : "")))) : "",
-      n > 1 && !im ? h(".row", { style: "justify-content:space-between;margin:6px 0" }, h("button.arrow", { "aria-label": "Previous", onclick: () => go(-1) }, ic("left", 20)), h("span.src", `${i + 1} / ${n}`), h("button.arrow", { "aria-label": "Next", onclick: () => go(1) }, ic("right", 20))) : "",
+      stepNav,
       txt, S.canSeeRefs() && im?.slide ? h(".src.admin", "Slide " + im.slide) : "");
   };
   draw();

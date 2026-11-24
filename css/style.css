@@ -102,9 +102,11 @@ svg{flex:none}
 .fig img{width:100%;height:auto;max-height:380px;object-fit:contain;display:block;animation:fade .3s}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 .fig .zoom{position:absolute;right:8px;top:8px;background:rgba(30,37,71,.82);color:#F5F6F7;border-radius:var(--r-xs);padding:5px 9px;font-size:.75rem;font-weight:700;display:flex;gap:4px;align-items:center}
-.fig .nv{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:var(--r-xs);border:0;background:rgba(30,37,71,.85);color:#F5F6F7;display:grid;place-items:center}
-.fig .nv.l{left:8px}.fig .nv.r{right:8px}
-.fig .cnt{position:absolute;left:8px;top:8px;background:rgba(30,37,71,.82);color:#F5F6F7;border-radius:var(--r-xs);padding:3px 9px;font-size:.75rem;font-weight:700}
+.stepnav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0 2px}
+.stepnav .chip{min-height:40px;flex:0 0 auto}
+.stepdots{display:flex;align-items:center;gap:5px;flex-wrap:wrap;justify-content:center;min-width:0}
+.stepdots i{width:7px;height:7px;border-radius:50%;background:var(--line)}.stepdots i.on{background:var(--ink,#1e2547);width:16px;border-radius:4px}
+.stepdots .src{margin-left:4px;white-space:nowrap}
 .acc{border:1px solid var(--line);border-radius:var(--r);margin:8px 0;overflow:hidden;background:var(--card)}
 .acc>button{width:100%;display:flex;align-items:center;gap:10px;padding:10px 12px;border:0;background:none;color:var(--ink);font-weight:700;text-align:left;min-height:48px}
 .acc>button .ico{width:30px;height:30px;border-radius:var(--r-s);display:grid;place-items:center;flex:none;font-size:1.05rem;background:color-mix(in srgb,var(--ib,var(--c)) 18%,var(--card))}

@@ -190,7 +190,7 @@ chk("pictures that are not images are refused", await (async () => {
 
 // -- add a picture step and a topic, delete a topic
 const topicsBefore = await p.evaluate(() => document.querySelector("select[aria-label='Jump to topic']").options.length);
-const stepsBefore = await p.evaluate(() => document.querySelectorAll(".stepper .dots i").length);
+const stepsBefore = await p.evaluate(() => document.querySelectorAll(".stepper .stepdots i").length);
 await tap(p, ".ed-bar button", "Add picture"); await wait(300);
 chk("Add picture (toolbar) opens a form: title, picture, first point", /Add a picture step/.test(await sheet(p)) && /Step title/.test(await sheet(p)));
 await tap(p, ".mdl-card button", "Add step");
@@ -199,7 +199,7 @@ await fill(p, ".mdl-card input[type=text], .mdl-card input:not([type])", "A step
 await (await p.$(".mdl-card input[type=file]")).uploadFile(PNG); await wait(900);
 await p.evaluate(() => { const alt = [...document.querySelectorAll(".mdl-card input")].filter((i) => i.type !== "file")[1]; alt.value = "Step picture"; alt.dispatchEvent(new Event("input", { bubbles: true })); });
 await tap(p, ".mdl-card button", "Add step"); await wait(900);
-chk("a picture step was added to the topic", (await p.evaluate(() => document.querySelectorAll(".stepper .dots i").length)) === stepsBefore + 1);
+chk("a picture step was added to the topic", (await p.evaluate(() => document.querySelectorAll(".stepper .stepdots i").length)) === stepsBefore + 1);
 await tap(p, ".ed-pagetools button", "Add a topic"); await fill(p, ".mdl-card input", "A topic made by the test"); await tap(p, ".mdl-card button", "Add topic"); await wait(900);
 chk("a topic was added after this one and is open", (await txt(p, ".page h2")).includes("A topic made by the test") && (await p.evaluate(() => document.querySelector("select[aria-label='Jump to topic']").options.length)) === topicsBefore + 1);
 await tap(p, ".ed-pagetools button", "Delete this topic"); await wait(300);

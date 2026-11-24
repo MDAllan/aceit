@@ -1,0 +1,1932 @@
+{
+ "id": "urinary",
+ "title": "The Urinary System",
+ "chapter": "Unit 9",
+ "icon": "💧",
+ "color": "#c0392b",
+ "slideFile": "The Urinary System.pdf",
+ "intro": "The urinary system cleans the blood: the kidneys filter it, take back what the body needs and send waste, extra salts and water out as urine. This unit covers the parts of the system and the nephron, the three steps that make urine, how the kidney makes dilute or concentrated urine, how ADH, aldosterone and the renin-angiotensin system keep water and salt in balance, kidney stones, and how the system forms in the embryo.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Describe the function and organization of the urinary system, including the inside of the kidney and the parts of a nephron."
+  },
+  {
+   "id": "goal-02",
+   "text": "Describe glomerular filtration, tubular reabsorption and tubular secretion, and say where each mainly happens."
+  },
+  {
+   "id": "goal-03",
+   "text": "Contrast how the kidney makes dilute urine and concentrated urine."
+  },
+  {
+   "id": "goal-04",
+   "text": "Explain how the kidneys and hormones (ADH and aldosterone) keep water and salt in balance, including the renin-angiotensin system."
+  },
+  {
+   "id": "goal-05",
+   "text": "Describe the embryonic origins of the kidneys, ureters, bladder and urethra."
+  }
+ ],
+ "sections": [
+  {
+   "id": "function",
+   "title": "What the urinary system does",
+   "slides": "2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/gen_function.webp",
+      "slide": "none (original diagram)",
+      "alt": "Food and drink intake plus water made by cellular respiration flow into the blood, and an equal output leaves as urine. Urine carries nitrogenous waste (urea, made in the liver from ammonia), extra solutes (Na+, Ca2+, K+, Cl- and H+) and water."
+     },
+     "title": "Removing waste, solutes and water",
+     "bullets": [
+      "The urinary system **removes waste, excess solutes and water** from the body.",
+      "By doing this it keeps the **composition and volume of the blood** steady.",
+      "**Nitrogenous wastes** come from protein metabolism. The liver turns **ammonia** into **urea**, which leaves in the **urine**.",
+      "Urine also carries **excess solutes** from the blood (Na+, Ca2+, K+, Cl- and H+) and water."
+     ]
+    },
+    {
+     "title": "Water in must equal water out",
+     "bullets": [
+      "Water comes **in** from food and drink, and is **produced** as a by-product of cellular respiration.",
+      "To keep **homeostasis**, water **output** must equal intake plus production."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Every cell dumps waste and salts into the blood. If nothing removed them, blood composition would drift away from what cells need."
+    },
+    {
+     "type": "trick",
+     "text": "Think of the kidneys as the blood's cleaning and bookkeeping service: they throw out waste and keep the water account balanced."
+    },
+    {
+     "type": "trap",
+     "text": "Urea is made in the LIVER from ammonia, not in the kidney (slide 2). The kidney only excretes it. Water production counts too: cellular respiration makes water."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 2"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/gen_function.webp",
+     "slide": "none (original diagram)",
+     "alt": "Food and drink intake plus water made by cellular respiration flow into the blood, and an equal output leaves as urine. Urine carries nitrogenous waste (urea, made in the liver from ammonia), extra solutes (Na+, Ca2+, K+, Cl- and H+) and water."
+    }
+   ]
+  },
+  {
+   "id": "organization",
+   "title": "The parts of the urinary system",
+   "slides": "3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/system_3.webp",
+      "slide": "slide 3",
+      "alt": "Front view of the body showing the two kidneys with the renal artery and renal vein, the aorta and inferior vena cava, a ureter running down from each kidney to the bladder, and the urethra leaving the bladder."
+     },
+     "title": "From kidney to urethra",
+     "bullets": [
+      "The main organs are the **kidneys**. Each has an outer **cortex**, an inner **medulla** and a **renal pelvis**, where urine collects.",
+      "The **ureters** carry urine from each renal pelvis to the **urinary bladder**.",
+      "The **urethra** carries urine out of the body."
+     ]
+    },
+    {
+     "title": "The bladder and urination",
+     "bullets": [
+      "The **urinary bladder** stores urine for a while. Its wall has **three layers of smooth muscle** with an **epithelial lining** inside.",
+      "Urination is controlled by the **micturition reflex**, which involves the bladder and both the **internal** and **external urethral sphincters**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "trick",
+     "text": "Urine path: Kidney, Ureter, Bladder, Urethra. 'K-U-B-U': the ureter comes before the bladder, the urethra after it."
+    },
+    {
+     "type": "trap",
+     "text": "Ureter vs urethra: two ureters (kidney to bladder), one urethra (bladder to outside) (slide 3). The renal pelvis is inside the kidney, not a separate organ."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 3"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/system_3.webp",
+     "slide": "slide 3",
+     "alt": "Front view of the body showing the two kidneys with the renal artery and renal vein, the aorta and inferior vena cava, a ureter running down from each kidney to the bladder, and the urethra leaving the bladder."
+    }
+   ]
+  },
+  {
+   "id": "kidney",
+   "title": "Inside the kidney",
+   "slides": "4",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/kidney_4.webp",
+      "slide": "slide 4",
+      "alt": "A kidney cut in half: the outer cortex, the inner medulla made of cone-shaped regions, the renal pelvis in the middle draining into the ureter, and the renal artery and renal vein entering at the side."
+     },
+     "title": "Cortex, medulla and renal pelvis",
+     "bullets": [
+      "Cut open, a kidney shows the **cortex** on the outside, the **medulla** inside it and the **renal pelvis** in the middle, which drains into the **ureter**.",
+      "The **renal artery** brings blood in and the **renal vein** takes it out."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/cortexmed_4.webp",
+      "slide": "slide 4",
+      "alt": "Close-up of a wedge of kidney showing many nephrons with their coiled parts in the cortex and long loops dipping into the medulla, all draining into a collecting duct."
+     },
+     "title": "Millions of nephrons",
+     "bullets": [
+      "Kidneys are filled with functional units called **nephrons**.",
+      "Each kidney has **millions of nephrons**, spanning from the **renal cortex** to the **medulla**.",
+      "Each nephron is a **hollow tubule** with its own **blood supply**.",
+      "Nephrons **remove, filter and return fluid** to the circulating blood."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A nephron is the smallest unit that can make urine, so the kidney's work is the sum of millions of them working side by side."
+    },
+    {
+     "type": "trap",
+     "text": "The nephron is the functional unit of the kidney, not the whole kidney or the collecting duct (slide 4). Nephrons span BOTH the cortex and the medulla."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 4"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/kidney_4.webp",
+     "slide": "slide 4",
+     "alt": "A kidney cut in half: the outer cortex, the inner medulla made of cone-shaped regions, the renal pelvis in the middle draining into the ureter, and the renal artery and renal vein entering at the side."
+    },
+    {
+     "src": "img/urinary/cortexmed_4.webp",
+     "slide": "slide 4",
+     "alt": "Close-up of a wedge of kidney showing many nephrons with their coiled parts in the cortex and long loops dipping into the medulla, all draining into a collecting duct."
+    }
+   ]
+  },
+  {
+   "id": "nephron",
+   "title": "The parts of a nephron",
+   "slides": "5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/nephron_5.webp",
+      "slide": "slide 5",
+      "alt": "One nephron: the glomerular capsule holding the glomerulus with afferent and efferent arterioles, the proximal tubule, the loop of Henle with descending and ascending limbs reaching into the medulla, the distal tubule, and the collecting duct emptying into the renal pelvis."
+     },
+     "title": "From capsule to collecting duct",
+     "bullets": [
+      "The tubule starts with the **glomerular capsule**, which holds the **glomerulus**, a network of capillaries where **fluid filtration** happens.",
+      "The **proximal tubule** runs from the capsule toward the medulla.",
+      "The **loop of Henle** **descends** into the medulla and **ascends** back into the cortex.",
+      "The **distal tubule** joins a **collecting duct**. Each collecting duct is **shared by several nephrons** and empties into the **renal pelvis**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "trick",
+     "text": "Proximal = near the start (the capsule). Distal = far from the start. The loop of Henle sits between them like a hairpin."
+    },
+    {
+     "type": "trap",
+     "text": "The collecting duct is shared by many nephrons and is not part of a single nephron's own tubule (slide 5). Filtration happens at the glomerulus, not in the loop."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 5"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/nephron_5.webp",
+     "slide": "slide 5",
+     "alt": "One nephron: the glomerular capsule holding the glomerulus with afferent and efferent arterioles, the proximal tubule, the loop of Henle with descending and ascending limbs reaching into the medulla, the distal tubule, and the collecting duct emptying into the renal pelvis."
+    }
+   ]
+  },
+  {
+   "id": "vessels",
+   "title": "The nephron's blood supply",
+   "slides": "6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/vessels_6.webp",
+      "slide": "slide 6",
+      "alt": "Blood supply of nephrons. The renal artery and vein branch through the kidney. At each glomerulus an afferent arteriole enters and an efferent arteriole leaves; peritubular capillaries wrap the proximal and distal tubules, and in some nephrons the vasa recta runs down beside the loop of Henle."
+     },
+     "title": "Arterioles and capillaries",
+     "bullets": [
+      "A **renal artery** and **renal vein** connect each kidney to the circulation.",
+      "**Afferent arterioles** enter the glomerular capsule; **efferent arterioles** leave it.",
+      "**Peritubular capillaries** surround the proximal and distal tubules.",
+      "The **vasa recta** runs **parallel to the loop of Henle**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "trick",
+     "text": "Afferent = Arrives, efferent = Exits."
+    },
+    {
+     "type": "trap",
+     "text": "The efferent arteriole leaves the glomerulus as an ARTERIOLE, not a vein, and then branches into peritubular capillaries or the vasa recta (slide 6). The vasa recta goes with the loop of Henle, not the collecting duct."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 6 and its figure caption"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/vessels_6.webp",
+     "slide": "slide 6",
+     "alt": "Blood supply of nephrons. The renal artery and vein branch through the kidney. At each glomerulus an afferent arteriole enters and an efferent arteriole leaves; peritubular capillaries wrap the proximal and distal tubules, and in some nephrons the vasa recta runs down beside the loop of Henle."
+    }
+   ]
+  },
+  {
+   "id": "formation",
+   "title": "Three steps that make urine",
+   "slides": "7-8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/gen_three_steps.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of filtrate moving through a nephron. 1 Filtration: fluid moves from the glomerulus into its capsule. 2 Reabsorption: arrows carry material from the proximal tubule back to the blood. 3 Secretion: arrows carry material from the blood into the distal tubule. The fluid then runs down the collecting duct as urine."
+     },
+     "title": "Filtration, reabsorption and secretion",
+     "bullets": [
+      "**Glomerular filtration**: a **protein-free** solution of fluid and solutes moves **from the glomerulus into the glomerular capsule**.",
+      "**Tubular reabsorption**: **most** of the filtered fluid and solutes **return to the blood** through the peritubular capillaries and vasa recta.",
+      "**Tubular secretion**: certain solutes move **from the peritubular capillaries and vasa recta into the tubule**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/formation_8.webp",
+      "slide": "slide 8",
+      "alt": "A nephron with its capillaries and three numbered boxes: 1 glomerular filtration of water, ions, glucose, amino acids, bicarbonate and wastes into the capsule; 2 tubular reabsorption back into the peritubular capillaries, mainly in the proximal tubule; 3 tubular secretion of some drugs, wastes and ions, mainly into the distal tubule."
+     },
+     "title": "What moves in each step",
+     "bullets": [
+      "Filtered: **water, ions, glucose, amino acids, bicarbonate** and wastes such as **urea and creatinine**.",
+      "Reabsorbed: **water, amino acids, glucose, most ions** (including bicarbonate) and **some urea**, mainly in the **proximal tubule**.",
+      "Secreted: **some drugs, wastes and ions** (mainly hydrogen, ammonium and potassium), mainly into the **distal tubule**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Filtering everything small and then taking back what is useful lets the kidney get rid of waste it never had to recognize in advance."
+    },
+    {
+     "type": "trick",
+     "text": "Filtration: blood to tubule. Reabsorption: tubule back to blood. Secretion: blood to tubule again, but by a different route (through the tubule wall)."
+    },
+    {
+     "type": "trap",
+     "text": "Filtrate is protein-free (slide 7). Reabsorption moves things INTO the blood; secretion moves things OUT of the blood into the tubule. Do not swap them."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 7-8 (figure boxes on slide 8)"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/gen_three_steps.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of filtrate moving through a nephron. 1 Filtration: fluid moves from the glomerulus into its capsule. 2 Reabsorption: arrows carry material from the proximal tubule back to the blood. 3 Secretion: arrows carry material from the blood into the distal tubule. The fluid then runs down the collecting duct as urine."
+    },
+    {
+     "src": "img/urinary/formation_8.webp",
+     "slide": "slide 8",
+     "alt": "A nephron with its capillaries and three numbered boxes: 1 glomerular filtration of water, ions, glucose, amino acids, bicarbonate and wastes into the capsule; 2 tubular reabsorption back into the peritubular capillaries, mainly in the proximal tubule; 3 tubular secretion of some drugs, wastes and ions, mainly into the distal tubule."
+    }
+   ]
+  },
+  {
+   "id": "filtration",
+   "title": "Glomerular filtration",
+   "slides": "9-10",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/gen_sieve.webp",
+      "slide": "none (original diagram)",
+      "alt": "The capillary wall of the glomerulus acts as a sieve. Water, ions, glucose and waste such as urea pass from the blood into the glomerular capsule. Cells and large proteins are too big and stay in the blood. High pressure drives filtration because the efferent arteriole is narrower than the afferent arteriole."
+     },
+     "title": "A sieve",
+     "bullets": [
+      "The cells of the glomerular capillaries act like a **sieve**: plasma fluid passes through into the glomerular space.",
+      "Glomerular capillaries are **more permeable to water and small solutes** than other capillaries, but **less permeable to large proteins and cells**.",
+      "So **glomerular filtrate** has the same concentration of fluid and solutes as plasma, but **no large proteins or cells**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/glomerulus_10.webp",
+      "slide": "slide 10",
+      "alt": "The glomerular capsule wrapped around the ball of glomerular capillaries. Blood flows in by the afferent arteriole and out by the efferent arteriole; small arrows show filtrate moving into the glomerular space and on into the proximal tubule. An inset shows podocytes covering the capillaries."
+     },
+     "title": "What drives it and what controls it",
+     "bullets": [
+      "Filtration is driven by **high blood pressure** in the glomerulus, because the **efferent arteriole is narrower than the afferent arteriole**.",
+      "The filtration rate is regulated by **controlling the diameter of the afferent arterioles** and by the overall control of **blood flow** in the body."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Blood can flow in through a wide afferent arteriole faster than it can leave through a narrow efferent one, so pressure builds up in the glomerulus and pushes fluid out."
+    },
+    {
+     "type": "trap",
+     "text": "Filtrate is like plasma MINUS large proteins and cells, at the same concentration of small solutes (slide 9). It is the efferent arteriole that is narrower."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 9-10"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/gen_sieve.webp",
+     "slide": "none (original diagram)",
+     "alt": "The capillary wall of the glomerulus acts as a sieve. Water, ions, glucose and waste such as urea pass from the blood into the glomerular capsule. Cells and large proteins are too big and stay in the blood. High pressure drives filtration because the efferent arteriole is narrower than the afferent arteriole."
+    },
+    {
+     "src": "img/urinary/glomerulus_10.webp",
+     "slide": "slide 10",
+     "alt": "The glomerular capsule wrapped around the ball of glomerular capillaries. Blood flows in by the afferent arteriole and out by the efferent arteriole; small arrows show filtrate moving into the glomerular space and on into the proximal tubule. An inset shows podocytes covering the capillaries."
+    }
+   ]
+  },
+  {
+   "id": "reabsorption",
+   "title": "Tubular reabsorption",
+   "slides": "11-12",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/gen_reabsorb.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of how much of each filtered substance goes back to the blood: all of the glucose, amino acids and bicarbonate; almost all of the water and Na+; about half of the urea; and none of the creatinine."
+     },
+     "title": "What is taken back",
+     "bullets": [
+      "Most reabsorption happens in the **proximal tubule**.",
+      "**All** the glucose, amino acids and bicarbonate, and **almost all** the water and Na+, are reabsorbed.",
+      "About **half of the urea** is reabsorbed, but some wastes (for example **creatinine**) are not.",
+      "Less water is reabsorbed further along, but the **distal tubule and collecting duct** are critical for **regulating water excretion**.",
+      "Proximal tubule cells have a **brush border** of **microvilli** that makes reabsorption more efficient."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/reabsorb_12.webp",
+      "slide": "slide 12",
+      "alt": "A proximal tubule cell between the tubule lumen and a capillary. ATP pumps Na+ out of the cell; Na+ diffuses into the capillary and in from the lumen; Cl- and water follow; glucose and amino acids are co-transported in with Na+ and then move on into the blood."
+     },
+     "title": "How Na+ pulls the rest along",
+     "bullets": [
+      "1. **Na+ is actively transported out** of a proximal tubule cell.",
+      "2. That Na+ then **diffuses into the capillary**.",
+      "3. Na+ can then **diffuse into the cell from the tubule lumen**.",
+      "4. **Cl- follows** the electrical gradient.",
+      "5. **Water follows** by diffusion as solutes concentrate.",
+      "6. Energy from Na+ diffusion powers **active co-transport of glucose and amino acids** into the cell."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Pumping Na+ out of the cell keeps Na+ low inside it, so Na+ keeps flowing in from the lumen, and chloride, water, glucose and amino acids ride along."
+    },
+    {
+     "type": "trick",
+     "text": "Na+ is the engine; Cl-, water, glucose and amino acids are the passengers."
+    },
+    {
+     "type": "trap",
+     "text": "Only ONE step (Na+ out of the cell) uses ATP directly (slide 12). Glucose is co-transported with Na+, not pumped by its own ATP. Creatinine is NOT reabsorbed; urea is about half reabsorbed (slide 11)."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 11-12"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/gen_reabsorb.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of how much of each filtered substance goes back to the blood: all of the glucose, amino acids and bicarbonate; almost all of the water and Na+; about half of the urea; and none of the creatinine."
+    },
+    {
+     "src": "img/urinary/reabsorb_12.webp",
+     "slide": "slide 12",
+     "alt": "A proximal tubule cell between the tubule lumen and a capillary. ATP pumps Na+ out of the cell; Na+ diffuses into the capillary and in from the lumen; Cl- and water follow; glucose and amino acids are co-transported in with Na+ and then move on into the blood."
+    }
+   ]
+  },
+  {
+   "id": "secretion",
+   "title": "Tubular secretion",
+   "slides": "13",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/gen_secretion.webp",
+      "slide": "none (original diagram)",
+      "alt": "Arrows run from the peritubular capillary down into the distal tubule carrying penicillin, pesticides, drugs, K+, H+ and ammonium, which leave in the urine. The kidneys do not judge whether a substance is good for us."
+     },
+     "title": "Blood to tubule",
+     "bullets": [
+      "Most tubular secretion happens in the **distal tubule**.",
+      "Substances move into the tubule by **active or passive transport**, depending on the substance.",
+      "It is critical for removing **toxic or foreign substances** and **drugs** from the blood: for example **penicillin, pesticides, drugs, K+, H+ and ammonium**.",
+      "The kidneys **do not decide whether a substance is good for us** (for example antibiotics and drugs)."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Secretion is a second chance to clear something from the blood, including things that were not filtered."
+    },
+    {
+     "type": "trap",
+     "text": "Most secretion is in the DISTAL tubule; most reabsorption is in the PROXIMAL tubule (slides 11, 13). Antibiotics are secreted too, which is why the kidneys clear them."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 13"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/gen_secretion.webp",
+     "slide": "none (original diagram)",
+     "alt": "Arrows run from the peritubular capillary down into the distal tubule carrying penicillin, pesticides, drugs, K+, H+ and ammonium, which leave in the urine. The kidneys do not judge whether a substance is good for us."
+    }
+   ]
+  },
+  {
+   "id": "dilute",
+   "title": "Dilute and concentrated urine",
+   "slides": "14-15",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/dilute_14.webp",
+      "slide": "slide 14",
+      "alt": "A nephron in the cortex and medulla. Water leaves the descending loop of Henle; NaCl leaves the ascending loop and the distal tubule; without ADH the collecting duct keeps its water, giving a large volume of dilute urine."
+     },
+     "title": "Making dilute urine",
+     "bullets": [
+      "The **descending loop of Henle** is **permeable to water**. Water leaves because the **medulla has a high solute concentration**.",
+      "The **first part of the ascending loop** is permeable to **salt but not water**: Na+ diffuses out.",
+      "The **later part of the ascending loop** lets neither water nor salt through, so Na+ is **actively transported out**.",
+      "The fluid left in the tubule has **little salt but a lot of water**. Without ADH, it passes through as a **large volume of dilute urine**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/concentrated_15.webp",
+      "slide": "slide 15",
+      "alt": "A collecting duct passing through the medulla with ADH present: water leaves the duct by passive diffusion at several points, giving a low volume of concentrated urine."
+     },
+     "title": "Making concentrated urine with ADH",
+     "bullets": [
+      "When we are **dehydrated** (for example sweating without drinking), **blood solute concentration rises**.",
+      "This stimulates **ADH** (antidiuretic hormone) release from the **hypothalamus and posterior pituitary**.",
+      "ADH makes the **collecting duct more permeable to water**.",
+      "Water is then **passively reabsorbed** as the duct passes through the **salty renal medulla**, giving a **small volume of concentrated urine**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "The medulla is kept salty. Whether water leaves the collecting duct into it depends on one switch: ADH."
+    },
+    {
+     "type": "trick",
+     "text": "Descending: Drops water. Ascending: Adds salt to the medulla (removes salt from the tubule)."
+    },
+    {
+     "type": "trap",
+     "text": "The ascending loop is NOT permeable to water (slide 14). ADH acts on the collecting duct and increases water permeability; it does not pump water. No ADH = dilute urine."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 14-15 and figure captions"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/dilute_14.webp",
+     "slide": "slide 14",
+     "alt": "A nephron in the cortex and medulla. Water leaves the descending loop of Henle; NaCl leaves the ascending loop and the distal tubule; without ADH the collecting duct keeps its water, giving a large volume of dilute urine."
+    },
+    {
+     "src": "img/urinary/concentrated_15.webp",
+     "slide": "slide 15",
+     "alt": "A collecting duct passing through the medulla with ADH present: water leaves the duct by passive diffusion at several points, giving a low volume of concentrated urine."
+    }
+   ]
+  },
+  {
+   "id": "stones",
+   "title": "Kidney stones",
+   "slides": "16",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/gen_stones.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three stone sizes. Small stones a few millimetres across pass out in the urine. Slightly larger stones can block a ureter. Large stones must be removed by surgery or broken up with ultrasonic waves. Risk factors: chronic dehydration and high sodium intake."
+     },
+     "title": "Renal calculi",
+     "bullets": [
+      "**Minerals** in urine can crystallize in the **renal pelvis**, forming **kidney stones** (renal calculi).",
+      "Most stay **small** (a few millimetres) and pass out in the urine.",
+      "Slightly larger stones may **block a ureter**, stopping urine from reaching the bladder.",
+      "Large stones must be **removed surgically** or **broken up with ultrasonic waves** before they can pass.",
+      "Common risk factors: **chronic dehydration** and **high sodium intake**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "trick",
+     "text": "Less water and more salt means more concentrated urine, so minerals crystallize more easily."
+    },
+    {
+     "type": "trap",
+     "text": "Stones form in the RENAL PELVIS (slide 16), and it is a ureter they block. Most stones are small and pass on their own."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 16"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/gen_stones.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three stone sizes. Small stones a few millimetres across pass out in the urine. Slightly larger stones can block a ureter. Large stones must be removed by surgery or broken up with ultrasonic waves. Risk factors: chronic dehydration and high sodium intake."
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "title": "Regulating water balance",
+   "slides": "17",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/waterloop_17.webp",
+      "slide": "slide 17",
+      "alt": "A loop: blood solute concentration rises above the set point, the hypothalamus triggers thirst and the posterior pituitary releases ADH, the kidneys raise collecting duct permeability to water, water intake rises and renal water loss falls, bringing the concentration back down."
+     },
+     "title": "A negative feedback loop",
+     "bullets": [
+      "Water balance is kept by a **negative feedback loop**.",
+      "When **blood solute concentration rises**, **ADH** is secreted, the collecting ducts become **more permeable to water**, and **more water is reabsorbed**.",
+      "When **blood solute concentration falls**, **ADH secretion drops**, the collecting ducts become **less permeable**, and **less water is reabsorbed**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/gen_adh_loop.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of a negative feedback loop: blood solute concentration rises, ADH is secreted, collecting ducts become more permeable to water, more water is reabsorbed, and the concentration falls so less ADH is released. Thirst also rises when solutes rise."
+     },
+     "title": "Following the loop",
+     "bullets": [
+      "Each change pushes the solute concentration **back toward the set point**, which is what makes the loop negative feedback.",
+      "Changes in blood solute concentration also control **thirst**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Negative feedback means the response cancels the change: concentrated blood triggers water saving, which dilutes the blood again."
+    },
+    {
+     "type": "trap",
+     "text": "High solute concentration = MORE ADH = MORE water reabsorbed = LESS urine (slide 17). Thirst is part of the same loop."
+    }
+   ],
+   "sourceNotes": [
+    "Slide 17 (figure)"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/waterloop_17.webp",
+     "slide": "slide 17",
+     "alt": "A loop: blood solute concentration rises above the set point, the hypothalamus triggers thirst and the posterior pituitary releases ADH, the kidneys raise collecting duct permeability to water, water intake rises and renal water loss falls, bringing the concentration back down."
+    },
+    {
+     "src": "img/urinary/gen_adh_loop.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of a negative feedback loop: blood solute concentration rises, ADH is secreted, collecting ducts become more permeable to water, more water is reabsorbed, and the concentration falls so less ADH is released. Thirst also rises when solutes rise."
+    }
+   ]
+  },
+  {
+   "id": "salt",
+   "title": "Salt balance and the renin-angiotensin system",
+   "slides": "18-20",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/gen_salt.webp",
+      "slide": "none (original diagram)",
+      "alt": "The renin-angiotensin system acts on the adrenal cortex, which releases aldosterone; aldosterone acts on the distal tubule and collecting duct so more Na+ is reabsorbed into the blood. Aldosterone release is mostly not set by blood Na+ concentration."
+     },
+     "title": "Aldosterone",
+     "bullets": [
+      "Salt excretion is regulated by **aldosterone**, a **steroid hormone** from the **adrenal cortex**.",
+      "Aldosterone makes **more Na+ reabsorbed** from the **distal tubule and collecting duct**.",
+      "Its release is controlled mostly by the **renin-angiotensin system**, not by blood Na+ concentration.",
+      "The renin-angiotensin system controls **blood pressure and volume** directly (**vasoconstriction**) and indirectly (**aldosterone**). It involves the **kidneys, liver and lungs**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/angio_steps_19.webp",
+      "slide": "slide 19",
+      "alt": "Angiotensinogen is converted by renin into angiotensin I, and angiotensin I is converted by ACE into angiotensin II."
+     },
+     "title": "Making angiotensin",
+     "bullets": [
+      "**Renin** is an **enzyme** made and released by the **juxtaglomerular apparatus** of the kidneys.",
+      "**Angiotensinogen**, a protein from the **liver**, is changed step by step: **renin** makes **angiotensin I**, then **ACE** (angiotensin-converting enzyme, found in the **lungs**) makes **angiotensin II**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/jga_19.webp",
+      "slide": "slide 19",
+      "alt": "The glomerulus and its capsule with the afferent arteriole and distal tubule touching at the juxtaglomerular apparatus; a close-up shows the renin-secreting cells in the arteriole wall."
+     },
+     "title": "Where renin comes from",
+     "bullets": [
+      "The juxtaglomerular apparatus is where the **afferent arteriole** meets the **distal tubule**, next to the glomerulus.",
+      "**Renin-secreting cells** sit in the wall of the arteriole there."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/ras_20.webp",
+      "slide": "slide 20",
+      "alt": "A loop: blood volume falls, the kidneys release renin, renin turns angiotensinogen from the liver into angiotensin I, ACE in the lungs makes angiotensin II, which causes vasoconstriction and raises blood pressure, and makes the adrenal cortex release aldosterone so the kidneys save salt; ADH saves water."
+     },
+     "title": "The whole system",
+     "bullets": [
+      "When **blood pressure falls** in the afferent arteriole at the juxtaglomerular apparatus, **renin is released**, which leads to angiotensin being made.",
+      "Angiotensin causes **vasoconstriction** (mainly in arterioles), which **raises blood pressure** back up.",
+      "Angiotensin also makes the **adrenal glands release aldosterone**, so the kidneys **retain salt**, and it triggers **ADH-induced water retention**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Saving salt also saves water, because water follows salt. That is how the system raises blood volume as well as pressure."
+    },
+    {
+     "type": "trick",
+     "text": "Liver makes the raw material (angiotensinogen), kidney cuts it (renin), lungs finish it (ACE)."
+    },
+    {
+     "type": "trap",
+     "text": "Renin is an ENZYME from the kidney, not a hormone from the adrenal gland (slide 19). Aldosterone saves Na+; it is mostly controlled by the renin-angiotensin system, not by blood Na+ (slide 18). ACE is in the lungs."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 18-20"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/gen_salt.webp",
+     "slide": "none (original diagram)",
+     "alt": "The renin-angiotensin system acts on the adrenal cortex, which releases aldosterone; aldosterone acts on the distal tubule and collecting duct so more Na+ is reabsorbed into the blood. Aldosterone release is mostly not set by blood Na+ concentration."
+    },
+    {
+     "src": "img/urinary/angio_steps_19.webp",
+     "slide": "slide 19",
+     "alt": "Angiotensinogen is converted by renin into angiotensin I, and angiotensin I is converted by ACE into angiotensin II."
+    },
+    {
+     "src": "img/urinary/jga_19.webp",
+     "slide": "slide 19",
+     "alt": "The glomerulus and its capsule with the afferent arteriole and distal tubule touching at the juxtaglomerular apparatus; a close-up shows the renin-secreting cells in the arteriole wall."
+    },
+    {
+     "src": "img/urinary/ras_20.webp",
+     "slide": "slide 20",
+     "alt": "A loop: blood volume falls, the kidneys release renin, renin turns angiotensinogen from the liver into angiotensin I, ACE in the lungs makes angiotensin II, which causes vasoconstriction and raises blood pressure, and makes the adrenal cortex release aldosterone so the kidneys save salt; ADH saves water."
+    }
+   ]
+  },
+  {
+   "id": "embryo",
+   "title": "How the urinary system forms",
+   "slides": "21-24",
+   "steps": [
+    {
+     "img": {
+      "src": "img/urinary/germlayers_21.webp",
+      "slide": "slide 21",
+      "alt": "A tree of what the mesoderm becomes. The intermediate mesoderm gives the kidney and gonads; chordamesoderm, paraxial mesoderm and lateral plate mesoderm give the other tissues."
+     },
+     "title": "Where the parts come from",
+     "bullets": [
+      "The **kidneys and ureters** come from the **intermediate mesoderm**.",
+      "The **urinary bladder and urethra** come from the **cloaca**, which comes from **endoderm**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/kidneystages_22.webp",
+      "slide": "slide 22",
+      "alt": "Two stages of an embryo's kidney. The pronephros at the front and the nephric duct grow back toward the cloaca; mesonephros tubules form behind it; at the rear a ureteric bud grows from the duct into the metanephrogenic mesenchyme."
+     },
+     "title": "Three stages of kidney",
+     "bullets": [
+      "Kidneys develop in **three stages**; the first two are **transient**.",
+      "A **pronephric duct** forms from the intermediate mesoderm and **migrates caudally** (toward the rear).",
+      "At the front, **pronephric tubules** form from mesenchyme and then **degenerate**.",
+      "Further back, **mesonephric tubules** form, and then **most regress**.",
+      "At the rear, **ureteric buds** are induced by, and grow into, the **metanephrogenic mesenchyme**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/nephrondev_23.webp",
+      "slide": "slide 23",
+      "alt": "A cycle: the ureteric bud grows into metanephric mesenchyme and branches; mesenchyme cells gather into a cap and a renal aggregate, which turns into a vesicle, then a tube that becomes the nephron with Bowman's capsule, glomerulus, proximal and distal tubules joined to the collecting duct."
+     },
+     "title": "Building nephrons",
+     "bullets": [
+      "The ureteric buds **branch (ramify)** and make the mesenchyme around them **condense**.",
+      "The **renal aggregates** go through a **mesenchymal-epithelial transition** and become a **renal vesicle**.",
+      "The vesicle **elongates** and its cells specialize to form the **nephron tubule**, which **connects to the ureteric bud**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/urinary/sinus_24.webp",
+      "slide": "slide 24",
+      "alt": "Two side views of an embryo's lower body. First the cloaca receives the hindgut and nephric duct; then the urorectal fold divides it into the rectum and the urogenital sinus, whose upper part becomes the urinary bladder joined by the ureter."
+     },
+     "title": "Bladder and urethra",
+     "bullets": [
+      "The **cloaca** is the shared waste chamber for the intestine and kidneys.",
+      "In mammals a **septum** divides it into the **rectum** and the **urogenital sinus**.",
+      "Part of the urogenital sinus becomes the **urinary bladder**, another part the **urethra**.",
+      "The first stalks of the ureteric buds join the bladder and become the **ureters**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "trick",
+     "text": "Upper tract (kidney, ureter) = intermediate MESODERM. Lower tract (bladder, urethra) = ENDODERM via the cloaca."
+    },
+    {
+     "type": "trap",
+     "text": "Ureters come from the ureteric BUD stalks (mesoderm), even though they join the endoderm-derived bladder (slides 21, 24). Pronephros and mesonephros are temporary; the kidney that stays grows where the ureteric bud meets the metanephrogenic mesenchyme (slide 22)."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 21-24 (Developmental Biology figures 19.1, 20.2, 20.4, 20.10)"
+   ],
+   "images": [
+    {
+     "src": "img/urinary/germlayers_21.webp",
+     "slide": "slide 21",
+     "alt": "A tree of what the mesoderm becomes. The intermediate mesoderm gives the kidney and gonads; chordamesoderm, paraxial mesoderm and lateral plate mesoderm give the other tissues."
+    },
+    {
+     "src": "img/urinary/kidneystages_22.webp",
+     "slide": "slide 22",
+     "alt": "Two stages of an embryo's kidney. The pronephros at the front and the nephric duct grow back toward the cloaca; mesonephros tubules form behind it; at the rear a ureteric bud grows from the duct into the metanephrogenic mesenchyme."
+    },
+    {
+     "src": "img/urinary/nephrondev_23.webp",
+     "slide": "slide 23",
+     "alt": "A cycle: the ureteric bud grows into metanephric mesenchyme and branches; mesenchyme cells gather into a cap and a renal aggregate, which turns into a vesicle, then a tube that becomes the nephron with Bowman's capsule, glomerulus, proximal and distal tubules joined to the collecting duct."
+    },
+    {
+     "src": "img/urinary/sinus_24.webp",
+     "slide": "slide 24",
+     "alt": "Two side views of an embryo's lower body. First the cloaca receives the hindgut and nephric duct; then the urorectal fold divides it into the rectum and the urogenital sinus, whose upper part becomes the urinary bladder joined by the ureter."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "At a glance",
+  "head": [
+   "Process",
+   "Where (mainly)",
+   "Direction",
+   "What moves"
+  ],
+  "rows": [
+   [
+    "Glomerular filtration",
+    "Glomerulus into its capsule",
+    "Blood to tubule",
+    "Water, ions, glucose, amino acids, bicarbonate, urea, creatinine (no large proteins or cells)"
+   ],
+   [
+    "Tubular reabsorption",
+    "Proximal tubule",
+    "Tubule back to blood",
+    "All glucose, amino acids, bicarbonate; almost all water and Na+; about half the urea"
+   ],
+   [
+    "Tubular secretion",
+    "Distal tubule",
+    "Blood to tubule",
+    "Penicillin, pesticides, drugs, K+, H+, ammonium"
+   ],
+   [
+    "ADH",
+    "Collecting duct",
+    "Water back to blood",
+    "Makes the duct permeable to water: concentrated urine"
+   ],
+   [
+    "Aldosterone",
+    "Distal tubule and collecting duct",
+    "Na+ back to blood",
+    "Saves salt; controlled by the renin-angiotensin system"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "ur-c1",
+   "front": "What does the urinary system do?",
+   "gloss": false,
+   "back": "Removes waste, excess solutes and water from the body, which keeps blood composition and volume steady.",
+   "short": "Removes waste, solutes, water",
+   "src": "Slide 2"
+  },
+  {
+   "id": "ur-c2",
+   "front": "Urea",
+   "gloss": true,
+   "back": "The main nitrogenous waste in urine. The liver makes it from ammonia produced in protein metabolism.",
+   "short": "Liver turns ammonia into urea",
+   "src": "Slide 2"
+  },
+  {
+   "id": "ur-c3",
+   "front": "Which solutes leave in urine?",
+   "gloss": false,
+   "back": "Excess Na+, Ca2+, K+, Cl- and H+ from the blood.",
+   "short": "Na+, Ca2+, K+, Cl-, H+",
+   "src": "Slide 2"
+  },
+  {
+   "id": "ur-c4",
+   "front": "Two sources of the body's water",
+   "gloss": false,
+   "back": "Intake (food and drink) and production as a by-product of cellular respiration. Together they must equal water output.",
+   "short": "Intake + respiration = output",
+   "src": "Slide 2"
+  },
+  {
+   "id": "ur-c5",
+   "front": "Renal pelvis",
+   "gloss": true,
+   "back": "The space in the middle of the kidney where urine collects before it enters the ureter.",
+   "short": "Where urine collects in the kidney",
+   "src": "Slide 3"
+  },
+  {
+   "id": "ur-c6",
+   "front": "Ureter",
+   "gloss": true,
+   "back": "Tube that carries urine from the renal pelvis of a kidney to the urinary bladder.",
+   "short": "Kidney to bladder",
+   "src": "Slide 3"
+  },
+  {
+   "id": "ur-c7",
+   "front": "Urinary bladder",
+   "gloss": true,
+   "back": "Stores urine for a while; three layers of smooth muscle with an epithelial lining inside.",
+   "short": "Stores urine; 3 smooth muscle layers",
+   "src": "Slide 3"
+  },
+  {
+   "id": "ur-c8",
+   "front": "Urethra",
+   "gloss": true,
+   "back": "Tube that carries urine out of the body.",
+   "short": "Bladder to outside",
+   "src": "Slide 3"
+  },
+  {
+   "id": "ur-c9",
+   "front": "Micturition reflex",
+   "gloss": true,
+   "back": "The reflex that controls urination, involving the bladder and the internal and external urethral sphincters.",
+   "short": "Urination reflex; 2 sphincters",
+   "src": "Slide 3"
+  },
+  {
+   "id": "ur-c10",
+   "front": "Nephron",
+   "gloss": true,
+   "back": "The functional unit of the kidney: a hollow tubule with its own blood supply. Millions per kidney, spanning cortex and medulla.",
+   "short": "Kidney's functional unit",
+   "src": "Slide 4"
+  },
+  {
+   "id": "ur-c11",
+   "front": "Cortex and medulla",
+   "gloss": false,
+   "back": "The kidney's outer layer (cortex) and inner layer (medulla). Nephrons span both.",
+   "short": "Outer cortex, inner medulla",
+   "src": "Slide 3-4"
+  },
+  {
+   "id": "ur-c12",
+   "front": "Glomerulus",
+   "gloss": true,
+   "back": "A network of capillaries inside the glomerular capsule where fluid filtration happens.",
+   "short": "Capillary ball where filtration happens",
+   "src": "Slide 5"
+  },
+  {
+   "id": "ur-c13",
+   "front": "Glomerular capsule",
+   "gloss": true,
+   "back": "The cup at the start of the nephron tubule that holds the glomerulus and receives the filtrate.",
+   "short": "Cup around the glomerulus",
+   "src": "Slide 5"
+  },
+  {
+   "id": "ur-c14",
+   "front": "Proximal tubule",
+   "gloss": true,
+   "back": "The part of the nephron after the capsule; most reabsorption happens here. Its cells have a brush border of microvilli.",
+   "short": "Most reabsorption; brush border",
+   "src": "Slide 5, 11"
+  },
+  {
+   "id": "ur-c15",
+   "front": "Loop of Henle",
+   "gloss": true,
+   "back": "Hairpin part of the nephron that descends into the medulla and ascends back to the cortex.",
+   "short": "Hairpin into the medulla",
+   "src": "Slide 5"
+  },
+  {
+   "id": "ur-c16",
+   "front": "Distal tubule",
+   "gloss": true,
+   "back": "The part of the nephron after the loop; most secretion happens here. It joins a collecting duct.",
+   "short": "Most secretion; joins collecting duct",
+   "src": "Slide 5, 13"
+  },
+  {
+   "id": "ur-c17",
+   "front": "Collecting duct",
+   "gloss": true,
+   "back": "Shared by several nephrons; empties into the renal pelvis. ADH makes it permeable to water.",
+   "short": "Shared duct; ADH target",
+   "src": "Slide 5, 15"
+  },
+  {
+   "id": "ur-c18",
+   "front": "Afferent vs efferent arteriole",
+   "gloss": false,
+   "back": "Afferent arterioles bring blood into the glomerulus; efferent arterioles take it out. The efferent one is narrower.",
+   "short": "In (wider) vs out (narrower)",
+   "src": "Slide 6, 9"
+  },
+  {
+   "id": "ur-c19",
+   "front": "Peritubular capillaries",
+   "gloss": true,
+   "back": "Capillaries that surround the proximal and distal tubules and exchange material with them.",
+   "short": "Wrap the proximal and distal tubules",
+   "src": "Slide 6"
+  },
+  {
+   "id": "ur-c20",
+   "front": "Vasa recta",
+   "gloss": true,
+   "back": "Blood vessels that run parallel to the loop of Henle.",
+   "short": "Run beside the loop of Henle",
+   "src": "Slide 6"
+  },
+  {
+   "id": "ur-c21",
+   "front": "Glomerular filtration",
+   "gloss": true,
+   "back": "A protein-free solution of fluid and solutes moves from the glomerulus into the glomerular capsule.",
+   "short": "Glomerulus to capsule, protein-free",
+   "src": "Slide 7"
+  },
+  {
+   "id": "ur-c22",
+   "front": "Tubular reabsorption",
+   "gloss": true,
+   "back": "Most of the filtered fluid and solutes return to the blood via the peritubular capillaries and vasa recta.",
+   "short": "Tubule back to blood",
+   "src": "Slide 7"
+  },
+  {
+   "id": "ur-c23",
+   "front": "Tubular secretion",
+   "gloss": true,
+   "back": "Certain solutes move from the peritubular capillaries and vasa recta into the tubule, by active or passive transport.",
+   "short": "Blood into tubule",
+   "src": "Slide 7, 13"
+  },
+  {
+   "id": "ur-c24",
+   "front": "What is in glomerular filtrate?",
+   "gloss": false,
+   "back": "Fluid and solutes at the same concentration as plasma, but no large proteins or cells.",
+   "short": "Plasma minus proteins and cells",
+   "src": "Slide 9"
+  },
+  {
+   "id": "ur-c25",
+   "front": "What drives filtration?",
+   "gloss": false,
+   "back": "High blood pressure in the glomerulus, because the efferent arteriole is narrower than the afferent arteriole.",
+   "short": "High pressure; narrow efferent",
+   "src": "Slide 9"
+  },
+  {
+   "id": "ur-c26",
+   "front": "How is filtration rate controlled?",
+   "gloss": false,
+   "back": "By changing the diameter of the afferent arterioles and by overall control of blood flow.",
+   "short": "Afferent diameter + blood flow",
+   "src": "Slide 9"
+  },
+  {
+   "id": "ur-c27",
+   "front": "What is fully reabsorbed?",
+   "gloss": false,
+   "back": "All the glucose, amino acids and bicarbonate. Almost all the water and Na+ too.",
+   "short": "Glucose, amino acids, bicarbonate",
+   "src": "Slide 11"
+  },
+  {
+   "id": "ur-c28",
+   "front": "Urea vs creatinine in reabsorption",
+   "gloss": false,
+   "back": "About half of the urea is reabsorbed; creatinine is not.",
+   "short": "Urea half; creatinine none",
+   "src": "Slide 11"
+  },
+  {
+   "id": "ur-c29",
+   "front": "Brush border",
+   "gloss": true,
+   "back": "Microvilli on proximal tubule cells that increase the efficiency of reabsorption.",
+   "short": "Microvilli for reabsorption",
+   "src": "Slide 11"
+  },
+  {
+   "id": "ur-c30",
+   "front": "First step of Na+ reabsorption",
+   "gloss": false,
+   "back": "Na+ is actively transported out of the proximal tubule cell (using ATP), then diffuses into the capillary.",
+   "short": "Na+ pumped out with ATP",
+   "src": "Slide 12"
+  },
+  {
+   "id": "ur-c31",
+   "front": "How are glucose and amino acids reabsorbed?",
+   "gloss": false,
+   "back": "By active co-transport with Na+, powered by the energy of Na+ diffusing into the cell.",
+   "short": "Co-transport with Na+",
+   "src": "Slide 12"
+  },
+  {
+   "id": "ur-c32",
+   "front": "Examples of secreted substances",
+   "gloss": false,
+   "back": "Penicillin, pesticides, drugs, K+, H+ and ammonium.",
+   "short": "Penicillin, drugs, K+, H+, NH4+",
+   "src": "Slide 13"
+  },
+  {
+   "id": "ur-c33",
+   "front": "Descending vs ascending loop",
+   "gloss": false,
+   "back": "Descending: permeable to water. First part of ascending: permeable to salt but not water. Later ascending: neither, so Na+ is pumped out.",
+   "short": "Water out vs salt out",
+   "src": "Slide 14"
+  },
+  {
+   "id": "ur-c34",
+   "front": "ADH (antidiuretic hormone)",
+   "gloss": true,
+   "back": "Released from the hypothalamus and posterior pituitary when blood solute concentration rises; makes the collecting duct more permeable to water.",
+   "short": "Opens collecting duct to water",
+   "src": "Slide 15"
+  },
+  {
+   "id": "ur-c35",
+   "front": "Why does water leave the collecting duct with ADH?",
+   "gloss": false,
+   "back": "The renal medulla keeps a high solute concentration, so water is passively reabsorbed once the duct is permeable.",
+   "short": "Salty medulla pulls water",
+   "src": "Slide 15"
+  },
+  {
+   "id": "ur-c36",
+   "front": "Kidney stones",
+   "gloss": true,
+   "back": "Renal calculi: mineral crystals that form in the renal pelvis. Risk factors: chronic dehydration and high sodium intake.",
+   "short": "Crystals in renal pelvis",
+   "src": "Slide 16"
+  },
+  {
+   "id": "ur-c37",
+   "front": "Aldosterone",
+   "gloss": true,
+   "back": "Steroid hormone from the adrenal cortex; makes the distal tubule and collecting duct reabsorb more Na+.",
+   "short": "Adrenal steroid; saves Na+",
+   "src": "Slide 18"
+  },
+  {
+   "id": "ur-c38",
+   "front": "Renin",
+   "gloss": true,
+   "back": "An enzyme made and released by the juxtaglomerular apparatus when blood pressure falls in the afferent arteriole.",
+   "short": "Kidney enzyme; low pressure",
+   "src": "Slide 19-20"
+  },
+  {
+   "id": "ur-c39",
+   "front": "Angiotensin II",
+   "gloss": true,
+   "back": "Made from angiotensinogen (liver) by renin then ACE (lungs). Causes vasoconstriction and aldosterone release.",
+   "short": "Vasoconstriction + aldosterone",
+   "src": "Slide 19-20"
+  },
+  {
+   "id": "ur-c40",
+   "front": "Origins of the urinary organs",
+   "gloss": false,
+   "back": "Kidneys and ureters: intermediate mesoderm. Bladder and urethra: the cloaca (endoderm).",
+   "short": "Mesoderm vs endoderm (cloaca)",
+   "src": "Slide 21"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "ur-1",
+   "q": "What is the main job of the urinary system?",
+   "options": [
+    "To make red blood cells for the circulation",
+    "To digest proteins into amino acids",
+    "To remove waste, excess solutes and water from the body",
+    "To store glucose as glycogen",
+    "To make urea from ammonia"
+   ],
+   "answer": 2,
+   "why": "It removes waste, excess solutes and water, which keeps blood composition and volume steady. Urea is made by the liver, not the urinary system.",
+   "source": "Slide 2"
+  },
+  {
+   "id": "ur-2",
+   "q": "Where is urea made?",
+   "options": [
+    "In the liver, from ammonia",
+    "In the kidney, from creatinine",
+    "In the bladder, from urine salts",
+    "In the glomerulus, from plasma",
+    "In the lungs, from carbon dioxide"
+   ],
+   "answer": 0,
+   "why": "Ammonia from protein metabolism is converted into urea in the liver. The kidneys then excrete it.",
+   "source": "Slide 2"
+  },
+  {
+   "id": "ur-3",
+   "q": "Which list gives the path of urine in the right order?",
+   "options": [
+    "Kidney, urethra, bladder, ureter",
+    "Kidney, bladder, ureter, urethra",
+    "Renal pelvis, urethra, ureter, bladder",
+    "Kidney, ureter, bladder, urethra",
+    "Bladder, kidney, ureter, urethra"
+   ],
+   "answer": 3,
+   "why": "Urine collects in the renal pelvis, goes down a ureter to the bladder, and leaves through the urethra.",
+   "source": "Slide 3"
+  },
+  {
+   "id": "ur-4",
+   "q": "What makes up the wall of the urinary bladder?",
+   "options": [
+    "One layer of skeletal muscle and a lining of cilia",
+    "Three layers of smooth muscle with an epithelial lining",
+    "Cartilage rings and smooth muscle",
+    "Two layers of cardiac muscle",
+    "Only a layer of epithelial cells"
+   ],
+   "answer": 1,
+   "why": "The bladder wall has three layers of smooth muscle with an interior lining of epithelial cells.",
+   "source": "Slide 3"
+  },
+  {
+   "id": "ur-5",
+   "q": "What is the functional unit of the kidney?",
+   "options": [
+    "The renal pelvis",
+    "The ureter",
+    "The collecting duct",
+    "The glomerulus alone",
+    "The nephron"
+   ],
+   "answer": 4,
+   "why": "Nephrons are the functional units. Each is a hollow tubule with its own blood supply, and each kidney has millions.",
+   "source": "Slide 4"
+  },
+  {
+   "id": "ur-6",
+   "q": "Look at the kidney. Which label matches the inner layer of cone-shaped regions?",
+   "options": [
+    "Cortex",
+    "Medulla",
+    "Renal pelvis",
+    "Ureter",
+    "Renal vein"
+   ],
+   "answer": 1,
+   "why": "The medulla is the inner layer, made of cone-shaped regions. The cortex is the outer layer and the renal pelvis is the central space.",
+   "source": "Slide 4",
+   "img": {
+    "src": "img/urinary/kidney_4.webp",
+    "alt": "A kidney cut in half: the outer cortex, the inner medulla made of cone-shaped regions, the renal pelvis in the middle draining into the ureter, and the renal artery and renal vein entering at the side."
+   }
+  },
+  {
+   "id": "ur-7",
+   "q": "In which order does filtrate pass through a nephron?",
+   "options": [
+    "Glomerular capsule, proximal tubule, loop of Henle, distal tubule, collecting duct",
+    "Glomerular capsule, distal tubule, loop of Henle, proximal tubule, collecting duct",
+    "Collecting duct, distal tubule, loop of Henle, proximal tubule, capsule",
+    "Proximal tubule, glomerular capsule, loop of Henle, collecting duct, distal tubule",
+    "Glomerular capsule, loop of Henle, proximal tubule, collecting duct, distal tubule"
+   ],
+   "answer": 0,
+   "why": "It starts in the capsule, goes through the proximal tubule, down and up the loop of Henle, through the distal tubule and into a collecting duct.",
+   "source": "Slide 5"
+  },
+  {
+   "id": "ur-8",
+   "q": "Which statement about the collecting duct is correct?",
+   "options": [
+    "It is where glomerular filtration happens.",
+    "It belongs to only one nephron.",
+    "It is shared by several nephrons and empties into the renal pelvis.",
+    "It carries blood out of the glomerulus.",
+    "It runs beside the loop of Henle as the vasa recta."
+   ],
+   "answer": 2,
+   "why": "Each collecting duct is shared by multiple nephrons and empties into the renal pelvis.",
+   "source": "Slide 5"
+  },
+  {
+   "id": "ur-9",
+   "q": "Which vessels run parallel to the loop of Henle?",
+   "options": [
+    "Peritubular capillaries",
+    "Afferent arterioles",
+    "Renal veins",
+    "The vasa recta",
+    "Glomerular capillaries"
+   ],
+   "answer": 3,
+   "why": "The vasa recta runs parallel to the loop of Henle. Peritubular capillaries surround the proximal and distal tubules.",
+   "source": "Slide 6"
+  },
+  {
+   "id": "ur-10",
+   "q": "Which vessel carries blood INTO the glomerulus?",
+   "options": [
+    "Efferent arteriole",
+    "Vasa recta",
+    "Peritubular capillary",
+    "Renal vein",
+    "Afferent arteriole"
+   ],
+   "answer": 4,
+   "why": "Afferent arterioles enter the glomerular capsule; efferent arterioles leave it.",
+   "source": "Slide 6"
+  },
+  {
+   "id": "ur-11",
+   "q": "Which process moves fluid from the glomerulus into the glomerular capsule?",
+   "options": [
+    "Glomerular filtration",
+    "Tubular reabsorption",
+    "Tubular secretion",
+    "Active co-transport",
+    "The micturition reflex"
+   ],
+   "answer": 0,
+   "why": "Glomerular filtration moves a protein-free solution from the glomerulus into the glomerular capsule.",
+   "source": "Slide 7"
+  },
+  {
+   "id": "ur-12",
+   "q": "What does tubular secretion do?",
+   "options": [
+    "Returns most filtered fluid to the blood",
+    "Moves certain solutes from the blood into the tubule",
+    "Pushes plasma into the glomerular capsule",
+    "Stores urine in the bladder",
+    "Turns ammonia into urea"
+   ],
+   "answer": 1,
+   "why": "Secretion moves certain solutes from the peritubular capillaries and vasa recta into the nephron tubule.",
+   "source": "Slide 7"
+  },
+  {
+   "id": "ur-13",
+   "q": "Which description of glomerular filtrate is correct?",
+   "options": [
+    "It has more glucose than plasma and many red blood cells.",
+    "It is pure water with no solutes.",
+    "It has large proteins but no ions.",
+    "It has the same solute concentration as plasma but no large proteins or cells.",
+    "It is the same as urine."
+   ],
+   "answer": 3,
+   "why": "The glomerular capillaries let water and small solutes through but hold back large proteins and cells.",
+   "source": "Slide 9"
+  },
+  {
+   "id": "ur-14",
+   "q": "Why is blood pressure high in the glomerulus?",
+   "options": [
+    "The afferent arteriole is narrower than the efferent arteriole.",
+    "The vasa recta pumps blood into it.",
+    "The efferent arteriole is narrower than the afferent arteriole.",
+    "The collecting duct pushes fluid back.",
+    "ADH raises the pressure."
+   ],
+   "answer": 2,
+   "why": "Blood enters through a wider afferent arteriole and leaves through a narrower efferent arteriole, so pressure builds and drives filtration.",
+   "source": "Slide 9"
+  },
+  {
+   "id": "ur-15",
+   "q": "How is the filtration rate regulated?",
+   "options": [
+    "By changing the number of nephrons each day",
+    "By ADH acting on the glomerulus",
+    "By the bladder sphincters",
+    "By changing the diameter of the afferent arterioles and by overall blood flow",
+    "By aldosterone acting on the capsule"
+   ],
+   "answer": 3,
+   "why": "Filtration rate is controlled by the diameter of the afferent arterioles and the overall control of blood flow.",
+   "source": "Slide 9"
+  },
+  {
+   "id": "ur-16",
+   "q": "Where does most tubular reabsorption happen?",
+   "options": [
+    "Collecting duct",
+    "Distal tubule",
+    "Glomerulus",
+    "Renal pelvis",
+    "Proximal tubule"
+   ],
+   "answer": 4,
+   "why": "Most reabsorption happens in the proximal tubule, whose cells have a brush border of microvilli.",
+   "source": "Slide 11"
+  },
+  {
+   "id": "ur-17",
+   "q": "Which substance is NOT reabsorbed from the filtrate?",
+   "options": [
+    "Creatinine",
+    "Glucose",
+    "Bicarbonate",
+    "Amino acids",
+    "Na+"
+   ],
+   "answer": 0,
+   "why": "All the glucose, amino acids and bicarbonate and almost all the Na+ are reabsorbed. Some wastes such as creatinine are not.",
+   "source": "Slide 11"
+  },
+  {
+   "id": "ur-18",
+   "q": "About how much of the filtered urea is reabsorbed?",
+   "options": [
+    "None of it",
+    "All of it",
+    "About half of it",
+    "Only a trace",
+    "Exactly the same amount as glucose"
+   ],
+   "answer": 2,
+   "why": "About half of the urea is reabsorbed, while creatinine is not.",
+   "source": "Slide 11"
+  },
+  {
+   "id": "ur-19",
+   "q": "In the proximal tubule cell, which step uses ATP directly?",
+   "options": [
+    "Water diffusing in from the lumen",
+    "Na+ being actively transported out of the cell",
+    "Cl- following the electrical gradient",
+    "Na+ diffusing into the capillary",
+    "Glucose diffusing into the capillary"
+   ],
+   "answer": 1,
+   "why": "Na+ is actively transported out of the cell using ATP. The other steps are diffusion or co-transport powered by the Na+ gradient.",
+   "source": "Slide 12",
+   "img": {
+    "src": "img/urinary/reabsorb_12.webp",
+    "alt": "A proximal tubule cell between the tubule lumen and a capillary. ATP pumps Na+ out of the cell; Na+ diffuses into the capillary and in from the lumen; Cl- and water follow; glucose and amino acids are co-transported in with Na+ and then move on into the blood."
+   }
+  },
+  {
+   "id": "ur-20",
+   "q": "How do glucose and amino acids get into a proximal tubule cell?",
+   "options": [
+    "By simple diffusion through the brush border",
+    "By osmosis with water",
+    "By ADH-controlled channels",
+    "By active co-transport powered by Na+ diffusion",
+    "By secretion from the capillary"
+   ],
+   "answer": 3,
+   "why": "Energy from Na+ diffusing into the cell permits active co-transport of glucose and amino acids.",
+   "source": "Slide 12"
+  },
+  {
+   "id": "ur-21",
+   "q": "Where does most tubular secretion happen?",
+   "options": [
+    "Proximal tubule",
+    "Distal tubule",
+    "Glomerular capsule",
+    "Descending loop of Henle",
+    "Urinary bladder"
+   ],
+   "answer": 1,
+   "why": "Most secretion happens in the distal tubule, by active or passive transport depending on the substance.",
+   "source": "Slide 13"
+  },
+  {
+   "id": "ur-22",
+   "q": "Which group lists substances removed from the blood by tubular secretion?",
+   "options": [
+    "Glucose, amino acids and bicarbonate",
+    "Red blood cells and large proteins",
+    "Penicillin, pesticides, K+, H+ and ammonium",
+    "Angiotensinogen and renin",
+    "Urea, glucose and plasma proteins"
+   ],
+   "answer": 2,
+   "why": "Secretion removes toxic or foreign substances and drugs, including penicillin, pesticides, drugs, K+, H+ and ammonium.",
+   "source": "Slide 13"
+  },
+  {
+   "id": "ur-23",
+   "q": "Which part of the loop of Henle is permeable to water?",
+   "options": [
+    "The descending loop",
+    "The first part of the ascending loop",
+    "The later part of the ascending loop",
+    "None of the loop",
+    "Only the bend of the loop"
+   ],
+   "answer": 0,
+   "why": "The descending loop is permeable to water, so water leaves into the salty medulla. The ascending loop is not permeable to water.",
+   "source": "Slide 14"
+  },
+  {
+   "id": "ur-24",
+   "q": "What happens in the later part of the ascending loop of Henle?",
+   "options": [
+    "Water leaves by osmosis.",
+    "Glucose is co-transported out.",
+    "Urea is secreted into the tubule.",
+    "Na+ is actively transported out, because the wall lets neither water nor salt through.",
+    "ADH opens water channels."
+   ],
+   "answer": 3,
+   "why": "This part is impermeable to both water and salt, so Na+ must be actively transported out. The fluid left has little salt but a lot of water.",
+   "source": "Slide 14"
+  },
+  {
+   "id": "ur-25",
+   "q": "A person sweats a lot and does not drink. What happens?",
+   "options": [
+    "ADH rises and the collecting duct becomes more permeable to water.",
+    "Blood solute concentration falls and ADH falls.",
+    "ADH rises and the collecting duct becomes less permeable to water.",
+    "Aldosterone stops and urine becomes dilute.",
+    "The glomerulus stops filtering."
+   ],
+   "answer": 0,
+   "why": "Dehydration raises blood solute concentration, which stimulates ADH. ADH makes the collecting duct permeable to water, so water is reabsorbed and urine is concentrated.",
+   "source": "Slide 15"
+  },
+  {
+   "id": "ur-26",
+   "q": "Where do kidney stones form?",
+   "options": [
+    "In the glomerulus",
+    "In the urethra",
+    "In the bladder wall",
+    "In the adrenal cortex",
+    "In the renal pelvis"
+   ],
+   "answer": 4,
+   "why": "Minerals in urine can crystallize in the renal pelvis to form kidney stones (renal calculi). Larger ones can block a ureter.",
+   "source": "Slide 16"
+  },
+  {
+   "id": "ur-27",
+   "q": "In the water balance loop, what happens when blood solute concentration falls?",
+   "options": [
+    "ADH secretion rises and more water is reabsorbed.",
+    "Aldosterone falls and the bladder empties.",
+    "ADH secretion falls and less water is reabsorbed.",
+    "Thirst increases and ADH rises.",
+    "Renin is released from the liver."
+   ],
+   "answer": 2,
+   "why": "Lower solute concentration reduces ADH, the collecting ducts become less permeable to water, and less water is reabsorbed. This is negative feedback.",
+   "source": "Slide 17",
+   "img": {
+    "src": "img/urinary/waterloop_17.webp",
+    "alt": "A loop: blood solute concentration rises above the set point, the hypothalamus triggers thirst and the posterior pituitary releases ADH, the kidneys raise collecting duct permeability to water, water intake rises and renal water loss falls, bringing the concentration back down."
+   }
+  },
+  {
+   "id": "ur-28",
+   "q": "Which statement about aldosterone is correct?",
+   "options": [
+    "It is a peptide hormone from the posterior pituitary.",
+    "It makes the collecting duct permeable to water.",
+    "It is mostly controlled by blood Na+ concentration.",
+    "It is an enzyme made by the juxtaglomerular apparatus.",
+    "It is a steroid from the adrenal cortex that increases Na+ reabsorption."
+   ],
+   "answer": 4,
+   "why": "Aldosterone is a steroid hormone from the adrenal cortex. It increases Na+ reabsorption from the distal tubule and collecting duct and is mostly controlled by the renin-angiotensin system.",
+   "source": "Slide 18"
+  },
+  {
+   "id": "ur-29",
+   "q": "Which enzyme turns angiotensin I into angiotensin II, and where is it found?",
+   "options": [
+    "Renin, in the kidneys",
+    "ACE, in the lungs",
+    "ACE, in the liver",
+    "Renin, in the lungs",
+    "Aldosterone, in the adrenal cortex"
+   ],
+   "answer": 1,
+   "why": "Renin turns angiotensinogen (from the liver) into angiotensin I; ACE, found in the lungs, turns angiotensin I into angiotensin II.",
+   "source": "Slide 19",
+   "img": {
+    "src": "img/urinary/angio_steps_19.webp",
+    "alt": "Angiotensinogen is converted by renin into angiotensin I, and angiotensin I is converted by ACE into angiotensin II."
+   }
+  },
+  {
+   "id": "ur-30",
+   "q": "Which embryonic tissue gives rise to the kidneys and ureters?",
+   "options": [
+    "Ectoderm",
+    "The cloaca",
+    "Lateral plate mesoderm",
+    "Paraxial mesoderm",
+    "Intermediate mesoderm"
+   ],
+   "answer": 4,
+   "why": "The kidneys and ureters come from the intermediate mesoderm. The bladder and urethra come from the endoderm-derived cloaca.",
+   "source": "Slide 21"
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Where urine goes",
+   "prompt": "Put the stops in order, from where urine collects to where it leaves the body.",
+   "why": "Urine collects in the renal pelvis, goes down the ureter to the bladder for storage, and leaves through the urethra.",
+   "topLabel": "End: leaves the body",
+   "bottomLabel": "Start: inside the kidney",
+   "layers": [
+    {
+     "name": "Renal pelvis",
+     "color": "#7f1d1d"
+    },
+    {
+     "name": "Ureter",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Urinary bladder",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Urethra",
+     "color": "#b45309"
+    }
+   ]
+  },
+  {
+   "title": "Through a nephron",
+   "prompt": "Put the parts in the order filtrate passes through them.",
+   "why": "Filtrate enters the glomerular capsule, flows through the proximal tubule, down and up the loop of Henle, through the distal tubule, and into a shared collecting duct that empties into the renal pelvis.",
+   "topLabel": "End",
+   "bottomLabel": "Start",
+   "layers": [
+    {
+     "name": "Glomerular capsule",
+     "color": "#7f1d1d"
+    },
+    {
+     "name": "Proximal tubule",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Descending loop of Henle",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Ascending loop of Henle",
+     "color": "#b45309"
+    },
+    {
+     "name": "Distal tubule",
+     "color": "#a16207"
+    },
+    {
+     "name": "Collecting duct",
+     "color": "#15803d"
+    },
+    {
+     "name": "Renal pelvis",
+     "color": "#0f766e"
+    }
+   ]
+  },
+  {
+   "title": "The renin-angiotensin system",
+   "prompt": "Put the events in order, starting with a fall in blood pressure.",
+   "why": "Low pressure at the juxtaglomerular apparatus releases renin. Renin turns angiotensinogen into angiotensin I, ACE in the lungs makes angiotensin II, and angiotensin II causes vasoconstriction and aldosterone release, so the kidneys save salt.",
+   "topLabel": "End",
+   "bottomLabel": "Start",
+   "layers": [
+    {
+     "name": "Blood pressure falls at the juxtaglomerular apparatus",
+     "color": "#7f1d1d"
+    },
+    {
+     "name": "Renin is released",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Angiotensinogen becomes angiotensin I",
+     "color": "#c2410c"
+    },
+    {
+     "name": "ACE in the lungs makes angiotensin II",
+     "color": "#b45309"
+    },
+    {
+     "name": "Aldosterone is released and the kidneys retain salt",
+     "color": "#a16207"
+    }
+   ]
+  },
+  {
+   "title": "Building a kidney",
+   "prompt": "Put the stages of kidney development in order.",
+   "why": "The pronephric duct and pronephric tubules come first and degenerate, then mesonephric tubules form and mostly regress. Ureteric buds then grow into the metanephrogenic mesenchyme, which condenses into renal aggregates, becomes a renal vesicle, and forms the nephron tubule.",
+   "topLabel": "End: nephron tubule",
+   "bottomLabel": "Start",
+   "layers": [
+    {
+     "name": "Pronephric duct and tubules form",
+     "color": "#7f1d1d"
+    },
+    {
+     "name": "Mesonephric tubules form",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Ureteric buds grow into the metanephrogenic mesenchyme",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Mesenchyme condenses into renal aggregates",
+     "color": "#b45309"
+    },
+    {
+     "name": "Renal vesicle forms",
+     "color": "#a16207"
+    },
+    {
+     "name": "Nephron tubule forms and joins the ureteric bud",
+     "color": "#15803d"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Which process?",
+   "prompt": "Sort each description into filtration, reabsorption or secretion.",
+   "buckets": [
+    "Filtration",
+    "Reabsorption",
+    "Secretion"
+   ],
+   "items": [
+    {
+     "text": "Glomerulus into the capsule",
+     "b": 0
+    },
+    {
+     "text": "Driven by high glomerular pressure",
+     "b": 0
+    },
+    {
+     "text": "Leaves out large proteins and cells",
+     "b": 0
+    },
+    {
+     "text": "Mainly in the proximal tubule",
+     "b": 1
+    },
+    {
+     "text": "Takes back all the glucose",
+     "b": 1
+    },
+    {
+     "text": "Returns most filtered water to blood",
+     "b": 1
+    },
+    {
+     "text": "Mainly in the distal tubule",
+     "b": 2
+    },
+    {
+     "text": "Removes penicillin and pesticides",
+     "b": 2
+    },
+    {
+     "text": "Moves K+ and H+ from blood into the tubule",
+     "b": 2
+    }
+   ],
+   "why": "Filtration moves fluid from the glomerulus into the capsule; reabsorption returns material to the blood, mostly in the proximal tubule; secretion moves solutes from the blood into the tubule, mostly in the distal tubule."
+  },
+  {
+   "title": "Dilute or concentrated urine?",
+   "prompt": "Sort each condition into dilute urine or concentrated urine.",
+   "buckets": [
+    "Dilute urine",
+    "Concentrated urine"
+   ],
+   "items": [
+    {
+     "text": "No ADH",
+     "b": 0
+    },
+    {
+     "text": "Collecting duct keeps its water",
+     "b": 0
+    },
+    {
+     "text": "Blood solute concentration low",
+     "b": 0
+    },
+    {
+     "text": "Large volume of urine",
+     "b": 0
+    },
+    {
+     "text": "ADH present",
+     "b": 1
+    },
+    {
+     "text": "Dehydrated after sweating",
+     "b": 1
+    },
+    {
+     "text": "Collecting duct permeable to water",
+     "b": 1
+    },
+    {
+     "text": "Small volume of urine",
+     "b": 1
+    }
+   ],
+   "why": "Without ADH the collecting duct keeps its water and urine is dilute. Dehydration raises ADH, which opens the duct to water, so water is reabsorbed and urine is concentrated."
+  },
+  {
+   "title": "Which embryonic origin?",
+   "prompt": "Sort each structure by where it comes from.",
+   "buckets": [
+    "Intermediate mesoderm",
+    "Cloaca (endoderm)"
+   ],
+   "items": [
+    {
+     "text": "Kidney",
+     "b": 0
+    },
+    {
+     "text": "Ureter",
+     "b": 0
+    },
+    {
+     "text": "Ureteric bud",
+     "b": 0
+    },
+    {
+     "text": "Pronephric duct",
+     "b": 0
+    },
+    {
+     "text": "Urinary bladder",
+     "b": 1
+    },
+    {
+     "text": "Urethra",
+     "b": 1
+    },
+    {
+     "text": "Urogenital sinus",
+     "b": 1
+    }
+   ],
+   "why": "The kidneys, ureters and their precursors come from the intermediate mesoderm. The bladder and urethra come from the urogenital sinus of the endoderm-derived cloaca."
+  }
+ ],
+ "calc": []
+}

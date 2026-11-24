@@ -1,0 +1,2282 @@
+{
+ "id": "atmospheres",
+ "title": "Atmospheric Basics",
+ "chapter": "Ch 10.1",
+ "icon": "🌤️",
+ "color": "#7c3aed",
+ "slideFile": "Ch10.1_pt1.pdf; Ch10.1_pt2.pdf; Ch10.1_pt3.pdf",
+ "intro": "Every world with enough gravity wraps itself in gas. Find out what an atmosphere is and what it does, compare the very different air of Mercury, Venus, Earth, the Moon and Mars, and meet the trace gases that warm a planet through the greenhouse effect. Then learn to measure pressure, see why air thins with height and why warm air rises, how planets gain and lose their gas, how sunlight ionizes, breaks, scatters and warms the air (and why the sky is blue), and finish with the layers of Earth's atmosphere, why only Earth has a stratosphere, and how the magnetosphere shields us and lights the auroras.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Define an atmosphere and explain what holds it to a world."
+  },
+  {
+   "id": "goal-02",
+   "text": "Describe the four main effects an atmosphere has on a world's surface."
+  },
+  {
+   "id": "goal-03",
+   "text": "Compare the size and composition of the atmospheres of Mercury, Venus, Earth, the Moon and Mars."
+  },
+  {
+   "id": "goal-04",
+   "text": "Identify the main greenhouse gases and explain how they warm a planet."
+  },
+  {
+   "id": "goal-05",
+   "text": "Calculate pressure from force and area, and convert between Pa, kPa, bar and atm."
+  },
+  {
+   "id": "goal-06",
+   "text": "Explain why air pressure and density decrease with altitude, and how the ideal gas law drives convection."
+  },
+  {
+   "id": "goal-07",
+   "text": "List the processes by which planets gain and lose atmospheric gas."
+  },
+  {
+   "id": "goal-08",
+   "text": "Describe how X rays, ultraviolet, visible and infrared light interact with atmospheric gas, and explain why the sky is blue and sunsets are red."
+  },
+  {
+   "id": "goal-09",
+   "text": "Describe the layers of Earth's atmosphere by how temperature changes with altitude, and explain why only Earth has a stratosphere."
+  },
+  {
+   "id": "goal-10",
+   "text": "Explain how the magnetosphere protects Earth and produces auroras."
+  }
+ ],
+ "sections": [
+  {
+   "id": "what",
+   "title": "What an atmosphere is",
+   "slides": "Ch10.1 pt1: slides 1-3, 6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/sky_p1-1.webp",
+      "slide": "slide 1 (Ch10.1 pt1)",
+      "alt": "A deep blue sky with long wisps of white cloud above a flat blue sea."
+     },
+     "title": "A blanket of gas held by gravity",
+     "bullets": [
+      "An **atmosphere** is a layer of gas that surrounds a world and is held onto it by **gravity**.",
+      "Three questions run through this unit: what an atmosphere is, how planets gain and lose their atmospheres, and how the **greenhouse effect** warms a planet."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/airglow_p1-2.webp",
+      "slide": "slide 2 (Ch10.1 pt1)",
+      "alt": "Four photos taken from the International Space Station showing thin glowing bands of green, orange and blue light along the edge of Earth against the black of space."
+     },
+     "title": "Airglow: the atmosphere seen from orbit",
+     "bullets": [
+      "From the International Space Station the atmosphere is a thin glowing band along Earth's edge.",
+      "The colourful glow (green, orange and blue) is called **airglow**: faint light given off by gas high in the atmosphere."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/venus_views_p1-3.webp",
+      "slide": "slide 3 (Ch10.1 pt1)",
+      "alt": "Six views of Venus: an orange radar map of its surface, a pale cream true-colour globe hidden by cloud, a cut-away showing a metallic core, rocky mantle, crust, carbon dioxide atmosphere and sulfuric acid clouds, and three views in violet, infrared and ultraviolet light."
+     },
+     "title": "Venus: a world hidden by its air",
+     "bullets": [
+      "In visible light (true colour) Venus is a pale, featureless ball, because thick clouds hide the surface completely.",
+      "Radar passes through the clouds and maps the surface underneath. Pictures in violet, infrared and ultraviolet light show the cloud patterns.",
+      "Inside, Venus has a metallic core, a rocky mantle and a crust, wrapped in a carbon dioxide atmosphere with sulfuric acid clouds."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/weather_p1-6.webp",
+      "slide": "slide 6 (Ch10.1 pt1)",
+      "alt": "A collage of weather on other worlds and in the sky: meteor streaks against the Milky Way, lightning, Jupiter's Great Red Spot, a swirling polar storm shown in red and cyan, and dark storm spots on blue Neptune."
+     },
+     "title": "Weather on many worlds",
+     "bullets": [
+      "Atmospheres support many kinds of weather: lightning, meteors burning up, and giant storms such as Jupiter's Great Red Spot and the dark spots on Neptune."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Gravity is what keeps the gas from drifting off into space. That is why small, low-gravity worlds struggle to keep an atmosphere."
+    },
+    {
+     "type": "trick",
+     "text": "Think of an atmosphere as a gas blanket tucked in by gravity."
+    },
+    {
+     "type": "trap",
+     "text": "An atmosphere is held by gravity, not by a magnetic field or by the planet's spin (pt1 slide 2). Venus's true-colour view shows only cloud tops; the surface map comes from radar (pt1 slide 3)."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt1 slides 1-3 and 6",
+    "Airglow explanation added in plain words (outside source)"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/sky_p1-1.webp",
+     "slide": "slide 1 (Ch10.1 pt1)",
+     "alt": "A deep blue sky with long wisps of white cloud above a flat blue sea."
+    },
+    {
+     "src": "img/atmospheres/airglow_p1-2.webp",
+     "slide": "slide 2 (Ch10.1 pt1)",
+     "alt": "Four photos taken from the International Space Station showing thin glowing bands of green, orange and blue light along the edge of Earth against the black of space."
+    },
+    {
+     "src": "img/atmospheres/venus_views_p1-3.webp",
+     "slide": "slide 3 (Ch10.1 pt1)",
+     "alt": "Six views of Venus: an orange radar map of its surface, a pale cream true-colour globe hidden by cloud, a cut-away showing a metallic core, rocky mantle, crust, carbon dioxide atmosphere and sulfuric acid clouds, and three views in violet, infrared and ultraviolet light."
+    },
+    {
+     "src": "img/atmospheres/weather_p1-6.webp",
+     "slide": "slide 6 (Ch10.1 pt1)",
+     "alt": "A collage of weather on other worlds and in the sky: meteor streaks against the Milky Way, lightning, Jupiter's Great Red Spot, a swirling polar storm shown in red and cyan, and dark storm spots on blue Neptune."
+    }
+   ]
+  },
+  {
+   "id": "effects",
+   "title": "What an atmosphere does",
+   "slides": "Ch10.1 pt1: slide 7",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/gen_effects.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards: 1, pressure decides whether water is solid, liquid or gas; 2, light is absorbed and scattered, deciding which wavelengths reach the ground; 3, wind, weather and climate; 4, temperature, set by heat transport, albedo and the greenhouse effect."
+     },
+     "title": "Four big effects",
+     "bullets": [
+      "**Pressure** decides the physical state of substances on the surface, for example whether water can be a liquid.",
+      "Atmospheres **absorb and scatter light**, so they decide which wavelengths of light, if any, reach the surface.",
+      "They create **wind, weather and climate**.",
+      "They control a world's **temperature** through heat transport, albedo (how much light is reflected) and the greenhouse effect."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Without enough pressure, liquid water boils away or freezes. Air pressure is one reason Earth can have oceans."
+    },
+    {
+     "type": "trick",
+     "text": "P-L-W-T: Pressure, Light, Weather, Temperature."
+    },
+    {
+     "type": "trap",
+     "text": "The atmosphere does more than set temperature: pressure sets surface states, and it filters light (pt1 slide 7)."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt1 slide 7",
+    "Original diagram: the four effects as cards"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/gen_effects.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards: 1, pressure decides whether water is solid, liquid or gas; 2, light is absorbed and scattered, deciding which wavelengths reach the ground; 3, wind, weather and climate; 4, temperature, set by heat transport, albedo and the greenhouse effect."
+    }
+   ]
+  },
+  {
+   "id": "worlds",
+   "title": "Atmospheres of the terrestrial worlds",
+   "slides": "Ch10.1 pt1: slides 4, 8-11",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/worlds_p1-4.webp",
+      "slide": "slide 4 (Ch10.1 pt1)",
+      "alt": "Mercury, Venus, Earth, the Moon and Mars above a view of each surface, with the mass of each atmosphere: Mercury and the Moon about 10^4 kg, Venus 5 x 10^20 kg, Earth 5 x 10^18 kg and Mars 2.5 x 10^16 kg."
+     },
+     "title": "A huge range of sizes",
+     "bullets": [
+      "Atmospheres span a wide range of compositions and sizes.",
+      "Mercury and the Moon have almost no atmosphere (about 10^4 kg of gas). Venus's atmosphere (5 x 10^20 kg) is about **100 times** more massive than Earth's (5 x 10^18 kg). Mars has 2.5 x 10^16 kg, far less than Earth."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/mercury_p1-8.webp",
+      "slide": "slide 8 (Ch10.1 pt1)",
+      "alt": "Close-up of Mercury's grey, heavily cratered surface curving against a black sky."
+     },
+     "title": "Mercury: a trace of gas",
+     "bullets": [
+      "Mercury's atmosphere is extremely thin (tenuous), with trace amounts of hydrogen (H), helium (He), sodium (Na) and oxygen (O)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/moon_p1-8.webp",
+      "slide": "slide 8 (Ch10.1 pt1)",
+      "alt": "The Moon's grey cratered surface under a completely black sky."
+     },
+     "title": "The Moon: a trace of gas",
+     "bullets": [
+      "The Moon's atmosphere is also extremely thin, with trace amounts of hydrogen (H), helium (He), neon (Ne) and argon (Ar)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/venus_pie_p1-9.webp",
+      "slide": "slide 9 (Ch10.1 pt1)",
+      "alt": "Pie chart of Venus's atmosphere: almost the whole circle is carbon dioxide, with a thin slice of molecular nitrogen."
+     },
+     "title": "Venus: thick carbon dioxide",
+     "bullets": [
+      "Venus has a very thick atmosphere made mostly of **carbon dioxide (CO₂)**: 96.5% CO₂ and 3.5% N₂.",
+      "Trace gases include SO₂, Ar, H₂O and CO."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/venus_surface_p1-9.webp",
+      "slide": "slide 9 (Ch10.1 pt1)",
+      "alt": "A colourised view of the surface of Venus: dark flat rocks under a uniformly yellow sky."
+     },
+     "title": "The surface of Venus",
+     "bullets": [
+      "A lander photographed a flat, rocky surface under a yellow-looking sky (the colours in the photo were added afterward)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/earth_pie_p1-10.webp",
+      "slide": "slide 10 (Ch10.1 pt1)",
+      "alt": "Pie chart of Earth's atmosphere: about three quarters molecular nitrogen, about one fifth molecular oxygen and a thin sliver of argon."
+     },
+     "title": "Earth: nitrogen and oxygen",
+     "bullets": [
+      "Earth has a moderately thick atmosphere made mostly of **molecular nitrogen (N₂)** and **molecular oxygen (O₂)**: 78.1% N₂, 20.9% O₂ and 0.93% argon (Ar).",
+      "Trace gases include CO₂, H₂O, neon and helium."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/calgary_sky_p1-10.webp",
+      "slide": "slide 10 (Ch10.1 pt1)",
+      "alt": "A green field with yellow dandelions and trees under a blue sky streaked with thin white clouds in Calgary."
+     },
+     "title": "Earth's blue sky",
+     "bullets": [
+      "Our sky looks blue and the clouds white, as in this view over Calgary."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/mars_pie_p1-11.webp",
+      "slide": "slide 11 (Ch10.1 pt1)",
+      "alt": "Pie chart of Mars's atmosphere: almost all carbon dioxide, with small slices of molecular nitrogen and argon."
+     },
+     "title": "Mars: thin carbon dioxide",
+     "bullets": [
+      "Mars has a **thin** atmosphere made mostly of CO₂: 95% CO₂, 2.7% N₂, 1.9% Ar and 0.4% trace gases (O₂, H₂O)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/mars_pano_p1-11.webp",
+      "slide": "slide 11 (Ch10.1 pt1)",
+      "alt": "A wide panorama of Mars: reddish-brown rocky ground stretching to a hazy hill under a pale, dusty sky, with part of the rover in the corner."
+     },
+     "title": "A Martian sunset",
+     "bullets": [
+      "A rover's panorama shows Mars's dusty, pale sky over red rocky ground."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Venus and Mars both have CO₂ atmospheres, but Venus's is thousands of times more massive than Mars's. Earth's is different because life and oceans removed most of its CO₂ and added O₂."
+    },
+    {
+     "type": "trick",
+     "text": "Venus and Mars: 'mostly CO₂, a little N₂'. Earth: 'N-O-Ar' (nitrogen, oxygen, argon)."
+    },
+    {
+     "type": "trap",
+     "text": "Venus's atmosphere is about 100x MORE massive than Earth's, not less (pt1 slide 4). Earth's main gas is nitrogen (78%), not oxygen (21%) (pt1 slide 10). Mars's thin air is still mostly CO₂, like Venus (pt1 slide 11). The sentence about Earth's air being changed by life and oceans in the 'why' box is outside the slides."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt1 slides 4 and 8-11",
+    "Explanation of why Earth's air differs is general knowledge (outside source); the 'colours added' note follows the slide caption 'colourized'"
+   ],
+   "table": {
+    "head": [
+     "World",
+     "Atmosphere",
+     "Main gases"
+    ],
+    "rows": [
+     [
+      "Mercury",
+      "Trace only (about 10^4 kg)",
+      "H, He, Na, O"
+     ],
+     [
+      "Moon",
+      "Trace only (about 10^4 kg)",
+      "H, He, Ne, Ar"
+     ],
+     [
+      "Venus",
+      "Very thick (5 x 10^20 kg)",
+      "96.5% CO₂, 3.5% N₂"
+     ],
+     [
+      "Earth",
+      "Moderate (5 x 10^18 kg)",
+      "78.1% N₂, 20.9% O₂, 0.93% Ar"
+     ],
+     [
+      "Mars",
+      "Thin (2.5 x 10^16 kg)",
+      "95% CO₂, 2.7% N₂, 1.9% Ar"
+     ]
+    ]
+   },
+   "images": [
+    {
+     "src": "img/atmospheres/worlds_p1-4.webp",
+     "slide": "slide 4 (Ch10.1 pt1)",
+     "alt": "Mercury, Venus, Earth, the Moon and Mars above a view of each surface, with the mass of each atmosphere: Mercury and the Moon about 10^4 kg, Venus 5 x 10^20 kg, Earth 5 x 10^18 kg and Mars 2.5 x 10^16 kg."
+    },
+    {
+     "src": "img/atmospheres/mercury_p1-8.webp",
+     "slide": "slide 8 (Ch10.1 pt1)",
+     "alt": "Close-up of Mercury's grey, heavily cratered surface curving against a black sky."
+    },
+    {
+     "src": "img/atmospheres/moon_p1-8.webp",
+     "slide": "slide 8 (Ch10.1 pt1)",
+     "alt": "The Moon's grey cratered surface under a completely black sky."
+    },
+    {
+     "src": "img/atmospheres/venus_pie_p1-9.webp",
+     "slide": "slide 9 (Ch10.1 pt1)",
+     "alt": "Pie chart of Venus's atmosphere: almost the whole circle is carbon dioxide, with a thin slice of molecular nitrogen."
+    },
+    {
+     "src": "img/atmospheres/venus_surface_p1-9.webp",
+     "slide": "slide 9 (Ch10.1 pt1)",
+     "alt": "A colourised view of the surface of Venus: dark flat rocks under a uniformly yellow sky."
+    },
+    {
+     "src": "img/atmospheres/earth_pie_p1-10.webp",
+     "slide": "slide 10 (Ch10.1 pt1)",
+     "alt": "Pie chart of Earth's atmosphere: about three quarters molecular nitrogen, about one fifth molecular oxygen and a thin sliver of argon."
+    },
+    {
+     "src": "img/atmospheres/calgary_sky_p1-10.webp",
+     "slide": "slide 10 (Ch10.1 pt1)",
+     "alt": "A green field with yellow dandelions and trees under a blue sky streaked with thin white clouds in Calgary."
+    },
+    {
+     "src": "img/atmospheres/mars_pie_p1-11.webp",
+     "slide": "slide 11 (Ch10.1 pt1)",
+     "alt": "Pie chart of Mars's atmosphere: almost all carbon dioxide, with small slices of molecular nitrogen and argon."
+    },
+    {
+     "src": "img/atmospheres/mars_pano_p1-11.webp",
+     "slide": "slide 11 (Ch10.1 pt1)",
+     "alt": "A wide panorama of Mars: reddish-brown rocky ground stretching to a hazy hill under a pale, dusty sky, with part of the rover in the corner."
+    }
+   ]
+  },
+  {
+   "id": "trace",
+   "title": "Trace gases and greenhouse gases",
+   "slides": "Ch10.1 pt1: slides 12-14",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/gases_table_p1-12.webp",
+      "slide": "slide 12 (Ch10.1 pt1)",
+      "alt": "Table of trace gases in Earth's air with their amount, whether each is a pollutant and whether it is a greenhouse gas: carbon dioxide 420 ppm, water vapour 0 to 4%, ozone 1 ppm, methane 2 ppm, carbon monoxide 0.1 ppm, sulfur dioxide 1 ppb, halocarbons 1 ppb and noble gases 20 ppm."
+     },
+     "title": "Small amounts that matter",
+     "bullets": [
+      "Earth's air holds many gases in trace amounts: water vapour (H₂O), carbon dioxide (CO₂), ozone (O₃), pollutants and noble gases.",
+      "The **greenhouse gases** include **CO₂, H₂O, CH₄ (methane) and O₃ (ozone)**. They absorb and re-emit infrared radiation, which warms the planet through the greenhouse effect.",
+      "Some trace gases are pollutants but not greenhouse gases (carbon monoxide, sulfur dioxide). Ozone, methane and halocarbons are both."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/gen_greenhouse.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: yellow visible sunlight passes through the air and warms the ground; the ground gives off red infrared waves; greenhouse gas molecules absorb the infrared and send some of it back down, so the surface stays warmer."
+     },
+     "title": "How the greenhouse effect works",
+     "bullets": [
+      "Visible sunlight passes through the air and warms the ground.",
+      "The warm ground gives off **infrared** light.",
+      "Greenhouse gas molecules absorb that infrared and re-emit it in all directions, some back down, so the surface ends up warmer than it would be without them."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/clouds_p1-13.webp",
+      "slide": "slide 13 (Ch10.1 pt1)",
+      "alt": "Earth seen from orbit: towers of white cloud over a blue ocean, with a thin glowing blue line of air along the edge of the planet."
+     },
+     "title": "Where the weather lives",
+     "bullets": [
+      "The densest part of Earth's atmosphere is only about **10 km** thick, but the whole atmosphere reaches far higher. Most clouds and weather happen in this lowest layer.",
+      "Clouds are not steam and not a complicated mixture of gases: they are patches of air cool enough for **tiny water droplets to condense**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/iss_aurora_p1-14.webp",
+      "slide": "slide 14 (Ch10.1 pt1)",
+      "alt": "From the International Space Station, green aurora light swirls above clouds on Earth, with the station's solar panels in the corner."
+     },
+     "title": "The top of the atmosphere",
+     "bullets": [
+      "The International Space Station orbits at about **400 km**. Only about a **trillionth** of the atmosphere's mass lies above that height.",
+      "The upper boundary of the atmosphere crosses into space and the **magnetosphere**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Greenhouse gases let visible sunlight in but slow the escape of infrared heat, like a blanket that lets light through."
+    },
+    {
+     "type": "trick",
+     "text": "Greenhouse gases: 'Can Water Make Ozone?' = CO₂, Water vapour, Methane, Ozone."
+    },
+    {
+     "type": "trap",
+     "text": "N₂ and O₂, the main gases, are NOT greenhouse gases (pt1 slide 12). CO₂ and water vapour are greenhouse gases but are not counted as pollutants in the table; carbon monoxide is a pollutant but NOT a greenhouse gas. Clouds are condensed water droplets, not steam (pt1 slide 13)."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt1 slides 12-14",
+    "Original animation of the greenhouse effect follows the slide statement that these gases absorb and re-emit infrared"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/gases_table_p1-12.webp",
+     "slide": "slide 12 (Ch10.1 pt1)",
+     "alt": "Table of trace gases in Earth's air with their amount, whether each is a pollutant and whether it is a greenhouse gas: carbon dioxide 420 ppm, water vapour 0 to 4%, ozone 1 ppm, methane 2 ppm, carbon monoxide 0.1 ppm, sulfur dioxide 1 ppb, halocarbons 1 ppb and noble gases 20 ppm."
+    },
+    {
+     "src": "img/atmospheres/gen_greenhouse.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: yellow visible sunlight passes through the air and warms the ground; the ground gives off red infrared waves; greenhouse gas molecules absorb the infrared and send some of it back down, so the surface stays warmer."
+    },
+    {
+     "src": "img/atmospheres/clouds_p1-13.webp",
+     "slide": "slide 13 (Ch10.1 pt1)",
+     "alt": "Earth seen from orbit: towers of white cloud over a blue ocean, with a thin glowing blue line of air along the edge of the planet."
+    },
+    {
+     "src": "img/atmospheres/iss_aurora_p1-14.webp",
+     "slide": "slide 14 (Ch10.1 pt1)",
+     "alt": "From the International Space Station, green aurora light swirls above clouds on Earth, with the station's solar panels in the corner."
+    }
+   ]
+  },
+  {
+   "id": "pressure",
+   "title": "Pressure and its units",
+   "slides": "Ch10.1 pt2: slide 1",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/force_area_p2-1.webp",
+      "slide": "slide 1 (Ch10.1 pt2)",
+      "alt": "A force arrow labelled F pushing straight down on a flat area labelled A."
+     },
+     "title": "Force spread over an area",
+     "bullets": [
+      "**Pressure** is force divided by the area it acts on: **P = F / A**.",
+      "Its unit is the **pascal**: 1 Pa = 1 N/m² = 1 kg/(m·s²).",
+      "The same force on a smaller area gives a larger pressure."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/gen_pressure_units.webp",
+      "slide": "none (original diagram)",
+      "alt": "Pressure equals force divided by area; 1 pascal is 1 newton per square metre. 1 kPa is 1,000 Pa, 1 bar is 100,000 Pa, 1 atm is 101,325 Pa and 1 psi is 6,894.76 Pa. Sea level is about 1 atm (14.7 pounds per square inch); Calgary, about 1 km up, is about 0.88 atm, roughly 89 kPa."
+     },
+     "title": "Other units",
+     "bullets": [
+      "1 kPa (kilopascal) = 1,000 Pa.",
+      "1 bar = 100,000 Pa.",
+      "1 atm (atmosphere) = 101,325 Pa.",
+      "1 psi (pound per square inch) = 6,894.76 Pa."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/gauge_p2-1.webp",
+      "slide": "slide 1 (Ch10.1 pt2)",
+      "alt": "A round pressure gauge with two scales, kilopascals and pounds per square inch."
+     },
+     "title": "Reading a gauge",
+     "bullets": [
+      "Pressure gauges often show two scales at once, such as kilopascals and pounds per square inch."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Pressure, not total force, is what matters for gases: it tells you how hard the gas pushes on each square metre of anything it touches."
+    },
+    {
+     "type": "trick",
+     "text": "Kilo means a thousand: 1 kPa = 1,000 Pa. 'Bar' is a round 100,000 Pa; an atmosphere is a bit more, 101,325 Pa."
+    },
+    {
+     "type": "trap",
+     "text": "The deck writes 'Kpc' and '1 Pa = 101,325 Pa' (pt2 slide 1); these are typos for kPa and 1 atm = 101,325 Pa. Halving the area doubles the pressure; it does not halve it."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt2 slide 1 (two typos corrected: 'Kpc' is kPa; '1 Pa = 101,325 Pa' is 1 atm = 101,325 Pa)",
+    "Original diagram: unit conversions"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/force_area_p2-1.webp",
+     "slide": "slide 1 (Ch10.1 pt2)",
+     "alt": "A force arrow labelled F pushing straight down on a flat area labelled A."
+    },
+    {
+     "src": "img/atmospheres/gen_pressure_units.webp",
+     "slide": "none (original diagram)",
+     "alt": "Pressure equals force divided by area; 1 pascal is 1 newton per square metre. 1 kPa is 1,000 Pa, 1 bar is 100,000 Pa, 1 atm is 101,325 Pa and 1 psi is 6,894.76 Pa. Sea level is about 1 atm (14.7 pounds per square inch); Calgary, about 1 km up, is about 0.88 atm, roughly 89 kPa."
+    },
+    {
+     "src": "img/atmospheres/gauge_p2-1.webp",
+     "slide": "slide 1 (Ch10.1 pt2)",
+     "alt": "A round pressure gauge with two scales, kilopascals and pounds per square inch."
+    }
+   ]
+  },
+  {
+   "id": "airpressure",
+   "title": "Air pressure and altitude",
+   "slides": "Ch10.1 pt2: slides 2-5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/pillows_p2-2.webp",
+      "slide": "slide 2 (Ch10.1 pt2)",
+      "alt": "A tall stack of pillows beside a column of air molecules: the pillows at the bottom are squashed flat by the weight above, and the molecules are crowded at the bottom and spread out at the top."
+     },
+     "title": "Pressure and density",
+     "bullets": [
+      "Pressure and density are the **intensive** partners of force and mass: they describe the same property but do not depend on the size of the system.",
+      "That makes them useful for describing the atmosphere."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/marbles_p2-3.webp",
+      "slide": "slide 3 (Ch10.1 pt2)",
+      "alt": "A large glass jug of marbles with red arrows pushing in from the top, bottom, left and right toward one point in the middle."
+     },
+     "title": "Pressure from every direction",
+     "bullets": [
+      "Put your hand in a jar of marbles and you feel pressure from all directions, not just from the marbles above.",
+      "Air pressure likewise acts on your **whole body**. The force on an elephant is larger because it is bigger, but the **pressure** is the same."
+     ]
+    },
+    {
+     "title": "One atmosphere at sea level",
+     "bullets": [
+      "The weight of the air above us gives about **1 atmosphere** of pressure at sea level, about **1.01 x 10^5 Pa** or **14.7 lb/in²**. Higher places have lower pressure.",
+      "In **Calgary**, about 1 km above sea level, the pressure is roughly **0.88 atm (89 kPa)**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/gen_convection.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a column of air with molecules crowded near the ground and spread out high up, marked high pressure below and low pressure above; beside it a bubble of air warmed by the ground rises, cools high up and sinks again in a loop."
+     },
+     "title": "Squeezed air near the ground",
+     "bullets": [
+      "Air can be compressed, so the air at low altitude is squashed by the air above and is much **denser**.",
+      "That is why it is harder to breathe at very high elevations: each breath holds fewer molecules.",
+      "Near the surface, the extra density raises the pressure above what it would be if air could not be compressed."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Each layer of air carries the weight of all the air above it, like the bottom pillow in a stack carrying all the others."
+    },
+    {
+     "type": "trick",
+     "text": "Stack of pillows: the bottom one is flattest. Air at the bottom is densest and has the highest pressure."
+    },
+    {
+     "type": "trap",
+     "text": "Pressure is the same on you and an elephant; only the total FORCE differs (pt2 slide 3). Calgary is LOWER pressure than sea level (0.88 atm), not higher (pt2 slide 4). The deck writes '89 kpc', meaning 89 kPa."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt2 slides 2-5",
+    "Original animation shows the density gradient (pt2 slide 5) and convection (pt2 slide 6)"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/pillows_p2-2.webp",
+     "slide": "slide 2 (Ch10.1 pt2)",
+     "alt": "A tall stack of pillows beside a column of air molecules: the pillows at the bottom are squashed flat by the weight above, and the molecules are crowded at the bottom and spread out at the top."
+    },
+    {
+     "src": "img/atmospheres/marbles_p2-3.webp",
+     "slide": "slide 3 (Ch10.1 pt2)",
+     "alt": "A large glass jug of marbles with red arrows pushing in from the top, bottom, left and right toward one point in the middle."
+    },
+    {
+     "src": "img/atmospheres/gen_convection.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a column of air with molecules crowded near the ground and spread out high up, marked high pressure below and low pressure above; beside it a bubble of air warmed by the ground rises, cools high up and sinks again in a loop."
+    }
+   ]
+  },
+  {
+   "id": "gaslaw",
+   "title": "The ideal gas law and convection",
+   "slides": "Ch10.1 pt2: slide 6",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/balloons_p2-6.webp",
+      "slide": "slide 6 (Ch10.1 pt2)",
+      "alt": "Three balloons with arrows for moving air molecules: one balanced, one being blown up with more molecules and one heated by a candle so its molecules move faster; both of the last two expand."
+     },
+     "title": "PV = nRT",
+     "bullets": [
+      "Air roughly obeys the **ideal gas law**, PV = nRT (pressure x volume = amount of gas x a constant x temperature).",
+      "Raising the temperature T or the number of particles n raises the pressure P or the volume V. If nothing holds the air in, the **volume grows**.",
+      "A balloon stays inflated when the pressure inside and outside balance. Blowing in more air, or heating it so the molecules move faster, makes it expand until the pressures balance again."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/gen_convection.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a column of air with molecules crowded near the ground and spread out high up, marked high pressure below and low pressure above; beside it a bubble of air warmed by the ground rises, cools high up and sinks again in a loop."
+     },
+     "title": "Why warm air rises",
+     "bullets": [
+      "Hotter air takes up more volume, so it is **less dense**. It rises, then cools at higher altitude and sinks again.",
+      "This cycle is **convection**, and it drives much of the weather."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Faster-moving molecules hit harder and more often, so warming a gas pushes its walls outward."
+    },
+    {
+     "type": "trick",
+     "text": "Hot air balloon: heat it, it swells, it floats."
+    },
+    {
+     "type": "trap",
+     "text": "Heating air with nothing holding it in increases its VOLUME (and lowers its density) rather than piling up pressure (pt2 slide 6). Warm air rises because it is less dense, not because heat itself 'rises'."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt2 slide 6"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/balloons_p2-6.webp",
+     "slide": "slide 6 (Ch10.1 pt2)",
+     "alt": "Three balloons with arrows for moving air molecules: one balanced, one being blown up with more molecules and one heated by a candle so its molecules move faster; both of the last two expand."
+    },
+    {
+     "src": "img/atmospheres/gen_convection.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a column of air with molecules crowded near the ground and spread out high up, marked high pressure below and low pressure above; beside it a bubble of air warmed by the ground rises, cools high up and sinks again in a loop."
+    }
+   ]
+  },
+  {
+   "id": "gainloss",
+   "title": "How planets gain and lose atmospheres",
+   "slides": "Ch10.1 pt2: slides 7-8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/gain_p2-7.webp",
+      "slide": "slide 7 (Ch10.1 pt2)",
+      "alt": "A volcano giving off a cloud of gas, and a pool of water with arrows rising from it into the air."
+     },
+     "title": "Ways to gain gas",
+     "bullets": [
+      "**Outgassing** from volcanoes.",
+      "**Evaporation** of surface liquid and **sublimation** of surface ice (ice turning straight into gas)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/impacts_p2-7.webp",
+      "slide": "slide 7 (Ch10.1 pt2)",
+      "alt": "Particles and wavy rays of light striking a surface and knocking material off it."
+     },
+     "title": "More ways to gain gas",
+     "bullets": [
+      "**Impacts of particles and photons** that knock atoms off the surface.",
+      "**Biological and human (anthropogenic) processes**, on Earth."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/loss_p2-8.webp",
+      "slide": "slide 8 (Ch10.1 pt2)",
+      "alt": "Gas atoms in the upper air, some flying off upward; particles from above knocking atoms away; arrows of gas coming down into a pond and onto the ground."
+     },
+     "title": "Ways to lose gas",
+     "bullets": [
+      "**Thermal escape**: fast-moving atoms high up fly off into space.",
+      "**Sweeping by the solar wind**.",
+      "**Large impacts** blasting gas into space.",
+      "**Chemical reactions** with the surface, which lock gas into rock.",
+      "**Condensation** onto the surface (gas freezing or raining out)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/gen_gain_loss.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two lists. Ways to gain gas: outgassing from volcanoes, evaporation and sublimation, impacts of particles and photons, and living things and people on Earth. Ways to lose gas: thermal escape, the solar wind, large impacts, chemical reactions with the surface and condensation onto the surface."
+     },
+     "title": "Both lists side by side",
+     "bullets": [
+      "Gains: outgassing, evaporation and sublimation, impacts of particles and photons, life and people.",
+      "Losses: thermal escape, solar wind, large impacts, chemical reactions, condensation."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "An atmosphere is a balance: whatever a planet has today is what is left after billions of years of gains and losses."
+    },
+    {
+     "type": "trick",
+     "text": "Gains come up FROM the surface (volcanoes, evaporation); most losses go OUT to space or DOWN into the surface."
+    },
+    {
+     "type": "trap",
+     "text": "Impacts appear on both lists: small particle and photon impacts can ADD gas knocked off the surface, while large impacts can BLAST gas away (pt2 slides 7-8). Condensation and chemical reactions are losses, even though the gas stays on the planet."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt2 slides 7-8",
+    "'Knock atoms off the surface' and 'lock gas into rock' are plain-language explanations (outside source)"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/gain_p2-7.webp",
+     "slide": "slide 7 (Ch10.1 pt2)",
+     "alt": "A volcano giving off a cloud of gas, and a pool of water with arrows rising from it into the air."
+    },
+    {
+     "src": "img/atmospheres/impacts_p2-7.webp",
+     "slide": "slide 7 (Ch10.1 pt2)",
+     "alt": "Particles and wavy rays of light striking a surface and knocking material off it."
+    },
+    {
+     "src": "img/atmospheres/loss_p2-8.webp",
+     "slide": "slide 8 (Ch10.1 pt2)",
+     "alt": "Gas atoms in the upper air, some flying off upward; particles from above knocking atoms away; arrows of gas coming down into a pond and onto the ground."
+    },
+    {
+     "src": "img/atmospheres/gen_gain_loss.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two lists. Ways to gain gas: outgassing from volcanoes, evaporation and sublimation, impacts of particles and photons, and living things and people on Earth. Ways to lose gas: thermal escape, the solar wind, large impacts, chemical reactions with the surface and condensation onto the surface."
+    }
+   ]
+  },
+  {
+   "id": "sunlight",
+   "title": "How sunlight affects an atmosphere",
+   "slides": "Ch10.1 pt3: slides 1-2",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/sunlight_p3-1.webp",
+      "slide": "slide 1 (Ch10.1 pt3)",
+      "alt": "Four kinds of light meeting molecules, from highest to lowest energy: X rays knock off an electron and break a molecule apart, ultraviolet breaks a molecule apart, visible light mostly passes straight through with blue scattered more than red, and infrared makes a molecule vibrate and rotate."
+     },
+     "title": "Four things light can do to gas",
+     "bullets": [
+      "**Ionization**: high-energy light knocks electrons out of atoms or molecules.",
+      "**Dissociation**: light breaks molecules apart.",
+      "**Scattering**: light bounces off in a new direction.",
+      "**Absorption and re-emission**: the energy is mostly turned into motion and heat, and the rest is given off again as a new photon."
+     ]
+    },
+    {
+     "title": "Which light does what",
+     "bullets": [
+      "**X rays and ultraviolet** light can ionize and dissociate molecules.",
+      "Most **visible** light passes straight through, but nitrogen and oxygen molecules (N₂ and O₂) scatter **blue light at steeper angles than red light**.",
+      "**Greenhouse gas** molecules absorb **infrared** light, which makes them vibrate and rotate."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Higher-energy light can do more damage: X rays and UV have enough energy to break molecules, while infrared only sets them wiggling."
+    },
+    {
+     "type": "trick",
+     "text": "From high energy to low: X ray and UV 'break', visible 'bounces', infrared 'jiggles'."
+    },
+    {
+     "type": "trap",
+     "text": "Visible light is mostly TRANSMITTED, not absorbed (pt3 slide 1). It is infrared that greenhouse gases absorb, not visible light (pt3 slide 2). Ionization removes electrons; dissociation breaks molecules; they are not the same."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt3 slides 1-2"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/sunlight_p3-1.webp",
+     "slide": "slide 1 (Ch10.1 pt3)",
+     "alt": "Four kinds of light meeting molecules, from highest to lowest energy: X rays knock off an electron and break a molecule apart, ultraviolet breaks a molecule apart, visible light mostly passes straight through with blue scattered more than red, and infrared makes a molecule vibrate and rotate."
+    }
+   ]
+  },
+  {
+   "id": "bluesky",
+   "title": "Why the sky is blue and sunsets are red",
+   "slides": "Ch10.1 pt3: slide 3",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/rayleigh_p3-3.webp",
+      "slide": "slide 3 (Ch10.1 pt3)",
+      "alt": "Sunlight entering the atmosphere: blue light is scattered in all directions toward a person under a blue sky, while the remaining reddish light travels on to a person far away seeing a red sunset."
+     },
+     "title": "Rayleigh scattering",
+     "bullets": [
+      "Scattering by gas molecules depends on wavelength: **blue light scatters much more than red**. This is **Rayleigh scattering**.",
+      "Scattered blue light reaches your eyes from every part of the sky, so the **sky looks blue**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/sunset_p3-3.webp",
+      "slide": "slide 3 (Ch10.1 pt3)",
+      "alt": "A sunset over a fjord: a deep blue sky overhead fading to bright orange and red near the horizon between snowy mountains."
+     },
+     "title": "Red sunsets and sunrises",
+     "bullets": [
+      "When the Sun is low, its light crosses much more air. Most of the blue is scattered out along the way, so the light that reaches you looks **red and orange**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/opal_p3-3.webp",
+      "slide": "slide 3 (Ch10.1 pt3)",
+      "alt": "A milky, bluish piece of glass on a white table with an orange glow in its shadow, where the light passing through has lost its blue."
+     },
+     "title": "The same effect in a stone",
+     "bullets": [
+      "A milky opal-like glass looks bluish from the side, and the light that passes through it comes out orange, for the same reason."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Short wavelengths are scattered most, so blue is spread across the sky while the direct beam keeps the reds."
+    },
+    {
+     "type": "trick",
+     "text": "Blue goes everywhere (the sky); red goes straight through (the sunset)."
+    },
+    {
+     "type": "trap",
+     "text": "The sky is not blue because it reflects the ocean, and not because air is 'blue gas': it is Rayleigh scattering (pt3 slide 3). Sunsets are red because blue was REMOVED along the long path, not because red was added."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt3 slide 3",
+    "Longer path at sunset explained in plain words (outside source); the opal photo is on the slide without a caption"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/rayleigh_p3-3.webp",
+     "slide": "slide 3 (Ch10.1 pt3)",
+     "alt": "Sunlight entering the atmosphere: blue light is scattered in all directions toward a person under a blue sky, while the remaining reddish light travels on to a person far away seeing a red sunset."
+    },
+    {
+     "src": "img/atmospheres/sunset_p3-3.webp",
+     "slide": "slide 3 (Ch10.1 pt3)",
+     "alt": "A sunset over a fjord: a deep blue sky overhead fading to bright orange and red near the horizon between snowy mountains."
+    },
+    {
+     "src": "img/atmospheres/opal_p3-3.webp",
+     "slide": "slide 3 (Ch10.1 pt3)",
+     "alt": "A milky, bluish piece of glass on a white table with an orange glow in its shadow, where the light passing through has lost its blue."
+    }
+   ]
+  },
+  {
+   "id": "layers",
+   "title": "Earth's atmospheric layers",
+   "slides": "Ch10.1 pt3: slides 4-7; pt1 slide 5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/wing_p1-5.webp",
+      "slide": "slide 5 (Ch10.1 pt1)",
+      "alt": "View from an airplane window: the wing over a sea of orange-lit clouds at sunset, with a thinner sky above."
+     },
+     "title": "Layers set by temperature",
+     "bullets": [
+      "All but the thinnest atmospheres have **layers**, told apart by how temperature changes with height.",
+      "The air gets thinner with altitude, but the temperature goes down and up."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/layer_tropo_p3-4.webp",
+      "slide": "slide 4 (Ch10.1 pt3)",
+      "alt": "Graph of temperature against altitude in Earth's atmosphere with the lowest band, ground to about 12 km, boxed: the temperature falls from about 15 degrees Celsius at the ground to about minus 55, and a loop of rising warm air sits by the ground."
+     },
+     "title": "Troposphere",
+     "bullets": [
+      "The **lowest** layer, on average about **12 km** high.",
+      "Temperature **drops steadily** with altitude.",
+      "Almost **all weather** happens here.",
+      "It is warmed by **infrared light from the surface** and by **convection**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/layer_strato_p3-5.webp",
+      "slide": "slide 5 (Ch10.1 pt3)",
+      "alt": "The same temperature graph with the band from about 12 to 80 km boxed: temperature rises to a peak near 0 degrees Celsius at about 50 km, then falls again, making a knee in the curve. Ultraviolet rays stop around 50 km."
+     },
+     "title": "Stratosphere",
+     "bullets": [
+      "Extends from about **20 km** to **50-85 km** (the upper part is sometimes called the **mesosphere**).",
+      "Temperature **rises** with altitude in the lower part and **drops** in the upper part, making a 'knee' in the graph.",
+      "The temperature peak matches the highest concentration of **ozone**, which absorbs **ultraviolet** light."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/layer_thermo_p3-6.webp",
+      "slide": "slide 6 (Ch10.1 pt3)",
+      "alt": "The same graph with the band above about 80 km boxed: temperature climbs steeply with height, and the X-ray arrows stop in this layer."
+     },
+     "title": "Thermosphere",
+     "bullets": [
+      "Starts at about **85 km** and ends around **500 km**.",
+      "Temperature **rises steadily** with altitude because of more exposure to ionizing radiation and the **solar wind**.",
+      "UV light and X rays ionize and dissociate the few gas molecules up here, so this layer is the main part of the **ionosphere**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/layer_exo_p3-7.webp",
+      "slide": "slide 7 (Ch10.1 pt3)",
+      "alt": "The same graph with the top band, around 500 km, boxed: the thinnest air, with a satellite drawn at that height."
+     },
+     "title": "Exosphere",
+     "bullets": [
+      "Starts at about **500 km** and gradually fades into space, ending around **10,000 km**.",
+      "Particles are so sparse that they rarely meet. Radiation can energize them enough to **escape into space**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/gen_layers.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four stacked bands from the ground up: troposphere, ground to about 12 km, cooling with height and holding the weather; stratosphere, about 20 to 50-85 km, with its ozone warm peak; thermosphere, about 85 to 500 km, heating with height; exosphere, about 500 to 10,000 km, fading into space."
+     },
+     "title": "All four together",
+     "bullets": [
+      "From the ground up: troposphere, stratosphere, thermosphere, exosphere."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/limb_p1-5.webp",
+      "slide": "slide 5 (Ch10.1 pt1)",
+      "alt": "Earth's edge seen from high up: white cloud tops, a thin blue layer of air, then the black of space with a faint Moon."
+     },
+     "title": "A thin skin",
+     "bullets": [
+      "Seen from high up, the atmosphere is a thin blue layer hugging the planet."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Each warm layer has its own heater: the ground's infrared warms the troposphere, ozone absorbing UV warms the stratosphere, and X rays and the solar wind heat the thermosphere."
+    },
+    {
+     "type": "trick",
+     "text": "'Tall Students Think Early': Troposphere, Stratosphere, Thermosphere, Exosphere, from the bottom up."
+    },
+    {
+     "type": "trap",
+     "text": "Temperature does NOT just fall with height: it falls in the troposphere, rises then falls in the stratosphere, then rises in the thermosphere (pt3 slides 4-6). Weather is in the troposphere, not the stratosphere. The ionosphere is mainly the thermosphere. The slides give the troposphere as ~12 km but the stratosphere as starting 'about 20 km'; the graph shows the boundary near 12 km."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt3 slides 4-7 and pt1 slide 5",
+    "Original summary diagram of the four layers"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/wing_p1-5.webp",
+     "slide": "slide 5 (Ch10.1 pt1)",
+     "alt": "View from an airplane window: the wing over a sea of orange-lit clouds at sunset, with a thinner sky above."
+    },
+    {
+     "src": "img/atmospheres/layer_tropo_p3-4.webp",
+     "slide": "slide 4 (Ch10.1 pt3)",
+     "alt": "Graph of temperature against altitude in Earth's atmosphere with the lowest band, ground to about 12 km, boxed: the temperature falls from about 15 degrees Celsius at the ground to about minus 55, and a loop of rising warm air sits by the ground."
+    },
+    {
+     "src": "img/atmospheres/layer_strato_p3-5.webp",
+     "slide": "slide 5 (Ch10.1 pt3)",
+     "alt": "The same temperature graph with the band from about 12 to 80 km boxed: temperature rises to a peak near 0 degrees Celsius at about 50 km, then falls again, making a knee in the curve. Ultraviolet rays stop around 50 km."
+    },
+    {
+     "src": "img/atmospheres/layer_thermo_p3-6.webp",
+     "slide": "slide 6 (Ch10.1 pt3)",
+     "alt": "The same graph with the band above about 80 km boxed: temperature climbs steeply with height, and the X-ray arrows stop in this layer."
+    },
+    {
+     "src": "img/atmospheres/layer_exo_p3-7.webp",
+     "slide": "slide 7 (Ch10.1 pt3)",
+     "alt": "The same graph with the top band, around 500 km, boxed: the thinnest air, with a satellite drawn at that height."
+    },
+    {
+     "src": "img/atmospheres/gen_layers.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four stacked bands from the ground up: troposphere, ground to about 12 km, cooling with height and holding the weather; stratosphere, about 20 to 50-85 km, with its ozone warm peak; thermosphere, about 85 to 500 km, heating with height; exosphere, about 500 to 10,000 km, fading into space."
+    },
+    {
+     "src": "img/atmospheres/limb_p1-5.webp",
+     "slide": "slide 5 (Ch10.1 pt1)",
+     "alt": "Earth's edge seen from high up: white cloud tops, a thin blue layer of air, then the black of space with a faint Moon."
+    }
+   ]
+  },
+  {
+   "id": "planets",
+   "title": "Layers on other planets",
+   "slides": "Ch10.1 pt3: slide 8",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/planet_temps_p3-8.webp",
+      "slide": "slide 8 (Ch10.1 pt3)",
+      "alt": "Temperature against altitude for Venus, Earth and Mars. Venus starts far hotter at the ground and cools over a deep troposphere; only Earth's curve has a warm bump near 50 km; Mars stays cold. Arrows mark each planet's surface temperature without a greenhouse effect: Mars -56, Venus -40 and Earth -16 degrees Celsius."
+     },
+     "title": "Venus, Earth and Mars compared",
+     "bullets": [
+      "**Venus** has a much **larger troposphere**, because its surface is much hotter.",
+      "Both Venus and Mars have **thermospheres and exospheres**.",
+      "**Earth is the only terrestrial planet with a stratosphere**, because only Earth has UV-absorbing **ozone (O₃)**.",
+      "The arrows on the graph show each planet's surface temperature if there were **no greenhouse effect**: Mars about -56 °C, Venus about -40 °C and Earth about -16 °C."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "No ozone means nothing absorbs UV in the middle of the atmosphere, so there is no warm stratosphere bump on Venus or Mars."
+    },
+    {
+     "type": "trick",
+     "text": "Stratosphere = ozone = Earth only."
+    },
+    {
+     "type": "trap",
+     "text": "Venus and Mars DO have thermospheres and exospheres; only the stratosphere is missing (pt3 slide 8). Without a greenhouse effect Venus would be colder than freezing (-40 °C), even though it is closer to the Sun."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt3 slide 8"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/planet_temps_p3-8.webp",
+     "slide": "slide 8 (Ch10.1 pt3)",
+     "alt": "Temperature against altitude for Venus, Earth and Mars. Venus starts far hotter at the ground and cools over a deep troposphere; only Earth's curve has a warm bump near 50 km; Mars stays cold. Arrows mark each planet's surface temperature without a greenhouse effect: Mars -56, Venus -40 and Earth -16 degrees Celsius."
+    }
+   ]
+  },
+  {
+   "id": "magnetosphere",
+   "title": "The magnetosphere and auroras",
+   "slides": "Ch10.1 pt3: slide 9",
+   "steps": [
+    {
+     "img": {
+      "src": "img/atmospheres/magnetosphere_p3-9.webp",
+      "slide": "slide 9 (Ch10.1 pt3)",
+      "alt": "The solar wind streams from the Sun and bends around Earth's magnetic field, which is squashed on the Sun side and stretched into a long tail; aurora rings sit around the poles and charged particle belts circle the planet."
+     },
+     "title": "A magnetic shield",
+     "bullets": [
+      "Earth's **magnetosphere** protects the surface from charged particles streaming from the Sun, the **solar wind**.",
+      "The field is squashed on the side facing the Sun and stretched into a long tail on the far side. Belts of charged particles are trapped inside it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/atmospheres/aurora_p3-9.webp",
+      "slide": "slide 9 (Ch10.1 pt3)",
+      "alt": "Green aurora curtains glowing over a dark forest under a starry sky."
+     },
+     "title": "Auroras",
+     "bullets": [
+      "Near the magnetic poles, the solar wind **energizes the thermosphere**, making it glow: the **auroras**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Charged particles follow magnetic field lines, which dip down into the atmosphere near the poles, so that is where they hit the air."
+    },
+    {
+     "type": "trick",
+     "text": "No magnetic field, no shield: the solar wind can then strip away the upper atmosphere."
+    },
+    {
+     "type": "trap",
+     "text": "Auroras glow in the THERMOSPHERE near the magnetic poles, not in the troposphere where clouds are (pt3 slide 9). The magnetosphere stops charged particles, not sunlight."
+    }
+   ],
+   "sourceNotes": [
+    "Ch10.1 pt3 slide 9",
+    "Why particles reach the poles (field lines) is a plain-language explanation (outside source)"
+   ],
+   "images": [
+    {
+     "src": "img/atmospheres/magnetosphere_p3-9.webp",
+     "slide": "slide 9 (Ch10.1 pt3)",
+     "alt": "The solar wind streams from the Sun and bends around Earth's magnetic field, which is squashed on the Sun side and stretched into a long tail; aurora rings sit around the poles and charged particle belts circle the planet."
+    },
+    {
+     "src": "img/atmospheres/aurora_p3-9.webp",
+     "slide": "slide 9 (Ch10.1 pt3)",
+     "alt": "Green aurora curtains glowing over a dark forest under a starry sky."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Earth's atmospheric layers at a glance",
+  "head": [
+   "Layer",
+   "Height (about)",
+   "Temperature with height",
+   "Key facts"
+  ],
+  "rows": [
+   [
+    "Troposphere",
+    "Ground to 12 km",
+    "Falls",
+    "Almost all weather; warmed by surface infrared and convection"
+   ],
+   [
+    "Stratosphere",
+    "20 to 50-85 km",
+    "Rises, then falls (the 'knee')",
+    "Ozone absorbs UV at the warm peak; only Earth has one"
+   ],
+   [
+    "Thermosphere",
+    "85 to 500 km",
+    "Rises steadily",
+    "X rays, UV and the solar wind; main ionosphere; auroras"
+   ],
+   [
+    "Exosphere",
+    "500 to 10,000 km",
+    "Fades into space",
+    "Particles rarely meet and can escape"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "atm-c1",
+   "front": "Atmosphere",
+   "back": "A layer of gas that surrounds a world and is held to it by gravity.",
+   "short": "Gas layer held by gravity",
+   "src": "Ch10.1 pt1 slide 2"
+  },
+  {
+   "id": "atm-c2",
+   "front": "Airglow",
+   "back": "Faint coloured light (green, orange, blue) given off by gas high in Earth's atmosphere, seen as a glowing band from orbit.",
+   "short": "Glow of high gas seen from orbit",
+   "src": "Ch10.1 pt1 slide 2"
+  },
+  {
+   "id": "atm-c3",
+   "front": "What does an atmosphere's pressure decide?",
+   "gloss": false,
+   "back": "The physical state of substances on the surface, for example whether water can be liquid.",
+   "short": "Solid, liquid or gas on the surface",
+   "src": "Ch10.1 pt1 slide 7"
+  },
+  {
+   "id": "atm-c4",
+   "front": "Albedo",
+   "back": "How much light a surface or planet reflects. Together with heat transport and the greenhouse effect it helps set a world's temperature.",
+   "short": "Fraction of light reflected",
+   "src": "Ch10.1 pt1 slide 7"
+  },
+  {
+   "id": "atm-c5",
+   "front": "Which worlds have almost no atmosphere?",
+   "gloss": false,
+   "back": "Mercury and the Moon: only trace amounts of gas, about 10^4 kg.",
+   "short": "Mercury and the Moon",
+   "src": "Ch10.1 pt1 slides 4, 8"
+  },
+  {
+   "id": "atm-c6",
+   "front": "How massive is Venus's atmosphere compared with Earth's?",
+   "gloss": false,
+   "back": "About 100 times more massive (5 x 10^20 kg versus 5 x 10^18 kg).",
+   "short": "About 100x Earth's",
+   "src": "Ch10.1 pt1 slide 4"
+  },
+  {
+   "id": "atm-c7",
+   "front": "Mercury's trace gases",
+   "back": "Hydrogen, helium, sodium and oxygen.",
+   "short": "H, He, Na, O",
+   "src": "Ch10.1 pt1 slide 8"
+  },
+  {
+   "id": "atm-c8",
+   "front": "The Moon's trace gases",
+   "back": "Hydrogen, helium, neon and argon.",
+   "short": "H, He, Ne, Ar",
+   "src": "Ch10.1 pt1 slide 8"
+  },
+  {
+   "id": "atm-c9",
+   "front": "Venus's atmosphere",
+   "back": "Very thick: 96.5% carbon dioxide and 3.5% nitrogen, with traces of SO₂, Ar, H₂O and CO.",
+   "short": "Thick, 96.5% CO₂",
+   "src": "Ch10.1 pt1 slide 9"
+  },
+  {
+   "id": "atm-c10",
+   "front": "Earth's atmosphere",
+   "back": "Moderately thick: 78.1% N₂, 20.9% O₂ and 0.93% Ar, with traces of CO₂, H₂O, Ne and He.",
+   "short": "78% N₂, 21% O₂, 1% Ar",
+   "src": "Ch10.1 pt1 slide 10"
+  },
+  {
+   "id": "atm-c11",
+   "front": "Mars's atmosphere",
+   "back": "Thin: 95% CO₂, 2.7% N₂, 1.9% Ar and 0.4% trace gases (O₂, H₂O).",
+   "short": "Thin, 95% CO₂",
+   "src": "Ch10.1 pt1 slide 11"
+  },
+  {
+   "id": "atm-c12",
+   "front": "Greenhouse gases",
+   "back": "Gases that absorb and re-emit infrared radiation, warming a planet: CO₂, H₂O, CH₄ and O₃.",
+   "short": "CO₂, H₂O, CH₄, O₃",
+   "src": "Ch10.1 pt1 slide 12"
+  },
+  {
+   "id": "atm-c13",
+   "front": "Greenhouse effect",
+   "back": "Warming of a planet's surface because greenhouse gases absorb infrared light given off by the ground and re-emit some of it back down.",
+   "short": "Infrared trapped, surface warms",
+   "src": "Ch10.1 pt1 slide 12"
+  },
+  {
+   "id": "atm-c14",
+   "front": "Is carbon monoxide a greenhouse gas?",
+   "gloss": false,
+   "back": "No. It is a pollutant but not a greenhouse gas. Sulfur dioxide is the same.",
+   "short": "Pollutant, not greenhouse",
+   "src": "Ch10.1 pt1 slide 12"
+  },
+  {
+   "id": "atm-c15",
+   "front": "What are clouds?",
+   "gloss": false,
+   "back": "Patches of air cool enough for microscopic water droplets to condense. They are not steam.",
+   "short": "Condensed water droplets",
+   "src": "Ch10.1 pt1 slide 13"
+  },
+  {
+   "id": "atm-c16",
+   "front": "How thick is the densest part of Earth's atmosphere?",
+   "gloss": false,
+   "back": "About 10 km. Most clouds and weather are in this layer.",
+   "short": "About 10 km",
+   "src": "Ch10.1 pt1 slide 13"
+  },
+  {
+   "id": "atm-c17",
+   "front": "How much air is above the ISS (400 km)?",
+   "gloss": false,
+   "back": "Only about a trillionth of the atmosphere's total mass.",
+   "short": "About a trillionth",
+   "src": "Ch10.1 pt1 slide 14"
+  },
+  {
+   "id": "atm-c18",
+   "front": "Pressure",
+   "back": "Force divided by the area it acts on: P = F / A.",
+   "short": "P = F / A",
+   "src": "Ch10.1 pt2 slide 1"
+  },
+  {
+   "id": "atm-c19",
+   "front": "Pascal (Pa)",
+   "back": "The unit of pressure: 1 Pa = 1 N/m² = 1 kg/(m·s²).",
+   "short": "1 newton per square metre",
+   "src": "Ch10.1 pt2 slide 1"
+  },
+  {
+   "id": "atm-c20",
+   "front": "Atmosphere (unit, atm)",
+   "back": "A unit of pressure: 1 atm = 101,325 Pa, about the air pressure at sea level (14.7 lb/in²).",
+   "short": "101,325 Pa",
+   "src": "Ch10.1 pt2 slides 1, 4"
+  },
+  {
+   "id": "atm-c21",
+   "front": "Bar",
+   "back": "A unit of pressure equal to 100,000 Pa.",
+   "short": "100,000 Pa",
+   "src": "Ch10.1 pt2 slide 1"
+  },
+  {
+   "id": "atm-c22",
+   "front": "Intensive quantity",
+   "back": "A property that does not depend on the size of the system. Pressure and density are the intensive partners of force and mass.",
+   "short": "Independent of system size",
+   "src": "Ch10.1 pt2 slide 2"
+  },
+  {
+   "id": "atm-c23",
+   "front": "Air pressure in Calgary",
+   "back": "About 0.88 atm (89 kPa), because Calgary is about 1 km above sea level.",
+   "short": "About 0.88 atm, 89 kPa",
+   "src": "Ch10.1 pt2 slide 4"
+  },
+  {
+   "id": "atm-c24",
+   "front": "Why is it harder to breathe high up?",
+   "gloss": false,
+   "back": "Air is compressible, so it is densest near the ground. High up it is thinner, so each breath holds fewer molecules.",
+   "short": "Thinner, less dense air",
+   "src": "Ch10.1 pt2 slide 5"
+  },
+  {
+   "id": "atm-c25",
+   "front": "Ideal gas law",
+   "back": "PV = nRT. Raising temperature or the amount of gas raises the pressure or, if the gas is free to expand, the volume.",
+   "short": "PV = nRT",
+   "src": "Ch10.1 pt2 slide 6"
+  },
+  {
+   "id": "atm-c26",
+   "front": "Convection",
+   "back": "Warm air expands, becomes less dense and rises, then cools high up and sinks again.",
+   "short": "Warm rises, cool sinks",
+   "src": "Ch10.1 pt2 slide 6"
+  },
+  {
+   "id": "atm-c27",
+   "front": "Outgassing",
+   "back": "Release of gas from a planet's interior by volcanoes; a main way to gain an atmosphere.",
+   "short": "Volcanic gas release",
+   "src": "Ch10.1 pt2 slide 7"
+  },
+  {
+   "id": "atm-c28",
+   "front": "Sublimation",
+   "back": "Ice turning directly into gas, one way a surface adds gas to the atmosphere.",
+   "short": "Ice straight to gas",
+   "src": "Ch10.1 pt2 slide 7"
+  },
+  {
+   "id": "atm-c29",
+   "front": "Thermal escape",
+   "back": "Loss of gas when fast-moving atoms high in the atmosphere fly off into space.",
+   "short": "Fast atoms fly to space",
+   "src": "Ch10.1 pt2 slide 8"
+  },
+  {
+   "id": "atm-c30",
+   "front": "Five ways to lose an atmosphere",
+   "gloss": false,
+   "back": "Thermal escape, sweeping by the solar wind, large impacts, chemical reactions with the surface and condensation onto the surface.",
+   "short": "Escape, wind, impacts, reactions, condensing",
+   "src": "Ch10.1 pt2 slide 8"
+  },
+  {
+   "id": "atm-c31",
+   "front": "Ionization",
+   "back": "Light knocking electrons out of atoms or molecules; caused by X rays and ultraviolet.",
+   "short": "Electrons knocked off",
+   "src": "Ch10.1 pt3 slide 1"
+  },
+  {
+   "id": "atm-c32",
+   "front": "Dissociation",
+   "back": "Light breaking molecules apart; caused by X rays and ultraviolet.",
+   "short": "Molecules broken apart",
+   "src": "Ch10.1 pt3 slide 1"
+  },
+  {
+   "id": "atm-c33",
+   "front": "Scattering",
+   "back": "Light changing direction when it meets molecules. Nitrogen and oxygen scatter blue light more than red.",
+   "short": "Light redirected",
+   "src": "Ch10.1 pt3 slides 1-2"
+  },
+  {
+   "id": "atm-c34",
+   "front": "Rayleigh scattering",
+   "back": "Wavelength-dependent scattering by gas molecules: blue scatters most, making the sky blue and sunsets red.",
+   "short": "Blue scatters most",
+   "src": "Ch10.1 pt3 slide 3"
+  },
+  {
+   "id": "atm-c35",
+   "front": "Troposphere",
+   "back": "Lowest layer, average height about 12 km. Temperature drops with altitude, almost all weather happens here, warmed by surface infrared and convection.",
+   "short": "Lowest layer; weather; cools upward",
+   "src": "Ch10.1 pt3 slide 4"
+  },
+  {
+   "id": "atm-c36",
+   "front": "Stratosphere",
+   "back": "About 20 km to 50-85 km. Temperature rises then falls (a 'knee'); the peak matches the most ozone, which absorbs UV.",
+   "short": "Ozone layer; warms then cools",
+   "src": "Ch10.1 pt3 slide 5"
+  },
+  {
+   "id": "atm-c37",
+   "front": "Thermosphere",
+   "back": "About 85 to 500 km. Temperature rises steadily with altitude from X rays, UV and the solar wind; the main part of the ionosphere.",
+   "short": "Heats upward; ionosphere",
+   "src": "Ch10.1 pt3 slide 6"
+  },
+  {
+   "id": "atm-c38",
+   "front": "Exosphere",
+   "back": "Starts about 500 km and fades into space by about 10,000 km. Particles rarely meet and can escape.",
+   "short": "Outermost; particles escape",
+   "src": "Ch10.1 pt3 slide 7"
+  },
+  {
+   "id": "atm-c39",
+   "front": "Magnetosphere",
+   "back": "The region of Earth's magnetic field that shields the surface from the solar wind's charged particles.",
+   "short": "Magnetic shield from the solar wind",
+   "src": "Ch10.1 pt3 slide 9"
+  },
+  {
+   "id": "atm-c40",
+   "front": "Aurora",
+   "back": "Glowing light near the magnetic poles where the solar wind energizes the thermosphere.",
+   "short": "Polar glow in the thermosphere",
+   "src": "Ch10.1 pt3 slide 9"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "atm-1",
+   "q": "What holds an atmosphere onto a world?",
+   "options": [
+    "Gravity",
+    "The planet's magnetic field",
+    "The planet's rotation",
+    "Pressure from the solar wind",
+    "Heat from the planet's core"
+   ],
+   "answer": 0,
+   "why": "An atmosphere is gas held to a world by gravity. Magnetic fields shield it from the solar wind but do not hold the gas down.",
+   "source": "Ch10.1 pt1 slide 2"
+  },
+  {
+   "id": "atm-2",
+   "q": "Which statement about the masses of the terrestrial atmospheres is correct?",
+   "options": [
+    "Earth's is about 100 times Venus's",
+    "Mercury's is about as large as Mars's",
+    "Mars's is a little more than Earth's",
+    "Venus's is about 100 times Earth's",
+    "The Moon's is about as large as Earth's"
+   ],
+   "answer": 3,
+   "why": "Venus has about 5 x 10^20 kg of atmosphere and Earth about 5 x 10^18 kg, so Venus's is about 100 times more massive. Mars has less than Earth; Mercury and the Moon have only traces.",
+   "source": "Ch10.1 pt1 slide 4"
+  },
+  {
+   "id": "atm-3",
+   "q": "Which gas makes up most of Earth's atmosphere?",
+   "options": [
+    "Oxygen (O₂)",
+    "Nitrogen (N₂)",
+    "Argon (Ar)",
+    "Carbon dioxide (CO₂)",
+    "Water vapour (H₂O)"
+   ],
+   "answer": 1,
+   "why": "Earth's air is 78.1% N₂, 20.9% O₂ and 0.93% Ar. CO₂ and water vapour are trace gases.",
+   "source": "Ch10.1 pt1 slide 10"
+  },
+  {
+   "id": "atm-4",
+   "q": "Which two worlds have atmospheres made mostly of carbon dioxide?",
+   "options": [
+    "Earth and Mars",
+    "Venus and Earth",
+    "Mercury and Venus",
+    "Mercury and the Moon",
+    "Venus and Mars"
+   ],
+   "answer": 4,
+   "why": "Venus is 96.5% CO₂ and Mars is 95% CO₂. Earth is mostly nitrogen, and Mercury and the Moon have only traces of other gases.",
+   "source": "Ch10.1 pt1 slides 9, 11"
+  },
+  {
+   "id": "atm-5",
+   "q": "The Moon's very thin atmosphere contains traces of which gases?",
+   "options": [
+    "Carbon dioxide and nitrogen",
+    "Hydrogen, helium, sodium and oxygen",
+    "Hydrogen, helium, neon and argon",
+    "Nitrogen, oxygen and argon",
+    "Methane and ozone"
+   ],
+   "answer": 2,
+   "why": "The Moon has traces of H, He, Ne and Ar. Mercury's traces are H, He, Na and O.",
+   "source": "Ch10.1 pt1 slide 8"
+  },
+  {
+   "id": "atm-6",
+   "q": "Which list contains only greenhouse gases?",
+   "options": [
+    "CO₂, H₂O, CH₄, O₃",
+    "CO, SO₂, O₃, CO₂",
+    "CO₂, N₂, O₂, CH₄",
+    "N₂, O₂, Ar, H₂O",
+    "CH₄, CO, N₂, O₃"
+   ],
+   "answer": 0,
+   "why": "The greenhouse gases named are CO₂, H₂O, CH₄ and O₃. N₂, O₂ and Ar are not greenhouse gases, and CO and SO₂ are pollutants but not greenhouse gases.",
+   "source": "Ch10.1 pt1 slide 12"
+  },
+  {
+   "id": "atm-7",
+   "q": "Greenhouse gases warm a planet mainly by doing what?",
+   "options": [
+    "Absorbing visible sunlight before it ever reaches the ground",
+    "Blocking the charged particles of the solar wind",
+    "Reflecting incoming sunlight straight back out to space",
+    "Absorbing and re-emitting infrared light from the surface",
+    "Ionizing the thin gas molecules high in the thermosphere"
+   ],
+   "answer": 3,
+   "why": "Visible light passes through and warms the ground; the ground gives off infrared, which greenhouse gases absorb and re-emit, partly back down.",
+   "source": "Ch10.1 pt1 slide 12; pt3 slide 2"
+  },
+  {
+   "id": "atm-8",
+   "q": "According to the table of trace gases, which one is a pollutant but NOT a greenhouse gas?",
+   "options": [
+    "Methane",
+    "Carbon monoxide",
+    "Ozone",
+    "Carbon dioxide",
+    "Halocarbons"
+   ],
+   "answer": 1,
+   "why": "Carbon monoxide (and sulfur dioxide) are pollutants but not greenhouse gases. Methane, ozone and halocarbons are both; CO₂ is a greenhouse gas but not listed as a pollutant.",
+   "source": "Ch10.1 pt1 slide 12"
+  },
+  {
+   "id": "atm-9",
+   "q": "What are clouds made of?",
+   "options": [
+    "Steam rising off warm oceans and lakes",
+    "A complicated mixture of rare gases",
+    "Pure water vapour, a white-coloured gas",
+    "Dust and smoke lifted off the ground",
+    "Tiny water droplets condensed in cool air"
+   ],
+   "answer": 4,
+   "why": "Clouds are patches of air cool enough for tiny water droplets to condense. They are not steam or a special gas mix.",
+   "source": "Ch10.1 pt1 slide 13",
+   "img": {
+    "src": "img/atmospheres/clouds_p1-13.webp",
+    "alt": "Earth seen from orbit: towers of white cloud over a blue ocean, with a thin glowing blue line of air along the edge of the planet."
+   }
+  },
+  {
+   "id": "atm-10",
+   "q": "About how much of the atmosphere's mass lies above the International Space Station at 400 km?",
+   "options": [
+    "About one half of it",
+    "About a tenth",
+    "About a trillionth",
+    "About a millionth",
+    "None of it at all"
+   ],
+   "answer": 2,
+   "why": "Only about a trillionth of the atmosphere's mass lies above 400 km; the gas there is extremely thin but not entirely absent.",
+   "source": "Ch10.1 pt1 slide 14"
+  },
+  {
+   "id": "atm-11",
+   "q": "A force of 600 N presses on an area of 2 m². What is the pressure?",
+   "options": [
+    "300 Pa",
+    "1,200 Pa",
+    "602 Pa",
+    "0.003 Pa",
+    "3,000 Pa"
+   ],
+   "answer": 0,
+   "why": "P = F / A = 600 N / 2 m² = 300 Pa.",
+   "source": "Ch10.1 pt2 slide 1",
+   "img": {
+    "src": "img/atmospheres/force_area_p2-1.webp",
+    "alt": "A force arrow labelled F pushing straight down on a flat area labelled A."
+   }
+  },
+  {
+   "id": "atm-12",
+   "q": "How many pascals are in 1 atmosphere?",
+   "options": [
+    "1,000 Pa",
+    "100,000 Pa",
+    "6,894.76 Pa",
+    "101,325 Pa",
+    "14.7 Pa"
+   ],
+   "answer": 3,
+   "why": "1 atm = 101,325 Pa. 1 bar is 100,000 Pa, 1 kPa is 1,000 Pa and 1 psi is 6,894.76 Pa; 14.7 is atmospheric pressure in pounds per square inch.",
+   "source": "Ch10.1 pt2 slides 1, 4"
+  },
+  {
+   "id": "atm-13",
+   "q": "The same force is spread over half the area. The pressure becomes:",
+   "options": [
+    "Half as large",
+    "Twice as large",
+    "Unchanged",
+    "Four times as large",
+    "A quarter as large"
+   ],
+   "answer": 1,
+   "why": "P = F / A. Halving A with F unchanged doubles P.",
+   "source": "Ch10.1 pt2 slide 1"
+  },
+  {
+   "id": "atm-14",
+   "q": "Why do pressure and density work well for describing the atmosphere?",
+   "options": [
+    "They grow larger as the system grows",
+    "They are measured in newtons and kilograms",
+    "They stay the same at every altitude",
+    "They only apply to solids and liquids",
+    "They are intensive: independent of size"
+   ],
+   "answer": 4,
+   "why": "Pressure and density are intensive partners of force and mass: the same property, but independent of the size of the system.",
+   "source": "Ch10.1 pt2 slide 2"
+  },
+  {
+   "id": "atm-15",
+   "q": "An elephant and a person stand side by side at sea level. Which is true?",
+   "options": [
+    "The air pressure on the elephant is greater",
+    "The air pressure on the person is greater",
+    "Same pressure; more total force on the elephant",
+    "Both the pressure and the total force are equal",
+    "The air exerts no pressure on either of them"
+   ],
+   "answer": 2,
+   "why": "Air pressure is the same for both. The elephant has more surface, so the total force on it is larger.",
+   "source": "Ch10.1 pt2 slide 3",
+   "img": {
+    "src": "img/atmospheres/marbles_p2-3.webp",
+    "alt": "A large glass jug of marbles with red arrows pushing in from the top, bottom, left and right toward one point in the middle."
+   }
+  },
+  {
+   "id": "atm-16",
+   "q": "The air pressure in Calgary, about 1 km above sea level, is roughly:",
+   "options": [
+    "0.88 atm",
+    "1.0 atm",
+    "1.2 atm",
+    "0.5 atm",
+    "0.1 atm"
+   ],
+   "answer": 0,
+   "why": "Calgary's pressure is about 0.88 atm (89 kPa), less than the 1 atm at sea level because there is less air above.",
+   "source": "Ch10.1 pt2 slide 4"
+  },
+  {
+   "id": "atm-17",
+   "q": "Why is air near the ground much denser than air high up?",
+   "options": [
+    "Air near the ground is colder, so it shrinks",
+    "Oxygen sinks to the bottom while nitrogen rises",
+    "Gravity is weaker near the ground than up high",
+    "Air is compressible; the air above squeezes it",
+    "Clouds push the air down toward the ground"
+   ],
+   "answer": 3,
+   "why": "Air can be compressed, so low air is squashed by everything above it and is denser. That is also why breathing is harder at high elevations.",
+   "source": "Ch10.1 pt2 slide 5"
+  },
+  {
+   "id": "atm-18",
+   "q": "By the ideal gas law PV = nRT, heating air that is free to expand will mainly:",
+   "options": [
+    "Decrease its volume and make it denser",
+    "Increase its volume, so it is less dense",
+    "Increase its density as it heats up",
+    "Lower its temperature as it expands",
+    "Remove gas particles from the air"
+   ],
+   "answer": 1,
+   "why": "Raising T raises P or V; with nothing holding the air in, the volume grows, so the air becomes less dense and rises.",
+   "source": "Ch10.1 pt2 slide 6"
+  },
+  {
+   "id": "atm-19",
+   "q": "Which process ADDS gas to an atmosphere?",
+   "options": [
+    "Thermal escape",
+    "Sweeping by the solar wind",
+    "Chemical reactions with surface rock",
+    "Condensation onto the surface",
+    "Outgassing from volcanoes"
+   ],
+   "answer": 4,
+   "why": "Outgassing adds gas. The other four are ways to lose gas.",
+   "source": "Ch10.1 pt2 slides 7-8"
+  },
+  {
+   "id": "atm-20",
+   "q": "Which process REMOVES gas from an atmosphere?",
+   "options": [
+    "Evaporation of liquid on the surface",
+    "Sublimation of ice on the surface",
+    "Chemical reactions with the surface",
+    "Outgassing from volcanoes",
+    "Biological processes on Earth"
+   ],
+   "answer": 2,
+   "why": "Chemical reactions with surface rock lock gas away. Evaporation, sublimation, outgassing and life all add gas.",
+   "source": "Ch10.1 pt2 slides 7-8"
+  },
+  {
+   "id": "atm-21",
+   "q": "What does ionization mean?",
+   "options": [
+    "Knocking electrons off atoms or molecules",
+    "Breaking a molecule into separate pieces",
+    "Changing the direction a photon travels",
+    "Making a molecule vibrate and rotate",
+    "Turning surface ice directly into gas"
+   ],
+   "answer": 0,
+   "why": "Ionization ejects electrons. Breaking molecules is dissociation; changing direction is scattering.",
+   "source": "Ch10.1 pt3 slide 1"
+  },
+  {
+   "id": "atm-22",
+   "q": "Which kind of light do greenhouse gas molecules absorb, making them vibrate and rotate?",
+   "options": [
+    "X rays",
+    "Ultraviolet",
+    "Visible light",
+    "Infrared",
+    "Radio waves"
+   ],
+   "answer": 3,
+   "why": "Infrared photons are absorbed by greenhouse molecules, making them vibrate and rotate. X rays and UV ionize or dissociate; most visible light passes through.",
+   "source": "Ch10.1 pt3 slides 1-2"
+  },
+  {
+   "id": "atm-23",
+   "q": "Most visible light entering Earth's atmosphere:",
+   "options": [
+    "Is absorbed by nitrogen molecules",
+    "Passes through, though some is scattered",
+    "Ionizes the oxygen molecules it meets",
+    "Is turned into infrared by the air",
+    "Is blocked by the ozone layer"
+   ],
+   "answer": 1,
+   "why": "Most visible photons are simply transmitted; some are scattered, blue more than red.",
+   "source": "Ch10.1 pt3 slides 1-2"
+  },
+  {
+   "id": "atm-24",
+   "q": "Why is the daytime sky blue?",
+   "options": [
+    "Air reflects the blue of the oceans",
+    "Water vapour in the air is blue",
+    "Ozone absorbs the red part of sunlight",
+    "The Sun gives off mostly blue light",
+    "N₂ and O₂ scatter blue more than red"
+   ],
+   "answer": 4,
+   "why": "Rayleigh scattering: N₂ and O₂ scatter shorter (blue) wavelengths much more, so blue light comes at us from all over the sky.",
+   "source": "Ch10.1 pt3 slides 2-3"
+  },
+  {
+   "id": "atm-25",
+   "q": "Why do sunsets look red?",
+   "options": [
+    "Dust adds extra red light at sunset",
+    "The Sun itself cools down each evening",
+    "The light crosses more air and loses blue",
+    "Ozone absorbs blue only at sunset",
+    "Clouds reflect red light from the ground"
+   ],
+   "answer": 2,
+   "why": "Near the horizon sunlight travels through much more air, so Rayleigh scattering removes most of the blue and the remaining light looks red and orange.",
+   "source": "Ch10.1 pt3 slide 3",
+   "img": {
+    "src": "img/atmospheres/sunset_p3-3.webp",
+    "alt": "A sunset over a fjord: a deep blue sky overhead fading to bright orange and red near the horizon between snowy mountains."
+   }
+  },
+  {
+   "id": "atm-26",
+   "q": "In which layer does almost all of Earth's weather happen?",
+   "options": [
+    "Troposphere",
+    "Thermosphere",
+    "Stratosphere",
+    "Exosphere",
+    "Magnetosphere"
+   ],
+   "answer": 0,
+   "why": "The troposphere, the lowest layer (about 12 km), holds almost all weather.",
+   "source": "Ch10.1 pt3 slide 4",
+   "img": {
+    "src": "img/atmospheres/layer_tropo_p3-4.webp",
+    "alt": "Graph of temperature against altitude in Earth's atmosphere with the lowest band, ground to about 12 km, boxed: the temperature falls from about 15 degrees Celsius at the ground to about minus 55, and a loop of rising warm air sits by the ground."
+   }
+  },
+  {
+   "id": "atm-27",
+   "q": "What causes the temperature peak (the 'knee') in the stratosphere?",
+   "options": [
+    "Infrared given off by the ground",
+    "Charged solar wind particles",
+    "X rays arriving from the Sun",
+    "Ozone absorbing ultraviolet light",
+    "Convection from the troposphere"
+   ],
+   "answer": 3,
+   "why": "The peak matches the highest concentration of ozone, which absorbs ultraviolet light.",
+   "source": "Ch10.1 pt3 slide 5",
+   "img": {
+    "src": "img/atmospheres/layer_strato_p3-5.webp",
+    "alt": "The same temperature graph with the band from about 12 to 80 km boxed: temperature rises to a peak near 0 degrees Celsius at about 50 km, then falls again, making a knee in the curve. Ultraviolet rays stop around 50 km."
+   }
+  },
+  {
+   "id": "atm-28",
+   "q": "Which layer is the main region of the ionosphere?",
+   "options": [
+    "Troposphere",
+    "Thermosphere",
+    "Stratosphere",
+    "Exosphere",
+    "Mesosphere"
+   ],
+   "answer": 1,
+   "why": "In the thermosphere (about 85 to 500 km) UV and X rays ionize and dissociate the few molecules, making it the main part of the ionosphere.",
+   "source": "Ch10.1 pt3 slide 6",
+   "img": {
+    "src": "img/atmospheres/layer_thermo_p3-6.webp",
+    "alt": "The same graph with the band above about 80 km boxed: temperature climbs steeply with height, and the X-ray arrows stop in this layer."
+   }
+  },
+  {
+   "id": "atm-29",
+   "q": "Why is Earth the only terrestrial planet with a stratosphere?",
+   "options": [
+    "It has the thickest atmosphere",
+    "It has no thermosphere",
+    "It has the strongest gravity",
+    "It is closest to the Sun",
+    "It has UV-absorbing ozone"
+   ],
+   "answer": 4,
+   "why": "Ozone (O₃) absorbs UV and warms the stratosphere. Venus and Mars have no ozone layer, so no stratosphere, though both have thermospheres and exospheres.",
+   "source": "Ch10.1 pt3 slide 8",
+   "img": {
+    "src": "img/atmospheres/planet_temps_p3-8.webp",
+    "alt": "Temperature against altitude for Venus, Earth and Mars. Venus starts far hotter at the ground and cools over a deep troposphere; only Earth's curve has a warm bump near 50 km; Mars stays cold. Arrows mark each planet's surface temperature without a greenhouse effect: Mars -56, Venus -40 and Earth -16 degrees Celsius."
+   }
+  },
+  {
+   "id": "atm-30",
+   "q": "What produces the auroras?",
+   "options": [
+    "Lightning flashes in the troposphere",
+    "Sunlight reflecting off the polar ice caps",
+    "Solar wind energizing the polar thermosphere",
+    "Ozone glowing in the stratosphere at night",
+    "Moonlight lighting clouds of water droplets"
+   ],
+   "answer": 2,
+   "why": "Charged particles from the solar wind energize the thermosphere near the magnetic poles, making it glow.",
+   "source": "Ch10.1 pt3 slide 9",
+   "img": {
+    "src": "img/atmospheres/magnetosphere_p3-9.webp",
+    "alt": "The solar wind streams from the Sun and bends around Earth's magnetic field, which is squashed on the Sun side and stretched into a long tail; aurora rings sit around the poles and charged particle belts circle the planet."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Layers of Earth's atmosphere",
+   "prompt": "Put the layers in order from the ground at the bottom to space at the top.",
+   "why": "The troposphere is lowest (to about 12 km), then the stratosphere (to 50-85 km), the thermosphere (to about 500 km) and the exosphere (fading out by about 10,000 km).",
+   "topLabel": "Top: fades into space",
+   "bottomLabel": "Bottom: the ground",
+   "layers": [
+    {
+     "name": "Troposphere",
+     "color": "#60a5fa"
+    },
+    {
+     "name": "Stratosphere",
+     "color": "#3b82f6"
+    },
+    {
+     "name": "Thermosphere",
+     "color": "#4338ca"
+    },
+    {
+     "name": "Exosphere",
+     "color": "#1e1b4b"
+    }
+   ]
+  },
+  {
+   "title": "Atmosphere mass",
+   "prompt": "Order the worlds by the mass of their atmosphere, smallest at the bottom.",
+   "why": "Mercury and the Moon have only traces (about 10^4 kg), Mars 2.5 x 10^16 kg, Earth 5 x 10^18 kg and Venus 5 x 10^20 kg.",
+   "topLabel": "Most massive",
+   "bottomLabel": "Least massive",
+   "layers": [
+    {
+     "name": "Moon or Mercury (traces)",
+     "color": "#9ca3af"
+    },
+    {
+     "name": "Mars",
+     "color": "#c2410c"
+    },
+    {
+     "name": "Earth",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Venus",
+     "color": "#ca8a04"
+    }
+   ]
+  },
+  {
+   "title": "Light, from strongest to weakest",
+   "prompt": "Order these kinds of light by energy, lowest at the bottom.",
+   "why": "Infrared has the least energy (it only makes molecules vibrate), then visible, then ultraviolet (breaks molecules), then X rays (knock off electrons and break molecules).",
+   "topLabel": "Highest energy",
+   "bottomLabel": "Lowest energy",
+   "layers": [
+    {
+     "name": "Infrared",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Visible",
+     "color": "#ca8a04"
+    },
+    {
+     "name": "Ultraviolet",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "X rays",
+     "color": "#1e3a8a"
+    }
+   ]
+  },
+  {
+   "title": "The greenhouse effect, step by step",
+   "prompt": "Put the steps in order, first at the bottom.",
+   "why": "Visible sunlight passes through the air, warms the ground, the ground gives off infrared, greenhouse gases absorb it and re-emit some back down, and the surface ends up warmer.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Visible sunlight passes through the air",
+     "color": "#ca8a04"
+    },
+    {
+     "name": "The ground warms up",
+     "color": "#ea580c"
+    },
+    {
+     "name": "The ground gives off infrared",
+     "color": "#dc2626"
+    },
+    {
+     "name": "Greenhouse gases absorb and re-emit it",
+     "color": "#9f1239"
+    },
+    {
+     "name": "The surface stays warmer",
+     "color": "#7f1d1d"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Greenhouse gas or not?",
+   "prompt": "Sort each gas by whether it is a greenhouse gas.",
+   "buckets": [
+    "Greenhouse gas",
+    "Not a greenhouse gas"
+   ],
+   "items": [
+    {
+     "text": "Carbon dioxide (CO₂)",
+     "b": 0
+    },
+    {
+     "text": "Water vapour (H₂O)",
+     "b": 0
+    },
+    {
+     "text": "Methane (CH₄)",
+     "b": 0
+    },
+    {
+     "text": "Ozone (O₃)",
+     "b": 0
+    },
+    {
+     "text": "Halocarbons",
+     "b": 0
+    },
+    {
+     "text": "Nitrogen (N₂)",
+     "b": 1
+    },
+    {
+     "text": "Oxygen (O₂)",
+     "b": 1
+    },
+    {
+     "text": "Carbon monoxide (CO)",
+     "b": 1
+    },
+    {
+     "text": "Sulfur dioxide (SO₂)",
+     "b": 1
+    },
+    {
+     "text": "Noble gases",
+     "b": 1
+    }
+   ],
+   "why": "CO₂, H₂O, CH₄, O₃ and halocarbons absorb infrared. N₂, O₂, the noble gases, CO and SO₂ do not."
+  },
+  {
+   "title": "Gain or lose?",
+   "prompt": "Sort each process by whether it adds gas to an atmosphere or removes it.",
+   "buckets": [
+    "Adds gas",
+    "Removes gas"
+   ],
+   "items": [
+    {
+     "text": "Outgassing from volcanoes",
+     "b": 0
+    },
+    {
+     "text": "Evaporation of surface liquid",
+     "b": 0
+    },
+    {
+     "text": "Sublimation of surface ice",
+     "b": 0
+    },
+    {
+     "text": "Impacts of particles and photons",
+     "b": 0
+    },
+    {
+     "text": "Biological processes on Earth",
+     "b": 0
+    },
+    {
+     "text": "Thermal escape of atoms",
+     "b": 1
+    },
+    {
+     "text": "Sweeping by the solar wind",
+     "b": 1
+    },
+    {
+     "text": "Large impacts blasting gas away",
+     "b": 1
+    },
+    {
+     "text": "Chemical reactions with the surface",
+     "b": 1
+    },
+    {
+     "text": "Condensation onto the surface",
+     "b": 1
+    }
+   ],
+   "why": "Gas comes from volcanoes, evaporation, sublimation, small impacts and life. It is lost by thermal escape, the solar wind, large impacts, reactions with rock and condensation."
+  },
+  {
+   "title": "Which layer?",
+   "prompt": "Sort each fact into the layer it describes.",
+   "buckets": [
+    "Troposphere",
+    "Stratosphere",
+    "Thermosphere",
+    "Exosphere"
+   ],
+   "items": [
+    {
+     "text": "Almost all weather",
+     "b": 0
+    },
+    {
+     "text": "Cools steadily with height",
+     "b": 0
+    },
+    {
+     "text": "Warmed by infrared from the ground",
+     "b": 0
+    },
+    {
+     "text": "Ozone absorbs ultraviolet",
+     "b": 1
+    },
+    {
+     "text": "Temperature 'knee'",
+     "b": 1
+    },
+    {
+     "text": "Missing on Venus and Mars",
+     "b": 1
+    },
+    {
+     "text": "Main part of the ionosphere",
+     "b": 2
+    },
+    {
+     "text": "Heated by X rays and the solar wind",
+     "b": 2
+    },
+    {
+     "text": "Where auroras glow",
+     "b": 2
+    },
+    {
+     "text": "Fades into space by about 10,000 km",
+     "b": 3
+    },
+    {
+     "text": "Particles rarely meet and can escape",
+     "b": 3
+    }
+   ],
+   "why": "Weather and cooling with height belong to the troposphere; ozone and the knee to the stratosphere (only on Earth); the ionosphere and auroras to the thermosphere; the faint edge where particles escape is the exosphere."
+  }
+ ],
+ "calc": [
+  "atm-pressure",
+  "atm-units"
+ ],
+ "sourceNotes": [
+  "Notes follow the three Ch10.1 decks in order (pt1 what an atmosphere is and the terrestrial atmospheres; pt2 pressure, gaining and losing gas; pt3 sunlight, layers, other planets and the magnetosphere).",
+  "Slide typos corrected in student text: 'Kpc' and 'kpc' mean kPa (pt2 slides 1, 4); '1 Pa = 101,325 Pa' means 1 atm = 101,325 Pa (pt2 slide 1).",
+  "Original diagrams (gen_*): effects of atmospheres, pressure units, gain and loss, layer summary, greenhouse animation, density and convection animation. No book figures are used."
+ ]
+}
