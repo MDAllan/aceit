@@ -1,0 +1,2799 @@
+{
+ "id": "kuiper",
+ "title": "Pluto, the Kuiper Belt and Cosmic Collisions",
+ "chapter": "Ch 12.4–12.5",
+ "icon": "☄️",
+ "color": "#0e7490",
+ "slideFile": "none (textbook sections 12.4-12.5 only; no teacher slides)",
+ "intro": "Travel past Neptune to the icy Kuiper belt. Meet Pluto: its tilted orbit locked in a 3:2 rhythm with Neptune, its giant moon Charon hanging motionless in the sky, its thin, seasonal air and the surprising flowing ice found by New Horizons. Compare it with Triton, Haumea and tiny Arrokoth, and see why the belt exists at all. Then follow the small bodies that hit planets: the comet that struck Jupiter, the impact that ended the dinosaurs, today's risk from Tunguska- and Chelyabinsk-sized rocks, how we might push one aside, and how Jupiter decides what comes our way.",
+ "learningObjectives": [
+  {
+   "id": "lo-01",
+   "text": "What is Pluto like?"
+  },
+  {
+   "id": "lo-02",
+   "text": "What do we know about other Kuiper belt comets?"
+  },
+  {
+   "id": "lo-03",
+   "text": "Why is there a Kuiper belt?"
+  },
+  {
+   "id": "lo-04",
+   "text": "Did an impact kill the dinosaurs?"
+  },
+  {
+   "id": "lo-05",
+   "text": "How great is the impact risk today?"
+  },
+  {
+   "id": "lo-06",
+   "text": "How do the jovian planets affect impact rates and life on Earth?"
+  }
+ ],
+ "sections": [
+  {
+   "id": "kbintro",
+   "title": "Meet the Kuiper belt",
+   "slides": "Textbook 12.4 (p. 366)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_kb_map.webp",
+      "slide": "none (original diagram)",
+      "alt": "Top view of the outer solar system: the Sun in the middle, Neptune's orbit at 30 AU, a wide ring of grey dots from about 30 to 50 AU marked Kuiper belt, and Pluto's slightly off-centre orbit near 40 AU. A note says the icy bodies orbit the same way and nearly in the same plane as the planets."
+     },
+     "title": "A belt of icy bodies beyond Neptune",
+     "bullets": [
+      "The **Kuiper belt** is a ring of icy, comet-like bodies beyond the orbit of Neptune, roughly 30 to 50 AU from the Sun.",
+      "Its members orbit in the same direction as the planets and stay fairly close to the plane of the planets' orbits.",
+      "The comets we see near the Sun are probably like their frozen cousins out here, but small ones are far too faint for today's telescopes at that distance."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_kb_census.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bar chart of Kuiper belt objects wider than 100 km: more than 2,500 known before 2022, tens of thousands more expected from the Vera Rubin Observatory, and at least 100,000 estimated in total. A note says no object has ever been seen directly in the Oort cloud."
+     },
+     "title": "How many are there?",
+     "bullets": [
+      "More than **2,500** fairly large Kuiper belt objects were known before 2022, and the new Vera Rubin Observatory is expected to find tens of thousands more.",
+      "The numbers found so far suggest at least **100,000** objects wider than 100 km.",
+      "By contrast, no object of any size has ever been seen directly in the much more distant **Oort cloud**.",
+      "We start with Pluto because we know far more about it than about any other Kuiper belt object."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Faint small objects so far from the Sun reflect very little light back to us, so the census counts only the bigger bodies; the true population is much larger."
+    },
+    {
+     "type": "trick",
+     "text": "Kuiper belt: Kozy (near the planets' plane, 30-50 AU). Oort cloud: Out of reach (never directly seen)."
+    },
+    {
+     "type": "trap",
+     "text": "Pluto is one member of the Kuiper belt, not its edge; the belt is a broad region, not a single orbit (12.4 p. 366). The 30-50 AU range comes from the Kuiper belt figure in 12.3 (Figure 12.21)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 introduction (p. 366)",
+    "30-50 AU and same-plane orbits: Figure 12.21 (section 12.3)",
+    "Original diagrams: Kuiper belt map; census bar chart"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_kb_map.webp",
+     "slide": "none (original diagram)",
+     "alt": "Top view of the outer solar system: the Sun in the middle, Neptune's orbit at 30 AU, a wide ring of grey dots from about 30 to 50 AU marked Kuiper belt, and Pluto's slightly off-centre orbit near 40 AU. A note says the icy bodies orbit the same way and nearly in the same plane as the planets."
+    },
+    {
+     "src": "img/kuiper/gen_kb_census.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bar chart of Kuiper belt objects wider than 100 km: more than 2,500 known before 2022, tens of thousands more expected from the Vera Rubin Observatory, and at least 100,000 estimated in total. A note says no object has ever been seen directly in the Oort cloud."
+    }
+   ]
+  },
+  {
+   "id": "orbit",
+   "title": "Pluto's tilted, stretched orbit",
+   "slides": "Textbook 12.4 (p. 366, Figure 12.22)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_pluto_tilt.webp",
+      "slide": "none (original diagram)",
+      "alt": "Side view: the planets' orbits lie in one flat line through the Sun, while Pluto's orbit is a line tipped 17 degrees from it. A note says Pluto averages nearly 40 AU, orbits about every 248 years and is more elliptical and tilted than any planet."
+     },
+     "title": "Far, slow, stretched and tilted",
+     "bullets": [
+      "Pluto orbits at an average distance of nearly **40 AU** and takes about **248 years** to go around the Sun once.",
+      "Its orbit is more **elliptical** (stretched) and more **inclined** (tilted, by about 17°) to the plane of the planets than the orbit of any of the eight planets."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_pluto_inside.webp",
+      "slide": "none (original diagram)",
+      "alt": "Top view of Neptune's round orbit and Pluto's oval orbit. A short red stretch of Pluto's orbit, labelled 1979 to 1999, lies inside Neptune's orbit. A green note says the orbits only seem to cross in this view; the tilt and the 3:2 rhythm keep Neptune far away."
+     },
+     "title": "Sometimes closer than Neptune",
+     "bullets": [
+      "Because the orbit is so stretched, Pluto spends about **20 years of every 248-year orbit** closer to the Sun than Neptune. The last time was from **1979 to 1999**.",
+      "Even so, the two can never collide."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_resonance.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Neptune circles the Sun three times while Pluto travels twice around its oval orbit, with lap counters for each. Whenever Pluto swings closest to the Sun, Neptune is a quarter of a lap away. The last frame notes that Neptune is always elsewhere when Pluto comes close."
+     },
+     "title": "The 3:2 resonance keeps them apart",
+     "bullets": [
+      "Neptune orbits the Sun exactly **3 times for every 2 orbits of Pluto**: a stable **orbital resonance**.",
+      "Because of this repeating rhythm, Neptune is always a safe distance away whenever Pluto comes near Neptune's orbit."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "In a resonance the same positions repeat every cycle. Once the timing puts Neptune far from Pluto's closest point, it stays that way, cycle after cycle."
+    },
+    {
+     "type": "trick",
+     "text": "3:2 = 'Neptune three, Pluto two'. Neptune is the faster runner on the inside lane."
+    },
+    {
+     "type": "trap",
+     "text": "Pluto is closer to the Sun than Neptune for 20 years of each orbit, not for 'half' of it, and there is NO danger of collision (Figure 12.22 caption, p. 366). Don't flip the ratio: Neptune completes 3 orbits, Pluto 2."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 'What is Pluto like?' (p. 366) and Figure 12.22",
+    "Original diagrams: tilt side view, top view of the 1979-1999 stretch, animated 3:2 resonance"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_pluto_tilt.webp",
+     "slide": "none (original diagram)",
+     "alt": "Side view: the planets' orbits lie in one flat line through the Sun, while Pluto's orbit is a line tipped 17 degrees from it. A note says Pluto averages nearly 40 AU, orbits about every 248 years and is more elliptical and tilted than any planet."
+    },
+    {
+     "src": "img/kuiper/gen_pluto_inside.webp",
+     "slide": "none (original diagram)",
+     "alt": "Top view of Neptune's round orbit and Pluto's oval orbit. A short red stretch of Pluto's orbit, labelled 1979 to 1999, lies inside Neptune's orbit. A green note says the orbits only seem to cross in this view; the tilt and the 3:2 rhythm keep Neptune far away."
+    },
+    {
+     "src": "img/kuiper/gen_resonance.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Neptune circles the Sun three times while Pluto travels twice around its oval orbit, with lap counters for each. Whenever Pluto swings closest to the Sun, Neptune is a quarter of a lap away. The last frame notes that Neptune is always elsewhere when Pluto comes close."
+    }
+   ]
+  },
+  {
+   "id": "moons",
+   "title": "Charon and the other moons",
+   "slides": "Textbook 12.4 (pp. 366-367, Figure 12.23)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_moons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Pluto in the centre with five orbit rings: Charon close in, then the small moons Styx, Nix, Kerberos and Hydra farther out. A fact box: Charon is more than half Pluto's diameter, about one eighth of its mass, orbits about 20,000 km away and is slightly less dense; it was found in 1978."
+     },
+     "title": "Five known moons",
+     "bullets": [
+      "Pluto has **five** known moons. The big one is **Charon**; the four small ones are **Nix, Hydra, Kerberos and Styx**.",
+      "Charon was discovered in 1978; the others were found later."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_pc_em.webp",
+      "slide": "none (original diagram)",
+      "alt": "Bars comparing Charon with our Moon. Mass compared with its world: Charon 1/8, Moon 1/80. Distance from its world: Charon 20,000 km, Moon 400,000 km. Charon is 10 times heavier for its planet and 20 times closer."
+     },
+     "title": "A huge moon, very close in",
+     "bullets": [
+      "Charon is more than **half Pluto's diameter** and has about **1/8 of Pluto's mass**. It orbits only about **20,000 km** from Pluto.",
+      "Compare our Moon: about **1/80 of Earth's mass**, orbiting about **400,000 km** away.",
+      "Charon is also slightly **lower in density** than Pluto."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_giant_impact.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation on a dark background: a large comet strikes Pluto, a flash, then debris spreads into a ring that gathers into Charon. Steps listed: the comet blasts off Pluto's low-density outer layers, the debris forms a ring, the ring gathers into Charon and the small moons; it may also explain Pluto's sideways spin."
+     },
+     "title": "Born in a giant impact?",
+     "bullets": [
+      "These facts suggest Pluto's moons formed in a **giant impact**, much like the one thought to have made our own Moon.",
+      "A large comet may have crashed into Pluto and blasted away its low-density outer layers. The debris formed a ring around Pluto that later gathered back together into Charon and the smaller moons.",
+      "Such an impact might also explain why Pluto **rotates almost on its side**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A ring made from blasted-off outer layers would be low-density material, which fits Charon being slightly less dense than Pluto."
+    },
+    {
+     "type": "trick",
+     "text": "Charon: 'half the width, an eighth of the weight, twenty thousand km away'."
+    },
+    {
+     "type": "trap",
+     "text": "Charon has about 1/8 of Pluto's MASS but more than half its DIAMETER; don't swap them (p. 366). The giant impact is a hypothesis, not a proven fact."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 (pp. 366-367) and Figure 12.23",
+    "Original diagrams: Pluto's moon system; Charon vs Moon bars; animated giant impact"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_moons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Pluto in the centre with five orbit rings: Charon close in, then the small moons Styx, Nix, Kerberos and Hydra farther out. A fact box: Charon is more than half Pluto's diameter, about one eighth of its mass, orbits about 20,000 km away and is slightly less dense; it was found in 1978."
+    },
+    {
+     "src": "img/kuiper/gen_pc_em.webp",
+     "slide": "none (original diagram)",
+     "alt": "Bars comparing Charon with our Moon. Mass compared with its world: Charon 1/8, Moon 1/80. Distance from its world: Charon 20,000 km, Moon 400,000 km. Charon is 10 times heavier for its planet and 20 times closer."
+    },
+    {
+     "src": "img/kuiper/gen_giant_impact.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation on a dark background: a large comet strikes Pluto, a flash, then debris spreads into a ring that gathers into Charon. Steps listed: the comet blasts off Pluto's low-density outer layers, the debris forms a ring, the ring gathers into Charon and the small moons; it may also explain Pluto's sideways spin."
+    }
+   ]
+  },
+  {
+   "id": "sky",
+   "title": "Locked together: the view from Pluto",
+   "slides": "Textbook 12.4 (p. 367)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_sync.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Pluto and smaller Charon circle a shared centre point while red dots on each always face the other. The note explains that tides long ago made each spin once per 6.4-day orbit, so Charon is seen from only one side of Pluto and never rises or sets."
+     },
+     "title": "Tidally locked to each other",
+     "bullets": [
+      "Tidal forces between Pluto and Charon long ago made them rotate **synchronously** with each other.",
+      "So Pluto's 'day' is the same length as Charon's 'month' (its orbital period): **6.4 Earth days**. Each always shows the other the same face."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_pluto_sky.webp",
+      "slide": "none (original diagram)",
+      "alt": "A starry black sky above a pale brown icy horizon. A huge half-lit Charon fills much of the sky next to a tiny dot showing how big our Moon looks from Earth. The Sun is just a small bright point. Text: Charon goes through its phases every 6.4 days; the Sun is over 1,000 times fainter than from Earth."
+     },
+     "title": "Charon in Pluto's sky",
+     "bullets": [
+      "Charon can be seen from **only one side** of Pluto. From there it would dominate the sky, looking almost **10 times as large** in angular size as our Moon does from Earth.",
+      "It would **never rise or set**: it would hang motionless while going through its phases every 6.4 days.",
+      "The Sun would be more than **1,000 times fainter** than it looks from Earth and appear no bigger than Jupiter does in our sky.",
+      "Model it: if your head is Pluto, Charon is a ball about 5 cm across held about 2 m away."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "If Pluto spins once in exactly the time Charon takes to orbit, Charon stays above the same spot on Pluto, just like a geostationary satellite stays over one place on Earth."
+    },
+    {
+     "type": "trick",
+     "text": "6.4 days = Pluto's day = Charon's month = time for one full set of Charon's phases."
+    },
+    {
+     "type": "trap",
+     "text": "Charon does not rise and set every 6.4 days; it stays fixed in the sky and is never seen from Pluto's far side (p. 367)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 (p. 367), including the 'See it for yourself' model",
+    "Original diagrams: animated synchronous rotation; Pluto's sky"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_sync.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Pluto and smaller Charon circle a shared centre point while red dots on each always face the other. The note explains that tides long ago made each spin once per 6.4-day orbit, so Charon is seen from only one side of Pluto and never rises or sets."
+    },
+    {
+     "src": "img/kuiper/gen_pluto_sky.webp",
+     "slide": "none (original diagram)",
+     "alt": "A starry black sky above a pale brown icy horizon. A huge half-lit Charon fills much of the sky next to a tiny dot showing how big our Moon looks from Earth. The Sun is just a small bright point. Text: Charon goes through its phases every 6.4 days; the Sun is over 1,000 times fainter than from Earth."
+    }
+   ]
+  },
+  {
+   "id": "explore",
+   "title": "Studying a faraway world",
+   "slides": "Textbook 12.4 (pp. 367-368)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_snowball.webp",
+      "slide": "none (original diagram)",
+      "alt": "An eye on the left and a tiny snowball 600 km away on the right with a long dashed arrow between them: seeing Pluto from Earth is like spotting a fist-sized snowball that far away in dim light. A note says telescopes still found Charon and measured Pluto's mass and size."
+     },
+     "title": "Hard to see from Earth",
+     "bullets": [
+      "Trying to see Pluto from Earth is like looking for a **fist-sized snowball about 600 km away** in very dim light.",
+      "Even so, astronomers learned a lot before any spacecraft arrived."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_kepler_mass.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three boxes joined by arrows: watch Charon's orbit (period and distance), apply Newton's version of Kepler's third law, get Pluto's mass. A note says the new mass showed Pluto differs from both the terrestrial and the jovian planets."
+     },
+     "title": "Charon weighs Pluto",
+     "bullets": [
+      "After Charon was discovered in **1978**, its orbit let scientists find Pluto's precise mass with **Newton's version of Kepler's third law**.",
+      "The new mass was key to seeing how different Pluto is from both the terrestrial and the jovian planets."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_eclipses.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: seen edge-on, Charon passes in front of and then behind Pluto while a graph below traces dips in their combined brightness. Labels: this lining up happens only about every 120 years; the dips gave sizes, masses and densities, showing both are ice and rock."
+     },
+     "title": "Lucky eclipses, 1985-1990",
+     "bullets": [
+      "From 1985 to 1990 Pluto and Charon happened to line up so that they **eclipsed each other every few days** as seen from Earth. This happens only about **every 120 years**.",
+      "The brightness changes gave the sizes, masses and densities of both, confirming **comet-like mixtures of ice and rock**. They even allowed rough maps of Pluto's surface markings."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_nh_timeline.webp",
+      "slide": "none (original diagram)",
+      "alt": "Timeline of New Horizons: launch in January 2006 at record speed, Jupiter flyby with a gravity boost 13 months later, Pluto flyby in July 2015 at about 50,000 km/h after 9 and a half years, and the Arrokoth flyby on 1 January 2019."
+     },
+     "title": "New Horizons: a long, fast trip",
+     "bullets": [
+      "**New Horizons** launched in January 2006 faster than any earlier spacecraft and got an extra boost from Jupiter's gravity 13 months later.",
+      "It still travelled for about **9 and a half years** before flying past Pluto in **July 2015** at about 50,000 km/h."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_flyby.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation on a dark background: a spacecraft streaks along a straight dashed path past Pluto and Charon. Labels: closest about 144,000 km from Pluto and less than 30,000 km from Charon; at about 50,000 km/h there were only minutes for the sharpest pictures."
+     },
+     "title": "A few precious minutes",
+     "bullets": [
+      "At closest approach it was only about **144,000 km from Pluto** and less than 30,000 km from Charon.",
+      "At that speed it had only **a few minutes** for its sharpest images, so scientists spent years planning every step."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "An orbit's period and size depend on the mass being orbited. Charon's orbit is a natural 'scale' for Pluto, just as the planets' orbits measure the Sun's mass."
+    },
+    {
+     "type": "trick",
+     "text": "Timeline: 1978 Charon found -> 1985-90 eclipses -> 2006 launch -> 2015 flyby -> 2019 Arrokoth."
+    },
+    {
+     "type": "trap",
+     "text": "Pluto's mass came from Charon's orbit (1978 onward), not from the 2015 flyby (p. 367). The eclipses repeat only about every 120 years, so they were a rare chance."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 'Pluto Before New Horizons' and 'New Horizons at Pluto' (pp. 367-368)",
+    "Original diagrams: snowball analogy; weighing Pluto; animated mutual eclipses; mission timeline; animated flyby"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_snowball.webp",
+     "slide": "none (original diagram)",
+     "alt": "An eye on the left and a tiny snowball 600 km away on the right with a long dashed arrow between them: seeing Pluto from Earth is like spotting a fist-sized snowball that far away in dim light. A note says telescopes still found Charon and measured Pluto's mass and size."
+    },
+    {
+     "src": "img/kuiper/gen_kepler_mass.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three boxes joined by arrows: watch Charon's orbit (period and distance), apply Newton's version of Kepler's third law, get Pluto's mass. A note says the new mass showed Pluto differs from both the terrestrial and the jovian planets."
+    },
+    {
+     "src": "img/kuiper/gen_eclipses.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: seen edge-on, Charon passes in front of and then behind Pluto while a graph below traces dips in their combined brightness. Labels: this lining up happens only about every 120 years; the dips gave sizes, masses and densities, showing both are ice and rock."
+    },
+    {
+     "src": "img/kuiper/gen_nh_timeline.webp",
+     "slide": "none (original diagram)",
+     "alt": "Timeline of New Horizons: launch in January 2006 at record speed, Jupiter flyby with a gravity boost 13 months later, Pluto flyby in July 2015 at about 50,000 km/h after 9 and a half years, and the Arrokoth flyby on 1 January 2019."
+    },
+    {
+     "src": "img/kuiper/gen_flyby.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation on a dark background: a spacecraft streaks along a straight dashed path past Pluto and Charon. Labels: closest about 144,000 km from Pluto and less than 30,000 km from Charon; at about 50,000 km/h there were only minutes for the sharpest pictures."
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "title": "A cold surface and thin air",
+   "slides": "Textbook 12.4 (pp. 367-368, Figure 12.26)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_atmos.webp",
+      "slide": "none (original diagram)",
+      "alt": "Pale brown icy ground with dashed arrows rising from it to three gas bubbles: nitrogen (N2), methane (CH4) and carbon monoxide (CO). Text: Pluto's surface averages about 40 K and its air is gas that came off its own frozen surface."
+     },
+     "title": "40 K and a thin atmosphere",
+     "bullets": [
+      "Pluto is very cold: its average surface temperature is only about **40 K**, as expected so far from the Sun.",
+      "It still has a **thin atmosphere** of **nitrogen, methane and carbon monoxide**, made by surface ices turning to gas."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_seasons.webp",
+      "slide": "none (original diagram)",
+      "alt": "Pluto's oval orbit around the Sun. On the near side Pluto has a wide hazy halo: more ice turns to gas and the atmosphere is thicker. On the far side the halo is thin: gas freezes back. A note says methane and carbon monoxide can make the air more than 30 degrees Celsius warmer than the ground."
+     },
+     "title": "Seasons change the air",
+     "bullets": [
+      "The amount and make-up of the gas change with Pluto's **seasons**, because of its large **axis tilt** and its changing distance from the Sun along its elliptical orbit.",
+      "When the gas is most plentiful, the greenhouse gases **methane and carbon monoxide** make the atmosphere more than **30 °C warmer** than the icy surface."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_escape.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: half of Pluto at the bottom with two arcs above it, the atmosphere thousands of km thick and the exosphere beyond. Small dots drift upward and out into space. The note says ice must keep vaporizing to replace the lost gas, perhaps 1 km of surface ice over the solar system's age."
+     },
+     "title": "Leaking into space",
+     "bullets": [
+      "The atmosphere reaches **thousands of km** above the surface, capped by an **exosphere**.",
+      "Gravity up there is so weak that gas escapes to space, so it must be replaced by more ice turning to gas. Pluto may have lost as much as **a kilometre of surface ice** this way over the age of the solar system."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_tholins.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four numbered boxes: ultraviolet sunlight breaks methane and nitrogen molecules; the pieces join into longer chains; these haze particles (tholins) float and scatter sunlight; they drift down and coat the surface brown, more near the equator. New Horizons saw the haze glow when looking back toward the Sun."
+     },
+     "title": "Haze and a pale brown colour",
+     "bullets": [
+      "Looking back toward the Sun, New Horizons saw the atmosphere because its **haze** scatters sunlight forward.",
+      "The haze probably forms when **ultraviolet** sunlight breaks up methane and nitrogen molecules, which then join into longer chains and haze particles (sometimes called **tholins**).",
+      "These particles drift down and coat the surface, probably giving Pluto its **pale brown colour**. For reasons still unknown, more of them settle around the equator."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Pluto's air is 'borrowed' from its ice. Warmer stretches of the orbit vaporize more ice; colder stretches let gas freeze back, so the atmosphere waxes and wanes."
+    },
+    {
+     "type": "trick",
+     "text": "Pluto's air = N-M-C: Nitrogen, Methane, Carbon monoxide. The warming pair is M and C."
+    },
+    {
+     "type": "trap",
+     "text": "Nitrogen is the main gas, but it is methane and carbon monoxide that the text names as the greenhouse gases warming Pluto's air (p. 367). The haze is seen best looking TOWARD the Sun (forward scattering), p. 368."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 (pp. 367-368) and Figure 12.26",
+    "Original diagrams: gases from ice; seasons; animated escape; haze steps"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_atmos.webp",
+     "slide": "none (original diagram)",
+     "alt": "Pale brown icy ground with dashed arrows rising from it to three gas bubbles: nitrogen (N2), methane (CH4) and carbon monoxide (CO). Text: Pluto's surface averages about 40 K and its air is gas that came off its own frozen surface."
+    },
+    {
+     "src": "img/kuiper/gen_seasons.webp",
+     "slide": "none (original diagram)",
+     "alt": "Pluto's oval orbit around the Sun. On the near side Pluto has a wide hazy halo: more ice turns to gas and the atmosphere is thicker. On the far side the halo is thin: gas freezes back. A note says methane and carbon monoxide can make the air more than 30 degrees Celsius warmer than the ground."
+    },
+    {
+     "src": "img/kuiper/gen_escape.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: half of Pluto at the bottom with two arcs above it, the atmosphere thousands of km thick and the exosphere beyond. Small dots drift upward and out into space. The note says ice must keep vaporizing to replace the lost gas, perhaps 1 km of surface ice over the solar system's age."
+    },
+    {
+     "src": "img/kuiper/gen_tholins.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four numbered boxes: ultraviolet sunlight breaks methane and nitrogen molecules; the pieces join into longer chains; these haze particles (tholins) float and scatter sunlight; they drift down and coat the surface brown, more near the equator. New Horizons saw the haze glow when looking back toward the Sun."
+    }
+   ]
+  },
+  {
+   "id": "geology",
+   "title": "Pluto's surprising geology",
+   "slides": "Textbook 12.4 (pp. 367-368, Figures 12.24-12.25)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_crater_count.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels: a grey surface covered with craters, labelled an old surface where craters pile up for billions of years, and a smooth pale brown surface with almost none, labelled Pluto's plains with activity in the last 100 million years. Text: that is recent, so activity probably continues today."
+     },
+     "title": "A young surface",
+     "bullets": [
+      "New Horizons found clear signs of **geological activity**, some within the last **100 million years**. That is so recent compared with the solar system's age that the activity probably **continues today**.",
+      "Huge regions have **no craters**, so old craters must have been erased."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_glacier.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a pale heart-shaped plain labelled smooth nitrogen ice with small blue dots slowly drifting across it like a glacier, and dark water-ice mountains at its edge. The note says even at about 40 K nitrogen ice can flow, smoothing the plains and erasing craters."
+     },
+     "title": "Tombaugh Regio: a heart of ice",
+     "bullets": [
+      "The bright, heart-shaped **Tombaugh Regio** (named after Pluto's discoverer) has wide, smooth ice plains.",
+      "They may be **glaciers of nitrogen ice** that slowly flow, even at about 40 K."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_ice_strength.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels. Nitrogen ice: a low, flat mound, too soft to hold slopes. Water ice: tall jagged peaks several km high, rigid and strong at Pluto's cold. Text: on Pluto, water ice acts like rock does on Earth."
+     },
+     "title": "Mountains of water ice",
+     "bullets": [
+      "Pluto also has mountains **several km tall**, about as high as the Rocky Mountains.",
+      "Nitrogen ice is not rigid enough to hold such steep slopes, so the mountains must be **water ice**, which is rigid and strong at Pluto's low temperature."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_charon.webp",
+      "slide": "none (original diagram)",
+      "alt": "A grey Charon with a long dark canyon across it and a lighter smooth region below. A box lists: vast smooth plains, a sign of recent activity; they look like the Moon's maria, so water may have erupted as 'lava'; canyons as long and deep as the Grand Canyon."
+     },
+     "title": "Charon is active too",
+     "bullets": [
+      "Charon has vast **smooth plains**, the hallmark of recent geological activity. They look like the Moon's maria, suggesting erupted 'lava' that here might be **water**.",
+      "It also has **canyons** as long and deep as Earth's Grand Canyon."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Craters build up steadily over time, so a surface with few craters must have been renewed recently. Counting craters is a way to tell a surface's age."
+    },
+    {
+     "type": "trick",
+     "text": "Soft ice flows (nitrogen: plains and glaciers); strong ice stands tall (water: mountains)."
+    },
+    {
+     "type": "trap",
+     "text": "The mountains are water ice, NOT nitrogen ice (p. 368). 'Recent' here means within about 100 million years, which is young next to 4.5 billion years."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 (pp. 367-368) and Figures 12.24-12.25",
+    "Original diagrams: crater comparison; animated nitrogen glacier; ice strength; Charon features"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_crater_count.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels: a grey surface covered with craters, labelled an old surface where craters pile up for billions of years, and a smooth pale brown surface with almost none, labelled Pluto's plains with activity in the last 100 million years. Text: that is recent, so activity probably continues today."
+    },
+    {
+     "src": "img/kuiper/gen_glacier.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a pale heart-shaped plain labelled smooth nitrogen ice with small blue dots slowly drifting across it like a glacier, and dark water-ice mountains at its edge. The note says even at about 40 K nitrogen ice can flow, smoothing the plains and erasing craters."
+    },
+    {
+     "src": "img/kuiper/gen_ice_strength.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels. Nitrogen ice: a low, flat mound, too soft to hold slopes. Water ice: tall jagged peaks several km high, rigid and strong at Pluto's cold. Text: on Pluto, water ice acts like rock does on Earth."
+    },
+    {
+     "src": "img/kuiper/gen_charon.webp",
+     "slide": "none (original diagram)",
+     "alt": "A grey Charon with a long dark canyon across it and a lighter smooth region below. A box lists: vast smooth plains, a sign of recent activity; they look like the Moon's maria, so water may have erupted as 'lava'; canyons as long and deep as the Grand Canyon."
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "title": "What keeps Pluto active?",
+   "slides": "Textbook 12.4 (p. 368)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_heat_sources.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three cards. Radioactive decay: only a little heat, tagged small. Tidal heating: none, because Pluto and Charon are tidally locked, tagged none. Soft nitrogen ice: 40 K is not cold enough to make it rigid, so a little heat or changing ice thickness may be enough, tagged likely. Below: maybe even a hidden ocean."
+     },
+     "title": "A heat puzzle",
+     "bullets": [
+      "Neither Pluto nor Charon should have much heat from **radioactive decay**.",
+      "Because they are **tidally locked**, there is **no tidal heating** either."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_pluto_orbit_ice.webp",
+      "slide": "none (original diagram)",
+      "alt": "A cut-away sketch of Pluto with a surface of soft nitrogen ice, a water-ice shell, a possible hidden ocean and an ice-and-rock interior. Notes: at 40 K nitrogen ice is still soft, so a little radioactive heat or ice thickness changing along the orbit may let it flow; internal heat might even melt a hidden ocean."
+     },
+     "title": "Possible answers",
+     "bullets": [
+      "Even at 40 K, **nitrogen ice is not very rigid**. A small amount of radioactive heat, or changes in the ice's thickness as Pluto moves along its elliptical orbit, may be enough to let it flow.",
+      "There might even be enough internal heat to melt ice below the surface, making Pluto another icy world with a **hidden ocean**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_condense.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four worlds in a row from warm to cold, each with the gas that freezes and thaws there: Earth, water; Mars, carbon dioxide; Titan, methane; Pluto, nitrogen. A note says Pluto shows ice geology like Europa, Titan and Enceladus, the 'Law of Constant Astonishment'."
+     },
+     "title": "Ice geology everywhere",
+     "bullets": [
+      "Pluto is an extreme case of the **'ice geology'** that lets icy moons such as **Europa, Titan and Enceladus** stay active at temperatures far too low for rock geology.",
+      "Which gas freezes and thaws depends on distance from the Sun: **water** at Earth, **carbon dioxide** at Mars, **methane** at Titan and **nitrogen** at Pluto.",
+      "Lesson: worlds can be surprisingly alike in geology despite huge differences in make-up and temperature, a lesson nicknamed the **'Law of Constant Astonishment'**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Ice that is soft at a world's temperature can flow like hot rock does inside Earth, so a cold world does not need much heat to be geologically active."
+    },
+    {
+     "type": "trick",
+     "text": "Moving outward the frozen 'weather gas' goes W-C-M-N: Water, Carbon dioxide, Methane, Nitrogen."
+    },
+    {
+     "type": "trap",
+     "text": "Tidal heating powers Io and Europa, but NOT Pluto: the Pluto-Charon tidal lock rules it out (p. 368). The hidden ocean is only a possibility."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 (p. 368)",
+    "Original diagrams: heat sources; condensing gases by distance"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_heat_sources.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three cards. Radioactive decay: only a little heat, tagged small. Tidal heating: none, because Pluto and Charon are tidally locked, tagged none. Soft nitrogen ice: 40 K is not cold enough to make it rigid, so a little heat or changing ice thickness may be enough, tagged likely. Below: maybe even a hidden ocean."
+    },
+    {
+     "src": "img/kuiper/gen_pluto_orbit_ice.webp",
+     "slide": "none (original diagram)",
+     "alt": "A cut-away sketch of Pluto with a surface of soft nitrogen ice, a water-ice shell, a possible hidden ocean and an ice-and-rock interior. Notes: at 40 K nitrogen ice is still soft, so a little radioactive heat or ice thickness changing along the orbit may let it flow; internal heat might even melt a hidden ocean."
+    },
+    {
+     "src": "img/kuiper/gen_condense.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four worlds in a row from warm to cold, each with the gas that freezes and thaws there: Earth, water; Mars, carbon dioxide; Titan, methane; Pluto, nitrogen. A note says Pluto shows ice geology like Europa, Titan and Enceladus, the 'Law of Constant Astonishment'."
+    }
+   ]
+  },
+  {
+   "id": "triton",
+   "title": "Triton and Haumea: clues from big Kuiper belt objects",
+   "slides": "Textbook 12.4 (p. 368)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_triton_capture.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a small icy body flies in from deep space and is caught into orbit around Neptune, circling the opposite way to Neptune's spin. A box: Triton is about 15% wider than Pluto and Eris, so the Kuiper belt may once have held bigger objects, and it shows signs of geological activity."
+     },
+     "title": "Triton: a captured Kuiper belt object",
+     "bullets": [
+      "Neptune's moon **Triton** orbits 'backward', so it must be a **captured** object, almost certainly from the Kuiper belt. Voyager's pictures of Triton probably show a former Kuiper belt member up close.",
+      "Triton is about **15% larger in diameter** than both Pluto and Eris, so the Kuiper belt may once have held **more and larger** objects than it does now.",
+      "Triton shows signs of past or present **geological activity**: icy worlds can be far more active than their size alone suggests."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_sizes.webp",
+      "slide": "none (original diagram)",
+      "alt": "Circles to relative scale: Triton slightly bigger than Pluto, Pluto and Eris about the same size, Charon about half as wide as Pluto, and Arrokoth (32 km) a tiny dot. Text: Triton is about 15% wider; Eris is Pluto's size but 27% more massive."
+     },
+     "title": "Comparing sizes",
+     "bullets": [
+      "Pluto and Eris are about the same size; Triton is a bit bigger; Charon is just over half Pluto's width.",
+      "Many other Kuiper belt objects are far smaller, such as 32 km Arrokoth."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_haumea.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation on a dark background: a stretched, egg-shaped Haumea tumbles quickly while two small moons circle it. Box: it spins once every 4 hours, has two small moons, and four other Kuiper belt objects with matching orbits and spectra are probably pieces from the same giant impact."
+     },
+     "title": "Haumea and its family",
+     "bullets": [
+      "Giant impacts seem to have been fairly **common** in the Kuiper belt. Pluto's moons are one example.",
+      "The dwarf planet **Haumea** spins very fast, **once every 4 hours**, and has **two small moons**. The simplest explanation is a giant impact.",
+      "Four other Kuiper belt objects have orbits and spectra much like Haumea's, so they may be **fragments from the same impact**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A body that formed around Neptune from the same spinning disk would orbit the same way Neptune spins. A backward orbit means Triton came from somewhere else and was caught."
+    },
+    {
+     "type": "trick",
+     "text": "Triton: 'Tricked into orbit' (captured), 15% bigger than Pluto."
+    },
+    {
+     "type": "trap",
+     "text": "Triton is LARGER than Pluto and Eris (about 15% in diameter), even though it is 'only' a moon (p. 368). Eris being 27% more massive than Pluto comes from section 12.1."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 'What do we know about other Kuiper belt comets?' (p. 368)",
+    "Eris size and mass comparison: section 12.1 (Classifying Small Bodies)",
+    "Original diagrams: animated Triton capture; size comparison; animated Haumea"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_triton_capture.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a small icy body flies in from deep space and is caught into orbit around Neptune, circling the opposite way to Neptune's spin. A box: Triton is about 15% wider than Pluto and Eris, so the Kuiper belt may once have held bigger objects, and it shows signs of geological activity."
+    },
+    {
+     "src": "img/kuiper/gen_sizes.webp",
+     "slide": "none (original diagram)",
+     "alt": "Circles to relative scale: Triton slightly bigger than Pluto, Pluto and Eris about the same size, Charon about half as wide as Pluto, and Arrokoth (32 km) a tiny dot. Text: Triton is about 15% wider; Eris is Pluto's size but 27% more massive."
+    },
+    {
+     "src": "img/kuiper/gen_haumea.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation on a dark background: a stretched, egg-shaped Haumea tumbles quickly while two small moons circle it. Box: it spins once every 4 hours, has two small moons, and four other Kuiper belt objects with matching orbits and spectra are probably pieces from the same giant impact."
+    }
+   ]
+  },
+  {
+   "id": "arrokoth",
+   "title": "Arrokoth: a small, untouched Kuiper belt object",
+   "slides": "Textbook 12.4 (pp. 368-369, Figure 12.27)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_arrokoth.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: two reddish, flattened icy lumps drift gently together and stick, forming a snowman shape about 32 km long. Box: built from two disk-shaped objects that formed separately and joined in a low-speed collision; few craters show the region is quite empty."
+     },
+     "title": "A snowman in the dark",
+     "bullets": [
+      "On New Year's Day 2019, New Horizons flew past **Arrokoth**, an object only about **32 km** long.",
+      "It looks a bit like a snowman: **two disk-shaped icy objects stuck together**, probably after a **low-speed collision**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_accretion.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels. Closer to the Sun: crowded small grains around a large grown body, plenty of building blocks so sticking built planets. Kuiper belt: only a few scattered grains and a small two-part body, so growth slowed or stopped and Pluto-sized objects are rare."
+     },
+     "title": "Why growth stalled out there",
+     "bullets": [
+      "Early in the solar system small planetesimals collided and sometimes stuck together. Closer to the Sun this went on until it built the planets.",
+      "In the distant Kuiper belt, building blocks were **scarce**, so growth slowed and often stopped. That is why big objects like Pluto are relatively rare there, and two-part bodies like Arrokoth may be common.",
+      "Arrokoth has **few craters**, so the region was too spread out for many collisions. It is a sample of the early solar system, **frozen in time**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Craters record collisions. A body with very few craters must live where impacts are rare, which means the space around it is nearly empty."
+    },
+    {
+     "type": "trick",
+     "text": "Arrokoth = 'a two-scoop snowman that has barely been hit'."
+    },
+    {
+     "type": "trap",
+     "text": "Arrokoth's lack of craters is evidence that the region is EMPTY of small bodies, not that its surface was recently renewed like Pluto's (Figure 12.27 caption, p. 368)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 (pp. 368-369) and Figure 12.27",
+    "Original diagrams: animated two-lobe merger; accretion comparison"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_arrokoth.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: two reddish, flattened icy lumps drift gently together and stick, forming a snowman shape about 32 km long. Box: built from two disk-shaped objects that formed separately and joined in a low-speed collision; few craters show the region is quite empty."
+    },
+    {
+     "src": "img/kuiper/gen_accretion.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels. Closer to the Sun: crowded small grains around a large grown body, plenty of building blocks so sticking built planets. Kuiper belt: only a few scattered grains and a small two-part body, so growth slowed or stopped and Pluto-sized objects are rare."
+    }
+   ]
+  },
+  {
+   "id": "family",
+   "title": "A family of comet-like worlds",
+   "slides": "Textbook 12.4 (p. 369)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_composition.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two panels. Moons give masses: a body with a small moon on an orbit, so orbit gives mass and with size gives density. Spectra give make-up: a rainbow strip with dark lines revealing ices. Result: comet-like mixtures of ice and rock; Pluto and Eris are in effect very large comets."
+     },
+     "title": "Same ingredients",
+     "bullets": [
+      "The nebular model predicts that all Kuiper belt objects should be similar in make-up to Pluto, because they all formed in the same distant region.",
+      "Several (including **Eris**) have known **moons**, so their masses and densities can be found. Together with their **spectra**, these show **comet-like mixtures of ice and rock**.",
+      "In effect, Pluto and Eris are comets of unusually large size."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_plutinos.webp",
+      "slide": "none (original diagram)",
+      "alt": "Top view: the Sun, Neptune's round orbit and a bundle of overlapping oval orbits, each with a small body, all a little larger than Neptune's; Pluto's own orbit is drawn bold. Text: hundreds of Kuiper belt objects share Pluto's period and average distance in the 3:2 resonance."
+     },
+     "title": "Many move like Pluto",
+     "bullets": [
+      "Many Kuiper belt objects have Pluto-like orbits in stable **resonances with Neptune**.",
+      "**Hundreds** have the same orbital period and average distance from the Sun as Pluto itself."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_planet9.webp",
+      "slide": "none (original diagram)",
+      "alt": "The Sun with several long, distant orbits that all point the same way, and a dashed large orbit with a purple circle labelled Planet 9 with a question mark. Box: an unseen planet of at least several Earth masses might explain the pattern, but other explanations exist and none was found as of 2022."
+     },
+     "title": "A hidden 'Planet 9'?",
+     "bullets": [
+      "Patterns in many Kuiper belt orbits led some astronomers to suggest that an undiscovered object, nicknamed **'Planet 9'**, nudged them into place. There are other possible explanations too.",
+      "If it exists, it is probably at least **several times as massive as Earth**, far beyond the Kuiper belt, and should be detectable with current technology. None had been found as of 2022."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Density needs mass and size. A moon's orbit gives mass (Newton's version of Kepler's third law); dividing by the volume gives density, and an ice-rock density matches a comet."
+    },
+    {
+     "type": "trick",
+     "text": "Moons -> mass; spectra -> make-up; both say 'ice and rock'."
+    },
+    {
+     "type": "trap",
+     "text": "Planet 9 is a hypothesis, NOT a discovered planet, and other explanations exist (p. 369). It would be beyond the Kuiper belt, not inside it."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 (p. 369)",
+    "Original diagrams: how composition is measured; Pluto-like orbits; Planet 9 idea"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_composition.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two panels. Moons give masses: a body with a small moon on an orbit, so orbit gives mass and with size gives density. Spectra give make-up: a rainbow strip with dark lines revealing ices. Result: comet-like mixtures of ice and rock; Pluto and Eris are in effect very large comets."
+    },
+    {
+     "src": "img/kuiper/gen_plutinos.webp",
+     "slide": "none (original diagram)",
+     "alt": "Top view: the Sun, Neptune's round orbit and a bundle of overlapping oval orbits, each with a small body, all a little larger than Neptune's; Pluto's own orbit is drawn bold. Text: hundreds of Kuiper belt objects share Pluto's period and average distance in the 3:2 resonance."
+    },
+    {
+     "src": "img/kuiper/gen_planet9.webp",
+     "slide": "none (original diagram)",
+     "alt": "The Sun with several long, distant orbits that all point the same way, and a dashed large orbit with a purple circle labelled Planet 9 with a question mark. Box: an unseen planet of at least several Earth masses might explain the pattern, but other explanations exist and none was found as of 2022."
+    }
+   ]
+  },
+  {
+   "id": "origin",
+   "title": "Why is there a Kuiper belt?",
+   "slides": "Textbook 12.4 (p. 370)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_nebula.webp",
+      "slide": "none (original diagram)",
+      "alt": "Three zones by distance from the Sun: rocky planetesimals near the Sun, the zone where the jovian planets form and fling many icy planetesimals away, and beyond Neptune the Kuiper belt, where icy planetesimals stayed in the same plane and direction as the planets."
+     },
+     "title": "The basic answer",
+     "bullets": [
+      "In the nebular theory the Kuiper belt is made of **icy planetesimals that formed beyond Neptune's orbit**.",
+      "But clues from Kuiper belt orbits, compositions and giant impacts show the full story is more complex, so scientists built more detailed computer models."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_migration.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: Jupiter, Saturn, Uranus and Neptune start bunched near the Sun, then Jupiter shifts slightly inward while the other three spread outward; the cloud of Kuiper belt dots is stirred and most of it scatters away. Note: Uranus and Neptune could not have formed where they are now."
+     },
+     "title": "Planets on the move",
+     "bullets": [
+      "The models (still works in progress) add two ideas: **orbital resonances** between the jovian planets helped shape both the Kuiper belt and the planets themselves, and some planets **migrated** to closer or more distant orbits after they formed.",
+      "**Uranus and Neptune** could not have formed where they are now: the solar nebula was too thin there to build such big planets. All four jovian planets were probably **much closer together** at first, sharing space with many other planet-sized planetesimals.",
+      "Each collision, close encounter or resonance swapped orbital energy, moving one object out and another in. Overall **Jupiter moved somewhat inward**, while **Saturn, Uranus and Neptune moved outward**. The resulting resonances stirred the Kuiper belt into its present form."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_mass_lost.webp",
+      "slide": "none (original diagram)",
+      "alt": "A grid of 100 squares, each 1% of the original Kuiper belt; only one is coloured. Box: most objects crashed into a planet or were scattered into space as the planets migrated; less than 1% remains."
+     },
+     "title": "A belt that lost almost everything",
+     "bullets": [
+      "The Kuiper belt probably lost **more than 99%** of its original mass: most objects either hit a planet or were scattered far into space.",
+      "Migration seems even more important in many **other planetary systems**, and different timing of nebula clearing could produce planets quite unlike ours."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "When two bodies swap orbital energy in a close encounter, one gains what the other loses. Many small encounters with planetesimals can slowly push a big planet in or out."
+    },
+    {
+     "type": "trick",
+     "text": "Jupiter Jumped in a little; the other three Spread out."
+    },
+    {
+     "type": "trap",
+     "text": "Jupiter moved INWARD, the other three outward, not all four outward (p. 370). The Kuiper belt today holds less than 1% of its original mass."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.4 'Why is there a Kuiper belt?' (p. 370) and the chapter summary",
+    "Original diagrams: formation zones; animated migration; mass lost"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_nebula.webp",
+     "slide": "none (original diagram)",
+     "alt": "Three zones by distance from the Sun: rocky planetesimals near the Sun, the zone where the jovian planets form and fling many icy planetesimals away, and beyond Neptune the Kuiper belt, where icy planetesimals stayed in the same plane and direction as the planets."
+    },
+    {
+     "src": "img/kuiper/gen_migration.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: Jupiter, Saturn, Uranus and Neptune start bunched near the Sun, then Jupiter shifts slightly inward while the other three spread outward; the cloud of Kuiper belt dots is stirred and most of it scatters away. Note: Uranus and Neptune could not have formed where they are now."
+    },
+    {
+     "src": "img/kuiper/gen_mass_lost.webp",
+     "slide": "none (original diagram)",
+     "alt": "A grid of 100 squares, each 1% of the original Kuiper belt; only one is coloured. Box: most objects crashed into a planet or were scattered into space as the planets migrated; less than 1% remains."
+    }
+   ]
+  },
+  {
+   "id": "collisions",
+   "title": "Collisions still happen",
+   "slides": "Textbook 12.5 (p. 370, Figure 12.28)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_sl9_facts.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four cards: heavy bombardment, when impacts were far more common, ended nearly 4 billion years ago; comets sometimes hit the Sun; Shoemaker-Levy 9 hit Jupiter in 1994 after being found over a year early; about a dozen smaller Jupiter impacts have been seen since."
+     },
+     "title": "Then and now",
+     "bullets": [
+      "The chaos of the early solar system put many small bodies on orbits that could hit planets and moons.",
+      "The **heavy bombardment**, which ended nearly **4 billion years ago**, shows such collisions were far more common long ago. But plenty of small bodies remain, and collisions still happen.",
+      "The Sun is sometimes hit by comets (only the comets suffer)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_sl9.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation on a dark background: a string of comet fragments flies one after another into Jupiter, each leaving a dark spot in its cloud bands. Text: Jupiter's tides had already torn the comet apart; each piece hit with about a million hydrogen bombs' energy and left scars, some bigger than Earth."
+     },
+     "title": "Shoemaker-Levy 9 hits Jupiter, 1994",
+     "bullets": [
+      "Comet **Shoemaker-Levy 9 (SL9)** had already been torn apart by **Jupiter's tidal forces** on an earlier pass, so it was a **string of nuclei**.",
+      "It was found more than a year before impact, and orbit calculations predicted exactly when it would hit, so nearly every major telescope (and some spacecraft) watched.",
+      "Each nucleus hit with the energy of about **a million hydrogen bombs**. Pieces barely a kilometre across left scars, some big enough to swallow Earth, that lasted for months. About a dozen smaller Jupiter impacts have been spotted since."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Tides stretch a body because the near side is pulled harder than the far side. A loosely held comet passing very close to Jupiter can be pulled into pieces."
+    },
+    {
+     "type": "trick",
+     "text": "SL9 = a 'string of pearls' comet: one pearl, one Earth-sized scar."
+    },
+    {
+     "type": "trap",
+     "text": "SL9 was ripped apart by Jupiter's TIDES before the impact, not by the impact itself (p. 370). It was the first direct view of a cosmic collision."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.5 introduction (p. 370) and Figure 12.28",
+    "Original diagrams: collisions then and now; animated SL9 impact"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_sl9_facts.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four cards: heavy bombardment, when impacts were far more common, ended nearly 4 billion years ago; comets sometimes hit the Sun; Shoemaker-Levy 9 hit Jupiter in 1994 after being found over a year early; about a dozen smaller Jupiter impacts have been seen since."
+    },
+    {
+     "src": "img/kuiper/gen_sl9.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation on a dark background: a string of comet fragments flies one after another into Jupiter, each leaving a dark spot in its cloud bands. Text: Jupiter's tides had already torn the comet apart; each piece hit with about a million hydrogen bombs' energy and left scars, some bigger than Earth."
+    }
+   ]
+  },
+  {
+   "id": "iridium",
+   "title": "Clues in the rocks",
+   "slides": "Textbook 12.5 (pp. 370-371, Figure 12.29)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_meteor_crater.webp",
+      "slide": "none (original diagram)",
+      "alt": "Cross-section of a desert bowl a bit more than 1 km across with raised rims, and a 50 m metal asteroid streaking toward it. Text: about 50,000 years ago, with the blast of a 20-megaton hydrogen bomb, battering hundreds of square kilometres."
+     },
+     "title": "Earth's own scars",
+     "bullets": [
+      "Geologists have found **more than 150 impact craters** on Earth.",
+      "**Meteor Crater** in Arizona formed about **50,000 years ago** when a metal asteroid about **50 m** across hit with the power of a **20-megaton** hydrogen bomb. The crater is only a bit over 1 km wide, but the blast probably battered hundreds of square km."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_iridium_layer.webp",
+      "slide": "none (original diagram)",
+      "alt": "A column of rock layers: older rock with a dinosaur bone at the bottom, a thin dark layer rich in iridium and soot dated to 66 million years ago, and younger rock with no dinosaur fossils above. Box: iridium is rare at Earth's surface because it sank to the core, but common in meteorites."
+     },
+     "title": "The iridium layer",
+     "bullets": [
+      "In **1978**, a team led by **Luis and Walter Alvarez** found that a thin layer of dark sediment from about **66 million years ago**, about when the dinosaurs died out, was unusually rich in **iridium**.",
+      "Iridium is rare at Earth's surface (it sank to the core when Earth **differentiated**) but common in **meteorites**. The same layer turned up in sediments of that age around the world.",
+      "They proposed that an asteroid or comet impact caused the extinction. Fossils of dinosaurs and many other species appear only **below** the layer."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_extinction_stats.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two bars: up to 99% of all living organisms may have died, and up to 75% of all species may have gone extinct, 66 million years ago. Note: the dinosaurs were only a small part of the loss."
+     },
+     "title": "A mass extinction",
+     "bullets": [
+      "The fossil record suggests that up to **99% of all living organisms** died and up to **75% of all species** went extinct around that time.",
+      "That makes it a **mass extinction**: the rapid extinction of a large fraction of all living species. The layer marks the **K-Pg boundary**, so it is called the K-Pg event."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Earth's iron and heavy metals like iridium sank to the core when the young planet was molten. Meteorites never went through that sorting, so a surface layer full of iridium points to material from space."
+    },
+    {
+     "type": "trick",
+     "text": "Iridium = 'I came from space': rare up here, common in meteorites."
+    },
+    {
+     "type": "trap",
+     "text": "The extinction killed up to 75% of SPECIES and up to 99% of individual ORGANISMS; don't swap the two numbers (p. 370). K-Pg = Cretaceous-Paleogene; the K is from the German spelling."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.5 'Did an impact kill the dinosaurs?' (pp. 370-371) and Figure 12.29",
+    "Original diagrams: Meteor Crater; rock column; extinction bars"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_meteor_crater.webp",
+     "slide": "none (original diagram)",
+     "alt": "Cross-section of a desert bowl a bit more than 1 km across with raised rims, and a 50 m metal asteroid streaking toward it. Text: about 50,000 years ago, with the blast of a 20-megaton hydrogen bomb, battering hundreds of square kilometres."
+    },
+    {
+     "src": "img/kuiper/gen_iridium_layer.webp",
+     "slide": "none (original diagram)",
+     "alt": "A column of rock layers: older rock with a dinosaur bone at the bottom, a thin dark layer rich in iridium and soot dated to 66 million years ago, and younger rock with no dinosaur fossils above. Box: iridium is rare at Earth's surface because it sank to the core, but common in meteorites."
+    },
+    {
+     "src": "img/kuiper/gen_extinction_stats.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two bars: up to 99% of all living organisms may have died, and up to 75% of all species may have gone extinct, 66 million years ago. Note: the dinosaurs were only a small part of the loss."
+    }
+   ]
+  },
+  {
+   "id": "evidence",
+   "title": "More evidence and the smoking gun",
+   "slides": "Textbook 12.5 (p. 371, Figure 12.30)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_clues.webp",
+      "slide": "none (original diagram)",
+      "alt": "Four numbered cards: meteorite metals (extra osmium, gold and platinum); shocked quartz reshaped by impact heat and pressure; tektites, rock droplets that cooled in the air; soot from world-wide fires lit by falling hot debris."
+     },
+     "title": "Four more clues in the same layer",
+     "bullets": [
+      "1. Extra **osmium, gold and platinum**, in amounts like those in meteorites.",
+      "2. **Shocked quartz**: crystals reshaped by the high temperature and pressure of an impact, also found at sites like Meteor Crater.",
+      "3. **Tektites**: little spheres of rock that formed when molten droplets splashed high into the air cooled and hardened.",
+      "4. **Soot** from widespread forest fires, probably lit by debris thrown above the atmosphere that fell back worldwide as a hot, glowing rain of rock."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_chicxulub.webp",
+      "slide": "none (original diagram)",
+      "alt": "Simple map of the Gulf of Mexico and the Yucatán Peninsula with red rings on the coast marking a buried crater about 200 km across, half on land and half under water. Facts: seen in gravity and magnetic data, not ordinary photos; made by an object 10 to 20 km across."
+     },
+     "title": "The Chicxulub crater",
+     "bullets": [
+      "In **1990** scientists identified a large buried crater whose radiometric age matches the **66-million-year** layer.",
+      "The **Chicxulub crater**, about **200 km** across, lies on the coast of Mexico's **Yucatán Peninsula**, half on land and half under water. It cannot be seen in ordinary photos but shows clearly in **gravity and magnetic** data.",
+      "Its size means the impactor was about **10 to 20 km** across: big enough to supply the iridium and other metals."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A good scientific case uses several independent kinds of evidence. Metals, shocked quartz, tektites, soot and a crater of the right age all point the same way."
+    },
+    {
+     "type": "trick",
+     "text": "M-Q-T-S: Metals, Quartz, Tektites, Soot. Then the Crater seals it."
+    },
+    {
+     "type": "trap",
+     "text": "The crater is buried and invisible in ordinary photos; it was found with gravity and magnetic measurements (p. 371). The text says 1990; the Extraordinary Claims box on p. 373 says 1991."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.5 'Additional Evidence for an Impact' (p. 371) and Figure 12.30",
+    "Original diagrams: four clues; Chicxulub map"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_clues.webp",
+     "slide": "none (original diagram)",
+     "alt": "Four numbered cards: meteorite metals (extra osmium, gold and platinum); shocked quartz reshaped by impact heat and pressure; tektites, rock droplets that cooled in the air; soot from world-wide fires lit by falling hot debris."
+    },
+    {
+     "src": "img/kuiper/gen_chicxulub.webp",
+     "slide": "none (original diagram)",
+     "alt": "Simple map of the Gulf of Mexico and the Yucatán Peninsula with red rings on the coast marking a buried crater about 200 km across, half on land and half under water. Facts: seen in gravity and magnetic data, not ordinary photos; made by an object 10 to 20 km across."
+    }
+   ]
+  },
+  {
+   "id": "mechanism",
+   "title": "How the impact caused the extinction",
+   "slides": "Textbook 12.5 (pp. 371-372, Figures 12.31-12.32)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_impact_day.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a glowing asteroid streaks down at a slight angle and hits the coast; a fireball rises, arcs of red-hot debris fly across the land, ripples spread through the ground and a tsunami wave rushes away over the sea. Labels: force of about 100 million hydrogen bombs."
+     },
+     "title": "Impact day",
+     "bullets": [
+      "The asteroid or comet hit Mexico with the force of about **100 million hydrogen bombs**, apparently at a slight angle, spraying red-hot debris across North America.",
+      "Seismic waves stronger than any earthquake set off a huge **tsunami** that swept hundreds of km inland, and big waves in distant inland seas. Much North American life may have died within hours.",
+      "Soon after, hot debris falling around the world lit **fires** that killed many more living things."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_tanis.webp",
+      "slide": "none (original diagram)",
+      "alt": "Cut-away of a sediment bed under a thin dark iridium layer, packed with fossil fish, small round tektites and a burned log. Box: at the edge of an inland sea, fish, insects, mammals and a dinosaur were killed together within hours, likely by impact-driven waves and falling tektites."
+     },
+     "title": "Tanis: a death bed",
+     "bullets": [
+      "A fossil site in **North Dakota** (Tanis), at the edge of an ancient inland sea, matches the crater's age and contains the iridium-rich layer.",
+      "Fish, insects, mammals and at least one dinosaur are buried together with burned trees and tektites: animals killed **within hours** by impact-driven waves and falling tektites (some found clogging fish gills)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_climate.webp",
+      "slide": "none (original diagram)",
+      "alt": "Sketch of temperature over time after the impact: a deep cold dip lasting weeks to months as dust and smoke block sunlight and photosynthesis stops for up to a year, then a long warm hump lasting decades or longer as extra carbon dioxide strengthens the greenhouse effect. Acid rain and poisoned oceans noted."
+     },
+     "title": "Global winter, then global summer",
+     "bullets": [
+      "Dust and smoke stayed in the air for weeks or months, blocking sunlight and causing a harsh **global winter**. Photosynthesis may have stopped for up to a year, killing species all through the food chain.",
+      "**Acid rain** may have killed plants and acidified lakes, and **nitrous oxides** dissolved in the oceans could have killed sea life.",
+      "If the impact site was rich in carbonate rock, it may have released lots of **carbon dioxide** (perhaps with extra from volcanoes), so the winter may have been followed by **decades or longer of global summer**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Plants need sunlight. Block it for months and the bottom of the food chain collapses, taking the animals that eat plants, and the animals that eat them, with it."
+    },
+    {
+     "type": "trick",
+     "text": "Order of trouble: Hours (waves, fire) -> Months (dark and cold) -> Decades (greenhouse heat)."
+    },
+    {
+     "type": "trap",
+     "text": "The first long-term effect was COOLING (dust and smoke), and the warming from carbon dioxide came LATER (pp. 372-373)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.5 'Mechanism of the Mass Extinction' (pp. 371-373) and Figures 12.31-12.32",
+    "Original diagrams: animated impact day; Tanis bed; climate sketch"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_impact_day.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a glowing asteroid streaks down at a slight angle and hits the coast; a fireball rises, arcs of red-hot debris fly across the land, ripples spread through the ground and a tsunami wave rushes away over the sea. Labels: force of about 100 million hydrogen bombs."
+    },
+    {
+     "src": "img/kuiper/gen_tanis.webp",
+     "slide": "none (original diagram)",
+     "alt": "Cut-away of a sediment bed under a thin dark iridium layer, packed with fossil fish, small round tektites and a burned log. Box: at the edge of an inland sea, fish, insects, mammals and a dinosaur were killed together within hours, likely by impact-driven waves and falling tektites."
+    },
+    {
+     "src": "img/kuiper/gen_climate.webp",
+     "slide": "none (original diagram)",
+     "alt": "Sketch of temperature over time after the impact: a deep cold dip lasting weeks to months as dust and smoke block sunlight and photosynthesis stops for up to a year, then a long warm hump lasting decades or longer as extra carbon dioxide strengthens the greenhouse effect. Acid rain and poisoned oceans noted."
+    }
+   ]
+  },
+  {
+   "id": "aftermath",
+   "title": "Survivors, debate and other extinctions",
+   "slides": "Textbook 12.5 (pp. 373-374, Extraordinary Claims box)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_survivors.webp",
+      "slide": "none (original diagram)",
+      "alt": "A small mammal curled in an underground burrow and a bird-like dinosaur flying above. Box: dinosaurs ruled for 180 million years while mammals stayed small; afterward mammals grew into many large kinds over 66 million years, including us."
+     },
+     "title": "Who survived",
+     "bullets": [
+      "The amazing part is that some life survived, including a few **small mammals** and the group of dinosaurs that became **birds**.",
+      "They may have lived in **underground burrows** and stored enough food to outlast the global winter.",
+      "Dinosaurs had diversified for **180 million years** while mammals stayed small and rodent-like. Afterward, mammals evolved into many much larger kinds over 66 million years, ultimately including us."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_extinctions.webp",
+      "slide": "none (original diagram)",
+      "alt": "Timeline of the last 500 million years with five mass extinctions: the biggest, the great dying 252 million years ago, killed close to 90% of species; the dinosaur event 66 million years ago is marked with an impact and iridium layer. No other one shows a similar iridium layer."
+     },
+     "title": "Was the impact the whole story?",
+     "bullets": [
+      "A major impact clearly **coincided** with the extinction, but the jury is still out on whether it was the only cause. Some scientists think dinosaurs were already declining; others think big **volcanic eruptions** also played a role.",
+      "There seem to have been at least **four other mass extinctions** in the past 500 million years. The worst, the **'great dying'** (end-Permian) about **252 million years ago**, killed close to **90%** of species.",
+      "None of the others is as closely tied to an impact, and none shows a similar **iridium layer**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_uniform.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two boxes. Uniformitarianism: Earth shaped mainly by slow, gradual change. Catastrophism: sudden dramatic events matter most. Verdict box: Earth is old enough for gradual change to explain most features, but occasional catastrophes happen; the missing-crater doubt ended when Chicxulub was found."
+     },
+     "title": "Gradual change or catastrophe?",
+     "bullets": [
+      "**Uniformitarianism** held that Earth was shaped mainly by slow, gradual change; **catastrophism** held that dramatic events mattered most.",
+      "The Alvarez idea of a sudden extinction was an extraordinary claim. The main early objection was that such an impact should have left a crater; finding Chicxulub answered it.",
+      "Verdict: gradual processes explain most of Earth's history, but occasional **catastrophes do happen** and can be crucial."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Being small, eating little and hiding underground are good ways to survive months of darkness and cold."
+    },
+    {
+     "type": "trick",
+     "text": "Five big extinctions; only the dinosaur one has the iridium 'fingerprint'."
+    },
+    {
+     "type": "trap",
+     "text": "The great dying (252 million years ago, close to 90% of species) was WORSE than the dinosaur extinction, but it is not tied to an impact (p. 373)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.5 (pp. 373-374): survivors, 'Controversies and Other Mass Extinctions', Extraordinary Claims box",
+    "Original diagrams: survivors; extinction timeline; uniformitarianism vs catastrophism"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_survivors.webp",
+     "slide": "none (original diagram)",
+     "alt": "A small mammal curled in an underground burrow and a bird-like dinosaur flying above. Box: dinosaurs ruled for 180 million years while mammals stayed small; afterward mammals grew into many large kinds over 66 million years, including us."
+    },
+    {
+     "src": "img/kuiper/gen_extinctions.webp",
+     "slide": "none (original diagram)",
+     "alt": "Timeline of the last 500 million years with five mass extinctions: the biggest, the great dying 252 million years ago, killed close to 90% of species; the dinosaur event 66 million years ago is marked with an impact and iridium layer. No other one shows a similar iridium layer."
+    },
+    {
+     "src": "img/kuiper/gen_uniform.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two boxes. Uniformitarianism: Earth shaped mainly by slow, gradual change. Catastrophism: sudden dramatic events matter most. Verdict box: Earth is old enough for gradual change to explain most features, but occasional catastrophes happen; the missing-crater doubt ended when Chicxulub was found."
+    }
+   ]
+  },
+  {
+   "id": "risk",
+   "title": "How great is the impact risk today?",
+   "slides": "Textbook 12.5 (pp. 373-374, Figures 12.33-12.35)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_tunguska.webp",
+      "slide": "none (original diagram)",
+      "alt": "A bright burst high above a green forest with lines raining down, and trees on the ground knocked flat pointing away from the spot below the blast. Box: energy of several atomic bombs; over a major city it would have been the worst natural disaster in human history."
+     },
+     "title": "Tunguska, 1908",
+     "bullets": [
+      "Dinosaur-killer impacts are very rare, but smaller ones can still be devastating.",
+      "In **1908** a small asteroid apparently **exploded in mid-air** over **Tunguska, Siberia**, releasing the energy of several atomic bombs and flattening and burning forests.",
+      "Over a major city, it would have been the worst natural disaster in human history."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_chelyabinsk.webp",
+      "slide": "none (original diagram)",
+      "alt": "A red arrow comes in at a shallow angle and bursts high above a small city; a grey dashed arrow shows a steeper path bursting lower, labelled much more damage. Box: about 20 m, 10,000 tons, over 60,000 km/h; blast like a 500-kiloton bomb; more than 1,000 people hurt, mostly by broken glass."
+     },
+     "title": "Chelyabinsk, 2013",
+     "bullets": [
+      "In **2013** a previously **undetected** asteroid about **20 m** long (about **10,000 tons**) entered the air above **Chelyabinsk, Russia**, at more than 60,000 km/h.",
+      "Friction made it explode with the power of a **500-kiloton** nuclear bomb. More than **1,000 people** were hurt, mostly by glass broken by the shock wave. It left no big crater, but meteorites were scattered widely.",
+      "It was lucky: a **steeper** path would have meant a lower explosion and much more damage."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_frequency.webp",
+      "slide": "none (original diagram)",
+      "alt": "Graph of impactor size (1 m to 100 km, log scale) against typical time between impacts, rising steadily. Marked points: objects a few metres across about every week, Tunguska-sized every couple of hundred years, dinosaur-killer size every tens of millions of years. The crater is about 10 times the impactor's size."
+     },
+     "title": "How often do impacts happen?",
+     "bullets": [
+      "**Larger objects hit much less often** than smaller ones. A crater is about 10 times the size of the object that made it.",
+      "Objects a few metres across probably enter the atmosphere **about every week**. Tunguska-sized objects probably hit **every couple of hundred years**.",
+      "Dinosaur-killer impacts are **tens of millions of years apart** on average, so we face a far greater danger from ourselves than from a big asteroid or comet."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "There are far more small rocks than big ones in the solar system, just as there is more sand than boulders on a beach, so small impacts are much more frequent."
+    },
+    {
+     "type": "trick",
+     "text": "Weekly (metres), every couple of centuries (Tunguska), tens of millions of years (dinosaur killer)."
+    },
+    {
+     "type": "trap",
+     "text": "Tunguska and Chelyabinsk were AIR bursts that left no large crater (pp. 373-374). 'Every couple hundred years' is an average, not a schedule."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.5 'How great is the impact risk today?' (pp. 373-374) and Figures 12.33-12.35",
+    "Original diagrams: Tunguska air burst; Chelyabinsk path angles; impact frequency sketch (only the three rates given in the text are marked)"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_tunguska.webp",
+     "slide": "none (original diagram)",
+     "alt": "A bright burst high above a green forest with lines raining down, and trees on the ground knocked flat pointing away from the spot below the blast. Box: energy of several atomic bombs; over a major city it would have been the worst natural disaster in human history."
+    },
+    {
+     "src": "img/kuiper/gen_chelyabinsk.webp",
+     "slide": "none (original diagram)",
+     "alt": "A red arrow comes in at a shallow angle and bursts high above a small city; a grey dashed arrow shows a steeper path bursting lower, labelled much more damage. Box: about 20 m, 10,000 tons, over 60,000 km/h; blast like a 500-kiloton bomb; more than 1,000 people hurt, mostly by broken glass."
+    },
+    {
+     "src": "img/kuiper/gen_frequency.webp",
+     "slide": "none (original diagram)",
+     "alt": "Graph of impactor size (1 m to 100 km, log scale) against typical time between impacts, rising steadily. Marked points: objects a few metres across about every week, Tunguska-sized every couple of hundred years, dinosaur-killer size every tens of millions of years. The crater is about 10 times the impactor's size."
+    }
+   ]
+  },
+  {
+   "id": "defense",
+   "title": "Watching for threats and fighting back",
+   "slides": "Textbook 12.5 (pp. 374-375, Figure 12.36)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_pha.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two progress bars for the estimated 5,000 potentially hazardous asteroids: about 90% of those larger than 1 km had been found by 2022, but only about 30% of the smaller dangerous ones. Note: comets from the outer solar system might give only months or years of warning."
+     },
+     "title": "The search so far",
+     "bullets": [
+      "Astronomers estimate about **5,000 'potentially hazardous asteroids'** that could cause serious regional damage.",
+      "As of 2022 about **90%** of those **larger than 1 km** had been found, but only about **30%** of the smaller, still dangerous ones.",
+      "**Comets** are another unknown: fewer threaten us, but one plunging in from the outer solar system might give only **months or years** of warning."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_dart.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation on a dark background: a small moon, Dimorphos, circles the larger asteroid Didymos; a spacecraft flies in and crashes into it with a flash, and afterward the moon follows a slightly smaller orange orbit. Note: neither asteroid threatened Earth."
+     },
+     "title": "DART: a test of deflection",
+     "bullets": [
+      "Ideas for saving Earth include nuclear weapons or other ways to break up or push an asteroid, but no one knows if today's technology could do it.",
+      "NASA's **Planetary Defense Coordination Office** runs a search program and managed **DART** (Double Asteroid Redirection Test). In **September 2022** DART crashed into the smaller of a pair of asteroids (Dimorphos, which orbits Didymos).",
+      "Neither asteroid was a threat, but DART **slightly changed the small one's orbit**, giving data on how we might deflect a dangerous object."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_mining.webp",
+      "slide": "none (original diagram)",
+      "alt": "A lumpy grey asteroid beside two cards: precious metals, which iron-rich asteroids probably hold although on Earth they mostly sank to the core; and fuel and water that could supply missions to the outer solar system."
+     },
+     "title": "Asteroids as opportunities",
+     "bullets": [
+      "Near-Earth asteroids also bring **resources** close to us. Iron-rich ones probably hold **precious metals** that on Earth mostly sank to the core.",
+      "They might also supply **fuel and water** for missions to the outer solar system; NASA and private companies are planning trips to bring back material."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Nudging an asteroid early changes its path a little, and a small change made far away adds up to a big miss by the time it reaches Earth. That is why finding threats early matters most."
+    },
+    {
+     "type": "trick",
+     "text": "Big ones mostly found (90%), smaller ones mostly not (30%)."
+    },
+    {
+     "type": "trap",
+     "text": "DART changed the orbit of the small asteroid AROUND ITS COMPANION; it was a test, and neither asteroid threatened Earth (p. 374)."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.5 (pp. 374-375) and Figure 12.36",
+    "Original diagrams: search progress; animated DART test; asteroid resources"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_pha.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two progress bars for the estimated 5,000 potentially hazardous asteroids: about 90% of those larger than 1 km had been found by 2022, but only about 30% of the smaller dangerous ones. Note: comets from the outer solar system might give only months or years of warning."
+    },
+    {
+     "src": "img/kuiper/gen_dart.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation on a dark background: a small moon, Dimorphos, circles the larger asteroid Didymos; a spacecraft flies in and crashes into it with a flash, and afterward the moon follows a slightly smaller orange orbit. Note: neither asteroid threatened Earth."
+    },
+    {
+     "src": "img/kuiper/gen_mining.webp",
+     "slide": "none (original diagram)",
+     "alt": "A lumpy grey asteroid beside two cards: precious metals, which iron-rich asteroids probably hold although on Earth they mostly sank to the core; and fuel and water that could supply missions to the outer solar system."
+    }
+   ]
+  },
+  {
+   "id": "jovian",
+   "title": "How the jovian planets affect impacts and life on Earth",
+   "slides": "Textbook 12.5 (p. 375, Figure 12.37)",
+   "steps": [
+    {
+     "img": {
+      "src": "img/kuiper/gen_connections.webp",
+      "slide": "none (original diagram)",
+      "alt": "Flow diagram: the jovian planets, especially Jupiter, point to three boxes, the asteroid belt (stirred so no planet formed), the Oort cloud (icy bodies flung far out) and the Kuiper belt (shaped by migration and resonances). Dashed arrows from all three lead to Earth: occasional impacts."
+     },
+     "title": "Jupiter shaped the small bodies",
+     "bullets": [
+      "Planets don't affect us through astrology, but they do have a real effect: by shaping the orbits of asteroids and comets.",
+      "The jovian planets, especially **Jupiter**, matter most. Jupiter disturbed rocky planetesimals beyond Mars, preventing a planet and leaving the **asteroid belt**. The jovian planets threw icy planetesimals out to form the **Oort cloud**, and through migration and resonances shaped the **Kuiper belt**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_deflect.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation: a comet heading inward passes close to Jupiter and its path bends toward the inner solar system, crossing near Earth's orbit. A dashed grey line shows where it would have gone without Jupiter. Note: such nudges and resonances send bodies onto Earth-crossing paths."
+     },
+     "title": "Sending impacts our way",
+     "bullets": [
+      "Every asteroid or comet that has hit Earth since the end of the heavy bombardment was, in some sense, **sent our way** by Jupiter or another jovian planet.",
+      "Their gravity keeps nudging small bodies onto paths that cross the planets' orbits."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/kuiper/gen_whatif.webp",
+      "slide": "none (original diagram)",
+      "alt": "Two boxes for a solar system without Jupiter: the asteroid threat might be much smaller, because the belt's material might have formed a planet; the comet threat might be much greater, because Jupiter threw out the most comets. Below: no one knows whether that has been good or bad for life."
+     },
+     "title": "Friend or foe?",
+     "bullets": [
+      "Without Jupiter the **asteroid** threat might be much **smaller** (the asteroid belt's material might have become a planet), but the **comet** threat might be much **greater**: Jupiter probably threw more comets out to the Oort cloud than any other planet.",
+      "It is unclear whether that is good or bad for life. An impact ended the dinosaurs but made way for us; some scientists argue more impacts would have hurt life, others that they might have **sped up evolution**.",
+      "Can civilizations arise only where there is a Jupiter-like planet in a Jupiter-like orbit? No one knows yet."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A huge planet's gravity barely notices a small body passing by, but the small body's path can change a lot. Over billions of years those changes decide which bodies are thrown out and which come our way."
+    },
+    {
+     "type": "trick",
+     "text": "Jupiter's two-sided report card: fewer comets (likely), more asteroids (likely)."
+    },
+    {
+     "type": "trap",
+     "text": "Without Jupiter, the asteroid threat might be SMALLER, not larger; it's the comet threat that might grow (p. 375). Whether Jupiter has been 'good' for life is an open question."
+    }
+   ],
+   "sourceNotes": [
+    "Cosmic Perspective 12.5 'How do the jovian planets affect impact rates and life on Earth?' (p. 375) and Figure 12.37",
+    "Original diagrams: connections flow chart; animated gravitational nudge; what if no Jupiter"
+   ],
+   "images": [
+    {
+     "src": "img/kuiper/gen_connections.webp",
+     "slide": "none (original diagram)",
+     "alt": "Flow diagram: the jovian planets, especially Jupiter, point to three boxes, the asteroid belt (stirred so no planet formed), the Oort cloud (icy bodies flung far out) and the Kuiper belt (shaped by migration and resonances). Dashed arrows from all three lead to Earth: occasional impacts."
+    },
+    {
+     "src": "img/kuiper/gen_deflect.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation: a comet heading inward passes close to Jupiter and its path bends toward the inner solar system, crossing near Earth's orbit. A dashed grey line shows where it would have gone without Jupiter. Note: such nudges and resonances send bodies onto Earth-crossing paths."
+    },
+    {
+     "src": "img/kuiper/gen_whatif.webp",
+     "slide": "none (original diagram)",
+     "alt": "Two boxes for a solar system without Jupiter: the asteroid threat might be much smaller, because the belt's material might have formed a planet; the comet threat might be much greater, because Jupiter threw out the most comets. Below: no one knows whether that has been good or bad for life."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Kuiper belt worlds and cosmic collisions at a glance",
+  "head": [
+   "Object or event",
+   "Key facts",
+   "Why it matters"
+  ],
+  "rows": [
+   [
+    "Pluto",
+    "Nearly 40 AU, 248-year orbit, 3:2 resonance with Neptune, 40 K, thin N₂-CH₄-CO air",
+    "Best-studied Kuiper belt object; surprisingly active ice geology"
+   ],
+   [
+    "Charon",
+    "Over half Pluto's diameter, 1/8 its mass, 20,000 km away, locked 6.4-day rotation",
+    "Probably made in a giant impact; let us weigh Pluto"
+   ],
+   [
+    "Triton",
+    "Captured moon of Neptune with a backward orbit; about 15% wider than Pluto",
+    "The belt may once have had more, bigger objects"
+   ],
+   [
+    "Haumea",
+    "Spins every 4 hours, two moons, a family of fragments",
+    "Giant impacts were common in the belt"
+   ],
+   [
+    "Arrokoth",
+    "32 km, two stuck-together icy disks, few craters",
+    "An untouched sample of early accretion"
+   ],
+   [
+    "Shoemaker-Levy 9",
+    "Tidally broken comet that hit Jupiter in 1994",
+    "First direct view of a cosmic collision"
+   ],
+   [
+    "Chicxulub",
+    "200 km buried crater, 66 million years old, 10-20 km impactor",
+    "Clearly linked to the dinosaur mass extinction"
+   ],
+   [
+    "Tunguska / Chelyabinsk",
+    "1908 Siberian air burst; 2013 Russian air burst of a 20 m asteroid",
+    "Small impacts are common and can still be deadly"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "kb-c1",
+   "front": "Kuiper belt",
+   "back": "The ring of icy, comet-like bodies beyond Neptune (about 30 to 50 AU) that orbit in the same direction and near the same plane as the planets.",
+   "short": "Icy bodies beyond Neptune",
+   "src": "Textbook 12.4 p. 366; Figure 12.21"
+  },
+  {
+   "id": "kb-c2",
+   "front": "How many large Kuiper belt objects are there?",
+   "gloss": false,
+   "back": "At least 100,000 wider than 100 km; more than 2,500 were known before 2022.",
+   "short": "100,000+ over 100 km",
+   "src": "Textbook 12.4 p. 366"
+  },
+  {
+   "id": "kb-c3",
+   "front": "Pluto's orbit",
+   "back": "Average distance nearly 40 AU, period about 248 years; more elliptical and more tilted (17°) than any planet's.",
+   "short": "40 AU, 248 yr, stretched, tilted",
+   "src": "Textbook 12.4 p. 366"
+  },
+  {
+   "id": "kb-c4",
+   "front": "When is Pluto closer to the Sun than Neptune?",
+   "gloss": false,
+   "back": "For about 20 years of every 248-year orbit; most recently 1979 to 1999.",
+   "short": "20 of every 248 years",
+   "src": "Textbook 12.4 Figure 12.22"
+  },
+  {
+   "id": "kb-c5",
+   "front": "Orbital resonance (Pluto and Neptune)",
+   "gloss": false,
+   "back": "A stable 3:2 rhythm: Neptune orbits 3 times for every 2 Pluto orbits, so Neptune is always far away when Pluto nears its orbit.",
+   "short": "3 Neptune : 2 Pluto",
+   "src": "Textbook 12.4 p. 366"
+  },
+  {
+   "id": "kb-c6",
+   "front": "Charon",
+   "back": "Pluto's largest moon: more than half Pluto's diameter, about 1/8 its mass, orbiting only 20,000 km away; slightly less dense than Pluto.",
+   "short": "Huge, close, low-density moon",
+   "src": "Textbook 12.4 p. 366"
+  },
+  {
+   "id": "kb-c7",
+   "front": "Pluto's five moons",
+   "back": "Charon, Nix, Hydra, Kerberos and Styx.",
+   "short": "Charon + 4 small moons",
+   "src": "Textbook 12.4 Figure 12.23"
+  },
+  {
+   "id": "kb-c8",
+   "front": "Giant impact hypothesis for Pluto's moons",
+   "gloss": false,
+   "back": "A large comet blasted off Pluto's low-density outer layers; the debris ring re-formed into Charon and the small moons. It may also explain Pluto's sideways spin.",
+   "short": "Comet crash, ring, moons",
+   "src": "Textbook 12.4 pp. 366-367"
+  },
+  {
+   "id": "kb-c9",
+   "front": "Synchronous rotation (Pluto-Charon)",
+   "back": "Tides locked both bodies so Pluto's day equals Charon's 6.4-day orbit; each always shows the other the same face.",
+   "short": "Day = month = 6.4 days",
+   "src": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-c10",
+   "front": "How would Charon look from Pluto?",
+   "gloss": false,
+   "back": "Almost 10 times the angular size of our Moon, fixed in the sky (never rising or setting), going through phases every 6.4 days; visible from only one side.",
+   "short": "Huge, motionless, 6.4-day phases",
+   "src": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-c11",
+   "front": "How would the Sun look from Pluto?",
+   "gloss": false,
+   "back": "More than 1,000 times fainter than from Earth and no bigger than Jupiter looks in our sky.",
+   "short": "Tiny and over 1,000x fainter",
+   "src": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-c12",
+   "front": "How was Pluto's precise mass found?",
+   "gloss": false,
+   "back": "From Charon's orbit (after its 1978 discovery), using Newton's version of Kepler's third law.",
+   "short": "Charon's orbit + Kepler's 3rd law",
+   "src": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-c13",
+   "front": "Pluto-Charon mutual eclipses",
+   "back": "1985 to 1990 the two eclipsed each other every few days as seen from Earth (only about every 120 years), giving sizes, masses and densities: ice and rock.",
+   "short": "1985-90; sizes and densities",
+   "src": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-c14",
+   "front": "New Horizons",
+   "back": "Spacecraft launched January 2006 at record speed, boosted by Jupiter, that flew past Pluto in July 2015 and Arrokoth on 1 January 2019.",
+   "short": "Pluto 2015, Arrokoth 2019",
+   "src": "Textbook 12.4 pp. 367-368"
+  },
+  {
+   "id": "kb-c15",
+   "front": "Pluto's surface temperature",
+   "back": "About 40 K on average.",
+   "short": "About 40 K",
+   "src": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-c16",
+   "front": "Pluto's atmosphere",
+   "back": "Thin nitrogen, methane and carbon monoxide gas from vaporized surface ice; it changes with the seasons and leaks away from the exosphere.",
+   "short": "Thin N₂, CH₄, CO",
+   "src": "Textbook 12.4 pp. 367-368"
+  },
+  {
+   "id": "kb-c17",
+   "front": "Why does Pluto's atmosphere change with the seasons?",
+   "gloss": false,
+   "back": "Its large axis tilt and changing distance along its elliptical orbit change how much ice vaporizes or condenses.",
+   "short": "Tilt + changing distance",
+   "src": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-c18",
+   "front": "Tholins",
+   "back": "Haze particles made when ultraviolet light breaks methane and nitrogen molecules that then join into longer chains; they settle and probably make Pluto pale brown.",
+   "short": "UV-made haze; brown coating",
+   "src": "Textbook 12.4 p. 368"
+  },
+  {
+   "id": "kb-c19",
+   "front": "Tombaugh Regio",
+   "back": "The bright heart-shaped region on Pluto with wide smooth plains that may be flowing nitrogen-ice glaciers.",
+   "short": "Pluto's icy 'heart'",
+   "src": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-c20",
+   "front": "Why are Pluto's tall mountains made of water ice?",
+   "gloss": false,
+   "back": "Nitrogen ice is too soft to hold steep slopes; water ice is rigid and strong at Pluto's low temperature.",
+   "short": "Only water ice is strong enough",
+   "src": "Textbook 12.4 p. 368"
+  },
+  {
+   "id": "kb-c21",
+   "front": "Charon's surface features",
+   "back": "Vast smooth plains (perhaps from erupted water 'lava') and canyons as long and deep as the Grand Canyon.",
+   "short": "Smooth plains and big canyons",
+   "src": "Textbook 12.4 p. 368"
+  },
+  {
+   "id": "kb-c22",
+   "front": "Why is there no tidal heating on Pluto?",
+   "gloss": false,
+   "back": "Pluto and Charon are tidally locked, so the tides no longer flex them.",
+   "short": "Tidally locked",
+   "src": "Textbook 12.4 p. 368"
+  },
+  {
+   "id": "kb-c23",
+   "front": "Law of Constant Astonishment",
+   "back": "The nickname for the lesson that worlds can be strikingly alike in geology despite huge differences in make-up and temperature.",
+   "short": "Alike despite differences",
+   "src": "Textbook 12.4 p. 369"
+  },
+  {
+   "id": "kb-c24",
+   "front": "Triton",
+   "back": "Neptune's moon with a backward orbit: a captured Kuiper belt object about 15% wider than Pluto and Eris, with signs of geological activity.",
+   "short": "Captured, 15% bigger than Pluto",
+   "src": "Textbook 12.4 p. 368"
+  },
+  {
+   "id": "kb-c25",
+   "front": "Haumea",
+   "back": "A Kuiper belt dwarf planet that spins every 4 hours and has two small moons; four other objects may be pieces from the same giant impact.",
+   "short": "4-hour spin; impact family",
+   "src": "Textbook 12.4 p. 368"
+  },
+  {
+   "id": "kb-c26",
+   "front": "Arrokoth",
+   "back": "A 32 km Kuiper belt object visited by New Horizons in 2019: two disk-shaped icy bodies stuck together, with few craters.",
+   "short": "32 km 'snowman'",
+   "src": "Textbook 12.4 pp. 368-369"
+  },
+  {
+   "id": "kb-c27",
+   "front": "Why are Pluto-sized objects rare in the Kuiper belt?",
+   "gloss": false,
+   "back": "Building blocks were scarce out there, so accretion slowed and often stopped.",
+   "short": "Too few building blocks",
+   "src": "Textbook 12.4 p. 368"
+  },
+  {
+   "id": "kb-c28",
+   "front": "What are Kuiper belt objects made of?",
+   "gloss": false,
+   "back": "Comet-like mixtures of ice and rock, shown by densities (from moons) and spectra.",
+   "short": "Ice and rock",
+   "src": "Textbook 12.4 p. 369"
+  },
+  {
+   "id": "kb-c29",
+   "front": "Planet 9",
+   "back": "A hypothesized unseen planet, at least several Earth masses and beyond the Kuiper belt, proposed to explain patterns in Kuiper belt orbits; not found as of 2022.",
+   "short": "Proposed, not found",
+   "src": "Textbook 12.4 p. 369"
+  },
+  {
+   "id": "kb-c30",
+   "front": "Planetary migration",
+   "back": "Movement of planets to closer or more distant orbits after they formed; models say Jupiter moved inward and Saturn, Uranus and Neptune outward.",
+   "short": "Planets shifting orbits",
+   "src": "Textbook 12.4 p. 370"
+  },
+  {
+   "id": "kb-c31",
+   "front": "How much of the Kuiper belt's original mass is left?",
+   "gloss": false,
+   "back": "Less than 1%: more than 99% was lost to collisions with planets or scattering into space.",
+   "short": "Under 1%",
+   "src": "Textbook 12.4 p. 370"
+  },
+  {
+   "id": "kb-c32",
+   "front": "Comet Shoemaker-Levy 9",
+   "back": "A comet torn into a string of pieces by Jupiter's tides that crashed into Jupiter in 1994, each piece with about a million hydrogen bombs' energy.",
+   "short": "Hit Jupiter in 1994",
+   "src": "Textbook 12.5 p. 370"
+  },
+  {
+   "id": "kb-c33",
+   "front": "Meteor Crater",
+   "back": "An Arizona crater a bit over 1 km wide made about 50,000 years ago by a 50 m metal asteroid (about 20 megatons).",
+   "short": "50 m metal asteroid, 50,000 yr ago",
+   "src": "Textbook 12.5 p. 370"
+  },
+  {
+   "id": "kb-c34",
+   "front": "Iridium layer",
+   "back": "A thin sediment layer from 66 million years ago, found worldwide, rich in iridium, a metal rare at Earth's surface but common in meteorites.",
+   "short": "Impact signature at 66 Myr",
+   "src": "Textbook 12.5 p. 370"
+  },
+  {
+   "id": "kb-c35",
+   "front": "Mass extinction",
+   "back": "The rapid extinction of a large fraction of all living species.",
+   "short": "Rapid loss of many species",
+   "src": "Textbook 12.5 p. 370"
+  },
+  {
+   "id": "kb-c36",
+   "front": "Shocked quartz",
+   "back": "Quartz crystals with a structure that shows they went through the high temperature and pressure of an impact.",
+   "short": "Impact-squeezed quartz",
+   "src": "Textbook 12.5 p. 371"
+  },
+  {
+   "id": "kb-c37",
+   "front": "Tektites",
+   "back": "Small spheres of rock formed when molten droplets splashed into the air by an impact cooled and hardened.",
+   "short": "Rock droplets from impacts",
+   "src": "Textbook 12.5 p. 371"
+  },
+  {
+   "id": "kb-c38",
+   "front": "Chicxulub crater",
+   "back": "The buried 200 km crater on the coast of Mexico's Yucatán Peninsula, 66 million years old, made by a 10-20 km asteroid or comet.",
+   "short": "Dinosaur-impact crater",
+   "src": "Textbook 12.5 p. 371"
+  },
+  {
+   "id": "kb-c39",
+   "front": "Tunguska event",
+   "back": "A 1908 mid-air explosion of a small asteroid over Siberia with the energy of several atomic bombs; similar objects hit about every couple of hundred years.",
+   "short": "1908 Siberian air burst",
+   "src": "Textbook 12.5 p. 373"
+  },
+  {
+   "id": "kb-c40",
+   "front": "DART",
+   "back": "Double Asteroid Redirection Test: in 2022 it crashed into the small asteroid Dimorphos and slightly changed its orbit around Didymos.",
+   "short": "2022 asteroid-nudging test",
+   "src": "Textbook 12.5 p. 374"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "kb-1",
+   "q": "Compared with the orbits of the eight planets, Pluto's orbit is:",
+   "options": [
+    "More elliptical and more tilted than any of them",
+    "Nearly circular and in the same plane as Neptune's",
+    "Elliptical but lying exactly in the plane of the planets",
+    "Tilted but almost perfectly circular",
+    "Backward (opposite to the planets' direction)"
+   ],
+   "answer": 0,
+   "why": "Pluto's orbit is more elliptical and more inclined to the ecliptic than that of any of the eight planets.",
+   "source": "Textbook 12.4 p. 366, Figure 12.22",
+   "img": {
+    "src": "img/kuiper/gen_pluto_tilt.webp",
+    "alt": "Side view: the planets' orbits lie in one flat line through the Sun, while Pluto's orbit is a line tipped 17 degrees from it. A note says Pluto averages nearly 40 AU, orbits about every 248 years and is more elliptical and tilted than any planet."
+   }
+  },
+  {
+   "id": "kb-2",
+   "q": "Pluto sometimes comes closer to the Sun than Neptune does. Why can the two never collide?",
+   "options": [
+    "Neptune's magnetic field pushes Pluto aside",
+    "Charon's gravity pulls Pluto away whenever Neptune approaches",
+    "Pluto's orbit never really comes inside Neptune's orbit",
+    "Neptune orbits exactly 3 times for every 2 Pluto orbits, so Neptune is always far away when Pluto nears its orbit",
+    "Pluto and Neptune orbit in opposite directions, so they never meet"
+   ],
+   "answer": 3,
+   "why": "The stable 3:2 orbital resonance keeps Neptune a safe distance away whenever Pluto approaches Neptune's orbit.",
+   "source": "Textbook 12.4 p. 366",
+   "img": {
+    "src": "img/kuiper/gen_resonance.webp",
+    "alt": "Animation: Neptune circles the Sun three times while Pluto travels twice around its oval orbit, with lap counters for each. Whenever Pluto swings closest to the Sun, Neptune is a quarter of a lap away. The last frame notes that Neptune is always elsewhere when Pluto comes close."
+   }
+  },
+  {
+   "id": "kb-3",
+   "q": "Pluto takes about 248 years to orbit the Sun, and Neptune orbits 3 times for every 2 Pluto orbits. Neptune's orbital period is therefore about:",
+   "options": [
+    "83 years",
+    "165 years",
+    "124 years",
+    "372 years",
+    "496 years"
+   ],
+   "answer": 1,
+   "why": "Two Pluto orbits take about 2 x 248 = 496 years, and Neptune completes 3 orbits in that time: 496 / 3 is about 165 years.",
+   "source": "Textbook 12.4 p. 366 (proportional reasoning)"
+  },
+  {
+   "id": "kb-4",
+   "q": "Which statement about Charon is NOT correct?",
+   "options": [
+    "It orbits only about 20,000 km from Pluto",
+    "It is more than half of Pluto's diameter",
+    "It has about 1/8 of Pluto's mass",
+    "It is slightly lower in density than Pluto",
+    "It orbits farther from Pluto than our Moon does from Earth"
+   ],
+   "answer": 4,
+   "why": "Charon orbits only about 20,000 km from Pluto, compared with about 400,000 km for our Moon, so it is much closer, not farther.",
+   "source": "Textbook 12.4 p. 366",
+   "img": {
+    "src": "img/kuiper/gen_pc_em.webp",
+    "alt": "Bars comparing Charon with our Moon. Mass compared with its world: Charon 1/8, Moon 1/80. Distance from its world: Charon 20,000 km, Moon 400,000 km. Charon is 10 times heavier for its planet and 20 times closer."
+   }
+  },
+  {
+   "id": "kb-5",
+   "q": "Besides forming Pluto's moons, a giant impact on Pluto might also explain:",
+   "options": [
+    "Why Pluto's surface is about 40 K",
+    "Why Pluto is in a 3:2 resonance with Neptune",
+    "Why Pluto rotates almost on its side",
+    "Why Pluto's air contains nitrogen",
+    "Why Pluto takes 248 years to orbit the Sun"
+   ],
+   "answer": 2,
+   "why": "The text says the same impact that may have made Charon and the small moons may also explain Pluto's nearly sideways rotation.",
+   "source": "Textbook 12.4 pp. 366-367",
+   "img": {
+    "src": "img/kuiper/gen_giant_impact.webp",
+    "alt": "Animation on a dark background: a large comet strikes Pluto, a flash, then debris spreads into a ring that gathers into Charon. Steps listed: the comet blasts off Pluto's low-density outer layers, the debris forms a ring, the ring gathers into Charon and the small moons; it may also explain Pluto's sideways spin."
+   }
+  },
+  {
+   "id": "kb-6",
+   "q": "You stand on the side of Pluto that faces Charon and watch for several Earth days. What would you see?",
+   "options": [
+    "Charon hanging motionless in the sky, going through its phases every 6.4 days",
+    "Charon rising and setting once every 6.4 days",
+    "Charon rising in the west and setting in the east every day",
+    "Charon as a small dot about the size our Moon looks from Earth",
+    "Charon only during a few hours of each Pluto day"
+   ],
+   "answer": 0,
+   "why": "Because Pluto and Charon rotate synchronously, Charon stays fixed in the sky over one side of Pluto, about 10 times the Moon's angular size, cycling through phases every 6.4 days.",
+   "source": "Textbook 12.4 p. 367",
+   "img": {
+    "src": "img/kuiper/gen_pluto_sky.webp",
+    "alt": "A starry black sky above a pale brown icy horizon. A huge half-lit Charon fills much of the sky next to a tiny dot showing how big our Moon looks from Earth. The Sun is just a small bright point. Text: Charon goes through its phases every 6.4 days; the Sun is over 1,000 times fainter than from Earth."
+   }
+  },
+  {
+   "id": "kb-7",
+   "q": "What first allowed astronomers to calculate Pluto's precise mass?",
+   "options": [
+    "The New Horizons flyby in 2015",
+    "Timing Pluto's 248-year orbit around the Sun",
+    "Measuring Pluto's brightness in 1930 discovery images",
+    "Observing Charon's orbit after its 1978 discovery and applying Newton's version of Kepler's third law",
+    "Measuring Pluto's surface temperature of 40 K"
+   ],
+   "answer": 3,
+   "why": "A moon's orbital period and distance reveal the mass it orbits. Pluto's own orbit around the Sun depends on the Sun's mass, not Pluto's.",
+   "source": "Textbook 12.4 p. 367",
+   "img": {
+    "src": "img/kuiper/gen_kepler_mass.webp",
+    "alt": "Three boxes joined by arrows: watch Charon's orbit (period and distance), apply Newton's version of Kepler's third law, get Pluto's mass. A note says the new mass showed Pluto differs from both the terrestrial and the jovian planets."
+   }
+  },
+  {
+   "id": "kb-8",
+   "q": "As Pluto moves toward the far end of its elliptical orbit, what would you expect to happen to its atmosphere?",
+   "options": [
+    "It becomes thicker because the Sun's gravity pulls on it less",
+    "More gas condenses back onto the surface, so the atmosphere thins",
+    "Nothing, because the atmosphere does not depend on distance",
+    "It turns entirely to methane",
+    "It is blown away completely by Neptune's gravity"
+   ],
+   "answer": 1,
+   "why": "The amount of gas changes with condensation and vaporization caused by Pluto's tilt and changing distance from the Sun. Farther away it is colder, so more gas freezes out.",
+   "source": "Textbook 12.4 p. 367",
+   "img": {
+    "src": "img/kuiper/gen_seasons.webp",
+    "alt": "Pluto's oval orbit around the Sun. On the near side Pluto has a wide hazy halo: more ice turns to gas and the atmosphere is thicker. On the far side the halo is thin: gas freezes back. A note says methane and carbon monoxide can make the air more than 30 degrees Celsius warmer than the ground."
+   }
+  },
+  {
+   "id": "kb-9",
+   "q": "When Pluto's atmosphere is thickest it is more than 30 °C warmer than the surface. Which gases does the text credit for this warming?",
+   "options": [
+    "Hydrogen and helium",
+    "Nitrogen and oxygen",
+    "Nitrogen alone",
+    "Carbon dioxide and water vapour",
+    "Methane and carbon monoxide"
+   ],
+   "answer": 4,
+   "why": "The greenhouse gases methane and carbon monoxide warm the air. Nitrogen is the main gas but is not named as the warming gas.",
+   "source": "Textbook 12.4 p. 367"
+  },
+  {
+   "id": "kb-10",
+   "q": "Which is NOT considered a likely source of the energy behind Pluto's geological activity?",
+   "options": [
+    "Changes in the ice's thickness along Pluto's elliptical orbit",
+    "A small amount of heat from radioactive decay",
+    "Strong tidal heating caused by Charon",
+    "Nitrogen ice that stays soft enough to flow even at 40 K",
+    "Internal heat that might even melt ice below the surface"
+   ],
+   "answer": 2,
+   "why": "Pluto and Charon are tidally locked, so there is no tidal heating. The other ideas are all possibilities the text discusses.",
+   "source": "Textbook 12.4 p. 368",
+   "img": {
+    "src": "img/kuiper/gen_heat_sources.webp",
+    "alt": "Three cards. Radioactive decay: only a little heat, tagged small. Tidal heating: none, because Pluto and Charon are tidally locked, tagged none. Soft nitrogen ice: 40 K is not cold enough to make it rigid, so a little heat or changing ice thickness may be enough, tagged likely. Below: maybe even a hidden ocean."
+   }
+  },
+  {
+   "id": "kb-11",
+   "q": "Pluto's pale brown colour most likely comes from:",
+   "options": [
+    "Haze particles (tholins) made when ultraviolet light breaks up methane and nitrogen, which then settle on the surface",
+    "Rust (iron oxide) dust like on Mars",
+    "Dust blown over from Charon's canyons",
+    "Sunlight reddened by passing through Neptune's atmosphere",
+    "Carbon dioxide frost"
+   ],
+   "answer": 0,
+   "why": "UV breaks methane and nitrogen molecules, which react into longer chains and haze particles that drift down and coat the surface.",
+   "source": "Textbook 12.4 p. 368",
+   "img": {
+    "src": "img/kuiper/gen_tholins.webp",
+    "alt": "Four numbered boxes: ultraviolet sunlight breaks methane and nitrogen molecules; the pieces join into longer chains; these haze particles (tholins) float and scatter sunlight; they drift down and coat the surface brown, more near the equator. New Horizons saw the haze glow when looking back toward the Sun."
+   }
+  },
+  {
+   "id": "kb-12",
+   "q": "Neptune's moon Triton is about 15% larger in diameter than Pluto and Eris. What does this suggest about the Kuiper belt?",
+   "options": [
+    "Its largest objects are always found inside Neptune's orbit",
+    "Its objects all formed as moons of Neptune",
+    "It is made mainly of rock rather than ice",
+    "It may once have contained more and larger objects than it does today",
+    "It formed after the jovian planets were already in place"
+   ],
+   "answer": 3,
+   "why": "Triton is almost certainly a captured Kuiper belt object. Its large size hints that the belt once held more and larger bodies.",
+   "source": "Textbook 12.4 p. 368",
+   "img": {
+    "src": "img/kuiper/gen_triton_capture.webp",
+    "alt": "Animation: a small icy body flies in from deep space and is caught into orbit around Neptune, circling the opposite way to Neptune's spin. A box: Triton is about 15% wider than Pluto and Eris, so the Kuiper belt may once have held bigger objects, and it shows signs of geological activity."
+   }
+  },
+  {
+   "id": "kb-13",
+   "q": "Which observation is the strongest evidence that giant impacts were common in the Kuiper belt?",
+   "options": [
+    "Arrokoth has very few craters",
+    "Haumea spins once every 4 hours, has two moons, and shares orbits and spectra with four other objects",
+    "Many Kuiper belt objects are in resonance with Neptune",
+    "The Kuiper belt lies close to the plane of the planets",
+    "No objects have been seen directly in the Oort cloud"
+   ],
+   "answer": 1,
+   "why": "Haumea's fast spin and moons are best explained by a giant impact, and the four look-alike objects may be fragments. Together with Pluto's moons, this suggests giant impacts were common.",
+   "source": "Textbook 12.4 p. 368",
+   "img": {
+    "src": "img/kuiper/gen_haumea.webp",
+    "alt": "Animation on a dark background: a stretched, egg-shaped Haumea tumbles quickly while two small moons circle it. Box: it spins once every 4 hours, has two small moons, and four other Kuiper belt objects with matching orbits and spectra are probably pieces from the same giant impact."
+   }
+  },
+  {
+   "id": "kb-14",
+   "q": "If the Kuiper belt were crowded with small bodies, how would Arrokoth probably look different?",
+   "options": [
+    "It would have split back into two separate pieces long ago",
+    "It would be perfectly round",
+    "It would have a thick atmosphere",
+    "It would be made of rock instead of ice",
+    "It would be covered with many more impact craters"
+   ],
+   "answer": 4,
+   "why": "Arrokoth's few craters show the region is too spread out for many collisions. A crowded region would leave a heavily cratered surface.",
+   "source": "Textbook 12.4 pp. 368-369",
+   "img": {
+    "src": "img/kuiper/gen_arrokoth.webp",
+    "alt": "Animation: two reddish, flattened icy lumps drift gently together and stick, forming a snowman shape about 32 km long. Box: built from two disk-shaped objects that formed separately and joined in a low-speed collision; few craters show the region is quite empty."
+   }
+  },
+  {
+   "id": "kb-15",
+   "q": "Astronomers can calculate the density of some Kuiper belt objects, such as Eris, mainly because:",
+   "options": [
+    "Their colours directly reveal their density",
+    "Spacecraft have landed on all of them",
+    "They have known moons, whose orbits give the objects' masses",
+    "They pass in front of the Sun",
+    "They are in resonance with Neptune"
+   ],
+   "answer": 2,
+   "why": "A moon's orbit gives the object's mass; combined with its size, that gives density. Results, with spectra, show ice-and-rock compositions.",
+   "source": "Textbook 12.4 p. 369",
+   "img": {
+    "src": "img/kuiper/gen_composition.webp",
+    "alt": "Two panels. Moons give masses: a body with a small moon on an orbit, so orbit gives mass and with size gives density. Spectra give make-up: a rainbow strip with dark lines revealing ices. Result: comet-like mixtures of ice and rock; Pluto and Eris are in effect very large comets."
+   }
+  },
+  {
+   "id": "kb-16",
+   "q": "Which statement about 'Planet 9' is accurate?",
+   "options": [
+    "It is a hypothesized planet, probably several times Earth's mass, proposed to explain patterns in Kuiper belt orbits, and not found as of 2022",
+    "It was discovered by New Horizons in 2019",
+    "It is another name for Eris",
+    "It is the cause of Pluto's 3:2 resonance with Neptune",
+    "It is a small icy body inside Neptune's orbit"
+   ],
+   "answer": 0,
+   "why": "Planet 9 is only a hypothesis; there are alternative explanations, and the extensive search had not found it as of 2022.",
+   "source": "Textbook 12.4 p. 369",
+   "img": {
+    "src": "img/kuiper/gen_planet9.webp",
+    "alt": "The Sun with several long, distant orbits that all point the same way, and a dashed large orbit with a purple circle labelled Planet 9 with a question mark. Box: an unseen planet of at least several Earth masses might explain the pattern, but other explanations exist and none was found as of 2022."
+   }
+  },
+  {
+   "id": "kb-17",
+   "q": "According to current models, how did the jovian planets move after they formed?",
+   "options": [
+    "Jupiter moved outward; the other three moved inward",
+    "All four moved inward toward the Sun",
+    "All four stayed exactly where they formed",
+    "Jupiter moved somewhat inward; Saturn, Uranus and Neptune moved outward",
+    "Only Neptune moved, and it moved inward"
+   ],
+   "answer": 3,
+   "why": "Exchanges of orbital energy moved Jupiter somewhat inward and Saturn, Uranus and Neptune outward; the resulting resonances stirred the Kuiper belt.",
+   "source": "Textbook 12.4 p. 370",
+   "img": {
+    "src": "img/kuiper/gen_migration.webp",
+    "alt": "Animation: Jupiter, Saturn, Uranus and Neptune start bunched near the Sun, then Jupiter shifts slightly inward while the other three spread outward; the cloud of Kuiper belt dots is stirred and most of it scatters away. Note: Uranus and Neptune could not have formed where they are now."
+   }
+  },
+  {
+   "id": "kb-18",
+   "q": "Why do models say Uranus and Neptune could NOT have formed in their present orbits?",
+   "options": [
+    "It was too hot there for ice to form",
+    "The solar nebula was too thin at that distance to build such large planets",
+    "The Sun's gravity was too strong there",
+    "The Kuiper belt was in the way",
+    "Jupiter's gravity would have destroyed them"
+   ],
+   "answer": 1,
+   "why": "The density of the solar nebula that far out was too low for such large planets to accrete, so they probably formed closer in and migrated outward.",
+   "source": "Textbook 12.4 p. 370",
+   "img": {
+    "src": "img/kuiper/gen_nebula.webp",
+    "alt": "Three zones by distance from the Sun: rocky planetesimals near the Sun, the zone where the jovian planets form and fling many icy planetesimals away, and beyond Neptune the Kuiper belt, where icy planetesimals stayed in the same plane and direction as the planets."
+   }
+  },
+  {
+   "id": "kb-19",
+   "q": "Iridium in the 66-million-year-old sediment layer points to an impact because iridium is:",
+   "options": [
+    "Created by lightning during forest fires",
+    "Made only by volcanoes",
+    "Produced when dinosaurs decay",
+    "Common in seawater but rare in space",
+    "Rare at Earth's surface (it sank to the core) but common in meteorites"
+   ],
+   "answer": 4,
+   "why": "Iridium sank to Earth's core during differentiation, so it is rare at the surface, but meteorites contain plenty of it.",
+   "source": "Textbook 12.5 p. 370",
+   "img": {
+    "src": "img/kuiper/gen_iridium_layer.webp",
+    "alt": "A column of rock layers: older rock with a dinosaur bone at the bottom, a thin dark layer rich in iridium and soot dated to 66 million years ago, and younger rock with no dinosaur fossils above. Box: iridium is rare at Earth's surface because it sank to the core, but common in meteorites."
+   }
+  },
+  {
+   "id": "kb-20",
+   "q": "Which of these is NOT evidence found in the sediment layer marking the dinosaur extinction?",
+   "options": [
+    "Tektites (small rock droplets)",
+    "Shocked quartz",
+    "Dinosaur fossils in the rock just above the layer",
+    "Soot from widespread fires",
+    "Extra osmium, gold and platinum"
+   ],
+   "answer": 2,
+   "why": "Dinosaur fossils appear only BELOW the iridium-rich layer. The other four are listed as clues pointing to an impact.",
+   "source": "Textbook 12.5 pp. 370-371, Figure 12.29",
+   "img": {
+    "src": "img/kuiper/gen_clues.webp",
+    "alt": "Four numbered cards: meteorite metals (extra osmium, gold and platinum); shocked quartz reshaped by impact heat and pressure; tektites, rock droplets that cooled in the air; soot from world-wide fires lit by falling hot debris."
+   }
+  },
+  {
+   "id": "kb-21",
+   "q": "A crater is roughly 10 times the size of the object that made it. About how wide was the impactor that made the 200 km Chicxulub crater?",
+   "options": [
+    "About 10 to 20 km",
+    "About 50 m",
+    "About 1 km",
+    "About 200 km",
+    "About 2,000 km"
+   ],
+   "answer": 0,
+   "why": "Its size indicates an asteroid or comet about 10 to 20 km across, consistent with the 'crater about 10 times larger' rule.",
+   "source": "Textbook 12.5 p. 371; Figure 12.35 label",
+   "img": {
+    "src": "img/kuiper/gen_chicxulub.webp",
+    "alt": "Simple map of the Gulf of Mexico and the Yucatán Peninsula with red rings on the coast marking a buried crater about 200 km across, half on land and half under water. Facts: seen in gravity and magnetic data, not ordinary photos; made by an object 10 to 20 km across."
+   }
+  },
+  {
+   "id": "kb-22",
+   "q": "In the weeks and months right after the Chicxulub impact, what most likely stopped photosynthesis?",
+   "options": [
+    "The tsunami covering all the land",
+    "Extra carbon dioxide heating the planet",
+    "Iridium poisoning the plants",
+    "Dust and smoke in the atmosphere blocking sunlight",
+    "Ozone gas from the impact"
+   ],
+   "answer": 3,
+   "why": "Dust and smoke blocked sunlight for weeks or months, causing a global winter and stopping photosynthesis for up to a year. Carbon dioxide warming came later.",
+   "source": "Textbook 12.5 p. 372",
+   "img": {
+    "src": "img/kuiper/gen_climate.webp",
+    "alt": "Sketch of temperature over time after the impact: a deep cold dip lasting weeks to months as dust and smoke block sunlight and photosynthesis stops for up to a year, then a long warm hump lasting decades or longer as extra carbon dioxide strengthens the greenhouse effect. Acid rain and poisoned oceans noted."
+   }
+  },
+  {
+   "id": "kb-23",
+   "q": "Compared with the dinosaur extinction, the 'great dying' about 252 million years ago:",
+   "options": [
+    "Killed fewer species and left a thicker iridium layer",
+    "Killed a larger fraction of species but is not tied to an impact by a similar iridium layer",
+    "Was caused by Comet Shoemaker-Levy 9",
+    "Is the only mass extinction ever recorded",
+    "Killed only sea life"
+   ],
+   "answer": 1,
+   "why": "The end-Permian event killed close to 90% of species, worse than the dinosaur event, but none of the other mass extinctions shows a similar iridium layer.",
+   "source": "Textbook 12.5 p. 373",
+   "img": {
+    "src": "img/kuiper/gen_extinctions.webp",
+    "alt": "Timeline of the last 500 million years with five mass extinctions: the biggest, the great dying 252 million years ago, killed close to 90% of species; the dinosaur event 66 million years ago is marked with an impact and iridium layer. No other one shows a similar iridium layer."
+   }
+  },
+  {
+   "id": "kb-24",
+   "q": "Why was the 2013 Chelyabinsk event described as lucky?",
+   "options": [
+    "It broke into harmless dust before entering the atmosphere",
+    "It was spotted years ahead, so the city was evacuated",
+    "It landed in an empty desert",
+    "It was too small to release any energy",
+    "Its shallow path made it explode high in the air; a steeper path would have caused a lower, more damaging blast"
+   ],
+   "answer": 4,
+   "why": "The asteroid was undetected beforehand. Its fairly shallow trajectory meant the 500-kiloton detonation happened high up; a more vertical path would have meant much greater damage.",
+   "source": "Textbook 12.5 p. 373",
+   "img": {
+    "src": "img/kuiper/gen_chelyabinsk.webp",
+    "alt": "A red arrow comes in at a shallow angle and bursts high above a small city; a grey dashed arrow shows a steeper path bursting lower, labelled much more damage. Box: about 20 m, 10,000 tons, over 60,000 km/h; blast like a 500-kiloton bomb; more than 1,000 people hurt, mostly by broken glass."
+   }
+  },
+  {
+   "id": "kb-25",
+   "q": "Objects a few metres across enter Earth's atmosphere about once a week. About how many enter in 10 years?",
+   "options": [
+    "About 10",
+    "About 50",
+    "About 500",
+    "About 5,000",
+    "About 52,000"
+   ],
+   "answer": 2,
+   "why": "About 52 weeks a year x 10 years = about 520, so roughly 500.",
+   "source": "Textbook 12.5 p. 373 (proportional reasoning)",
+   "img": {
+    "src": "img/kuiper/gen_frequency.webp",
+    "alt": "Graph of impactor size (1 m to 100 km, log scale) against typical time between impacts, rising steadily. Marked points: objects a few metres across about every week, Tunguska-sized every couple of hundred years, dinosaur-killer size every tens of millions of years. The crater is about 10 times the impactor's size."
+   }
+  },
+  {
+   "id": "kb-26",
+   "q": "If Tunguska-sized objects strike Earth about once every couple of hundred years, the chance of one in any given year is roughly:",
+   "options": [
+    "About 0.5%",
+    "About 50%",
+    "About 5%",
+    "About 0.005%",
+    "Zero, until 200 years have passed"
+   ],
+   "answer": 0,
+   "why": "Once per 200 years means about 1/200 = 0.5% each year. Impacts do not follow a schedule; the average only gives the odds.",
+   "source": "Textbook 12.5 p. 373 (proportional reasoning)",
+   "img": {
+    "src": "img/kuiper/gen_tunguska.webp",
+    "alt": "A bright burst high above a green forest with lines raining down, and trees on the ground knocked flat pointing away from the spot below the blast. Box: energy of several atomic bombs; over a major city it would have been the worst natural disaster in human history."
+   }
+  },
+  {
+   "id": "kb-27",
+   "q": "Which statement about the search for potentially hazardous asteroids (as of 2022) is correct?",
+   "options": [
+    "Comets are easier to spot early than asteroids",
+    "All of them had been found and none threatens Earth",
+    "About 30% of the large ones and 90% of the small ones had been found",
+    "About 90% of those larger than 1 km had been found, but only about 30% of the smaller dangerous ones",
+    "There are only about 50 of them"
+   ],
+   "answer": 3,
+   "why": "Astronomers estimate about 5,000 potentially hazardous asteroids; about 90% of those over 1 km had been found, but only about 30% of the smaller ones.",
+   "source": "Textbook 12.5 p. 374",
+   "img": {
+    "src": "img/kuiper/gen_pha.webp",
+    "alt": "Two progress bars for the estimated 5,000 potentially hazardous asteroids: about 90% of those larger than 1 km had been found by 2022, but only about 30% of the smaller dangerous ones. Note: comets from the outer solar system might give only months or years of warning."
+   }
+  },
+  {
+   "id": "kb-28",
+   "q": "What did the DART mission do in 2022?",
+   "options": [
+    "Blew up an asteroid that was about to hit Earth",
+    "Crashed into the smaller of a pair of asteroids and slightly changed its orbit around its companion",
+    "Landed on Pluto and returned samples",
+    "Pushed Comet Shoemaker-Levy 9 into Jupiter",
+    "Moved the asteroid Didymos out of the asteroid belt"
+   ],
+   "answer": 1,
+   "why": "DART hit Dimorphos, which orbits Didymos. Neither posed a threat; the small change in Dimorphos's orbit gives data for future deflection.",
+   "source": "Textbook 12.5 p. 374, Figure 12.36",
+   "img": {
+    "src": "img/kuiper/gen_dart.webp",
+    "alt": "Animation on a dark background: a small moon, Dimorphos, circles the larger asteroid Didymos; a spacecraft flies in and crashes into it with a flash, and afterward the moon follows a slightly smaller orange orbit. Note: neither asteroid threatened Earth."
+   }
+  },
+  {
+   "id": "kb-29",
+   "q": "If Jupiter did not exist, what does the text suggest might be different?",
+   "options": [
+    "Nothing, because Jupiter has no effect on small bodies",
+    "Both asteroid and comet threats would vanish",
+    "Both threats would be much greater",
+    "The asteroid threat would be greater, and the comet threat smaller",
+    "The asteroid threat might be smaller, but the comet threat might be greater"
+   ],
+   "answer": 4,
+   "why": "Without Jupiter the asteroid belt's material might have formed a planet (fewer asteroids), but comets that Jupiter flung to the Oort cloud might have stayed dangerously close.",
+   "source": "Textbook 12.5 p. 375",
+   "img": {
+    "src": "img/kuiper/gen_whatif.webp",
+    "alt": "Two boxes for a solar system without Jupiter: the asteroid threat might be much smaller, because the belt's material might have formed a planet; the comet threat might be much greater, because Jupiter threw out the most comets. Below: no one knows whether that has been good or bad for life."
+   }
+  },
+  {
+   "id": "kb-30",
+   "q": "Which statement best describes the link between the jovian planets and impacts on Earth?",
+   "options": [
+    "The jovian planets only affect the Oort cloud, not the asteroid belt",
+    "The jovian planets shield Earth so well that no impacts have happened since the heavy bombardment",
+    "Every impact since the heavy bombardment was, in some sense, sent our way by the gravity of Jupiter or another jovian planet",
+    "Impacts on Earth are caused by the planets' positions among the stars, as in astrology",
+    "Only Neptune affects impact rates"
+   ],
+   "answer": 2,
+   "why": "The jovian planets shaped the asteroid belt, Kuiper belt and Oort cloud, and their gravity continues to nudge objects onto collision courses.",
+   "source": "Textbook 12.5 p. 375, Figure 12.37",
+   "img": {
+    "src": "img/kuiper/gen_connections.webp",
+    "alt": "Flow diagram: the jovian planets, especially Jupiter, point to three boxes, the asteroid belt (stirred so no planet formed), the Oort cloud (icy bodies flung far out) and the Kuiper belt (shaped by migration and resonances). Dashed arrows from all three lead to Earth: occasional impacts."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "Out from the Sun",
+   "prompt": "Order these by distance from the Sun, nearest at the bottom.",
+   "why": "Neptune orbits at 30 AU, Pluto averages nearly 40 AU, the Kuiper belt's outer edge is about 50 AU, and the Oort cloud reaches out to about 50,000 AU.",
+   "topLabel": "Farthest",
+   "bottomLabel": "Nearest the Sun",
+   "layers": [
+    {
+     "name": "Neptune's orbit (30 AU)",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Pluto's average distance",
+     "color": "#a16207"
+    },
+    {
+     "name": "Outer edge of the Kuiper belt",
+     "color": "#0e7490"
+    },
+    {
+     "name": "Outer Oort cloud",
+     "color": "#4338ca"
+    }
+   ]
+  },
+  {
+   "title": "Icy worlds by size",
+   "prompt": "Order these by diameter, smallest at the bottom.",
+   "why": "Arrokoth is only about 32 km long, Charon is just over half Pluto's diameter, and Triton is about 15% wider than Pluto.",
+   "topLabel": "Largest",
+   "bottomLabel": "Smallest",
+   "layers": [
+    {
+     "name": "Arrokoth",
+     "color": "#b45309"
+    },
+    {
+     "name": "Charon",
+     "color": "#6b7280"
+    },
+    {
+     "name": "Pluto",
+     "color": "#a16207"
+    },
+    {
+     "name": "Triton",
+     "color": "#0e7490"
+    }
+   ]
+  },
+  {
+   "title": "Exploring Pluto",
+   "prompt": "Put these events in time order, earliest at the bottom.",
+   "why": "Charon was found in 1978, the mutual eclipses ran 1985-1990, New Horizons launched in 2006, passed Jupiter in 2007, flew past Pluto in 2015 and reached Arrokoth on 1 January 2019.",
+   "topLabel": "Latest",
+   "bottomLabel": "Earliest",
+   "layers": [
+    {
+     "name": "Charon discovered",
+     "color": "#6b7280"
+    },
+    {
+     "name": "Pluto-Charon mutual eclipses",
+     "color": "#7c3aed"
+    },
+    {
+     "name": "New Horizons launched",
+     "color": "#2563eb"
+    },
+    {
+     "name": "Jupiter gravity boost",
+     "color": "#b45309"
+    },
+    {
+     "name": "Pluto flyby",
+     "color": "#a16207"
+    },
+    {
+     "name": "Arrokoth flyby",
+     "color": "#0e7490"
+    }
+   ]
+  },
+  {
+   "title": "After the dinosaur impact",
+   "prompt": "Put the effects in the order they happened, first at the bottom.",
+   "why": "Within hours: seismic waves and tsunamis, then fires from falling hot debris. Weeks to months: dust and smoke caused a global winter and stopped photosynthesis. Later, extra carbon dioxide brought decades of warming, and over millions of years mammals diversified.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Seismic waves and tsunami",
+     "color": "#1d4ed8"
+    },
+    {
+     "name": "Fires lit by falling hot debris",
+     "color": "#dc2626"
+    },
+    {
+     "name": "Dust and smoke cause a global winter",
+     "color": "#475569"
+    },
+    {
+     "name": "Carbon dioxide warms the climate",
+     "color": "#b91c1c"
+    },
+    {
+     "name": "Mammals diversify",
+     "color": "#15803d"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "Pluto or Charon?",
+   "prompt": "Sort each fact: does it describe Pluto, Charon or both?",
+   "buckets": [
+    "Pluto",
+    "Charon",
+    "Both"
+   ],
+   "items": [
+    {
+     "text": "Heart-shaped Tombaugh Regio",
+     "b": 0
+    },
+    {
+     "text": "Thin nitrogen-methane atmosphere",
+     "b": 0
+    },
+    {
+     "text": "Water-ice mountains as tall as the Rockies",
+     "b": 0
+    },
+    {
+     "text": "Rotates almost on its side",
+     "b": 0
+    },
+    {
+     "text": "Canyons like the Grand Canyon",
+     "b": 1
+    },
+    {
+     "text": "About 1/8 the mass of its partner",
+     "b": 1
+    },
+    {
+     "text": "Slightly lower density",
+     "b": 1
+    },
+    {
+     "text": "Mixture of ice and rock",
+     "b": 2
+    },
+    {
+     "text": "Rotates once every 6.4 days",
+     "b": 2
+    },
+    {
+     "text": "Smooth plains from recent activity",
+     "b": 2
+    }
+   ],
+   "why": "Pluto has the heart, the atmosphere, the water-ice mountains and the sideways spin. Charon has the big canyons, 1/8 of Pluto's mass and slightly lower density. Both are ice and rock, are locked to a 6.4-day rotation and show smooth young plains."
+  },
+  {
+   "title": "Triton, Haumea or Arrokoth?",
+   "prompt": "Sort each clue into the Kuiper belt object it describes.",
+   "buckets": [
+    "Triton",
+    "Haumea",
+    "Arrokoth"
+   ],
+   "items": [
+    {
+     "text": "Backward orbit around Neptune",
+     "b": 0
+    },
+    {
+     "text": "About 15% wider than Pluto",
+     "b": 0
+    },
+    {
+     "text": "Captured by a planet",
+     "b": 0
+    },
+    {
+     "text": "Spins once every 4 hours",
+     "b": 1
+    },
+    {
+     "text": "Two small moons",
+     "b": 1
+    },
+    {
+     "text": "Four look-alike fragments",
+     "b": 1
+    },
+    {
+     "text": "Only about 32 km long",
+     "b": 2
+    },
+    {
+     "text": "Snowman of two stuck-together disks",
+     "b": 2
+    },
+    {
+     "text": "Visited on New Year's Day 2019",
+     "b": 2
+    },
+    {
+     "text": "Very few craters",
+     "b": 2
+    }
+   ],
+   "why": "Triton is the big captured moon with a backward orbit; Haumea is the fast spinner with two moons and a family of fragments; Arrokoth is the small two-lobed body New Horizons visited."
+  },
+  {
+   "title": "Which impact event?",
+   "prompt": "Sort each fact into the event it describes.",
+   "buckets": [
+    "Shoemaker-Levy 9",
+    "Chicxulub",
+    "Tunguska",
+    "Chelyabinsk"
+   ],
+   "items": [
+    {
+     "text": "Hit Jupiter in 1994",
+     "b": 0
+    },
+    {
+     "text": "Torn into a string of pieces by tides",
+     "b": 0
+    },
+    {
+     "text": "66 million years ago",
+     "b": 1
+    },
+    {
+     "text": "200 km buried crater",
+     "b": 1
+    },
+    {
+     "text": "Linked to a mass extinction",
+     "b": 1
+    },
+    {
+     "text": "Siberia, 1908",
+     "b": 2
+    },
+    {
+     "text": "Flattened forests",
+     "b": 2
+    },
+    {
+     "text": "Russia, 2013",
+     "b": 3
+    },
+    {
+     "text": "Over 1,000 people hurt by broken glass",
+     "b": 3
+    },
+    {
+     "text": "About 20 m and 10,000 tons",
+     "b": 3
+    }
+   ],
+   "why": "SL9 hit Jupiter in 1994 after tides broke it up; Chicxulub is the 66-million-year-old dinosaur crater; Tunguska flattened Siberian forest in 1908; Chelyabinsk injured over 1,000 people in 2013."
+  }
+ ],
+ "calc": [
+  "kb-resonance",
+  "kb-impact-odds"
+ ],
+ "sourceNotes": [
+  "Notes follow The Cosmic Perspective (10th ed.) sections 12.4 (Pluto and the Kuiper Belt, pp. 366-370) and 12.5 (Cosmic Collisions, pp. 370-375) in order; there are no teacher slides for this unit.",
+  "Every picture is an original diagram (img/kuiper/gen_*.webp) drawn from the ideas in the text; no book figures are reproduced.",
+  "Small additions from elsewhere in the chapter: Kuiper belt range 30-50 AU (Figure 12.21, section 12.3) and Eris's size and mass (section 12.1).",
+  "Text inconsistency: the main text says the Chicxulub crater was identified in 1990, the Extraordinary Claims box says 1991.",
+  "Moon-orbit spacing and relative sizes in the diagrams are approximate; the impact-frequency diagram marks only the three rates stated in the text."
+ ]
+}
