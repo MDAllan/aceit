@@ -1,0 +1,3280 @@
+{
+ "id": "resources",
+ "title": "Energy and Mineral Resources",
+ "chapter": "Ch 12",
+ "icon": "⛏️",
+ "color": "#8a5a2b",
+ "slideFile": "2026 Nov 23 Resources.pdf",
+ "intro": "Almost everything we use comes out of the ground. These notes start with where energy comes from, then follow oil and gas from sea-floor mud to the refinery, coal from ancient swamps to the mine, and nuclear and alternative energy. The second half explains how metal ores form, how they are found and mined, the nonmetallic resources we build with, and why minerals will not last forever.",
+ "learningObjectives": [
+  {
+   "id": "goal-01",
+   "text": "Define an energy resource and a fuel, and name the seven fundamental sources of energy available to Earth."
+  },
+  {
+   "id": "goal-02",
+   "text": "Explain how oil and gas form from organic debris, including kerogen, source rock and the oil and gas windows."
+  },
+  {
+   "id": "goal-03",
+   "text": "Describe a hydrocarbon system: source rock, migration, reservoir rock with porosity and permeability, traps and seals."
+  },
+  {
+   "id": "goal-04",
+   "text": "Outline how oil is found, drilled, recovered and refined, and compare natural gas, tar sands and oil shale."
+  },
+  {
+   "id": "goal-05",
+   "text": "Explain how coal forms, where it is found, how it is mined, and the uses and hazards of coal."
+  },
+  {
+   "id": "goal-06",
+   "text": "Describe how nuclear power works, the geology of uranium, and the safety and waste challenges."
+  },
+  {
+   "id": "goal-07",
+   "text": "Compare biofuels, geothermal, hydroelectric, wind, solar and fuel-cell energy."
+  },
+  {
+   "id": "goal-08",
+   "text": "Explain peak oil and the environmental problems of fossil fuels."
+  },
+  {
+   "id": "goal-09",
+   "text": "Distinguish metallic from nonmetallic resources and explain the seven processes that form ore deposits."
+  },
+  {
+   "id": "goal-10",
+   "text": "Describe how ores are explored and mined, estimate resource lifetimes, and explain the environmental impacts of mining."
+  }
+ ],
+ "sections": [
+  {
+   "id": "energy",
+   "title": "Energy resources",
+   "slides": "3-5",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/energy_3.webp",
+      "slide": "slide 3",
+      "alt": "A brown, foaming river pouring over a low weir, with a text box defining energy and an energy resource."
+     },
+     "title": "Energy and fuels",
+     "bullets": [
+      "**Energy** is the capacity to do work or to cause a change.",
+      "An **energy resource** is matter that can produce heat, power muscles, generate electricity or move machinery.",
+      "In usable form, an energy resource is called a **fuel**. Energy stored in chemical bonds fuels all living things.",
+      "Many energy resources are **geological materials**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_sources.webp",
+      "slide": "none (original diagram)",
+      "alt": "Six numbered boxes listing where our energy comes from: stored sunlight in fossil fuels and wood, sunlight moving air and water for hydropower and wind, nuclear fission, sunlight used directly by photovoltaic cells and heating, geothermal heat, and tides. Three of the six trace back to the Sun."
+     },
+     "title": "The main energy sources",
+     "bullets": [
+      "Our energy comes from six main sources: **stored sunlight** (fossil fuels and wood, in chemical bonds), **sunlight** driving hydropower and wind, **nuclear** energy, sunlight used **directly** (photovoltaic cells and heating; agriculture also uses sunlight), **geothermal** heat and **tides**.",
+      "Most of these trace back to the **Sun**: either sunlight used today or sunlight stored long ago."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/growth_5.webp",
+      "slide": "slide 5",
+      "alt": "A stacked graph of world energy use from 1850 to 2010, growing from mostly wood to huge amounts of coal, oil, gas, nuclear and hydroelectric power, and a pie chart of energy supplies with oil 33%, coal 26% and natural gas 21%."
+     },
+     "title": "Energy use has grown",
+     "bullets": [
+      "Human energy needs have **greatly increased in the past 150 years**, and the **mix** of energy resources has changed dramatically: from mostly wood to coal, then oil and gas.",
+      "Today, **fossil fuels** supply **more than 75%** of our energy. In the pie chart, oil is 33%, coal 26% and natural gas 21%.",
+      "Oil is measured in **barrels (bbl)**. One barrel is **42 gallons**, or **159 litres**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Fossil fuels are sunlight that plants and plankton captured long ago and that rocks kept locked in chemical bonds."
+    },
+    {
+     "type": "trick",
+     "text": "Energy resource = the stuff. Fuel = that stuff in a form we can use."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 5: fossil fuels are MORE than 75% of energy supplies (oil + coal + gas = 80% on the pie chart), not about half."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 3-5; Fig. 12.1 and 12.12d. The six-source grouping is slide 4.",
+    "The diagram groups slide 4's list; '3 of the 6 trace back to the Sun' counts its three sunlight items."
+   ],
+   "images": [
+    {
+     "src": "img/resources/energy_3.webp",
+     "slide": "slide 3",
+     "alt": "A brown, foaming river pouring over a low weir, with a text box defining energy and an energy resource."
+    },
+    {
+     "src": "img/resources/gen_sources.webp",
+     "slide": "none (original diagram)",
+     "alt": "Six numbered boxes listing where our energy comes from: stored sunlight in fossil fuels and wood, sunlight moving air and water for hydropower and wind, nuclear fission, sunlight used directly by photovoltaic cells and heating, geothermal heat, and tides. Three of the six trace back to the Sun."
+    },
+    {
+     "src": "img/resources/growth_5.webp",
+     "slide": "slide 5",
+     "alt": "A stacked graph of world energy use from 1850 to 2010, growing from mostly wood to huge amounts of coal, oil, gas, nuclear and hydroelectric power, and a pie chart of energy supplies with oil 33%, coal 26% and natural gas 21%."
+    }
+   ]
+  },
+  {
+   "id": "sources",
+   "title": "Seven sources of energy",
+   "slides": "6-13",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/seven_6.webp",
+      "slide": "slide 6",
+      "alt": "Wind turbines on a green field with a numbered list of seven sources of energy."
+     },
+     "title": "Seven fundamental sources",
+     "bullets": [
+      "Seven fundamental sources of energy are available to Earth:",
+      "1. energy **directly from the Sun**; 2. the **pull of gravity**; 3. **solar energy and gravity together**; 4. **photosynthesis**; 5. **chemical reactions**; 6. **nuclear fission**; 7. **Earth's internal heat**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/photosynthesis_7.webp",
+      "slide": "slide 7",
+      "alt": "Green reeds in water with the photosynthesis equation, and a campfire burning wood beside a log cabin."
+     },
+     "title": "Photosynthesis stores sunlight",
+     "bullets": [
+      "Solar energy is stored in chemical **hydrogen-carbon (H-C) bonds**.",
+      "Photosynthesis makes these bonds from water and carbon dioxide, forming sugar and oxygen: **6CO₂ + 12H₂O + light → C₆H₁₂O₆ + 6O₂ + 6H₂O**.",
+      "Breaking H-C bonds (**oxidizing** them) releases the stored energy. This fuels the respiration that keeps us and the rest of the biosphere alive."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/solar_8.webp",
+      "slide": "slide 8",
+      "alt": "A red Sun setting over water, and solar panels on a roof."
+     },
+     "title": "Energy straight from the Sun",
+     "bullets": [
+      "The Sun is a **nuclear fusion** reactor that sends heat and light outward. Only a tiny portion strikes Earth.",
+      "People can use direct solar energy by turning it into **electricity** with photovoltaic cells, or into **heat**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/tides_9.webp",
+      "slide": "slide 9",
+      "alt": "Waves breaking on a pebble beach under a stormy sky."
+     },
+     "title": "Gravity: the tides",
+     "bullets": [
+      "The Moon's **gravitational pull** on Earth moves the tides, a tremendous amount of energy.",
+      "Tidal flow can be harnessed to drive **turbines**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/windwater_10.webp",
+      "slide": "slide 10",
+      "alt": "A towering white cloud, and an inset photo of water rushing over a weir."
+     },
+     "title": "Sun and gravity: wind and flowing water",
+     "bullets": [
+      "The Sun heats air and evaporates water. Cooler air sinks by gravity, the water vapour condenses, falls, and flows downhill to the oceans.",
+      "Energy can be taken from the **flowing wind and water**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/chemical_11.webp",
+      "slide": "slide 11",
+      "alt": "A white tank of anhydrous ammonia on a trailer, and a laboratory beaker on a stirring plate."
+     },
+     "title": "Chemical bonds",
+     "bullets": [
+      "Energy stored in **chemical bonds** drives reactions.",
+      "Burning some inorganic chemicals makes heat or light, and **dynamite** explosions release a lot of energy.",
+      "**Fuel cells** make electricity directly from chemical reactions."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/fission_12.webp",
+      "slide": "slide 12",
+      "alt": "Aerial photo of a nuclear power plant with two cooling towers beside farmland and a river."
+     },
+     "title": "Nuclear fission",
+     "bullets": [
+      "Some radioactive atoms can be split apart, a process called **fission**, releasing tremendous energy.",
+      "Fission energy runs **nuclear power plants**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/geothermal_13.webp",
+      "slide": "slide 13",
+      "alt": "A geyser sending a huge white plume of steam into a blue sky."
+     },
+     "title": "Earth's internal heat",
+     "bullets": [
+      "Earth's internal (**geothermal**) energy has two sources: **leftover heat from the planet's formation** and **heat from radioactivity** in the crust and mantle.",
+      "Geothermal energy **drives the tectonic plates**. Heat lost through the crust can be harnessed."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Every energy resource is one of these seven in disguise: coal is photosynthesis, a dam is sun plus gravity, a geyser is internal heat."
+    },
+    {
+     "type": "trick",
+     "text": "Sun, gravity, sun + gravity, plants, chemicals, splitting atoms, Earth's heat: 7 sources."
+    },
+    {
+     "type": "trap",
+     "text": "Tidal power comes from the Moon's gravity, not from sunlight (review question, slide 94). Fission splits atoms; the Sun runs on fusion."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 6-13; Fig. 12.11b, 16.9e."
+   ],
+   "images": [
+    {
+     "src": "img/resources/seven_6.webp",
+     "slide": "slide 6",
+     "alt": "Wind turbines on a green field with a numbered list of seven sources of energy."
+    },
+    {
+     "src": "img/resources/photosynthesis_7.webp",
+     "slide": "slide 7",
+     "alt": "Green reeds in water with the photosynthesis equation, and a campfire burning wood beside a log cabin."
+    },
+    {
+     "src": "img/resources/solar_8.webp",
+     "slide": "slide 8",
+     "alt": "A red Sun setting over water, and solar panels on a roof."
+    },
+    {
+     "src": "img/resources/tides_9.webp",
+     "slide": "slide 9",
+     "alt": "Waves breaking on a pebble beach under a stormy sky."
+    },
+    {
+     "src": "img/resources/windwater_10.webp",
+     "slide": "slide 10",
+     "alt": "A towering white cloud, and an inset photo of water rushing over a weir."
+    },
+    {
+     "src": "img/resources/chemical_11.webp",
+     "slide": "slide 11",
+     "alt": "A white tank of anhydrous ammonia on a trailer, and a laboratory beaker on a stirring plate."
+    },
+    {
+     "src": "img/resources/fission_12.webp",
+     "slide": "slide 12",
+     "alt": "Aerial photo of a nuclear power plant with two cooling towers beside farmland and a river."
+    },
+    {
+     "src": "img/resources/geothermal_13.webp",
+     "slide": "slide 13",
+     "alt": "A geyser sending a huge white plume of steam into a blue sky."
+    }
+   ]
+  },
+  {
+   "id": "oilgas",
+   "title": "How oil and gas form",
+   "slides": "14-16",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/hydrocarbons_14.webp",
+      "slide": "slide 14",
+      "alt": "A chart of petroleum products from low viscosity to high: natural gas and bottled gas, gasoline, kerosene, heating oil, lubricating oil and tar, with the number of carbon atoms in each molecule increasing from C1 to over C40."
+     },
+     "title": "Hydrocarbons",
+     "bullets": [
+      "Industrial society depends on **hydrocarbons** from oil and natural gas.",
+      "Hydrocarbons are made of **hydrogen (H) and carbon (C)**. They come from the material of **once-living creatures**.",
+      "There are many types. In nature they occur as complex mixtures, and **refining** separates the pure compounds.",
+      "The chart runs from small molecules (natural gas, C1 to C4) that flow easily to large ones (tar, over C40) that are very thick (high viscosity)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/genesis_15.webp",
+      "slide": "slide 15",
+      "alt": "Four columns showing organic plankton settling with clay on an oxygen-poor sea floor, being buried under pressure, becoming black shale source rock at 80 °C, and oil rising out of it at 120 °C."
+     },
+     "title": "From sea-floor mud to oil",
+     "bullets": [
+      "It starts when **organic debris** settles with sediment on an **anoxic** (oxygen-poor) sea floor.",
+      "Buried **2 to 4 km** deep, heat and pressure turn the sediment into **black shale** and break the organic matter into **kerogen**, the material oil forms from.",
+      "Continued heating breaks the kerogen down into **oil and gas**, which seep upward.",
+      "The black shale is the **source rock**. Source rock is no good for **storing** oil."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/windows_16.webp",
+      "slide": "slide 16",
+      "alt": "A cliff of dark, layered shale with text boxes giving the oil and gas window temperatures."
+     },
+     "title": "The oil and gas windows",
+     "bullets": [
+      "Oil and gas form in specific temperature ranges: **oil and gas at 90 to 160 °C**, **gas only at 160 to 250 °C**, and **graphite above 250 °C**.",
+      "The **oil window** is the depth and temperature range where oil forms.",
+      "Burial **below** the oil window breaks the oil down into natural gas: the **gas window**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_windows.webp",
+      "slide": "none (original diagram)",
+      "alt": "A column coloured by temperature: below 90 °C kerogen is not yet broken down; 90 to 160 °C is the oil window where oil and gas form; 160 to 250 °C is the gas window with gas only; above 250 °C there is graphite. An arrow shows deeper burial means hotter rock."
+     },
+     "title": "Reading the windows",
+     "bullets": [
+      "Think of the windows as a **cooking scale**. Too cool and the kerogen stays kerogen. Just right and you get oil. Too hot and the oil is cooked into gas, and finally into graphite."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Heat breaks big molecules into smaller ones. Kerogen breaks into oil; with more heat oil breaks into gas, the smallest hydrocarbons."
+    },
+    {
+     "type": "trick",
+     "text": "90, 160, 250: oil starts at 90 °C, oil stops at 160 °C, gas stops at 250 °C."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 15: the black shale is the SOURCE rock, not the reservoir. Oil must leave it to be useful."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 14-16; 4th edition Fig. 14.3 and Fig. 12.2.",
+    "'Cooking scale' wording is an added memory aid."
+   ],
+   "images": [
+    {
+     "src": "img/resources/hydrocarbons_14.webp",
+     "slide": "slide 14",
+     "alt": "A chart of petroleum products from low viscosity to high: natural gas and bottled gas, gasoline, kerosene, heating oil, lubricating oil and tar, with the number of carbon atoms in each molecule increasing from C1 to over C40."
+    },
+    {
+     "src": "img/resources/genesis_15.webp",
+     "slide": "slide 15",
+     "alt": "Four columns showing organic plankton settling with clay on an oxygen-poor sea floor, being buried under pressure, becoming black shale source rock at 80 °C, and oil rising out of it at 120 °C."
+    },
+    {
+     "src": "img/resources/windows_16.webp",
+     "slide": "slide 16",
+     "alt": "A cliff of dark, layered shale with text boxes giving the oil and gas window temperatures."
+    },
+    {
+     "src": "img/resources/gen_windows.webp",
+     "slide": "none (original diagram)",
+     "alt": "A column coloured by temperature: below 90 °C kerogen is not yet broken down; 90 to 160 °C is the oil window where oil and gas form; 160 to 250 °C is the gas window with gas only; above 250 °C there is graphite. An arrow shows deeper burial means hotter rock."
+    }
+   ]
+  },
+  {
+   "id": "traps",
+   "title": "Reservoirs, traps and seals",
+   "slides": "17-20",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/porosity_18.webp",
+      "slide": "slide 18",
+      "alt": "Two microscope views of sandstone: grains with an open black pore between them, and a drawing of sand grains with blue water in the pores and cement between some grains."
+     },
+     "title": "Migration and reservoir rock",
+     "bullets": [
+      "To be used, hydrocarbons must **migrate** away from the source rock and be trapped in a **reservoir rock**.",
+      "**Porosity** is the open pore space in a sedimentary rock.",
+      "**Permeability** is how easily fluid flows through a rock. It depends on how well the pores are **connected**.",
+      "Open, connected pores pass fluid easily. Pores coated with **mineral cement** pass fluid poorly."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/seal_19.webp",
+      "slide": "slide 19",
+      "alt": "Steeply tilted layers of brown and grey rock with a bright white band running through them."
+     },
+     "title": "Seals",
+     "bullets": [
+      "For hydrocarbons to collect in a reservoir, a **seal** must stop the fluids from flowing back out.",
+      "A seal is rock with **low permeability**, like **shale**, **salt** and **unfractured limestone**. Sometimes **faults** create seals."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/anticline_17.webp",
+      "slide": "slide 17",
+      "alt": "Block diagram of rock layers folded into an arch with an oil well drilled into the top, gas above oil in the reservoir rock, a seal rock above and source rock below."
+     },
+     "title": "Anticlinal traps",
+     "bullets": [
+      "An **anticlinal trap** forms when rock layers are folded into an **arch** (an anticline).",
+      "The arch traps the oil: gas collects at the very top, oil below it, under the seal rock."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/saltdome_20.webp",
+      "slide": "slide 20",
+      "alt": "Block diagram of a column of white salt pushing up through tilted layers, with oil trapped against its sides under seal rock and faults above."
+     },
+     "title": "Salt-dome traps",
+     "bullets": [
+      "Deeply buried **salt flows like a plastic**.",
+      "Salt is **less dense** than the rock above it, so it flows upward and bends the layers around it. Oil collects where those bent layers meet the salt: a **salt-dome trap**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_migration.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animated cross-section: oil droplets rise from a black shale source rock into a porous sandstone reservoir and move up it to the top of an arch, where a pool of gas over oil collects under a grey low-permeability seal. Caption: source rock, migration, reservoir rock, trap and seal."
+     },
+     "title": "The whole hydrocarbon system",
+     "bullets": [
+      "A working **hydrocarbon system** needs all of these parts: a **source rock**, a **migration pathway**, a **reservoir rock**, and a **trap** with a **seal**.",
+      "Gas is lighter, so it floats on **top** of the oil in the reservoir."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Oil and gas are lighter than the water in rock pores, so they keep rising until something they cannot pass through stops them."
+    },
+    {
+     "type": "trick",
+     "text": "Kitchen, road, storage room, lid: source rock, migration, reservoir, seal."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 92 review question: source rock, migration pathway, reservoir rock and seal are ALL parts of a hydrocarbon system, so the answer is 'none of the above'. A reservoir needs HIGH porosity and permeability; a seal needs LOW permeability."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 17-20; Bx 12.1a, c and Fig. 16.2a, b.",
+    "Slide 92 is the review question on hydrocarbon systems (answer E).",
+    "Gas floats on top of oil: slide 28. 'Lighter than water' is an added explanation."
+   ],
+   "images": [
+    {
+     "src": "img/resources/porosity_18.webp",
+     "slide": "slide 18",
+     "alt": "Two microscope views of sandstone: grains with an open black pore between them, and a drawing of sand grains with blue water in the pores and cement between some grains."
+    },
+    {
+     "src": "img/resources/seal_19.webp",
+     "slide": "slide 19",
+     "alt": "Steeply tilted layers of brown and grey rock with a bright white band running through them."
+    },
+    {
+     "src": "img/resources/anticline_17.webp",
+     "slide": "slide 17",
+     "alt": "Block diagram of rock layers folded into an arch with an oil well drilled into the top, gas above oil in the reservoir rock, a seal rock above and source rock below."
+    },
+    {
+     "src": "img/resources/saltdome_20.webp",
+     "slide": "slide 20",
+     "alt": "Block diagram of a column of white salt pushing up through tilted layers, with oil trapped against its sides under seal rock and faults above."
+    },
+    {
+     "src": "img/resources/gen_migration.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animated cross-section: oil droplets rise from a black shale source rock into a porous sandstone reservoir and move up it to the top of an arch, where a pool of gas over oil collects under a grey low-permeability seal. Caption: source rock, migration, reservoir rock, trap and seal."
+    }
+   ]
+  },
+  {
+   "id": "oilwhere",
+   "title": "The oil industry and where oil is found",
+   "slides": "21-22",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/drake_21.webp",
+      "slide": "slide 21",
+      "alt": "An old black-and-white photo of an oil gusher, a forest of wooden oil derricks, and a reconstructed wooden derrick."
+     },
+     "title": "Birth of the oil industry",
+     "bullets": [
+      "People have used oil from natural **seeps** for thousands of years.",
+      "The first oil well was drilled in **Titusville, Pennsylvania, in 1859**. The **Drake well** started an oil boom, and within years thousands of wells had been drilled.",
+      "Oil (**kerosene**) soon became the fuel of choice for **lamps**. Then came the **automobile**, and civilization began an addiction to oil."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/reserves_22.webp",
+      "slide": "slide 22",
+      "alt": "World map with regions of major known oil reserves shaded purple, and a pie chart of reserves by region with the Middle East largest at 731 billion barrels."
+     },
+     "title": "Where oil occurs",
+     "bullets": [
+      "Oil reserves are found on **every continent**, some **onshore** and some **offshore**.",
+      "The regions around the **Persian Gulf** have the world's **largest reserves**: about 731 billion barrels of a world total of 1,200 to 1,400 billion.",
+      "Remember: **1 barrel = 42 gallons = 159 litres**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Oil collects where all the parts of a hydrocarbon system came together, so it is patchy, not spread evenly."
+    },
+    {
+     "type": "trick",
+     "text": "1859 Titusville: the first well. Lamps first, then cars."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 22: the Persian Gulf region has the largest reserves; North America and Europe have much less."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 21-22; 4th edition Bx 14.2 and Fig. 12.5. Reserve numbers are read from the Fig. 12.5 pie chart."
+   ],
+   "images": [
+    {
+     "src": "img/resources/drake_21.webp",
+     "slide": "slide 21",
+     "alt": "An old black-and-white photo of an oil gusher, a forest of wooden oil derricks, and a reconstructed wooden derrick."
+    },
+    {
+     "src": "img/resources/reserves_22.webp",
+     "slide": "slide 22",
+     "alt": "World map with regions of major known oil reserves shaded purple, and a pie chart of reserves by region with the Middle East largest at 731 billion barrels."
+    }
+   ]
+  },
+  {
+   "id": "production",
+   "title": "Finding and producing oil",
+   "slides": "23-27",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/search_23.webp",
+      "slide": "slide 23",
+      "alt": "A hillside of folded red rock layers, and two geologists outdoors holding up a large coloured cross-section of rock layers."
+     },
+     "title": "The modern search",
+     "bullets": [
+      "Early exploration meant finding **oil seeps**. The need for systematic exploration created **petroleum geology**.",
+      "The modern search is complex, dangerous and exciting, and needs many steps and advanced technology.",
+      "Geologists **map sedimentary rocks** to find source rocks, reservoirs and traps. They build rock sequences from outcrops and drill cores, and **cross-sections** show how the layers and structures fit together."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/seismic_24.webp",
+      "slide": "slide 24",
+      "alt": "A ship towing sound sources over the sea with sound waves bouncing off the sea floor layers, and a seismic profile image of wavy rock layers."
+     },
+     "title": "Seismic reflection profiling",
+     "bullets": [
+      "**Seismic reflection** makes an image of the subsurface by **bouncing sound off rock layers**.",
+      "It lets geologists look for traps **without drilling**. It is done on land and at sea, and it is technologically sophisticated and expensive."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/drilling_25.webp",
+      "slide": "slide 25",
+      "alt": "A tall drill rig against a blue sky, with a diagram of a derrick, drill pipe and drill bit and rising drilling mud."
+     },
+     "title": "Drilling",
+     "bullets": [
+      "Expensive drilling is needed to reach a possible trap.",
+      "A **diamond rotary bit** grinds the rock. **Heavy drilling mud** cools the bit and lifts the cuttings out, and reduces the risk of high-pressure **blowouts**.",
+      "**Steel casing** is cemented into the upper 1,500 feet or more of the hole to protect **aquifers** and surface water."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/completion_26.webp",
+      "slide": "slide 26",
+      "alt": "A pump jack and storage tanks at a well site, a large pipeline crossing a forest, and a well head with valves."
+     },
+     "title": "Completing the well",
+     "bullets": [
+      "When the hole is finished, the drill rig is removed and a **pump** is set up.",
+      "Oil is stored in tanks on site and taken away by truck, or added to a **pipeline**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_recovery.webp",
+      "slide": "none (original diagram)",
+      "alt": "A bar showing about 30% of a reservoir's oil coming out by pumping and the rest still in the reservoir, with boxes explaining primary recovery by pumping and secondary recovery by injecting steam or CO2 to heat or push more oil out."
+     },
+     "title": "Primary and secondary recovery",
+     "bullets": [
+      "Pumping (**primary recovery**) removes only about **30%** of the oil in a reservoir.",
+      "**Secondary recovery** uses enhanced techniques to get more out, such as injecting fluids (**steam, CO₂**) to heat or push the oil."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/refinery_27.webp",
+      "slide": "slide 27",
+      "alt": "Aerial photo of an oil refinery with tall distillation columns, pipes and storage tanks beside the water."
+     },
+     "title": "Refining",
+     "bullets": [
+      "All crude oil must be **refined**. It reaches a refinery by pipeline or tanker and is **distilled** into separate compounds.",
+      "**Lighter** molecules rise to the top of the distillation columns; **heavier** molecules stay at the bottom. Heavy molecules can also be **cracked** into smaller compounds."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Drilling is so expensive that companies first 'see' the trap with sound waves before they risk a well."
+    },
+    {
+     "type": "trick",
+     "text": "Map, sound, drill, pump, refine: the order of an oil project."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 26: pumping alone gets only about 30%, not most of the oil. Steam and CO₂ injection is SECONDARY recovery."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 23-27; Fig. D.9, 12.4a-d."
+   ],
+   "images": [
+    {
+     "src": "img/resources/search_23.webp",
+     "slide": "slide 23",
+     "alt": "A hillside of folded red rock layers, and two geologists outdoors holding up a large coloured cross-section of rock layers."
+    },
+    {
+     "src": "img/resources/seismic_24.webp",
+     "slide": "slide 24",
+     "alt": "A ship towing sound sources over the sea with sound waves bouncing off the sea floor layers, and a seismic profile image of wavy rock layers."
+    },
+    {
+     "src": "img/resources/drilling_25.webp",
+     "slide": "slide 25",
+     "alt": "A tall drill rig against a blue sky, with a diagram of a derrick, drill pipe and drill bit and rising drilling mud."
+    },
+    {
+     "src": "img/resources/completion_26.webp",
+     "slide": "slide 26",
+     "alt": "A pump jack and storage tanks at a well site, a large pipeline crossing a forest, and a well head with valves."
+    },
+    {
+     "src": "img/resources/gen_recovery.webp",
+     "slide": "none (original diagram)",
+     "alt": "A bar showing about 30% of a reservoir's oil coming out by pumping and the rest still in the reservoir, with boxes explaining primary recovery by pumping and secondary recovery by injecting steam or CO2 to heat or push more oil out."
+    },
+    {
+     "src": "img/resources/refinery_27.webp",
+     "slide": "slide 27",
+     "alt": "Aerial photo of an oil refinery with tall distillation columns, pipes and storage tanks beside the water."
+    }
+   ]
+  },
+  {
+   "id": "unconventional",
+   "title": "Natural gas, tar sands and oil shale",
+   "slides": "28-30",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/marcellus_28.webp",
+      "slide": "slide 28",
+      "alt": "Cracked rusty-orange and dark shale, a white propane tank, and a map of the northeastern United States showing the large area underlain by the Marcellus Shale."
+     },
+     "title": "Natural gas",
+     "bullets": [
+      "**Natural gas** is made of small, volatile hydrocarbons: **methane, ethane, propane and butane**.",
+      "Gas floats on top of oil in a reservoir. Below the oil window, gas occurs **without** oil.",
+      "Natural gas is **more abundant** than oil and a **cleaner** fuel, but it needs expensive high-pressure pipelines and ships.",
+      "Gas in the **Marcellus Shale** has greatly increased U.S. reserves. It is taken out by **directional drilling and hydrofracturing** (fracking), which is controversial because of environmental concerns."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/tarsands_29.webp",
+      "slide": "slide 29",
+      "alt": "A huge open-pit tar sands mine with giant shovels and heavy haul trucks on dark sand."
+     },
+     "title": "Tar sands",
+     "bullets": [
+      "**Tar sands** are sand reservoirs holding leftover petroleum. Bacteria have digested the **lighter hydrocarbons**.",
+      "What is left is heavy oil called **bitumen**, all that remains of a former oil field. It is **too thick to pump**, so tar sands must be **mined** and processed.",
+      "Large deposits are in **Alberta, Canada**, and in **Venezuela**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/oilshale_30.webp",
+      "slide": "slide 30",
+      "alt": "A cliff of thinly layered grey oil shale."
+     },
+     "title": "Oil shale",
+     "bullets": [
+      "**Oil shale** contains lots of **kerogen** that has **never reached oil window conditions**.",
+      "Heating it can turn some of the kerogen into liquid hydrocarbons used like oil.",
+      "Large supplies are in **Estonia, Scotland, China, Russia** and the **western United States**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Tar sands went too far (bacteria ate the light oil); oil shale did not go far enough (never cooked in the oil window)."
+    },
+    {
+     "type": "trick",
+     "text": "Tar sands = over-digested oil, so dig it up. Oil shale = under-cooked kerogen, so heat it up."
+    },
+    {
+     "type": "trap",
+     "text": "Oil shale contains KEROGEN, not oil. Tar sands contain BITUMEN, too thick to pump."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 28-30; Bx 12.2a and 4th edition Fig. 14.11a. Slides 29-30 keep the title 'Unconventional hydrocarbons: natural gas'.",
+    "'Over-digested / under-cooked' comparison is an added memory aid."
+   ],
+   "images": [
+    {
+     "src": "img/resources/marcellus_28.webp",
+     "slide": "slide 28",
+     "alt": "Cracked rusty-orange and dark shale, a white propane tank, and a map of the northeastern United States showing the large area underlain by the Marcellus Shale."
+    },
+    {
+     "src": "img/resources/tarsands_29.webp",
+     "slide": "slide 29",
+     "alt": "A huge open-pit tar sands mine with giant shovels and heavy haul trucks on dark sand."
+    },
+    {
+     "src": "img/resources/oilshale_30.webp",
+     "slide": "slide 30",
+     "alt": "A cliff of thinly layered grey oil shale."
+    }
+   ]
+  },
+  {
+   "id": "coal",
+   "title": "Coal: energy from swamps of the past",
+   "slides": "31-35",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/coal_31.webp",
+      "slide": "slide 31",
+      "alt": "A geologist in an orange hard hat bent over a huge pile of black coal, and a hand holding a shiny black lump of coal."
+     },
+     "title": "What coal is",
+     "bullets": [
+      "**Coal** is a black, brittle, **carbon-rich sedimentary rock** made of the altered remains of plants that grew in **swamps**.",
+      "It is an important global energy source and a **dominant CO₂ emitter**.",
+      "Coal is found only in rocks **younger than 420 million years**, after land plants evolved."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/swamp_32.webp",
+      "slide": "slide 32",
+      "alt": "A painting of a lush ancient forest of giant tree ferns and horsetails, with a diagram of a coal swamp on a delta beside a sandy beach and deeper water."
+     },
+     "title": "Coal swamps",
+     "bullets": [
+      "Coal swamps formed on top of **marine deltas** and along **tropical coasts**. Rises and falls in sea level **buried** old swamps.",
+      "Main coal-forming times: the warm **Carboniferous** (354 to 286 million years ago) with broad shallow seas over the continents, and the tropical delta wetlands of the **Cretaceous** (144 to 65 million years ago)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/coalform_33.webp",
+      "slide": "slide 33",
+      "alt": "Three blocks of layers showing peat at the surface turning to lignite and then bituminous coal with burial over time, and a photo of a coal seam in a cliff."
+     },
+     "title": "From plants to coal",
+     "bullets": [
+      "In coal swamps, dead plants fall into **stagnant, O₂-poor water**. With no oxygen, they do not **decay**.",
+      "**Compaction** turns the plant debris into **peat**.",
+      "Burial to **4 to 10 km** compacts and heats the peat. Chemical reactions drive off **hydrogen, nitrogen and sulfur** as gases.",
+      "What is left is **coal**, more than **70% carbon**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_coalform.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of four columns filling in turn: swamp plants in oxygen-poor water, then a thinner layer of brown peat, then thinner, darker lignite after burial 4 to 10 km deep, and finally a thin black layer of bituminous coal over 70% carbon."
+     },
+     "title": "Coal forms step by step",
+     "bullets": [
+      "Each step makes the layer **thinner and darker**: plants → peat → lignite → bituminous coal.",
+      "Coal ranks named on the maps are **lignite**, **bituminous** and **anthracite**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/coalmap_34.webp",
+      "slide": "slide 34",
+      "alt": "Map of North America with coal-bearing regions shaded brown for lignite, grey for bituminous and black for anthracite, and Pennsylvania anthracite labelled."
+     },
+     "title": "Finding coal in North America",
+     "bullets": [
+      "Huge amounts of coal lie buried in **continental sedimentary basins**.",
+      "Cretaceous and Carboniferous coal-bearing rocks are very abundant in the **midwestern U.S.** and the **Rocky Mountain** regions. Pennsylvania has anthracite."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/coalglobal_35.webp",
+      "slide": "slide 35",
+      "alt": "A pie chart of world coal reserves by region, led by Eastern Europe and the former Soviet Union at 28% and North America at 27%, beside a photo of a coal pile being loaded."
+     },
+     "title": "Coal around the world",
+     "bullets": [
+      "Almost **every continent** has coal reserves. The pie chart is led by Eastern Europe and the former Soviet Union (28%) and North America (27%).",
+      "The amount of coal used worldwide is **increasing**, and **China and India** use a growing share."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Plants normally rot because oxygen lets microbes break them down. In stagnant swamp water there is too little oxygen, so the carbon is kept."
+    },
+    {
+     "type": "trick",
+     "text": "No oxygen, no rot. Squeeze = peat. Bury and bake = coal."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 31: no coal older than 420 Ma, because there were no land plants yet. Coal is SEDIMENTARY rock made from land plants, not from marine plankton like oil."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 31-35; Fig. 12.6a-d, 12.7a, b, 12.8c. Percentages read from the Fig. 12.7b pie chart.",
+    "'Plants normally rot because oxygen lets microbes break them down' is an added explanation."
+   ],
+   "images": [
+    {
+     "src": "img/resources/coal_31.webp",
+     "slide": "slide 31",
+     "alt": "A geologist in an orange hard hat bent over a huge pile of black coal, and a hand holding a shiny black lump of coal."
+    },
+    {
+     "src": "img/resources/swamp_32.webp",
+     "slide": "slide 32",
+     "alt": "A painting of a lush ancient forest of giant tree ferns and horsetails, with a diagram of a coal swamp on a delta beside a sandy beach and deeper water."
+    },
+    {
+     "src": "img/resources/coalform_33.webp",
+     "slide": "slide 33",
+     "alt": "Three blocks of layers showing peat at the surface turning to lignite and then bituminous coal with burial over time, and a photo of a coal seam in a cliff."
+    },
+    {
+     "src": "img/resources/gen_coalform.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of four columns filling in turn: swamp plants in oxygen-poor water, then a thinner layer of brown peat, then thinner, darker lignite after burial 4 to 10 km deep, and finally a thin black layer of bituminous coal over 70% carbon."
+    },
+    {
+     "src": "img/resources/coalmap_34.webp",
+     "slide": "slide 34",
+     "alt": "Map of North America with coal-bearing regions shaded brown for lignite, grey for bituminous and black for anthracite, and Pennsylvania anthracite labelled."
+    },
+    {
+     "src": "img/resources/coalglobal_35.webp",
+     "slide": "slide 35",
+     "alt": "A pie chart of world coal reserves by region, led by Eastern Europe and the former Soviet Union at 28% and North America at 27%, beside a photo of a coal pile being loaded."
+    }
+   ]
+  },
+  {
+   "id": "coalmining",
+   "title": "Mining and using coal",
+   "slides": "36-39",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/gen_depth.webp",
+      "slide": "none (original diagram)",
+      "alt": "A cross-section with a dashed line about 100 m deep: above it an open pit or strip mine removes a shallow seam; below it a shaft and tunnels reach a deeper seam. Boxes: shallower than about 100 m is strip-mined or open-pit, cheaper and less dangerous; deeper needs underground mining, which is expensive and dangerous."
+     },
+     "title": "Shallow or deep?",
+     "bullets": [
+      "The type of mine depends on **how deep** the coal seam is.",
+      "Coal within about **100 m** of the surface is **strip-mined**. Deeper seams need **underground mining**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/strip_36.webp",
+      "slide": "slide 36",
+      "alt": "Diagram of a strip mine cutting down to a coal seam, with undisturbed land, a spoil bank, a high wall and reclaimed land, and a photo of a giant red drag-line machine."
+     },
+     "title": "Strip mining",
+     "bullets": [
+      "Strip mining removes the rock and soil above the seam with a huge **drag-line bucket**.",
+      "The removed material (**spoil**) is piled nearby. The coal is dug out, then the hole is **reclaimed**: filled with spoil and soil and replanted."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/undergroundcoal_37.webp",
+      "slide": "slide 37",
+      "alt": "Miners in hard hats beside a large cutting machine in a dark coal tunnel lit red."
+     },
+     "title": "Underground coal mining",
+     "bullets": [
+      "Underground mining is **more specialized, expensive and dangerous**. Coal is removed by **tunnelling**.",
+      "Hazards: tunnels can **collapse**, **methane gas** can explode or suffocate miners, and miners can get **black lung disease**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/cbm_38.webp",
+      "slide": "slide 38",
+      "alt": "Black coal layers in a mine wall separated by pale bands of rock."
+     },
+     "title": "Coalbed methane",
+     "bullets": [
+      "**Methane** made in buried coal can be extracted and used like other natural gas.",
+      "For coal **too deep to mine**, methane extraction is a good alternative source of gas. A problem is handling the **extra water** that comes out with it."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gasification_39.webp",
+      "slide": "slide 39",
+      "alt": "An old abandoned red-brick industrial building with arched windows."
+     },
+     "title": "Coal gasification",
+     "bullets": [
+      "Heating coal to high temperatures at high pressure with **steam and oxygen** makes **flammable gases**.",
+      "From the early 1800s, gasification supplied gas for **lights, cooking and heating** in big U.S. cities. Old plants dumped noxious **coal tar** on site, causing heavy contamination.",
+      "Modern coal gasification is **much cleaner**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Removing everything above a shallow seam is cheaper than tunnelling, but past about 100 m there is too much rock to move."
+    },
+    {
+     "type": "trick",
+     "text": "Shallow: strip it. Deep: tunnel it. Too deep: take its methane."
+    },
+    {
+     "type": "trap",
+     "text": "Strip mining is reclaimed afterwards (backfilled and replanted); the spoil is kept for that. Coalbed methane is for coal TOO DEEP to mine."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 36-39; Fig. 12.8a, b. The depth diagram also uses slide 81 (open-pit ore bodies <100 m)."
+   ],
+   "images": [
+    {
+     "src": "img/resources/gen_depth.webp",
+     "slide": "none (original diagram)",
+     "alt": "A cross-section with a dashed line about 100 m deep: above it an open pit or strip mine removes a shallow seam; below it a shaft and tunnels reach a deeper seam. Boxes: shallower than about 100 m is strip-mined or open-pit, cheaper and less dangerous; deeper needs underground mining, which is expensive and dangerous."
+    },
+    {
+     "src": "img/resources/strip_36.webp",
+     "slide": "slide 36",
+     "alt": "Diagram of a strip mine cutting down to a coal seam, with undisturbed land, a spoil bank, a high wall and reclaimed land, and a photo of a giant red drag-line machine."
+    },
+    {
+     "src": "img/resources/undergroundcoal_37.webp",
+     "slide": "slide 37",
+     "alt": "Miners in hard hats beside a large cutting machine in a dark coal tunnel lit red."
+    },
+    {
+     "src": "img/resources/cbm_38.webp",
+     "slide": "slide 38",
+     "alt": "Black coal layers in a mine wall separated by pale bands of rock."
+    },
+    {
+     "src": "img/resources/gasification_39.webp",
+     "slide": "slide 39",
+     "alt": "An old abandoned red-brick industrial building with arched windows."
+    }
+   ]
+  },
+  {
+   "id": "nuclear",
+   "title": "Nuclear power",
+   "slides": "40-44",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/nuclear_40.webp",
+      "slide": "slide 40",
+      "alt": "A coastal nuclear plant with two domes, and a diagram of a reactor heating water into steam in a closed loop, a turbine and generator, a condenser and cooling towers."
+     },
+     "title": "How a nuclear plant works",
+     "bullets": [
+      "Nuclear power comes from **breaking apart atomic nuclei**. **Fission** splits a large nucleus into smaller pieces, releasing enormous energy.",
+      "Reactors are high-tech plants built to control **nuclear chain reactions** safely.",
+      "The reactor heats water into **high-pressure steam inside a closed loop**. The heat passes to a separate water loop whose steam spins the electrical **turbines**.",
+      "Nuclear power gives off **no greenhouse gases**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/uranium_41.webp",
+      "slide": "slide 41",
+      "alt": "Red desert cliffs and a hand holding a radiation detector over rock."
+     },
+     "title": "The geology of uranium",
+     "bullets": [
+      "Uranium has two main isotopes: **99.3% is ²³⁸U**, which is only weakly fissionable, and **0.7% is ²³⁵U**, which is fissionable and the most common nuclear fuel.",
+      "²³⁵U must be **enriched** two to three times to be used.",
+      "Uranium is in **all rocks** in varying amounts. Water dissolves it from minerals and carries it to places where it **crystallizes** in greater concentration.",
+      "**Radiation detectors** are used to find uranium ores."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/safety_42.webp",
+      "slide": "slide 42",
+      "alt": "Aerial photo of a nuclear plant with two cooling towers beside a wide river."
+     },
+     "title": "Keeping a reactor safe",
+     "bullets": [
+      "Plant safety is a major concern.",
+      "The reactor core must be **continually cooled**, and the rate of fission is controlled by **control rods** that absorb neutrons and slow the reaction."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/accidents_43.webp",
+      "slide": "slide 43",
+      "alt": "Aerial photo of a damaged coastal nuclear plant with broken reactor buildings."
+     },
+     "title": "Meltdowns and accidents",
+     "bullets": [
+      "If fission gets out of control, the core can **melt down**. Molten reactor material could cause a **steam explosion** that spreads radioactivity. This is **not** the same as an atomic bomb.",
+      "Accidents are rare but have happened: **1979 Three Mile Island** (a stuck valve let radioactive coolant escape), **1986 Chernobyl** (a reactor explosion spread radioactivity around the world) and **2011 Fukushima** (loss of coolant led to a partial meltdown and hydrogen explosions)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/waste_44.webp",
+      "slide": "slide 44",
+      "alt": "A yellow sign at a uranium mill tailings repository on a grassy mound, and a photo of the covered tailings."
+     },
+     "title": "Radioactive waste",
+     "bullets": [
+      "Nuclear power makes **highly radioactive wastes** that stay extremely toxic for **thousands of years**. Storing high-level waste is a major issue for society.",
+      "**Mining and processing uranium ore** also produces solid wastes."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Only the rare ²³⁵U splits easily, so natural uranium must be enriched before it can keep a chain reaction going."
+    },
+    {
+     "type": "trick",
+     "text": "Control rods = brakes (absorb neutrons). Coolant = radiator. Lose either and the core overheats."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 43: a meltdown can cause a STEAM explosion, not an atomic bomb explosion. ²³⁸U is the common isotope (99.3%) but the FUEL is ²³⁵U (0.7%)."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 40-44; Fig. 12.9, 8.27b."
+   ],
+   "images": [
+    {
+     "src": "img/resources/nuclear_40.webp",
+     "slide": "slide 40",
+     "alt": "A coastal nuclear plant with two domes, and a diagram of a reactor heating water into steam in a closed loop, a turbine and generator, a condenser and cooling towers."
+    },
+    {
+     "src": "img/resources/uranium_41.webp",
+     "slide": "slide 41",
+     "alt": "Red desert cliffs and a hand holding a radiation detector over rock."
+    },
+    {
+     "src": "img/resources/safety_42.webp",
+     "slide": "slide 42",
+     "alt": "Aerial photo of a nuclear plant with two cooling towers beside a wide river."
+    },
+    {
+     "src": "img/resources/accidents_43.webp",
+     "slide": "slide 43",
+     "alt": "Aerial photo of a damaged coastal nuclear plant with broken reactor buildings."
+    },
+    {
+     "src": "img/resources/waste_44.webp",
+     "slide": "slide 44",
+     "alt": "A yellow sign at a uranium mill tailings repository on a grassy mound, and a photo of the covered tailings."
+    }
+   ]
+  },
+  {
+   "id": "alternatives",
+   "title": "Other energy sources",
+   "slides": "45-50",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/biofuels_45.webp",
+      "slide": "slide 45",
+      "alt": "A harvested cornfield, a field of plant stalks, and a sign advertising soy biodiesel."
+     },
+     "title": "Biofuels",
+     "bullets": [
+      "**Biomass** is energy from plant and animal matter. Farmers now grow fast-growing crops to make fuel.",
+      "The most common biofuel is **ethanol**, an alcohol made from **corn** that can be burned as motor fuel.",
+      "**Biodiesel** is made by chemically changing fats and vegetable oils. It can partly replace diesel."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/geoplant_46.webp",
+      "slide": "slide 46",
+      "alt": "Steam rising from a geothermal power plant in New Zealand, and a diagram of cold groundwater sinking, being heated by magma and rising to a geothermal well."
+     },
+     "title": "Geothermal energy",
+     "bullets": [
+      "**Geothermal** energy is Earth's internal heat. Geothermal plants use **hot groundwater** where the **geothermal gradient is high**, mostly in **volcanic** regions.",
+      "It is useful in non-volcanic areas too: groundwater can **heat and cool buildings** very efficiently with no wastes, no greenhouse gases and no air pollution."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/hydro_47.webp",
+      "slide": "slide 47",
+      "alt": "A huge concrete dam spanning a wide river with a reservoir and a town below."
+     },
+     "title": "Hydroelectric power",
+     "bullets": [
+      "Flowing water turns **potential energy into kinetic energy** as it is directed past **turbines** to make electricity.",
+      "Some dams make electricity from the **tides**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/wind_48.webp",
+      "slide": "slide 48",
+      "alt": "Tall white wind turbines over a green field, and a small windmill at sunset."
+     },
+     "title": "Wind power",
+     "bullets": [
+      "Steady winds drive large **turbines** to make electricity. Wind power is **renewable and carbon free**, and wind farms are spreading worldwide.",
+      "Downsides: wind farms change the look of the land, the blades are **noisy** and they **kill birds**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/solarpv_49.webp",
+      "slide": "slide 49",
+      "alt": "Solar panels on a roof, and a diagram of light striking a photovoltaic cell and making an electric current that lights a bulb."
+     },
+     "title": "Solar power",
+     "bullets": [
+      "Solar energy is by far the **most abundant** energy reaching the surface. But it is hard to use: it is **diffuse**, varies with the seasons and the time of day, and is difficult to convert.",
+      "It can be used directly in two ways: **solar collectors** concentrate sunlight for heat, and **photovoltaic (PV) cells** turn light directly into electricity.",
+      "Both work well for **small buildings, not large cities**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/fuelcell_50.webp",
+      "slide": "slide 50",
+      "alt": "Diagram of a hydrogen fuel cell: hydrogen enters at the anode, oxygen at the cathode, in a bath of water and electrolyte, making a current that lights a bulb."
+     },
+     "title": "Fuel cells",
+     "bullets": [
+      "Fuel cells make electricity from **chemical reactions**. In a hydrogen fuel cell, **hydrogen gas reacts with oxygen** in an electrolyte bath to make **electricity, heat and water**. The reaction is environmentally harmless.",
+      "They could power vehicles, but problems remain: **storing compressed hydrogen** safely, and making and distributing hydrogen efficiently."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Each of these taps a flow of energy that keeps renewing (sunlight, wind, rain, Earth's heat) instead of a store that runs out."
+    },
+    {
+     "type": "trick",
+     "text": "Bio = plants, Geo = Earth's heat, Hydro = falling water, Wind = moving air, Solar = light, Fuel cell = hydrogen + oxygen."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 49: solar is the MOST abundant energy at the surface, yet hard to use. Fuel cells make electricity by a chemical reaction, not by burning."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 45-50; Fig. 12.10, 12.11a-d.",
+    "The 'why' box wording on renewing flows is an added explanation."
+   ],
+   "images": [
+    {
+     "src": "img/resources/biofuels_45.webp",
+     "slide": "slide 45",
+     "alt": "A harvested cornfield, a field of plant stalks, and a sign advertising soy biodiesel."
+    },
+    {
+     "src": "img/resources/geoplant_46.webp",
+     "slide": "slide 46",
+     "alt": "Steam rising from a geothermal power plant in New Zealand, and a diagram of cold groundwater sinking, being heated by magma and rising to a geothermal well."
+    },
+    {
+     "src": "img/resources/hydro_47.webp",
+     "slide": "slide 47",
+     "alt": "A huge concrete dam spanning a wide river with a reservoir and a town below."
+    },
+    {
+     "src": "img/resources/wind_48.webp",
+     "slide": "slide 48",
+     "alt": "Tall white wind turbines over a green field, and a small windmill at sunset."
+    },
+    {
+     "src": "img/resources/solarpv_49.webp",
+     "slide": "slide 49",
+     "alt": "Solar panels on a roof, and a diagram of light striking a photovoltaic cell and making an electric current that lights a bulb."
+    },
+    {
+     "src": "img/resources/fuelcell_50.webp",
+     "slide": "slide 50",
+     "alt": "Diagram of a hydrogen fuel cell: hydrogen enters at the anode, oxygen at the cathode, in a bath of water and electrolyte, making a current that lights a bulb."
+    }
+   ]
+  },
+  {
+   "id": "choices",
+   "title": "Energy choices and energy problems",
+   "slides": "51-62",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/oilage_51.webp",
+      "slide": "slide 51",
+      "alt": "Smokestacks of a power plant at dusk with a timeline from 4000 BCE to 4000 CE where the Oil Age is a thin spike compared with the Bronze and Iron Ages."
+     },
+     "title": "The Oil Age",
+     "bullets": [
+      "Global energy use keeps rising with industrialization.",
+      "**Oil**, the main energy source, is **nonrenewable** and declining. In the future people will need a **different energy mix**.",
+      "For future historians, the **Oil Age** will span only about **300 years**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/crunch_52.webp",
+      "slide": "slide 52",
+      "alt": "A street of old shops with parked cars, and the engine of a modern small car."
+     },
+     "title": "The 1973 oil crunch",
+     "bullets": [
+      "In **1973**, the **Organization of Petroleum Exporting Countries (OPEC)** limited exports. Oil prices skyrocketed and gas stations had **long lines** for the first time.",
+      "New rules **lowered speed limits** and **raised mileage standards**. Cars became smaller and more efficient, and a new consumer attitude was born."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/prices_53.webp",
+      "slide": "slide 53",
+      "alt": "A graph of oil prices swinging up and down since 1986, and a bar chart of estimated oil reserves and oil already produced by region, with the Middle East and Africa far ahead."
+     },
+     "title": "Prices and reserves",
+     "bullets": [
+      "Oil prices have **swung dramatically** in recent times.",
+      "The bar chart compares each region's estimated reserves with the oil it has **already produced**. Other energy sources have **more abundant** reserves than oil."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/peak_54.webp",
+      "slide": "slide 54",
+      "alt": "A stacked graph of oil production as a percent of total reserves from 1930 to 2050, rising to a peak around 2010 and then falling, split into regions and oil types."
+     },
+     "title": "Peak oil",
+     "bullets": [
+      "**M. King Hubbert** correctly predicted that U.S. oil production would **peak in 1971**. We are now close to the peak of **global** oil production.",
+      "Conventional oil reserves will probably run out between **2050 and 2150**. People face many changes as oil runs out."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/hubbert_55.webp",
+      "slide": "slide 55",
+      "alt": "A graph of U.S. crude oil production from 1900 to 2010 rising to a peak around 1970 and then falling, closely following a red bell-shaped Hubbert curve."
+     },
+     "title": "The Hubbert curve",
+     "bullets": [
+      "The graph compares real U.S. crude oil production (blue) with Hubbert's **bell-shaped curve** (red). Production rose to a peak around **1970** and then fell, as the curve predicted."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gaspeak_57.webp",
+      "slide": "slide 57",
+      "alt": "A graph of Hubbert's 1962 bell-curve prediction for U.S. gas production compared with actual production, which follows it at first and then climbs again after about 2005, with a small inset of U.S. oil production."
+     },
+     "title": "Hubbert's curve for gas",
+     "bullets": [
+      "Hubbert also predicted U.S. **gas** production in **1962**.",
+      "Actual production followed the curve at first, but after about **2005** it **rose again** instead of falling."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/shale_58.webp",
+      "slide": "slide 58",
+      "alt": "Graphs of U.S. crude oil production falling from 1973 to about 2008 and then shooting back up by 2015, labelled America's shale revolution, and of Texas and North Dakota production rising sharply."
+     },
+     "title": "The shale revolution",
+     "bullets": [
+      "U.S. crude oil production fell for decades after its peak, then **shot back up after about 2008**. The graph labels this **America's shale revolution**.",
+      "Much of the new oil came from **Texas** and **North Dakota**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/pollution_62.webp",
+      "slide": "slide 62",
+      "alt": "Two tall smokestacks sending white smoke into a blue sky."
+     },
+     "title": "Environmental issues",
+     "bullets": [
+      "**Air pollution** comes from burning fossil fuels. Unburned hydrocarbons add to **photochemical smog**.",
+      "**Sulfur dioxide (SO₂)** from coal-fired power plants causes **acid rain**.",
+      "Added **CO₂** drives **global warming** and changes the **pH of the ocean**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Oil formed over millions of years but is burned in a few centuries, so production must rise, peak and fall."
+    },
+    {
+     "type": "trick",
+     "text": "Hubbert: up, peak, down, like a bell. U.S. oil peaked about 1970; shale gave it a second rise."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 54: Hubbert predicted the U.S. peak (1971), not the world peak. Conventional oil exhaustion is expected 2050-2150, not by 2030. SO₂ (from coal) causes acid rain; CO₂ causes warming and ocean pH change."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 51-62; Fig. 12.12a-c. Slides 55-60 are unlabelled graphs (U.S. crude vs Hubbert, EIA; Hubbert gas prediction, Wikipedia; AEI 'America's Shale Revolution'; IEA forecast). Slide 61 repeats 54.",
+    "Graph descriptions are read from the graphs; 'formed over millions of years but burned in centuries' is an added explanation."
+   ],
+   "images": [
+    {
+     "src": "img/resources/oilage_51.webp",
+     "slide": "slide 51",
+     "alt": "Smokestacks of a power plant at dusk with a timeline from 4000 BCE to 4000 CE where the Oil Age is a thin spike compared with the Bronze and Iron Ages."
+    },
+    {
+     "src": "img/resources/crunch_52.webp",
+     "slide": "slide 52",
+     "alt": "A street of old shops with parked cars, and the engine of a modern small car."
+    },
+    {
+     "src": "img/resources/prices_53.webp",
+     "slide": "slide 53",
+     "alt": "A graph of oil prices swinging up and down since 1986, and a bar chart of estimated oil reserves and oil already produced by region, with the Middle East and Africa far ahead."
+    },
+    {
+     "src": "img/resources/peak_54.webp",
+     "slide": "slide 54",
+     "alt": "A stacked graph of oil production as a percent of total reserves from 1930 to 2050, rising to a peak around 2010 and then falling, split into regions and oil types."
+    },
+    {
+     "src": "img/resources/hubbert_55.webp",
+     "slide": "slide 55",
+     "alt": "A graph of U.S. crude oil production from 1900 to 2010 rising to a peak around 1970 and then falling, closely following a red bell-shaped Hubbert curve."
+    },
+    {
+     "src": "img/resources/gaspeak_57.webp",
+     "slide": "slide 57",
+     "alt": "A graph of Hubbert's 1962 bell-curve prediction for U.S. gas production compared with actual production, which follows it at first and then climbs again after about 2005, with a small inset of U.S. oil production."
+    },
+    {
+     "src": "img/resources/shale_58.webp",
+     "slide": "slide 58",
+     "alt": "Graphs of U.S. crude oil production falling from 1973 to about 2008 and then shooting back up by 2015, labelled America's shale revolution, and of Texas and North Dakota production rising sharply."
+    },
+    {
+     "src": "img/resources/pollution_62.webp",
+     "slide": "slide 62",
+     "alt": "Two tall smokestacks sending white smoke into a blue sky."
+    }
+   ]
+  },
+  {
+   "id": "minerals",
+   "title": "Mineral resources and metals",
+   "slides": "63-67",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/goldrush_63.webp",
+      "slide": "slide 63",
+      "alt": "An old black-and-white photo of gold prospectors panning and digging in a rocky stream bed."
+     },
+     "title": "A long history",
+     "bullets": [
+      "The search for mineral resources has a rich human history: the **Native American copper trade**, the **Spanish conquistadors**, and the **California and Klondike gold rushes** are all examples."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/categories_64.webp",
+      "slide": "slide 64",
+      "alt": "A pile of colourful fluorite crystals shaped like octahedra, with two lists: metallic resources gold, silver, copper, lead, zinc, iron and aluminum, and nonmetallic resources sand and gravel, gypsum, halite, phosphate and dimension stone."
+     },
+     "title": "Metallic and nonmetallic",
+     "bullets": [
+      "There are two major categories of mineral resources:",
+      "**Metallic**: gold, silver, copper, lead, zinc, iron and aluminum.",
+      "**Nonmetallic**: sand and gravel, gypsum, halite (salt), phosphate and dimension stone."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/metal_65.webp",
+      "slide": "slide 65",
+      "alt": "A lump of white quartz with gold in it, and shiny gold bracelets on display in a marketplace."
+     },
+     "title": "What a metal is",
+     "bullets": [
+      "A metal's properties come from its **bond type and structure**.",
+      "Metals can be **ductile** (drawn into thin wires) or **malleable** (hammered into thin sheets)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/copper_66.webp",
+      "slide": "slide 66",
+      "alt": "A large, flat, irregular sheet of native copper on display."
+     },
+     "title": "Native metals",
+     "bullets": [
+      "**Native metals** (gold, silver, copper, iron) occur naturally in **pure form**.",
+      "People have used native metals for thousands of years: they are easy to shape into tools by **cold working**, and they are **rare and durable**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/ore_67.webp",
+      "slide": "slide 67",
+      "alt": "Swirling red, grey and blue banded iron rock, and a polished slab of bright green and blue azurite, malachite and chrysocolla."
+     },
+     "title": "What an ore is",
+     "bullets": [
+      "**Ore** is rock with metal-rich minerals concentrated enough to be **economic to mine**. The metal must also be extractable without too much expense.",
+      "There are many ore minerals. Most are **sulfides** or **oxides**, and many are beautifully coloured."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "A rock only counts as ore if mining it makes money, so the same rock can be ore at a high metal price and waste rock at a low one."
+    },
+    {
+     "type": "trick",
+     "text": "Ductile = drawn (wires). Malleable = mashed (sheets)."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 96 review question: the two types of non-energy resources are METALLIC and NONMETALLIC, not natural/manmade or surface/subsurface."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 63-67; 4th edition Fig. 15.1, Fig. 12.14, 12.15b.",
+    "Slide 96 is the review question on non-energy resources (answer E). The 'why' box on ore depending on price is an added explanation."
+   ],
+   "images": [
+    {
+     "src": "img/resources/goldrush_63.webp",
+     "slide": "slide 63",
+     "alt": "An old black-and-white photo of gold prospectors panning and digging in a rocky stream bed."
+    },
+    {
+     "src": "img/resources/categories_64.webp",
+     "slide": "slide 64",
+     "alt": "A pile of colourful fluorite crystals shaped like octahedra, with two lists: metallic resources gold, silver, copper, lead, zinc, iron and aluminum, and nonmetallic resources sand and gravel, gypsum, halite, phosphate and dimension stone."
+    },
+    {
+     "src": "img/resources/metal_65.webp",
+     "slide": "slide 65",
+     "alt": "A lump of white quartz with gold in it, and shiny gold bracelets on display in a marketplace."
+    },
+    {
+     "src": "img/resources/copper_66.webp",
+     "slide": "slide 66",
+     "alt": "A large, flat, irregular sheet of native copper on display."
+    },
+    {
+     "src": "img/resources/ore_67.webp",
+     "slide": "slide 67",
+     "alt": "Swirling red, grey and blue banded iron rock, and a polished slab of bright green and blue azurite, malachite and chrysocolla."
+    }
+   ]
+  },
+  {
+   "id": "orehot",
+   "title": "How ores form: magma and hot water",
+   "slides": "68-73",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/oreproc_68.webp",
+      "slide": "slide 68",
+      "alt": "Dark metallic mineral crystals on pale rock with a list of seven ore-forming processes."
+     },
+     "title": "Seven ore-forming processes",
+     "bullets": [
+      "Ore deposits form by these geologic processes: **magmatic activity**, **hydrothermal alteration**, **secondary enrichment**, **groundwater transport (MVT)**, **sedimentary processes**, **residual weathering** and **hydraulic sorting**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_oreprocesses.webp",
+      "slide": "none (original diagram)",
+      "alt": "Seven coloured rows, one per ore-forming process, each with how it concentrates metal and an example: magmatic, hydrothermal, secondary enrichment, groundwater transport (MVT), sedimentary, residual weathering and hydraulic sorting."
+     },
+     "title": "All seven at a glance",
+     "bullets": [
+      "Each process concentrates metal in a different setting: **magma**, **hot water**, **groundwater**, **sediment**, **weathering** or **running water**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/magmatic_69.webp",
+      "slide": "slide 69",
+      "alt": "Diagram of a volcano above a magma chamber where heavy sulfide ore minerals sink and collect at the bottom, and a photo of shiny cubic pyrite crystals."
+     },
+     "title": "Magmatic deposits",
+     "bullets": [
+      "**Magmatic deposits** form from a cooling plutonic intrusion.",
+      "**Sulfide minerals** crystallize early and **sink** in the magma chamber, forming **massive sulfide** deposits.",
+      "Massive sulfide ores include **pyrite**, **chalcopyrite** and **galena**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/hydrothermal_70.webp",
+      "slide": "slide 70",
+      "alt": "Diagram of rainwater soaking into the ground, being heated around a magma body under a volcano and circulating back up."
+     },
+     "title": "Hydrothermal deposits",
+     "bullets": [
+      "**Hydrothermal deposits** form from **hot water**, which is very chemically reactive.",
+      "Groundwater heated by an igneous intrusion **leaches metal ions** out of the rock. Minerals **precipitate** when the water moves to lower pressure and temperature.",
+      "The ore is spread through the intrusion or fills fractures as **veins**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/smoker_71.webp",
+      "slide": "slide 71",
+      "alt": "A black smoker chimney on the sea floor puffing a dark cloud of sulfide minerals, with living organisms nearby and a diagram of the chimney on pillow basalt."
+     },
+     "title": "Black smokers",
+     "bullets": [
+      "Hydrothermal deposits also form at **black smokers** on mid-ocean ridges.",
+      "Seawater seeps into cracked oceanic crust, is heated by nearby magma and **leaches metals**. The hot water rises and pours out; when it hits **cold ocean water**, the metals crystallize quickly and settle near the **chimney**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/secondary_72.webp",
+      "slide": "slide 72",
+      "alt": "A rough rock crusted with bright green malachite and blue azurite."
+     },
+     "title": "Secondary enrichment",
+     "bullets": [
+      "**Secondary-enrichment deposits** form when **groundwater leaches and oxidizes** primary sulfide ores.",
+      "The water adds O₂, OH and CO₂, forming a new set of minerals. **Malachite** (green) and **azurite** (blue) are important copper ores formed this way."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/mvt_73.webp",
+      "slide": "slide 73",
+      "alt": "A diagram of hot groundwater flowing from an orogenic belt through a foreland basin and depositing MVT ores at the far edge, and a photo of white rock speckled with ore minerals."
+     },
+     "title": "Mississippi Valley-type ores",
+     "bullets": [
+      "**Groundwater transport** makes **Mississippi Valley-type (MVT)** ores.",
+      "Mountain belts **squeeze** hot water through deep basins like a squeegee. The hot water leaches minerals and carries them; when the basin brines reach the surface and cool, they **deposit metals**.",
+      "MVT ores are named for the **lead-zinc (Pb-Zn)** deposits in the Mississippi Valley."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Hot water dissolves metals easily and drops them when it cools, so anywhere hot fluids rise and cool can grow ore."
+    },
+    {
+     "type": "trick",
+     "text": "Sink (magmatic), leach and cool (hydrothermal and smokers), rust (secondary enrichment), squeegee (MVT)."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 69: in magmatic deposits the sulfides crystallize EARLY and SINK; they do not float to the top. Malachite and azurite are SECONDARY minerals made from older sulfide ore."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 68-73; Fig. 12.15a, 3.8c, 12.16a-c, 2.18, 9.19."
+   ],
+   "images": [
+    {
+     "src": "img/resources/oreproc_68.webp",
+     "slide": "slide 68",
+     "alt": "Dark metallic mineral crystals on pale rock with a list of seven ore-forming processes."
+    },
+    {
+     "src": "img/resources/gen_oreprocesses.webp",
+     "slide": "none (original diagram)",
+     "alt": "Seven coloured rows, one per ore-forming process, each with how it concentrates metal and an example: magmatic, hydrothermal, secondary enrichment, groundwater transport (MVT), sedimentary, residual weathering and hydraulic sorting."
+    },
+    {
+     "src": "img/resources/magmatic_69.webp",
+     "slide": "slide 69",
+     "alt": "Diagram of a volcano above a magma chamber where heavy sulfide ore minerals sink and collect at the bottom, and a photo of shiny cubic pyrite crystals."
+    },
+    {
+     "src": "img/resources/hydrothermal_70.webp",
+     "slide": "slide 70",
+     "alt": "Diagram of rainwater soaking into the ground, being heated around a magma body under a volcano and circulating back up."
+    },
+    {
+     "src": "img/resources/smoker_71.webp",
+     "slide": "slide 71",
+     "alt": "A black smoker chimney on the sea floor puffing a dark cloud of sulfide minerals, with living organisms nearby and a diagram of the chimney on pillow basalt."
+    },
+    {
+     "src": "img/resources/secondary_72.webp",
+     "slide": "slide 72",
+     "alt": "A rough rock crusted with bright green malachite and blue azurite."
+    },
+    {
+     "src": "img/resources/mvt_73.webp",
+     "slide": "slide 73",
+     "alt": "A diagram of hot groundwater flowing from an orogenic belt through a foreland basin and depositing MVT ores at the far edge, and a photo of white rock speckled with ore minerals."
+    }
+   ]
+  },
+  {
+   "id": "orecool",
+   "title": "How ores form: sediment, weathering and running water",
+   "slides": "74-77",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/bif_74.webp",
+      "slide": "slide 74",
+      "alt": "Folded rock with bright red jasper layers alternating with grey hematite layers, with a pocket knife for scale."
+     },
+     "title": "Banded iron formations",
+     "bullets": [
+      "**Sedimentary deposits** form in sedimentary settings under special conditions.",
+      "**Banded iron formations (BIFs)** have alternating layers of grey **hematite (Fe₂O₃)** and iron-rich red **chert (jasper)**.",
+      "BIFs formed **2.5 to 1.8 billion years ago** and record the start of **oxygen build-up** in Earth's atmosphere."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/climate_75.webp",
+      "slide": "slide 75",
+      "alt": "A block diagram of soils from polar to temperate, desert and tropical climates, with a deep orange weathered zone under the tropical forest above unweathered rock."
+     },
+     "title": "Weathering depends on climate",
+     "bullets": [
+      "How deep rock weathers depends on the **climate**. Under the hot, rainy **tropics** the weathered layer is far deeper than under polar, temperate or desert climates."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/residual_76.webp",
+      "slide": "slide 76",
+      "alt": "A cliff of bright red-orange tropical soil, and a column of soil layers above weathered rock."
+     },
+     "title": "Residual deposits",
+     "bullets": [
+      "**Residual mineral deposits** form in the extreme chemical weathering of the hot, rainy **tropics**.",
+      "Intense weathering strips almost everything out of the soil except the most **insoluble** elements. The leftover soil is rich in **iron and aluminum oxides**.",
+      "The aluminum-rich soil forms **bauxite**, the main ore of **aluminum**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/placer_77.webp",
+      "slide": "slide 77",
+      "alt": "Block diagram of a mountain stream where blocks of ore break off veins and the river current sorts the grains downstream."
+     },
+     "title": "Placer deposits",
+     "bullets": [
+      "**Placer deposits** form by **hydraulic sorting** in fast-moving water.",
+      "**Low-density** minerals stay suspended and are washed away, while **high-density** grains settle out and are concentrated.",
+      "Hydraulic sorting concentrates **gold, tin and iron**. Geologists can trace the ore back **upstream** to its original source."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_placer.webp",
+      "slide": "none (original diagram)",
+      "alt": "Animation of a fast stream carrying pale light grains away downstream while heavy gold-coloured grains drop into a hollow in the stream bed. Labels: low-density grains stay suspended and are washed away; high-density grains such as gold, tin and iron settle out."
+     },
+     "title": "How hydraulic sorting works",
+     "bullets": [
+      "The faster the water, the more it can carry. Heavy grains are the first to **drop** wherever the current slows, so they pile up together."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Water sorts grains by how heavy they are, so dense metal grains end up concentrated in one place."
+    },
+    {
+     "type": "trick",
+     "text": "BIF = Bands of Iron, First oxygen. Bauxite = what is left after the tropics wash everything else away."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 76: bauxite is a RESIDUAL deposit made by weathering, not a hydrothermal one. Placers concentrate the DENSE grains; the light ones wash away."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 74-77; Fig. 12.17, B.12c, 12.18. Slide 75 is an unlabelled Essentials of Geology figure of weathering by climate.",
+    "'Heavy grains drop first where the current slows' links to the Streams unit (competence); added for clarity."
+   ],
+   "images": [
+    {
+     "src": "img/resources/bif_74.webp",
+     "slide": "slide 74",
+     "alt": "Folded rock with bright red jasper layers alternating with grey hematite layers, with a pocket knife for scale."
+    },
+    {
+     "src": "img/resources/climate_75.webp",
+     "slide": "slide 75",
+     "alt": "A block diagram of soils from polar to temperate, desert and tropical climates, with a deep orange weathered zone under the tropical forest above unweathered rock."
+    },
+    {
+     "src": "img/resources/residual_76.webp",
+     "slide": "slide 76",
+     "alt": "A cliff of bright red-orange tropical soil, and a column of soil layers above weathered rock."
+    },
+    {
+     "src": "img/resources/placer_77.webp",
+     "slide": "slide 77",
+     "alt": "Block diagram of a mountain stream where blocks of ore break off veins and the river current sorts the grains downstream."
+    },
+    {
+     "src": "img/resources/gen_placer.webp",
+     "slide": "none (original diagram)",
+     "alt": "Animation of a fast stream carrying pale light grains away downstream while heavy gold-coloured grains drop into a hollow in the stream bed. Labels: low-density grains stay suspended and are washed away; high-density grains such as gold, tin and iron settle out."
+    }
+   ]
+  },
+  {
+   "id": "oremining",
+   "title": "Finding and mining ore",
+   "slides": "78-82",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/tectonic_78.webp",
+      "slide": "slide 78",
+      "alt": "A mountain with bright red and orange altered rock and snow patches above a pine forest."
+     },
+     "title": "Where ore deposits are found",
+     "bullets": [
+      "**Plate tectonics** is the main control. Igneous and hydrothermal activity happen at **plate boundaries**, along **rifts** and at **hot spots**, where most mineral resources form.",
+      "These tectonic effects are then **overprinted** by the hydrologic cycle (weathering and running water)."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/explore_79.webp",
+      "slide": "slide 79",
+      "alt": "Hands holding a meter with a probe over gravel and rocks to measure radioactivity."
+     },
+     "title": "Exploration",
+     "bullets": [
+      "Ores are found by evidence of **metal enrichment**. Exploration is a systematic geologic investigation using advanced technology.",
+      "**Geophysical surveys** measure magnetism, gravity and radioactivity. **Geochemical surveys** test water, sediment, soil and living things.",
+      "Sometimes no technology is needed: **brightly coloured rock and soil** can signal enrichment."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/cores_80.webp",
+      "slide": "slide 80",
+      "alt": "Long cylinders of grey drill core laid out in white trays on the ground, with a measuring tape and a depth marker."
+     },
+     "title": "Is it worth mining?",
+     "bullets": [
+      "Once found, the size of a possible deposit is worked out from **geophysical** signals, **core drilling** and **geochemical assays**.",
+      "A deposit is developed only if it is **economic**: environmental concerns must be handled, and the ore must be extracted, processed and sold for a **profit**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/openpit_81.webp",
+      "slide": "slide 81",
+      "alt": "A huge terraced open-pit mine with haul trucks, and a red mountain of waste rock above a town."
+     },
+     "title": "Open-pit mining",
+     "bullets": [
+      "**Open-pit mining** is used for **shallow** ore bodies (**less than 100 m** deep). It is **less expensive and less dangerous** than underground mining.",
+      "It makes **large excavations**, and waste rock is stored in giant **spoil piles**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/undermine_82.webp",
+      "slide": "slide 82",
+      "alt": "A rough rock tunnel with timber supports, and a diagram of a hoist and vertical shaft with tunnels reaching an ore body below the surface."
+     },
+     "title": "Underground mining",
+     "bullets": [
+      "Underground mining digs **vertical shafts and tunnels**. The ore is loosened by **blasting** and hauled to the surface.",
+      "Underground mines are **expensive and dangerous** because of tunnel collapses and **poisonous and explosive gases**."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Metals are concentrated where heat and fluids move, and on Earth that mostly happens where plates meet, pull apart, or sit over hot spots."
+    },
+    {
+     "type": "trick",
+     "text": "Find it (surveys), measure it (cores and assays), then dig it: open pit if shallow, tunnels if deep."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 80: a deposit is mined only if it is ECONOMIC; finding metal is not enough. Open-pit is for shallow (<100 m) ore and is the CHEAPER, safer method."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 78-82; Fig. 12.19a, b. The slide 80 photo is cropped to the drill cores."
+   ],
+   "images": [
+    {
+     "src": "img/resources/tectonic_78.webp",
+     "slide": "slide 78",
+     "alt": "A mountain with bright red and orange altered rock and snow patches above a pine forest."
+    },
+    {
+     "src": "img/resources/explore_79.webp",
+     "slide": "slide 79",
+     "alt": "Hands holding a meter with a probe over gravel and rocks to measure radioactivity."
+    },
+    {
+     "src": "img/resources/cores_80.webp",
+     "slide": "slide 80",
+     "alt": "Long cylinders of grey drill core laid out in white trays on the ground, with a measuring tape and a depth marker."
+    },
+    {
+     "src": "img/resources/openpit_81.webp",
+     "slide": "slide 81",
+     "alt": "A huge terraced open-pit mine with haul trucks, and a red mountain of waste rock above a town."
+    },
+    {
+     "src": "img/resources/undermine_82.webp",
+     "slide": "slide 82",
+     "alt": "A rough rock tunnel with timber supports, and a diagram of a hoist and vertical shaft with tunnels reaching an ore body below the surface."
+    }
+   ]
+  },
+  {
+   "id": "nonmetal",
+   "title": "Nonmetallic mineral resources",
+   "slides": "83-86",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/industrial_83.webp",
+      "slide": "slide 83",
+      "alt": "A gravel processing plant with conveyor belts and screens above piles of crushed stone."
+     },
+     "title": "Industrial minerals",
+     "bullets": [
+      "Society uses many geologic materials that **don't contain metals**.",
+      "These **industrial minerals** include **dimension stone, crushed stone, concrete, gypsum, phosphate, sand, salt** and other geologic materials."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/dimension_84.webp",
+      "slide": "slide 84",
+      "alt": "Polished stone floor tiles, and a quarry with a crane cutting large blocks of pink stone."
+     },
+     "title": "Dimension stone",
+     "bullets": [
+      "**Dimension stone** is rock cut into slabs for **building materials**, chosen for its **looks and durability**.",
+      "Cut and polished slabs are highly prized. Special quarrying tools and trained workers cut the rock carefully."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/aggregate_85.webp",
+      "slide": "slide 85",
+      "alt": "A giant yellow dump truck loaded with crushed stone in a quarry."
+     },
+     "title": "Crushed stone",
+     "bullets": [
+      "**Crushed stone** (**aggregate**) has many uses. It is the foundation for **all roads and railways**.",
+      "It is a raw material for **cement, concrete and asphalt**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/ree_86.webp",
+      "slide": "slide 86",
+      "alt": "Containers of white rare earth mineral concentrate drying beside a digger, and the inside of a computer hard drive."
+     },
+     "title": "Minerals in our homes",
+     "bullets": [
+      "**Rare earth elements (REEs)** are essential for **high-tech** devices.",
+      "Many nonmetallic minerals are common at home: **calcite** in cement and concrete; **clay** in bricks, pottery, porcelain and other ceramics; **gypsum** in wallboard and plaster; **quartz** in window glass."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Nonmetallic resources are cheap per tonne, but we use them in enormous amounts: every road, building and window needs them."
+    },
+    {
+     "type": "trick",
+     "text": "Calcite → cement. Clay → ceramics. Gypsum → wallboard. Quartz → glass."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 86: window glass is made from QUARTZ; wallboard from GYPSUM. Do not swap them."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 83-86; Fig. 12.20a, 4th edition Chapter 15 opener and Fig. 15.14.",
+    "'Cheap per tonne but used in enormous amounts' is an added explanation."
+   ],
+   "images": [
+    {
+     "src": "img/resources/industrial_83.webp",
+     "slide": "slide 83",
+     "alt": "A gravel processing plant with conveyor belts and screens above piles of crushed stone."
+    },
+    {
+     "src": "img/resources/dimension_84.webp",
+     "slide": "slide 84",
+     "alt": "Polished stone floor tiles, and a quarry with a crane cutting large blocks of pink stone."
+    },
+    {
+     "src": "img/resources/aggregate_85.webp",
+     "slide": "slide 85",
+     "alt": "A giant yellow dump truck loaded with crushed stone in a quarry."
+    },
+    {
+     "src": "img/resources/ree_86.webp",
+     "slide": "slide 86",
+     "alt": "Containers of white rare earth mineral concentrate drying beside a digger, and the inside of a computer hard drive."
+    }
+   ]
+  },
+  {
+   "id": "future",
+   "title": "How long will minerals last? Mining's impacts",
+   "slides": "87-91",
+   "steps": [
+    {
+     "img": {
+      "src": "img/resources/nonrenew_87.webp",
+      "slide": "slide 87",
+      "alt": "Dry hills with pale cliff bands under a blue sky."
+     },
+     "title": "Minerals are nonrenewable",
+     "bullets": [
+      "World demand for mineral resources is **enormous**, especially in industrialized countries.",
+      "The U.S. uses **4 billion tons** of geologic materials a year, which means moving **18 billion tons** of material: about **95 times** the sediment the Mississippi River moves each year.",
+      "Mineral deposits formed by geologic processes that are **too slow** to make new ones. Like coal and oil, they are **nonrenewable**: once mined, they are gone forever."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/lifetime_88.webp",
+      "slide": "slide 88",
+      "alt": "Trays of mineral and ore samples with a table of expected lifetimes of world and U.S. ore resources."
+     },
+     "title": "Estimating lifetimes",
+     "bullets": [
+      "The expected lifetime of a mineral resource can be estimated from **how fast we use it** and how much **reserve** has been calculated. Some are running out.",
+      "Continued use of scarce minerals will need: **new sources**, **higher prices** (to make hard-to-get reserves profitable), **efficiency and conservation**, **substitution**, **recycling**, or **doing without**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_lifetime.webp",
+      "slide": "none (original diagram)",
+      "alt": "A bar chart of the expected lifetime of world ore resources in years: aluminum 330, iron 120, nickel and chromium 75, manganese 70, copper 65, cobalt 50, platinum 45, zinc and gold 30, lead 20. A box gives the rule: lifetime in years equals calculated reserves divided by the amount used per year."
+     },
+     "title": "Lifetimes compared",
+     "bullets": [
+      "From the table: world **aluminum** should last about **330 years** and **iron 120**, but **lead** only about **20** and **zinc and gold 30**.",
+      "**Lifetime (years) = reserves ÷ amount used per year.**"
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/impacts_89.webp",
+      "slide": "slide 89",
+      "alt": "A huge open-pit copper mine and its terraced spoil above the houses of Bisbee, Arizona."
+     },
+     "title": "The footprint of mining",
+     "bullets": [
+      "Mineral extraction and processing leave a **big footprint**. Open-pit mines are large **scars** on the landscape.",
+      "Mining makes huge volumes of waste **tailings**, often **acidic** and loaded with **toxic metals**. Bare tailings can be sources of **dust and runoff**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/amd_90.webp",
+      "slide": "slide 90",
+      "alt": "A stream with rust-orange rocks, orange-coated water, and a meter measuring the low pH of a water sample."
+     },
+     "title": "Acid mine drainage",
+     "bullets": [
+      "**Sulfide minerals** react with **water and O₂** to make **sulfuric acid (H₂SO₄)**: **acid mine drainage (AMD)**.",
+      "Water from sulfide spoil piles becomes acidic (**pH below 5.7**). The acid dissolves **iron**, which then coats streams in **rust**.",
+      "AMD also **mobilizes heavy metals** and **kills stream life**."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/gen_amd.webp",
+      "slide": "none (original diagram)",
+      "alt": "A flow chart: sulfide minerals in spoil piles plus water and oxygen make sulfuric acid with a pH below 5.7, which dissolves iron that coats the stream in rust, mobilizes heavy metals and kills stream life."
+     },
+     "title": "How acid mine drainage happens",
+     "bullets": [
+      "Sulfides + water + oxygen → sulfuric acid → acid runoff that rusts streams, frees heavy metals and kills stream life."
+     ]
+    },
+    {
+     "img": {
+      "src": "img/resources/processing_91.webp",
+      "slide": "slide 91",
+      "alt": "A flat, barren grey landscape below the tall smokestacks of an ore-processing plant, with a few people standing in the distance."
+     },
+     "title": "Processing and progress",
+     "bullets": [
+      "**Ore processing** releases toxic chemicals, which can be spread by **air and rain**.",
+      "In recent years impacts have been reduced through better cooperation between producers and consumers, guided by **regulation** of mining."
+     ]
+    }
+   ],
+   "bullets": [],
+   "boxes": [
+    {
+     "type": "why",
+     "text": "Ore deposits took millions of years of geology to concentrate, but people can dig one out in decades."
+    },
+    {
+     "type": "trick",
+     "text": "Lifetime = reserves ÷ yearly use. Six ways to stretch scarce minerals: find, pay more, save, swap, recycle, do without."
+    },
+    {
+     "type": "trap",
+     "text": "Slide 87: mineral resources are NONRENEWABLE, like coal and oil. Slide 90: AMD water is ACIDIC (pH below 5.7), not alkaline."
+    }
+   ],
+   "sourceNotes": [
+    "Slides 87-91; Table 12.2 on slide 88 (lifetimes read from its World column), Fig. 12.21b.",
+    "The lifetime formula is the slide 88 idea written as an equation (added for clarity)."
+   ],
+   "images": [
+    {
+     "src": "img/resources/nonrenew_87.webp",
+     "slide": "slide 87",
+     "alt": "Dry hills with pale cliff bands under a blue sky."
+    },
+    {
+     "src": "img/resources/lifetime_88.webp",
+     "slide": "slide 88",
+     "alt": "Trays of mineral and ore samples with a table of expected lifetimes of world and U.S. ore resources."
+    },
+    {
+     "src": "img/resources/gen_lifetime.webp",
+     "slide": "none (original diagram)",
+     "alt": "A bar chart of the expected lifetime of world ore resources in years: aluminum 330, iron 120, nickel and chromium 75, manganese 70, copper 65, cobalt 50, platinum 45, zinc and gold 30, lead 20. A box gives the rule: lifetime in years equals calculated reserves divided by the amount used per year."
+    },
+    {
+     "src": "img/resources/impacts_89.webp",
+     "slide": "slide 89",
+     "alt": "A huge open-pit copper mine and its terraced spoil above the houses of Bisbee, Arizona."
+    },
+    {
+     "src": "img/resources/amd_90.webp",
+     "slide": "slide 90",
+     "alt": "A stream with rust-orange rocks, orange-coated water, and a meter measuring the low pH of a water sample."
+    },
+    {
+     "src": "img/resources/gen_amd.webp",
+     "slide": "none (original diagram)",
+     "alt": "A flow chart: sulfide minerals in spoil piles plus water and oxygen make sulfuric acid with a pH below 5.7, which dissolves iron that coats the stream in rust, mobilizes heavy metals and kills stream life."
+    },
+    {
+     "src": "img/resources/processing_91.webp",
+     "slide": "slide 91",
+     "alt": "A flat, barren grey landscape below the tall smokestacks of an ore-processing plant, with a few people standing in the distance."
+    }
+   ]
+  }
+ ],
+ "table": {
+  "title": "Energy resources at a glance",
+  "head": [
+   "Resource",
+   "Where its energy comes from",
+   "Key fact"
+  ],
+  "rows": [
+   [
+    "Oil",
+    "Stored sunlight (ancient sea-floor organisms)",
+    "Nonrenewable and declining; conventional reserves may run out 2050-2150"
+   ],
+   [
+    "Natural gas",
+    "Stored sunlight",
+    "More abundant and cleaner than oil; needs high-pressure pipelines"
+   ],
+   [
+    "Coal",
+    "Stored sunlight (swamp plants)",
+    "Over 70% carbon; a dominant CO₂ emitter; SO₂ makes acid rain"
+   ],
+   [
+    "Nuclear",
+    "Fission of uranium-235",
+    "No greenhouse gases, but waste stays toxic for thousands of years"
+   ],
+   [
+    "Geothermal",
+    "Earth's internal heat",
+    "Best where the geothermal gradient is high (volcanic regions)"
+   ],
+   [
+    "Hydroelectric",
+    "Sun and gravity (flowing water)",
+    "Potential energy turns turbines; some dams use the tides"
+   ],
+   [
+    "Wind",
+    "Sun and gravity (moving air)",
+    "Renewable and carbon free; noisy and kills birds"
+   ],
+   [
+    "Solar",
+    "The Sun directly",
+    "Most abundant, but diffuse and variable; best for small buildings"
+   ],
+   [
+    "Biofuels",
+    "Plants (photosynthesis)",
+    "Ethanol from corn; biodiesel from fats and vegetable oils"
+   ],
+   [
+    "Fuel cells",
+    "Chemical reaction of hydrogen and oxygen",
+    "Clean, but storing compressed hydrogen is a problem"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "id": "res-c1",
+   "front": "Energy resource",
+   "back": "Matter that can produce heat, power muscles, generate electricity or move machinery.",
+   "short": "Matter that supplies energy",
+   "src": "Slide 3"
+  },
+  {
+   "id": "res-c2",
+   "front": "Fuel",
+   "back": "An energy resource in a usable form.",
+   "short": "Energy resource ready to use",
+   "src": "Slide 3"
+  },
+  {
+   "id": "res-c3",
+   "front": "Photosynthesis",
+   "back": "Plants use light to make sugar and oxygen from water and CO₂, storing solar energy in hydrogen-carbon bonds.",
+   "short": "Light stored in H-C bonds",
+   "src": "Slide 7"
+  },
+  {
+   "id": "res-c4",
+   "front": "Nuclear fission",
+   "back": "Splitting certain radioactive atoms to release tremendous energy. It runs nuclear power plants.",
+   "short": "Splitting atoms for energy",
+   "src": "Slides 12, 40"
+  },
+  {
+   "id": "res-c5",
+   "front": "Geothermal energy",
+   "back": "Earth's internal heat, from leftover formation heat and radioactivity. It drives plate tectonics and can be harnessed.",
+   "short": "Earth's internal heat",
+   "src": "Slides 13, 46"
+  },
+  {
+   "id": "res-c6",
+   "front": "Hydrocarbon",
+   "back": "A compound of hydrogen and carbon, from once-living creatures. Oil and natural gas are hydrocarbons.",
+   "short": "H + C compound in oil and gas",
+   "src": "Slide 14"
+  },
+  {
+   "id": "res-c7",
+   "front": "Kerogen",
+   "back": "Organic matter in black shale, broken down by heat and pressure; the material oil and gas form from.",
+   "short": "Organic matter oil forms from",
+   "src": "Slide 15"
+  },
+  {
+   "id": "res-c8",
+   "front": "Source rock",
+   "back": "The rock where oil forms, usually black shale. It is no good for storing oil.",
+   "short": "Where oil forms (black shale)",
+   "src": "Slide 15"
+  },
+  {
+   "id": "res-c9",
+   "front": "Oil window",
+   "back": "The depth and temperature range where oil forms: about 90 to 160 °C.",
+   "short": "90-160 °C: oil forms",
+   "src": "Slide 16"
+  },
+  {
+   "id": "res-c10",
+   "front": "Gas window",
+   "back": "Deeper and hotter than the oil window (160 to 250 °C), where oil breaks down into natural gas.",
+   "short": "160-250 °C: gas only",
+   "src": "Slide 16"
+  },
+  {
+   "id": "res-c11",
+   "front": "Reservoir rock",
+   "back": "A porous, permeable rock that hydrocarbons migrate into and are stored in.",
+   "short": "Porous rock that stores oil",
+   "src": "Slide 18"
+  },
+  {
+   "id": "res-c12",
+   "front": "Porosity",
+   "back": "The open pore space in a sedimentary rock.",
+   "short": "Open space in a rock",
+   "src": "Slide 18"
+  },
+  {
+   "id": "res-c13",
+   "front": "Permeability",
+   "back": "How easily fluid flows through a rock; it depends on how well the pores are connected.",
+   "short": "How easily fluid flows through",
+   "src": "Slide 18"
+  },
+  {
+   "id": "res-c14",
+   "front": "Seal",
+   "back": "A low-permeability rock (shale, salt, unfractured limestone) that stops oil and gas flowing out of a reservoir.",
+   "short": "Low-permeability cap rock",
+   "src": "Slide 19"
+  },
+  {
+   "id": "res-c15",
+   "front": "Anticlinal trap",
+   "back": "A trap made when rock layers are folded into an arch; oil and gas collect at the top under a seal.",
+   "short": "Arch-shaped fold that traps oil",
+   "src": "Slide 17"
+  },
+  {
+   "id": "res-c16",
+   "front": "Salt-dome trap",
+   "back": "A trap made when buried salt flows upward like a plastic and bends the layers above it.",
+   "short": "Rising salt bends layers",
+   "src": "Slide 20"
+  },
+  {
+   "id": "res-c17",
+   "front": "Seismic reflection",
+   "back": "Bouncing sound off rock layers to image the subsurface and find traps without drilling.",
+   "short": "Sound images of buried layers",
+   "src": "Slide 24"
+  },
+  {
+   "id": "res-c18",
+   "front": "Primary recovery",
+   "back": "Pumping oil out of a reservoir; it removes only about 30% of the oil.",
+   "short": "Pumping: about 30%",
+   "src": "Slide 26"
+  },
+  {
+   "id": "res-c19",
+   "front": "Secondary recovery",
+   "back": "Enhanced techniques that inject fluids such as steam or CO₂ to heat or push out more oil.",
+   "short": "Inject steam or CO₂",
+   "src": "Slide 26"
+  },
+  {
+   "id": "res-c20",
+   "front": "Refining",
+   "back": "Distilling crude oil into separate compounds; lighter molecules rise, heavier ones stay at the bottom.",
+   "short": "Separating crude oil",
+   "src": "Slide 27"
+  },
+  {
+   "id": "res-c21",
+   "front": "Natural gas",
+   "back": "Small, volatile hydrocarbons (methane, ethane, propane, butane); more abundant and cleaner than oil.",
+   "short": "Methane to butane",
+   "src": "Slide 28"
+  },
+  {
+   "id": "res-c22",
+   "front": "Tar sands",
+   "back": "Sand reservoirs of leftover heavy oil (bitumen) after bacteria digested the light hydrocarbons; mined, not pumped.",
+   "short": "Bitumen in sand; mined",
+   "src": "Slide 29"
+  },
+  {
+   "id": "res-c23",
+   "front": "Oil shale",
+   "back": "Shale rich in kerogen that never reached the oil window; heating turns some into liquid hydrocarbons.",
+   "short": "Uncooked kerogen in shale",
+   "src": "Slide 30"
+  },
+  {
+   "id": "res-c24",
+   "front": "Coal",
+   "back": "A black, brittle, carbon-rich sedimentary rock made from swamp plants; over 70% carbon.",
+   "short": "Rock made from swamp plants",
+   "src": "Slides 31, 33"
+  },
+  {
+   "id": "res-c25",
+   "front": "Peat",
+   "back": "Compacted plant debris from an oxygen-poor swamp; the first step toward coal.",
+   "short": "Squeezed swamp plants",
+   "src": "Slide 33"
+  },
+  {
+   "id": "res-c26",
+   "front": "Strip mining",
+   "back": "Removing the rock and soil over a coal seam within about 100 m of the surface, then reclaiming the land.",
+   "short": "Mining shallow coal from above",
+   "src": "Slide 36"
+  },
+  {
+   "id": "res-c27",
+   "front": "Coalbed methane",
+   "back": "Methane made in buried coal, extracted like natural gas, especially from coal too deep to mine.",
+   "short": "Gas taken from deep coal",
+   "src": "Slide 38"
+  },
+  {
+   "id": "res-c28",
+   "front": "Control rods",
+   "back": "Neutron-absorbing rods that regulate and slow the rate of fission in a reactor.",
+   "short": "Rods that slow fission",
+   "src": "Slide 42"
+  },
+  {
+   "id": "res-c29",
+   "front": "Meltdown",
+   "back": "When loss of fission control melts the reactor core; molten material can cause a steam explosion.",
+   "short": "Core melts; steam explosion",
+   "src": "Slide 43"
+  },
+  {
+   "id": "res-c30",
+   "front": "Fuel cell",
+   "back": "A device that makes electricity, heat and water from hydrogen reacting with oxygen in an electrolyte.",
+   "short": "Hydrogen + oxygen → electricity",
+   "src": "Slide 50"
+  },
+  {
+   "id": "res-c31",
+   "front": "Ore",
+   "back": "Rock with metal-rich minerals concentrated enough to be economic to mine.",
+   "short": "Metal-rich rock worth mining",
+   "src": "Slide 67"
+  },
+  {
+   "id": "res-c32",
+   "front": "Native metal",
+   "back": "A metal that occurs naturally in pure form, such as gold, silver, copper or iron.",
+   "short": "Metal found pure",
+   "src": "Slide 66"
+  },
+  {
+   "id": "res-c33",
+   "front": "Massive sulfide deposit",
+   "back": "A magmatic ore made when sulfide minerals crystallize early and sink in a magma chamber.",
+   "short": "Sulfides sunk in magma",
+   "src": "Slide 69"
+  },
+  {
+   "id": "res-c34",
+   "front": "Black smoker",
+   "back": "A hot vent on a mid-ocean ridge where metal-rich water meets cold seawater and metals crystallize near the chimney.",
+   "short": "Sea-floor vent that drops metals",
+   "src": "Slide 71"
+  },
+  {
+   "id": "res-c35",
+   "front": "Secondary enrichment",
+   "back": "Groundwater leaches and oxidizes sulfide ore, making new minerals such as malachite and azurite.",
+   "short": "Groundwater remakes sulfide ore",
+   "src": "Slide 72"
+  },
+  {
+   "id": "res-c36",
+   "front": "MVT ore",
+   "back": "Mississippi Valley-type lead-zinc ore, deposited when hot basin brines squeezed by mountain belts cool.",
+   "short": "Pb-Zn ore from basin brines",
+   "src": "Slide 73"
+  },
+  {
+   "id": "res-c37",
+   "front": "Banded iron formation",
+   "back": "Alternating layers of grey hematite and red jasper, formed 2.5-1.8 billion years ago as oxygen built up.",
+   "short": "Hematite and jasper bands",
+   "src": "Slide 74"
+  },
+  {
+   "id": "res-c38",
+   "front": "Bauxite",
+   "back": "Aluminum-rich residual soil left by intense tropical weathering; the main ore of aluminum.",
+   "short": "Tropical aluminum ore",
+   "src": "Slide 76"
+  },
+  {
+   "id": "res-c39",
+   "front": "Placer deposit",
+   "back": "Dense mineral grains (gold, tin, iron) concentrated by hydraulic sorting in fast water.",
+   "short": "Heavy grains sorted by water",
+   "src": "Slide 77"
+  },
+  {
+   "id": "res-c40",
+   "front": "Acid mine drainage",
+   "back": "Sulfuric acid made when sulfides in mine waste react with water and O₂; it rusts streams and kills stream life.",
+   "short": "Acid runoff from sulfide waste",
+   "src": "Slide 90"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "res-1",
+   "q": "Which of the following is NOT a component of a hydrocarbon system?",
+   "options": [
+    "Source rock",
+    "Migration pathway",
+    "Reservoir rock",
+    "Seal",
+    "None of the above"
+   ],
+   "answer": 4,
+   "why": "All four are parts of a hydrocarbon system: oil forms in a source rock, migrates along a pathway into a reservoir rock and is held there by a trap with a seal.",
+   "source": "Slide 92"
+  },
+  {
+   "id": "res-2",
+   "q": "Which of the following is an energy source derived from sunlight?",
+   "options": [
+    "Wood",
+    "Coal",
+    "Oil",
+    "Natural gas",
+    "All of the above"
+   ],
+   "answer": 4,
+   "why": "Wood, coal, oil and natural gas all store solar energy captured by photosynthesis in hydrogen-carbon bonds.",
+   "source": "Slides 4, 7, 93"
+  },
+  {
+   "id": "res-3",
+   "q": "Which of the following is an energy source derived from sunlight?",
+   "options": [
+    "Hydropower",
+    "Nuclear (fission)",
+    "Tidal",
+    "Fuel cells",
+    "All of the above"
+   ],
+   "answer": 0,
+   "why": "The Sun evaporates water that falls as rain and flows downhill, so hydropower is driven by sunlight and gravity. Fission, tides and fuel cells are not.",
+   "source": "Slides 4, 10, 94"
+  },
+  {
+   "id": "res-4",
+   "q": "Which of the following is a renewable resource?",
+   "options": [
+    "Wood",
+    "Coal",
+    "Oil",
+    "Natural gas",
+    "All of the above"
+   ],
+   "answer": 0,
+   "why": "Trees regrow, so wood is renewable. Coal, oil and natural gas formed over millions of years and are nonrenewable.",
+   "source": "Slide 95"
+  },
+  {
+   "id": "res-5",
+   "q": "What are the two types of non-energy (mineral) resources?",
+   "options": [
+    "Natural and manmade",
+    "Marine and nonmarine",
+    "Surface and subsurface",
+    "Oil and natural gas",
+    "Metallic and nonmetallic"
+   ],
+   "answer": 4,
+   "why": "Mineral resources are metallic (gold, copper, iron...) or nonmetallic (sand and gravel, gypsum, salt...).",
+   "source": "Slides 64, 96"
+  },
+  {
+   "id": "res-6",
+   "q": "Today, roughly what share of the world's energy supply comes from fossil fuels?",
+   "options": [
+    "About 10%",
+    "About 25%",
+    "About 50%",
+    "More than 75%",
+    "Nearly 100%"
+   ],
+   "answer": 3,
+   "why": "Fossil fuels supply more than 75% of energy. On the pie chart oil, coal and gas add up to 80%.",
+   "source": "Slide 5",
+   "img": {
+    "src": "img/resources/growth_5.webp",
+    "alt": "A stacked graph of world energy use from 1850 to 2010, growing from mostly wood to huge amounts of coal, oil, gas, nuclear and hydroelectric power, and a pie chart of energy supplies with oil 33%, coal 26% and natural gas 21%."
+   }
+  },
+  {
+   "id": "res-7",
+   "q": "One barrel of oil holds about how many litres?",
+   "options": [
+    "42 L",
+    "100 L",
+    "159 L",
+    "200 L",
+    "1,000 L"
+   ],
+   "answer": 2,
+   "why": "1 barrel (bbl) = 42 gallons = 159 litres. 42 is the number of gallons, not litres.",
+   "source": "Slides 5, 22"
+  },
+  {
+   "id": "res-8",
+   "q": "How is solar energy stored in fossil fuels and wood?",
+   "options": [
+    "In hydrogen-carbon chemical bonds",
+    "As heat trapped in the rock layers",
+    "In radioactive atoms of the rock",
+    "As pressure inside the oil reservoir",
+    "As static electricity in the pores"
+   ],
+   "answer": 0,
+   "why": "Photosynthesis stores solar energy in hydrogen-carbon bonds; breaking (oxidizing) them releases it.",
+   "source": "Slide 7"
+  },
+  {
+   "id": "res-9",
+   "q": "What are the two sources of Earth's internal (geothermal) heat?",
+   "options": [
+    "Sunlight and tides",
+    "Leftover formation heat and radioactivity",
+    "Friction of plates and chemical reactions",
+    "Volcanoes and hot springs",
+    "Burning coal seams and oil fields"
+   ],
+   "answer": 1,
+   "why": "Geothermal energy comes from residual heat from the planet's formation and from radioactivity in the crust and mantle.",
+   "source": "Slide 13",
+   "img": {
+    "src": "img/resources/geothermal_13.webp",
+    "alt": "A geyser sending a huge white plume of steam into a blue sky."
+   }
+  },
+  {
+   "id": "res-10",
+   "q": "Where does oil begin to form?",
+   "options": [
+    "In oxygen-rich sand on a river bed",
+    "From swamp plants in fresh-water lakes",
+    "From volcanic gases trapped in magma",
+    "From organic debris on an anoxic sea floor",
+    "From large animals buried in desert dunes"
+   ],
+   "answer": 3,
+   "why": "Organic debris settles with sediment on an anoxic sea floor; buried 2-4 km, it becomes black shale with kerogen.",
+   "source": "Slide 15",
+   "img": {
+    "src": "img/resources/genesis_15.webp",
+    "alt": "Four columns showing organic plankton settling with clay on an oxygen-poor sea floor, being buried under pressure, becoming black shale source rock at 80 °C, and oil rising out of it at 120 °C."
+   }
+  },
+  {
+   "id": "res-11",
+   "q": "Rock buried in the 160-250 °C range will produce mostly...",
+   "options": [
+    "kerogen that has not changed",
+    "oil and gas together",
+    "coal",
+    "graphite",
+    "natural gas only"
+   ],
+   "answer": 4,
+   "why": "Oil and gas form at 90-160 °C (the oil window); 160-250 °C is the gas window (gas only); above 250 °C there is graphite.",
+   "source": "Slide 16",
+   "img": {
+    "src": "img/resources/windows_16.webp",
+    "alt": "A cliff of dark, layered shale with text boxes giving the oil and gas window temperatures."
+   }
+  },
+  {
+   "id": "res-12",
+   "q": "Why is a black shale source rock a poor place to drill for oil?",
+   "options": [
+    "It is far too hot to drill",
+    "It is no good for storing oil",
+    "It never contains kerogen",
+    "It is always under the sea",
+    "It contains only coal"
+   ],
+   "answer": 1,
+   "why": "The black shale makes the oil but is no good for storing it; the oil must migrate into a reservoir rock.",
+   "source": "Slides 15, 18"
+  },
+  {
+   "id": "res-13",
+   "q": "What makes a good reservoir rock?",
+   "options": [
+    "Low porosity and low permeability",
+    "High porosity but pores sealed by cement",
+    "High porosity and connected pores",
+    "Any rock that holds kerogen",
+    "Dense salt with no pore space"
+   ],
+   "answer": 2,
+   "why": "A reservoir needs pore space (porosity) and connected pores so fluid flows (permeability). Mineral cement reduces flow.",
+   "source": "Slide 18",
+   "img": {
+    "src": "img/resources/porosity_18.webp",
+    "alt": "Two microscope views of sandstone: grains with an open black pore between them, and a drawing of sand grains with blue water in the pores and cement between some grains."
+   }
+  },
+  {
+   "id": "res-14",
+   "q": "Which rock would make the best seal over an oil reservoir?",
+   "options": [
+    "Sand with open, connected pores",
+    "Well-sorted, porous sandstone",
+    "Fractured, broken limestone",
+    "Loose gravel",
+    "Unfractured shale"
+   ],
+   "answer": 4,
+   "why": "A seal must have low permeability: shale, salt and unfractured limestone work.",
+   "source": "Slide 19"
+  },
+  {
+   "id": "res-15",
+   "q": "In an anticlinal trap, where does the gas collect?",
+   "options": [
+    "At the bottom of the arch, below the oil",
+    "At the very top of the arch, above the oil",
+    "Mixed evenly through the source rock",
+    "Inside the seal rock itself",
+    "On the sides of the arch only"
+   ],
+   "answer": 1,
+   "why": "Gas is lighter, so it floats on top of the oil at the crest of the arch, under the seal.",
+   "source": "Slides 17, 28",
+   "img": {
+    "src": "img/resources/anticline_17.webp",
+    "alt": "Block diagram of rock layers folded into an arch with an oil well drilled into the top, gas above oil in the reservoir rock, a seal rock above and source rock below."
+   }
+  },
+  {
+   "id": "res-16",
+   "q": "Why does buried salt rise to make a salt-dome trap?",
+   "options": [
+    "It melts in the oil window",
+    "Groundwater pushes it upward",
+    "It is less dense than the rock above",
+    "Earthquakes shake it loose",
+    "It dissolves and re-forms higher"
+   ],
+   "answer": 2,
+   "why": "Deeply buried salt flows like a plastic and, being less dense than the overlying rock, rises and deforms the strata.",
+   "source": "Slide 20",
+   "img": {
+    "src": "img/resources/saltdome_20.webp",
+    "alt": "Block diagram of a column of white salt pushing up through tilted layers, with oil trapped against its sides under seal rock and faults above."
+   }
+  },
+  {
+   "id": "res-17",
+   "q": "What lets geologists look for traps without drilling?",
+   "options": [
+    "Radiation detector surveys",
+    "Samples of the drilling mud",
+    "Coal gasification tests",
+    "Hydraulic sorting in streams",
+    "Seismic reflection profiling"
+   ],
+   "answer": 4,
+   "why": "Seismic reflection bounces sound off layers to image the subsurface.",
+   "source": "Slide 24",
+   "img": {
+    "src": "img/resources/seismic_24.webp",
+    "alt": "A ship towing sound sources over the sea with sound waves bouncing off the sea floor layers, and a seismic profile image of wavy rock layers."
+   }
+  },
+  {
+   "id": "res-18",
+   "q": "About how much of a reservoir's oil comes out by pumping alone?",
+   "options": [
+    "About 5%",
+    "About 30%",
+    "About 60%",
+    "About 90%",
+    "All of it"
+   ],
+   "answer": 1,
+   "why": "Primary recovery (pumping) removes only about 30%; secondary recovery injects steam or CO₂ to get more.",
+   "source": "Slide 26"
+  },
+  {
+   "id": "res-19",
+   "q": "Tar sands must be mined rather than pumped because...",
+   "options": [
+    "they lie deeper than the gas window",
+    "the bitumen is too viscous to pump",
+    "they are sealed under thick salt",
+    "the sand is radioactive",
+    "their kerogen has not formed yet"
+   ],
+   "answer": 1,
+   "why": "Bacteria digested the light hydrocarbons, leaving heavy oil (bitumen) too thick to pump.",
+   "source": "Slide 29",
+   "img": {
+    "src": "img/resources/tarsands_29.webp",
+    "alt": "A huge open-pit tar sands mine with giant shovels and heavy haul trucks on dark sand."
+   }
+  },
+  {
+   "id": "res-20",
+   "q": "What does oil shale contain?",
+   "options": [
+    "Bitumen left behind by bacteria",
+    "Natural gas trapped under a salt dome",
+    "Kerogen that never reached the oil window",
+    "Coal that formed in an ancient swamp",
+    "Uranium that water dissolved from rocks"
+   ],
+   "answer": 2,
+   "why": "Oil shale has abundant kerogen that was never in oil window conditions; heating can turn some into liquid hydrocarbons.",
+   "source": "Slide 30"
+  },
+  {
+   "id": "res-21",
+   "q": "Why is no coal found in rocks older than about 420 million years?",
+   "options": [
+    "The Earth was too hot",
+    "All older coal has burned",
+    "There were no swamps or seas",
+    "Land plants had not yet evolved",
+    "Oxygen levels were too high"
+   ],
+   "answer": 3,
+   "why": "Coal is made from land plants, so it only appears after land plants evolved (younger than 420 Ma).",
+   "source": "Slide 31"
+  },
+  {
+   "id": "res-22",
+   "q": "Why didn't the plants in a coal swamp decay?",
+   "options": [
+    "The water was stagnant and O₂-poor",
+    "The swamp water was too salty",
+    "The plants were frozen solid in ice",
+    "Decay bacteria were too abundant",
+    "They were quickly buried by lava"
+   ],
+   "answer": 0,
+   "why": "Dead vegetation fell into stagnant, oxygen-poor water; without oxygen it did not decay.",
+   "source": "Slide 33",
+   "img": {
+    "src": "img/resources/coalform_33.webp",
+    "alt": "Three blocks of layers showing peat at the surface turning to lignite and then bituminous coal with burial over time, and a photo of a coal seam in a cliff."
+   }
+  },
+  {
+   "id": "res-23",
+   "q": "A coal seam lies 40 m below the surface. How will it most likely be mined?",
+   "options": [
+    "By coalbed methane wells",
+    "By underground tunnels",
+    "By strip mining",
+    "By hydraulic sorting",
+    "By seismic reflection"
+   ],
+   "answer": 2,
+   "why": "Coal within about 100 m of the surface is strip-mined; deeper seams need underground mining.",
+   "source": "Slide 36",
+   "img": {
+    "src": "img/resources/strip_36.webp",
+    "alt": "Diagram of a strip mine cutting down to a coal seam, with undisturbed land, a spoil bank, a high wall and reclaimed land, and a photo of a giant red drag-line machine."
+   }
+  },
+  {
+   "id": "res-24",
+   "q": "In a nuclear reactor, what do the control rods do?",
+   "options": [
+    "Pump cooling water through the core",
+    "Spin the turbines that make electricity",
+    "Enrich the ²³⁸U so it becomes fuel",
+    "Absorb neutrons and slow the fission rate",
+    "Hold the radioactive waste safely"
+   ],
+   "answer": 3,
+   "why": "Neutron-absorbing control rods regulate and slow the rate of fission.",
+   "source": "Slide 42"
+  },
+  {
+   "id": "res-25",
+   "q": "Which uranium isotope is the common nuclear fuel?",
+   "options": [
+    "²³⁵U, the 0.7% isotope",
+    "²³⁸U, the 99.3% isotope",
+    "Both are equally used",
+    "Neither; plants burn thorium",
+    "²³⁸U after it is weathered"
+   ],
+   "answer": 0,
+   "why": "²³⁵U is fissionable and the most common fuel, though only 0.7% of uranium; ²³⁸U (99.3%) is only weakly fissionable.",
+   "source": "Slide 41"
+  },
+  {
+   "id": "res-26",
+   "q": "What does a hydrogen fuel cell produce?",
+   "options": [
+    "Steam for a nuclear reactor",
+    "Electricity and CO₂",
+    "Electricity, heat and water",
+    "Natural gas and oil",
+    "Ethanol from corn"
+   ],
+   "answer": 2,
+   "why": "Hydrogen reacts with oxygen in an electrolyte to make electricity, heat and H₂O.",
+   "source": "Slide 50",
+   "img": {
+    "src": "img/resources/fuelcell_50.webp",
+    "alt": "Diagram of a hydrogen fuel cell: hydrogen enters at the anode, oxygen at the cathode, in a bath of water and electrolyte, making a current that lights a bulb."
+   }
+  },
+  {
+   "id": "res-27",
+   "q": "What did M. King Hubbert correctly predict?",
+   "options": [
+    "The OPEC oil crisis of 1973",
+    "The discovery of gas in the Marcellus Shale",
+    "The end of all world oil by the year 2000",
+    "The peak of U.S. oil production around 1971",
+    "The 2011 accident at Fukushima"
+   ],
+   "answer": 3,
+   "why": "Hubbert predicted U.S. oil production would peak in 1971. Global production is now near its peak.",
+   "source": "Slide 54",
+   "img": {
+    "src": "img/resources/hubbert_55.webp",
+    "alt": "A graph of U.S. crude oil production from 1900 to 2010 rising to a peak around 1970 and then falling, closely following a red bell-shaped Hubbert curve."
+   }
+  },
+  {
+   "id": "res-28",
+   "q": "Sulfide minerals crystallize early and sink in a cooling magma chamber. What kind of deposit forms?",
+   "options": [
+    "A magmatic (massive sulfide) deposit",
+    "A placer deposit sorted by water",
+    "A residual deposit from weathering",
+    "A banded iron formation",
+    "An MVT deposit from basin brines"
+   ],
+   "answer": 0,
+   "why": "Magmatic deposits form from cooling intrusions; early sulfides sink to form massive sulfide ores like pyrite and galena.",
+   "source": "Slide 69",
+   "img": {
+    "src": "img/resources/magmatic_69.webp",
+    "alt": "Diagram of a volcano above a magma chamber where heavy sulfide ore minerals sink and collect at the bottom, and a photo of shiny cubic pyrite crystals."
+   }
+  },
+  {
+   "id": "res-29",
+   "q": "Bauxite, the main ore of aluminum, forms by...",
+   "options": [
+    "hydraulic sorting in rivers",
+    "intense tropical weathering",
+    "black smokers on ridges",
+    "sulfides sinking in magma",
+    "salt rising through layers"
+   ],
+   "answer": 1,
+   "why": "Residual deposits form in the extreme chemical weathering of the hot, rainy tropics, leaving Fe and Al oxides; the Al-rich soil is bauxite.",
+   "source": "Slide 76",
+   "img": {
+    "src": "img/resources/residual_76.webp",
+    "alt": "A cliff of bright red-orange tropical soil, and a column of soil layers above weathered rock."
+   }
+  },
+  {
+   "id": "res-30",
+   "q": "Water draining a sulfide spoil pile turns a stream orange. What is happening?",
+   "options": [
+    "The water is alkaline and full of dissolved salt",
+    "Oil is leaking up from a broken reservoir seal",
+    "Gold grains are being sorted out by the current",
+    "Sulfuric acid dissolves iron, which coats it in rust",
+    "Bauxite is forming on the bed by weathering"
+   ],
+   "answer": 3,
+   "why": "Sulfides + water + O₂ make sulfuric acid (pH below 5.7); it dissolves iron, which coats the stream in rust: acid mine drainage.",
+   "source": "Slide 90",
+   "img": {
+    "src": "img/resources/amd_90.webp",
+    "alt": "A stream with rust-orange rocks, orange-coated water, and a meter measuring the low pH of a water sample."
+   }
+  }
+ ],
+ "games": [
+  "match"
+ ],
+ "order": [
+  {
+   "title": "From sea floor to oil trap",
+   "prompt": "Put the steps in order, from the first at the bottom to the last at the top.",
+   "why": "Organic debris settles on an anoxic sea floor; burial at 2-4 km makes black shale with kerogen; more heat turns kerogen into oil and gas; they seep upward into a porous reservoir rock and collect in a trap under a seal.",
+   "topLabel": "Last: oil is trapped",
+   "bottomLabel": "First: on the sea floor",
+   "layers": [
+    {
+     "name": "Organic debris settles on an anoxic sea floor",
+     "color": "#86efac"
+    },
+    {
+     "name": "Buried 2-4 km: black shale with kerogen",
+     "color": "#3f3f46"
+    },
+    {
+     "name": "Heating breaks kerogen into oil and gas",
+     "color": "#78350f"
+    },
+    {
+     "name": "Oil and gas migrate up into a reservoir rock",
+     "color": "#d97706"
+    },
+    {
+     "name": "Trapped under a low-permeability seal",
+     "color": "#6b7280"
+    }
+   ]
+  },
+  {
+   "title": "How coal forms",
+   "prompt": "Put the stages in order, from the earliest at the bottom to the latest at the top.",
+   "why": "Swamp plants fall into stagnant, oxygen-poor water and do not decay; compaction makes peat; burial to 4-10 km compacts and heats it into lignite and then bituminous coal as hydrogen, nitrogen and sulfur are driven off.",
+   "topLabel": "Latest",
+   "bottomLabel": "Earliest",
+   "layers": [
+    {
+     "name": "Plants fall into oxygen-poor swamp water",
+     "color": "#4d7c0f"
+    },
+    {
+     "name": "Compaction makes peat",
+     "color": "#92400e"
+    },
+    {
+     "name": "Burial and heat make lignite",
+     "color": "#78350f"
+    },
+    {
+     "name": "More burial: bituminous coal, over 70% carbon",
+     "color": "#1c1917"
+    }
+   ]
+  },
+  {
+   "title": "An oil project, start to finish",
+   "prompt": "Put the steps in order, from the first at the bottom to the last at the top.",
+   "why": "Geologists map rocks and build cross-sections, image possible traps with seismic reflection, drill the trap, complete the well with a pump, and finally the crude oil is refined.",
+   "topLabel": "Last",
+   "bottomLabel": "First",
+   "layers": [
+    {
+     "name": "Map sedimentary rocks and draw cross-sections",
+     "color": "#a3e635"
+    },
+    {
+     "name": "Image the subsurface with seismic reflection",
+     "color": "#38bdf8"
+    },
+    {
+     "name": "Drill into the possible trap",
+     "color": "#6366f1"
+    },
+    {
+     "name": "Complete the well and pump the oil",
+     "color": "#a16207"
+    },
+    {
+     "name": "Refine the crude oil",
+     "color": "#57534e"
+    }
+   ]
+  },
+  {
+   "title": "Deeper and hotter",
+   "prompt": "Put what the buried organic matter becomes in order, from the coolest at the bottom to the hottest at the top.",
+   "why": "Below 90 °C the kerogen is unchanged; 90-160 °C is the oil window (oil and gas); 160-250 °C is the gas window (gas only); above 250 °C only graphite is left.",
+   "topLabel": "Hottest, deepest",
+   "bottomLabel": "Coolest, shallowest",
+   "layers": [
+    {
+     "name": "Kerogen, not yet broken down (below 90 °C)",
+     "color": "#a8a29e"
+    },
+    {
+     "name": "Oil and gas (90-160 °C)",
+     "color": "#422006"
+    },
+    {
+     "name": "Gas only (160-250 °C)",
+     "color": "#93c5fd"
+    },
+    {
+     "name": "Graphite (above 250 °C)",
+     "color": "#3f3f46"
+    }
+   ]
+  }
+ ],
+ "sort": [
+  {
+   "title": "From sunlight or not?",
+   "prompt": "Sort each energy source by whether its energy comes from the Sun.",
+   "buckets": [
+    "Comes from sunlight",
+    "Does not"
+   ],
+   "items": [
+    {
+     "text": "Wood",
+     "b": 0
+    },
+    {
+     "text": "Coal",
+     "b": 0
+    },
+    {
+     "text": "Oil",
+     "b": 0
+    },
+    {
+     "text": "Natural gas",
+     "b": 0
+    },
+    {
+     "text": "Hydropower",
+     "b": 0
+    },
+    {
+     "text": "Wind",
+     "b": 0
+    },
+    {
+     "text": "Photovoltaic cells",
+     "b": 0
+    },
+    {
+     "text": "Nuclear fission",
+     "b": 1
+    },
+    {
+     "text": "Tides",
+     "b": 1
+    },
+    {
+     "text": "Geothermal heat",
+     "b": 1
+    },
+    {
+     "text": "Fuel cells",
+     "b": 1
+    }
+   ],
+   "why": "Fossil fuels and wood store sunlight from photosynthesis; wind and hydropower are driven by the Sun plus gravity; PV uses light directly. Fission splits atoms, tides come from the Moon's gravity, geothermal is Earth's internal heat, and fuel cells use chemical reactions."
+  },
+  {
+   "title": "Metallic or nonmetallic?",
+   "prompt": "Sort each mineral resource into its category.",
+   "buckets": [
+    "Metallic",
+    "Nonmetallic"
+   ],
+   "items": [
+    {
+     "text": "Gold",
+     "b": 0
+    },
+    {
+     "text": "Copper",
+     "b": 0
+    },
+    {
+     "text": "Lead",
+     "b": 0
+    },
+    {
+     "text": "Zinc",
+     "b": 0
+    },
+    {
+     "text": "Aluminum",
+     "b": 0
+    },
+    {
+     "text": "Sand and gravel",
+     "b": 1
+    },
+    {
+     "text": "Gypsum",
+     "b": 1
+    },
+    {
+     "text": "Halite (salt)",
+     "b": 1
+    },
+    {
+     "text": "Phosphate",
+     "b": 1
+    },
+    {
+     "text": "Dimension stone",
+     "b": 1
+    }
+   ],
+   "why": "Metallic resources include gold, silver, copper, lead, zinc, iron and aluminum. Nonmetallic resources include sand and gravel, gypsum, halite, phosphate and dimension stone."
+  },
+  {
+   "title": "How did this ore form?",
+   "prompt": "Sort each ore by the kind of process that made it.",
+   "buckets": [
+    "Magma and hot water",
+    "Groundwater",
+    "Surface: sediment, weathering, running water"
+   ],
+   "items": [
+    {
+     "text": "Massive sulfides that sank in a magma chamber",
+     "b": 0
+    },
+    {
+     "text": "Veins from hot fluid around an intrusion",
+     "b": 0
+    },
+    {
+     "text": "Minerals settling around a black smoker",
+     "b": 0
+    },
+    {
+     "text": "Malachite and azurite from oxidized sulfide ore",
+     "b": 1
+    },
+    {
+     "text": "Lead-zinc MVT ores from basin brines",
+     "b": 1
+    },
+    {
+     "text": "Banded iron formation",
+     "b": 2
+    },
+    {
+     "text": "Bauxite from tropical weathering",
+     "b": 2
+    },
+    {
+     "text": "Placer gold in a stream",
+     "b": 2
+    }
+   ],
+   "why": "Magmatic and hydrothermal deposits (including black smokers) need magma heat. Groundwater makes secondary-enrichment and MVT ores. Sedimentary BIFs, residual bauxite and placers form at the surface."
+  }
+ ],
+ "calc": [
+  "res-barrels",
+  "res-lifetime"
+ ]
+}

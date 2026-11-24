@@ -509,6 +509,31 @@ const CALC = {
       wrong: uniq(ans, [`${num(d * v)} days`, `${num(t / 10)} days`, `${num(t * 10)} days`, `${num(v / d)} days`, `${num(t / 2)} days`]),
       why: `Time = distance / speed = ${d} m / ${num(v)} m per day = ${num(t)} days. Groundwater is slow because it squeezes through tiny pores.` };
   },
+  "res-barrels"() {
+    const v = Math.floor(Math.random() * 3);
+    if (v === 0) {
+      const b = rnd([2, 5, 10, 20, 50, 100]), ans = `${num(b * 159)} L`;
+      return { q: `How many litres of oil are in ${b} barrels?`, ans,
+        wrong: uniq(ans, [`${num(b * 42)} L`, `${num(b * 100)} L`, `${num(b * 1000)} L`, `${num(b * 1590)} L`, `${num(b * 15.9)} L`]),
+        why: `1 barrel = 159 litres (or 42 gallons), so ${b} barrels = ${b} x 159 = ${num(b * 159)} L.` };
+    }
+    if (v === 1) {
+      const b = rnd([2, 5, 10, 20, 50, 100]), ans = `${num(b * 42)} gallons`;
+      return { q: `How many gallons of oil are in ${b} barrels?`, ans,
+        wrong: uniq(ans, [`${num(b * 159)} gallons`, `${num(b * 100)} gallons`, `${num(b * 4.2)} gallons`, `${num(b * 420)} gallons`, `${num(b * 24)} gallons`]),
+        why: `1 barrel = 42 gallons (or 159 litres), so ${b} barrels = ${b} x 42 = ${num(b * 42)} gallons.` };
+    }
+    const b = rnd([2, 5, 10, 20, 100]), L = b * 159, ans = `${b} barrels`;
+    return { q: `A tank holds ${num(L)} litres of oil. How many barrels is that?`, ans,
+      wrong: uniq(ans, [`${num(+(L / 42).toFixed(1))} barrels`, `${num(L / 100)} barrels`, `${num(L / 1000)} barrels`, `${num(b * 10)} barrels`, `${num(L * 159)} barrels`]),
+      why: `1 barrel = 159 litres, so ${num(L)} L / 159 = ${b} barrels.` };
+  },
+  "res-lifetime"() {
+    const use = rnd([2, 4, 5, 10, 20, 25]), yrs = rnd([20, 30, 45, 50, 65, 75, 120]), R = use * yrs, ans = `${yrs} years`;
+    return { q: `A mineral has calculated reserves of ${num(R)} million tonnes, and the world uses ${use} million tonnes a year. About how long will the reserves last?`, ans,
+      wrong: uniq(ans, [`${num(R)} years`, `${num(R * use)} years`, `${num(yrs * 2)} years`, `${num(yrs / 2)} years`, `${num(yrs * 10)} years`]),
+      why: `Lifetime = reserves / amount used per year = ${num(R)} / ${use} = ${yrs} years, if use stays the same.` };
+  },
   kepler() {
     const a = rnd([4, 9, 16, 25]), p = a ** 1.5, ans = `${p} years`;
     return { q: `A planet orbits a Sun-like star at an average distance of ${a} AU. Using Kepler's third law, its orbital period is:`, ans, wrong: uniq(ans, [`${a} years`, `${a * a} years`, `${a ** 3} years`, `${a / 2} years`, `${Math.sqrt(a)} years`]),
@@ -536,4 +561,6 @@ const HINTS = {
   "stm-recurrence": "Chance each year (%) = 100 / recurrence interval in years. A 100-year flood has a 1% chance every year.",
   "gw-gradient": "Hydraulic gradient = difference in head (h1 - h2) / length of the flow path between the two places.",
   "gw-travel": "Time = distance / speed. Keep the units the same: metres and metres per day give days.",
+  "res-barrels": "1 barrel (bbl) of oil = 42 gallons = 159 litres.",
+  "res-lifetime": "Lifetime (years) = calculated reserves / amount used each year.",
 };

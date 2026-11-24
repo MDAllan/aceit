@@ -111,6 +111,24 @@ const PROFILES = {
   gwPlume: { caption: "Contaminants spread downgradient as a plume and are costly to clean up.", nodes: [["gas", "Source", "Highest concentration"], ["transport", "Plume", "Spreads with the flow"], ["water", "Cleanup", "Remove source, pump, bacteria"]] },
   gwCaves: { caption: "Carbonic acid dissolves limestone into caves, and degassing water grows dripstone inside them.", nodes: [["weather", "Carbonic acid", "Water plus CO2"], ["layers", "Dissolve", "Along joints and beds"], ["crystal", "Speleothems", "Calcite deposits"]] },
   gwKarst: { caption: "Dissolution, a dropping water table and roof collapse build karst landscapes.", nodes: [["layers", "Dissolution", "Near the water table"], ["water", "Caves drain", "Water table drops"], ["rupture", "Sinkholes", "Roofs collapse"]] },
+  resEnergy: { caption: "An energy resource is matter that can do work; in usable form it is a fuel, and fossil fuels now supply over 75% of our energy.", nodes: [["weather", "Sunlight", "The main source"], ["layers", "Stored in rock", "Fossil fuels"], ["heat", "Fuel", "Heat, power, motion"]] },
+  resSources: { caption: "Sun, gravity, both together, photosynthesis, chemical bonds, fission and Earth's heat: seven sources of energy.", nodes: [["weather", "Sun and gravity", "Light, tides, wind, rivers"], ["fossil", "Chemical bonds", "Photosynthesis, fuel cells"], ["core", "Atoms and heat", "Fission, geothermal"]] },
+  resOilForm: { caption: "Buried organic debris becomes kerogen in black shale, and heat in the oil window turns it into oil and gas.", nodes: [["fossil", "Organic debris", "Anoxic sea floor"], ["layers", "Kerogen", "Black shale source rock"], ["heat", "Oil and gas", "90-160 °C window"]] },
+  resTrap: { caption: "Oil migrates from the source rock into a porous reservoir and is held there by a trap and a low-permeability seal.", nodes: [["layers", "Source rock", "Oil forms"], ["transport", "Migration", "Into a porous reservoir"], ["fold", "Trap and seal", "Arch or salt dome"]] },
+  resOilWhere: { caption: "The oil industry began with the 1859 Drake well; today the largest reserves surround the Persian Gulf.", nodes: [["timeline", "1859", "First oil well"], ["transport", "Lamps then cars", "An oil addiction"], ["earth", "Reserves", "Every continent; Persian Gulf most"]] },
+  resProduction: { caption: "Geologists map rocks, image traps with sound, drill and pump the oil, then refine it.", nodes: [["wave", "Seismic image", "Find a trap"], ["rupture", "Drill and pump", "About 30% recovered"], ["gas", "Refine", "Separate the compounds"]] },
+  resUnconv: { caption: "Natural gas, tar sands and oil shale are hydrocarbons that are harder to extract than conventional oil.", nodes: [["gas", "Natural gas", "Methane to butane"], ["slope", "Tar sands", "Bitumen must be mined"], ["layers", "Oil shale", "Kerogen must be heated"]] },
+  resCoal: { caption: "Swamp plants that did not decay were compacted into peat and buried and heated into coal.", nodes: [["fossil", "Swamp plants", "No oxygen, no decay"], ["layers", "Peat", "Compacted debris"], ["pressure", "Coal", "Buried 4-10 km; over 70% C"]] },
+  resCoalMine: { caption: "Shallow coal is strip-mined, deeper coal is tunnelled, and coal can also give methane and gas.", nodes: [["slope", "Strip mine", "Within about 100 m"], ["rupture", "Underground", "Tunnels; dangerous"], ["gas", "Methane and gas", "Coalbed methane, gasification"]] },
+  resNuclear: { caption: "Fission of uranium-235 heats water to spin turbines, but reactors must be cooled and the waste stored for millennia.", nodes: [["mineral", "Uranium", "0.7% is U-235"], ["heat", "Fission", "Control rods slow it"], ["gas", "Waste", "Toxic for thousands of years"]] },
+  resAlternatives: { caption: "Biofuels, geothermal, hydroelectric, wind, solar and fuel cells offer other energy choices.", nodes: [["fossil", "Biofuels", "Ethanol, biodiesel"], ["water", "Water and wind", "Turbines"], ["weather", "Sun and hydrogen", "Solar cells, fuel cells"]] },
+  resChoices: { caption: "Oil production rises, peaks and falls, while burning fossil fuels pollutes the air and warms the climate.", nodes: [["timeline", "Oil Age", "About 300 years"], ["slope", "Peak oil", "Hubbert's curve"], ["gas", "Pollution", "Smog, acid rain, CO2"]] },
+  resMinerals: { caption: "Mineral resources are metallic or nonmetallic; ore is rock rich enough in metal to mine for a profit.", nodes: [["mineral", "Metallic", "Gold, copper, iron..."], ["crystal", "Nonmetallic", "Sand, gypsum, salt..."], ["earth", "Ore", "Economic to mine"]] },
+  resOreHot: { caption: "Magma and hot water concentrate metals: sulfides sink in magma, and hot fluids leave veins and black smokers.", nodes: [["magma", "Magmatic", "Sulfides sink"], ["water", "Hydrothermal", "Hot water leaches metals"], ["mineral", "Ore", "Veins, smokers, MVT"]] },
+  resOreCool: { caption: "At the surface, sediment, tropical weathering and running water also concentrate ore minerals.", nodes: [["layers", "Sedimentary", "Banded iron formations"], ["weather", "Weathering", "Bauxite in the tropics"], ["water", "Running water", "Placer gold, tin, iron"]] },
+  resMining: { caption: "Ores form mostly near plate boundaries, are found by surveys and drilling, and are mined from pits or tunnels.", nodes: [["collision", "Tectonics", "Where ores form"], ["wave", "Surveys", "Geophysics, geochemistry"], ["rupture", "Mining", "Open pit or underground"]] },
+  resNonmetal: { caption: "Nonmetallic resources such as stone, aggregate, gypsum and quartz build our homes and roads.", nodes: [["layers", "Dimension stone", "Building slabs"], ["slope", "Crushed stone", "Roads, concrete"], ["crystal", "Home minerals", "Gypsum, clay, quartz"]] },
+  resFuture: { caption: "Minerals are nonrenewable, so their lifetime is limited, and mining leaves scars, tailings and acid drainage.", nodes: [["timeline", "Lifetime", "Reserves ÷ yearly use"], ["rupture", "Mines", "Scars and tailings"], ["water", "Acid drainage", "Rusted, lifeless streams"]] },
 };
 
 const SECTION_PROFILES = {
@@ -124,6 +142,12 @@ const SECTION_PROFILES = {
     gwStorage: "water", gwPorosity: "porosity", gwPermeability: "permeability", gwAquifer: "aquifers", gwWaterTable: "watertable",
     gwFlow: "flow", gwDarcy: "darcy", gwWells: "wells", gwSprings: "springs", gwHot: "hot", gwDepletion: "depletion",
     gwPumping: "pumping", gwQuality: "quality", gwPollution: "pollution", gwPlume: "plumes", gwCaves: "caves", gwKarst: "karst",
+  },
+  resources: {
+    resEnergy: "energy", resSources: "sources", resOilForm: "oilgas", resTrap: "traps", resOilWhere: "oilwhere",
+    resProduction: "production", resUnconv: "unconventional", resCoal: "coal", resCoalMine: "coalmining", resNuclear: "nuclear",
+    resAlternatives: "alternatives", resChoices: "choices", resMinerals: "minerals", resOreHot: "orehot", resOreCool: "orecool",
+    resMining: "oremining", resNonmetal: "nonmetal", resFuture: "future",
   },
   interior: {
     investigation: "probes", chemical: "chemical", mechanical: "physical", gradient: "density-temp",

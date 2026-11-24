@@ -135,7 +135,7 @@ export const SYM = {
   erth209: "globe", astr207: "telescope",
   interior: "layers", plates: "plates", minerals: "gem", igneous: "volcano", sedimentary: "strata", metamorphism: "gear", strat: "hourglass", fossils: "spiral", biography: "globe",
   scale: "galaxy", timesky: "clock", motion: "rocket", conserve: "bolt", gravity: "orbit", light: "wave", matter: "atom",
-  deformation: "mountain", streams: "wave", groundwater: "layers",
+  deformation: "mountain", streams: "wave", groundwater: "layers", resources: "gem",
   biol305: "heart", biobasics: "person", cellgrowth: "cell", nervous: "brain", digestive: "spiral", respiratory: "wind", cardio: "heart", endocrine: "bolt", immune: "shieldcheck", urinary: "spiral", atmospheres: "wave",
 };
 export const symOf = (x) => SYM[x.id] || "notes";
