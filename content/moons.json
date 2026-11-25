@@ -2110,13 +2110,13 @@
    "id": "moon-1",
    "q": "A newly found moon is 1,000 km across. In which size group does it belong?",
    "options": [
-    "Medium-size",
     "Small",
     "Large",
+    "Medium-size",
     "Dwarf planet",
     "Too big to be a moon"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Medium-size moons are about 300 to 1500 km across. Small moons are under about 300 km and large moons over about 1500 km.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 330",
    "img": {
@@ -2147,12 +2147,12 @@
    "q": "Which of these is NOT explained by large moons forming in the disk of gas around their planet?",
    "options": [
     "Their nearly circular orbits",
-    "Always facing their planet (synchronous rotation)",
-    "Orbiting the way the planet rotates",
     "Orbits close to the planet's equator",
+    "Orbiting the way the planet rotates",
+    "Always facing their planet (synchronous rotation)",
     "Orbits lying in nearly the same plane"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Forming in a flat, spinning disk explains nearly circular orbits that lie in the planet's equatorial plane and go the way the planet rotates. Synchronous rotation came later, from the planet's tidal forces.",
    "source": "Cosmic Perspective 10e, section 11.2, pp. 330-331",
    "img": {
@@ -2166,11 +2166,11 @@
    "options": [
     "It formed in the planet's disk of gas",
     "It was knocked loose from a larger moon",
-    "It is in resonance with a larger moon",
     "It is being heated by strong tides",
-    "It is a captured asteroid or comet"
+    "It is a captured asteroid or comet",
+    "It is in resonance with a larger moon"
    ],
-   "answer": 4,
+   "answer": 3,
    "why": "Captured asteroids or comets keep random orbits, often backward, and small bodies are irregular because their gravity is too weak to make them round.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 331",
    "img": {
@@ -2200,13 +2200,13 @@
    "id": "moon-6",
    "q": "What does synchronous rotation mean for a moon?",
    "options": [
-    "Its rotation period equals its orbital period",
     "It does not rotate at all",
     "It rotates once per planetary day",
+    "Its rotation period equals its orbital period",
     "It orbits in step with another moon",
     "Its orbit is perfectly circular"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Its rotation and orbital periods are equal, so the same face always points at the planet. Tidal forces caused it.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 331",
    "img": {
@@ -2219,12 +2219,12 @@
    "q": "If you landed anywhere on Io and searched for impact craters, what would you find?",
    "options": [
     "Thousands of old, overlapping craters",
-    "Craters only near the poles",
-    "Craters filled with sulfur lakes",
     "No impact craters at all",
+    "Craters filled with sulfur lakes",
+    "Craters only near the poles",
     "A few giant basins like the Moon's"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Io's eruptions repave its surface so often that it does not have a single impact crater.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 331",
    "img": {
@@ -2237,12 +2237,12 @@
    "q": "Io's volcanic plumes rise hundreds of kilometres high mainly because:",
    "options": [
     "Io's lava is far hotter than Earth's",
-    "Io has low gravity and a thin atmosphere",
+    "Sunlight heats the gas above the surface",
     "Jupiter's magnetic field lifts the gas",
     "Io's thick atmosphere carries the gas up",
-    "Sunlight heats the gas above the surface"
+    "Io has low gravity and a thin atmosphere"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "Low gravity and a thin atmosphere let the vaporized sulfur dioxide rise to hundreds of kilometres.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 331",
    "img": {
@@ -2255,12 +2255,12 @@
    "q": "What gives Io its red and orange colours?",
    "options": [
     "Iron oxide (rust) in its rocks",
+    "Sulfur from volcanic gases",
     "Methane ice on its surface",
-    "Sodium in its thin atmosphere",
     "Sulfur dioxide frost",
-    "Sulfur from volcanic gases"
+    "Sodium in its thin atmosphere"
    ],
-   "answer": 4,
+   "answer": 1,
    "why": "Sulfur that falls back from volcanic gas colours Io red and orange; sulfur dioxide makes white frost.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 331",
    "img": {
@@ -2290,13 +2290,13 @@
    "id": "moon-11",
    "q": "Suppose Io's orbit were made perfectly circular, with everything else unchanged. What would most likely happen?",
    "options": [
-    "Its tidal heating would mostly stop and volcanism would fade",
     "Its tidal heating would grow much stronger",
+    "Its volcanoes would erupt water instead of sulfur",
     "It would stop keeping the same face toward Jupiter",
     "It would begin to orbit Jupiter backward",
-    "Its volcanoes would erupt water instead of sulfur"
+    "Its tidal heating would mostly stop and volcanism would fade"
    ],
-   "answer": 0,
+   "answer": 4,
    "why": "Tidal heating comes from the CHANGING tides on an elliptical orbit. On a circular synchronous orbit the bulges would stay fixed, so the flexing and heating would largely stop.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 332",
    "img": {
@@ -2311,10 +2311,10 @@
     "About half as much",
     "About the same",
     "About twice as much",
-    "More than 200 times as much",
-    "About 20 times as much"
+    "About 20 times as much",
+    "More than 200 times as much"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "Tidal heating gives Io more than 200 times as much heat per gram as Earth's radioactive heat.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 332",
    "img": {
@@ -2326,13 +2326,13 @@
    "id": "moon-13",
    "q": "Where does the energy for Io's tidal heating ultimately come from?",
    "options": [
-    "Radioactive decay inside Io",
     "Jupiter's rotation, which slowly slows",
     "Sunlight absorbed by Io's surface",
+    "Radioactive decay inside Io",
     "Impacts of comets on Io",
     "The Sun's tides on Jupiter"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "The energy ultimately comes from Jupiter's rotation, which is gradually slowing at a rate too small to observe.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 332"
   },
@@ -2342,11 +2342,11 @@
    "options": [
     "2",
     "4",
+    "8",
     "6",
-    "16",
-    "8"
+    "16"
    ],
-   "answer": 4,
+   "answer": 2,
    "why": "The resonance is 4 : 2 : 1. Io makes 4 orbits for each Ganymede orbit, so 2 Ganymede orbits = 8 Io orbits.",
    "source": "Cosmic Perspective 10e, section 11.2, pp. 332-333",
    "img": {
@@ -2359,12 +2359,12 @@
    "q": "Why does the orbital resonance make the three inner Galilean moons' orbits elliptical?",
    "options": [
     "Each moon's heat pushes it outward",
-    "Jupiter's magnetic field drags on the moons",
     "Line-ups repeat, so tugs add up the same way",
+    "Jupiter's magnetic field drags on the moons",
     "Sunlight pushes harder on the inner moons",
     "Collisions with ring particles alter the orbits"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Because the moons line up again and again at the same places, their gravitational tugs keep pulling the same way and add up, like well-timed pushes on a swing.",
    "source": "Cosmic Perspective 10e, section 11.2, pp. 332-333",
    "img": {
@@ -2376,13 +2376,13 @@
    "id": "moon-16",
    "q": "Europa has only a handful of impact craters. What does this tell us?",
    "options": [
-    "Ongoing activity has erased most craters",
-    "Its atmosphere burns up incoming objects",
     "Europa formed only recently",
+    "Its atmosphere burns up incoming objects",
+    "Its ice is too hard to be cratered",
     "Jupiter shields it from impacts",
-    "Its ice is too hard to be cratered"
+    "Ongoing activity has erased most craters"
    ],
-   "answer": 0,
+   "answer": 4,
    "why": "So few craters means some kind of ongoing geological activity has erased the evidence of nearly all past impacts.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 333"
   },
@@ -2393,10 +2393,10 @@
     "Its double-ridged surface cracks",
     "Its small number of craters",
     "Its gravity measured over the surface",
-    "A magnetic field that changes as Jupiter rotates",
-    "Its bright, icy colour"
+    "Its bright, icy colour",
+    "A magnetic field that changes as Jupiter rotates"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "An induced magnetic field needs an electrically conducting liquid: a salty ocean works, convecting ice does not. The other clues fit either model.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 333",
    "img": {
@@ -2409,12 +2409,12 @@
    "q": "Europa's double-ridged cracks are best explained by:",
    "options": [
     "Lava flows from volcanoes like Io's",
-    "Icy crust sliding over a soft or liquid layer",
     "Impacts of small meteorites in rows",
+    "Frost deposited from Jupiter's magnetosphere",
     "Wind erosion by a thick atmosphere",
-    "Frost deposited from Jupiter's magnetosphere"
+    "Icy crust sliding over a soft or liquid layer"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "Tidal stresses make parts of the crust scrape past each other on a soft or liquid layer; friction warms the ice into ridges and may melt the centre.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 333",
    "img": {
@@ -2426,13 +2426,13 @@
    "id": "moon-19",
    "q": "Which is NOT part of the leading model of Europa's interior?",
    "options": [
-    "A metallic core",
+    "A layer of high-density ice under the ocean",
     "A rocky mantle",
     "About 100 km of water on top",
     "An icy crust 5 to 25 km thick",
-    "A layer of high-density ice under the ocean"
+    "A metallic core"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "Europa's model is metal core, rocky mantle and about 100 km of water with a 5 to 25 km frozen crust. A high-density ice layer under the ocean is what models suggest for Titan.",
    "source": "Cosmic Perspective 10e, section 11.2, pp. 333, 337",
    "img": {
@@ -2445,12 +2445,12 @@
    "q": "Ganymede is farther from Jupiter than Europa, so its tidal heating is weaker. What helps it keep a possible ocean liquid?",
    "options": [
     "Heat from the Sun reaching its interior",
+    "Frequent large impacts",
     "A thick greenhouse atmosphere",
     "Its larger size holds more radioactive heat",
-    "Frequent large impacts",
     "Volcanic heat flowing over from Io"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Ganymede's larger size lets it keep more heat from radioactive decay, which together with weak tidal heating may keep a liquid layer.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 335",
    "img": {
@@ -2481,12 +2481,12 @@
    "q": "Gravity data show that Callisto's rock and ice are mixed through most of its interior. What does that mean?",
    "options": [
     "It was once tidally heated",
+    "Its interior never warmed significantly",
     "It has a large molten iron core",
     "It is the youngest Galilean moon",
-    "Its interior never warmed significantly",
     "It was captured from the Kuiper belt"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Callisto never differentiated: dense rock never sank to the centre, so its interior never got very warm. It has no tidal heating because it is not in the resonance.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 335",
    "img": {
@@ -2499,12 +2499,12 @@
    "q": "Titan's atmosphere is mostly:",
    "options": [
     "Methane",
-    "Nitrogen",
     "Carbon dioxide",
     "Oxygen",
+    "Nitrogen",
     "Hydrogen"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Titan's air is about 95% molecular nitrogen; the rest is argon, methane, ethane and other hydrogen compounds.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 335",
    "img": {
@@ -2518,11 +2518,11 @@
    "options": [
     "Pressure much lower than on Earth, like on Mars",
     "Liquid water rain falling from clouds",
-    "A clear sky with the Sun sharp and bright",
     "Breathable air, though very cold",
-    "About 1.5 times Earth's air pressure and about -180 °C"
+    "About 1.5 times Earth's air pressure and about -180 °C",
+    "A clear sky with the Sun sharp and bright"
    ],
-   "answer": 4,
+   "answer": 3,
    "why": "Titan's surface pressure is about 50% higher than Earth's sea-level pressure and its temperature is about 93 K (-180 °C). There is no oxygen and the haze is thick.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 336"
   },
@@ -2566,13 +2566,13 @@
    "id": "moon-27",
    "q": "Which statement about Enceladus is NOT supported by observations?",
    "options": [
-    "It has regions with no craters at all",
+    "Its tidal heating from Dione is enough to explain all its heat",
     "Its south polar grooves are warmer than their surroundings",
     "It sprays water vapour and ice into space",
-    "Its tidal heating from Dione is enough to explain all its heat",
-    "Its wobble shows its ice shell moves separately from the core"
+    "Its wobble shows its ice shell moves separately from the core",
+    "It has regions with no craters at all"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Calculations suggest tidal heating from the resonance with Dione is NOT enough by itself; extra radioactive heat and ammonia antifreeze may help.",
    "source": "Cosmic Perspective 10e, section 11.2, pp. 338-339",
    "img": {
@@ -2584,13 +2584,13 @@
    "id": "moon-28",
    "q": "Miranda (Uranus) and Mimas (Saturn) are about the same size, yet Miranda shows huge tectonic features while Mimas is a cratered iceball. The best explanation is that Miranda:",
    "options": [
-    "Is made of rock instead of ice",
     "Had an episode of tidal heating long ago",
+    "Is made of rock instead of ice",
     "Is much closer to the Sun",
     "Was struck by a giant impact",
     "Has a thick insulating atmosphere"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Miranda probably had tidal heating billions of years ago, perhaps during a temporary orbital resonance. Mimas apparently never did.",
    "source": "Cosmic Perspective 10e, section 11.2, pp. 339-340",
    "img": {
@@ -2603,12 +2603,12 @@
    "q": "Which observation most strongly suggests that Triton was captured by Neptune?",
    "options": [
     "Its very cold surface",
+    "Its backward, steeply tilted orbit",
     "Its cantaloupe terrain",
-    "Its synchronous rotation",
     "Its thin atmosphere with wind streaks",
-    "Its backward, steeply tilted orbit"
+    "Its synchronous rotation"
    ],
-   "answer": 4,
+   "answer": 1,
    "why": "Disk-born moons orbit in the planet's spin direction near its equator. Triton's backward, highly inclined orbit makes it almost certain it was a captured Kuiper belt object.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 340",
    "img": {
@@ -2621,18 +2621,183 @@
    "q": "Why can small icy moons stay geologically active when rocky worlds of the same size, like Mercury or our Moon, cannot?",
    "options": [
     "They contain more radioactive material than rock",
-    "They are closer to the Sun, so they stay warm",
     "Ice deforms and melts at far lower temperatures, and tides can add heat",
+    "They are closer to the Sun, so they stay warm",
     "They have thick atmospheres that trap heat",
     "They formed more recently than the rocky worlds"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Ices melt and deform at far lower temperatures than rock, and many jovian moons also get tidal heating, a heat source not important for terrestrial worlds.",
    "source": "Cosmic Perspective 10e, section 11.2, p. 340",
    "img": {
     "src": "img/moons/gen_ice_vs_rock.webp",
     "alt": "Comparison. Terrestrial worlds: heat mostly from radioactive decay; only large planets stay active; rock must be very hot to flow. Jovian moons: tidal heating, ices that melt and deform at far lower temperatures, ice volcanism; Ganymede active though Mercury-sized."
    }
+  },
+  {
+   "id": "moon-x8-34",
+   "q": "Why do most Jovian moons show the same face to their planet?",
+   "options": [
+    "because the moons once had atmospheres",
+    "because the entire solar nebula rotated in the same direction",
+    "No one knows; it is still a mystery.",
+    "because of tidal forces acting on the moons",
+    "because of the law of conservation of angular momentum"
+   ],
+   "answer": 3,
+   "why": "The planet's tidal forces slowed each moon's spin until it rotated once per orbit (synchronous rotation), just as Earth's tides locked our Moon.",
+   "source": "Owner's Practice Test 4 (Q34)"
+  },
+  {
+   "id": "moon-x8-35",
+   "q": "The moons of Jupiter are",
+   "options": [
+    "all captured asteroids.",
+    "made of a mixture of rock and ice.",
+    "all made of rock.",
+    "made mostly of hydrogen and helium gas.",
+    "all made of ice."
+   ],
+   "answer": 1,
+   "why": "Jupiter's moons formed (or were captured) in the cold outer solar system and are mixtures of rock and ice. Io is the rockiest, but as a group they are rock and ice.",
+   "source": "Owner's Practice Test 4 (Q35)"
+  },
+  {
+   "id": "moon-x8-36",
+   "q": "What makes the surface of Io appear red and orange?",
+   "options": [
+    "clays on the surface formed in past lakes",
+    "sulfur expelled by volcanic eruptions",
+    "reflection of Jupiter's light off of sheets of ice",
+    "Io's thermal spectrum peaks in the red-orange part of the spectrum.",
+    "Rocks on the surface were rusted by oxygen."
+   ],
+   "answer": 1,
+   "why": "Io's constant volcanic eruptions coat it in sulfur and sulfur compounds, which give its yellow, orange and red colours.",
+   "source": "Owner's Practice Test 4 (Q36)"
+  },
+  {
+   "id": "moon-x8-37",
+   "q": "Which of the following applies to Io?",
+   "options": [
+    "It is thought to have a deep, subsurface ocean of liquid water.",
+    "It is the only moon in our solar system with an atmosphere thicker than Earth's atmosphere.",
+    "It is the largest moon in the solar system.",
+    "It is probably a captured Kuiper belt object.",
+    "It is the most volcanically active body in the solar system."
+   ],
+   "answer": 4,
+   "why": "Tidal heating makes Io the most volcanically active world in the solar system. Europa has the likely ocean, Titan the thick air, Ganymede is the largest and Triton is probably captured.",
+   "source": "Owner's Practice Test 4 (Q37)"
+  },
+  {
+   "id": "moon-x8-38",
+   "q": "Which of the following applies to Europa?",
+   "options": [
+    "It is the most volcanically active body in the solar system.",
+    "It is the largest moon in the solar system.",
+    "It is probably a captured Kuiper belt object.",
+    "It is thought to have a deep, subsurface ocean of liquid water.",
+    "It is the only moon in our solar system with an atmosphere thicker than Earth's atmosphere."
+   ],
+   "answer": 3,
+   "why": "Europa's icy crust probably hides a deep ocean of liquid water, kept liquid by tidal heating.",
+   "source": "Owner's Practice Test 4 (Q38)"
+  },
+  {
+   "id": "moon-x8-39",
+   "q": "Which of the following applies to Ganymede?",
+   "options": [
+    "It is the most volcanically active body in the solar system.",
+    "It is the largest moon in the solar system.",
+    "It is the only moon in our solar system with an atmosphere thicker than Earth's atmosphere.",
+    "It is probably a captured Kuiper belt object."
+   ],
+   "answer": 1,
+   "why": "Ganymede is the largest moon in the solar system, larger than the planet Mercury.",
+   "source": "Owner's Practice Test 4 (Q39)"
+  },
+  {
+   "id": "moon-x8-40",
+   "q": "Where do Jovian moons get most of their internal energy?",
+   "options": [
+    "From frequent impacts with smaller, leftover moons from the Jovian planet formation process.",
+    "From tidal flexing by their host planets.",
+    "From leftover heat from accretion and differentiation.",
+    "From the magnetic fields of their host planets."
+   ],
+   "answer": 1,
+   "why": "For the active moons such as Io and Europa, the main heat source is tidal heating: the planet's changing tidal pull flexes the moon as its orbit takes it closer and farther. Moons of this size would otherwise have lost their formation heat long ago.",
+   "source": "Owner's Practice Test 4 (Q40)"
+  },
+  {
+   "id": "moon-x8-41",
+   "q": "Which of the following best describes the orbital resonance shared by Io, Europa, and Ganymede?",
+   "options": [
+    "Io, Europa, and Ganymede all show the same face to Jupiter at all times.",
+    "Io, Europa, and Ganymede are always oriented in a straight line.",
+    "Io completes four orbits in the same time it takes Europa to complete two orbits and Ganymede to complete one orbit.",
+    "Io, Europa, and Ganymede each have the same orbital period around Jupiter."
+   ],
+   "answer": 2,
+   "why": "In about 7 days Io orbits 4 times, Europa 2 times and Ganymede once (a 4:2:1 resonance). The repeated tugs keep their orbits elliptical, which drives tidal heating. Showing the same face is synchronous rotation, a different idea.",
+   "source": "Owner's Practice Test 4 (Q41)"
+  },
+  {
+   "id": "moon-x8-42",
+   "q": "Which of the following moons has the most substantial atmosphere?",
+   "options": [
+    "Io",
+    "Europa",
+    "Mimas",
+    "Titan",
+    "Ganymede"
+   ],
+   "answer": 3,
+   "why": "Titan has a thick atmosphere, with a surface pressure about 1.5 times Earth's. The other moons have almost none.",
+   "source": "Owner's Practice Test 4 (Q42)"
+  },
+  {
+   "id": "moon-x8-43",
+   "q": "What is the most abundant gas in Titan's atmosphere?",
+   "options": [
+    "argon",
+    "oxygen",
+    "hydrogen compounds",
+    "nitrogen",
+    "methane"
+   ],
+   "answer": 3,
+   "why": "Titan's air is mostly nitrogen (about 95%), with some methane and other hydrogen compounds.",
+   "source": "Owner's Practice Test 4 (Q43)"
+  },
+  {
+   "id": "moon-x8-44",
+   "q": "Which of the following statements about Saturn's moon Titan is not true?",
+   "options": [
+    "Its temperature is too cold for liquid water to exist on its surface.",
+    "Its atmosphere contains abundant oxygen.",
+    "It rains liquid methane and ethane.",
+    "It orbits Saturn.",
+    "Its surface is hidden from view by a thick atmosphere."
+   ],
+   "answer": 1,
+   "why": "Titan's thick air is nitrogen with methane and other hydrogen compounds, not oxygen. It is too cold for liquid water, but methane and ethane rain down and fill lakes.",
+   "source": "Owner's Practice Test 4 (Q44)"
+  },
+  {
+   "id": "moon-x8-45",
+   "q": "Why do astronomers suspect that Triton was a Kuiper belt object that was captured by Neptune?",
+   "options": [
+    "It undergoes seasonal changes.",
+    "It orbits Neptune in the opposite direction of Neptune's rotation.",
+    "It is too large to have been formed in the jovian nebula that formed Neptune.",
+    "It is colder than any other moon or planet.",
+    "It has an atmosphere and a measurable greenhouse effect."
+   ],
+   "answer": 1,
+   "why": "Triton orbits backward (opposite to Neptune's spin) on a steeply tilted orbit. A moon that formed with Neptune would orbit the same way the planet spins, so Triton was probably captured.",
+   "source": "Owner's Practice Test 4 (Q45)"
   }
  ],
  "games": [

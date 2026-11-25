@@ -2092,13 +2092,13 @@
    "id": "ah-1",
    "q": "If Earth did not rotate, how would air circulate between the equator and the poles?",
    "options": [
-    "One large cell per hemisphere: air rises at the equator and sinks at the poles",
+    "Winds would blow only east to west at every latitude",
     "One large cell per hemisphere: air rises at the poles and sinks at the equator",
     "Three cells per hemisphere, as it does today",
     "Air would not circulate, because rotation is what moves it",
-    "Winds would blow only east to west at every latitude"
+    "One large cell per hemisphere: air rises at the equator and sinks at the poles"
    ],
-   "answer": 0,
+   "answer": 4,
    "why": "Heating alone drives warm equatorial air up and poleward, and cool polar air down and back along the surface: one cell per hemisphere. Rotation (the Coriolis effect) is what splits each one into three.",
    "source": "Book 10.2, p. 287 (Figure 10.13)",
    "img": {
@@ -2110,13 +2110,13 @@
    "id": "ah-2",
    "q": "Which statement about the Coriolis effect is NOT correct?",
    "options": [
-    "It makes moving air turn right in the Northern Hemisphere",
-    "It is stronger on larger, faster-rotating planets",
-    "It splits Earth's circulation into three cells per hemisphere",
     "It decides which way water swirls down a sink",
+    "It is stronger on larger, faster-rotating planets",
+    "It makes moving air turn right in the Northern Hemisphere",
+    "It splits Earth's circulation into three cells per hemisphere",
     "It makes storms spin opposite ways in the two hemispheres"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "The Coriolis effect matters only when material moves hundreds of kilometres toward or away from the rotation axis. For a sink it is negligible; the bowl's shape and the water's starting motion decide.",
    "source": "Book 10.2, pp. 287-289 (Common Misconceptions, p. 288)",
    "img": {
@@ -2160,13 +2160,13 @@
    "id": "ah-5",
    "q": "Earth has rainforests near the equator and deserts near 20-30° latitude mainly because:",
    "options": [
+    "Strong equatorial convection rains out the moisture and the cells carry the dry air to 20-30°",
     "The equator is closest to the Sun all year",
     "Winds at 20-30° blow straight from the poles",
-    "Strong equatorial convection rains out the moisture and the cells carry the dry air to 20-30°",
     "The deserts lie in the rain shadow of the jungles' trees",
     "The oceans are warmer at 20-30° than at the equator"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "More sunlight at the equator drives more convection and rain. That rain depletes the air of moisture, and the circulation cells carry it away to 20-30°, where little is left to fall.",
    "source": "Book 10.2, p. 290",
    "img": {
@@ -2178,13 +2178,13 @@
    "id": "ah-6",
    "q": "Weather can be forecast only about a week ahead, yet climate models give reliable long-term predictions. Why?",
    "options": [
-    "Climate is an average, and the chaotic details average out",
     "Climate models use completely different physical laws",
+    "Climate is an average, and the chaotic details average out",
     "Climate never changes, so it is easy to predict",
     "Weather forecasts use too few computers",
     "The butterfly effect only applies to climate, not weather"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Weather is chaotic: tiny changes in starting conditions grow over time (the butterfly effect). Climate is the long-term average of weather, so those unpredictable details tend to cancel out.",
    "source": "Book 10.2, p. 289 (Special Topic: Weather and Chaos)",
    "img": {
@@ -2232,13 +2232,13 @@
    "id": "ah-9",
    "q": "Which pair of processes removes gas from an atmosphere PERMANENTLY?",
    "options": [
+    "Thermal escape and solar wind stripping",
     "Condensation and chemical reactions",
-    "Chemical reactions and solar wind stripping",
     "Outgassing and vaporization",
     "Condensation and thermal escape",
-    "Thermal escape and solar wind stripping"
+    "Chemical reactions and solar wind stripping"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "Thermal escape and solar wind stripping send gas into space. Condensation and chemical reactions only move gas to the surface or interior, and could be reversed if conditions change.",
    "source": "Book 10.2, p. 292 (Figure 10.21)",
    "img": {
@@ -2252,11 +2252,11 @@
    "options": [
     "Multiplied by 16",
     "Multiplied by 4",
-    "Multiplied by 2",
     "Halved",
+    "Multiplied by 2",
     "Unchanged"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "v_thermal = √(2kT/m), so the speed grows with the square root of T: √4 = 2.",
    "source": "Book Mathematical Insight 10.2, p. 293",
    "img": {
@@ -2268,13 +2268,13 @@
    "id": "ah-11",
    "q": "A gas in a planet's exosphere has a peak thermal velocity equal to 40% of the planet's escape velocity. According to the rule of thumb, the gas will:",
    "options": [
-    "Be completely lost within a few billion years",
-    "Escape only if the planet has no magnetic field",
     "Never escape, because 40% is below 100%",
+    "Escape only if the planet has no magnetic field",
+    "Condense onto the surface instead",
     "Escape only during impacts",
-    "Condense onto the surface instead"
+    "Be completely lost within a few billion years"
    ],
-   "answer": 0,
+   "answer": 4,
    "why": "A peak thermal velocity above about 20% of escape velocity lets a gas be lost completely within a few billion years, because the fast tail of the speed distribution keeps leaking away.",
    "source": "Book Mathematical Insight 10.2, p. 293",
    "img": {
@@ -2286,13 +2286,13 @@
    "id": "ah-12",
    "q": "The Moon has a thin sodium exosphere but almost no hydrogen. Why?",
    "options": [
-    "Hydrogen freezes onto the lunar surface",
     "Sodium is lighter than hydrogen",
+    "Hydrogen's thermal speed tops escape speed; sodium's does not",
     "The Moon's volcanoes release sodium but not hydrogen",
-    "Hydrogen's peak thermal velocity exceeds escape velocity, while sodium's is only about 20% of it and is resupplied from the surface",
+    "Hydrogen freezes onto the lunar surface",
     "The solar wind adds sodium and removes nothing"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "At 400 K hydrogen peaks at about 2.6 km/s, above the Moon's 2.4 km/s escape velocity, so it leaves quickly. Sodium peaks near 0.5 km/s, escapes slowly, and surface ejection keeps replacing it.",
    "source": "Book Mathematical Insight 10.2, p. 293",
    "img": {
@@ -2305,12 +2305,12 @@
    "q": "Standing on the Moon at noon, what would you see?",
    "options": [
     "A pale blue sky",
+    "A reddish-orange sky",
     "A pitch-black sky around the bright Sun",
     "A yellow-brown dusty sky",
-    "A reddish-orange sky",
     "A white, overcast sky"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "The Moon's gas is far too thin to scatter sunlight, so the sky stays black even in daylight.",
    "source": "Book 10.3, p. 292",
    "img": {
@@ -2322,13 +2322,13 @@
    "id": "ah-14",
    "q": "Why are Mars's southern-hemisphere seasons more extreme than its northern ones?",
    "options": [
+    "Mars is closest to the Sun during southern summer because its orbit is elliptical",
     "Its southern hemisphere has more tilt",
-    "Jupiter's gravity warms the south",
     "The southern polar cap is made of dry ice",
     "Dust storms only happen in the south",
-    "Mars is closest to the Sun during southern summer because its orbit is elliptical"
+    "Jupiter's gravity warms the south"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "Mars's more elliptical orbit puts it significantly closer to the Sun in southern summer and farther in southern winter, giving short warm southern summers and long frigid southern winters.",
    "source": "Book 10.4, p. 295 (Figure 10.24)",
    "img": {
@@ -2358,13 +2358,13 @@
    "id": "ah-16",
    "q": "What would happen if Mars's axis tilt stayed close to 0° for tens of thousands of years?",
    "options": [
-    "More CO2 would freeze at the poles, thinning the air and cooling the whole planet",
     "The poles would warm and the atmosphere would thicken",
+    "Nothing would change, because Mars's tilt has no effect",
     "Liquid water would become stable at the surface",
     "Mars would develop a strong magnetic field",
-    "Nothing would change, because Mars's tilt has no effect"
+    "More CO2 would freeze at the poles, thinning the air and cooling the whole planet"
    ],
-   "answer": 0,
+   "answer": 4,
    "why": "With little tilt the poles stay in a deep freeze; more CO2 freezes out, lowering the pressure and weakening the greenhouse effect, so the entire planet cools.",
    "source": "Book 10.4, p. 296",
    "img": {
@@ -2379,10 +2379,10 @@
     "Jupiter's gravity has a greater effect on Mars",
     "Mars's orbit is closer to Jupiter's",
     "Phobos and Deimos are too small to steady its axis",
-    "Mars spins much faster than Earth",
-    "Earth's axis is steadied by our large Moon"
+    "Earth's axis is steadied by our large Moon",
+    "Mars spins much faster than Earth"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "The two reasons are Jupiter's stronger pull on Mars (its orbit is closer to Jupiter's) and the lack of a large stabilizing moon. Rotation speed is not one of them.",
    "source": "Book 10.4, p. 296"
   },
@@ -2391,12 +2391,12 @@
    "q": "According to the leading hypothesis, Mars lost most of its carbon dioxide because:",
    "options": [
     "It all froze into the polar caps",
-    "Its cooling core stopped making a magnetic field, so the solar wind could strip the gas away",
-    "Plate tectonics buried it deep inside the planet",
     "A runaway greenhouse boiled it away",
+    "Plate tectonics buried it deep inside the planet",
+    "Its cooling core stopped making a magnetic field, so the solar wind could strip the gas away",
     "Its moons captured the gas"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "As small Mars cooled, core convection stopped and its magnetic field weakened. CO2 split into carbon and oxygen atoms that the solar wind stripped away. Some CO2 is in the caps and carbonate rocks, but most was probably lost to space.",
    "source": "Book 10.4, pp. 297-298",
    "img": {
@@ -2409,12 +2409,12 @@
    "q": "Some people propose 'terraforming' Mars by releasing all the CO2 frozen in its polar caps. Based on where Mars's ancient atmosphere went, the best prediction is that:",
    "options": [
     "The ancient thick atmosphere and oceans would fully return",
-    "The released CO2 would immediately escape by thermal escape",
     "Mars would undergo a runaway greenhouse like Venus",
+    "It would not restore the ancient atmosphere, because most of that CO2 was lost to space",
     "It would trigger Mars's magnetic field again",
-    "It would not restore the ancient atmosphere, because most of that CO2 was lost to space"
+    "The released CO2 would immediately escape by thermal escape"
    ],
-   "answer": 4,
+   "answer": 2,
    "why": "Only some of the old CO2 condensed into the caps; the bulk was probably lost to space, and most of the water is gone for good. The caps cannot rebuild the dense early atmosphere.",
    "source": "Book 10.4, pp. 297-299 (Think About It, p. 299)"
   },
@@ -2423,12 +2423,12 @@
    "q": "Deuterium is about 100 times more common, relative to ordinary hydrogen, on Venus than on Earth. This is evidence that Venus:",
    "options": [
     "Was struck by deuterium-rich comets",
+    "Lost much water, as its lighter hydrogen escaped to space",
     "Still has deep oceans under its crust",
-    "Lost a large amount of water as UV split it and the lighter hydrogen escaped",
     "Has a strong magnetic field",
     "Formed farther from the Sun than Earth"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Deuterium is twice as heavy as hydrogen and escapes less easily. If much water was split and its hydrogen lost to space, the deuterium would be left behind, raising its share, as measured.",
    "source": "Book 10.5, p. 301",
    "img": {
@@ -2440,13 +2440,13 @@
    "id": "ah-21",
    "q": "Imagine Earth were moved to Venus's orbit. What would happen?",
    "options": [
-    "A runaway greenhouse: oceans evaporate, carbonate rocks release their CO2, and Earth ends up hotter than Venus",
     "A 30°C warming, after which Earth would settle at about 45°C with its oceans intact",
-    "Earth would freeze because of extra cloud cover",
     "The CO2 cycle would quickly cool Earth back to 15°C",
+    "Earth would freeze because of extra cloud cover",
+    "A runaway greenhouse: oceans evaporate, carbonate rocks release their CO2, and Earth ends up hotter than Venus",
     "Nothing, because distance from the Sun does not matter"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "More evaporation adds water vapour, a greenhouse gas, which warms Earth further and adds more vapour: a self-reinforcing loop that would boil off the oceans and free the CO2 in rocks.",
    "source": "Book 10.5, p. 301 (Figure 10.34)",
    "img": {
@@ -2458,13 +2458,13 @@
    "id": "ah-22",
    "q": "Earth outgassed about as much carbon dioxide as Venus. Where is most of Earth's CO2 now?",
    "options": [
-    "In the atmosphere",
-    "Lost to space by thermal escape",
-    "Frozen in the polar ice caps",
     "Locked in carbonate rocks such as limestone",
+    "Lost to space by thermal escape",
+    "In the atmosphere",
+    "Frozen in the polar ice caps",
     "Used up by animals breathing"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "CO2 dissolved in the oceans and chemical reactions turned it into carbonate rocks, which hold about 170,000 times as much CO2 as the atmosphere (the oceans hold about 60 times as much).",
    "source": "Book 10.5, p. 301; 10.6, p. 302",
    "img": {
@@ -2477,12 +2477,12 @@
    "q": "Suppose all photosynthetic life on Earth died out. What would happen to the oxygen in our atmosphere?",
    "options": [
     "Nothing; volcanoes would keep replacing it",
-    "It would slowly be removed by chemical reactions such as rusting, over a few million years",
     "It would turn into nitrogen",
+    "It would slowly be removed by chemical reactions such as rusting, over a few million years",
     "It would immediately escape to space",
     "It would double, since nothing would use it"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Oxygen is not made by outgassing or any geological process, and reactions like fire, rust and oxidation of rock keep removing it. Without photosynthesis to replace it, it would be gone in just a few million years.",
    "source": "Book 10.6, pp. 302-303 (Think About It)",
    "img": {
@@ -2495,12 +2495,12 @@
    "q": "Earth warms slightly for natural reasons. How does the carbon dioxide cycle respond?",
    "options": [
     "Volcanoes release more CO2, warming Earth further",
-    "Plate tectonics stops, trapping CO2 in the interior",
     "The oceans release their CO2, causing a runaway greenhouse",
+    "More rain dissolves more CO2 into carbonate rocks, lowering atmospheric CO2 and cooling Earth",
     "Nothing happens, because the cycle does not depend on temperature",
-    "More rain dissolves more CO2 into carbonate rocks, lowering atmospheric CO2 and cooling Earth"
+    "Plate tectonics stops, trapping CO2 in the interior"
    ],
-   "answer": 4,
+   "answer": 2,
    "why": "Warmer temperatures mean more evaporation and rainfall, so more CO2 dissolves and forms carbonate rocks. Atmospheric CO2 drops, the greenhouse weakens and Earth cools: self-regulating feedback.",
    "source": "Book 10.6, p. 304 (Figure 10.37)",
    "img": {
@@ -2530,13 +2530,13 @@
    "id": "ah-26",
    "q": "Which is NOT one of the lines of evidence that the recent rise in CO2 comes from human activity?",
    "options": [
-    "Volcanoes have been erupting much more CO2 than before",
+    "Human CO2 emissions have risen in step with the concentration",
     "Oxygen in the air is decreasing slightly",
     "The carbon isotope mix matches that of fossil fuels",
-    "Human CO2 emissions have risen in step with the concentration",
+    "Volcanoes have been erupting much more CO2 than before",
     "Natural sources could supply only about 1% of the rise"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Natural sources such as volcanoes and the oceans supply only about 1% of what would be needed. The evidence is the matching amounts, the slight drop in oxygen from burning, and the fossil-fuel carbon isotope signature.",
    "source": "Book 10.6, p. 307",
    "img": {
@@ -2566,13 +2566,13 @@
    "id": "ah-28",
    "q": "Climate models that include only natural factors (the Sun and volcanoes) are compared with models that also include human greenhouse gases. What do the results show?",
    "options": [
-    "Both match the observed warming equally well",
     "Only the models that include the human contribution match the measured temperatures",
+    "Both match the observed warming equally well",
     "Only the natural-factor models match the data",
     "Neither matches, so models are not useful",
     "The models predict cooling since 1850"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Models ignoring the human contribution do not match the data, but the full models including human greenhouse gases match the measured temperatures remarkably well.",
    "source": "Book 10.6, p. 308 (Figure 10.41)",
    "img": {
@@ -2588,7 +2588,7 @@
     "It slows Earth's rotation",
     "It makes the oceans saltier",
     "It thickens the ozone layer",
-    "Open water reflects much less sunlight than ice, so Earth absorbs more heat and warms further"
+    "Open water absorbs more sunlight than ice does"
    ],
    "answer": 4,
    "why": "Sea ice already floats, so melting it barely changes sea level. But replacing reflective ice with dark open water amplifies warming; the fresh meltwater can also affect currents and fisheries.",
@@ -2602,19 +2602,85 @@
    "id": "ah-30",
    "q": "Venus takes 243 Earth days to rotate once. Which description of its weather follows from that slow spin?",
    "options": [
-    "A huge temperature difference between day and night",
     "A strong Coriolis effect that splits its circulation into many small cells",
     "A very weak Coriolis effect: little surface wind, no hurricane-like storms and just two large circulation cells",
+    "A huge temperature difference between day and night",
     "Violent hurricanes that circle the planet every 4 days at ground level",
     "Strong seasons caused by its 177° axis tilt"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Slow rotation means a very weak Coriolis effect, so Venus has little surface wind, never any hurricane-like storms, and only two large cells. Its thick air keeps day and night equally hot; the 4-day winds are high in the clouds; and 177° tilt means virtually no tilt, so no seasons.",
    "source": "Book 10.5, p. 300",
    "img": {
     "src": "img/atmhistory/gen_venus_weather.webp",
     "alt": "Two bands. High up, about 400 degrees C cooler than the ground: sulfuric acid clouds, acid rain that evaporates at least 30 km above the surface, winds that circle the planet in 4 days. At the surface: slow 243-day rotation, weak Coriolis effect, winds of a few km/h, no storms or rain. Cards: two big cells, same temperature everywhere, no seasons."
    }
+  },
+  {
+   "id": "ah-x8-4",
+   "q": "Which of the following best describes the nature and origin of the atmospheres of the Moon and Mercury?",
+   "options": [
+    "They have thin atmospheres produced by outgassing, but still have the layers of a troposphere, thermosphere, and exosphere.",
+    "They have thin exospheres only, with gas coming from impacts of subatomic particles and photons.",
+    "They have only small amounts of gas, all of which is left over from outgassing long ago.",
+    "They have thin tropospheres only, with gas coming from vaporization."
+   ],
+   "answer": 1,
+   "why": "The Moon and Mercury have only extremely thin exospheres. Their gas is knocked off the surface by micrometeorites, solar wind particles and high-energy solar photons (surface ejection).",
+   "source": "Owner's Practice Test 4 (Q4)"
+  },
+  {
+   "id": "ah-x8-21",
+   "q": "Which of the following describes a primary role of global circulation cells in a planet's atmosphere?",
+   "options": [
+    "They create severe weather such as thunderstorms.",
+    "They cause air to be diverted into hurricane-like swirls.",
+    "They transport heat from the equator toward the poles.",
+    "They keep the poles cold enough to have polar caps."
+   ],
+   "answer": 2,
+   "why": "Circulation cells carry heat from the warm equator toward the cooler poles: warm air rises at the equator, moves poleward high up, cools, sinks and flows back near the surface.",
+   "source": "Owner's Practice Test 4 (Q21)"
+  },
+  {
+   "id": "ah-x8-22",
+   "q": "What is the Coriolis effect?",
+   "options": [
+    "A law of physics that explains why toilets flush the opposite way in Australia.",
+    "An effect involving straight-line motion being perceived as curved because the observer is rotating.",
+    "An effect that involves objects' trajectories curving on the surface of the Earth due to the atmosphere.",
+    "An effect that involves airborne spinning objects curving their trajectories in the direction of their rotation."
+   ],
+   "answer": 1,
+   "why": "On a rotating surface (a merry-go-round or a spinning planet), something moving in a straight line appears to curve to an observer turning with the surface.",
+   "source": "Owner's Practice Test 4 (Q22)"
+  },
+  {
+   "id": "ah-x8-23",
+   "q": "Which of the following is not caused by the Coriolis effect on Earth?",
+   "options": [
+    "Hurricanes swirl in opposite directions in the Northern and Southern hemispheres.",
+    "Water going down a drain swirls in opposite directions in the Northern and Southern hemispheres.",
+    "Air or objects moving northward in the Northern Hemisphere are deflected to the east.",
+    "Earth's global circulation cells are split into three separate cells in each hemisphere."
+   ],
+   "answer": 1,
+   "why": "The Coriolis effect only matters over large distances. A sink or toilet is far too small, so its swirl is set by its shape and how the water entered, not by hemisphere.",
+   "source": "Owner's Practice Test 4 (Q23)"
+  },
+  {
+   "id": "ah-x8-24",
+   "q": "Venus experiences the Coriolis effect, but it is much weaker compared to Earth. Which of the following explains why this is the case?",
+   "options": [
+    "Venus has a much thicker atmosphere",
+    "Venus is much hotter",
+    "Venus rotates much slower",
+    "Venus rotates backwards relative to its orbit",
+    "Venus is smaller than Earth"
+   ],
+   "answer": 2,
+   "why": "The Coriolis effect comes from rotation. Venus turns once in about 243 Earth days, so the effect is weak and its circulation cells are not split up.",
+   "source": "Owner's Practice Test 4 (Q24)"
   }
  ],
  "games": [

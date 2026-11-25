@@ -1943,13 +1943,13 @@
    "id": "jov-1",
    "q": "Which property is shared by ALL four jovian planets?",
    "options": [
-    "Rapid rotation compared with the terrestrial planets",
-    "A solid rocky surface below the clouds",
     "Average densities higher than the terrestrial planets'",
+    "A solid rocky surface below the clouds",
+    "Rapid rotation compared with the terrestrial planets",
     "A composition dominated by rock and metal",
     "Strong seasons caused by large axis tilts"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "All four are huge, low in density, made mostly of hydrogen, helium and hydrogen compounds, and rotate fast. None has a solid surface, and Jupiter has no seasons.",
    "source": "Cosmic Perspective 11.1, p. 319"
   },
@@ -1959,11 +1959,11 @@
    "options": [
     "Saturn is the densest jovian planet",
     "Saturn is denser than Jupiter",
+    "Saturn is mostly rock",
     "Saturn has the same density as Uranus",
-    "Saturn is less dense than water",
-    "Saturn is mostly rock"
+    "Saturn is less dense than water"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "Water is 1 g/cm³, so 0.71 g/cm³ is less than water. Jupiter is 1.33, Uranus 1.24 and Neptune 1.67.",
    "source": "Cosmic Perspective 11.1, p. 320",
    "img": {
@@ -1975,13 +1975,13 @@
    "id": "jov-3",
    "q": "Jupiter and Saturn are both mostly hydrogen and helium, yet Jupiter is denser. Why?",
    "options": [
-    "Jupiter contains a much larger fraction of rock and metal",
-    "Jupiter's much larger mass compresses its interior more",
-    "Jupiter is closer to the Sun, so its gas is warmer",
     "Jupiter has lost all of its helium",
+    "Jupiter contains a much larger fraction of rock and metal",
+    "Jupiter is closer to the Sun, so its gas is warmer",
+    "Jupiter's much larger mass compresses its interior more",
     "Jupiter's faster spin squeezes it at the poles"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Like a tall pillow stack, extra mass mainly squeezes the layers below. Jupiter's seed is only about 3% of its mass versus about 10% for Saturn, so extra rock is not the reason.",
    "source": "Cosmic Perspective 11.1, pp. 320-321",
    "img": {
@@ -1993,13 +1993,13 @@
    "id": "jov-4",
    "q": "Jupiter has more than three times Saturn's mass. How do their radii compare?",
    "options": [
-    "They have exactly the same radius",
+    "Jupiter is only slightly larger than Saturn",
     "Jupiter is about three times larger",
     "Jupiter is about nine times larger",
     "Saturn is larger than Jupiter",
-    "Jupiter is only slightly larger than Saturn"
+    "They have exactly the same radius"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "Extra mass compresses a hydrogen-helium planet, so Jupiter is only a little wider than Saturn despite the much greater mass.",
    "source": "Cosmic Perspective 11.1, p. 321",
    "img": {
@@ -2011,13 +2011,13 @@
    "id": "jov-5",
    "q": "Why does Jupiter not shine by nuclear fusion like a star?",
    "options": [
-    "It is too far from the Sun to be heated",
+    "Its fast spin flings heat away from its core",
     "It contains almost no hydrogen",
-    "Its mass is only about 1/80 of the lowest-mass stars, too little to squeeze its core enough",
+    "It is too far from the Sun to be heated",
     "Its magnetic field blocks fusion",
-    "Its fast spin flings heat away from its core"
+    "Its mass is only about 1/80 of the lowest-mass stars, too little to squeeze its core enough"
    ],
-   "answer": 2,
+   "answer": 4,
    "why": "Jupiter's composition is starlike, but its gravity is too weak to compress the interior to the temperature and density fusion needs.",
    "source": "Cosmic Perspective 11.1, p. 320",
    "img": {
@@ -2029,13 +2029,13 @@
    "id": "jov-6",
    "q": "Uranus and Neptune are made mostly of:",
    "options": [
-    "Hydrogen compounds such as water, methane and ammonia, plus some rock and metal",
+    "Mostly helium",
     "Almost pure hydrogen and helium",
     "Rock and iron, like Earth",
-    "Mostly helium",
+    "Hydrogen compounds like water, methane and ammonia",
     "Carbon dioxide and nitrogen"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "They contain some hydrogen and helium, but in much smaller proportions than Jupiter and Saturn. Most of their mass is hydrogen compounds with smaller amounts of rock and metal.",
    "source": "Cosmic Perspective 11.1, p. 320"
   },
@@ -2043,13 +2043,13 @@
    "id": "jov-7",
    "q": "According to models, why do Uranus and Neptune hold much less hydrogen and helium than Jupiter and Saturn?",
    "options": [
-    "Collisions with Jupiter and Saturn stripped them",
+    "Their magnetic fields repelled the gas",
     "Their seeds were only about 1 Earth mass",
     "The Sun boiled their gas away",
-    "Their seeds grew more slowly farther out, so they began capturing gas later, and capture stopped for all four when the solar wind cleared the gas",
-    "Their magnetic fields repelled the gas"
+    "Collisions with Jupiter and Saturn stripped them",
+    "Their seeds grew slower, leaving less time to capture gas"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "All four seeds were about 10 Earth masses. Distant seeds took longer to grow, so they had less time before the solar wind blew the remaining gas away.",
    "source": "Cosmic Perspective 11.1, p. 321",
    "img": {
@@ -2062,12 +2062,12 @@
    "q": "Uranus has about 14 Earth masses and probably grew from an ice-rich seed of about 10 Earth masses. Roughly what fraction of its mass is captured hydrogen and helium?",
    "options": [
     "About 3%",
-    "About one third",
     "About 10%",
+    "About one third",
     "About two thirds",
     "About 97%"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Captured gas is about 14 - 10 = 4 Earth masses, close to one third of 14. Two thirds is the seed's share; 3% and 10% are the seed shares of Jupiter and Saturn.",
    "source": "Cosmic Perspective 11.1, p. 321"
   },
@@ -2075,13 +2075,13 @@
    "id": "jov-9",
    "q": "Why do astronomers measure a jovian planet's rotation by timing emissions from particles trapped in its magnetic field instead of tracking clouds?",
    "options": [
-    "Radio waves travel faster than visible light",
+    "The magnetic field spins faster than the planet",
     "Jovian clouds are invisible from Earth",
     "The clouds do not rotate at all",
-    "The magnetic field spins faster than the planet",
-    "Winds move clouds too, while the field is made deep inside and turns with the interior"
+    "Winds move clouds too, while the field is made deep inside and turns with the interior",
+    "Radio waves travel faster than visible light"
    ],
-   "answer": 4,
+   "answer": 3,
    "why": "Clouds can appear to move because of wind as well as rotation. The magnetic field is generated deep in the interior, so its emissions reveal the interior's spin.",
    "source": "Cosmic Perspective 11.1, p. 319",
    "img": {
@@ -2093,13 +2093,13 @@
    "id": "jov-10",
    "q": "Why is Saturn the most flattened of the jovian planets?",
    "options": [
-    "It rotates the most slowly",
     "It has the strongest surface gravity",
     "Its fast 10-hour rotation combined with its relatively weak surface gravity",
+    "It rotates the most slowly",
     "Its rings pull its equator outward",
     "It is the largest planet"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "The bulge depends on gravity pulling in versus rotation flinging out. Saturn spins fast and has fairly weak surface gravity, so it bulges about 10% at the equator.",
    "source": "Cosmic Perspective 11.1, p. 319",
    "img": {
@@ -2129,13 +2129,13 @@
    "id": "jov-12",
    "q": "What makes metallic hydrogen 'metallic'?",
    "options": [
-    "It is made by nuclear fusion",
+    "Its electrons are free to move, so it conducts electricity",
     "It contains a lot of iron",
     "It is frozen solid and shiny",
-    "Its electrons are free to move, so it conducts electricity",
+    "It is made by nuclear fusion",
     "It is magnetized rock"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Extreme pressure forces hydrogen into a compact form in which electrons move freely, as in everyday metals, so it conducts electricity well.",
    "source": "Cosmic Perspective 11.1, p. 323",
    "img": {
@@ -2147,13 +2147,13 @@
    "id": "jov-13",
    "q": "You descend to about 14,000 km below Jupiter's cloudtops. What would you measure?",
    "options": [
+    "About 20,000 K and 25 g/cm³",
     "About 125 K and Earth-like air pressure",
     "About 5,000 K, 2 million times Earth's surface pressure, density about that of water",
-    "About 20,000 K and 25 g/cm³",
     "About 2,000 K and 0.0002 g/cm³",
     "About 1000 K, heated by solar X rays"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "At about 20% of the way to the centre the density reaches about 1 g/cm³, the temperature about 5000 K and the pressure about 2 million times Earth's, enough to make hydrogen metallic.",
    "source": "Cosmic Perspective 11.1, p. 323",
    "img": {
@@ -2183,13 +2183,13 @@
    "id": "jov-15",
    "q": "How does Saturn's interior compare with Jupiter's?",
    "options": [
-    "A core about 10 times larger in mass",
     "No metallic hydrogen at all",
-    "Thicker gaseous and liquid hydrogen layers and a thinner, deeper metallic hydrogen layer",
+    "Thicker outer hydrogen layers, a deeper metallic layer",
+    "A core about 10 times larger in mass",
     "Higher temperatures at every depth",
     "A solid surface under the clouds"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Saturn's lower mass and weaker gravity mean less weight above each level, so each phase change happens deeper.",
    "source": "Cosmic Perspective 11.1, p. 323",
    "img": {
@@ -2201,13 +2201,13 @@
    "id": "jov-16",
    "q": "Uranus's and Neptune's cores have about the same mass as Jupiter's but a larger radius. Why?",
    "options": [
-    "Their lighter overlying layers compress them less",
-    "They contain more mass than Jupiter's core",
     "They are made of metallic hydrogen",
+    "They contain more mass than Jupiter's core",
+    "Their lighter overlying layers compress them less",
     "They are colder and so expand",
     "They spin faster"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "With less weight pressing down, the cores are less compressed and so take up more space.",
    "source": "Cosmic Perspective 11.1, p. 324",
    "img": {
@@ -2219,13 +2219,13 @@
    "id": "jov-17",
    "q": "Jupiter gives off almost twice as much energy as it gets from the Sun. What is the leading explanation?",
    "options": [
-    "Heat left from formation alone",
+    "Sunlight stored in its clouds",
     "Helium rain in its interior",
     "Nuclear fusion in its core",
-    "It is slowly contracting, turning gravitational potential energy into heat",
-    "Sunlight stored in its clouds"
+    "Heat left from formation alone",
+    "Slow contraction releasing gravitational energy"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "Leftover heat is not enough. Slow contraction is too gradual to measure but could easily supply the heat. Helium rain is the explanation for Saturn.",
    "source": "Cosmic Perspective 11.1, p. 324",
    "img": {
@@ -2237,13 +2237,13 @@
    "id": "jov-18",
    "q": "What evidence supports the idea of helium rain inside Saturn?",
    "options": [
-    "Saturn's atmosphere has more helium than Jupiter's",
-    "Saturn's atmosphere has less helium than Jupiter's",
-    "Saturn emits no extra heat",
     "Saturn's rings contain helium",
+    "Saturn's atmosphere has more helium than Jupiter's",
+    "Saturn emits no extra heat",
+    "Saturn's atmosphere has less helium than Jupiter's",
     "Saturn is denser than Jupiter"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "If helium droplets have been raining down for billions of years, the upper layers should be helium-poor, and spacecraft found exactly that.",
    "source": "Cosmic Perspective 11.1, p. 324",
    "img": {
@@ -2256,12 +2256,12 @@
    "q": "Which jovian planet emits virtually no more energy than it receives from the Sun?",
    "options": [
     "Jupiter",
+    "Uranus",
     "Saturn",
-    "None; all emit about twice as much",
     "Neptune",
-    "Uranus"
+    "None; all emit about twice as much"
    ],
-   "answer": 4,
+   "answer": 1,
    "why": "Uranus has no helium rain and lost most of its formation heat. Jupiter, Saturn and Neptune each emit nearly twice what they receive.",
    "source": "Cosmic Perspective 11.1, p. 324",
    "img": {
@@ -2273,13 +2273,13 @@
    "id": "jov-20",
    "q": "Going down from the top, Jupiter's three main cloud layers are:",
    "options": [
-    "Methane, ammonia, water",
+    "Water, ammonia, methane",
     "Water, ammonium hydrosulfide, ammonia",
-    "Ammonia, ammonium hydrosulfide, water",
+    "Methane, ammonia, water",
     "Ammonium hydrosulfide, ammonia, water",
-    "Water, ammonia, methane"
+    "Ammonia, ammonium hydrosulfide, water"
    ],
-   "answer": 2,
+   "answer": 4,
    "why": "Rising gas cools: water condenses first (deepest, about 100 km below the cloudtops), then ammonium hydrosulfide, and ammonia at the top.",
    "source": "Cosmic Perspective 11.1, p. 325",
    "img": {
@@ -2291,13 +2291,13 @@
    "id": "jov-21",
    "q": "Jupiter's stratosphere exists even though Jupiter has no ozone. Why?",
    "options": [
-    "A few minor gases absorb solar ultraviolet light and warm it",
     "Its internal heat rises into it",
+    "A few minor gases absorb solar ultraviolet light and warm it",
     "Ammonia clouds trap infrared there",
     "The solar wind heats it directly",
     "Lightning heats the upper air"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "A stratosphere needs a gas that absorbs UV. Ozone does it on Earth; on Jupiter some minor ingredients absorb UV, peaking near 200 K and making a smoggy haze.",
    "source": "Cosmic Perspective 11.1, p. 325",
    "img": {
@@ -2309,13 +2309,13 @@
    "id": "jov-22",
    "q": "Why do Uranus and Neptune look blue?",
    "options": [
-    "Their auroras glow blue",
+    "Methane absorbs red light, so mostly blue is reflected",
     "Their oceans reflect blue sky",
     "Ammonia ice is blue",
-    "Methane gas absorbs red light and methane clouds reflect the remaining blue light",
+    "Their auroras glow blue",
     "Their thermospheres are very hot"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Methane gas absorbs red light and transmits blue; clouds of methane snow then reflect the blue light back to space.",
    "source": "Cosmic Perspective 11.1, p. 326",
    "img": {
@@ -2327,13 +2327,13 @@
    "id": "jov-23",
    "q": "Why are Saturn's colours more subdued than Jupiter's?",
    "options": [
+    "Its clouds lie deeper, under more overlying air",
     "It has no ammonium hydrosulfide",
-    "Its cloud layers lie deeper, so less light reaches them and the reflected light is dimmed by the air above",
     "It has no hydrogen compounds",
     "It spins more slowly",
     "Its rings block the light"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Saturn is colder, so each cloud deck forms deeper (its water clouds about 200 km deeper than Jupiter's).",
    "source": "Cosmic Perspective 11.1, p. 326",
    "img": {
@@ -2345,13 +2345,13 @@
    "id": "jov-24",
    "q": "Looking into one of Jupiter's dark belts, what would you see?",
    "options": [
-    "Bright white water clouds",
     "Rising air topped with white ammonia clouds",
+    "Sinking air with little ammonia, so you see down to the reddish ammonium hydrosulfide clouds",
     "A solid surface",
     "Methane clouds",
-    "Sinking air with little ammonia, so you see down to the reddish ammonium hydrosulfide clouds"
+    "Bright white water clouds"
    ],
-   "answer": 4,
+   "answer": 1,
    "why": "Belts are falling air that lost its ammonia as snow, so no ammonia clouds form and we see the lower, warmer reddish deck.",
    "source": "Cosmic Perspective 11.1, p. 326",
    "img": {
@@ -2363,13 +2363,13 @@
    "id": "jov-25",
    "q": "Which statement about the Great Red Spot is NOT correct?",
    "options": [
-    "It has been seen for about two centuries",
-    "It is more than twice as wide as Earth",
     "It is a low-pressure storm like a hurricane",
+    "It is more than twice as wide as Earth",
+    "It has been seen for about two centuries",
     "It may last so long because Jupiter has no solid surface",
     "Its red colour is not fully explained"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "The Great Red Spot's winds circle a HIGH-pressure region, the reverse of a hurricane.",
    "source": "Cosmic Perspective 11.1, p. 327",
    "img": {
@@ -2381,13 +2381,13 @@
    "id": "jov-26",
    "q": "Jupiter has no seasons. Why?",
    "options": [
-    "It has no appreciable axis tilt",
-    "It is too far from the Sun",
     "Its orbit is perfectly circular",
+    "It is too far from the Sun",
+    "It has no appreciable axis tilt",
     "Its clouds block all sunlight",
     "Its day is too short"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Seasons come from axis tilt, and Jupiter's tilt is negligible. Its poles are about as warm as its equator, kept warm by internal heat.",
    "source": "Cosmic Perspective 11.1, p. 328",
    "img": {
@@ -2435,13 +2435,13 @@
    "id": "jov-29",
    "q": "Uranus and Neptune have fairly weak magnetic fields, yet moderate-size magnetospheres. Why?",
    "options": [
-    "Their fast rotation stretches them",
-    "Their fields are actually stronger than Jupiter's",
     "Io-like moons inflate them",
+    "Their fields are actually stronger than Jupiter's",
+    "The solar wind pushes more weakly far from the Sun, so their bubbles can be larger",
     "They have thick metallic hydrogen layers",
-    "The solar wind pushes more weakly far from the Sun, so their bubbles can be larger"
+    "Their fast rotation stretches them"
    ],
-   "answer": 4,
+   "answer": 2,
    "why": "Magnetosphere size depends on field strength and solar wind pressure; the solar wind is weaker at greater distances.",
    "source": "Cosmic Perspective 11.1, p. 329",
    "img": {
@@ -2455,17 +2455,138 @@
    "options": [
     "Jupiter",
     "Saturn",
-    "Uranus",
     "Neptune",
+    "Uranus",
     "Earth"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Uranus's field is tipped 60° and off-centre; Neptune's is tilted 46°, Jupiter's 10° and Saturn's 0°. No one has explained Uranus and Neptune yet.",
    "source": "Cosmic Perspective 11.1, p. 329",
    "img": {
     "src": "img/jovian/gen_tilts.webp",
     "alt": "Each giant with a dashed spin axis and a red magnetic axis: Jupiter 10 degrees apart, Saturn 0, Uranus 60 and off-centre, and Neptune 46. Note: no one has explained Uranus and Neptune yet."
    }
+  },
+  {
+   "id": "jov-x8-25",
+   "q": "Which Jovian planets have compositions dominated by hydrogen compounds such as methane, ammonia, and water?",
+   "options": [
+    "Jupiter and Neptune",
+    "Saturn and Uranus",
+    "Saturn, Uranus, and Neptune",
+    "Uranus and Neptune",
+    "Saturn and Neptune"
+   ],
+   "answer": 3,
+   "why": "Jupiter and Saturn are mostly hydrogen and helium. Uranus and Neptune are mostly hydrogen compounds (plus some rock and metal), with much less hydrogen and helium.",
+   "source": "Owner's Practice Test 4 (Q25)"
+  },
+  {
+   "id": "jov-x8-26",
+   "q": "Why do the Jovian planets in our Solar System bulge around their equators?",
+   "options": [
+    "Their internal heat sources exert more pressure at the equator.",
+    "They are much more massive than the terrestrial planets.",
+    "Their rapid rotation flings the mass near the equator outward.",
+    "Their large systems of moons and rings gravitationally attract the mass around the equator more."
+   ],
+   "answer": 2,
+   "why": "Jovian planets spin fast (days of 10 to 17 hours), and that fast spin makes their equators bulge outward.",
+   "source": "Owner's Practice Test 4 (Q26)"
+  },
+  {
+   "id": "jov-x8-27",
+   "q": "Why does Jupiter have multiple colours?",
+   "options": [
+    "Temperature differences in Jupiter's atmosphere cause clouds to emit visible radiation at different wavelengths, from white to orange-yellow.",
+    "Particulates in Jupiter's cloud layers coming from hydrogen compound reserves found deeper in the planet give rise to different-coloured clouds.",
+    "Jupiter's troposphere contains abundant hydrogen and helium gas, which scatter white and orange-yellow light respectively.",
+    "Several compounds are abundant on Jupiter that condense at different temperatures in its atmosphere, creating cloud layers with different colours."
+   ],
+   "answer": 3,
+   "why": "Different gases (ammonia, ammonium hydrosulfide, water) condense at different temperatures, so they form cloud decks at different heights with different colours.",
+   "source": "Owner's Practice Test 4 (Q27)"
+  },
+  {
+   "id": "jov-x8-28",
+   "q": "Why is Saturn almost as large in radius as Jupiter despite its smaller mass?",
+   "options": [
+    "Jupiter's strong magnetic field constrains its size.",
+    "Saturn's rings make the planet look bigger.",
+    "Saturn has a larger proportion of hydrogen and helium than Jupiter, and is therefore less dense.",
+    "Jupiter's greater mass compresses it more, thus increasing its density.",
+    "Saturn is farther from the Sun, thus cooler, and therefore less compact."
+   ],
+   "answer": 3,
+   "why": "Like stacking pillows, adding mass to a hydrogen-helium planet mostly squeezes it. Jupiter's extra mass compresses its interior to a much higher density, so it is only slightly larger than Saturn.",
+   "source": "Owner's Practice Test 4 (Q28)"
+  },
+  {
+   "id": "jov-x8-29",
+   "q": "Key evidence indicating that Jupiter contains a lot of internal heat comes from the fact that",
+   "options": [
+    "Jupiter's cloudtops are surprisingly hot.",
+    "The Galileo probe measured the temperature deep in Jupiter's interior.",
+    "Jupiter emits about twice as much energy as it receives from the Sun.",
+    "Jupiter's moons are hotter than we would expect them to be from sunlight alone."
+   ],
+   "answer": 2,
+   "why": "Jupiter gives off almost twice as much energy as it absorbs from sunlight, so it must have an internal heat source (left over from formation and slow contraction).",
+   "source": "Owner's Practice Test 4 (Q29)"
+  },
+  {
+   "id": "jov-x8-30",
+   "q": "Based on models, how does Jupiter's core compare in size and mass to Earth?",
+   "options": [
+    "Jupiter doesn't have a core—it is made entirely from hydrogen and helium.",
+    "It is about the same size, but has about 10 times as much mass as Earth.",
+    "It is about the same size and mass as Earth.",
+    "It is about the same mass, but is 10 times as large in size as Earth.",
+    "It is about 10 times as large in both size and mass as Earth."
+   ],
+   "answer": 1,
+   "why": "Models give Jupiter an Earth-size core of rock, metal and hydrogen compounds with about 10 times Earth's mass, squeezed to high density by the enormous pressure.",
+   "source": "Owner's Practice Test 4 (Q30)"
+  },
+  {
+   "id": "jov-x8-31",
+   "q": "What is Jupiter's Great Red Spot?",
+   "options": [
+    "a huge patch of sulfur in Jupiter's atmosphere",
+    "reflected sunlight that is red for the same reason sunrises and sunsets are red on Earth",
+    "a portion of strongly heated gas near the surface of Jupiter caused by a collision with a comet",
+    "a giant crater on the surface of Jupiter",
+    "a giant storm that is about twice as wide as the planet Earth"
+   ],
+   "answer": 4,
+   "why": "The Great Red Spot is a long-lived high-pressure storm, wider than Earth, that has lasted for centuries. Jupiter has no solid surface to hold a crater.",
+   "source": "Owner's Practice Test 4 (Q31)"
+  },
+  {
+   "id": "jov-x8-32",
+   "q": "Why is Neptune denser than Saturn?",
+   "options": [
+    "Neptune has a higher proportion of hydrogen compounds and rocks than Saturn.",
+    "Neptune has a larger mass and stronger gravity than Saturn.",
+    "Neptune has a greater proportion of helium compared to hydrogen than Saturn.",
+    "Neptune has a much more massive core than Saturn."
+   ],
+   "answer": 0,
+   "why": "Neptune is made mostly of hydrogen compounds plus rock and metal, which are denser than hydrogen and helium. Saturn is mostly hydrogen and helium. Neptune is actually much less massive than Saturn, and their cores have similar masses.",
+   "source": "Owner's Practice Test 4 (Q32)"
+  },
+  {
+   "id": "jov-x8-33",
+   "q": "Which of the following statements is thought to be true of the Jovian planets?",
+   "options": [
+    "Jupiter and Saturn are made mostly of hydrogen while Uranus and Neptune are mostly helium.",
+    "The major differences between the planets can be explained by the different masses of their cores.",
+    "Jupiter and Saturn are made mostly of ammonia while Uranus and Neptune are mostly methane.",
+    "All have cores of about the same mass, but differ in the amount of surrounding hydrogen and helium."
+   ],
+   "answer": 3,
+   "why": "All four grew from ice-rich seeds of about 10 Earth masses; they differ mainly in how much hydrogen and helium gas each captured.",
+   "source": "Owner's Practice Test 4 (Q33)"
   }
  ],
  "games": [

@@ -1548,13 +1548,13 @@
    "id": "atm-1",
    "q": "What holds an atmosphere onto a world?",
    "options": [
-    "Gravity",
+    "Heat from the planet's core",
     "The planet's magnetic field",
     "The planet's rotation",
     "Pressure from the solar wind",
-    "Heat from the planet's core"
+    "Gravity"
    ],
-   "answer": 0,
+   "answer": 4,
    "why": "An atmosphere is gas held to a world by gravity. Magnetic fields shield it from the solar wind but do not hold the gas down.",
    "source": "Ch10.1 pt1 slide 2"
   },
@@ -1562,13 +1562,13 @@
    "id": "atm-2",
    "q": "Which statement about the masses of the terrestrial atmospheres is correct?",
    "options": [
-    "Earth's is about 100 times Venus's",
-    "Mercury's is about as large as Mars's",
-    "Mars's is a little more than Earth's",
     "Venus's is about 100 times Earth's",
+    "Earth's is about 100 times Venus's",
+    "Mars's is a little more than Earth's",
+    "Mercury's is about as large as Mars's",
     "The Moon's is about as large as Earth's"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Venus has about 5 x 10^20 kg of atmosphere and Earth about 5 x 10^18 kg, so Venus's is about 100 times more massive. Mars has less than Earth; Mercury and the Moon have only traces.",
    "source": "Ch10.1 pt1 slide 4"
   },
@@ -1577,12 +1577,12 @@
    "q": "Which gas makes up most of Earth's atmosphere?",
    "options": [
     "Oxygen (O₂)",
+    "Carbon dioxide (CO₂)",
     "Nitrogen (N₂)",
     "Argon (Ar)",
-    "Carbon dioxide (CO₂)",
     "Water vapour (H₂O)"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Earth's air is 78.1% N₂, 20.9% O₂ and 0.93% Ar. CO₂ and water vapour are trace gases.",
    "source": "Ch10.1 pt1 slide 10"
   },
@@ -1590,13 +1590,13 @@
    "id": "atm-4",
    "q": "Which two worlds have atmospheres made mostly of carbon dioxide?",
    "options": [
-    "Earth and Mars",
+    "Venus and Mars",
     "Venus and Earth",
-    "Mercury and Venus",
+    "Earth and Mars",
     "Mercury and the Moon",
-    "Venus and Mars"
+    "Mercury and Venus"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "Venus is 96.5% CO₂ and Mars is 95% CO₂. Earth is mostly nitrogen, and Mercury and the Moon have only traces of other gases.",
    "source": "Ch10.1 pt1 slides 9, 11"
   },
@@ -1604,13 +1604,13 @@
    "id": "atm-5",
    "q": "The Moon's very thin atmosphere contains traces of which gases?",
    "options": [
-    "Carbon dioxide and nitrogen",
+    "Methane and ozone",
     "Hydrogen, helium, sodium and oxygen",
-    "Hydrogen, helium, neon and argon",
+    "Carbon dioxide and nitrogen",
     "Nitrogen, oxygen and argon",
-    "Methane and ozone"
+    "Hydrogen, helium, neon and argon"
    ],
-   "answer": 2,
+   "answer": 4,
    "why": "The Moon has traces of H, He, Ne and Ar. Mercury's traces are H, He, Na and O.",
    "source": "Ch10.1 pt1 slide 8"
   },
@@ -1618,13 +1618,13 @@
    "id": "atm-6",
    "q": "Which list contains only greenhouse gases?",
    "options": [
+    "CO₂, N₂, O₂, CH₄",
     "CO₂, H₂O, CH₄, O₃",
     "CO, SO₂, O₃, CO₂",
-    "CO₂, N₂, O₂, CH₄",
     "N₂, O₂, Ar, H₂O",
     "CH₄, CO, N₂, O₃"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "The greenhouse gases named are CO₂, H₂O, CH₄ and O₃. N₂, O₂ and Ar are not greenhouse gases, and CO and SO₂ are pollutants but not greenhouse gases.",
    "source": "Ch10.1 pt1 slide 12"
   },
@@ -1632,13 +1632,13 @@
    "id": "atm-7",
    "q": "Greenhouse gases warm a planet mainly by doing what?",
    "options": [
-    "Absorbing visible sunlight before it ever reaches the ground",
-    "Blocking the charged particles of the solar wind",
-    "Reflecting incoming sunlight straight back out to space",
     "Absorbing and re-emitting infrared light from the surface",
+    "Absorbing visible sunlight before it ever reaches the ground",
+    "Reflecting incoming sunlight straight back out to space",
+    "Blocking the charged particles of the solar wind",
     "Ionizing the thin gas molecules high in the thermosphere"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Visible light passes through and warms the ground; the ground gives off infrared, which greenhouse gases absorb and re-emit, partly back down.",
    "source": "Ch10.1 pt1 slide 12; pt3 slide 2"
   },
@@ -1647,12 +1647,12 @@
    "q": "According to the table of trace gases, which one is a pollutant but NOT a greenhouse gas?",
    "options": [
     "Methane",
-    "Carbon monoxide",
     "Ozone",
+    "Halocarbons",
     "Carbon dioxide",
-    "Halocarbons"
+    "Carbon monoxide"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "Carbon monoxide (and sulfur dioxide) are pollutants but not greenhouse gases. Methane, ozone and halocarbons are both; CO₂ is a greenhouse gas but not listed as a pollutant.",
    "source": "Ch10.1 pt1 slide 12"
   },
@@ -1662,11 +1662,11 @@
    "options": [
     "Steam rising off warm oceans and lakes",
     "A complicated mixture of rare gases",
-    "Pure water vapour, a white-coloured gas",
+    "Tiny water droplets condensed in cool air",
     "Dust and smoke lifted off the ground",
-    "Tiny water droplets condensed in cool air"
+    "Pure water vapour, a white-coloured gas"
    ],
-   "answer": 4,
+   "answer": 2,
    "why": "Clouds are patches of air cool enough for tiny water droplets to condense. They are not steam or a special gas mix.",
    "source": "Ch10.1 pt1 slide 13",
    "img": {
@@ -1680,11 +1680,11 @@
    "options": [
     "About one half of it",
     "About a tenth",
-    "About a trillionth",
     "About a millionth",
+    "About a trillionth",
     "None of it at all"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Only about a trillionth of the atmosphere's mass lies above 400 km; the gas there is extremely thin but not entirely absent.",
    "source": "Ch10.1 pt1 slide 14"
   },
@@ -1692,13 +1692,13 @@
    "id": "atm-11",
    "q": "A force of 600 N presses on an area of 2 m². What is the pressure?",
    "options": [
-    "300 Pa",
     "1,200 Pa",
     "602 Pa",
+    "300 Pa",
     "0.003 Pa",
     "3,000 Pa"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "P = F / A = 600 N / 2 m² = 300 Pa.",
    "source": "Ch10.1 pt2 slide 1",
    "img": {
@@ -1711,12 +1711,12 @@
    "q": "How many pascals are in 1 atmosphere?",
    "options": [
     "1,000 Pa",
+    "101,325 Pa",
     "100,000 Pa",
     "6,894.76 Pa",
-    "101,325 Pa",
     "14.7 Pa"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "1 atm = 101,325 Pa. 1 bar is 100,000 Pa, 1 kPa is 1,000 Pa and 1 psi is 6,894.76 Pa; 14.7 is atmospheric pressure in pounds per square inch.",
    "source": "Ch10.1 pt2 slides 1, 4"
   },
@@ -1725,12 +1725,12 @@
    "q": "The same force is spread over half the area. The pressure becomes:",
    "options": [
     "Half as large",
-    "Twice as large",
     "Unchanged",
+    "Twice as large",
     "Four times as large",
     "A quarter as large"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "P = F / A. Halving A with F unchanged doubles P.",
    "source": "Ch10.1 pt2 slide 1"
   },
@@ -1738,13 +1738,13 @@
    "id": "atm-14",
    "q": "Why do pressure and density work well for describing the atmosphere?",
    "options": [
+    "They are intensive: independent of size",
     "They grow larger as the system grows",
-    "They are measured in newtons and kilograms",
     "They stay the same at every altitude",
     "They only apply to solids and liquids",
-    "They are intensive: independent of size"
+    "They are measured in newtons and kilograms"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "Pressure and density are intensive partners of force and mass: the same property, but independent of the size of the system.",
    "source": "Ch10.1 pt2 slide 2"
   },
@@ -1752,13 +1752,13 @@
    "id": "atm-15",
    "q": "An elephant and a person stand side by side at sea level. Which is true?",
    "options": [
-    "The air pressure on the elephant is greater",
-    "The air pressure on the person is greater",
     "Same pressure; more total force on the elephant",
+    "The air pressure on the person is greater",
+    "The air pressure on the elephant is greater",
     "Both the pressure and the total force are equal",
     "The air exerts no pressure on either of them"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Air pressure is the same for both. The elephant has more surface, so the total force on it is larger.",
    "source": "Ch10.1 pt2 slide 3",
    "img": {
@@ -1770,13 +1770,13 @@
    "id": "atm-16",
    "q": "The air pressure in Calgary, about 1 km above sea level, is roughly:",
    "options": [
+    "1.2 atm",
     "0.88 atm",
     "1.0 atm",
-    "1.2 atm",
     "0.5 atm",
     "0.1 atm"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Calgary's pressure is about 0.88 atm (89 kPa), less than the 1 atm at sea level because there is less air above.",
    "source": "Ch10.1 pt2 slide 4"
   },
@@ -1785,12 +1785,12 @@
    "q": "Why is air near the ground much denser than air high up?",
    "options": [
     "Air near the ground is colder, so it shrinks",
-    "Oxygen sinks to the bottom while nitrogen rises",
+    "Clouds push the air down toward the ground",
     "Gravity is weaker near the ground than up high",
-    "Air is compressible; the air above squeezes it",
-    "Clouds push the air down toward the ground"
+    "Oxygen sinks to the bottom while nitrogen rises",
+    "Air is compressible; the air above squeezes it"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "Air can be compressed, so low air is squashed by everything above it and is denser. That is also why breathing is harder at high elevations.",
    "source": "Ch10.1 pt2 slide 5"
   },
@@ -1814,11 +1814,11 @@
    "options": [
     "Thermal escape",
     "Sweeping by the solar wind",
-    "Chemical reactions with surface rock",
     "Condensation onto the surface",
-    "Outgassing from volcanoes"
+    "Outgassing from volcanoes",
+    "Chemical reactions with surface rock"
    ],
-   "answer": 4,
+   "answer": 3,
    "why": "Outgassing adds gas. The other four are ways to lose gas.",
    "source": "Ch10.1 pt2 slides 7-8"
   },
@@ -1828,11 +1828,11 @@
    "options": [
     "Evaporation of liquid on the surface",
     "Sublimation of ice on the surface",
-    "Chemical reactions with the surface",
     "Outgassing from volcanoes",
+    "Chemical reactions with the surface",
     "Biological processes on Earth"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Chemical reactions with surface rock lock gas away. Evaporation, sublimation, outgassing and life all add gas.",
    "source": "Ch10.1 pt2 slides 7-8"
   },
@@ -1840,13 +1840,13 @@
    "id": "atm-21",
    "q": "What does ionization mean?",
    "options": [
-    "Knocking electrons off atoms or molecules",
     "Breaking a molecule into separate pieces",
-    "Changing the direction a photon travels",
     "Making a molecule vibrate and rotate",
+    "Changing the direction a photon travels",
+    "Knocking electrons off atoms or molecules",
     "Turning surface ice directly into gas"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Ionization ejects electrons. Breaking molecules is dissociation; changing direction is scattering.",
    "source": "Ch10.1 pt3 slide 1"
   },
@@ -1855,12 +1855,12 @@
    "q": "Which kind of light do greenhouse gas molecules absorb, making them vibrate and rotate?",
    "options": [
     "X rays",
-    "Ultraviolet",
-    "Visible light",
     "Infrared",
+    "Visible light",
+    "Ultraviolet",
     "Radio waves"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "Infrared photons are absorbed by greenhouse molecules, making them vibrate and rotate. X rays and UV ionize or dissociate; most visible light passes through.",
    "source": "Ch10.1 pt3 slides 1-2"
   },
@@ -1869,12 +1869,12 @@
    "q": "Most visible light entering Earth's atmosphere:",
    "options": [
     "Is absorbed by nitrogen molecules",
-    "Passes through, though some is scattered",
     "Ionizes the oxygen molecules it meets",
+    "Passes through, though some is scattered",
     "Is turned into infrared by the air",
     "Is blocked by the ozone layer"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Most visible photons are simply transmitted; some are scattered, blue more than red.",
    "source": "Ch10.1 pt3 slides 1-2"
   },
@@ -1882,13 +1882,13 @@
    "id": "atm-24",
    "q": "Why is the daytime sky blue?",
    "options": [
+    "N₂ and O₂ scatter blue more than red",
     "Air reflects the blue of the oceans",
-    "Water vapour in the air is blue",
     "Ozone absorbs the red part of sunlight",
     "The Sun gives off mostly blue light",
-    "N₂ and O₂ scatter blue more than red"
+    "Water vapour in the air is blue"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "Rayleigh scattering: N₂ and O₂ scatter shorter (blue) wavelengths much more, so blue light comes at us from all over the sky.",
    "source": "Ch10.1 pt3 slides 2-3"
   },
@@ -1896,13 +1896,13 @@
    "id": "atm-25",
    "q": "Why do sunsets look red?",
    "options": [
+    "The light crosses more air and loses blue",
     "Dust adds extra red light at sunset",
     "The Sun itself cools down each evening",
-    "The light crosses more air and loses blue",
     "Ozone absorbs blue only at sunset",
     "Clouds reflect red light from the ground"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "Near the horizon sunlight travels through much more air, so Rayleigh scattering removes most of the blue and the remaining light looks red and orange.",
    "source": "Ch10.1 pt3 slide 3",
    "img": {
@@ -1914,13 +1914,13 @@
    "id": "atm-26",
    "q": "In which layer does almost all of Earth's weather happen?",
    "options": [
-    "Troposphere",
+    "Exosphere",
     "Thermosphere",
     "Stratosphere",
-    "Exosphere",
+    "Troposphere",
     "Magnetosphere"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "The troposphere, the lowest layer (about 12 km), holds almost all weather.",
    "source": "Ch10.1 pt3 slide 4",
    "img": {
@@ -1933,12 +1933,12 @@
    "q": "What causes the temperature peak (the 'knee') in the stratosphere?",
    "options": [
     "Infrared given off by the ground",
-    "Charged solar wind particles",
-    "X rays arriving from the Sun",
     "Ozone absorbing ultraviolet light",
+    "X rays arriving from the Sun",
+    "Charged solar wind particles",
     "Convection from the troposphere"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "The peak matches the highest concentration of ozone, which absorbs ultraviolet light.",
    "source": "Ch10.1 pt3 slide 5",
    "img": {
@@ -1951,12 +1951,12 @@
    "q": "Which layer is the main region of the ionosphere?",
    "options": [
     "Troposphere",
-    "Thermosphere",
     "Stratosphere",
+    "Thermosphere",
     "Exosphere",
     "Mesosphere"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "In the thermosphere (about 85 to 500 km) UV and X rays ionize and dissociate the few molecules, making it the main part of the ionosphere.",
    "source": "Ch10.1 pt3 slide 6",
    "img": {
@@ -1988,11 +1988,11 @@
    "options": [
     "Lightning flashes in the troposphere",
     "Sunlight reflecting off the polar ice caps",
-    "Solar wind energizing the polar thermosphere",
+    "Moonlight lighting clouds of water droplets",
     "Ozone glowing in the stratosphere at night",
-    "Moonlight lighting clouds of water droplets"
+    "Solar wind energizing the polar thermosphere"
    ],
-   "answer": 2,
+   "answer": 4,
    "why": "Charged particles from the solar wind energize the thermosphere near the magnetic poles, making it glow.",
    "source": "Ch10.1 pt3 slide 9",
    "img": {
@@ -2004,19 +2004,277 @@
    "id": "atm-31",
    "q": "Venus is closer to the Sun than Earth, yet its \"no greenhouse\" temperature (-40 °C) is lower than Earth's (-16 °C). Why?",
    "options": [
-    "Its bright clouds reflect most of the sunlight that reaches it",
+    "Its slow rotation lets its night side freeze",
     "It is farther from the Sun than Earth",
     "It has no atmosphere to absorb sunlight",
-    "Its slow rotation lets its night side freeze",
+    "Its bright clouds reflect most of the sunlight that reaches it",
     "Its carbon dioxide reflects infrared back to space"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Without greenhouse warming, temperature depends only on distance and reflectivity. Venus's clouds reflect about 75% of sunlight, so it absorbs less than Earth. Its real 470 °C comes from a huge greenhouse effect.",
    "source": "Ch10.1 textbook section 10.1, Table 10.2",
    "img": {
     "src": "img/atmospheres/gen_warming.webp",
     "alt": "Bar chart of average surface temperature without and with the greenhouse effect: Venus -40 vs 470 degrees Celsius (510 degrees warmer), Earth -16 vs 15 (31 warmer), Mars -56 vs -50 (6 warmer). Mercury and the Moon get no greenhouse warming."
    }
+  },
+  {
+   "id": "atm-x8-1",
+   "q": "Which of the following worlds has the most substantial atmosphere?",
+   "options": [
+    "Earth",
+    "the Moon",
+    "Mars",
+    "Mercury",
+    "Venus"
+   ],
+   "answer": 4,
+   "why": "Venus's atmosphere is about 100 times as massive as Earth's, with a surface pressure about 90 times greater. Mars's is thin, and the Moon and Mercury have almost none.",
+   "source": "Owner's Practice Test 4 (Q1)"
+  },
+  {
+   "id": "atm-x8-2",
+   "q": "Which of the following planets has the least substantial atmosphere?",
+   "options": [
+    "Neptune",
+    "Mercury",
+    "Mars",
+    "Earth",
+    "Venus"
+   ],
+   "answer": 1,
+   "why": "Mercury has only a trace of gas (about 10^4 kg in total). Mars's atmosphere is thin but still far more than Mercury's, and Neptune is a gas giant.",
+   "source": "Owner's Practice Test 4 (Q2)"
+  },
+  {
+   "id": "atm-x8-3",
+   "q": "Approximately how much more massive is Venus's atmosphere than Mars's?",
+   "options": [
+    "10",
+    "100",
+    "1000",
+    "10,000",
+    "10,000,000,000,000,000"
+   ],
+   "answer": 3,
+   "why": "Venus has about 5 x 10^20 kg of air and Mars about 2.5 x 10^16 kg. 5 x 10^20 / 2.5 x 10^16 = 2 x 10^4, so about 10,000 times.",
+   "source": "Owner's Practice Test 4 (Q3)"
+  },
+  {
+   "id": "atm-x8-5",
+   "q": "Which of the following is NOT a way that atmospheres can lose mass?",
+   "options": [
+    "Impactors can blast out material from both the surface and the atmosphere into space.",
+    "The solar wind can knock atmospheric particles into space.",
+    "Gravitational forces exerted by passing comets and asteroids can pull material off of the atmosphere of a planet.",
+    "Cool temperatures can cause atmospheric particles to condense into solids on a planet's surface."
+   ],
+   "answer": 2,
+   "why": "Real loss processes are thermal escape, solar wind stripping, large impacts, condensation and chemical reactions with the surface. Passing comets and asteroids are far too small for their gravity to pull air away.",
+   "source": "Owner's Practice Test 4 (Q5)"
+  },
+  {
+   "id": "atm-x8-6",
+   "q": "Which of the following correctly lists common pressure units in order of increasing magnitude?",
+   "options": [
+    "1 bar, 1 pound per square inch, 1 kilopascal, 1 atmosphere.",
+    "1 kilopascal, 1 pound per square inch, 1 atmosphere, 1 bar.",
+    "1 kilopascal, 1 pound per square inch, 1 bar, 1 atmosphere.",
+    "1 bar, 1 kilopascal, 1 atmosphere, 1 pound per square inch."
+   ],
+   "answer": 2,
+   "why": "1 kPa = 1000 Pa; 1 psi is about 6900 Pa; 1 bar = 100,000 Pa; 1 atm = 101,325 Pa. So kPa < psi < bar < atm.",
+   "source": "Owner's Practice Test 4 (Q6)"
+  },
+  {
+   "id": "atm-x8-7",
+   "q": "Which of the following would decrease the pressure of an atmosphere?",
+   "options": [
+    "Increasing the number of particles.",
+    "Increasing the mass of the planet.",
+    "Exchanging heavier molecules for lighter ones.",
+    "Increasing its temperature."
+   ],
+   "answer": 2,
+   "why": "Surface pressure is the weight of the air above. Lighter molecules make the same column weigh less. More particles, stronger gravity (a more massive planet) or higher temperature all raise pressure.",
+   "source": "Owner's Practice Test 4 (Q7)"
+  },
+  {
+   "id": "atm-x8-8",
+   "q": "Why does atmospheric pressure decrease as you go higher in altitude on Earth?",
+   "options": [
+    "Temperature decreases with altitude and lower temperature tends to mean lower pressure.",
+    "Gravity gets much weaker with altitude.",
+    "The weight of the atmosphere above you decreases with altitude.",
+    "There are fewer greenhouse gases at higher altitude."
+   ],
+   "answer": 2,
+   "why": "Pressure at any height comes from the weight of the air above it. The higher you go, the less air is left above you. Gravity barely changes over the height of the atmosphere.",
+   "source": "Owner's Practice Test 4 (Q8)"
+  },
+  {
+   "id": "atm-x8-9",
+   "q": "What is a magnetosphere?",
+   "options": [
+    "the layer of a planet in which its magnetic field is generated",
+    "the uppermost layer of any planetary atmosphere",
+    "a region of space around a planet in which the planet's magnetic field can trap charged particles",
+    "the region in a planet's atmosphere in which auroras occur"
+   ],
+   "answer": 2,
+   "why": "A magnetosphere is the region of space around a planet where its magnetic field controls charged particles, deflecting the solar wind and trapping some particles. The field is made in the core; auroras glow in the thermosphere.",
+   "source": "Owner's Practice Test 4 (Q9)"
+  },
+  {
+   "id": "atm-x8-10",
+   "q": "Which of the following factors does NOT affect planetary temperature?",
+   "options": [
+    "Atmosphere thickness",
+    "Axial tilt",
+    "Orbital period",
+    "Rotation rate",
+    "Albedo"
+   ],
+   "answer": 2,
+   "why": "Temperature depends on distance from the Sun, albedo (reflectivity) and the atmosphere's greenhouse effect; tilt sets seasons and rotation sets how much the day and night sides differ. How long the orbit takes does not change how much sunlight arrives.",
+   "source": "Owner's Practice Test 4 (Q10)"
+  },
+  {
+   "id": "atm-x8-11",
+   "q": "About what fraction of Earth's atmosphere is CO2?",
+   "options": [
+    "95%",
+    "less than 0.1%",
+    "20%",
+    "80%",
+    "1%"
+   ],
+   "answer": 1,
+   "why": "CO2 is a trace gas on Earth, about 420 parts per million (0.04%). Earth's air is about 78% N2, 21% O2 and 1% Ar. 95% CO2 describes Mars and Venus.",
+   "source": "Owner's Practice Test 4 (Q11)"
+  },
+  {
+   "id": "atm-x8-12",
+   "q": "Of the four gases CO2, H2O, N2, and O2, which are greenhouse gases?",
+   "options": [
+    "CO2 and N2",
+    "all except O2",
+    "Only CO2",
+    "all four",
+    "CO2 and H2O"
+   ],
+   "answer": 4,
+   "why": "Carbon dioxide and water vapour absorb infrared light. N2 and O2 have only two atoms and few ways to vibrate and spin, so they barely absorb infrared.",
+   "source": "Owner's Practice Test 4 (Q12)"
+  },
+  {
+   "id": "atm-x8-13",
+   "q": "Which of the following gases absorbs ultraviolet light best?",
+   "options": [
+    "the oxygen we breathe (O2)",
+    "hydrogen",
+    "nitrogen (N2)",
+    "ozone (O3)",
+    "carbon dioxide"
+   ],
+   "answer": 3,
+   "why": "Ozone (O3) is the strong ultraviolet absorber. That absorption heats Earth's stratosphere.",
+   "source": "Owner's Practice Test 4 (Q13)"
+  },
+  {
+   "id": "atm-x8-14",
+   "q": "Rank these planets in order of the strength of the greenhouse effect on the planet, from the weakest to the strongest greenhouse effect.",
+   "options": [
+    "Mars, Mercury, Earth, Venus",
+    "Mercury, Venus, Earth, Mars",
+    "Mercury, Earth, Mars, Venus",
+    "Mars, Earth, Venus, Mercury",
+    "Mercury, Mars, Earth, Venus"
+   ],
+   "answer": 4,
+   "why": "Greenhouse warming: Mercury 0 °C (no atmosphere), Mars about 6 °C (thin CO2), Earth about 31 °C, Venus about 510 °C (thick CO2).",
+   "source": "Owner's Practice Test 4 (Q14)"
+  },
+  {
+   "id": "atm-x8-15",
+   "q": "Which of the following correctly describes the greenhouse effect? (Each option ends the same way: eventually the temperature stabilizes because the heat lost rises rapidly with surface temperature.)",
+   "options": [
+    "Sunlight heats up the Earth's surface, causing it to emit infrared wavelengths. Greenhouse gases in the troposphere act like the roof of a greenhouse, preventing convection from transporting the warm, infrared-heated air away from the surface, raising the surface temperature.",
+    "Sunlight heats up the Earth's surface, causing it to emit infrared wavelengths. Greenhouse gases slow down the escape of infrared radiation, so the surface temperature builds up.",
+    "Sunlight heats up the Earth's surface, causing it to emit infrared wavelengths. Greenhouse gases absorb and re-emit a portion of this light back towards Earth, causing it to heat up further.",
+    "Sunlight heats up the Earth's surface, causing it to emit infrared wavelengths. Greenhouse gases absorb this light, heating up the atmosphere, which conducts thermal energy to the surface, increasing its temperature, too."
+   ],
+   "answer": 1,
+   "why": "Greenhouse gases absorb infrared and re-emit it in random directions, which slows the escape of heat, like a blanket that adds no heat of its own. The 'roof stops convection' idea is how a real greenhouse works, not a planet. The re-emit option is close, but it implies the gases add heat rather than slow its escape; check which wording your instructor uses.",
+   "source": "Owner's Practice Test 4 (Q15)"
+  },
+  {
+   "id": "atm-x8-16",
+   "q": "Which of the following lists the layers of a generic planetary atmosphere in the correct order from lowest to highest altitude?",
+   "options": [
+    "stratosphere, thermosphere, troposphere, exosphere",
+    "troposphere, stratosphere, thermosphere, exosphere",
+    "troposphere, stratosphere, exosphere, thermosphere",
+    "exosphere, troposphere, stratosphere, thermosphere",
+    "stratosphere, troposphere, exosphere, thermosphere"
+   ],
+   "answer": 1,
+   "why": "From the ground up: troposphere (weather), stratosphere (ozone, only on Earth), thermosphere (absorbs X rays), exosphere (fades into space).",
+   "source": "Owner's Practice Test 4 (Q16)"
+  },
+  {
+   "id": "atm-x8-17",
+   "q": "Why doesn't Mars have a stratosphere?",
+   "options": [
+    "Its atmosphere does not contain enough of an ultraviolet-absorbing gas.",
+    "It lacks a strong enough magnetic field.",
+    "Its atmosphere does not contain enough greenhouse gases.",
+    "It is too small in size.",
+    "It is too far from the Sun."
+   ],
+   "answer": 0,
+   "why": "A stratosphere forms where a gas such as ozone absorbs solar ultraviolet and warms that layer. Mars (and Venus) lack enough ozone, so neither has a stratosphere.",
+   "source": "Owner's Practice Test 4 (Q17)"
+  },
+  {
+   "id": "atm-x8-18",
+   "q": "What is a stratosphere?",
+   "options": [
+    "a part of the atmosphere that absorbs ultraviolet light",
+    "a lowest layer in the atmosphere",
+    "a part of the atmosphere that absorbs optical light",
+    "the highest layer in an atmosphere",
+    "a part of the atmosphere that absorbs x-rays"
+   ],
+   "answer": 0,
+   "why": "The stratosphere is the layer above the troposphere where ozone absorbs ultraviolet light, so temperature rises with height. X rays are absorbed higher, in the thermosphere.",
+   "source": "Owner's Practice Test 4 (Q18)"
+  },
+  {
+   "id": "atm-x8-19",
+   "q": "What is the ionosphere?",
+   "options": [
+    "a layer of the atmosphere that is above the exosphere",
+    "a layer of the atmosphere characterized by the presence of ozone",
+    "a portion of the troposphere in which ions are common",
+    "a portion of the thermosphere in which the gas is ionized"
+   ],
+   "answer": 3,
+   "why": "Solar X rays ionize gas in the thermosphere; that ionized region is the ionosphere. Ozone belongs to the stratosphere.",
+   "source": "Owner's Practice Test 4 (Q19)"
+  },
+  {
+   "id": "atm-x8-20",
+   "q": "All the following statements are true. Which one explains why convection can occur in the troposphere but not in the stratosphere?",
+   "options": [
+    "The stratosphere contains significant amounts of ozone but the troposphere does not.",
+    "Temperature declines with altitude in the troposphere but increases with altitude in the stratosphere.",
+    "Clouds tend to form in the troposphere but not the stratosphere.",
+    "Atmospheric pressure is much greater in the troposphere than in the stratosphere."
+   ],
+   "answer": 1,
+   "why": "Convection needs warm air below cooler air, so the warm air can rise. In the troposphere it gets colder with height; in the stratosphere it gets warmer, so rising air stops.",
+   "source": "Owner's Practice Test 4 (Q20)"
   }
  ],
  "games": [

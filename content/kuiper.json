@@ -1980,13 +1980,13 @@
    "id": "kb-1",
    "q": "Compared with the orbits of the eight planets, Pluto's orbit is:",
    "options": [
-    "More elliptical and more tilted than any of them",
+    "Tilted but almost perfectly circular",
     "Nearly circular and in the same plane as Neptune's",
     "Elliptical but lying exactly in the plane of the planets",
-    "Tilted but almost perfectly circular",
+    "More elliptical and more tilted than any of them",
     "Backward (opposite to the planets' direction)"
    ],
-   "answer": 0,
+   "answer": 3,
    "why": "Pluto's orbit is more elliptical and more inclined to the ecliptic than that of any of the eight planets.",
    "source": "Textbook 12.4 p. 366, Figure 12.22",
    "img": {
@@ -1998,13 +1998,13 @@
    "id": "kb-2",
    "q": "Pluto sometimes comes closer to the Sun than Neptune does. Why can the two never collide?",
    "options": [
-    "Neptune's magnetic field pushes Pluto aside",
     "Charon's gravity pulls Pluto away whenever Neptune approaches",
-    "Pluto's orbit never really comes inside Neptune's orbit",
     "Neptune orbits exactly 3 times for every 2 Pluto orbits, so Neptune is always far away when Pluto nears its orbit",
+    "Pluto's orbit never really comes inside Neptune's orbit",
+    "Neptune's magnetic field pushes Pluto aside",
     "Pluto and Neptune orbit in opposite directions, so they never meet"
    ],
-   "answer": 3,
+   "answer": 1,
    "why": "The stable 3:2 orbital resonance keeps Neptune a safe distance away whenever Pluto approaches Neptune's orbit.",
    "source": "Textbook 12.4 p. 366",
    "img": {
@@ -2017,12 +2017,12 @@
    "q": "Pluto takes about 248 years to orbit the Sun, and Neptune orbits 3 times for every 2 Pluto orbits. Neptune's orbital period is therefore about:",
    "options": [
     "83 years",
-    "165 years",
     "124 years",
     "372 years",
+    "165 years",
     "496 years"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Two Pluto orbits take about 2 x 248 = 496 years, and Neptune completes 3 orbits in that time: 496 / 3 is about 165 years.",
    "source": "Textbook 12.4 p. 366 (proportional reasoning)"
   },
@@ -2030,13 +2030,13 @@
    "id": "kb-4",
    "q": "Which statement about Charon is NOT correct?",
    "options": [
-    "It orbits only about 20,000 km from Pluto",
+    "It is slightly lower in density than Pluto",
     "It is more than half of Pluto's diameter",
     "It has about 1/8 of Pluto's mass",
-    "It is slightly lower in density than Pluto",
-    "It orbits farther from Pluto than our Moon does from Earth"
+    "It orbits farther from Pluto than our Moon does from Earth",
+    "It orbits only about 20,000 km from Pluto"
    ],
-   "answer": 4,
+   "answer": 3,
    "why": "Charon orbits only about 20,000 km from Pluto, compared with about 400,000 km for our Moon, so it is much closer, not farther.",
    "source": "Textbook 12.4 p. 366",
    "img": {
@@ -2066,13 +2066,13 @@
    "id": "kb-6",
    "q": "You stand on the side of Pluto that faces Charon and watch for several Earth days. What would you see?",
    "options": [
-    "Charon hanging motionless in the sky, going through its phases every 6.4 days",
     "Charon rising and setting once every 6.4 days",
+    "Charon hanging motionless in the sky, going through its phases every 6.4 days",
     "Charon rising in the west and setting in the east every day",
     "Charon as a small dot about the size our Moon looks from Earth",
     "Charon only during a few hours of each Pluto day"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Because Pluto and Charon rotate synchronously, Charon stays fixed in the sky over one side of Pluto, about 10 times the Moon's angular size, cycling through phases every 6.4 days.",
    "source": "Textbook 12.4 p. 367",
    "img": {
@@ -2084,13 +2084,13 @@
    "id": "kb-7",
    "q": "What first allowed astronomers to calculate Pluto's precise mass?",
    "options": [
-    "The New Horizons flyby in 2015",
+    "Measuring Pluto's surface temperature of 40 K",
     "Timing Pluto's 248-year orbit around the Sun",
     "Measuring Pluto's brightness in 1930 discovery images",
-    "Observing Charon's orbit after its 1978 discovery and applying Newton's version of Kepler's third law",
-    "Measuring Pluto's surface temperature of 40 K"
+    "The New Horizons flyby in 2015",
+    "Observing Charon's orbit after its 1978 discovery and applying Newton's version of Kepler's third law"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "A moon's orbital period and distance reveal the mass it orbits. Pluto's own orbit around the Sun depends on the Sun's mass, not Pluto's.",
    "source": "Textbook 12.4 p. 367",
    "img": {
@@ -2102,13 +2102,13 @@
    "id": "kb-8",
    "q": "As Pluto moves toward the far end of its elliptical orbit, what would you expect to happen to its atmosphere?",
    "options": [
+    "It is blown away completely by Neptune's gravity",
     "It becomes thicker because the Sun's gravity pulls on it less",
-    "More gas condenses back onto the surface, so the atmosphere thins",
     "Nothing, because the atmosphere does not depend on distance",
     "It turns entirely to methane",
-    "It is blown away completely by Neptune's gravity"
+    "More gas condenses back onto the surface, so the atmosphere thins"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "The amount of gas changes with condensation and vaporization caused by Pluto's tilt and changing distance from the Sun. Farther away it is colder, so more gas freezes out.",
    "source": "Textbook 12.4 p. 367",
    "img": {
@@ -2120,13 +2120,13 @@
    "id": "kb-9",
    "q": "When Pluto's atmosphere is thickest it is more than 30 °C warmer than the surface. Which gases does the text credit for this warming?",
    "options": [
-    "Hydrogen and helium",
-    "Nitrogen and oxygen",
     "Nitrogen alone",
+    "Nitrogen and oxygen",
+    "Methane and carbon monoxide",
     "Carbon dioxide and water vapour",
-    "Methane and carbon monoxide"
+    "Hydrogen and helium"
    ],
-   "answer": 4,
+   "answer": 2,
    "why": "The greenhouse gases methane and carbon monoxide warm the air. Nitrogen is the main gas but is not named as the warming gas.",
    "source": "Textbook 12.4 p. 367"
   },
@@ -2134,13 +2134,13 @@
    "id": "kb-10",
    "q": "Which is NOT considered a likely source of the energy behind Pluto's geological activity?",
    "options": [
-    "Changes in the ice's thickness along Pluto's elliptical orbit",
+    "Internal heat that might even melt ice below the surface",
     "A small amount of heat from radioactive decay",
-    "Strong tidal heating caused by Charon",
+    "Changes in the ice's thickness along Pluto's elliptical orbit",
     "Nitrogen ice that stays soft enough to flow even at 40 K",
-    "Internal heat that might even melt ice below the surface"
+    "Strong tidal heating caused by Charon"
    ],
-   "answer": 2,
+   "answer": 4,
    "why": "Pluto and Charon are tidally locked, so there is no tidal heating. The other ideas are all possibilities the text discusses.",
    "source": "Textbook 12.4 p. 368",
    "img": {
@@ -2152,13 +2152,13 @@
    "id": "kb-11",
    "q": "Pluto's pale brown colour most likely comes from:",
    "options": [
-    "Haze particles (tholins) made when ultraviolet light breaks up methane and nitrogen, which then settle on the surface",
     "Rust (iron oxide) dust like on Mars",
+    "Haze particles (tholins) made when ultraviolet light breaks up methane and nitrogen, which then settle on the surface",
     "Dust blown over from Charon's canyons",
     "Sunlight reddened by passing through Neptune's atmosphere",
     "Carbon dioxide frost"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "UV breaks methane and nitrogen molecules, which react into longer chains and haze particles that drift down and coat the surface.",
    "source": "Textbook 12.4 p. 368",
    "img": {
@@ -2170,13 +2170,13 @@
    "id": "kb-12",
    "q": "Neptune's moon Triton is about 15% larger in diameter than Pluto and Eris. What does this suggest about the Kuiper belt?",
    "options": [
-    "Its largest objects are always found inside Neptune's orbit",
+    "It may once have contained more and larger objects than it does today",
     "Its objects all formed as moons of Neptune",
     "It is made mainly of rock rather than ice",
-    "It may once have contained more and larger objects than it does today",
+    "Its largest objects are always found inside Neptune's orbit",
     "It formed after the jovian planets were already in place"
    ],
-   "answer": 3,
+   "answer": 0,
    "why": "Triton is almost certainly a captured Kuiper belt object. Its large size hints that the belt once held more and larger bodies.",
    "source": "Textbook 12.4 p. 368",
    "img": {
@@ -2188,13 +2188,13 @@
    "id": "kb-13",
    "q": "Which observation is the strongest evidence that giant impacts were common in the Kuiper belt?",
    "options": [
+    "Many Kuiper belt objects are in resonance with Neptune",
     "Arrokoth has very few craters",
     "Haumea spins once every 4 hours, has two moons, and shares orbits and spectra with four other objects",
-    "Many Kuiper belt objects are in resonance with Neptune",
     "The Kuiper belt lies close to the plane of the planets",
     "No objects have been seen directly in the Oort cloud"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Haumea's fast spin and moons are best explained by a giant impact, and the four look-alike objects may be fragments. Together with Pluto's moons, this suggests giant impacts were common.",
    "source": "Textbook 12.4 p. 368",
    "img": {
@@ -2206,13 +2206,13 @@
    "id": "kb-14",
    "q": "If the Kuiper belt were crowded with small bodies, how would Arrokoth probably look different?",
    "options": [
-    "It would have split back into two separate pieces long ago",
+    "It would be covered with many more impact craters",
     "It would be perfectly round",
     "It would have a thick atmosphere",
     "It would be made of rock instead of ice",
-    "It would be covered with many more impact craters"
+    "It would have split back into two separate pieces long ago"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "Arrokoth's few craters show the region is too spread out for many collisions. A crowded region would leave a heavily cratered surface.",
    "source": "Textbook 12.4 pp. 368-369",
    "img": {
@@ -2224,13 +2224,13 @@
    "id": "kb-15",
    "q": "Astronomers can calculate the density of some Kuiper belt objects, such as Eris, mainly because:",
    "options": [
-    "Their colours directly reveal their density",
     "Spacecraft have landed on all of them",
     "They have known moons, whose orbits give the objects' masses",
+    "Their colours directly reveal their density",
     "They pass in front of the Sun",
     "They are in resonance with Neptune"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "A moon's orbit gives the object's mass; combined with its size, that gives density. Results, with spectra, show ice-and-rock compositions.",
    "source": "Textbook 12.4 p. 369",
    "img": {
@@ -2242,13 +2242,13 @@
    "id": "kb-16",
    "q": "Which statement about 'Planet 9' is accurate?",
    "options": [
-    "It is a hypothesized planet, probably several times Earth's mass, proposed to explain patterns in Kuiper belt orbits, and not found as of 2022",
-    "It was discovered by New Horizons in 2019",
     "It is another name for Eris",
+    "It was discovered by New Horizons in 2019",
+    "A hypothesized, still-unfound planet invoked to explain Kuiper belt orbits",
     "It is the cause of Pluto's 3:2 resonance with Neptune",
     "It is a small icy body inside Neptune's orbit"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Planet 9 is only a hypothesis; there are alternative explanations, and the extensive search had not found it as of 2022.",
    "source": "Textbook 12.4 p. 369",
    "img": {
@@ -2260,13 +2260,13 @@
    "id": "kb-17",
    "q": "According to current models, how did the jovian planets move after they formed?",
    "options": [
-    "Jupiter moved outward; the other three moved inward",
+    "Only Neptune moved, and it moved inward",
     "All four moved inward toward the Sun",
     "All four stayed exactly where they formed",
-    "Jupiter moved somewhat inward; Saturn, Uranus and Neptune moved outward",
-    "Only Neptune moved, and it moved inward"
+    "Jupiter moved outward; the other three moved inward",
+    "Jupiter moved somewhat inward; Saturn, Uranus and Neptune moved outward"
    ],
-   "answer": 3,
+   "answer": 4,
    "why": "Exchanges of orbital energy moved Jupiter somewhat inward and Saturn, Uranus and Neptune outward; the resulting resonances stirred the Kuiper belt.",
    "source": "Textbook 12.4 p. 370",
    "img": {
@@ -2278,13 +2278,13 @@
    "id": "kb-18",
    "q": "Why do models say Uranus and Neptune could NOT have formed in their present orbits?",
    "options": [
+    "The Sun's gravity was too strong there",
     "It was too hot there for ice to form",
     "The solar nebula was too thin at that distance to build such large planets",
-    "The Sun's gravity was too strong there",
     "The Kuiper belt was in the way",
     "Jupiter's gravity would have destroyed them"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "The density of the solar nebula that far out was too low for such large planets to accrete, so they probably formed closer in and migrated outward.",
    "source": "Textbook 12.4 p. 370",
    "img": {
@@ -2314,13 +2314,13 @@
    "id": "kb-20",
    "q": "Which of these is NOT evidence found in the sediment layer marking the dinosaur extinction?",
    "options": [
-    "Tektites (small rock droplets)",
     "Shocked quartz",
     "Dinosaur fossils in the rock just above the layer",
+    "Tektites (small rock droplets)",
     "Soot from widespread fires",
     "Extra osmium, gold and platinum"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Dinosaur fossils appear only BELOW the iridium-rich layer. The other four are listed as clues pointing to an impact.",
    "source": "Textbook 12.5 pp. 370-371, Figure 12.29",
    "img": {
@@ -2368,13 +2368,13 @@
    "id": "kb-23",
    "q": "Compared with the dinosaur extinction, the 'great dying' about 252 million years ago:",
    "options": [
-    "Killed fewer species and left a thicker iridium layer",
     "Killed a larger fraction of species but is not tied to an impact by a similar iridium layer",
+    "Killed fewer species and left a thicker iridium layer",
     "Was caused by Comet Shoemaker-Levy 9",
     "Is the only mass extinction ever recorded",
     "Killed only sea life"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "The end-Permian event killed close to 90% of species, worse than the dinosaur event, but none of the other mass extinctions shows a similar iridium layer.",
    "source": "Textbook 12.5 p. 373",
    "img": {
@@ -2386,13 +2386,13 @@
    "id": "kb-24",
    "q": "Why was the 2013 Chelyabinsk event described as lucky?",
    "options": [
-    "It broke into harmless dust before entering the atmosphere",
+    "Its shallow path made it explode high in the air; a steeper path would have caused a lower, more damaging blast",
     "It was spotted years ahead, so the city was evacuated",
     "It landed in an empty desert",
     "It was too small to release any energy",
-    "Its shallow path made it explode high in the air; a steeper path would have caused a lower, more damaging blast"
+    "It broke into harmless dust before entering the atmosphere"
    ],
-   "answer": 4,
+   "answer": 0,
    "why": "The asteroid was undetected beforehand. Its fairly shallow trajectory meant the 500-kiloton detonation happened high up; a more vertical path would have meant much greater damage.",
    "source": "Textbook 12.5 p. 373",
    "img": {
@@ -2404,13 +2404,13 @@
    "id": "kb-25",
    "q": "Objects a few metres across enter Earth's atmosphere about once a week. About how many enter in 10 years?",
    "options": [
-    "About 10",
-    "About 50",
     "About 500",
+    "About 50",
+    "About 10",
     "About 5,000",
     "About 52,000"
    ],
-   "answer": 2,
+   "answer": 0,
    "why": "About 52 weeks a year x 10 years = about 520, so roughly 500.",
    "source": "Textbook 12.5 p. 373 (proportional reasoning)",
    "img": {
@@ -2422,13 +2422,13 @@
    "id": "kb-26",
    "q": "If Tunguska-sized objects strike Earth about once every couple of hundred years, the chance of one in any given year is roughly:",
    "options": [
-    "About 0.5%",
+    "Zero, until 200 years have passed",
     "About 50%",
     "About 5%",
     "About 0.005%",
-    "Zero, until 200 years have passed"
+    "About 0.5%"
    ],
-   "answer": 0,
+   "answer": 4,
    "why": "Once per 200 years means about 1/200 = 0.5% each year. Impacts do not follow a schedule; the average only gives the odds.",
    "source": "Textbook 12.5 p. 373 (proportional reasoning)",
    "img": {
@@ -2440,13 +2440,13 @@
    "id": "kb-27",
    "q": "Which statement about the search for potentially hazardous asteroids (as of 2022) is correct?",
    "options": [
-    "Comets are easier to spot early than asteroids",
-    "All of them had been found and none threatens Earth",
     "About 30% of the large ones and 90% of the small ones had been found",
+    "All of them had been found and none threatens Earth",
     "About 90% of those larger than 1 km had been found, but only about 30% of the smaller dangerous ones",
+    "Comets are easier to spot early than asteroids",
     "There are only about 50 of them"
    ],
-   "answer": 3,
+   "answer": 2,
    "why": "Astronomers estimate about 5,000 potentially hazardous asteroids; about 90% of those over 1 km had been found, but only about 30% of the smaller ones.",
    "source": "Textbook 12.5 p. 374",
    "img": {
@@ -2476,13 +2476,13 @@
    "id": "kb-29",
    "q": "If Jupiter did not exist, what does the text suggest might be different?",
    "options": [
-    "Nothing, because Jupiter has no effect on small bodies",
+    "The asteroid threat would be greater, and the comet threat smaller",
     "Both asteroid and comet threats would vanish",
     "Both threats would be much greater",
-    "The asteroid threat would be greater, and the comet threat smaller",
-    "The asteroid threat might be smaller, but the comet threat might be greater"
+    "The asteroid threat might be smaller, but the comet threat might be greater",
+    "Nothing, because Jupiter has no effect on small bodies"
    ],
-   "answer": 4,
+   "answer": 3,
    "why": "Without Jupiter the asteroid belt's material might have formed a planet (fewer asteroids), but comets that Jupiter flung to the Oort cloud might have stayed dangerously close.",
    "source": "Textbook 12.5 p. 375",
    "img": {
@@ -2494,19 +2494,59 @@
    "id": "kb-30",
    "q": "Which statement best describes the link between the jovian planets and impacts on Earth?",
    "options": [
-    "The jovian planets only affect the Oort cloud, not the asteroid belt",
-    "The jovian planets shield Earth so well that no impacts have happened since the heavy bombardment",
-    "Every impact since the heavy bombardment was, in some sense, sent our way by the gravity of Jupiter or another jovian planet",
     "Impacts on Earth are caused by the planets' positions among the stars, as in astrology",
+    "The jovian planets shield Earth so well that no impacts have happened since the heavy bombardment",
+    "The jovian planets only affect the Oort cloud, not the asteroid belt",
+    "Every impact since the heavy bombardment was, in some sense, sent our way by the gravity of Jupiter or another jovian planet",
     "Only Neptune affects impact rates"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "The jovian planets shaped the asteroid belt, Kuiper belt and Oort cloud, and their gravity continues to nudge objects onto collision courses.",
    "source": "Textbook 12.5 p. 375, Figure 12.37",
    "img": {
     "src": "img/kuiper/gen_connections.webp",
     "alt": "Flow diagram: the jovian planets, especially Jupiter, point to three boxes, the asteroid belt (stirred so no planet formed), the Oort cloud (icy bodies flung far out) and the Kuiper belt (shaped by migration and resonances). Dashed arrows from all three lead to Earth: occasional impacts."
    }
+  },
+  {
+   "id": "kb-x8-60",
+   "q": "According to the nebular theory, how did the Kuiper belt form?",
+   "options": [
+    "It is made of planetesimals formed in the outer solar system that were flung into distant orbits by encounters with the jovian planets.",
+    "It consists of objects that fragmented from the Sun during a catastrophic collision early in the formation of the solar system.",
+    "It is made of planetesimals between the orbits of Mars and Jupiter that never formed into a planet.",
+    "It is made of planetesimals that formed beyond Neptune's orbit and never accreted to form a planet.",
+    "It is material left over from the interstellar cloud that never contracted with the rest of the gases to form the solar nebula."
+   ],
+   "answer": 3,
+   "why": "Kuiper belt comets are icy planetesimals that formed beyond Neptune, where orbits were too spread out and slow for them to grow into a planet. Comets flung outward by the jovian planets became the Oort cloud.",
+   "source": "Owner's Practice Test 4 (Q60)"
+  },
+  {
+   "id": "kb-x8-63",
+   "q": "How is Pluto's moon system thought to have formed?",
+   "options": [
+    "by stealing them during a close encounter with Neptune",
+    "by gravitational capture of passing asteroids",
+    "from a giant impact",
+    "by gravitational capture of passing comets"
+   ],
+   "answer": 2,
+   "why": "Charon and Pluto's small moons probably formed from debris thrown out by a giant impact, much like Earth's Moon.",
+   "source": "Owner's Practice Test 4 (Q63)"
+  },
+  {
+   "id": "kb-x8-64",
+   "q": "Which of the following was the first strong evidence for an asteroid impact being the cause of the extinction of the dinosaurs 65 million years ago (as well as 75% of all species alive at the time)?",
+   "options": [
+    "careful studies of lunar craters suggesting an unusually large number of impact at that time",
+    "a worldwide layer rich in the element iridium that dates to that time",
+    "the fact that dinosaurs appear to have gone abruptly extinct at about that time",
+    "the discovery of asteroid fragments in dinosaur bones dating to that time"
+   ],
+   "answer": 1,
+   "why": "In 1978 to 1980, a thin worldwide clay layer from that time was found to be rich in iridium, an element common in asteroids but rare in Earth's crust. The Chicxulub crater was identified later.",
+   "source": "Owner's Practice Test 4 (Q64)"
   }
  ],
  "games": [
