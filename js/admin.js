@@ -1,6 +1,7 @@
 // Admin and instructor workspace. Admins see everything; instructors see only the classes they teach.
 import * as S from "./store.js";
 import { h, md, ic, symOf, toast } from "./ui.js";
+import { shareSurveyBox, feedbackSummary } from "./survey.js";
 
 export function download(name, text, type) {
   const url = URL.createObjectURL(new Blob([text], { type })), a = h("a", { href: url, download: name });
@@ -116,11 +117,9 @@ function examCard(mine) {
 
 function feedbackCard() {
   const box = h("div", h(".src", "Loading..."));
-  if (!S.DEMO) S.feedbackList().then((list) => {
-    const avg = list.length ? (list.reduce((t, f) => t + (f.rating || 0), 0) / list.length).toFixed(1) : null;
-    box.replaceChildren(list.length ? h("div", h("p", { style: "margin:0 0 6px" }, `Average rating ${avg} from ${list.length} message${list.length === 1 ? "" : "s"}.`), ...list.slice(0, 6).map((f) => h(".fb", { style: "margin-top:6px" }, h("b", "★".repeat(f.rating || 0) + " "), f.message || "(no message)", h(".src", `${when(f.at)}${f.class_id ? ", " + f.class_id : ""}`)))) : h(".src", "No feedback yet. Students can send it from their profile."));
-  }); else box.replaceChildren(h(".src", "Feedback appears here once students send it."));
-  return h(".card", { style: "margin-top:14px" }, h("h3", "Student feedback"), box);
+  if (!S.DEMO) S.feedbackList().then((list) => box.replaceChildren(feedbackSummary(list, { showClass: true })));
+  else box.replaceChildren(h(".src", "Feedback appears here once students send it."));
+  return h(".card", { style: "margin-top:14px" }, h("h3", "Student feedback"), shareSurveyBox(null), box);
 }
 
 /* ----- admin-only tools ----- */

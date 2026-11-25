@@ -58,7 +58,7 @@ export async function auditLines(sid) {
 export async function errorLines() { if (S.DEMO) return D.errorLines(); const { data } = await S.sb.from("client_errors").select("*").order("at", { ascending: false }).limit(10); return data || []; }
 export async function feedbackFor(kid) {
   if (S.DEMO) return D.feedbackFor(kid);
-  const { data } = await S.sb.from("feedback").select("*").eq("class_uuid", kid).order("at", { ascending: false }).limit(20); return data || [];
+  const { data } = await S.sb.from("feedback").select("*").eq("class_uuid", kid).order("at", { ascending: false }).limit(500); return data || [];
 }
 export async function confirmEmailFlag() { const r = await call("admin_get_confirm_email"); return !!r.data; }
 // what Supabase itself says about sign-up (is "Confirm email" really on?). null when it cannot be read.

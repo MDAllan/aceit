@@ -1,4 +1,5 @@
 import { canSeeRefs, mediaUrl } from "./store.js";
+import { STILLS } from "./stills.js";
 
 export const $ = (s, r = document) => r.querySelector(s);
 
@@ -176,7 +177,7 @@ export function logo(height = 22) {
 // and is fetched when it is shown.
 export function pic(im, attrs = {}) {
   const el = h("img", { alt: im.alt || "", ...attrs });
-  if (im.src) el.src = im.src;
+  if (im.src) el.src = STILLS.has(im.src) && reducedMotion() ? im.src.replace(/\.webp$/, ".still.webp") : im.src; // reduce motion: a still picture instead of the animation
   else if (im.path) mediaUrl(im.path, im.bucket).then((u) => { if (u) el.src = u; else el.alt = (im.alt || "Picture") + " (could not be loaded)"; });
   return el;
 }

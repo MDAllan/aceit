@@ -490,7 +490,7 @@ export async function listInstructors() { try { const { data: r } = await sb.fro
 export async function setExam(cid, nm, d) { const r = await sb.rpc("set_class_exam", { cid, nm, d: d || null }); if (!r.error) settings[cid] = { class_id: cid, exam_name: nm, exam_date: d || null }; return r; } // legacy: used by the older admin screen until the schools upgrade is installed
 export async function auditLog() { try { const { data: r } = await sb.from("admin_audit").select("*").order("at", { ascending: false }).limit(15); return r || []; } catch { return []; } }
 export async function errorLog() { try { const { data: r } = await sb.from("client_errors").select("*").order("at", { ascending: false }).limit(8); return r || []; } catch { return []; } }
-export async function feedbackList() { try { const { data: r } = await sb.from("feedback").select("*").order("at", { ascending: false }).limit(20); return r || []; } catch { return []; } }
+export async function feedbackList() { try { const { data: r } = await sb.from("feedback").select("*").order("at", { ascending: false }).limit(500); return r || []; } catch { return []; } }
 export const getDomains = async () => { try { const { data: r } = await sb.rpc("admin_get_domains"); return r || ""; } catch { return ""; } };
 export const setDomains = (list) => sb.rpc("admin_set_domains", { list });
 export const sendFeedback = (cid, r, m) => sb.rpc("submit_feedback", { cid, r, m });

@@ -19,6 +19,7 @@ Your instructor can see your name, email and progress in their class. Other stud
    - **Exam date**: students then see a countdown and a study plan.
    - **Students**: tap a name to see progress per lecture. Search and sort. Download a CSV.
    - **Class insights**: the questions students find hardest, and who has been quiet for a week.
+   - **Student feedback**: copy the survey link (or a ready-to-send message) and send it to your students. It opens a one-minute survey after they sign in. Their star ratings, answers and comments appear in the same card.
 3. If a student should not be in the class, open their row and press **Remove from class**.
 
 You can also read the course as a student would: use the **Classes** tab.
@@ -50,4 +51,4 @@ Your words are shown to students exactly as you write them. Put two stars on eac
 
 ## For the ACEIT platform admin
 
-See `docs/SCHOOL-SETUP.md`.
+See `docs/SCHOOL-SETUP.md`. **Workspace > Feedback** has a survey link for every class and shows the answers from all classes.

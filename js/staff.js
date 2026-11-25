@@ -7,6 +7,7 @@ import { download, publishPanel } from "./admin.js";
 import { mfaCard } from "./mfa.js";
 import { contentCard, viewContent, reviewTab } from "./author.js";
 import { itemId } from "./classcontent.js";
+import { shareSurveyBox, feedbackSummary } from "./survey.js";
 
 /* ---------- small helpers ---------- */
 import { ago, when, quiet, plural, site, initials, nameOf, meter, csvCell, copy, field, panel, busy, go, tile, empty, warn, crumb, loading, fail } from "./wsui.js";
@@ -21,7 +22,7 @@ const managesSchool = (sid) => S.isAdmin() || managedSchools().some((m) => m.sch
 
 function tabsFor() {
   const t = [];
-  if (S.isAdmin()) t.push({ k: "schools", label: "Schools", icon: "school" }, { k: "teaching", label: "My classes", icon: "users" }, { k: "admins", label: "Admins", icon: "shieldcheck" }, { k: "people", label: "People", icon: "users" }, { k: "content", label: "Content", icon: "layers" }, { k: "settings", label: "Settings", icon: "gear" }, { k: "activity", label: "Activity", icon: "history" });
+  if (S.isAdmin()) t.push({ k: "schools", label: "Schools", icon: "school" }, { k: "teaching", label: "My classes", icon: "users" }, { k: "admins", label: "Admins", icon: "shieldcheck" }, { k: "people", label: "People", icon: "users" }, { k: "content", label: "Content", icon: "layers" }, { k: "settings", label: "Settings", icon: "gear" }, { k: "feedback", label: "Feedback", icon: "heart" }, { k: "activity", label: "Activity", icon: "history" });
   else {
     const ms = managedSchools();
     ms.forEach((m) => t.push({ k: "school/" + m.school_id, label: ms.length > 1 ? m.school_name : "My school", icon: "school" }));
@@ -51,6 +52,7 @@ export async function viewWorkspace(v, X, parts) {
   if (page === "people" && S.isAdmin()) { head("Find a person", "Look up an account to block it or remove it."); v.append(tabBar("people")); return pagePeople(c); }
   if (page === "content" && S.isAdmin()) { head("Course content", "What students and instructors can read."); v.append(tabBar("content")); return pageContent(c); }
   if (page === "settings" && S.isAdmin()) { head("Settings", "Sign-up safety and allowed emails."); v.append(tabBar("settings")); return pageSettings(c); }
+  if (page === "feedback" && S.isAdmin()) { head("Student feedback", "Survey answers and reviews from every class."); v.append(tabBar("feedback")); return pageFeedback(c); }
   if (page === "activity" && S.isAdmin()) { head("Activity", "Recent changes and problems."); v.append(tabBar("activity")); return pageActivity(c); }
   return v.append(empty("That page doesn't exist."));
 }
@@ -369,11 +371,8 @@ function teachersCard(c, cls) {
 
 function feedbackCard(cls) {
   const box = h("div", h(".src", "Loading..."));
-  A.feedbackFor(cls.class_id).then((list) => {
-    const avg = list.length ? (list.reduce((t, f) => t + (f.rating || 0), 0) / list.length).toFixed(1) : null;
-    box.replaceChildren(list.length ? h("div", h("p", { style: "margin:0 0 6px" }, `Average rating ${avg} from ${plural(list.length, "message")}.`), ...list.slice(0, 6).map((f) => h(".fb", { style: "margin-top:6px" }, h("b", "★".repeat(f.rating || 0) + " "), f.message || "(no message)", h(".src", when(f.at))))) : h(".src", "No feedback yet. Students can send it from their profile."));
-  });
-  return h(".card", { style: "margin-top:12px" }, h("h3", "Student feedback"), box);
+  A.feedbackFor(cls.class_id).then((list) => box.replaceChildren(feedbackSummary(list)));
+  return h(".card", { style: "margin-top:12px" }, h("h3", "Student feedback"), shareSurveyBox(cls.course_id, cls.name), box);
 }
 
 /* ---------- platform admin: admins, people, content, settings, activity ---------- */
@@ -432,6 +431,10 @@ async function pageSettings(c) {
     h(".card", { style: "margin-top:12px" }, h("h3", "Allowed email domains"), h(".src", { style: "margin:0 0 6px" }, "Only these domains can create accounts. Your own admin email and anyone you invited always work."), h(".row.wrapx", dom, saveDom)));
 }
 
+async function pageFeedback(c) {
+  const { v } = c, done = loading(v), list = S.DEMO ? await A.feedbackFor("demo") : await S.feedbackList(); done();
+  v.append(h(".card", h("h3", "Survey link"), shareSurveyBox(null)), h(".card", { style: "margin-top:12px" }, h("h3", "Answers"), feedbackSummary(list, { showClass: true })));
+}
 async function pageActivity(c) {
   const { v } = c, done = loading(v), [rows, errs] = await Promise.all([A.auditLines(null), A.errorLines()]); done();
   v.append(h(".card", h("h3", "Recent changes"), rows.length ? h("div", rows.map((r) => h(".logrow", h("span.src", { style: "margin:0" }, when(r.at)), h("span", `${r.action}${r.target ? ": " + r.target : ""}${r.detail ? " (" + r.detail + ")" : ""}`)))) : h(".src", "Nothing yet.")),

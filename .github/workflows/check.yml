@@ -11,6 +11,8 @@ jobs:
         with: { node-version: "20" }
       - name: Content checks (JSON, ids, answers, images, manifest, student-safe text)
         run: python tools/check_content.py
+      - name: Every animation has a still picture for reduced motion
+        run: python tools/build_stills.py --check
       - name: SQL copies are in step (patch6 = RUN-ME-2 = end of schema)
         run: python tools/build_sql.py --check
       - name: The app calls database functions with the right arguments

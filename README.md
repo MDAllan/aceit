@@ -28,6 +28,7 @@ Preview the staff screens with sample data (no login, no database), on localhost
 - `supabase/patch8.sql` (acceptance of the Terms, account deletion with a 22 day wait and a daily job, the customer service inbox, admin instructor tools, admin lecture editing with history) is the source of `RUN-ME-4.sql` and of the end of `schema.sql` too. Run `RUN-ME-4.sql` after `RUN-ME-2.sql` and `RUN-ME-3.sql`; see `docs/SCHOOL-SETUP.md` step 0c.
 
 ## Checks
+- `python tools/build_stills.py`: after adding an animated picture, makes its still copy (shown to phones set to reduce motion). `npm run check` fails if one is missing.
 - `npm run check`: content checks (JSON, ids, answers, images, manifest, student-safe text), SQL copies in step, database calls match the database, logic tests, content tests (the rules for what instructors add), the glossary rule, the Terms and Privacy Policy (required clauses, versions, no contact details), the badges (config, pictures, every threshold) and the numbers behind them, and the admin edit-mode rules.
 - `node tools/test_sql.mjs` (and `MODE=upgrade node tools/test_sql.mjs`): 490+ database security tests on a throwaway Postgres. Install it first: `npm i --no-save embedded-postgres pg`.
 - `node tools/test_sql_scale.mjs`: how fast the dashboards answer with 6,000 students in 200 classes (all under half a second).

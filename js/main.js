@@ -21,6 +21,7 @@ import { inlineCourseFigures, needsPublishedFigures, stripSvgFigures } from "./l
 import { geologyVisual } from "./geology-visuals.js";
 import { prepareOptions } from "./quiz-options.js";
 import { balancedQuestionSample } from "./practice-questions.js";
+import { viewSurvey } from "./survey.js";
 
 // This page is not meant to be shown inside another site's frame (clickjacking): break out, or stay blank.
 if (window.top !== window.self) { document.documentElement.style.display = "none"; try { window.top.location.href = window.self.location.href; } catch {} }
@@ -282,6 +283,7 @@ function shell(parts, query) {
   if (page === "l") return viewLecture(v, parts[1], parts[2] || "notes");
   if (page === "s") return viewSubject(v, parts[1]);
   if (page === "profile") return viewProfile(v, profileCtx());
+  if (page === "feedback") return viewSurvey(v, { courseId: decodeURIComponent(parts[1] || ""), classes: myClasses(), current: clsOf()?.id || null, subjects: SUBJECTS }); // the survey link staff send to students
   if (page === "help") return viewHelp(v, parts[1] || "", { route });
   if (page === "play") return viewPlay(v, parts[1], parts[2], query);
   if (page === "search") return viewSearch(v);
