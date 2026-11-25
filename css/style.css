@@ -420,8 +420,9 @@ body.noscroll{overflow:hidden}
 .stars{display:flex;gap:0;justify-content:center;margin:12px 0}
 .star{background:none;border:0;padding:0;width:60px;height:60px;cursor:pointer;transition:transform .18s var(--ease);-webkit-tap-highlight-color:transparent;display:grid;place-items:center}
 .star svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 3px 0 rgba(0,0,0,.13))}
-.star .body{fill:#FFEDA8;stroke:#F3B21B;stroke-width:2.6;stroke-linejoin:round}
-.star .shine{fill:#fff;opacity:.7}
+.star .body{fill:#E3E5E8;stroke:#A3A9B2;stroke-width:2.6;stroke-linejoin:round}
+.star .shine{fill:#fff;opacity:.45}
+.star.on .shine{opacity:.7}
 .star.on .body{fill:#FFD21F;stroke:#EE9B0C}
 .star.on{animation:starpop .35s var(--ease)}
 .star:active{transform:scale(1.18) rotate(-8deg)}
